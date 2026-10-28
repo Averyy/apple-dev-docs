@@ -17,11 +17,11 @@ Provides access to the new simulation positions of the body’s particles, in si
 func withSimulationSpacePositions<Result>(_ body: (Span<SIMD3<Float>>) -> Result) -> Result
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by `body`.
 
-#### Discussion
+## Discussion
 
 The provided span is only valid for the lifetime of the callback.
 

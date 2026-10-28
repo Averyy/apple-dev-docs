@@ -19,7 +19,7 @@ func currentCallList()
 - (void) currentCallList;
 ```
 
-#### Discussion
+## Discussion
 
 The [`handsFree(_:currentCall:)`](../iobluetoothhandsfreedevicedelegate/handsfree%28_,currentcall%29.md) function of the delegate is called once for each current call.
 

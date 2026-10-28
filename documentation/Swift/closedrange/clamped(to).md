@@ -23,11 +23,11 @@ func clamped(to limits: ClosedRange<Bound>) -> ClosedRange<Bound>
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 A new range clamped to the bounds of `limits`.
 
-#### Discussion
+## Discussion
 
 The bounds of the result are always limited to the bounds of `limits`. For example:
 

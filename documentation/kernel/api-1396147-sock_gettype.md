@@ -13,11 +13,11 @@
 errno_t sock_gettype(socket_t so, int *domain, int *type, int *protocol);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Retrieves information about the socket. This is the same information that was used to create the socket. If any of the parameters following so are NULL, that information is not retrieved.
 

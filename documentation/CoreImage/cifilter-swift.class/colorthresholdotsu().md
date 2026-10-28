@@ -24,11 +24,11 @@ class func colorThresholdOtsu() -> any CIFilter & CIColorThresholdOtsu
 + (CIFilter<CIColorThresholdOtsu> *) colorThresholdOtsuFilter;
 ```
 
-#### Return Value
+## Return Value
 
 An image containing pixels with color components that are either 1 or 0.
 
-#### Discussion
+## Discussion
 
 The filter applies Otsu’s algorithm to the reg, green, and blue color components. The filter uses these thresholds to set the color to components to 1 or 0. The alpha component remains unchanged.
 

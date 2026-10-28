@@ -5,11 +5,11 @@
 
 Learn about the basic composition of an event session playlist.
 
-#### Overview
+## Overview
 
 An event playlist is specified by the `EXT-X-PLAYLIST-TYPE` tag with a value of `EVENT`. It doesn’t initially have an `EXT-X-ENDLIST` tag, indicating that new media files will be added to the playlist as they become available.
 
-##### Example
+### Example
 
 The following code shows an example of an event playlist as it appears at the beginning of a session:
 

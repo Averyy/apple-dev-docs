@@ -21,7 +21,7 @@ case destructive
 CPAlertActionStyleDestructive
 ```
 
-#### Discussion
+## Discussion
 
 Use this style when the action does something destructive, such as deleting data.
 

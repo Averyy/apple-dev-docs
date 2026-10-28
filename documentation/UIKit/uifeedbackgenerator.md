@@ -22,7 +22,7 @@ class UIFeedbackGenerator
 @interface UIFeedbackGenerator : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t subclass or create instances of this class yourself. Instead, instantiate one of the concrete feedback generator subclasses:
 

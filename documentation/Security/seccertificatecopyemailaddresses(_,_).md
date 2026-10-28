@@ -25,11 +25,11 @@ func SecCertificateCopyEmailAddresses(_ certificate: SecCertificate, _ emailAddr
 OSStatus SecCertificateCopyEmailAddresses(SecCertificateRef certificate, CFArrayRef*emailAddresses);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Not every certificate subject includes an email address. If the function does not find any email addresses, it returns a `CFArrayRef` object with zero elements in the array.
 

@@ -21,7 +21,7 @@ A type that asynchronously supplies the values of a sequence one at a time.
 protocol AsyncIteratorProtocol<Element, Failure>
 ```
 
-#### Overview
+## Overview
 
 The `AsyncIteratorProtocol` defines the type returned by the `makeAsyncIterator()` method of the `AsyncSequence` protocol. In short, the iterator is what produces the asynchronous sequence’s values. The protocol defines a single asynchronous method, `next()`, which either produces the next element of the sequence, or returns `nil` to signal the end of the sequence.
 
@@ -64,11 +64,11 @@ for await number in Counter(howHigh: 10) {
 // Prints "1 2 3 4 5 6 7 8 9 10 "
 ```
 
-##### End of Iteration
+### End of Iteration
 
 The iterator returns `nil` to indicate the end of the sequence. After returning `nil` (or throwing an error) from `next()`, the iterator enters a terminal state, and all future calls to `next()` must return `nil`.
 
-##### Cancellation
+### Cancellation
 
 Types conforming to `AsyncIteratorProtocol` should use the cancellation primitives provided by Swift’s `Task` API. The iterator can choose how to handle and respond to cancellation, including:
 

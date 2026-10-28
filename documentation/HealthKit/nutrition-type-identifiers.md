@@ -5,7 +5,7 @@
 
 Type identifiers used for tracking diet and nutrition.
 
-#### Overview
+## Overview
 
 Nutritional data can be broadly categorized into two main groups:
 
@@ -32,7 +32,7 @@ You do not need to track all nutritional information; you can focus on the items
 - [`dietaryVitaminC`](./hkquantitytypeidentifier/dietaryvitaminc.md)
 - [`dietaryVitaminD`](./hkquantitytypeidentifier/dietaryvitamind.md)
 
-##### Combine Nutritional Samples
+### Combine Nutritional Samples
 
 Macronutrient identifiers can be thought of as a hierarchy. The [`dietaryEnergyConsumed`](./hkquantitytypeidentifier/dietaryenergyconsumed.md) identifier represents the total amount of energy from all fats, carbohydrates, and protein. You can provide a detailed breakdown using the [`dietaryFatTotal`](./hkquantitytypeidentifier/dietaryfattotal.md), [`dietaryCarbohydrates`](./hkquantitytypeidentifier/dietarycarbohydrates.md), and [`dietaryProtein`](./hkquantitytypeidentifier/dietaryprotein.md) identifiers. Fats can be further separated into [`dietaryFatMonounsaturated`](./hkquantitytypeidentifier/dietaryfatmonounsaturated.md), [`dietaryFatPolyunsaturated`](./hkquantitytypeidentifier/dietaryfatpolyunsaturated.md), and [`dietaryFatSaturated`](./hkquantitytypeidentifier/dietaryfatsaturated.md). Carbohydrates can be identified as [`dietaryFiber`](./hkquantitytypeidentifier/dietaryfiber.md) and [`dietarySugar`](./hkquantitytypeidentifier/dietarysugar.md).
 

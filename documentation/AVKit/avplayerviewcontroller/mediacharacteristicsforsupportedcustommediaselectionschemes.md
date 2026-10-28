@@ -20,7 +20,7 @@ class var mediaCharacteristicsForSupportedCustomMediaSelectionSchemes: [AVMediaC
 @property (class, readonly) NSArray<NSString *> * mediaCharacteristicsForSupportedCustomMediaSelectionSchemes;
 ```
 
-#### Discussion
+## Discussion
 
 Returns available AVKit supported media group types.
 

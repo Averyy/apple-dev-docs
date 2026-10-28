@@ -9,7 +9,7 @@ Get a list of AppleCare coverage resources for an organization device.
 **Availability**:
 - Apple School Manager API 1.7+
 
-##### Example
+### Example
 
 **Request**:
 

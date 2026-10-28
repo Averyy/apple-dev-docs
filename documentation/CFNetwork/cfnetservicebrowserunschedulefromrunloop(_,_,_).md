@@ -26,11 +26,11 @@ func CFNetServiceBrowserUnscheduleFromRunLoop(_ browser: CFNetServiceBrowser, _ 
 extern void CFNetServiceBrowserUnscheduleFromRunLoop(CFNetServiceBrowserRef browser, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 Call this function to shut down a browser that is running asynchronously. To complete the shutdown, call [`CFNetServiceBrowserInvalidate(_:)`](./cfnetservicebrowserinvalidate%28_%29.md) followed by [`CFNetServiceBrowserStopSearch(_:_:)`](./cfnetservicebrowserstopsearch%28_,_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

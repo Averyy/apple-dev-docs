@@ -20,7 +20,7 @@ Buffer maps at the face rate.
 case face
 ```
 
-#### Discussion
+## Discussion
 
 The buffer count needs to match the number of polygons.
 

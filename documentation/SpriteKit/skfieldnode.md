@@ -30,7 +30,7 @@ class SKFieldNode
 - [Getting Started with Physics](./getting-started-with-physics.md)
 - [Adding Physics Fields to a Scene](./adding-physics-fields-to-a-scene.md)
 
-#### Overview
+## Overview
 
 There are many different kinds of field nodes that can be created, each with different effects. The [`SKFieldNode`](./skfieldnode.md) section lists the field types you can create using SpriteKit, including a type that allows you to apply custom forces to physics bodies. Instantiate the appropriate kind of field node and then add it to the scene’s node tree.
 

@@ -19,11 +19,11 @@ var toolTip: String? { get }
 @property (nonatomic, readonly, nullable) NSString * toolTip;
 ```
 
-#### Return Value
+## Return Value
 
 A string that contains help tag content, or `NULL` if there is no text associated with the annotation.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to sending the message `[self contents]`. PDF Kit’s annotation subclasses override this behavior as appropriate. For example, a `PDFAnnotationLink` object displays a URL or page destination for its help tag.
 

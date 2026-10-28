@@ -20,7 +20,7 @@ Download is about to begin but requires an authentication challenge to continue.
 func backgroundDownload(_ download: BADownload, didReceive challenge: URLAuthenticationChallenge) async -> (URLSession.AuthChallengeDisposition, URLCredential?)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple that informs the subsystem how the challenge request shall be answered.
 

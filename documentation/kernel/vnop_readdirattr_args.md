@@ -16,7 +16,7 @@ struct vnop_readdirattr_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 VNOP_READDIR() packs a buffer with "struct dirent" directory entry representations as described by the "getdirentries" manual page.
 

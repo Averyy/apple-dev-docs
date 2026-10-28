@@ -16,7 +16,7 @@ Returns the name for the element.
 CFStringRef IOHIDElementGetName(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns CFStringRef containing the element name.
 

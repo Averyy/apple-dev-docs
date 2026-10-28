@@ -20,7 +20,7 @@ var NSApp: NSApplication!
 extern NSApplication * NSApp;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this global variable is the same as accessing the [`shared`](./nsapplication/shared.md) property of the app.
 

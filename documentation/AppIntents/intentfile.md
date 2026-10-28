@@ -26,7 +26,7 @@ struct IntentFile
 - [Adding parameters to an app intent](./adding-parameters-to-an-app-intent.md)
 - [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
-#### Overview
+## Overview
 
 Provide an intent file entity implementation to describe data you store in a file on disk or in memory by providing its associated name and uniform type identifier.
 

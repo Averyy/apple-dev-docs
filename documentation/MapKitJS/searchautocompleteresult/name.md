@@ -15,7 +15,7 @@ The name of the place.
 name: string | null;
 ```
 
-#### Discussion
+## Discussion
 
 For example, a search using autocomplete for “Lyndley” could return `"Lindley Meadow"` as one possible completion name; this is a location San Francisco’s Golden Gate Park.
 

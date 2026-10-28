@@ -24,7 +24,7 @@ var retainedReferences: Bool { get set }
 @property (nonatomic, readwrite) BOOL retainedReferences;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) (its default) to create a command buffer that maintains strong references to resource instances that its commands need. Otherwise, set it to [`false`](../../Swift/false.md) to create a command buffer that doesn’t maintain strong references to its resources.
 

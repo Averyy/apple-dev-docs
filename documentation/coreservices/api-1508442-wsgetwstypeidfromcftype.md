@@ -15,11 +15,11 @@ Returns the `WSTypeID` associated with a given `CFTypeRef`.
 WSTypeID WSGetWSTypeIDFromCFType(CFTypeRef ref);
 ```
 
-#### Return Value
+## Return Value
 
 the `WSTypeID` used in serializing the object.  If no `WSTypeID` matches, `eWSUnknownType` is returned.  
 
-#### Discussion
+## Discussion
 
 Returns the `WSTypeID` associated with `CFTypeRef`.  Because there is not a one to one mapping between `CFTypeID` and `WSTypesID` an actual instance of a CFType must be passed.
 

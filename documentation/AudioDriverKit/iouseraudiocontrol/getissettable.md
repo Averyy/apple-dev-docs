@@ -15,7 +15,7 @@ Returns a Boolean value that idicates if the control can be set.
 bool GetIsSettable();
 ```
 
-#### Return Value
+## Return Value
 
 The control’s settability value.
 

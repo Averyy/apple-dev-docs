@@ -21,7 +21,7 @@ A `Sequence` that can contain the same elements as this one, possibly with a sim
 typealias Elements = LazyMapSequence<Base, Element>
 ```
 
-#### Discussion
+## Discussion
 
 - See also: `elements`
 

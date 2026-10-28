@@ -15,7 +15,7 @@ Reduce fraudulent use of your services by managing device state and asserting ap
 - visionOS 1.0+
 - watchOS 9.0+
 
-#### Overview
+## Overview
 
 The DeviceCheck services consist of both a framework interface that you access from your app and an Apple server interface that you access from your own server.
 

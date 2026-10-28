@@ -24,7 +24,7 @@ class CIBlendKernel
 @interface CIBlendKernel : CIColorKernel
 ```
 
-#### Overview
+## Overview
 
 The blend kernel function has the following characteristics:
 

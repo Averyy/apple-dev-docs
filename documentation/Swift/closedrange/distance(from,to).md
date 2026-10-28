@@ -23,11 +23,11 @@ func distance(from start: ClosedRange<Bound>.Index, to end: ClosedRange<Bound>.I
 
 Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
-#### Return Value
+## Return Value
 
 The distance between `start` and `end`. The result can be negative only if the collection conforms to the `BidirectionalCollection` protocol.
 
-#### Discussion
+## Discussion
 
 Unless the collection conforms to the `BidirectionalCollection` protocol, `start` must be less than or equal to `end`.
 

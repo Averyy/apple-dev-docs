@@ -28,7 +28,7 @@ HKErrorAuthorizationNotDetermined
 
 - [Authorizing access to health data](../../authorizing-access-to-health-data.md)
 
-#### Discussion
+## Discussion
 
 This error occurs when your app doesn’t request proper authorization before calling any other HealthKit methods. For more information on setting up HealthKit, see `HealthKit`.
 

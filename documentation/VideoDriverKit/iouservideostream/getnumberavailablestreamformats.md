@@ -15,7 +15,7 @@ Gets the number of available description for the stream.
 size_t GetNumberAvailableStreamFormats();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

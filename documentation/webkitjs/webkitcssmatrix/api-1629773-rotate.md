@@ -20,11 +20,11 @@ WebKitCSSMatrix rotate(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix that is the result of rotating this matrix by each of the three rotation matrices about the major axes, first the x axes, y axes, and then z axes.
 
-#### Discussion
+## Discussion
 
 This matrix is not modified by this method.
 

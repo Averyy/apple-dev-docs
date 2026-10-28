@@ -23,11 +23,11 @@ func guesses(forWordRange range: NSRange, in string: String, language: String) -
 - (NSArray<NSString *> *) guessesForWordRange:(NSRange) range inString:(NSString *) string language:(NSString *) language;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings each of which might be a correct substitute (that is, a guess) for a misspelled word in the given range of the string. If no possible guesses are found,  the method returns an empty array.
 
-#### Discussion
+## Discussion
 
 The strings in the array are in the order they should be presented to the user—that is, more probable guesses come first in the array.
 

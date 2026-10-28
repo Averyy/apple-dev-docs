@@ -21,11 +21,11 @@ Returns the application-defined context of an object.
 extern void *dispatch_get_context(dispatch_object_t object);
 ```
 
-#### Return Value
+## Return Value
 
 The context of the object; can be `NULL`.
 
-#### Discussion
+## Discussion
 
 Your application can associate custom context data with the object, to be used only by your application. Your application must allocate and deallocate the data as appropriate.
 

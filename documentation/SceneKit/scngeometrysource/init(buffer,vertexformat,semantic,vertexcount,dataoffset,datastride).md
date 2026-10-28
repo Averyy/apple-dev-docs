@@ -25,11 +25,11 @@ convenience init(buffer: any MTLBuffer, vertexFormat: MTLVertexFormat, semantic:
 + (instancetype) geometrySourceWithBuffer:(id<MTLBuffer>) buffer vertexFormat:(MTLVertexFormat) vertexFormat semantic:(SCNGeometrySourceSemantic) semantic vertexCount:(NSInteger) vertexCount dataOffset:(NSInteger) offset dataStride:(NSInteger) stride;
 ```
 
-#### Return Value
+## Return Value
 
 A new geometry source object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a geometry source whose underlying data can be modified at render time by a Metal compute shader running on the GPU. To create a [`MTLBuffer`](../../Metal/mtlbuffer.md) object for use with a geometry source, use the [`device`](../scnscenerenderer/device.md) property of the SceneKit view (or other renderer) responsible for drawing your scene.
 

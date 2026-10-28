@@ -12,7 +12,7 @@ virtual void registerService(
  IOOptionBits options = 0 );
 ```
 
-#### Overview
+## Overview
 
 This function allows an IOService subclass to be published and made available to possible clients, by starting the registration process and delivering notifications to registered clients. The object should be completely setup and ready to field requests from clients before `registerService` is called.
 

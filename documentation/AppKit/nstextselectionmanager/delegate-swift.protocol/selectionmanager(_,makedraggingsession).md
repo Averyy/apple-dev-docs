@@ -19,11 +19,11 @@ optional func selectionManager(_ selectionManager: NSTextSelectionManager, makeD
 - (NSDraggingSession *) selectionManager:(NSTextSelectionManager *) selectionManager makeDraggingSessionWithGesture:(NSGestureRecognizer *) gesture;
 ```
 
-#### Return Value
+## Return Value
 
 A new dragging session, or `nil` to prevent dragging.
 
-#### Discussion
+## Discussion
 
 The selection manager calls this method when the user attempts to drag the current text selection. Use this method to customize the dragging behavior, including setting drag data and drag images.
 

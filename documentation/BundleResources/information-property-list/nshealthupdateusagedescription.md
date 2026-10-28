@@ -16,7 +16,7 @@ A message to the user that explains why the app requested permission to save sam
 - **Name**: `NSHealthUpdateUsageDescription` (Privacy - Health Update Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that update the user’s health data.
 

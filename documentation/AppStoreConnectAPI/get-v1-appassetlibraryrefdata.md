@@ -16,9 +16,9 @@ List app asset library reference data.
 - [Uploading and managing image assets](./uploading-and-managing-image-assets.md)
 - [Uploading and managing video assets](./uploading-and-managing-video-assets.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

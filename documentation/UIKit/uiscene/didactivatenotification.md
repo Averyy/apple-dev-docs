@@ -24,7 +24,7 @@ class let didActivateNotification: NSNotification.Name
 extern NSNotificationName const UISceneDidActivateNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Use this notification to prepare your scene to be onscreen. UIKit posts this notification after loading the interface for your scene, but before that interface appears onscreen. Use it to refresh the contents of views, start timers, or increase frame rates for your UI. UIKit places the scene object in the [`object`](../../Foundation/nsnotification/object.md) property of the notification.
 

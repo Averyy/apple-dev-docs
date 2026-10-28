@@ -25,11 +25,11 @@ func value(forKeyPath keyPath: String) -> Any?
 - (id) valueForKeyPath:(NSString *) keyPath;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the derived property identified by `keyPath`.
 
-#### Discussion
+## Discussion
 
 The default implementation gets the destination object for each relationship using [`value(forKey:)`](./value%28forkey%29.md) and returns the result of a [`value(forKey:)`](./value%28forkey%29.md) message to the final object.
 

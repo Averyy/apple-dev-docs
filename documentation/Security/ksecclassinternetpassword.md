@@ -25,7 +25,7 @@ let kSecClassInternetPassword: CFString
 extern CFStringRef const kSecClassInternetPassword;
 ```
 
-#### Discussion
+## Discussion
 
 The following keychain item attributes form the composite primary key of an Internet password item:
 

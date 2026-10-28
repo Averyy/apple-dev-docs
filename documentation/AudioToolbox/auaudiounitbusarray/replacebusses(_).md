@@ -24,7 +24,7 @@ func replaceBusses(_ busArray: [AUAudioUnitBus])
 - (void) replaceBusses:(NSArray<AUAudioUnitBus *> *) busArray;
 ```
 
-#### Discussion
+## Discussion
 
 The base class issues KVO notifications.
 

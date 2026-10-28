@@ -12,7 +12,7 @@ virtual IOReturn provideConfig(
  IOATADevConfig *configRequest);
 ```
 
-#### Return Value
+## Return Value
 
 kIOSuccess (0) on successful completion and configRequest will contain the configuration information.
 

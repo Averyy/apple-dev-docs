@@ -17,7 +17,7 @@ var name: String { get }
 @property (copy, readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The activity’s name is used to group the activity within test output in Xcode test reports.
 

@@ -23,7 +23,7 @@ var allowsEditing: Bool { get set }
 @property (nonatomic) BOOL allowsEditing;
 ```
 
-#### Discussion
+## Discussion
 
 When editing a person’s information, all person properties are visible.
 

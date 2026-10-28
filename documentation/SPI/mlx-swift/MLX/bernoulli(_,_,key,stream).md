@@ -17,7 +17,7 @@ Generate Bernoulli random values with a given `p` value.
 func bernoulli(_ p: some ScalarOrArray, _ shape: (some Collection<Int>)? = [Int]?.none, key: (some RandomStateOrKey)? = MLXArray?.none, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The values are sampled from the bernoulli distribution with parameter `p`. The parameter `p` must have a floating point type and must be broadcastable to `shape`.
 

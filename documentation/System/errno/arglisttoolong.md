@@ -25,7 +25,7 @@ static var argListTooLong: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The number of bytes used for the argument and environment list of the new process exceeded the limit `NCARGS`, as defined in `<sys/param.h>`.
 

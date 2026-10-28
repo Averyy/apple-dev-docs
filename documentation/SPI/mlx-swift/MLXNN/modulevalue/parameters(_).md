@@ -17,7 +17,7 @@ An `MLXArray` parameters value.
 case parameters(MLXArray)
 ```
 
-#### Discussion
+## Discussion
 
 From code:
 

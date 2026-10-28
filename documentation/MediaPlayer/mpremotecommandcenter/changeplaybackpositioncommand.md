@@ -25,7 +25,7 @@ var changePlaybackPositionCommand: MPChangePlaybackPositionCommand { get }
 @property (nonatomic, readonly) MPChangePlaybackPositionCommand * changePlaybackPositionCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to register your app’s handler for changing the playback position for the playlist. In your handler, change the playback position to the new value. You can disable the command if your app does not support it.
 

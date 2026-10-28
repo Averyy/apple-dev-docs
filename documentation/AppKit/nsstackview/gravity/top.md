@@ -19,7 +19,7 @@ case top
 NSStackViewGravityTop
 ```
 
-#### Discussion
+## Discussion
 
 Use only when the value of the [`orientation`](../orientation.md) property is [`NSUserInterfaceLayoutOrientation.vertical`](../../nsuserinterfacelayoutorientation/vertical.md).
 

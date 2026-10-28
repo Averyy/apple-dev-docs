@@ -22,7 +22,7 @@ The big-endian representation of this integer.
 var bigEndian: Self { get }
 ```
 
-#### Discussion
+## Discussion
 
 If necessary, the byte order of this value is reversed from the typical byte order of this integer type. On a big-endian platform, for any integer `x`, `x == x.bigEndian`.
 

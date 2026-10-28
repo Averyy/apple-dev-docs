@@ -21,7 +21,7 @@ func SecKeyUnwrapSymmetric(_ keyToUnwrap: UnsafeMutablePointer<Unmanaged<CFData>
 SecKeyRefSecKeyUnwrapSymmetric(CFDataRef*keyToUnwrap, SecKeyRef unwrappingKey, CFDictionaryRef parameters, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The unwrapped key, or `NULL` on failure. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the key’s memory when you are done with it.
 

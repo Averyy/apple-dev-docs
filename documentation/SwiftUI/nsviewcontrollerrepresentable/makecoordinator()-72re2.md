@@ -18,7 +18,7 @@ Creates an object to coordinate with the AppKit view controller.
 
 Available when `Coordinator` is `()`.
 
-#### Discussion
+## Discussion
 
 `Coordinator` can be accessed via `Context`.
 

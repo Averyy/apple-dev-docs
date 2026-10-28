@@ -24,7 +24,7 @@ var channels: [AVAudioSessionChannelDescription]? { get }
 @property (nonatomic, readonly, nullable) NSArray<AVAudioSessionChannelDescription *> * channels;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of this array may change if the audio session’s input or output channel count changes.
 

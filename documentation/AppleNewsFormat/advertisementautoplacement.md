@@ -19,11 +19,11 @@ object AdvertisementAutoPlacement
 
 - [Apple News Format Release Notes](../AppleNews/apple-news-format-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Use the `AdvertisementAutoPlacement` object to insert dynamic advertisements between [`Body`](./body.md), [`Chapter`](./chapter.md), [`Section`](../AppleNewsAPI/section.md), or [`Container`](./container.md) components in an article.
 
-##### Example
+### Example
 
 ```json
 {

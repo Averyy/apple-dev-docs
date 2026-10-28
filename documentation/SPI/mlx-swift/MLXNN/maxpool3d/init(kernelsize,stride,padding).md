@@ -17,7 +17,7 @@ Applies 3-dimensional max pooling.
 init(kernelSize: IntOrTriple, stride: IntOrTriple, padding: IntOrTriple = 0)
 ```
 
-#### Discussion
+## Discussion
 
 The input is expected to be `NDHWC`. The output will have the same N/C dimensions with the new D/H/W = floor((D/H/W - kernel)/stride) + 1
 

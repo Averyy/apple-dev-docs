@@ -12,7 +12,7 @@ static IOWorkLoop *workLoopWithOptions(
  IOOptionBitsoptions);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a workLoop instance if constructed successfully, 0 otherwise.
 

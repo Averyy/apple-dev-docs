@@ -15,7 +15,7 @@ A Boolean value that determines whether the map displays the annotation in a sel
 selected?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

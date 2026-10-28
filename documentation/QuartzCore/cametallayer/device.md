@@ -24,7 +24,7 @@ var device: (any MTLDevice)? { get set }
 @property (retain, nullable) id<MTLDevice> device;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines which device object Metal uses to create its [`MTLTexture`](../../Metal/mtltexture.md) objects. When you retrieve a drawable object and its associated texture, you must render to the texture using the same device object.
 

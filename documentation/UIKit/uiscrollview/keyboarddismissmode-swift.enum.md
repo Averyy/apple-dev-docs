@@ -22,7 +22,7 @@ enum KeyboardDismissMode
 enum UIScrollViewKeyboardDismissMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You use these constants to set the value of the [`keyboardDismissMode`](./keyboarddismissmode-swift.property.md) property.
 

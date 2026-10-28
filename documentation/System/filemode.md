@@ -22,7 +22,7 @@ A strongly-typed file mode representing a C `mode_t`.
 struct FileMode
 ```
 
-#### Overview
+## Overview
 
 > **Note**: Only available on Unix-like platforms.
 

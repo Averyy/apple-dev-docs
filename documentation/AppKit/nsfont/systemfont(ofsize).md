@@ -19,11 +19,11 @@ class func systemFont(ofSize fontSize: CGFloat) -> NSFont
 + (NSFont *) systemFontOfSize:(CGFloat) fontSize;
 ```
 
-#### Return Value
+## Return Value
 
 A font object containing the system font at the specified size.
 
-#### Discussion
+## Discussion
 
 Use the returned font for standard interface items, including button labels, menu items, and so on that use the default font appearance.
 

@@ -25,7 +25,7 @@ var stalenessInterval: TimeInterval { get set }
 @property NSTimeInterval stalenessInterval;
 ```
 
-#### Discussion
+## Discussion
 
 The staleness interval controls whether *fulfilling a fault* uses data previously fetched by the application, or issues a new fetch (see also [`refresh(_:mergeChanges:)`](./refresh%28_,mergechanges%29.md)). The staleness interval does *not* affect objects currently in use (that is, it is *not* used to automatically update property values from a persistent store after a certain period of time).
 

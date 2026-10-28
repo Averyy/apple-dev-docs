@@ -19,7 +19,7 @@ static let horizontallyCentered: NSPrintInfo.AttributeKey
 extern NSPrintInfoAttributeKey const NSPrintHorizontallyCentered;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../../Swift/true.md), pages are centered horizontally.
 

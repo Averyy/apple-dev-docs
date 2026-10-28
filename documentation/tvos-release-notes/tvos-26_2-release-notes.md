@@ -5,29 +5,29 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The tvOS 26.2 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 26.2. The SDK comes bundled with Xcode 26.2. For information on the compatibility requirements for Xcode 26.2, see [Xcode 26.2 Release Notes](../Xcode-Release-Notes/xcode-26_2-release-notes.md).
 
-##### Apple TV app
+### Apple TV app
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Kids programming and UI in the Apple TV app are English (US) only for developer beta.  (161932392)
 
-##### Instruments
+### Instruments
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Allocations instrument sometimes fails to report reference counting operations for native Swift types.  (163080666)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - [AppStore.ageRatingCode](../StoreKit/appstore/ageratingcode.md) API provides the current age rating code for your app. Use this property to fetch the age rating and compare it with the last known rating to check for changes.  (160960740)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: An issue prevents the purchase of a subscription using a win-back offer when testing with StoreKit Testing in Xcode.  (162357552) (FB20604848)
 - Fixed: `SubscriptionStatus.all` returning old `SubscriptionStatus` after a subscription change.  (163505178)

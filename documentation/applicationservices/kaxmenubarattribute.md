@@ -17,7 +17,7 @@ var kAXMenuBarAttribute: String { get }
 #define kAXMenuBarAttribute
 ```
 
-#### Discussion
+## Discussion
 
 The accessibility object representing the menu bar of this application. The application-level accessibility object includes this attribute to help an assistive application easily find the menu bar. This attribute is recommended for all application-level accessibility objects.
 

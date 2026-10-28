@@ -15,7 +15,7 @@ An option that enables people to click or tap a subject in an image to separate 
 static let imageSubject: ImageAnalysisOverlayView.InteractionTypes
 ```
 
-#### Discussion
+## Discussion
 
 For more information about image subjects, see [`ImageAnalysisOverlayView.Subject`](../subject.md).
 

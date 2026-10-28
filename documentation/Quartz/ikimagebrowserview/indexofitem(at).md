@@ -19,7 +19,7 @@ func indexOfItem(at point: NSPoint) -> Int
 - (NSInteger) indexOfItemAtPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the item or `NSNotFound` if no item at this location.
 

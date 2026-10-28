@@ -24,7 +24,7 @@ static let cyclingCadence: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierCyclingCadence;
 ```
 
-#### Discussion
+## Discussion
 
 Cycling cadence represents the number of times the pedals turn over in the minute. The value is measured in revolutions per minute, or RPMs. These samples use counts per minute units (described in [`HKUnit`](../hkunit.md)) and measure discrete values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)). Cycling cadence can be automatically collected by peripherals connected to an Apple Watch during cycling workouts. Sample data may be condensed and/or coalesced by HealthKit. For more information, see [Accessing condensed workout samples](../accessing-condensed-workout-samples.md).
 

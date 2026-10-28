@@ -25,11 +25,11 @@ convenience init(width: CGFloat, height: CGFloat, length: CGFloat)
 + (instancetype) pyramidWithWidth:(CGFloat) width height:(CGFloat) height length:(CGFloat) length;
 ```
 
-#### Return Value
+## Return Value
 
 A new pyramid geometry.
 
-#### Discussion
+## Discussion
 
 The pyramid’s base is centered in its local coordinate system. For example, if you create a pyramid whose width, height and length are all `10.0`, its apex is at the point `{0, 10.0, 0}`, and its base lies in the plane whose y-coordinate is `0.0`, extending from `-5.0` to `5.0` along both the x- and z-axes.
 

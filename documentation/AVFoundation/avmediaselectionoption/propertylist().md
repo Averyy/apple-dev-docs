@@ -25,11 +25,11 @@ func propertyList() -> Any
 - (id) propertyList;
 ```
 
-#### Return Value
+## Return Value
 
 A serializable property list that you can use to obtain an instance of [`AVMediaSelectionOption`](../avmediaselectionoption.md) representing the same option as the receiver using [`mediaSelectionOption(withPropertyList:)`](../avmediaselectiongroup/mediaselectionoption%28withpropertylist%29.md).
 
-#### Discussion
+## Discussion
 
 You can serialize the returned property list using [`PropertyListSerialization`](../../Foundation/propertylistserialization.md).
 

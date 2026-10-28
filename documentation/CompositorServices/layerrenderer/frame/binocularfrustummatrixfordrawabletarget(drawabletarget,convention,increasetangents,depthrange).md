@@ -16,11 +16,11 @@ Returns the transform which can be used for binocular frustum culling. A matrix 
 func binocularFrustumMatrixForDrawableTarget(drawableTarget: LayerRenderer.Drawable.Target, convention: AxisDirectionConvention = .rightUpBack, increaseTangents: SIMD4<Float>, depthRange: SIMD2<Float>) -> matrix_float4x4
 ```
 
-#### Return Value
+## Return Value
 
 A transform which combines  perspective projection matrix that transforms coordinates from view coordinate space to clip space and a view matrix which brings device coordinate space to binocular camera space
 
-#### Discussion
+## Discussion
 
 ```
             /

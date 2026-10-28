@@ -21,7 +21,7 @@ A type that represents data in Apple-protected MPEG-4 format.
 extern UTType * const UTTypeAppleProtectedMPEG4Video;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.protected-mpeg-4-video`.
 

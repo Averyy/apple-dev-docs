@@ -23,11 +23,11 @@ func planarBuffers() -> [vImage.PixelBuffer<vImage.PlanarF>]
 
 Available when `Format` is `vImage.InterleavedFx2`.
 
-#### Return Value
+## Return Value
 
 An array of planar pixel buffers.
 
-#### Discussion
+## Discussion
 
 Use this function to deinterleave a buffer and create two new planar buffers that contain copies of each source channel. For example, the following code generates two 1 x 1 planar buffers from an [`vImage.InterleavedFx2`](../interleavedfx2.md) pixel buffer:
 

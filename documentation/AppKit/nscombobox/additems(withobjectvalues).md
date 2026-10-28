@@ -19,7 +19,7 @@ func addItems(withObjectValues objects: [Any])
 - (void) addItemsWithObjectValues:(NSArray *) objects;
 ```
 
-#### Discussion
+## Discussion
 
 This method logs a warning if the [`usesDataSource`](./usesdatasource.md) property is [`true`](../../Swift/true.md).
 

@@ -24,7 +24,7 @@ var appearance: NSAppearance? { get set }
 
 - [Choosing a Specific Appearance for Your macOS App](../choosing-a-specific-appearance-for-your-macos-app.md)
 
-#### Discussion
+## Discussion
 
 The default value for this property is `nil`, which means that the receiver uses the appearance it inherits from the nearest ancestor that has set an appearance. When you set `appearance` to a non-`nil` value, the receiver and the views it contains use the specified appearance.
 

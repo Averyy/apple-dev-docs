@@ -24,7 +24,7 @@ var minimumValue: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * minimumValue;
 ```
 
-#### Discussion
+## Discussion
 
 This value only applies to characteristics with a number type.
 

@@ -25,7 +25,7 @@ func registerObject(_ object: any NSItemProviderWriting, visibility: NSItemProvi
 - (void) registerObject:(id<NSItemProviderWriting>) object visibility:(NSItemProviderRepresentationVisibility) visibility;
 ```
 
-#### Discussion
+## Discussion
 
 If a representation for a given UTI is already registered, it is preserved (specifically, duplicate representations are ignored).
 

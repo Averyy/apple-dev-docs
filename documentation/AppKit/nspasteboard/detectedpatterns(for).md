@@ -15,11 +15,11 @@ Determines whether the first pasteboard item matches the specified patterns, wit
 func detectedPatterns(for keyPaths: Set<PartialKeyPath<NSPasteboard.DetectedValues>>) async throws -> Set<PartialKeyPath<NSPasteboard.DetectedValues>>
 ```
 
-#### Return Value
+## Return Value
 
 A set with the patterns found on the pasteboard.
 
-#### Discussion
+## Discussion
 
 This method only gives an indication of whether the first pasteboard item matches a particular pattern, and doesn’t allow the app to access the item’s contents. As a result, the system doesn’t notify the person using the app about reading the contents of the pasteboard.
 

@@ -21,7 +21,7 @@ The protocol to which all class types implicitly conform.
 typealias AnyClass = any AnyObject.Type
 ```
 
-#### Discussion
+## Discussion
 
 You can use the `AnyClass` protocol as the concrete type for an instance of any class. When you do, all known `@objc` class methods and properties are available as implicitly unwrapped optional methods and properties, respectively. For example:
 

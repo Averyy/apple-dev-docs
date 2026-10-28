@@ -21,7 +21,7 @@ func scrubber(_ scrubber: NSScrubber, viewForItemAt index: Int) -> NSScrubberIte
 - (NSScrubberItemView *) scrubber:(NSScrubber *) scrubber viewForItemAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 A configured item view object.
 

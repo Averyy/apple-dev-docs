@@ -25,7 +25,7 @@ func add(in range: NSRange)
 - (void) addIndexesInRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 This method raises an [`rangeException`](../nsexceptionname/rangeexception.md) when `range` would add an index that exceeds the maximum allowed value for unsigned integers.
 

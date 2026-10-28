@@ -20,7 +20,7 @@ A query interface that reads the location data stored in a workout route using S
 struct HKWorkoutRouteQueryDescriptor
 ```
 
-#### Overview
+## Overview
 
 Use [`HKWorkoutRouteQueryDescriptor`](./hkworkoutroutequerydescriptor.md) to access the individual [`CLLocation`](../CoreLocation/cllocation.md) objects stored in an [`HKWorkoutRoute`](./hkworkoutroute.md) sample. To read the individual locations, create a workout route query descriptor using the desired route, and then call the descriptor’s [`results(for:)`](./hkworkoutroutequerydescriptor/results%28for%29.md) method.
 

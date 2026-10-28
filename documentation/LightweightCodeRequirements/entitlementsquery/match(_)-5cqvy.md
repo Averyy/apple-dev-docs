@@ -21,7 +21,7 @@ Match the specified string value against a string or an array of strings.
 func match(_ value: String) -> EntitlementsQuery
 ```
 
-#### Discussion
+## Discussion
 
 Strings are matched byte for byte (i.e. no unicode normalization occurs).
 

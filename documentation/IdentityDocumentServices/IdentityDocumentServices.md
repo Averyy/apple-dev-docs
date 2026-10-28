@@ -11,7 +11,7 @@ Share mobile documents using the Digital Credentials API.
 - iPadOS 26.0+
 - macOS 26.0+
 
-#### Overview
+## Overview
 
 Identity Document Services enables the presentment of identity documents on device and web browser support for the Digital Credentials API.
 

@@ -19,7 +19,7 @@ protocol NSCollectionViewDataSource : NSObjectProtocol
 @protocol NSCollectionViewDataSource <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A data source object vends information about your app’s data model to the collection view when asked. For example, it tells the collection view how many items are present. It also handles the creation and configuration of the views used to represent items and used to decorate the collection view’s content area.
 
@@ -27,7 +27,7 @@ All data source objects must implement the [`collectionView(_:numberOfItemsInSec
 
 To associate your data source object with a collection view, assign the object to the [`dataSource`](./nscollectionview/datasource.md) property of that collection view. You can also connect the data source to your collection view in Interface Builder. For more information about how a collection view works with its data source to present content, see [`NSCollectionView`](./nscollectionview.md).
 
-##### Organizing Your Data Structures
+### Organizing Your Data Structures
 
 How you implement your data source object has implications for the associated collection view. Your data source object acts as the bridge between your app’s underlying data and the presentation of that data by the collection view. Because the methods of your data source object are called many times while the collection view is onscreen, the implementations of those methods need to return data as quickly as possible. Therefore, you should create data structures that adapt easily to the organization of the collection view itself.
 
@@ -37,7 +37,7 @@ The data structures you use for your sections and items are separate from the vi
 
 When organizing your data, create data structures that map efficiently to the section and item model. One simple way to organize your data is to use an [`NSMutableArray`](../Foundation/nsmutablearray.md) object to store the items for each section. Whatever data structures you choose, make sure that they can return the needed information quickly. For example, you need to return the total number of sections and the number of items in each section. You also need to be able to fetch items based on section and item indexes quickly.
 
-##### Configuring Items and Supplementary Views
+### Configuring Items and Supplementary Views
 
 When the collection view determines that an item or supplementary view needs to be displayed, it asks your data source to provide the corresponding visual element. The visual representation of an item is provided by the [`NSCollectionViewItem`](./nscollectionviewitem.md) class. The visual representation of a supplementary view is provided by an [`NSView`](./nsview.md) object. The steps for configuring an item or supplementary view are essentially the same. The only thing that changes is the specific methods you call.
 

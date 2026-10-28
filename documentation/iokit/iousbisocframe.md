@@ -16,7 +16,7 @@ typedef struct IOUSBIsocFrame {
 } IOUSBIsocFrame;
 ```
 
-#### Overview
+## Overview
 
 Structure used to encode information about each isoc frame.
 

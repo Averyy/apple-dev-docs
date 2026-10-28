@@ -25,7 +25,7 @@ var adjustsImageWhenDisabled: Bool { get set }
 @property (nonatomic) BOOL adjustsImageWhenDisabled;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the image is drawn darker when the button is disabled. The default value is [`true`](../../Swift/true.md).
 

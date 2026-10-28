@@ -16,7 +16,7 @@ An array of AudioHardwareControls that represent the controls of the device.
 var controls: [AudioHardwareControl] { get throws }
 ```
 
-#### Discussion
+## Discussion
 
 If a notification is received for kAudioClockDevicePropertyControlList or kAudioObjectPropertyControlList, any cached AudioHardwareControl objects become invalid and need to be re-fetched.
 

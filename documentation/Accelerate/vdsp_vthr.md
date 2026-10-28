@@ -21,7 +21,7 @@ Calculates single-precision vector threshold to the specified range.
 extern void vDSP_vthr(const float *__A, vDSP_Stride __IA, const float *__B, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Performs the following operation:
 

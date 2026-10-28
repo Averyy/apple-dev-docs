@@ -21,7 +21,7 @@ class AVCaptureEventSound
 @interface AVCaptureEventSound : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: To use AirPods Camera Control, it must be available in your country or region. AirPods Camera Control is not currently available in the European Union.
 

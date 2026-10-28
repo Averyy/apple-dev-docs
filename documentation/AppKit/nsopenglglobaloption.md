@@ -21,7 +21,7 @@ enum NSOpenGLGlobalOption
 enum NSOpenGLGlobalOption : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 These constants are option names for [`NSOpenGLSetOption`](./nsopenglsetoption.md) and [`NSOpenGLGetOption`](./nsopenglgetoption.md).
 

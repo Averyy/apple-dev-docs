@@ -19,7 +19,7 @@ var moduleVersion: String? { get }
 @property (nonatomic, readonly, nullable) NSString * moduleVersion;
 ```
 
-#### Discussion
+## Discussion
 
 The bundle version may change if an existing device module associated with this device is updated or a new device module for this device is installed.
 

@@ -19,7 +19,7 @@ static var expanded: NSFontDescriptor.SymbolicTraits { get }
 NSFontDescriptorTraitExpanded
 ```
 
-#### Discussion
+## Discussion
 
 Expanded and condensed traits are mutually exclusive.
 

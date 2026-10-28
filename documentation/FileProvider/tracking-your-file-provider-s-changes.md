@@ -4,7 +4,7 @@
 
 Create an enumerator to track changes to your file provider’s content.
 
-#### Overview
+## Overview
 
 While an enumerator is active, it also tracks any changes to its contents. The system only tracks changes to a document or folder while it has an active enumerator for that item (for example, while a document is open or a folder is being browsed).
 

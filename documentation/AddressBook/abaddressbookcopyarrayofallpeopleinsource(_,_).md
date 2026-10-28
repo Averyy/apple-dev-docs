@@ -23,7 +23,7 @@ func ABAddressBookCopyArrayOfAllPeopleInSource(_ addressBook: ABAddressBook!, _ 
 extern CFArrayRefABAddressBookCopyArrayOfAllPeopleInSource(ABAddressBookRef addressBook, ABRecordRef source);
 ```
 
-#### Return Value
+## Return Value
 
 An array of all person records from a particular source.
 

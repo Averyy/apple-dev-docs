@@ -23,7 +23,7 @@ var kDNSServiceType_A6: Int { get }
 kDNSServiceType_A6
 ```
 
-#### Discussion
+## Discussion
 
 IPv6 Address (deprecated)
 

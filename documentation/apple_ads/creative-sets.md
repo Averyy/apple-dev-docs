@@ -5,7 +5,7 @@
 
 Creative Sets is deprecated.
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  As of January 2022, [Custom Product Pages](./custom-product-pages.md) replaces Creative Sets functionality. The Apple Ads API no longer supports Creative Sets and `AdGroupCreativeSets`. Creative Sets APIs return `200OK` responses with an invalid state. Your Creative Sets data remains available through `Get Creative Set-Level Reports` and through the `AdServices` attribution framework for devices running below iOS 15.2. See [`attributionToken()`](../AdServices/aaattribution/attributiontoken%28%29.md).
 
@@ -13,14 +13,14 @@ Creative Sets is deprecated.
 
 Creative Sets enable you to test ad variations in ad groups and optimize for different keywords, devices, and display sizes.
 
-##### Upload Assets to App Store Connect
+### Upload Assets to App Store Connect
 
 Using creatives in the Apple Ads Campaign Management API requires you to upload your app assets to [App Store Connect](https://developer.apple.com/app-store-connect/). For the API to return asset data, you must meet two important requirements:
 
 - Your app needs a  minimum number of assets. See the `Asset` object, `MediaAppPreviewOrScreenshots`, and `MediaAppPreviewOrScreenshotsDetail` for app asset descriptions.
 - The supported language for your campaign must be the same as the one for the [App Store Connect](https://developer.apple.com/app-store-connect/) territory of your app.
 
-##### Create and Work with Creatives
+### Create and Work with Creatives
 
 After you upload your app assets to [App Store Connect](https://developer.apple.com/app-store-connect/), use `Get App Language, Device Sizes, and Asset Details` to identify supported languages for your app and countries or regions. Then use `Create Ad Group Creative Sets`. You can reassign Creative Sets to another ad group using `Assign Creative Sets to an Ad Group`.
 

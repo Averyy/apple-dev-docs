@@ -20,7 +20,7 @@ func ColorSyncProfileCreateWithDisplayID(_ displayID: UInt32) -> Unmanaged<Color
 extern ColorSyncProfileRefColorSyncProfileCreateWithDisplayID(uint32_t displayID);
 ```
 
-#### Return Value
+## Return Value
 
 A new profile, or `NULL` in case of failure.
 

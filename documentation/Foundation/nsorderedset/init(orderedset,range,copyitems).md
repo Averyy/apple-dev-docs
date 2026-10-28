@@ -25,7 +25,7 @@ convenience init(orderedSet set: NSOrderedSet, range: NSRange, copyItems flag: B
 - (instancetype) initWithOrderedSet:(NSOrderedSet<id> *) set range:(NSRange) range copyItems:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized ordered set containing the objects in the ordered set.
 

@@ -23,7 +23,7 @@ var canBecomeKey: Bool { get }
 @property (nonatomic, readonly) BOOL canBecomeKeyWindow;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md). To indicate that the window can’t become the key window, override [`canBecomeKey`](./canbecomekey.md) and return [`false`](../../Swift/false.md).
 

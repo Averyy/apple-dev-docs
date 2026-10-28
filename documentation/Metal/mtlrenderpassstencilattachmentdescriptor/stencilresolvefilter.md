@@ -24,7 +24,7 @@ var stencilResolveFilter: MTLMultisampleStencilResolveFilter { get set }
 @property (nonatomic) MTLMultisampleStencilResolveFilter stencilResolveFilter;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLMultisampleStencilResolveFilter.sample0`](../mtlmultisamplestencilresolvefilter/sample0.md).
 

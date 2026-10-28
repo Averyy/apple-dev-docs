@@ -5,13 +5,13 @@
 
 Learn how alternate groups collect audio tracks, and how to choose which audio track to use in your app.
 
-#### Overview
+## Overview
 
 Movies recorded in QuickTime Movie files and MPEG-4 files by the Camera app on iPhone 16 and iPhone 16 Pro, and by spatial video captures on Apple Vision Pro, may have more than one audio track, containing the same recording in different formats. One track carries Spatial Audio and the other serves as a stereo fallback.
 
 Movie files collect these tracks into [alternate groups](../quicktime-file-format/preparing_sound_and_subtitle_alternate_groups_for_use_with_apple_devices.md), from which at most one track should be used at a time.
 
-#### Alternate groups
+## Alternate groups
 
 Movies use [alternate groups](../quicktime-file-format/preparing_sound_and_subtitle_alternate_groups_for_use_with_apple_devices.md) to describe multiple language audio tracks and subtitle tracks. Alternate groups can also indicate the relationship between stereo and surround audio tracks when they are recordings of the same audio source: only one should be played at a time.
 
@@ -26,7 +26,7 @@ The stereo track is associated as the fallback track for the Spatial Audio track
 
 > ❗ **Important**: If your app examines or uses audio tracks directly, it should honor the relationship between tracks in an alternate group, and use no more than one track from any alternate group at one time. If you mix audio from different tracks in the same group, your app will produce incorrect audio.
 
-#### Enabled tracks
+## Enabled tracks
 
 When you use [`AVAsset`](../AVFoundation/avasset.md) APIs to access tracks in a movies, each track in the asset reports an `isEnabled` property telling you whether the track is marked in the movie file as enabled or disabled.
 
@@ -52,7 +52,7 @@ To query alternate track groups, use the [`trackGroups`](../AVFoundation/avparti
 
 > **Note**: [`AVPlayer`](../AVFoundation/avplayer.md) uses a more sophisticated strategy. It automatically enables the audio track appropriate for the current audio route and disables the others.
 
-#### Enabled state in movie file tracks
+## Enabled state in movie file tracks
 
 When you’re using [AVFoundation](../AVFoundation/AVFoundation.md), you can rely on its APIs for parsing and writing movie files.
 
@@ -66,7 +66,7 @@ In QuickTime Movie files, the enabled state of a QuickTime Movie track is stored
 
 For MPEG-4 (or more generally `ISOBMFF`) files, the enabled state is carried in the 3-byte `flags` field of the `TrackHeaderBox`. The `track_enabled` flag (`0x000001`) is used to mark the track as enabled. A value of `0` in this position disables the track.
 
-#### Alternate group state in movie file tracks
+## Alternate group state in movie file tracks
 
 Each movie track can optionally be associated with an alternate group. Typically, only tracks of a particular kind or category will be in the same alternate group. For example, one alternate group might contain only audio tracks. Another alternate group might contain only subtitle or closed caption tracks.
 
@@ -79,7 +79,7 @@ A value of `0` indicates the track is not a member of an alternate group. A non-
 
 > **Note**: If more than one audio or video track is present in an alternate group, their `track_enabled` flags, as described above, indicate the default choice of track from the group to be presented. The ordering of their serialization in the file should not be considered significant.
 
-#### Revision History
+## Revision History
 
 - **2024-09-26** First published.
 

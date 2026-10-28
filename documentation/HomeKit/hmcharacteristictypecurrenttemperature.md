@@ -24,7 +24,7 @@ let HMCharacteristicTypeCurrentTemperature: String
 extern NSString * const HMCharacteristicTypeCurrentTemperature;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a floating point number in degrees Celsius.
 

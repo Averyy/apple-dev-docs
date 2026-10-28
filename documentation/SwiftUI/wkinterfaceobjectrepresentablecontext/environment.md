@@ -16,7 +16,7 @@ The current environment.
 @preconcurrency var environment: EnvironmentValues { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the environment values to configure the state of your interface object when creating or updating it.
 

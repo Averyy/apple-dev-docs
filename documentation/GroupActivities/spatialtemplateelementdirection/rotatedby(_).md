@@ -15,7 +15,7 @@ Returns a new direction structure that adds the specified rotation angle to the 
 func rotatedBy(_ rotationAngle: Angle2D) -> SpatialTemplateElementDirection
 ```
 
-#### Return Value
+## Return Value
 
 A new direction structure that combines the rotation value of the current structure and the `rotationAngle` value.
 

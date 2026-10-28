@@ -29,15 +29,15 @@ class InputStream
 
 - [Uploading streams of data](./uploading-streams-of-data.md)
 
-#### Overview
+## Overview
 
 [`InputStream`](./inputstream.md) is “toll-free bridged” with its Core Foundation counterpart, [`CFReadStream`](../CoreFoundation/cfreadstream.md). For more information on toll-free bridging, see [Toll-Free Bridging](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2).
 
-##### Subclassing Notes
+### Subclassing Notes
 
 `NSInputStream` is an abstract superclass of a *class cluster* consisting of concrete subclasses of `NSStream` that provide standard read-only access to stream data. Although `NSInputStream` is probably sufficient for most situations requiring access to stream data, you can create a subclass of `NSInputStream` if you want more specialized behavior (for example, you want to record statistics on the data in a stream).
 
-###### Methods to Override
+#### Methods to Override
 
 To create a subclass of `NSInputStream` you may have to implement initializers for the type of stream data supported and suitably re-implement existing initializers. You must also provide complete implementations of the following methods:
 

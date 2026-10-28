@@ -5,7 +5,7 @@
 
 This function commands the device to “destroy” a currently downloaded effect. The effect ID and any data that is associated with the effect are freed and available for reallocation.
 
-#### Overview
+## Overview
 
 ```c
 HRESULT ( *DestroyEffect)(
@@ -13,12 +13,12 @@ HRESULT ( *DestroyEffect)(
    FFEffectDownloadID downloadID );
 ```
 
-##### Parameters
+### Parameters
 
 - **self**: Pointer to the FFPlugInDriver implementation instance.
 - **downloadID**: Indicates the effect ID that was obtained from the device when the effect was downloaded.
 
-##### Return Value
+### Return Value
 
 Returns FF_OK if successful, or an error value otherwise:
 

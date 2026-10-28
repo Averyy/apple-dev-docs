@@ -9,11 +9,11 @@
 virtual UInt8 GetNumEndpoints();
 ```
 
-#### Return Value
+## Return Value
 
 the number of endpoints
 
-#### Overview
+## Overview
 
 returns the number of endpoints used by this interface (excluding device endpoint zero. If the value is zero, this interface only uses endpoint zero.
 

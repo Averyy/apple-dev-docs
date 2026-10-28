@@ -19,7 +19,7 @@ An asynchronous sequence that contains the results that match the query string.
 struct Results
 ```
 
-#### Discussion
+## Discussion
 
 A `CSSearchQuery/Results-swift.struct` structure contains the results of a query. Fetch this structure from the [`results`](./results-swift.property.md) property of your query object to execute the query automatically and begin the delivery of the results. Use each instance of the structure to get the details for a single result.
 

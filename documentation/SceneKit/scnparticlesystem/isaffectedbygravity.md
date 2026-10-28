@@ -25,7 +25,7 @@ var isAffectedByGravity: Bool { get set }
 @property (nonatomic) BOOL affectedByGravity;
 ```
 
-#### Discussion
+## Discussion
 
 Gravity applies a constant acceleration to all particles in the system. SceneKit offers two options for simulating the effect of gravity on particles:
 

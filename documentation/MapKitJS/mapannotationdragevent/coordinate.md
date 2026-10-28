@@ -15,7 +15,7 @@ The coordinate of the annotation while someone is dragging it.
 readonly coordinate: Coordinate | null;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only available for `dragging` event type.
 

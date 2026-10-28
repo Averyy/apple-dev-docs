@@ -17,7 +17,7 @@ Establishes a connection to a launch agent or launch daemon with the name and de
 convenience init<Message>(machService: String, targetQueue: DispatchQueue? = nil, options: XPCSession.InitializationOptions = .none, incomingMessageHandler: (@Sendable (Message) -> (any Encodable)?)? = nil, cancellationHandler: (@Sendable (XPCRichError) -> Void)? = nil) throws where Message : Decodable
 ```
 
-#### Discussion
+## Discussion
 
 If the service isn’t found or is unavailable, the connection fails and this method throws an error.
 

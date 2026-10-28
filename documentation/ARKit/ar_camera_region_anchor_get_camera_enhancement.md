@@ -15,7 +15,7 @@ Get the camera enhancement type for a given anchor.
 extern ar_camera_region_camera_enhancement_t ar_camera_region_anchor_get_camera_enhancement(ar_camera_region_anchor_t camera_region_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 The anchor’s camera enhancement.
 

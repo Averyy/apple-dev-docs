@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_KERBv5_PKINIT_KP_KDC;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

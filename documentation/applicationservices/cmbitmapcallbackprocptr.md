@@ -15,11 +15,11 @@ Defines a pointer to a bitmap callback function that function reports on the pro
 typedef Boolean (*CMBitmapCallBackProcPtr)(SInt32 progress, void *refCon);
 ```
 
-#### Return Value
+## Return Value
 
 F`alse` indicates the color-matching or color-checking session should continue. T`rue` indicates the session should be aborted—for example, the user may be holding down the Command–period keys. 
 
-#### Discussion
+## Discussion
 
 Your `MyCMBitmapCallBack` function allows your application to monitor the progress of a color-matching or color-checking session for a bitmap or a pixel map. Your function can also terminate the matching or checking operation. 
 

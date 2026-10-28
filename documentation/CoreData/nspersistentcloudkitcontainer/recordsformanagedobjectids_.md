@@ -25,7 +25,7 @@ Returns a dictionary that contains the CloudKit records for the specified manage
 
 - [Reading CloudKit Records for Core Data](../reading-cloudkit-records-for-core-data.md)
 
-#### Return Value
+## Return Value
 
 A dictionary that uses `managedObjectIDs` as its keys, and each object’s underlying [`CKRecord`](../../CloudKit/ckrecord.md) as its values. The dictionary excludes IDs that don’t have a CloudKit record.
 

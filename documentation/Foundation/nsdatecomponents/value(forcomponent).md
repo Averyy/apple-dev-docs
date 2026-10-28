@@ -25,11 +25,11 @@ func value(forComponent unit: NSCalendar.Unit) -> Int
 - (NSInteger) valueForComponent:(NSCalendarUnit) unit;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the given calendar unit.
 
-#### Discussion
+## Discussion
 
 This method allows for component values to be retrieved for an [`NSCalendar.Unit`](../nscalendar/unit.md) value.
 

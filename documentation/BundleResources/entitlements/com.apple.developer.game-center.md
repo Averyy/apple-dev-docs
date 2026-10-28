@@ -18,7 +18,7 @@ A Boolean value that indicates whether users of the app may see and compare achi
 - **Name**: `com.apple.developer.game-center` (Game Center)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the Game Center capability in Xcode.
 

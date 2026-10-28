@@ -20,7 +20,7 @@ Initializes the layer map with the provided grid size and rasterization rates.
 - (instancetype) initWithSampleCount:(MTLSize) sampleCount horizontal:(const float *) horizontal vertical:(const float *) vertical;
 ```
 
-#### Return Value
+## Return Value
 
 A layer descriptor with a grid of the specified size. The layer descriptor copies the  rasterization rates.
 

@@ -36,7 +36,7 @@ var contactIdentifier: String? { get }
 
 - [Improving interactions between Siri and your messaging app](../../SiriKit/improving-interactions-between-siri-and-your-messaging-app.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  When donating instances of [`INSendMessageIntent`](../insendmessageintent.md), specify a value for this property for each recipient. This enables Siri to choose and interact with the appropriate messaging app when a person asks to send a message.
 

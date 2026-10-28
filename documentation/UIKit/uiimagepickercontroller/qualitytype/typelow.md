@@ -21,7 +21,7 @@ case typeLow
 UIImagePickerControllerQualityTypeLow
 ```
 
-#### Discussion
+## Discussion
 
 Recorded files can usually be transferred over the cellular network.
 

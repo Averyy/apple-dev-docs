@@ -23,7 +23,7 @@ func fetchDevices()
 - (void) fetchDevices;
 ```
 
-#### Discussion
+## Discussion
 
 Upon success, the framework provides an array of devices to the delegate via [`sensorReader(_:didFetch:)`](../srsensorreaderdelegate/sensorreader%28_,didfetch%29.md). Upon failure, the framework invokes the delegate’s [`sensorReader(_:fetchDevicesDidFailWithError:)`](../srsensorreaderdelegate/sensorreader%28_,fetchdevicesdidfailwitherror%29.md) callback.
 

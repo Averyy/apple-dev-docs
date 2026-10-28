@@ -25,7 +25,7 @@ weak var delegate: (any GKChallengeEventHandlerDelegate)! { get set }
 @property (nonatomic, weak) id<GKChallengeEventHandlerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Only access this property from your game’s main thread.
 

@@ -20,7 +20,7 @@ let kODAuthenticationTypeSetCertificateHashAsCurrent: String
 extern ODAuthenticationType const kODAuthenticationTypeSetCertificateHashAsCurrent;
 ```
 
-#### Discussion
+## Discussion
 
 The authentication array contains the following items (in order):
 

@@ -24,11 +24,11 @@ class func pdf417BarcodeGenerator() -> any CIFilter & CIPDF417BarcodeGenerator
 + (CIFilter<CIPDF417BarcodeGenerator> *) PDF417BarcodeGenerator;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates a PDF417 barcode as an image. PDF417 is a high-density stacked linear barcode format defined in the ISO 15438 standard. Use this filter to generate alphanumeric or numeric-only barcodes. Commonly used on identification cards or inventory management because of the large amount of data the barcode can hold.
 

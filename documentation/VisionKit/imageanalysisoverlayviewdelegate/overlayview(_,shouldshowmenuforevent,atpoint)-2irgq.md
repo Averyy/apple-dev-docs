@@ -16,7 +16,7 @@ A default implementation that indicates the overlay view shows its menu for the 
 func overlayView(_ overlayView: ImageAnalysisOverlayView, shouldShowMenuForEvent event: NSEvent, atPoint point: CGPoint) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 This default implementation returns `true`.
 

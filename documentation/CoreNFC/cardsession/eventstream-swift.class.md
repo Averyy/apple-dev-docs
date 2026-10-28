@@ -17,7 +17,7 @@ An asynchronous sequence of events produced by a card session.
 final class EventStream
 ```
 
-#### Overview
+## Overview
 
 Get an asychronous sequence of this type from the card session’s [`eventStream`](./eventstream-swift.property.md) property. Then use the Swift `for-await-in` syntax to receive and process events as the session produces them.
 

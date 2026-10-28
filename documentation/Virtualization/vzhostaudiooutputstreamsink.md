@@ -19,7 +19,7 @@ class VZHostAudioOutputStreamSink
 @interface VZHostAudioOutputStreamSink : VZAudioOutputStreamSink
 ```
 
-#### Overview
+## Overview
 
 Host output data goes to the same device that [`AudioQueueNewOutput(_:_:_:_:_:_:_:)`](../AudioToolbox/audioqueuenewoutput%28_,_,_,_,_,_,_%29.md) uses.
 

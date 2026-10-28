@@ -13,7 +13,7 @@
 typedef void (*IODebuggerTxHandler)(IOService *target, void *buffer, UInt32 length);
 ```
 
-#### Discussion
+## Discussion
 
 Defines the transmit handler that must be implemented by the target to service KDP transmit requests. This handler is called by kdpTransmitDispatcher().
 

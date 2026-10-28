@@ -23,11 +23,11 @@ func MIDIEndpointSetRefCons(_ endpt: MIDIEndpointRef, _ ref1: UnsafeMutableRawPo
 extern OSStatus MIDIEndpointSetRefCons(MIDIEndpointRef endpt, void *ref1, void *ref2);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code.
 
-#### Discussion
+## Discussion
 
 Drivers need an efficient way to translate from a [`MIDIEndpointRef`](./midiendpointref.md) (source or destination) to their own internal data structures corresponding to that endpoint. This function provides a way for the driver to assign its own data to endpoints.
 

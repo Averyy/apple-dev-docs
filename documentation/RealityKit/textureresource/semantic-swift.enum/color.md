@@ -20,7 +20,7 @@ Use the texture to store colors data.
 case color
 ```
 
-#### Discussion
+## Discussion
 
 Properties that specify a semantic of `color` use the RGB color data from the texture. If the source image contains color space information, RealityKit modifies the individual pixels to fit the color space. If the source image is grayscale, RealityKit converts it to an RGB image first.
 

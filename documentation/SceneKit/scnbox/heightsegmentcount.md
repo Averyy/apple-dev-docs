@@ -25,7 +25,7 @@ var heightSegmentCount: Int { get set }
 @property (nonatomic) NSInteger heightSegmentCount;
 ```
 
-#### Discussion
+## Discussion
 
 A larger number of segments adds more vertex data to the geometry. Although each face of the box is a flat plane, extra vertices can be useful for lighting or custom shader programs. Adding vertices increases rendering cost, so use the minimal segment count that produces your desired visual effect.
 

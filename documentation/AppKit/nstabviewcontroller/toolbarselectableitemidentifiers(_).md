@@ -20,11 +20,11 @@ func toolbarSelectableItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarItem.Id
 - (NSArray<NSString *> *) toolbarSelectableItemIdentifiers:(NSToolbar *) toolbar;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSString`](../../Foundation/nsstring.md) objects, each of which contains an identifier for a toolbar item that may be selected.
 
-#### Discussion
+## Discussion
 
 This method is called for tab view interfaces that use the [`NSTabViewController.TabStyle.toolbar`](./tabstyle-swift.enum/toolbar.md) style. Use this method to indicate which toolbar items are selectable. When an item is selected, the toolbar displays it with a visual highlight and updates the [`selectedTabViewItemIndex`](./selectedtabviewitemindex.md) property. Typically, the toolbar items associated with tabs are selectable so that the user can tell which tab is selected.
 

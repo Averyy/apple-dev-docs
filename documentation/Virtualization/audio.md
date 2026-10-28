@@ -5,7 +5,7 @@
 
 Configure audio devices that enable the guest operating system to perform audio playback and capture through the host’s audio devices.
 
-#### Overview
+## Overview
 
 If your app can configure an audio input device, you must set an [`NSMicrophoneUsageDescription`](../BundleResources/information-property-list/nsmicrophoneusagedescription.md) message in your app’s `Info.plist.` The system uses this description when asking the user’s permission to enable microphone access. If this message isn’t set or the key isn’t present, the system denies microphone access to your app.
 

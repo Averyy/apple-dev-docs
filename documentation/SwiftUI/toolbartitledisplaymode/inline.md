@@ -21,7 +21,7 @@ The inline mode.
 static var inline: ToolbarTitleDisplayMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, tvOS, and watchOS this mode displays the title with a smaller size in the middle of the toolbar. This has no effect in macOS.
 

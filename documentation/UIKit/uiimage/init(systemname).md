@@ -28,11 +28,11 @@ init?(systemName name: String)
 
 - [Configuring and displaying symbol images in your UI](../configuring-and-displaying-symbol-images-in-your-ui.md)
 
-#### Return Value
+## Return Value
 
 The object containing the specified symbol image, or `nil` if no suitable image was found.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve system-defined symbol images. To retrieve a custom symbol image you store in an asset catalog, use the [`init(named:)`](./init%28named%29.md) method instead.
 

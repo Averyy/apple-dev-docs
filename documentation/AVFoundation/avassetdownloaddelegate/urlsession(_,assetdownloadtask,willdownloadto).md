@@ -24,7 +24,7 @@ optional func urlSession(_ session: URLSession, assetDownloadTask: AVAssetDownlo
 - (void) URLSession:(NSURLSession *) session assetDownloadTask:(AVAssetDownloadTask *) assetDownloadTask willDownloadToURL:(NSURL *) location;
 ```
 
-#### Discussion
+## Discussion
 
 Save the returned URL to instantiate the asset in the future.
 

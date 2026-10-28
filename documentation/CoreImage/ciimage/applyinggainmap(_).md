@@ -24,11 +24,11 @@ func applyingGainMap(_ gainmap: CIImage) -> CIImage
 - (CIImage *) imageByApplyingGainMap:(CIImage *) gainmap;
 ```
 
-#### Return Value
+## Return Value
 
  An autoreleased [`CIImage`](../ciimage.md) instance or the received image.
 
-#### Discussion
+## Discussion
 
 The gain map image can be obtained by creating a [`CIImage`](../ciimage.md) instance from `NSURL`/`NSData` and setting the [`auxiliaryHDRGainMap`](../ciimageoption/auxiliaryhdrgainmap.md) option set to `@YES`.
 

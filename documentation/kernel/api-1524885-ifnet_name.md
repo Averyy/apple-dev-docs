@@ -13,11 +13,11 @@
 const char * ifnet_name(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to the name.
 
-#### Discussion
+## Discussion
 
 Returns a pointer to the name of the interface.
 

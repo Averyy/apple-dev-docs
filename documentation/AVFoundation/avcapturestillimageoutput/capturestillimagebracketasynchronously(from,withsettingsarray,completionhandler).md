@@ -23,7 +23,7 @@ func captureStillImageBracketAsynchronously(from connection: AVCaptureConnection
 - (void) captureStillImageBracketAsynchronouslyFromConnection:(AVCaptureConnection *) connection withSettingsArray:(NSArray<__kindof AVCaptureBracketedStillImageSettings *> *) settings completionHandler:(void (^)(CMSampleBufferRef sampleBuffer, AVCaptureBracketedStillImageSettings *stillImageSettings, NSError *error)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 If you have not invoked [`prepareToCaptureStillImageBracket(from:withSettingsArray:completionHandler:)`](./preparetocapturestillimagebracket%28from,withsettingsarray,completionhandler%29.md) for this still image bracket request, the bracket may not be taken immediately, as the receiver may internally need to prepare resources.
 

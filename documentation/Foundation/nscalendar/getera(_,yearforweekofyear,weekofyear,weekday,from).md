@@ -25,7 +25,7 @@ func getEra(_ eraValuePointer: UnsafeMutablePointer<Int>?, yearForWeekOfYear yea
 - (void) getEra:(NSInteger *) eraValuePointer yearForWeekOfYear:(NSInteger *) yearValuePointer weekOfYear:(NSInteger *) weekValuePointer weekday:(NSInteger *) weekdayValuePointer fromDate:(NSDate *) date;
 ```
 
-#### Discussion
+## Discussion
 
 Pass `NULL` to ignore any individual component parameter.
 

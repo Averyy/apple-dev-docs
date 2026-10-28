@@ -21,7 +21,7 @@ static let faceMetrics: SRSensor
 extern SRSensor const SRSensorFaceMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sample`](../srfetchresult/sample.md) type for this sensor is [`SRFaceMetrics`](../srfacemetrics.md).
 

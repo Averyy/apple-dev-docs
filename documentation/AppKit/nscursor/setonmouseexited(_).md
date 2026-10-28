@@ -21,7 +21,7 @@ func setOnMouseExited(_ flag: Bool)
 - (void) setOnMouseExited:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 Accepting [`mouseExited(with:)`](./mouseexited%28with%29.md) event messages allows the cursor to be made the current cursor when the cursor exits a view’s cursor rectangle.
 

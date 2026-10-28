@@ -21,7 +21,7 @@ An asynchronous operation timed out.
 var NSURLErrorTimedOut: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 [`URLSession`](./urlsession.md) sends this error to its delegate when the [`timeoutInterval`](./nsurlrequest/timeoutinterval.md) of an [`NSURLRequest`](./nsurlrequest.md) expires before a load can complete.
 

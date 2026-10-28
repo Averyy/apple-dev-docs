@@ -15,7 +15,7 @@ Creates a new Save panel and initializes it with default information.
 + (NSSavePanel *) savePanel;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized Save panel.
 

@@ -21,7 +21,7 @@ Stacks the given tensors along the `axis` dimension into a new tensor with rank 
 init(stacking tensors: some Collection<MLTensor>, alongAxis axis: Int = 0)
 ```
 
-#### Discussion
+## Discussion
 
 Given that `tensors` all have shape `[A, B, C]`, and `tensors.count = N`, then:
 

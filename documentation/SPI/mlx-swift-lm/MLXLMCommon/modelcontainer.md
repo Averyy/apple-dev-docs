@@ -17,7 +17,7 @@ Container for models that guarantees single threaded access.
 final class ModelContainer
 ```
 
-#### Overview
+## Overview
 
 Wrap models used by e.g. the UI in a ModelContainer. Callers can access the model and/or tokenizer (any values from the [`ModelContext`](./modelcontext.md)):
 

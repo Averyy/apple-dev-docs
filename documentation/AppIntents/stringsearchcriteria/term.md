@@ -21,7 +21,7 @@ The string to use when matching items in your app.
 var term: String
 ```
 
-#### Discussion
+## Discussion
 
 Pass the value of this property to the code you use to search for items in your app. The system provides this value when it creates the app intent.
 

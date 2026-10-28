@@ -10,7 +10,7 @@ An atom that stores the media information for media types such as timed metadata
 
 - [QuickTime File Format change log](./revision_history.md)
 
-#### Overview
+## Overview
 
 The base media information atom stores the media information for media types such as timed metadata, text, MPEG, time code, and music.
 

@@ -18,11 +18,11 @@ Indicates whether the app processes raw scan results immediately after a scan se
 func captureView(shouldPresent roomDataForProcessing: CapturedRoomData, error: (any Error)?) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that determines whether the app receives and displays post-processed scan results when the scan session stops.
 
-#### Discussion
+## Discussion
 
 If your app returns `true`:
 

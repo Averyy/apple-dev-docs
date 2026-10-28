@@ -25,7 +25,7 @@ static var identifierRemoved: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 An IPC identifier was removed while the current process was waiting on it.
 

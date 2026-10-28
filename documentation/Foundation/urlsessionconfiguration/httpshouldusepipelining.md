@@ -27,7 +27,7 @@ var httpShouldUsePipelining: Bool { get set }
 @property BOOL HTTPShouldUsePipelining;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines whether tasks within sessions based on this configuration should use HTTP pipelining. You can also enable pipelining on a per-task basis by creating the task with an [`NSURLRequest`](../nsurlrequest.md) object.
 

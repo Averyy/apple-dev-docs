@@ -23,7 +23,7 @@ var repeatMode: MPMovieRepeatMode { get set }
 @property (nonatomic) MPMovieRepeatMode repeatMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`MPMovieRepeatMode.none`](../mpmovierepeatmode/none.md). For a list of available repeat modes, see [`MPMovieRepeatMode`](../mpmovierepeatmode.md).
 

@@ -15,7 +15,7 @@ Set to indicate when a format is non-mixable.
 FormatFlagIsNonMixable
 ```
 
-#### Discussion
+## Discussion
 
 This flag is used  only when interacting with the HAL’s stream format information. It is not a valid flag for any other uses.
 

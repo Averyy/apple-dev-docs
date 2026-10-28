@@ -24,11 +24,11 @@ class func siriAuthorizationStatus() -> INSiriAuthorizationStatus
 + (INSiriAuthorizationStatus) siriAuthorizationStatus;
 ```
 
-#### Return Value
+## Return Value
 
 The authorization status of your app.
 
-#### Discussion
+## Discussion
 
 Use this method to determine if your app is authorized to interact with Siri. The user can disable Siri behaviors for specific apps or for all apps. The user can change the authorization for apps in the Siri section of the system settings.
 

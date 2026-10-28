@@ -23,7 +23,7 @@ case restricted
 ENAuthorizationStatusRestricted
 ```
 
-#### Discussion
+## Discussion
 
 The user cannot change the app’s authorization status. This status may be due to active restrictions, such as parental controls.
 

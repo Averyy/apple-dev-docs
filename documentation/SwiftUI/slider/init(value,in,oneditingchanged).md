@@ -23,7 +23,7 @@ init<V>(value: Binding<V>, in bounds: ClosedRange<V> = 0...1, onEditingChanged: 
 
 Available when `Label` is `EmptyView` and `ValueLabel` is `EmptyView`.
 
-#### Discussion
+## Discussion
 
 The `value` of the created instance is equal to the position of the given value within `bounds`, mapped into `0...1`.
 

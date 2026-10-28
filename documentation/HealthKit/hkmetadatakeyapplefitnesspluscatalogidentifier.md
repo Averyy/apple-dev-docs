@@ -22,7 +22,7 @@ let HKMetadataKeyAppleFitnessPlusCatalogIdentifier: String
 extern NSString * const HKMetadataKeyAppleFitnessPlusCatalogIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Contains the catalog identifier of the Fitness+ workout.
 

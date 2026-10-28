@@ -22,11 +22,11 @@ class func confirmationRequired(with restaurantToConfirm: INRestaurant?) -> Self
 + (instancetype) confirmationRequiredWithRestaurantToConfirm:(INRestaurant *) restaurantToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INRestaurantResolutionResult`](../inrestaurantresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the restaurant to a known establishment but you want the user to confirm that value before proceeding. You might ask for confirmation when there is some doubt that the specified restaurant is what the user intended.
 

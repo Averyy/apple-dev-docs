@@ -31,7 +31,7 @@ func completeOneTimeCodeRequest(using credential: ASOneTimeCodeCredential) async
 
 - [Providing one-time passcodes to AutoFill](../providing-one-time-passcodes-to-autofill.md)
 
-#### Overview
+## Overview
 
 After calling this method, the system dismisses the associated view controller.
 

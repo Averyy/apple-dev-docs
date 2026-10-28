@@ -19,7 +19,7 @@ func show(relativeTo rect: NSRect, of view: NSView, preferredEdge: NSRectEdge)
 - (void) showRelativeToRect:(NSRect) rect ofView:(NSView *) view preferredEdge:(NSRectEdge) preferredEdge;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 13 and later, the picker displays the macOS share sheet in a popover. In earlier versions of macOS, the picker displays a menu with the available services. When someone chooses a service for sharing the items, the picker notifies its delegate and then shares the content.
 

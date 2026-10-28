@@ -18,7 +18,7 @@ A pattern that indicates the pasteboard detects a string that contains an email 
 extern UIPasteboardDetectionPattern const UIPasteboardDetectionPatternEmailAddress;
 ```
 
-#### Discussion
+## Discussion
 
 When you include this pattern in calls to [`detectValuesForPatterns:inItemSet:completionHandler:`](./uipasteboard/detectvaluesforpatterns_initemset_completionhandler_.md) or [`detectValuesForPatterns:completionHandler:`](./uipasteboard/detectvaluesforpatterns_completionhandler_.md) and the pasteboard detects a string that contains an email address, the system reports the value as an array of [`NSString`](../Foundation/nsstring.md). You can return the detected results in a paste operation with `UIPasteboardDetectionResultEmailAddress`, which contains a semantic representation of the email address and label values.
 

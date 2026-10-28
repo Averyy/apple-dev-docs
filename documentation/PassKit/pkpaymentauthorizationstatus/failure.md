@@ -24,7 +24,7 @@ case failure
 PKPaymentAuthorizationStatusFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this value for all failures other than PIN-related failures (which have their own status constants), such as for an invalid address, contact, or unknown error.
 

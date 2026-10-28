@@ -6,7 +6,7 @@
 
 The ID of the default node.
 
-#### Overview
+## Overview
 
 The node to be displayed when the file is first opened.
 

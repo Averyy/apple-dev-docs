@@ -21,7 +21,7 @@ Returns a size that results from scaling with the specified double-precision val
 func scaledBy(x: Double = 1, y: Double = 1, z: Double = 1) -> Size3D
 ```
 
-#### Return Value
+## Return Value
 
 The size that results from scaling with the specified double-precision values.
 

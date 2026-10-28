@@ -18,11 +18,11 @@ The translation of the gesture in the space of the specified entity.
 @preconcurrency func translation(in entity: Entity?) -> SIMD3<Float>?
 ```
 
-#### Return Value
+## Return Value
 
 The 3D position identifying the translation of the gesture in the space specified.
 
-#### Discussion
+## Discussion
 
 The x, y and z values report the total translation over time. They are not delta values from the last time that the translation was reported. Apply the translation value to the state of the entity when the gesture is first recognized – do not concatenate the value each time the handler is called.
 

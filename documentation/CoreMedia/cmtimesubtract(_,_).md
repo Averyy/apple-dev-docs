@@ -25,11 +25,11 @@ func CMTimeSubtract(_ lhs: CMTime, _ rhs: CMTime) -> CMTime
 extern CMTime CMTimeSubtract(CMTime lhs, CMTime rhs);
 ```
 
-#### Return Value
+## Return Value
 
 A time value that represents the result of the operation.
 
-#### Discussion
+## Discussion
 
 If the operands have the same timescale, the timescale of the result is the same as the operands’ timescale. If the operands have different timescales, the timescale of the result is the least common multiple of the operands’ timescales. If that LCM timescale is greater than [`kCMTimeMaxTimescale`](./kcmtimemaxtimescale.md), the result timescale is [`kCMTimeMaxTimescale`](./kcmtimemaxtimescale.md), and the system applies the default rounding when it converts the result to this timescale.
 

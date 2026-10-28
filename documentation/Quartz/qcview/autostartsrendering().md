@@ -21,7 +21,7 @@ func autostartsRendering() -> Bool
 - (BOOL) autostartsRendering;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the view is set to start rendering automatically when the view is put on screen.
 

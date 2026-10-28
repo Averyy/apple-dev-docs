@@ -19,7 +19,7 @@ Returns a read-only, typed view of this array’s elements.
 func view<T>(as type: T.Type = T.self) -> NDArray.View<T> where T : BitwiseCopyable
 ```
 
-#### Return Value
+## Return Value
 
 A read-only view of the array’s elements.
 

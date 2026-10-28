@@ -19,11 +19,11 @@ var bezelStyle: NSButton.BezelStyle { get set }
 @property NSBezelStyle bezelStyle;
 ```
 
-#### Return Value
+## Return Value
 
 The bezel style of the button. See [`NSButton.BezelStyle`](./bezelstyle-swift.enum.md) in [`NSButtonCell`](../nsbuttoncell.md) for the list of possible values.
 
-#### Discussion
+## Discussion
 
 Note that if the button is not bordered, the bezel style is ignored.
 

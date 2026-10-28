@@ -16,7 +16,7 @@ Creates a badge displaying a text.
 static func text(_ text: String) -> NSItemBadge
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSItemBadge` instance with the specified text.
 

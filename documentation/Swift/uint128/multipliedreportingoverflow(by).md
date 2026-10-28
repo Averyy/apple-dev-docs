@@ -21,7 +21,7 @@ Returns the product of this value and the given value, along with a Boolean valu
 func multipliedReportingOverflow(by other: UInt128) -> (partialValue: UInt128, overflow: Bool)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing the result of the multiplication along with a Boolean value indicating whether overflow occurred. If the `overflow` component is `false`, the `partialValue` component contains the entire product. If the `overflow` component is `true`, an overflow occurred and the `partialValue` component contains the truncated product of this value and `rhs`.
 

@@ -5,19 +5,19 @@
 
 Released March 14, 2022 — Version 15.4 (17613.1.17)
 
-#### Overview
+## Overview
 
 Safari 15.4 ships with the iOS and iPadOS 15.4 and macOS 12.3.
 
-##### General
+### General
 
-###### Known Issues
+#### Known Issues
 
 - Safari 15.4 in macOS Catalina running on an iMac (Late 2012 or 2013) with a NVIDIA GPU may experience multiple sites that fail to load or continuously refresh after loading. (88177392)
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added `::backdrop` pseudo-element support.
 - Added support for CSS Containment with the `contain` property.
@@ -37,28 +37,28 @@ Safari 15.4 ships with the iOS and iPadOS 15.4 and macOS 12.3.
 - Added the `print-color-adjust` property and aliased `-webkit-print-color-adjust` to the unprefixed property.
 - Added the `match-parent` CSS value and aliased `-webkit-match-parent` for the `text-align` CSS property.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed the drawing area to be painted when the computed `border-width` is 0 and the `border-image-width` is set or defaults to a number.
 - Fixed `rem` in media queries to calculate using `font-size: initial`, not the root element `font-size`.
 - Fixed `background-attachment: local`.
 - Fixed gradient color interpolation for colors with alpha transparency.
 
-###### Removed Features
+#### Removed Features
 
 - Removed non-standard CSS properties `-webkit-border-fit`, `-webkit-margin-collapse`, `-webkit-margin-top-collapse`, `-webkit-margin-bottom-collapse`, `-webkit-margin-before-collapse`, `-webkit-margin-after-collapse`, and `-webkit-background-composite`.
 
-##### HTML
+### HTML
 
-###### New Features
+#### New Features
 
 - Added support for the `<dialog>` element.
 - Added lazy-loading support for images with the `loading` attribute on the `<img>` element.
 - Added support for the `autofocus` attribute.
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added support for Web App Manifest icons, shown when no `apple-touch-icon` is provided and when either `"purpose": "any"` is present or the `"purpose"` key isn’t present at all.
 - Improved Web App Manifest to always attempt to fetch the manifest file.
@@ -71,17 +71,17 @@ Safari 15.4 ships with the iOS and iPadOS 15.4 and macOS 12.3.
 - Added support for recurring payments with the Payment Request API.
 - Added support for controlling the initially selected shipping method in the Payment Request API.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Fetch using `FormData` with a file not going through ServiceWorker.
 
-###### Removed Features
+#### Removed Features
 
 - Removed the XSS Auditor.
 
-##### JavaScript
+### JavaScript
 
-###### New Features
+#### New Features
 
 - Added `Object.hasOwn()`.
 - Added `self.structuredClone()`.
@@ -95,24 +95,24 @@ Safari 15.4 ships with the iOS and iPadOS 15.4 and macOS 12.3.
 - Updated `Intl.NumberFormat` to V3, supporting new options.
 - Supported the `TimeZoneName` option in `Intl.DateTimeFormat`.
 
-##### Media
+### Media
 
-###### New Features
+#### New Features
 
 - Added support for WebRTC perfect negotiation.
 - Added in-band chapter tracks support.
 
-##### Private Click Measurement
+### Private Click Measurement
 
-###### New Features
+#### New Features
 
 - Enabled unlinkable tokens for triggering events on a merchant website.
 - Added support for same-site conversion pixels on merchant websites, to enable removal of cross-site tracking pixels.
 - Allowed measurement of links in nested, cross-site iframes on publisher websites.
 
-##### Safari Web Extensions
+### Safari Web Extensions
 
-###### New Features
+#### New Features
 
 - Added support for `manifest_version` 3 and related API changes.
 - Added support for `service_worker` background scripts as an alternative to nonpersistent background pages.
@@ -120,16 +120,16 @@ Safari 15.4 ships with the iOS and iPadOS 15.4 and macOS 12.3.
 - Added support for dynamic and session rules via the `browser.declarativeNetRequest` APIs.
 - Added support for webpage-to-extension messaging using `externally_connectable:matches`.
 
-##### Resolved Issues
+### Resolved Issues
 
 - Fixed: Limits are now enforced on the size and number of items in extension sync storage.
 - Fixed: More directives are now allowed to be included in the `content_security_policy` of an extension’s manifest, such as the `sandbox` directive.
 - Fixed: Special matching characters (`*`, `|`, `||`, and `^`) in `urlFilter` of `declarativeNetRequest` rules are now handled, instead of being treated as regex patterns.
 - Fixed: `Promise` returns from `runtime.onMessage` listeners are now allowed for the message reply.
 
-##### Security
+### Security
 
-###### New Features
+#### New Features
 
 - Improved support for Content Security Policy 3:
 
@@ -139,9 +139,9 @@ Safari 15.4 ships with the iOS and iPadOS 15.4 and macOS 12.3.
   - Added support to allow external JavaScript matching hash source expressions.
   - Added support for the `'report-sample'` expression.
 
-##### Web Inspector
+### Web Inspector
 
-###### New Features
+#### New Features
 
 - Added CSS alignment controls in the Styles panel.
 - Added support for showing the related `@layer` for CSS rulesets in the Styles panel.

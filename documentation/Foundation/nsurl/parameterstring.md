@@ -27,7 +27,7 @@ var parameterString: String? { get }
 @property (copy, readonly, nullable) NSString * parameterString;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the parameter string. Any percent-encoded characters are not unescaped. If the receiver does not conform to RFC 1808, this property contains `nil`.  For example, in the URL `file:///path/to/file;foo`, the parameter string is `foo`.
 

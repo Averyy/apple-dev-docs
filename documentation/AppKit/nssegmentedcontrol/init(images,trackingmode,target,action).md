@@ -19,11 +19,11 @@ convenience init(images: [NSImage], trackingMode: NSSegmentedControl.SwitchTrack
 + (instancetype) segmentedControlWithImages:(NSArray<NSImage *> *) images trackingMode:(NSSegmentSwitchTracking) trackingMode target:(id) target action:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized segmented control.
 
-#### Discussion
+## Discussion
 
 To ensure accessibility for this control, set the `accessibilityDescription` property on each of the provided images.
 

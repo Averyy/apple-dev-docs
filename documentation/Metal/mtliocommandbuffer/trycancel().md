@@ -25,7 +25,7 @@ func tryCancel()
 - (void) tryCancel;
 ```
 
-#### Discussion
+## Discussion
 
 Check the command buffer’s [`status`](./status.md) property after it completes, either after [`waitUntilCompleted()`](./waituntilcompleted%28%29.md) or in one of your completion handlers (see [`addCompletedHandler(_:)`](./addcompletedhandler%28_%29.md)).
 

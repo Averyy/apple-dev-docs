@@ -19,7 +19,7 @@ var bounds: CGRect { get set }
 @property CGRect bounds;
 ```
 
-#### Discussion
+## Discussion
 
 The bounds rectangle origin is at the current glyph location on the text baseline. The default value is [`CGRectZero`](../../CoreGraphics/cgrectzero.md).
 

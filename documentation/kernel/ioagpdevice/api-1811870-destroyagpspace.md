@@ -12,7 +12,7 @@ virtual IOReturn destroyAGPSpace(
  void );
 ```
 
-#### Overview
+## Overview
 
 This method should be called by the driver to shutdown AGP transactions and release resources.
 

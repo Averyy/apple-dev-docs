@@ -24,7 +24,7 @@ var rotationRate: CMRotationRate { get }
 @property (nonatomic, readonly) CMRotationRate rotationRate;
 ```
 
-#### Discussion
+## Discussion
 
 A [`CMRotationRate`](../cmrotationrate.md) structure contains data specifying the device’s rate of rotation around three axes. The value of this property contains a measurement of gyroscope data whose bias has been removed by Core Motion algorithms. The identically name property of [`CMGyroData`](../cmgyrodata.md), on the other hand, gives the raw data from the gyroscope. The structure type is declared in `CMGyroData.h`.
 

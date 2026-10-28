@@ -24,11 +24,11 @@ bool isEqualTo(const OSString *aString);
 virtual bool isEqualTo(const OSString *aString);
 ```
 
-#### Return Value
+## Return Value
 
 true if the OSData and OSString contain the same c-string.
 
-#### Discussion
+## Discussion
 
 If the passed OSString object has the same length and all bytes are identical, true is returned. If the passed OSString object has a length one byte less than the OSData, all bytes are identical, and the last byte of the OSData is zero, true is returned. Otherwise false is returned.
 

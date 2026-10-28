@@ -12,7 +12,7 @@ virtual void removeProperty(
  const OSString *aKey);
 ```
 
-#### Overview
+## Overview
 
 This method will remove a property from a registry entry's property table, using the OSDictionary::removeObject semantics. This method is synchronized with other IORegistryEntry accesses to the property table.
 

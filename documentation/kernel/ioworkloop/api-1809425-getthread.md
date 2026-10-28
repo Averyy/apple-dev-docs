@@ -11,7 +11,7 @@ Gets the workThread.
 virtual IOThread getThread() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns workThread.
 

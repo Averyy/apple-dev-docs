@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_RealTime: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_RealTime;
 ```
 
-#### Discussion
+## Discussion
 
 For non-realtime decompression, clients may set this property to [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md), which indicates that it is OK to run this decode pipeline at a lower priority than is used for realtime decoding. By default, VideoToolbox will treat the decompression session as though it is being used for realtime playback ([`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md)).  Setting the property to `NULL` is equivalent to setting it to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md).
 

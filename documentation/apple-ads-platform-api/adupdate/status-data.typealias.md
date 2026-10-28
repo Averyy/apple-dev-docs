@@ -20,11 +20,11 @@ string AdUpdate.Status
 - `ENABLED`: The advertiser has set the ad to run, so it can participate in auctions.
 - `PAUSED`: The advertiser has paused the ad, so it does not participate in auctions.
 
-#### Discussion
+## Discussion
 
 Send `status: PAUSED` to stop an existing ad from competing in auctions, or `ENABLED` to resume it.
 
-##### Example
+### Example
 
 ```json
 {

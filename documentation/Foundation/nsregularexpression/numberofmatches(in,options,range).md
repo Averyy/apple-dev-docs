@@ -25,11 +25,11 @@ func numberOfMatches(in string: String, options: NSRegularExpression.MatchingOpt
 - (NSUInteger) numberOfMatchesInString:(NSString *) string options:(NSMatchingOptions) options range:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 The number of matches of the regular expression.
 
-#### Discussion
+## Discussion
 
 This is a convenience method that calls [`enumerateMatches(in:options:range:using:)`](./enumeratematches%28in,options,range,using%29.md).
 

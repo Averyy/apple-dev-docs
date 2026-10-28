@@ -19,11 +19,11 @@ func performCommand(for event: NSEvent) -> Bool
 - (BOOL) performCommandForEvent:(NSEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if a command corresponding to the event was found and performed, `NO` otherwise.
 
-#### Discussion
+## Discussion
 
 This method checks for a command corresponding to the provided event and performs it, if available. The app should use this method to perform any extension commands at an appropriate time in the app’s event handling, like in [`sendEvent(_:)`](../../AppKit/nsapplication/sendevent%28_%29.md) of  [`NSApplication`](../../AppKit/nsapplication.md) or  [`sendEvent(_:)`](../../AppKit/nswindow/sendevent%28_%29.md) of  [`NSWindow`](../../AppKit/nswindow.md) subclasses.
 

@@ -25,7 +25,7 @@ let kCMMetadataDataType_QuickTimeMetadataLocation_ISO6709: CFString
 extern CFStringRef const kCMMetadataDataType_QuickTimeMetadataLocation_ISO6709;
 ```
 
-#### Discussion
+## Discussion
 
 Conforms to [`kCMMetadataBaseDataType_UTF8`](./kcmmetadatabasedatatype_utf8.md).
 

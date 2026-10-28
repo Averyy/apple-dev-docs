@@ -20,11 +20,11 @@ string BulkNegativeKeywordCreate.Status
 - `ENABLED`: The negative keyword is active and will suppress ad delivery for matching search queries.
 - `PAUSED`: The negative keyword is paused and will not suppress any search queries until re-enabled.
 
-#### Discussion
+## Discussion
 
 Set this within each item’s `data` to determine whether the negative keyword begins suppressing matching search queries as soon as the bulk create request completes.
 
-##### Example
+### Example
 
 ```json
 {

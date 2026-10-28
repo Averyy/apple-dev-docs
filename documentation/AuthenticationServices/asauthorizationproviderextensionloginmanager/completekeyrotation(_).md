@@ -17,7 +17,7 @@ func completeKeyRotation(_ keyType: ASAuthorizationProviderExtensionKeyType)
 - (void) completeKeyRotationForKeyType:(ASAuthorizationProviderExtensionKeyType) keyType;
 ```
 
-#### Discussion
+## Discussion
 
 Completes rotation for the key to replace the previous key.
 

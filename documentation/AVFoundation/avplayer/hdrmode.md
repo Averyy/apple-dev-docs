@@ -25,7 +25,7 @@ struct HDRMode
 enum AVPlayerHDRMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These modes define the available HDR modes. Query [`availableHDRModes`](./availablehdrmodes.md) to find the HDR modes available for a device.
 

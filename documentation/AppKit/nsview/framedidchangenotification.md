@@ -19,7 +19,7 @@ class let frameDidChangeNotification: NSNotification.Name
 extern NSNotificationName NSViewFrameDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification posts only when the view’s [`postsFrameChangedNotifications`](./postsframechangednotifications.md) property is [`true`](../../Swift/true.md).
 

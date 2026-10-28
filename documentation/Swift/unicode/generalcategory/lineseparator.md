@@ -21,7 +21,7 @@ A line separator, which is specifically (and only) U+2028 LINE SEPARATOR.
 case lineSeparator
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Line_Separator` (abbreviated `Zl`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

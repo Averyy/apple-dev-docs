@@ -25,7 +25,7 @@ typealias vImagePixelCount = UInt
 typedef unsigned long vImagePixelCount;
 ```
 
-#### Discussion
+## Discussion
 
 This is typically used to describe the height or width of an image.
 

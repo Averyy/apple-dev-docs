@@ -21,7 +21,7 @@ var subtitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 If `attributedSubtitle` is `non-nil`, this property just returns the `String` representation of the `attributedString`. If `subtitleView` is non-nil, this property is ignored.
 

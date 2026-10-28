@@ -22,11 +22,11 @@ func translation(in view: UIView?) -> CGPoint
 - (CGPoint) translationInView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The scroll displacement of the update in the specified view’s coordinate system.
 
-#### Discussion
+## Discussion
 
 A nonzero `x` or `y` value in the returned point indicates a displacement large enough to produce a visible change along that axis.
 

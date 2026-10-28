@@ -13,11 +13,11 @@ Creates and runs an activity with the provided block of code.
 @preconcurrency class func runActivity<Result>(named name: String, block: @MainActor (any XCTActivity) throws -> Result) rethrows -> Result
 ```
 
-#### Return Value
+## Return Value
 
 A [`Result`](../../Swift/result.md) object that indicates whether the block of code runs successfully or encounters an error.
 
-#### Discussion
+## Discussion
 
 Run a block of code as a named substep in a test. For more information, see [Grouping Tests into Substeps with Activities](../grouping-tests-into-substeps-with-activities.md).
 

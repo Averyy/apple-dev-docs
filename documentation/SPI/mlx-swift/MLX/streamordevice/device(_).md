@@ -19,7 +19,7 @@ Evaluate on the given [`Device`](../device.md).
 static func device(_ device: Device) -> StreamOrDevice
 ```
 
-#### Discussion
+## Discussion
 
 Prefer [`cpu`](./cpu.md) and [`gpu`](./gpu.md) instead as they will use the current Device for the Task.
 

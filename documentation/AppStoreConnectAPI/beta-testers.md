@@ -5,7 +5,7 @@
 
 People who can install and test prerelease builds.
 
-#### Overview
+## Overview
 
 The `betaTesters` resource represents the people who can install and test prerelease builds. You can create and delete beta testers, add and remove them from beta groups, and assign them to an app or a build.
 

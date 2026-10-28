@@ -21,7 +21,7 @@ Produces the next element in the prefix sequence.
 mutating func next() async throws -> P.Output?
 ```
 
-#### Return Value
+## Return Value
 
 The next published element, or nil if the publisher finishes normally. If the publisher terminates with an error, the call point receives the error as a `throw`.
 

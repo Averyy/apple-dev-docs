@@ -5,7 +5,7 @@
 
 Convert color from one profile’s color space to another.
 
-#### Overview
+## Overview
 
 A [`ColorSyncTransform`](./colorsynctransform.md) precomputes the conversion between a sequence of profiles. Color conversion requires significant computation, so the way you apply a transform affects performance. To convert pixels directly, call [`ColorSyncTransformConvert(_:_:_:_:_:_:_:_:_:_:_:_:)`](./colorsynctransformconvert%28_,_,_,_,_,_,_,_,_,_,_,_%29.md). For production code or large buffers, get better performance by extracting a ColorSync *code fragment* with [`ColorSyncCreateCodeFragment(_:_:)`](./colorsynccreatecodefragment%28_,_%29.md) and running it through [`vImage`](../Accelerate/vimage.md). Describe the layout of your pixel buffers with the pixel-format constants in [Pixel format and data layout](./pixel-format.md).
 

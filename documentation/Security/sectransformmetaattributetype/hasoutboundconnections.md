@@ -21,7 +21,7 @@ case hasOutboundConnections
 kSecTransformMetaAttributeHasOutboundConnections
 ```
 
-#### Discussion
+## Discussion
 
 This metadata value is [`true`](../../Swift/true.md) if the attribute has an outbound connection.
 

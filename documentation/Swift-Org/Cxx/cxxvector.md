@@ -17,7 +17,7 @@ A C++ type that represents a vector of values.
 protocol CxxVector<Element> : ExpressibleByArrayLiteral
 ```
 
-#### Overview
+## Overview
 
 C++ standard library type `std::vector` conforms to this protocol.
 

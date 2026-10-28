@@ -28,7 +28,7 @@ init(cgVector vector: CGVector)
 + (NSValue *) valueWithCGVector:(CGVector) vector;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains the vector information.
 

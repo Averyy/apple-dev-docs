@@ -22,7 +22,7 @@ init(attributedString: NSAttributedString, range: NSRange)
 - (instancetype) initWithAttributedString:(NSAttributedString *) attributedString range:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 When Writing Tools asks for your view’s current selection, it’s best to create a string that includes text before and after that selection. During the evaluation process, Writing Tools can use the additional text you provided to improve the results it delivers. If you do provide additional text, set the `range` parameter to the portion of `attributedString` with the current selection. Don’t use the `range` parameter to specify the location of the text in your view’s text storage.
 

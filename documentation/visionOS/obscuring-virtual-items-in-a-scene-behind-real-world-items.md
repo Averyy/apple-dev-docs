@@ -10,13 +10,13 @@ Increase the realism of an immersive experience by adding entities with invisibl
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 You can create layered effects using an [`OcclusionMaterial`](../RealityKit/occlusionmaterial.md), which is an invisible material that hides objects that render behind it. This sample project demonstrates how to hide entities behind real-world objects with [ARKit](../ARKit/ARKit.md) by gathering live data about a person’s surroundings and applyng the `OcclusionMaterial` to them.
 
 [Video: A video recording of a visionOS app displaying a translucent window with a 3D chair model that reacts to pinch-to-drag gesture movement, and that people can hide behind read-world objects.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sample-worldocclusion-1-main-view.mov)
 
-##### Capture the anchors from the scene
+### Capture the anchors from the scene
 
 The sample uses the `MeshAnchorGenerator` class to retrieve anchor information from [`SceneReconstructionProvider`](../ARKit/scenereconstructionprovider.md). In the following code snippet, the generator takes in the root entity from the reality view to perform actions on the entities and create a dictionary to store the collection of anchors:
 
@@ -102,7 +102,7 @@ func run(_ sceneRec: SceneReconstructionProvider) async {
 
 > ❗ **Important**: To use `SceneReconstructionProvider`, your app must add the `NSWorldSensingUsageDescription` property key list entry to the `info.plist`.
 
-##### Start scene reconstruction
+### Start scene reconstruction
 
 To track the anchors, the app starts an ARKit session. It uses `runSession(_:)` to initiate the [`ARKitSession`](../ARKit/arkitsession.md) with [`SceneReconstructionProvider`](../ARKit/scenereconstructionprovider.md), to perform scene reconstruction:
 
@@ -146,7 +146,7 @@ func runSession(_ meshAnchors: Entity) {
 
 The method constructs the `MeshAnchorGenerator` class with the `meshAnchors`. Then it initiates the ARKit session while handling any potential errors. Finally, the app proceeds with the generation process by invoking the `run(_:)` method with the `sceneReconstruction` instance.
 
-##### Setting up the drag gesture
+### Setting up the drag gesture
 
 In the immersive scene, the app loads a chair model that is moveable with drag gestures. The app creates the `translationGesture` to convert the person’s gesture movements to the entity’s positions, so that a person can target the chair model and move it around the space:
 
@@ -177,7 +177,7 @@ var translationGesture: some Gesture {
 }
 ```
 
-##### Put it all together into a view
+### Put it all together into a view
 
 The app loads all of the content into a reality view. It creates the `meshAnchors` entity and calls the `runSession(_:)` method with it, which initiates the ARKit session and adds child entities of anchors with occlusion materials to `meshAnchors`. Then the app adds the `meshAnchors` into the reality view:
 

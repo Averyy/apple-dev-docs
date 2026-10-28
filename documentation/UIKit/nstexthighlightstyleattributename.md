@@ -20,7 +20,7 @@ An attribute that adds a highlight color to the text to emphasize it.
 extern NSAttributedStringKey const NSTextHighlightStyleAttributeName;
 ```
 
-#### Overview
+## Overview
 
 The value of this attribute is an [`NSTextHighlightStyle`](./nstexthighlightstyle.md) structure. The default value of this attribute is `nil`, which does not add a highlight to the text.
 

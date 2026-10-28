@@ -24,7 +24,7 @@ weak var stateMachine: GKStateMachine? { get }
 @property (nonatomic, weak, readonly, nullable) GKStateMachine * stateMachine;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to refer to the state machine this state object is being used in.
 

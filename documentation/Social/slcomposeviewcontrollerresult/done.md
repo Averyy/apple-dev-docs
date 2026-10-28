@@ -21,7 +21,7 @@ case done
 SLComposeViewControllerResultDone
 ```
 
-#### Discussion
+## Discussion
 
 This result occurs when the user selects Done.
 

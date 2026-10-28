@@ -23,7 +23,7 @@ var freeSize: Int { get }
 @property (nonatomic, readonly) NSInteger freeSize;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `-1` when the system can’t retrieve information from external storage device.
 

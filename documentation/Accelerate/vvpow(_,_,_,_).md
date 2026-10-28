@@ -25,9 +25,9 @@ func vvpow(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: UnsafeP
 void vvpow(double *, const double *, const double *, const int *);
 ```
 
-#### Discussion
+## Discussion
 
-##### Parameters:
+### Parameters:
 
 - **parameter 1**: The output array, *z*.
 - **parameter 2**: The exponent input array, *y*.

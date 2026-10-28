@@ -30,7 +30,7 @@ class SWHighlightCenter
 - [Adding shared content collaboration to your app](./adding-shared-content-collaboration-to-your-app.md)
 - [Making your app content shareable](./making-your-app-content-shareable.md)
 
-#### Overview
+## Overview
 
 The system determines which links it surfaces. The app is responsible for updating its UI to reflect the latest highlights list that the system provides.
 

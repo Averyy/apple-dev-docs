@@ -23,7 +23,7 @@ static var privileged: NSXPCConnection.Options { get }
 NSXPCConnectionPrivileged
 ```
 
-#### Discussion
+## Discussion
 
 Use this option if connecting to a service in the privileged Mach bootstrap (for example, a daemon with a `launchd.plist` in `/Library/LaunchDaemons)`.
 

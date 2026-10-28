@@ -16,7 +16,7 @@ A handler that your app provides to react to sensitive content detection.
 @property (copy, readwrite, nullable) SCVideoStreamAnalysisChangeHandler analysisChangedHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The system invokes all analyzer handlers on the same conference call with the updated analysis or error.
 

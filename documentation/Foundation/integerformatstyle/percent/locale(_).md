@@ -23,11 +23,11 @@ func locale(_ locale: Locale) -> IntegerFormatStyle<Value>.Percent
 
 Available when `Value` conforms to `BinaryInteger`.
 
-#### Return Value
+## Return Value
 
 An integer percent format style with the provided locale.
 
-#### Discussion
+## Discussion
 
 Use this format style to change the locale used by an existing format style. To instead determine the locale used by this format style, use the [`locale`](./locale.md) property.
 

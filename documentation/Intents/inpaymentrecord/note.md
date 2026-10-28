@@ -31,7 +31,7 @@ var note: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * note;
 ```
 
-#### Discussion
+## Discussion
 
 You can use notes to provide additional details about the purpose of the transaction.
 

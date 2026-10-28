@@ -23,7 +23,7 @@ func didReplaceTab(_ oldTab: any WKWebExtensionTab, with newTab: any WKWebExtens
 - (void) didReplaceTab:(id<WKWebExtensionTab>) oldTab withTab:(id<WKWebExtensionTab>) newTab;
 ```
 
-#### Discussion
+## Discussion
 
 This method informs only the specific extension that a tab has been replaced. If the intention is to inform all loaded extensions consistently, you should use the respective method on the extension controller instead.
 

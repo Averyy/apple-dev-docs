@@ -20,11 +20,11 @@ func accessibilityRange(for index: Int) -> NSRange
 - (NSRange) accessibilityRangeForIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The range of characters for the glyph.
 
-#### Discussion
+## Discussion
 
 This value always includes the specified character but may include additional characters if that character is part of a multicharacter glyph.
 

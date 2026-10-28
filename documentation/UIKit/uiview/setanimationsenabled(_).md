@@ -23,7 +23,7 @@ class func setAnimationsEnabled(_ enabled: Bool)
 + (void) setAnimationsEnabled:(BOOL) enabled;
 ```
 
-#### Discussion
+## Discussion
 
 Animations are enabled by default. If you disable animations, code inside subsequent animation blocks is still executed but no animations actually occur. Thus, any changes you make inside an animation block are reflected immediately instead of being animated. This is true whether you use the block-based animation methods or the begin/commit animation methods.
 

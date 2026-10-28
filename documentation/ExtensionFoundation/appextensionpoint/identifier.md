@@ -25,7 +25,7 @@ struct Identifier
 
 - [Building an app extension to support a host app](../building-an-app-extension-to-support-a-host-app.md)
 
-#### Overview
+## Overview
 
 When creating a binding in your app extension, use this type to specify the extension point details. When binding to a host app’s extension point, always initialize this type with the host app’s bundle identifier and extension point name.
 

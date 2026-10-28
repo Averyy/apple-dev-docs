@@ -24,7 +24,7 @@ let CNLabelDateAnniversary: String
 extern NSString * const CNLabelDateAnniversary;
 ```
 
-#### Discussion
+## Discussion
 
 This label takes a string value.
 

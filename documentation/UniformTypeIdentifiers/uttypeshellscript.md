@@ -21,7 +21,7 @@ A base type that represents a shell script.
 extern UTType * const UTTypeShellScript;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.shell-script`.
 

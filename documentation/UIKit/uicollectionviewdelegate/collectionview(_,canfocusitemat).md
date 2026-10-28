@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, canFocusItemAt 
 - (BOOL) collectionView:(UICollectionView *) collectionView canFocusItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the item can receive be focused or [`false`](../../Swift/false.md) if it can not.
 
-#### Discussion
+## Discussion
 
 You can use this method, or a cell’s [`canBecomeFocused`](../uiview/canbecomefocused.md) method, to control which items in the collection view can receive focus. The focus engine calls the cell’s [`canBecomeFocused`](../uiview/canbecomefocused.md) method first, the default implementation of which defers to the collection view and this delegate method.
 

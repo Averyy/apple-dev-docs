@@ -25,7 +25,7 @@ static let isHiddenKey: URLResourceKey
 extern NSURLResourceKey const NSURLIsHiddenKey;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  If the resource is hidden because its name begins with a period, setting this value has no effect.
 

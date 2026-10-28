@@ -13,7 +13,7 @@
 typedef struct IODot3CollEntry IODot3CollEntry;
 ```
 
-#### Discussion
+## Discussion
 
 Collision statistics structure.
 

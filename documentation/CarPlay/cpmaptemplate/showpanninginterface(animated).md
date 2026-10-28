@@ -21,7 +21,7 @@ func showPanningInterface(animated: Bool)
 - (void) showPanningInterfaceAnimated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method while displaying the panning interface has no effect.
 

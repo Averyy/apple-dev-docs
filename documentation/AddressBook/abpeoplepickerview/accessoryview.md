@@ -20,7 +20,7 @@ var accessoryView: NSView! { get set }
 @property (nonatomic, retain) NSView * accessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 If `accessory` is `nil`, the accessory view is removed.
 

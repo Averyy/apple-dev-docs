@@ -19,11 +19,11 @@ func hv_gic_reset() -> hv_return_t
 extern hv_return_t hv_gic_reset();
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success, an error code otherwise.
 
-#### Discussion
+## Discussion
 
 When you’re resetting the virtual machine, call this function to reset the GIC distributor, redistributor registers and the internal state of the device.
 

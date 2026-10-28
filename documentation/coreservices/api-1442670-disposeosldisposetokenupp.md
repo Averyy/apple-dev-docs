@@ -19,7 +19,7 @@ func DisposeOSLDisposeTokenUPP(_ userUPP: OSLDisposeTokenUPP!)
 void DisposeOSLDisposeTokenUPP(OSLDisposeTokenUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 See the [`OSLDisposeTokenProcPtr`](./osldisposetokenprocptr.md) callback function. 
 

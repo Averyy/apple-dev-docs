@@ -19,7 +19,7 @@ var invalidateFlowLayoutDelegateMetrics: Bool { get set }
 @property BOOL invalidateFlowLayoutDelegateMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 As part of the invalidation process, the flow layout object normally asks its delegate to provide size information for the items in the flow layout. This behavior is necessary when the size of the items can change because it ensures that the corresponding layout attributes are always updated. However, if you know that the size of items has not changed, you can set this property to [`false`](../../Swift/false.md). Doing so causes the flow layout to use its existing size information rather than querying the delegate, which saves time.
 

@@ -21,7 +21,7 @@ Identifier for the week-counting year unit.
 case yearForWeekOfYear
 ```
 
-#### Discussion
+## Discussion
 
 See the [`DateComponents`](../../datecomponents.md) property [`yearForWeekOfYear`](../../datecomponents/yearforweekofyear.md) for a discussion of the semantics of this component.
 

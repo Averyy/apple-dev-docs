@@ -24,7 +24,7 @@ var rotationRate: GCRotationRate { get }
 @property (nonatomic, readonly) GCRotationRate rotationRate;
 ```
 
-#### Discussion
+## Discussion
 
 The *rotation rate* is a gyroscopic measurement of the controller’s rotation around the x, y, and z axes.
 

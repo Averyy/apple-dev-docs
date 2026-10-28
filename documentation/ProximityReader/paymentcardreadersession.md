@@ -22,7 +22,7 @@ class PaymentCardReaderSession
 - [Adding support for Tap to Pay on iPhone to your app](./adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 - [Accepting loyalty passes from Wallet](./accepting-loyalty-passes-from-wallet.md)
 
-#### Overview
+## Overview
 
 Use a `PaymentCardReaderSession` object to read payment and loyalty cards from a properly configured device. You don’t create this object directly. Instead, you obtain one by calling the [`prepare(using:)`](./paymentcardreader/prepare%28using%29.md) method of your [`PaymentCardReader`](./paymentcardreader.md) object, which returns a session after the successful configuration of the device.
 

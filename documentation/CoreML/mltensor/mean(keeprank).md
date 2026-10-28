@@ -21,11 +21,11 @@ Returns the mean along all axes.
 func mean(keepRank: Bool = false) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 The reduced tensor.
 
-#### Discussion
+## Discussion
 
 For example:
 

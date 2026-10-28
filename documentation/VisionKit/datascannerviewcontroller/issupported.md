@@ -22,7 +22,7 @@ class var isSupported: Bool { get }
 
 - [Scanning data with the camera](../scanning-data-with-the-camera.md)
 
-#### Discussion
+## Discussion
 
 For this property to be `true`, the device must have the A12 Bionic chip or later. This property is `false` for apps running in visionOS.
 

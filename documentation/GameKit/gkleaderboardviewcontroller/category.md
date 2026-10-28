@@ -28,7 +28,7 @@ var category: String! { get set }
 @property (atomic, copy) NSString * category;
 ```
 
-#### Discussion
+## Discussion
 
 The `category` property must either be `nil` or it must match a leaderboard identifier for a leaderboard you defined in App Store Connect. If `nil`, the view displays scores for the default leaderboard. Default is `nil`.
 

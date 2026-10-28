@@ -23,7 +23,7 @@ var focusSystem: UIFocusSystem? { get }
 @property (nonatomic, readonly, nullable) UIFocusSystem * focusSystem;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` if the window scene doesn’t support focus.
 

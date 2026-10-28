@@ -20,7 +20,7 @@ func addAttribute(_ attribute: XMLNode)
 - (void) addAttribute:(NSXMLNode *) attribute;
 ```
 
-#### Discussion
+## Discussion
 
 The order of multiple attributes is preserved if the `NSXMLPreserveAttributeOrder` option is specified when the element is created.
 

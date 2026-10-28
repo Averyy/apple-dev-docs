@@ -21,11 +21,11 @@ Initializes a new persistent container using the provided name and managed objec
 + (instancetype) persistentContainerWithName:(NSString *) name managedObjectModel:(NSManagedObjectModel *) model;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized persistent container using the passed in name and model; or `nil` if the container could not be initialized.
 
-#### Discussion
+## Discussion
 
 This method invokes [`init(name:managedObjectModel:)`](./init%28name,managedobjectmodel%29.md) and returns the initialized persistent container. This method uses the provided [`NSManagedObjectModel`](../nsmanagedobjectmodel.md) object, whereas [`persistentContainerWithName:`](./persistentcontainerwithname_.md) searches the application bundle for a model with the passed in name.
 

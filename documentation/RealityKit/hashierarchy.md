@@ -25,7 +25,7 @@ An interface that provides access to a parent entity and child entities.
 
 - [Loading entities from a file](./loading-entities-from-a-file.md)
 
-#### Overview
+## Overview
 
 All entities automatically adopt this protocol because the [`Entity`](./entity.md) base class does. This adoption gives all entities a collection of methods for managing the hierarchy.
 

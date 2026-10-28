@@ -21,7 +21,7 @@ Fits a boosted tree regressor model to a collection of examples.
 func fitted(to input: DataFrame, validateOn validation: DataFrame? = nil, eventHandler: EventHandler? = nil) async throws -> TreeRegressorModel
 ```
 
-#### Return Value
+## Return Value
 
 The fitted boosted tree regressor model.
 

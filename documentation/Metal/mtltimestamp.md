@@ -24,7 +24,7 @@ typealias MTLTimestamp = UInt64
 typedef uint64_t MTLTimestamp;
 ```
 
-#### Discussion
+## Discussion
 
 The type of absolute time a Metal timestamp uses can vary with a system’s configuration, but it’s consistent for a configuration.
 

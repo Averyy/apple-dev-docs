@@ -19,7 +19,7 @@ An error that indicates an active session is currently inactive.
 case SessionNotActive
 ```
 
-#### Discussion
+## Discussion
 
 You must start a session before you attempt to retrieve information about a vehicle or send commands or data to it. Similarly, you cannot end a session that isn’t currently running.
 

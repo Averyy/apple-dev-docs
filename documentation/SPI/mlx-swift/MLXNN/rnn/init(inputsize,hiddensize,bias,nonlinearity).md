@@ -17,7 +17,7 @@ An Elman recurrent layer.
 init(inputSize: Int, hiddenSize: Int, bias: Bool = true, nonLinearity: @escaping (MLXArray, StreamOrDevice) -> MLXArray = tanh)
 ```
 
-#### Discussion
+## Discussion
 
 The input is a sequence of shape `NLD` or `LD` where:
 

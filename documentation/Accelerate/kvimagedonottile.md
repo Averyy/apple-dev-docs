@@ -25,7 +25,7 @@ var kvImageDoNotTile: Int { get }
 kvImageDoNotTile
 ```
 
-#### Discussion
+## Discussion
 
 When you set this flag, vImage turns off internal tiling. Set this flag if you want to perform your own tiling or your own multithreading, or to use the minimum or maximum filters in place.
 

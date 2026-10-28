@@ -28,7 +28,7 @@ func resumeAnimation(forKey key: String)
 - (void) resumeAnimationForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 This method has no effect if no animation is attached to the object with the specified key or if the specified animation is not currently paused.
 

@@ -22,11 +22,11 @@ func values(forPasteboardType pasteboardType: String, inItemSet itemSet: IndexSe
 - (NSArray *) valuesForPasteboardType:(NSString *) pasteboardType inItemSet:(NSIndexSet *) itemSet;
 ```
 
-#### Return Value
+## Return Value
 
 An array of objects that have the type indicated by `pasteboardType`; or—if the pasteboard type is custom or unknown—an array of [`NSData`](../../Foundation/nsdata.md) objects.
 
-#### Discussion
+## Discussion
 
 Returned objects are of one of the following classes, depending on the pasteboard item’s representation type: [`NSString`](../../Foundation/nsstring.md), [`NSArray`](../../Foundation/nsarray.md), [`NSDictionary`](../../Foundation/nsdictionary.md), [`NSDate`](../../Foundation/nsdate.md), [`NSNumber`](../../Foundation/nsnumber.md), [`NSURL`](../../Foundation/nsurl.md), or [`UIImage`](../uiimage.md).
 

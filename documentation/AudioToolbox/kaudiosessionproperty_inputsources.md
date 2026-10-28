@@ -23,11 +23,11 @@ var kAudioSessionProperty_InputSources: Int { get }
 kAudioSessionProperty_InputSources
 ```
 
-#### Discussion
+## Discussion
 
 A [`CFArray`](../CoreFoundation/cfarray.md) object containing details on the available audio input sources in a USB audio accessory attached through the iPad camera connection kit.
 
-#### Discussion
+## Discussion
 
 Each element of the array contains a [`CFDictionary`](../CoreFoundation/cfdictionary.md) object with the keys and corresponding values described in [USB Accessory Audio Source Dictionary Keys](./usb-accessory-audio-source-dictionary-keys.md).
 

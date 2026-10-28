@@ -22,7 +22,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 A view or control can only display a tooltip from an enabled interaction. Set the value of the [`isEnabled`](./isenabled.md) property to [`true`](../../Swift/true.md) to enable the interaction or [`false`](../../Swift/false.md) to disable it. The default value is [`true`](../../Swift/true.md).
 

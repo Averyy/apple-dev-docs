@@ -21,7 +21,7 @@ A vector formed by concatenating lowHalf and highHalf.
 init(lowHalf: SIMD8<Scalar>, highHalf: SIMD8<Scalar>)
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

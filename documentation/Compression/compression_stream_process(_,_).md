@@ -25,7 +25,7 @@ func compression_stream_process(_ stream: UnsafeMutablePointer<compression_strea
 extern compression_status compression_stream_process(compression_stream *stream, int flags);
 ```
 
-##### Return Value
+### Return Value
 
 A value of type [`compression_status`](./compression_status.md), which you interpret as follows:
 
@@ -33,7 +33,7 @@ A value of type [`compression_status`](./compression_status.md), which you inter
 - [`COMPRESSION_STATUS_END`](./compression_status_end.md) indicates success, and the stream produces no more output. When encoding, the function returns this status only after it reads all input from the source, writes all output (including an end-of-stream marker) to the destination, and you set `flags` to [`COMPRESSION_STREAM_FINALIZE`](./compression_stream_finalize.md). When decoding, the function returns this status as soon as it reads the end-of-stream marker from the source and writes all output to the destination; the source buffer can still contain additional data.
 - [`COMPRESSION_STATUS_ERROR`](./compression_status_error.md) indicates an error.
 
-#### Discussion
+## Discussion
 
 Each time you call [`compression_stream_process(_:_:)`](./compression_stream_process%28_,_%29.md) successfully, the function consumes data from the source buffer and writes data into the destination buffer, until it reaches the end of one of the buffers and returns either [`COMPRESSION_STATUS_OK`](./compression_status_ok.md) or [`COMPRESSION_STATUS_END`](./compression_status_end.md).
 

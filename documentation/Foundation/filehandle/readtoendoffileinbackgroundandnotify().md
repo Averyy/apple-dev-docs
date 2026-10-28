@@ -25,7 +25,7 @@ func readToEndOfFileInBackgroundAndNotify()
 - (void) readToEndOfFileInBackgroundAndNotify;
 ```
 
-#### Discussion
+## Discussion
 
 This method performs an asynchronous `readToEndOfFile` operation on a file or communications channel and posts an [`NSFileHandleReadToEndOfFileCompletion`](../nsnotification/name-swift.struct/nsfilehandlereadtoendoffilecompletion.md). You must call this method from a thread that has an active run loop.
 

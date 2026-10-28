@@ -15,7 +15,7 @@ Tells the system to request that the person send the communication permission qu
 final func ask(_ question: PermissionQuestion<CommunicationTopic>, in window: NSWindow) async throws
 ```
 
-#### Overview
+## Overview
 
 Throws an error if the system is unable to request to send the question.
 

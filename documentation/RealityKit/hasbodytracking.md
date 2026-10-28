@@ -18,7 +18,7 @@ An interface that enables the animation of a virtual character by tracking a rea
 @preconcurrency protocol HasBodyTracking : HasTransform
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: Body tracking requires a compatible rigged model. For more information on creating a compatible model, see [Rigging a Model for Motion Capture](../ARKit/rigging-a-model-for-motion-capture.md).
 

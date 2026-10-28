@@ -25,7 +25,7 @@ case arrayOrdered
 kCGImageMetadataTypeArrayOrdered
 ```
 
-#### Discussion
+## Discussion
 
 During serialization, this type becomes `<rdf:Seq>` in the XMP format.
 

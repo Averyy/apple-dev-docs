@@ -22,7 +22,7 @@ init(from: Value? = nil, to: Value, mode: FromToByAction<Value>.TransformMode = 
 
 Available when `Value` is `Transform`.
 
-#### Discussion
+## Discussion
 
 `defaultSource` → `to` or `defaultSource` → `to`
 

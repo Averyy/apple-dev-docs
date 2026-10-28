@@ -19,7 +19,7 @@ func disassociate()
 - (void) disassociate;
 ```
 
-#### Discussion
+## Discussion
 
 This method has no effect if the interface is not associated to a network. This operation may require an administrator password.
 

@@ -15,11 +15,11 @@ Attempts to add a custom property to the custom property.
 virtual kern_return_t AddCustomProperty(IOUserAudioCustomProperty *in_custom_property);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnError`](../../DriverKit/kioreturnerror.md)
 
-#### Discussion
+## Discussion
 
 This method always returns [`kIOReturnError`](../../DriverKit/kioreturnerror.md) since a custom property can’t have a custom property.
 

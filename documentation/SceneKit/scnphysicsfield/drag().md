@@ -25,11 +25,11 @@ class func drag() -> SCNPhysicsField
 + (SCNPhysicsField *) dragField;
 ```
 
-#### Return Value
+## Return Value
 
 A physics field object. To use the field in a scene, attach it to the [`physicsField`](../scnnode/physicsfield.md) property of an [`SCNNode`](../scnnode.md) object.
 
-#### Discussion
+## Discussion
 
 Like the [`damping`](../scnphysicsbody/damping.md) and [`angularDamping`](../scnphysicsbody/angulardamping.md) properties of a physics body, drag fields can simulate effects such as fluid friction or air resistance. Unlike those properties, drag fields can simulate different intensities of fluid friction in different areas of your scene. For example, you can use a drag field to represent underwater areas.
 

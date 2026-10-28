@@ -34,7 +34,7 @@ func presentFriendRequestCreator(from viewController: UIViewController) throws
 
 - [Connecting players with their friends in your game](../connecting-players-with-their-friends-in-your-game.md)
 
-#### Discussion
+## Discussion
 
 If this method throws an exception, it doesn’t present the view controller.
 

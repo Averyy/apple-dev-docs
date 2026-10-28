@@ -19,7 +19,7 @@ func setTintColor(_ tintColor: UIColor?)
 - (void) setTintColor:(UIColor *) tintColor;
 ```
 
-#### Discussion
+## Discussion
 
 The system only applies the tint color to the control’s default state (when the crown is not being used to adjust the volume).
 

@@ -19,7 +19,7 @@ var ethernetAddress: ether_addr_t { get }
 @property (readonly) ether_addr_t ethernetAddress;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to obtain the individual octets of the Ethernet address. For more information, see `ether_addr_t`.
 

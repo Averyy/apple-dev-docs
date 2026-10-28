@@ -19,7 +19,7 @@ var markerLocation: CGFloat { get set }
 @property CGFloat markerLocation;
 ```
 
-#### Discussion
+## Discussion
 
 This is an x position for a horizontal ruler, a y position for a vertical ruler.
 

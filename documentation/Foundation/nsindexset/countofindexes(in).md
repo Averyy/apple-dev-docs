@@ -25,7 +25,7 @@ func countOfIndexes(in range: NSRange) -> Int
 - (NSUInteger) countOfIndexesInRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 Number of indexes in the index set that are members of `indexRange`.
 

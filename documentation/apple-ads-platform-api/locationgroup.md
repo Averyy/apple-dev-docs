@@ -15,11 +15,11 @@ A collection of business locations associated with a brand, used to target geos 
 object LocationGroup
 ```
 
-#### Discussion
+## Discussion
 
 The `LocationGroup` object is a targeting unit that bundles one or more brand locations under a named group. It only scopes which locations are in play. Creatives, bids, and budget remain set on the ad group or ad itself, not per location group.
 
-##### Example
+### Example
 
 ```json
 {

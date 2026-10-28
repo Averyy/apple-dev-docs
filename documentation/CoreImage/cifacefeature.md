@@ -24,7 +24,7 @@ class CIFaceFeature
 @interface CIFaceFeature : CIFeature
 ```
 
-#### Overview
+## Overview
 
 > **Note**: In macOS 10.13, iOS 11, and tvOS 11 or later, the Vision framework replaces this class for identifying and analyzing image features. See `VNDetectFaceRectanglesRequest`. See [`VNDetectFaceRectanglesRequest`](../Vision/vndetectfacerectanglesrequest.md))
 

@@ -21,7 +21,7 @@ func selectionChanged()
 - (void) selectionChanged;
 ```
 
-#### Discussion
+## Discussion
 
 This method tells the generator that the user has changed a selection. In response, the generator may play the appropriate haptics. Don’t use this feedback when the user makes or confirms a selection; use it only when the selection changes.
 

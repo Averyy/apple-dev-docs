@@ -19,7 +19,7 @@ var resolvedRange: NSRange { get }
 @property (readonly) NSRange resolvedRange;
 ```
 
-#### Discussion
+## Discussion
 
 After analyzing the text in your context object, Writing Tools sets this property to the portion of [`attributedString`](./attributedstring.md) it might modify. Initially, this property has a location of [`NSNotFound`](../../../Foundation/nsnotfound-4qp9h.md) and a length of `0`, but Writing Tools updates those values before making any changes to the text.
 

@@ -25,7 +25,7 @@ struct FileAttributeKey
 typedef NSString * NSFileAttributeKey;
 ```
 
-#### Discussion
+## Discussion
 
 These keys are used with the methods listed in the Getting and Setting Attributes topic of [`FileManager`](./filemanager.md).
 

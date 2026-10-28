@@ -20,7 +20,7 @@ The priority of analysis processing work.
 let priority: TaskPriority
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the priority of most, but not all, processing work. You should also call the methods of `SpeechAnalyzer` and other classes from a `Task` or thread with the desired priority.
 

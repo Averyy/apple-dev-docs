@@ -13,7 +13,7 @@ Support high-dynamic-range (HDR) video content in your app by using the HDR edit
 - macOS 11.0+
 - Xcode 12.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [10009: Edit and Play Back HDR Video with AVFoundation](https://developer.apple.com/videos/play/wwdc2020/10009/).
 

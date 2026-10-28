@@ -24,7 +24,7 @@ func setNotificationCategories(_ categories: Set<UNNotificationCategory>)
 - (void) setNotificationCategories:(NSSet<UNNotificationCategory *> *) categories;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method at launch time to register your app’s actionable notification types. This method registers all of your categories at once, replacing any previously registered categories with the new ones in the `categories` parameter. Typically, you call this method only once.
 

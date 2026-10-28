@@ -22,7 +22,7 @@ string AppleCareCoveragePaymentType
 - `SUBSCRIPTION`
 - `NONE`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

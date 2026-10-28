@@ -15,7 +15,7 @@ An error that indicates the image identifier already exists.
 object ImageAlreadyExistsError
 ```
 
-#### Overview
+## Overview
 
 The [`Upload Image`](./upload-image.md) endpoint returns this error if you provide an [`imageIdentifier`](./imageidentifier.md) that already exists.
 

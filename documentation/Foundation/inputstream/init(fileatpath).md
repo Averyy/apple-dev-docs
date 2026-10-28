@@ -25,11 +25,11 @@ convenience init?(fileAtPath path: String)
 - (instancetype) initWithFileAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSInputStream` object that reads data from the file at `path`.
 
-#### Discussion
+## Discussion
 
 The stream must be opened before it can be used.
 

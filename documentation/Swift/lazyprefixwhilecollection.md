@@ -21,7 +21,7 @@ A lazy collection wrapper that includes the initial consecutive elements of an u
 typealias LazyPrefixWhileCollection<T> = LazyPrefixWhileSequence<T> where T : Collection
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The performance of accessing `endIndex` depends on how many elements satisfy the predicate at the start of the collection, and might not offer the usual performance given by the `Collection` protocol. Accessing `endIndex`, the `last` property, or calling methods that depend on moving indices might not have the documented complexity.
 

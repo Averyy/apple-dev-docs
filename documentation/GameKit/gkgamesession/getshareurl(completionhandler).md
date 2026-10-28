@@ -30,7 +30,7 @@ func shareURL() async throws -> URL
 - (void) getShareURLWithCompletionHandler:(void (^)(NSURL *url, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When a player clicks the Share or Invite button in your app, they have indicated they want to interact with another player. This method to retrieves a `URL` used to invite other players into the current game session.
 

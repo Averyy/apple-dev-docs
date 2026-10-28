@@ -31,7 +31,7 @@ var maximumNumberOfResults: NSNumber? { get set }
 @property (atomic, copy, nullable) NSNumber * maximumNumberOfResults;
 ```
 
-#### Discussion
+## Discussion
 
 When building the list of reservation time slots, limit the number of [`INRestaurantReservationBooking`](../inrestaurantreservationbooking.md) objects you create to the number in this property.
 

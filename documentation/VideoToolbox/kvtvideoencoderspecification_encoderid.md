@@ -24,7 +24,7 @@ let kVTVideoEncoderSpecification_EncoderID: CFString
 extern CFStringRef const kVTVideoEncoderSpecification_EncoderID;
 ```
 
-#### Discussion
+## Discussion
 
 To specify a particular video encoder when creating a compression session, pass an encoder specification [`CFDictionary`](../CoreFoundation/cfdictionary.md) containing this key and the encoder ID as its value. You can get the encoder ID string from the `kVTVideoEncoderList_EncoderID` entry in the array returned by [`VTCopyVideoEncoderList(_:_:)`](./vtcopyvideoencoderlist%28_,_%29.md).
 

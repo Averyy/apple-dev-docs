@@ -25,7 +25,7 @@ static var canMakePayments: Bool { get }
 
 - [Testing transactions that use custom link tokens](../testing-transactions-that-use-custom-link-tokens.md)
 
-#### Discussion
+## Discussion
 
 Use [`canMakePayments`](./canmakepayments.md) to determine at runtime whether a person can authorize payments. If the value is `false`, a person can’t authorize payments, so don’t offer Apple In-App Purchases or external purchases.
 
@@ -38,7 +38,7 @@ The following conditions can cause the value of [`canMakePayments`](./canmakepay
 
 If [`canMakePayments`](./canmakepayments.md) is `true` and your app uses only StoreKit [Apple In-App Purchase](../in-app-purchase.md) APIs, the person can authorize purchases in the App Store and your app can offer Apple In-App Purchases.
 
-##### Determine whether to offer purchases for apps that use External  Purchase APIs
+### Determine whether to offer purchases for apps that use External  Purchase APIs
 
 If your app has the entitlements to use the [External Purchase](../external-purchase.md) APIs, determine at runtime whether to use the [External Purchase](../external-purchase.md) API or the [Apple In-App Purchase](../in-app-purchase.md) APIs by following these steps, in order:
 

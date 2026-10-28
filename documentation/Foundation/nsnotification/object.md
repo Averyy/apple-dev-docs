@@ -25,7 +25,7 @@ var object: Any? { get }
 @property (retain, readonly, nullable) id object;
 ```
 
-#### Discussion
+## Discussion
 
 This is often the object that posted this notification. In Objective-C, it may be `nil`.
 

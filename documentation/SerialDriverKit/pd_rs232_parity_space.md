@@ -15,7 +15,7 @@ The space state.
 #define PD_RS232_PARITY_SPACE
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to placing a logical `0` on the communication line.
 

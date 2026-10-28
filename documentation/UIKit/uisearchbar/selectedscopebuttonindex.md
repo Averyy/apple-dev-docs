@@ -23,7 +23,7 @@ var selectedScopeButtonIndex: Int { get set }
 @property (nonatomic) NSInteger selectedScopeButtonIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The indexes of the scope buttons are determined by the indexes of the strings in [`scopeButtonTitles`](./scopebuttontitles.md).
 

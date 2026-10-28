@@ -5,7 +5,7 @@
 
 Define standard color objects for specific shades, such as red, blue, green, black, white, and more.
 
-#### Overview
+## Overview
 
 Use the standard color objects when you want to use a specific color shade in your UI. To view swatches of these colors, see [System Colors](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/#system-colors).
 

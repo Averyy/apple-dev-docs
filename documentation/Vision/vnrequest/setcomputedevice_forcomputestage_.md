@@ -20,7 +20,7 @@ Assigns a compute device for a compute stage.
 - (void) setComputeDevice:(id<MLComputeDeviceProtocol>) computeDevice forComputeStage:(VNComputeStage) computeStage;
 ```
 
-#### Discussion
+## Discussion
 
 If the parameter `computeDevice` is `nil`, the framework removes any explicit compute device assignment and allows the framework to select the device.
 

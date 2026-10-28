@@ -18,11 +18,11 @@ Creates a new calendar view decoration with a filled circle image, using the col
 + (instancetype) decorationWithColor:(UIColor *) color size:(UICalendarViewDecorationSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A calendar view decoration.
 
-#### Discussion
+## Discussion
 
 The color defaults to [`systemFill`](../uicolor/systemfill.md) if you don’t specify it.
 

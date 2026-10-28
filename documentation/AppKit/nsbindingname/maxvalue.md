@@ -19,7 +19,7 @@ static let maxValue: NSBindingName
 extern NSBindingName NSMaxValueBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

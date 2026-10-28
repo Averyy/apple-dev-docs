@@ -19,11 +19,11 @@
 static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatScaleUniform(SPProjectiveTransform3DFloat transform, float scale);
 ```
 
-#### Return Value
+## Return Value
 
 A transform that’s uniformly scaled by the specified value.
 
-#### Discussion
+## Discussion
 
 Returns a projective transform that’s constructed by concatenating an existing projective transform and a uniform scale.
 

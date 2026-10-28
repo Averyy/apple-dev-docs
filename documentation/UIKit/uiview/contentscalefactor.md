@@ -23,7 +23,7 @@ var contentScaleFactor: CGFloat { get set }
 @property (nonatomic) CGFloat contentScaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 The scale factor determines how content in the view is mapped from the logical coordinate space (measured in points) to the device coordinate space (measured in pixels). This value is typically either `1.0` or `2.0`. Higher scale factors indicate that each point in the view is represented by more than one pixel in the underlying layer. For example, if the scale factor is `2.0` and the view frame size is 50 x 50 points, the size of the bitmap used to present that content is 100 x 100 pixels.
 

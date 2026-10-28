@@ -4,11 +4,11 @@
 
 An action that transitions from one scene to another.
 
-#### Overview
+## Overview
 
 To define multiple scenes in a USDZ file, use the `def` and `over` specifiers. For more information, see [sceneLibrary](./scenelibrary.md).
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Action "ChangeSceneAction"

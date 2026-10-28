@@ -21,7 +21,7 @@ Returns a transform that results from scaling with the specified size structure.
 static SPProjectiveTransform3D SPProjectiveTransform3DScaleBySize(SPProjectiveTransform3D transform, SPSize3D scale);
 ```
 
-#### Return Value
+## Return Value
 
 The transform that results from scaling with the specified size structure.
 

@@ -21,7 +21,7 @@ A policy to return a partially parsed string, if possible.
 NSAttributedStringMarkdownParsingFailureReturnPartiallyParsedIfPossible
 ```
 
-#### Discussion
+## Discussion
 
 With this policy, the returned string may include unparsed markup. If returning a partially parsed string isn’t possible, the parser may return an error anyway.
 

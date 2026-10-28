@@ -24,7 +24,7 @@ var connectedDate: Date? { get }
 @property (readonly, nullable) NSDate * connectedDate;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the date and time when the connection status changed to `NEVPNStatusConnected` after previously being set to `NEVPNStatusDisconnected`. This property is set to nil whenever the status changes to `NEVPNStatusDisconnected`.
 

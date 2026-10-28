@@ -23,11 +23,11 @@ var initialCapacity: Int { get }
 @property (nonatomic, readonly) NSInteger initialCapacity;
 ```
 
-#### Return Value
+## Return Value
 
 0 if Pro Video Storage is not configured or -1 if there was a failure while extracting information from it.
 
-#### Discussion
+## Discussion
 
 The initial capacity is defined by the user via the Settings app.
 

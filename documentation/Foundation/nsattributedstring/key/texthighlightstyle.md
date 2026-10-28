@@ -21,7 +21,7 @@ An attribute that adds a highlight color to the text to emphasize it.
 static let textHighlightStyle: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSAttributedString.TextHighlightStyle`](../texthighlightstyle.md) structure. The default value of this attribute is `nil`, which does not add a highlight to the text.
 

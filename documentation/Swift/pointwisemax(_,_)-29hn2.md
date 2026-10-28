@@ -21,7 +21,7 @@ The lanewise maximum of two vectors.
 func pointwiseMax<T>(_ a: T, _ b: T) -> T where T : SIMD, T.Scalar : FloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 Each element of the result is the maximum of the corresponding elements of the inputs.
 

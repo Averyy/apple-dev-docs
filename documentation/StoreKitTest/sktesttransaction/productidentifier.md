@@ -25,7 +25,7 @@ var productIdentifier: String { get }
 @property (nonatomic, readonly) NSString * productIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 You configure the product identifiers in the .`storekit` configuration file. Each product identifier must be unique.
 

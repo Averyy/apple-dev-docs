@@ -25,7 +25,7 @@ static let volumeIsAutomountedKey: URLResourceKey
 extern NSURLResourceKey const NSURLVolumeIsAutomountedKey;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a Boolean `NSNumber` object.
 

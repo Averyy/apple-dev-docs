@@ -24,7 +24,7 @@ struct MediaIntelligenceImageAsset
 
 - [Detecting and grouping faces in images](./detecting-and-grouping-faces-in-images.md)
 
-#### Overview
+## Overview
 
 Create a [`MediaIntelligenceImageAsset`](./mediaintelligenceimageasset.md) to identify an image you want [`FaceGroupAnalyzer`](./facegroupanalyzer.md) to process. Each asset has a unique identifier you assign, and a [`MediaIntelligenceImageAsset.Kind`](./mediaintelligenceimageasset/kind-swift.enum.md) value that describes how the framework accesses the image data.
 

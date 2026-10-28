@@ -25,11 +25,11 @@ class func transformedValueClass() -> AnyClass
 + (Class) transformedValueClass;
 ```
 
-#### Return Value
+## Return Value
 
 The class of the value returned by the receiver for a forward transformation.
 
-#### Discussion
+## Discussion
 
 A subclass should override this method to return the appropriate class.
 

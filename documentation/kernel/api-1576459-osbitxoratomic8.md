@@ -15,11 +15,11 @@
 UInt8 OSBitXorAtomic8(UInt32 mask, volatile UInt8 *address);
 ```
 
-#### Return Value
+## Return Value
 
 The value before the bitwise operation.
 
-#### Discussion
+## Discussion
 
 This function guarantees atomicity only with main system memory. It is specifically unsuitable for use on noncacheable memory such as that in devices; this function cannot guarantee atomicity, for example, on memory mapped from a PCI device. Additionally, this function incorporates a memory barrier on systems with weakly-ordered memory architectures.
 

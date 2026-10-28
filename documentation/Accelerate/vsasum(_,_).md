@@ -21,7 +21,7 @@ func vSasum(_ count: Int32, _ x: UnsafePointer<vFloat>) -> Float
 extern float vSasum(int32_t count, const vFloat *x);
 ```
 
-#### Return Value
+## Return Value
 
 The sum of the absolute values of the elements in the vector.
 

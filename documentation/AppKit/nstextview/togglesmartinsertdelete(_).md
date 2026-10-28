@@ -19,7 +19,7 @@ func toggleSmartInsertDelete(_ sender: Any?)
 - (void) toggleSmartInsertDelete:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Controls whether the receiver inserts or deletes space around selected words so as to preserve proper spacing and punctuation.
 

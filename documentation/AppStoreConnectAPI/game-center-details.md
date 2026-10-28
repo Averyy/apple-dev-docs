@@ -5,7 +5,7 @@
 
 Manage enablement, achievement, leaderboard, and localization details for your apps.
 
-#### Overview
+## Overview
 
 Game Center details is the top-level endpoint for Game Center information for your apps. Use this resource to:
 

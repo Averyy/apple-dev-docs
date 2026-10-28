@@ -17,7 +17,7 @@ framework: "mlx-swift-lm/MLXLLM"
 var additionalWeightFiles: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 `jinaai/jina-reranker-v3` packages the same model with the projector in its single `model.safetensors` and ships no such file. A name that is not present is ignored, so the declaration costs that layout nothing.
 

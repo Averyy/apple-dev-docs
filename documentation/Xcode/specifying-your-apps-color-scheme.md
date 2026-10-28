@@ -5,13 +5,13 @@
 
 Set a global accent color for your app by using asset catalogs.
 
-#### Overview
+## Overview
 
 An *accent color*, or *tint color*, is a broad theme color that applies to views and controls in your app. Use an accent color to quickly create a unifying color scheme for your app. You can set an accent for your app by specifying an accent color in your asset catalog.
 
 ![A slider control set to 75% of its maximum value. The left side of its track, which represents the range between the minimum value and the current value, is tinted with a custom accent color.](https://developer.apple.com/tutorials/images/com.apple.Xcode/specifying-your-apps-color-scheme-1@2x.png)
 
-##### Create an accent color set
+### Create an accent color set
 
 When you create your project from a template, it automatically includes a default asset catalog (`Assets.xcassets`) with an `AccentColor` color set. Xcode applies the color you specify in this color set as your app’s accent color.
 
@@ -23,7 +23,7 @@ If your app doesn’t have an `AccentColor` color set, create a color set manual
 4. Double-click the color set name in the outline view to rename the color set with a descriptive name, and press the Return key.
 5. In Build Settings, find the build setting for “Global Accent Color Name”. Double-click the build setting, type in the name of your accent color set, and press Return.
 
-##### Specify accent color variations
+### Specify accent color variations
 
 When you select an accent color, choose a color that works well in light and dark appearances. In your accent color set, you can specify different color values for light and dark appearances if necessary.
 
@@ -34,7 +34,7 @@ When you select an accent color, choose a color that works well in light and dar
 
 You can also specify high-contrast versions of your colors by selecting the High Contrast checkbox.
 
-##### Access the accent color from your code
+### Access the accent color from your code
 
 By default, your accent color applies to all views and controls in your app that use a tint color, unless you override the color for a specific subset of the view hierarchy. However, you might want to incorporate the accent color into other parts of your user interface that don’t rely on a tint color, like static text elements.
 

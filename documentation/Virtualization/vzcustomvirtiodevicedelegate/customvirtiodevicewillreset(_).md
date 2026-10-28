@@ -19,7 +19,7 @@ optional func customVirtioDeviceWillReset(_ device: VZCustomVirtioDevice)
 - (void) customVirtioDeviceWillReset:(VZCustomVirtioDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 You can initiate a reset by calling the [`requestReset()`](../vzcustomvirtiodevice/requestreset%28%29.md) method, and the guest driver can also initiate the reset by itself. The framework calls this method when the reset completes for either scenario.
 

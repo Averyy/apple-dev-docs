@@ -15,11 +15,11 @@ The declaration to configure disk management settings on the device.
 object DiskManagementSettings
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.diskmanagement.settings` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ Specify `com.apple.configuration.diskmanagement.settings` as the declaration typ
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration example
+### Configuration example
 
 This configuration prevents the use of external and network storage devices.
 

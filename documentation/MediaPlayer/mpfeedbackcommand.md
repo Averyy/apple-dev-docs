@@ -25,7 +25,7 @@ class MPFeedbackCommand
 @interface MPFeedbackCommand : MPRemoteCommand
 ```
 
-#### Overview
+## Overview
 
 The shared [`MPRemoteCommandCenter`](./mpremotecommandcenter.md) object vends feedback objects for liking, disliking, and bookmarking media items. Use these objects to register handlers for the types of feedback your app supports and to perform the appropriate tasks when that feedback changes. When the currently playing item changes, you can also use this object to set the feedback state for the new item.
 

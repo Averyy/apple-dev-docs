@@ -18,7 +18,7 @@ typedef struct IOHIDDeviceTransactionInterface {
 } IOHIDDeviceTransactionInterface;
 ```
 
-#### Overview
+## Overview
 
 The functions listed here will work with any version of the IOHIDDeviceTransactionInterface. This functionality is useful when either setting or getting the values for multiple parsed elements.
 

@@ -21,7 +21,7 @@ Whether a programmatic update to the scroll position of a scroll view preserves 
 var scrollPositionUpdatePreservesVelocity: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 By default, when a scroll view sees a programmatic update to its scroll position, it will stop any active scrolls for unanimated scrolls. If a programmatic update is animated, this property is ignored.
 

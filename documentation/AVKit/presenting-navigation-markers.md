@@ -5,13 +5,13 @@
 
 Present navigation markers in the Chapters panel to help users quickly navigate your content.
 
-#### Overview
+## Overview
 
 To help users navigate your content, the Chapters panel presents navigation markers that represent points of interest within the media’s timeline. Users can skip to desired content by selecting a marker with the Siri Remote.
 
 ![An image of Apple TV Chapters panel that shows a horizontal list of chapter markers.](https://developer.apple.com/tutorials/images/com.apple.avkit/media-3905733@2x.png)
 
-#### Set the navigation markers
+## Set the navigation markers
 
 In tvOS, a [`AVPlayerItem`](../AVFoundation/avplayeritem.md) contains a [`navigationMarkerGroups`](../AVFoundation/avplayeritem/navigationmarkergroups.md) property you use to supply chapter information. Set this property to an array of [`AVNavigationMarkersGroup`](./avnavigationmarkersgroup.md) objects to define the navigation markers for the current media.
 

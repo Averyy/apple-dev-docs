@@ -23,7 +23,7 @@ func pressesChanged(_ presses: Set<UIPress>, with event: UIPressesEvent?)
 - (void) pressesChanged:(NSSet<UIPress *> *) presses withEvent:(UIPressesEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method when an analog value associated with a button or thumbstick changes. For example, it calls this method when the analog force value of a push button changes. Use this method to take any needed actions in response to the change.
 

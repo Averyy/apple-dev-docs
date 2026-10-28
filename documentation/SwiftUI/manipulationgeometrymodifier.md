@@ -16,7 +16,7 @@ A view modifier that tracks the geometry a manipulation gesture acts on.
 @preconcurrency struct ManipulationGeometryModifier
 ```
 
-#### Overview
+## Overview
 
 SwiftUI applies this type on your behalf when a view takes part in a manipulation. You don’t create it directly.
 

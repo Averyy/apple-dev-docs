@@ -19,7 +19,7 @@ class FSEntityIdentifier
 @interface FSEntityIdentifier : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`FSEntityIdentifier`](./fsentityidentifier.md) is a UUID to identify a container or volume, optionally with eight bytes of qualifying (differentiating) data. You use the qualifiers in cases in which a file server can receive multiple connections from the same client, which differ by user credentials. In this case, the identifier for each client is the server’s base UUID, and a unique qualifier that differs by client.
 

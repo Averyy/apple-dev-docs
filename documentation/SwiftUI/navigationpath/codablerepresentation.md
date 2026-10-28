@@ -21,7 +21,7 @@ A serializable representation of a navigation path.
 struct CodableRepresentation
 ```
 
-#### Overview
+## Overview
 
 When a navigation path contains elements that conform to the [`Codable`](../../Swift/codable.md) protocol, you can use the path’s `CodableRepresentation` to convert the path to an external representation and to convert an external representation back into a navigation path.
 

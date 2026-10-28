@@ -23,11 +23,11 @@ class func shared() -> NEDNSProxyManager
 + (NEDNSProxyManager *) sharedManager;
 ```
 
-#### Return Value
+## Return Value
 
 The [`NEDNSProxyManager`](../nednsproxymanager.md) instance for the app.
 
-#### Discussion
+## Discussion
 
 Each app is allowed to create a single DNS proxy manager. The [`shared()`](./shared%28%29.md) type method returns a singleton [`NEDNSProxyManager`](../nednsproxymanager.md) instance that your app can use to manage any DNS proxy instances that it creates.
 

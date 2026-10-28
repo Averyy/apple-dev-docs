@@ -21,7 +21,7 @@ An environmental resource that contains background and lighting information for 
 @preconcurrency class EnvironmentResource
 ```
 
-#### Overview
+## Overview
 
 RealityKit supports image-based lighting that enables realistic reflections on your scene’s 3D content. You can define the look of your scene’s background by supplying an environment resource image that determines the general color of the room, and the location of any spotlights or shadowed areas within the reflection. RealityKit applies the image’s characteristics to your scene’s reflective content.
 
@@ -29,7 +29,7 @@ RealityKit supports image-based lighting that enables realistic reflections on y
 
 RealityKit checks a bundle for an environment resource by the filename you supply to one of the load functions.
 
-##### Create a skybox folder
+### Create a skybox folder
 
 To add an environment resource to your Xcode project, make a folder with a name that ends in `.skybox` and place a single image inside. Ensure that the image is an environment map of equirectangular projection, also known as a *latitude-longitude projection*. Drag the folder into the Project navigator. In the options pane, choose to create a folder reference (not a group), and add the folder to your app’s targets. At build time, Xcode compiles the image for use as an environment resource and inserts the result into the app bundle.
 

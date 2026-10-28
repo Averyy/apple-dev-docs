@@ -25,7 +25,7 @@ func CFMessagePortGetContext(_ ms: CFMessagePort!, _ context: UnsafeMutablePoint
 extern void CFMessagePortGetContext(CFMessagePortRef ms, CFMessagePortContext *context);
 ```
 
-#### Discussion
+## Discussion
 
 The context version number for message ports is currently `0`. Before calling this function, you need to initialize the `version` member of `context` to `0`.
 

@@ -26,7 +26,7 @@ var outputs: [AVPlayerItemOutput] { get }
 @property (nonatomic, readonly) NSArray<AVPlayerItemOutput *> * outputs;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the collection of [`AVPlayerItemOutput`](../avplayeritemoutput.md) objects used to transfer media data to the player object.
 

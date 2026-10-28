@@ -21,7 +21,7 @@ A message a file handle sends when it reads the data currently available in a fi
 struct ReadCompletionMessage
 ```
 
-#### Overview
+## Overview
 
 Before adding an observer for this message type, call either [`readInBackgroundAndNotify()`](./readinbackgroundandnotify%28%29.md) or [`readInBackgroundAndNotify(forModes:)`](./readinbackgroundandnotify%28formodes%29.md) on an appropriate [`FileHandle`](../filehandle.md) object.
 

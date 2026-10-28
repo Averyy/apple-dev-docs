@@ -24,7 +24,7 @@ func revertAssetContent(to choice: PHAsset.OriginalResourceChoice)
 - (void) revertAssetContentToOriginalResourceChoice:(PHOriginalResourceChoice) choice;
 ```
 
-#### Discussion
+## Discussion
 
 In addition to reverting all adjustments, this selects either the RAW ([`PHAsset.OriginalResourceChoice.raw`](../phasset/originalresourcechoice-swift.enum/raw.md)) or the compressed ([`PHAsset.OriginalResourceChoice.compressed`](../phasset/originalresourcechoice-swift.enum/compressed.md)) resource as the source for all renders. This applies to RAW+JPEG assets only. Using this with other types of assets is not supported.
 

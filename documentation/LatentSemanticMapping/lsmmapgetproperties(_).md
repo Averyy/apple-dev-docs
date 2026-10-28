@@ -20,7 +20,7 @@ func LSMMapGetProperties(_ mapref: LSMMap) -> Unmanaged<CFDictionary>
 CFDictionaryRefLSMMapGetProperties(LSMMapRef mapref);
 ```
 
-#### Discussion
+## Discussion
 
 Latent Semantic Mapping retains ownership of this dictionary; don’t release it.
 

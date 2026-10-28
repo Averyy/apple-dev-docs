@@ -17,11 +17,11 @@ Obtains the terms in a document that match a query.
 CFArrayRef SKSearchResultsCopyMatchingTerms(SKSearchResultsRef inSearchResults, CFIndex inItem);
 ```
 
-#### Return Value
+## Return Value
 
 A CFArray object containing term IDs.
 
-#### Discussion
+## Discussion
 
 When using a prefix search, or a search for which the user entered more than one word, there may be multiple terms that match the query. This function returns an array of the term IDs corresponding to these matches.
 

@@ -24,7 +24,7 @@ let kVTPropertySupportedValueMinimumKey: CFString
 extern CFStringRef const kVTPropertySupportedValueMinimumKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a [`CFNumber`](../CoreFoundation/cfnumber.md).
 

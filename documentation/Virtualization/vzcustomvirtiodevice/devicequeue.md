@@ -19,7 +19,7 @@ var deviceQueue: dispatch_queue_t { get }
 @property (readonly) dispatch_queue_t deviceQueue;
 ```
 
-#### Discussion
+## Discussion
 
 The framework performs all operations on `VZCustomVirtioDevice` and [`VZCustomVirtioDeviceDelegate`](../vzcustomvirtiodevicedelegate.md) on this serial queue.
 

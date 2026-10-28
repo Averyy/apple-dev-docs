@@ -19,7 +19,7 @@ let XPC_ACTIVITY_PRIORITY_UTILITY: UnsafePointer<CChar>
 extern const char * const XPC_ACTIVITY_PRIORITY_UTILITY;
 ```
 
-#### Discussion
+## Discussion
 
 Utility priority is intended for user-visible tasks such as fetching data from the network, copying files, or importing data.
 

@@ -19,7 +19,7 @@ nonisolated
 func inspector<V>(isPresented: Binding<Bool>, @ContentBuilder content: () -> V) -> some View where V : View
 ```
 
-#### Discussion
+## Discussion
 
 Apply this modifier to declare an inspector with a context-dependent presentation. For example, an inspector can present as a trailing column in a horizontally regular size class, but adapt to a sheet in a horizontally compact size class.
 

@@ -25,7 +25,7 @@ case policyViolation
 NSURLSessionWebSocketCloseCodePolicyViolation
 ```
 
-#### Discussion
+## Discussion
 
 This is a generic code for use when a more specific code is unavailable.
 

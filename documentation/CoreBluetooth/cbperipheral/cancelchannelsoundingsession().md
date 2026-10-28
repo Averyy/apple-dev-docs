@@ -19,7 +19,7 @@ func cancelChannelSoundingSession()
 - (void) cancelChannelSoundingSession;
 ```
 
-#### Discussion
+## Discussion
 
 Cancels the active channel sounding session, if it exists.
 

@@ -21,7 +21,7 @@ protocol Downloader : Sendable
 
 - [Using mlx-swift-lm](./using.md)
 
-#### Overview
+## Overview
 
 Conforming types encapsulate the full download lifecycle — cache check, network download, and fallback to cache on failure. Each conformance owns its own caching strategy. The return value is always a local directory URL containing the requested files.
 

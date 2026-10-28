@@ -22,7 +22,7 @@ A type for using a presentation intent as an attribute.
 enum PresentationIntentAttribute
 ```
 
-#### Overview
+## Overview
 
 A presentation intent applies a block of characters, and covers traits like list, block quote, or table presentation.
 

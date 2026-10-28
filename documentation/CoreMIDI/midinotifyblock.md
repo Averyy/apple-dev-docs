@@ -25,7 +25,7 @@ typealias MIDINotifyBlock = (UnsafePointer<MIDINotification>) -> Void
 typedef void (^)(const struct MIDINotification *) MIDINotifyBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this block when some aspect of the current MIDI setup changes. The system calls it on an arbitrary thread chosen by the implementation; thread safety is the responsibility of the block.
 

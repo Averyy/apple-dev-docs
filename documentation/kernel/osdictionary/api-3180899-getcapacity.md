@@ -24,7 +24,7 @@ virtual uint32_t getCapacity(void);
 virtual unsigned int getCapacity(void);
 ```
 
-#### Return Value
+## Return Value
 
 Capacity for members in dictionary.
 

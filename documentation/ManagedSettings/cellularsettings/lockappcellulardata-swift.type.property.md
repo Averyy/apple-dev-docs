@@ -17,7 +17,7 @@ The metadata associated with the constraint that locks the cellular data setting
 static let lockAppCellularData: SettingMetadata<Bool>
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

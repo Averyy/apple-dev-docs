@@ -24,7 +24,7 @@ optional func workoutSession(_ workoutSession: HKWorkoutSession, didReceiveDataF
 - (void) workoutSession:(HKWorkoutSession *) workoutSession didReceiveDataFromRemoteWorkoutSession:(NSArray<NSData *> *) data;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to decode and use the data sent from the remote workout session. Your app can send data from either the [`HKWorkoutSessionType.mirrored`](../hkworkoutsessiontype/mirrored.md) or [`HKWorkoutSessionType.primary`](../hkworkoutsessiontype/primary.md) workout session.
 

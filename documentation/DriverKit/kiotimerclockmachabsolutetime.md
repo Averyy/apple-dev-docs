@@ -18,7 +18,7 @@ A clock type representing the numer of ticks since the last reboot.
 kIOTimerClockMachAbsoluteTime
 ```
 
-#### Discussion
+## Discussion
 
 This constant is a clock type whose value is from `mach_absolute_time()` in tick units. This clock type does not advance when the computer is asleep.
 

@@ -24,7 +24,7 @@ class MPSCNNDilatedPoolingMaxGradient
 @interface MPSCNNDilatedPoolingMaxGradient : MPSCNNPoolingGradient
 ```
 
-#### Overview
+## Overview
 
 A gradient max pooling filter but the pixels selected in each “application” of the max pooling operation are exactly the same pixels that would be selected with dilated convolution
 

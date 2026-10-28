@@ -16,7 +16,7 @@ Changes the setting that indicates whether the layer supports variable rasteriza
 void cp_layer_renderer_configuration_set_foveation_enabled(cp_layer_renderer_configuration_t configuration, bool foveation_enabled);
 ```
 
-#### Discussion
+## Discussion
 
 Foveation support lets you reduce the amount of high-resolution drawing you do. If you enable foveation, the drawable resource for each frame reduces the size of the texture you use for rendering. The drawable also provides rasterization rate maps that specify the amount of rasterization to apply to different parts of the texture. When rendering your scene, the GPU generates fewer pixels in areas with low rasterization rates, and then scales up those areas before displaying them.
 

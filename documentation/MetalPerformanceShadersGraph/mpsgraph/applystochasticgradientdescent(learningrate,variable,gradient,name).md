@@ -24,7 +24,7 @@ func applyStochasticGradientDescent(learningRate learningRateTensor: MPSGraphTen
 - (MPSGraphOperation *) applyStochasticGradientDescentWithLearningRateTensor:(MPSGraphTensor *) learningRateTensor variable:(MPSGraphVariableOp *) variable gradientTensor:(MPSGraphTensor *) gradientTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 

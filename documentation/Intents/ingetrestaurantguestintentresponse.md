@@ -22,7 +22,7 @@ class INGetRestaurantGuestIntentResponse
 @interface INGetRestaurantGuestIntentResponse : INIntentResponse
 ```
 
-#### Overview
+## Overview
 
 An [`INGetRestaurantGuestIntentResponse`](./ingetrestaurantguestintentresponse.md) object contains the information about the current user along with preferences about whether to associate that user with any new reservations. You create this response when handling or confirming an [`INGetUserCurrentRestaurantReservationBookingsIntent`](./ingetusercurrentrestaurantreservationbookingsintent.md) object. Your response should contain information about the current user and information about how to display that user’s information in the interface used to make reservations.
 

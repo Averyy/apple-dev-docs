@@ -25,7 +25,7 @@ func ColorSyncProfileCreateMutable() -> Unmanaged<ColorSyncMutableProfile>?
 extern ColorSyncMutableProfileRefColorSyncProfileCreateMutable();
 ```
 
-#### Return Value
+## Return Value
 
 An empty mutable profile, or `NULL` in case of failure.
 

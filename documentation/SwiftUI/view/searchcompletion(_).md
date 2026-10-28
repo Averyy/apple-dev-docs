@@ -33,7 +33,7 @@ func searchCompletion<T>(_ token: T) -> some View where T : Identifiable
 
 - [Suggesting search terms](../suggesting-search-terms.md)
 
-#### Discussion
+## Discussion
 
 Use this method to associate a fully formed string with a view that is within a search suggestion list context. The system uses this value when the view is selected to replace the partial text being currently edited of the associated search field.
 

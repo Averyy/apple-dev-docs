@@ -19,7 +19,7 @@ Creates an electric vehicle load event.
 init(timestamp: Date, measurement: ElectricVehicleLoadEvent.ElectricalMeasurement, session: ElectricVehicleLoadEvent.Session, deviceID: String)
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`EnergyKitError.invalidLoadEvent`](../energykiterror/invalidloadevent.md)
 

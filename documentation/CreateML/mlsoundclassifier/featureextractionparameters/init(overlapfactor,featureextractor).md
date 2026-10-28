@@ -19,7 +19,7 @@ Creates the parameters for a feature-extraction session with a default time wind
 init(overlapFactor: Double = __Defaults.overlapFactor, featureExtractor: MLSoundClassifier.ModelParameters.FeatureExtractorType = __Defaults.featureExtractor)
 ```
 
-#### Discussion
+## Discussion
 
 The initializer sets [`featureExtractionTimeWindowSize`](./featureextractiontimewindowsize.md) to a default value.
 

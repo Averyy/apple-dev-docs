@@ -24,7 +24,7 @@ var endDate: Date? { get }
 @property (nonatomic, strong, readonly, nullable) NSDate * endDate;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies only to asset collections whose type is [`PHAssetCollectionType.moment`](../phassetcollectiontype/moment.md). For other asset collection types, this property’s value is `nil`.
 

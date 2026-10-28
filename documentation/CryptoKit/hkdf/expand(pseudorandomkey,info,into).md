@@ -21,7 +21,7 @@ Expands cryptographically strong key material into a derived symmetric key.
 static func expand(pseudoRandomKey prk: RawSpan, info: RawSpan?, into output: inout OutputRawSpan)
 ```
 
-#### Discussion
+## Discussion
 
 Generate cryptographically strong key material to use with this function by calling `extract(inputKeyMaterial:salt:)`.
 

@@ -19,11 +19,11 @@
 static SPAffineTransform3D SPAffineTransform3DMakeRotation(SPRotation3D rotation);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transform structure.
 
-#### Discussion
+## Discussion
 
 Returns a new rotation affine transform.
 

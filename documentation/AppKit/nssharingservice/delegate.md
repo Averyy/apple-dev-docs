@@ -19,7 +19,7 @@ weak var delegate: (any NSSharingServiceDelegate)? { get set }
 @property (weak, nullable) id<NSSharingServiceDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate class must conform to the [`NSSharingServiceDelegate`](../nssharingservicedelegate.md) protocol.
 

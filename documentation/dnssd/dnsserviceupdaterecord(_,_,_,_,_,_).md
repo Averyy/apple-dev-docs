@@ -25,11 +25,11 @@ func DNSServiceUpdateRecord(_ sdRef: DNSServiceRef!, _ recordRef: DNSRecordRef!,
 DNSServiceErrorType DNSServiceUpdateRecord(DNSServiceRef sdRef, DNSRecordRef recordRef, DNSServiceFlags flags, uint16_t rdlen, const void *rdata, uint32_t ttl);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success, otherwise returns an error code indicating the error that occurred.
 
-#### Discussion
+## Discussion
 
 The record must either be:
 

@@ -21,7 +21,7 @@ func log10(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`log(_:stream:)`](./log%28_,stream%29.md)

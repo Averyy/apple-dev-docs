@@ -21,7 +21,7 @@ A type that represents a type-erased column.
 protocol AnyColumnProtocol
 ```
 
-#### Overview
+## Overview
 
 `AnyColumnProtocol` defines the common functionality for type-erased column types. Its typed counterpart is [`ColumnProtocol`](./columnprotocol.md).
 

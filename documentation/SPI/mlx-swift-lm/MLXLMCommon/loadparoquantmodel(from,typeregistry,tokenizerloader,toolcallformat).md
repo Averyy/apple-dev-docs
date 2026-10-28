@@ -17,11 +17,11 @@ Load a ParoQuant model from a local directory, returning a [`ModelContainer`](./
 func loadParoQuantModel<T>(from directory: URL, typeRegistry: ModelTypeRegistry<T>, tokenizerLoader: any TokenizerLoader, toolCallFormat: ToolCallFormat? = nil) async throws -> ModelContainer where T : LanguageModel
 ```
 
-#### Return Value
+## Return Value
 
 A [`ModelContainer`](./modelcontainer.md) ready for inference.
 
-#### Discussion
+## Discussion
 
 Handles AutoAWQ weight conversion, rotation layer patching, and IO layer quantization. Rotation parameters (theta, pairs, channel_scales) are kept in the model and applied to activations at runtime via Metal kernel.
 

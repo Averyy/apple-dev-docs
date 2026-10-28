@@ -25,7 +25,7 @@ typealias FFTSetup = OpaquePointer
 typedef struct OpaqueFFTSetup * FFTSetup;
 ```
 
-#### Discussion
+## Discussion
 
 Call the [`vDSP_create_fftsetup`](../kernel/api-1580009-vdsp_create_fftsetup.md) function to create a setup structure, and calll [`vDSP_destroy_fftsetup`](../kernel/api-1579978-vdsp_destroy_fftsetup.md) to deallocate a setup structure.
 

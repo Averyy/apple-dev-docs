@@ -22,7 +22,7 @@ var isVideoStabilizationSupported: Bool { get }
 @property (nonatomic, readonly, getter=isVideoStabilizationSupported) BOOL supportsVideoStabilization;
 ```
 
-#### Discussion
+## Discussion
 
 The connection only supports video stabilization for video connection types, but may not be available for all resolutions.
 

@@ -21,7 +21,7 @@ Append a `component` on to the end of this path.
 mutating func append(_ component: FilePath.Component)
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 

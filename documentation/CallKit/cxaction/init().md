@@ -23,11 +23,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`CXAction`](../cxaction.md) object.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer.
 

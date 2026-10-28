@@ -13,7 +13,7 @@
 var cmGamutCheckingMask: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This mask provides access to bit 19 of the `flags` field. When you use a profile to create a color world, bit 19 specifies whether the color world should include information for gamut checking. It has the value 0 if the color world should include a gamut-checking table, 1 if gamut-checking information is not required. ColorSync can create a color world without a gamut table more quickly and in less space.
 

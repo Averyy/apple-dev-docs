@@ -25,15 +25,15 @@ func sparse_outer_product_dense_float(_ M: sparse_dimension, _ N: sparse_dimensi
 sparse_status sparse_outer_product_dense_float(sparse_dimension M, sparse_dimension N, sparse_dimension nz, float alpha, const float * restrictx, sparse_stride incx, const float * restricty, const sparse_index * restrictindy, sparse_matrix_float* restrictC);
 ```
 
-#### Return Value
+## Return Value
 
 On success [`SPARSE_SUCCESS`](./sparse_success.md) is returned an `C` is valid matrix object.  The caller is responsible for cleaning up the sparse matrix object with [`sparse_matrix_destroy(_:)`](./sparse_matrix_destroy%28_%29.md).
 
-#### Discussion
+## Discussion
 
 Will return [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) if `nz > N`, and `C` will be unchanged.
 
-#### Discussion
+## Discussion
 
 Compute the outer product of the dense vector x and the sparse vector y and return a new sparse matrix in the uninitialized pointer sparse matrix pointer `C`.  `C = alpha * x * y'`.  You are responsible for calling [`sparse_matrix_destroy(_:)`](./sparse_matrix_destroy%28_%29.md) on the returned matrix.The matrix object returned on success is a point wise based sparse matrix.
 
@@ -63,9 +63,9 @@ All indices are 0 based (the first element of a pointer is `ptr[0]`).
 - [func sparse_matrix_vector_product_dense_float(CBLAS_TRANSPOSE, Float, sparse_matrix_float!, UnsafePointer<Float>!, sparse_stride, UnsafeMutablePointer<Float>!, sparse_stride) -> sparse_status](./sparse_matrix_vector_product_dense_float%28_,_,_,_,_,_,_%29.md)
   Multiplies the dense vector *x* by the sparse matrix *A* and adds the result to the dense vector *y*, with all operands containing single-precision values.
 - [func sparse_vector_triangular_solve_dense_double(CBLAS_TRANSPOSE, Double, sparse_matrix_double!, UnsafeMutablePointer<Double>!, sparse_stride) -> sparse_status](./sparse_vector_triangular_solve_dense_double%28_,_,_,_,_%29.md)
-  Solves the system of equations *x = alpha * T⁻¹ * x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing double-precision values.
+  Solves the system of equations *x = alpha \* T⁻¹ \* x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing double-precision values.
 - [func sparse_vector_triangular_solve_dense_float(CBLAS_TRANSPOSE, Float, sparse_matrix_float!, UnsafeMutablePointer<Float>!, sparse_stride) -> sparse_status](./sparse_vector_triangular_solve_dense_float%28_,_,_,_,_%29.md)
-  Solves the system of equations *x = alpha * T⁻¹ * x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing single-precision values.
+  Solves the system of equations *x = alpha \* T⁻¹ \* x* for x where *x* is a dense vector and *T* is a triangular sparse matrix, with all operands containing single-precision values.
 - [func sparse_outer_product_dense_double(sparse_dimension, sparse_dimension, sparse_dimension, Double, UnsafePointer<Double>!, sparse_stride, UnsafePointer<Double>!, UnsafePointer<sparse_index>!, UnsafeMutablePointer<sparse_matrix_double?>!) -> sparse_status](./sparse_outer_product_dense_double%28_,_,_,_,_,_,_,_,_%29.md)
   Computes the outer product of the dense vector *x* and the sparse vector *y*, with both operands containing double-precision values.
 - [func sparse_permute_rows_double(sparse_matrix_double!, UnsafePointer<sparse_index>!) -> sparse_status](./sparse_permute_rows_double%28_,_%29.md)

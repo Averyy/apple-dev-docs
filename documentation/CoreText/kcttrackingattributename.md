@@ -25,7 +25,7 @@ let kCTTrackingAttributeName: CFString
 extern CFStringRef const kCTTrackingAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this attribute must be a [`CFNumber`](../CoreFoundation/cfnumber.md) float. The default is `0` (no tracking).
 

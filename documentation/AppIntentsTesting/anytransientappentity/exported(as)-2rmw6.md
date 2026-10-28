@@ -21,11 +21,11 @@ Exports this transient entity as a transferable intent value type.
 func exported<T>(as type: T.Type) async throws -> T where T : IntentValueConvertible, T : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 An instance of the requested type.
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the entity does not support the requested value conversion.
 

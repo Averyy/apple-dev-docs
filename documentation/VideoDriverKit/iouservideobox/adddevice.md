@@ -15,11 +15,11 @@ Adds a video device to the video box.
 kern_return_t AddDevice(IOUserVideoDevice *in_device);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if device was successfully added.
 
-#### Discussion
+## Discussion
 
 The box doesn’t own the device. The device’s reference count will be incremented if it was successfully added.
 

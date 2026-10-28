@@ -20,7 +20,7 @@ Returns the name of the back left button at the specified location.
 static func backLeftButton(position: Int) -> GCButtonElementName
 ```
 
-#### Return Value
+## Return Value
 
 The name of the back left button.
 

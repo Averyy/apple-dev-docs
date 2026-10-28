@@ -23,7 +23,7 @@ var background: UIImage? { get set }
 @property (nonatomic, strong, nullable) UIImage * background;
 ```
 
-#### Discussion
+## Discussion
 
 When set, the image referred to by this property replaces the standard appearance controlled by the [`borderStyle`](./borderstyle-swift.property.md) property. Background images are drawn in the border rectangle portion of the text field. Images you use for the text field’s background should be able to stretch to fit.
 

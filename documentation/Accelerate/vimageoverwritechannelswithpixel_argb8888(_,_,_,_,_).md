@@ -25,11 +25,11 @@ func vImageOverwriteChannelsWithPixel_ARGB8888(_ the_pixel: UnsafePointer<UInt8>
 vImage_Error vImageOverwriteChannelsWithPixel_ARGB8888(const Pixel_8888 the_pixel, const vImage_Buffer *src, const vImage_Buffer *dest, uint8_t copyMask, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The following code overwrites channel `0` of the source pixels in `pixelBuffer` with channel `0` of the source pixel value:
 

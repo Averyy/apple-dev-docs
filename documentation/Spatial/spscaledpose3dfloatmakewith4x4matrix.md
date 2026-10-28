@@ -19,11 +19,11 @@
 static SPScaledPose3DFloat SPScaledPose3DFloatMakeWith4x4Matrix(simd_float4x4 matrix);
 ```
 
-#### Return Value
+## Return Value
 
 A new scaled pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a new scaled pose structure from the specified 4 x 4 matrix.
 

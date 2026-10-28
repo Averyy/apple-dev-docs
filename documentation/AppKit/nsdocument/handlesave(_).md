@@ -19,7 +19,7 @@ func handleSave(_ command: NSScriptCommand) -> Any?
 - (id) handleSaveScriptCommand:(NSScriptCommand *) command;
 ```
 
-#### Discussion
+## Discussion
 
 Extracts Save command arguments from the `command` object and uses them to determine the file in which to save the document and the file type.
 

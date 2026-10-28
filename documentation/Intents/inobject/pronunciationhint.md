@@ -32,7 +32,7 @@ var pronunciationHint: String? { get }
 @property (atomic, strong, readonly, nullable) NSString * pronunciationHint;
 ```
 
-#### Discussion
+## Discussion
 
 This property provides a soundalike equivalent of the object’s [`displayString`](./displaystring.md) to Siri, rather than a phonetic spelling. For example, the phrase “iTunes” might have “eye toons” as its pronunciation string.
 

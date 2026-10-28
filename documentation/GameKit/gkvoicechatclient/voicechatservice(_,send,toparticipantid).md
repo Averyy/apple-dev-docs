@@ -24,7 +24,7 @@ func voiceChatService(_ voiceChatService: GKVoiceChatService, send data: Data, t
 - (void) voiceChatService:(GKVoiceChatService *) voiceChatService sendData:(NSData *) data toParticipantID:(NSString *) participantID;
 ```
 
-#### Discussion
+## Discussion
 
 An implementation of this method must reliably transmit the data to the participant identified by `participantID`. When the client on the other end receives the data, it should forward it to the voice chat service by calling the service’s [`receivedData(_:fromParticipantID:)`](../gkvoicechatservice/receiveddata%28_,fromparticipantid%29.md) method.
 

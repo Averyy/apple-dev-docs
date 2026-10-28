@@ -23,7 +23,7 @@ var activeLockedVideoFrameDuration: CMTime { get set }
 @property (nonatomic) CMTime activeLockedVideoFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to run the receiver’s associated [`AVCaptureDevice`](../avcapturedevice.md) at precisely your provided frame rate (expressed as a duration). Query [`minSupportedLockedVideoFrameDuration`](../avcapturedevice/minsupportedlockedvideoframeduration.md) to find the minimum value supported by this [`AVCaptureDeviceInput`](../avcapturedeviceinput.md). In order to disable locked video frame duration, set this property to `kCMTimeInvalid`. This property resets itself to `kCMTimeInvalid` when the receiver’s attached [`activeFormat`](../avcapturedevice/activeformat.md) changes. When you set this property, its value is also reflected in the receiver’s [`activeVideoMinFrameDuration`](../avcapturedevice/activevideominframeduration.md) and [`activeVideoMaxFrameDuration`](../avcapturedevice/activevideomaxframeduration.md).
 

@@ -16,7 +16,7 @@ The unique identifier for the device-specific account number.
 DOMString deviceAccountIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This number is not the account number itself. If the pass has not been provisioned, the value of this property is `nil`.
 

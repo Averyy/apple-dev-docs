@@ -25,13 +25,13 @@ func DNSServiceNATPortMappingCreate(_ sdRef: UnsafeMutablePointer<DNSServiceRef?
 DNSServiceErrorType DNSServiceNATPortMappingCreate(DNSServiceRef*sdRef, DNSServiceFlags flags, uint32_t interfaceIndex, DNSServiceProtocol protocol, uint16_t internalPort, uint16_t externalPort, uint32_t ttl, DNSServiceNATPortMappingReply callBack, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success (any subsequent, asynchronous errors are delivered to the callback), otherwise returns an error code indicating the error that occurred. 
 
 If you don’t actually want a port mapped, and are just calling the API because you want to find out the NAT’s external IP address (e.g. for UI display) then pass zero for protocol, internalPort, externalPort and ttl.
 
-#### Discussion
+## Discussion
 
 The NAT should support either the NAT-PMP or the UPnP IGD for this API to create a successful mapping. Note that this API currently supports IPv4 addresses/mappings only. If the NAT gateway supports PCP and returns an IPv6 address (incorrectly, since this API specifically requests IPv4 addresses), the DNSServiceNATPortMappingReply callback is invoked with errorCode kDNSServiceErr_NATPortMappingUnsupported.
 

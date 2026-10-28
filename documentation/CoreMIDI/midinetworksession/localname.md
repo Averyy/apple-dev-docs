@@ -23,7 +23,7 @@ var localName: String { get }
 @property (nonatomic, readonly) NSString * localName;
 ```
 
-#### Discussion
+## Discussion
 
 The session’s endpoints inherit this value.
 

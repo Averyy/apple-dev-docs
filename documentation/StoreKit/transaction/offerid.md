@@ -27,7 +27,7 @@ var offerID: String? { get }
 
 - [Supporting subscription offer codes in your app](../supporting-subscription-offer-codes-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 This value is `nil` if there isn’t an offer, or if the offer type is [`introductory`](./offertype-swift.struct/introductory.md).
 

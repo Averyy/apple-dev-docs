@@ -16,7 +16,7 @@ Color to use within the sash of the long look interface. If `nil` the sash will 
 @preconcurrency class var sashColor: Color? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `nil`
 

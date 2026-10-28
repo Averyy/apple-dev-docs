@@ -19,7 +19,7 @@ func save(withDelegate delegate: Any?, didSave didSaveSelector: Selector?, conte
 - (void) saveDocumentWithDelegate:(id) delegate didSaveSelector:(SEL) didSaveSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 If an [`NSDocument.SaveOperationType.saveOperation`](./saveoperationtype/saveoperation.md) can be performed without further user intervention (at the very least, neither [`fileURL`](./fileurl.md) nor [`fileType`](./filetype.md) are `nil`), then the method immediately saves the document. Otherwise, it presents a Save panel to the user and saves the document if the user approves the panel. When saving has been completed or canceled, the method sends the message selected by `didSaveSelector` to the `delegate`, with the `contextInfo` as the last argument.
 

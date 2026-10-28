@@ -15,7 +15,7 @@ The host calls this method to tell the driver not to perform a configuration cha
 virtual kern_return_t AbortDeviceConfigurationChange(uint64_t change_action, OSObject *in_change_info);
 ```
 
-#### Discussion
+## Discussion
 
 The configuration change is one that had been requested via a call to the Host method, `RequestDeviceConfigurationChange()`.
 

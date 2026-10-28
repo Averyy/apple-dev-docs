@@ -25,7 +25,7 @@ class CKRecordZone
 @interface CKRecordZone : NSObject
 ```
 
-#### Overview
+## Overview
 
 Zones are an important part of how you organize your data. The public and private databases each have a single default zone. In the private database, you can use [`CKRecordZone`](./ckrecordzone.md) objects to create additional custom zones as necessary. Use custom zones to arrange and encapsulate groups of related records in the private database. Custom zones support other capabilities too, such as the ability to write multiple records as a single atomic transaction.
 
@@ -33,7 +33,7 @@ Treat each custom zone as a single unit of data that is separate from every othe
 
 Use the [`CKRecordZone`](./ckrecordzone.md) class as-is and don’t subclass it.
 
-##### Creating a Custom Record Zone
+### Creating a Custom Record Zone
 
 Generally, you use instances of this class to create and manage custom zones. Although you can use this class to retrieve a database’s default zone, most operations act on records in the default zone by default, so you rarely need to specify it explicitly.
 

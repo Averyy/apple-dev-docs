@@ -23,11 +23,11 @@ class func simulateFocusUpdateRequest(from environment: any UIFocusEnvironment) 
 + (id<UIFocusDebuggerOutput>) simulateFocusUpdateRequestFromEnvironment:(id<UIFocusEnvironment>) environment;
 ```
 
-#### Return Value
+## Return Value
 
 The [`UIFocusDebuggerOutput`](../uifocusdebuggeroutput.md) object the focus debugger uses to output the diagnostic information to the debugger console.
 
-#### Discussion
+## Discussion
 
 Call this method from the `lldb` debugger using the following command. In the example, `obj` corresponds to an object that adopts the [`UIFocusEnvironment`](../uifocusenvironment.md) protocol.
 

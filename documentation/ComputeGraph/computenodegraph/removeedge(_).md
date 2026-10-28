@@ -22,11 +22,11 @@ Removes an edge from the graph.
 mutating func removeEdge(_ edge: ComputeNodeGraph.Edge) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the edge was found and removed.
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the edge cannot be removed.
 

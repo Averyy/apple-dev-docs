@@ -21,11 +21,11 @@ Creates and returns an initialized `NSInputStream` object for reading from a giv
 + (instancetype) inputStreamWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSInputStream` object for reading from `data`. If `data` is not an NSData object, this method returns `nil`.
 
-#### Discussion
+## Discussion
 
 The stream must be opened before it can be used.
 

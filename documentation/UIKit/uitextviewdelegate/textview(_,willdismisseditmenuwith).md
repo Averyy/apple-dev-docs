@@ -20,7 +20,7 @@ optional func textView(_ textView: UITextView, willDismissEditMenuWith animator:
 - (void) textView:(UITextView *) textView willDismissEditMenuWithAnimator:(id<UIEditMenuInteractionAnimating>) animator;
 ```
 
-#### Discussion
+## Discussion
 
 Called when the text view is about to dismiss the edit menu.
 

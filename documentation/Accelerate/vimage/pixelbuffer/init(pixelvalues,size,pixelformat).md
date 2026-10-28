@@ -23,7 +23,7 @@ init<U>(pixelValues: U, size: vImage.Size, pixelFormat: Format.Type = Format.sel
 
 Available when `Format` conforms to `StaticPixelFormat`.
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

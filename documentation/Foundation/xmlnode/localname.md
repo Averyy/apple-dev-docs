@@ -20,11 +20,11 @@ var localName: String? { get }
 @property (copy, readonly, nullable) NSString * localName;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the local name of the receiver.
 
-#### Discussion
+## Discussion
 
 The local name is the part of a node name that follows a namespace-qualifying colon or the full name if there is no colon. For example, “chapter” is the local name in the qualified name “acme:chapter”.
 

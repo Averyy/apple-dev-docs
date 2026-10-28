@@ -14,7 +14,7 @@ A node that can contain shading nodes and other node graphs.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Discussion
+## Discussion
 
 The NodeGraph node holds other node graphs that can be used in other materials. Use this node to define subgraphs that you commonly use and repeat. The NodeGraph node is a custom node that can be used in all of your other materials.
 

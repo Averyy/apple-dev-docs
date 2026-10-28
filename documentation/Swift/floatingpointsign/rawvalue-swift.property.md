@@ -21,7 +21,7 @@ The corresponding value of the raw type.
 var rawValue: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 A new instance initialized with `rawValue` will be equivalent to this instance. For example:
 

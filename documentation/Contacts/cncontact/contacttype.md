@@ -32,7 +32,7 @@ var contactType: CNContactType { get }
 @property (atomic, readonly) CNContactType contactType;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of predefined contact types, see [`CNContactType`](../cncontacttype.md).
 

@@ -23,7 +23,7 @@ struct CLSPredicateKeyPath
 typedef NSString * CLSPredicateKeyPath;
 ```
 
-#### Discussion
+## Discussion
 
 Use these predicate key paths when constructing a predicate to send to the [`contexts(matching:completion:)`](./clsdatastore/contexts%28matching,completion%29.md) method.
 

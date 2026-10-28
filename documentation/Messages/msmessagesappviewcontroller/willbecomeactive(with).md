@@ -21,7 +21,7 @@ func willBecomeActive(with conversation: MSConversation)
 - (void) willBecomeActiveWithConversation:(MSConversation *) conversation;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method to perform any setup steps necessary before the Messages extension becomes active. The extension becomes active both when the user selects the extension from the app drawer, and when the user selects a message in the transcript that represents an [`MSMessage`](../msmessage.md) object created by a copy of the extension.
 

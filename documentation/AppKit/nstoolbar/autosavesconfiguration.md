@@ -22,7 +22,7 @@ var autosavesConfiguration: Bool { get set }
 @property BOOL autosavesConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the toolbar automatically writes any configuration changes to user defaults. It associates the configuration details with the value in its identifier property. If mutliple toolbars share the same identifier, they all share the same configuration settings. When the value of this property is [`false`](../../Swift/false.md), the toolbar doesn’t save changes and reverts to the default configuration when the app relaunches.
 

@@ -27,7 +27,7 @@ func startProxy(options: [String : Any]? = nil) async throws
 - (void) startProxyWithOptions:(NSDictionary<NSString *,id> *) options completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by the system to start the network proxy.
 

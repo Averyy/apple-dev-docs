@@ -25,7 +25,7 @@ init(range: NSRange)
 + (NSValue *) valueWithRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains the range information.
 

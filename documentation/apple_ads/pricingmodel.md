@@ -26,11 +26,11 @@ string PricingModel
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  > Apple Ads Campaign Management API 4.4 deprecates CPM. You can’t update CPM campaigns to CPC campaigns. You need to use CPC when creating a new campaign. See section 4.4 in  [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md) for additional details.
 
-#### Discussion
+## Discussion
 
 See also [`AdChannelType`](./adchanneltype.md), [`BillingEventType`](./billingeventtype.md), and [`Campaign`](./campaign.md) object. See [`Create a Campaign`](./create-a-campaign.md) and [`Create an Ad Group`](./create-an-ad-group.md) for payload examples.
 

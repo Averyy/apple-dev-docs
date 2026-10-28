@@ -24,11 +24,11 @@ class func fetchAssets(with mediaType: PHAssetMediaType, options: PHFetchOptions
 + (PHFetchResult<PHAsset *> *) fetchAssetsWithMediaType:(PHAssetMediaType) mediaType options:(PHFetchOptions *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A fetch result that contains the requested [`PHAsset`](../phasset.md) objects, or an empty fetch result if no objects match the request.
 
-#### Discussion
+## Discussion
 
 By default, the returned [`PHFetchResult`](../phfetchresult.md) object contains all assets with the specified type. To retrieve a more specific set of assets, provide a [`PHFetchOptions`](../phfetchoptions.md) object containing a filter predicate.
 

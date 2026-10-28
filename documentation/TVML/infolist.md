@@ -4,7 +4,7 @@
 
 Displays `info` element information in a vertical format.
 
-#### Overview
+## Overview
 
 Here’s an example that shows the director and main actors for a movie.
 
@@ -27,11 +27,11 @@ Here’s an example that shows the director and main actors for a movie.
 </infoList>
 ```
 
-##### Subelements of infoList
+### Subelements of infoList
 
 - [info](./info.md)
 
-##### Elements that Use infoList
+### Elements that Use infoList
 
 - [banner](./banner.md)
 

@@ -15,7 +15,7 @@ The identifier of the developer team who owns the container.
 attribute string teamId;
 ```
 
-#### Discussion
+## Discussion
 
 See `Team` for more information.
 

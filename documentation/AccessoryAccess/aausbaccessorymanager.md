@@ -19,7 +19,7 @@ class AAUSBAccessoryManager
 @interface AAUSBAccessoryManager : NSObject
 ```
 
-#### Discussion
+## Discussion
 
 Don’t instantiate an `AAUSBAccessoryManager` directly, instead obtain the manager through the class property [`shared`](./aausbaccessorymanager/shared.md).
 

@@ -21,7 +21,7 @@ protocol MSMessagesAppTranscriptPresentation
 @protocol MSMessagesAppTranscriptPresentation
 ```
 
-#### Overview
+## Overview
 
 These methods are called when a view controller is presented using a [`MSMessagesAppPresentationStyle.transcript`](./msmessagesapppresentationstyle/transcript.md) presentation style.
 

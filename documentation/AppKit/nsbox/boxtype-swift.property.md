@@ -19,7 +19,7 @@ var boxType: NSBox.BoxType { get set }
 @property NSBoxType boxType;
 ```
 
-#### Discussion
+## Discussion
 
 A constant describing the type of box. These constants are described in [`NSBox.BoxType`](./boxtype-swift.enum.md). By default, the box type of an `NSBox` is `NSBoxPrimary`.
 

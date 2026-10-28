@@ -24,7 +24,7 @@ func quantity(for lead: HKElectrocardiogram.Lead) -> HKQuantity?
 - (HKQuantity *) quantityForLead:(HKElectrocardiogramLead) lead;
 ```
 
-#### Return Value
+## Return Value
 
 A quantity object containing a value in volt units. These values are compatible with any units created using [`voltUnit(with:)`](../../hkunit/voltunit%28with%29.md).
 

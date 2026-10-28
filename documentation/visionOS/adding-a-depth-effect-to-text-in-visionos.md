@@ -10,13 +10,13 @@ Create text that expands out of a window using stacked SwiftUI text views.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample app demonstrates how to stack multiple text views so the text appears to pop out of its window. At launch, the app applies a spring animation to the views in the stack, causing the text to pop out, like the scene in the following image:
 
 [Video: A screenshot of a visionOS app in Simulator displaying a translucent window, with the phrase 'Hello World' extruding from the window.](https://developer.apple.com/tutorials/videos/com.apple.visionOS/sample-text-1-main-view-video.mp4)
 
-##### Initialize the text
+### Initialize the text
 
 The app’s `DepthTextView` creates and stores a [`Text`](../SwiftUI/text.md) instance as one of its properties:
 
@@ -30,7 +30,7 @@ struct DepthTextView: View {
 
 By passing [`extraLargeTitle`](../SwiftUI/font/extralargetitle.md) to the [`font(_:)`](../SwiftUI/text/font%28_%29.md) modifier, it makes the text appear bigger. The main view creates text variations from this property in its methods and computed properties.
 
-##### Create the foremost text view
+### Create the foremost text view
 
 The `textFrontView` property creates a variation of the `text` property, to act as the view that pops out the most, by changing its offset along the z-axis:
 
@@ -50,7 +50,7 @@ let layers = 5
 let layerSpacing = 100
 ```
 
-##### Generate a series of text layers along the z-axis
+### Generate a series of text layers along the z-axis
 
 The `textMiddleViews` property makes several variations of the `text` property to form the middle layers between the shadow and the front of the stack. It does this by creating a [`ForEach`](../SwiftUI/foreach.md) instance to generate the text views:
 
@@ -76,7 +76,7 @@ The `layers` property controls the number of iterations:
 let layers = 5
 ```
 
-##### Generate a shadow version of the text view
+### Generate a shadow version of the text view
 
 The `textShadowView` property makes a version of the `text` property that acts as a shadow by adding a blur effect and modifying its style and transparency:
 
@@ -97,7 +97,7 @@ The [`blur(radius:opaque:)`](../SwiftUI/view/blur%28radius,opaque%29.md) view mo
 
 > **Note**: This property doesn’t change the offset along the z-axis from `0.0`, which places the shadow view in the same plane as the window that contains the `ZStack`.
 
-##### Stack the text with animations
+### Stack the text with animations
 
 The `DepthTextView` arranges its view properties along its z-axis by adding a [`ZStack`](../SwiftUI/zstack.md) as the main view of its `body` property:
 

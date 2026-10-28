@@ -21,7 +21,7 @@ An error caused by a failed attempt to use the App Attest key.
 static var invalidKey: DCError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 You receive this error if something goes wrong with generating, retrieving, or using an App Attest cryptographic key, when:
 

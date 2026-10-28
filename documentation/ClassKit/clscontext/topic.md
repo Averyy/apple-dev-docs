@@ -23,7 +23,7 @@ var topic: CLSContextTopic? { get set }
 @property (nonatomic, copy, nullable) CLSContextTopic topic;
 ```
 
-#### Discussion
+## Discussion
 
 Set the topic to tell teachers what kind of content a given context covers using one of the values from [`CLSContextTopic`](../clscontexttopic.md). The topic set on a context applies to that context and any of its descendants for which you haven’t explicitly set a topic. If your entire app covers only a single topic, you only need to set the topic for the [`mainAppContext`](../clsdatastore/mainappcontext.md).
 

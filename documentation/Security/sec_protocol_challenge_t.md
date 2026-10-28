@@ -23,7 +23,7 @@ typealias sec_protocol_challenge_t = (sec_protocol_metadata_t, @escaping sec_pro
 typedef void (^)(NSObject<OS_sec_protocol_metadata> *, void (^)(NSObject<OS_sec_identity> *)) sec_protocol_challenge_t;
 ```
 
-#### Discussion
+## Discussion
 
 Block to be invoked when the protocol instance is issued a challenge (e.g., a TLS certificate request).
 

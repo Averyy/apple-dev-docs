@@ -5,7 +5,7 @@
 
 A type that provides the Metal types and timing information you need to draw your content.
 
-#### Overview
+## Overview
 
 A layer renderer type creates a bridge between a SwiftUI scene and the Metal code you use to draw fully immersive experiences. When you present an immersive space with [`CompositorLayer`](./compositorlayer.md) content, the system creates a [`cp_layer_renderer_t`](./cp_layer_renderer_t.md) type and makes it available to the content’s closure. Use the information in the layer renderer to set up your app’s rendering loop, and to start drawing frames of content.
 

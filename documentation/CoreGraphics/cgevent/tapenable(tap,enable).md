@@ -20,7 +20,7 @@ class func tapEnable(tap: CFMachPort, enable: Bool)
 extern void CGEventTapEnable(CFMachPortRef tap, bool enable);
 ```
 
-#### Discussion
+## Discussion
 
 Event taps are normally enabled when created. If an event tap becomes unresponsive, or if a user requests that event taps be disabled, then a `kCGEventTapDisabled` event is passed to the event tap callback function. Event taps may be re-enabled by calling this function.
 

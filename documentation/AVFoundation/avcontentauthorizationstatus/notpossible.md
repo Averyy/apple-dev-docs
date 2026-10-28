@@ -19,7 +19,7 @@ case notPossible
 AVContentAuthorizationNotPossible
 ```
 
-#### Discussion
+## Discussion
 
 This status is returned when the call can’t be completed, for example, a newer version of iTunes is required.
 

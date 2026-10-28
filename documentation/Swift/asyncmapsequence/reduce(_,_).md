@@ -21,11 +21,11 @@ Returns the result of combining the elements of the asynchronous sequence using 
 func reduce<Result>(_ initialResult: Result, _ nextPartialResult: (Result, Self.Element) async throws -> Result) async rethrows -> Result
 ```
 
-#### Return Value
+## Return Value
 
 The final accumulated value. If the sequence has no elements, the result is `initialResult`.
 
-#### Discussion
+## Discussion
 
 Use the `reduce(_:_:)` method to produce a single value from the elements of an entire sequence. For example, you can use this method on an sequence of numbers to find their sum or product.
 

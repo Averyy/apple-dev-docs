@@ -24,7 +24,7 @@ let kCIInputBiasKey: String
 extern NSString * const kCIInputBiasKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for the simple bias value to use along with the exposure adjustment ([`kCIInputEVKey`](./kciinputevkey.md)). The associated value must be an [`NSNumber`](../Foundation/nsnumber.md) object that specifies floating-point value. The value has no effect if the image used for initialization is not RAW.
 

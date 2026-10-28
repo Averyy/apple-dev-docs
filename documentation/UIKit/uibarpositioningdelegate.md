@@ -24,7 +24,7 @@ protocol UIBarPositioningDelegate : NSObjectProtocol
 @protocol UIBarPositioningDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Navigation bars, toolbars, and search bars all have delegates that support the [`UIBarPositioning`](./uibarpositioning.md) protocol. The delegate can use the method of this protocol to specify the bar’s position when that bar is moved to a window. The [`UINavigationBarDelegate`](./uinavigationbardelegate.md), [`UISearchBarDelegate`](./uisearchbardelegate.md), and [`UIToolbarDelegate`](./uitoolbardelegate.md) protocols extend this protocol to allow for the positioning of those bars on the screen.
 

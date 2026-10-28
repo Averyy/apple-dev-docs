@@ -24,7 +24,7 @@ class var shared: VSUserAccountManager { get }
 @property (class, nonatomic, readonly) VSUserAccountManager * sharedUserAccountManager;
 ```
 
-#### Discussion
+## Discussion
 
 Use this shared instance to fetch, create, or update user accounts.
 

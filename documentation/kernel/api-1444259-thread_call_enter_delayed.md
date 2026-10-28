@@ -15,11 +15,11 @@ Submit a thread call to be executed at some point in the future.
 boolean_t thread_call_enter_delayed(thread_call_t call, uint64_t deadline);
 ```
 
-#### Return Value
+## Return Value
 
 TRUE if the call was already pending for either delayed or immediate execution, FALSE otherwise.
 
-#### Discussion
+## Discussion
 
 If the work item is already scheduled for delayed or immediate execution, and it has not yet begun to run, that invocation will be cancelled in favor of execution at the newly specified time. Note that if a thread call is rescheduled from its own callback, then multiple invocations of the callback may be in flight at the same time.
 

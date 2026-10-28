@@ -25,7 +25,7 @@ var patchType: MTLPatchType { get }
 @property (readonly) MTLPatchType patchType;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`MTLPatchType.none`](../mtlpatchtype/none.md) if the function isn’t a post-tessellation vertex function.
 

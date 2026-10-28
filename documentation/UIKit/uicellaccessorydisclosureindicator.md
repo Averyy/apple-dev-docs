@@ -19,7 +19,7 @@ The disclosure indicator system accessory.
 @interface UICellAccessoryDisclosureIndicator : UICellAccessory
 ```
 
-#### Overview
+## Overview
 
 A disclosure indicator is a chevron that points in the trailing direction. This accessory appears on the trailing edge of the cell.
 

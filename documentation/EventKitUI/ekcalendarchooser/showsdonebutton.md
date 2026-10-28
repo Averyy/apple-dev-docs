@@ -22,7 +22,7 @@ var showsDoneButton: Bool { get set }
 @property (nonatomic) BOOL showsDoneButton;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`true`](../../Swift/true.md) to show a Done button; otherwise, [`false`](../../Swift/false.md).
 

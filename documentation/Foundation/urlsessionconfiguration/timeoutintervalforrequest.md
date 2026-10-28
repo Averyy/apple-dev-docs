@@ -25,7 +25,7 @@ var timeoutIntervalForRequest: TimeInterval { get set }
 @property NSTimeInterval timeoutIntervalForRequest;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the request timeout interval for all tasks within sessions based on this configuration. The request timeout interval controls how long (in seconds) a task should wait for additional data to arrive before giving up. The timer associated with this value is reset whenever new data arrives. When the request timer reaches the specified interval without receiving any new data, it triggers a timeout.
 

@@ -25,7 +25,7 @@ protocol MKMapViewDelegate : NSObjectProtocol
 @protocol MKMapViewDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Because many map operations require the [`MKMapView`](./mkmapview.md) class to load data asynchronously, the map view calls these methods to notify your app when specific operations complete. The map view also uses these methods to request annotation and overlay views, and to manage interactions with those views.
 

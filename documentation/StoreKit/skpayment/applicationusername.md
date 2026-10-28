@@ -27,7 +27,7 @@ var applicationUsername: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * applicationUsername;
 ```
 
-#### Discussion
+## Discussion
 
 For more information on how to set and use this property, see [`applicationUsername`](../skmutablepayment/applicationusername.md).
 

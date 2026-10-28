@@ -24,7 +24,7 @@ var kAudioConverterSampleRateConverterQuality: AudioConverterPropertyID { get }
 kAudioConverterSampleRateConverterQuality
 ```
 
-#### Discussion
+## Discussion
 
 The rendering quality of the sample rate converter, specified using a constant from [Sample Rate Conversion Quality Identifiers](./api-1559924-sample-rate-conversion-quality-i.md). See also [`kAudioConverterSampleRateConverterComplexity`](./kaudioconvertersamplerateconvertercomplexity.md).
 

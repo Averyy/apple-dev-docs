@@ -20,7 +20,7 @@ Mark the relevance for a kind as invalid.
 func invalidateRelevance(ofKind kind: String)
 ```
 
-#### Discussion
+## Discussion
 
 Call this function when the relevance returned for a widget has changed and needs to be reloaded.
 

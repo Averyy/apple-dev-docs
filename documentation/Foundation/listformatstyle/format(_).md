@@ -21,11 +21,11 @@ Creates a locale-aware string representation of the value.
 func format(_ value: Base) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of the provided sequence.
 
-#### Discussion
+## Discussion
 
 The [`format(_:)`](./format%28_%29.md) instance method generates a string from the provided sequence. Once you create a style, you can use it to format similar sequences multiple times. For example:
 

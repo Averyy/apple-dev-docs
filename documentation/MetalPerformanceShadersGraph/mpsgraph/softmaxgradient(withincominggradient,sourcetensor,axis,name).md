@@ -24,7 +24,7 @@ func softMaxGradient(withIncomingGradient gradient: MPSGraphTensor, sourceTensor
 - (MPSGraphTensor *) softMaxGradientWithIncomingGradient:(MPSGraphTensor *) gradient sourceTensor:(MPSGraphTensor *) source axis:(NSInteger) axis name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object
 

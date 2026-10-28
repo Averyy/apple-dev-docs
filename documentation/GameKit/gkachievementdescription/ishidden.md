@@ -33,7 +33,7 @@ var isHidden: Bool { get }
 @property (atomic, assign, readonly, getter=isHidden) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`false`](../../Swift/false.md), the achievement is always visible to the player. If [`true`](../../Swift/true.md), the achievement isn’t displayed in any of the standard achievement user interface screens. It remains hidden until the first time your game reports progress toward completing the achievement.
 

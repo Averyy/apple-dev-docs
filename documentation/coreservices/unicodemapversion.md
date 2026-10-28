@@ -16,7 +16,7 @@ Specify a Unicode mapping version.
 typedef SInt32 UnicodeMapVersion;
 ```
 
-#### Discussion
+## Discussion
 
 When performing conversions, you specify the version of the Unicode mapping table to be used for the conversion. You provide the version number in the mapping version field of the structure [`UnicodeMapping`](./unicodemapping.md) that is passed to a function. A Unicode mapping version is defined by the `UnicodeMapVersion` data type.  
 

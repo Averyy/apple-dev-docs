@@ -21,7 +21,7 @@ A precise timestamp for the performed action.
 var preciseTimestamp: Date? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system records this timestamp when a person starts the app intent’s action using the Action button on Apple Watch Ultra.
 

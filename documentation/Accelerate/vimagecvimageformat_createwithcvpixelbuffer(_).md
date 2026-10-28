@@ -29,7 +29,7 @@ vImageCVImageFormatRefvImageCVImageFormat_CreateWithCVPixelBuffer(CVPixelBufferR
 
 - [Converting chroma-subsampled images](./converting-chroma-subsampled-images.md)
 
-#### Return Value
+## Return Value
 
 A [`vImageCVImageFormat`](./vimagecvimageformat.md) instance that describes the specified pixel buffer’s pixel format.
 

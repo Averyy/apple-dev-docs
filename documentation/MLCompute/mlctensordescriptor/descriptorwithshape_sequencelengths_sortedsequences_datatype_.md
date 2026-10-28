@@ -19,11 +19,11 @@ Creates a tensor descriptor with the shape, variable sequence lengths, sorting i
 + (instancetype) descriptorWithShape:(NSArray<NSNumber *> *) shape sequenceLengths:(NSArray<NSNumber *> *) sequenceLengths sortedSequences:(BOOL) sortedSequences dataType:(MLCDataType) dataType;
 ```
 
-#### Return Value
+## Return Value
 
 A tensor descriptor, or `nil` if initialization fails.
 
-#### Discussion
+## Discussion
 
 This initializer provides a convenient way to configure sequence tensors used by recurrent layers.
 

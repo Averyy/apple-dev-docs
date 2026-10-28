@@ -12,7 +12,7 @@ virtual IOReturn performValueChange(
  OSObject *newValue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the result of the handler call (or kIOReturnError on an error).
 

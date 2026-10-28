@@ -17,11 +17,11 @@ Provides the list of file types the [`NSSound`](../nssound.md) class understands
 + (NSArray *) soundUnfilteredFileTypes;
 ```
 
-#### Return Value
+## Return Value
 
 Array of strings representing the file types the [`NSSound`](../nssound.md) class understands.
 
-#### Discussion
+## Discussion
 
 The returned array may be passed directly to the [`runModalForTypes:`](../nsopenpanel/runmodalfortypes_.md) method of the  [`NSOpenPanel`](../nsopenpanel.md) class.
 

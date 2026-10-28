@@ -21,7 +21,7 @@ The system definition of the Datagram Transport Layer Security (DTLS) protocol.
 struct DTLS
 ```
 
-#### Overview
+## Overview
 
 Supports sending and receiving encrypted byte datagrams.
 

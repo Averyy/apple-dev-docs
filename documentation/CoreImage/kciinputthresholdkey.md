@@ -24,7 +24,7 @@ let kCIInputThresholdKey: String
 extern NSString * const kCIInputThresholdKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key needs to be an `NSNumber` instance.
 

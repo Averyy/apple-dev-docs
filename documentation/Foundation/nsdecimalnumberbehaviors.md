@@ -25,7 +25,7 @@ protocol NSDecimalNumberBehaviors
 @protocol NSDecimalNumberBehaviors
 ```
 
-#### Overview
+## Overview
 
 The [`scale()`](./nsdecimalnumberbehaviors/scale%28%29.md) and [`roundingMode()`](./nsdecimalnumberbehaviors/roundingmode%28%29.md) methods determine the precision of `NSDecimalNumber`’s return values and the way in which those values should be rounded to fit that precision. The [`exceptionDuringOperation(_:error:leftOperand:rightOperand:)`](./nsdecimalnumberbehaviors/exceptionduringoperation%28_,error,leftoperand,rightoperand%29.md) method determines the way in which an `NSDecimalNumber` object should handle different calculation errors.
 

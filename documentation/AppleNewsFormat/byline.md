@@ -21,11 +21,11 @@ object Byline
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 - [Using Markdown with Apple News Format](../AppleNews/using-markdown-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Use a `Byline` component to include the date and time of publication, specifying your local timezone, or to indicate more than one contributor to the article. A byline could include the word “by” or “from” as well as the contributors’ names as text. Components are also available for [`Illustrator`](./illustrator.md), [`Photographer`](./photographer.md), and [`Author`](./author.md) attributions.
 
-##### Example
+### Example
 
 ```json
 {

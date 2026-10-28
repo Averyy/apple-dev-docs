@@ -12,11 +12,11 @@ virtual IOFireWireSBP2ORB * createORB(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to the new ORB object.
 
-#### Overview
+## Overview
 
 Create a new IOFireWireSBP2ORB for this login. It can be configured with it's accessors and executed with submitORB below.
 

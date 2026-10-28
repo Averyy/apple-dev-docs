@@ -26,7 +26,7 @@ func navigationDestination<V>(isPresented: Binding<Bool>, @ContentBuilder destin
 
 - [Understanding the navigation stack](../understanding-the-navigation-stack.md)
 
-#### Discussion
+## Discussion
 
 In general, favor binding a path to a navigation stack for programmatic navigation. Add this view modifier to a view inside a [`NavigationStack`](../navigationstack.md) to programmatically push a single view onto the stack. This is useful for building components that can push an associated view. For example, you can present a `ColorDetail` view for a particular color:
 

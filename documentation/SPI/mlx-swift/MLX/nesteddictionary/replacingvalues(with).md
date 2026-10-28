@@ -17,7 +17,7 @@ Return a new `NestedDictionary` with the values replaced by a flat array of valu
 func replacingValues(with values: some Collection<Element>) -> NestedDictionary<Key, Element>
 ```
 
-##### See Also
+### See Also
 
 - [`flattenedValues()`](./flattenedvalues%28%29.md)
 

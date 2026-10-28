@@ -23,7 +23,7 @@ var kDNSServiceType_APL: Int { get }
 kDNSServiceType_APL
 ```
 
-#### Discussion
+## Discussion
 
 Address Prefix List
 

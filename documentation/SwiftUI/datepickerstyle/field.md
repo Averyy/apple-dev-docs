@@ -18,7 +18,7 @@ A date picker style that displays the components in an editable field.
 
 Available when `Self` is `FieldDatePickerStyle`.
 
-#### Discussion
+## Discussion
 
 You can use this style when space is constrained and users expect to make specific date and time selections. However, you should generally use [`stepperField`](./stepperfield.md) instead of this style, unless your your app requires hiding the stepper.
 

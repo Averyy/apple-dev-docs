@@ -21,7 +21,7 @@ Creates a size with dimensions specified as integer values.
 init?<T>(exactWidth: T, height: T) where T : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 The height and width must be greater than `0` and exactly representable as an `Int` value.
 

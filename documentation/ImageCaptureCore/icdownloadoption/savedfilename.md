@@ -23,7 +23,7 @@ static let savedFilename: ICDownloadOption
 extern ICDownloadOption const ICSavedFilename;
 ```
 
-#### Discussion
+## Discussion
 
 The options dictionary returned in [`didDownloadFile(_:error:options:contextInfo:)`](../iccameradevicedownloaddelegate/diddownloadfile%28_,error,options,contextinfo%29.md) will have this key.
 

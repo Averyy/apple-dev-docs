@@ -25,11 +25,11 @@ func bool(forKey defaultName: String) -> Bool
 - (BOOL) boolForKey:(NSString *) defaultName;
 ```
 
-#### Return Value
+## Return Value
 
 The Boolean value associated with `defaultName`, or `false` if the key isn’t present in the defaults database.
 
-#### Discussion
+## Discussion
 
 This method automatically coerces certain values to their equivalent Boolean meanings. For example, it coerces the numbers `1` and `1.0`, and the strings “true”, “YES”, and “1” to the value `true`.
 

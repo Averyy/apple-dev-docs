@@ -26,7 +26,7 @@ func addBlockingEntry(withNextSequentialPhoneNumber phoneNumber: CXCallDirectory
 
 - [Identifying and blocking calls](../identifying-and-blocking-calls.md)
 
-#### Discussion
+## Discussion
 
 When a phone number is blocked, the system telephony provider will disallow incoming calls from that phone number without displaying them to the user.
 

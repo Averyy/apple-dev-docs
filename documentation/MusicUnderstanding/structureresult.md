@@ -21,7 +21,7 @@ A song’s structural boundary information, including sections, segments, and ph
 struct StructureResult
 ```
 
-#### Overview
+## Overview
 
 The `StructureResult` describes a song’s structure in terms of sections, segments and phrases. A section corresponds to a distinct part of a song, such as an intro, verse, or chorus. A section consists of one or more segments, and each segment consists of one or more phrases.
 

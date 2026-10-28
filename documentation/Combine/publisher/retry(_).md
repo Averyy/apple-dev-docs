@@ -21,11 +21,11 @@ Attempts to recreate a failed subscription with the upstream publisher up to the
 func retry(_ retries: Int) -> Publishers.Retry<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that attempts to recreate its subscription to a failed upstream publisher.
 
-#### Discussion
+## Discussion
 
 Use [`retry(_:)`](./retry%28_%29.md) to try a connecting to an upstream publisher after a failed connection attempt.
 

@@ -19,7 +19,7 @@ enum Depth
 enum NSWindowDepth : int32_t;
 ```
 
-#### Overview
+## Overview
 
 A depth of `0` indicates default depth. Don’t make window depths persistent because they aren’t the same across systems.
 

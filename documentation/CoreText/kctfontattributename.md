@@ -25,7 +25,7 @@ let kCTFontAttributeName: CFString
 extern CFStringRef const kCTFontAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this attribute must be a [`CTFont`](./ctfont.md) object. Default is Helvetica 12.
 

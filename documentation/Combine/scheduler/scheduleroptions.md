@@ -22,7 +22,7 @@ A type that defines options accepted by the scheduler.
 associatedtype SchedulerOptions
 ```
 
-#### Discussion
+## Discussion
 
 This type is freely definable by each `Scheduler`. Typically, operations that take a `Scheduler` parameter will also take `SchedulerOptions`.
 

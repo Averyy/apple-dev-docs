@@ -5,7 +5,7 @@
 
 Send requests on device to an open source model you export with Core AI to get a consistent API experience.
 
-#### Overview
+## Overview
 
 By default, the Foundation Models framework provides access to the same on-device and server models that power Apple Intelligence. With these models, you can build privacy-preserving intelligent features while allowing your app to perform generative tasks offline. The framework provides a consistent API experience for using any language model, including those you bring from other model providers. Use other on-device models when you need to:
 
@@ -17,7 +17,7 @@ With [Core AI](../CoreAI/CoreAI.md), you can deploy AI models within your app an
 
 > **Note**: Running and integrating a Core AI model requires macOS 27, iOS 27, and Xcode 27 or later.
 
-#### Export an open source model
+## Export an open source model
 
 The open-source [coreai-models](https://github.com/apple/coreai-models) Swift package provides model export recipes and utilities for building on-device AI with [Core AI](../CoreAI/CoreAI.md). The package contains `CoreAILanguageModel`, which conforms to the `LanguageModel` protocol, and you can use it to easily load an on-device model and prepare it to run.
 
@@ -51,7 +51,7 @@ After the export completes, add the folder to your app so your code can load it 
 
 > **Note**: Each model in the registry has its own README with the exact export recipe and any model-specific requirements. Review the `models` directory in `coreai-models` for additional details.
 
-#### Load the exported model into a session
+## Load the exported model into a session
 
 Create a `CoreAILanguageModel` from the URL of the exported resource folder, then pass it to a [`LanguageModelSession`](./languagemodelsession.md). To access `CoreAILanguageModel`, add `coreai-models` as a package dependency in Xcode by following these steps:
 
@@ -81,7 +81,7 @@ let session = LanguageModelSession(model: model)
 
 Loading is asynchronous because the framework compiles the model and loads its tokenizer before the first request. Load a model ahead of time when you know a request is at least a second or two away so it’s ready when a person interacts with your feature. For more information about compiling models in advance, see [Compiling Core AI models ahead of time](../CoreAI/compiling-core-ai-models-ahead-of-time.md).
 
-#### Run requests through the session
+## Run requests through the session
 
 After you create the session, the API is identical regardless of which model backs it. The [`respond(to:options:)`](./languagemodelsession/respond%28to,options%29.md) and stream methods, along with any [`Tool`](./tool.md) instances and [`Instructions`](./instructions.md) you configure, carry over without modification:
 
@@ -95,7 +95,7 @@ let response = try await session.respond(
 
 To show output as the model produces it, use [`streamResponse(to:options:)`](./languagemodelsession/streamresponse%28to,options%29.md) instead. For more information about prompting, tools, and structured output, see [Generating content and performing tasks with Foundation Models](./generating-content-and-performing-tasks-with-foundation-models.md).
 
-#### Handle reasoning output
+## Handle reasoning output
 
 Some open source models are reasoning models that produce intermediate chain-of-thought before their final answer. Core AI recognizes this content and routes it into the transcript as a [`Transcript.Entry.reasoning(_:)`](./transcript/entry/reasoning%28_%29.md) segment rather than person-facing text. As a result, it doesn’t appear in the response content a person sees. Reviewing the reasoning helps you understand why the model produced a particular answer, which is useful when you debug prompts.
 
@@ -107,7 +107,7 @@ if model.capabilities.contains(.reasoning) {
 }
 ```
 
-#### Profile the model’s runtime performance
+## Profile the model’s runtime performance
 
 Core AI selects an inference engine for the device automatically, running the model on the GPU, CPU, or Apple Neural Engine, depending on how you export it. To measure load times, token counts, and per-request latency, use the Foundation Models instrument. For more information, see [Analyzing the runtime performance of your Foundation Models app](./analyzing-the-runtime-performance-of-your-foundation-models-app.md).
 

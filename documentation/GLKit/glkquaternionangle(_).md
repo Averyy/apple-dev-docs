@@ -22,7 +22,7 @@ func GLKQuaternionAngle(_ quaternion: GLKQuaternion) -> Float
 float GLKQuaternionAngle(GLKQuaternion quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 The angle of the rotation in radians (a positive angle is counterclockwise).
 

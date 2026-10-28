@@ -22,7 +22,7 @@ case cloud
 UIApplicationShortcutIconTypeCloud
 ```
 
-#### Discussion
+## Discussion
 
 ![Cloud icon](https://developer.apple.com/tutorials/images/com.apple.uikit/media-2934522@2x.png)
 

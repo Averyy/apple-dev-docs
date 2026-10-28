@@ -5,11 +5,11 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 1.6 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New features
+### New features
 
 - The API adds [App Clips and App Clip Experiences](./app-clips-and-app-clip-experiences.md).
 - For TestFlight, a new attribute in [`BetaGroupUpdateRequest.Data.Attributes`](./betagroupupdaterequest/data-data.dictionary/attributes-data.dictionary.md) helps developers manage their iOS apps on Apple silicon Mac computers.

@@ -23,11 +23,11 @@ func MIDIDeviceDispose(_ device: MIDIDeviceRef) -> OSStatus
 extern OSStatus MIDIDeviceDispose(MIDIDeviceRef device);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 Drivers may call this function to dispose of device objects that they haven’t already added to the system using [`MIDISetupAddDevice(_:)`](./midisetupadddevice%28_%29.md). To remove a device after adding it to the session, call [`MIDISetupRemoveDevice(_:)`](./midisetupremovedevice%28_%29.md).
 

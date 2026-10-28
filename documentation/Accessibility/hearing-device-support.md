@@ -5,7 +5,7 @@
 
 Access information about paired hearing aid devices and streaming status.
 
-#### Overview
+## Overview
 
 Companion apps for hearing device manufacturers might offer certain features, like remote fitting and hearing device health checks, that rely on streaming audio to the hearing devices. If a user disables audio streaming on their Apple device, these features might become unavailable.
 

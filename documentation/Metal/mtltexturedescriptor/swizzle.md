@@ -24,7 +24,7 @@ var swizzle: MTLTextureSwizzleChannels { get set }
 @property (nonatomic, readwrite) MTLTextureSwizzleChannels swizzle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value does not apply a transformation to pixels sampled or read from the texture.
 

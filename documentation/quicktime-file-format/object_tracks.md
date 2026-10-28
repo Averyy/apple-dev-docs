@@ -5,7 +5,7 @@
 
 A track that contains information about the object nodes in a scene.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: VR Media is deprecated in the QuickTime file format. The information that follows documents existing content containing VR Media and should not be used for new development.
 

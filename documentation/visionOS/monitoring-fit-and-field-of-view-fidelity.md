@@ -10,7 +10,7 @@ Respond to changes in fit and field of view fidelity on Apple Vision Pro by usin
 - visionOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 Some enterprise apps may need to verify an Apple Vision Pro wearer’s fit and field of view, often due to regulatory requirements. Use the Visual Fidelity API in ARKit to monitor how well Apple Vision Pro fits the wearer and whether they experience the required field of view. When fit accuracy or field of view coverage drifts out of range, the app can respond by coaching the wearer to adjust the fit or by making features that require accurate fit and field of view coverage unavailable.
 
@@ -21,15 +21,15 @@ The sample shows how to monitor visual fidelity and visualize the required field
 
 > **Note**: This sample requires an Apple Vision Pro. The Visual Fidelity API isn’t supported in the visionOS simulator.
 
-#### Configure the sample code project
+## Configure the sample code project
 
 Replace `Enterprise.license` with your license file. The sample app requires a valid license file to monitor visual fidelity.
 
-#### Request the entitlement
+## Request the entitlement
 
 Visual fidelity monitoring is part of enterprise APIs for visionOS, a collection of APIs that unlock capabilities for enterprise customers. To use the Visual Fidelity API, you need to apply for the [`Visual Fidelity monitoring`](../BundleResources/entitlements/com.apple.developer.arkit.visual-fidelity.allow.md) entitlement. For more information, including how to apply for this entitlement, see [Building spatial experiences for business apps with enterprise APIs for visionOS](./building-spatial-experiences-for-business-apps-with-enterprise-apis.md).
 
-#### Start monitoring visual fidelity
+## Start monitoring visual fidelity
 
 When you launch the sample, `ContentView` displays a Start Monitoring button, a Show Visualization button, and three controls bound to properties on `AppModel`:
 
@@ -54,7 +54,7 @@ try await session.run([provider])
 
 With the session running, ARKit delivers a stream of fidelity data to `AppModel`.
 
-#### Respond to fidelity updates
+## Respond to fidelity updates
 
 When `AppModel` runs `monitor()`, it watches fidelity updates and stores the count, fit status, and field of view status that `StatusView` displays:
 
@@ -75,7 +75,7 @@ private func apply(_ data: VisualFidelityData) {
 }
 ```
 
-#### Visualize the field of view
+## Visualize the field of view
 
 When the wearer taps the Show Visualization button, the app opens an immersive space where `ImmersiveView` outlines each eye’s field of view using a series of spheres, blue for the left eye, red for the right. The button isn’t available when the wearer selects a custom polygon or device fit only, since ARKit only delivers [`FieldOfViewAnchor`](../ARKit/fieldofviewanchor.md) updates for presets.
 

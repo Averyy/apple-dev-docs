@@ -23,7 +23,7 @@ optional var smartQuotesType: UITextSmartQuotesType { get set }
 @property (nonatomic) UITextSmartQuotesType smartQuotesType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to configure whether UIKit replaces straight apostrophes and quotation marks with region-specific glyphs. The default value of this property is [`UITextSmartQuotesType.default`](../uitextsmartquotestype/default.md), which selectively enables smart quotes based on the keyboard type.
 

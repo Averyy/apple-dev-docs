@@ -21,7 +21,7 @@ Replaces the elements within the specified bounds with the given Unicode scalar 
 mutating func replaceSubrange<C>(_ subrange: Range<String.UnicodeScalarView.Index>, with newElements: C) where C : Collection, C.Element == Unicode.Scalar
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method invalidates any existing indices for use with this string.
 

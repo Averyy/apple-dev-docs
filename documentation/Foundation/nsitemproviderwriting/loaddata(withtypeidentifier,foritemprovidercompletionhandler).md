@@ -26,11 +26,11 @@ func loadData(withTypeIdentifier typeIdentifier: String, forItemProviderCompleti
 - (NSProgress *) loadDataWithTypeIdentifier:(NSString *) typeIdentifier forItemProviderCompletionHandler:(void (^)(NSData *data, NSError *error)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 The progress of the data load process.
 
-#### Discussion
+## Discussion
 
 When the system calls this method, the `typeIdentifier` parameter is set to one of the elements in the `writableTypeIdentifiersForItemProvider` array.
 

@@ -25,7 +25,7 @@ func add(_ subscriber: any MXMetricManagerSubscriber)
 - (void) addSubscriber:(id<MXMetricManagerSubscriber>) subscriber;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**:  If you call this function from a method that deallocates the object, your app might crash.
 

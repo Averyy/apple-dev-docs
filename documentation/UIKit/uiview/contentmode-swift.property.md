@@ -23,7 +23,7 @@ var contentMode: UIView.ContentMode { get set }
 @property (nonatomic) UIViewContentMode contentMode;
 ```
 
-#### Discussion
+## Discussion
 
 The content mode specifies how the cached bitmap of the view’s layer is adjusted when the view’s bounds change. This property is often used to implement resizable controls. Instead of redrawing the contents of the view every time, you can use this property to specify that you want to scale the contents (either with or without distortion) or pin them to a particular spot on the view.
 

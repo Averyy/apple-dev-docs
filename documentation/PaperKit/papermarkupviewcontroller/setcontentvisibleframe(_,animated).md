@@ -20,7 +20,7 @@ Zooms to a specific area of the content so that it’s visible in the scroll vie
 @preconcurrency func setContentVisibleFrame(_ rect: CGRect, animated: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 - rect: A rectangle defining an area of the content view. The rectangle should be in the coordinate space of the data model.
 - animated: `true` if the scrolling should be animated, `false` if it should be immediate.

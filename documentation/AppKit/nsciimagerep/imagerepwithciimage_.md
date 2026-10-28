@@ -15,7 +15,7 @@ Creates and returns a representation of an image initialized to the specified Co
 + (instancetype) imageRepWithCIImage:(CIImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`NSCIImageRep`](../nsciimagerep.md) object, or `nil` if the object could not be initialized.
 

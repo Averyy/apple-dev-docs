@@ -13,7 +13,7 @@ Explicitly enumerate a ray’s intersections with acceleration structures by cre
 - macOS 14.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10149: Enhance Your App with Metal Ray Tracing](https://developer.apple.com/wwdc21/10149/).
 

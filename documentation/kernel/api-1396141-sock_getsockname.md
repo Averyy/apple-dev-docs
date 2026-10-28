@@ -13,11 +13,11 @@
 errno_t sock_getsockname(socket_t so, struct sockaddr *sockname, int socknamelen);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Retrieves the local address of a socket. See 'man 2 getsockname'.
 

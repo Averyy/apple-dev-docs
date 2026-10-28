@@ -25,7 +25,7 @@ func makeCounterHeap(descriptor: MTL4CounterHeapDescriptor) throws -> any MTL4Co
 - (id<MTL4CounterHeap>) newCounterHeapWithDescriptor:(MTL4CounterHeapDescriptor *) descriptor error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A [`MTL4CounterHeap`](../mtl4counterheap.md) instance, or `nil` if the function failed.
 

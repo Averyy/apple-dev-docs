@@ -23,7 +23,7 @@ var kAudioSessionProperty_InputGainScalar: Int { get }
 kAudioSessionProperty_InputGainScalar
 ```
 
-#### Discussion
+## Discussion
 
 The range for this value is `[0.0, 1.0]`, as follows:
 

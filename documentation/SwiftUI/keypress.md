@@ -20,7 +20,7 @@ A hardware keyboard event that a focused view receives.
 struct KeyPress
 ```
 
-#### Overview
+## Overview
 
 The [`onKeyPress(phases:action:)`](./view/onkeypress%28phases,action%29.md) family of modifiers passes a value of this type to your action. Read [`key`](./keypress/key.md) and [`modifiers`](./keypress/modifiers.md) to decide what to do, then return [`KeyPress.Result.handled`](./keypress/result/handled.md) to consume the event or [`KeyPress.Result.ignored`](./keypress/result/ignored.md) to let other views receive it.
 

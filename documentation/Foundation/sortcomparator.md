@@ -22,7 +22,7 @@ A comparison algorithm for a specified type.
 protocol SortComparator<Compared> : Hashable, Sendable
 ```
 
-#### Overview
+## Overview
 
 Objects that conform to [`SortComparator`](./sortcomparator.md) provide a comparison algorithm and storage for the sort order to use when comparing.
 

@@ -19,7 +19,7 @@ typealias SpeechErrorProcPtr = (SpeechChannel, SRefCon, OSErr, Int) -> Void
 typedef void (*SpeechErrorProcPtr)(SpeechChannel chan, SRefCon refCon, OSErr theError, long bytePos);
 ```
 
-#### Discussion
+## Discussion
 
 The Speech Synthesis Manager calls a speech channel’s errorcallback function whenever it encounters a syntax error within acommand embedded in a text buffer it is processing. This can beuseful during application debugging, to detect problems with commandsthat you have embedded in text buffers that your application speaks.It can also be useful if your application allows users to embedcommands within text buffers. Your application might display analert indicating that the Speech Synthesis Manager encountered a problemin processing an embedded command.
 

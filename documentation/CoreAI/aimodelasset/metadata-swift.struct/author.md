@@ -19,7 +19,7 @@ The name of the model’s author.
 var author: String { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Returns an empty string if the model has no author.
 

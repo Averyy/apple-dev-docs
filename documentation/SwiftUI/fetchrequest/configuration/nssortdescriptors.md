@@ -22,7 +22,7 @@ The request’s sort descriptors, accessed as reference types.
 @preconcurrency var nsSortDescriptors: [NSSortDescriptor]
 ```
 
-#### Discussion
+## Discussion
 
 Set this configuration value to cause a [`FetchRequest`](../../fetchrequest.md) to execute a fetch with a new collection of [`NSSortDescriptor`](../../../Foundation/nssortdescriptor.md) instances. If you want to use [`SortDescriptor`](../../../Foundation/sortdescriptor.md) instances, set [`sortDescriptors`](./sortdescriptors.md) instead.
 

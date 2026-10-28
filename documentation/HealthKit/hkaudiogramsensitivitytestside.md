@@ -22,7 +22,7 @@ enum HKAudiogramSensitivityTestSide
 enum HKAudiogramSensitivityTestSide : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Represents the test side used for an HKAudiogramSensitivityTest
 

@@ -25,7 +25,7 @@ var code: Int { get }
 @property (readonly) NSInteger code;
 ```
 
-#### Discussion
+## Discussion
 
 Note that errors are domain-specific.
 

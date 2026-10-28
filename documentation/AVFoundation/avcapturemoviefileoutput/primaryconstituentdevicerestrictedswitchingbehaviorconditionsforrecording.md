@@ -23,7 +23,7 @@ var primaryConstituentDeviceRestrictedSwitchingBehaviorConditionsForRecording: A
 @property (nonatomic, readonly) AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions primaryConstituentDeviceRestrictedSwitchingBehaviorConditionsForRecording;
 ```
 
-#### Discussion
+## Discussion
 
 The default conditions include [`videoZoomChanged`](../avcapturedevice/primaryconstituentdevicerestrictedswitchingbehaviorconditions-swift.struct/videozoomchanged.md), [`focusModeChanged`](../avcapturedevice/primaryconstituentdevicerestrictedswitchingbehaviorconditions-swift.struct/focusmodechanged.md), and [`exposureModeChanged`](../avcapturedevice/primaryconstituentdevicerestrictedswitchingbehaviorconditions-swift.struct/exposuremodechanged.md).
 

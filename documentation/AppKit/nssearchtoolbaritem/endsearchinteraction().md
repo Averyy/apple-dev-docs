@@ -19,7 +19,7 @@ func endSearchInteraction()
 - (void) endSearchInteraction;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`beginSearchInteraction()`](./beginsearchinteraction%28%29.md) and [`endSearchInteraction()`](./endsearchinteraction%28%29.md) to programmatically control a search.
 

@@ -21,7 +21,7 @@ Draws a path into the context with a specified line width.
 func stroke(_ path: Path, with shading: GraphicsContext.Shading, lineWidth: CGFloat = 1)
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method, all [`StrokeStyle`](../strokestyle.md) properties other than [`lineWidth`](../strokestyle/linewidth.md) take their default values. To control other style properties, use [`stroke(_:with:style:)`](./stroke%28_,with,style%29.md) instead.
 

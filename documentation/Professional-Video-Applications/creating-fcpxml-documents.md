@@ -5,7 +5,7 @@
 
 Describe media assets, editing decisions, metadata, and other items in FCPXML so users can send and receive data between your app and Final Cut Pro.
 
-#### Overview
+## Overview
 
 FCPXML describes Final Cut Pro items in a way your app understands. Your app uses FCPXML to send data to Final Cut Pro, and Final Cut Pro uses it to describe the data your app receives.
 
@@ -17,11 +17,11 @@ An FCPXML document represents one of the following Final Cut Pro objects:
 - One or more events
 - One or more clips, which may have associated ratings or keywords; or projects, which may contain markers.
 
-##### Prepare Media Assets
+### Prepare Media Assets
 
 Final Cut Pro must have access to all media assets you reference in your FCPXML document. FCPXML describes media assets in terms of URLs that point to the location of the files that contain the media assets. The location can be on a local file volume or a shared network volume. Either way, the user must have read access to the media-asset files. Final Cut Pro can also import media from a remote location and download the media asset files, if the URLs contain proper authentication. For more information on how to describe a media file location, see [Location of Media Files](./media-rep.md#Location-of-Media-Files).
 
-##### Structure Your FCPXML Document
+### Structure Your FCPXML Document
 
 The example FCPXML document below describes multiple media resources and an event that contains a project (with markers) and clips (with keywords).
 

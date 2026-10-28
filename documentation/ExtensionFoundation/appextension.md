@@ -25,7 +25,7 @@ protocol AppExtension
 
 - [Building an app extension to support a host app](./building-an-app-extension-to-support-a-host-app.md)
 
-#### Overview
+## Overview
 
 This type provides the entry point for an app extension, and every app extension must have a concrete type that adopts it. When a host app launches an app extension, the system looks for an object that adopts this protocol. The protocol provides default implementations of the code required to run the app extension.
 

@@ -25,7 +25,7 @@ var pathComponents: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * pathComponents;
 ```
 
-#### Discussion
+## Discussion
 
 The strings in the array appear in the order they did in the receiver. If the string begins or ends with the path separator, then the first or last component, respectively, will contain the separator. Empty components (caused by consecutive path separators) are deleted. For example, this code excerpt:
 

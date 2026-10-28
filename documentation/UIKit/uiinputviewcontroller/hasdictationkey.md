@@ -27,7 +27,7 @@ var hasDictationKey: Bool { get set }
 
 - [Configuring a custom keyboard interface](../configuring-a-custom-keyboard-interface.md)
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md), the system dictation key is in a disabled state.
 

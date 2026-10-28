@@ -18,7 +18,7 @@ Creates a `DevicePairingView` which, when pressed, will display a local device a
 @preconcurrency init(_ listenerProvider: any ListenerProvider, access: DDDevicePairingAccess = .default, @ViewBuilder label: () -> Label, @ViewBuilder fallback: () -> Fallback)
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 

@@ -23,7 +23,7 @@ func setMetadataObjectsDelegate(_ objectsDelegate: (any AVCaptureMetadataOutputO
 - (void) setMetadataObjectsDelegate:(id<AVCaptureMetadataOutputObjectsDelegate>) objectsDelegate queue:(dispatch_queue_t) objectsCallbackQueue;
 ```
 
-#### Discussion
+## Discussion
 
 When new metadata objects are captured from the receiver’s connection, they are vended to the delegate object. All delegate methods are executed on the dispatch queue specified in the `objectsCallbackQueue` parameter. To ensure that metadata objects are processed in a timely manner and not dropped, you should specify a dispatch queue dedicated to processing the objects or that is otherwise not busy.
 

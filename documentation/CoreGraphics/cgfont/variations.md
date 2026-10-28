@@ -25,7 +25,7 @@ var variations: CFDictionary? { get }
 extern CFDictionaryRefCGFontCopyVariations(CGFontRef font);
 ```
 
-#### Discussion
+## Discussion
 
 The variation specification dictionary contains keys that correspond to the variation axis names of the font. Each key is a variation axis name. The value for each key is the value specified for that particular variation axis represented as a [`CFNumber`](../../CoreFoundation/cfnumber.md) object.
 

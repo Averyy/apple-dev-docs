@@ -24,7 +24,7 @@ static var foreground: ForegroundStyle { get }
 
 Available when `Self` is `ForegroundStyle`.
 
-#### Discussion
+## Discussion
 
 Access this value to get the style SwiftUI uses for foreground elements, like text, symbols, and shapes, in the current context. Use the [`foregroundStyle(_:)`](../view/foregroundstyle%28_%29.md) modifier to set a new foreground style for a given view and its child views.
 

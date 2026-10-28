@@ -20,7 +20,7 @@ static let streamSinkBufferQueueSize: CMIOExtensionProperty
 extern CMIOExtensionProperty const CMIOExtensionPropertyStreamSinkBufferQueueSize;
 ```
 
-#### Discussion
+## Discussion
 
 The property state for this property is a number. The property value matches the value of the [`kCMIOStreamPropertyOutputBufferQueueSize`](../kcmiostreampropertyoutputbufferqueuesize.md) property.
 

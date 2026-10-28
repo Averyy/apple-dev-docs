@@ -19,7 +19,7 @@ var capturesMouseClicks: Bool { get set }
 @property (nonatomic) BOOL capturesMouseClicks;
 ```
 
-#### Discussion
+## Discussion
 
 By default, `AVCaptureScreenInput` does not highlight mouse clicks in its captured output.
 

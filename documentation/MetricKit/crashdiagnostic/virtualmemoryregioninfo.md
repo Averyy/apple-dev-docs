@@ -19,7 +19,7 @@ Details about memory that the app incorrectly accessed.
 let virtualMemoryRegionInfo: String?
 ```
 
-#### Discussion
+## Discussion
 
 This property is set when a bad memory access crash occurs.
 

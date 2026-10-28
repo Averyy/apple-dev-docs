@@ -19,7 +19,7 @@ The key to the text color in a text attributes dictionary.
 extern NSString * const UITextAttributeTextColor;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an instance of [`UIColor`](./uicolor.md).
 

@@ -21,7 +21,7 @@ A message that an undo manager sends before undoing a change.
 struct WillUndoChangeMessage
 ```
 
-#### Overview
+## Overview
 
 The undo manager posts this message after you call [`undo()`](./undo%28%29.md) or [`undoNestedGroup()`](./undonestedgroup%28%29.md). Because this is a “will”-style message, the undo manager sends the message before it performs the undo.
 

@@ -20,7 +20,7 @@ var settime: es_event_settime_t { get set }
 es_event_settime_t settime;
 ```
 
-#### Discussion
+## Discussion
 
 The system won’t fire this event if the source app contains the entitlement `com.apple.private.settime`.
 

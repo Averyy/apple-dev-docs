@@ -21,7 +21,7 @@ Creates a type based on an identifier.
 init?(_ identifier: String)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer returns `nil` if the system doesn’t know the type identifier.
 

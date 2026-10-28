@@ -19,11 +19,11 @@
 static SPPose3DFloat SPPose3DFloatGetInverse(SPPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 A new pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a new pose with the inverse matrix of the specified pose.
 

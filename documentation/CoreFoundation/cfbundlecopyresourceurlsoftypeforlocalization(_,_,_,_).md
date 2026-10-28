@@ -25,11 +25,11 @@ func CFBundleCopyResourceURLsOfTypeForLocalization(_ bundle: CFBundle!, _ resour
 extern CFArrayRefCFBundleCopyResourceURLsOfTypeForLocalization(CFBundleRef bundle, CFStringRef resourceType, CFStringRef subDirName, CFStringRef localizationName);
 ```
 
-#### Return Value
+## Return Value
 
 A CFArray object containing copies of the requested locations. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Note that file names are case-sensitive, even on file systems (such as HFS+) that are not case sensitive with regards to file names.
 

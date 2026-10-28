@@ -24,7 +24,7 @@ let HMCharacteristicTypeImageMirroring: String
 extern NSString * const HMCharacteristicTypeImageMirroring;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a Boolean. Set the value to `false` to disable mirroring. Set the value to `true` to enable mirroring.
 

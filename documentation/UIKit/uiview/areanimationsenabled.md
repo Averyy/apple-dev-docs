@@ -23,11 +23,11 @@ class var areAnimationsEnabled: Bool { get }
 @property (class, nonatomic, readonly) BOOL areAnimationsEnabled;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if animations are enabled; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if animations are enabled; otherwise, it is [`false`](../../Swift/false.md).
 

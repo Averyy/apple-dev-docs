@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, validateDrop info: any NSDragg
 - (NSDragOperation) tableView:(NSTableView *) tableView validateDrop:(id<NSDraggingInfo>) info proposedRow:(NSInteger) row proposedDropOperation:(NSTableViewDropOperation) dropOperation;
 ```
 
-#### Return Value
+## Return Value
 
 The dragging operation the data source will perform.
 
-#### Discussion
+## Discussion
 
 The data source may retarget a drop by calling [`setDropRow(_:dropOperation:)`](../nstableview/setdroprow%28_,dropoperation%29.md) and returning something other than `NSDragOperationNone`. A data source might retarget for various reasons, such as to provide better visual feedback when inserting into a sorted position.
 

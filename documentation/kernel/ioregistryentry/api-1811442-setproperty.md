@@ -14,11 +14,11 @@ virtual bool setProperty(
  unsigned intlength);
 ```
 
-#### Return Value
+## Return Value
 
 true on success or false on a resource failure.
 
-#### Overview
+## Overview
 
 This method will add or replace a property in a registry entry's property table, using the OSDictionary::setObject semantics. This method is synchronized with other IORegistryEntry accesses to the property table. The property is created as an OSData copied from the supplied data and length, set in the property table with the given name, and released.
 

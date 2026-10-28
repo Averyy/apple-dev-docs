@@ -19,7 +19,7 @@ func typeForContents(of url: URL) throws -> String
 - (NSString *) typeForContentsOfURL:(NSURL *) url error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The URL is represented by `url`. If not successful, the method returns `nil` after setting `outError` to point to an `NSError` object that encapsulates the reason why the document type could not be determined, or the fact that the document type is unrecognized.
 

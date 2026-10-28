@@ -25,7 +25,7 @@ var totalDataFileCount: Int { get }
 @property (readonly) NSInteger totalDataFileCount;
 ```
 
-#### Discussion
+## Discussion
 
 This includes all of the data files in your application’s container(s) (including `~/Library/Caches`). Additionally, it includes the clone files that are attributed to your application.
 

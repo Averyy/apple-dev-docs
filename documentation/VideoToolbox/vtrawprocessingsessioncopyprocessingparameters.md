@@ -15,7 +15,7 @@ Copies an array of dictionaries describing the parameters provided by the RAW Pr
 extern OSStatus VTRAWProcessingSessionCopyProcessingParameters(VTRAWProcessingSessionRef session, CFArrayRef*outParameterArray);
 ```
 
-#### Discussion
+## Discussion
 
 This method returns an array of dictionaries - one for each parameter that can be controlled in the RAW processing operation.
 

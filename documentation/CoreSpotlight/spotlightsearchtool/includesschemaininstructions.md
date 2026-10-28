@@ -19,7 +19,7 @@ A Boolean value that indicates whether to inject the model’s name, description
 var includesSchemaInInstructions: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The Spotlight search tool implements this property as part of its conformance to the [`Tool`](../../FoundationModels/tool.md) protocol.
 

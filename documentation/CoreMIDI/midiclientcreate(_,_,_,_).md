@@ -23,11 +23,11 @@ func MIDIClientCreate(_ name: CFString, _ notifyProc: MIDINotifyProc?, _ notifyR
 extern OSStatus MIDIClientCreate(CFStringRef name, MIDINotifyProc notifyProc, void *notifyRefCon, MIDIClientRef *outClient);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 The system invokes the callback function on the same run loop that you created the client on.
 

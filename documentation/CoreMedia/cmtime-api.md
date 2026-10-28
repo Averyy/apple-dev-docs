@@ -5,7 +5,7 @@
 
 A structure that represents time.
 
-#### Overview
+## Overview
 
 Core Media represents time as a rational value, with a time value as the numerator and timescale as the denominator. The structure can represent a specific numeric time in the media timeline, and can also represent nonnumeric values like invalid and indefinite times or positive and negative infinity.
 

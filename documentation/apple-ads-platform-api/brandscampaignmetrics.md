@@ -15,7 +15,7 @@ Campaign-level performance metrics for brands.
 object BrandsCampaignMetrics
 ```
 
-#### Discussion
+## Discussion
 
 The `BrandsCampaignMetrics` extends [`BrandsMetrics`](./brandsmetrics.md) with no additional fields. It’s the metrics object embedded in brands campaign report rows.
 

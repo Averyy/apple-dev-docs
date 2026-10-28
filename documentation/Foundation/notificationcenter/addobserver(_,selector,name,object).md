@@ -25,7 +25,7 @@ func addObserver(_ observer: Any, selector aSelector: Selector, name aName: NSNo
 - (void) addObserver:(id) observer selector:(SEL) aSelector name:(NSNotificationName) aName object:(id) anObject;
 ```
 
-#### Discussion
+## Discussion
 
 Unregister an observer to stop receiving notifications.
 

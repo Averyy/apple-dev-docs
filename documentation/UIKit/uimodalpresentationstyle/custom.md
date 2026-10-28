@@ -23,7 +23,7 @@ case custom
 UIModalPresentationCustom
 ```
 
-#### Discussion
+## Discussion
 
 All of these objects are provided by the presented view controller’s transitioning delegate, which is an object that conforms to the [`UIViewControllerTransitioningDelegate`](../uiviewcontrollertransitioningdelegate.md) protocol. Before presenting a view controller using this style, set the view controller’s  [`transitioningDelegate`](../uiviewcontroller/transitioningdelegate.md) property to your custom transitioning delegate.
 

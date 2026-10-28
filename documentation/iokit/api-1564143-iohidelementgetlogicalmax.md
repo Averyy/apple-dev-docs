@@ -16,11 +16,11 @@ Returns the maximum value possible for the element.
 CFIndex IOHIDElementGetLogicalMax(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the logical maximum.
 
-#### Discussion
+## Discussion
 
 This corresponds to the logical maximum, which indicates the upper bounds of a variable element.
 

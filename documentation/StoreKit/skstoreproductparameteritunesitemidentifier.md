@@ -27,7 +27,7 @@ extern NSString * const SKStoreProductParameterITunesItemIdentifier;
 - [Combining parameters to generate a signature for SKAdNetwork 1](./combining-parameters-to-generate-a-signature-for-skadnetwork-1.md)
 - [Generating the signature to validate StoreKit-rendered ads](./generating-the-signature-to-validate-storekit-rendered-ads.md)
 
-#### Discussion
+## Discussion
 
 The value for this key, an iTunes item identifier, is an instance of [`NSNumber`](../Foundation/nsnumber.md).
 

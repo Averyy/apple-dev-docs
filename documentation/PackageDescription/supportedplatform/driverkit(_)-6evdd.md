@@ -15,7 +15,7 @@ Configures the minimum deployment target version for the DriverKit platform usin
 static func driverKit(_ versionString: String) -> SupportedPlatform
 ```
 
-#### Return Value
+## Return Value
 
 A `SupportedPlatform` instance.
 

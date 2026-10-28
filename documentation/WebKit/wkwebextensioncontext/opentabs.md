@@ -23,7 +23,7 @@ var openTabs: Set<AnyHashable> { get }
 @property (nonatomic, copy, readonly) NSSet<id<WKWebExtensionTab>> * openTabs;
 ```
 
-#### Discussion
+## Discussion
 
 Provides a set of tabs in all open windows that are visible to the extension, as updated by the [`didOpenTab(_:)`](./didopentab%28_%29.md) and [`didCloseTab:windowIsClosing:`](./didclosetab_windowisclosing_.md) methods.
 

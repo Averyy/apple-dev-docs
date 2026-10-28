@@ -25,9 +25,9 @@ object TopLevel
 
 - [Configuring multiple devices using profiles](./configuring-multiple-devices-using-profiles.md)
 
-#### Discussion
+## Discussion
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |

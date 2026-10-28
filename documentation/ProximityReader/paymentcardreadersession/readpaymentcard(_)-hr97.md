@@ -17,11 +17,11 @@ Presents a sheet to verify a contactless payment card, and returns the card data
 func readPaymentCard(_ request: PaymentCardVerificationRequest) async throws -> PaymentCardReadResult
 ```
 
-#### Return Value
+## Return Value
 
 A [`PaymentCardReadResult`](../paymentcardreadresult.md) if the read operation was successful.
 
-#### Discussion
+## Discussion
 
 Call this method when you want to verify someone’s card with your payment provider. When you call this method, the system displays UI with instructions on what the person needs to do. This UI remains onscreen until the system reads the person’s card, you cancel the operation, or an error occurs.
 

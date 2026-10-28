@@ -20,7 +20,7 @@ var target_file: UnsafeMutablePointer<es_file_t>?
 es_file_t * target_file;
 ```
 
-#### Discussion
+## Discussion
 
 The copy file operation overwrites this file if the operation completes. If no file exists at the target location, this value is `NULL`.
 

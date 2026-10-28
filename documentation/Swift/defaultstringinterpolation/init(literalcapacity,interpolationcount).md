@@ -21,7 +21,7 @@ Creates a string interpolation with storage pre-sized for a literal with the ind
 init(literalCapacity: Int, interpolationCount: Int)
 ```
 
-#### Discussion
+## Discussion
 
 You don’t need to call this initializer directly. It’s used by the compiler when interpreting string interpolations.
 

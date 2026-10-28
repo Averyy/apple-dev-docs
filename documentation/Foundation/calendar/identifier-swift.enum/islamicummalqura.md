@@ -21,7 +21,7 @@ Identifier for the Islamic Umm al-Qura calendar, as used in Saudi Arabia.
 case islamicUmmAlQura
 ```
 
-#### Discussion
+## Discussion
 
 This calendar is based on astronomical calculation, instead of tabular behavior.
 

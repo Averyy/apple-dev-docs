@@ -23,7 +23,7 @@ optional func collaborationViewShouldPresentPopover(_ collaborationView: SWColla
 - (BOOL) collaborationViewShouldPresentPopover:(SWCollaborationView *) collaborationView;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the system should present the popover; otherwise `false`.
 

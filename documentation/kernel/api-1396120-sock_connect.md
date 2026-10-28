@@ -13,11 +13,11 @@
 errno_t sock_connect(socket_t so, const struct sockaddr *to, int flags);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success, EINPROGRESS for a non-blocking connect that has not completed, otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Initiates a connection on the socket. See 'man 2 connect' for more information.
 

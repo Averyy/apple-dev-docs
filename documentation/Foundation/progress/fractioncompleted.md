@@ -25,7 +25,7 @@ var fractionCompleted: Double { get }
 @property (readonly) double fractionCompleted;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver object doesn’t have any suboperations, [`fractionCompleted`](./fractioncompleted.md) is generally the result of dividing [`completedUnitCount`](./completedunitcount.md) by [`totalUnitCount`](./totalunitcount.md). Setting both [`totalUnitCount`](./totalunitcount.md) and [`completedUnitCount`](./completedunitcount.md) properties to zero indicates that there is no progress to track. In this case, the [`isIndeterminate`](./isindeterminate.md) property returns [`false`](../../Swift/false.md) and the [`fractionCompleted`](./fractioncompleted.md) property returns `0.0`.
 

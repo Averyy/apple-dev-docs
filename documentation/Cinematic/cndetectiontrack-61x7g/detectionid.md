@@ -19,7 +19,7 @@ The unique ID of the subject detected during this track.
 @property (readonly) CNDetectionID detectionID;
 ```
 
-#### Discussion
+## Discussion
 
 This ID is unique within a cinematic script.
 

@@ -23,7 +23,7 @@ let kCGPDFContextUserPassword: CFString
 extern CFStringRef const kCGPDFContextUserPassword;
 ```
 
-#### Discussion
+## Discussion
 
 The user password of the PDF document. If the document is encrypted, then the value of this key will be the user password for the document. If not specified, the user password is the empty string. The value of this key must be a CFString object that can be represented in ASCII encoding; only the first 32 bytes will be used for the password. If the value of this key cannot be represented in ASCII, the document is not created and the creation function returns `NULL`.
 

@@ -22,7 +22,7 @@ static func relativeVolume(onIncrement: @escaping @Sendable () async throws -> V
 
 - [Publishing remote media sessions](../../publishing-remote-media-sessions.md)
 
-#### Discussion
+## Discussion
 
 Use this when the device supports stepwise volume changes but doesn’t expose an absolute level.
 

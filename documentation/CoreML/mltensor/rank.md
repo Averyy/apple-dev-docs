@@ -21,7 +21,7 @@ The number of dimensions of the tensor.
 var rank: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Rank is equal to the number of dimensions of the shape, i.e., `tensor.rank == tensor.shape.count`.
 

@@ -21,11 +21,11 @@ Constructs a new span over the items within the supplied range of indices within
 mutating func extracting(unchecked bounds: ClosedRange<MutableSpan<Element>.Index>) -> MutableSpan<Element>
 ```
 
-#### Return Value
+## Return Value
 
 A `MutableSpan` over the items within `bounds`.
 
-#### Discussion
+## Discussion
 
 The returned span represents a mutation of this span.
 

@@ -19,11 +19,11 @@ func setSelectionIndex(_ index: Int) -> Bool
 - (BOOL) setSelectionIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the selection was changed, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Attempting to change the selection may cause a [`commitEditing()`](../nscontroller/commitediting%28%29.md) message which fails, thus denying the selection change.
 

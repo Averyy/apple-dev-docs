@@ -19,7 +19,7 @@ func setDocumentEdited(_ dirtyFlag: Bool)
 - (void) setDocumentEdited:(BOOL) dirtyFlag;
 ```
 
-#### Discussion
+## Discussion
 
 The window controller uses this flag to control whether its associated window shows up as dirty. You should not call this method directly for window controllers with an associated document; the document calls this method on its window controllers as needed.
 

@@ -24,11 +24,11 @@ class func textStyleRules(fromPropertyList plist: Any) -> [AVTextStyleRule]?
 + (NSArray<AVTextStyleRule *> *) textStyleRulesFromPropertyList:(id) plist;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `AVTextStyleRule` objects corresponding to the style information in the property-list object.
 
-#### Discussion
+## Discussion
 
 Use this method to create new text style rule objects based on data you previously converted to a property-list format using the [`propertyList(for:)`](./propertylist%28for%29.md) class method.
 

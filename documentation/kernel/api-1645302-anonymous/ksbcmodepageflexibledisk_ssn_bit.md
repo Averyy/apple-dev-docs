@@ -13,7 +13,7 @@
 kSBCModePageFlexibleDisk_SSN_Bit = 6
 ```
 
-#### Discussion
+## Discussion
 
 SSN Bit definition.
 

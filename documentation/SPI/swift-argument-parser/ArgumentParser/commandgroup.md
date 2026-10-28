@@ -20,12 +20,12 @@ struct CommandGroup
 ## Topics
 
 ### Initializers
-- [init(name: String, subcommands: [any ParsableCommand.Type])](./commandgroup/init%28name,subcommands%29.md)
+- [init(name: String, subcommands: [ParsableCommand.Type])](./commandgroup/init%28name,subcommands%29.md)
   Create a command group.
 ### Instance Properties
 - [let name: String](./commandgroup/name.md)
   The name of the command group that will be displayed in help.
-- [let subcommands: [any ParsableCommand.Type]](./commandgroup/subcommands.md)
+- [let subcommands: [ParsableCommand.Type]](./commandgroup/subcommands.md)
   The list of subcommands that are part of this group.
 
 ## Relationships

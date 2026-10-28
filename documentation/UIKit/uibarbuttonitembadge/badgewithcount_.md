@@ -17,7 +17,7 @@ Creates a badge with the specified `count`.
 + (instancetype) badgeWithCount:(NSUInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 The count is localized when shown, and will update when the app’s locale changes.
 

@@ -17,7 +17,7 @@ A button that sends an action when the user first clicks the button and continue
 static const NSButtonType NSAcceleratorButton;
 ```
 
-#### Discussion
+## Discussion
 
 On pressure-sensitive systems, such as systems with the Force Touch trackpad, an accelerator button sends repeating actions as pressure changes occur. It stops sending actions when the user releases pressure entirely. A media player app, for example, might implement an accelerator button in order to allow a user to adjust the speed of fast forward or rewind with variable pressure. In this case, the button sends actions to the app to indicate when the user changes pressure on the button. The app then determines the amount of pressure the user is currently applying and adjusts playback speed accordingly.
 

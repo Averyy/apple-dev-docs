@@ -25,7 +25,7 @@ func removeFileWrapper(_ child: FileWrapper)
 - (void) removeFileWrapper:(NSFileWrapper *) child;
 ```
 
-#### Discussion
+## Discussion
 
 This method raises `NSInternalInconsistencyException` if the receiver is not a directory file wrapper.
 

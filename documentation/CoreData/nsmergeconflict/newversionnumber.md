@@ -25,7 +25,7 @@ var newVersionNumber: Int { get }
 @property (readonly) NSUInteger newVersionNumber;
 ```
 
-#### Discussion
+## Discussion
 
 A new version number of 0 means the object was deleted and the corresponding snapshot is `nil`.
 

@@ -18,7 +18,7 @@ An error that indicates a failure finding an identifier.
 case invalidIdentifier
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates that the MDM admin hasn’t provisioned a secret with the given identifier for this instance of your app.
 

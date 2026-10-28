@@ -19,11 +19,11 @@ func canPerform(withItems items: [Any]?) -> Bool
 - (BOOL) canPerformWithItems:(NSArray *) items;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the service can share all the items; [`false`](../../Swift/false.md) otherwise. If `items` is `nil`, the method will return [`true`](../../Swift/true.md) when the service is configured.
 
-#### Discussion
+## Discussion
 
 This method can be used to validate a custom user interface such as a dedicated Twitter button.  Therefore you could call it once at launch time with `nil` items to check whether to display the button or not, and then with real items to enable and disable the button depending on the context or selection.
 

@@ -17,7 +17,7 @@ A protocol for an app extension that manages graphics rendering for your browser
 protocol RenderingExtension : RestrictedSandboxAppliable, AppExtension
 ```
 
-#### Overview
+## Overview
 
 When you add an object that conforms to this protocol in your extension’s Xcode target, annotate the conforming object with `@main` to indicate to the framework that this object is the entry point for your extension.
 

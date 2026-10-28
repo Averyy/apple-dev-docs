@@ -15,7 +15,7 @@ An array of strings that represent the Bluetooth company identifiers for accesso
 - **Name**: `NSAccessorySetupBluetoothCompanyIdentifiers` (AccessorySetupKit - Bluetooth Company Identifiers)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 Each identifier is a two-byte UUID that represents a company identifier as registered on the [Bluetooth SIG website](https://www.bluetooth.com/specifications/assigned-numbers/) and database.
 

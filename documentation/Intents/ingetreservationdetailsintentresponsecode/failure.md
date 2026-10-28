@@ -24,7 +24,7 @@ case failure
 INGetReservationDetailsIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this code for both transient and unrecoverable errors that would prevent your app from retrieving the reservation details.
 

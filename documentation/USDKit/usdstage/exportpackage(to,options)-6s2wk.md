@@ -20,7 +20,7 @@ Packages the stage into a USDZ archive.
 func exportPackage(to url: URL, options: USDStage.ExportOptions = []) throws
 ```
 
-#### Discussion
+## Discussion
 
 The stage and its referenced assets are bundled into a USDZ file. Layer structure is preserved — this operation does not flatten.
 

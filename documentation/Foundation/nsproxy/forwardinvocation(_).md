@@ -25,7 +25,7 @@ func forwardInvocation(_ invocation: NSInvocation)
 - (void) forwardInvocation:(NSInvocation *) invocation;
 ```
 
-#### Discussion
+## Discussion
 
 `NSProxy`’s implementation merely raises `NSInvalidArgumentException`. Override this method in your subclass to handle `invocation` appropriately, at the very least by setting its return value.
 

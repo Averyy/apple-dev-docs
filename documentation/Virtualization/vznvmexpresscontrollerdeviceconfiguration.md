@@ -19,7 +19,7 @@ class VZNVMExpressControllerDeviceConfiguration
 @interface VZNVMExpressControllerDeviceConfiguration : VZStorageDeviceConfiguration
 ```
 
-#### Overview
+## Overview
 
 This device configuration creates a storage device that conforms to the [NVM Express specification revision 1.1b](https://nvmexpress.org/wp-content/uploads/NVM-Express-1_1b-1.pdf).
 

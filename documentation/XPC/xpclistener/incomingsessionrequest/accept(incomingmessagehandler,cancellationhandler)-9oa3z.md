@@ -22,7 +22,7 @@ Accepts an incoming session request from a client using closures to handle recei
 func accept(incomingMessageHandler: @escaping @Sendable (XPCReceivedMessage) -> (any Encodable)?, cancellationHandler: (@Sendable (XPCRichError) -> Void)? = nil) -> XPCListener.IncomingSessionRequest.Decision
 ```
 
-#### Return Value
+## Return Value
 
 A decision that indicates whether the listener accepts or rejects the incoming session.
 

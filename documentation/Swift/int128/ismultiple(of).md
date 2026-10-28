@@ -21,9 +21,9 @@ Returns `true` if this value is a multiple of the given value, and `false` other
 func isMultiple(of other: Self) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
-For two integers *a* and *b*, *a* is a multiple of *b* if there exists a third integer *q* such that *a = q*b*. For example, *6* is a multiple of *3* because *6 = 2*3*. Zero is a multiple of everything because *0 = 0*x* for any integer *x*.
+For two integers *a* and *b*, *a* is a multiple of *b* if there exists a third integer *q* such that *a = q\*b*. For example, *6* is a multiple of *3* because *6 = 2\*3*. Zero is a multiple of everything because *0 = 0\*x* for any integer *x*.
 
 Two edge cases are worth particular attention:
 

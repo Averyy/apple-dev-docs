@@ -23,7 +23,7 @@ case byWordWrapping
 kCTLineBreakByWordWrapping
 ```
 
-#### Discussion
+## Discussion
 
 Wrapping occurs at word boundaries unless the word itself doesn’t fit on a single line.
 

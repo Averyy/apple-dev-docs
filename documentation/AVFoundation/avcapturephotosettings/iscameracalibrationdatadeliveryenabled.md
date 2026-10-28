@@ -22,7 +22,7 @@ var isCameraCalibrationDataDeliveryEnabled: Bool { get set }
 @property (nonatomic, getter=isCameraCalibrationDataDeliveryEnabled) BOOL cameraCalibrationDataDeliveryEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When this setting is [`false`](../../Swift/false.md) (the default), and the [`isDualCameraDualPhotoDeliveryEnabled`](./isdualcameradualphotodeliveryenabled.md) setting is [`true`](../../Swift/true.md), dual photo capture doesn’t deliver additional data.
 

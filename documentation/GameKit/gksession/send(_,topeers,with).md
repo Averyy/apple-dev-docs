@@ -26,7 +26,7 @@ func send(_ data: Data!, toPeers peers: [Any]!, with mode: GKSendDataMode) throw
 - (BOOL) sendData:(NSData *) data toPeers:(NSArray *) peers withDataMode:(GKSendDataMode) mode error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The session queues the data and transmits it in the order it was queued. Data transmitted unreliably may be received out of order by the other peers.
 

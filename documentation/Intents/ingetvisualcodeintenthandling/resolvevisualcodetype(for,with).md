@@ -29,7 +29,7 @@ optional func resolveVisualCodeType(for intent: INGetVisualCodeIntent) async -> 
 - (void) resolveVisualCodeTypeForGetVisualCode:(INGetVisualCodeIntent *) intent withCompletion:(void (^)(INVisualCodeTypeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to verify that your app supports providing a code of the specified type. If your app supports the requested code or supports only one type of code, return a resolution of success with the code type that you support. If your app doesn’t support the requested type of visual code, provide a resolution asking the user to confirm the code type that you do support.
 

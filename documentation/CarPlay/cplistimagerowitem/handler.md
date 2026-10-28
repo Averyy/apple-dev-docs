@@ -21,7 +21,7 @@ var handler: ((any CPSelectableListItem, @escaping () -> Void) -> Void)? { get s
 @property (nonatomic, copy, nullable) void (^)(id<CPSelectableListItem>, void (^)(void)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 In Swift, this property is a closure that has two parameters:
 

@@ -15,7 +15,7 @@ A sort directive in an audit query request, specifying a field to sort by and th
 object AuditSorting
 ```
 
-#### Discussion
+## Discussion
 
 Include one or more `AuditSorting` entries in the `sorting` array of an [`AuditQuery`](./auditquery.md) request to control the order of results. When you omit this array, the API returns results sorted by `eventTime` descending (most recent first).
 
@@ -27,7 +27,7 @@ Include one or more `AuditSorting` entries in the `sorting` array of an [`AuditQ
 
 The API applies multiple sort directives in order. The first directive is the primary sort. Subsequent entries break ties.
 
-##### Example
+### Example
 
 ```json
 {

@@ -9,7 +9,7 @@ Take control of the drawing environment and render your own content using Metal.
 **Availability**:
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Compositor Services lets you draw directly to the device’s displays using Metal and your own rendering engine. Use this framework to create a fully immersive scene in your app that doesn’t require integration with the person’s surroundings.
 

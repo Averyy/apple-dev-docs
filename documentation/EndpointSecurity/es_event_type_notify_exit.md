@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_EXIT: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_EXIT
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`exit`](./es_events_t/exit.md), which has the type [`es_event_exit_t`](./es_event_exit_t.md).
 

@@ -13,7 +13,7 @@
 var kPMSimplexTumble: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Print on only one side of the paper, but tumble the images while printing. This mode is not supported at this time.
 

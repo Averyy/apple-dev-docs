@@ -29,7 +29,7 @@ var interpolationMode: SKInterpolationMode { get set }
 
 - [Using Keyframe Sequence to effect Custom Interpolation](../using-keyframe-sequence-to-effect-custom-interpolation.md)
 
-#### Discussion
+## Discussion
 
 The possible values are defined in [`SKInterpolationMode`](../skinterpolationmode.md). The default value is [`SKInterpolationMode.linear`](../skinterpolationmode/linear.md).
 

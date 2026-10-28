@@ -23,7 +23,7 @@ The content and behavior of the scene’s interface.
 @preconcurrency var body: Self.Body { get }
 ```
 
-#### Discussion
+## Discussion
 
 For the body of your scene, specify a [`PrimitiveAppExtensionScene`](../primitiveappextensionscene.md) structure with the contents you want to display. You can also use that structure to configure an XPC connection for handling any interface-related data exchanges.
 

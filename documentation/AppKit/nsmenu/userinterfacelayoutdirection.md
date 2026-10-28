@@ -19,7 +19,7 @@ var userInterfaceLayoutDirection: NSUserInterfaceLayoutDirection { get set }
 @property NSUserInterfaceLayoutDirection userInterfaceLayoutDirection;
 ```
 
-#### Discussion
+## Discussion
 
 This property configures the layout direction (a value of type [`NSUserInterfaceLayoutDirection`](../nsuserinterfacelayoutdirection.md)) of menu items in the menu. If no layout direction is explicitly set for a menu, then the menu defaults to the layout direction specified for the application object. See [`userInterfaceLayoutDirection`](../nsapplication/userinterfacelayoutdirection.md) in [`NSApplication`](../nsapplication.md).
 

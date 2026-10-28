@@ -19,11 +19,11 @@ func vintf(_: vFloat) -> vFloat
 extern vFloat vintf(vFloat );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a vector of floating-point values, each of which is the result of truncating the fractional portion of the corresponding value in `A`.
 
-##### Parameters
+### Parameters
 
 - **A**: The source vector
 

@@ -25,7 +25,7 @@ var isBroadcasted: Bool { get }
 @property (readonly) BOOL isBroadcasted;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this deprecated property.
 

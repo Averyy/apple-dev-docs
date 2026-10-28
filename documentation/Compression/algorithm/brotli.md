@@ -21,7 +21,7 @@ The Brotli compression algorithm, which is recommended for text compression.
 case brotli
 ```
 
-#### Discussion
+## Discussion
 
 The Brotli compression algorithm is a widely adopted content encoding method for the web. The Compression framework includes Brotli to provide decoding capabilities.
 

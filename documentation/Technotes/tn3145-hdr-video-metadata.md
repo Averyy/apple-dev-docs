@@ -5,7 +5,7 @@
 
 Learn about the usage and requirements of “Ambient Viewing Environment” metadata with HLG and / or Dolby Vision™ Profile 8.4 playback.
 
-#### Overview
+## Overview
 
 Starting with iPhone 12, apps can capture, play back, edit and export HDR Video with Dolby Vision.
 
@@ -35,11 +35,11 @@ class AmbientViewingEnvironmentBox extends Box('amve') {
 
 Semantics for `ambient_illuminance`, `ambient_light_x` and `ambient_light_y` values are in the HVEC (ITU-T H.265 | ISO/IEC 23008-2) document.
 
-#### Dolby Vision Profile 8.4
+## Dolby Vision Profile 8.4
 
 iOS 14 and macOS 11 introduced support for Dolby Vision Profile 8.4. Refer to Dolby Vision Streams within the ISOBMFF for the syntax and semantics of the metadata stored within the Dolby Decoder Configuration Record (`'dvvC'`).
 
-##### Constraints on Sample Description / Sample Entry
+### Constraints on Sample Description / Sample Entry
 
 - The codec type shall be `'hvc1'`.
 - HEVC shall be encoded at Main10 Profile.
@@ -55,7 +55,7 @@ iOS 14 and macOS 11 introduced support for Dolby Vision Profile 8.4. Refer to Do
 
 ![Movie atom with ambient viewing environment atom.](https://developer.apple.com/tutorials/images/com.apple.technotes/tn3145_HDR_video_metadata@2x.png)
 
-#### Capture
+## Capture
 
 Starting with iPhone 12, camera-captured content in Dolby Vision Profile 8.4 and / or HLG format contains the ‘amve’ format description extension in the file (kCMFormatDescriptionExtension_AmbientViewingEnvironment). This is based on ISO/IEC 23008- 2:2017, D.2.39 ambient viewing environment SEI message.
 
@@ -64,7 +64,7 @@ Starting with iPhone 12, camera-captured content in Dolby Vision Profile 8.4 and
 let ambientViewingEnvironment = sampleBuffer.formatDescription?.extensions[.ambentViewingEnvironment]
 ```
 
-#### Playing Back HDR Video
+## Playing Back HDR Video
 
 Playback using AVPlayer will provide optimal tone mapping on any Apple device. If your application uses `AVSampleBufferDisplayLayer` or `VTDecompressionSession`, you should take extra steps to ensure the `ambientViewingEnvironment` is attached to the `CMSampleBuffer` or `CVPixelBuffer` that are then provided to `enqueueSampleBuffer`.
 
@@ -72,15 +72,15 @@ During playback using `AVSampleBufferDisplayLayer`, the `FormatDescription` atta
 
 HDR-rendering applications may check the parameters in the values in the ambient Viewing Environment atoms (`'amve'`) and pick the correct ambient adaptation strategy for their usage cases.
 
-#### Exporting HDR Video
+## Exporting HDR Video
 
 It is important to preserve the ambient viewing environment metadata during transcoding, as removing this information will result in the video not being displayed correctly on Apple devices due to extra bright imagery. Apple APIs will by default preserve the ambient viewing environment metadata when exporting HDR Video in Dolby Vision Profile 8.4. If you create a new pixel buffer, you need to make sure to take the ambient viewing environment extension from the source and attach it to the new pixel buffer.
 
-#### Incorporating HDR Video in your apps.
+## Incorporating HDR Video in your apps.
 
 Refer to [Incorporating HDR video with Dolby Vision into your apps](https://developer.apple.com/av-foundation/Incorporating-HDR-video-with-Dolby-Vision-into-your-apps.pdf) for additional information on how to safely preview, edit, and export HDR content, as well as how to convert it to SDR.
 
-#### Revision History
+## Revision History
 
 - **2023-12-12** Clarified support for HLG capture formats. Made other minor editorial changes.
 - **2023-03-07** First published.

@@ -20,7 +20,7 @@ The currently active solvers.
 var solvers: IKComponent.SolverCollection
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: One engine update is needed for an update of the resource to be reflected in this collection.
 

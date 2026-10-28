@@ -13,7 +13,7 @@
 IFNET_CSUM_IP = 0x00000001
 ```
 
-#### Discussion
+## Discussion
 
 Hardware will calculate IPv4 checksums.
 

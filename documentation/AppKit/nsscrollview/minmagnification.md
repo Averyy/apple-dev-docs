@@ -19,7 +19,7 @@ var minMagnification: CGFloat { get set }
 @property CGFloat minMagnification;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.25`.
 

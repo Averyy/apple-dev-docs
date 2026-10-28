@@ -19,7 +19,7 @@ case selectAny
 NSMenuSelectionModeSelectAny
 ```
 
-#### Discussion
+## Discussion
 
 A change in selection doesn’t automatically deselect any previously selected item in the same selection group.
 

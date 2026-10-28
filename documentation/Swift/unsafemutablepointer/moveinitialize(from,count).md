@@ -21,7 +21,7 @@ Moves instances from initialized source memory into the uninitialized memory ref
 func moveInitialize(from source: UnsafeMutablePointer<Pointee>, count: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The region of memory starting at this pointer and covering `count` instances of the pointer’s `Pointee` type must be uninitialized or `Pointee` must be a trivial type. After calling `moveInitialize(from:count:)`, the region is initialized and the memory region `source..<(source + count)` is uninitialized.
 

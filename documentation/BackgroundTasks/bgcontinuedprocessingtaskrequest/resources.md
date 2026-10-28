@@ -21,7 +21,7 @@ struct Resources
 enum BGContinuedProcessingTaskRequestResources : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The following properties are of this type:
 

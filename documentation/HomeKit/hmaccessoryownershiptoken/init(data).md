@@ -22,7 +22,7 @@ init?(data: Data)
 - (instancetype) initWithData:(NSData *) data;
 ```
 
-#### Discussion
+## Discussion
 
 Obtain token data by negotiating with an accessory outside of HomeKit. You typically obtain token data for an accessory that you manufacture.
 

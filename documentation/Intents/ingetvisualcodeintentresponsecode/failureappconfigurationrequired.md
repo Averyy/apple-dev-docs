@@ -25,7 +25,7 @@ case failureAppConfigurationRequired
 INGetVisualCodeIntentResponseCodeFailureAppConfigurationRequired
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when you require additional configuration of your app before displaying visual codes. For example, you might use this code when the user must establish an account in your app to handle payments, or when the user has an account for making payments but the balance is currently 0.
 

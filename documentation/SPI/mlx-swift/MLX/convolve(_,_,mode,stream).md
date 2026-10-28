@@ -21,7 +21,7 @@ func convolve(_ a: some ScalarOrArray, _ b: some ScalarOrArray, mode: ConvolveMo
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Convolution](./convolution.md)
 - [`conv1d(_:_:stride:padding:dilation:groups:stream:)`](./conv1d%28_,_,stride,padding,dilation,groups,stream%29.md)

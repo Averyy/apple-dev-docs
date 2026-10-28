@@ -25,7 +25,7 @@ func CGImageMetadataTagCopyName(_ tag: CGImageMetadataTag) -> CFString?
 extern CFStringRefCGImageMetadataTagCopyName(CGImageMetadataTagRef tag);
 ```
 
-#### Return Value
+## Return Value
 
 A string that contains the tag’s name. You are responsible for releasing this string.
 

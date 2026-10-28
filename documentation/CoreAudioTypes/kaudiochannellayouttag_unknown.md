@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_Unknown: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_Unknown
 ```
 
-#### Discussion
+## Discussion
 
 This tag needs to be `OR`ed with the actual number of channels.
 

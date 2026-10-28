@@ -17,7 +17,7 @@ An array of all the captured rooms in the structure.
 var rooms: [CapturedRoom] { get }
 ```
 
-#### Discussion
+## Discussion
 
 A captured structure contains all the captured rooms that a user scans in the same physical vicinity, and then merges into a single captured instance with the [`capturedStructure(from:)`](../structurebuilder/capturedstructure%28from%29.md) function.
 

@@ -19,7 +19,7 @@ func updateWindows()
 - (void) updateWindows;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically in the main event loop after each event when running in `NSDefaultRunLoopMode` or `NSModalRunLoopMode`. This method is not invoked automatically when running in `NSEventTrackingRunLoopMode`.
 

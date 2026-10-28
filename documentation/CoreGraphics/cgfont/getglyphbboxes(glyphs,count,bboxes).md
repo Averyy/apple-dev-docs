@@ -25,7 +25,7 @@ func getGlyphBBoxes(glyphs: UnsafePointer<CGGlyph>, count: Int, bboxes: UnsafeMu
 extern bool CGFontGetGlyphBBoxes(CGFontRef font, const CGGlyph *glyphs, size_t count, CGRect *bboxes);
 ```
 
-#### Return Value
+## Return Value
 
 `false` if bounding boxes can’t be retrieved for any reason; `true`  otherwise.
 

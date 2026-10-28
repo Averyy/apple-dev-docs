@@ -19,11 +19,11 @@ Consume this value to access the underlying NDArray once any pending write is co
 var ndArray: NDArray? { get async throws }
 ```
 
-#### Return Value
+## Return Value
 
 The underlying ndArray or `nil` if this was not an ndArray value.
 
-#### Discussion
+## Discussion
 
 > **Note**: If this value was constructed from a metal buffer directly, then the returned NDArray will be a copy of it. If aliasing is intended, you can work with the original metal buffer directly.
 

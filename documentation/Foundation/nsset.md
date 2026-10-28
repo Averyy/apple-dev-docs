@@ -29,7 +29,7 @@ class NSSet
 
 - [Implementing Handoff in Your App](./implementing-handoff-in-your-app.md)
 
-#### Overview
+## Overview
 
 The [`NSSet`](./nsset.md), [`NSMutableSet`](./nsmutableset.md), and [`NSCountedSet`](./nscountedset.md) classes declare the programmatic interface to an unordered collection of objects.
 
@@ -41,11 +41,11 @@ Use sets as an alternative to arrays when the order of elements isn’t importan
 
 In Swift, use this class instead of a [`Set`](../Swift/set.md) constant in cases where you require reference semantics.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 There should be little need of subclassing. If you need to customize behavior, it’s often better to consider composition instead of subclassing.
 
-###### Methods to Override
+#### Methods to Override
 
 In a subclass, you must override all of its primitive methods:
 
@@ -53,7 +53,7 @@ In a subclass, you must override all of its primitive methods:
 - [`member(_:)`](./nsset/member%28_%29.md)
 - [`objectEnumerator()`](./nsset/objectenumerator%28%29.md)
 
-###### Alternatives to Subclassing
+#### Alternatives to Subclassing
 
 Before making a custom class of [`NSSet`](./nsset.md), investigate [`NSHashTable`](./nshashtable.md) and the corresponding Core Foundation type, [`CFSet`](../CoreFoundation/cfset.md). Because [`NSSet`](./nsset.md) and [`CFSet`](../CoreFoundation/cfset.md) are “toll-free bridged,” you can substitute a [`CFSet`](../CoreFoundation/cfset.md) object for a [`NSSet`](./nsset.md) object in your code (with appropriate casting). Although they’re corresponding types, [`CFSet`](../CoreFoundation/cfset.md) and [`NSSet`](./nsset.md) don’t have identical interfaces or implementations, and you can sometimes do things with [`CFSet`](../CoreFoundation/cfset.md) that you can’t easily do with [`NSSet`](./nsset.md).
 

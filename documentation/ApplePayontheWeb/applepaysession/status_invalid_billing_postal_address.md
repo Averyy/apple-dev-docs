@@ -15,7 +15,7 @@ The billing address is invalid.
 const unsigned short STATUS_INVALID_BILLING_POSTAL_ADDRESS;
 ```
 
-#### Discussion
+## Discussion
 
 Use this status code only for Apple Pay API version 1 or 2  calls. For version 3, use an [`ApplePayError`](../applepayerror.md) with a status of [`STATUS_FAILURE`](./status_failure.md)  and error code instead.
 

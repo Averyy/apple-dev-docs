@@ -25,11 +25,11 @@ func CMMuxedFormatDescriptionCreate(allocator: CFAllocator?, muxType: CMMuxedStr
 extern OSStatus CMMuxedFormatDescriptionCreate(CFAllocatorRef allocator, CMMuxedStreamType muxType, CFDictionaryRef extensions, CMMuxedFormatDescriptionRef*formatDescriptionOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Returns `noErr` if successful.
 
-#### Discussion
+## Discussion
 
 A muxed format description does not know the formats of the sub-streams within the muxed stream. That information will only be discoverable by the demuxer software (or other software which understands the details of the muxed bitstream) which will need to produce separate format descriptions for each of its output streams. The caller owns the returned `CMFormatDescription`, and must release it when done with it. All input parameters are copied (the extensions are deep-copied).  The caller can deallocate them or re-use them after making this call.
 

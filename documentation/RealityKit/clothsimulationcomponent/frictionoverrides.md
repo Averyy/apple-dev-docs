@@ -17,7 +17,7 @@ A map to manually override friction values between pairs of materials.
 var frictionOverrides: ClothSimulationComponent.FrictionOverridesCollection
 ```
 
-#### Discussion
+## Discussion
 
 Each material has its own friction properties. When two materials come into contact and no override exists for that pair, the effective friction is the product of the two materials’ friction values. When an override is present, it replaces that combined value entirely for both static and kinetic friction. This way, it is possible to customize exactly what friction values should be used between a given pair of materials.
 

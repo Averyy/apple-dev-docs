@@ -23,7 +23,7 @@ var kDNSServiceType_KX: Int { get }
 kDNSServiceType_KX
 ```
 
-#### Discussion
+## Discussion
 
 Key Exchange
 

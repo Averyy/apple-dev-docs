@@ -21,7 +21,7 @@ Creates an XPC object that represents a C-string that the specified format strin
 extern xpc_object_txpc_string_create_with_format(const char *fmt, ...);
 ```
 
-#### Return Value
+## Return Value
 
 A new string object.
 

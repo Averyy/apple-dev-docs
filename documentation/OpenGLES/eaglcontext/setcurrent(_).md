@@ -24,11 +24,11 @@ class func setCurrent(_ context: EAGLContext?) -> Bool
 + (BOOL) setCurrentContext:(EAGLContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md). If an error occurred, the rendering context for the current thread remains unchanged.
 
-#### Discussion
+## Discussion
 
 A context encapsulates all OpenGL ES state for a single thread in your app. When you call any OpenGL ES API function, OpenGL ES evaluates it with respect to the calling thread’s current context. Because OpenGL ES functions require a current context, you must use this method to select a context for the current thread before calling any OpenGL ES function. Unless otherwise specified, OpenGL ES commands calls made in the same context complete in the order they are called.
 

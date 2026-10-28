@@ -17,11 +17,11 @@ Ordinary inner product of vectors for 1-D arrays, in higher dimensions a sum pro
 func inner(_ a: MLXArray, _ b: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Inner product
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 

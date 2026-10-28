@@ -21,7 +21,7 @@ A type that represents a WebP image.
 extern UTType * const UTTypeWebP;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `org.webmproject.webp`.
 

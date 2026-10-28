@@ -22,7 +22,7 @@ optional func dragInteraction(_ interaction: UIDragInteraction, session: any UID
 - (void) dragInteraction:(UIDragInteraction *) interaction session:(id<UIDragSession>) session didEndWithOperation:(UIDropOperation) operation;
 ```
 
-#### Discussion
+## Discussion
 
 Since the session has ended, your app should return to its normal appearance.
 

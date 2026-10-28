@@ -25,7 +25,7 @@ var filterBrowsers: Bool { get set }
 @property BOOL filterBrowsers;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md).
 

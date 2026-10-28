@@ -16,7 +16,7 @@ Checks if the vector command is currently executing.
 Boolean (*IsExecuting)(IOFireWireLibVectorCommandRef self);
 ```
 
-#### Return Value
+## Return Value
 
 True if the command is executing, false otherwise
 

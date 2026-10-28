@@ -19,7 +19,7 @@ class let didUpdateTrackingAreasNotification: NSNotification.Name
 extern NSNotificationName NSViewDidUpdateTrackingAreasNotification;
 ```
 
-#### Discussion
+## Discussion
 
 It is sent after the view receives [`updateTrackingAreas()`](./updatetrackingareas%28%29.md).
 

@@ -21,7 +21,7 @@ A Boolean value that indicates whether the track’s container enables it.
 var isEnabled: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 For file-based media, you can change its [`isEnabled`](../avplayeritemtrack/isenabled.md) presentation state using [`AVPlayerItemTrack`](../avplayeritemtrack.md).
 

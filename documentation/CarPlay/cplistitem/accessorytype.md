@@ -21,7 +21,7 @@ var accessoryType: CPListItemAccessoryType { get set }
 @property (nonatomic, assign) CPListItemAccessoryType accessoryType;
 ```
 
-#### Discussion
+## Discussion
 
 If you update the list item to display an accessory image using the [`setAccessoryImage(_:)`](./setaccessoryimage%28_%29.md) method, CarPlay sets this property’s value to [`CPListItemAccessoryType.none`](../cplistitemaccessorytype/none.md).
 

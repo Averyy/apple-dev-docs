@@ -22,7 +22,7 @@ weak var activeVideoCallSourceView: UIView? { get }
 @property (nonatomic, weak, readonly) UIView * activeVideoCallSourceView;
 ```
 
-#### Discussion
+## Discussion
 
 The controller uses this view’s layout frame and visibility to determine whether or not Picture in Picture begins automatically when the app moves to the background. The view’s layout frame also influences the animation when entering and exiting Picture in Picture.
 

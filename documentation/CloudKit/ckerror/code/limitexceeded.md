@@ -25,7 +25,7 @@ case limitExceeded
 CKErrorLimitExceeded
 ```
 
-#### Discussion
+## Discussion
 
 The server can change its limits at any time, but the following are general guidelines:
 

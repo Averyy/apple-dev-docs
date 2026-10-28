@@ -29,11 +29,11 @@ nonisolated
 func offset(_ offset: CGSize) -> OffsetShape<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A shape offset by the specified amount.
 
-#### Discussion
+## Discussion
 
 The following example renders two circles. It places one circle at its default position. The second circle is outlined with a stroke, positioned on top of the first circle and offset by 100 points to the left and 50 points below.
 

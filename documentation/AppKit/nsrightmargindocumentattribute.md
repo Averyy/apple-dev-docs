@@ -15,7 +15,7 @@ The right margin of the document.
 extern NSAttributedStringDocumentAttributeKey NSRightMarginDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../Foundation/nsnumber.md) object containing a float, in points.
 

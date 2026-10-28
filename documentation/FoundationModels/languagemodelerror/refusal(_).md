@@ -24,7 +24,7 @@ case refusal(LanguageModelError.Refusal)
 
 - [Improving the safety of generative model output](../improving-the-safety-of-generative-model-output.md)
 
-#### Discussion
+## Discussion
 
 This failure can happen for prompts that do not violate any guardrail policy, but the model isn’t able to provide the kind of response you requested. You can choose to handle this by showing a predetermined message of your choice.
 

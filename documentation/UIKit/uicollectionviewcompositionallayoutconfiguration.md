@@ -24,7 +24,7 @@ class UICollectionViewCompositionalLayoutConfiguration
 @interface UICollectionViewCompositionalLayoutConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use a layout configuration to modify a collection view layout’s default scroll direction, add extra spacing between each section of the layout, and add headers or footers to the entire layout.
 

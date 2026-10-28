@@ -25,7 +25,7 @@ func date(era eraValue: Int, year yearValue: Int, month monthValue: Int, day day
 - (NSDate *) dateWithEra:(NSInteger) eraValue year:(NSInteger) yearValue month:(NSInteger) monthValue day:(NSInteger) dayValue hour:(NSInteger) hourValue minute:(NSInteger) minuteValue second:(NSInteger) secondValue nanosecond:(NSInteger) nanosecondValue;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDate` instance created with the given components, or `nil` if the components do not correspond to a valid date.
 

@@ -23,7 +23,7 @@ func reopenDocument(for urlOrNil: URL?, withContentsOf contentsURL: URL, display
 - (void) reopenDocumentForURL:(NSURL *) urlOrNil withContentsOfURL:(NSURL *) contentsURL display:(BOOL) displayDocument completionHandler:(void (^)(NSDocument *document, BOOL documentWasAlreadyOpen, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method is very similar to [`openDocument(withContentsOf:display:completionHandler:)`](./opendocument%28withcontentsof,display,completionhandler%29.md), the primary difference being that it calls [`makeDocument(for:withContentsOf:ofType:)`](./makedocument%28for,withcontentsof,oftype%29.md) instead of [`makeDocument(withContentsOf:ofType:)`](./makedocument%28withcontentsof,oftype%29.md).
 

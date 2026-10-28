@@ -23,7 +23,7 @@ func setPreferredOutputNumberOfChannels(_ count: Int) throws
 - (BOOL) setPreferredOutputNumberOfChannels:(NSInteger) count error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 This method requests a change to the number of output channels. To determine whether the change has taken effect, use the [`outputNumberOfChannels`](./outputnumberofchannels.md) property. For details, see Configuring standard audio behaviors. Requesting output channels less than one or greater than that returned by the [`maximumOutputNumberOfChannels`](./maximumoutputnumberofchannels.md) results in an error. Only certain devices and peripherals support this feature.
 

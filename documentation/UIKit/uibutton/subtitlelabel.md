@@ -23,7 +23,7 @@ var subtitleLabel: UILabel? { get }
 @property (nonatomic, strong, readonly, nullable) UILabel * subtitleLabel;
 ```
 
-#### Discussion
+## Discussion
 
 If [`configuration`](./configuration-5rlyb.md) is `nil`, this property is `nil`.
 

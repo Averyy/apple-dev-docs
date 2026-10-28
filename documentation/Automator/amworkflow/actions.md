@@ -20,7 +20,7 @@ var actions: [AMAction] { get }
 @property (nonatomic, strong, readonly) NSArray<__kindof AMAction *> * actions;
 ```
 
-#### Return Value
+## Return Value
 
 An array of actions for the workflow file. Actions are instances of classes such as [`AMBundleAction`](../ambundleaction.md), [`AMAppleScriptAction`](../amapplescriptaction.md), and [`AMShellScriptAction`](../amshellscriptaction.md).
 

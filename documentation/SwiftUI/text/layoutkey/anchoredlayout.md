@@ -21,7 +21,7 @@ The layout of one text view, together with an anchor for the position of that vi
 struct AnchoredLayout
 ```
 
-#### Overview
+## Overview
 
 [`Text.LayoutKey`](../layoutkey.md) collects one of these values for every text view in the subtree you query. Read [`layout`](./anchoredlayout/layout.md) to inspect the lines, runs, and glyphs the text produced, and resolve [`origin`](./anchoredlayout/origin.md) in a [`GeometryProxy`](../../geometryproxy.md) to place something of your own next to the text:
 

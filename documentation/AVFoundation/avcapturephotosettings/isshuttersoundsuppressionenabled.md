@@ -23,7 +23,7 @@ var isShutterSoundSuppressionEnabled: Bool { get set }
 @property (nonatomic, getter=isShutterSoundSuppressionEnabled) BOOL shutterSoundSuppressionEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). Set the value to [`true`](../../Swift/true.md) to suppress the photo output’s built-in shutter sound for this request. The photo output throws an invalid argument exception when calling [`capturePhoto(with:delegate:)`](../avcapturephotooutput/capturephoto%28with,delegate%29.md) if its [`isShutterSoundSuppressionSupported`](../avcapturephotooutput/isshuttersoundsuppressionsupported.md) property returns [`false`](../../Swift/false.md).
 

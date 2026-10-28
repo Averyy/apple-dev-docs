@@ -24,11 +24,11 @@ convenience init(name: String, semantic: MDLMaterialSemantic, float4 value: vect
 - (instancetype) initWithName:(NSString *) name semantic:(MDLMaterialSemantic) semantic float4:(vector_float4) value;
 ```
 
-#### Return Value
+## Return Value
 
 A new material property object whose [`type`](./type.md) property is [`MDLMaterialPropertyType.float4`](../mdlmaterialpropertytype/float4.md).
 
-#### Discussion
+## Discussion
 
 A 4-component vector can also be used to store RGBA color values. In this case, color components should be interpreted using the Rec. 709 color space standard.
 

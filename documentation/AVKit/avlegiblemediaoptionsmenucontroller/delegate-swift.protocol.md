@@ -21,7 +21,7 @@ protocol Delegate : NSObjectProtocol
 @protocol AVLegibleMediaOptionsMenuControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Delegate protocol for AVLegibleMediaOptionsMenuController
 

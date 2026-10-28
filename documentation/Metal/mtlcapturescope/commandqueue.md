@@ -25,7 +25,7 @@ var commandQueue: (any MTLCommandQueue)? { get }
 @property (nonatomic, readonly, nullable) id<MTLCommandQueue> commandQueue;
 ```
 
-#### Discussion
+## Discussion
 
 This value is only available if you created the capture scope by calling the [`makeCaptureScope(commandQueue:)`](../mtlcapturemanager/makecapturescope%28commandqueue%29-1rozd.md) method. Otherwise, the value is `nil`.
 

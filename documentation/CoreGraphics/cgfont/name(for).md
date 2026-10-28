@@ -25,7 +25,7 @@ func name(for glyph: CGGlyph) -> CFString?
 extern CFStringRefCGFontCopyGlyphNameForGlyph(CGFontRef font, CGGlyph glyph);
 ```
 
-#### Return Value
+## Return Value
 
 The name of the specified glyph, or `nil` if the glyph isn’t associated with the font object.
 

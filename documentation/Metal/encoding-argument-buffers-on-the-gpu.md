@@ -13,13 +13,13 @@ Use a compute pass to encode an argument buffer and access its arguments in a su
 - macOS 14.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 In [Using argument buffers with resource heaps](./using-argument-buffers-with-resource-heaps.md), you learned how to combine argument buffers with arrays of resources and resource heaps.
 
 In this sample, you’ll learn how to encode resources into argument buffers with a graphics or compute function. In particular, you’ll learn how to write data into an argument buffer from a compute pass and then read that data in a render pass. The sample renders a grid of multiple quad instances with two textures applied to each, where the textures slide from left to right within the quad and move from left to right between quads.
 
-##### Getting started
+### Getting started
 
 The sample can run only on devices that support Tier 2 argument buffers. Tier 2 devices allow graphics or compute functions to encode data into an argument buffer, whereas Tier 1 devices only allow these functions to read data from an argument buffer. Additionally, Tier 2 devices can access more textures in an instanced draw call than Tier 1 devices. See [Improving CPU performance by using argument buffers](./improving-cpu-performance-by-using-argument-buffers.md) for more information about argument buffer tiers, limits, and capabilities.
 
@@ -32,7 +32,7 @@ if(_view.device.argumentBuffersSupport != MTLArgumentBuffersTier2)
 }
 ```
 
-##### Encode data into argument buffers
+### Encode data into argument buffers
 
 During initialization, the sample encodes data with the CPU into an argument buffer defined by the `SourceTextureArguments` structure.
 
@@ -60,7 +60,7 @@ This argument buffer is backed by the `_instanceParameters` buffer and is access
 
 ![Layout diagram that shows an array of structures as an argument buffer.](https://developer.apple.com/tutorials/images/com.apple.metal/argument-buffers-gpu-encoding-2-ArgumentBuffer.png)
 
-##### Create an array of argument buffer structures
+### Create an array of argument buffer structures
 
 The sample defines an `InstanceArguments` structure into which a compute function, `updateInstances`, encodes a vector and two textures.
 
@@ -82,7 +82,7 @@ _instanceParameters = [_device newBufferWithLength:instanceParameterLength optio
 
 > **Note**: The `[[id(n)]]` attribute qualifier isn’t necessary to define the `InstanceArguments` structure in this sample. This qualifier is needed only when arguments are encoded with the CPU via the Metal API, and not when arguments are encoded with the GPU via a graphics or compute function.
 
-##### Encode an argument buffer with a compute function
+### Encode an argument buffer with a compute function
 
 For each quad to be rendered, the sample executes the `updateInstances` compute function to determine the quad’s position and textures. The compute pass executed by the sample iterates through the `instance_params` array and encodes the correct data for each quad. The sample encodes data into `instance_params` by setting `InstanceArguments` values in the array element at the `instanceID` index value.
 
@@ -98,7 +98,7 @@ quad_params.left_texture = source_textures[left_texture_index].texture;
 quad_params.right_texture = source_textures[right_texture_index].texture;
 ```
 
-##### Render instances with an argument buffer
+### Render instances with an argument buffer
 
 The sample issues an instanced draw call to render all the quads while incurring a minimal amount of CPU overhead. Combining this technique with an argument buffer allows the sample to use a unique set of resources for each quad within the same draw call, where each instance draws a single quad.
 
@@ -151,7 +151,7 @@ else
 
 The fragment function outputs the selected sample. The left texture slides in from the left and the right texture slides out to the right. After the right texture has completely slid off the quad, the sample assigns this texture as the left texture in the next compute pass. Thus, each texture moves from left to right across the grid of quads.
 
-##### Next steps
+### Next steps
 
 In this sample, you learned how to encode resources into argument buffers with a graphics or compute function. In [Rendering terrain dynamically with argument buffers](./rendering-terrain-dynamically-with-argument-buffers.md), you’ll learn how to combine several argument buffer techniques to render a dynamic terrain in real time.
 

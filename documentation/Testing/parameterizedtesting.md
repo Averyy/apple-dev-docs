@@ -5,13 +5,13 @@
 
 Specify different input parameters to generate multiple test cases from a test function.
 
-#### Overview
+## Overview
 
 Some tests need to be run over many different inputs. For instance, a test might need to validate all cases of an enumeration. The testing library lets developers specify one or more collections to iterate over during testing, with the elements of those collections being forwarded to a test function. An invocation of a test function with a particular set of argument values is called a test *case*.
 
 By default, the test cases of a test function run in parallel with each other. For more information about test parallelization, see [Running tests serially or in parallel](./parallelization.md).
 
-##### Parameterize over an array of values
+### Parameterize over an array of values
 
 It is very common to want to run a test *n* times over an array containing the values that should be tested. Consider the following test function:
 
@@ -45,7 +45,7 @@ func foodAvailable(_ food: Food) async throws {
 
 When passing a collection to the `@Test` attribute for parameterization, the testing library passes each element in the collection, one at a time, to the test function as its first (and only) argument. Then, if the test fails for one or more inputs, the corresponding diagnostics can clearly indicate which inputs to examine.
 
-##### Parameterize over the cases of an enumeration
+### Parameterize over the cases of an enumeration
 
 The previous example includes a hard-coded list of `Food` cases to test. If `Food` is an enumeration that conforms to `CaseIterable`, you can instead write:
 
@@ -63,7 +63,7 @@ func foodAvailable(_ food: Food) async throws {
 
 This way, if a new case is added to the `Food` enumeration, it’s automatically tested by this function.
 
-##### Parameterize over a range of integers
+### Parameterize over a range of integers
 
 It is possible to parameterize a test function over a closed range of integers:
 
@@ -77,7 +77,7 @@ func makeLargeOrder(count: Int) async throws {
 
 > **Note**: Very large ranges such as `0 ..< .max` may take an excessive amount of time to test, or may never complete due to resource constraints.
 
-##### Pass the same arguments to multiple test functions
+### Pass the same arguments to multiple test functions
 
 If you want to pass the same collection of arguments to two or more parameterized test functions, you can extract the arguments to a separate function or property and pass it to each `@Test` attribute. For example:
 
@@ -104,7 +104,7 @@ func `Package leftovers`(food: Food) throws {
 
 > 💡 **Tip**: You can prefix expressions passed to `arguments:` with `try` or `await`. The testing library evaluates them lazily only if it determines that the associated test will run.
 
-##### Test with more than one collection
+### Test with more than one collection
 
 It’s possible to test more than one collection. Consider the following test function:
 
@@ -134,7 +134,7 @@ The zipped sequence will be “destructured” into two arguments automatically,
 
 This revised test function is invoked once for each tuple in the zipped sequence, for a total of five invocations instead of 500 invocations. In other words, this test function is passed the inputs `(.burger, 1)`, `(.iceCream, 2)`, …, `(.kebab, 5)` instead of `(.burger, 1)`, `(.burger, 2)`, `(.burger, 3)`, …, `(.kebab, 99)`, `(.kebab, 100)`.
 
-##### Run selected test cases
+### Run selected test cases
 
 If a parameterized test meets certain requirements, the testing library allows people to run specific test cases it contains. This can be useful when a test has many cases but only some are failing since it enables re-running and debugging the failing cases in isolation.
 

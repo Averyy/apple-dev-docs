@@ -20,11 +20,11 @@ Returns the elements that changed since the previous input state.
 func changedElements() -> NSEnumerator?
 ```
 
-#### Return Value
+## Return Value
 
 An enumerator that contains the changed elements in no particular order.
 
-#### Discussion
+## Discussion
 
 Returns `nil` if there’s no previous input state, either because this is the first input state or Game Controller discards the prior input state because the queue is full.
 

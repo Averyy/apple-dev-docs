@@ -15,7 +15,7 @@ The pointer style appropriate to indicate that the content can be zoomed in.
 static let zoomIn: PointerStyle
 ```
 
-#### Discussion
+## Discussion
 
 This pointer style displays a magnifying glass with a plus symbol. You may apply this pointer style to a single view or a view hierarchy using the [`pointerStyle(_:)`](../view/pointerstyle%28_%29.md) modifier.
 

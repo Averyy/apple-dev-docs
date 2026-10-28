@@ -23,7 +23,7 @@ case direct
 UITouchTypeDirect
 ```
 
-#### Discussion
+## Discussion
 
 Direct touches occur when the user’s finger touches the screen.
 

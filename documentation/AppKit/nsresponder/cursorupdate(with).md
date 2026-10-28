@@ -19,7 +19,7 @@ func cursorUpdate(with event: NSEvent)
 - (void) cursorUpdate:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method to set the cursor image. The default implementation uses cursor rectangles, if cursor rectangles are currently valid.  If they are not, it calls `super` to send the message up the responder chain.
 

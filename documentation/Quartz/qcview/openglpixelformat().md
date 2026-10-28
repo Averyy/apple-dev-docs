@@ -21,11 +21,11 @@ func openGLPixelFormat() -> NSOpenGLPixelFormat!
 - (NSOpenGLPixelFormat *) openGLPixelFormat;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSOpenGLPixelFormat` object.
 
-#### Discussion
+## Discussion
 
 This pixel format as a read-only object. Do not attempt to change any of its settings.
 

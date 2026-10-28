@@ -19,7 +19,7 @@ The app’s supported languages.
 let languages: [Locale.Language]
 ```
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**: Use `Locale.localizedString(forLanguageCode:)` to obtain a display name for the language, using [`metadataLanguage`](./metadatalanguage.md)  to create the `Locale`.
 

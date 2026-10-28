@@ -22,7 +22,7 @@ var allowsDictation: Bool { get set }
 @property (nonatomic, assign) BOOL allowsDictation;
 ```
 
-#### Discussion
+## Discussion
 
 By turning on Enable Dictation (General > Keyboard in the Settings app on iOS and iPadOS), users can speak into their device and have the words they speak converted to text. An assessment session disables this feature by default, but you can allow it by setting [`allowsDictation`](./allowsdictation.md) to `true` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

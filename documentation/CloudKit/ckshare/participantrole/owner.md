@@ -25,7 +25,7 @@ case owner
 CKShareParticipantRoleOwner
 ```
 
-#### Discussion
+## Discussion
 
 The owner of a share can invite private users.
 

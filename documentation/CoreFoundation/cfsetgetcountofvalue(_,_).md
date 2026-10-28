@@ -25,11 +25,11 @@ func CFSetGetCountOfValue(_ theSet: CFSet!, _ value: UnsafeRawPointer!) -> CFInd
 extern CFIndex CFSetGetCountOfValue(CFSetRef theSet, const void *value);
 ```
 
-#### Return Value
+## Return Value
 
 The number of times `value` occurs in `theSet`. By definition, sets can not contain duplicate values, so returns `1` if `value` is contained in `theSet`, otherwise `0`.
 
-#### Discussion
+## Discussion
 
 This function uses the equal callback. `value` and all elements in the set must be understood by the equal callback.
 

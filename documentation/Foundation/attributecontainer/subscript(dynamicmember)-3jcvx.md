@@ -21,7 +21,7 @@ Returns the attribute container that corresponds to a specified key path.
 subscript<S>(dynamicMember keyPath: KeyPath<AttributeScopes, S.Type>) -> ScopedAttributeContainer<S> where S : AttributeScope { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this subscript when you need to work with an explicit attribute scope. For example, the SwiftUI [`foregroundColor`](../attributescopes/swiftuiattributes/foregroundcolor.md) attribute overrides the attribute in the AppKit and UIKit scopes with the same name. If you work with both the SwiftUI and UIKit scopes, you can use the syntax `myAttributeContainer.uiKit.foregroundColor` to disambiguate and explicitly use the UIKit attribute.
 

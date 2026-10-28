@@ -16,7 +16,7 @@ A property indicating the presentation mode.
 readonly attribute VideoPresentationMode webkitPresentationMode;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for this property are `inline`, `picture``-in-picture`, and `fullscreen`. 
 

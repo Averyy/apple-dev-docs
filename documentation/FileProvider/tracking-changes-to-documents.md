@@ -5,7 +5,7 @@
 
 Track and report changes to open documents.
 
-#### Overview
+## Overview
 
 The File Provider extension must report any  changes to a document’s content while the user is viewing the document.
 

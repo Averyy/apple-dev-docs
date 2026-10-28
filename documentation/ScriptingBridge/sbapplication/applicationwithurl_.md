@@ -16,11 +16,11 @@ Returns the shared instance representing a target application specified by the g
 + (SBApplication *) applicationWithURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 An `SBApplication` subclass from which to generate a shared instance of the target application whose URL is `url`. Returns `nil` if no such application can be found or if the application does not have a scripting interface.
 
-#### Discussion
+## Discussion
 
 For applications that declare themselves to have a dynamic scripting interface, this method will launch the application if it is not already running. This approach to initializing `SBApplication` objects should be used only if you know for certain the URL of the target application. In most cases, it is better to use [`applicationWithBundleIdentifier:`](./applicationwithbundleidentifier_.md) which dynamically locates the target application at runtime.
 

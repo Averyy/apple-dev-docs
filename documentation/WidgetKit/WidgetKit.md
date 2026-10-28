@@ -14,7 +14,7 @@ Extend the reach of your app by creating widgets, watch complications, Live Acti
 - visionOS 26.0+
 - watchOS 9.0+
 
-#### Overview
+## Overview
 
 Using WidgetKit, you can make your app’s content available in contexts outside the app and extend its reach by building an ecosystem of glanceable, up-to-date experiences.
 
@@ -28,7 +28,7 @@ The ecosystem that WidgetKit enables consists of:
 - ****Live Activities****: Live Activities display up-to-date content from your app such as event and task information on the Lock Screen or in the Dynamic Island. Live Activities use [ActivityKit](../ActivityKit/ActivityKit.md) for updates and optionally the Apple Push Notification service (APNs) to send ActivityKit push notifications. For more information, refer to [ActivityKit](../ActivityKit/ActivityKit.md).
 - ****Controls****: Controls act as a button or toggle that allows people to perform actions you describe with the [App Intents](../AppIntents/AppIntents.md) framework in Control Center, on the Lock Screen, and from the Action button. A button control might initiate an action from your app, or open your app to a specific view, and a toggle might turn a light on and off or open and close a garage door. Controls appear in Control Center or as menu bar items and in Control Center on Apple Watch.
 
-##### Develop glanceable features iteratively
+### Develop glanceable features iteratively
 
 WidgetKit enables features across iPad, iPhone, the Mac, Apple Watch, and Apple Vision Pro, but only in a way that best fits a person’s device and personal needs. For example, WidgetKit powers widgets on all platforms in various sizes. It also powers Live Activities and controls, features that aren’t available on Apple Vision Pro.
 
@@ -38,7 +38,7 @@ Use an iterative approach and start with support for one feature or select sizes
 
 For more information, refer to [Developing a WidgetKit strategy](./developing-a-widgetkit-strategy.md).
 
-##### Understand interactivity and personalization
+### Understand interactivity and personalization
 
 The WidgetKit ecosystem enables people to view your app content in new contexts and offers specific interactions with your app when and where they need it:
 
@@ -50,7 +50,7 @@ In addition to offering relevant information and specific interactivity at a gla
 - People configure widgets and watch complications to display details specific to their needs. For example, a widget of the [Emoji Rangers: Supporting Live Activities, interactivity, and animations](./emoji-rangers-supporting-live-activities-interactivity-and-animations.md) sample code project allows people to configure the hero that appears on the widget.
 - People arrange widgets and watch complications in the way that works best for them. When they stack widgets and enable Smart Rotate on iPhone or iPad, WidgetKit automatically rotates the most relevant widget to the top, making sure people see the most important details at the right time. On Apple Watch, the Smart Stack displays widgets based on contextual relevance, and people pin a favorite widget to a fixed position in the Smart Stack.
 
-##### Update content with timelines and push notifications
+### Update content with timelines and push notifications
 
 Widgets and watch complications use a special mechanism to update their content: You create a timeline of data updates and hand it to WidgetKit. WidgetKit then makes sure the widget or complication updates its content in an energy-efficient way. For more information on timelines, refer to [Keeping a widget up to date](./keeping-a-widget-up-to-date.md). Additionally, widgets can receive updates by using the Apple Push Notification service (APNs) and remote push notifications.
 
@@ -58,7 +58,7 @@ Live Activities don’t use timelines to update their content. Instead, they use
 
 Controls don’t use timelines to update their content. Instead, your controls update their content when someone uses them, the app reloads them, or the system receives a remote push notification from APNs.
 
-##### Create a focused, glanceable design
+### Create a focused, glanceable design
 
 Widgets, watch complications, Live Activities, and controls are small and require a focused, glanceable design. For design guidance, refer to [Human Interface Guidelines > Widgets](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/widgets), [Human Interface Guidelines > Complications](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/complications), [Human Interface Guidelines > Live Activities](https://developer.apple.com/design/human-interface-guidelines/components/system-experiences/live-activities), and [Human Interface Guidelines > Controls](https://developer.apple.com/design/human-interface-guidelines/controls).
 

@@ -22,7 +22,7 @@ typedef enum SKSearchType : unsigned int {
 } SKSearchType;
 ```
 
-#### Overview
+## Overview
 
 In releases of macOS prior to version 10.4, these constants specify the category of search to perform. Starting with OS X v10.4, use asynchronous searching with `SKSearchCreate` instead, which uses query syntax to determine search type.
 

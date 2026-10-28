@@ -17,7 +17,7 @@ A Boolean value that indicates whether to require the user’s password to make 
 var requirePasswordForPurchases: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Specify `true` to require the user’s password for each transaction. The value is `nil` if your app doesn’t configure this setting.
 

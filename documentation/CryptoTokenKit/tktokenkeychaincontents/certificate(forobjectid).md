@@ -25,7 +25,7 @@ func certificate(forObjectID objectID: TKToken.ObjectID) throws -> TKTokenKeycha
 - (TKTokenKeychainCertificate *) certificateForObjectID:(TKTokenObjectID) objectID error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The certificate, or `nil` if no certificate exists.
 

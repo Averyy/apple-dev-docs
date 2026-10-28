@@ -16,8 +16,8 @@
 ## Declaration
 
 ```swift
-@objc
-(_NSKeyValueObservation) class NSKeyValueObservation
+@objc(_NSKeyValueObservation)
+class NSKeyValueObservation
 ```
 
 ## Topics

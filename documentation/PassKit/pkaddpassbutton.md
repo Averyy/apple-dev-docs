@@ -22,7 +22,7 @@ class PKAddPassButton
 @interface PKAddPassButton : UIButton
 ```
 
-#### Overview
+## Overview
 
 When you use the [`PKAddPassButton`](./pkaddpassbutton.md) class to create a button, you choose the button’s style, and the system provides a control with the correct appearance.
 

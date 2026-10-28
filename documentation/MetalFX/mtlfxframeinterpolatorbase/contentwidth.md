@@ -24,7 +24,7 @@ var contentWidth: Int { get set }
 @property (nonatomic, readwrite) NSUInteger contentWidth;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property together with [`contentHeight`](./contentheight.md) to specify a subrectangle of the input textures for the frame interpolator to process.
 

@@ -25,7 +25,7 @@ struct CMVideoDimensions
 typedef struct { ... } CMVideoDimensions;
 ```
 
-#### Overview
+## Overview
 
 The units are pixels.
 

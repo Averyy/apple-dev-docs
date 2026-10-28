@@ -21,7 +21,7 @@ A style that reflects the current tint color.
 struct TintShapeStyle
 ```
 
-#### Overview
+## Overview
 
 You can set the tint color with the [`tint(_:)`](./view/tint%28_%29.md) modifier. If no explicit tint is set, the tint is derived from the app’s accent color.
 

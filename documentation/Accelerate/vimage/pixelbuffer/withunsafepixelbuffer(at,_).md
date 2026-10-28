@@ -23,11 +23,11 @@ func withUnsafePixelBuffer<R>(at index: Int, _ body: (vImage.PixelBuffer<Format.
 
 Available when `Format` conforms to `MultiplePlanePixelFormat`.
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the body closure parameter.
 
-#### Discussion
+## Discussion
 
 Use this function to access a single planar pixel buffer from a multiple-plane pixel buffer. For example, the following code converts the 8-bit pixels at plane `2` to 32-bit and writes the result to `dest`:
 

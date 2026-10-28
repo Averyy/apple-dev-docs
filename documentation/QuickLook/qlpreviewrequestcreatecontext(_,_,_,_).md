@@ -21,11 +21,11 @@ func QLPreviewRequestCreateContext(_ preview: QLPreviewRequest!, _ size: CGSize,
 extern CGContextRefQLPreviewRequestCreateContext(QLPreviewRequestRef preview, CGSize size, Boolean isBitmap, CFDictionaryRef properties);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Graphics graphics-context object that you can draw your preview image in. You should explicitly release this object when it is no longer needed.
 
-#### Discussion
+## Discussion
 
 You can directly draw your preview data in the graphics-context object created by this function. After calling this function, you should flush the context with [`QLPreviewRequestFlushContext(_:_:)`](./qlpreviewrequestflushcontext%28_,_%29.md). Also be sure to release the `CGContext` object.
 
@@ -33,7 +33,7 @@ Quick Look provides three types of graphics contexts for drawing previews: bitma
 
 If you prefer to work in Objective-C code, you can convert the created [`CGContext`](../CoreGraphics/cgcontext.md) to a [`NSGraphicsContext`](../AppKit/nsgraphicscontext.md) object using [`init(graphicsPort:flipped:)`](../AppKit/nsgraphicscontext/init%28graphicsport,flipped%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 Thread-safety: This function should be called in the same thread as the preview request is made in; generally, this is the same thread in which the `GeneratePreviewForURL` callback was invoked.
 

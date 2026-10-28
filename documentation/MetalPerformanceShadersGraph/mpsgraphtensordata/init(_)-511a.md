@@ -24,11 +24,11 @@ init(_ imageBatch: [MPSImage])
 - (instancetype) initWithMPSImageBatch:(MPSImageBatch *) imageBatch;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensorData, or nil if allocation failure.
 
-#### Discussion
+## Discussion
 
 The dataLayout used will be NHWC, call a transpose or permute to change to a layout of your choice.
 

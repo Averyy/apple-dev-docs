@@ -20,7 +20,7 @@ var planeExtent: ARPlaneExtent { get }
 @property (nonatomic, readonly) ARPlaneExtent * planeExtent;
 ```
 
-#### Discussion
+## Discussion
 
 When ARKit first detects a plane, the resulting [`ARPlaneAnchor`](../arplaneanchor.md) object has a [`center`](./center.md) value of `(0,0,0)`, indicating that the translation portion of the anchor’s [`transform`](../aranchor/transform.md) value locates the plane’s center point.
 

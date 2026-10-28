@@ -15,7 +15,7 @@ An error that indicates a required storefront country code is empty.
 object InvalidEmptyStorefrontCountryCodeListError
 ```
 
-#### Discussion
+## Discussion
 
 This error applies to the [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md) endpoint. If your request applies to all storefronts, omit the `storefrontCountryCodes` list from the [`MassExtendRenewalDateRequest`](./massextendrenewaldaterequest.md) object.
 

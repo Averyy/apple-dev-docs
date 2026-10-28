@@ -23,11 +23,11 @@ func popViewController(animated: Bool) -> UIViewController?
 - (UIViewController *) popViewControllerAnimated:(BOOL) animated;
 ```
 
-#### Return Value
+## Return Value
 
 The view controller that was popped from the stack.
 
-#### Discussion
+## Discussion
 
 This method removes the top view controller from the stack and makes the new top of the stack the active view controller. If the view controller at the top of the stack is the root view controller, this method does nothing. In other words, you cannot pop the last item on the stack.
 

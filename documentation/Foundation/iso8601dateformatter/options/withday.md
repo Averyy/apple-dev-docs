@@ -23,7 +23,7 @@ static var withDay: ISO8601DateFormatter.Options { get }
 NSISO8601DateFormatWithDay
 ```
 
-#### Discussion
+## Discussion
 
 The date representation includes the day. The format for day is inferred based on provided options:
 

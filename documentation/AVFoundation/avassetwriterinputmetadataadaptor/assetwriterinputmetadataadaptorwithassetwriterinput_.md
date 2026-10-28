@@ -20,7 +20,7 @@ Returns a new metadata adaptor to append timed metadata groups to write to an ou
 + (instancetype) assetWriterInputMetadataAdaptorWithAssetWriterInput:(AVAssetWriterInput *) input;
 ```
 
-#### Return Value
+## Return Value
 
 An input metadata adaptor.
 

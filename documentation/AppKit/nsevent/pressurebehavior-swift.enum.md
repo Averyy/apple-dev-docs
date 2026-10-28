@@ -19,7 +19,7 @@ enum PressureBehavior
 enum NSPressureBehavior : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants describe the behavior and progression of a pressure gesture. They allow you to configure how pressure from a pressure-sensitive device, such as the Force Touch trackpad, is interpreted by the system. For example, a drawing or painting app may adjust the behavior of pressure events to focus on variable pressure and prevent force clicks from occurring.
 

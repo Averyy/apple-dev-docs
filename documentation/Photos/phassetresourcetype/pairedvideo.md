@@ -24,7 +24,7 @@ case pairedVideo
 PHAssetResourceTypePairedVideo
 ```
 
-#### Discussion
+## Discussion
 
 This asset resource type appears when fetching the asset resources associated with a Live Photo asset.
 

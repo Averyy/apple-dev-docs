@@ -5,11 +5,11 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 15.2 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 15.3. The SDK comes bundled with Xcode 13.2.1. For information on the compatibility requirements for Xcode 13.2.1, see [Xcode 13.2.1 Release Notes](../Xcode-Release-Notes/xcode-13_2_1-release-notes.md).
 
-##### General
+### General
 
 There are no new release notes for this software update.
 

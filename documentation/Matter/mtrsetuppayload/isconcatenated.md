@@ -25,7 +25,7 @@ var isConcatenated: Bool { get }
 @property (nonatomic, assign, readonly, getter=isConcatenated) BOOL concatenated;
 ```
 
-#### Discussion
+## Discussion
 
 - The constituent payloads are exposed in the `subPayloads` property.
 - Properties other than `subPayloads` and `qrCodeString` (e.g. `vendorID`, `discriminator`) are not relevant to a concatenated payload and should not be used. If accessed, they will act as if the payload was not in fact concatenated, and return the relevant value associated with the first sub-payload. Mutating such a property will discard the additional sub-payloads.

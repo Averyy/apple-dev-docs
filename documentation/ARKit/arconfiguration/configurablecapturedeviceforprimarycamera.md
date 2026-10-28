@@ -20,7 +20,7 @@ class var configurableCaptureDeviceForPrimaryCamera: AVCaptureDevice? { get }
 @property (class, nonatomic, readonly, nullable) AVCaptureDevice * configurableCaptureDeviceForPrimaryCamera;
 ```
 
-#### Discussion
+## Discussion
 
 This property provides the underlying capture device for the framework’s camera feed. By altering the device’s configuration, your app indirectly adjusts the visual properties of the each AR frame’s [`capturedImage`](../arframe/capturedimage.md).
 

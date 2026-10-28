@@ -25,7 +25,7 @@ var kColorSyncHeadroomAdaptiveGainCurveColorVolumeTransform: Unmanaged<CFString>
 extern CFStringRef kColorSyncHeadroomAdaptiveGainCurveColorVolumeTransform;
 ```
 
-#### Discussion
+## Discussion
 
 It may contain parameters for Headroom-Adaptive tone mapping or indicate usage of the Reference-White Tone Mapping Method. It allows for specifying a custom HDR Reference White luminance.
 

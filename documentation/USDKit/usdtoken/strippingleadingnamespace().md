@@ -20,7 +20,7 @@ Returns this token with its leading namespace component removed.
 func strippingLeadingNamespace() -> USDToken
 ```
 
-#### Return Value
+## Return Value
 
 The token with its leading namespace stripped, or the empty token if no namespace component exists.
 

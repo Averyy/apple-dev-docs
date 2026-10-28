@@ -38,11 +38,11 @@ string Ad.SystemStatusReasons
 - `PRODUCT_PAGE_INCOMPATIBLE`: The product page is incompatible with this ad’s targeting.
 - `CREATIVE_LOCALE_INCOMPATIBLE`: The ad creative locale does not match the targeted market.
 
-#### Discussion
+## Discussion
 
 These codes span approval, creative, and product page conditions that the platform surfaces when [`Ad.SystemStatus`](./systemstatus-data.typealias.md) is `NOT_RUNNING`.
 
-##### Example
+### Example
 
 ```json
 {

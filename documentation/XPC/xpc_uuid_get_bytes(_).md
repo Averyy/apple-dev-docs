@@ -25,7 +25,7 @@ func xpc_uuid_get_bytes(_ xuuid: xpc_object_t) -> UnsafePointer<UInt8>?
 extern const uint8_t *xpc_uuid_get_bytes(xpc_object_t xuuid);
 ```
 
-#### Return Value
+## Return Value
 
 The underlying `uuid_t` bytes. The returned pointer may be safely passed to the `uuid(3)` APIs.
 

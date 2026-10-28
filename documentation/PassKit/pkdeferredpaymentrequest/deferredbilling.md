@@ -23,7 +23,7 @@ var deferredBilling: PKDeferredPaymentSummaryItem { get set }
 @property (nonatomic, strong) PKDeferredPaymentSummaryItem * deferredBilling;
 ```
 
-#### Discussion
+## Discussion
 
 For example “Pay $2.99 on October 9, 2023.”
 

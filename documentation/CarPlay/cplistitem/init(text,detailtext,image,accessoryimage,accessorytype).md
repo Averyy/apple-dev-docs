@@ -21,7 +21,7 @@ init(text: String?, detailText: String?, image: UIImage?, accessoryImage: UIImag
 - (instancetype) initWithText:(NSString *) text detailText:(NSString *) detailText image:(UIImage *) image accessoryImage:(UIImage *) accessoryImage accessoryType:(CPListItemAccessoryType) accessoryType;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify an image, CarPlay sets `accessoryType` to [`CPListItemAccessoryType.none`](../cplistitemaccessorytype/none.md).
 

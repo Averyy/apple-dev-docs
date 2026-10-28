@@ -19,7 +19,7 @@ var audioOutputDeviceUniqueID: String? { get set }
 @property (nonatomic, copy, nullable) NSString * audioOutputDeviceUniqueID;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`, which indicates the use of the default audio device. Otherwise, set the value to an [`NSString`](../../Foundation/nsstring.md) containing the unique identifier of the Core Audio output device to use for audio output. [`kAudioDevicePropertyDeviceUID`](../../CoreAudio/kaudiodevicepropertydeviceuid.md) is a suitable source of audio output device unique IDs.
 

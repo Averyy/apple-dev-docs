@@ -24,11 +24,11 @@ convenience init(device: any MTLDevice)
 - (instancetype) initWithDevice:(id<MTLDevice>) device;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized Sobel filter object.
 
-#### Discussion
+## Discussion
 
 The default color transform matrix is an array of 3 floats set to the *BT.601/JPEG* standard: `{0.299f, 0.587f, 0.114f}`.
 

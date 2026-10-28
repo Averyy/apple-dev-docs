@@ -17,13 +17,13 @@ Select from `x` or `y` according to `condition`.
 func `where`(_ condition: MLXArray, _ a: some ScalarOrArray, _ b: some ScalarOrArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The condition and input arrays must be the same shape or [Numpy Style Broadcasting](./broadcasting.md) with each another.
 
 > **Note**: [`which(_:_:_:stream:)`](./which%28_,_,_,stream%29.md) may be easier to use (`where` is a Swift keyword).
 
-##### See Also
+### See Also
 
 - [Logical Operators](./logical.md)
 - [`which(_:_:_:stream:)`](./which%28_,_,_,stream%29.md)

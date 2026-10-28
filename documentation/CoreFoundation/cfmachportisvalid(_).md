@@ -25,7 +25,7 @@ func CFMachPortIsValid(_ port: CFMachPort!) -> Bool
 extern Boolean CFMachPortIsValid(CFMachPortRef port);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `port` can be used for communication, otherwise `false`.
 

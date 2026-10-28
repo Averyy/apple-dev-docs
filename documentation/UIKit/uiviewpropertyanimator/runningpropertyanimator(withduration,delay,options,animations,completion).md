@@ -23,11 +23,11 @@ class func runningPropertyAnimator(withDuration duration: TimeInterval, delay: T
 + (instancetype) runningPropertyAnimatorWithDuration:(NSTimeInterval) duration delay:(NSTimeInterval) delay options:(UIViewAnimationOptions) options animations:(void (^)()) animations completion:(void (^)(UIViewAnimatingPosition finalPosition)) completion;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized animator object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 This method creates the property animator object, configures it, and calls its [`startAnimation()`](../uiviewanimating/startanimation%28%29.md) method after the specified delay. If you don’t specify an animation curve in the options parameter, this method uses the [`curveEaseInOut`](../uiview/animationoptions/curveeaseinout.md) option.
 

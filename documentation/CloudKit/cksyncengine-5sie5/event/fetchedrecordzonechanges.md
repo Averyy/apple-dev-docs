@@ -21,7 +21,7 @@ A type that provides information about fetched record zone changes.
 struct FetchedRecordZoneChanges
 ```
 
-#### Overview
+## Overview
 
 > **Note**: Although CloudKit doesn’t guarantee the order of fetched record zone changes, the typical order for both deletions and modifications is oldest to newest.
 

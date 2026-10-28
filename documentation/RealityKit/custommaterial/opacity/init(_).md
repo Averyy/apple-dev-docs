@@ -19,7 +19,7 @@ Creates an object from the opacity property of an existing physically based mate
 init(_ value: PhysicallyBasedMaterial.Opacity)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a new object by copying values from an existing physically based material’s [`blending`](../../physicallybasedmaterial/blending-swift.property.md) property. All of the copied values, including [`scale`](./scale.md), [`texture`](./texture.md), and [`opacityThreshold`](../opacitythreshold.md) are available to the material’s surface shader function, but RealityKit draws the entity fully opaque unless the surface shader function calls `params.surface().set_opacity()`.
 

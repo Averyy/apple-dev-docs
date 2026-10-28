@@ -24,7 +24,7 @@ func CVMetalTextureGetTexture(_ image: CVMetalTexture) -> (any MTLTexture)?
 extern id<MTLTexture>CVMetalTextureGetTexture(CVMetalTextureRef image);
 ```
 
-#### Return Value
+## Return Value
 
 The [`MTLTexture`](../Metal/mtltexture.md) object corresponding to the image buffer.
 

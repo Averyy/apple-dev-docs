@@ -21,7 +21,7 @@ The centroid points of the detected contour along the trajectory.
 let detectedPoints: [NormalizedPoint]
 ```
 
-#### Discussion
+## Discussion
 
 The detected points may differ slightly from the ideal trajectory because they fall within the allowed tolerance. The system limits the maximum number of points based on the maximum trajectory length set in the request.
 

@@ -13,7 +13,7 @@
 #define kIOPropertyPhysicalInterconnectTypeATAPI
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of ATAPI for the key kIOPropertyPhysicalInterconnectTypeKey. If the device is connected to an ATA bus and follows the ATAPI command specification, this key should be set.
 

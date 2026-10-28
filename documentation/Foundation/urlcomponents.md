@@ -21,7 +21,7 @@ A structure that parses URLs into and constructs URLs from their constituent par
 struct URLComponents
 ```
 
-#### Overview
+## Overview
 
 This structure parses and constructs URLs according to [RFC 3986](http://www.ietf.org/rfc/rfc3986.txt). Its behavior differs subtly from that of the [`URL`](./url.md) structure, which conforms to older RFCs. However, you can easily obtain a [`URL`](./url.md) value based on the contents of a [`URLComponents`](./urlcomponents.md) value or vice versa.
 

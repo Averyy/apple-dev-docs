@@ -18,7 +18,7 @@ typealias FSEventStreamEventFlags = UInt32
 typedef UInt32 FSEventStreamEventFlags;
 ```
 
-#### Discussion
+## Discussion
 
 Flags that can be passed your FSEventStreamCallback function.
 

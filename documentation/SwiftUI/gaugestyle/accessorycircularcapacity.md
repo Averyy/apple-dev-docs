@@ -23,7 +23,7 @@ A gauge style that displays a closed ring that’s partially filled in to indica
 
 Available when `Self` is `AccessoryCircularCapacityGaugeStyle`.
 
-#### Discussion
+## Discussion
 
 Apply this style to a [`Gauge`](../gauge.md) or to a view hierarchy that contains gauges using the [`gaugeStyle(_:)`](../view/gaugestyle%28_%29.md) modifier:
 

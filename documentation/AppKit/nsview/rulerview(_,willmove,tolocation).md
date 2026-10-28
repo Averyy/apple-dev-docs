@@ -19,7 +19,7 @@ func rulerView(_ ruler: NSRulerView, willMove marker: NSRulerMarker, toLocation 
 - (CGFloat) rulerView:(NSRulerView *) ruler willMoveMarker:(NSRulerMarker *) marker toLocation:(CGFloat) location;
 ```
 
-#### Discussion
+## Discussion
 
 `location` is the marker’s tentative new location, expressed in the client view’s coordinate system. The value returned by the client view is actually used; the client can simply return `location` unchanged or adjust it as needed. For example, it may snap the location to a grid. This message is sent repeatedly to the client as the user drags the marker.
 

@@ -21,7 +21,7 @@ Sets the new center point of the annotation.
 - (void) setCoordinate:(CLLocationCoordinate2D) newCoordinate;
 ```
 
-#### Discussion
+## Discussion
 
 Annotations that support dragging should implement this method to update the position of the annotation.
 

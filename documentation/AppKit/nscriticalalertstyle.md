@@ -13,7 +13,7 @@
 static const NSAlertStyle NSCriticalAlertStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Reserved for critical alerts, such as when severe consequences might result from certain user responses (for example, a “clean install” will erase all data on a volume). This style includes a caution icon badged with the app icon.
 

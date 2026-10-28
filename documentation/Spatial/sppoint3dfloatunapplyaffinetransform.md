@@ -19,11 +19,11 @@
 static SPPoint3DFloat SPPoint3DFloatUnapplyAffineTransform(SPPoint3DFloat point, SPAffineTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed point.
 
-#### Discussion
+## Discussion
 
 Returns a point that’s transformed by the inverse of the specified affine transform.
 

@@ -19,7 +19,7 @@ var floatsSelectionViews: Bool { get set }
 @property BOOL floatsSelectionViews;
 ```
 
-#### Discussion
+## Discussion
 
 When scrubber items are selected, they are decorated with background and overlay views, as determined by the [`selectionBackgroundStyle`](./selectionbackgroundstyle.md) and [`selectionOverlayStyle`](./selectionoverlaystyle.md) properties.
 

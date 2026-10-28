@@ -23,7 +23,7 @@ class UIPointerStyle
 @interface UIPointerStyle : UIHoverStyle
 ```
 
-#### Overview
+## Overview
 
 Whenever possible, match pointer styles to UIKit styles and make them consistent with the visual intent of similar views.
 

@@ -21,7 +21,7 @@ A structure that contains identifying information about a place that a mapping s
 struct PlaceDescriptor
 ```
 
-#### Discussion
+## Discussion
 
 A [`PlaceDescriptor`](./placedescriptor.md) allows you to construct a collection of metadata about a place, including at least one [`PlaceDescriptor.PlaceRepresentation`](./placedescriptor/placerepresentation.md) which contains common geographic concepts like an address or coordinate. `PlaceDescriptor` may optionally include a [`supportingRepresentations`](./placedescriptor/supportingrepresentations.md) which contains identifiers that match the place for mapping service providers. Use `PlaceDescriptor` in conjunction with a mapping service to request rich information about a place.
 

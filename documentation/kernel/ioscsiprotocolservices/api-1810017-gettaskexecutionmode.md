@@ -12,11 +12,11 @@ SCSITaskMode GetTaskExecutionMode (
  SCSITaskIdentifierrequest );
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSITaskMode value.
 
-#### Overview
+## Overview
 
 Internal method used to retrieve the task execution mode.
 

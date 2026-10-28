@@ -24,7 +24,7 @@ enum IOType
 enum AVAudioSessionIOType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Starting in iOS 10, apps that use [`AVCaptureSession`](../../AVFoundation/avcapturesession.md) on iPad and iPhone devices, and support taking Live Photos, have nonaggregated audio I/O unless the app opts out by setting its I/O type to [`AVAudioSession.IOType.aggregated`](./iotype/aggregated.md). With nonaggregated audio I/O, the system uses separate threads to service audio I/O for input and output directions.
 

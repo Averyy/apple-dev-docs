@@ -25,11 +25,11 @@ func string(from fromDate: Date, to toDate: Date) -> String
 - (NSString *) stringFromDate:(NSDate *) fromDate toDate:(NSDate *) toDate;
 ```
 
-#### Return Value
+## Return Value
 
 A formatted string representing the specified date interval.
 
-#### Discussion
+## Discussion
 
 The formatter includes both `fromDate` and `toDate` in the resulting string only when there is enough of a difference in their values to warrant the inclusion of both. If the date and time difference cannot be adequately displayed, the formatter displays one date value. For example, if the [`timeStyle`](./timestyle.md) property was set to [`DateIntervalFormatter.Style.none`](./style/none.md), the two dates would need to be at least one day apart in order for both to be displayed.
 

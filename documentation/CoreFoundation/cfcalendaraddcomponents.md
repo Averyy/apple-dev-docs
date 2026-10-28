@@ -21,11 +21,11 @@ Computes the absolute time when specified components are added to a given absolu
 extern Boolean CFCalendarAddComponents(CFCalendarRef calendar, CFAbsoluteTime *at, CFOptionFlags options, const char *componentDesc, ...);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE`—and in `at` the computed time—if `at` falls inside the defined range of the calendar and it is possible to calculate the absolute time when the components (the calendrical components specified by `componentDesc` and given in the varargs) are added to the input absolute time `at`; otherwise `FALSE`.
 
-#### Discussion
+## Discussion
 
 Some operations can be ambiguous, and the behavior of the computation is calendar-specific, but generally components are added in the order specified.
 

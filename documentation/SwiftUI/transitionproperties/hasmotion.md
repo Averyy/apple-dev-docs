@@ -21,7 +21,7 @@ Whether the transition includes motion.
 var hasMotion: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When this behavior is included in a transition, that transition will be replaced by opacity when Reduce Motion is enabled.
 

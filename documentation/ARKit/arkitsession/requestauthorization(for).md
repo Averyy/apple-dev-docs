@@ -15,11 +15,11 @@ Requests authorization from the user to use the specified kinds of ARKit data.
 final func requestAuthorization(for authorizationTypes: [ARKitSession.AuthorizationType]) async -> [ARKitSession.AuthorizationType : ARKitSession.AuthorizationStatus]
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains the result of the authorization request for each authorization type you requested.
 
-#### Discussion
+## Discussion
 
 You can use the [`requiredAuthorizations`](../dataprovider/requiredauthorizations.md) property on any of the types that conform to the [`DataProvider`](../dataprovider.md) protocol to get the list of authorizations specific to that data provider and pass it to this method.
 

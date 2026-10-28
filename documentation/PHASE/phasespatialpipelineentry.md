@@ -24,7 +24,7 @@ class PHASESpatialPipelineEntry
 @interface PHASESpatialPipelineEntry : NSObject
 ```
 
-#### Overview
+## Overview
 
 This property adjusts the amount of audio that passes through a spatial mixer’s pipeline ([`spatialPipeline`](./phasespatialmixerdefinition/spatialpipeline.md)) to the output. The pipeline’s [`entries`](./phasespatialpipeline/entries.md) contains an instance of this class for each type of audio layer that [`PHASESpatialCategory`](./phasespatialcategory.md) defines. Depending on the layer’s type, the audio may sound like spatial relections, environmental reverb, or the unfiltered signal. An app adjusts the layer’s presence in the mixer’s output by:
 

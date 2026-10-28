@@ -20,7 +20,7 @@ var inputFieldSeparator: String { get }
 @property (atomic, copy, readonly) NSString * inputFieldSeparator;
 ```
 
-#### Discussion
+## Discussion
 
 The Automator framework converts the output from the previous action (which is usually in the form of a list or array) into a single string in which the array elements are concatenated by the input field separator. By default, this separator is the newline character (`\n`). You can override this method to, for example, return a null character (`\0`) to provide null-terminated strings for `xargs -0`.
 

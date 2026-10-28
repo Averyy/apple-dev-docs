@@ -22,7 +22,7 @@ let MPMoviePlayerFullscreenAnimationCurveUserInfoKey: String
 extern NSString * const MPMoviePlayerFullscreenAnimationCurveUserInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../Foundation/nsnumber.md) containing an integer value that represents one of the [`UIView.AnimationCurve`](../UIKit/uiview/animationcurve.md) constants.
 

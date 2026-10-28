@@ -18,7 +18,7 @@ The framework can’t identify the source language automatically.
 static let unableToIdentifyLanguage: TranslationError
 ```
 
-#### Discussion
+## Discussion
 
 The framework throws this error when you call [`prepareTranslation()`](../translationsession/preparetranslation%28%29.md) without specifying the source language, or when using [`status(for:to:)`](../languageavailability/status%28for,to%29.md) and it can’t automatically identify the source language of the sample text you pass in.
 

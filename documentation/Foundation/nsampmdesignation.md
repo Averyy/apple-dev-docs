@@ -17,7 +17,7 @@ Key for the value that specifies how the morning and afternoon designations are 
 extern NSString * const NSAMPMDesignation;
 ```
 
-#### Discussion
+## Discussion
 
 The defaults are “AM” and “PM”.
 

@@ -16,11 +16,11 @@
 virtual kern_return_t SetActive();
 ```
 
-#### Return Value
+## Return Value
 
 0 on success, negative value in case of failure.
 
-#### Discussion
+## Discussion
 
 This function is called to set the IOExtensiblePaniclog object active.
 

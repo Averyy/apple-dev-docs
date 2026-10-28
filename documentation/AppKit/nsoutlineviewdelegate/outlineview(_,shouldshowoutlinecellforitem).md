@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, shouldShowOutlineCellFor
 - (BOOL) outlineView:(NSOutlineView *) outlineView shouldShowOutlineCellForItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the outline cell should be displayed, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Returning [`false`](../../Swift/false.md) causes [`frameOfOutlineCell(atRow:)`](../nsoutlineview/frameofoutlinecell%28atrow%29.md) to return `NSZeroRect`, hiding the cell. In addition, the row will not be collapsible by keyboard shortcuts.
 

@@ -22,7 +22,7 @@ var popupViewController: UIViewController? { get }
 @property (nonatomic, readonly, nullable) UIViewController * popupViewController;
 ```
 
-#### Discussion
+## Discussion
 
 The view controller adaptively adjusts its presentation style based on where it is presented from, preferring popover.
 

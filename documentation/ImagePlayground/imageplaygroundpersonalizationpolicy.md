@@ -21,7 +21,7 @@ An option for enabling or disabling personalization in the system interface.
 enum ImagePlaygroundPersonalizationPolicy
 ```
 
-#### Overview
+## Overview
 
 Use this type to configure the personalization behavior for the view controllers and SwiftUI view modifiers you use in your interface.
 

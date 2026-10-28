@@ -23,7 +23,7 @@ case standard
 UIWindowSceneDismissalAnimationStandard
 ```
 
-#### Discussion
+## Discussion
 
 Use this type of animation when you want the system to perform a standard dismissal animation. For example, you might use this animation to close a scene displaying a web page.
 

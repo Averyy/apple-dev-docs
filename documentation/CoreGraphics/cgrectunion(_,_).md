@@ -25,11 +25,11 @@ func CGRectUnion(_ r1: CGRect, _ r2: CGRect) -> CGRect
 extern CGRect CGRectUnion(CGRect r1, CGRect r2);
 ```
 
-#### Return Value
+## Return Value
 
 The smallest rectangle that completely contains both of the source rectangles.
 
-#### Discussion
+## Discussion
 
 Both rectangles are standardized prior to calculating the union. If either of the rectangles is a null rectangle, a copy of the other rectangle is returned (resulting in a null rectangle if both rectangles are null). Otherwise a rectangle that completely contains the source rectangles is returned.
 

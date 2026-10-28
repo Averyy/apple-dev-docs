@@ -23,7 +23,7 @@ var deferredPaymentRequest: PKDeferredPaymentRequest? { get set }
 @property (nonatomic, strong, nullable) PKDeferredPaymentRequest * deferredPaymentRequest;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  watchOS doesn’t support merchant-specific payment tokens.
 

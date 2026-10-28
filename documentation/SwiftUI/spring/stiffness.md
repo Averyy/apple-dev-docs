@@ -21,7 +21,7 @@ The spring stiffness coefficient.
 var stiffness: Double { get }
 ```
 
-#### Discussion
+## Discussion
 
 Increasing the stiffness reduces the number of oscillations and will reduce the settling duration. Decreasing the stiffness increases the number of oscillations and will increase the settling duration.
 

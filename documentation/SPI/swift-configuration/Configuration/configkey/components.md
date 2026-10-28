@@ -24,7 +24,7 @@ The hierarchical components that make up this configuration key.
 var components: [String]
 ```
 
-#### Discussion
+## Discussion
 
 Each component represents a level in the configuration hierarchy. For example, `["database", "connection", "timeout"]` represents a three-level nested key.
 

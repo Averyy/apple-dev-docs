@@ -15,7 +15,7 @@ The level at which a compiler warning should be treated.
 enum WarningLevel
 ```
 
-#### Overview
+## Overview
 
 This enum is used with the `SwiftSetting.treatAllWarnings(as:_:)` and `SwiftSetting.treatWarning(name:as:_:)` methods to control how warnings are handled during compilation.
 

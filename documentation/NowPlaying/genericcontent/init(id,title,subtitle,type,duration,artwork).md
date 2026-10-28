@@ -21,7 +21,7 @@ Creates generic media content.
 init(id: String, title: String, subtitle: String? = nil, type: MediaType, duration: MediaDuration?, artwork: Artwork?)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when your media doesn’t fit other content types.
 

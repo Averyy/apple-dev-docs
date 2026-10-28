@@ -19,7 +19,7 @@ var wantsRestingTouches: Bool { get set }
 @property BOOL wantsRestingTouches;
 ```
 
-#### Discussion
+## Discussion
 
 A resting touch occurs when a user rests their thumb on a device (for example, the glass trackpad of a MacBook). By default, these touches are not delivered and are not included in the event’s set of touches. Touches may transition in and out of resting at any time. Unless the view wants resting touches, began / ended events are simulated as touches transition from resting to active and vice versa.
 

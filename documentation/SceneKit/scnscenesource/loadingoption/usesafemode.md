@@ -27,7 +27,7 @@ static let useSafeMode: SCNSceneSource.LoadingOption
 extern SCNSceneSourceLoadingOption const SCNSceneSourceUseSafeModeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object containing a Boolean value. The default value is [`false`](../../../Swift/false.md).
 

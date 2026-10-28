@@ -16,7 +16,7 @@ init(description expectationDescription: String)
 - (instancetype) initWithDescription:(NSString *) expectationDescription;
 ```
 
-#### Discussion
+## Discussion
 
 To fulfill an expectation that was created with this initializer, call the expectation’s [`fulfill()`](./fulfill%28%29.md) method when the asynchronous task in your test has completed.
 

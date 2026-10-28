@@ -15,11 +15,11 @@ Terminates an existing task.
 OSStatus MPTerminateTask(MPTaskID task, OSStatus terminationStatus);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965). If the task to be terminated is already in the process of termination, `MPTerminateTask` returns `kMPInsufficientResourcesErr`. You do not need to take any additional action if this occurs.
 
-#### Discussion
+## Discussion
 
 You should be very careful when calling `MPTerminateTask`.  As defined, this call will asynchronously and abruptly terminate a task, potentially leaving whatever structures or resources it was operating upon in an indeterminate state.  macOS  exacerbates this problem, as MP tasks can use many more system services that are not expecting client threads to asynchronously terminate, and these services do not take the rather complicated steps necessary to protect against, or recover from, such a situation.
 

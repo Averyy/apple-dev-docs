@@ -21,7 +21,7 @@ A type that represents a Makefile.
 static var makefile: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.make-source`.
 

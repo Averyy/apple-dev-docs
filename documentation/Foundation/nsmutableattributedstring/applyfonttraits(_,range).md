@@ -19,7 +19,7 @@ func applyFontTraits(_ traitMask: NSFontTraitMask, range: NSRange)
 - (void) applyFontTraits:(NSFontTraitMask) traitMask range:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
 

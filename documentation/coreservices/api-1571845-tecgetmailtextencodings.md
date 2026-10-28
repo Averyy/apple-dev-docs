@@ -15,11 +15,11 @@ Returns the currently supported mail encoding specificationsfor a region code.
 OSStatus TECGetMailTextEncodings(RegionCode locale, TextEncoding availableEncodings[], ItemCount maxAvailableEncodings, ItemCount *actualAvailableEncodings);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 This function ignores duplicate text encoding specifications.If you used the  [`TECCountMailTextEncodings`](./api-1571826-teccountmailtextencodings.md) function to determine the size of the `availableEncodings[]` arraythe number of available encodings may be fewer than the number ofarray elements, because `TECCountMailTextEncodings` includesduplicate text encoding specifications in its count. 
 

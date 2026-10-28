@@ -5,7 +5,7 @@
 
 Indicate the background services your app requires to continue executing in the background in iOS, iPadOS, tvOS, visionOS, and watchOS.
 
-#### Overview
+## Overview
 
 Typically, an app is in a suspended state when it’s in the background. However, there are a limited number of background execution modes your app can support that enable it to run when in the background, such as playing audio, receiving location updates, or processing scheduled tasks. For apps that adopt one or more of these modes, the system launches or resumes the app, in the background, and affords it time to process any related events.
 
@@ -19,7 +19,7 @@ The background execution modes that appear after you add the capability depend o
 
 > **Note**: The Background Modes capability isn’t available for macOS apps.
 
-##### Specify the background modes your app requires
+### Specify the background modes your app requires
 
 Before your app can leverage one or more background execution modes, you need to declare the modes it requires by performing the following:
 

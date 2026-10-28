@@ -9,7 +9,7 @@ Integrate streaming music with catalog and personal content.
 **Availability**:
 - Apple Music 1.0+
 
-#### Overview
+## Overview
 
 Use Apple Music API to access information about media in the Apple Music Catalog and a user’s personal iCloud Music Library.
 

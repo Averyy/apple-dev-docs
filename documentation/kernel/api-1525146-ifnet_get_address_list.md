@@ -13,11 +13,11 @@
 errno_t ifnet_get_address_list(ifnet_t interface, ifaddr_t **addresses);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Get a list of addresses on the interface. Passing NULL for the interface will return a list of all addresses. The addresses will have their reference count bumped so they will not go away. Calling ifnet_free_address_list will decrement the refcount and free the array. If you wish to hold on to a reference to an ifaddr_t, be sure to bump the reference count before calling ifnet_free_address_list.
 

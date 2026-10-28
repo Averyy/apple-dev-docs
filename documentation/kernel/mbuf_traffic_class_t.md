@@ -17,7 +17,7 @@ typedef enum mbuf_traffic_class_t : unsigned int {
 } mbuf_traffic_class_t;
 ```
 
-#### Overview
+## Overview
 
 Property that represent the category of traffic of a packet. This information may be used by the driver and at the link level.
 

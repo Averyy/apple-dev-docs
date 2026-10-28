@@ -15,11 +15,11 @@ Gets the class identifier of the object
 virtual IOUserVideoClassID GetClassID();
 ```
 
-#### Return Value
+## Return Value
 
 A video class identifier.
 
-#### Discussion
+## Discussion
 
 This method overrides the base class’s implementation.
 

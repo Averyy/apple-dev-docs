@@ -22,11 +22,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A paste configuration that has no acceptable uniform type identifiers (UTIs).
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a paste configuration that has an empty [`acceptableTypeIdentifiers`](./acceptabletypeidentifiers.md) array. After you create the paste configuration, you can use its [`addAcceptableTypeIdentifiers(_:)`](./addacceptabletypeidentifiers%28_%29.md) method or [`addTypeIdentifiers(forAccepting:)`](./addtypeidentifiers%28foraccepting%29-4fvd6.md) method to add acceptable UTIs to the array.
 

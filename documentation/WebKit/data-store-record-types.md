@@ -5,7 +5,7 @@
 
 Explore the constants that identify the types of data that websites store.
 
-#### Overview
+## Overview
 
 A [`WKWebsiteDataRecord`](./wkwebsitedatarecord.md) object includes these constants in its [`dataTypes`](./wkwebsitedatarecord/datatypes.md) property.
 

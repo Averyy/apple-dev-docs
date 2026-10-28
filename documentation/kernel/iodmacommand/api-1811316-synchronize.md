@@ -12,11 +12,11 @@ virtual IOReturn synchronize(
  IOOptionBitsoptions);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnNotReady if not prepared, kIOReturnBadArgument if invalid options are passed, kIOReturnSuccess otherwise.
 
-#### Overview
+## Overview
 
 This method should not be called unless a prepare was previously issued. If needed a caller may synchronize any IODMACommand buffers with the original IOMemoryDescriptor buffers.
 

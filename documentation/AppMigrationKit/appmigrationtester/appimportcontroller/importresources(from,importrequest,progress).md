@@ -16,7 +16,7 @@ Tells the migration extension to begin importing transportable resources into th
 final func importResources(from extractedResourceURL: URL, importRequest: ResourcesImportRequest? = nil, progress: Progress? = nil) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Clean your app state before starting an import test, since the app extension runs on a clean app state. In particular, remove any files you previously wrote to the app container and ensure it’s empty. This simulates how the extension normally runs during a migration.
 

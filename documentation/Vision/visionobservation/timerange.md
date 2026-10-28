@@ -22,7 +22,7 @@ The time range of the reported observation.
 var timeRange: CMTimeRange? { get }
 ```
 
-#### Discussion
+## Discussion
 
 When evaluating a sequence of image buffers, use this property to determine each observation’s start time and duration. If a request doesn’t support time ranges, or the time range is unknown, the value of this property is `nil`.
 

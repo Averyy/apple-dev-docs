@@ -19,7 +19,7 @@ var spellCheckerDocumentTag: Int { get }
 @property (nonatomic, readonly) NSInteger spellCheckerDocumentTag;
 ```
 
-#### Discussion
+## Discussion
 
 A tag identifying the receiver’s text as a document for the spell-checker server. See the [`NSSpellChecker`](../../AppKit/nsspellchecker.md) and NSSpellServer class specifications for more information on how this tag is used.
 

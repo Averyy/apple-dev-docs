@@ -22,11 +22,11 @@ Writes a sequence of bytes to the current offset and then updates the offset.
 func writeAll<S>(_ sequence: S) throws -> Int where S : Sequence, S.Element == UInt8
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes written, equal to the number of elements in `sequence`.
 
-#### Discussion
+## Discussion
 
 This method either writes the entire contents of `sequence`, or throws an error if only part of the content was written.
 

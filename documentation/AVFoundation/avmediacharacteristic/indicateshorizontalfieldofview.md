@@ -24,7 +24,7 @@ static let indicatesHorizontalFieldOfView: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicIndicatesHorizontalFieldOfView;
 ```
 
-#### Discussion
+## Discussion
 
 This media characteristic is present when the [`CMVideoFormatDescription`](../../CoreMedia/cmvideoformatdescription.md) includes a [`kCMFormatDescriptionExtension_HorizontalFieldOfView`](../../CoreMedia/kcmformatdescriptionextension_horizontalfieldofview.md) extension. This is not an indication that the field of view is expanded beyond or more narrow than typical horizontal fields of view.
 

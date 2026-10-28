@@ -21,7 +21,7 @@ convenience init(address: String)
 + (instancetype) hostWithAddress:(NSString *) address;
 ```
 
-#### Return Value
+## Return Value
 
 The host for `address`.
 

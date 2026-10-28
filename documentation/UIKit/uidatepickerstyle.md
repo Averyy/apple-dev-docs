@@ -22,7 +22,7 @@ enum UIDatePickerStyle
 enum UIDatePickerStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 A date picker style determines how your app displays the date picker value and its editor. For instance, a date picker with a [`datePickerMode`](./uidatepicker/datepickermode.md) of [`UIDatePicker.Mode.dateAndTime`](./uidatepicker/mode/dateandtime.md) and [`datePickerStyle`](./uidatepicker/datepickerstyle.md) of [`UIDatePickerStyle.compact`](./uidatepickerstyle/compact.md) displays the date picker’s value as a label that the user can tap to view a calendar-style editor. On the other hand, the same date picker using the [`UIDatePickerStyle.inline`](./uidatepickerstyle/inline.md) style displays a view that lets the user edit the value without having to tap the label shown in the [`UIDatePickerStyle.compact`](./uidatepickerstyle/compact.md) style.
 

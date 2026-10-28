@@ -24,7 +24,7 @@ func MACaptionAppearanceGetDisplayType(_ domain: MACaptionAppearanceDomain) -> M
 extern MACaptionAppearanceDisplayType MACaptionAppearanceGetDisplayType(MACaptionAppearanceDomain domain);
 ```
 
-#### Return Value
+## Return Value
 
 A value representing options to use only forced captions, allow system locale to override the language of the audio track, or choose the best available captioning track from CC, SDH, or subtitles. See [`MACaptionAppearanceDisplayType`](./macaptionappearancedisplaytype.md).
 

@@ -28,7 +28,7 @@ struct AbsoluteConfigKey
 
 - [Using in-memory providers](./using-in-memory-providers.md)
 
-#### Overview
+## Overview
 
 Absolute configuration keys are similar to relative keys but represent complete paths from the root of the configuration hierarchy. The configuration system uses them internally after resolving key prefixes or scoping.
 

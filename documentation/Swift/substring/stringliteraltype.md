@@ -21,7 +21,7 @@ A type that represents a string literal.
 typealias StringLiteralType = String
 ```
 
-#### Discussion
+## Discussion
 
 Valid types for `StringLiteralType` are `String` and `StaticString`.
 

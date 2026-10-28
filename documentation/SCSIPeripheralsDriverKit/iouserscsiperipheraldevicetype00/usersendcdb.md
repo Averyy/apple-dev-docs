@@ -15,11 +15,11 @@ Sends a vendor-specific Command Descriptor Block (CDB) to the device.
 virtual kern_return_t UserSendCDB(SCSIType00OutParameters command, SCSIType00InParameters *response);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates the result of sending the CDB. [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) indicates success. [`kIOReturnNotPrivileged`](../../DriverKit/kioreturnnotprivileged.md) means that exclusive access isn’t available. [`kIOReturnBadArgument`](../../DriverKit/kioreturnbadargument.md) indicates that the command provided bad arguments. For all other error definitions, see [IOKit Constants](../../iokit/iokit_constants.md).
 
-#### Discussion
+## Discussion
 
 Call this method to deliver vendor-specific 16-byte commands to the external drive that this dext matches.
 

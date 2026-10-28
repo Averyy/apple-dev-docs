@@ -25,7 +25,7 @@ func setAddress(_ gpuAddress: MTLGPUAddress, attributeStride stride: Int, index 
 - (void) setAddress:(MTLGPUAddress) gpuAddress attributeStride:(NSUInteger) stride atIndex:(NSUInteger) bindingIndex;
 ```
 
-#### Discussion
+## Discussion
 
 This method requires that the value of property [`supportAttributeStrides`](../mtl4argumenttabledescriptor/supportattributestrides.md) on the descriptor from which you created this argument table is true.
 

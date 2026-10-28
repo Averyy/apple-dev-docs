@@ -19,7 +19,7 @@ The intensity value of the light, defined on a logarithmic scale.
 var intensityExponent: Float
 ```
 
-#### Discussion
+## Discussion
 
 An intensity factor is computed as `2^intensityExponent`. The computed value modulates the native value specified in the diffuse and specular textures.
 

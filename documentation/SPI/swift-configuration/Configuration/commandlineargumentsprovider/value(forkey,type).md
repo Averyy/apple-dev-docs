@@ -24,11 +24,11 @@ Returns the current value for the specified configuration key.
 func value(forKey key: AbsoluteConfigKey, type: ConfigType) throws -> LookupResult
 ```
 
-#### Return Value
+## Return Value
 
 The lookup result containing the value and encoded key, or nil if not found.
 
-#### Discussion
+## Discussion
 
 This method provides synchronous access to configuration values and should be efficient to call repeatedly. The returned value may change between calls if the underlying data source is mutable.
 

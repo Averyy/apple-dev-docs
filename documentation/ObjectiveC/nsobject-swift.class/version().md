@@ -25,11 +25,11 @@ class func version() -> Int
 + (NSInteger) version;
 ```
 
-#### Return Value
+## Return Value
 
 The version number assigned to the class.
 
-#### Discussion
+## Discussion
 
 If no version has been set, the default is `0`.
 
@@ -43,7 +43,7 @@ version = [MyClass version];
 
 Don’t simply send `version` to the return value of class—a subclass version number may be returned instead.
 
-##### Special Considerations
+### Special Considerations
 
 The version number applies to `NSArchiver`/`NSUnarchiver`, but not to `NSKeyedArchiver`/`NSKeyedUnarchiver`.  A keyed archiver does not encode class version numbers.
 

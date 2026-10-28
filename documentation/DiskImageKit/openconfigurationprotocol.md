@@ -15,7 +15,7 @@ The protocol for disk image open configurations.
 protocol OpenConfigurationProtocol
 ```
 
-#### Overview
+## Overview
 
 This protocol defines the common requirements for opening disk images. Conforming types can be used with [`init(opening:)`](./diskimage/init%28opening%29.md).
 

@@ -21,11 +21,11 @@ init(chargingStationConnection: CPChargingStationConnection, handler: ((CPMapPan
 - (instancetype) initWithChargingStationConnection:(CPChargingStationConnection *) chargingStationConnection handler:(void (^)(CPMapPanelItem *item, dispatch_block_t completionBlock)) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A map panel item initialized with charging information.
 
-#### Discussion
+## Discussion
 
 For this type of item, the map panel displays the charging connector type and the supported power and voltage outputs.
 

@@ -17,7 +17,7 @@ return the equivalent of a `.none` MLXArray (for the C API).
 static var mlxNone: MLXArray { get }
 ```
 
-#### Discussion
+## Discussion
 
 Not called `.none` to avoid ambiguity with `Optional`.  This can be used to pass an optional [`MLXArray`](../mlxarray.md) as a non-optional (but possibly empty/null) `mlx_array`:
 

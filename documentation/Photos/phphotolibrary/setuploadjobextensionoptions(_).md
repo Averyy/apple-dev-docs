@@ -22,7 +22,7 @@ func setUploadJobExtensionOptions(_ options: PHAssetResourceUploadJobOptions) th
 - (BOOL) setUploadJobExtensionOptions:(PHAssetResourceUploadJobOptions *) options error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 To reset the configuration’s options to their default values, pass a newly-initialized `PHAssetResourceUploadJobOptions` instance.
 

@@ -27,7 +27,7 @@ class BGTaskScheduler
 
 - [Performing long-running tasks on iOS and iPadOS](./performing-long-running-tasks-on-ios-and-ipados.md)
 
-#### Overview
+## Overview
 
 Background tasks give your app a way to run code even when the app is suspended:
 

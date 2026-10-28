@@ -21,7 +21,7 @@ Returns the vector that results from applying an affine transform to the vector.
 func applying(_ transform: AffineTransform3D) -> Vector3D
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The transformed primitive.
 

@@ -12,7 +12,7 @@ bool isModuleLoaded(
  const char *moduleName ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the associated kernel module has been loaded into the kernel.
 

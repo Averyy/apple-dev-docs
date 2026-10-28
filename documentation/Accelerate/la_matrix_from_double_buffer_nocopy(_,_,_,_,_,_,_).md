@@ -25,11 +25,11 @@ func la_matrix_from_double_buffer_nocopy(_ buffer: UnsafeMutablePointer<Double>,
 extern la_object_tla_matrix_from_double_buffer_nocopy(double *buffer, la_count_t matrix_rows, la_count_t matrix_cols, la_count_t matrix_row_stride, la_hint_t matrix_hint, la_deallocator_t deallocator, la_attribute_t attributes);
 ```
 
-#### Return Value
+## Return Value
 
 A new la_object_t object representing the matrix.
 
-#### Discussion
+## Discussion
 
 Create a matrix using data from a buffer of doubles.  Ownership of the buffer is transferred from the caller to the returned object.
 

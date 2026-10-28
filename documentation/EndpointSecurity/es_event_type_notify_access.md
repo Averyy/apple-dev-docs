@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_ACCESS: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_ACCESS
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`access`](./es_events_t/access.md), which has the type [`es_event_access_t`](./es_event_access_t.md).
 

@@ -15,7 +15,7 @@ Data provider for visual fidelity monitoring.
 typedef NSObject<OS_ar_visual_fidelity_provider> * ar_visual_fidelity_provider_t;
 ```
 
-#### Discussion
+## Discussion
 
 Monitors user eye positioning within the optimal device fit range and verifies field of view against a configured specification. Delivers periodic updates via the fidelity data stream.
 

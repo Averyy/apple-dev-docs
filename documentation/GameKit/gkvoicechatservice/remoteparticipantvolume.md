@@ -25,7 +25,7 @@ var remoteParticipantVolume: Float { get set }
 @property (nonatomic) float remoteParticipantVolume;
 ```
 
-#### Discussion
+## Discussion
 
 The value should be between `0.0` (muted) and `1.0` (full volume). The default is `1.0`.
 

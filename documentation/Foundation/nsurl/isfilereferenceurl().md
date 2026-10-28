@@ -25,7 +25,7 @@ func isFileReferenceURL() -> Bool
 - (BOOL) isFileReferenceURL;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the URL is a file reference URL; otherwise, [`false`](../../Swift/false.md).
 

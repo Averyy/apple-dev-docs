@@ -23,7 +23,7 @@ var hasUncommittedUpdates: Bool { get }
 @property (nonatomic, readonly) BOOL hasUncommittedUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), avoid making any significant changes to the collection view. Specifically, don’t reload the collection view’s data, as doing so deletes all placeholders and recreates items from the data source.
 

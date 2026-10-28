@@ -11,7 +11,7 @@ Abstract declaration of getRetainCount().
 virtual int getRetainCount() const = 0;
 ```
 
-#### Overview
+## Overview
 
 See OSObject::getRetainCount().
 

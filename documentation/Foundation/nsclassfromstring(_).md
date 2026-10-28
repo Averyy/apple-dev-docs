@@ -25,7 +25,7 @@ func NSClassFromString(_ aClassName: String) -> AnyClass?
 extern ClassNSClassFromString(NSString *aClassName);
 ```
 
-#### Return Value
+## Return Value
 
 The class object named by `aClassName`, or `nil` if no class by that name is currently loaded. If `aClassName` is `nil`, returns `nil`.
 

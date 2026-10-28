@@ -12,7 +12,7 @@ virtual IOReturn addPowerChild(
  IOService *theChild );
 ```
 
-#### Overview
+## Overview
 
 The Platform Expert uses this method to call a driver and introduce it to a new child. This call is handled internally by power management. It is not intended to be overridden or called by drivers.
 

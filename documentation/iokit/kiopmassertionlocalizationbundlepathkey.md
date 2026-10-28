@@ -16,7 +16,7 @@ Refers to a CFURL, as a CFString, identifying the path to the caller's bundle, w
 #define kIOPMAssertionLocalizationBundlePathKey
 ```
 
-#### Discussion
+## Discussion
 
 The bundle must contain localizations for [`kIOPMAssertionHumanReadableReasonKey`](./kiopmassertionhumanreadablereasonkey.md)
 

@@ -25,7 +25,7 @@ enum AVAudioEngineManualRenderingMode
 enum AVAudioEngineManualRenderingMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 By default, the engine connects to an audio device and automatically renders in real time. You can configure it to operate in manual rendering mode, where it doesn’t have a connection to an audio device and renders in response to requests from the client.
 

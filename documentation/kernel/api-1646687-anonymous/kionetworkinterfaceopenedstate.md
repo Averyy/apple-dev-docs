@@ -13,7 +13,7 @@
 kIONetworkInterfaceOpenedState = 0x2
 ```
 
-#### Discussion
+## Discussion
 
 One or more clients have an open on the interface object.
 

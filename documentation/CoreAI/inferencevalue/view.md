@@ -19,7 +19,7 @@ A borrowed, read-only view of an inference value.
 struct View
 ```
 
-#### Overview
+## Overview
 
 Use views to pass input values to [`InferenceFunction.Inputs`](../inferencefunction/inputs.md) without transferring ownership.
 

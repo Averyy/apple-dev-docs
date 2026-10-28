@@ -10,7 +10,7 @@ Translate the position and velocity of tracked handheld accessories to throw vir
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 Accessories enhance the experience of Apple Vision Pro, and offer added functionality and flexibility by supporting fine control, novel input methods, and custom experiences. You can use ARKit to locate and track accessories, converting their real-world motion into app-accessible data. Specifically, ARKit supports high-frequency tracking of an accessory’s position and orientation, which it derives velocity and angular velocity information from. Additionally, ARKit provides methods to convert the real-world tracking information to the relevant coordinate spaces in your app.
 
@@ -22,7 +22,7 @@ Some experiences may require accessories, but most let people perform tasks with
 
 This sample code project creates a carnival-like experience with a set of stacked cans in a crate. The cans have physics bodies and are subject to gravity, causing them to fall when a thrown tennis ball strikes them. The crate fills the volume that contains it, and the app tracks accessories when it locates them within the volume. The sample uses tracking information to place a virtual tennis ball model over an onscreen accessory. A quick, tossing motion throws the ball, knocking down the cans, and a rapid set of clockwise and counterclockwise rotations sets them up again.
 
-##### Set up the sample
+### Set up the sample
 
 The sample adds an [`NSAccessoryTrackingUsageDescription`](../BundleResources/information-property-list/nsaccessorytrackingusagedescription.md) to the information property list file with a description of how the app uses the tracking information. Additionally, a [`GCSupportedGameControllers`](../BundleResources/information-property-list/gcsupportedgamecontrollers.md) entry with a `SpatialGamepad` type is required for the  [Game Controller](../GameController/GameController.md) framework to return controllers when requested. To track the controllers, the app needs to listen for accessories the system adds and removes by observing the [`GCControllerDidConnect`](../Foundation/nsnotification/name-swift.struct/gccontrollerdidconnect.md) and [`GCControllerDidDisconnect`](../Foundation/nsnotification/name-swift.struct/gccontrollerdiddisconnect.md) notifications of the GameController framework.
 
@@ -89,7 +89,7 @@ private func monitorARKitSessionEvents() async {
 }
 ```
 
-##### Track accessories
+### Track accessories
 
 Within its tracking code, the sample requests all available controllers with [`controllers()`](../GameController/gccontroller/controllers%28%29.md). Create a trackable ARKit [`Accessory`](./accessory.md) object from the returned [`GCController`](../GameController/gccontroller.md) device. Passing the available accessories to the [`AccessoryTrackingProvider`](./accessorytrackingprovider.md) allows the sample to access [`Anchor`](./anchor.md) updates when running in an [`ARSession`](./arsession.md) object. Accessory events are available asynchronously from [`anchorUpdates`](./accessorytrackingprovider/anchorupdates.md). During tracking, the sample performs several operations — verifying the controllers presence within the volume, syncing the tennis ball position with the controllers, and checking for the player performing a throw or shake action.
 
@@ -122,7 +122,7 @@ if let realityViewFromAimPointTransform = try? realityViewOrigin.transform(from:
 }
 ```
 
-##### Create throw and reset gestures
+### Create throw and reset gestures
 
 During anchor update processing, the sample handles the tennis ball throw and shake to reset action checking. The app triggers a throw by tracking the peak velocity of the accessory, and determining when the current velocity decreases by 0.6 m/s. The app provides the accessory’s velocity as a 3D vector in the accessory anchor’s local coordinate space. To obtain the correct velocity, the app transforms the vector relative to the `gameRoot` coordinate space with the `convert(value:, to:)` method. To strike the cans, the ball associated with the tossing accessory anchor sustains a velocity matching that of the anchor. If the system doesn’t register a throw within 1 second, it resets the throw tracking.
 

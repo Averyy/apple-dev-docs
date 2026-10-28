@@ -25,11 +25,11 @@ func value(forHTTPHeaderField field: String) -> String?
 - (NSString *) valueForHTTPHeaderField:(NSString *) field;
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with the given header field, or `nil` if no value is associated with the field.
 
-#### Discussion
+## Discussion
 
 In keeping with the HTTP RFC, HTTP header field names are case-insensitive.
 

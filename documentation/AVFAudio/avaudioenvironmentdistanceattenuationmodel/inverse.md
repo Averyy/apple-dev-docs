@@ -25,7 +25,7 @@ case inverse
 AVAudioEnvironmentDistanceAttenuationModelInverse
 ```
 
-#### Discussion
+## Discussion
 
 The framework calculates this value as `distanceGain = referenceDistance / (referenceDistance + rolloffFactor * (distance – referenceDistance))`.
 

@@ -25,11 +25,11 @@ func vImageCVImageFormat_GetChannelDescription(_ format: vImageConstCVImageForma
 const vImageChannelDescription *vImageCVImageFormat_GetChannelDescription(vImageConstCVImageFormatRef format, vImageBufferTypeCode type);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a [`vImageChannelDescription`](./vimagechanneldescription.md) structure that contains the channel description.
 
-#### Discussion
+## Discussion
 
 The functions that create Core Video image formats, such as [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](./vimagecvimageformat_createwithcvpixelbuffer%28_%29.md), return a [`vImageCVImageFormat`](./vimagecvimageformat.md). The following code shows how you create a [`vImageConstCVImageFormat`](./vimageconstcvimageformat.md) representation of a [`vImageCVImageFormat`](./vimagecvimageformat.md) instance to pass to [`vImageCVImageFormat_GetChannelDescription(_:_:)`](./vimagecvimageformat_getchanneldescription%28_,_%29.md):
 

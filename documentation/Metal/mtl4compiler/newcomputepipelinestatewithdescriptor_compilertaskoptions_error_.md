@@ -20,7 +20,7 @@ Creates a new compute pipeline state object synchronously.
 - (id<MTLComputePipelineState>) newComputePipelineStateWithDescriptor:(MTL4ComputePipelineDescriptor *) descriptor compilerTaskOptions:(MTL4CompilerTaskOptions *) compilerTaskOptions error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new compute pipeline state object upon success, `nil` otherwise.
 

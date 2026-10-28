@@ -24,7 +24,7 @@ var kAudioQueueParam_Volume: AudioQueueParameterID { get }
 kAudioQueueParam_Volume
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to control an audio queue’s volume relative to other audio output.
 

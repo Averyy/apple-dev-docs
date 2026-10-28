@@ -20,7 +20,7 @@ optional func pathControl(_ pathControl: NSPathControl, acceptDrop info: any NSD
 - (BOOL) pathControl:(NSPathControl *) pathControl acceptDrop:(id<NSDraggingInfo>) info;
 ```
 
-#### Discussion
+## Discussion
 
 In order to accept the dropped contents previously accepted from [`pathControl(_:validateDrop:)`](./pathcontrol%28_,validatedrop%29.md), you must implement this method. This method is called from performDragOperation:. You should change the URL value based on the dragged information.
 

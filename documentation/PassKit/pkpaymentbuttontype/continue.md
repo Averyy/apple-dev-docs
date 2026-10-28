@@ -24,7 +24,7 @@ case `continue`
 PKPaymentButtonTypeContinue
 ```
 
-#### Discussion
+## Discussion
 
 This button looks like:
 

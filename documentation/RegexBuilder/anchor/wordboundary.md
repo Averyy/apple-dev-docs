@@ -21,7 +21,7 @@ An anchor that matches at a word boundary.
 static var wordBoundary: Anchor { get }
 ```
 
-#### Discussion
+## Discussion
 
 Word boundaries are identified using the Unicode default word boundary algorithm by default. To specify a different word boundary algorithm, use the `wordBoundaryKind(_:)` method.
 

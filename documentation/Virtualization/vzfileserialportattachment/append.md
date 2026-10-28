@@ -19,7 +19,7 @@ var append: Bool { get }
 @property (readonly) BOOL append;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the virtual machine appends new data to the file; otherwise, it replaces the existing contents of the file before writing new data to it.
 

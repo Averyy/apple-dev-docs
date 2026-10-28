@@ -25,7 +25,7 @@ var kCMBufferQueueError_InvalidTriggerCondition: OSStatus { get }
 kCMBufferQueueError_InvalidTriggerCondition
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that a trigger condition isn’t a value from the CMBufferQueueTriggerCondition enum, or the trigger condition isn’t supported by a buffer queue.
 

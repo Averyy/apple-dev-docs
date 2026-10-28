@@ -14,7 +14,7 @@
 es_string_token_t file_path;
 ```
 
-#### Discussion
+## Discussion
 
 Structure for handling strings
 

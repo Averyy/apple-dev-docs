@@ -30,7 +30,7 @@ func performRequests()
 - [Authenticating people by using passkeys in browser apps](../authenticating-people-by-using-passkeys-in-browser-apps.md)
 - [Supporting passkeys](../supporting-passkeys.md)
 
-#### Discussion
+## Discussion
 
 When authorization succeeds, the system relays that information to the controller’s [`delegate`](./delegate.md) by calling the [`authorizationController(controller:didCompleteWithAuthorization:)`](../asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewithauthorization%29.md) method with an authorization instance. If authorization fails, the system calls the [`authorizationController(controller:didCompleteWithError:)`](../asauthorizationcontrollerdelegate/authorizationcontroller%28controller,didcompletewitherror%29.md) method instead.
 

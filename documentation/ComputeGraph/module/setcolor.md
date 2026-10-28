@@ -16,7 +16,7 @@ Sets the color of an element to the specified RGBA value.
 void module::setColor(half4 color)
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to change the visual appearance of an element by assigning a new color with alpha channel.
 

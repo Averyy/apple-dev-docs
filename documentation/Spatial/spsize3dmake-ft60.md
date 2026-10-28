@@ -19,11 +19,11 @@
 static SPSize3D SPSize3DMake(SPSize3DFloat size);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 
-#### Discussion
+## Discussion
 
 Returns a double-precision size from a single-precision size.
 

@@ -15,7 +15,7 @@ A resource—such as an album, song, or playlist.
 object Resource
 ```
 
-#### Discussion
+## Discussion
 
 A Resource object may contain just these identifier members: `id`, `type`, `href`, and `meta`.
 

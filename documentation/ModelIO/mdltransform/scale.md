@@ -24,7 +24,7 @@ var scale: vector_float3 { get set }
 @property (nonatomic, readwrite) vector_float3 scale;
 ```
 
-#### Discussion
+## Discussion
 
 Together with the [`translation`](./translation.md), [`rotation`](./rotation.md), and [`shear`](./shear.md) properties, this property defines the local coordinate space for any object affected by the transform, relative to a parent coordinate space. Use the [`matrix`](../mdltransformcomponent/matrix.md) property to work with the complete transform.
 

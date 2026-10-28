@@ -21,7 +21,7 @@ A type that indicates how the stream terminated.
 enum Termination
 ```
 
-#### Overview
+## Overview
 
 The `onTermination` closure receives an instance of this type.
 

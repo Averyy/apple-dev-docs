@@ -17,7 +17,7 @@ Sliding / rotating attention window ([`RotatingKVCache`](../rotatingkvcache.md))
 case rotatingAttention(maxSize: Int, keep: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Used both for architecture-imposed sliding-window attention and for caller-requested capacity limits on full-attention layers.
 

@@ -22,7 +22,7 @@ Creates an instance from a string interpolation.
 init(stringInterpolation: Self.StringInterpolation)
 ```
 
-#### Discussion
+## Discussion
 
 Most `StringInterpolation` types will store information about the literals and interpolations appended to them in one or more properties. `init(stringInterpolation:)` should use these properties to initialize the instance.
 

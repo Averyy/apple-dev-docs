@@ -21,7 +21,7 @@ A change indicating a sign-out of an iCloud account.
 case signOut(previousUser: CKRecord.ID)
 ```
 
-#### Discussion
+## Discussion
 
 You should delete any locally-stored data for the previous account.
 

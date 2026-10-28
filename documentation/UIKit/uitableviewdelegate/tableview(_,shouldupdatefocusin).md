@@ -23,11 +23,11 @@ optional func tableView(_ tableView: UITableView, shouldUpdateFocusIn context: U
 - (BOOL) tableView:(UITableView *) tableView shouldUpdateFocusInContext:(UITableViewFocusUpdateContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the focus should update; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The functionality of this delegate method is equivalent to overriding [`UITableView`](../uitableview.md) class’s  [`shouldUpdateFocus(in:)`](../uifocusenvironment/shouldupdatefocus%28in%29.md) method. This delegate method provides additional [`UITableView`](../uitableview.md)-related information in its context parameter, such as the index paths for the previously and next focused views. Note that, these index paths are only available if their views are contained within the table view. To learn more about the information provided by the context, see [`UITableViewFocusUpdateContext`](../uitableviewfocusupdatecontext.md).
 

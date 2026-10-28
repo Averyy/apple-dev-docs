@@ -25,7 +25,7 @@ static let familyShared: Transaction.OwnershipType
 
 - [Testing Family Sharing](../../testing-family-sharing.md)
 
-#### Discussion
+## Discussion
 
 For more information about Family Sharing, see [Turn on Family Sharing for Apple In-App Purchases](https://help.apple.com/app-store-connect/#/dev45b03fab9).
 

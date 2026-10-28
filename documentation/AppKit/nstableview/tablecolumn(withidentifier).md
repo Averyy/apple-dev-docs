@@ -19,7 +19,7 @@ func tableColumn(withIdentifier identifier: NSUserInterfaceItemIdentifier) -> NS
 - (NSTableColumn *) tableColumnWithIdentifier:(NSUserInterfaceItemIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSTableColumn` object for the first column whose identifier is equal to `anObject` (when compared using `isEqual:`), or `nil` if no columns are found with the specified identifier.
 

@@ -10,7 +10,7 @@ framework: "mlx-swift/MLX"
 
 Considerations for running on iOS and general memory tuning.
 
-#### Controlling Memory Use
+## Controlling Memory Use
 
 iOS devices have a feature called [jetsam](https://developer.apple.com/documentation/xcode/identifying-high-memory-use-with-jetsam-event-reports) which will terminate processes if they use too much memory.
 
@@ -67,7 +67,7 @@ Decreasing the cache limit to 0 will result in decreased performance due to the 
 
 Finally, if the device your code runs on has more RAM than the jetsam limit would normally allow, you can use the [Increased Memory Limit](https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_developer_kernel_increased-memory-limit) entitlement.
 
-#### Developing for iOS
+## Developing for iOS
 
 Typically developers use the [iOS simulator](https://developer.apple.com/documentation/xcode/running-your-app-in-simulator-or-on-a-device/) to develop new iOS applications.  It gives you an easy way to configure different device types.
 

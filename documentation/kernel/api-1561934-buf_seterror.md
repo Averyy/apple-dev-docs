@@ -15,7 +15,7 @@ Set an error value on a buffer.
 void buf_seterror(buf_t bp, errno_t);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

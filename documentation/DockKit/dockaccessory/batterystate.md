@@ -18,7 +18,7 @@ A struct that represents an accessory battery state.
 struct BatteryState
 ```
 
-#### Overview
+## Overview
 
 This state is emitted when the battery level changes on accessory.
 

@@ -19,7 +19,7 @@ var contentFilters: [CIFilter] { get set }
 @property (copy) NSArray<__kindof CIFilter *> * contentFilters;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`CIFilter`](../../CoreImage/cifilter-swift.class.md) objects. This array represents the filters stored in the [`filters`](../../QuartzCore/calayer/filters.md) property of the view’s layer. If the view does not have a layer, setting the value of this property has no effect.
 

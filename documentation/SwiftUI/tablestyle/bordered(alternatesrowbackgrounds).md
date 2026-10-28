@@ -20,7 +20,7 @@ The table style that describes the behavior and appearance of a table with stand
 
 Available when `Self` is `BorderedTableStyle`.
 
-#### Discussion
+## Discussion
 
 Bordered tables are expected to be inset from their outer containers, but do not have inset style rows or selection.
 

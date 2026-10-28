@@ -21,11 +21,11 @@ Returns the result of combining the elements of the sequence using the given clo
 func reduce<Result>(into initialResult: Result, _ updateAccumulatingResult: (inout Result, Self.Element) throws -> ()) rethrows -> Result
 ```
 
-#### Return Value
+## Return Value
 
 The final accumulated value. If the sequence has no elements, the result is `initialResult`.
 
-#### Discussion
+## Discussion
 
 Use the `reduce(into:_:)` method to produce a single value from the elements of an entire sequence. For example, you can use this method on an array of integers to filter adjacent equal entries or count frequencies.
 

@@ -27,7 +27,7 @@ func sendToRemoteWorkoutSession(data: Data) async throws
 - (void) sendDataToRemoteWorkoutSession:(NSData *) data completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to send data to your remote workout session. You can send data from either the [`HKWorkoutSessionType.mirrored`](../hkworkoutsessiontype/mirrored.md) or [`HKWorkoutSessionType.primary`](../hkworkoutsessiontype/primary.md) session.
 

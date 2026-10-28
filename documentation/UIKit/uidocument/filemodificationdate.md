@@ -22,7 +22,7 @@ var fileModificationDate: Date? { get set }
 @property (copy, nullable) NSDate * fileModificationDate;
 ```
 
-#### Discussion
+## Discussion
 
 The modification date is updated by the [`open(completionHandler:)`](./open%28completionhandler%29.md), [`save(to:for:completionHandler:)`](./save%28to,for,completionhandler%29.md), and [`revert(toContentsOf:completionHandler:)`](./revert%28tocontentsof,completionhandler%29.md) methods. Its value is `nil` if none of these methods has completed successfully at least once. If you override any of these methods, you should be sure to set this property in your implementation.
 

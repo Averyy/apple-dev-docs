@@ -16,7 +16,7 @@ A list of errors resulting from the coupon code update.
 sequence <ApplePayError> errors;
 ```
 
-#### Discussion
+## Discussion
 
 List the errors in order of importance.
 

@@ -25,7 +25,7 @@ func linkItem(at srcURL: URL, to dstURL: URL) throws
 - (BOOL) linkItemAtURL:(NSURL *) srcURL toURL:(NSURL *) dstURL error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create hard links between files in the current file system. If `srcURL` is a directory, this method creates a new directory at `dstURL` and then creates hard links for the items in that directory. If `srcURL` is (or contains) a symbolic link, the symbolic link is copied and not converted to a hard link at `dstURL`.
 

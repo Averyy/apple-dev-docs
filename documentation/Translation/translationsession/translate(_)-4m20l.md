@@ -18,11 +18,11 @@ Translates a single string of text.
 func translate(_ string: String) async throws -> TranslationSession.Response
 ```
 
-#### Return Value
+## Return Value
 
 The response containing the text translation.
 
-#### Discussion
+## Discussion
 
 This function translates a single line of text and might display different UI depending on the state of the translation. The app doesn’t need to install the required languages before calling this method.
 

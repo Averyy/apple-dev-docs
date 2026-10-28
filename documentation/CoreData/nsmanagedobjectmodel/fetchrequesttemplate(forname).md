@@ -25,11 +25,11 @@ func fetchRequestTemplate(forName name: String) -> NSFetchRequest<any NSFetchReq
 - (NSFetchRequest *) fetchRequestTemplateForName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 The fetch request named `name`.
 
-#### Discussion
+## Discussion
 
 If the template contains substitution variables, you should instead use [`fetchRequestFromTemplate(withName:substitutionVariables:)`](./fetchrequestfromtemplate%28withname,substitutionvariables%29.md) to create a new fetch request.
 

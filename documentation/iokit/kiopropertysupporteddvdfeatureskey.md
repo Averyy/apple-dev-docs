@@ -14,7 +14,7 @@
 #define kIOPropertySupportedDVDFeaturesKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to define the supported DVD Features for a particular optical device and it has an associated bitfield. See <IOKit/scsi/IOSCSIMultimediaCommandsDevice.h> for definitions of the bits and associated bitmasks.
 

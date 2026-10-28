@@ -23,7 +23,7 @@ var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy { get set }
 @property (nonatomic) NSLineBreakStrategy lineBreakStrategy;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`standard`](../nsparagraphstyle/linebreakstrategy-swift.struct/standard.md).
 

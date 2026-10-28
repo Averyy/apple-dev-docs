@@ -21,7 +21,7 @@ func TVTopShelfImageSize(shape: TVContentItemImageShape, style: TVTopShelfConten
 extern CGSize TVTopShelfImageSizeForShape(TVContentItemImageShape shape, TVTopShelfContentStyle style);
 ```
 
-#### Discussion
+## Discussion
 
 Call this function to determine the ideal image size to use to avoid image scaling. Typically, if your app has access to multiple images for a given piece of content, you use this function to choose which image most closely matches the ideal size for the version of the operating system that your app is running on. An image provided in that size does not require any image scaling. If you request the size of a shape that is not allowed in the given style, the function returns [`CGSizeZero`](../CoreGraphics/cgsizezero.md).
 

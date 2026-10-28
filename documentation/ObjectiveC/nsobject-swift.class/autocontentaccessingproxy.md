@@ -25,7 +25,7 @@ var autoContentAccessingProxy: Any { get }
 @property (retain, readonly) id autoContentAccessingProxy;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns a proxy for the receiving object if the receiver adopts the [`NSDiscardableContent`](../../Foundation/nsdiscardablecontent.md) protocol and still has content that has not been discarded.
 

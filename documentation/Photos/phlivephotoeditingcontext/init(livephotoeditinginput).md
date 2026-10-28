@@ -24,11 +24,11 @@ init?(livePhotoEditingInput livePhotoInput: PHContentEditingInput)
 - (instancetype) initWithLivePhotoEditingInput:(PHContentEditingInput *) livePhotoInput;
 ```
 
-#### Return Value
+## Return Value
 
 A new Live Photo editing context, or `nil` if the provided content editing input does not represent a Live Photo.
 
-#### Discussion
+## Discussion
 
 In an app using the Photos framework, you obtain a [`PHContentEditingInput`](../phcontenteditinginput.md) object by calling [`requestContentEditingInput(with:completionHandler:)`](../phasset/requestcontenteditinginput%28with,completionhandler%29.md) method of a [`PHAsset`](../phasset.md) object that you’ve previously fetched.
 

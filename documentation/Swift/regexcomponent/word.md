@@ -23,7 +23,7 @@ static var word: CharacterClass { get }
 
 Available when `Self` is `CharacterClass`.
 
-#### Discussion
+## Discussion
 
 This character class is equivalent to `\w` in regex syntax.
 

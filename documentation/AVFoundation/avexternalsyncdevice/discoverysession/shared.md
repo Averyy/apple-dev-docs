@@ -23,7 +23,7 @@ class var shared: AVExternalSyncDevice.DiscoverySession? { get }
 @property (class, readonly, nullable) AVExternalSyncDeviceDiscoverySession * sharedSession;
 ```
 
-#### Discussion
+## Discussion
 
 Access the one and only external sync device discovery session on this host device using this method. `sharedSession` returns `nil` if the host device doesn’t support external sync devices.
 

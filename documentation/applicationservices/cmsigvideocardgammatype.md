@@ -13,7 +13,7 @@
 var cmSigVideoCardGammaType: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Constant that specifies video card gamma type signature in a video card gamma profile tag. That is, you use this constant to set the `typeDescriptor` field of the [`CMVideoCardGammaType`](./cmvideocardgammatype.md) structure. There is currently only one type possible for a video card gamma tag.
 

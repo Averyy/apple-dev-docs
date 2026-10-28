@@ -25,7 +25,7 @@ func CFNumberFormatterSetFormat(_ formatter: CFNumberFormatter!, _ formatString:
 extern void CFNumberFormatterSetFormat(CFNumberFormatterRef formatter, CFStringRef formatString);
 ```
 
-#### Discussion
+## Discussion
 
 The format string may override other properties previously set using other functions. If this function is not called, the default value of the format string is derived from the number formatter’s style.
 

@@ -24,7 +24,7 @@ var contourCount: Int { get }
 @property (readonly) NSInteger contourCount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to determine the number of indices available for calling [`contour(at:)`](./contour%28at%29-9on0y.md).
 

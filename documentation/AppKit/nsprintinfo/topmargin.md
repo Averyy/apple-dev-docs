@@ -19,7 +19,7 @@ var topMargin: CGFloat { get set }
 @property CGFloat topMargin;
 ```
 
-#### Discussion
+## Discussion
 
 Size is measured in points in the user coordinate space.
 

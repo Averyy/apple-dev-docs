@@ -23,7 +23,7 @@ var isSystemRequest: Bool { get }
 @property (nonatomic, readonly) BOOL isSystemRequest;
 ```
 
-#### Discussion
+## Discussion
 
 System requests occur, for example, when the system needs to update a file after receiving a push notification about a change from the remote storage.
 

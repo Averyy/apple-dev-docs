@@ -20,7 +20,7 @@ Indicates whether you can inspect the page with Safari Web Inspector.
 final var isInspectable: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set to `true` at any point in the page’s lifetime to allow Safari Web Inspector access to inspect the view’s content. Then, select your view in Safari’s Develop menu for either your computer or an attached device to inspect it.
 

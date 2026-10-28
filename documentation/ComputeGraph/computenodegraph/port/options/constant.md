@@ -21,7 +21,7 @@ Port is constant and doesn’t need to be changeable.
 static let constant: ComputeNodeGraph.Port.Options
 ```
 
-#### Discussion
+## Discussion
 
 Parameters with [`constant`](./constant.md) that are available at compile time can aid in optimization.
 

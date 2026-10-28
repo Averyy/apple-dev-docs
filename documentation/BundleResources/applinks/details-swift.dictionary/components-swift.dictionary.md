@@ -20,7 +20,7 @@ Patterns that define the universal links an app can open.
 object applinks.Details.Components
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to define whether an associated app can open specific URLs in this domain as universal links.
 

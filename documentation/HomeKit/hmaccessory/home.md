@@ -22,7 +22,7 @@ weak var home: HMHome? { get }
 @property (nonatomic, weak, readonly, nullable) HMHome * home;
 ```
 
-#### Discussion
+## Discussion
 
 The home containing the accessory.
 

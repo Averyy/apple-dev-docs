@@ -18,11 +18,11 @@ Return an IOMemoryDescriptor to be mapped into the client task.
 virtual kern_return_t CopyClientMemoryForType(uint64_t type, uint64_t *options, IOMemoryDescriptor **memory);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success. See IOReturn.h for error codes.
 
-#### Discussion
+## Discussion
 
 IOConnectMapMemory()/UnmapMemory() will result in a call to this method to obtain an IOMemoryDescriptor instance for shared memory. For a given IOUserClient instance, calling CopyClientMemoryForType() with a given type, should return the same IOMemoryDescriptor instance.
 

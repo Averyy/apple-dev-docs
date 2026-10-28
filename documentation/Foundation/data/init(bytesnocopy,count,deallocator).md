@@ -21,7 +21,7 @@ Creates a data buffer with memory content without copying the bytes.
 init(bytesNoCopy bytes: UnsafeMutableRawPointer, count: Int, deallocator: Data.Deallocator)
 ```
 
-#### Discussion
+## Discussion
 
 If the result is mutated and is not a unique reference, then the `Data` will still follow copy-on-write semantics. In this case, the copy will use its own deallocator. Therefore, it is usually best to only use this initializer when you either enforce immutability with `let` or ensure that no other references to the underlying data are formed.
 

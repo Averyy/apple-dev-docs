@@ -19,11 +19,11 @@ init!(frame: NSRect)
 - (id) initWithFrame:(NSRect) frame;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a `QLPreviewView` object with the designated frame and the default style.
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to calling [`init(frame:style:)`](./init%28frame,style%29.md) with the `style` parameter being [`QLPreviewViewStyle.normal`](../qlpreviewviewstyle/normal.md).
 

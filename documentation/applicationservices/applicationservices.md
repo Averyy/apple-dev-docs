@@ -9,7 +9,7 @@ Perform common application tasks.
 - Mac Catalyst 13.0+
 - macOS 10.0+
 
-#### Overview
+## Overview
 
 This collection of documents provides the API reference for the Application Services framework, which includes several services that are essential to Carbon applications. The Application Services framework also includes support for a number of legacy technologies—such as QuickDraw and the Font Manager—that have been superseded with newer technologies like Quartz 2D and ATSUI. 
 

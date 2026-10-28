@@ -18,7 +18,7 @@ Header used for most CareKit cards.
 struct HeaderView
 ```
 
-### Style
+## Style
 
 The image color can be set using the `.foregroundColor` modifier on the `HeaderView`. The card also supports styling using `careKitStyle(_:)`.
 

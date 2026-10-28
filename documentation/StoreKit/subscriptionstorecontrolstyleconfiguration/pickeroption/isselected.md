@@ -20,7 +20,7 @@ A Boolean value that indicates whether the picker option is in a selected state.
 let isSelected: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`isSelected`](./isselected.md) property to display a selection indicator, such as a checkmark, in its correct state. The following code example shows a checkmark when [`isSelected`](./isselected.md) is true:
 

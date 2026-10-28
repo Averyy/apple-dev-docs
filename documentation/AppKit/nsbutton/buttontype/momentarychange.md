@@ -19,7 +19,7 @@ case momentaryChange
 NSButtonTypeMomentaryChange
 ```
 
-#### Discussion
+## Discussion
 
 When the value of [`isHighlighted`](../../nscontrol/ishighlighted.md) is [`true`](../../../Swift/true.md), the button displays its alternate content (for example, its [`alternateImage`](../alternateimage.md) or [`alternateTitle`](../alternatetitle.md)). If the button has no alternate content to display, it may instead draw its normal content using an illuminated effect. When [`isHighlighted`](../../nscontrol/ishighlighted.md) is [`false`](../../../Swift/false.md), the button displays its normal content (for example, its [`image`](../image.md) or [`title`](../title.md)).
 

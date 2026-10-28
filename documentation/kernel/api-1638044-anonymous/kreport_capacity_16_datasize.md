@@ -13,7 +13,7 @@
 kREPORT_CAPACITY_16_DataSize = 32
 ```
 
-#### Discussion
+## Discussion
 
 Data size for a READ_CAPACITY_16 command.
 

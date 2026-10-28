@@ -18,7 +18,7 @@ Creates a new parsing configuration with the default values.
 init(excludeScheme: Bool = true, domain: NEURLFilterManager.ParsingConfiguration.DomainOptions = DomainOptions(), path: NEURLFilterManager.ParsingConfiguration.PathOptions = PathOptions(), query: NEURLFilterManager.ParsingConfiguration.QueryOptions = QueryOptions(), excludeFragment: Bool = false, excludeIntermediates: Bool = false, caseSensitive: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 The configuration’s default behavior is as follows:
 

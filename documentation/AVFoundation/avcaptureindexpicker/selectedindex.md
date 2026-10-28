@@ -23,7 +23,7 @@ var selectedIndex: Int { get set }
 @property (nonatomic, assign) NSInteger selectedIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`. You can only set a value that’s greater than or equal to `0` and less than [`numberOfIndexes`](./numberofindexes.md).
 

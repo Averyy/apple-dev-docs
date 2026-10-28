@@ -24,7 +24,7 @@ let AVAssetExportPresetHEVCHighestQuality: String
 extern NSString * const AVAssetExportPresetHEVCHighestQuality;
 ```
 
-#### Discussion
+## Discussion
 
 This preset compresses video in HEVC format and audio in AAC format.
 

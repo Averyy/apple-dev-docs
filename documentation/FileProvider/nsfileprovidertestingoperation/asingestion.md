@@ -18,7 +18,7 @@ Returns the operation if it alerts the system to changes.
 - (id<NSFileProviderTestingIngestion>) asIngestion;
 ```
 
-#### Discussion
+## Discussion
 
 If the operation doesn’t conform to the [`NSFileProviderTestingIngestion`](../nsfileprovidertestingingestion.md) protocol, this method returns `nil`.
 

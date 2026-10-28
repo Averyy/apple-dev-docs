@@ -26,11 +26,11 @@ static let baselineExposure: CIRAWFilterOption
 extern CIRAWFilterOption const kCIInputBaselineExposureKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for an [`NSNumber`](../../Foundation/nsnumber.md) object containing a float that expresses the amount of baseline exposure applied to an image.
 
-#### Discussion
+## Discussion
 
 A value of 0 indicates linear response.  The default varies with camera settings.
 

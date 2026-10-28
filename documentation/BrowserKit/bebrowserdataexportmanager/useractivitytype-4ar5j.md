@@ -20,7 +20,7 @@ static var userActivityType: String { get }
 
 - [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
-#### Discussion
+## Discussion
 
 The system launches your browser app with this activity when someone initiates a data import request ([`requestImport(for:completionHandler:)`](../bebrowserdataimportmanager/requestimport%28for,completionhandler%29.md)) from within another browser, and chooses your app in the sheet as the browser to provide the exported data.
 

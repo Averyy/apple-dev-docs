@@ -25,11 +25,11 @@ func CFGetAllocator(_ cf: CFTypeRef!) -> CFAllocator!
 extern CFAllocatorRefCFGetAllocator(CFTypeRef cf);
 ```
 
-#### Return Value
+## Return Value
 
 The allocator used to allocate memory for `cf`.
 
-#### Discussion
+## Discussion
 
 When you are creating a Core Foundation object sometimes you want to ensure that the block of memory allocated for the object is from the same allocator used for another object. One way to do this is to reuse the allocator assigned to an existing Core Foundation object when you call a “creation” function.
 

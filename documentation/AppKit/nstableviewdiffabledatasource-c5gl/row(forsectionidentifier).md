@@ -15,7 +15,7 @@ Returns a row for the section with the specified identifier in the table view.
 func row(forSectionIdentifier identifier: SectionIdentifierType) -> Int?
 ```
 
-#### Return Value
+## Return Value
 
 The item’s section, or `nil` if the method doesn’t find an item with the provided item identifier.
 

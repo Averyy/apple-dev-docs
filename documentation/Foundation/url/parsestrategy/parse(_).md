@@ -21,11 +21,11 @@ Parses a URL string in accordance with this strategy and returns the parsed valu
 func parse(_ value: String) throws -> URL
 ```
 
-#### Return Value
+## Return Value
 
 The parsed integer value.
 
-#### Discussion
+## Discussion
 
 Use this method to repeatedly parse integer strings with the same [`URL.ParseStrategy`](../parsestrategy.md). To parse a single integer string, use the URL initializer [`init(_:strategy:)`](../init%28_,strategy%29.md).
 

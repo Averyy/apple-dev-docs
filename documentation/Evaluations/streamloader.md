@@ -21,7 +21,7 @@ A loader backed by a custom async sequence.
 struct StreamLoader<Sample> where Sample : SampleProtocol
 ```
 
-#### Overview
+## Overview
 
 ```swift
 let loader = StreamLoader(stream: AsyncThrowingStream { continuation in

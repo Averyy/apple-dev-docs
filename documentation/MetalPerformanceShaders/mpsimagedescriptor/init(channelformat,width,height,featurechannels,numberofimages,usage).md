@@ -24,7 +24,7 @@ convenience init(channelFormat: MPSImageFeatureChannelFormat, width: Int, height
 + (instancetype) imageDescriptorWithChannelFormat:(MPSImageFeatureChannelFormat) channelFormat width:(NSUInteger) width height:(NSUInteger) height featureChannels:(NSUInteger) featureChannels numberOfImages:(NSUInteger) numberOfImages usage:(MTLTextureUsage) usage;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSImageDescriptor`](../mpsimagedescriptor.md) object.
 

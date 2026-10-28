@@ -32,7 +32,7 @@ var key: String { get }
 @property (atomic, copy, readonly) NSString * key;
 ```
 
-#### Discussion
+## Discussion
 
 This property is used for properties that may or may not be in labeled arrays.
 

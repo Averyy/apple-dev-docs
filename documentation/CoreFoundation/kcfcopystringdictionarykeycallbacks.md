@@ -25,7 +25,7 @@ let kCFCopyStringDictionaryKeyCallBacks: CFDictionaryKeyCallBacks
 extern const CFDictionaryKeyCallBacks kCFCopyStringDictionaryKeyCallBacks;
 ```
 
-#### Discussion
+## Discussion
 
 You typically use a pointer to this constant when creating a new dictionary.
 

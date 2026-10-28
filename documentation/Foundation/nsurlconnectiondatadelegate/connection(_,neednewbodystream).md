@@ -25,13 +25,13 @@ optional func connection(_ connection: NSURLConnection, needNewBodyStream reques
 - (NSInputStream *) connection:(NSURLConnection *) connection needNewBodyStream:(NSURLRequest *) request;
 ```
 
-#### Return Value
+## Return Value
 
 This delegate method should return a new, unopened stream that provides the body contents for the request.
 
 If this delegate method returns `NULL`, the connection fails.
 
-#### Discussion
+## Discussion
 
 In macOS, if this method is not implemented, body stream data is spooled to disk in case retransmission is required. This spooling may not be desirable for large data sets.
 

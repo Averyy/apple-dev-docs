@@ -21,7 +21,7 @@ Prevents the system from exporting an item if it does not meet the supplied cond
 func exportingCondition(_ condition: @escaping @Sendable (Self.Item) -> Bool) -> _ConditionalTransferRepresentation<Self>
 ```
 
-#### Discussion
+## Discussion
 
 Some instances of a model type may have state-dependent conditions that make them unsuitable for export. For example, an `Archive` structure that supports a comma-separated text representation only when it has compatible content:
 

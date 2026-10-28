@@ -24,11 +24,11 @@ optional func pictureInPictureControllerShouldProhibitBackgroundAudioPlayback(_ 
 - (BOOL) pictureInPictureControllerShouldProhibitBackgroundAudioPlayback:(AVPictureInPictureController *) pictureInPictureController;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the delegate prohibits background audio playback; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 If you implement this method, the system calls it once for each invocation of [`invalidatePlaybackState()`](../avpictureinpicturecontroller/invalidateplaybackstate%28%29.md) to determine whether to prohibit audio playback when the Picture in Picture window is in the background.
 

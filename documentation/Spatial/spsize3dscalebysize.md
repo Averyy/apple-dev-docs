@@ -21,7 +21,7 @@ Returns a size that results from scaling with the specified size structure.
 static SPSize3D SPSize3DScaleBySize(SPSize3D size, SPSize3D scale);
 ```
 
-#### Return Value
+## Return Value
 
 The size that results from scaling with the specified size structure.
 

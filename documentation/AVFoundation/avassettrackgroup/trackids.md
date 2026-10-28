@@ -25,7 +25,7 @@ var trackIDs: [NSNumber] { get }
 @property (nonatomic, readonly) NSArray<NSNumber *> * trackIDs;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an array of [`NSNumber`](../../Foundation/nsnumber.md) instances used as [`CMPersistentTrackID`](../../CoreMedia/cmpersistenttrackid.md) values, one for each track in the group.
 

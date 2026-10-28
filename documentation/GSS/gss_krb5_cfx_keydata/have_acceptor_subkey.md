@@ -23,7 +23,7 @@ var have_acceptor_subkey: OM_uint32
 OM_uint32 have_acceptor_subkey;
 ```
 
-#### Discussion
+## Discussion
 
 This flag is set to 1 if the Kerberos session acceptor subkey is available; otherwise, it is set to 0.
 

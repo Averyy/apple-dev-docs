@@ -21,7 +21,7 @@ The closure to execute when the operation finishes.
 var fetchShareParticipantsResultBlock: ((Result<Void, any Error>) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property is a closure that returns no value and has the following parameter:
 

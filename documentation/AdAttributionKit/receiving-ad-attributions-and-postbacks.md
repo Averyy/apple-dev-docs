@@ -5,7 +5,7 @@
 
 Understand timeframes and priorities for ad impressions that result in ad attributions, and how impressions qualify for postbacks.
 
-#### Overview
+## Overview
 
 Ad networks receive attributions in the form of postbacks. Before an ad network can receive a postback, the following events need to occur within limited time-windows:
 
@@ -27,23 +27,23 @@ The minimum elapsed time between a conversion event for the advertised app and t
 
 Time-windows for events apply equally to winning and nonwinning postbacks.
 
-#### Process install conversions
+## Process install conversions
 
 Install conversion events occur when someone installs the app from the App Store or alternative app marketplace after interacting with an AdAttributionKit ad. Install conversions create winning and nonwinning postbacks for ad networks that had qualifying ad impressions.
 
 AdAttributionKit represents install postbacks as either `download` or `redownload` in the postback’s `conversion-type` field. For more information about the postback parameters, see [Identifying the parameters in a postback](./identifying-the-parameters-in-a-postback.md).
 
-##### Receive a winning postback
+### Receive a winning postback
 
 When multiple ad impressions qualify for postbacks from an install conversion, the device sorts the ad impressions and selects a single winner. The system considers ad impressions from both AdAttributionKit and SKAdNetwork when evaluating the attribution after someone installs the advertised app. For more information about the ad sorting criteria, see [Understanding AdAttributionKit and SKAdNetwork interoperability](./adattributionkit-skadnetwork-interoperability.md).
 
 > **Note**: Install conversions always produce winning postbacks if there’s a qualifying ad impression, subject to their Crowd Anonymity tier.
 
-##### Receive a nonwinning postback
+### Receive a nonwinning postback
 
 Each ad network can receive only one postback, winning or nonwinning. If you receive the winning postback, you don’t receive any nonwinning postbacks even if your ads have multiple qualifying ad impressions. Up to five ad networks receive one nonwinning postback each. The system sorts the recorded ad impressions based on recency and whether they are click-through or view-through, with the most recent ad views and click-through taking precedence. Devices send nonwinning postbacks for the top five ad impressions from different ad networks that qualify for ad attribution.
 
-#### Handle reengagement conversions
+## Handle reengagement conversions
 
 Reengagement conversions occur when someone already has the advertised app installed and taps a custom rendered ad, or they tap the Open button on a StoreKit rendered ad. Reengagement only involves the impression that drives the conversion, so there are no nonwinning postbacks. Additionally, the system only processes reengagement conversions as a result of click interactions on ads. The system doesn’t create reengagement postbacks from view-through ads.
 
@@ -57,7 +57,7 @@ AdAttributionsKit represents reengagement postbacks as `reengagement` in the pos
 
 > ❗ **Important**: The system doesn’t always produce postbacks after a reengagement. The device is subject to reengagement limits on a monthly per-app basis, as well as a yearly per-device basis. The parameter AdAttributionsKit appends to the URL is always present on the URL, however, even if AdAttributionsKit doesn’t create reengagement postbacks.
 
-#### Update postbacks by their conversion type
+## Update postbacks by their conversion type
 
 Advertisers may attribute conversion values differently inside their app, depending on the conversion type: `install` or `reengagement`. In iOS 18 and later, use [`updateConversionValue(_:)`](./postback/updateconversionvalue%28_%29.md) to specify which types of postbacks to update. The system defaults to updating all types of postbacks if you specify `nil` for the conversion types, or if you use an API that doesn’t contain conversion types to update the conversion value, such as [`updateConversionValue(_:coarseConversionValue:lockPostback:)`](./postback/updateconversionvalue%28_,coarseconversionvalue,lockpostback%29.md).
 
@@ -80,11 +80,11 @@ private func attributeCustomerAccountCreated() async {
 }
 ```
 
-#### Opt in to receive a copy of the winning postback
+## Opt in to receive a copy of the winning postback
 
 Devices can send a copy of the winning postback to the developer of the advertised app. Developers opt in to receive the postback by specifying a server endpoint in their app’s information property list. For more information about opting in and specifying the endpoint, see [Configuring an advertised app](./configuring-an-advertised-app.md). The postback that developers receive is an exact copy of the winning postback that the device sends to the ad network. The device sends the postback to developers at the same time it sends the winning postback to the ad network. To verify the postback, see [Verifying a postback](./verifying-a-postback.md).
 
-#### Limit the number of view-through ad impressions from a publisher app
+## Limit the number of view-through ad impressions from a publisher app
 
 AdAttributionKit records a maximum of 15 view-through ad impressions per publisher app before discarding the oldest one. The recorded ad impressions may advertise various products, and are each eligible to become pending attributions until they expire (after 24 hours).
 

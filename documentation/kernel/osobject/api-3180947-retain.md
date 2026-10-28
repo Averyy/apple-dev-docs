@@ -16,7 +16,7 @@ Retains the OSObject instance
 virtual void retain(void);
 ```
 
-#### Discussion
+## Discussion
 
 Increases the retain count of the instance by one.
 

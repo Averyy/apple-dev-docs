@@ -25,11 +25,11 @@ func CTFontDescriptorCreateMatchingFontDescriptors(_ descriptor: CTFontDescripto
 extern CFArrayRefCTFontDescriptorCreateMatchingFontDescriptors(CTFontDescriptorRef descriptor, CFSetRef mandatoryAttributes);
 ```
 
-#### Return Value
+## Return Value
 
 A retained array of normalized font descriptors matching the attributes present in `descriptor`.
 
-#### Discussion
+## Discussion
 
 If `descriptor` itself is normalized, then the array will contain only one item: the original descriptor. In the context of font descriptors, *normalized* infers that the input values were matched up with actual existing fonts, and the descriptors for those existing fonts are the returned normalized descriptors.
 

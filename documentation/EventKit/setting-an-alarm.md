@@ -5,7 +5,7 @@
 
 Alert users of events and reminders with an alarm.
 
-#### Overview
+## Overview
 
 An easy way to alert users of their upcoming events is to give them the option of setting alarms for their calendar items. Regardless of the app that’s currently running, alarms come to the foreground as a notification and remind users of the scheduled event. If an alarm is set to a calendar event, the notification comes from the Calendar app; if an alarm is set to a reminder, the notification comes from the Reminders app.
 
@@ -13,7 +13,7 @@ Alarms can be time-based, firing at a specified time, or location-based, firing 
 
 > **Note**:  An alarm is not intended to serve as a [`UILocalNotification`](../UIKit/uilocalnotification.md). An alarm requires you to create an event or reminder that is visible in the user’s Calendar or Reminders app. A [`UILocalNotification`](../UIKit/uilocalnotification.md) is better suited for general purposes that don’t involve the Calendar database.
 
-##### Add and Remove Alarms
+### Add and Remove Alarms
 
 Add an alarm to an event with the [`addAlarm(_:)`](./ekcalendaritem/addalarm%28_%29.md) method.
 
@@ -27,7 +27,7 @@ In OS X, you can trigger an action alongside the alarm. For example, you can set
 
 Remove an alarm from an event with the [`removeAlarm(_:)`](./ekcalendaritem/removealarm%28_%29.md) method.
 
-##### Configure Geofences
+### Configure Geofences
 
 A geofence is a virtual border surrounding a geographic location that, when crossed, triggers an alarm for an event. You specify the latitude and longitude of the center and the radius of the geofence.
 

@@ -17,7 +17,7 @@ LFM2.5 bidirectional encoder for retrieval. One class serves both heads, selecte
 final class LFM2BidirectionalModel
 ```
 
-#### Overview
+## Overview
 
 - `embedding`: returns the backbone hidden states `(B, L, hidden)`; callers pool with `.cls` + `normalize` to get a 1024-d sentence vector (cosine similarity).
 - `colbert`: applies a per-token Dense projection -> `(B, L, projDim)`; callers pool with `.none` + `normalize` to get per-token multi-vectors (MaxSim).

@@ -9,7 +9,7 @@ Notify Apple servers that the user’s devices can retrieve merchant token usage
 **Availability**:
 - Apple Pay Merchant Token Management API 1.0.12+
 
-#### Discussion
+## Discussion
 
 Use this API to notify Apple that the user’s device can retrieve merchant token usage information. The request includes metadata about encryption and where to retrieve the usage information.
 

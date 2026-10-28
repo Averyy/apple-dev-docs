@@ -25,7 +25,7 @@ convenience init(shareURLs: [URL])
 - (instancetype) initWithShareURLs:(NSArray<NSURL *> *) shareURLs;
 ```
 
-#### Return Value
+## Return Value
 
 A configured [`CKShareRequestAccessOperation`](../cksharerequestaccessoperation.md) instance.
 

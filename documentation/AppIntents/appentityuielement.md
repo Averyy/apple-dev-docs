@@ -25,7 +25,7 @@ struct AppEntityUIElement
 
 - [Providing contextual cues to Apple Intelligence and Siri](./providing-contextual-cues-to-apple-intelligence-and-siri.md)
 
-#### Overview
+## Overview
 
 A custom view where your app manages state for the user interface or you use custom drawing to render the interface. For example, you might use a custom list or tab implementation and manage selection and other states in the app, or you might use Metal to render the interface. If either applies to your app’s interface, make content discoverable by Apple Intelligence using the view’s [`appEntityUIElementProvider`](../UIKit/uiview/appentityuielementprovider.md) property, and provide the system with a list of [`AppEntityUIElement`](./appentityuielement.md) instances.
 

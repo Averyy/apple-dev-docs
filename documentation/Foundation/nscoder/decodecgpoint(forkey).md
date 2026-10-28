@@ -24,11 +24,11 @@ func decodeCGPoint(forKey key: String) -> CGPoint
 - (CGPoint) decodeCGPointForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The `CGPoint` structure.
 
-#### Discussion
+## Discussion
 
 Use this method to decode a point that was previously encoded using the [`encode(_:forKey:)`](./encode%28_,forkey%29-7z9kc.md) method.
 

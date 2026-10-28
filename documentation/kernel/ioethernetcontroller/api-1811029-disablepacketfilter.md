@@ -15,11 +15,11 @@ virtual IOReturn disablePacketFilter(
  IOOptionBits options = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the value returned by setMulticastMode() or setPromiscuousMode() if either of those two methods are called. Returns kIOReturnSuccess if the filter specified is kIOPacketFilterUnicast or kIOPacketFilterBroadcast. Returns kIOReturnUnsupported if the filter group specified is not gIONetworkFilterGroup.
 
-#### Overview
+## Overview
 
 The default implementation of the abstract method inherited from IONetworkController. This method will call setMulticastMode() or setPromiscuousMode() when the multicast or the promiscuous filter is to be disabled. Requests to disable the Unicast or Broadcast filters are handled silently, without informing the subclass. Subclasses can override this method to change this default behavior, or to extend it to handle additional filter types or filter groups. This method call is synchronized by the workloop's gate.
 

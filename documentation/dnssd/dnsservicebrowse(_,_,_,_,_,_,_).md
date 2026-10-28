@@ -25,7 +25,7 @@ func DNSServiceBrowse(_ sdRef: UnsafeMutablePointer<DNSServiceRef?>!, _ flags: D
 DNSServiceErrorType DNSServiceBrowse(DNSServiceRef*sdRef, DNSServiceFlags flags, uint32_t interfaceIndex, const char *regtype, const char *domain, DNSServiceBrowseReply callBack, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`kDNSServiceErr_NoError`](./kdnsserviceerr_noerror.md) on success (any subsequent, asynchronous errors are delivered to the callback), otherwise returns an error code indicating the error that occurred (the callback is not invoked and the DNSServiceRef is not initialized).
 

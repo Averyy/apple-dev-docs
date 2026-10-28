@@ -19,7 +19,7 @@ Creates and initializes a collaboration share options object with the array of g
 + (SWCollaborationShareOptions *) shareOptionsWithOptionsGroups:(NSArray<SWCollaborationOptionsGroup *> *) optionsGroups;
 ```
 
-#### Return Value
+## Return Value
 
 A `SWCollaborationShareOptions` object.
 

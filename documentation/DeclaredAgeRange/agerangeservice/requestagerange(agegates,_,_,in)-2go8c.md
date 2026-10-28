@@ -21,11 +21,11 @@ func requestAgeRange(ageGates threshold1: Int, _ threshold2: Int? = nil, _ thres
 
 - [Requesting people’s age range information in your app](../requesting-people-share-their-age-range-with-your-app.md)
 
-#### Return Value
+## Return Value
 
 An [`AgeRangeService.Response`](./response.md) value containing either the person’s age range or an indication that the person declined to share their age range.
 
-#### Discussion
+## Discussion
 
 Use [`requestAgeRange(ageGates:_:_:in:)`](./requestagerange%28agegates,_,_,in%29-2go8c.md) to implement age-appropriate experiences in your app. People who meet the minimum age requirements that you specify can access age-appropriate features and content.
 

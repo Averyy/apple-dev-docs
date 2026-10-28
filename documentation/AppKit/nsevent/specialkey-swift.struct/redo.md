@@ -15,7 +15,7 @@ The redo key.
 static let redo: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

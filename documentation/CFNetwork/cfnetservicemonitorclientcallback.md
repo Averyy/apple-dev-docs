@@ -24,11 +24,11 @@ typealias CFNetServiceMonitorClientCallBack = (CFNetServiceMonitor, CFNetService
 typedef void (*)(struct __CFNetServiceMonitor *, struct __CFNetService *, enum CFNetServiceMonitorType, const struct __CFData *, CFStreamError *, void *) CFNetServiceMonitorClientCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 If you name your callback `MyNetServiceMonitorClientCallBack`, you would declare it like this:
 
-##### Discussion
+### Discussion
 
 The callback function will be called when the monitored record type changes or when the monitor is stopped by calling [`CFNetServiceMonitorStop(_:_:)`](./cfnetservicemonitorstop%28_,_%29.md).
 

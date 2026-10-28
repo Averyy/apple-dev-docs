@@ -25,7 +25,7 @@ convenience init(rect: CGRect, cornerRadius: CGFloat)
 + (instancetype) shapeNodeWithRect:(CGRect) rect cornerRadius:(CGFloat) cornerRadius;
 ```
 
-#### Return Value
+## Return Value
 
 A new shape node.
 

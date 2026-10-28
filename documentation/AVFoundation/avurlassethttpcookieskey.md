@@ -25,7 +25,7 @@ let AVURLAssetHTTPCookiesKey: String
 extern NSString * const AVURLAssetHTTPCookiesKey;
 ```
 
-#### Discussion
+## Discussion
 
 By default, [`AVURLAsset`](./avurlasset.md) only has access to cookies in the client’s default cookie storage that apply to the asset’s URL. You can supplement the cookies available to the asset by setting this initialization option.
 

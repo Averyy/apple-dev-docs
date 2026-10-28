@@ -24,7 +24,7 @@ var languageCode: String? { get set }
 @property (nonatomic, copy, nullable) NSString * languageCode;
 ```
 
-#### Discussion
+## Discussion
 
 Specify an ISO 639-2/T language code value, or `nil` to prevent the writer from writing a language code.
 

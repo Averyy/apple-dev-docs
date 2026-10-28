@@ -19,7 +19,7 @@ static var fragmentsComplete: MEFormatReaderParseAdditionalFragmentsStatus { get
 MEFormatReaderParseAdditionalFragmentsStatusFragmentsComplete
 ```
 
-#### Discussion
+## Discussion
 
 Additional calls of [`parseAdditionalFragments(completionHandler:)`](../meformatreader/parseadditionalfragments%28completionhandler%29.md) return an error.
 

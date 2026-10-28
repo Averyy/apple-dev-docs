@@ -28,7 +28,7 @@ init(forOpeningFilesWithContentTypes allowedContentTypes: [String]?)
 
 - [Customizing the document browser](../customizing-the-browser.md)
 
-#### Return Value
+## Return Value
 
 Returns a newly initialized document browser view controller.
 

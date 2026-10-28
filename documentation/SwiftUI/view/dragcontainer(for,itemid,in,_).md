@@ -27,11 +27,11 @@ nonisolated
 func dragContainer<ItemID, Item, Data>(for itemType: Item.Type = Item.self, itemID: KeyPath<Item, ItemID>, in namespace: Namespace.ID? = nil, _ payload: @escaping (ItemID) -> Data) -> some View where ItemID : Hashable, ItemID : Sendable, Item : Transferable, Item == Data.Element, Data : Collection
 ```
 
-#### Return Value
+## Return Value
 
 A view that can be activated as the source of a drag and drop operation, beginning with user gesture input.
 
-#### Discussion
+## Discussion
 
 In an example below, an app presents a view with `Fruit` values. `Fruit` does not conform to `Identifiable` but uses its name as its identifier.
 

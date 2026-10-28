@@ -16,7 +16,7 @@ Notify the address space that a packet notification handler has completed.
 void (*ClientCommandIsComplete)(IOFireWireLibPseudoAddressSpaceRef self, FWClientCommandID commandID, IOReturn status);
 ```
 
-#### Discussion
+## Discussion
 
 Packet notifications are received one at a time, in order. This function must be called after a packet handler has completed its work.
 

@@ -17,7 +17,7 @@ struct OBEXTransportEvent
 struct OBEXTransportEvent;
 ```
 
-#### Overview
+## Overview
 
 You will need to construcy these when data is received, and then pass a pointer to it to one of the incoming data methods defined below. Pass 0 as your status if data was received OK. Otherwise, you can put your own error code in there. For the transport type, be sure to use one of the defined types above.
 

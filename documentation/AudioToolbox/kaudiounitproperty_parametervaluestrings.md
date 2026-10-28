@@ -24,7 +24,7 @@ var kAudioUnitProperty_ParameterValueStrings: AudioUnitPropertyID { get }
 kAudioUnitProperty_ParameterValueStrings
 ```
 
-#### Discussion
+## Discussion
 
 A read-only [`CFArray`](../CoreFoundation/cfarray.md) object whose elements are [`CFString`](../CoreFoundation/cfstring.md) objects, valid on any audio unit scope.
 

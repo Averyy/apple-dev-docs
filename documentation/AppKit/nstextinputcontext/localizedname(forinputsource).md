@@ -19,7 +19,7 @@ class func localizedName(forInputSource inputSourceIdentifier: NSTextInputSource
 + (NSString *) localizedNameForInputSource:(NSTextInputSourceIdentifier) inputSourceIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The localized display name for `inputSourceIdentifier`.
 

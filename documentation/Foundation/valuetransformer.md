@@ -25,7 +25,7 @@ class ValueTransformer
 @interface NSValueTransformer : NSObject
 ```
 
-#### Overview
+## Overview
 
 You create a value transformer by subclassing [`ValueTransformer`](./valuetransformer.md) and overriding the necessary methods to provide the required custom transformation. You then register the value transformer using the [`setValueTransformer(_:forName:)`](./valuetransformer/setvaluetransformer%28_,forname%29.md) method, so that other parts of your app can access it by name with [`init(forName:)`](./valuetransformer/init%28forname%29.md).
 
@@ -33,7 +33,7 @@ Use the [`transformedValue(_:)`](./valuetransformer/transformedvalue%28_%29.md) 
 
 A value transformer can take inputs of one type and return a value of a different type. For example,  a value transformer could take an [`NSImage`](../AppKit/nsimage.md) or [`UIImage`](../UIKit/uiimage.md) object and return an [`NSData`](./nsdata.md) object containing the PNG representation of that image.
 
-##### Example Usage
+### Example Usage
 
 The following example defines a new value transformer that takes an object and returns a string based on the object’s class type. This transformer isn’t reversible because it doesn’t make sense to transform a class name into an object.
 

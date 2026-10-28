@@ -31,7 +31,7 @@ var errorLog: AVPlayerItemErrorLog? { get async }
 - (void) fetchErrorLogWithCompletionHandler:(void (^)(AVPlayerItemErrorLog *errorLog)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 An AVPlayerItemErrorLog provides methods to retrieve the error log in a format suitable for serialization. If nil is returned then there is no logging information currently available for this AVPlayerItem.
 

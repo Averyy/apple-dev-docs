@@ -5,13 +5,13 @@
 
 Public Interfaces and constants used to develop Force Feedback plugIns.
 
-#### Overview
+## Overview
 
 A force feedback device manufacturer might need to implement a plugIn to allow the Force Feedback Library to control the device. This header file describes the functions that need to be implemented. This interface definition follows Microsoft Windows IDirectInputEffectDriver definition wherever it makes sense to do so. This plugIn architecture uses the CFPlugIn model (COM). The Force Feedback Framework will find available plugIns and will use this interface to communicate with the hardware.
 
 Certain functions may contain more or fewer parameters than the corresponding Windows IDirectInputEffectDriver version.
 
-##### Included Headers
+### Included Headers
 
 - <sys/cdefs.h>
 - <CoreFoundation/CoreFoundation.h>

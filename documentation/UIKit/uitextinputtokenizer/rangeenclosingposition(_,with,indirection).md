@@ -24,11 +24,11 @@ func rangeEnclosingPosition(_ position: UITextPosition, with granularity: UIText
 - (UITextRange *) rangeEnclosingPosition:(UITextPosition *) position withGranularity:(UITextGranularity) granularity inDirection:(UITextDirection) direction;
 ```
 
-#### Return Value
+## Return Value
 
 A text-range representing a text unit of the given granularity in the given direction, or `nil` if there is no such enclosing unit.  Whether a boundary position is enclosed depends on the given direction, using the same rule as the [`isPosition(_:withinTextUnit:inDirection:)`](./isposition%28_,withintextunit,indirection%29.md) method.
 
-#### Discussion
+## Discussion
 
 In this method, return the range for the text enclosing a text position in a text unit of the given granularity, or `nil` if there is no such enclosing unit.  If the text position is entirely enclosed within a text unit of the given granularity, it is considered enclosed. If the text position is at a text-unit boundary, it is considered enclosed only if the next position in the given direction is entirely enclosed.
 

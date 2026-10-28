@@ -20,7 +20,7 @@ Whether to dither color values before writing to the frame buffer.
 var isColorDitheringEnabled: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Enable this to reduce color banding artifacts on gradients.
 

@@ -9,7 +9,7 @@
 UInt32 numRunningAudioEngines;
 ```
 
-#### Overview
+## Overview
 
 The number of running IOAudioEngines. This is used to maintain idle vs active power state.
 

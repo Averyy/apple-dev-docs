@@ -20,7 +20,7 @@ The texture coordinate parameters for a given texture layer that an animation ca
 struct TextureCoordinateTransformPath
 ```
 
-#### Overview
+## Overview
 
 When `index` equals `0`, the structure refers to the primary texture coordinates. When `index` equals `1`, the structure refers to the secondary texture coordinates.
 

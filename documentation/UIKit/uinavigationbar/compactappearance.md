@@ -24,7 +24,7 @@ var compactAppearance: UINavigationBarAppearance? { get set }
 @property (nonatomic, copy, readwrite, nullable) UINavigationBarAppearance * compactAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is `nil`, UIKit uses the [`standardAppearance`](../uinavigationitem/standardappearance.md) of the item stored in the [`topItem`](./topitem.md) property. You can customize the compact appearance for specific navigation items with the [`compactAppearance`](../uinavigationitem/compactappearance.md) property of [`UINavigationItem`](../uinavigationitem.md).
 

@@ -24,7 +24,7 @@ func VTFrameSiloGetTypeID() -> CFTypeID
 extern CFTypeID VTFrameSiloGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The `CFTypeID` of the frame silo object.
 

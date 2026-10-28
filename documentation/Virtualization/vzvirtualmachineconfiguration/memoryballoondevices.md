@@ -19,7 +19,7 @@ var memoryBalloonDevices: [VZMemoryBalloonDeviceConfiguration] { get set }
 @property (copy, readwrite) NSArray<VZMemoryBalloonDeviceConfiguration *> * memoryBalloonDevices;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to request a memory balloon device from the VM. The VM initially reserves the amount of memory in the [`memorySize`](./memorysize.md) property for the guest operating system. A balloon memory device asks the guest system to return memory pages that it isn’t using to the VM. You might use the device to reclaim memory when the amount of free memory on the host system runs low.
 

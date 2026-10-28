@@ -27,11 +27,11 @@ func la_vector_from_matrix_col(_ matrix: la_object_t, _ matrix_col: la_count_t) 
 extern la_object_tla_vector_from_matrix_col(la_object_t matrix, la_count_t matrix_col);
 ```
 
-#### Return Value
+## Return Value
 
 The resulting vector is a rows(matrix) x 1 vector.
 
-#### Discussion
+## Discussion
 
 Creates a vector from the specified column of the matrix.  If the value for `matrix_col` is less than zero or greater than `cols(matrix)-1`, `LA_INVALID_PARAMETER_ERROR` is returned.
 

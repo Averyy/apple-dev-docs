@@ -19,7 +19,7 @@ init(manufacturerCode: Int, customCommandCode: Int, requestParameters: Data?)
 - (instancetype) initWithManufacturerCode:(NSUInteger) manufacturerCode customCommandCode:(NSUInteger) customCommandCode requestParameters:(NSData *) requestParameters;
 ```
 
-#### Discussion
+## Discussion
 
 Initialize with default zero maximum retry and zero retry interval.
 

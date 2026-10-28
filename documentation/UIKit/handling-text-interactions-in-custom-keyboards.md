@@ -5,13 +5,13 @@
 
 Insert, delete, and manipulate text by using a proxy to a text input view.
 
-#### Overview
+## Overview
 
 Custom keyboards execute in a separate process that doesn’t have direct access to the text a user is editing. A proxy object, [`UITextDocumentProxy`](./uitextdocumentproxy.md), provides access to the input text view. Through the text document proxy you can insert or delete text, manipulate the insertion point, and access additional textual context around the insertion point.
 
 ![Diagram showing the relationship of a custom keyboard extension process to the text input object. In the keyboard extension process the input view controller uses the text document proxy to insert a string into the text input view.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-3570308@2x.png)
 
-##### Insert and delete text
+### Insert and delete text
 
 The text document proxy conforms to the [`UIKeyInput`](./uikeyinput.md) protocol, providing methods for inserting and deleting text. To insert a character or string into the current input view:
 
@@ -34,7 +34,7 @@ if textDocumentProxy.hasText {
 
 ```
 
-##### Adjust the insertion point
+### Adjust the insertion point
 
 To move the insertion point in the text input view, use the [`adjustTextPosition(byCharacterOffset:)`](./uitextdocumentproxy/adjusttextposition%28bycharacteroffset%29.md) method. For example, if you want to implement a forward delete action, move the insertion position forward by one character then delete backwards:
 
@@ -48,7 +48,7 @@ textDocumentProxy.deleteBackward()
 
 You might choose to enable this capability only when the insertion point isn’t at the end of the text being input by checking the context after the insertion point. See [Get context around the insertion point](./handling-text-interactions-in-custom-keyboards.md#Get-context-around-the-insertion-point) for more details.
 
-##### Respond to changes while the user is editing
+### Respond to changes while the user is editing
 
 While your keyboard is active, the user may perform operations that change the text or selection. Your custom keyboard controller, a subclass of [`UIInputViewController`](./uiinputviewcontroller.md) that conforms to the [`UITextInputDelegate`](./uitextinputdelegate.md) protocol, can automatically be informed of these text and selection changes. You can override two sets of methods in this delegate protocol to receive these notifications. The first set is called when text is changing, and the second is called when the selection is changing. Because your keyboard extension doesn’t have direct access to the text input field, the argument is `nil`.
 
@@ -60,7 +60,7 @@ func selectionWillChange(_ textInput: UITextInput?)
 func selectionDidChange(_ textInput: UITextInput?)
 ```
 
-##### Get context around the insertion point
+### Get context around the insertion point
 
 To perform certain operations like autocomplete or autocapitalization, you may need additional context of the text surrounding what the user is typing. You can access the context before and after the insertion point as follows:
 
@@ -80,7 +80,7 @@ Use [`CFStringTokenizer`](../CoreFoundation/cfstringtokenizer.md) to better unde
 5. Call [`insertText(_:)`](./uikeyinput/inserttext%28_%29.md) and pass the appropriate capitalized letter.
 6. Move the insertion point back to its original position.
 
-##### Mark text while the user is editing
+### Mark text while the user is editing
 
 Some text input operations require multiple actions in order to complete a single character or word. For example, your keyboard might support a language that requires multiple keystrokes to compose a single character. [`UITextDocumentProxy`](./uitextdocumentproxy.md) allows you to insert text and mark some or all of it for subsequent editing operations. The following code shows how you could insert a combining accent character as marked text using [`setMarkedText(_:selectedRange:)`](./uitextdocumentproxy/setmarkedtext%28_,selectedrange%29.md):
 

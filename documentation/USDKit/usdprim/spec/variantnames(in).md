@@ -20,7 +20,7 @@ Returns the variant names available in the given variant set.
 func variantNames(in setName: USDToken) -> [USDToken]
 ```
 
-#### Return Value
+## Return Value
 
 The variant names defined in `setName`.
 

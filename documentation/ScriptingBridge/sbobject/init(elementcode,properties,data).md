@@ -20,11 +20,11 @@ init(elementCode code: DescType, properties: [String : Any]?, data: Any?)
 - (instancetype) initWithElementCode:(DescType) code properties:(NSDictionary<NSString *,id> *) properties data:(id) data;
 ```
 
-#### Return Value
+## Return Value
 
 An `SBObject` object or `nil` if the object could not be initialized.
 
-#### Discussion
+## Discussion
 
 Unlike the other initializers of this class, this method not only initializes the `SBObject` object but adds it to a specified element array. This method is the designated initializer.
 

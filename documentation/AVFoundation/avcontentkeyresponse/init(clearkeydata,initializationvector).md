@@ -25,11 +25,11 @@ convenience init(clearKeyData keyData: Data, initializationVector: Data?)
 + (instancetype) contentKeyResponseWithClearKeyData:(NSData *) keyData initializationVector:(NSData *) initializationVector;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new [`AVContentKeyResponse`](../avcontentkeyresponse.md) object to decrypt content.
 
-#### Discussion
+## Discussion
 
 Use the results of this initializer when the content key session creates a key request using the [`clearKey`](../avcontentkeysystem/clearkey.md) parameter. The results are then passed to the [`processContentKeyResponse(_:)`](../avcontentkeyrequest/processcontentkeyresponse%28_%29.md) method to supply the decrypter with key data.
 

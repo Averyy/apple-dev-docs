@@ -12,11 +12,11 @@ virtual IOReturn removeUserClient(
  IOAudioControlUserClient *userClient);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success.
 
-#### Overview
+## Overview
 
 This is called on the IOWorkLoop by clientClosed() through removeUserClientAction() when the user client is going away. It should not be called directly.
 

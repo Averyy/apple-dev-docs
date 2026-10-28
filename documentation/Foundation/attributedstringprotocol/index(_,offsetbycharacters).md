@@ -21,7 +21,7 @@ Returns the position of the character offset a given distance, measured in chara
 func index(_ i: AttributedString.Index, offsetByCharacters distance: Int) -> AttributedString.Index
 ```
 
-#### Return Value
+## Return Value
 
 The position of the character offset `distance` characters from position `i`.
 

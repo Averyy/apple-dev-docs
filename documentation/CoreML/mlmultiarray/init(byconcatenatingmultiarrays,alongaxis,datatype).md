@@ -21,7 +21,7 @@ Merges an array of multiarrays into one multiarray along an axis.
 convenience init(byConcatenatingMultiArrays multiArrays: [MLMultiArray], alongAxis axis: Int, dataType: MLMultiArrayDataType)
 ```
 
-#### Discussion
+## Discussion
 
 All multiarray instances in `multiArrays` must have:
 

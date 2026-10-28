@@ -17,7 +17,7 @@ The current state of the alarm.
 var state: Alarm.State
 ```
 
-#### Discussion
+## Discussion
 
 This is a snapshot of the state captured when the alarm was fetched from the daemon.  It won’t update if the state changes on the daemon.
 

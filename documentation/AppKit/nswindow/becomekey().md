@@ -19,7 +19,7 @@ func becomeKey()
 - (void) becomeKeyWindow;
 ```
 
-#### Discussion
+## Discussion
 
 This method reestablishes the window’s first responder, sends the `becomeKeyWindow` message to that object if it responds, and posts [`didBecomeKeyNotification`](./didbecomekeynotification.md) to the default notification center.
 

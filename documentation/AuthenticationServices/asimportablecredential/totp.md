@@ -19,7 +19,7 @@ A type to represent a time-based one-time password generator (TOTP).
 struct TOTP
 ```
 
-#### Overview
+## Overview
 
 This type is a representation of `TOTP` as defined in the Credential Exchange Format (CXF) specification.
 

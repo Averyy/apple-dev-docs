@@ -16,7 +16,7 @@ A Boolean value indicating whether the alt key is pressed.
 readonly attribute boolean altKey;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the alt key is pressed; otherwise, it is not. If there is no keyboard, this value is `false`.
 

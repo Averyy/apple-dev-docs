@@ -19,7 +19,7 @@ func matrix() -> UnsafeMutablePointer<Matrix44Data>!
 - (Matrix44Data *) matrix;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a [`FxMatrix44`](../fxmatrix44.md).
 

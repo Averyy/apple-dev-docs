@@ -20,11 +20,11 @@ optional func textView(_ textView: NSTextView, urlForContentsOf textAttachment: 
 - (NSURL *) textView:(NSTextView *) textView URLForContentsOfTextAttachment:(NSTextAttachment *) textAttachment atIndex:(NSUInteger) charIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The absolute URL for the document contents represented by `textAttachment`.
 
-#### Discussion
+## Discussion
 
 The returned `NSURL` object is used by the text view to provide default behaviors involving text attachments such as Quick Look and double-clicking. For example, the `NSTextView` method [`quickLookPreviewableItems(inRanges:)`](../nstextview/quicklookpreviewableitems%28inranges%29.md) uses this method for mapping text attachments to their corresponding document URLs, and `NSTextView` invokes the `NSWorkspace` method [`open(_:)`](../nsworkspace/open%28_%29.md) with the URL returned from this method when the delegate has no [`textView(_:doubleClickedOn:in:at:)`](./textview%28_,doubleclickedon,in,at%29.md) implementation.
 

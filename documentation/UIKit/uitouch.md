@@ -32,7 +32,7 @@ class UITouch
 - [Computing the perpendicular force of Apple Pencil](./computing-the-perpendicular-force-of-apple-pencil.md)
 - [Implementing a Multi-Touch app](./implementing-a-multi-touch-app.md)
 
-#### Overview
+## Overview
 
 You access touch objects through [`UIEvent`](./uievent.md) objects passed into responder objects for event handling. A touch object includes accessors for:
 

@@ -20,7 +20,7 @@ The layers this light illuminates.
 var layers: RenderLayer.Set { get set }
 ```
 
-#### Discussion
+## Discussion
 
 A spotlight illuminates an entity when the layers of the entity’s [`RenderLayerComponent`](../renderlayercomponent.md) intersect with this set. Entities without a [`RenderLayerComponent`](../renderlayercomponent.md) belong to [`defaultLayer`](../renderlayer/defaultlayer.md), which is the only member of `layers` by default.
 

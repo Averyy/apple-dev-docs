@@ -23,7 +23,7 @@ func collaborationHighlight(forIdentifier collaborationIdentifier: SWCollaborati
 - (SWCollaborationHighlight *) collaborationHighlightForIdentifier:(SWCollaborationIdentifier) collaborationIdentifier error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The `SWCollaborationHighlight` associated with the `identifier`.
 

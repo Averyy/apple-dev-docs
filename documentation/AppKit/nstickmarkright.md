@@ -15,7 +15,7 @@
 static const NSTickMarkPosition NSTickMarkRight;
 ```
 
-#### Discussion
+## Discussion
 
 Tick marks to the right (for vertical sliders).
 

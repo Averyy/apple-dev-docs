@@ -25,7 +25,7 @@ class var urlQueryAllowed: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * URLQueryAllowedCharacterSet;
 ```
 
-#### Discussion
+## Discussion
 
 The query component of a URL is the component immediately following a question mark (`?`). For example, in the URL `http://www.example.com/index.php?key1=value1#jumpLink`, the query component is `key1=value1`.
 

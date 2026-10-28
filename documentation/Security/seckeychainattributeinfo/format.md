@@ -19,7 +19,7 @@ var format: UnsafeMutablePointer<UInt32>?
 UInt32 * format;
 ```
 
-#### Discussion
+## Discussion
 
 Attribute formats are of type `CSSM_DB_ATTRIBUTE_FORMAT` (`CSSM_DB_ATTRIBUTE_FORMAT_STRING`, for example), and are defined in the `cssmtype.h` header.
 

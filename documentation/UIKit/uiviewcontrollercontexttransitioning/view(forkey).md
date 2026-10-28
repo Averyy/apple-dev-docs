@@ -24,11 +24,11 @@ func view(forKey key: UITransitionContextViewKey) -> UIView?
 - (UIView *) viewForKey:(UITransitionContextViewKey) key;
 ```
 
-#### Return Value
+## Return Value
 
 The view object for the specified key or `nil` if the view could not be found.
 
-#### Discussion
+## Discussion
 
 The view returned by this method may or may not be the root view of the corresponding view controller. A situation where the views may not be the same is when a system-provided presentation controller installs another view underneath the presented view controller’s view.
 

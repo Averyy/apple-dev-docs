@@ -20,7 +20,7 @@ struct es_event_listextattr_t
 typedef struct { ... } es_event_listextattr_t;
 ```
 
-#### Overview
+## Overview
 
 See the `listxattr(2)` man page for information on listing extended attributes.
 

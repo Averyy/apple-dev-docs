@@ -19,11 +19,11 @@ init(rulerView ruler: NSRulerView, markerLocation location: CGFloat, image: NSIm
 - (instancetype) initWithRulerView:(NSRulerView *) ruler markerLocation:(CGFloat) location image:(NSImage *) image imageOrigin:(NSPoint) imageOrigin;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized ruler marker object.
 
-#### Discussion
+## Discussion
 
 The image used to draw the marker must be appropriate for the orientation of the ruler. Markers may need to look different on a horizontal ruler than on a vertical ruler, and the ruler view neither scales nor rotates the images.
 

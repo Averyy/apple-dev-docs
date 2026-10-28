@@ -24,7 +24,7 @@ class MPSCNNUpsampling
 @interface MPSCNNUpsampling : MPSCNNKernel
 ```
 
-#### Overview
+## Overview
 
 This filter can be used to resample an existing [`MPSImage`](./mpsimage.md) using a different sampling frequency for the `x` and `y` dimensions with the purpose of enlarging the size of an image.
 

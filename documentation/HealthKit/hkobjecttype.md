@@ -29,7 +29,7 @@ class HKObjectType
 - [Saving data to HealthKit](./saving-data-to-healthkit.md)
 - [About the HealthKit framework](./about-the-healthkit-framework.md)
 
-#### Overview
+## Overview
 
 The `HKObjectType` class is an abstract class. Don’t instantiate an `HKObjectType` object directly. Instead, instantiate one of the following concrete subclasses:
 
@@ -44,7 +44,7 @@ The `HKObjectType` class is an abstract class. Don’t instantiate an `HKObjectT
 
 The `HKObjectType` class provides a convenience method to create each of these subclasses.
 
-##### Work with Object Types
+### Work with Object Types
 
 Like many HealthKit classes, HealthKit object types aren’t extensible. Don’t subclass these classes.
 

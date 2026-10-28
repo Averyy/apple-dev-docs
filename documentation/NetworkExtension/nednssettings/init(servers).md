@@ -24,7 +24,7 @@ init(servers: [String])
 - (instancetype) initWithServers:(NSArray<NSString *> *) servers;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NEDNSSettings` object.
 

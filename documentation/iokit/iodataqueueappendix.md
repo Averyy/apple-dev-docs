@@ -25,7 +25,7 @@ typedef struct _IODataQueueAppendix {
 } IODataQueueAppendix;
 ```
 
-#### Discussion
+## Discussion
 
 This struct is variable sized dependent on the version. The struct represents the data queue appendix information.
 

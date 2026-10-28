@@ -22,7 +22,7 @@ var fileType: String? { get }
 @property (copy, readonly, nullable) NSString * fileType;
 ```
 
-#### Discussion
+## Discussion
 
 The file type is a uniform type identifier (UTI). UIKit derives the UTI from the filename-extension component of [`fileURL`](./fileurl.md).
 

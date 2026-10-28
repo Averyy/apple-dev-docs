@@ -24,7 +24,7 @@ let kCIInputSharpnessKey: String
 extern NSString * const kCIInputSharpnessKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for a scalar value ([`NSNumber`](../Foundation/nsnumber.md)) that specifies the amount of sharpening to apply.
 

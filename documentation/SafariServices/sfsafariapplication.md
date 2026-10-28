@@ -19,7 +19,7 @@ class SFSafariApplication
 @interface SFSafariApplication : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `SFSafariApplication` class is used by a Safari app extension to access the active Safari window, open a new window, and update the toolbar items on a window. An application that acts as a host container for a Safari app extension can use this class to send messages to the app extension. There is no object instance for this class.
 

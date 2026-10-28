@@ -12,11 +12,11 @@ virtual bool initWithData(
  const OSData *inData);
 ```
 
-#### Return Value
+## Return Value
 
 `true` on success, `false` on failure.
 
-#### Overview
+## Overview
 
 Not for general use. Use the static instance creation method withData(OSData *) instead.
 

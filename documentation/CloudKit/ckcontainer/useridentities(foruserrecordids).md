@@ -23,13 +23,13 @@ Fetches the user identities for the specified user record IDs and returns them t
 func userIdentities(forUserRecordIDs userRecordIDs: [CKRecord.ID]) async throws -> [CKRecord.ID : CKUserIdentity]
 ```
 
-#### Return Value
+## Return Value
 
 A [`Result`](../../Swift/result.md) that contains either a dictionary of user identities, or an error that describes why CloudKit can’t discover the user record IDs.
 
 In the successful case, the dictionary uses the user record IDs you specify in `userRecordIDs` as its keys. Only successfully discovered user identities are present in this dictionary.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve the identities of users who the current user knows. The users you’re searching for must meet the following criteria:
 

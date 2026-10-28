@@ -15,7 +15,7 @@ A unique identifier for a transaction, such as a purchase, restore, or renewal.
 string transaction_id
 ```
 
-#### Discussion
+## Discussion
 
 This field is returned in the JSON response, in the [`responseBody.Latest_receipt_info`](./responsebody/latest_receipt_info-data.dictionary.md) and [`responseBody.Receipt.In_app`](./responsebody/receipt-data.dictionary/in_app-data.dictionary.md) arrays.
 

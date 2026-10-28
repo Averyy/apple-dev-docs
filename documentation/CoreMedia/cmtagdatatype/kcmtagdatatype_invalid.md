@@ -21,7 +21,7 @@ The tag value isn’t associated with any known data type.
 kCMTagDataType_Invalid
 ```
 
-#### Discussion
+## Discussion
 
 Avoid retrieving values from tags with this data type.
 

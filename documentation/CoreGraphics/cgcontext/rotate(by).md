@@ -25,7 +25,7 @@ func rotate(by angle: CGFloat)
 extern void CGContextRotateCTM(CGContextRef c, CGFloat angle);
 ```
 
-#### Discussion
+## Discussion
 
 The direction that the context is rotated may appear to be altered by the state of the current transformation matrix prior to executing this function. For example, on iOS, a [`UIView`](../../UIKit/uiview.md) applies a transformation to the graphics context that inverts the Y-axis (by multiplying it by `-1`). Rotating the user coordinate system on coordinate system that was previously flipped results in a rotation in the opposite direction (that is, positive values appear to rotate the coordinate system in the clockwise direction).
 

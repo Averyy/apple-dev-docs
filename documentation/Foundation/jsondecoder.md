@@ -21,7 +21,7 @@ An object that decodes instances of a data type from JSON objects.
 class JSONDecoder
 ```
 
-#### Overview
+## Overview
 
 The example below shows how to decode an instance of a simple `GroceryProduct` type from a JSON object. The type adopts [`Codable`](../Swift/codable.md) so that it’s decodable using a [`JSONDecoder`](./jsondecoder.md) instance.
 

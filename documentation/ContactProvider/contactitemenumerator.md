@@ -16,7 +16,7 @@ A protocol to provide enumerations of all contact items and changed contact item
 protocol ContactItemEnumerator
 ```
 
-#### Overview
+## Overview
 
 Implement this protocol to fetch contact items from your data store in a consistent, predictable order when the system requests contact item enumeration. The [`ContactItemEnumerating`](./contactitemenumerating.md) protocol, typically implemented by the app extension, returns an instance of this type when the system requests contacts.
 

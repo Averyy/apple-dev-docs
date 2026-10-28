@@ -9,9 +9,9 @@ Fetch metadata for apps, books, and subscriptions from the catalog by using a se
 **Availability**:
 - VPP License Management 2.2+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

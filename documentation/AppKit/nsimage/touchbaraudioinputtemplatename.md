@@ -22,7 +22,7 @@ class let touchBarAudioInputTemplateName: String
 extern NSImageName const NSImageNameTouchBarAudioInputTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for audio input](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793512@2x.png)
 

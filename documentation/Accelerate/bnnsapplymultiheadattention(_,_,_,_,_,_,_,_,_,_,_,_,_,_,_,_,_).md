@@ -27,7 +27,7 @@ func BNNSApplyMultiheadAttention(_ F: BNNSFilter?, _ batch_size: Int, _ query: U
 int BNNSApplyMultiheadAttention(BNNSFilter F, size_t batch_size, const void *query, size_t query_stride, const void *key, size_t key_stride, const BNNSNDArrayDescriptor *key_mask, size_t key_mask_stride, const void *value, size_t value_stride, void *output, size_t output_stride, const BNNSNDArrayDescriptor *add_to_attention, size_t *backprop_cache_size, void *backprop_cache, size_t *workspace_size, void *workspace);
 ```
 
-#### Discussion
+## Discussion
 
 Provide `key_mask` as a 1D tensor containing `source_length` elements. Where the elements evaluate to true, the attention operation ignores the corresponding elements of the key matrix.
 

@@ -17,17 +17,17 @@ Creates an alert compatible with alerts created using the [`NSRunAlertPanel`](..
 + (NSAlert *) alertWithMessageText:(NSString *) message defaultButton:(NSString *) defaultButton alternateButton:(NSString *) alternateButton otherButton:(NSString *) otherButton informativeTextWithFormat:(NSString *) format;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized alert.
 
-#### Discussion
+## Discussion
 
 For languages that read left to right, the buttons are laid out on the bottom-right corner of the alert sheet or window, with `defaultButtonTitle` on the right, `alternateButtonTitle` on the left, and `otherButtonTitle` in the middle.  The return values identifying these buttons are constants— `NSAlertDefaultReturn`, `NSAlertAlternateReturn`, and `NSAlertOtherReturn`—that correspond to the keywords.
 
 By default, the first button has a key equivalent of Return, any button with a title of “Cancel” has a key equivalent of Escape, and any button with the title “Don’t Save” has a key equivalent of Command-D (but only if it is not the first button). You can also assign different key equivalents for the buttons using the [`keyEquivalent`](../nsbutton/keyequivalent.md) method of the `NSButton` class. To access the alert’s buttons, use the [`buttons`](./buttons.md) property.
 
-##### Special Considerations
+### Special Considerations
 
 This is a compatibility method. It is designed for easy adoption by apps migrating from the corresponding function-based API. This method uses earlier return values—`NSAlertDefaultReturn`, `NSAlertAlternateReturn`, and `NSAlertOtherReturn`—compatible with the earlier API, rather than the return values defined by the `NSAlert` class, described in `Button Return Values`.
 

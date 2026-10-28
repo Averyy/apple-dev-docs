@@ -17,7 +17,7 @@ A Boolean value that indicates whether the system honors a granted capability fo
 var isValid: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the system grants this capability to the browser extension process and you haven’t called [`invalidate()`](./invalidate%28%29.md), then this property is `true`; otherwise, it’s false.
 

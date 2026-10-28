@@ -19,11 +19,11 @@ convenience init?(tcpPort port: UInt16)
 - (instancetype) initWithTCPPort:(unsigned short) port;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized local TCP/IP socket of type `SOCK_STREAM`, listening on port `port`.
 
-#### Discussion
+## Discussion
 
 This method creates an IPv4 port, not an IPv6 port.
 

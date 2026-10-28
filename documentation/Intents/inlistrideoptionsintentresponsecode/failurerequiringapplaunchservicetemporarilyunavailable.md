@@ -23,7 +23,7 @@ case failureRequiringAppLaunchServiceTemporarilyUnavailable
 INListRideOptionsIntentResponseCodeFailureRequiringAppLaunchServiceTemporarilyUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when you cannot offer service to the specified area right now. You might return this code if no vehicles are available in the user’s area or your service is temporarily unavailable. Specify this code to redirect the user to your app. Don’t use this code for general errors or to force the user to launch your app.
 

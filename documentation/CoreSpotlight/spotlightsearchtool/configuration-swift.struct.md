@@ -23,7 +23,7 @@ struct Configuration
 
 - [Making your indexed content available to Foundation Models](../making-your-indexed-content-available-to-foundation-models.md)
 
-#### Overview
+## Overview
 
 Use this structure to specify the data sources, guidance, and options for [`SpotlightSearchTool`](../spotlightsearchtool.md) to use when performing searches. Create an instance of this structure as part of the setup of the search tool, and configure it with the information you want. For more information about configuring the search tool, see [Making your indexed content available to Foundation Models](../making-your-indexed-content-available-to-foundation-models.md).
 

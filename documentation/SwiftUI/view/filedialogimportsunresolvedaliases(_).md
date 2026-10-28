@@ -20,7 +20,7 @@ nonisolated
 func fileDialogImportsUnresolvedAliases(_ imports: Bool) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 By default, file dialogs resolve aliases and provide the URL of the item referred to by the chosen alias. This modifier allows control of this behavior: pass `true` if the application doesn’t want file dialog to resolve aliases.
 

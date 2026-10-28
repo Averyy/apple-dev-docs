@@ -20,7 +20,7 @@ A control template representing a button.
 @preconcurrency struct ControlWidgetButton<Label, ActionLabel, Action> where Label : View, ActionLabel : View
 ```
 
-#### Overview
+## Overview
 
 Buttons don’t have state; use them for fire-and-forget actions such as playing a sound or launching an app.
 

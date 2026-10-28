@@ -16,7 +16,7 @@ A class you use to test your extension’s import code.
 final class AppImportController
 ```
 
-#### Overview
+## Overview
 
 Use the [`importController`](./importcontroller.md) property to obtain an instance of this class, then use its methods to call the import-related code of your app migration extension.
 

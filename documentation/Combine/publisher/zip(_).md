@@ -21,11 +21,11 @@ Combines elements from another publisher and deliver pairs of elements as tuples
 func zip<P>(_ other: P) -> Publishers.Zip<Self, P> where P : Publisher, Self.Failure == P.Failure
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that emits pairs of elements from the upstream publishers as tuples.
 
-#### Discussion
+## Discussion
 
 Use [`zip(_:)`](./zip%28_%29.md) to combine the latest elements from two publishers and emit a tuple to the downstream. The returned publisher waits until both publishers have emitted an event, then delivers the oldest unconsumed event from each publisher together as a tuple to the subscriber.
 

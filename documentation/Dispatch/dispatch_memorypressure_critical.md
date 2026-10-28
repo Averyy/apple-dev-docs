@@ -25,7 +25,7 @@ var DISPATCH_MEMORYPRESSURE_CRITICAL: Int32 { get }
 #define DISPATCH_MEMORYPRESSURE_CRITICAL
 ```
 
-#### Discussion
+## Discussion
 
 Apps should release as much memory as possible.
 

@@ -9,7 +9,7 @@
 bool isStarted;
 ```
 
-#### Overview
+## Overview
 
 Internal state keeping track of when the IOAudioControl has been started.
 

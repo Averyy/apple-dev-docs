@@ -19,11 +19,11 @@ class func frameRect(forContentRect cRect: NSRect, styleMask style: NSWindow.Sty
 + (NSRect) frameRectForContentRect:(NSRect) cRect styleMask:(NSWindowStyleMask) style;
 ```
 
-#### Return Value
+## Return Value
 
 The frame rectangle, expressed in screen coordinates, used by the window with `cRect` and `style`.
 
-#### Discussion
+## Discussion
 
 When a `NSWindow` instance is available, you should use [`frameRect(forContentRect:)`](./framerect%28forcontentrect%29.md) instead of this method.
 

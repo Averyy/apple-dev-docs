@@ -21,7 +21,7 @@ The definitions for the target app’s app entities.
 var entities: IntentDefinitions.DefinitionCollection<AppEntityDefinition> { get }
 ```
 
-#### Discussion
+## Discussion
 
 Access individual entity definitions using subscript syntax with the entity’s type name as shown in the following example:
 

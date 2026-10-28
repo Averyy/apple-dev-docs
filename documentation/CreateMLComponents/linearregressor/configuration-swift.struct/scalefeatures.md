@@ -21,7 +21,7 @@ A Boolean value indicating whether to scale the input features.
 var scaleFeatures: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Scaling the features reduces numerical errors.
 

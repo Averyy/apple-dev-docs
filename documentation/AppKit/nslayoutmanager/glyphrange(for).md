@@ -19,7 +19,7 @@ func glyphRange(for container: NSTextContainer) -> NSRange
 - (NSRange) glyphRangeForTextContainer:(NSTextContainer *) container;
 ```
 
-#### Discussion
+## Discussion
 
 This is a less efficient method than the similar [`textContainer(forGlyphAt:effectiveRange:)`](./textcontainer%28forglyphat,effectiverange%29.md).
 

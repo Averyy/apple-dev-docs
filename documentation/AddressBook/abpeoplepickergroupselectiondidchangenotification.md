@@ -15,7 +15,7 @@ Posted when the selection in the group list is changed.
 extern NSString * const ABPeoplePickerGroupSelectionDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification on the main actor.
 

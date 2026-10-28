@@ -15,7 +15,7 @@ Desktop window level.
 static var desktop: WindowLevel { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this if you want your window to appear just on top of wallpaper and behind everything else.
 

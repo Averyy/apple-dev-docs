@@ -20,7 +20,7 @@ Appends the elements of the given column to the end of this column.
 mutating func append(contentsOf newColumn: MLDataColumn<Element>)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The type of `newColumn` must be the same type or convertible to the same type as the column. See [`MLDataValueConvertible`](../mldatavalueconvertible.md).
 

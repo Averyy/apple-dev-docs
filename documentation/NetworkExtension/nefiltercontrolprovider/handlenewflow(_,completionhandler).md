@@ -26,7 +26,7 @@ func handleNewFlow(_ flow: NEFilterFlow) async -> NEFilterControlVerdict
 - (void) handleNewFlow:(NEFilterFlow *) flow completionHandler:(void (^)(NEFilterControlVerdict *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when the Filter Data Provider indicates that it needs more rules before making a decision about a new flow.
 

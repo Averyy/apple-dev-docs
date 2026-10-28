@@ -17,7 +17,7 @@ How a single model layer retains state across generation steps.
 enum CacheLayerKind
 ```
 
-#### Overview
+## Overview
 
 This is the stable, descriptive counterpart to concrete [`KVCache`](./kvcache.md) instances. Obtain it through [`KVCacheStatus`](./kvcachestatus.md) rather than inspecting or casting runtime cache objects.
 

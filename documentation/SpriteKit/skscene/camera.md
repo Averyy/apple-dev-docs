@@ -30,7 +30,7 @@ weak var camera: SKCameraNode? { get set }
 - [Getting Started with a Camera](../getting-started-with-a-camera.md)
 - [Positioning a Scene’s Origin Within its View](../positioning-a-scene-s-origin-within-its-view.md)
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`, which means that the scene’s [`anchorPoint`](./anchorpoint.md) and [`size`](./size.md) properties determine what portion of the scene is visible. If set to point to a camera node contained in the scene, the [`anchorPoint`](./anchorpoint.md) property is ignored and the scene is rendered using the camera node’s properties instead.
 

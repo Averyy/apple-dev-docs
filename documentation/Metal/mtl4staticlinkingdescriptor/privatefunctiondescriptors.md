@@ -24,7 +24,7 @@ var privateFunctionDescriptors: [MTL4FunctionDescriptor]? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSArray<MTL4FunctionDescriptor *> * privateFunctionDescriptors;
 ```
 
-#### Discussion
+## Discussion
 
 You specify private functions to link separately from [`functionDescriptors`](./functiondescriptors.md) because pipelines don’t export private functions as [`MTLFunctionHandle`](../mtlfunctionhandle.md) instances.
 

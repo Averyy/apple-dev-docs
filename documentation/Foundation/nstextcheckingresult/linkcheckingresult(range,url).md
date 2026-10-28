@@ -25,7 +25,7 @@ class func linkCheckingResult(range: NSRange, url: URL) -> NSTextCheckingResult
 + (NSTextCheckingResult *) linkCheckingResultWithRange:(NSRange) range URL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`link`](./checkingtype/link.md).
 

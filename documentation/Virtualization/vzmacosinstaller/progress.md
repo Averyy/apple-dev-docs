@@ -23,7 +23,7 @@ var progress: Progress { get }
 
 - [Installing macOS on a Virtual Machine](../installing-macos-on-a-virtual-machine.md)
 
-#### Discussion
+## Discussion
 
 Canceling the progress object before starting an installation raises an exception.
 

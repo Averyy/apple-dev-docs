@@ -18,7 +18,7 @@ static IOAudioControl *withAttributes(
  UInt32 usage = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a newly allocated and initialized IOAudioControl.
 

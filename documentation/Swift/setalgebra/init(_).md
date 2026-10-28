@@ -22,7 +22,7 @@ Creates a new set from a finite sequence of items.
 init<S>(_ sequence: S) where S : Sequence, Self.Element == S.Element
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a new set from an existing sequence, like an array or a range:
 

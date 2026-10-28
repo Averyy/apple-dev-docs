@@ -5,7 +5,7 @@
 
 Fix common problems that appear after migrating a project from Reality Composer Pro 2 to Reality Composer Pro 3.
 
-#### Overview
+## Overview
 
 This article walks through the changes to expect in each asset type after migrating a project from Reality Composer Pro 2 to Reality Composer Pro 3.
 
@@ -13,7 +13,7 @@ This article focuses on specific areas such as animation, materials, and audio.
 
 See [Migrating older projects to Reality Composer Pro 3](./realitycomposerpro-essentials-migrating-older-projects-to-reality-composer-pro-3.md) for more information about how migration works and what to expect.
 
-#### Rewire USD-authored animations
+## Rewire USD-authored animations
 
 You usually need to rewire animations by hand. Only entities that already had a [`AnimationLibraryComponent`](../RealityKit/animationlibrarycomponent.md) migrate with animations fully wired.
 
@@ -28,19 +28,19 @@ To restore the animation in Reality Composer Pro 3, select the entity, add an `A
 
 > **Note**: During migration, joint name separators change from underscores to slashes.
 
-#### Review migrated Sequences and rebuild actions
+## Review migrated Sequences and rebuild actions
 
 Reality Composer Pro 2 Timelines (tracks of actions) migrate into Reality Composer Pro 3 Sequences, but only three action types survive: Enable/Disable Entity, Play Audio, and Billboard. Reality Composer Pro 3 removes everything else (Add Force, Animation, Emphasize, Hide/Show, Notification, Orbit, Spin, Transform By/To, Replace Behaviors, and other action types) and shows the message: “Unsupported Actions Detected — Some Actions are not supported and will be removed from the generated sequences. Review the sequences after import to resolve any issues.” To fix this, review every migrated Sequence and rebuild the dropped actions using Reality Composer Pro 3’s tools (Sequences, Behavior Trees, Script Graph, Motion Paths, and other action types).
 
-#### Move audio files outside the scene hierarchy
+## Move audio files outside the scene hierarchy
 
 In Reality Composer Pro 2, you dragged audio files from the Project Browser into the hierarchy so audio components could reference them. In Reality Composer Pro 3, audio files in the Project Browser are already accessible to every component in the hierarchy, and you create Audio File Groups in the Project Browser instead of the hierarchy.
 
-#### Add a component to access the Audio Mixer
+## Add a component to access the Audio Mixer
 
 While Reality Composer Pro 2 provided a global Audio Mixer UI with level metering on the stereo output, Reality Composer Pro 3 does not. In Reality Composer Pro 3, place an [`AudioMixGroupsComponent`](../RealityKit/audiomixgroupscomponent.md) on an entity to access the Audio Mixer. If you have multiple `AudioMixGroupsComponent` instances on different entities, they stay in sync. Add Mix Groups through the component or from the Project Browser. Assign sounds to the Mix Group through the `AudioMixGroupsComponent`, or through the Project Browser. See [Adding audio components in Reality Composer Pro](./introduction-to-reality-composer-pro-audio.md) to learn more.
 
-#### Fix migrated materials that render incorrectly
+## Fix migrated materials that render incorrectly
 
 If a migrated material looks untextured, miscolored, or otherwise incorrect, check the following:
 
@@ -49,13 +49,13 @@ If a migrated material looks untextured, miscolored, or otherwise incorrect, che
 - Make sure you remap the normal texture to tangent space before connecting it to a normal field for shader graph.
 - Verify that every texture path resolves, and open the Reality Composer Pro 3 Console tab (located next to the Project Browser tab by default) for any import errors.
 
-#### Make materials occlude by defining their shader type
+## Make materials occlude by defining their shader type
 
 In Reality Composer Pro 2, you authored occlusion in a shader graph using the Occlusion Surface and Shadow Receiver Surface nodes. These nodes are no longer part of the shader graph node library in Reality Composer Pro 3. Occlusion describes an intent instead of a surface appearance, so there is no per-pixel result to author. To create an Occlusion material, first create a new material in the Project Browser or select an existing one, then set Shader to Occlusion in the Inspector.
 
 See [Building materials in Reality Composer Pro](./building-materials-in-reality-composer-pro.md) to learn more.
 
-#### Verify texture Transform and Color Space properties
+## Verify texture Transform and Color Space properties
 
 Reality Composer Pro 3 handles textures differently than Reality Composer Pro 2. Textures in Reality Composer Pro 3 are now standalone assets with their own settings. In Reality Composer Pro 2, an image offered little control of its own, and connecting it to a material determined how Reality Composer Pro 2 interpreted its data.
 
@@ -72,19 +72,19 @@ Because inference depends on the texture’s file name and how the image is conn
 - Color Space controls how Reality Composer Pro 3 reads the stored values.
 - The Transform Settings group holds options such as Compression and Resize. Edits apply to the texture asset, so every material referencing it updates. These settings live on the asset and are shared, so there is no per-material override of a texture’s Transform, Color Space, or Compression. When one image needs two different interpretations in the same project, import the file a second time or duplicate the texture asset so each copy carries its own settings.
 
-#### Fix texture coordinates and UV sets
+## Fix texture coordinates and UV sets
 
 If UV slots collide, it means a material is sampling a different UV set than the one intended, and textures appear misplaced, stretched, or mirrored. To diagnose it, open the material’s shader graph and look at the nodes feeding the UV input of the affected texture rather than at the image node itself. If a Texture Coordinates node does not produce the expected result, replace it with the 2D vector variant of the Primvar Reader node, and set its `Varname` to the name of the authored texture coordinate. This reads the mesh’s primary UV set by name instead of relying on slot resolution.
 
 > 💡 **Tip**: If you don’t know the name of the texture coordinate’s `primvar`, open the imported geometry and expand the primvars section.
 
-#### Manage material references and overrides
+## Manage material references and overrides
 
 In Reality Composer Pro 3, assigning a material to a material slot on an entity’s model component creates a reference to the material asset. Editing a property in the Inspector edits that asset, and the change appears on every entity and in every scene that uses it. A Reality Composer Pro 3 project is a database of assets. Choosing an asset in any picker creates a reference to that asset, not a copy and not an override.
 
 > **Note**: The same rule applies wherever you pick an asset, not just to materials. To make a local override: In the Project Browser, Control-click an asset and then click Instantiate. This creates a new asset named after the original with `(instance)` appended, which you then assign to the material slot. Note: An instance inherits values from its prototype and follows prototype changes, and overriding a property on the instance breaks the link for that property only. Duplicate the material instead when the copy should be fully independent of the original. Tip: Choose carefully which asset a slot points to before editing it. There is no implicit per-material override.
 
-#### Migrate particle systems
+## Migrate particle systems
 
 When you open a Reality Composer Pro 2 project in Reality Composer Pro 3, Reality Composer Pro 3 migrates the component automatically. However, be aware of the following differences between Reality Composer Pro 3 and Reality Composer Pro 2 Particle Emitter components:
 

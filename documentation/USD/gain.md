@@ -5,13 +5,13 @@
 
 A value that controls the audio volume.
 
-#### Overview
+## Overview
 
 The runtime multiplies this value by the incoming audio to produce the output signal. An asset may use this action to raise or lower the audio’s original volume.
 
 The default value of `1.0` matches the audio’s original volume. The runtime clamps negative values to `0.0`, which mutes the audio.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform double gain = 1.0

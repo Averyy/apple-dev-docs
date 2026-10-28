@@ -19,11 +19,11 @@ class func removeProperties(_ properties: [Any]!) -> Int
 + (NSInteger) removeProperties:(NSArray *) properties;
 ```
 
-#### Return Value
+## Return Value
 
 The number of properties successfully removed, or `-1` if an error occurs.
 
-#### Discussion
+## Discussion
 
 Only custom properties can be removed. This method is not implemented.
 

@@ -22,7 +22,7 @@ A format style that formats durations as attributed strings.
 struct Attributed
 ```
 
-#### Overview
+## Overview
 
 Apply the [`attributed`](./attributed-swift.property.md) property to a configured [`Duration.UnitsFormatStyle`](../unitsformatstyle.md) to produce an instance of this style. You can then format a duration with this style to create a formatted   [`AttributedString`](../../../Foundation/attributedstring.md). The formatted attributed string contains instances of [`AttributeScopes.FoundationAttributes.DateFieldAttribute`](../../../Foundation/attributescopes/foundationattributes/datefieldattribute.md) and [`AttributeScopes.FoundationAttributes.MeasurementAttribute`](../../../Foundation/attributescopes/foundationattributes/measurementattribute.md) for runs with formatted durations.
 

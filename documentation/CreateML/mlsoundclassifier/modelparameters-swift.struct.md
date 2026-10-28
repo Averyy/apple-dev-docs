@@ -19,7 +19,7 @@ Parameters that affect the process of training a sound-classifier model.
 struct ModelParameters
 ```
 
-#### Overview
+## Overview
 
 By default, a sound-classifier training session’s transfer-learning algorithm uses the [`MLSoundClassifier.ModelParameters.FeatureExtractorType.audioFeaturePrint(type:revision:)`](./modelparameters-swift.struct/featureextractortype/audiofeatureprint%28type,revision%29.md) feature extractor. See [`MLSoundClassifier.ModelParameters.FeatureExtractorType`](./modelparameters-swift.struct/featureextractortype.md) for more information.
 

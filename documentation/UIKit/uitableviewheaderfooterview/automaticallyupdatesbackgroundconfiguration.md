@@ -23,7 +23,7 @@ var automaticallyUpdatesBackgroundConfiguration: Bool { get set }
 @property (nonatomic) BOOL automaticallyUpdatesBackgroundConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is [`true`](../../Swift/true.md), the cell automatically calls `updated(for:)` on its [`backgroundConfiguration`](./backgroundconfiguration-52wng.md) when the view’s [`configurationState`](./configurationstate-7xj7r.md) changes, and applies the updated configuration back to the view. The default value is [`true`](../../Swift/true.md).
 

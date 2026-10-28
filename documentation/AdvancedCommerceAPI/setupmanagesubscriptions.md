@@ -5,7 +5,7 @@
 
 Create a deep link to a subscription-management page for your app.
 
-#### Overview
+## Overview
 
 Customers use the Settings > Apple Account > Subscriptions page in iOS to manage their subscriptions, including upgrading, downgrading, resubscribing, and canceling. When you offer subscriptions through the Advanced Commerce API, the Subscriptions page displays a “Manage in App” button.
 

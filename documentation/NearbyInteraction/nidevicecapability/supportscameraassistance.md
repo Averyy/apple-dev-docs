@@ -27,7 +27,7 @@ var supportsCameraAssistance: Bool { get }
 
 - [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 For more on Camera Assistance, see [`isCameraAssistanceEnabled`](../ninearbypeerconfiguration/iscameraassistanceenabled.md).
 

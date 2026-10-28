@@ -23,11 +23,11 @@ func recommendedAudioSettingsForAssetWriter(writingTo outputFileType: AVFileType
 - (NSDictionary<NSString *,id> *) recommendedAudioSettingsForAssetWriterWithOutputFileType:(AVFileType) outputFileType;
 ```
 
-#### Return Value
+## Return Value
 
 A fully populated dictionary of keys and values that are compatible with [`AVAssetWriter`](../avassetwriter.md).
 
-#### Discussion
+## Discussion
 
 The value of this property is an `NSDictionary` containing values for compression settings keys defined in [Audio settings](../audio-settings.md). This dictionary is suitable for use as the [`assetWriterInputWithMediaType:outputSettings:`](../avassetwriterinput/assetwriterinputwithmediatype_outputsettings_.md) method’s `outputSettings` parameter when creating an [`AVAssetWriterInputPixelBufferAdaptor`](../avassetwriterinputpixelbufferadaptor.md); for example,
 

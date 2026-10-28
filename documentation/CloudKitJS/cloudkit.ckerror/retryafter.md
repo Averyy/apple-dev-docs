@@ -15,7 +15,7 @@ The suggested time to wait before trying this operation again.
 readonly attribute Number retryAfter;
 ```
 
-#### Discussion
+## Discussion
 
 If this key is `null`, the operation can’t be retried.
 

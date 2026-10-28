@@ -25,7 +25,7 @@ var isDeclared: Bool { get }
 @property (readonly, getter=isDeclared) BOOL declared;
 ```
 
-#### Discussion
+## Discussion
 
 The system either declares a type or dynamically generates a type, but not both.
 

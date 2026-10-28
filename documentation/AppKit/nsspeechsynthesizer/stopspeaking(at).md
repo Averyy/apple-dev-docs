@@ -19,7 +19,7 @@ func stopSpeaking(at boundary: NSSpeechSynthesizer.Boundary)
 - (void) stopSpeakingAtBoundary:(NSSpeechBoundary) boundary;
 ```
 
-#### Discussion
+## Discussion
 
 Pass the constant [`NSSpeechSynthesizer.Boundary.immediateBoundary`](./boundary/immediateboundary.md) to stop immediately, even in the middle of a word. Pass [`NSSpeechSynthesizer.Boundary.wordBoundary`](./boundary/wordboundary.md) or [`NSSpeechSynthesizer.Boundary.sentenceBoundary`](./boundary/sentenceboundary.md) to stop speech at the end of the current word or sentence, respectively.
 

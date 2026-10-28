@@ -25,11 +25,11 @@ func path(forResource name: String?, ofType ext: String?) -> String?
 - (NSString *) pathForResource:(NSString *) name ofType:(NSString *) ext;
 ```
 
-#### Return Value
+## Return Value
 
 The full pathname for the resource file, or `nil` if the file could not be located.
 
-#### Discussion
+## Discussion
 
 The method first looks for a matching resource file in the non-localized resource directory of the specified bundle. If a matching resource file is not found, it then looks in the top level of an available language-specific `.lproj` folder. (The search order for the language-specific folders corresponds to the user’s preferences.) It does not recurse through other subfolders at any of these locations. For more details on how localized resources are found, read [The Bundle Search Pattern](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/AccessingaBundlesContents/AccessingaBundlesContents.html#//apple_ref/doc/uid/10000123i-CH104-SW7) in [Bundle Programming Guide](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFBundles/Introduction/Introduction.html#//apple_ref/doc/uid/10000123i).
 

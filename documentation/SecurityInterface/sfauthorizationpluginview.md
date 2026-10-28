@@ -19,7 +19,7 @@ class SFAuthorizationPluginView
 @interface SFAuthorizationPluginView : NSObject
 ```
 
-#### Overview
+## Overview
 
 If you’re developing an authorization plug-in, you can subclass the [`SFAuthorizationPluginView`](./sfauthorizationpluginview.md) class to create views that provide a custom user interface for your plug-in. By subclassing the [`SFAuthorizationPluginView`](./sfauthorizationpluginview.md) class, you avoid changing or duplicating the Apple-provided authentication or login window dialogs to display your custom view.
 

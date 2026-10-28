@@ -17,7 +17,7 @@ Unarchives the contents of the nib file and links them to a specific owner objec
 + (BOOL) loadNibNamed:(NSString *) nibName owner:(id) owner;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the nib file was loaded successfully; otherwise, [`false`](../../Swift/false.md).
 

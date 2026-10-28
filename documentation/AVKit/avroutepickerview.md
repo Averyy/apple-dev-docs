@@ -31,7 +31,7 @@ class AVRoutePickerView
 @interface AVRoutePickerView : NSView
 ```
 
-#### Overview
+## Overview
 
 This view represents a button that users tap to stream audio/video content to a media receiver, such as a Mac or Apple TV.
 
@@ -43,7 +43,7 @@ When the user taps the button, the system presents a popover that displays all o
 
 In iOS 16 and later, you can add devices to the list that implement custom protocols. For more information about displaying third-party routes, see [AVRouting](../AVRouting/AVRouting.md).
 
-##### Configure the button’s text, color, and media preference
+### Configure the button’s text, color, and media preference
 
 The following code example creates the view alongside custom text:
 

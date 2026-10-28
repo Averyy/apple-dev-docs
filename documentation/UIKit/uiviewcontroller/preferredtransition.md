@@ -27,7 +27,7 @@ var preferredTransition: UIViewController.Transition? { get set }
 
 - [Enhancing your app with fluid transitions](../enhancing-your-app-with-fluid-transitions.md)
 
-#### Discussion
+## Discussion
 
 Use this property to define which transition the system uses when you present a view controller. For more information, see [Enhancing your app with fluid transitions](../enhancing-your-app-with-fluid-transitions.md).
 

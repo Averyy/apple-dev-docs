@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatMakeWithSphericalCoordinates(SPSphericalCoordinates3DFloat coords);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector that contains the spherical coorddinates converted to Cartesian coordinates.
 
-#### Discussion
+## Discussion
 
 Returns a Spatial vector that represents the Cartesian coordinates of the specified spherical coordinates structure.
 

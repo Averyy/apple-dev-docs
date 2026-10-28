@@ -5,7 +5,7 @@
 
 A reference clock you use to synchronize applications and devices.
 
-#### Overview
+## Overview
 
 `The CMSync` API provides a reference clock that you use to synchronize applications and devices. This API also provides functions to monitor relative drift between `CMClocks` and functions that are associated with timer services.
 

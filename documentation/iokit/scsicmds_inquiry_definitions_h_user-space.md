@@ -5,9 +5,9 @@
 
 This file contains all definitions for the data returned from the INQUIRY (0x12) command.
 
-#### Overview
+## Overview
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/IOTypes.h>
 - <CoreFoundation/CoreFoundation.h>

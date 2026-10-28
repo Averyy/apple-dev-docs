@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is a default-ignorable code point.
 var isDefaultIgnorableCodePoint: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Default-ignorable code points are those that should be ignored by default in rendering (unless explicitly supported). They have no visible glyph or advance width in and of themselves, although they may affect the display, positioning, or adornment of adjacent or surrounding characters.
 

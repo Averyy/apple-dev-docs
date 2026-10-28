@@ -11,11 +11,11 @@ Fetches negative keywords in a campaign’s ad groups.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Use this endpoint to find negative keywords in different ad groups within the same campaign. Use the associated `campaignId` in the URI. Find calls use [`Selector`](./selector.md) [`Condition`](./condition.md) operators to narrow results. If you don’t specify any selector conditions, the API returns all negative keywords across all ad groups of the campaign. See the [`NegativeKeyword`](./negativekeyword.md) object for details about [`Selector`](./selector.md) `condition` operators per field.
 
-##### Payload example: Find ad group negative neywords
+### Payload example: Find ad group negative neywords
 
 **Request**:
 

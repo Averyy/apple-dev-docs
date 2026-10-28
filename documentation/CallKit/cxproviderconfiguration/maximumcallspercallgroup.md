@@ -24,7 +24,7 @@ var maximumCallsPerCallGroup: Int { get set }
 @property (nonatomic) NSUInteger maximumCallsPerCallGroup;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the maximum number is `5`.
 

@@ -21,11 +21,11 @@ func SecKeychainItemFreeContent(_ attrList: UnsafeMutablePointer<SecKeychainAttr
 OSStatus SecKeychainItemFreeContent(SecKeychainAttributeList *attrList, void *data);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Because the [`SecKeychainFindInternetPassword(_:_:_:_:_:_:_:_:_:_:_:_:_:_:_:)`](./seckeychainfindinternetpassword%28_,_,_,_,_,_,_,_,_,_,_,_,_,_,_%29.md) and [`SecKeychainFindGenericPassword(_:_:_:_:_:_:_:_:)`](./seckeychainfindgenericpassword%28_,_,_,_,_,_,_,_%29.md) functions call the [`SecKeychainItemCopyContent(_:_:_:_:_:)`](./seckeychainitemcopycontent%28_,_,_,_,_%29.md) function, you must call `SecKeychainItemFreeContent` to release the data buffers after calls to those functions as well.
 

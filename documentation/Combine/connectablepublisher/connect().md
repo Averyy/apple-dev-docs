@@ -27,7 +27,7 @@ func connect() -> any Cancellable
 - [Controlling Publishing with Connectable Publishers](../controlling-publishing-with-connectable-publishers.md)
 - [Replacing Foundation Timers with Timer Publishers](../replacing-foundation-timers-with-timer-publishers.md)
 
-#### Return Value
+## Return Value
 
 A [`Cancellable`](../cancellable.md) instance that you use to cancel publishing.
 

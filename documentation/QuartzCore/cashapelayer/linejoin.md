@@ -24,7 +24,7 @@ var lineJoin: CAShapeLayerLineJoin { get set }
 @property (copy) CAShapeLayerLineJoin lineJoin;
 ```
 
-#### Discussion
+## Discussion
 
 The line join style specifies the shape of the joints between connected segments of a stroked path. The supported values are described in [Line Join Values](../line-join-values.md). The following figure shows the appearance of the available line join styles.
 

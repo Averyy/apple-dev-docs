@@ -21,7 +21,7 @@ The closure to execute with the results of retrieving a record change.
 var recordWasChangedBlock: ((CKRecord.ID, Result<CKRecord, any Error>) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

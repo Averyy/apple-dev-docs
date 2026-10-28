@@ -23,7 +23,7 @@ var kDNSServiceType_SINK: Int { get }
 kDNSServiceType_SINK
 ```
 
-#### Discussion
+## Discussion
 
 Kitchen sink (experimental)
 

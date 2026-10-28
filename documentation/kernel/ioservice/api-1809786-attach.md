@@ -12,11 +12,11 @@ virtual bool attach(
  IOService *provider );
 ```
 
-#### Return Value
+## Return Value
 
 `false` if the provider is inactive or on a resource failure; otherwise `true`.
 
-#### Overview
+## Overview
 
 This function called in an IOService client enters the client into the I/O Registry as a child of the provider in the service plane. The provider must be active or the attach will fail. Multiple attach calls to the same provider are no-ops and return success. A client may be attached to multiple providers. Entering an object into the I/O Registry retains both the client and provider until they are detached.
 

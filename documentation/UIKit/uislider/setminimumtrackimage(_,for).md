@@ -22,7 +22,7 @@ func setMinimumTrackImage(_ image: UIImage?, for state: UIControl.State)
 - (void) setMinimumTrackImage:(UIImage *) image forState:(UIControlState) state;
 ```
 
-#### Discussion
+## Discussion
 
 Because the movement of the slider’s thumb changes the width of the area occupied by the minimum track image, the image width changes accordingly. To accommodate this requirement, specify track images as stretchable images that can grow or shrink to fill the available space. For information about how to create stretchable images, see [`UIImage`](../uiimage.md).
 

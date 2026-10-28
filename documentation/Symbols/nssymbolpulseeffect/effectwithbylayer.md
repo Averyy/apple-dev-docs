@@ -21,7 +21,7 @@ A copy of the effect requesting an animation that pulses only the layers marked 
 - (instancetype) effectWithByLayer;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the effect options that pulses only the layers marked to always pulse.
 

@@ -13,7 +13,7 @@
 kSCSIProtocolFeature_CPUInDiskMode = 2
 ```
 
-#### Discussion
+## Discussion
 
 Used to determine if the SCSI Protocol Services Driver supports a CPU which is in target disk mode.
 

@@ -21,7 +21,7 @@ case misplacedWinnerPostback
 SKAdTestErrorCodeMisplacedWinnerPostback
 ```
 
-#### Discussion
+## Discussion
 
 Check that the first postback in the `postbacks` array you provide to [`setPostbacks(_:)`](../../skadtestsession/setpostbacks%28_%29.md) is marked as a winning postback, with `didWin` set to `true`. Check that the winning postback is in no other position in the array.
 

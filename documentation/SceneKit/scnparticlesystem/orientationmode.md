@@ -25,7 +25,7 @@ var orientationMode: SCNParticleOrientationMode { get set }
 @property (nonatomic) SCNParticleOrientationMode orientationMode;
 ```
 
-#### Discussion
+## Discussion
 
 A particle’s angle (or orientation) is independent from its direction of motion. For example, a smoke effect may use a small image of a cloud for each particle, which stays at the same angle as the smoke rises, but a snow effect may use an image that flips and rotates as each snowflake falls.
 

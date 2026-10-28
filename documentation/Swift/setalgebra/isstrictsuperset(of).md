@@ -21,11 +21,11 @@ Returns a Boolean value that indicates whether this set is a strict superset of 
 func isStrictSuperset(of other: Self) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the set is a strict superset of `other`; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Set *A* is a strict superset of another set *B* if every member of *B* is also a member of *A* and *A* contains at least one element that is *not* a member of *B*.
 

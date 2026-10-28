@@ -24,11 +24,11 @@ class func date(withNaturalLanguageString string: String, locale: Any?) -> Any?
 + (id) dateWithNaturalLanguageString:(NSString *) string locale:(id) locale;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDate` object set to the date and time specified by `string` as interpreted according to `locale`.
 
-#### Discussion
+## Discussion
 
 This method supports only a limited set of colloquial phrases, primarily in English. It may give unexpected results, and its use is strongly discouraged. To create a date object from a string, you should use a date formatter object instead (see [`DateFormatter`](../dateformatter.md) and [Data Formatting Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DataFormatting/DataFormatting.html#//apple_ref/doc/uid/10000029i)).
 

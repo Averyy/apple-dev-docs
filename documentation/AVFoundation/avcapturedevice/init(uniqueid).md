@@ -24,11 +24,11 @@ init?(uniqueID deviceUniqueID: String)
 + (AVCaptureDevice *) deviceWithUniqueID:(NSString *) deviceUniqueID;
 ```
 
-#### Return Value
+## Return Value
 
 A capture device, or `nil` if no device with the specified identifier exists.
 
-#### Discussion
+## Discussion
 
 Every capture device has a unique identifier that persists on a system across device connections, app restarts, and reboots of the system itself.
 

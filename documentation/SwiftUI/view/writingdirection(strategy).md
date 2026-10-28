@@ -22,7 +22,7 @@ nonisolated
 func writingDirection(strategy: Text.WritingDirectionStrategy) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 To control the writing direction explicitly, choose the [`layoutBased`](../text/writingdirectionstrategy/layoutbased.md) mode and set the [`layoutDirection`](../environmentvalues/layoutdirection.md) to the appropriate value.
 

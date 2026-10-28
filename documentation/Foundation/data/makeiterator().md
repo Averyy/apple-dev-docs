@@ -21,7 +21,7 @@ Returns an iterator over the contents of the data.
 func makeIterator() -> Data.Iterator
 ```
 
-#### Discussion
+## Discussion
 
 The iterator will increment byte-by-byte.
 

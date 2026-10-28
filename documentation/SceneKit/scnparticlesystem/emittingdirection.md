@@ -25,7 +25,7 @@ var emittingDirection: SCNVector3 { get set }
 @property (nonatomic) SCNVector3 emittingDirection;
 ```
 
-#### Discussion
+## Discussion
 
 If the the [`emitterShape`](./emittershape.md) property value is `nil` or the [`birthDirection`](./birthdirection.md) property value is [`SCNParticleBirthDirection.constant`](../scnparticlebirthdirection/constant.md), newly spawned particles emit in the direction specified by this property. You can randomize the direction of newly spawned particles with the [`spreadingAngle`](./spreadingangle.md) property.
 

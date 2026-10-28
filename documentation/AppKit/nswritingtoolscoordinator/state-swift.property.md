@@ -19,7 +19,7 @@ var state: NSWritingToolsCoordinator.State { get }
 @property (readonly) NSWritingToolsCoordinatorState state;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine when Writing Tools is actively making changes to your view. During the course of Writing Tools interactions, the system reports state changes to the delegate’s [`writingToolsCoordinator(_:willChangeTo:completion:)`](./delegate-swift.protocol/writingtoolscoordinator%28_,willchangeto,completion%29.md) method and updates this property accordingly.
 

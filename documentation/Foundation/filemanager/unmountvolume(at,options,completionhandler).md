@@ -23,7 +23,7 @@ func unmountVolume(at url: URL, options mask: FileManager.UnmountOptions = []) a
 - (void) unmountVolumeAtURL:(NSURL *) url options:(NSFileManagerUnmountOptions) mask completionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If the volume is encrypted, it is relocked after being unmounted.
 

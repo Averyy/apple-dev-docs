@@ -27,7 +27,7 @@ func adjustSelection(by range: BEDirectionalTextRange) async
 - (void) adjustSelectionByRange:(BEDirectionalTextRange) range completionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The argument value is a character count. The start of the current selection moves by `range.offset` characters, and the length of the selection changes by `range.length` characters.
 

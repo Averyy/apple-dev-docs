@@ -25,7 +25,7 @@ var dimensions: CGSize { get }
 @property (nonatomic, readonly) CGSize dimensions;
 ```
 
-#### Discussion
+## Discussion
 
 The dimensions can change if the user zooms in on the content.
 

@@ -17,7 +17,7 @@ Requests that the capture session be canceled.
 func cancel()
 ```
 
-#### Discussion
+## Discussion
 
 Call this when the user indicates they want to cancel the scan.  Calling this method eventually transitions the session to `.failed(Error)` Once the session enters the failed state  it is safe to tear down the session and create a new one if desired.
 

@@ -15,11 +15,11 @@ Registers a component stored in memory.
 Component RegisterComponent(ComponentDescription *cd, ComponentRoutineUPP componentEntryPoint, SInt16 global, Handle componentName, Handle componentInfo, Handle componentIcon);
 ```
 
-#### Return Value
+## Return Value
 
 The unique component identifier assigned to the component by the Component Manager or, if it cannot register the component, `NULL`. See the description of the `Component` data type.
 
-#### Discussion
+## Discussion
 
 Before a component can be used by an application, the component must be registered with the Component Manager. Applications can then find and open the component using the standard Component Manager functions. 
 

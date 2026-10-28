@@ -19,7 +19,7 @@ var measurementUnits: NSRulerView.UnitName { get set }
 @property (copy) NSRulerViewUnitName measurementUnits;
 ```
 
-#### Discussion
+## Discussion
 
 `unitName` must have been registered with the NSRulerView class object prior to invoking this method. See the description of the class method [`registerUnit(withName:abbreviation:unitToPointsConversionFactor:stepUpCycle:stepDownCycle:)`](./registerunit%28withname,abbreviation,unittopointsconversionfactor,stepupcycle,stepdowncycle%29.md) for a list of predefined units.
 

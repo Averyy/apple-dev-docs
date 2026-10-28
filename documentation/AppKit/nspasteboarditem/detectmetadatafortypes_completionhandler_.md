@@ -15,7 +15,7 @@ Determines available metadata from the specified metadata types for this pastebo
 - (void) detectMetadataForTypes:(NSSet<NSString *> *) types completionHandler:(void (^)(NSDictionary<NSString *,id> *detectedMetadata, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method only gives access to limited types of metadata and doesn’t allow the app to access the contents. As a result, the system doesn’t notify the person using the app about reading the contents of the pasteboard.
 

@@ -21,7 +21,7 @@ Generates a data frame slice that includes the columns in a sequence of column n
 subscript<S>(columnNames: S) -> DataFrame.Slice where S : Sequence, S.Element == String { get }
 ```
 
-#### Return Value
+## Return Value
 
 A new data frame slice.
 

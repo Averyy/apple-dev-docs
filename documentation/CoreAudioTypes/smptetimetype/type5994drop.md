@@ -23,7 +23,7 @@ case type5994Drop
 kSMPTETimeType5994Drop
 ```
 
-#### Discussion
+## Discussion
 
 59.94 video frames per second, with video-frame numbers adjusted to ensure that the timecode matches elapsed clock time.
 

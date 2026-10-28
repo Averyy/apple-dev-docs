@@ -24,7 +24,7 @@ static let event: CHHapticPattern.Key
 extern CHHapticPatternKey CHHapticPatternKeyEvent;
 ```
 
-#### Discussion
+## Discussion
 
 The haptic event definition includes an event type, a time, and an optional set of fixed parameters.
 

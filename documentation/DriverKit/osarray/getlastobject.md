@@ -18,11 +18,11 @@ Returns the last member of the array.
 OSObject * getLastObject() const;
 ```
 
-#### Return Value
+## Return Value
 
 Member at the last index or NULL if array has no members.
 
-#### Discussion
+## Discussion
 
 If the array has non-zero count the member at the last index is returned, with no additional retain count (the caller should not release). Otherwise NULL.
 

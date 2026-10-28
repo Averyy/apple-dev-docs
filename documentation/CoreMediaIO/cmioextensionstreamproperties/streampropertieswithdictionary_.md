@@ -16,7 +16,7 @@ Returns a new properties object that provides the specified properties and defau
 + (instancetype) streamPropertiesWithDictionary:(NSDictionary<NSString *,CMIOExtensionPropertyState *> *) propertiesDictionary;
 ```
 
-#### Return Value
+## Return Value
 
 A new stream properties object.
 

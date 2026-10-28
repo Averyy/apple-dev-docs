@@ -24,7 +24,7 @@ var outputNode: MTLFunctionStitchingFunctionNode? { get set }
 @property (nonatomic, retain, readwrite, nullable) MTLFunctionStitchingFunctionNode * outputNode;
 ```
 
-#### Discussion
+## Discussion
 
 The output type of the node needs to match the result type in the stitched function’s declaration.
 

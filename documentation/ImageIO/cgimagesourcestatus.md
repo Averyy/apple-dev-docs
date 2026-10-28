@@ -25,7 +25,7 @@ enum CGImageSourceStatus
 enum CGImageSourceStatus : int32_t;
 ```
 
-#### Overview
+## Overview
 
 The [`CGImageSourceGetStatus(_:)`](./cgimagesourcegetstatus%28_%29.md) and [`CGImageSourceGetStatusAtIndex(_:_:)`](./cgimagesourcegetstatusatindex%28_,_%29.md) functions return these values.
 

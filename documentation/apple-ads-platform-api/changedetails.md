@@ -15,11 +15,11 @@ Field-level change record for a single API entity within a transaction.
 object ChangeDetails
 ```
 
-#### Overview
+## Overview
 
 Each `ChangeDetails` record represents one entity’s complete change history for a single transaction. The `details` array contains [`ActivityDetail`](./activitydetail.md) objects, each of which holds a `changes` array of field change objects capturing the `field` name, `oldValues`, and `newValues`.
 
-##### Example
+### Example
 
 ```json
 {
@@ -54,17 +54,17 @@ Each `ChangeDetails` record represents one entity’s complete change history fo
 }
 ```
 
-#### Discussion
+## Discussion
 
-##### Relationship to AuditSummary
+### Relationship to AuditSummary
 
 The `ChangeDetails` object is the field-level expansion of an [`AuditSummary`](./auditsummary.md) row. The `count` field on a summary row tells you how many field change entries to expect across all `ActivityDetail` objects in `details`.
 
-##### `entityMetaData` vs `metas`
+### `entityMetaData` vs `metas`
 
 The `ChangeDetails` always populates `entityMetaData` (when metadata is available) regardless of the request’s `options.metadata` setting. It represents a point-in-time snapshot of key entity attributes captured at change time. This differs from the `metas` field on `AuditSummary`, which the request’s `options.metadata` query option controls.
 
-##### Understand `oldValues` and `newValues`
+### Understand `oldValues` and `newValues`
 
 Both fields are string arrays. For scalar fields, each array contains a single element. For array-valued fields, each array represents the full set of values before and after the change. Interpretation by event type:
 

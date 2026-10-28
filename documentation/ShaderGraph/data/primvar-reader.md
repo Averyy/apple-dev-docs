@@ -14,7 +14,7 @@ A node that provides the ability for shading networks to consume data defined on
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Primvar Reader (integer)**:
 

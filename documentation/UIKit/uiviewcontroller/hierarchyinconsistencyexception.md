@@ -23,7 +23,7 @@ class let hierarchyInconsistencyException: NSExceptionName
 extern NSExceptionName const UIViewControllerHierarchyInconsistencyException;
 ```
 
-#### Discussion
+## Discussion
 
 When a view controller’s view is added to the view hierarchy, the system walks up the view hierarchy to find the first parent view that has a view controller. That view controller must be the parent of the view controller whose view is being added. Otherwise, this exception is raised. This consistency check is also performed when a view controller is added as a child by calling the [`addChild(_:)`](./addchild%28_%29.md) method.
 

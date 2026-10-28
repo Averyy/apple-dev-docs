@@ -15,7 +15,7 @@ static IOInterruptEventSource * interruptEventSource(
  int intIndex = 0);
 ```
 
-#### Return Value
+## Return Value
 
 A new interrupt event source if successfully created and initialised, 0 otherwise.
 

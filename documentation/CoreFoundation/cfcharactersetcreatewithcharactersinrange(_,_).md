@@ -25,7 +25,7 @@ func CFCharacterSetCreateWithCharactersInRange(_ alloc: CFAllocator!, _ theRange
 extern CFCharacterSetRefCFCharacterSetCreateWithCharactersInRange(CFAllocatorRef alloc, CFRange theRange);
 ```
 
-#### Return Value
+## Return Value
 
 A new character set that contains a contiguous range of Unicode characters. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

@@ -26,11 +26,11 @@ func append(_ timedMetadataGroup: AVTimedMetadataGroup) -> Bool
 - (BOOL) appendTimedMetadataGroup:(AVTimedMetadataGroup *) timedMetadataGroup;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the adaptor appends the group; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The timing of metadata items in the output asset correspond to the time range of the timed metadata group, regardless of the values of their individual time and duration properties.
 

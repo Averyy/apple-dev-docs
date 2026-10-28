@@ -19,11 +19,11 @@ func SCPreferencesLock(_ prefs: SCPreferences, _ wait: Bool) -> Bool
 Boolean SCPreferencesLock(SCPreferencesRef prefs, Boolean wait);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the lock was obtained; `FALSE` if an error occurred.
 
-#### Discussion
+## Discussion
 
 This function obtains exclusive access to the configuration preferences. Clients attempting to obtain exclusive access to the preferences either receive a [`kSCStatusPrefsBusy`](./kscstatusprefsbusy.md) error or they block, waiting for the lock to be released.
 

@@ -19,11 +19,11 @@ init?(name: NSDataAsset.Name, bundle: Bundle)
 - (instancetype) initWithName:(NSDataAssetName) name bundle:(NSBundle *) bundle;
 ```
 
-#### Return Value
+## Return Value
 
 The data asset object for the named data set in the specified bundle, or `nil` if the data set is not found.
 
-#### Discussion
+## Discussion
 
 If there are multiple data files in the named data set, this method returns the one with attributes that most closely match the current device available screen space.
 

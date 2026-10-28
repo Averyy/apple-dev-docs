@@ -24,7 +24,7 @@ case unsupported
 MTLLibraryErrorUnsupported
 ```
 
-#### Discussion
+## Discussion
 
 For example, the requested library file has improper formatting, or the requested library is not accessible.
 

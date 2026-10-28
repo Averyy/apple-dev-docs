@@ -20,11 +20,11 @@ Creates a new render pipeline state from another, previously unspecialized, pipe
 - (id<MTL4CompilerTask>) newRenderPipelineStateBySpecializationWithDescriptor:(MTL4PipelineDescriptor *) descriptor pipeline:(id<MTLRenderPipelineState>) pipeline completionHandler:(MTLNewRenderPipelineStateCompletionHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A compiler task representing the asynchronous compilation task.
 
-#### Discussion
+## Discussion
 
 Metal specializes the pipeline state with new state values the descriptor provides, observing the following rules:
 

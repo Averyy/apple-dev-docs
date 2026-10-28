@@ -28,7 +28,7 @@ func handle(intent: INActivateCarSignalIntent) async -> INActivateCarSignalInten
 - (void) handleActivateCarSignal:(INActivateCarSignalIntent *) intent completion:(void (^)(INActivateCarSignalIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must activate the specified signals on the user’s car. If you are unable to activate the signals, return a response object whose result code indicates the reason for the failure.
 

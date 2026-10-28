@@ -19,7 +19,7 @@ Initializes a custom detection track with an array of detections, optionally app
 - (instancetype) initWithDetections:(NSArray<CNDetection *> *) detections smooth:(BOOL) applySmoothing;
 ```
 
-#### Return Value
+## Return Value
 
 An object representing a custom detection track with an array of detections, optionally applying smoothing.
 

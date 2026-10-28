@@ -23,7 +23,7 @@ var kCTFontTableVmtx: Int { get }
 kCTFontTableVmtx
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for vertical metrics.
 

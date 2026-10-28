@@ -24,7 +24,7 @@ func GCPoint2Equal(_ point1: GCPoint2, _ point2: GCPoint2) -> Bool
 static bool GCPoint2Equal(GCPoint2 point1, GCPoint2 point2);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the points are the same; otherwise, [`false`](../Swift/false.md).
 

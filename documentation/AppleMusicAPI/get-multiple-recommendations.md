@@ -9,13 +9,13 @@ Fetch one or more recommendations by using their identifiers.
 **Availability**:
 - Apple Music 1.0+
 
-#### Discussion
+## Discussion
 
 If successful, the HTTP status code is 200 (OK) and the `data` array contains an array of `Recommendation` objects. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array. For more information, see [Handling Requests and Responses](./handling-requests-and-responses.md).
 
 This endpoint requires a music user token. For more information, see [User Authentication for MusicKit](./user-authentication-for-musickit.md).
 
-##### Example
+### Example
 
 **Request**:
 

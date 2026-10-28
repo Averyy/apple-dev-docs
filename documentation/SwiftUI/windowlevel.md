@@ -15,7 +15,7 @@ The level of a window.
 struct WindowLevel
 ```
 
-#### Overview
+## Overview
 
 Use this in conjunction with the `.windowLevel(_:)` modifier to control window levels.
 

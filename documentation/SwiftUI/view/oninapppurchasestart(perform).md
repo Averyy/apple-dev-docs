@@ -22,7 +22,7 @@ nonisolated
 func onInAppPurchaseStart(perform action: ((Product) async -> ())?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 You can remove any actions ancestor views may have added by providing `nil` for the action.
 

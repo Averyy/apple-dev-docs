@@ -20,7 +20,7 @@ func removeChild(at index: Int)
 - (void) removeChildAtIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 The removed child node is released.
 

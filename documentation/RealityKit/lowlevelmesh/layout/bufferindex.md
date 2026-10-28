@@ -20,7 +20,7 @@ The index of the buffer to use for this layout.
 var bufferIndex: Int
 ```
 
-#### Discussion
+## Discussion
 
 Most usage scenarios only use one buffer. Use a buffer index that is less than [`vertexBufferCount`](../descriptor-swift.struct/vertexbuffercount.md).
 

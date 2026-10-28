@@ -33,7 +33,7 @@ class var defaultCritical: UNNotificationSound { get }
 @property (class, atomic, copy, readonly) UNNotificationSound * defaultCriticalSound;
 ```
 
-#### Discussion
+## Discussion
 
 Critical alerts ingore the mute switch and Do Not Disturb. They require a special entitlement issued by Apple.
 

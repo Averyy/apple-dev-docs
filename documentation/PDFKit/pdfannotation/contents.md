@@ -24,11 +24,11 @@ var contents: String? { get set }
 @property (nonatomic, copy, nullable) NSString * contents;
 ```
 
-#### Return Value
+## Return Value
 
 A string representing the textual content associated with the annotation.
 
-#### Discussion
+## Discussion
 
 Textual content is typically associated with `PDFAnnotationText` and `PDFAnnotationFreeText` annotations.
 

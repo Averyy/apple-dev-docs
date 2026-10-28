@@ -21,7 +21,7 @@ Creates an operation from the given string.
 init(rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 Typically you use one of the predefined operations, like [`operationLogin`](./operationlogin.md), instead of initializing one from a string.
 

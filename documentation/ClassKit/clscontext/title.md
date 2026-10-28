@@ -23,7 +23,7 @@ var title: String { get set }
 @property (nonatomic, copy) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 The title that you choose appears to teachers exactly as you store it. If your app works in many locales, localize the title. The framework doesn’t do that for you automatically.
 

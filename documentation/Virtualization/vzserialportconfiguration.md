@@ -19,7 +19,7 @@ class VZSerialPortConfiguration
 @interface VZSerialPortConfiguration : NSObject
 ```
 
-#### Overview
+## Overview
 
 Don’t create a [`VZSerialPortConfiguration`](./vzserialportconfiguration.md) object directly. Instead, instantiate a concrete instance of one of its subclasses, such as [`VZVirtioConsoleDeviceConfiguration`](./vzvirtioconsoledeviceconfiguration.md). Use the [`attachment`](./vzserialportconfiguration/attachment.md) property of this class to configure the medium through which serial communication happens.
 

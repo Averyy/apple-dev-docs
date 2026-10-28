@@ -16,7 +16,7 @@ An error that indicates foveation is enabled but not supported.
 case variableRasterizationRateIsNotSupported
 ```
 
-#### Discussion
+## Discussion
 
 Disable foveation in your layer’s configuration.
 

@@ -20,7 +20,7 @@ func ODRecordVerifyPassword(_ record: ODRecordRef!, _ password: CFString!, _ err
 extern bool ODRecordVerifyPassword(ODRecordRef record, CFStringRef password, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the password is valid; otherwise, `false`.
 

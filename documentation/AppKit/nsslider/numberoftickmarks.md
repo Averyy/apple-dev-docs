@@ -19,7 +19,7 @@ var numberOfTickMarks: Int { get set }
 @property NSInteger numberOfTickMarks;
 ```
 
-#### Discussion
+## Discussion
 
 This property includes tick marks assigned to the minimum and maximum values. In its implementation of this property, the receiving `NSSlider` instance invokes the method of the same name of its `NSSliderCell` instance. By default, this value is 0, and no tick marks appear. The number of tick marks assigned to a slider, along with the slider’s minimum and maximum values, determines the values associated with the tick marks.
 

@@ -19,11 +19,11 @@ struct SecurityMessage
 
 - [Receiving iOS notifications on an accessory](./receiving-ios-notifications-on-an-accessory.md)
 
-#### Overview
+## Overview
 
 Your [`AccessoryTransportSecurity`](./accessorytransportsecurity.md) extension provides instances of this type to initiate key exchange and receives them during [`messageReceived(_:completion:)`](./accessorysecuritysession/eventhandler/messagereceived%28_,completion%29.md) to complete the exchange.
 
-#### Derive encryption secrets
+## Derive encryption secrets
 
 Export HPKE secrets once during key exchange when handling [`SecurityMessage.KeyType.encapsulatedKey`](./securitymessage/keytype-swift.enum/encapsulatedkey.md). Store the exported secrets for both `HostToAccessory` and `AccessoryToHost` directions for all subsequent message encryption and decryption.
 

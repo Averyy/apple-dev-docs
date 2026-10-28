@@ -29,7 +29,7 @@ func sample(atTime time: CGFloat) -> Any?
 
 - [Using Keyframe Sequence to effect Custom Interpolation](../using-keyframe-sequence-to-effect-custom-interpolation.md)
 
-#### Return Value
+## Return Value
 
 An object that contains the interpolated sample. The class of this object matches the class of the values stored in the keyframe sequence — either an [`NSNumber`](../../Foundation/nsnumber.md) or an `SKColor`.
 

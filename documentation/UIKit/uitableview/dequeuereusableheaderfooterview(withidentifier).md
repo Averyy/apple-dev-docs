@@ -27,11 +27,11 @@ func dequeueReusableHeaderFooterView(withIdentifier identifier: String) -> UITab
 
 - [Adding headers and footers to table sections](../adding-headers-and-footers-to-table-sections.md)
 
-#### Return Value
+## Return Value
 
 A [`UITableViewHeaderFooterView`](../uitableviewheaderfooterview.md) object with the associated identifier or `nil` if no such object exists in the reusable view queue.
 
-#### Discussion
+## Discussion
 
 For performance reasons, a table view’s delegate should generally reuse [`UITableViewHeaderFooterView`](../uitableviewheaderfooterview.md) objects when it’s asked to provide them. A table view maintains a queue or list of [`UITableViewHeaderFooterView`](../uitableviewheaderfooterview.md) objects that the table view’s delegate has marked for reuse. It marks a view for reuse by assigning it a reuse identifier when it creates it (in the [`init(reuseIdentifier:)`](../uitableviewheaderfooterview/init%28reuseidentifier%29.md) method of [`UITableViewHeaderFooterView`](../uitableviewheaderfooterview.md)).
 

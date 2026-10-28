@@ -20,7 +20,7 @@ let vmnet_mtu_key: UnsafePointer<CChar>
 extern const char * const vmnet_mtu_key;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is of type [`XPC_TYPE_UINT64`](../XPC/xpc_type_uint64-swift.var.md).
 

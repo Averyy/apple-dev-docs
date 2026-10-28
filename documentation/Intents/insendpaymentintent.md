@@ -23,7 +23,7 @@ class INSendPaymentIntent
 @interface INSendPaymentIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 Siri creates an [`INSendPaymentIntent`](./insendpaymentintent.md) object when the current user asks to transfer money to another user. A send payment intent object includes the payment amount and the recipient of the payment. Use that information to validate the transaction and transfer the funds.
 
@@ -31,7 +31,7 @@ To handle this intent, the handler object in your Intents extension must adopt t
 
 This intent object represents a financial transaction between two users.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

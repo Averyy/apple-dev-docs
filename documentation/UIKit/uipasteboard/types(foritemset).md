@@ -22,7 +22,7 @@ func types(forItemSet itemSet: IndexSet?) -> [[String]]?
 - (NSArray<NSArray<NSString *> *> *) pasteboardTypesForItemSet:(NSIndexSet *) itemSet;
 ```
 
-#### Return Value
+## Return Value
 
 An array of arrays, with each inner array holding the representation types for a particular pasteboard item.
 

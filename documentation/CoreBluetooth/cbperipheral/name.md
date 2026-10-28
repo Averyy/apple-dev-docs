@@ -25,7 +25,7 @@ var name: String? { get }
 @property (retain, readonly, nullable) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to retrieve a human-readable name of the peripheral. A peripheral may have two different name types: one that the device advertises and another that the device publishes in its database as its Bluetooth low energy Generic Access Profile (GAP) device name. If a peripheral has both types of names, this property returns its GAP device name.
 

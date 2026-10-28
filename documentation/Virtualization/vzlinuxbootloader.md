@@ -23,7 +23,7 @@ class VZLinuxBootLoader
 
 - [Creating and Running a Linux Virtual Machine](./creating-and-running-a-linux-virtual-machine.md)
 
-#### Overview
+## Overview
 
 Create and configure a [`VZLinuxBootLoader`](./vzlinuxbootloader.md) object during the initial configuration of your VM. Use this object to specify the location of the Linux kernel that serves as the guest operating system. You can also specify additional information to use during the boot process, such as command-line parameters to pass to the kernel. Assign the [`VZLinuxBootLoader`](./vzlinuxbootloader.md) object to the [`bootLoader`](./vzvirtualmachineconfiguration/bootloader.md) property of your [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) object.  A configuration with `VZLinuxBootLoader` is only valid if used with [`VZGenericPlatformConfiguration`](./vzgenericplatformconfiguration.md).
 

@@ -15,7 +15,7 @@ A structure that provides guidance for how to alert for a notification.
 struct AlertingContext
 ```
 
-#### Overview
+## Overview
 
 To alert for a notification, present it on screen, play a sound, or trigger a haptic effect that uses touch to give users feedback.
 

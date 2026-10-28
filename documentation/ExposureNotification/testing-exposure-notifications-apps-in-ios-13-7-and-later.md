@@ -5,19 +5,19 @@
 
 Perform end-to-end validation of Exposure Notifications apps on a device by manually loading configuration files.
 
-#### Overview
+## Overview
 
 Exposure Notifications apps automatically download configuration information for the phone’s current region, such as the public key, public key version, and agency name. During development, those configuration files may not yet be available, or you may need to override the configuration values, for example, to point your app at a test server. You can manually set the default configuration values for your region by loading custom configuration files onto your development iPhone.
 
 To load custom configuration files, you’ll need a Mac running Xcode, a device with your region’s Exposure Notifications app loaded on it, and the device profile you received from Apple when you registered as a PHA.
 
-##### Enable the Developer Menu
+### Enable the Developer Menu
 
 To load a custom Exposure Notifications configuration, the device must have the Developer menu enabled in the Settings app. If you’ve used the device to test applications from Xcode, the menu is already enabled. To verify that it’s enabled, go to the Settings app and scroll down to make sure Developer is listed. Alternatively, type “developer” into the search bar and confirm it’s listed. Once you confirm the Developer menu is enabled, you’re ready to create your configuration file.
 
 If your iPhone doesn’t have a Developer row in the Settings app, launch Xcode on a Mac, select Devices & Simulators from the Window menu, and plug your iPhone into your Mac. As Xcode prepares your device, a yellow bar appears at the top of the Devices & Simulators window. If you’ve never plugged your iPhone into this computer, you’ll be asked if you want to trust it. Select “Trust” on your iPhone. After a few minutes, the yellow bar disappears, which signals that your device is configured for development.
 
-##### Create a Configuration File
+### Create a Configuration File
 
 Next, you need to create a configuration file that provides the configuration information your Exposure Notifications app needs to connect with your region’s servers. Start by copying the JSON below into a text file:
 
@@ -96,7 +96,7 @@ If your app’s region includes both a country and subdivision code, such as “
 
 After you’ve made your changes, save the file somewhere on your Mac with the name `Test_Config.json`. If you’re testing in iOS 14.1 or later, copy `Test_Config.json` to the Files app on your iPhone by using AirDrop, or by adding it to the iCloud Drive folder on your Mac and then waiting for it to sync to your iPhone. If you’re testing in iOS 14.0 or iOS 13.7, you’ll need to convert the JSON file you created into a property list before copying it to your iPhone.
 
-##### Convert the JSON File to a Property List (iOS 14 and iOS 13.7)
+### Convert the JSON File to a Property List (iOS 14 and iOS 13.7)
 
 To convert the JSON file you created into a property list in iOS 14.0 or iOS 13.7, open the Terminal app on your Mac, use `cd` to navigate to the directory where you saved T`est_Config.json`, then type the following command to generate the configuration property list to load onto your iPhone:
 
@@ -106,7 +106,7 @@ plutil -convert xml1 Test_Config.json -o Test_Config.plist
 
 The `plutil` command converts your JSON file into a new `.plist` file called `Test_Config.plist` and places it in the same directory as the original JSON file. Copy that new file to the Files app on your iPhone by using AirDrop, or by adding the file to the iCloud Drive folder on your Mac and then waiting for it to sync to your iPhone.
 
-##### Load the Configuration File
+### Load the Configuration File
 
 Once the configuration file is available in the Files app on your iPhone, open the Settings app, scroll down, and tap Developer. Select Exposure Notifications, then tap Developer Server Configuration to enable it, and choose Override Configuration File. Your phone will prompt you for the location of the configuration file. Select `Test_Config.json` if you’re testing in iOS 14.1 or later, or `Test_Config.plist` if testing in iOS 14.0 or iOS 13.7. After you select the configuration file, you’ll receive a notification that says, “Successfully set override configuration file”.
 

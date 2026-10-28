@@ -25,7 +25,7 @@ struct CFRunLoopActivity
 enum CFRunLoopActivity : CFOptionFlags;
 ```
 
-#### Overview
+## Overview
 
 The run loop stages in which an observer is scheduled are selected when the observer is created with [`CFRunLoopObserverCreate(_:_:_:_:_:_:)`](./cfrunloopobservercreate%28_,_,_,_,_,_%29.md).
 

@@ -19,11 +19,11 @@ var localizedName: String? { get }
 @property (copy, readonly, nullable) NSString * localizedName;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the computer name.
 
-#### Discussion
+## Discussion
 
 This is the name displayed in the Finder sidebar, as well as in the Sharing preference panel.
 

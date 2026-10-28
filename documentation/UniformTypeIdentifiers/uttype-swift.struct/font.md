@@ -21,7 +21,7 @@ A base type that represents a font.
 static var font: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.font`.
 

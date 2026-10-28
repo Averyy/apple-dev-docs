@@ -24,7 +24,7 @@ var languageVersion: MTLLanguageVersion { get set }
 @property (nonatomic, readwrite) MTLLanguageVersion languageVersion;
 ```
 
-#### Discussion
+## Discussion
 
 By default, Metal uses the most recent language version.
 

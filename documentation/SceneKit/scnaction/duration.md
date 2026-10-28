@@ -25,7 +25,7 @@ var duration: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 This is the expected duration of an action’s animation. The actual time an action takes to complete is modified by the action’s [`timingMode`](./timingmode.md) property.
 

@@ -23,7 +23,7 @@ var handles: [String] { get }
 @property (readonly) NSArray<NSString *> * handles;
 ```
 
-#### Discussion
+## Discussion
 
 Contact handles can include phone numbers, email addresses, and URLs. For additional contact handles, see Metadata Keys in [`CNContact`](../../Contacts/cncontact.md).
 

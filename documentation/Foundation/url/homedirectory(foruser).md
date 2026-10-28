@@ -21,7 +21,7 @@ Returns the home directory for the specified user.
 static func homeDirectory(forUser user: String) -> URL?
 ```
 
-#### Return Value
+## Return Value
 
 The home directory for the specified user.
 

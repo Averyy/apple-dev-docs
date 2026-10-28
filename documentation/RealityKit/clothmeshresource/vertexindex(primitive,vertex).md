@@ -17,7 +17,7 @@ Returns the vertex index of the specified vertex within the specified primitive.
 final func vertexIndex(primitive: UInt32, vertex: UInt32) -> UInt32
 ```
 
-#### Return Value
+## Return Value
 
 The vertex index of the specified vertex within the specified primitive.
 

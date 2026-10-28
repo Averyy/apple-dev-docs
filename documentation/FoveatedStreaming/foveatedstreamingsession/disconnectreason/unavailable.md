@@ -15,7 +15,7 @@ A disconnect reason indicating the foveated streaming service is currently unava
 static var unavailable: FoveatedStreamingSession.DisconnectReason { get }
 ```
 
-#### Discussion
+## Discussion
 
 This disconnect reason can occur if another app on the system is already streaming.  Inform people to close other apps and try again.
 

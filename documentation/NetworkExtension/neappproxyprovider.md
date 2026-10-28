@@ -27,19 +27,19 @@ class NEAppProxyProvider
 
 - [Handling Flow Copying](./handling-flow-copying.md)
 
-#### Overview
+## Overview
 
 The [`NEAppProxyProvider`](./neappproxyprovider.md) class provides access to flows of network data in the form of [`NEAppProxyFlow`](./neappproxyflow.md) objects. Each [`NEAppProxyFlow`](./neappproxyflow.md) object corresponds to a socket opened by an app that matches the app rules specified in the current App Proxy configuration. Your App Proxy Provider acts as a transparent network proxy for the flows of network data that it receives.
 
 > ❗ **Important**:  The `com.apple.developer.networking.networkextension` entitlement is required to use the [`NEAppProxyProvider`](./neappproxyprovider.md) class. Enable this entitlement when creating an App ID in your developer account.
 
-##### DNS Handling
+### DNS Handling
 
 In addition to flows of raw network data from applications, the App Proxy Provider also receives flows of DNS queries in the form of [`NEAppProxyUDPFlow`](./neappproxyudpflow.md) objects. DNS query flows are received only for applications that use low-level DNS resolution APIs such as [`DNSServiceGetAddrInfo(_:_:_:_:_:_:_:)`](../dnssd/dnsservicegetaddrinfo%28_,_,_,_,_,_,_%29.md)(). The App Proxy Provider can specify the DNS resolver configuration that will be used by these applications using the [`setTunnelNetworkSettings(_:completionHandler:)`](./netunnelprovider/settunnelnetworksettings%28_,completionhandler%29.md) method.
 
 Applications that use higher-level networking APIs such as [`URLSession`](../Foundation/urlsession.md) and [`NSURLConnection`](../Foundation/nsurlconnection.md) do not generate DNS queries. Instead the destination hostname for the connection is included in the endpoint information of the [`NEAppProxyFlow`](./neappproxyflow.md) object.
 
-##### Creating an App Proxy Provider Extension
+### Creating an App Proxy Provider Extension
 
 App Proxy Providers run as App Extensions for the `com.apple.networkextension.app-proxy` extension point.
 
@@ -65,11 +65,11 @@ Here is an example of the NSExtension dictionary in a App Proxy Provider extensi
 
 Finally, add your App Proxy Provider extension target to your app’s Embed App Extensions build phase.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 In order to create a App Proxy Provider extension, you must create a subclass of `NEAppProxyProvider` and override the methods listed below.
 
-###### Methods to Override
+#### Methods to Override
 
 - [`startProxy(options:completionHandler:)`](./neappproxyprovider/startproxy%28options,completionhandler%29.md)
 - [`stopProxy(with:completionHandler:)`](./neappproxyprovider/stopproxy%28with,completionhandler%29.md)

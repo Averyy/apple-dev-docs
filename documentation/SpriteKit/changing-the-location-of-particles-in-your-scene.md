@@ -5,7 +5,7 @@
 
 Set a target node from which SpriteKit creates particles.
 
-#### Overview
+## Overview
 
 When the emitter creates particles, the particles are rendered as children of the emitter node. This means that they inherit the characteristics of the emitter node, just like nodes do. For example, if you rotate the emitter node, the positions of all of the generated particles are also rotated. Depending on what effect you are simulating with the emitter, this may not be the correct behavior.
 

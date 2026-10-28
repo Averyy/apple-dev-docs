@@ -11,7 +11,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Run a baremetal Swift program that drives a NeoPixel WS2812 LED strip from the STM32F746G-DISCO board’s SPI peripheral, using DMA.
 
-#### Overview
+## Overview
 
 This example demonstrates how to reconfigure the STM32F7’s PLL for a SPI clock rate that matches the WS2812 protocol’s bit timing, then use the SPI2 peripheral together with DMA to shift out pixel data without blocking the CPU. It requires additional hardware beyond the discovery board: a 3.3V-to-5V level shifter (such as the TI TXB0104), a NeoPixel WS2812 or compatible LED strip, a breadboard, and a 5V power supply.
 
@@ -42,15 +42,15 @@ public struct Application {
 
 > **Note**: This is a baremetal example — there’s no SDK or operating system involved. See [Using Embedded Swift in baremetal mode](./baremetal.md) for general guidance on baremetal Embedded Swift development. See [Blinking an LED on the STM32F746G-DISCO](./stm32blinkguide.md) for a simpler baremetal STM32F746G-DISCO example that only toggles a GPIO pin.
 
-#### Install dependencies
+## Install dependencies
 
 Install the [stlink](https://github.com/stlink-org/stlink) command line tools, for example with `brew install stlink`.
 
-#### Install Swift
+## Install Swift
 
 Follow the instructions in [Installing Embedded Swift](./installembeddedswift.md) to install the latest Swift development snapshot with Embedded Swift support. Confirm the installation by running `swift --version` — it reports a “6.2-dev” or newer development snapshot.
 
-#### Build the project
+## Build the project
 
 Navigate to the example directory and build it:
 
@@ -59,7 +59,7 @@ $ cd stm32-neopixel
 $ make
 ```
 
-#### Run on a device
+## Run on a device
 
 Wire up the level shifter and LED strip according to the schematic above. Connect the STM32F746G-DISCO board to your Mac using the ST-LINK USB port. Flash the firmware:
 

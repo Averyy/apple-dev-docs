@@ -19,11 +19,11 @@
 extern int os_security_config_get_for_task(task_t task, os_security_config_t *config);
 ```
 
-#### Return Value
+## Return Value
 
 Returns 0 on success, in which case `*config` is populated, or -1 on failure.
 
-#### Discussion
+## Discussion
 
 Retrieves the security configuration bitmask for a target Mach task.
 

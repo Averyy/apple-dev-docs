@@ -21,7 +21,7 @@ func backgroundColor() -> NSColor!
 - (NSColor *) backgroundColor;
 ```
 
-#### Return Value
+## Return Value
 
 The color of the background.
 

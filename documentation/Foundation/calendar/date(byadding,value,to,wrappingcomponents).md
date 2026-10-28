@@ -21,7 +21,7 @@ Returns a new `Date` representing the date calculated by adding an amount of a s
 func date(byAdding component: Calendar.Component, value: Int, to date: Date, wrappingComponents: Bool = false) -> Date?
 ```
 
-#### Return Value
+## Return Value
 
 A new date, or nil if a date could not be calculated with the given input.
 

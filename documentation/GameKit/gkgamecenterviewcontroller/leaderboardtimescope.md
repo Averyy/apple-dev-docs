@@ -25,7 +25,7 @@ var leaderboardTimeScope: GKLeaderboard.TimeScope { get set }
 @property (nonatomic, assign) GKLeaderboardTimeScope leaderboardTimeScope;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines which tab view of the scores screen is displayed to the player. The default value is [`GKLeaderboard.TimeScope.allTime`](../gkleaderboard/timescope-swift.enum/alltime.md), which shows the best score each player has earned. For more information on time scopes, see [`GKLeaderboard`](../gkleaderboard.md).
 

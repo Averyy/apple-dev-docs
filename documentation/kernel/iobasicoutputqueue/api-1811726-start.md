@@ -11,11 +11,11 @@ Starts up the packet flow between the queue and its target.
 virtual bool start();
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the queue was started successfully, false otherwise.
 
-#### Overview
+## Overview
 
 Called by the target to start the queue. This will allow packets to be removed from the queue, and then delivered to the target.
 

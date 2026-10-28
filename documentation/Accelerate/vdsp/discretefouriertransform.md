@@ -21,7 +21,7 @@ An object that provides forward and inverse discrete Fourier transforms on singl
 class DiscreteFourierTransform<T> where T : vDSP_DiscreteFourierTransformable
 ```
 
-#### Overview
+## Overview
 
 Use a [`vDSP.DiscreteFourierTransform`](./discretefouriertransform.md) to perform discrete Fourier transforms (DFTs) on split-complex or interleaved data. To learn more about working with split-complex and interleaved data, see [Performing Fourier transforms on interleaved-complex data](../performing-fourier-transforms-on-interleaved-complex-data.md).
 

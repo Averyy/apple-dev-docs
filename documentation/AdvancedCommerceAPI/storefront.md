@@ -15,7 +15,7 @@ A three-letter code that represents the country or region associated with the Ap
 string storefront
 ```
 
-##### Discussion
+### Discussion
 
 Use an ISO 3166-1 Alpha-3 country code to represent the storefront.
 

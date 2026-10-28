@@ -21,7 +21,7 @@ A High Efficiency Image Coding Image Sequence.
 static var heics: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 **UTI:** public.heics
 

@@ -21,7 +21,7 @@ Set a block to provide custom verification of the peer’s credentials during th
 func certificateValidator(_ handler: @escaping @isolated(any) @Sendable (sec_protocol_metadata_t, sec_trust_t) async -> Bool) -> QUIC
 ```
 
-#### Discussion
+## Discussion
 
 This block may be called multiple times for each connection. It should return `true` if the credentials should be trusted and the handshake should proceed, `false` otherwise.
 

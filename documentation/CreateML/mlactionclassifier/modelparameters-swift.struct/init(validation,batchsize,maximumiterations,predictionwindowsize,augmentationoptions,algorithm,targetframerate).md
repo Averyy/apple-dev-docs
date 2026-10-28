@@ -15,7 +15,7 @@ Creates a new set of training parameters for an action classifier with the valid
 init(validation: MLActionClassifier.ModelParameters.ValidationData = .split(strategy: .automatic), batchSize: Int = MLActionClassifier.__Defaults.batchSize, maximumIterations: Int = MLActionClassifier.__Defaults.maximumIterations, predictionWindowSize: Int = MLActionClassifier.__Defaults.predictionWindowSize, augmentationOptions: MLActionClassifier.VideoAugmentationOptions = [.horizontalFlip], algorithm: MLActionClassifier.ModelParameters.ModelAlgorithmType = .stgcn, targetFrameRate: Double = MLActionClassifier.__Defaults.targetFrameRate)
 ```
 
-#### Discussion
+## Discussion
 
 - validation: A validation dataset represented by an [`MLActionClassifier.ModelParameters.ValidationData`](./validationdata.md) instance.
 - batchSize: The number of videos the training session uses for each of its training iterations.

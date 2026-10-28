@@ -19,7 +19,7 @@ var printInfo: NSPrintInfo { get }
 @property (strong, readonly) NSPrintInfo * printInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property is `nil` if the Print panel is not currently running.
 

@@ -22,7 +22,7 @@ func drawHeaderForPage(at pageIndex: Int, in headerRect: CGRect)
 - (void) drawHeaderForPageAtIndex:(NSInteger) pageIndex inRect:(CGRect) headerRect;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. The system doesn’t call this method if [`headerHeight`](./headerheight.md) isn’t a positive value. Override this method to draw the header of the specified page.
 

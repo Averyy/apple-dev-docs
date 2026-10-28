@@ -24,7 +24,7 @@ func MusicTrackNewMetaEvent(_ inTrack: MusicTrack, _ inTimeStamp: MusicTimeStamp
 extern OSStatus MusicTrackNewMetaEvent(MusicTrack inTrack, MusicTimeStamp inTimeStamp, const MIDIMetaEvent *inMetaEvent);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

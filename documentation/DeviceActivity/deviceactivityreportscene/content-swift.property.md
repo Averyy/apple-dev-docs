@@ -19,7 +19,7 @@ A closure that builds your report’s content with the provided configuration.
 var content: (Self.Configuration) -> Self.Content { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this closure to update your scene’s content when your app changes the filter for a report or the system fetches more device activity data.
 

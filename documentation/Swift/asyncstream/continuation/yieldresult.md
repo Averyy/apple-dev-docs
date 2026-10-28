@@ -21,7 +21,7 @@ A type that indicates the result of yielding a value to a client, by way of the 
 enum YieldResult
 ```
 
-#### Overview
+## Overview
 
 The various `yield` methods of `AsyncStream.Continuation` return this type to indicate the success or failure of yielding an element to the continuation.
 

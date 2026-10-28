@@ -20,7 +20,7 @@ The zoom factors at which this device transitions to secondary native resolution
 var secondaryNativeResolutionZoomFactors: [CGFloat] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Devices that provide secondary native resolution zoom factors can switch their pixel sampling mode dynamically to produce high-fidelity images without upscaling at a fixed zoom factor beyond `1.0`.
 

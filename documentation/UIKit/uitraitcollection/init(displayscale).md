@@ -23,7 +23,7 @@ init(displayScale scale: CGFloat)
 + (UITraitCollection *) traitCollectionWithDisplayScale:(CGFloat) scale;
 ```
 
-#### Return Value
+## Return Value
 
 A new trait collection containing only a specified display scale trait.
 

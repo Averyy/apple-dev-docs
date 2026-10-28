@@ -23,11 +23,11 @@ func recognitionTask(with request: SFSpeechRecognitionRequest, delegate: any SFS
 - (SFSpeechRecognitionTask *) recognitionTaskWithRequest:(SFSpeechRecognitionRequest *) request delegate:(id<SFSpeechRecognitionTaskDelegate>) delegate;
 ```
 
-#### Return Value
+## Return Value
 
 The task object you can use to manage an in-progress recognition request.
 
-#### Discussion
+## Discussion
 
 Use this method to initiate the speech recognition process on the audio contained in the request object. This method executes asynchronously and returns a [`SFSpeechRecognitionTask`](../sfspeechrecognitiontask.md) object that you can use to cancel or finalize the recognition process later. As results become available, the method calls the methods of the provided `delegate` object.
 

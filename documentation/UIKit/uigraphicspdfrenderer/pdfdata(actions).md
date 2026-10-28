@@ -23,11 +23,11 @@ func pdfData(actions: (UIGraphicsPDFRendererContext) -> Void) -> Data
 - (NSData *) PDFDataWithActions:(UIGraphicsPDFDrawingActions) actions;
 ```
 
-#### Return Value
+## Return Value
 
 A [`Data`](../../Foundation/data.md) object that contains the encoded PDF.
 
-#### Discussion
+## Discussion
 
 You provide a set of drawing instructions as the block argument to this method, and the method returns the resulting PDF encoded in a [`Data`](../../Foundation/data.md) object.
 

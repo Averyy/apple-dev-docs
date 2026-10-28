@@ -20,7 +20,7 @@ func messageReceived(_ message: SecurityMessage, completion: @escaping @Sendable
 
 - [Receiving iOS notifications on an accessory](../../receiving-ios-notifications-on-an-accessory.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method with a [`SecurityMessage`](../../securitymessage.md) containing [`SecurityMessage.KeyType.encapsulatedKey`](../../securitymessage/keytype-swift.enum/encapsulatedkey.md) after receiving your accessory’s public key. Forward the key material to your accessory via Bluetooth. Call the completion handler with [`AccessoryMessage.Result.success`](../../accessorymessage/result/success.md) if transmission succeeds, or [`AccessoryMessage.Result.failure(_:)`](../../accessorymessage/result/failure%28_%29.md) if an error occurs.
 

@@ -12,15 +12,15 @@ Play a card-matching game using Switch Control.
 - Mac Catalyst 16.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 > **Note**: This is a companion project for WWDC22 Challenge [Learn Switch Control through gaming](https://developer.apple.com/news/?id=2nfiv7v0).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 This project requires an iPhone or iPad, that’s running iOS 16 or iPadOS 16. It doesn’t support running in Simulator.
 
-##### Configure and enable switch control
+### Configure and enable switch control
 
 You need to enable and configure Switch Control to play this game. Switch Control is an accessibility feature that helps you interact with your device using a variety of software and hardware switches. These can be located on the screen, and can use the camera, sounds, or connected accessories.
 

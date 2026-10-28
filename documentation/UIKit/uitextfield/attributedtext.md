@@ -24,7 +24,7 @@ var attributedText: NSAttributedString? { get set }
 @property (nonatomic, copy, nullable) NSAttributedString * attributedText;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` by default. Assigning a new value to this property also replaces the value of the [`text`](./text.md) property with the same string data, albeit without any formatting information. In addition, assigning a new value updates the values in the [`font`](./font.md), [`textColor`](./textcolor.md), and other style-related properties so that they reflect the style information starting at location `0` in the attributed string.
 

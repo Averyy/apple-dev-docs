@@ -22,7 +22,7 @@ var numberOfPages: Int { get }
 @property (nonatomic, readonly) NSInteger numberOfPages;
 ```
 
-#### Discussion
+## Discussion
 
 By default, returns the number of pages as calculated by UIKit if the receiver uses print formatters. If the page renderer uses no print formatters, the returned value is zero. If your page renderer is doing any custom drawing except for headers and footers, it must override this method.
 

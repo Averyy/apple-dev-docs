@@ -21,7 +21,7 @@ class func canShowMIMEType(asHTML MIMEType: String!) -> Bool
 + (BOOL) canShowMIMETypeAsHTML:(NSString *) MIMEType;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver interprets `MIMEType` as HTML; otherwise, [`false`](../../Swift/false.md).
 

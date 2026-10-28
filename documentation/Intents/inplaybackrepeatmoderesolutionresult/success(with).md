@@ -24,11 +24,11 @@ class func success(with resolvedPlaybackRepeatMode: INPlaybackRepeatMode) -> Sel
 + (instancetype) successWithResolvedPlaybackRepeatMode:(INPlaybackRepeatMode) resolvedPlaybackRepeatMode;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INPlaybackRepeatModeResolutionResult`](../inplaybackrepeatmoderesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to change the plaback repeat mode for a media item.
 

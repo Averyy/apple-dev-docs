@@ -16,11 +16,11 @@ Get callback for a NuDCL
 NuDCLCallback (*GetDCLCallback)(NuDCLRef dcl);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the DCLs callback function or NULL if none is set.
 
-#### Discussion
+## Discussion
 
 Returns the callback function for a DCL
 

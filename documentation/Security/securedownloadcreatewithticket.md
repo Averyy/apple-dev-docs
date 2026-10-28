@@ -15,7 +15,7 @@ Creates a secure download object for use during the download process.
 OSStatus SecureDownloadCreateWithTicket(CFDataRef ticket, SecureDownloadTrustSetupCallback setup, void *setupContext, SecureDownloadTrustEvaluateCallback evaluate, void *evaluateContext, SecureDownloadRef*downloadRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Download Result Codes](./secure-download-result-codes.md).
 

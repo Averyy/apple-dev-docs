@@ -25,7 +25,7 @@ func CTRunGetTypographicBounds(_ run: CTRun, _ range: CFRange, _ ascent: UnsafeM
 extern double CTRunGetTypographicBounds(CTRunRef run, CFRange range, CGFloat *ascent, CGFloat *descent, CGFloat *leading);
 ```
 
-#### Return Value
+## Return Value
 
 The typographic width of the run, or if `run` or `range` is invalid, `0`.
 

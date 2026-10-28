@@ -21,7 +21,7 @@ Requests an `IntentFile` representation as binary data of the requested content 
 func data(contentType: UTType) async throws -> Data
 ```
 
-#### Discussion
+## Discussion
 
 If the `IntentFile` is backed by a file `URL`, this might cause loading the entire file contents into memory.
 

@@ -21,7 +21,7 @@ var transmitTime: Double { get }
 @property (nonatomic, assign, readonly) double transmitTime;
 ```
 
-#### Discussion
+## Discussion
 
 The elapsed transmission time correponds to the time it takes for the message that contains the measurement to leave the anchor and arrive at the receiver.
 

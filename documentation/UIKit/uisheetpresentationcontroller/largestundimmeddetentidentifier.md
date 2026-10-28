@@ -21,7 +21,7 @@ var largestUndimmedDetentIdentifier: UISheetPresentationController.Detent.Identi
 @property (nonatomic, copy, nullable) UISheetPresentationControllerDetentIdentifier largestUndimmedDetentIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which means the system adds a noninteractive dimming view underneath the sheet at all detents. Set this property to only add the dimming view at detents larger than the detent you specify. For example, set this property to [`medium`](./detent/identifier-swift.struct/medium.md) to add the dimming view at the [`large`](./detent/identifier-swift.struct/large.md) detent.
 

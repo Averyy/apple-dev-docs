@@ -25,7 +25,7 @@ var motionBlurIntensity: CGFloat { get set }
 @property (nonatomic) CGFloat motionBlurIntensity;
 ```
 
-#### Discussion
+## Discussion
 
 The default intensity of zero results in no motion blur effect. Higher values (toward a maximum of 1.0) create more pronounced motion blur effects.
 

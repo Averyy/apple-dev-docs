@@ -21,7 +21,7 @@ Accesses the element at the specified index in the `Span`.
 subscript(unchecked position: Span<Element>.Index) -> Element { borrow }
 ```
 
-#### Overview
+## Overview
 
 This subscript does not validate `position`. Using this subscript with an invalid `position` results in undefined behaviour.
 

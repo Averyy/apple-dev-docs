@@ -19,11 +19,11 @@ func PMPaperGetPrinterID(_ paper: PMPaper, _ printerID: UnsafeMutablePointer<Unm
 OSStatus PMPaperGetPrinterID(PMPaper paper, CFStringRef  _Nullable *printerID);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 Not all papers have a printer ID associated with them. If the printer ID is known, the printer is displayed in the Page Setup dialog’s Format for pop-up menu. If the printer ID is not known, the default formatting printer is the generic Any Printer. The printing system provides default paper sizes for the generic printer.
 

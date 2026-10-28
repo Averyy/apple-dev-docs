@@ -22,7 +22,7 @@ The fetched results of the fetch request.
 @preconcurrency var wrappedValue: SectionedFetchResults<SectionIdentifier, Result> { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property behaves like the [`wrappedValue`](../fetchrequest/wrappedvalue.md) of a [`FetchRequest`](../fetchrequest.md). In particular, SwiftUI returns the value associated with this property when you use [`SectionedFetchRequest`](../sectionedfetchrequest.md) as a property wrapper and then access the wrapped property by name. For example, consider the following `quakes` property declaration that fetches a `Quake` type that the [Loading and displaying a large data feed](../loading-and-displaying-a-large-data-feed.md) sample code project defines:
 

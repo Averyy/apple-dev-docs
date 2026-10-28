@@ -16,7 +16,7 @@ Creates a badge displaying a localized numerical count.
 static func count(_ count: Int) -> NSItemBadge
 ```
 
-#### Return Value
+## Return Value
 
 A new NSItemBadge instance with the localized specified count.
 

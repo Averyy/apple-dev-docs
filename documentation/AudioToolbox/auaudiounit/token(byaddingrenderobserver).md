@@ -24,11 +24,11 @@ func token(byAddingRenderObserver observer: @escaping AURenderObserver) -> Int
 - (NSInteger) tokenByAddingRenderObserver:(AURenderObserver) observer;
 ```
 
-#### Return Value
+## Return Value
 
 A token to be used when removing the observer.
 
-#### Discussion
+## Discussion
 
 The supplied block is called at the beginning and ending of each render cycle. It should not make any blocking calls.
 

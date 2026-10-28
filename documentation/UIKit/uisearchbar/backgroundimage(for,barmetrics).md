@@ -23,11 +23,11 @@ func backgroundImage(for barPosition: UIBarPosition, barMetrics: UIBarMetrics) -
 - (UIImage *) backgroundImageForBarPosition:(UIBarPosition) barPosition barMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Return Value
+## Return Value
 
 The image used for the search bar background in the position specified by `barPosition` and with the metrics specified by `barMetrics`.
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

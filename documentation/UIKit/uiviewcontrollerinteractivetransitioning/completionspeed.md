@@ -23,7 +23,7 @@ optional var completionSpeed: CGFloat { get }
 @property (nonatomic, readonly) CGFloat completionSpeed;
 ```
 
-#### Return Value
+## Return Value
 
 Default value is `1.0`, which corresponds to the total (noninteractive) transition duration scaled by the percentage of the transition remaining. Value must be greater than `0.0`.
 

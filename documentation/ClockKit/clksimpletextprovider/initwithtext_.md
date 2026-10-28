@@ -15,7 +15,7 @@ Creates and returns a text provider with the specified long form text.
 - (instancetype) initWithText:(NSString *) text;
 ```
 
-#### Return Value
+## Return Value
 
 A text provider initialized with the specified content.
 

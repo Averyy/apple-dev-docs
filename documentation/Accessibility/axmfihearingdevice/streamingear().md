@@ -23,7 +23,7 @@ static func streamingEar() -> AXMFiHearingDevice.Ear
 extern AXHearingDeviceEar AXMFiHearingDeviceStreamingEar();
 ```
 
-#### Return Value
+## Return Value
 
 An [`AXMFiHearingDevice.Ear`](./ear.md) constant that represents which ears enable streaming.
 

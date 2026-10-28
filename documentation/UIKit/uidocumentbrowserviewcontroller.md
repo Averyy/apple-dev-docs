@@ -28,7 +28,7 @@ class UIDocumentBrowserViewController
 - [Providing access to directories](./providing-access-to-directories.md)
 - [Customizing the document browser](./customizing-the-browser.md)
 
-#### Overview
+## Overview
 
 With the document browser view controller, users can easily access and view their documents in the cloud. By default, the document browser can access both the system’s local file provider and its iCloud file provider.
 

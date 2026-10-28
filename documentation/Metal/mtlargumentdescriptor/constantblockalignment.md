@@ -24,7 +24,7 @@ var constantBlockAlignment: Int { get set }
 @property (nonatomic) NSUInteger constantBlockAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 If set, this property forces the constant block to be aligned to the specified value. It should be set on the first constant only, and is valid only if a corresponding explicit `alignas` specifier is applied to the constant in the Metal shader language.
 

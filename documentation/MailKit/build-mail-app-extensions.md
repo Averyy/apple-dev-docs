@@ -10,7 +10,7 @@ Create app extensions that block content, perform message and composing actions,
 - macOS 12.0+
 - Xcode 15.2+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC21 session [10168: Build Mail App Extensions](https://developer.apple.com/wwdc21/10168/).
 

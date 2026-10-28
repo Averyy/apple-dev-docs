@@ -24,7 +24,7 @@ var nearVisibilityDistance: Float { get set }
 @property (nonatomic, assign) float nearVisibilityDistance;
 ```
 
-#### Discussion
+## Discussion
 
 The near value determines the minimal distance between the camera and a visible surface. If a surface is closer to the camera than this distance, the surface is clipped and does not appear.
 

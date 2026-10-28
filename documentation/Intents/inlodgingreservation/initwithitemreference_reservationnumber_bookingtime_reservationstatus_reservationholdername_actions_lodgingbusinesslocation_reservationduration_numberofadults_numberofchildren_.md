@@ -20,7 +20,7 @@ Creates a new lodging reservation with the provided information.
 - (instancetype) initWithItemReference:(INSpeakableString *) itemReference reservationNumber:(NSString *) reservationNumber bookingTime:(NSDate *) bookingTime reservationStatus:(INReservationStatus) reservationStatus reservationHolderName:(NSString *) reservationHolderName actions:(NSArray<INReservationAction *> *) actions lodgingBusinessLocation:(CLPlacemark *) lodgingBusinessLocation reservationDuration:(INDateComponentsRange *) reservationDuration numberOfAdults:(NSNumber *) numberOfAdults numberOfChildren:(NSNumber *) numberOfChildren;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INLodgingReservation`](../inlodgingreservation.md) object or `nil` if unable to create one.
 

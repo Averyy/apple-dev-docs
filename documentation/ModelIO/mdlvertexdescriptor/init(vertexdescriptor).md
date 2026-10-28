@@ -24,11 +24,11 @@ init(vertexDescriptor: MDLVertexDescriptor)
 - (instancetype) initWithVertexDescriptor:(MDLVertexDescriptor *) vertexDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new vertex descriptor that is an indpendent copy of the specified vertex descriptor.
 
-#### Discussion
+## Discussion
 
 A vertex descriptor does not own vertex data—vertex data belongs to the [`vertexBuffers`](../mdlmesh/vertexbuffers.md) property of the mesh that owns a vertex descriptor—so this method does not copy vertex data. A call to the [`copy()`](../../ObjectiveC/nsobject-swift.class/copy%28%29.md) or [`copy(with:)`](../../Foundation/nscopying/copy%28with%29.md) method uses this initializer to produce a fully independent copy of the original instance.
 

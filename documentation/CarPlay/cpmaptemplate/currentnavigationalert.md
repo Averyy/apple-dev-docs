@@ -21,7 +21,7 @@ var currentNavigationAlert: CPNavigationAlert? { get }
 @property (nonatomic, strong, readonly, nullable) CPNavigationAlert * currentNavigationAlert;
 ```
 
-#### Discussion
+## Discussion
 
 If a navigation alert isn’t visible, the property returns [`nil`](../../ObjectiveC/nil-227m0.md).
 

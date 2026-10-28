@@ -16,7 +16,7 @@ Credential authentication request provided was rejected.
 case userAuthenticationFailed(remainingRetryAttempts: Int)
 ```
 
-#### Discussion
+## Discussion
 
 - remainingRetryAttempts: The number of failed attempts left before the credential is locked out.
 

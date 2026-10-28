@@ -25,7 +25,7 @@ struct CGBitmapInfo
 enum CGBitmapInfo : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 Applications that store pixel data in memory using ARGB format must take care in how they read data. If the code is not written correctly, it’s possible to misread the data which leads to colors or alpha that appear wrong. The byte order constants specify the byte ordering of pixel formats. To specify byte ordering, use a bitwise OR operator to combine the appropriate constant with the `bitmapInfo` parameter.
 

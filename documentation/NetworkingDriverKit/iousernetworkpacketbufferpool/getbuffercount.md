@@ -15,7 +15,7 @@ Returns the number of buffers associated with the network packet buffer pool.
 virtual kern_return_t GetBufferCount(uint32_t *count);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` on success, or another value if an error occurred.
 

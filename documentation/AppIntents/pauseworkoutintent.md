@@ -25,7 +25,7 @@ protocol PauseWorkoutIntent : SystemIntent
 
 - [Responding to the Action button on Apple Watch Ultra](./actionbuttonarticle.md)
 
-#### Overview
+## Overview
 
 On Apple Watch Ultra, someone can pause your workout by simultaneously pressing the Action button and the side button while your app is running a workout session.
 

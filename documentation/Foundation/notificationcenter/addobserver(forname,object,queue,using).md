@@ -25,11 +25,11 @@ func addObserver(forName name: NSNotification.Name?, object obj: Any?, queue: Op
 - (id<NSObject>) addObserverForName:(NSNotificationName) name object:(id) obj queue:(NSOperationQueue *) queue usingBlock:(void (^)(NSNotification *notification)) block;
 ```
 
-#### Return Value
+## Return Value
 
 An opaque object to act as the observer. Notification center strongly holds this return value until you remove the observer registration.
 
-#### Discussion
+## Discussion
 
 If a notification triggers more than one observer block, the blocks can all execute concurrently (but on their queue or on the current thread).
 

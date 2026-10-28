@@ -5,15 +5,15 @@
 
 Add simulators for different devices and iOS versions to use for web development.
 
-#### Overview
+## Overview
 
 A Simulator runtime is an OS package that Simulator loads when booting a device, which is specific to a particular OS and version. Simulator runtimes are then used by numerous different Simulators with different device types, like iPhone 16 or iPad Pro.
 
 If you want to test on another platform or OS version, you need to add the Simulator runtime for that platform, and then create a new Simulator.
 
-#### Install and uninstall Simulator runtimes
+## Install and uninstall Simulator runtimes
 
-##### Adding a Simulator runtime
+### Adding a Simulator runtime
 
 1. In Xcode, from the menu bar, choose **Xcode** > **Settings…**.
 2. Go to the **Components** tab.
@@ -21,7 +21,7 @@ If you want to test on another platform or OS version, you need to add the Simul
 4. If you need a previously released Simulator runtime, click the Add button (**+**) in the lower left corner, and then select a platform to view a list of available versions.
 5. Select a version and click **Download & Install**.
 
-##### Removing a Simulator runtime
+### Removing a Simulator runtime
 
 To recover storage space from unused Simulator runtimes:
 
@@ -31,9 +31,9 @@ To recover storage space from unused Simulator runtimes:
 4. Click the Delete button (**–**) in the lower left corner.
 5. Click **Delete** in the confirmation dialog.
 
-#### Add and remove Simulators
+## Add and remove Simulators
 
-##### Adding a Simulator
+### Adding a Simulator
 
 1. In Xcode, from the menu bar, choose **Window** > **Devices and Simulators**.
 2. Choose **Simulators** at the top of the sidebar.
@@ -41,7 +41,7 @@ To recover storage space from unused Simulator runtimes:
 4. Choose a **Device Type** and **OS Version** for your simulator, and optionally provide it with a name.
 5. Click **Create** to create the new simulator.
 
-##### Removing a Simulator
+### Removing a Simulator
 
 1. In Xcode, from the menu bar, choose **Window** > **Devices and Simulators**.
 2. Choose **Simulators** at the top of the sidebar.
@@ -49,7 +49,7 @@ To recover storage space from unused Simulator runtimes:
 4. Choose **Delete** from the pop-up menu.
 5. Click **Delete** in the confirmation dialog.
 
-> 💡 **Tip**: Simulators can also be [managed from the terminal](../Xcode/installing-additional-simulator-runtimes.md#Install-and-manage-Simulator-runtimes-from-the-command-line).
+> 💡 **Tip**: Simulators can also be [managed from the terminal](../Xcode/downloading-and-installing-additional-xcode-components.md#Install-and-manage-Simulator-runtimes-from-the-command-line).
 
 ## See Also
 

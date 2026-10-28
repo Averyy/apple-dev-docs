@@ -5,7 +5,7 @@
 
 Read test results for test actions Xcode Cloud performs.
 
-#### Overview
+## Overview
 
 The `ciTestResult` resource represents the test results that Xcode Cloud makes available if you configure a workflow to include a test action. Use this resource to access:
 

@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyChapterNumber: String
 extern NSString * const MPNowPlayingInfoPropertyChapterNumber;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSNumber`](../Foundation/nsnumber.md) object configured as an [`NSUInteger`](../ObjectiveC/nsuinteger.md). Chapter numbering uses zero-based indexing. For example, to display the first chapter in the Now Playing item as “Chapter 1,” set the chapter number to `0`.
 

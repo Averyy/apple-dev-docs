@@ -5,7 +5,7 @@
 
 Review session history to display the conversation in your app’s UI, manage the context window, or diagnose and report unexpected model output.
 
-#### Overview
+## Overview
 
 Every conversation your app has with a language model is recorded in a transcript. It’s a record of everything that happens in a session: the instructions you set, the prompts a person enters, the responses the language model returns, and any tools it calls along the way. You can read through it at any time to see exactly what the language model receives and produces.
 
@@ -15,7 +15,7 @@ Session history is useful in many ways, such as:
 - When you want to understand how a feature behaves as the model updates or as people change how they use it, record the transcript so you can compare the same input over time and across model versions.
 - When the language model returns a response that you believe isn’t being properly handled, like with a safety guardrail incorrectly activating, package the transcript as feedback and send it to the model provider to help improve it.
 
-#### Inspect the entries in a transcript
+## Inspect the entries in a transcript
 
 To read what happened during a session, iterate [`transcript`](./languagemodelsession/transcript.md) and handle each [`Transcript.Entry`](./transcript/entry.md) according to its case. Each case carries an associated value that holds the details for that kind of entry. The following fragment reads a few of the entries:
 
@@ -38,9 +38,9 @@ A [`Transcript.Entry`](./transcript/entry.md) also represents [`Transcript.Entry
 
 To work with just the conversation *turns* — the prompts and responses a person typically recognizes — read [`history`](./transcript/history.md). It returns the same entries but omits the leading instructions entry, which is convenient when you display the conversation in your app’s UI and don’t want to surface the instructions you configured.
 
-#### Recover from a full context window
+## Recover from a full context window
 
-Every language model has a fixed context window. To check the context size of Apple Intelligence models, use [SystemLanguageModel.contextSize](./__systemlanguagemodel/contextsize__.md) or [PrivateCloudComputeLanguageModel.contextSize](./__privatecloudcomputelanguagemodel/contextsize__.md). When a session exceeds the window, the framework throws [`LanguageModelError.contextSizeExceeded(_:)`](./languagemodelerror/contextsizeexceeded%28_%29.md) and the session stops responding. Recover by reducing the transcript to only the entries that still matter and retry the request.
+Every language model has a fixed context window. To check the context size of Apple Intelligence models, use SystemLanguageModel.contextSize or PrivateCloudComputeLanguageModel.contextSize. When a session exceeds the window, the framework throws [`LanguageModelError.contextSizeExceeded(_:)`](./languagemodelerror/contextsizeexceeded%28_%29.md) and the session stops responding. Recover by reducing the transcript to only the entries that still matter and retry the request.
 
 Because [`transcript`](./languagemodelsession/transcript.md) is mutable, trim it in place before reaching the context size. Build a condensed [`Transcript`](./transcript.md) from a selection of the original entries. For example, the first and last entries are a good choice because you carry forward your instructions and the latest context. Assign the result back to the session, as shown here:
 
@@ -54,7 +54,7 @@ If your app persists a conversation between app launches, restore it by using [`
 
 For more information about context management, see [Managing the context window](./managing-the-context-window.md).
 
-#### Record transcripts to monitor output over time
+## Record transcripts to monitor output over time
 
 A feature powered by a language model can behave differently over time as the underlying model updates or as people change how they interact with it. To keep track of that behavior, record the [`Transcript`](./transcript.md) from a session so you can compare how the same input performs across model versions and spot changes you didn’t expect.
 
@@ -72,7 +72,7 @@ For more information about handling new model versions, see [Updating prompts fo
 
 > ❗ **Important**: Because a session transcript includes all prompts, model responses, and tool data, review what it contains before storing or submitting it. Avoid sending sensitive or personal information about the people using your app, and only capture and submit feedback with the person’s knowledge and consent. For more information about privacy, see [App privacy details on the App Store](https://developer.apple.com/app-store/app-privacy-details/).
 
-#### Report a response to improve the model
+## Report a response to improve the model
 
 When a language model returns a response that’s factually incorrect or shows problematic guardrail behavior, capture the response for a bug report. Call [`logFeedbackAttachment(sentiment:issues:desiredOutput:)`](./languagemodelsession/logfeedbackattachment%28sentiment,issues,desiredoutput%29.md) on the session to serialize the current transcript, together with your assessment, into JSON and return it as [`Data`](../Foundation/data.md).
 
@@ -100,7 +100,7 @@ To supply the output you expected, pick the variant that matches your data. Pass
 
 Save the returned `Data` to disk and attach it to a bug report. When reporting an issue with an Apple Intelligence model, use [Feedback Assistant](https://feedbackassistant.apple.com/). For other model providers, see their documentation to understand how to provide feedback.
 
-#### Annotate a transcript with the app context
+## Annotate a transcript with the app context
 
 When a prompt depends on your app’s state, record that state alongside the transcript so you can reconstruct why the model produced a given output, like this:
 

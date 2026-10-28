@@ -17,7 +17,7 @@ var kOBEXHeaderIDType: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDType
 ```
 
-#### Discussion
+## Discussion
 
 Type of object - e.g. text, html, binary, etc. Null terminated ASCII text.
 

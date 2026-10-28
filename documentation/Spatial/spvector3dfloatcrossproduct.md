@@ -19,7 +19,7 @@
 static SPVector3DFloat SPVector3DFloatCrossProduct(SPVector3DFloat x, SPVector3DFloat y);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the cross product of two vectors.
 

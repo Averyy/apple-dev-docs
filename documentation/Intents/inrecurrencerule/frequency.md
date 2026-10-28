@@ -23,7 +23,7 @@ var frequency: INRecurrenceFrequency { get }
 @property (nonatomic, readonly) INRecurrenceFrequency frequency;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the time frame over which a date or time recurs. For example, applying a recurrence rule with the frequency of [`INRecurrenceFrequency.daily`](../inrecurrencefrequency/daily.md) to date components containing the hour of 7:00 would let you create a trigger that applies at 7:00 each day.
 

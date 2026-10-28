@@ -24,7 +24,7 @@ case carName
 INVocabularyStringTypeCarName
 ```
 
-#### Discussion
+## Discussion
 
 Siri puts the car name in the `carName` property of the [`INActivateCarSignalIntent`](../inactivatecarsignalintent.md), [`INGetCarPowerLevelStatusIntent`](../ingetcarpowerlevelstatusintent.md), [`INGetCarLockStatusIntent`](../ingetcarlockstatusintent.md), and [`INSetCarLockStatusIntent`](../insetcarlockstatusintent.md) classes. If Siri can’t identify a car name in the request, it uses the string `myCar`.
 

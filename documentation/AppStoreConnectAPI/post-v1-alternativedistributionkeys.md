@@ -15,11 +15,11 @@ Add an alternative distribution key for your alternative marketplace app or web 
 - [Creating keys and establishing alternative marketplace connections](./creating-keys-and-establishing-alternative-marketplace-connections.md)
 - [Configuring alternative marketplaces and alternative marketplace apps](./configuring-alternative-marketplaces-and-alternative-marketplace-apps.md)
 
-#### Discussion
+## Discussion
 
 You can use a single alternative distribution key for all alternative distribution apps on your account. You can optionally use an app specific alternative distribution key, by adding a relationship to a specific app in the JSON payload used with this endpoint.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 
@@ -57,7 +57,7 @@ POST https://api.appstoreconnect.apple.com/v1/alternativeDistributionKeys
 
 ```
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

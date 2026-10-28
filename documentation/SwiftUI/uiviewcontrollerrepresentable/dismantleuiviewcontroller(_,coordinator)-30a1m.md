@@ -20,7 +20,7 @@ Cleans up the presented view controller (and coordinator) in anticipation of the
 @preconcurrency static func dismantleUIViewController(_ uiViewController: Self.UIViewControllerType, coordinator: Self.Coordinator)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to perform additional clean-up work related to your custom view controller. For example, you might use this method to remove observers or update other parts of your SwiftUI interface.
 

@@ -26,7 +26,7 @@ var reversePlaybackEndTime: CMTime { get set }
 @property CMTime reversePlaybackEndTime;
 ```
 
-#### Discussion
+## Discussion
 
 The value indicated the time at which playback should end when the playback rate is negative (see `AVPlayer`’s [`rate`](../avplayer/rate.md) property).
 

@@ -21,7 +21,7 @@ var timeSinceAudioStart: TimeInterval { get }
 @property (nonatomic, assign, readonly) NSTimeInterval timeSinceAudioStart;
 ```
 
-#### Discussion
+## Discussion
 
 When an audio stream starts, such as a phone call, SensorKit collects samples periodically. Use this field to determine the order of the samples in the audio stream.
 

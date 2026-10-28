@@ -24,7 +24,7 @@ typealias MTAudioProcessingTapCreationFlags = UInt32
 typedef uint32_t MTAudioProcessingTapCreationFlags;
 ```
 
-#### Discussion
+## Discussion
 
 You must set the pre or post flag, but not both.
 

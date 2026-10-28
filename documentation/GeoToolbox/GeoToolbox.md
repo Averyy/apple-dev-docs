@@ -15,7 +15,7 @@ Determine place descriptor information for map coordinates.
 - visionOS 26.0+
 - watchOS 26.0+
 
-#### Overview
+## Overview
 
 Use `GeoToolbox` to create `PlaceDescriptor` structures for use across Maps technologies and third-party mapping systems.
 

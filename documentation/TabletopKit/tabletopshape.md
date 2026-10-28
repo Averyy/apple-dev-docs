@@ -15,7 +15,7 @@ An object that represents the physical properties of the table.
 struct TabletopShape
 ```
 
-#### Overview
+## Overview
 
 To create a round table, use the [`round(center:radius:thickness:in:)`](./tabletopshape/round%28center,radius,thickness,in%29.md) initializer, or if you render the table using RealityKit, the [`round(entity:)`](./tabletopshape/round%28entity%29.md) initializer. For a rectangular table, use the equivalent [`rectangular(center:width:height:thickness:in:)`](./tabletopshape/rectangular%28center,width,height,thickness,in%29.md) or [`rectangular(entity:)`](./tabletopshape/rectangular%28entity%29.md) initializer.
 

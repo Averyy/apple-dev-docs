@@ -23,7 +23,7 @@ var minimumRelativeValue: Any? { get set }
 @property (nonatomic, strong, nullable) id minimumRelativeValue;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property is the value returned when the viewer offset value along the given axis is -1.
 

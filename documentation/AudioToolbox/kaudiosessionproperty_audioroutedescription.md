@@ -23,11 +23,11 @@ var kAudioSessionProperty_AudioRouteDescription: Int { get }
 kAudioSessionProperty_AudioRouteDescription
 ```
 
-#### Discussion
+## Discussion
 
 A read-only [`CFDictionary`](../CoreFoundation/cfdictionary.md) object containing information about an audio route.
 
-#### Discussion
+## Discussion
 
 The dictionary contains the keys and corresponding values described in [Audio Route Description Dictionary Keys](./audio-route-description-dictionary-keys.md).
 

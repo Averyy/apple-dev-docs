@@ -21,7 +21,7 @@ Positions and orientations are stored in relative to the Scene.
 case world
 ```
 
-#### Discussion
+## Discussion
 
 Useful for attaching world-space particles to Entities, for effects like smoke trails.
 

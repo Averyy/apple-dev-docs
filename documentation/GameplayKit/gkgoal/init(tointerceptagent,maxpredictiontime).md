@@ -24,11 +24,11 @@ convenience init(toInterceptAgent target: GKAgent, maxPredictionTime: TimeInterv
 + (instancetype) goalToInterceptAgent:(GKAgent *) target maxPredictionTime:(NSTimeInterval) maxPredictionTime;
 ```
 
-#### Return Value
+## Return Value
 
 A new goal object.
 
-#### Discussion
+## Discussion
 
 The `maxPredictionTime` parameter controls how far in the future the agent will plan to intercept its target. A larger value causes an affected agent to pursue its quarry more efficently, catching up with the target’s motion using fewer course corrections. A smaller value causes an affected agent to more closely follow the target’s current position despite the target’s current speed (and depending on the properties of the affected agent, it might not be able to move quickly enough to catch its target).
 

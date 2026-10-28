@@ -17,7 +17,7 @@ The estimated normalized ratio of the local Wi-Fi Infrastructure throughput capa
 let localInfrastructureThroughputCapacityRatio: Double?
 ```
 
-#### Discussion
+## Discussion
 
 This ratio reflects the estimated throughput capability for a connection setup to the remote device as a value between `0.0` and `1.0`.
 

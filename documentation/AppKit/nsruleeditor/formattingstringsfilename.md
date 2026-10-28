@@ -19,7 +19,7 @@ var formattingStringsFilename: String? { get set }
 @property (copy, nullable) NSString * formattingStringsFilename;
 ```
 
-#### Discussion
+## Discussion
 
 The `NSRuleEditor` class looks for a strings file with the given name in the main bundle and (if appropriate) the bundle containing the nib file from which it was loaded. If it finds a strings file resource with the given name, `NSRuleEditor` loads it and sets it as the formatting dictionary for the receiver. You can obtain the resulting dictionary using the [`formattingDictionary`](./formattingdictionary.md) property].
 

@@ -20,7 +20,7 @@ var standardInput: Any? { get set }
 @property (retain, nullable) id standardInput;
 ```
 
-#### Discussion
+## Discussion
 
 If `file` is an `NSPipe` object, launching the receiver automatically closes the read end of the pipe in the current task. Don’t create a handle for the pipe and pass that as the argument, or the read end of the pipe won’t be closed automatically.
 

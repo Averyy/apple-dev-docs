@@ -15,7 +15,7 @@ The getter to use to access the geocoder class.
 get Geocoder(): typeof Geocoder;
 ```
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library first before accessing the getter, otherwise, the getter throws an `Error`.
 

@@ -23,7 +23,7 @@ static var wiggle: WiggleSymbolEffect { get }
 
 Available when `Self` is `WiggleSymbolEffect`.
 
-#### Discussion
+## Discussion
 
 The Wiggle animation applies a transitory translation or rotation effect to the symbol.
 

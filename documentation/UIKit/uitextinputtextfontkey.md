@@ -23,7 +23,7 @@ let UITextInputTextFontKey: String
 extern NSString * const UITextInputTextFontKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`UIFont`](./uifont.md) object.
 

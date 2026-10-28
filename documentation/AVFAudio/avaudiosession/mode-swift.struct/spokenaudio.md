@@ -24,7 +24,7 @@ static let spokenAudio: AVAudioSession.Mode
 extern AVAudioSessionMode const AVAudioSessionModeSpokenAudio;
 ```
 
-#### Discussion
+## Discussion
 
 This mode is appropriate for apps that play continuous spoken audio, such as podcasts or audio books. Setting this mode indicates that your app should pause, rather than duck, its audio if another app plays a spoken audio prompt. After the interrupting app’s audio ends, you can resume your app’s audio playback.
 

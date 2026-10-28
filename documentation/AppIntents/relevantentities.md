@@ -25,7 +25,7 @@ struct RelevantEntities
 
 - [Donating your app’s data and actions to the system](./donating-your-apps-data-and-actions-to-the-system.md)
 
-#### Overview
+## Overview
 
 Use the shared `RelevantEntities` object to donate songs, albums, artists, playlists, radio stations, podcasts, or other media-related content to the system. Base your donations on whatever criteria makes sense for your app. For example, you might donate songs that someone listens to frequently or donate new items that you think someone might like based on their tastes. The system uses your donations to offer suggestions for content someone can play during a workout or other scenario.
 

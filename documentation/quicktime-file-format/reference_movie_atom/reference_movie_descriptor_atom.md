@@ -6,7 +6,7 @@
 
 A reference movie atom must contain at least one reference movie descriptor atom, and typically contains more than one.
 
-#### Overview
+## Overview
 
 See [`Reference movie descriptor atom`](../reference_movie_descriptor_atom.md) for more information.
 

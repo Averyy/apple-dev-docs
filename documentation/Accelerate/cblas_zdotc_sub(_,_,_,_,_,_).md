@@ -25,7 +25,7 @@ func cblas_zdotc_sub(_ N: __LAPACK_int, _ X: OpaquePointer?, _ INCX: __LAPACK_in
 void cblas_zdotc_sub(const __LAPACK_int N, const __LAPACK_double_complex *X, const __LAPACK_int INCX, const __LAPACK_double_complex *Y, const __LAPACK_int INCY, __LAPACK_double_complex *DOTC);
 ```
 
-#### Discussion
+## Discussion
 
 Computes conjg(X) * Y.
 

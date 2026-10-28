@@ -21,7 +21,7 @@ class CPPointOfInterest
 @interface CPPointOfInterest : NSObject
 ```
 
-#### Overview
+## Overview
 
 A point of interest describes a geographical location on a map. It also provides supplementary information about the location, such as a title and summary that the template displays in a scrollable picker and on a detail card. A point of interest also provides the buttons the detail card presents to the user as contextual actions.
 

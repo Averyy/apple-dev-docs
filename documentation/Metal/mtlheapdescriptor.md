@@ -29,7 +29,7 @@ class MTLHeapDescriptor
 - [Creating sparse heaps and sparse textures](./creating-sparse-heaps-and-sparse-textures.md)
 - [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 
-#### Overview
+## Overview
 
 Create an [`MTLHeap`](./mtlheap.md) by configuring an [`MTLHeapDescriptor`](./mtlheapdescriptor.md) instance’s properties and passing it to the [`makeHeap(descriptor:)`](./mtldevice/makeheap%28descriptor%29.md) method of an [`MTLDevice`](./mtldevice.md).
 

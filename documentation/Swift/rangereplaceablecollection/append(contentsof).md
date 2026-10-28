@@ -22,7 +22,7 @@ Adds the elements of a sequence or collection to the end of this collection.
 mutating func append<S>(contentsOf newElements: S) where S : Sequence, Self.Element == S.Element
 ```
 
-#### Discussion
+## Discussion
 
 The collection being appended to allocates any additional necessary storage to hold the new elements.
 

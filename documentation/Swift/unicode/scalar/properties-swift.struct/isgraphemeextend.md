@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is a grapheme extender.
 var isGraphemeExtend: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 A grapheme extender can be thought of primarily as a non-spacing glyph that is applied above or below another glyph. For example, when the character `é` is represented in its decomposed form, the grapheme base is “e” (U+0065 LATIN SMALL LETTER E) and it is followed by a single grapheme extender, U+0301 COMBINING ACUTE ACCENT.
 

@@ -15,7 +15,7 @@ Dictionary that identifies a record zone to monitor in the database.
 attribute CloudKit.ZoneID zoneID;
 ```
 
-#### Discussion
+## Discussion
 
 See [CloudKit JS Data Types](../cloudkit-js-data-types.md).
 

@@ -5,7 +5,7 @@
 
 Decide how to handle access to unmapped texture regions.
 
-#### Overview
+## Overview
 
 You don’t need to rewrite your shaders to work with sparse textures. You can treat sparse textures just like any other textures. However, they work differently if you access an unmapped region in the texture:
 
@@ -14,7 +14,7 @@ You don’t need to rewrite your shaders to work with sparse textures. You can t
 
 If this default behavior is insufficient for your app, update your shaders to handle memory operations to unmapped regions.
 
-##### Test for unmapped regions in your shader
+### Test for unmapped regions in your shader
 
 When you sample a texture, you can explicitly test to see whether that action accessed an unmapped region. Instead of calling the `sample` method, call `sparse_sample`. The `sparse_sample` methods return a `sparse_color<T>` object, which provides methods you can call to determine whether you sampled a mapped region in the texture, and to get the sampled data.
 
@@ -52,7 +52,7 @@ fragment float4 fragmentShader(
 
 For more information about the other methods for sampling or reading from sparse textures, see [Metal Shading Language Guide](https://developer.apple.com/library/archive/documentation/Metal/Reference/MetalShadingLanguageGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40014364) and [Restricting access to specific mipmaps](./restricting-access-to-specific-mipmaps.md).
 
-##### Track residency information
+### Track residency information
 
 A more advanced way to create fallback behavior is to track residency information in a *residency map*. A residency map is another texture with a pixel for every tile region in your main texture. You use a residency map to maintain per-tile information about your texture.
 

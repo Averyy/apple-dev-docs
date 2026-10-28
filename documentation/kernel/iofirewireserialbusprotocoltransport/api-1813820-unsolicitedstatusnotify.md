@@ -12,7 +12,7 @@ virtual void UnsolicitedStatusNotify (
  FWSBP2NotifyParamsPtr params );
 ```
 
-#### Overview
+## Overview
 
 After we have parsed and handled the unsolicited status we call enableUnsolicitedStatus. See IOFireWireSBP2Lib.h for details regarding the enableUnsolicitedStatus method.
 

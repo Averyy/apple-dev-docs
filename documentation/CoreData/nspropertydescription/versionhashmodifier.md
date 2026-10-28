@@ -25,7 +25,7 @@ var versionHashModifier: String? { get set }
 @property (copy, nullable) NSString * versionHashModifier;
 ```
 
-#### Discussion
+## Discussion
 
 This value is included in the version hash for the property. You use it to mark or denote a property as being a different “version” than another even if all of the values which affect persistence are equal. (Such a difference is important in cases where the attributes of a property are unchanged but the format or content of its data are changed.)
 

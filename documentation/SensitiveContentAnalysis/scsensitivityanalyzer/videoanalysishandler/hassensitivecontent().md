@@ -19,7 +19,7 @@ Provides a result that indicates if the video file contains sensitive content.
 final func hasSensitiveContent() async throws -> SCSensitivityAnalysis
 ```
 
-#### Return Value
+## Return Value
 
 An object that indicates if checked content contains nudity.
 

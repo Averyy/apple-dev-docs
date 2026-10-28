@@ -25,7 +25,7 @@ optional func urlSession(_ session: URLSession, betterRouteDiscoveredFor streamT
 - (void) URLSession:(NSURLSession *) session betterRouteDiscoveredForStreamTask:(NSURLSessionStreamTask *) streamTask;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the URL loading system determines that a better route to the endpoint host is available. For example, this method may be called when a Wi-Fi interface becomes available.
 

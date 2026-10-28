@@ -23,7 +23,7 @@ func setTorchModeOn(level torchLevel: Float) throws
 - (BOOL) setTorchModeOnWithLevel:(float) torchLevel error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 This method sets the torch mode to [`AVCaptureDevice.TorchMode.on`](./torchmode-swift.enum/on.md) and sets the level to the specified value. If the device doesn’t support this mode or if you specify a value for `torchLevel` that’s outside the accepted range, this method raises an exception. If the torch value is within the accepted range but greater than the currently supported maximum—perhaps because the device is overheating—this method returns [`false`](../../Swift/false.md).
 

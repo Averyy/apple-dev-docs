@@ -23,7 +23,7 @@ optional func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerat
 - (void) scrollViewDidEndDragging:(UIScrollView *) scrollView willDecelerate:(BOOL) decelerate;
 ```
 
-#### Discussion
+## Discussion
 
 The scroll view sends this message when the user’s finger touches up after dragging content. The [`isDecelerating`](../uiscrollview/isdecelerating.md) property of [`UIScrollView`](../uiscrollview.md) controls deceleration.
 

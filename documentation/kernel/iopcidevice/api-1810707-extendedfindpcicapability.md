@@ -13,11 +13,11 @@ virtual UInt32 extendedFindPCICapability(
  IOByteCount *offset = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 The 32-bit value of the capability register if one was found, zero otherwise.
 
-#### Overview
+## Overview
 
 This method searches the device's config space for a PCI capability register matching the passed capability ID, if the device supports PCI capabilities.
 

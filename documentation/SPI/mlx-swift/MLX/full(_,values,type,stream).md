@@ -17,7 +17,7 @@ Construct an array with the given value.
 func full(_ shape: some Collection<Int>, values: some ScalarOrArray, type: (some HasDType).Type, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Constructs an array of size `shape` filled with `vals`. If `vals` is an :obj:`array` it must be [Numpy Style Broadcasting](./broadcasting.md) to the given `shape`.
 
@@ -28,7 +28,7 @@ Example:
 let r = MLXArray.full([5, 4], values: 7, type: Float.self)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](./initialization.md)
 - [`full(_:values:stream:)`](./full%28_,values,stream%29.md)

@@ -18,7 +18,7 @@ Frees a memory block that contains general-purpose memory.
 void IOFree(void *address, size_t length);
 ```
 
-#### Discussion
+## Discussion
 
 Use this macro to free memory that you allocated with [`IOMalloc`](./iomalloc.md) or [`IOMallocZero`](./iomalloczero.md).
 

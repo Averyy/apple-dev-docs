@@ -22,7 +22,7 @@ Execute an operation with a cancellation handler that’s immediately invoked if
 func withTaskCancellationHandler<T>(operation: () async throws -> T, onCancel handler: @Sendable () -> Void, isolation: isolated (any Actor)?) async rethrows -> T
 ```
 
-#### Discussion
+## Discussion
 
 This differs from the operation cooperatively checking for cancellation and reacting to it in that the cancellation handler is *always* and *immediately* invoked when the task is canceled. For example, even if the operation is running code that never checks for cancellation, a cancellation handler still runs and provides a chance to run some cleanup code:
 
@@ -39,7 +39,7 @@ await withTaskCancellationHandler {
 }
 ```
 
-##### Execution order and semantics
+### Execution order and semantics
 
 The `operation` closure is always invoked, even when the `withTaskCancellationHandler(operation:onCancel:)` method is called from a task that was already canceled.
 
@@ -51,7 +51,7 @@ The `operation` closure executes on the calling execution context, and doesn’t
 
 If cancellation occurs while the operation is running, the cancellation handler executes *concurrently* with the operation.
 
-##### Cancellation handlers and locks
+### Cancellation handlers and locks
 
 Cancellation handlers which acquire locks must take care to avoid deadlock. The cancellation handler may be invoked while holding internal locks associated with the task or other tasks.  Other operations on the task, such as resuming a continuation, may acquire these same internal locks. Therefore, if a cancellation handler must acquire a lock, other code should not cancel tasks or resume continuations while holding that lock.
 

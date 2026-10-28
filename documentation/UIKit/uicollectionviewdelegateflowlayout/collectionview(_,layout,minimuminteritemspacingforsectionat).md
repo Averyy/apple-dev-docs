@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, layout collecti
 - (CGFloat) collectionView:(UICollectionView *) collectionView layout:(UICollectionViewLayout *) collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 The minimum space (measured in points) to apply between successive items in the lines of a section.
 
-#### Discussion
+## Discussion
 
 If you do not implement this method, the flow layout uses the value in its [`minimumInteritemSpacing`](../uicollectionviewflowlayout/minimuminteritemspacing.md) property to set the space between items instead. Your implementation of this method can return a fixed value or return different spacing values for each section.
 

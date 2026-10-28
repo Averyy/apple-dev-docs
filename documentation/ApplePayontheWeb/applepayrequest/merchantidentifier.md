@@ -16,7 +16,7 @@ The merchant identifier you registered with Apple for use with Apple Pay.
 required DOMString merchantIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This is the merchant ID you created and registered with Apple. See [Configuring Your Environment](../configuring-your-environment.md) for more information.
 

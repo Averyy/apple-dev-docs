@@ -19,7 +19,7 @@ class var linkRenderingAttributes: [NSAttributedString.Key : Any] { get }
 @property (class, readonly) NSDictionary<NSString *,id> * linkRenderingAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 The base [`NSTextLayoutManager`](../nstextlayoutmanager.md) class returns with [`single`](../nsunderlinestyle/single.md) for [`underlineStyle`](../../Foundation/nsattributedstring/key/underlinestyle.md) and the platform link color for [`foregroundColor`](../../Foundation/nsattributedstring/key/foregroundcolor.md). The platform color for macOS is `linkColor`. Other platforms uses `blueColor`.
 

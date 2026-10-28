@@ -16,7 +16,7 @@ Options that you use to dispatch keyboard events.
 typedef enum { ... } IOHIDKeyboardEventOptions;
 ```
 
-#### Overview
+## Overview
 
 Pass these options to the [`dispatchKeyboardEvent`](./iohideventservice/dispatchkeyboardevent.md) method of [`IOHIDEventService`](./iohideventservice.md).
 

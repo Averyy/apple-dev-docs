@@ -40,7 +40,7 @@ func page(for point: NSPoint, nearest: Bool) -> PDFPage?
 - (PDFPage *) pageForPoint:(NSPoint) point nearest:(BOOL) nearest;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `NULL` if there’s no page at the specified point and `nearest` is set to [`false`](../../Swift/false.md).
 

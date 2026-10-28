@@ -25,7 +25,7 @@ weak var inputOrigin: SCNNode? { get set }
 @property (nonatomic, weak, nullable) SCNNode * inputOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies only when the controller’s [`inputMode`](./inputmode.md) value is [`SCNParticleInputMode.overDistance`](../scnparticleinputmode/overdistance.md). When you select that input mode, this property’s value must be a node in the scene containing the particle system; otherwise, SceneKit ignores this property. The default value is `nil`.
 

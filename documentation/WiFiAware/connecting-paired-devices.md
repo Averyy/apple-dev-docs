@@ -5,7 +5,7 @@
 
 Make outgoing and accept incoming secure connections with paired devices.
 
-#### Overview
+## Overview
 
 With the Wi-Fi Aware™ technology, your app can securely establish peer-to-peer (P2P) connections between Wi-Fi devices. By using the Wi-Fi Aware framework, devices can discover, pair, and communicate with other nearby devices without an internet connection or access point.
 
@@ -16,7 +16,7 @@ For your app to pair devices, or ask the person using your app for access to exi
 
 After a person pairs a device or grants your app access to a device, the system adds the device to your app’s [`WAPairedDevice.Devices`](./wapaireddevice/devices.md) collection, which is accessible through the [`allDevices`](./wapaireddevice/alldevices.md) APIs.
 
-##### Connect paired devices
+### Connect paired devices
 
 After your app pairs devices, it can initiate secure peer-to-peer Wi-Fi connections between those devices on demand. The Wi-Fi Aware framework integrates with the [Network](../Network/Network.md) framework to provide Wi-Fi Aware connections and related functionality, extending several common networking primitives:
 
@@ -27,7 +27,7 @@ After your app pairs devices, it can initiate secure peer-to-peer Wi-Fi connecti
 - [`NWPath`](../Network/nwpath.md) fetches Wi-Fi Aware connection statuses and performance metrics.
 - [`NWError`](../Network/nwerror.md) fetches Wi-Fi Aware error statuses.
 
-##### Create a listener to publish
+### Create a listener to publish
 
 The following code example creates a `NetworkListener` that publishes the `_example-service._tcp` service over Wi-Fi Aware, and accepts incoming connections from the specified paired devices:
 
@@ -56,7 +56,7 @@ using: {
 }
 ```
 
-##### Create a browser to subscribe
+### Create a browser to subscribe
 
 The following code example creates a `NetworkBrowser` that subscribes for the `_example-service._tcp` service over Wi-Fi Aware, and provides browse results that the system can use to make outgoing connections to the specified paired devices:
 
@@ -87,7 +87,7 @@ let endpoint = try await browser.run { waEndpoints in
 }
 ```
 
-##### Make a connection
+### Make a connection
 
 The following code example creates a `NetworkConnection` to a discovered Wi-Fi Aware endpoint:
 
@@ -106,7 +106,7 @@ let connection = NetworkConnection(
 // The run closure on the `NetworkListener` device receives the incoming connection.
 ```
 
-##### Monitor connection performance
+### Monitor connection performance
 
 The following code example gets the Wi-Fi Aware performance report from the current path of a connection.
 
@@ -118,7 +118,7 @@ if let wifiAwarePath = try await connection.currentPath?.wifiAware {
 }
 ```
 
-##### Get Wi-Fi Aware errors
+### Get Wi-Fi Aware errors
 
 The following code example gets the Wi-Fi Aware specific error code from the [`NWError`](../Network/nwerror.md) reported by the Network framework as part of the state updates provided for the `NetworkBrowser`, `NetworkListener` and `NetworkConnection` instances.
 

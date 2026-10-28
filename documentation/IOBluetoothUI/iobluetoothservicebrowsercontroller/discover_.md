@@ -15,11 +15,11 @@ Invoke an already created window controller to display, and run the modal dialog
 - (IOReturn) discover:(IOBluetoothSDPServiceRecord **) outRecord;
 ```
 
-#### Return Value
+## Return Value
 
 IOReturn - * kIOReturnSuccess - on successful completion. * kCanceledErr - User canceled.
 
-#### Discussion
+## Discussion
 
 This method will run the IOBluetoothServiceBrowserController browser window modally.
 

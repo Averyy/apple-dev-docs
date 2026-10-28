@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether a time range has a duration of ze
 func CMTIMERANGE_IS_EMPTY(_ range: CMTimeRange) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `range` has a duration of `0`; otherwise, [`false`](../Swift/false.md).
 

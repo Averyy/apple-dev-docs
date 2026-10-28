@@ -18,7 +18,7 @@ A translation strategy that provides more fluent translations using Apple Intell
 static let highFidelity: TranslationSession.Strategy
 ```
 
-#### Discussion
+## Discussion
 
 Use this strategy for higher-quality translations on devices with Apple Intelligence enabled. The models are already downloaded when Apple Intelligence is enabled, so no additional language downloads are required. This strategy offers higher-quality translations and supports additional languages, but may take longer to complete than [`lowLatency`](./lowlatency.md). On devices without Apple Intelligence, it falls back to the traditional models used by `lowLatency`.
 

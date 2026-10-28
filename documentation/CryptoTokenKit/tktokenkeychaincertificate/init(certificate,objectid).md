@@ -25,11 +25,11 @@ init?(certificate certificateRef: SecCertificate, objectID: TKToken.ObjectID)
 - (instancetype) initWithCertificate:(SecCertificateRef) certificateRef objectID:(TKTokenObjectID) objectID;
 ```
 
-#### Return Value
+## Return Value
 
 A new token keychain certificate.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer.
 

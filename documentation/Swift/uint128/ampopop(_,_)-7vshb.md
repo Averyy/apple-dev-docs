@@ -21,7 +21,7 @@ Returns the result of shifting a value’s binary representation the specified n
 static func &>> <Other>(lhs: Self, rhs: Other) -> Self where Other : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 Use the masking right shift operator (`&>>`) when you need to perform a shift and are sure that the shift amount is in the range `0..<lhs.bitWidth`. Before shifting, the masking right shift operator masks the shift to this range. The shift is performed using this masked value.
 

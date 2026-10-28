@@ -21,7 +21,7 @@ Creates an iterator that presents the elements of `base` sequences concatenated 
 init<Separator>(base: Base.Iterator, separator: Separator) where Separator : Sequence, Separator.Element == Base.Element.Element
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(`separator.count`).
 

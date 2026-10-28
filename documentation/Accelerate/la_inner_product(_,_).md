@@ -25,7 +25,7 @@ func la_inner_product(_ vector_left: la_object_t, _ vector_right: la_object_t) -
 extern la_object_tla_inner_product(la_object_t vector_left, la_object_t vector_right);
 ```
 
-#### Discussion
+## Discussion
 
 Compute the inner product of two vectors.
 

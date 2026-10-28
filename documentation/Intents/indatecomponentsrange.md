@@ -25,7 +25,7 @@ class INDateComponentsRange
 @interface INDateComponentsRange : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an [`INDateComponentsRange`](./indatecomponentsrange.md) object to specify date- or time-related information when responding to an intent. For example, a ride service might use this object to specify possible pickup times for the user.
 

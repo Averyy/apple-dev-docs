@@ -24,7 +24,7 @@ func registerSoundEventAsset(rootNode: PHASESoundEventNodeDefinition, identifier
 - (PHASESoundEventNodeAsset *) registerSoundEventAssetWithRootNode:(PHASESoundEventNodeDefinition *) rootNode identifier:(NSString *) identifier error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A sound event node asset.
 

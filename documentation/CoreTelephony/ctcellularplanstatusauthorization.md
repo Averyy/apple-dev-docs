@@ -21,7 +21,7 @@ enum CTCellularPlanStatusAuthorization
 enum CTCellularPlanStatusAuthorization : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The [`requestAuthorization(forPhoneNumber:completion:)`](./ctcellularplanstatus/requestauthorization%28forphonenumber,completion%29.md) and [`getAuthorizationStatus(forPhoneNumber:completion:)`](./ctcellularplanstatus/getauthorizationstatus%28forphonenumber,completion%29.md) methods return a value of this type in their completion handlers.
 

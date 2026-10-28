@@ -28,7 +28,7 @@ class ASAuthorizationPlatformPublicKeyCredentialProvider
 
 - [Supporting passkeys](./supporting-passkeys.md)
 
-#### Overview
+## Overview
 
 The credential provider accesses public-private key pairs stored in iCloud Keychain for registration or authentication with a relying party. Instantiate this object, passing in the relying party identifier for the credentials.
 

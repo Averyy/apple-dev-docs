@@ -23,7 +23,7 @@ class let formatDescriptionDidChangeNotification: NSNotification.Name
 extern NSNotificationName const AVCaptureInputPortFormatDescriptionDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s [`object`](../../../Foundation/notification/object.md) property contains the [`AVCaptureInput.Port`](../port.md) object whose format changed.
 

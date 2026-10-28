@@ -25,11 +25,11 @@ func unprojectPoint(_ point: vector_float3) -> vector_float3
 - (vector_float3) unprojectPoint:(vector_float3) point;
 ```
 
-#### Return Value
+## Return Value
 
 The corresponding point in the world coordinate system of the SceneKit scene.
 
-#### Discussion
+## Discussion
 
 The z-coordinate of the `point` parameter describes the depth at which to unproject the point relative to the near and far clipping planes of the viewing frustum (defined by the [`SK3DNode`](../sk3dnode.md) property). Unprojecting a point whose z-coordinate is `0.0` returns a point on the near clipping plane; unprojecting a point whose z-coordinate is `1.0` returns a point on the far clipping plane.
 

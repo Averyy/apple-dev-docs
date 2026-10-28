@@ -24,7 +24,7 @@ var valueChangedHandler: GCMicroGamepadValueChangedHandler? { get set }
 @property (nonatomic, copy, nullable) GCMicroGamepadValueChangedHandler valueChangedHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If multiple elements change values at the same time, the profile calls this block once for each element that changed. If the value of a child element changes, the profile only calls the block for the containing element.
 

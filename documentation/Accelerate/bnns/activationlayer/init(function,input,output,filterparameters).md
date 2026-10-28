@@ -23,7 +23,7 @@ Returns a new activation layer.
 convenience init?(function activationFunction: BNNS.ActivationFunction, input: BNNSNDArrayDescriptor, output: BNNSNDArrayDescriptor, filterParameters: BNNSFilterParameters? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The input dimensions must be equal to the output dimensions. For activation types other than identity, the input and output must be `float`.
 

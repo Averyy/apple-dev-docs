@@ -16,7 +16,7 @@ Keys that represent properties of a particular elements.
 #define kIOHIDElementMinKey
 ```
 
-#### Discussion
+## Discussion
 
 These keys can also be added to a matching dictionary when searching for elements via copyMatchingElements.
 

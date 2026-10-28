@@ -23,7 +23,7 @@ func reloadSections(_ sections: IndexSet)
 - (void) reloadSections:(NSIndexSet *) sections;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to selectively reload only the items in the specified sections. This causes the collection view to discard any cells associated with those items and redisplay them. This method also discards any placeholders in the specified sections.
 

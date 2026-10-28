@@ -24,7 +24,7 @@ var isUITextureComposited: Bool { get set }
 @property (nonatomic, readwrite, getter=isUITextureComposited, setter=setIsUITextureComposited:) BOOL uiTextureComposited;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to [`true`](../../Swift/true.md) when property [`uiTexture`](./uitexture.md) contains a precomposition of any custom UI image on top of the color image.
 

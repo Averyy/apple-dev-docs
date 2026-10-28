@@ -24,7 +24,7 @@ convenience init(from lengthFormatterUnit: LengthFormatter.Unit)
 + (instancetype) unitFromLengthFormatterUnit:(NSLengthFormatterUnit) lengthFormatterUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit object, or `nil` if the unit parameter is not a valid length formatter unit value.
 

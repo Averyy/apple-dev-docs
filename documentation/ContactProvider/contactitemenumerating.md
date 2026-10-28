@@ -16,7 +16,7 @@ A protocol to provide enumerators for collections of contact items.
 protocol ContactItemEnumerating
 ```
 
-#### Overview
+## Overview
 
 You typically implement this protocol in your app extension, since [`ContactProviderExtension`](./contactproviderextension.md) inherits this protocol.
 

@@ -25,7 +25,7 @@ convenience init?(mimeType: String, conformingTo supertype: UTType)
 + (instancetype) typeWithMIMEType:(NSString *) mimeType conformingToType:(UTType *) supertype;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer returns `nil` if the system doesn’t know the MIME type.
 

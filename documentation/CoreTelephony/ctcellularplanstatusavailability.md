@@ -21,7 +21,7 @@ enum CTCellularPlanStatusAvailability
 enum CTCellularPlanStatusAvailability : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The [`getHintForPhoneNumber(_:completion:)`](./ctcellularplanstatus/gethintforphonenumber%28_,completion%29.md) method returns this value alongside a [`CTCellularPlanStatusAvailabilityConfidence`](./ctcellularplanstatusavailabilityconfidence.md) value in its completion handler.
 

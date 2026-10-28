@@ -20,7 +20,7 @@ Provides a device event from the system to the extension.
 func didReceiveEvent(_ event: DDDeviceEvent)
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this function to give the app’s `DDDiscoveryExtension` information about the device. For example, when someone selects the device in the AirPlay menu ([`AVRoutePickerView`](../../AVKit/avroutepickerview.md)), the system notifies the extension of the state change by invoking this callback.
 

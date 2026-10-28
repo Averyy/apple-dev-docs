@@ -21,7 +21,7 @@ A properly formed URL couldn’t be handled by the framework.
 NSURLErrorUnsupportedURL
 ```
 
-#### Discussion
+## Discussion
 
 The most likely cause is that there is no available protocol handler for the URL.
 

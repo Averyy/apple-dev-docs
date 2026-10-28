@@ -17,7 +17,7 @@ The current normalized ratio of the throughput capacity and throughput ceiling.
 var throughputCapacityRatio: Double? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This ratio reflects the current throughput capability of the data path as a value between `0.0` and `1.0`. It provides a consistent measure of the relative capacity and health of a data path, regardless of the different hardware capabilities across devices.
 

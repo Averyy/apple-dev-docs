@@ -24,7 +24,7 @@ func encodeRootObject(_ rootObject: Any)
 - (void) encodeRootObject:(id) rootObject;
 ```
 
-#### Discussion
+## Discussion
 
 If any object is encountered more than once while traversing the graph, it is encoded only once, but the multiple references to it are stored. (See [Archives and Serializations Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i) for more information.)
 

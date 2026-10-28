@@ -21,7 +21,7 @@ The subscription identifier for the associated database.
 @property (copy, nullable) CKSubscriptionID subscriptionID;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a sync engine attempts to discover an existing subscription for the synced database. If one isn’t found, the engine creates an internal [`CKDatabaseSubscription`](../ckdatabasesubscription.md) and uses that to receive notifications about remote record changes.
 

@@ -17,7 +17,7 @@ Sum reduce the array over the given axis.
 func sum(_ array: MLXArray, axis: Int, keepDims: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Reduction Functions](./reduction.md)
 - [`sum(_:axes:keepDims:stream:)`](./sum%28_,axes,keepdims,stream%29.md)

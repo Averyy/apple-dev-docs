@@ -19,7 +19,7 @@ case blocked
 FSContainerStateBlocked
 ```
 
-#### Discussion
+## Discussion
 
 This state implies that the error has a resolution that would allow the container to become ready, such as correcting an incorrect password.
 

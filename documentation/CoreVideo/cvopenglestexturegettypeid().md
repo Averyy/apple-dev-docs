@@ -23,7 +23,7 @@ func CVOpenGLESTextureGetTypeID() -> CFTypeID
 extern CFTypeID CVOpenGLESTextureGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The Core Foundation type identifier for the `CVOpenGLESTextureRef` type.
 

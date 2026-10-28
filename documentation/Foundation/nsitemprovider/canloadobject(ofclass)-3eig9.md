@@ -25,7 +25,7 @@ func canLoadObject(ofClass aClass: any NSItemProviderReading.Type) -> Bool
 - (BOOL) canLoadObjectOfClass:(Class<NSItemProviderReading> *) aClass;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the item provider can load objects of the class.
 

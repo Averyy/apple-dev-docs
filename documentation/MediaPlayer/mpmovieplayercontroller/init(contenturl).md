@@ -23,11 +23,11 @@ init!(contentURL url: URL!)
 - (instancetype) initWithContentURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 The movie player object.
 
-#### Discussion
+## Discussion
 
 This method initializes a movie player, but does not prepare it for playback. To prepare a new movie player for playback, call the [`prepareToPlay()`](../mpmediaplayback/preparetoplay%28%29.md) method, described in [`MPMediaPlayback`](../mpmediaplayback.md).
 

@@ -17,11 +17,11 @@ Creates a new media output device with the specified properties, requiring at le
 init?(id: UUID, displayName: String, capabilities: MediaOutputDevice.Capabilities, canGroupWithCurrentlyActivatedDevices: Bool = true, deviceType: MediaOutputDevice.DeviceType = .tv, volumeControl: MediaOutputDevice.VolumeControl = .relative, canMute: Bool = true, requiredNetworkEndpoints networkEndpoints: [NWEndpoint], txtRecords: [NWTXTRecord] = [], supportsSimultaneousSessions: Bool = false)
 ```
 
-#### Return Value
+## Return Value
 
 A configured `MediaOutputDevice`, or `nil` if `networkEndpoints` is empty or `capabilities` is invalid.
 
-#### Discussion
+## Discussion
 
 This is the preferred initializer for [`MediaOutputDevice`](../mediaoutputdevice.md). It enforces that the device has at least one valid network endpoint, returning `nil` if the `networkEndpoints` array is empty. Devices discovered via network browsing (e.g., Bonjour/mDNS) should always have associated endpoints, and this initializer ensures that invariant at construction time.
 

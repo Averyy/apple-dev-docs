@@ -22,7 +22,7 @@ Executes the optimizer update pass of the training graph with the execution opti
 func executeOptimizerUpdate(options: MLCExecutionOptions = []) async throws -> TimeInterval
 ```
 
-#### Return Value
+## Return Value
 
 The execution time if you specify [`profiling`](../mlcexecutionoptions/profiling.md).
 

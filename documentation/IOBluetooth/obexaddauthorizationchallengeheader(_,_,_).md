@@ -19,11 +19,11 @@ func OBEXAddAuthorizationChallengeHeader(_ inHeaderData: UnsafeRawPointer!, _ in
 OBEXError OBEXAddAuthorizationChallengeHeader(const void *inHeaderData, uint32_t inHeaderDataLength, CFMutableDictionaryRef dictRef);
 ```
 
-#### Return Value
+## Return Value
 
 Error code, kOBEXSuccess (0) if success.
 
-#### Discussion
+## Discussion
 
 Authorization Challenge header - OBEX Spec, 2.2.13: Authorization Challenge.
 

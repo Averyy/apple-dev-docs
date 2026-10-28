@@ -19,7 +19,7 @@ Initialize with the components of a URL.
 init?(url: URL)
 ```
 
-#### Discussion
+## Discussion
 
 If the url string from the URL is malformed, nil is returned.
 

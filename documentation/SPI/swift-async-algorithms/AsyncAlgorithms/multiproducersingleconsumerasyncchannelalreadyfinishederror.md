@@ -24,7 +24,7 @@ An error that is thrown from the various `send` methods of the [`MultiProducerSi
 struct MultiProducerSingleConsumerAsyncChannelAlreadyFinishedError
 ```
 
-#### Overview
+## Overview
 
 This error is thrown when the channel is already finished when trying to send new elements to the source.
 

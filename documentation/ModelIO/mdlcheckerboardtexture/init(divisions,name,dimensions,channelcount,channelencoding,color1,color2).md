@@ -24,11 +24,11 @@ init(divisions: Float, name: String?, dimensions: vector_int2, channelCount: Int
 - (instancetype) initWithDivisions:(float) divisions name:(NSString *) name dimensions:(vector_int2) dimensions channelCount:(int) channelCount channelEncoding:(MDLTextureChannelEncoding) channelEncoding color1:(CGColorRef) color1 color2:(CGColorRef) color2;
 ```
 
-#### Return Value
+## Return Value
 
 A new checkerboard texture object.
 
-#### Discussion
+## Discussion
 
 The `divisions`, `color1`, and `color2` parameters define the checkerboard pattern. For example, a `divisions` value of 2 creates a checkerboard pattern of four squares (a 2 x 2 grid), where the top left and bottom right squares use the `color1` color and the other two squares use the `color2` color. A value of 4 creates a pattern of 16 squares (a 4 x 4 grid), and so on.
 

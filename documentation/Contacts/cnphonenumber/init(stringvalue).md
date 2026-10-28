@@ -24,11 +24,11 @@ init(stringValue string: String)
 - (instancetype) initWithStringValue:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized phone number object.
 
-#### Discussion
+## Discussion
 
 You should initialize this with a phone number string. This method returns `nil` when the value of `string` is `nil`.
 

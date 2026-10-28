@@ -23,7 +23,7 @@ func tensorShape() -> BNNSGraph.Builder.Tensor<Int32>
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This function returns a tensor that contains the shape of `self`.
 

@@ -24,7 +24,7 @@ var objectBindings: [any MTLBinding] { get }
 @property (readonly, nonnull) NSArray<id<MTLBinding>> * objectBindings;
 ```
 
-#### Discussion
+## Discussion
 
 The [`MTLBinding`](../mtlbinding.md) elements in the array are in the same order as the object shader’s declaration signature.
 

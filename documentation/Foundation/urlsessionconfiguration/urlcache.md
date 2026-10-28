@@ -29,7 +29,7 @@ var urlCache: URLCache? { get set }
 
 - [Accessing cached data](../accessing-cached-data.md)
 
-#### Discussion
+## Discussion
 
 This property determines the URL cache object used by tasks within sessions based on this configuration.
 

@@ -19,7 +19,7 @@ func restartTransmission()
 - (void) restartTransmission;
 ```
 
-#### Discussion
+## Discussion
 
 If the transmission was stopeed due to the lack of buffers this call restarts it.
 

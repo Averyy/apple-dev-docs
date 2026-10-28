@@ -19,7 +19,7 @@ var editing: Bool { get set }
 @property (assign) BOOL editing;
 ```
 
-#### Discussion
+## Discussion
 
 In editing mode, the person view displays additional controls to let the user change the contact’s information.
 

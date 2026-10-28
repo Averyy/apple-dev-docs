@@ -21,7 +21,7 @@ Marks a point of interest in time.
 #define os_signpost_event_emit(log, event_id, name, ...)
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to calling [`os_signpost_emit_with_type`](./os_signpost_emit_with_type.md) with a type of [`OS_SIGNPOST_EVENT`](./os_signpost_type_t/os_signpost_event.md).
 

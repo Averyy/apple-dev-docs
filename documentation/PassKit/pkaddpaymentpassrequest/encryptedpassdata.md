@@ -23,7 +23,7 @@ var encryptedPassData: Data? { get set }
 @property (nonatomic, copy, nullable) NSData * encryptedPassData;
 ```
 
-#### Discussion
+## Discussion
 
 The JSON file must contain the following keys:
 

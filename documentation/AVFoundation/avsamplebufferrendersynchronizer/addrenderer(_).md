@@ -27,7 +27,7 @@ func addRenderer(_ renderer: any AVQueuedSampleBufferRendering)
 - (void) addRenderer:(id<AVQueuedSampleBufferRendering>) renderer;
 ```
 
-#### Discussion
+## Discussion
 
 This method can be called while [`rate`](./rate.md) is not `0.0`.
 

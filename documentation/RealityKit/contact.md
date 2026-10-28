@@ -20,7 +20,7 @@ Events associated with collisions.
 struct Contact
 ```
 
-#### Overview
+## Overview
 
 To subscribe to a collision event, import Combine, create a property of type [`Cancellable`](../Combine/cancellable.md) so that you maintain a reference to the subscription, then call [`subscribe(to:on:_:)`](./scene/subscribe%28to,on,_%29.md) or [`subscribe(to:on:componentType:_:)`](./scene/subscribe%28to,on,componenttype,_%29.md) and provide a closure.
 

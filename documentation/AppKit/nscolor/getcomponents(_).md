@@ -19,7 +19,7 @@ func getComponents(_ components: UnsafeMutablePointer<CGFloat>)
 - (void) getComponents:(CGFloat *) components;
 ```
 
-#### Discussion
+## Discussion
 
 You can invoke this method on `NSColor` objects created from custom color spaces to get the individual floating-point components, including alpha. Raises an exception if the receiver doesn’t have floating-point components. To find out how many components are in the `components` array, use the [`numberOfComponents`](./numberofcomponents.md) property.
 

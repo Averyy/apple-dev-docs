@@ -27,7 +27,7 @@ func browserViewControllerWasCancelled(_ browserViewController: MCBrowserViewCon
 - (void) browserViewControllerWasCancelled:(MCBrowserViewController *) browserViewController;
 ```
 
-#### Discussion
+## Discussion
 
 This call is intended to inform your app that the view controller has been dismissed because the user canceled the discovery process and is no longer interested in creating a communication session.
 

@@ -21,7 +21,7 @@ Append a reference to a range of another block buffer.
 mutating func append(referenceOf other: consuming CMMutableDataBlockBuffer, range: Range<Int>? = nil, optimizeDepth: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 The range within the block buffer is not required to be contiguous. Providing out of bounds range will result in a precondition failure.
 

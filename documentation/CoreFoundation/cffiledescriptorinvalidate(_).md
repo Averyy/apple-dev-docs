@@ -25,7 +25,7 @@ func CFFileDescriptorInvalidate(_ f: CFFileDescriptor!)
 extern void CFFileDescriptorInvalidate(CFFileDescriptorRef f);
 ```
 
-#### Discussion
+## Discussion
 
 Once invalidated, the CFFileDescriptor object will no longer be read from or written to at the Core Fundation level.
 

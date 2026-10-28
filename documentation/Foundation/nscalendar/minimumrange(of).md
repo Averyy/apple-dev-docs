@@ -25,11 +25,11 @@ func minimumRange(of unit: NSCalendar.Unit) -> NSRange
 - (NSRange) minimumRangeOfUnit:(NSCalendarUnit) unit;
 ```
 
-#### Return Value
+## Return Value
 
 The minimum range limits of the values that the unit specified by `unit` can take on in the receiver.
 
-#### Discussion
+## Discussion
 
 As an example, in the Gregorian calendar the minimum range of values for the Day unit is 1-28.
 

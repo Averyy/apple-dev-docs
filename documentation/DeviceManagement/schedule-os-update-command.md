@@ -15,7 +15,7 @@ Schedule an update of the operating system on a device. Removed: use the declara
 
 > **Deprecated**: **Removed** Use the declarative management software update features instead.
 
-#### Discussion
+## Discussion
 
 Only supervised iOS, macOS, and tvOS devices are eligible for software update management.
 
@@ -29,7 +29,7 @@ A device may return a different `InstallAction` than requested.
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -39,7 +39,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | AllowAppInstallation |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

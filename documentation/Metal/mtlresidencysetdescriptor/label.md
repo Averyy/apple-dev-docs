@@ -24,7 +24,7 @@ var label: String? { get set }
 @property (nonatomic, copy, nullable) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 Metal applies the value of this property to the [`label`](../mtlresidencyset/label.md) property of an [`MTLResidencySet`](../mtlresidencyset.md) that you create by passing the descriptor to [`makeResidencySet(descriptor:)`](../mtldevice/makeresidencyset%28descriptor%29.md).
 

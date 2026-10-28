@@ -13,9 +13,9 @@ Delete an app asset library image.
 
 - [Uploading and managing image assets](./uploading-and-managing-image-assets.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

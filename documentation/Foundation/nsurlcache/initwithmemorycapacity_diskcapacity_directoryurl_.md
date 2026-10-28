@@ -21,7 +21,7 @@ Creates a URL cache object with the specified memory and disk capacities, in the
 - (instancetype) initWithMemoryCapacity:(NSUInteger) memoryCapacity diskCapacity:(NSUInteger) diskCapacity directoryURL:(NSURL *) directoryURL;
 ```
 
-#### Discussion
+## Discussion
 
 A disk cache measured in the tens of megabytes should be acceptable in most cases.
 

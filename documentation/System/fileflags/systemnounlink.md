@@ -21,7 +21,7 @@ File may not be removed or renamed.
 static var systemNoUnlink: FileFlags { get }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C constant is `SF_NOUNLINK`.
 

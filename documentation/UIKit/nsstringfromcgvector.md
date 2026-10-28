@@ -20,7 +20,7 @@ Returns a string formatted to contain the data from a vector data structure.
 extern NSString *NSStringFromCGVector(CGVector vector);
 ```
 
-#### Return Value
+## Return Value
 
 A string that corresponds to `vector`. See [`CGVectorFromString`](./cgvectorfromstring.md) for a discussion of the string format.
 

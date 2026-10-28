@@ -24,7 +24,7 @@ let NEVPNConnectionErrorDomain: String
 extern NSString * const NEVPNConnectionErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 Match this constant to the [`domain`](../Foundation/nserror/domain.md) of an [`NSError`](../Foundation/nserror.md) encountered when calling methods on [`NEVPNConnection`](./nevpnconnection.md). The [`NEDNSSettingsManagerError`](./nednssettingsmanagererror.md) enumeration defines possible [`code`](../Foundation/nserror/code.md) values for these errors.
 

@@ -20,7 +20,7 @@ Updated world-space instance transforms.
 let instanceTransforms: [float4x4]?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

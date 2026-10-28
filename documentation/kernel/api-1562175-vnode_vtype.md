@@ -15,7 +15,7 @@ Return a vnode's type.
 enum vtype vnode_vtype(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 The vnode's type.
 

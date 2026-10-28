@@ -25,7 +25,7 @@ let SCNSceneSourceAssetUnitNameKey: String
 extern NSString * const SCNSceneSourceAssetUnitNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSString`](../Foundation/nsstring.md) object.
 

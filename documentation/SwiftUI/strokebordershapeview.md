@@ -22,7 +22,7 @@ A shape provider that strokes the border of its shape.
 nonisolated struct StrokeBorderShapeView<Content, Style, Background> where Content : InsettableShape, Style : ShapeStyle, Background : View
 ```
 
-#### Overview
+## Overview
 
 You don’t create this type directly; it’s the return type of `Shape.strokeBorder`.
 

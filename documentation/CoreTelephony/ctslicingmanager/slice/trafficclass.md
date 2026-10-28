@@ -17,7 +17,7 @@ A traffic class that routes traffic through this network slice.
 let trafficClass: CTSlicingManager.TrafficClass?
 ```
 
-#### Discussion
+## Discussion
 
 The traffic class indicates the quality of service characteristics for the slice, such as voice, video, or background data. When the network slice doesn’t have a specific traffic class restriction, this property returns [`CTSlicingManager.TrafficClass.any`](../trafficclass/any.md), indicating the slice can handle all types of network traffic.
 

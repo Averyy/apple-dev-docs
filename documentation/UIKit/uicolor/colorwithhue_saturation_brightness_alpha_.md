@@ -20,7 +20,7 @@ Creates a color object using the specified opacity and HSB color space component
 + (UIColor *) colorWithHue:(CGFloat) hue saturation:(CGFloat) saturation brightness:(CGFloat) brightness alpha:(CGFloat) alpha;
 ```
 
-#### Return Value
+## Return Value
 
 The color object. The color information represented by this object is in an RGB colorspace. On applications linked for iOS 10 or later, the color is specified in an extended range sRGB color space. On earlier versions of iOS, the color is specified in a device RGB colorspace.
 

@@ -21,7 +21,7 @@ convenience init(date: Date, timeZone: TimeZone?)
 + (instancetype) textProviderWithDate:(NSDate *) date timeZone:(NSTimeZone *) timeZone;
 ```
 
-#### Return Value
+## Return Value
 
 A text provider initialized with the specified date and time zone value.
 

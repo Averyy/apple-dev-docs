@@ -19,7 +19,7 @@ var markers: [NSRulerMarker]? { get set }
 @property (copy, nullable) NSArray<NSRulerMarker *> * markers;
 ```
 
-#### Discussion
+## Discussion
 
 `markers` can be `nil` or empty to remove all ruler markers. Raises an `NSInternalInconsistencyException` if `markers` is not `nil` and the receiver has no client view.
 

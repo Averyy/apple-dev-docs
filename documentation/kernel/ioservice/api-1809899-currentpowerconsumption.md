@@ -12,11 +12,11 @@ unsigned long currentPowerConsumption(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the `staticPower` field for the current power state in the power state array.
 
-#### Overview
+## Overview
 
 Most macOS power managed drivers do not report their power consumption via the `staticPower` field. Thus this call will not accurately reflect power consumption for most drivers.
 

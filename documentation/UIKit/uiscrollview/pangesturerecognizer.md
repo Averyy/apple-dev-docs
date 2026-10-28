@@ -23,7 +23,7 @@ var panGestureRecognizer: UIPanGestureRecognizer { get }
 @property (nonatomic, readonly) UIPanGestureRecognizer * panGestureRecognizer;
 ```
 
-#### Discussion
+## Discussion
 
 Your application accesses this property when it wants to more precisely control which pan gestures are recognized by the scroll view.
 

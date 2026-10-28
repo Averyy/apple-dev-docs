@@ -22,7 +22,7 @@ Declares the group of widgets that an app supports.
 @MainActor @preconcurrency var body: Self.Body { get }
 ```
 
-#### Discussion
+## Discussion
 
 The order that the widgets appear in this property determines the order they are shown to the user when adding a widget. The following example shows how to use a widget bundle builder to define a body showing a game status widget first and a character detail widget second:
 

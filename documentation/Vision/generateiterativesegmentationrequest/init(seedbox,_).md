@@ -24,7 +24,7 @@ init(seedBox: NormalizedRect, _ revision: GenerateIterativeSegmentationRequest.R
 
 - [Isolating an object from a tap, box, or scribble](../segmenting-objects-with-iterative-refinement.md)
 
-#### Discussion
+## Discussion
 
 No result will be produced if the box is outside the `regionOfInterest`. By default, the `regionOfInterest` is the whole image.
 

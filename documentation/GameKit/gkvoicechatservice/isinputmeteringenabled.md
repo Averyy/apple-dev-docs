@@ -25,7 +25,7 @@ var isInputMeteringEnabled: Bool { get set }
 @property (nonatomic, getter=isInputMeteringEnabled) BOOL inputMeteringEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), your application can read the [`inputMeterLevel`](./inputmeterlevel.md) property to monitor the sound level of the microphone. If [`false`](../../Swift/false.md), the value of the [`inputMeterLevel`](./inputmeterlevel.md) property is undefined. Default is [`false`](../../Swift/false.md). When your application doesn’t need to monitor the microphone, it should set this property to [`false`](../../Swift/false.md) to improve performance.
 

@@ -25,11 +25,11 @@ func CVPixelBufferFillExtendedPixels(_ pixelBuffer: CVPixelBuffer) -> CVReturn
 extern CVReturn CVPixelBufferFillExtendedPixels(CVPixelBufferRef pixelBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
-#### Discussion
+## Discussion
 
 This function replicates edge pixels to fill the entire extended region of the image.
 

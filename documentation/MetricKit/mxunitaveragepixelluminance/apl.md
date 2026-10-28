@@ -26,7 +26,7 @@ class var apl: MXUnitAveragePixelLuminance { get }
 @property (class, copy, readonly) MXUnitAveragePixelLuminance * apl;
 ```
 
-#### Discussion
+## Discussion
 
 The value of `apl` is a whole number ranging from 0 to 100. 0 means the display is black with no illuminated pixels. A value of 100 means the display is white with all red, green, and blue components of all pixels illuminated.
 

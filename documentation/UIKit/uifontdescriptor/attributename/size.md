@@ -24,7 +24,7 @@ static let size: UIFontDescriptor.AttributeName
 extern UIFontDescriptorAttributeName const UIFontDescriptorSizeAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an optional [`NSNumber`](../../../Foundation/nsnumber.md) object that contains a float value. This float value specifies the font size.
 

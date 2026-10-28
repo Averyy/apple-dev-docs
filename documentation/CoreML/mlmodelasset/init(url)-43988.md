@@ -25,7 +25,7 @@ convenience init(url compiledModelURL: URL) throws
 + (instancetype) modelAssetWithURL:(NSURL *) compiledModelURL error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A model asset or nil if there is an error.
 

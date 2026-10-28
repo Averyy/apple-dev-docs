@@ -22,7 +22,7 @@ var startPage: Int { get set }
 @property (nonatomic) NSInteger startPage;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a zero-based index. You can set the starting page of a print formatter by assigning an index to this property or by passing one as the second argument of the [`addPrintFormatter(_:startingAtPageAt:)`](../uiprintpagerenderer/addprintformatter%28_,startingatpageat%29.md) method of [`UIPrintPageRenderer`](../uiprintpagerenderer.md).
 

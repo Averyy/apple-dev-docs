@@ -20,7 +20,7 @@ Indicates whether the web view suppresses content rendering until the content is
 var suppressesIncrementalRendering: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `false`.
 

@@ -21,7 +21,7 @@ init(_ label: Text? = nil, contentType: UTType, source: DocumentCreationSource, 
 
 Available when `Label` is `Text`.
 
-#### Discussion
+## Discussion
 
 ```swift
 NewDocumentButton(

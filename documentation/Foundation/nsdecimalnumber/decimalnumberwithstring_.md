@@ -21,7 +21,7 @@ Creates a decimal number whose value is equivalent to that in a given numeric st
 + (NSDecimalNumber *) decimalNumberWithString:(NSString *) numberValue;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this method if `numberValue` has a fractional part, because the lack of a locale makes handling the decimal separator ambiguous. The separator is a period in some locales (like in the United States) and a comma in others (such as France).
 

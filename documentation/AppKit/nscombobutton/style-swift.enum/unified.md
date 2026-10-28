@@ -19,7 +19,7 @@ case unified
 NSComboButtonStyleUnified
 ```
 
-#### Discussion
+## Discussion
 
 This style hides the system-supplied menu control. When this style is active, the combo button displays its menu in response to a long-press gesture.
 

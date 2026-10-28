@@ -25,7 +25,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is [`true`](../../Swift/true.md), the light is enabled and affects sprite nodes in the scene. The default is [`true`](../../Swift/true.md).
 

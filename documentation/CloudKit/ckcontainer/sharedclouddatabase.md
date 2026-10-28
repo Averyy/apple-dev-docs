@@ -25,7 +25,7 @@ var sharedCloudDatabase: CKDatabase { get }
 @property (nonatomic, strong, readonly) CKDatabase * sharedCloudDatabase;
 ```
 
-#### Discussion
+## Discussion
 
 This database is only available if the device has an iCloud account. Permissions on the database are available only to the user according to the permissions of the enclosing [`CKShare`](../ckshare.md) instance, which represents the shared record. The current user doesn’t own the content in the shared database, and can view and modify that content only if the necessary permissions exist. Data in the shared database isn’t visible in the developer portal or to any user who doesn’t have access.
 

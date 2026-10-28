@@ -23,7 +23,7 @@ var password: String { get set }
 @property (nonatomic, copy) NSString * password;
 ```
 
-#### Discussion
+## Discussion
 
 When creating a digital car key, the vehicle manufacturer emails the user a one-time password to verify their identity. Set this property’s value to that password before you use the configuration to initialize [`PKAddSecureElementPassViewController`](../pkaddsecureelementpassviewcontroller.md), and PassKit verifies that the passwords match as it creates the pass.
 

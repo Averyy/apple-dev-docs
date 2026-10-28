@@ -14,7 +14,7 @@ A Boolean value indicating whether your app may interact with Bluetooth devices.
 - **Name**: `com.apple.security.device.bluetooth`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the App Sandbox capability in Xcode, and under Hardware, select Bluetooth.
 

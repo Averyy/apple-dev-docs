@@ -20,7 +20,7 @@ nonisolated
 func textSelection<S>(_ selectability: S) -> some View where S : TextSelectability
 ```
 
-#### Discussion
+## Discussion
 
 People sometimes need to copy useful information from [`Text`](../text.md) views — including error messages, serial numbers, or IP addresses — so they can then paste the text into another context. Enable text selection to let people select text in a platform-appropriate way.
 

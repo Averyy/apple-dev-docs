@@ -21,11 +21,11 @@ Provides details about an error for an item in a status report.
 object StatusReason
 ```
 
-#### Discussion
+## Discussion
 
 Each status item defines its own set of `code`, `description`, and `details` values.
 
-##### Status item example
+### Status item example
 
 ```json
 {

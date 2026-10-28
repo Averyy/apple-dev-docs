@@ -25,11 +25,11 @@ func objc_storeWeak(_ location: AutoreleasingUnsafeMutablePointer<AnyObject?>, _
 extern idobjc_storeWeak(id*location, id obj);
 ```
 
-#### Return Value
+## Return Value
 
 The value stored in `location` (that is, `obj`).
 
-#### Discussion
+## Discussion
 
 This function is typically used anywhere a `__weak` variable is the target of an assignment.
 

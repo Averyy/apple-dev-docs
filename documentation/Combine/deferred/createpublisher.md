@@ -21,7 +21,7 @@ The closure to execute when this deferred publisher receives a subscription.
 let createPublisher: () -> DeferredPublisher
 ```
 
-#### Discussion
+## Discussion
 
 The publisher returned by this closure immediately receives the incoming subscription.
 

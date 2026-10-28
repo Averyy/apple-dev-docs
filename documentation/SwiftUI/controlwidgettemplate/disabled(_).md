@@ -20,7 +20,7 @@ Determines whether people can interact with this control.
 @preconcurrency func disabled(_ disabled: Bool) -> some ControlWidgetTemplate
 ```
 
-#### Discussion
+## Discussion
 
 Controls also respect the [`disabled(_:)`](../view/disabled%28_%29.md) modifier applied to the control’s label. That modifier only disables the label, however. To disable the control overall, apply this modifier to the control template:
 

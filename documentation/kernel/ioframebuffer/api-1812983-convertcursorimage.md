@@ -14,11 +14,11 @@ virtual bool convertCursorImage(
  IOHardwareCursorInfo *cursor );
 ```
 
-#### Return Value
+## Return Value
 
 a bool indicating the conversion was successful.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses may implement hardware cursor functionality, if so they should pass the cursor image given by the setCursorImage() method, with a description of their hardware cursor format, to this helper function to this routine to convert the image to one suitable for the hardware.
 

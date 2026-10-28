@@ -23,7 +23,7 @@ func titleVerticalPositionAdjustment(for barMetrics: UIBarMetrics) -> CGFloat
 - (CGFloat) titleVerticalPositionAdjustmentForBarMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Return Value
+## Return Value
 
 The title’s vertical position adjustment for `barMetrics`.
 

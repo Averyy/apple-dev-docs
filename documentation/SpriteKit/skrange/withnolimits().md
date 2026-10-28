@@ -25,7 +25,7 @@ class func withNoLimits() -> Self
 + (instancetype) rangeWithNoLimits;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized range object whose minimum value is `—Inf` and whose maximum value is `+Inf`.
 

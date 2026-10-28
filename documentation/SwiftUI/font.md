@@ -22,7 +22,7 @@ An environment-dependent font.
 struct Font
 ```
 
-#### Overview
+## Overview
 
 The system resolves a font’s value at the time it uses the font in a given environment because [`Font`](./font.md) is a late-binding token.
 

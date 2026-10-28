@@ -6,57 +6,60 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.losses.cross_entropy
 
-**class cross_entropy(*logits: array*, *targets: array*, *weights: array | None = None*, *axis: int = -1*, *label_smoothing: float = 0.0*, *reduction: Literal['none', 'mean', 'sum'] = 'none'*)**
-: Computes the cross entropy loss.
+```python
+class cross_entropy(logits: array, targets: array, weights: array | None = None, axis: int = -1, label_smoothing: float = 0.0, reduction: Literal['none', 'mean', 'sum'] = 'none')
+```
 
-Parameters:
+Computes the cross entropy loss.
 
-**logits** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – The unnormalized logits.
-**targets** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – The ground truth values. These can be class indices or
+**Parameters:**
+
+- **logits** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – The unnormalized logits.
+- **targets** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)) – The ground truth values. These can be class indices or
 probabilities for each class. If the `targets` are class indices,
 then `targets` shape should match the `logits` shape with
 the `axis` dimension removed. If the `targets` are probabilities
 (or one-hot encoded), then the `targets` shape should be the same as
 the `logits` shape.
-**weights** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array)*, **optional*) – Optional weights for each target. Default: `None`.
-**axis** ([int](https://docs.python.org/3/builtins/functions.html#int)*, **optional*) – The axis over which to compute softmax. Default: `-1`.
-**label_smoothing** ([float](https://docs.python.org/3/builtins/functions.html#float)*, **optional*) – Label smoothing factor. Default: `0`.
-**reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)*, **optional*) – Specifies the reduction to apply to the output:
+- **weights** ([array](../../_autosummary/mlx.core.array.md#mlx.core.array), *optional*) – Optional weights for each target. Default: `None`.
+- **axis** ([int](https://docs.python.org/3/builtins/functions.html#int), *optional*) – The axis over which to compute softmax. Default: `-1`.
+- **label_smoothing** ([float](https://docs.python.org/3/builtins/functions.html#float), *optional*) – Label smoothing factor. Default: `0`.
+- **reduction** ([str](https://docs.python.org/3/builtins/stdtypes.html#str), *optional*) – Specifies the reduction to apply to the output:
 `'none'` | `'mean'` | `'sum'`. Default: `'none'`.
 
-Returns:
-The computed cross entropy loss.
+**Returns:**
+: The computed cross entropy loss.
 
-Return type:
-[array](../../_autosummary/mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](../../_autosummary/mlx.core.array.md#mlx.core.array)
 
 Examples
 
-  ```
-  >>> import mlx.core as mx
-  >>> import mlx.nn as nn
-  >>>
-  >>> # Class indices as targets
-  >>> logits = mx.array([[2.0, -1.0], [-1.0, 2.0]])
-  >>> targets = mx.array([0, 1])
-  >>> nn.losses.cross_entropy(logits, targets)
-  array([0.0485873, 0.0485873], dtype=float32)
-  >>>
-  >>> # Probabilities (or one-hot vectors) as targets
-  >>> logits = mx.array([[2.0, -1.0], [-1.0, 2.0]])
-  >>> targets = mx.array([[0.9, 0.1], [0.1, 0.9]])
-  >>> nn.losses.cross_entropy(logits, targets)
-  array([0.348587, 0.348587], dtype=float32)
-  >>>
-  >>> # Half precision logits with class indices as targets. On the GPU a
-  >>> # fused kernel accumulates the reduction in float32:
-  >>> logits = mx.array([[2.0, -1.0], [-1.0, 2.0]], mx.bfloat16)
-  >>> targets = mx.array([0, 1])
-  >>> nn.losses.cross_entropy(logits, targets)
-  array([0.048584, 0.048584], dtype=bfloat16)
-  >>>
-  >>> # The CPU reduces in the dtype of the logits, so upcast them to get
-  >>> # the same accuracy:
-  >>> nn.losses.cross_entropy(logits.astype(mx.float32), targets)
-  array([0.0485873, 0.0485873], dtype=float32)
-  ```
+```
+>>> import mlx.core as mx
+>>> import mlx.nn as nn
+>>>
+>>> # Class indices as targets
+>>> logits = mx.array([[2.0, -1.0], [-1.0, 2.0]])
+>>> targets = mx.array([0, 1])
+>>> nn.losses.cross_entropy(logits, targets)
+array([0.0485873, 0.0485873], dtype=float32)
+>>>
+>>> # Probabilities (or one-hot vectors) as targets
+>>> logits = mx.array([[2.0, -1.0], [-1.0, 2.0]])
+>>> targets = mx.array([[0.9, 0.1], [0.1, 0.9]])
+>>> nn.losses.cross_entropy(logits, targets)
+array([0.348587, 0.348587], dtype=float32)
+>>>
+>>> # Half precision logits with class indices as targets. On the GPU a
+>>> # fused kernel accumulates the reduction in float32:
+>>> logits = mx.array([[2.0, -1.0], [-1.0, 2.0]], mx.bfloat16)
+>>> targets = mx.array([0, 1])
+>>> nn.losses.cross_entropy(logits, targets)
+array([0.048584, 0.048584], dtype=bfloat16)
+>>>
+>>> # The CPU reduces in the dtype of the logits, so upcast them to get
+>>> # the same accuracy:
+>>> nn.losses.cross_entropy(logits.astype(mx.float32), targets)
+array([0.0485873, 0.0485873], dtype=float32)
+```

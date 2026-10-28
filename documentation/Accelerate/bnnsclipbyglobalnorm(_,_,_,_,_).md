@@ -27,7 +27,7 @@ func BNNSClipByGlobalNorm(_ dest: UnsafeMutablePointer<UnsafeMutablePointer<BNNS
 int BNNSClipByGlobalNorm(BNNSNDArrayDescriptor **dest, const BNNSNDArrayDescriptor **src, size_t count, float max_norm, float use_norm);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to clip the values in an array of input tensors to a maximum Euclidean norm. If you know the global norm of the input tensors, pass this value as the `use_norm`. Otherwise, pass `0` to specify that the function calculates the norm.
 

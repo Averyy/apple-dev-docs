@@ -15,7 +15,7 @@ Resets a logical unit.
 virtual kern_return_t UserLogicalUnitResetRequest(uint64_t theT, uint64_t theL, uint32_t *response);
 ```
 
-#### Discussion
+## Discussion
 
 The definition of the reset event that this request performs depends on the SCSI protocol.
 

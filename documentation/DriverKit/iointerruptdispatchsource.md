@@ -18,7 +18,7 @@ A dispatch source that reports hardware-related interrupt events to your driver.
 class IOInterruptDispatchSource;
 ```
 
-#### Overview
+## Overview
 
 An [`IOInterruptDispatchSource`](./iointerruptdispatchsource.md) object executes an associated action in response to hardware-related interrupts. If your driver handles hardware interrupts, configure this dispatch source and use your action object to provide an appropriat response.
 

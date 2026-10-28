@@ -25,7 +25,7 @@ var isPositional: Bool { get set }
 @property (nonatomic, getter=isPositional) BOOL positional;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is [`true`](../../Swift/true.md) (the default), SceneKit mixes audio from the source based on its position relative to the scene’s [`audioListener`](../scnscenerenderer/audiolistener.md) node—that is, the audio source’s volume, reverb, and other parameters automatically change depending on the distance to the listener and other objects in the scene. (To position an audio source in a scene, create an [`SCNAudioPlayer`](../scnaudioplayer.md) player from the source and attach that player to an [`SCNNode`](../scnnode.md) object.)
 

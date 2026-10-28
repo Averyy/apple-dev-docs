@@ -24,11 +24,11 @@ func animateAlongsideTransition(in view: UIView?, animation: ((any UIViewControl
 - (BOOL) animateAlongsideTransitionInView:(UIView *) view animation:(void (^)(id<UIViewControllerTransitionCoordinatorContext>context)) animation completion:(void (^)(id<UIViewControllerTransitionCoordinatorContext>context)) completion;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified animation is successfully queued to run; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use this method to perform animations that aren’t handled by the animator objects themselves. The animations you specify in the `animation` parameter must all take place in a view descended from the view you specify in the `view` parameter.
 

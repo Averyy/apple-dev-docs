@@ -19,7 +19,7 @@ The prominence to apply to badges associated with this environment.
 var badgeProminence: BadgeProminence { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`standard`](../badgeprominence/standard.md).
 

@@ -21,7 +21,7 @@ var isAlbumArtistButtonEnabled: Bool { get set }
 @property (nonatomic, assign, getter=isAlbumArtistButtonEnabled) BOOL albumArtistButtonEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The Now Playing template displays a string above the playback control buttons that contains the album and artist names. Set this property to [`true`](../../Swift/true.md) to turn the string into a button that you can use to present more information about the current track. To respond to a user tapping the button, create an object that conforms to [`CPNowPlayingTemplateObserver`](../cpnowplayingtemplateobserver.md) and register it with the Now Playing template using the template’s [`add(_:)`](./add%28_%29.md) method.
 

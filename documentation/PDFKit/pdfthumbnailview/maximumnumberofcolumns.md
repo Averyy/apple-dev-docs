@@ -19,7 +19,7 @@ var maximumNumberOfColumns: Int { get set }
 @property (nonatomic) NSUInteger maximumNumberOfColumns;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum number of columns of thumbnails the thumbnail view can display. If `0`, the thumbnail displays as many columns of thumbnails as fit in its size.
 

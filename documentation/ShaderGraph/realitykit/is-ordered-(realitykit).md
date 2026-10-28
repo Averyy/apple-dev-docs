@@ -14,11 +14,11 @@ Test if arguments are ordered.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Returns the result (X == X) && (Y == Y)
 
-#### Parameter Types
+## Parameter Types
 
 **Is Ordered (half)**:
 

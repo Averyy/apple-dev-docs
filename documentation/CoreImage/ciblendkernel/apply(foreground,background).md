@@ -24,11 +24,11 @@ func apply(foreground: CIImage, background: CIImage) -> CIImage?
 - (CIImage *) applyWithForeground:(CIImage *) foreground background:(CIImage *) background;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIImage`](../ciimage.md) blending the foreground and background images.  Its extent will be the union of the foreground and background image extents.
 
-#### Discussion
+## Discussion
 
 The foreground and background images are not treated differently in the blending.  You can think of them as equivalents A and B; the foreground is not given any precedence over the background.
 

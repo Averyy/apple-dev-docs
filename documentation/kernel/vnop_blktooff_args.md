@@ -16,7 +16,7 @@ struct vnop_blktooff_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 Should write a sequence of unseparated, null-terminated extended-attribute names into the space described by the provided uio. These keys can then be passed to getxattr() (and VNOP_GETXATTR()).
 

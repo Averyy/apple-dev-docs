@@ -20,7 +20,7 @@ func NSEqualSizes(_ aSize: NSSize, _ bSize: NSSize) -> Bool
 extern BOOL NSEqualSizes(NSSize aSize, NSSize bSize);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `aSize` and `bSize` are identical, otherwise [`false`](../Swift/false.md).
 

@@ -25,7 +25,7 @@ convenience init(timeIntervalSinceNow secs: TimeInterval)
 - (instancetype) initWithTimeIntervalSinceNow:(NSTimeInterval) secs;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDate` object initialized relative to the current date and time by `secs` seconds.
 

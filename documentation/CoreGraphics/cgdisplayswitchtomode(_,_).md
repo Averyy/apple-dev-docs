@@ -21,11 +21,11 @@ func CGDisplaySwitchToMode(_ display: CGDirectDisplayID, _ mode: CFDictionary?) 
 extern CGError CGDisplaySwitchToMode(CGDirectDisplayID display, CFDictionaryRef mode);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 
-#### Discussion
+## Discussion
 
 This function switches the display mode of the specified display. The operation is always synchronous; the function does not return until the mode switch is complete. Note that after switching, display parameters and addresses may change.
 
@@ -33,7 +33,7 @@ The selected display mode persists for the life of the calling program. When the
 
 When changing the display mode of a display in a mirroring set, other displays in the mirroring set will be assigned a mode that’s capable of mirroring the bounds of the display being adjusted. To avoid this automatic behavior, you can use the following procedure: call[`CGBeginDisplayConfiguration(_:)`](./cgbegindisplayconfiguration%28_%29.md), call [`CGConfigureDisplayMode(_:_:_:)`](./cgconfiguredisplaymode%28_,_,_%29.md) for each display to explicitly set the mode, and finally call [`CGCompleteDisplayConfiguration(_:_:)`](./cgcompletedisplayconfiguration%28_,_%29.md)
 
-##### Special Considerations
+### Special Considerations
 
 This deprecated function takes as a parameter a display mode dictionary. Starting in OS X v10.6, display mode dictionaries have been replaced by the `CGDisplayMode` opaque type.
 

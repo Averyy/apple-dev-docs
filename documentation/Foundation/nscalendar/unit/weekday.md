@@ -25,7 +25,7 @@ static var weekday: NSCalendar.Unit { get }
 NSCalendarUnitWeekday
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSInteger`. Equal to `kCFCalendarUnitWeekday`. The weekday units are the numbers `1` through `N` (where for the Gregorian calendar `N`=`7` and `1` is Sunday).
 

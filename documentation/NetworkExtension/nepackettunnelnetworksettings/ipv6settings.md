@@ -29,7 +29,7 @@ var ipv6Settings: NEIPv6Settings? { get set }
 
 - [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
-#### Discussion
+## Discussion
 
 This property contains the IPv6 routes specifying what IPv6 traffic to route to the tunnel, as well as the IPv6 address and network prefix to assign to the TUN interface.
 

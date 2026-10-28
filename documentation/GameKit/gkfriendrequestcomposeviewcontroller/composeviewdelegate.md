@@ -25,7 +25,7 @@ weak var composeViewDelegate: (any GKFriendRequestComposeViewControllerDelegate)
 @property (nonatomic, weak, nullable) id<GKFriendRequestComposeViewControllerDelegate> composeViewDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 Before displaying the friend request, your game must set a delegate.
 

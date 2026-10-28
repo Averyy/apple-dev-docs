@@ -26,7 +26,7 @@ var userActivity: NSUserActivity? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSUserActivity * userActivity;
 ```
 
-#### Discussion
+## Discussion
 
 When initializing a response object, you can provide a custom user activity object with details about your response. You might specify a custom object when you want to customize the activity type string, add details to the [`userInfo`](../../Foundation/nsuseractivity/userinfo.md) dictionary, or customize any other properties of the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object.
 

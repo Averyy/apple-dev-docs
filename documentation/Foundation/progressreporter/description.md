@@ -21,7 +21,7 @@ A textual representation of the progress reporter.
 final var description: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property provides a comprehensive description including the class name, object identifier, underlying progress manager details, and various progress metrics and properties.
 

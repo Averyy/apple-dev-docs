@@ -24,7 +24,7 @@ var proxyAutoConfigurationJavaScript: String? { get set }
 @property (copy, nullable) NSString * proxyAutoConfigurationJavaScript;
 ```
 
-#### Discussion
+## Discussion
 
 If [`autoProxyConfigurationEnabled`](./autoproxyconfigurationenabled.md) is set to [`true`](../../Swift/true.md) then the system will execute the PAC script to determine what proxies to use (if any) for HTTP and HTTPS connections.
 

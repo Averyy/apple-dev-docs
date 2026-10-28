@@ -20,7 +20,7 @@ var isPrivate: Bool { get set }
 @property (atomic, readwrite, getter=isPrivate, setter=setPrivate:) BOOL privateTap;
 ```
 
-#### Discussion
+## Discussion
 
 True if this tap is only visible to the client process that created the tap.
 

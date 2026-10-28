@@ -25,7 +25,7 @@ func provideCredentialWithoutUserInteraction(for credentialIdentity: ASPasswordC
 - (void) provideCredentialWithoutUserInteractionForIdentity:(ASPasswordCredentialIdentity *) credentialIdentity;
 ```
 
-#### Discussion
+## Discussion
 
 When the user selects a credential identity from the QuickType bar, the system calls the [`provideCredentialWithoutUserInteraction(for:)`](./providecredentialwithoutuserinteraction%28for%29-7jlg0.md) method to ask your extension to provide the corresponding credential.
 

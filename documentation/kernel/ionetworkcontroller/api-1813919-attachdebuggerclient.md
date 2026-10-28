@@ -12,11 +12,11 @@ virtual bool attachDebuggerClient(
  IOKernelDebugger **debuggerP);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success, false otherwise.
 
-#### Overview
+## Overview
 
 This method allocates an IOKernelDebugger object and attaches it as a client. Having a debugger client implies that the controller supports kernel debugging, and therefore must implement the two polled-mode methods that are called by the debugger client. See sendPacket() and receivePacket(). Only a single debugger client should be attached to each controller.
 

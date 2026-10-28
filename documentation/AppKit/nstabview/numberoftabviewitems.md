@@ -19,7 +19,7 @@ var numberOfTabViewItems: Int { get }
 @property (readonly) NSInteger numberOfTabViewItems;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is 0.
 

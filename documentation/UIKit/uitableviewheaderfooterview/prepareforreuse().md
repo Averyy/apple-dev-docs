@@ -23,7 +23,7 @@ func prepareForReuse()
 - (void) prepareForReuse;
 ```
 
-#### Discussion
+## Discussion
 
 If your header or footer view is reusable — that is, it has a reuse identifier — the table view calls this method just before returning the view from its [`dequeueReusableHeaderFooterView(withIdentifier:)`](../uitableview/dequeuereusableheaderfooterview%28withidentifier%29.md) method. Subclasses can override this method and use it to reset attributes of the view to their default values. For performance reasons, you should only reset attributes that aren’t related to content.
 

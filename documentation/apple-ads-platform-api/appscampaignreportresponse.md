@@ -15,11 +15,11 @@ The top-level response envelope for apps campaign-level reports.
 object AppsCampaignReportResponse
 ```
 
-#### Discussion
+## Discussion
 
 Each row nests campaign `metadata` alongside `totalMetrics` for the full date range and, when requested, `granularMetrics` broken down by day.
 
-##### Example
+### Example
 
 ```json
 {

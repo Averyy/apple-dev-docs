@@ -25,7 +25,7 @@ extern void vDSP_fft2d_zrip(FFTSetup __Setup, const DSPSplitComplex *__C, vDSP_S
 
 - [Understanding data packing for Fourier transforms](./understanding-data-packing-for-fourier-transforms.md)
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**:  To learn how the vDSP library scales and arranges the FFT output, see [Understanding data packing for Fourier transforms](./understanding-data-packing-for-fourier-transforms.md).
 

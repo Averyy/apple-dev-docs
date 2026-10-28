@@ -19,11 +19,11 @@
 static SPRay3DFloat SPRay3DFloatUnapplyProjectiveTransform(SPRay3DFloat ray, SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed ray.
 
-#### Discussion
+## Discussion
 
 Returns a ray that’s transformed by the inverse of the specified projective transform.
 

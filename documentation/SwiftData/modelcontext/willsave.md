@@ -22,7 +22,7 @@ A notification that posts when the context is about to process pending inserts, 
 static let willSave: Notification.Name
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Notifications with this name don’t contain a `userInfo` dictionary.
 

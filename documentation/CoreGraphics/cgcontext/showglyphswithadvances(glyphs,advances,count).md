@@ -26,7 +26,7 @@ func showGlyphsWithAdvances(glyphs: UnsafePointer<CGGlyph>?, advances: UnsafePoi
 extern void CGContextShowGlyphsWithAdvances(CGContextRef c, const CGGlyph *glyphs, const CGSize *advances, size_t count);
 ```
 
-#### Discussion
+## Discussion
 
 This function draws an array of glyphs at the current point specified by the text matrix.
 

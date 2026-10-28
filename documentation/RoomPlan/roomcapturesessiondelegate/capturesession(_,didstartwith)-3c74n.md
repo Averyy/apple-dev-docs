@@ -17,7 +17,7 @@ Provides a default, blank implementation for when the session starts.
 func captureSession(_ session: RoomCaptureSession, didStartWith configuration: RoomCaptureSession.Configuration)
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this implementation if your app doesn’t implement [`captureSession(_:didStartWith:)`](./capturesession%28_,didstartwith%29.md).
 

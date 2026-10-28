@@ -24,7 +24,7 @@ var divisions: Float { get set }
 @property (nonatomic, assign) float divisions;
 ```
 
-#### Discussion
+## Discussion
 
 For example, a value of 2 creates a checkerboard pattern of four squares (a 2 x 2 grid), where the top-left and bottom-right squares use the [`color1`](./color1.md) color and the other two squares use the [`color2`](./color2.md) color. A value of 4 creates a pattern of 16 squares (a 4 x 4 grid), and so on.
 

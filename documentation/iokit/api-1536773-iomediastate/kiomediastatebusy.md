@@ -14,7 +14,7 @@
 kIOMediaStateBusy = 2
 ```
 
-#### Discussion
+## Discussion
 
 Media is available, but not ready for operations.
 

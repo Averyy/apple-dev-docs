@@ -15,7 +15,7 @@ The carousel list style.
 struct CarouselListStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`carousel`](./liststyle/carousel.md) to construct this style.
 

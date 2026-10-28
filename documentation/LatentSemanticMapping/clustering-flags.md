@@ -5,7 +5,7 @@
 
 Options for creating clusters.
 
-#### Overview
+## Overview
 
 Specify these options for [`LSMMapCreateClusters(_:_:_:_:_:)`](./lsmmapcreateclusters%28_,_,_,_,_%29.md).
 

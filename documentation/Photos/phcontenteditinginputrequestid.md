@@ -24,7 +24,7 @@ typealias PHContentEditingInputRequestID = Int
 typedef NSUInteger PHContentEditingInputRequestID;
 ```
 
-#### Discussion
+## Discussion
 
 To begin editing the content of an asset, call the [`requestContentEditingInput(with:completionHandler:)`](./phasset/requestcontenteditinginput%28with,completionhandler%29.md) method to retrieve a [`PHContentEditingInput`](./phcontenteditinginput.md) object that provides data for editing. This method asynchronously prepares an editing input and calls your completion handler block when the editing input is ready. To abandon editing before Photos calls the completion handler, call the [`cancelContentEditingInputRequest(_:)`](./phasset/cancelcontenteditinginputrequest%28_%29.md) method, passing the [`PHContentEditingInputRequestID`](./phcontenteditinginputrequestid.md) you received when requesting an edit.
 

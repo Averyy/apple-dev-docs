@@ -15,7 +15,7 @@ The accessibility element’s value.
 @property (strong, nullable) id accessibilityValue;
 ```
 
-#### Discussion
+## Discussion
 
 The accessibility protocols for roles that support values typically redefine this property to take a more specific value type. For example, the [`staticText`](../nsaccessibility-swift.struct/role/statictext.md) protocol uses [`NSString`](../../Foundation/nsstring.md) values, and the [`progressIndicator`](../nsaccessibility-swift.struct/role/progressindicator.md) protocol uses [`NSNumber`](../../Foundation/nsnumber.md) values.
 

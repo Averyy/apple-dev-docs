@@ -25,11 +25,11 @@ func description(withLocale locale: Any?, indent level: Int) -> String
 - (NSString *) descriptionWithLocale:(id) locale indent:(NSUInteger) level;
 ```
 
-#### Return Value
+## Return Value
 
 A string that represents the contents of the ordered set, formatted as a property list.
 
-#### Discussion
+## Discussion
 
 The returned `NSString` object contains the string representations of each of the ordered set’s elements, in order, from first to last. To obtain the string representation of a given element, `descriptionWithLocale:indent:` proceeds as follows:
 

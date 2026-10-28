@@ -19,7 +19,7 @@ var offStateImage: NSImage? { get set }
 @property (strong, nullable) NSImage * offStateImage;
 ```
 
-#### Discussion
+## Discussion
 
 By default there is no off-state image.
 

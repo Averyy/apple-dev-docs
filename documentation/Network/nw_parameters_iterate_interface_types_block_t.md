@@ -25,7 +25,7 @@ typealias nw_parameters_iterate_interface_types_block_t = (nw_interface_type_t) 
 typedef _Bool (^)(nw_interface_type_t) nw_parameters_iterate_interface_types_block_t;
 ```
 
-#### Return Value
+## Return Value
 
 Return true to continue iterating, or false to stop iterating.
 

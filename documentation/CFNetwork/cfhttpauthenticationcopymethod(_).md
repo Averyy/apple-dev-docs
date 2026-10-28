@@ -24,7 +24,7 @@ func CFHTTPAuthenticationCopyMethod(_ auth: CFHTTPAuthentication) -> Unmanaged<C
 extern CFStringRefCFHTTPAuthenticationCopyMethod(CFHTTPAuthenticationRef auth);
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the authentication method that will be used `auth` is applied to a request. If more than one authentication method is available, the strongest authentication method is returned. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

@@ -21,7 +21,7 @@ Default behavior for futex functions that block a thread.
 OS_SYNC_WAIT_ON_ADDRESS_NONE
 ```
 
-#### Discussion
+## Discussion
 
 Use this flag when you pass an address only accessed in the calling process’s memory space. This flag enables kernel optimizations that can’t be used on shared memory.
 

@@ -25,7 +25,7 @@ static func invalidateSuggestedWorkouts()
 
 - [Responding to the Action button on Apple Watch Ultra](../actionbuttonarticle.md)
 
-#### Discussion
+## Discussion
 
 Call this method when you change the value of the [`suggestedWorkouts`](./suggestedworkouts.md) property.
 

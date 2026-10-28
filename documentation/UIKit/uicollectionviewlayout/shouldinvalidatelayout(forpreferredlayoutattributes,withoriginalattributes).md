@@ -23,11 +23,11 @@ func shouldInvalidateLayout(forPreferredLayoutAttributes preferredAttributes: UI
 - (BOOL) shouldInvalidateLayoutForPreferredLayoutAttributes:(UICollectionViewLayoutAttributes *) preferredAttributes withOriginalAttributes:(UICollectionViewLayoutAttributes *) originalAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the layout should be invalidated or [`false`](../../Swift/false.md) if it should not.
 
-#### Discussion
+## Discussion
 
 When a collection view includes self-sizing cells, the cells are given the opportunity to modify their own layout attributes before those attributes are applied. A self-sizing cell might do this to specify a different cell size than the one the layout object provides. When the cell provides a different set of attributes, the collection view calls this method to determine if the cell’s change requires a larger layout refresh.
 

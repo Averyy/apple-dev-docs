@@ -15,7 +15,7 @@ Types of items in a rendering that you want to debug.
 struct DebugDrawOptions
 ```
 
-#### Overview
+## Overview
 
 Use the [`debugDraw(options:)`](./tabletopgame/debugdraw%28options%29.md) method to draw a debug representation of the rendered items.
 

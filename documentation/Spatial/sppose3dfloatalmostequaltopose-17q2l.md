@@ -19,11 +19,11 @@
 static bool SPPose3DFloatAlmostEqualToPose(SPPose3DFloat p1, SPPose3DFloat p2, float tolerance);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the two pose’s matrices are equal within the specified default absolute tolerance.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the two poses’s matrices are equal within the specified absolute tolerance.
 

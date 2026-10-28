@@ -24,11 +24,11 @@ Asynchronously fetches a config value for the given config key with default fall
 func fetchString<Value>(forKey key: ConfigKey, as type: Value.Type = Value.self, isSecret: Bool = false, default defaultValue: Value, fileID: String = #fileID, line: UInt = #line) async throws -> Value where Value : RawRepresentable, Value.RawValue == String
 ```
 
-#### Return Value
+## Return Value
 
 The config value if found and convertible, otherwise the default value.
 
-#### Discussion
+## Discussion
 
 Use this method when you need a guaranteed non-nil result from an async provider for string-convertible types. If the configuration value is missing, the method returns the default value instead.
 

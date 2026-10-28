@@ -19,11 +19,11 @@ func beginLoadingImageData(for client: (any ABImageClient)!) -> Int
 - (NSInteger) beginLoadingImageDataForClient:(id<ABImageClient>) client;
 ```
 
-#### Return Value
+## Return Value
 
 A nonzero tag for tracking. This tag is used by the [`cancelLoadingImageData(forTag:)`](./cancelloadingimagedata%28fortag%29.md) method to cancel a fetch operation.
 
-#### Discussion
+## Discussion
 
 The `client` object should conform to the `ABImageClient` protocol. A [`consumeImageData(_:forTag:)`](../abimageclient/consumeimagedata%28_,fortag%29.md) message is sent to `client` when the fetch is done. Use the [`cancelLoadingImageData(forTag:)`](./cancelloadingimagedata%28fortag%29.md) method if you need to cancel an asynchronous fetch.
 

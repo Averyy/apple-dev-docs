@@ -19,11 +19,11 @@
 static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatRotateByQuaternion(SPProjectiveTransform3DFloat transform, simd_quatf quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 A transform that’s rotated by the specified quaternion.
 
-#### Discussion
+## Discussion
 
 Returns a projective transform that’s constructed by concatenating an existing projective transform and a rotation specified by a quaternion.
 

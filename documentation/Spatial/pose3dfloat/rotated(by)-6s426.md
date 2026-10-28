@@ -21,7 +21,7 @@ Returns a pose with a rotation that’s rotated by the specified quaternion.
 func rotated(by quaternion: simd_quatf) -> Pose3DFloat
 ```
 
-#### Discussion
+## Discussion
 
 - Returns A pose with a rotation that’s rotated by the specified quaternion.
 

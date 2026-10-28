@@ -22,7 +22,7 @@ The type used for individual values of this property.
 associatedtype Value : Equatable, Sendable
 ```
 
-#### Discussion
+## Discussion
 
 This associated type represents the type of property values that can be set on progress managers. Must be `Sendable` and `Equatable`. The currently allowed types are `Int`, `Double`, `String?`, `URL?` or `UInt64`.
 

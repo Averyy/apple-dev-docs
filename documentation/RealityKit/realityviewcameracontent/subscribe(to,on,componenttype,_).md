@@ -19,7 +19,7 @@ Subscribes to an event type, optionally limited to events affecting a source ent
 func subscribe<E>(to event: E.Type, on sourceObject: (any EventSource)?, componentType: (any Component.Type)?, _ handler: @escaping (E) -> Void) -> EventSubscription where E : Event
 ```
 
-#### Return Value
+## Return Value
 
 An object that represents the subscription to this event stream.
 

@@ -24,7 +24,7 @@ class VNClassifyImageRequest
 @interface VNClassifyImageRequest : VNImageBasedRequest
 ```
 
-#### Overview
+## Overview
 
 This type of request produces a collection of [`VNClassificationObservation`](./vnclassificationobservation.md) objects that describe an image. Access the classifications through [`knownClassifications(forRevision:)`](./vnclassifyimagerequest/knownclassifications%28forrevision%29.md).
 

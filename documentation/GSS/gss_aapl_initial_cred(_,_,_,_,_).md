@@ -23,11 +23,11 @@ func gss_aapl_initial_cred(_ desired_name: gss_name_t, _ desired_mech: gss_const
 OM_uint32 gss_aapl_initial_cred(gss_name_t const desired_name, gss_const_OID desired_mech, CFDictionaryRef attributes, gss_cred_id_t*output_cred_handle, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) if the call succeeds, or some other value indicating the reason for failure if not.
 
-#### Discussion
+## Discussion
 
 Don’t call this function on a UI update thread because it may block on network activity.
 

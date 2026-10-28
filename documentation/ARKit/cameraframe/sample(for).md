@@ -15,7 +15,7 @@ Returns the camera frame sample for a given camera position.
 func sample(for position: CameraFrameProvider.CameraPosition) -> CameraFrame.Sample?
 ```
 
-#### Return Value
+## Return Value
 
 The camera frame sample, or `nil` if no sample is available for the given camera position.
 

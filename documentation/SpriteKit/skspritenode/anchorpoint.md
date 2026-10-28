@@ -30,7 +30,7 @@ var anchorPoint: CGPoint { get set }
 - [Animating a Sprite by Changing its Texture](../animating-a-sprite-by-changing-its-texture.md)
 - [Using the Anchor Point to Move a Sprite](../using-the-anchor-point-to-move-a-sprite.md)
 
-#### Discussion
+## Discussion
 
 You specify the value for this property in the unit coordinate space. The default value is `(0.5,0.5)`, which means that the sprite is centered on its position.
 

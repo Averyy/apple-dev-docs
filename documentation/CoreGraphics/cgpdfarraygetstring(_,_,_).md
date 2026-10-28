@@ -25,7 +25,7 @@ func CGPDFArrayGetString(_ array: CGPDFArrayRef, _ index: Int, _ value: UnsafeMu
 extern bool CGPDFArrayGetString(CGPDFArrayRef array, size_t index, CGPDFStringRef*value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if there is a PDF stream at the specified index, otherwise [`false`](../Swift/false.md).
 

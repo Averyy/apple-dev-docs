@@ -15,7 +15,7 @@ The launch storyboard to use to generate a launch image when your app opens from
 - **Name**: `UILaunchStoryboards`
 - **Type**: dictionary
 
-#### Discussion
+## Discussion
 
 Use [`UILaunchStoryboards`](./uilaunchstoryboards.md) when you want your app to show a different launch screen for different schemes. The schemes are the ones specified in your app’s [`CFBundleURLTypes`](./cfbundleurltypes.md). You can also specify a default launch storyboard.
 

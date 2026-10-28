@@ -21,7 +21,7 @@ The type of identifiers that follow ICU (International Components for Unicode) c
 case icu
 ```
 
-#### Discussion
+## Discussion
 
 An example of this type is `th_TH@calendar=gregorian;numbers=thai`.
 

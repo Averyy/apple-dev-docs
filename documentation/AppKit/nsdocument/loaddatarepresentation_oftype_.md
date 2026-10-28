@@ -17,7 +17,7 @@ Loads the document data.
 - (BOOL) loadDataRepresentation:(NSData *) data ofType:(NSString *) type;
 ```
 
-#### Discussion
+## Discussion
 
 Overridden by subclasses to load document data (`docData`) of type `docType` into the receiver, display it in windows, and return whether the operation was successful. This method is typically invoked by [`loadFileWrapperRepresentation:ofType:`](./loadfilewrapperrepresentation_oftype_.md) after an `NSData` object is created from the contents of the file wrapper (which can include directories). The default implementation `raises` an `NSInternalInconsistencyException`. Subclasses must override this method unless they override [`readFromFile:ofType:`](./readfromfile_oftype_.md) or [`loadFileWrapperRepresentation:ofType:`](./loadfilewrapperrepresentation_oftype_.md) to do specialized reading and loading of document data.
 

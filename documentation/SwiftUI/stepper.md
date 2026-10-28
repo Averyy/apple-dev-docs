@@ -21,7 +21,7 @@ nonisolated
 struct Stepper<Label> where Label : View
 ```
 
-#### Overview
+## Overview
 
 Use a stepper control when you want the user to have granular control while incrementing or decrementing a value. For example, you can use a stepper to:
 

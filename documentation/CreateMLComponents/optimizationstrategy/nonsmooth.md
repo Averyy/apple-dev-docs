@@ -21,7 +21,7 @@ An optimization strategy that can handle non-smooth problems.
 case nonSmooth
 ```
 
-#### Discussion
+## Discussion
 
 Select this strategy when using L1 regularization. Using L1 regularization causes the optimization problem to be non-smooth. Other optimization strategies rely on the optimization problem being smooth and will likely fail to converge when using L1 regularization.
 

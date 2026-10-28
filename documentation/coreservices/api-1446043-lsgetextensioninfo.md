@@ -19,15 +19,15 @@ func LSGetExtensionInfo(_ inNameLen: Int, _ inNameBuffer: UnsafePointer<UniChar>
 OSStatus LSGetExtensionInfo(UniCharCount inNameLen, const UniChar inNameBuffer[], UniCharCount *outExtStartIndex);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 The starting index is the number of Unicode characters from the start of the filename buffer to the first character of the extension (not including the period).
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since Mac OS version 10.2.
 

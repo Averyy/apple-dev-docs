@@ -19,7 +19,7 @@ var itemSize: NSSize { get set }
 @property NSSize itemSize;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the default size of items. If you do not provide an estimated size or implement the [`collectionView(_:layout:sizeForItemAt:)`](../nscollectionviewdelegateflowlayout/collectionview%28_,layout,sizeforitemat%29.md) method in your delegate, the flow layout uses this value for the size of each item. All items are set to the same size. This value applies only to items and not to supplementary views.
 

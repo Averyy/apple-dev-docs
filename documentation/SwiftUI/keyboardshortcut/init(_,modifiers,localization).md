@@ -19,7 +19,7 @@ Creates a new keyboard shortcut with the given key equivalent and set of modifie
 init(_ key: KeyEquivalent, modifiers: EventModifiers = .command, localization: KeyboardShortcut.Localization)
 ```
 
-#### Discussion
+## Discussion
 
 Use the `localization` parameter to specify a localization strategy for this shortcut.
 

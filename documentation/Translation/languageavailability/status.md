@@ -18,7 +18,7 @@ The availability status for a language or language pairing.
 enum Status
 ```
 
-#### Overview
+## Overview
 
 A language must download and install before you can use it in a translation.
 

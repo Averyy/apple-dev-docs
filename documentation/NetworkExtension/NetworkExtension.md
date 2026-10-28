@@ -15,7 +15,7 @@ Customize and extend core networking features.
 - visionOS 1.0+
 - watchOS 7.0+
 
-#### Overview
+## Overview
 
 With the NetworkExtension framework, you can customize and extend the system’s core networking features. Specifically, you can:
 
@@ -28,7 +28,7 @@ With the NetworkExtension framework, you can customize and extend the system’s
 
 The NetworkExtension framework is available in macOS, iOS, tvOS, and visionOS, but not all features are available on all platforms and some features have specific restrictions (for example, some features only work on supervised iOS devices). The documentation for each feature describes these restrictions.
 
-##### Options for implementing VPN
+### Options for implementing VPN
 
 The NetworkExtension framework has extensive support for virtual private networks (VPN).  A VPN is a form of network tunnel, where a VPN client uses the public Internet to create a connection to a VPN server and then passes private network traffic over that connection.
 
@@ -40,7 +40,7 @@ The supported operating systems include a number of different VPN APIs, distingu
 - Create a [Packet tunnel provider](./packet-tunnel-provider.md) to implement a VPN client for a packet-oriented, custom VPN protocol.
 - Create an [App proxy provider](./app-proxy-provider.md) to implement a VPN client for a flow-oriented, custom VPN protocol.
 
-##### About Always-on VPN
+### About Always-on VPN
 
 iOS supports Always-on VPN to ensure all IP traffic is tunneled back to the organization. See the [iOS Deployment Reference](https://support.apple.com/guide/deployment-reference-ios/always-on-vpn-iore8b083096/1/web/1) for information about how to configure Always-on VPN.
 

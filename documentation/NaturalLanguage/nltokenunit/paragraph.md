@@ -25,7 +25,7 @@ case paragraph
 NLTokenUnitParagraph
 ```
 
-#### Discussion
+## Discussion
 
 Use this linguistic unit to tokenize text into paragraphs, like in the following example:
 

@@ -5,7 +5,7 @@
 
 Keys indicating options to use when generating the item provider’s data.
 
-#### Overview
+## Overview
 
 Keys are used in the dictionary passed to the `options` parameter of a [`NSItemProvider.LoadHandler`](./nsitemprovider/loadhandler.md) block.
 

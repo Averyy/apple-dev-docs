@@ -23,11 +23,11 @@ func sec_protocol_metadata_copy_negotiated_protocol(_ metadata: sec_protocol_met
 const char *sec_protocol_metadata_copy_negotiated_protocol(sec_protocol_metadata_t metadata);
 ```
 
-#### Return Value
+## Return Value
 
 A NULL-terminated string carrying the negotiated protocol.
 
-#### Discussion
+## Discussion
 
 Copy the application protocol negotiated, e.g., via the TLS ALPN extension. The caller is expected to `free` the output string when no longer needed.
 

@@ -24,7 +24,7 @@ var enabled: GLboolean { get set }
 @property (nonatomic, assign) GLboolean enabled;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of [`enabled`](./enabled.md) is `GL_TRUE`, then lighting calculations are performed for this light. If the value is `GL_FALSE`, this light is skipped when computing the fragment color.
 

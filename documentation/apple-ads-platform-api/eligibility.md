@@ -15,13 +15,13 @@ Eligibility status and constraint details for a Business domain entity.
 object Eligibility
 ```
 
-#### Discussion
+## Discussion
 
 The `Eligibility` object captures the serving eligibility state for a Business domain entity, such as a brand or location, across supply sources and geographic markets.
 
 Geo and brand eligibility lookup responses typically include this object, so you can use it to understand which supply placements and markets are accessible before configuring ad group targeting.
 
-##### Example
+### Example
 
 ```json
 {

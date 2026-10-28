@@ -21,7 +21,7 @@ static func updateProductVisibility(_ visibility: Product.PromotionInfo.Visibili
 
 - [Supporting promoted Apple In-App Purchases in your app](../../supporting-promoted-in-app-purchases-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Call this method to change the visibility setting for a promoted Apple In-App Purchase. Changes take effect after you call this method.
 

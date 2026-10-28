@@ -19,7 +19,7 @@ func setGuestProvisioning(_ guestProvisioningOptions: VZMacGuestProvisioningOpti
 - (BOOL) setGuestProvisioningOptions:(VZMacGuestProvisioningOptions *) guestProvisioningOptions error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method validates the provisioning options before setting them. If validation fails, the current options remain unchanged.
 

@@ -24,11 +24,11 @@ func findPath(from startNode: GKGraphNode) -> [GKGraphNode]
 - (NSArray<__kindof GKGraphNode *> *) findPathFromNode:(GKGraphNode *) startNode;
 ```
 
-#### Return Value
+## Return Value
 
 An array of nodes representing a path through the graph in start to end order, or an empty array if no path exists between the specified nodes.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to the [`findPath(to:)`](./findpath%28to%29.md) method, but finds a path from the specified node to this node, rather than the other way around. Connections in a graph are directional—that is, a connection from Node A to Node B indicates only that travel is possible from A to B, and indicating that travel from B to A is also possible requires a separate connection. Therefore, calling the [`findPath(to:)`](./findpath%28to%29.md) and [`findPath(from:)`](./findpath%28from%29.md) methods with the same pair of nodes might not always return the same paths.
 

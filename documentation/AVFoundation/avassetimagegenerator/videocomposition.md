@@ -25,7 +25,7 @@ var videoComposition: AVVideoComposition? { get set }
 @property (nonatomic, copy, nullable) AVVideoComposition * videoComposition;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a video composition, the generator only uses the first enabled video track.
 

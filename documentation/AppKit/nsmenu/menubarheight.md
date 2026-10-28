@@ -19,7 +19,7 @@ var menuBarHeight: CGFloat { get }
 @property (readonly) CGFloat menuBarHeight;
 ```
 
-#### Discussion
+## Discussion
 
 For the main menu, the value of this property is a value of type `CGFloat`, indicating the height of the menu bar in pixels. For any other menu, the value of this property is `0`.
 

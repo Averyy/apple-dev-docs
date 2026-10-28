@@ -15,7 +15,7 @@ Returns the video formats the provided camera type and camera position supports.
 static func supportedVideoFormats(for cameraType: CameraFrameProvider.CameraType, cameraPositions: [CameraFrameProvider.CameraPosition]) -> [CameraVideoFormat]
 ```
 
-#### Return Value
+## Return Value
 
 An array of camera video formats.
 

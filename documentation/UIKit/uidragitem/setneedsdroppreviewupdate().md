@@ -22,7 +22,7 @@ func setNeedsDropPreviewUpdate()
 - (void) setNeedsDropPreviewUpdate;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to provide an updated drop preview after UIKit has started the drop animation. If the drop animation is still ongoing, UIKit calls the drop interaction delegate’s [`dropInteraction(_:previewForDropping:withDefault:)`](../uidropinteractiondelegate/dropinteraction%28_,previewfordropping,withdefault%29.md) method, passing the previous drop preview as the `defaultPreview`.
 

@@ -29,7 +29,7 @@ class UNNotificationContent
 
 - [Generating a remote notification](./generating-a-remote-notification.md)
 
-#### Overview
+## Overview
 
 A [`UNNotificationContent`](./unnotificationcontent.md) object contains the data associated with a notification. When your app receives a notification, the associated [`UNNotificationRequest`](./unnotificationrequest.md) object contains an object of this type with the content that your app received. Use the content object to get the details of the notification, including the type of notification that the system delivered, any custom data you stored in the [`userInfo`](./unnotificationcontent/userinfo.md) dictionary before scheduling the notification, and any attachments.
 

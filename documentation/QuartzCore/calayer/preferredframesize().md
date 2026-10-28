@@ -24,11 +24,11 @@ func preferredFrameSize() -> CGSize
 - (CGSize) preferredFrameSize;
 ```
 
-#### Return Value
+## Return Value
 
 The layer’s preferred frame size.
 
-#### Discussion
+## Discussion
 
 In macOS, the default implementation of this method calls the `preferredSize(of:)` method in Swift or the `preferredSizeOfLayer:` method in Objective-C of its layout manager—that is, the object in its [`layoutManager`](./layoutmanager.md) property. If that object does not exist or does not implement that method, this method returns the size of the layer’s current [`bounds`](./bounds.md) rectangle mapped into the coordinate space of its [`superlayer`](./superlayer.md).
 

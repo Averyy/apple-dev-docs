@@ -19,7 +19,7 @@ var validationToken: String { get }
 @property (nonatomic, copy, readonly) NSString * validationToken;
 ```
 
-#### Discussion
+## Discussion
 
 The validation token to be sent.
 

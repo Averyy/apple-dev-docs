@@ -21,7 +21,7 @@ A Boolean value that indicates whether the album is an Apple Digital Master.
 var isAppleDigitalMaster: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Apple Digital Masters start from 24-bit files and are optimized to bring the best-sounding audio to Apple products.
 

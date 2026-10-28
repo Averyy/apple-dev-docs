@@ -25,7 +25,7 @@ func CGSizeCreateDictionaryRepresentation(_ size: CGSize) -> CFDictionary
 extern CFDictionaryRefCGSizeCreateDictionaryRepresentation(CGSize size);
 ```
 
-#### Return Value
+## Return Value
 
 The dictionary representation of the size.
 

@@ -21,7 +21,7 @@ Flag indicating that the binary has been identified as a platform binary (Apple 
 static let isPlatformSigned: ProcessCodeSigningFlags.ValueSet
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to `CS_PLATFORM_BINARY` in C APIs.
 

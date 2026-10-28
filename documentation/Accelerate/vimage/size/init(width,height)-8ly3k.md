@@ -21,7 +21,7 @@ Creates a size with dimensions specified as unsigned integer values.
 init(width: vImagePixelCount, height: vImagePixelCount)
 ```
 
-#### Discussion
+## Discussion
 
 The height and width must be greater than `0`
 

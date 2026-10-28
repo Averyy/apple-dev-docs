@@ -19,7 +19,7 @@ func beginUpdates()
 - (void) beginUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 For [`NSView`](../nsview.md)-based table views, multiple row changes—that is, insertions, deletions, and moves—are animated simultaneously by surrounding calls to those method calls with [`beginUpdates()`](./beginupdates%28%29.md) and [`endUpdates()`](./endupdates%28%29.md). These methods are nestable.
 

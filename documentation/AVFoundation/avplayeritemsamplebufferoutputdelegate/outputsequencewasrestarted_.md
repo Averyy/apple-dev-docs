@@ -21,7 +21,7 @@ Invoked when the output is commencing a new sequence.
 - (void) outputSequenceWasRestarted:(AVPlayerItemSampleBufferOutput *) output;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked after seeks and changes in playback direction. If you are maintaining any queued future samples previously copied, it may be appropriate to discard these upon receiving this message.
 

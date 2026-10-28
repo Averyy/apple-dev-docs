@@ -25,7 +25,7 @@ convenience init(block: @escaping @Sendable () -> Void)
 + (instancetype) blockOperationWithBlock:(void (^)()) block;
 ```
 
-#### Return Value
+## Return Value
 
 A new block operation object.
 

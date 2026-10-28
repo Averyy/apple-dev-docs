@@ -11,7 +11,7 @@ framework: "swift-argument-parser/ArgumentParser"
 
 Straightforward, type-safe argument parsing for Swift.
 
-#### Overview
+## Overview
 
 By using `ArgumentParser`, you can create a command-line interface tool by declaring simple Swift types. Begin by declaring a type that defines the information that you need to collect from the command line. Decorate each stored property with one of `ArgumentParser`‘s property wrappers, declare conformance to [`ParsableCommand`](./parsablecommand.md), and implement your command’s logic in its `run()` method. For `async` renditions of `run`, declare [`AsyncParsableCommand`](./asyncparsablecommand.md) conformance instead.
 
@@ -39,7 +39,7 @@ When a user executes your command, the `ArgumentParser` library parses the comma
 
 ![The output of the Repeat command, declared above.](https://swiftpackageindex.com/apple/swift-argument-parser/main/images/ArgumentParser/repeat.png)
 
-###### Additional Resources
+#### Additional Resources
 
 - [ArgumentParser on GitHub](https://github.com/apple/swift-argument-parser/)
 - [ArgumentParser on the Swift Forums](https://forums.swift.org/c/related-projects/argumentparser/60)
@@ -47,6 +47,8 @@ When a user executes your command, the `ArgumentParser` library parses the comma
 ## Topics
 
 ### Essentials
+- [Using ArgumentParser Tools](./usingargumentparsertools.md)
+  Learn how to provide input to command-line tools built with `ArgumentParser`.
 - [Getting Started with ArgumentParser](./gettingstarted.md)
   Learn to set up and customize a simple command-line tool.
 - [protocol ParsableCommand](./parsablecommand.md)

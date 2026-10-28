@@ -18,7 +18,7 @@ The number of active instances to draw.
 final var instanceCount: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `0` after creation. Set this to the number of transforms written before passing the buffer to a mesh instance.
 

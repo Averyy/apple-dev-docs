@@ -20,7 +20,7 @@ case high
 ARGeoTrackingAccuracyHigh
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates that visual localization is complete and geo-tracking accuracy is very good.
 

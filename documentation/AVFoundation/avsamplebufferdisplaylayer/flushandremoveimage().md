@@ -26,7 +26,7 @@ func flushAndRemoveImage()
 - (void) flushAndRemoveImage;
 ```
 
-#### Discussion
+## Discussion
 
 Apple discourages the use of this symbol in iOS 17, tvOS 17, and macOS 14 and later. Use [`flush(removingDisplayedImage:completionHandler:)`](../avsamplebuffervideorenderer/flush%28removingdisplayedimage,completionhandler%29.md) on the [`sampleBufferRenderer`](./samplebufferrenderer.md) instead.
 

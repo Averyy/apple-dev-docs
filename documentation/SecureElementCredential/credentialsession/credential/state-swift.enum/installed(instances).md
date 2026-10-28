@@ -16,7 +16,7 @@ The credential installation is complete for one or more instances.
 case installed(instances: [CredentialSession.Credential.InstanceInfo])
 ```
 
-#### Discussion
+## Discussion
 
 The associated value `instances` is an array of applet instances associated with the installed credential.
 

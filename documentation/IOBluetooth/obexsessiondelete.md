@@ -15,11 +15,11 @@ Destroy an OBEX session. If connections are open, they will (eventually) be term
 OBEXError OBEXSessionDelete(OBEXSessionRef inSessionRef);
 ```
 
-#### Return Value
+## Return Value
 
 An error code value. 0 if successful.
 
-#### Discussion
+## Discussion
 
 *** DEPRECATED IN BLUETOOTH 2.2 (OS X v10.6) *** You should transition your code to Objective-C equivalents. *** This API may be removed any time in the future.
 

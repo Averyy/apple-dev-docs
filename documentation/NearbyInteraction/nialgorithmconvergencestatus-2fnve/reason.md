@@ -18,7 +18,7 @@ The possible reasons for the Camera Assistance status.
 struct Reason
 ```
 
-#### Overview
+## Overview
 
 When the app enables Camera Assistance by setting [`isCameraAssistanceEnabled`](../ninearbypeerconfiguration/iscameraassistanceenabled.md) to `true`, the framework provides the app with one or more reasons when the convergence status is [`NIAlgorithmConvergenceStatus.notConverged(_:)`](./notconverged%28_%29.md). The reasons detail specific user actions the framework requires to improve the results of Camera Assistance.
 

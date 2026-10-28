@@ -22,7 +22,7 @@ var outputColorChannels: Int { get }
 @property (nonatomic, readonly) NSUInteger outputColorChannels;
 ```
 
-#### Discussion
+## Discussion
 
 The number of color channels produced by the conversion in the float4 texel
 

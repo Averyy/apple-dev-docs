@@ -30,7 +30,7 @@ var code: INGetRestaurantGuestIntentResponseCode { get }
 @property (atomic, readonly) INGetRestaurantGuestIntentResponseCode code;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set automatically at initialization time and can’t be changed later.
 

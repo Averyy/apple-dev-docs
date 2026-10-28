@@ -14,7 +14,7 @@
 gestaltIconUtilitiesAttr = 'icon'
 ```
 
-#### Discussion
+## Discussion
 
 The `Gestalt` selector passed to determine which features of Icon Services are present. The `Gestalt` function produces a 32-bit value whose bits you should test to determine which Icon Services features are available.
 

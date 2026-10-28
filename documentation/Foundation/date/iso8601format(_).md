@@ -21,11 +21,11 @@ Generates a locale-aware string representation of a date using the ISO 8601 date
 func ISO8601Format(_ style: Date.ISO8601FormatStyle = .init()) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string, formatted according to the specified style.
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to passing a [`Date.ISO8601FormatStyle`](./iso8601formatstyle.md) to a date’s [`formatted()`](./formatted%28%29.md) method.
 

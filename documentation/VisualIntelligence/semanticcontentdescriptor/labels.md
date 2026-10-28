@@ -23,7 +23,7 @@ let labels: [String]
 
 - [Integrating your app with visual intelligence](../integrating-your-app-with-visual-intelligence.md)
 
-#### Discussion
+## Discussion
 
 The Visual Intelligence framework defines the possible label values. Use them to search for content in your app and return matching content to visual search.
 

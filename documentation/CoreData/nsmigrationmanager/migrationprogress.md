@@ -25,7 +25,7 @@ var migrationProgress: Float { get }
 @property (readonly) float migrationProgress;
 ```
 
-#### Discussion
+## Discussion
 
 If a migration is not taking place, this property is `1`. You can observe this value using key-value observing.
 

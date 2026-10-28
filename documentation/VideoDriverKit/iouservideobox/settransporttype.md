@@ -15,7 +15,7 @@ Sets the transport type of the IOUserVideoBox.
 kern_return_t SetTransportType(IOUserVideoTransportType in_transport_type);
 ```
 
-#### Discussion
+## Discussion
 
 Drivers can change the transport type of the box dynamically. The object sends a notification to the host to update the object state on success.
 

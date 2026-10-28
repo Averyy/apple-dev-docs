@@ -21,7 +21,7 @@ A Boolean value that indicates whether this URL is a file system trigger directo
 var isMountTrigger: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Traversing or opening a file system trigger causes an attempt to mount a file system on the trigger directory.
 

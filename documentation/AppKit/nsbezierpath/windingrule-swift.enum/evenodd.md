@@ -19,7 +19,7 @@ case evenOdd
 NSWindingRuleEvenOdd
 ```
 
-#### Discussion
+## Discussion
 
 Count the total number of path crossings. If the number of crossings is even, the point is outside the path. If the number of crossings is odd, the point is inside the path and the region that contains it is filled.
 

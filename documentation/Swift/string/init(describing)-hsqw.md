@@ -21,7 +21,7 @@ Creates a string representing the given value.
 init<Subject>(describing instance: Subject) where Subject : CustomStringConvertible
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to convert an instance of any type to its preferred representation as a `String` instance. The initializer creates the string representation of `instance` in one of the following ways, depending on its protocol conformance:
 

@@ -24,7 +24,7 @@ var connectionID: Int { get }
 @property (nonatomic, readonly) NSUInteger connectionID;
 ```
 
-#### Discussion
+## Discussion
 
 The connection ID uniquely identifies this accessory to the device. If multiple accessories of the same type are connected to the device, you can use this information to distinguish between them.
 

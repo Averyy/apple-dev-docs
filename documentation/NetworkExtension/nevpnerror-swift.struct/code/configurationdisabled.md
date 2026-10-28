@@ -24,7 +24,7 @@ case configurationDisabled
 NEVPNErrorConfigurationDisabled
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur when trying to start the VPN connection.
 

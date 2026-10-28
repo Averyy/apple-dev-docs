@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx-data/build/html/python/_autosummary/mlx.da
 
 # mlx.data.Buffer.to_stream
 
-**Buffer.to_stream(*self: mlx.data._c.Buffer*) → mlx.data._c.Stream**
-: Make a stream that yields the elements of the buffer.
+```python
+Buffer.to_stream(self: mlx.data._c.Buffer) → mlx.data._c.Stream
+```
+
+Make a stream that yields the elements of the buffer.

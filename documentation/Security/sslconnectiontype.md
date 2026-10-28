@@ -20,7 +20,7 @@ enum SSLConnectionType
 enum SSLConnectionType : int;
 ```
 
-#### Overview
+## Overview
 
 Use one of these flags with the [`SSLCreateContext(_:_:_:)`](./sslcreatecontext%28_,_,_%29.md) function to indicate whether the context is intended for use in stream-based or datagram-based communication.
 

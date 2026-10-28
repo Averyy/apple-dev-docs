@@ -15,13 +15,13 @@ Creates an ad group as part of a campaign.
 
 - [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
-#### Discussion
+## Discussion
 
 To create ad groups, use the associated `campaignId` as a resource in the URI. In the request, specify [`TargetingDimensions`](./targetingdimensions.md) and apply it to ad groups.
 
 > **Note**:  You can’t create or update ad groups with geotargeting for campaigns with multiple `countriesOrRegions`.
 
-##### Payload example: Create an ad group with targeting
+### Payload example: Create an ad group with targeting
 
 **Request**:
 
@@ -127,7 +127,7 @@ POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups
 }
 ```
 
-##### Payload example: Create an ad group without targeting
+### Payload example: Create an ad group without targeting
 
 **Request**:
 
@@ -197,7 +197,7 @@ POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups
 }
 ```
 
-##### Payload example: Create an automated ad group in a campaign with a Maximize Conversions bid strategy
+### Payload example: Create an automated ad group in a campaign with a Maximize Conversions bid strategy
 
 A Maximize Conversions campaign will return an error of `AUTOMATED_KEYWORDS_REQUIRED_AD_GROUP_MISSING` and not run until an automated ad group is created.
 
@@ -272,7 +272,7 @@ POST https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups
 }
 ```
 
-##### Payload example: Create an ad group with a campaign with a Maximize Conversions bid strategy
+### Payload example: Create an ad group with a campaign with a Maximize Conversions bid strategy
 
 In maximize conversions campaigns:
 

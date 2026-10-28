@@ -24,7 +24,7 @@ var shouldRasterize: Bool { get set }
 @property (nonatomic, assign) BOOL shouldRasterize;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `false`.
 

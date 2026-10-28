@@ -15,7 +15,7 @@ A token you use in a query to request the next set of transactions for the custo
 string revision
 ```
 
-#### Discussion
+## Discussion
 
 The App Store server returns a `revision` value in each response to certain endpoints, such as [`Get Transaction History`](./get-transaction-history.md) and [`Get Refund History`](./get-refund-history.md). Use the `revision` value to get a set of paginated transactions.
 

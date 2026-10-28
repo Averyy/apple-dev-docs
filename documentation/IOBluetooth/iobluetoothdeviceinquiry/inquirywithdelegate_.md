@@ -15,11 +15,11 @@ Class method to create an inquiry object.
 + (instancetype) inquiryWithDelegate:(id) delegate;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the created IOBluetoothDeviceInquiry object.
 
-#### Discussion
+## Discussion
 
 The inquiry is NOT automatically started. You musts call -start on it to start the search for in-range devices.
 

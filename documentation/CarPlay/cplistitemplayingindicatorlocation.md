@@ -21,7 +21,7 @@ enum CPListItemPlayingIndicatorLocation
 enum CPListItemPlayingIndicatorLocation : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants to set the value of a list item’s [`playingIndicatorLocation`](./cplistitem/playingindicatorlocation.md) property. When you set a list item’s [`isPlaying`](./cplistitem/isplaying.md) property to `true`, it uses the specified location to position the Now Playing indicator.
 

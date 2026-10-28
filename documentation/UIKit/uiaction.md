@@ -24,7 +24,7 @@ class UIAction
 @interface UIAction : UIMenuElement
 ```
 
-#### Overview
+## Overview
 
 Create a [`UIAction`](./uiaction.md) object when you want a menu element that performs its action in a closure. The following example adds an action-based menu to the File menu:
 

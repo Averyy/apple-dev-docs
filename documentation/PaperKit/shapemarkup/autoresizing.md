@@ -19,7 +19,7 @@ Automatic sizing behaviors for this markup.
 var autoresizing: MarkupAutoresizing { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Controls whether the markup automatically adjusts its dimensions to fit content changes.
 

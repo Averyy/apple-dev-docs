@@ -23,7 +23,7 @@ var constantColorConfidenceMap: CVPixelBuffer? { get }
 @property (readonly, nullable) CVPixelBufferRef constantColorConfidenceMap;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `255` means full confidence and `0` means zero confidence.
 

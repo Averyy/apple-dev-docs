@@ -6,26 +6,29 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.gr
 
 # mlx.core.grad
 
-**grad(*fun: Callable[P, R]*, *argnums: int | Sequence[int] | None = None*, *argnames: str | Sequence[str] = []*) → Callable[P, Any]**
-: Returns a function which computes the gradient of `fun`.
+```python
+grad(fun: Callable[P, R], argnums: int | Sequence[int] | None = None, argnames: str | Sequence[str] = []) → Callable[P, Any]
+```
 
-Parameters:
+Returns a function which computes the gradient of `fun`.
 
-**fun** (*Callable*) – A function which takes a variable number of
+**Parameters:**
+
+- **fun** (*Callable*) – A function which takes a variable number of
 [array](mlx.core.array.md#mlx.core.array) or trees of [array](mlx.core.array.md#mlx.core.array) and returns
 a scalar output [array](mlx.core.array.md#mlx.core.array).
-**argnums** ([int](https://docs.python.org/3/builtins/functions.html#int)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[int](https://docs.python.org/3/builtins/functions.html#int)*)**, **optional*) – Specify the index (or indices)
+- **argnums** ([int](https://docs.python.org/3/builtins/functions.html#int) *or* [list](https://docs.python.org/3/builtins/stdtypes.html#list)([int](https://docs.python.org/3/builtins/functions.html#int)), *optional*) – Specify the index (or indices)
 of the positional arguments of `fun` to compute the gradient
 with respect to. If neither `argnums` nor `argnames` are
 provided `argnums` defaults to `0` indicating `fun`’s first
 argument.
-**argnames** ([str](https://docs.python.org/3/builtins/stdtypes.html#str)* or *[list](https://docs.python.org/3/builtins/stdtypes.html#list)*(*[str](https://docs.python.org/3/builtins/stdtypes.html#str)*)**, **optional*) – Specify keyword arguments of
+- **argnames** ([str](https://docs.python.org/3/builtins/stdtypes.html#str) *or* [list](https://docs.python.org/3/builtins/stdtypes.html#list)([str](https://docs.python.org/3/builtins/stdtypes.html#str)), *optional*) – Specify keyword arguments of
 `fun` to compute gradients with respect to. It defaults to [] so
 no gradients for keyword arguments by default.
 
-Returns:
-A function which has the same input arguments as `fun` and
+**Returns:**
+: A function which has the same input arguments as `fun` and
 returns the gradient(s).
 
-Return type:
-*Callable*
+**Return type:**
+: *Callable*

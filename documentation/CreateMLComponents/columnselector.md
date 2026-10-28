@@ -21,7 +21,7 @@ An operation that applies an estimator to a selection of columns.
 struct ColumnSelector<Estimator, UnwrappedInput> where Estimator : Estimator, Estimator.Transformer.Input == UnwrappedInput?
 ```
 
-#### Overview
+## Overview
 
 This estimator applies a non-tabular estimator to a selection of columns. Here’s an example of normalizing numeric values within each column using a [`StandardScaler`](./standardscaler.md):
 

@@ -22,7 +22,7 @@ func setBackButtonTitlePositionAdjustment(_ adjustment: UIOffset, for barMetrics
 - (void) setBackButtonTitlePositionAdjustment:(UIOffset) adjustment forBarMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 This modifier applies only to navigation bar back buttons and is ignored by other buttons.
 

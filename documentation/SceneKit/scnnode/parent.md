@@ -25,7 +25,7 @@ var parent: SCNNode? { get }
 @property (nonatomic, readonly, nullable) SCNNode * parentNode;
 ```
 
-#### Discussion
+## Discussion
 
 For a scene’s [`rootNode`](../scnscene/rootnode.md) object, the value of this property is `nil`.
 

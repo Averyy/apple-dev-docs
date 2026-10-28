@@ -16,11 +16,11 @@ Returns the specified view from the drawable.
 cp_view_tcp_drawable_get_view(cp_drawable_t drawable, size_t index);
 ```
 
-#### Return Value
+## Return Value
 
 The view at the specified index.
 
-#### Discussion
+## Discussion
 
 The drawable provides one view for each distinct image you need to render. For example, a stereoscopic display contains a separate view for each eye.
 

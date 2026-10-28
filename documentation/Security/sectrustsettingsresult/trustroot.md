@@ -20,7 +20,7 @@ case trustRoot
 kSecTrustSettingsResultTrustRoot
 ```
 
-#### Discussion
+## Discussion
 
 If the certificate is not a root (self-signed) certificate, the usage constraints dictionary is invalid.
 

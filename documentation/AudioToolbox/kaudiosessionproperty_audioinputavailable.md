@@ -23,7 +23,7 @@ var kAudioSessionProperty_AudioInputAvailable: Int { get }
 kAudioSessionProperty_AudioInputAvailable
 ```
 
-#### Discussion
+## Discussion
 
 A read-only `UInt32` value, interpreted as a Boolean value. Use this property, rather than the device model, to determine if audio input is available.
 

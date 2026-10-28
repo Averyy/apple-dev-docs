@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_MaximumRealTimeFrameRate: CFString
 extern CFStringRef const kVTCompressionPropertyKey_MaximumRealTimeFrameRate;
 ```
 
-#### Discussion
+## Discussion
 
 The frame rate is measured in frames per second. This property can be used to inform the encoder of the maximum rate that frames could be submitted to the encoder during realtime encoding.  This allows the encoder to configure itself to ensure this capability.
 

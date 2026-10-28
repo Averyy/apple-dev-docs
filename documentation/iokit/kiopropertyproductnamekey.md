@@ -14,7 +14,7 @@
 #define kIOPropertyProductNameKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to define the Product Name for a particular device and it has an associated string.
 

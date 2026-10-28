@@ -21,7 +21,7 @@ Creates an instance initialized to the given string value.
 init(stringLiteral value: String)
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this initializer directly. It is used by the compiler when you initialize a string using a string literal. For example:
 

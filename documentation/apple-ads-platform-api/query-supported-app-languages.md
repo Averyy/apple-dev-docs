@@ -9,7 +9,7 @@ Query countries and regions to discover the ad-supported languages available in 
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint returns a list of countries and regions along with the languages supported for Apple Ads in each market, including each market’s `adsSupportedLanguages` and `adsDefaultLanguages`.
 
@@ -23,7 +23,7 @@ An empty request body returns all supported countries and regions with default p
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -43,13 +43,13 @@ Each result row includes the following fields:
 | `adsSupportedLanguages[].language` | string | Language identifier, usually an ISO 639-1 code (for example, `en`, `es`, `fr`). Can be another standard, such as `yue` (ISO 639-3) |
 | `adsSupportedLanguages[].languageCode` | string | BCP-47 locale code with a region or script subtag (for example, `en-US`, `es-MX`, `zh-Hans`) |
 
-#### Payload Examples
+## Payload Examples
 
 **All Countries**:
 
 Return all supported countries and regions sorted alphabetically by name. Useful for populating a full country/language picker in a campaign setup UI.
 
-##### Request
+### Request
 
 ```http
 POST /v1/metadata/apps/supported-languages/query
@@ -62,7 +62,7 @@ POST /v1/metadata/apps/supported-languages/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -140,7 +140,7 @@ POST /v1/metadata/apps/supported-languages/query
 
 Fetch language details for a single country by its ISO code. To confirm available locales before setting creatives or ad group targeting for a specific market, use this.
 
-##### Request
+### Request
 
 ```http
 POST /v1/metadata/apps/supported-languages/query
@@ -156,7 +156,7 @@ POST /v1/metadata/apps/supported-languages/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -198,7 +198,7 @@ POST /v1/metadata/apps/supported-languages/query
 
 Fetch language details for several countries at once. Useful when validating locales for a multi-market campaign rollout.
 
-##### Request
+### Request
 
 ```http
 POST /v1/metadata/apps/supported-languages/query
@@ -217,7 +217,7 @@ POST /v1/metadata/apps/supported-languages/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

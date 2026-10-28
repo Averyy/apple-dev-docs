@@ -24,7 +24,7 @@ case alwaysShown
 HMCharacteristicValueCurrentVisibilityStateAlwaysShown
 ```
 
-#### Discussion
+## Discussion
 
 The media source can’t be hidden by writing to its Target Visibility State characteristic, even if one is included.
 

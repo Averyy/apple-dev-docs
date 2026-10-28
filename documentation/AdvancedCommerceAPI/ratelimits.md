@@ -5,7 +5,7 @@
 
 Recognize and handle the rate limits that apply to Advanced Commerce API endpoints.
 
-#### Overview
+## Overview
 
 The Advanced Commerce API limits the number of requests that you can submit to each endpoint within a specified timespan. The request limits apply per app. The following table lists the rate limits in the production environment, expressed in requests per second. Limits are enforced on an hourly basis.
 
@@ -20,7 +20,7 @@ The Advanced Commerce API limits the number of requests that you can submit to e
 
 The rate limits in the sandbox environment are 10 percent of the limits in the table above. The Advanced Commerce server may make adjustments to reduce or increase these rate limits as needed at any time.
 
-##### Handle exceeded rate limits gracefully
+### Handle exceeded rate limits gracefully
 
 If you exceed a per-hour limit, the API rejects the request with an `HTTP 429` response, with a [`RateLimitExceededError`](./ratelimitexceedederror.md) in the body. Consider the following as you integrate the API:
 

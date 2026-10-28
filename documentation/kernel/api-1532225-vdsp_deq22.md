@@ -15,7 +15,7 @@ Performs two-pole, two-zero recursive filtering on a single-precision vector.
 void vDSP_deq22(const float *__A, vDSP_Stride __IA, const float *__B, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function creates `N` new values in output vector `C`, beginning at the third element. The function performs two-pole, two-zero recursive filtering on input vector `A`, which must contain at least `N` + 2 values; `C` must also contain at least `N` + 2 values.  Since the computation is recursive, prior to calling this function, initialize the first two elements in `C`. 
 

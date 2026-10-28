@@ -23,7 +23,7 @@ The index of the axis on which the function applies scale and bias.
 var axis: Int?
 ```
 
-#### Discussion
+## Discussion
 
 Set to `nil` to dequantize the entire tensor using scale and bias.
 

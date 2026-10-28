@@ -21,7 +21,7 @@ Returns a custom format style that represents the three or more digits of the ye
 static func padded(_ length: Int) -> Date.FormatStyle.Symbol.YearForWeekOfYear
 ```
 
-#### Return Value
+## Return Value
 
 A custom year format style that portrays the year of a week of year calendar system with the provided length.
 

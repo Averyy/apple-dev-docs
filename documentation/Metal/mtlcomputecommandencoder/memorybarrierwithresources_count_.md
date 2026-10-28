@@ -20,7 +20,7 @@ Creates a memory barrier that enforces the order of write and read operations fo
 - (void) memoryBarrierWithResources:(id<MTLResource> const[]) resources count:(NSUInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 Memory barriers ensure the relevant passes finish updating resources before starting the stages of subsequent commands that depend on those resources.
 

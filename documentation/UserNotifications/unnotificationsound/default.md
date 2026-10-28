@@ -33,7 +33,7 @@ class var `default`: UNNotificationSound { get }
 @property (class, atomic, copy, readonly) UNNotificationSound * defaultSound;
 ```
 
-#### Return Value
+## Return Value
 
 A sound object that represents the default notification sound.
 

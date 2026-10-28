@@ -22,11 +22,11 @@ Merges two summary values into a single combined summary.
 static func merge(_ summary1: Self.Summary, _ summary2: Self.Summary) -> Self.Summary
 ```
 
-#### Return Value
+## Return Value
 
 A new summary that represents the combination of both input summaries.
 
-#### Discussion
+## Discussion
 
 This method is called to combine summary values from different branches of the progress manager hierarchy into a unified summary.
 

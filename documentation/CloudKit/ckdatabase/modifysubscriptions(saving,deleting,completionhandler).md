@@ -22,7 +22,7 @@ Modifies the specified subscriptions and delivers the results to a completion ha
 func modifySubscriptions(saving subscriptionsToSave: [CKSubscription], deleting subscriptionIDsToDelete: [CKSubscription.ID], completionHandler: @escaping @Sendable (Result<(saveResults: [CKSubscription.ID : Result<CKSubscription, any Error>], deleteResults: [CKSubscription.ID : Result<Void, any Error>]), any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes a single [`Result`](../../Swift/result.md) parameter that contains either a tuple, or an error if the request fails. For example, when the network is unavailable or the device doesn’t have an active iCloud account.
 

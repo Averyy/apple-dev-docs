@@ -22,7 +22,7 @@ var authorizedRoutes: [AVCustomDeviceRoute] { get }
 @property (nonatomic, readonly) NSArray<AVCustomDeviceRoute *> * authorizedRoutes;
 ```
 
-#### Discussion
+## Discussion
 
 After a user activates a route, it remains authorized for a certain amount of time even if the connection to the route is temporarily unavailable. Your app may reactivate any one of these routes when appropriate, but it needs to inform the system by calling [`setActive(_:for:)`](./setactive%28_,for%29.md).
 

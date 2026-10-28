@@ -23,7 +23,7 @@ func domainIdentifier() -> String
 - (NSString *) domainIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is the persistent store’s identifier.
 

@@ -17,7 +17,7 @@ Authoritative planned or realized state of a model’s KV / recurrent cache.
 struct KVCacheStatus
 ```
 
-#### Overview
+## Overview
 
 Obtain this through [`cacheStatus(parameters:)`](./languagemodel/cachestatus%28parameters%29.md), [`cacheStatus(parameters:)`](./modelcontainer/cachestatus%28parameters%29.md), or [`cacheStatus()`](./chatsession/cachestatus%28%29.md). The same value describes topology, capacity, strategy application, and model-wide progress for both legacy and typed configuration entry points.
 

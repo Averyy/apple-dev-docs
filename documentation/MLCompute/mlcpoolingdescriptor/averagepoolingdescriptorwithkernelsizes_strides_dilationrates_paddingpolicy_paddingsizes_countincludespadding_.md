@@ -19,7 +19,7 @@ Creates an average pooling descriptor with the kernel sizes, strides, dilution r
 + (instancetype) averagePoolingDescriptorWithKernelSizes:(NSArray<NSNumber *> *) kernelSizes strides:(NSArray<NSNumber *> *) strides dilationRates:(NSArray<NSNumber *> *) dilationRates paddingPolicy:(MLCPaddingPolicy) paddingPolicy paddingSizes:(NSArray<NSNumber *> *) paddingSizes countIncludesPadding:(BOOL) countIncludesPadding;
 ```
 
-#### Return Value
+## Return Value
 
 A pooling descriptor.
 

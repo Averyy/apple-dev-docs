@@ -5,7 +5,7 @@
 
 Add comments to provide useful information about tests.
 
-#### Overview
+## Overview
 
 It’s often useful to add comments to code to:
 
@@ -17,7 +17,7 @@ Test code is no different and can benefit from explanatory code comments, but of
 
 Seeing comments related to tests in these contexts can help diagnose issues more quickly. Comments can be added to test declarations and the testing library will automatically capture and show them when issues are recorded.
 
-#### Add a code comment to a test
+## Add a code comment to a test
 
 To include a comment on a test or suite, write an ordinary Swift code comment immediately before its `@Test` or `@Suite` attribute:
 
@@ -43,11 +43,11 @@ The following language comment styles are supported:
 | `/* ... */` | Block comment |
 | `/** ... */` | Documentation block comment |
 
-##### Comment formatting
+### Comment formatting
 
 Test comments which are automatically added from source code comments preserve their original formatting, including any prefixes like `//` or `/**`. This is because the whitespace and formatting of comments can be meaningful in some circumstances or aid in understanding the comment — for example, when a comment includes an example code snippet or diagram.
 
-#### Use test comments effectively
+## Use test comments effectively
 
 As in normal code, comments on tests are generally most useful when they:
 

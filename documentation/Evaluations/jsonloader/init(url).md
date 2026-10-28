@@ -21,7 +21,7 @@ Creates a loader backed by the JSON or JSONL file at the given URL.
 init(url: URL)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 var dataset: JSONLoader<ModelSample<String>> {

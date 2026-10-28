@@ -27,7 +27,7 @@ func operatingSystemName() -> String
 - (NSString *) operatingSystemName;
 ```
 
-#### Return Value
+## Return Value
 
 Operating system name. In macOS, it’s `@"NSMACHOperatingSystem"`
 

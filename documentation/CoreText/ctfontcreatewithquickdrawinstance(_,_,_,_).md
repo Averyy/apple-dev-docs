@@ -21,11 +21,11 @@ func CTFontCreateWithQuickdrawInstance(_ name: ConstStr255Param?, _ identifier: 
 extern CTFontRefCTFontCreateWithQuickdrawInstance(ConstStr255Param name, int16_t identifier, uint8_t style, CGFloat size);
 ```
 
-#### Return Value
+## Return Value
 
 The best font instance matching the QuickDraw instance information.
 
-#### Discussion
+## Discussion
 
 This function is provided for compatibility support between Core Text and clients needing to support QuickDraw-style font references. QuickDraw is a deprecated technology in macOS 10.4 and later.
 

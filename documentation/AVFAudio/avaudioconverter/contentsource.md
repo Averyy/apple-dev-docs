@@ -23,7 +23,7 @@ var contentSource: AVAudioContentSource { get set }
 @property (nonatomic) AVAudioContentSource contentSource;
 ```
 
-#### Discussion
+## Discussion
 
 Index to select a pre-defined content source type that describes the content type and how it was generated.  Note: This is only supported when compressing audio to formats which support it.
 

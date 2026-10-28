@@ -19,7 +19,7 @@ func SCBondInterfaceCopyAvailableMemberInterfaces(_ prefs: SCPreferences) -> CFA
 CFArrayRefSCBondInterfaceCopyAvailableMemberInterfaces(SCPreferencesRef prefs);
 ```
 
-#### Return Value
+## Return Value
 
 The list of interfaces. You must release the returned value.
 

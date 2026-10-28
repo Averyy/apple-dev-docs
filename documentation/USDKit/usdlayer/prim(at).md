@@ -20,7 +20,7 @@ Returns the prim spec authored at the given path, or `nil` if no prim spec exist
 func prim(at path: USDLayer.Path) -> USDPrim.Spec?
 ```
 
-#### Return Value
+## Return Value
 
 The prim spec at `path`, or `nil` if none exists.
 

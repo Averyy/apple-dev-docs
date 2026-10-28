@@ -20,11 +20,11 @@ Creates a subset of the table by removing all duplicate rows.
 func dropDuplicates() -> MLDataTable
 ```
 
-#### Return Value
+## Return Value
 
 A new data table.
 
-#### Discussion
+## Discussion
 
 > **Note**: The order of the rows may not be preserved.
 

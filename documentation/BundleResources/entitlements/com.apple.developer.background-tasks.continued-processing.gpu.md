@@ -19,7 +19,7 @@ The entitlement the system requires for a continuous background task to use the 
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 This entitlement works with [`BGContinuedProcessingTask`](../../BackgroundTasks/bgcontinuedprocessingtask.md), which allows your app’s critical work to complete even when the app goes into the background before the task finishes.
 

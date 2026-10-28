@@ -19,7 +19,7 @@ enum OrderingMode
 enum NSWindowOrderingMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 For more information, see [`order(_:relativeTo:)`](./order%28_,relativeto%29.md).
 

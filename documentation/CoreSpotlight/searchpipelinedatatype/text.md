@@ -19,7 +19,7 @@ An LLM-generated text summary or analysis.
 case text
 ```
 
-#### Discussion
+## Discussion
 
 The data for this type is a string.
 

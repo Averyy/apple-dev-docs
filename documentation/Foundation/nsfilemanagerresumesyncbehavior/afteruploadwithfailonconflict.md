@@ -23,7 +23,7 @@ case afterUploadWithFailOnConflict
 NSFileManagerResumeSyncBehaviorAfterUploadWithFailOnConflict
 ```
 
-#### Discussion
+## Discussion
 
 If the upload succeeds, the sync resumes with the [`NSFileManagerResumeSyncBehavior.preserveLocalChanges`](./preservelocalchanges.md) behavior.
 

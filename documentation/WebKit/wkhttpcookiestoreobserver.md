@@ -24,7 +24,7 @@ protocol WKHTTPCookieStoreObserver : NSObjectProtocol
 @protocol WKHTTPCookieStoreObserver <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt the methods of the [`WKHTTPCookieStoreObserver`](./wkhttpcookiestoreobserver.md) protocol to track changes to cookies associated with a webpage. To observe the actual cookie changes, call the [`add(_:)`](./wkhttpcookiestore/add%28_%29.md) method of the [`WKHTTPCookieStore`](./wkhttpcookiestore.md) you use to manage cookies. When a cookie changes, the cookie store notifies all observers of the changes.
 

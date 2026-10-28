@@ -20,11 +20,11 @@ Creates a new text style rule object using the style attributes in the specified
 + (AVTextStyleRule *) textStyleRuleWithTextMarkupAttributes:(NSDictionary<NSString *,id> *) textMarkupAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 A new text style rule object with the specified attributes.
 
-#### Discussion
+## Discussion
 
 This method sets the [`textSelector`](./textselector.md) property of the style object to `nil`, which causes the rules to be applied to all of the text in the media item.
 

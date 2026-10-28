@@ -14,7 +14,7 @@ struct ifnet_demux_desc {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure is to identify packets that belong to a specific protocol. The types supported are interface specific. Ethernet supports ETHER_DESC_ETYPE2, ETHER_DESC_SAP, and ETHER_DESC_SNAP. The type defines the offset in the packet where the data will be matched as well as context. For example, if ETHER_DESC_SNAP is specified, the only valid datalen is 5 and only in the 5 bytes will only be matched when the packet header indicates that the packet is a SNAP packet.
 

@@ -22,7 +22,7 @@ optional func printerPickerControllerWillDismiss(_ printerPickerController: UIPr
 - (void) printerPickerControllerWillDismiss:(UIPrinterPickerController *) printerPickerController;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to perform any tasks associated with displaying the printer picker controller.
 

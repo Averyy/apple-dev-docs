@@ -19,11 +19,11 @@ class func pause() -> NEFilterDataVerdict
 + (NEFilterDataVerdict *) pauseVerdict;
 ```
 
-#### Return Value
+## Return Value
 
 A `NEFilterDataVerdict` object.
 
-#### Discussion
+## Discussion
 
 After pausing the flow, the system doesn’t call any of the data provider’s handler callbacks until you resume the flow by calling [`resumeFlow(_:with:)`](../nefilterdataprovider/resumeflow%28_,with%29.md).
 

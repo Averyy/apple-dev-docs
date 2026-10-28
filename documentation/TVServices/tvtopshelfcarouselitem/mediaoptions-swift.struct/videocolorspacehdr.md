@@ -19,7 +19,7 @@ static var videoColorSpaceHDR: TVTopShelfCarouselItem.MediaOptions { get }
 TVTopShelfCarouselItemVideoColorSpaceHDR
 ```
 
-#### Discussion
+## Discussion
 
 Specify this constant, or the [`videoColorSpaceDolbyVision`](./videocolorspacedolbyvision.md) constant, but not both.
 

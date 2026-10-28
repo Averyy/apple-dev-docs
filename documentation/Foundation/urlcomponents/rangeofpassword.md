@@ -21,7 +21,7 @@ Returns the character range of the password in the string returned by the string
 var rangeOfPassword: Range<String.Index>? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the component does not exist, nil is returned.
 

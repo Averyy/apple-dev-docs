@@ -25,7 +25,7 @@ func makeNowPlayingInfoLanguageOption() -> MPNowPlayingInfoLanguageOption?
 - (MPNowPlayingInfoLanguageOption *) makeNowPlayingInfoLanguageOption;
 ```
 
-#### Return Value
+## Return Value
 
 A new language option, or `nil` if the media selection option isn’t an audible or legible option.
 

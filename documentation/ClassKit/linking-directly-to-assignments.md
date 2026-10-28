@@ -5,7 +5,7 @@
 
 Make it easy for teachers to guide students to specific content.
 
-#### Overview
+## Overview
 
 ClassKit lets you deep link to assignable content so that when a student taps an assigned activity in the Schoolwork app, they go directly to the corresponding content in your app. This helps teachers guide students to an activity.
 
@@ -13,7 +13,7 @@ You can implement this kind of linking through URL requests or user activity. Yo
 
 > **Note**:  If you change the structure of your context hierarchy in an app update, be sure to account for the old structure in your link handling so that legacy links continue to produce meaningful behavior.
 
-##### Reuse existing URL support
+### Reuse existing URL support
 
 If your app supports custom URLs to provide deep links to specific content—for example, because you already support linking from push notifications—you can easily reuse that infrastructure with your contexts. Briefly, supporting custom URLs means that you’ve defined a URL type in your app’s `Info.plist` file with a custom URL scheme, and have implemented the [`application(_:open:options:)`](../UIKit/uiapplicationdelegate/application%28_,open,options%29.md) method in your app delegate to handle incoming requests with this scheme.
 
@@ -30,7 +30,7 @@ You add similar URLs to each assignable context, including parent contexts, such
 
 If you support universal links, as described in [Support Universal Links](https://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/UniversalLinks.html), you can assign those URLs to the [`universalLinkURL`](./clscontext/universallinkurl.md) property instead.
 
-##### Handle incoming user activity
+### Handle incoming user activity
 
 If you don’t already handle custom URL requests or universal links in your app, you can alternatively support deep links by handling incoming user activities, represented by instances of the [`NSUserActivity`](../Foundation/nsuseractivity.md) class. You do this by implementing the [`application(_:continue:restorationHandler:)`](../UIKit/uiapplicationdelegate/application%28_,continue,restorationhandler%29.md) method in your app delegate, much like you would to support handoff. See [Index Activities and Navigation Points](https://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/Activities.html) for a general discussion.
 

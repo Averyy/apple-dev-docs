@@ -24,7 +24,7 @@ init(system: String, version: String?, code: String)
 - (instancetype) initWithSystem:(NSString *) system version:(NSString *) version code:(NSString *) code;
 ```
 
-#### Discussion
+## Discussion
 
 Use when you need to explicitly construct a coding object to associate a HealthKit concept with a standardized medical code.
 

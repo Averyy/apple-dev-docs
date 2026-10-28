@@ -25,7 +25,7 @@ var nameComponents: PersonNameComponents? { get }
 @property (copy, readonly, nullable) NSPersonNameComponents * nameComponents;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property to construct the user’s name for display. Use the components with an instance of [`PersonNameComponentsFormatter`](../../Foundation/personnamecomponentsformatter.md) to create a string representation for the current locale.
 

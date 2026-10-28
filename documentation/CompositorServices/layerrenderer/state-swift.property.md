@@ -20,7 +20,7 @@ var state: LayerRenderer.State { get }
 enum cp_layer_renderer_state cp_layer_renderer_get_state(cp_layer_renderer_t layer_renderer);
 ```
 
-#### Discussion
+## Discussion
 
 Use the state of the layer to determine when to start and stop your rendering loop. When the layer is in the [`LayerRenderer.State.running`](./state-swift.enum/running.md) state, draw frames of content using your rendering loop. Stop your rendering loop when the layer enters other states. When the layer reaches the [`LayerRenderer.State.invalidated`](./state-swift.enum/invalidated.md) state, clean up and deallocate your render loop structures.
 

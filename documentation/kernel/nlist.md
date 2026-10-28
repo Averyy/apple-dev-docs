@@ -16,7 +16,7 @@ struct nlist {
 };
 ```
 
-#### Discussion
+## Discussion
 
 Common symbols must be of type `N_UNDF` and must have the `N_EXT` bit set. The `n_value` for a common symbol is the size (in bytes) of the data of the symbol. In C, a common symbol is a variable that is declared but not initialized in this file. Common symbols can appear only in `MH_OBJECT` Mach-O files.
 

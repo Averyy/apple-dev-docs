@@ -22,7 +22,7 @@ nonisolated
 func presentationContentInteraction(_ behavior: PresentationContentInteraction) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 By default, when a person swipes up on a scroll view in a resizable presentation, the presentation grows to the next detent. A scroll view embedded in the presentation only scrolls after the presentation reaches its largest size. Use this modifier to control which action takes precedence.
 

@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, transitionLayou
 - (UICollectionViewTransitionLayout *) collectionView:(UICollectionView *) collectionView transitionLayoutForOldLayout:(UICollectionViewLayout *) fromLayout newLayout:(UICollectionViewLayout *) toLayout;
 ```
 
-#### Return Value
+## Return Value
 
 The collection view transition layout object to use to perform the transition.
 
-#### Discussion
+## Discussion
 
 Implement this method if you want to return a custom [`UICollectionViewTransitionLayout`](../uicollectionviewtransitionlayout.md) object for use during the transition. A transition layout object lets you customize the behavior of cells and decoration views when transitioning from one layout to the next. Normally, transitioning between layouts causes items to animate directly from their current locations to their new locations. With a transition layout object, you can have objects follow a non linear path, use a different timing algorithm, or move according to incoming touch events.
 

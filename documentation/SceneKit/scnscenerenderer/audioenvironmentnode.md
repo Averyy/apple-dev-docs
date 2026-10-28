@@ -26,7 +26,7 @@ var audioEnvironmentNode: AVAudioEnvironmentNode { get }
 @property (nonatomic, readonly) AVAudioEnvironmentNode * audioEnvironmentNode;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit uses this audio node to spatialize sounds from [`SCNAudioPlayer`](../scnaudioplayer.md) objects attached to nodes in the scene. You can use this object in conjunction with the [`audioEngine`](./audioengine.md) property to rearrange the audio graph to add other, non-spatialized audio sources or mix in audio processing effects.
 

@@ -21,7 +21,7 @@ Insets the rectangle by the specified size.
 mutating func formInset(by dXYZ: Size3DFloat)
 ```
 
-#### Discussion
+## Discussion
 
 This function insets the rectangle by the specified values on each axis. The origin value is offset by the distance specified by the `dXYZ` parameter. The size is adjusted by `(2*dXYZ)`, relative to the source rectangle.
 

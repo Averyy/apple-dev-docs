@@ -5,13 +5,13 @@
 
 Learn about important changes to Bundle Resources.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Bundle Resources](../BundleResources/BundleResources.md).
 
-#### June 2026
+## June 2026
 
-##### New entitlements
+### New entitlements
 
 - Access Private Cloud Compute in your [Foundation Models](../FoundationModels/FoundationModels.md) app using the [`com.apple.developer.private-cloud-compute`](../BundleResources/entitlements/com.apple.developer.private-cloud-compute.md) entitlement.
 - Request insights relating to transactional activities using the [Trust Insights](../TrustInsights/TrustInsights.md) framework with the [`Trust Insights`](../BundleResources/entitlements/com.apple.developer.trustinsights.base.md) entitlement.
@@ -21,7 +21,7 @@ Browse notable changes in [Bundle Resources](../BundleResources/BundleResources.
 - Manage access to connected USB devices for macOS and Linux virtual machines with the [`Claim USB Accessory`](../BundleResources/entitlements/com.apple.developer.accessory-access.usb.md) entitlement.
 - Protect your app against use-after-free vulnerabilities with guard objects, which the system enables automatically when you set [`com.apple.security.hardened-process.enhanced-security-version`](../BundleResources/entitlements/com.apple.security.hardened-process.enhanced-security-version.md) to version `2` or greater. To turn off guard objects if they impact performance, use the [`com.apple.security.hardened-process.no-guard-objects`](../BundleResources/entitlements/com.apple.security.hardened-process.no-guard-objects.md) entitlement.
 
-##### New information property list keys
+### New information property list keys
 
 - Declare the media device extension protocols your app supports with [`MDESupportedProtocols`](../BundleResources/information-property-list/mdesupportedprotocols.md).
 - Indicate that your app supports URL-based playback through a media device extension with [`MDESupportsUniversalURLPlayback`](../BundleResources/information-property-list/mdesupportsuniversalurlplayback.md).
@@ -29,14 +29,14 @@ Browse notable changes in [Bundle Resources](../BundleResources/BundleResources.
 - Declare that your app handles touch input natively, without relying on AppKit’s extra mouse emulation, with [`NSIsTouchNative`](../BundleResources/information-property-list/nsistouchnative.md).
 - Suppress keyboard shortcuts for menu items while any non-exclusive gesture recognizer is active with [`NSGestureRecognizerSuppressesMainMenuActions`](../BundleResources/information-property-list/nsgesturerecognizersuppressesmainmenuactions.md).
 
-##### Updated entitlements
+### Updated entitlements
 
 - Define the app category to enable Cellular Network Slicing with [`5G Network Slicing App Category`](../BundleResources/entitlements/com.apple.developer.networking.slicing.appcategory.md). To set the application category for web browser apps, use `browser-9003`. You can also set the category to `mc-9500` for mission-critical apps that need access to ultra-constrained cellular networks.
 - Define the app category for carrier-constrained satellite network access with [`com.apple.developer.networking.carrier-constrained.appcategory`](../BundleResources/entitlements/com.apple.developer.networking.carrier-constrained.appcategory.md). To set the application category for payment apps, use `payment-8015`. You can also set the category to `health-fitness-8014` for health and fitness apps.
 
-#### June 2025
+## June 2025
 
-##### New entitlements
+### New entitlements
 
 - Include passthrough in screen capture on visionOS with the  [`Passthrough in screen capture`](../BundleResources/entitlements/com.apple.developer.screen-capture.include-passthrough.md) entitlement.
 - Enable low-latency wireless networking for streaming game content on visionOS with the  [`Low-Latency Streaming`](../BundleResources/entitlements/com.apple.developer.low-latency-streaming.md) entitlement.
@@ -60,7 +60,7 @@ Browse notable changes in [Bundle Resources](../BundleResources/BundleResources.
 - Lock your app’s windows in place relative to a person with the [`Window Follow Mode`](../BundleResources/entitlements/com.apple.developer.window-body-follow.md) entitlement.
 - Indicate that your app can be the default dialer app on someone’s device with the [`Default Dialer App`](../BundleResources/entitlements/com.apple.developer.dialing-app.md) entitlement.
 
-##### New information property list keys
+### New information property list keys
 
 - Describe why your app tracks an accessory’s position and location with [`NSAccessoryTrackingUsageDescription`](../BundleResources/information-property-list/nsaccessorytrackingusagedescription.md).
 - Indicate that the system should automatically download your asset packs and keep them up to date with [`BAHasManagedAssetPacks`](../BundleResources/information-property-list/bahasmanagedassetpacks.md).
@@ -69,27 +69,27 @@ Browse notable changes in [Bundle Resources](../BundleResources/BundleResources.
 - Describe Wi-Fi Aware services your app publishes and subscribes to with [`WiFiAwareServices`](../BundleResources/information-property-list/wifiawareservices.md).
 - Indicate that your app supports game mode with [`LSSupportsGameMode`](../BundleResources/information-property-list/lssupportsgamemode.md).
 
-##### Updated entitlements
+### Updated entitlements
 
 - Add the [`com.apple.developer.kernel.increased-memory-limit`](../BundleResources/entitlements/com.apple.developer.kernel.increased-memory-limit.md) entitlement to your visionOS app.
 
-##### Updated information property list keys
+### Updated information property list keys
 
 - Indicate that your visionOS app supports spatial gamepads with [`GCSupportedGameControllers`](../BundleResources/information-property-list/gcsupportedgamecontrollers.md).
 
-#### June 2024
+## June 2024
 
-##### New entitlements
+### New entitlements
 
 - Enable access to a Personalized Sound Profile to allow the app to use the information in the profile to render audio with [`com.apple.developer.spatial-audio.profile-access`](../BundleResources/entitlements/com.apple.developer.spatial-audio.profile-access.md).
 - Enable access to head tracking info to allow an app to render audio with head tracking with [`com.apple.developer.coremotion.head-pose`](../BundleResources/entitlements/com.apple.developer.coremotion.head-pose.md).
 - Allow CoreMIDI to match MIDIDriverKit drivers with devices that support MIDI with [`com.apple.developer.driverkit.family.midi`](../BundleResources/entitlements/com.apple.developer.driverkit.family.midi.md).
 
-##### Updated entitlement
+### Updated entitlement
 
 - Define the app category to enable Cellular Network Slicing with [`5G Network Slicing App Category`](../BundleResources/entitlements/com.apple.developer.networking.slicing.appcategory.md). To set the application category for streaming apps, use `streaming-9001`. You can also set the category to `gaming-6014` for gaming apps, and `communication-9000` for communication apps.
 
-##### New Info.plist keys
+### New Info.plist keys
 
 - Indicate if the game app bypasses system spatial audio with [`AVGameBypassSystemSpatialAudio`](../BundleResources/information-property-list/avgamebypasssystemspatialaudio.md).
 - Indicate to the system that your app receives copies of re-engagement postbacks, a type of postback introduced in iOS 17.5, with [`EligibleForAdAttributionKitReengagementPostbackCopies`](../BundleResources/information-property-list/eligibleforadattributionkitreengagementpostbackcopies.md).

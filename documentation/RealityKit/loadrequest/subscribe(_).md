@@ -19,7 +19,7 @@ Attaches the specified subscriber to this publisher.
 func subscribe<S>(_ subscriber: S) where Output == S.Input, S : Subscriber, S.Failure == any Error
 ```
 
-#### Discussion
+## Discussion
 
 Always call this function instead of `Publisher/receive(subscriber:)`. Adopters of `Publisher` must implement `Publisher/receive(subscriber:)`. The implementation of `Publisher/subscribe(_:)-4u8kn` provided by `Publisher` calls through to `Publisher/receive(subscriber:)`.
 

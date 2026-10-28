@@ -23,7 +23,7 @@ var streamable: NSNumber? { get set }
 @property (strong, getter=isStreamable, nullable) NSNumber * streamable;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is 0, the content is not prepared for streaming; when the value is 1, it is prepared for streaming.
 

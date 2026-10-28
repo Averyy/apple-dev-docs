@@ -25,7 +25,7 @@ var kCMSampleBufferError_InvalidMediaTypeForOperation: OSStatus { get }
 kCMSampleBufferError_InvalidMediaTypeForOperation
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs, for example, if you call the [`withUnsafeAudioStreamPacketDescriptions(_:)`](./cmsamplebuffer/withunsafeaudiostreampacketdescriptions%28_%29.md) with nonaudio data.
 

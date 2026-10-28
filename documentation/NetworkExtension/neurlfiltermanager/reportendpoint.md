@@ -18,7 +18,7 @@ The endpoint that the filter manager sends blocked URL reports to.
 var reportEndpoint: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When configured, the manager sends reports of blocked URLs to the specified endpoint on the PIR server URL. In other words, for a PIR server at `https://pir.example.com/` and an endpoint of `reports`, the manager sends reports to `https://pir.example.com/reports`.
 

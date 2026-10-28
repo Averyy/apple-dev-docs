@@ -21,7 +21,7 @@ A character class that matches any character that does not match this character 
 var inverted: CharacterClass { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, you can use the `inverted` property to create a character class that excludes a specific group of characters:
 

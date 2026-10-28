@@ -16,7 +16,7 @@ nonisolated
 func accessibilityQuickAction<Style, Content>(style: Style, isActive: Binding<Bool>, @ContentBuilder content: () -> Content) -> some View where Style : AccessibilityQuickActionStyle, Content : View
 ```
 
-#### Discussion
+## Discussion
 
 The following example shows how to add a quick action to pause and resume a workout, with the [`prompt`](../accessibilityquickactionstyle/prompt.md) style.
 

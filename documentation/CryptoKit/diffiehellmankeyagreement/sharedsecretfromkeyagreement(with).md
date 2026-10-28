@@ -22,7 +22,7 @@ Performs a Diffie-Hellman Key Agreement.
 func sharedSecretFromKeyAgreement(with publicKeyShare: Self.PublicKey) throws -> SharedSecret
 ```
 
-#### Return Value
+## Return Value
 
 The resulting key agreement result.
 

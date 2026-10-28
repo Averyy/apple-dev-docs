@@ -20,11 +20,11 @@ Creates a graph that describes an integer grid with the specified dimensions.
 + (instancetype) graphFromGridStartingAt:(vector_int2) position width:(int) width height:(int) height diagonalsAllowed:(BOOL) diagonalsAllowed;
 ```
 
-#### Return Value
+## Return Value
 
 A new grid graph.
 
-#### Discussion
+## Discussion
 
 All connections created through this method are bidirectional.
 

@@ -31,7 +31,7 @@ class PKPaymentButton
 @interface PKPaymentButton : NSButton
 ```
 
-#### Overview
+## Overview
 
 After creating a [`PKPaymentButton`](./pkpaymentbutton.md) object, you choose the type and style of button, and the system provides a control with the correct content and appearance. See the [Human Interface Guidelines > Apple Pay](https://developer.apple.com/design/human-interface-guidelines/apple-pay/overview/buttons-and-marks/) for more information.
 

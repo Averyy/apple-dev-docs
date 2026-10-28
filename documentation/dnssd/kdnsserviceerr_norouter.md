@@ -23,7 +23,7 @@ var kDNSServiceErr_NoRouter: Int { get }
 kDNSServiceErr_NoRouter
 ```
 
-#### Discussion
+## Discussion
 
 No router is currently configured (probably no network connectivity).
 

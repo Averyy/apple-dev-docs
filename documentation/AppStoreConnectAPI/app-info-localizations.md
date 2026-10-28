@@ -5,7 +5,7 @@
 
 Manage the app metadata that is localized and appears on the App Store.
 
-#### Overview
+## Overview
 
 `appInfoLocalizations` represent your app’s localized metadata that is displayed in the App Store. You can create, read, update, and remove the localized metadata. It includes the following attributes for each localization:
 

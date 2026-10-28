@@ -24,7 +24,7 @@ case notInteractive
 LAErrorNotInteractive
 ```
 
-#### Discussion
+## Discussion
 
 Permit the display of the authentication UI by setting the [`interactionNotAllowed`](../../lacontext/interactionnotallowed.md) property to [`false`](../../../Swift/false.md).
 

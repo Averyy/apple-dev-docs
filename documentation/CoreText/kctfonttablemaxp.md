@@ -23,7 +23,7 @@ var kCTFontTableMaxp: Int { get }
 kCTFontTableMaxp
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for maximum profile.
 

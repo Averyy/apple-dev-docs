@@ -25,7 +25,7 @@ func setShadow(offset: CGSize, blur: CGFloat)
 extern void CGContextSetShadow(CGContextRef c, CGSize offset, CGFloat blur);
 ```
 
-#### Discussion
+## Discussion
 
 Shadow parameters are part of the graphics state in a context. After shadowing is set, all objects drawn are shadowed using a black color with 1/3 alpha (in effect, RGBA = `{0, 0, 0, 1.0/3.0}`) in the DeviceRGB color space.
 

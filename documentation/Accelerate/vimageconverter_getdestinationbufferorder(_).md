@@ -25,11 +25,11 @@ func vImageConverter_GetDestinationBufferOrder(_ converter: vImageConverter) -> 
 const vImageBufferTypeCode *vImageConverter_GetDestinationBufferOrder(vImageConverterRef converter);
 ```
 
-#### Return Value
+## Return Value
 
 An array of buffer type codes (see [vImage Buffer Type Codes](./api-1399056-vimage-buffer-type-codes.md)) that ends with [`kvImageBufferTypeCode_EndOfList`](./kvimagebuffertypecode_endoflist.md).
 
-#### Discussion
+## Discussion
 
 This function describes the identity of each buffer passed in the `dests` parameters of [`vImageConvert_AnyToAny(_:_:_:_:_:)`](./vimageconvert_anytoany%28_,_,_,_,_%29.md), so you can order the buffers correctly. It’s provided for informational purposes, to help you configure image processing pipelines to vImage that aren’t supported through more direct means.
 

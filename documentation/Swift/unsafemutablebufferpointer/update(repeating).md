@@ -21,7 +21,7 @@ Updates every element of this buffer’s initialized memory.
 func update(repeating repeatedValue: Element)
 ```
 
-#### Discussion
+## Discussion
 
 The buffer’s memory must be initialized or its `Element` type must be a trivial type.
 

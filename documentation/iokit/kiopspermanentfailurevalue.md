@@ -16,7 +16,7 @@ Value for key [`kIOPSBatteryHealthConditionKey`](./kiopsbatteryhealthconditionke
 #define kIOPSPermanentFailureValue
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the battery needs replacement.
 

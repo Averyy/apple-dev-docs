@@ -15,7 +15,7 @@ An object that stores image data in a form that can be readily transferred to th
 @interface NSCachedImageRep : NSImageRep
 ```
 
-#### Overview
+## Overview
 
 An [`NSCachedImageRep`](./nscachedimagerep.md) object differs from other image representation objects in that it simply stores the already rendered image, whereas other image representation objects generally have knowledge about how to render the image from source data.
 

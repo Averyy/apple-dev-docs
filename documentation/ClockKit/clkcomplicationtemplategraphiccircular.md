@@ -21,7 +21,7 @@ class CLKComplicationTemplateGraphicCircular
 @interface CLKComplicationTemplateGraphicCircular : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 Don’t instantiate this class. Create one of its concrete subclasses instead.
 

@@ -24,7 +24,7 @@ let HMCharacteristicTypeCurrentAirPurifierState: String
 extern NSString * const HMCharacteristicTypeCurrentAirPurifierState;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueCurrentAirPurifierState`](./hmcharacteristicvaluecurrentairpurifierstate.md) enumeration.
 

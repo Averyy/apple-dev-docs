@@ -28,7 +28,7 @@ optional func resolveSeat(for intent: INSetSeatSettingsInCarIntent) async -> INC
 - (void) resolveSeatForSetSeatSettingsInCar:(INSetSeatSettingsInCarIntent *) intent withCompletion:(void (^)(INCarSeatResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the requested seat position. If the specified seat position doesn’t support the given settings, consider returning a result with a more appropriate value and asking the user for confirmation.
 

@@ -25,7 +25,7 @@ var hasBytesAvailable: Bool { get }
 @property (readonly) BOOL hasBytesAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver has bytes available to read, otherwise [`false`](../../Swift/false.md). May also return [`true`](../../Swift/true.md) if a read must be attempted in order to determine the availability of bytes.
 

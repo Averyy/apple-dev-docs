@@ -15,11 +15,11 @@ Enable people to use your app’s features quickly through Siri, Spotlight, and 
 - watchOS 11.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 The app in this sample code project provides information on trails, allowing people to check on conditions, search for trails that allow activities like skiing, and record which trails they visit. Expressing these features as intents allows people to use them through Siri, Spotlight search, and Shortcuts. Additionally, the project integrates workout tracking on Apple Watch, and shows how to implement Action button support on Apple Watch Ultra. The intents also appear as actions in the Shortcuts app. People can combine these actions to build entirely new features in Shortcuts because the intents provide custom data types that match each other’s inputs.
 
-##### Identify common actions
+### Identify common actions
 
 The sample app includes two key features that people are likely to use frequently: looking up information on a trail, and recording activity on a trail. To make it easy for people to use these features without even opening the app, the sample code creates intents for them to use with Siri, Spotlight search, and Shortcuts. For example, if someone saves their favorite trails in the app and wants to get the current conditions for those trails, the app implements the `OpenFavorites` structure, which conforms to [`AppIntent`](./appintent.md). When someone runs this intent, the app opens and navigates to the Favorites view.
 
@@ -48,7 +48,7 @@ func perform() async throws -> some IntentResult {
 }
 ```
 
-##### Create App Shortcuts
+### Create App Shortcuts
 
 People may ask Siri to show their favorite trails, or they may find this suggested action through a Spotlight search. To support both of these options, the app implements an [`AppShortcut`](./appshortcut.md) using `OpenFavorites`. An App Shortcut combines an intent with phrases people may use with Siri to perform the action, and additional metadata, such as an icon, and then uses this information in a Spotlight search. People can invoke the App Shortcut with a suggested phrase, or other similiar words, because the system uses a semantic similarity index to help identify people’s requests — automatically matching phrases that are similar, but not identical.
 
@@ -75,7 +75,7 @@ The `SiriTipView` takes a binding to a visibility Boolean so that the app hides 
 
 Aside from intents for people to quickly view their favorite trails and track their workouts, the sample app provides extensive search capabilities through intents. The app doesn’t provide App Shortcuts for intents that people use less commonly. Best practice is to provide App Shortcuts for only the most common actions in an app — usually between two and five intents, and not more than ten.
 
-##### Design custom responses
+### Design custom responses
 
 Even though the app doesn’t provide `GetTrailInfo` as an App Shortcut, people may still interact with it through Siri, such as including the intent in a shortcut they create in the Shortcuts app. For a good user experience, this intent provides its result with a visual response using a custom UI snippet, and as a dialog for Siri to communicate the same information. It does so by conforming the return type of the intent’s [`perform`](./appintent/perform%28%29.md) function to both [`ProvidesDialog`](./providesdialog.md) and [`ShowsSnippetView`](./showssnippetview.md).
 
@@ -107,7 +107,7 @@ let disambiguationList = suggestedMatches.sorted(using: KeyPathComparator(\.self
 throw $location.needsDisambiguationError(among: disambiguationList, dialog: dialog)
 ```
 
-##### Add parameters to an intent
+### Add parameters to an intent
 
 An app intent can optionally require certain parameters to complete its action. For example, the `GetTrailInfo` intent declares a `trail` parameter by decorating the property with the [`IntentParameter`](./intentparameter.md) property wrapper.
 
@@ -147,7 +147,7 @@ var regionDescription: String
 
 ```
 
-##### Provide the app’s data through queries
+### Provide the app’s data through queries
 
 The system queries the app for its trail data through `TrailEntityQuery`, a type conforming to [`EntityQuery`](./entityquery.md). For example, if someone saves a specific value as the `trail` parameter for `GetTrailInfo`, the system locates the `TrailEntity` by using the `defaultQuery` and requesting the entity by its ID from the `Identifable` protocol. All types conforming to `EntityQuery` need to implement this method.
 
@@ -185,7 +185,7 @@ func entities(matching string: String) async throws -> [TrailEntity] {
 }
 ```
 
-##### Enable Find intents
+### Enable Find intents
 
 Apps implementing either the [`EnumerableEntityQuery`](./enumerableentityquery.md) or the [`EntityPropertyQuery`](./entitypropertyquery.md) protocol automatically add a Find intent in the Shortcuts app. These intents enable people to build powerful new features for themselves in Shortcuts, powered by the app’s data — without requiring the app to implement that feature itself. For example, the sample app focuses its UI on providing trail information, but people can also use its data to plan activities for a vacation. The app doesn’t need to build vacation-planning features because it implements these entity query protocols to provide an interface to the data through a Shortcut.
 
@@ -206,7 +206,7 @@ Designing great intents for integration with the system means that the intents w
 - The Find intent for trails can use the output of `SuggestTrails` to further refine the results.
 - The Find intent for trails can also work alone, searching for matching trail properties from all of the trail data the app provides.
 
-##### Contribute entities to Spotlight
+### Contribute entities to Spotlight
 
 The sample app provides its trail data to Spotlight when the app first runs. The app declares a `Trail` structure for this data, containing the app’s internal representation of that data. The app maps its data from the structure to searchable attributes in a [`CSSearchableItemAttributeSet`](../CoreSpotlight/cssearchableitemattributeset.md).
 
@@ -259,7 +259,7 @@ do {
 }
 ```
 
-##### Integrate universal links
+### Integrate universal links
 
 The sample app offers an `OpenTrail` intent so that people can open the app to a specific trail’s information from a shortcut. Rather than adding code to configure the app’s UI for displaying a trail’s information just for this intent, the app uses the same URL scheme it uses to implement universal links. The app declares the URL for a trail’s details through conformance to [`URLRepresentableEntity`](./urlrepresentableentity.md).
 

@@ -13,7 +13,7 @@
 - (void) attestKey:(ASAuthorizationProviderExtensionKeyType) keyType clientDataHash:(NSData *) clientDataHash completion:(void (^)(NSArray *attestationCertificates, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Provides a new or cached attestation for the specified key type.
 

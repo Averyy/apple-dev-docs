@@ -22,7 +22,7 @@ var defaultSource: JointTransforms? { get }
 
 Available when `Value` is `JointTransforms`.
 
-#### Discussion
+## Discussion
 
 See  [`defaultSource`](../animationstateprotocol/defaultsource.md) for  more about the default source value.
 

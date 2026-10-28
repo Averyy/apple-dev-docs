@@ -20,7 +20,7 @@ var isLightEstimationEnabled: Bool { get set }
 @property (nonatomic, assign, getter=isLightEstimationEnabled) BOOL lightEstimationEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is [`true`](../../Swift/true.md) (the default), a running AR session provides scene lighting information in the [`lightEstimate`](../arframe/lightestimate.md) property of each [`ARFrame`](../arframe.md) object it captures.
 

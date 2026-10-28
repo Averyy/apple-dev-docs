@@ -15,7 +15,7 @@ Attributes for an organization device’s Activation Lock status.
 object ActivationLockStatus.Attributes
 ```
 
-#### Overview
+## Overview
 
 > **Note**: When additional attributes are added by Apple, they appear automatically, without requiring a newer version of the API.
 

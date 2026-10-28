@@ -24,11 +24,11 @@ nonisolated
 func colorScheme(_ colorScheme: ColorScheme) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that sets this view’s color scheme.
 
-#### Discussion
+## Discussion
 
 Use `colorScheme(_:)` to set the color scheme for the view to which you apply it and any subviews.
 

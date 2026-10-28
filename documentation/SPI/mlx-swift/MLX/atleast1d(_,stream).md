@@ -17,7 +17,7 @@ Convert array to have at least 1 dimension.
 func atLeast1D(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Shapes](./shapes.md)
 

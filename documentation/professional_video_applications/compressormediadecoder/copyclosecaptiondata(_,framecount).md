@@ -20,11 +20,11 @@ func copyCloseCaptionData(_ startFrame: Int64, frameCount: Int64) -> [AnyHashabl
 - (NSDictionary *) copyCloseCaptionData:(int64_t) startFrame frameCount:(int64_t) frameCount;
 ```
 
-#### Return Value
+## Return Value
 
 `nil` if closed-caption data is not available. Otherwise, it returns a dictionary with a frame number as the key, and a value that’s an array of 16-bit integers representing the closed-caption data.
 
-#### Discussion
+## Discussion
 
 > **Note**:  The decoder object supports only CEA-608 closed-caption format.
 

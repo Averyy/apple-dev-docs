@@ -15,7 +15,7 @@ The marker values for the ruler.
 @property (strong, nullable) id accessibilityMarkerValues;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a ruler element.
 

@@ -5,11 +5,11 @@
 
 Record your app’s performance using the heads-up display.
 
-#### Overview
+## Overview
 
 With the Metal Performance HUD, you can generate performance reports for a specified duration to analyze your app’s performance over that interval. When report generation begins, the system resets all existing metrics, and the HUD automatically enables the performance insights feature. You can also enable other optional HUD features, such as Encoder GPU Time Tracking (see [Understand encoder GPU time tracking](./monitoring-your-metal-apps-graphics-performance.md#Understand-encoder-GPU-time-tracking)), to add more metrics to the report.
 
-##### Generate performance reports
+### Generate performance reports
 
 You can trigger performance report generation from the global menu, where you select the desired duration. Report durations can range from 5 seconds to 30 minutes.
 
@@ -31,7 +31,7 @@ export MTL_HUD_REPORT_URL=<path>
 
 ![A screenshot showing the performance report.](https://developer.apple.com/tutorials/images/com.apple.Xcode/metal-hud-report@2x.png)
 
-##### Analyze and interpret the performance reports
+### Analyze and interpret the performance reports
 
 Each performance report contains a list of collapsable sections. The complete list is below:
 

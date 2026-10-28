@@ -24,7 +24,7 @@ var sensorShift: vector_float2 { get set }
 @property (nonatomic, assign) vector_float2 sensorShift;
 ```
 
-#### Discussion
+## Discussion
 
 Shifting the camera image can be useful for various effects, such as projecting shadows or reflections or creating the left and right projections of a stereoscopic camera.
 

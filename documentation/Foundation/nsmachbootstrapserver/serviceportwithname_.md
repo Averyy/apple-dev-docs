@@ -16,7 +16,7 @@ Looks up and returns the port for the vended service that is registered under th
 - (NSPort *) servicePortWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 The port associated with `name`. Returns `nil` if no such port exists.
 

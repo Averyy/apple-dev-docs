@@ -20,7 +20,7 @@ nonisolated
 struct ToolbarCommands
 ```
 
-#### Overview
+## Overview
 
 These commands are optional and can be explicitly requested by passing a value of this type to the [`commands(content:)`](./scene/commands%28content%29.md) modifier.
 

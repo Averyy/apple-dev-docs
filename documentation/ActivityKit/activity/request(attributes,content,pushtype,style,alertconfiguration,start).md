@@ -16,11 +16,11 @@ Requests and schedules a Live Activity for a specific date.
 static func request(attributes: Attributes, content: ActivityContent<Activity<Attributes>.ContentState>, pushType: PushType? = nil, style: ActivityStyle, alertConfiguration: AlertConfiguration, start: Date) throws -> Activity<Attributes>
 ```
 
-#### Return Value
+## Return Value
 
 The object that represents the Live Activity you started.
 
-#### Discussion
+## Discussion
 
 Use this function to request and start a Live Activity from your app while it’s in the foreground. Note that you can’t do this while your app is in the background, unless you adopt [App Intents](../../AppIntents/AppIntents.md) and start the Live Activity using a [`LiveActivityIntent`](../../AppIntents/liveactivityintent.md).
 

@@ -11,7 +11,7 @@ Track a person in the physical environment and visualize their motion by applyin
 - iPadOS 13.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 To run the sample, use an iOS device with an A12 chip or later.
 

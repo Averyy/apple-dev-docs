@@ -18,11 +18,11 @@ String setInterval(
 );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a string containing an identifier for the interval just set.
 
-#### Discussion
+## Discussion
 
 Pass the identifier created by this function to the [`clearInterval`](./api-1627411-clearinterval.md) function to stop the designated function from executing.
 

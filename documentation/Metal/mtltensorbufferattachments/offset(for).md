@@ -24,7 +24,7 @@ func offset(for plane: MTLTensorPlaneType) -> Int
 - (NSUInteger) offsetForPlane:(MTLTensorPlaneType) plane;
 ```
 
-#### Return Value
+## Return Value
 
 The byte offset for the given plane.
 

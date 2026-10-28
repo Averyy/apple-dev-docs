@@ -20,7 +20,7 @@ Creates a new Metal library instance asynchronously.
 - (id<MTL4CompilerTask>) newLibraryWithDescriptor:(MTL4LibraryDescriptor *) descriptor completionHandler:(MTLNewLibraryCompletionHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A compiler task representing the asynchronous compilation task.
 

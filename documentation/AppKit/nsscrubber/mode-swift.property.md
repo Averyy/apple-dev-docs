@@ -19,7 +19,7 @@ var mode: NSScrubber.Mode { get set }
 @property NSScrubberMode mode;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`NSScrubber.Mode.fixed`](./mode-swift.enum/fixed.md), the scrubber’s content doesn’t scroll as the user pans. Instead, the element under the user’s finger is highlighted. The highlighted item becomes selected when the user completes the pan gesture. The default value is [`NSScrubber.Mode.fixed`](./mode-swift.enum/fixed.md).
 

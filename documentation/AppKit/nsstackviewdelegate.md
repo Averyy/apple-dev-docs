@@ -19,7 +19,7 @@ protocol NSStackViewDelegate : NSObjectProtocol
 @protocol NSStackViewDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt this protocol in a custom object and use it to track the addition and removal of views from the stack view’s view hierarchy. For an explanation of detachment and reattachment of a stack view’s views, see [`NSStackView`](./nsstackview.md).
 

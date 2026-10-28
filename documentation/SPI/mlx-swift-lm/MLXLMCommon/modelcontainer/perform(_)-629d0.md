@@ -17,7 +17,7 @@ Perform an action on the [`ModelContext`](../modelcontext.md). Callers *must* ev
 func perform<R>(_ action: @Sendable (ModelContext) async throws -> sending R) async rethrows -> sending R where R : Sendable
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The closure receives `ModelContext` which is not `Sendable`. This is intentional - the closure runs within the actor’s isolation, ensuring thread-safe access to the model.
 

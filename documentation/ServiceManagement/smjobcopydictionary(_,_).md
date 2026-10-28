@@ -22,7 +22,7 @@ func SMJobCopyDictionary(_ domain: CFString!, _ jobLabel: CFString) -> Unmanaged
 extern CFDictionaryRefSMJobCopyDictionary(CFStringRef domain, CFStringRef jobLabel);
 ```
 
-#### Return Value
+## Return Value
 
 A new dictionary describing the job, or `NULL` if the system couldn’t find the job. The caller must release the dictionary.
 

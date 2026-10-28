@@ -21,7 +21,7 @@ class SRWristTemperature
 @interface SRWristTemperature : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`wristTemperature`](./srsensor/wristtemperature.md) sensor provides this class as its [`sample`](./srfetchresult/sample.md) type.
 

@@ -19,11 +19,11 @@ func resume() -> Bool
 - (BOOL) resume;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when playback is resumed, [`false`](../../Swift/false.md) when playback is in progress or when an error occurred.
 
-#### Discussion
+## Discussion
 
 Assumes the receiver has been previously paused by sending it [`NSSound`](../nssound.md).
 

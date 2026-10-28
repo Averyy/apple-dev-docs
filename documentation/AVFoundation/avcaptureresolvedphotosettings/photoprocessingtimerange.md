@@ -22,7 +22,7 @@ var photoProcessingTimeRange: CMTimeRange { get }
 @property (readonly) CMTimeRange photoProcessingTimeRange;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the processing time range you can expect for this photo to be delivered to your delegate. the .start field of the CMTimeRange is zero-based. In other words, if photoProcessingTimeRange.start is equal to .5 seconds, then the minimum processing time for this photo is .5 seconds. The .start field plus the .duration field of the CMTimeRange indicate the max expected processing time for this photo. Consider implementing a UI affordance if the max processing time is uncomfortably long.
 

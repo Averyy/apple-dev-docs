@@ -19,7 +19,7 @@ A float value that, if set, causes the layer to renormalize the selected embeddi
 @property (nonatomic, readonly) NSNumber * maximumNorm;
 ```
 
-#### Discussion
+## Discussion
 
 Renormalization occurs in the forward pass only.
 

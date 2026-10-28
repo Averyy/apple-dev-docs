@@ -11,9 +11,9 @@ Read localized information for a specific locale for a specific achievement.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Read Game Center Achievement Localization Information`](./get-v2-gamecenterachievementlocalizations-_id_.md) instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

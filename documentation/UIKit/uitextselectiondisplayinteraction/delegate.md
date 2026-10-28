@@ -23,7 +23,7 @@ weak var delegate: (any UITextSelectionDisplayInteractionDelegate)? { get }
 @property (nonatomic, weak, readonly) id<UITextSelectionDisplayInteractionDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a delegate object if your UI displays selection highlights below your text input view. The delegate provides the container view for the system to use when adding the selection-related views.
 

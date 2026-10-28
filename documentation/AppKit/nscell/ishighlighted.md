@@ -19,7 +19,7 @@ var isHighlighted: Bool { get set }
 @property (getter=isHighlighted) BOOL highlighted;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the cell draws itself with a highlighted appearance. The default value of this property is [`false`](../../Swift/false.md).
 

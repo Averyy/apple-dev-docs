@@ -23,7 +23,7 @@ var optimizerData: [MLCTensorData] { get }
 @property (nonatomic, copy, readonly) NSArray<MLCTensorData *> * optimizerData;
 ```
 
-#### Discussion
+## Discussion
 
 These are the host-side momentum and velocity-optimizer buffers you can query and initialize.
 

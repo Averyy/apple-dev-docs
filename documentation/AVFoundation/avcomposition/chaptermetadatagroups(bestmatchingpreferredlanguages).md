@@ -25,11 +25,11 @@ func chapterMetadataGroups(bestMatchingPreferredLanguages preferredLanguages: [S
 - (NSArray<AVTimedMetadataGroup *> *) chapterMetadataGroupsBestMatchingPreferredLanguages:(NSArray<NSString *> *) preferredLanguages;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`AVTimedMetadataGroup`](../avtimedmetadatagroup.md) objects.
 
-#### Discussion
+## Discussion
 
 Each object in the returned array contains an [`AVMetadataItem`](../avmetadataitem.md) object representing the chapter title. The time range property of the [`AVTimedMetadataGroup`](../avtimedmetadatagroup.md) object is equal to the time range of the chapter title item.
 

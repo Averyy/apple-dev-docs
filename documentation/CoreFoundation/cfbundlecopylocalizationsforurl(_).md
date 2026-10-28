@@ -25,11 +25,11 @@ func CFBundleCopyLocalizationsForURL(_ url: CFURL!) -> CFArray!
 extern CFArrayRefCFBundleCopyLocalizationsForURL(CFURLRef url);
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the localizations available at `url`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 For a directory URL, this is equivalent to calling the [`CFBundleCopyBundleLocalizations(_:)`](./cfbundlecopybundlelocalizations%28_%29.md) function on the corresponding bundle. For a plain file URL representing an unbundled application, this will attempt to determine its localizations using the [`kCFBundleLocalizationsKey`](./kcfbundlelocalizationskey.md) and [`kCFBundleDevelopmentRegionKey`](./kcfbundledevelopmentregionkey.md) keys in the dictionary returned by [`CFBundleCopyInfoDictionaryForURL(_:)`](./cfbundlecopyinfodictionaryforurl%28_%29.md), or a `vers` resource if those are not present.
 

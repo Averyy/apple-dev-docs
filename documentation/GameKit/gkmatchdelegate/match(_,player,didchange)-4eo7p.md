@@ -22,7 +22,7 @@ optional func match(_ match: GKMatch, player playerID: String, didChange state: 
 - (void) match:(GKMatch *) match player:(NSString *) playerID didChangeState:(GKPlayerConnectionState) state;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to be notified when players connect to or disconnect from the match.
 

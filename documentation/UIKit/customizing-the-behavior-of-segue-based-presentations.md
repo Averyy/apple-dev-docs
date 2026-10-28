@@ -5,13 +5,13 @@
 
 Pass data between view controllers during a segue, and programmatically control when segues occur.
 
-#### Overview
+## Overview
 
 When the user triggers a segue, UIKit presents the view controller using the options found in your storyboard. UIKit also provides opportunities for you to modify the segue process dynamically, either by preventing the segue from occurring or by doing extra work when a segue occurs.
 
 For information on how to create a segue, see [Specify presentations visually in your storyboard file](./showing-and-hiding-view-controllers.md#Specify-presentations-visually-in-your-storyboard-file).
 
-##### Configure the presentation style of the transition
+### Configure the presentation style of the transition
 
 The segue’s type determines what kind of animations UIKit uses when presenting and dismissing the segue, as the table below shows. You specify the type when you create the segue, but you can also change it in the attributes inspector later.
 
@@ -24,11 +24,11 @@ The segue’s type determines what kind of animations UIKit uses when presenting
 
 For more information about how UIKit performs segues involving the Show and Show Detail presentation styles, see [Let the current context define the presentation technique](./showing-and-hiding-view-controllers.md#Let-the-current-context-define-the-presentation-technique).
 
-##### Prevent a segue based on dynamic conditions
+### Prevent a segue based on dynamic conditions
 
 When you don’t want the user to leave the current view controller, tell UIKit not to perform a segue by returning false from the [`shouldPerformSegue(withIdentifier:sender:)`](./uiviewcontroller/shouldperformsegue%28withidentifier,sender%29.md) method of the source view controller. Use that method to perform any checks you need to determine whether the segue can proceed. For example, return [`false`](../Swift/false.md) if the view controller’s content is invalid and requires corrective user actions. Returning true lets the segue continue, but returning [`false`](../Swift/false.md) causes the segue to fail silently.
 
-##### Pass data to the presented view controller
+### Pass data to the presented view controller
 
 Because UIKit creates and presents the view controller automatically during a segue, use the [`prepare(for:sender:)`](./uiviewcontroller/prepare%28for,sender%29.md) method to pass any data to that view controller before the segue occurs. Implement the method on the view controller containing the object that initiated the segue. Fetch the new view controller from the provided [`UIStoryboardSegue`](./uistoryboardsegue.md) object, along with information about which segue was triggered.
 
@@ -48,7 +48,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
 Use the delegate design pattern to pass data from a presented view controller back to the originating view controller. Configure that delegate relationship in your [`prepare(for:sender:)`](./uiviewcontroller/prepare%28for,sender%29.md) method.
 
-##### Understand the sequence of events during a segue
+### Understand the sequence of events during a segue
 
 Although UIKit handles segues automatically, there are many places where you can perform work related to displaying the new view controller. The following figure shows the flow of events that happens from the time the user triggers a segue until the process is complete. The main place to perform segue-related actions is the current view controller’s [`prepare(for:sender:)`](./uiviewcontroller/prepare%28for,sender%29.md) method, but you also may perform tasks during the creation of the new view controller.
 

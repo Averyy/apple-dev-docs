@@ -23,7 +23,7 @@ init(playParametersQueue: [MPMusicPlayerPlayParameters])
 - (instancetype) initWithPlayParametersQueue:(NSArray<MPMusicPlayerPlayParameters *> *) playParametersQueue;
 ```
 
-#### Return Value
+## Return Value
 
 A new queue descriptor consisting of the items described by the play parameters.
 

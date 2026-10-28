@@ -18,7 +18,7 @@ A catalog of node definitions supported by RealityKit.
 final class NodeLibrary
 ```
 
-#### Overview
+## Overview
 
 Use a library to discover available [`ShaderGraph.NodeDefinition`](./nodedefinition.md) values and add instances of them to a [`ShaderGraph`](../shadergraph.md).
 

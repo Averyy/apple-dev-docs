@@ -25,7 +25,7 @@ var kAudioChannelLayoutTag_SMPTE_DTV: AudioChannelLayoutTag { get }
 kAudioChannelLayoutTag_SMPTE_DTV
 ```
 
-#### Discussion
+## Discussion
 
 This tag is equivalent to [`kAudioChannelLayoutTag_ITU_3_2_1`](./kaudiochannellayouttag_itu_3_2_1.md) plus a matrix encoded stereo mix. Your channels must be laid out in the following order:
 

@@ -28,7 +28,7 @@ func handle(intent: INListRideOptionsIntent) async -> INListRideOptionsIntentRes
 - (void) handleListRideOptions:(INListRideOptionsIntent *) intent completion:(void (^)(INListRideOptionsIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 In your implementation of this method, compile a list of available ride options and create [`INRideOption`](../inrideoption.md) objects for each one. Ride option names must be unique so that you can correctly identify the selected option later. Put the ride options into your response object and call the provided `completion` block with the results.
 

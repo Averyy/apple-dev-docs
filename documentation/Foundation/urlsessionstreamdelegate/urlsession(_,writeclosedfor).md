@@ -25,7 +25,7 @@ optional func urlSession(_ session: URLSession, writeClosedFor streamTask: URLSe
 - (void) URLSession:(NSURLSession *) session writeClosedForStreamTask:(NSURLSessionStreamTask *) streamTask;
 ```
 
-#### Discussion
+## Discussion
 
 This method may be called even if no writes are currently in progress.
 

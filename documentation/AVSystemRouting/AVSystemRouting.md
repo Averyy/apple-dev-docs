@@ -11,7 +11,7 @@ Send media from your app to a TV, speaker, or other device through a media devic
 - iPadOS 27.0+
 - Mac Catalyst 27.0+
 
-#### Overview
+## Overview
 
 The AVSystemRouting framework lets your app send media to other devices, like TVs and speakers. Media sharing protocol providers distribute media device extensions through their own apps so you don’t need to bundle each device’s SDK in your app.
 

@@ -25,7 +25,7 @@ class SCNPhysicsHingeJoint
 @interface SCNPhysicsHingeJoint : SCNPhysicsBehavior
 ```
 
-#### Overview
+## Overview
 
 A hinge has a single degree of freedom (rotation). You can also use a hinge joint to pin a body so that it can only move by rotating around a specific axis in the coordinate space of the node containing it.
 

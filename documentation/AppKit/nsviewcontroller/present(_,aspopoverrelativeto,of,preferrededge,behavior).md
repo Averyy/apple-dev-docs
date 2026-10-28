@@ -19,7 +19,7 @@ func present(_ viewController: NSViewController, asPopoverRelativeTo positioning
 - (void) presentViewController:(NSViewController *) viewController asPopoverRelativeToRect:(NSRect) positioningRect ofView:(NSView *) positioningView preferredEdge:(NSRectEdge) preferredEdge behavior:(NSPopoverBehavior) behavior;
 ```
 
-#### Discussion
+## Discussion
 
 This method calls the [`present(_:animator:)`](./present%28_,animator%29.md) method on `self` (the presenting view controller), and passes a popover animator to that method.
 

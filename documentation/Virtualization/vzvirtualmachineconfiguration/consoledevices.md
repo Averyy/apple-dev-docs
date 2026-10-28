@@ -19,7 +19,7 @@ var consoleDevices: [VZConsoleDeviceConfiguration] { get set }
 @property (copy, readwrite) NSArray<VZConsoleDeviceConfiguration *> * consoleDevices;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an empty array.
 

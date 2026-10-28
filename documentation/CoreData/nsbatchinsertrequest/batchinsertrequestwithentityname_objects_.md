@@ -21,7 +21,7 @@ Creates a batch-insertion request for a named managed entity, and provides an ar
 + (instancetype) batchInsertRequestWithEntityName:(NSString *) entityName objects:(NSArray<NSDictionary<NSString *,id> *> *) dictionaries;
 ```
 
-#### Return Value
+## Return Value
 
 A batch-insertion request.
 

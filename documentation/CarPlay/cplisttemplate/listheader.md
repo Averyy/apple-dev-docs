@@ -21,7 +21,7 @@ var listHeader: CPListTemplateDetailsHeader? { get set }
 @property (nonatomic, strong, nullable) CPListTemplateDetailsHeader * listHeader;
 ```
 
-#### Discussion
+## Discussion
 
 The list header provides a way to display additional context or summary information above the list sections. When set, the header appears between the navigation bar and the first list section.
 

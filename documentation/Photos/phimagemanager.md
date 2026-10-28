@@ -29,7 +29,7 @@ class PHImageManager
 - [Displaying Live Photos](../PhotoKit/displaying-live-photos.md)
 - [Loading and Caching Assets and Thumbnails](../PhotoKit/loading-and-caching-assets-and-thumbnails.md)
 
-#### Overview
+## Overview
 
 Use these methods to fetch full-size photo assets or thumbnail images, or to retrieve AVFoundation objects for playing, exporting, and manipulating video assets.
 

@@ -20,11 +20,11 @@ func canvasPixelAspectRatio() -> Double
 - (double) canvasPixelAspectRatio;
 ```
 
-#### Return Value
+## Return Value
 
 The pixel aspect ratio of the canvas.
 
-#### Discussion
+## Discussion
 
 This can change if the user sets the canvas to be viewed with or without pixel aspect ratio correction, so do not cache this value.
 

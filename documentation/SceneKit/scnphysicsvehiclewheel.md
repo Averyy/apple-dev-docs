@@ -25,17 +25,17 @@ class SCNPhysicsVehicleWheel
 @interface SCNPhysicsVehicleWheel : NSObject
 ```
 
-#### Overview
+## Overview
 
 To use wheels in a vehicle simulation, include them when creating an [`SCNPhysicsVehicle`](./scnphysicsvehicle.md) object with the [`init(chassisBody:wheels:)`](./scnphysicsvehicle/init%28chassisbody,wheels%29.md) initializer, then add the vehicle object to your scene’s physics world using the physics world’s [`addBehavior(_:)`](./scnphysicsworld/addbehavior%28_%29.md) method.
 
-##### Creating a Wheel
+### Creating a Wheel
 
 You create a wheel with an [`SCNNode`](./scnnode.md) object whose contents provide the wheel’s visual representation—a geometry that rotates when the simulated vehicle rolls along a surface. The node representing a wheel must be a child of the node containing the physics body that serves as the vehicle’s chassis, and each wheel in a vehicle must reference a unique node. Typically, you load a scene file that contains a node hierarchy representing the vehicle and all of its wheels. Next, you designate which nodes serve as the body and wheels.
 
 Because the [`SCNPhysicsVehicle`](./scnphysicsvehicle.md) behavior that a wheel is attached to manages its participation in the physics simulation, you don’t need to attach a physics body to the [`SCNNode`](./scnnode.md) object representing a wheel.
 
-##### Changing a Wheel’s Physical Properties
+### Changing a Wheel’s Physical Properties
 
 The properties of a wheel define the geometry of its connection to the vehicle and simulate its size, traction, and suspension. You can change these properties after the wheel and the vehicle containing it have been added to the physics world. In this way, you can simulate effects such as variable suspension and flat tires.
 

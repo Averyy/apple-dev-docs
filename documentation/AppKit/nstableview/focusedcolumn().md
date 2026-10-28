@@ -21,11 +21,11 @@ func focusedColumn() -> Int
 - (NSInteger) focusedColumn;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the column, or -1 if there is no focused column
 
-#### Discussion
+## Discussion
 
 The focus interaction will always be on the [`selectedRow`](./selectedrow.md) of the table. If the [`selectedRow`](./selectedrow.md) is a full width cell, then `focusedColumn` will return `1` when focused.
 

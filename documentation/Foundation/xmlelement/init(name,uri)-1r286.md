@@ -20,11 +20,11 @@ init(name: String, uri URI: String?)
 - (instancetype) initWithName:(NSString *) name URI:(NSString *) URI;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSXMLElement` object or `nil` if initialization did not succeed.
 
-#### Discussion
+## Discussion
 
 You can look up the namespace prefix for this element node based on its URI using [`resolvePrefix(forNamespaceURI:)`](./resolveprefix%28fornamespaceuri%29.md).  This method is the primary initializer for the `NSXMLElement` class.
 

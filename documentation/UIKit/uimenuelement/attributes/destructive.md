@@ -23,7 +23,7 @@ static var destructive: UIMenuElement.Attributes { get }
 UIMenuElementAttributesDestructive
 ```
 
-#### Discussion
+## Discussion
 
 When you use this attribute, the menu system displays the menu element in a more prominent style, such as with red text.
 

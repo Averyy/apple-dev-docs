@@ -5,7 +5,7 @@
 
 Analyze how many times people download your app on the App Store.
 
-#### Overview
+## Overview
 
 The App Downloads Report includes download data generated on the App Store. You can use this report to understand your total number of downloads, including first-time downloads, redownloads, updates, and more.
 
@@ -22,7 +22,7 @@ The App Downloads Report includes download data generated on the App Store. You 
 
 The Analytics Reports framework delivers new portions of report content as instances. Each instance can contain one or more batches of data, to accommodate late-arriving events, or in rare cases, data corrections.  To learn more, see [Data Completeness and Corrections](./data-completeness-corrections.md).
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type | Standard Report | Detailed Report |
 | --- | --- | --- | --- | --- |
@@ -42,7 +42,7 @@ The Analytics Reports framework delivers new portions of report content as insta
 | Territory | The App Store country or region where the download occured. | `string` | ✔ | ✔ |
 | Counts | The total number of downloads. | `integer` | ✔ | ✔ |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

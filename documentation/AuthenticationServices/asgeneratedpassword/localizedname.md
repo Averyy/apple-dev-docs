@@ -22,7 +22,7 @@ var localizedName: String { get }
 @property (nonatomic, readonly) NSString * localizedName;
 ```
 
-#### Discussion
+## Discussion
 
 This may be shown to help with selecting the desired password.
 

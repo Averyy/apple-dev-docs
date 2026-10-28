@@ -19,7 +19,7 @@ Draws a line along the specified path.
 - (void) strokePath:(CGPathRef) path inContext:(CGContextRef) context;
 ```
 
-#### Discussion
+## Discussion
 
 You must set the current stroke color before calling this method. Typically you do this by calling the [`applyStrokePropertiesToContext:atZoomScale:`](./applystrokepropertiestocontext_atzoomscale_.md) method prior to drawing. If the [`strokeColor`](./strokecolor.md) property is currently `nil`, this method does nothing.
 

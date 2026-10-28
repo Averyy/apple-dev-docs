@@ -25,7 +25,7 @@ class func metadataItems(from metadataItems: [AVMetadataItem], filteredAndSorted
 + (NSArray<AVMetadataItem *> *) metadataItemsFromArray:(NSArray<AVMetadataItem *> *) metadataItems filteredAndSortedAccordingToPreferredLanguages:(NSArray<NSString *> *) preferredLanguages;
 ```
 
-#### Return Value
+## Return Value
 
 An array of metadata items that match the specified languages.
 

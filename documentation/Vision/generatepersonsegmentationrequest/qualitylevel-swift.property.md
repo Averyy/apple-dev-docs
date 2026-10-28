@@ -21,7 +21,7 @@ A value that indicates how the request balances accuracy and performance.
 final var qualityLevel: GeneratePersonSegmentationRequest.QualityLevel { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`GeneratePersonSegmentationRequest.QualityLevel.accurate`](./qualitylevel-swift.enum/accurate.md).
 

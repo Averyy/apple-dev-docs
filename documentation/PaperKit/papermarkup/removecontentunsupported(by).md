@@ -19,7 +19,7 @@ Remove all contents that is not supported by the provided feature set.
 mutating func removeContentUnsupported(by featureSet: FeatureSet)
 ```
 
-#### Discussion
+## Discussion
 
 After calling this method `featureSet.isSubset(of: features)` will be `true`.
 

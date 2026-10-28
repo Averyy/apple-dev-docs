@@ -23,7 +23,7 @@ var scalesLargeContentImage: Bool { get }
 @property (nonatomic, assign, readonly) BOOL scalesLargeContentImage;
 ```
 
-#### Discussion
+## Discussion
 
 If [`false`](../../Swift/false.md), the viewer displays the image at its intrinsic size.
 

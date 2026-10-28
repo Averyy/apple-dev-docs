@@ -25,7 +25,7 @@ var cullMode: SCNCullMode { get set }
 @property (nonatomic) SCNCullMode cullMode;
 ```
 
-#### Discussion
+## Discussion
 
 The vertex data and normal vectors in a geometry designate which side of each polygon is to be considered its front face, and the geometry’s orientation with respect to the camera determines which front surfaces are currently visible. Typically, back-facing surfaces are found only on the interior of a closed geometry, obscured by front-facing surfaces, so rendering these surfaces has a performance cost but no visible effect.
 

@@ -11,7 +11,7 @@ Gets the parameter that will be passed to the access notification handler.
 virtual void * getNotificationParameter() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the parameter that will be passed to the access notification handler.
 

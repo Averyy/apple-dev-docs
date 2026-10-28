@@ -19,7 +19,7 @@ func draggingDestinationDelegate() -> Any!
 - (id) draggingDestinationDelegate;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver’s dragging destination delegate.
 

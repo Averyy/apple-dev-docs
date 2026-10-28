@@ -20,7 +20,7 @@ The shape of a value type’s components.
 enum TupleDimensions
 ```
 
-#### Overview
+## Overview
 
 - `scalar`: a single value (e.g. `Float`, `Int`).
 - `vector(n)`: an n-component tuple (e.g. `Float3` is `.vector(3)`).

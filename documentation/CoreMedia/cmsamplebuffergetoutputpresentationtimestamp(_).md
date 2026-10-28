@@ -25,11 +25,11 @@ func CMSampleBufferGetOutputPresentationTimeStamp(_ sbuf: CMSampleBuffer) -> CMT
 extern CMTime CMSampleBufferGetOutputPresentationTimeStamp(CMSampleBufferRef sbuf);
 ```
 
-#### Return Value
+## Return Value
 
 The output presentation timestamp of the `CMSampleBuffer` or `kCMTimeInvalid` if there is an error.
 
-#### Discussion
+## Discussion
 
 The output presentation timestamp is the time at which the decoded, trimmed, stretched, and possibly reversed samples should start being presented. If [`CMSampleBufferGetOutputPresentationTimeStamp(_:)`](./cmsamplebuffergetoutputpresentationtimestamp%28_%29.md) has been called to explicitly set the output PTS, [`CMSampleBufferGetOutputPresentationTimeStamp(_:)`](./cmsamplebuffergetoutputpresentationtimestamp%28_%29.md) returns it. If not, [`CMSampleBufferGetOutputPresentationTimeStamp(_:)`](./cmsamplebuffergetoutputpresentationtimestamp%28_%29.md) calculates its result as `(PresentationTimeStamp + TrimDurationAtStart)` unless `kCMSampleBufferAttachmentKey_Reverse` is `kCFBooleanTrue`, in which case it calculates the result as  `(PresentationTimeStamp + Duration - TrimDurationAtEnd)`. These are generally correct for un-stretched, un-shifted playback.
 

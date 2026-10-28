@@ -11,7 +11,7 @@ Performs erase head processing.
 virtual void performErase();
 ```
 
-#### Overview
+## Overview
 
 This method is called automatically each time the timer event fires and erases the sample buffer and mix buffer from the previous location up to the current location of the audio engine.
 

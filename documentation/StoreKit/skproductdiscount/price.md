@@ -27,7 +27,7 @@ var price: NSDecimalNumber { get }
 @property (nonatomic, readonly) NSDecimalNumber * price;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`priceLocale`](./pricelocale.md) to format the price.
 

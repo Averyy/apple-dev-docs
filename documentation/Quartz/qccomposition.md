@@ -21,7 +21,7 @@ class QCComposition
 @interface QCComposition : NSObject
 ```
 
-#### Overview
+## Overview
 
 - comes from the system-wide composition repository  (`/Library/Compositions` and `~/Library/Compositions`) where it can be accessed by any application through the methods of the [`QCCompositionRepository`](./qccompositionrepository.md) class
 - is created from an arbitrary source (typically a file on disk) using one of its methods

@@ -21,7 +21,7 @@ Removes the entity from its current parent or from the scene if it is a root ent
 @preconcurrency func removeFromParent(preservingWorldTransform: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 This method behaves like the [`setParent(_:preservingWorldTransform:)`](./setparent%28_,preservingworldtransform%29.md) method with a value of `nil` for the `parent` parameter, except that method has no effect on root entities. A root entity is one that is stored in a scene’s [`anchors`](../scene/anchors.md) collection.
 

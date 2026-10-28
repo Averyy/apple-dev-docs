@@ -22,11 +22,11 @@ class func extrinsicMatrix(from fromDevice: AVCaptureDevice, to toDevice: AVCapt
 + (NSData *) extrinsicMatrixFromDevice:(AVCaptureDevice *) fromDevice toDevice:(AVCaptureDevice *) toDevice;
 ```
 
-#### Return Value
+## Return Value
 
 A [`Data`](../../Foundation/data.md) containing a [`matrix_float4x3`](../../simd/matrix_float4x3.md) matrix, which is a column major with 3 rows and 4 columns.
 
-#### Discussion
+## Discussion
 
 The extrinsic matrix consists of a unitless 3x3 rotation matrix (R) on the left and a translation (t) 3x1 column vector on the right, whose units are millimeters. The matrix expresses the destination camera’s extrinsics relative to the source camera. If `X_from` is a 3D point in the source camera’s coordinate system, you project it into the destination camera’s coordinate system with `X_to = [R | t] * X_from`.
 

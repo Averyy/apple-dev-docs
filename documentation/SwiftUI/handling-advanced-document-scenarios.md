@@ -5,15 +5,15 @@
 
 Extend your document-based app to support custom file formats, on-demand file access, and progress reporting.
 
-#### Overview
+## Overview
 
-After you’ve created a working document-based app, you can extend it to handle scenarios that go beyond basic reading and writing. Support file formats that the system doesn’t know about by default by using a custom [UTType](../UniformTypeIdentifiers/uttype.md). Access files outside the normal read and write lifecycle using [`makeFileCoordinator()`](./urldocumentconfiguration/makefilecoordinator%28%29.md), for example, to open a specific subfile in a package on demand. Add progress reporting to give people feedback during long operations.
+After you’ve created a working document-based app, you can extend it to handle scenarios that go beyond basic reading and writing. Support file formats that the system doesn’t know about by default by using a custom [UTType](../UniformTypeIdentifiers/uttype-swift.struct.md). Access files outside the normal read and write lifecycle using [`makeFileCoordinator()`](./urldocumentconfiguration/makefilecoordinator%28%29.md), for example, to open a specific subfile in a package on demand. Add progress reporting to give people feedback during long operations.
 
 > **Note**: If you’re new to document-based apps in SwiftUI, start with [Creating a document-based app](./creating-a-document-based-app.md).
 
-#### Declare a custom file format
+## Declare a custom file format
 
-The system knows about popular built-in formats and their identifiers, like [utf8PlainText](../UniformTypeIdentifiers/uttype-swift.struct/utf8plaintext.md), [jpeg](../UniformTypeIdentifiers/uttype-swift.struct/jpeg.md), and [markdown](../UniformTypeIdentifiers/uttype-swift.struct/markdown.md). For your own file formats, declare a custom [`UTType`](../UniformTypeIdentifiers/uttype.md) so the Finder, the document browser, and Spotlight understand them.
+The system knows about popular built-in formats and their identifiers, like [utf8PlainText](../UniformTypeIdentifiers/uttype-swift.struct/utf8plaintext.md), [jpeg](../UniformTypeIdentifiers/uttype-swift.struct/jpeg.md), and [markdown](../UniformTypeIdentifiers/uttype-swift.struct/markdown.md). For your own file formats, declare a custom [`UTType`](../UniformTypeIdentifiers/uttype-swift.struct.md) so the Finder, the document browser, and Spotlight understand them.
 
 Every custom type needs a base type that tells the system what kind of file it is. Use `public.data` or conforming types as a base type for single-file documents, or `com.apple.package` for documents the system stores as a directory but presents as a single file.
 
@@ -59,7 +59,7 @@ For more about declaring uniform type identifiers for proprietary formats, see [
 
 > **Note**: Every Mac registers the standard content types that the system provides, but the set of less common types each computer recognizes depends on the software installed on it. A computer might not recognize certain media types, for example, if no installed app declares them. Similarly, a computer that doesn’t have Xcode installed doesn’t recognize `com.apple.xcode.resultbundle`, the type identifier for Xcode result bundles.
 
-#### Access files outside read and write
+## Access files outside read and write
 
 SwiftUI coordinates file access for `read` and `write` calls automatically. To access the file URL at other times — for example, when reading a specific subfile in a package — use the configuration’s file coordinator, as shown here:
 
@@ -80,7 +80,7 @@ coordinator.coordinate(
 
 > ❗ **Important**: Always use [`makeFileCoordinator()`](./urldocumentconfiguration/makefilecoordinator%28%29.md) for disk access outside of `read` and `write`. Accessing the file URL directly risks corruption because other processes, including iCloud, can change it any time.
 
-#### Report progress
+## Report progress
 
 Packages let you read and write incrementally; instead of loading or saving the whole document on every change, you can read only the files you need and write only the ones that changed. For notebook documents that consist of multiple files, custom image formats that store data in separate files, or projects with embedded media, this can mean the difference between a fast autosave and a slow one.
 

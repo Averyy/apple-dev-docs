@@ -23,7 +23,7 @@ func runDeferredStartWhenNeeded()
 - (void) runDeferredStartWhenNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 For best perceived startup performance, call this after displaying the first frame, so that deferred start processing doesn’t interfere with other initialization operations. For example, if using a [`CAMetalLayer`](../../QuartzCore/cametallayer.md) to draw camera frames, add a `presentHandler` (using https://developer.apple.com/documentation/metal/mtldrawable/addpresentedhandler) to the first drawable and call [`runDeferredStartWhenNeeded()`](./rundeferredstartwhenneeded%28%29.md) from there.
 

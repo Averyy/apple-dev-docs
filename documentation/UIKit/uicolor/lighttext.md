@@ -22,11 +22,11 @@ class var lightText: UIColor { get }
 @property (class, nonatomic, readonly) UIColor * lightTextColor;
 ```
 
-#### Return Value
+## Return Value
 
 The `UIColor` object.
 
-#### Discussion
+## Discussion
 
 This color doesn’t adapt to changes in the underlying trait environment.
 

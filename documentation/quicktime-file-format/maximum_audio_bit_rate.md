@@ -3,26 +3,26 @@
 **Framework**: QuickTime File Format  
 **Role**: Article
 
-#### Overview
+## Overview
 
 - **Containing profile atom**: Track (sound), movie
 - **`part-ID`**: `0x20202020` (universal feature)
 - **`feature-code`**: `'mabr'`
 - **`feature-value`**: Unsigned `int(32)` indicating maximum audio bit rate in bits per second
 
-#### Feature Values
+## Feature Values
 
 The value is an unsigned 32-bit integer indicating the maximum audio bit rate in bits per second that must be supported to guarantee playback of the audio. The actual maximum bit rate may be smaller, so a reader should not display this as the current bit rate.
 
 Example: 128 kbps = 128000.
 
-#### Writer Responsibilities
+## Writer Responsibilities
 
 A writer of the maximum audio bit rate feature should record a value that is equal to or greater than the current bit rate for the sound track. While the value may exceed the actual maximum bit-rate, the writer should attempt to minimize any over-estimation.
 
 While recording the precise bit rate is preferred, it is not required. A writer (such as a CE device) may choose instead to record a constant value so long as that value is greater than or equal to the bit rate that may be encoded. It is also permitted to record a value set by the audio encoder during initialization so long as the value is never exceeded.
 
-#### Feature Value Algorithm
+## Feature Value Algorithm
 
 Use a sliding average over 1 second calculated from the sample tables.
 
@@ -33,7 +33,7 @@ If the sound track is edited, and the audio bit rate is not constant, the maximu
 1. For each sample, calculate the average 1-second bit rate; choose the shortest run of samples, including the candidate sample, that comprise 1 second or more of audio, then divide the total data size of those samples by their total duration.
 2. Choose the maximum value from the list of calculated 1-second averages.
 
-#### Reader Responsibilities
+## Reader Responsibilities
 
 A reader of this feature code should compare the recorded value with its own limits to determine if the content can be played. The reader should not perform an equality comparison (=) but instead a relative comparison (<, <=, >, or >=).
 

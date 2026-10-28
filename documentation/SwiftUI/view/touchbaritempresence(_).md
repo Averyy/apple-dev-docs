@@ -16,11 +16,11 @@ nonisolated
 func touchBarItemPresence(_ presence: TouchBarItemPresence) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A trait that describes the behavior for this Touch Bar view.
 
-#### Discussion
+## Discussion
 
 Use `touchBarItemPresence(_:)` to define the visibility requirements of a particular Touch Bar view during customization by the user.
 

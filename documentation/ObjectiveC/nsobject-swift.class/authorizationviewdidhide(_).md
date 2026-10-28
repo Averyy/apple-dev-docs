@@ -19,7 +19,7 @@ func authorizationViewDidHide(_ view: SFAuthorizationView!)
 - (void) authorizationViewDidHide:(SFAuthorizationView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 This delegate method, if present, is called whenever the [`isHidden`](../../AppKit/nsview/ishidden.md) method is called to show or hide the view.
 

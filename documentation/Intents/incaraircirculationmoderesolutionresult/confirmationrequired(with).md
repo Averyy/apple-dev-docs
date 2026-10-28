@@ -24,11 +24,11 @@ class func confirmationRequired(with carAirCirculationModeToConfirm: INCarAirCir
 + (instancetype) confirmationRequiredWithCarAirCirculationModeToConfirm:(INCarAirCirculationMode) carAirCirculationModeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCarAirCirculationModeResolutionResult`](../incaraircirculationmoderesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to an equivalent circulation mode and want the user to confirm the replacement value before proceeding.
 

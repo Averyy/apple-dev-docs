@@ -19,11 +19,11 @@
 static SPScaledPose3DFloat SPScaledPose3DFloatMakeWithVector(simd_float3 position, simd_quatf rotation, float scale);
 ```
 
-#### Return Value
+## Return Value
 
 A new scaled pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a scaled pose with the specified position, rotation, and scale.
 

@@ -21,7 +21,7 @@ A date style with the month, day of month, and year components represented as nu
 static let numeric: Date.FormatStyle.DateStyle
 ```
 
-#### Discussion
+## Discussion
 
 A `numeric` date style represents the date components using numeric values. For example, `10/17/2020`, for locale `en_US`.
 

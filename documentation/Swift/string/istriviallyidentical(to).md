@@ -21,7 +21,7 @@ Returns a boolean value indicating whether this string is identical to `other`.
 func isTriviallyIdentical(to other: String) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 Two string values are identical if there is no way to distinguish between them.
 

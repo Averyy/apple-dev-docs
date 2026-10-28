@@ -15,7 +15,7 @@ A wrapper around an object to facilitate working with subscripts.
 struct UnsafeProperty
 ```
 
-#### Overview
+## Overview
 
 Note that this is unchecked Sendable, and therefore unsafe. The contained object is NOT guaranted to be concurrency safe.
 

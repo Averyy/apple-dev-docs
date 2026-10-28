@@ -20,7 +20,7 @@ Stops analyzing audio predating the given time.
 final func cancelAnalysis(before: CMTime)
 ```
 
-#### Discussion
+## Discussion
 
 This method is useful in live-audio cases where you are no longer interested in results predating a certain time. For example, when you are captioning video and the scene changes, you do not need pending captions from the previous scene.
 

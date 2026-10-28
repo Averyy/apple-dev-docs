@@ -19,7 +19,7 @@ object appData
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 The `appData` object is part of the [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md). This object is present in the payload when the [`notificationType`](./notificationtype.md) is `RESCIND_CONSENT`.
 

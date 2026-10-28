@@ -5,7 +5,7 @@
 
 Optimize your app’s 3D augmented reality content to render efficiently on visionOS.
 
-#### Overview
+## Overview
 
 The complexity of the assets and features you use in a [`RealityView`](../RealityKit/realityview.md) have a big impact on the work your app and the render server do to render each frame. On visionOS, the system continuously renders 3D content in response to changes in head position and also incorporates any changes you make through system updates. Performance bottlenecks that prevent timely rendering and responsive feedback interfere with the spatial experience.
 
@@ -23,7 +23,7 @@ For information on how input propagates through the system and updates content o
 >
 > Session 10080: [Build spatial experiences with RealityKit](https://developer.apple.com/videos/play/wwdc2023/10080/)
 
-##### Reduce the complexity of meshes and materials
+### Reduce the complexity of meshes and materials
 
 To reduce the render server’s CPU overhead, lower draw call counts. One way to do this is to combine parts of your mesh that share a material. The render server performs a draw call for each individual part and uses the CPU to setup each call it sends to the GPU. While combining parts can improve performance, avoid combining parts that are far apart in your scene or that become too large to stay in the field of view when combined. The system renders the entire mesh for a part that is only partially in the field of view. It doesn’t render a part that completely falls outside the field of view.
 
@@ -40,7 +40,7 @@ In general, use less than:
 
 Find a balance between the other work your app needs to complete and the features of your 3D meshes. Complex meshes and materials in addition to frequent mesh draw calls can create CPU performance bottlenecks. The GPU overhead of visual effects the system applies to 3D content can make the effects of these complexities worse. Under certain conditions, the system applies visual effects automatically, for example, when an app’s scenes overlap a scene from another app or a person’s surroundings. In these cases, you can turn off other effects, such as grounding shadows. To turn off grounding shadows, toggle the [`GroundingShadowComponent`](../RealityKit/groundingshadowcomponent.md) setting in Reality Composer Pro. You can efficiently use Physically Based materials in Reality Composer Pro for smaller, fully opaque content. For larger content or content you choose to make transparent, the environmental lighting these materials use is expensive. Consider using a custom material with an unlit surface and add lighting textures or other less expensive effects to produce a similar effect.
 
-##### Load assets efficiently
+### Load assets efficiently
 
 Complex assets take a long time to load, contribute to longer app launches, and can trigger expensive render updates. To reduce asset loading times and their impact:
 
@@ -53,7 +53,7 @@ Complex assets take a long time to load, contribute to longer app launches, and 
 
 The complexity of an asset is primarily depends on its size and the amount of sub-assets it contains. When a RealityView loads an asset, your app’s process performs the work to load the asset but the system still registers the asset entities with the render server. The RealityKit Metrics instrument might detect a bottleneck, or stall, in the render server while loading an expensive asset.
 
-##### Minimize updates
+### Minimize updates
 
 When your custom systems modify entities and audio components, your app uses the CPU to encode the update. Then the render server performs additional work on the CPU to decode it and apply the changes to your content. To reduce the number of updates that your 3D RealityKit scenes make per frame:
 
@@ -75,7 +75,7 @@ To identify areas of frequent and complex updates, check the RealityKit Metrics 
 
 > **Note**: Depending on the type of content, you might see additional bottlenecks that result from these updates. Transform updates, animations, material updates, asset loading, and view hierarchy updates also cause the render server to redraw 3D content.
 
-##### Optimize animations
+### Optimize animations
 
 Minimize the CPU overhead of your animations and the total number of entities your animation affects.
 
@@ -89,7 +89,7 @@ To identify areas of frequent and complex updates, check the RealityKit Metrics 
 
 ![A screenshot that contains part of an Instruments trace document. It displays a vertical stack of timelines for RealityKit Metrics instrument. The metrics are expanded to display additional timelines for Entity Commits, RealityKit Animations, and RealityKit Physics metrics. The timeline for RealityKit Animations metrics is highlighted with an overlay. Below the timeline is an an outline view containing a Summary information for the RealityKit Module metrics.](https://developer.apple.com/tutorials/images/com.apple.visionOS/realitykit-metrics-animations@2x.png)
 
-##### Reduce collisions
+### Reduce collisions
 
 Collisions between objects in the Shared Space result in expensive physics calculations. To reduce the number of collisions and the work the system performs to compute collisions:
 
@@ -105,7 +105,7 @@ To identify areas with high CPU overhead resulting from collisions and physics c
 
 ![A screenshot that contains part of an Instruments trace document. It displays a vertical stack of timelines for RealityKit Metrics instrument. The metrics are expanded to display additional timelines for Entity Commits, RealityKit Animations, and RealityKit Physics metrics. The timeline for RealityKit Physics metrics is highlighted with an overlay. Below the timeline is an an outline view containing a Summary information for the RealityKit Physics metrics.](https://developer.apple.com/tutorials/images/com.apple.visionOS/realitykit-metrics-physics@2x.png)
 
-##### Lower the impact of particle effects
+### Lower the impact of particle effects
 
 To reduce the overhead of particle systems and the number of draw calls they generate, minimize the the total number of particles you have in your app. Often, you can create a similar effects with fewer particles. Without increasing the total number of particles, try to produce more particles per particle emitter rather than running several particle emitters synchronously with a small number of particles each. Loading particle effects is also an expensive operation, so preload them whenever possible and avoid loading several at the same time.
 
@@ -113,7 +113,7 @@ Experiment with different particle effects, shapes, and shaders when attempting 
 
 To identify areas with high GPU overhead resulting from particle effects simulation, check the RealityKit Metrics instrument for 3D Render GPU bottlenecks. To identify areas with high CPU overhead, check for Particles Update (CPU) bottlenecks. The instrument collects metrics on the number of Particle Draw Calls, Particle Triangles, and Particle Vertices. Expand the RealityKit Metrics instrument in the timeline pane to reveal graphs of this data under the 3D Render section. Select the section to view a summary of this data in the detail pane.
 
-##### View scene statistics in Reality Composer Pro
+### View scene statistics in Reality Composer Pro
 
 Take advantage of the statistics Reality Composer Pro provides when you use it to author RealityKit scenes. To view this data:
 

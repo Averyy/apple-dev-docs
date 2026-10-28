@@ -16,7 +16,7 @@ A certificate you use to authenticate against the Certification Authority of the
 let secureElementPlatformSigningCertificate: Data
 ```
 
-#### Discussion
+## Discussion
 
 This certificate contains Controlling Authority Security Domain public key information for authenticating a Secure Element Platform.
 

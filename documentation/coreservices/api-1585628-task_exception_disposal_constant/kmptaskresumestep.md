@@ -14,7 +14,7 @@
 kMPTaskResumeStep = 1
 ```
 
-#### Discussion
+## Discussion
 
 The task is resumed and single step is enabled.
 

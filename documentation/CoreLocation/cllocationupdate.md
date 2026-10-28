@@ -25,7 +25,7 @@ struct CLLocationUpdate
 
 - [Handling location updates in the background](./handling-location-updates-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 You use `CLLocationUpdate` events to observe changes in the device’s location, and to determine the activity type.
 

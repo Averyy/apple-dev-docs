@@ -34,7 +34,7 @@ init(path: Binding<NavigationPath>, @ContentBuilder root: () -> Root) where Data
 - [Understanding the navigation stack](../understanding-the-navigation-stack.md)
 - [Migrating to new navigation types](../migrating-to-new-navigation-types.md)
 
-#### Discussion
+## Discussion
 
 If you don’t need access to the navigation state, use [`init(root:)`](./init%28root%29.md).
 

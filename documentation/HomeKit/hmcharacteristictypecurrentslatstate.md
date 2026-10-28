@@ -24,7 +24,7 @@ let HMCharacteristicTypeCurrentSlatState: String
 extern NSString * const HMCharacteristicTypeCurrentSlatState;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueCurrentSlatState`](./hmcharacteristicvaluecurrentslatstate.md) enumeration.
 

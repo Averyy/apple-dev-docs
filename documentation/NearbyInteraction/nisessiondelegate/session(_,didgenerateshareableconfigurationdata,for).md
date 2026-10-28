@@ -26,7 +26,7 @@ optional func session(_ session: NISession, didGenerateShareableConfigurationDat
 
 - [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 The system invokes this callback only for sessions that run an accessory configuration. The `shareableConfigurationData` argument contains information that the accessory needs to begin the session. For more information, see [`NINearbyAccessoryConfiguration`](../ninearbyaccessoryconfiguration.md).
 

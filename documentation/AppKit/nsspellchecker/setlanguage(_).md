@@ -19,11 +19,11 @@ func setLanguage(_ language: String) -> Bool
 - (BOOL) setLanguage:(NSString *) language;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the language is available in the pop-up list, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The code listing below shows how languages can be specified in language. If the language specified is listed in the user’s list of preferred languages, the spell checker uses that language to accomplish its task.
 

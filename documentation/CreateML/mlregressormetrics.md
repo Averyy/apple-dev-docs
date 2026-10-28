@@ -24,7 +24,7 @@ struct MLRegressorMetrics
 
 - [Improving Your Model’s Accuracy](./improving-your-model-s-accuracy.md)
 
-#### Overview
+## Overview
 
 To understand what performance you can expect from the regressor, you start by looking at its [`maximumError`](./mlregressormetrics/maximumerror.md). This high-level metric indicates your model’s worst-case performance. To get a sense for how your model performs on average, look at the [`rootMeanSquaredError`](./mlregressormetrics/rootmeansquarederror.md). In both cases, you want to minimize the value and therefore the error.
 

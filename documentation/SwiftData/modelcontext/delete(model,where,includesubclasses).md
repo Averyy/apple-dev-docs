@@ -22,7 +22,7 @@ Removes each model satisfying the given predicate from the persistent storage du
 func delete<T>(model: T.Type, where predicate: Predicate<T>? = nil, includeSubclasses: Bool = true) throws where T : PersistentModel
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: If you don’t provide a predicate, the context will remove all models of the specified type from the persistent storage.
 

@@ -19,17 +19,17 @@ func AEGetDescData(_ theAEDesc: UnsafePointer<AEDesc>!, _ dataPtr: UnsafeMutable
 OSErr AEGetDescData(const AEDesc *theAEDesc, void *dataPtr, Size maximumSize);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Your application can call [`AEGetDescDataSize(_:)`](./api-1450119-aegetdescdatasize.md) to get the size, in bytes, of the data in a descriptor, allocate a buffer or variable of that size, then call `AEGetDescData` to get the data.
 
 This function works only with value descriptors created by [`AECreateDesc(_:_:_:_:)`](./api-1448535-aecreatedesc.md). You cannot get the data of an [`AERecord`](./aerecord.md) or [`AEDescList`](./aedesclist.md), for example.
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

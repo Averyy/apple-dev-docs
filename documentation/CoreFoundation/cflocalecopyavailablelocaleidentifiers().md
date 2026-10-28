@@ -25,7 +25,7 @@ func CFLocaleCopyAvailableLocaleIdentifiers() -> CFArray!
 extern CFArrayRefCFLocaleCopyAvailableLocaleIdentifiers();
 ```
 
-#### Return Value
+## Return Value
 
 An array of CFString objects that represents all locales for which locale data is available. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

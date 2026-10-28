@@ -22,7 +22,7 @@ func invalidate()
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 When an app calls this function, NI invokes [`session(_:didRemove:reason:)`](../nisessiondelegate/session%28_,didremove,reason%29.md) on the peer’s side and passes in the `reason` [`NINearbyObject.RemovalReason.peerEnded`](../ninearbyobject/removalreason/peerended.md). The app can’t restart invalid sessions.
 

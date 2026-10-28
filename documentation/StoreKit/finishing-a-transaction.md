@@ -5,7 +5,7 @@
 
 Finish the transaction to complete the purchase process.
 
-#### Overview
+## Overview
 
 Finishing a transaction tells StoreKit that your app completed its workflow to make a purchase complete. Unfinished transactions remain in the queue until they’re finished, so be sure to add the transaction queue observer every time your app launches, to enable your app to finish the transactions. Your app needs to finish each transaction, whether it succeeds or fails.
 

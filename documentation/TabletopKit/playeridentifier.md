@@ -15,7 +15,7 @@ A unique identifier for players.
 struct PlayerIdentifier
 ```
 
-#### Overview
+## Overview
 
 A player identifier is unique across all instances of the same tabletop game.
 

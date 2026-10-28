@@ -22,7 +22,7 @@ struct Priority
 typedef float NSTouchBarItemPriority;
 ```
 
-#### Discussion
+## Discussion
 
 Use these constants to set the [`visibilityPriority`](./visibilitypriority.md) property of an [`NSTouchBarItem`](../nstouchbaritem.md) instance. The Touch Bar hides items of lower priority when there isn’t enough space to show all items.
 

@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether an integer is unequal to a demand
 static func != (lhs: Int, rhs: Subscribers.Demand) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 The `.unlimited` value isn’t equal to any integer.
 

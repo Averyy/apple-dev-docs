@@ -24,7 +24,7 @@ var semanticSegmentationHairMatte: CIImage? { get }
 @property (readonly, nullable) CIImage * semanticSegmentationHairMatte;
 ```
 
-#### Discussion
+## Discussion
 
 This matting image segments hair from all people in the visible field of view of the image.
 

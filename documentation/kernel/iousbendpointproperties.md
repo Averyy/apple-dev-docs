@@ -15,7 +15,7 @@ A structure that holds USB endpoint properties.
 typedef struct IOUSBEndpointProperties IOUSBEndpointProperties;
 ```
 
-#### Discussion
+## Discussion
 
 Use this structure with the IOUSBLib [`GetEndpointPropertiesV3`](../iokit/iousbinterfaceinterface942/api-2977212-getendpointpropertiesv3.md) and [`GetPipePropertiesV3`](../iokit/iousbinterfaceinterface942/api-2977226-getpipepropertiesv3.md) API. Most of the fields come directly from the corresponding standard endpoint descriptor and SuperSpeed endpoint companion descriptor.
 

@@ -17,7 +17,7 @@ Get the cache size in bytes.
 static var cacheMemory: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 The cache includes memory not currently used that has not been returned to the system allocator. This represents buffers from previous computations that are kept in a buffer pool for potential reuse.
 

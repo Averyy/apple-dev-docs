@@ -15,11 +15,11 @@ Recursively sets option bits in the dictionary and all child collections.
 virtual unsigned int setOptions(unsigned int options, unsigned int mask, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 The options bitfield as it was before the set operation.
 
-#### Discussion
+## Discussion
 
 Kernel extensions should not call this function.
 

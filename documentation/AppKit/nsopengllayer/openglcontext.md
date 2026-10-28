@@ -21,7 +21,7 @@ var openGLContext: NSOpenGLContext? { get set }
 @property (strong, nullable) NSOpenGLContext * openGLContext;
 ```
 
-#### Discussion
+## Discussion
 
 Provides access to the layer’s associated [`NSOpenGLContext`](../nsopenglcontext.md).  Subclasses shouldn’t invoke `setOpenGLContext:`, but can override it if desired to intercept assignment of the layer’s context.
 

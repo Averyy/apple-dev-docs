@@ -21,7 +21,7 @@ case geodetic
 NIDLTDOACoordinatesTypeGeodetic
 ```
 
-#### Discussion
+## Discussion
 
 When the coordinate type ([`coordinatesType`](../nidltdoameasurement/coordinatestype.md)) for a given measurement ([`NIDLTDOAMeasurement`](../nidltdoameasurement.md)) is this option, the value of the measurement’s [`coordinates`](../nidltdoameasurement/coordinates.md) is a triplet of the format (latitude, longitude, altitude).
 

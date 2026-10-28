@@ -29,7 +29,7 @@ class AUAudioUnit
 - [Adding Parallel Real-Time Threads to Audio Workgroups](./adding-parallel-real-time-threads-to-audio-workgroups.md)
 - [Rendering Spatial Audio from Bluetooth headphones](./rendering-spatial-audio-from-bluetooth-headphones.md)
 
-#### Overview
+## Overview
 
 Hosts can instantiate either version 3 or version 2 audio units with this class, and to some extent control whether an audio unit is instantiated in-process or in a separate extension process.
 

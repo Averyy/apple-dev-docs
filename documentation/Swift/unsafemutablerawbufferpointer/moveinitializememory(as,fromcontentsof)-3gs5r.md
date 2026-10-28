@@ -22,11 +22,11 @@ Moves every element of an initialized source buffer into the uninitialized memor
 func moveInitializeMemory<T>(as type: T.Type, fromContentsOf source: UnsafeMutableBufferPointer<T>) -> UnsafeMutableBufferPointer<T> where T : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 A typed buffer referencing the initialized elements. The returned buffer references memory starting at the same base address as this buffer, and its count is equal to `source.count`.
 
-#### Discussion
+## Discussion
 
 When calling the `moveInitializeMemory(as:fromContentsOf:)` method, the memory referenced by the buffer must be uninitialized, or initialized to a trivial type. The buffer must reference enough memory to store `source.count` elements, and its `baseAddress` must be properly aligned for accessing `C.Element`. After the method returns, the memory referenced by the returned buffer is initialized and the memory region underlying `source` is uninitialized.
 

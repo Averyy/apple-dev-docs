@@ -22,11 +22,11 @@ func JSValueCompareUInt64(_ ctx: JSContextRef, _ left: JSValueRef, _ right: UInt
 JSRelationCondition JSValueCompareUInt64(JSContextRef ctx, JSValueRef left, uint64_t right, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 A value of JSRelationCondition, a kJSRelationConditionUndefined is returned if an exception is thrown.
 
-#### Discussion
+## Discussion
 
 Compares a JSValue with an unsigned 64-bit integer.
 

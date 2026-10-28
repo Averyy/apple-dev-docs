@@ -15,7 +15,7 @@ Location group targeting, restricting delivery to the business locations in spec
 object AdGroupTargetingCreate.LocationGroup
 ```
 
-#### Discussion
+## Discussion
 
 Used with Apple Maps campaigns. For creating and managing groups, see [Managing Location Groups](../location-groups-overview.md). Uses the [`TargetingDataCreate`](../targetingdatacreate.md) `include`/`exclude` shape.
 

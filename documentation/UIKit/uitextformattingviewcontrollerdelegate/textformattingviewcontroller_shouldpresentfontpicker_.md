@@ -17,11 +17,11 @@ If implemented, text formatting will call this method before presenting font pic
 - (BOOL) textFormattingViewController:(UITextFormattingViewController *) viewController shouldPresentFontPicker:(UIFontPickerViewController *) fontPicker;
 ```
 
-#### Return Value
+## Return Value
 
 Flag indicating if text formatting controller should present font picker.
 
-#### Discussion
+## Discussion
 
 If you decide to prevent presentation of font picker via text formatting controller, you may present provided font picker yourself. In this case, you will have to handle any font picker actions independently.
 

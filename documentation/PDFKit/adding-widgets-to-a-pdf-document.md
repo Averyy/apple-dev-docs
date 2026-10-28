@@ -5,7 +5,7 @@
 
 Add text, button, and choice widgets to a PDF document.
 
-#### Overview
+## Overview
 
 Widgets are interactive form elements that you can add to a PDF to make it easier to enter and submit information. Widgets are a special annotation subtype. To learn more about non-interactive custom annotations, see [Adding Custom Graphics to a PDF](./adding-custom-graphics-to-a-pdf.md).
 
@@ -13,7 +13,7 @@ Each widget type has several variations. A button can be a radio button, a check
 
 ![Add widgets to create a form in a PDF.](https://developer.apple.com/tutorials/images/com.apple.pdfkit/media-3039567@2x.png)
 
-##### Create a Widget Annotation
+### Create a Widget Annotation
 
 Create a PDF annotation of type [`widget`](./pdfannotationsubtype/widget.md). This example initializes a widget annotation with rectangular bounds:
 
@@ -21,7 +21,7 @@ Create a PDF annotation of type [`widget`](./pdfannotationsubtype/widget.md). Th
 let radioButton = PDFAnnotation(bounds: CGRect(x: 135, y: 200, width: 24, height: 24), forType: .widget, withProperties: nil)
 ```
 
-##### Specify a Field Type and a Control Type
+### Specify a Field Type and a Control Type
 
 Specify a [`widgetFieldType`](./pdfannotation/widgetfieldtype.md) that is a [`PDFAnnotationWidgetSubtype`](./pdfannotationwidgetsubtype.md). The three different subtypes are [`text`](./pdfannotationwidgetsubtype/text.md), [`button`](./pdfannotationwidgetsubtype/button.md), and [`choice`](./pdfannotationwidgetsubtype/choice.md). Here you will create a button widget for the radio button:
 
@@ -37,7 +37,7 @@ radioButton.widgetControlType = .radioButtonControl
 
 ```
 
-##### Adjust Widget Properties
+### Adjust Widget Properties
 
 Adjust properties to highlight the widget so it is more visible. The following example adds a blue background to a radio button widget.
 
@@ -48,7 +48,7 @@ radioButton.backgroundColor = UIColor.blue
 
 Properties will be different depending on the field type. If you have multiple radio buttons and want to group them together, specify the same [`fieldName`](./pdfannotation/fieldname.md) property. Specify different [`buttonWidgetStateString`](./pdfannotation/buttonwidgetstatestring.md) properties for each button if you should only select one at a time. For a text field, you can use [`widgetStringValue`](./pdfannotation/widgetstringvalue.md) to specify placeholder text and [`font`](./pdfannotation/font.md) to specify the font of the field’s text.
 
-##### Add the Annotation to Your PDF
+### Add the Annotation to Your PDF
 
 Add the annotation to the page.
 

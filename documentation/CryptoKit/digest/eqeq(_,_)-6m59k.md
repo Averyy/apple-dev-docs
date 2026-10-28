@@ -21,7 +21,7 @@ Determines whether two digests are equal.
 static func == (lhs: Self, rhs: Self) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value set to `true` if the two digests are equal.
 

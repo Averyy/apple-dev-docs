@@ -17,11 +17,11 @@ Element-wise bitwise xor.
 static func ^ (lhs: some ScalarOrArray, rhs: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Take the bitwise xor of two arrays with numpy-style broadcasting semantics. Either or both input arrays can also be scalars.
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`bitwiseXOr(_:_:stream:)`](../bitwisexor%28_,_,stream%29.md)

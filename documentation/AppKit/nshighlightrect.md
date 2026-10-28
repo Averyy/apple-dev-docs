@@ -15,7 +15,7 @@ Highlights the specified rect by filling it with white.
 extern void NSHighlightRect(NSRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 Highlights the rectangle referred to by `aRect`. Light gray becomes white, and white becomes light gray. This function must be called twice, once to highlight the rectangle and once to unhighlight it; the rectangle should not be left in its highlighted state. When not drawing on the screen, the compositing operation is replaced by one that fills the rectangle with light gray.
 

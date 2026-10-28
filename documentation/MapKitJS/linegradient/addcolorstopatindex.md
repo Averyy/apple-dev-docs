@@ -15,7 +15,7 @@ Adds a color transition at the index point in the list of points within a polyli
 addColorStopAtIndex(index: number, color: string): void;
 ```
 
-#### Discussion
+## Discussion
 
 If the index is invalid, MapKit JS logs a warning to the console, but doesn’t change the object.
 

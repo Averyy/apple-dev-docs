@@ -24,7 +24,7 @@ func CFNetworkCopySystemProxySettings() -> Unmanaged<CFDictionary>?
 extern CFDictionaryRefCFNetworkCopySystemProxySettings();
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary returned contains key-value pairs that represent the current internet proxy settings. The keys in this dictionary are defined in [Global Proxy Settings Constants](./global-proxy-settings-constants.md).
 

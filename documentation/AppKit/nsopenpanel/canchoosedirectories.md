@@ -19,7 +19,7 @@ var canChooseDirectories: Bool { get set }
 @property BOOL canChooseDirectories;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), users can choose directories in the panel.
 

@@ -16,7 +16,7 @@ A phone number for the contact.
 DOMString phoneNumber;
 ```
 
-#### Discussion
+## Discussion
 
 Phone numbers do not necessarily follow any standard formats, and are not validated.
 

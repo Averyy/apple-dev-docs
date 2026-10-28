@@ -23,7 +23,7 @@ func gss_inquire_cred_by_mech(_ minor_status: UnsafeMutablePointer<OM_uint32>, _
 OM_uint32 gss_inquire_cred_by_mech(OM_uint32 *minor_status, gss_cred_id_t const cred_handle, gss_OID const mech_type, gss_name_t*cred_name, OM_uint32 *initiator_lifetime, OM_uint32 *acceptor_lifetime, gss_cred_usage_t *cred_usage);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 

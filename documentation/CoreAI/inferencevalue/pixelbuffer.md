@@ -23,7 +23,7 @@ var pixelBuffer: CVMutablePixelBuffer? { get }
 
 - [Integrating on-device AI models in your app with Core AI](../integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
-#### Return Value
+## Return Value
 
 The underlying pixel buffer or `nil` if this was not an image value.
 

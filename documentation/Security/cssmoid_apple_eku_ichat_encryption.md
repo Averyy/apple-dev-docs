@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_APPLE_EKU_ICHAT_ENCRYPTION;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

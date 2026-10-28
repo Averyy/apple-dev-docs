@@ -19,11 +19,11 @@ class func addPropertiesAndTypes(_ properties: [AnyHashable : Any]!) -> Int
 + (NSInteger) addPropertiesAndTypes:(NSDictionary *) properties;
 ```
 
-#### Return Value
+## Return Value
 
 The number of properties successfully added, or `-1` if an error occurs.
 
-#### Discussion
+## Discussion
 
 In each dictionary entry, the key is a string with the property’s name, and the value is a constant with the property’s type. The property’s name must be unique. You may want to use Java-style package names for your properties, for example, `org.dogclub.dogname` or `com.mycompany.customerID`. The property type must be one of the constants described in [Property Types](../property_types.md).
 

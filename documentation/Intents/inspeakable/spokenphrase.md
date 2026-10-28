@@ -38,7 +38,7 @@ var spokenPhrase: String { get }
 
 - [Handling an Intent](../../SiriKit/handling-an-intent.md)
 
-#### Discussion
+## Discussion
 
 Typically, this phrase corresponds to a custom term defined in the `AppIntentVocabulary.plist` file of your Intents extension, but it may also be a custom phrase spoken by the user. In both cases, it represents a term that you must resolve as part of handling an intent. For example, it might contain a workout name that you must resolve.
 

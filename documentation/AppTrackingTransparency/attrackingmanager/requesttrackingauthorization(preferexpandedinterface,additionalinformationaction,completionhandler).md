@@ -25,11 +25,11 @@ class func requestTrackingAuthorization(preferExpandedInterface: Bool, additiona
 + (void) requestTrackingAuthorizationPreferringExpandedInterface:(BOOL) preferExpandedInterface additionalInformationAction:(void (^)()) additionalInformationAction completionHandler:(void (^)(ATTrackingManagerAuthorizationStatus status)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method requests authorization to access app-related data that the app can use to track the person or the device. The method augments the regular authorization request flow (see [`requestTrackingAuthorization(completionHandler:)`](./requesttrackingauthorization%28completionhandler%29.md)) by adding functionality to the modal UI with the option of requesting a full-page sheet, Markdown-formatted text, and an optional Additional Information button.
 
-#### Display a full-page sheet
+## Display a full-page sheet
 
 The functionality this method adds to the authorization process is available regionally, and requires the device to be located in a specific European Union country and signed in with an Apple Account with a specific EU country or region:
 
@@ -38,7 +38,7 @@ The functionality this method adds to the authorization process is available reg
 
 Outside of the European Union, the system doesn’t use either parameter, and presents a system alert displaying the original [`NSUserTrackingUsageDescription`](../../BundleResources/information-property-list/nsusertrackingusagedescription.md), which is equivalent to calling [`requestTrackingAuthorization(completionHandler:)`](./requesttrackingauthorization%28completionhandler%29.md).
 
-#### Handle the person’s response
+## Handle the person’s response
 
 When the person answers the prompt, the system calls the argument completion handler with a status object ([`ATTrackingManager.AuthorizationStatus`](./authorizationstatus.md)) set to [`ATTrackingManager.AuthorizationStatus.authorized`](./authorizationstatus/authorized.md) or [`ATTrackingManager.AuthorizationStatus.denied`](./authorizationstatus/denied.md), depending on the person’s response.
 
@@ -52,17 +52,17 @@ In some cases, the system doesn’t display the prompt and instead runs your com
 - Your code invokes this method through an app extension.
 - The app’s state is a value other than `UIApplicationStateActive`.
 
-#### Provide additional information
+## Provide additional information
 
 If someone taps Additional Information, the sheet dismisses without recording an answer, and your `additionalInformationAction` closure runs. In your closure, present your own custom UI that provides more information to assist people in their decision making. Then call this method again to ask for permission once more.
 
 The completion handler still runs after an Additional Information button tap, receiving [`ATTrackingManager.AuthorizationStatus.notDetermined`](./authorizationstatus/notdetermined.md), since the person hasn’t yet made a decision.
 
-#### Prompt again after a year
+## Prompt again after a year
 
 In the European Union, if a person answers the prompt, the system notes the date and doesn’t allow the prompt to display again until a year passes. You can make an additional request after a year whether the person approves or denies your app’s previous tracking request, unless the person disables tracking in Settings > Privacy & Security > Tracking.
 
-#### Configure the app’s target properties
+## Configure the app’s target properties
 
 To use this method, add the [`NSUserTrackingUsageDescription`](../../BundleResources/information-property-list/nsusertrackingusagedescription.md) key to your app’s target properties in Xcode.
 

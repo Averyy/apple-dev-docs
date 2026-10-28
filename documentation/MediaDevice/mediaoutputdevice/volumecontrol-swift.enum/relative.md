@@ -21,7 +21,7 @@ case relative
 
 - [Creating a media device extension](../../creating-a-media-device-extension.md)
 
-#### Discussion
+## Discussion
 
 The device only supports relative volume adjustments (up/down by increments). This is common with devices that have hardware volume buttons but do not expose their current volume level or allow direct volume setting.
 

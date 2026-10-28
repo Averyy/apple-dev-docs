@@ -15,7 +15,7 @@
 kSENSE_KEY_COPY_ABORTED = 0x0A
 ```
 
-#### Discussion
+## Discussion
 
 Device server indicates a copy aborted condition.
 

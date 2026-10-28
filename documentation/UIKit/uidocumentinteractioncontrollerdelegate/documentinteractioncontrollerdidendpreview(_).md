@@ -22,7 +22,7 @@ optional func documentInteractionControllerDidEndPreview(_ controller: UIDocumen
 - (void) documentInteractionControllerDidEndPreview:(UIDocumentInteractionController *) controller;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called after the view containing the document preview has been removed from the application’s key window. You can use this notification to remove any interface elements you set up behind the preview elements.
 

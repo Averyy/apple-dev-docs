@@ -19,7 +19,7 @@ var subviews: [NSView] { get set }
 @property (copy) NSArray<__kindof NSView *> * subviews;
 ```
 
-#### Discussion
+## Discussion
 
 This array contains zero or more `NSView` objects that represent the views embedded in the current view’s content. The current view acts as the superview for each subview. The order of the subviews may be considered as being back-to-front, but this does not imply invalidation and drawing behavior.
 

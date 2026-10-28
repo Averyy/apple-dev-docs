@@ -19,7 +19,7 @@ The array that the value wraps.
 var ndArray: NDArray? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` when the value contains an image instead of an array. Accessing this property consumes the value and transfers ownership of the array to the caller.
 

@@ -15,11 +15,11 @@ Annotate your interface with app entities to offer contextual information about 
 - watchOS 11.2+
 - Xcode 16.2+
 
-#### Overview
+## Overview
 
 Your app’s interface reflects what a person is doing, and what data they’re viewing or changing. Although your app’s interface contains data, the system can’t use that data directly because it’s private to your app. However, you can annotate views and other content with app entities to give the system the context it needs to improve other types of interactions. For example, when someone refers to parts of your app’s content during a Siri conversation, Apple Intelligence can use the contextual information you provide to understand what the person meant.
 
-##### Apply a domain-specific schema to your custom type
+### Apply a domain-specific schema to your custom type
 
 The App Intents framework defines domains for different types of content, and schemas for the app intents and app entities related to those domains. Each schema specifies the expected format for app intents and entities, including any expected parameters or properties. If your content matches one of the existing schemas, apply that schema to your type and implement the required content.
 
@@ -27,7 +27,7 @@ The App Intents framework defines domains for different types of content, and sc
 
 To adopt one of the predefined schemas for an app entity, type the `@AppEntity` macro before your [`AppEntity`](./appentity.md) type declaration and use code completion to specify the schema you want. Add properties to your app entity to match the schema you selected. For properties that are part of the schema definition, the system infers the `@Property` macro automatically, so you don’t need to add it. For more details on how to create and implement entities, see [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md).
 
-##### Support conversions between your app entities and equivalent system types
+### Support conversions between your app entities and equivalent system types
 
 Many apps deal with similar types of content, and might define custom app entities to represent that content. Although you can use the [`Transferable`](../CoreTransferable/transferable.md) protocol to provide alternate representations of your content, there are limitations to how other apps can use that content. The protocol supports the creation of files and binary data types, which limits what apps can do with the content. For example, Maps can’t use a picture of a landmark to generate directions to that landmark. For locations, names, and contacts, you can use the [`IntentValueRepresentation`](./intentvaluerepresentation.md) type to provide a version of your data that other apps can use directly.
 
@@ -78,7 +78,7 @@ struct ContactEntity: AppEntity, Transferable {
 
 For more information about making your types transferable, see the [Core Transferable](../CoreTransferable/CoreTransferable.md) framework.
 
-##### Associate entities with the views in your interface
+### Associate entities with the views in your interface
 
 Your app’s interface reflects the things a person is doing and what data they’re viewing or changing, but that information remains private to your app unless you tell the system about it.
 
@@ -200,7 +200,7 @@ class NoteBoardViewController: UIViewController {
 
 Associating app entities with your views is the best option when the current set of views reflect multiple entities. If the views reflect only one entity, add view annotations or deliver the entity using an [`NSUserActivity`](../Foundation/nsuseractivity.md) object. User activity objects store a single, optional entity in their [`appEntityIdentifier`](../Foundation/nsuseractivity/appentityidentifier.md) property, and the entity provides the system with similar information as an entity attached to one of your views. Delivering an entity in a user activity object is particularly relevant when your interface contains only one entity and represents an activity someone can continue on another device using Handoff. In UIKit and AppKit, assign user activity objects to views and responders using their [`userActivity`](../UIKit/uiresponder/useractivity.md) property. In SwiftUI, create and configure an activity object in one of your views using the [`userActivity(_:element:_:)`](../SwiftUI/view/useractivity%28_,element,_%29.md) modifier.
 
-##### Associate entities with other types of content
+### Associate entities with other types of content
 
 If a system feature displays app-specific data, check whether you can provide an app entity with that data. Some system types support the [`AppEntityAnnotatable`](./appentityannotatable.md) protocol, which gives you a way to associate an app entity with that type. For example:
 

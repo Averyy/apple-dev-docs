@@ -15,7 +15,7 @@ Asynchronously retrieve the next anchor update.
 mutating func next() async -> AnchorUpdateSequence<AnchorType>.Iterator<TypeOfAnchor>.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The next anchor update if one has occurred since the last call to this function. Otherwise suspends the caller until a new anchor update has occurred. Returns `nil` (signals end of the sequence) if the provider has been stopped.
 

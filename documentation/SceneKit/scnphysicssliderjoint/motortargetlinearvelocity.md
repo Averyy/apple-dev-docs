@@ -25,7 +25,7 @@ var motorTargetLinearVelocity: CGFloat { get set }
 @property (nonatomic) CGFloat motorTargetLinearVelocity;
 ```
 
-#### Discussion
+## Discussion
 
 At the default value of `0.0`, the joint moves only when an external force acts on one of its connected bodies. Changing this value causes the joint to act as a linear motor, continuously applying a force (specified by the [`motorMaximumForce`](./motormaximumforce.md) property) until its connected bodies are moving along the sliding axis of the joint at the new velocity.
 

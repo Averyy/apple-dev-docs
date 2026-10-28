@@ -21,7 +21,7 @@ A base type that represents a property list.
 extern UTType * const UTTypePropertyList;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.property-list`.
 

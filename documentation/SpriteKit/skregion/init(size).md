@@ -25,7 +25,7 @@ init(size: CGSize)
 - (instancetype) initWithSize:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized region. The region is rectangular and centered on the origin.
 

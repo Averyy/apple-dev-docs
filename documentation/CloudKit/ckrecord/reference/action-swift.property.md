@@ -25,7 +25,7 @@ var action: CKRecord.ReferenceAction { get }
 @property (nonatomic, assign, readonly) CKReferenceAction referenceAction;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property determines which action, if any, to take when deleting the target of the reference object — that is, the object that the [`recordID`](./recordid.md) property points to. When this property is [`CKRecord.ReferenceAction.deleteSelf`](../referenceaction/deleteself.md), deleting the target object deletes any records that contain that reference in one of their fields. When this property is [`CKRecord.ReferenceAction.none`](../referenceaction/none.md), deleting the target object doesn’t delete any additional objects.
 

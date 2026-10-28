@@ -19,7 +19,7 @@ static let representationFormat: NSGraphicsContext.AttributeKey
 extern NSGraphicsContextAttributeKey NSGraphicsContextRepresentationFormatAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 This value should be retrieved only and not used to create a graphics context. For a list of possible values, see [`NSGraphicsContext.RepresentationFormatName`](../representationformatname.md).
 

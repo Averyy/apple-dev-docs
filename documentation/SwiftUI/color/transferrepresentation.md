@@ -21,7 +21,7 @@ One group of colors–constant colors–created with explicitly specified compon
 static var transferRepresentation: some TransferRepresentation { get }
 ```
 
-#### Discussion
+## Discussion
 
 Another group of colors–standard colors, like `Color.mint`, and semantic colors, like `Color.accentColor`–are rendered on screen differently depending on the current [`Environment`](../environment.md). For transferring, they are resolved against the default environment and might produce a slightly different result at the destination if the source of drag or copy uses a non-default environment.
 

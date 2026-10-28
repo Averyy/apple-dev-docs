@@ -19,7 +19,7 @@ class var defaultPerformer: any NSHapticFeedbackPerformer { get }
 @property (class, strong, readonly) id<NSHapticFeedbackPerformer> defaultPerformer;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns a haptic feedback performer object of type `NSHapticFeedbackPerformer` that is based on the current input device, accessibility settings, and user preferences. Because the current input device may change at any time, you should request the default performer whenever you need to provide haptic feedback to the user.
 

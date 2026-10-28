@@ -21,11 +21,11 @@ Returns the largest group of donations when grouped by the specified key path.
 func largestSubset<DonationInfo, Value>(groupedBy keyPath: KeyPath<DonationInfo, Value>) -> [Self.Element] where DonationInfo : Decodable, DonationInfo : Encodable, DonationInfo : Sendable, Value : Hashable, Self.Element == Tips.Event<DonationInfo>.Donation
 ```
 
-#### Return Value
+## Return Value
 
 An array of donations belonging to the largest group.
 
-#### Discussion
+## Discussion
 
 Use this method inside a `Tips/Rule` predicate to find the most frequently donated value for a given property.
 

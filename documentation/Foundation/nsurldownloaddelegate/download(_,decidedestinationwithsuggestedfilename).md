@@ -19,11 +19,11 @@ optional func download(_ download: NSURLDownload, decideDestinationWithSuggested
 - (void) download:(NSURLDownload *) download decideDestinationWithSuggestedFilename:(NSString *) filename;
 ```
 
-#### Discussion
+## Discussion
 
 The suggested filename is either derived from the last path component of the URL and the MIME type or, if the download was encoded, from the encoding. If the delegate wishes to modify the path, it should send [`setDestination(_:allowOverwrite:)`](../nsurldownload/setdestination%28_,allowoverwrite%29.md) to `download`.
 
-##### Special Considerations
+### Special Considerations
 
 The delegate will not receive this message if `setDestination:allowOverwrite:` has already been called for the download.
 

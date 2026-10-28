@@ -17,7 +17,7 @@ dictionary CKDBRecordResult {
 };
 ```
 
-#### Overview
+## Overview
 
 When querying for the status of records, the records might have been deleted, added, or modified. It’s also possible that the record operation has failed. This is the base model for the CKDBRecordResult representing the possible response states of these operations. However, CKDBRecordChangesResponse will not have error types.
 

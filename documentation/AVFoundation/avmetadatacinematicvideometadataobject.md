@@ -23,7 +23,7 @@ class AVMetadataCinematicVideoMetadataObject
 @interface AVMetadataCinematicVideoMetadataObject : AVMetadataObject
 ```
 
-#### Overview
+## Overview
 
 This object represents Cinematic video metadata captured during a recording session using [`AVCaptureMetadataOutput`](./avcapturemetadataoutput.md).
 

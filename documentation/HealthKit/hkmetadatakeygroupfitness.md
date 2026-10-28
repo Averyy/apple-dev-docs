@@ -24,7 +24,7 @@ let HKMetadataKeyGroupFitness: String
 extern NSString * const HKMetadataKeyGroupFitness;
 ```
 
-#### Discussion
+## Discussion
 
 Set this key’s value to [`true`](../Swift/true.md) if the workout was part of a group fitness class; otherwise, set it to[`false`](../Swift/false.md).
 

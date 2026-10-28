@@ -16,11 +16,11 @@ Returns the 4 x 4 transform matrix of an entity relative to the given coordinate
 @preconcurrency func transformMatrix(relativeTo referenceSpace: Entity.CoordinateSpaceReference) -> float4x4?
 ```
 
-#### Return Value
+## Return Value
 
 The transform of the entity relative to `referenceSpace`, or `nil` when the given coordinate space is not applicable to the given entity.
 
-#### Discussion
+## Discussion
 
 This method overloads  [`transformMatrix(relativeTo:)`](../hastransform/transformmatrix%28relativeto%29.md).
 

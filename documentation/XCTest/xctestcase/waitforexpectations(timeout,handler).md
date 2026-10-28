@@ -17,7 +17,7 @@ func waitForExpectations(timeout: TimeInterval, handler: (@Sendable ((any Error)
 - (void) waitForExpectationsWithTimeout:(NSTimeInterval) timeout handler:(XCWaitCompletionHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method creates a point of synchronization in the flow of a test. Only one [`waitForExpectations(timeout:handler:)`](./waitforexpectations%28timeout,handler%29.md) can be active at any given time, but you can chain together multiple discrete sequences of “create expectations and wait for them to be fulfilled”.
 

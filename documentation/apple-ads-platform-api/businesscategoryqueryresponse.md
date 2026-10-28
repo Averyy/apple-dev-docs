@@ -15,11 +15,11 @@ The Query Business Categories endpoint returns this response object.
 object BusinessCategoryQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The [`Query Business Categories`](./query-categories.md) returns `BusinessCategoryQueryResponse` as the top-level envelope. It extends the standard [`QueryResponse`](./queryresponse.md) envelope: on success, `result` contains an array of [`BusinessCategory`](./businesscategory.md) objects matching the query criteria. The standard `pagination` field handles pagination.
 
-##### Example
+### Example
 
 ```json
 {

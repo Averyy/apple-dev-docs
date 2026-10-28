@@ -24,7 +24,7 @@ case unspecialized
 MTLBlendFactorUnspecialized
 ```
 
-#### Discussion
+## Discussion
 
 Until you specialize this value in the pipeline state, it:
 

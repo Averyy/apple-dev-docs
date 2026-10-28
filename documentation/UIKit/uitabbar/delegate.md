@@ -23,7 +23,7 @@ weak var delegate: (any UITabBarDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UITabBarDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Use the delegate to track the selection of tab bar items and to respond to the user customization of the tab bar. The default value of this property is `nil`.
 

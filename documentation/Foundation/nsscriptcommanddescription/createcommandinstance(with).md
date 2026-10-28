@@ -20,7 +20,7 @@ func createCommandInstance(with zone: NSZone? = nil) -> NSScriptCommand
 - (NSScriptCommand *) createCommandInstanceWithZone:(NSZone *) zone;
 ```
 
-#### Return Value
+## Return Value
 
 The command object, instantiated from [`NSScriptCommand`](../nsscriptcommand.md) or a subclass.
 

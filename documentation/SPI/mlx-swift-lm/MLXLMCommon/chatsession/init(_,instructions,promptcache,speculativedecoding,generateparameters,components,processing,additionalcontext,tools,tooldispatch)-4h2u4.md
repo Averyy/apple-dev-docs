@@ -17,7 +17,7 @@ Initialize the `ChatSession` with a prompt cache and the model state that belong
 convenience init(_ model: ModelContainer, instructions: String? = nil, promptCache: consuming PromptCacheSnapshot, speculativeDecoding: SpeculativeDecodingConfig? = nil, generateParameters: GenerateParameters = .init(), components: GenerationComponents = .init(), processing: UserInput.Processing = .init(resize: CGSize(width: 512, height: 512)), additionalContext: [String : any Sendable]? = nil, tools: [ToolSpec]? = nil, toolDispatch: (@Sendable (ToolCall) async throws -> String)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This is the preferred way to start a session from a saved cache: the snapshot keeps the KV arrays and the model state together, so neither can be dropped. Read one from disk with [`loadPromptCacheSnapshot(url:)`](../loadpromptcachesnapshot%28url%29.md), or build one in process with [`init(cache:metadata:state:)`](../promptcachesnapshot/init%28cache,metadata,state%29.md).
 

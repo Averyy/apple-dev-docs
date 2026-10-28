@@ -17,7 +17,7 @@ Nearest neighbor interpolation with a single scale factor.
 func nearestInterpolate(_ x: MLXArray, scaleFactor: Float) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Interpolated tensor of shape [B, C, outH, outW]
 

@@ -19,7 +19,7 @@ The color of the title text when the cell is selected.
 @property (nonatomic, strong, nullable) UIColor * selectedTextColor;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of property is `nil` (the default), the color of text in a selected cell is white.
 

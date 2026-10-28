@@ -24,7 +24,7 @@ var delayTime: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval delayTime;
 ```
 
-#### Discussion
+## Discussion
 
 You specify the delay in seconds. The default value is `1`. The valid range of values is `0` to `2` seconds.
 

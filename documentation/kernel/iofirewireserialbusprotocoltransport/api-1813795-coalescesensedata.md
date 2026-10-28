@@ -14,7 +14,7 @@ SCSITaskStatus CoalesceSenseData (
  SCSI_Sense_Data *targetData );
 ```
 
-#### Overview
+## Overview
 
 CoalesceSenseData pulls the appropriate bits out of the SBP2 sense block as defined in SBP-2 Annex B section B.2 and dynamically builds a sense data block as defined in SPC-2 section 7.23.2.
 

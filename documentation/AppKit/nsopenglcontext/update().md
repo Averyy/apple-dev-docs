@@ -22,7 +22,7 @@ func update()
 - (void) update;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method whenever the receiver’s drawable object changes size or location. A multithreaded application must synchronize all threads that access the same drawable object and call [`update()`](./update%28%29.md) for each thread’s context serially.
 

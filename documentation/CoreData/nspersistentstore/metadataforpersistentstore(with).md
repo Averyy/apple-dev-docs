@@ -25,11 +25,11 @@ class func metadataForPersistentStore(with url: URL) throws -> [String : Any]
 + (NSDictionary<NSString *,id> *) metadataForPersistentStoreWithURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The metadata from the persistent store at `url`. Returns `nil` if there is an error.
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method.
 

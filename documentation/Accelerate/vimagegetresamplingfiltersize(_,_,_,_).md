@@ -25,7 +25,7 @@ func vImageGetResamplingFilterSize(_ scale: Float, _ kernelFunc: ((UnsafePointer
 size_t vImageGetResamplingFilterSize(float scale, void (*)(const float *, float *, unsigned long, void *)kernelFunc, float kernelWidth, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 The minimum size, in bytes, of the buffer.
 

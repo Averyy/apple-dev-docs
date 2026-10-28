@@ -24,7 +24,7 @@ func MusicTrackNewExtendedTempoEvent(_ inTrack: MusicTrack, _ inTimeStamp: Music
 extern OSStatus MusicTrackNewExtendedTempoEvent(MusicTrack inTrack, MusicTimeStamp inTimeStamp, Float64 inBPM);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

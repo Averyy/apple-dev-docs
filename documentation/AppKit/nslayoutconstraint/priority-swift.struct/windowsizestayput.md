@@ -19,7 +19,7 @@ static var windowSizeStayPut: NSLayoutConstraint.Priority { get }
 static const NSLayoutPriority NSLayoutPriorityWindowSizeStayPut;
 ```
 
-#### Discussion
+## Discussion
 
 It’s generally not appropriate to make a constraint at exactly this priority. You want to be higher or lower. Constraints with higher priorities can adjust the window’s size. Constraints with lower priorities must be fulfilled using the current window size.
 

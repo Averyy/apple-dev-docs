@@ -25,7 +25,7 @@ case unknown
 INLocationSearchTypeUnknown
 ```
 
-#### Discussion
+## Discussion
 
 When specified, don’t consider location values as part of your search criteria.
 

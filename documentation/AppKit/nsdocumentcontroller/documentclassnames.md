@@ -19,7 +19,7 @@ var documentClassNames: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * documentClassNames;
 ```
 
-#### Discussion
+## Discussion
 
 The items in the array are [`NSString`](../../Foundation/nsstring.md) objects, each of which represents the name of a document subclasses supported by the app. The document class names are derived from the app’s `Info.plist`.  You can override this property and use it to return the names of document classes that are dynamically loaded from plugins.
 

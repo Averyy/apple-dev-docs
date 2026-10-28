@@ -21,7 +21,7 @@ An aggregate statistic computed from a metric’s results across the evaluation 
 struct AggregateMetric
 ```
 
-#### Overview
+## Overview
 
 ```swift
 let accuracy = Metric("Accuracy")

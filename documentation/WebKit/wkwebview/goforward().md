@@ -23,7 +23,7 @@ func goForward() -> WKNavigation?
 - (WKNavigation *) goForward;
 ```
 
-#### Return Value
+## Return Value
 
 A new navigation to the requested item, or `nil` if there is no forward item in the back-forward list.
 

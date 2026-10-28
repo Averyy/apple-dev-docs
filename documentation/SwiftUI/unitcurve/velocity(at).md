@@ -21,7 +21,7 @@ Returns the rate of change (first derivative) of the output value of the curve a
 func velocity(at progress: Double) -> Double
 ```
 
-#### Return Value
+## Return Value
 
 The velocity of the output value (y component) of the curve at the given time.
 

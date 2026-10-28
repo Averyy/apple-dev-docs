@@ -24,7 +24,7 @@ var contrastAmount: Float { get set }
 @property (readwrite) float contrastAmount;
 ```
 
-#### Discussion
+## Discussion
 
 The value should be in the range of `0...1`. The default value varies by image. A value of `0` indicates no contrast, and a value of `1` indicates maximum contrast.
 

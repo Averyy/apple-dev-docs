@@ -25,11 +25,11 @@ class func linearGravityField(withVector direction: vector_float3) -> SKFieldNod
 + (SKFieldNode *) linearGravityFieldWithVector:(vector_float3) direction;
 ```
 
-#### Return Value
+## Return Value
 
 A new linear gravity field node.
 
-#### Discussion
+## Discussion
 
 If the field node is rotated, the direction of its gravity field is also rotated. The calculated force is proportional to the physics body’s mass (meaning that the acceleration applied to all affected physics bodies is a constant).
 

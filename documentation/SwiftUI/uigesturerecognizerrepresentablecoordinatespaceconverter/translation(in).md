@@ -17,7 +17,7 @@ Converts the represented gesture recognizer’s current translation to a SwiftUI
 func translation(in coordinateSpace: some CoordinateSpaceProtocol) -> CGPoint?
 ```
 
-#### Discussion
+## Discussion
 
 If the gesture recognizer does not implement a `translationInView:` method, returns nil.
 

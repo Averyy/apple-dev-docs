@@ -5,11 +5,11 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 4.1 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New Features
+### New Features
 
 - You can now use [Build uploads](./build-uploads.md) to upload and manage build uploads for your apps.
 - You can now use the [App tags](./app-tags.md) resource to review the Apple created app tags for your app and opt out of certain app tags. To learn more, see [Manage app tags](https://developer.apple.com/help/app-store-connect/manage-app-information/manage-app-tags).
@@ -19,7 +19,7 @@ App Store Connect API version 4.1 provides resources that enable you to automate
 - You can now use the resource `backgroundAssetVersionExternalBetaReleases` to manage asset packs for external betas, and `backgroundAssetVersionAppStoreReleases` to manage asset packs for App store releases. To learn more, see [Background assets](./background-assets.md).
 - You can now read age ratings per territory by using [`List Territory Age Ratings for an App Info`](./get-v1-appinfos-_id_-territoryageratings.md).
 
-##### Improvements
+### Improvements
 
 - The attribute `platform` is no longer required when using [`Create a Review Submission`](./post-v1-reviewsubmissions.md). You can optionally add the attribute `platform` when using [`Modify a Review Submission`](./patch-v1-reviewsubmissions-_id_.md).
 - The attribute `streamlinedPurchasingEnabled` has a default value of `true` for the object [`App.Attributes`](./app/attributes-data.dictionary.md).
@@ -29,12 +29,12 @@ App Store Connect API version 4.1 provides resources that enable you to automate
 - The filter `buildAudienceType` is now available for [`List prerelease versions`](./get-v1-prereleaseversions.md).
 - The attribute `masked` is now available for [`BuildIcon.Attributes`](./buildicon/attributes-data.dictionary.md). This boolean value that returns true if an icon has Liquid Glass treatment applied.
 
-##### Deprecations
+### Deprecations
 
 - The attributes for [`AgeRatingDeclaration.Attributes`](./ageratingdeclaration/attributes-data.dictionary.md), `INFREQUENT_OR_MILD` and `FREQUENT_OR_INTENSE` are deprecated. When you [`Modify an age rating declaration`](./patch-v1-ageratingdeclarations-_id_.md), use the values use `INFREQUENT` or `FREQUENT` to update the age rating declarations for your app.
 - The `sourceFileChecksum` attribute is deprecated for [`Commit an Uploaded Asset Pack to a Background Asset Version`](./patch-v1-backgroundassetuploadfiles-_id_.md). Use `sourceFileChecksums` with the new [`Checksums`](./checksums.md) type instead.
 
-##### Removals
+### Removals
 
 - The `allowedDurations` properties is now removed from [`Create a Challenge`](./post-v1-gamecenterchallenges.md) and [`Modify a Challenge`](./patch-v1-gamecenterchallenges-_id_.md).
 

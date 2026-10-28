@@ -20,7 +20,7 @@ let kLSItemFileType: CFString!
 const CFStringRef kLSItemFileType;
 ```
 
-#### Discussion
+## Discussion
 
 Use the URL resource property [`kCFURLTypeIdentifierKey`](../CoreFoundation/kcfurltypeidentifierkey.md)/[`typeIdentifierKey`](../Foundation/urlresourcekey/typeidentifierkey.md) to get the file's UTI instead.
 

@@ -20,7 +20,7 @@ Creates a common counter name from a raw value.
 init(rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 Use of the [`MTLCommonCounter`](../mtlcommoncounter.md) type’s static properties, such as [`timestamp`](./timestamp.md), [`computeKernelInvocations`](./computekernelinvocations.md), or [`totalCycles`](./totalcycles.md) instead of creating a common counter instance yourself with this initializer.
 

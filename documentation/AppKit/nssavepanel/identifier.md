@@ -19,7 +19,7 @@ var identifier: NSUserInterfaceItemIdentifier? { get set }
 @property (copy, nullable) NSUserInterfaceItemIdentifier identifier;
 ```
 
-#### Discussion
+## Discussion
 
 The panel’s current state such as the root directory and the current directory are saved and restored relative to the identifier.
 

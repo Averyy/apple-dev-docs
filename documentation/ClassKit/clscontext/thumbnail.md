@@ -23,7 +23,7 @@ var thumbnail: CGImage? { get set }
 @property (nonatomic, nullable) CGImageRef thumbnail;
 ```
 
-#### Discussion
+## Discussion
 
 Schoolwork displays the thumbnail along with your content to help teachers and students more easily recognize a given context. For example, you could use a variation of your app icon for your main app context, an open book for a reading exercise, or a calculator to represent a math quiz. Create thumbnails that match the style of your app.
 

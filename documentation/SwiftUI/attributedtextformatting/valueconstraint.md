@@ -21,7 +21,7 @@ A text formatting definition that constrains the value of a single attribute to 
 struct ValueConstraint<Scope, AttributeKey> where Scope : AttributeScope, AttributeKey : AttributedStringKey, AttributeKey.Value : Sendable
 ```
 
-#### Overview
+## Overview
 
 ```swift
 struct MyTextFormattingDefinition: AttributedTextFormattingDefinition {

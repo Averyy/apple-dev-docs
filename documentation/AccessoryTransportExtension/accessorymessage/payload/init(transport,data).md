@@ -15,7 +15,7 @@ Initializes a payload with data and a transport preference.
 init(transport: AccessoryTransport = .bluetooth, data: Data)
 ```
 
-#### Discussion
+## Discussion
 
 If the specified transport method isn’t available, the system chooses any available transport method.
 

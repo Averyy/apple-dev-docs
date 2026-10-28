@@ -23,7 +23,7 @@ let kCGPDFXInfo: CFString
 extern CFStringRef const kCGPDFXInfo;
 ```
 
-#### Discussion
+## Discussion
 
 A human-readable text string containing additional information or comments about the intended target device or production condition. This key is required if the value of [`kCGPDFXOutputConditionIdentifier`](./kcgpdfxoutputconditionidentifier.md) does not specify a standard production condition. It is optional otherwise. If present, the value of this key must be a [`CFString`](../CoreFoundation/cfstring.md) object.
 

@@ -21,7 +21,7 @@ The current phase of the asynchronous loading operation of a product’s promoti
 enum ProductIconPhase
 ```
 
-#### Overview
+## Overview
 
 When you create a [`ProductIconPhase`](./producticonphase.md) instance with an initializer such as [`init(ids:icon:placeholderIcon:)`](./storeview/init%28ids,icon,placeholdericon%29.md), you define the appearance of the view’s icon, or image, using a content closure. SwiftUI calls the closure at different stages of the promotional image’s load operation with a phase value that indicates the current state.
 

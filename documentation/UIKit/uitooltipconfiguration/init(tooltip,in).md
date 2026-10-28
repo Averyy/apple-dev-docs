@@ -22,7 +22,7 @@ convenience init(toolTip: String, in sourceRect: CGRect)
 + (instancetype) configurationWithToolTip:(NSString *) toolTip inRect:(CGRect) sourceRect;
 ```
 
-#### Discussion
+## Discussion
 
 Create a configuration using this method to show the tooltip when the pointer hovers over the specified region of the view or control. For example, the following code listing returns a configuration that instructs the view shows the tooltip only when the pointer hovers over either top or bottom regions of a view. The tooltip does’t appear when the pointer hovers over the middle region of the view.
 

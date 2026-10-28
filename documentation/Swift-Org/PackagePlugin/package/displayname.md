@@ -17,7 +17,7 @@ The name of the package.
 let displayName: String
 ```
 
-#### Discussion
+## Discussion
 
 Use the name for display purposes only.
 

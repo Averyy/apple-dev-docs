@@ -23,7 +23,7 @@ func setViewController(_ vc: UIViewController?, for column: UISplitViewControlle
 - (void) setViewController:(UIViewController *) vc forColumn:(UISplitViewControllerColumn) column;
 ```
 
-#### Discussion
+## Discussion
 
 This method doesn’t apply to classic split view controllers with a [`style`](./style-swift.property.md) of [`UISplitViewController.Style.unspecified`](./style-swift.enum/unspecified.md). For a classic split view controller, instead use the [`viewControllers`](./viewcontrollers.md) property to assign the primary and secondary view controllers that you want to display initially. After the split view controller is onscreen, set the child view controllers using the [`show(_:sender:)`](./show%28_,sender%29.md) and [`showDetailViewController(_:sender:)`](./showdetailviewcontroller%28_,sender%29.md) methods.
 

@@ -21,11 +21,11 @@ Gets the App Store-signed app transaction information from the App Store server.
 static func refresh() async throws -> VerificationResult<AppTransaction>
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`VerificationResult`](../verificationresult.md) with a single [`AppTransaction`](../apptransaction.md).
 
-#### Discussion
+## Discussion
 
 This method queries the App Store server to refresh the app transaction information. This method returns a [`VerificationResult`](../verificationresult.md) that contains the App Store-signed app transaction information for your app.
 

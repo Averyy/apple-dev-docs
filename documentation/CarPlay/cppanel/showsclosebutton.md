@@ -21,7 +21,7 @@ var showsCloseButton: Bool { get set }
 @property (nonatomic, assign) BOOL showsCloseButton;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `true`, the panel displays a close button that the driver can use to dismiss the panel. When the value of this property is `false`, you need to dismiss the panel programmatically from your app. The default value of this property is `true`.
 

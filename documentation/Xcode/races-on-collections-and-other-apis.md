@@ -5,7 +5,7 @@
 
 Detects when one thread accesses a mutable object while another thread is writing to it.
 
-#### Overview
+## Overview
 
 In Xcode 9 and later, the Thread Sanitizer detects unsafe thread accesses of [Foundation](../Foundation/Foundation.md) and [Core Foundation](../CoreFoundation/CoreFoundation.md) framework APIs. This feature applies to the following collection types:
 
@@ -14,7 +14,7 @@ In Xcode 9 and later, the Thread Sanitizer detects unsafe thread accesses of [Fo
 - [`CFMutableArray`](../CoreFoundation/cfmutablearray.md)
 - [`CFMutableDictionary`](../CoreFoundation/cfmutabledictionary.md)
 
-##### Collection race with a mutable array
+### Collection race with a mutable array
 
 In the following example, the code enumerates a mutable array in one thread while writing to the array from another without synchronizing access:
 
@@ -44,11 +44,11 @@ for (id value in array) {
 [array addObject:@42];
 ```
 
-###### Solution
+#### Solution
 
 Use [Dispatch](../Dispatch/Dispatch.md) APIs to coordinate access to `array` across multiple threads.
 
-##### Collection race with a mutable dictionary
+### Collection race with a mutable dictionary
 
 In the following example, the code enumerates a mutable dictionary in one thread while writing to the dictionary from another without synchronizing access:
 
@@ -76,7 +76,7 @@ for (id key in dictionary) {
 dictionary[@"forty-two"] = @42;
 ```
 
-###### Solution
+#### Solution
 
 Use [Dispatch](../Dispatch/Dispatch.md) APIs to coordinate access to `dictionary` across multiple threads.
 

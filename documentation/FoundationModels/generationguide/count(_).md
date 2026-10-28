@@ -26,7 +26,7 @@ static func count<Element>(_ count: Int) -> GenerationGuide<[Element]> where Val
 static func count<Element>(_ range: ClosedRange<Int>) -> GenerationGuide<[Element]> where Value == [Element]
 ```
 
-#### Discussion
+## Discussion
 
 A `count` generation guide may be used when you want to ensure the model produces exactly a certain number array elements, such as the number of items in a game’s shop.
 

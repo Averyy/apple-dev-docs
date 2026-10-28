@@ -23,7 +23,7 @@ func pushController(withName name: String, context: Any?)
 
 - [Navigating Between Scenes](../navigating-between-scenes.md)
 
-#### Discussion
+## Discussion
 
 Use this method to perform a navigation-style transition to the specified interface controller. The system initializes the new interface controller with the specified context object and animates the transition asynchronously. During the transition, the currently visible interface controller’s content disappears from the screen and is replaced by the content of the new controller.
 

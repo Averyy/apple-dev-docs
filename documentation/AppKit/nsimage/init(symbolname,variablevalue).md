@@ -19,7 +19,7 @@ convenience init?(symbolName name: String, variableValue value: Double)
 + (instancetype) imageWithSymbolName:(NSString *) name variableValue:(double) value;
 ```
 
-#### Discussion
+## Discussion
 
 The `value` parameter is valid for symbols that support variable rendering.
 

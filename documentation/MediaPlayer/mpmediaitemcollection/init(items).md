@@ -22,7 +22,7 @@ init(items: [MPMediaItem])
 - (instancetype) initWithItems:(NSArray<MPMediaItem *> *) items;
 ```
 
-#### Return Value
+## Return Value
 
 The newly created media item collection.
 

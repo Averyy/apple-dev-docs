@@ -32,7 +32,7 @@ var body: String { get }
 @property (atomic, copy, readonly) NSString * body;
 ```
 
-#### Discussion
+## Discussion
 
 The body text contains the final text that you want to display. If your app isn’t authorized to display alert-based notifications, the system ignores this property.
 

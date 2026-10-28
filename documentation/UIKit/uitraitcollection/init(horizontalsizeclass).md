@@ -23,7 +23,7 @@ init(horizontalSizeClass: UIUserInterfaceSizeClass)
 + (UITraitCollection *) traitCollectionWithHorizontalSizeClass:(UIUserInterfaceSizeClass) horizontalSizeClass;
 ```
 
-#### Return Value
+## Return Value
 
 A new trait collection containing only a specified horizontal size class trait.
 

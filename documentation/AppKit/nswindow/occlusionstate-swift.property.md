@@ -19,7 +19,7 @@ var occlusionState: NSWindow.OcclusionState { get }
 @property (readonly) NSWindowOcclusionState occlusionState;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`visible`](./occlusionstate-swift.struct/visible.md), at least part of the window is visible; otherwise, the window is fully occluded.
 

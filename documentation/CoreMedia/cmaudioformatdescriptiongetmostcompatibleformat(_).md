@@ -25,11 +25,11 @@ func CMAudioFormatDescriptionGetMostCompatibleFormat(_ desc: CMAudioFormatDescri
 extern const AudioFormatListItem *CMAudioFormatDescriptionGetMostCompatibleFormat(CMAudioFormatDescriptionRef desc);
 ```
 
-#### Return Value
+## Return Value
 
 A read-only pointer to the appropriate `AudioFormatListItem` inside the audio format description.
 
-#### Discussion
+## Discussion
 
 This property returns a pointer to the most compatible `AudioFormatListItem` in the `kAudioFormatProperty_FormatList`. This API is specific to audio format descriptions, and returns `NULL` if called with a non-audio format description.
 

@@ -21,7 +21,7 @@ Allocate an `AudioBufferList` with a capacity for the specified number of `Audio
 static func allocate(maximumBuffers: Int) -> UnsafeMutableAudioBufferListPointer
 ```
 
-#### Discussion
+## Discussion
 
 The `count` property of the new `AudioBufferList` is initialized to `maximumBuffers`.
 

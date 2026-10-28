@@ -22,7 +22,7 @@ optional func tabBarController(_ tabBarController: UITabBarController, displayed
 - (NSArray<UIViewController *> *) tabBarController:(UITabBarController *) tabBarController displayedViewControllersForTab:(UITab *) tab proposedViewControllers:(NSArray<UIViewController *> *) proposedViewControllers;
 ```
 
-#### Return Value
+## Return Value
 
 A list of view controllers represented by the tab in the navigation stack.
 

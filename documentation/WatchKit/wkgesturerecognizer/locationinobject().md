@@ -19,11 +19,11 @@ func locationInObject() -> CGPoint
 - (CGPoint) locationInObject;
 ```
 
-#### Return Value
+## Return Value
 
 A point in the local coordinate system of the associated interface object.
 
-#### Discussion
+## Discussion
 
 If multiple touches were detected, this method returns the location of only the first one.
 

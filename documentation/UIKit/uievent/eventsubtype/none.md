@@ -23,7 +23,7 @@ case none
 UIEventSubtypeNone
 ```
 
-#### Discussion
+## Discussion
 
 This is the subtype for events of the [`UIEvent.EventType.touches`](../eventtype/touches.md) general type.
 

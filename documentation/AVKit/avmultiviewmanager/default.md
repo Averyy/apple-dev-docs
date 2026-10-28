@@ -16,7 +16,7 @@ The default multiview manager.
 static var `default`: AVMultiviewManager { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this manager to customize the multiview experience.
 

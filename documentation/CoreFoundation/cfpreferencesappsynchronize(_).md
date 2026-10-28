@@ -25,11 +25,11 @@ func CFPreferencesAppSynchronize(_ applicationID: CFString) -> Bool
 extern Boolean CFPreferencesAppSynchronize(CFStringRef applicationID);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if synchronization was successful, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 Calling the function [`CFPreferencesSetAppValue(_:_:_:)`](./cfpreferencessetappvalue%28_,_,_%29.md) is not in itself sufficient for storing preferences. The [`CFPreferencesAppSynchronize(_:)`](./cfpreferencesappsynchronize%28_%29.md) function writes to permanent storage all pending preference changes for the application. Typically you would call this function after multiple calls to [`CFPreferencesSetAppValue(_:_:_:)`](./cfpreferencessetappvalue%28_,_,_%29.md). Conversely, preference data is cached after it is first read. Changes made externally are not automatically incorporated. The [`CFPreferencesAppSynchronize(_:)`](./cfpreferencesappsynchronize%28_%29.md) function reads the latest preferences from permanent storage.
 

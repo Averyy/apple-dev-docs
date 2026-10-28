@@ -29,7 +29,7 @@ var requiredUserInfoKeys: Set<String>? { get set }
 
 - [Implementing Handoff in Your App](../implementing-handoff-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 The keys come from the [`userInfo`](./userinfo.md) property.
 

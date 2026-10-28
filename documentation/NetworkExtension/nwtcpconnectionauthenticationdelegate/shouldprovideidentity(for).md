@@ -26,11 +26,11 @@ optional func shouldProvideIdentity(for connection: NWTCPConnection) -> Bool
 - (BOOL) shouldProvideIdentityForConnection:(NWTCPConnection *) connection;
 ```
 
-#### Return Value
+## Return Value
 
 Return [`true`](../../Swift/true.md) to provide the identity for this connection, in which case the delegate method [`provideIdentity(for:completionHandler:)`](./provideidentity%28for,completionhandler%29.md) will be called.
 
-#### Discussion
+## Discussion
 
 The caller can implement this optional protocol method to decide whether it wants to provide the identity for this connection for authentication. If this delegate method is not implemented, the return value will default to YES if [`provideIdentity(for:completionHandler:)`](./provideidentity%28for,completionhandler%29.md) is implemented.
 

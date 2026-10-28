@@ -30,7 +30,7 @@ func handle(intent: INSnoozeTasksIntent) async -> INSnoozeTasksIntentResponse
 - (void) handleSnoozeTasks:(INSnoozeTasksIntent *) intent completion:(void (^)(INSnoozeTasksIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to snooze the task based on the information in the intent parameter, create a response object with the relevant details, and call the provided completion handler.
 

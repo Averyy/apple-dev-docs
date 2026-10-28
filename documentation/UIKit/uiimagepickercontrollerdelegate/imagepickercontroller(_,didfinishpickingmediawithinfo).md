@@ -22,7 +22,7 @@ optional func imagePickerController(_ picker: UIImagePickerController, didFinish
 - (void) imagePickerController:(UIImagePickerController *) picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *) info;
 ```
 
-#### Discussion
+## Discussion
 
 Your delegate object’s implementation of this method should pass the specified media on to any custom code that needs it, and should then dismiss the picker view.
 

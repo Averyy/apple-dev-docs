@@ -21,7 +21,7 @@ Triggers an assertion if the calling thread owns the specified unfair lock.
 extern void os_unfair_lock_assert_not_owner(const os_unfair_lock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 If the lock is unlocked or owned by a thread other than the calling thread, this function returns normally. If the lock is currently owned by the calling thread, this function asserts and terminates the process.
 

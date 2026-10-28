@@ -16,7 +16,7 @@ An event handler the system calls when the user has authorized the Apple Pay pay
 attribute EventHandler onpaymentauthorized;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute must be set to a function that accepts an `events` argument; for example, `session.onpaymentauthorized = function(event) {}`.
 

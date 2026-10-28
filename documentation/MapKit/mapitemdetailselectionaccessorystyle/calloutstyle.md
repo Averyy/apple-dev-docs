@@ -19,7 +19,7 @@ The style to use for callout content.
 struct CalloutStyle
 ```
 
-#### Overview
+## Overview
 
 Use the [`full`](./calloutstyle/full.md) style works for map views on iPadOS and macOS. Use sheet presentation to display full detail place information on iOS.
 

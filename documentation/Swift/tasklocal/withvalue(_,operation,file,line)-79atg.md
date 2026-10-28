@@ -22,7 +22,7 @@ Binds the task-local to the specific value for the duration of the synchronous o
 final func withValue<R>(_ valueDuringOperation: Value, operation: () throws -> R, file: String = #fileID, line: UInt = #line) rethrows -> R
 ```
 
-#### Discussion
+## Discussion
 
 The value is available throughout the execution of the operation closure, including any `get` operations performed by child-tasks created during the execution of the operation closure.
 

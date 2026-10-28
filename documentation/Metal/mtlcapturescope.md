@@ -24,7 +24,7 @@ protocol MTLCaptureScope : NSObjectProtocol
 @protocol MTLCaptureScope <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Each capture scope instance configures what a frame capture records and methods that programmatically start and stop recording data.
 

@@ -16,7 +16,7 @@ An error that indicates that the insight version you requested isn’t available
 case insightVersionUnavailable
 ```
 
-#### Discussion
+## Discussion
 
 The insight version was potentially withdrawn, or no longer supported on the active OS.
 

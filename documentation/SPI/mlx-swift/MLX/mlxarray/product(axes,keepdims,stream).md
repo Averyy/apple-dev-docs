@@ -21,7 +21,7 @@ func product(axes: some Collection<Int>, keepDims: Bool = false, stream: StreamO
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray([5, 8, 4, 9], [2, 2])
@@ -30,7 +30,7 @@ let array = MLXArray([5, 8, 4, 9], [2, 2])
 let result = array.product(axis=[0])
 ```
 
-##### See Also
+### See Also
 
 - [Reduction Functions](../reduction.md)
 - [`product(axis:keepDims:stream:)`](./product%28axis,keepdims,stream%29.md)

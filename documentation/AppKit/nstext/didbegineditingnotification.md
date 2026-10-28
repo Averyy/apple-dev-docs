@@ -19,7 +19,7 @@ class let didBeginEditingNotification: NSNotification.Name
 extern NSNotificationName NSTextDidBeginEditingNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the notifying `NSText` object. This notification does not contain a `userInfo` dictionary.
 

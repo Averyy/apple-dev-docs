@@ -14,7 +14,7 @@
 #define kIOHIDQueueInterfaceID
 ```
 
-#### Discussion
+## Discussion
 
 Interface ID for the kIOHIDQueueInterfaceID. Corresponds to a queue for a specific HID device.
 

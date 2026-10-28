@@ -25,11 +25,11 @@ func vImageConverter_GetNumberOfDestinationBuffers(_ converter: vImageConverter)
 unsigned long vImageConverter_GetNumberOfDestinationBuffers(vImageConverterRef const converter);
 ```
 
-#### Return Value
+## Return Value
 
 The number of destination buffers.
 
-#### Discussion
+## Discussion
 
 This function is for video formats that are planar data formats with data in more than one plane.
 

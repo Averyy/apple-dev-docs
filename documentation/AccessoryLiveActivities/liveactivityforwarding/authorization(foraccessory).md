@@ -20,11 +20,11 @@ static func authorization(forAccessory accessory: ASAccessory) async throws -> A
 
 - [Receiving Live Activity updates and alerts on an accessory](../receiving-live-activities-on-an-accessory.md)
 
-#### Return Value
+## Return Value
 
 The person’s authorization decision for the accessory.
 
-#### Overview
+## Overview
 
 To determine whether someone permits forwarding Live Activities, call `authorization(forAccessory:)` before configuring your accessory or presenting an interface that relates to Live Activity forwarding.
 

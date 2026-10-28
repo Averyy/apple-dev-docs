@@ -5,13 +5,13 @@
 
 Ensure volume normalization by including metadata for loudness and dynamic range control.
 
-#### Overview
+## Overview
 
 Soundtracks that use xHE-AAC (Extended High-Efficiency Advanced Audio Codec) encoding include MPEG-D DRC metadata for loudness and dynamic range control (DRC). When you create video soundtracks with xHE-AAC, provide at least the following metadata to ensure consistent results across different services. For playback, set up the MPEG-D DRC tool at the decoder by following the guidelines below.
 
 > **Note**: Refer to ISO/IEC 23003-4 for additional information about these metadata specifications.
 
-##### Configure metadata for content generation
+### Configure metadata for content generation
 
 The loudness and DRC metadata that you include in video content needs to fulfill the MPEG-D DRC requirements for the Basic DRC Metadata Profile, and always include the following values:
 
@@ -41,7 +41,7 @@ The DRC for `General Compression` can have several instances to accommodate vari
 
 > **Note**: Refer to ISO/IEC 23003-4:2020 Table 12 for additional information about these metadata specifications.
 
-##### Configure metadata for playback
+### Configure metadata for playback
 
 Configure the MPEG-D DRC decoder for playback according to the specifications below. The configuration occurs completely or partially at the system level and those settings don’t appear at the API level.
 

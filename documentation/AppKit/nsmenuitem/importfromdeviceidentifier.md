@@ -19,7 +19,7 @@ class let importFromDeviceIdentifier: NSUserInterfaceItemIdentifier
 extern NSUserInterfaceItemIdentifier const NSMenuItemImportFromDeviceIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this string to locate the standard menu item that supports the Continuity Camera feature. The menu item stores this value in its [`identifier`](../nsuserinterfaceitemidentification/identifier.md) property.
 

@@ -5,9 +5,9 @@
 
 These error codes can be returned from the accessibility functions defined in AXUIElement.h.
 
-#### Overview
+## Overview
 
-##### Included Headers
+### Included Headers
 
 - <CoreFoundation/CoreFoundation.h>
 

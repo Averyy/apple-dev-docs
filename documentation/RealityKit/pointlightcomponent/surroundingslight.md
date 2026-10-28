@@ -16,7 +16,7 @@ A component that specifies that the point light illuminates the physical and imm
 struct SurroundingsLight
 ```
 
-#### Performance Considerations
+## Performance Considerations
 
 Set [`attenuationRadius`](./attenuationradius.md) deliberately on lights that use this component. Its default is often larger than needed, and the resulting on-screen footprint is the dominant driver of this effect’s cost.
 

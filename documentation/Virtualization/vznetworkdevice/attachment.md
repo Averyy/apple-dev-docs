@@ -19,7 +19,7 @@ var attachment: VZNetworkDeviceAttachment? { get set }
 @property (strong, nullable) VZNetworkDeviceAttachment * attachment;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property results in an attempt to change the network device attachment which may fail. If the devices fails to attach, the system invokes [`virtualMachine(_:networkDevice:attachmentWasDisconnectedWithError:)`](../vzvirtualmachinedelegate/virtualmachine%28_,networkdevice,attachmentwasdisconnectedwitherror%29.md) and sets this property to `nil`. This property may change at any time while the VM is running based on the state of the host network.
 

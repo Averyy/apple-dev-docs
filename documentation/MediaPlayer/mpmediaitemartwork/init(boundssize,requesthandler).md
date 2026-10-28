@@ -41,11 +41,11 @@ init(boundsSize: CGSize, requestHandler: @escaping (CGSize) -> NSImage)
 - (instancetype) initWithBoundsSize:(CGSize) boundsSize requestHandler:(NSImage * (^)(CGSize size)) requestHandler;
 ```
 
-#### Return Value
+## Return Value
 
 The newly resized artwork.
 
-#### Discussion
+## Discussion
 
 The request handler returns the image in the newly requested size. The requested size must be less than the `boundsSize` parameter.
 

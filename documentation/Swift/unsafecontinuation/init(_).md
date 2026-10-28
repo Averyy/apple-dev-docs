@@ -23,7 +23,7 @@ init(_ continuation: consuming Continuation<T, E>)
 
 Available when `E` conforms to `Error`.
 
-#### Discussion
+## Discussion
 
 An unsafe continuation may be escaped into contexts where the non-copyable semantics would not be able to statically enforce the resume-once semantics, however the correct use of the continuation is enforced in some way at runtime.
 

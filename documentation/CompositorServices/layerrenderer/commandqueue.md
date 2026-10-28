@@ -20,7 +20,7 @@ var commandQueue: any MTL4CommandQueue { get }
 id<MTL4CommandQueue>cp_layer_renderer_get_mtl4_command_queue(cp_layer_renderer_t layer_renderer);
 ```
 
-#### Discussion
+## Discussion
 
 Should only be called with when supporting Metal4 through configuration. [`cp_layer_renderer_configuration_set_supports_mtl4`](../cp_layer_renderer_configuration_set_supports_mtl4.md)
 

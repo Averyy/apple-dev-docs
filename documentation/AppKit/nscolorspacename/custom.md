@@ -19,7 +19,7 @@ static let custom: NSColorSpaceName
 extern NSColorSpaceName NSCustomColorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 A custom color-space object represents a color space that is not necessarily predefined by the Application Kit. See “[Working With Color Spaces](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DrawColor/Tasks/UsingColorSpaces.html#//apple_ref/doc/uid/TP40001807)” for information on creating custom color-space objects.
 

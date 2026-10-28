@@ -27,7 +27,7 @@ optional func resolveTaskPriority(for intent: INSearchForNotebookItemsIntent) as
 - (void) resolveTaskPriorityForSearchForNotebookItems:(INSearchForNotebookItemsIntent *) intent withCompletion:(void (^)(INTaskPriorityResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to verify that you can perform a location-based search using the specified information. Consider the value of the [`taskPriority`](../insearchfornotebookitemsintent/taskpriority.md) property of the intent when determining your response. If the task type is unknown, return a value of not required to indicate that you do not intend to use the priority information during the search. If the search type is a different value, return a successful resolution if the [`taskPriority`](../insearchfornotebookitemsintent/taskpriority.md) property of the intent contains enough information to perform the search. Return a different result if it does not.
 

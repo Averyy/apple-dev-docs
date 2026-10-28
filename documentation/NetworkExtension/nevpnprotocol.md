@@ -28,7 +28,7 @@ class NEVPNProtocol
 
 - [Routing your VPN network traffic](./routing-your-vpn-network-traffic.md)
 
-#### Overview
+## Overview
 
 The [`NEVPNProtocol`](./nevpnprotocol.md) class is an abstract base class with one subclass for each type of supported VPN configuration. This class provides properties for configuring the VPN, authenticating network connections, and routing network traffic. You can include all network traffic, with some exceptions, and selectively exclude types of network traffic.
 

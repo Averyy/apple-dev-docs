@@ -25,7 +25,7 @@ typealias CGPatternReleaseInfoCallback = (UnsafeMutableRawPointer?) -> Void
 typedef void (*)(void *) CGPatternReleaseInfoCallback;
 ```
 
-#### Discussion
+## Discussion
 
 Quartz calls your release function when it frees your pattern object.
 

@@ -23,7 +23,7 @@ let stageToken: SpotlightSearchTool.SearchReply.StageToken
 
 - [Making your indexed content available to Foundation Models](../../making-your-indexed-content-available-to-foundation-models.md)
 
-#### Discussion
+## Discussion
 
 The Spotlight search tool provides several ways to search content, and implements each technique as an independent stage. For a given query, a model can run multiple stages to generate the results of the query. Use this property to associate search reply structures with a specific stage. The token itself is an opaque value you save and compare against tokens in other search replies. You might use this value to partition the data you receive.
 

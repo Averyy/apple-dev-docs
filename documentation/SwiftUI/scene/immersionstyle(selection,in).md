@@ -17,11 +17,11 @@ nonisolated
 func immersionStyle(selection: Binding<any ImmersionStyle>, in styles: any ImmersionStyle...) -> some Scene
 ```
 
-#### Return Value
+## Return Value
 
 A scene that uses one of the specified `styles`.
 
-#### Discussion
+## Discussion
 
 Use this modifier to configure the appearance and behavior of an [`ImmersiveSpace`](../immersivespace.md). Specify a style that conforms to the [`ImmersionStyle`](../immersionstyle.md) protocol, like [`mixed`](../immersionstyle/mixed.md) or [`full`](../immersionstyle/full.md). For example, the following app defines a solar system scene that uses full immersion:
 

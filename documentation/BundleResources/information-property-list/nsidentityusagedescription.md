@@ -16,7 +16,7 @@ A message that tells people why the app is requesting identity information.
 - **Name**: `NSIdentityUsageDescription` (Privacy - Identity Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access identity information from Wallet.
 

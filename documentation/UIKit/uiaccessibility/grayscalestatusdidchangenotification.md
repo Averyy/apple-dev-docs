@@ -24,7 +24,7 @@ static let grayscaleStatusDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UIAccessibilityGrayscaleStatusDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification doesn’t include a parameter. Observe this notification using the default notification center.
 

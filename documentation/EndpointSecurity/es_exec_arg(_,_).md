@@ -19,11 +19,11 @@ func es_exec_arg(_ event: UnsafePointer<es_event_exec_t>, _ index: UInt32) -> es
 extern es_string_token_t es_exec_arg(const es_event_exec_t *event, uint32_t index);
 ```
 
-#### Return Value
+## Return Value
 
 A string token that contains the argument data and its length.
 
-#### Discussion
+## Discussion
 
 This function doesn’t allocate memory for the returned token; it points to a string token inside of `event`. Because you don’t own this memory, don’t try to free it.
 

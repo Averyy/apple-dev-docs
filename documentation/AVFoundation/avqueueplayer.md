@@ -31,7 +31,7 @@ class AVQueuePlayer
 - [Observing playback state in SwiftUI](./observing-playback-state-in-swiftui.md)
 - [Supporting AirPlay in your app](./supporting-airplay-in-your-app.md)
 
-#### Overview
+## Overview
 
 Use an instance of this class to manage a queue of player items.
 

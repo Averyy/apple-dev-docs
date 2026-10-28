@@ -23,7 +23,7 @@ class ASCredentialIdentityStore
 @interface ASCredentialIdentityStore : NSObject
 ```
 
-#### Overview
+## Overview
 
 Make credential identities available to users directly as AutoFill suggestions by adding them to the [`shared`](./ascredentialidentitystore/shared.md) instance of the identity store. You can add identities during configuration in your extension’s override of the [`prepareInterfaceForExtensionConfiguration()`](./ascredentialproviderviewcontroller/prepareinterfaceforextensionconfiguration%28%29.md) method. You can also update the shared store from within your extension’s host app.
 

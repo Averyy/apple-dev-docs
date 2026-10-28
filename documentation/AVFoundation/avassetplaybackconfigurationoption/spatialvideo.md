@@ -25,7 +25,7 @@ static let spatialVideo: AVAssetPlaybackConfigurationOption
 extern AVAssetPlaybackConfigurationOption const AVAssetPlaybackConfigurationOptionSpatialVideo;
 ```
 
-#### Discussion
+## Discussion
 
 Apps may use this property to determine whether to configure spatial video rendering.
 

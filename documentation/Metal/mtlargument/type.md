@@ -24,7 +24,7 @@ var type: MTLArgumentType { get }
 @property (readonly) MTLArgumentType type;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates which type of resource is used (buffer, texture, sampler, or threadgroup memory) in the shading language code. For information on possible values, see [`MTLArgumentType`](../mtlargumenttype.md).
 

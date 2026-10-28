@@ -22,7 +22,7 @@ var printFormatters: [UIPrintFormatter]? { get set }
 @property (atomic, copy, nullable) NSArray<UIPrintFormatter *> * printFormatters;
 ```
 
-#### Discussion
+## Discussion
 
 The elements of the array are [`UIPrintFormatter`](../uiprintformatter.md) objects. A print formatter can be an instance of [`UISimpleTextPrintFormatter`](../uisimpletextprintformatter.md), [`UIMarkupTextPrintFormatter`](../uimarkuptextprintformatter.md), or [`UIViewPrintFormatter`](../uiviewprintformatter.md). Print formatters added this way to a page renderer are associated with page ranges through each print formatter’s [`startPage`](../uiprintformatter/startpage.md) and [`pageCount`](../uiprintformatter/pagecount.md) properties.
 

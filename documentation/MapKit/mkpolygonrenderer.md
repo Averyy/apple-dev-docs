@@ -24,7 +24,7 @@ class MKPolygonRenderer
 @interface MKPolygonRenderer : MKOverlayPathRenderer
 ```
 
-#### Overview
+## Overview
 
 This renderer creates the polygon overlay by first filling the shape and then representing its outline with strokes. You can change the color and other drawing attributes of the polygon by modifying the properties inherited from the parent class.
 

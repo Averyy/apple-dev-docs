@@ -24,7 +24,7 @@ var outputNumberOfChannels: Int { get }
 @property (readonly) NSInteger outputNumberOfChannels;
 ```
 
-#### Discussion
+## Discussion
 
 You can observe changes to the value of this property using key-value observice. For more information, see [Using Key-Value Observing in Swift](../../Swift/using-key-value-observing-in-swift.md).
 

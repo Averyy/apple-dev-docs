@@ -28,7 +28,7 @@ init(uiEdgeInsets insets: UIEdgeInsets)
 + (NSValue *) valueWithUIEdgeInsets:(UIEdgeInsets) insets;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains the edge inset information.
 

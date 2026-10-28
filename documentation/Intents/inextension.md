@@ -29,7 +29,7 @@ class INExtension
 
 - [Dispatching intents to handlers](../SiriKit/dispatching-intents-to-handlers.md)
 
-#### Overview
+## Overview
 
 The [`INExtension`](./inextension.md) class is the principal class of your Intents extension, which provides information to SiriKit. Your extension object acts like a dispatcher, providing SiriKit with the objects it needs to resolve and handle requests. This class defines no methods of its own, but it adopts the [`INIntentHandlerProviding`](./inintenthandlerproviding.md) protocol, which contains the main method you must implement.
 

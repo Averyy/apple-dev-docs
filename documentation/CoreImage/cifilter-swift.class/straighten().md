@@ -24,11 +24,11 @@ class func straighten() -> any CIFilter & CIStraighten
 + (CIFilter<CIStraighten> *) straightenFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The adjusted image.
 
-#### Discussion
+## Discussion
 
 This method applies the straighten filter to an image. The effect rotates the image based on the `angle` property while cropping and scaling the image to remain the same size as the original image.
 

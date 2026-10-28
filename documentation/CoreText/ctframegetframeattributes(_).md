@@ -25,11 +25,11 @@ func CTFrameGetFrameAttributes(_ frame: CTFrame) -> CFDictionary?
 extern CFDictionaryRefCTFrameGetFrameAttributes(CTFrameRef frame);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a CFDictionary object containing the frame attributes that were used to create the frame, or, if the frame was created without any frame attributes, `NULL`.
 
-#### Discussion
+## Discussion
 
 You can create a frame with an attributes dictionary to control various aspects of the framing process. These attributes are different from the ones used to create an attributed string.
 

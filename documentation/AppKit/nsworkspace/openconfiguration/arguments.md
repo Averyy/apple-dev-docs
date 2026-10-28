@@ -19,7 +19,7 @@ var arguments: [String] { get set }
 @property (copy) NSArray<NSString *> * arguments;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an empty array. When launching a new instance of an app, use this property to specify any additional launch arguments. The system inserts the app’s path as the first element in the array.
 

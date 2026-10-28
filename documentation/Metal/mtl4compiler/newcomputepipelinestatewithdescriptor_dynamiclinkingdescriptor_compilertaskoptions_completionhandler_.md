@@ -20,7 +20,7 @@ Creates a new compute pipeline state asynchronously.
 - (id<MTL4CompilerTask>) newComputePipelineStateWithDescriptor:(MTL4ComputePipelineDescriptor *) descriptor dynamicLinkingDescriptor:(MTL4PipelineStageDynamicLinkingDescriptor *) dynamicLinkingDescriptor compilerTaskOptions:(MTL4CompilerTaskOptions *) compilerTaskOptions completionHandler:(MTLNewComputePipelineStateCompletionHandler) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A compiler task representing the asynchronous compilation task.
 

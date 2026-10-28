@@ -25,7 +25,7 @@ func sel_getName(_ sel: Selector) -> UnsafePointer<CChar>
 extern const char *sel_getName(SEL sel);
 ```
 
-#### Return Value
+## Return Value
 
 A C string indicating the name of the selector.
 

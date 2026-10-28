@@ -20,7 +20,7 @@ A representation of a tick in a slider, with associated value and optional label
 struct SliderTick<V> where V : BinaryFloatingPoint
 ```
 
-#### Overview
+## Overview
 
 The following example shows a slider bound to the value `percentage`. As the slider updates the `currentValueLabel`. The slider also renders marks at a `0.25` step interval.
 

@@ -19,7 +19,7 @@ protocol NSFileProviderPartialContentFetching : NSObjectProtocol
 @protocol NSFileProviderPartialContentFetching <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt this protocol to let the system request only part of a file. Apps that read files provided by your extension can benefit from this feature, either by minimizing the amount of data your file provider needs to download, or by finishing the download quickly, freeing up the reading process.
 

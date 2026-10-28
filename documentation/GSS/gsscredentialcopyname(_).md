@@ -23,7 +23,7 @@ func GSSCredentialCopyName(_ cred: gss_cred_id_t) -> gss_name_t?
 gss_name_tGSSCredentialCopyName(gss_cred_id_t cred);
 ```
 
-#### Return Value
+## Return Value
 
 A GSS name for the given credential, or NULL on failure. Release this object with a call to [`gss_release_name(_:_:)`](./gss_release_name%28_,_%29.md) when you are done with it.
 

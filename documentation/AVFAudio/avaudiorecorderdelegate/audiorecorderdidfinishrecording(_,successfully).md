@@ -25,7 +25,7 @@ optional func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, succe
 - (void) audioRecorderDidFinishRecording:(AVAudioRecorder *) recorder successfully:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 The system doesn’t call this method if the recorder stops due to an interruption.
 

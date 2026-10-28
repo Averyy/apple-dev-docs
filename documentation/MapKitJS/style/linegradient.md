@@ -16,7 +16,7 @@ get lineGradient(): LineGradient | null;
 set lineGradient(lineGradient: LineGradient | null);
 ```
 
-#### Discussion
+## Discussion
 
 If a style has both [`strokeColor`](./strokecolor.md) and [`lineGradient`](./linegradient.md) definitions, MapKit JS displays the [`lineGradient`](./linegradient.md). If you don’t define a color at the start or end location within the gradient, MapKit JS uses the style’s [`strokeColor`](./strokecolor.md) as the default.
 

@@ -25,11 +25,11 @@ convenience init(name: String)
 - (instancetype) initWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A persistent container initialized with the given name.
 
-#### Discussion
+## Discussion
 
 By default, the provided name value is used to name the persistent store and is used to look up the name of the [`NSManagedObjectModel`](../nsmanagedobjectmodel.md) object to be used with the [`NSPersistentContainer`](../nspersistentcontainer.md) object.
 

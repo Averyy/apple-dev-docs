@@ -15,7 +15,7 @@ A type which provides information about display hardware.
 struct DisplayProxy
 ```
 
-#### Overview
+## Overview
 
 You can use this type with your custom window layouts to size and position windows relative to a display’s bounds.
 

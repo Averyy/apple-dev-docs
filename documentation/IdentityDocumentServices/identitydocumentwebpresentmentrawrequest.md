@@ -18,7 +18,7 @@ A struct that defines the type that represents a raw web presentment request.
 struct IdentityDocumentWebPresentmentRawRequest
 ```
 
-#### Discussion
+## Discussion
 
 The system passes this type to the document provider app that the person selects to respond to the request.
 

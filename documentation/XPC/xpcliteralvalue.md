@@ -21,7 +21,7 @@ A type that bridges Swift literal values to XPC objects for use in dictionary li
 struct XPCLiteralValue
 ```
 
-#### Overview
+## Overview
 
 This type enables ergonomic dictionary literal syntax:
 

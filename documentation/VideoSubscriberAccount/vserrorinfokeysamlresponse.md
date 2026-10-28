@@ -24,7 +24,7 @@ let VSErrorInfoKeySAMLResponse: String
 extern NSErrorUserInfoKey const VSErrorInfoKeySAMLResponse;
 ```
 
-#### Discussion
+## Discussion
 
 This key is a string in the [`userInfo`](../Foundation/nserror/userinfo.md) dictionary that the system returns with the error.
 

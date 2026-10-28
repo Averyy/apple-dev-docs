@@ -25,7 +25,7 @@ enum NetworkServiceType
 enum NSURLRequestNetworkServiceType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The network service type provides a hint to the operating system about the nature and use of the underlying traffic. This hint enhances the system’s ability to prioritize traffic, determine how quickly it needs to wake up the cellular or Wi-Fi radio, and so on. By providing accurate information, you improve the system’s ability to optimally balance battery life, performance, and other considerations.
 

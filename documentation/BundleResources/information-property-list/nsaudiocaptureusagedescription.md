@@ -14,7 +14,7 @@ A message that tells people why your app is requesting access to capture system 
 - **Name**: `NSAudioCaptureUsageDescription`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 For more information, see [Capturing system audio with Core Audio taps](../../CoreAudio/capturing-system-audio-with-core-audio-taps.md).
 

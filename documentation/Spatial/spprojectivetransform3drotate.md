@@ -21,7 +21,7 @@ Returns a transform that results from applying the specified rotation.
 static SPProjectiveTransform3D SPProjectiveTransform3DRotate(SPProjectiveTransform3D transform, SPRotation3D rotation);
 ```
 
-#### Return Value
+## Return Value
 
 The transform that results from applying the specified rotation.
 

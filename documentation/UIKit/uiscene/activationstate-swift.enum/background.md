@@ -23,7 +23,7 @@ case background
 UISceneActivationStateBackground
 ```
 
-#### Discussion
+## Discussion
 
 A background scene does not have a visible interface.
 

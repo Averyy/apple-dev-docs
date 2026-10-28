@@ -21,7 +21,7 @@ The type of policy, such as the terms of service or privacy policies.
 struct SubscriptionStorePolicyKind
 ```
 
-#### Overview
+## Overview
 
 To set the destination of a policy button in a [`SubscriptionStoreView`](./subscriptionstoreview.md), use [`subscriptionStorePolicyDestination(url:for:)`](../SwiftUI/view/subscriptionstorepolicydestination%28url,for%29.md) or [`subscriptionStorePolicyDestination(for:destination:)`](../SwiftUI/view/subscriptionstorepolicydestination%28for,destination%29.md).
 

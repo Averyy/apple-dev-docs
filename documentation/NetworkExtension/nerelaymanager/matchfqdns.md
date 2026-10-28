@@ -22,7 +22,7 @@ var matchFQDNs: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * matchFQDNs;
 ```
 
-#### Discussion
+## Discussion
 
 An array of strings containing Fully Qualified Domain Names (FQDNs). If this property is non-nil, the relay will be used to access the specified hosts.  If this and the matchDomains property is nil, the relay will be used for all domains.
 

@@ -23,7 +23,7 @@ Returns a new arithmetic structure that takes two inputs from the specified para
 init(in1: BNNSNDArrayDescriptor, in1_type: BNNSDescriptorType, in2: BNNSNDArrayDescriptor, in2_type: BNNSDescriptorType, out: BNNSNDArrayDescriptor, out_type: BNNSDescriptorType)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The data types of the inputs must be equal to the output data type. The size of the inputs must either 1, or the maximum size of either input and the output. Arithmetic layers only support arrays with a data type of `float`, and a data layout of [`BNNS.DataLayout.vector`](../bnns/datalayout/vector.md), [`BNNS.DataLayout.matrixRowMajor`](../bnns/datalayout/matrixrowmajor.md), [`BNNS.DataLayout.matrixColumnMajor`](../bnns/datalayout/matrixcolumnmajor.md), or [`BNNS.DataLayout.imageCHW`](../bnns/datalayout/imagechw.md).
 

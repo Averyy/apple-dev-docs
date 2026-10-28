@@ -19,7 +19,7 @@ var showsSuppressionButton: Bool { get set }
 @property BOOL showsSuppressionButton;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md), which specifies the absence of a suppression checkbox in the alert. Set the value to [`true`](../../Swift/true.md) to show a suppression checkbox in the alert.
 

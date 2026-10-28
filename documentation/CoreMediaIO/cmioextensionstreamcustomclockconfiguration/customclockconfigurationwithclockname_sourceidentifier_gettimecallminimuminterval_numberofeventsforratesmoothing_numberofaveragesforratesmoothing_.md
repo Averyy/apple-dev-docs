@@ -16,7 +16,7 @@ Returns a new a custom clock configuration.
 + (instancetype) customClockConfigurationWithClockName:(NSString *) clockName sourceIdentifier:(NSUUID *) sourceIdentifier getTimeCallMinimumInterval:(CMTime) getTimeCallMinimumInterval numberOfEventsForRateSmoothing:(uint32_t) numberOfEventsForRateSmoothing numberOfAveragesForRateSmoothing:(uint32_t) numberOfAveragesForRateSmoothing;
 ```
 
-#### Return Value
+## Return Value
 
 A new custom clock configuration.
 

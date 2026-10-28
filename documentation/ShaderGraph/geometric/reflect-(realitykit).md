@@ -14,7 +14,7 @@ Reflects a vector about another vector.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -25,12 +25,12 @@ Reflects a vector about another vector.
 | --- | --- |
 | `Out` | Vector3f |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`In`**: The input vector to reflect.
 - **`Normal`**: The vector that the `In` vector will be reflected with reference to.
 
-#### Discussion
+## Discussion
 
 The `Reflect` node reflects the `In` vector by taking into account the surface orientation determined by the `Normal` vector. The `Reflect` node normalizes the `Normal` vector, then calculates the reflection direction using the formula, `In - 2 * dot(Normal, In) * Normal`. In this equation, `dot()` represents the dot product of the two vectors.
 

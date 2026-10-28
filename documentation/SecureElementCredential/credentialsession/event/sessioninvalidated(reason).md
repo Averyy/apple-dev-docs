@@ -16,7 +16,7 @@ The session became invalidated.
 case sessionInvalidated(reason: CredentialSession.ErrorCode)
 ```
 
-#### Discussion
+## Discussion
 
 The associated value `reason` provides a reason for the invalidation.
 

@@ -15,7 +15,7 @@ A constant indicating that feature visibility adapts to the current map state.
 readonly Adaptive: "adaptive";
 ```
 
-#### Discussion
+## Discussion
 
 Use `mapkit.FeatureVisibility.Adaptive` to show adaptive controls only when the map is in a given state. You can show or hide controls that aren’t adaptive by setting map properties to `true` or `false`, respectively.
 

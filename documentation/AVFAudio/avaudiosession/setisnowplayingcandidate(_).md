@@ -19,7 +19,7 @@ func setIsNowPlayingCandidate(_ inValue: Bool) throws
 - (BOOL) setIsNowPlayingCandidate:(BOOL) inValue error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Only a single audio session for an app can be a Now Playing candidate. Designating multiple audio sessions for the same app as Now Playing candidates results in none of them being eligible.
 

@@ -19,7 +19,7 @@ func SKSearchCancel(_ inSearch: SKSearch!)
 void SKSearchCancel(SKSearchRef inSearch);
 ```
 
-#### Discussion
+## Discussion
 
 Call this function when you want to cancel an asynchronous search that you initiated with [`SKSearchCreate(_:_:_:)`](./api-1443079-sksearchcreate.md). This function stops the search process if it is still in progress at the time. It does not dispose of the search object (SKSearchRef).
 

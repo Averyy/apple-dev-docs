@@ -25,7 +25,7 @@ func CVPixelBufferGetBytesPerRow(_ pixelBuffer: CVPixelBuffer) -> Int
 extern size_t CVPixelBufferGetBytesPerRow(CVPixelBufferRef pixelBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes per row of the image data.   For planar buffers, this function returns a `rowBytes` value such that `bytesPerRow` * `height` covers the entire image, including all planes.
 

@@ -13,7 +13,7 @@
 kINQUIRY_Byte3_HISUP_Mask = (1 << kINQUIRY_Byte3_HISUP_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the HISUP bit.
 

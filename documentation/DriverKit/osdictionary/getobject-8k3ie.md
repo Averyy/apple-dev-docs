@@ -18,11 +18,11 @@ Returns a member of the dictionary.
 OSObject * getObject(const char *aKey) const;
 ```
 
-#### Return Value
+## Return Value
 
 Member at the given index or NULL if the index is greater or equal to the array count. The retain count of the result object is not incremented and the object should not be release by the caller.
 
-#### Discussion
+## Discussion
 
 Looks up an existing object in the dictionary with the given key and returns it.
 

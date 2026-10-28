@@ -18,7 +18,7 @@ Returns or sets the camera at the given index.
 subscript(index: Int) -> LowLevelRenderer.Camera { get set }
 ```
 
-#### Return Value
+## Return Value
 
 The [`LowLevelRenderer.Camera`](../camera.md) at `index`.
 

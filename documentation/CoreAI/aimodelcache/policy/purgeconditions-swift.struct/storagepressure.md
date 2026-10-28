@@ -19,7 +19,7 @@ A condition that allows purging under device storage pressure.
 static let storagePressure: AIModelCache.Policy.PurgeConditions
 ```
 
-#### Discussion
+## Discussion
 
 This option allows the system to delete a specialized asset when the device runs low on storage and needs to reclaim space.
 

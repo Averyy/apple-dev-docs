@@ -24,7 +24,7 @@ case tier2
 MTLTextureSparseTier2
 ```
 
-#### Discussion
+## Discussion
 
 In addition to the guarantees tier 1 sparse textures provide, tier 2 sparse textures allow the following:
 

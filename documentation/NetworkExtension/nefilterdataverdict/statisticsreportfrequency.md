@@ -19,7 +19,7 @@ var statisticsReportFrequency: NEFilterReport.Frequency { get set }
 @property NEFilterReportFrequency statisticsReportFrequency;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the frequency at which the provider receives a call to its [`handle(_:)`](../nefilterprovider/handle%28_%29.md) method with an [`NEFilterReport.Event.statistics`](../nefilterreport/event-swift.enum/statistics.md) event.
 

@@ -22,7 +22,7 @@ nonisolated
 func nextSampleBuffer() async -> AVPlayerItemSampleBufferOutput.SampleBufferInSequence?
 ```
 
-#### Discussion
+## Discussion
 
 This method will wait indefinitely for the next sample buffer to become available. This method returns nil if the current task is cancelled or if this method is called from a different task.
 

@@ -21,7 +21,7 @@ object CountryOrRegion
 
 - [Apple Ads Campaign Management API 2](./apple-search-ads-campaign-management-api-2.md)
 
-#### Discussion
+## Discussion
 
 Countries and regions use ISO alpha-2 country codes. Use the `Get Supported Countries or Regions` endpoint to fetch supported languages ands language codes.
 

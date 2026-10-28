@@ -11,11 +11,11 @@ Returns the medium dictionary published by the driver.
 virtual const OSDictionary * getMediumDictionary() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the published medium dictionary, or 0 if the driver has not yet published a medium dictionary through publishMediumDictionary().
 
-#### Overview
+## Overview
 
 Returns the medium dictionary published by the driver through publishMediumDictionary(). Use copyMediumDictionary() to create and get a copy of the medium dictionary.
 

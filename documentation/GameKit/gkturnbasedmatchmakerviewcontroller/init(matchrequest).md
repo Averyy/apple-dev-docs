@@ -24,7 +24,7 @@ init(matchRequest request: GKMatchRequest)
 - (id) initWithMatchRequest:(GKMatchRequest *) request;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized matchmaker view controller object or `nil` If an error occurs.
 

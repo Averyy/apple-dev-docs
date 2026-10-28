@@ -25,7 +25,7 @@ let kCMTextFormatDescriptionExtension_DisplayFlags: CFString
 extern CFStringRef const kCMTextFormatDescriptionExtension_DisplayFlags;
 ```
 
-#### Discussion
+## Discussion
 
 The value needs to be a value as a number an `SInt32` that holds [`CMTextDisplayFlags`](./cmtextdisplayflags.md).
 

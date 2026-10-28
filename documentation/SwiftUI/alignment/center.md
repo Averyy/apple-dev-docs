@@ -21,7 +21,7 @@ A guide that marks the center of the view.
 static let center: Alignment
 ```
 
-#### Discussion
+## Discussion
 
 This alignment combines the [`center`](../horizontalalignment/center.md) horizontal guide and the [`center`](../verticalalignment/center.md) vertical guide:
 

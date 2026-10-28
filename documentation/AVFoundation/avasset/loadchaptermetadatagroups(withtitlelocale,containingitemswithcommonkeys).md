@@ -21,11 +21,11 @@ Loads chapter metadata that contains the specified title locale and common keys.
 func loadChapterMetadataGroups(withTitleLocale locale: Locale, containingItemsWithCommonKeys commonKeys: [AVMetadataKey] = []) async throws -> [AVTimedMetadataGroup]
 ```
 
-#### Return Value
+## Return Value
 
 An array of chapter metadata items for a locale.
 
-#### Discussion
+## Discussion
 
 This method returns an array of [`AVTimedMetadataGroup`](../avtimedmetadatagroup.md) objects asynchronously. Each object in the array contains an [`AVMetadataItem`](../avmetadataitem.md) that represents the chapter’s title, and the metadata group’s [`timeRange`](../avtimedmetadatagroup/timerange.md) value equals the time range of the chapter title item.
 

@@ -23,7 +23,7 @@ var shouldRefetchContacts: Bool { get set }
 @property (nonatomic, assign) BOOL shouldRefetchContacts;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md), so the save request refetches added and updated contacts. Set to [`false`](../../Swift/false.md) to suppress the refetch behavior and reduce the save request’s execution time.
 

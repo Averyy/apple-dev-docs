@@ -23,7 +23,7 @@ func recordEditAction(in originalTextRange: NSTextRange, newTextRange: NSTextRan
 - (void) recordEditActionInRange:(NSTextRange *) originalTextRange newTextRange:(NSTextRange *) newTextRange;
 ```
 
-#### Discussion
+## Discussion
 
 The concrete subclass invokes this method for each edit action.
 

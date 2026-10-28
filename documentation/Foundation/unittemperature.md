@@ -25,11 +25,11 @@ class UnitTemperature
 @interface NSUnitTemperature : NSDimension
 ```
 
-#### Overview
+## Overview
 
 You typically use instances of [`UnitTemperature`](./unittemperature.md) to represent specific quantities of temperature using the [`NSMeasurement`](./nsmeasurement.md) class.
 
-##### Temperature
+### Temperature
 
 Temperature is a comparative measure of thermal energy. The SI unit for temperature is the kelvin (K), which is defined in terms of the triple point of water. Temperature is also commonly measured by degrees of various scales, including Celsius (°C) and Fahrenheit (°F).
 

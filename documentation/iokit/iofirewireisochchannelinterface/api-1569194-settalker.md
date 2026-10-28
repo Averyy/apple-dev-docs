@@ -16,7 +16,7 @@ Set the talker port for this channel.
 IOReturn (*SetTalker)(IOFireWireLibIsochChannelRef self, IOFireWireLibIsochPortRef talker);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn error code.
 

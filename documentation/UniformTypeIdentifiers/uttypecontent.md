@@ -21,7 +21,7 @@ A base type that represents anything containing user-viewable content.
 extern UTType * const UTTypeContent;
 ```
 
-#### Discussion
+## Discussion
 
 Types that conform to content include documents, pasteboard data, and document packages. Types describing files or packages must also conform to [`UTTypeData`](./uttypedata.md) or [`UTTypePackage`](./uttypepackage.md) in order for the system to bind documents to them.
 

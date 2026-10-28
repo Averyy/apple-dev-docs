@@ -21,7 +21,7 @@ The types of attributes that Core Data supports.
 struct AttributeType
 ```
 
-#### Overview
+## Overview
 
 Core Data attribute types explicitly distinguish between bit size. This allows their values to exist independent of the persistent store that contains them. A scalar option is available for a number of attribute types, in some cases by default.
 

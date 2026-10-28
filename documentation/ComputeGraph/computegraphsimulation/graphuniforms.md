@@ -21,7 +21,7 @@ Returns a read-only copy of the uniforms buffer.
 final var graphUniforms: any MTLBuffer { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use `modifyUniforms(_:)` to make modifications.
 

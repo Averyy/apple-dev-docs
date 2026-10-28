@@ -24,7 +24,7 @@ let CNErrorUserInfoValidationErrorsKey: String
 extern NSString * const CNErrorUserInfoValidationErrorsKey;
 ```
 
-#### Discussion
+## Discussion
 
 An array of [`NSError`](../Foundation/nserror.md) objects for [`CNError.Code.validationMultipleErrors`](./cnerror/code/validationmultipleerrors.md).
 

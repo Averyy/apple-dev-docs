@@ -13,7 +13,7 @@ virtual void setLogoutCompletion(
  FWSBP2LogoutCallbackcallback );
 ```
 
-#### Overview
+## Overview
 
 The supplied callback is called when a logout attempt has completed. "status" in the callback's params should be checked to determine the success or failure of the logout attempt. If "statusBlock" is non-null then logout status was written and it has been supplied here. Note: all buffers supplied to callbacks are only valid for the duration of the callback. Also, you are not to modify the contents of any supplied buffer.
 

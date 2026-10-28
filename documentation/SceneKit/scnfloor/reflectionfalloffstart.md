@@ -25,7 +25,7 @@ var reflectionFalloffStart: CGFloat { get set }
 @property (nonatomic) CGFloat reflectionFalloffStart;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit can render reflections on a floor using an opacity gradient (or falloff). With this gradient, the reflections of scene contents closer to the floor are more visible than those of scene contents farther from it. This property marks the distance at which the opacity gradient begins. Scene contents closer to the floor than this distance appear in the reflection with full intensity.
 

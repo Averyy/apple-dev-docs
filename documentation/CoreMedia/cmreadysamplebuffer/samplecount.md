@@ -23,7 +23,7 @@ var sampleCount: Int { get }
 
 Available when `Content` conforms to `CMSampleBuffer.MultiSampleContent`.
 
-#### Discussion
+## Discussion
 
 This value is always equal to `sampleProperties.count`. This value is 0 when `Content` is [`CMSampleBuffer.DynamicContent`](../cmsamplebuffer/dynamiccontent.md) and [`contentType`](./contenttype.md) is [`CMSampleBuffer.ContentType.markerOnly`](../cmsamplebuffer/contenttype-swift.enum/markeronly.md). For all other sample buffer content, this value is greater than 0.
 

@@ -23,7 +23,7 @@ func canLoadObjects(ofClass aClass: any NSItemProviderReading.Type) -> Bool
 - (BOOL) canLoadObjectsOfClass:(Class<NSItemProviderReading> *) aClass;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if at least one drag item in the session can create an instance of the specified class; otherwise, [`false`](../../Swift/false.md).
 

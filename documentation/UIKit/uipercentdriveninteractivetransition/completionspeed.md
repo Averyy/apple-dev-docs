@@ -23,7 +23,7 @@ var completionSpeed: CGFloat { get set }
 @property (nonatomic, assign) CGFloat completionSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `1.0`, which yields an animation that proceeds in real time. You typically change this value to speed up or slow down the animation at specific points in the transition. For example, you might change the animation speed at the end of a transition or when canceling it, in which case you would set the speed when you stop tracking user events and are about to call the [`cancel()`](./cancel%28%29.md) or [`finish()`](./finish%28%29.md) method.
 

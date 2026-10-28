@@ -23,7 +23,7 @@ case scenePrint(revision: Int?)
 
 - [Creating an Image Classifier Model](../../creating-an-image-classifier-model.md)
 
-#### Discussion
+## Discussion
 
 > **Note**: The case’s associated value indicates which revision of the feature extractor to use. Set this to 1 when creating a scene print feature extractor.
 

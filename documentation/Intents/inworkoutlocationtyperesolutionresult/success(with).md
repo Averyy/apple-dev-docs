@@ -23,11 +23,11 @@ class func success(with resolvedWorkoutLocationType: INWorkoutLocationType) -> S
 + (instancetype) successWithResolvedWorkoutLocationType:(INWorkoutLocationType) resolvedWorkoutLocationType;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INWorkoutLocationTypeResolutionResult`](../inworkoutlocationtyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you recognize the specified workout location.
 

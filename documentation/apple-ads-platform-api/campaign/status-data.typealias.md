@@ -20,11 +20,11 @@ string Campaign.Status
 - `ENABLED`: The campaign is set to run. Delivery depends on budget availability, eligibility, and system status.
 - `PAUSED`: The advertiser paused the campaign. No ads serve until the status changes to `ENABLED`.
 
-#### Discussion
+## Discussion
 
 This field directly controls auction eligibility for the campaign, independent of the system-computed [`Campaign.SystemStatus`](./systemstatus-data.typealias.md).
 
-##### Example
+### Example
 
 ```json
 {

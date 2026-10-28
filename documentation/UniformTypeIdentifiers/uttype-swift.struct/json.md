@@ -21,7 +21,7 @@ A type that represents JavaScript Object Notation (JSON) data.
 static var json: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.json`.
 

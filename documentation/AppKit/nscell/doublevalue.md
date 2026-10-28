@@ -19,7 +19,7 @@ var doubleValue: Double { get set }
 @property double doubleValue;
 ```
 
-#### Discussion
+## Discussion
 
 This property uses the [`objectValue`](./objectvalue.md) property to access the actual value. If the cell is not a text-type cell or the cell’s value is not scannable, this property contains the value `0`.
 

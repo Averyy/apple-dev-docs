@@ -23,7 +23,7 @@ case type30
 kSMPTETimeType30
 ```
 
-#### Discussion
+## Discussion
 
 30 video frames per second.
 

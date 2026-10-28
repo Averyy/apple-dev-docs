@@ -20,17 +20,17 @@ func SecTrustSettingsSetTrustSettings(_ certRef: SecCertificate, _ domain: SecTr
 OSStatus SecTrustSettingsSetTrustSettings(SecCertificateRef certRef, SecTrustSettingsDomain domain, CFTypeRef trustSettingsDictOrArray);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 If you pass `NULL` for the `trustSettingsDictOrArray` parameter, then the trust settings for this certificate are stored as an empty trust settings array, indicating “always trust this root certificate regardless of use.” This setting is valid only for a self-signed (root) certificate. To instead remove all trust settings for the certificate (interpreted as “this certificate must be verified to a known trusted certificate”), use the [`SecTrustSettingsRemoveTrustSettings(_:_:)`](./sectrustsettingsremovetrustsettings%28_,_%29.md) function.
 
 If the specified certificate already has trust settings in the specified domain, this function replaces them.
 
-##### Special Considerations
+### Special Considerations
 
 When making changes to per-user trust settings, the user is prompted with an alert panel asking for authentication (user name and password or other credentials normally used for login). Therefore, it is not possible to modify per-user trust settings when not running in a GUI environment (that is, when the user is not logged in via the login window). When making changes to system-wide trust settings, the user is prompted with an alert panel asking for an administrator’s name and password unless the calling process is running as root, in which case no further authentication is needed. Note that this function might block while waiting for user input.
 

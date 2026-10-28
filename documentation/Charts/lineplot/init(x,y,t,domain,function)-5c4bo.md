@@ -24,7 +24,7 @@ init(x: Text, y: Text, t: Text, domain: ClosedRange<Double>, function: @escaping
 
 Available when `Content` is `FunctionLinePlotContent`.
 
-#### Discussion
+## Discussion
 
 Parameters:
 

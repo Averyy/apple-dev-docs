@@ -20,7 +20,7 @@ var appClipCodeTrackingEnabled: Bool { get set }
 @property (nonatomic, assign) BOOL appClipCodeTrackingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When this property’s value is [`true`](../../Swift/true.md), the session delegate recieves an [`ARAppClipCodeAnchor`](../arappclipcodeanchor.md) via [`session(_:didAdd:)`](../arsessiondelegate/session%28_,didadd%29.md) for every App Clip Code that ARKit detects in the physical environment. The default value is [`false`](../../Swift/false.md).
 

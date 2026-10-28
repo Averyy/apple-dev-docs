@@ -20,11 +20,11 @@ optional func windowShouldClose(_ sender: NSWindow) -> Bool
 - (BOOL) windowShouldClose:(NSWindow *) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow `sender` to be closed; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method may not always be called during window closing. Specifically, this method is not called when a user quits an application.
 

@@ -10,7 +10,7 @@
     },
     "https://developer.apple.com/documentation/tipkit/highlightingappfeatureswithtipkit": {
       "file_path": "documentation/TipKit/highlightingappfeatureswithtipkit.md",
-      "hash": "d8c3577598e76f17042f26c005384688859e68521a98479fdaf22e909435f1c3"
+      "hash": "7fb89082c08386d4e5320379661697eb47a941d2e017d080e9e825f3eb738ab9"
     },
     "https://developer.apple.com/documentation/tipkit/minitipviewstyle": {
       "file_path": "documentation/TipKit/minitipviewstyle.md",
@@ -770,7 +770,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/highlightingappfeatureswithtipkit.json": {
       "file_path": "documentation/TipKit/highlightingappfeatureswithtipkit.md",
-      "hash": "d8c3577598e76f17042f26c005384688859e68521a98479fdaf22e909435f1c3"
+      "hash": "7fb89082c08386d4e5320379661697eb47a941d2e017d080e9e825f3eb738ab9"
     },
     "https://developer.apple.com/tutorials/data/documentation/tipkit/minitipviewstyle.json": {
       "file_path": "documentation/TipKit/minitipviewstyle.md",
@@ -1523,7 +1523,7 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 380
   }

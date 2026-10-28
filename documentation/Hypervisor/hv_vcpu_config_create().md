@@ -19,11 +19,11 @@ func hv_vcpu_config_create() -> hv_vcpu_config_t
 extern hv_vcpu_config_thv_vcpu_config_create();
 ```
 
-#### Return Value
+## Return Value
 
 A new vCPU configuration object.
 
-#### Discussion
+## Discussion
 
 If your app isn’t using ARC, call [`os_release`](../os/os_release-c.func.md) on a vCPU configuration object when it’s no longer needed.
 

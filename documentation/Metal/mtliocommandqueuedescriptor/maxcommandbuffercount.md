@@ -24,7 +24,7 @@ var maxCommandBufferCount: Int { get set }
 @property (nonatomic, readwrite) NSUInteger maxCommandBufferCount;
 ```
 
-#### Discussion
+## Discussion
 
 The input/output command buffers that count against this limit are those that are currently executing in a queue or waiting to execute. The command buffers that have finished executing no longer count against this limit.
 

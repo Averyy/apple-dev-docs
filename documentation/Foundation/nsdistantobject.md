@@ -18,7 +18,7 @@ A proxy for objects in other applications or threads.
 @interface NSDistantObject : NSProxy
 ```
 
-#### Overview
+## Overview
 
 When a distant object receives a message, in most cases it forwards the message through its [`NSConnection`](./nsconnection.md) object to the real object in another application, supplying the return value to the sender of the message if one is received, and propagating any exception back to the invoker of the method that raised it.
 

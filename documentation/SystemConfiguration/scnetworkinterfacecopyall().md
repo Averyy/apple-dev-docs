@@ -19,7 +19,7 @@ func SCNetworkInterfaceCopyAll() -> CFArray
 CFArrayRefSCNetworkInterfaceCopyAll();
 ```
 
-#### Return Value
+## Return Value
 
 The list of interfaces on the system. You must release the returned value.
 

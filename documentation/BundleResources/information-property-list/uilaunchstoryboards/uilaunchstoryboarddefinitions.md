@@ -15,7 +15,7 @@ An array of dictionaries mapping launch storyboard identifiers to storyboards.
 - **Name**: `UILaunchStoryboardDefinitions`
 - **Type**: array of dictionary 
 
-#### Discussion
+## Discussion
 
 Each dictionary has [`UILaunchStoryboardFile`](./uilaunchstoryboarddefinitions/uilaunchstoryboardfile.md) and [`UILaunchStoryboardIdentifier`](./uilaunchstoryboarddefinitions/uilaunchstoryboardidentifier.md) keys, associating a storyboard file or xib with an identifier.
 

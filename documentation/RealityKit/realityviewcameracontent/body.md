@@ -20,7 +20,7 @@ The default view contents of a [`RealityView`](../realityview.md) using [`Realit
 @preconcurrency struct Body<Placeholder> where Placeholder : View
 ```
 
-#### Overview
+## Overview
 
 You don’t directly create instances of this type because [`RealityView`](../realityview.md) creates them for you.
 

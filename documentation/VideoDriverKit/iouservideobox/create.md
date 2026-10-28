@@ -15,11 +15,11 @@ Static factory method to allocate and initialize a user video box.
 static OSSharedPtr<IOUserVideoBox> Create(IOUserVideoDriver *in_driver, bool in_is_acquirable, OSString *in_box_uid);
 ```
 
-#### Return Value
+## Return Value
 
 A user video box if it was successfully allocated and initialized.
 
-#### Discussion
+## Discussion
 
 If `IOUserVideoBox` is subclassed to override behavior, don’t use this method to allocate or initialize the custom subclass.
 

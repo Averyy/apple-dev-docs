@@ -13,7 +13,7 @@ Animate a filtered image to a Metal view in a SwiftUI app using a Core Image Ren
 - macOS 12.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 This sample shows how to assemble a [SwiftUI](../SwiftUI/SwiftUI.md) app that displays a Metal view with animated images that you generate procedurally from Core Image.
 
@@ -24,7 +24,7 @@ The sample combines view update and state changes to produce the animation:
 - For view update, the `MetalView` structure conforms to the [UIViewRepresentable](../SwiftUI/uiviewrepresentable.md) or [NSViewRepresentable](../SwiftUI/nsviewrepresentable.md) protocol of the SwiftUI life cycle.
 - For state changes, the Renderer is a `StateObject` conforming to the [ObservableObject](../Combine/observableobject.md) protocol.
 
-##### Generate an animation
+### Generate an animation
 
 The `Renderer` class generates an image for an animation frame by conforming to the MetalKit [MTKViewDelegate](../MetalKit/mtkviewdelegate.md) delegate protocol. The protocol’s [draw(in:)](../MetalKit/mtkviewdelegate/draw%28in%29.md) function commits render destination work to the GPU using a render task in a Metal command buffer.
 
@@ -123,7 +123,7 @@ commandBuffer.present(drawable)
 commandBuffer.commit()
 ```
 
-##### Add an EDR effect
+### Add an EDR effect
 
 The sample adds an EDR effect, a shiny ripple with a bright specular highlight, to the rendered checkerboard animation in three steps:
 
@@ -133,7 +133,7 @@ The sample adds an EDR effect, a shiny ripple with a bright specular highlight, 
 
 For more information about adding an EDR effect, see [Display EDR content with Core Image, Metal, and SwiftUI](https://developer.apple.com/videos/play/wwdc2022/10114/).
 
-##### Configure the view for EDR support
+### Configure the view for EDR support
 
 The `MetalView` opts into EDR support setting [wantsExtendedDynamicRangeContent](../QuartzCore/cametallayer/wantsextendeddynamicrangecontent.md) to true on the backing [CAMetalLayer](../QuartzCore/cametallayer.md). When enabled, the layer uses a wide gamut [colorspace](../QuartzCore/cametallayer/colorspace.md) to render colors beyond SDR range. Similarly, the [MTKView](../MetalKit/mtkview.md) sets a wide gamut [colorPixelFormat](../QuartzCore/cametallayer/pixelformat.md) to render the generated EDR image.
 
@@ -149,7 +149,7 @@ if let layer = view.layer as? CAMetalLayer {
 }
 ```
 
-##### Query EDR headroom
+### Query EDR headroom
 
 The `Renderer` queries the current EDR headroom for each draw call using either [maximumPotentialExtendedDynamicRangeColorComponentValue](../AppKit/nsscreen/maximumpotentialextendeddynamicrangecolorcomponentvalue.md) ([NSScreen](../AppKit/nsscreen.md)) or [currentEDRHeadroom](../UIKit/uiscreen/currentedrheadroom.md) ([UIScreen](../UIKit/uiscreen.md)). If EDR headroom is unavailable the sample sets `headroom` to `1.0` clamping to SDR.
 
@@ -167,7 +167,7 @@ The `Renderer` queries the current EDR headroom for each draw call using either 
 #endif
 ```
 
-##### Leverage EDR headroom
+### Leverage EDR headroom
 
 The sample’s ripple effect takes a gradient [shadingImage](./cirippletransition/shadingimage.md) to shade the contor of the ripple so that it appears to reflect light from the upper-left corner. [CILinearGradient](./cilineargradient.md) generates the gradient shading image between the current maximum RGB white, [color0](./cilineargradient/color0.md), and a fully transparent clear color, [color1](./cilineargradient/color1.md).
 

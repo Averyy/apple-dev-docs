@@ -23,7 +23,7 @@ init(text: String, images: [UIImage])
 - (instancetype) initWithText:(NSString *) text images:(NSArray<UIImage *> *) images;
 ```
 
-#### Discussion
+## Discussion
 
 Provide images that are display-ready. If necessary, provide light and dark variants of each image using an asset catalog, or use instances of [`UIImageAsset`](../../UIKit/uiimageasset.md) and register an image for each interface style.
 

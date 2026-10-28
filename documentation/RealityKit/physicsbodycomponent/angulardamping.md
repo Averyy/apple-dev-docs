@@ -20,7 +20,7 @@ The value that controls how fast a dynamic rigid body’s rotational motion appr
 var angularDamping: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Use a non-negative value for angular damping.
 

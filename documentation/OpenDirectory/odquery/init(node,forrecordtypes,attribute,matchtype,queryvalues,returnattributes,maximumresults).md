@@ -20,11 +20,11 @@ init(node inNode: ODNode!, forRecordTypes inRecordTypeOrList: Any!, attribute in
 - (instancetype) initWithNode:(ODNode *) inNode forRecordTypes:(id) inRecordTypeOrList attribute:(ODAttributeType) inAttribute matchType:(ODMatchType) inMatchType queryValues:(id) inQueryValueOrList returnAttributes:(id) inReturnAttributeOrList maximumResults:(NSInteger) inMaximumResults error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized query.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this API is imported as an initializer and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

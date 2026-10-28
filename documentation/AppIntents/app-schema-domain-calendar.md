@@ -5,7 +5,7 @@
 
 Make your calendar app’s actions available to Apple Intelligence and Siri by adopting schemas for common calendar actions.
 
-#### Overview
+## Overview
 
 The `.calendar` domain defines app schemas that provide a structured representation for common calendar actions and content. Apply schemas in the `.calendar` domain to make your app’s calendar functionality available to Apple Intelligence and Siri.
 

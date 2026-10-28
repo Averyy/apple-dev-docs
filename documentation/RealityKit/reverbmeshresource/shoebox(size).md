@@ -20,7 +20,7 @@ Creates a box mesh with the vertices positioned such that the bottom surface is 
 static func shoebox(size: SIMD3<Float>) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 Use this factory method for objects that *define* the scene rather than objects within it — for example, the enclosing walls, floor, and ceiling of a room.
 

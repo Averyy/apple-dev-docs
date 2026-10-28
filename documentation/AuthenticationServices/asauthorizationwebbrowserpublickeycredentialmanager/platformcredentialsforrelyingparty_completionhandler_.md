@@ -18,7 +18,7 @@ Gets a list of passkeys available for authenticating with the given relying part
 - (void) platformCredentialsForRelyingParty:(NSString *) relyingParty completionHandler:(void (^)(NSArray<ASAuthorizationWebBrowserPlatformPublicKeyCredential *> *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Before calling this method, check that the value of [`authorizationStateForPlatformCredentials`](./authorizationstateforplatformcredentials.md) is [`ASAuthorizationWebBrowserPublicKeyCredentialManager.AuthorizationState.authorized`](./authorizationstate/authorized.md) and call [`requestAuthorizationForPublicKeyCredentials(_:)`](./requestauthorizationforpublickeycredentials%28_%29.md) if your app needs authorization. If you call this method without authorization, it returns an empty array.
 

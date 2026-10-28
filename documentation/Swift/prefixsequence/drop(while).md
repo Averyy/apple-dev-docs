@@ -21,11 +21,11 @@ Returns a sequence by skipping the initial, consecutive elements that satisfy th
 func drop(while predicate: (Self.Element) throws -> Bool) rethrows -> DropWhileSequence<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A sequence starting after the initial, consecutive elements that satisfy `predicate`.
 
-#### Discussion
+## Discussion
 
 The following example uses the `drop(while:)` method to skip over the positive numbers at the beginning of the `numbers` array. The result begins with the first element of `numbers` that does not satisfy `predicate`.
 

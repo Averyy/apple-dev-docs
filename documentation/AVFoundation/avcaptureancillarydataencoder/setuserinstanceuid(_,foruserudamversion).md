@@ -23,7 +23,7 @@ func setUserInstanceUID(_ uuid: UUID, forUserUDAMVersion version: NSNumber)
 - (void) setUserInstanceUID:(NSUUID *) uuid forUserUDAMVersion:(NSNumber *) version;
 ```
 
-#### Discussion
+## Discussion
 
 Allows the user to set the instance and version of the ancillary data.
 

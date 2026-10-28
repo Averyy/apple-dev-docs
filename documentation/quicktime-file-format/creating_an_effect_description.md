@@ -4,7 +4,7 @@
 
 Tell QuickTime which effect to execute and control how the effect behaves at runtime with an effect description.
 
-#### Overview
+## Overview
 
 An effect description tells QuickTime which effect to execute and contains the parameters that control how the effect behaves at runtime. You create an effect description by creating an atom container, inserting a QT atom that specifies the effect, and inserting a set of QT atoms that set its parameters.
 

@@ -19,11 +19,11 @@ nonisolated
 func quickLookPreview<Items>(_ selection: Binding<Items.Element?>, in items: Items) -> some View where Items : RandomAccessCollection, Items.Element == URL
 ```
 
-#### Return Value
+## Return Value
 
 A view that presents the preview of the contents of the URL.
 
-#### Discussion
+## Discussion
 
 The Quick Look preview appears when you set the binding to a non-`nil` item. When you set the item back to `nil`, Quick Look dismisses the preview. If the value of the selection binding isn’t contained in the items collection, Quick Look treats it the same as a `nil` selection.
 

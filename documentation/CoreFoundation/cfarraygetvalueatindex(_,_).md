@@ -25,7 +25,7 @@ func CFArrayGetValueAtIndex(_ theArray: CFArray!, _ idx: CFIndex) -> UnsafeRawPo
 extern const void *CFArrayGetValueAtIndex(CFArrayRef theArray, CFIndex idx);
 ```
 
-#### Return Value
+## Return Value
 
 The value at the `idx` index in `theArray`. If the return value is a Core Foundation Object, ownership follows [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

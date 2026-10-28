@@ -15,11 +15,11 @@ The request body for updating an existing Creative object.
 object CreativeUpdate
 ```
 
-#### Discussion
+## Discussion
 
 To change an existing ad creative’s `name` or `creativeSpec`, use `CreativeUpdate` with `PUT /v1/creatives/{id}` ([`Update an Ad Creative`](./put-creatives-_id_.md)). `creativeType` and `destination` are locked in at creation and can’t be changed later.
 
-##### Example
+### Example
 
 ```json
 {

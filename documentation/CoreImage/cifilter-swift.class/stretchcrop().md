@@ -24,11 +24,11 @@ class func stretchCrop() -> any CIFilter & CIStretchCrop
 + (CIFilter<CIStretchCrop> *) stretchCropFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The distorted image.
 
-#### Discussion
+## Discussion
 
 This method applies the stretch crop filter to an image. This effect distorts an image by stretching an image and then applies the crop extent. If the crop value is 0, the filter only uses stretching. If the value is 1, then the filter only uses cropping.
 

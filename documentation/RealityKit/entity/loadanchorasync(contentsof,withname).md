@@ -20,7 +20,7 @@ Asynchronously loads an anchor entity from a file URL.
 @preconcurrency static func loadAnchorAsync(contentsOf url: URL, withName resourceName: String? = nil) -> LoadRequest<AnchorEntity>
 ```
 
-#### Return Value
+## Return Value
 
 A resource loader that publishes the root entity in the loaded file as an [`AnchorEntity`](../anchorentity.md).
 

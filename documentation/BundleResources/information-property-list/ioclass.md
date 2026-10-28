@@ -14,9 +14,9 @@ The name of the class to instantiate from your driver.
 - **Name**: `IOClass`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
-The value of this key is a string that contains the name of a custom [IOService](../../kernel/ioservice-1g.md) subclass in your driver. When the system successfully matches one of your driver’s personalities to a device, it instantiates the class in this key and calls its [`start`](../../kernel/ioservice/api-1532606-start.md) method.
+The value of this key is a string that contains the name of a custom [IOService](../../kernel/ioservice.md) subclass in your driver. When the system successfully matches one of your driver’s personalities to a device, it instantiates the class in this key and calls its [`start`](../../kernel/ioservice/api-1532606-start.md) method.
 
 For the personalities in a DriverKit extension, specify the value `IOUserService` unless otherwise directed by the documentation. For example, the [`IOUserHIDEventService`](../../HIDDriverKit/iouserhideventservice.md) class expects you to specify the value `AppleUserHIDEventService`.
 

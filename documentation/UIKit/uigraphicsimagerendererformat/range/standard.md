@@ -23,7 +23,7 @@ case standard
 UIGraphicsImageRendererFormatRangeStandard
 ```
 
-#### Discussion
+## Discussion
 
 If you draw wide-color content into an image renderer context that uses the standard color range, you may lose color information. The system matches the colors to the standard range of their corresponding color space.
 

@@ -19,7 +19,7 @@ class IOBluetoothDevicePair
 @interface IOBluetoothDevicePair : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the IOBluetoothDevicePair object to attempt to pair with any Bluetooth device. Once -start is invoked on it, progress is returned to the delegate via the messages defined below. This object enables you to pair with devices within your application without having to use the standard panels provided by the IOBluetoothUI framework, allowing you to write custom UI to select devices, and still handle the ability to perform device pairings.
 

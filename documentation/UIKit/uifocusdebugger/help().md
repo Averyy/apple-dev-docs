@@ -23,7 +23,7 @@ class func help() -> any UIFocusDebuggerOutput
 + (id<UIFocusDebuggerOutput>) help;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method from the `lldb` debugger using the following commands:
 

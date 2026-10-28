@@ -24,11 +24,11 @@ func VNImagePointForFaceLandmarkPoint(_ faceLandmarkPoint: vector_float2, _ face
 extern CGPoint VNImagePointForFaceLandmarkPoint(vector_float2 faceLandmarkPoint, CGRect faceBoundingBox, size_t imageWidth, size_t imageHeight);
 ```
 
-#### Return Value
+## Return Value
 
 The input face landmark point, projected into image coordinates.
 
-#### Discussion
+## Discussion
 
 The resulting point in image coordinate space may have nonintegral (floating-point) coordinates.
 

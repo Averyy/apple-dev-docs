@@ -21,7 +21,7 @@ Requests an `IntentFile` representation as a file url.
 func withFile<Result>(contentType: UTType, allowOpenInPlace: Bool = false, fileHandler: @escaping (URL, Bool) async throws -> Result) async throws -> Result
 ```
 
-#### Discussion
+## Discussion
 
 If the file is not opened in place, the system removes it after the fileHandler closure returns.
 

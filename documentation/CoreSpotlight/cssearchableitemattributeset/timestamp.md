@@ -23,7 +23,7 @@ var timestamp: Date? { get set }
 @property (strong, nullable) NSDate * timestamp;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is generally used to specify the time at which the event captured by the item took place.
 

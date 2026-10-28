@@ -14,7 +14,7 @@
 #define kIOPropertySlotKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to define the slot number for the device
 

@@ -6,7 +6,7 @@
 
 A sequence of one or more atoms that store closed captioning sample data.
 
-#### Overview
+## Overview
 
 The format of the closed captioning sample data is a sequence of one or more atoms, one of which must be a `'cdat'` atom. Unrecognized atoms should be ignored.
 

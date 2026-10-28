@@ -5,13 +5,13 @@
 
 Adjust how you manage context data when working with the web API.
 
-#### Overview
+## Overview
 
 The [`Context`](./context.md) objects that you send to the ClassKit Catalog API resemble the [`CLSContext`](../ClassKit/clscontext.md) instances that you construct when declaring a context hierarchy in your app. For example, you provide information in the [`Context.Data`](./context/data-data.dictionary.md) object like a title, a type, and a summary, corresponding to the [`title`](../ClassKit/clscontext/title.md), [`type`](../ClassKit/clscontext/type.md), and [`summary`](../ClassKit/clscontext/summary.md) properties of [`CLSContext`](../ClassKit/clscontext.md), respectively. However, there are some differences in the way you describe contexts to the ClassKit Catalog API, like how you refer to the main app context and how you manage localization.
 
 For general information about building a context hierarchy, see [Advertising your app’s assignable content](../ClassKit/advertising-your-app-s-assignable-content.md).
 
-##### Access the Main App Context
+### Access the Main App Context
 
 Every app has a single main app context at the root of its context hierarchy. You access the main app context from inside your app using the [`mainAppContext`](../ClassKit/clsdatastore/mainappcontext.md) property of the ClassKit data store, and can neither create nor destroy the context. ClassKit manages the main app context for you.
 
@@ -23,7 +23,7 @@ To refer to your main app context in an API call, use a string that contains the
 ["com.example.apple-samplecode.GreatPlays"]
 ```
 
-##### Provide Localization Data for Contexts
+### Provide Localization Data for Contexts
 
 In your app, you describe exactly one version of a given context identified by an [`identifierPath`](../ClassKit/clscontext/identifierpath.md). You localize user-facing elements, like the [`title`](../ClassKit/clscontext/title.md) and the [`summary`](../ClassKit/clscontext/summary.md), by providing localized strings at runtime based on the locale set by the user for the device.
 

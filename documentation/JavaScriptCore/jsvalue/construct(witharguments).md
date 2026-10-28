@@ -24,11 +24,11 @@ func construct(withArguments arguments: [Any]!) -> JSValue!
 - (JSValue *) constructWithArguments:(NSArray *) arguments;
 ```
 
-#### Return Value
+## Return Value
 
 The result of calling the value as a constructor, or `nil` if the value cannot be treated as a JavaScript constructor.
 
-#### Discussion
+## Discussion
 
 Calling a constructor is equivalent to using the `new` keyword in JavaScript.
 

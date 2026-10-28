@@ -19,7 +19,7 @@ var CPU_BASED_RDPMC: UInt32 { get }
 CPU_BASED_RDPMC
 ```
 
-#### Discussion
+## Discussion
 
 Must be `1`.
 

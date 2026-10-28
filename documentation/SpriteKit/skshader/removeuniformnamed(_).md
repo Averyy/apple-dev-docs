@@ -25,7 +25,7 @@ func removeUniformNamed(_ name: String)
 - (void) removeUniformNamed:(NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 If a uniform with that name does not exist in the shader, nothing happens.
 

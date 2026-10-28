@@ -29,7 +29,7 @@ func changeToMode(with params: MTRLaundryWasherModeClusterChangeToModeParams) as
 - (void) changeToModeWithParams:(MTRLaundryWasherModeClusterChangeToModeParams *) params completion:(void (^)(MTRLaundryWasherModeClusterChangeToModeResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is used to change device modes.
 

@@ -5,11 +5,11 @@
 
 Deliver notifications to the user’s iPhone or Apple Watch.
 
-#### Overview
+## Overview
 
 Apple Watch and iPhone work together to deliver notifications. Instead of appearing on both devices, notifications appear only on the device that’s most likely to have the user’s current focus.
 
-##### Forward notifications
+### Forward notifications
 
 The system decides which device receives the notification based on the notification’s type, the process that created the notification, and the currently active device.
 

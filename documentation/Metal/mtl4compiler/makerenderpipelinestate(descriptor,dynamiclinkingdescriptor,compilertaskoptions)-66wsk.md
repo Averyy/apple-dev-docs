@@ -20,11 +20,11 @@ Creates a new render pipeline state asynchronously.
 func makeRenderPipelineState(descriptor: MTL4PipelineDescriptor, dynamicLinkingDescriptor: MTL4RenderPipelineDynamicLinkingDescriptor? = nil, compilerTaskOptions: MTL4CompilerTaskOptions? = nil) async throws -> any MTLRenderPipelineState
 ```
 
-#### Return Value
+## Return Value
 
 A render pipeline state if operation upon success, otherwise this function throws.
 
-#### Discussion
+## Discussion
 
 Use this method to build any render pipeline type, including render, tile, and mesh render pipeline states. The type of the descriptor you pass indicates the pipeline type this method builds.
 

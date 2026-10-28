@@ -5,7 +5,7 @@
 
 API version number.
 
-#### Overview
+## Overview
 
 _DNS_SD_H contains the mDNSResponder version number for this header file, formatted as follows:
 

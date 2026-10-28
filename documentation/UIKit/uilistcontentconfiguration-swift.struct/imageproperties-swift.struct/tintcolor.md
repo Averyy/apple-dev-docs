@@ -19,7 +19,7 @@ The tint color to apply to the image view.
 var tintColor: UIColor? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`, which means that the image view uses its inherited tint color.
 

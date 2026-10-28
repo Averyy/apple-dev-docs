@@ -21,7 +21,7 @@ Returns a Spatial vector that represents the smooth interpolation at `x` between
 static func smoothstep(edge0: Vector3DFloat, edge1: Vector3DFloat, x: Vector3DFloat) -> Vector3DFloat
 ```
 
-#### Return Value
+## Return Value
 
 A new vector with each element set to `0` if `x <= edge0`, `1` if `x >= edge1`, and a Hermite interpolation between `0` and `1` if `edge0 < x < edge1`.
 

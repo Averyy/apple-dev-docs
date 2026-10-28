@@ -17,7 +17,7 @@ Take values along an axis at the specified indices from a flattened array.
 func takeAlong(_ array: MLXArray, _ indices: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-##### See Also
+### See Also
 
 - [Indexes](./indexes.md)
 - ``takeAlong(*:*:axis:stream:)

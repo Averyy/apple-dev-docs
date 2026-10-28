@@ -26,7 +26,7 @@ var state: NWUDPSessionState { get }
 @property (nonatomic, readonly) NWUDPSessionState state;
 ```
 
-#### Discussion
+## Discussion
 
 Use Key-Value Observing (KVO) to monitor the state. If the state is `NWUDPSessionStateReady`, then the connection is eligible for reading and writing. The state will be `NWUDPSessionStateFailed` if the endpoint could not be resolved, or all endpoints have been rejected. For information about KVO, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 

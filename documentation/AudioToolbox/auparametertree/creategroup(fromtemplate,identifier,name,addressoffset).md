@@ -24,7 +24,7 @@ class func createGroup(fromTemplate templateGroup: AUParameterGroup, identifier:
 + (AUParameterGroup *) createGroupFromTemplate:(AUParameterGroup *) templateGroup identifier:(NSString *) identifier name:(NSString *) name addressOffset:(AUParameterAddress) addressOffset;
 ```
 
-#### Return Value
+## Return Value
 
 A newly-initialized parameter group object.
 

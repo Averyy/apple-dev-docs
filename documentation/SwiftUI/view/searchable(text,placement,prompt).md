@@ -45,7 +45,7 @@ func searchable<S>(text: Binding<String>, placement: SearchFieldPlacement = .aut
 - [Managing search interface activation](../managing-search-interface-activation.md)
 - [Suggesting search terms](../suggesting-search-terms.md)
 
-#### Discussion
+## Discussion
 
 For more information about using searchable modifiers, see [Adding a search interface to your app](../adding-a-search-interface-to-your-app.md).
 

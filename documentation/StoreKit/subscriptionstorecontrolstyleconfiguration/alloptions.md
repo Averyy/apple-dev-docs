@@ -21,7 +21,7 @@ All subscription options in the subscription group.
 var allOptions: [Product] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [`allOptions`](./alloptions.md) property is an array that contains all the subscription options in a subscription group. Use the [`allOptions`](./alloptions.md) property to access the subscription options that the [`options`](./options.md) and [`sections`](./sections.md) properties may not contain.
 

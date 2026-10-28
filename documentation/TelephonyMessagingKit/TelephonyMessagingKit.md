@@ -9,7 +9,7 @@ Send and receive standards-based messages over cellular networks.
 **Availability**:
 - iOS 26.0+
 
-#### Overview
+## Overview
 
 To use TelephonyMessagingKit, use the shared instance of [`TelephonyMessagingSession`](./telephonymessagingsession.md) as your app’s main point of contact with the framework. Using a session, your app can inspect the services currently available on the device. The framework supports Short Message Service (SMS), Multimedia Messaging Service (MMS), and Rich Communication Services (RCS).
 
@@ -17,7 +17,7 @@ Each service provides an asynchronous sequence for notifications of incoming mes
 
 > **Note**: TelephonyMessagingKit supports SMS, MMS, and RCS messaging only on iPhone devices. The framework has no functionality on iPadOS or on iOS apps running in visionOS or in macOS on Apple silicon. The framework ignores calls from Mac apps built with Mac Catalyst.
 
-##### Default carrier messaging apps
+### Default carrier messaging apps
 
 To have access to the TelephonyMessageKit API you must add the [`Default Carrier Messaging App`](../BundleResources/entitlements/com.apple.developer.carrier-messaging-app.md) entitlement to your app. This functionality will be enabled in your app only when the user selects your app to be the default carrier messaging app.
 

@@ -25,7 +25,7 @@ var currentChunkInfo: AVSampleCursorChunkInfo { get }
 @property (nonatomic, readonly) AVSampleCursorChunkInfo currentChunkInfo;
 ```
 
-#### Discussion
+## Discussion
 
 If the media format that defines the sequence of samples doesn’t indicate chunking of samples, the cursor considers each sample to belong to a chunk of one sample only.
 

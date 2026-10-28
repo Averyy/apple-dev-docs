@@ -19,7 +19,7 @@ The vertical size class of the trait collection.
 @property (nonatomic) UIUserInterfaceSizeClass verticalSizeClass;
 ```
 
-#### Discussion
+## Discussion
 
 The default vertical size class for a trait collection is [`UIUserInterfaceSizeClass.unspecified`](../uiuserinterfacesizeclass/unspecified.md).
 

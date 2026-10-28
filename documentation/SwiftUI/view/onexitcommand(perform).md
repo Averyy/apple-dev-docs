@@ -17,7 +17,7 @@ nonisolated
 func onExitCommand(perform action: (() -> Void)?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The user generates an exit command by pressing the Menu button on tvOS, or the escape key on macOS.
 

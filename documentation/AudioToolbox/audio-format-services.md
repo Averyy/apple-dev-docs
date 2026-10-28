@@ -5,7 +5,7 @@
 
 Access information about audio formats and codecs.
 
-#### Overview
+## Overview
 
 This document describes Audio Format Services, a C interface for obtaining information about audio formats and codecs.
 

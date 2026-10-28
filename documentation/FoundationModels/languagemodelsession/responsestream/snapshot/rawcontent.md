@@ -20,7 +20,7 @@ The raw content of the response.
 var rawContent: GeneratedContent
 ```
 
-#### Discussion
+## Discussion
 
 When `Content` is `GeneratedContent`, this is the same as `content`.
 

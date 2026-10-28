@@ -21,11 +21,11 @@ Stops the current interval-based execution of the workgroup’s threads.
 extern int os_workgroup_interval_finish(os_workgroup_interval_t wg, os_workgroup_interval_data_t data);
 ```
 
-#### Return Value
+## Return Value
 
 A value of `0` on success, or a nonzero error code indicating why the function failed. Common error codes include `EINVAL` or `EPERM`. For example, this method returns `EINVAL` if you didn’t start the workgroup.
 
-#### Discussion
+## Discussion
 
 Call this function when you no longer need your workgroup’s threads to run at regular intervals. For example, call this function when the user’s video finishes playing and you no longer need to decode the video frames. This function puts the workgroup back into the idle state, from which you can start it again by calling the [`os_workgroup_interval_start`](./os_workgroup_interval_start.md) function.
 

@@ -21,7 +21,7 @@ A strategy that determines how to format a unit whose value is zero.
 struct ZeroValueUnitsDisplayStrategy
 ```
 
-#### Overview
+## Overview
 
 When using a [`Duration.UnitsFormatStyle`](../unitsformatstyle.md), specifying a `ZeroValueUnitsDisplayStrategy` enables you to decide whether show a unit whose value is zero.
 

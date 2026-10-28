@@ -24,7 +24,7 @@ class let wasInterruptedNotification: NSNotification.Name
 extern NSNotificationName const AVCaptureSessionWasInterruptedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Retrieve the underlying error from the notification’s user information dictionary using the key [`AVCaptureSessionInterruptionReasonKey`](../avcapturesessioninterruptionreasonkey.md).
 

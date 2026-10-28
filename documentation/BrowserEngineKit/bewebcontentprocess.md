@@ -17,7 +17,7 @@ A class that processes webpage content in an app extension.
 @interface BEWebContentProcess : NSObject
 ```
 
-#### Overview
+## Overview
 
 A browser app may launch multiple web content extension processes, and each instance of this class represents a separate process.
 

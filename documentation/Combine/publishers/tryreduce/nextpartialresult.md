@@ -21,7 +21,7 @@ An error-throwing closure that takes the previously-accumulated value and the ne
 let nextPartialResult: (Output, Upstream.Output) throws -> Output
 ```
 
-#### Discussion
+## Discussion
 
 If this closure throws an error, the publisher fails and passes the error to its subscriber.
 

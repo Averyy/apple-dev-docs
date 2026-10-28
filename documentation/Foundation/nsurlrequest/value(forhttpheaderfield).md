@@ -25,7 +25,7 @@ func value(forHTTPHeaderField field: String) -> String?
 - (NSString *) valueForHTTPHeaderField:(NSString *) field;
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with the header field `field`, or `nil` if there is no corresponding header field.
 

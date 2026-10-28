@@ -23,7 +23,7 @@ struct Suggestion
 
 - [Building a search interface for your app](../building-a-search-interface-for-your-app.md)
 
-#### Discussion
+## Discussion
 
 When executing its query, a [`CSUserQuery`](../csuserquery.md) object returns both results and suggestions for text completions of the current term. Use the [`suggestion`](./suggestion/suggestion.md) property of this structure to get one of the suggestions to display in your app’s interface and use in a new query.
 

@@ -24,7 +24,7 @@ var isAsynchronous: Bool { get set }
 @property (nonatomic, getter=isAsynchronous) BOOL asynchronous;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md). If the value is [`false`](../../Swift/false.md), the contents of this view are synchronized with Core Animation updates.
 

@@ -19,11 +19,11 @@ func shadow(withLevel val: CGFloat) -> NSColor?
 - (NSColor *) shadowWithLevel:(CGFloat) val;
 ```
 
-#### Return Value
+## Return Value
 
 The new `NSColor` object. Returns `nil` if the colors can’t be converted.
 
-#### Discussion
+## Discussion
 
 The shadow color is provided by the [`shadowColor`](./shadowcolor.md) property. Call this method when you want to darken the current color for use in shadows.
 

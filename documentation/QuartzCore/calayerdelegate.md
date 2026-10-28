@@ -24,7 +24,7 @@ protocol CALayerDelegate : NSObjectProtocol
 @protocol CALayerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You can implement the methods of this protocol to provide the layer’s content, handle the layout of sublayers, and provide custom animation actions to perform. The object that implements this protocol must be assigned to the [`delegate`](./calayer/delegate.md) property of the layer object.
 

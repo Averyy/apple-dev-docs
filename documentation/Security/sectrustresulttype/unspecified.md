@@ -25,7 +25,7 @@ case unspecified
 kSecTrustResultUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates that evaluation reached an (implicitly trusted) anchor certificate without any evaluation failures, but never encountered any explicitly stated user-trust preference. This is the most common return value. The Keychain Access utility refers to this value as the “Use System Policy,” which is the default user setting.
 

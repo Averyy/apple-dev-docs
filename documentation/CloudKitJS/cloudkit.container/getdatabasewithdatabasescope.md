@@ -17,11 +17,11 @@ CloudKit.Database getDatabaseWithDatabaseScope(
 );
 ```
 
-#### Return Value
+## Return Value
 
 The specified database.
 
-#### Discussion
+## Discussion
 
 This is a convenience method that you can use instead of the specific properties.
 

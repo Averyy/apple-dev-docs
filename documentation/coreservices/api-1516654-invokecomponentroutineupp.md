@@ -15,11 +15,11 @@ Calls your component routine callback function
 ComponentResult InvokeComponentRoutineUPP(ComponentParameters *cp, Handle componentStorage, ComponentRoutineUPP userUPP);
 ```
 
-#### Return Value
+## Return Value
 
 See the description of the `ComponentResult` data type.
 
-#### Discussion
+## Discussion
 
 See the  [`ComponentRoutineProcPtr`](./componentroutineprocptr.md)  callback for more information. 
 

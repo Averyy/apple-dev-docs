@@ -23,7 +23,7 @@ protocol UIImagePickerControllerDelegate : NSObjectProtocol
 @protocol UIImagePickerControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The methods of this protocol notify your delegate when the user either picks an image or movie, or cancels the picker operation. The delegate methods are responsible for dismissing the picker when the operation completes. To dismiss the picker, call the [`dismiss(animated:completion:)`](./uiviewcontroller/dismiss%28animated,completion%29.md) method of the parent controller responsible for displaying the [`UIImagePickerController`](./uiimagepickercontroller.md) object.
 

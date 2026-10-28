@@ -25,7 +25,7 @@ unowned(unsafe) var inverseRelationship: NSRelationshipDescription? { get set }
 @property (nonatomic, assign, nullable) NSRelationshipDescription * inverseRelationship;
 ```
 
-#### Discussion
+## Discussion
 
 The inverse relationship is the description of the current relationship from the destination entity’s perspective. For example, the inverse of a department’s relationship to an employee (a to-many relationship) is the employees’ relationship to the department (a to-one relationship).
 

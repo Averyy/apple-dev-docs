@@ -19,7 +19,7 @@ An error that indicates the vehicle isn’t available to respond to the request.
 case VehicleNotConnected
 ```
 
-#### Discussion
+## Discussion
 
 Make sure you are in range of the vehicle and that the [`isConnected`](../vehiclereport/isconnected.md) property of the vehicle report is `true`.
 

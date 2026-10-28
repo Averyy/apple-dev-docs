@@ -21,7 +21,7 @@ The custom format style that shows the two-digit numeric minute, zero-padded if 
 static var twoDigits: Date.FormatStyle.Symbol.Minute { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, this style represents one minute past the hour as `01`, and eighteen past as `18`.
 

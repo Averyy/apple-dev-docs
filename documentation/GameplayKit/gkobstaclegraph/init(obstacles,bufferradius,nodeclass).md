@@ -24,11 +24,11 @@ init(obstacles: [GKPolygonObstacle], bufferRadius: Float, nodeClass: AnyClass)
 - (instancetype) initWithObstacles:(NSArray<GKPolygonObstacle *> *) obstacles bufferRadius:(float) bufferRadius nodeClass:(Class) nodeClass;
 ```
 
-#### Return Value
+## Return Value
 
 A new obstacle graph.
 
-#### Discussion
+## Discussion
 
 This method generates a graph that can be traversed in all directions, except into the areas occupied by obstacles.
 

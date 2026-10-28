@@ -24,7 +24,7 @@ func sampleDuration(_ duration: UnsafeMutablePointer<CMTime>!)
 
 - [Understanding time in FxPlug](../../Professional-Video-Applications/understanding-time-in-fxplug.md)
 
-#### Discussion
+## Discussion
 
 Motion provides the sample duration of the project. Final Cut Pro provides the sample duration of the clip to which the effect is applied, not the sample duration for the timeline.
 

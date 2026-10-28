@@ -21,7 +21,7 @@ func item(at index: Int) -> any CPListTemplateItem
 - (id<CPListTemplateItem>) itemAtIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 The index must be within the bounds of the [`items`](./items.md) array, otherwise, your app throws an exception.
 

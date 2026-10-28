@@ -21,7 +21,7 @@ class CLKTextProvider
 @interface CLKTextProvider : NSObject
 ```
 
-#### Overview
+## Overview
 
 Typically, you don’t create instances of this class yourself. Instead, you create instances of an appropriate subclass, based on the type of text data you’re trying to create. However, you can use the [`init(format:_:)`](./clktextprovider/init%28format,_%29.md) initializer or [`textProviderWithFormat:`](./clktextprovider/textproviderwithformat_.md) class method to create a compound text provider constructed from a format string and the data from other text providers.
 

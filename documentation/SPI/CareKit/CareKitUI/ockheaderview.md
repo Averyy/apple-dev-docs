@@ -18,7 +18,7 @@ A title and detail label. The view can also be configured to show a separator, i
 class OCKHeaderView
 ```
 
-#### Overview
+## Overview
 
 ```
    +----------------------------------------+

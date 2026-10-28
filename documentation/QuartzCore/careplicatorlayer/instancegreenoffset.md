@@ -24,7 +24,7 @@ var instanceGreenOffset: Float { get set }
 @property float instanceGreenOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The `instanceGreenOffset` is added to the green color component of instance `k-1` to produce the modulation color of instance k.
 

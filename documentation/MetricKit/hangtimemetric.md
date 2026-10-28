@@ -18,7 +18,7 @@ A metric that measures app hang time.
 struct HangTimeMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.hangTime(_:)`](./metricresult/hangtime%28_%29.md) case. It appears in both [`intervalEntries`](./metricreport/intervalentries.md) and [`stateEntries`](./metricreport/stateentries.md) when state reporting is enabled.
 

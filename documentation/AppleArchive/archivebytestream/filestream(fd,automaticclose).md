@@ -21,7 +21,7 @@ Creates a stream from an open file descriptor.
 static func fileStream(fd: FileDescriptor, automaticClose: Bool = true) -> ArchiveByteStream?
 ```
 
-#### Return Value
+## Return Value
 
 A new archive byte stream.
 

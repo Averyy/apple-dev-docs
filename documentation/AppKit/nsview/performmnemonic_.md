@@ -17,7 +17,7 @@ Implemented by subclasses to respond to mnemonics.
 - (BOOL) performMnemonic:(NSString *) string;
 ```
 
-#### Discussion
+## Discussion
 
 If the view’s mnemonic is the same as the characters of the string `aString`, the view should take the appropriate action and return [`true`](../../Swift/true.md). Otherwise, it should return the result of invoking `super`‘s implementation. The default implementation of this method simply passes the message down the view hierarchy (from superviews to subviews) and returns [`false`](../../Swift/false.md) if none of the view’s subviews responds [`true`](../../Swift/true.md). Mnemonics are not supported in macOS.
 

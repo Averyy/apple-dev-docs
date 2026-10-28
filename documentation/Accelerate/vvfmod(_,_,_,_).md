@@ -25,16 +25,16 @@ func vvfmod(_: UnsafeMutablePointer<Double>, _: UnsafePointer<Double>, _: Unsafe
 void vvfmod(double *, const double *, const double *, const int *);
 ```
 
-#### Discussion
+## Discussion
 
-##### Parameters:
+### Parameters:
 
 - **parameter 1**: The output array, *z*.
 - **parameter 2**: The numerators input array, *y*.
 - **parameter 3**: The denominators input array, *x*.
 - **parameter 4**: The number of elements in the arrays.
 
-This function calculates *z=y-k*x*, for an integer k such that if x is nonzero, the result has the same sign as y and magnitude less than that of x.
+This function calculates *z=y-k\*x*, for an integer k such that if x is nonzero, the result has the same sign as y and magnitude less than that of x.
 
 The following code shows an example of using [`vvfmod(_:_:_:_:)`](./vvfmod%28_,_,_,_%29.md):
 

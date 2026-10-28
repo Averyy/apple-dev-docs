@@ -24,7 +24,7 @@ var adjustmentData: PHAdjustmentData? { get }
 @property (strong, readonly, nullable) PHAdjustmentData * adjustmentData;
 ```
 
-#### Discussion
+## Discussion
 
 Adjustment data describes the “recipe” for the last edit made to an asset’s photo or video content. For example, a photo editing app can use this property to read information about a set of filters applied to a photo. With this information, your app can later allow a user to change the filter parameters.
 

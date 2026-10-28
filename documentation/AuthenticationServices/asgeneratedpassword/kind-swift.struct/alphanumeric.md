@@ -22,7 +22,7 @@ static let alphanumeric: ASGeneratedPassword.Kind
 extern ASGeneratedPasswordKind const ASGeneratedPasswordKindAlphanumeric;
 ```
 
-#### Discussion
+## Discussion
 
 This may be referred to as a password “without special characters”.
 

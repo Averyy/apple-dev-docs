@@ -12,7 +12,7 @@ Implement a custom document file format to manage user interactions with files o
 - Mac Catalyst 13.0+
 - Xcode 12.0+
 
-#### Overview
+## Overview
 
 Users can store their documents on cloud storage providers such as iCloud Drive. An app based on the document browser view controller allows users to browse and access their documents no matter where those documents are stored. In addition, the document browser view controller lets users create new documents, and acts as a springboard into your application’s main user interface.
 
@@ -22,7 +22,7 @@ The app also demonstrates proper file handling using the [`UIDocument`](./uidocu
 
 The [`UIDocumentBrowserViewController`](./uidocumentbrowserviewcontroller.md) and this Particles app require at least iOS 13.2.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Xcode provides a Document Based App template for creating document-based apps. This template comes with everything you need to implement a document-based application from scratch.
 
@@ -36,7 +36,7 @@ Next, provide the document to start with when the user creates a new document; f
 
 Finally, you can configure the document browser view controller to show custom browser actions to the user when selecting one or more documents at once, or when long-pressing a document to reveal the menu.
 
-##### Animate view controller transitions
+### Animate view controller transitions
 
 When presenting a document view controller after creating a new document or choosing an existing one, a transition controller can animate the view controller change with an elegant zoom transition.
 
@@ -44,7 +44,7 @@ The [`UIDocumentBrowserViewController`](./uidocumentbrowserviewcontroller.md) cl
 
 Assign a transitioning delegate object to the document view controller (the view controller that displays the document’s contents). The transitioning delegate needs to conform to the [`UIViewControllerTransitioningDelegate`](./uiviewcontrollertransitioningdelegate.md) protocol. The system asks the delegate for an animation controller when the system is about to present or dismiss the view controller. The delegate returns a transition controller obtained from the document browser view controller. The transition controller displays the zoom animation when opening or closing documents.
 
-##### Configure a custom file format
+### Configure a custom file format
 
 This sample introduces a custom file format called Particles. Particles files use the `.particles` extension. In order to register the file format, the sample modifies both the Exported UTIs and the Document Types in the target’s Info pane.
 
@@ -53,7 +53,7 @@ This sample introduces a custom file format called Particles. Particles files us
 - In the Document Types section, the sample project also defines the Particles document, enabling support for Particle documents in the app’s document browser.
 - Because this app created the file format, under “Additional document type properties,” it sets the `LSHandlerRank` to `Owner`.
 
-##### Preview custom documents
+### Preview custom documents
 
 The sample provides two Quick Look extensions:
 
@@ -62,7 +62,7 @@ The sample provides two Quick Look extensions:
 
 In order for Quick Look to choose the extensions when dealing with Particles documents, the `Info.plist` file of both extensions are configured with the Particles file format data.
 
-##### Apply best practices
+### Apply best practices
 
 Whenever possible, create document-based apps using  [`UIDocumentBrowserViewController`](./uidocumentbrowserviewcontroller.md) and [`UIDocument`](./uidocument.md) subclasses. The [`UIDocument`](./uidocument.md) class provides the commonly expected features of a document-based application, such as saving and loading documents, asynchronous reading and writing of data, versioning with conflict detection, and much more. Additionally, [`UIDocument`](./uidocument.md) provides the automatic coordinated reading and writing needed to avoid problems when accessing a file on disk that could be read or written by other processes at the same time. To access a file manually, use file coordination in order to avoid data loss.
 

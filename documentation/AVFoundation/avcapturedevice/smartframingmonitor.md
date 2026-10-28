@@ -21,7 +21,7 @@ var smartFramingMonitor: AVCaptureSmartFramingMonitor? { get }
 @property (nonatomic, readonly, nullable) AVCaptureSmartFramingMonitor * smartFramingMonitor;
 ```
 
-#### Discussion
+## Discussion
 
 An ultra wide camera device that supports dynamic aspect ratio configuration may also support “smart framing monitoring”. If this property returns non `nil`, you may use it to listen for framing recommendations by configuring its [`enabledFramings`](../avcapturesmartframingmonitor/enabledframings.md) and calling [`startMonitoring()`](../avcapturesmartframingmonitor/startmonitoring%28%29.md). The smart framing monitor only makes recommendations when the current [`activeFormat`](./activeformat.md) supports smart framing (see [`isSmartFramingSupported`](./format/issmartframingsupported.md)).
 

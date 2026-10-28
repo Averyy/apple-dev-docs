@@ -28,7 +28,7 @@ class MTLResidencySetDescriptor
 
 - [Simplifying GPU resource management with residency sets](./simplifying-gpu-resource-management-with-residency-sets.md)
 
-#### Overview
+## Overview
 
 Make an [`MTLResidencySet`](./mtlresidencyset.md) by creating and configuring an [`MTLResidencySetDescriptor`](./mtlresidencysetdescriptor.md) instance and pass it to the [`makeResidencySet(descriptor:)`](./mtldevice/makeresidencyset%28descriptor%29.md) method of an [`MTLDevice`](./mtldevice.md) instance.
 

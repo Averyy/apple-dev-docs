@@ -24,7 +24,7 @@ func typeKey(_ key: String, modifierFlags flags: XCUIElement.KeyModifierFlags)
 - (void) typeKey:(NSString *) key modifierFlags:(XCUIKeyModifierFlags) flags;
 ```
 
-#### Discussion
+## Discussion
 
 Although `key` is a string, it must represent a single key on a physical keyboard. Strings that resolve to multiple keys raise an error at runtime.
 

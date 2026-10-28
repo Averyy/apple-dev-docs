@@ -12,7 +12,7 @@ Asserts that two floating-point values are equal within a specified accuracy.
 func XCTAssertEqual<T>(_ expression1: @autoclosure () throws -> T, _ expression2: @autoclosure () throws -> T, accuracy: T, _ message: @autoclosure () -> String = "", file: StaticString = #filePath, line: UInt = #line) where T : FloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 `expression1`, `expression2`, and `accuracy` must all be of the same type `T`, and type T must conform to [`FloatingPoint`](../Swift/floatingpoint.md).
 

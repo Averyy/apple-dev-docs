@@ -23,11 +23,11 @@ optional func navigationController(_ navigationController: UINavigationControlle
 - (id<UIViewControllerInteractiveTransitioning>) navigationController:(UINavigationController *) navigationController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>) animationController;
 ```
 
-#### Return Value
+## Return Value
 
 The animator object responsible for managing the transition animations, or `nil` if you want to use the standard navigation controller transitions. The object you return must conform to the [`UIViewControllerInteractiveTransitioning`](../uiviewcontrollerinteractivetransitioning.md) protocol.
 
-#### Discussion
+## Discussion
 
 Implement this delegate method when you want to provide a custom, interactive transition between view controllers as they are added to or removed from the navigation stack. The object you return should configure the interactivity aspects of the transition and should work with the object in the `animationController` parameter to start the animations.
 

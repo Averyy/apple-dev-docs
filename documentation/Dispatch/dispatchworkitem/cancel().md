@@ -21,7 +21,7 @@ Cancels the current work item asynchronously.
 func cancel()
 ```
 
-#### Discussion
+## Discussion
 
 Cancellation causes future attempts to execute the work item to return immediately. Cancellation does not affect the execution of a work item that has already begun.
 

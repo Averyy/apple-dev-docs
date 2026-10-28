@@ -23,7 +23,7 @@ func completeStateRestoration()
 - (void) completeStateRestoration;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit restores your app’s state synchronously on the main thread. If you choose to perform additional state restoration on a secondary thread, call the [`extendStateRestoration()`](./extendstaterestoration%28%29.md) method to inform UIKit of that fact. Call this method after you finish with your background work to let the system know that state restoration is complete.
 

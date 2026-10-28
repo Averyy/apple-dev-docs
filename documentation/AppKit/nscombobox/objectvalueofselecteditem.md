@@ -19,7 +19,7 @@ var objectValueOfSelectedItem: Any? { get }
 @property (strong, readonly, nullable) id objectValueOfSelectedItem;
 ```
 
-#### Discussion
+## Discussion
 
 For combo boxes that use their own internally maintained list of items, this property contains the object in that list that is selected. If no item is selected, the value in this property is `nil`. Nothing is selected in a newly initialized combo box. This method logs a warning if the [`usesDataSource`](./usesdatasource.md) property is [`true`](../../Swift/true.md).
 

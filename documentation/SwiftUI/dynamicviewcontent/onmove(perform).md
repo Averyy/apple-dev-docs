@@ -26,7 +26,7 @@ func onMove(perform action: Optional<(IndexSet, Int) -> Void>) -> some DynamicVi
 
 - [Making a view into a drag source](../making-a-view-into-a-drag-source.md)
 
-#### Return Value
+## Return Value
 
 A view that calls `action` when elements are moved within the original view.
 

@@ -21,7 +21,7 @@ optional func mapTemplate(_ mapTemplate: CPMapTemplate, pitchWithCenter center: 
 - (void) mapTemplate:(CPMapTemplate *) mapTemplate pitchWithCenter:(CGPoint) center;
 ```
 
-#### Discussion
+## Discussion
 
 Tells the delegate that a person is pitching the map.
 

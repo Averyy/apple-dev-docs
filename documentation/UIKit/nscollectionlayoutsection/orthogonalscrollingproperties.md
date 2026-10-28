@@ -23,7 +23,7 @@ var orthogonalScrollingProperties: UICollectionLayoutSectionOrthogonalScrollingP
 @property (nonatomic, readonly) UICollectionLayoutSectionOrthogonalScrollingProperties * orthogonalScrollingProperties;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to specify bouncing behavior and deceleration rate for an orthogonally scrolling section.
 

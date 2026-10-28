@@ -22,7 +22,7 @@ A string type designed to represent text that is known at compile time.
 struct StaticString
 ```
 
-#### Overview
+## Overview
 
 Instances of the `StaticString` type are immutable.
 

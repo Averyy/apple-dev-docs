@@ -20,7 +20,7 @@ class VideoFormat
 @interface ARVideoFormat : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class is immutable; to set the frame rate and video resolution for an AR session, set your configuration’s [`videoFormat`](./videoformat-swift.property.md) property to one of the formats in the [`supportedVideoFormats`](./supportedvideoformats.md) array.
 

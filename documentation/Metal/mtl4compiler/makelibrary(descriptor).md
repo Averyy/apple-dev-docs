@@ -25,7 +25,7 @@ func makeLibrary(descriptor: MTL4LibraryDescriptor) throws -> any MTLLibrary
 - (id<MTLLibrary>) newLibraryWithDescriptor:(MTL4LibraryDescriptor *) descriptor error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A Metal library instance upon success, `nil` otherwise.
 

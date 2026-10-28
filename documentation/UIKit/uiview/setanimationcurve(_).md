@@ -24,7 +24,7 @@ class func setAnimationCurve(_ curve: UIView.AnimationCurve)
 + (void) setAnimationCurve:(UIViewAnimationCurve) curve;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify your animations using begin/commit set of methods, you use this method to specify the type of curve you want to use for the animation. This method does nothing if called from outside of an animation block. It must be called between calls to the [`beginAnimations(_:context:)`](./beginanimations%28_,context%29.md) and [`commitAnimations()`](./commitanimations%28%29.md) methods. And you must call this method prior to changing the animatable properties of your views. The default value is [`UIView.AnimationCurve.easeInOut`](./animationcurve/easeinout.md).
 

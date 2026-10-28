@@ -5,11 +5,11 @@
 
 Set website access permissions in a Safari app extension using information property list keys.
 
-#### Overview
+## Overview
 
 In Safari 16 and earlier, set permissions for the webpages and domains your app extension accesses in the `Info.plist` file. In Safari 17 and later, users also grant and manage access to webpages and domains that your app extension specifies in the `Info.plist` file.
 
-##### Setting permissions
+### Setting permissions
 
 Set the webpages and domains your app extension has access to using the `Info.plist` file. Adding the `SFSafariWebsiteAccess` dictionary to the `NSExtension` element in the file specifies the webpages your app extension has access to. The system only injects your app extension’s content into the webpages you specify, and your app extension can only manipulate the webpages you specify with the [`SFSafariPageProperties`](./sfsafaripageproperties.md) object in your app extension. For website access, specify the available subkeys.
 
@@ -32,7 +32,7 @@ Each domain is specified as a string, such as `developer.apple.com` or `www.exam
 
 A leading asterisk (*) character matches all subdomains of the allowed domain. For example, `*.apple.com` matches `www.apple.com`, `developer.apple.com`, or any host name in the `apple.com` domain. Similarly, `*.co.jp` matches all `co.jp` domains, and `*.jp` matches all `.jp` domains.
 
-##### Grant and manage permissions
+### Grant and manage permissions
 
 In Safari 17 and later, the first time the user visits a page where they haven’t granted access to your Safari app extension, Safari shows a badge next to your toolbar button that indicates the user needs to interact with the extension to grant it permission. The user clicks the toolbar button and selects an option to grant permission: for 24 hours on this website, always for this website, or always for all websites.
 

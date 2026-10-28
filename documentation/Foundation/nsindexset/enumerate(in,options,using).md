@@ -25,7 +25,7 @@ func enumerate(in range: NSRange, options opts: NSEnumerationOptions = [], using
 - (void) enumerateIndexesInRange:(NSRange) range options:(NSEnumerationOptions) opts usingBlock:(void (^)(NSUInteger idx, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method executes synchronously.
 

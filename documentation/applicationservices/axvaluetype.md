@@ -19,7 +19,7 @@ typedef enum AXValueType : UInt32 {
 } AXValueType;
 ```
 
-#### Overview
+## Overview
 
 These are AXValueType wrappers for other structures. You must use the AXValueCreate and AXValueGetValue functions to convert between the wrapped structure and the native structure.
 

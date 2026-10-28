@@ -15,11 +15,11 @@ Converts a Unicode string to Pascal in a Mac OS text encoding.
 OSStatus ConvertFromUnicodeToPString(UnicodeToTextInfo iUnicodeToTextInfo, ByteCount iUnicodeLen, const UniChar iUnicodeStr[], Str255 oPascalStr);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 The `ConvertFromUnicodeToPString ` functionprovides an easy and efficient way to convert a Unicode string toa Pascal string in a Mac OS text encoding without incurring the overheadassociated with use of the function  [`ConvertFromUnicodeToText`](./api-1433542-convertfromunicodetotext.md)  or  [`ConvertFromUnicodeToScriptCodeRun`](./api-1433662-convertfromunicodetoscriptcoderu.md). 
 

@@ -13,7 +13,7 @@ virtual UInt32 doGetFormatCapacities(
  UInt32capacitiesMaxCount) const = 0;
 ```
 
-#### Overview
+## Overview
 
 This function returns the supported byte capacities for the device.
 

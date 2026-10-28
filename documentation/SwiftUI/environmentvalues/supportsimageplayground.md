@@ -19,7 +19,7 @@ A Boolean value that indicates whether image generation is available on the curr
 var supportsImagePlayground: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `true` when the current device supports image generation. A device might not support this feature if the device or system doesn’t meet the hardware requirements or the necessary environment (for example runs in a supported language) to generate the images.
 

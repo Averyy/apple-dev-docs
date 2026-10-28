@@ -19,7 +19,7 @@ static var customPaletteModeMask: NSColorPanel.Options { get }
 NSColorPanelCustomPaletteModeMask
 ```
 
-#### Discussion
+## Discussion
 
 Custom palette.
 

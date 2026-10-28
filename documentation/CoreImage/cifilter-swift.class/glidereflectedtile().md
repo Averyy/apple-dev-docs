@@ -24,11 +24,11 @@ class func glideReflectedTile() -> any CIFilter & CIGlideReflectedTile
 + (CIFilter<CIGlideReflectedTile> *) glideReflectedTileFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The tiled image.
 
-#### Discussion
+## Discussion
 
 This method applies the glide reflected tile filter to an image. The effect produces a tiled image by rotating and reflecting a tile from the input image.
 

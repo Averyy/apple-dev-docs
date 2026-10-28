@@ -25,7 +25,7 @@ case resonantLowShelf
 AVAudioUnitEQFilterTypeResonantLowShelf
 ```
 
-#### Discussion
+## Discussion
 
 The necessary parameters for this type are [`frequency`](../avaudiouniteqfilterparameters/frequency.md) (center), [`bandwidth`](../avaudiouniteqfilterparameters/bandwidth.md), and [`gain`](../avaudiouniteqfilterparameters/gain.md).
 

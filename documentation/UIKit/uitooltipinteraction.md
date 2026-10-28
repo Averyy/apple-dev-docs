@@ -23,7 +23,7 @@ class UIToolTipInteraction
 @interface UIToolTipInteraction : NSObject
 ```
 
-#### Overview
+## Overview
 
 To show a tooltip when the pointer hovers over a view, add a [`UIToolTipInteraction`](./uitooltipinteraction.md) object to the view. For example, the following code listings shows how to add a tooltip to a label:
 

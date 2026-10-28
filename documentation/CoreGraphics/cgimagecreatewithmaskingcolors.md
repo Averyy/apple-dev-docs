@@ -21,11 +21,11 @@ Creates a bitmap image by masking an existing bitmap image with the provided col
 extern CGImageRefCGImageCreateWithMaskingColors(CGImageRef image, const CGFloat *components);
 ```
 
-#### Return Value
+## Return Value
 
 An image created by masking `image` with the colors specified in the `components` array. In Objective-C, you’re responsible for releasing this object by calling [`CGImageRelease`](./cgimagerelease.md).
 
-#### Discussion
+## Discussion
 
 Any image sample with color value `{c[1], ... c[N]}` where `min[i] <= c[i] <= max[i]` for `1 <= i <= N` is masked out (that is, not painted). This means that anything underneath the unpainted samples, such as the current fill color, shows through.
 

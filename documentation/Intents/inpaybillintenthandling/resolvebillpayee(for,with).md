@@ -29,7 +29,7 @@ optional func resolveBillPayee(for intent: INPayBillIntent) async -> INBillPayee
 - (void) resolveBillPayeeForPayBill:(INPayBillIntent *) intent withCompletion:(void (^)(INBillPayeeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to verify the identify of the payee in your app. The payee represents the entity that provided the bill to the user. Siri puts any payee-related information into the [`billPayee`](../inpaybillintent/billpayee.md) property of the intent object. Use that information to match the payee’s nickname or organization to one of the entities that the user registered with your app. (You should also use the information in the [`billType`](../inpaybillintent/billtype.md) property to verify that you’re scheduling payment for the correct bill). Always strive toward a successful resolution of the payee, but feel free to return a different resolution if you can’t locate the payee or you aren’t sure which bill the user intended to pay.
 

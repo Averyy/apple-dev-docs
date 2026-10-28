@@ -20,7 +20,7 @@ init(objectSpecifier obj1: NSScriptObjectSpecifier?, comparisonOperator compOp: 
 - (instancetype) initWithObjectSpecifier:(NSScriptObjectSpecifier *) obj1 comparisonOperator:(NSTestComparisonOperation) compOp testObject:(id) obj2;
 ```
 
-#### Return Value
+## Return Value
 
 A specifier test initialized to evaluate (`obj2`) against an object specified by `obj1` using the comparison operation `compOp`.
 

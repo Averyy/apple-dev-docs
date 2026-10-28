@@ -29,11 +29,11 @@ class SCNTransaction
 
 - [Animating SceneKit Content](./animating-scenekit-content.md)
 
-#### Overview
+## Overview
 
 You use [`SCNTransaction`](./scntransaction.md) class methods to control the animation that results from changing animatable properties in the scene graph and to combine sets of changes into nested transactions.
 
-##### Adding Animation with Automatic Transaction
+### Adding Animation with Automatic Transaction
 
 SceneKit creates a transaction automatically whenever you modify the objects in a scene graph. This transaction groups any additional changes you make from the same thread during the current iteration of that thread’s run loop. When the run loop next iterates, SceneKit automatically commits the transaction, atomically applying all changes made during the transaction to the presentation scene graph (that is, the, version of the scene graph currently being displayed).
 
@@ -51,7 +51,7 @@ _heroCamera.camera.yFov = 20.0;
 _lightNode.light.spotInnerAngle = 30.0;
 ```
 
-##### Creating Advanced Animations with Custom Transactions
+### Creating Advanced Animations with Custom Transactions
 
 You can also use [`SCNTransaction`](./scntransaction.md) class methods to create and manage a hierarchy of your own transactions. By nesting custom transactions, you can group sets of scene graph changes, applying different animation parameters to each group. Use the [`begin()`](./scntransaction/begin%28%29.md) method to create a custom transaction, nested within the current transaction if one exists. Use the [`commit()`](./scntransaction/commit%28%29.md) method to end a transaction, applying all scene graph changes made within.
 

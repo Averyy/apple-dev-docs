@@ -24,7 +24,7 @@ init(addresses: [String], networkPrefixLengths: [NSNumber])
 - (instancetype) initWithAddresses:(NSArray<NSString *> *) addresses networkPrefixLengths:(NSArray<NSNumber *> *) networkPrefixLengths;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NEIPv6Settings` object.
 

@@ -15,7 +15,7 @@ A refund amount, in milliunits of the currency.
 int64 refundAmount
 ```
 
-#### Discussion
+## Discussion
 
 When you supply a requested refund amount, include the tax for all regions, except for Canada and the United States.
 

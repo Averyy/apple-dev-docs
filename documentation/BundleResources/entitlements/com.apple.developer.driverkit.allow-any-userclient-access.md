@@ -14,7 +14,7 @@ A Boolean value that determines whether a macOS driver accepts user client conne
 - **Name**: `com.apple.developer.driverkit.allow-any-userclient-access`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Add this entitlement to your dext that contains an [`IOUserClient`](../../DriverKit/iouserclient.md) implementation. This entitlement allows any application to connect to the dext without having to specify bundle IDs, as [`com.apple.developer.driverkit.userclient-access`](./com.apple.developer.driverkit.userclient-access.md) requires.
 

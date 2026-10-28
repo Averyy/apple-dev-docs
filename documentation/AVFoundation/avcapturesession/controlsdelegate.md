@@ -23,7 +23,7 @@ var controlsDelegate: (any AVCaptureSessionControlsDelegate)? { get }
 @property (nonatomic, readonly, nullable) id<AVCaptureSessionControlsDelegate> controlsDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 Call the [`setControlsDelegate(_:queue:)`](./setcontrolsdelegate%28_,queue%29.md) method to set the controls delegate for a session.
 

@@ -23,7 +23,7 @@ optional func tableView(_ tableView: UITableView, didUpdateFocusIn context: UITa
 - (void) tableView:(UITableView *) tableView didUpdateFocusInContext:(UITableViewFocusUpdateContext *) context withAnimationCoordinator:(UIFocusAnimationCoordinator *) coordinator;
 ```
 
-#### Discussion
+## Discussion
 
 This functionality of this delegate method is equivalent to overriding [`UITableView`](../uitableview.md) class’s  implementation of [`tableView(_:didUpdateFocusIn:with:)`](./tableview%28_,didupdatefocusin,with%29.md). This delegate method provides additional UITableView-related information in its context parameter, such as the index paths for the previously and next focused views. Note that, these index paths are available only if their views are contained within the table view. To learn more about the information provided by the context, see see [`UITableViewFocusUpdateContext`](../uitableviewfocusupdatecontext.md).
 

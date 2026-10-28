@@ -25,11 +25,11 @@ func compressed(using algorithm: NSData.CompressionAlgorithm) throws -> Self
 - (instancetype) compressedDataUsingAlgorithm:(NSDataCompressionAlgorithm) algorithm error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSData`](../nsdata.md) instance that contains the compressed buffer data.
 
-#### Discussion
+## Discussion
 
 Use this method to compress in-memory data when you want to reduce memory usage and can afford the time to compress and decompress it. If your data object is already in a compressed format, such as media formats like JPEG images or AAC audio, additional compression may provide minimal or no reduction in memory usage.
 

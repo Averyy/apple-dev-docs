@@ -21,7 +21,7 @@ Returns the image associated with the specified parameter.
 - (INImage *) imageForParameterNamed:(NSString *) parameterName;
 ```
 
-#### Return Value
+## Return Value
 
 The image associated with the specified parameter.
 

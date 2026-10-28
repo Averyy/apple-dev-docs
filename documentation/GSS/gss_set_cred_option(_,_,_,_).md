@@ -23,7 +23,7 @@ func gss_set_cred_option(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ cred
 OM_uint32 gss_set_cred_option(OM_uint32 *minor_status, gss_cred_id_t*cred_handle, gss_OID const object, gss_buffer_t const value);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a description of other status outputs.
 

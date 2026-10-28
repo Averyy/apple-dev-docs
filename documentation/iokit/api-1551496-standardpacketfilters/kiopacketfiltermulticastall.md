@@ -14,7 +14,7 @@
 kIOPacketFilterMulticastAll = 0x20
 ```
 
-#### Discussion
+## Discussion
 
 Reception of all multicast packets.
 

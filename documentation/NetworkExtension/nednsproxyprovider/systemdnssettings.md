@@ -23,7 +23,7 @@ var systemDNSSettings: [NEDNSSettings]? { get }
 @property (readonly, nullable) NSArray<NEDNSSettings *> * systemDNSSettings;
 ```
 
-#### Discussion
+## Discussion
 
 You can use key-value observing to watch for changes on this parameter.
 

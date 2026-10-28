@@ -15,7 +15,7 @@ The indention level for the row.
 @property NSInteger accessibilityDisclosureLevel;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property in the elements representing an outline’s row.
 

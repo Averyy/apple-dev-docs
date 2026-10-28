@@ -13,17 +13,17 @@ Convert between strongly typed cryptographic keys and native keychain types.
 - macOS 10.15+
 - Xcode 11.0+
 
-#### Overview
+## Overview
 
 CryptoKit defines highly specific key types that embody a particular cryptographic algorithm and purpose. Some of these key types, like [`P256.Signing.PrivateKey`](./p256/signing/privatekey.md), correspond to items that the [Keychain Services](../Security/keychain-services.md) API stores natively as [`SecKey`](../Security/seckey.md) instances. Other key types, like [`Curve25519.Signing.PrivateKey`](./curve25519/signing/privatekey.md), have no direct keychain corollary. To store these kinds of keys, you package them as generic passwords.
 
 This sample code project demonstrates the conversions needed to store all the CryptoKit key types in the keychain.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 The sample provides targets for both iOS and macOS. For both platforms, specify your developer team in the Xcode Signing & Capabilities tab before building. The macOS target also sets the [Keychain Access Groups Entitlement](../BundleResources/entitlements/keychain-access-groups.md), to enable access to the keychain on that platform.
 
-##### Declare the Convertibility of NIST Keys
+### Declare the Convertibility of NIST Keys
 
 [Keychain Services](../Security/keychain-services.md) lets you convert between [`SecKey`](../Security/seckey.md) instances and data in the X9.63 data format. For NIST keys that support that representation, like [`P256`](./p256.md), [`P382`](./p384.md), and [`P521`](./p521.md), CryptoKit defines a property that you use to get the X9.63 data. The framework also provides a complementary initializer that creates a new key from data in that format.
 
@@ -50,7 +50,7 @@ extension P521.Signing.PrivateKey: SecKeyConvertible {}
 extension P521.KeyAgreement.PrivateKey: SecKeyConvertible {}
 ```
 
-##### Declare the Convertibility of Other Key Types
+### Declare the Convertibility of Other Key Types
 
 [Keychain Services](../Security/keychain-services.md) also lets you securely store small chunks of data as a generic password keychain item. For any CryptoKit key without a X9.63 representation, CryptoKit provides a means to obtain a data representation of the key, enabling generic password storage. Define the `GenericPasswordConvertible` protocol to establish an interface for these items:
 
@@ -119,7 +119,7 @@ extension SecureEnclave.P256.Signing.PrivateKey: GenericPasswordConvertible {
 }
 ```
 
-##### Store a NIST Key
+### Store a NIST Key
 
 To store a NIST key in the keychain, create a storage method that constrains input keys to be of type `SecKeyConvertible`:
 
@@ -160,7 +160,7 @@ guard status == errSecSuccess else {
 }
 ```
 
-##### Store Other Key Types in the Keychain
+### Store Other Key Types in the Keychain
 
 To store other kinds of keys, create a different storage method that constrains input keys to be of type `GenericPasswordConvertible`:
 
@@ -189,7 +189,7 @@ try key.genericKeyRepresentation.withUnsafeBytes { keyBytes in
 
 ```
 
-##### Retrieve a NIST Key as a Native Keychain Key
+### Retrieve a NIST Key as a Native Keychain Key
 
 You retrieve a key from the keychain using a call to the [`SecItemCopyMatching(_:_:)`](../Security/secitemcopymatching%28_,_%29.md) function. Construct a query dictionary that pinpoints the particular key that you want to find. After your search returns the desired key—stored as a [`SecKeychainItem`](../Security/seckeychainitem.md) instance—you cast it as a [`SecKey`](../Security/seckey.md) instance.
 
@@ -226,7 +226,7 @@ let key = try T(x963Representation: data)
 
 Make sure that the type of the key that you initialize using the data matches the type of the original key. For example, initializing a [`P256`](./p256.md) key from the data corresponding to a keychain item that you created using a [`P384`](./p384.md) key produces undefined results.
 
-##### Retrieve Keys Stored as Generic Passwords
+### Retrieve Keys Stored as Generic Passwords
 
 You also retrieve generic passwords using the  [`SecItemCopyMatching(_:_:)`](../Security/secitemcopymatching%28_,_%29.md) function, in this case using [`kSecClassGenericPassword`](../Security/ksecclassgenericpassword.md) for the item’s class. You convert the returned item to data, and use it directly to instantiate a key of the corresponding type:
 

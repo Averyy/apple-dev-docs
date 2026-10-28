@@ -25,7 +25,7 @@ func CFStringGetCharacters(_ theString: CFString!, _ range: CFRange, _ buffer: U
 extern void CFStringGetCharacters(CFStringRef theString, CFRange range, UniChar *buffer);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to obtain some or all of the Unicode characters represented by a CFString object. If this operation involves a large number of characters, the function call can be expensive in terms of memory. Instead you might want to consider using the in-line buffer functions [`CFStringInitInlineBuffer(_:_:_:)`](./cfstringinitinlinebuffer%28_,_,_%29.md) and [`CFStringGetCharacterFromInlineBuffer(_:_:)`](./cfstringgetcharacterfrominlinebuffer%28_,_%29.md) to extract the characters incrementally.
 

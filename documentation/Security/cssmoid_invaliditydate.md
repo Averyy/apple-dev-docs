@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_InvalidityDate;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

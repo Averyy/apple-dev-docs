@@ -15,7 +15,7 @@ The largest number of similar items the model stores for each item.
 var maxCount: Int
 ```
 
-#### Discussion
+## Discussion
 
 The memory Create ML requires to train this model is proportional to this number. A lower value reduces its demand for memory but decreases the recommender’s accuracy. The default value is `64`.
 

@@ -19,11 +19,11 @@ class func controlContentFont(ofSize fontSize: CGFloat) -> NSFont
 + (NSFont *) controlContentFontOfSize:(CGFloat) fontSize;
 ```
 
-#### Return Value
+## Return Value
 
 A font object of the specified size.
 
-#### Discussion
+## Discussion
 
 For example, in a table, the user’s input uses the control content font, and the table’s header uses another font. If `fontSize` is 0 or negative, returns the control content font at the default size.
 

@@ -20,11 +20,11 @@ Creates a [`CIFilter`](../cifilter-swift.class.md) object for a specific kind of
 init?(name: String, withInputParameters params: [String : Any]?)
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIFilter`](../cifilter-swift.class.md) object whose input values are initialized.
 
-#### Discussion
+## Discussion
 
 Use this method to quickly create and configure a [`CIFilter`](../cifilter-swift.class.md) instance, as in the example below.
 

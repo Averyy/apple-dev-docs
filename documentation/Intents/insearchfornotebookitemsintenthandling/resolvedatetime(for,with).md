@@ -29,7 +29,7 @@ optional func resolveDateTime(for intent: INSearchForNotebookItemsIntent) async 
 - (void) resolveDateTimeForSearchForNotebookItems:(INSearchForNotebookItemsIntent *) intent withCompletion:(void (^)(INDateComponentsRangeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the date used during a date-based search. Use this method to verify that you can perform a date-based search using the specified date information. Consider the value of the [`dateSearchType`](../insearchfornotebookitemsintent/datesearchtype.md) property of the intent when determining your response. If the search type is [`INDateSearchType.unknown`](../indatesearchtype/unknown.md), return a value of not required to indicate that you do not intend to use the date information during the search. If the search type is a different value, return a successful resolution if the [`dateTime`](../insearchfornotebookitemsintent/datetime.md) property of the intent contains enough information to perform the search. Return a different result if it does not.
 

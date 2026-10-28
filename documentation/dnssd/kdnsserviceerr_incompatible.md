@@ -23,7 +23,7 @@ var kDNSServiceErr_Incompatible: Int { get }
 kDNSServiceErr_Incompatible
 ```
 
-#### Discussion
+## Discussion
 
 Client library incompatible with daemon
 

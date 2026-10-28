@@ -17,7 +17,7 @@ Binds the cloth body to an entity’s mesh collider.
 struct ColliderBinding
 ```
 
-#### Overview
+## Overview
 
 If the binding is successful, the body particles will be constrained to stay within a configurable distance of their automatically assigned mesh collider triangles, following the collider as it deforms or moves. The per-particle [`distanceLimits`](./colliderbinding-swift.struct/distancelimits.md) controls how strictly each particle is bound.
 

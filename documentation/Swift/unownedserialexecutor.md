@@ -22,7 +22,7 @@ An unowned reference to a serial executor (a `SerialExecutor` value).
 struct UnownedSerialExecutor
 ```
 
-#### Overview
+## Overview
 
 This is an optimized type used internally by the core scheduling operations.  It is an unowned reference to avoid unnecessary reference-counting work even when working with actors abstractly. Generally there are extra constraints imposed on core operations in order to allow this.  For example, keeping an actor alive must also keep the actor’s associated executor alive; if they are different objects, the executor must be referenced strongly by the actor.
 

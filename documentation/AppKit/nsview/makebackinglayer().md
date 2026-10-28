@@ -19,7 +19,7 @@ func makeBackingLayer() -> CALayer
 - (CALayer *) makeBackingLayer;
 ```
 
-#### Return Value
+## Return Value
 
 The layer to use as the view’s backing layer.
 

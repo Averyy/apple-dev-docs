@@ -21,7 +21,7 @@ A generic base type for most objects, such as files or directories.
 extern UTType * const UTTypeItem;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.item`.
 

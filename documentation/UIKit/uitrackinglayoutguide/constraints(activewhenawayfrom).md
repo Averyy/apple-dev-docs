@@ -22,7 +22,7 @@ func constraints(activeWhenAwayFrom edge: NSDirectionalRectEdge) -> [NSLayoutCon
 - (NSArray<NSLayoutConstraint *> *) constraintsActiveWhenAwayFromEdge:(NSDirectionalRectEdge) edge;
 ```
 
-#### Return Value
+## Return Value
 
 An array of layout constraints that the tracking layout guide automatically activates and deactivates.
 

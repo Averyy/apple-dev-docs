@@ -29,7 +29,7 @@ func handle(intent: INStartCallIntent) async -> INStartCallIntentResponse
 - (void) handleStartCall:(INStartCallIntent *) intent completion:(void (^)(INStartCallIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to transfer control of the call to your app. Perform any final checks and create a response object with the information needed to initiate the call in your app. Don’t try to initiate the call directly from this method. When your response object contains the [`INStartAudioCallIntentResponseCode.continueInApp`](../instartaudiocallintentresponsecode/continueinapp.md) code, Siri automatically launches your app and passes it the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object from your response object.
 

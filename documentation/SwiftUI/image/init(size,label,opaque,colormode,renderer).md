@@ -21,7 +21,7 @@ Initializes an image of the given size, with contents provided by a custom rende
 init(size: CGSize, label: Text? = nil, opaque: Bool = false, colorMode: ColorRenderingMode = .nonLinear, renderer: @escaping (inout GraphicsContext) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an image by calling drawing commands on a [`GraphicsContext`](../graphicscontext.md) provided to the `renderer` closure.
 

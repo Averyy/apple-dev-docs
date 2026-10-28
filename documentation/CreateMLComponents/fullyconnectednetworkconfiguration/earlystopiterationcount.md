@@ -21,7 +21,7 @@ The number of iterations to use when evaluating whether to stop early.
 var earlyStopIterationCount: Int
 ```
 
-#### Discussion
+## Discussion
 
 The `fitted` method will stop if no significant progress is made for this many iterations. Significant progress happens when the validation loss decreases by at least `earlyStoppingTolerance`.
 

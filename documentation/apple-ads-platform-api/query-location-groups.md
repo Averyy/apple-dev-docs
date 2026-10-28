@@ -9,13 +9,13 @@ Retrieve a paginated list of location groups using filters and sorting.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint returns a paginated list of location groups accessible to the authenticated ad account. An empty request body returns all non-deleted groups with default pagination applied.
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-#### Request Body
+## Request Body
 
 See [`QueryRequest`](./queryrequest.md).
 
@@ -25,37 +25,32 @@ See [`QueryRequest`](./queryrequest.md).
 | `sorting` | array | No | Sort order for results (field + ASC/DESC). |
 | `pagination` | object | No | Offset and page size. Defaults apply if omitted. |
 
-##### Filterable Fields
+### Filterable Fields
 
 The system combines multiple filters with AND logic. The `id` filter matches the group’s system-assigned identifier, the same `id` value returned in create and get responses, not the provider object ID. Filtering by `brandId` is the most common way to scope results to a single brand’s groups.
 
-The system excludes soft-deleted groups from results by default. To include them, add a filter with `field: "deleted"`, `operator: "EQUALS"`, `value: true`.
+The system excludes soft-deleted groups from results.
 
 > **Note**: There’s no dedicated filter for looking up location groups by location membership. To determine which groups contain a specific location, query location groups scoped to the location’s brand with a `brandId` filter, then inspect each returned group’s membership client-side. For `STATIC` groups, check whether the location’s `id` appears in the group’s `locationIds` array. For `DYNAMIC` groups, check whether the location satisfies the group’s `rules` criteria.
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
 | `id` | string | `EQUALS`, `IN` | Yes | Matches the group’s system-assigned identifier. |
-| `name` | string | `EQUALS`, `CONTAINS` | Yes | Group display name. |
+| `name` | string | `EQUALS` | Yes | Group display name. |
 | `brandId` | string | `EQUALS` | Yes | Parent brand. |
 | `groupType` | string (enum) | `EQUALS`, `IN` | Yes | `STATIC` or `DYNAMIC`. |
-| `deleted` | boolean | `EQUALS` | Yes | Soft-delete flag. Defaults to excluding deleted groups. |
 | `isAllLocationsGroup` | boolean | `EQUALS` | Yes | All-locations group flag. |
 | `eligibility.status` | string (enum) | `EQUALS`, `IN` | Yes | Eligibility status. |
-| `eligibility.blockedGroups.supplyPlacement` | string | `CONTAINS_ANY` | Yes | Blocked placement. |
-| `eligibility.blockedGroups.countryOrRegion` | string | `CONTAINS_ANY` | Yes | Blocked country. |
-| `eligibility.allowedGroups.supplyPlacement` | string | `CONTAINS_ANY` | Yes | Allowed placement. |
-| `eligibility.allowedGroups.countryOrRegion` | string | `CONTAINS_ANY` | Yes | Allowed country. |
 
-##### Sorting and Pagination
+### Sorting and Pagination
 
 You can sort results by any filterable field using the `sorting` array; see [`QuerySort`](./querysort.md) ([`QuerySortOrder`](./querysortorder.md)) and [`QueryPagination`](./querypagination.md) for the request shape. The response includes a `pagination` object with `totalCount`, `offset`, and `pageSize`. Page through large result sets by incrementing `offset`.
 
-#### Payload Examples
+## Payload Examples
 
 **Filter by Brand**:
 
-##### Request
+### Request
 
 Returns all location groups belonging to a specific brand.
 
@@ -77,7 +72,7 @@ POST /v1/location-groups/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -107,7 +102,7 @@ POST /v1/location-groups/query
 
 **Filter Dynamic Groups**:
 
-##### Request
+### Request
 
 Returns only `DYNAMIC` location groups.
 
@@ -125,7 +120,7 @@ POST /v1/location-groups/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

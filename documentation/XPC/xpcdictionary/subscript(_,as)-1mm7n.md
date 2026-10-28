@@ -21,7 +21,7 @@ Reads the value associated with the given key as an XPC dictionary.
 subscript(key: String, as type: XPCDictionary.Type = XPCDictionary.self) -> XPCDictionary? { get }
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with key in the dictionary; otherwise, [`nil`](../../ObjectiveC/nil-227m0.md).
 

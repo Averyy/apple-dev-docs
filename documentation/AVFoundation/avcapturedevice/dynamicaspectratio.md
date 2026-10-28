@@ -21,7 +21,7 @@ var dynamicAspectRatio: AVCaptureDevice.AspectRatio? { get }
 @property (readonly, nullable) AVCaptureAspectRatio dynamicAspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 This property is initialized to the first [`AVCaptureDevice.AspectRatio`](./aspectratio.md) listed in the device’s activeFormat’s [`supportedDynamicAspectRatios`](./format/supporteddynamicaspectratios.md) property. If the activeFormat’s [`supportedDynamicAspectRatios`](./format/supporteddynamicaspectratios.md) is an empty array, this property returns nil.
 

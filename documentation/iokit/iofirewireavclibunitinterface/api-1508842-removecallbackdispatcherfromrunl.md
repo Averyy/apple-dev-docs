@@ -16,7 +16,7 @@ Removes a dispatcher for kernel callbacks to the specified run loop.
 void (*removeCallbackDispatcherFromRunLoop)(void *self);
 ```
 
-#### Discussion
+## Discussion
 
 Undoes the work of addCallbackDispatcherToRunLoop.
 

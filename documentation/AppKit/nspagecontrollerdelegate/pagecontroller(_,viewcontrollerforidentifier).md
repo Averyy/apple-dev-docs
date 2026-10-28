@@ -20,11 +20,11 @@ optional func pageController(_ pageController: NSPageController, viewControllerF
 - (NSViewController *) pageController:(NSPageController *) pageController viewControllerForIdentifier:(NSPageControllerObjectIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the view controller for the specified identifier.
 
-#### Discussion
+## Discussion
 
 Your implementation of this method should return the requested view controller for the identifier or create and return a new view controller.
 

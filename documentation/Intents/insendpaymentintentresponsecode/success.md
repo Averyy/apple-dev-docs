@@ -23,7 +23,7 @@ case success
 INSendPaymentIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code if your app successfully transferred the funds to the other user’s account.
 

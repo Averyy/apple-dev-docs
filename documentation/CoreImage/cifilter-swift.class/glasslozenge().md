@@ -24,11 +24,11 @@ class func glassLozenge() -> any CIFilter & CIGlassLozenge
 + (CIFilter<CIGlassLozenge> *) glassLozengeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The distorted image.
 
-#### Discussion
+## Discussion
 
 This method applies the glass lozenge filter to an image. This effect distorts an image by creating a lozenge shape placed over the input image.
 

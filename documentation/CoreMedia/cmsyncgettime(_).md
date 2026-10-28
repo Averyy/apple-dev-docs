@@ -25,7 +25,7 @@ func CMSyncGetTime(_ clockOrTimebase: CMClockOrTimebase) -> CMTime
 extern CMTime CMSyncGetTime(CMClockOrTimebaseRef clockOrTimebase);
 ```
 
-#### Discussion
+## Discussion
 
 `CMSyncGetTime` calls either [`CMClockGetTime(_:)`](./cmclockgettime%28_%29.md) or [`CMTimebaseGetTime(_:)`](./cmtimebasegettime%28_%29.md), as appropriate.
 

@@ -22,7 +22,7 @@ The maximum number of models the fetch can return.
 var fetchLimit: Int?
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Use `nil` to tell the fetch to return all models of the associated type, not `0`.
 

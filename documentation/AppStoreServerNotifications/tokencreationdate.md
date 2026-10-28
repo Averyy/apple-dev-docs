@@ -19,7 +19,7 @@ timestamp tokenCreationDate
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 This field represents the date when the system created the [`externalPurchaseToken`](./externalpurchasetoken.md).
 

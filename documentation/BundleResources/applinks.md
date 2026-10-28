@@ -20,7 +20,7 @@ The root object for a universal links service definition.
 object applinks
 ```
 
-#### Overview
+## Overview
 
 Use this object to define the universal links you want to associate with your domain.
 

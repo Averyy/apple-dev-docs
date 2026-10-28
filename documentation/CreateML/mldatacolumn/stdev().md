@@ -28,7 +28,7 @@ Available when `Element` is `Double`.
 func stdev() -> Double?
 ```
 
-#### Return Value
+## Return Value
 
 A [`Double`](../../Swift/double.md); otherwise `nil` if the column is invalid.
 

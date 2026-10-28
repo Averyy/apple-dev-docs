@@ -15,11 +15,11 @@ A reference to an asset by its UUID.
 object AssetReference
 ```
 
-#### Discussion
+## Discussion
 
 The `AssetReference` object is a pointer to an `Asset` by its system-generated UUID, used in ad creative specs and other contexts where only the asset identifier is required. To reference specific image or video assets without embedding the full `Asset` record, use it in ad creative spec objects, such as the `creativeAssets` array within an Apple Maps ad creative’s `creativeSpec`. The `assetId` must match an asset that already exists in the system.
 
-##### Example
+### Example
 
 ```json
 {

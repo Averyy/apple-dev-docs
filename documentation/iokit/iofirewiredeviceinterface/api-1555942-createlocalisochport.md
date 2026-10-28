@@ -16,7 +16,7 @@ Creates a local isochronous port object and returns an interface to it. A local 
 IOFireWireLibLocalIsochPortRef (*CreateLocalIsochPort)(IOFireWireLibDeviceRef self, Boolean inTalking, DCLCommand *inDCLProgram, UInt32 inStartEvent, UInt32 inStartState, UInt32 inStartMask, IOVirtualRange inDCLProgramRanges[], UInt32 inDCLProgramRangeCount, IOVirtualRange inBufferRanges[], UInt32 inBufferRangeCount, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOFireWireLibLocalIsochPortRef. Returns 0 upon failure
 

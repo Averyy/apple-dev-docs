@@ -28,7 +28,7 @@ class HKActivitySummary
 
 - [Executing Activity Summary Queries](./executing-activity-summary-queries.md)
 
-#### Overview
+## Overview
 
 You can read [`HKActivitySummary`](./hkactivitysummary.md) objects from the HealthKit store using an [`HKActivitySummaryQuery`](./hkactivitysummaryquery.md) object. Unlike the [`HKSample`](./hksample.md) subclasses,  [`HKActivitySummary`](./hkactivitysummary.md) instances are mutable, but changes made to the object’s properties have no affect on the values in the HealthKit store.
 

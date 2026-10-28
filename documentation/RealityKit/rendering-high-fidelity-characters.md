@@ -5,7 +5,7 @@
 
 Configure material and lighting properties to avoid flat, dull skin and static hair on your characters.
 
-#### Overview
+## Overview
 
 Rendering characters convincingly requires capturing how skin and hair scatter and reflect light, an effect flat shading fails to reproduce. Achieving that level of realism requires a combination of rendering techniques, including subsurface scattering and bent normals for skin, and a dedicated lighting model for hair.
 
@@ -13,13 +13,13 @@ To simulate subsurface scattering similar to skin absorbing and re-emitting ligh
 
 These character rendering features deliver high-fidelity results but can be GPU-intensive when you combine them. Start by measuring which feature accounts for the largest share of that cost, then apply the targeted guidance in the following sections to keep overall thermal impact manageable on device.
 
-#### Manage bent normals cost
+## Manage bent normals cost
 
 Bent normals store the average direction of least occlusion for each surface point. This gives [`PhysicallyBasedMaterial`](./physicallybasedmaterial.md) more accurate indirect lighting on characters and allows [`enableSpecularOcclusion`](./physicallybasedmaterial/enablespecularocclusion.md) to suppress specular highlights in self-occluded areas. The cost of bent normals is one additional texture sample per fragment but you can reduce that overhead.
 
 Bent normal influence on the final image is low-frequency. A half-resolution map with mipmapping enabled on the [`TextureResource`](./textureresource.md) produces results that are visually indistinguishable from a full-resolution one at a fraction of the memory and sampling cost.
 
-#### Manage subsurface scattering cost
+## Manage subsurface scattering cost
 
 Subsurface scattering approximates how light diffuses in from nearby points on the skin. Although this requires more per-fragment sampling than a single-pass surface reflectance, there are several ways to mitigate the cost.
 
@@ -29,7 +29,7 @@ Subsurface scattering approximates how light diffuses in from nearby points on t
 - **Prefer a uniform color for subsurface if thermal budget is tight.** The [`subsurfaceColor`](./physicallybasedmaterial/subsurfacecolor-swift.property.md) property accepts a single optional texture or a flat [`CGColor`](../CoreGraphics/cgcolor.md). If you’re near the thermal limit, prefer a uniform color value over a texture to avoid the texture lookup entirely.
 - **Limit the number of subsurface textures.** Subsurface scattering can sample multiple textures. If performance cost is high, use fewer textures to reduce the per-fragment sampling cost.
 
-#### Manage hair rendering cost
+## Manage hair rendering cost
 
 Hair rendering cost is driven by overdraw from layered hair cards or strands, geometry complexity, and per-fragment lighting calculations.
 
@@ -44,7 +44,7 @@ Hair rendering cost is driven by overdraw from layered hair cards or strands, ge
 - **Pack multiple material channels into a single texture.** Combining properties such as roughness and specular into a single texture’s channels reduces the number of texture samples per fragment.
 - **Prefer uniform values over textures for constant hair properties.** Parameters such as specular intensity, specular shifts, roughness, and backlight that are uniform across the hair mesh are cheaper to evaluate as material constants than as texture samples.
 
-#### Measure the cost of each effect
+## Measure the cost of each effect
 
 Each feature’s cost varies by scene, so measure before optimizing to focus your effort on the actual bottleneck.
 
@@ -54,7 +54,7 @@ Add the [`showStatistics`](./arview/debugoptions-swift.struct/showstatistics.md)
 - To measure the cost of subsurface scattering, set [`subsurfaceWeight`](./physicallybasedmaterial/subsurfaceweight-swift.property.md) to `0.0` to isolate the pass as a whole. If it remains costly at a nonzero weight, measure its individual parameters next. Swap [`subsurfaceColor`](./physicallybasedmaterial/subsurfacecolor-swift.property.md) between a texture and a flat color, or reduce [`subsurfaceRadius`](./physicallybasedmaterial/subsurfaceradius-swift.property.md) to determine which one drives the cost.
 - To measure the cost of hair rendering, temporarily hide the hair geometry, or swap it for a simplified stand-in mesh, and compare the difference.
 
-#### Monitor thermal state
+## Monitor thermal state
 
 Excessive GPU load from these effects causes noticeable frame drops and device heating. Monitor thermal state using [`thermalState`](../Foundation/processinfo/thermalstate-swift.property.md) and the thermal state change notification, and reduce or turn off the most expensive character rendering features as the state moves from `.fair` toward `.serious` and `.critical`.
 

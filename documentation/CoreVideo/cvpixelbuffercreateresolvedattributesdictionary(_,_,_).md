@@ -25,11 +25,11 @@ func CVPixelBufferCreateResolvedAttributesDictionary(_ allocator: CFAllocator?, 
 extern CVReturn CVPixelBufferCreateResolvedAttributesDictionary(CFAllocatorRef allocator, CFArrayRef attributes, CFDictionaryRef*resolvedDictionaryOut);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
-#### Discussion
+## Discussion
 
 This call is useful when you need to resolve requirements between several potential clients of a buffer.
 

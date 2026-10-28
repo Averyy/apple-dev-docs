@@ -21,7 +21,7 @@ optional func userNotificationCenter(_ center: NSUserNotificationCenter, didDeli
 - (void) userNotificationCenter:(NSUserNotificationCenter *) center didDeliverNotification:(NSUserNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 This method is always called, regardless of your application state and even if you deliver the user notification yourself using [`deliver(_:)`](../nsusernotificationcenter/deliver%28_%29.md).
 

@@ -19,7 +19,7 @@ func getRow(_ row: UnsafeMutablePointer<Int>, column col: UnsafeMutablePointer<I
 - (BOOL) getRow:(NSInteger *) row column:(NSInteger *) col forPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the point lies within one of the cells in the receiver; [`false`](../../Swift/false.md) if the point falls outside the bounds of the receiver or lies within an intercell spacing.
 

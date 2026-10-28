@@ -21,11 +21,11 @@ A span over the elements of this array slice.
 var span: Span<Element> { get }
 ```
 
-#### Return Value
+## Return Value
 
 A `Span` over the elements of this array.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

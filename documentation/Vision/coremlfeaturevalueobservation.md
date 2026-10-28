@@ -21,7 +21,7 @@ An object that represents a collection of key-value information that a Core ML i
 struct CoreMLFeatureValueObservation
 ```
 
-#### Overview
+## Overview
 
 This type of observation results from performing a [`CoreMLRequest`](./coremlrequest.md) image analysis with a [Core ML](../CoreML/CoreML.md) model whose role is prediction rather than classification or image-to-image processing.
 

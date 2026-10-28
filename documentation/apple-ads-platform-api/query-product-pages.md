@@ -9,7 +9,7 @@ Queries App Store product pages available to your account.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint queries product pages available to your ad account, returning Custom Product Pages (CPPs). Product pages come from App Store Connect and reflect the current publishing state of your product pages.
 
@@ -19,7 +19,7 @@ Changes made in App Store Connect, such as publishing, hiding, or editing a prod
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -36,9 +36,9 @@ Keep the following constraints in mind when querying product pages:
 | Filter by adamId | Always filter by `adamId` for targeted results. Omitting it may return product pages across all accessible apps. |
 | App Store Connect source | Product page data originates in App Store Connect. This endpoint is read-only. |
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 ```http
 POST /v1/product-pages/query
@@ -59,7 +59,7 @@ POST /v1/product-pages/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

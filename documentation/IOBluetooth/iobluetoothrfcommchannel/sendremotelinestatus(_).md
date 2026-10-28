@@ -19,7 +19,7 @@ func sendRemoteLineStatus(_ lineStatus: BluetoothRFCOMMLineStatus) -> IOReturn
 - (IOReturn) sendRemoteLineStatus:(BluetoothRFCOMMLineStatus) lineStatus;
 ```
 
-#### Return Value
+## Return Value
 
 An error code value. 0 if successful.
 

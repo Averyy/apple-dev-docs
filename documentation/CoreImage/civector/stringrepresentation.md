@@ -24,7 +24,7 @@ var stringRepresentation: String { get }
 @property (readonly) NSString * stringRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 Some example string representations of vectors:
 

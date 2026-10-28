@@ -19,11 +19,11 @@ func rectArray(forCharacterRange charRange: NSRange, withinSelectedCharacterRang
 - (NSRectArray) rectArrayForCharacterRange:(NSRange) charRange withinSelectedCharacterRange:(NSRange) selCharRange inTextContainer:(NSTextContainer *) container rectCount:(NSUInteger *) rectCount;
 ```
 
-#### Return Value
+## Return Value
 
 The array of rectangles enclosing the given range.
 
-#### Discussion
+## Discussion
 
 These rectangles can be used to draw the text background or highlight for the given range of characters. If a selected range is given in `selCharRange`, the rectangles returned are correct for drawing the selection.  Selection rectangles are generally more complicated than enclosing rectangles and supplying a selected range is the clue this method uses to determine whether to go to the trouble of doing this special work.
 

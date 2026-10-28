@@ -24,7 +24,7 @@ struct Attachment
 
 - [Synchronizing data during a SharePlay activity](../synchronizing-data-during-a-shareplay-activity.md)
 
-#### Overview
+## Overview
 
 When your app receives a new item, the system packages it in an [`GroupSessionJournal.Attachment`](./attachment.md) and delivers it to your app. Use this container type to download the contents of the file and decode it to a type that your app recognizes.
 

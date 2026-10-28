@@ -16,7 +16,7 @@
 virtual kern_return_t SetHandler(OSAction *action);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success. See `IOReturn.h` for error codes.
 

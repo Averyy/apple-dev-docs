@@ -26,11 +26,11 @@ func conforms(to aProtocol: Protocol) -> Bool
 - (BOOL) conformsToProtocol:(Protocol *) aProtocol;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the receiver conforms to `aProtocol`, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 This method works identically to the [`conforms(to:)`](../nsobject-swift.class/conforms%28to%29.md) class method declared in [`NSObject`](../nsobject-swift.class.md). It’s provided as a convenience so that you don’t need to get the class object to find out whether an instance can respond to a given set of messages.
 

@@ -24,11 +24,11 @@ init?(data: Data, scale: CGFloat)
 - (instancetype) initWithData:(NSData *) data scale:(CGFloat) scale;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `UIImage` object, or `nil` if the method could not initialize the image from the specified data.
 
-#### Discussion
+## Discussion
 
 The data in the `data` parameter must be formatted to match the file format of one of the system’s supported image types.
 

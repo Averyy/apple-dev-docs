@@ -25,11 +25,11 @@ func defaultCredential(for space: URLProtectionSpace) -> URLCredential?
 - (NSURLCredential *) defaultCredentialForProtectionSpace:(NSURLProtectionSpace *) space;
 ```
 
-#### Return Value
+## Return Value
 
 The default credential for `space` or `nil` if no default has been set.
 
-#### Discussion
+## Discussion
 
 If you override this method, also override [`getDefaultCredential(for:task:completionHandler:)`](./getdefaultcredential%28for,task,completionhandler%29.md).
 

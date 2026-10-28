@@ -6,14 +6,17 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.to
 
 # mlx.core.to_fp8
 
-**to_fp8(*x: array*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Convert the array to fp8 (e4m3) from another floating-point type.
+```python
+to_fp8(x: array, *, stream: StreamOrDevice = None) → array
+```
 
-Parameters:
-**x** ([array](mlx.core.array.md#mlx.core.array)) – The input array.
+Convert the array to fp8 (e4m3) from another floating-point type.
 
-Returns:
-The array converted to fp8 with type `uint8`.
+**Parameters:**
+: **x** ([array](mlx.core.array.md#mlx.core.array)) – The input array.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Returns:**
+: The array converted to fp8 with type `uint8`.
+
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

@@ -26,7 +26,7 @@ class func string(withCString bytes: UnsafePointer<CChar>, length: Int) -> Any?
 + (id) stringWithCString:(const char *) bytes length:(NSUInteger) length;
 ```
 
-#### Discussion
+## Discussion
 
 `cString` must not be NULL. `cString` should contain characters in the default C-string encoding. This method converts `length` * `sizeof(char)` bytes from `cString` and doesn’t stop short at a `NULL` character.
 

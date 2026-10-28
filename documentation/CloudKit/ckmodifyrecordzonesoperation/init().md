@@ -25,7 +25,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 You must set at least one of the [`recordZonesToSave`](./recordzonestosave.md) or [`recordZoneIDsToDelete`](./recordzoneidstodelete.md) properties before you execute the operation.
 

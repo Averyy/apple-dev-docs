@@ -33,7 +33,7 @@ var genres: [String] { get }
 @property (atomic, strong, readonly) NSArray<NSString *> * genres;
 ```
 
-#### Discussion
+## Discussion
 
 The array is empty if there are no media items.
 

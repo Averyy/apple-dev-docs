@@ -27,7 +27,7 @@ class func archivedData(withRootObject rootObject: Any) -> Data
 + (NSData *) archivedDataWithRootObject:(id) rootObject;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSData` object containing the encoded form of the object graph whose root object is `rootObject`. The format of the archive is [`PropertyListSerialization.PropertyListFormat.binary`](../propertylistserialization/propertylistformat/binary.md).
 

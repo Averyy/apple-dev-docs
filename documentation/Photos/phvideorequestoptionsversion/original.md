@@ -24,7 +24,7 @@ case original
 PHVideoRequestOptionsVersionOriginal
 ```
 
-#### Discussion
+## Discussion
 
 The resulting video is the originally captured or imported version of the asset, regardless of any edits that have been made.
 

@@ -23,7 +23,7 @@ typealias Pixel_FF = (Float, Float)
 typedef float[2] Pixel_FF;
 ```
 
-#### Discussion
+## Discussion
 
 A two-channel, single precision floating-point per channel pixel.
 

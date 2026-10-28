@@ -26,7 +26,7 @@ UINavigationItemStyleEditor
 
 - [Building a desktop-class iPad app](../../building-a-desktop-class-ipad-app.md)
 
-#### Discussion
+## Discussion
 
 Use this style for apps that support viewing or editing of individual documents, like text editors. With this style, the navigation item’s title appears on the leading side of the navigation bar, and center items ([`centerItemGroups`](../centeritemgroups.md)) appear in the center of the bar. The back button appears as a chevron without a title or image.
 

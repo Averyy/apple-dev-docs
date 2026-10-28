@@ -5,7 +5,7 @@
 
 Customize the various capabilities of your app’s networking stack, such as proxying DNS queries or creating packet tunnels.
 
-#### Overview
+## Overview
 
 Network Extensions allow you to customize and extend the core networking features of iOS and macOS. For example, your app can implement a virtual private network (VPN) client for a flow-oriented or packet-oriented custom VPN protocol, which an enterprise might require to facilitate secure remote access to resources not available on the public internet.
 
@@ -17,7 +17,7 @@ After you add the Network Extensions capability, Xcode updates your app’s enti
 
 > **Note**: If you remove the Network Extensions capability in Xcode, you must manually update the configuration of your app’s App ID in your developer account to disable Network Extensions.
 
-##### Enable the required app capabilities
+### Enable the required app capabilities
 
 Before your app can use the [Network Extension](../NetworkExtension/NetworkExtension.md) framework to customize and extend the core networking features of iOS and macOS by implementing specific app capabilities, you must configure your Xcode project to include the necessary entitlements by performing the following steps:
 

@@ -17,7 +17,7 @@ Constraints on the user’s cellular networking settings.
 struct CellularSettings
 ```
 
-#### Overview
+## Overview
 
 Use `CellularSettings` to constrain the user’s ability to modify cellular settings in the Settings app.
 

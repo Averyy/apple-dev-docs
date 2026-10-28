@@ -34,7 +34,7 @@ nonisolated
 init<S>(_ title: S, text: Binding<String>, selection: Binding<TextSelection?>, prompt: Text? = nil, axis: Axis? = nil) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 The following example shows a text field with a binding to the current selection:
 

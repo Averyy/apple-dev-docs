@@ -21,7 +21,7 @@ An array of replacement options.
 var replacements: [any CVarArg]?
 ```
 
-#### Discussion
+## Discussion
 
 Use this proprty when providing replacement values to localizable strings that use the `\(placeholder: )` syntax. You can then initialize localized strings with the following `String` initializers:
 

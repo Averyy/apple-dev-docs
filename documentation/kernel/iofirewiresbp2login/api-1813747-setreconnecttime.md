@@ -12,7 +12,7 @@ virtual void setReconnectTime(
  UInt32reconnectTime );
 ```
 
-#### Overview
+## Overview
 
 The target and initiator arbitrate the duration of the reconnect timeout. Here the initiator specifies its desired timeout time in 2^reconnectTime seconds. After a successful login the device returns the actual timeout value it wishes to use. This value may be less than the reconnect timeout that the intiator specified if this is all that the device can support.
 

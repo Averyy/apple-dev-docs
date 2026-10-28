@@ -21,7 +21,7 @@ An indication that an encoder or its containers could not encode the given value
 case invalidValue(Any, EncodingError.Context)
 ```
 
-#### Discussion
+## Discussion
 
 As associated values, this case contains the attempted value and context for debugging.
 

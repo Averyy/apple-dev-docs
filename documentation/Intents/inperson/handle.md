@@ -33,7 +33,7 @@ var handle: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * handle;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the string that you specified at initialization time. Use this string to identify the user uniquely in your app. For example, you might specify an email address, phone number, or account name associated with the user. Siri may show this string when asking the user to choose from among several people with similar names.
 

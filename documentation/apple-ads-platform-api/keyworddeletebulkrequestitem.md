@@ -16,9 +16,9 @@ A single item in a keyword bulk-delete request.
 object KeywordDeleteBulkRequestItem
 ```
 
-#### Discussion
+## Discussion
 
-##### Example
+### Example
 
 ```json
 {

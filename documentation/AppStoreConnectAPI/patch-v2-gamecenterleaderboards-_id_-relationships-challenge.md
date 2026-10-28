@@ -9,7 +9,7 @@ Update the challenge relationship for a specific Game Center leaderboard.
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 - id:
 - 204:

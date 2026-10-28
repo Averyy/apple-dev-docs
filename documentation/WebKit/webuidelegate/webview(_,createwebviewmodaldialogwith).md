@@ -19,11 +19,11 @@ optional func webView(_ sender: WebView!, createWebViewModalDialogWith request: 
 - (WebView *) webView:(WebView *) sender createWebViewModalDialogWithRequest:(NSURLRequest *) request;
 ```
 
-#### Return Value
+## Return Value
 
 The web view that is loading the specified request.
 
-#### Discussion
+## Discussion
 
 This method is invoked when JavaScript calls `window.showModalDialog`. It should create a new modal window containing the web view and initially hide the window. The [`webViewRunModal(_:)`](./webviewrunmodal%28_%29.md) message is sent to the delegate to display the web view.
 

@@ -25,7 +25,7 @@ var cadence: VNVideoProcessor.Cadence? { get set }
 @property (copy, readwrite, nullable) VNVideoProcessorCadence * cadence;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the system processes every frame of video if you don’t provide a value for this property.
 

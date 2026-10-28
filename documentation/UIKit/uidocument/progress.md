@@ -22,7 +22,7 @@ var progress: Progress? { get }
 @property (readonly, nullable) NSProgress * progress;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is valid while [`progressAvailable`](./state/progressavailable.md) is set.
 

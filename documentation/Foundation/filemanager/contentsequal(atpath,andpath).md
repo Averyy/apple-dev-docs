@@ -25,11 +25,11 @@ func contentsEqual(atPath path1: String, andPath path2: String) -> Bool
 - (BOOL) contentsEqualAtPath:(NSString *) path1 andPath:(NSString *) path2;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if file or directory specified in `path1` has the same contents as that specified in `path2`, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If `path1` and `path2` are directories, the contents are the list of files and subdirectories each contains—contents of subdirectories are also compared. For files, this method checks to see if they’re the same file, then compares their size, and finally compares their contents. This method does not traverse symbolic links, but compares the links themselves.
 

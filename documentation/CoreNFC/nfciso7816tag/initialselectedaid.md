@@ -22,7 +22,7 @@ var initialSelectedAID: String { get }
 @property (nonatomic, retain, readonly) NSString * initialSelectedAID;
 ```
 
-#### Discussion
+## Discussion
 
 The value matches one of the entries in the [`ISO7816 application identifiers for NFC Tag Reader Session`](../../BundleResources/entitlements/com.apple.developer.nfc.readersession.iso7816.select-identifiers.md) information property list key.
 

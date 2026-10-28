@@ -23,7 +23,7 @@ var requiresAuthentication: Bool { get set }
 @property (nonatomic, assign) BOOL requiresAuthentication;
 ```
 
-#### Discussion
+## Discussion
 
 If you return `true` your app must provide a [`PKIssuerProvisioningExtensionAuthorizationProviding`](../pkissuerprovisioningextensionauthorizationproviding.md) UI extension.
 

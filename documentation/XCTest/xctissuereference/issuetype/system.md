@@ -16,7 +16,7 @@ case system
 XCTIssueTypeSystem
 ```
 
-#### Discussion
+## Discussion
 
 This type of failure could happen if `XCUIApplication` was unable to launch or terminate an app, or if `XCUIElementQuery` was unable to complete a query.
 

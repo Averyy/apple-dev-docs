@@ -21,7 +21,7 @@ Returns the result of handling a JavaScript request to open files.
 func handleFileInputPrompt(parameters: WKOpenPanelParameters, initiatedBy frame: WebPage.FrameInfo) async -> WebPage.FileInputPromptResult
 ```
 
-#### Return Value
+## Return Value
 
 The result of handling the invocation; if the result is affirmative, the response will include a set of files returned to JavaScript.
 

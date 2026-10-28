@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatMakeAtCenterWithVector(simd_float3 center, simd_float3 size);
 ```
 
-#### Return Value
+## Return Value
 
 A new rectangle stucture.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle at the specified center using simd vectors.
 

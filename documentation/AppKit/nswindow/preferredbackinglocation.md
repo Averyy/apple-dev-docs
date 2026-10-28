@@ -21,7 +21,7 @@ var preferredBackingLocation: NSWindow.BackingLocation { get set }
 @property NSWindowBackingLocation preferredBackingLocation;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSWindow.BackingLocation`](./backinglocation-swift.enum.md) for possible values. It’s recommended that you set this property only when optimizing for performance.
 

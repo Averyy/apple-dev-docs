@@ -24,11 +24,11 @@ class func filterPredicate(forFilteredLanguages filteredLanguages: [String]) -> 
 + (NSPredicate *) filterPredicateForFilteredLanguages:(NSArray<NSString *> *) filteredLanguages;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that is [`true`](../../../Swift/true.md) when at least one of the provided strings is present.
 
-#### Discussion
+## Discussion
 
 Use this method to construct a predicate for [`filteredLanguagesPredicate`](./filteredlanguagespredicate.md) that restricts the font picker’s list to only include fonts that support the filtered languages. Provide language identifiers in the same format [`CFLocale`](../../../CoreFoundation/cflocale.md) uses.
 

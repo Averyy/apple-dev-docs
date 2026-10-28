@@ -20,7 +20,7 @@ init(display: SCDisplay, excludingApplications applications: [SCRunningApplicati
 - (instancetype) initWithDisplay:(SCDisplay *) display excludingApplications:(NSArray<SCRunningApplication *> *) applications exceptingWindows:(NSArray<SCWindow *> *) exceptingWindows;
 ```
 
-#### Discussion
+## Discussion
 
 The initializer arguments provide a three-stage filter that gives you fine-grained control over the output:
 

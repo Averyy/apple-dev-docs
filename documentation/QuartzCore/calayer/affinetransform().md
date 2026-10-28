@@ -24,7 +24,7 @@ func affineTransform() -> CGAffineTransform
 - (CGAffineTransform) affineTransform;
 ```
 
-#### Return Value
+## Return Value
 
 The affine transform structure that corresponds to the value in the layer’s [`transform`](./transform.md) property.
 

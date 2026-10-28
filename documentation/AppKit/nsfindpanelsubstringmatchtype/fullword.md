@@ -17,7 +17,7 @@ case fullWord
 NSFindPanelSubstringMatchTypeFullWord
 ```
 
-#### Discussion
+## Discussion
 
 Finds a word exactly matching the search string.
 

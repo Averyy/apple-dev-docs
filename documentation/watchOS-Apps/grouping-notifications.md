@@ -5,11 +5,11 @@
 
 Organize notifications into threads.
 
-#### Overview
+## Overview
 
 The system groups related notifications together in the Notification Center. You can control how watchOS groups your app’s notifications by adding a thread identifier.
 
-##### Set the thread identifier
+### Set the thread identifier
 
 The system automatically groups notifications with the same category and thread ID as they arrive. For local notifications, set the content’s [`threadIdentifier`](../UserNotifications/unmutablenotificationcontent/threadidentifier.md) property. For remote notifications, use the `thread-id` key.
 
@@ -30,7 +30,7 @@ let request = UNNotificationRequest(identifier: myPOICategory,
                                     content: content)
 ```
 
-##### Display groups in custom interfaces
+### Display groups in custom interfaces
 
 Additionally, if you provide a custom long-look interface, it can respond to grouped notifications, displaying content from multiple notifications within a single interface. If a custom notification interface is on screen and a new notification with a matching category and thread ID arrives, the system calls your notification controller’s [`didReceive(_:)`](../WatchKit/wkusernotificationinterfacecontroller/didreceive%28_%29.md) method again. Your implementation must be prepared to append the incoming content to the existing interface. For example, if your custom interface displays the content in a table view, you can add a new row for the incoming content.
 

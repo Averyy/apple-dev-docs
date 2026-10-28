@@ -17,7 +17,7 @@ The full name of the service, as sent over the air.
 let name: String
 ```
 
-#### Discussion
+## Discussion
 
 To avoid conflicts with other apps and devices that may prevent your app from using the service, register your service with a unique name in the [IANA Service Name Registry](https://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xml).
 

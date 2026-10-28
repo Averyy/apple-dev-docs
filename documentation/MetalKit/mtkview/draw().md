@@ -24,7 +24,7 @@ func draw()
 - (void) draw;
 ```
 
-#### Discussion
+## Discussion
 
 This method manually tells the view to redraw its contents. Calling this method causes the view to call either the [`draw(in:)`](../mtkviewdelegate/draw%28in%29.md) method of the view’s [`delegate`](./delegate.md), or the [`draw(_:)`](../../UIKit/uiview/draw%28_%29.md) method of the [`MTKView`](../mtkview.md) subclass. Never call this method inside either drawing function.
 

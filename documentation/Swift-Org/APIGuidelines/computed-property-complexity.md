@@ -10,7 +10,7 @@ framework: "Swift-Org/APIGuidelines"
 
 Document the complexity of any computed property that is not O(1).
 
-#### Overview
+## Overview
 
 People often assume that property access involves no significant computation, because they have stored properties as a mental model. Be sure to alert them when that assumption may be violated.
 

@@ -25,9 +25,9 @@ func vvcosisin(_: OpaquePointer, _: UnsafePointer<Double>, _: UnsafePointer<Int3
 void vvcosisin(__double_complex_t *, const double *, const int *);
 ```
 
-#### Discussion
+## Discussion
 
-##### Parameters:
+### Parameters:
 
 - **parameter 1**: The output array, *y*.
 - **parameter 2**: The input array, *x*.

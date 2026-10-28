@@ -21,11 +21,11 @@ Decodes a message as the given type.
 func decode<T>(as type: T.Type = T.self) throws -> T where T : Decodable
 ```
 
-#### Return Value
+## Return Value
 
 A value of the specified type if the message data decodes successfully.
 
-#### Discussion
+## Discussion
 
 If the message data doesn’t decode to the type, this method throws the appropriate [`DecodingError`](../../Swift/decodingerror.md).
 

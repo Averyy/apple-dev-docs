@@ -24,7 +24,7 @@ init(from decoder: any Decoder) throws
 
 Available when `ID` conforms to `Decodable`.
 
-#### Requires: The decoder must have the `CodingUserInfoKey.actorSystemKey` set to
+## Requires: The decoder must have the `CodingUserInfoKey.actorSystemKey` set to
 
 the [`ActorSystem`](./actorsystem-swift.associatedtype.md) that this actor expects, as it will be used to call [`resolve(id:using:)`](./resolve%28id,using%29.md) on, in order to obtain the instance this initializer should return.
 

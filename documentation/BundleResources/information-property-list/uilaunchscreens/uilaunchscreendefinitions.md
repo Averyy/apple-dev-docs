@@ -15,7 +15,7 @@ A collection of launch screen configuration dictionaries.
 - **Name**: `UILaunchScreenDefinitions` (Launch Screen Definitions)
 - **Type**: array of dictionary 
 
-#### Discussion
+## Discussion
 
 Each dictionary in the array resembles the one you might define for the [`UILaunchScreen`](../uilaunchscreen.md) key, with the addition of a [`UILaunchScreenIdentifier`](./uilaunchscreendefinitions/uilaunchscreenidentifier.md) key that provides a unique identifier for the dictionary. You use that identifier when associating to the dictionary with a URL scheme in the [`UIURLToLaunchScreenAssociations`](./uiurltolaunchscreenassociations.md) array, or to indicate it as the default launch screen with the [`UIDefaultLaunchScreen`](./uidefaultlaunchscreen.md) key.
 

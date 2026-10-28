@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the transform scales equally over
 func isUniform(overDimensions: Dimension3DSet) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the transform scales equally over the specified dimensions.
 

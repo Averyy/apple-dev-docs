@@ -25,7 +25,7 @@ func setMaxAllowedRotationAngle(_ angle: CGFloat, forJoint node: SCNNode)
 - (void) setMaxAllowedRotationAngle:(CGFloat) angle forJoint:(SCNNode *) node;
 ```
 
-#### Discussion
+## Discussion
 
 When SceneKit evaluates the IK constraint, it checks the target orientations of each node in the chain relative to their initial orientations (as of when the constraint was applied to a node). For each node in the chain, SceneKit limits the rotation (in any direction) between the initial and target orientations to the `angle` value specified with this method.
 

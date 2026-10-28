@@ -28,7 +28,7 @@ class MTLBlitPassSampleBufferAttachmentDescriptor
 
 - [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md)
 
-#### Overview
+## Overview
 
 See [Sampling GPU data into counter sample buffers](./sampling-gpu-data-into-counter-sample-buffers.md) for more context about configuring instances of this type. That article is one of a series of articles in [GPU counters and counter sample buffers](./gpu-counters-and-counter-sample-buffers.md).
 

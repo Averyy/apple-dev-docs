@@ -19,7 +19,7 @@ var accessoryView: NSView? { get set }
 @property (strong, nullable) NSView * accessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSAlert`](../nsalert.md) class places the accessory view between the informative text or suppression checkbox (if present) and the response buttons. Before you change the location of the accessory view, first call the [`layout()`](./layout%28%29.md) method.
 

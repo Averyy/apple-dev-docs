@@ -25,7 +25,7 @@ var smartCard: TKSmartCard { get }
 @property (readonly) TKSmartCard * smartCard;
 ```
 
-#### Discussion
+## Discussion
 
 This property can only be accessed in the implementation of a `TKTokenSessionDelegate` protocol delegate method. If the associated token has a value set for the [`aid`](../tksmartcardtoken/aid.md) property, this property opens an exclusive session to the card, with the application already selected.
 

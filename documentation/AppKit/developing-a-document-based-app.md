@@ -10,7 +10,7 @@ Write an app that creates, manages, edits, and saves text documents.
 - macOS 10.10+
 - Xcode 11.3+
 
-#### Overview
+## Overview
 
 This sample shows how to use the Cocoa document architecture to manage documents. A document is a body of information, such as pages of text, stored in a file locally or in iCloud.
 
@@ -20,7 +20,7 @@ Because a document-based app handles multiple documents that are open at the sam
 
 ![Cocoa document architecture diagram showing the relationships between NSDocumentController and its list of NSDocument objects, and between NSDocument and its NSWindowController.](https://developer.apple.com/tutorials/images/com.apple.appkit/documentbasedapp-diagram1@2x.png)
 
-##### Declare the Document Type
+### Declare the Document Type
 
 Apps must use Xcode’s Document Types editor to define the types of documents they can open. When Xcode builds your app, it places the document type information in your app’s information property list (`Info.plist`) file. When users install your app, the system uses that information to determine how to send your app the files to be opened.
 
@@ -40,7 +40,7 @@ The values in the Document Types editor for this sample as follows:
 
 A UTI also specifies which file extension is used by files of this type.  The `public.plain-text` UTI specifies extension `.txt`, so the document files that this sample opens or creates have the `.txt` extension at the end of the filename.
 
-##### Design the Document Content
+### Design the Document Content
 
 This sample app is a text editor, implementing a subclass of `NSDocument` called `Document` with a data model called `Content`.
 
@@ -63,7 +63,7 @@ class Content: NSObject {
 
 Using a centralized `Content` object encapsulates the document’s data model into a single package. If you need to add new data elements to your data model later, you’ll also place them within the `Content` model. The model object is therefore responsible for encoding and decoding its content for reading and writing to disk.
 
-##### Design the Document User Interface
+### Design the Document User Interface
 
 This sample follows the Model–View–Controller design pattern by separating its data from the user interface.  The *model* portion is the `Content` object, the *view* portion is document’s `NSWindow` plus the `NSView` hierarchy it contains, and the *controller* portion is divided among various controller objects, including your `Document` object. The document’s `NSWindowController` object and the view hierarchy of `NSViewController` objects descend from the window controller’s `contentViewController`.
 
@@ -106,7 +106,7 @@ As a result, the `NSTextView` containing the plain text is bound to the document
 
 ![Cocoa document architecture diagram showing how text view data is synced with the data model object through its view controller’s representedObject.](https://developer.apple.com/tutorials/images/com.apple.appkit/documentbasedapp-diagram2@2x.png)
 
-##### Read the Document Content
+### Read the Document Content
 
 At runtime, the `Document` calls `read(from:ofType:)` function to read in the data of a specified type from a file. This overridden function ignores the `typeName` parameter because this sample handles documents of a single known type.
 
@@ -116,7 +116,7 @@ override func read(from data: Data, ofType typeName: String) throws {
 }
 ```
 
-##### Write the Document Content
+### Write the Document Content
 
 At runtime, the `Document` calls `data(ofType:)` function to write the plain text to a file. This overridden function ignores the `typeName` parameter because this sample handles documents of a single known type.
 

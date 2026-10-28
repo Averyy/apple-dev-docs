@@ -21,7 +21,7 @@ Draws an image into a graphics context.
 extern void CGContextDrawImage(CGContextRef c, CGRect rect, CGImageRef image);
 ```
 
-#### Discussion
+## Discussion
 
 The image is scaled—disproportionately, if necessary—to fit the bounds specified by the `rect` parameter.
 

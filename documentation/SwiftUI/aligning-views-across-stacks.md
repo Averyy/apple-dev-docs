@@ -5,11 +5,11 @@
 
 Create a custom alignment and use it to align views across multiple stacks.
 
-#### Overview
+## Overview
 
 As you nest stacks together, you may want specific items within those stacks to align with each other. By default, the alignment you specify for a stack applies only to that stack’s child views. To align child views that reside in the nested stacks, define a custom alignment, assign it to the enclosing view, and use the alignment guide modifier to identify specific views to align.
 
-##### Begin with the default center alignment
+### Begin with the default center alignment
 
 To illustrate aligning items across stacks, the following view shows a horizontal stack wrapping around two nested vertical stacks that have a different number of child views. The enclosing [`HStack`](./hstack.md) doesn’t define an alignment, so it defaults to [`center`](./verticalalignment/center.md).
 
@@ -42,7 +42,7 @@ The image below shows the contents of a nested vertical stack aligning at the ce
 
 ![Two stacks that each contain an image and a title beneath the image, vertically centered. The left stack contains an image in portrait mode with the title Bell Peppers beneath it. The right stack contains an image in landscape mode with the title Chili Peppers beneath it, and an additional caption that says Higher levels of capsicum.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Aligning-Views-Across-Stacks-1@2x.png)
 
-##### Define a custom alignment
+### Define a custom alignment
 
 To create a new vertical alignment guide, extend [`VerticalAlignment`](./verticalalignment.md) with a new static property for your guide. Name the guide according to what it aligns to make it easier to use. The following example uses bottom positioning as the default value for this guide:
 
@@ -63,7 +63,7 @@ extension VerticalAlignment {
 }
 ```
 
-##### Assign and apply the custom alignment
+### Assign and apply the custom alignment
 
 To use the alignment guide, assign it to a parent view that encloses the views you want to align. The following example specifies `imageTitleAlignmentGuide` as the alignment for the horizontal stack:
 

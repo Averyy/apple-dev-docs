@@ -16,7 +16,7 @@ Releases a Core Graphics display mode.
 extern void CGDisplayModeRelease(CGDisplayModeRef mode);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRelease`](../CoreFoundation/cfrelease.md), except that it does not cause an error if the `mode` parameter is `NULL`.
 

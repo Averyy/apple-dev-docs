@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_KERBv5_PKINIT_KP_CLIENT_AUTH;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

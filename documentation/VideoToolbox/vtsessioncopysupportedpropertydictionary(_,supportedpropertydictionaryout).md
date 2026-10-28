@@ -24,7 +24,7 @@ func VTSessionCopySupportedPropertyDictionary(_ session: VTSession, supportedPro
 extern OSStatus VTSessionCopySupportedPropertyDictionary(VTSessionRef session, CFDictionaryRef*supportedPropertyDictionaryOut);
 ```
 
-#### Discussion
+## Discussion
 
 The keys of the returned dictionary are the supported property keys.
 

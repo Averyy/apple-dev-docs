@@ -24,7 +24,7 @@ var delta: Float { get set }
 @property (nonatomic, readwrite) float delta;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1/1024`.
 

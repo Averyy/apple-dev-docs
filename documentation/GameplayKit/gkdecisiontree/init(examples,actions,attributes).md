@@ -24,11 +24,11 @@ init(examples: [[any NSObjectProtocol]], actions: [any NSObjectProtocol], attrib
 - (instancetype) initWithExamples:(NSArray<NSArray<id<NSObject>> *> *) examples actions:(NSArray<id<NSObject>> *) actions attributes:(NSArray<id<NSObject>> *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 A new decision tree.
 
-#### Discussion
+## Discussion
 
 When you use this initializer, the [`GKDecisionTree`](../gkdecisiontree.md) class automatically infers a decision tree structure that chooses actions based on the attribute values in the examples array. That is, if you later use the [`findAction(forAnswers:)`](./findaction%28foranswers%29.md) method with a set of attribute values (or answers to questions) matching one of the entries in the `examples` array, the tree will choose the action at the corresponding index in the `actions` array. However, a decision tree is a predictive model, so the created tree is not limited to handling cases that exactly match the examples—if you call the [`findAction(forAnswers:)`](./findaction%28foranswers%29.md) with a set of answers not in the examples array, the tree predicts an action by generalizing from similar examples.
 

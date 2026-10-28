@@ -25,7 +25,7 @@ var particleBounceVariation: CGFloat { get set }
 @property (nonatomic) CGFloat particleBounceVariation;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a nonzero value for this property randomizes the effect of the [`particleBounce`](./particlebounce.md) property. SceneKit randomly adjusts the restitution coefficient of each particle by up to half the [`particleBounceVariation`](./particlebouncevariation.md) value. For example, if the [`particleBounce`](./particlebounce.md) value is `1.0` and the [`particleBounceVariation`](./particlebouncevariation.md) value is `0.5`, each particle uses a random restitution coefficient between `0.75` and `1.25` for physics simulation.
 

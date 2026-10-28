@@ -25,7 +25,7 @@ var applicationTag: Data? { get set }
 @property (copy, nullable) NSData * applicationTag;
 ```
 
-#### Discussion
+## Discussion
 
 This property is equivalent to the `kSecAttrApplicationTag` type attribute.
 

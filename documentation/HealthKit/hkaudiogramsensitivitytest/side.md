@@ -22,7 +22,7 @@ var side: HKAudiogramSensitivityTestSide { get }
 @property (nonatomic, assign, readonly) HKAudiogramSensitivityTestSide side;
 ```
 
-#### Discussion
+## Discussion
 
 The test side
 

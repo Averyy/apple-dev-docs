@@ -20,7 +20,7 @@ var seq_num: UInt64
 uint64_t seq_num;
 ```
 
-#### Discussion
+## Discussion
 
 Inspect the sequence number per-client and per-event-type to detect whether the kernel had to drop events for this client. If the kernel doesn’t drop any events for this client, `seq_num` increments by 1 for every message of that event type.
 

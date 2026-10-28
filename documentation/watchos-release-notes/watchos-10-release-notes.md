@@ -5,154 +5,154 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 10 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 10. The SDK comes bundled with Xcode 15. For information on the compatibility requirements for Xcode 15, see [Xcode 15 Release Notes](../Xcode-Release-Notes/xcode-15-release-notes.md).
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - Optimized Charge Limit is now available on Apple Watch SE, Series 6, Series 7, and Series 8. See [About Optimized Battery Charging on your Apple Watch](https://support.apple.com/en-us/HT213338) for more information.  (110117793)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Apple Watch Series 6 (40mm) estimates maximum battery capacity more accurately.  (109589671)
 
-##### Accelerate
+### Accelerate
 
-###### New Features
+#### New Features
 
 - Spatial
 
   - Introduced trigonometry functions for [Spatial angle type](../Spatial/angle2d.md#4180998).
-  - Introduced spherical linear interpolation for [Spatial rotations](../Spatial/rotation3d/api-4157007-slerp.md).
+  - Introduced spherical linear interpolation for [Spatial rotations](../Spatial/rotation3d/slerp%28from,to,t,along%29.md).
   - Introduced  swing-twist decomposition for [Spatial rotations](../Spatial/rotation3d.md#4130747).
 - BNNS
 
-  - Introduced [BNNSRandomFillCategoricalFloat](../Accelerate/api-4126856-bnnsrandomfillcategoricalfloat.md) that fills a tensor with random values from the categorical distributions with event probabilities.
+  - Introduced [BNNSRandomFillCategoricalFloat](../Accelerate/bnnsrandomfillcategoricalfloat%28_,_,_,_%29.md) that fills a tensor with random values from the categorical distributions with event probabilities.
   - Introduced [k-nearest neighbors calculation](../Accelerate/bnns.md#4164142).
 - vImage
 
-  - Introduced [vImageConvolveFloatKernel_ARGB8888](../Accelerate/api-4172614-vimageconvolvefloatkernel_argb88.md) that applies convolution to 8-bit-per-channel, 4-channel interleaved images using 32-bit floating-point weights.
-  - Introduced [vImageSepConvolve_ARGB8888](../Accelerate/api-4172615-vimagesepconvolve_argb8888.md) that applies separable convolution to 8-bit-per-channel, 4-channel interleaved images.
+  - Introduced [vImageConvolveFloatKernel_ARGB8888](../Accelerate/vimageconvolvefloatkernel_argb8888%28_,_,_,_,_,_,_,_,_,_,_%29.md) that applies convolution to 8-bit-per-channel, 4-channel interleaved images using 32-bit floating-point weights.
+  - Introduced [vImageSepConvolve_ARGB8888](../Accelerate/vimagesepconvolve_argb8888%28_,_,_,_,_,_,_,_,_,_,_,_%29.md) that applies separable convolution to 8-bit-per-channel, 4-channel interleaved images.
   - Added flood fill, perspective transform, and new lookup table transforms to [vImage.PixelBuffer](../Accelerate/vimage/pixelbuffer.md).  (105830806)
 
-##### Accessibility
+### Accessibility
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Attempting to input text using Scribble doesn’t work for unsupported languages.  (108703755)
 
-##### Camera and AVFoundation Capture
+### Camera and AVFoundation Capture
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: On iPhone 14 and 14 Plus models third-party camera applications might fail to capture images, and the built-in Camera app and third-party applications using the new Deferred Processing API might fail to process final images.  (113158045)
 
-##### Cellular Waypoints
+### Cellular Waypoints
 
-###### Known Issues
+#### Known Issues
 
 - Cellular and SOS Waypoints might not appear in the Compass app when the user is in the back country.  (113973758)
 
   **Workaround:** Quit and re-launch the app.
 
-##### Complication Picker
+### Complication Picker
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The complication picker no longer shows entries for uninstalled system apps.  (110474713)
 
-##### CoreMotion Movement Disorder API
+### CoreMotion Movement Disorder API
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixes an internal crash that can occur when device is locked or turned off for an extended period of time.  (110964474)
 
-##### FinanceKit
+### FinanceKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: It isn’t currently possible to import FinanceKit.  (109450892)
 
-##### Find My
+### Find My
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Watches in Standalone mode don’t monitor for when AirTags, items, or iPhone are left behind.  (109787334)
 
-##### Home Screen
+### Home Screen
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The new Grid View & List View buttons might exhibit formatting issues.  (109476908)
 
-##### Localization
+### Localization
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Some content might appear in English. Some strings might appear clipped.  (109393568)
 
-##### Maps
+### Maps
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When using `Map`, Xcode emits a runtime warning that “Publishing changes from within view updates is not allowed.”  (106174743)
 - Fixed: At certain zoom levels, the title of a selected `MKMarkerAnnotationView` can overlap other marker titles.  (109491779)
 
-##### Media
+### Media
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: MP3 files with malformed ID3 tags will fail to play  (110230071)
 
-##### NetworkExtension
+### NetworkExtension
 
-###### Deprecations
+#### Deprecations
 
 - Algorithms DES, 3DES, SHA1-96 and SHA1-160 as well as Diffie-Hellman groups less than 14 are deprecated for IKEv2 VPNs.  (109427094)
 
-##### Networking
+### Networking
 
-###### New Features
+#### New Features
 
 - `URLSession` supports resumable uploads in HTTP. Just like download tasks, upload tasks can now be paused and resumed if the server supports the latest protocol draft. To learn more, see [Resumable Uploads for HTTP](https://www.ietf.org/archive/id/draft-ietf-httpbis-resumable-upload-01.txt).  (68890505)
 - Apple devices now support connection to 802.1X networks using EAP-TLS with TLS 1.3 (EAP-TLS 1.3). EAP-TLS 1.3 further improves security and privacy by always providing forward secrecy, never disclosing the peer identity, and by mandating use of revocation checking when compared to EAP-TLS with earlier versions of TLS.  (74526852)
 
-###### Resolved Issues
+#### Resolved Issues
 
-- Fixed: For apps linked on or after iOS 17 and aligned OS versions, App Transport Security now requires secure connections to external IP addresses by default. For more information on these requirements, see [Preventing Insecure Network Connections](../Security/preventing_insecure_network_connections.md). Exceptions can be made using [NSExceptionDomains](../BundleResources/information_property_list/nsapptransportsecurity/nsexceptiondomains.md), which now supports exceptions for individual IP addresses and ranges specified in classless inter-domain routing (CIDR) notation.  (101967030)
+- Fixed: For apps linked on or after iOS 17 and aligned OS versions, App Transport Security now requires secure connections to external IP addresses by default. For more information on these requirements, see [Preventing Insecure Network Connections](../Security/preventing-insecure-network-connections.md). Exceptions can be made using [NSExceptionDomains](../BundleResources/information-property-list/nsapptransportsecurity/nsexceptiondomains.md), which now supports exceptions for individual IP addresses and ranges specified in classless inter-domain routing (CIDR) notation.  (101967030)
 - Fixed: For apps linked on or after iOS 17 beta, macOS 14 beta, watchOS 10 beta, and tvOS 17 beta, the `Transfer-Encoding` header field of a streamed `HTTP/1` request is set to `chunked` instead of `Chunked`.  (107390029)
 
-##### Notification
+### Notification
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Notification long look layouts are not properly aligned.  (110922537)
 
-##### Privacy
+### Privacy
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Time in Daylight is supported on Apple Watch Series 5 and later. However, when using a model of Apple Watch which doesn’t support Time in Daylight, the privacy toggle switch is still displayed even though toggling it has no effect. On Apple Watch, the toggle is located in Settings > Privacy & Security > Health > Time in Daylight. On iPhone, the toggle is located in Watch app > Privacy > Time in Daylight.  (108907052)
 
-##### ShazamKit
+### ShazamKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `SHManagedSession.State` is unavailable.  (109670750)
 - Fixed: `SHLibrary.default.items` is unavailable.  (109670918)
 
-##### Siri Announce Notifications
+### Siri Announce Notifications
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Workout start and end reminder announcements don’t respect the global Announce Notifications setting.  (109281407)
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - Users have access to the new `Product.SubscriptionInfo.Status.all` sequence to get the status for each of your app’s subscription groups. One can use the new `subscriptionStatus` property on the latest [Transaction](../StoreKit/transaction.md) value for a subscription to access the full status information.  (102064614)
 - StoreKit 2 now provides a collection of UI components to help merchandise in-app purchases. Use `ProductView`, `StoreView` and `SubscriptionStoreView` to add in-app purchases to an app with just a few lines of code.  (102066107)
@@ -161,7 +161,7 @@ The watchOS 10 SDK provides support to develop watchOS apps for Apple Watch devi
 - Users have access to the new `reason`, and `storefront` properties on [Transaction](../StoreKit/transaction.md) to understand the reason why the transaction was created, and which storefront it is for. The new `renewalDate` property on [RenewalInfo](../StoreKit/product/subscriptioninfo/renewalinfo.md) to understand if and when a subscription will renew next.  (104246730)
 - Users have access to new `groupDisplayName` property of [`Product.SubscriptionInfo`](../StoreKit/product/subscriptioninfo.md) to get the localized display name of a subscription plan’s group.  (105689964)
 - You can now customize the button style used for purchase and subscribe buttons in [ProductView](../StoreKit/productview.md), [StoreView](../StoreKit/storeview.md) and [SubscriptionStoreView](../StoreKit/subscriptionstoreview.md) instances. Use the [buttonStyle(_:)](../SwiftUI/view/buttonstyle%28_%29-7qx1.md) view modifier to choose any standard button style, or a custom button style.  (107713282)
-- StoreKit Views`ProductView` and `StoreView` have initializers have initializers that give you access to the promotional icon as a SwiftUI view and the various phases of the loading operation. Use initializers such as [init(id:icon:placeholderIcon:)](../StoreKit/productview/api-4202217-init.md), [`init(_:icon:)]`(https://developer.apple.com/documentation/storekit/productview/4202214-init), [init(ids:icon:placeholderIcon:)](https://developer.apple.com/documentation/storekit/storeview/4203378-init), and [init(products:icon:)`](../StoreKit/storeview/api-4203382-init.md) to provide an icon view for each phase.  (110470147)
+- StoreKit Views`ProductView` and `StoreView` have initializers have initializers that give you access to the promotional icon as a SwiftUI view and the various phases of the loading operation. Use initializers such as [init(id:icon:placeholderIcon:)](../StoreKit/productview/init%28id,icon,placeholdericon%29.md), [`init(_:icon:)]`(https://developer.apple.com/documentation/storekit/productview/4202214-init), [init(ids:icon:placeholderIcon:)](https://developer.apple.com/documentation/storekit/storeview/4203378-init), and [init(products:icon:)`](../StoreKit/storeview/init%28products,icon%29.md) to provide an icon view for each phase.  (110470147)
 - The following StoreKit types are renamed:
 
   • `DefaultProductViewStyle` is renamed to [AutomaticProductViewStyle](../StoreKit/automaticproductviewstyle.md)
@@ -170,20 +170,20 @@ The watchOS 10 SDK provides support to develop watchOS apps for Apple Watch devi
 
   • `DefaultProductPlaceholderIcon` is renamed to [AutomaticProductPlaceholderIcon](../StoreKit/automaticproductplaceholdericon.md)  (111185321)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When testing in the sandbox environment, the `groupDisplayName` property on [`Product.SubscriptionInfo`](../StoreKit/product/subscriptioninfo.md) might return an empty string if the localization in the current storefront is not in an approved state. When using the `SubscriptionStoreView` without providing a marketing content view, the automatic view might show the name of the app instead of the subscription group’s display name.  (107206601)
 - Fixed issue where [StoreView](../StoreKit/storeview.md) or [`SubscriptionStoreView`](../StoreKit/subscriptionstoreview.md) content might appear in English, or show a localization key, instead of showing localized text for the App Store storefront.  (110734447)
 
-##### Swift
+### Swift
 
-###### New Features
+#### New Features
 
 - Properties of @Observable and @Model types currently always require default values or optionality.  (109441094)
 
-##### Swift Charts
+### Swift Charts
 
-###### New Features
+#### New Features
 
 - Enable scrolling in a chart using view modifier `chartScrollableAxes(_:)`.  (70444254)
 - Use `chartXSelection`, `chartYSelection` and `chartAngleSelection` to enable selection on a chart. If needed, use `chartGesture` to override the default gesture for selection.  (79083764)
@@ -208,7 +208,7 @@ The watchOS 10 SDK provides support to develop watchOS apps for Apple Watch devi
 
   (109675790)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a crash with certain combinations of chart content.  (105197081)
 - Fixed an issue where frequent updates to a chart caused unexpected growth in memory footprint.  (107611114)
@@ -220,13 +220,13 @@ The watchOS 10 SDK provides support to develop watchOS apps for Apple Watch devi
 - Fixed an issue where the `compositingLayer` chart content modifier caused annotation boundary resolutions to behave unexpectedly.  (112232314)
 - Fixed: Improved performance and CPU usage for scrolling charts with scroll position bindings.  (113149095)
 
-###### Known Issues
+#### Known Issues
 
 - Annotations on a scrollable chart might be clipped.  (109164195)
 
-##### SwiftData
+### SwiftData
 
-###### New Features
+#### New Features
 
 - Existing `@Query` property declarations might not always correctly infer the model type for predicate and sort descriptor parameters. (Note: the `@Query` attribute is now resolved as a macro, instead of as a property wrapper.)
 
@@ -246,7 +246,7 @@ The watchOS 10 SDK provides support to develop watchOS apps for Apple Watch devi
 
   In all cases, the model type used in the `filter:` and `sort:` parameters is still required to be the same type used as the element in the query’s wrapped array type, and will emit a build error if not.  (109433172)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Properties with default values are not initialized correctly.  (107887871)
 - Fixed: @Query results can appear stale or fail to refresh.  (108385553)
@@ -268,15 +268,15 @@ The watchOS 10 SDK provides support to develop watchOS apps for Apple Watch devi
 - Fixed: Custom schema migrations with SchemaMigrationPlan will fail.  (110114696)
 - Fixed in beta 7: Apps using SwiftData that are built with Xcode 15 beta 6 have known issues when running on watchOS 10 beta 6.  (113971391)
 
-###### Known Issues
+#### Known Issues
 
 - SwiftData models with implicitly unwrapped optional properties will generate a compiler error that all stored properties were not set.  (114140139)
 
   **Workaround:** Set the value of non-relationship stored properties in the initializer, and mark relationship properties as optional.
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - `RoundedRectangle` now defaults to the continuous corner style.  (63246947)
 - `.onChange` has new overloads where the closure takes 0 or 2 arguments, these new versions will call the new version of the closure (i.e. after the specified value has changed), so any captured properties will have up to date values. The previous overload (which calls the old version of the closure) has been deprecated.  (67344857)
@@ -306,7 +306,7 @@ The watchOS 10 SDK provides support to develop watchOS apps for Apple Watch devi
 - Changing from one Gradient value to another will now animate, but only once apps are rebuilt against the new SDK.  (107408691)
 - All `Section`s inside `List` and `Table` can be configured to be collapsible using new initializers on Section. Previously all `Section`s inside `List`s using the `SidebarListStyle` received outline disclosure indicators in every header.  Section headers will no longer render this control by default.  An outline disclosure will only be provided in the header if the `Section` is initialized with an `isExpanded` binding to a bool.  This bool represents the `isExpanded` state of the `Section`.  Sections created with an `isExpanded` binding inside a `Table` on macOS will now provide a default outline disclosure indicator to collapse or expand the `Section`.  (107592493)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `NavigationSplitView` reuses view controllers in more cases, resulting in significantly improved performance. This might change the behavior of code that relies on the life cycle messages sent to `UIHostingController` because such controllers will be created less often.  (88880547)
 - Fixed: Scroll environment properties like isScrollEnabled and scrollDismissesKeyboardMode are no longer propagated past nested scroll views.  (99195890)
@@ -325,46 +325,46 @@ The watchOS 10 SDK provides support to develop watchOS apps for Apple Watch devi
 - Fixed: ScrollView when used with the searchable modifier has an improved transition when presenting or dismissing search on iOS and iPadOS.  (109265624)
 - Fixed: Two `NavigationSplitView` initializers taking `columnVisibility` as a value rather than a `Binding`.  (109426553)
 
-###### Known Issues
+#### Known Issues
 
 - On iOS, using an `Observable` object’s property as a selection value of a `List` inside `NavigationSplitView` may cause a “Simultaneous accesses to …” error when a list selection is made via tap gesture.  (113978783) (FB12981860)
 
   **Workaround:** There is no current workaround for `Observable` properties. Alternatives include factoring out the selection value into separate state stored outside the object, or using `ObservableObject` instead.
 
-##### Symbol Effects
+### Symbol Effects
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In the objective-C API in Symbols.framework, requesting `effectWithWholeSymbol` on `NSSymbolPulseEffect` and `NSSymbolBounceEffect` will result in the effect being configured to animate by layer instead.  (109284710)
 
-##### Voicemail
+### Voicemail
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Watches using Family Setup are currently missing carrier voicemail setup options.  (108240544)
 - Fixed: Voicemails don’t sync to Watch.  (108818345)
 
-##### Watch Faces
+### Watch Faces
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Complication previews might not appear in the Face Gallery in the Watch app on iPhone.  (109134263)
 
-##### WidgetKit
+### WidgetKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `accessoryCorner` widgets that use the `widgetCurvesContent` modifier don’t get their `widgetURL` passed to their containing app on launch.  (109372819)
 - Fixed: Using ViewThatFits within a .widgetLabel will result in the .widgetLabel not appearing in .accessoryCorner widgets.  (109782549)
 - Fixed: Apps that use the `.showsWidgetContainerBackground` environment variable no longer crash.  (113947483) (FB12974903)
 
-##### Workout
+### Workout
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: A workout might not display Speed or Distance.  (110127447)
 
-###### Known Issues
+#### Known Issues
 
 - Changing the watch language or region only updates some of the text in the watch browsing views for Fitness+ Meditations and Time to Walk/Time to Run Workouts.   (113168750)
 

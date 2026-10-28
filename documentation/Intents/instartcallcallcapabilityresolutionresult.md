@@ -23,7 +23,7 @@ class INStartCallCallCapabilityResolutionResult
 @interface INStartCallCallCapabilityResolutionResult : INCallCapabilityResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an `INStartCallCallCapabilityResolutionResult` object when resolving parameters containing an [`INCallCapability`](./incallcapability.md) value. Use the creation method that best reflects your ability to resolve the parameter successfully. The resolved value can be different than the original [`INCallCapability`](./incallcapability.md). This flexibility allows app extensions to apply business logic constraints.
 

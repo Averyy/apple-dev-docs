@@ -20,7 +20,7 @@ A timing function that controls the progress of the animation.
 var timingFunction: AnimationTimingFunction
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`default`](../animationtimingfunction/default.md). This produces an ease transition.
 

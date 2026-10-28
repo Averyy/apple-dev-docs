@@ -21,7 +21,7 @@ let QCPlugInExecutionArgumentEventKey: String
 extern NSString * const QCPlugInExecutionArgumentEventKey;
 ```
 
-#### Discussion
+## Discussion
 
 The current [`NSEvent`](../AppKit/nsevent.md) if available.
 

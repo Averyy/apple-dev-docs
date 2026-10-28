@@ -21,7 +21,7 @@ The transform of an entity relative to its parent.
 @preconcurrency var transform: Transform { get set }
 ```
 
-#### Discussion
+## Discussion
 
 For an [`AnchorEntity`](../anchorentity.md) instance, the transform is relative to the AR anchor.
 

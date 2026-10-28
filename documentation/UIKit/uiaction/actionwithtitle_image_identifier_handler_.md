@@ -19,7 +19,7 @@ Creates an action with the specified title, image, identifier, and handler.
 + (instancetype) actionWithTitle:(NSString *) title image:(UIImage *) image identifier:(UIActionIdentifier) identifier handler:(UIActionHandler) handler;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized action object.
 

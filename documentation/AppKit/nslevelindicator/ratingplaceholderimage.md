@@ -19,7 +19,7 @@ var ratingPlaceholderImage: NSImage? { get set }
 @property (strong, nullable) NSImage * ratingPlaceholderImage;
 ```
 
-#### Discussion
+## Discussion
 
 If the custom placeholder is a template image, its fill opacity can be adjusted by modifying the opacity of the template image. If both a [`ratingImage`](./ratingimage.md) and [`ratingPlaceholderImage`](./ratingplaceholderimage.md) are set, each rating position is sized such that either image will fit without scaling (i.e. sized to the maximum width and height of both images). The default value is `nil`.
 

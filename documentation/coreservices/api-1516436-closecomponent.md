@@ -15,11 +15,11 @@ Terminates your application’s connection to a component.
 OSErr CloseComponent(ComponentInstance aComponentInstance);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/component_manager.md#1668759).
 
-#### Discussion
+## Discussion
 
 This function closes only a single connection. If your application has several connections to a single component, you must call it once for each connection. 
 

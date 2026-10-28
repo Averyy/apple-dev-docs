@@ -19,7 +19,7 @@ class NSFontManager
 @interface NSFontManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 The font manager records the currently selected font, updates the Font panel and Font menu to reflect the selected font, initiates font changes, and converts fonts in response to requests from text-bearing objects. In a more prosaic role, [`NSFontManager`](./nsfontmanager.md) can be queried for the fonts available to the application and for the particular attributes of a font, such as whether it’s condensed or extended.
 

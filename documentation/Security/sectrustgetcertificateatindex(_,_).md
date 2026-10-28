@@ -25,11 +25,11 @@ func SecTrustGetCertificateAtIndex(_ trust: SecTrust, _ ix: CFIndex) -> SecCerti
 SecCertificateRefSecTrustGetCertificateAtIndex(SecTrustRef trust, CFIndex ix);
 ```
 
-#### Return Value
+## Return Value
 
 A certificate object for the requested certificate.
 
-#### Discussion
+## Discussion
 
 Call the [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md) function before calling this function.
 

@@ -19,7 +19,7 @@ static let characterSet: NSFontDescriptor.AttributeName
 extern NSFontDescriptorAttributeName NSFontCharacterSetAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSCharacterSet`](../../../Foundation/nscharacterset.md) object. The default value is supplied by the font.
 

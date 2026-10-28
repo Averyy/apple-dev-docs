@@ -25,7 +25,7 @@ class var whitespacesAndNewlines: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * whitespaceAndNewlineCharacterSet;
 ```
 
-#### Return Value
+## Return Value
 
 A character set containing all the whitespace and newline characters.
 

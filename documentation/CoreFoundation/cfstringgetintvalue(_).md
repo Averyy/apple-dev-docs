@@ -25,11 +25,11 @@ func CFStringGetIntValue(_ str: CFString!) -> Int32
 extern SInt32 CFStringGetIntValue(CFStringRef str);
 ```
 
-#### Return Value
+## Return Value
 
 The signed integer value represented by `str`. The result is `0` if there is a scanning error (if the string contains disallowed characters or does not represent an integer value) or `INT_MAX` or `INT_MIN` if there is an overflow error.
 
-#### Discussion
+## Discussion
 
 Consider the following example:
 

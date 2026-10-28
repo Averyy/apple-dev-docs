@@ -17,7 +17,7 @@ typedef struct CMFixedXYZColor {
 } CMFixedXYZColor;
 ```
 
-#### Overview
+## Overview
 
 ColorSync uses the `CMFixedXYZColor` data type to specify the profile illuminant in the profile header’s `white` field and to specify other profile element values. Color component values defined by the `Fixed` type definition can be used to specify a color value in the XYZ color space with greater precision than a color whose components are expressed as `CMXYZComponent` data types. The `Fixed` data type is a signed 32-bit value. A color value expressed in the XYZ color space whose color components are of type `Fixed` is defined by the `CMFixedXYZColor` type definition. 
 

@@ -21,7 +21,7 @@ Fits a one-hot encoder to a sequence of categories.
 func fitted<S>(to input: S, eventHandler: EventHandler? = nil) throws -> OneHotEncoder<Category>.Transformer where S : Sequence, S.Element == Category?
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

@@ -24,7 +24,7 @@ class AVCaptureConnection
 @interface AVCaptureConnection : NSObject
 ```
 
-#### Overview
+## Overview
 
 Capture inputs have one or more input ports (instances of [`AVCaptureInput.Port`](./avcaptureinput/port.md)). Capture outputs can accept data from one or more sources (for example, an [`AVCaptureMovieFileOutput`](./avcapturemoviefileoutput.md) object accepts both video and audio data).
 

@@ -5,7 +5,7 @@
 
 Approximate the definite integral of a function over a finite or infinite interval.
 
-#### Overview
+## Overview
 
 Quadrature provides an approximation of the definite integral of a function, over a finite or infinite interval.
 
@@ -15,7 +15,7 @@ In modern terms this process is called *definite integration*. The Accelerate fr
 
 The Quadrature library provides a Swift-only API, based on the [`Quadrature`](./quadrature.md) structure, and both Swift and Objective-C APIs. For the latter, the `quadrature_integrate()` function performs this calculation using any one of three algorithms described in the [Integrators](./quadrature-collection.md#Integrators) section below.
 
-##### The Integration Callback
+### The Integration Callback
 
 > **Note**:  To avoid confusion over the word *function*, this document refers to the mathematical function that is to be integrated as the *integrand*.
 
@@ -45,7 +45,7 @@ where `integrationCB` is the integration callback and `myArg` is a `void*` point
 
 The struct `f` can now be passed as the first argument to `quadrature_integrate()`, which will supply the input and output arrays, fill the input array with *x* values, and perform the integration by calling `integrationCB` as many times as necessary.
 
-##### Integration Options
+### Integration Options
 
 Options that control the logic of the integration are specified as fields of a struct of type `quadrature_integrate_options`, defined in `integration.h`. The fields are interpreted as follows:
 
@@ -58,7 +58,7 @@ Options that control the logic of the integration are specified as fields of a s
 - `qag_points_per_interval`: Number of points per subinterval. Used by the QAG integrator only; other integrators ignore this value. Can be 0, 15, 21, 31, 41, 51, 61. 0 maps to the default 21.
 - `max_intervals`: When you do not provide a workspace (see the [Providing a Workspace](./quadrature-collection.md#Providing-a-Workspace) section below), this is the maximum number of subintervals in the subdivision used by QAG and QAGS integrators. `max_intervals` is ignored by QAG and QAGS if you provide a workspace, and always ignored by QNG.
 
-##### Integrators
+### Integrators
 
 Quadrature has three different integrators available to perform the integration, called QNG, QAG, and QAGS. Each integrator is a specific implementation of an algorithm of the same name. The algorithms are all variants of the well-known Gauss-Kronrod method, and their integrators are C ports of the corresponding routines in the QUADPACK library:
 
@@ -84,7 +84,7 @@ To select an integrator for a particular integrand, the following decision tree 
 3. Otherwise, if the integrand has a non-smooth behavior in the range, and you know where it occurs, split off these regions and use the appropriate finite range routines to integrate over them. Then begin this tree again to handle the remainder of the region.
 4. Otherwise, truncation of the interval, or application of a suitable transformation for reducing the problem to a finite range may be possible.
 
-##### Providing a Workspace
+### Providing a Workspace
 
 Optionally, you may allocate a memory area as workspace for quadrature. This is not a requirement and you should generally not provide a workspace unless you need precise control over memory usage. The QAG and QAGS algorithms require a workspace and will automatically allocate it if you do not provide one; the size of the automatically allocated workspace will depend on the `max_intervals` option. The QNG algorithm does not require a workspace.
 

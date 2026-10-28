@@ -24,7 +24,7 @@ func JSObjectGetTypedArrayBuffer(_ ctx: JSContextRef!, _ object: JSObjectRef!, _
 JSObjectRefJSObjectGetTypedArrayBuffer(JSContextRef ctx, JSObjectRef object, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSObjectRef`](./jsobjectref.md) with a [`JSTypedArrayType`](./jstypedarraytype.md) of [`kJSTypedArrayTypeArrayBuffer`](./kjstypedarraytypearraybuffer.md), or `NULL` if `object` isn’t a typed array.
 

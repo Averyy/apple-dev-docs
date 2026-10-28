@@ -24,7 +24,7 @@ enum Accuracy
 enum AVDepthDataAccuracy : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The accuracy of a depth data map is highly dependent on the camera calibration data used to generate it. If the camera’s focal length cannot be precisely determined at the time of capture, a scaling error in the z (depth) plane is introduced. If the camera’s optical center can’t be precisely determined at capture time, a principal point error is introduced, leading to an offset error in the disparity estimate.
 

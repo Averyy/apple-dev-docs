@@ -23,7 +23,7 @@ static var forMerging: NSFileCoordinator.WritingOptions { get }
 NSFileCoordinatorWritingForMerging
 ```
 
-#### Discussion
+## Discussion
 
 When this constant is specified, the file coordinator calls the [`savePresentedItemChanges(completionHandler:)`](../../nsfilepresenter/savepresenteditemchanges%28completionhandler%29.md) method of relevant file presenters to give them a chance to save their changes before your code makes its changes.
 

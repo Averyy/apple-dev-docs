@@ -25,7 +25,7 @@ func la_transpose(_ matrix: la_object_t) -> la_object_t
 extern la_object_tla_transpose(la_object_t matrix);
 ```
 
-#### Discussion
+## Discussion
 
 Transpose a vector or matrix.
 

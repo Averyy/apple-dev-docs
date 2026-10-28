@@ -22,7 +22,7 @@ enum Level
 - [001: Choosing log levels](../api-001-choosingloglevels.md)
 - [Understanding Loggers and Log Handlers](../understandingloggers.md)
 
-#### Overview
+## Overview
 
 Log levels are ordered by their severity, with `.trace` being the least severe and `.critical` being the most severe.
 

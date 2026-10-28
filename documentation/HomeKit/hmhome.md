@@ -24,7 +24,7 @@ class HMHome
 @interface HMHome : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`HMHome`](./hmhome.md) instance is a top-level container in HomeKit representing a structure that a user considers as a single home. Users might have multiple homes that are far apart, like a primary home and a vacation home. Or they might have two homes that are close together, but that they consider as distinct units—for example, a main home and a guest cottage on the same property.
 

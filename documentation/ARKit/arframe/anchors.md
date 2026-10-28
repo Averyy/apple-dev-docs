@@ -20,7 +20,7 @@ var anchors: [ARAnchor] { get }
 @property (nonatomic, copy, readonly) NSArray<__kindof ARAnchor *> * anchors;
 ```
 
-#### Discussion
+## Discussion
 
 You can manually add or remove anchors to track locations in the scene using the [`ARSession`](../arsession.md) class. Depending on session configuration, ARKit may also add anchors, such as the origin of the world coordinate system or automatically detected planes.
 

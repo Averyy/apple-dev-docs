@@ -14,7 +14,7 @@
 kUSBInformationDeviceIsConnectedBit = 3
 ```
 
-#### Discussion
+## Discussion
 
 The USB device is connected to its hub
 

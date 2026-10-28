@@ -14,7 +14,7 @@
 typedef void (*IOUSBCompletionAction)(void *target, void *parameter, IOReturn status, UInt32 bufferSizeRemaining);
 ```
 
-#### Discussion
+## Discussion
 
 Function called when USB I/O completes.
 

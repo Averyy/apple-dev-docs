@@ -21,7 +21,7 @@ A mode that you use to paint the source image under the background.
 static var destinationOver: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 This mode implements the equation `R = S*(1 - Da) + D` where
 

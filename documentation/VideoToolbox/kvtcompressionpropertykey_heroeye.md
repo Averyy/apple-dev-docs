@@ -23,7 +23,7 @@ let kVTCompressionPropertyKey_HeroEye: CFString
 extern CFStringRef const kVTCompressionPropertyKey_HeroEye;
 ```
 
-#### Discussion
+## Discussion
 
 This property sets a value for the [`kCMFormatDescriptionExtension_HeroEye`](../CoreMedia/kcmformatdescriptionextension_heroeye.md) format description on the output samples. Supported values are [`kCMFormatDescriptionHeroEye_Left`](../CoreMedia/kcmformatdescriptionheroeye_left.md) or [`kCMFormatDescriptionHeroEye_Right`](../CoreMedia/kcmformatdescriptionheroeye_right.md).
 

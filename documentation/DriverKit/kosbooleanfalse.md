@@ -18,7 +18,7 @@ The OSBoolean constant for `false` .
 extern OSBooleanPtr kOSBooleanFalse;
 ```
 
-#### Discussion
+## Discussion
 
 kOSBooleanFalse is the OSBoolean constant for `true` . This object does not need to be retained or released (but it can be). Comparisons should be of the form `booleanObject == kOSBooleanFalse`
 

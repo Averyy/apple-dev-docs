@@ -19,7 +19,7 @@ A predefined size for button elements.
 enum Size
 ```
 
-#### Overview
+## Overview
 
 You can use this enumeration to choose a predefined size for elements in a button. The value you choose for button size can be effectively overridden by explicitly assigning values for configuration elements like padding, corner style, or title and subtitle font sizes.
 

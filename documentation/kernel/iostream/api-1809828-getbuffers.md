@@ -12,7 +12,7 @@ virtual OSArray *getBuffers(
  void );
 ```
 
-#### Overview
+## Overview
 
 Returns an OSArray containing all the buffers in the stream in order of their buffer ID.
 

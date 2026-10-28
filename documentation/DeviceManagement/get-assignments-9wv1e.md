@@ -16,9 +16,9 @@ Get the set of current assignments for users or devices.
 - [Using paginated endpoints](./using-paginated-endpoints.md)
 - [Managing assets](./managing-assets.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

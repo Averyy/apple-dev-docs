@@ -23,7 +23,7 @@ var kCTFontTableKern: Int { get }
 kCTFontTableKern
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for kerning.
 

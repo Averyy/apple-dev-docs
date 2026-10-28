@@ -21,7 +21,7 @@ case unknown
 NIMotionActivityStateUnknown
 ```
 
-#### Discussion
+## Discussion
 
 Update the session with this state when you’re unsure whether the accessory is moving.
 

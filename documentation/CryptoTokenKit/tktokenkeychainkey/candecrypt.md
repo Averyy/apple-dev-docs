@@ -25,7 +25,7 @@ var canDecrypt: Bool { get set }
 @property BOOL canDecrypt;
 ```
 
-#### Discussion
+## Discussion
 
 This property is equivalent to the `kSecAttrCanDecrypt` type attribute.
 

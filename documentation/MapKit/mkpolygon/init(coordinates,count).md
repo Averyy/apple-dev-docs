@@ -25,7 +25,7 @@ convenience init(coordinates coords: UnsafePointer<CLLocationCoordinate2D>, coun
 + (instancetype) polygonWithCoordinates:(const CLLocationCoordinate2D *) coords count:(NSUInteger) count;
 ```
 
-#### Return Value
+## Return Value
 
 A new polygon object.
 

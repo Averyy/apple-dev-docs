@@ -24,7 +24,7 @@ var body: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * body;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if the response contains security-sensitive information.
 

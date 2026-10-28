@@ -25,7 +25,7 @@ case invalidKey
 DCErrorInvalidKey
 ```
 
-#### Discussion
+## Discussion
 
 You receive this error if something goes wrong with generating, retrieving, or using an App Attest cryptographic key, when:
 

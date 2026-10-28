@@ -26,11 +26,11 @@ func append(_ sampleBuffer: CMSampleBuffer) -> Bool
 - (BOOL) appendSampleBuffer:(CMSampleBufferRef) sampleBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the input successfully appends the sample buffer; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Order the samples you append according to storage requirements. For example, if you’re working with sample buffers containing compressed video, order and append them according to their decode timestamp. The system uses the timing information in the sample buffer relative to the time you set in the call to [`startSession(atSourceTime:)`](../avassetwriter/startsession%28atsourcetime%29.md) to determine the timing of samples in the output file.
 

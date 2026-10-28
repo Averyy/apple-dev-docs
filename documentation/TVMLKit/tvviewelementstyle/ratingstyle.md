@@ -21,7 +21,7 @@ var ratingStyle: String? { get }
 @property (nonatomic, readonly, nullable) NSString * ratingStyle;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [Rating Style Values](../rating-style-values.md).
 

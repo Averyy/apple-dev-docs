@@ -17,7 +17,7 @@ The log handler.
 var handler: any LogHandler { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This computed property provides access to the `LogHandler`.
 

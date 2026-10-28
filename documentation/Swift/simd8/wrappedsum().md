@@ -23,7 +23,7 @@ func wrappedSum() -> Self.Scalar
 
 Available when `Scalar` conforms to `FixedWidthInteger`.
 
-#### Discussion
+## Discussion
 
 Equivalent to `indices.reduce(into: 0) { $0 &+= self[$1] }`.
 

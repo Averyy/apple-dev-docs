@@ -21,7 +21,7 @@ A base type that represents a font.
 extern UTType * const UTTypeFont;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.font`.
 

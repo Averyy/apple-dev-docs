@@ -21,7 +21,7 @@ optional func popoverPresentationControllerDidDismissPopover(_ popoverPresentati
 - (void) popoverPresentationControllerDidDismissPopover:(UIPopoverPresentationController *) popoverPresentationController;
 ```
 
-#### Discussion
+## Discussion
 
 The popover presentation controller calls this method after dismissing the popover to let you know that it is no longer onscreen. The presentation controller calls this method only in response to user actions. It does not call this method if you dismiss the popover programmatically.
 

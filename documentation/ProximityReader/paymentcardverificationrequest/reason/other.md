@@ -17,7 +17,7 @@ Verify the card information.
 case other
 ```
 
-#### Discussion
+## Discussion
 
 This is the default verification reason.
 

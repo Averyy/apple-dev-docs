@@ -5,11 +5,11 @@
 
 Request a valid session from the Apple Pay server.
 
-#### Overview
+## Overview
 
 Use a new Apple Pay payment session for each transaction.
 
-##### Post a request
+### Post a request
 
 Your server posts a request using mutual TLS (mTLS) by calling the Apple Pay server’s Payment Session endpoint.
 
@@ -22,7 +22,7 @@ For Apple Pay on the web, you can also use the endpoint `POST https://<validatio
 
 > ❗ **Important**:  Ensure that your server accesses only the validation URLs provided by Apple in [Setting Up Your Server](./setting-up-your-server.md), and fails for other URLs. It’s a best practice to use a strict allow list for the validation URLs. You must send the payment session request from your server; never request the session from the client.
 
-##### Provide request parameters
+### Provide request parameters
 
 Use the merchant identity certificate associated with your merchant ID in the request. See [Configuring Your Environment](./configuring-your-environment.md) for more information.
 
@@ -52,14 +52,14 @@ On supported models of MacBook Pro, the Touch Bar displays the value you supply 
 | Telegu | KohinoorTelugu-Regular.otf |
 | Thai | Ayuthaya.ttf |
 
-##### Receive the payment session object
+### Receive the payment session object
 
 In response to the `POST` request, your server receives an opaque Apple Pay session object. The session expires after five minutes.
 
 - For Apple Pay on the web, pass the session object to the completion method, [`completeMerchantValidation`](./applepaysession/completemerchantvalidation.md).
 - For Apple Pay in Apple Messages for Business, pass the session object to your Messaging Service Provider (MSP), which handles communicating with Apple Messages for Business on your behalf.
 
-##### Example
+### Example
 
 A session request with a JSON payload for Apple Pay on the web.
 

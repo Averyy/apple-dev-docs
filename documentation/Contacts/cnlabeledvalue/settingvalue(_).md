@@ -24,7 +24,7 @@ func settingValue(_ value: ValueType) -> Self
 - (instancetype) labeledValueBySettingValue:(ValueType) value;
 ```
 
-#### Return Value
+## Return Value
 
 The [`CNLabeledValue`](../cnlabeledvalue.md) object with an existing label and identifier.
 

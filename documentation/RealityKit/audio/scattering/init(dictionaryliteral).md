@@ -20,7 +20,7 @@ Creates a scattering data set from a sequence of pairs of center frequency and s
 init(dictionaryLiteral elements: (Float, Float)...)
 ```
 
-#### Discussion
+## Discussion
 
 The scattering coefficient is a value between zero and one that describes the proportion of incident sound energy that is diffused or redirected by a surface, rather than absorbed.
 

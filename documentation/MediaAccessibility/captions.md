@@ -5,7 +5,7 @@
 
 Coordinate the presentation of closed-captioned data for your app’s media files.
 
-#### Overview
+## Overview
 
 People can create custom styles for caption appearance in Accessibility settings. The Media Accessibility framework provides access to these user-captioning settings.
 

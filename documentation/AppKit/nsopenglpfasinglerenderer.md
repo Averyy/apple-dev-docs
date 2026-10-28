@@ -13,7 +13,7 @@
 NSOpenGLPFASingleRenderer
 ```
 
-#### Discussion
+## Discussion
 
 A Boolean attribute. If present, this attribute indicates that a single rendering engine is chosen. On systems with multiple screens, this disables OpenGL’s ability to drive different monitors through different graphics accelerator cards with a single context. This attribute is not generally useful.
 

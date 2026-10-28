@@ -22,7 +22,7 @@ A SwiftUI environment value that views use to authenticate someone using a web s
 struct WebAuthenticationSession
 ```
 
-#### Overview
+## Overview
 
 You access an instance of this type by using the SwiftUI [`Environment`](../SwiftUI/environment.md) property wrapper and specifying [`webAuthenticationSession`](../SwiftUI/environmentvalues/webauthenticationsession.md) as the environment value.
 

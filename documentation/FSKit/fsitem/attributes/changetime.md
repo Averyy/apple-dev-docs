@@ -19,7 +19,7 @@ var changeTime: timespec { get set }
 @property (nonatomic) struct timespec changeTime;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents `ctime`, the last time the item’s metadata changed.
 

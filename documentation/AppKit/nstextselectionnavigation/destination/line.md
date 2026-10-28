@@ -19,7 +19,7 @@ case line
 NSTextSelectionNavigationDestinationLine
 ```
 
-#### Discussion
+## Discussion
 
 The boundary of a line can be logical, based on the line separator characters, as well as visual using soft line wrapping.
 

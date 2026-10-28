@@ -20,7 +20,7 @@ case geoTrackingNotAvailableAtLocation
 ARErrorCodeGeoTrackingNotAvailableAtLocation
 ```
 
-#### Discussion
+## Discussion
 
 This error code indicates that ARKit does not have the necessary localization imagery to support geo tracking at the user’s current location. See [`checkAvailability(completionHandler:)`](../../argeotrackingconfiguration/checkavailability%28completionhandler%29.md) for more information.
 

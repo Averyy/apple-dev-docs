@@ -14,7 +14,7 @@
 kSCSITaskState_NEW_TASK = 0
 ```
 
-#### Discussion
+## Discussion
 
 The task state is new task.
 

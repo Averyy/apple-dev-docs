@@ -24,7 +24,7 @@ func stop()
 - (void) stop;
 ```
 
-#### Discussion
+## Discussion
 
 This method stops playback of the current item and clears the playback queue. You must provide a new playback queue before playing new media items.
 

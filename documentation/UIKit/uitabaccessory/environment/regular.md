@@ -21,7 +21,7 @@ case regular
 UITabAccessoryEnvironmentRegular
 ```
 
-#### Discussion
+## Discussion
 
 - above the bottom tab bar when it is visible; or,
 - at the bottom of the UITabBarController’s view.

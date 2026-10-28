@@ -17,7 +17,7 @@ Halts any background loading.
 - (void) endLoadInBackground;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by [`cancelLoadInBackground`](./cancelloadinbackground.md).
 

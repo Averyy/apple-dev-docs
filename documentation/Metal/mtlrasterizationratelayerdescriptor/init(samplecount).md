@@ -24,7 +24,7 @@ init(sampleCount: MTLSize)
 - (instancetype) initWithSampleCount:(MTLSize) sampleCount;
 ```
 
-#### Return Value
+## Return Value
 
 A layer descriptor with a grid of the specified size. All of the rasterization rates are set to `0.0`.
 

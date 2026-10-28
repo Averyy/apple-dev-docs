@@ -20,7 +20,7 @@ init?(source: CGEventSource?)
 extern CGEventRefCGEventCreate(CGEventSourceRef source);
 ```
 
-#### Return Value
+## Return Value
 
 A new event to be filled in, or `NULL` if the event could not be created. When you no longer need the event, you should release it using the function `CFRelease`.
 

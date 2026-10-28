@@ -25,15 +25,15 @@ func compression_encode_scratch_buffer_size(_ algorithm: compression_algorithm) 
 extern size_t compression_encode_scratch_buffer_size(compression_algorithm algorithm);
 ```
 
-#### Return Value
+## Return Value
 
 Size in bytes.
 
-#### Discussion
+## Discussion
 
 - algorithm: A constant of type [`compression_algorithm`](./compression_algorithm.md) that specifies the compression algorithm.
 
-#### Discussion
+## Discussion
 
 This function returns the number of bytes to provide in an optional scratch buffer when calling [`compression_encode_buffer(_:_:_:_:_:_:)`](./compression_encode_buffer%28_,_,_,_,_,_%29.md).
 

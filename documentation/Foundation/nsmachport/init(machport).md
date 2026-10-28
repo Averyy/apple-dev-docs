@@ -25,11 +25,11 @@ init(machPort: UInt32)
 - (instancetype) initWithMachPort:(uint32_t) machPort;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized `NSMachPort` object that uses `machPort` to send or receive messages. The returned object might be different than the original receiver
 
-#### Discussion
+## Discussion
 
 Depending on the access rights for `machPort`, the new port may be able to only send messages. If a port with `machPort` already exists, this method deallocates the receiver, then retains and returns the existing port.
 

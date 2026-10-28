@@ -25,7 +25,7 @@ func build(destinationAccelerationStructure accelerationStructure: any MTLAccele
 - (void) buildAccelerationStructure:(id<MTLAccelerationStructure>) accelerationStructure descriptor:(MTL4AccelerationStructureDescriptor *) descriptor scratchBuffer:(MTL4BufferRange) scratchBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 Before you build an instance acceleration structure, you are responsible for ensuring the build operations for all primitive acceleration structures is complete. The built acceleration structure doesn’t retain any references to the input buffers of the descriptor, such as the vertex buffer or instance buffer, among others.
 

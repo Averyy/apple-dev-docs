@@ -23,7 +23,7 @@ optional func pageViewController(_ pageViewController: UIPageViewController, did
 - (void) pageViewController:(UIPageViewController *) pageViewController didFinishAnimating:(BOOL) finished previousViewControllers:(NSArray<UIViewController *> *) previousViewControllers transitionCompleted:(BOOL) completed;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `completed` parameter to distinguish between a transition that completed (the page was turned) and a transition that the user aborted (the page was not turned).
 

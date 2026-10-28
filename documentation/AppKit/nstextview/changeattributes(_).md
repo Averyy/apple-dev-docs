@@ -19,7 +19,7 @@ func changeAttributes(_ sender: Any?)
 - (void) changeAttributes:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method changes the attributes by invoking [`convertAttributes(_:)`](../nsfontmanager/convertattributes%28_%29.md) on `sender` and applying the returned attributes to the appropriate text. For more information on attribute conversion, see [`NSFontManager`](../nsfontmanager.md).
 

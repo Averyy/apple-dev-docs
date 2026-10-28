@@ -19,7 +19,7 @@ Analyzes a video file on disk at a URL for sensitive content.
 func videoAnalysis(forFileAt fileURL: URL) -> SCSensitivityAnalyzer.VideoAnalysisHandler
 ```
 
-#### Return Value
+## Return Value
 
 An object that checks if a video contains sensitive content and provides the app with status updates as the analysis progresses.
 

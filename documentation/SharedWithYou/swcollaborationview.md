@@ -36,7 +36,7 @@ class SWCollaborationView
 
 - [Adding shared content collaboration to your app](./adding-shared-content-collaboration-to-your-app.md)
 
-#### Overview
+## Overview
 
 The system presents an `SWCollaborationView` that displays participants and sharing options to a collaborator. For CloudKit and iCloud Drive adopters, the collaboration view includes a manage button. The button brings up the manage user interface, where collaborators can add and remove participants or change the share settings.
 

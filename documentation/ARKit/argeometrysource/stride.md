@@ -20,7 +20,7 @@ var stride: Int { get }
 @property (nonatomic, assign, readonly) NSInteger stride;
 ```
 
-#### Discussion
+## Discussion
 
 Stride may contain padding, so it’s not always equal to the vector-format’s total size in bytes.
 

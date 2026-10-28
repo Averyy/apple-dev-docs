@@ -23,7 +23,7 @@ func registerForRemoteNotifications()
 - (void) registerForRemoteNotifications;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to initiate the registration process with Apple Push Notification service. If registration succeeds, the app calls your app delegate object’s  [`application(_:didRegisterForRemoteNotificationsWithDeviceToken:)`](../uiapplicationdelegate/application%28_,didregisterforremotenotificationswithdevicetoken%29.md) method and passes it a device token. You should pass this token along to the server you use to generate remote notifications for the device. If registration fails, the app calls its app delegate’s [`application(_:didFailToRegisterForRemoteNotificationsWithError:)`](../uiapplicationdelegate/application%28_,didfailtoregisterforremotenotificationswitherror%29.md) method instead.
 

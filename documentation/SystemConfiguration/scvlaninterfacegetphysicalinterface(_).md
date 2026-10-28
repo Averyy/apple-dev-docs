@@ -19,7 +19,7 @@ func SCVLANInterfaceGetPhysicalInterface(_ vlan: SCVLANInterface) -> SCNetworkIn
 SCNetworkInterfaceRefSCVLANInterfaceGetPhysicalInterface(SCVLANInterfaceRef vlan);
 ```
 
-#### Return Value
+## Return Value
 
 The list of interfaces.
 

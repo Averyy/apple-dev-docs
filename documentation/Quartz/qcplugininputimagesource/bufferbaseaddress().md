@@ -22,11 +22,11 @@ func bufferBaseAddress() -> UnsafeRawPointer!
 - (const void *) bufferBaseAddress;
 ```
 
-#### Return Value
+## Return Value
 
 The base address of the buffer.
 
-#### Discussion
+## Discussion
 
 The base address is guaranteed to be aligned on a 16-byte boundary.
 

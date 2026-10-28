@@ -24,7 +24,7 @@ let GCPoint2Zero: GCPoint2
 extern const GCPoint2 GCPoint2Zero;
 ```
 
-#### Discussion
+## Discussion
 
 This constant represents the `(0, 0)` origin.
 

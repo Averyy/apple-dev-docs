@@ -25,11 +25,11 @@ convenience init(radius: CGFloat, height: CGFloat)
 + (instancetype) cylinderWithRadius:(CGFloat) radius height:(CGFloat) height;
 ```
 
-#### Return Value
+## Return Value
 
 A new cylinder geometry.
 
-#### Discussion
+## Discussion
 
 The cylinder is centered in its local coordinate system. For example, if you create a cylinder whose radius is `5.0` and height is `10.0`, its circular cross section extends from `-5.0` to `5.0` along the x- and z-axes, and the y-coordinates of its base and top are `-5.0` and `5.0`, respectively.
 

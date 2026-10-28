@@ -9,13 +9,13 @@ Get information about the specified section, including its name, its channel, an
 **Availability**:
 - Apple News API 1.0+
 
-#### Discussion
+## Discussion
 
 A Read Section Information request retrieves information about a single section. A section is a grouping of articles on a particular topic; for example, Sports, Silicon Valley, or Politics.
 
 Every channel has a default section, even if no other sections are defined. See [Add and manage sections](https://support.apple.com/guide/news-publisher/apdfc6a051aa) in News Publisher User Guide.
 
-##### Example
+### Example
 
 **Request**:
 

@@ -24,7 +24,7 @@ var textureType: MTLTextureType { get set }
 @property (nonatomic) MTLTextureType textureType;
 ```
 
-#### Discussion
+## Discussion
 
 For a nontexture argument, this value is ignored.
 

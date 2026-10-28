@@ -21,7 +21,7 @@ typedef struct SpeechVersionInfo {
 } SpeechVersionInfo;
 ```
 
-#### Overview
+## Overview
 
 By calling the [`GetSpeechInfo`](./api-1552220-getspeechinfo.md) function with the `soSynthType` selector, you can obtain a speech version information structure, which provides information about the speech synthesizer currently being used. 
 

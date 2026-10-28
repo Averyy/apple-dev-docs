@@ -16,11 +16,11 @@ A Boolean value that indicates whether image generation is available on the curr
 ## Declaration
 
 ```swift
-@objc
-(available) nonisolated dynamic class var isAvailable: Bool { get }
+@objc(available)
+nonisolated dynamic class var isAvailable: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `true` when the current device supports image generation. A device might not support this feature if the device or system doesn’t have the resources necessary to generate the images.
 

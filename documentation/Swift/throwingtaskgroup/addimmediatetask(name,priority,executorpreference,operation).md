@@ -23,7 +23,7 @@ mutating func addImmediateTask(name: String? = nil, priority: TaskPriority? = ni
 
 Available when `ChildTaskResult` conforms to `Sendable` and `Failure` conforms to `Error`.
 
-#### Discussion
+## Discussion
 
 This function *starts* the created task on the calling context. The task will continue executing on the caller’s context until it suspends, and after suspension will resume on the adequate executor. For a nonisolated operation this means running on the global concurrent pool, and on an isolated operation it means the appropriate executor of that isolation context.
 

@@ -24,7 +24,7 @@ var gridOrigin: vector_int2 { get }
 @property (nonatomic, readonly) vector_int2 gridOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 You specify origin, width, and height when creating a grid graph with the [`init(fromGridStartingAt:width:height:diagonalsAllowed:)`](./init%28fromgridstartingat,width,height,diagonalsallowed%29.md) initializer. After initialization, you can use this property to examine the parameters the graph was created with—for example, to draw the grid as a debugging overlay in your game UI.
 

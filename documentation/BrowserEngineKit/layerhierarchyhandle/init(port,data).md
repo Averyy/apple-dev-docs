@@ -20,7 +20,7 @@ init(port: mach_port_t, data: Data) throws
 + (BELayerHierarchyHandle *) handleWithPort:(mach_port_t) port data:(NSData *) data error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to reconstruct a layer hierarchy handle that your app serializes using [`encode(_:)`](./encode%28_%29.md) in another process.
 

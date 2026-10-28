@@ -24,7 +24,7 @@ var lineBreakStrategy: NSParagraphStyle.LineBreakStrategy { get }
 @property (nonatomic, readonly) NSLineBreakStrategy lineBreakStrategy;
 ```
 
-#### Discussion
+## Discussion
 
 Line-break strategies are collections of options the system uses to determine where to break lines in a paragraph. This is different from [`lineBreakMode`](./linebreakmode.md), which controls how to lay out lines of text that don’t fit in a container. The system ignores this property if the paragraph style’s [`lineBreakMode`](./linebreakmode.md) property specifies a mode that doesn’t support multiple lines, such as [`NSLineBreakMode.byClipping`](../nslinebreakmode/byclipping.md).
 

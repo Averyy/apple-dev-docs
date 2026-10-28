@@ -18,7 +18,7 @@ An app extension that provides an identity document.
 protocol IdentityDocumentProvider : AppExtension
 ```
 
-#### Overview
+## Overview
 
 Your extension indicates which request types it supports through the provided `IdentityDocumentRequestScene` concrete types. Based on the request types used by the requesting party, the system presents the UI provided through your app extension to the user when they select your app to respond to a presentment request.
 

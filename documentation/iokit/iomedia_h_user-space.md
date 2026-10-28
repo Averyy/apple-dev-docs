@@ -5,9 +5,9 @@
 
 This header contains the IOMedia class definition.
 
-#### Overview
+## Overview
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/IOTypes.h>
 

@@ -25,7 +25,7 @@ func predictedLabel(for string: String) -> String?
 - (NSString *) predictedLabelForString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 The model’s predicted label for the input string.
 

@@ -19,7 +19,7 @@ class NEEthernetTunnelNetworkSettings
 @interface NEEthernetTunnelNetworkSettings : NEPacketTunnelNetworkSettings
 ```
 
-#### Overview
+## Overview
 
 You use this type with [`NEEthernetTunnelProvider`](./neethernettunnelprovider.md) instances to communicate the desired network settings for the packet tunnel to the framework. The framework takes care of applying the contained settings to the system.
 

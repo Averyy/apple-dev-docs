@@ -17,7 +17,7 @@ A Boolean value that indicates whether a supported system routing extension is a
 final class var supportedExtensionAvailable: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `true` when the app has declared support for at least one form of system routing in its `Info.plist` and a matching extension is installed:
 

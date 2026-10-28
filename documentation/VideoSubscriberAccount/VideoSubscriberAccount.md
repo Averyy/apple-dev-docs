@@ -14,7 +14,7 @@ Support TV provider and Apple TV app functionality.
 - tvOS 10.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 `VideoSubscriberAccount` provides APIs to help you create apps that require secure communication with a TV provider’s authentication service. The framework also informs the Apple TV app about whether someone has a subscription and the details of that subscription.
 

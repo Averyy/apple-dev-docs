@@ -21,11 +21,11 @@ Creates a new particle system.
 + (instancetype) particleSystem;
 ```
 
-#### Return Value
+## Return Value
 
 A new particle system object with default values for all of its properties.
 
-#### Discussion
+## Discussion
 
 A particle system with default values for all of its properties renders nothing when added to a scene.
 

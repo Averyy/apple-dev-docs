@@ -19,7 +19,7 @@ case push
 NSBezelStylePush
 ```
 
-#### Discussion
+## Discussion
 
 Use this style when you want the default button style.
 

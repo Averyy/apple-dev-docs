@@ -15,7 +15,7 @@ The name of the author’s manager.
 extern NSAttributedStringDocumentAttributeKey NSManagerDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../Foundation/nsstring.md) object containing the name of the author’s manager.
 

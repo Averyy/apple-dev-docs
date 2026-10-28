@@ -23,7 +23,7 @@ var selectedImageTintColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * selectedImageTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which results in use of the tab bar’s [`tintColor`](./tintcolor.md) property.
 

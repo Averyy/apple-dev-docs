@@ -23,7 +23,7 @@ var target_system: BNNSTargetSystem
 BNNSTargetSystem target_system;
 ```
 
-#### Discussion
+## Discussion
 
 Target System values for BNNSGetBestDataLayout* functions
 

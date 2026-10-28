@@ -28,7 +28,7 @@ class PHFetchResult<ObjectType> where ObjectType : AnyObject
 
 - [Uploading asset resources in the background](../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Overview
+## Overview
 
 When you use class methods on the [`PHAsset`](./phasset.md), [`PHCollection`](./phcollection.md), [`PHAssetCollection`](./phassetcollection.md), and [`PHCollectionList`](./phcollectionlist.md) classes to retrieve objects, Photos provides the resulting objects in a fetch result. You access the contents of a fetch result with the same methods and conventions used by the [`NSArray`](../Foundation/nsarray.md) class. Unlike an [`NSArray`](../Foundation/nsarray.md) object, however, a [`PHFetchResult`](./phfetchresult.md) object dynamically loads its contents from the Photos library as needed, providing optimal performance even when handling a large number of results.
 

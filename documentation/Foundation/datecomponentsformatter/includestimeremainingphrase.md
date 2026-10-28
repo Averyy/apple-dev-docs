@@ -25,7 +25,7 @@ var includesTimeRemainingPhrase: Bool { get set }
 @property BOOL includesTimeRemainingPhrase;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property to [`true`](../../Swift/true.md) results in output strings like “30 minutes remaining”.
 

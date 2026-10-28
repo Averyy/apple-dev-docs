@@ -9,7 +9,7 @@ Retrieve ad creatives that match structured filter, sort, and pagination criteri
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint queries ad creatives using the standard `QueryRequest` structure. The endpoint supports field filtering, multi-field sorting, and offset-based pagination. The system automatically scopes results to the ad accounts accessible to the authenticated caller. You can’t query by `adAccountId`. See [Creatives Endpoints](./creatives-endpoints.md) for the fields you can filter on.
 
@@ -17,7 +17,7 @@ By default, results exclude deleted ad creatives. To include deleted records, ad
 
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -30,11 +30,11 @@ See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of suppor
 
 The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
-#### Payload Examples
+## Payload Examples
 
 **Query by Creative Type**:
 
-##### Request
+### Request
 
 ```http
 POST /v1/creatives/query
@@ -54,7 +54,7 @@ POST /v1/creatives/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -75,7 +75,7 @@ POST /v1/creatives/query
 
 **Query Invalid Creatives**:
 
-##### Request
+### Request
 
 ```http
 POST /v1/creatives/query
@@ -91,7 +91,7 @@ POST /v1/creatives/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

@@ -43,7 +43,7 @@ string CapabilityType
 - `USER_MANAGEMENT`
 - `APPLE_ID_AUTH`
 
-#### Discussion
+## Discussion
 
 - Possible Values:
 - `ICLOUD`

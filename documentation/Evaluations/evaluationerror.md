@@ -21,7 +21,7 @@ Errors thrown during an evaluation run.
 enum EvaluationError
 ```
 
-#### Overview
+## Overview
 
 ```swift
 do {

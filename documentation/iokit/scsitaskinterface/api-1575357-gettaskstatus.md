@@ -16,11 +16,11 @@ Method to get the SCSITaskStatus from the SCSITask.
 IOReturn (*GetTaskStatus)(void *task, SCSITaskStatus *outStatus);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess or kIOReturnError.
 
-#### Discussion
+## Discussion
 
 This method can be used to get the SCSITaskStatus from the SCSITask.
 

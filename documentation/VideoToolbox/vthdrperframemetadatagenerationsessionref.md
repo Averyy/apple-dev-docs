@@ -20,7 +20,7 @@ A mechanism for generating HDR Per Frame Metadata and attaching that metadata to
 typedef struct OpaqueVTHDRPerFrameMetadataGenerationSession * VTHDRPerFrameMetadataGenerationSessionRef;
 ```
 
-#### Discussion
+## Discussion
 
 This object is a CF type, so call `CFRelease` to release your object reference.
 

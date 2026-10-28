@@ -25,7 +25,7 @@ class CMBufferQueue
 typedef struct opaqueCMBufferQueue * CMBufferQueueRef;
 ```
 
-#### Overview
+## Overview
 
 A `CMBufferQueue` is a queue of timed buffers backed by a Core Foundation object.
 

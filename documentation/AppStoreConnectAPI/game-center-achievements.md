@@ -5,7 +5,7 @@
 
 Manage achievements for your apps.
 
-#### Overview
+## Overview
 
 An achievement is a distinction that a player earns for reaching a milestone, or performing an action, defined by you and programmed into your app. After an achievement has gone live for any version of your app, it can’t be removed.
 

@@ -23,7 +23,7 @@ case notReachable
 WCErrorCodeNotReachable
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you send an immediate message to an app that isn’t running.
 

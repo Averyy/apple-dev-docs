@@ -19,7 +19,7 @@ class func stopPeriodicEvents()
 + (void) stopPeriodicEvents;
 ```
 
-#### Discussion
+## Discussion
 
 This message is ignored if periodic events aren’t currently being generated.
 

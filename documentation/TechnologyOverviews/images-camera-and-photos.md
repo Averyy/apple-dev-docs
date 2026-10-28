@@ -8,7 +8,7 @@ Include images to make your app more compelling, and effectively convey ideas an
 
 Build your interface from system-provided images whenever possible, and store other custom images your app requires in its bundle directory. If you create or capture new images in your app, store them in your app’s container directory or ask the person to choose a storage location.
 
-#### Choose the best file formats for images
+## Choose the best file formats for images
 
 Apple platforms support a wide assortment of image formats, including common formats like PNG, JPEG, GIF, TIFF, HEIC, camera RAW, and many others. Apple also offers SF Symbols, a library of vector- based images you can use in your apps. When creating images for your app, choose the format best suited for the intended task:
 
@@ -18,7 +18,7 @@ Apple platforms support a wide assortment of image formats, including common for
 
 One of the benefits of using Apple technologies to load images is you don’t have to know anything about the image format. The image types in [SwiftUI](../SwiftUI/image.md), [UIKit](../UIKit/uiimage.md), and [AppKit](../AppKit/nsimage.md) automatically detect image formats using a combination of filename extensions and file data, and transform the image data into a usable image object. You can read and write image data yourself if you prefer using the [Image I/O](../ImageIO/ImageIO.md) framework, but typically only do so for advanced image manipulations. For example, you might use that framework to read exposure information, timestamp details, and other image-specific metadata.
 
-#### Load images and photos from disk
+## Load images and photos from disk
 
 The platform-provided image types handle most of the heavy lifting required to load and prepare images for display. Use the [Image](../SwiftUI/image.md), [UIImage](../UIKit/uiimage.md), and [NSImage](../AppKit/nsimage.md) types to load images from an [asset catalog](../Xcode/managing-assets-with-asset-catalogs.md), [bundle](../Foundation/bundle.md) directory, on-disk location, or from image data you create. You can also use these types to load an [SF Symbol](https://developer.apple.com/sf-symbols/) or other system-provided image. The following listing shows the code you use to create an image type and initialize it with an existing image.
 
@@ -45,7 +45,7 @@ let image = NSImage(systemSymbolName: "arrow.up") // Load an SF Symbol.
 
 After you create an image type, display it in your app’s interface using an image view for [SwiftUI](../SwiftUI/image.md), [UIKit](../UIKit/uiimageview.md), or [AppKit](../AppKit/nsimageview.md). Although you can draw images using custom drawing code, an image view is a more efficient option and handles many types of changes for you. For example, an image view can toggle between [light and dark versions](../UIKit/providing-images-for-different-appearances.md) of an image automatically.
 
-#### Retrieve and display someone’s personal photos
+## Retrieve and display someone’s personal photos
 
 People view and manage personal photos in the Photos app on their device. Apps can also request access to someone’s photos and incorporate them into the content that person creates. For example, a social media app might let someone add their personal photos to their feed. To [request access](../Photos/phphotolibrary/requestauthorization%28for,handler%29.md) and [retrieve](../PhotoKit/fetching-objects-and-requesting-changes.md) someone’s personal photos, use [PhotoKit](../PhotoKit/PhotoKit.md). You can also use PhotoKit to:
 
@@ -54,7 +54,7 @@ People view and manage personal photos in the Photos app on their device. Apps c
 - Display motion and sound from a [Live Photo](../PhotoKit/displaying-live-photos.md) and manage playback.
 - Integrate custom filter effects, slideshows, books, and other content into the Photos app using a [photo editing extension](../PhotoKit/creating-photo-editing-extensions.md).
 
-#### Capture photos and video from an available camera
+## Capture photos and video from an available camera
 
 Another way to integrate photos and videos into your app is to capture them using the device’s camera. On supported devices, you can display the system’s capture interface to obtain new images or video content. The interface offers a preview of the image along with controls to capture it. The use of a system-provided interface protects the person’s privacy while still giving you the images you need.
 
@@ -66,7 +66,7 @@ If you define a custom capture interface, make it more widely available by provi
 
 The [AVFoundation](../AVFoundation/AVFoundation.md) framework can capture content from a variety of externally connected devices, but you can also access those devices directly using the [ImageCaptureCore](../ImageCaptureCore/ImageCaptureCore.md) framework. You might use it to connect to a [camera](../ImageCaptureCore/iccameradevice.md), [scanner](../ImageCaptureCore/icscannerdevice.md), or other media device and communicate with it directly. For example, you might download existing photos and videos from the device, or use the device to capture new photos or videos.
 
-#### Read and write image data directly
+## Read and write image data directly
 
 For most images, you’ll use the built-in image types to load and and manage the image data. However, when you want to [read](../ImageIO/cgimagesource.md) and [write](../ImageIO/cgimagedestination.md) image data yourself, you can do so using the types of the [Image I/O](../ImageIO/ImageIO.md) framework. These types support a [wide range of image formats](../ImageIO/cgimagesourcecopytypeidentifiers%28%29.md), and make it easier to get the data you need. You can also use this framework to create [spatial photos and videos](../ImageIO/creating-spatial-photos-and-videos-with-spatial-metadata.md) for Apple Vision Pro.
 
@@ -76,7 +76,7 @@ Modern cameras often put metadata inside images, including exposure settings, ti
 - [HEIC](../ImageIO/heic-image-properties.md), [JPEG](../ImageIO/jfif-image-properties.md), [PNG](../ImageIO/png-image-properties.md), [TIFF](../ImageIO/tiff-image-properties.md), and other [format-specific](../ImageIO/ImageIO.md) data
 - Manufacturer-specific data, including data from [Nikon](../ImageIO/nikon-camera-dictionary-keys.md), [Canon](../ImageIO/canon-camera-dictionary-keys.md), and [other camera types](../ImageIO/ImageIO.md)
 
-#### Create new images programmatically
+## Create new images programmatically
 
 In addition to using images in your interface, you can create images programmatically from your app. For example, someone using a drawing app might export an image of their artistic creation so they can share it online. A word processor app might turn someone’s document-based content into a PDF file. You might even generate images of your own app’s interface and use them in custom transition effects.
 

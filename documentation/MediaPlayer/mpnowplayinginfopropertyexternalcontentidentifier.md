@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyExternalContentIdentifier: String
 extern NSString * const MPNowPlayingInfoPropertyExternalContentIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This is only used to reference the item to the Now Playing app and can be in any format.
 

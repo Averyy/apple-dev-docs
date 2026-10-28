@@ -33,7 +33,7 @@ var matchOffset: TimeInterval { get }
 @property (atomic, assign, readonly) NSTimeInterval matchOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The value can be negative if the query signature contains unrecognizable data before the data that corresponds to the start of the matched reference item.
 

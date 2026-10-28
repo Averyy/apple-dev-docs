@@ -17,7 +17,7 @@ Applies the Rectified Linear Unit.
 class ReLU
 ```
 
-#### Overview
+## Overview
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 MLX.maximum(x, 0)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`relu(_:)`](./relu%28_%29.md)

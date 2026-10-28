@@ -20,7 +20,7 @@ Returns a string formatted to contain the data from a point.
 extern NSString *NSStringFromCGPoint(CGPoint point);
 ```
 
-#### Return Value
+## Return Value
 
 A string that corresponds to `point`. See [`CGPointFromString`](./cgpointfromstring.md) for a discussion of the string format.
 

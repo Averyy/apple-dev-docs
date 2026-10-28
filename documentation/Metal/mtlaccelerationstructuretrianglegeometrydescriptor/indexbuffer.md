@@ -24,7 +24,7 @@ var indexBuffer: (any MTLBuffer)? { get set }
 @property (nonatomic, retain, nullable) id<MTLBuffer> indexBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 This property can be `nil`, in which case the vertex data defines the triangle list implicitly. You need to store indices in a packed data format.
 

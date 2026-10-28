@@ -25,7 +25,7 @@ struct vImage_AffineTransform
 typedef struct vImage_AffineTransform { ... } vImage_AffineTransform;
 ```
 
-#### Overview
+## Overview
 
 This structure represents the 3x2 matrix :
 

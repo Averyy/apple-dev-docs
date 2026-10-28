@@ -19,11 +19,11 @@ class func imageReps(withContentsOfFile filename: String) -> [NSImageRep]?
 + (NSArray<NSImageRep *> *) imageRepsWithContentsOfFile:(NSString *) filename;
 ```
 
-#### Return Value
+## Return Value
 
 An array of image representation objects. The array contains one object for each image in the specified file.
 
-#### Discussion
+## Discussion
 
 If sent to the `NSImageRep` class object, this method returns an array of objects (all newly allocated instances of a subclass of `NSImageRep`, chosen through the use of [`class(forFileType:)`](./class%28forfiletype%29.md)) that have been initialized with the contents of the file. If sent to a subclass of `NSImageRep` that recognizes the file type, this method returns an array of objects (all instances of that subclass) that have been initialized with the contents of the file.
 

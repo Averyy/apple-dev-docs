@@ -24,11 +24,11 @@ class func convolution9Vertical() -> any CIFilter & CIConvolution
 + (CIFilter<CIConvolution> *) convolution9VerticalFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies a 1 x 9 convolution filter to the `RGBA` components of an image. The effect uses a 1 x 9 area surrounding an input pixel, the pixel itself, and those within a distance of 4 pixels vertically. The effect repeats this for every pixel within the image. Unlike the convolution filters, which use square matrices, this filter can only produce effects along a vertical axis. You can combine this filter with the [`convolution9Horizontal()`](./convolution9horizontal%28%29.md) to apply separable 9 x 9 convolutions.
 

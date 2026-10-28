@@ -20,7 +20,7 @@ var providesAudioData: Bool { get set }
 @property (nonatomic, assign) BOOL providesAudioData;
 ```
 
-#### Discussion
+## Discussion
 
 To receive and handle captured audio data, your session delegate must implement the [`session(_:didOutputAudioSampleBuffer:)`](../arsessionobserver/session%28_,didoutputaudiosamplebuffer%29.md) method.
 

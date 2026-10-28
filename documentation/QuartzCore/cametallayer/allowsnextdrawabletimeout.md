@@ -24,7 +24,7 @@ var allowsNextDrawableTimeout: Bool { get set }
 @property BOOL allowsNextDrawableTimeout;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the [`nextDrawable()`](./nextdrawable%28%29.md) method returns [`nil`](../../ObjectiveC/nil-227m0.md) if it can’t provide a drawable object within one second. If [`false`](../../Swift/false.md), the [`nextDrawable()`](./nextdrawable%28%29.md) method waits indefinitely for a drawable to become available.
 

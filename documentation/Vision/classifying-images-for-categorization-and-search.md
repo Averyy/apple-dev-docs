@@ -10,13 +10,13 @@ Analyze and label images using a Vision classification request.
 - macOS 15.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 With the help of machine learning to perform image analysis, the Vision framework can identify, recognize, and label objects in an image you provide. The [`ClassifyImageRequest`](./classifyimagerequest.md) structure generates the image analysis results in the form of [`ClassificationObservation`](./classificationobservation.md) objects. Each object contains a classification label (such as *bicycle*), and an associated confidence value to indicate the level of certainty in the observation.
 
 This sample app demonstrates how to set up and perform the classification request on a single image or on a collection of images. For a collection of images, the sample shows you how to process the images concurrently using Swift concurrency. Finally, the sample shows how you access and display the results from the request.
 
-##### Perform the request
+### Perform the request
 
 First, the app creates the `ClassifyImageRequest` and performs it on an image. The request returns the entire taxonomy as `ClassificationObservation` objects, and stores the objects in an array. For each observation, the request assigns a label in the form of an identifier, along with a floating-point confidence value in the range of `0.0` to `1.0`. A value of `0.0` indicates that the observation is not likely in the image, while a value of `1.0` indicates that the observation is certain to be in the image.
 
@@ -72,7 +72,7 @@ func classifyAllImages(urls: [URL]) async throws -> [ImageFile] {
 }
 ```
 
-##### Retrieve and search the results
+### Retrieve and search the results
 
 The sample provides the ability to search for images by their classification labels. If the search bar is empty, the app presents all the images. If the search bar is not empty, the app only presents images with classification labels equal to the search term.
 

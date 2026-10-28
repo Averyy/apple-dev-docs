@@ -20,7 +20,7 @@ Removes a multi-apply API schema from this prim with the given instance name.
 func removeAPISchema(_ schemaIdentifier: USDToken, instanceName: USDToken) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the schema cannot be removed.
 

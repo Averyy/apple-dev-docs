@@ -19,7 +19,7 @@ class WKInterfaceDate
 @interface WKInterfaceDate : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 Use [`WKInterfaceDate`](./wkinterfacedate.md) when you want to display date or time information without further interaction from your WatchKit extension. At runtime, use the date object to configure the appearance of the date and time information being displayed.
 
@@ -39,7 +39,7 @@ Do not subclass or create instances of this class yourself. Instead, define outl
 
 During the initialization of your interface controller, WatchKit creates any needed date objects and assigns them to their connected outlets. After those objects are set, you can use them to make changes to the onscreen date and time information.
 
-##### Interface Builder Configuration Options
+### Interface Builder Configuration Options
 
 Xcode lets you configure information about your date interface object in your storyboard file. The following table lists the attributes you can configure and their meaning.
 

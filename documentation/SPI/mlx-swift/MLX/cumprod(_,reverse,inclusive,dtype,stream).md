@@ -17,7 +17,7 @@ Return the cumulative product of the elements over the flattened array.
 func cumprod(_ array: MLXArray, reverse: Bool = false, inclusive: Bool = true, dtype: DType? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray([5, 8, 4, 9], [2, 2])
@@ -26,7 +26,7 @@ let array = MLXArray([5, 8, 4, 9], [2, 2])
 let result = array.cumprod()
 ```
 
-##### See Also
+### See Also
 
 - [Cumulative Operations](./cumulative.md)
 - [`cumprod(_:axis:reverse:inclusive:dtype:stream:)`](./cumprod%28_,axis,reverse,inclusive,dtype,stream%29.md)

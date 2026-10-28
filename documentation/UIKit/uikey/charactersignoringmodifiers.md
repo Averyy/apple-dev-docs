@@ -27,7 +27,7 @@ var charactersIgnoringModifiers: String { get }
 
 - [Handling key presses made on a physical keyboard](../handling-key-presses-made-on-a-physical-keyboard.md)
 
-#### Discussion
+## Discussion
 
 For Latin-based languages, always expect a lowercase property value. If the user is pressing only a modifier key, the property value is an empty string.
 

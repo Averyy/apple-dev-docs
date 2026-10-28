@@ -19,11 +19,11 @@ func destinationSelection(for textSelection: NSTextSelection, direction: NSTextS
 - (NSTextSelection *) destinationSelectionForTextSelection:(NSTextSelection *) textSelection direction:(NSTextSelectionNavigationDirection) direction destination:(NSTextSelectionNavigationDestination) destination extending:(BOOL) extending confined:(BOOL) confined;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`NSTextSelection`](../nstextselection.md), or `nil` if the operation doesn’t produce a logically valid result.
 
-#### Discussion
+## Discussion
 
 If `confined` is `true`, confine any movement to the text element that the selection already lies within.
 

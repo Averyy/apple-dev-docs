@@ -21,11 +21,11 @@ func openFile(_ fullPath: String) -> Bool
 - (BOOL) openFile:(NSString *) fullPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the file was successfully opened; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The sending app is deactivated before the request is sent.
 

@@ -20,11 +20,11 @@ init(commandDescription commandDef: NSScriptCommandDescription)
 - (instancetype) initWithCommandDescription:(NSScriptCommandDescription *) commandDef;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized instance of `NSScriptCommand` or a subclass.
 
-#### Discussion
+## Discussion
 
 To make this command object usable, you must set its receiving objects and arguments (if any) after invoking this method.
 

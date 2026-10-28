@@ -24,7 +24,7 @@ let HKMetadataKeyFoodType: String
 extern NSString * const HKMetadataKeyFoodType;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value. Food objects are usually [`food`](./hkcorrelationtypeidentifier/food.md) samples containing any number of `Nutrition Identifiers` samples.
 

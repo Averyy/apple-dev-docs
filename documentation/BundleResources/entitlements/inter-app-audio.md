@@ -17,7 +17,7 @@ A Boolean value that indicates whether the app may exchange audio with other Int
 - **Name**: `inter-app-audio` (Inter-App Audio)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Enabling Inter-App Audio allows your app to send and receive audio from other Inter-App Audio enabled apps and provides access to Audio Unit extensions.
 

@@ -19,7 +19,7 @@ func chooseIdentityPanelShowHelp(_ sender: SFChooseIdentityPanel!) -> Bool
 - (BOOL) chooseIdentityPanelShowHelp:(SFChooseIdentityPanel *) sender;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this delegate method to implement custom help if you call the [`setShowsHelp(_:)`](../../SecurityInterface/sfchooseidentitypanel/setshowshelp%28_%29.md) method to display a help button in the sheet or panel. If you are not implementing custom help, do not implement this method.
 

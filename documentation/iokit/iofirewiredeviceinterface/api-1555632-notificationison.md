@@ -16,7 +16,7 @@ Determine whether callback notifications for this interface are currently active
 const Boolean (*NotificationIsOn)(IOFireWireLibDeviceRef self);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value where true indicates notifications are active
 

@@ -5,11 +5,11 @@
 
 Set the range of mipmap levels that a sampler can access.
 
-#### Overview
+## Overview
 
 Sometimes, you want to control the specific mipmap levels that the sampler can read from. For example, you might do this when you haven’t provided texture data for all of the mipmaps, and you want to constrain access to the mipmaps that have data. You can configure a sampler to read from a subset of the texture’s mipmaps.
 
-##### Limit the sampler when you create it in your Metal app
+### Limit the sampler when you create it in your Metal app
 
 When you configure the [`MTLSamplerDescriptor`](./mtlsamplerdescriptor.md) instance, set the [`lodMinClamp`](./mtlsamplerdescriptor/lodminclamp.md) and [`lodMaxClamp`](./mtlsamplerdescriptor/lodmaxclamp.md) properties to the range of permitted values.
 
@@ -43,7 +43,7 @@ id<MTLSamplerState> sampler = [device newSamplerStateWithDescriptor: descriptor]
 
 This example creates a sampler that ignores mipmaps `0`, `1`, and `2`.
 
-##### Limit the sampler when you create it in your shader
+### Limit the sampler when you create it in your shader
 
 If you create your sampler in your shader, specify the range of mipmap levels that it can access:
 
@@ -51,7 +51,7 @@ If you create your sampler in your shader, specify the range of mipmap levels th
 constexpr sampler s(filter::linear, mip_filter::linear, lod_clamp(3.0f, MAXFLOAT))
 ```
 
-##### Control mipmap selection when you sample the texture
+### Control mipmap selection when you sample the texture
 
 Some GPUs can apply additional constraints on the sample operation itself, passing in dynamic information about which mipmap levels the GPU can sample.
 

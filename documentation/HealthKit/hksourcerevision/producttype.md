@@ -24,7 +24,7 @@ var productType: String? { get }
 @property (copy, readonly, nullable) NSString * productType;
 ```
 
-#### Discussion
+## Discussion
 
 For samples saved on Apple Watch Series 2, HealthKit sets the product type property to `watch2,4`.
 

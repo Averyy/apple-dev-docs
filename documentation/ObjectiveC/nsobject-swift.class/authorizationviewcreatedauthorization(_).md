@@ -19,7 +19,7 @@ func authorizationViewCreatedAuthorization(_ view: SFAuthorizationView!)
 - (void) authorizationViewCreatedAuthorization:(SFAuthorizationView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 If you have saved a copy of the authorization object for your own purposes, you should discard it and call [`authorization()`](../../SecurityInterface/sfauthorizationview/authorization%28%29.md) for a new authorization object.
 

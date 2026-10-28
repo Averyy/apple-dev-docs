@@ -21,7 +21,7 @@ Returns a string created by reading data from the file at a given path interpret
 + (instancetype) stringWithContentsOfFile:(NSString *) path encoding:(NSStringEncoding) enc error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A string created by reading data from the file named by `path` using the encoding, `enc`. If the file can’t be opened or there is an encoding error, returns `nil`.
 

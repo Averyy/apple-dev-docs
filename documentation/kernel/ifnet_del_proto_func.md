@@ -13,11 +13,11 @@
 typedef errno_t (*ifnet_del_proto_func)(ifnet_t interface, protocol_family_t protocol_family);
 ```
 
-#### Return Value
+## Return Value
 
 If the result is zero, processing will continue normally. If the result is anything else, the detach will continue and the error will be returned to the caller.
 
-#### Discussion
+## Discussion
 
 if_del_proto_func is called by the stack when a protocol is being detached from an interface. This gives the interface an opportunity to free any storage related to this specific protocol being attached to this interface.
 

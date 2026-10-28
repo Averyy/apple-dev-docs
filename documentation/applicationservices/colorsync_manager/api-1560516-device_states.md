@@ -4,7 +4,7 @@
 
 Specify device states.
 
-#### Overview
+## Overview
 
 Specify possible values for device states accessible by the functions `CMGetDeviceState` and `CMSetDeviceState`.
 

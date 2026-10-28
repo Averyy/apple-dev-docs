@@ -25,7 +25,7 @@ protocol TimelineProvider
 - [Increasing the visibility of widgets in Smart Stacks](./widget-suggestions-in-smart-stacks.md)
 - [Migrating ClockKit complications to WidgetKit](./converting-a-clockkit-app.md)
 
-#### Overview
+## Overview
 
 At various times, WidgetKit requests a *timeline* from the provider. A timeline is an array of objects conforming to [`TimelineEntry`](./timelineentry.md). Each timeline entry has a date, and you can specify additional properties for displaying the widget.
 
@@ -85,7 +85,7 @@ func getTimeline(in context: Context, completion: @escaping (Timeline<Leaderboar
 
 If your provider needs to do asynchronous work to generate the timeline, such as fetching data from a server, store a reference to the `completion` handler and call it when you are done with your asynchronous work.
 
-##### Determine a refresh policy
+### Determine a refresh policy
 
 When creating the timeline, the provider specifies a refresh policy that controls when WidgetKit requests a new timeline. The default behavior is to use [`atEnd`](./timelinereloadpolicy/atend.md) to request a new timeline after the last date specified by the entries in a timeline. However, if there is a different date when WidgetKit should request a new timeline, you can specify a refresh policy of [`after(_:)`](./timelinereloadpolicy/after%28_%29.md). For example, a dragon will appear in 2.5 hours and might engage in battle with the game character. Because the outcome of this battle may change the character’s health level, the provider can tell WidgetKit to request a new timeline after the battle.
 
@@ -108,7 +108,7 @@ Alternatively, if future events are unpredictable, you can tell WidgetKit to not
 
 In both examples, when your app determines that the status has changed, it calls the [`WidgetCenter`](./widgetcenter.md) function [`reloadTimelines(ofKind:)`](./widgetcenter/reloadtimelines%28ofkind%29.md) and WidgetKit requests a new timeline.
 
-##### Refresh widgets efficiently
+### Refresh widgets efficiently
 
 Each configured widget receives a limited number of refreshes every day. Several factors affect how many refreshes a widget receives, such as whether the containing app is running in the foreground or background, how frequently the widget is shown onscreen, and what types of activities the containing app engages in.
 

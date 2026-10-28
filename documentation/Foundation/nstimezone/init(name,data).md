@@ -25,7 +25,7 @@ init?(name tzName: String, data aData: Data?)
 - (instancetype) initWithName:(NSString *) tzName data:(NSData *) aData;
 ```
 
-#### Discussion
+## Discussion
 
 As of macOS 10.6, the underlying implementation of this method has been changed to ignore the specified `data` parameter.
 

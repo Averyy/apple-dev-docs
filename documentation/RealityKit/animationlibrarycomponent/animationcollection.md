@@ -20,7 +20,7 @@ A collection of animations an entity can play.
 struct AnimationCollection
 ```
 
-#### Overview
+## Overview
 
 You use `AnimationCollection` to access animations in an [`AnimationLibraryComponent`](../animationlibrarycomponent.md).
 

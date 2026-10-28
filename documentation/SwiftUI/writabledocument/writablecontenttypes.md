@@ -20,7 +20,7 @@ The content types this document can save or export to.
 static var writableContentTypes: [UTType] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The save panel uses this list to offer format options. When a document also conforms to [`ReadableDocument`](../readabledocument.md), the default implementation returns [`readableContentTypes`](../readabledocument/readablecontenttypes.md).
 

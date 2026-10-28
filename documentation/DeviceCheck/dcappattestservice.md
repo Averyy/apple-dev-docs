@@ -30,7 +30,7 @@ class DCAppAttestService
 - [Establishing your app’s integrity](./establishing-your-app-s-integrity.md)
 - [Validating apps that connect to your server](./validating-apps-that-connect-to-your-server.md)
 
-#### Overview
+## Overview
 
 Use the [`shared`](./dcappattestservice/shared.md) instance of the [`DCAppAttestService`](./dcappattestservice.md) class to assert the legitimacy of a particular instance of your app to your server. After ensuring service availability by reading the [`isSupported`](./dcappattestservice/issupported.md) property, you use the service to:
 

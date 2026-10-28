@@ -19,7 +19,7 @@ The server is unable to provide a token because the internet isn’t available.
 static var networkError: AAAttributionError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 To receive an attribution token, you must have unimpeded internet access. Make sure you’re not using a simulator when generating a token.
 

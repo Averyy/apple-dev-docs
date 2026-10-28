@@ -22,7 +22,7 @@ nonisolated
 func italic(_ isActive: Bool = true) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A View with italic text.
 

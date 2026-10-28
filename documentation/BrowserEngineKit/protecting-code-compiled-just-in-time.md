@@ -5,7 +5,7 @@
 
 Toggle memory between being writable and executable.
 
-#### Overview
+## Overview
 
 A just-in-time (JIT) compiler poses unique security challenges. To prepare the compiled code, the web content extension must be able to write to a region of memory. Then, to run the code, the extension must be able to execute the content of that memory. But, an attacker can use memory that is both writable and executable to run arbitrary code in your process.
 
@@ -13,7 +13,7 @@ The system uses hardware memory management to enforce that a page of memory allo
 
 To toggle the writable or executable status of a memory page, your web content extension calls [`be_memory_inline_jit_restrict_rwx_to_rx_with_witness`](../BrowserEngineCore/be_memory_inline_jit_restrict_rwx_to_rx_with_witness.md), and [`be_memory_inline_jit_restrict_rwx_to_rw_with_witness`](../BrowserEngineCore/be_memory_inline_jit_restrict_rwx_to_rw_with_witness.md). You must call these functions only in certain restricted ways that are outlined below, to protect your process from possible malicious misuse.
 
-#### Add JIT entitlements
+## Add JIT entitlements
 
 Add the following entitlements to your web content extension’s target, setting their values to `true`:
 
@@ -22,7 +22,7 @@ Add the following entitlements to your web content extension’s target, setting
 
 > **Note**:  If you use `pthread_jit_write_with_callback_np()` to toggle JIT write protections for a memory region instead of `be_memory_inline_jit_restrict_rwx_to_rx_with_witness()`, add both the [`Allow execution of JIT-compiled code entitlement`](../BundleResources/entitlements/com.apple.security.cs.allow-jit.md) and `com.apple.security.cs.jit-write-allowlist` entitlements, each with the value `true`. For more information, see [Porting just-in-time compilers to Apple silicon](../apple-silicon/porting-just-in-time-compilers-to-apple-silicon.md).
 
-#### Adopt pointer authentication
+## Adopt pointer authentication
 
 When your app targets the `arm64e` instruction set, the [`be_memory_inline_jit_restrict_rwx_to_rw_with_witness`](../BrowserEngineCore/be_memory_inline_jit_restrict_rwx_to_rw_with_witness.md) function inserts a cryptographically signed pointer authentication code (PAC) into the pointer to your JIT memory. The system authenticates the PAC when your extension process jumps to the JIT-compiled code after you call `be_memory_inline_jit_restrict_rwx_to_rx_with_witness()`, and only runs the code if the PAC is still valid. Otherwise, it stops your extension process.
 
@@ -34,13 +34,13 @@ Additionally, your JIT compiler needs to emit `arm64e` code that uses PAC-protec
 
 For more information on pointer authentication, see [Improving control flow integrity with pointer authentication](../apple-silicon/improving-control-flow-integrity-with-pointer-authentication.md).
 
-#### Inline your memory-protection toggles
+## Inline your memory-protection toggles
 
 Your calls to `be_memory_inline_jit_restrict_rwx_to_rw_with_witness()` and its counterpart must be inlined into the critical section for your extension’s JIT compilation code, so they don’t provide an attacker with a general way to run arbitrary code while your JIT region is writable. An attacker might use a general PAC-signing mechanism to write and run instructions anywhere in your process’s memory.
 
 > ❗ **Important**:  The Swift attribute `@inlinable`, described in [Attributes](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes/), indicates that the compiler *can choose to* inline a function, but doesn’t guarantee that it does. `@inlinable` isn’t suitable for inlining calls to the memory protection toggle functions for JIT compilation.
 
-#### Avoid spilling variables to the stack
+## Avoid spilling variables to the stack
 
 Variables that your JIT code accesses between calls to the memory toggle functions must be in registers, or in heap memory that you access using PAC-protected pointers. Don’t rely on loop indexes or other variables that are in stack memory, because an attacker might gain control of the stack to change the behavior of your JIT compiler.
 

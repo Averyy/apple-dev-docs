@@ -24,11 +24,11 @@ func findAction(forAnswers answers: [AnyHashable : any NSObjectProtocol]) -> (an
 - (id<NSObject>) findActionForAnswers:(NSDictionary<id<NSObject>,id<NSObject>> *) answers;
 ```
 
-#### Return Value
+## Return Value
 
 The action object resulting from the decision-making process.
 
-#### Discussion
+## Discussion
 
 Actions can be any type of object relevant to your game; you define action objects when creating the tree. Typically, an action object is a string or simple value type identifying the result of the decision-making process in the context of your game.
 

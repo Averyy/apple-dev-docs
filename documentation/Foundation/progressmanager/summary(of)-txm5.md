@@ -21,11 +21,11 @@ Returns a summary for a custom unsigned integer property across the progress sub
 final func summary<P>(of property: KeyPath<ProgressManager.Properties, P.Type>) -> P.Summary where P : ProgressManager.Property, P.Summary == UInt64, P.Value == UInt64
 ```
 
-#### Return Value
+## Return Value
 
 An `UInt64` summary value for the specified property.
 
-#### Discussion
+## Discussion
 
 This method aggregates the values of a custom unsigned integer property from this progress manager and all its children, returning a consolidated summary value.
 

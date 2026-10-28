@@ -21,7 +21,7 @@ var menuState: AVLegibleMediaOptionsMenuState { get }
 @property (nonatomic, readonly) AVLegibleMediaOptionsMenuState menuState;
 ```
 
-#### Discussion
+## Discussion
 
 The current of the legible media options menu.
 

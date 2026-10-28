@@ -19,11 +19,11 @@ optional func menu(for menu: FIMenuKind) -> NSMenu?
 - (NSMenu *) menuForMenuKind:(FIMenuKind) menu;
 ```
 
-#### Return Value
+## Return Value
 
 A custom menu.
 
-#### Discussion
+## Discussion
 
 Override this method to provide custom menus in the Finder. You can customize this menu based both on the menu’s kind and on the selected and targeted items (if any). You can get the selected and targeted items from the extension’s [`FIFinderSyncController`](../fifindersynccontroller.md).
 

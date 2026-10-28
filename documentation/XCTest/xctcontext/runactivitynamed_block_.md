@@ -17,7 +17,7 @@ Creates and runs an activity with the provided block of code.
 - [Adding Attachments to Tests, Activities, and Issues](../adding-attachments-to-tests-activities-and-issues.md)
 - [Grouping Tests into Substeps with Activities](../grouping-tests-into-substeps-with-activities.md)
 
-#### Discussion
+## Discussion
 
 Run a block of code as a named substep in a test. For more information, see [Grouping Tests into Substeps with Activities](../grouping-tests-into-substeps-with-activities.md).
 

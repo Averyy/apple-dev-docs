@@ -9,7 +9,7 @@ Access and modify DOM elements within a webpage, including touch events and visu
 - Safari Desktop 9.0+
 - Safari Mobile 9.0+
 
-#### Overview
+## Overview
 
 > **Note**: This document was previously titled *Safari DOM Extensions Reference*.
 

@@ -12,7 +12,7 @@ Asserts that two expressions don’t have the same value.
 #define XCTAssertNotEqual(expression1, expression2, ...)
 ```
 
-#### Discussion
+## Discussion
 
 Generates a failure when `expression1 == expression2`.
 

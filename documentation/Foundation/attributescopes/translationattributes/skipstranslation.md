@@ -21,7 +21,7 @@ An attribute that marks portions of an attributed string to be excluded from tra
 let skipsTranslation: AttributeScopes.TranslationAttributes.SkipTranslationAttribute
 ```
 
-#### Discussion
+## Discussion
 
 Use this to exclude specific text ranges within an [`AttributedString`](../../attributedstring.md) from translation, such as proper nouns, brand names, technical terms, or other content that should remain unchanged across different languages.
 

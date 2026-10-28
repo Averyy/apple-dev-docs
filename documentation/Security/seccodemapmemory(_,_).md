@@ -20,11 +20,11 @@ func SecCodeMapMemory(_ code: SecStaticCode, _ flags: SecCSFlags) -> OSStatus
 OSStatus SecCodeMapMemory(SecStaticCodeRef code, SecCSFlags flags);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function is for the use of code hosts that use memory mapping to manage their own code. The kernel takes the signing information attached to the code on disk specified by the `code` parameter and attaches it to the memory object. After that, it uses the signature to validate memory page-ins, updating the dynamic validity status accordingly. You can use the [`SecCodeCopySigningInformation(_:_:_:)`](./seccodecopysigninginformation%28_,_,_%29.md) function to check the code’s dynamic validity status. The attachment of the signature to the memory object affects all processes that have the main executable of this code mapped.
 

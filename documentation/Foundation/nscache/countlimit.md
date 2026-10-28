@@ -25,7 +25,7 @@ var countLimit: Int { get set }
 @property NSUInteger countLimit;
 ```
 
-#### Discussion
+## Discussion
 
 If `0`, there is no count limit. The default value is `0`.
 

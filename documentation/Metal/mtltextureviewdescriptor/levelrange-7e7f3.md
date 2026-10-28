@@ -18,7 +18,7 @@
 @property (nonatomic, readwrite) NSRange levelRange;
 ```
 
-#### Discussion
+## Discussion
 
 A desired range of mip levels of a texture view.
 

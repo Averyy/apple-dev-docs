@@ -23,7 +23,7 @@ string deliveryStatus
 - `UNDELIVERED_SERVER_OUTAGE`: The app didn’t deliver the In-App Purchase due to a server outage.
 - `UNDELIVERED_OTHER`: The app didn’t deliver the In-App Purchase for other reasons.
 
-#### Discussion
+## Discussion
 
 Use these delivery status values in the [`ConsumptionRequest`](./consumptionrequest.md) request body.
 

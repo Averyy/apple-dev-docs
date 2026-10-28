@@ -20,7 +20,7 @@ var scriptErrorNumber: Int { get set }
 @property NSInteger scriptErrorNumber;
 ```
 
-#### Discussion
+## Discussion
 
 If you override [`performDefaultImplementation()`](./performdefaultimplementation%28%29.md) and an error occurs, you should call this method to supply an appropriate error number. In fact, any script handler should call this method when an error occurs. The error number you supply is returned in the reply Apple event.
 

@@ -21,7 +21,7 @@ init(teamInitials: String)
 - (instancetype) initWithTeamInitials:(NSString *) teamInitials;
 ```
 
-#### Discussion
+## Discussion
 
 A maximum of 3 characters may be displayed for the team initials.
 

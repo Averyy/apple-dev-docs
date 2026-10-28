@@ -13,11 +13,11 @@ virtual bool requestTerminate(
  IOOptionBitsoptions );
 ```
 
-#### Return Value
+## Return Value
 
 `true` if this object should be terminated now that its provider has been.
 
-#### Overview
+## Overview
 
 When an IOService is made inactive the default behavior is to also make any of its clients that have it as their only provider also inactive, in this way recursing the termination up the driver stack. This method allows an IOService object to override this behavior. Returning `true` from this method when passed a just terminated provider will cause the client to also be terminated.
 

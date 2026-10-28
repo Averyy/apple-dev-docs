@@ -26,7 +26,7 @@ func close() async -> Bool
 - (void) closeWithCompletionHandler:(void (^)(BOOL success)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You call this method to begin the sequence of method calls that saves a document safely and asynchronously. The file-system location of the document derives from the [`fileURL`](./fileurl.md) property. After the save operation concludes, the code in `completionHandler` is executed. In this code, you can close the document — for example, by removing the document’s view from the screen. Additionally, if the save operation didn’t succeed (`success` is [`false`](../../Swift/false.md)), you can respond in an appropriate manner.
 

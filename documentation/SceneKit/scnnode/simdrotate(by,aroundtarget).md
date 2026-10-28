@@ -25,7 +25,7 @@ func simdRotate(by worldRotation: simd_quatf, aroundTarget worldTarget: simd_flo
 - (void) simdRotateBy:(simd_quatf) worldRotation aroundTarget:(simd_float3) worldTarget;
 ```
 
-#### Discussion
+## Discussion
 
 The effects of this method are animatable; that is, calling this method during an implicit-animation transaction animates the rotation effect. (See [Animating SceneKit Content](../animating-scenekit-content.md).)
 

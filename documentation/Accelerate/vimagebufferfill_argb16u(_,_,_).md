@@ -25,11 +25,11 @@ func vImageBufferFill_ARGB16U(_ dest: UnsafePointer<vImage_Buffer>, _ color: Uns
 vImage_Error vImageBufferFill_ARGB16U(const vImage_Buffer *dest, const Pixel_ARGB_16U color, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The following code fills the buffer with the specified color:
 

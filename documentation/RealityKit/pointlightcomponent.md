@@ -24,7 +24,7 @@ struct PointLightComponent
 
 - [Automatically animating RealityKit entities](./automatically-animating-realitykit-entities.md)
 
-#### Overview
+## Overview
 
 The strength of a point light depends on a combination of its [`intensity`](./pointlightcomponent/intensity.md) and [`attenuationRadius`](./pointlightcomponent/attenuationradius.md). The default values for these properties make this light comparable to high-power streetlights, or outdoor floodlights.
 
@@ -59,7 +59,7 @@ The point light illuminates entities based on its distance from them. Here is a 
 
 > **Note**: The green dot in the above illustrations is only a visual representation of the light’s position.
 
-#### Dynamic light capacity
+## Dynamic light capacity
 
 On older hardware, only a limited number of dynamic lights can affect each object. Devices that support `MTLGPUFamily.apple6` or later lift this limit.
 

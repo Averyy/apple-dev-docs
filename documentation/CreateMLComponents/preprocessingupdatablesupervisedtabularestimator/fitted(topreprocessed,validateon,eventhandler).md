@@ -21,7 +21,7 @@ Fits a composed transformer to a data frame of examples.
 func fitted(toPreprocessed preprocessedInput: DataFrame, validateOn preprocessedValidation: DataFrame?, eventHandler: EventHandler? = nil) async throws -> PreprocessingUpdatableSupervisedTabularEstimator<Preprocessor, Estimator>.Transformer
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

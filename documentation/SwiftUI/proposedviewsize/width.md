@@ -21,7 +21,7 @@ The proposed horizontal size measured in points.
 var width: CGFloat?
 ```
 
-#### Discussion
+## Discussion
 
 A value of `nil` represents an unspecified width proposal, which a view interprets to mean that it should use its ideal width.
 

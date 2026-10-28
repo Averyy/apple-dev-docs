@@ -17,7 +17,7 @@ Factory for creating new LLMs.
 final class LLMModelFactory
 ```
 
-#### Overview
+## Overview
 
 Callers can use the `shared` instance or create a new instance if custom configuration is required.
 

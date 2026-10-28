@@ -24,7 +24,7 @@ var hasAction: Bool { get set }
 @property (nonatomic) BOOL hasAction;
 ```
 
-#### Discussion
+## Discussion
 
 Assign [`false`](../../Swift/false.md) to this property to hide the alert button or slider. (This effect requires [`alertBody`](./alertbody.md) to be non-`nil`.) The default value is [`true`](../../Swift/true.md).
 

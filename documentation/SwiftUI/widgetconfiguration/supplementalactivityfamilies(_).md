@@ -17,7 +17,7 @@ Sets the sizes that a Live Activity supports.
 @preconcurrency func supplementalActivityFamilies(_ families: [ActivityFamily]) -> some WidgetConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 For more information, refer to `WidgetKit/ActivityFamily`
 

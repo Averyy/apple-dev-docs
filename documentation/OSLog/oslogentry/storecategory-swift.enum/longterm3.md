@@ -25,7 +25,7 @@ case longTerm3
 OSLogEntryStoreCategoryLongTerm3
 ```
 
-#### Discussion
+## Discussion
 
 It was persisted in the filesystem-backed date store, and rotation of these entries was based on both time and space considerations.
 

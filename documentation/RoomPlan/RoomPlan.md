@@ -11,7 +11,7 @@ Create a 3D model of a room by interactively guiding people to scan their physic
 - iPadOS 16.0+
 - Mac Catalyst 16.0+
 
-#### Overview
+## Overview
 
 Use RoomPlan to create a 3D model of an interior room. The framework uses a device’s sensors, trained ML models, and RealityKit’s rendering capabilities to capture the physical surroundings of an interior room. For example, the framework inspects a device’s camera feed and LiDAR readings to identify walls, windows, openings, and doors. RoomPlan also recognizes room features, furniture, and appliances, such as a fireplace, bed, or refrigerator, and provides that information to the app.
 
@@ -26,7 +26,7 @@ When the app determines that the current scan is complete, the view displays a s
 
 Alternatively, your app can display custom graphics during the scanning process by creating and using a scan session object ([`RoomCaptureSession`](./roomcapturesession.md)) directly.
 
-##### Access the captured results
+### Access the captured results
 
 The framework outputs a scan as *parametric* data, which makes it easy for your app to modify the scanned room’s individual components. RoomPlan also provides the results in various Universal Scene Description (USD) formats. With these assets, your app can implement custom features, such as the following:
 
@@ -36,7 +36,7 @@ The framework outputs a scan as *parametric* data, which makes it easy for your 
 
 ![An illustration of a scanned room showing its data representations. From the left, the illustration shows a small scale 3D version of a scanned room. Three arrows flow to the right. The top arrow points to a house icon and four 2D images of floor plans with rulers that measure objects in the floor plans. The middle arrow points to an icon of a shopping cart and an iPhone in portrait mode that displays a furniture catalog with tables, a lamp, and chairs. Next to the phone is a copy of the small scale 3D version of a scanned room that includes a highlighted virtual table from the catalog. The bottom arrow points to an icon of a game controller and an iPhone in landscape mode that displays a 3D game version of the scanned room.](https://developer.apple.com/tutorials/images/com.apple.RoomPlan/roomplan-hero-2@2x.png)
 
-##### Process scan results on macOS with Mac Catalyst
+### Process scan results on macOS with Mac Catalyst
 
 Mac apps built with Mac Catalyst can access [`CapturedRoom`](./capturedroom.md) and [`CapturedStructure`](./capturedstructure.md) and can perform encoding, decoding, and exporting. Environment scanning relies on a camera, LiDAR, and other sensors that support augmented reality on iOS and iPad OS devices. However, macOS apps built with Mac Catalyst can process the results of room-capture sessions performed on those devices. RoomPlan ignores all capture-session-related calls on macOS apps built with Mac Catalyst.
 

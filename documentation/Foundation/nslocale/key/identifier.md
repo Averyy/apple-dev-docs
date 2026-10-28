@@ -25,7 +25,7 @@ static let identifier: NSLocale.Key
 extern NSLocaleKey const NSLocaleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSString` object; for example, `"en_GB"`, `"es_ES_PREEURO"`, or `"zh-Hant_HK_POSIX@collation=pinyin;currency=CNY"`.
 

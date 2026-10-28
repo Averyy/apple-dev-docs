@@ -23,11 +23,11 @@ func IOConnectUnmapMemory(_ connect: io_connect_t, _ memoryType: UInt32, _ fromT
 kern_return_t IOConnectUnmapMemory(io_connect_t connect, uint32_t memoryType, task_port_t fromTask, mach_vm_address_t atAddress);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 This is a generic method to remove a mapping in the callers task.
 

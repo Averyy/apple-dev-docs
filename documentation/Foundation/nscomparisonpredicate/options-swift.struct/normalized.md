@@ -25,7 +25,7 @@ static var normalized: NSComparisonPredicate.Options { get }
 NSNormalizedPredicateOption
 ```
 
-#### Discussion
+## Discussion
 
 This option supersedes `NSCaseInsensitivePredicateOption` and `NSDiacriticInsensitivePredicateOption`, and is a performance optimization option.
 

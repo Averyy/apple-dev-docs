@@ -15,7 +15,7 @@ ATADeviceNub is a concrete implementation of IOATADevice.
 class ATADeviceNub : IOATADevice
 ```
 
-#### Overview
+## Overview
 
 clients of IOATA (disk drivers) should use the interface presented by IOATADevice. Concrete nubs are private to the IOATA family and specific subclasses of IOATADevice are instantiated by controller drivers to provide the abstract interface to clients.
 

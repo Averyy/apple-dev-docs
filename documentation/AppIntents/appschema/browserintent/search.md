@@ -21,7 +21,7 @@ An intent schema that searches for the given string on the web.
 var search: some AppSchemaIntent { get }
 ```
 
-#### Discussion
+## Discussion
 
 To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `browser` domain and one of your app’s actions matches the `search` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .browser.search)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 

@@ -21,7 +21,7 @@ var allowsPickingMultipleItems: Bool { get set }
 @property (nonatomic) BOOL allowsPickingMultipleItems;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the media item picker allows the selection of multiple media items. When set to [`false`](../../Swift/false.md), the media picker only allows the selection of a single media item. The label for the button that dismisses the picker is “Done” when this value is [`true`](../../Swift/true.md) and “Cancel” when it’s [`false`](../../Swift/false.md).
 

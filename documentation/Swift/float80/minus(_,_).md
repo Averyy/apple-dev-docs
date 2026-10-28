@@ -15,7 +15,7 @@ Subtracts one value from another and produces their difference, rounded to a rep
 static func - (lhs: Float80, rhs: Float80) -> Float80
 ```
 
-#### Discussion
+## Discussion
 
 The subtraction operator (`-`) calculates the difference of its two arguments. For example:
 

@@ -27,7 +27,7 @@ func BNNSDirectApplyActivationBatch(_ layer_params: UnsafePointer<BNNSLayerParam
 int BNNSDirectApplyActivationBatch(const BNNSLayerParametersActivation *layer_params, const BNNSFilterParameters *filter_params, size_t batch_size, size_t in_stride, size_t out_stride);
 ```
 
-#### Discussion
+## Discussion
 
 Calling this function is equal to calling [`BNNSFilterCreateLayerActivation(_:_:)`](./bnnsfiltercreatelayeractivation%28_,_%29.md), [`BNNSFilterApplyBatch(_:_:_:_:_:_:)`](./bnnsfilterapplybatch%28_,_,_,_,_,_%29.md), and [`BNNSFilterDestroy(_:)`](./bnnsfilterdestroy%28_%29.md).
 

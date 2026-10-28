@@ -24,7 +24,7 @@ func JSObjectSetPropertyAtIndex(_ ctx: JSContextRef!, _ object: JSObjectRef!, _ 
 void JSObjectSetPropertyAtIndex(JSContextRef ctx, JSObjectRef object, unsigned int propertyIndex, JSValueRef value, JSValueRef*exception);
 ```
 
-#### Discussion
+## Discussion
 
 Calling [`JSObjectSetPropertyAtIndex(_:_:_:_:_:)`](./jsobjectsetpropertyatindex%28_,_,_,_,_%29.md) is equivalent to calling [`JSObjectSetProperty(_:_:_:_:_:_:)`](./jsobjectsetproperty%28_,_,_,_,_,_%29.md) with a string that contain `propertyIndex`, but [`JSObjectSetPropertyAtIndex(_:_:_:_:_:)`](./jsobjectsetpropertyatindex%28_,_,_,_,_%29.md) provides optimized access to numeric properties.
 

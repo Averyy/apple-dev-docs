@@ -19,7 +19,7 @@ class func local() throws -> Self
 + (instancetype) localStoreAndReturnError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Gaining access to the local unified logging system requires permission from the system. The caller must be run by an admin account and have the `com.apple.logging.local-store` entitlement.
 

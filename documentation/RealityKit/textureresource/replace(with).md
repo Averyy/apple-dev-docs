@@ -21,7 +21,7 @@ Replaces a texture resource with a low-level texture.
 @preconcurrency func replace(with texture: LowLevelTexture)
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: It’s more efficient to use [`replace(using:)`](../lowleveltexture/replace%28using%29.md) to update a [`LowLevelTexture`](../lowleveltexture.md) on the GPU than it is to update the `TextureResource`. Prefer to update the `LowLevelTexture` directly instead.
 

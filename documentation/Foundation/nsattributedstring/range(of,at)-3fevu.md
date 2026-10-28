@@ -19,7 +19,7 @@ func range(of table: NSTextTable, at location: Int) -> NSRange
 - (NSRange) rangeOfTextTable:(NSTextTable *) table atIndex:(NSUInteger) location;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the range of `table` that contains `location`.
 

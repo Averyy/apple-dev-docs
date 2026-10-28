@@ -25,7 +25,7 @@ func getCharacters(_ buffer: UnsafeMutablePointer<unichar>, range: NSRange)
 - (void) getCharacters:(unichar *) buffer range:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 This method does not add a `NULL` character.
 

@@ -27,7 +27,7 @@ var accelerometerData: CMAccelerometerData? { get }
 
 - [Getting raw accelerometer events](../getting-raw-accelerometer-events.md)
 
-#### Discussion
+## Discussion
 
 If no accelerometer data is available, the value of this property is `nil`. An app that is receiving accelerometer data after calling [`startAccelerometerUpdates()`](./startaccelerometerupdates%28%29.md) periodically checks the value of this property and processes the acceleration data.
 

@@ -25,7 +25,7 @@ func add(_ delegate: any MTRDeviceDelegate, queue: dispatch_queue_t, interestedP
 - (void) addDelegate:(id<MTRDeviceDelegate>) delegate queue:(dispatch_queue_t) queue interestedPathsForAttributes:(NSArray *) interestedPathsForAttributes interestedPathsForEvents:(NSArray *) interestedPathsForEvents;
 ```
 
-#### Discussion
+## Discussion
 
 interestedPathsForAttributes may contain either MTRClusterPath or MTRAttributePath to specify interested clusters and attributes, or NSNumber for endpoints.
 

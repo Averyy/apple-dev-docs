@@ -23,7 +23,7 @@ string bulletPointText
 
 **Maximum Length**: `66`
 
-#### Discussion
+## Discussion
 
 The bullet point text is one element of a [`BulletPoint`](./bulletpoint.md).
 

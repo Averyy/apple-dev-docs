@@ -21,7 +21,7 @@ var localizedName: String { get }
 @property (nonatomic, readonly) NSString * localizedName;
 ```
 
-#### Discussion
+## Discussion
 
 This value matches the [`localizedName`](../../AVFoundation/avcapturedevice/localizedname.md) of the camera it describes.
 

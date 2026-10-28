@@ -5,7 +5,7 @@
 
 Create, send, and receive user activities directly.
 
-#### Overview
+## Overview
 
 Use Handoff to transfer activities the user starts on one iOS, watchOS, or macOS device to a different device. For example, a vector graphics app on macOS can send details about an in-progress editing action to the user’s iPhone so that editing can continue there.
 
@@ -19,7 +19,7 @@ You implement Handoff in your app by:
 
 > ❗ **Important**:  To handoff between apps on different platforms, your apps must share the same developer Team ID. This means you must either distribute your apps through the App Store, or sign them with the same credentials.
 
-##### Declare Handoff Activities in Your App’s Info.plist
+### Declare Handoff Activities in Your App’s Info.plist
 
 Start by identifying which activities make sense to use with Handoff. Choose activities that represent what the user is doing at some point in time, like creating a shape or editing document properties. Choose a universally-unique identifier string for each of your activities, using a reverse-DNS pattern, like `com.example.app.activity-name`.
 
@@ -38,7 +38,7 @@ Your app doesn’t need to send and receive the same set of identifiers on all p
 
 Your app can have many activities, each of which has different details to send to Handoff. Identify what information you’ll need to recreate the activity on the receiving device. Be careful to only include the transient details of the user activity, and not any information that the app needs to store permanently. For example, if a user is working on a document, the activity should indicate the document—and possibly what part of the document—the user is editing. Don’t include the document itself as part of the activity, since the user could launch your app without Handoff, such as by tapping or clicking its app icon. Instead, use techniques like iCloud Drive to share documents between the user’s devices.
 
-##### Create User Activity Objects
+### Create User Activity Objects
 
 At runtime, create instances of [`NSUserActivity`](./nsuseractivity.md) for each of your app’s activities. Use the same identifier strings that you used in the `Info.plist` to indicate which activities your app can continue.
 
@@ -53,7 +53,7 @@ activity.title = NSLocalizedString("Creating shape", comment: "Creating shape ac
 
 The [`NSResponder`](../AppKit/nsresponder.md) (macOS) and [`UIResponder`](../UIKit/uiresponder.md) (iOS) classes define a [`userActivity`](../UIKit/uiresponder/useractivity.md) property. Since [`NSViewController`](../AppKit/nsviewcontroller.md) and [`UIViewController`](../UIKit/uiviewcontroller.md) are subclasses of these responder types, you can set this property to represent the activity the controller is managing. Your app can share a single activity across multiple view controllers. Conversely, if a single view controller supports multiple activities, you can reassign the view controller’s [`userActivity`](../UIKit/uiresponder/useractivity.md) to different [`NSUserActivity`](./nsuseractivity.md) instances as needed.
 
-##### Update Activities While the User is Active
+### Update Activities While the User is Active
 
 As your user interacts with your app, update the user activity to save the state of their interaction. If you have set the [`userActivity`](../UIKit/uiresponder/useractivity.md) property of a responder, the system automatically calls its [`updateUserActivityState(_:)`](../UIKit/uiresponder/updateuseractivitystate%28_%29.md) (iOS) or [`updateUserActivityState(_:)`](../AppKit/nsresponder/updateuseractivitystate%28_%29.md) (macOS) method. Override this method to write new values to the activity’s [`userInfo`](./nsuseractivity/userinfo.md) dictionary.
 
@@ -73,7 +73,7 @@ override func updateUserActivityState(_ activity: NSUserActivity) {
 
 Transfer as small a payload in the [`userInfo`](./nsuseractivity/userinfo.md) as possible, keeping the total size under 3KB. If you must transfer more data than this, use continuation streams to connect the two devices directly (see Working with continuation streams).
 
-##### Receive User Activities in the Application Delegate
+### Receive User Activities in the Application Delegate
 
 When the user launches your app from Handoff on another device, the app receives callbacks to methods in its application delegate. You implement these methods to accept the activity and restore its state in your app.
 
@@ -96,7 +96,7 @@ func application(_ application: UIApplication, continue userActivity: NSUserActi
 
 ```
 
-##### Continue the Activity in Your App
+### Continue the Activity in Your App
 
 Each view controller provided to the completion handler in the previous step receives a call to its [`restoreUserActivityState(_:)`](../UIKit/uiresponder/restoreuseractivitystate%28_%29.md) (iOS), or [`restoreUserActivityState(_:)`](../AppKit/nsuseractivityrestoring/restoreuseractivitystate%28_%29.md) (macOS) method. Use this method to update the view controller’s state to match the state of the originating device. If you have several activity types, use the [`activityType`](./nsuseractivity/activitytype.md) to determine which activity you are handling. Then, get the values from the activity’s [`userInfo`](./nsuseractivity/userinfo.md) dictionary to update the view controller’s state.
 

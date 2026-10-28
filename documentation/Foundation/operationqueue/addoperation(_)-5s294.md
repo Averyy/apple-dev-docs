@@ -25,7 +25,7 @@ func addOperation(_ block: @escaping @Sendable () -> Void)
 - (void) addOperationWithBlock:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 This method adds a single block to the receiver by first wrapping it in an operation object. You should not attempt to get a reference to the newly created operation object or determine its type information.
 

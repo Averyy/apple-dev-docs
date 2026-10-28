@@ -5,11 +5,11 @@
 
 Add network credentials to the keychain on behalf of the user.
 
-#### Overview
+## Overview
 
 Use keychain services to enable simple, secure storage for users’ passwords. In this way you avoid repeatedly asking the user for a password, and you don’t have to implement your own encryption, which can be error prone.
 
-##### Get Set Up
+### Get Set Up
 
 To get started, define a structure to hold the credentials as they move around your app in memory:
 
@@ -36,7 +36,7 @@ Then, identify the server that your app is working with:
 static let server = "www.example.com"
 ```
 
-##### Create an add query
+### Create an add query
 
 Using an instance of the credentials structure and the server constant, you can create an add query:
 
@@ -57,7 +57,7 @@ Although not necessary in this case, you might further characterize the password
 
 Finally, the query contains the password from the user, encoded as a [`Data`](../Foundation/data.md) instance.
 
-##### Add the item
+### Add the item
 
 With the query complete, you simply feed it to the [`SecItemAdd(_:_:)`](./secitemadd%28_,_%29.md) function:
 
@@ -70,7 +70,7 @@ Although you typically ignore the return data supplied by reference in the secon
 
 > **Note**:  If you do want the return data, keep in mind that the [`SecItemAdd(_:_:)`](./secitemadd%28_,_%29.md) function behaves much like the [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) function in this regard. See [Searching for keychain items](./searching-for-keychain-items.md) for details.
 
-##### Ensure searchability
+### Ensure searchability
 
 To find the item later, use your knowledge of its attributes. In this example, the server and the account are the item’s distinguishing characteristics. For constant attributes (here, the server), use the same value during lookup. In contrast, the account attribute is dynamic, because it holds a value provided by the user at runtime. As long as your app never adds similar items with varying attributes (such as passwords for different accounts on the same server), you can omit these dynamic attributes as search parameters and instead retrieve them along with the item. As a result, when you look up the password, you also get the corresponding username. For more information on finding keychain items, see [Searching for keychain items](./searching-for-keychain-items.md).
 

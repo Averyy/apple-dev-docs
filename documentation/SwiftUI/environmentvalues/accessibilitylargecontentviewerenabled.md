@@ -21,7 +21,7 @@ Whether the Large Content Viewer is enabled.
 var accessibilityLargeContentViewerEnabled: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The system can automatically provide a large content view with [`accessibilityShowsLargeContentViewer()`](../view/accessibilityshowslargecontentviewer%28%29.md) or you can provide your own with [`accessibilityShowsLargeContentViewer(_:)`](../view/accessibilityshowslargecontentviewer%28_%29.md).
 

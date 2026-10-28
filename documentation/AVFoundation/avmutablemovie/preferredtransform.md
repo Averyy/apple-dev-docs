@@ -24,7 +24,7 @@ var preferredTransform: CGAffineTransform { get set }
 @property (nonatomic) CGAffineTransform preferredTransform;
 ```
 
-#### Discussion
+## Discussion
 
 The value is typically, but not always, the identity transform.
 

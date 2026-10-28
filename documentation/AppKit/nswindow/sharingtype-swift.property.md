@@ -19,7 +19,7 @@ var sharingType: NSWindow.SharingType { get set }
 @property NSWindowSharingType sharingType;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property represents the sharing level of the window’s content. See [`NSWindow.SharingType`](./sharingtype-swift.enum.md) for possible values.
 

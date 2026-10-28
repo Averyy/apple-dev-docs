@@ -20,7 +20,7 @@ A mode which computes the rotation target as absolute look-at.
 case absoluteLookAt(targetAxis: SIMD3<Float>)
 ```
 
-##### Demand target
+### Demand target
 
 - **Source**: The model space orientation of the constrained joint from the FK demands pose.
 - **Target**: The model space orientation aligning the associated `targetAxis` with the direction from the current model space joint position to [`lookAtTargetPosition`](../../../../ikcomponent/constraint/lookattargetposition.md).

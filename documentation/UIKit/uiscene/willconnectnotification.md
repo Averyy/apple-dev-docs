@@ -28,7 +28,7 @@ extern NSNotificationName const UISceneWillConnectNotification;
 
 - [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 
-#### Discussion
+## Discussion
 
 When the user or your app requests a new instance of your user interface, UIKit creates an appropriate [`UIScene`](../uiscene.md) object and places it in the [`object`](../../Foundation/nsnotification/object.md) property of the notification. Use this notification to respond to the addition of the new scene and to begin loading any data that the scene needs to display.
 

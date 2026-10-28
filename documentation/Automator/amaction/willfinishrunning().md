@@ -20,7 +20,7 @@ func willFinishRunning()
 - (void) willFinishRunning;
 ```
 
-#### Discussion
+## Discussion
 
 Overridde this method in actions that need to make asynchronous calls. Automator invokes this method when the action is about to complete its run phase.
 

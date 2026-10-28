@@ -19,7 +19,7 @@ nonisolated
 func inspectorColumnWidth(_ width: CGFloat) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Apply this modifier on the content of a [`inspector(isPresented:content:)`](./inspector%28ispresented,content%29.md) to specify a fixed preferred width for the trailing column. Use [`inspectorColumnWidth(min:ideal:max:)`](./inspectorcolumnwidth%28min,ideal,max%29.md) if you need to specify a flexible width.
 

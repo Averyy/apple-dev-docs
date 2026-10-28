@@ -21,7 +21,7 @@ class var maximumSectionCount: Int { get }
 @property (class, nonatomic, readonly) NSUInteger maximumSectionCount;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is dependent on any user interface limits that the vehicle imposes. See [`CPSessionConfiguration`](../cpsessionconfiguration.md) for more information. At runtime, use this value to determine the maximum number of sections that your list can display.
 

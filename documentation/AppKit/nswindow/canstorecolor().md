@@ -21,7 +21,7 @@ func canStoreColor() -> Bool
 - (BOOL) canStoreColor;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when the window’s depth limit allows it to store color values; otherwise, [`false`](../../Swift/false.md).
 

@@ -15,7 +15,7 @@ Tells the client when the scanner device receives the requested scan.
 - (void) scannerDevice:(ICScannerDevice *) scanner didScanToURL:(NSURL *) url data:(NSData *) data;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`selectedFunctionalUnit`](../icscannerdevice/selectedfunctionalunit.md) is a document feeder, then this message is sent once for each scanned page.
 

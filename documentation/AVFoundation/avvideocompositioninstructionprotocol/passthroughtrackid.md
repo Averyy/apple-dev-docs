@@ -25,7 +25,7 @@ var passthroughTrackID: CMPersistentTrackID { get }
 @property (nonatomic, readonly) CMPersistentTrackID passthroughTrackID;
 ```
 
-#### Discussion
+## Discussion
 
 If an instruction indicates to pass through a source frame without compositing, this property returns the corresponding track identifier. The compositor isn’t run for the duration of the instruction, and instead passes the source frame through to the output. The system automatically matches the required dimensions, clean aperture, and pixel aspect ratio values of the source buffer.
 

@@ -15,7 +15,7 @@ Specifies the kind of power to reserve.
 typedef enum USBPowerRequestTypes USBPowerRequestTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Use this to specify which kind of power to reserve using [`RequestExtraPower`](../iokit/iousbdeviceinterface942/api-2977169-requestextrapower.md) and [`ReturnExtraPower`](../iokit/iousbdeviceinterface942/api-2977171-returnextrapower.md).
 

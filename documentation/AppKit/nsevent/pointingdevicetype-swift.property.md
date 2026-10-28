@@ -19,7 +19,7 @@ var pointingDeviceType: NSEvent.PointingDeviceType { get }
 @property (readonly) NSPointingDeviceType pointingDeviceType;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the device could be a pen, eraser, or cursor pointing device. This property is valid for mouse events with subtype `NSTabletProximityEventSubtype` and for `NSTabletProximity` events. See `Getting Unicode Values` for descriptions of valid NSPointingDeviceType constants.
 

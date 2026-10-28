@@ -23,7 +23,7 @@ init(passThumbnail: CGImage, localizedDescription description: String)
 - (instancetype) initWithPassThumbnail:(CGImageRef) passThumbnail localizedDescription:(NSString *) description;
 ```
 
-#### Discussion
+## Discussion
 
 This method throws an `invalidInput` error if a JPKI applet doesn’t back the pass.
 

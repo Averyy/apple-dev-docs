@@ -23,7 +23,7 @@ case type24
 kSMPTETimeType24
 ```
 
-#### Discussion
+## Discussion
 
 24 video frames per second—standard for 16mm and 35mm film.
 

@@ -5,11 +5,11 @@
 
 In Swift Playgrounds 3.0 and later, mark up code zones to replace them with code that’s localized for the current user.
 
-#### Overview
+## Overview
 
 If you’re writing a playground book for distribution in multiple locales, you can localize the comments and string literals on each page using a comment syntax that delimits a zone for localization.
 
-##### Add Localization Delimiters
+### Add Localization Delimiters
 
 Specify the code you want to make localizable by wrapping it within a delimiter; for example:
 
@@ -31,7 +31,7 @@ let message = "/*#-localizable-zone(welcome2)*/Hello!/*#-end-localizable-zone*/"
 
 > ❗ **Important**: Only use localization delimiters to surround code comments and string literals. Doing so helps ensure that you don’t introduce locale-sensitive compilation errors.
 
-##### Create a Localization Strings File
+### Create a Localization Strings File
 
 When a user opens a page in your book, the system looks in the appropriate language directory (for example, the page’s `PrivateResources/de.lproj` directory for strings localized in German) for the `LocalizableCode.strings` file. It then matches the delimeters with their corresponding zone ID, and substitutes the text string in the page with the localized text.
 

@@ -20,7 +20,7 @@ struct CGWindowImageOption
 enum CGWindowImageOption : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 This type is used in conjunction with the constants described in [Window Image Types](./window-image-types.md).
 

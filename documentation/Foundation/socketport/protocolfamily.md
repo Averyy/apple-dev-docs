@@ -19,7 +19,7 @@ var protocolFamily: Int32 { get }
 @property (readonly) int protocolFamily;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are defined in `<sys/socket.h>`, such as `AF_LOCAL`, `AF_INET`, and `AF_INET6`.
 

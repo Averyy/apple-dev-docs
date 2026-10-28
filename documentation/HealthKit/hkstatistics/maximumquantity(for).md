@@ -24,7 +24,7 @@ func maximumQuantity(for source: HKSource) -> HKQuantity?
 - (HKQuantity *) maximumQuantityForSource:(HKSource *) source;
 ```
 
-#### Return Value
+## Return Value
 
 If both the [`discreteMax`](../hkstatisticsoptions/discretemax.md) option and the [`separateBySource`](../hkstatisticsoptions/separatebysource.md) option were set, this method returns a quantity object. This object contains the maximum value from all the samples that match the query and were created by the specified source. If the statistics options were not both set, this method returns `nil`.
 

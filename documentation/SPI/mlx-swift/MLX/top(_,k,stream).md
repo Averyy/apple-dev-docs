@@ -17,11 +17,11 @@ Returns the `k` largest elements from the flattened input along a given axis.
 func top(_ array: MLXArray, k: Int, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The elements will not necessarily be in sorted order.
 
-##### See Also
+### See Also
 
 - [Sorting](./sorting.md)
 - [`top(_:k:axis:stream:)`](./top%28_,k,axis,stream%29.md)

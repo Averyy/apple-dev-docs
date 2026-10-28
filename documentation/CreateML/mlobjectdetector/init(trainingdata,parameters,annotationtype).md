@@ -15,7 +15,7 @@ Creates an object detector with a data source.
 init(trainingData: MLObjectDetector.DataSource, parameters: MLObjectDetector.ModelParameters = .init(), annotationType: MLObjectDetector.AnnotationType) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an object detector with an [`MLObjectDetector.DataSource`](./datasource.md).
 

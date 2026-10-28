@@ -15,7 +15,7 @@ Adapt a platformer game for RealityKit’s powerful ECS and modularity.
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample project demonstrates a cross-platform 3D platformer game implemented in two ways: one using the SceneKit framework, and another built with the RealityKit framework. By seeing both versions side by side, you can directly compare implementation approaches and understand the migration path from SceneKit to RealityKit.
 
@@ -33,7 +33,7 @@ Whether you’re maintaining an existing SceneKit project or planning a new 3D e
 
 > **Note**: This article and sample code project are associated with WWDC25 session 288: [Bring your SceneKit projects to RealityKit](https://developer.apple.com/videos/play/wwdc2025/288/).
 
-#### Understand SceneKit deprecation
+## Understand SceneKit deprecation
 
 SceneKit is soft-deprecated. This means that your existing apps and games continue to work, and you aren’t required to take immediate action.
 
@@ -44,7 +44,7 @@ But the implications of any deprecation, however soft, are still significant:
 
 For any project with a long-term vision, or for those looking to harness the latest innovations, migrate to another native framework like RealityKit.
 
-#### Design modular Swift packages
+## Design modular Swift packages
 
 The core architectural strength of RealityKit comes from its modular design, which you can leverage through Swift packages. Each package encapsulates specific functionality, making the codebase more maintainable, testable, and reusable. This approach aligns perfectly with RealityKit’s ECS architecture:
 
@@ -52,7 +52,7 @@ The core architectural strength of RealityKit comes from its modular design, whi
 - **Components** hold pure data, defining properties or state.
 - **Systems** encapsulate all the logic, operating on entities with specific components.
 
-##### Explore key packages in the sample project
+### Explore key packages in the sample project
 
 The sample project demonstrates how to organize RealityKit functionality into cohesive, reusable Swift packages:
 
@@ -66,7 +66,7 @@ The sample project demonstrates how to organize RealityKit functionality into co
 
 This modular approach enables clean separation of concerns, promotes code reusability, and makes complex systems more understandable and maintainable.
 
-##### Implement character movement and input handling
+### Implement character movement and input handling
 
 The `CharacterMovement` package provides a flexible system for controlling character movement in 3D space, supporting multiple input methods across different platforms. This package simplifies one of the most complex aspects of migrating from SceneKit: implementing responsive character controls.
 
@@ -119,7 +119,7 @@ This package enables the main character, Max, to move around the scene, and anim
 
 [Video: A character in a volcanic environment moving in sync with an on-screen joystick controller input.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/pp-charactermovement.mov)
 
-##### Configure camera management
+### Configure camera management
 
 With most platforms, you can add a camera component, such as `PerspectiveCameraComponent`, to an entity to change the perspective, but this isn’t possible on visionOS because the person wearing an Apple Vision Pro is the camera. To get around this factor, the app instead moves the world and physics simulation root entities around the wearer.
 
@@ -160,7 +160,7 @@ This approach ensures that on platforms like iOS and macOS, the camera moves aro
 
 > ❗ **Important**: On visionOS, moving either the world or the camera in a fully immersive space can be disorienting for people. Use this technique primarily for experiences with finite bounds, such as volumes, portals, windows, or immersive spaces that aren’t fully immersive. When implementing such camera or world movements, keep transitions smooth and predictable to maintain comfort.
 
-##### Create enemy AI and agency
+### Create enemy AI and agency
 
 The `AgentComponent` package adds autonomous behavior to enemy entities, allowing them to chase or flee from the player character.
 
@@ -192,7 +192,7 @@ chasing.components.set(chasingComponent)
 
 [Video: A character moving around in a volcanic environment, with the perspective smoothly following them.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/pp-agencycomponent.mov)
 
-#### Convert SceneKit assets to USD
+## Convert SceneKit assets to USD
 
 When migrating from SceneKit to RealityKit, asset conversion is a critical step. When building a RealityKit app, Universal Scene Description (USD) is the format of choice for 3D content across all Apple platforms.
 
@@ -214,7 +214,7 @@ If you have a separate SCN file, which contains animation data, you can append t
 xcrun scntool --convert max.scn --format usdz --append-animation max_spin.scn
 ```
 
-#### Implement Portrait mode for immersive spaces on visionOS
+## Implement Portrait mode for immersive spaces on visionOS
 
 The RealityKit version of the sample demonstrates how to leverage visionOS-specific features to enhance immersive experiences, particularly through the use of immersive spaces with Portrait mode.
 
@@ -247,7 +247,7 @@ ImmersiveSpace(id: appModel.immersiveSpaceID) {
 
 This implementation preserves the person’s awareness of their physical environment when playing the game, while still making the experience immersive.
 
-#### Handle hardware compatibility
+## Handle hardware compatibility
 
 RealityKit is built for modern hardware, with capabilities that may exceed what older devices can handle. The sample shows you how to gracefully handle hardware compatibility:
 

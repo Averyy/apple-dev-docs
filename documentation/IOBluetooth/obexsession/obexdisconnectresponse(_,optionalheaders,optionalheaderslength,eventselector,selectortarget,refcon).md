@@ -19,7 +19,7 @@ func obexDisconnectResponse(_ inResponseOpCode: OBEXOpCode, optionalHeaders inOp
 - (OBEXError) OBEXDisconnectResponse:(OBEXOpCode) inResponseOpCode optionalHeaders:(void *) inOptionalHeaders optionalHeadersLength:(size_t) inOptionalHeadersLength eventSelector:(SEL) inSelector selectorTarget:(id) inTarget refCon:(void *) inUserRefCon;
 ```
 
-#### Discussion
+## Discussion
 
 A NULL selector or target will result in an error. After return, the data passed in will have been sent over the underlying OBEX transport. You will receive any responses to your command response on your selector.
 

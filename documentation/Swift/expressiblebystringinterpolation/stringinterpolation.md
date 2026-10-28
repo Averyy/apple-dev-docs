@@ -22,7 +22,7 @@ The type each segment of a string literal containing interpolations should be ap
 associatedtype StringInterpolation : StringInterpolationProtocol = DefaultStringInterpolation where Self.StringLiteralType == Self.StringInterpolation.StringLiteralType
 ```
 
-#### Discussion
+## Discussion
 
 The `StringLiteralType` of an interpolation type must match the `StringLiteralType` of the conforming type.
 

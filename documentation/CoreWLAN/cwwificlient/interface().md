@@ -19,7 +19,7 @@ func interface() -> CWInterface?
 - (CWInterface *) interface;
 ```
 
-#### Return Value
+## Return Value
 
 The [`CWInterface`](../cwinterface.md) object that represents the default Wi-Fi interface.
 

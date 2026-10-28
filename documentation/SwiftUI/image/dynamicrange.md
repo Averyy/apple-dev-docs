@@ -20,7 +20,7 @@ The range of brightness that an image is allowed to draw.
 struct DynamicRange
 ```
 
-#### Overview
+## Overview
 
 A high dynamic range image stores highlights brighter than white. Pass a value of this type to [`allowedDynamicRange(_:)`](./alloweddynamicrange%28_%29.md) to say how much of that extra brightness reaches the display:
 

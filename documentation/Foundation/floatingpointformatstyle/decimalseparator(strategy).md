@@ -21,11 +21,11 @@ Modifies the format style to use the specified decimal separator display strateg
 func decimalSeparator(strategy: FloatingPointFormatStyle<Value>.Configuration.DecimalSeparatorDisplayStrategy) -> FloatingPointFormatStyle<Value>
 ```
 
-#### Return Value
+## Return Value
 
 A floating-point format style modified to use the specified decimal separator display strategy.
 
-#### Discussion
+## Discussion
 
 The following example creates a default [`FloatingPointFormatStyle`](../floatingpointformatstyle.md) for the `en_US` locale, and a second style that uses the [`always`](../numberformatstyleconfiguration/decimalseparatordisplaystrategy/always.md) strategy. It then applies each style to an array of floating-point values that don’t have a fractional part. The formatting that the modified style applies adds a trailing decimal separator in all cases.
 

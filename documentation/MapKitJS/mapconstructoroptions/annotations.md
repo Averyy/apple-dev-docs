@@ -15,7 +15,7 @@ An array holding all the annotations on the map.
 annotations?: Annotation[];
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `[]` (empty array).
 

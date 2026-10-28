@@ -21,7 +21,7 @@ A QUIC connection’s maximum DATAGRAM frame size.
 var maxDatagramFrameSize: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the value of the `max_datagram_frame_size` transport parameter.
 

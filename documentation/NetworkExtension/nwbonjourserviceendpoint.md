@@ -26,7 +26,7 @@ class NWBonjourServiceEndpoint
 @interface NWBonjourServiceEndpoint : NWEndpoint
 ```
 
-#### Overview
+## Overview
 
 For example, the Bonjour service `MyMusicStudio._music._tcp.local.` has the name `"MyMusicStudio"`, the type `"_music._tcp"`, and the domain `"local"`.
 

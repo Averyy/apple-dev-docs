@@ -19,7 +19,7 @@ A configuration of a webpage for a representation as image data.
 static func image(region: WebPage.ExportedContentConfiguration.Region = .contents, allowTransparentBackground: Bool = false, snapshotWidth: CGFloat? = nil, afterScreenUpdates: Bool = true) -> WebPage.ExportedContentConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 The image configuration of this page that will be used when producing its representation.
 

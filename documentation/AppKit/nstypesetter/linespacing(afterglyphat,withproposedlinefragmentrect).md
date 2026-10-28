@@ -19,11 +19,11 @@ func lineSpacing(afterGlyphAt glyphIndex: Int, withProposedLineFragmentRect rect
 - (CGFloat) lineSpacingAfterGlyphAtIndex:(NSUInteger) glyphIndex withProposedLineFragmentRect:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 The line spacing in effect following the glyph at `glyphIndex`.
 
-#### Discussion
+## Discussion
 
 The [`NSATSTypesetter`](../nsatstypesetter.md) calls this method to determine the number of points of space to include below the descenders in the used rectangle for the proposed line fragment rectangle `rect`.
 

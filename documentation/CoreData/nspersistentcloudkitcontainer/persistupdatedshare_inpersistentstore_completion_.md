@@ -21,7 +21,7 @@ Saves the share record and schedules it for export to iCloud.
 - (void) persistUpdatedShare:(CKShare *) share inPersistentStore:(NSPersistentStore *) persistentStore completion:(void (^)(CKShare *persistedShare, NSError *persistedShareError)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The `completion` callback returns no value and takes the following parameters:
 

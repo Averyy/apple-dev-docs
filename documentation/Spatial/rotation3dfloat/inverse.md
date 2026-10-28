@@ -23,7 +23,7 @@ var inverse: Rotation3DFloat { get }
 static SPRotation3DFloat SPRotation3DFloatInverse(SPRotation3DFloat rotation);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the inverse of a rotation.
 

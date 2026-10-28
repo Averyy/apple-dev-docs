@@ -27,7 +27,7 @@ Available when `Self` is `MenuPickerStyle`.
 
 - [Populating SwiftUI menus with adaptive controls](../populating-swiftui-menus-with-adaptive-controls.md)
 
-#### Discussion
+## Discussion
 
 Use this style when there are more than five options. Consider using [`inline`](./inline.md) when there are fewer than five options.
 

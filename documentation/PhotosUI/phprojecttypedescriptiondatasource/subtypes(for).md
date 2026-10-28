@@ -20,7 +20,7 @@ func subtypes(for projectType: PHProjectType) -> [PHProjectTypeDescription]
 - (NSArray<PHProjectTypeDescription *> *) subtypesForProjectType:(PHProjectType) projectType;
 ```
 
-#### Return Value
+## Return Value
 
 An array of subtype descriptions for the queried project type.
 

@@ -25,11 +25,11 @@ convenience init(node: SCNNode)
 + (instancetype) wheelWithNode:(SCNNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 A new wheel object.
 
-#### Discussion
+## Discussion
 
 The node representing a wheel must be a child of the node whose physics body serves as the chassis of the [`SCNPhysicsVehicle`](../scnphysicsvehicle.md) behavior the wheel is attached to. Each wheel object must reference a unique node. To use the wheel, add it to the vehicle behavior using the addWheel: method.
 

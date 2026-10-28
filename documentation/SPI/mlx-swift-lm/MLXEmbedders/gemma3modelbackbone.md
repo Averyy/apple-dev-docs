@@ -17,7 +17,7 @@ The core backbone of the Gemma 3 model.
 class Gemma3ModelBackbone
 ```
 
-#### Overview
+## Overview
 
 This module handles token embeddings, the sequence of transformer blocks, and the final normalization. It is used as the base for the embedding model.
 

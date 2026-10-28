@@ -23,7 +23,7 @@ init(_ other: ClosedRange<Bound>)
 
 Available when `Bound` conforms to `Strideable` and `Bound.Stride` conforms to `SignedInteger`.
 
-#### Discussion
+## Discussion
 
 An equivalent range must be representable as an instance of Range. For example, passing a closed range with an upper bound of `Int.max` triggers a runtime error, because the resulting half-open range would require an upper bound of `Int.max + 1`, which is not representable as an `Int`.
 

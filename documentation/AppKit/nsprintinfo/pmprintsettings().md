@@ -19,11 +19,11 @@ func pmPrintSettings() -> UnsafeMutableRawPointer
 - (void *) PMPrintSettings;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a [`PMPrintSettings`](../../applicationservices/pmprintsettings.md) object, an opaque data type used to store information such as the number of copies and the range of pages in a printing session. You should not call `PMRelease` to release the returned object, except to balance calls to `PMRetain` that your code also issued.
 
-#### Discussion
+## Discussion
 
 The information in the returned `PMPrintSettings` object is consistent with the receiver’s print settings at the time this method is called. Subsequent changes to the receiving `NSPrintInfo` object do not result in changes to the information in the `PMPrintSettings` data type.
 

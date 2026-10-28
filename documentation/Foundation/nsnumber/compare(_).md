@@ -25,11 +25,11 @@ func compare(_ otherNumber: NSNumber) -> ComparisonResult
 - (NSComparisonResult) compare:(NSNumber *) otherNumber;
 ```
 
-#### Return Value
+## Return Value
 
 `NSOrderedAscending` if the value of `otherNumber` is greater than the number object’s, `NSOrderedSame` if they’re equal, and `NSOrderedDescending` if the value of `otherNumber` is less than the number object’s.
 
-#### Discussion
+## Discussion
 
 The [`compare(_:)`](./compare%28_%29.md) method follows the standard C rules for type conversion. For example, if you compare an `NSNumber` object that has an integer value with an `NSNumber` object that has a floating point value, the integer value is converted to a floating-point value for comparison.
 

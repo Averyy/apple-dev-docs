@@ -21,7 +21,7 @@ The main key used to append data to an existing archive.
 var mainKey: SymmetricKey? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use the main key to append data to an existing AEA archive with the [`encryptionStream(appendingTo:encryptionContext:flags:threadCount:)`](../archivebytestream/encryptionstream%28appendingto,encryptioncontext,flags,threadcount%29.md) function.
 

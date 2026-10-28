@@ -19,7 +19,7 @@ func setImageNamed(_ imageName: String?)
 - (void) setImageNamed:(NSString *) imageName;
 ```
 
-#### Discussion
+## Discussion
 
 This method looks for an image with the specified name on Apple Watch and displays it in the image view. If the specified image cannot be found, the image view displays no image.
 

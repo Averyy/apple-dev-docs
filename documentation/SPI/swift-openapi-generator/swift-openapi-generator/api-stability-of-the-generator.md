@@ -10,7 +10,7 @@ framework: "swift-openapi-generator/swift-openapi-generator"
 
 Understand the impact of updating the generator package plugin on the generated Swift code.
 
-#### Overview
+## Overview
 
 Swift OpenAPI Generator generates client and server Swift code from an OpenAPI document. The generated code may change if the OpenAPI document is changed or a different version of the generator is used.
 
@@ -24,7 +24,7 @@ Swift OpenAPI Generator follows [Semantic Versioning 2.0.0](https://semver.org) 
 
 If you upgrade any of the components above to the next non-breaking version, your project should continue to build successfully. Check out how these rules are applied, and what a breaking change means for the generated code: [API stability of generated code](./api-stability-of-generated-code.md).
 
-##### Implementation details
+### Implementation details
 
 In contrast to the guarantees provided for the API of Swift OpenAPI Generator, the following list of behaviors are *not* considered API, and can change without prior warning:
 

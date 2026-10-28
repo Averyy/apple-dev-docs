@@ -21,7 +21,7 @@ Initializes an attributed string by substituting a list of function arguments in
 - (instancetype) initWithFormat:(NSAttributedString *) format options:(NSAttributedStringFormattingOptions) options locale:(NSLocale *) locale context:(NSDictionary<NSString *,id> *) context arguments:(va_list) arguments;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized attributed string that combines the format string with the provided arguments and other information.
 

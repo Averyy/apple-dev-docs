@@ -19,7 +19,7 @@ init(items: [Item])
 - (instancetype) initWithItems:(NSArray<TVTopShelfItem *> *) items;
 ```
 
-#### Return Value
+## Return Value
 
 A new item collection object containing the specified `items`.
 

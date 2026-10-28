@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_ADC_CERT_POLICY;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

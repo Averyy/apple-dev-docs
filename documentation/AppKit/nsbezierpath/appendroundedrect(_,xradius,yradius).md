@@ -19,7 +19,7 @@ func appendRoundedRect(_ rect: NSRect, xRadius: CGFloat, yRadius: CGFloat)
 - (void) appendBezierPathWithRoundedRect:(NSRect) rect xRadius:(CGFloat) xRadius yRadius:(CGFloat) yRadius;
 ```
 
-#### Discussion
+## Discussion
 
 The path is constructed in a counter-clockwise direction, starting at the top-left corner of the rectangle. If either one of the radius parameters contains the value `0.0`, the returned path is a plain rectangle without rounded corners.
 

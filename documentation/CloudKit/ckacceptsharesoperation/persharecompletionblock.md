@@ -27,7 +27,7 @@ var perShareCompletionBlock: ((CKShare.Metadata, CKShare?, (any Error)?) -> Void
 @property (nonatomic, copy, nullable) void (^perShareCompletionBlock)(CKShareMetadata *shareMetadata, CKShare *acceptedShare, NSError *error);
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

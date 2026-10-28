@@ -17,7 +17,7 @@ Opens a document located by the given URL presents its user interface if request
 - (id) openDocumentWithContentsOfURL:(NSURL *) url display:(BOOL) displayDocument error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 If not  successful, the method returns `nil` after setting `outError` to point to an `NSError` object that encapsulates the reason why the document could not be opened.
 

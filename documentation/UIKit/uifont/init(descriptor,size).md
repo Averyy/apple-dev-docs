@@ -24,11 +24,11 @@ init(descriptor: UIFontDescriptor, size pointSize: CGFloat)
 + (UIFont *) fontWithDescriptor:(UIFontDescriptor *) descriptor size:(CGFloat) pointSize;
 ```
 
-#### Return Value
+## Return Value
 
 A font object for the specified descriptor and size.
 
-#### Discussion
+## Discussion
 
 In most cases, you can simply use [`init(name:size:)`](./init%28name,size%29.md) to create standard scaled fonts.
 

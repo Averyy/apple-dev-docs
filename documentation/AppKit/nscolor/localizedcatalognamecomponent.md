@@ -19,7 +19,7 @@ var localizedCatalogNameComponent: String { get }
 @property (copy, readonly) NSString * localizedCatalogNameComponent;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value in this property when displaying the catalog name in your user interface. Access this property only for colors in the [`named`](../nscolorspacename/named.md) color space. Accessing it for other color types raises an exception.
 

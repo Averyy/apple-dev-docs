@@ -24,7 +24,7 @@ class GKShuffledDistribution
 @interface GKShuffledDistribution : GKRandomDistribution
 ```
 
-#### Overview
+## Overview
 
 The behavior of a shuffled distribution is sometimes called “fair” randomization, because true randomness in games can result in extended “lucky streaks” or “unlucky streaks” for players. To create a shuffled distribution and use it to generate random numbers, use the methods defined by its superclass [`GKRandomDistribution`](./gkrandomdistribution.md).
 

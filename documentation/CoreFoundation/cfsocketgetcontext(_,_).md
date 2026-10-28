@@ -25,7 +25,7 @@ func CFSocketGetContext(_ s: CFSocket!, _ context: UnsafeMutablePointer<CFSocket
 extern void CFSocketGetContext(CFSocketRef s, CFSocketContext *context);
 ```
 
-#### Discussion
+## Discussion
 
 The context version number for CFSocket is currently 0. Before calling this function, you need to initialize the `version` member of `context` to 0.
 

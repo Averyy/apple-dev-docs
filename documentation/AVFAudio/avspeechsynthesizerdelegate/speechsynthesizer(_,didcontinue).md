@@ -25,7 +25,7 @@ optional func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didContinue 
 - (void) speechSynthesizer:(AVSpeechSynthesizer *) synthesizer didContinueSpeechUtterance:(AVSpeechUtterance *) utterance;
 ```
 
-#### Discussion
+## Discussion
 
 The system only calls this method if a speech synthesizer pauses speaking and the system calls its [`pauseSpeaking(at:)`](../avspeechsynthesizer/pausespeaking%28at%29.md) method. The system doesn’t call this method if the synthesizer pauses while in a delay between utterances.
 

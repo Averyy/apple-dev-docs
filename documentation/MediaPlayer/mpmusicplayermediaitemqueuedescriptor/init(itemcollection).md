@@ -22,11 +22,11 @@ init(itemCollection: MPMediaItemCollection)
 - (instancetype) initWithItemCollection:(MPMediaItemCollection *) itemCollection;
 ```
 
-#### Return Value
+## Return Value
 
 A new queue descriptor consisting of the media items contained in the designated collection.
 
-#### Discussion
+## Discussion
 
 After creating a new queue descriptor, you can modify when individual media items start and stop playing, and which item in the queue plays first when playback begins.
 

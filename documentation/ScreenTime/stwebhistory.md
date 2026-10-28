@@ -22,7 +22,7 @@ class STWebHistory
 @interface STWebHistory : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class provides an easy way for you to delete web history, including:
 

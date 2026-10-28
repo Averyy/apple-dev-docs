@@ -27,7 +27,7 @@ func becomeActive()
 
 - [Informing ClassKit that a task is about to begin](../informing-classkit-that-a-task-is-about-to-begin.md)
 
-#### Discussion
+## Discussion
 
 You activate contexts to inform ClassKit which tasks are most recently or commonly visited.
 

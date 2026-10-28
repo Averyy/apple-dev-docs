@@ -24,7 +24,7 @@ protocol UIFocusDebuggerOutput : NSObjectProtocol
 @protocol UIFocusDebuggerOutput <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Don’t use this protocol directly in your code. When debugging your app from the `lldb` command line, the methods of [`UIFocusDebugger`](./uifocusdebugger.md) output their results to an object that adopts this protocol. The debugger takes the output and formats it for display.
 

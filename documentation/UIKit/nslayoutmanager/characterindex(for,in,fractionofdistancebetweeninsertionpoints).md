@@ -23,11 +23,11 @@ func characterIndex(for point: CGPoint, in container: NSTextContainer, fractionO
 - (NSUInteger) characterIndexForPoint:(CGPoint) point inTextContainer:(NSTextContainer *) container fractionOfDistanceBetweenInsertionPoints:(CGFloat *) partialFraction;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the character falling under `point`.
 
-#### Discussion
+## Discussion
 
 Analogous to [`glyphIndex(for:in:fractionOfDistanceThroughGlyph:)`](./glyphindex%28for,in,fractionofdistancethroughglyph%29.md), but expressed in character index terms. The method returns the index of the character falling under `point`, expressed in coordinate system of `container`; if no character is under the point, the nearest character is returned, where nearest is defined according to the requirements of selection by mouse. However, this is not simply equivalent to taking the result of the corresponding glyph index method and converting it to a character index, because in some cases a single glyph represents more than one selectable character, for example an fi ligature glyph. In that case, there is an insertion point within the glyph, and this method returns one character or the other, depending on whether the specified point lies to the left or the right of that insertion point.
 

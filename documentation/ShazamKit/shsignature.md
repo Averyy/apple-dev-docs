@@ -25,7 +25,7 @@ class SHSignature
 @interface SHSignature : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can save signatures to files and share them with others. Use saved signatures to populate a custom catalog.
 

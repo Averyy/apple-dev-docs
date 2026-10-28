@@ -24,7 +24,7 @@ var focusDistance: Float { get set }
 @property (nonatomic, assign) float focusDistance;
 ```
 
-#### Discussion
+## Discussion
 
 A renderer can produce out-of-focus blur effects for objects significantly nearer to or farther from the camera than this distance. The default is 2.5 meters.
 

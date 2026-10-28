@@ -19,7 +19,7 @@ var contentTimeForTransition: CMTime { get }
 @property (nonatomic, readonly) CMTime contentTimeForTransition;
 ```
 
-#### Discussion
+## Discussion
 
 The time value commonly marks the beginning of the end credits in a television show or movie. For other content, this may be at the very end of the video. The default value, [`indefinite`](../../CoreMedia/cmtime/indefinite.md), indicates that the transition should occur at the very end of the current player item’s end time; this is equivalent to using the duration of the asset.
 

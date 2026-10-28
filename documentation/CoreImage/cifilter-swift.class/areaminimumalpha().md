@@ -24,11 +24,11 @@ class func areaMinimumAlpha() -> any CIFilter & CIAreaMinimumAlpha
 + (CIFilter<CIAreaMinimumAlpha> *) areaMinimumAlphaFilter;
 ```
 
-#### Return Value
+## Return Value
 
 A 1 x 1 pixel image containing the color with the smallest alpha value.
 
-#### Discussion
+## Discussion
 
 This method applies the area minimum alpha filter to an image. This effect finds and returns the pixel with the lowest alpha value in the region defined by `extent`.
 

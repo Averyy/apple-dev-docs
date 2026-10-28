@@ -19,11 +19,11 @@ func OBEXAddHTTPHeader(_ inHeaderData: UnsafeRawPointer!, _ inHeaderDataLength: 
 OBEXError OBEXAddHTTPHeader(const void *inHeaderData, uint32_t inHeaderDataLength, CFMutableDictionaryRef dictRef);
 ```
 
-#### Return Value
+## Return Value
 
 Error code, kOBEXSuccess (0) if success.
 
-#### Discussion
+## Discussion
 
 HTTP header - OBEX Spec, 2.2.8: Byte Sequence
 

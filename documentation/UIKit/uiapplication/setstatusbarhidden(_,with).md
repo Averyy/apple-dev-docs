@@ -23,7 +23,7 @@ func setStatusBarHidden(_ hidden: Bool, with animation: UIStatusBarAnimation)
 - (void) setStatusBarHidden:(BOOL) hidden withAnimation:(UIStatusBarAnimation) animation;
 ```
 
-#### Discussion
+## Discussion
 
 See the descriptions of the constants of the [`UIStatusBarAnimation`](../uistatusbaranimation.md) type for more information.
 

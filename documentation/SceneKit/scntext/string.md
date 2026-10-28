@@ -25,7 +25,7 @@ var string: Any? { get set }
 @property (nonatomic, copy, nullable) id string;
 ```
 
-#### Discussion
+## Discussion
 
 You can supply text as an [`NSString`](../../Foundation/nsstring.md) or [`NSAttributedString`](../../Foundation/nsattributedstring.md) object. When you use an [`NSString`](../../Foundation/nsstring.md) object, the text geometry’s properties determine the style of the entire body of text. You can use an [`NSAttributedString`](../../Foundation/nsattributedstring.md) object to provide a body of text containing multiple styles, in which case the text geometry’s properties define the default style for portions of the string without style attributes.
 

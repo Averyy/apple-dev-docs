@@ -25,7 +25,7 @@ func CFBundleUnloadExecutable(_ bundle: CFBundle!)
 extern void CFBundleUnloadExecutable(CFBundleRef bundle);
 ```
 
-#### Discussion
+## Discussion
 
 You should typically try to avoid using this function, but instead use [`CFBundleGetFunctionPointerForName(_:_:)`](./cfbundlegetfunctionpointerforname%28_,_%29.md) and related functions since these make management of the bundle easier (when the last reference to the CFBundle object is released, and it is finally deallocated, then the code will be unloaded if it is still loaded, and if the executable is of a type that supports unloading).
 

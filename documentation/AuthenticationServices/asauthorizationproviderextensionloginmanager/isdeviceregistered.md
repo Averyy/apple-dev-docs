@@ -19,7 +19,7 @@ var isDeviceRegistered: Bool { get }
 @property (readonly, getter=isDeviceRegistered) BOOL deviceRegistered;
 ```
 
-#### Discussion
+## Discussion
 
 Returns [`true`](../../Swift/true.md) if the current device completes registration.
 

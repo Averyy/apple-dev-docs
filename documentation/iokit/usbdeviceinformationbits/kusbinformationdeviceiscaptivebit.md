@@ -14,7 +14,7 @@
 kUSBInformationDeviceIsCaptiveBit = 0
 ```
 
-#### Discussion
+## Discussion
 
 The USB device is directly attached to its hub and cannot be removed.
 

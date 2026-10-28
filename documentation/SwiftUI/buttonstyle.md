@@ -22,7 +22,7 @@ A type that applies standard interaction behavior and a custom appearance to all
 @preconcurrency protocol ButtonStyle
 ```
 
-#### Overview
+## Overview
 
 To configure the current button style for a view hierarchy, use the [`buttonStyle(_:)`](./view/buttonstyle%28_%29.md) modifier. Specify a style that conforms to `ButtonStyle` when creating a button that uses the standard button interaction behavior defined for each platform. To create a button with custom interaction behavior, use [`PrimitiveButtonStyle`](./primitivebuttonstyle.md) instead.
 

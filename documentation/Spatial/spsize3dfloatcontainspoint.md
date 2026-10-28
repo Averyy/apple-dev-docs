@@ -19,11 +19,11 @@
 static bool SPSize3DFloatContainsPoint(SPSize3DFloat size, SPPoint3DFloat other);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the size contains the point.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the size contains the point.
 

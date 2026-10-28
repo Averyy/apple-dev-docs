@@ -14,11 +14,11 @@ IOUSBDescriptorHeader * ( *FindNextAssociatedDescriptor)(
    UInt8 descriptorType);
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to the descriptor, or NULL if no matching descriptors found.
 
-#### Overview
+## Overview
 
 The interface does not have to be open to use this function.
 

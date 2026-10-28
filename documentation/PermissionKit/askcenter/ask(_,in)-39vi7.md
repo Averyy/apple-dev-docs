@@ -19,7 +19,7 @@ final func ask(_ question: PermissionQuestion<SignificantAppUpdateTopic>, in win
 
 - [Creating a communication experience](../creating-a-communication-experience.md)
 
-#### Overview
+## Overview
 
 Throws an error if the system is unable to request to send the question.
 

@@ -19,11 +19,11 @@ func play() -> Bool
 - (BOOL) play;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when playback is initiated, [`false`](../../Swift/false.md) when playback is already in progress or when an error occurred.
 
-#### Discussion
+## Discussion
 
 This method initiates playback asynchronously and returns control to your application. Therefore, your application can continue doing work while the audio is playing.
 

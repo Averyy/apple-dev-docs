@@ -17,7 +17,7 @@ Resolves the quantization parameters for a specific layer.
 func quantization(layer: String) -> Quantization?
 ```
 
-#### Return Value
+## Return Value
 
 The `Quantization` settings to apply, or `nil` if the layer should be skipped.
 

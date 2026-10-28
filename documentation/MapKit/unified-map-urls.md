@@ -5,11 +5,11 @@
 
 Access Maps URLs and options for displaying Maps information across Apple platforms.
 
-#### Overview
+## Overview
 
 In iOS 18.4 and later, macOS 15.4 and later, and watchOS 11.4 and later, the Maps platform provides a new, unified collection of URLs that offers the same functionality on all devices. Use the Maps path components to control aspects of the Maps display, ranging from the presentation of a simple map centered on a location you provide, to finding specific points of interest (POIs) and providing complex multistop driving, walking, or transit directions.
 
-#### Frame the map display
+## Frame the map display
 
 Use the `/frame` path component and `query` parameters to control aspects of the map’s framing and representation. This component allows you to set a map’s orientation, style, visible area (the map’s span), and other perspective controls, as described in the table below.
 
@@ -35,7 +35,7 @@ The following  `/frame` path component examples demonstrate different kinds of m
 - Center the map at a specific coordinate and set the camera `distance` — [https://maps.apple.com/frame?map=explore&center=40.753035,-73.981846&distance=10000](https://maps.apple.com/frame?map=explore&center=40.753035,-73.981846&distance=10000).
 - Center the map at a specific coordinate and set the camera to the specified properties —  [https://maps.apple.com/frame?center=40.753035,-73.981846&distance=5000&pitch=15&heading=180&span=1.0,1.0](https://maps.apple.com/frame?center=37.797198,-122.407377&distance=5000&pitch=15&heading=180&span=1.0,1.0). If you provide both the `span` and `camera` properties, the `camera` properties take precedence, since they’re more specific than a `span`.
 
-#### Perform general searches
+## Perform general searches
 
 You can use the `/search` path component to search for specific kinds of locations using several `query` parameters.
 
@@ -51,7 +51,7 @@ The following  `/search`  path component examples demonstrate how to use the `se
 - Show results for `pizza` centered on Trafalgar Square in London, United Kingdom — [https://maps.apple.com/search?query=pizza&center=51.507984,-0.128015](https://maps.apple.com/search?query=pizza&center=51.507984,-0.128015).
 - Show results for `pizza` within approximately 1 km around Washington Square Park in New York City —  [https://maps.apple.com/search?query=pizza&center=40.730877,-73.997603&span=0.05,0.05](https://maps.apple.com/search?query=pizza&center=40.730877,-73.997603&span=0.05,0.05).
 
-#### Show the place card of a POI
+## Show the place card of a POI
 
 Using the `/place` path component enables you to specify a place card that shows useful details about points of interest on the map. Use the parameters in the following table to specify a POI and optionally the place card name and map type.
 
@@ -72,7 +72,7 @@ The following examples demonstrate different place card details along with detai
 - Show a person’s current location — [https://maps.apple.com/place?place-id=my-location](https://maps.apple.com/place?place-id=my-location). This parameter requires that a person has given permission for Maps to display their location.
 - Show the location of a person’s parked car — [https://maps.apple.com/place?place-id=parked-car](https://maps.apple.com/place?place-id=parked-car). This parameter requires that a person has given Maps permission to record the place they parked.
 
-#### Explore the environment using Look Around
+## Explore the environment using Look Around
 
 Use the `/look-around` path component and one of the following parameters to specify the initial location to start a session using Look Around.
 
@@ -89,7 +89,7 @@ The following examples demonstrate Look Around experiences in different cities:
 - The Tower of London, London, United Kingdom — [https://maps.apple.com/look-around?address=The%20Tower%20of%20London,London,UK](https://maps.apple.com/look-around?address=The%20Tower%20of%20London,London,UK)
 - The Eiffel Tower, Paris, France — [https://maps.apple.com/look-around?address=The%20Eiffel%20Tower,Paris,France](https://maps.apple.com/look-around?address=The%20Eiffel%20Tower,Paris,France)
 
-#### Request directions
+## Request directions
 
 Use the `/directions` path component and following query parameters in several combinations to request directions.
 
@@ -118,11 +118,11 @@ You can use the query parameters to the `directions` path in a large number of c
 - Show walking directions from, a person’s current location to 1 La Avanzada St, San Francisco, CA avoiding highways, hills, stairs, and busy roads, if possible — [https://maps.apple.com/directions?destination=1%20La%20Avanzada%20St,%20San%20Francisco,%20CA%20%2094131,%20United%20States&mode=walking&avoid=highways,hills,stairs,busy-roads](https://maps.apple.com/directions?destination=1%20La%20Avanzada%20St,%20San%20Francisco,%20CA%20%2094131,%20United%20States&mode=walking&avoid=highways,hills,stairs,busy-roads). The `avoid` options are only applicable to their respective transportation modes.
 - Show transit directions from a person’s current location to Sausalito, preferring bus and ferry —  [https://maps.apple.com/directions?destination=Sausalito,%20CA,%20United%20States&transit-preferences=bus,ferry&mode=transit](https://maps.apple.com/directions?destination=Sausalito,%20CA,%20United%20States&transit-preferences=bus,ferry&mode=transit). Leaving off the `source` instructs Maps to display directions using public transit to the specified destination from a person’s current location, which might not be practical depending on their location.
 
-#### Find guides and curated places
+## Find guides and curated places
 
 Using the `/guides` path component, you can ask Maps to provide details about place guides and curated collections using the following URL: [https://maps.apple.com/guides](https://maps.apple.com/guides).
 
-#### Report a problem
+## Report a problem
 
 If you find an issue with Apple Maps, you can report a problem using the `/report-a-problem path` component, followed by any of the following parameters:
 
@@ -132,7 +132,7 @@ If you find an issue with Apple Maps, you can report a problem using the `/repor
 | `address` | The address of the location | An address string, such as 1000 Fifth Avenue |
 | `place-id` | The unique Place ID for a point of interest; for example, the place ID `I8CAD8EFA77AA3D42` represents Bethesda Terrace in New York City’s Central Park | For more information on Place IDs, see [Identifying unique locations with Place IDs](./identifying-unique-locations-with-place-ids.md) |
 
-##### Example problem reports
+### Example problem reports
 
 You can report a problem using the same kinds of location descriptors the other queries use. The following examples show how to report a problem using a coordinate, an address, or a Place ID.
 
@@ -142,7 +142,7 @@ You can report a problem using the same kinds of location descriptors the other 
 
 When you open the `report-a-problem` URL, Maps opens a problem report sheet to ask a person for more detail on the nature of the problem, which Apple uses to investigate the report.
 
-#### Retrieve a full Maps URL from a shortened URL
+## Retrieve a full Maps URL from a shortened URL
 
 When people share a map URL from Maps, this system creates a shortened version that’s more efficient to send in the app, for example, Messages or Mail. If you need to recover the full URL, follow these steps:
 

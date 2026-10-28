@@ -22,7 +22,7 @@ func GLKQuaternionMake(_ x: Float, _ y: Float, _ z: Float, _ w: Float) -> GLKQua
 static GLKQuaternion GLKQuaternionMake(float x, float y, float z, float w);
 ```
 
-#### Return Value
+## Return Value
 
 A new quaternion.
 

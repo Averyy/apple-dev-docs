@@ -19,7 +19,7 @@ Creates a lasso tool for selecting content on a canvas view.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a new lasso tool.
 

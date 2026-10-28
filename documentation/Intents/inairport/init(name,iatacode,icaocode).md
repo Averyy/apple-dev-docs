@@ -24,7 +24,7 @@ init(name: String?, iataCode: String?, icaoCode: String?)
 - (instancetype) initWithName:(NSString *) name iataCode:(NSString *) iataCode icaoCode:(NSString *) icaoCode;
 ```
 
-#### Return Value
+## Return Value
 
 A new airport object or `nil` if the initializer is unable to create the object.
 

@@ -25,7 +25,7 @@ func popDebugGroup()
 - (void) popDebugGroup;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`pushDebugGroup(_:)`](./pushdebuggroup%28_%29.md) to group commands within the command buffer, which adds a new group to a stack, effectively nesting a group within any previous group. Call [`popDebugGroup()`](./popdebuggroup%28%29.md) to mark the end of a group of commands within the command buffer, and restore the previous group, if applicable. You can inspect the group and the commands it contains when viewing the contents of a frame capture with Metal Debugger.
 

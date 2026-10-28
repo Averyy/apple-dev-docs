@@ -21,11 +21,11 @@ Flattens an 8-bit-per-channel BGRA buffer against a solid background to produce 
 #define vImageFlatten_BGRA8888ToBGR888(_bgra8888Src, _bgr888Dest, _backgroundColor, _isImagePremultiplied, _flags)
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The function uses the following calculation to flatten the source image:
 

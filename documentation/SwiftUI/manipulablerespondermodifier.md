@@ -16,7 +16,7 @@ nonisolated
 struct ManipulableResponderModifier
 ```
 
-#### Overview
+## Overview
 
 SwiftUI applies this type on your behalf as part of the `manipulable` modifiers. You don’t create it directly.
 

@@ -22,11 +22,11 @@ init?(newBigIntFrom value: Double, in context: JSContext)
 + (JSValue *) valueWithNewBigIntFromDouble:(double) value inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 The JSValue representing a JavaScript value with type BigInt.
 
-#### Discussion
+## Discussion
 
 Create a new BigInt value from a double.
 

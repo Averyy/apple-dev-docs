@@ -23,7 +23,7 @@ typealias SubSequence = Slice<Set<Element>>
 
 Available when `Element` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 The default subsequence type for collections that don’t define their own is `Slice`.
 

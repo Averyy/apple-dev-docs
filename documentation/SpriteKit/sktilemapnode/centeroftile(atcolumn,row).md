@@ -23,7 +23,7 @@ func centerOfTile(atColumn column: Int, row: Int) -> CGPoint
 - (CGPoint) centerOfTileAtColumn:(NSUInteger) column row:(NSUInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The coordinates in points of the center of the tile for a given column and row.
 

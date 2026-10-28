@@ -21,7 +21,7 @@ Uploads data to a URL and delivers the result asynchronously.
 func upload(for request: URLRequest, fromFile fileURL: URL, delegate: (any URLSessionTaskDelegate)? = nil) async throws -> (Data, URLResponse)
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronously-delivered tuple that contains any data returned by the server as a [`Data`](../data.md) instance, and a [`URLResponse`](../urlresponse.md).
 

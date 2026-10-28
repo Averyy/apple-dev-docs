@@ -19,7 +19,7 @@ Sets the user identity for document-related operations that occur within the asy
 func scope<R>(_ access: () async throws -> R) async rethrows -> R
 ```
 
-#### Return Value
+## Return Value
 
 The result of the closure.
 

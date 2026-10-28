@@ -22,7 +22,7 @@ case portraitUpsideDown
 UIInterfaceOrientationPortraitUpsideDown
 ```
 
-#### Discussion
+## Discussion
 
 [`UIViewController`](../uiviewcontroller.md) doesn’t support this case on devices without a Home button.
 

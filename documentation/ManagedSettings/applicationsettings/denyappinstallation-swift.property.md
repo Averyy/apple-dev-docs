@@ -17,7 +17,7 @@ A Boolean value that indicates whether to prevent the user from installing appli
 var denyAppInstallation: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If your app doesn’t constrain this setting, the value is `nil`.
 

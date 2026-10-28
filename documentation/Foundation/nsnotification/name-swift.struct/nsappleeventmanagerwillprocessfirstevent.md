@@ -20,7 +20,7 @@ static let NSAppleEventManagerWillProcessFirstEvent: NSNotification.Name
 extern NSNotificationName const NSAppleEventManagerWillProcessFirstEventNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSAppleEventManager`. This notification does not contain a `userInfo` dictionary.
 

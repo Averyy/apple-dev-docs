@@ -24,7 +24,7 @@ var syntheticDNSAnswerIPv4Prefix: String? { get set }
 @property (copy, nullable) NSString * syntheticDNSAnswerIPv4Prefix;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an address prefix, such as `192.0.2.0/24`. The relay manager uses this prefix to synthesize DNS answers for apps that use `getaddrinfo()` to resolve domains included in [`matchDomains`](../nerelaymanager/matchdomains.md).
 

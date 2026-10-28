@@ -4,7 +4,7 @@
 
 Displays multiple lines of text.
 
-#### Overview
+## Overview
 
 The `description` element contains text used to describe a displayed element. This element is often used to provide descriptions that are significantly longer than those contained in the `text` element. Here’s an example that uses the `descriptiveAlertTemplate` to list an app’s Terms of Service.
 
@@ -18,7 +18,7 @@ The `description` element contains text used to describe a displayed element. Th
 </descriptiveAlertTemplate>
 ```
 
-##### Contained In
+### Contained In
 
 - [alertTemplate](./alerttemplate.md)
 - [banner](./banner.md)

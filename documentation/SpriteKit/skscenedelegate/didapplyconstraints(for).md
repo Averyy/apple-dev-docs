@@ -25,7 +25,7 @@ optional func didApplyConstraints(for scene: SKScene)
 - (void) didApplyConstraintsForScene:(SKScene *) scene;
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this method directly; it is called by the system exactly once per frame, so long as the scene is presented in a view and is not paused. It is called after any enabled constraints in the scene have been applied.
 

@@ -21,7 +21,7 @@ Creates an action of the given name from an action file.
 init?(named name: String, fromURL url: URL)
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 

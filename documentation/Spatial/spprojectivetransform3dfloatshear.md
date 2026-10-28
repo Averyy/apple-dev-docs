@@ -19,7 +19,7 @@
 static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatShear(SPProjectiveTransform3DFloat transform, SPAxis shearAxis, float shearFactor0, float shearFactor1);
 ```
 
-#### Discussion
+## Discussion
 
 Returns a new shear transform.
 

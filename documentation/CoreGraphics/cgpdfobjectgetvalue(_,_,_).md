@@ -25,11 +25,11 @@ func CGPDFObjectGetValue(_ object: CGPDFObjectRef, _ type: CGPDFObjectType, _ va
 extern bool CGPDFObjectGetValue(CGPDFObjectRef object, CGPDFObjectType type, void *value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if the specified object is a PDF object of the specified type, otherwise [`false`](../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The function gets the value of the `object` parameter. If the type of `object` is equal to the type specified, then:
 

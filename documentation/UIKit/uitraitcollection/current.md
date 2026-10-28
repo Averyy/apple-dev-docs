@@ -23,7 +23,7 @@ class var current: UITraitCollection { get set }
 @property (class, nonatomic, strong) UITraitCollection * currentTraitCollection;
 ```
 
-#### Discussion
+## Discussion
 
 This property provides a way to get a trait collection from the currently updating trait environment when your code doesn’t have direct access to the trait environment. UIKit updates the value of this property before calling the following methods of [`UIView`](../uiview.md), [`UIViewController`](../uiviewcontroller.md), and [`UIPresentationController`](../uipresentationcontroller.md). Inside these methods, the trait collection contains the traits describing the currently updating view or controller.
 

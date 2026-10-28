@@ -25,7 +25,7 @@ func showOverlayTemplate(_ templateToShow: CPTemplate, animated: Bool) async thr
 - (void) showOverlayTemplate:(CPTemplate *) templateToShow animated:(BOOL) animated completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Supported template types: @c CPVoiceControlTemplate
 

@@ -16,11 +16,11 @@ Obtains the event source for this IOHIDDeviceTransactionInterface instance.
 IOReturn (*getAsyncEventSource)(void *self, CFTypeRef *pSource);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 
-#### Discussion
+## Discussion
 
 The returned event source can be of type CFRunLoopSourceRef or CFRunLoopTimerRef.
 

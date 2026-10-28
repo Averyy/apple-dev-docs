@@ -22,7 +22,7 @@ func stopAbsoluteAltitudeUpdates()
 - (void) stopAbsoluteAltitudeUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method ends the delivery of absolute altitude events and releases the references to the operation queue and block that you specified in the [`startAbsoluteAltitudeUpdates(to:withHandler:)`](./startabsolutealtitudeupdates%28to,withhandler%29.md) method. If you haven’t started delivering data, or if you’ve already called `stopAbsoluteAltitudeUpdates()`, this method does nothing.
 

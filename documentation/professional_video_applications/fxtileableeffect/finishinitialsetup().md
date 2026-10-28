@@ -19,7 +19,7 @@ optional func finishInitialSetup() throws
 - (BOOL) finishInitialSetup:(NSError * *) error;
 ```
 
-#### Discussion
+## Discussion
 
 This is called after [`init(apiManager:)`](./init%28apimanager%29-6vvaz.md), [`addParameters()`](./addparameters%28%29.md), and [`properties(_:)`](./properties%28_%29.md).
 

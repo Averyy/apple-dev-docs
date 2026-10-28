@@ -23,11 +23,11 @@ func lineFragmentUsedRect(forGlyphAt glyphIndex: Int, effectiveRange effectiveGl
 - (CGRect) lineFragmentUsedRectForGlyphAtIndex:(NSUInteger) glyphIndex effectiveRange:(NSRangePointer) effectiveGlyphRange;
 ```
 
-#### Return Value
+## Return Value
 
 The used rectangle for the line fragment in which the given glyph is laid out.
 
-#### Discussion
+## Discussion
 
 This method causes glyph generation and layout for the line fragment containing the specified glyph, or if noncontiguous layout is not enabled, up to and including that line fragment.
 

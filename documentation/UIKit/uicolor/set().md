@@ -24,7 +24,7 @@ func set()
 - (void) set;
 ```
 
-#### Discussion
+## Discussion
 
 If you subclass `UIColor`, you must implement this method in your subclass. Your custom implementation should modify both the stroke and fill color in the current graphics context by setting them both to the color represented by the receiver.
 

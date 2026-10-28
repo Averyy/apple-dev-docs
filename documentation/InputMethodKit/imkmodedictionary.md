@@ -17,7 +17,7 @@ let IMKModeDictionary: String
 extern const NSString * IMKModeDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 The key used to obtain an input method mode dictionary from the input method bundle.
 

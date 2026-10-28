@@ -19,7 +19,7 @@ var allowableMovement: CGFloat { get set }
 @property (nonatomic) CGFloat allowableMovement;
 ```
 
-#### Discussion
+## Discussion
 
 The allowable movement is measured in points. The default value of this property is `10`, but you can change this value when configuring the gesture recognizer in Interface Builder.
 

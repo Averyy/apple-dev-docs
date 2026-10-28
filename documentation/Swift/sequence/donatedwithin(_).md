@@ -21,11 +21,11 @@ Filters donations to only those that occurred within the specified time range.
 func donatedWithin<DonationInfo>(_ timeRange: Tips.DonationTimeRange) -> [Self.Element] where DonationInfo : Decodable, DonationInfo : Encodable, DonationInfo : Sendable, Self.Element == Tips.Event<DonationInfo>.Donation
 ```
 
-#### Return Value
+## Return Value
 
 An array of donations that occurred within the given time range.
 
-#### Discussion
+## Discussion
 
 Use this method inside a `Tips/Rule` predicate to constrain which donations are considered when evaluating tip eligibility.
 

@@ -16,7 +16,7 @@ get loadPriority(): MapLoadPriority;
 set loadPriority(value: MapLoadPriority);
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to optimize the map-loading experience and prioritize the visibility of specific map features. The available prioritization options are:
 

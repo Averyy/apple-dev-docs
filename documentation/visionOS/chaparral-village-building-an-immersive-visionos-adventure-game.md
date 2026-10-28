@@ -10,7 +10,7 @@ Create an adventure game using SwiftUI, RealityKit, and Reality Composer Pro 3.
 - visionOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 Chaparral Village is an adventure game that transports you into a miniature clay landscape that demonstrates how to build an immersive video game on visionOS with Reality Composer Pro, RealityKit, and SwiftUI.
 
@@ -20,7 +20,7 @@ This sample uses a number of RealityKit and Reality Composer Pro features, inclu
 
 > **Note**: This sample code project is associated with WWDC26 sessions 279: [Explore advances in RealityKit](https://developer.apple.com/wwdc26/279/), 280: [Iterate your spatial scenes faster with Reality Composer Pro 3](https://developer.apple.com/wwdc26/280/), 281: [Extend Reality Composer Pro 3 functionality with Xcode](https://developer.apple.com/wwdc26/281/), and 393: [Supercharge your spatial workflows with Reality Composer Pro 3](https://developer.apple.com/wwdc26/393/).
 
-#### Build plug-ins for Reality Composer Pro
+## Build plug-ins for Reality Composer Pro
 
 The core functionality of Chaparral Village is driven by a collection of custom RealityKit components and systems, all written in Swift. These handle everything from foundational systems like input and player navigation to gameplay features like potions, portals, and props.
 
@@ -66,7 +66,7 @@ Using the plug-in model makes your custom components available directly inside R
 
 For more information about the Reality Composer Pro plug-in interface, see the [RealityComposerPro Plugin Interface](https://github.com/apple/reality-composer-pro-plugin) GitHub repository.
 
-#### Create cutscenes with Script Graph and Swift
+## Create cutscenes with Script Graph and Swift
 
 When Chaparral Village starts, a cutscene plays that displays a series of dialogue prompts introducing the main characters and teaching the player how to play the game. The sample contains the majority of its cutscene logic in Script Graph, but relies on bidirectional communication between Script Graph and Swift to react to events and display SwiftUI views.
 
@@ -159,7 +159,7 @@ extension Dialog {
 
 Bridging Script Graph and Swift allows you to leverage the full suite of features RealityKit and SwiftUI provide, such as view attachments and localization. For more information on bridging functionality between Swift and Reality Composer Pro, watch the WWDC26 session, [Extend Reality Composer Pro 3 functionality with Xcode](https://developer.apple.com/wwdc26/281/).
 
-#### Handle input from any source
+## Handle input from any source
 
 Chaparral Village uses a custom `InputManager` class to handle tap and drag input events in a source-agnostic manner:
 
@@ -288,7 +288,7 @@ This allows you to preview tap and drag interactions directly inside Reality Com
 
 Additionally, the `activate` and `deactivate` methods allow the cutscene Script Graphs to turn off input during cutscenes from Reality Composer Pro.
 
-#### Find a path through the village
+## Find a path through the village
 
 Chaparral Village uses a navigation mesh to allow the player to traverse the village scene while avoiding obstacles in their path.
 
@@ -326,7 +326,7 @@ public func navigate(to location: SIMD3<Float>, in scene: Scene, addedTraversal:
 
 The [`computePath(from:to:)`](../RealityKit/navigationcontroller/computepath%28from,to%29.md) method returns an array of [`NavigationMeshResource.PathNode`](../RealityKit/navigationmeshresource/pathnode.md) objects to represent the path a player should follow. The sample moves the player along that path by storing the locations of the path’s nodes in a custom component and advancing the player along the path each frame in a custom system. That system also smoothes the trajectory between navigation points and rotates the player to face its direction of travel. To learn more about how to move the player along a path, refer to the `PathfindPlayer.swift` file in the sample project. For more information about working with navigation meshes, see [Building a navmesh in Reality Composer Pro](../RealityComposerPro/building-a-navmesh-in-reality-composer-pro.md).
 
-#### Animate the player with Animation Graph
+## Animate the player with Animation Graph
 
 When the player walks along a path, it seamlessly transitions from an idle animation to a walk animation. The sample controls the player’s animation states with an Animation Graph:
 
@@ -346,7 +346,7 @@ A Script Graph on the player sets the `walk` variable in the Animation Graph to 
 
 For more information about using Animation Graph in Reality Composer Pro, see [Working with the Animation Graph](../RealityComposerPro/working-with-the-animation-graph.md) and [Creating animation graphs with Reality Composer Pro and RealityKit](./creating-animation-graphs-with-reality-composer-pro-and-realitykit.md).
 
-#### Animate curtains with cloth simulation
+## Animate curtains with cloth simulation
 
 A small hut sits near the top of Chaparral Village with two curtains covering its doorway. The curtains’ movements are dynamically simulated using the [Cloth simulation](../RealityKit/physics-cloth-simulation.md) APIs so they react naturally when the player walks through the doorway:
 
@@ -385,7 +385,7 @@ The sample simulates the cloth by adding a [`ClothSimulationComponent`](../Reali
 
 ![A screenshot of the Reality Composer Pro editor showing the village scene in the viewport. In the hierarchy panel on the left, the Cloth Simulation component attached to the Village World Root entity and the Cloth Collider component attached to the Player entity are both highlighted. The inspector on the right shows the Cloth Simulation properties, including solver, solver iterations, time step, gravity, wind, and damping factor.](https://developer.apple.com/tutorials/images/com.apple.visionOS/Chaparral-Village-ClothSimulationAndCollider@2x.png)
 
-#### Light the scene
+## Light the scene
 
 Inside the hut is a cozy interior scene illuminated by a warm fire. The scene uses baked lighting to create ambiance.
 
@@ -403,7 +403,7 @@ The sample also uses area reflector entities, which are simply planes with refle
 
 ![A screenshot of the Reality Composer Pro viewport showing two large reflector planes standing vertically at right angles around the hut interior, with a light source above casting illumination that bounces off the planes back onto the hut.](https://developer.apple.com/tutorials/images/com.apple.visionOS/Chaparral-Village-BounceLights@2x.png)
 
-#### Display progress with ComputeGraph
+## Display progress with ComputeGraph
 
 When players craft potions in the cauldron, smoke particles appear to provide visual feedback. A [`ComputeGraphComponent`](../RealityKit/computegraphcomponent.md) simulates each particle, driving changes in scale, opacity and position over time. The sample spawns the smoke cloud when the cauldron fills with ingredients.
 

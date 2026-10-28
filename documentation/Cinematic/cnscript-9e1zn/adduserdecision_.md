@@ -19,11 +19,11 @@ Adds a new user decision, and replaces an existing user decision if the times ar
 - (BOOL) addUserDecision:(CNDecision *) decision;
 ```
 
-#### Return Value
+## Return Value
 
 A flag indicating whether adding the user decision was successful.
 
-#### Discussion
+## Discussion
 
 > **Note**:  Adding a decision can fail if the decision focuses on a detection or group that does not exist or if its time is not within the time range of the Cinematic script.
 

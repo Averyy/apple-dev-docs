@@ -21,7 +21,7 @@ A regex component that allows a match to continue only if its contents do not ma
 struct NegativeLookahead<Output>
 ```
 
-#### Overview
+## Overview
 
 A negative lookahead is a zero-length assertion that its included regex does not match at a particular position. Lookaheads do not advance the overall matching position in the input string — once a lookahead succeeds, matching continues in the regex from the same position.
 

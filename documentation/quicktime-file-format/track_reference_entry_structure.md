@@ -5,7 +5,7 @@
 
 A data structure you use to specify information about any low-resolution image tracks contained in a movie.
 
-#### Overview
+## Overview
 
 Since there are no fields in the pano sample data atom to indicate the presence of low-resolution image tracks, a separate sibling atom must be added to the panorama sample atom container. The track reference array atom contains an array of track reference entry structures that specify information about any low-resolution image tracks contained in a movie. Its atom type is `kQTVRTrackRefArrayAtomType` (‘tref’).
 

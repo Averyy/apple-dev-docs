@@ -23,7 +23,7 @@ static func .< (a: Scalar, b: SIMD8<Scalar>) -> SIMDMask<SIMD8<Scalar>.MaskStora
 
 Available when `Scalar` is `Double`.
 
-#### Discussion
+## Discussion
 
 Each lane of the result is true if a is less than the corresponding lane of b, and false otherwise.
 

@@ -19,11 +19,11 @@ func boundsRect(for block: NSTextBlock, glyphRange: NSRange) -> NSRect
 - (NSRect) boundsRectForTextBlock:(NSTextBlock *) block glyphRange:(NSRange) glyphRange;
 ```
 
-#### Return Value
+## Return Value
 
 The bounding rectangle, or `NSZeroRect` if no rectangle has been set for the specified block since the last invalidation
 
-#### Discussion
+## Discussion
 
 This method causes glyph generation but not layout. Block layout rectangles and bounds rectangles are always in container coordinates.
 

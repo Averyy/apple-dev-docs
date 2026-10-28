@@ -15,7 +15,7 @@ Processes one or more parallel tasks in response to a call from the framework.
 virtual void UserProcessBundledParallelTasks(const uint16_t parallelRequestSlotIndices[32], uint16_t parallelRequestSlotIndicesCount, OSAction *completion);
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method to put one or more commands on the bus. The framework populates a [`SCSIUserParallelTask`](../scsiuserparalleltask.md) for each task and makes it available in the command buffers. Access these command buffers with the indices passed in the `parallelRequestSlotIndices` parameter.
 

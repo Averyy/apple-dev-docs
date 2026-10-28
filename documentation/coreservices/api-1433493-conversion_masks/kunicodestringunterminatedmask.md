@@ -14,7 +14,7 @@
 kUnicodeStringUnterminatedMask = 1L << kUnicodeStringUnterminatedBit
 ```
 
-#### Discussion
+## Discussion
 
 A mask for setting the string-unterminated control flag. Determines how the Unicode Converter handles text-element boundaries and direction resolution at the end of an input buffer.
 

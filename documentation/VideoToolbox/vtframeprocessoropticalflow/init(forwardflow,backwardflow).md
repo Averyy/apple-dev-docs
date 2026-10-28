@@ -24,7 +24,7 @@ init?(forwardFlow: CVPixelBuffer, backwardFlow: CVPixelBuffer)
 - (instancetype) initWithForwardFlow:(CVPixelBufferRef) forwardFlow backwardFlow:(CVPixelBufferRef) backwardFlow;
 ```
 
-#### Discussion
+## Discussion
 
 Instances retain the buffers backing them. Returns NULL if a NULL CVPixelBuffer is provided or if CVPixelBuffers are not IOSurface backed.
 

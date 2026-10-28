@@ -21,7 +21,7 @@ The estimated duration required for the spring system to be considered at rest.
 func settlingDuration<V>(target: V, initialVelocity: V = .zero, epsilon: Double) -> TimeInterval where V : VectorArithmetic
 ```
 
-#### Discussion
+## Discussion
 
 The epsilon value specifies the threshold for how small all subsequent values need to be before the spring is considered to have settled.
 

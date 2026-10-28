@@ -20,7 +20,7 @@ class SMAppService
 @interface SMAppService : NSObject
 ```
 
-#### Overview
+## Overview
 
 In macOS 13 and later, use `SMAppService` to register and control `LoginItems`, `LaunchAgents`, and `LaunchDaemons` as helper executables for your app. When converting code from earlier versions of macOS, use an `SMAppService` object and select one of the following methods depending on the type of service your helper executable provides:
 

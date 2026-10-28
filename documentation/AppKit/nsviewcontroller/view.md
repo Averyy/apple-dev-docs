@@ -20,7 +20,7 @@ var view: NSView { get set }
 @property (strong) NSView * view;
 ```
 
-#### Discussion
+## Discussion
 
 If this property’s value is not already set when you access it, the view controller invokes the [`loadView()`](./loadview%28%29.md) method. That method, in turn, sets the view from the nib file identified by the view controller’s [`nibName`](./nibname.md) and [`nibBundle`](./nibbundle.md) properties.
 

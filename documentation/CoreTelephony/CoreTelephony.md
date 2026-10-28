@@ -12,7 +12,7 @@ Access information about a user’s cellular service provider, such as its uniqu
 - Mac Catalyst 14.0+
 - macOS 10.10+
 
-#### Overview
+## Overview
 
 Use the Core Telephony framework to obtain information about a user’s home cellular service provider. Carriers can use this information to write apps that provide services only for their own subscribers. You can also use this framework to obtain information about current cellular calls.
 

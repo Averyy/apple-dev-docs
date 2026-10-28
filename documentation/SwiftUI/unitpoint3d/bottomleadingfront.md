@@ -15,7 +15,7 @@ A point that’s in the bottom-leading-front corner of a view.
 static let bottomLeadingFront: UnitPoint3D
 ```
 
-#### Discussion
+## Discussion
 
 The leading edge appears on the left in a left-to-right language environment and on the right in a right-to-left environment.
 

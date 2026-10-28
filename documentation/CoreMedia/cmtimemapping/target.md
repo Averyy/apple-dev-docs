@@ -25,7 +25,7 @@ var target: CMTimeRange
 CMTimeRange target;
 ```
 
-#### Discussion
+## Discussion
 
 If the target and source have different durations, the source segment should play at a rate of `source.duration / target.duration` to fit.
 

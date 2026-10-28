@@ -15,7 +15,7 @@ Prioritizes loading of the map land cover and borders, without POIs or labels.
 readonly LandCover: "LandCover";
 ```
 
-#### Discussion
+## Discussion
 
 This value is the default when you don’t provide a prioritization.
 

@@ -19,7 +19,7 @@ func print(with printInfo: NSPrintInfo, autoRotate doRotate: Bool)
 - (void) printWithInfo:(NSPrintInfo *) printInfo autoRotate:(BOOL) doRotate;
 ```
 
-#### Discussion
+## Discussion
 
 If `autoRotate` is set to [`true`](../../Swift/true.md), then ths method ignores the orientation attribute in the `NSPrintInfo` object and instead chooses the orientation that best fits the page to the paper size. This orientation occurs on a page-by-page basis.
 

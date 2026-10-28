@@ -19,11 +19,11 @@
 static SPRay3DFloat SPRay3DFloatRotateByQuaternion(SPRay3DFloat ray, simd_quatf quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 A ray with a direction that’s rotated by the specified quaternion.
 
-#### Discussion
+## Discussion
 
 Returns a ray that’s rotated by the specified quaternion.
 

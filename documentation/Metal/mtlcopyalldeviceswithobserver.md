@@ -20,7 +20,7 @@ extern NSArray<id<MTLDevice>> *MTLCopyAllDevicesWithObserver(id<NSObject>*observ
 - [Handling external GPU additions and removals](./handling-external-gpu-additions-and-removals.md)
 - [Finding multiple GPUs on an Intel-based Mac](./finding-multiple-gpus-on-an-intel-based-mac.md)
 
-#### Discussion
+## Discussion
 
 Keep a copy of `observer` in your app after this function returns in case you want to stop receiving notifications. You can stop receiving notifications by passing `observer` to the [`MTLRemoveDeviceObserver(_:)`](./mtlremovedeviceobserver%28_%29.md) function.
 

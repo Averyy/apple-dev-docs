@@ -22,7 +22,7 @@ An action that dismisses a presentation.
 @preconcurrency struct DismissAction
 ```
 
-#### Overview
+## Overview
 
 Use the [`dismiss`](./environmentvalues/dismiss.md) environment value to get the instance of this structure for a given [`Environment`](./environment.md). Then call the instance to perform the dismissal. You call the instance directly because it defines a [`callAsFunction()`](./dismissaction/callasfunction%28%29.md) method that Swift calls when you call the instance.
 

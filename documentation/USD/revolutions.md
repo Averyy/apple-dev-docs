@@ -5,11 +5,11 @@
 
 The number of rotations to complete.
 
-#### Overview
+## Overview
 
 Irrational values translate to partial revolutions. For example, set this property to `1.25` to complete one and a quarter rotations before stopping.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform double revolutions = 1.0

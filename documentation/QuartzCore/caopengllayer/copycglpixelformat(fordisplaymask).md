@@ -22,7 +22,7 @@ func copyCGLPixelFormat(forDisplayMask mask: UInt32) -> CGLPixelFormatObj
 - (CGLPixelFormatObj) copyCGLPixelFormatForDisplayMask:(uint32_t) mask;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when a pixel format object is needed for the receiver.  The default implementation returns a 32bpp fixed point pixelf format, with the `NoRecovery` and `Accelerated` flags set.
 

@@ -21,7 +21,7 @@ Defines an optional boundary of an area within which the map’s center needs to
 struct MapCameraBounds
 ```
 
-#### Overview
+## Overview
 
 Using the `MapCameraBounds` initializers you can also define an optional camera zoom range that limits the distances that a person can zoom the map camera to.
 

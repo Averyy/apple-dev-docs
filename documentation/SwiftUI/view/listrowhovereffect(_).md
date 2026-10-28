@@ -16,11 +16,11 @@ nonisolated
 func listRowHoverEffect(_ effect: HoverEffect?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that requests a hover effect for a containing list row
 
-#### Discussion
+## Discussion
 
 By default, `List` rows have built-in hover effects in visionOS. In some cases, it is useful to change the default hover effect.
 

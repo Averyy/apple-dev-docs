@@ -24,11 +24,11 @@ func contentsRect(for interaction: ImageAnalysisInteraction) -> CGRect
 
 - [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
-#### Return Value
+## Return Value
 
 The rectangle of the image within the view, in unit coordinates. The default return value is the unit rectangle, `[0.0, 0.0, 1.0, 1.0]`, which represents the whole view contents.
 
-#### Discussion
+## Discussion
 
 Implement this method when the interaction view type isn’t [`UIImageView`](../../UIKit/uiimageview.md).
 

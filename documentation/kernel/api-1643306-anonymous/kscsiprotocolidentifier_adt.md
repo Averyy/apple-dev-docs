@@ -13,7 +13,7 @@
 kSCSIProtocolIdentifier_ADT = 7
 ```
 
-#### Discussion
+## Discussion
 
 ADT Protocol Identifier.
 

@@ -15,7 +15,7 @@ An error that indicates the message identifier already exists.
 object MessageAlreadyExistsError
 ```
 
-#### Overview
+## Overview
 
 The [`Upload Message`](./upload-message.md) endpoint returns this error when the [`messageIdentifier`](./messageidentifier.md) already exists.
 

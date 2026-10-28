@@ -19,7 +19,7 @@ A 7-bit unsigned integer.
 case uint7
 ```
 
-#### Discussion
+## Discussion
 
 Seven-bit unsigned integers can represent values in the range [0, 127]. This type is used for quantization and in lookup tables.
 

@@ -25,7 +25,7 @@ optional func connection(_ connection: NSURLConnection, didSendBodyData bytesWri
 - (void) connection:(NSURLConnection *) connection didSendBodyData:(NSInteger) bytesWritten totalBytesWritten:(NSInteger) totalBytesWritten totalBytesExpectedToWrite:(NSInteger) totalBytesExpectedToWrite;
 ```
 
-#### Discussion
+## Discussion
 
 This method provides an estimate of the progress of a URL upload.
 

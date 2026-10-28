@@ -15,7 +15,7 @@ A Boolean value that indicates whether ARKit tracks a hand joint.
 var isTracked: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 When the environment provides insufficient lighting, or if an object occludes the hand joint, `isTracked` may return `false`. Even under these circumstances, ARKit returns a plausible transform for the joint.
 

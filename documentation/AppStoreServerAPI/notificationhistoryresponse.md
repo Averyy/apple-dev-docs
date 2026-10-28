@@ -19,7 +19,7 @@ object NotificationHistoryResponse
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 The [`Get Notification History`](./get-notification-history.md) endpoint returns this response. Notification history records contain the notifications that the App Store server attempted to send to your server’s [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) endpoint.
 

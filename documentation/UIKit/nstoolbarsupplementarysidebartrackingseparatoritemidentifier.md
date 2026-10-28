@@ -15,7 +15,7 @@ The identifier for a toolbar item that displays a tracking separator aligned wit
 extern NSToolbarItemIdentifier NSToolbarSupplementarySidebarTrackingSeparatorItemIdentifier;
 ```
 
-#### Overview
+## Overview
 
 The item’s tracking separator visually aligns itself with the second divider of a vertical split view in the same window.
 

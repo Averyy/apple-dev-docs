@@ -19,7 +19,7 @@ init?(locale: Locale)
 + (NSFontCollection *) fontCollectionWithLocale:(NSLocale *) locale;
 ```
 
-#### Return Value
+## Return Value
 
 A collection of fonts matching the given locale.
 

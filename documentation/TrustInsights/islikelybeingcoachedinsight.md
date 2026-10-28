@@ -16,7 +16,7 @@ An insight to request to examine indications that someone may be actively coachi
 struct IsLikelyBeingCoachedInsight
 ```
 
-#### Discussion
+## Discussion
 
 It could be useful to consider this in operations where it’s possible that someone may be in the process of being defrauded (such as transfers to new counterparties) and whether additional security checks — often called “step ups” or “blocks” — may be appropriate.
 

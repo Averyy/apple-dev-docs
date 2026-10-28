@@ -27,7 +27,7 @@ var quantity: Int { get }
 @property (nonatomic, readonly) NSInteger quantity;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 1, the minimum value is 1, and the maximum value is 10.
 

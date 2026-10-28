@@ -9,11 +9,11 @@ Remove information that you previously stored about your app’s assignable acti
 **Availability**:
 - ClassKit 1.0+
 
-#### Discussion
+## Discussion
 
 You can’t delete a context that has child contexts. Delete any child contexts before trying to delete their parent.
 
-##### Example
+### Example
 
 **Request**:
 

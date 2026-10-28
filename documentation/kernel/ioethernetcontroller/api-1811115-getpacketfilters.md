@@ -13,11 +13,11 @@ virtual IOReturn getPacketFilters(
  UInt32 *filters) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess. Drivers that override this method must return kIOReturnSuccess to indicate success, or an error return code otherwise.
 
-#### Overview
+## Overview
 
 The default implementation of the abstract method inherited from IONetworkController. When the filter group specified is gIONetworkFilterGroup, then this method will return a value formed by a bitwise OR of kIOPacketFilterUnicast, kIOPacketFilterBroadcast, kIOPacketFilterMulticast, kIOPacketFilterPromiscuous. Otherwise, the return value will be set to zero (0). Subclasses must override this method if their filtering capability differs from what is reported by this default implementation. This method is called from the workloop context, and the result is published to the I/O Kit Registry.
 

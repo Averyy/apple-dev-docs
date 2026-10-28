@@ -18,7 +18,7 @@ Requests the estimated pose of the camera in each shot (relative to the common e
 case poses
 ```
 
-#### Discussion
+## Discussion
 
 Once initial photogrammetric calculations are complete, a [`PhotogrammetrySession.Poses`](../poses.md) object will be returned with the estimated camera pose for each sample that was used in the reconstruction.
 

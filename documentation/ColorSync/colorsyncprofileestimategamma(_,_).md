@@ -25,7 +25,7 @@ func ColorSyncProfileEstimateGamma(_ prof: ColorSyncProfile!, _ error: UnsafeMut
 extern float ColorSyncProfileEstimateGamma(ColorSyncProfileRef prof, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A non-zero value on success, or `0.0` in case of error.
 

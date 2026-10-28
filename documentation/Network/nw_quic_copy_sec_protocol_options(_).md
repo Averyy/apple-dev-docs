@@ -25,7 +25,7 @@ func nw_quic_copy_sec_protocol_options(_ options: nw_protocol_options_t) -> sec_
 sec_protocol_options_tnw_quic_copy_sec_protocol_options(nw_protocol_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 The security options for the QUIC connection.
 

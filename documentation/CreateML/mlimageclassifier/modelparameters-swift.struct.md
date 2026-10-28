@@ -19,7 +19,7 @@ Parameters that affect the process of training an image classifier model.
 struct ModelParameters
 ```
 
-#### Overview
+## Overview
 
 Use this structure to configure the model training session. With it you can:
 

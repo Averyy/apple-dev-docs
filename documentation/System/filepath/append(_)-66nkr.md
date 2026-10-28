@@ -21,7 +21,7 @@ Append `components` on to the end of this path.
 mutating func append<C>(_ components: C) where C : Collection, C.Element == FilePath.Component
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 

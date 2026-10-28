@@ -21,7 +21,7 @@ Creates an HTTP cookie string policy from the given raw string.
 init(rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 URL Loading System ignores any policy with a raw value other than the predefined policy values: `strict` and `lax`.
 

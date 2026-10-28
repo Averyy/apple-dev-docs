@@ -17,11 +17,11 @@ Current GPU device.
 static var gpu: Device { get }
 ```
 
-#### Discussion
+## Discussion
 
 Note: previously this returned a `static` GPU device – it would always be index 0, even if there were multiple GPUs in the system.
 
-##### See Also
+### See Also
 
 - [`cpu`](./cpu.md)
 - [`gpu`](../stream/gpu.md)

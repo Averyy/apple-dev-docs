@@ -23,7 +23,7 @@ var estimatedItemSize: CGSize { get set }
 @property (nonatomic) CGSize estimatedItemSize;
 ```
 
-#### Discussion
+## Discussion
 
 Providing an estimated cell size can improve the performance of the collection view when the cells adjust their size dynamically. The estimated value lets the collection view defer some calculations to determine the actual size of its content. Cells that aren’t onscreen are assumed to be the estimated height.
 

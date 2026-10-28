@@ -19,11 +19,11 @@
 static SPVector3DFloat SPAffineTransform3DFloatGetTranslation(SPAffineTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A size structure that represents the transform’s translation.
 
-#### Discussion
+## Discussion
 
 Returns an affine transform’s translation.
 

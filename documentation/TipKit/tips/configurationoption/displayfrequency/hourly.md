@@ -21,7 +21,7 @@ A hourly display frequency.
 static var hourly: Tips.ConfigurationOption.DisplayFrequency { get }
 ```
 
-#### Discussion
+## Discussion
 
 When you set this, the system shows no more than one tip per hour.
 

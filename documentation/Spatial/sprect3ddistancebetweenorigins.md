@@ -21,7 +21,7 @@ Returns the distance between the origins of two rectangles.
 static double SPRect3DDistanceBetweenOrigins(SPRect3D rect, SPRect3D other);
 ```
 
-#### Return Value
+## Return Value
 
 The distance between two rectangles.
 

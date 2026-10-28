@@ -13,7 +13,7 @@ Code along with the WWDC presenter to transform an app with SwiftData.
 - macOS 14.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 Learn how to use [`@Query`](../SwiftData/query.md), [`@Bindable`](./bindable.md), [`.modelContainer`](./view/modelcontainer%28_%29.md), the [`.modelContext`](./environmentvalues/modelcontext.md) environment variable, and [`DocumentGroup`](./documentgroup.md) to integrate with the [`SwiftData`](../SwiftData/SwiftData.md) framework.
 

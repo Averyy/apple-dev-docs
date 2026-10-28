@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two accessories are equal.
 static func == (lhs: Accessory, rhs: Accessory) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two accessories are equal; otherwise, `false`.
 

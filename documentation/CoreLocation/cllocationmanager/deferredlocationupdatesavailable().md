@@ -24,11 +24,11 @@ class func deferredLocationUpdatesAvailable() -> Bool
 + (BOOL) deferredLocationUpdatesAvailable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device supports deferred location updates or [`false`](../../Swift/false.md) if it does not.
 
-#### Discussion
+## Discussion
 
 Deferred location updates are a way for the location manager to avoid frequently waking up a background app to deliver location changes. Normally, when an app wants location updates in the background, the app must be woken up whenever a new event arrives. Waking up the app consumes power, which in some situations might be wasted if the app cannot do anything with the location information other than log it and go back to sleep anyway. Deferring location updates gives you the ability to wait until a time when your app can do something useful with the data and then process the updates all at once.
 

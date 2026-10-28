@@ -23,7 +23,7 @@ struct UIFocusHeading
 enum UIFocusHeading : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 You obtain the direction of the focus from the [`focusHeading`](./uifocusupdatecontext/focusheading.md) property.
 

@@ -20,7 +20,7 @@ case relocalizing
 
 - [Managing Session Life Cycle and Tracking Quality](../../../managing-session-life-cycle-and-tracking-quality.md)
 
-#### Discussion
+## Discussion
 
 ARKit cannot track device position or orientation when the session has been interrupted (for example, by dismissing the view hosting an AR session or switching to another app). When resuming the session after an interruption, the world coordinate system (used for placing anchors) likely no longer match the device’s real-world environment.
 

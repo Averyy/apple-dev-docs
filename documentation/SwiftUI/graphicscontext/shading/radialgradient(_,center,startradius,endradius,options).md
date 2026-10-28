@@ -27,7 +27,7 @@ static func radialGradient(_ gradient: AnyGradient, center: CGPoint, startRadius
 static func radialGradient(_ gradient: Gradient, center: CGPoint, startRadius: CGFloat, endRadius: CGFloat, options: GraphicsContext.GradientOptions = GradientOptions()) -> GraphicsContext.Shading
 ```
 
-#### Return Value
+## Return Value
 
 A shading instance filled with a radial gradient.
 

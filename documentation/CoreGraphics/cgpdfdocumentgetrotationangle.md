@@ -15,11 +15,11 @@ Returns the rotation angle of a page in a PDF document.
 extern int CGPDFDocumentGetRotationAngle(CGPDFDocumentRef document, int page);
 ```
 
-#### Return Value
+## Return Value
 
 The rotation angle of the page, expressed in degrees. If the specified page does not exist, returns `0`.
 
-#### Discussion
+## Discussion
 
 The replacement function for this one is [`rotationAngle`](./cgpdfpage/rotationangle.md). For more information see [`CGPDFPage`](./cgpdfpage.md).
 

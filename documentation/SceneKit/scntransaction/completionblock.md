@@ -25,7 +25,7 @@ class var completionBlock: (() -> Void)? { get set }
 @property (class, nonatomic, copy, nullable) void (^completionBlock)();
 ```
 
-#### Discussion
+## Discussion
 
 See `setCompletionBlock(_:)`, `setCompletionBlock:` in Objective-C, for a description of the role of the completion block object.
 

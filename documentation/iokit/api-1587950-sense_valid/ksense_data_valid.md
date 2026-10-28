@@ -15,7 +15,7 @@
 kSENSE_DATA_VALID = 0x80
 ```
 
-#### Discussion
+## Discussion
 
 Sense data is valid.
 

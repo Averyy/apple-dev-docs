@@ -24,7 +24,7 @@ func supportedIdentifiers() throws -> [VNAnimalIdentifier]
 - (NSArray<NSString *> *) supportedIdentifiersAndReturnError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The animal identifiers.
 

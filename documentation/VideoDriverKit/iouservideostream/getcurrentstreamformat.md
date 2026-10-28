@@ -15,7 +15,7 @@ Gets the current basic description of the stream.
 IOUserVideoStreamBasicDescription GetCurrentStreamFormat();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the current stream format.
 

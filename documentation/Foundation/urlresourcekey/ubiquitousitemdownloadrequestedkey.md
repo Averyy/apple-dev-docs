@@ -25,7 +25,7 @@ static let ubiquitousItemDownloadRequestedKey: URLResourceKey
 extern NSURLResourceKey const NSURLUbiquitousItemDownloadRequestedKey;
 ```
 
-#### Discussion
+## Discussion
 
 The system returns the read-only value as a Boolean [`NSNumber`](../nsnumber.md).
 

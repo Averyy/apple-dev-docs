@@ -23,11 +23,11 @@ func moveUpdate<Element>(fromContentsOf source: UnsafeMutableBufferPointer<Eleme
 
 Available when `Base` conforms to `Collection`.
 
-#### Return Value
+## Return Value
 
 An index one past the index of the last element updated.
 
-#### Discussion
+## Discussion
 
 The region of memory starting at the beginning of this buffer slice and covering `source.count` instances of its `Element` type  must be initialized, or its `Element` type must be a trivial type. After calling `moveUpdate(fromContentsOf:)`, the region of memory underlying `source` is uninitialized. The buffer slice must reference enough initialized memory to accommodate `source.count` elements.
 

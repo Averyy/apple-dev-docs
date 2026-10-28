@@ -18,7 +18,7 @@ The button in the trailing end of the card.
 let completionButton: OCKCheckmarkButton
 ```
 
-#### Discussion
+## Discussion
 
 The button contains an image that defaults to a checkmark when selected.
 

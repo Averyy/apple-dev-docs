@@ -10,7 +10,7 @@ Build an interface that plays multiple videos simultaneously and handles transit
 - visionOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to use the multiview video playback APIs using SwiftUI. It illustrates how an app might display video when showing a video in the embedded experience, and how apps might immediately display a video in the expanded experience. From these experiences, someone can enter the multiview video playback experience to display multiple videos simultaneously.
 
@@ -22,7 +22,7 @@ Multiview experiences work with the existing [`AVPlayerViewController`](./avplay
 
 To facilitate the addition of new videos to your app’s multiview experience, create a custom browsing user interface and provide it to the shared [`AVMultiviewManager`](./avmultiviewmanager.md) class. The `AVMultiviewManager` instance coordinates the arrangement of [`AVPlayerViewController`](./avplayerviewcontroller.md) instances in the multiview experience. As your app adds new view controllers, the `AVMultiviewManager` updates the layout to maintain a comfortable and engaging user experience.
 
-##### Display the system video player
+### Display the system video player
 
 Adding support for the multiview experience starts with displaying the [`AVPlayerViewController`](./avplayerviewcontroller.md). The `AVPlayerViewController` is a UIKit view controller that AVKit provides. Use [`UIViewControllerRepresentable`](../SwiftUI/uiviewcontrollerrepresentable.md) to adapt this for SwiftUI. The following code example creates a `SystemVideoPlayer` view with an [`AVPlayer`](../AVFoundation/avplayer.md) property. This property allows the SwiftUI view that contains the `SystemVideoPlayer` view to initialize the player with an [`AVPlayerItem`](../AVFoundation/avplayeritem.md) and change the video using the [`replaceCurrentItem(with:)`](../AVFoundation/avplayer/replacecurrentitem%28with%29.md) method.
 
@@ -41,7 +41,7 @@ struct SystemVideoPlayer: UIViewControllerRepresentable {
 }
 ```
 
-##### Enable the multiview experience on your video players
+### Enable the multiview experience on your video players
 
 The multiview experience is disabled by default, so your app needs to allow it by setting [`allowedExperiences`](./avexperiencecontroller/allowedexperiences.md) on [`AVExperienceController`](./avexperiencecontroller.md) to include `.multiview`. In the multiview experience, you can present video from multiple [`AVPlayerViewController`](./avplayerviewcontroller.md) instances together in an interface that an [`AVMultiviewManager`](./avmultiviewmanager.md) manages.
 
@@ -57,7 +57,7 @@ After allowing the multiview experience, the system player includes a Multiview 
 
 ![A visonOS screenshot of a video playing in the system player with a Back button, Environments button, and Multiview button at the top-left.](https://developer.apple.com/tutorials/images/com.apple.avkit/multiview-video-button@2x.png)
 
-##### Create a content browser for adding and removing videos
+### Create a content browser for adding and removing videos
 
 An [`AVPlayerViewController`](./avplayerviewcontroller.md) displays a single video. When someone enters the multiview experience, [`AVMultiviewManager`](./avmultiviewmanager.md) manages the layout of the system video players and displays your content browser beneath the videos. The content browser allows people to select additional videos to play within the experience. Anyone can remove a video from the multiview experience by clicking the close button in the corner of a video, or by using your content browser. After selecting multiple videos, a person can close the content browser to navigate to the playback controls for each video. To provide the view for the content browser, set the [`contentSelectionViewController`](./avmultiviewmanager/contentselectionviewcontroller.md) property on the shared `AVMultiviewManager`.
 
@@ -91,7 +91,7 @@ AVMultiviewManager.default.contentSelectionViewController = contentSelectionView
 
 To provide visual context, it’s important to show an image that represents each video. Depending on your app, this may be a generated thumbnail or a graphic unique to each video. For information about creating an image from a video asset, see [Creating images from a video asset](../AVFoundation/creating-images-from-a-video-asset.md).
 
-##### Observe changes in the multiview experience
+### Observe changes in the multiview experience
 
 Using the [`AVExperienceController.Delegate`](./avexperiencecontroller/delegate-swift.protocol.md) methods, your app can react to changes in the multiview experience. This protocol informs your app about the transitions you programmatically initiate and the transitions that trigger within the multiview experience. Update your class to conform to this protocol and set it as the delegate.
 
@@ -103,7 +103,7 @@ self.videoModels.forEach { videoModel in
 }
 ```
 
-##### Change the embedded video
+### Change the embedded video
 
 If your app displays the video player in the embedded state, your view needs to handle changing the [`AVPlayerViewController`](./avplayerviewcontroller.md) that’s displaying when someone changes the video within the multiview experience.
 
@@ -136,7 +136,7 @@ if videoModel.viewController.parent == nil {
 }
 ```
 
-##### Show and hide videos from your content browser
+### Show and hide videos from your content browser
 
 Your content selection view is responsible for adding and removing videos from the multiview experience. To determine whether to add or remove a video when a person selects an item, keep track of which videos are present in the [`AVMultiviewManager`](./avmultiviewmanager.md). Depending on the needs of your app, you can either create all [`AVPlayerViewController`](./avplayerviewcontroller.md) instances on initialization, or create them on demand as you display additional videos.
 
@@ -192,7 +192,7 @@ func experienceController(
 }
 ```
 
-##### Set the newly selected embedded video
+### Set the newly selected embedded video
 
 People can add and remove videos from the multiview experience through the user interface that your content selection view or the `AVMultiviewManager` provides. If your app supports displaying embedded videos, the video playing when someone first enters the multiview experience may be different than the one playing when they return to the embedded experience. Continue to show the currently playing video when a person returns to the embedded experience.
 
@@ -216,7 +216,7 @@ func experienceController(
 }
 ```
 
-##### Show expanded videos outside the view hierarchy
+### Show expanded videos outside the view hierarchy
 
 To display a video in the expanded or embedded states, the original container needs to be in the view hierarchy. This transition fails to complete when the [`AVPlayerViewController`](./avplayerviewcontroller.md) isn’t in the view hierarchy because the system requires a scene to transition to these states.
 

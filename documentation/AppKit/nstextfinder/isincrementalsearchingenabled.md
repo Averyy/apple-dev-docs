@@ -19,7 +19,7 @@ var isIncrementalSearchingEnabled: Bool { get set }
 @property (getter=isIncrementalSearchingEnabled) BOOL incrementalSearchingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), then the find bar will do incremental searches. If it returns [`false`](../../Swift/false.md), then the find bar will behave regularly.
 

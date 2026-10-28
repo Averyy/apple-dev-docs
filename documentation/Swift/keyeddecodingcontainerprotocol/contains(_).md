@@ -22,11 +22,11 @@ Returns a Boolean value indicating whether the decoder contains a value associat
 func contains(_ key: Self.Key) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 Whether the `Decoder` has an entry for the given key.
 
-#### Discussion
+## Discussion
 
 The value associated with `key` may be a null value as appropriate for the data format.
 

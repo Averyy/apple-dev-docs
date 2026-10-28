@@ -19,7 +19,7 @@ func invalidate()
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 When `invalidate` is used to stop an activity that is currently executing, the activity will still finish executing.
 

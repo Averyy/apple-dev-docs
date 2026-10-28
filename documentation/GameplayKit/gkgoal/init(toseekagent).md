@@ -24,11 +24,11 @@ convenience init(toSeekAgent agent: GKAgent)
 + (instancetype) goalToSeekAgent:(GKAgent *) agent;
 ```
 
-#### Return Value
+## Return Value
 
 A new goal object.
 
-#### Discussion
+## Discussion
 
 This goal is similar to one produced by the [`init(toInterceptAgent:maxPredictionTime:)`](./init%28tointerceptagent,maxpredictiontime%29.md) method with a `maxPredictionTime` parameter of zero. Affected agents will attempt to move toward the target agent, but without taking the target’s movement into account.
 

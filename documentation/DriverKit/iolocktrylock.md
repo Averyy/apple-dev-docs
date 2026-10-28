@@ -16,11 +16,11 @@
 bool IOLockTryLock(struct IOLock *lock);
 ```
 
-#### Return Value
+## Return Value
 
 True if the mutex was unlocked and is now locked by the caller, otherwise false.
 
-#### Discussion
+## Discussion
 
 Attempt to lock a mutex.
 

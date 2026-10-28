@@ -25,11 +25,11 @@ func CFURLCreateFromFileSystemRepresentationRelativeToBase(_ allocator: CFAlloca
 extern CFURLRefCFURLCreateFromFileSystemRepresentationRelativeToBase(CFAllocatorRef allocator, const UInt8 *buffer, CFIndex bufLen, Boolean isDirectory, CFURLRef baseURL);
 ```
 
-#### Return Value
+## Return Value
 
 A new `CFURL` object. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function takes a path name in the form of a native character string, resolves it against a base URL, and returns a new `CFURL` object containing the result.
 

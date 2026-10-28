@@ -21,7 +21,7 @@ Hide all tips regardless of their display rule eligibility for UI testing withou
 static func hideAllTipsForTesting()
 ```
 
-#### Overview
+## Overview
 
 This function can also be called with the launch argument `-com.apple.TipKit.HideAllTips 1`.
 

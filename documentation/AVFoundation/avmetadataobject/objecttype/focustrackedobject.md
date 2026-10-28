@@ -23,7 +23,7 @@ static let focusTrackedObject: AVMetadataObject.ObjectType
 extern AVMetadataObjectType const AVMetadataObjectTypeFocusTrackedObject;
 ```
 
-#### Discussion
+## Discussion
 
 This metadata object type is only available when the source [`AVCaptureDevice`](../../avcapturedevice.md)’s `activeFormat` has `AVCaptureDeviceFormat/isContinuousAutoFocusTrackingSupported` equal to `true`. It can therefore appear and disappear from [`availableMetadataObjectTypes`](../../avcapturemetadataoutput/availablemetadataobjecttypes.md) as the active format changes; observers should not assume it is statically available for the lifetime of the session.
 

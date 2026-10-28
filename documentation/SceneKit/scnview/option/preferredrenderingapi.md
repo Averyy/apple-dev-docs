@@ -25,7 +25,7 @@ static let preferredRenderingAPI: SCNView.Option
 extern SCNViewOption const SCNPreferredRenderingAPIKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object containing one of the values listed in [`SCNRenderingAPI`](../../scnrenderingapi.md). You can also set this option from the inspector in Interface Builder.
 

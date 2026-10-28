@@ -5,7 +5,7 @@
 
 Describes the focus of Cinematic Video clips.
 
-#### Overview
+## Overview
 
 Cinematic Video clips are created when a user records in Cinematic mode using the Camera app on an iOS device. Use the `adjust-cinematic` element to modify the aperture of the cinematic effect and to reference associated cinematic data stored by Final Cut Pro.
 

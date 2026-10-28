@@ -15,7 +15,7 @@ Connects to an endpoint the person selects from a list of endpoints the system d
 static var systemDiscovered: FoveatedStreamingSession.Endpoint { get }
 ```
 
-#### Discussion
+## Discussion
 
 The framework presents the person with system UI allowing them to select and connect to a local streaming endpoint.
 

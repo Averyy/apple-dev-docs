@@ -19,7 +19,7 @@ object Context
 
 - [Preparing Context Data](./preparing-context-data.md)
 
-#### Discussion
+## Discussion
 
 The contexts that you specify in your app as [`CLSContext`](../ClassKit/clscontext.md) instances correspond to the [`Context.Data`](./context/data-data.dictionary.md) object. The [`Context.Metadata`](./context/metadata-data.dictionary.md) object contains additional information about a context that’s implicit when working with ClassKit in your app.
 

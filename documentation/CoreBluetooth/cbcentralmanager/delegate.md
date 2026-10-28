@@ -25,7 +25,7 @@ weak var delegate: (any CBCentralManagerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<CBCentralManagerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 For information about how to implement your central manager delegate, see [`CBCentralManagerDelegate`](../cbcentralmanagerdelegate.md).
 

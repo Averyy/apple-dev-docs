@@ -17,7 +17,7 @@ Generate values in the half-open interval `[start, stop)` spaced by `step` (floa
 static func arange(_ start: Double, _ stop: Double, step: Double = 1.0, dtype: DType = .float32, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Example:
 
@@ -26,7 +26,7 @@ Example:
 let r = MLXArray.arange(0.0, 5.0, step: 0.5)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 - [`arange(_:dtype:stream:)`](./arange%28_,dtype,stream%29-4b7j6.md)

@@ -24,7 +24,7 @@ var emitterPosition: CGPoint { get set }
 @property CGPoint emitterPosition;
 ```
 
-#### Discussion
+## Discussion
 
 See [Emitter Shape](../emitter-shape.md) for details of how the `emitterPosition` relates to the possible emitter shapes.
 

@@ -21,11 +21,11 @@ func render(atTime time: TimeInterval, arguments: [AnyHashable : Any]!) -> Bool
 - (BOOL) renderAtTime:(NSTimeInterval) time arguments:(NSDictionary *) arguments;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) if your custom rendering fails, otherwise, [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 Do not call this method directly. You override this method only for subclasses of the `QCView` class and only if you want to perform custom operations or OpenGL rendering before and/or after  Quartz Composer renders a frame of the composition.
 

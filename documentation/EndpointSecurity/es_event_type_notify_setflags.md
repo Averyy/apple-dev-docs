@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_SETFLAGS: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_SETFLAGS
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`setflags`](./es_events_t/setflags.md), which has the type [`es_event_setflags_t`](./es_event_setflags_t.md).
 

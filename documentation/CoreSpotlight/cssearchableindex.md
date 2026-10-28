@@ -28,7 +28,7 @@ class CSSearchableIndex
 - [Adding your app’s content to Spotlight indexes](./adding-your-app-s-content-to-spotlight-indexes.md)
 - [Generating summary and priority data for indexed items](./generating-summary-and-priority-data-for-indexed-items.md)
 
-#### Overview
+## Overview
 
 A `CSSearchableIndex` object manages an on-device index for your app’s searchable content. To make your app’s content searchable, create one or more [`CSSearchableItem`](./cssearchableitem.md) objects for your content and add those items to the index. If your app defines [`AppEntity`](../AppIntents/appentity.md) types, you can also index those types directly or associate them with your [`CSSearchableItem`](./cssearchableitem.md) objects. When you execute a query, Core Spotlight searches your indexes for the requested information and returns the results to your code.
 

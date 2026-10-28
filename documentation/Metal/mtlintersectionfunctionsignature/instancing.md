@@ -24,7 +24,7 @@ static var instancing: MTLIntersectionFunctionSignature { get }
 MTLIntersectionFunctionSignatureInstancing
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding MSL function needs to contain the `instancing` tag in its declaration.
 

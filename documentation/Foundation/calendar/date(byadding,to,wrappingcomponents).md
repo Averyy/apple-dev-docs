@@ -21,7 +21,7 @@ Returns a new `Date` representing the date calculated by adding components to a 
 func date(byAdding components: DateComponents, to date: Date, wrappingComponents: Bool = false) -> Date?
 ```
 
-#### Return Value
+## Return Value
 
 A new date, or nil if a date could not be calculated with the given input.
 

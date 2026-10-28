@@ -23,7 +23,7 @@ var showsExpansionTextWhenTruncated: Bool { get set }
 @property (nonatomic) BOOL showsExpansionTextWhenTruncated;
 ```
 
-#### Discussion
+## Discussion
 
 A label may truncate text too long to fit in its container based on the value of the label’s [`lineBreakMode`](./linebreakmode.md) property. To provide the option in your app to show the full text when the pointer hovers over the truncated text, set [`showsExpansionTextWhenTruncated`](./showsexpansiontextwhentruncated.md) to [`true`](../../Swift/true.md). The default value is [`false`](../../Swift/false.md).
 

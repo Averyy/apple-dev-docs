@@ -27,7 +27,7 @@ var contentCreationDate: Date? { get set }
 
 - [Generating summary and priority data for indexed items](../generating-summary-and-priority-data-for-indexed-items.md)
 
-#### Discussion
+## Discussion
 
 This property is supplementary to [`recordingDate`](./recordingdate.md), which indicates the original recording date of the song or composition.
 

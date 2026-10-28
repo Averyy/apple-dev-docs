@@ -24,7 +24,7 @@ static var secondary: HierarchicalShapeStyle { get }
 
 Available when `Self` is `HierarchicalShapeStyle`.
 
-#### Discussion
+## Discussion
 
 This hierarchical style maps to the second level of the current foreground style, or to the second level of the default foreground style if you haven’t set a foreground style in the view’s environment. You typically set a foreground style by supplying a non-hierarchical style to the [`foregroundStyle(_:)`](../view/foregroundstyle%28_%29.md) modifier.
 

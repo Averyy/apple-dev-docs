@@ -21,15 +21,15 @@ func LSRegisterFSRef(_ inRef: UnsafePointer<FSRef>!, _ inUpdate: Bool) -> OSStat
 OSStatus LSRegisterFSRef(const FSRef *inRef, Boolean inUpdate);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 This function adds the designated application and its document and URL claims (if any) to the Launch Services database, making the application a candidate for document and URL binding.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since Mac OS version 10.3.
 

@@ -21,7 +21,7 @@ var configuration: [String : Any] { get }
 @property (copy, readonly) NSDictionary<NSString *,id> * configurationDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to retrieve the toolbar’s configuration details so you can save them to disk yourself. The dictionary in this property contains the identifiers of the current toolbar items and the values of important properties such as [`displayMode`](./displaymode-swift.property.md) and [`isVisible`](./isvisible.md).
 

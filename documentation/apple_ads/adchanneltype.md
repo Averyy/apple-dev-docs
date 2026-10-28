@@ -26,7 +26,7 @@ string AdChannelType
 
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 
-#### Discussion
+## Discussion
 
 See also [`BillingEventType`](./billingeventtype.md) and [`Campaign`](./campaign.md) object.
 

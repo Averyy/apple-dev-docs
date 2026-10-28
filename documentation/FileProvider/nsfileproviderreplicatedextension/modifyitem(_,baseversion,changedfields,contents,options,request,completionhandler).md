@@ -24,11 +24,11 @@ func modifyItem(_ item: NSFileProviderItem, baseVersion version: NSFileProviderI
 - (NSProgress *) modifyItem:(NSFileProviderItem) item baseVersion:(NSFileProviderItemVersion *) version changedFields:(NSFileProviderItemFields) changedFields contents:(NSURL *) newContents options:(NSFileProviderModifyItemOptions) options request:(NSFileProviderRequest *) request completionHandler:(void (^)(NSFileProviderItem item, NSFileProviderItemFields stillPendingFields, BOOL shouldFetchContent, NSError *error)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An item that tracks your extension’s progress.
 
-#### Discussion
+## Discussion
 
 The system calls this method when the user modifies an item—for example, moving it, renaming it, or updating its content. The `changedFields` parameter may contain multiple items, indicating that multiple changes have occurred. Update the version of the item in your remote storage to match, and then call the callback handler.
 

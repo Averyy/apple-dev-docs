@@ -20,7 +20,7 @@ The methods that an object adopts to make items in a table view discoverable by 
 protocol UITableViewAppIntentsDataSource : AnyObject
 ```
 
-#### Overview
+## Overview
 
 For more information, refer to [Providing contextual cues to Apple Intelligence and Siri](./providing-contextual-cues-to-apple-intelligence-and-siri.md) and [App Intents](./AppIntents.md).
 

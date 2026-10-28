@@ -21,11 +21,11 @@ func QLPreviewRequestFlushContext(_ preview: QLPreviewRequest!, _ context: CGCon
 extern void QLPreviewRequestFlushContext(QLPreviewRequestRef preview, CGContextRef context);
 ```
 
-#### Discussion
+## Discussion
 
 You should call this method immediately after drawing in the graphics contexts created by [`QLPreviewRequestCreateContext(_:_:_:_:)`](./qlpreviewrequestcreatecontext%28_,_,_,_%29.md) and [`QLPreviewRequestCreatePDFContext(_:_:_:_:)`](./qlpreviewrequestcreatepdfcontext%28_,_,_,_%29.md).
 
-##### Special Considerations
+### Special Considerations
 
 Thread-safety: This function should be called in the same thread as the preview request is made in; generally, this is the same thread in which the `GeneratePreviewForURL` callback was invoked.
 

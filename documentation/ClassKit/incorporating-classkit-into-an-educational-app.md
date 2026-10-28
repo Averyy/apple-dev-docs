@@ -12,13 +12,13 @@ Walk through the process of setting up assignments and recording student progres
 - Mac Catalyst 11.3+
 - Xcode 10.2+
 
-#### Overview
+## Overview
 
 You adopt ClassKit in an existing educational app to enable teachers to create assignments and monitor students’ progress through those assignments. This sample code project demonstrates ClassKit adoption in an app that lets users read plays.
 
 Before starting, be sure to read [Enabling ClassKit in Your App](./enabling-classkit-in-your-app.md) to learn how to configure your environment to work with ClassKit, and [Testing Your App During Development](./testing-your-classkit-app-during-development.md) to prepare to debug your ClassKit adoption.
 
-##### Start with an Existing Educational App
+### Start with an Existing Educational App
 
 The GreatPlays app provides a navigable hierarchy of plays, acts, and scenes, along with quizzes that test the reader’s comprehension. The app uses a simple data model that represents a collection of plays—the shared `PlayLibrary` instance holds `Play` instances, each of which contain an array of `Act` instances, and so on. These all exist independent of ClassKit.
 
@@ -30,7 +30,7 @@ For this example, the structure of a single play—Shakespeare’s *Hamlet*—is
 
 In a real app, in addition to the structure, you would also add the play’s text, along with quiz questions tailored to each scene. You might also support other plays, either distributed with the app, or downloaded later.
 
-##### Define Assignable Content
+### Define Assignable Content
 
 Your first task in adopting ClassKit is to define your app’s assignable content. You represent a unit of assignable content to ClassKit as a [`CLSContext`](./clscontext.md) instance, and then establish relationships between contexts by grouping them together into a hierarchy. For the play reader, teachers might want to assign a quiz, an individual scene, an act (with all its scenes), or even the whole play. So the existing model hierarchy provides a good template for a context hierarchy.
 
@@ -96,7 +96,7 @@ extension Node {
 }
 ```
 
-##### Advertise Your Content to Teachers
+### Advertise Your Content to Teachers
 
 Contexts are the mechanism by which your app advertises its assignable content to teachers. Contexts you tell ClassKit about appear as tasks in Apple’s Schoolwork app, where teachers go to create assignments based on your content. So it’s important to declare contexts as soon (and as atomically) as possible. Otherwise teachers won’t see your app’s content in Schoolwork, or might only see a partial list of tasks.
 
@@ -134,7 +134,7 @@ func setupContext(play: Play) {
 
 Because you’re only declaring the contexts at this point, you don’t need to do anything with the returned values.
 
-##### Build Contexts on Demand
+### Build Contexts on Demand
 
 Any time you ask the data store ([`CLSDataStore`](./clsdatastore.md)) for a context, whether during declaration or because you want to activate the context, the data store first looks in its database of stored contexts. If the context is available there, perhaps from a previous launch of your app, the data store returns that. But if it’s not available, the data store asks its [`delegate`](./clsdatastore/delegate.md) to build the context.
 
@@ -181,7 +181,7 @@ func createContext(forIdentifier identifier: String, parentContext: CLSContext, 
 }
 ```
 
-##### Build Contexts from an App Extension
+### Build Contexts from an App Extension
 
 The app includes a ClassKit context provider app extension by defining a target called `ClassKitContextProvider`. A ClassKit extension’s primary class conforms to the [`CLSContextProvider`](./clscontextprovider.md) protocol. Schoolwork calls this protocol’s [`updateDescendants`](./clscontextprovider/updatedescendants%28of,completion%29.md) method to create or update the children of a given context as the teacher browses assignable content. This enables Schoolwork to advertise the most up-to-date version of an app’s assignable content, even before the teacher runs the main app for the first time.
 
@@ -230,7 +230,7 @@ In this app, contexts never change, so the loop moves to the next iteration with
 }
 ```
 
-##### Record Progress with Activities
+### Record Progress with Activities
 
 While contexts declare the structure of your app, you use [`CLSActivity`](./clsactivity.md) instances to report progress through those contexts. For example, for a context representing a scene, the corresponding activity reports how much of the scene the student has read and how long they took to read it.
 
@@ -268,7 +268,7 @@ func startActivity(asNew: Bool = false) {
 
 `Node` also defines methods for reporting progress as a fraction of task completion and ending an activity. Notice that all these methods retrieve the context every time, rather than storing a reference to it. It’s important to do this, because the underlying instance could change between calls as a result of network synchronization.
 
-##### Start Recording When the User Begins an Activity
+### Start Recording When the User Begins an Activity
 
 You typically call methods to record activity from your view controllers. Consider an assignment to read a particular scene. The scene’s view controller knows when the scene appears on screen and has a handle on the scene instance. So the controller is in the best position to tell the scene to begin recording an activity from its [`viewDidAppear(_:)`](../UIKit/uiviewcontroller/viewdidappear%28_%29.md) method:
 
@@ -292,7 +292,7 @@ func start() {
 
 How you handle this for a particular activity depends on the characteristics of the tasks you define.
 
-##### Add Progress When the User Scrolls
+### Add Progress When the User Scrolls
 
 While the scene view controller (which manages a scroll view) is visible, it uses its knowledge of the content offset as an indication of how far through the scene the student has read. For each scroll view delegate update, the controller reports a new progress value to the scene by measuring scroll position as a proxy for how much the student has read:
 
@@ -308,7 +308,7 @@ func scrollViewDidScroll(_ scrollView: UIScrollView) {
 }
 ```
 
-##### Stop Recording When the User Stops an Activity
+### Stop Recording When the User Stops an Activity
 
 The controller informs the scene when the activity is over in its [`viewWillDisappear(_:)`](../UIKit/uiviewcontroller/viewwilldisappear%28_%29.md) method:
 
@@ -320,7 +320,7 @@ override func viewWillDisappear(_ animated: Bool) {
 }
 ```
 
-##### Report Additional Metrics with Activity Items
+### Report Additional Metrics with Activity Items
 
 Activities report duration and progress automatically. But sometimes you want to provide additional metrics about an activity. For example, you might want to report a quiz score, or record how many times a hint was used in solving a problem. For this, you use activity items.
 
@@ -336,7 +336,7 @@ func record() {
 }
 ```
 
-##### Mark an Activity as Done
+### Mark an Activity as Done
 
 While recording the quiz score, the app also calls the `markAsDone()` method, as shown in the previous section, which in turn calls the data store’s [`completeAllAssignedActivities(matching:)`](./clsdatastore/completeallassignedactivities%28matching%29.md) method to indicate that the student has finalized the attempt.
 
@@ -351,7 +351,7 @@ func markAsDone() {
 
 The student can’t go back and change anything after reaching the end of the quiz, so the app can safely mark the activity as done. In contrast, reading a scene has no easily detected end point, and so the app doesn’t make a call to the completion method in that case. Instead, the student decides when to mark the activity complete in Schoolwork.
 
-##### Designate a Primary Activity Item
+### Designate a Primary Activity Item
 
 When you add activity items, you can choose to make one of them the primary item. The primary gets a more prominent role in summarized results that teachers see. In the play reader example, for a quiz, the score is considered the primary item, as shown above. Alternatively, you can choose not to set any activity item as the primary, in which case progress becomes the most prominent result displayed to teachers. The `addScore()` method demonstrates the two ways in which you can register an activity item, either as primary or not:
 

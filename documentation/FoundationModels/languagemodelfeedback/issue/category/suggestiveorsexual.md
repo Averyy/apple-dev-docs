@@ -20,7 +20,7 @@ A response with suggestive or sexual material.
 case suggestiveOrSexual
 ```
 
-#### Discussion
+## Discussion
 
 A suggestive or sexual issue might be where you ask the model to draft a script for a school play, and it includes a sex scene.
 

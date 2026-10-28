@@ -14,7 +14,7 @@
 kMPAllocateGloballyMask = 0x0002
 ```
 
-#### Discussion
+## Discussion
 
 Allocate memory from in memory space that is visible to all processes. Note that such globally-allocated space is not automatically reclaimed when the allocating process terminates. By default, [`MPAllocateAligned`](../api-1585774-mpallocatealigned.md) allocates memory from process-specific (that is, not global) memory. 
 

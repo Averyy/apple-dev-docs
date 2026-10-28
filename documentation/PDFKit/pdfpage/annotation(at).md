@@ -40,7 +40,7 @@ func annotation(at point: NSPoint) -> PDFAnnotation?
 - (PDFAnnotation *) annotationAtPoint:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method for hit-testing based on the current cursor position. If more than one annotation shares the specified point, the frontmost (or topmost) one is returned (the annotations are searched in reverse order of their appearance in the PDF data file). Returns `NULL` if there is no annotation at `point`.
 

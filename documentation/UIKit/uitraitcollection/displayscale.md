@@ -23,7 +23,7 @@ var displayScale: CGFloat { get }
 @property (nonatomic, readonly) CGFloat displayScale;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `1.0` indicates a non-Retina display, `2.0` indicates a Retina display, and `3.0` indicates a Super Retina display. The default display scale for a trait collection is `0.0` (indicating unspecified).
 

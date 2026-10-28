@@ -16,7 +16,7 @@ Gets the data value.
 virtual OSData * getDataValue(IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an OSData representation of the element value.
 

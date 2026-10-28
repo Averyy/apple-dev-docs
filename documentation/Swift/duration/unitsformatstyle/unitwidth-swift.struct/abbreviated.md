@@ -21,7 +21,7 @@ An abbreviated unit name.
 static var abbreviated: Duration.UnitsFormatStyle.UnitWidth { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, `abbreviated` produces the unit label “3 hr” for a 3-hour duration in the `en_US` locale.
 

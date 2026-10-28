@@ -19,7 +19,7 @@ var activates: Bool { get set }
 @property BOOL activates;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../../Swift/true.md), which causes the system to bring the app to the foreground.
 

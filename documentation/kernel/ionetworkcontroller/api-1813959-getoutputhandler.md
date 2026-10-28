@@ -11,7 +11,7 @@ Gets the address of the method designated to handle output packets for the netwo
 virtual IOOutputAction getOutputHandler() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to the outputPacket() method.
 

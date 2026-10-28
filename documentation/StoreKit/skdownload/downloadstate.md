@@ -26,7 +26,7 @@ var downloadState: SKDownloadState { get }
 
 - [Unlocking purchased content](../unlocking-purchased-content.md)
 
-#### Discussion
+## Discussion
 
 After you queue a download object, the payment queue object calls your transaction observer when the state of the download object changes. Your transaction observer should read the [`downloadState`](./downloadstate.md) property and use it to determine how to proceed. For more information on the different states, see [`SKDownloadState`](../skdownloadstate.md).
 

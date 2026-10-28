@@ -24,7 +24,7 @@ var arrayLength: Int { get set }
 @property (nonatomic, readwrite) NSUInteger arrayLength;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property needs to be between `1` and `2048`, inclusive. The default value is `1`.
 

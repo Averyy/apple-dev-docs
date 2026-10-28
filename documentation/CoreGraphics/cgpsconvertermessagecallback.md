@@ -20,7 +20,7 @@ typealias CGPSConverterMessageCallback = (UnsafeMutableRawPointer?, CFString) ->
 typedef void (*)(void *, const struct __CFString *) CGPSConverterMessageCallback;
 ```
 
-#### Discussion
+## Discussion
 
 There are several kinds of message that might be sent during a conversion process. The most likely are font substitution messages, and any messages that the PostScript code itself generates. Any PostScript messages written to `stdout` are routed through this callback—typically these are debugging or status messages and, although uncommon, can be useful in debugging. In addition, there may be error messages if the document is malformed.
 

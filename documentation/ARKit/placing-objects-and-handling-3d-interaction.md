@@ -11,7 +11,7 @@ Place virtual content at tracked, real-world locations, and enable the user to i
 - iPadOS 13.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 The key facet of an AR experience is the ability to intermix virtual and real-world objects. A flat surface is the optimum location for setting a virtual object. To assist ARKit with finding surfaces, you tell the user to move their device in ways that help ARKit prepare the experience. ARKit provides a view that tailors its instructions to the user, guiding them to the surface that your app needs.
 
@@ -19,7 +19,7 @@ To enable the user to put a virtual item on the real-world surface when they tap
 
 > **Note**: ARKit requires a device with an A9 or later processor. ARKit is not available in iOS Simulator.
 
-#### Set a goal to coach the user’s movement
+## Set a goal to coach the user’s movement
 
 To enable your app to detect real-world surfaces, you use a world tracking configuration. For ARKit to establish tracking, the user must physically move their device to allow ARKit to get a sense of perspective. To communicate this need to the user, you use a view provided by ARKit that presents the user with instructional diagrams and verbal guidance, called [`ARCoachingOverlayView`](./arcoachingoverlayview.md) For example, when you start the app, the first thing the user sees is a message and animation from the coaching overlay telling them to move their device left and right, repeatedly, in order to get started.
 
@@ -33,7 +33,7 @@ func setGoal() {
 
 The coaching overlay then tailors its instructions according to the goal you choose. After ARKit gets a sense of perspective, the coaching overlay instructs the user to find a surface.
 
-#### Respond to coaching events
+## Respond to coaching events
 
 To make sure the coaching overlay provides guidance to the user whenever ARKit determines it’s necessary, you set [`activatesAutomatically`](./arcoachingoverlayview/activatesautomatically.md) to `true`.
 
@@ -59,7 +59,7 @@ func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayVi
 }
 ```
 
-#### Place virtual content
+## Place virtual content
 
 To give the user an idea of where they can place virtual content, annotate the environment to give them a preview. The sample app draws a square that gives the user visual confirmation of the shape and alignment of the surfaces that ARKit is aware of.
 
@@ -118,7 +118,7 @@ func placeVirtualObject(_ virtualObject: VirtualObject) {
 }
 ```
 
-#### Refine the position of virtual content over time
+## Refine the position of virtual content over time
 
 As the session runs, ARKit analyzes each camera image and learns more about the layout of the physical environment. When ARKit updates its estimated size and position of real-world surfaces, you may need to update the position of your app’s virtual content to match. To help make it easy, ARKit notifies you when it corrects its understanding of the scene by way of an [`ARTrackedRaycast`](./artrackedraycast.md).
 
@@ -161,7 +161,7 @@ private func setVirtualObject3DPosition(_ results: [ARRaycastResult], with virtu
 }
 ```
 
-#### Manage tracked ray casts
+## Manage tracked ray casts
 
 Because ARKit continues to call them, tracked ray casts can increasingly consume resources as the user places more virtual content. Stop the tracked ray cast when you no longer need refined positions over time, such as when a virtual balloon takes flight, or when you remove a virtual object from your scene.
 
@@ -189,7 +189,7 @@ func stopTrackedRaycast() {
 }
 ```
 
-#### Enable user interaction with virtual content
+## Enable user interaction with virtual content
 
 To allow users to move virtual content in the world after they’ve placed it, implement a pan gesture recognizer.
 
@@ -227,7 +227,7 @@ func didRotate(_ gesture: UIRotationGestureRecognizer) {
 }
 ```
 
-#### Handle interruption in tracking
+## Handle interruption in tracking
 
 In cases where tracking conditions are poor, ARKit invokes your delegate’s [`sessionWasInterrupted(_:)`](./arsessionobserver/sessionwasinterrupted%28_%29.md). In these circumstances, the positions of your app’s virtual content may be inaccurate with respect to the camera feed, so hide your virtual content.
 
@@ -252,7 +252,7 @@ func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera
 }
 ```
 
-#### Restore an interrupted AR experience
+## Restore an interrupted AR experience
 
 When a session is interrupted, ARKit asks if you want to try to restore the AR experience. You do that by opting in to *relocalization*, by overriding [`sessionShouldAttemptRelocalization(_:)`](./arsessionobserver/sessionshouldattemptrelocalization%28_%29.md) and returning `true`.
 
@@ -278,7 +278,7 @@ func coachingOverlayViewDidDeactivate(_ coachingOverlayView: ARCoachingOverlayVi
 }
 ```
 
-#### Enable the user to start over rather than restore
+## Enable the user to start over rather than restore
 
 If the user decides to give up on restoring the session, you restart the experience in your delegate’s [`coachingOverlayViewDidRequestSessionReset(_:)`](./arcoachingoverlayviewdelegate/coachingoverlayviewdidrequestsessionreset%28_%29.md) function. ARKit invokes this callback when the user taps the coaching overlay’s Start Over button.
 

@@ -26,7 +26,7 @@ var transaction: SKPaymentTransaction { get }
 @property (nonatomic, readonly) SKPaymentTransaction * transaction;
 ```
 
-#### Discussion
+## Discussion
 
 A download object is always associated with a payment transaction. The download object may only be queued after payment is processed and before the transaction is finished.
 

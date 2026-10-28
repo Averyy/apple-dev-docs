@@ -19,11 +19,11 @@ func rulerView(_ ruler: NSRulerView, shouldRemove marker: NSRulerMarker) -> Bool
 - (BOOL) rulerView:(NSRulerView *) ruler shouldRemoveMarker:(NSRulerMarker *) marker;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `aMarker` can be removed, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Only markers that represent tab stops can be removed. This method returns [`true`](../../Swift/true.md) if `aMarker` represents an [`NSTextTab`](../nstexttab.md) object, [`false`](../../Swift/false.md) otherwise. Because this method can be invoked repeatedly as the user drags a ruler marker, it returns that value immediately. If the change is allowed and the user actually removes the marker, the receiver is also sent a [`rulerView(_:didRemove:)`](./rulerview%28_,didremove%29.md) message.
 

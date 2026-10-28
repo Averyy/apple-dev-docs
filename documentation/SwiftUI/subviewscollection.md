@@ -21,7 +21,7 @@ An opaque collection representing the subviews of view.
 struct SubviewsCollection
 ```
 
-#### Overview
+## Overview
 
 Subviews collection constructs subviews on demand, so only access the part of the collection you need to create the resulting content.
 

@@ -19,7 +19,7 @@ static let credits: NSApplication.AboutPanelOptionKey
 extern NSAboutPanelOptionKey const NSAboutPanelOptionCredits;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSAttributedString`](../../../Foundation/nsattributedstring.md) displayed in the info area of the panel. If not specified, AppKit then looks for a file named “Credits.html”, “Credits.rtf”, and “Credits.rtfd”, in that order, in the bundle returned by the [`Bundle`](../../../Foundation/bundle.md) class method main. The first file found is used. If none is found, the info area is left blank.
 

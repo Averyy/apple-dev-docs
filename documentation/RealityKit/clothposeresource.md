@@ -17,7 +17,7 @@ A resource that defines a set of vertex positions for a cloth body.
 final class ClothPoseResource
 ```
 
-#### Overview
+## Overview
 
 A pose resource provides an alternate set of positions for the vertices of a [`ClothMeshResource`](./clothmeshresource.md); the topology is still determined by the mesh resource. One common use is to specify an already-draped starting configuration via [`initialMeshDraping`](./clothbodycomponent/initialmeshdraping.md).
 

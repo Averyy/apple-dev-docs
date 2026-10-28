@@ -25,7 +25,7 @@ var strides: MTLTensorExtents? { get }
 @property (readonly, nullable) MTLTensorExtents * strides;
 ```
 
-#### Discussion
+## Discussion
 
 This property is non-nil only for tensors created from a buffer.
 

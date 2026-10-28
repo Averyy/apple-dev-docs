@@ -20,7 +20,7 @@ nonisolated
 func productIconBorder() -> some View
 ```
 
-#### Discussion
+## Discussion
 
 You may want to use this on an icon provided to a `ProductView` or `StoreView`.
 

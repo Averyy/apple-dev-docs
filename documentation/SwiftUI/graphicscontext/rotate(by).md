@@ -21,7 +21,7 @@ Rotates subsequent drawing operations by an angle.
 mutating func rotate(by angle: Angle)
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to updating the context’s [`transform`](./transform.md) directly using the `angle` parameter:
 

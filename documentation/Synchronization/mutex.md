@@ -22,7 +22,7 @@ A synchronization primitive that protects shared mutable state via mutual exclus
 struct Mutex<Value> where Value : ~Copyable
 ```
 
-#### Overview
+## Overview
 
 The `Mutex` type offers non-recursive exclusive access to the state it is protecting by blocking threads attempting to acquire the lock. Only one execution context at a time has access to the value stored within the `Mutex` allowing for exclusive access.
 

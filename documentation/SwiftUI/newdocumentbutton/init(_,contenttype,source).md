@@ -38,7 +38,7 @@ nonisolated
 init(_ title: some StringProtocol, contentType: UTType? = nil, source: DocumentCreationSource)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 extension DocumentCreationSource {

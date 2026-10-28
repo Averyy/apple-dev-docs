@@ -20,7 +20,7 @@ static var extendRights: AuthorizationFlags { get }
 kAuthorizationFlagExtendRights
 ```
 
-#### Discussion
+## Discussion
 
 Once the Security Server denies one right, it ignores the remaining requested rights.
 

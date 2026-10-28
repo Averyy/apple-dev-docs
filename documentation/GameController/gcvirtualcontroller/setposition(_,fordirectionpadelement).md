@@ -21,7 +21,7 @@ func setPosition(_ position: CGPoint, forDirectionPadElement element: String)
 - (void) setPosition:(CGPoint) position forDirectionPadElement:(NSString *) element;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to update the value of a directional pad in the virtual controller when you set the [`isHidden`](./configuration/ishidden.md) property to [`true`](../../Swift/true.md) and present your own virtual controller interface.
 

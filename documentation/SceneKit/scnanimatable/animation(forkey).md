@@ -26,11 +26,11 @@ func animation(forKey key: String) -> CAAnimation?
 - (CAAnimation *) animationForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 An animation object matching the key, or `nil` if no such animation exists.
 
-#### Discussion
+## Discussion
 
 Attempting to modify any properties of the returned object results in undefined behavior.
 

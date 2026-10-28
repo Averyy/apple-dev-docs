@@ -21,11 +21,11 @@ string AppsReportingCreative.SystemStatus
 - `INVALID`: The creative has failed one or more validation checks. Check `systemStatusReasons` for the cause.
 - `PENDING`: The creative is undergoing system validation, policy determination, or waiting for asset CDN availability.
 
-#### Discussion
+## Discussion
 
 This is a point-in-time snapshot of validation state; a creative later marked `INVALID` may still show `VALID` in an older report.
 
-##### Example
+### Example
 
 ```json
 {

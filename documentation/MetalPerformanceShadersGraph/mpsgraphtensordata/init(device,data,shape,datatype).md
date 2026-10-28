@@ -24,7 +24,7 @@ init(device: MPSGraphDevice, data: Data, shape: [NSNumber], dataType: MPSDataTyp
 - (instancetype) initWithDevice:(MPSGraphDevice *) device data:(NSData *) data shape:(MPSShape *) shape dataType:(MPSDataType) dataType;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensorData, or nil if allocation failure.
 

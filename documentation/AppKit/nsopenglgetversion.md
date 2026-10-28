@@ -17,7 +17,7 @@ Returns the NSOpenGL version numbers.
 extern void NSOpenGLGetVersion(GLint *major, GLint *minor);
 ```
 
-#### Discussion
+## Discussion
 
 Returns by reference the major and minor version numbers of the NSOpenGL implementation. This function is not the same as the OpenGL version.
 

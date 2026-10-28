@@ -15,13 +15,13 @@ App supported and default languages for an App Store country or region.
 object AppSupportedLanguages
 ```
 
-#### Discussion
+## Discussion
 
 The `AppSupportedLanguages` object provides metadata about a supported advertising market, including the country name, its ISO 3166-1 alpha-2 `countryCode`, and the language settings relevant for ad delivery. The `adsSupportedLanguages` field lists all languages available for ads in that market. The `adsDefaultLanguages` field lists the languages the system applies automatically when you don’t set explicit language targeting.
 
 The [`Query Supported App Languages`](./query-supported-app-languages.md) endpoint returns this object, which you use to validate locale choices before setting them on creatives or ad groups.
 
-##### Example
+### Example
 
 ```json
 {

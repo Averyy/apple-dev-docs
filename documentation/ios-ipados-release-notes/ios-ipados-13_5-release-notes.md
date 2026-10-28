@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 13.5 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 13.5. The SDK comes bundled with Xcode 11.5. For information on the compatibility requirements for Xcode 11.5, see [Xcode 11.5 Release Notes](../Xcode-Release-Notes/xcode-11_5-release-notes.md).
 
-##### Music
+### Music
 
-###### New Features
+#### New Features
 
 - A new option is available to share songs, albums, and playlists to Facebook and Instagram Stories. (60895397)
 

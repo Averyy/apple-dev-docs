@@ -24,7 +24,7 @@ protocol MTL4FXSpatialScaler : MTLFXSpatialScalerBase
 @protocol MTL4FXSpatialScaler <MTLFXSpatialScalerBase>
 ```
 
-#### Overview
+## Overview
 
 You create instances of this class by calling [`makeSpatialScaler(device:compiler:)`](./mtlfxspatialscalerdescriptor/makespatialscaler%28device,compiler%29.md).
 

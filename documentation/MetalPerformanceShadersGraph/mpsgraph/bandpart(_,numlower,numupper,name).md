@@ -24,11 +24,11 @@ func bandPart(_ inputTensor: MPSGraphTensor, numLower: Int, numUpper: Int, name:
 - (MPSGraphTensor *) bandPartWithTensor:(MPSGraphTensor *) inputTensor numLower:(NSInteger) numLower numUpper:(NSInteger) numUpper name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 This operation copies a diagonal band of values from input tensor to a result tensor of the same size. A coordinate `[..., i, j]` is in the band if
 

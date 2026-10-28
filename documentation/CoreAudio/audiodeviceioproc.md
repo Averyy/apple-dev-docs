@@ -18,11 +18,11 @@ typealias AudioDeviceIOProc = (AudioObjectID, UnsafePointer<AudioTimeStamp>, Uns
 typedef int (*)(unsigned int, const struct AudioTimeStamp *, const struct AudioBufferList *, const struct AudioTimeStamp *, struct AudioBufferList *, const struct AudioTimeStamp *, void *) __attribute__((nonblocking)) AudioDeviceIOProc;
 ```
 
-#### Return Value
+## Return Value
 
 The return value is currently unused and should always be 0.
 
-#### Discussion
+## Discussion
 
 An AudioDeviceIOProc is called by an AudioDevice to provide input data read from the device and collect output data to be written to the device for the current IO cycle.
 

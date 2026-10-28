@@ -25,7 +25,7 @@ Decodes the previously-encoded object associated by a key.
 func decodeTopLevelObject(forKey key: String) throws -> Any?
 ```
 
-#### Return Value
+## Return Value
 
 The decoded object, or `nil` if decoding fails.
 

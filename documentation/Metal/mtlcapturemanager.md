@@ -24,7 +24,7 @@ class MTLCaptureManager
 @interface MTLCaptureManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 A capture manager works with the frame capture feature to:
 

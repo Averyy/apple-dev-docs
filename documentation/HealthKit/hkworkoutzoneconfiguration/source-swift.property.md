@@ -24,7 +24,7 @@ let source: HKWorkoutZoneConfiguration.Source
 
 - [Accessing workout zone data](../accessing-workout-zone-data.md)
 
-#### Discussion
+## Discussion
 
 The source indicates whether the system generated the zones automatically, the person configured them manually in Health Settings, or an app provided them for a specific workout.
 

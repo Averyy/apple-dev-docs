@@ -25,7 +25,7 @@ func removeObject(forKey aKey: KeyType?)
 - (void) removeObjectForKey:(KeyType) aKey;
 ```
 
-#### Discussion
+## Discussion
 
 Does nothing if `aKey` does not exist.
 

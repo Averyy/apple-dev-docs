@@ -31,7 +31,7 @@ var viewContext: NSManagedObjectContext { get }
 - [Syncing a Core Data Store with CloudKit](../syncing-a-core-data-store-with-cloudkit.md)
 - [Using Core Data in the background](../using-core-data-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 This property contains a reference to the [`NSManagedObjectContext`](../nsmanagedobjectcontext.md) that is created and owned by the persistent container which is associated with the main queue of the application. This context is created automatically as part of the initialization of the persistent container.
 

@@ -21,7 +21,7 @@ A base type that represents a presentation document.
 extern UTType * const UTTypePresentation;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.presentation`.
 

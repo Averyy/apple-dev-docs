@@ -19,11 +19,11 @@ convenience init(hierarchicalColor: NSColor)
 + (instancetype) configurationWithHierarchicalColor:(NSColor *) hierarchicalColor;
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration object that creates a palette from a primary color.
 
-#### Discussion
+## Discussion
 
 This method creates a color scheme based on a single color. The system reduces the intensity of the base color to create the secondary and tertiary colors.
 

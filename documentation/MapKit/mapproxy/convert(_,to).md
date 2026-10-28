@@ -21,7 +21,7 @@ Converts a map coordinate to a point in the specified coordinate space.
 func convert(_ coordinate: CLLocationCoordinate2D, to space: some CoordinateSpaceProtocol) -> CGPoint?
 ```
 
-#### Return Value
+## Return Value
 
 Returns a [`CGPoint`](../../CoreFoundation/cgpoint.md); otherwise `nil`, if `coordinate` isn’t represented by a point in the [`MapReader`](../mapreader.md) associated with a [`Map`](../map.md).
 

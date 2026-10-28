@@ -19,11 +19,11 @@ func PMSetScale(_ pageFormat: PMPageFormat, _ scale: Double) -> OSStatus
 OSStatus PMSetScale(PMPageFormat pageFormat, double scale);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 You can call the function `PMSetScale` to change the scaling factor that appears when your application invokes the Page Setup dialog.
 

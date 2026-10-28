@@ -25,7 +25,7 @@ static let categoryBitMask: SCNHitTestOption
 extern SCNHitTestOption const SCNHitTestOptionCategoryBitMask;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../Foundation/nsnumber.md) object containing an integer value. If present, the search will return only nodes that both satisfy the hit test and have a [`categoryBitMask`](../scnnode/categorybitmask.md) value overlapping this bitmask.
 

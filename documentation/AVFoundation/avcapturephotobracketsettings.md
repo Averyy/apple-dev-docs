@@ -26,7 +26,7 @@ class AVCapturePhotoBracketSettings
 
 - [Capturing a bracketed photo sequence](./capturing-a-bracketed-photo-sequence.md)
 
-#### Overview
+## Overview
 
 To take a bracketed capture, you create and configure an [`AVCapturePhotoBracketSettings`](./avcapturephotobracketsettings.md) object, using [`AVCaptureBracketedStillImageSettings`](./avcapturebracketedstillimagesettings.md) objects to describe the individual captures in the bracket, and then pass it to the [`AVCapturePhotoOutput`](./avcapturephotooutput.md) [`capturePhoto(with:delegate:)`](./avcapturephotooutput/capturephoto%28with,delegate%29.md) method.
 

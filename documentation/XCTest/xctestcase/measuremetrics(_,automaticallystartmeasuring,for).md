@@ -16,7 +16,7 @@ func measureMetrics(_ metrics: [XCTPerformanceMetric], automaticallyStartMeasuri
 - (void) measureMetrics:(NSArray<NSString *> *) metrics automaticallyStartMeasuring:(BOOL) automaticallyStartMeasuring forBlock:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method from within a test method to measure the performance of a block of code. This method provides more granular control over performance measurement than the  [`measure(_:)`](./measure%28_%29.md) method, and should be used when you need to customize the points at which measurement starts and ends within the block, or wish to measure multiple metrics for the block.
 

@@ -20,7 +20,7 @@ var mainView: NSView { get set }
 @property (strong, nonnull) NSView * mainView;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses should not need to override this unless they override [`loadMainView()`](./loadmainview%28%29.md) or [`assignMainView()`](./assignmainview%28%29.md).
 

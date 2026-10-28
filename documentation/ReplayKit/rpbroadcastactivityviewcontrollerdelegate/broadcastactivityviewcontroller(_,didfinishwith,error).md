@@ -26,7 +26,7 @@ func broadcastActivityViewController(_ broadcastActivityViewController: RPBroadc
 - (void) broadcastActivityViewController:(RPBroadcastActivityViewController *) broadcastActivityViewController didFinishWithBroadcastController:(RPBroadcastController *) broadcastController error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 When this method is called after a broadcast has been set up successfully, retain a reference to the [`RPBroadcastController`](../rpbroadcastcontroller.md) instance contained in the `broadcastController` parameter to start and stop broadcasting.
 

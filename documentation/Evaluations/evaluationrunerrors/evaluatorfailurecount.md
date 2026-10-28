@@ -21,7 +21,7 @@ The total number of evaluator invocations that threw.
 var evaluatorFailureCount: Int
 ```
 
-#### Discussion
+## Discussion
 
 A single row can contribute more than one when multiple evaluators fail on the same sample.
 

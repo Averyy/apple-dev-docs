@@ -25,7 +25,7 @@ func CTFontManagerUnregisterFontsForURL(_ fontURL: CFURL, _ scope: CTFontManager
 extern bool CTFontManagerUnregisterFontsForURL(CFURLRef fontURL, CTFontManagerScope scope, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if unregistration of the fonts was successful, otherwise `false`.
 

@@ -19,7 +19,7 @@ func MDQueryDisableUpdates(_ query: MDQuery!)
 void MDQueryDisableUpdates(MDQueryRef query);
 ```
 
-#### Discussion
+## Discussion
 
 This function should be called before iterating over query results that could change due to live-updates. The disabled state is a counter and disabling can be done recursively and from different threads.
 

@@ -18,7 +18,7 @@ let kCGWindowName: CFString
 extern CFStringRef const kCGWindowName;
 ```
 
-#### Discussion
+## Discussion
 
 The key that identifies the name of the window, as configured in Quartz. The value for this key is a [`CFString`](../CoreFoundation/cfstring.md) type. (Note that few applications set the Quartz window name.)
 

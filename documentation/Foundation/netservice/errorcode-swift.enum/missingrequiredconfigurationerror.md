@@ -24,7 +24,7 @@ case missingRequiredConfigurationError
 NSNetServicesMissingRequiredConfigurationError
 ```
 
-#### Discussion
+## Discussion
 
 `NSBonjourServices` and `NSLocalNetworkUsageDescription` are required in Info.plist.
 

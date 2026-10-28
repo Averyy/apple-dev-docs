@@ -20,11 +20,11 @@ func elementArray(withCode code: DescType) -> SBElementArray
 - (SBElementArray *) elementArrayWithCode:(DescType) code;
 ```
 
-#### Return Value
+## Return Value
 
 An [`SBElementArray`](../sbelementarray.md) object containing every child of the receiver whose class matches `code`.
 
-#### Discussion
+## Discussion
 
 `SBObject` subclasses use this method to implement application-specific property accessor methods. You should not need to call this method directly.
 

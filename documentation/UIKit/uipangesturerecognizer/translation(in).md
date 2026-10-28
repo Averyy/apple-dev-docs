@@ -27,11 +27,11 @@ func translation(in view: UIView?) -> CGPoint
 
 - [Handling pan gestures](../handling-pan-gestures.md)
 
-#### Return Value
+## Return Value
 
 A point identifying the new location of a view in the coordinate system of its designated superview.
 
-#### Discussion
+## Discussion
 
 The x and y values report the total translation over time. They aren’t delta values from the last time that the translation was reported. Apply the translation value to the state of the view when the gesture is first recognized — don’t concatenate the value each time the handler is called.
 

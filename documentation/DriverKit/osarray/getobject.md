@@ -18,11 +18,11 @@ Returns a member of the array.
 OSObject * getObject(uint32_t index) const;
 ```
 
-#### Return Value
+## Return Value
 
 Member at the given index or NULL if the index is greater or equal to the array count. The retain count of the result object is not incremented and the object should not be release by the caller.
 
-#### Discussion
+## Discussion
 
 If the index is less than the array count the member at that index is returned, with no additional retain count (the caller should not release). Otherwise NULL.
 

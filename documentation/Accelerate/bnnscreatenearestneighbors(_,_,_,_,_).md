@@ -25,11 +25,11 @@ func BNNSCreateNearestNeighbors(_ max_n_samples: UInt32, _ n_features: UInt32, _
 BNNSNearestNeighborsBNNSCreateNearestNeighbors(const unsigned int max_n_samples, const unsigned int n_features, const unsigned int n_neighbors, const BNNSDataType data_type, const BNNSFilterParameters *filter_params);
 ```
 
-#### Return Value
+## Return Value
 
 A new k-nearest neighbors object, or `nil` if the operation failed.
 
-#### Discussion
+## Discussion
 
 The following code generates eight 2D data points and loads them into a k-nearest neighbors object with a single call to the [`BNNSNearestNeighborsLoad(_:_:_:)`](./bnnsnearestneighborsload%28_,_,_%29.md) function. The code then computes the four nearest neighbors, based on Euclidean distance, to the sample data point at index 7 of the samples data:
 

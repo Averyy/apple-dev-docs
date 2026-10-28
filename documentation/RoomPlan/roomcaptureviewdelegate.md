@@ -17,7 +17,7 @@ A specification to post-process the results of a scan.
 protocol RoomCaptureViewDelegate : NSCoding
 ```
 
-#### Overview
+## Overview
 
 The room-capture view’s delegate property ([`delegate`](./roomcaptureview/delegate.md)) is of this type.
 

@@ -19,7 +19,7 @@ A specification that provides a communication channel between the extension and 
 protocol DDDiscoveryExtensionConfigurationProtocol : AppExtensionConfiguration
 ```
 
-#### Overview
+## Overview
 
 The `DDDiscoveryExtensionConfiguration` class adopts this protocol. For an example, see `Appex.swift` in [Discovering a third-party media-streaming device](./discovering-a-third-party-media-streaming-device.md).
 

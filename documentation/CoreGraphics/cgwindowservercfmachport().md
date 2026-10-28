@@ -21,11 +21,11 @@ func CGWindowServerCFMachPort() -> CFMachPort?
 extern CFMachPortRefCGWindowServerCFMachPort();
 ```
 
-#### Return Value
+## Return Value
 
 A Core Foundation Mach port, or `NULL` if the window server is not running. When you no longer need the port, you should release it using the function `CFRelease`.
 
-#### Discussion
+## Discussion
 
 You can use this function to detect whether the window server process exits or is not running. If this function returns `NULL`, the window server is not running. This code example shows how to register a callback function to detect when the window server exits:
 

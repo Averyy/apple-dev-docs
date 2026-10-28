@@ -19,7 +19,7 @@ func scrollItemAtIndexToTop(_ index: Int)
 - (void) scrollItemAtIndexToTop:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 The pop-up list need not be displayed at the time this method is invoked.
 

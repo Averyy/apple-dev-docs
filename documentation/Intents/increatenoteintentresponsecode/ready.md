@@ -25,7 +25,7 @@ case ready
 INCreateNoteIntentResponseCodeReady
 ```
 
-#### Discussion
+## Discussion
 
 Return this response code during the confirmation phase after you have verified that you are able to create the note. Do not return this response code when handling the intent; doing so causes the system to display an error.
 

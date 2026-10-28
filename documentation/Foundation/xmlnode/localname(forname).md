@@ -20,7 +20,7 @@ class func localName(forName name: String) -> String
 + (NSString *) localNameForName:(NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 For example, if the qualified name is “bst:title”, this method returns “title”.
 

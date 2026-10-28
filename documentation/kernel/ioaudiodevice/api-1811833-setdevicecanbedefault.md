@@ -12,7 +12,7 @@ virtual void setDeviceCanBeDefault(
  UInt32defaultsFlags);
 ```
 
-#### Overview
+## Overview
 
 This is useful for device drivers that don't want to be a default device. Can be called with kIOAudioDeviceCanBeDefaultNothing to prevent CoreAudio from allowing this device to be any default device, or it can be called with any combination of kIOAudioDeviceCanBeDefaultInput, kIOAudioDeviceCanBeDefaultOutput, or kIOAudioDeviceCanBeSystemOutput. The default is (kIOAudioDeviceCanBeDefaultInput | kIOAudioDeviceCanBeDefaultOutput | kIOAudioDeviceCanBeSystemOutput).
 

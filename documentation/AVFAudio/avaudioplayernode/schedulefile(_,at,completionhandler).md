@@ -29,7 +29,7 @@ func scheduleFile(_ file: AVAudioFile, at when: AVAudioTime?) async
 - (void) scheduleFile:(AVAudioFile *) file atTime:(AVAudioTime *) when completionHandler:(AVAudioNodeCompletionHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

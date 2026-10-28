@@ -21,11 +21,11 @@ Creates a content transition intended to be used with `Text` views displaying nu
 static func numericText(value: Double) -> ContentTransition
 ```
 
-#### Return Value
+## Return Value
 
 A new content transition.
 
-#### Discussion
+## Discussion
 
 The example below creates a text view displaying a particular value, assigning the same value to the associated transition:
 

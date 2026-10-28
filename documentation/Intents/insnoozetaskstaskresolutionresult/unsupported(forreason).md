@@ -23,11 +23,11 @@ class func unsupported(forReason reason: INSnoozeTasksTaskUnsupportedReason) -> 
 + (instancetype) unsupportedForReason:(INSnoozeTasksTaskUnsupportedReason) reason;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INSnoozeTasksTaskResolutionResult`](../insnoozetaskstaskresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a resolution result object when your app doesn’t support the intent parameter for the specified reason.
 

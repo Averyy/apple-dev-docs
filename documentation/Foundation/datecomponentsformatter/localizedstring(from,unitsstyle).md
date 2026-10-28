@@ -25,11 +25,11 @@ class func localizedString(from components: DateComponents, unitsStyle: DateComp
 + (NSString *) localizedStringFromDateComponents:(NSDateComponents *) components unitsStyle:(NSDateComponentsFormatterUnitsStyle) unitsStyle;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the localized date and time information.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to format a string using the default formatter values, with the exception of the `unitsStyle` value.
 

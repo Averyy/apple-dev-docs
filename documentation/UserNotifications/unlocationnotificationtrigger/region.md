@@ -31,7 +31,7 @@ var region: CLRegion { get }
 @property (atomic, copy, readonly) CLRegion * region;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`notifyOnEntry`](../../CoreLocation/clregion/notifyonentry.md) and [`notifyOnExit`](../../CoreLocation/clregion/notifyonexit.md) properties of this region to specify whether the system sends notifications when the user enters or exits the specified geographic area.
 

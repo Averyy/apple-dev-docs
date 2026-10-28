@@ -21,7 +21,7 @@ class MSSession
 @interface MSSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  The [`MSSession`](./mssession.md) class does not declare any instance methods or properties. iMessage apps use [`MSSession`](./mssession.md) objects to identify and track updatable messages.
 
@@ -31,7 +31,7 @@ class MSSession
 - If a later message is sent using the same session, the previous message is removed from the transcript. The new message, with the updated content, is added to the bottom of the transcript, as normal.
 - If the previous message has a non-`nil` [`summaryText`](./msmessage/summarytext.md) property, the Messages app creates a summary message from the text and inserts it in the message’s previous location.
 
-##### Create New, Updatable Messages
+### Create New, Updatable Messages
 
 Use the following workflow to create a new, updatable message.
 
@@ -47,7 +47,7 @@ Use the following workflow to create a new, updatable message.
 
 The Messages app adds the message to the transcript as soon as the user taps the send button.
 
-##### Update Messages
+### Update Messages
 
 Use the following workflow to receive and update a message.
 

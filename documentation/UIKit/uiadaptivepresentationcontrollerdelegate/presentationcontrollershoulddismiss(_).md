@@ -23,11 +23,11 @@ optional func presentationControllerShouldDismiss(_ presentationController: UIPr
 - (BOOL) presentationControllerShouldDismiss:(UIPresentationController *) presentationController;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow the system to dismiss the presentation, [`false`](../../Swift/false.md) to refuse the dismissal.
 
-#### Discussion
+## Discussion
 
 The system may call this method at any time. This method isn’t guaranteed to be followed by a call to [`presentationControllerWillDismiss(_:)`](./presentationcontrollerwilldismiss%28_%29.md) or [`presentationControllerDidDismiss(_:)`](./presentationcontrollerdiddismiss%28_%29.md). Make sure that your implementation of this method returns quickly.
 

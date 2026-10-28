@@ -16,7 +16,7 @@ Convert from an Backtrace.Address.
 init?(_ address: Backtrace.Address)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer will return nil if the address width is larger than the type you are attempting to convert into.
 

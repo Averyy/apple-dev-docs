@@ -24,7 +24,7 @@ var mediaSubtypes: PHAssetMediaSubtype { get }
 @property (nonatomic, assign, readonly) PHAssetMediaSubtype mediaSubtypes;
 ```
 
-#### Discussion
+## Discussion
 
 See [`PHAssetMediaSubtype`](../phassetmediasubtype.md) for possible values.
 

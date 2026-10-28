@@ -24,7 +24,7 @@ var downloadsInterstitialAssets: Bool { get set }
 @property (nonatomic) BOOL downloadsInterstitialAssets;
 ```
 
-#### Discussion
+## Discussion
 
 Ordinarily, interstitial assets are skipped when downloading content for later playback. Setting this property to true will cause interstitial assets to be downloaded as well. Playback of the downloaded content can then match the experience of online streaming playback as closely as possible.
 

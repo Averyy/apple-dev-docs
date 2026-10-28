@@ -24,7 +24,7 @@ var rasterizationScale: CGFloat { get set }
 @property CGFloat rasterizationScale;
 ```
 
-#### Discussion
+## Discussion
 
 When the value in the [`shouldRasterize`](./shouldrasterize.md) property is [`true`](../../Swift/true.md), the layer uses this property to determine whether to scale the rasterized content (and by how much). The default value of this property is `1.0`, which indicates that the layer should be rasterized at its current size. Larger values magnify the content and smaller values shrink it.
 

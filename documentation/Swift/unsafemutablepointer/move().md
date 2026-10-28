@@ -21,11 +21,11 @@ Retrieves and returns the referenced instance, returning the pointer’s memory 
 func move() -> Pointee
 ```
 
-#### Return Value
+## Return Value
 
 The instance referenced by this pointer.
 
-#### Discussion
+## Discussion
 
 Calling the `move()` method on a pointer `p` that references memory of type `T` is equivalent to the following code, aside from any cost and incidental side effects of copying and destroying the value:
 

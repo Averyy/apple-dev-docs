@@ -24,7 +24,7 @@ var resetGateFirst: Bool { get set }
 @property (nonatomic, readwrite) BOOL resetGateFirst;
 ```
 
-#### Discussion
+## Discussion
 
 If set to `YES` then the layer will use the gate-ordering `[ r, z, o ]` instead of default `[ z, r, o ]`. Default value: `NO`.
 

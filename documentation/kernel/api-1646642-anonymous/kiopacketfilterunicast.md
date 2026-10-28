@@ -13,7 +13,7 @@
 kIOPacketFilterUnicast = 0x1
 ```
 
-#### Discussion
+## Discussion
 
 Reception of unicast packets.
 

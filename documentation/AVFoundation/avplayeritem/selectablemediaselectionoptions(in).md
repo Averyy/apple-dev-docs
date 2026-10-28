@@ -25,11 +25,11 @@ func selectableMediaSelectionOptions(in mediaSelectionGroup: AVMediaSelectionGro
 - (NSArray<AVMediaSelectionOption *> *) selectableMediaSelectionOptionsInMediaSelectionGroup:(AVMediaSelectionGroup *) mediaSelectionGroup;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the media selection options from the group that can produce content. Options in the group that are not in this array can still be selected, but will produce no content.
 
-#### Discussion
+## Discussion
 
 Some media selection options depend on other options to produce content. For example, a subtitle option generated via audio transcription may require that the source audio option is currently selected. This method filters the options in the specified group to only those that can produce content given the current state of the player item’s media selection.
 

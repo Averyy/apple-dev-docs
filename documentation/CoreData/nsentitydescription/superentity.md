@@ -25,7 +25,7 @@ unowned(unsafe) var superentity: NSEntityDescription? { get }
 @property (assign, readonly, nullable) NSEntityDescription * superentity;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver has no super-entity, returns `nil`.
 

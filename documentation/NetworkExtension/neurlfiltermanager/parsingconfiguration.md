@@ -18,7 +18,7 @@ A type to configure the filter’s parser behavior.
 struct ParsingConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use this property to control which URL components to exclude, and to customize parsing behavior during sub-URL enumeration. By default, filtering is case-insensitive and includes all components except the scheme and the `www` subdomain. The filter enumerates all possible sub-URL combinations by walking up both the domain hierarchy and path hierarchy, including intermediate results.
 

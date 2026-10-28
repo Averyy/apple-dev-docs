@@ -25,11 +25,11 @@ init(rect: CGRect, transform: UnsafePointer<CGAffineTransform>?)
 extern CGPathRefCGPathCreateWithRect(CGRect rect, const CGAffineTransform *transform);
 ```
 
-#### Return Value
+## Return Value
 
 A new, immutable path. You are responsible for releasing this object.
 
-#### Discussion
+## Discussion
 
 This is a convenience function that creates a path of an rectangle. Using this convenience function is more efficient than creating a mutable path and adding an rectangle to it.
 

@@ -41,7 +41,7 @@ typedef uint16_t SSLCipherSuite;
 typedef uint32_t SSLCipherSuite;
 ```
 
-#### Discussion
+## Discussion
 
 See [SSL Cipher Suite Values](./ssl-cipher-suite-values.md) for a list of valid values.
 

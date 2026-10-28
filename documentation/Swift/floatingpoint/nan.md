@@ -22,7 +22,7 @@ A quiet NaN (“not a number”).
 static var nan: Self { get }
 ```
 
-#### Discussion
+## Discussion
 
 A NaN compares not equal, not greater than, and not less than every value, including itself. Passing a NaN to an operation generally results in NaN.
 

@@ -5,7 +5,7 @@
 
 Remove atoms from an atom container.
 
-#### Overview
+## Overview
 
 To remove atoms from an atom container, you can use the `QTRemoveAtom` and `QTRemoveChildren` functions. The `QTRemoveAtom` function removes an atom and its children, if any, from a container. The `QTRemoveChildren` function removes an atom’s children from a container, but does not remove the atom itself. You can also use `QTRemoveChildren` to remove all the atoms in an atom container. To do so, pass the constant `kParentAtomIsContainer` for the `atom` parameter.
 

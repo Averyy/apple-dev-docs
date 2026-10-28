@@ -19,7 +19,7 @@ Creates a data source from a folder that contains images and an annotation file.
 case directoryWithImagesAndAnnotation(at: URL, annotationFile: URL, imageColumn: String, labelColumn: String)
 ```
 
-#### Discussion
+## Discussion
 
 - annotationFile: A URL to a JSON or CSV file that contains annotations for the hand pose images.
 - imageColumn: The name of the column or key name in the annotation file that contains the image filenames.

@@ -29,7 +29,7 @@ class GKAchievement
 
 - [Rewarding players with achievements](./rewarding-players-with-achievements.md)
 
-#### Overview
+## Overview
 
 Before using this class, configure your game achievements in App Store Connect. Then the dashboard shows the achievements initially locked and you can access them in your code.
 

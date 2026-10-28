@@ -31,7 +31,7 @@ class AVCaptureDevice
 - [Requesting authorization to capture and save media](./requesting-authorization-to-capture-and-save-media.md)
 - [Setting up a capture session](./setting-up-a-capture-session.md)
 
-#### Overview
+## Overview
 
 Capture devices provide media data to capture session inputs that you connect to an [`AVCaptureSession`](./avcapturesession.md). An individual device can provide one or more streams of media of a particular type.
 

@@ -10,7 +10,7 @@ Provide functionality so developer tools can manage execution policy exceptions.
 - Mac Catalyst 13.0+
 - macOS 10.15+
 
-#### Overview
+## Overview
 
 This framework provides the ability for developer tools to manage execution policy exceptions for software that’s built locally.
 

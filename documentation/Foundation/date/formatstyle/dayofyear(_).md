@@ -21,11 +21,11 @@ Modifies the date format style to use the specified day of the year format style
 func dayOfYear(_ format: Date.FormatStyle.Symbol.DayOfYear = .defaultDigits) -> Date.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date format style modified to include the specified day of the year style.
 
-#### Discussion
+## Discussion
 
 Values of [`Date.FormatStyle.Symbol.DayOfYear`](./symbol/dayofyear.md) are [`defaultDigits`](./symbol/dayofyear/defaultdigits.md), [`threeDigits`](./symbol/dayofyear/threedigits.md), and [`twoDigits`](./symbol/dayofyear/twodigits.md).
 

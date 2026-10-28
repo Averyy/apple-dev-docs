@@ -6,7 +6,7 @@
 
 The index of the image track reference.
 
-#### Overview
+## Overview
 
 This is the index returned by the `AddTrackReference` function when the image track is added as a reference to the panorama track. There can be more than one image track for a given panorama track and hence multiple references. (A panorama track might have multiple image tracks if the panoramas have different characteristics, which could occur if the panoramas were shot with different size camera lenses.) The value in this field is `0` if there is no corresponding image track.
 

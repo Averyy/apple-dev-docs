@@ -25,7 +25,7 @@ func press(forDuration duration: TimeInterval, thenDragTo otherCoordinate: XCUIC
 - (void) pressForDuration:(NSTimeInterval) duration thenDragToCoordinate:(XCUICoordinate *) otherCoordinate withVelocity:(XCUIGestureVelocity) velocity thenHoldForDuration:(NSTimeInterval) holdDuration;
 ```
 
-#### Discussion
+## Discussion
 
 This method is available in iOS and for Touch Bar interactions in macOS.
 

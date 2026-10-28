@@ -21,7 +21,7 @@ Reset to the nearest scalar-aligned code unit offset `<= i`.
 mutating func reset(roundingBackwardsFrom i: Int)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 func printScalarAfterReset(_ string: borrowing String) {

@@ -19,7 +19,7 @@ var maximumPotentialExtendedDynamicRangeColorComponentValue: CGFloat { get }
 @property (readonly) CGFloat maximumPotentialExtendedDynamicRangeColorComponentValue;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is determined when you create the [`NSScreen`](../nsscreen.md) object, and doesn’t change afterwards. If this property is greater than `1.0`, the screen supports EDR values. If the screen doesn’t support EDR values, the value is `1.0`.
 

@@ -25,7 +25,7 @@ typealias MIDISetupRef = MIDIObjectRef
 typedef MIDIObjectRef MIDISetupRef;
 ```
 
-#### Discussion
+## Discussion
 
 Derives from MIDIObjectRef, does not have an owner object.
 

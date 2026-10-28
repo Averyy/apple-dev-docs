@@ -19,7 +19,7 @@ var updateNewDeviceNames: Bool { get set }
 @property (assign) BOOL updateNewDeviceNames;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for the inquiry object is TRUE, unless this method is used to change it.
 

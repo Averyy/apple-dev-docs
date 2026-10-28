@@ -22,7 +22,7 @@ func GLKMatrix4MakeWithQuaternion(_ quaternion: GLKQuaternion) -> GLKMatrix4
 static GLKMatrix4 GLKMatrix4MakeWithQuaternion(GLKQuaternion quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix that provides an equivalent rotation to that stored in the quaternion.
 

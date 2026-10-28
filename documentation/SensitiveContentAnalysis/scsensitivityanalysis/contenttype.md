@@ -23,7 +23,7 @@ struct ContentType
 typedef NSString * SCSensitiveContentType;
 ```
 
-#### Discussion
+## Discussion
 
 The Sensitive Content Analysis framework uses content type values to indicate the specific nature of sensitive material detected in images or videos. Check the [`detectedTypes`](./detectedtypes.md) property to retrieve the set of content types the framework detects in analyzed media. This information enables your app to provide tailored responses based on the specific type of sensitive content present.
 

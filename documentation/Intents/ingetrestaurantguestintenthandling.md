@@ -22,7 +22,7 @@ protocol INGetRestaurantGuestIntentHandling : NSObjectProtocol
 @protocol INGetRestaurantGuestIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the [`INGetRestaurantGuestIntentHandling`](./ingetrestaurantguestintenthandling.md) protocol to confirm and handle requests to return information about the person making a reservation. The system delivers an [`INGetRestaurantGuestIntent`](./ingetrestaurantguestintent.md) object to your handler when the user begins the process of making a reservation. Your handler object should return information about the current user along with preferences about how the system should display that user’s information. Your handler is also responsible for specifying whether the user information displayed by the system is changable before assigning it to the reservation.
 

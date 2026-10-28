@@ -25,7 +25,7 @@ optional func peripheralManager(_ peripheral: CBPeripheralManager, willRestoreSt
 - (void) peripheralManager:(CBPeripheralManager *) peripheral willRestoreState:(NSDictionary<NSString *,id> *) dict;
 ```
 
-#### Discussion
+## Discussion
 
 This method only applies to your app if it opts in to state restoration by providing [`CBPeripheralManagerOptionRestoreIdentifierKey`](../cbperipheralmanageroptionrestoreidentifierkey.md) when initializing a [`CBPeripheralManager`](../cbperipheralmanager.md). The system invokes this method when relaunching your app to handle active advertising or peripheral operations in progress when your app stopped.
 

@@ -20,7 +20,7 @@ class func flagsState(_ stateID: CGEventSourceStateID) -> CGEventFlags
 extern CGEventFlags CGEventSourceFlagsState(CGEventSourceStateID stateID);
 ```
 
-#### Return Value
+## Return Value
 
 The current flags of the specified event source. For more information, see  [`CGEventFlags`](../cgeventflags.md).
 

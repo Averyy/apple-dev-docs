@@ -15,7 +15,7 @@ Gets the current idle suspend timeout for the interface.
 virtual kern_return_t GetIdlePolicy(uint32_t *deviceIdleTimeout);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 

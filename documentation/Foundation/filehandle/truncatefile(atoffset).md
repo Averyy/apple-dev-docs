@@ -27,7 +27,7 @@ func truncateFile(atOffset offset: UInt64)
 - (void) truncateFileAtOffset:(unsigned long long) offset;
 ```
 
-#### Discussion
+## Discussion
 
 If the file is extended (if `offset` is beyond the current end of file), the added characters are null bytes.
 

@@ -19,7 +19,7 @@ class NSCollectionViewDiffableDataSourceReference
 @interface NSCollectionViewDiffableDataSource : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  If you’re working in a Swift codebase, always use [`NSCollectionViewDiffableDataSource`](./nscollectionviewdiffabledatasource-axww.md) instead of `NSCollectionViewDiffableDataSourceReference`.
 

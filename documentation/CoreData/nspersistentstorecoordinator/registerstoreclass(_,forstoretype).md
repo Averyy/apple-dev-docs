@@ -27,7 +27,7 @@ class func registerStoreClass(_ storeClass: AnyClass?, forStoreType storeType: S
 + (void) registerStoreClass:(Class) storeClass forStoreType:(NSString *) storeType;
 ```
 
-#### Discussion
+## Discussion
 
 You must invoke this method before a custom subclass of [`NSPersistentStore`](../nspersistentstore.md) can be loaded into a persistent store coordinator.
 

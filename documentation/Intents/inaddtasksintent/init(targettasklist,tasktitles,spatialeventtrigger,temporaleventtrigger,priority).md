@@ -23,11 +23,11 @@ init(targetTaskList: INTaskList?, taskTitles: [INSpeakableString]?, spatialEvent
 - (instancetype) initWithTargetTaskList:(INTaskList *) targetTaskList taskTitles:(NSArray<INSpeakableString *> *) taskTitles spatialEventTrigger:(INSpatialEventTrigger *) spatialEventTrigger temporalEventTrigger:(INTemporalEventTrigger *) temporalEventTrigger priority:(INTaskPriority) priority;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Typically, you don’t create instances of this class yourself. SiriKit creates instances when the user asks to add tasks to a task list. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths.
 

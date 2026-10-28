@@ -15,7 +15,7 @@ Creates a regular tetrahedron, a pyramid with four triangular faces, that the pl
 static func tetrahedron(height: Float, in unit: UnitLength = .meters, restitution: Float? = nil) -> TossableRepresentation
 ```
 
-#### Discussion
+## Discussion
 
 The vertices for the simulated tetrahedron are oriented with one face downward toward -y with that face’s vertex oriented toward -z. In this orientation, the height (h) is measured from face to opposing vertex, and the vertices have the following coordinates, which all lie on a circumscribed sphere of radius r = h/2 ⋅ 3/2: Apex  - {  0,         +3/2,    0         } ⋅ h/2 = {  0,         +1,    0           } ⋅ r Base0 - {  0,         -1/2, -sqrt(2)     } ⋅ h/2 = {  0,         -1/3, -sqrt(2)⋅2/3 } ⋅ r Base1 - { +sqrt(6)/2, -1/2, +sqrt(2)/2   } ⋅ h/2 = { +sqrt(6)/3, -1/3, +sqrt(2)/3   } ⋅ r Base2 - { -sqrt(6)/2, -1/2, +sqrt(2)/2   } ⋅ h/2 = { -sqrt(6)/3, -1/3, +sqrt(2)/3   } ⋅ r
 

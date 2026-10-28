@@ -22,11 +22,11 @@ init(sessionDelegate: any UIFindInteractionDelegate)
 - (instancetype) initWithSessionDelegate:(id<UIFindInteractionDelegate>) sessionDelegate;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a find interaction object with the associated delegate.
 
-#### Discussion
+## Discussion
 
 Create an object that conforms to the [`UIFindInteractionDelegate`](../uifindinteractiondelegate.md) protocol and assign it to this property.
 

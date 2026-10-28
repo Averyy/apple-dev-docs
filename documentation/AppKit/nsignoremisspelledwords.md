@@ -19,7 +19,7 @@ protocol NSIgnoreMisspelledWords
 @protocol NSIgnoreMisspelledWords
 ```
 
-#### Overview
+## Overview
 
 The Ignore button allows the user to accept a word that the spelling checker believes is misspelled. In order for this action to update the “ignored words” list for the document being checked, the [`NSIgnoreMisspelledWords`](./nsignoremisspelledwords.md) protocol must be implemented.
 

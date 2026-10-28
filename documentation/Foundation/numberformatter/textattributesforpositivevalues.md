@@ -25,7 +25,7 @@ var textAttributesForPositiveValues: [String : Any]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,id> * textAttributesForPositiveValues;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a dictionary that contains the attributes used to display positive values.
 

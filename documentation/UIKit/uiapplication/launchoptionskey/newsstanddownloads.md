@@ -24,7 +24,7 @@ static let newsstandDownloads: UIApplication.LaunchOptionsKey
 extern UIApplicationLaunchOptionsKey const UIApplicationLaunchOptionsNewsstandDownloadsKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an array of string identifiers that identify the `NKAssetDownload` objects corresponding to the assets. Although you can use the identifiers for cross-checking purposes, you should obtain the definitive array of `NKAssetDownload` objects (representing asset downloads in progress or in error) through the `downloadingAssets` property of the `NKLibrary` object representing the Newsstand app’s library.
 

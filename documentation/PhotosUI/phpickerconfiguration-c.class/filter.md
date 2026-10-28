@@ -19,7 +19,7 @@ The filter you apply to restrict the asset types the picker displays.
 @property (nonatomic, copy, nullable) PHPickerFilter * filter;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a configuration object displays all asset types: images, Live Photos, and videos.
 

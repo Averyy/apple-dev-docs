@@ -20,11 +20,11 @@ func copyPipe(withAddress address: Int) throws -> IOUSBHostPipe
 - (IOUSBHostPipe *) copyPipeWithAddress:(NSUInteger) address error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An [`IOUSBHostPipe`](../iousbhostpipe.md) or [`nil`](../../ObjectiveC/nil-227m0.md) if the system can’t create the pipe.
 
-#### Discussion
+## Discussion
 
 If the pipe returns successfully, the method maintains a reference to the [`IOUSBHostInterface`](../iousbhostinterface.md).
 

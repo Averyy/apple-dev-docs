@@ -21,7 +21,7 @@ optional func quickSwitchManager(_ quickSwitchManager: CTQuickSwitchManager, did
 - (void) quickSwitchManager:(CTQuickSwitchManager *) quickSwitchManager didChangeToState:(CTQuickSwitchState) state;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to receive notification when the device’s quick switch state changes.
 

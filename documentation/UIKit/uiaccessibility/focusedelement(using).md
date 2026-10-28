@@ -24,7 +24,7 @@ static func focusedElement(using assistiveTechnologyIdentifier: UIAccessibility.
 extern idUIAccessibilityFocusedElement(UIAccessibilityAssistiveTechnologyIdentifier assistiveTechnologyIdentifier);
 ```
 
-#### Return Value
+## Return Value
 
 The element that is currently focused by the specified assistive technology or the element that was most recently focused, if no technology is specified.
 

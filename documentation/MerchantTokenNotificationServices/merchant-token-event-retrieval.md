@@ -14,7 +14,7 @@ Get the details of a merchant token event after receiving a notification.
 
 - [Receiving and handling merchant token notifications](../ApplePayMerchantTokenManagementAPI/receiving-and-handling-merchant-token-notifications.md)
 
-#### Discussion
+## Discussion
 
 For information about setting your server’s notification URL to receive life-cycle events, see [`tokenNotificationURL`](../PassKit/pkautomaticreloadpaymentrequest/tokennotificationurl.md) in [`PKAutomaticReloadPaymentRequest`](../PassKit/pkautomaticreloadpaymentrequest.md), [`tokenNotificationURL`](../PassKit/pkrecurringpaymentrequest/tokennotificationurl.md) in [`PKRecurringPaymentRequest`](../PassKit/pkrecurringpaymentrequest.md), [`tokenNotificationURL`](../ApplePayontheWeb/applepayautomaticreloadpaymentrequest/tokennotificationurl.md) in [`ApplePayAutomaticReloadPaymentRequest`](../ApplePayontheWeb/applepayautomaticreloadpaymentrequest.md), or [`tokenNotificationURL`](../ApplePayontheWeb/applepayrecurringpaymentrequest/tokennotificationurl.md) in [`ApplePayRecurringPaymentRequest`](../ApplePayontheWeb/applepayrecurringpaymentrequest.md).
 

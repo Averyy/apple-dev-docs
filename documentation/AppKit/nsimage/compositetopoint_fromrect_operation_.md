@@ -17,7 +17,7 @@ Composites a portion of the image to the specified point in the current coordina
 - (void) compositeToPoint:(NSPoint) point fromRect:(NSRect) rect operation:(NSCompositingOperation) operation;
 ```
 
-#### Discussion
+## Discussion
 
 This method draws the specified portion of the image without checking the bounds rectangle you pass into the `srcRect` parameter. If you specify a source rectangle that strays outside of the image’s bounds rectangle, it is conceivable that you could composite parts of the offscreen cache window that do not belong to the receiver’s image. You can avoid this problem using the [`draw(at:from:operation:fraction:)`](./draw%28at,from,operation,fraction%29.md) method, which checks the source rectangle before drawing.
 

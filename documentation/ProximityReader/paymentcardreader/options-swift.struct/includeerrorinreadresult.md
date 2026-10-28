@@ -17,7 +17,7 @@ A Boolean value that indicates whether the framework returns a result instead of
 var includeErrorInReadResult: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The default value  is `false`.
 

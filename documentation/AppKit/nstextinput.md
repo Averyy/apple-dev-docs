@@ -19,7 +19,7 @@ protocol NSTextInput
 @protocol NSTextInput
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  [`NSTextInput`](./nstextinput.md) protocol is slated for deprecation. Please use the [`NSTextInputClient`](./nstextinputclient.md) protocol instead.
 

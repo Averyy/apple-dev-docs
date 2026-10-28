@@ -3,7 +3,7 @@
 **Framework**: IOKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 IOFireWireLib is the software used by user space software to communicate with FireWire devices and control the FireWire bus. IOFireWireLib is the lowest-level FireWire interface available in user space.
 
@@ -19,7 +19,7 @@ To obtain an IOFireWireDeviceInterface for a device on the FireWire bus, use the
 
 The interface returned by IOCreatePlugInInterfaceForService() should be deallocated using IODestroyPlugInInterface(). Do not call Release() on it.
 
-##### Included Headers
+### Included Headers
 
 - <CoreFoundation/CoreFoundation.h>
 - <IOKit/IOCFPlugIn.h>

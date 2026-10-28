@@ -21,7 +21,7 @@ case unguided
 SRElectrocardiogramSessionGuidanceUnguided
 ```
 
-#### Discussion
+## Discussion
 
 The duration of this type of session is usually undefined.
 

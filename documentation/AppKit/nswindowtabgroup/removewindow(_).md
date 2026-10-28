@@ -19,7 +19,7 @@ func removeWindow(_ window: NSWindow)
 - (void) removeWindow:(NSWindow *) window;
 ```
 
-#### Discussion
+## Discussion
 
 You can use [`removeWindow(_:)`](./removewindow%28_%29.md) to explicitly remove a window from the tab group. Windows are implicity removed from their associated tab groups when they order out.
 

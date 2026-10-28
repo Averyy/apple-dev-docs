@@ -16,7 +16,7 @@ A Boolean value that indicates whether the Live Activity update synchronization 
 var isActivityUpdateReduced: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When rendering an activity on a remote device such as Apple Watch, content updates may sometimes be limited to only alerting updates, depending on system conditions. When a Live Activity is visible and the system synchronizes only alerting updates with a remote device, the value of `isActivityUpdateReduced` is `true`.
 

@@ -11,7 +11,7 @@ A type that defines a universal procedure pointer to an idle callback.
 typedef PMIdleProcPtr PMIdleUPP;
 ```
 
-#### Overview
+## Overview
 
 This data type is used by functions that are not recommended or deprecated.
 

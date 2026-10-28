@@ -21,7 +21,7 @@ A short, localized, human-readable string that conveys the app intent’s action
 static var title: LocalizedStringResource { get }
 ```
 
-#### Discussion
+## Discussion
 
 Specify title strings using a verb followed by a noun in title case. For example, an action to open an album might have the title “Open Album”. If the app intent conforms to a schema, the schema provides this value.
 

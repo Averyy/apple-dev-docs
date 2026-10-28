@@ -21,7 +21,7 @@ Sets the interval, in nanoseconds, at which to invoke the I/O handlers for the c
 func setInterval(interval: DispatchTimeInterval, flags: DispatchIO.IntervalFlags = [])
 ```
 
-#### Discussion
+## Discussion
 
 A channel interval is a way for you to receive periodic progress reports on the state of a read or write operation. You can use this feedback to update progress bars or other parts of your application.
 

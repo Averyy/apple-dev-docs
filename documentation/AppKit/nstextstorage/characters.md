@@ -19,7 +19,7 @@ var characters: [NSTextStorage] { get set }
 @property (copy) NSArray<NSTextStorage *> * characters;
 ```
 
-#### Discussion
+## Discussion
 
 Unless you’re dealing with scriptability, you shouldn’t use or modify this property directly. For indexed access to characters, use `NSAttributedString`’s [`length`](../../Foundation/nsattributedstring/length.md) method to access the string, and `NSString`’s [`character(at:)`](../../Foundation/nsstring/character%28at%29.md) method to access the individual characters.
 

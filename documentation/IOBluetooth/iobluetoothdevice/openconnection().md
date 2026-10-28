@@ -19,11 +19,11 @@ func openConnection() -> IOReturn
 - (IOReturn) openConnection;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the connection was successfully created.
 
-#### Discussion
+## Discussion
 
 This method is synchronous and will not return until either a connection has been established or the create connection has failed (perhaps timed out). This method does the same thing as calling -openConnection: with a nil target. This call with proceed without authentication required, and using the default page timeout value. If authentication or a non-default page timeout is required the method -openConnection:withPageTimeout:authenticationRequired: should be used instead.
 

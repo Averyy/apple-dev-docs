@@ -32,7 +32,7 @@ var isRenderingOffline: Bool { get set }
 @property (atomic, getter=isRenderingOffline) BOOL renderingOffline;
 ```
 
-#### Discussion
+## Discussion
 
 A host should use this property when using an audio unit in a context where there are no realtime deadlines. An audio unit may respond by using a more expensive signal processing algorithm, or allowing itself to block at render time if data being generated on secondary work threads is not ready in time.
 

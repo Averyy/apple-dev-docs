@@ -17,7 +17,7 @@ The password a person uses to login.
 let password: String?
 ```
 
-#### Discussion
+## Discussion
 
 The password can be between 1-64 characters in length. This value is `nil` if the user login doesn’t use a password.
 

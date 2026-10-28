@@ -15,7 +15,7 @@ The rotation, in degrees, of the device frame around its z-axis.
 readonly attribute unrestricted double alpha;
 ```
 
-#### Discussion
+## Discussion
 
 Values are between 0 and 360. This property is `null` if the device cannot provide this angle.
 

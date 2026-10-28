@@ -20,11 +20,11 @@ Returns a partially converted Metal vertex descriptor, reporting any error that 
 extern MTLVertexDescriptor *MTKMetalVertexDescriptorFromModelIOWithError(MDLVertexDescriptor *modelIODescriptor, NSError **error);
 ```
 
-#### Return Value
+## Return Value
 
 A Metal vertex descriptor object.
 
-#### Discussion
+## Discussion
 
 This function can only set vertex format, offset, buffer index, and stride information in the resulting [`MTLVertexDescriptor`](../Metal/mtlvertexdescriptor.md) object. The function copies attributes one-for-one, so it is up to you to properly arrange the MDLMutableVertexDescriptor attributes in the correct order so that the resulting [`MTLVertexDescriptor`](../Metal/mtlvertexdescriptor.md) object can properly map mesh data to vertex shader inputs. Layout [`stepFunction`](../Metal/mtlvertexbufferlayoutdescriptor/stepfunction.md) and [`stepRate`](../Metal/mtlvertexbufferlayoutdescriptor/steprate.md) values for the resulting [`MTLVertexDescriptor`](../Metal/mtlvertexdescriptor.md) object must also be set by your application.
 

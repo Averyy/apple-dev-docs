@@ -23,7 +23,7 @@ case enabled
 UICollectionViewSelfSizingInvalidationEnabled
 ```
 
-#### Discussion
+## Discussion
 
 If you use this self-sizing invalidation mode, calling [`invalidateIntrinsicContentSize()`](../../uiview/invalidateintrinsiccontentsize%28%29.md) on a self-sizing cell or its [`contentView`](../../uicollectionviewcell/contentview.md) causes the cell to resize if necessary.
 

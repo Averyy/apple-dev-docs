@@ -25,7 +25,7 @@ func matchesURL(_ url: URL) -> Bool
 - (BOOL) matchesURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method in a browser app that adopts the `ASWebAuthenticationWebBrowser` API. Other apps can use it for debugging purposes.
 

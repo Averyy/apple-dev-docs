@@ -22,7 +22,7 @@ nonisolated
 func toolbarVerticalCompressionBehavior(_ behavior: ToolbarVerticalCompressionBehavior) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 For example, a productivity-focused app like Files could ensure its toolbar items are preferred over the tab bar:
 

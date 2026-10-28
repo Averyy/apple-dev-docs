@@ -24,7 +24,7 @@ var localToneMapAmount: Float { get set }
 @property (readwrite) float localToneMapAmount;
 ```
 
-#### Discussion
+## Discussion
 
 The value should be in the range of `0...1`. The default value varies by image. A value of `0` indicates no local tone curve (linear response), and a value of `1` indicates full global tone curve.
 

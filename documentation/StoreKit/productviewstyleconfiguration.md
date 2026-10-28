@@ -21,7 +21,7 @@ The properties of an Apple In-App Purchase product for use by custom product vie
 struct ProductViewStyleConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use the `ProductViewStyleConfiguration` to create a custom [`ProductViewStyle`](./productviewstyle.md).
 

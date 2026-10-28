@@ -19,7 +19,7 @@ final class AccessoryControlDevice
 
 - [Supporting automatic audio switching for third-party accessories](./supporting-automatic-audio-switching.md)
 
-#### Overview
+## Overview
 
 This class registers your paired audio accessory with the system and provides updates about your device’s state changes. The configuration lets the system intelligently switch the audio output device, based on information you provide the system, such as placement and connected devices.
 

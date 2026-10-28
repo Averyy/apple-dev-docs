@@ -20,7 +20,7 @@ A component that controls whether the system performs occlusion culling on the o
 struct OcclusionCullingComponent
 ```
 
-#### Overview
+## Overview
 
 Occlusion culling can improve performance by skipping rendering for entities that are fully hidden behind other geometry. Entities are opted into this system by default.
 

@@ -19,7 +19,7 @@ func textContainerChangedTextView(_ container: NSTextContainer)
 - (void) textContainerChangedTextView:(NSTextContainer *) container;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by a text container, whenever its text view changes, to keep notifications synchronized. You should rarely need to invoke it directly.
 

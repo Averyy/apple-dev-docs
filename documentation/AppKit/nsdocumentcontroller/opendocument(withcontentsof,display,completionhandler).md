@@ -23,7 +23,7 @@ func openDocument(withContentsOf url: URL, display displayDocument: Bool) async 
 - (void) openDocumentWithContentsOfURL:(NSURL *) url display:(BOOL) displayDocument completionHandler:(void (^)(NSDocument *document, BOOL documentWasAlreadyOpen, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method checks to see if the document is already open or being opened, and if it is not determines the type of the document, calls [`makeDocument(withContentsOf:ofType:)`](./makedocument%28withcontentsof,oftype%29.md) to instantiate it, and calls [`addDocument(_:)`](./adddocument%28_%29.md) to record its opening. If `displayDocument` is [`true`](../../Swift/true.md) and the document is not already open, the default implementation calls [`makeWindowControllers()`](../nsdocument/makewindowcontrollers%28%29.md) and [`showWindows()`](../nsdocument/showwindows%28%29.md). If the document is already open, the implementation just calls [`showWindows()`](../nsdocument/showwindows%28%29.md) if `displayDocument` is [`true`](../../Swift/true.md). If the relevant document class returns [`true`](../../Swift/true.md) when sent [`canConcurrentlyReadDocuments(ofType:)`](../nsdocument/canconcurrentlyreaddocuments%28oftype%29.md) then the invocation of [`makeDocument(withContentsOf:ofType:)`](./makedocument%28withcontentsof,oftype%29.md) is done on a thread other than the main one, and when that has returned, the rest of the operation is done on the main thread.
 
@@ -33,7 +33,7 @@ You can override this method to customize how documents are opened. Its implemen
 
 You can call this method to open a document.
 
-##### Special Considerations
+### Special Considerations
 
 For backward binary compatibility with OS X v10.6 and earlier, the default implementation of this method calls `[self openDocumentWithContentsOfURL:url display:displayDocument error:&anError]` if that method or the even older [`openDocumentWithContentsOfFile:display:`](./opendocumentwithcontentsoffile_display_.md) method is overridden and this one is not, instead of calling [`makeDocument(withContentsOf:ofType:)`](./makedocument%28withcontentsof,oftype%29.md) and all the rest.
 

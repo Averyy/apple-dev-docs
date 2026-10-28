@@ -22,7 +22,7 @@ var isCurrentComplicationInfo: Bool { get }
 @property (nonatomic, readonly, getter=isCurrentComplicationInfo) BOOL currentComplicationInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to [`true`](../../Swift/true.md) if you initiated the transfer using the [`transferCurrentComplicationUserInfo(_:)`](../wcsession/transfercurrentcomplicationuserinfo%28_%29.md) method of the [`WCSession`](../wcsession.md) object or [`false`](../../Swift/false.md) otherwise.
 

@@ -25,7 +25,7 @@ func searchScopes<V, S>(_ scope: Binding<V>, @ContentBuilder scopes: () -> S) ->
 
 - [Scoping a search operation](../scoping-a-search-operation.md)
 
-#### Discussion
+## Discussion
 
 To enable people to narrow the scope of their searches, you can create a type that represents the possible scopes, and then create a state variable to hold the current selection. For example, you can scope the product search to just fruits or just vegetables:
 

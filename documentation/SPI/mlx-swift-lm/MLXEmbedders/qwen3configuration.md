@@ -17,7 +17,7 @@ Configuration for a Qwen3 model.
 struct Qwen3Configuration
 ```
 
-#### Overview
+## Overview
 
 This struct conforms to `Codable` to allow loading from standard JSON configuration files and `Sendable` for safe use across concurrent Swift tasks.
 

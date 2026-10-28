@@ -18,7 +18,7 @@ A card that displays a header, multi-line label, and a completion button.
 class OCKInstructionsTaskView
 ```
 
-#### Overview
+## Overview
 
 In CareKit, this view displays a particular event for a task. The state of the completion button indicates the completion state of the event.
 

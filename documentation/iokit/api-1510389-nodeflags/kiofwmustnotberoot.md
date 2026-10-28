@@ -14,7 +14,7 @@
 kIOFWMustNotBeRoot = (1 << 6)
 ```
 
-#### Discussion
+## Discussion
 
 Attempt to prevent this device from being root, There is no guarentee Mac OS will succeed in preventing the device from being root.
 

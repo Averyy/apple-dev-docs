@@ -23,7 +23,7 @@ func indexPathsForRows(in rect: CGRect) -> [IndexPath]?
 - (NSArray<NSIndexPath *> *) indexPathsForRowsInRect:(CGRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects each representing a row and section index identifying a row within `rect`. Returns an empty array if there aren’t any rows to return.
 

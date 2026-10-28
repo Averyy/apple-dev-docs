@@ -19,7 +19,7 @@ The time range during which the focus transitioned away from the given decision.
 final func timeRangeOfTransition(after decision: CNDecision) -> CMTimeRange
 ```
 
-#### Return Value
+## Return Value
 
 The time range during which the focus transitioned away from the given decision.
 

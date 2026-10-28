@@ -18,8 +18,8 @@ A Swift macro you use to make sure your app enum conforms to a schema.
 ## Declaration
 
 ```swift
-@attached
-(extension, conformances: AppEnum, AssistantSchemaEnum, names: named(__appSchemaEnum)) macro AppEnum<T>(schema: T) where T : AppSchemaEnum
+@attached(extension, conformances: AppEnum, AssistantSchemaEnum, names: named(__appSchemaEnum))
+macro AppEnum<T>(schema: T) where T : AppSchemaEnum
 ```
 
 ## Mentions

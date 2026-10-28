@@ -17,7 +17,7 @@ optional func deviceInquiryStarted(_ sender: IOBluetoothDeviceInquiry!)
 - (void) deviceInquiryStarted:(IOBluetoothDeviceInquiry *) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This message will be delivered when the inquiry actually starts. Since the inquiry could be throttled, this message may not be received immediately after called -start.
 

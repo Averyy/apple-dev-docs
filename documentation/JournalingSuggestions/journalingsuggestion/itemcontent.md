@@ -19,7 +19,7 @@ struct ItemContent
 
 - [Presenting the suggestions picker and processing a selection](../presenting-the-suggestions-picker-and-processing-a-selection.md)
 
-#### Overview
+## Overview
 
 When a person selects an event in the [`JournalingSuggestionsPicker`](../journalingsuggestionspicker.md), the system invokes the `onCompletion` handler that your app declares for the picker and passes in a [`JournalingSuggestion`](../journalingsuggestion.md) instance. The journaling suggestion contains an array of structures of this type in its [`items`](./items.md) property. Each instance of this structure contains one or more concrete instances of [`JournalingSuggestionAsset`](../journalingsuggestionasset.md) that represent the selection in the picker.
 

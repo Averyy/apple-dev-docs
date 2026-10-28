@@ -21,11 +21,11 @@ Creates a pose with with a position, rotation, and scale that are defined by a p
 init?(transform: ProjectiveTransform3DFloat)
 ```
 
-#### Return Value
+## Return Value
 
 A pose with a position, rotation, and scale that are defined by a projective transform.
 
-#### Discussion
+## Discussion
 
 > **Note**: This function can’t extract rotation from a non-scale-rotate-translate affine transform. In that case, the function returns `nil`.  If the specified  [`ProjectiveTransform3DFloat`](../projectivetransform3dfloat.md) doesn’t have uniform scale, the function returns `nil`.
 

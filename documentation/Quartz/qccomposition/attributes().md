@@ -21,7 +21,7 @@ func attributes() -> [AnyHashable : Any]!
 - (NSDictionary *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of composition attributes. See [Attribute Keys](../attribute-keys.md) for the attributes that can be returned.
 

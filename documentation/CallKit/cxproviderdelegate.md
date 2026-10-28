@@ -23,7 +23,7 @@ protocol CXProviderDelegate : NSObjectProtocol
 @protocol CXProviderDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The [`CXProviderDelegate`](./cxproviderdelegate.md) protocol defines a set of methods that are called by an object that represents a telephony provider it begins or resets, requests a transaction, performs an action, or an audio session changes its activation state.
 

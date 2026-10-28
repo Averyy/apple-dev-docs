@@ -21,7 +21,7 @@ Vertical offset from the center of the image buffer.
 var verticalOffset: Float
 ```
 
-#### Discussion
+## Discussion
 
 A positive value of this property will move the center of clean aperture downwards.
 

@@ -9,9 +9,9 @@ Find results that you can use to autocomplete searches.
 **Availability**:
 - Apple Maps Server API 1.2+
 
-#### Discussion
+## Discussion
 
-##### Example
+### Example
 
 **Request**:
 

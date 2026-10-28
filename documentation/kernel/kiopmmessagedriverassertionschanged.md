@@ -13,7 +13,7 @@
 #define kIOPMMessageDriverAssertionsChanged
 ```
 
-#### Discussion
+## Discussion
 
 kIOPMMessageDriverAssertionsChanged Sent when kernel PM driver assertions have changed.
 

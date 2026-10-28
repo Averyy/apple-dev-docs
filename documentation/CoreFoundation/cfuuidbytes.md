@@ -25,7 +25,7 @@ struct CFUUIDBytes
 typedef struct { ... } CFUUIDBytes;
 ```
 
-#### Overview
+## Overview
 
 This structure can be obtained from a CFUUID object using the [`CFUUIDGetUUIDBytes(_:)`](./cfuuidgetuuidbytes%28_%29.md) function. This structure can be passed to functions that expect a raw UUID.
 

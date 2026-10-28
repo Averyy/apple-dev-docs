@@ -25,11 +25,11 @@ func vImageAffineWarp_ARGB16S(_ src: UnsafePointer<vImage_Buffer>, _ dest: Unsaf
 vImage_Error vImageAffineWarp_ARGB16S(const vImage_Buffer *src, const vImage_Buffer *dest, void *tempBuffer, const vImage_AffineTransform *transform, const Pixel_ARGB_16S backColor, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
-#### Discussion
+## Discussion
 
 This function maps each pixel in the source image `[x, y]` to a new position `[x’, y’]` in the destination image using the following formula:
 
@@ -45,7 +45,7 @@ To avoid artifacts in high-frequency regions of the image, supply image data tha
 
 This function doesn’t work in place — that is, the source and destination buffers need to point to different memory.
 
-##### Optimize performance with temporary buffers
+### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 

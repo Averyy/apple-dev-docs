@@ -20,7 +20,7 @@ case actionRuntimeMismatchError
 AMActionRuntimeMismatchError
 ```
 
-#### Discussion
+## Discussion
 
 For example, the action may be compiled for 32-bit apps.
 

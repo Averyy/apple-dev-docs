@@ -25,7 +25,7 @@ case automatic
 MKAddressRepresentationsContextStyleAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 This value tells the framework to automatically select the content style for address representations. For example, when used with [`cityWithContext(_:)`](../citywithcontext%28_%29.md) MapKit only includes the region.
 

@@ -19,7 +19,7 @@ weak var immersiveEnvironmentDelegate: (any WKImmersiveEnvironmentDelegate)? { g
 @property (nonatomic, weak, nullable) id<WKImmersiveEnvironmentDelegate> immersiveEnvironmentDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate that manages immersive environment presentation.
 

@@ -24,11 +24,11 @@ func AudioCodecGetPropertyInfo(_ inCodec: AudioCodec, _ inPropertyID: AudioCodec
 extern OSStatus AudioCodecGetPropertyInfo(AudioCodec inCodec, AudioCodecPropertyID inPropertyID, UInt32 *outSize, Boolean *outWritable);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `NoErr` if successful, otherwise, a result code. See `Result Codes` for a list of possible values.
 
-#### Discussion
+## Discussion
 
 Call this function to:
 

@@ -24,7 +24,7 @@ class var sourceOut: CIBlendKernel { get }
 @property (class, strong, readonly) CIBlendKernel * sourceOut;
 ```
 
-#### Discussion
+## Discussion
 
 ![The result of using the source out blend kernel (background image is top left, foreground image is bottom left)](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-2926886@2x.png)
 

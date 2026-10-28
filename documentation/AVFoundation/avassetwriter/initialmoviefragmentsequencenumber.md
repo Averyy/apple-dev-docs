@@ -24,7 +24,7 @@ var initialMovieFragmentSequenceNumber: Int { get set }
 @property (nonatomic) NSInteger initialMovieFragmentSequenceNumber;
 ```
 
-#### Discussion
+## Discussion
 
 If you combine movie fragments that you create from multiple asset writers, movie fragment sequence numbers need to increase monotonically across the entire combined collection, in temporal order. The default value of this property is `1`.
 

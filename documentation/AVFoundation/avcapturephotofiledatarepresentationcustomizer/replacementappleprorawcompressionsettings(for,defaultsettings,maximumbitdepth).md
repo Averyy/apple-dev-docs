@@ -22,11 +22,11 @@ optional func replacementAppleProRAWCompressionSettings(for photo: AVCapturePhot
 - (NSDictionary<NSString *,id> *) replacementAppleProRAWCompressionSettingsForPhoto:(AVCapturePhoto *) photo defaultSettings:(NSDictionary<NSString *,id> *) defaultSettings maximumBitDepth:(NSInteger) maximumBitDepth;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains the replacement compression settings.
 
-#### Discussion
+## Discussion
 
 The system calls this method when writing an Apple ProRAW image to a DNG file. To configure the compression settings the system uses when writing the file, return a dictionary that contains values for the following keys:
 

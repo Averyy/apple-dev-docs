@@ -22,7 +22,7 @@ nonisolated
 func scaleEffect(x: CGFloat = 1.0, y: CGFloat = 1.0, anchor: UnitPoint = .center) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use `scaleEffect(x:y:anchor:)` to apply a scaling transform to a view by a specific horizontal and vertical amount.
 

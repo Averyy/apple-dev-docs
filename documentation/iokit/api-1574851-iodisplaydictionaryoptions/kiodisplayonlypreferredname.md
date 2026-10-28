@@ -14,7 +14,7 @@
 kIODisplayOnlyPreferredName = 0x00000200
 ```
 
-#### Discussion
+## Discussion
 
 The kDisplayProductName property includes only the localized names returned by CFBundleCopyPreferredLocalizationsFromArray().
 

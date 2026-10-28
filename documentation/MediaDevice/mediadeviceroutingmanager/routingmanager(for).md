@@ -22,11 +22,11 @@ static func routingManager(for extension: any MediaDeviceExtension) -> MediaDevi
 
 - [Creating a media device extension](../creating-a-media-device-extension.md)
 
-#### Return Value
+## Return Value
 
 The shared [`MediaDeviceRoutingManager`](../mediadeviceroutingmanager.md) instance.
 
-#### Discussion
+## Discussion
 
 Use this method to obtain the shared [`MediaDeviceRoutingManager`](../mediadeviceroutingmanager.md) instance for your extension. The routing manager is how your extension reports device discovery, state changes, and playback events to the system.
 

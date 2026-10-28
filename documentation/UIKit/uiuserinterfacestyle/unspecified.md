@@ -23,7 +23,7 @@ case unspecified
 UIUserInterfaceStyleUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 Choose this option when you want to follow the system’s interface style.
 

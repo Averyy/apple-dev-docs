@@ -16,7 +16,7 @@ get strokeColor(): string;
 set strokeColor(strokeColor: string);
 ```
 
-#### Discussion
+## Discussion
 
 This can be any valid CSS color value. Set to `null` for no stroke. The default stroke color is `rgb(0, 122, 255)`.
 

@@ -25,7 +25,7 @@ func CFSetCreateMutableCopy(_ allocator: CFAllocator!, _ capacity: CFIndex, _ th
 extern CFMutableSetRefCFSetCreateMutableCopy(CFAllocatorRef allocator, CFIndex capacity, CFSetRef theSet);
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable set that contains the same values as `theSet`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

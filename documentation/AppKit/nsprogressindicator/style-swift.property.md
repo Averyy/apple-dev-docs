@@ -19,7 +19,7 @@ var style: NSProgressIndicator.Style { get set }
 @property NSProgressIndicatorStyle style;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSProgressIndicator.Style`](./style-swift.enum.md) for possible values.
 

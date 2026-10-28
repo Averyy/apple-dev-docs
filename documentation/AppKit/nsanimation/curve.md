@@ -19,7 +19,7 @@ enum Curve
 enum NSAnimationCurve : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 You initialize an `NSAnimation` object using one of these constants with [`init(duration:animationCurve:)`](./init%28duration,animationcurve%29.md) and you can set it thereafter with the [`animationCurve`](./animationcurve.md) property.
 

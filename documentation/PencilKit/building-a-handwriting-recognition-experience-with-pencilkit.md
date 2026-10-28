@@ -12,7 +12,7 @@ Integrate handwriting recognition into your app to identify written text across 
 - Mac Catalyst 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 ![A screenshot showing the word heart handwritten in English on the canvas, with PencilKit displaying its Chinese character translation at the top of the screen.](https://developer.apple.com/tutorials/images/com.apple.pencilkit/building-a-handwriting-recognition-experience-with-pencilkit@2x.png)
 

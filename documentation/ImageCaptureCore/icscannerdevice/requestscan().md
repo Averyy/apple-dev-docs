@@ -19,7 +19,7 @@ func requestScan()
 - (void) requestScan;
 ```
 
-#### Discussion
+## Discussion
 
 Once the request to start an overview scan has completed, [`scannerDevice(_:didCompleteScanWithError:)`](../icscannerdevicedelegate/scannerdevice%28_,didcompletescanwitherror%29.md) is called on the delegate.
 

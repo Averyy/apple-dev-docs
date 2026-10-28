@@ -5,13 +5,13 @@
 
 Request the entitlement for DriverKit development, and request other entitlements your driver needs to interact with specific devices and interfaces.
 
-#### Overview
+## Overview
 
 DriverKit services communicate with sensitive parts of the system, including kernel objects and attached hardware peripherals. To ensure that these interactions don’t compromise the security or integrity of the system, the system loads only drivers that have a valid set of entitlements. The DriverKit entitlements give your driver permission to run as a driver, define the type of hardware your driver supports, and sometimes define the family to which your driver belongs.
 
 When you develop a DriverKit extension, you deliver that extension inside in a specific directory of your app bundle. The app handles the activation of your extension, which registers it with the system and makes its services available for use. To perform this installation, your app must have the System Extension entitlement.
 
-##### Gather Information About Your Hardware Devices
+### Gather Information About Your Hardware Devices
 
 Before you request entitlements, gather information about the hardware devices for which you’ll need drivers. Specifically, you’ll need the following information:
 
@@ -20,7 +20,7 @@ Before you request entitlements, gather information about the hardware devices f
 - Brief descriptions of the devices.
 - A brief description of the app you’ll use to install the driver.
 
-##### Request the DriverKit Entitlements You Need
+### Request the DriverKit Entitlements You Need
 
 Before you begin developing drivers for your hardware, request the entitlements you need from Apple:
 
@@ -32,7 +32,7 @@ Apple ties any requested entitlements to your development team’s profile. When
 
 > **Note**:  While waiting for Apple to grant your entitlement requests, you can continue to develop and test your drivers on your local systems. For information about how to disable the necessary security checks, see [Debugging and testing system extensions](./debugging-and-testing-system-extensions.md).
 
-##### Update Your Driver’s Entitlements File
+### Update Your Driver’s Entitlements File
 
 Xcode provides a default entitlements file for every new DriverKit driver you create. This file is separate from your app’s entitlements file, and contains only the entitlements that your driver needs to run.
 
@@ -45,7 +45,7 @@ When activating your driver, the system validates the entitlements in your drive
 
 For infomation about specific entitlements, see the reference documentation.
 
-##### Configure Your Driver’s Provisioning Profile
+### Configure Your Driver’s Provisioning Profile
 
 To distribute a driver using the entitlements that Apple provides, go to the Certificates, Identifiers & Profiles section of the Apple developer portal ([https://developer.apple.com](https://developer.apple.com)) and do the following:
 
@@ -56,7 +56,7 @@ When you create the provisioning profile for your driver, the portal prompts you
 
 > **Note**:  During development, you can temporarily disable the normal security checks to simplify the debugging process for your drivers. For more information, see [Debugging and testing system extensions](./debugging-and-testing-system-extensions.md).
 
-##### Add the System Extension Capability to Your App
+### Add the System Extension Capability to Your App
 
 The app you use to deliver your driver to users must also have specific entitlements to support the activation process. To add these entitlements to your app, enable the System Extension capability for your app target.
 

@@ -19,7 +19,7 @@ func drawHashMarksAndLabels(in rect: NSRect)
 - (void) drawHashMarksAndLabelsInRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked by [`draw(_:)`](../nsrulermarker/draw%28_%29.md)—you should never need to invoke it directly. You can define custom measurement units using the class method [`registerUnit(withName:abbreviation:unitToPointsConversionFactor:stepUpCycle:stepDownCycle:)`](./registerunit%28withname,abbreviation,unittopointsconversionfactor,stepupcycle,stepdowncycle%29.md). Override this method if you want to customize the appearance of the hash marks themselves.
 

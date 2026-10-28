@@ -27,7 +27,7 @@ protocol UITableViewDragDelegate : NSObjectProtocol
 
 - [Supporting drag and drop in table views](./supporting-drag-and-drop-in-table-views.md)
 
-#### Overview
+## Overview
 
 Implement this protocol in the object that you use to initiate drags from your table view. The only required method of this protocol is the [`tableView(_:itemsForBeginning:at:)`](./uitableviewdragdelegate/tableview%28_,itemsforbeginning,at%29.md) method, but you can implement other methods as needed to customize the drag behavior of your table view.
 

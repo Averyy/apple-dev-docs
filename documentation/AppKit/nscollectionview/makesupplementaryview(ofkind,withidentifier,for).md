@@ -19,11 +19,11 @@ func makeSupplementaryView(ofKind elementKind: NSCollectionView.SupplementaryEle
 - (NSView *) makeSupplementaryViewOfKind:(NSCollectionViewSupplementaryElementKind) elementKind withIdentifier:(NSUserInterfaceItemIdentifier) identifier forIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A view that adopts the [`NSCollectionViewElement`](../nscollectionviewelement.md) protocol.
 
-#### Discussion
+## Discussion
 
 This method looks for a recycled supplementary view of the specified type and returns it if one exists. If one does not exist, it creates it using one of the following techniques:
 

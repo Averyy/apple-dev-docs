@@ -24,11 +24,11 @@ init(device: any MTLDevice, kernelWidth: Int, kernelHeight: Int)
 - (instancetype) initWithDevice:(id<MTLDevice>) device kernelWidth:(NSUInteger) kernelWidth kernelHeight:(NSUInteger) kernelHeight;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSCNNSpatialNormalization`](../mpscnnspatialnormalization.md) object or `nil`, if failure.
 
-#### Discussion
+## Discussion
 
 > **Note**:  The value of `kernelWidth` must be equal to the value of `kernelHeight`.
 

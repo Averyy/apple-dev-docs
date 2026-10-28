@@ -22,11 +22,11 @@ Decodes a value from the provided decoder.
 static func decode(from decoder: any Decoder) throws -> Self.Value
 ```
 
-#### Return Value
+## Return Value
 
 The decoded value.
 
-#### Discussion
+## Discussion
 
 This method throws an error if reading from the decoder fails, or if the data read is corrupted or otherwise invalid.
 

@@ -25,7 +25,7 @@ var isAdvertisingTrackingEnabled: Bool { get }
 @property (nonatomic, readonly, getter=isAdvertisingTrackingEnabled) BOOL advertisingTrackingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: This property is deprecated. Functionality has been replaced by the [App Tracking Transparency](../../AppTrackingTransparency/AppTrackingTransparency.md) framework.
 

@@ -19,7 +19,7 @@ protocol NSSharingServicePickerDelegate : NSObjectProtocol
 @protocol NSSharingServicePickerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt the [`NSSharingServicePickerDelegate`](./nssharingservicepickerdelegate.md) protocol in one of your app’s types, and use it to manage interactions with an [`NSSharingServicePicker`](./nssharingservicepicker.md) object. Use your delegate object to customize the services for the proposed items and respond to the selection of a shared service.
 

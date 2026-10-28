@@ -29,7 +29,7 @@ func programGuide(with params: MTRChannelClusterGetProgramGuideParams?) async th
 - (void) getProgramGuideWithParams:(MTRChannelClusterGetProgramGuideParams *) params completion:(void (^)(MTRChannelClusterProgramGuideResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command retrieves the program guide. It accepts several filter parameters to return specific schedule and program information from a content app. The command shall receive in response a ProgramGuideResponse.
 

@@ -16,11 +16,11 @@ Set the status pointer for a NuDCL
 IOReturn (*SetDCLStatusPtr)(NuDCLRef dcl, UInt32 *statusPtr);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn error code.
 
-#### Discussion
+## Discussion
 
 Setting a the status pointer for a NuDCL causes the packet transmit/receive hardware status to be recorded when the DCL executes. This DCL must be updated after it has executed for the status to be valid.
 

@@ -22,7 +22,7 @@ nonisolated
 protocol GeometryEffect : Animatable, ViewModifier where Self.Body == Never
 ```
 
-#### Overview
+## Overview
 
 The only change the effect makes to the view’s ancestors and descendants is to change the coordinate transform to and from them.
 

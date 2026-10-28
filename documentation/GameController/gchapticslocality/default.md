@@ -24,7 +24,7 @@ static let `default`: GCHapticsLocality
 extern GCHapticsLocality const GCHapticsLocalityDefault;
 ```
 
-#### Discussion
+## Discussion
 
 Controllers must support this location, and it can be the same as [`all`](./all.md).
 

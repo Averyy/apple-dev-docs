@@ -5,7 +5,7 @@
 
 Increase the available use time for your app on a single battery charge by reducing your appʼs power consumption.
 
-#### Overview
+## Overview
 
 A person’s device maximizes its battery life by reducing its use of power-consuming subsystems when apps don’t require them. For example, when there aren’t any apps making a network request, the device can switch off its Wi-Fi and cellular components.
 
@@ -15,7 +15,7 @@ When your app uses these features, it reduces the time the device lasts between 
 
 Gather information from Xcode, MetricKit, and Instruments to understand your app’s battery use, and identify and prioritize opportunities for improving your app’s performance.
 
-##### Review your app’s energy use in Xcode
+### Review your app’s energy use in Xcode
 
 The Battery Usage pane in the Xcode Organizer shows a breakdown of the appʼs foreground and background power use by app version, giving you a starting place to optimize power consumption. The graph only includes app versions for which Xcode has sufficient information to display metrics.
 
@@ -40,17 +40,17 @@ The power-use categories are:
 - NFC
 - Other: A combination of the power in the above categories thatʼs too small to show in the list, plus any system power usage outside these categories.
 
-##### Review energy exception reports
+### Review energy exception reports
 
 When your app uses a significant amount of energy over a 24-hour period, the system generates an energy exception report. View aggregated exception reports in the Energy pane of the Xcode Organizer.
 
 Each report in the Report List shows the function that caused the exception and the percentage of total energy use it accounts for. Clicking a report shows a sample stack trace, as well as additional details in the Inspector, including operating system version, device model, the number of logs received, and a 14-day reporting trend.
 
-##### Get coding assistant recommendations for energy issues
+### Get coding assistant recommendations for energy issues
 
 After selecting an energy report, click Generate Recommendations in the Inspector to get assisted triage in Xcode. After selecting a workspace, Xcode opens your project and pastes the stack trace and energy-use context into the coding assistant to help you identify and fix the root cause of the excessive energy use.
 
-##### Measure your running app’s power use in Xcode
+### Measure your running app’s power use in Xcode
 
 In Xcode, set the run destination to a device and choose Product > Run. For more information, see [Running your app on simulated or physical devices](./running-your-app-on-simulated-or-physical-devices.md).
 
@@ -58,7 +58,7 @@ In the Debug navigator, show the debug gauges and click Energy Impact to see you
 
 ![Screenshot of the Energy Impact view in Xcode. A gauge shows the average overall energy impact of the running app, and other charts report which power-use categories are active, and the state of the device.](https://developer.apple.com/tutorials/images/com.apple.Xcode/xcode-energy-gauges@2x.png)
 
-##### Gather power metrics
+### Gather power metrics
 
 Use [MetricKit](../MetricKit/MetricKit.md) to receive metrics about how your app uses the battery on people’s devices. Understand your app’s battery use by gathering the following metrics:
 
@@ -70,17 +70,17 @@ Use [MetricKit](../MetricKit/MetricKit.md) to receive metrics about how your app
 | Location activity | [`LocationActivityTimeMetric`](../MetricKit/locationactivitytimemetric.md) |
 | Network activity | [`TotalWiFiUploadMetric`](../MetricKit/totalwifiuploadmetric.md), [`TotalWiFiDownloadMetric`](../MetricKit/totalwifidownloadmetric.md), [`TotalCellularUploadMetric`](../MetricKit/totalcellularuploadmetric.md), [`TotalCellularDownloadMetric`](../MetricKit/totalcellulardownloadmetric.md) |
 
-##### Profile your app’s power use in Instruments
+### Profile your app’s power use in Instruments
 
 Use the Power Profiler tool in Instruments to investigate your app’s battery use. You can use this tool to analyze data you collect during development, and data that someone sends you from a device on which they use your app. For more information, see [Measuring your app’s power use with Power Profiler](./measuring-your-app-s-power-use-with-power-profiler.md).
 
-##### Measure energy use in performance tests
+### Measure energy use in performance tests
 
 If you identify that a particular part of your code contributes significantly to your app’s overall energy use through CPU-intensive activity, create a performance test that measures that code’s CPU use. Run the test regularly to detect regressions in your app’s CPU use, which may cause a corresponding increase in energy use.
 
 Use [`XCTCPUMetric`](../XCTest/xctcpumetric.md) in your performance test to measure the CPU use of the code block in the test. For more information, see [Writing and running performance tests](./writing-and-running-performance-tests.md).
 
-##### Adopt recommended practices for minimizing battery use
+### Adopt recommended practices for minimizing battery use
 
 Reduce the work your app does, and perform the remaining work in more efficient ways. For more information, see [Reducing your app’s battery use](./reducing-your-app-s-battery-use.md).
 

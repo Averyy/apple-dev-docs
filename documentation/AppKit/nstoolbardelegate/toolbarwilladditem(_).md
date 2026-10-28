@@ -23,7 +23,7 @@ optional func toolbarWillAddItem(_ notification: Notification)
 - (void) toolbarWillAddItem:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to cache references to new toolbar items or perform any tasks related to the addition of those items.
 

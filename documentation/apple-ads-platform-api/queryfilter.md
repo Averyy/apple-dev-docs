@@ -15,11 +15,11 @@ A single filter condition in a query request, specifying a field, comparison ope
 object QueryFilter
 ```
 
-#### Discussion
+## Discussion
 
 The `QueryFilter` defines one filter condition in a `QueryRequest.filters` array. Not all endpoints support all operators. Refer to each entity’s Properties section for the supported operators per field.
 
-##### Example
+### Example
 
 ```json
 {

@@ -22,11 +22,11 @@ class func titleProperty(forGroupingType groupingType: MPMediaGrouping) -> Strin
 + (NSString *) titlePropertyForGroupingType:(MPMediaGrouping) groupingType;
 ```
 
-#### Return Value
+## Return Value
 
 The title key for the group type.
 
-#### Discussion
+## Discussion
 
 Use this convenience method to obtain the key for the title that corresponds to a specified grouping type. For example, the following statement obtains the title key for the album grouping type:
 

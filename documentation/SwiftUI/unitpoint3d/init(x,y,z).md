@@ -15,7 +15,7 @@ Creates a 3D unit point with the specified offsets.
 init(x: CGFloat, y: CGFloat, z: CGFloat)
 ```
 
-#### Discussion
+## Discussion
 
 Values outside the range `[0, 1]` project to points outside of a view.
 

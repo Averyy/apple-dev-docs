@@ -25,7 +25,7 @@ var smoothness: Float { get set }
 @property (nonatomic) float smoothness;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter should be a value between `0.0` and `1.0`, where `1.0` represents a uniform smoothness.
 

@@ -27,7 +27,7 @@ var thoroughfare: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * thoroughfare;
 ```
 
-#### Discussion
+## Discussion
 
 The street address contains the street name. For example, if the placemark location is Apple’s headquarters, the value for this property would be the string “Apple Park Way”.
 

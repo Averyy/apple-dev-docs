@@ -20,7 +20,7 @@ nonisolated
 struct TableOutlineGroupContent<Data> where Data : RandomAccessCollection, Data.Element : Identifiable
 ```
 
-#### Overview
+## Overview
 
 This row content is created by `Table.init(_:,children:,...)` initializers as the table’s `Rows` generic type.
 

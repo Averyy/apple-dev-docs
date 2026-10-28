@@ -16,7 +16,7 @@ A structure to represent limitations of tracking the user’s surroundings.
 struct WorldTrackingLimitation
 ```
 
-#### Overview
+## Overview
 
 You receive a set of world tracking limitations when you read the [`worldTrackingLimitations`](./environmentvalues/worldtrackinglimitations.md) environment value. The value tells you which limitations the device currently is facing. If any of the limitations occur due to changing circumstances, e.g., the lighting, the set is updated accordingly. For example, the following [`Text`](./text.md) view automatically updates when the world tracking limitations change:
 

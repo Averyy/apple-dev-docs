@@ -19,7 +19,7 @@ var person: ABPerson! { get set }
 @property (retain, readwrite) ABPerson * person;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is `nil`, the view displays a special empty-selection UI.
 

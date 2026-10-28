@@ -15,7 +15,7 @@ The abstract superclass for Libkern collections.
 class OSCollection : OSObject
 ```
 
-#### Overview
+## Overview
 
 OSCollection is the abstract superclass for all Libkern C++ object collections. It defines the necessary interfaces for managing storage space and iterating through an arbitrary collection (see the OSIterator and OSCollectionIterator classes). It is up to concrete subclasses to define their specific content management functions.
 

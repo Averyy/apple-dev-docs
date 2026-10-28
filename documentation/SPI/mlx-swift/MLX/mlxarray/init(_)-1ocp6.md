@@ -17,7 +17,7 @@ Initializer allowing creation of a multi dimensional `MLXArray` from a nested ar
 convenience init<N>(_ value: [[N]]) where N : NestedArrayElement
 ```
 
-#### Discussion
+## Discussion
 
 The shape is inferred directly from the provided array. Note that the nesting must be rectangular (all arrays of a given level must have the same count). Failing to meet this constraint will hit a precondition failure.
 
@@ -32,7 +32,7 @@ let cube = MLXArray([[[1, 2], [3, 4]], [[5, 6], [7, 8]]])
 
 Note: as with the one dimensional initializers, `Int` values produce a [`DType.int32`](../dtype/int32.md) result and the precondition will fail if a value is out of bounds.  See [`init(int64:)`](./init%28int64%29-4fpsp.md) if `.int64` is required.
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 - [`init(int64:)`](./init%28int64%29-4fpsp.md)

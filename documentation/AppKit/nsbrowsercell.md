@@ -19,7 +19,7 @@ class NSBrowserCell
 @interface NSBrowserCell : NSCell
 ```
 
-#### Overview
+## Overview
 
 The [`NSBrowserCell`](./nsbrowsercell.md) class is the subclass of [`NSCell`](./nscell.md) used by default to display data in the columns of an [`NSBrowser`](./nsbrowser.md) object. (Each column contains an [`NSMatrix`](./nsmatrix.md) object filled with [`NSBrowserCell`](./nsbrowsercell.md) objects.)
 

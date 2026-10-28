@@ -25,7 +25,7 @@ func activate()
 - (void) activate;
 ```
 
-#### Discussion
+## Discussion
 
 Connections start in an inactive state. You must call [`activate()`](./activate%28%29.md) on a connection before it can send or receive any messages.
 

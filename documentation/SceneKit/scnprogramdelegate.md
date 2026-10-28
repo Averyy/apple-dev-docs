@@ -25,7 +25,7 @@ protocol SCNProgramDelegate : NSObjectProtocol
 @protocol SCNProgramDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You create and use custom shader programs with the  [`SCNProgram`](./scnprogram.md) class.
 

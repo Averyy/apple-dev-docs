@@ -24,7 +24,7 @@ let CIFeatureTypeText: String
 extern NSString * const CIFeatureTypeText;
 ```
 
-#### Discussion
+## Discussion
 
 To detect text in an image or video, pass this to `/CIDetector/detectorOfType:context:options:`
 

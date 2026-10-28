@@ -20,7 +20,7 @@ typealias AEEventSource = Int8
 typedef SInt8 AEEventSource;
 ```
 
-#### Discussion
+## Discussion
 
 [Event Source Constants](./apple_events/api-1527201-event_source_constants.md) lists the valid constant values for a variable or parameter of type `AEEventSource`.
 

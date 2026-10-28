@@ -22,7 +22,7 @@ var userString: String? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSString * userString;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property if you set the `ILClassificationExtensionSMSReportDestination` key in the extension’s `Info.plist` file. The string can store additional data that you want to pass in the SMS message.
 

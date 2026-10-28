@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 10.5 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 10.5. The SDK comes bundled with Xcode 15.4. For information on the compatibility requirements for Xcode 15.4, see [Xcode 15.4 Release Notes](../Xcode-Release-Notes/xcode-15_4-release-notes.md).
 
-##### StoreKit
+### StoreKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where the Terms of Service button on `SubscriptionStoreView` could cause a crash when tapped.  (123383479)
 - Fixed: Resolved an issue causing ExternalPurchaseLink.open() to not open the external purchase URL.  (125858142)

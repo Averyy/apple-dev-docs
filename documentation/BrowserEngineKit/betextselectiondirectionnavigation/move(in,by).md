@@ -23,7 +23,7 @@ func move(in direction: UITextStorageDirection, by granularity: UITextGranularit
 - (void) moveInStorageDirection:(UITextStorageDirection) direction byGranularity:(UITextGranularity) granularity;
 ```
 
-#### Discussion
+## Discussion
 
 Option + left/right = word Option + up/down = paragraph Command + left/right = line Command + up/down = document
 

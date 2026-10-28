@@ -17,11 +17,11 @@ Creates a connectable Wi-Fi Aware endpoint from a browse result.
 func makeEndpoint(from browseResult: NWBrowser.Result) throws -> WASubscriberBrowser.Endpoint?
 ```
 
-#### Return Value
+## Return Value
 
 A `WAEndpoint` that you can connect to, or `nil` if it can’t be created.
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the result isn’t valid.
 

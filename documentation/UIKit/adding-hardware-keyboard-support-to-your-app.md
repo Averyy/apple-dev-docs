@@ -12,7 +12,7 @@ Enhance interactions with your app by handling raw keyboard events, writing cust
 - Mac Catalyst 14.0+
 - Xcode 12.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC20 session [10109: Hardware Keyboard Best Practices](https://developer.apple.com/wwdc20/10109/).
 

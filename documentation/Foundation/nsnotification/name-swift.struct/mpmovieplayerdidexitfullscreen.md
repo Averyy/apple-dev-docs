@@ -20,7 +20,7 @@ Posted when a movie player has exited full-screen mode. There is no `userInfo` d
 static let MPMoviePlayerDidExitFullscreen: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 A movie player can exit full screen mode programmatically (see the [`setFullscreen(_:animated:)`](../../../MediaPlayer/mpmovieplayercontroller/setfullscreen%28_,animated%29.md) method) or by user interaction. The movie player whose state has changed is available as the object associated with the notification.
 

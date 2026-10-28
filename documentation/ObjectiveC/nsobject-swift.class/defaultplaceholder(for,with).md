@@ -19,7 +19,7 @@ class func defaultPlaceholder(for marker: Any?, with binding: NSBindingName) -> 
 + (id) defaultPlaceholderForMarker:(id) marker withBinding:(NSBindingName) binding;
 ```
 
-#### Discussion
+## Discussion
 
 The `marker` can be `nil` or one of the constants described in [Selection Markers](../../AppKit/selection-markers.md).
 

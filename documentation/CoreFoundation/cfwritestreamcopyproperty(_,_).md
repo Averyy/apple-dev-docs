@@ -25,11 +25,11 @@ func CFWriteStreamCopyProperty(_ stream: CFWriteStream!, _ propertyName: CFStrea
 extern CFTypeRefCFWriteStreamCopyProperty(CFWriteStreamRef stream, CFStreamPropertyKey propertyName);
 ```
 
-#### Return Value
+## Return Value
 
 The value of the property `propertyName`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Each type of stream can define a set of properties that either describe or configure individual streams. A property can be any interesting information about a stream. Examples include the headers from an HTTP transmission, the expected number of bytes, file permission information, and so on. Use [`CFWriteStreamSetProperty(_:_:_:)`](./cfwritestreamsetproperty%28_,_,_%29.md) to modify the value of a property, although some properties are read-only.
 

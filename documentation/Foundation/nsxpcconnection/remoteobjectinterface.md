@@ -25,7 +25,7 @@ var remoteObjectInterface: NSXPCInterface? { get set }
 @property (retain, nullable) NSXPCInterface * remoteObjectInterface;
 ```
 
-#### Discussion
+## Discussion
 
 The proxy represents the `exportedObject` on the `NSXPCConnection` in the other process.
 

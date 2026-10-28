@@ -25,7 +25,7 @@ var stride: (Int, Int, Int, Int, Int, Int, Int, Int)
 size_t stride[8];
 ```
 
-#### Discussion
+## Discussion
 
 Specify the stride of an array descriptor the define the increment between neighboring elements in each dimension. For example, the following values represent a 2D row-major matrix:
 

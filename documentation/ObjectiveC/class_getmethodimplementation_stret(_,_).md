@@ -19,7 +19,7 @@ func class_getMethodImplementation_stret(_ cls: AnyClass?, _ name: Selector) -> 
 extern IMPclass_getMethodImplementation_stret(Class cls, SEL name);
 ```
 
-#### Return Value
+## Return Value
 
 The function pointer that would be called if `[object name]` were called with an instance of the class, or `NULL` if `cls` is `Nil`.
 

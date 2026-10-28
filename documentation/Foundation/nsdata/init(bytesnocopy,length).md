@@ -25,11 +25,11 @@ init(bytesNoCopy bytes: UnsafeMutableRawPointer, length: Int)
 - (instancetype) initWithBytesNoCopy:(void *) bytes length:(NSUInteger) length;
 ```
 
-#### Return Value
+## Return Value
 
 A data object initialized by adding to it `length` bytes of data from the buffer `bytes`. The returned object might be different than the original receiver.
 
-#### Discussion
+## Discussion
 
 The returned object takes ownership of the `bytes` pointer and frees it on deallocation. Therefore, `bytes` must point to a memory block allocated with `malloc`.
 

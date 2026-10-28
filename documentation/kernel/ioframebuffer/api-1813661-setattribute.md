@@ -13,11 +13,11 @@ virtual IOReturn setAttribute(
  uintptr_tvalue );
 ```
 
-#### Return Value
+## Return Value
 
 an IOReturn code.
 
-#### Overview
+## Overview
 
 IOFramebuffer subclasses may implement this method to allow arbitrary attribute/value pairs to be set.
 

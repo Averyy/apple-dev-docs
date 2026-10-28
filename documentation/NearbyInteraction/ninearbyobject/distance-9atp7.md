@@ -22,7 +22,7 @@ The distance from the user’s device to the peer device in meters.
 
 - [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 
-#### Discussion
+## Discussion
 
 This property contains the distance in meters between the local device and the peer device described by [`NINearbyObject`](../ninearbyobject.md). If the framework fails to acquire the peer device’s distance, the value is [`NINearbyObjectDistanceNotAvailable`](../ninearbyobjectdistancenotavailable.md).
 

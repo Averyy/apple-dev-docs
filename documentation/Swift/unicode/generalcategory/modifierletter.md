@@ -21,7 +21,7 @@ A modifier letter.
 case modifierLetter
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Modifier_Letter` (abbreviated `Lm`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

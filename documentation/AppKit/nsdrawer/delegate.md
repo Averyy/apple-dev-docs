@@ -21,7 +21,7 @@ unowned(unsafe) var delegate: (any NSDrawerDelegate)? { get set }
 @property (assign, nullable) id<NSDrawerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 You may find it useful to associate a delegate with a drawer, especially since drawers do not open and close instantly. A drawer’s delegate can better regulate drawer behavior.
 

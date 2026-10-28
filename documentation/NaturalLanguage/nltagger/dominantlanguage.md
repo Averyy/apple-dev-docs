@@ -25,7 +25,7 @@ var dominantLanguage: NLLanguage? { get }
 @property (nonatomic, copy, readonly, nullable) NLLanguage dominantLanguage;
 ```
 
-#### Discussion
+## Discussion
 
 If you want to know the dominant language of a string that you’re analyzing with a linguistic tagger (for example, identifying part of speech for each word), specify the [`language`](../nltagscheme/language.md) tag scheme in the initializer. After you set the [`string`](./string.md) property of the linguistic tagger, the dominant language can be determined with the [`dominantLanguage`](./dominantlanguage.md) property, as shown in this example:
 

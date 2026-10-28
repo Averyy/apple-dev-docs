@@ -15,11 +15,11 @@ Returns an index number to access per-task storage.
 OSStatus MPAllocateTaskStorageIndex(TaskStorageIndex *taskIndex);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 A call to the function `MPAllocateTaskStorageIndex` returns an index number that is common across all tasks in the current process. You can use this index number in calls to  [`MPSetTaskStorageValue`](./api-1585626-mpsettaskstoragevalue.md)  and  [`MPGetTaskStorageValue`](./api-1585589-mpgettaskstoragevalue.md)  to set a different value for each task using the same index. 
 

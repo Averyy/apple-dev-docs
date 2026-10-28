@@ -15,7 +15,7 @@ Returns the CFBundleVersion for the calling kext as a C string.
 const char * OSKextGetCurrentVersionString(void);
 ```
 
-#### Return Value
+## Return Value
 
 The CFBundleVersion for the calling kext as a C string.
 

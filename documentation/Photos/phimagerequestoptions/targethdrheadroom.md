@@ -24,7 +24,7 @@ var targetHDRHeadroom: CGFloat { get set }
 @property (nonatomic, assign) CGFloat targetHDRHeadroom;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the target headroom value for HDR image rendering. Headroom represents the ratio between the maximum display brightness and standard dynamic range (SDR) white level.
 

@@ -14,7 +14,7 @@ func simd_negate(_ q: simd_quath) -> simd_quath
 static simd_quath simd_negate(simd_quath q);
 ```
 
-#### Discussion
+## Discussion
 
 The negation (additive inverse) of the quaternion `q`.
 

@@ -25,11 +25,11 @@ func canUpdateRecord(forManagedObjectWith objectID: NSManagedObjectID) -> Bool
 - (BOOL) canUpdateRecordForManagedObjectWithID:(NSManagedObjectID *) objectID;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user can modify the CloudKit record; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method returns [`true`](../../Swift/true.md) if [`canModifyManagedObjects(in:)`](./canmodifymanagedobjects%28in%29.md) returns [`true`](../../Swift/true.md) and any of the following conditions are true:
 

@@ -25,7 +25,7 @@ var string: String? { get }
 @property (copy, readonly, nullable) NSString * string;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver has an authority component (user, password, host, or port) and a path component, then the path must either begin with `"/"` or be an empty string. Otherwise, this property contains `nil`.
 

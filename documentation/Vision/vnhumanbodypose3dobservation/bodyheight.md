@@ -28,7 +28,7 @@ var bodyHeight: Float { get }
 
 - [Identifying 3D human body poses in images](../identifying-3d-human-body-poses-in-images.md)
 
-#### Discussion
+## Discussion
 
 The framework returns an accurate height if [`heightEstimation`](./heightestimation-swift.property.md) is [`VNHumanBodyPose3DObservation.HeightEstimation.measured`](./heightestimation-swift.enum/measured.md); otherwise, it returns a [`VNHumanBodyPose3DObservation.HeightEstimation.reference`](./heightestimation-swift.enum/reference.md) height.
 

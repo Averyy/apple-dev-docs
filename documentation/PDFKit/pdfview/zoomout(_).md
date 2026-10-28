@@ -25,7 +25,7 @@ func zoomOut(_ sender: Any?)
 - (void) zoomOut:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Each invocation of `zoomOut` divides the scaling factor by the square root of 2.
 

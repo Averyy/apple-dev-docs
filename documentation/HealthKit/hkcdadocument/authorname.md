@@ -23,7 +23,7 @@ var authorName: String { get }
 @property (copy, readonly) NSString * authorName;
 ```
 
-#### Discussion
+## Discussion
 
 Usually, this is the treating physician’s name.
 

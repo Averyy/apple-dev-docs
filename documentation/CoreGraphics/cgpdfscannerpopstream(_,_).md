@@ -25,7 +25,7 @@ func CGPDFScannerPopStream(_ scanner: CGPDFScannerRef, _ value: UnsafeMutablePoi
 extern bool CGPDFScannerPopStream(CGPDFScannerRef scanner, CGPDFStreamRef*value);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the stream object is retrieved successfully; otherwise, [`false`](../Swift/false.md).
 

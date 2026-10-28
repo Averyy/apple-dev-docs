@@ -25,7 +25,7 @@ enum CFStreamStatus
 enum CFStreamStatus : CFIndex;
 ```
 
-#### Overview
+## Overview
 
 The `CFStreamStatus` enumeration defines constants that describe the status of a stream. These values are returned by [`CFReadStreamGetStatus(_:)`](./cfreadstreamgetstatus%28_%29.md) and [`CFWriteStreamGetStatus(_:)`](./cfwritestreamgetstatus%28_%29.md).
 

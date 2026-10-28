@@ -25,7 +25,7 @@ var transforms: [NSValue]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSValue *> * transforms;
 ```
 
-#### Discussion
+## Discussion
 
 You provide this array of [`NSValue`](../../Foundation/nsvalue.md) objects, each containing an [`SCNMatrix4`](../scnmatrix4-swift.struct.md) value, in the [`init(shapes:transforms:)`](./init%28shapes,transforms%29.md) method to create a compound shape. Use this array along with the [`sourceObject`](./sourceobject.md) property to recover the information that was used to create the shape.
 

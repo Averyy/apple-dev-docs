@@ -21,7 +21,7 @@ convenience init(location: MKMapItem, title: String, subtitle: String?, summary:
 - (instancetype) initWithLocation:(MKMapItem *) location title:(NSString *) title subtitle:(NSString *) subtitle summary:(NSString *) summary detailTitle:(NSString *) detailTitle detailSubtitle:(NSString *) detailSubtitle detailSummary:(NSString *) detailSummary pinImage:(UIImage *) pinImage;
 ```
 
-#### Discussion
+## Discussion
 
 [`CPPointOfInterestTemplate`](../cppointofinteresttemplate.md) displays selectable instances of `CPPointOfInterest` as annotations on the template’s map, and as items in a scrollable picker that the template overlays on the map. When the user selects a point of interest, the template displays a detail card that contains secondary information and optional actions the user can perform.
 

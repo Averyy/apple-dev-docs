@@ -20,7 +20,7 @@ var goal: ARCoachingOverlayView.Goal { get set }
 @property (nonatomic, assign) ARCoachingGoal goal;
 ```
 
-#### Discussion
+## Discussion
 
 The goal you choose determines the particular instructions the coaching overlay presents to the user.
 

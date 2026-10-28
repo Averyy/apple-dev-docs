@@ -23,7 +23,7 @@ static var everything: UICollisionBehavior.Mode { get }
 UICollisionBehaviorModeEverything
 ```
 
-#### Discussion
+## Discussion
 
 This is the default collision behavior mode.
 

@@ -11,11 +11,11 @@ virtual IOUSBPipe *FindNextPipe(
  IOUSBFindEndpointRequest *request);
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to the pipe, or NULL if no pipe matches the request.
 
-#### Overview
+## Overview
 
 Find a pipe of the interface that matches the requirements, either starting from the beginning of the interface's pipe list or from a specified pipe.
 

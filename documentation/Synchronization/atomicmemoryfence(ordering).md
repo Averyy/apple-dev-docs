@@ -21,7 +21,7 @@ Establishes a memory ordering without associating it with a particular atomic op
 func atomicMemoryFence(ordering: AtomicUpdateOrdering)
 ```
 
-#### Discussion
+## Discussion
 
 - A relaxed fence has no effect.
 - An acquiring fence ties to any preceding atomic operation that reads a value, and synchronizes with any releasing operation whose value was read.

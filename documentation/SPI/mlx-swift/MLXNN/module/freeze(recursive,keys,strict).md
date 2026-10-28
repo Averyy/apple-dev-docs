@@ -21,7 +21,7 @@ func freeze(recursive: Bool = true, keys: [String]? = nil, strict: Bool = false)
 
 - [Creating Modules](../custom-layers.md)
 
-#### Discussion
+## Discussion
 
 A frozen parameter does not compute gradients.  The function is idempotent – freezing a frozen model is a no-op.
 
@@ -37,7 +37,7 @@ try model.visit { k, m in
 }
 ```
 
-##### See Also
+### See Also
 
 - [`freeze(recursive:keys:)`](./freeze%28recursive,keys%29.md)
 - [`unfreeze(recursive:keys:strict:)`](./unfreeze%28recursive,keys,strict%29.md)

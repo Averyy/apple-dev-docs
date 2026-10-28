@@ -19,11 +19,11 @@ func SCNetworkConnectionCopyUserPreferences(_ selectionOptions: CFDictionary?, _
 Boolean SCNetworkConnectionCopyUserPreferences(CFDictionaryRef selectionOptions, CFStringRef*serviceID, CFDictionaryRef*userOptions);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if there is a valid service to dial; `FALSE` if the function was unable to retrieve a service to dial.
 
-#### Discussion
+## Discussion
 
 You can use the service ID and user options values returned by this function to open a connection on the fly.
 

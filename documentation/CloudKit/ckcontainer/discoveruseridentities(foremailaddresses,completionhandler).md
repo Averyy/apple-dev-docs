@@ -24,7 +24,7 @@ Fetches the user identities for the specified email addresses.
 func discoverUserIdentities(forEmailAddresses emails: [String], completionHandler: @escaping @Sendable (Result<[String : CKUserIdentity], any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 This closure doesn’t return a value and takes the following parameters:
 

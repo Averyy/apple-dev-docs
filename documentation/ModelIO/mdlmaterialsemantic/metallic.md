@@ -24,7 +24,7 @@ case metallic
 MDLMaterialSemanticMetallic
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O uses this semantic for the `metallic` and `map_metallic` attributes when importing from the MTL file format (for assets in the OBJ file format).
 

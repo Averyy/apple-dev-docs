@@ -25,7 +25,7 @@ protocol SCNPhysicsContactDelegate : NSObjectProtocol
 @protocol SCNPhysicsContactDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 To receive contact messages, you set the [`contactDelegate`](./scnphysicsworld/contactdelegate.md) property of an [`SCNPhysicsWorld`](./scnphysicsworld.md) object. SceneKit calls your delegate methods when a contact begins, when information about the contact changes, and when the contact ends.
 

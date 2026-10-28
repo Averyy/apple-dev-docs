@@ -13,7 +13,7 @@ virtual IOReturn setStreamMode(
  IOStreamMode mode);
 ```
 
-#### Overview
+## Overview
 
 This must be implemented by a subclass.
 

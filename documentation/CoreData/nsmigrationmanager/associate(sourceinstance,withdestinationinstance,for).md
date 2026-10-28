@@ -25,7 +25,7 @@ func associate(sourceInstance: NSManagedObject, withDestinationInstance destinat
 - (void) associateSourceInstance:(NSManagedObject *) sourceInstance withDestinationInstance:(NSManagedObject *) destinationInstance forEntityMapping:(NSEntityMapping *) entityMapping;
 ```
 
-#### Discussion
+## Discussion
 
 Data migration is performed as a three-stage process (first create the data, then relate the data, then validate the data). You use this method to associate data between the source and destination stores, in order to allow for relationship creation or fix-up after the creation stage.
 

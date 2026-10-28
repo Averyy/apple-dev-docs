@@ -20,7 +20,7 @@ var fileModificationDate: Date? { get set }
 @property (copy, nullable) NSDate * fileModificationDate;
 ```
 
-#### Discussion
+## Discussion
 
 The `NSDocument` default file saving machinery uses this information to warn the user when the on-disk representation of an open document has been modified by something other than the current app.
 

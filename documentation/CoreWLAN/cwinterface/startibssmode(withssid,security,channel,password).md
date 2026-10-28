@@ -19,7 +19,7 @@ func startIBSSMode(withSSID ssidData: Data, security: CWIBSSModeSecurity, channe
 - (BOOL) startIBSSModeWithSSID:(NSData *) ssidData security:(CWIBSSModeSecurity) security channel:(NSUInteger) channel password:(NSString *) password error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 If *name* is *nil*, the machine name will be used as the network name. This operation may require an administrator password.
 

@@ -21,7 +21,7 @@ Resumes an assistance request, in response to a call from the framework.
 func resumeRequest(_ request: LiveAssistanceRequest) async throws -> LiveAssistanceRequest.Response
 ```
 
-#### Discussion
+## Discussion
 
 The framework calls this method on your extension after your container app performs any required setup — such as completing a sign in — and calls [`returnToCall(requestID:)`](../liveassistance/returntocall%28requestid%29.md).
 

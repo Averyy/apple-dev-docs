@@ -5,7 +5,7 @@
 
 Provides direct access to features in the macOS window server for configuring and controlling display hardware.
 
-#### Overview
+## Overview
 
 You can use Quartz Display Services to:
 

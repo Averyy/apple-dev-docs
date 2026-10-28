@@ -25,7 +25,7 @@ static var timeZone: NSCalendar.Unit { get }
 NSCalendarUnitTimeZone
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSTimeZone`](../../nstimezone.md).
 

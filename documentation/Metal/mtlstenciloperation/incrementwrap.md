@@ -24,7 +24,7 @@ case incrementWrap
 MTLStencilOperationIncrementWrap
 ```
 
-#### Discussion
+## Discussion
 
 The operation sets a stencil value to `0` if it’s currently equal to the maximum representable value.
 

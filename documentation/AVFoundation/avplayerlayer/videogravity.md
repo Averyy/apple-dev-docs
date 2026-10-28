@@ -24,7 +24,7 @@ var videoGravity: AVLayerVideoGravity { get set }
 @property (copy) AVLayerVideoGravity videoGravity;
 ```
 
-#### Discussion
+## Discussion
 
 A player layer supports the following video gravity values:
 

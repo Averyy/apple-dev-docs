@@ -13,11 +13,11 @@
 ifnet_t ifaddr_ifnet(ifaddr_t ifaddr);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the interface the address is attached to.
 
-#### Discussion
+## Discussion
 
 Returns the interface the address is attached to. The reference is only valid until the ifaddr is released. If you need to hold a reference to the ifnet for longer than you hold a reference to the ifaddr, increment the reference using ifnet_reference.
 

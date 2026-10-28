@@ -23,7 +23,7 @@ func velocity(in view: UIView?) -> CGPoint
 - (CGPoint) velocityInView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The velocity of the pan gesture, which is expressed in points per second. The velocity is broken into horizontal and vertical components.
 

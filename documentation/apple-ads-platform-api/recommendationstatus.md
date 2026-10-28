@@ -21,7 +21,7 @@ string RecommendationStatus
 - `DISABLED`: The recommendation record has been administratively disabled but not removed.
 - `DELETED`: The recommendation record has been permanently deleted from the system and can no longer be retrieved.
 
-#### Discussion
+## Discussion
 
 The `RecommendationStatus` reflects the system-level status of the recommendation record itself, in contrast to [`RecommendationState`](./recommendationstate.md) which tracks the advertiser’s response. In most workflows `state` is the relevant field. The `status` field primarily serves internal record management.
 

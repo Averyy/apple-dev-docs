@@ -15,7 +15,7 @@ A structure that defines a standard device request.
 typedef struct IOUSBDeviceRequest IOUSBDeviceRequest;
 ```
 
-#### Discussion
+## Discussion
 
 For information about device requests, see USB 3.2, 9.3.
 

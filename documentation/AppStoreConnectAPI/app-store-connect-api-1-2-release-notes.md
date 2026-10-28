@@ -5,11 +5,11 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 1.2 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New features
+### New features
 
 - The new [Apps](./apps.md) resource and the [App Metadata](./app-metadata.md) collection of resources enable automating the creation of new app versions and managing App Store information.
 - The new [App Store Version Phased Releases](./app-store-version-phased-releases.md) resource enables automating the submission of new versions of your app to the App Store.

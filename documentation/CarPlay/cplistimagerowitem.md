@@ -22,7 +22,7 @@ class CPListImageRowItem
 @interface CPListImageRowItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use `CPListImageRowItem` to display a series of images as a row in a list template. At runtime, use [`CPMaximumNumberOfGridImages`](./cpmaximumnumberofgridimages.md) to determine the maximum number of images that the row displays. CarPlay may display fewer images, depending on the width of the vehicle’s primary screen. Provide images that are display-ready, and include light and dark variants of each. See [`init(text:images:)`](./cplistimagerowitem/init%28text,images%29.md) for more information.
 

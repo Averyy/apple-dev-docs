@@ -30,7 +30,7 @@ var phoneNumber: String? { get set }
 @property (atomic, copy, nullable) NSString * phoneNumber;
 ```
 
-#### Discussion
+## Discussion
 
 Make sure you format the string in this property in order to properly display it to the user. When actually booking the reservation, you can also pass the information to the restaurant that receives the booking, so that it has a way of contacting the user if they need to change the reservation later.
 

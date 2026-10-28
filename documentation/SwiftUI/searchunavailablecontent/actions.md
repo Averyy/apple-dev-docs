@@ -22,7 +22,7 @@ nonisolated
 struct Actions
 ```
 
-#### Overview
+## Overview
 
 You don’t create this type directly. SwiftUI creates it when you build a search [`ContentUnavailableView`](../contentunavailableview.md).
 

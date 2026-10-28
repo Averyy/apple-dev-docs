@@ -19,11 +19,11 @@ func textLineFragment(forVerticalOffset verticalOffset: CGFloat, requiresExactMa
 - (NSTextLineFragment *) textLineFragmentForVerticalOffset:(CGFloat) verticalOffset requiresExactMatch:(BOOL) requiresExactMatch;
 ```
 
-#### Return Value
+## Return Value
 
 A text line fragment, or `nil` if there isn’t a match.
 
-#### Discussion
+## Discussion
 
 Set `requiresExactMatch` to [`true`](../../Swift/true.md) to find the text line fragment that contains the vertical offset, or set `requiresExactMatch` to [`false`](../../Swift/false.md) to find the closest text line fragment matching or beyond the vertical offset. Returns `nil` if there isn’t a match.
 

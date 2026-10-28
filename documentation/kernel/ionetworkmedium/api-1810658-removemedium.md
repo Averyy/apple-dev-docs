@@ -13,7 +13,7 @@ static void removeMedium(
  const IONetworkMedium *medium);
 ```
 
-#### Overview
+## Overview
 
 A helper function to remove an entry in a dictionary.
 

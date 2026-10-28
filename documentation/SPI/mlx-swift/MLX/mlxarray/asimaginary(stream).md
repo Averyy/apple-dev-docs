@@ -17,7 +17,7 @@ Convert the real array into a [`DType.complex64`](../dtype/complex64.md) imagina
 func asImaginary(stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to the following in python:
 
@@ -25,7 +25,7 @@ This is equivalent to the following in python:
 result = 1j * array
 ```
 
-##### See Also
+### See Also
 
 - [`init(real:imaginary:)`](./init%28real,imaginary%29.md)
 - [`realPart(stream:)`](./realpart%28stream%29.md)

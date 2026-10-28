@@ -34,7 +34,7 @@ optional func getTextureAccessCounters(_ texture: any MTLTexture, region: MTLReg
 - (void) getTextureAccessCounters:(id<MTLTexture>) texture region:(MTLRegion) region mipLevel:(NSUInteger) mipLevel slice:(NSUInteger) slice resetCounters:(BOOL) resetCounters countersBuffer:(id<MTLBuffer>) countersBuffer countersBufferOffset:(NSUInteger) countersBufferOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The GPU returns a counter for each sparse tile in the region you specify. Each counter is a [`uint32_t`](../../kernel/uint32_t.md) in row-major order. Provide space in the buffer for each counter you request.
 

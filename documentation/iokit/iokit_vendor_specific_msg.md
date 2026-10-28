@@ -17,7 +17,7 @@
 #define iokit_vendor_specific_msg(message)
 ```
 
-#### Discussion
+## Discussion
 
 iokit_vendor_specific_msg passes messages in the sub_iokit_vendor_specific subsystem. It can be used to generate messages that are used for private communication between vendor specific code with the IOService::message() etc. APIs.
 

@@ -23,7 +23,7 @@ let kCMFormatDescriptionCameraCalibration_IntrinsicMatrixReferenceDimensions: CF
 extern CFStringRef const kCMFormatDescriptionCameraCalibration_IntrinsicMatrixReferenceDimensions;
 ```
 
-#### Discussion
+## Discussion
 
 Specifies the image dimensions to which the camera’s intrinsic matrix values are relative.
 

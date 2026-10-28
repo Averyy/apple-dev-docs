@@ -21,7 +21,7 @@ Adds a new split layer to the graph using the source tensor, lengths of each spl
 func split(source: MLCTensor, splitSectionLengths: [Int], dimension: Int) -> [MLCTensor]?
 ```
 
-#### Return Value
+## Return Value
 
 A result tensor.
 

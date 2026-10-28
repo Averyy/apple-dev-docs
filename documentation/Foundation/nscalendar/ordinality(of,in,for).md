@@ -25,11 +25,11 @@ func ordinality(of smaller: NSCalendar.Unit, in larger: NSCalendar.Unit, for dat
 - (NSUInteger) ordinalityOfUnit:(NSCalendarUnit) smaller inUnit:(NSCalendarUnit) larger forDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 The ordinal number of `smaller` within `larger` at the time specified by `date`. Returns `NSNotFound` if `larger` is not logically bigger than `smaller` in the calendar, or the given combination of units does not make sense (or is a computation which is undefined).
 
-#### Discussion
+## Discussion
 
 The ordinality is in most cases not the same as the decomposed value of the unit. Typically return values are `1` and greater. For example, the time `00:45` is in the first hour of the day, and for units Hour and Day respectively, the result would be `1`. An exception is the week-in-month calculation, which returns `0` for days before the first week in the month containing the date.
 

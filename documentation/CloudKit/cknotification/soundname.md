@@ -26,7 +26,7 @@ var soundName: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * soundName;
 ```
 
-#### Discussion
+## Discussion
 
 The system uses this property’s value to locate a sound file in the app’s bundle. The sound plays when the system receives a push notification. If the system can’t find the specified file, or if the property’s value is the string `default`, the system plays the default sound.
 

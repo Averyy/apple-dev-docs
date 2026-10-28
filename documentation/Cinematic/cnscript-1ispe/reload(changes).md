@@ -19,7 +19,7 @@ Reloads the Cinematic script with optional changes applied, removing any previou
 final func reload(changes: CNScript.Changes?)
 ```
 
-#### Discussion
+## Discussion
 
 Reloading the Cinematic script can be more efficient than loading the asset from scratch.
 

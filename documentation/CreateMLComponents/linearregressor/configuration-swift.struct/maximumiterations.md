@@ -21,7 +21,7 @@ The maximum number of allowed passes through the data.
 var maximumIterations: Int
 ```
 
-#### Discussion
+## Discussion
 
 More passes over the data can result in a more accurately trained model. Consider increasing this if the training accuracy is low. Defaults to 25.
 

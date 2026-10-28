@@ -25,7 +25,7 @@ static func reload()
 
 - [Displaying static and interactive snippets](../displaying-static-and-interactive-snippets.md)
 
-#### Discussion
+## Discussion
 
 Call this function when information that appears in the snippet has changed and you need to update its representation.
 

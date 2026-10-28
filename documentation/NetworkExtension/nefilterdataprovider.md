@@ -23,7 +23,7 @@ class NEFilterDataProvider
 @interface NEFilterDataProvider : NEFilterProvider
 ```
 
-#### Overview
+## Overview
 
 Network content is delivered to the Filter Data Provider in the form of [`NEFilterFlow`](./nefilterflow.md) objects. Each [`NEFilterFlow`](./nefilterflow.md) object corresponds to a network connection opened by an application running on the device. The Filter Data Provider can choose to pass or block the data when it receives a new flow, or it can ask the system to see more of the flow’s data in either the outbound or inbound direction before making a pass or block decision.
 
@@ -38,7 +38,7 @@ To protect the user’s privacy, the Filter Data Provider extension sandbox prev
 
 > ❗ **Important**:  To use the [`handleNewFlow(_:)`](./nefilterdataprovider/handlenewflow%28_%29.md) method, you must enable the Network Extensions capability in Xcode and select the Content Filter capability. See [Configure network extensions](http://help.apple.com/xcode/mac/current/#/dev0b2ef6f08).
 
-##### Creating a Filter Data Provider Extension
+### Creating a Filter Data Provider Extension
 
 Filter Data Providers run as App Extensions for the `com.apple.networkextension.filter-data` extension point.
 
@@ -64,11 +64,11 @@ Here is an example of the `NSExtension` dictionary in a Filter Data Provider ext
 
 Finally, add your Filter Data Provider extension target to your app’s Embed App Extensions build phase.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 To create a Filter Data Provider extension, you must first create a subclass of `NEFilterDataProvider` and override the methods listed below.
 
-###### Methods to Override
+#### Methods to Override
 
 - [`handleNewFlow(_:)`](./nefilterdataprovider/handlenewflow%28_%29.md)
 - [`handleInboundData(from:readBytesStartOffset:readBytes:)`](./nefilterdataprovider/handleinbounddata%28from,readbytesstartoffset,readbytes%29.md)

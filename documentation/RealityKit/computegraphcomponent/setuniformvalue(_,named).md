@@ -20,7 +20,7 @@ Sets the value of a named uniform to a `BitwiseCopyable` typed value.
 mutating func setUniformValue<V>(_ value: V, named name: String) -> Bool where V : BitwiseCopyable
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the uniform was found and updated; `false` otherwise.
 

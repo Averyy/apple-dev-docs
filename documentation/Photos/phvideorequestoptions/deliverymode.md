@@ -24,7 +24,7 @@ var deliveryMode: PHVideoRequestOptionsDeliveryMode { get set }
 @property (nonatomic, assign) PHVideoRequestOptionsDeliveryMode deliveryMode;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to tell Photos to provide a video quickly (possibly sacrificing image quality) or to provide a high-quality video (possibly sacrificing speed). This option applies only when requesting the current version of the video (that is, only when the [`version`](./version.md) property is [`PHVideoRequestOptionsVersion.current`](../phvideorequestoptionsversion/current.md)).
 

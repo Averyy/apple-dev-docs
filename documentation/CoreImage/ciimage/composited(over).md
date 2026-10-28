@@ -24,11 +24,11 @@ func composited(over dest: CIImage) -> CIImage
 - (CIImage *) imageByCompositingOverImage:(CIImage *) dest;
 ```
 
-#### Return Value
+## Return Value
 
 An image object representing the result of the compositing operation.
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to using the [CISourceOverCompositing](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/filter/ci/CISourceOverCompositing) filter. To use other compositing operations and blending modes, create a [`CIFilter`](../cifilter-swift.class.md) object using one of the built-in filters from the [CICategoryCompositeOperation](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/uid/TP30000136-SW71) category. For details, see [Core Image Filter Reference](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/uid/TP40004346).
 

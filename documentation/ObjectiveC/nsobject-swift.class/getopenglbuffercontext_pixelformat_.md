@@ -13,7 +13,7 @@
 - (void) getOpenGLBufferContext:(CGLContextObj*) contextOut pixelFormat:(CGLPixelFormatObj*) pixelFormatOut;
 ```
 
-#### Discussion
+## Discussion
 
 This method is optional. Called once after setVideoDataSource:, if implemented.
 

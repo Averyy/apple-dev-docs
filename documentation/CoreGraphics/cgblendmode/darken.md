@@ -23,7 +23,7 @@ case darken
 kCGBlendModeDarken
 ```
 
-#### Discussion
+## Discussion
 
 Creates the composite image samples by choosing the darker samples (either from the source image or the background). The result is that the background image samples are replaced by any source image samples that are darker. Otherwise, the background image samples are left unchanged.
 

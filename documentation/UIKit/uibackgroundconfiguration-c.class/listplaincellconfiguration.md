@@ -19,11 +19,11 @@ Creates the default configuration you use to style a cell in a plain list.
 + (instancetype) listPlainCellConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 The default configuration for a cell in a plain list.
 
-#### Discussion
+## Discussion
 
 Create this configuration to update the styling for the background of a cell in a list. When you apply this configuration to a cell, the background of the cell matches the system default styling for a plain cell, including highlighted and selected states.
 

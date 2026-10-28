@@ -15,7 +15,7 @@ The IO operation being called on the operation handler block.
 typedef uint32_t IOUserVideoIOOperation;
 ```
 
-#### Discussion
+## Discussion
 
 This value is used with [`IOOperationHandler`](./iooperationhandler.md).
 

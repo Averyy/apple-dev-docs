@@ -23,7 +23,7 @@ weak var delegate: (any SFSpeechRecognizerDelegate)? { get set }
 @property (nonatomic, weak) id<SFSpeechRecognizerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a delegate object when you want to monitor changes to the availability of speech recognition services. Your delegate object must conform to the [`SFSpeechRecognizerDelegate`](../sfspeechrecognizerdelegate.md) protocol.
 

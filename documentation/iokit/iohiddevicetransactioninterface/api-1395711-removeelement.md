@@ -16,7 +16,7 @@ Removes an element from this IOHIDDeviceTransactionInterface instance.
 IOReturn (*removeElement)(void *self, IOHIDElementRef element, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 

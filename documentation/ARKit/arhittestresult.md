@@ -22,7 +22,7 @@ class ARHitTestResult
 @interface ARHitTestResult : NSObject
 ```
 
-#### Overview
+## Overview
 
 If you use SceneKit or SpriteKit as your renderer, you can search for real-world surfaces at a screen point using:
 

@@ -17,7 +17,7 @@ The wind force applied to particles inside the volume.
 var windForce: SIMD3<Float>
 ```
 
-#### Discussion
+## Discussion
 
 This force depends on the angle between the force direction and the face normals of the cloth body. Full force is applied when the force direction is perpendicular to the face (aligned with the normal), and no force is applied when the force direction is parallel to the face.
 

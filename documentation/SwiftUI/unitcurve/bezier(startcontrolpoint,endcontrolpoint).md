@@ -21,7 +21,7 @@ Creates a new curve using bezier control points.
 static func bezier(startControlPoint: UnitPoint, endControlPoint: UnitPoint) -> UnitCurve
 ```
 
-#### Discussion
+## Discussion
 
 The x components of the control points are clamped to the range [0,1] when the curve is evaluated.
 

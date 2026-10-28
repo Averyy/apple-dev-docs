@@ -19,7 +19,7 @@ Returns the labeled images represented by the data source.
 func labeledImages() throws -> [String : [URL]]
 ```
 
-#### Return Value
+## Return Value
 
 The labeled images that the data source represents, as a dictionary. The dictionary keys are the labels, while the dictionary values are arrays of images, represented as URLs, that correspond to the label.
 

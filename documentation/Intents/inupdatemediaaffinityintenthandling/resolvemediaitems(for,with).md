@@ -28,7 +28,7 @@ optional func resolveMediaItems(for intent: INUpdateMediaAffinityIntent) async -
 - (void) resolveMediaItemsForUpdateMediaAffinity:(INUpdateMediaAffinityIntent *) intent withCompletion:(void (^)(NSArray<INUpdateMediaAffinityMediaItemResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the media items to update. Always strive toward a successful resolution to the specific media items, but feel free to ask for confirmation of the selected media items if there’s some uncertainty.
 

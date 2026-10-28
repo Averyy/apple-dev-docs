@@ -19,7 +19,7 @@ func webPlugInInitialize()
 - (void) webPlugInInitialize;
 ```
 
-#### Discussion
+## Discussion
 
 Tells the plug-in to perform one-time initialization. This method must be called only once per instance of the plug-in object, before any other methods in the protocol are called.
 

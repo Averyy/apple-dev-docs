@@ -15,13 +15,13 @@ The response envelope returned by the Query Change History endpoint, wrapping an
 object AuditSummaryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `AuditSummaryResponse` object is the response envelope returned by `POST /v1/change-history/query` ([`Query Change History`](./query-audit-summary-_-grouped-by-transaction.md)). The `result` array contains one `AuditSummary` row per unique (`userType`, `modifiedBy`, `transactionId`, `eventType`, `entityType`) combination matching the query filters.
 
 Use `pagination` to navigate large result sets.
 
-##### Example
+### Example
 
 ```json
 {

@@ -23,7 +23,7 @@ class AVProVideoStorage
 @interface AVProVideoStorage : NSObject
 ```
 
-#### Overview
+## Overview
 
 `AVProVideoStorage` is a singleton that manages system-wide pre-allocated storage used during high data rate video capture to ensure I/O determinism and sustain high bandwidth captures (e.g. ProRes).
 

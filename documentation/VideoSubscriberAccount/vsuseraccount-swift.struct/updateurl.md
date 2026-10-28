@@ -19,7 +19,7 @@ A URL that points to the application’s JavaScript endpoint for update requests
 var updateURL: URL? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the application does not support JavaScript updates.
 

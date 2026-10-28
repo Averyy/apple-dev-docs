@@ -20,7 +20,7 @@ A spherical joint that allows free rotational movement between two entities’ p
 struct PhysicsSphericalJoint
 ```
 
-#### Overview
+## Overview
 
 This joint has three rotational degrees of freedom and removes all translational degrees of freedom by making the positions of `pin0` and `pin1` coincide. This is also called a “ball-socket joint”.
 

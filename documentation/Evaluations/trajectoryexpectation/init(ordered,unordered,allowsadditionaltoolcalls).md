@@ -25,7 +25,7 @@ init(ordered: [ToolExpectation] = [], unordered: [ToolExpectation] = [], allowsA
 
 - [Evaluating tool-calling behavior](../evaluating-tool-calling-behavior.md)
 
-#### Discussion
+## Discussion
 
 Use this initializer when you want to control the blanket policy for unexpected tool calls. To forbid specific tools instead, use [`init(ordered:unordered:disallowed:)`](./init%28ordered,unordered,disallowed%29.md).
 

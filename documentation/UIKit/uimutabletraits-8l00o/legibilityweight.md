@@ -19,7 +19,7 @@ The font weight to apply to text.
 @property (nonatomic) UILegibilityWeight legibilityWeight;
 ```
 
-#### Discussion
+## Discussion
 
 The legibility weight reflects the value of the Bold Text display setting.
 

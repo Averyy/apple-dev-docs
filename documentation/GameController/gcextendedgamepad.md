@@ -28,7 +28,7 @@ class GCExtendedGamepad
 
 - [Discovering game controllers](./discovering-game-controllers.md)
 
-#### Overview
+## Overview
 
 The extended gamepad controller profile represents a physical or virtual controller with the following input elements:
 

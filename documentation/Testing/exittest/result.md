@@ -20,7 +20,7 @@ struct Result
 
 - [Exit testing](../exit-testing.md)
 
-#### Overview
+## Overview
 
 Both [`expect(processExitsWith:observing:_:sourceLocation:performing:)`](../expect%28processexitswith,observing,_,sourcelocation,performing%29.md) and [`require(processExitsWith:observing:_:sourceLocation:performing:)`](../require%28processexitswith,observing,_,sourcelocation,performing%29.md) return instances of this type.
 

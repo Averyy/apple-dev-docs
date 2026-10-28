@@ -5,11 +5,11 @@
 
 Divide the search space into a few broad categories.
 
-#### Overview
+## Overview
 
 If the data you want to search falls into a few categories, you can define different scopes to help people narrow their search. When you define a scope, SwiftUI presents a picker that people can use to choose one of them. You then use the current scope selection as one of the inputs to the search operation.
 
-##### Define the possible scopes
+### Define the possible scopes
 
 Start by creating a type that conforms to the [`Hashable`](../Swift/hashable.md) protocol to represent the possible scopes. For example, you can use an enumeration to scope a product search to just fruits or just vegetables:
 
@@ -26,7 +26,7 @@ Then create a property to store the current scope, either as a state variable in
 @Published var scope: ProductScope = .fruit
 ```
 
-##### Apply the scope
+### Apply the scope
 
 To use the scope information, bind the current scope to the [`searchScopes(_:scopes:)`](./view/searchscopes%28_,scopes%29.md) modifier. You also indicate a set of views that correspond to the different scopes. Like the [`searchSuggestions(_:)`](./view/searchsuggestions%28_%29.md) modifier, the scopes modifier operates on the searchable modifier that’s closer to the modified view, so it needs to follow the searchable modifier:
 
@@ -59,7 +59,7 @@ You can change when the picker appears by using the [`searchScopes(_:activation:
 
 To ensure that the picker operates correctly, match the type of the scope binding with the type of each view’s tag. In the above example, both the `scope` input and the tags for each view have the type `ProductScope`.
 
-##### Use the scope in your search
+### Use the scope in your search
 
 Modify your search to account for the current value of the `scope` property, if you offer it, along with the text and tokens in the query. For example, you might include the scope as one element of a predicate that you define for a Core Data fetch request. For more information about conducting a search, see [Performing a search operation](./performing-a-search-operation.md).
 

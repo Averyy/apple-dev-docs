@@ -25,7 +25,7 @@ init(emailAddress: String)
 - (instancetype) initWithEmailAddress:(NSString *) emailAddress;
 ```
 
-#### Discussion
+## Discussion
 
 After you create a lookup info, use the [`CKDiscoverUserIdentitiesOperation`](../../ckdiscoveruseridentitiesoperation.md) operation or the  [`CKFetchShareParticipantsOperation`](../../ckfetchshareparticipantsoperation.md) operation to retrieve the corresponding user identity.
 

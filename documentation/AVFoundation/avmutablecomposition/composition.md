@@ -21,7 +21,7 @@ Returns a new mutable composition.
 + (instancetype) composition;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable composition.
 

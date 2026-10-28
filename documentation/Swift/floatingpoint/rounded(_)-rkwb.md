@@ -21,11 +21,11 @@ Returns this value rounded to an integral value using the specified rounding rul
 func rounded(_ rule: FloatingPointRoundingRule) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 The integral value found by rounding using `rule`.
 
-#### Discussion
+## Discussion
 
 The following example rounds a value using four different rounding rules:
 

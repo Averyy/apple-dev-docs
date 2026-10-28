@@ -22,7 +22,7 @@ var frames: [BlendShapeWeights] { get set }
 
 Available when `Value` is `BlendShapeWeights`.
 
-#### Discussion
+## Discussion
 
 This array contains sequential values for the animated property when [`bindTarget`](../animationdefinition/bindtarget.md) is an array of weights.
 

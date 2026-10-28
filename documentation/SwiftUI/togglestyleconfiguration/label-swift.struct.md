@@ -22,7 +22,7 @@ A type-erased label of a toggle.
 @preconcurrency struct Label
 ```
 
-#### Overview
+## Overview
 
 SwiftUI provides a value of this type — which is a [`View`](../view.md) type — as the [`label`](./label-swift.property.md) to your custom toggle style implementation. Use the label to help define the appearance of the toggle.
 

@@ -21,7 +21,7 @@ Calculates the current velocity of the animation.
 func velocity<V>(value: V, time: TimeInterval, context: AnimationContext<V>) -> V? where V : VectorArithmetic
 ```
 
-#### Return Value
+## Return Value
 
 The current velocity of the animation, or `nil` if the velocity isn’t available.
 

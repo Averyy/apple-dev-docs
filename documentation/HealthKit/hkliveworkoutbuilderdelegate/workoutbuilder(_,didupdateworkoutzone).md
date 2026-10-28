@@ -23,7 +23,7 @@ optional func workoutBuilder(_ workoutBuilder: HKLiveWorkoutBuilder, didUpdateWo
 
 - [Accessing workout zone data](../accessing-workout-zone-data.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method when the person moves between zones. Use this method to update your app’s interface to reflect the current zone or to provide feedback about zone changes.
 

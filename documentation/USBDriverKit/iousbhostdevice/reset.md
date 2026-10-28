@@ -15,11 +15,11 @@ Terminates the device and attempts to reenumerate it.
 virtual kern_return_t Reset();
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method resets and releases the current [`IOUSBHostDevice`](../iousbhostdevice.md) object and all of its children. If the reset and release of the device object are successful, this method creates a new [`IOUSBHostDevice`](../iousbhostdevice.md) object and registers it.
 

@@ -21,11 +21,11 @@ Returns a filter that inverts the color of their results.
 static func colorInvert(_ amount: Double = 1) -> GraphicsContext.Filter
 ```
 
-#### Return Value
+## Return Value
 
 A filter that applies a color inversion.
 
-#### Discussion
+## Discussion
 
 This filter is equivalent to the `invert` filter primitive defined by the Scalable Vector Graphics (SVG) specification.
 

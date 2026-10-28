@@ -15,7 +15,7 @@ Creates a new value from the given sign, exponent, and significand.
 init(sign: FloatingPointSign, exponent: Int, significand: Float80)
 ```
 
-#### Discussion
+## Discussion
 
 The following example uses this initializer to create a new `Double` instance. `Double` is a binary floating-point type that has a radix of `2`.
 

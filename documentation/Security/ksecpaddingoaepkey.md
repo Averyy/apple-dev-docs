@@ -21,7 +21,7 @@ let kSecPaddingOAEPKey: CFString
 extern CFStringRef const kSecPaddingOAEPKey;
 ```
 
-#### Discussion
+## Discussion
 
 When using this padding type, consider also setting the [`kSecOAEPMessageLengthAttributeName`](./ksecoaepmessagelengthattributename.md), [`kSecOAEPEncodingParametersAttributeName`](./ksecoaepencodingparametersattributename.md), and [`kSecOAEPMGF1DigestAlgorithmAttributeName`](./ksecoaepmgf1digestalgorithmattributename.md) attributes.
 

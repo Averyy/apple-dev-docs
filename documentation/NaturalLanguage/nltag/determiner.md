@@ -25,7 +25,7 @@ static let determiner: NLTag
 extern NLTag const NLTagDeterminer;
 ```
 
-#### Discussion
+## Discussion
 
 Determiners clarify nouns. Common determiners are articles (like *a* or *the*), demonstratives (like *this* or *that*), quantifiers (like *all* or *some*), and possessives (like *your* or *their*).
 

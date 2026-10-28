@@ -21,7 +21,7 @@ class func externalNonInteractive(sceneConfiguration: UISceneConfiguration) -> S
 + (instancetype) externalNonInteractiveSceneAccessoryWithConfiguration:(UISceneConfiguration *) sceneConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 When the display connects, the scene accessory’s content may be presented on it.
 

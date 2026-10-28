@@ -19,7 +19,7 @@ Creates a plain-style item using the specified title and menu.
 - (instancetype) initWithTitle:(NSString *) title menu:(UIMenu *) menu;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`UIBarButtonItem`](../uibarbuttonitem.md).
 

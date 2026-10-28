@@ -28,11 +28,11 @@ class func additionCompositing() -> any CIFilter & CICompositeOperation
 
 - [Selectively Focusing on an Image](../selectively-focusing-on-an-image.md)
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 The filter calculates the sum of color components in the two input images to produce a brightening effect. People typically use this filter to add highlights and lens flares.
 

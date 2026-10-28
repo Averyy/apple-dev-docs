@@ -20,7 +20,7 @@ func activated()
 - (void) activated;
 ```
 
-#### Discussion
+## Discussion
 
 The system invokes this method when the window of the Automator workflow to which the action belongs becomes the main window.
 

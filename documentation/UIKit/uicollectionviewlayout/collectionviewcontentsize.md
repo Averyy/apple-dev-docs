@@ -23,11 +23,11 @@ var collectionViewContentSize: CGSize { get }
 @property (nonatomic, readonly) CGSize collectionViewContentSize;
 ```
 
-#### Return Value
+## Return Value
 
 The width and height of the collection view’s contents.
 
-#### Discussion
+## Discussion
 
 Subclasses must override this property and use it to return the width and height of the collection view’s content. These values represent the width and height of all the content, not just the content that is currently visible. The collection view uses this information to configure its own content size for scrolling purposes.
 

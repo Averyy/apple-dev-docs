@@ -25,7 +25,7 @@ static let signLanguageInterpretationForAccessibility: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicSignLanguageInterpretationForAccessibility;
 ```
 
-#### Discussion
+## Discussion
 
 See -[AVAssetTrack hasMediaCharacteristic:] and -[AVMediaSelectionOption hasMediaCharacteristic:]. The value of this characteristic is @“public.accessibility.sign-language-interpretation”. Note for content authors: for QuickTime movie and .m4v files a media option is considered to have the characteristic AVMediaCharacteristicSignLanguageInterpretationForAccessibility only if it’s explicitly tagged with that characteristic. See the discussion of the tagging of tracks with media characteristics below.
 

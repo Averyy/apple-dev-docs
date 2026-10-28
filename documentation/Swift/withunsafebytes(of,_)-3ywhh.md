@@ -21,11 +21,11 @@ Invokes the given closure with a buffer pointer covering the raw bytes of the gi
 func withUnsafeBytes<T, E, Result>(of value: inout T, _ body: (UnsafeRawBufferPointer) throws(E) -> Result) throws(E) -> Result where E : Error, T : ~Copyable, T : ~Escapable, Result : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure.
 
-#### Discussion
+## Discussion
 
 The buffer pointer argument to the `body` closure provides a collection interface to the raw bytes of `value`. The buffer is the size of the instance passed as `value` and does not include any remote storage.
 

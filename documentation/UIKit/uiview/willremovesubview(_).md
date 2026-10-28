@@ -23,7 +23,7 @@ func willRemoveSubview(_ subview: UIView)
 - (void) willRemoveSubview:(UIView *) subview;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses can override it to perform additional actions whenever subviews are removed. This method is called when the subview’s superview changes or when the subview is removed from the view hierarchy completely.
 

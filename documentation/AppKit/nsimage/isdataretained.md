@@ -17,11 +17,11 @@ Returns a Boolean value that incidates whether the image retains its source imag
 - (BOOL) isDataRetained;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the image retains its source data; otherwise, [`false`](../../Swift/false.md). The default value is [`false`](../../Swift/false.md) with some exceptions, which are covered in the discussion.
 
-#### Discussion
+## Discussion
 
 For image objects initialized using either the [`init(byReferencingFile:)`](./init%28byreferencingfile%29.md) or [`init(byReferencing:)`](./init%28byreferencing%29.md) method, this value is [`true`](../../Swift/true.md) by default. The reason is that for these methods, data retention simply involves retaining the filename or URL.
 

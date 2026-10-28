@@ -24,7 +24,7 @@ let AVVideoCleanApertureHeightKey: String
 extern NSString * const AVVideoCleanApertureHeightKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an instance of `NSNumber`.
 

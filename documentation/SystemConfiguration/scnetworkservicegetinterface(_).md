@@ -19,7 +19,7 @@ func SCNetworkServiceGetInterface(_ service: SCNetworkService) -> SCNetworkInter
 SCNetworkInterfaceRefSCNetworkServiceGetInterface(SCNetworkServiceRef service);
 ```
 
-#### Return Value
+## Return Value
 
 The network interface associated with the service, or `NULL` if an error occurred.
 

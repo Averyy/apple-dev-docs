@@ -25,7 +25,7 @@ class XMLParser
 @interface NSXMLParser : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`XMLParser`](./xmlparser.md) notifies its delegate about the items (elements, attributes, CDATA blocks, comments, and so on) that it encounters as it processes an XML document. It does not itself do anything with those parsed items except report them. It also reports parsing errors. For convenience, an [`XMLParser`](./xmlparser.md) object in the following descriptions is sometimes referred to as a parser object. Unless used in a callback, the [`XMLParser`](./xmlparser.md) is a thread-safe class as long as any given instance is only used in one thread.
 

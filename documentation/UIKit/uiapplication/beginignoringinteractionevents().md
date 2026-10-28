@@ -24,7 +24,7 @@ func beginIgnoringInteractionEvents()
 - (void) beginIgnoringInteractionEvents;
 ```
 
-#### Discussion
+## Discussion
 
 You typically call this method before starting an animation or transition. Calls are nested with the [`endIgnoringInteractionEvents()`](./endignoringinteractionevents%28%29.md) method.
 

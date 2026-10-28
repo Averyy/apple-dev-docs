@@ -25,7 +25,7 @@ func CFAttributedStringRemoveAttribute(_ aStr: CFMutableAttributedString!, _ ran
 extern void CFAttributedStringRemoveAttribute(CFMutableAttributedStringRef aStr, CFRange range, CFStringRef attrName);
 ```
 
-#### Discussion
+## Discussion
 
 It is *not* an error of the specified attribute does not exist over the given range.
 

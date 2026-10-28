@@ -5,7 +5,7 @@
 
 Set keys for permissions, scripts, style sheets, contextual menu items, and toolbar items in the information property list file.
 
-#### Overview
+## Overview
 
 After selecting which default keys to use in your Safari app extension’s information property list file, select the appropriate feature keys to identify files and UI items.
 

@@ -22,7 +22,7 @@ A primitive plottable type.
 associatedtype PrimitivePlottable : PrimitivePlottableProtocol
 ```
 
-#### Discussion
+## Discussion
 
 This type conforms to the [`Plottable`](../plottable.md) protocol.
 

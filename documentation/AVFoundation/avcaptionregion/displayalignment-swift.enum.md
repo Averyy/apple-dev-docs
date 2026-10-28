@@ -22,7 +22,7 @@ enum DisplayAlignment
 enum AVCaptionRegionDisplayAlignment : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 When you insert a caption line, the region places it relative to existing lines. The system determines the order in which the region places lines by its block progression direction. For example, English captions’ block progression direction are top-to-bottom, while Japanese vertical captions use right-to-left.
 

@@ -22,7 +22,7 @@ The writing direction of a piece of text.
 enum WritingDirection
 ```
 
-#### Overview
+## Overview
 
 Writing direction defines the base direction in which bidirectional text lays out its directional runs. A directional run is a contiguous sequence of characters that all have the same effective directionality, which can be determined using the Unicode BiDi algorithm. The [`AttributedString.WritingDirection.leftToRight`](./writingdirection/lefttoright.md) writing direction puts the directional run that is placed first in the storage leftmost, and places subsequent directional runs towards the right. The [`AttributedString.WritingDirection.rightToLeft`](./writingdirection/righttoleft.md) writing direction puts the directional run that is placed first in the storage rightmost, and places subsequent directional runs towards the left.
 

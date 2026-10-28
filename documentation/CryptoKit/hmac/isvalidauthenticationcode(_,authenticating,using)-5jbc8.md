@@ -21,7 +21,7 @@ Returns a Boolean value indicating whether the given message authentication code
 static func isValidAuthenticationCode(_ mac: HMAC<H>.MAC, authenticating bufferPointer: UnsafeRawBufferPointer, using key: SymmetricKey) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that’s `true` if the message authentication code is valid for the data within the specified buffer.
 

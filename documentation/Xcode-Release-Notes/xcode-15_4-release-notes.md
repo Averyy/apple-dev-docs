@@ -5,21 +5,21 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 15.4 includes SDKs for iOS 17.5, iPadOS 17.5, tvOS 17.5, watchOS 10.5, macOS Sonoma 14.5, and visionOS 1.2. The Xcode 15.4 release supports on-device debugging in iOS 12 and later, tvOS 12 and later, watchOS 4 and later, and visionOS. Xcode 15.4 requires a Mac running macOS Sonoma 14 or later.
 
-##### General
+### General
 
-###### New Features
+#### New Features
 
 - Xcode 15.4 supports simulating web distribution while running or testing your app. Enable the “Alternative Distribution - Web” build setting in your app target or project, then select “Website” in your scheme or test plan in the `Distribution` option. When you run or test your app, it will receive the `AppDistributor.web` value when querying `MarketplaceKit` for its current `AppDistributor`.  (124230395)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: watchOS Apps do not install on Series 3 and earlier.  (118490442) (FB13378667)
 
-###### Known Issues
+#### Known Issues
 
 - Some Macs recently received a macOS system update which disabled the simulator runtimes used by Xcode, including the simulators for iOS, tvOS, watchOS, and visionOS. If your Mac received this update, you will receive the following error message and will be unable to use the simulator:
 
@@ -35,40 +35,40 @@ Xcode 15.4 includes SDKs for iOS 17.5, iPadOS 17.5, tvOS 17.5, watchOS 10.5, mac
 
   **Workaround:** To resume using the simulator, please reboot your Mac.  After rebooting, check Xcode Settings → Platforms to ensure that the simulator runtime you would like to use is still installed.  If it is missing, use the Get button to download it again.
 
-##### App Shortcuts Preview
+### App Shortcuts Preview
 
-###### Known Issues
+#### Known Issues
 
 - Enabled App Shortcuts preview, but the app’s base locale might fail.  (125556990)
 
-##### Asset Catalogs
+### Asset Catalogs
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where generated asset symbols emitted warnings with Swift strict concurrency checking enabled.  (124156187)
 
-##### Devices
+### Devices
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In certain circumstances, an app can’t read the contents of its own data container after replacing the content of the data container using Xcode or devicectl.  (116698465) (FB13253099)
 
-##### Simulator
+### Simulator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When attempting to boot a simulator device shortly after installing its runtime or updating to a new version of macOS, Gatekeeper scanning may temporarily prevent boot.  This can appear as an “Unable to boot the Simulator” or “-308” error.  (118038020)
 - Fixed: When attempting to boot a simulator device after an XProtect update is installed, Gatekeeper scanning may temporarily prevent boot.  This can appear as an “Unable to boot the Simulator” or “-308” error.  (124502668)
 
-##### Testing
+### Testing
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Using `XCTestCase.fulfillment(of:)` in an actor-isolated test method produces a warning.  (124112256)
 
-##### Xcode Previews
+### Xcode Previews
 
-###### Known Issues
+#### Known Issues
 
 - Previews may fail in projects or targets that use special characters such as curly quotes, Phi, etc.  (125490102) (FB13699939)
 

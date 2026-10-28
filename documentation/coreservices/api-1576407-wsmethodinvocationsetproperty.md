@@ -15,7 +15,7 @@ Sets a named property of the method invocation.
 void WSMethodInvocationSetProperty(WSMethodInvocationRef invocation, CFStringRef propertyName, CFTypeRef propertyValue);
 ```
 
-#### Discussion
+## Discussion
 
 Adds properties to a method invocation.  These properties can be user-defined or one of the declared properties, which may alter the behavior of the invocation. Declared properties start with the string "kWS," for example `kWSHTTPFollowsRedirects`. Use these properties to add SOAP action headers or to set debug properties, such as including the raw XML in the method response dictionary. Properties are serialized along with the contract, so you should avoid using raw pointers in a `CFNumber`, for example.
 

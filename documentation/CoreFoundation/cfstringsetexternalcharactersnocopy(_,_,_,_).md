@@ -25,7 +25,7 @@ func CFStringSetExternalCharactersNoCopy(_ theString: CFMutableString!, _ chars:
 extern void CFStringSetExternalCharactersNoCopy(CFMutableStringRef theString, UniChar *chars, CFIndex length, CFIndex capacity);
 ```
 
-#### Discussion
+## Discussion
 
 You use this function to reallocate memory for a string, if necessary, and change its references to the data in the buffer. The object must have been created with the [`CFStringCreateMutableWithExternalCharactersNoCopy(_:_:_:_:_:)`](./cfstringcreatemutablewithexternalcharactersnocopy%28_,_,_,_,_%29.md) function; see the discussion of this function for more information.
 

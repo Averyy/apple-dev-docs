@@ -24,7 +24,7 @@ class CNMutableGroup
 @interface CNMutableGroup : CNGroup
 ```
 
-#### Overview
+## Overview
 
 Contacts may be members of one or more groups, depending upon the accounts they come from. The `CNMutableGroup` class is not a thread-safe class.
 

@@ -5,13 +5,13 @@
 
 Use a macro to denote the availability of an Objective-C API.
 
-#### Overview
+## Overview
 
 In Swift, you use the `@available` attribute to control whether a declaration is available to use when building an app for a particular target platform. Similarly, you use the availability condition `#available` to execute code conditionally based on required platform and version conditions. Both kinds of availability specifier are also available in Objective-C.
 
 For detailed information about specifying and checking platform availability, see [available](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/attributes#available) and [Checking API Availability](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow#Checking-API-Availability) in [The Swift Programming Language](https://docs.swift.org/swift-book/).
 
-##### Mark Availability
+### Mark Availability
 
 Use the `API_AVAILABLE` macro to add availability information in Objective-C:
 
@@ -30,7 +30,7 @@ func newMethod() {
 }
 ```
 
-##### Check Availability
+### Check Availability
 
 Use the `@available()` keyword to check availability information in a conditional statement in Objective-C:
 

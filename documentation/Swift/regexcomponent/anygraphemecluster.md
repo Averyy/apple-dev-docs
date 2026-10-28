@@ -23,7 +23,7 @@ static var anyGraphemeCluster: CharacterClass { get }
 
 Available when `Self` is `CharacterClass`.
 
-#### Discussion
+## Discussion
 
 This character class is equivalent to `\X` in regex syntax.
 

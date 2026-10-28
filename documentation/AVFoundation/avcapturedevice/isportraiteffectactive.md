@@ -23,7 +23,7 @@ var isPortraitEffectActive: Bool { get }
 @property (nonatomic, readonly, getter=isPortraitEffectActive) BOOL portraitEffectActive;
 ```
 
-#### Discussion
+## Discussion
 
 When active, the device blurs the background, simulating a shallow depth of field effect. The device also limits the values of its [`activeVideoMinFrameDuration`](./activevideominframeduration.md) and [`activeVideoMaxFrameDuration`](./activevideomaxframeduration.md) to the value that the device format’s [`videoFrameRateRangeForPortraitEffect`](./format/videoframeraterangeforportraiteffect.md) specifies.
 

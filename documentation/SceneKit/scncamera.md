@@ -25,7 +25,7 @@ class SCNCamera
 @interface SCNCamera : NSObject
 ```
 
-#### Overview
+## Overview
 
 To display a scene, you must designate a node whose [`camera`](./scncamera/camera.md) property contains a camera object as the point of view.
 

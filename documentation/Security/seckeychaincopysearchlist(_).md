@@ -21,7 +21,7 @@ func SecKeychainCopySearchList(_ searchList: UnsafeMutablePointer<CFArray?>) -> 
 OSStatus SecKeychainCopySearchList(CFArrayRef*searchList);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

@@ -25,7 +25,7 @@ class func unresolvedConflictVersionsOfItem(at url: URL) -> [NSFileVersion]?
 + (NSArray<NSFileVersion *> *) unresolvedConflictVersionsOfItemAtURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSFileVersion` objects that represent the versions in conflict or `nil` if the file at URL does not exist.
 

@@ -15,11 +15,11 @@ Frees an index number used to access per-task storage
 OSStatus MPDeallocateTaskStorageIndex(TaskStorageIndex taskIndex);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 Also see the function  [`MPAllocateTaskStorageIndex`](./api-1585719-mpallocatetaskstorageindex.md). 
 

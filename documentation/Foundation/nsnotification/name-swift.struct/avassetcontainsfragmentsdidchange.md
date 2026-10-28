@@ -20,7 +20,7 @@ A notification the system posts when an asset’s fragments change.
 static let AVAssetContainsFragmentsDidChange: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 You can receive notifications of changes to an asset’s fragments after the system loads the value of an asset’s [`containsFragments`](../../../AVFoundation/avasset/containsfragments.md) property, and you’ve added the asset to an instance of [`AVFragmentedAssetMinder`](../../../AVFoundation/avfragmentedassetminder.md).
 

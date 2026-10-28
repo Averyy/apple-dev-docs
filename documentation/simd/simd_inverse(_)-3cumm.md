@@ -14,7 +14,7 @@ func simd_inverse(_ q: simd_quath) -> simd_quath
 static simd_quath simd_inverse(simd_quath q);
 ```
 
-#### Discussion
+## Discussion
 
 The (multiplicative) inverse of the quaternion `q`.
 

@@ -21,7 +21,7 @@ Custom format style portraying the two-digit numeric day of month, zero-padded i
 static var twoDigits: Date.FormatStyle.Symbol.Day { get }
 ```
 
-#### Discussion
+## Discussion
 
 This style produces `01` for the first day of the month and `18` for the eighteenth. To use single digits when possible, use [`defaultDigits`](./defaultdigits.md).
 

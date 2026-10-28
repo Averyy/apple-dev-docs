@@ -23,7 +23,7 @@ func attach(device: any VZUSBDevice) async throws
 - (void) attachDevice:(id<VZUSBDevice>) device completionHandler:(void (^)(NSError *errorOrNil)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If the device successfully attaches to the controller, it appears in the [`usbDevices`](./usbdevices.md) property, the framework sets its [`usbController`](../vzusbdevice/usbcontroller.md) property to point to the attached USB controller, and the completion handler returns `nil`.
 

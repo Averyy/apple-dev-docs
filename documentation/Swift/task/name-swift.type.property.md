@@ -23,7 +23,7 @@ static var name: String? { get }
 
 Available when `Success` is `Never` and `Failure` is `Never`.
 
-#### Discussion
+## Discussion
 
 Tasks can be named during their creation, which can be helpful to identify unique tasks which may be created at same source locations, for example:
 
@@ -39,7 +39,7 @@ func process(items: [Int]) async {
 }
 ```
 
-##### Task name availability
+### Task name availability
 
 The task name is only available when running with a recent runtime (Swift 6.2+).
 

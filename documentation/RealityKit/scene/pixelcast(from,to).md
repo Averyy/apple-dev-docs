@@ -20,11 +20,11 @@ Performs a ray cast against all the geometry in the scene for a ray between two 
 @preconcurrency func pixelCast(from startPosition: SIMD3<Float>, to endPosition: SIMD3<Float>) async throws -> PixelCastHit?
 ```
 
-#### Return Value
+## Return Value
 
 A `PixelCastHit`. The hit indicates where the ray, starting at `startPosition` and ending at `endPosition`, hit a particular entity in the scene.
 
-#### Discussion
+## Discussion
 
 The method ignores entities that lack a [`ModelComponent`](../modelcomponent.md) with a valid mesh.
 

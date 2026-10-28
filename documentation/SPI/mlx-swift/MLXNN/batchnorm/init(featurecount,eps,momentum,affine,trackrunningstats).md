@@ -17,7 +17,7 @@ Applies batch normalization [1] on the inputs.
 init(featureCount: Int, eps: Float = 1e-5, momentum: Float = 0.1, affine: Bool = true, trackRunningStats: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 See [BatchNorm python docs](https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.BatchNorm.html) for more information.
 
@@ -25,7 +25,7 @@ The input shape is specified as `NC` or `NLC`, where `N` is the batch, `C` is th
 
 For more information on Batch Normalization, see the original paper “Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift” [https://arxiv.org/abs/1502.03167](https://arxiv.org/abs/1502.03167).
 
-##### References
+### References
 
 1. [https://arxiv.org/abs/1502.03167](https://arxiv.org/abs/1502.03167)
 

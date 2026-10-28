@@ -13,7 +13,7 @@
 kSpeechGenerateTune = 1
 ```
 
-#### Discussion
+## Discussion
 
 Generate phonemes that produce a detailed tune, specified by pitch and duration information.
 

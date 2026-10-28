@@ -19,11 +19,11 @@
 static SPPose3DFloat SPPose3DFloatMake(SPPoint3DFloat position, SPRotation3DFloat rotation);
 ```
 
-#### Return Value
+## Return Value
 
 A new pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a pose with the specified position and rotation.
 

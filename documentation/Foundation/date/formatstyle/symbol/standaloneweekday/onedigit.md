@@ -21,7 +21,7 @@ The one-digit representation of a standalone weekday.
 static var oneDigit: Date.FormatStyle.Symbol.StandaloneWeekday { get }
 ```
 
-#### Discussion
+## Discussion
 
 This style produces representations like `2` for Monday.
 

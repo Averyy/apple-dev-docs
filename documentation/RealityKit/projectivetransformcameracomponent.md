@@ -20,7 +20,7 @@ A component that defines a virtual camera with a custom projection matrix.
 struct ProjectiveTransformCameraComponent
 ```
 
-#### Overview
+## Overview
 
 Each scene requires a camera, which defines the viewpoint from which RealityKit renders the scene. The projective transform camera renders the entities in the scene based on a custom user defined matrix. For this component, define a matrix that is either of symmetric perspective or orthographic projection. Define symmetric perspective matrices using reverse depth i.e., a matrix with near and far reversed. To create a projective transform camera, add this component to an entity.
 

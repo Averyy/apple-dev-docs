@@ -5,7 +5,7 @@
 
 Provide direct access to your camera app’s features to help people quickly capture the perfect shot.
 
-#### Overview
+## Overview
 
 iPhone 16 devices provide a new hardware interface — the Camera Control — that enables direct interaction with the camera system. By default, iOS configures the Camera Control to launch and control the Camera app. By adopting support for this feature, you can bring this same level of integration to your camera app.
 
@@ -19,7 +19,7 @@ The items this menu presents are instances of [`AVCaptureControl`](./avcaptureco
 
 > **Note**:  For design considerations when adopting this feature, see [Camera Control](https://developer.apple.com/design/human-interface-guidelines/camera-control) in Human Interface Guidelines.
 
-##### Adopt system controls
+### Adopt system controls
 
 The framework provides two ready-to-use control implementations that support common camera app features:
 
@@ -49,7 +49,7 @@ let systemZoomSlider = AVCaptureSystemZoomSlider(device: device) { zoomFactor in
 let systemBiasSlider = AVCaptureSystemExposureBiasSlider(device: device)
 ```
 
-##### Define custom controls
+### Define custom controls
 
 The framework also provides two general-purpose control types that you use to define custom controls:
 
@@ -108,7 +108,7 @@ focusSlider.setActionQueue(sessionQueue) { lensPosition in
 }
 ```
 
-##### Configure the capture session
+### Configure the capture session
 
 You make controls available to the system by adding them to your app’s capture session. Like the interfaces [`AVCaptureSession`](./avcapturesession.md) defines for configuring a session’s inputs and outputs, it provides similar API for configuring capture controls as shown here:
 
@@ -145,7 +145,7 @@ An app can only configure controls when supported by the host platform, so the e
 
 > ❗ **Important**:  Always call the capture session [`canAddControl(_:)`](./avcapturesession/canaddcontrol%28_%29.md) method before attempting to add a control. Even on supported platforms, the session may not be able to add a control due to other system state. For example, this method returns `false` if the capture session reaches its [`maxControlsCount`](./avcapturesession/maxcontrolscount.md) value. Attempting to call the [`addControl(_:)`](./avcapturesession/addcontrol%28_%29.md) method in this case results in an exception.
 
-##### Specify a controls delegate
+### Specify a controls delegate
 
 For the system to present the configured controls, a capture session needs to define a controls delegate. The framework provides the [`AVCaptureSessionControlsDelegate`](./avcapturesessioncontrolsdelegate.md) protocol for this purpose that defines the following methods to respond to control activation and presentation events:
 

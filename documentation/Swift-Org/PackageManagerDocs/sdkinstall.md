@@ -13,7 +13,7 @@ Installs a given Swift SDK bundle to a location discoverable by SwiftPM.
 **Availability**:
 - Swift 6.1+
 
-#### Overview
+## Overview
 
 If the artifact bundle is at a remote location, it’s downloaded to local filesystem first.
 

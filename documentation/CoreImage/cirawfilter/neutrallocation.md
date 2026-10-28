@@ -24,7 +24,7 @@ var neutralLocation: CGPoint { get set }
 @property (readwrite) CGPoint neutralLocation;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value based on `x,y` pixel coordinates in the image.
 

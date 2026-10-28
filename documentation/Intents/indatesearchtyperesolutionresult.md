@@ -25,7 +25,7 @@ class INDateSearchTypeResolutionResult
 @interface INDateSearchTypeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INDateSearchTypeResolutionResult`](./indatesearchtyperesolutionresult.md) object when resolving parameters that contain an [`INDateSearchType`](./indatesearchtype.md) value. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

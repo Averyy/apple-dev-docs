@@ -25,11 +25,11 @@ init(token: TKToken)
 - (instancetype) initWithToken:(TKToken *) token;
 ```
 
-#### Return Value
+## Return Value
 
 A new token session created with the specified token.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer.
 

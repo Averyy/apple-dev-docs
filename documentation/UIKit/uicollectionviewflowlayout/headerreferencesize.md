@@ -23,7 +23,7 @@ var headerReferenceSize: CGSize { get set }
 @property (nonatomic) CGSize headerReferenceSize;
 ```
 
-#### Discussion
+## Discussion
 
 If the delegate does not implement the [`collectionView(_:layout:referenceSizeForHeaderInSection:)`](../uicollectionviewdelegateflowlayout/collectionview%28_,layout,referencesizeforheaderinsection%29.md) method, the flow layout object uses the default header sizes set in this property.
 

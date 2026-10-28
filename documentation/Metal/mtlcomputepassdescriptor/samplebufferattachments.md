@@ -28,7 +28,7 @@ var sampleBufferAttachments: MTLComputePassSampleBufferAttachmentDescriptorArray
 
 - [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
-#### Discussion
+## Discussion
 
 The GPU uses sample buffers to record performance information. See [GPU counters and counter sample buffers](../gpu-counters-and-counter-sample-buffers.md), [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md), and [`MTLCounter`](../mtlcounter.md) for more information.
 

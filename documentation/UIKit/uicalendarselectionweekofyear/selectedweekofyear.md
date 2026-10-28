@@ -22,7 +22,7 @@ var selectedWeekOfYear: DateComponents? { get set }
 @property (nonatomic, copy, nullable) NSDateComponents * selectedWeekOfYear;
 ```
 
-#### Discussion
+## Discussion
 
 The components need to include `[.yearForWeekOfYear, .weekOfYear]`.
 

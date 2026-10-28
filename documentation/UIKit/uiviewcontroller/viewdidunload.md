@@ -19,7 +19,7 @@ Called when the controller’s view is released from memory.
 - (void) viewDidUnload;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 5 and earlier, when a low-memory condition occurred and the current view controller’s views were not needed, the system could opt to call this method after the view controller’s view had been released. This method was your chance to perform any final cleanup. If your view controller stored separate references to the view or its subviews, you could use this method to release those references. You could also use this method to remove references to any objects that you created to support the view but that are no longer needed now that the view is gone. You would not use this method to release user data or any other information that cannot be easily recreated.
 

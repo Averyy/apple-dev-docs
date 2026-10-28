@@ -21,7 +21,7 @@ The system denies access to the local player’s friends list because the game d
 static var friendListDescriptionMissing: GKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 If your game wants access to the player’s friends, provide a reason by adding the [`NSGKFriendListUsageDescription`](../../BundleResources/information-property-list/nsgkfriendlistusagedescription.md) key to the information property list.
 

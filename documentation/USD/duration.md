@@ -5,11 +5,11 @@
 
 The amount of time that the objects face the camera.
 
-#### Overview
+## Overview
 
 The default value is `1.0`. The prims in [affectedObjects](./affectedobjects.md) face the camera immediately when this action executes.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform double duration = 1.0

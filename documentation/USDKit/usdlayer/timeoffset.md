@@ -20,7 +20,7 @@ A time transformation applied when composing layers.
 struct TimeOffset
 ```
 
-#### Overview
+## Overview
 
 Consists of an offset (time shift) and a scale factor. Used in references and payloads to remap animation timing from a referenced layer into the referencing layer’s timeline.
 

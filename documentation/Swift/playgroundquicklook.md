@@ -24,7 +24,7 @@ The sum of types that can be used as a Quick Look representation.
 typealias PlaygroundQuickLook
 ```
 
-#### Discussion
+## Discussion
 
 The `PlaygroundQuickLook` protocol is deprecated, and will be removed from the standard library in a future Swift release. To customize the logging of your type in a playground, conform to the `CustomPlaygroundDisplayConvertible` protocol, which does not use the `PlaygroundQuickLook` enum.
 

@@ -24,7 +24,7 @@ struct AUNodeInteraction
 struct AUNodeInteraction;
 ```
 
-#### Overview
+## Overview
 
 This structure contains information about the interaction between two nodes (in the case of a connection), or the input to a node (in the case of a callback).
 

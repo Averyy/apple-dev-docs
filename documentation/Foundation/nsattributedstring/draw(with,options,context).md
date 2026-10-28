@@ -33,7 +33,7 @@ func draw(with rect: CGRect, options: NSString.DrawingOptions = [], context: NSS
 - (void) drawWithRect:(CGRect) rect options:(NSStringDrawingOptions) options context:(NSStringDrawingContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 If [`usesLineFragmentOrigin`](../../UIKit/nsstringdrawingoptions/useslinefragmentorigin.md) is specified in `options`, it wraps the string text as needed to make it fit. If the string is too big to fit completely inside the rectangle, the method scales the font or adjusts the letter spacing to make the string fit within the given bounds.
 
@@ -43,7 +43,7 @@ This method draws the line using the attributes specified in the attributed stri
 
 There must be either an active graphics context when you call this method.
 
-##### Special Considerations
+### Special Considerations
 
 This method uses the baseline origin by default, so it renders the string as a single line. To render the string in multiple lines, specify [`usesLineFragmentOrigin`](../../UIKit/nsstringdrawingoptions/useslinefragmentorigin.md) in `options`.
 

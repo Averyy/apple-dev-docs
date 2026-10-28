@@ -17,7 +17,7 @@
 @interface CNAssetSpatialAudioInfo : NSObject
 ```
 
-#### Overview
+## Overview
 
 A helper class to inspect recordings made when Spatial Audio setting is turned on. An instance of this class contains the default audio track with Spatial Audio, metadata read from the file that can be applied during to enhance the playback experience. This class also provides tunable parameters to change the intensity & mode of the playback experience.
 

@@ -25,7 +25,7 @@ func replaceItem(at originalItemURL: URL, withItemAt newItemURL: URL, backupItem
 - (BOOL) replaceItemAtURL:(NSURL *) originalItemURL withItemAtURL:(NSURL *) newItemURL backupItemName:(NSString *) backupItemName options:(NSFileManagerItemReplacementOptions) options resultingItemURL:(NSURL **) resultingURL error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the creation date, permissions, Finder label and color, and Spotlight comments of the original item are preserved on the new item. You can configure which metadata is preserved using the `options` parameter.
 

@@ -24,7 +24,7 @@ class let mediaServicesWereResetNotification: NSNotification.Name
 extern NSNotificationName const AVAudioSessionMediaServicesWereResetNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Under rare circumstances, the system terminates and restarts its media services daemon. Respond to these events by reinitializing your app’s audio objects (such as players, recorders, converters, or audio queues) and resetting your audio session’s category, options, and mode configuration. Your app shouldn’t restart its media playback, recording, or processing until initiated by user action.
 

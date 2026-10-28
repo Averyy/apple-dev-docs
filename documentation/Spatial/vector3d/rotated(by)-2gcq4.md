@@ -21,7 +21,7 @@ Returns the vector rotated by the specified rotation around the origin.
 func rotated(by rotation: Rotation3D) -> Vector3D
 ```
 
-#### Discussion
+## Discussion
 
 - Returns The rotated vector.
 

@@ -24,7 +24,7 @@ func deviceBrowser(_ browser: ICDeviceBrowser, didRemove device: ICDevice, moreG
 - (void) deviceBrowser:(ICDeviceBrowser *) browser didRemoveDevice:(ICDevice *) device moreGoing:(BOOL) moreGoing;
 ```
 
-#### Discussion
+## Discussion
 
 If several devices are removed at the same time, then this message is sent once for each device with the value of `moreGoing` set to `true` in each message except the last one.
 

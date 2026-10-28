@@ -19,7 +19,7 @@ class var rulerViewClass: AnyClass! { get set }
 @property (class, null_resettable) Class rulerViewClass;
 ```
 
-#### Discussion
+## Discussion
 
 This class is normally NSRulerView.
 

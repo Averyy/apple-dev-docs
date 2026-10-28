@@ -28,7 +28,7 @@ class CHHapticParameterCurve
 
 - [Representing haptic patterns in AHAP files](./representing-haptic-patterns-in-ahap-files.md)
 
-#### Overview
+## Overview
 
 Parameter curves serve the same purpose as dynamic parameters in that they alter a property value during playback. Unlike dynamic parameters, which change a property value instantaneously, parameter curves interpolate linearly between parameter values to ensure a smooth transition.
 

@@ -19,7 +19,7 @@ var modifier: NSComparisonPredicate.Modifier { get }
 @property (readonly) NSComparisonPredicateModifier modifier;
 ```
 
-#### Return Value
+## Return Value
 
 The comparison predicate modifier for the receiver.
 

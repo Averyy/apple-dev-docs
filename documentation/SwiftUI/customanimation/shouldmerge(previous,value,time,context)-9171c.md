@@ -21,11 +21,11 @@ Determines whether an instance of the animation can merge with other running ani
 func shouldMerge<V>(previous: Animation, value: V, time: TimeInterval, context: inout AnimationContext<V>) -> Bool where V : VectorArithmetic
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value of `true` if the animation should merge with the previous animation; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 When a view creates a new animation on an animatable value that already is running an animation, the system calls the `shouldMerge(previous:value:time:context:)` method on the new instance to determine whether it can merge the two instances. Implement this method if the animation can merge with other instances. The default implementation returns `false`.
 

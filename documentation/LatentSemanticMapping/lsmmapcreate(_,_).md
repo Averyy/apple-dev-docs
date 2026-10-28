@@ -20,7 +20,7 @@ func LSMMapCreate(_ alloc: CFAllocator?, _ flags: CFOptionFlags) -> Unmanaged<LS
 LSMMapRefLSMMapCreate(CFAllocatorRef alloc, CFOptionFlags flags);
 ```
 
-#### Discussion
+## Discussion
 
 Call [`CFRelease`](../CoreFoundation/cfrelease.md) to dispose of the map.
 

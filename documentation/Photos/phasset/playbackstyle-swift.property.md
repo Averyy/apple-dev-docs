@@ -24,7 +24,7 @@ var playbackStyle: PHAsset.PlaybackStyle { get }
 @property (nonatomic, assign, readonly) PHAssetPlaybackStyle playbackStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to choose how your app displays the asset in [`PHImageManager`](../phimagemanager.md) regardless of the media type backing the asset.
 

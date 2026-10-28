@@ -21,7 +21,7 @@ The locale to use when formatting items in the list.
 var locale: Locale
 ```
 
-#### Discussion
+## Discussion
 
 A [`Locale`](../locale.md) instance is typically used to provide, format, and interpret information about and according to the user’s customs and preferences.
 

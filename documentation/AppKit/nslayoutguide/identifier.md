@@ -19,7 +19,7 @@ var identifier: NSUserInterfaceItemIdentifier { get set }
 @property (copy) NSUserInterfaceItemIdentifier identifier;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the `identifier` property is `nil`. You can assign a string to help identify this guide. This string appears as part of the guide’s description when the guide is printed to the console. You can also use the identifier to find a particular layout guide from among the guides owned by a view.
 

@@ -5,7 +5,7 @@
 
 Specify the options you use to compile, link, and produce a product from a target, and identify settings inherited from your project or the system.
 
-#### Overview
+## Overview
 
 The Xcode build process is highly configurable, and you can change the build settings of a single target or all the targets in your project. Build settings control every aspect of the build process, including how Xcode compiles your source files, how it links your executable, whether it generates debug information, and how it packages and distributes your code. Xcode has hundreds of build settings to support the tools and steps associated with the build process.
 
@@ -17,7 +17,7 @@ Make changes to your project or target’s settings from the Build Settings tab 
 
 For a complete list of build settings, see [Build settings reference](./build-settings-reference.md).
 
-##### Search and filter the list of build settings
+### Search and filter the list of build settings
 
 To find a specific build setting quickly, use the filters and Search field at the top of the Build Settings tab.
 
@@ -25,7 +25,7 @@ To find a specific build setting quickly, use the filters and Search field at th
 - Enter text in the search field to display settings that contain the specified string. Xcode searches all settings attributes by default.
 - To refine your search, click the magnifying glass and select a single attribute to match.
 
-##### Configure the value of a build setting
+### Configure the value of a build setting
 
 Each build setting has the following attributes.
 
@@ -44,7 +44,7 @@ To configure different values for debug and release builds, click a setting’s 
 
 Some settings define their values in terms of other settings. For example, an attribute whose value is a path to a file might use the `BUILD_DIR` setting to specify part of the path. When a setting’s definition is visible, choose Editor > Show Values to see the computed final value — that is, the value without the environment variable. When the final value is visible, choose Editor > Show Definitions to see the definition.
 
-##### Evaluate how your project inherits settings
+### Evaluate how your project inherits settings
 
 Every target inherits settings from both its parent project and the platform SDK. This inheritance model ensures that the target starts with valid baseline settings. When you create a target, Xcode changes some settings based on the target type, and you are free to make other changes based on your needs.
 
@@ -62,7 +62,7 @@ With levels displayed, highlighted values indicate values that take precedence. 
 
 > **Note**: When using the `xcodebuild` command-line tool, the tool gives any settings you pass to it the highest prededence.
 
-##### Obtain additional details about a build setting
+### Obtain additional details about a build setting
 
 To see detailed information about a particular setting, select the setting and choose View > Inspectors > Quick Help. Xcode displays a description of the setting, along with its name and value type.
 

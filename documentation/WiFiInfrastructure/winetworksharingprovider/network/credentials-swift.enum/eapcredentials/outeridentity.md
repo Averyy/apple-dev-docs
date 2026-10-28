@@ -17,7 +17,7 @@ A name that hides the user’s actual name.
 let outerIdentity: String?
 ```
 
-#### Discussion
+## Discussion
 
 The user’s actual name appears only inside the encrypted tunnel. For example, the system configuration might set this to `anonymous` or `anon`, or `anon@mycompany.net`. It can increase security because an attacker can’t see the authenticating user’s name in the clear. This key is only relevant to TTLS, PEAP, and EAP-FAST.
 

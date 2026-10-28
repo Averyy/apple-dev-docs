@@ -28,7 +28,7 @@ var canBecomeFocused: Bool { get }
 
 - [About focus interactions for Apple TV](../about-focus-interactions-for-apple-tv.md)
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`false`](../../Swift/false.md), the item is not focusable, even if it is visible in the user interface. For example, a subclass of [`UIControl`](../uicontrol.md) returns [`false`](../../Swift/false.md) when it is not enabled.
 

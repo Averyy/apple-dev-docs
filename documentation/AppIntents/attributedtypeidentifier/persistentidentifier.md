@@ -21,7 +21,7 @@ The persistent identifier for this entity type.
 let persistentIdentifier: String
 ```
 
-#### Discussion
+## Discussion
 
 This identifier typically corresponds to the struct name of the original entity declaration (for example, `LandmarkEntity`). The system uses this value to uniquely identify the entity type within its bundle.
 

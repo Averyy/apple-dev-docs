@@ -6,7 +6,7 @@
 
 A 16-bit integer.
 
-#### Overview
+## Overview
 
 Set to `0` for version 0 sound descriptions. This may be set to `–2` for some version 1 sound descriptions; see the Redefined sample tables section in [`Sound sample description version 1`](../sound_sample_description_version_1.md).
 

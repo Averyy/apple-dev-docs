@@ -20,7 +20,7 @@ A reference counted immutable resource which contains one or more inverse kinema
 class IKResource
 ```
 
-#### Overview
+## Overview
 
 Use this resource with an [`IKComponent`](./ikcomponent.md).
 

@@ -25,7 +25,7 @@ var userInfo: [AnyHashable : Any]? { get set }
 @property (nonatomic, strong, nullable) NSDictionary * userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the user info dictionary to aid the customization of your migration process.
 

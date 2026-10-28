@@ -19,7 +19,7 @@ Creates a continuous slider control that selects a value from a bounded range.
 - (instancetype) initWithLocalizedTitle:(NSString *) localizedTitle symbolName:(NSString *) symbolName minValue:(float) minValue maxValue:(float) maxValue;
 ```
 
-#### Discussion
+## Discussion
 
 Use continuous sliders when your use case supports selecting any value in the specified range.
 

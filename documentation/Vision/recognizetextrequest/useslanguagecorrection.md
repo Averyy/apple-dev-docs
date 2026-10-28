@@ -20,7 +20,7 @@ A Boolean value that indicates whether the request applies language correction d
 var usesLanguageCorrection: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When this value is `true`, Vision applies language correction during the recognition process. Disabling this property returns the raw recognition results, which provides performance benefits but less accurate results.
 

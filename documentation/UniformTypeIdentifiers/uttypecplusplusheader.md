@@ -21,7 +21,7 @@ A type that represents a C++ header file.
 extern UTType * const UTTypeCPlusPlusHeader;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.c-plus-plus-header`.
 

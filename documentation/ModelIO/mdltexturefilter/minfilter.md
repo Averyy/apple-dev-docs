@@ -24,7 +24,7 @@ var minFilter: MDLMaterialTextureFilterMode { get set }
 @property (nonatomic, assign) MDLMaterialTextureFilterMode minFilter;
 ```
 
-#### Discussion
+## Discussion
 
 Texture filtering determines the appearance of a rendered surface when portions of the surface appear larger or smaller than the original texture image. For example, the texture coordinates at a point far from the camera may correspond to an area of several texels. A renderer uses the minification filter to determine the color of the sampled texel at that point.
 

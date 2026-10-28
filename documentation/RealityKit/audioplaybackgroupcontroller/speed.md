@@ -21,7 +21,7 @@ The rate of playback for all audio resources in the group, with a range of `[.25
 @preconcurrency var speed: Double { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set the speed to `1` for a normal playback rate. All audio sources in the group will play at the same speed to maintain synchronization.
 

@@ -23,7 +23,7 @@ func processJobs() async -> PHBackgroundResourceUploadProcessingResult
 
 - [Uploading asset resources in the background](../../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Return Value
+## Return Value
 
 A result type of [`PHBackgroundResourceUploadProcessingResult`](../phbackgroundresourceuploadprocessingresult.md) based on the state of the processing task.
 

@@ -20,7 +20,7 @@ func objectBounds() -> NSRect
 - (NSRect) objectBounds;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle of the on-screen control.
 

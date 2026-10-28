@@ -24,7 +24,7 @@ class func predicateForContainers(withIdentifiers identifiers: [String]) -> NSPr
 + (NSPredicate *) predicateForContainersWithIdentifiers:(NSArray<NSString *> *) identifiers;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that can be used to fetch containers from [`CNContactStore`](../cncontactstore.md).
 

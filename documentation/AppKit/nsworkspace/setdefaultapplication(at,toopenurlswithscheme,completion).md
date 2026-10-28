@@ -23,7 +23,7 @@ func setDefaultApplication(at applicationURL: URL, toOpenURLsWithScheme urlSchem
 - (void) setDefaultApplicationAtURL:(NSURL *) applicationURL toOpenURLsWithScheme:(NSString *) urlScheme completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method sets the default app to open files of the type specified by the `urlScheme`. If a change requires user consent, the system asks the for consent asynchronously before invoking the completion handler.
 

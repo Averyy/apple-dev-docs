@@ -25,7 +25,7 @@ class CLKSimpleGaugeProvider
 
 - [Creating a timeline entry](./creating-a-timeline-entry.md)
 
-#### Overview
+## Overview
 
 A simple gauge provider displays values that map to a `0.0` to `1.0` range. For example, you could use the gauge to show the percentage of a task that has been completed, or the current temperature within a specified temperature range.
 

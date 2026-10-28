@@ -25,7 +25,7 @@ var type: String { get set }
 @property (copy) NSString * type;
 ```
 
-#### Discussion
+## Discussion
 
 A string constant (such as `NSSQLiteStoreType`) that specifies the type of the new store—see [`NSPersistentStoreCoordinator`](../nspersistentstorecoordinator.md).
 

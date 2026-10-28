@@ -25,7 +25,7 @@ func applied<C, Annotation>(to elements: C, upsampledBy count: Int) -> Upsampled
 
 - [Augmenting images to expand your training data](../augmenting-images-to-expand-your-training-data.md)
 
-#### Return Value
+## Return Value
 
 A sequence of augmented elements having `count` times the number of elements in the input collection.
 

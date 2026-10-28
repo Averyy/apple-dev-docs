@@ -25,7 +25,7 @@ let kCGImagePropertyExifFlashPixVersion: CFString
 extern CFStringRef const kCGImagePropertyExifFlashPixVersion;
 ```
 
-#### Discussion
+## Discussion
 
 FlashPix is a format for multiresolution tiled images that facilitates fast onscreen viewing.
 

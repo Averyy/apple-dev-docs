@@ -25,7 +25,7 @@ var renderingIntent: CGColorRenderingIntent { get }
 extern CGColorRenderingIntent CGImageGetRenderingIntent(CGImageRef image);
 ```
 
-#### Discussion
+## Discussion
 
 Provides the `CGColorRenderingIntent` constant that specifies how to handle colors that are not located within the gamut of the destination color space of a graphics context in which the image is drawn. If the image is an image mask, this function returns [`CGColorRenderingIntent.defaultIntent`](../cgcolorrenderingintent/defaultintent.md).
 

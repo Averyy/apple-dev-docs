@@ -19,7 +19,7 @@ class var writableTypes: [String] { get }
 @property (class, copy, readonly) NSArray<NSString *> * writableTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects representing the writable document types.
 

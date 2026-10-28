@@ -23,11 +23,11 @@ optional func toolbarDefaultItemIdentifiers(_ toolbar: NSToolbar) -> [NSToolbarI
 - (NSArray<NSString *> *) toolbarDefaultItemIdentifiers:(NSToolbar *) toolbar;
 ```
 
-#### Return Value
+## Return Value
 
 An array of toolbar item identifiers, each of which represents an item that appears in the default toolbar. Arrange the identifiers in the order you want them to appear in the toolbar, with the first item appearing on the toolbar’s leading edge.
 
-#### Discussion
+## Discussion
 
 The toolbar calls this method when user settings don’t contain any custom configuration data for the toolbar. The toolbar also calls it to initialize the customization palette’s contents.
 

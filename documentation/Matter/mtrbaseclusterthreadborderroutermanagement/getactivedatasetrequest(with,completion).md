@@ -29,7 +29,7 @@ func activeDatasetRequest(with params: MTRThreadBorderRouterManagementClusterGet
 - (void) getActiveDatasetRequestWithParams:(MTRThreadBorderRouterManagementClusterGetActiveDatasetRequestParams *) params completion:(void (^)(MTRThreadBorderRouterManagementClusterDatasetResponseParams *data, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command SHALL be used to request the active operational dataset of the Thread network to which the border router is connected.
 

@@ -23,11 +23,11 @@ mutating func popFirst() -> Dictionary<Key, Value>.Element?
 
 Available when `Key` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 The first key-value pair of the dictionary if the dictionary is not empty; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 The first element of the dictionary is not necessarily the first element added. Don’t expect any particular ordering of key-value pairs.
 

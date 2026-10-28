@@ -23,7 +23,7 @@ var floorsAscended: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * floorsAscended;
 ```
 
-#### Discussion
+## Discussion
 
 This value reflects only the floors ascended while the user was walking or running up stairs and does not reflect the floors ascended by elevator or other assisted means. A single floor has a height of approximately three meters. The value in this property is `nil` when floor counting is not supported on the current device.
 

@@ -21,7 +21,7 @@ The main document URL associated with this request.
 var mainDocumentURL: URL? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This URL is used for the cookie “same domain as main document” policy.
 

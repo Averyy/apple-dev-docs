@@ -21,7 +21,7 @@ func loadWeights(modelDirectory: URL, model: BaseLanguageModel, quantization: Ba
 
 - [Porting Models](./porting.md)
 
-#### Discussion
+## Discussion
 
 Loading blocks its thread on file I/O and fans out with `DispatchQueue.concurrentPerform`. Swift concurrency’s cooperative threads must never block, so this overload runs the load on a global queue and suspends the caller instead. Async callers resolve to this overload; the synchronous one remains for synchronous code such as model conversion.
 

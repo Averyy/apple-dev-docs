@@ -23,11 +23,11 @@ func anchorWithOffset(to otherAnchor: NSLayoutYAxisAnchor) -> NSLayoutDimension
 - (NSLayoutDimension *) anchorWithOffsetToAnchor:(NSLayoutYAxisAnchor *) otherAnchor;
 ```
 
-#### Return Value
+## Return Value
 
 The [`NSLayoutDimension`](../nslayoutdimension.md) object represented by the two anchors.
 
-#### Discussion
+## Discussion
 
 Use the returned object to define constraints relative to the space between the current anchor and the object in the `otherAnchor` parameter.
 

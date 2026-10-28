@@ -19,11 +19,11 @@ func NewOSLCompareUPP(_ userRoutine: OSLCompareProcPtr!) -> OSLCompareUPP!
 OSLCompareUPP NewOSLCompareUPP(OSLCompareProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 See [`OSLCompareUPP`](./oslcompareupp.md).
 
-#### Discussion
+## Discussion
 
 See the [`OSLCompareProcPtr`](./oslcompareprocptr.md) callback function. 
 

@@ -13,11 +13,11 @@
 errno_t inet_arp_lookup(ifnet_t interface, const struct sockaddr_in *ip_dest, struct sockaddr_dl *ll_dest, size_t ll_dest_len, route_t hint, mbuf_t packet);
 ```
 
-#### Return Value
+## Return Value
 
 May return an error such as EHOSTDOWN or ENETUNREACH. If this function returns EJUSTRETURN, the packet has been queued and will be sent when an arp response is received. If any other value is returned, the caller is responsible for disposing of the packet.
 
-#### Discussion
+## Discussion
 
 This function will check the routing table for a cached arp entry or trigger an arp query to resolve the ip address to a link-layer address.
 

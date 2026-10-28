@@ -23,7 +23,7 @@ case keyboard
 UIInputViewStyleKeyboard
 ```
 
-#### Discussion
+## Discussion
 
 This style makes the input view match the keyboard appearance and can be used to replace or extend the keyboard.
 

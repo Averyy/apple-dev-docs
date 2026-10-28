@@ -19,11 +19,11 @@ func holdingPriorityForSubview(at subviewIndex: Int) -> NSLayoutConstraint.Prior
 - (NSLayoutPriority) holdingPriorityForSubviewAtIndex:(NSInteger) subviewIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The layout priority of the subview at the index.
 
-#### Discussion
+## Discussion
 
 The priority is the manner that the split view subviews use to maintain their width (for a vertical split view) or height (for a horizontal split view). During a split view resize, subviews with higher priorities maintain their sizes before subviews with lower priorities. The subview with the lowest priority is the first to gain additional thickness if the split view grows or shrinks.
 

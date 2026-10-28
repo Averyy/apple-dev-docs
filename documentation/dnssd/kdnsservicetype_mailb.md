@@ -23,7 +23,7 @@ var kDNSServiceType_MAILB: Int { get }
 kDNSServiceType_MAILB
 ```
 
-#### Discussion
+## Discussion
 
 Transfer mailbox records.
 

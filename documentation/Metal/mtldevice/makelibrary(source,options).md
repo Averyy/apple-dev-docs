@@ -29,11 +29,11 @@ func makeLibrary(source: String, options: MTLCompileOptions?) throws -> any MTLL
 
 - [Minimizing the binary size of a shader library](../minimizing-the-binary-size-of-a-shader-library.md)
 
-#### Return Value
+## Return Value
 
 A new [`MTLLibrary`](../mtllibrary.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 
-#### Discussion
+## Discussion
 
 Because there’s no search path to find other functions, the source may only import the Metal default library.
 

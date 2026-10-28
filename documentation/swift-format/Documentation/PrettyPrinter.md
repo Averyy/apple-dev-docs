@@ -37,7 +37,7 @@ The available cases are: `syntax`, `break`, `spaces`, `open`, `close`,
 `newlines`, `comment`, and `verbatim`. The behavior of each of them is
 described below with pseudocode examples.
 
-See: [`Token.swift`](../Sources/SwiftFormat/PrettyPrint/Token.swift)
+See: [`Token.swift`](https://github.com/swiftlang/swift-format/blob/main/Sources/SwiftFormat/PrettyPrint/Token.swift)
 
 #### Syntax
 
@@ -332,7 +332,7 @@ beginning of a source file).
 When we have visited all nodes in the AST, the array of printing tokens is then
 passed on to the *scan* phase of the pretty-printer.
 
-See: [`TokenStreamCreator.swift`](../Sources/SwiftFormat/PrettyPrint/TokenStreamCreator.swift)
+See: [`TokenStreamCreator.swift`](https://github.com/swiftlang/swift-format/blob/main/Sources/SwiftFormat/PrettyPrint/TokenStreamCreator.swift)
 
 ## Scan
 
@@ -352,7 +352,7 @@ After having iterated over the entire list of tokens and calculated their
 lengths, we then loop over the tokens and call `print` for each token with its
 corresponding length.
 
-See: [`PrettyPrint.swift:prettyPrint()`](../Sources/SwiftFormat/PrettyPrint/PrettyPrint.swift)
+See: [`PrettyPrint.swift:prettyPrint()`](https://github.com/swiftlang/swift-format/blob/main/Sources/SwiftFormat/PrettyPrint/PrettyPrint.swift)
 
 ### Syntax Tokens
 
@@ -427,7 +427,7 @@ The logic for the `print` function is fairly complex and varies depending on
 the kind of token or break being printed. Rather than explain it here, we
 recommend viewing its documented source directly.
 
-See: [`PrettyPrint.swift:printToken(...)`](../Sources/SwiftFormat/PrettyPrint/PrettyPrint.swift)
+See: [`PrettyPrint.swift:printToken(...)`](https://github.com/swiftlang/swift-format/blob/main/Sources/SwiftFormat/PrettyPrint/PrettyPrint.swift)
 
 ## Differences from Oppen's Algorithm
 
@@ -496,6 +496,6 @@ sense to place this label on the containing group.
 
 Oppen's algorithm prints the indentation whitespace when `break` tokens are
 encountered. If we have extra blank lines in between source code, this can
-result in hanging or trailing whitespace. Waiting to print the indentation <!--# ignore-unacceptable-language -->
+result in hanging or trailing whitespace. Waiting to print the indentation
 whitespace until encountering a `syntax`, `comment, or `verbatim` tokens
 prevents this.

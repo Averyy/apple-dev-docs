@@ -20,7 +20,7 @@ The seed value for random operations during tree building process.
 var randomSeed: Int
 ```
 
-#### Discussion
+## Discussion
 
 Set the random seed value to ensure results are reproducible.
 

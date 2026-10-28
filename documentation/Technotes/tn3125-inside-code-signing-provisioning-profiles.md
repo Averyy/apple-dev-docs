@@ -5,7 +5,7 @@
 
 Learn how provisioning profiles enable third-party code to run on Apple platforms.
 
-#### Overview
+## Overview
 
 Code signing is a foundational technology on all Apple platforms.  Many documents that discuss code signing focus on solving a specific problem.  The *Inside Code Signing* technote series is different: It peeks behind the code signing curtain, to give you a better understanding of how this technology works.  Read these technotes to make better code signing choices up front, to understand why Apple’s code signing tools work the way they do, to inform your investigation of any code signing issues you encounter, and because learning stuff is fun!
 
@@ -17,7 +17,7 @@ The other technotes in the *Inside Code Signing* series are:
 
 > ❗ **Important**: The *Inside Code Signing* technotes discuss code signing details that aren’t considered API.  The structure of a code signature has changed numerous times in the past and may well change again in the future.  Don’t encode this information in your product.  When signing code, use Xcode (all platforms) or the `codesign` tool (macOS only).  To get information or validate a code signature, use the `codesign` tool or the [Code Signing Services](../Security/code-signing-services.md) API.  Apple updates these facilities to accommodate any changes to the code signature structure as they roll out.
 
-#### Provisioning profile fundamentals
+## Provisioning profile fundamentals
 
 Apple platforms, except macOS, won’t run arbitrary third-party code.  All execution of third-party code must be authorized by Apple.  This authorization comes in the form of a provisioning profile, which ties together five criteria:
 
@@ -37,7 +37,7 @@ When the Apple Developer website creates a profile for you, it cryptographically
 
 There is one interesting edge case with provisioning profiles: When you submit your app to the App Store, the App Store re-signs the app as part of the distribution process.  Before doing that, it checks that the app is signed and provisioned correctly.  That check means that each individual device doesn’t need to perform further security checks, so the final app doesn’t have a provisioning profile.  However, this third-party code was still authorized by a profile, albeit during the App Store distribution process.
 
-#### Unpack a profile
+## Unpack a profile
 
 A provisioning profile is a property list wrapped within a Cryptographic Message Syntax (CMS) signature.  To view the original property list, remove the CMS wrapper using the `security` tool:
 
@@ -61,7 +61,7 @@ Still, the property list is easier to read and so the bulk of this technote focu
 
 For more information about the tools used in these examples, read their man pages.  If you’re unfamiliar with that process, see .
 
-#### The who
+## The who
 
 Every profile has a `DeveloperCertificates` property holding the certificates of each developer who can sign code covered by the profile.  For example:
 
@@ -100,7 +100,7 @@ Not After          : 09:15:22 Apr 21, 2022
 
 To learn more about code-signing certificates, read [TN3161: Inside Code Signing: Certificates](./tn3161-inside-code-signing-certificates.md).
 
-#### The what
+## The what
 
 Most profiles apply to a single App ID, encoded in the `Entitlements` > `application-identifier` property:
 
@@ -123,7 +123,7 @@ SKMME9E2Y8.com.example.apple-samplecode.*
 
 This profile applies to any app whose App ID starts with `SKMME9E2Y8.com.example.apple-samplecode.`
 
-#### The where
+## The where
 
 Most profiles apply to a specific list of devices.  This is encoded in the `ProvisionedDevices` property:
 
@@ -141,7 +141,7 @@ App Store distribution profiles have no `ProvisionedDevices` property because yo
 
 Developer ID and In-House (Enterprise) distribution profiles have the `ProvisionsAllDevices` property, indicating that they apply to all devices.  For more details about Developer ID provisioning profiles on the Mac, see [Entitlements on macOS](./tn3125-inside-code-signing-provisioning-profiles.md#Entitlements-on-macOS).
 
-#### The when
+## The when
 
 Every profile has an `ExpirationDate` property which limits how long the profile remains valid.  For example:
 
@@ -152,7 +152,7 @@ Every profile has an `ExpirationDate` property which limits how long the profile
 
 This validity period varies by profile type, but it’s typically not more than a year.  The exception here is Developer ID profiles, which have an expiration date far in the future.
 
-#### The how
+## The how
 
 Every profile has an `Entitlements` property which authorizes the app to use specific entitlements.  For example:
 
@@ -208,7 +208,7 @@ To dump the entitlements claimed by the app, use `codesign` with the `--entitlem
 
 Every entitlement claimed by this app is authorized by its profile, and thus iOS allows the app to run.  Note that the `keychain-access-groups` value, `SKMME9E2Y8.com.example.apple-samplecode.ProfileExplainer`, starts with `SKMME9E2Y8.` and thus is allowed by the wildcard.
 
-#### Entitlements on macOS
+## Entitlements on macOS
 
 A macOS app can claim certain entitlements without them being authorized by a provisioning profile.  These *unrestricted entitlements* include:
 
@@ -225,7 +225,7 @@ A Mac app that uses no restricted entitlements doesn’t need a provisioning pro
 
 macOS supports provisioning profiles for both App Store and Developer ID distribution.  Some entitlements are not supported by Developer ID profiles.  For the details, see [Supported capabilities (macOS)](https://help.apple.com/developer-account/#/devadf555df9) in [Developer Account Help](https://help.apple.com/developer-account/).  For general information about Developer ID signing, see [Signing Mac Software with Developer ID](https://developer.apple.com/developer-id/)
 
-#### Profile location
+## Profile location
 
 In the early days of iOS development it was common to install a provisioning profile on the device as a whole (in the Settings app).  That’s still possible, but current best practice is to embed the profile within the app itself:
 
@@ -238,7 +238,7 @@ Apps that you download from the App Store don’t contain an embedded provisioni
 
 Some macOS products, like daemons and command-line tools, ship as a standalone executable.  A standalone executable can’t claim a restricted entitlement because there’s no place to embed the provisioning profile that authorizes that claim.  If your standalone executable needs to do this, wrap it in an app-like structure.  For an example of this, see [Signing a daemon with a restricted entitlement](../Xcode/signing-a-daemon-with-a-restricted-entitlement.md).
 
-#### The future is DER
+## The future is DER
 
 Modern systems no longer treat the profile’s property list as the source of truth.  Rather, they use the binary form of the profile stored in the profile’s `DER-Encoded-Profile` property:
 
@@ -309,7 +309,7 @@ The one exception is the `DeveloperCertificates` property.  This doesn’t conta
 
 This DER-encoded profile is required starting with iOS 15, iPadOS 15, tvOS 15, and watchOS 8.  For more on that change, see [Using the latest code signature format](../Xcode/using-the-latest-code-signature-format.md).
 
-#### Revision History
+## Revision History
 
 - **2024-02-06** Added a link to [TN3126: Inside Code Signing: Hashes](./tn3126-inside-code-signing-hashes.md).  Made other minor editorial changes.
 - **2022-05-24** Made minor editorial changes.

@@ -23,7 +23,7 @@ struct UITextContentType
 typedef NSString * UITextContentType;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the [`textContentType`](./uitextinputtraits/textcontenttype.md) property.
 

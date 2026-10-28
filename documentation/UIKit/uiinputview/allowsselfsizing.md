@@ -23,7 +23,7 @@ var allowsSelfSizing: Bool { get set }
 @property (nonatomic, assign) BOOL allowsSelfSizing;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`false`](../../Swift/false.md) (the default), UIKit determines an appropriate size of the input view based on its current layout. When the value of this property is [`true`](../../Swift/true.md), UIKit honors the value returned by the [`systemLayoutSizeFitting(_:)`](../uiview/systemlayoutsizefitting%28_%29.md) method of the input view.
 

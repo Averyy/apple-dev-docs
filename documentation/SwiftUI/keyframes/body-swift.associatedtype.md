@@ -22,7 +22,7 @@ The type of keyframes representing the body of this type.
 associatedtype Body : Keyframes
 ```
 
-#### Discussion
+## Discussion
 
 When you create a custom keyframes type, Swift infers this type from your implementation of the required [`body`](./body-swift.property.md) property.
 

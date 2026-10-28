@@ -23,7 +23,7 @@ var cancelButtonIndex: Int { get set }
 @property (nonatomic) NSInteger cancelButtonIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Button indices start at `0`. The default value of this property is normally `-1`, which indicates that no cancel button has been set. However, a cancel button may be created and set automatically by the [`init(title:delegate:cancelButtonTitle:destructiveButtonTitle:)`](./init%28title,delegate,cancelbuttontitle,destructivebuttontitle%29.md) method. If you use that method to create a cancel button, you should not change the value of this property.
 

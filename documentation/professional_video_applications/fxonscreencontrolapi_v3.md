@@ -19,7 +19,7 @@ protocol FxOnScreenControlAPI_v3 : FxOnScreenControlAPI_v2
 @protocol FxOnScreenControlAPI_v3 <FxOnScreenControlAPI_v2>
 ```
 
-#### Overview
+## Overview
 
 This protocol inherits from, and expands on, the [`FxOnScreenControlAPI_v2`](./fxonscreencontrolapi_v2.md) protocol. It can retrieve information about the scaling factor used to draw on screen controls to the screen.
 

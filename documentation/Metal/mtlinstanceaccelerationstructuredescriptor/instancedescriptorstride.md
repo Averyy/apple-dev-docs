@@ -24,7 +24,7 @@ var instanceDescriptorStride: Int { get set }
 @property (nonatomic) NSUInteger instanceDescriptorStride;
 ```
 
-#### Discussion
+## Discussion
 
 The stride needs to be at least 64 bytes and needs to be a multiple of 4 bytes. Defaults to 64 bytes.
 

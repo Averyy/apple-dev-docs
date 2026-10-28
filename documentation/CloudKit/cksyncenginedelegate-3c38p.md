@@ -21,7 +21,7 @@ An interface for providing record data to a sync engine and customizing that eng
 @protocol CKSyncEngineDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: [`CKSyncEngine`](./cksyncengine-4b4w9.md) delivers events serially, which means the delegate doesn’t receive the next event until it finishes handling the current one. To maintain this ordering, don’t call sync engine methods from your delegate that may cause the engine to generate additional events. For example, don’t invoke [`fetchChangesWithCompletionHandler:`](./cksyncengine-4b4w9/fetchchangeswithcompletionhandler_.md) or [`sendChangesWithCompletionHandler:`](./cksyncengine-4b4w9/sendchangeswithcompletionhandler_.md) from within [`syncEngine:handleEvent:`](./cksyncenginedelegate-3c38p/syncengine_handleevent_.md).
 

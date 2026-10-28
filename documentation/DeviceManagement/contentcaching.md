@@ -15,11 +15,11 @@ The declaration to configure the Content Caching service.
 object ContentCaching
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.content-cache.settings` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ Specify `com.apple.configuration.content-cache.settings` as the declaration type
 | Allowed in user scope | N/A |
 | Apply | Only a single configuration is applied |
 
-##### Configuration examples
+### Configuration examples
 
 **Basic caching**:
 

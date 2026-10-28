@@ -19,11 +19,11 @@ Finish constructing the detection track and return it.
 - (CNDetectionTrack *) finishDetectionTrack;
 ```
 
-#### Return Value
+## Return Value
 
 A detection track which tracks the object
 
-#### Discussion
+## Discussion
 
 Used to convert a normalized point in an image to a rectangle used to start tracking.
 

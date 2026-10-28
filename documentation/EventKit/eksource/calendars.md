@@ -19,7 +19,7 @@ var calendars: Set<EKCalendar> { get }
 @property (nonatomic, readonly) NSSet<EKCalendar *> * calendars;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  This property is not available in macOS.
 

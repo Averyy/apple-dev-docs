@@ -22,7 +22,7 @@ init(delegate: (any UIEditMenuInteractionDelegate)?)
 - (instancetype) initWithDelegate:(id<UIEditMenuInteractionDelegate>) delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Create an object that conforms to the [`UIEditMenuInteractionDelegate`](../uieditmenuinteractiondelegate.md) protocol and assign it to this property. The interaction uses the system delegate if no delegate is provided (if you pass in `nil`).
 

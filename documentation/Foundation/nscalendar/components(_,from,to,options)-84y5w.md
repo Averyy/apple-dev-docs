@@ -25,11 +25,11 @@ func components(_ unitFlags: NSCalendar.Unit, from startingDate: Date, to result
 - (NSDateComponents *) components:(NSCalendarUnit) unitFlags fromDate:(NSDate *) startingDate toDate:(NSDate *) resultDate options:(NSCalendarOptions) opts;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSDateComponents` object whose components are specified by `unitFlags` and calculated from the difference between the `resultDate` and `startDate` using the options specified by `options`. Returns `nil` if either date falls outside the defined range of the receiver or if the computation cannot be performed.
 
-#### Discussion
+## Discussion
 
 The result is lossy if there is not a small enough unit requested to hold the full precision of the difference. Some operations can be ambiguous, and the behavior of the computation is calendar-specific, but generally larger components will be computed before smaller components; for example, in the Gregorian calendar a result might be 1 month and 5 days instead of, for example, 0 months and 35 days. The resulting component values may be negative if `resultDate` is before `startDate`.
 

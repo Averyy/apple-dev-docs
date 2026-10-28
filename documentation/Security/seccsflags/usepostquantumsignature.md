@@ -20,7 +20,7 @@ static var usePostQuantumSignature: SecCSFlags { get }
 kSecCSUsePostQuantumSignature
 ```
 
-#### Discussion
+## Discussion
 
 When passed to a validation or inspection call on a dual-signed code object, select the post-quantum (PQ) signature slot for validation and information retrieval. Mutually exclusive with kSecCSUseClassicalSignature.
 

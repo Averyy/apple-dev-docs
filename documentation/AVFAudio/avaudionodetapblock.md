@@ -25,7 +25,7 @@ typealias AVAudioNodeTapBlock = (AVAudioPCMBuffer, AVAudioTime) -> Void
 typedef void (^)(AVAudioPCMBuffer *, AVAudioTime *) AVAudioNodeTapBlock;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  The framework may invoke this callback on a thread other than the main thread.
 

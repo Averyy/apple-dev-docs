@@ -6,7 +6,7 @@
 
 Use the App Store Connect API to collect and parse diagnostic logs and metrics for your apps.
 
-#### Overview
+## Overview
 
 The sample code includes a number of scripts that demonstrate the following:
 
@@ -17,7 +17,7 @@ The sample code includes a number of scripts that demonstrate the following:
 
 Allow a few days after releasing your app for Apple to collect and organize logs into reports. The system behind the API requires significant usage of your app before it makes metrics available, and each metric has different usage thresholds.
 
-##### Configure the Project
+### Configure the Project
 
 Install the Python libraries `pyjwt` and `docopt` to run the sample code. Use Terminal to run the following command to install the libraries locally:
 
@@ -25,7 +25,7 @@ Install the Python libraries `pyjwt` and `docopt` to run the sample code. Use Te
 pip3 install pyjwt[crypto] docopt --user
 ```
 
-##### Create a JSON Web Token to Access the App Store Connect API
+### Create a JSON Web Token to Access the App Store Connect API
 
 To use the API, you need to generate and provide a JSON Web Token (JWT), signed using an App Store Connect API key. First, generate and retrieve a private key as described in [Creating API Keys for App Store Connect API](./creating-api-keys-for-app-store-connect-api.md). While retrieving your API key, take note of the issuer ID and the key ID, generating a JWT requires them. After retrieving your API key, use the `generate-token.py` script to generate a JWT to authenticate requests you send to the App Store Connect API.
 
@@ -37,7 +37,7 @@ python3 generate-token.py {issuer id} {key id} {private key path}
 
 For more information about generating tokens, see [Generating Tokens for API Requests](./generating-tokens-for-api-requests.md).
 
-##### Identify Your App ID and Build ID
+### Identify Your App ID and Build ID
 
 To retrieve power and performance metrics for your app, you need to know its App ID. Use the [`List apps`](./get-v1-apps.md) endpoint to get a list of your apps and metadata about them, including App IDs.
 
@@ -57,7 +57,7 @@ APP_ID=YourAppId
 curl -H "Authorization: Bearer ${TOKEN}" "https://api.appstoreconnect.apple.com/v1/apps/{$APP_ID}/builds" 
 ```
 
-##### Retrieve Metric Insights for Your App
+### Retrieve Metric Insights for Your App
 
 Use the `get-metrics-insights.py` script to download power and performance metrics, and to print metric hotspot data identified by insights:
 
@@ -65,7 +65,7 @@ Use the `get-metrics-insights.py` script to download power and performance metri
 python3 get-metrics-insights.py $APP_ID
 ```
 
-##### Retrieve Diagnostic Logs for a Build of Your App
+### Retrieve Diagnostic Logs for a Build of Your App
 
 Use the `get-diagnostics-logs.py` script to download disk writes, diagnostic logs, and print the callbacks resulting from the top disk write I/O exception:
 
@@ -73,7 +73,7 @@ Use the `get-diagnostics-logs.py` script to download disk writes, diagnostic log
 python3 get-diagnostics-logs.py $BUILD_ID
 ```
 
-##### Parse JSON Files Retrieved from App Store Connect
+### Parse JSON Files Retrieved from App Store Connect
 
 The code in `ppparser` provides an example of how to parse the JSON performance metrics and diagnostic log data retrieved from App Store Connect API. With JSON files stored locally, use the following command to invoke the parser directly:
 

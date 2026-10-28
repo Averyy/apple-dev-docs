@@ -20,7 +20,7 @@ A message that posts after a game controller accessory disconnects from the devi
 struct DidDisconnectMessage
 ```
 
-#### Overview
+## Overview
 
 Use the `.didDisconnect` identifier with `NotificationCenter` to listen for this message.
 

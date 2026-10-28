@@ -20,7 +20,7 @@ Returns the relationship spec at the given path.
 func relationship(at path: USDLayer.Path) -> USDPrim.Relationship.Spec?
 ```
 
-#### Return Value
+## Return Value
 
 The relationship spec, or `nil` if none is authored at `path`.
 

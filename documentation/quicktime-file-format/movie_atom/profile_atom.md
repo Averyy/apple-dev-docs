@@ -6,7 +6,7 @@
 
 An atom that summarizes the features and complexity of a movie.
 
-#### Overview
+## Overview
 
 For more information, see [`Movie profile atom`](../movie_profile_atom.md).
 

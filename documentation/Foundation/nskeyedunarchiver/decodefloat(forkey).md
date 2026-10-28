@@ -25,11 +25,11 @@ func decodeFloat(forKey key: String) -> Float
 - (float) decodeFloatForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 The single-precision floating-point value associated with the key `key`. Returns `0.0` if `key` does not exist.
 
-#### Discussion
+## Discussion
 
 If the archived value was encoded as double precision, the type is coerced, loosing precision. If the archived value is too large for single precision, the method raises an `NSRangeException`.
 

@@ -25,7 +25,7 @@ init(url: URL)
 - (instancetype) initWithURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized [`NSPersistentStoreDescription`](../nspersistentstoredescription.md) configured with the given URL.
 

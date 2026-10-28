@@ -19,7 +19,7 @@ A result of a Wi-Fi-scan operation performed on the device
 struct WiFiScanResult
 ```
 
-#### Overview
+## Overview
 
 Use an instances to create a `WiFiNetworkAssociation` as a possible Wi-Fi network for the device to join.
 

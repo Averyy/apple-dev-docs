@@ -21,7 +21,7 @@ An object that represents a negative phrase.
 struct NegativeAppShortcutPhrase
 ```
 
-#### Overview
+## Overview
 
 Each negative phrase will be used to populate an app-level negative training set. This set will contain phrases that will completely bypass your app.
 

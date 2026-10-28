@@ -1078,7 +1078,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/bulk-operations-endpoints": {
       "file_path": "documentation/apple-ads-platform-api/bulk-operations-endpoints.md",
-      "hash": "a37ab88f89aabbdac0ef2b42f8fbd52a051f1a9c3793557243331ab22a7f4e78"
+      "hash": "590c921eab7bee73cfbd390945938a3536f667ce9a26ab2d31f863ab2bb0516f"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/bulkentitydeleteidlong": {
       "file_path": "documentation/apple-ads-platform-api/bulkentitydeleteidlong.md",
@@ -1614,11 +1614,11 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/delete-location-group": {
       "file_path": "documentation/apple-ads-platform-api/delete-location-group.md",
-      "hash": "f916ffef0b670a7a919cb38a32e141086c5d730dacc761556b73eabc6ee050fa"
+      "hash": "15579f897fe76e6b7b2f7805a2e392d2e78981fb72d8ec8209c3e4acd589aef8"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/delete-negative-keywords-_id_": {
       "file_path": "documentation/apple-ads-platform-api/delete-negative-keywords-_id_.md",
-      "hash": "b146147bb1ac4b9bc7a41aabe1c2bdcc1a57ab3cb4ff0c2b1329ba94e5c23d29"
+      "hash": "29f433f194e43778e5bdf3ed767e1bc15f7133150278a108eeab1e1712df6337"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/delete-shared-budgets-_id_": {
       "file_path": "documentation/apple-ads-platform-api/delete-shared-budgets-_id_.md",
@@ -1878,7 +1878,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-negative-keywords-_id_": {
       "file_path": "documentation/apple-ads-platform-api/get-negative-keywords-_id_.md",
-      "hash": "187803106a3349647994b1db630893eb85666948209d95f50578b5a3f33ebbdd"
+      "hash": "1742fac656efd5d6cbfc97ccf552446f9ea50e8525cc758af61efd9f0dae1627"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/get-orgs-_id_": {
       "file_path": "documentation/apple-ads-platform-api/get-orgs-_id_.md",
@@ -2178,7 +2178,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/negativekeyword": {
       "file_path": "documentation/apple-ads-platform-api/negativekeyword.md",
-      "hash": "e552a475a9df219ba76547271b1a7c7d9ff5164bde830419a441591707d740b1"
+      "hash": "4ab92deffa8b9d443a623bfdfb0cd5b5324b4df137bc7779afa9c08954809dd1"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/negativekeyword/matchtype-data.typealias": {
       "file_path": "documentation/apple-ads-platform-api/negativekeyword/matchtype-data.typealias.md",
@@ -2382,7 +2382,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-negative-keywords-bulk-delete": {
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords-bulk-delete.md",
-      "hash": "445391a4dee19bf51b3b746d8d80b3067821c605de576fd0e155bb2a644bd207"
+      "hash": "65185d3e2bda52e8c8589dfd78b1ea30b18f29527b02f357041c62d264c11d86"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-negative-keywords-bulk-update": {
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords-bulk-update.md",
@@ -2390,7 +2390,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-negative-keywords-query": {
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords-query.md",
-      "hash": "9fa4e4225701286ce975e39098170d998091d926c678718d3b11801fac68369e"
+      "hash": "2f4350474b780f329c269c906ce86a6f3205a139b910e2db488d3e4acd594a7d"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/post-shared-budgets": {
       "file_path": "documentation/apple-ads-platform-api/post-shared-budgets.md",
@@ -2522,7 +2522,7 @@
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-location-groups": {
       "file_path": "documentation/apple-ads-platform-api/query-location-groups.md",
-      "hash": "c7441421a6cdda80f222706a515f34238a93303d791409fe3572d74bd27bddde"
+      "hash": "f461703b2df9659a4d13733134944d272c6b22dec0563baacd207237b124da33"
     },
     "https://developer.apple.com/documentation/apple-ads-platform-api/query-locations": {
       "file_path": "documentation/apple-ads-platform-api/query-locations.md",
@@ -4098,7 +4098,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/bulk-operations-endpoints.json": {
       "file_path": "documentation/apple-ads-platform-api/bulk-operations-endpoints.md",
-      "hash": "a37ab88f89aabbdac0ef2b42f8fbd52a051f1a9c3793557243331ab22a7f4e78"
+      "hash": "590c921eab7bee73cfbd390945938a3536f667ce9a26ab2d31f863ab2bb0516f"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/bulkentitydeleteidlong.json": {
       "file_path": "documentation/apple-ads-platform-api/bulkentitydeleteidlong.md",
@@ -4634,11 +4634,11 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/delete-location-group.json": {
       "file_path": "documentation/apple-ads-platform-api/delete-location-group.md",
-      "hash": "f916ffef0b670a7a919cb38a32e141086c5d730dacc761556b73eabc6ee050fa"
+      "hash": "15579f897fe76e6b7b2f7805a2e392d2e78981fb72d8ec8209c3e4acd589aef8"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/delete-negative-keywords-_id_.json": {
       "file_path": "documentation/apple-ads-platform-api/delete-negative-keywords-_id_.md",
-      "hash": "b146147bb1ac4b9bc7a41aabe1c2bdcc1a57ab3cb4ff0c2b1329ba94e5c23d29"
+      "hash": "29f433f194e43778e5bdf3ed767e1bc15f7133150278a108eeab1e1712df6337"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/delete-shared-budgets-_id_.json": {
       "file_path": "documentation/apple-ads-platform-api/delete-shared-budgets-_id_.md",
@@ -4898,7 +4898,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-negative-keywords-_id_.json": {
       "file_path": "documentation/apple-ads-platform-api/get-negative-keywords-_id_.md",
-      "hash": "187803106a3349647994b1db630893eb85666948209d95f50578b5a3f33ebbdd"
+      "hash": "1742fac656efd5d6cbfc97ccf552446f9ea50e8525cc758af61efd9f0dae1627"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/get-orgs-_id_.json": {
       "file_path": "documentation/apple-ads-platform-api/get-orgs-_id_.md",
@@ -5198,7 +5198,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/negativekeyword.json": {
       "file_path": "documentation/apple-ads-platform-api/negativekeyword.md",
-      "hash": "e552a475a9df219ba76547271b1a7c7d9ff5164bde830419a441591707d740b1"
+      "hash": "4ab92deffa8b9d443a623bfdfb0cd5b5324b4df137bc7779afa9c08954809dd1"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/negativekeyword/matchtype-data.typealias.json": {
       "file_path": "documentation/apple-ads-platform-api/negativekeyword/matchtype-data.typealias.md",
@@ -5398,7 +5398,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-negative-keywords-bulk-delete.json": {
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords-bulk-delete.md",
-      "hash": "445391a4dee19bf51b3b746d8d80b3067821c605de576fd0e155bb2a644bd207"
+      "hash": "65185d3e2bda52e8c8589dfd78b1ea30b18f29527b02f357041c62d264c11d86"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-negative-keywords-bulk-update.json": {
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords-bulk-update.md",
@@ -5406,7 +5406,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-negative-keywords-query.json": {
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords-query.md",
-      "hash": "9fa4e4225701286ce975e39098170d998091d926c678718d3b11801fac68369e"
+      "hash": "2f4350474b780f329c269c906ce86a6f3205a139b910e2db488d3e4acd594a7d"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/post-negative-keywords.json": {
       "file_path": "documentation/apple-ads-platform-api/post-negative-keywords.md",
@@ -5542,7 +5542,7 @@
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-location-groups.json": {
       "file_path": "documentation/apple-ads-platform-api/query-location-groups.md",
-      "hash": "c7441421a6cdda80f222706a515f34238a93303d791409fe3572d74bd27bddde"
+      "hash": "f461703b2df9659a4d13733134944d272c6b22dec0563baacd207237b124da33"
     },
     "https://developer.apple.com/tutorials/data/documentation/apple-ads-platform-api/query-locations.json": {
       "file_path": "documentation/apple-ads-platform-api/query-locations.md",
@@ -6043,7 +6043,7 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 1510
   }

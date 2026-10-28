@@ -25,7 +25,7 @@ class MLState
 @interface MLState : NSObject
 ```
 
-#### Overview
+## Overview
 
 A stateful model maintains a state from one prediction to another by storing the information in the state buffers. To use such a model, the client must request the model to create state buffers and get `MLState` object, which is the handle to those buffers. Then, at the prediction time, pass the `MLState` object in one of the stateful prediction functions.
 

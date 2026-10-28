@@ -19,11 +19,11 @@ var editedColumn: Int { get }
 @property (readonly) NSInteger editedColumn;
 ```
 
-#### Return Value
+## Return Value
 
 If sent during [`editColumn(_:row:with:select:)`](./editcolumn%28_,row,with,select%29.md), the index in the [`tableColumns`](./tablecolumns.md) array of the column being edited; otherwise `–1`.
 
-#### Discussion
+## Discussion
 
 This property does not apply to view-based table views. In a view-based table view, the views are responsible for their own editing behavior. For other tables, the value reflects the index of the column being edited or `–1` when there is no editing session in progress or when the currently edited row is a “full width” row.
 

@@ -39,7 +39,7 @@ nonisolated
 func accessibilityHint<S>(_ hint: S, isEnabled: Bool = true) -> some TabContent<Self.TabValue> where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Provide a hint in the form of a brief phrase, like “Open shopping cart” or “Show downloaded attachments”.
 

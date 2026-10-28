@@ -25,11 +25,11 @@ class HTTPCookieStorage
 @interface NSHTTPCookieStorage : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each stored cookie is represented by an instance of the [`HTTPCookie`](./httpcookie.md) class.
 
-##### Sharing cookie storage
+### Sharing cookie storage
 
 The persistent cookie storage returned by [`shared`](./httpcookiestorage/shared.md) may be available to app extensions or other apps, subject to the following guidelines:
 
@@ -43,7 +43,7 @@ Session cookies (where the cookie object’s [`isSessionOnly`](./httpcookie/isse
 
 > **Note**:  In cases where a cookie storage is shared between processes, changes made to the cookie accept policy affect all currently running apps using the cookie storage.
 
-##### Subclassing notes
+### Subclassing notes
 
 The [`HTTPCookieStorage`](./httpcookiestorage.md) class is usable as-is, but you can subclass it. For example, you can override the storage methods like [`storeCookies(_:for:)`](./httpcookiestorage/storecookies%28_,for%29.md), [`getCookiesFor(_:completionHandler:)`](./httpcookiestorage/getcookiesfor%28_,completionhandler%29.md) to screen which cookies are stored, or reimplement the storage mechanism for security or other reasons.
 

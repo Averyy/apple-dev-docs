@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_ReducedFrameDelivery: CFString
 extern CFStringRef const kVTDecompressionPropertyKey_ReducedFrameDelivery;
 ```
 
-#### Discussion
+## Discussion
 
 This is an optional property for video decoders to implement. If supported, it requests that frame delivery be reduced by the specified amount.
 

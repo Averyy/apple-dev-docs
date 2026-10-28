@@ -22,7 +22,7 @@ func setMaximumTrackImage(_ image: UIImage?, for state: UIControl.State)
 - (void) setMaximumTrackImage:(UIImage *) image forState:(UIControlState) state;
 ```
 
-#### Discussion
+## Discussion
 
 Because the movement of the slider’s thumb changes the width of the area occupied by the maximum track image, the image width must change accordingly. To accommodate this requirement, specify track images as stretchable images that can grow or shrink to fill the available space. For information about how to create stretchable images, see [`UIImage`](../uiimage.md).
 

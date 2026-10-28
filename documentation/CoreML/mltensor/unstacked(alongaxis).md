@@ -21,11 +21,11 @@ Unpacks the given dimension of a rank-`R` tensor into multiple rank-`(R-1)` tens
 func unstacked(alongAxis axis: Int = 0) -> [MLTensor]
 ```
 
-#### Return Value
+## Return Value
 
 An array containing the unstacked tensors.
 
-#### Discussion
+## Discussion
 
 Unpacks `N` tensors from this tensor by chipping it along the `axis` dimension, where `N` is inferred from this tensor’s shape. For example, given a tensor with shape `[A, B, C, D]`:
 

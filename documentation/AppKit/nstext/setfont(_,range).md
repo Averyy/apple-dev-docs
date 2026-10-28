@@ -19,7 +19,7 @@ func setFont(_ font: NSFont, range: NSRange)
 - (void) setFont:(NSFont *) font range:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 This method applies only to a rich text object.
 

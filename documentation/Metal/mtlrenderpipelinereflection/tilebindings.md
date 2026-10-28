@@ -24,7 +24,7 @@ var tileBindings: [any MTLBinding] { get }
 @property (readonly, nonnull) NSArray<id<MTLBinding>> * tileBindings;
 ```
 
-#### Discussion
+## Discussion
 
 The [`MTLBinding`](../mtlbinding.md) elements in the array are in the same order as the tile shader’s declaration signature.
 

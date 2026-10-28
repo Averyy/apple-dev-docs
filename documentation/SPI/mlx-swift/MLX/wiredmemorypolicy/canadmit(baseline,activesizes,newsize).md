@@ -18,7 +18,7 @@ Decide whether a new ticket can be admitted. Defaults to allowing all tickets.
 func canAdmit(baseline: Int, activeSizes: [Int], newSize: Int) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 This is evaluated before a ticket is started. If it returns false, `start()` will suspend until another ticket ends and capacity becomes available. Admission checks only consider tickets that share the same policy grouping.
 

@@ -24,7 +24,7 @@ init(workingDirectory: URL) throws
 
 - [Detecting and grouping faces in images](../detecting-and-grouping-faces-in-images.md)
 
-#### Discussion
+## Discussion
 
 The analyzer loads any existing face data from `workingDirectory` on initialization, so subsequent runs resume from where the previous session ended.
 

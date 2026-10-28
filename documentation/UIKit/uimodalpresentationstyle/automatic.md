@@ -23,7 +23,7 @@ case automatic
 UIModalPresentationAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 For most view controllers, UIKit maps this style to:
 

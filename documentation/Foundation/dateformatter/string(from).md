@@ -25,11 +25,11 @@ func string(from date: Date) -> String
 - (NSString *) stringFromDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of `date`.
 
-#### Discussion
+## Discussion
 
 For more information about using [`DateFormatter`](../dateformatter.md) to produce a string representation of a date, see [Working With User-Visible Representations of Dates and Times](../dateformatter.md#Working-With-User-Visible-Representations-of-Dates-and-Times). For a sample code playground, see [Displaying Human-Friendly Content](../displaying-human-friendly-content.md).
 

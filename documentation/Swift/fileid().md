@@ -18,11 +18,11 @@ Produces a unique identifier for the source file in which the macro appears.
 ## Declaration
 
 ```swift
-@freestanding
-(expression) macro fileID<T>() -> T where T : ExpressibleByStringLiteral
+@freestanding(expression)
+macro fileID<T>() -> T where T : ExpressibleByStringLiteral
 ```
 
-#### Overview
+## Overview
 
 The unique identifier has the form *module*/*file*, where *file* is the name of the file in which the expression appears and *module* is the name of the module that this file is part of.
 

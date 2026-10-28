@@ -21,7 +21,7 @@ Adds an observer to a center for messages delivered on the main actor with a giv
 func addObserver<Identifier, Message>(of subject: Message.Subject.Type, for identifier: Identifier, using observer: @escaping @MainActor (Message) -> Void) -> NotificationCenter.ObservationToken where Identifier : NotificationCenter.MessageIdentifier, Message : NotificationCenter.MainActorMessage, Message == Identifier.MessageType
 ```
 
-#### Return Value
+## Return Value
 
 A token representing the observation registration with the given notification center.
 

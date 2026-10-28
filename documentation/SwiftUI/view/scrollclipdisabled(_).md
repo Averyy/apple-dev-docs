@@ -22,11 +22,11 @@ nonisolated
 func scrollClipDisabled(_ disabled: Bool = true) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that disables or enables scroll view clipping.
 
-#### Discussion
+## Discussion
 
 By default, a scroll view clips its content to its bounds, but you can disable that behavior by using this modifier. For example, if the views inside the scroll view have shadows that extend beyond the bounds of the scroll view, you can use this modifier to avoid clipping the shadows:
 

@@ -21,7 +21,7 @@ var networkIdentifier: Int { get set }
 @property (nonatomic, assign) NSInteger networkIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Set this to the value of the session ID in the anchor’s configuration.
 

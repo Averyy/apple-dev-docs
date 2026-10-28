@@ -20,7 +20,7 @@ Indicates whether two bounding boxes are equal.
 static func == (lhs: BoundingBox, rhs: BoundingBox) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value set to `true` if the two boxes are equal.
 

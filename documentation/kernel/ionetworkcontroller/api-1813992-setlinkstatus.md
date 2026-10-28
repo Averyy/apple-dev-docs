@@ -15,11 +15,11 @@ virtual bool setLinkStatus(
  OSData *data = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if all link properties were successfully updated, false otherwise.
 
-#### Overview
+## Overview
 
 Drivers must call this method when a link change is detected. IONetworkController will update the link status properties in the registry, and generate an event to inform the upper layers about the change.
 

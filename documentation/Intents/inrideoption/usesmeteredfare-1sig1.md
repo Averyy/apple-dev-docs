@@ -20,7 +20,7 @@ A Boolean value indicating whether the price uses a metered fare instead of a fi
 var usesMeteredFare: Bool? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 A Boolean value indicating whether the ride uses a metered fare instead of a fixed price. When set to [`true`](../../Swift/true.md), any information in the [`priceRange`](./pricerange.md) property isn’t shown to the user.
 

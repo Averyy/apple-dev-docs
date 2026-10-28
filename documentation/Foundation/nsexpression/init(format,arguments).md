@@ -25,7 +25,7 @@ init(format expressionFormat: String, arguments argList: CVaListPointer)
 + (NSExpression *) expressionWithFormat:(NSString *) expressionFormat arguments:(va_list) argList;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSExpression` object with the specified arguments.
 

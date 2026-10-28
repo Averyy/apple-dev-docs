@@ -17,17 +17,17 @@ Generates text and tool calls asynchronously using speculative decoding with a d
 func generate(input: LMInput, cache: [KVCache]? = nil, state: LMOutput.State? = nil, parameters: GenerateParameters, context: ModelContext, draftModel: any LanguageModel, draftCache: [KVCache]? = nil, numDraftTokens: Int = 2, components: GenerationComponents = .init(), wiredMemoryTicket: WiredMemoryTicket? = nil, tools: [[String : any Sendable]]? = nil) throws -> AsyncStream<Generation>
 ```
 
-#### Return Value
+## Return Value
 
 An `AsyncStream` that emits text, accepted or rejected tool calls, and completion information as `Generation` values.
 
-#### Discussion
+## Discussion
 
 This function uses a smaller draft model to propose tokens that are verified in batch by the main model, potentially accelerating generation. The resulting stream yields decoded text chunks, tool calls, and completion information. It has the same output as the non-speculative [`generate(input:cache:state:parameters:context:components:wiredMemoryTicket:tools:)`](./generate%28input,cache,state,parameters,context,components,wiredmemoryticket,tools%29.md).
 
 Both models must share the same tokenizer.
 
-##### Example Usage:
+### Example Usage:
 
 ```swift
 let generateParameters: GenerateParameters

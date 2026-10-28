@@ -19,7 +19,7 @@ An error that indicates the feature type is invalid.
 case invalidFeatureType(String)
 ```
 
-#### Discussion
+## Discussion
 
 This means that either the feature type has an incorrect name, or that the asset comes from a more recent version of the library and you may need to upgrade.
 

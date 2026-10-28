@@ -4,7 +4,7 @@
 
 Specify the object class for an Apple event object.
 
-#### Overview
+## Overview
 
 The object class of an Apple event object is identified by an object class ID. For example, the object class for an object specifier that specifies an RGB color value is the four-character code `'cRGB'`, which can be represented by the constant `cRGBColor`.
 

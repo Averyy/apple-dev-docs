@@ -25,7 +25,7 @@ class SCNTube
 @interface SCNTube : SCNGeometry
 ```
 
-#### Overview
+## Overview
 
 ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929815@2x.png)
 

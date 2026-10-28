@@ -21,7 +21,7 @@ Replace a range of bytes in the block buffer.
 mutating func replaceSubrange(_ range: Range<Int>, with bytes: UnsafeRawBufferPointer)
 ```
 
-#### Discussion
+## Discussion
 
 This function also works if the range covers non-contiguous regions of memory.
 

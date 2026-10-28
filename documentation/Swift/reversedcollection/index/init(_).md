@@ -21,7 +21,7 @@ Creates a new index into a reversed collection for the position before the speci
 init(_ base: Base.Index)
 ```
 
-#### Discussion
+## Discussion
 
 When you create an index into a reversed collection using `base`, an index from the underlying collection, the resulting index is the position of the element *before* the element referenced by `base`. The following example creates a new `ReversedIndex` from the index of the `"a"` character in a string’s character view.
 

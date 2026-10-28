@@ -20,7 +20,7 @@ optional func window(_ window: NSWindow, willEncodeRestorableState state: NSCode
 - (void) window:(NSWindow *) window willEncodeRestorableState:(NSCoder *) state;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called during the window’s [`encodeRestorableState(with:)`](../nsresponder/encoderestorablestate%28with%29.md) method.
 

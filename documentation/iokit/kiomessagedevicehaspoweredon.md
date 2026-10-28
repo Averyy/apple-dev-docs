@@ -17,7 +17,7 @@
 #define kIOMessageDeviceHasPoweredOn
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the device has just moved to a higher power state. Sent to IOKit interest notification clients of type `kIOAppPowerStateInterest` and `kIOGeneralInterest`.
 

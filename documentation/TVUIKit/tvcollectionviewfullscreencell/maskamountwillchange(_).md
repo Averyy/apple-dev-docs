@@ -19,7 +19,7 @@ func maskAmountWillChange(_ nextMaskAmount: CGFloat)
 - (void) maskAmountWillChange:(CGFloat) nextMaskAmount;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

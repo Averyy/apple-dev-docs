@@ -23,11 +23,11 @@ class func confirmationRequired(with accountTypeToConfirm: INAccountType) -> Sel
 + (instancetype) confirmationRequiredWithAccountTypeToConfirm:(INAccountType) accountTypeToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INAccountTypeResolutionResult`](../inaccounttyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the account type to a single value that is similar to the type specified by the user, but not exactly the same.
 

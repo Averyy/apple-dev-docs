@@ -25,11 +25,11 @@ func CFNumberCreate(_ allocator: CFAllocator!, _ theType: CFNumberType, _ valueP
 extern CFNumberRefCFNumberCreate(CFAllocatorRef allocator, CFNumberType theType, const void *valuePtr);
 ```
 
-#### Return Value
+## Return Value
 
 A new number with the value specified by `valuePtr`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The `theType` parameter is not necessarily preserved when creating a new CFNumber object. The CFNumber object will be created using whatever internal storage type the creation function deems appropriate. Use the function [`CFNumberGetType(_:)`](./cfnumbergettype%28_%29.md) to find out what type the CFNumber object used to store your value.
 

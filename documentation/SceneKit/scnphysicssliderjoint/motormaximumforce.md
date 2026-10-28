@@ -25,7 +25,7 @@ var motorMaximumForce: CGFloat { get set }
 @property (nonatomic) CGFloat motorMaximumForce;
 ```
 
-#### Discussion
+## Discussion
 
 When you change the value of the [`motorTargetLinearVelocity`](./motortargetlinearvelocity.md) property, the joint continuously applies a force of no greater than this magnitude until the bodies are moving at the target velocity. The default value is `1.0`.
 

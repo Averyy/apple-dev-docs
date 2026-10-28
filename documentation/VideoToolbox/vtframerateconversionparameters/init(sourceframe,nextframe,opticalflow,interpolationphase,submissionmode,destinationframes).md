@@ -18,7 +18,7 @@ Creates a new frame rate conversion parameters object.
 convenience init?(sourceFrame: VTFrameProcessorFrame, nextFrame: VTFrameProcessorFrame, opticalFlow: VTFrameProcessorOpticalFlow?, interpolationPhase: [Float], submissionMode: VTFrameRateConversionParameters.SubmissionMode, destinationFrames: [VTFrameProcessorFrame])
 ```
 
-#### Discussion
+## Discussion
 
 Initialization fails if the `sourceFrame` or `nextFrame` arguments are `NULL`, if `sourceFrame` and reference frames don’t have the same pixel format, or if the `interpolationPhase` array count does not match the `destinationFrames` array count.
 

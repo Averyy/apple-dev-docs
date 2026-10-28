@@ -22,7 +22,7 @@ func selectionChangedWithGesture(at point: CGPoint, gesture gestureType: BEGestu
 - (void) selectionChangedWithGestureAtPoint:(CGPoint) point gesture:(BEGestureType) gestureType state:(UIGestureRecognizerState) gestureState flags:(BESelectionFlags) flags;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when your browser text view receives [`updateCurrentSelection(to:from:in:)`](../betextinput/updatecurrentselection%28to,from,in%29.md).
 

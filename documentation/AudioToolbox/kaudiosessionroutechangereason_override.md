@@ -23,7 +23,7 @@ var kAudioSessionRouteChangeReason_Override: Int { get }
 kAudioSessionRouteChangeReason_Override
 ```
 
-#### Discussion
+## Discussion
 
 For example, while using the [`kAudioSessionCategory_PlayAndRecord`](./kaudiosessioncategory_playandrecord.md) category, output audio has been redirected to the speaker using the [`kAudioSessionProperty_OverrideAudioRoute`](./kaudiosessionproperty_overrideaudioroute.md) property.
 

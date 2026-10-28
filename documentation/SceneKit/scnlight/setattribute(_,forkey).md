@@ -27,7 +27,7 @@ func setAttribute(_ attribute: Any?, forKey key: String)
 - (void) setAttribute:(id) attribute forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 A light’s [`type`](./type.md) property determines its set of available attributes.
 

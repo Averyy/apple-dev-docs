@@ -23,7 +23,7 @@ static var bottom: UIStackView.Alignment { get }
 UIStackViewAlignmentBottom
 ```
 
-#### Discussion
+## Discussion
 
 This value is equivalent to the [`UIStackView.Alignment.trailing`](./trailing.md) alignment for vertical stacks.
 

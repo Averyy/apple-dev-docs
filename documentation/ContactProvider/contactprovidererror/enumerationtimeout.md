@@ -16,7 +16,7 @@ The extension enumeration timed out.
 case enumerationTimeout
 ```
 
-#### Discussion
+## Discussion
 
 This can occur if the [`ContactItemEnumerator`](../contactitemenumerator.md) takes too long to enumerate a batch of content or changes.
 

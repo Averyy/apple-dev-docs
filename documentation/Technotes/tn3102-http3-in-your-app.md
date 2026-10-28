@@ -5,7 +5,7 @@
 
 Get started with iOS 15’s new HTTP/3 support.
 
-#### Overview
+## Overview
 
 HTTP/3 is a major new feature in iOS 15. While you wait for your server to add support for it, here’s how you can test it today in your app:
 
@@ -99,7 +99,7 @@ extension NetworkManager {
 }
 ```
 
-#### Testing notes
+## Testing notes
 
 After running the code above, your app will print something similar to:
 
@@ -116,15 +116,15 @@ Service discovery for `HTTP/3` is performed in one of the following ways:
 - The recommended approach is to configure your DNS server to advertise the HTTPS resource record for `alpn="h3,h2"`.
 - Alternatively, configure your server to respond back with the `Alt-Svc` header that advertises `HTTP/3`. For example, `Alt-Srv: h3=":443"; ma=2592000`.
 
-To attempt to use `HTTP/3` on the first transaction, set the [assumesHTTP3Capable](../Foundation/urlrequest/api-3738175-assumeshttp3capable.md) property on the [URLRequest](../Foundation/urlrequest.md) being used to execute the data task in [URLSession](../Foundation/urlsession.md).
+To attempt to use `HTTP/3` on the first transaction, set the [assumesHTTP3Capable](../Foundation/urlrequest/assumeshttp3capable.md) property on the [URLRequest](../Foundation/urlrequest.md) being used to execute the data task in [URLSession](../Foundation/urlsession.md).
 
 For cases where `HTTP/3` is not supported on the server, or over the network, you will see the protocol fall back to `h2` or `http1.1`. For more information on this, please see the WWDC session for [Accelerate networking with HTTP/3 and QUIC](https://developer.apple.com/videos/play/wwdc2021/10094/).
 
 > **Note**: Servers that support `HTTP/3` need to be based on Draft 29 or later.
 
-If you experience issues while debugging your network transactions, take a look at these requests in the Network Instruments tool to debug what you are seeing being sent back from your server. For more on this, see the article for [Analyzing HTTP Traffic with Instruments](../Foundation/url_loading_system/analyzing_http_traffic_with_instruments.md).
+If you experience issues while debugging your network transactions, take a look at these requests in the Network Instruments tool to debug what you are seeing being sent back from your server. For more on this, see the article for [Analyzing HTTP Traffic with Instruments](../Foundation/analyzing-http-traffic-with-instruments.md).
 
-#### Revision History
+## Revision History
 
 - **2022-05-24** Made minor editorial changes.
 - **2022-02-08** Republished as TN3102.

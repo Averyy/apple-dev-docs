@@ -24,7 +24,7 @@ var strides: [NSNumber] { get set }
 @property (nonatomic, copy, readwrite) NSArray<NSNumber *> * strides;
 ```
 
-#### Discussion
+## Discussion
 
 Default value: `@[ @1, @1, @1, @1 ]`
 

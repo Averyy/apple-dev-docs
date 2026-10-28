@@ -21,7 +21,7 @@ func composition(withIdentifier identifier: String!) -> QCComposition!
 - (QCComposition *) compositionWithIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The composition identified by the provided string, or `nil` if there is no composition with that identifier in the composition repository.
 

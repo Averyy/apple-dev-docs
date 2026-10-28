@@ -20,7 +20,7 @@ The per-axis weight this demand has on the pose.
 var weight: SIMD3<Float>
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Values of `0` or less remove the demand influence.
 

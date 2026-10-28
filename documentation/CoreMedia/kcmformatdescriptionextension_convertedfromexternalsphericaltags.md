@@ -23,7 +23,7 @@ let kCMFormatDescriptionExtension_ConvertedFromExternalSphericalTags: CFString
 extern CFStringRef const kCMFormatDescriptionExtension_ConvertedFromExternalSphericalTags;
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that the image description contains projected media data converted from an external format
 

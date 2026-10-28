@@ -23,7 +23,7 @@ func stopAnimating()
 - (void) stopAnimating;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to stop the animation of the progress indicator started with a call to [`startAnimating()`](./startanimating%28%29.md). When animating is stopped, the indicator is hidden, unless [`hidesWhenStopped`](./hideswhenstopped.md) is [`false`](../../Swift/false.md).
 

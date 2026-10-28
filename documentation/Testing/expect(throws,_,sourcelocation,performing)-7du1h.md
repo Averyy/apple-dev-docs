@@ -28,11 +28,11 @@ Check that an expression always throws a specific error.
 
 - [Testing for errors in Swift code](./testing-for-errors-in-swift-code.md)
 
-#### Return Value
+## Return Value
 
 If the expectation passes, the instance of `E` that was thrown by `expression` and is equal to `error`. If the expectation fails, the result is `nil`.
 
-#### Overview
+## Overview
 
 Use this overload of `#expect()` when the expression `expression` *should* throw a specific error:
 

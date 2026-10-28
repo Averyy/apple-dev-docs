@@ -21,11 +21,11 @@ Publishes the minimum value received from the upstream publisher, using the prov
 func tryMin(by areInIncreasingOrder: @escaping (Self.Output, Self.Output) throws -> Bool) -> Publishers.TryComparison<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that publishes the minimum value received from the upstream publisher, after the upstream publisher finishes.
 
-#### Discussion
+## Discussion
 
 Use [`tryMin(by:)`](./trymin%28by%29.md) to determine the minimum value of elements received from the upstream publisher using an error-throwing closure you specify.
 

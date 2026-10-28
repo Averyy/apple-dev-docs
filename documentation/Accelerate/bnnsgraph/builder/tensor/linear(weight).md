@@ -23,7 +23,7 @@ func linear(weight: some BNNSGraph.Builder.OperationParameter<T>) -> BNNSGraph.B
 
 Available when `T` conforms to `BNNSScalar`.
 
-#### Discussion
+## Discussion
 
 This function treats `self` as `x` and `weight` as `A` in `y = xA^T`.
 

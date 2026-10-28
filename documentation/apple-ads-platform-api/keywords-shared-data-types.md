@@ -8,7 +8,7 @@ Set the status and match type of keywords and negative keywords, and interpret a
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Keywords and negative keywords share these types, so each status or match type has one definition to look up. [`KeywordStatus`](./keywordstatus.md) and [`NegativeKeywordStatus`](./negativekeywordstatus.md) control whether an entity is active or paused. [`KeywordMatchType`](./keywordmatchtype.md) controls how a keyword’s text matches searches, and [`KeywordDisplayStatus`](./keyworddisplaystatus.md) reports a keyword’s rolled-up delivery state.
 

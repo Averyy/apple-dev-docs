@@ -22,11 +22,11 @@ class var current: NSCursor { get }
 @property (class, strong, readonly) NSCursor * currentCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The top cursor on the application’s cursor stack. This cursor may not be the visible cursor on the screen if a different application is currently active.
 
-#### Discussion
+## Discussion
 
 The method only returns the cursor set by your application using `NSCursor` methods. It does not return cursors set by other applications or cursors set by your application using Carbon APIs.
 

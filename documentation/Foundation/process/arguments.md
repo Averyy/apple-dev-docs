@@ -20,7 +20,7 @@ var arguments: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * arguments;
 ```
 
-#### Discussion
+## Discussion
 
 The `NSTask` object converts both `path` and the strings in `arguments` to appropriate C-style strings (using [`fileSystemRepresentation`](../nsstring/filesystemrepresentation.md)) before passing them to the task through `argv[]`. The strings in `arguments` don’t undergo shell expansion, so you don’t need to do special quoting, and shell variables, such as `$PWD`, aren’t resolved.
 

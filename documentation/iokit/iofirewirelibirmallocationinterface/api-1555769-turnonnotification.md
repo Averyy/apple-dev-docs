@@ -16,7 +16,7 @@ Try to turn on notifications
 Boolean (*TurnOnNotification)(IOFireWireLibIRMAllocationRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true upon success
 

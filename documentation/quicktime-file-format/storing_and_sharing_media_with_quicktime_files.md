@@ -4,11 +4,11 @@
 
 Build QuickTime files with atoms, QT atoms, and atom containers.
 
-#### Overview
+## Overview
 
 Store QuickTime movies on disk using two basic structures for storing information: atoms (also known as simple atoms or classic atoms) and QT atoms. To understand how QuickTime movies are stored, you need to understand the basic atom structures. Most atoms that you encounter in the QuickTime File Format are simple or classic atoms. Both simple atoms and QT atoms, however, allow you to construct arbitrarily complex hierarchical data structures. Both also allow your application to ignore data that they don’t understand.
 
-#### Media description
+## Media description
 
 A QuickTime file stores the description of its media separately from the media data.
 

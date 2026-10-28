@@ -17,7 +17,7 @@ Build a standard full-attention [`KVCache`](./kvcache.md) that honors the reques
 func makeAttentionKVCache(parameters: GenerateParameters?) throws -> KVCache
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`KVCacheConfigurationError`](./kvcacheconfigurationerror.md) when the request is invalid.
 

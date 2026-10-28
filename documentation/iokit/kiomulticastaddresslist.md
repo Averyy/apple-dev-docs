@@ -16,7 +16,7 @@ A property of IOEthernetInterface objects.
 #define kIOMulticastAddressList
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMulticastAddressList property is an OSData object that describes the list of multicast addresses that are being used by the controller to match against the destination address of an incoming frame.
 

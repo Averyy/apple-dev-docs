@@ -17,11 +17,11 @@ Creates a new access control list entry from the application list, description, 
 OSStatus SecACLCreateFromSimpleContents(SecAccessRef access, CFArrayRef applicationList, CFStringRef description, const CSSM_ACL_KEYCHAIN_PROMPT_SELECTOR *promptSelector, SecACLRef*newAcl);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This function is deprecated. Use [`SecACLCreateWithSimpleContents(_:_:_:_:_:)`](./secaclcreatewithsimplecontents%28_,_,_,_,_%29.md) instead.
 
@@ -29,7 +29,7 @@ The ACL object returned by this function is a reference to an access control lis
 
 The system allows exactly one owner ACL entry in each access object. The `SecACLCreateFromSimpleContents` function fails if you attempt to add a second owner ACL. To change owner access controls, use the [`SecAccessCopySelectedACLList`](./secaccesscopyselectedacllist.md) function to find the owner ACL (that is, the only ACL with a CSSM authorization tag of `CSSM_ACL_AUTHORIZATION_CHANGE_ACL`) and the [`SecACLSetSimpleContents`](./secaclsetsimplecontents.md) function to change it as needed.
 
-##### Special Considerations
+### Special Considerations
 
 This function is deprecated in macOS 10.7 and later; use [`SecACLCreateWithSimpleContents(_:_:_:_:_:)`](./secaclcreatewithsimplecontents%28_,_,_,_,_%29.md) instead.
 

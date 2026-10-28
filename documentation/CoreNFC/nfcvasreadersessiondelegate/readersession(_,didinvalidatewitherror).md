@@ -22,7 +22,7 @@ func readerSession(_ session: NFCVASReaderSession, didInvalidateWithError error:
 - (void) readerSession:(NFCVASReaderSession *) session didInvalidateWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Your app should release any references it has to the reader session that called this method.
 

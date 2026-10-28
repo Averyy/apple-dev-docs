@@ -12,7 +12,7 @@ Create prominent alerts at specified dates for your iOS app.
 - Mac Catalyst 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 An alarm is an alert that presents at a pre-determined time based on a schedule or after a countdown. It overrides both a device’s focus and silent mode, if necessary.
 
@@ -26,7 +26,7 @@ This project also includes a widget extension for setting up the custom countdow
 
 > **Note**: This sample code project is associated with WWDC25 session 230: [Wake up to the AlarmKit API](https://developer.apple.com/wwdc25/230).
 
-#### Authorize the app to schedule alarms
+## Authorize the app to schedule alarms
 
 This sample prompts people to authorize the app to allow AlarmKit to schedule alarms and create alerts by calling [`requestAuthorization()`](./alarmmanager/requestauthorization%28%29.md) on [`AlarmManager`](./alarmmanager.md). Otherwise, when a person adds their first alarm, AlarmKit automatically requests this authorization on behalf of the app, before scheduling the alarm. If this sample doesn’t get this authorization, then any alarm created by the app isn’t scheduled and subsequently doesn’t alert.
 
@@ -48,7 +48,7 @@ We'll schedule alerts for alarms you create within our app.
 
 If the `NSAlarmKitUsageDescription` key is missing or its value is an empty string, apps can’t schedule alarms with AlarmKit.
 
-#### Create the alarm schedule
+## Create the alarm schedule
 
 The sample app creates an alarm with either, or both, a countdown duration and a schedule, based on the options a person sets.
 
@@ -64,7 +64,7 @@ return .relative(.init(
 ))
 ```
 
-#### Configure the alarm’s UI attributes
+## Configure the alarm’s UI attributes
 
 AlarmKit provides a presentation for each of the three alarm states - [`AlarmPresentation.Alert`](./alarmpresentation/alert-swift.struct.md), [`AlarmPresentation.Countdown`](./alarmpresentation/countdown-swift.struct.md), and [`AlarmPresentation.Paused`](./alarmpresentation/paused-swift.struct.md). Because `Countdown` and `Paused` are optional presentations, this sample doesn’t use them if the alarm only has an `Alert` state.
 
@@ -121,7 +121,7 @@ let attributes = AlarmAttributes(presentation: alarmPresentation(with: userInput
         tintColor: Color.blue)
 ```
 
-#### Schedule the configured alarm
+## Schedule the configured alarm
 
 The sample uses a unique identifier to track alarms registered with AlarmKit. The sample manages and updates alarm states, such as [`pause(id:)`](./alarmmanager/pause%28id%29.md) and [`cancel(id:)`](./alarmmanager/cancel%28id%29.md), using this identifier.
 
@@ -144,7 +144,7 @@ This sample creates the alarm ID and [`AlarmManager.AlarmConfiguration`](./alarm
 let alarm = try await alarmManager.schedule(id: id, configuration: alarmConfiguration)
 ```
 
-#### Observe state changes on the alarms
+## Observe state changes on the alarms
 
 At initialization, the `ViewModel` subscribes to alarm events from [`shared`](./alarmmanager/shared.md). This enables the sample app to have the latest state of an alarm even if the alarm state updated while the sample app isn’t running.
 
@@ -158,7 +158,7 @@ Task {
 
 > **Note**: An [`Alarm`](./alarm.md) that’s not included in the [`alarmUpdates`](./alarmmanager/alarmupdates-swift.property.md) asynchronous stream is no longer scheduled with AlarmKit.
 
-#### Create a Widget Extension for Live Activities
+## Create a Widget Extension for Live Activities
 
 The sample app adds a widget extension target to customize non-alerting presentations in the Dynamic Island, Lock Screen, and StandBy. The widget extension receives the same [`AlarmAttributes`](./alarmattributes.md) structure that you provide to [`shared`](./alarmmanager/shared.md) when scheduling alarms. It includes the metadata provided in the [Configure the alarm’s UI attributes](./scheduling-an-alarm-with-alarmkit.md#Configure-the-alarms-UI-attributes) section above.
 

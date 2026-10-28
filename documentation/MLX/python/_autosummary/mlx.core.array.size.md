@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.size
 
-**property array.size**
-: Number of elements in the array.
+```python
+property array.size
+```
+
+Number of elements in the array.

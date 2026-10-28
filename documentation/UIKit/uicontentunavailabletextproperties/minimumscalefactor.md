@@ -19,7 +19,7 @@ The minimum scale factor for the text.
 @property (nonatomic) CGFloat minimumScaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 If you set [`adjustsFontSizeToFitWidth`](./adjustsfontsizetofitwidth.md) to `YES`, this property defines the smallest multiplier the view uses to fit the text.
 

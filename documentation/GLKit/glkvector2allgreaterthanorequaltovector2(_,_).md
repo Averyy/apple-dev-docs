@@ -22,7 +22,7 @@ func GLKVector2AllGreaterThanOrEqualToVector2(_ vectorLeft: GLKVector2, _ vector
 static bool GLKVector2AllGreaterThanOrEqualToVector2(GLKVector2 vectorLeft, GLKVector2 vectorRight);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if each component in the first vector is greater than or equal to the corresponding component of the second vector, [`false`](../Swift/false.md) otherwise.
 

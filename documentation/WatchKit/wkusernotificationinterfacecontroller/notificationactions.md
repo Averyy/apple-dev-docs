@@ -19,7 +19,7 @@ var notificationActions: [UNNotificationAction] { get set }
 @property (nonatomic, copy) NSArray<UNNotificationAction *> * notificationActions;
 ```
 
-#### Discussion
+## Discussion
 
 Use this array to dynamically update the list of actions associated with a notification. You can only change this property during the [`didReceive(_:)`](./didreceive%28_%29.md) method.
 

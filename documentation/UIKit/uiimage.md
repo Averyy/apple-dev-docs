@@ -30,7 +30,7 @@ class UIImage
 - [Making a view into a drop destination](./making-a-view-into-a-drop-destination.md)
 - [Understanding a drag item as a promise](./understanding-a-drag-item-as-a-promise.md)
 
-#### Overview
+## Overview
 
 You use image objects to represent image data of all kinds, and the [`UIImage`](./uiimage.md) class is capable of managing data for all image formats supported by the underlying platform. Image objects are immutable, so you always create them from existing image data, such as an image file on disk or programmatically created image data. An image object may contain a single image or a sequence of images for use in an animation.
 
@@ -43,7 +43,7 @@ You can use image objects in several different ways:
 
 Although image objects support all platform-native image formats, it’s recommended that you use PNG or JPEG files for most images in your app. Image objects are optimized for reading and displaying both formats, and those formats offer better performance than most other image formats. Because the PNG format is lossless, it’s especially recommended for the images you use in your app’s interface.
 
-##### Create image objects
+### Create image objects
 
 When creating image objects using the methods of this class, you must have existing image data located in a file or data structure. You can’t create an empty image and draw content into it. There are many options for creating image objects, each of which is best for specific situations:
 
@@ -59,7 +59,7 @@ Image assets are the easiest way to manage the images that ship with your app. E
 
 In addition to loading images from disk, you can ask the user to supply images from an available camera or photo library using a [`UIImagePickerController`](./uiimagepickercontroller.md) object. An image picker displays a custom user interface for selecting images. Accessing user-supplied images requires explicit user permission. For more information about using an image picker, see [`UIImagePickerController`](./uiimagepickercontroller.md).
 
-##### Define a stretchable image
+### Define a stretchable image
 
 A stretchable image is one that defines regions where you can duplicate the underlying image data in an aesthetically pleasing way. Stretchable images are commonly used to create backgrounds that can grow or shrink to fill the available space.
 
@@ -71,7 +71,7 @@ Each inset defines the portion of the image that doesn’t stretch in the given 
 
 ![An image that depicts the stretchable portions of a nine-part image. The image on the left is stretched. The image on the right is condensed. The corners of both images remain the same size.](https://developer.apple.com/tutorials/images/com.apple.uikit/media-1965930@2x.png)
 
-##### Compare images
+### Compare images
 
 The [`isEqual(_:)`](../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) method is the only reliable way to determine whether two image objects contain the same image data. The following code illustrates the correct and incorrect ways to compare images.
 
@@ -108,7 +108,7 @@ if (image1 == image2) {
 }
 ```
 
-##### Access the image data
+### Access the image data
 
 Image objects don’t provide direct access to their underlying image data. However, you can retrieve the image data in other formats for use in your app. Specifically, you can use the [`cgImage`](./uiimage/cgimage.md) and [`ciImage`](./uiimage/ciimage.md) properties to retrieve versions of the image that are compatible with Core Graphics and Core Image, respectively. You can also use the [`pngData()`](./uiimage/pngdata%28%29.md) and [`jpegData(compressionQuality:)`](./uiimage/jpegdata%28compressionquality%29.md) functions to generate an [`NSData`](../Foundation/nsdata.md) object containing the image data in either the PNG or JPEG format.
 

@@ -30,7 +30,7 @@ class SKDownload
 
 - [Unlocking purchased content](./unlocking-purchased-content.md)
 
-#### Overview
+## Overview
 
 When you create a product in App Store Connect, you can associate one or more pieces of downloadable content with it. At runtime, when a product is purchased by a user, your app uses [`SKDownload`](./skdownload.md) objects to download the content from the App Store.
 

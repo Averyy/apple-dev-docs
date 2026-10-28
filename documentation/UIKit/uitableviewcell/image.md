@@ -19,7 +19,7 @@ The image to use as content for the cell.
 @property (nonatomic, strong, nullable) UIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of the property is `nil` (no image). Images are positioned to the left of the title.
 

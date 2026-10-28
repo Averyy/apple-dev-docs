@@ -25,7 +25,7 @@ var numberOfLines: Int { get set }
 @property (nonatomic) NSInteger numberOfLines;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 1 (a single line). A value of 0 in interpreted as an unlimited number of lines. If the height of the text reaches the number of lines, the text will be truncated using the line break mode.
 

@@ -17,7 +17,7 @@ Any regular products defined in this package, with the exception of plugin produ
 let products: [Product]
 ```
 
-#### Discussion
+## Discussion
 
 The products are specified in the same order as the package manifest.
 

@@ -15,7 +15,7 @@ Restriction information on the device.
 readonly attribute Restrictions restrictions;
 ```
 
-#### Discussion
+## Discussion
 
 The restriction information for a device determines the type of media items that can be played on the device. For more information, see [`Restrictions`](../restrictions.md).
 

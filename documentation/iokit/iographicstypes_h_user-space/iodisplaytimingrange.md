@@ -73,7 +73,7 @@ struct IODisplayTimingRange {
 };
 ```
 
-#### Overview
+## Overview
 
 This structure is used to define the limits for modes programmed as detailed timings by the OS. The VESA EDID is useful background information for many of these fields. A data property with this structure under the key kIOFBTimingRangeKey in a framebuffer will allow the OS to program detailed timings that fall within its range.
 

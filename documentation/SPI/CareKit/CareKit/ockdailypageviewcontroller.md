@@ -18,7 +18,7 @@ A view controller that displays a calendar page view controller in the header an
 class OCKDailyPageViewController
 ```
 
-#### Overview
+## Overview
 
 Manually query these view controllers and set them from outside of the class.
 

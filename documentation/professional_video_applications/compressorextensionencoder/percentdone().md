@@ -20,7 +20,7 @@ func percentDone() -> Double
 - (double) percentDone;
 ```
 
-#### Return Value
+## Return Value
 
 A value between 0 and 100.
 

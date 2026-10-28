@@ -24,7 +24,7 @@ var indexBuffer: any MDLMeshBuffer { get }
 @property (nonatomic, retain, readonly) id<MDLMeshBuffer> indexBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 An index buffer contains indices, each of which identifies a vertex in the vertex buffers of the [`MDLMesh`](../mdlmesh.md) object containing the mesh. Together with the submesh’s [`geometryType`](./geometrytype.md) property, the sequence of indices determines how to interpret the mesh’s vertex data to construct the geometric form for a portion of the mesh.
 

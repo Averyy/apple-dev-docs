@@ -46,7 +46,7 @@ init(forItem item: Int, inSection section: Int)
 + (NSIndexPath *) indexPathForItem:(NSInteger) item inSection:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSIndexPath`](../nsindexpath.md) object.
 

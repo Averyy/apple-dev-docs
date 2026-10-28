@@ -24,7 +24,7 @@ var relativeOffset: TimeInterval { get set }
 @property (nonatomic) NSTimeInterval relativeOffset;
 ```
 
-#### Discussion
+## Discussion
 
 If you set this value for an absolute alarm, it loses its absolute date and becomes a relative offset alarm.
 

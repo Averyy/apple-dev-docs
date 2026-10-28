@@ -21,7 +21,7 @@ A base type that represents all text-encoded data, including text with markup.
 static var text: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.text`.
 

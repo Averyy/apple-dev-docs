@@ -21,7 +21,7 @@ var userInfo: Any? { get set }
 @property (nonatomic, strong, nullable) id userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to store any arbitrary data related to the maneuver that you, or a part of your app that consumes maneuvers, may need later.
 

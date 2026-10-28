@@ -20,7 +20,7 @@ The amount of mitigation in the output surface.
 var mitigationLevel: Float { get }
 ```
 
-#### Discussion
+## Discussion
 
 The result is a value between `0` and `100`, where `100` is the highest level of mitigation that can apply to the output surface, indicating the output is completely dark.
 

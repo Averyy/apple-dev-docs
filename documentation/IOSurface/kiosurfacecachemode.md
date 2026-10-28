@@ -24,7 +24,7 @@ let kIOSurfaceCacheMode: CFString
 extern CFStringRef const kIOSurfaceCacheMode;
 ```
 
-#### Discussion
+## Discussion
 
 Default is `kIOMapDefaultCache`.
 

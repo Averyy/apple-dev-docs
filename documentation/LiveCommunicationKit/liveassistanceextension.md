@@ -20,7 +20,7 @@ The protocol you extend to provide live assistance services.
 protocol LiveAssistanceExtension : AppExtension
 ```
 
-#### Overview
+## Overview
 
 To provide interpreter, captioning, or other services that work with FaceTime calls, create a container app that uses the [`LiveAssistance`](./liveassistance.md) APIs, as well as an app extension that conforms to this protocol.
 

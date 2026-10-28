@@ -21,7 +21,7 @@ URL to the file on disk, if any. If the file isn’t stored on disk, access the 
 var fileURL: URL? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the file was created elsewhere on the system, make sure to surround access to file contents with `startAccessingSecurityScopedResource()` and `stopAccessingSecurityScopedResource()`.
 

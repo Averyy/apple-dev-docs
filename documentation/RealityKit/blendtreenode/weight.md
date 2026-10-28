@@ -21,7 +21,7 @@ A normalized percentage that designates how much effect this node has relative t
 var weight: BlendWeight { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property relates to the node’s peers in a [`sources`](../blendtreeblendnode/sources.md) array. The sum of all node weights in a given [`sources`](../blendtreeblendnode/sources.md) array needs to equal `1.0`.
 

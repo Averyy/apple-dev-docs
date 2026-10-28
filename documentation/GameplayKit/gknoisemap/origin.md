@@ -24,7 +24,7 @@ var origin: vector_double2 { get }
 @property (nonatomic, readonly) vector_double2 origin;
 ```
 
-#### Discussion
+## Discussion
 
 This property is read-only; you define the origin of a noise map when creating it with the [`interpolatedValue(at:)`](./interpolatedvalue%28at%29.md) initializer.
 

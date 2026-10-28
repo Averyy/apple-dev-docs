@@ -24,11 +24,11 @@ optional func mapView(_ mapView: MKMapView, clusterAnnotationForMemberAnnotation
 - (MKClusterAnnotation *) mapView:(MKMapView *) mapView clusterAnnotationForMemberAnnotations:(NSArray<id<MKAnnotation>> *) memberAnnotations;
 ```
 
-#### Return Value
+## Return Value
 
 The cluster annotation object.
 
-#### Discussion
+## Discussion
 
 Use this method to customize the cluster annotations that display on your map. Typically, MapKit creates cluster annotation objects automatically when one or more annotations with the same cluster identifier are too close together. However, you can implement this method and return a custom cluster annotation object for the specified set of annotations.
 

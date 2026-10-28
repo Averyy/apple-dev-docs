@@ -25,7 +25,7 @@ func setClassName(_ codedName: String?, for cls: AnyClass)
 - (void) setClassName:(NSString *) codedName forClass:(Class) cls;
 ```
 
-#### Discussion
+## Discussion
 
 When encoding, the receiver’s translation map overrides any translation that may also be present in the class’s map.
 

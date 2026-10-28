@@ -16,7 +16,7 @@ Perform synchronous quadlet write
 IOReturn (*WriteQuadlet)(IOFireWireLibDeviceRef self, io_object_t device, const FWAddress *addr, const UInt32 val, Boolean failOnReset, UInt32 generation);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code
 

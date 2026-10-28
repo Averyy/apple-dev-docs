@@ -23,7 +23,7 @@ func backgroundImage(for state: UIControl.State, style: UIBarButtonItem.Style, b
 - (UIImage *) backgroundImageForState:(UIControlState) state style:(UIBarButtonItemStyle) style barMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Return Value
+## Return Value
 
 The background image associated with the specified state, style, and metrics.
 

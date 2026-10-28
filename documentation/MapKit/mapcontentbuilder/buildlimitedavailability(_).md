@@ -21,7 +21,7 @@ Provides support for “if” statements with “available” macro clauses in m
 static func buildLimitedAvailability(_ content: any MapContent) -> some MapContent
 ```
 
-#### Return Value
+## Return Value
 
 Returns the conditional map content that meets the conditions the content builder expresses.
 

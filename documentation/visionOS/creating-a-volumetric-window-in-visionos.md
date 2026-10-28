@@ -10,7 +10,7 @@ Display 3D content with a volumetric window that people can move.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to create and display 3D models in a visionOS app, using volumetric windows that people can pick up and move around their environment. The app launches directly into a volumetric window containing a 3D model.
 
@@ -18,7 +18,7 @@ This sample code project demonstrates how to create and display 3D models in a v
 
 The [`volumetric`](../SwiftUI/windowstyle/volumetric.md) window style in SwiftUI creates a 3D volumetric window that someone can pick up and move around their space, similar to a 2D window.
 
-##### Set up volumetric window requirements
+### Set up volumetric window requirements
 
 The `VolumetricWindow` view loads a USDZ file and displays its contents. The `defaultSize` value defines the dimensions of the initial volumetric window size.
 
@@ -64,7 +64,7 @@ struct EntryPoint: App {
 
 SwiftUI requires three separate arguments to define the width, height, and depth of the volumetric window.
 
-##### Load a 3D model as an entity in a view
+### Load a 3D model as an entity in a view
 
 The `VolumetricWindow` view loads a USDZ file as an [`Entity`](../RealityKit/entity.md) instance and adds it to the scene.
 
@@ -80,7 +80,7 @@ RealityView { content in
 }
 ```
 
-##### Adjust the entity to the size of the volumetric window
+### Adjust the entity to the size of the volumetric window
 
 The sample updates the scale and position of the entity in the update closure of [`RealityView`](../RealityKit/realityview.md) to respond to volume resizing.
 
@@ -119,9 +119,9 @@ let scale = Float(viewBounds.extents.x) / baseExtents.x
 model.scale = SIMD3<Float>(repeating: scale)
 ```
 
-#### See Also
+## See Also
 
-###### Related samples
+#### Related samples
 
 - [Creating SwiftUI windows in visionOS](./creating-a-new-swiftui-window-in-visionos.md)
   Display and manage multiple SwiftUI windows in your visionOS app.

@@ -23,7 +23,7 @@ static let suggestedEncodingsKey: StringEncodingDetectionOptionsKey
 extern NSStringEncodingDetectionOptionsKey const NSStringEncodingDetectionSuggestedEncodingsKey;
 ```
 
-#### Discussion
+## Discussion
 
 Option specifying any suggested string encodings. Use this when you have prior knowledge about the likely or expected encoding. The corresponding value for this key is an `NSArray` of `NSNumber` objects that contain `NSStringEncoding` values. If this option is unspecified, all allowed encodings are evaluated with equal consideration.
 

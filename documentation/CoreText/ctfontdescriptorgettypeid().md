@@ -25,7 +25,7 @@ func CTFontDescriptorGetTypeID() -> CFTypeID
 extern CFTypeID CTFontDescriptorGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The identifier for the [`CTFontDescriptor`](./ctfontdescriptor.md) opaque type.
 

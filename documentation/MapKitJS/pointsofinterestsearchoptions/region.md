@@ -15,7 +15,7 @@ The region that bounds the area in which to fetch points of interest.
 region?: CoordinateRegionData;
 ```
 
-#### Discussion
+## Discussion
 
 The system determines the region from the provided bounding box or derives the region from a box enclosing the circle specified by [`center`](./center.md) and [`radius`](./radius.md).
 

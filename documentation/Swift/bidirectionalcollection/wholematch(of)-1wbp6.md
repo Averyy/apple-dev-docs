@@ -23,7 +23,7 @@ func wholeMatch<Output>(@RegexComponentBuilder of content: () -> some RegexCompo
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 The match if there is one, or `nil` if none.
 

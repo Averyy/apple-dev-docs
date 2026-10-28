@@ -12,7 +12,7 @@ UInt8 GetDataTransferDirection (
  SCSIParallelTaskIdentifierparallelTask );
 ```
 
-#### Return Value
+## Return Value
 
 One of the valid data transfer directions described in <IOKit/scsi/SCSITask.h>
 

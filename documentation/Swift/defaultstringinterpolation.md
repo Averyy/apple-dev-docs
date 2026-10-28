@@ -22,7 +22,7 @@ Represents a string literal with interpolations while it’s being built up.
 struct DefaultStringInterpolation
 ```
 
-#### Overview
+## Overview
 
 You don’t need to create an instance of this type directly. It’s used by the compiler when you create a string using string interpolation. Instead, use string interpolation to create a new string by including values, literals, variables, or expressions enclosed in parentheses, prefixed by a backslash (`\(`…`)`).
 
@@ -39,7 +39,7 @@ print(message)
 
 When implementing an `ExpressibleByStringInterpolation` conformance, set the `StringInterpolation` associated type to `DefaultStringInterpolation` to get the same interpolation behavior as Swift’s built-in `String` type and construct a `String` with the results. If you don’t want the default behavior or don’t want to construct a `String`, use a custom type conforming to `StringInterpolationProtocol` instead.
 
-### Extending default string interpolation behavior
+## Extending default string interpolation behavior
 
 Code outside the standard library can extend string interpolation on `String` and many other common types by extending `DefaultStringInterpolation` and adding an `appendInterpolation(...)` method. For example:
 

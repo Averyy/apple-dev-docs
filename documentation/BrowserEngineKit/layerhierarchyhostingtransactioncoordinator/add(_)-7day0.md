@@ -21,7 +21,7 @@ func add(_ hostingView: LayerHierarchyHostingView)
 - (void) addLayerHierarchyHostingView:(BELayerHierarchyHostingView *) hostingView;
 ```
 
-#### Discussion
+## Discussion
 
 The transaction coordinator coordinates any transactions involving `hostingView` until you call [`commit()`](./commit%28%29.md).
 

@@ -21,7 +21,7 @@ The actual number of elements that can be stored in this object.
 var capacity: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value may be nontrivial to compute; it is usually a good idea to store this information in the “header” area when an instance is created.
 

@@ -22,7 +22,7 @@ var adjustment: AVCaptionConversionAdjustment? { get }
 @property (readonly, nullable) AVCaptionConversionAdjustment * adjustment;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `nil` and you perform the conversion without correcting the problem, the system doesn’t include captions that you indicate in the output media data.
 

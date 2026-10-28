@@ -15,7 +15,7 @@ Creates an ABPickerRef. The corresponding window is hidden. Invoke [`ABPickerSet
 extern ABPickerRefABPickerCreate();
 ```
 
-#### Return Value
+## Return Value
 
 The object that represents the people-picker window.
 

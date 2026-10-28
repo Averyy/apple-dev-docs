@@ -17,7 +17,7 @@ CancellablePromise catch(
 );
 ```
 
-#### Discussion
+## Discussion
 
 If you provide a function for the `onrejected` parameter, `CancellablePromise` calls that function if the promise fails.
 

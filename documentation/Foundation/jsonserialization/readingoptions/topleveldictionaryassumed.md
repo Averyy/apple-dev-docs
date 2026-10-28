@@ -25,7 +25,7 @@ static var topLevelDictionaryAssumed: JSONSerialization.ReadingOptions { get }
 NSJSONReadingTopLevelDictionaryAssumed
 ```
 
-#### Discussion
+## Discussion
 
 This is an extension to JSON5 that isn’t part of the specification. [`AttributedString`](../../attributedstring.md) uses this option, along with [`json5Allowed`](./json5allowed.md), to support the use of JSON5 inside Markdown strings that use multiple custom attributes. Using [`topLevelDictionaryAssumed`](./topleveldictionaryassumed.md) allows for the following syntax in the parentheses of the custom attribute markup:
 

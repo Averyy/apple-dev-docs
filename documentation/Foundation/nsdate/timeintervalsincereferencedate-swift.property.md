@@ -25,7 +25,7 @@ var timeIntervalSinceReferenceDate: TimeInterval { get }
 @property (readonly) NSTimeInterval timeIntervalSinceReferenceDate;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is negative if the date object is earlier than the system’s absolute reference date (00:00:00 UTC on 1 January 2001).
 

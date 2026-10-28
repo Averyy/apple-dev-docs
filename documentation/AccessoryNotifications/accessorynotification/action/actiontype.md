@@ -15,7 +15,7 @@ The types of actions available for a notification.
 enum ActionType
 ```
 
-#### Overview
+## Overview
 
 The [`AccessoryNotification.Action`](../action.md) structure’s [`type`](./type.md) property is of this type.
 

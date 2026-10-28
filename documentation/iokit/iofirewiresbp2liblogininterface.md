@@ -18,7 +18,7 @@ typedef struct IOFireWireSBP2LibLoginInterface {
 } IOFireWireSBP2LibLoginInterface;
 ```
 
-#### Overview
+## Overview
 
 Supplies APIs for login maintenance and command execution. Drivers can use this object to create IOFireWireSBP2LibORBInterface objects and execute them. Solicited and unsolicited status callback routines can be registered and the SBP2 services will notify the driver when the appropriate status arrives. This class also handles login maintenance. Supplies APIs for logging in and logging out and attempts to reconnect to the LUN after bus resets. The base FireWire services deliver bus reset notification via the IOKit message routine. The SBP2 services build on this behavior and deliver reconnectFailed and reconnectComplete through the message routine as well.
 

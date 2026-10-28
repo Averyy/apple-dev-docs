@@ -5,7 +5,7 @@
 
 Manage and persist your app’s model layer.
 
-#### Overview
+## Overview
 
 Core Data provides a set of classes that collaboratively support your app’s model layer:
 

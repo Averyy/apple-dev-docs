@@ -21,11 +21,11 @@ Returns the single-precision maximum value of a vector.
 static func maximum<U>(_ vector: U) -> Float where U : AccelerateBuffer, U.Element == Float
 ```
 
-#### Return Value
+## Return Value
 
 The maximum value of the vector.
 
-#### Discussion
+## Discussion
 
 This function calculates the maximum value of the first `N` elements of input vector `A`, and writes the result to output scalar `C`.
 

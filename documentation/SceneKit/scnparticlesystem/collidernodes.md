@@ -25,7 +25,7 @@ var colliderNodes: [SCNNode]? { get set }
 @property (nonatomic, copy, nullable) NSArray<SCNNode *> * colliderNodes;
 ```
 
-#### Discussion
+## Discussion
 
 A particle system can perform limited collision detection and resolution with geometries in the scene. If a moving particle intersects a geometry attached to one of the [`SCNNode`](../scnnode.md) objects in this array, SceneKit resolves the collision, either by removing the particle from the scene or allowing it to bounce off or slide along the geometry’s surface.
 

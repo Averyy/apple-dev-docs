@@ -5,7 +5,7 @@
 
 Learn which networking API is best for you.
 
-#### Overview
+## Overview
 
 Apple platforms have a wide range of networking APIs, spanning many different frameworks:
 
@@ -20,7 +20,7 @@ With all that choice, it’s hard to know where to start.  This technote aims to
 
 The focus here is on APIs that allow you to *use* the networking stack.  If you want to *extend* the networking stack—for example, to add support for a custom VPN protocol—implement a Network Extension provider.  For the details, see [Network Extension](../NetworkExtension/NetworkExtension.md).
 
-#### Recommendations by protocol
+## Recommendations by protocol
 
 The following sections offer API recommendations for common network protocols.  Follow the advice for the protocol you’re using:
 
@@ -28,7 +28,7 @@ The following sections offer API recommendations for common network protocols.  
 - **Transport Layer:** [QUIC](./tn3151-choosing-the-right-networking-api.md#QUIC), [TCP](./tn3151-choosing-the-right-networking-api.md#TCP), [UDP](./tn3151-choosing-the-right-networking-api.md#UDP)
 - **Other:** [Bonjour service discovery](./tn3151-choosing-the-right-networking-api.md#Bonjour-service-discovery), [DNS](./tn3151-choosing-the-right-networking-api.md#DNS), [Peer-to-peer networking](./tn3151-choosing-the-right-networking-api.md#Peer-to-peer-networking), [Wi-Fi](./tn3151-choosing-the-right-networking-api.md#Wi-Fi)
 
-##### HTTP
+### HTTP
 
 For HTTP, including HTTPS, there’s one really good choice: Foundation’s [URL Loading System](../Foundation/url-loading-system.md), commonly known as `URLSession`.  It supports all the latest features, including Swift concurrency and the HTTP/2 and HTTP/3 protocols.
 
@@ -36,7 +36,7 @@ For more options, see [HTTP alternatives](./tn3151-choosing-the-right-networking
 
 `URLSession` background sessions allow your app to run an HTTP transfer that continues even if the app stops running.  This is most important on iOS, iPadOS, tvOS, watchOS, and visionOS, where the system suspends your app shortly after the user moves it to the background.  To learn more about this feature, see [Downloading files in the background](../Foundation/downloading-files-in-the-background.md).  Alternative HTTP APIs don’t support this feature.
 
-##### WebSocket
+### WebSocket
 
 For WebSocket you have two choices:
 
@@ -47,7 +47,7 @@ Unless you have a specific reason to use `URLSession`, use Network framework for
 
 For more options, see [WebSocket alternatives](./tn3151-choosing-the-right-networking-api.md#WebSocket-alternatives).
 
-##### FTP
+### FTP
 
 FTP is a very old and dilapidated protocol.  FTP is inappropriate to use on the modern internet because it provides *no* security.  Because of this, Apple has no supported FTP APIs.
 
@@ -55,7 +55,7 @@ Your best option here is to switch to a newer protocol, like HTTP.  It may requi
 
 For other options, see [FTP alternatives](./tn3151-choosing-the-right-networking-api.md#FTP-alternatives).
 
-##### QUIC
+### QUIC
 
 [Network](../Network/Network.md) framework introduced QUIC support in [2021](./tn3151-choosing-the-right-networking-api.md#Versions).  It supports both QUIC client and QUIC server development.
 
@@ -63,7 +63,7 @@ The QUIC protocol has significant advantages over TCP.  If you’re building a c
 
 > ❗ **Important**: QUIC is a key component of HTTP/3.  If your ultimate goal is to support HTTP/3, use `URLSession`.  It has direct support for HTTP/3.  Network framework’s QUIC support allows you to create custom network protocols running over QUIC.
 
-##### TCP
+### TCP
 
 For TCP you have two reasonable options:
 
@@ -77,7 +77,7 @@ Network framework is by far the best choice.  BSD Sockets is an acceptable choic
 
 For more options, see [TCP alternatives](./tn3151-choosing-the-right-networking-api.md#TCP-alternatives).  If you decide to use BSD Sockets, read [BSD Sockets best practices](./tn3151-choosing-the-right-networking-api.md#BSD-Sockets-best-practices).
 
-##### UDP
+### UDP
 
 For UDP you have two reasonable options:
 
@@ -96,7 +96,7 @@ If your target platform supports local network privacy, multicast and broadcast 
 
 For more options, see [UDP alternatives](./tn3151-choosing-the-right-networking-api.md#UDP-alternatives).  If you decide to use BSD Sockets, read [BSD Sockets best practices](./tn3151-choosing-the-right-networking-api.md#BSD-Sockets-best-practices).
 
-##### Bonjour service discovery
+### Bonjour service discovery
 
 Bonjour is an Apple term for three industry standard technologies: link-local addresses ([RFC 3927](http://www.ietf.org/rfc/rfc3927.txt)), multicast DNS ([RFC 6762](http://www.ietf.org/rfc/rfc6762.txt)), and DNS-based service discovery ([RFC 6763](http://www.ietf.org/rfc/rfc6763.txt)).  Use Bonjour to create network features that work well even if there’s no network infrastructure.  For example, when you browse for network servers using Finder > Go > Connect to Server, you’re using Bonjour.
 
@@ -114,7 +114,7 @@ If your target platform supports local network privacy, declare your Bonjour ser
 
 For more options, see [Bonjour alternatives](./tn3151-choosing-the-right-networking-api.md#Bonjour-alternatives).
 
-##### Peer-to-peer networking
+### Peer-to-peer networking
 
 Peer-to-peer Wi-Fi allows you to communicate with nearby devices and accessories without configuring a Wi-Fi network.  Apple platforms support two peer-to-peer Wi-Fi technologies:
 
@@ -137,7 +137,7 @@ Some platforms limit access to the local network; for the details, see [TN3179: 
 
 For more options, see [Peer-to-peer alternatives](./tn3151-choosing-the-right-networking-api.md#Peer-to-peer-alternatives).
 
-##### DNS
+### DNS
 
 In most cases you don’t need to resolve a DNS address manually.  Rather, use an API with connect-by-name semantics.  For more details, see [Connect by name](./tn3151-choosing-the-right-networking-api.md#Connect-by-name).
 
@@ -149,17 +149,17 @@ To perform DNS queries without using the system resolver—for example, if you�
 
 For more options, see [DNS alternatives](./tn3151-choosing-the-right-networking-api.md#DNS-alternatives).
 
-##### Wi-Fi
+### Wi-Fi
 
 iOS and iPadOS support a number of special-purpose Wi-Fi APIs.  For a summary, see [TN3111: iOS Wi-Fi API overview](./tn3111-ios-wifi-api-overview.md).
 
 To scan for and configure Wi-Fi networks on macOS, use [Core WLAN](../CoreWLAN/CoreWLAN.md).
 
-#### Alternative APIs
+## Alternative APIs
 
 Many protocols have alternative APIs, ones that are either deprecated or limited to some specific task.
 
-##### HTTP alternatives
+### HTTP alternatives
 
 Apple has two alternative HTTP APIs:
 
@@ -170,13 +170,13 @@ In some very specific cases, you might find that `URLSession` doesn’t meet you
 
 > ❗ **Important**: If you need to do some HTTP task that’s not supported by `URLSession`, let us know by [filing a suggestion](https://developer.apple.com/bug-reporting/) describing your requirements and why `URLSession` doesn’t work for you.
 
-##### WebSocket alternatives
+### WebSocket alternatives
 
 Both of the recommended WebSocket APIs were introduced in [2015](./tn3151-choosing-the-right-networking-api.md#Versions).  If you need to support older OS releases, there are a variety of good quality third-party WebSocket libraries available for Apple platforms.
 
 If you’re currently using a third-party WebSocket library, and your deployment target allows for it, consider moving to [Network](../Network/Network.md) framework.
 
-##### FTP alternatives
+### FTP alternatives
 
 Apple has two FTP APIs:
 
@@ -194,7 +194,7 @@ In some circumstances that may not be possible.  Perhaps you’re working with a
 
 In `URLSession`, FTP downloads are only supported by the classic loading mode, as controlled by [`usesClassicLoadingMode`](../Foundation/urlsessionconfiguration/usesclassicloadingmode.md).
 
-##### TCP alternatives
+### TCP alternatives
 
 Apple platforms support a variety of alternative TCP APIs:
 
@@ -206,11 +206,11 @@ Apple platforms support a variety of alternative TCP APIs:
 - Network Extension in-provider networking includes `NWTCPConnection`.  While there are some very limited circumstances where this is still useful, in most cases it’s better to use Network framework.  For more details, see [In-Provider Networking](../NetworkExtension/in-provider-networking.md).
 - Foundation has a number of classes, like `NSConnection` and `NSSocketPort`, that *seem* like they might be useful for TCP networking.  They are not.  These are part of Foundation’s legacy Distributed Objects (DO) system.  DO was never a good choice for networking; moreover, it was formally deprecated in [2017](./tn3151-choosing-the-right-networking-api.md#Versions).
 
-##### UDP alternatives
+### UDP alternatives
 
 Network Extension in-provider networking includes `NWUDPSession`.  While there are some very limited circumstances where this is still useful, in most cases it’s better to use Network framework.  For more details, see [In-Provider Networking](../NetworkExtension/in-provider-networking.md).
 
-##### Bonjour alternatives
+### Bonjour alternatives
 
 There are two older Bonjour APIs:
 
@@ -219,7 +219,7 @@ There are two older Bonjour APIs:
 
 In [2021](./tn3151-choosing-the-right-networking-api.md#Versions) both of these were marked as to-be-deprecated in favor of Network framework.
 
-##### Peer-to-peer alternatives
+### Peer-to-peer alternatives
 
 [Multipeer Connectivity](../MultipeerConnectivity/MultipeerConnectivity.md) is a high-level API that supports Apple peer-to-peer Wi-Fi.  It was deprecated in [2026](./tn3151-choosing-the-right-networking-api.md#Versions).  Avoid using it in new code.  If you have existing Multipeer Connectivity code, think about whether it makes sense to migrate that code to Network framework.  For advice on how to do that, see [TN3213: Moving from Multipeer Connectivity to Network framework](./tn3213-moving-from-multipeer-connectivity-to-network-framework.md).
 
@@ -236,7 +236,7 @@ These APIs were marked as to-be-deprecated in [2021](./tn3151-choosing-the-right
 
 The [dnssd](../dnssd/dnssd.md) API supports Apple peer-to-peer Wi-Fi but with an important caveat: If you advertise a service on peer-to-peer Wi-Fi using dnssd, the service’s listener must be run by a peer-to-peer aware API, like `NWListener` or `NSNetService`.  Given that those APIs already have a facility to opt in to Apple peer-to-peer Wi-Fi, there’s very little point using dnssd for this.
 
-##### DNS alternatives
+### DNS alternatives
 
 `NSHost` supports synchronous DNS name-to-address and address-to-name translation.  It was only ever supported on macOS.
 
@@ -244,11 +244,11 @@ The [dnssd](../dnssd/dnssd.md) API supports Apple peer-to-peer Wi-Fi but with an
 
 Both of these APIs were marked as to-be-deprecated in [2021](./tn3151-choosing-the-right-networking-api.md#Versions).  If you have existing code that uses them, make a plan to migrate to a preferred API.  In many cases that means switching to a connect-by-name API.  See [Connect by name](./tn3151-choosing-the-right-networking-api.md#Connect-by-name).  For other cases, see [DNS](./tn3151-choosing-the-right-networking-api.md#DNS).
 
-#### Best practices
+## Best practices
 
 Apple’s preferred networking APIs, including [`URLSession`](../Foundation/urlsession.md) and [Network](../Network/Network.md) framework, implement various best practices by default.  If you choose to use an alternative API, you take on the responsibility of implementing these best practices yourself.  This section addresses some of the more common issues.
 
-##### Connect by name
+### Connect by name
 
 Traditionally, you connect to a TCP service using two steps:
 
@@ -264,7 +264,7 @@ Apple’s preferred networking APIs support connect-by-name semantics, where you
 
 Sadly, even with all of that extra code, your program will still be incompatible with VPN On Demand.
 
-##### BSD Sockets best practices
+### BSD Sockets best practices
 
 BSD Sockets has a number of limitations.  Your life will be easier if you use [Network](../Network/Network.md) framework rather than BSD Sockets.  If that’s not possible—say you’re working on a cross-platform codebase that mandates the use of sockets—apply the following best practices:
 
@@ -288,7 +288,7 @@ One traditional challenge with BSD Sockets is how best to handle nonblocking soc
 
 > **Note**: If you’re using [`CFSocket`](../CoreFoundation/cfsocket.md) to handle a nonblocking socket, consider switching to a Dispatch read source.
 
-##### DNS best practices
+### DNS best practices
 
 Use the system DNS resolver.  Implementing your own DNS resolver is extra work, wastes resources, and causes problems in specific network environments.
 
@@ -298,7 +298,7 @@ Also use `getaddrinfo` and `getnameinfo` to convert between strings and IP addre
 
 If you’re using BSD Sockets and want to resolve a DNS address asynchronously, use [`DNSServiceGetAddrInfo(_:_:_:_:_:_:_:)`](../dnssd/dnsservicegetaddrinfo%28_,_,_,_,_,_,_%29.md).
 
-##### TLS best practices
+### TLS best practices
 
 Apple’s preferred networking APIs, including [`URLSession`](../Foundation/urlsession.md) and [Network](../Network/Network.md) framework, use a built-in, modern TLS stack.  That’s not available if you use BSD Sockets.  To use TLS in that case, add your own TLS implementation.
 
@@ -306,7 +306,7 @@ Make sure your TLS implementation uses Apple’s trust evaluation infrastructure
 
 Don’t use [Secure Transport](../Security/secure-transport.md) for your TLS implementation.  It’s been deprecated since [2019](./tn3151-choosing-the-right-networking-api.md#Versions) and doesn’t support TLS 1.3.  If you have existing code that uses Secure Transport, make a plan to migrate off it.
 
-##### Network framework API choices
+### Network framework API choices
 
 Network framework supports three APIs:
 
@@ -320,7 +320,7 @@ Use the C API for all C-based languages, including C, Objective-C, and C++.
 
 The new Swift API is tightly integrated with the Swift type system and fully supports structured concurrency.
 
-#### Versions
+## Versions
 
 Networking is fundamental to all Apple platforms.  When Apple introduces a new networking API, or adds new support to an existing API, it typically does so on all platforms.  Likewise when Apple deprecates an API.  When this technote covers such topics, it references the year of the OS release.  The following table maps years to OS version numbers:
 
@@ -341,7 +341,7 @@ Networking is fundamental to all Apple platforms.  When Apple introduces a new n
 | 2025 | 26 | 26 | 26 | 26 |
 | 2026 | 27 | 27 | 27 | 27 |
 
-#### Revision History
+## Revision History
 
 - **2026-07-23** Updated the discussion of Multipeer Connectivity to account for its recent deprecation.  Made other minor editorial changes.
 - **2025-09-05** Added links to [TN3179: Understanding local network privacy](./tn3179-understanding-local-network-privacy.md).  Added links to the Network framework Swift API introduced in 2025.  Added information about Wi-Fi Aware.  Updated “BSD Sockets best practices” to discuss `NEURLFilter` and `ne_socket_set_domains`.  Updated the version list.  Made other editorial changes.

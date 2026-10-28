@@ -24,7 +24,7 @@ var isSandboxSafe: Bool { get }
 @property (nonatomic, readonly, getter=isSandboxSafe) BOOL sandboxSafe;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`true`](../../Swift/true.md) if the component is safe for sandboxing; otherwise, [`false`](../../Swift/false.md). This only applies to the current process.
 

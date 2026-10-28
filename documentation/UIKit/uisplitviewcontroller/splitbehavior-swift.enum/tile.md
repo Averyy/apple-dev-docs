@@ -23,7 +23,7 @@ case tile
 UISplitViewControllerSplitBehaviorTile
 ```
 
-#### Discussion
+## Discussion
 
 This split behavior shows one or both sidebars tiled next to the secondary view controller. The secondary view controller’s view is fully interactive.
 

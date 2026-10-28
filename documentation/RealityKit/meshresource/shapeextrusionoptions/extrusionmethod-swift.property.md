@@ -20,7 +20,7 @@ Specifies the extrusion type applied to the swept shape in 3D space.
 var extrusionMethod: MeshResource.ShapeExtrusionOptions.ExtrusionMethod
 ```
 
-#### Discussion
+## Discussion
 
 For example, use `.linear(depth: 0.25)` to extrude the shape in Z by 0.25 meters.
 

@@ -19,7 +19,7 @@ convenience init?(dataIgnoringOrientation data: Data)
 - (instancetype) initWithDataIgnoringOrientation:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSImage` object or `nil` if the method cannot create an image representation from the contents of the specified data object.
 

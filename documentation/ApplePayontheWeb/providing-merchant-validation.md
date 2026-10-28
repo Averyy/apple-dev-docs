@@ -5,7 +5,7 @@
 
 Validate your merchant identity and receive a session object for each payment request.
 
-#### Overview
+## Overview
 
 As soon as the system displays the payment sheet, the Apple Pay JS API calls your session object’s [`onvalidatemerchant`](./applepaysession/onvalidatemerchant.md) event handler to verify that the request is coming from a valid merchant. It passes the function an [`ApplePayValidateMerchantEvent`](./applepayvalidatemerchantevent.md) object that contains the validation URL.
 

@@ -5,7 +5,7 @@
 
 Use track reference atoms from hint tracks to locate the original media track.
 
-#### Overview
+## Overview
 
 Like any other QuickTime track, hint tracks can contain track reference atoms. Exactly one of these must be of track reference type `'hint'`, and its internal list must contain at least one track ID, which is the track ID of the original media track. Like other track reference atoms, there may be empty references in this list, indicated by a track ID of `0`. For hint tracks that refer to more than one track, the index number (starting at `1`, and including any `0` entries) is used in the media track reference index field in some of the packet data table entry modes.
 

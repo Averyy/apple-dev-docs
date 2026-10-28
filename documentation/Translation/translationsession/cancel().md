@@ -18,7 +18,7 @@ Attempts to stop all ongoing work for the translation session.
 func cancel()
 ```
 
-#### Discussion
+## Discussion
 
 Future requests will throw an error that the session is already cancelled.
 

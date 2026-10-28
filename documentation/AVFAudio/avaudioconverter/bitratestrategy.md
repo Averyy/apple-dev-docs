@@ -25,7 +25,7 @@ var bitRateStrategy: String? { get set }
 @property (nonatomic, retain, nullable) NSString * bitRateStrategy;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `nil` if you’re not encoding. For information about possible values, see [`AVEncoderBitRateStrategyKey`](../avencoderbitratestrategykey.md).
 

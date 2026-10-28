@@ -18,9 +18,9 @@ Find and list apps in App Store Connect.
 - [Creating keys and establishing alternative marketplace connections](./creating-keys-and-establishing-alternative-marketplace-connections.md)
 - [Generating Tokens for API Requests](./generating-tokens-for-api-requests.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

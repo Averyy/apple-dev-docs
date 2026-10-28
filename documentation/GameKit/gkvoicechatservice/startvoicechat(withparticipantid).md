@@ -25,7 +25,7 @@ func startVoiceChat(withParticipantID participantID: String!) throws
 - (BOOL) startVoiceChatWithParticipantID:(NSString *) participantID error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The voice chat service calls the client’s [`voiceChatService(_:send:toParticipantID:)`](../gkvoicechatclient/voicechatservice%28_,send,toparticipantid%29.md) method to send the connection request to the remote participant.
 

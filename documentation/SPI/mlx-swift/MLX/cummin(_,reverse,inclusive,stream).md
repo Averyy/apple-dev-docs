@@ -17,7 +17,7 @@ Return the cumulative minimum of the elements over the flattened array.
 func cummin(_ array: MLXArray, reverse: Bool = false, inclusive: Bool = true, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray([5, 8, 4, 9], [2, 2])
@@ -26,7 +26,7 @@ let array = MLXArray([5, 8, 4, 9], [2, 2])
 let result = array.cummin()
 ```
 
-##### See Also
+### See Also
 
 - [Cumulative Operations](./cumulative.md)
 - [`cummin(_:axis:reverse:inclusive:stream:)`](./cummin%28_,axis,reverse,inclusive,stream%29.md)

@@ -24,7 +24,7 @@ let HMCharacteristicTypeVolume: String
 extern NSString * const HMCharacteristicTypeVolume;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value represents the percentage of the maximum volume supported by the service.
 

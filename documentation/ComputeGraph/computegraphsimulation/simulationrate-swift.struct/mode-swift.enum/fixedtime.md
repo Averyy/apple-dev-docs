@@ -21,7 +21,7 @@ Simulate using time delta.
 case fixedTime
 ```
 
-#### Discussion
+## Discussion
 
 Similar to fixedFrequency except the timeDelta is in seconds.
 

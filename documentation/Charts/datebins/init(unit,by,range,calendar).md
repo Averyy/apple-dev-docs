@@ -22,7 +22,7 @@ nonisolated
 init(unit: Calendar.Component, by stride: Int = 1, range: ClosedRange<Date>, calendar: Calendar = .autoupdatingCurrent)
 ```
 
-#### Return Value
+## Return Value
 
 The bins.
 

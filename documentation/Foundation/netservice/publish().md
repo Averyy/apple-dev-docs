@@ -26,7 +26,7 @@ func publish()
 - (void) publish;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns immediately, with success or failure indicated by the callbacks to the delegate. This is equivalent to calling [`publish(options:)`](./publish%28options%29.md) with the default options (`0`).
 

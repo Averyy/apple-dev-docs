@@ -25,7 +25,7 @@ var particleColorGreenRange: CGFloat { get set }
 @property (nonatomic) CGFloat particleColorGreenRange;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`. If non-zero, the starting green component of a particle’s color is randomly determined and may vary by plus or minus half of the range value.
 

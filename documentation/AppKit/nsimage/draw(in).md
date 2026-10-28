@@ -19,7 +19,7 @@ func draw(in rect: NSRect)
 - (void) drawInRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 This method draws the entire image in the specified rectangle, scaling the image as needed. The method composites the image using the [`NSCompositeSourceOver`](../nscompositesourceover.md) operation
 

@@ -19,7 +19,7 @@ var hasHorizontalScroller: Bool { get set }
 @property BOOL hasHorizontalScroller;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the scroll view allocates and displays a horizontal scroller as needed. The default value of this property is [`false`](../../Swift/false.md).
 

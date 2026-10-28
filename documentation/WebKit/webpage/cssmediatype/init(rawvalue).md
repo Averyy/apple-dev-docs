@@ -19,7 +19,7 @@ Create a media type with an arbitrary value.
 init(rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 Use the static type properties for the defined canonical CSS media type options.
 

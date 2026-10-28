@@ -16,7 +16,7 @@
 typedef struct SCSICmd_INQUIRY_PageC1_Data { ... } SCSICmd_INQUIRY_PageC1_Data;
 ```
 
-#### Overview
+## Overview
 
 INQUIRY Page C1h data as defined in Apple Target Disk Mode specification. This is a vendor specific data structure. This section contains all structures and definitions used by the INQUIRY command in response to a request for page C1h.
 

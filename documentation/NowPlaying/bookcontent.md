@@ -25,7 +25,7 @@ struct BookContent
 
 - [Publishing media sessions](./publishing-media-sessions.md)
 
-#### Overview
+## Overview
 
 Use this type for audiobooks and other spoken-word book content.
 

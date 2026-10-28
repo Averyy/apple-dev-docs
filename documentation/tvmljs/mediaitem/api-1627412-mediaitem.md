@@ -18,7 +18,7 @@ new MediaItem(
 );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the `MediaItem` object found in the location specified by the URL.
 

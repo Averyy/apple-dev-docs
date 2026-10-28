@@ -25,7 +25,7 @@ class let errorDomain: String
 extern NSErrorDomain const NSXMLParserErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 Used by `NSError`.
 

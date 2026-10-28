@@ -22,7 +22,7 @@ init(group: WidgetRelevanceGroup)
 
 Available when `Configuration` is `()`.
 
-#### Discussion
+## Discussion
 
 Multiple groups can be associated with the same widget by providing multiple `WidgetRelevanceAttribute` instances with different groups.
 

@@ -21,7 +21,7 @@ var maneuverType: CPManeuverType { get set }
 @property (nonatomic, assign) CPManeuverType maneuverType;
 ```
 
-#### Discussion
+## Discussion
 
 CarPlay requires this value to support route guidance metadata.
 

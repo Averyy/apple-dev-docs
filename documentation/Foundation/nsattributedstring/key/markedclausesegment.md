@@ -15,7 +15,7 @@ The index of the marked clause segment.
 static let markedClauseSegment: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../../nsnumber.md) object containing an integer, as an index in marked text indicating clause segments.
 

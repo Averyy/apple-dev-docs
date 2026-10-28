@@ -25,7 +25,7 @@ func CVBufferPropagateAttachments(_ sourceBuffer: CVBuffer, _ destinationBuffer:
 extern void CVBufferPropagateAttachments(CVBufferRef sourceBuffer, CVBufferRef destinationBuffer);
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience function that copies all attachments from one buffer to another with an attachment mode of [`CVAttachmentMode.shouldPropagate`](./cvattachmentmode/shouldpropagate.md).
 

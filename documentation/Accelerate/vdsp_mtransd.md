@@ -21,7 +21,7 @@ Transposes a double-precision matrix.
 extern void vDSP_mtransD(const double *__A, vDSP_Stride __IA, double *__C, vDSP_Stride __IC, vDSP_Length __M, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The code below uses [`vDSP_mtransD`](./vdsp_mtransd.md) to transpose the matrix `source` and write the result to the matrix `transposed`:
 

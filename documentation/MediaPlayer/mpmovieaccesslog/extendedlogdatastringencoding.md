@@ -23,7 +23,7 @@ var extendedLogDataStringEncoding: UInt { get }
 @property (nonatomic, readonly) NSStringEncoding extendedLogDataStringEncoding;
 ```
 
-#### Discussion
+## Discussion
 
 For possible string encodings, see String_Encodings.
 

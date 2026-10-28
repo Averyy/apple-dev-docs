@@ -24,7 +24,7 @@ var mMarkers: AudioFileMarker
 AudioFileMarker mMarkers[1];
 ```
 
-#### Discussion
+## Discussion
 
 For details, see [Audio File Marker Types](../api-1576492-audio-file-marker-types.md).
 

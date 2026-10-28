@@ -21,11 +21,11 @@ Delays delivery of all output to the downstream receiver by a specified amount o
 func delay<S>(for interval: S.SchedulerTimeType.Stride, tolerance: S.SchedulerTimeType.Stride? = nil, scheduler: S, options: S.SchedulerOptions? = nil) -> Publishers.Delay<Self, S> where S : Scheduler
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that delays delivery of elements and completion to the downstream receiver.
 
-#### Discussion
+## Discussion
 
 Use [`delay(for:tolerance:scheduler:options:)`](./delay%28for,tolerance,scheduler,options%29.md) when you need to delay the delivery of elements to a downstream by a specified amount of time.
 

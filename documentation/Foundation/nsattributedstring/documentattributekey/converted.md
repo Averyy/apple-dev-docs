@@ -15,7 +15,7 @@ A value that indicates whether a filter service converted the file.
 static let converted: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../../nsnumber.md) object containing an integer. Indicates whether the file was converted by a filter service.
 

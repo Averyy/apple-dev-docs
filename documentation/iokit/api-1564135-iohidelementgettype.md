@@ -16,7 +16,7 @@ Retrieves the type for the element.
 IOHIDElementType IOHIDElementGetType(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the IOHIDElementType for the element.
 

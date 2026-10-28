@@ -23,7 +23,7 @@ final class MLXArray
 - [Numpy Style Broadcasting](./broadcasting.md)
 - [Running on iOS](./running-on-ios.md)
 
-#### Introduction
+## Introduction
 
 `MLXArray` is an N dimension array that can contain a variety of data types ([`DType`](./dtype.md)). `MLXArray` supports a wide range of functions and operations to manipulate it and is used as the basis for the `MLXNN` module which implements many layers that are the basis for building machine learning models.
 
@@ -41,7 +41,7 @@ print(a1.shape)
 let a2 = sqrt(a1 * 3)
 ```
 
-#### Thread Safety
+## Thread Safety
 
 > **Note**: `MLXArray` is not thread safe.
 
@@ -56,7 +56,7 @@ let c = a + b
 
 `c` is not the result of `a + b` but rather a graph representing `a` and `b` (which in turn may be large unresolved graphs) and the `addition` operator that combines them.  It is not safe to create `c` in one thread and consume/evaluate it in another.
 
-#### Memory Safety
+## Memory Safety
 
 > **Note**: `MLXArray` is not memory safe.
 

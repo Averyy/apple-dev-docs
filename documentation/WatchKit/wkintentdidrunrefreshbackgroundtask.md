@@ -23,7 +23,7 @@ class WKIntentDidRunRefreshBackgroundTask
 
 - [Using background tasks](./using-background-tasks.md)
 
-#### Overview
+## Overview
 
 Intent-based shortcuts can update your app’s state; however, the intent executes in a separate process from your WatchKit extension. To update the app, the system schedules this task whenever one of your intents finishes executing. Use this task to check for any updates to your app’s state, and to make sure its visible interfaces are current. For example, you can update all of your app’s snapshot, complications, and relevant shortcuts.
 

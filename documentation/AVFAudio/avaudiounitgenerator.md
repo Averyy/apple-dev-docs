@@ -24,7 +24,7 @@ class AVAudioUnitGenerator
 @interface AVAudioUnitGenerator : AVAudioUnit
 ```
 
-#### Overview
+## Overview
 
 A generator represents an [`AudioUnit`](../AudioToolbox/audiounit.md) of type `kAudioUnitType_Generator` or `kAudioUnitType_RemoteGenerator`. A generator has no audio input, but produces audio output. An example is a tone generator.
 

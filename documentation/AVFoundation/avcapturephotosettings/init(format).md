@@ -27,11 +27,11 @@ convenience init(format: [String : Any]?)
 
 - [Capturing uncompressed image data](../capturing-uncompressed-image-data.md)
 
-#### Return Value
+## Return Value
 
 A new photo settings object.
 
-#### Discussion
+## Discussion
 
 Requesting capture in a processed format adds requirements for other photo settings: for details, see the [`format`](./format.md) property. The capture output validates these requirements when you call the [`capturePhoto(with:delegate:)`](../avcapturephotooutput/capturephoto%28with,delegate%29.md) method. If your settings and delegate don’t meet these requirements, that method raises an exception.
 

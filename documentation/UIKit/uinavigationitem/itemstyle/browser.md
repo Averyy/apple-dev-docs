@@ -22,7 +22,7 @@ case browser
 UINavigationItemStyleBrowser
 ```
 
-#### Discussion
+## Discussion
 
 Use this style for apps that support history-based navigation, like web browsers. With this style, the navigation item’s title appears on the leading side of the navigation bar, and center items ([`centerItemGroups`](../centeritemgroups.md)) appear in the center of the bar.
 

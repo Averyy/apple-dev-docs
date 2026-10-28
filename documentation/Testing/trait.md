@@ -23,7 +23,7 @@ A protocol describing traits that can be added to a test function or to a test s
 protocol Trait : Sendable
 ```
 
-#### Overview
+## Overview
 
 The testing library defines a number of traits that can be added to test functions and to test suites. Define your own traits by creating types that conform to [`TestTrait`](./testtrait.md) or [`SuiteTrait`](./suitetrait.md):
 

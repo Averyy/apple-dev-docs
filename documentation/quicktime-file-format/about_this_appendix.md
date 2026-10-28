@@ -3,7 +3,7 @@
 **Framework**: QuickTime File Format  
 **Role**: Article
 
-#### Overview
+## Overview
 
 The technical content of this appendix begins with a discussion of the structure of the profile atom, which holds an array of feature codes and values. Next is an enumeration of the currently included profile features, each described in a feature description section.
 

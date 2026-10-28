@@ -25,7 +25,7 @@ let NSLocalizedRecoveryOptionsErrorKey: String
 extern NSErrorUserInfoKey const NSLocalizedRecoveryOptionsErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The first string is the title of the right-most and default button, the second the one to the left, and so on. The recovery options should be appropriate for the recovery suggestion returned by [`localizedRecoverySuggestion`](./nserror/localizedrecoverysuggestion.md).
 

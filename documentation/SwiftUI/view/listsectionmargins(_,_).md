@@ -19,11 +19,11 @@ nonisolated
 func listSectionMargins(_ edges: Edge.Set = .all, _ length: CGFloat?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view in which the margins of list sections are set to the specified amount on the specified edges.
 
-#### Discussion
+## Discussion
 
 Use this modifier on a list section to set customize its margins. Indicate the edges to set the margin of by naming either a single value from  [`Edge.Set`](../edge/set.md), or by specifying an [`OptionSet`](../../Swift/optionset.md) that contains edge values. Margins for the other edges remain unchanged.
 

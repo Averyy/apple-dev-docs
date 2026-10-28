@@ -24,11 +24,11 @@ func unitRaised(toPower power: Int) -> HKUnit
 - (HKUnit *) unitRaisedToPower:(NSInteger) power;
 ```
 
-#### Return Value
+## Return Value
 
 A new, complex unit.
 
-#### Discussion
+## Discussion
 
 This method creates a new, complex unit by raising the unit this method is called on by the given power. This task is often only one step in a series of operations. For example, you can use this method to create a meters-per-second-squared unit as shown below.
 

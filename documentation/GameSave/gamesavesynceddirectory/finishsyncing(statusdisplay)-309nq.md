@@ -15,7 +15,7 @@ Waits for the directory sync to complete, showing the sync’s progress in a mod
 func finishSyncing(statusDisplay window: NSWindow) async
 ```
 
-#### Discussion
+## Discussion
 
 If the sync results in a conflict, the framework displays a conflict resolution UI for the user to chose a version that will be used. If the user isn’t signed in to iCloud or iCloud drive, the framework informs the user and then switches to local saving.
 

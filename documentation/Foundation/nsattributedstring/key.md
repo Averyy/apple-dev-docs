@@ -25,7 +25,7 @@ struct Key
 typedef NSString * NSAttributedStringKey;
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSAttributedString.Key`](./key.md) type defines the attributes you apply to ranges of characters in an attributed string. Some attributes provide information about how to render, lay out, or interpret the text, while other attributes provide transient or collaborative information. Attributes like the [`font`](./key/font.md), [`kern`](./key/kern.md), and [`strokeColor`](./key/strokecolor.md) contain information that the rendering system uses to display the text. Attributes like the [`spellingState`](./key/spellingstate.md), [`textHighlightStyle`](./key/texthighlightstyle.md), or [`accessibilityCustomText`](./key/accessibilitycustomtext.md) contain semantic information from other parts of the system. Some of these semantic attributes also affect how the system renders the text, but they are transient attributes unlike the core rendering attributes.
 

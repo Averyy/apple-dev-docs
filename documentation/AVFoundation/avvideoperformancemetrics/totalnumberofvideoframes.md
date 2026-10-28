@@ -10,7 +10,7 @@
 @property (nonatomic, readonly) unsigned long totalNumberOfVideoFrames;
 ```
 
-#### Discussion
+## Discussion
 
 [SPI] The total number of frames that would have been displayed if no frames are dropped. Same as totalNumberOfFrames.
 

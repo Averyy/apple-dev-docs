@@ -25,7 +25,7 @@ func contains(_ date: Date) -> Bool
 - (BOOL) containsDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver contains `date`. Otherwise, [`false`](../../Swift/false.md).
 

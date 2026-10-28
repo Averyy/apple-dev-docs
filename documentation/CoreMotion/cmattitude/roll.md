@@ -28,7 +28,7 @@ var roll: Double { get }
 
 - [Getting processed device-motion data](../getting-processed-device-motion-data.md)
 
-#### Discussion
+## Discussion
 
 A roll is a rotation around a longitudinal axis that passes through the device from its top to bottom.
 

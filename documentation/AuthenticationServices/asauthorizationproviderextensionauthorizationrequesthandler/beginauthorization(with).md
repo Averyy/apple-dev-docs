@@ -24,7 +24,7 @@ func beginAuthorization(with request: ASAuthorizationProviderExtensionAuthorizat
 - (void) beginAuthorizationWithRequest:(ASAuthorizationProviderExtensionAuthorizationRequest *) request;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method on the main thread.
 

@@ -21,7 +21,7 @@ The error code to indicate that the length of the generated signature is too lon
 static var signatureDurationInvalid: SHError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when the length of the generated signature is less than [`minimumQuerySignatureDuration`](../shcatalog/minimumquerysignatureduration.md) or greater than [`maximumQuerySignatureDuration`](../shcatalog/maximumquerysignatureduration.md) for the session [`catalog`](../shsession/catalog.md).
 

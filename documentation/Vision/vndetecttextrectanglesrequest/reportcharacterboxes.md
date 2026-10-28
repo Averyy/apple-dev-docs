@@ -24,7 +24,7 @@ var reportCharacterBoxes: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL reportCharacterBoxes;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value to [`true`](../../Swift/true.md) to have the detector return character bounding boxes as an array of [`VNRectangleObservation`](../vnrectangleobservation.md) objects.
 

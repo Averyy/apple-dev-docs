@@ -21,11 +21,11 @@ Returns an external purchase token of the specified token type.
 static func token(for tokenType: ExternalPurchaseCustomLink.TokenType) async throws -> ExternalPurchaseCustomLink.Token?
 ```
 
-#### Return Value
+## Return Value
 
 Returns an [`ExternalPurchaseCustomLink.Token`](./token.md) of the type you specify, or returns `nil` if there isn’t an active token of the specified type. This method throws a [`StoreKitError`](../storekiterror.md) if your app isn’t eligible to use this API.
 
-#### Discussion
+## Discussion
 
 Use this method to request tokens when your app uses the [`ExternalPurchaseCustomLink`](../externalpurchasecustomlink.md) API.
 
@@ -38,7 +38,7 @@ The [`withinApp`](./tokentype/withinapp.md) and [`outOfApp`](./tokentype/outofap
 
 > 💡 **Tip**: Request tokens before every potential transaction to ensure you have current tokens.
 
-##### Read and report tokens
+### Read and report tokens
 
 Decode the token to read its contents, including its expiration date. For more information, see [Receiving and decoding external purchase tokens](../receiving-and-decoding-external-purchase-tokens.md). For a code example that shows requesting tokens, see [`ExternalPurchaseCustomLink`](../externalpurchasecustomlink.md).
 

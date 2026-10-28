@@ -15,11 +15,11 @@ Returns the error code for use when box acquisition fails.
 kern_return_t GetAcquisitionFailure();
 ```
 
-#### Return Value
+## Return Value
 
 An error code for use when box acquisition fails.
 
-#### Discussion
+## Discussion
 
 Call this method to retrieve the error to return from a failed call to [`HandleChangeAcquireBox`](./handlechangeacquirebox.md).
 

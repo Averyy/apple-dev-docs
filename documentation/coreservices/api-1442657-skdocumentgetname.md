@@ -19,7 +19,7 @@ func SKDocumentGetName(_ inDocument: SKDocument!) -> Unmanaged<CFString>!
 CFStringRef SKDocumentGetName(SKDocumentRef inDocument);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFString`](../CoreFoundation/cfstring.md) object containing the document URL object’s name, or `NULL` on failure.
 

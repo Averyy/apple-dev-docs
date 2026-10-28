@@ -26,7 +26,7 @@ optional func documentPicker(_ controller: UIDocumentPickerViewController, didPi
 
 - [Providing access to directories](../providing-access-to-directories.md)
 
-#### Discussion
+## Discussion
 
 The meaning of the provided URLs varies depending on the document picker’s mode:
 

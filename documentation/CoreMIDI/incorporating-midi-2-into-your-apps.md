@@ -12,7 +12,7 @@ Add precision and improve musical control for your MIDI apps.
 - Mac Catalyst 14.0+
 - Xcode 16.2+
 
-#### Overview
+## Overview
 
 The MIDI 2 standard defines the Universal MIDI Packet (UMP) structure for the MIDI protocol transfer. Both MIDI 1 and 2 use the same structure. The framework expresses a MIDI 1 packet as MIDI-1UP, and the group field in UMP allows you to send up to 16 combined MIDI streams at the same time.
 
@@ -20,7 +20,7 @@ The MIDI 1 specification includes only the MIDI 1 protocol. The MIDI 2 specifica
 
 This sample code project shows how to use Core MIDI in [MIDI Services](./midi-services.md). The sample consists of two targets built in Mac Catalyst that you use to send or receive MIDI events. Use the targets on the same device to show the transmission of UMP MIDI data.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample app in macOS or iPadOS:
 
@@ -30,11 +30,11 @@ To run this sample app in macOS or iPadOS:
 4. Build and launch the UMP Send target in Xcode.
 5. In the UMP Send app, select a MIDI message type to send, select a destination, and click or tap the Send button.
 
-##### Understand MIDI-1UP and MIDI 2
+### Understand MIDI-1UP and MIDI 2
 
 By default, Core MIDI adopts the MIDI 2 specification and transparently converts sent MIDI data into the packet format and protocol a MIDI destination specifies. Regardless of the source packet format and protocol, legacy MIDI destinations receive [`MIDIPacketList`](./midipacketlist.md). MIDI 2 destinations receive [`MIDIEventList`](./midieventlist.md).
 
-##### Build a Universal MIDI Packet
+### Build a Universal MIDI Packet
 
 The UMP send target shows how to build and send UMP events to a MIDI destination a person selects. The user interface allows for selecting the type of MIDI message to send before customizing the different elements of the packet. The visualizer provides a tabular view of the contents of the packet in decimal, binary, and hexadecimal form.
 
@@ -96,7 +96,7 @@ case .noteOn(._2_0):
                                           destination: destination)
 ```
 
-##### Send a MIDI event to a destination
+### Send a MIDI event to a destination
 
 The sample sends data by initializing a [`MIDIEventList`](./midieventlist.md) and passing the event by reference, supplying the MIDI protocol as the second argument. Finally, the sample calls [`MIDIEventListAdd(_:_:_:_:_:_:)`](./midieventlistadd%28_,_,_,_,_,_%29.md) to add the event to the list, and calls [`MIDISendEventList(_:_:_:)`](./midisendeventlist%28_,_,_%29.md) with a port, destination, and the event list.
 
@@ -109,7 +109,7 @@ The sample sends data by initializing a [`MIDIEventList`](./midieventlist.md) an
 }
 ```
 
-##### Receive a MIDI event from a destination
+### Receive a MIDI event from a destination
 
 The receiver target demonstrates how to create a Core MIDI destination with a protocol, and consumes incoming MIDI events, displaying them in a MIDI log.
 

@@ -25,7 +25,7 @@ func date(from string: String) -> Date?
 - (NSDate *) dateFromString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A date object, or `nil` if no valid date was found.
 

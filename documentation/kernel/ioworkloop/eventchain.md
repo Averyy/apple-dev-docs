@@ -9,7 +9,7 @@
 IOEventSource *eventChain;
 ```
 
-#### Overview
+## Overview
 
 Pointer to first event source in linked list.
 

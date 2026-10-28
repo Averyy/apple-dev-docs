@@ -12,17 +12,17 @@ Apply Vision algorithms to track objects or rectangles throughout a video.
 - Mac Catalyst 12.0+
 - Xcode 11.3+
 
-#### Overview
+## Overview
 
 With the [Vision](./Vision.md) framework, you can detect and track objects or rectangles through a sequence of frames coming from video, live capture, or other sources.
 
 This sample app shows you how to pick an initial object to track, how to create Vision tracking requests to follow that object, and how to parse results from the object or rectangle tracker.
 
-##### Preview the Sample App
+### Preview the Sample App
 
 To see this sample app in action, build and run the project in Xcode, then choose a video from your photo library.  Once the video is loaded from your photo library, choose to track either objects or rectangles.
 
-##### Nominate Objects or Rectangles to Track
+### Nominate Objects or Rectangles to Track
 
 To track rectangles, select Rectangles.  The app runs the rectangle detector and shows rectangles it finds in a preview of the scene.
 
@@ -53,7 +53,7 @@ In your own app, if you prefer to nominate objects programmatically, you can use
 
 Selecting a salient object heavily influences the performance of the tracking algorithm; provide the best initial bounding box segmentation of your object that you can.
 
-##### Track Objects or Rectangles with a Request Handler
+### Track Objects or Rectangles with a Request Handler
 
 The Vision framework handles tracking requests through a [VNSequenceRequestHandler](./vnsequencerequesthandler.md).  Whereas the [`VNImageRequestHandler`](./vnimagerequesthandler.md) handles object detection requests on a still image, the [`VNSequenceRequestHandler`](./vnsequencerequesthandler.md) handles tracking requests.
 
@@ -75,7 +75,7 @@ request.trackingLevel = trackingLevel
 trackingRequests.append(request)
 ```
 
-For each such request, call the sequence request handler’s [perform(_:)](./vnsequencerequesthandler/api-2880308-perform.md) method, making sure to pass in the video reader’s orientation to ensure upright tracking. This method runs synchronously; use a background queue, such as `workQueue` in the sample code, so that the main queue isn’t blocked while your requests execute.
+For each such request, call the sequence request handler’s [perform(_:)](./vnsequencerequesthandler/perform%28_,on,orientation%29-2wvt8.md) method, making sure to pass in the video reader’s orientation to ensure upright tracking. This method runs synchronously; use a background queue, such as `workQueue` in the sample code, so that the main queue isn’t blocked while your requests execute.
 
 ```swift
 try requestHandler.perform(trackingRequests, on: frame, orientation: videoReader.orientation)
@@ -83,7 +83,7 @@ try requestHandler.perform(trackingRequests, on: frame, orientation: videoReader
 
 By iterating through each selected object or rectangle, creating a tracking request from it, and calling `perform` on the request handler, Vision follows the object or rectangle over the image sequence and returns results through its `results` property.
 
-##### Interpret Tracking Results
+### Interpret Tracking Results
 
 Access tracking results through the request’s `results` property or its completion handler.  A single tracking request represents a single tracked object in a one-to-one relationship.  If a tracking request succeeds, its [results](./vnrequest/api-2867238-results.md) property contains [`VNDetectedObjectObservation`](./vndetectedobjectobservation.md) objects describing the tracked object’s new location in the frame.
 
@@ -108,7 +108,7 @@ case .rectangle:
 }
 ```
 
-Use the observation’s [boundingBox](./vndetectedobjectobservation/api-2867227-boundingbox.md) to determine its location, so you can update your app or UI with the tracked object’s new location.  Also use it to seed the next round of tracking.
+Use the observation’s [boundingBox](./vndetectedobjectobservation/boundingbox.md) to determine its location, so you can update your app or UI with the tracked object’s new location.  Also use it to seed the next round of tracking.
 
 ```swift
 inputObservations[observation.uuid] = observation

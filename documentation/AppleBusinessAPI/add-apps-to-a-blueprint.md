@@ -9,7 +9,7 @@ Add apps to a Blueprint.
 **Availability**:
 - Apple Business API 2.6+
 
-##### Example
+### Example
 
 **Request**:
 

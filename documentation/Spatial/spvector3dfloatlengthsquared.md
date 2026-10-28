@@ -19,7 +19,7 @@
 static float SPVector3DFloatLengthSquared(SPVector3DFloat x);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the squared length of the vector.
 

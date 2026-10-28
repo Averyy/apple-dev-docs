@@ -17,7 +17,7 @@ Enables background delivery for the specified types and frequency.
 func enableBackgroundDelivery(for types: [FinanceStore.BackgroundDataType], frequency: FinanceStore.UpdateFrequency)
 ```
 
-#### Discussion
+## Discussion
 
 The app’s background delivery extension will receive updates at the specified frequency when data of the given types change in the finance store.
 

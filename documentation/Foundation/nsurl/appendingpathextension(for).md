@@ -25,11 +25,11 @@ func appendingPathExtension(for contentType: UTType) -> URL
 - (NSURL *) URLByAppendingPathExtensionForType:(UTType *) contentType;
 ```
 
-#### Return Value
+## Return Value
 
 A new URL with the type’s preferred extension appended.
 
-#### Discussion
+## Discussion
 
 For more information about types, see [Uniform Type Identifiers](../../UniformTypeIdentifiers/UniformTypeIdentifiers.md).
 

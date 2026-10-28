@@ -5,7 +5,7 @@
 
 Get TestFlight feedback crashes from beta testers for your apps.
 
-#### Overview
+## Overview
 
 Use this API to read details about crashes submitted by testers while testing your beta app builds. There are many filters available for these endpoints to help you identify patterns and isolate issues.
 

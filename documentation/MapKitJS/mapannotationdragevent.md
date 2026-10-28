@@ -15,7 +15,7 @@ An event object that the map object dispatches when someone drags an annotation.
 class MapAnnotationDragEvent extends Event
 ```
 
-#### Discussion
+## Discussion
 
 The [`Map`](./map.md) dispatches a [`MapAnnotationDragEvent`](./mapannotationdragevent.md) when someone dragging an annotation. The event type can be `drag-start`, `dragging`, or `drag-end`.
 

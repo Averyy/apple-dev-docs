@@ -19,7 +19,7 @@ weak var firstResponder: NSResponder? { get }
 @property (weak, readonly) NSResponder * firstResponder;
 ```
 
-#### Discussion
+## Discussion
 
 The first responder is usually the first object in a responder chain to receive an event or action message. In most cases, the first responder is a view object that the user selects or activates with the mouse or keyboard.
 

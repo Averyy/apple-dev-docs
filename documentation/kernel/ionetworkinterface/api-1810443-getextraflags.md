@@ -12,11 +12,11 @@ virtual UInt32 getExtraFlags(
  void ) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the value of the interface eflags.
 
-#### Overview
+## Overview
 
 This method calls `ifnet_eflags` and returns the current interface eflags.
 

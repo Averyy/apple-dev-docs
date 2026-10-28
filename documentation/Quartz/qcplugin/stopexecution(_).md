@@ -21,7 +21,7 @@ func stopExecution(_ context: (any QCPlugInContext)!)
 - (void) stopExecution:(id<QCPlugInContext>) context;
 ```
 
-#### Discussion
+## Discussion
 
 The Quartz Composer engine calls this method when it stops executing. You can optionally override this execution method to perform cleanup tasks.
 

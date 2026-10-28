@@ -20,11 +20,11 @@ func isUsableForDesktopGUI() -> Bool
 extern bool CGDisplayModeIsUsableForDesktopGUI(CGDisplayModeRef mode);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the specified display mode is usable for a desktop graphical user interface; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This function’s criteria include factors such as sufficient width and height and adequate pixel depth.
 

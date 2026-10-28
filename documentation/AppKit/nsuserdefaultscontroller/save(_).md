@@ -20,7 +20,7 @@ func save(_ sender: Any?)
 - (void) save:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method has no effect if [`appliesImmediately`](./appliesimmediately.md) returns [`true`](../../Swift/true.md).
 

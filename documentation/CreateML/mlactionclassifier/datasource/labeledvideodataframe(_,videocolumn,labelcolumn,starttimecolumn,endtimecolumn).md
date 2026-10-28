@@ -15,7 +15,7 @@ A data source made up of video references in a data frame.
 case labeledVideoDataFrame(DataFrame, videoColumn: String = __Defaults.videoColumnName, labelColumn: String = __Defaults.labelColumnName, startTimeColumn: String? = nil, endTimeColumn: String? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The data frame must contain a column of video file paths and a column of labels. It can also contain columns with start and end times.
 

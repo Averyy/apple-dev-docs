@@ -19,7 +19,7 @@ var videoGravity: AVLayerVideoGravity { get set }
 @property (copy) AVLayerVideoGravity videoGravity;
 ```
 
-#### Discussion
+## Discussion
 
 The video gravity determines how the player view scales or stretches the video content within the player view’s bounds. The player view supports the following video gravity values:
 

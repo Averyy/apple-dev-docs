@@ -20,7 +20,7 @@ Resolves heap data on the CPU timeline.
 - (NSData *) resolveCounterRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 This method resolves heap data in the CPU timeline. Your app needs to ensure the GPU work has completed in order to retrieve the data correctly. You can alternatively resolve the heap data in the GPU timeline by calling [`resolveCounterHeap:withRange:intoBuffer:waitFence:updateFence:`](../mtl4commandbuffer/resolvecounterheap_withrange_intobuffer_waitfence_updatefence_.md).
 

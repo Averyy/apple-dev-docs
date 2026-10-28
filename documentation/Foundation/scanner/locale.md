@@ -25,7 +25,7 @@ var locale: Any? { get set }
 @property (retain, nullable) id locale;
 ```
 
-#### Discussion
+## Discussion
 
 A scanner’s locale affects the way it interprets numeric values from the string. In particular, a scanner uses the locale’s decimal separator to distinguish the integer and fractional parts of floating-point representations. A scanner with no locale set uses non-localized values. New scanners have no locale by default.
 

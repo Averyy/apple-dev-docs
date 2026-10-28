@@ -25,7 +25,7 @@ func removeResidencySet(_ residencySet: any MTLResidencySet)
 - (void) removeResidencySet:(id<MTLResidencySet>) residencySet;
 ```
 
-#### Discussion
+## Discussion
 
 The method doesn’t remove the residency set from command buffers the queue owns with an [`status`](../mtlcommandbuffer/status.md) property that’s equal to [`MTLCommandBufferStatus.committed`](../mtlcommandbufferstatus/committed.md) or [`MTLCommandBufferStatus.scheduled`](../mtlcommandbufferstatus/scheduled.md).
 

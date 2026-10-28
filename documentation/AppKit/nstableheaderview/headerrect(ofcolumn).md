@@ -19,7 +19,7 @@ func headerRect(ofColumn column: Int) -> NSRect
 - (NSRect) headerRectOfColumn:(NSInteger) column;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an `NSInternalInconsistencyException` if `columnIndex` is out of bounds.
 

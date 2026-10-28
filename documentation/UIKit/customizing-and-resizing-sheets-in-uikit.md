@@ -12,7 +12,7 @@ Discover how to create a layered and customized sheet experience in UIKit.
 - Mac Catalyst 16.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC22 session [10068: What’s new in UIKit](https://developer.apple.com/wwdc22/10068/).
 

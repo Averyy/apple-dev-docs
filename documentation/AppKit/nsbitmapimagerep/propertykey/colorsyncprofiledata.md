@@ -19,7 +19,7 @@ static let colorSyncProfileData: NSBitmapImageRep.PropertyKey
 extern NSBitmapImageRepPropertyKey NSImageColorSyncProfileData;
 ```
 
-#### Discussion
+## Discussion
 
 It can be used for TIFF, JPEG, GIF, and PNG files. This value is set when reading in and used when writing out image data. You can get the profile data for a particular color space from the corresponding `NSColorSpace` object or from the ColorSync Manager.
 

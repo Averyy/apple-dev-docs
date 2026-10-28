@@ -11,7 +11,7 @@ Gets the number of instances when the target has refused to accept the packet pr
 virtual UInt32 getRetryCount();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of times that kIOOutputStatusRetry is returned by the target.
 

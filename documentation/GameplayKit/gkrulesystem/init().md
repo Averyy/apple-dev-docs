@@ -24,11 +24,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A rule system object.
 
-#### Discussion
+## Discussion
 
 A newly created rule system contains no state, rules, or facts.
 

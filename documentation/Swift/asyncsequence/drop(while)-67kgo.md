@@ -22,11 +22,11 @@ Omits elements from the base sequence until a given error-throwing closure retur
 func drop(while predicate: @escaping @Sendable (Self.Element) async throws -> Bool) -> AsyncThrowingDropWhileSequence<Self>
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence that skips over values until the provided closure returns `false` or throws an error.
 
-#### Discussion
+## Discussion
 
 Use `drop(while:)` to omit elements from an asynchronous sequence until the element received meets a condition you specify. If the closure you provide throws an error, the sequence produces no elements and throws the error instead.
 

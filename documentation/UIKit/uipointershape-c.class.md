@@ -18,7 +18,7 @@ An object that defines the shape of custom pointers.
 @interface UIPointerShape : NSObject
 ```
 
-#### Overview
+## Overview
 
 If the desired pointer shape can be expressed as a rounded rectangle, use either [`shapeWithRoundedRect:`](./uipointershape-c.class/shapewithroundedrect_.md) or [`shapeWithRoundedRect:cornerRadius:`](./uipointershape-c.class/shapewithroundedrect_cornerradius_.md) for best results.
 

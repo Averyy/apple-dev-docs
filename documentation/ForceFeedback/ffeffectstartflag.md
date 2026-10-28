@@ -18,7 +18,7 @@ typealias FFEffectStartFlag = UInt32
 typedef UInt32 FFEffectStartFlag;
 ```
 
-#### Discussion
+## Discussion
 
 Effect Parameter flags for use in calls to **FFEffectStart()**.
 

@@ -15,7 +15,7 @@ Returns a Boolean value that indicates whether two spans are equal.
 equals(anotherSpan: CoordinateSpan): boolean;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the span specified by `anotherSpan` equals this span; otherwise, `false`.
 

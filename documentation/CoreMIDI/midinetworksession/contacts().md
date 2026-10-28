@@ -23,7 +23,7 @@ func contacts() -> Set<MIDINetworkHost>
 - (NSSet<MIDINetworkHost *> *) contacts;
 ```
 
-#### Return Value
+## Return Value
 
 The set of MIDI network host objects.
 

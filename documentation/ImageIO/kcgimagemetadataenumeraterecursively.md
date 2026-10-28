@@ -25,7 +25,7 @@ let kCGImageMetadataEnumerateRecursively: CFString
 extern CFStringRef const kCGImageMetadataEnumerateRecursively;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFBoolean`](../CoreFoundation/cfboolean.md). Set the value to [`kOSBooleanTrue`](../DriverKit/kosbooleantrue.md) to enumerate all tags recursively. Set the value to [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md) to enumerate only the direct children of the root path you specify.
 

@@ -25,7 +25,7 @@ func resignCurrent()
 - (void) resignCurrent;
 ```
 
-#### Discussion
+## Discussion
 
 This method restores the current progress object to what it was before invoking [`becomeCurrent(withPendingUnitCount:)`](./becomecurrent%28withpendingunitcount%29.md).
 

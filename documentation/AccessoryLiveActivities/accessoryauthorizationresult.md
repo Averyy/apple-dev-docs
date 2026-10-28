@@ -20,7 +20,7 @@ enum AccessoryAuthorizationResult
 
 - [Receiving Live Activity updates and alerts on an accessory](./receiving-live-activities-on-an-accessory.md)
 
-#### Overview
+## Overview
 
 Call [`authorization(forAccessory:)`](./liveactivityforwarding/authorization%28foraccessory%29.md) to check the current forwarding authorization for an accessory without showing any UI. If the result is `.undetermined`, ask people for their permission to forward iOS system notifications and Live Activities to your accessory. For more information, see [Receiving Live Activity updates and alerts on an accessory](./receiving-live-activities-on-an-accessory.md).
 

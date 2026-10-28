@@ -17,7 +17,7 @@ Parameters configuring a Wi-Fi Aware data path connection.
 struct WAParameters
 ```
 
-#### Overview
+## Overview
 
 You can customize Wi-Fi Aware configuration with the parameters passed in the `.wifiAware()` instruction to the `NetworkBrowser` and `NetworkListener`, or via the `.wifiAware:WAParameters?` property on `NWParameters`.
 

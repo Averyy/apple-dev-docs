@@ -25,7 +25,7 @@ class INNoteResolutionResult
 @interface INNoteResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INNoteResolutionResult`](./innoteresolutionresult.md) object when resolving parameters containing an [`INNote`](./innote.md) object. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

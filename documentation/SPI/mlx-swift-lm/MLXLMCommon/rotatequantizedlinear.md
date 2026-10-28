@@ -17,7 +17,7 @@ Pairwise Givens rotation + quantized matmul.
 class RotateQuantizedLinear
 ```
 
-#### Overview
+## Overview
 
 Subclasses `QuantizedLinear` so it can replace `Linear` in `@ModuleInfo` slots via `update(modules:)`. Only overrides `callAsFunction` to insert the rotation step before the standard quantized matmul.
 

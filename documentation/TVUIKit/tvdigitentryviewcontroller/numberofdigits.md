@@ -19,7 +19,7 @@ var numberOfDigits: Int { get set }
 @property (nonatomic, assign) NSUInteger numberOfDigits;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is 4.
 

@@ -24,7 +24,7 @@ func startTask(toRender image: CIImage, to destination: CIRenderDestination) thr
 - (CIRenderTask *) startTaskToRender:(CIImage *) image toDestination:(CIRenderDestination *) destination error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The asynchronous [`CIRenderTask`](../cirendertask.md) to render the image to the specified destination.
 

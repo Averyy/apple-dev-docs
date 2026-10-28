@@ -23,7 +23,7 @@ case success
 INListCarsIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Only use this code when you’re able to successfully provide a list of the user’s electric vehicles.
 

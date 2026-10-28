@@ -23,7 +23,7 @@ var kDNSServiceFlagsKnownUnique: UInt32 { get }
 kDNSServiceFlagsKnownUnique
 ```
 
-#### Discussion
+## Discussion
 
 Client guarantees that record names are unique, so we can skip sending out initial probe messages. Standard name conflict resolution is still done if a conflict is discovered. Currently only valid for a DNSServiceRegister call.
 

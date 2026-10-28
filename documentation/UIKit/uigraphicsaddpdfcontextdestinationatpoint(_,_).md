@@ -24,7 +24,7 @@ func UIGraphicsAddPDFContextDestinationAtPoint(_ name: String, _ point: CGPoint)
 extern void UIGraphicsAddPDFContextDestinationAtPoint(NSString *name, CGPoint point);
 ```
 
-#### Discussion
+## Discussion
 
 This function marks the specified point in the current page as the destination of a jump. When the user taps a link that takes them to this jump destination, the PDF document scrolls until the specified point is visible.
 

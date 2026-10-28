@@ -21,7 +21,7 @@ The locale to use to look up the localized string from the string resource.
 var locale: Locale
 ```
 
-#### Discussion
+## Discussion
 
 To perform localization in a different locale, change this value before passing it to a [`String`](../../Swift/string.md) or [`AttributedString`](../attributedstring.md) initializer that takes a [`LocalizedStringResource`](../localizedstringresource.md).
 

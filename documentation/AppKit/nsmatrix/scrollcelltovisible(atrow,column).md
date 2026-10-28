@@ -19,7 +19,7 @@ func scrollCellToVisible(atRow row: Int, column col: Int)
 - (void) scrollCellToVisibleAtRow:(NSInteger) row column:(NSInteger) col;
 ```
 
-#### Discussion
+## Discussion
 
 This method scrolls if the receiver is in a scrolling view and `row` and `column` represent a valid cell within the receiver.
 

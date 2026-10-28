@@ -24,7 +24,7 @@ var filter: CIFilter? { get set }
 @property (nonatomic, retain, nullable) CIFilter * filter;
 ```
 
-#### Discussion
+## Discussion
 
 The Core Image filter must have a single `inputImage` parameter and produce a single `outputImage` parameter. The default value is `nil`. If the value is `nil` and the effect node is enabled, no filtering takes place. However, its children are still rendered in a separate pass and blended to the parent’s framebuffer.
 

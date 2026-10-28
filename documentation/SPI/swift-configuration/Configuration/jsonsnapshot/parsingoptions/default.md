@@ -24,7 +24,7 @@ The default parsing options.
 static var `default`: JSONSnapshot.ParsingOptions { get }
 ```
 
-#### Discussion
+## Discussion
 
 Uses base64 byte decoding and treats no values as secrets.
 

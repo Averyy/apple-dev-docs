@@ -16,11 +16,11 @@
 - (NSDictionary *) DictionaryRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 An NSDictionary object containing the dictionary representation
 
-#### Discussion
+## Discussion
 
 Convenience method to return a NSDictionary representation of this metadata.
 

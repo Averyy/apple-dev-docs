@@ -12,11 +12,11 @@ virtual bool setFirstObject(
  const OSMetaClassBase *anObject);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `anObject` was successfully added to the ordered set, `false` otherwise (including if it was already in the ordered set at any index).
 
-#### Overview
+## Overview
 
 The set adds storage to accomodate the new object, if necessary. If successfully added, the object is retained.
 

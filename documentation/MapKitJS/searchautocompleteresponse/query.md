@@ -15,7 +15,7 @@ The query string used to perform the autocomplete request.
 query: string;
 ```
 
-#### Discussion
+## Discussion
 
 The search query that corresponds to the [`results`](./results.md).
 

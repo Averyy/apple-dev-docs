@@ -20,11 +20,11 @@ func insert(_ sender: Any?)
 - (void) insert:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If an entity name is specified (see [`entityName`](../nsobjectcontroller/entityname.md)), this method creates an instance of the of the class specified by the entity, otherwise this method creates an instance of the class specified by  [`objectClass`](../nsobjectcontroller/objectclass.md).
 
-##### Special Considerations
+### Special Considerations
 
 Beginning with OS X v10.4 the result of this method is deferred until the next iteration of the runloop so that the error presentation mechanism can provide feedback as a sheet.
 

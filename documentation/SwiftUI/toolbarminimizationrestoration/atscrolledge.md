@@ -17,7 +17,7 @@ The toolbar restores only when the scroll view’s content reaches the scroll ed
 static let atScrollEdge: ToolbarMinimizationRestoration
 ```
 
-#### Discussion
+## Discussion
 
 Mid-scroll reversals do not restore the toolbar. Currently this is only honored alongside [`onScrollDown`](../toolbarminimizationbehavior/onscrolldown.md) and only for [`navigationBar`](../toolbarplacement/navigationbar.md).
 

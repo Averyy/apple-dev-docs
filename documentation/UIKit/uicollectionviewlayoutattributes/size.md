@@ -23,7 +23,7 @@ var size: CGSize { get set }
 @property (nonatomic) CGSize size;
 ```
 
-#### Discussion
+## Discussion
 
 Setting the value of this property also changes the size of the rectangle returned by the [`frame`](./frame.md) and [`bounds`](./bounds.md) properties.
 

@@ -21,7 +21,7 @@ A base type that represents 3D content.
 static var threeDContent: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.3d-content`.
 

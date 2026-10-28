@@ -23,7 +23,7 @@ var wasAddedAfterContentCatalogCompleted: Bool { get }
 @property (nonatomic, readonly, getter=wasAddedAfterContentCatalogCompleted) BOOL addedAfterContentCatalogCompleted;
 ```
 
-#### Discussion
+## Discussion
 
 This value does not apply to files added as a result of adding a new store to the camera.
 

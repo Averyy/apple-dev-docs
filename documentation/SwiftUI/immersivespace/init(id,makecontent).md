@@ -28,7 +28,7 @@ nonisolated
 init<C>(id: String, @CompositorContentBuilder makeContent: @escaping () -> C) where Content == CompositorContentBuilder.Content<C>, Data == Never, C : CompositorContent
 ```
 
-#### Discussion
+## Discussion
 
 The space uses the specified content builder to form the content.
 

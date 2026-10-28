@@ -21,7 +21,7 @@ class CLKComplicationTemplateGraphicCornerGaugeImage
 @interface CLKComplicationTemplateGraphicCornerGaugeImage : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicCorner`](./clkcomplicationfamily/graphiccorner.md) family. [Figure 1](./clkcomplicationtemplategraphiccornergaugeimage.md#3030693) shows the layout of the image and where the template might appear on the clock face.
 

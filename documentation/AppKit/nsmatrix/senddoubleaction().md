@@ -19,7 +19,7 @@ func sendDoubleAction()
 - (void) sendDoubleAction;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver doesn’t have a double-click action, the double-click action message of the selected cell (as returned by [`selectedCell`](./selectedcell.md)) is sent to the selected cell’s target. Finally, if the selected cell also has no action, then the single-click action of the receiver is sent to the target of the receiver.
 

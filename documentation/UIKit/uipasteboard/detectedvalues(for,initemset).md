@@ -18,11 +18,11 @@ Requests that the data detection system asynchronously identify the types of val
 func detectedValues(for keyPaths: Set<PartialKeyPath<UIPasteboard.DetectedValues>>, inItemSet itemSet: IndexSet?) async throws -> [UIPasteboard.DetectedValues]
 ```
 
-#### Return Value
+## Return Value
 
 An array of objects that contain the values the data detection system matches in each pasteboard item.
 
-#### Discussion
+## Discussion
 
 Because this method gives the app access to the values it detects in a pasteboard item, the system notifies the user about reading the contents of the pasteboard.
 

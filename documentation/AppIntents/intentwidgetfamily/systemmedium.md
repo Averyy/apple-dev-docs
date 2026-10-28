@@ -20,7 +20,7 @@ A medium-sized widget.
 case systemMedium
 ```
 
-#### Discussion
+## Discussion
 
 The medium system widget can appear on the Home Screen or in the Today View in iOS and iPadOS, or in the Notification Center on macOS.
 

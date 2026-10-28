@@ -25,7 +25,7 @@ protocol MLWritable : NSObjectProtocol
 @protocol MLWritable <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You use [`MLWritable`](./mlwritable.md) to save any [`MLModel`](./mlmodel.md) instance that adopts the protocol to the file system.
 

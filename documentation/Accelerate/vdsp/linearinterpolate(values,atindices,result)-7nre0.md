@@ -21,7 +21,7 @@ Computes the double-precision linearly interpolated values of a vector at the sp
 static func linearInterpolate<T, U, V>(values: T, atIndices indices: U, result: inout V) where T : AccelerateBuffer, U : AccelerateBuffer, V : AccelerateMutableBuffer, T.Element == Double, U.Element == Double, V.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 The following code creates a five-element vector from two values using linear interpolation. The last index in `indices` determines the length of the operation result:
 

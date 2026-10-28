@@ -22,7 +22,7 @@ nonisolated
 func toolbar<Content>(id: String, @ContentBuilder content: () -> Content) -> some View where Content : CustomizableToolbarContent
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier when you want to allow the user to customize the components and layout of elements in the toolbar. The toolbar modifier expects a collection of toolbar items which you can provide either by supplying a collection of views with each view wrapped in a [`ToolbarItem`](../toolbaritem.md).
 

@@ -22,7 +22,7 @@ weak var delegate: (any UIPrintInteractionControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UIPrintInteractionControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must adopt the [`UIPrintInteractionControllerDelegate`](../uiprintinteractioncontrollerdelegate.md) protocol and implement one or more of its methods. It is not retained.
 

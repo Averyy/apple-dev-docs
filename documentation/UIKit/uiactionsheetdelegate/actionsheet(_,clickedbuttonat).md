@@ -23,7 +23,7 @@ optional func actionSheet(_ actionSheet: UIActionSheet, clickedButtonAt buttonIn
 - (void) actionSheet:(UIActionSheet *) actionSheet clickedButtonAtIndex:(NSInteger) buttonIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver is automatically dismissed after this method is invoked.
 

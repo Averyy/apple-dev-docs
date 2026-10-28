@@ -23,7 +23,7 @@ var batteryLevel: Int { get }
 @property (readonly) NSUInteger batteryLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property ranges from 0 to 100.
 

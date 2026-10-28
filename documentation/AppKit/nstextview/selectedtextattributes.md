@@ -19,7 +19,7 @@ var selectedTextAttributes: [NSAttributedString.Key : Any] { get set }
 @property (copy) NSDictionary<NSString *,id> * selectedTextAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 Text color, background color, and underline are the only supported attributes for selected text.
 

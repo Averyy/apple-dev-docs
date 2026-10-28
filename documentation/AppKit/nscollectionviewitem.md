@@ -19,7 +19,7 @@ class NSCollectionViewItem
 @interface NSCollectionViewItem : NSViewController
 ```
 
-#### Overview
+## Overview
 
 Item objects are view controllers, and you use their view hierarchies to display your content. The default implementation of this class supports the creation of a simple item that displays a single image or string. If the appearance or layout of your items is more sophisticated, you can subclass and configure the view hierarchy based on your needs.
 
@@ -35,7 +35,7 @@ At runtime, items merely present the data they are given. Your app’s data stru
 
 For information about how the collection view displays items to the user, see [`NSCollectionView`](./nscollectionview.md).
 
-##### Configuring an Item’s Views
+### Configuring an Item’s Views
 
 You configure the views of an item in one of two ways:
 
@@ -46,7 +46,7 @@ When creating the views programmatically, you typically override the item’s [`
 
 When using a nib file, you can use a generic `NSCollectionViewItem` object if your item contains only an image or text field. For more complex item content, subclass `NSCollectionViewItem` and add outlets for any views you need to access later. In Interface Builder, connect your outlets to the views you add to the nib file.
 
-##### Registering Items
+### Registering Items
 
 Before you can ask the collection view to create items, you must register those items using one of the following methods:
 
@@ -59,7 +59,7 @@ You must register at least one item type before trying to display content from y
 
 For more information about how how to register items, see [`NSCollectionView`](./nscollectionview.md). For information about how the data source object creates and configures items, see [`NSCollectionViewDataSource`](./nscollectionviewdatasource.md).
 
-##### Legacy Item Support
+### Legacy Item Support
 
 For apps built before OS X 10.11, you created a template item and assigned it to the [`itemPrototype`](./nscollectionview/itemprototype.md) property of your collection view. To create new instances of the item, you called the collection view’s [`newItem(forRepresentedObject:)`](./nscollectionview/newitem%28forrepresentedobject%29.md) method. For more information about how to support older collection view configurations, see Collection View Programming Guide for macOS.
 

@@ -23,7 +23,7 @@ let SKStoreProductParameterCustomProductPageIdentifier: String
 extern NSString * const SKStoreProductParameterCustomProductPageIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a UUID that represents a custom product page. Get this value from the `ppid` parameter of your custom product page’s URL. For example, in the following sample custom product page URL:
 

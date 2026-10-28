@@ -13,9 +13,9 @@ Update an app asset library video.
 
 - [Uploading and managing video assets](./uploading-and-managing-video-assets.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

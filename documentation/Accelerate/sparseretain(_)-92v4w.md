@@ -25,7 +25,7 @@ func SparseRetain(_ NumericFactor: SparseOpaqueFactorization_Complex_Float) -> S
 static SparseOpaqueFactorization_Complex_Float SparseRetain(SparseOpaqueFactorization_Complex_Float NumericFactor);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of NumericFactor.
 

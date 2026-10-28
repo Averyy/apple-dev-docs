@@ -21,7 +21,7 @@ Cause the work item to act as a barrier block when submitted to a concurrent que
 DISPATCH_BLOCK_BARRIER
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that a dispatch block should act as a barrier block when submitted to a [`DISPATCH_QUEUE_CONCURRENT`](../dispatch_queue_concurrent.md) queue. See [`dispatch_barrier_async`](../dispatch_barrier_async.md) for details. This flag has no effect when the dispatch block is invoked directly.
 

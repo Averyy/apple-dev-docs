@@ -14,7 +14,7 @@ Use networking frameworks to create a custom protocol for playing a game across 
 - watchOS 9.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 This TicTacToe sample code project creates a networked game that you can play between different devices, communicating with a custom protocol. The game offers two ways to play:
 

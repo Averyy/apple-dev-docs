@@ -21,11 +21,11 @@ Reads and writes the value associated with the given key as a string.
 subscript(key: String) -> String? { get set }
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with key in the dictionary; otherwise, [`nil`](../../ObjectiveC/nil-227m0.md).
 
-#### Discussion
+## Discussion
 
 When setting a String value, the string’s bytes are always copied. The underlying C string is assumed to be encoded as UTF-8.
 

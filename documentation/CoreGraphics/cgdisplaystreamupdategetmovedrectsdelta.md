@@ -10,7 +10,7 @@
 extern void CGDisplayStreamUpdateGetMovedRectsDelta(CGDisplayStreamUpdateRef updateRef, CGFloat *dx, CGFloat *dy);
 ```
 
-#### Discussion
+## Discussion
 
 Return the movement dx and dy values for a single update
 

@@ -23,7 +23,7 @@ static let showStatistics: ARView.DebugOptions
 
 - [Rendering high-fidelity characters](../../rendering-high-fidelity-characters.md)
 
-#### Discussion
+## Discussion
 
 Add this debug option to a view’s [`debugOptions`](../debugoptions-swift.property.md) option set to display a variety of resource utilization metrics, overlaid on the view. The statistics update in real time so you can examine how your app performs and what resources it consumes under different usage conditions.
 
@@ -31,7 +31,7 @@ Add this debug option to a view’s [`debugOptions`](../debugoptions-swift.prope
 
 For more information about how to use the data shown above and described below, see [Improving the Performance of a RealityKit App](../../improving-the-performance-of-a-realitykit-app.md).
 
-##### Measure time
+### Measure time
 
 Items listed under the Frame CPU Time heading show how your app makes use of CPU time. The first item indicates frame rate, which directly impacts the quality of the user’s experience. The remaining items indicate average time in milliseconds per frame that the CPU spends performing certain tasks, as described below.
 
@@ -43,7 +43,7 @@ Items listed under the Frame CPU Time heading show how your app makes use of CPU
 - **Network**: Time spent sending and receiving data. The creation and processing of network data is part of the ECS time.
 - **Animation**: Time spent managing animations. Some animation tasks occur during component updates, so they contribute to the ECS time instead.
 
-##### Measure geometry
+### Measure geometry
 
 Items under the Scene Mesh Stats heading help you optimize your content. These statistics help you to estimate the complexity of your scene.
 
@@ -52,7 +52,7 @@ Items under the Scene Mesh Stats heading help you optimize your content. These s
 - **Triangles Submitted**: The number of triangles submitted to the GPU on each frame.
 - **Vertices Submitted**: The number of vertices submitted to the GPU on each frame.
 
-##### Measure memory
+### Measure memory
 
 The items under the App Memory Usage heading help you understand how much memory your app uses.
 

@@ -23,11 +23,11 @@ init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout)
 - (instancetype) initWithFrame:(CGRect) frame collectionViewLayout:(UICollectionViewLayout *) layout;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized collection view object, or `nil` if the object couldn’t be created.
 
-#### Discussion
+## Discussion
 
 Use this method when initializing a collection view object programmatically.
 

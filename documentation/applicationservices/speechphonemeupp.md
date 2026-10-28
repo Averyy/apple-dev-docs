@@ -19,7 +19,7 @@ typealias SpeechPhonemeUPP = SpeechPhonemeProcPtr
 typedef SpeechPhonemeProcPtr SpeechPhonemeUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see the description of the [`SpeechPhonemeProcPtr`](./speechphonemeprocptr.md) callback function.
 

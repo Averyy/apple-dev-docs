@@ -21,11 +21,11 @@ Modifies the date interval format style to include the year.
 func year() -> Date.IntervalFormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A date interval format style that includes the year.
 
-#### Discussion
+## Discussion
 
 Use a combination of modifier instance methods to customize the format of the date interval. The following example shows several combinations of year, month, and day components in the date interval:
 

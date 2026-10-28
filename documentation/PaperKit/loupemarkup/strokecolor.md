@@ -19,7 +19,7 @@ The color of the loupe’s border.
 var strokeColor: CGColor? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set this to `nil` for no border.
 

@@ -15,13 +15,13 @@ A single row in a Brands (Apple Maps) ad-level report, pairing ad metadata with 
 object BrandsAdReportRow
 ```
 
-#### Discussion
+## Discussion
 
 The `BrandsAdReportRow` object is the `brands` counterpart to [`AppsAdReportRow`](./appsadreportrow.md). It uses [`BrandsMetrics`](./brandsmetrics.md), a richer metric set than the apps metrics that includes Maps location-action fields such as `getDirections`, `call`, and `share` alongside the standard impression and tap metrics.
 
 The `metadata` field captures ad identifiers and configuration at report time. The `totalMetrics` field contains the aggregated performance figures across the full reporting period.
 
-##### Example
+### Example
 
 ```json
 {

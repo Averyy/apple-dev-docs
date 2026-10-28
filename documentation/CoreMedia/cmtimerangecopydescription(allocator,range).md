@@ -25,11 +25,11 @@ func CMTimeRangeCopyDescription(allocator: CFAllocator?, range: CMTimeRange) -> 
 extern CFStringRefCMTimeRangeCopyDescription(CFAllocatorRef allocator, CMTimeRange range);
 ```
 
-#### Return Value
+## Return Value
 
 A string description.
 
-#### Discussion
+## Discussion
 
 You use this from within `CFShow` on an object that contains `CMTimeRange` fields. It is also useful from other client debugging code.  The caller owns the `CFString` this function returns and is responsible for releasing it. Pass `kCFAllocatorDefault` to use the default allocator.
 

@@ -25,7 +25,7 @@ class func deleteHistory(before transaction: NSPersistentHistoryTransaction?) ->
 + (instancetype) deleteHistoryBeforeTransaction:(NSPersistentHistoryTransaction *) transaction;
 ```
 
-#### Return Value
+## Return Value
 
 A delete history change request ([`NSPersistentHistoryChangeRequest`](../nspersistenthistorychangerequest.md)) using an end transaction boundary.
 

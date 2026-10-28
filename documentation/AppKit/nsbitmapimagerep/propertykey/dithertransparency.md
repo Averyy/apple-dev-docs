@@ -19,7 +19,7 @@ static let ditherTransparency: NSBitmapImageRep.PropertyKey
 extern NSBitmapImageRepPropertyKey NSImageDitherTransparency;
 ```
 
-#### Discussion
+## Discussion
 
 Used only when writing GIF files.
 

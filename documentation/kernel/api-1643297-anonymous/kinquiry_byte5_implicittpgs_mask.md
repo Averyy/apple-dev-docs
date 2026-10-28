@@ -13,7 +13,7 @@
 kINQUIRY_Byte5_ImplicitTPGS_Mask = (1 << kINQUIRY_Byte5_ImplicitTPGS_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use for the Implicit TPGS bits.
 

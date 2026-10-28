@@ -21,11 +21,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized message.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a new message that transmits app data, but is not updatable. When the recipient selects the message, the recipient’s app extension launches and receives the message object, but it cannot update the message.
 

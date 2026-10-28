@@ -16,11 +16,11 @@ Get the time stamp pointer for a NuDCL.
 UInt32 *(*GetDCLTimeStampPtr)(NuDCLRef dcl);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a UInt32 time stamp pointer.
 
-#### Discussion
+## Discussion
 
 Applies: Any NuDCLRef.
 

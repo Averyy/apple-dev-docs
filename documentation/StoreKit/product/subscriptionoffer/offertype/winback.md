@@ -21,7 +21,7 @@ A win-back offer for an auto-renewable subscription.
 static let winBack: Product.SubscriptionOffer.OfferType
 ```
 
-#### Discussion
+## Discussion
 
 For information about win-back offers, see [Supporting win-back offers in your app](../../../supporting-win-back-offers-in-your-app.md).
 

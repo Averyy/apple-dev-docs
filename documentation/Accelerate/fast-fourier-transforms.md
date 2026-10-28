@@ -5,7 +5,7 @@
 
 Transform vectors and matrices of temporal and spatial domain complex values to the frequency domain, and vice versa.
 
-#### Overview
+## Overview
 
 > 💡 **Tip**:  Where possible, use discrete Fourier transforms  (DFTs) instead of fast Fourier transforms (FFTs). DFTs provide a convenient API that offers greater flexibility over the number of elements the routines transform. vDSP’s DFT routines switch to FFT wherever possible.
 

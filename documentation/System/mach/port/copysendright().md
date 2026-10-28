@@ -23,7 +23,7 @@ func copySendRight() throws -> Mach.Port<Mach.SendRight>
 
 Available when `RightType` is `Mach.SendRight`.
 
-#### Discussion
+## Discussion
 
 This does not affect the makeSendCount of the receive right.
 

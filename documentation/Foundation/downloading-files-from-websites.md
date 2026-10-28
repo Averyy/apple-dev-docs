@@ -5,13 +5,13 @@
 
 Download files directly to the filesystem.
 
-#### Overview
+## Overview
 
 For network resources that are already stored as files, like images and documents, you can use download tasks to fetch these items directly to the local filesystem.
 
 > 💡 **Tip**:  You can also configure download tasks to operate while your application is suspended or terminated in the background. See [Downloading files in the background](./downloading-files-in-the-background.md) for details.
 
-##### For simple downloads, use a completion handler
+### For simple downloads, use a completion handler
 
 To download files, you create a [`URLSessionDownloadTask`](./urlsessiondownloadtask.md) from a [`URLSession`](./urlsession.md). If you don’t care about receiving progress updates or other delegate callbacks during the download, you can use a completion handler. The task calls the completion handler when the download ends, either at the end of a successful download or when downloading fails.
 
@@ -49,7 +49,7 @@ downloadTask.resume()
 
 > 💡 **Tip**:  The previous example creates the download task with [`downloadTask(with:)`](./urlsession/downloadtask%28with%29-1onj.md), which simply takes a [`URL`](./url.md) parameter. If you need to customize the request you send to the server, create the task with [`downloadTask(with:)`](./urlsession/downloadtask%28with%29-3fb7s.md) and pass in a customized [`URLRequest`](./urlrequest.md).
 
-##### To receive progress updates, use a delegate
+### To receive progress updates, use a delegate
 
 If you want to receive progress updates as the download proceeds, you must use a delegate. Instead of receiving the results in a completion handler, you receive callbacks to your implementations of methods from the [`URLSessionTaskDelegate`](./urlsessiontaskdelegate.md) and [`URLSessionDownloadDelegate`](./urlsessiondownloaddelegate.md) protocols.
 
@@ -77,7 +77,7 @@ private func startDownload(url: URL) {
 
 ```
 
-##### Receive progress updates
+### Receive progress updates
 
 Once the download starts, you receive periodic progress updates in the [`URLSessionDownloadDelegate`](./urlsessiondownloaddelegate.md) method [`urlSession(_:downloadTask:didWriteData:totalBytesWritten:totalBytesExpectedToWrite:)`](./urlsessiondownloaddelegate/urlsession%28_,downloadtask,didwritedata,totalbyteswritten,totalbytesexpectedtowrite%29.md). You can use the byte counts provided by this callback to update a progress UI in your app.
 
@@ -103,7 +103,7 @@ func urlSession(_ session: URLSession,
 
 > 💡 **Tip**:  If the only UI update you need to perform during the download is to update a [`UIProgressView`](../UIKit/uiprogressview.md), then use the task’s [`progress`](./urlsessiontask/progress.md) property instead of performing your own progress calculations. This property is an instance of [`Progress`](./progress.md) that you can assign to the [`UIProgressView`](../UIKit/uiprogressview.md) property [`observedProgress`](../UIKit/uiprogressview/observedprogress.md) when you create the task to get automatic updating of the progress view.
 
-##### Handle download completion or errors in your delegate
+### Handle download completion or errors in your delegate
 
 When you use a delegate instead of a completion handler, you handle the completion of the download by implementing [`urlSession(_:downloadTask:didFinishDownloadingTo:)`](./urlsessiondownloaddelegate/urlsession%28_,downloadtask,didfinishdownloadingto%29.md). Check the `downloadTask`‘s [`response`](./urlsessiontask/response.md) property to ensure that the server response indicates success. If so, the `location` parameter provides a local URL where the file has been stored. This location is valid only until the end of the callback. This means you *must* either read the file immediately, or move it to another location such as the app’s `Documents` directory before you return from the callback method. The following example shows how to preserve the downloaded file.
 

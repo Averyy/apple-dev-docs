@@ -21,11 +21,11 @@ func accessibilityIsAttributeSettable(_ attribute: NSAccessibility.Attribute) ->
 - (BOOL) accessibilityIsAttributeSettable:(NSAccessibilityAttributeName) attribute;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the specified attribute can be set; otherwise, [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 User interface classes must implement this method. Subclasses should invoke the superclass’s implementation, if it exists, if `attribute` is not implemented in the subclass.
 

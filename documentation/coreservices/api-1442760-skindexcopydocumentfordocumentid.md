@@ -19,11 +19,11 @@ func SKIndexCopyDocumentForDocumentID(_ inIndex: SKIndex!, _ inDocumentID: SKDoc
 SKDocumentRef SKIndexCopyDocumentForDocumentID(SKIndexRef inIndex, SKDocumentID inDocumentID);
 ```
 
-#### Return Value
+## Return Value
 
 A Search Kit document URL object.
 
-#### Discussion
+## Discussion
 
 In versions of macOS prior to OS X v10.4, the parameter type for `inDocumentID` was `CFIndex`. The parameter type in macOS 10.4 and later is `SKDocumentID`.
 

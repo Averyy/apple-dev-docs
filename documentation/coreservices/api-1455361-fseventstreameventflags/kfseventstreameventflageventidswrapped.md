@@ -14,7 +14,7 @@
 kFSEventStreamEventFlagEventIdsWrapped = 0x00000008
 ```
 
-#### Discussion
+## Discussion
 
 If kFSEventStreamEventFlagEventIdsWrapped is set, it means the 64-bit event ID counter wrapped around. As a result, previously-issued event ID's are no longer valid arguments for the sinceWhen parameter of the FSEventStreamCreate...() functions.
 

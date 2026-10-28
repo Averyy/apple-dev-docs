@@ -19,7 +19,7 @@ func obexDisconnect(_ inOptionalHeaders: UnsafeMutableRawPointer!, optionalHeade
 - (OBEXError) OBEXDisconnect:(void *) inOptionalHeaders optionalHeadersLength:(size_t) inOptionalHeadersLength eventSelector:(SEL) inSelector selectorTarget:(id) inTarget refCon:(void *) inUserRefCon;
 ```
 
-#### Discussion
+## Discussion
 
 A NULL selector or target will result in an error. After return, the data passed in will have been sent over the transport. You will receive a response to your command on your selector. Be careful not to exceed the max packet length in your optional headers, or your command will be rejected. It is recommended that you call getMaxPacketLength on your session before issuing this command so you know how much data the session’s target will accept in a single transaction.
 

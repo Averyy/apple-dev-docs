@@ -22,7 +22,7 @@ static var allowPublic: UICloudSharingController.PermissionOptions { get }
 UICloudSharingPermissionAllowPublic
 ```
 
-#### Discussion
+## Discussion
 
 To give the user the option to allow anyone to access the shared data, include the [`allowPublic`](./allowpublic.md) option when setting the [`availablePermissions`](../availablepermissions.md) property on the [`UICloudSharingController`](../../uicloudsharingcontroller.md) instance.
 

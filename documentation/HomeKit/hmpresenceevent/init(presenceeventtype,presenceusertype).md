@@ -24,7 +24,7 @@ init(presenceEventType: HMPresenceEventType, presenceUserType: HMPresenceEventUs
 - (instancetype) initWithPresenceEventType:(HMPresenceEventType) presenceEventType presenceUserType:(HMPresenceEventUserType) presenceUserType;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized presence event.
 

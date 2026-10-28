@@ -25,7 +25,7 @@ func workoutSession(_ workoutSession: HKWorkoutSession, didFailWithError error: 
 - (void) workoutSession:(HKWorkoutSession *) workoutSession didFailWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 When the state of the workout session changes due to an error, HealthKit always calls this method before calling the [`workoutSession(_:didChangeTo:from:date:)`](./workoutsession%28_,didchangeto,from,date%29.md) method.
 

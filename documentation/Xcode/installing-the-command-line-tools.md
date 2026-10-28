@@ -5,7 +5,7 @@
 
 Install command-line tools for Xcode using an installer package or the Terminal app.
 
-#### Overview
+## Overview
 
 Xcode comes bundled with command-line tools such as `clang`, `notarytool`, `xcodebuild`, and `xcrun`. If you install Xcode on your Mac, then you don’t need to install the command-line tools separately.
 
@@ -13,15 +13,15 @@ Apple offers the Command Line Tools for Xcode package as an alternative to a ful
 
 > ❗ **Important**: Commands such as `xcodebuild` and `xctrace` only ship with Xcode, and aren’t in the Command Line Tools for Xcode package. For more information, see [Xcode command-line tool reference](./xcode-command-line-tool-reference.md).
 
-##### Choose the Command Line Tools for Xcode package version
+### Choose the Command Line Tools for Xcode package version
 
 Before you install the Command Line Tools for Xcode package, review the [Xcode Releases](https://developer.apple.com/support/xcode) table to determine which version of the command-line tools you can install and use for development on your macOS computer. You can only install one version of the package on your Mac at a time.
 
-##### Download and install the Command Line Tools for Xcode package
+### Download and install the Command Line Tools for Xcode package
 
 The [More Downloads page](https://developer.apple.com/download/all/?q=command%20line%20tools) of the [Apple Developer website](https://developer.apple.com/) lists all downloadable versions of the Command Line Tools for Xcode package. To install the command-line tools, sign in with your Apple ID, and search for the package you want to use for development. Then download and install it on your Mac. For example, the following image shows the “Command Line Tools for Xcode 26.1 beta” package: ![A screenshot of the Apple Developer website, showing the More Downloads page, filtered by Command Line Tools for Xcode 26.1.](https://developer.apple.com/tutorials/images/com.apple.Xcode/installing-the-command-line-tools-01@2x.png)
 
-##### Install the Command Line Tools package in Terminal
+### Install the Command Line Tools package in Terminal
 
 You can download and install the Command Line Tools for Xcode package from the command line, using the `xcode-select` command. In Terminal, enter `xcode-select` with the `--install` option, like in the following example:
 
@@ -34,7 +34,7 @@ In the system dialog that appears, click Install and then agree to the Command L
 
 > **Note**: On a fresh install of macOS, invoking any command in Xcode or the command-line tools package (such as `git`) from the command line prompts you to download and install the Command Line Tools for Xcode package.
 
-##### Check the version of the installed Command Line Tools for Xcode package
+### Check the version of the installed Command Line Tools for Xcode package
 
 After you install the Command Line Tools for Xcode package, verify that its version matches the one you intend to use. To check the version of the Command Line Tools for Xcode package, run the `pkgutil` command with the `--pkg-info` option in Terminal:
 
@@ -55,7 +55,7 @@ install-time: 1761350460
 
 You can find the entire list of command-line tools the package includes at `/Library/Developer/CommandLineTools/usr/bin`.
 
-##### Keep the Command Line Tools for Xcode package up to date
+### Keep the Command Line Tools for Xcode package up to date
 
 To update the Command Line Tools for Xcode package, install the latest release for the current macOS. The update replaces the old version of the package.
 
@@ -63,7 +63,7 @@ To install new releases of the package, use [Software Update](https://support.ap
 
 > **Note**: After a macOS upgrade, check for new releases of the command-line tool package using Software Update or the [`softwareupdate`](x-man-page://softwareupdate) command. The version of the installed package may be incompatible with the new macOS.
 
-##### Uninstall the Command Line Tools for Xcode package
+### Uninstall the Command Line Tools for Xcode package
 
 To remove the package from your Mac, run the `sudo rm` command with the `-rf` option in Terminal:
 

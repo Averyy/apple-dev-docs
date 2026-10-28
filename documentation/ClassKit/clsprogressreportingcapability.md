@@ -23,7 +23,7 @@ class CLSProgressReportingCapability
 @interface CLSProgressReportingCapability : CLSObject
 ```
 
-#### Overview
+## Overview
 
 You use activities to report metrics about a student’s progress through the task associated with a context. Every activity automatically measures time spent performing the task, but you can provide additional information, like the completion percentage, or a final score.
 

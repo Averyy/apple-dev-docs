@@ -21,7 +21,7 @@ A symbol effect that applies the Rotate animation to symbol images.
 struct RotateSymbolEffect
 ```
 
-#### Overview
+## Overview
 
 The Rotate animation rotates parts of a symbol around a symbol-provided anchor point.
 

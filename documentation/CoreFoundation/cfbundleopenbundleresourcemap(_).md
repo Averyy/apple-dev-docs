@@ -21,11 +21,11 @@ func CFBundleOpenBundleResourceMap(_ bundle: CFBundle!) -> CFBundleRefNum
 extern CFBundleRefNum CFBundleOpenBundleResourceMap(CFBundleRef bundle);
 ```
 
-#### Return Value
+## Return Value
 
 A distinct reference number for the resource map.
 
-#### Discussion
+## Discussion
 
 Creates and makes current a single read-only resource map containing the non-localized and localized resource files. If this function is called multiple times, it opens the files multiple times and returns distinct reference numbers for each. Use [`CFBundleCloseBundleResourceMap(_:_:)`](./cfbundleclosebundleresourcemap%28_,_%29.md) to close a resource map.
 

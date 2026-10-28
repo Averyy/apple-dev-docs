@@ -25,11 +25,11 @@ func vImageBufferFill_CbCr8(_ dest: UnsafePointer<vImage_Buffer>, _ color: Unsaf
 vImage_Error vImageBufferFill_CbCr8(const vImage_Buffer *dest, const Pixel_88 color, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The following code fills the buffer with the specified color:
 

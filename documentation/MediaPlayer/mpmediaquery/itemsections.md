@@ -22,7 +22,7 @@ var itemSections: [MPMediaQuerySection]? { get }
 @property (nonatomic, readonly, nullable) NSArray<MPMediaQuerySection *> * itemSections;
 ```
 
-#### Discussion
+## Discussion
 
 This property consists of an array of [`MPMediaQuerySection`](../mpmediaquerysection.md) instances. The value of this property may be `nil` if there’s no appropriate section grouping of the media items.
 

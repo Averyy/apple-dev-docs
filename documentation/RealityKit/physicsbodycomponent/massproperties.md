@@ -20,7 +20,7 @@ The physics body’s mass properties, like inertia and center of mass.
 var massProperties: PhysicsMassProperties
 ```
 
-#### Discussion
+## Discussion
 
 By default, the mass properties value is [`default`](../physicsmassproperties/default.md), which matches the properties of a unit sphere with mass of 1 kilogram.
 

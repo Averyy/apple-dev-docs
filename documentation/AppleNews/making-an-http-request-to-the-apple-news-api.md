@@ -5,7 +5,7 @@
 
 Create the URL, set the method, and send the request.
 
-#### Overview
+## Overview
 
 You make an HTTP request to send or receive data from a server. On this page, you’ll make the HTTP request to the Apple News API to get details about the channel, including the name, corresponding website, and default section. See [`Read Channel Information`](../AppleNewsAPI/get-channels-_channelid_.md).
 
@@ -15,7 +15,7 @@ You make an HTTP request to send or receive data from a server. On this page, yo
 - Set the method to `GET`.
 - Send the request.
 
-##### Copy This Code
+### Copy This Code
 
 Open any text editor to copy this code.  Save the file as `make_an_http_request.py`.
 
@@ -62,7 +62,7 @@ class PublisherAPI:
   print(response.text)
 ```
 
-##### Run the Script
+### Run the Script
 
 Start the command prompt and change to the directory containing `make_an_http_request.py` file. Run this script to make an HTTP request to the Apple News API. This script takes Channel ID as an argument.
 
@@ -70,7 +70,7 @@ Start the command prompt and change to the directory containing `make_an_http_re
 $ python make_an_http_request.py channel_id
 ```
 
-##### Result
+### Result
 
 The script returns this error:
 

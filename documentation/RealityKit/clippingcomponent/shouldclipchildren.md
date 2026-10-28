@@ -20,7 +20,7 @@ Controls whether child entities are clipped by this component’s bounds.
 var shouldClipChildren: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When `true`, all descendant entities in the hierarchy will be clipped to this entity’s clipping bounds.
 

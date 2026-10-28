@@ -25,7 +25,7 @@ func CTRunGetStringIndices(_ run: CTRun, _ range: CFRange, _ buffer: UnsafeMutab
 extern void CTRunGetStringIndices(CTRunRef run, CFRange range, CFIndex buffer[]);
 ```
 
-#### Discussion
+## Discussion
 
 The indices are the character indices that originally spawned the glyphs that make up the run. They can be used to map the glyphs in the run back to the characters in the backing store.
 

@@ -20,7 +20,7 @@ var receivePort: Port? { get }
 @property (retain, readonly, nullable) NSPort * receivePort;
 ```
 
-#### Return Value
+## Return Value
 
 For an outgoing message, the port on which replies to the receiver will arrive. For an incoming message, the port the receiver did arrive on.
 

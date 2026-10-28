@@ -15,7 +15,7 @@ A structure that represents file transfer content in an RCS message.
 struct FileTransfer
 ```
 
-#### Overview
+## Overview
 
 When sending a file to a recipient, you use the [`RCSService`](../rcsservice.md) to call [`upload(_:)`](../rcsservice/upload%28_%29.md) and use the metadata returned by that method to create a message of this type. When receiving a file, you handle messages of this type in the [`incomingMessageNotifications`](../rcsservice/incomingmessagenotifications.md) asynchronous sequence, and use the received message to create a [`RCSService.FileDownloadRequest`](../rcsservice/filedownloadrequest.md) for use with [`download(_:)`](../rcsservice/download%28_%29.md).
 

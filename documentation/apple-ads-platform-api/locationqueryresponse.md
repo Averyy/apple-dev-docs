@@ -15,7 +15,7 @@ The paginated response envelope returned by the Query Locations endpoint.
 object LocationQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `LocationQueryResponse` object is the top-level envelope returned by [`Query for Locations`](./query-locations.md). The `result` array contains [`Location`](./location.md) objects matching the filters you supplied in the request body. Use `pagination.totalCount` together with `pagination.offset` and `pagination.pageSize` to page through large result sets.
 
@@ -23,7 +23,7 @@ Always filter by `brandId` to scope results to a specific brand. Omitting a bran
 
 You can assign only locations with `eligibility.status: ELIGIBLE` to ad group targeting. Use the `status` filter to narrow to `OPEN` locations before referencing them in a [`LocationGroup`](./locationgroup.md).
 
-##### Example
+### Example
 
 ```json
 {

@@ -12,7 +12,7 @@ Find all the automation accessories in the primary home and control their state.
 - Mac Catalyst 12.1+
 - Xcode 12.3+
 
-#### Overview
+## Overview
 
 This sample app introduces you to the accessories, services, and characteristics found in a home automation network, represented by instances of [`HMAccessory`](./hmaccessory.md), [`HMService`](./hmservice.md), and [`HMCharacteristic`](./hmcharacteristic.md), respectively. The sample displays all the properties and relationships it finds using a simple set of hierarchical views inside a split view controller.
 
@@ -22,7 +22,7 @@ This view hierarchy is useful for learning how HomeKit structures device data, w
 
 In a real app that you publish on the App Store, you would provide a user experience more like the one found in [Configuring a Home Automation Device](./configuring-a-home-automation-device.md). For example, you would focus on the actions a user can take and hide the underlying technical details. For more tips about presenting HomeKit data to users, see the “Adjust the Interface for a Published App” section at the end of this article.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To be able to use HomeKit, you enable the HomeKit capability and include the [`NSHomeKitUsageDescription`](../BundleResources/information-property-list/nshomekitusagedescription.md) key in your app’s `Info.plist` file, as described in [Enabling HomeKit in Your App](./enabling-homekit-in-your-app.md). In this sample app, the capability is already enabled and a usage description is provided.
 
@@ -30,7 +30,7 @@ To be able to build an app that has the HomeKit capability, you must set a valid
 
 The sample app works with both real devices and simulated ones. If you don’t have any real home automation accessories, or if you want to try an accessory type that you don’t have, use the HomeKit Accessory Simulator (HAS), as described in [Testing Your App with the HomeKit Accessory Simulator](./testing-your-app-with-the-homekit-accessory-simulator.md). You can use a mix of simulated devices and real ones.
 
-##### Group accessories by room
+### Group accessories by room
 
 You always use an instance of [`HMHomeManager`](./hmhomemanager.md) as the root HomeKit object, following the pattern described in [Configuring a Home Automation Device](./configuring-a-home-automation-device.md). As in that sample, this app finds the primary home, allowing the user to create a new one if none exists. In other respects, this sample leaves home management to the Home app.
 
@@ -52,7 +52,7 @@ rooms = ([home.roomForEntireHome()] + home.rooms)
     .sorted { $0.name < $1.name }
 ```
 
-##### Group accessories by category
+### Group accessories by category
 
 Alternatively, you can display accessories sorted by category. Accessories have a [`category`](./hmaccessory/category.md) property, which is an instance of the [`HMAccessoryCategory`](./hmaccessorycategory.md) class that indicates what the device is, like a door or a light. You can derive a name from this information, and use that to group accessories:
 
@@ -88,7 +88,7 @@ protocol AccessoryGroup {
 extension HMRoom: AccessoryGroup {}
 ```
 
-##### Pick a grouping to display
+### Pick a grouping to display
 
 To enable the user to select between displaying accessories grouped by room or category, use a segmented controller in the home view’s toolbar to set the `groupKey` property:
 
@@ -113,7 +113,7 @@ var groupKey = GroupKey.room {
 
 You use the table view’s data source and delegate methods to prepare table cells based on the current grouping of accessories, as specified by the `groupKey` property.
 
-##### Add new accessories
+### Add new accessories
 
 To enable the pairing of new accessories, the UI presents a `+` button in the home view that the user taps to initiate a search for accessories on the local network. The button’s tap handler calls the home’s [`addAndSetupAccessories(completionHandler:)`](./hmhome/addandsetupaccessories%28completionhandler%29.md) method, which presents the standard HomeKit UI for locating and adding new accessories to a given home:
 
@@ -130,7 +130,7 @@ home?.addAndSetupAccessories { error in
 
 On success, the completion handler refreshes the app’s copy of the HomeKit data and redraws the display.
 
-##### Show accessory, service, and characteristic details
+### Show accessory, service, and characteristic details
 
 The sample app’s split view detail controller shows an `AccessoryView` with information about a single accessory. This includes a list of accessory properties, like the accessory’s name and manufacturer. It also includes services, like a door opener or a light bulb, that the accessory offers. Optionally, for an accessory that’s a bridge, which is an accessory that serves as a link to accessories on a non-HomeKit network, the view also shows a list of the accessories to which the bridge provides access.
 
@@ -147,7 +147,7 @@ When the user taps a service in the accessory view, you push a `ServiceView` ins
 
 When the user taps a characteristic in the service view, you push a `CharacteristicView` instance onto the navigation stack to provide details about that specific characteristic, like its name and the content of its associated value.
 
-##### Read characteristic values before using them
+### Read characteristic values before using them
 
 A characteristic is primarily a container for its [`value`](./hmcharacteristic/value.md) property that represents an input to or output from a service. Other properties of the characteristic tell you about that value, like if it’s a Boolean, number, string, or something else, what units apply to it, whether you can read or write it, and so on.
 
@@ -168,7 +168,7 @@ You can access the [`value`](./hmcharacteristic/value.md) property at any time, 
 
 The characteristic view, which also displays the characteristic value, doesn’t perform an explicit read. The user can only get to the characteristic view by tapping on a service view’s characteristic cell, which has recently refreshed the corresponding value. Both views rely on accessory delegate callbacks to track any further changes in the value, as described in the next section.
 
-##### Keep home data up to date
+### Keep home data up to date
 
 HomeKit gives apps access to a shared home automation network. Apps other than yours, including the Home app, can change service names, characteristic values, the layout of a home, and other attributes. Accessories can also drive changes independently. For example, a garage door opener might have an obstruction sensor with output that varies based on physical changes in the environment. To keep your app’s local data caches and user interfaces up to date with outside changes, your app adopts HomeKit delegate protocols.
 
@@ -183,7 +183,7 @@ func home(_ home: HMHome, didAdd room: HMRoom) {
 }
 ```
 
-##### Keep accessory data up to date
+### Keep accessory data up to date
 
 Accessory changes, reported by the  [`HMAccessoryDelegate`](./hmaccessorydelegate.md) protocol, typically don’t warrant completely redrawing the entire interface, but can nonetheless affect multiple view controllers. However, an accessory can have only a single delegate.
 
@@ -226,7 +226,7 @@ func accessory(_ accessory: HMAccessory, service: HMService, didUpdateValueFor c
 }
 ```
 
-##### Register for characteristic value update notifications
+### Register for characteristic value update notifications
 
 Most delegate callbacks work by default. However, your app only receives callbacks for characteristic value changes—the delegate method shown at the end of the previous section—when it explicitly enables them. The sample app does this by calling the service’s `enableNotifications` method whenever the service view’s `service` property changes.
 
@@ -262,7 +262,7 @@ func enableNotifications(_ enabled: Bool) {
 
 The sample app also deactivates notifications for characteristics that are no longer needed. The `willSet` property observer, as shown in the code above, calls the same enabling method, but with `false` as the input, for the service property value as it exists before the update.
 
-##### Adjust the interface for a published app
+### Adjust the interface for a published app
 
 For a HomeKit app that you want to publish in the App Store, you design a different user interface than the one in this sample app.
 

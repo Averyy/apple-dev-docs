@@ -20,7 +20,7 @@ var attributedTitle: NSAttributedString? { get set }
 @property (copy, nullable) NSAttributedString * attributedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The attributed string is not archived in the old nib format.
 

@@ -19,7 +19,7 @@ object RefundHistoryResponse
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 The [`Get Refund History`](./get-refund-history.md) endpoint returns this response.
 

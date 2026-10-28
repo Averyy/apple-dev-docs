@@ -5,7 +5,7 @@
 
 Synchronize metadata references to media tracks for particular media time periods with timed metadata.
 
-#### Overview
+## Overview
 
 A timed metadata track synchronizes metadata references to media tracks for particular media time periods through the track reference, edit, and edit list structures. It is a specialization of the track structure which uses the base media information atom of type `‘minf’`, and a track handler type value set to `‘meta’`. The base media information atom contains the generic media header atom of type `‘gmhd’`.
 

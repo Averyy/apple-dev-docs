@@ -18,7 +18,7 @@ An expectation that a specific key-value observing (KVO) condition fulfills.
 final class XCTKeyPathExpectation<T, V> where T : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an instance of this class to asynchronously wait for changes to a property you specify by key path for a given object. When the value of the property changes, the expectation compares the new value using a predicate or expected value you provide.
 

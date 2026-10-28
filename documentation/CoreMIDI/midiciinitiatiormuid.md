@@ -25,7 +25,7 @@ typealias MIDICIInitiatiorMUID = NSNumber
 typedef NSNumber * MIDICIInitiatiorMUID;
 ```
 
-#### Discussion
+## Discussion
 
 As required by the MIDI-CI specification, this value is a randomly assigned 28-bit integer.
 

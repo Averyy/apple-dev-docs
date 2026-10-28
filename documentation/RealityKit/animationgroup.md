@@ -20,14 +20,14 @@ A collection of animations that play simultaneously.
 struct AnimationGroup
 ```
 
-#### Overview
+## Overview
 
 This structure concurrently starts the animations it contains. Use a group to:
 
 - Animate more than one property at once.
 - Animate the same property at different times.
 
-##### Animate multiple properties concurrently
+### Animate multiple properties concurrently
 
 For each animatable property your animation needs to control, create a group and add an animation to the array argument of the initializer. The following listing begins coding an animation group that colorizes 3D numbers that count down over a 4-second duration.
 
@@ -41,7 +41,7 @@ let anim2 = SampledAnimation<Float>(frames: frames, name: "count down",
 let group = AnimationGroup(group: [anim1, anim2], name: "group")
 ```
 
-##### Create a sequence for the same animation
+### Create a sequence for the same animation
 
 You can play the same animation at different times by grouping multiple [`AnimationDefinition`](./animationdefinition.md) objects that refer to the same animated property. To disperse their playback at runtime, give each definition a unique [`delay`](./animationdefinition/delay.md).
 

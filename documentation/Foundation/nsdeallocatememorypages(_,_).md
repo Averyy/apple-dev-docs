@@ -25,7 +25,7 @@ func NSDeallocateMemoryPages(_ ptr: UnsafeMutableRawPointer, _ bytes: Int)
 extern void NSDeallocateMemoryPages(void *ptr, NSUInteger bytes);
 ```
 
-#### Discussion
+## Discussion
 
 This function deallocates memory that was allocated with `NSAllocateMemoryPages`.
 

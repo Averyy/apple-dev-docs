@@ -23,7 +23,7 @@ var preferredPrimaryColumnWidth: CGFloat { get set }
 @property (nonatomic, assign) CGFloat preferredPrimaryColumnWidth;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify your preferred width for the primary view controller’s view. The default value of this property is [`automaticDimension`](./automaticdimension.md). If you set this property to a value different from [`automaticDimension`](./automaticdimension.md), that value takes precedence over [`preferredPrimaryColumnWidthFraction`](./preferredprimarycolumnwidthfraction.md).
 

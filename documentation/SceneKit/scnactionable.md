@@ -25,7 +25,7 @@ protocol SCNActionable : NSObjectProtocol
 @protocol SCNActionable <NSObject>
 ```
 
-#### Overview
+## Overview
 
 [`SCNAction`](./scnaction.md) objects represent reusable, animated actions that can be performed on nodes, such as moving or rotating them. You use an [`SCNAction`](./scnaction.md) class method to create an action and then use methods in the [`SCNActionable`](./scnactionable.md) protocol to run the action on a node. This protocol also defines methods for checking whether a node has any currently running actions and, if so, canceling them.
 

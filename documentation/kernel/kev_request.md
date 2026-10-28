@@ -14,7 +14,7 @@ struct kev_request {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure is used with the SIOCSKEVFILT and SIOCGKEVFILT to set and get the control filter setting for a kernel control socket.
 

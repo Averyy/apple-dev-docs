@@ -26,11 +26,11 @@ func clipped(antialiased: Bool = false) -> some View
 
 - [Fitting images into available space](../fitting-images-into-available-space.md)
 
-#### Return Value
+## Return Value
 
 A view that clips this view to its bounding frame.
 
-#### Discussion
+## Discussion
 
 Use the `clipped(antialiased:)` modifier to hide any content that extends beyond the layout bounds of the shape.
 

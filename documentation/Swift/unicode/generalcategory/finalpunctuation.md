@@ -21,7 +21,7 @@ A final quotation mark.
 case finalPunctuation
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Final_Punctuation` (abbreviated `Pf`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

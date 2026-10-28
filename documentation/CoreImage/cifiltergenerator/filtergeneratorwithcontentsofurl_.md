@@ -15,7 +15,7 @@ Creates and returns a filter generator object and initializes it with the conten
 + (CIFilterGenerator *) filterGeneratorWithContentsOfURL:(NSURL *) aURL;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIFilterGenerator`](../cifiltergenerator.md) object;  returns `nil` if the file can’t be read.
 

@@ -17,7 +17,7 @@ The SwiftUI view that renders the streamed content.
 @MainActor var immersiveScene: Self.Content { get }
 ```
 
-#### Discussion
+## Discussion
 
 This view will be displayed in an immersive space by the extension. Typically this will be a `RealityView` that renders the 3D streamed content.
 

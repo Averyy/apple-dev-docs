@@ -25,7 +25,7 @@ static var atomic: FileWrapper.WritingOptions { get }
 NSFileWrapperWritingAtomic
 ```
 
-#### Discussion
+## Discussion
 
 You can use this option to ensure that, when overwriting a file package, the overwriting either completely succeeds or completely fails, with no possibility of leaving the file package in an inconsistent state. Because this option causes additional I/O, you shouldn’t use it unnecessarily. For example, don’t use this option in an override of `-[NSDocument` [`write(to:ofType:)`](../../../AppKit/nsdocument/write%28to,oftype%29.md)`]`, because `NSDocument` safe-saving is already done atomically.
 

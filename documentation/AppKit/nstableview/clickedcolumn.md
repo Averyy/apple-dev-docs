@@ -19,7 +19,7 @@ var clickedColumn: Int { get }
 @property (readonly) NSInteger clickedColumn;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the index in the [`tableColumns`](./tablecolumns.md) array of the column that the user clicked. The value is `-1` when the user clicks in an area of the table view that is not occupied by columns or when the user clicks a row that is a group separator.
 

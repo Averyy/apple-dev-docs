@@ -61,11 +61,11 @@ string Campaign.SystemStatusReasons
 - `AUTOMATED_KEYWORDS_REQUIRED_AD_GROUP_MISSING`: Ad groups. An ad group required for automated keyword targeting is missing.
 - `AUTOMATED_KEYWORDS_REQUIRED_AD_GROUP_NOT_RUNNING`: Ad groups. The ad group required for automated keyword targeting is not running.
 
-#### Discussion
+## Discussion
 
 These reasons span budget, billing, app eligibility, and Sapin Law conditions, so resolving `NOT_RUNNING` often means checking more than just the campaign’s own settings.
 
-##### Example
+### Example
 
 ```json
 {

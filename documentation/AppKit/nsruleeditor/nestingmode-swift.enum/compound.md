@@ -19,7 +19,7 @@ case compound
 NSRuleEditorNestingModeCompound
 ```
 
-#### Discussion
+## Discussion
 
 This is the default.
 

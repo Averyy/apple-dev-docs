@@ -25,7 +25,7 @@ protocol MLCustomModel
 @protocol MLCustomModel
 ```
 
-#### Overview
+## Overview
 
 To integrate your custom model with Core ML, adopt the [`MLCustomModel`](./mlcustommodel.md) protocol in the implementation of your custom model. If you use a Swift class for your custom implementation, make it accessible to Core ML by using the `@objc(`*name*`)` attribute.
 

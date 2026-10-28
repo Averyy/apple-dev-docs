@@ -16,11 +16,11 @@ Opens a connection to a device that is already open.
 IOReturn (*openWithSessionRef)(void *self, IOFireWireSessionRef sessionRef);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success.
 
-#### Discussion
+## Discussion
 
 Sometimes it is desirable to open multiple user clients on a device. In the case of FireWire sometimes we wish to have both the FireWire User Client and the SBP2 User Client open at the same time.
 

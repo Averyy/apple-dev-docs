@@ -19,7 +19,7 @@ var distribution: NSStackView.Distribution { get set }
 @property NSStackViewDistribution distribution;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `gravityAreas`.
 

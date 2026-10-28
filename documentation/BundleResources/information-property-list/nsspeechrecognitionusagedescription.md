@@ -17,7 +17,7 @@ A message that tells people why the app is requesting to send user data to Apple
 - **Name**: `NSSpeechRecognitionUsageDescription` (Privacy - Speech Recognition Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Include this key if your app uses the Speech framework. This applies regardless of whether you set [`requiresOnDeviceRecognition`](../../Speech/sfspeechrecognitionrequest/requiresondevicerecognition.md) to `true` or `false`. If this key isn’t present, your app crashes when it calls [`requestAuthorization(_:)`](../../Speech/sfspeechrecognizer/requestauthorization%28_%29.md).
 

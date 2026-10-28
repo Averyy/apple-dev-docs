@@ -29,7 +29,7 @@ nonisolated
 func fill<S>(_ content: S, style: FillStyle = FillStyle()) -> some View where S : ShapeStyle
 ```
 
-#### Return Value
+## Return Value
 
 A shape filled with the color or gradient you supply.
 

@@ -25,7 +25,7 @@ var BNNSDataLayout5DFirstMajor: BNNSDataLayout { get }
 BNNSDataLayout5DFirstMajor
 ```
 
-#### Discussion
+## Discussion
 
 The value `(i, j, k, l, m)` is at index:
 

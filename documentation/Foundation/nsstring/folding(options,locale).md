@@ -25,11 +25,11 @@ func folding(options: NSString.CompareOptions = [], locale: Locale?) -> String
 - (NSString *) stringByFoldingWithOptions:(NSStringCompareOptions) options locale:(NSLocale *) locale;
 ```
 
-#### Return Value
+## Return Value
 
 A string created by performing a character folding operation with the specified options and locale.
 
-#### Discussion
+## Discussion
 
 When working with text—especially text in Latin script—it’s often useful to compare strings in such a way that ignores differences in case (uppercase or lowercase), width (full-width or half-width), and/or diacritics (accents and other marks).
 

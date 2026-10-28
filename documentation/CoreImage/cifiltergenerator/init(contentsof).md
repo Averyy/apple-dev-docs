@@ -19,7 +19,7 @@ init?(contentsOf aURL: URL)
 - (id) initWithContentsOfURL:(NSURL *) aURL;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized [`CIFilterGenerator`](../cifiltergenerator.md) object. Returns `nil` if the file can’t be read.
 

@@ -16,7 +16,7 @@
 typedef struct SCSI_Capacity_Data { ... } SCSI_Capacity_Data;
 ```
 
-#### Overview
+## Overview
 
 Capacity return structure for READ CAPACITY 10 command.
 

@@ -15,7 +15,7 @@ Creates a new tap using the provided description.
 func makeProcessTap(description: CATapDescription) throws -> AudioHardwareTap?
 ```
 
-#### Return Value
+## Return Value
 
 An AudioHardwareTap representing the newly created tap.
 

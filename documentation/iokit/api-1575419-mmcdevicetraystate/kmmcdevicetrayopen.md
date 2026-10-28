@@ -14,7 +14,7 @@
 kMMCDeviceTrayOpen = 1
 ```
 
-#### Discussion
+## Discussion
 
 This value means the tray is open.
 

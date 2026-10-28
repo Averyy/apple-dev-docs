@@ -5,7 +5,7 @@
 
 Communicate with hardware using Universal MIDI Packets.
 
-#### Overview
+## Overview
 
 MIDI drivers own and control physical MIDI devices, which include hardware such as USB interfaces, MIDI keyboards, and so on. A MIDI device may have multiple logically distinct subcomponents. For example, one device may contain a MIDI synthesizer and a pair of MIDI ports, both addressable over a USB port. Each element of a device is a MIDI entity.
 

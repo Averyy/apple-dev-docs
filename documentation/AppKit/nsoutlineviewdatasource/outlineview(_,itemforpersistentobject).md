@@ -20,15 +20,15 @@ optional func outlineView(_ outlineView: NSOutlineView, itemForPersistentObject 
 - (id) outlineView:(NSOutlineView *) outlineView itemForPersistentObject:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 The unarchived item corresponding to `object`. If the item is an archived object, this method may return the object.
 
-#### Discussion
+## Discussion
 
 When the outline view is restoring the saved expanded items, this method is called for each expanded item, to translate the archived object to an outline view item.
 
-##### Special Considerations
+### Special Considerations
 
 You must implement this method if you are automatically saving expanded items (that is, if [`autosaveExpandedItems`](../nsoutlineview/autosaveexpandeditems.md) returns [`true`](../../Swift/true.md)).
 

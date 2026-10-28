@@ -15,11 +15,11 @@ The request body for creating a new Keyword object.
 object KeywordCreate
 ```
 
-#### Discussion
+## Discussion
 
 The `KeywordCreate` object is the request payload for adding a keyword to an ad group via `POST /v1/keywords` ([`Create a Keyword`](./post-keywords.md)), after the ad group has already been created. The `AdGroupCreate` doesn’t support keywords inline. See the properties below for field-level requirements, mutability, and defaults.
 
-##### Example
+### Example
 
 ```json
 {

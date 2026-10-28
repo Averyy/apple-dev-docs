@@ -25,7 +25,7 @@ case paragraphSpacing
 kCTParagraphStyleSpecifierParagraphSpacing
 ```
 
-#### Discussion
+## Discussion
 
 This value is always nonnegative and is determined by adding the previous paragraph’s [`CTParagraphStyleSpecifier.paragraphSpacing`](./paragraphspacing.md) setting and the current paragraph’s [`CTParagraphStyleSpecifier.paragraphSpacingBefore`](./paragraphspacingbefore.md) setting. Type: [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md). Default value: `0.0`. Affects: [`CTFramesetter`](../ctframesetter.md).
 

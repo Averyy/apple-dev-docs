@@ -25,7 +25,7 @@ class EnergyFormatter
 @interface NSEnergyFormatter : NSFormatter
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  As of iOS 10, macOS 10.12, tvOS 10, and watchOS 3, Foundation provides the [`MeasurementFormatter`](./measurementformatter.md) class, which can be used to represent quantities of [`UnitEnergy`](./unitenergy.md) to provide equivalent functionality to [`EnergyFormatter`](./energyformatter.md). You are encouraged to transition to these new Foundation Units and Measurements APIs whenever possible.
 

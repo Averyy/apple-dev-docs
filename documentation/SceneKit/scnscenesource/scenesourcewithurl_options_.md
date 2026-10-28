@@ -21,11 +21,11 @@ Creates a scene source that reads the scene graph from a specified file.
 + (instancetype) sceneSourceWithURL:(NSURL *) url options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new, initialized scene source object, or `nil` if initialization was not successful.
 
-#### Discussion
+## Discussion
 
 If you have the contents of a scene file but not the file itself (for example, if your app downloads scene files from the network), use the [`sceneSourceWithData:options:`](./scenesourcewithdata_options_.md) method instead.
 

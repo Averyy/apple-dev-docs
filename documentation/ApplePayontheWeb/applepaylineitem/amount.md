@@ -16,7 +16,7 @@ A required value that’s the monetary amount of the line item.
 DOMString amount;
 ```
 
-#### Discussion
+## Discussion
 
 This number must follow the regular expression `-?[0-9]+(\.[0-9][0-9])?`. The amount is required and can’t be empty.
 

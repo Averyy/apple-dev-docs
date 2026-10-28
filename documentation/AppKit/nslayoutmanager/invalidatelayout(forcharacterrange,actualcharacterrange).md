@@ -19,7 +19,7 @@ func invalidateLayout(forCharacterRange charRange: NSRange, actualCharacterRange
 - (void) invalidateLayoutForCharacterRange:(NSRange) charRange actualCharacterRange:(NSRangePointer) actualCharRange;
 ```
 
-#### Discussion
+## Discussion
 
 This method has the same effect as [`invalidateLayout(forCharacterRange:isSoft:actualCharacterRange:)`](./invalidatelayout%28forcharacterrange,issoft,actualcharacterrange%29.md) with `flag` set to [`false`](../../Swift/false.md).
 

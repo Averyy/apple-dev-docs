@@ -21,13 +21,13 @@ object Condition
 - [Giving the Article a Dark Color Scheme](../AppleNews/giving-the-article-a-dark-color-scheme.md)
 - [Supporting Dark Mode for Your Article](../AppleNews/supporting-dark-mode-for-your-article.md)
 
-#### Discussion
+## Discussion
 
 Use the `Condition` object to define the condition under which the associated properties are applied.
 
 You can use this object in [`ConditionalComponent`](./conditionalcomponent.md), [`ConditionalContainer`](./conditionalcontainer.md), [`ConditionalSection`](./conditionalsection.md), [`ConditionalText`](./conditionaltext.md), [`ConditionalComponentLayout`](./conditionalcomponentlayout.md), [`ConditionalComponentStyle`](./conditionalcomponentstyle.md), [`ConditionalComponentTextStyle`](./conditionalcomponenttextstyle.md), [`ConditionalTextStyle`](./conditionaltextstyle.md), [`ConditionalDocumentStyle`](./conditionaldocumentstyle.md), [`ConditionalDivider`](./conditionaldivider.md), and [`ConditionalAutoPlacement`](./conditionalautoplacement.md).
 
-##### Example
+### Example
 
 ```json
 {

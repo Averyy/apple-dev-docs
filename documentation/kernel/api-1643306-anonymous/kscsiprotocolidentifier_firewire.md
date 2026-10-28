@@ -13,7 +13,7 @@
 kSCSIProtocolIdentifier_FireWire = 3
 ```
 
-#### Discussion
+## Discussion
 
 FireWire (IEEE-1394) Protocol Identifier.
 

@@ -25,7 +25,7 @@ func removeCharacters(in aString: String)
 - (void) removeCharactersInString:(NSString *) aString;
 ```
 
-#### Discussion
+## Discussion
 
 This method has no effect if `aString` is empty.
 

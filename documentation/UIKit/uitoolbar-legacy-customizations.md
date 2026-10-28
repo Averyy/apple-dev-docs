@@ -5,7 +5,7 @@
 
 Customize appearance information directly on the toolbar object.
 
-#### Overview
+## Overview
 
 In iOS 13 and later, customize your toolbar using the [`standardAppearance`](./uitoolbar/standardappearance.md) and [`compactAppearance`](./uitoolbar/compactappearance.md) properties. You may continue to use these legacy accessors to customize your toolbar’s appearance directly, but you must update the appearance for different bar configurations yourself.
 

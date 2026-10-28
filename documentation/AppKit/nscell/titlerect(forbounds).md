@@ -19,11 +19,11 @@ func titleRect(forBounds rect: NSRect) -> NSRect
 - (NSRect) titleRectForBounds:(NSRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle in which the receiver draws its title text.
 
-#### Discussion
+## Discussion
 
 If the receiver is a text-type cell, this method resizes the drawing rectangle for the title (`theRect`) inward by a small offset to accommodate the cell border. If the receiver is not a text-type cell, the method does nothing.
 

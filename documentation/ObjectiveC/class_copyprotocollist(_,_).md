@@ -25,7 +25,7 @@ func class_copyProtocolList(_ cls: AnyClass?, _ outCount: UnsafeMutablePointer<U
 extern Protocol **class_copyProtocolList(Class cls, unsigned int *outCount);
 ```
 
-#### Return Value
+## Return Value
 
 An array of pointers of type `Protocol*` describing the protocols adopted by the class. Any protocols adopted by superclasses or other protocols are not included. The array contains `*outCount` pointers followed by a `NULL` terminator. You must free the array with `free()`.
 

@@ -25,11 +25,11 @@ func sparse_commit(_ A: UnsafeMutableRawPointer!) -> sparse_status
 sparse_status sparse_commit(void *A);
 ```
 
-#### Return Value
+## Return Value
 
 On success, [`SPARSE_SUCCESS`](./sparse_success.md), and `A` has all values inserted into the internal sparse representation.
 
-#### Discussion
+## Discussion
 
 Values inserted into a matrix object may not go directly into the sparse representation until needed, for example when a computation occurs. In some cases is may be beneficial to the caller to know when the cost of the update will occur. This routine allows the caller to trigger adding values to the internal sparse format.
 

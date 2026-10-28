@@ -23,7 +23,7 @@ var systemPrefersReducedResourceUsage: Bool { get }
 @property (nonatomic, readonly) BOOL systemPrefersReducedResourceUsage;
 ```
 
-#### Discussion
+## Discussion
 
 When this value is `YES`, the system has entered a state where it would prefer apps to scale back resource-intensive work.
 

@@ -20,11 +20,11 @@ class func element(withName name: String, uri URI: String) -> Any
 + (id) elementWithName:(NSString *) name URI:(NSString *) URI;
 ```
 
-#### Return Value
+## Return Value
 
 An [`XMLElement`](../xmlelement.md) object or `nil` if the object cannot be created.
 
-#### Discussion
+## Discussion
 
 The equivalent XML markup is `<`*URI*`:``name``>``</`*URI*`:``name``>`.
 

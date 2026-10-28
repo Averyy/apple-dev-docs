@@ -10,7 +10,7 @@ virtual void incrementErrors(
  boolisWrite);
 ```
 
-#### Overview
+## Overview
 
 Update the total error count -- used for statistics.
 

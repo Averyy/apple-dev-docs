@@ -19,7 +19,7 @@ enum CaseFormat
 enum FSVolumeCaseFormat : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 A case-sensitive volume is a volume that treats upper and lower case characters in file and directory names as being distinct from each other. For example, `FILE.TXT` and `file.TXT` are different names in a case-sensitive volume, and the same name in a case-insensitive volume.
 

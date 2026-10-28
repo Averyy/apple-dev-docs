@@ -18,7 +18,7 @@ Creates a request for translating a single attributed string.
 init(sourceText: AttributedString, clientIdentifier: String? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 The plain text is automatically extracted and stored in [`sourceText`](./sourcetext.md).
 

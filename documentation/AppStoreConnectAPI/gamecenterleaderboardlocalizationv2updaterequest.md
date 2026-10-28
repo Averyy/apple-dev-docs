@@ -15,7 +15,7 @@ The request body you use to update a Game Center leaderboard localization v2.
 object GameCenterLeaderboardLocalizationV2UpdateRequest
 ```
 
-#### Overview
+## Overview
 
 - data:
 

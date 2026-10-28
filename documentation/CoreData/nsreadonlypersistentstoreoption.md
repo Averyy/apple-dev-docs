@@ -25,7 +25,7 @@ let NSReadOnlyPersistentStoreOption: String
 extern NSString * const NSReadOnlyPersistentStoreOption;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../Swift/false.md).
 

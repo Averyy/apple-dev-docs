@@ -25,7 +25,7 @@ var renderingAlgorithm: AVAudio3DMixingRenderingAlgorithm { get set }
 @property (nonatomic) AVAudio3DMixingRenderingAlgorithm renderingAlgorithm;
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the current output format of the [`AVAudioEnvironmentNode`](../avaudioenvironmentnode.md) instance, the system may only support a subset of the rendering algorithms. You can retrieve an array of valid rendering algorithms by calling the [`applicableRenderingAlgorithms`](../avaudioenvironmentnode/applicablerenderingalgorithms.md) function of the [`AVAudioEnvironmentNode`](../avaudioenvironmentnode.md) instance.
 

@@ -24,11 +24,11 @@ func MusicEventIteratorGetEventInfo(_ inIterator: MusicEventIterator, _ outTimeS
 extern OSStatus MusicEventIteratorGetEventInfo(MusicEventIterator inIterator, MusicTimeStamp *outTimeStamp, MusicEventType *outEventType, const void **outEventData, UInt32 *outEventDataSize);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 Pass `NULL` for any output parameter whose information you do not need.
 

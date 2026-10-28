@@ -25,7 +25,7 @@ class Operation
 @interface NSOperation : NSObject
 ```
 
-#### Overview
+## Overview
 
 Because the [`Operation`](./operation.md) class is an abstract class, you do not use it directly but instead subclass or use one of the system-defined subclasses ([`NSInvocationOperation`](./nsinvocationoperation.md) or [`BlockOperation`](./blockoperation.md)) to perform the actual task. Despite being abstract, the base implementation of [`Operation`](./operation.md) does include significant logic to coordinate the safe execution of your task. The presence of this built-in logic allows you to focus on the actual implementation of your task, rather than on the glue code needed to ensure it works correctly with other system objects.
 
@@ -33,13 +33,13 @@ An operation object is a single-shot object—that is, it executes its task once
 
 If you do not want to use an operation queue, you can execute an operation yourself by calling its [`start()`](./operation/start%28%29.md) method directly from your code. Executing operations manually does put more of a burden on your code, because starting an operation that is not in the ready state triggers an exception. The [`isReady`](./operation/isready.md) property reports on the operation’s readiness.
 
-##### Operation Dependencies
+### Operation Dependencies
 
 Dependencies are a convenient way to execute operations in a specific order. You can add and remove dependencies for an operation using the [`addDependency(_:)`](./operation/adddependency%28_%29.md) and [`removeDependency(_:)`](./operation/removedependency%28_%29.md) methods. By default, an operation object that has dependencies is not considered ready until all of its dependent operation objects have finished executing. Once the last dependent operation finishes, however, the operation object becomes ready and able to execute.
 
 The dependencies supported by `NSOperation` make no distinction about whether a dependent operation finished successfully or unsuccessfully. (In other words, canceling an operation similarly marks it as finished.) It is up to you to determine whether an operation with dependencies should proceed in cases where its dependent operations were cancelled or did not complete their task successfully. This may require you to incorporate some additional error tracking capabilities into your operation objects.
 
-##### KVO-Compliant Properties
+### KVO-Compliant Properties
 
 The `NSOperation` class is key-value coding (KVC) and key-value observing (KVO) compliant for several of its properties. As needed, you can observe these properties to control other parts of your application. To observe the properties, use the following key paths:
 
@@ -56,13 +56,13 @@ Although you can attach observers to these properties, you should not use Cocoa 
 
 If you provide custom implementations for any of the preceding properties, your implementations must maintain KVC and KVO compliance. If you define additional properties for your `NSOperation` objects, it is recommended that you make those properties KVC and KVO compliant as well. For information on how to support key-value coding, see [Key-Value Coding Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueCoding/index.html#//apple_ref/doc/uid/10000107i). For information on how to support key-value observing, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 
-##### Multicore Considerations
+### Multicore Considerations
 
 The `NSOperation` class is itself multicore aware. It is therefore safe to call the methods of an `NSOperation` object from multiple threads without creating additional locks to synchronize access to the object. This behavior is necessary because an operation typically runs in a separate thread from the one that created and is monitoring it.
 
 When you subclass `NSOperation`, you must make sure that any overridden methods remain safe to call from multiple threads. If you implement custom methods in your subclass, such as custom data accessors, you must also make sure those methods are thread-safe. Thus, access to any data variables in the operation must be synchronized to prevent potential data corruption. For more information about synchronization, see [Threading Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Multithreading/Introduction/Introduction.html#//apple_ref/doc/uid/10000057i).
 
-##### Asynchronous Versus Synchronous Operations
+### Asynchronous Versus Synchronous Operations
 
 If you plan on executing an operation object manually, instead of adding it to a queue, you can design your operation to execute in a synchronous or asynchronous manner. Operation objects are synchronous by default. In a synchronous operation, the operation object does not create a separate thread on which to run its task. When you call the [`start()`](./operation/start%28%29.md) method of a synchronous operation directly from your code, the operation executes immediately in the current thread. By the time the [`start()`](./operation/start%28%29.md) method of such an object returns control to the caller, the task itself is complete.
 
@@ -74,11 +74,11 @@ When you add an operation to an operation queue, the queue ignores the value of 
 
 For information on how to define both synchronous and asynchronous operations, see the subclassing notes.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 The `NSOperation` class provides the basic logic to track the execution state of your operation but otherwise must be subclassed to do any real work. How you create your subclass depends on whether your operation is designed to execute concurrently or non-concurrently.
 
-###### Methods to Override
+#### Methods to Override
 
 For non-concurrent operations, you typically override only one method:
 
@@ -103,7 +103,7 @@ For additional information and guidance on how to define concurrent operations, 
 
 Even for concurrent operations, there should be little need to override methods other than those described above. However, if you customize the dependency features of operations, you might have to override additional methods and provide additional KVO notifications. In the case of dependencies, this would likely only require providing notifications for the `isReady` key path. Because the [`dependencies`](./operation/dependencies.md) property contains the list of dependent operations, changes to it are already handled by the default `NSOperation` class.
 
-###### Maintaining Operation Object States
+#### Maintaining Operation Object States
 
 Operation objects maintain state information internally to determine when it is safe to execute and also to notify external clients of the progression through the operation’s life cycle. Your custom subclasses maintains this state information to ensure the correct execution of operations in your code. The key paths associated with an operation’s states are:
 
@@ -123,7 +123,7 @@ If you replace the [`start()`](./operation/start%28%29.md) method or your operat
 
 - ****`isCancelled`****: The `isCancelled` key path lets clients know that the cancellation of an operation was requested. Support for cancellation is voluntary but encouraged and your own code should not have to send KVO notifications for this key path. The handling of cancellation notices in an operation is described in more detail in [Responding to the Cancel Command](./operation.md#Responding-to-the-Cancel-Command).
 
-###### Responding to the Cancel Command
+#### Responding to the Cancel Command
 
 Once you add an operation to a queue, the operation is out of your hands. The queue takes over and handles the scheduling of that task. However, if you decide later that you do not want to execute the operation after all—because the user pressed a cancel button in a progress panel or quit the application, for example—you can cancel the operation to prevent it from consuming CPU time needlessly. You do this by calling the [`cancel()`](./operation/cancel%28%29.md) method of the operation object itself or by calling the [`cancelAllOperations()`](./operationqueue/cancelalloperations%28%29.md) method of the [`OperationQueue`](./operationqueue.md) class.
 

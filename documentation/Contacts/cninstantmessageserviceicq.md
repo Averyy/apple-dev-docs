@@ -24,7 +24,7 @@ let CNInstantMessageServiceICQ: String
 extern NSString * const CNInstantMessageServiceICQ;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes a string value.
 

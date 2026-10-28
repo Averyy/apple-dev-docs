@@ -19,7 +19,7 @@ Waits for any pending write access on the underlying pixel buffer to complete, t
 final var pixelBuffer: CVReadOnlyPixelBuffer? { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if `kind` is not `.image`.
 

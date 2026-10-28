@@ -23,7 +23,7 @@ var kCTFontTableAvar: Int { get }
 kCTFontTableAvar
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for axis variation.
 

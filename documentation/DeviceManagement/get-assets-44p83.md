@@ -16,9 +16,9 @@ Get the set of assets managed by your organization.
 - [Upgrading to Apple School Manager and Apple Business](./upgrading-to-apple-school-manager-and-apple-business.md)
 - [Handling error responses](./handling-error-responses.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 
@@ -84,7 +84,7 @@ Get the set of assets managed by your organization.
 }
 ```
 
-##### Example Request and Response with a Legacy Token
+### Example Request and Response with a Legacy Token
 
 **Request**:
 

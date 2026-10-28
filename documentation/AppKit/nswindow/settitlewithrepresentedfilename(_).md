@@ -19,7 +19,7 @@ func setTitleWithRepresentedFilename(_ filename: String)
 - (void) setTitleWithRepresentedFilename:(NSString *) filename;
 ```
 
-#### Discussion
+## Discussion
 
 The windows’ title bar displays the filename, not the file’s path.
 

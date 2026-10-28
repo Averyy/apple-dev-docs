@@ -19,7 +19,7 @@ let kSCPropNetIPSecXAuthName: CFString
 extern CFStringRef const kSCPropNetIPSecXAuthName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is of type [`CFString`](../CoreFoundation/cfstring.md).
 

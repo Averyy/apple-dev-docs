@@ -21,7 +21,7 @@ Copies the elements of a collection into this array at the specified position.
 mutating func insert(copying newElements: some Collection<Element>, at index: Int)
 ```
 
-#### Discussion
+## Discussion
 
 The new elements are inserted before the element currently at the specified index. If you pass the array’s `endIndex` as the `index` parameter, then the new elements are appended to the end of the array.
 

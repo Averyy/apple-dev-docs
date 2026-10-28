@@ -22,7 +22,7 @@ var uploadJobExtensionOptions: PHAssetResourceUploadJobOptions? { get }
 @property (readonly, nullable) PHAssetResourceUploadJobOptions * uploadJobExtensionOptions;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` if the extension isn’t enabled or the caller isn’t authorized. Otherwise, the value is an options object with default values if the configuration exists but no options have been set.
 

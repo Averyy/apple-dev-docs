@@ -21,7 +21,7 @@ A Boolean value that indicates whether the receiver represents a proxy server.
 @property (readonly) BOOL isProxy;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver represents a proxy server, [`false`](../../Swift/false.md) otherwise.
 

@@ -15,7 +15,7 @@ Creates metrics for a recommender, given a data table with precision and recall 
 init(precisionRecall: MLDataTable, excludingObserved: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 Do not use this initializer. [`MLRecommender`](../mlrecommender.md) generates metrics for you when you call its [`evaluation(on:userColumn:itemColumn:ratingColumn:cutoffs:excludingObserved:)`](../mlrecommender/evaluation%28on,usercolumn,itemcolumn,ratingcolumn,cutoffs,excludingobserved%29.md) method.
 

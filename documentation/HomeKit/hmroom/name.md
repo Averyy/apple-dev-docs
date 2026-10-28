@@ -24,7 +24,7 @@ var name: String { get }
 @property (nonatomic, copy, readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Allow the user to choose room names. Room names must be unique within a home.
 

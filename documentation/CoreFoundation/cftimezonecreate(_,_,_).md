@@ -25,11 +25,11 @@ func CFTimeZoneCreate(_ allocator: CFAllocator!, _ name: CFString!, _ data: CFDa
 extern CFTimeZoneRefCFTimeZoneCreate(CFAllocatorRef allocator, CFStringRef name, CFDataRef data);
 ```
 
-#### Return Value
+## Return Value
 
 A time zone corresponding to `name` and `data`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 You typically do not call this function directly. Use the [`CFTimeZoneCreateWithName(_:_:_:)`](./cftimezonecreatewithname%28_,_,_%29.md) function to obtain a time zone given its name.
 

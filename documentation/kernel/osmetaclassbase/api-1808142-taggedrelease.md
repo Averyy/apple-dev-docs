@@ -12,7 +12,7 @@ virtual void taggedRelease(
  const void *tag = 0) const = 0;
 ```
 
-#### Overview
+## Overview
 
 See OSObject::taggedRelease(const void *).
 

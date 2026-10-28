@@ -23,7 +23,7 @@ var cornerRadius: CGFloat { get set }
 @property (nonatomic, assign) CGFloat cornerRadius;
 ```
 
-#### Discussion
+## Discussion
 
 To remove the rounded corners, set this value to 0.0.
 

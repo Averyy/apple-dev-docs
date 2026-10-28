@@ -21,7 +21,7 @@ The standard option to let the system determine whether to redact or display a v
 static var auto: OSLogPrivacy { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to apply the default rules for redacting or showing interpolated values. When it redacts a value, the system displays a generic string in place of the value. If you want to correlate log messages that contain the same value, use the [`auto(mask:)`](./auto%28mask%29.md) function to create a structure with the [`OSLogPrivacy.Mask.hash`](./mask/hash.md) mask.
 

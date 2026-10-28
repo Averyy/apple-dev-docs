@@ -24,7 +24,7 @@ case notDetermined
 HKAuthorizationStatusNotDetermined
 ```
 
-#### Discussion
+## Discussion
 
 Make sure your app requests proper authorization before calling any other HealthKit methods. For more information on setting up HealthKit, see `HealthKit`.
 

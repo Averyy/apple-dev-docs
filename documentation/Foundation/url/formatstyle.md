@@ -21,11 +21,11 @@ A structure that converts between URL instances and their textual representation
 struct FormatStyle
 ```
 
-#### Overview
+## Overview
 
 Instances of [`URL.FormatStyle`](./formatstyle.md) create localized, human-readable text from [`URL`](../url.md) instances and parse string representations of URLs into instances of [`URL`](../url.md).
 
-##### Formatting URLs
+### Formatting URLs
 
 Use the [`formatted()`](./formatted%28%29.md) method to create a string representation of a URL using the default [`URL.FormatStyle`](./formatstyle.md) configuration. As seen in the following example, the default style creates a string with the scheme, host, and path, but not the port or query.
 
@@ -63,7 +63,7 @@ let formatted = url.formatted(.url
 
 This example works by taking the default style provided by [`url`](../formatstyle/url.md), then customizing it with calls to the style modifiers in Customizing style behavior.
 
-##### Parsing URLs
+### Parsing URLs
 
 You can use [`URL.FormatStyle`](./formatstyle.md) to parse strings into URL values. To do this, create a [`URL.ParseStrategy`](./parsestrategy.md) from a format style, then call the strategy’s [`parse(_:)`](./parsestrategy/parse%28_%29.md) method.
 
@@ -80,7 +80,7 @@ let urlString = "https://www.example.com:8080/path/to/endpoint?key=value"
 let url = try? style.parseStrategy.parse(urlString)
 ```
 
-##### Matching regular expressions
+### Matching regular expressions
 
 Along with parsing URL values in strings, you can use the regular expression domain-specific language provided by Swift to match and capture URL substrings. The following example scans source input that’s expected to contain a timestamp, some whitespace, and a URL.
 

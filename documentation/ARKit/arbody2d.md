@@ -20,7 +20,7 @@ class ARBody2D
 @interface ARBody2D : NSObject
 ```
 
-#### Overview
+## Overview
 
 When ARKit recognizes a person in the camera feed, it estimates the screen-space location of the body’s joints and provides the location to you through current frame’s [`detectedBody`](./arframe/detectedbody.md).
 

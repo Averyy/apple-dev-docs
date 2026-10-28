@@ -25,7 +25,7 @@ typealias CFSocketCallBack = (CFSocket?, CFSocketCallBackType, CFData?, UnsafeRa
 typedef void (*)(struct __CFSocket *, enum CFSocketCallBackType, const struct __CFData *, const void *, void *) CFSocketCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 You specify this callback when you create the CFSocket object with [`CFSocketCreate(_:_:_:_:_:_:_:)`](./cfsocketcreate%28_,_,_,_,_,_,_%29.md), [`CFSocketCreateConnectedToSocketSignature(_:_:_:_:_:_:)`](./cfsocketcreateconnectedtosocketsignature%28_,_,_,_,_,_%29.md), [`CFSocketCreateWithNative(_:_:_:_:_:)`](./cfsocketcreatewithnative%28_,_,_,_,_%29.md), or [`CFSocketCreateWithSocketSignature(_:_:_:_:_:)`](./cfsocketcreatewithsocketsignature%28_,_,_,_,_%29.md).
 

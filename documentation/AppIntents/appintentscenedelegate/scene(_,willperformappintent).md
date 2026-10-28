@@ -24,7 +24,7 @@ func scene(_ scene: UIScene, willPerformAppIntent appIntent: any UISceneAppInten
 
 - [Directing app intents to your app’s scenes](../directing-app-intents-to-your-apps-scenes.md)
 
-#### Discussion
+## Discussion
 
 Implement this method in your scene delegate and use it to incorporate the specified app intent into the scene. For example, you might change the views of your scene to display an entity that the app intent contains. The system calls the app intent’s [`perform()`](../appintent/perform%28%29.md) method after this method returns.
 

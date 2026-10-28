@@ -24,11 +24,11 @@ struct IORecursiveLock * IORecursiveLockAlloc(void);
 IORecursiveLock * IORecursiveLockAlloc(void);
 ```
 
-#### Return Value
+## Return Value
 
 Pointer to the allocated lock, or zero on failure.
 
-#### Discussion
+## Discussion
 
 Allocates a recursive lock in general purpose memory, and initializes it. Recursive locks function identically to mutexes but allow one thread to lock more than once, with balanced unlocks. IORecursiveLocks use the global IOKit lock group, IOLockGroup. To simplify kext debugging and lock-heat analysis, consider using lck_* locks with a per-driver lock group, as defined in kern/locks.h.
 

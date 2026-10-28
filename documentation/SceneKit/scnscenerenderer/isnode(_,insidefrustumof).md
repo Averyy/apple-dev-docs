@@ -26,11 +26,11 @@ func isNode(_ node: SCNNode, insideFrustumOf pointOfView: SCNNode) -> Bool
 - (BOOL) isNodeInsideFrustum:(SCNNode *) node withPointOfView:(SCNNode *) pointOfView;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the bounding box of the tested node intersects the view frustum defined by the `pointOfView` node; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Any node containing a camera or spotlight may serve as a point of view (see the [`pointOfView`](./pointofview.md) property for details). Such a node defines a *viewing frustum*—a portion of the scene’s coordinate space, shaped like a truncated pyramid, that encloses all points visible from that point of view.
 

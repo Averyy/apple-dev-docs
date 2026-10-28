@@ -17,7 +17,7 @@ A structure that defines user progress for a task that can be completed over tim
 struct LinearCareTaskProgress
 ```
 
-#### Overview
+## Overview
 
 A progress value updates as a user progresses through the task. When the progress value reaches its goal, the task is considered completed. If there’s no goal, the task is considered completed if the progress value is greater than zero.
 

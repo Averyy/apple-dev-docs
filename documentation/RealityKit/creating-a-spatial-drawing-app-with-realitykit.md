@@ -10,11 +10,11 @@ Use low-level mesh and texture APIs to achieve fast updates to a person’s brus
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10104: [Build a spatial drawing app with RealityKit](https://developer.apple.com/wwdc24/10104/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample code, you’ll need:
 

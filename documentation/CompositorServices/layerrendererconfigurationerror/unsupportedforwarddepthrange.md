@@ -16,7 +16,7 @@ An error that indicates the depth range values aren’t in reverse-z order.
 case unsupportedForwardDepthRange
 ```
 
-#### Discussion
+## Discussion
 
 When you set the [`depthRange`](../layerrenderer/drawable/depthrange.md) property, make sure the first value in your vector contains the value for the far plane. In addition, make sure the distance to the far plane is greater than the distance to the near plane.
 

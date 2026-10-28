@@ -21,7 +21,7 @@ Returns the union of all subview spacing.
 func spacing(subviews: Self.Subviews, cache: inout Self.Cache) -> ViewSpacing
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t implement the [`spacing(subviews:cache:)`](./spacing%28subviews,cache%29-1z0gt.md) method in your custom layout, the protocol uses this default implementation instead, which returns the union of the spacing preferences of all the layout’s subviews.
 

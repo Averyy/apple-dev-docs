@@ -11,7 +11,7 @@ Get'ter for $link intIndex interrupt index variable.
 virtual int getIntIndex() const;
 ```
 
-#### Return Value
+## Return Value
 
 value of intIndex.
 

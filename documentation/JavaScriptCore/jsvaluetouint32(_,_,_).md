@@ -22,11 +22,11 @@ func JSValueToUInt32(_ ctx: JSContextRef, _ value: JSValueRef, _ exception: Unsa
 uint32_t JSValueToUInt32(JSContextRef ctx, JSValueRef value, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 A uint32_t with the result of conversion, or 0 if an exception is thrown. Since 0 is valid value, `exception` must be checked after the call.
 
-#### Discussion
+## Discussion
 
 Converts a JSValue to an unsigned 32-bit integer and returns the resulting integer.
 

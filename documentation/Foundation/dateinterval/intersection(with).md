@@ -21,7 +21,7 @@ Returns an interval that represents the interval where the given date interval a
 func intersection(with dateInterval: DateInterval) -> DateInterval?
 ```
 
-#### Discussion
+## Discussion
 
 In the event that there is no intersection, the method returns nil.
 

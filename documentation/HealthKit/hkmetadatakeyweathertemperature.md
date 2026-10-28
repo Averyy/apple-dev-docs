@@ -24,7 +24,7 @@ let HKMetadataKeyWeatherTemperature: String
 extern NSString * const HKMetadataKeyWeatherTemperature;
 ```
 
-#### Discussion
+## Discussion
 
 This key takes an `HKQuantity` value expressed in a unit of temperature. Set this key on an [`HKWorkout`](./hkworkout.md) object to represent the overall temperature during the workout.
 

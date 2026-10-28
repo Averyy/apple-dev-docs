@@ -27,7 +27,7 @@ var excludeLocalNetworks: Bool { get set }
 
 - [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), the system excludes network connections to hosts on the local network — such as AirPlay, AirDrop, and CarPlay — but only when the [`includeAllNetworks`](./includeallnetworks.md) or [`enforceRoutes`](./enforceroutes.md) property is also [`true`](../../Swift/true.md). [`NETransparentProxyManager`](../netransparentproxymanager.md) doesn’t support this property.
 

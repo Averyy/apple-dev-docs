@@ -22,7 +22,7 @@ func GLKMatrix4MakePerspective(_ fovyRadians: Float, _ aspect: Float, _ nearZ: F
 static GLKMatrix4 GLKMatrix4MakePerspective(float fovyRadians, float aspect, float nearZ, float farZ);
 ```
 
-#### Return Value
+## Return Value
 
 A new projection matrix.
 

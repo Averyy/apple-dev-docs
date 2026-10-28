@@ -19,11 +19,11 @@ func isSelected() -> Bool
 - (BOOL) isSelected;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the cell is selected, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Subclasses should not override this method.
 

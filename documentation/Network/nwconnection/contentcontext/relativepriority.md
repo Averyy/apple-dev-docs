@@ -21,7 +21,7 @@ A relative value of priority used to reorder contexts when sending.
 final let relativePriority: Double
 ```
 
-#### Discussion
+## Discussion
 
 Relative priority of contexts only affects ordering when there is a queue of messages to be sent. The priority is a double ranging from 0.0 to 1.0, where default messages are set to 0.5.
 

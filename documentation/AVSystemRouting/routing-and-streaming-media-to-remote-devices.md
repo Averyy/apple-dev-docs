@@ -5,7 +5,7 @@
 
 Send media from an app to nearby remote playback devices.
 
-#### Overview
+## Overview
 
 To stream media on a remote device, you create an extension that connects to a device’s media application. To present options and updates for that stream to a person, you adopt audio-visual interface and session components in your app. The streaming content travels an audio-visual *route* through the app, the system, and the extension.
 
@@ -15,7 +15,7 @@ Using a dedicated app that you create, your extension discovers nearby devices t
 
 > ❗ **Important**: The AVSystemRouting and MediaDevice frameworks require iOS 27.0 or later. These frameworks are unavailable on Mac Catalyst and visionOS.
 
-##### Discover and report nearby devices
+### Discover and report nearby devices
 
 Your app extension’s entry point conforms to [`MediaDeviceExtension`](../MediaDevice/mediadeviceextension.md). Identify your extension’s protocol by declaring the `@main` struct and implementing its two properties, then indicate whether the extension can handle more than one active session at a time with [`supportsSimultaneousSessions`](../MediaDevice/mediadeviceextension/supportssimultaneoussessions.md). When a person opens a device picker UI, the system instantiates the extension and calls [`startDeviceDiscovery()`](../MediaDevice/mediadeviceextension/startdevicediscovery%28%29.md).
 
@@ -39,7 +39,7 @@ func startDeviceDiscovery() {
 
 As your discovery scan runs, call [`lostDevice(_:)`](../MediaDevice/mediadeviceroutingmanager/lostdevice%28_%29.md) when a previously reported device disappears, and [`updateDevices(_:)`](../MediaDevice/mediadeviceroutingmanager/updatedevices%28_%29.md) to refresh the full list at once. If discovery fails entirely, call [`discoveryFailed(_:)`](../MediaDevice/mediadeviceroutingmanager/discoveryfailed%28_%29.md) with a descriptive error. In [`stopDeviceDiscovery()`](../MediaDevice/mediadeviceextension/stopdevicediscovery%28%29.md), tear down your scan resources and stop advertising to conserve power.
 
-##### Activate and authenticate devices
+### Activate and authenticate devices
 
 When someone selects a device from the route-picker interface, the system calls [`activateDevice(_:session:for:)`](../MediaDevice/mediadeviceextension/activatedevice%28_,session,for%29.md) on your extension. If the device requires no authentication, establish a connection to the remote device. Call [`activatedDevice(_:session:)`](../MediaDevice/mediadeviceroutingmanager/activateddevice%28_,session%29.md) after a successful connection to the remote device and any necessary pairing completes. If the connection to the device fails, call [`failedToActivateDevice(_:session:error:)`](../MediaDevice/mediadeviceroutingmanager/failedtoactivatedevice%28_,session,error%29.md) with a corresponding error code to inform the system of the failure.
 
@@ -87,7 +87,7 @@ if pairingCode == validPasscode {
 
 When the person deactivates a device or the system tears down the route, the system calls [`deactivateDevice(_:session:)`](../MediaDevice/mediadeviceextension/deactivatedevice%28_,session%29.md). Release any resources you allocated for that device and session.
 
-##### Start and control a session
+### Start and control a session
 
 When an app on the device starts a session to a route your extension manages, the system calls [`startSession(_:identifier:url:)`](../MediaDevice/mediadeviceextension/startsession%28_,identifier,url%29.md). At this point, create a `PlaybackControl` object that conforms to [`AVInterfaceControllable`](../AVKit/avinterfacecontrollable.md) and assign it locally:
 
@@ -138,13 +138,13 @@ Implement the remaining [`AVInterfaceControllable`](../AVKit/avinterfacecontroll
 
 When the session ends, the system calls [`stopSession(_:)`](../MediaDevice/mediadeviceextension/stopsession%28_%29.md). Stop remote playback, release resources associated with generating streaming data, and set your stored `PlaybackControl` reference to `nil`.
 
-##### Respond to volume changes
+### Respond to volume changes
 
 Declare volume support in [`MediaOutputDevice`](../MediaDevice/mediaoutputdevice.md) with [`volumeControl`](../MediaDevice/mediaoutputdevice/volumecontrol-swift.property.md). Set [`canMute`](../MediaDevice/mediaoutputdevice/canmute.md) to `true` when the device supports muting.
 
 The system calls [`setVolume(_:for:)`](../MediaDevice/mediadeviceextension/setvolume%28_,for%29.md), [`changeVolume(by:for:)`](../MediaDevice/mediadeviceextension/changevolume%28by,for%29.md), and [`muteDevice(_:)`](../MediaDevice/mediadeviceextension/mutedevice%28_%29.md) on your extension when the person adjusts volume through system interface. Forward each call to the remote device over your transport layer. If the remote device initiates its own volume change, for example, through physical buttons, read the new level with [`volume(for:)`](../MediaDevice/mediadeviceextension/volume%28for%29.md) or check mute state with [`isDeviceMuted(_:)`](../MediaDevice/mediadeviceextension/isdevicemuted%28_%29.md), then call [`volumeChanged(for:)`](../MediaDevice/mediadeviceroutingmanager/volumechanged%28for%29.md) to notify the system so it can update its own interface.
 
-##### Stream real-time audio and video
+### Stream real-time audio and video
 
 When your extension needs to receive raw media samples rather than a URL for the device to fetch independently, extend your conformance to include [`RealtimeSampleHandling`](../MediaDevice/realtimesamplehandling.md). This protocol extends [`MediaDeviceExtension`](../MediaDevice/mediadeviceextension.md), so your base conformance must already be in place. Declare support by including [`realtimeAudioStreaming`](../MediaDevice/mediaoutputdevice/capabilities-swift.struct/realtimeaudiostreaming.md) and [`realtimeVideoStreaming`](../MediaDevice/mediaoutputdevice/capabilities-swift.struct/realtimevideostreaming.md) in the [`MediaOutputDevice.Capabilities`](../MediaDevice/mediaoutputdevice/capabilities-swift.struct.md) of your [`MediaOutputDevice`](../MediaDevice/mediaoutputdevice.md).
 
@@ -154,7 +154,7 @@ The system calls [`startRealtimeSampleDelivery(session:)`](../MediaDevice/realti
 
 When the system calls [`stopRealtimeSampleDelivery(session:)`](../MediaDevice/realtimesamplehandling/stoprealtimesampledelivery%28session%29.md), stop all capture and encoding, release the encoder resources, and halt transmission.
 
-##### Route media from your app
+### Route media from your app
 
 To receive route events, add [`MDESupportedProtocols`](../BundleResources/information-property-list/mdesupportedprotocols.md) to your app’s Info pane in Xcode with the [`UTType`](../UniformTypeIdentifiers/uttype-swift.struct.md) string your extension declares in [`protocolType`](../MediaDevice/mediadeviceextension/protocoltype.md). Then register an observer with [`shared`](./avsystemroutecontroller-18ns8/shared.md):
 
@@ -181,7 +181,7 @@ case .deactivate:
 
 On [`AVSystemRouteEvent.Reason.activate`](./avsystemrouteevent-2elr5/reason-swift.enum/activate.md), store [`route`](./avsystemrouteevent-2elr5/route.md) as your [`AVSystemRoute`](./avsystemroute-5s2um.md) reference. The route’s `protocolType` identifies which device extension protocol is in use. Use [`routeDisplayName`](./avsystemroute-5s2um/routedisplayname.md) and [`routeSymbolName`](./avsystemroute-5s2um/routesymbolname.md) to reflect the destination in your app’s interface.
 
-##### Start a media session
+### Start a media session
 
 With an active [`AVSystemRoute`](./avsystemroute-5s2um.md), create an [`AVSystemRouteSession`](./avsystemroutesession-gp78.md) using the content URL and a launch mode. Choose [`AVSystemRoute.LaunchMode.application`](./avsystemroute-5s2um/launchmode/application.md) when you want your app’s counterpart process on the device to handle playback and when you need a data channel between the extension and an application on the streaming device. Choose [`AVSystemRoute.LaunchMode.player`](./avsystemroute-5s2um/launchmode/player.md) when you want the device’s default media player to handle playback.
 
@@ -206,7 +206,7 @@ do {
 
 [`playbackControl`](./avsystemroutemediasession-98ioq/playbackcontrol.md) provides an object conforming to [`AVInterfaceControllable`](../AVKit/avinterfacecontrollable.md), the same interface the extension implemented. Use it to read playback state and issue commands. When someone stops playback, call [`stop()`](./avsystemroutesession-gp78/stop%28%29.md) and then [`removeSession(_:)`](./avsystemroute-5s2um/removesession%28_%29.md) to clean up.
 
-##### Communicate between app and extension
+### Communicate between app and extension
 
 [`AVSystemRoute`](./avsystemroute-5s2um.md) exposes a route-level data channel through [`routeDataChannel`](./avsystemroute-5s2um/routedatachannel.md). This channel is available as soon as the route is active, independent of any session. Set its [`dataDelegate`](./avsystemroute-5s2um/datachannel/datadelegate.md) to an object conforming to [`AVSystemRouteDataDelegate`](./avsystemroutedatadelegate-7vt4b.md) to receive incoming messages, then call [`send(_:)`](./avsystemroute-5s2um/datachannel/send%28_%29.md) to transmit data:
 
@@ -218,7 +218,7 @@ try await routeChannel.send(data)
 
 In [`AVSystemRoute.LaunchMode.application`](./avsystemroute-5s2um/launchmode/application.md) and [`AVSystemRoute.LaunchMode.player`](./avsystemroute-5s2um/launchmode/player.md) modes, [`AVSystemRouteMediaSession`](./avsystemroutemediasession-98ioq.md) exposes a session-scoped [`dataChannel`](./avsystemroutemediasession-98ioq/datachannel.md). This channel is `nil` in `.player` mode, so check for `nil` before using it. On the extension side, call [`sendData(_:toApplication:session:)`](../MediaDevice/mediadeviceextension/senddata%28_,toapplication,session%29.md) to send data toward the app, and implement [`receiveData(_:fromApplication:session:)`](../MediaDevice/mediadeviceroutingmanager/receivedata%28_,fromapplication,session%29.md) to handle messages arriving from the app. The routing manager delivers those messages through [`receiveData(_:fromApplication:session:)`](../MediaDevice/mediadeviceroutingmanager/receivedata%28_,fromapplication,session%29.md).
 
-##### Stream real-time audio
+### Stream real-time audio
 
 The current route may support real-time audio if both the extension and media device support it. In this scenario, your app can also play audio through [AVFoundation](../AVFoundation/AVFoundation.md). The system hands the audio directly to the extension, which delivers it to the device for playback.
 

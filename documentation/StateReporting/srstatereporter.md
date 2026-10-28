@@ -21,7 +21,7 @@ An object unique per domain that records state transitions and volatile metadata
 @interface SRStateReporter : NSObject
 ```
 
-#### Overview
+## Overview
 
 `SRStateReporter` is the central object for recording your feature’s or subsystem’s current state. Obtain an instance through the [`reporterForDomain:`](./srstatereporter/reporterfordomain_.md) method, which guarantees that every caller using the same domain string receives the same object.
 

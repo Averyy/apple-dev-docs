@@ -25,7 +25,7 @@ class NSTextCheckingResult
 @interface NSTextCheckingResult : NSObject
 ```
 
-#### Overview
+## Overview
 
 On both iOS and macOS, instances of [`NSTextCheckingResult`](./nstextcheckingresult.md) are returned by the [`NSRegularExpression`](./nsregularexpression.md) class and the [`NSDataDetector`](./nsdatadetector.md) class to indicate the discovery of content. In those cases, what is found may be a match for a regular expression or a date, address, phone number, and so on. In macOS, instances of `NSTextCheckingResult` are returned by the [`NSSpellChecker`](../AppKit/nsspellchecker.md) object to describe the results of spelling, grammar, or text-substitution actions.
 

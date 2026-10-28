@@ -27,7 +27,7 @@ var NSProprietaryStringEncoding: UInt { get }
 NSProprietaryStringEncoding
 ```
 
-#### Discussion
+## Discussion
 
 Proprietary encodings have not been used since OS X v10.0. You should specify a standard encoding instead.
 

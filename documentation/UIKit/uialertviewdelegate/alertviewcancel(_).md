@@ -23,7 +23,7 @@ optional func alertViewCancel(_ alertView: UIAlertView)
 - (void) alertViewCancel:(UIAlertView *) alertView;
 ```
 
-#### Discussion
+## Discussion
 
 If the alert view’s delegate does not implement this method, clicking the cancel button is simulated and the alert view is dismissed. Implement this method if you need to perform some actions before an alert view is canceled. An alert view can be canceled at any time by the system—for example, when the user taps the Home button. The [`alertView(_:willDismissWithButtonIndex:)`](./alertview%28_,willdismisswithbuttonindex%29.md) and [`alertView(_:didDismissWithButtonIndex:)`](./alertview%28_,diddismisswithbuttonindex%29.md) methods are invoked after this method.
 

@@ -21,11 +21,11 @@ Executes a closure on the collection’s contiguous storage.
 mutating func withContiguousMutableStorageIfAvailable<R>(_ body: (inout UnsafeMutableBufferPointer<Self.Element>) throws -> R) rethrows -> R?
 ```
 
-#### Return Value
+## Return Value
 
 The value returned from `body`, unless the collection doesn’t support contiguous storage, in which case the method ignores `body` and returns `nil`.
 
-#### Discussion
+## Discussion
 
 This method calls `body(buffer)`, where `buffer` provides access to the contiguous mutable storage of the entire collection. If the contiguous storage doesn’t exist, the collection creates it. If the collection doesn’t support an internal representation in the form of contiguous mutable storage, this method doesn’t call `body` — it immediately returns `nil`.
 

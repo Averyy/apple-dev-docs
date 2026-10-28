@@ -14,19 +14,19 @@ Create a custom video compositor to edit spatial video for playback and export.
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 Spatial video content requires specialized processing to maintain its stereoscopic presentation or convert it to monoscopic output for different viewing contexts. While AVFoundation provides built-in video compositing capabilities for basic effects like transforms and fades, processing spatial video’s dual-eye data streams demands more sophisticated control.
 
 AVFoundation’s [`AVVideoCompositing`](./avvideocompositing.md) protocol provides the framework for building custom video compositors with full control over video processing. This sample demonstrates how to implement custom compositors that handle spatial video’s tagged buffer data, enabling you to process stereoscopic content for both playback and export scenarios.
 
-#### Configure the sample code project
+## Configure the sample code project
 
 To run the sample app, place one or more spatial video files on your device to process. The project includes a sample spatial video file for testing, and you can capture your own content on Apple Vision Pro or iPhone 16.
 
 When you run the app, it prompts you to select a spatial video file through the system file picker on your platform.
 
-#### Create a custom compositor
+## Create a custom compositor
 
 The sample provides two [`AVVideoCompositing`](./avvideocompositing.md) implementations: `MonoOutputCompositor` and `StereoOutputCompositor`. Both process mono or stereo input, but output either monoscopic or stereoscopic video respectively.
 
@@ -71,7 +71,7 @@ The method first attempts to retrieve tagged buffers, which indicates the video 
 
 > **Note**: See the implementations for details about the processing each compositor performs.
 
-#### Build a video composition object
+## Build a video composition object
 
 The sample creates a video composition using the app’s `VideoCompositionBuilder` structure. This type’s `build()` method creates an [`AVVideoComposition.Configuration`](./avvideocomposition/configuration.md) for the selected asset and indicates to use the custom compositor:
 
@@ -117,7 +117,7 @@ if compositorConfiguration.outputsStereo {
 }
 ```
 
-#### Use a custom compositor for playback
+## Use a custom compositor for playback
 
 Integrating the custom compositor for playback is straightforward. The sample’s `SampleModel` class creates an [`AVPlayer`](./avplayer.md) with the video composition:
 
@@ -138,7 +138,7 @@ private func makePlayer(url: URL) async throws -> AVPlayer {
 
 The method creates a video composition using the selected compositor configuration. If the method creates a valid composition, it assigns it to the player item and enables rendering synchronization.
 
-#### Export with an asset export session
+## Export with an asset export session
 
 The sample’s `ExportSessionExporter` class demonstrates export using [`AVAssetExportSession`](./avassetexportsession.md). The export method selects the appropriate preset based on the video composition’s output type:
 
@@ -171,7 +171,7 @@ func export(asset: AVAsset, videoComposition: AVVideoComposition? = nil) async t
 
 For stereo output, the method uses the MV-HEVC preset to maintain spatial video format. For mono output, it uses the standard HEVC preset. After creating the export session, it assigns the video composition and performs the export operation.
 
-#### Export with an asset reader and writer
+## Export with an asset reader and writer
 
 The sample’s `ReaderWriterExporter` class provides fine-grained export control using [`AVAssetReader`](./avassetreader.md) and [`AVAssetWriter`](./avassetwriter.md). This approach requires more setup but offers greater flexibility over the export process.
 

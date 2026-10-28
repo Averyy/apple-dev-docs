@@ -19,7 +19,7 @@ static let pdf: NSPasteboard.PasteboardType
 extern NSPasteboardType const NSPasteboardTypePDF;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`pdf`](./pdf.md) instead.
 

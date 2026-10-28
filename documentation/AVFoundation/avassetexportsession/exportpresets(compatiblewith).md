@@ -25,11 +25,11 @@ class func exportPresets(compatibleWith asset: AVAsset) -> [String]
 + (NSArray<NSString *> *) exportPresetsCompatibleWithAsset:(AVAsset *) asset;
 ```
 
-#### Return Value
+## Return Value
 
 An array of compatible presets. See [Export presets](../export-presets.md) for preset values an asset export session supports.
 
-#### Discussion
+## Discussion
 
 Not all export presets are compatible with all assets. For example, video-only assets aren’t compatible with an audio-only preset. Call this method to determine the compatible presets for the asset you’re exporting.
 

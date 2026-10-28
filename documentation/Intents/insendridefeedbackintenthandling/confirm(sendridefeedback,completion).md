@@ -26,7 +26,7 @@ optional func confirm(sendRideFeedback sendRideFeedbackIntent: INSendRideFeedbac
 - (void) confirmSendRideFeedback:(INSendRideFeedbackIntent *) sendRideFeedbackIntent completion:(void (^)(INSendRideFeedbackIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to confirm that you can apply the provided feedback to the ride. Use this method to create a response object with information about whether you can apply the feedback to the ride.
 

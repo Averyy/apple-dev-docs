@@ -31,7 +31,7 @@ var workoutGoalUnitType: INWorkoutGoalUnitType { get }
 @property (atomic, assign, readonly) INWorkoutGoalUnitType workoutGoalUnitType;
 ```
 
-#### Discussion
+## Discussion
 
 If the user specified a goal, this property contains the units for measuring that goal. The units reflect a distance, a time, or a unit of energy. You get the goal’s numerical value from the [`goalValue`](./goalvalue-1dzvb.md) property.
 

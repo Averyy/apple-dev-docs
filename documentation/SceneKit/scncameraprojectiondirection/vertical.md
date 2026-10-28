@@ -25,7 +25,7 @@ case vertical
 SCNCameraProjectionDirectionVertical
 ```
 
-#### Discussion
+## Discussion
 
 If a camera’s [`projectionDirection`](../scncamera/projectiondirection.md) property has this value:
 

@@ -20,11 +20,11 @@ Executes the specified string as an async JavaScript function.
 @MainActor final func callJavaScript(_ functionBody: String, arguments: [String : Any] = [:], in frame: WebPage.FrameInfo? = nil, contentWorld: WKContentWorld? = nil) async throws -> sending Any?
 ```
 
-#### Return Value
+## Return Value
 
 The result of the script evaluation. If your function body doesn’t return an explicit value, `nil` is returned. If your function body explicitly returns `null`, then `NSNull` is returned.
 
-#### Discussion
+## Discussion
 
 Don’t format the string in the functionBody parameter as a function-like callable object, as you would in pure JavaScript. Instead, put only the body of the function in the string. For example, the following string shows a valid function body that takes x, y, and z arguments and returns a result.
 

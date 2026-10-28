@@ -17,11 +17,11 @@ Returns a Boolean value indicating whether a specified property in the receiver 
 - (BOOL) isReadOnlyKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the property specified by `key` exists in the receiver or in the `NSScriptClassDescription` for any superclass, and is read only; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method could return [`false`](../../Swift/false.md) either because `key` is unrecognized or because writing to the property is not supported. Use [`hasWritableProperty(forKey:)`](./haswritableproperty%28forkey%29.md) instead.
 

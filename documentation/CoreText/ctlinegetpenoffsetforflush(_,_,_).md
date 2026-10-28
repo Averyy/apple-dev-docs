@@ -25,7 +25,7 @@ func CTLineGetPenOffsetForFlush(_ line: CTLine, _ flushFactor: CGFloat, _ flushW
 extern double CTLineGetPenOffsetForFlush(CTLineRef line, CGFloat flushFactor, double flushWidth);
 ```
 
-#### Return Value
+## Return Value
 
 The offset from the current pen position for the flush operation.
 

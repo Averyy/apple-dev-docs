@@ -25,11 +25,11 @@ init?(indexedBaseSpace baseSpace: CGColorSpace, last lastIndex: Int, colorTable:
 extern CGColorSpaceRefCGColorSpaceCreateIndexed(CGColorSpaceRef baseSpace, size_t lastIndex, const unsigned char *colorTable);
 ```
 
-#### Return Value
+## Return Value
 
 A new indexed color space object, or `NULL` if unsuccessful. In Objective-C, you’re responsible for releasing this object by calling [`CGColorSpaceRelease`](../cgcolorspacerelease.md).
 
-#### Discussion
+## Discussion
 
 An indexed color space contains a color table with up to 255 entries, and a base color space to which the color table entries are mapped. Each entry in the color table specifies one color in the base color space. A value in an indexed color space is treated as an index into the color table of the color space. The data in the table is in meshed format. (For example, for an RGB color space the values are R, G, B, R, G, B, and so on.)
 

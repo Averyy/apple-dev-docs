@@ -19,7 +19,7 @@ func prepareContent()
 - (void) prepareContent;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses that implement this method are responsible for creating the new content object and setting it as the receiver’s content object. This method is only called if [`automaticallyPreparesContent`](./automaticallypreparescontent.md) has been set to [`true`](../../Swift/true.md).
 

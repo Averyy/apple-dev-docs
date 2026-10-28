@@ -24,7 +24,7 @@ let PHLivePhotoInfoErrorKey: String
 extern NSString * const PHLivePhotoInfoErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The [`request(withResourceFileURLs:placeholderImage:targetSize:contentMode:resultHandler:)`](./phlivephoto/request%28withresourcefileurls,placeholderimage,targetsize,contentmode,resulthandler%29.md) method validates that the files and their metadata can be loaded as a Live Photo. If Photos cannot load a Live Photo from the specified files, the `result` parameter in your result handler block is `nil`, and this key in the `info` dictionary contains an `NSError` object describing the error.
 

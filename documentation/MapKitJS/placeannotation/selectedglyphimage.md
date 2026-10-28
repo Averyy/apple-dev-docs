@@ -15,7 +15,7 @@ The selected glyph image for the place.
 get selectedGlyphImage(): MapFeatureAnnotationGlyphImage | null;
 ```
 
-#### Discussion
+## Discussion
 
 Not all places have a glyph image. When a place does, this property returns a [`MapFeatureAnnotationGlyphImage`](../mapfeatureannotationglyphimage.md) object that allows you to access the glyph image. You can’t set the selected glyph image property of the place annotation.
 

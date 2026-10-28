@@ -19,7 +19,7 @@ init(delegate: (any NSWritingToolsCoordinator.Delegate)?)
 - (instancetype) initWithDelegate:(id<NSWritingToolsCoordinatorDelegate>) delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Create the coordinator object during your view’s initialization, and assign the object to your view. Assign the coordinator to the [`writingToolsCoordinator`](../nsview/writingtoolscoordinator.md) property of your view.
 

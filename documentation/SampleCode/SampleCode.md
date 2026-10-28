@@ -4,7 +4,7 @@
 
 Enhance and expand your knowledge of Apple technologies by exploring the full library of sample code projects.
 
-#### Featured at WWDC26
+## Featured at WWDC26
 
 Explore samples that highlight new APIs featured at this year’s conference.
 

@@ -10,7 +10,7 @@ framework: "Swift-Org/SwiftJavaDocumentation"
 
 Detailed feature documentation for calling Java from Swift using JavaKit macros (`@JavaClass`, `@JavaMethod`, `@JavaField`, `@JavaImplementation`, …).
 
-#### Overview
+## Overview
 
 JavaKit macros let you hand-write Swift declarations that mirror Java classes, methods, and fields; the macros generate the JNI calls.
 
@@ -20,7 +20,7 @@ For an orientation on which interop tool fits your task, see [Features Overview]
 
 > 💡 **Tip**: The Java -> Swift direction is covered in the WWDC2025 session ‘Explore Swift and Java interoperability’ around the [7-minute mark](https://youtu.be/QSHO-GUGidA?si=vUXxphTeO-CHVZ3L&t=448), and the Swift -> Java direction around the [10-minute mark](https://youtu.be/QSHO-GUGidA?si=QyYP5-p2FL_BH7aD&t=616).
 
-##### Wrapping Java classes: @JavaClass
+### Wrapping Java classes: @JavaClass
 
 Declare a Swift class annotated with `@JavaClass("fully.qualified.JavaName")` that inherits from `JavaObject`. Fields become `@JavaField` properties, methods become `@JavaMethod` declarations. The macro writes the JNI binding code so the Swift declaration acts as a first-class Swift type backed by the underlying Java instance.
 
@@ -111,13 +111,13 @@ public class HelloSwift {
 }
 ```
 
-##### Java instance methods: @JavaMethod
+### Java instance methods: @JavaMethod
 
 Declare a Swift method with `@JavaMethod` on a `@JavaClass`-annotated type. The Swift signature drives the JNI dispatch: parameters and return type are mapped between Swift and Java, throwing methods are surfaced with `throws`, and calling the Swift method invokes the underlying Java method.
 
 Method names in Swift match the Java method verbatim by default. Use `@JavaMethod("javaName")` to bind to a differently-named Java method.
 
-##### Java static methods: @JavaStaticMethod
+### Java static methods: @JavaStaticMethod
 
 Static methods live in an `extension` on the class’s `JavaClass<T>` metatype, keeping instance and static dispatch separate.
 
@@ -139,7 +139,7 @@ if bigInt.isProbablePrime(certainty) {
 }
 ```
 
-##### Java fields: @JavaField and @JavaStaticField
+### Java fields: @JavaField and @JavaStaticField
 
 Java fields become Swift `var` properties on the class (instance) or on the `JavaClass<T>` metatype (static). Reads and writes are dispatched through JNI just like methods.
 
@@ -217,7 +217,7 @@ public class HelloSwift {
 }
 ```
 
-##### @JavaImplementation: implementing a Java native method in Swift
+### @JavaImplementation: implementing a Java native method in Swift
 
 Java classes can declare `native` methods whose implementation is provided by another language. `@JavaImplementation("fully.qualified.JavaName")` on a Swift extension provides those implementations. The macro generates the JNI export symbols the JVM expects.
 
@@ -296,11 +296,11 @@ public class HelloSwift {
 
 The same extension also implements `native int sayHello(int, int)`; every `native` method declared on the Java class needs a matching Swift method here.
 
-##### Java constructors
+### Java constructors
 
 Java constructors are exposed as Swift initializers taking an `environment: JNIEnvironment? = nil` parameter. When omitted, the current thread’s JNI environment is used. The macro handles the JNI class lookup and `NewObject` call.
 
-##### Throwing methods
+### Throwing methods
 
 A Swift method declared `@JavaMethod ... throws` corresponds to a Java method whose signature includes `throws`.
 
@@ -318,7 +318,7 @@ do {
 
 In the other direction, a Swift error thrown out of a `@JavaImplementation` method is converted to a Java exception: if the error is itself a wrapped Java `Throwable` it is rethrown as-is, otherwise a `java.lang.Exception` carrying the error’s description is thrown.
 
-##### Type casting: .as(T.self)
+### Type casting: .as(T.self)
 
 `JavaObject` provides `as(_:)` for a runtime-checked downcast and `is(_:)` for a runtime type check. Both consult the underlying Java class hierarchy, so they work correctly across the `@JavaClass(..., extends:)` chain.
 
@@ -334,7 +334,7 @@ if let helloSub = self.as(HelloSubclass.self) {
 }
 ```
 
-##### Type checking: .is(T.self)
+### Type checking: .is(T.self)
 
 `is(_:)` performs a runtime type check without producing a new reference. It consults the Java class hierarchy, so a base-class instance does not report itself as an instance of a subclass:
 
@@ -344,7 +344,7 @@ assert(newHello.is(HelloSwift.self))
 assert(!newHello.is(HelloSubclass.self))
 ```
 
-##### Arrays
+### Arrays
 
 Swift `[T]` maps to Java `T[]` for both parameters and return values, for the primitive types (`Int8`/`byte`, `Int32`/`int`, `Int64`/`long`, `Double`/`double`, …) as well as object types like `String`.
 
@@ -405,7 +405,7 @@ public class HelloJavaKitArrays {
 }
 ```
 
-##### Optionals and nullability
+### Optionals and nullability
 
 Java’s `Optional<T>`, `OptionalInt`, `OptionalLong` and `OptionalDouble` are wrapped as JavaKit object types (`JavaOptional<T>`, `JavaOptionalInt`, …) like any other Java class. On top of that, `wrap-java` emits a second accessor with an `Optional` suffix that uses a native Swift optional instead, so a Java `Optional<String> getText()` yields both `getText() -> JavaOptional<JavaString>!` and `getTextOptional() -> JavaString?`. The same applies to fields: an `Optional<String> text` field yields `text` and `textOptional`.
 
@@ -469,7 +469,7 @@ public class ThreadSafeHelperClass {
 
 Note that this is separate from Java’s implicit reference nullability, which is covered under Primitive type mapping below: every wrapped Java object type is projected into Swift as an optional.
 
-##### Primitive type mapping
+### Primitive type mapping
 
 | Swift | Java |
 | --- | --- |
@@ -483,11 +483,11 @@ Note that this is separate from Java’s implicit reference nullability, which i
 
 Swift `String` bridges to `java.lang.String`. Where the underlying JNI type matters (for example, storing a nullable string field), use the wrapper `JavaString` explicitly.
 
-##### JavaClass<T> metatype and reflection
+### JavaClass<T> metatype and reflection
 
 `JavaClass<T>` is the Swift representation of a Java `Class` object. Constructing one performs the JNI class lookup. Static members are reached through it, and custom extensions on `JavaClass<T>` are the place to add `@JavaStaticMethod` and `@JavaStaticField` declarations.
 
-##### Java enum constants
+### Java enum constants
 
 JavaKit does not yet import Java enums as Swift enums. In the meantime, constants can be reached via `JavaClass<T>` and `@JavaStaticField` - the same pattern used for any static field.
 
@@ -512,7 +512,7 @@ do {
 }
 ```
 
-##### Java type inheritance
+### Java type inheritance
 
 `@JavaClass("java.name", extends: Parent.self)` records the Java parent class. The Swift type is expected to also inherit from that parent, so the Swift class hierarchy mirrors the Java one. Downcasts made with `.as(T.self)` respect this hierarchy.
 
@@ -552,7 +552,7 @@ public class HelloSubclass extends HelloSwift {
 }
 ```
 
-##### Generic type parameters
+### Generic type parameters
 
 Generic Java types like `java.util.ArrayList<E>` are wrapped as generic Swift classes.
 
@@ -571,11 +571,11 @@ open class Stack<Stack_E: AnyJavaObject>: JavaObject {
 
 Note the `Stack_E` parameter name plus an `E` typealias: `wrap-java` prefixes type parameters with the class name to avoid collisions, then restores the Java spelling via the typealias. See `Sources/JavaStdlib/JavaUtil/generated/Stack.swift` for the full generated type.
 
-##### Method overloading
+### Method overloading
 
 Swift methods with different parameter types can bind to different Java overloads with the same name - the macro-generated JNI signature disambiguates which overload to invoke. See `Sources/JavaStdlib/JavaUtil/generated/ArrayList.swift` for realistic examples (multiple `add(...)` overloads).
 
-##### Thread-safety and Sendable
+### Thread-safety and Sendable
 
 `wrap-java` recognizes thread-safety annotations on the Java class and emits the matching Swift conformance. Matching is by simple name, so the annotation may come from `javax.annotation.concurrent`, `net.jcip.annotations`, or your own project:
 

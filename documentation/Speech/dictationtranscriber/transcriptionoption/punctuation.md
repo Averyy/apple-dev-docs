@@ -19,7 +19,7 @@ Automatically punctuates the transcription.
 case punctuation
 ```
 
-#### Discussion
+## Discussion
 
 If omitted, only spoken punctuation is transcribed, as by the spoken phrase “hello comma there”.
 

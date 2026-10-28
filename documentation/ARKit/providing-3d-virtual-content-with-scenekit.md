@@ -5,7 +5,7 @@
 
 Use SceneKit to add realistic three-dimensional objects to your AR experience.
 
-#### Overview
+## Overview
 
 Because ARKit automatically matches SceneKit space to the real world, placing a virtual object so that it appears to maintain a real-world position requires that you set the object’s SceneKit position appropriately. For example, in a default configuration, the following code places a 10-centimeter cube 20 centimeters in front of the camera’s initial position:
 
@@ -38,7 +38,7 @@ func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: AR
 }
 ```
 
-##### Follow Best Practices for Designing 3D Assets
+### Follow Best Practices for Designing 3D Assets
 
 - Use the SceneKit physically based lighting model for materials for a more realistic appearance. (See the [`SCNMaterial`](../SceneKit/scnmaterial.md) class and the [Badger: Advanced Rendering in SceneKit](https://developer.apple.com/library/archive/samplecode/Badger/Introduction/Intro.html#//apple_ref/doc/uid/TP40017309) sample code project.)
 - Bake ambient occlusion shading so that objects appear properly lit in a wide variety of scene lighting conditions.

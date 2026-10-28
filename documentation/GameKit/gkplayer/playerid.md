@@ -39,7 +39,7 @@ var playerID: String { get }
 
 - [Protecting the player’s privacy using scoped identifiers](../protecting-the-player-s-privacy-using-scoped-identifiers.md)
 
-#### Discussion
+## Discussion
 
 Never display the player identifier to the player. Use it only to identify a player in your code.
 

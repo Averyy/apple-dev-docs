@@ -15,7 +15,7 @@ The scale factor for font sizes.
 static let textSizeMultiplier: NSAttributedString.DocumentReadingOptionKey
 ```
 
-#### Discussion
+## Discussion
 
 [`NSNumber`](../../nsnumber.md) containing float, default 1.0; for HTML only, corresponding to WebView’s `textSizeMultiplier`.
 

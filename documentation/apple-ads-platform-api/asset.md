@@ -15,13 +15,13 @@ Unified asset entity containing product-agnostic asset metadata and references.
 object Asset
 ```
 
-#### Discussion
+## Discussion
 
 An `Asset` is the unified media entity used across ad placements in the Apple Ads Platform API. Different providers supply assets: App Store Connect images for Apple Ads campaigns, and Maps media for Apple Maps. The `assetType` field determines which sub-object is present in `assetDetails`.
 
 Query endpoint requests support fields marked **Filterable** in the properties as filter criteria. See [Calling the Apple Ads Platform API](./calling-apple-ads-platform-api.md) for details on constructing queries.
 
-##### Example
+### Example
 
 ```json
 {

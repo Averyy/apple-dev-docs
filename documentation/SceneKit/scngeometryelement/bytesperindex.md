@@ -25,7 +25,7 @@ var bytesPerIndex: Int { get }
 @property (nonatomic, readonly) NSInteger bytesPerIndex;
 ```
 
-#### Discussion
+## Discussion
 
 An element’s [`data`](./data.md) property holds an array of index values identifying vertices in a geometry source. SceneKit interprets the data as an array of unsigned integers, whose size is specified by the [`bytesPerIndex`](./bytesperindex.md) property.
 

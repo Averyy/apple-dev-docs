@@ -21,7 +21,7 @@ static func zeros(_ shape: some Collection<Int>, type: (some HasDType).Type = Fl
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 Example:
 
@@ -29,7 +29,7 @@ Example:
 let z = MLXArray.zeros([5, 10], type: Int.self)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 - [`zeros(like:dtype:stream:)`](./zeros%28like,dtype,stream%29.md)

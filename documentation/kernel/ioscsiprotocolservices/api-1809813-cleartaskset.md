@@ -12,11 +12,11 @@ SCSIServiceResponse ClearTaskSet (
  UInt8theLogicalUnit );
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSIServiceResponse.
 
-#### Overview
+## Overview
 
 The Task Management function to clear a task set.
 

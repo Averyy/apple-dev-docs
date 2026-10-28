@@ -23,7 +23,7 @@ optional func speechRecognitionTaskWasCancelled(_ task: SFSpeechRecognitionTask)
 - (void) speechRecognitionTaskWasCancelled:(SFSpeechRecognitionTask *) task;
 ```
 
-#### Discussion
+## Discussion
 
 A speech recognition task can be canceled by the user, by your app, or by the system.
 

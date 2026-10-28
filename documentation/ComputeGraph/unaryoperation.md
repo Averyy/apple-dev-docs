@@ -21,7 +21,7 @@ An enumeration of single-operand operations.
 enum UnaryOperation
 ```
 
-#### Overview
+## Overview
 
 These follow Metal’s rules for compatibility with operands.
 

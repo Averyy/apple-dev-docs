@@ -20,7 +20,7 @@ func ODRecordVerifyPasswordExtended(_ record: ODRecordRef!, _ authType: String!,
 extern bool ODRecordVerifyPasswordExtended(ODRecordRef record, ODAuthenticationType authType, CFArrayRef authItems, CFArrayRef*outAuthItems, ODContextRef*outContext, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the authentication information is valid; otherwise, `false`.
 

@@ -26,7 +26,7 @@ string revocationType
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 If the `revocationType` is `REFUND_PRORATED`, see the [`revocationPercentage`](./revocationpercentage.md) for the prorated percentage.
 

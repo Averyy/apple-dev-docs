@@ -17,7 +17,7 @@ All application categories supported at the current OS version.
 static var allCases: [CTSlicingManager.AppCategory] { get }
 ```
 
-#### Discussion
+## Discussion
 
 On iOS 26.3 and later, this property returns `[.gaming, .communication, .streaming]`. On iOS 27.0 and later, this property also includes `.missionCritical`.
 

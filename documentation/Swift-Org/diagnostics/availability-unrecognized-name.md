@@ -10,7 +10,7 @@ framework: "Swift-Org/diagnostics"
 
 Warnings that identify unrecognized platform names in `@available` attributes and `if #available` statements.
 
-#### Overview
+## Overview
 
 The `AvailabilityUnrecognizedName` group covers warnings emitted when the platform name specified in an availability related construct is unrecognized by the compiler:
 

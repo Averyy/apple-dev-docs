@@ -14,11 +14,11 @@ CMError CMNewProfile (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The `CMNewProfile` function creates a new profile and backing copy in the location you specify. After you create the profile, you must fill in the profile header fields and populate the profile with tags and their element data, and then call the function [CMUpdateProfile](./api-1804864-cmupdateprofile.md) to save the element data to the profile file. The default ColorSync profile contents include a profile header of type [`CM2Header`](../cm2header.md) and an element table.
 

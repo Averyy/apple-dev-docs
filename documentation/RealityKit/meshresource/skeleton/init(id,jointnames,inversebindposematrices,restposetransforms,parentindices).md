@@ -20,7 +20,7 @@ Creates a skeleton from arrays which define its joints. Returns `nil` if there w
 init?(id: String, jointNames: [String], inverseBindPoseMatrices: [simd_float4x4], restPoseTransforms: [Transform]? = nil, parentIndices: [Int?]? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: A parent joint needs to precede all of its child joints.
 

@@ -20,7 +20,7 @@ protocol MEMessageSecurityHandler : MEMessageDecoder, MEMessageEncoder
 @protocol MEMessageSecurityHandler <MEMessageEncoder, MEMessageDecoder>
 ```
 
-#### Overview
+## Overview
 
 When users enable an extension that implements a message security handler, Mail passes incoming and outgoing message content to the extension for encryption and digital signing.
 

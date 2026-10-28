@@ -13,7 +13,7 @@
 THREAD_CALL_PRIORITY_KERNEL = 1
 ```
 
-#### Discussion
+## Discussion
 
 Importance similar to that of normal kernel threads.
 

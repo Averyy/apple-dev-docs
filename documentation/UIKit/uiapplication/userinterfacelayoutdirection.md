@@ -23,7 +23,7 @@ var userInterfaceLayoutDirection: UIUserInterfaceLayoutDirection { get }
 @property (nonatomic, readonly) UIUserInterfaceLayoutDirection userInterfaceLayoutDirection;
 ```
 
-#### Discussion
+## Discussion
 
 This method specifies the general user interface layout flow direction. See [`UIUserInterfaceLayoutDirection`](../uiuserinterfacelayoutdirection.md) for a description of the constants returned by this property.
 

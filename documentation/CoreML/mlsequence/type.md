@@ -25,7 +25,7 @@ var type: MLFeatureType { get }
 @property (nonatomic, readonly) MLFeatureType type;
 ```
 
-#### Discussion
+## Discussion
 
 The sequence’s underlying element type can only be either [`MLFeatureType.string`](../mlfeaturetype/string.md) or [`MLFeatureType.int64`](../mlfeaturetype/int64.md). Use this value to determine whether to access [`stringValues`](./stringvalues.md) or [`int64Values`](./int64values.md) at runtime.
 

@@ -16,7 +16,7 @@ If the notification should accept user input.
 @preconcurrency class var isInteractive: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `false`
 

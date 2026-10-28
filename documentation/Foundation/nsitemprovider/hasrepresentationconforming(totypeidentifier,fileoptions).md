@@ -25,7 +25,7 @@ func hasRepresentationConforming(toTypeIdentifier typeIdentifier: String, fileOp
 - (BOOL) hasRepresentationConformingToTypeIdentifier:(NSString *) typeIdentifier fileOptions:(NSItemProviderFileOptions) fileOptions;
 ```
 
-#### Discussion
+## Discussion
 
 To check all registered UTIs for type conformance, pass the value `0` in the `fileOptions` parameter.
 

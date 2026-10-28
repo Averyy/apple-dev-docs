@@ -23,7 +23,7 @@ var preferredElementSize: UIMenu.ElementSize { get set }
 @property (nonatomic) UIMenuElementSize preferredElementSize;
 ```
 
-#### Discussion
+## Discussion
 
 This property allows you to choose between different layouts in the context menu:
 

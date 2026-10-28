@@ -20,7 +20,7 @@ func setInsertionClassDescription(_ classDescription: NSScriptClassDescription)
 - (void) setInsertionClassDescription:(NSScriptClassDescription *) classDescription;
 ```
 
-#### Discussion
+## Discussion
 
 This message can be sent at any time after object initialization, but must be sent before evaluation to have any effect.
 

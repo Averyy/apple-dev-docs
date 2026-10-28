@@ -28,7 +28,7 @@ class MTLLogStateDescriptor
 
 - [Logging shader debug messages](./logging-shader-debug-messages.md)
 
-#### Overview
+## Overview
 
 Configure the descriptor to create an [`MTLLogState`](./mtllogstate.md) by calling [`makeLogState(descriptor:)`](./mtldevice/makelogstate%28descriptor%29.md).
 

@@ -5,7 +5,7 @@
 
 Create metadata tracks with samples that have the same size.
 
-#### Overview
+## Overview
 
 Some clients using timed metadata tracks may prefer to create metadata tracks with samples that have the same size. Two approaches are described here.
 
@@ -19,7 +19,7 @@ In the second approach, the size of individual metadata values may vary. It is p
 
 > **Note**: Because an atom has a minimum size of 8 bytes, the sum of the sizes of contained timed metadata media samples either must equal the target constant metadata media atom size, or must be 8 or more bytes smaller than the target constant atom size to allow for one or more padding atoms.
 
-#### Unreferenced or NULL timed metadata sample data
+## Unreferenced or NULL timed metadata sample data
 
 A timed metadata sample is identified by its derived atom type supplied by the `local_key_id` value in the metadata sample description’s key tables. An unreferenced metadata atom, meaning one which is not identified in the key tables and not having the reserved value `0xFFFFFFFF`, can be considered a “NULL” metadata media sample since its type is unknown in the local namespace and its data will not be interpreted. There is no prescribed atom type indicating a NULL metadata sample although a type of `0` is recommended, as mentioned in the [`Metadata key atom`](./metadata_key_atom.md) description. Using unreferenced atoms presents a useful way to supply padding when structuring a track for constant-sized metadata sample data or when there are runs of no-metadata interspersed with runs of metadata in a given track, instead of using multiple track edits.
 

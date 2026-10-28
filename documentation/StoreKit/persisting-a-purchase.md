@@ -5,7 +5,7 @@
 
 Keep a persistent record of a purchase to continue making the product available as needed.
 
-#### Overview
+## Overview
 
 After making a product available, your app needs to make a persistent record of the purchase. Your app uses that persistent record to continue making the product available on launch and to restore purchases. Your app’s persistence strategy depends on the type of products you sell:
 
@@ -17,7 +17,7 @@ When using the user defaults system or iCloud, your app can store a value, such 
 
 > **Note**:  When persisting with iCloud, your app’s persistent record syncs across devices, but your app is responsible for downloading any associated content on other devices.
 
-##### Persist purchases using the app receipt
+### Persist purchases using the app receipt
 
 The app receipt contains a record of the user’s purchases, cryptographically signed by Apple. For more information, see [Choosing a receipt validation technique](./choosing-a-receipt-validation-technique.md).
 
@@ -25,7 +25,7 @@ The system adds information about consumable products to the receipt when the us
 
 The system adds information about all other kinds of purchases to the receipt when the user purchases the products, and it remains in the receipt indefinitely.
 
-##### Persist a value in user defaults or iCloud
+### Persist a value in user defaults or iCloud
 
 To store information in user defaults or iCloud, set the value for a key.
 
@@ -56,7 +56,7 @@ NSUserDefaults *storage = [NSUserDefaults standardUserDefaults];
 [storage setObject:@15 forKey:@"highest_unlocked_level"];
 ```
 
-##### Persist purchases using your own server
+### Persist purchases using your own server
 
 Send a copy of the receipt to your server, along with credentials or an identifier, so you can keep track of which receipts belong to a particular user. For example, let users identify themselves to your server with a user name and password. Don’t use the [`identifierForVendor`](../UIKit/uidevice/identifierforvendor.md) property of [`UIDevice`](../UIKit/uidevice.md). Different devices have different values for this property, so you can’t use it to identify and restore purchases that the same user makes on a different device.
 

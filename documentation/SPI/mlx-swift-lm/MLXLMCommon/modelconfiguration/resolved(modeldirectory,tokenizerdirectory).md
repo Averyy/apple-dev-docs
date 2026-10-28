@@ -17,7 +17,7 @@ Maps this configuration’s behavioral properties into a [`ResolvedModelConfigur
 func resolved(modelDirectory: URL, tokenizerDirectory: URL) -> ResolvedModelConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 This is a pure data mapping with no I/O. The directories should already be resolved (downloaded or local) before calling this method.
 

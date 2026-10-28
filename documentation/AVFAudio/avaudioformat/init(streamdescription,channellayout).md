@@ -25,11 +25,11 @@ init?(streamDescription asbd: UnsafePointer<AudioStreamBasicDescription>, channe
 - (instancetype) initWithStreamDescription:(const AudioStreamBasicDescription *) asbd channelLayout:(AVAudioChannelLayout *) layout;
 ```
 
-#### Return Value
+## Return Value
 
 A new `AVAudioFormat` instance, or `nil` if the initialization fails.
 
-#### Discussion
+## Discussion
 
 When `layout` is `nil`, and `asbd` specifies one or two channels, this method assumes mono or stereo layout, respectively.
 

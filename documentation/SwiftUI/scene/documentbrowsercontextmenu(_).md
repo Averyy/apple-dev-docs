@@ -19,7 +19,7 @@ Adds to a `DocumentGroupLaunchScene` actions that accept a list of selected file
 @preconcurrency func documentBrowserContextMenu(@ContentBuilder _ menu: @escaping ([URL]?) -> some View) -> some Scene
 ```
 
-#### Discussion
+## Discussion
 
 The actions are displayed in the document browser navigation bar when a document browser is in Select mode, and also added to context menu for the file items.
 

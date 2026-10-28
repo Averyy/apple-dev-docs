@@ -25,7 +25,7 @@ let kSecTrustOrganizationName: CFString
 extern CFStringRef const kSecTrustOrganizationName;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFString`](../CoreFoundation/cfstring.md) that is meant to be displayed to the user as the validated name of the company or entity that owns the certificate, but only if the [`kSecTrustExtendedValidation`](./ksectrustextendedvalidation.md) key is present.
 

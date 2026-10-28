@@ -15,7 +15,7 @@ The value corresponding to this key is the currently configured value for this p
 extern CFStringRef const kVTRAWProcessingParameter_CurrentValue;
 ```
 
-#### Discussion
+## Discussion
 
 For List types, this is the ListElementID for the List element.
 

@@ -20,7 +20,7 @@ Posted when a movie player is about to enter full-screen mode.
 static let MPMoviePlayerWillEnterFullscreen: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The `userInfo` dictionary contains keys whose values describe the transition animation used to enter full-screen mode. See [Fullscreen notification keys](../../../MediaPlayer/fullscreen-notification-keys.md).
 

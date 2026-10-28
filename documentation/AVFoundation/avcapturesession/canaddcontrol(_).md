@@ -27,11 +27,11 @@ func canAddControl(_ control: AVCaptureControl) -> Bool
 
 - [Enhancing your app experience with the Camera Control](../enhancing-your-app-experience-with-the-camera-control.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the capture session can add the control; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Call this method to determine whether you can successfully add a control to a capture session using the [`addControl(_:)`](./addcontrol%28_%29.md) method. A capture session may not be able to add a control due to its current session configuration or if unsupported by the host platform.
 

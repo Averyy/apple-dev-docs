@@ -9,11 +9,11 @@ List all issues that occurred for a specific action that Xcode Cloud performed a
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below lists all issues Xcode Cloud encountered when it performed a build. Use the information provided in the response to display issue information on a dashboard, generate reports, automatically create tasks in your issue tracker, and so on.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

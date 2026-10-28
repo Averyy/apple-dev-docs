@@ -25,11 +25,11 @@ func CFPreferencesAppValueIsForced(_ key: CFString, _ applicationID: CFString) -
 extern Boolean CFPreferencesAppValueIsForced(CFStringRef key, CFStringRef applicationID);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if value of the key cannot be changed by the user, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 In cases where machines and/or users are under some kind of management, you should use this function to determine whether or not to disable UI elements corresponding to those preference keys.
 

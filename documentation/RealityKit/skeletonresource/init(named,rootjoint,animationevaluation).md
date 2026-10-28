@@ -20,7 +20,7 @@ Creates a skeleton resource with the specified name, joint hierarchy, and animat
 convenience init(named name: String, rootJoint: SkeletonResource.Joint, animationEvaluation: SkeletonResource.AnimationEvaluation = .init()) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the joint hierarchy contains invalid data, or if the underlying resource cannot be created.
 

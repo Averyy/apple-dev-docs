@@ -21,7 +21,7 @@ A type that represents tag classes.
 struct UTTagClass
 ```
 
-#### Overview
+## Overview
 
 A tag class is a label that represents the mapping of a [`UTType`](./uttype-swift.struct.md) to another type system; for example, a MIME type or a file system extension.
 

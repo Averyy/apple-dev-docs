@@ -15,7 +15,7 @@ A Boolean value indicating if box has video capabilities.
 bool HasVideo();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

@@ -18,8 +18,8 @@ Fetches only the subset of the attached model type that satisfy the provided fet
 ## Declaration
 
 ```swift
-@attached
-(accessor) @attached(peer, names: prefixed(`_`)) macro Query<Element>(_ descriptor: FetchDescriptor<Element>, animation: Animation) where Element : PersistentModel
+@attached(accessor)
+@attached(peer, names: prefixed(`_`)) macro Query<Element>(_ descriptor: FetchDescriptor<Element>, animation: Animation) where Element : PersistentModel
 ```
 
 ## Parameters

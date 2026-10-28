@@ -15,7 +15,7 @@ The base class of range-related validation errors.
 interface ValueRangeError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValidationError`.
 

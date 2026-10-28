@@ -17,11 +17,11 @@ Computes the hinge loss between inputs and targets.
 func hingeLoss(inputs: MLXArray, targets: MLXArray, reduction: LossReduction = .none) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Computed hinge loss
 
-##### See Also
+### See Also
 
 - [Loss Functions](./losses.md)
 

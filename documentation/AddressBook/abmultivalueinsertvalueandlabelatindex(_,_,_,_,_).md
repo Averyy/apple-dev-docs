@@ -23,11 +23,11 @@ func ABMultiValueInsertValueAndLabelAtIndex(_ multiValue: ABMutableMultiValue!, 
 extern bool ABMultiValueInsertValueAndLabelAtIndex(ABMutableMultiValueRef multiValue, CFTypeRef value, CFStringRef label, CFIndex index, ABMultiValueIdentifier *outIdentifier);
 ```
 
-#### Return Value
+## Return Value
 
 `true` when value and label are inserted successfully into multiValue, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This function performs no type checking. It allows the insertion of values whose type does not match the type declared for `multiValue`.
 

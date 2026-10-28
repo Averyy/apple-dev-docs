@@ -13,11 +13,11 @@ virtual bool matchPropertyTable(
  SInt32 *score );
 ```
 
-#### Return Value
+## Return Value
 
 `false` if the family considers the matching dictionary does not match in properties it understands; `true` otherwise.
 
-#### Overview
+## Overview
 
 All matching on an IOService object will call this method to allow a family writer to implement matching in addition to the generic methods provided by IOService. The implementer should examine the matching dictionary passed to see if it contains properties the family understands for matching, and use them to match with the IOService object if so. Note that since matching is also carried out by other parts of the I/O Kit, the matching dictionary may contain properties the family does not understand - these should not be considered matching failures.
 

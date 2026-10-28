@@ -15,7 +15,7 @@ The playback speed.
 attribute int playbackRate;
 ```
 
-#### Discussion
+## Discussion
 
 The default playback speed is `1.0`. Speeds with values smaller than `1.0` play in slow motion. Values higher than `1.0` are time-lapsed. Setting the playback rate to `0` or `1` is not supported, use [`stop`](./api-1627406-stop.md) and [`play`](./api-1627432-play.md) respectively.
 

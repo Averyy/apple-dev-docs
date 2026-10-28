@@ -19,7 +19,7 @@ func removeColumn(_ col: Int)
 - (void) removeColumn:(NSInteger) col;
 ```
 
-#### Discussion
+## Discussion
 
 The column’s cells are autoreleased. This method redraws the receiver. Your code should normally send [`sizeToCells()`](./sizetocells%28%29.md) after invoking this method to resize the receiver so it fits the reduced cell count.
 

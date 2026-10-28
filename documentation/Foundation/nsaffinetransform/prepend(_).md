@@ -28,7 +28,7 @@ func prepend(_ transform: AffineTransform)
 - (void) prependTransform:(NSAffineTransform *) transform;
 ```
 
-#### Discussion
+## Discussion
 
 This method multiplies the matrix in `transform` by the receiver’s matrix and replaces the receiver’s matrix with the result. This type of operation is the same as applying the transformations in `transform` followed by the transformations in the receiver.
 

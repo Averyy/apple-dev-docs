@@ -21,11 +21,11 @@ Opens an extract output archive stream.
 static func extractStream(extractingTo directory: FilePath, selectUsing filter: ArchiveHeader.EntryFilter? = nil, flags: ArchiveFlags = [], threadCount: Int = 0) -> ArchiveStream?
 ```
 
-#### Return Value
+## Return Value
 
 A new archive stream.
 
-#### Discussion
+## Discussion
 
 For each entry received by the stream, the operation first calls the `filter` closure with the [`extractBegin`](../archiveheader/entrymessage/extractbegin.md) message and `data` referencing an [`ArchiveHeader`](../archiveheader.md) instance.
 

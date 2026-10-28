@@ -22,11 +22,11 @@ nonisolated
 func listRowBackground<V>(_ view: V?) -> some View where V : View
 ```
 
-#### Return Value
+## Return Value
 
 A list row view with `view` as its background view.
 
-#### Discussion
+## Discussion
 
 Use `listRowBackground(_:)` to place a custom background view behind a list row item.
 

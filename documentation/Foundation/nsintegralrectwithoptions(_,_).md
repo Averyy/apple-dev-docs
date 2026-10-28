@@ -22,7 +22,7 @@ func NSIntegralRectWithOptions(_ aRect: NSRect, _ opts: AlignmentOptions) -> NSR
 extern NSRect NSIntegralRectWithOptions(NSRect aRect, NSAlignmentOptions opts);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of `aRect`, modified based on the options. The options are defined in `NSAlignmentOptions`.
 

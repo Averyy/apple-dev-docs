@@ -19,11 +19,11 @@
 static SPSize3DFloat SPSize3DFloatScaleBySize(SPSize3DFloat size, SPSize3DFloat scale);
 ```
 
-#### Return Value
+## Return Value
 
 A size that’s scaled by the specified value.
 
-#### Discussion
+## Discussion
 
 Returns a size with dimensions scaled by the specified size.
 

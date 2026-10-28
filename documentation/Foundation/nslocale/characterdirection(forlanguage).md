@@ -25,7 +25,7 @@ class func characterDirection(forLanguage isoLangCode: String) -> NSLocale.Langu
 + (NSLocaleLanguageDirection) characterDirectionForLanguage:(NSString *) isoLangCode;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the direction in which characters appear within a line in the specified language. See [`NSLocale.LanguageDirection`](./languagedirection.md) for possible values. If the appropriate direction can’t be determined [`NSLocale.LanguageDirection.unknown`](./languagedirection/unknown.md) is returned.
 

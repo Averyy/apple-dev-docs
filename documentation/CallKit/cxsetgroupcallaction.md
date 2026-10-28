@@ -23,7 +23,7 @@ class CXSetGroupCallAction
 @interface CXSetGroupCallAction : CXCallAction
 ```
 
-#### Overview
+## Overview
 
 [`CXSetGroupCallAction`](./cxsetgroupcallaction.md) is a concrete subclass of [`CXCallAction`](./cxcallaction.md). When the user or the system groups a call with another call, the provider sends [`provider(_:perform:)`](./cxproviderdelegate/provider%28_,perform%29-9masw.md) to its delegate. The provider’s delegate calls the [`fulfill()`](./cxaction/fulfill%28%29.md) method to indicate that the action was successfully performed. A group call allows more than two recipients to simultaneously communicate with one another.
 

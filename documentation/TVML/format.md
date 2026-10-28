@@ -5,7 +5,7 @@
 
 Specifies how a date is displayed.
 
-#### Overview
+## Overview
 
 Here’s an example that sets the date to January 19, 2031.
 
@@ -13,11 +13,11 @@ Here’s an example that sets the date to January 19, 2031.
 <date format="MMMM dd, yyyy">2031-01-19</date>
 ```
 
-##### Values for format
+### Values for format
 
 - **String**: The format for the date string.
 
-##### Elements that Use format
+### Elements that Use format
 
 - [date](./date.md)
 

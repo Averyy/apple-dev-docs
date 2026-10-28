@@ -25,7 +25,7 @@ var identifier: String? { get }
 @property (copy, readonly, nullable) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set only when you use the [`background(withIdentifier:)`](./background%28withidentifier%29.md) method to create the configuration object. The string uniquely identifies a background session object. In iOS, you use this string in cases where the app was terminated while transfers were occurring in the background. When the app relaunches, it uses the string to recreate the configuration and session objects associated with the transfers.
 

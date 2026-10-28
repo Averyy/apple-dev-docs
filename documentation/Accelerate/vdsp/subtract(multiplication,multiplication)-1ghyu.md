@@ -25,11 +25,11 @@ static func subtract<R, S, T, U>(multiplication multiplicationAB: (a: T, b: U), 
 
 - [Using vDSP for vector-based arithmetic](../using-vdsp-for-vector-based-arithmetic.md)
 
-#### Return Value
+## Return Value
 
 The output vector `E` in `E = (A * B) - (C * D)`.
 
-#### Discussion
+## Discussion
 
 This function calculates the differences of the first `N` elements of the product of vectors `A` and `B` and the product of vectors `C` and `D`, as follows:
 

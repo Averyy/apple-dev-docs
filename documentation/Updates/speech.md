@@ -5,11 +5,11 @@
 
 Learn about important changes to Speech.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Speech](../Speech/Speech.md).
 
-#### June 2026
+## June 2026
 
 - Access audio from a file, asset, or capture device, such as a microphone, by using [`AssetInputSequenceProvider`](../Speech/assetinputsequenceprovider.md) or [`CaptureInputSequenceProvider`](../Speech/captureinputsequenceprovider.md).
 - Use [`AnalyzerInputConverter`](../Speech/analyzerinputconverter.md) to convert [`AVAudioBuffer`](../AVFAudio/avaudiobuffer.md) data into formats that [`AnalyzerInput`](../Speech/analyzerinput.md) supports.

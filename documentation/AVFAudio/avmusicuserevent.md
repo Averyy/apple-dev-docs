@@ -24,7 +24,7 @@ class AVMusicUserEvent
 @interface AVMusicUserEvent : AVMusicEvent
 ```
 
-#### Overview
+## Overview
 
 When playback of an [`AVMusicTrack`](./avmusictrack.md) reaches this event, the system calls the track’s callback. You can’t modify the size and contents of an [`AVMusicUserEvent`](./avmusicuserevent.md) once you create it.
 

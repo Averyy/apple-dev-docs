@@ -19,15 +19,15 @@ func UCCreateCollator(_ locale: LocaleRef!, _ opVariant: LocaleOperationVariant,
 OSStatus UCCreateCollator(LocaleRef locale, LocaleOperationVariant opVariant, UCCollateOptions options, CollatorRef *collatorRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.  The function can return memory errors and `paramErr`, for example, if the `collatorRef` parameter is `NULL`. It can also return resource errors in Mac OS 9 and CarbonLib.
 
-#### Discussion
+## Discussion
 
 To perform Unicode string comparison, you must supply locale and collation specifications to a collation function such as  [`UCCompareText(_:_:_:_:_:_:_:)`](./api-1390642-uccomparetext.md). You provide this information by means of a collator object, created via the `UCCreateCollator` function. When finished with the collator object, you dispose of it using the function  [`UCDisposeCollator(_:)`](./api-1390435-ucdisposecollator.md). 
 
-##### Special Considerations
+### Special Considerations
 
 The collator object is allocated in the current heap. This function can move memory.
 

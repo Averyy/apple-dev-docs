@@ -19,7 +19,7 @@ static let face: NSFontDescriptor.AttributeName
 extern NSFontDescriptorAttributeName NSFontFaceAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../../Foundation/nsstring.md) object.
 

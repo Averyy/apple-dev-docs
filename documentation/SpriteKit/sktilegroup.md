@@ -25,7 +25,7 @@ class SKTileGroup
 @interface SKTileGroup : NSObject
 ```
 
-#### Overview
+## Overview
 
 An `SKTileGroup` object contains either the definition of a single tile or an array of [`SKTileGroupRule`](./sktilegrouprule.md) objects that define adjacency rules.
 

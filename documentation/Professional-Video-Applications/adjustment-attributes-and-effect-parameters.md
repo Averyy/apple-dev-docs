@@ -5,11 +5,11 @@
 
 Specify values to change adjustment attributes and effects parameters.
 
-#### Overview
+## Overview
 
 Each adjustment element has attributes that affect the adjustment you make. You specify the values of certain adjustment attributes and effect parameters and change them for the entire duration of the parent element. You can also create animated adjustments by varying attribute values over time.
 
-##### Parameter Element
+### Parameter Element
 
 Add a parameter (`param`) element for each adjustment attribute or effect parameter you want to change. You can also use the `param` element to create keyframe animations by changing adjustment attributes and effect parameters over time. For more information on how to create keyframe animations, see [Animation](./animation.md).
 
@@ -41,7 +41,7 @@ Some effect parameters allow structured data. Represent the structured data with
 
 > **Note**:  Starting in FCPXML 1.5, use structured parameter data to describe the three-dimensional text and other effects.
 
-##### data Element
+### data Element
 
 Some adjustments and effects, such as `filter-audio`, `filter-video`, and `mask-isolation`, allow preserving parameter information in an internal binary format. Final Cut Pro uses the `data` element to preserve parameter information of these adjustment and effects elements.
 

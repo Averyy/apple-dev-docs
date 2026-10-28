@@ -22,7 +22,7 @@ let kCFStreamPropertySSLContext: CFString
 extern CFStringRef const kCFStreamPropertySSLContext;
 ```
 
-#### Discussion
+## Discussion
 
 The `SSLContextRef` object used for read and write operations on a stream.
 

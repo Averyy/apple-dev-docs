@@ -16,7 +16,7 @@ Key for dictionary returned by IOCopySystemLoadAdvisoryDetailed
 #define kIOSystemLoadAdvisoryThermalLevelKey
 ```
 
-#### Discussion
+## Discussion
 
 Indicates thermal constraints on the current SystemLoadAdvisory level.
 

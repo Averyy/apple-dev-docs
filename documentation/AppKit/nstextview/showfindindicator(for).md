@@ -19,7 +19,7 @@ func showFindIndicator(for charRange: NSRange)
 - (void) showFindIndicatorForRange:(NSRange) charRange;
 ```
 
-#### Discussion
+## Discussion
 
 This method supports lozenge-style indication of find results. The indicators automatically disappear after a certain period of time, or when the method is called again, or when any of a number of changes occur to the view (such as changes to text, view size, or view position).
 

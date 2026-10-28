@@ -23,7 +23,7 @@ A `TabViewStyle` that displays a paged scrolling `TabView`.
 
 Available when `Self` is `PageTabViewStyle`.
 
-#### Discussion
+## Discussion
 
 To apply this style to a tab view, or to a view that contains tab views, use the [`tabViewStyle(_:)`](../view/tabviewstyle%28_%29.md) modifier.
 

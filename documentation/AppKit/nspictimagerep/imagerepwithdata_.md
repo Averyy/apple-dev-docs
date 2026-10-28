@@ -15,7 +15,7 @@ Creates and returns a representation of an image from the specified data in the 
 + (instancetype) imageRepWithData:(NSData *) pictData;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`NSPICTImageRep`](../nspictimagerep.md), or `nil` if the object could not be initialized. Initialization may fail if the data does not conform to the PICT file format.
 

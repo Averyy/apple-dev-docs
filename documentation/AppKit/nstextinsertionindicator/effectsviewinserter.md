@@ -23,7 +23,7 @@ var effectsViewInserter: ((NSView) -> Void)? { get set }
 
 - [Adopting the system text cursor in custom text views](../adopting-the-system-text-cursor-in-custom-text-views.md)
 
-#### Discussion
+## Discussion
 
 Use this property to add the view that displays the trailing glow to the view hierarchy. The system calls the closure when it needs to display the glow effect view.
 

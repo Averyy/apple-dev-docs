@@ -25,7 +25,7 @@ func copy(using transform: UnsafePointer<CGAffineTransform>?) -> CGPath?
 extern CGPathRefCGPathCreateCopyByTransformingPath(CGPathRef path, const CGAffineTransform *transform);
 ```
 
-#### Return Value
+## Return Value
 
 A new, immutable copy of the path. You are responsible for releasing this object.
 

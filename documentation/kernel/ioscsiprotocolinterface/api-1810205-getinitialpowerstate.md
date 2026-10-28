@@ -12,11 +12,11 @@ virtual UInt32 GetInitialPowerState (
  void ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 A power state ordinal.
 
-#### Overview
+## Overview
 
 This method is called to obtain the initial power state of the device (usually the highest). Subclasses must override this method.
 

@@ -21,7 +21,7 @@ type DistanceUnitSystem =
     (typeof DistanceUnitSystem)[keyof typeof DistanceUnitSystem];
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the map’s [`distances`](./map/distances-data.property.md) property.
 

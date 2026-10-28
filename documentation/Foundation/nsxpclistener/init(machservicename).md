@@ -19,7 +19,7 @@ init(machServiceName name: String)
 - (instancetype) initWithMachServiceName:(NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 For example, you might use this in an agent launched by launchd with a `launchd.plist` contained in `~/Library/LaunchAgents`, or a daemon launched by launchd with a `launchd.plist` contained in `/Library/LaunchDaemons`.
 

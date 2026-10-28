@@ -25,7 +25,7 @@ func save(_ zone: CKRecordZone, completionHandler: @escaping @Sendable (CKRecord
 - (void) saveRecordZone:(CKRecordZone *) zone completionHandler:(void (^)(CKRecordZone *zone, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameters:
 

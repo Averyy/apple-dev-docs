@@ -25,7 +25,7 @@ case update
 MLModelErrorUpdate
 ```
 
-#### Discussion
+## Discussion
 
 Core ML typically throws (Swift) or returns (Objective-C) this error when the update process encounters a problem at runtime, such as an [`MLMultiArray`](../../mlmultiarray.md) input with an incorrect shape.
 

@@ -21,7 +21,7 @@ Converts a vector of single-precision floating-point values to unsigned 16-bit i
 extern void vDSP_vfixu16(const float *__A, vDSP_Stride __IA, unsigned short *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The following code shows an example of using this function:
 

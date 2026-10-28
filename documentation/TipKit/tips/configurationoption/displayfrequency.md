@@ -21,7 +21,7 @@ A type for specifying the minimum duration after one tip is shown before another
 struct DisplayFrequency
 ```
 
-#### Overview
+## Overview
 
 For more information on display frequency, see [`displayFrequency(_:)`](./displayfrequency%28_%29.md).
 

@@ -5,7 +5,7 @@
 
 Model, measure, and boost the performance of your app by using a continuous-improvement cycle.
 
-#### Overview
+## Overview
 
 People using your app expect it to perform well. An app that takes a long time to launch, or responds slowly to input, may appear as if it isn’t working or is sluggish. An app that makes a lot of large network requests may increase a person’s data charges and drain the device battery. Similarly, an app that consumes a lot of disk space leaves a person’s device with less space for other content or apps. Any of these behaviors can frustrate people and lead them to uninstall your app.
 
@@ -32,7 +32,7 @@ Minimizing resource use benefits your users and improves their perceptions of yo
 
 Even when your measurements and observations show no pressing performance problems, it’s a good idea to run through the performance-improvement cycle and do preventive work to keep your app’s performance from regressing.
 
-##### Gather data about your app’s current performance
+### Gather data about your app’s current performance
 
 To thoroughly understand your app’s performance, combine information from multiple sources:
 
@@ -41,7 +41,7 @@ To thoroughly understand your app’s performance, combine information from mult
 - Get feedback from [TestFlight](https://developer.apple.com/testflight/) testers about their experiences with beta versions of your app. Fill out the Test Information page for your beta version, and request that testers provide feedback about the performance of your app. Include an email address so that testers can report their findings.
 - Investigate feedback from your users about their experiences with released versions of your app. Invite users to send their feedback through email or a dedicated interface within your app. Ask them about their experiences using the app — both what works well and any problems they encounter.
 
-##### Determine the most important aspect to improve
+### Determine the most important aspect to improve
 
 Use the information from your observations and your understanding of your app’s purpose and expected use patterns to spot the greatest opportunities for improvement. Some performance issues are independent of the type of app under investigation. An app that takes a long time to launch, or is unresponsive to users’ attempts to manipulate the interface, results in users feeling they have no control over the app.
 
@@ -49,7 +49,7 @@ The largest value for a metric you see in the Metrics organizer or in MetricKit 
 
 Seeing that value dominate the metric reports can indicate that efficiency savings are possible, but the most impactful changes may be in the use of auxiliary services that don’t impact the app’s main features. The podcast player might infrequently need to use coarse-grained location services to recommend local-interest podcasts to the listener, but the high-energy consumption associated with the frequent tracking of the user’s precise location may be a sign that a change is necessary.
 
-##### Profile your app
+### Profile your app
 
 Use [Instruments](https://help.apple.com/instruments/mac/current/) to profile your app with a profiling template that’s relevant to the metric you’re considering:
 
@@ -63,11 +63,11 @@ You get higher-fidelity measurements by profiling on a device instead of the sim
 
 Find the code that’s causing the performance problem, and create a plan for improving it. Keep in mind that your change may not be localized to a particular line or even function, and you may need to make significant architectural changes to your app. For example, to mitigate a hang that results from synchronously downloading network resources, introduce background operations to handle the networking (see [Downloading files in the background](../Foundation/downloading-files-in-the-background.md)), and perform a UI update on the main thread when the downloads are complete.
 
-##### Make the next change
+### Make the next change
 
 Implement the change you plan as a result of your investigation. Create an *after* profile in Instruments that you can compare with the *before* profile to ensure your change results in an improvement. Consider writing a performance test in [XCTest](../XCTest/XCTest.md) to protect against future regressions in performance, and to serve as a record that the problem existed and you fixed it.
 
-##### Compare the changed behavior with your original data
+### Compare the changed behavior with your original data
 
 After you change your app to address the most important performance issue you observe, confirm that the change has the desired effect and that the level of improvement is sufficient. Use the graphs of performance metrics for each version of your app in Xcode’s Metrics organizer to see whether the change results in an improvement or a regression.
 

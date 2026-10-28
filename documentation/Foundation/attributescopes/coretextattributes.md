@@ -21,7 +21,7 @@ A namespace for attributes defined by CoreText.
 struct CoreTextAttributes
 ```
 
-#### Overview
+## Overview
 
 Note that this is *not* an [`AttributeScope`](../attributescope.md), but merely a namespace for [`AttributedStringKey`](../attributedstringkey.md)s that describe CoreText concepts. Those attributes may be used by *other frameworks* to describe those concepts. Unless documented otherwise, frameworks generally inidcate support for a certain attribute by adding it to the framework’s [`AttributeScope`](../attributescope.md).
 

@@ -19,7 +19,7 @@ var markedTextAttributes: [NSAttributedString.Key : Any]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,id> * markedTextAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 Text color, background color, and underline are the only supported attributes for marked text.
 

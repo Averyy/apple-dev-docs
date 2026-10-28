@@ -21,7 +21,7 @@ final class AVSystemRouteController
 
 - [Routing media to third-party devices](./routing-media-to-third-party-devices.md)
 
-#### Overview
+## Overview
 
 Important: Your app must declare support for Media Sharing Extensions with the `MDESupportsUniversalURLPlayback` key and/or for specific protocols in the `MDESupportedProtocols` key of  the app’s `Info.plist`.  ///
 

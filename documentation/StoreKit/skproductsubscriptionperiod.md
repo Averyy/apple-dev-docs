@@ -27,7 +27,7 @@ class SKProductSubscriptionPeriod
 @interface SKProductSubscriptionPeriod : NSObject
 ```
 
-#### Overview
+## Overview
 
 A subscription period is a duration of time defined as some number of units, where a unit can be a [`SKProduct.PeriodUnit.day`](./skproduct/periodunit/day.md), [`SKProduct.PeriodUnit.week`](./skproduct/periodunit/week.md), [`SKProduct.PeriodUnit.month`](./skproduct/periodunit/month.md), or [`SKProduct.PeriodUnit.year`](./skproduct/periodunit/year.md).
 

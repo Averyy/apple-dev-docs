@@ -17,7 +17,7 @@ Types of data in the finance store supported by background delivery.
 enum BackgroundDataType
 ```
 
-#### Overview
+## Overview
 
 When these types of data change in the finance store, any background delivery extension with updates enabled for them will be notified.
 

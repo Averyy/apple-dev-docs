@@ -21,7 +21,7 @@ The size of the presentation is dictated by the ideal size of the content.
 struct FittedPresentationSizing
 ```
 
-#### Overview
+## Overview
 
 The presentation is sized by proposing `nil` in the horizontal and vertical dimensions.
 

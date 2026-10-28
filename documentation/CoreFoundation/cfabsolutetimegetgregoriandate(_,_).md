@@ -27,7 +27,7 @@ func CFAbsoluteTimeGetGregorianDate(_ at: CFAbsoluteTime, _ tz: CFTimeZone!) -> 
 extern CFGregorianDate CFAbsoluteTimeGetGregorianDate(CFAbsoluteTime at, CFTimeZoneRef tz);
 ```
 
-#### Return Value
+## Return Value
 
 The Gregorian date equivalent for `at`.
 

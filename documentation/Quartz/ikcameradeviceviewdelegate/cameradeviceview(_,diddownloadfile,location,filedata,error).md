@@ -19,7 +19,7 @@ optional func cameraDeviceView(_ cameraDeviceView: IKCameraDeviceView!, didDownl
 - (void) cameraDeviceView:(IKCameraDeviceView *) cameraDeviceView didDownloadFile:(ICCameraFile *) file location:(NSURL *) url fileData:(NSData *) data error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`IKCameraDeviceView`](../ikcameradeviceview.md) [`transferMode`](../ikcameradeviceview/transfermode.md) property is [`IKCameraDeviceViewTransferMode.fileBased`](../ikcameradeviceviewtransfermode/filebased.md) then camera file will have been saved to  `url`. The URL will be a complete path to save the file, including a ‘sequence number’ if the file already exists.
 

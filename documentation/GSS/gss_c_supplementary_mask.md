@@ -23,7 +23,7 @@ var GSS_C_SUPPLEMENTARY_MASK: UInt { get }
 #define GSS_C_SUPPLEMENTARY_MASK
 ```
 
-#### Discussion
+## Discussion
 
 Shift the mask to the left by [`GSS_C_SUPPLEMENTARY_OFFSET`](./gss_c_supplementary_offset.md) to put it in the correct position within the major status code to match the supplementary information field. The [`GSS_SUPPLEMENTARY_INFO`](./gss_supplementary_info.md) macro does this for you, before bitwise `AND`ing with its input.
 

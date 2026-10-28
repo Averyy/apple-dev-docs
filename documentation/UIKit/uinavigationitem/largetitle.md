@@ -21,7 +21,7 @@ var largeTitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * largeTitle;
 ```
 
-#### Discussion
+## Discussion
 
 When `nil`, the navigation bar will use the navigation item’s current title.
 

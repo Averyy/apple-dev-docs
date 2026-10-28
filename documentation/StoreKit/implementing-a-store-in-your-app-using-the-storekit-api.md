@@ -12,7 +12,7 @@ Offer Apple In-App Purchases and manage entitlements using signed transactions a
 - Mac Catalyst 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 The sample project demonstrates how to use StoreKit in a SwiftUI-based iOS app with a simulated app server, SKDemoServer. SKDemoServer is a Swift package that acts as the app’s backend by vending product identifiers and persisting consumable purchase entitlements using SwiftData.
 
@@ -20,7 +20,7 @@ To test your implementation of Apple In-App Purchases using StoreKit, you can us
 
 > **Note**: This sample code project is associated with WWDC26 session 210: [What’s new in Apple In-App Purchase](https://developer.apple.com/videos/play/wwdc2026/210).
 
-##### Test the sample code project in Xcode
+### Test the sample code project in Xcode
 
 This sample code project implements StoreKit Testing in Xcode to let you test Apple In-App Purchases without completing any product set up in App Store Connect. It defines Apple In-App Purchases in a `Products.storekit` file.
 
@@ -31,7 +31,7 @@ To test the sample in Xcode:
 3. Build and run the sample app on a device or in the Simulator.
 4. The sample app displays a list of products available for sale in `Products.storekit` upon launching. If the sample app fails to display an Apple In-App Purchase, see [TN3185: Troubleshooting In-App Purchases availability in Xcode](../Technotes/tn3185-troubleshooting-in-app-purchases-availability-in-xcode.md).
 
-##### Test the sample code project in the sandbox environment
+### Test the sample code project in the sandbox environment
 
 To test your app in the sandbox environment, sign in to a Sandbox Apple Account. In the sandbox environment, you can test Apple In-App Purchases using real product information from App Store Connect without incurring charges. This sample code project defines Apple In-App Purchases in a `Products.plist` file. Before you can start testing the sample app in the sandbox environment, you need to complete configuration steps in App Store Connect and Xcode. For more information, see “Prepare for sandbox testing” in [Testing Apple In-App Purchases with sandbox](./testing-in-app-purchases-with-sandbox.md).
 

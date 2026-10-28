@@ -24,7 +24,7 @@ var shouldMoveFile: Bool { get set }
 @property (nonatomic, assign) BOOL shouldMoveFile;
 ```
 
-#### Discussion
+## Discussion
 
 This property applies only when creating an asset resource with the [`addResource(with:fileURL:options:)`](../phassetcreationrequest/addresource%28with,fileurl,options%29.md) method. If this value is `true`, Photos moves the specified file into the Photos library to create the asset resource, removing the original file after the asset has been successfully created. When using this option, Photos does not make an intermediary copy of the resource data, so no additional storage space is required.
 

@@ -23,7 +23,7 @@ var effectiveUserInterfaceLayoutDirection: UIUserInterfaceLayoutDirection { get 
 @property (nonatomic, readonly) UIUserInterfaceLayoutDirection effectiveUserInterfaceLayoutDirection;
 ```
 
-#### Discussion
+## Discussion
 
 When a view’s immediate content is being arranged or drawn, you should always consult the value of this property. In addition, note that you can’t assume that the value propagates through the view’s subtree.
 

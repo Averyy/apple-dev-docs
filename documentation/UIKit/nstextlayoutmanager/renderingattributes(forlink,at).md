@@ -23,11 +23,11 @@ func renderingAttributes(forLink link: Any, at location: any NSTextLocation) -> 
 - (NSDictionary<NSString *,id> *) renderingAttributesForLink:(id) link atLocation:(id<NSTextLocation>) location;
 ```
 
-#### Return Value
+## Return Value
 
 A  dictionary of rendering attributes.
 
-#### Discussion
+## Discussion
 
 As with other rendering attributes, specifying [`NSNull`](../../Foundation/nsnull.md) removes the attribute from the final attributes the framework uses for rendering. It has priority over the general rendering attributes.
 

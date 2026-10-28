@@ -15,7 +15,7 @@ An array of media items to be played in an Apple TV client-server app.
 interface Playlist
 ```
 
-#### Overview
+## Overview
 
 In order to play audio or video, at a minimum, there must be a [`Player`](./player.md) object that contains a single `Playlist` object, which contains a single [`MediaItem`](./mediaitem.md) object.
 

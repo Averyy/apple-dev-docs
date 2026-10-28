@@ -20,7 +20,7 @@ func accessibilityRange(forLine lineNumber: Int) -> NSRange
 - (NSRange) accessibilityRangeForLine:(NSInteger) lineNumber;
 ```
 
-#### Return Value
+## Return Value
 
 The range of characters for the specified line number. If the line ends with a newline character, including the newline is preferred.
 

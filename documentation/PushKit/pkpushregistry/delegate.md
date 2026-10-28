@@ -24,7 +24,7 @@ weak var delegate: (any PKPushRegistryDelegate)? { get set }
 @property (weak, readwrite, nullable) id<PKPushRegistryDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 You must assign a valid object to this property before modifying the [`desiredPushTypes`](./desiredpushtypes.md) property. A valid delegate object is required to receive push tokens and payload data from incoming pushes.
 

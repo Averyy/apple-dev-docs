@@ -25,7 +25,7 @@ static var stable: NSSortOptions { get }
 NSSortStable
 ```
 
-#### Discussion
+## Discussion
 
 If this option is unspecified, equal objects may, or may not be returned in their original order.
 

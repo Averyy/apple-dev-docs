@@ -17,7 +17,7 @@ An action that presents a system sheet for significant app update acknowledgment
 struct SignificantUpdateAction
 ```
 
-#### Overview
+## Overview
 
 Use this function to inform people about important changes to your app that require their acknowledgment and consent before proceeding.
 

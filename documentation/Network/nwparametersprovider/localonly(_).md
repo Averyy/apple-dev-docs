@@ -22,7 +22,7 @@ Limit inbound connections to peers attached to the local link.
 func localOnly(_ local: Bool) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 Listeners will only advertise services on the local link and will only accept connections from the local link.
 

@@ -20,7 +20,7 @@ Export the accumulated data to a file.
 func export(to path: URL) async throws
 ```
 
-#### Discussion
+## Discussion
 
 The file produced by this method can be provided to `SFSpeechLanguageModel.prepareCustomLanguageModel` to produce language model and vocabulary files that are then ready to be used in conjunction with the `SFSpeechRecognizer`.
 

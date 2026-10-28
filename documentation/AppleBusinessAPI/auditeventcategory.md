@@ -23,7 +23,7 @@ string AuditEventCategory
 - `PURCHASING`
 - `DEVICE_MANAGEMENT`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

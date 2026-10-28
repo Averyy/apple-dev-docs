@@ -24,7 +24,7 @@ var touchedChangedHandler: GCControllerButtonTouchedChangedHandler? { get set }
 @property (nonatomic, copy, nullable) GCControllerButtonTouchedChangedHandler touchedChangedHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Set this handler when you want to know when the user touches the button before pressing the button.
 

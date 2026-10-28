@@ -21,7 +21,7 @@ Obtains a geometric pin the entity owns by name.
 subscript(name: String) -> GeometricPin? { get }
 ```
 
-#### Return Value
+## Return Value
 
 The pin that associates with the name, or `nil` if no pin with a matching name is found.
 

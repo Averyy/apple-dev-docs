@@ -24,7 +24,7 @@ func deactivate(options: FSDeactivateOptions = []) async throws
 - (void) deactivateWithOptions:(FSDeactivateOptions) options replyHandler:(void (^)(NSError *err)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 Set up your implementation to release any resources allocated for the volume instance. By the time you receive this callback, FSKit has already performed a reclaim call to release all other file nodes associated with this file system instance.
 

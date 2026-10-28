@@ -24,7 +24,7 @@ class AUAudioUnitV2Bridge
 @interface AUAudioUnitV2Bridge : AUAudioUnit
 ```
 
-#### Overview
+## Overview
 
 A version 3 audio unit may subclass the [`AUAudioUnitV2Bridge`](./auaudiounitv2bridge.md) class. If so, the audio unit’s component description should refer to a registered component with a version 2 implementation by using a factory function. The bridge will instantiate the version 2 audio unit via the factory function and communicate with it using version 2 audio unit APIs.
 

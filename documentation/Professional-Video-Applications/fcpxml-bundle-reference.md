@@ -5,7 +5,7 @@
 
 Keep an FCPXML document and any files it references together in a bundle.
 
-#### Overview
+## Overview
 
 When a user shares data from Final Cut Pro with your app, Final Cut Pro exports the required files and packages them together in a bundle. The bundle format makes it easy for an app to keep FCPXML and referenced files together. FCPXML Bundles have a `.fcpxmld` extension.
 

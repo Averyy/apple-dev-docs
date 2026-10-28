@@ -18,7 +18,7 @@ A structure that represents a condition and its associated event information tha
 struct Record
 ```
 
-#### Overview
+## Overview
 
 The `CLMonitor.Record` contains a condition and most recent event that affects it.
 

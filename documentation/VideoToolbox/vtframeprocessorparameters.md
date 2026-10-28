@@ -24,7 +24,7 @@ protocol VTFrameProcessorParameters : NSObjectProtocol
 @protocol VTFrameProcessorParameters <NSObject>
 ```
 
-#### Overview
+## Overview
 
 An instance of a class corresponding to this protocol is passed to [`processWithParameters:error:`](./vtframeprocessor/processwithparameters_error_.md) calls and for asynchronous versions of those calls, the same instance is returned in the completion.
 

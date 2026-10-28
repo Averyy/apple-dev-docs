@@ -14,17 +14,17 @@ An array of the types that define subcommands for this command.
 ## Declaration
 
 ```swift
-var subcommands: [any ParsableCommand.Type] { get set }
+var subcommands: [ParsableCommand.Type] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property “flattens” the grouping structure of the subcommands. Use ‘ungroupedSubcommands’ to access ‘groupedSubcommands’ to retain the grouping structure.
 
 ## See Also
 
 ### Declaring Subcommands
-- [var defaultSubcommand: (any ParsableCommand.Type)?](./defaultsubcommand.md)
+- [var defaultSubcommand: ParsableCommand.Type?](./defaultsubcommand.md)
   The default command type to run if no subcommand is given.
 
 

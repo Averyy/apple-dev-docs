@@ -19,7 +19,7 @@ func SKSummaryGetSentenceSummaryInfo(_ summary: SKSummary!, _ numSentencesInSumm
 CFIndex SKSummaryGetSentenceSummaryInfo(SKSummaryRef summary, CFIndex numSentencesInSummary, CFIndex *outRankOrderOfSentences, CFIndex *outSentenceIndexOfSentences, CFIndex *outParagraphIndexOfSentences);
 ```
 
-#### Return Value
+## Return Value
 
 The number of sentences in the summary.
 

@@ -25,11 +25,11 @@ func CFBundleCopySupportFilesDirectoryURL(_ bundle: CFBundle!) -> CFURL!
 extern CFURLRefCFBundleCopySupportFilesDirectoryURL(CFBundleRef bundle);
 ```
 
-#### Return Value
+## Return Value
 
 A CFURL object describing the location of the bundle’s support files directory, or `NULL` if it could not be found. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 In general, you should never need to use this function. Use [`CFBundleCopyResourceURL(_:_:_:_:)`](./cfbundlecopyresourceurl%28_,_,_,_%29.md) and similar functions instead.
 

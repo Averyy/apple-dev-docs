@@ -29,7 +29,7 @@ SKInterpolationModeSpline
 
 - [Using Keyframe Sequence to effect Custom Interpolation](../using-keyframe-sequence-to-effect-custom-interpolation.md)
 
-#### Discussion
+## Discussion
 
 Given a sequence with the key values of `[5, 1, 10, 0]` and times of `[0, 0.25, 0.5, 1]`, spline interpolation produces a set of values that follow a smooth curve.
 

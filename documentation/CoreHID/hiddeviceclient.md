@@ -20,7 +20,7 @@ actor HIDDeviceClient
 - [Communicating with human interface devices](./communicatingwithhiddevices.md)
 - [Creating virtual devices](./creatingvirtualdevices.md)
 
-#### Overview
+## Overview
 
 A human interface device (HID) is a computer peripheral intended to provide direction to the system from human input. The specification is a broad, industry-wide standard, maintained by the USB Implementers Forum. For more details, see [Human Interface Devices (HID) Specifications and Tools](https://www.usb.org/hid).
 

@@ -19,7 +19,7 @@ var sendsSearchStringImmediately: Bool { get set }
 @property BOOL sendsSearchStringImmediately;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is YES, the field calls its action method immediately upon notification of any changes to the search field. When the value is NO, the field pauses briefly after receiving a notification and then calls its action method. Pausing gives the user an opportunity to type more text into the search field and minimize the number of searches that are performed.
 

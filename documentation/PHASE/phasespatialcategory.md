@@ -24,7 +24,7 @@ struct PHASESpatialCategory
 typedef NSString * PHASESpatialCategory;
 ```
 
-#### Discussion
+## Discussion
 
 This class identifies the various audio layers that a spatial mixer offers as keys to the [`entries`](./phasespatialpipeline/entries.md) dictionary.
 

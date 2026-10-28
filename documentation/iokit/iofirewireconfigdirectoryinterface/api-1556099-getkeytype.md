@@ -14,7 +14,7 @@
 IOReturn (*GetKeyType)(IOFireWireLibConfigDirectoryRef self, int inKey, IOConfigKeyType *outType);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

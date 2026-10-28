@@ -20,7 +20,7 @@ Returns a string formatted to contain the data from an edge insets structure.
 class func string(for insets: UIEdgeInsets) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string that corresponds to `insets`. See [`uiEdgeInsets(for:)`](./uiedgeinsets%28for%29.md) for a discussion of the string format.
 

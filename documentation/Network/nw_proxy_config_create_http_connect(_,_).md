@@ -25,7 +25,7 @@ func nw_proxy_config_create_http_connect(_ proxy_endpoint: nw_endpoint_t, _ prox
 nw_proxy_config_tnw_proxy_config_create_http_connect(nw_endpoint_t proxy_endpoint, nw_protocol_options_t proxy_tls_options);
 ```
 
-#### Return Value
+## Return Value
 
 An initialized proxy configuration object.
 

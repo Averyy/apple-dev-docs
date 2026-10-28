@@ -21,7 +21,7 @@ A type that represents a QuickLook preview generator bundle.
 extern UTType * const UTTypeQuickLookGenerator;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.quicklook-generator`.
 

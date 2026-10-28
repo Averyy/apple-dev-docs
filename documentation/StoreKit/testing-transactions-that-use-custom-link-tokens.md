@@ -5,7 +5,7 @@
 
 Recognize custom link tokens that your app receives in the sandbox testing environment, and use them to test reporting transactions.
 
-#### Overview
+## Overview
 
 When you test your app in the sandbox environment, the External Purchase API returns tokens that are valid only in that environment. These tokens have an [`externalPurchaseId`](../ExternalPurchaseServerAPI/externalpurchaseid.md) that starts with the string `SANDBOX`. For more information about the token format, see [Receiving and decoding external purchase tokens](./receiving-and-decoding-external-purchase-tokens.md).
 
@@ -15,7 +15,7 @@ Apps running in the sandbox environment need to satisfy the same requirements as
 - Configure the associated property list key if the entitlement requires one, such as [`SKExternalPurchaseCustomLinkRegions`](../BundleResources/information-property-list/skexternalpurchasecustomlinkregions.md) or [`SKExternalPurchaseLinkStreamingRegions`](../BundleResources/information-property-list/skexternalpurchaselinkstreamingregions.md)
 - Check their eligibility to use the [External Purchase](./external-purchase.md) API at runtime, with [`isEligible`](./externalpurchasecustomlink/iseligible.md) and [`canMakePayments`](./appstore/canmakepayments.md)
 
-##### Handle custom link tokens in the sandbox environment
+### Handle custom link tokens in the sandbox environment
 
 The [`ExternalPurchaseCustomLink`](./externalpurchasecustomlink.md) API generates custom link tokens, which have a token type and an expiration date. There are two possible token types, `ACQUISITION` and `SERVICES`. Your app requests a token by calling the `ExternalPurchaseCustomLink/token(for:)` method and specifying the token type. The first time you request a token in the sandbox environment, the system creates the token and initiates an *active token period*.
 
@@ -27,7 +27,7 @@ There’s a maximum of one active token period for `ACQUISITION` tokens, for eac
 
 After a `SERVICES` token period expires, your app can request a new `SERVICES` token and you can continue testing. The new token has a new creation and expiration date, and starts a new active token period.
 
-##### Test reporting tokens on your server
+### Test reporting tokens on your server
 
 To test your server’s token reporting implementation, send reports for sandbox tokens to the Sandbox URL of the [Send External Purchase Report](../ExternalPurchaseServerAPI/send-external-purchase-report.md) endpoint. For more information about reporting tokens, see [External Purchase Server API](../ExternalPurchaseServerAPI/ExternalPurchaseServerAPI.md).
 

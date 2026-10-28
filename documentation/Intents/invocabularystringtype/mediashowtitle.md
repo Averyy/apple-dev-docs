@@ -24,7 +24,7 @@ case mediaShowTitle
 INVocabularyStringTypeMediaShowTitle
 ```
 
-#### Discussion
+## Discussion
 
 Examples might include “Your Morning Drive” or “Fresh Air”.
 

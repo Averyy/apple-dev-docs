@@ -35,7 +35,7 @@ var countryCode: String { get }
 @property (atomic, copy, readonly) NSString * countryCode;
 ```
 
-#### Discussion
+## Discussion
 
 This property uses the ISO 3166-1 Alpha-3 country code representation.
 

@@ -24,7 +24,7 @@ init(color: CIColor)
 - (instancetype) initWithColor:(CIColor *) color;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized image object.
 

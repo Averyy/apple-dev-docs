@@ -26,7 +26,7 @@ var placeholderForCreatedAssetResourceUploadJob: PHObjectPlaceholder? { get }
 
 - [Uploading asset resources in the background](../../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 The placeholder can be used to obtain the local identifier of the job that will be created when the change block completes.
 

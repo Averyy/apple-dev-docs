@@ -18,7 +18,7 @@ The payload that configures the Home Screen layout.
 object HomeScreenLayout
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.homescreenlayout` as the payload type.
 
@@ -28,7 +28,7 @@ If a Home Screen layout puts more than four items in the iPhone Dock the locatio
 
 To disable deletion of apps, set `allowAppRemoval` to `false` with [`Restrictions`](./restrictions.md).
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -40,7 +40,7 @@ To disable deletion of apps, set `allowAppRemoval` to `false` with [`Restriction
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

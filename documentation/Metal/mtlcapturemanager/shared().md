@@ -24,7 +24,7 @@ class func shared() -> MTLCaptureManager
 + (MTLCaptureManager *) sharedCaptureManager;
 ```
 
-#### Discussion
+## Discussion
 
 There is only one capture manager per process.
 

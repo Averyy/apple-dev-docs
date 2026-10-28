@@ -19,7 +19,7 @@ protocol NSPrintPanelAccessorizing
 @protocol NSPrintPanelAccessorizing
 ```
 
-#### Overview
+## Overview
 
 A printing accessory controller manages a custom print panel accessory view and is used to coordinate print settings. If you are implementing a custom printing accessory view, your controller must support this protocol. Implementation of only one method in the protocol is actually required. The other method is considered optional and is used to support the print panel’s built-in preview facilities.
 

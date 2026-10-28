@@ -25,7 +25,7 @@ func executeCommands(buffer indirectCommandbuffer: any MTLIndirectCommandBuffer,
 - (void) executeCommandsInBuffer:(id<MTLIndirectCommandBuffer>) indirectCommandbuffer indirectBuffer:(MTLGPUAddress) indirectRangeBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to indicate to Metal the span of indices in the command buffer to execute indirectly via an [`MTLBuffer`](../mtlbuffer.md) instance you provide in the `indirectRangeBuffer` parameter. This allows you to calculate the span of commands Metal executes in the GPU timeline, enabling GPU-driven workflows.
 

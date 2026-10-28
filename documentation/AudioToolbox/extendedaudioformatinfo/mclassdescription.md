@@ -24,7 +24,7 @@ var mClassDescription: AudioClassDescription
 AudioClassDescription mClassDescription;
 ```
 
-#### Discussion
+## Discussion
 
 An [`AudioClassDescription`](../../CoreAudioTypes/audioclassdescription.md) struct that specifies the codec to be used.
 

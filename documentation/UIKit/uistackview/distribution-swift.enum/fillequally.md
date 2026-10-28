@@ -23,7 +23,7 @@ case fillEqually
 UIStackViewDistributionFillEqually
 ```
 
-#### Discussion
+## Discussion
 
 The following image shows an example of a horizontal stack view that uses the [`UIStackView.Distribution.fillEqually`](./fillequally.md) distribution.
 

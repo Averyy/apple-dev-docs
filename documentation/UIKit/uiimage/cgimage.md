@@ -24,7 +24,7 @@ var cgImage: CGImage? { get }
 @property (nonatomic, readonly, nullable) CGImageRef CGImage;
 ```
 
-#### Discussion
+## Discussion
 
 If the image data has been purged because of memory constraints, invoking this method forces that data to be loaded back into memory. Reloading the image data may incur a performance penalty.
 

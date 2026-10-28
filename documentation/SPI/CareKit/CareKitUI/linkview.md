@@ -18,7 +18,7 @@ A card that displays multiple link buttons. Links buttons are capable of showing
 struct LinkView<Header> where Header : View
 ```
 
-### Style
+## Style
 
 The card supports styling using `careKitStyle(_:)`.
 

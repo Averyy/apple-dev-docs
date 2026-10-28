@@ -24,7 +24,7 @@ class VNImageBasedRequest
 @interface VNImageBasedRequest : VNRequest
 ```
 
-#### Overview
+## Overview
 
 Other Vision request handlers that operate on still images inherit from this abstract base class. Don’t use it directly.
 

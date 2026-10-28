@@ -19,7 +19,7 @@ Creates a reduction layer using the reduction type and dimensions you specify.
 + (instancetype) layerWithReductionType:(MLCReductionType) reductionType dimensions:(NSArray<NSNumber *> *) dimensions;
 ```
 
-#### Return Value
+## Return Value
 
 A new `MLCReductionLayer` instance.
 

@@ -15,7 +15,7 @@ Returns a bool value that indicates whether the two camera region anchors are eq
 extern bool ar_camera_region_anchor_is_equal_to_camera_region_anchor(ar_camera_region_anchor_t camera_region_anchor, ar_camera_region_anchor_t other_camera_region_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the camera region anchors are equal, `false` otherwise.
 

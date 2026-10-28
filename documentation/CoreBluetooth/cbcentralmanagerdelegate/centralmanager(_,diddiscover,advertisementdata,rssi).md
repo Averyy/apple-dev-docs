@@ -25,7 +25,7 @@ optional func centralManager(_ central: CBCentralManager, didDiscover peripheral
 - (void) centralManager:(CBCentralManager *) central didDiscoverPeripheral:(CBPeripheral *) peripheral advertisementData:(NSDictionary<NSString *,id> *) advertisementData RSSI:(NSNumber *) RSSI;
 ```
 
-#### Discussion
+## Discussion
 
 You can access the advertisement data with the keys listed in [Advertisement Data Retrieval Keys](../advertisement-data-retrieval-keys.md). You must retain a local copy of the peripheral if you want to perform commands on it. Use the RSSI data to determine the proximity of a discoverable peripheral device, and whether you want to connect to it automatically.
 

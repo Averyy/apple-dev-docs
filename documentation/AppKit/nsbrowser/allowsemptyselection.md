@@ -19,7 +19,7 @@ var allowsEmptySelection: Bool { get set }
 @property BOOL allowsEmptySelection;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the browser allows the selection to be empty.
 

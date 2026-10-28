@@ -20,11 +20,11 @@ func ODRecordSetNodeCredentialsExtended(_ record: ODRecordRef!, _ recordType: St
 extern bool ODRecordSetNodeCredentialsExtended(ODRecordRef record, ODRecordType recordType, ODAuthenticationType authType, CFArrayRef authItems, CFArrayRef*outAuthItems, ODContextRef*outContext, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if no error occurs; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 If you want to set credentials for all references to a node, use [`ODNodeSetCredentialsExtended(_:_:_:_:_:_:_:)`](./odnodesetcredentialsextended%28_,_,_,_,_,_,_%29.md) instead.
 

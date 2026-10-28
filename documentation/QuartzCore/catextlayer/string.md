@@ -24,7 +24,7 @@ var string: Any? { get set }
 @property (copy, nullable) id string;
 ```
 
-#### Discussion
+## Discussion
 
 The text must be an instance of `NSString` or `NSAttributedString`. Defaults to `nil`.
 

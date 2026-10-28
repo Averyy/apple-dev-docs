@@ -20,7 +20,7 @@ var fileType: String? { get set }
 @property (copy, nullable) NSString * fileType;
 ```
 
-#### Discussion
+## Discussion
 
 The document type affects how the data is filtered when it is written to or read from a file. When a document is saved, the type is determined by the entries in the app’s information property list (specified in `Info.plist)`.
 

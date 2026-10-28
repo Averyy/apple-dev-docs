@@ -21,7 +21,7 @@ A type that supplies the values of a sequence one at a time.
 protocol IteratorProtocol<Element>
 ```
 
-#### Overview
+## Overview
 
 The `IteratorProtocol` protocol is tightly linked with the `Sequence` protocol. Sequences provide access to their elements by creating an iterator, which keeps track of its iteration process and returns one element at a time as it advances through the sequence.
 
@@ -55,7 +55,7 @@ while let animal = animalIterator.next() {
 
 The call to `animals.makeIterator()` returns an instance of the array’s iterator. Next, the `while` loop calls the iterator’s `next()` method repeatedly, binding each element that is returned to `animal` and exiting when the `next()` method returns `nil`.
 
-### Using Iterators Directly
+## Using Iterators Directly
 
 You rarely need to use iterators directly, because a `for`-`in` loop is the more idiomatic approach to traversing a sequence in Swift. Some algorithms, however, may call for direct iterator use.
 
@@ -96,13 +96,13 @@ print(longestAnimal)
 // Prints Optional("Butterfly")
 ```
 
-### Using Multiple Iterators
+## Using Multiple Iterators
 
 Whenever you use multiple iterators (or `for`-`in` loops) over a single sequence, be sure you know that the specific sequence supports repeated iteration, either because you know its concrete type or because the sequence is also constrained to the `Collection` protocol.
 
 Obtain each separate iterator from separate calls to the sequence’s `makeIterator()` method rather than by copying. Copying an iterator is safe, but advancing one copy of an iterator by calling its `next()` method may invalidate other copies of that iterator. `for`-`in` loops are safe in this regard.
 
-### Adding IteratorProtocol Conformance to Your Type
+## Adding IteratorProtocol Conformance to Your Type
 
 Implementing an iterator that conforms to `IteratorProtocol` is simple. Declare a `next()` method that advances one step in the related sequence and returns the current element. When the sequence has been exhausted, the `next()` method returns `nil`.
 

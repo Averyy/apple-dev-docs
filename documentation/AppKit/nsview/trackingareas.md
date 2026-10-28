@@ -19,7 +19,7 @@ var trackingAreas: [NSTrackingArea] { get }
 @property (copy, readonly) NSArray<NSTrackingArea *> * trackingAreas;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`NSTrackingArea`](../nstrackingarea.md) objects. If the view has no tracking areas, the array is empty.
 

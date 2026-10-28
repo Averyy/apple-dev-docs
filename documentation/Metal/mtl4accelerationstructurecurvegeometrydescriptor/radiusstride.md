@@ -24,7 +24,7 @@ var radiusStride: Int { get set }
 @property (nonatomic) NSUInteger radiusStride;
 ```
 
-#### Discussion
+## Discussion
 
 You are responsible for ensuring this property is set to a multiple of the size corresponding to the [`radiusFormat`](./radiusformat.md).
 

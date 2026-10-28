@@ -23,7 +23,7 @@ var audioChannelCount: NSNumber? { get set }
 @property (strong, nullable) NSNumber * audioChannelCount;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property represents only the number of discreet channels of audio data found in the file. It does not indicate any audio data configuration related to a user’s speaker setup.
 

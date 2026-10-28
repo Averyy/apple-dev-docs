@@ -15,7 +15,7 @@ The search button for the search field.
 @property (strong, nullable) id accessibilitySearchButton;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a search field.
 

@@ -16,7 +16,7 @@ The color to apply to the subtitle text displayed in the short look interface. I
 @preconcurrency class var subtitleColor: Color? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `nil`
 

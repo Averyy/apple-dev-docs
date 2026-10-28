@@ -21,7 +21,7 @@ Creates a localized string resource from the specified string literal.
 init(stringLiteral value: String)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer uses the default values from `LocalizedStringResource/init(_:table:locale:bundle:comment:)` for the `table`, `locale`, `bundle`, and `comment`.
 

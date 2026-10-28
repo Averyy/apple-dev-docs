@@ -19,7 +19,7 @@ class VZLinuxRosettaDirectoryShare
 @interface VZLinuxRosettaDirectoryShare : VZDirectoryShare
 ```
 
-#### Overview
+## Overview
 
 This directory share exposes the Rosetta directory from the host file system to the guest. The example below shows the process of creating a [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md), and then associating the Rosetta directory share with the VM configuration.
 

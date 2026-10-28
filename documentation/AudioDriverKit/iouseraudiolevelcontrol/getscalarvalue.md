@@ -15,7 +15,7 @@ Gets the scalar value of the level control.
 float GetScalarValue();
 ```
 
-#### Return Value
+## Return Value
 
 The scalar value of the level control.
 

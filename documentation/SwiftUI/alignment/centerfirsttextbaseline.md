@@ -22,7 +22,7 @@ A guide that marks the top-most text baseline in a view.
 static var centerFirstTextBaseline: Alignment { get }
 ```
 
-#### Discussion
+## Discussion
 
 This alignment combines the [`center`](../horizontalalignment/center.md) horizontal guide and the [`firstTextBaseline`](../verticalalignment/firsttextbaseline.md) vertical guide:
 

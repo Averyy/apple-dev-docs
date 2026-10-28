@@ -35,7 +35,7 @@ var subtitle: String? { get set }
 
 - [Displaying Shortcut Information in a Siri Watch Face Card](../../SiriKit/displaying-shortcut-information-in-a-siri-watch-face-card.md)
 
-#### Discussion
+## Discussion
 
 If you don’t provide a [`subtitle`](./subtitle.md), the text from [`title`](./title.md) will wrap to fill two lines.
 

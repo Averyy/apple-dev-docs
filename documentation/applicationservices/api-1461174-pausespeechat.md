@@ -19,11 +19,11 @@ func PauseSpeechAt(_ chan: SpeechChannel, _ whereToPause: Int32) -> OSErr
 OSErr PauseSpeechAt(SpeechChannel chan, SInt32 whereToPause);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 The `PauseSpeechAt` functionmakes speech production pause at a specified point in the text. `PauseSpeechAt` returnsimmediately, although speech output will continue until the specifiedpoint.
 

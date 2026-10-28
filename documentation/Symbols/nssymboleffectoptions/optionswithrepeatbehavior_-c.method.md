@@ -21,7 +21,7 @@ Return a copy of the options setting a preferred repeat behavior.
 - (instancetype) optionsWithRepeatBehavior:(NSSymbolEffectOptionsRepeatBehavior *) behavior;
 ```
 
-#### Return Value
+## Return Value
 
 A new options object with the preferred repeat behavior.
 

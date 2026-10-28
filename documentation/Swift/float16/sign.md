@@ -21,7 +21,7 @@ The sign of the floating-point value.
 var sign: FloatingPointSign { get }
 ```
 
-#### Discussion
+## Discussion
 
 The `sign` property is `.minus` if the value’s signbit is set, and `.plus` otherwise. For example:
 

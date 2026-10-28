@@ -24,7 +24,7 @@ static let cervicalMucusQuality: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierCervicalMucusQuality;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use values from the [`HKCategoryValueCervicalMucusQuality`](../hkcategoryvaluecervicalmucusquality.md) enum.
 

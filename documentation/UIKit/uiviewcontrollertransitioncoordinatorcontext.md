@@ -24,7 +24,7 @@ protocol UIViewControllerTransitionCoordinatorContext : NSObjectProtocol
 @protocol UIViewControllerTransitionCoordinatorContext <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Don’t adopt this protocol in your own classes. UIKit creates an object that adopts this protocol and makes it available to your code when you animate changes using a transition coordinator object.
 

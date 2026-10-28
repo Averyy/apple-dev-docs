@@ -19,7 +19,7 @@ protocol NSGestureRecognizerDelegate : NSObjectProtocol
 @protocol NSGestureRecognizerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods in this protocol to establish dynamic dependencies between gesture recognizers and to prevent a single gesture recognizer from acting at all.
 

@@ -17,7 +17,7 @@ A set of options that specify optional information to include in electricity ins
 struct Options
 ```
 
-#### Overview
+## Overview
 
 Using an empty [`ElectricityInsightQuery.Options`](./options-swift.struct.md) returns the total value  of [`ElectricityInsightRecord`](../electricityinsightrecord.md) without cleanliness or tariff breakdown.
 

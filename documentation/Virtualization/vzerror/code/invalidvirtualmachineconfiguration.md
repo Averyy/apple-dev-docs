@@ -19,7 +19,7 @@ case invalidVirtualMachineConfiguration
 VZErrorInvalidVirtualMachineConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 This error indicates that your [`VZVirtualMachineConfiguration`](../../vzvirtualmachineconfiguration.md) object contains invalid data.
 

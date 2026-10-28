@@ -23,7 +23,7 @@ static func sleep(nanoseconds duration: UInt64) async throws
 
 Available when `Success` is `Never` and `Failure` is `Never`.
 
-#### Discussion
+## Discussion
 
 If the task is canceled before the time ends, this function throws `CancellationError`.
 

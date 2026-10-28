@@ -23,7 +23,7 @@ var kDNSServiceFlagsWakeOnlyService: UInt32 { get }
 kDNSServiceFlagsWakeOnlyService
 ```
 
-#### Discussion
+## Discussion
 
 This flag is meaningful only in DNSServiceRegister. When set, the service is not registered with a sleep proxy server during sleep.
 

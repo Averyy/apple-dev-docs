@@ -23,7 +23,7 @@ Creates an alert with two buttons.
 init(title: Text, message: Text? = nil, primaryButton: Alert.Button, secondaryButton: Alert.Button)
 ```
 
-#### Discussion
+## Discussion
 
 The system determines the visual ordering of the buttons.
 

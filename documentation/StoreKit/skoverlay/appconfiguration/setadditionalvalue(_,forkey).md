@@ -22,7 +22,7 @@ func setAdditionalValue(_ value: Any?, forKey key: String)
 - (void) setAdditionalValue:(id) value forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Set additional values to verify and associate an app installation with an ad campaign. For more information, see [`SKAdNetwork`](../../skadnetwork.md).
 

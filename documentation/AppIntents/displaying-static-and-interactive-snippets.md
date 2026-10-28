@@ -5,7 +5,7 @@
 
 Enable people to view the outcome of an app intent and immediately perform follow-up actions.
 
-#### Overview
+## Overview
 
 Using App Intents, you can make your app’s actions available to system experiences such as Spotlight, Control Center, the Action button, and Siri. To inform people about the outcome of an action you make available as an app intent, the intent can return a static snippet.
 
@@ -15,7 +15,7 @@ For example, the [Adopting App Intents to support system experiences](./adopting
 
 > **Note**: When someone performs an action with Siri AI that invokes your app intent, the system might not display [`IntentDialog`](./intentdialog.md) or [`ShowsSnippetView`](./showssnippetview.md).
 
-##### Show a static snippet
+### Show a static snippet
 
 If your app intent doesn’t require a follow-up action, return a static snippet that enables someone to view the outcome of the app intent. To show a static snippet as a result from an app intent, return a view from your app intent’s `perform()` method:
 
@@ -27,7 +27,7 @@ func perform() async throws -> some IntentResult & ShowsSnippetView {
 }
 ```
 
-##### Return an interactive snippet
+### Return an interactive snippet
 
 To display an interactive snippet as a result of an app intent, start by creating an app intent for your action - or use an existing app intent. The following example shows an intent that finds the closest landmark and returns it for display. The system will present the information using a default appearance:
 
@@ -73,7 +73,7 @@ In the example, the intent returns a landmark entity by declaring `-> some Retur
 
 When you adopt interactive snippets, you might be able to reuse existing intents and add logic to display a snippet. Like the example above, you can return several results from an intent. By keeping an existing result type and additionally returning a snippet intent, you avoid breaking people’s custom shortcuts that use the previous version of your intent.
 
-##### Create the interactive snippet
+### Create the interactive snippet
 
 As described in the previous section, the intent that performs your app’s action can return a [`SnippetIntent`](./snippetintent.md). The snippet intent constructs your snippet’s layout and returns it to the system, which then displays the interactive snippet. To return the views for your interactive snippet:
 
@@ -114,7 +114,7 @@ Note the `isFavorite` parameter in the view’s initializer. The `LandmarkView` 
 
 > **Note**: Snippets are great candidates to reuse views you use in your widgets, and, like widgets, you must initialize the snippet’s [`Button`](../SwiftUI/button.md) or [`Toggle`](../SwiftUI/toggle.md) with an [`AppIntent`](./appintent.md) that performs the underlying action. For more information, refer to [Adding interactivity to widgets and Live Activities](../WidgetKit/adding-interactivity-to-widgets-and-live-activities.md).
 
-##### Review the lifecycle of snippet intents
+### Review the lifecycle of snippet intents
 
 A snippet remains visible until a person dismisses it, and, similar to SwiftUI views, the system and a person’s actions might result in your [`SnippetIntent`](./snippetintent.md) being created and performed multiple times during its lifecycle.
 
@@ -132,7 +132,7 @@ Because the system creates and performs your [`SnippetIntent`](./snippetintent.m
 
 > **Note**: As long as a snippet is visible, the system keeps your app active in the background, retaining all information in memory. As a result, you don’t have to persist or refresh data while your snippet is visible.
 
-##### Create a sequence of snippets and request confirmation
+### Create a sequence of snippets and request confirmation
 
 With interactive snippets, you can create quick, fast-flowing interactions, allowing people to view content and perform a series of actions without leaving their current context. For example, the landmark example might display a sequence of three snippets:
 
@@ -199,7 +199,7 @@ func perform() async throws -> some IntentResult & ShowsSnippetIntent {
 
 By displaying the snippet using the `requestConfirmation()` API, the snippet includes the option to cancel the action. If the person doesn’t confirm the number of tickets, the app intent doesn’t continue its `perform()` function, perform the search, or display another snippet.
 
-##### Reload a snippet to display updated data
+### Reload a snippet to display updated data
 
 In the above example, three snippets appear in a sequence, each snippet replacing the previous snippet. If a snippet remains onscreen for some time; for example, if you perform a search like the in the example; reload the snippet to let people know that the search is ongoing. Similarly, reload the snippet if its underlying data changes.
 

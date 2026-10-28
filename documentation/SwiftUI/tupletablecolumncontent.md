@@ -20,7 +20,7 @@ A type of table column content that creates table columns created from a Swift t
 nonisolated struct TupleTableColumnContent<RowValue, Sort, T> where RowValue : Identifiable, Sort : SortComparator
 ```
 
-#### Overview
+## Overview
 
 Don’t use this type directly; instead, SwiftUI uses this type as the return value from the various `buildBlock` methods in [`TableColumnBuilder`](./tablecolumnbuilder.md). The size of the tuple corresponds to how many columns you create in the `columns` closure you provide to the [`Table`](./table.md) initializer.
 

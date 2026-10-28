@@ -24,7 +24,7 @@ class func hour() -> Self
 + (instancetype) hourUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring time in hours.
 

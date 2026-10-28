@@ -20,7 +20,7 @@ func terminate()
 - (void) terminate;
 ```
 
-#### Discussion
+## Discussion
 
 If the task terminates as a result, which is the default behavior, an [`didTerminateNotification`](./didterminatenotification.md) gets sent to the default notification center. This method has no effect if the receiver was already launched and has already finished executing. If the receiver hasn’t been launched yet, this method raises an `NSInvalidArgumentException`.
 

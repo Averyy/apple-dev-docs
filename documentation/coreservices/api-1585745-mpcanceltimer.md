@@ -15,11 +15,11 @@ Cancels an armed timer.
 OSStatus MPCancelTimer(MPTimerID timerID, AbsoluteTime *timeRemaining);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965). If the timer has already expired, this function returns `kMPInsufficientResourcesErr`.
 
-#### Discussion
+## Discussion
 
 Also see the function  [`MPArmTimer`](./api-1585612-mparmtimer.md). 
 

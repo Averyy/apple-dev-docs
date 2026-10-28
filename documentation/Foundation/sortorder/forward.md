@@ -21,7 +21,7 @@ The ordering that places the first item before the second when comparing two ite
 case forward
 ```
 
-#### Discussion
+## Discussion
 
 The ordering places the first item before the second when a [`ComparisonResult`](../comparisonresult.md) of two items is [`ComparisonResult.orderedAscending`](../comparisonresult/orderedascending.md).
 

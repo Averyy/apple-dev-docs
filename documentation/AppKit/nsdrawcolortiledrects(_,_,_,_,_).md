@@ -19,11 +19,11 @@ func NSDrawColorTiledRects(_ boundsRect: NSRect, _ clipRect: NSRect, _ sides: Un
 extern NSRect NSDrawColorTiledRects(NSRect boundsRect, NSRect clipRect, const NSRectEdge *sides, NSColor **colors, NSInteger count);
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle that lies within the resulting border.
 
-#### Discussion
+## Discussion
 
 Behaves the same as [`NSDrawTiledRects(_:_:_:_:_:)`](./nsdrawtiledrects%28_,_,_,_,_%29.md) except it draws its border using colors from the `colors` array.
 

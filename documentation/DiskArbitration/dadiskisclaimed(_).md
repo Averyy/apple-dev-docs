@@ -20,7 +20,7 @@ func DADiskIsClaimed(_ disk: DADisk) -> Bool
 extern Boolean DADiskIsClaimed(DADiskRef disk);
 ```
 
-#### Return Value
+## Return Value
 
 TRUE if the disk is claimed, otherwise FALSE.
 

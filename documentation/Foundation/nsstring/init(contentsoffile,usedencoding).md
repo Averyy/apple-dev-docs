@@ -25,11 +25,11 @@ convenience init(contentsOfFile path: String, usedEncoding enc: UnsafeMutablePoi
 - (instancetype) initWithContentsOfFile:(NSString *) path usedEncoding:(NSStringEncoding *) enc error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSString` object initialized by reading data from the file named by `path`. The returned object may be different from the original receiver. If the file can’t be opened or there is an encoding error, returns `nil`.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns a nonoptional result and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

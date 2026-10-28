@@ -20,7 +20,7 @@ var exposureDuration: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval exposureDuration;
 ```
 
-#### Discussion
+## Discussion
 
 If you display an AR experience using a custom Metal renderer, use this value to determine how much motion blur to apply to your virtual content.
 

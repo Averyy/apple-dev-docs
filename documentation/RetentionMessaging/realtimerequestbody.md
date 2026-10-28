@@ -20,7 +20,7 @@ object RealtimeRequestBody
 - [Responding to real-time retention messaging requests](./responding-to-realtime-retention-messaging-requests.md)
 - [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md)
 
-#### Discussion
+## Discussion
 
 This is the request body for the `Get Retention Message` endpoint, which you can implement to choose retention messages for customers in real time. For more information about the endpoint, see [Setting up your Get Retention Message endpoint](./setting-up-retention-messaging-endpoint.md).
 

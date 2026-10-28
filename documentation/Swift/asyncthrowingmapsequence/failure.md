@@ -23,7 +23,7 @@ typealias Failure = any Error
 
 Available when `Base` conforms to `AsyncSequence`.
 
-#### Discussion
+## Discussion
 
 The map sequence produces errors from either the base sequence or the `transform` closure.
 

@@ -24,7 +24,7 @@ Creates a fully configured sectioned fetch request that uses the specified trans
 
 Available when `SectionIdentifier` conforms to `Hashable` and `Result` conforms to `NSFetchRequestResult`.
 
-#### Discussion
+## Discussion
 
 Use this initializer if you need a fetch request with updates that affect the user interface based on a [`Transaction`](../transaction.md). Otherwise, use [`init(fetchRequest:sectionIdentifier:animation:)`](./init%28fetchrequest,sectionidentifier,animation%29.md).
 

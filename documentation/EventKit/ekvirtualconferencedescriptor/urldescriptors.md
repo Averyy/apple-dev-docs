@@ -24,7 +24,7 @@ var urlDescriptors: [EKVirtualConferenceURLDescriptor] { get }
 @property (nonatomic, copy, readonly) NSArray<EKVirtualConferenceURLDescriptor *> * URLDescriptors;
 ```
 
-#### Discussion
+## Discussion
 
 Calendar uses the first URL descriptor as the preferred way for users to join a virtual conference, and displays any additional links you provide in the virtual conference details.
 

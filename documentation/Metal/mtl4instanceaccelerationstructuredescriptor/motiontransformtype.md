@@ -24,7 +24,7 @@ var motionTransformType: MTLTransformType { get set }
 @property (nonatomic) MTLTransformType motionTransformType;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `MTLTransformTypePackedFloat4x3`. Using a `MTLTransformTypeComponent` allows you to represent the rotation by a quaternion (instead as of part of the matrix), allowing for correct motion interpolation.
 

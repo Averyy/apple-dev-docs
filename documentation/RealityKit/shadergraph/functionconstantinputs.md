@@ -18,7 +18,7 @@ The names of graph inputs whose values are baked in at program compilation time.
 final var functionConstantInputs: [String]
 ```
 
-#### Discussion
+## Discussion
 
 Function constant inputs are compiled directly into the shader and cannot be changed after [`ShaderGraphMaterial.Program`](../shadergraphmaterial/program-swift.struct.md) is created. Supply their values via [`constantValues`](../shadergraphmaterial/program-swift.struct/descriptor-swift.struct/constantvalues.md).
 

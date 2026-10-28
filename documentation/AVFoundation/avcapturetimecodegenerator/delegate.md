@@ -23,7 +23,7 @@ var delegate: (any AVCaptureTimecodeGeneratorDelegate)? { get }
 @property (nonatomic, readonly, nullable) id<AVCaptureTimecodeGeneratorDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 You can use your [`delegate`](./delegate.md) to receive real-time timecode updates. Implement the `timecodeGenerator:didReceiveUpdate:` method in your delegate to handle updates.
 

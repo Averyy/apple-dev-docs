@@ -25,7 +25,7 @@ func CTTextTabGetOptions(_ tab: CTTextTab) -> CFDictionary?
 extern CFDictionaryRefCTTextTabGetOptions(CTTextTabRef tab);
 ```
 
-#### Return Value
+## Return Value
 
 The dictionary of attributes associated with the tab, or if no dictionary is present, `NULL`.
 

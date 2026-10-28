@@ -21,7 +21,7 @@ var isLoading: Bool { get }
 @property (nonatomic, readonly, getter=isLoading) BOOL loading;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the web view is currently loading any resources; otherwise, [`false`](../../Swift/false.md).
 

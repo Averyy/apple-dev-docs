@@ -21,7 +21,7 @@ var dataDetectorTypes: UIDataDetectorTypes { get set }
 @property (nonatomic) UIDataDetectorTypes dataDetectorTypes;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the types of data (phone numbers, HTTP links, email address, and so on) that should be automatically converted to clickable URLs in the web view. When clicked, the web view opens the app responsible for handling the URL type and passes it the URL.
 

@@ -19,7 +19,7 @@ Returns a Boolean value that indicates whether the given element exists in the s
 func contains(_ element: MarkupOrderedSet.Element) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if member exists in the set; otherwise, `false`.
 

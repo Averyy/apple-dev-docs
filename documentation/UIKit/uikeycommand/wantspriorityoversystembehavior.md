@@ -23,7 +23,7 @@ var wantsPriorityOverSystemBehavior: Bool { get set }
 @property (nonatomic) BOOL wantsPriorityOverSystemBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 15 and later, the system delivers physical keyboard events to the text input or focus systems first. If those systems don’t handle the keyboard input, the system delivers the events to your app’s key commands. This delivery order lets the system handle keyboard events that might affect other parts of the user experience. If the value of this property is [`true`](../../Swift/true.md), the system reverses that order and delivers events to your key commands first and then to the text input and focus systems. The default value of this property is [`false`](../../Swift/false.md).
 

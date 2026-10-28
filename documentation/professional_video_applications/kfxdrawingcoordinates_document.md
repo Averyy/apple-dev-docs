@@ -19,7 +19,7 @@ var kFxDrawingCoordinates_DOCUMENT: Int { get }
 kFxDrawingCoordinates_DOCUMENT
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that the coordinate space uses document space coordinates.
 

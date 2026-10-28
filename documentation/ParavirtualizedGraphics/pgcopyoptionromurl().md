@@ -22,11 +22,11 @@ func PGCopyOptionROMURL() -> URL
 extern NSURL *PGCopyOptionROMURL();
 ```
 
-#### Return Value
+## Return Value
 
 The URL of the ROM file to load.
 
-#### Discussion
+## Discussion
 
 The URL points to a local file of a flat ROM image. After loading the file, pad the data size to a power of two and fill the extra bytes with zeroes. Map the resulting data into the guest, setting the PCI ROM base address register to point to the data.
 

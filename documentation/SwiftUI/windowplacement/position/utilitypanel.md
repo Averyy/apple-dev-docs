@@ -15,7 +15,7 @@ Utility panel window position.
 static var utilityPanel: WindowPlacement.Position { get }
 ```
 
-#### Discussion
+## Discussion
 
 Utility panel window placement brings the window close, generally within direct touch range.
 

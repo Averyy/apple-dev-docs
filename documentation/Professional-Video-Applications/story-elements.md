@@ -4,7 +4,7 @@
 
 Describe Final Cut Pro events and project data and their associated effects.
 
-#### Overview
+## Overview
 
 Use Story Elements to arrange video or audio materials and titles or generators into a timeline, in the order you want them to appear when it plays on the timeline. Use the [Timing Attributes](./timing-attributes.md) for additional control over their precise timing.
 

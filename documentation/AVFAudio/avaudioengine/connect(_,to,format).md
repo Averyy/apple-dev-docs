@@ -25,7 +25,7 @@ func connect(_ node1: AVAudioNode, to node2: AVAudioNode, format: AVAudioFormat?
 - (void) connect:(AVAudioNode *) node1 to:(AVAudioNode *) node2 format:(AVAudioFormat *) format;
 ```
 
-#### Discussion
+## Discussion
 
 This method calls [`connect(_:to:fromBus:toBus:format:)`](./connect%28_,to,frombus,tobus,format%29.md) using bus `0` for the source audio node, and bus `0` for the destination audio node, except when a destination is a mixer, in which case, the destination is the mixer’s [`nextAvailableInputBus`](../avaudiomixernode/nextavailableinputbus.md).
 

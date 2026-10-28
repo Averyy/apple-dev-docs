@@ -20,7 +20,7 @@ Creates a file URL that references the local file or directory at the file path 
 init?(_ path: FilePath)
 ```
 
-#### Discussion
+## Discussion
 
 This method may perform file system I/O to determine if the path is to a directory. If you know the path is to a directory, use [`init(_:isDirectory:)`](./init%28_,isdirectory%29.md) to avoid the file system I/O.
 

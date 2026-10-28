@@ -19,7 +19,7 @@ The styles to apply to the tip views you use to display spoken phrases.
 struct SiriTipViewStyle
 ```
 
-#### Overview
+## Overview
 
 Specify a [`SiriTipViewStyle`](./siritipviewstyle.md) value when you add a [`SiriTipUIView`](./siritipuiview.md) or [`SiriTipView`](./siritipview.md) type to your interface. For the [`SiriTipView`](./siritipview.md) type, specify the style using the [`siriTipViewStyle(_:)`](../SwiftUI/view/siritipviewstyle%28_%29.md) modifier.
 

@@ -23,7 +23,7 @@ var preservesLivePhotoCaptureSuspendedOnSessionStop: Bool { get set }
 @property (nonatomic) BOOL preservesLivePhotoCaptureSuspendedOnSessionStop;
 ```
 
-#### Discussion
+## Discussion
 
 This value defaults to [`false`](../../Swift/false.md), which means that Live Photo capture resumes when the session stops. Set the value to [`true`](../../Swift/true.md) to save the state of the [`isLivePhotoCaptureSuspended`](./islivephotocapturesuspended.md) property across session restarts.
 

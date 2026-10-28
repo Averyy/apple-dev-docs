@@ -17,7 +17,7 @@ A category for electricity usage during the cleanest grid periods.
 var cleaner: Measure?
 ```
 
-#### Discussion
+## Discussion
 
 This category represents electricity usage when the electrical grid uses its cleanest available energy sources, which might include renewable energy such as solar, wind, or hydroelectric, or cleaner fossil fuel sources such as natural gas instead of coal.
 

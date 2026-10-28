@@ -20,7 +20,7 @@ Returns a new shader function representing the stitchable MSL function in the li
 subscript(dynamicMember name: String) -> ShaderFunction { get }
 ```
 
-#### Overview
+## Overview
 
 Typically this subscript is used implicitly via the dynamic member syntax, for example:
 

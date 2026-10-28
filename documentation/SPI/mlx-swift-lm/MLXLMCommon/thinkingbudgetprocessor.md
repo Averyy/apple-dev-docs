@@ -17,11 +17,11 @@ A token-level, protocol-aware reasoning budget.
 struct ThinkingBudgetProcessor
 ```
 
-#### Overview
+## Overview
 
 The processor observes compiled start and end token sequences instead of repeatedly decoding generated text. At the budget boundary it either lets a partially sampled natural end finish, or forces the model-specific [`ReasoningBudgetTransition`](./reasoningbudgettransition.md). Every forced token passes through the normal generation loop and therefore remains coherent with KV cache, history, speculative verification, and the emitted stream.
 
-##### Pipelining
+### Pipelining
 
 `TokenIterator` samples a token, hands it to the processor, and only then calls `asyncEval`, so that the *previous* token is what gets read back on the CPU. Reading the newest token instead would block on the in-flight forward pass and collapse that one-step lookahead — the same hazard `TokenRing` avoids for the penalty processors. This processor therefore keeps the freshest sampled token in flight and only drains it when a budget decision is actually within reach. See [`didSample(token:)`](./thinkingbudgetprocessor/didsample%28token%29.md).
 

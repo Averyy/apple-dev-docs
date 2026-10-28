@@ -19,11 +19,11 @@ func wantsForwardedScrollEvents(for axis: NSEvent.GestureAxis) -> Bool
 - (BOOL) wantsForwardedScrollEventsForAxis:(NSEventGestureAxis) axis;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) when forward gesture scroll events should be forwarded up the responder chain when the scrolling content is already at the edge of the scrolled direction at the beginning of the scroll gesture; [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Some views process gesture scroll events to perform elastic scrolling. In some cases, you may want to track gesture scroll events like a swipe, see [`trackSwipeEvent(options:dampenAmountThresholdMin:max:usingHandler:)`](../nsevent/trackswipeevent%28options,dampenamountthresholdmin,max,usinghandler%29.md).
 

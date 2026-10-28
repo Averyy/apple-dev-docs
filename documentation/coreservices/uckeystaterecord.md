@@ -22,7 +22,7 @@ typedef struct UCKeyStateRecord {
 } UCKeyStateRecord;
 ```
 
-#### Overview
+## Overview
 
 The Unicode keyboard-layout (`'uchr'`) resource contains the data necessary to map virtual key codes to Unicode character codes for a given keyboard layout. The `'uchr'` format consists of a header information section and five key mapping data sections. The `UCKeyStateRecord` type is used in the third key mapping section of the `'uchr'` resource to determine dead-key state transitions. The `UCKeyStateRecord` structure permits complex dead-key state processing, such as a series of transitions from one dead-key state directly into another, in which each transition can emit a sequence of one or more Unicode characters.
 

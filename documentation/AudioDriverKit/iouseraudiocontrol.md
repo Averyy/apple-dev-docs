@@ -15,7 +15,7 @@ The base class for audio control objects.
 class IOUserAudioControl;
 ```
 
-#### Overview
+## Overview
 
 Don’t subclass or allocate this class directly.
 

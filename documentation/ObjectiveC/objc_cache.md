@@ -4,7 +4,7 @@
 
 Performance optimization for method calls. Contains pointers to recently used methods.
 
-#### Overview
+## Overview
 
 To limit the need to perform linear searches of method lists for the definitions of frequently accessed methods—an operation that can considerably slow down method lookup—the Objective-C runtime functions store pointers to the definitions of the most recently called method of the class in an `objc_cache` data structure.
 

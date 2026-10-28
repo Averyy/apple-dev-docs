@@ -21,7 +21,7 @@ A key path from a specific root type to a specific resulting value type.
 class KeyPath<Root, Value>
 ```
 
-#### Overview
+## Overview
 
 The most common way to make an instance of this type is by using a key-path expression like `\SomeClass.someProperty`. For more information, see [Key-Path Expressions](https://docs.swift.org/swift-book/ReferenceManual/Expressions.html#ID563) in *[The Swift Programming Language](https://docs.swift.org/swift-book/)*.
 

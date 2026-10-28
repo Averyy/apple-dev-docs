@@ -21,11 +21,11 @@ Creates a `dispatch_time_t` relative to the default clock or modifies an existin
 extern dispatch_time_t dispatch_time(dispatch_time_t when, int64_t delta);
 ```
 
-#### Return Value
+## Return Value
 
 A new [`dispatch_time_t`](./dispatch_time_t.md).
 
-#### Discussion
+## Discussion
 
 The default clock is based on [`mach_absolute_time`](../kernel/api-1462446-mach_absolute_time.md).
 

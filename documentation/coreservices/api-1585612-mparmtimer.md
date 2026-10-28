@@ -15,11 +15,11 @@ Arms the timer to expire at a given time.
 OSStatus MPArmTimer(MPTimerID timerID, AbsoluteTime *expirationTime, OptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965). If the timer has already expired, the reset does not take place and the function returns `kMPInsufficientResourcesErr`.
 
-#### Discussion
+## Discussion
 
 The expiration time is an absolute time, which you can generate by calling the Driver Services Library function `UpTime`. When the timer expires, a notification is sent to the notification mechanism specified in the last  [`MPSetTimerNotify`](./api-1585726-mpsettimernotify.md)  call. If the specified notification ID has become invalid, no action is taken when the timer expires. The timer itself is deleted when it expires unless you specified the `kMPPreserveTimerID` option in the options parameter.
 

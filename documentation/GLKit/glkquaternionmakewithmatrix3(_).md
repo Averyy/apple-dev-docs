@@ -22,7 +22,7 @@ func GLKQuaternionMakeWithMatrix3(_ matrix: GLKMatrix3) -> GLKQuaternion
 GLKQuaternion GLKQuaternionMakeWithMatrix3(GLKMatrix3 matrix);
 ```
 
-#### Return Value
+## Return Value
 
 A new quaternion.
 

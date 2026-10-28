@@ -25,7 +25,7 @@ var colorGrading: SCNMaterialProperty { get }
 @property (nonatomic, readonly) SCNMaterialProperty * colorGrading;
 ```
 
-#### Discussion
+## Discussion
 
 The [`contents`](../scnmaterialproperty/contents.md) value for this material property must be a 3D color lookup table, or a 2D texture image that represents such a table arranged in a horizontal strip.
 
@@ -35,11 +35,11 @@ The 2D representation of a 3D color cube is an arrangement of slices: for exampl
 
 By using a color table, you can easily create custom color effects that apply to an entire rendered scene:
 
-1. Create a basic color table image such as [Figure 1](./api-1644114-colorgrading.md#1965935), where the color value for each R, G, and B coordinate in the cube is the corresponding RGB color.
+1. Create a basic color table image such as [Figure 1](./colorgrading.md#1965935), where the color value for each R, G, and B coordinate in the cube is the corresponding RGB color.
 
 ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-1965935.png) 2. Use an image editor to create the color effect you want using some other image—such as a screenshot of your game. Apply only effects that affect pixel colors without modifying pixel positions. (For example, you can use hue/saturation, color curves, or color matrix filters, but not blur or distort filters.)
 
-![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-1965936@2x.png) 3. Apply the same color effect you created in step 2 to your basic color table image. You can even perform these steps together: paste the basic color table into your game screenshot, apply an effect to the combined picture, then crop the picture to just the modified color table. [Figure 2](./api-1644114-colorgrading.md#1965936) shows an example effect. 4. Assign your customized color table image (such as the example in [Figure 3](./api-1644114-colorgrading.md#1965937)) to this property. When rendering, SceneKit looks up the RGB values for each pixel in the rendered scene, and displays the corresponding color values from the color table.
+![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-1965936@2x.png) 3. Apply the same color effect you created in step 2 to your basic color table image. You can even perform these steps together: paste the basic color table into your game screenshot, apply an effect to the combined picture, then crop the picture to just the modified color table. [Figure 2](./colorgrading.md#1965936) shows an example effect. 4. Assign your customized color table image (such as the example in [Figure 3](./colorgrading.md#1965937)) to this property. When rendering, SceneKit looks up the RGB values for each pixel in the rendered scene, and displays the corresponding color values from the color table.
 
 ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-1965937.png)
 

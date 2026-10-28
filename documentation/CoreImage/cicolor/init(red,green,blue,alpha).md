@@ -24,11 +24,11 @@ convenience init(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
 - (instancetype) initWithRed:(CGFloat) red green:(CGFloat) green blue:(CGFloat) blue alpha:(CGFloat) alpha;
 ```
 
-#### Return Value
+## Return Value
 
  An initialized [`CIColor`](../cicolor.md) instance.
 
-#### Discussion
+## Discussion
 
 On macOS before 10.10, the CIColor’s color space will be Generic RGB.
 

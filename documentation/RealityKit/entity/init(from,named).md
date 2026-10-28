@@ -23,11 +23,11 @@ Creates an entity by asynchronously loading it from the in-memory contents of a 
 @preconcurrency convenience init(from data: Data, named name: String? = nil) async throws
 ```
 
-#### Return Value
+## Return Value
 
 The root entity of the loaded file.
 
-#### Discussion
+## Discussion
 
 RealityKit supports loading entities from USD (`.usd`, `.usda`, `.usdc`, `.usdz`) and Reality (`.reality`) files. This method automatically determines the file type using the first few bytes of the Data object.
 

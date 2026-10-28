@@ -17,7 +17,7 @@ Transpose the dimensions of the array.
 func T(_ array: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Cover for [`transposed(_:stream:)`](./transposed%28_,stream%29.md)
 

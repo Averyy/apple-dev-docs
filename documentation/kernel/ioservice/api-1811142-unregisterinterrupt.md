@@ -12,11 +12,11 @@ virtual IOReturn unregisterInterrupt(
  intsource);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code (`kIOReturnNoInterrupt` is returned if the source is not valid).
 
-#### Overview
+## Overview
 
 This method removes a C function interrupt handler previously installed with registerInterrupt.
 

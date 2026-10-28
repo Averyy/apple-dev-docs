@@ -15,7 +15,7 @@ An error that indicates the image isn’t in the approved state, so you can’t 
 object ImageNotApprovedError
 ```
 
-#### Overview
+## Overview
 
 The [`Configure Default Message`](./configure-default-message.md) endpoint returns this error if the image that’s associated with the [`messageIdentifier`](./messageidentifier.md) doesn’t have an [`imageState`](./imagestate.md) of `APPROVED`.
 

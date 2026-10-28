@@ -18,7 +18,7 @@ typedef struct FSRef {
 } FSRef;
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: [`FSRef`](./fsref.md) structures are designed to work with 32-bit inode numbers. Because APFS uses 64-bit inode numbers, interacting with APIs that return an [`FSRef`](./fsref.md) value or that take one or more [`FSRef`](./fsref.md) values as an argument may result in performance issues in APFS.
 

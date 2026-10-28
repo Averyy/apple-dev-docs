@@ -28,7 +28,7 @@ var startOfEncoderSampleIndex: Int { get set }
 
 - [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
-#### Discussion
+## Discussion
 
 This property indicates where the GPU stores the counter data within an [`MTLCounterSampleBuffer`](../mtlcountersamplebuffer.md) instance that it samples at the beginning of a blit pass.
 

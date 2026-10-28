@@ -25,7 +25,7 @@ func accessibilityTextMarker(forPosition position: Int) -> BEAccessibilityTextMa
 - (BEAccessibilityTextMarker *) accessibilityTextMarkerForPosition:(NSInteger) position;
 ```
 
-#### Return Value
+## Return Value
 
 The text marker for the text at `position`, or `nil` if there isn’t text at that position.
 

@@ -40,11 +40,11 @@ class func request(withResourceFileURLs fileURLs: [URL], placeholderImage image:
 + (PHLivePhotoRequestID) requestLivePhotoWithResourceFileURLs:(NSArray<NSURL *> *) fileURLs placeholderImage:(NSImage *) image targetSize:(CGSize) targetSize contentMode:(PHImageContentMode) contentMode resultHandler:(void (^)(PHLivePhoto *livePhoto, NSDictionary *info)) resultHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A numeric identifier for the request. If you need to cancel the request before it completes, pass this identifier to the [`cancelRequest(withRequestID:)`](./cancelrequest%28withrequestid%29.md) method.
 
-#### Discussion
+## Discussion
 
 Use this method to load Live Photo objects for display from data files previously exported from a Photos library. For example, a social networking app can use the [`PHAssetResource`](../phassetresource.md) class to retrieve the data files that constitute a Live Photo in one user’s library and upload them to a server. Then, on another user’s device, the app downloads those data files and uses this method to re-create a Live Photo object for display using the [`PHLivePhotoView`](../../PhotosUI/phlivephotoview.md) class.
 

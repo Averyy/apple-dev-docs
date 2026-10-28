@@ -41,7 +41,7 @@ var particleColor: NSColor { get set }
 @property (nonatomic, retain) NSColor * particleColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `[SKColor clearColor]`.
 

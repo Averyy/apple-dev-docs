@@ -11,7 +11,7 @@ Associate and disassociate licenses with users and devices.
 
 > **Deprecated**: This legacy API is currently in maintenance mode. Apple won’t add any new functionality to it.
 
-#### Discussion
+## Discussion
 
 This endpoint operates on a single asset (specified by the `{adamIdStr, pricingParam}` tuple) for multiple associations and disassociations in a single request.
 
@@ -21,7 +21,7 @@ Then licenses are associated either with the users specified by the `associateCl
 
 At most, one `associate*` and one `disassociate*` array is allowed per request. Specifying more than one of either `associate*` or `disassociate*` arrays result in undefined behavior.
 
-##### Example Request and Response with a Serial Number
+### Example Request and Response with a Serial Number
 
 **Request**:
 
@@ -72,7 +72,7 @@ At most, one `associate*` and one `disassociate*` array is allowed per request. 
 }
 ```
 
-##### Example Request and Response with a Client User ID String
+### Example Request and Response with a Client User ID String
 
 **Request**:
 

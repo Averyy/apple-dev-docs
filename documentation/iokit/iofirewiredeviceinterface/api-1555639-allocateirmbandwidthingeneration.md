@@ -16,11 +16,11 @@ Attempt to allocate some isochronous bandwidth from the IRM
 IOReturn (*AllocateIRMBandwidthInGeneration)(IOFireWireLibDeviceRef self, UInt32 bandwidthUnits, UInt32 generation);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if bandwidth allocation was successful. Returns kIOFireWireBusReset if 'generation' does not match the current bus generation number. Returns kIOReturnError for any other error (such as the allocation failed)
 
-#### Discussion
+## Discussion
 
 Attempts to allocates some isochronous bandwidth from the IRM, if the generation matches the current generation. Availability: IOFireWireDeviceInterface_v9 and newer
 

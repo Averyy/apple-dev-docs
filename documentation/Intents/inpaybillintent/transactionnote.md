@@ -33,7 +33,7 @@ var transactionNote: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * transactionNote;
 ```
 
-#### Discussion
+## Discussion
 
 If the user specified additional notes for the payment, include those notes when recording the transaction in your system.
 

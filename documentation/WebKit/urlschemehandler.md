@@ -19,7 +19,7 @@ A protocol for loading resources with URL schemes that WebKit doesn’t handle.
 protocol URLSchemeHandler
 ```
 
-#### Overview
+## Overview
 
 Adopt the `URLSchemeHandler` protocol in types that handle custom URL schemes for your web content. Custom schemes let you integrate custom resource types into your web content, and you may define custom schemes for resources that your app requires. For example, you might use a custom scheme to integrate content that is available only on the user’s device, such as the user’s photos. These types can then be registered to a particular WebPage by using the [`urlSchemeHandlers`](./webpage/configuration/urlschemehandlers.md) property of [`WebPage.Configuration`](./webpage/configuration.md).
 

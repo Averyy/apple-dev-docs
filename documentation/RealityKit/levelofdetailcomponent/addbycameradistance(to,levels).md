@@ -20,7 +20,7 @@ Adds Level of Detail configuration using distance-based switching to an entity .
 static func addByCameraDistance(to entity: Entity, levels: [(entities: LevelOfDetailComponent.DetailLevel, maxDistance: Float)])
 ```
 
-#### Discussion
+## Discussion
 
 Each level pairs a set of entities with a maximum camera distance threshold. Entities within a level are shown or hidden together. Thresholds must be in ascending order; the last threshold is typically `.infinity`.
 

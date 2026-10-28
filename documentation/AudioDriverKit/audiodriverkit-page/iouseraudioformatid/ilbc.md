@@ -15,7 +15,7 @@ The internet Low Bitrate Codec (iLBC) narrowband speech format.
 iLBC
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

@@ -10,7 +10,7 @@
 + (instancetype) settingsWithAutomaticAddressing;
 ```
 
-#### Discussion
+## Discussion
 
 Create a NEIPv6Settings object that will obtain IP addresses and netmasks automatically.
 

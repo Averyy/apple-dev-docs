@@ -5,7 +5,7 @@
 
 Define the entry point and top-level structure of your app.
 
-#### Overview
+## Overview
 
 Describe your app’s structure declaratively, much like you declare a view’s appearance. Create a type that conforms to the [`App`](./app.md) protocol and use it to enumerate the [Scenes](./scenes.md) that represent aspects of your app’s user interface.
 

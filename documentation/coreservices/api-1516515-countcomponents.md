@@ -15,7 +15,7 @@ Returns the number of registered components that meet the selection criteria spe
 long CountComponents(ComponentDescription *looking);
 ```
 
-#### Return Value
+## Return Value
 
 The number of components that meet the specified search criteria. 
 

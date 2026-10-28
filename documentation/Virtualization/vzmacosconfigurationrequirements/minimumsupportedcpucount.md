@@ -19,7 +19,7 @@ var minimumSupportedCPUCount: Int { get }
 @property (readonly) NSUInteger minimumSupportedCPUCount;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies the minimum number of CPUs required by the associated macOS configuration.
 

@@ -6,7 +6,7 @@
 
 A table containing the sample size information.
 
-#### Overview
+## Overview
 
 The sample size table contains an entry for every sample in the media’s data stream. Each table entry contains a size field. The size field contains the size, in bytes, of the sample in question. The table is indexed by sample number — the first entry corresponds to the first sample, the second entry is for the second sample, and so on.
 

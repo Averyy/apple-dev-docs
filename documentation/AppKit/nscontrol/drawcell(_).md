@@ -19,7 +19,7 @@ func drawCell(_ cell: NSCell)
 - (void) drawCell:(NSCell *) cell;
 ```
 
-#### Discussion
+## Discussion
 
 This method is provided primarily to support a consistent set of methods between `NSControl` objects with single and multiple cells, because a control with multiple cells needs to be able to draw individual cells.
 

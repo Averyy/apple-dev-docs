@@ -25,11 +25,11 @@ func displayName(atPath path: String) -> String
 - (NSString *) displayNameAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the file or directory at `path` in a localized form appropriate for presentation to the user. If there is no file or directory at `path`, or if an error occurs, returns `path` as is.
 
-#### Discussion
+## Discussion
 
 Display names are user-friendly names for files. They are typically used to localize standard file and directory names according to the user’s language settings. They may also reflect other modifications, such as the removal of filename extensions. Such modifications are used only when displaying the file or directory to the user and do not reflect the actual path to the item in the file system. For example, if the current user’s preferred language is French, the following code fragment logs the name `Bibliothèque` and not the name `Library`, which is the actual name of the directory.
 

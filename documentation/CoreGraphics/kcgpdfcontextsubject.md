@@ -23,7 +23,7 @@ let kCGPDFContextSubject: CFString
 extern CFStringRef const kCGPDFContextSubject;
 ```
 
-#### Discussion
+## Discussion
 
 The subject of a document. Optional; if present, the value of this key must be a [`CFString`](../CoreFoundation/cfstring.md) object.
 

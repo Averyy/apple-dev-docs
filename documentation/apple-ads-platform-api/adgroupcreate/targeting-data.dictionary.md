@@ -15,7 +15,7 @@ The targeting configuration for creating a new ad group, specifying audience dim
 object AdGroupCreate.Targeting
 ```
 
-#### Discussion
+## Discussion
 
 Defines the audience dimensions, such as geography, demographics, device, and behavior, to include or exclude when creating this ad group. The `daypart` dimension is include-only and doesn’t support `exclude`.
 

@@ -20,7 +20,7 @@ A component that gives an entity the ability to collide with other entities that
 struct CollisionComponent
 ```
 
-#### Overview
+## Overview
 
 This component holds the entity’s data related to participating in the scene’s physics simulation. It is also used to calculate collision queries, raycasts, and convex shape casts. Entities can participate in the scene simulation in two different modes: as a *rigid body* or as a *trigger*.  A rigid body fully participates in the collision simulation. It affects the velocity and direction of entities it collides. If configured with a rigid body [`mode`](./physicsbodycomponent/mode.md) of [`PhysicsBodyMode.dynamic`](./physicsbodymode/dynamic.md), it’s own velocity and direction can be affected by other rigid body entities. A trigger entity doesn’t have any impact on the rigid bodies in the scene, but can trigger code or Reality Composer behaviors when a rigid body entity overlaps it.
 

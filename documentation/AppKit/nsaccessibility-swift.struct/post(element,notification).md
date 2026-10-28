@@ -19,7 +19,7 @@ static func post(element: Any, notification: NSAccessibility.Notification)
 extern void NSAccessibilityPostNotification(id element, NSAccessibilityNotificationName notification);
 ```
 
-#### Discussion
+## Discussion
 
 Sends `notification` to any assistive applications that register to receive the notification from the user interface object `element` in your app. Accessibility notifications require special handling, so they can’t post using [`NotificationCenter`](../../Foundation/notificationcenter.md).
 

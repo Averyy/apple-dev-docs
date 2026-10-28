@@ -19,11 +19,11 @@ class func menuZone() -> NSZone!
 + (NSZone *) menuZone;
 ```
 
-#### Return Value
+## Return Value
 
 The zone from which `NSMenu` objects should be allocated.
 
-#### Discussion
+## Discussion
 
 This is left in for compatibility and always returns [`NSDefaultMallocZone`](../../Foundation/nsdefaultmalloczone.md). It is not necessary to use this.
 

@@ -25,11 +25,11 @@ func CFFileSecurityClearProperties(_ fileSec: CFFileSecurity!, _ clearPropertyMa
 extern Boolean CFFileSecurityClearProperties(CFFileSecurityRef fileSec, CFFileSecurityClearOptions clearPropertyMask);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the file security properties were successfully cleared, or `false` otherwise.
 
-#### Discussion
+## Discussion
 
 One common use for `CFFileSecurityRef` objects is to clone the permissions from one file to another. In this use, you may want to copy only a subset of the permissions. This function lets you delete the specific permissions that you do not want to change prior to applying the set of permissions to a different file.
 

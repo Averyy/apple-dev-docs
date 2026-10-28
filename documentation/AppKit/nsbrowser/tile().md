@@ -19,7 +19,7 @@ func tile()
 - (void) tile;
 ```
 
-#### Discussion
+## Discussion
 
 Your code shouldn’t send this message. It’s invoked any time the appearance of the browser changes.
 

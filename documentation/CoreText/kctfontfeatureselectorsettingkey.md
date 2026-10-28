@@ -23,7 +23,7 @@ let kCTFontFeatureSelectorSettingKey: CFString
 extern CFStringRef const kCTFontFeatureSelectorSettingKey;
 ```
 
-#### Discussion
+## Discussion
 
 Key to be used with a selector dictionary to get or specify the current setting for the selector. This value is a `CFBooleanRef` object to indicate whether this selector is on or off. If this key is not present, the default setting is used.
 

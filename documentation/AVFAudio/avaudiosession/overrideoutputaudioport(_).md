@@ -24,7 +24,7 @@ func overrideOutputAudioPort(_ portOverride: AVAudioSession.PortOverride) throws
 - (BOOL) overrideOutputAudioPort:(AVAudioSessionPortOverride) portOverride error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 If your app uses the [`playAndRecord`](./category-swift.struct/playandrecord.md) category, calling this method with the [`AVAudioSession.PortOverride.speaker`](./portoverride/speaker.md) option causes the system to route audio to the built-in speaker and microphone regardless of other settings. This change remains in effect only until the current route changes or you call this method again with the [`AVAudioSession.PortOverride.none`](./portoverride/none.md) option.
 

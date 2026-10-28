@@ -19,7 +19,7 @@ var mediaEnhanceTuning: SRAcousticSettings.Accessibility.HeadphoneAccommodations
 @property (nonatomic, assign, readonly) SRAcousticSettingsAccessibilityHeadphoneAccommodationsMediaEnhanceTuning mediaEnhanceTuning;
 ```
 
-#### Discussion
+## Discussion
 
 Tune for different range of frequencies
 

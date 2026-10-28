@@ -19,11 +19,11 @@ func SKIndexFlush(_ inIndex: SKIndex!) -> Bool
 Boolean SKIndexFlush(SKIndexRef inIndex);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value of `true` on success, or `false` on failure.
 
-#### Discussion
+## Discussion
 
 An on-disk or memory-based index becomes stale when your application updates it by adding or removing a document entry. A search on an index in such a state won’t have access to the nonflushed updates. The solution is to call this function before searching. `SKIndexFlush` flushes index-update information and commits memory-based index caches to disk, in the case of an on-disk index, or to a memory object, in the case of a memory-based index. In both cases, calling this function makes the state of the index consistent.
 

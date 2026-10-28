@@ -19,7 +19,7 @@ class TVMonogramContentView
 @interface TVMonogramContentView : UIView
 ```
 
-#### Overview
+## Overview
 
 The system provides a generic placeholder image if [`image`](./tvmonogramcontentconfiguration-c.class/image.md) is `nil`. If [`personNameComponents`](./tvmonogramcontentconfiguration-c.class/personnamecomponents.md) isn’t `nil`, the system creates a localized monogram image using the first initials from the name components.
 

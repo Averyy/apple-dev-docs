@@ -23,7 +23,7 @@ class func huberLoss(reductionType: MLCReductionType, delta: Float, weights: MLC
 + (instancetype) huberLossWithReductionType:(MLCReductionType) reductionType delta:(float) delta weights:(MLCTensor *) weights;
 ```
 
-#### Return Value
+## Return Value
 
 A huber loss layer.
 

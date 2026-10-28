@@ -25,7 +25,7 @@ let kCVImageBufferChromaSubsamplingKey: CFString
 extern CFStringRef const kCVImageBufferChromaSubsamplingKey;
 ```
 
-#### Discussion
+## Discussion
 
 The original format value is of type [`CFString`](../CoreFoundation/cfstring.md). See [Image Buffer Chroma Subsampling Constants](./image-buffer-chroma-subsampling-constants.md) for more information.
 

@@ -25,7 +25,7 @@ var commonKey: AVMetadataKey? { get }
 @property (nonatomic, copy, readonly, nullable) AVMetadataKey commonKey;
 ```
 
-#### Discussion
+## Discussion
 
 This value contains the key that most closely corresponds to the [`key`](./key.md) property, but that belongs to the common key space. You can use this key to locate metadata items irrespective of the underlying media format.
 

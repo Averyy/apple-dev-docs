@@ -19,7 +19,7 @@ var stageTransition: CGFloat { get }
 @property (readonly) CGFloat stageTransition;
 ```
 
-#### Discussion
+## Discussion
 
 This property is specifically intended to provide a value for the transition animation between the stages of a pressure gesture event.
 

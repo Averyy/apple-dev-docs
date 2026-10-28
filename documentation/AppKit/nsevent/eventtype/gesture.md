@@ -19,7 +19,7 @@ case gesture
 NSEventTypeGesture
 ```
 
-#### Discussion
+## Discussion
 
 [`NSEvent.EventType.gesture`](./gesture.md) represents a gesture that is not otherwise specified by a type such as [`NSEvent.EventType.magnify`](./magnify.md), [`NSEvent.EventType.swipe`](./swipe.md), [`NSEvent.EventType.rotate`](./rotate.md), [`NSEvent.EventType.beginGesture`](./begingesture.md), or [`NSEvent.EventType.endGesture`](./endgesture.md)
 

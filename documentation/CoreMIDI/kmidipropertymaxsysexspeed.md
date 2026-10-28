@@ -23,7 +23,7 @@ let kMIDIPropertyMaxSysExSpeed: CFString
 extern CFStringRef const kMIDIPropertyMaxSysExSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 The owning driver may set an integer value for this property.
 

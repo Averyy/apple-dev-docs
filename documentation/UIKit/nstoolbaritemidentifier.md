@@ -5,7 +5,7 @@
 
 UIKit-specific constants for the standard toolbar items that the system provides.
 
-#### Overview
+## Overview
 
 UIKit defines these constants that you use to configure an [`NSToolbarItem`](../AppKit/nstoolbaritem.md). For more information, see [`NSToolbarItem.Identifier`](../AppKit/nstoolbaritem/identifier.md).
 

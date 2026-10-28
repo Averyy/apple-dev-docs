@@ -21,7 +21,7 @@ case `default`
 kSecCredentialTypeDefault
 ```
 
-#### Discussion
+## Discussion
 
 The default setting can be changed with a call to [`SecKeychainSetUserInteractionAllowed(_:)`](../seckeychainsetuserinteractionallowed%28_%29.md).
 

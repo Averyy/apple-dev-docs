@@ -19,11 +19,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A new network device configuration object.
 
-#### Discussion
+## Discussion
 
 After creating the object, assign appropriate values to the inherited [`attachment`](../vznetworkdeviceconfiguration/attachment.md) and [`macAddress`](../vznetworkdeviceconfiguration/macaddress.md) properties to complete the configuration object.
 

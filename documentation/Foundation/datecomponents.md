@@ -21,7 +21,7 @@ A date or time specified in terms of units (such as year, month, day, hour, and 
 struct DateComponents
 ```
 
-#### Overview
+## Overview
 
 `DateComponents` encapsulates the components of a date in an extendable, structured manner.
 

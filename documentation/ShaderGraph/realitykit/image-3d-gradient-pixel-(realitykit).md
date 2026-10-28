@@ -13,11 +13,11 @@ A texture with RealityKit properties.
 - macOS 14.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Level of detail gradient. Pixel texture coordinates
 
-#### Parameter Types
+## Parameter Types
 
 **Image 3D Gradient Pixel (vector4f)**:
 

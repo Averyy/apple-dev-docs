@@ -25,11 +25,11 @@ func CFTimeZoneCopyDefault() -> CFTimeZone!
 extern CFTimeZoneRefCFTimeZoneCopyDefault();
 ```
 
-#### Return Value
+## Return Value
 
 A time zone representing the default time zone set for your application, or the system time zone if no default is set. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 If no default time zone is set, this function simply returns the result of the [`CFTimeZoneCopySystem()`](./cftimezonecopysystem%28%29.md) function.
 

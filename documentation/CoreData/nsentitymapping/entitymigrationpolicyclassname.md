@@ -25,7 +25,7 @@ var entityMigrationPolicyClassName: String? { get set }
 @property (copy, nullable) NSString * entityMigrationPolicyClassName;
 ```
 
-#### Discussion
+## Discussion
 
 If not specified, the default migration class name is [`NSEntityMigrationPolicy`](../nsentitymigrationpolicy.md). You can specify a subclass to provide custom behavior.
 

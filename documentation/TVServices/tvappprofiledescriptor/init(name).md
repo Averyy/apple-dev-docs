@@ -21,7 +21,7 @@ init(name: String)
 - (instancetype) initWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized app profile descriptor object.
 

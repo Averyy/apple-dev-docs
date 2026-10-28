@@ -21,11 +21,11 @@ Retrieves an array of output sample timing information structures that represent
 func outputSampleTimingInfos() throws -> [CMSampleTimingInfo]
 ```
 
-#### Return Value
+## Return Value
 
 An array of structures that contain the output sample timing information.
 
-#### Discussion
+## Discussion
 
 If the result contains a single element, it applies to all samples in the buffer.
 

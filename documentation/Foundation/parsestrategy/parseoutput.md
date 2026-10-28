@@ -22,7 +22,7 @@ The output type returned by this strategy.
 associatedtype ParseOutput
 ```
 
-#### Discussion
+## Discussion
 
 Conforming types provide a value for this associated type to declare the type of values they return.
 

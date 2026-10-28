@@ -24,7 +24,7 @@ case everyExit
 HMPresenceEventTypeEveryExit
 ```
 
-#### Discussion
+## Discussion
 
 This presence type cannot be used as a predicate.
 

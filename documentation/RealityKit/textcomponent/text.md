@@ -20,7 +20,7 @@ The attributed string this component renders.
 var text: AttributedString?
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit renders text centered vertically. Neither the length of the string nor the specified attributes affect the size of the canvas mesh. All attributes are supported except for `TextAlignment` and `StrikethroughStyle`.
 

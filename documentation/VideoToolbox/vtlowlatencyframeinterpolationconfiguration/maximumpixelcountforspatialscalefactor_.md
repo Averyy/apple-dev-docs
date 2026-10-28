@@ -20,7 +20,7 @@ The maximum total number of pixels in the source frame for a given spatial scale
 + (NSInteger) maximumPixelCountForSpatialScaleFactor:(NSInteger) spatialScaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 The product of `frameWidth` and `frameHeight` must be less than or equal to this value. Use in conjunction with [`maximumDimensionForSpatialScaleFactor:`](./maximumdimensionforspatialscalefactor_.md) to determine valid frame dimensions. Pass `1` for `spatialScaleFactor` when using the processor for temporal interpolation without spatial scaling. Returns `0` if an unsupported scale factor is provided or if processor is unsupported.
 

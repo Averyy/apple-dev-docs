@@ -25,7 +25,7 @@ init?(url: CFURL)
 extern CGDataConsumerRefCGDataConsumerCreateWithURL(CFURLRef url);
 ```
 
-#### Return Value
+## Return Value
 
 A new data consumer object. In Objective-C, you’re responsible for releasing this object using [`CGDataConsumerRelease`](../cgdataconsumerrelease.md).
 

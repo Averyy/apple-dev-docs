@@ -22,7 +22,7 @@ enum Output
 
 - [Creating 3D objects from photographs](../creating-3d-objects-from-photographs.md)
 
-#### Overview
+## Overview
 
 RealityKit’s Object Capture is a long-running background task. The session publishes messages status and error messages to [`outputs`](./outputs-swift.property.md), a Swift [`AsyncSequence`](../../Swift/asyncsequence.md).
 

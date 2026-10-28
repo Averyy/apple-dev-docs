@@ -22,7 +22,7 @@ var txtRecord: Data? { get set }
 @property (copy, readwrite, nullable) NSData * txtRecord;
 ```
 
-#### Discussion
+## Discussion
 
 This property supplies additional information about a printing service as a set of strings that the system can parse into a series of key/value pairs. The TXT record can provide basic access, identity, and capability information about the printing service. The interface can then locate the printer based on categories such as color or duplex printing.
 

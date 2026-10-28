@@ -19,7 +19,7 @@ var contentViewInsets: NSDirectionalEdgeInsets { get set }
 @property (nonatomic, assign) NSDirectionalEdgeInsets contentViewInsets;
 ```
 
-#### Discussion
+## Discussion
 
 Use negative values for positive spacing. The [`top`](../../AppKit/nsdirectionaledgeinsets/top.md) and [`bottom`](../../AppKit/nsdirectionaledgeinsets/bottom.md) values represent the spacing between the content view and the header and footer views, respectively. The [`leading`](../../AppKit/nsdirectionaledgeinsets/leading.md) and [`trailing`](../../AppKit/nsdirectionaledgeinsets/trailing.md) values represent the spacing between the content view and the lockup view. The default value is [`NSDirectionalEdgeInsetsZero`](../../AppKit/nsdirectionaledgeinsetszero.md).
 

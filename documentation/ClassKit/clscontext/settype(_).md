@@ -23,7 +23,7 @@ func setType(_ type: CLSContextType)
 - (void) setType:(CLSContextType) type;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to change the [`type`](./type.md) property of a context that you’ve already created.
 

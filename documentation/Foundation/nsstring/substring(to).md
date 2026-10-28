@@ -25,7 +25,7 @@ func substring(to: Int) -> String
 - (NSString *) substringToIndex:(NSUInteger) to;
 ```
 
-#### Return Value
+## Return Value
 
 A new string containing the characters of the receiver up to, but not including, the one at `anIndex`. If `anIndex` is equal to the length of the string, returns a copy of the receiver.
 

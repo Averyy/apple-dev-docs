@@ -25,7 +25,7 @@ enum MLComputeUnits
 enum MLComputeUnits : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use this enumeration to set or inspect the processing units you allow a model to use when it makes a prediction.
 

@@ -5,7 +5,7 @@
 
 Identify and address long-running view updates, and reduce the frequency of updates.
 
-#### Overview
+## Overview
 
 [SwiftUI](../SwiftUI/SwiftUI.md) implements a declarative approach to constructing a user interface. You describe your app’s UI and how it depends on the app’s data and environment. SwiftUI calculates the views that represent the UI, and updates the UI in response to people’s actions and to changes in the view’s dependencies, such as:
 
@@ -17,7 +17,7 @@ Your app needs to compute its view bodies quickly to maintain a responsive exper
 
 Use Instruments to detect long-running view body calculations and frequent view updates in your app, and to identify the code in your app that causes these issues. Use common SwiftUI patterns to address the problems you discover.
 
-##### Understand how your app uses SwiftUI
+### Understand how your app uses SwiftUI
 
 Follow these steps to trace your app’s SwiftUI use:
 
@@ -40,7 +40,7 @@ The Hitches timeline reports situations in which your app didn’t prepare a vie
 
 When you select the SwiftUI timeline, the detail view shows a summary of all SwiftUI updates in your app. Instruments organizes the updates by module, view name, and category. Use this information to understand how views in your app and in system frameworks spend time updating as you exercise your app’s features.
 
-##### Improve long-running view body computations
+### Improve long-running view body computations
 
 Expand the SwiftUI timeline track by clicking the disclosure triangle in the SwiftUI instrument’s timeline. The tracks for View Body Updates, Platform View Updates, and Other Updates show distinct timelines for each module in your app, so that you can identify whether the view that takes a long time to update is part of your app’s code, a third-party SDK, or the system.
 
@@ -55,7 +55,7 @@ To reset the filter, click Callers/Callees in the Instruments bottom bar, and ch
 
 A common cause of long view body updates is performing expensive calculations in the view’s  [`body`](../SwiftUI/view/body-8kl5o.md) property. Instead, perform the calculation asynchronously, and cache the result to avoid repeating the work every time the view needs to use the result of the calculation.
 
-##### Reduce the frequency of view updates
+### Reduce the frequency of view updates
 
 Not all performance problems are caused by long updates. Sometimes, an app generates a sequence of updates in which each update is short, but the large number of updates in the sequence causes SwiftUI to do a lot of work and to be active for a long time. Use the Update Groups timeline to identify groups that are active for a long time, but not associated with long updates.
 
@@ -82,13 +82,13 @@ The cause-and-effect graph in Instruments only shows one changing property for e
 
 Identify the type of event that most frequently causes your view to update, and prioritize your performance-engineering work to reduce that event’s frequency first.
 
-##### Remove unnecessary updates
+### Remove unnecessary updates
 
 A cause-and-effect graph that starts with a node that represents code in your app (a blue node), generates events that affect framework code (gray nodes), and ends with a node in your app (another blue node), signifies a situation where your app creates an event that your app needs to respond to itself, but that the SwiftUI framework mediates.
 
 Change your code to reduce the frequency of updates that it causes, by reducing the frequency of the causing events. For example, if you use [`onGeometryChange(for:of:action:)`](../SwiftUI/view/ongeometrychange%28for,of,action%29.md) to update the layout of subviews whenever a view’s size changes, test whether the magnitude of the change is bigger than a threshold value before updating the layout.
 
-##### Adopt efficient SwiftUI design patterns
+### Adopt efficient SwiftUI design patterns
 
 Keep your view bodies fast. The code in a view body needs to be efficient and rely on limited dependencies, including state and environment objects.
 

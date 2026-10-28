@@ -20,7 +20,7 @@ An error code that indicates the VPN configuration associated with the VPN manag
 static var configurationDisabled: NEVPNError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur when trying to start the VPN connection.
 

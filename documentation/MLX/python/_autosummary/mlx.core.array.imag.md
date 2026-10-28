@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.imag
 
-**property array.imag**
-: The imaginary part of a complex array.
+```python
+property array.imag
+```
+
+The imaginary part of a complex array.

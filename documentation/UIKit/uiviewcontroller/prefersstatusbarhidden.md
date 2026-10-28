@@ -24,11 +24,11 @@ var prefersStatusBarHidden: Bool { get }
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the status bar should be hidden or [`false`](../../Swift/false.md) if it should be shown.
 
-#### Discussion
+## Discussion
 
 If you change the return value for this method, call the [`setNeedsStatusBarAppearanceUpdate()`](./setneedsstatusbarappearanceupdate%28%29.md) method. To specify that a child view controller should control preferred status bar hidden/unhidden state, implement the [`childForStatusBarHidden`](./childforstatusbarhidden.md) method.
 

@@ -21,7 +21,7 @@ Calculates the double-precision element-wise product of a vector and a scalar va
 extern void vDSP_vsmulD(const double *__A, vDSP_Stride __IA, const double *__B, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise product of vector `A` and scalar value `B`, and writes the result to vector `C`, as follows:
 

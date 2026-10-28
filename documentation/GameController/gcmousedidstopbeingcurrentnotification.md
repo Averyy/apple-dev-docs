@@ -20,7 +20,7 @@ A notification that posts when a mouse stops being the most recent mouse that th
 extern NSString * const GCMouseDidStopBeingCurrentNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is a [`GCMouse`](./gcmouse.md) object that represents the previous current mouse. For example, if you set any of the mouse input change handlers, unset them when you receive this notification.
 

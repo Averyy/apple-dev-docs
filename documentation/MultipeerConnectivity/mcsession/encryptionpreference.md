@@ -34,7 +34,7 @@ var encryptionPreference: MCEncryptionPreference { get }
 @property (atomic, readonly) MCEncryptionPreference encryptionPreference;
 ```
 
-#### Discussion
+## Discussion
 
 You set this value when you initialize the session object. It cannot be changed later. For possible values, see [`MCEncryptionPreference`](../mcencryptionpreference.md)
 

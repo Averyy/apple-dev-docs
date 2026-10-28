@@ -24,7 +24,7 @@ func open(_ item: FSItem, modes: FSVolume.OpenModes, cacheMode: FSVolume.DataCac
 - (void) openItem:(FSItem *) item modes:(FSVolumeOpenModes) modes cacheMode:(FSDataCacheMode) cacheMode context:(FSContext *) context replyHandler:(void (^)(FSOpenItemResult *result, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 FSKit calls this method when opening a file, providing the requested cache mode. The module implementation determines what level of caching it can support for this item, considering factors such as server lease availability, file locking state, or other coherency requirements.
 

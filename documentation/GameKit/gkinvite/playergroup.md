@@ -32,7 +32,7 @@ var playerGroup: Int { get }
 @property (atomic, readonly) NSUInteger playerGroup;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property matches the [`playerGroup`](../gkmatchrequest/playergroup.md) property of the match request that the other player uses to create the match.
 

@@ -31,7 +31,7 @@ var manufacturer: String? { get set }
 @property (atomic, copy, readwrite, nullable) NSString * manufacturer;
 ```
 
-#### Discussion
+## Discussion
 
 Examples might include “Honda” or “Ford”.
 

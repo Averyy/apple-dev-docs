@@ -25,7 +25,7 @@ static let oldKey: NSKeyValueChangeKey
 extern NSKeyValueChangeKey const NSKeyValueChangeOldKey;
 ```
 
-#### Discussion
+## Discussion
 
 For [`NSKeyValueChange.removal`](../nskeyvaluechange/removal.md) or [`NSKeyValueChange.replacement`](../nskeyvaluechange/replacement.md), if [`old`](../nskeyvalueobservingoptions/old.md) was specified when the observer was registered, the value is an `NSArray` instance that contains the objects that have been removed or have been replaced by other objects, respectively.
 

@@ -21,7 +21,7 @@ The Accessibility Bold Text user setting options.
 enum LegibilityWeight
 ```
 
-#### Overview
+## Overview
 
 The app can’t override the user’s choice before iOS 16, tvOS 16 or watchOS 9.0.
 

@@ -21,7 +21,7 @@ A base type that represents a content format supporting mixed embedded content.
 extern UTType * const UTTypeCompositeContent;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.composite-content`.
 

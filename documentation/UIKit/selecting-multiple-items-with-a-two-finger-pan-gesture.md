@@ -12,7 +12,7 @@ Accelerate user selection of multiple items using the multiselect gesture on tab
 - Mac Catalyst 15.0+
 - Xcode 14.1+
 
-#### Overview
+## Overview
 
 In iOS 13 and later, you can provide users of your app with the ability to select multiple items using a two-finger pan gesture on table and collection views. Apps that opt-in to this feature make it possible for users to select multiple items quickly. For instance, when a table view recognizes the two-finger pan gesture, an app can automatically put the table view in edit mode, and the user doesn’t need to tap an Edit or Select button.
 
@@ -24,7 +24,7 @@ The selected items don’t have to be contiguous. Use two fingers to select a fe
 
 This sample shows you how to support this feature in your app. The sample app displays a table view and a collection view. When the sample is run on iPad, the app displays the two views side-by-side using a split view. When you run the app on iPhone, the app displays a tab bar that lets you switch between the table and collection views.
 
-##### Support multiple item selection in a table view
+### Support multiple item selection in a table view
 
 To enable the two-finger pan gesture in a table view, implement the delegate method [`tableView(_:shouldBeginMultipleSelectionInteractionAt:)`](./uitableviewdelegate/tableview%28_,shouldbeginmultipleselectioninteractionat%29.md), and return `true`. The table view calls this method when it detects the two-finger touch to determine whether the app supports the multiple-selection gesture.
 
@@ -52,7 +52,7 @@ override func tableViewDidEndMultipleSelectionInteraction(_ tableView: UITableVi
 }
 ```
 
-##### Support multiple item selection in a collection view
+### Support multiple item selection in a collection view
 
 Providing the same multiselect behavior in a collection view is similar to the implementation for a table view. Start by implementing the collection view delegate method [`collectionView(_:shouldBeginMultipleSelectionInteractionAt:)`](./uicollectionviewdelegate/collectionview%28_,shouldbeginmultipleselectioninteractionat%29.md), which determines whether the gesture should be available to the user. The sample app returns `true` in this method.
 

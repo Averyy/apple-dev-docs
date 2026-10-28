@@ -21,7 +21,7 @@ func vSndot(_ n: Int32, _ m: Int32, _ s: UnsafeMutablePointer<Float>, _ isw: Int
 extern void vSndot(int32_t n, int32_t m, float *s, int32_t isw, const vFloat *x, const vFloat *y);
 ```
 
-#### Discussion
+## Discussion
 
 For i = 0 to n-1, the dot product of vectors `x`[i] and `y`[i] is computed.  The dot product is accumulated or stored in `s`[i], according to the value of `isw`:
 

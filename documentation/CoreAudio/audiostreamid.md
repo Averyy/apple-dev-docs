@@ -18,7 +18,7 @@ typealias AudioStreamID = AudioObjectID
 typedef AudioObjectID AudioStreamID;
 ```
 
-#### Discussion
+## Discussion
 
 AudioStream is the base class for all objects that represent a stream of data on an audio device.
 

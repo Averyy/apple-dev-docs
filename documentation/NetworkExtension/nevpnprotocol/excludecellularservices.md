@@ -27,7 +27,7 @@ var excludeCellularServices: Bool { get set }
 
 - [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), the system excludes cellular services — such as Wi-Fi Calling, MMS, SMS, and Visual Voicemail — but only when the [`includeAllNetworks`](./includeallnetworks.md) property is also [`true`](../../Swift/true.md). This property doesn’t impact services that use the cellular network only — such as VoLTE — which the system automatically excludes. [`NETransparentProxyManager`](../netransparentproxymanager.md) doesn’t support this property.
 

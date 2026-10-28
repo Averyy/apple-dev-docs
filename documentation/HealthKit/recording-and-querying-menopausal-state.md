@@ -5,13 +5,13 @@
 
 Personalize someone’s experience on a health app by tracking the information they record on menopausal state.
 
-#### Overview
+## Overview
 
 Apps that support reproductive health tracking can use HealthKit to record and query information about whether a person reports a menopausal or nonmenopausal state. Each sample represents an entry that records the state that applies at a specific date: menopause, perimenopause, or neither.
 
 Unlike other health data that spans durations, menopausal state samples are point-in-time records. The framework requires that the start date and end date of each sample be identical. Your app can query these samples and interpret them to determine state transitions, active periods, and current menopausal state.
 
-#### Ask for permission
+## Ask for permission
 
 To begin reading menopausal state data, request authorization from the person. Create an [`HKCategoryType`](./hkcategorytype.md) instance using the [`menopausalState`](./hkcategorytypeidentifier/menopausalstate.md) identifier, then request the appropriate permissions.
 
@@ -30,7 +30,7 @@ try await store.requestAuthorization(
 
 If your app only needs to read existing menopausal state data without saving new samples, request read-only access by passing an empty set to the `toShare` parameter.
 
-#### Save a menopausal state entry
+## Save a menopausal state entry
 
 Create an [`HKCategorySample`](./hkcategorysample.md) instance with a [`HKCategoryValueMenopausalState`](./hkcategoryvaluemenopausalstate.md) value. Set both the start date and end date to the same date to create a point-in-time entry.
 
@@ -48,7 +48,7 @@ try await store.save(sample)
 
 The framework validates that the start and end dates are identical. An error results if you attempt to save a sample that contains different dates.
 
-#### Record a nonmenopausal state
+## Record a nonmenopausal state
 
 Use the [`HKCategoryValueMenopausalState.none`](./hkcategoryvaluemenopausalstate/none.md) value to record when someone confirms that they have neither menopause nor perimenopause at a specific date. This value doesn’t represent unknown or missing data.
 
@@ -66,7 +66,7 @@ try await store.save(sample)
 
 Record the confirmed nonmenopausal state to complete the timeline and distinguish between dates when someone actively indicates no menopausal state versus dates that lack recorded information.
 
-#### Query menopausal state samples
+## Query menopausal state samples
 
 Query menopausal state samples using the query APIs; create a predicate filter for a date range and sort the results by the start date.
 
@@ -91,7 +91,7 @@ let samples = try await descriptor.result(for: store)
 
 The query returns an array of [`HKCategorySample`](./hkcategorysample.md) instances ordered by date. Each sample contains a point-in-time menopausal state value.
 
-#### Interpret the timeline
+## Interpret the timeline
 
 Apps derive higher-level interpretations from the ordered samples. For example, consider a timeline with the following samples:
 
@@ -130,7 +130,7 @@ for (index, sample) in samples.enumerated() {
 }
 ```
 
-#### Handle conflicting samples
+## Handle conflicting samples
 
 In some cases, multiple apps might record different menopausal state values on the same date. When presenting this data, consider prioritizing samples in the following order to match the Health app’s behavior: menopause, then perimenopause, then none. This hierarchy ensures that when conflicts occur, the app displays the most clinically significant state.
 
@@ -153,7 +153,7 @@ for (date, samplesOnDate) in samplesByDate.sorted(by: { $0.key < $1.key }) {
 }
 ```
 
-#### React to changes in menopausal state
+## React to changes in menopausal state
 
 Apps can use menopausal state information to personalize someone’s experience. For example, when someone enters menopause, an app might disable menstrual cycle predictions, hide fertility tracking features, and emphasize symptom-logging related to menopause.
 

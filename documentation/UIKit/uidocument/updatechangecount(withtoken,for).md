@@ -22,7 +22,7 @@ func updateChangeCount(withToken changeCountToken: Any, for saveOperation: UIDoc
 - (void) updateChangeCountWithToken:(id) changeCountToken forSaveOperation:(UIDocumentSaveOperation) saveOperation;
 ```
 
-#### Discussion
+## Discussion
 
 To get autosaving capabilities for your documents, you must implement change tracking. Typically you do this by using an [`UndoManager`](../../Foundation/undomanager.md) object (assigned to [`undoManager`](./undomanager.md) property) to register changes or by calling the [`updateChangeCount(_:)`](./updatechangecount%28_%29.md) method every time the user makes a change; UIKit then automatically determines whether there are unsaved changes and returns the proper value from [`hasUnsavedChanges`](./hasunsavedchanges.md). If you take neither of these approaches (and you want the autosaving feature), you must implement this method as well as [`changeCountToken(for:)`](./changecounttoken%28for%29.md) and [`hasUnsavedChanges`](./hasunsavedchanges.md).
 

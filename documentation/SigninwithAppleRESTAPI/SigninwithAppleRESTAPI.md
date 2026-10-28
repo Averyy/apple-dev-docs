@@ -10,7 +10,7 @@ Communicate between your app servers and Apple’s authentication servers.
 
 - [Configuring your environment for Sign in with Apple](../SigninwithApple/configuring-your-environment-for-sign-in-with-apple.md)
 
-#### Overview
+## Overview
 
 The [Sign in with Apple](../SigninwithApple/SigninwithApple.md) REST API is a web service that connects you to Apple’s authentication servers. Use this service to generate and validate the identity tokens used to verify a user’s identity.
 

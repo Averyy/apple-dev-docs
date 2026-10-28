@@ -16,11 +16,11 @@ Returns the pixel format to use for the layer’s depth textures.
 MTLPixelFormat cp_layer_renderer_configuration_get_depth_format(cp_layer_renderer_configuration_t configuration);
 ```
 
-#### Return Value
+## Return Value
 
 The pixel format to use for depth textures.
 
-#### Discussion
+## Discussion
 
 The compositor configures the depth textures for each frame using this pixel format value.
 

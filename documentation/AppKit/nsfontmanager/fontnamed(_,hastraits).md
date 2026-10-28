@@ -19,11 +19,11 @@ func fontNamed(_ fName: String, hasTraits someTraits: NSFontTraitMask) -> Bool
 - (BOOL) fontNamed:(NSString *) fName hasTraits:(NSFontTraitMask) someTraits;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the font named `typeface` has all the traits specified in `fontTraitMask`; [`false`](../../Swift/false.md) if it doesn’t.
 
-#### Discussion
+## Discussion
 
 Using `NSUnboldFontMask` returns [`true`](../../Swift/true.md) if the font is not bold, [`false`](../../Swift/false.md) otherwise. Using `NSUnitalicFontMask` returns [`true`](../../Swift/true.md) if the font is not italic, [`false`](../../Swift/false.md) otherwise.
 

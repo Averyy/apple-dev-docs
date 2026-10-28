@@ -21,7 +21,7 @@ static func ones(like array: MLXArray, dtype: DType? = nil, stream: StreamOrDevi
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 Example:
 
@@ -30,7 +30,7 @@ let array = MLXArray(0 ..< 12, [4, 3])
 let r = MLXArray.ones(like: array)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 - [`ones(_:type:stream:)`](./ones%28_,type,stream%29.md)

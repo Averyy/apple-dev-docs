@@ -23,7 +23,7 @@ func registerUserNotificationSettings(_ notificationSettings: UIUserNotification
 - (void) registerUserNotificationSettings:(UIUserNotificationSettings *) notificationSettings;
 ```
 
-#### Discussion
+## Discussion
 
 If your app displays alerts, play sounds, or badges its icon, you must call this method during your launch cycle to request permission to alert the user in these ways. (You must also make this request if you want to set the [`applicationIconBadgeNumber`](./applicationiconbadgenumber.md) property directly.) Typically, you make this request if your app uses local or remote notifications to alert the user to new information involving your app. The first time your app launches and calls this method, the system asks the user whether your app should be allowed to deliver notifications and stores the response. Thereafter, the system uses the stored response to determine the actual types of notifications you may use.
 

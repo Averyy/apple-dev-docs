@@ -21,7 +21,7 @@ The color of the stroke.
 static let strokeColor: NSAttributedString.Key
 ```
 
-#### Discussion
+## Discussion
 
 The value of this parameter is a [`UIColor`](../../../UIKit/uicolor.md) object. If it is not defined  (which is the case by default), it is assumed to be the same as the value of [`foregroundColor`](./foregroundcolor.md); otherwise, it describes the outline color. For more details, see [Drawing attributed strings that are both filled and stroked](https://developer.apple.com/library/archive/qa/qa1531/_index.html#//apple_ref/doc/uid/DTS40007490).
 

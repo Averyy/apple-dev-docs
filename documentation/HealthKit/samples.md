@@ -5,7 +5,7 @@
 
 Create and save health and fitness samples.
 
-#### Overview
+## Overview
 
 The HealthKit store saves most health and fitness data using [`HKSample`](./hksample.md) subclasses. All sample subclasses record information at a specified time. If the sample’s [`startDate`](./hksample/startdate.md) and [`endDate`](./hksample/enddate.md) properties are the same, the sample represents a point in time. If the [`endDate`](./hksample/enddate.md) is after the [`startDate`](./hksample/startdate.md), the sample represents a time interval.
 

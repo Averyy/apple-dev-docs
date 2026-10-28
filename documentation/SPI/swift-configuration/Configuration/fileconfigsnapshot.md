@@ -28,13 +28,13 @@ protocol FileConfigSnapshot : ConfigSnapshot, CustomDebugStringConvertible, Cust
 
 - [Implementing a custom provider](./implementing-a-provider.md)
 
-#### Overview
+## Overview
 
 This protocol extends [`ConfigSnapshot`](./configsnapshot.md) to provide file-specific functionality for creating configuration snapshots from raw file data. Types conforming to this protocol can parse various file formats (such as JSON and YAML) and convert them into configuration values.
 
 Commonly used with [`FileProvider`](./fileprovider.md) and [`ReloadingFileProvider`](./reloadingfileprovider.md).
 
-#### Implementation
+## Implementation
 
 To create a custom file configuration snapshot:
 

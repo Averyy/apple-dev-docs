@@ -22,7 +22,7 @@ A callable wrapper that creates app intent instances from keyword arguments.
 struct IntentValuePropertiesCallable<T>
 ```
 
-#### Overview
+## Overview
 
 The `IntentValuePropertiesCallable` wrapper uses the `@dynamicCallable` attribute to provide a natural function-call syntax for setting properties on type-erased app intents instances. Don’t create instances of this type directly. Instead, use [`makeIntent`](./appintentdefinition/makeintent.md) or [`makeEntity`](./transientappentitydefinition/makeentity.md).
 

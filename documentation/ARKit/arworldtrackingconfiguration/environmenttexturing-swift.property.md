@@ -20,7 +20,7 @@ var environmentTexturing: ARWorldTrackingConfiguration.EnvironmentTexturing { ge
 @property (nonatomic, assign) AREnvironmentTexturing environmentTexturing;
 ```
 
-#### Discussion
+## Discussion
 
 Environment textures are cube-map textures that depict the view in all directions from a specific point in a scene. In 3D asset rendering, environment textures are the basis for image-based lighting algorithms where surfaces can realistically reflect light from their surroundings. ARKit generates environment textures during an AR session using camera imagery, allowing SceneKit or a custom-rendering engine to provide realistic image-based lighting for virtual objects in your AR experience.
 

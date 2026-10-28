@@ -22,7 +22,7 @@ A key for the color that fills the area behind a run of attributed text.
 enum BackgroundColorAttribute
 ```
 
-#### Overview
+## Overview
 
 Set this key to highlight part of a string, such as the way a search result marks the term someone typed:
 

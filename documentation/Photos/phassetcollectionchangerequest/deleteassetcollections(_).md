@@ -24,7 +24,7 @@ class func deleteAssetCollections(_ assetCollections: any NSFastEnumeration)
 + (void) deleteAssetCollections:(id<NSFastEnumeration>) assetCollections;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method within a photo library change block to delete asset collections. For details on change blocks, see [`PHPhotoLibrary`](../phphotolibrary.md).
 

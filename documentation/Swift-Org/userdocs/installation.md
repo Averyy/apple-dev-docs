@@ -10,7 +10,7 @@ framework: "Swift-Org/userdocs"
 
 Install the Swift extension via the VS Code Marketplace.
 
-#### Overview
+## Overview
 
 The Swift extension is supported on macOS, Linux, and Windows. To set it up:
 

@@ -21,7 +21,7 @@ func stopMonitoringLocationPushes()
 - (void) stopMonitoringLocationPushes;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to stop the device from monitoring for APNs location pushes. If a compatible iPad or iPhone app calls this method when running in visionOS, the method does nothing.
 

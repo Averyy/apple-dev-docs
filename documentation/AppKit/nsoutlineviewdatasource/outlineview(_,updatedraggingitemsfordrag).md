@@ -20,7 +20,7 @@ optional func outlineView(_ outlineView: NSOutlineView, updateDraggingItemsForDr
 - (void) outlineView:(NSOutlineView *) outlineView updateDraggingItemsForDrag:(id<NSDraggingInfo>) draggingInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Implementing this method is required for multi-image dragging. A typical implementation calls the passed-in dragging info object’s [`enumerateDraggingItems(options:for:classes:searchOptions:using:)`](../nsdragginginfo/enumeratedraggingitems%28options,for,classes,searchoptions,using%29.md) method and sets the dragging item’s [`imageComponentsProvider`](../nsdraggingitem/imagecomponentsprovider.md) property to a proper image based on the content. For NSView-based table views, you can use the `NSTableCellView` method [`draggingImageComponents`](../nstablecellview/draggingimagecomponents.md).
 

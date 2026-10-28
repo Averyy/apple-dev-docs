@@ -21,7 +21,7 @@ Fetches pending remote changes from the server.
 final func fetchChanges(_ options: CKSyncEngine.FetchChangesOptions = .init()) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to request the sync engine immediately fetches all pending remote changes before your app continues. This isn’t necessary in normal use, as the engine automatically syncs your app’s records. It is useful, however, in scenarios where you require more control over sync, such as pull-to-refresh or unit tests.
 

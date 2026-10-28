@@ -21,7 +21,7 @@ A collection that represents a selection of contiguous elements from a typed col
 struct ColumnSlice<WrappedElement>
 ```
 
-#### Overview
+## Overview
 
 A column slice contains only certain elements from its parent column. Create a slice by using a subscript with a range.
 

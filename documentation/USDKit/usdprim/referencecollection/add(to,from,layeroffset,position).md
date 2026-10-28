@@ -20,7 +20,7 @@ Adds an external reference arc.
 func add(to primPath: USDLayer.Path?, from assetPath: String, layerOffset: USDLayer.TimeOffset = .init(), position: USDPrim.ListPosition = .backOfPrependList) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the reference cannot be added.
 

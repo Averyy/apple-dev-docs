@@ -19,7 +19,7 @@ Returns the array of detections in the detection track within the given time ran
 func detections(in timeRange: CMTimeRange) -> [CNDetection]
 ```
 
-#### Return Value
+## Return Value
 
 The array of detections in the detection track within the given time range. The return value is only appropriate for discrete detection tracks.
 

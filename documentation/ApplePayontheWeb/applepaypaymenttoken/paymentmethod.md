@@ -16,7 +16,7 @@ Information about the card used in the transaction.
 required ApplePayPaymentMethod paymentMethod;
 ```
 
-#### Discussion
+## Discussion
 
 See [`ApplePayPaymentMethod`](../applepaypaymentmethod.md).
 

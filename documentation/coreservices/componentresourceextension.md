@@ -16,7 +16,7 @@ typedef struct ComponentResourceExtension {
 } ComponentResourceExtension;
 ```
 
-#### Overview
+## Overview
 
 You can optionally include in your component resource the information defined by the `ComponentResourceExtension` data type: 
 

@@ -15,7 +15,7 @@ A schema file that contains text-based schema.
 attribute File file;
 ```
 
-#### Discussion
+## Discussion
 
 The text-based schema is built using CloudKit Schema Language. For more details about CloudKit Schema Language, see `https://developer.apple.com/documentation/cloudkit/integrating_a_text-based_schema_into_your_workflow`.
 

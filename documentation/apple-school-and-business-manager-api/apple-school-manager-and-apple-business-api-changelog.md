@@ -5,11 +5,11 @@
 
 Learn about new features and updates in the Apple School Manager and Apple Business APIs.
 
-##### Overview
+### Overview
 
 Use this changelog to learn about feature updates, deprecations, and removals for the Apple School Manager and Apple Business APIs.
 
-##### 2.6 (Apple Business) - 2026/9/24
+### 2.6 (Apple Business) - 2026/9/24
 
 New features for the Apple Business APIs
 
@@ -19,9 +19,9 @@ Expanded the suite of identity services [Audit Events](../AppleBusinessAPI/get-a
 - Access management: `APPLE_SERVICES_SETTINGS_UPDATED`, `ROLE_CREATED`, and `ROLE_UPDATED`.
 - Organization: `TERMS_ACCEPTED`, `IDP_CREATED`, `IDP_UPDATED`, `IDP_DELETED`, `IDP_ACCOUNT_SYNC_ENABLED`, `IDP_ACCOUNT_SYNC_DISABLED`, `DOMAIN_FEDERATION_ENABLED`, and `DOMAIN_FEDERATION_DISABLED`.
 
-##### 2.5 (Apple Business) - 2026/9/15
+### 2.5 (Apple Business) - 2026/9/15
 
-##### 1.7 (Apple School Manager) - 2026/9/15
+### 1.7 (Apple School Manager) - 2026/9/15
 
 New features for the Apple School Manager and Apple Business APIs
 
@@ -30,7 +30,7 @@ Added support for retrieving a device’s Activation Lock status:
 - [Apple School Manager: Get the Activation Lock Status for a Device.](../AppleSchoolManagerAPI/get-the-activation-lock-status-information-for-an-orgdevice.md)
 - [Apple Business: Get the Activation Lock Status for a Device.](../AppleBusinessAPI/get-the-activation-lock-status-information-for-an-orgdevice.md)
 
-##### 2.4 (Apple Business) - 2026/8/26
+### 2.4 (Apple Business) - 2026/8/26
 
 New features for the Apple Business APIs
 
@@ -38,9 +38,9 @@ Added support for releasing devices using the following endpoint:
 
 - [Assign, Unassign Devices to a Device Management Service or Release Devices.](../AppleBusinessAPI/create-an-orgdeviceactivity.md)
 
-##### 2.3 (Apple Business) - 2026/8/12
+### 2.3 (Apple Business) - 2026/8/12
 
-##### 1.6 (Apple School Manager) - 2026/8/12
+### 1.6 (Apple School Manager) - 2026/8/12
 
 New features for the Apple School Manager and Apple Business APIs
 
@@ -50,7 +50,7 @@ Added support for device management service migration, allowing organizations to
 - [Apple Business: Assign or Unassign Devices to a Device Management Service.](../AppleBusinessAPI/create-an-orgdeviceactivity.md)
 - New read-only fields on organization devices: `isMdmMigrationCapable`, `mdmMigrationStatus`, and `mdmMigrationDeadlineDateTime`.
 
-##### 2.2 (Apple Business) - 2026/7/15
+### 2.2 (Apple Business) - 2026/7/15
 
 New features for the Apple Business APIs
 
@@ -60,7 +60,7 @@ Added support for organizational units using the following endpoints:
 - [Get Organizational Unit Information.](../AppleBusinessAPI/get-organizationalunit-information.md)
 - [Get User IDs for an Organizational Unit.](../AppleBusinessAPI/get-all-user-ids-for-an-organizationalunit.md)
 
-##### 2.1 (Apple Business) - 2026/6/3
+### 2.1 (Apple Business) - 2026/6/3
 
 New features for the Apple Business APIs
 
@@ -71,7 +71,7 @@ Added support for managing device management services using the following endpoi
 - [Update a Device Management Service.](../AppleBusinessAPI/update-an-mdmserver.md)
 - [Delete a Device Management Service.](../AppleBusinessAPI/delete-an-mdmserver.md)
 
-##### 2.0 (Apple Business) - 2026/4/14
+### 2.0 (Apple Business) - 2026/4/14
 
 New features for the Apple Business APIs
 
@@ -136,7 +136,7 @@ Added detailed device information for devices enrolled in the built-in device ma
 
 - [Get Details for a Device Enrolled in the Apple Device Management Service.](../AppleBusinessAPI/get-the-details-for-apple-mdm-enrolled-device.md)
 
-##### 1.5 (Apple School Manager and Apple Business) - 2026/1/20
+### 1.5 (Apple School Manager and Apple Business) - 2026/1/20
 
 Changes
 
@@ -144,28 +144,28 @@ Changes
 - Updated MAC address types in Apple School Manager [OrgDevice.Attributes](../AppleSchoolManagerAPI/orgdevice/attributes-data.dictionary.md).
 - Updated MAC address types in Apple Business [OrgDevice.Attributes](https://developer.apple.com/documentation/applebusinessmanagerapi/orgdevice/attributes-data.dictionary).
 
-##### 1.4 (Apple School Manager and Apple Business) - 2025/12/17
+### 1.4 (Apple School Manager and Apple Business) - 2025/12/17
 
 New features
 
 - Added Wi-Fi, Bluetooth, and built-in Ethernet MAC address attributes for macOS to the [Apple School Manager API](../AppleSchoolManagerAPI/orgdevice/attributes-data.dictionary.md)
 - Added Wi-Fi, Bluetooth, and built-in Ethernet MAC address attributes for macOS to the [Apple Business API](../AppleSchoolManagerAPI/orgdevice/attributes-data.dictionary.md)
 
-##### 1.3 (Apple School Manager and Apple Business) - 2025/11/5
+### 1.3 (Apple School Manager and Apple Business) - 2025/11/5
 
 New features
 
 - Added AppleCare content to the [Apple School Manager API](../AppleSchoolManagerAPI/get-all-apple-care-coverage-for-an-orgdevice.md)
 - Added AppleCare content to the [Apple Business API](https://developer.apple.com/documentation/applebusinessmanagerapi/get-all-apple-care-coverage-for-an-orgdevice)
 
-##### 1.2 (Apple School Manager and Apple Business) - 2025/07/16
+### 1.2 (Apple School Manager and Apple Business) - 2025/07/16
 
 New features
 
 - Added Wi-Fi and Bluetooth MAC address attributes for iOS, iPadOS, tvOS, and visionOS to the [Apple School Manager API](../AppleSchoolManagerAPI/orgdevice/attributes-data.dictionary.md)
 - Added Wi-Fi and Bluetooth MAC address attributes for iOS, iPadOS, tvOS, and visionOS to the [Apple Business API](../AppleSchoolManagerAPI/orgdevice/attributes-data.dictionary.md)
 
-##### 1.1 (Apple School Manager and Apple Business) - 2025/07/10
+### 1.1 (Apple School Manager and Apple Business) - 2025/07/10
 
 Changes
 

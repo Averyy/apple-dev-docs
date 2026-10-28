@@ -25,11 +25,11 @@ func CTParagraphStyleCreate(_ settings: UnsafePointer<CTParagraphStyleSetting>?,
 extern CTParagraphStyleRefCTParagraphStyleCreate(const CTParagraphStyleSetting *settings, size_t settingCount);
 ```
 
-#### Return Value
+## Return Value
 
 A valid reference to an immutable CTParagraphStyle object, If the paragraph style creation was successful; otherwise, `NULL`.
 
-#### Discussion
+## Discussion
 
 Using this function is the easiest and most efficient way to create a paragraph style. Paragraph styles should be kept immutable for totally lock-free operation. If an invalid paragraph style setting specifier is passed into the `settings` parameter, nothing bad will happen, but you will be unable to query for this value. The reason is to allow backward compatibility with style setting specifiers that may be introduced in future versions.
 

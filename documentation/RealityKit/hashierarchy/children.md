@@ -21,7 +21,7 @@ The child entities that the entity manages.
 @preconcurrency var children: Entity.ChildCollection { get set }
 ```
 
-#### Discussion
+## Discussion
 
 An entity can have any number of child entities.
 

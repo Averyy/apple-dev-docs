@@ -19,7 +19,7 @@ case errorInvalidCacheTransition
 FSErrorInvalidCacheTransition
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when attempting an invalid transition, such as using an upgrade method for a downgrade operation, or vice versa.
 

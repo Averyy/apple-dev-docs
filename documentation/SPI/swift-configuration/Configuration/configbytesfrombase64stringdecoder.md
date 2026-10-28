@@ -24,7 +24,7 @@ A decoder that converts base64-encoded strings into byte arrays.
 struct ConfigBytesFromBase64StringDecoder
 ```
 
-#### Overview
+## Overview
 
 This decoder interprets string configuration values as base64-encoded data and converts them to their binary representation.
 

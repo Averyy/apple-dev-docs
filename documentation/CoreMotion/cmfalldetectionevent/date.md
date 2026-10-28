@@ -19,7 +19,7 @@ var date: Date { get }
 @property (nonatomic, readonly) NSDate * date;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `date` to identify a fall event. The system guarantees fall events have different `date` values.
 

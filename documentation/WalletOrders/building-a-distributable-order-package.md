@@ -5,7 +5,7 @@
 
 Prepare an order for distribution by building, signing, and compressing the source files.
 
-#### Overview
+## Overview
 
 A distributable order package is a signed and compressed order ready for donating to Wallet. The order package you distribute contains the JSON description of the order, images, optional localizations, and a signature certifying the authenticity and integrity of the package.
 
@@ -19,7 +19,7 @@ To build an order package, you:
 
 Donate the distributable order package to Wallet by setting the [`orderDetails`](../PassKit/pkpaymentauthorizationresult/orderdetails.md) property on [`PKPaymentAuthorizationResult`](../PassKit/pkpaymentauthorizationresult.md).
 
-##### Create an order type identifier
+### Create an order type identifier
 
 An order type identifier is a unique identifier for your company or brand. Create your order type identifier in the Certificates, Identifiers & Profiles area of the Apple Developer portal:
 
@@ -31,7 +31,7 @@ For more information about signing in to your account and creating identifiers, 
 
 Set the `orderTypeIdentifier` in your `order.json` file to the identifier. Set the `orderIdentifier` key to a unique order identifier. The order identifier, in combination with the order type identifier, uniquely identifies an order within the system. For more information, see the top-level [`Order`](./order.md) object.
 
-##### Generate a signing certificate
+### Generate a signing certificate
 
 Signing an order package requires a signing certificate for the order type identifier. Before you can generate a signing certificate, you need a certificate signing request (CSR). To learn how to generate a CSR, see [Create a certificate signing request](https://help.apple.com/developer-account/#/devbfa00fef7).
 
@@ -44,7 +44,7 @@ Generate the signing certificate in the Certificates, Identifiers & Profiles are
 
 Install the generated certificate on the server you use for signing the order package. For more information about signing in to your account and creating signing certificates, see [Developer Account Help](https://help.apple.com/developer-account/).
 
-##### Create and write the manifest
+### Create and write the manifest
 
 The manifest is a JSON object that contains a dictionary of the SHA-256 hashes for each of the source files for the order. The dictionary key is the pathname of the file relative to the top level of the order, and the value is the SHA-256 hash.
 
@@ -70,7 +70,7 @@ Write the manifest object to a new file called `manifest.json` in the top-level 
 
 > **Note**:  Don’t include metadata files that aren’t part of the order format, such as the `.DS_Store` file, in the manifest or distributable order package.
 
-##### Sign and compress the order package
+### Sign and compress the order package
 
 To sign the order package, follow these steps:
 
@@ -81,7 +81,7 @@ To sign the order package, follow these steps:
 
 Test your signed order package by sharing the file to an iPhone with AirDrop. Wallet shows the Add Order dialog if the order package is valid.
 
-##### Troubleshoot issues
+### Troubleshoot issues
 
 If your order package doesn’t build correctly, check whether the following are all true:
 

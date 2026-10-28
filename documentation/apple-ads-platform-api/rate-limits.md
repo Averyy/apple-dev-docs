@@ -8,11 +8,11 @@ Track your remaining quota and pace requests.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 Rate limits exist in the Apple Ads Platform API to avoid latency and other system problems from too many API calls within a limited time. Every response, successful or not, includes a set of rate-limit headers based on the [IETF RateLimit header fields draft](https://www.ietf.org/archive/id/draft-polli-ratelimit-headers-02.txt), and reports your remaining request quota so your client can pace requests and back off before hitting a `429` rate limit.
 
-#### Read the Rate Limit Headers
+## Read the Rate Limit Headers
 
 The following table details the three header types:
 
@@ -33,7 +33,7 @@ RateLimit-Reset: 37
 
 When the server rejects a request with `429` / `rate_limit_exceeded`, the response also includes a `Retry-After` header, giving the number of seconds to wait before the server accepts the next request. Prefer `Retry-After` over `RateLimit-Reset` when both are present on a `429` response because it reflects the exact wait for that rejected request.
 
-#### Implement Rate Limit Handling in a Custom Client
+## Implement Rate Limit Handling in a Custom Client
 
 If you call the API directly (rather than through a generated SDK), read the rate-limit headers off every HTTP response your client receives and use them to pace requests. Apply the following pacing rules:
 
@@ -81,7 +81,7 @@ response = call_with_backoff(
 )
 ```
 
-#### Implement Rate Limit Handling in a Generated Client
+## Implement Rate Limit Handling in a Generated Client
 
 If you use a generated client instead, every method has a `_with_http_info` counterpart that returns a `(data, status_code, headers)` tuple giving you the same access to the rate-limit headers. The logic above applies unchanged. Just read `headers.get(...)` from that tuple rather than from a `requests.Response`, as shown here:
 

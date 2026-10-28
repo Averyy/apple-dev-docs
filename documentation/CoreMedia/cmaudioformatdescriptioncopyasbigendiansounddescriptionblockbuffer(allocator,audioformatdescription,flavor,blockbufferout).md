@@ -25,7 +25,7 @@ func CMAudioFormatDescriptionCopyAsBigEndianSoundDescriptionBlockBuffer(allocato
 extern OSStatus CMAudioFormatDescriptionCopyAsBigEndianSoundDescriptionBlockBuffer(CFAllocatorRef allocator, CMAudioFormatDescriptionRef audioFormatDescription, CMSoundDescriptionFlavor flavor, CMBlockBufferRef*blockBufferOut);
 ```
 
-#### Discussion
+## Discussion
 
 On return, the caller owns the returned `CMBlockBuffer`, and must release it when done with it.
 

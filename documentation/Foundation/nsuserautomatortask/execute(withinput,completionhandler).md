@@ -23,7 +23,7 @@ func execute(withInput input: (any NSSecureCoding)?) async throws -> Any
 - (void) executeWithInput:(id<NSSecureCoding>) input completionHandler:(NSUserAutomatorTaskCompletionHandler) handler;
 ```
 
-#### Discussion
+## Discussion
 
 The Automator workflow will execute using the [`variables`](./variables.md) property values.
 

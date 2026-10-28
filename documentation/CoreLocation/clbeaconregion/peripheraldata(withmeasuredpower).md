@@ -26,11 +26,11 @@ func peripheralData(withMeasuredPower measuredPower: NSNumber?) -> NSMutableDict
 
 - [Turning an iOS device into an iBeacon device](../turning-an-ios-device-into-an-ibeacon-device.md)
 
-#### Return Value
+## Return Value
 
 A dictionary of data that you can use in conjunction with a [`CBPeripheralManager`](../../CoreBluetooth/cbperipheralmanager.md) to advertise the current device as a beacon.
 
-#### Discussion
+## Discussion
 
 The returned dictionary encodes the beacon’s identifying information, along with other information needed to advertise the beacon. You don’t need to access the dictionary contents directly. Pass the dictionary to the [`startAdvertising(_:)`](../../CoreBluetooth/cbperipheralmanager/startadvertising%28_%29.md) method of a [`CBPeripheralManager`](../../CoreBluetooth/cbperipheralmanager.md) to begin advertising the beacon.
 

@@ -24,7 +24,7 @@ case none
 PHASENormalizationModeNone
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`PHASENormalizationMode`](../phasenormalizationmode.md).
 

@@ -25,7 +25,7 @@ enum PurchaseResult
 
 - [Supporting monthly subscriptions with a 12-month commitment](../supporting-monthly-subscriptions-with-a-12-month-commitment.md)
 
-#### Overview
+## Overview
 
 The value of the purchase result represents the state of the purchase. When successful, the associated value contains a [`VerificationResult`](../verificationresult.md) of the transaction. The following example illustrates calling [`purchase(options:)`](./purchase%28options%29.md) on a [`Product`](../product.md) value, checking the purchase status, and inspecting information about a successful transaction.
 

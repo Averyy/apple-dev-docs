@@ -24,7 +24,7 @@ class MTLAccelerationStructureDescriptor
 @interface MTLAccelerationStructureDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 This is the base class for other acceleration structure descriptors. Don’t use this class directly. Use one of the derived classes instead, as [`MTLAccelerationStructure`](./mtlaccelerationstructure.md) describes.
 

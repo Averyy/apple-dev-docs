@@ -23,7 +23,7 @@ var rfc1964_kd: gss_krb5_rfc1964_keydata_t
 gss_krb5_rfc1964_keydata_t rfc1964_kd;
 ```
 
-#### Discussion
+## Discussion
 
 Use this structure only if the `protocol` member is set to 0. In that case, the `ctx_kd` member contents are invalid and should be zero.
 

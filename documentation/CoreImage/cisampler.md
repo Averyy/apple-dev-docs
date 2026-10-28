@@ -24,7 +24,7 @@ class CISampler
 @interface CISampler : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `CISampler` class retrieves samples of images for processing by a [`CIKernel`](./cikernel.md) object. A `CISampler` object defines a coordinate transform, and modes for interpolation and wrapping. You use `CISampler` objects in conjunction with other Core Image classes, such as  [`CIFilter`](./cifilter-swift.class.md), `CIKernel`, and [`CIFilterShape`](./cifiltershape.md), to create custom filters.
 

@@ -19,7 +19,7 @@ The height of the image, in pixels.
 let height: Int
 ```
 
-#### Discussion
+## Discussion
 
 A value of `-1` indicates a dynamic shape.
 

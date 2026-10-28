@@ -26,7 +26,7 @@ let XPC_ACTIVITY_REQUIRE_HDD_SPINNING: UnsafePointer<CChar>
 extern const char * const XPC_ACTIVITY_REQUIRE_HDD_SPINNING;
 ```
 
-#### Discussion
+## Discussion
 
 Computers with flash storage are considered to be equivalent to HDD spinning. Defaults to `NO`.
 

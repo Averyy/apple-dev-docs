@@ -21,7 +21,7 @@ Allow or prohibit the use of expired DNS answers during connection establishment
 func expiredDNSBehavior(_ behavior: NWParameters.ExpiredDNSBehavior) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 If allowed, a DNS answer that was previously returned may be re-used for new connections even after the answers are considered expired. A query for fresh answers will be sent in parallel, and the fresh answers will be used as alternate addresses in case the expired answers do not result in successful connections.
 

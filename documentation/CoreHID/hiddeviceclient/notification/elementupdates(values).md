@@ -19,7 +19,7 @@ case elementUpdates(values: [HIDElement.Value])
 
 - [Communicating with human interface devices](../../communicatingwithhiddevices.md)
 
-#### Discussion
+## Discussion
 
 This is typically received in response to input reports, and is another way to receive the data in a different format than [`HIDDeviceClient.Notification.inputReport(id:data:timestamp:)`](./inputreport%28id,data,timestamp%29.md).
 

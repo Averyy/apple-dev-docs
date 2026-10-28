@@ -15,11 +15,11 @@ Zero out the storage associated with a buffer.
 void buf_clear(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 Calls buf_map() to get the buffer's data address; for a B_CLUSTER buffer (one which has had buf_setupl() called on it), it tries to map the buffer's UPL into memory; should only be called once during the life cycle of an iobuf (one allocated with buf_alloc()).
 

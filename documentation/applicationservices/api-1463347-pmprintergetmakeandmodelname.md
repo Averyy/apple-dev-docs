@@ -19,7 +19,7 @@ func PMPrinterGetMakeAndModelName(_ printer: PMPrinter, _ makeAndModel: UnsafeMu
 OSStatus PMPrinterGetMakeAndModelName(PMPrinter printer, CFStringRef  _Nullable *makeAndModel);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 

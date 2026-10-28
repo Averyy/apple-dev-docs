@@ -17,7 +17,7 @@ Returns the pixel-buffer object attached to the OpenGL context.
 - (NSOpenGLPixelBuffer *) pixelBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 The pixel buffer object.
 

@@ -19,7 +19,7 @@ var ssidData: Data? { get }
 @property (copy, readonly, nullable) NSData * ssidData;
 ```
 
-#### Discussion
+## Discussion
 
 The SSID is 1-32 octets.
 

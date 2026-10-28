@@ -15,7 +15,7 @@ All HID elements associated with the device.
 var elements: [HIDElement] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Elements of interest can be taken from this list and passed to [`monitorNotifications(reportIDsToMonitor:elementsToMonitor:)`](./monitornotifications%28reportidstomonitor,elementstomonitor%29.md) to receive notifications using [`HIDDeviceClient.Notification.elementUpdates(values:)`](./notification/elementupdates%28values%29.md) when updates to the elements are received from the device. Elements can also be used in a [`HIDDeviceClient.RequestElementUpdate`](./requestelementupdate.md) to request the latest data as desired.
 

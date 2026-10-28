@@ -19,7 +19,7 @@ func attributes() -> [AnyHashable : Any]!
 - (NSDictionary *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 The dictionary that contains the keys and values for the styles.
 

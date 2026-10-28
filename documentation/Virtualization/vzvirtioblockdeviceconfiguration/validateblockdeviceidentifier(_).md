@@ -19,7 +19,7 @@ class func validateBlockDeviceIdentifier(_ blockDeviceIdentifier: String) throws
 + (BOOL) validateBlockDeviceIdentifier:(NSString *) blockDeviceIdentifier error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`validateBlockDeviceIdentifier(_:)`](./validateblockdeviceidentifier%28_%29.md) to validate an identifier string before trying to set the [`blockDeviceIdentifier`](./blockdeviceidentifier.md) property. The identifier must be an ASCII encodable string of 20 bytes or less.
 

@@ -5,41 +5,41 @@
 
 Icons that pertain to Brazil movie ratings.
 
-#### Overview
+## Overview
 
 Brazil movie rating icons indicate who is allowed to watch a movie in Brazil. Ratings are assigned by an advisory board run by the Brazilian Ministry of Justice.
 
-##### General Audiences
+### General Audiences
 
 The resource name for the general audiences icon for Brazil is `bars-l`. Place a general audiences rating icon next to content to indicate that the content is suitable to be watched by people of any age. Place a general audiences rating icon using `<img src="resource://bars-l" />`.
 
 ![A white letter L, inside a green-filled square with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.TVML/rating-icons-brazil-1@2x.png)
 
-##### Restricted 10
+### Restricted 10
 
 The resource name for the restricted 10 icon for Brazil is `bars-10`. Place a restricted 10 rating icon next to content to indicate that children 9 and younger must be accompanied by a parent or guardian.Place a restricted 10 rating icon using `<img src="resource://bars-10" />`.
 
 ![A white number ten, inside a light-blue-filled square with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.TVML/rating-icons-brazil-2@2x.png)
 
-##### Restricted 12
+### Restricted 12
 
 The resource name for the restricted 12 icon for Brazil is `bars-12`. Place a restricted 12 rating icon next to content to indicate that children 11 and younger must be accompanied by a parent or guardian. Place a restricted 12 rating icon using `<img src="resource://bars-12" />`.
 
 ![A white number twelve, inside a yellow-filled square with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.TVML/rating-icons-brazil-3@2x.png)
 
-##### Restricted 14
+### Restricted 14
 
 The resource name for the restricted 14 icon for Brazil is `bars-14`. Place a restricted 14 rating icon next to content to indicate that children 13 and younger must be accompanied by a parent or guardian. Place a restricted 14 rating icon using `<img src="resource://bars-14" />`.
 
 ![A white number fourteen, inside an orange-filled square with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.TVML/rating-icons-brazil-4@2x.png)
 
-##### Restricted 16
+### Restricted 16
 
 The resource name for the restricted 16 icon for Brazil is `bars-16`. Place a restricted 16 rating icon next to content to indicate that children 15 and younger must be accompanied by a parent or guardian. Place a restricted 16 rating icon using `<img src="resource://bars-16" />`.
 
 ![A white number sixteen, inside a red-filled square with rounded corners.](https://developer.apple.com/tutorials/images/com.apple.TVML/rating-icons-brazil-5@2x.png)
 
-##### Restricted 18
+### Restricted 18
 
 The resource name for the restricted 10 icon for Brazil is `bars-18`. Place a restricted 18 rating icon next to content to indicate that only persons 18 and older may view the content. Place a restricted 18 rating icon using `<img src="resource://bars-18" />`.
 

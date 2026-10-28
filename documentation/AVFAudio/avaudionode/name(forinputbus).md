@@ -25,7 +25,7 @@ func name(forInputBus bus: AVAudioNodeBus) -> String?
 - (NSString *) nameForInputBus:(AVAudioNodeBus) bus;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the input bus.
 

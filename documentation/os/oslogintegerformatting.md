@@ -26,7 +26,7 @@ struct OSLogIntegerFormatting
 
 - [Generating Log Messages from Your Code](./generating-log-messages-from-your-code.md)
 
-#### Overview
+## Overview
 
 An [`OSLogIntegerFormatting`](./oslogintegerformatting.md) structure encapsulates the formatting details for integer numbers. Use the static [`decimal`](./oslogintegerformatting/decimal.md), [`hex`](./oslogintegerformatting/hex.md), and [`octal`](./oslogintegerformatting/octal.md) structures to apply default formatting to integer values. You can also create new [`OSLogIntegerFormatting`](./oslogintegerformatting.md) structures that customize the rules for handling a leading plus sign, special numerical prefixes, the minimum number of digits, and more.
 

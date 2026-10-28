@@ -23,7 +23,7 @@ func setNotShownAttribute(_ flag: Bool, forGlyphAt glyphIndex: Int)
 - (void) setNotShownAttribute:(BOOL) flag forGlyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The typesetter decides which glyphs are not shown and sets this attribute in the layout manager to ensure that those glyphs are not displayed. For example, a tab or newline character doesn’t leave any marks; it just indicates where following glyphs are laid out.
 

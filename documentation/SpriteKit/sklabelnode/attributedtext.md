@@ -26,7 +26,7 @@ var attributedText: NSAttributedString? { get set }
 @property (nonatomic, copy, nullable) NSAttributedString * attributedText;
 ```
 
-#### Discussion
+## Discussion
 
 The following properties are ignored if attributedText is defined:
 

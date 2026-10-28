@@ -15,7 +15,7 @@ Creates an affine transformation matrix from a rotation angle.
 init(rotationByDegrees angle: CGFloat)
 ```
 
-#### Discussion
+## Discussion
 
 The matrix takes the following form:
 

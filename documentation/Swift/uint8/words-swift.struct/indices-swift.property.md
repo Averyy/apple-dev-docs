@@ -21,7 +21,7 @@ The indices that are valid for subscripting the collection, in ascending order.
 var indices: UInt8.Words.Indices { get }
 ```
 
-#### Discussion
+## Discussion
 
 A collection’s `indices` property can hold a strong reference to the collection itself, causing the collection to be nonuniquely referenced. If you mutate the collection while iterating over its indices, a strong reference can result in an unexpected copy of the collection. To avoid the unexpected copy, use the `index(after:)` method starting with `startIndex` to produce indices instead.
 

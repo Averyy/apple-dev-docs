@@ -21,7 +21,7 @@ A value used once during a cryptographic operation and then discarded.
 struct Nonce
 ```
 
-#### Overview
+## Overview
 
 Don’t reuse the same nonce for multiple calls to encryption APIs. It’s critical that nonces are unique per call to encryption APIs in order to protect the integrity of the encryption.
 

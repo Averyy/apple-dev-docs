@@ -24,7 +24,7 @@ func sliceUpdateDataTensor(_ dataTensor: MPSGraphTensor, update updateTensor: MP
 - (MPSGraphTensor *) sliceUpdateDataTensor:(MPSGraphTensor *) dataTensor updateTensor:(MPSGraphTensor *) updateTensor startsTensor:(MPSGraphTensor *) startsTensor endsTensor:(MPSGraphTensor *) endsTensor stridesTensor:(MPSGraphTensor *) stridesTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 

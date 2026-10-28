@@ -21,7 +21,7 @@ Strategies for adapting a presentation to a different size class.
 struct PresentationAdaptation
 ```
 
-#### Overview
+## Overview
 
 Use values of this type with the [`presentationCompactAdaptation(_:)`](./view/presentationcompactadaptation%28_%29.md) and [`presentationCompactAdaptation(horizontal:vertical:)`](./view/presentationcompactadaptation%28horizontal,vertical%29.md) modifiers.
 

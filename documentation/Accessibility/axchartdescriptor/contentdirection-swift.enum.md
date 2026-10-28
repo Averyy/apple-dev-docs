@@ -25,7 +25,7 @@ enum ContentDirection
 enum AXChartDescriptorContentDirection : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use content direction to specify the direction of the x-axis, which the audio graph represents as time. For example, a bar chart might have a content direction of [`AXChartDescriptor.ContentDirection.leftToRight`](./contentdirection-swift.enum/lefttoright.md), and a pie chart might have a content direction of [`AXChartDescriptor.ContentDirection.radialClockwise`](./contentdirection-swift.enum/radialclockwise.md).
 

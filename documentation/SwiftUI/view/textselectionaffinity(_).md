@@ -22,11 +22,11 @@ nonisolated
 func textSelectionAffinity(_ affinity: TextSelectionAffinity) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that uses the specified selection affinity strategy.
 
-#### Discussion
+## Discussion
 
 Use this modifier when you need to handle line breaks in a specific way, alter cursor movement or deal with bidirectional text (text that contains both LTR and RTL scripts, like English and Arabic combined).
 

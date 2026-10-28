@@ -21,11 +21,11 @@ optional func widgetList(_ list: NCWidgetListViewController, shouldReorderRow ro
 - (BOOL) widgetList:(NCWidgetListViewController *) list shouldReorderRow:(NSUInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if specified row can be moved, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 List item reordering is not enabled unless the delegate implements this method and [`widgetList(_:didReorderRow:toRow:)`](./widgetlist%28_,didreorderrow,torow%29.md). Returning [`false`](../../Swift/false.md) prohibits `row` from being moved. Returning YES allows `row` to be moved, and the delegate will be called again when the item that `row` represents is relocated in the list view controller’s [`contents`](../ncwidgetlistviewcontroller/contents.md) array.
 

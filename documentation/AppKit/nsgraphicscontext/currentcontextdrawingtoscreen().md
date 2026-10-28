@@ -19,11 +19,11 @@ class func currentContextDrawingToScreen() -> Bool
 + (BOOL) currentContextDrawingToScreen;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the current context is drawing to the screen, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This convenience method is equivalent to sending [`isDrawingToScreen`](./isdrawingtoscreen.md) to the result of [`current`](./current.md).
 

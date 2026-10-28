@@ -24,7 +24,7 @@ let AVAssetExportPresetPassthrough: String
 extern NSString * const AVAssetExportPresetPassthrough;
 ```
 
-#### Discussion
+## Discussion
 
 This option doesn’t show up in the [`allExportPresets()`](./avassetexportsession/allexportpresets%28%29.md) and [`exportPresets(compatibleWith:)`](./avassetexportsession/exportpresets%28compatiblewith%29.md) methods.
 

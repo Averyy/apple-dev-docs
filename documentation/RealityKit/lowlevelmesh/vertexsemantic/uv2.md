@@ -20,7 +20,7 @@ The semantic for the third UV channel, also known as UV2.
 case uv2
 ```
 
-#### Discussion
+## Discussion
 
 A shader can access this generic data.
 

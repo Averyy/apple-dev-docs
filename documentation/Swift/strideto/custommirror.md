@@ -23,7 +23,7 @@ var customMirror: Mirror { get }
 
 Available when `Element` conforms to `Strideable`.
 
-#### Discussion
+## Discussion
 
 If this type has value semantics, the mirror should be unaffected by subsequent mutations of the instance.
 

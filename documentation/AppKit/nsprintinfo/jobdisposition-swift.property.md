@@ -19,7 +19,7 @@ var jobDisposition: NSPrintInfo.JobDisposition { get set }
 @property (copy) NSPrintJobDispositionValue jobDisposition;
 ```
 
-#### Discussion
+## Discussion
 
 One of the following value:
 

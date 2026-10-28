@@ -21,7 +21,7 @@ Decrypts the message and verifies its authenticity.
 static func open(inPlace message: inout MutableRawSpan, using key: SymmetricKey, nonce: AES.GCM.Nonce, authenticating authenticatedData: RawSpan? = nil, tag: RawSpan) throws
 ```
 
-#### Discussion
+## Discussion
 
 The call throws an error if decryption or authentication fail.
 

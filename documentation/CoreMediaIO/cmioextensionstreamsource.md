@@ -20,7 +20,7 @@ protocol CMIOExtensionStreamSource : NSObjectProtocol
 @protocol CMIOExtensionStreamSource <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Create a class that adopts this protocol to configure stream properties and manage the stream life cycle.
 

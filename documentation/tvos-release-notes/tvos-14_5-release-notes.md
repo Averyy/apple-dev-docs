@@ -5,30 +5,30 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The tvOS 14.5 SDK provides support to develop tvOS apps for Apple TV devices running tvOS 14.5. The SDK comes bundled with Xcode 12.5. For information on the compatibility requirements for Xcode 12.5, see [Xcode 12.5 Release Notes](../Xcode-Release-Notes/xcode-12_5-release-notes.md).
 
-##### Accessibility
+### Accessibility
 
-###### New Features
+#### New Features
 
 - Many SF Symbols now have default accessibility labels. (70305995)
 
-##### Combine
+### Combine
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Using [`Published`](../Combine/published.md) in a subclass of a type conforming to [`ObservableObject`](../Combine/observableobject.md) now correctly publishes changes. (70305995)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - Added [`TitleAndIconLabelStyle`](../SwiftUI/titleandiconlabelstyle.md), a new style for [`Label`](../SwiftUI/label.md) views that shows both the title and icon of the label using a system-standard layout. In most cases, labels show both title and icon by default. However, some containers might apply a different default label style to their content, such as only showing icons within toolbars on macOS and iOS. To opt in to showing both the title and the icon, apply the title and icon label style: `Label("Lightning", systemImage: "bolt.fill").labelStyle(TitleAndIconLabelStyle())`. (64646578)
 - Types conforming to any style protocol, such as [`ButtonStyle`](../SwiftUI/buttonstyle.md) or [`ToggleStyle`](../SwiftUI/togglestyle.md), are now enforced to be value types. Styles must be structures or enumerations, not classes, and conforming a class to a style protocol may trigger an assertion. This is the same restriction that the system has always enforced on types conforming to [`View`](../SwiftUI/view.md). (62886135)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - You can now apply multiple [`sheet(isPresented:onDismiss:content:)`](../SwiftUI/view/sheet%28ispresented,ondismiss,content%29.md) and [`fullScreenCover(item:onDismiss:content:)`](../SwiftUI/view/fullscreencover%28item,ondismiss,content%29.md) modifiers in the same view hierarchy. (74246633)
 - Dynamic properties such as [`State`](../SwiftUI/state.md), [`Environment`](../SwiftUI/environment.md), and others now work correctly in [`ButtonStyle`](../SwiftUI/buttonstyle.md) instances. (62886135)
@@ -37,16 +37,16 @@ The tvOS 14.5 SDK provides support to develop tvOS apps for Apple TV devices run
 - [`AppStorage`](../SwiftUI/appstorage.md) property wrappers now work as expected when contained inside an [`ObservableObject`](../Combine/observableobject.md), causing the system to emit the `objectWillChange` publisher. (65562845)
 - Using [`scrollTo(_:anchor:)`](../SwiftUI/scrollviewproxy/scrollto%28_,anchor%29.md) without specifying an anchor now scrolls the [`List`](../SwiftUI/list.md) the minimum amount to make it visible. (70184639)
 
-##### UIKit
+### UIKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - [`leadingAccessoryView`](../UIKit/uitabbar/leadingaccessoryview.md) and [`trailingAccessoryView`](../UIKit/uitabbar/trailingaccessoryview.md) in [`UITabBar`](../UIKit/uitabbar.md) now appear correctly with right-to-left languages. (66755869)
 - In a [`UICollectionView`](../UIKit/uicollectionview.md), the focusability of a cell no longer depends on the delegate returning `YES` from the [`collectionView(_:shouldHighlightItemAt:)`](../UIKit/uicollectionviewdelegate/collectionview%28_,shouldhighlightitemat%29.md) and [`collectionView(_:shouldSelectItemAt:)`](../UIKit/uicollectionviewdelegate/collectionview%28_,shouldselectitemat%29.md) methods if they are implemented and [`collectionView(_:canFocusItemAt:)`](../UIKit/uicollectionviewdelegate/collectionview%28_,canfocusitemat%29.md) method is not implemented. (70245159)
 
-##### Xcode
+### Xcode
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The View Debugger no longer crashes when viewing an app that includes custom Shapes. (72300793)
 

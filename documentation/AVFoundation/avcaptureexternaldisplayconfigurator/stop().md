@@ -23,7 +23,7 @@ func stop()
 - (void) stop;
 ```
 
-#### Discussion
+## Discussion
 
 Call [`stop()`](./stop%28%29.md) to force the [`AVCaptureExternalDisplayConfigurator`](../avcaptureexternaldisplayconfigurator.md) to asynchronously stop configuring the external display. Once stopped, the [`isActive`](./isactive.md) property changes to `false` and the [`activeExternalDisplayFrameRate`](./activeexternaldisplayframerate.md) becomes 0.
 

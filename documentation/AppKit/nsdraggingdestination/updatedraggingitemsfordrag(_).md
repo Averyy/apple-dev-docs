@@ -20,7 +20,7 @@ optional func updateDraggingItemsForDrag(_ sender: (any NSDraggingInfo)?)
 - (void) updateDraggingItemsForDrag:(id<NSDraggingInfo>) sender;
 ```
 
-#### Discussion
+## Discussion
 
 While a destination may change the dragging images at any time, it is recommended to wait until this method is called before updating the dragging images.
 

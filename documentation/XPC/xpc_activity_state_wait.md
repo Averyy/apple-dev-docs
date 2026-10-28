@@ -25,7 +25,7 @@ var XPC_ACTIVITY_STATE_WAIT: Int { get }
 XPC_ACTIVITY_STATE_WAIT
 ```
 
-#### Discussion
+## Discussion
 
 This value never returns within the activity’s handler block because the block’s invocation is in response to [`XPC_ACTIVITY_STATE_CHECK_IN`](./xpc_activity_state_check_in.md) or [`XPC_ACTIVITY_STATE_RUN`](./xpc_activity_state_run.md).
 

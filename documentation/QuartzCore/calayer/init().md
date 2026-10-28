@@ -24,11 +24,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `CALayer` object.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer for layer objects that are not in the presentation layer.
 

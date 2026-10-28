@@ -25,11 +25,11 @@ func awakeAfter(using coder: NSCoder) -> Any?
 - (id) awakeAfterUsingCoder:(NSCoder *) coder;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver, or another object to take the place of the object that was decoded and subsequently received this message.
 
-#### Discussion
+## Discussion
 
 You can use this method to eliminate redundant objects created by the coder. For example, if after decoding an object you discover that an equivalent object already exists, you can return the existing object. If a replacement is returned, your overriding method is responsible for releasing the receiver.
 

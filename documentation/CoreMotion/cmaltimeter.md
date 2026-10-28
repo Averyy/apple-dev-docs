@@ -22,7 +22,7 @@ class CMAltimeter
 @interface CMAltimeter : NSObject
 ```
 
-#### Overview
+## Overview
 
 Altitude events report changes in both the relative and absolute altitude. For example, a hiking app could use this object to track the user’s elevation change over the course of a hike, or to report their current absolute altitude during the hike.
 

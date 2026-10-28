@@ -33,7 +33,7 @@ class func loadCategories() async throws -> ([String], [String])
 + (void) loadCategoriesWithCompletionHandler:(void (^)(NSArray<NSString *> *categories, NSArray<NSString *> *titles, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You use this class method to retrieve the category identifiers and titles you configure for your leaderboards in App Store Connect. To create a leaderboard query that targets a particular category, set the [`category`](./category.md) property to one of the strings that this method returns.
 

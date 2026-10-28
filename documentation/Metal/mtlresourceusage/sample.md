@@ -24,7 +24,7 @@ static var sample: MTLResourceUsage { get }
 MTLResourceUsageSample
 ```
 
-#### Discussion
+## Discussion
 
 Specify this option only if the resource is a texture.
 

@@ -27,7 +27,7 @@ func presentMediaPlayerController(with URL: URL, options: [AnyHashable : Any]? =
 
 - [Navigating Between Scenes](../navigating-between-scenes.md)
 
-#### Discussion
+## Discussion
 
 Use this method to present short media clips to the user. This method executes asynchronously, returning shortly after you call it. During a subsequent run loop cycle, the system presents a media interface controller over the current interface controller. For video, the interface controller displays the video content along with controls to start and stop playback. For audio, the interface controller displays information about the content being played. Always call this method from your WatchKit extension’s main thread.
 

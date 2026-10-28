@@ -15,7 +15,7 @@ A combination of thoroughfare and subthoroughfare.
 fullThoroughfare: string | null;
 ```
 
-#### Discussion
+## Discussion
 
 For example, a possible [`fullThoroughfare`](./fullthoroughfare.md) for a location in Golden Gate Park in San Francisco, California, is `"1054 John F Kennedy Dr"`.
 

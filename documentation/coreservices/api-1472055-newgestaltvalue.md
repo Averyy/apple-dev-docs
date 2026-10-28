@@ -15,11 +15,11 @@ Installs a new `Gestalt` selector code and a value that `Gestalt` returns for th
 OSErr NewGestaltValue(OSType selector, SInt32 newValue);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Gestalt Manager](./carbon_core/gestalt_manager.md).
 
-#### Discussion
+## Discussion
 
 You call the function `NewGestaltValue` when the specified selector is not already installed and you don't want to override an existing value.
 

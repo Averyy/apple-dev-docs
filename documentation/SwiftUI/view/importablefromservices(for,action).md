@@ -16,7 +16,7 @@ nonisolated
 func importableFromServices<T>(for payloadType: T.Type = T.self, action: @escaping ([T]) -> Bool) -> some View where T : Transferable
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 @State private var title: String

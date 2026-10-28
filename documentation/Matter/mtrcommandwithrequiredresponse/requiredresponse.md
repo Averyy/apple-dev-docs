@@ -25,7 +25,7 @@ var requiredResponse: [NSNumber : [String : Any]]? { get set }
 @property (nonatomic, copy, nullable) NSDictionary<NSNumber *,NSDictionary<NSString *,id> *> * requiredResponse;
 ```
 
-#### Discussion
+## Discussion
 
 If this is nil, that indicates that the invoke is considered successful if it does not result in an error status response.
 

@@ -20,7 +20,7 @@ class PlaceDetail
 - [Displaying place information using the Maps Embed API](./displaying-place-information-using-the-maps-embed-api.md)
 - [MapKit JS 5](./mapkit-js-5.md)
 
-#### Overview
+## Overview
 
 ![A screenshot showing the PlaceDetail view containing the details information of California Science Center.](https://developer.apple.com/tutorials/images/com.apple.mapkitjs/PlaceDetail-cl-01@2x.png)
 

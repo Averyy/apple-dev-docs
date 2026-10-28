@@ -21,7 +21,7 @@ func authorizedToStartStream(for client: CMIOExtensionClient) -> Bool
 - (BOOL) authorizedToStartStreamForClient:(CMIOExtensionClient *) client;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if you authorize the app; otherwise, [`false`](../../Swift/false.md).
 

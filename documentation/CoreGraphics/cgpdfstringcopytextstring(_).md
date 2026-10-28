@@ -25,7 +25,7 @@ func CGPDFStringCopyTextString(_ string: CGPDFStringRef) -> CFString?
 extern CFStringRefCGPDFStringCopyTextString(CGPDFStringRef string);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a CFString object that represents the specified PDF string as a text string. You are responsible for releasing this object.
 

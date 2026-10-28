@@ -19,7 +19,7 @@ var isScrollable: Bool { get set }
 @property (getter=isScrollable) BOOL scrollable;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), text can be scrolled past the cell’s bound. When the value is [`false`](../../Swift/false.md), the cell wraps its text.
 

@@ -21,7 +21,7 @@ Defines a prim at a given path, if none already exists.
 func definePrim(at path: USDLayer.Path, type: USDToken) -> USDPrim
 ```
 
-#### Discussion
+## Discussion
 
 If a prim already exists at the given path, and that prim’s type is empty or equal to `type`, this function returns that prim. Otherwise, the prim authored by this function will be an [`USDPrim.Specifier.def`](../usdprim/specifier-swift.enum/def.md) prim with the given type.
 

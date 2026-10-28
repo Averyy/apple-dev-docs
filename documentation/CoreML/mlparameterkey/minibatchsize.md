@@ -25,7 +25,7 @@ class var miniBatchSize: MLParameterKey { get }
 @property (class, nonatomic, readonly) MLParameterKey * miniBatchSize;
 ```
 
-#### Discussion
+## Discussion
 
 The value type for the [`miniBatchSize`](./minibatchsize.md) key is an [`Int64`](../../Swift/int64.md).
 

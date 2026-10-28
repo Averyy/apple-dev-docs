@@ -5,7 +5,7 @@
 
 Verify that your app receives and handles win-back offer transactions, including those made outside your app.
 
-#### Overview
+## Overview
 
 After you set up win-back offers for auto-renewable subscriptions in App Store Connect, you can begin testing them in the sandbox environment. You can merchandise win-back offers in multiple ways, enabling customers to discover and redeem them in the App Store, in their Apple Account in Subscription settings, in your own marketing channels, and in your app. Within your app, you can merchandise win-back offers by using the win-back offer sheet, StoreKit views, or other StoreKit APIs for full customization.
 
@@ -21,7 +21,7 @@ Handle the resulting transactions in your app. StoreKit delivers them through th
 
 Other types of offers and transactions can also occur outside your app. For testing information, see [Testing purchases made outside your app](./testing-purchases-made-outside-your-app.md). You can also test win-back offers in Xcode, which doesn’t rely on App Store Connect configurations. For more information, see [Testing win-back offers in Xcode](./testing-win-back-offers-in-xcode.md).
 
-##### Set up win-back offer testing in App Store Connect and Account Settings
+### Set up win-back offer testing in App Store Connect and Account Settings
 
 Before you begin testing in the sandbox environment, use App Store Connect to configure at least one auto-renewable subscription, and at least one win-back offer. Make a note of the product ID of the auto-renewable subscription and the corresponding win-back offer IDs to use in your tests.
 
@@ -35,7 +35,7 @@ On the iOS device, set up the testing environment by opening Account Settings, a
 4. Check that the Allow Purchases & Renewals toggle remains on. If it’s off, all purchases fail, which represents a different test case. For more information, see [Testing failing subscription renewals and Apple In-App Purchases](./testing-failing-subscription-renewals-and-in-app-purchases.md).
 5. Turn on or off the Win-Back Offer Sheet toggle.  Turn it on to enable the [`Message`](./message.md) API to display the win-back offer sheet when you launch the app.  Turn it off to prevent the sheet from appearing, even if the customer is eligible for the offer. This toggle only affects sandbox testing.  In either case, StoreKit delivers the new transaction to your app through the [`updates`](./transaction/updates.md) asynchronous sequence in [`Transaction`](./transaction.md).
 
-##### Prepare eligibility conditions
+### Prepare eligibility conditions
 
 In the sandbox environment, test accounts are automatically eligible for win-back offers when they have an expired subscription. The account needs to have owned the subscription; having access through Family Sharing doesn’t qualify the account for a win-back offer. Also, the account can’t have any active subscriptions from the same subscription group.
 
@@ -52,7 +52,7 @@ The Sandbox Apple Account is now eligible for the win-back offer in the sandbox 
 
 Repeat these steps to repeat a test.
 
-##### Test redeeming a win-back offer outside the app
+### Test redeeming a win-back offer outside the app
 
 To simulate a win-back offer redemption outside your app, follow these steps:
 
@@ -66,7 +66,7 @@ To simulate a win-back offer redemption outside your app, follow these steps:
 
 > **Note**:  The sandbox environment doesn’t process actual payments. Instead, it returns transactions as if the system successfully processes them.
 
-##### Test redeeming an offer in your app using the win-back offer sheet
+### Test redeeming an offer in your app using the win-back offer sheet
 
 To simulate a win-back offer redemption in your app, follow these steps:
 
@@ -76,7 +76,7 @@ To simulate a win-back offer redemption in your app, follow these steps:
 4. Accept the offer. The system presents the App Store [Sandbox] payment sheet for the sandbox environment. Confirm the purchase.
 5. Check that your app receives and processes the win-back offer transaction.
 
-##### Test redeeming an offer in your app through StoreKit views or your customized code
+### Test redeeming an offer in your app through StoreKit views or your customized code
 
 If you merchandise the win-back offer using StoreKit views or other StoreKit APIs to fully customize the experience, you can test your implementation in the sandbox environment. Follow these steps:
 
@@ -87,7 +87,7 @@ If you merchandise the win-back offer using StoreKit views or other StoreKit API
 
 For more information about customizing your in-app experience, see [Merchandising win-back offers in your app](./merchandising-win-back-offers-in-your-app.md) and [Supporting win-back offers in your app](./supporting-win-back-offers-in-your-app.md).
 
-##### Restart or conclude a test
+### Restart or conclude a test
 
 To repeat a test and redeem the same win-back offer, cancel the subscription and wait for it to expire. The test account in the sandbox environment is eligible for the same win-back offer after the subscription expires.
 

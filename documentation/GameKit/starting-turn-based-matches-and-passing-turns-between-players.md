@@ -5,7 +5,7 @@
 
 Let Game Center store and forward match data between players in a turn-based game.
 
-#### Overview
+## Overview
 
 In a turn-based game, players take turns to advance gameplay, such as in chess, checkers, and similar board games.
 
@@ -25,7 +25,7 @@ For design guidance, see [Human Interface Guidelines > Technologies > Game Cente
 
 > ❗ **Important**:  The code examples in this article use GameKit asynchronous methods that you invoke from an `async` method or within a `Task` structure. For details about asynchronous flows, see [Concurrency](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html).
 
-##### Create a match request
+### Create a match request
 
 First, create a [`GKMatchRequest`](./gkmatchrequest.md) object that contains the parameters of your turn-based game. You can set the number of players, apply groups and attributes to filter the matches, provide an invitation message, and set other criteria.
 
@@ -39,7 +39,7 @@ Turn-based games don’t support matchmaking rules. Turn-based game matchmaking 
 
 To get the maximum number of players Game Center supports for turn-based games, pass [`GKMatchType.turnBased`](./gkmatchtype/turnbased.md) to the [`maxPlayersAllowedForMatch(of:)`](./gkmatchrequest/maxplayersallowedformatch%28of%29.md) method.
 
-##### Start a turn-based match
+### Start a turn-based match
 
 Let players create a new match and select opponents by using the provided GameKit turn-based interface. Similar to how the process works in the real-time game interface, the player creates a match by tapping the plus button (+) in the upper-right corner. In the next few screens, the player invites players and, optionally, fills empty slots using automatch.
 
@@ -60,7 +60,7 @@ viewController.turnBasedMatchmakerDelegate = self
 
 Alternatively, create your own custom interface, and then programmatically find opponents and accept invitations using the [`find(for:withCompletionHandler:)`](./gkturnbasedmatch/find%28for,withcompletionhandler%29.md), [`acceptInvite(completionHandler:)`](./gkturnbasedmatch/acceptinvite%28completionhandler%29.md), and [`declineInvite(completionHandler:)`](./gkturnbasedmatch/declineinvite%28completionhandler%29.md) methods.
 
-##### Present the gameplay interface for the player to take their turn
+### Present the gameplay interface for the player to take their turn
 
 Before sending invitations to other players, GameKit invokes the `GKTurnBasedEventListener` [`player(_:receivedTurnEventFor:didBecomeActive:)`](./gkturnbasedeventlistener/player%28_,receivedturneventfor,didbecomeactive%29.md) protocol method for the local player to take the first turn. Later, GameKit invokes this method each time it becomes the player’s turn until the player reaches an outcome or the match ends. Implement this method to present the gameplay interface that lets the player take their turn.
 
@@ -82,7 +82,7 @@ myTurn = GKLocalPlayer.local == match.currentParticipant?.player ? true : false
 
 1. Present your gameplay interface to the local player.
 
-##### Pass the turn to the next participant
+### Pass the turn to the next participant
 
 After the player takes their turn, pass the turn to the next participant based on your game rules and logic. Implement your game to do the following:
 
@@ -105,7 +105,7 @@ If this is the first turn in the match, Game Center sends the invitations to oth
 
 Alternatively, use the [`saveCurrentTurn(withMatch:completionHandler:)`](./gkturnbasedmatch/savecurrentturn%28withmatch,completionhandler%29.md) method to save the game data without passing the turn to the next participant. For example, save and forward game data to other participants while the player takes a more complicated, multiple-step turn.
 
-##### Accept turn-based match invitations
+### Accept turn-based match invitations
 
 After the first turn, Game Center manages the status of participants for you by sending invitations and continuing to fill empty slots if you use automatch.
 
@@ -117,7 +117,7 @@ When the local player joins a match, GameKit invokes the `GKTurnBasedEventListen
 
 Optionally, implement the [`player(_:didRequestMatchWithOtherPlayers:)`](./gkturnbasedeventlistener/player%28_,didrequestmatchwithotherplayers%29.md) method to notify the local player when GameKit sends the invitations.
 
-##### Display participant details
+### Display participant details
 
 Enhance your game to show the status, name, and avatar of participants in the match when turn-based events occur. Also, be sure to update your interface when participants decline invitations or forfeit the match.
 
@@ -136,7 +136,7 @@ opponentAvatar = Image(uiImage: image)
 
 1. If the [`status`](./gkturnbasedparticipant/status-swift.property.md) property is [`GKTurnBasedParticipant.Status.done`](./gkturnbasedparticipant/status-swift.enum/done.md), show the outcome of the participant using the [`matchOutcome`](./gkturnbasedparticipant/matchoutcome.md) property. For example, show whether a participant wins, loses, or forfeits a match.
 
-##### Open an existing turn-based match
+### Open an existing turn-based match
 
 A player can continue a match if they don’t forfeit it when they exit or quit your game. In the turn-based matchmaker interface, the player opens an existing match by selecting it under Your Turn or Their Turn.
 
@@ -154,7 +154,7 @@ If you don’t want existing matches to appear in the interface, set the view co
 
 Alternatively, implement a custom interface that lets players manage existing matches. Use the `GKTurnBasedMatch` [`loadMatches(completionHandler:)`](./gkturnbasedmatch/loadmatches%28completionhandler%29.md) method to load the matches from Game Center.
 
-##### Forfeit a turn-based match
+### Forfeit a turn-based match
 
 A player can forfeit an open match using the turn-based matchmaker interface. The player taps the information button next to a match under Your Turn or Their Turn, and on the next screen, taps the Forfeit button in the upper-right corner. The player can also forfeit a match from the list by sliding the match to the left and tapping the Remove button. Players might also forfeit a match using a control in your gameplay interface.
 
@@ -177,7 +177,7 @@ try await match.participantQuitInTurn(with: GKTurnBasedMatch.Outcome.quit, nextP
 
 When a player forfeits a match, notify participants using the APIs described in [Sending messages to players in turn-based games](./sending-messages-to-players-in-turn-based-games.md). Optionally, implement the [`player(_:wantsToQuitMatch:)`](./gkturnbasedeventlistener/player%28_,wantstoquitmatch%29.md) protocol method to notify players.
 
-##### End a turn-based match
+### End a turn-based match
 
 You programmatically end a match depending on your game rules and when participants reach an outcome. You can only end the match when it’s the local player’s turn.
 

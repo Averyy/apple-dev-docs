@@ -19,7 +19,7 @@ var kCFUserNotificationStopAlertLevel: CFOptionFlags { get }
 kCFUserNotificationStopAlertLevel
 ```
 
-#### Discussion
+## Discussion
 
 A stop icon is displayed by default.
 

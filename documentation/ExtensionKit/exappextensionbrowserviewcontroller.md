@@ -22,7 +22,7 @@ class EXAppExtensionBrowserViewController
 
 - [Displaying the app extensions available to your app](./displaying-the-app-extensions-available-to-your-app.md)
 
-#### Overview
+## Overview
 
 When your host app supports app extensions, use this view controller to give people a way to enable or disable those extensions. When you present this view controller, the system displays an out-of-process UI with a list of all app extensions that support your app’s extension points. Someone using your app can use the presented interface to enable or disable extensions selectively. App extensions you include inside your host app’s bundle are enabled by default, but extensions that ship in separate apps are disabled by default.
 

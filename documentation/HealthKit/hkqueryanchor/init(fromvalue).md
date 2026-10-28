@@ -24,11 +24,11 @@ convenience init(fromValue value: Int)
 + (instancetype) anchorFromValue:(NSUInteger) value;
 ```
 
-#### Return Value
+## Return Value
 
 An anchored object corresponding to the same sample as the anchor value.
 
-#### Discussion
+## Discussion
 
 Prior to iOS 9.0, anchored object queries used anchor values to track the last sample returned by a previous query. Use this method to convert those anchor values into anchor objects.
 

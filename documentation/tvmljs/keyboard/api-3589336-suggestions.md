@@ -15,7 +15,7 @@ Search parameters to offer as shortcuts.
 attribute Array suggestions;
 ```
 
-#### Discussion
+## Discussion
 
 Provide search suggestions to help the user complete their query quickly. Update the suggestions as the user types. This property is only available if the [`Keyboard`](../keyboard.md) is associated with a [searchField](../../TVML/searchfield.md).
 

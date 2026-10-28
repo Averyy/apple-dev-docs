@@ -15,11 +15,11 @@ The object for specifying the color and location for a color stop in a gradient.
 object ColorStop
 ```
 
-#### Discussion
+## Discussion
 
 Use this object for gradients in a [`LinearGradientFill`](./lineargradientfill.md) style definition.
 
-##### Example
+### Example
 
 ```json
 {

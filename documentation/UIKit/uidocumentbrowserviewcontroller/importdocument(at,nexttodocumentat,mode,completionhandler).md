@@ -26,7 +26,7 @@ func importDocument(at documentURL: URL, nextToDocumentAt neighbourURL: URL, mod
 - (void) importDocumentAtURL:(NSURL *) documentURL nextToDocumentAtURL:(NSURL *) neighbourURL mode:(UIDocumentBrowserImportMode) importMode completionHandler:(void (^)(NSURL *, NSError *)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to import a document into the same file provider and directory as an existing document.
 

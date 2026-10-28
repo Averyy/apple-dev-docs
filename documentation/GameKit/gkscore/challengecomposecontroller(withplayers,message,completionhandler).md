@@ -31,11 +31,11 @@ func challengeComposeController(withPlayers playerIDs: [String]?, message: Strin
 - (NSViewController *) challengeComposeControllerWithPlayers:(NSArray<NSString *> *) playerIDs message:(NSString *) message completionHandler:(GKChallengeComposeCompletionBlock) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 A [`UIViewController`](../../UIKit/uiviewcontroller.md) view containing the player identifiers and a player-editable message.
 
-#### Discussion
+## Discussion
 
 The view controller returned is presented modally from the top view controller. After the view controller is displayed and the player sends or cancels the challenge, the completion handler block is called.
 

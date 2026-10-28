@@ -18,7 +18,7 @@ Tells the Home app that the accessory’s configuration is complete.
 final func reportConfigurationComplete() async
 ```
 
-#### Discussion
+## Discussion
 
 Call this method from your [`HomeAccessoryConfiguration`](../homeaccessoryconfiguration.md) content when a person finishes setting up the accessory.
 

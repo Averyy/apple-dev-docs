@@ -6,7 +6,7 @@
 
 An elementary stream descriptor for MPEG-4 video.
 
-#### Overview
+## Overview
 
 As defined in the MPEG-4 specification ISO/IEC 14496-1 and subject to the restrictions for storage in MPEG-4 files specified in ISO/IEC 14496-14.
 

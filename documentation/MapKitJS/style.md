@@ -15,7 +15,7 @@ A set of observable style properties for overlays, including the color and opaci
 class Style
 ```
 
-#### Overview
+## Overview
 
 You can assign a `mapkit.Style` object to an overlay to customize its appearance, such as changing the opacity of the fill or the thickness of the stroke. Style properties are observable, so MapKit JS automatically reflects any change to a style property on the corresponding overlays.
 

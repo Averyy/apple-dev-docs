@@ -24,7 +24,7 @@ var visibleMapRect: MKMapRect { get set }
 @property (nonatomic) MKMapRect visibleMapRect;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the same basic information as the [`region`](./region.md) property but specified as a map rectangle instead of a region.
 

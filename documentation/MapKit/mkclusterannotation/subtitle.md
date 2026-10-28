@@ -24,7 +24,7 @@ var subtitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * subtitle;
 ```
 
-#### Discussion
+## Discussion
 
 The cluster annotation object sets this property to a string that conveys how many additional annotations the group includes, except for the annotation with the title that the [`title`](./title.md) property displays.
 

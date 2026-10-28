@@ -21,7 +21,7 @@ The number of bits equal to 1 in this value’s binary representation.
 var nonzeroBitCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, in a fixed-width integer type with a `bitWidth` value of 8, the number *31* has five bits equal to *1*.
 

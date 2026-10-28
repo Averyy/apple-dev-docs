@@ -10,7 +10,7 @@ framework: "Swift-Org/SwiftlyDocs"
 
 Choose an installed toolchain to use as default.
 
-#### Overview
+## Overview
 
 Swiftly toolchains include a variety of compilers, linkers, debuggers, documentation generators, and other useful tools for working with Swift. Using a toolchain activates it so that when you run toolchain commands they are run with that version.
 
@@ -58,7 +58,7 @@ $ swiftly use --print-location
 /Users/someuser/Library/Developer/Toolchains/swift-5.10.1-RELEASE.xctoolchain
 ```
 
-#### Sharing recommended toolchain versions
+## Sharing recommended toolchain versions
 
 Swiftly can create and update a special `.swift-version` file at the top of your git repository so that you can share your toolchain preference with the rest of your team:
 
@@ -103,7 +103,7 @@ $ swiftly use --global-default 6.0.1
 
 Here the `--global-default` flag ensures that the default is set globally to the “6.0.1” toolchain whenever there isn’t a `.swift-version` file, and there isn’t a version specified in the `swiftly run` command. This flag doesn’t attempt to create a `.swift-version` file, or update it if it already exists.
 
-#### In use toolchains and default toolchains
+## In use toolchains and default toolchains
 
 When you list installed toolchains or use the `swiftly use` command to print the current in use toolchain, there will be tags for both “in use” and “default.” Sometimes the same toolchain has both tags!
 

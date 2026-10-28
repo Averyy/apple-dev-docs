@@ -19,7 +19,7 @@
 static float SPVector3DFloatDotProduct(SPVector3DFloat x, SPVector3DFloat y);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the dot product of two vectors.
 

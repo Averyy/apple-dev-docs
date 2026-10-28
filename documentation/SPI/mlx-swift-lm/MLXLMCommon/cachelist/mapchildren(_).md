@@ -17,7 +17,7 @@ Recursively apply a transformation to every non-composite child cache.
 func mapChildren(_ transform: (KVCache) -> KVCache)
 ```
 
-#### Discussion
+## Discussion
 
 `CacheList` children are descended into; any other cache is passed to `transform` and replaced by the returned value. This is the primitive used by dynamic cache quantization and other cache-wide rewrites for models with hybrid attention/recurrent caches (e.g. Falcon-H1).
 

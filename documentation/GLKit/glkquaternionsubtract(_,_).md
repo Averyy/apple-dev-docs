@@ -22,7 +22,7 @@ func GLKQuaternionSubtract(_ quaternionLeft: GLKQuaternion, _ quaternionRight: G
 static GLKQuaternion GLKQuaternionSubtract(GLKQuaternion quaternionLeft, GLKQuaternion quaternionRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new quaternion.
 

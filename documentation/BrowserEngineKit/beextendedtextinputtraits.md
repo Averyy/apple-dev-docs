@@ -22,7 +22,7 @@ protocol BEExtendedTextInputTraits : UITextInputTraits
 @protocol BEExtendedTextInputTraits <UITextInputTraits>
 ```
 
-#### Overview
+## Overview
 
 This class extends the standard text input traits to control cursor and selection colors, as well as single-line mode and typing adaptation in web content.
 

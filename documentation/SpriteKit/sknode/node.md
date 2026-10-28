@@ -21,11 +21,11 @@ Creates a new node.
 + (instancetype) node;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized node.
 
-#### Discussion
+## Discussion
 
 The [`SKNode`](../sknode.md) class does not draw or perform any tasks directly, so it is more common to instantiate a node subclass instead. However, you might create an `SKNode` object to organize other related nodes in the node tree.
 

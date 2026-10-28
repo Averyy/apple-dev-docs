@@ -5,7 +5,7 @@
 
 Detect three-dimensional human body poses using the Vision framework.
 
-#### Overview
+## Overview
 
 Vision allows you to take your app’s body pose detection into the third dimension. All photos — with people in them — are a 2D representation of people in a 3D world. Starting in iOS 17 and macOS 14, Vision detects human body poses and measures 17 individual joint locations in 3D space. You access a joint location using the joint name itself, or with a joint group name that returns a collection of joints. The following illustration of a 3D model identifies the 17 joint locations that Vision detects.
 
@@ -15,7 +15,7 @@ Images you capture in Portrait mode using Camera — or using [AVFoundation](../
 
 For more information about recognizing a body pose in 2D, see [Detecting Human Body Poses in Images](./detecting-human-body-poses-in-images.md).
 
-##### Perform a body pose request
+### Perform a body pose request
 
 Detecting the position of the joints on a human body in 3D space begins with [`VNDetectHumanBodyPose3DRequest`](./vndetecthumanbodypose3drequest.md). The request only supports the detection and results for the most prominent person in the frame, so it generates a single observation. For example, performing a request on an image with three people — with one person being closer to the camera — returns an observation that detects the person closest to the camera.
 
@@ -51,7 +51,7 @@ do {
 }
 ```
 
-##### Handle the resulting observation
+### Handle the resulting observation
 
 A [`VNHumanBodyPose3DObservation`](./vnhumanbodypose3dobservation.md) provides body pose information in 3D space, in meters. The framework normalizes 2D points — from other framework requests — to a lower-left origin. Points that a 3D body pose request returns are relative to the scene in the real world, with an origin at the root joint, located between the [`leftHip`](./vnhumanbodypose3dobservation/jointname/lefthip.md) and [`rightHip`](./vnhumanbodypose3dobservation/jointname/righthip.md).
 
@@ -73,7 +73,7 @@ If there’s enough depth metadata, [`bodyHeight`](./vnhumanbodypose3dobservatio
 
 Use [`cameraRelativePosition(_:)`](./vnhumanbodypose3dobservation/camerarelativeposition%28_%29.md) to get an estimate of how far the person was away from a camera. To get an accurate understanding of where the camera was when capturing the image, use [`cameraOriginMatrix`](./vnhumanbodypose3dobservation/cameraoriginmatrix.md).
 
-##### Work with positions in 3D space
+### Work with positions in 3D space
 
 The Vision framework represents a 3D position as a [`simd_float4x4`](../simd/simd_float4x4.md) matrix. A [`VNHumanBodyRecognizedPoint3D`](./vnhumanbodyrecognizedpoint3d.md) object contains the position of the joint, in meters, along with an identifier that corresponds to the joint name. It also contains the [`localPosition`](./vnhumanbodyrecognizedpoint3d/localposition.md) of the joint, which describes the position relative to a [`parentJoint`](./vnhumanbodyrecognizedpoint3d/parentjoint.md).
 
@@ -109,7 +109,7 @@ angleVector = simd_float3(pitch, yaw, roll)
 
 For more information about matrices, see [Working with Matrices](../Accelerate/working-with-matrices.md).
 
-##### Use depth data as input
+### Use depth data as input
 
 Depth data contains the information the system needs to reconstruct a 3D scene, and includes camera calibration data. [`AVDepthData`](../AVFoundation/avdepthdata.md) serves as the container class for interfacing with depth metadata. Starting in iOS 17 and macOS 14, provide depth data when you initialize a [`VNImageRequestHandler`](./vnimagerequesthandler.md) with sample or pixel buffers.
 

@@ -23,7 +23,7 @@ var tabBarItem: UITabBarItem! { get set }
 @property (nonatomic, strong, null_resettable) UITabBarItem * tabBarItem;
 ```
 
-#### Discussion
+## Discussion
 
 This is a unique instance of [`UITabBarItem`](../uitabbaritem.md) created to represent the view controller when it is a child of a tab bar controller. The first time the property is accessed, the [`UITabBarItem`](../uitabbaritem.md) is created. Therefore, you should not access this property if you are not using a tab bar controller to display the view controller. To ensure the tab bar item is configured, you can either override this property and add code to create the bar button items when first accessed or create the items in your view controller’s initialization code.
 

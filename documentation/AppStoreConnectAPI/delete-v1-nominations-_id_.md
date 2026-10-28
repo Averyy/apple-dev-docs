@@ -9,7 +9,7 @@ Remove a specific featuring nomination.
 **Availability**:
 - App Store Connect API 3.8+
 
-#### Overview
+## Overview
 
 - id: An opaque resource ID that uniquely identifies the resource. Obtain the nomination resource ID from the [`List Nominations`](./get-v1-nominations.md) response.
 

@@ -20,7 +20,7 @@ The size of the resource in bytes
 @property (nonatomic, copy, readonly, nullable) NSNumber * dataSize;
 ```
 
-#### Discussion
+## Discussion
 
 The size may be unknown until a resource has finished being generated or processed and some resources never report one. `nil` means the size is unknown, not that it is zero.
 

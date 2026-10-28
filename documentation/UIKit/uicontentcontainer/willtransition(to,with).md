@@ -24,7 +24,7 @@ func willTransition(to newCollection: UITraitCollection, with coordinator: any U
 - (void) willTransitionToTraitCollection:(UITraitCollection *) newCollection withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>) coordinator;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method before changing the current object’s traits and before calling the [`traitCollectionDidChange(_:)`](../uitraitenvironment/traitcollectiondidchange%28_%29.md) method of any affected views and view controllers. Implementors of this method can use it to adapt the interface based on the values in the `newCollection` parameter. A common use of this method is to make changes to the high-level presentation style when the current size class changes. For example, a container view controller that manages multiple child view controllers might change the number of child view controllers it displays onscreen when the size class changes. A standard view controller might use this method to change the constraints on the views it manages. Use the provided `coordinator` object to animate any changes you make.
 

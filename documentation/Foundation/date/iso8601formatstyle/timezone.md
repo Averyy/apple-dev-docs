@@ -21,7 +21,7 @@ The time zone used to create and parse date representations.
 var timeZone: TimeZone { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default time zone is Greenwich Mean Time (GMT).
 

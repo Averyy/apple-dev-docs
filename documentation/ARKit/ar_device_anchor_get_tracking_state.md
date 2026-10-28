@@ -15,7 +15,7 @@ Gets the tracking state of the device anchor.
 extern ar_device_anchor_tracking_state_t ar_device_anchor_get_tracking_state(ar_device_anchor_t anchor);
 ```
 
-#### Return Value
+## Return Value
 
 The tracking state of this anchor.
 

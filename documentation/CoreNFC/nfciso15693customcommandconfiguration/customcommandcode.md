@@ -19,7 +19,7 @@ var customCommandCode: Int { get set }
 @property (nonatomic, assign) NSUInteger customCommandCode;
 ```
 
-#### Discussion
+## Discussion
 
 Manufacturer Custom Command Index.  Valid range is 0xA0 to 0xDF.
 

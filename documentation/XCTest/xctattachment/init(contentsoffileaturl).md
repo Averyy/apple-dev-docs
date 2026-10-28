@@ -12,7 +12,7 @@ Creates an attachment from the contents of an existing file on disk.
 convenience init(contentsOfFileAtURL url: URL)
 ```
 
-#### Discussion
+## Discussion
 
 The attachment’s [`name`](./name.md) property is the file name of the provided url. The attachment’s [`uniformTypeIdentifier`](./uniformtypeidentifier.md) value is inferred from the file’s extension. A default UTI of `"public.data"` is used for files without an extension.
 

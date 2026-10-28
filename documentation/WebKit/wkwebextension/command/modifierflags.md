@@ -39,7 +39,7 @@ var modifierFlags: NSEvent.ModifierFlags { get set }
 @property (nonatomic) NSEventModifierFlags modifierFlags;
 ```
 
-#### Discussion
+## Discussion
 
 This property can be customized within the app to avoid conflicts with existing shortcuts or to enable user personalization. It should accurately represent the modifier keys as used by the app, which the extension can use to display the complete shortcut in its interface.
 

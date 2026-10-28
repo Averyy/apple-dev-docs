@@ -24,7 +24,7 @@ func cancel()
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 Your app uses this method to notify a [`VSAccountManager`](../vsaccountmanager.md) instance to cancel the current request for subscriber account information. No guarantees are made that the cancellation request will succeed or finish immediately.
 

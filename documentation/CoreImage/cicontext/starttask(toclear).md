@@ -24,11 +24,11 @@ func startTask(toClear destination: CIRenderDestination) throws -> CIRenderTask
 - (CIRenderTask *) startTaskToClear:(CIRenderDestination *) destination error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The asynchronous [`CIRenderTask`](../cirendertask.md) for clearing the destination.
 
-#### Discussion
+## Discussion
 
 If the destination’s [`alphaMode`](../cirenderdestination/alphamode.md) is [`CIRenderDestinationAlphaMode.none`](../cirenderdestinationalphamode/none.md), this command fills the entire destination with black `(0, 0, 0, 1)`.
 

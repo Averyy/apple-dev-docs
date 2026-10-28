@@ -19,7 +19,7 @@ A conflict occurred during an attempt to save changes.
 NSCloudSharingConflictError
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when a conflict is detected while trying to save changes to the [`CKShare`](../CloudKit/ckshare.md) or root [`CKRecord`](../CloudKit/ckrecord.md). Respond to this error by first fetching the server’s changes to the records, then either handle the conflict manually or present it, which will instruct the user to try the operation again.
 

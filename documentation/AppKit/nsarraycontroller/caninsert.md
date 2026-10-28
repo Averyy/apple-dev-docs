@@ -19,11 +19,11 @@ var canInsert: Bool { get }
 @property (readonly) BOOL canInsert;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if an object can be inserted into the receiver’s content collection, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The result of this method can be used by a binding to enable user interface items.
 

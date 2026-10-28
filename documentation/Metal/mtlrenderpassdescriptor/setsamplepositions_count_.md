@@ -24,7 +24,7 @@ Sets the programmable sample positions for a render pass.
 
 - [Positioning samples programmatically](../positioning-samples-programmatically.md)
 
-#### Discussion
+## Discussion
 
 Programmable sample positions need to be floating-point values in the `[0.0, 1.0)` range along each axis, with the origin `(0,0)` defined at the top-left corner. Values can be set from `0/16` up to `15/16`, inclusive, in 1`/16` increments along each axis.
 

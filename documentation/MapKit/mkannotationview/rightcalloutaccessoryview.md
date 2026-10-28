@@ -40,7 +40,7 @@ var rightCalloutAccessoryView: NSView? { get set }
 @property (nonatomic, strong, nullable) NSView * rightCalloutAccessoryView;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` by default. Typically, you use the right callout view to link to more detailed information about the annotation. In an iOS app, a common view to specify for this property is a button object with a type of [`UIButton.ButtonType.detailDisclosure`](../../UIKit/uibutton/buttontype-swift.enum/detaildisclosure.md).
 

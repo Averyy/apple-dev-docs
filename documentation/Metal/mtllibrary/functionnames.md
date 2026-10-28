@@ -25,7 +25,7 @@ var functionNames: [String] { get }
 @property (readonly) NSArray<NSString *> * functionNames;
 ```
 
-#### Discussion
+## Discussion
 
 Inside a Metal library, functions with the `vertex`, `fragment`, or `kernel` function attributes are entry points into the library. Functions without these attributes are private.
 

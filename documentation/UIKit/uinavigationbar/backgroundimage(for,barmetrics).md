@@ -23,11 +23,11 @@ func backgroundImage(for barPosition: UIBarPosition, barMetrics: UIBarMetrics) -
 - (UIImage *) backgroundImageForBarPosition:(UIBarPosition) barPosition barMetrics:(UIBarMetrics) barMetrics;
 ```
 
-#### Return Value
+## Return Value
 
 The image to use for the specified location and metrics.
 
-#### Discussion
+## Discussion
 
 Resizable images will be stretched vertically, if necessary, for a position of [`UIBarPosition.topAttached`](../uibarposition/topattached.md).
 

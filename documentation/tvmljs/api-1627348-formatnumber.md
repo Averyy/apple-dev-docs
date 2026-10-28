@@ -20,11 +20,11 @@ String formatNumber(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the formatted number.
 
-#### Discussion
+## Discussion
 
 This function changes an integer into a string, based on the formatting styles specified. For example, `formatNumber(-60, “”, “+”, “-”)` returns “-60”.
 

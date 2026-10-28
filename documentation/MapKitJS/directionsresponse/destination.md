@@ -15,7 +15,7 @@ An optional end point for routing directions.
 destination?: Coordinate | Place;
 ```
 
-#### Discussion
+## Discussion
 
 If you use [`Coordinate`](../coordinate.md) to request directions with [`route()`](../directions/route.md), MapKit JS returns a `mapkit.Coordinate` in the direction’s response. If you use a string or a [`Place`](../place.md) to request directions, the property may be `null` or a `Place` instance.
 

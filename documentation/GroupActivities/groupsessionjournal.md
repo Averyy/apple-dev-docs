@@ -24,7 +24,7 @@ final class GroupSessionJournal
 
 - [Synchronizing data during a SharePlay activity](./synchronizing-data-during-a-shareplay-activity.md)
 
-#### Overview
+## Overview
 
 A [`GroupSessionJournal`](./groupsessionjournal.md) object lets you transfer files and other data objects between participants of a shared activity. A journal object isn’t a replacement for a [`GroupSessionMessenger`](./groupsessionmessenger.md) object, which you use to transfer time-sensitive messages and commands between participants. Instead, use it to associate files and other data objects with the activity. For example, you might share images that people drag into your app as part of the activity. The journal makes these data objects available to all participants, regardless of when they joined the session.
 

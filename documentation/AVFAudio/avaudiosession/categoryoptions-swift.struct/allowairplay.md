@@ -23,7 +23,7 @@ static var allowAirPlay: AVAudioSession.CategoryOptions { get }
 AVAudioSessionCategoryOptionAllowAirPlay
 ```
 
-#### Discussion
+## Discussion
 
 Setting this option enables the audio session to route audio output to AirPlay devices. You can only explicitly set this option if the audio session’s category is set to [`playAndRecord`](../category-swift.struct/playandrecord.md). For most other audio session categories, the system sets this option implicitly.
 

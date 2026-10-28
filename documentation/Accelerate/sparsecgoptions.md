@@ -25,7 +25,7 @@ struct SparseCGOptions
 typedef struct { ... } SparseCGOptions;
 ```
 
-#### Overview
+## Overview
 
 Use CG to solve *Ax = b* when *A* is symmetric positive-definite. The method may break down or fail to converge if *A* isn’t positive-definite.
 

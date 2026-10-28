@@ -20,7 +20,7 @@ The representation of the generated content.
 var kind: GeneratedContent.Kind { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property provides access to the content in a strongly-typed enumeration representation, preserving the hierarchical structure of the data and the data’s [`GenerationID`](../generationid.md) values.
 

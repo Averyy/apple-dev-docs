@@ -29,7 +29,7 @@ func cancelRecordProgram(with params: MTRChannelClusterCancelRecordProgramParams
 - (void) cancelRecordProgramWithParams:(MTRChannelClusterCancelRecordProgramParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Cancel recording for a specific program or series.
 

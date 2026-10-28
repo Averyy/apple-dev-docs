@@ -25,7 +25,7 @@ let kCGImageSourcePrioritizeQuality: CFString
 extern CFStringRef const kCGImageSourcePrioritizeQuality;
 ```
 
-#### Discussion
+## Discussion
 
 When you set this key to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md), the image source decodes the full-size image using the highest-quality decode method available for the file. The value of this key is a [`CFBoolean`](../CoreFoundation/cfboolean.md). The default value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md).
 
@@ -33,7 +33,7 @@ Currently, image sources support this option only for camera RAW images. This ke
 
 Include this key in the options dictionary you pass to the functions [`CGImageSourceCopyPropertiesAtIndex(_:_:_:)`](./cgimagesourcecopypropertiesatindex%28_,_,_%29.md) and [`CGImageSourceCreateImageAtIndex(_:_:_:)`](./cgimagesourcecreateimageatindex%28_,_,_%29.md).
 
-#### Example
+## Example
 
 **Swift**:
 

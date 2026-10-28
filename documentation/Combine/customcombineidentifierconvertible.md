@@ -21,7 +21,7 @@ A protocol for uniquely identifying publisher streams.
 protocol CustomCombineIdentifierConvertible
 ```
 
-#### Overview
+## Overview
 
 If you create a custom [`Subscription`](./subscription.md) or [`Subscriber`](./subscriber.md) type, implement this protocol so that development tools can uniquely identify publisher chains in your app. If your type is a class, Combine provides an implementation of [`combineIdentifier`](./customcombineidentifierconvertible/combineidentifier.md) for you. If your type is a structure, set up the identifier as follows:
 

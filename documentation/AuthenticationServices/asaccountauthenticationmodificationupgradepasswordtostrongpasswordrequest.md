@@ -26,7 +26,7 @@ class ASAccountAuthenticationModificationUpgradePasswordToStrongPasswordRequest
 
 - [Upgrading Account Security With an Account Authentication Modification Extension](./upgrading-account-security-with-an-account-authentication-modification-extension.md)
 
-#### Overview
+## Overview
 
 Your app uses this class to initiate an upgrade from a weak password to a strong system-generated one. After creating the request, your app initiates the upgrade process by instantiating an [`ASAccountAuthenticationModificationController`](./asaccountauthenticationmodificationcontroller.md) object and calling [`perform(_:)`](./asaccountauthenticationmodificationcontroller/perform%28_%29.md) on it. The system invokes your authentication modification extension to complete the upgrade.
 

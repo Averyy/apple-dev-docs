@@ -24,7 +24,7 @@ let PHASESoundEventErrorDomain: String
 extern NSErrorDomain const PHASESoundEventErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 For more information on Core Foundation error domains, see [Error domains](../CoreFoundation/error-domains.md).
 

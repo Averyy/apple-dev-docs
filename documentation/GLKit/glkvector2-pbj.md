@@ -3,7 +3,7 @@
 **Framework**: GLKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 The `GLKVector2` type defines a `2`-component floating-point vector as well as many mathematical operations commonly used to manipulate vectors. Graphics programming uses vectors extensively to represent positions, colors and other data structures.
 

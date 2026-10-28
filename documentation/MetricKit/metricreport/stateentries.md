@@ -23,7 +23,7 @@ let stateEntries: [MetricReport.StateEntry]
 - [Monitoring app performance with MetricKit](../monitoring-app-performance-with-metrickit.md)
 - [Analyzing app performance with MetricKit](../analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 `stateEntries` is only populated when the [`MetricManager`](../metricmanager.md) was initialized with [`init(enabledStateReportingDomains:)`](../metricmanager/init%28enabledstatereportingdomains%29.md). Each [`MetricReport.StateEntry`](./stateentry.md) contains metric values aggregated while the app was in a specific state, scoped to a specific [`MetricManager.ReportedState`](../metricmanager/reportedstate.md).
 

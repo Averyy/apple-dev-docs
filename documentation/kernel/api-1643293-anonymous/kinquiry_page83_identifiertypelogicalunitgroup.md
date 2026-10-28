@@ -13,7 +13,7 @@
 kINQUIRY_Page83_IdentifierTypeLogicalUnitGroup = 6
 ```
 
-#### Discussion
+## Discussion
 
 Logical Unit Group Identifier Type.
 

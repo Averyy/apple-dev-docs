@@ -18,7 +18,7 @@ Posted when the available media types in a movie are determined. There is no `us
 extern NSString * const MPMovieMediaTypesAvailableNotification;
 ```
 
-#### Discussion
+## Discussion
 
 To retrieve the available media types in a movie—audio, video, or both—access the movie player’s [`movieMediaTypes`](./mpmovieplayercontroller/moviemediatypes.md) property. The movie player whose state has changed is available as the object associated with the notification.
 

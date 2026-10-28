@@ -29,7 +29,7 @@ func cancelRequest(with params: MTRMessagesClusterCancelMessagesRequestParams) a
 - (void) cancelMessagesRequestWithParams:(MTRMessagesClusterCancelMessagesRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command will cancel the message IDs specified.
 

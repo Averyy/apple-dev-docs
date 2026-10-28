@@ -25,7 +25,7 @@ func NSSwapHostDoubleToBig(_ x: Double) -> NSSwappedDouble
 static NSSwappedDouble NSSwapHostDoubleToBig(double x);
 ```
 
-#### Discussion
+## Discussion
 
 Converts the value in `x`, specified in the current endian format, to big-endian format and returns the resulting value. If it is necessary to swap the bytes, this function calls [`NSSwapDouble(_:)`](./nsswapdouble%28_%29.md) to perform the swap.
 

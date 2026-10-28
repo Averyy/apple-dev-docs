@@ -19,7 +19,7 @@ The flash settings this capture output currently supports.
 @property (nonatomic, readonly) NSArray<NSNumber *> * supportedFlashModes;
 ```
 
-#### Discussion
+## Discussion
 
 To set the flash mode for a capture, set the [`flashMode`](../avcapturephotosettings/flashmode.md) property of your photo settings object to one of the [`AVCaptureDevice.FlashMode`](../avcapturedevice/flashmode-swift.enum.md) values listed in this array.
 

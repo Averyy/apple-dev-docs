@@ -17,7 +17,7 @@
 func matches(address: WIMACAddress) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the provided MAC address matches this hash, `false` otherwise.
 

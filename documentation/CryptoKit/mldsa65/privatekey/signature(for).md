@@ -21,7 +21,7 @@ Generates a MLDSA65 signature.
 func signature<D>(for data: D) throws -> Data where D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The MLDSA65 signature. This method throws if CryptoKit encounters an error producing the signature.
 

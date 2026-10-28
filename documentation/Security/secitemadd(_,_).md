@@ -33,17 +33,17 @@ OSStatus SecItemAdd(CFDictionaryRef attributes, CFTypeRef*result);
 - [Storing Keys in the Keychain](./storing-keys-in-the-keychain.md)
 - [Updating and deleting keychain items](./updating-and-deleting-keychain-items.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 To add multiple items to a keychain at once use the [`kSecUseItemList`](./ksecuseitemlist.md) key in the `attributes` dictionary with an array of dictionaries (each corresponding to one of the items) as its value. This is only supported for non-password items.
 
 When you use Xcode to create an application, Xcode adds an `application-identifier` entitlement to the application bundle. Keychain Services uses this entitlement to grant the application access to its own keychain items. To share the new keychain item to among multiple apps, include the [`kSecAttrAccessGroup`](./ksecattraccessgroup.md) key in the `attributes` dictionary. The value of this key must be the name of a keychain access group to which all the programs that share this item belong.
 
-##### Performance considerations
+### Performance considerations
 
 `SecItemAdd` blocks the calling thread, so it can cause your app’s UI to hang if called from the main thread. Instead, call `SecItemAdd` from a background dispatch queue or `async` function:
 

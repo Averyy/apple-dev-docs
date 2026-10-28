@@ -21,11 +21,11 @@ func open(_ urls: [URL], withAppBundleIdentifier bundleIdentifier: String?, opti
 - (BOOL) openURLs:(NSArray<NSURL *> *) urls withAppBundleIdentifier:(NSString *) bundleIdentifier options:(NSWorkspaceLaunchOptions) options additionalEventParamDescriptor:(NSAppleEventDescriptor *) descriptor launchIdentifiers:(NSArray<NSNumber *> **) identifiers;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the app was found and launched; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 It is safe to call this method from any thread of your app.
 

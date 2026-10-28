@@ -20,7 +20,7 @@ Saves the layer to its source if it has unsaved changes.
 func save() throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the layer cannot be saved.
 

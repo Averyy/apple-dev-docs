@@ -28,7 +28,7 @@ var rootObject: PHASEObject { get }
 
 - [Playing sound from a location in a 3D scene](../playing-sound-from-a-location-in-a-3d-scene.md)
 
-#### Discussion
+## Discussion
 
 The framework creates and sets the root object at engine instantiation.
 

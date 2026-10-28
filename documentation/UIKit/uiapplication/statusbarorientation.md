@@ -23,7 +23,7 @@ var statusBarOrientation: UIInterfaceOrientation { get set }
 @property (nonatomic, readonly) UIInterfaceOrientation statusBarOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a constant that indicates an orientation of the status bar. See [`UIInterfaceOrientation`](../uiinterfaceorientation.md) for details. Setting this property rotates the status bar to the specified orientation without animating the transition. If your app has rotatable window content, however, you shouldn’t arbitrarily set status-bar orientation using this method. The status-bar orientation set by this method doesn’t change if the device changes orientation. For more on rotatable window views, see [View Controller Programming Guide for iOS](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/index.html#//apple_ref/doc/uid/TP40007457).
 

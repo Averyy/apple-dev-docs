@@ -29,11 +29,11 @@ convenience init(imageNamed name: String)
 
 - [Resizing a Sprite in Nine Parts](../resizing-a-sprite-in-nine-parts.md)
 
-#### Return Value
+## Return Value
 
 A newly initialized sprite object.
 
-#### Discussion
+## Discussion
 
 This method creates a new texture object from the image file and assigns that texture to the [`texture`](./texture.md) property, the [`normalTexture`](./normaltexture.md) properties is set to `nil`. The [`size`](./size.md) property of the sprite is set to the dimensions of the image. The [`color`](./color.md) property is set to white with an alpha of zero `(1.0,1.0,1.0,0.0)`.
 

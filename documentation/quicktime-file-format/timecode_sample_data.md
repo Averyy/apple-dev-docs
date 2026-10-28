@@ -6,7 +6,7 @@
 
 An atom that represents timecode sample data.
 
-#### Overview
+## Overview
 
 A timecode media sample is recorded as a 32-bit integer, interpreted based on the value of the Counter flag in the timecode sample description.
 

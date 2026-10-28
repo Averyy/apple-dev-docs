@@ -11,9 +11,9 @@ Read information about a specific Game Center achievement.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Read Game Center Achievement Information`](./get-v2-gamecenterachievements-_id_.md) instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

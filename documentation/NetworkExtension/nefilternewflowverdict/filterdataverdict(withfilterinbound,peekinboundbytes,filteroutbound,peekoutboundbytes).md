@@ -23,7 +23,7 @@ class func filterDataVerdict(withFilterInbound filterInbound: Bool, peekInboundB
 + (NEFilterNewFlowVerdict *) filterDataVerdictWithFilterInbound:(BOOL) filterInbound peekInboundBytes:(NSUInteger) peekInboundBytes filterOutbound:(BOOL) filterOutbound peekOutboundBytes:(NSUInteger) peekOutboundBytes;
 ```
 
-#### Return Value
+## Return Value
 
 A `NEFilterNewFlowVerdict` object.
 

@@ -5,7 +5,7 @@
 
 Prevent multiple commands that can access the same resources simultaneously by coordinating those reads and writes with barriers, fences, or events.
 
-#### Overview
+## Overview
 
 By design, GPUs can run multiple commands in parallel. Many of those commands access underlying memory of resources, including buffers and textures, with read and write operations. Commands can have an *access conflict* when one or more of them has a memory write, or *store*, operation and at least one other command has a memory read, or *load*, operation.
 
@@ -13,7 +13,7 @@ Synchronize commands submitted to an [`MTL4CommandQueue`](./mtl4commandqueue.md)
 
 > ❗ **Important**: The value of an [`MTLResource`](./mtlresource.md) instance’s [`hazardTrackingMode`](./mtlresource/hazardtrackingmode.md) property has no effect on the work you submit to an [`MTL4CommandQueue`](./mtl4commandqueue.md).
 
-##### Look for resources with access conflicts
+### Look for resources with access conflicts
 
 Start by identifying the commands that access the same resource, such as an [`MTLBuffer`](./mtlbuffer.md) or an [`MTLTexture`](./mtltexture.md) instance. Consider any resource that multiple passes can access concurrently by any means, including:
 
@@ -33,7 +33,7 @@ Locate potential access conflicts by checking which resources apply to multiple 
 
 > **Note**:  Even though race conditions typically arise from an implementation mistake, some apps intentionally introduce them as an optimization technique, such as two commands that don’t need synchronization because they store the same modifications to a resource.
 
-##### Check render pass commands that access its attachments
+### Check render pass commands that access its attachments
 
 A render pass that writes to an attachment may introduce an access conflict because a render pass can have implicit load and store operations for that attachment. For render passes, look for potential conflicts with its attachment textures by:
 
@@ -46,13 +46,13 @@ Note which attachment textures that have a load action that’s equal to [`MTLLo
 
 > **Note**:  You can use any combination of load and store actions for each attachment.
 
-##### Check compute pass commands that can run concurrently
+### Check compute pass commands that can run concurrently
 
 An [`MTL4ComputeCommandEncoder`](./mtl4computecommandencoder.md) instance creates a compute pass that runs commands concurrently on the GPU, which can introduce access conflicts.
 
 By default, an [`MTLComputeCommandEncoder`](./mtlcomputecommandencoder.md) encodes a compute pass that runs its commands serially, However, you can create one that encodes a concurrent compute pass by configuring an [`MTLComputePassDescriptor`](./mtlcomputepassdescriptor.md) instance’s [`dispatchType`](./mtlcomputepassdescriptor/dispatchtype.md) property to [`MTLDispatchType.concurrent`](./mtldispatchtype/concurrent.md).
 
-##### Ignore memory operations the system already guarantees
+### Ignore memory operations the system already guarantees
 
 Metal provides several built-in resource ordering guarantees within compute and render passes, which your app doesn’t need to synchronize.
 
@@ -64,7 +64,7 @@ Render passes also order memory operations for specific cases, including:
 - A fragment shader’s load and store operations for a raster-order group run in primitive order for each fragment.
 - A tile shader’s load and store operations run in the same order as your app’s tile dispatch calls and on a per-tile basis.
 
-##### Resolve access conflicts with synchronization
+### Resolve access conflicts with synchronization
 
 You can address access conflicts with one or more synchronization mechanisms. Each synchronization mechanism forces the GPU to pause before it runs a stage that accesses a resource, until another stage finishes. This means the memory operations from one stage completely finish before another stage can run its memory operations.
 
@@ -85,7 +85,7 @@ You can choose one of the following synchronization mechanisms, which are in ord
 
 > 💡 **Tip**:  Select the synchronizing mechanism with smallest scope that can resolve the access conflict because larger scopes pause the GPU from doing more work than smaller scopes.
 
-##### Track hazards with the framework prior to Metal 4
+### Track hazards with the framework prior to Metal 4
 
 The Metal framework automatically synchronizes resource access conflicts for the commands you submit to an [`MTLCommandQueue`](./mtlcommandqueue.md) instance, and only for the resources that:
 

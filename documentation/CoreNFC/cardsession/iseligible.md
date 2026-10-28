@@ -17,7 +17,7 @@ A property that indicates whether the current system supports card session funct
 static var isEligible: Bool { get async }
 ```
 
-#### Discussion
+## Discussion
 
 Query this property before calling [`init()`](./init%28%29.md) to avoid showing a system card session UI on ineligible devices.
 

@@ -16,7 +16,7 @@ nonisolated
 struct ManipulableTransformBindingModifier
 ```
 
-#### Overview
+## Overview
 
 [`manipulable(transform:coordinateSpace:operations:inertia:isEnabled:onChanged:)`](./view/manipulable%28transform,coordinatespace,operations,inertia,isenabled,onchanged%29.md) returns a view modified with this type. You don’t create it directly.
 

@@ -25,7 +25,7 @@ class DateComponentsFormatter
 @interface NSDateComponentsFormatter : NSFormatter
 ```
 
-#### Overview
+## Overview
 
 An [`DateComponentsFormatter`](./datecomponentsformatter.md) object takes quantities of time and formats them as a user-readable string. Use a date components formatter to create strings for your app’s interface. The formatter object has many options for creating both abbreviated and expanded strings. The formatter takes the current user’s locale and language into account when generating strings.
 

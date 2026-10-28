@@ -20,7 +20,7 @@ Specifies the mode of crossing for a portal.
 enum CrossingMode
 ```
 
-#### Overview
+## Overview
 
 You pass this type to [`crossingMode`](./crossingmode-swift.property.md) to configure the portal component’s crossing feature.
 

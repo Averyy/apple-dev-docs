@@ -6,7 +6,7 @@
 
 An atom that is the container for carrying metadata.
 
-#### Overview
+## Overview
 
 The following figure shows a sample layout of the metadata atom.
 

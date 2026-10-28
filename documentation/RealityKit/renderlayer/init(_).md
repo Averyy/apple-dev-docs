@@ -20,7 +20,7 @@ Creates a custom render layer with the specified compile-time constant name.
 init(_ rawValue: StaticString)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to define reusable layer constants in an extension. Use descriptive names with namespace prefixes such as `"com.myapp.hero"` or `"com.myapp.background"` to avoid conflicts with other layers.
 

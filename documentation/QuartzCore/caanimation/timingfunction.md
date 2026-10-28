@@ -24,7 +24,7 @@ var timingFunction: CAMediaTimingFunction? { get set }
 @property (strong, nullable) CAMediaTimingFunction * timingFunction;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `nil`, indicating linear pacing.
 

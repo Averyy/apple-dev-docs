@@ -20,7 +20,7 @@ var path_truncated: Bool
 bool path_truncated;
 ```
 
-#### Discussion
+## Discussion
 
 If Endpoint Security truncated the full file path when assigning the [`path`](./path.md) field, this value is `true`.
 

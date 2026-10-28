@@ -23,7 +23,7 @@ var parentGroup: ABRecord? { get set }
 @property (nonatomic, readwrite, nullable) ABRecordRef parentGroup;
 ```
 
-#### Discussion
+## Discussion
 
 You must set [`addressBook`](./addressbook.md) before you can set this property.
 

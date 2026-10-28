@@ -23,7 +23,7 @@ static func == (lhs: [Key : Value], rhs: [Key : Value]) -> Bool
 
 Available when `Key` conforms to `Hashable` and `Value` conforms to `Equatable`.
 
-#### Discussion
+## Discussion
 
 Equality is the inverse of inequality. For any values `a` and `b`, `a == b` implies that `a != b` is `false`.
 

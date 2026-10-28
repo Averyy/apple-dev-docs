@@ -25,7 +25,7 @@ func replace(sliceOrigin: MTLTensorExtents, sliceDimensions: MTLTensorExtents, w
 - (void) replaceSliceOrigin:(MTLTensorExtents *) sliceOrigin sliceDimensions:(MTLTensorExtents *) sliceDimensions withBytes:(const void *) bytes strides:(MTLTensorExtents *) strides;
 ```
 
-#### Discussion
+## Discussion
 
 Create the tensor with [`storageModeShared`](../mtlresourceoptions/storagemodeshared.md) for CPU access via this method.
 

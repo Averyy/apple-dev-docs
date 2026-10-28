@@ -24,7 +24,7 @@ class MKTileOverlay
 @interface MKTileOverlay : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use tile overlay objects to represent your own tile-based content and to coordinate the display of that content in a map view. Your tiles can supplement the underlying map content or replace it completely. A tile overlay object coordinates the loading and management of the tiles, and a corresponding [`MKTileOverlayRenderer`](./mktileoverlayrenderer.md) object handles the actual drawing of the tiles on the map.
 

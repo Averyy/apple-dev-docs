@@ -25,7 +25,7 @@ convenience init(index: Int)
 - (instancetype) initWithIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized [`NSIndexPath`](../nsindexpath.md) object representing a one-node index path with `index`.
 

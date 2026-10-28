@@ -18,7 +18,7 @@ struct es_event_bootstrap_look_up_t
 typedef struct { ... } es_event_bootstrap_look_up_t;
 ```
 
-#### Overview
+## Overview
 
 A process called `bootstrap_look_up()` to resolve a named service port registered with launchd. launchd returns a send right to that port; subsequent `mach_msg()` calls to it are delivered to the owner of the corresponding receive right.
 

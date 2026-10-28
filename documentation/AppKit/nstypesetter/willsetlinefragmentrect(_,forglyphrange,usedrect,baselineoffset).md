@@ -19,7 +19,7 @@ func willSetLineFragmentRect(_ lineRect: NSRectPointer, forGlyphRange glyphRange
 - (void) willSetLineFragmentRect:(NSRectPointer) lineRect forGlyphRange:(NSRange) glyphRange usedRect:(NSRectPointer) usedRect baselineOffset:(CGFloat *) baselineOffset;
 ```
 
-#### Discussion
+## Discussion
 
 Called by the typesetter just prior to calling [`setLineFragmentRect(_:forGlyphRange:usedRect:baselineOffset:)`](./setlinefragmentrect%28_,forglyphrange,usedrect,baselineoffset%29.md) which stores the actual line fragment rectangle location in the layout manager.
 

@@ -19,7 +19,7 @@ The width of the image, in pixels.
 let width: Int
 ```
 
-#### Discussion
+## Discussion
 
 A value of `-1` indicates a dynamic shape.
 

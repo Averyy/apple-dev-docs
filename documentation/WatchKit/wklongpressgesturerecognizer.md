@@ -19,13 +19,13 @@ class WKLongPressGestureRecognizer
 @interface WKLongPressGestureRecognizer : WKGestureRecognizer
 ```
 
-#### Overview
+## Overview
 
 A long-press gesture is essentially a tap where the user’s finger remains on the screen for a minimum amount of time, which is configurable. You can configure the amount of time required for the long-press to be recognized and the maximum distance those touches are allowed to move before being disallowed.
 
 You do not create instances of this class programmatically. Instead, add a long-press gesture recognizer to your Watch app’s storyboard file, dropping it onto a specific interface object. Touches occurring within the bounds of that interface object are tracked by the gesture recognizer and reported to an action method you define on the parent interface controller. For information on defining your action method and connecting it to your gesture recognizer, see [`WKGestureRecognizer`](./wkgesturerecognizer.md).
 
-##### State Changes for a Long-Press Gesture
+### State Changes for a Long-Press Gesture
 
 ![](https://developer.apple.com/tutorials/images/com.apple.watchkit/media-2557620@2x.png)
 
@@ -36,7 +36,7 @@ A long-press gesture recognizer tracks touch events continuously, and therefore 
 
 The Changed state is optional and may occur multiple times before the Ended, Failed, or Cancelled state is reached. The gesture recognizer calls its action method at each state transition. For more information on implementing continuous gesture recognizers, see [`WKGestureRecognizer`](./wkgesturerecognizer.md).
 
-##### Interface Builder Attributes
+### Interface Builder Attributes
 
 Xcode lets you configure information about your gesture recognizer in your storyboard file. The following table lists the attributes you can configure in your storyboard and their meaning.
 

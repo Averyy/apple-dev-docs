@@ -15,11 +15,11 @@ Returns a Boolean value that indicates whether garbage collection is currently e
 - (BOOL) isEnabled;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if garbage collection is enabled for the current process, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method returns [`false`](../../Swift/false.md) if garbage collection is on, but has been temporarily suspended (using [`disable`](./disable.md)).
 

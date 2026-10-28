@@ -21,7 +21,7 @@ The scope of zone IDs in which to send changes.
 @property (copy, readonly, nullable) NSSet<CKRecordZoneID *> * zoneIDs;
 ```
 
-#### Discussion
+## Discussion
 
 If you only want to send changes for a particular set of zones, you can initialize your scope with those zone IDs. When creating the next batch of changes to send to the server, consult this, and only send changes within these zones. If this and [`recordIDs`](./recordids.md) are `nil`, then you should send all changes.
 

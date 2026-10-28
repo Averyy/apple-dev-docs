@@ -16,7 +16,7 @@ nonisolated
 init(id: AnyHashable, @ViewBuilder _ content: @escaping () -> Content)
 ```
 
-#### Discussion
+## Discussion
 
 You can access details of an attachment entity, such as its bounds, by calling the methods of a [`ViewAttachmentEntity`](../viewattachmententity.md) instance. For example, you can add an attachment that contains the text `"hello"`.
 

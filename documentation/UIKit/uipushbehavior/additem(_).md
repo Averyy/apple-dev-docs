@@ -23,7 +23,7 @@ func addItem(_ item: any UIDynamicItem)
 - (void) addItem:(id<UIDynamicItem>) item;
 ```
 
-#### Discussion
+## Discussion
 
 All the dynamic items added to a push behavior are subject to the same force vector.
 

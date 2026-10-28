@@ -15,7 +15,7 @@ A random-access disk device abstraction.
 class IOMedia : IOStorage
 ```
 
-#### Overview
+## Overview
 
 The IOMedia class is a random-access disk device abstraction. It provides a consistent interface for both real and virtual disk devices, for subdivisions of disks such as partitions, for supersets of disks such as RAID volumes, and so on. It extends the IOStorage class by implementing the appropriate open, close, read, write, and matching semantics for media objects. The properties it has reflect the properties of real disk devices, such as ejectability and writability.
 

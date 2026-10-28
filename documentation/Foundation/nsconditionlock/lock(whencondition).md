@@ -25,7 +25,7 @@ func lock(whenCondition condition: Int)
 - (void) lockWhenCondition:(NSInteger) condition;
 ```
 
-#### Discussion
+## Discussion
 
 The receiver’s condition must be equal to `condition` before the locking operation will succeed. This method blocks the thread’s execution until the lock can be acquired.
 

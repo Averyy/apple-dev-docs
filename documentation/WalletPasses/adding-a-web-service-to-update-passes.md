@@ -5,7 +5,7 @@
 
 Implement a web server to register, update, and unregister a pass on a device.
 
-#### Overview
+## Overview
 
 Keep your users’ pass updated with the latest information, such as the time of a flight or the location of the next geocached object in a game.
 
@@ -19,13 +19,13 @@ Create an updatable pass by adding the `webServiceURL` and `authenticationToken`
 4. The user’s device receives the notification and queries your server for updated passes.
 5. The user’s device requests each pass that has changed.
 
-##### Server Configuration
+### Server Configuration
 
 Authenticate each call to your server using a shared secret before responding using one of two shared secrets. Use the value of `authenticationToken` for the pass to authenticate the calls that register and unregister a pass, and to send an updated pass. The other shared secret is the *device library ID*, a value that’s sent by the device when the device registers a pass. Use this secret to authenticate the call for the serial numbers of updated passes.
 
 > **Note**:  Your web service must use an HTTPS connection for production, but you can use an HTTP connection during testing.
 
-###### Store Information
+#### Store Information
 
 Updating passes requires storing information for the registered passes and for their associated devices. One way you can store these details is to use a traditional relational database with two entities – devices and passes – and one relationship, registrations. The three tables are:
 
@@ -33,7 +33,7 @@ Updating passes requires storing information for the registered passes and for t
 - **Pass table**: Contains the updatable passes. Information for a pass includes the pass type identifier, serial number, and a last-update tag. You define the contents of this tag and use it to track when you last updated a pass. The table can also include other data that you require to generate an updated pass.
 - **Registration table**: Contains the relationships between passes and devices. Use this table to find the devices registered for a pass, and to find all the registered passes for a device. Both relationships are many-to-many.
 
-##### Register and Unregister a Pass
+### Register and Unregister a Pass
 
 Add the relationship when a device registers an updatable pass.
 
@@ -54,7 +54,7 @@ Complete these tasks to unregister a pass:
 - Delete the mapping between the pass and the device library identifier from the registrations table.
 - Delete the device entry from the device table if the registration table has no more entries for that device.
 
-##### Update a Pass
+### Update a Pass
 
 You can update any type of pass and any information in the pass, except for the authentication token and the serial number. An updated pass is a new pass with the same pass type identifier and serial number. For more information on creating a pass, see [Creating the Source for a Pass](./creating-the-source-for-a-pass.md) and [Building a Pass](./building-a-pass.md).
 
@@ -66,7 +66,7 @@ Updating the pass involves several steps for both your server and the client dev
 - The device requests a specific pass.
 - Your server sends the updated pass.
 
-###### Send a Push Notification
+#### Send a Push Notification
 
 ![An illustration that shows the flow of sending an update notification to a client device. The server sends an Apple Push Notification for a pass type ID using the push token for the device.](https://developer.apple.com/tutorials/images/com.apple.walletpasses/media-3737835@2x.png)
 
@@ -81,7 +81,7 @@ For more information on sending push notifications, see [Sending notification re
 
 > **Note**:  A push notification for a pass update works only in the production environment.
 
-###### Return the Updated Passes
+#### Return the Updated Passes
 
 A device that receives the push notification requests a list of serial numbers for updated passes, such as a tickets to an event. Your server sends the serial numbers for updated passes.
 

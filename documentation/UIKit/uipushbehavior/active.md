@@ -23,7 +23,7 @@ var active: Bool { get set }
 @property (nonatomic, readwrite) BOOL active;
 ```
 
-#### Discussion
+## Discussion
 
 After you’ve added a push behavior to a dynamic animator, use this property to activate or deactivate the behavior’s force (rather than removing and then re-adding the behavior to the animator).
 

@@ -23,7 +23,7 @@ var drawableWidth: Int { get }
 @property (nonatomic, readonly) NSInteger drawableWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The height and width of the underlying framebuffer object is calculated automatically by the view object based on its [`bounds`](../../UIKit/uiview/bounds.md) and [`contentScaleFactor`](../../UIKit/uiview/contentscalefactor.md) properties and change whenever either of those properties change. Your application never directly adjusts the size of the framebuffer object. Instead, your application should read the [`drawableHeight`](./drawableheight.md) and [`drawableWidth`](./drawablewidth.md) properties and use those to configure its OpenGL ES rendering code. For example, you might use the [`drawableHeight`](./drawableheight.md) and [`drawableWidth`](./drawablewidth.md) properties to set the OpenGL ES viewport, determining the size and complexity of the art assets to load, and so on.
 

@@ -25,7 +25,7 @@ func CFFileDescriptorGetTypeID() -> CFTypeID
 extern CFTypeID CFFileDescriptorGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFFileDescriptor opaque type.
 

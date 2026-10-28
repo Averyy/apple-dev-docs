@@ -20,7 +20,7 @@ The time, in seconds, at which the animation begins within the duration.
 var offset: TimeInterval { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0`, which indicates that the animation plays with no offset.
 

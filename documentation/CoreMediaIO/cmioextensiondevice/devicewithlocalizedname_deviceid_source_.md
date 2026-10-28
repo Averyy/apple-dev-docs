@@ -16,7 +16,7 @@ Returns a new extension device.
 + (instancetype) deviceWithLocalizedName:(NSString *) localizedName deviceID:(NSUUID *) deviceID source:(id<CMIOExtensionDeviceSource>) source;
 ```
 
-#### Return Value
+## Return Value
 
 A new device instance.
 

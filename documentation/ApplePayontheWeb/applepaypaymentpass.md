@@ -22,7 +22,7 @@ dictionary ApplePayPaymentPass {
 };
 ```
 
-#### Overview
+## Overview
 
 Payment pass information is populated only for cobranded or private label cards, for specially registered websites.
 

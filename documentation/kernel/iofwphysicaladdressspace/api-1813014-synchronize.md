@@ -12,7 +12,7 @@ inline IOReturn synchronize(
  IOOptionBitsnone. ) ;
 ```
 
-#### Return Value
+## Return Value
 
 returns kIOReturnSuccess on success
 

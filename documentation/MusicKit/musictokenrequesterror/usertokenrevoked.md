@@ -21,7 +21,7 @@ An error that occurs when the user revokes permission for the current app to acc
 case userTokenRevoked
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, apps may attempt to recover from this error condition by suggesting to their users that they can grant access to their Apple Music data again by linking to [`openSettingsURLString`](../../UIKit/uiapplication/opensettingsurlstring.md).
 

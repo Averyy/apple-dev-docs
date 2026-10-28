@@ -24,7 +24,7 @@ init(polyline: MKPolyline)
 - (instancetype) initWithPolyline:(MKPolyline *) polyline;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized polyline renderer object.
 

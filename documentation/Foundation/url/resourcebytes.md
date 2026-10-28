@@ -21,7 +21,7 @@ The URL’s resource data, as an asynchronous sequence of bytes.
 var resourceBytes: URL.AsyncBytes { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property with Swift’s `for`-`await`-`in` syntax, to read the contents of a URL byte-by-byte, like this:
 

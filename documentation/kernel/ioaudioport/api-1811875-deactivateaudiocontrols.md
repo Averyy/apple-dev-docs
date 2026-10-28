@@ -11,7 +11,7 @@ Called to shut down all of the audio controls for this port.
 virtual void deactivateAudioControls();
 ```
 
-#### Overview
+## Overview
 
 This will stop all of the audio controls and release them so that the instances may be freed. This is called from the free() method.
 

@@ -15,7 +15,7 @@ Set extended file attributes.
 errno_t VNOP_SETXATTR(vnode_t vp, const char *name, uio_t uio, int options, vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, or an error code.
 

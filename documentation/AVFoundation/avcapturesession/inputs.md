@@ -24,7 +24,7 @@ var inputs: [AVCaptureInput] { get }
 @property (nonatomic, readonly) NSArray<__kindof AVCaptureInput *> * inputs;
 ```
 
-#### Discussion
+## Discussion
 
 You add new inputs to a capture session by callings its [`addInput(_:)`](./addinput%28_%29.md) method.
 

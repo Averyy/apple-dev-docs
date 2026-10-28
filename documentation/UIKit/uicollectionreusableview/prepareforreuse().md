@@ -23,7 +23,7 @@ func prepareForReuse()
 - (void) prepareForReuse;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses such as [`UICollectionViewCell`](../uicollectionviewcell.md) override this method and use it to perform relevant actions. So, if your subclass descends from [`UICollectionViewCell`](../uicollectionviewcell.md) or another intermediate class, call `super` to ensure that your class gets the parent’s behavior.
 

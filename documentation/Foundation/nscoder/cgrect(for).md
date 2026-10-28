@@ -20,11 +20,11 @@ Returns a Core Graphics rectangle structure corresponding to the data in a given
 class func cgRect(for string: String) -> CGRect
 ```
 
-#### Return Value
+## Return Value
 
 A Core Graphics structure that represents a rectangle. If the string is not well-formed, the function returns [`CGRectZero`](../../CoreGraphics/cgrectzero.md).
 
-#### Discussion
+## Discussion
 
 In general, you should use this function only to convert strings that were previously created using the [`string(for:)`](./string%28for%29-4qz0a.md) function.
 

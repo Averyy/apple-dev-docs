@@ -17,7 +17,7 @@ The name of the app extension’s main storyboard file.
 - **Name**: `NSExtensionMainStoryboard`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key is mutually exclusive with [`NSExtensionPrincipalClass`](./nsextensionprincipalclass.md). Typically, Xcode sets the value of this key when creating an App Extension target in your project. If you change the name of your storyboard file, remember to update the value of this key.
 

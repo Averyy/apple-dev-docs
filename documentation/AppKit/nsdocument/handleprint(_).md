@@ -19,7 +19,7 @@ func handlePrint(_ command: NSScriptCommand) -> Any?
 - (id) handlePrintScriptCommand:(NSScriptCommand *) command;
 ```
 
-#### Discussion
+## Discussion
 
 Extracts Print command arguments from the `command` object and uses them to determine how to print the document—specifically, any print settings and whether to show the Print dialog. A Print AppleScript command may specify more than one document to print. If so, a message is sent to each document.
 

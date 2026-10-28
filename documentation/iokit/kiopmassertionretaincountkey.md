@@ -16,7 +16,7 @@ A potential value for [`kIOPMAssertionTimeoutActionKey`](./kiopmassertiontimeout
 #define kIOPMAssertionRetainCountKey
 ```
 
-#### Discussion
+## Discussion
 
 kIOPMAssertionRetainCountKey reflects the CoreFoundation-style retain count on this assertion. Creating or retaining an assertion increments its retain count. Release an assertion decrements its retain count. When the retain count decrements to zero, the OS will destroy the object.
 

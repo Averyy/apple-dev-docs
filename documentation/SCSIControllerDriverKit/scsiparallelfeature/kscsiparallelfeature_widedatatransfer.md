@@ -15,7 +15,7 @@ The selector for support of wide data transfers.
 kSCSIParallelFeature_WideDataTransfer
 ```
 
-#### Discussion
+## Discussion
 
 The framework only supports `Wide16` because the SPI-3 specification obsoleted `Wide32`.
 

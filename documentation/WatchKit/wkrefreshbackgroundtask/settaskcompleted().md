@@ -21,7 +21,7 @@ func setTaskCompleted()
 - (void) setTaskCompleted;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method as soon as you have finished the background task. The system provides your extension with a limited amount of time to finish the task (on the order of seconds). If you do not call [`setTaskCompleted()`](./settaskcompleted%28%29.md) on the task, the system continues to run in the background until all the available time is consumed, wasting battery power.
 

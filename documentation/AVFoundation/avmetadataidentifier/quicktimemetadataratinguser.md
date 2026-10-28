@@ -25,7 +25,7 @@ static let quickTimeMetadataRatingUser: AVMetadataIdentifier
 extern AVMetadataIdentifier const AVMetadataIdentifierQuickTimeMetadataRatingUser;
 ```
 
-#### Discussion
+## Discussion
 
 This number can range from `0.0` to `5.0`. A value of `0.0` indicates that the user hasn’t rated the movie.
 

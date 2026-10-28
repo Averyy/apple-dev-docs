@@ -24,7 +24,7 @@ class WKWebpagePreferences
 @interface WKWebpagePreferences : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a [`WKWebpagePreferences`](./wkwebpagepreferences.md) object when you want to change the default rendering behavior of your web view. Typically, iOS devices render web content for a mobile experience, and Mac devices render content for a desktop experience.
 

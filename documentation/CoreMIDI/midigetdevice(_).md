@@ -23,11 +23,11 @@ func MIDIGetDevice(_ deviceIndex0: Int) -> MIDIDeviceRef
 extern MIDIDeviceRef MIDIGetDevice(ItemCount deviceIndex0);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a device, or `NULL` if an error occurred.
 
-#### Discussion
+## Discussion
 
 Call this function to enumerate the devices in the system. To enumerate the entities in the system, walk through the devices and then walk through the device’s entities. When you iterate through the devices and entities in the system, you don’t visit virtual sources and destinations created by other clients.
 

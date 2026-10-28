@@ -24,7 +24,7 @@ var topology: MDLSubmeshTopology? { get set }
 @property (nonatomic, retain, nullable) MDLSubmeshTopology * topology;
 ```
 
-#### Discussion
+## Discussion
 
 Submeshes with non-uniform topology can also contain edge and vertex crease information for use by the [`newSubdividedMesh(_:submeshIndex:subdivisionLevels:)`](../mdlmesh/newsubdividedmesh%28_,submeshindex,subdivisionlevels%29.md) method.
 

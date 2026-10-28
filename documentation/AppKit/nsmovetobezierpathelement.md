@@ -17,7 +17,7 @@ Moves the path object’s current drawing point to the specified point.
 static const NSBezierPathElement NSMoveToBezierPathElement;
 ```
 
-#### Discussion
+## Discussion
 
 This path element does not result in any drawing. Using this command in the middle of a path results in a disconnected line segment.
 

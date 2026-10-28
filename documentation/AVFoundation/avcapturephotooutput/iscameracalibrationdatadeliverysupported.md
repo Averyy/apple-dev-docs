@@ -22,7 +22,7 @@ var isCameraCalibrationDataDeliverySupported: Bool { get }
 @property (nonatomic, readonly, getter=isCameraCalibrationDataDeliverySupported) BOOL cameraCalibrationDataDeliverySupported;
 ```
 
-#### Discussion
+## Discussion
 
 A photo output can deliver camera calibration data only when it’s [`isVirtualDeviceConstituentPhotoDeliveryEnabled`](./isvirtualdeviceconstituentphotodeliveryenabled.md) property is `true` and its [`isContentAwareDistortionCorrectionEnabled`](./iscontentawaredistortioncorrectionenabled.md) property is `false`. Additionally, the source capture device’s [`isGeometricDistortionCorrectionEnabled`](../avcapturedevice/isgeometricdistortioncorrectionenabled.md) property must be `false`.
 

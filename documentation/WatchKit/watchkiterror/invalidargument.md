@@ -15,7 +15,7 @@ An invalid argument error.
 static var invalidArgument: WatchKitError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit reports this error when you specify invalid settings for one of the system supplied interfaces.
 

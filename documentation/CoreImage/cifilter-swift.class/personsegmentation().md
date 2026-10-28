@@ -24,11 +24,11 @@ class func personSegmentation() -> any CIFilter & CIPersonSegmentation
 + (CIFilter<CIPersonSegmentation> *) personSegmentationFilter;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIImage`](../ciimage.md) containing the mask.
 
-#### Discussion
+## Discussion
 
 The person-segmentation filter creates a mask that contains red pixels in the areas of the input image that are likely to contain people.
 

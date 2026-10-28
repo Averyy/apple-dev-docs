@@ -19,7 +19,7 @@ typealias PMPreset = OpaquePointer
 typedef struct OpaquePMPreset *PMPreset;
 ```
 
-#### Discussion
+## Discussion
 
 Your application uses a preset object to identify a named preset in the Print dialog. You typically obtain an instance of this type using the function [`PMPrinterCopyPresets(_:_:)`](./api-1459117-pmprintercopypresets.md).
 

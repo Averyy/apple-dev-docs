@@ -23,7 +23,7 @@ func ABAddressBookCopyArrayOfAllPeopleInSourceWithSortOrdering(_ addressBook: AB
 extern CFArrayRefABAddressBookCopyArrayOfAllPeopleInSourceWithSortOrdering(ABAddressBookRef addressBook, ABRecordRef source, ABPersonSortOrdering sortOrdering);
 ```
 
-#### Return Value
+## Return Value
 
 An array of all person records in the address book database, sorted by `sortOrdering`.
 

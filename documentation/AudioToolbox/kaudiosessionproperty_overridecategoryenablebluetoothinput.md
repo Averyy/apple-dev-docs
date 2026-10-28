@@ -23,7 +23,7 @@ var kAudioSessionProperty_OverrideCategoryEnableBluetoothInput: Int { get }
 kAudioSessionProperty_OverrideCategoryEnableBluetoothInput
 ```
 
-#### Discussion
+## Discussion
 
 A read/write `UInt32` value. By default, the value of this property is `FALSE` (`0`).
 

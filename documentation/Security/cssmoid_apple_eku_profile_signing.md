@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_APPLE_EKU_PROFILE_SIGNING;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

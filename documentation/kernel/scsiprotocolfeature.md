@@ -13,7 +13,7 @@
 typedef UInt32 SCSIProtocolFeature;
 ```
 
-#### Discussion
+## Discussion
 
 Typedef for SCSIProtocolFeature, a 32-bit quantity.
 

@@ -25,7 +25,7 @@ func loadAndReturnError() throws
 - (BOOL) loadAndReturnError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 If this method returns [`false`](../../Swift/false.md) and you pass a value for the `error` parameter, a suitable error object is returned in that parameter. Potential errors returned are in the Cocoa error domain and include the types that follow. For a full list of error types, see `FoundationErrors.h`.
 

@@ -20,7 +20,7 @@ class NSWhoseSpecifier
 @interface NSWhoseSpecifier : NSScriptObjectSpecifier
 ```
 
-#### Overview
+## Overview
 
 `NSWhoseSpecifier` specifies every object in a collection (or every element in a container) that matches the condition defined by a single Boolean expression or multiple Boolean expressions connected by logical operators. `NSWhoseSpecifier` is unique among object specifiers in that its top-level container is typically not the application object but an evaluated object specifier involved in the tested-for condition. An `NSWhoseSpecifier` object encapsulates a “test” object for defining this condition. A test object is instantiated from a subclass of the abstract [`NSScriptWhoseTest`](./nsscriptwhosetest.md) class, whose one declared method is [`isTrue()`](./nsscriptwhosetest/istrue%28%29.md). See “Boolean Expressions and Logical Operations” in [`NSScriptObjectSpecifier`](./nsscriptobjectspecifier.md) and the descriptions in NSComparisonMethods and NSScriptingComparisonMethods for more information.
 

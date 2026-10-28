@@ -19,11 +19,11 @@
 unsigned int (*)(void *) AddRef;
 ```
 
-#### Return Value
+## Return Value
 
 The resulting reference count after the new reference is added.
 
-#### Discussion
+## Discussion
 
 The IUnknown method for retaining a reference to a CFPlugIn type.
 

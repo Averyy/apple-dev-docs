@@ -19,7 +19,7 @@ func setCandidates(_ candidates: [CandidateType], forSelectedRange selectedRange
 - (void) setCandidates:(NSArray<id> *) candidates forSelectedRange:(NSRange) selectedRange inString:(NSString *) originalString;
 ```
 
-#### Discussion
+## Discussion
 
 The item uses the block in the [`attributedStringForCandidate`](./attributedstringforcandidate.md) property to convert each candidate in the array into an attributed string. If the value of the [`attributedStringForCandidate`](./attributedstringforcandidate.md) property is `nil` then [`NSCandidateListTouchBarItem`](../nscandidatelisttouchbaritem.md) can format candidates of type [`NSString`](../../Foundation/nsstring.md), [`NSAttributedString`](../../Foundation/nsattributedstring.md), and [`NSTextCheckingResult`](../../Foundation/nstextcheckingresult.md).
 

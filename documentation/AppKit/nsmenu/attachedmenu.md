@@ -15,7 +15,7 @@ Returns the menu currently attached to the menu.
 - (NSMenu *) attachedMenu;
 ```
 
-#### Return Value
+## Return Value
 
 The menu currently attached to the menu or `nil` if there’s no such object.
 

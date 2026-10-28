@@ -23,7 +23,7 @@ var imageInsets: UIEdgeInsets { get set }
 @property (nonatomic) UIEdgeInsets imageInsets;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`zero`](../uiedgeinsets/zero.md).
 

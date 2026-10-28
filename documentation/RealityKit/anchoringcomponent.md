@@ -20,7 +20,7 @@ A component that anchors virtual content to a real world target.
 struct AnchoringComponent
 ```
 
-#### Overview
+## Overview
 
 This component is essential for getting AR features into RealityKit. Use `AnchoringComponent` to anchor virtual content to a real world target by attaching the component to any [`Entity`](./entity.md) in your RealityKit scene.
 

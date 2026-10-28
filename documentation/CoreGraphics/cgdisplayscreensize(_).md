@@ -20,11 +20,11 @@ func CGDisplayScreenSize(_ display: CGDirectDisplayID) -> CGSize
 extern CGSize CGDisplayScreenSize(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 The size of the specified display in millimeters, or 0 if the display is not valid.
 
-#### Discussion
+## Discussion
 
 If Extended Display Identification Data (EDID) for the display device is not available, the size is estimated based on the device width and height in pixels from [`CGDisplayBounds(_:)`](./cgdisplaybounds%28_%29.md), with an assumed resolution of 2.835 pixels/mm or 72 dpi, a reasonable guess for displays predating EDID support.
 

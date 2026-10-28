@@ -24,7 +24,7 @@ var kAudioUnitProperty_ElementName: AudioUnitPropertyID { get }
 kAudioUnitProperty_ElementName
 ```
 
-#### Discussion
+## Discussion
 
 A read/write `CFStringRef` object valid on any audio unit scope.
 

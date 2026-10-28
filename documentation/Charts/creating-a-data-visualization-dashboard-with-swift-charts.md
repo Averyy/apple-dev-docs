@@ -14,13 +14,13 @@ Visualize an entire data collection efficiently by instantiating a single vector
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10155: [Swift Charts: Vectorized and function plots](https://developer.apple.com/wwdc24/10155/).
 
 This sample shows how to visualize a dataset using a variety of chart types including histograms, scatterplots, heatmaps, and more. The sample takes advantage of vectorized plots to enable efficient plotting data of an entire `RandomAccessCollection`, and function plotting to visualize meaningful trends in that data. The app is a dashboard that visualizes large-scale solar photovoltaic facilities in the contiguous United States by consuming data from the U.S. Geological Survey and Lawrence Berkeley National Laboratory.
 
-##### Plot entire collections with vectorized plots
+### Plot entire collections with vectorized plots
 
 The `Scatterplot` view displays a scatterplot that maps the capacity density of each facility by its location. The sample app allows toggling between using longitude or latitude as the basis for location.
 
@@ -38,7 +38,7 @@ PointPlot(
 .symbolSize(4)
 ```
 
-##### Visualize data trends with function plotting
+### Visualize data trends with function plotting
 
 The `Scatterplot` view displays a scatterplot that maps the capacity density (the ratio of power-generating capacity to the area) of each facility by its location. The sample applies quadratic regression to the data to generate the regression equation:
 
@@ -56,7 +56,7 @@ LinePlot(x: "x", y: "y") { x in
 .lineStyle(.init(lineWidth: colorScheme == .dark ? 1.5 : 1))
 ```
 
-##### Add custom shapes to a chart
+### Add custom shapes to a chart
 
 The `ThematicMap` view displays a chart that shows the datapoints in an outline of a map of the contiguous United States.
 

@@ -13,7 +13,7 @@ Call BLAS and LAPACK routines from Fortran 90 source code.
 - visionOS 27.0+
 - watchOS 27.0+
 
-#### Overview
+## Overview
 
 Accelerate ships a set of Fortran 90 interface modules that bind Fortran source to the `ACCELERATE_NEW_LAPACK` symbols in the Accelerate framework. The modules declare every BLAS and LAPACK routine with explicit Fortran interfaces, so the compiler can check argument types and shapes at the call site. You don’t link a separate library — the interface module compiles alongside your program and resolves directly to Accelerate.
 
@@ -28,7 +28,7 @@ Four interface modules ship with the SDK:
 
 Use the LP64 modules with code that relies on Fortran’s default 4-byte integer. Use the ILP64 modules when you need 8-byte integers — for example, problems whose leading dimensions or array indices don’t fit in a 32-bit signed integer. The LP64 modules bind to the `$NEWLAPACK` symbol suffix; the ILP64 modules bind to the `$NEWLAPACK$ILP64` suffix.
 
-#### Adopt a wrapper module in your source
+## Adopt a wrapper module in your source
 
 Add a `use` statement for the module that matches the API and integer width you need, then call the routine directly. The example below calls `dgemm` from the ILP64 BLAS wrapper:
 
@@ -45,7 +45,7 @@ call dgemm('N', 'N', m, n, k, alpha, a, lda, b, ldb, beta, c, ldc)
 
 LAPACK routines that take a callback, such as the `SELECT` argument to `SGEES`, `DGEES`, `CGEES`, or `ZGEES`, expect a `type(c_funptr)` value. Use `c_funloc` from `iso_c_binding` to obtain a function pointer from a Fortran procedure.
 
-#### Compile and link against Accelerate
+## Compile and link against Accelerate
 
 > **Note**:  The `gfortran` compiler doesn’t ship with Xcode. Install a Fortran 90 (or later) compiler before you build.
 

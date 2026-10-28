@@ -27,7 +27,7 @@ nonisolated
 func photosPickerSearchText(_ searchText: String?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A Photos picker with specified search text.
 

@@ -18,7 +18,7 @@ Saves the URL filter configuration in the caller’s URL filter preferences.
 func saveToPreferences() async throws
 ```
 
-#### Discussion
+## Discussion
 
 If the URL filter is enabled, this call causes it to become active.
 

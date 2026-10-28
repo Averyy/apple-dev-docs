@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether a time range is valid.
 func CMTIMERANGE_IS_VALID(_ range: CMTimeRange) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `range` is valid; otherwise, [`false`](../Swift/false.md).
 

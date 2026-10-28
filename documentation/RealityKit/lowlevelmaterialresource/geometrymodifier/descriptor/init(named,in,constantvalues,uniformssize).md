@@ -18,7 +18,7 @@ Creates a descriptor for a geometry modifier that accepts a custom uniforms argu
 init(named name: String, in library: any MTLLibrary, constantValues: MTLFunctionConstantValues = .init(), uniformsSize: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when your Metal geometry modifier function reads per-draw parameters through a custom uniforms argument buffer, using the same mechanism as [`withMutableUniforms(ofType:stage:_:)`](../../../custommaterial/withmutableuniforms%28oftype,stage,_%29.md). The function must be `[[stitchable]]` and declare the uniforms as a second `constant T &customParams` parameter:
 

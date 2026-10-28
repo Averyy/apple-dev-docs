@@ -18,7 +18,7 @@ void replaceDocument(
 );
 ```
 
-#### Discussion
+## Discussion
 
 This function searches the stack for the first instance of the document to be replaced and replaces it with the new document.
 

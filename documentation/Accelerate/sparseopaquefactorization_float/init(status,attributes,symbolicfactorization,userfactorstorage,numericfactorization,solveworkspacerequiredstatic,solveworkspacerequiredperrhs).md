@@ -21,7 +21,7 @@ Creates a new opaque factorization with the specified parameters.
 init(status: SparseStatus_t, attributes: SparseAttributes_t, symbolicFactorization: SparseOpaqueSymbolicFactorization, userFactorStorage: Bool, numericFactorization: UnsafeMutableRawPointer?, solveWorkspaceRequiredStatic: Int, solveWorkspaceRequiredPerRHS: Int)
 ```
 
-#### Return Value
+## Return Value
 
 A new opaque factorization.
 

@@ -25,7 +25,7 @@ var maximumUnitCount: Int { get set }
 @property NSInteger maximumUnitCount;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to limit the number of units displayed in the resulting string. For example, with this property set to 2, instead of “1h 10m, 30s”, the resulting string would be “1h 10m”. Use this property when you are constrained for space or want to round up values to the nearest large unit.
 

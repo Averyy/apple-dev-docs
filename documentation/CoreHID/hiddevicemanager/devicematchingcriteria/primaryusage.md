@@ -15,7 +15,7 @@ The HID specification compliant usage for the device.
 var primaryUsage: HIDUsage?
 ```
 
-#### Discussion
+## Discussion
 
 This is the main usage for the device, pulled from the top level collection of the report descriptor, specifying the general device type.
 

@@ -21,7 +21,7 @@ Removes all elements from the collection.
 mutating func removeAll(keepingCapacity keepCapacity: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method may invalidate any existing indices for use with this collection.
 

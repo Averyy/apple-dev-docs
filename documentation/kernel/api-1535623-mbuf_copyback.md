@@ -13,11 +13,11 @@
 errno_t mbuf_copyback(mbuf_t mbuf, size_t offset, size_t length, const void *data, mbuf_how_t how);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success, EINVAL or ENOBUFS upon failure.
 
-#### Discussion
+## Discussion
 
 Copies data from a buffer to an mbuf chain. mbuf_copyback will grow the chain to fit the specified buffer.
 

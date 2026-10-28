@@ -23,7 +23,7 @@ class INPaymentStatusResolutionResult
 @interface INPaymentStatusResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 An [`INPaymentStatusResolutionResult`](./inpaymentstatusresolutionresult.md) object is what you return when resolving parameters containing an [`INPaymentStatus`](./inpaymentstatus.md) value. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

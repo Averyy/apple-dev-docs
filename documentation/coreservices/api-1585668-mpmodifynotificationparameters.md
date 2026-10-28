@@ -13,7 +13,7 @@
 OSStatus MPModifyNotificationParameters(MPNotificationID notificationID, MPOpaqueIDClass kind, void *notifyParam1, void *notifyParam2, void *notifyParam3);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 

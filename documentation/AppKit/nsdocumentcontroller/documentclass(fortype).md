@@ -19,7 +19,7 @@ func documentClass(forType typeName: String) -> AnyClass?
 - (Class) documentClassForType:(NSString *) typeName;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the `NSDocument` subclass associated with `documentTypeName`. If the class cannot be found, returns `nil`.
 

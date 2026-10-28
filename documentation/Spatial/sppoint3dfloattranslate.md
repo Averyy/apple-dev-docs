@@ -19,11 +19,11 @@
 static SPPoint3DFloat SPPoint3DFloatTranslate(SPPoint3DFloat point, SPVector3DFloat offset);
 ```
 
-#### Return Value
+## Return Value
 
 A point that’s offset by the @p x, @p y, and @p z of the vector.
 
-#### Discussion
+## Discussion
 
 Returns a point with an origin that is offset from that of the source point.
 

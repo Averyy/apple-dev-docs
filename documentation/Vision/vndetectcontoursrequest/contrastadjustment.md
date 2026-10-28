@@ -24,7 +24,7 @@ var contrastAdjustment: Float { get set }
 @property (nonatomic, readwrite) float contrastAdjustment;
 ```
 
-#### Discussion
+## Discussion
 
 Contour detection works best with high-contrast images. The default value of this property is `2.0`, which doubles the image contrast to achieve the most accurate results.
 

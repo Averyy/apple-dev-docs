@@ -25,7 +25,7 @@ let NSFileHandleNotificationDataItem: String
 extern NSString * const NSFileHandleNotificationDataItem;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSData` object containing the available data read from a socket connection.
 

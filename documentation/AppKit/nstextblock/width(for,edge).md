@@ -19,7 +19,7 @@ func width(for layer: NSTextBlock.Layer, edge: NSRectEdge) -> CGFloat
 - (CGFloat) widthForLayer:(NSTextBlockLayer) layer edge:(NSRectEdge) edge;
 ```
 
-#### Return Value
+## Return Value
 
 The width of the `edge` of `layer`. This value must be interpreted according to the value type returned by [`widthValueType(for:edge:)`](./widthvaluetype%28for,edge%29.md).
 

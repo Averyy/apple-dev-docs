@@ -23,7 +23,7 @@ class CFReadStream
 typedef struct __CFReadStream * CFReadStreamRef;
 ```
 
-#### Overview
+## Overview
 
 `CFReadStream` provides an interface for reading a byte stream either synchronously or asynchronously. You can create streams that read bytes from a block of memory, a file, or a generic socket. All streams need to be opened, using [`CFReadStreamOpen(_:)`](./cfreadstreamopen%28_%29.md), before reading.
 

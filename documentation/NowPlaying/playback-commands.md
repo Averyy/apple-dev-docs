@@ -5,7 +5,7 @@
 
 Declare the playback controls your app supports.
 
-#### Overview
+## Overview
 
 Use [`MediaCommand`](./mediacommand.md) to define the controls available for your Now Playing session. The system displays these controls on the Lock Screen, Control Center, and connected accessories. Each command takes an action closure that the system invokes when someone interacts with a control.
 

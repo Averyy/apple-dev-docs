@@ -20,7 +20,7 @@ nonisolated
 struct TableHeaderRowContent<Value, Content> where Value : Identifiable, Content : View
 ```
 
-#### Overview
+## Overview
 
 You do not create this type directly. The framework creates it on your behalf.
 

@@ -16,7 +16,7 @@ A user interface element that represents a tip in AppKit applications.
 @objc @preconcurrency final class TipNSView
 ```
 
-#### Overview
+## Overview
 
 You create a tip view by providing a tip and an optional arrow edge. The tip is a type that conforms to the [`Tip`](./tip.md) protocol. The arrow edge is a directional arrow pointing away from the tip.
 

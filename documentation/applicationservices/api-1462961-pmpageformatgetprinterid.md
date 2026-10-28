@@ -19,11 +19,11 @@ func PMPageFormatGetPrinterID(_ pageFormat: PMPageFormat, _ printerID: UnsafeMut
 OSStatus PMPageFormatGetPrinterID(PMPageFormat pageFormat, CFStringRef  _Nullable *printerID);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 Page format objects can be created a number of different ways and some of them do not require a specific printer. If the printer ID is known, the printer is displayed in the Page Setup dialog’s Format for pop-up menu. If the printer ID is not known, the default formatting printer is the generic Any Printer. The printing system provides default page and paper sizes for the generic printer.
 

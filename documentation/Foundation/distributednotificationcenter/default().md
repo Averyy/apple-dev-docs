@@ -20,11 +20,11 @@ class func `default`() -> DistributedNotificationCenter
 + (NSDistributedNotificationCenter *) defaultCenter;
 ```
 
-#### Return Value
+## Return Value
 
 Default distributed notification center for the computer.
 
-#### Discussion
+## Discussion
 
 This method calls [`forType(_:)`](./fortype%28_%29.md) with an argument of `NSLocalNotificationCenterType`.
 

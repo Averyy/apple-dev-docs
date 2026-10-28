@@ -12,7 +12,7 @@ virtual void rejectMedia(
  void);
 ```
 
-#### Overview
+## Overview
 
 This method will be called if validateNewMedia returns False (thus rejecting the new media. A vendor may choose to override this method to control behavior when media is rejected.
 

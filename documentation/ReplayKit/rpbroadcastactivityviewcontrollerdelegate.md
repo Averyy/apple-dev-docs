@@ -25,7 +25,7 @@ protocol RPBroadcastActivityViewControllerDelegate : NSObjectProtocol
 @protocol RPBroadcastActivityViewControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use this class to respond to changes to a broadcast activity user interface, represented by an [`RPBroadcastActivityViewController`](./rpbroadcastactivityviewcontroller.md) object.
 

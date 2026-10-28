@@ -19,7 +19,7 @@ struct DrawingOptions
 enum NSGradientDrawingOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are used by the primitive drawing methods to determine if drawing occurs outside of the gradient start and end locations.
 

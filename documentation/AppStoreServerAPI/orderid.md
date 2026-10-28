@@ -15,7 +15,7 @@ The customer’s order ID from an App Store receipt for in-app purchases.
 string orderId
 ```
 
-#### Discussion
+## Discussion
 
 When customers make one or more in-app purchases in your app, the App Store emails them a receipt. The receipt contains an order ID. Use this order ID to call [`Look Up Order ID`](./look-up-order-id.md). Customers can also retrieve their order IDs from their purchase history on the App Store; for more information, see [See your purchase history for the App Store, iTunes store, and more](https://support.apple.com/en-gb/HT204088).
 

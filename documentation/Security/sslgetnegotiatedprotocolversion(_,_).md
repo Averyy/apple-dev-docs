@@ -24,11 +24,11 @@ func SSLGetNegotiatedProtocolVersion(_ context: SSLContext, _ protocol: UnsafeMu
 OSStatus SSLGetNegotiatedProtocolVersion(SSLContextRef context, SSLProtocol *protocol);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function retrieves the version of the Secure Sockets Layer (SSL) or Transport Layer Security (TLS) protocol negotiated for the session. Note that the negotiated protocol may not be the same as your preferred protocol, depending on which protocol versions you enabled with the [`SSLSetProtocolVersionEnabled`](./sslsetprotocolversionenabled.md) function. This function can return any of the following values:
 

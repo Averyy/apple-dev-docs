@@ -15,7 +15,7 @@ Sets a Boolean value to indicate the device is alive.
 kern_return_t SetDeviceIsAlive(bool in_is_alive);
 ```
 
-#### Discussion
+## Discussion
 
 A true  value means the device is ready and available and false means the device is unusable and will most likely go away shortly.
 

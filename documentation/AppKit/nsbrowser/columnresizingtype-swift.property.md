@@ -19,7 +19,7 @@ var columnResizingType: NSBrowser.ColumnResizingType { get set }
 @property NSBrowserColumnResizingType columnResizingType;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSBrowser.ColumnResizingType`](./columnresizingtype-swift.enum.md) for possible values. The default value of this property is [`NSBrowser.ColumnResizingType.autoColumnResizing`](./columnresizingtype-swift.enum/autocolumnresizing.md).
 

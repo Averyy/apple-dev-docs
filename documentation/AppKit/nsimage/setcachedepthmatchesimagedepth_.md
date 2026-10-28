@@ -17,7 +17,7 @@ Sets whether the image’s offscreen window caches use the same bit depth as the
 - (void) setCacheDepthMatchesImageDepth:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 This method does not cause the receiver to recache itself. The default depth limit is equal to the bit depth of the deepest screen on the system.
 

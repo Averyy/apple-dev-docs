@@ -19,7 +19,7 @@ optional func undoManager(for webView: WebView!) -> UndoManager!
 - (NSUndoManager *) undoManagerForWebView:(WebView *) webView;
 ```
 
-#### Return Value
+## Return Value
 
 The undo manager.
 

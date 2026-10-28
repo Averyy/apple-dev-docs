@@ -14,7 +14,7 @@ A Boolean value that indicates whether the driver communicates with human interf
 - **Name**: `com.apple.developer.driverkit.transport.hid` (DriverKit HID Transport)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 This entitlement gives your driver permission to interact with the hardware for a human interface device.
 

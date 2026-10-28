@@ -17,7 +17,7 @@ Sets the position of the knob to `aFloat`, which is a value from 0.0 (indicating
 - (void) setFloatValue:(float) value knobProportion:(CGFloat) proportion;
 ```
 
-#### Discussion
+## Discussion
 
 Also sets the proportion of the knob slot filled by the knob to `knobProp`, also a value from 0.0 (minimal size) to 1.0 (fills the slot).
 

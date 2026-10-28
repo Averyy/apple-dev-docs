@@ -25,7 +25,7 @@ var kCVReturnRetry: CVReturn { get }
 kCVReturnRetry
 ```
 
-#### Discussion
+## Discussion
 
 A result of `kCVReturnRetry` indicates that a client can retry the scan.
 

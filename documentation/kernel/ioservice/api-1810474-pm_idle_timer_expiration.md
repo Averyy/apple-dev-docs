@@ -10,7 +10,7 @@ virtual void PM_idle_timer_expiration(
  void ) __attribute__((deprecated));
 ```
 
-#### Overview
+## Overview
 
 This call is handled internally by power management. It is not intended to be overridden or called by drivers.
 

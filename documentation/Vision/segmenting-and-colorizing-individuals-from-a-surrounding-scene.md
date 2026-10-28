@@ -12,7 +12,7 @@ Use the Vision framework to isolate and apply colors to people in an image.
 - Mac Catalyst 17.0+
 - Xcode 15.1+
 
-#### Overview
+## Overview
 
 Segmenting individuals in photos is a powerful tool that can provide more creative control for people using your app. Person segmentation enables you to provide popular features like personalized effects and filters, background replacement, and enabling photographic corrections.
 
@@ -20,11 +20,11 @@ This sample shows you how to generate segmented masks for up to four individuals
 
 ![An illustration of two images, side-by-side. The original image, on the left, contains three individuals. The other image, on the right, shows the three individuals after segmentation with colorized masks.](https://developer.apple.com/tutorials/images/Vision/OverviewCombined.png)
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample app, you need an iPhone or iPad with iOS 17 or iPadOS 17, respectively, or later. You need to run this sample code project on a physical device.
 
-##### Determine the number of faces in a scene
+### Determine the number of faces in a scene
 
 The sample first determines the number of faces in the scene given the [CIImage](../CoreImage/ciimage.md) using [`VNDetectFaceRectanglesRequest`](./vndetectfacerectanglesrequest.md).
 
@@ -60,7 +60,7 @@ if numFaces <= 4 {
 }
 ```
 
-##### Generate the segmented masks
+### Generate the segmented masks
 
 The sample sets up the image analysis requests for the image with [`VNImageRequestHandler`](./vnimagerequesthandler.md) and processes the request for the image. The [`perform(_:)`](./vnimagerequesthandler/perform%28_%29.md) method schedules the request. When the request completes, the segments are returned in `request.results`.
 
@@ -103,7 +103,7 @@ Task { @MainActor in
 
 > **Note**: Perform UI updates on the main thread. Updating the UI on other threads can lead to unstable behavior and hangs.
 
-##### Colorize individual people in an image
+### Colorize individual people in an image
 
 The sample’s `InstanceMaskResults` class generates segmented images for up to four people in a scene. It conforms to the `SegmentationResults` protocol. The sample initializes the class with the [`VNInstanceMaskObservation`](./vninstancemaskobservation.md) results and a [`VNImageRequestHandler`](./vnimagerequesthandler.md).
 
@@ -125,7 +125,7 @@ The following illustration depicts the colorization when the person using this s
 
 If the person using this sample selects all the people and the background of the image, this sample masks the background with the selected color, and masks and colorizes the people. ![An illustration representing three people that are colorized in different colors and the background is obscured.](https://developer.apple.com/tutorials/images/Vision/NoneSelectedColorized.png)
 
-##### Colorize more than four people in an image
+### Colorize more than four people in an image
 
 The sample’s `PersonSegmentationResults` class generates a segmented image for every person in a scene using [`VNPixelBufferObservation`](./vnpixelbufferobservation.md) from [`VNGeneratePersonSegmentationRequest`](./vngeneratepersonsegmentationrequest.md). It conforms to the `SegmentationResults` protocol. The sample’s `generateSegmentedImage` method generates the image with a mask for the foreground or the background.
 

@@ -25,7 +25,7 @@ func makeRasterizationRateMap(descriptor: MTLRasterizationRateMapDescriptor) -> 
 - (id<MTLRasterizationRateMap>) newRasterizationRateMapWithDescriptor:(MTLRasterizationRateMapDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLRasterizationRateMapDescriptor`](../mtlrasterizationratemapdescriptor.md) instance if the method completes successfully; otherwise `nil`.
 

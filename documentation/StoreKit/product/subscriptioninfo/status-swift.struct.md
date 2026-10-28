@@ -25,7 +25,7 @@ struct Status
 
 - [Choosing a StoreKit API for Apple In-App Purchases](../../choosing-a-storekit-api-for-in-app-purchases.md)
 
-#### Overview
+## Overview
 
 The subscription status provides renewal information signed by the App Store for subscriptions that a customer purchases.
 

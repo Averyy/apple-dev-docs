@@ -25,11 +25,11 @@ convenience init(data pixelData: Data, size: CGSize, flipped: Bool)
 + (instancetype) textureWithData:(NSData *) pixelData size:(CGSize) size flipped:(BOOL) flipped;
 ```
 
-#### Return Value
+## Return Value
 
 A new texture object.
 
-#### Discussion
+## Discussion
 
 The image data is copied before control is returned to your game.
 

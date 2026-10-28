@@ -18,11 +18,11 @@ Creates a sphere mesh with a topology suitable for cloth simulation.
 static func sphere(radius: Float, targetEdgeLength: Float = defaultTargetEdgeLength) throws -> Self
 ```
 
-#### Return Value
+## Return Value
 
 The generated sphere mesh resource.
 
-#### Discussion
+## Discussion
 
 - radius: The radius of the generated sphere, in meters.
 - targetEdgeLength: The targeted average edge length for the generated mesh, in meters. The generated mesh will contain edges with a length as close as possible to this.

@@ -25,7 +25,7 @@ func performActivity(options: ProcessInfo.ActivityOptions = [], reason: String, 
 - (void) performActivityWithOptions:(NSActivityOptions) options reason:(NSString *) reason usingBlock:(void (^)()) block;
 ```
 
-#### Discussion
+## Discussion
 
 The activity will be automatically ended after `block` returns.
 

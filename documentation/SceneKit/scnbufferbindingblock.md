@@ -25,7 +25,7 @@ typealias SCNBufferBindingBlock = (any SCNBufferStream, SCNNode, any SCNShadable
 typedef void (^)(id<SCNBufferStream>, SCNNode *, id<SCNShadable>, SCNRenderer *) SCNBufferBindingBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The block takes the following parameters:
 

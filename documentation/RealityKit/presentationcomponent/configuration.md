@@ -15,7 +15,7 @@ A configuration that specifies the modality, appearance, and behavior of the pre
 struct Configuration
 ```
 
-#### Overview
+## Overview
 
 You don’t instantiate this struct yourself. Instead, create a configuration by calling the factory methods such as `popover(arrowEdge:)`
 

@@ -19,7 +19,7 @@ case indicateGrammar
 NSWritingToolsCoordinatorTextAnimationIndicateGrammar
 ```
 
-#### Discussion
+## Discussion
 
 When preparing for this animation, hide the portion of the text for which the grammar issue is going to be indicated. When finishing the animation, show the text again.
 

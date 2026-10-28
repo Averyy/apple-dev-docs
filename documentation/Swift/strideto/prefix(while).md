@@ -21,11 +21,11 @@ Returns a sequence containing the initial, consecutive elements that satisfy the
 func prefix(while predicate: (Self.Element) throws -> Bool) rethrows -> [Self.Element]
 ```
 
-#### Return Value
+## Return Value
 
 A sequence of the initial, consecutive elements that satisfy `predicate`.
 
-#### Discussion
+## Discussion
 
 The following example uses the `prefix(while:)` method to find the positive numbers at the beginning of the `numbers` array. Every element of `numbers` up to, but not including, the first negative value is included in the result.
 

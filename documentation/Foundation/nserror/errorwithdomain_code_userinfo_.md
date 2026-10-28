@@ -21,7 +21,7 @@ Creates and initializes an `NSError` object for a given domain and code with a g
 + (instancetype) errorWithDomain:(NSErrorDomain) domain code:(NSInteger) code userInfo:(NSDictionary<NSString *,id> *) dict;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSError` object for `domain` with the specified error `code` and the dictionary of arbitrary data `userInfo`.
 

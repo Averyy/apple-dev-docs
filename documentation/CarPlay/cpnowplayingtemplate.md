@@ -22,7 +22,7 @@ class CPNowPlayingTemplate
 @interface CPNowPlayingTemplate : CPTemplate
 ```
 
-#### Overview
+## Overview
 
 The Now Playing template displays information from [`MPNowPlayingInfoCenter`](../MediaPlayer/mpnowplayinginfocenter.md) and [`MPNowPlayingSession`](../MediaPlayer/mpnowplayingsession.md). Instead of instantiating your own Now Playing template, CarPlay provides a shared instance that you configure. The template displays a series of playback control buttons, as well as information about the current album and artist, and what’s coming up next.
 

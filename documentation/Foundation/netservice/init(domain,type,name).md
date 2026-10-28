@@ -26,11 +26,11 @@ convenience init(domain: String, type: String, name: String)
 - (instancetype) initWithDomain:(NSString *) domain type:(NSString *) type name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 The receiver, initialized as a network service named `name` of type `type` in the domain `domain`.
 
-#### Discussion
+## Discussion
 
 This method is the appropriate initializer to use to resolve a service—to publish a service, use [`init(domain:type:name:port:)`](./init%28domain,type,name,port%29.md).
 

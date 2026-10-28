@@ -19,7 +19,7 @@ A 64-bit complex floating-point type.
 case cfloat64
 ```
 
-#### Discussion
+## Discussion
 
 Complex Float64 represents complex numbers with 64-bit double real and imaginary parts, totaling 128 bits per value.
 

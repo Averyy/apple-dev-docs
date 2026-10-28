@@ -15,7 +15,7 @@ A media item that matches a play media intent, or information about why your ser
 object PlayMediaMediaItemResolutionResult
 ```
 
-#### Discussion
+## Discussion
 
 Only provide one of the optional properties. If a client receives a result with more than one outcome, such as `unsupported` and `success`, it arbitrarily chooses one and ignores the rest.
 

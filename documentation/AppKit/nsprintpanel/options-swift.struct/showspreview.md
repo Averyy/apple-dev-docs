@@ -19,7 +19,7 @@ static var showsPreview: NSPrintPanel.Options { get }
 NSPrintPanelShowsPreview
 ```
 
-#### Discussion
+## Discussion
 
 This option is only appropriate when the Print panel is used in conjunction with an [`NSPrintOperation`](../../nsprintoperation.md) object to print a document.
 

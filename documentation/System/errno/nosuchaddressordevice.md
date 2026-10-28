@@ -25,7 +25,7 @@ static var noSuchAddressOrDevice: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 Input or output on a special file referred to a device that didn’t exist, or made a request beyond the limits of the device. This error may also occur when, for example, a tape drive isn’t online or when there isn’t a disk pack loaded on a drive.
 

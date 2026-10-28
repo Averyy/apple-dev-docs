@@ -27,7 +27,7 @@ optional func decodeRestorableState(with coder: NSCoder)
 
 - [About the UI restoration process](../about-the-ui-restoration-process.md)
 
-#### Discussion
+## Discussion
 
 If your app supports state restoration, you can implement this method on any object for which you also overrode the [`encodeRestorableState(with:)`](./encoderestorablestate%28with%29.md) method. Your implementation of this method should read any saved state information from the archive and use it to restore the object to its previous configuration. If your [`encodeRestorableState(with:)`](./encoderestorablestate%28with%29.md) method called `super`, this method should similarly call `super` at some point in its implementation.
 

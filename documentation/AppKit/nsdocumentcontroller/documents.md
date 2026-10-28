@@ -19,7 +19,7 @@ var documents: [NSDocument] { get }
 @property (copy, readonly) NSArray<__kindof NSDocument *> * documents;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains zero or more [`NSDocument`](../nsdocument.md) objects.
 

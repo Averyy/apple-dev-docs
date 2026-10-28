@@ -4,7 +4,7 @@
 
 Give users even more confidence in your macOS software by submitting it to Apple for notarization.
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  Starting November 1, 2023, the Apple notary service no longer accepts uploads from `altool` or Xcode 13 or earlier. If you notarize your Mac software with the Apple notary service using the `altool` command-line utility or Xcode 13 or earlier, you need to transition to the `notarytool` command-line utility or upgrade to Xcode 14 or later.
 
@@ -25,7 +25,7 @@ Notarization also protects your users if your Developer ID signing key is expose
 
 > ❗ **Important**:  Beginning in macOS 10.14.5, software signed with a new Developer ID certificate and all new or updated kernel extensions must be notarized to run. Beginning in macOS 10.15, all software built after June 1, 2019, and distributed with Developer ID must be notarized. However, you aren’t required to notarize software that you distribute through the Mac App Store because the App Store submission process already includes equivalent security checks.
 
-##### Prepare your software for notarization
+### Prepare your software for notarization
 
 Apple’s notary service requires you to adopt the following protections:
 
@@ -41,11 +41,11 @@ Apple recommends that you notarize all of the software that you’ve distributed
 
 > ❗ **Important**:  Some preexisting software might not run properly after being successfully notarized. For example, Gatekeeper might find code signing issues that a relaxed notarization process didn’t enforce. Always review the notary log for any warnings, and test your software before distribution.
 
-##### Notarize plug-ins
+### Notarize plug-ins
 
 In macOS 10.15 and later, apps can load quarantined plug-ins — those downloaded from the internet or transferred with AirDrop — only if the plug-in is notarized. For plug-ins that aren’t notarized, the user must explicitly approve the plug-in by opening the System Preferences app and navigating to the General tab in Security & Privacy.
 
-##### Add the entitlements needed by plug-ins
+### Add the entitlements needed by plug-ins
 
 When you enable the extra security enforced by the hardened runtime, as notarization requires, this impacts both your app and any plug-ins that your app hosts. Plug-ins don’t declare their own entitlements. Instead, they inherit the entitlements of the host process. Therefore, a host app must include all the entitlements that prospective plug-ins require, even when the plug-ins are notarized separately.
 
@@ -59,7 +59,7 @@ For a complete list of hardened runtime entitlements, see [Hardened Runtime](./h
 
 > ❗ **Important**:  In macOS 10.14.x, for executables using the hardened runtime, PDEs load only if the host executable has the [`Disable Library Validation Entitlement`](../BundleResources/entitlements/com.apple.security.cs.disable-library-validation.md). Beginning in macOS 10.15, the entitlement is no longer needed.
 
-##### Notarize your app automatically as part of the distribution process
+### Notarize your app automatically as part of the distribution process
 
 Before distributing your app directly to customers, your Account Holder must sign the app with your Developer ID. Xcode’s Organizer window includes a workflow for generating a distributable version of your app. This workflow includes an option to notarize your macOS app automatically. To notarize your app using this workflow, do the following:
 
@@ -81,7 +81,7 @@ When the notarization process finishes, Xcode downloads the ticket and staples i
 
 If Xcode doesn’t let you upload for notarization, be sure that you are building a macOS archive, as described in [Notarize macOS apps with external dependencies](./resolving-common-notarization-issues.md#Notarize-macOS-apps-with-external-dependencies). For targets other than macOS apps, use the `notarytool` command line utility to notarize, as described in [Customizing the notarization workflow](./customizing-the-notarization-workflow.md).
 
-##### Notarize your preexisting software
+### Notarize your preexisting software
 
 Notarizing your preexisting software lets Gatekeeper warn users when they try to run it. It also helps the notary service distinguish your legitimate software from variants that have been tampered with. You can notarize an existing disk image, installer package, or ZIP archive containing your app.
 
@@ -95,7 +95,7 @@ To notarize your preexisting software, do the following:
 
 For tips on how to resolve issues that can occur during notarization, see [Resolving common notarization issues](./resolving-common-notarization-issues.md).
 
-##### Add a notarization step to your build scripts
+### Add a notarization step to your build scripts
 
 If you use an automated build system, you can integrate the notarization process into your existing build scripts. The `notarytool` and `stapler` command-line tools (included with Xcode) allow you to upload your software to the Apple notary service, and to staple the resulting ticket to your executable. Alternatively, you can interact directly with the notary service using the [Notary API](../NotaryAPI/NotaryAPI.md).
 

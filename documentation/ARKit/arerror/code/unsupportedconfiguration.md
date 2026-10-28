@@ -20,7 +20,7 @@ case unsupportedConfiguration
 ARErrorCodeUnsupportedConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 Call [`isSupported`](../../arconfiguration/issupported.md) on an [`ARConfiguration`](../../arconfiguration.md) to ensure it’s supported before attempting to create and run it on the session with [`runWithConfiguration:`](../../arsession/runwithconfiguration_.md).
 

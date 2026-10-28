@@ -21,7 +21,7 @@ A Boolean value that indicates whether the animation controller is functional.
 @preconcurrency var isValid: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This function returns `false` for stopped animations.
 

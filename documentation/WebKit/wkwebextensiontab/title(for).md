@@ -23,7 +23,7 @@ optional func title(for context: WKWebExtensionContext) -> String?
 - (NSString *) titleForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`title`](../wkwebview/title.md) of the tab’s web view if not implemented.
 

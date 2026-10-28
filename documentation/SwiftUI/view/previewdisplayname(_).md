@@ -24,11 +24,11 @@ nonisolated
 func previewDisplayName(_ value: String?) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A preview that uses the given name.
 
-#### Discussion
+## Discussion
 
 Apply this modifier to a view inside your [`PreviewProvider`](../previewprovider.md) implementation to associate a display name with that view’s preview:
 

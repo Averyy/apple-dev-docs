@@ -23,7 +23,7 @@ func setPreferredPolarPattern(_ pattern: AVAudioSession.PolarPattern?) throws
 - (BOOL) setPreferredPolarPattern:(AVAudioSessionPolarPattern) pattern error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method requests a change to the selected polar pattern. To determine whether the change has taken effect, inspect the [`selectedPolarPattern`](./selectedpolarpattern.md) property.
 

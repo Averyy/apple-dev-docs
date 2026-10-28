@@ -21,7 +21,7 @@ Converts a single-precision vector to a double-precision vector.
 extern void vDSP_vspdp(const float *__A, vDSP_Stride __IA, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The following code shows an example of using this function:
 

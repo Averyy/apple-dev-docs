@@ -11,7 +11,7 @@ Disables the timer event for the audio engine.
 virtual void removeTimer();
 ```
 
-#### Overview
+## Overview
 
 This method is called automatically to disable the timer event for this audio engine. There is need to call it directly. This method is called by setState() when the audio engine state is changed from kIOAudioEngineRunning to one of the stopped states.
 

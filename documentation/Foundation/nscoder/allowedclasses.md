@@ -25,7 +25,7 @@ var allowedClasses: Set<AnyHashable>? { get }
 @property (copy, readonly, nullable) NSSet<Class> * allowedClasses;
 ```
 
-#### Discussion
+## Discussion
 
 Secure coders check this set of allowed classes before decoding objects, and all objects must implement the [`NSSecureCoding`](../nssecurecoding.md) protocol.
 

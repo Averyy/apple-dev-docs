@@ -19,7 +19,7 @@ Creates an object from a single value.
 init(floatLiteral value: Float)
 ```
 
-#### Discussion
+## Discussion
 
 In physically based rendering, the `metallic` property represents the reflectiveness of an entity. This initializer creates a new object that passes a single metallic value to your custom shader functions but doesn’t pass a texture.
 

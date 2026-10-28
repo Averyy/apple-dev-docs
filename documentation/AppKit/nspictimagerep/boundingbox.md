@@ -19,7 +19,7 @@ var boundingBox: NSRect { get }
 @property (readonly) NSRect boundingBox;
 ```
 
-#### Discussion
+## Discussion
 
 The rectangle bounding the receiver. This rectangle is obtained from the the `picFrame` field in the picture header. See the Carbon QuickDraw Manager documentation for information on the picture header
 

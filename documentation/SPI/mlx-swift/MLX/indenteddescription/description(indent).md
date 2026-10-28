@@ -18,7 +18,7 @@ Return the `description` with the given indent level.
 func description(indent: Int) -> String
 ```
 
-#### Discussion
+## Discussion
 
 This should apply successively nested indents to any children that can also be indented. See `indentedDescription(_:_:)` for an easy way to accomplish this.
 

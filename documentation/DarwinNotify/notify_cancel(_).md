@@ -23,11 +23,11 @@ func notify_cancel(_ token: Int32) -> UInt32
 extern uint32_t notify_cancel(int token);
 ```
 
-#### Return Value
+## Return Value
 
 Returns status.
 
-#### Discussion
+## Discussion
 
 Cancel notification and free resources associated with a notification token. Mach ports and file descriptor associated with a token are released (deallocated or closed) when all registration tokens associated with the port or file descriptor have been cancelled.
 

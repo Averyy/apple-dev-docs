@@ -25,11 +25,11 @@ func CMTextFormatDescriptionGetDisplayFlags(_ desc: CMFormatDescription, display
 extern OSStatus CMTextFormatDescriptionGetDisplayFlags(CMFormatDescriptionRef desc, CMTextDisplayFlags *displayFlagsOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Returns `noErr` if successful.
 
-#### Discussion
+## Discussion
 
 These are the flags that control how the text appears.
 

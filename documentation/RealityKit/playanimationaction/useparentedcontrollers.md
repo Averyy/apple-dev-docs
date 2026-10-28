@@ -20,7 +20,7 @@ A Boolean that indicates whether to parent the new animation’s controller to t
 var useParentedControllers: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Setting the value of this property to true indicates the action has control over the playback of the animation. Setting this to false indicates the animation plays independently from the action, behaving as a one shot animation
 

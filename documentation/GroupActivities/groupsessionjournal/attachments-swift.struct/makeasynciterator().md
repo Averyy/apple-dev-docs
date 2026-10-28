@@ -20,7 +20,7 @@ Creates the asynchronous iterator that produces elements of this asynchronous se
 func makeAsyncIterator() -> GroupSessionJournal.Attachments.Iterator
 ```
 
-#### Discussion
+## Discussion
 
 -Returns: An instance of the `Iterator` type that produces elements of the asynchronous sequence.
 

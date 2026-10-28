@@ -17,7 +17,7 @@ Applies the Continuously Differentiable Exponential Linear Unit.
 func celu(_ x: MLXArray, alpha: Float = 1.0) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 MLX.maximum(x, 0.0) + alpha * (MLX.exp(MLX.minimum(x, 0.0) / alpha) - 1)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`CELU`](./celu.md)

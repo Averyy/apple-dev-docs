@@ -23,7 +23,7 @@ class let hideShowBarDuration: CGFloat
 extern const CGFloat UINavigationControllerHideShowBarDuration;
 ```
 
-#### Discussion
+## Discussion
 
 Note that this is a constant value, so it can’t be set.
 

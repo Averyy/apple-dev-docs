@@ -23,7 +23,7 @@ func loadViewIfNeeded()
 - (void) loadViewIfNeeded;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method loads the view controller’s view from its storyboard file, or creates the view as needed based on the established rules.
 

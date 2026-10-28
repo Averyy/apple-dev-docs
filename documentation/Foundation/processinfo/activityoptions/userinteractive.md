@@ -25,7 +25,7 @@ static var userInteractive: ProcessInfo.ActivityOptions { get }
 NSActivityUserInteractive
 ```
 
-#### Discussion
+## Discussion
 
 Examples of user-interactive actions include scrolling and interactively dismissing from a navigation controller.
 

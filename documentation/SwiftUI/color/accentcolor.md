@@ -21,7 +21,7 @@ A color that reflects the accent color of the system or app.
 static var accentColor: Color { get }
 ```
 
-#### Discussion
+## Discussion
 
 The accent color is a broad theme color applied to views and controls. You can set it at the application level by specifying an accent color in your app’s asset catalog.
 

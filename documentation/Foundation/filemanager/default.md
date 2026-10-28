@@ -25,7 +25,7 @@ class var `default`: FileManager { get }
 @property (class, strong, readonly) NSFileManager * defaultManager;
 ```
 
-#### Discussion
+## Discussion
 
 This method always represents the same file manager object. If you plan to use a delegate with the file manager to receive notifications about the completion of file-based operations, you should create a new instance of [`FileManager`](../filemanager.md) rather than using the shared object.
 

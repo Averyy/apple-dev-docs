@@ -26,7 +26,7 @@ class func predicateForEvaluatingTrigger(occurringBefore significantEvent: Strin
 + (NSPredicate *) predicateForEvaluatingTriggerOccurringBeforeSignificantEvent:(NSString *) significantEvent applyingOffset:(NSDateComponents *) offset;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate object that represents a condition to evaluate before executing the scene.
 

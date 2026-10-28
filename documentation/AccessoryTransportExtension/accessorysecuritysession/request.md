@@ -15,7 +15,7 @@ A structure that represents an incoming security session request.
 final class Request
 ```
 
-#### Overview
+## Overview
 
 The [`AccessoryTransportSecurity`](../accessorytransportsecurity.md) protocol’s [`accept(sessionRequest:)`](../accessorytransportsecurity/accept%28sessionrequest%29.md) method receives requests of this type.
 

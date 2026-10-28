@@ -40,7 +40,7 @@ func setBounds(_ bounds: NSRect, for box: PDFDisplayBox)
 - (void) setBounds:(NSRect) bounds forBox:(PDFDisplayBox) box;
 ```
 
-#### Discussion
+## Discussion
 
 If the box does not exist, this method creates it for you.
 

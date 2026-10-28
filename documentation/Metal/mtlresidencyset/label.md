@@ -25,7 +25,7 @@ var label: String? { get }
 @property (readonly, nullable) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property comes from the [`label`](../mtlresidencysetdescriptor/label.md) property of the [`MTLResidencySetDescriptor`](../mtlresidencysetdescriptor.md) instance you use to create the residency set with [`makeResidencySet(descriptor:)`](../mtldevice/makeresidencyset%28descriptor%29.md).
 

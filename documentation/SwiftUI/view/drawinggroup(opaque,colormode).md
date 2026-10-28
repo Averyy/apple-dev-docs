@@ -22,11 +22,11 @@ nonisolated
 func drawingGroup(opaque: Bool = false, colorMode: ColorRenderingMode = .nonLinear) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that composites this view’s contents into an offscreen image before display.
 
-#### Discussion
+## Discussion
 
 The `drawingGroup(opaque:colorMode:)` modifier flattens a subtree of views into a single view before rendering it.
 

@@ -20,7 +20,7 @@ A mode that considers a variable number of high-probability tokens based on the 
 static func random(probabilityThreshold: Double, seed: UInt64? = nil) -> GenerationOptions.SamplingMode
 ```
 
-#### Discussion
+## Discussion
 
 Also known as top-p or nucleus sampling.
 

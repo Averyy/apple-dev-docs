@@ -14,7 +14,7 @@ func simd_reduce_max(_ x: simd_int3) -> Int32
 static int simd_reduce_max(simd_int3 x);
 ```
 
-#### Discussion
+## Discussion
 
 Maximum of elements in x.
 

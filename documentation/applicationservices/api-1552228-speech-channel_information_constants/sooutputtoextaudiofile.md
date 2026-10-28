@@ -15,7 +15,7 @@ Pass an [`ExtAudioFileRef`](../../AudioToolbox/extaudiofileref.md) in the `speec
 soOutputToExtAudioFile = 'opax'
 ```
 
-#### Discussion
+## Discussion
 
 Note that the Speech Synthesis Manager may alter the [`kExtAudioFileProperty_ClientDataFormat`](../../AudioToolbox/kextaudiofileproperty_clientdataformat.md) and [`kExtAudioFileProperty_ClientChannelLayout`](../../AudioToolbox/kextaudiofileproperty_clientchannellayout.md) properties of the extended audio file object. The caller is responsible for closing the extended audio file object after the Speech Synthesis Manager is finished with it.
 

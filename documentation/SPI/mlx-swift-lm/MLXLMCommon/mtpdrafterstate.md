@@ -17,7 +17,7 @@ Per-stream state for MTP drafters that need their own transient storage.
 struct MTPDrafterState
 ```
 
-#### Overview
+## Overview
 
 The state is intentionally separate from [`LMOutput.State`](./lmoutput/state-swift.struct.md): `LMOutput` belongs to the target model’s step output, while this value is owned by the MTP iterator and passed only to the drafter.
 

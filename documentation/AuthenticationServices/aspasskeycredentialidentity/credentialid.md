@@ -23,7 +23,7 @@ var credentialID: Data { get }
 @property (nonatomic, copy, readonly) NSData * credentialID;
 ```
 
-#### Discussion
+## Discussion
 
 Use the credential identifier, along with the [`userHandle`](./userhandle.md), to identify the correct credential to use for a given relying party request.
 

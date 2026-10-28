@@ -23,7 +23,7 @@ protocol UIPopoverBackgroundViewMethods
 @protocol UIPopoverBackgroundViewMethods
 ```
 
-#### Overview
+## Overview
 
 The methods in this protocol are called only once when the popover is presented. All methods of this protocol are required.
 

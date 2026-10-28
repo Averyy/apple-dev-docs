@@ -24,7 +24,7 @@ func replaceContents(in range: NSTextRange, with textElements: [NSTextElement]?)
 - (void) replaceContentsInRange:(NSTextRange *) range withTextElements:(NSArray<NSTextElement *> *) textElements;
 ```
 
-#### Discussion
+## Discussion
 
 If the edges of `range` aren’t at existing element range boundaries, the method either splits the element if it allows the operation (for example, [`NSTextParagraph`](../nstextparagraph.md)), or the adjusts the replacement range.
 

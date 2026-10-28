@@ -25,7 +25,7 @@ func endEncoding()
 - (void) endEncoding;
 ```
 
-#### Discussion
+## Discussion
 
 After `endEncoding` is called, the command encoder has no further use. You cannot encode any other commands with this encoder.
 

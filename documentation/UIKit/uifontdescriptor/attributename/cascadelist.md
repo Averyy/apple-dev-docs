@@ -24,7 +24,7 @@ static let cascadeList: UIFontDescriptor.AttributeName
 extern UIFontDescriptorAttributeName const UIFontDescriptorCascadeListAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSArray`](../../../Foundation/nsarray.md) instance, where each member of the array is a subdescriptor. The default value is the system default cascading list for the user’s locale.
 

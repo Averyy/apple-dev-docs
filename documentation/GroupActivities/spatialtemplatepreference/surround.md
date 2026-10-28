@@ -15,7 +15,7 @@ An arrangement where the participants sit around the content.
 static let surround: SpatialTemplatePreference
 ```
 
-#### Discussion
+## Discussion
 
 This arrangement works best when the content is 3D, because each participant views it from a different angle
 

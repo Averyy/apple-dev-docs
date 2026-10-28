@@ -25,7 +25,7 @@ class var simdLocalRight: simd_float3 { get }
 @property (class, nonatomic, readonly) simd_float3 simdLocalRight;
 ```
 
-#### Discussion
+## Discussion
 
 No SceneKit features depend directly on this direction’s definition—it’s simply a natural consequence of recognizing “forward” and “up” directions for use with cameras, directional lighting, and relative orientation operations.
 

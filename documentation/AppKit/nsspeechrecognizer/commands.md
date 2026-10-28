@@ -19,7 +19,7 @@ var commands: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * commands;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property when the speech recognizer is already listening means that the current command list is updated and listening continues. The items in the array should be [`NSString`](../../Foundation/nsstring.md) objects. The command strings must match the current locale of the recognizer, which is selected in the Dictation pane of Accessibility system preferences.
 

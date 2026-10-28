@@ -21,7 +21,7 @@ Generates two generic arrays by randomly splitting the elements of the sequence.
 func randomSplit<T, Generator>(by proportion: Double, using generator: inout Generator) -> (ArraySlice<T>, ArraySlice<T>) where T == Self.Element, Generator : RandomNumberGenerator
 ```
 
-#### Return Value
+## Return Value
 
 A tuple of array slices.
 

@@ -21,7 +21,7 @@ The response length cannot be determined in advance of receiving the data from t
 #define NSURLResponseUnknownLength
 ```
 
-#### Discussion
+## Discussion
 
 For example, [`NSURLResponseUnknownLength`](./nsurlresponseunknownlength.md) is returned when the server HTTP response does not include a `Content-Length` header.
 

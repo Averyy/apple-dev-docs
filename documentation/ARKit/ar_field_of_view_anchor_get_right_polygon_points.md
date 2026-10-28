@@ -15,11 +15,11 @@ Get the right eye polygon boundary points defining the preset FoV.
 extern ar_polygon_points_tar_field_of_view_anchor_get_right_polygon_points(ar_field_of_view_anchor_t anchor);
 ```
 
-#### Return Value
+## Return Value
 
 The right eye polygon points collection.
 
-#### Discussion
+## Discussion
 
 Each point represents a vertex of the polygon boundary, ordered to form a continuous polygon. Points are expressed in the anchor’s coordinate frame.
 

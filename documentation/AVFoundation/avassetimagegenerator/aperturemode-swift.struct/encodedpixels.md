@@ -24,7 +24,7 @@ static let encodedPixels: AVAssetImageGenerator.ApertureMode
 extern AVAssetImageGeneratorApertureMode const AVAssetImageGeneratorApertureModeEncodedPixels;
 ```
 
-#### Discussion
+## Discussion
 
 The image isn’t cropped to the clean aperture region and isn’t scaled according to the pixel aspect ratio. It displays the image according to its encoded dimensions.
 

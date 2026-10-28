@@ -20,7 +20,7 @@ Creates an object from a color or texture.
 init(scale: Float = 1.0, texture: PhysicallyBasedMaterial.Texture? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 In PBR rendering, the `metallic` property represents the reflectiveness of an entity. This initializer creates a new object from a single value to describe the reflectiveness of the entire material. This initializer creates a new object from a single value or a grayscale image texture, or from both.
 

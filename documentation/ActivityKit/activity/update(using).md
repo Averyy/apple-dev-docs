@@ -18,7 +18,7 @@ Updates the dynamic content of the Live Activity.
 func update(using contentState: Activity<Attributes>.ContentState) async
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to update the Live Activity while your app is in the foreground or while it’s in the background — for example, by using [Background Tasks](../../BackgroundTasks/BackgroundTasks.md).
 

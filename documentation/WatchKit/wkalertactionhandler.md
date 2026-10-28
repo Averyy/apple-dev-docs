@@ -19,7 +19,7 @@ typealias WKAlertActionHandler = () -> Void
 typedef void (^)(void) WKAlertActionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This block takes no parameters and returns no value. You use this type of block to perform a task when one of your actions is selected by the user. Your block does not need to dismiss the alert or action sheet itself. WatchKit automatically dismisses the sheet when the user taps in any of your action buttons.
 

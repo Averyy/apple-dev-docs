@@ -25,7 +25,7 @@ static let lemma: NLTagScheme
 extern NLTagScheme const NLTagSchemeLemma;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the stem of the English word “reading” is “read”.
 

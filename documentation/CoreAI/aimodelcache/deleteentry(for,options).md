@@ -23,7 +23,7 @@ final func deleteEntry(for modelURL: URL, options: SpecializationOptions) throws
 
 - [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
-#### Discussion
+## Discussion
 
 > **Note**: If no [`AIModel`](../aimodel.md) instance currently references the entry, deletion happens immediately. Otherwise, an error is thrown. Deletion can only occur for an entry when the last [`AIModel`](../aimodel.md) releases it.
 

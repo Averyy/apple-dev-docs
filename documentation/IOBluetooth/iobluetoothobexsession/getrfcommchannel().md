@@ -19,11 +19,11 @@ func getRFCOMMChannel() -> IOBluetoothRFCOMMChannel!
 - (IOBluetoothRFCOMMChannel *) getRFCOMMChannel;
 ```
 
-#### Return Value
+## Return Value
 
 A IOBluetoothRFCOMMChannel object.
 
-#### Discussion
+## Discussion
 
 This could potentially be nil even though you have a valid OBEX session, because the RFCOMM channel is only valid when the session is connected.
 

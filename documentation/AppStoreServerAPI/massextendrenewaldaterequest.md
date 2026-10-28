@@ -19,7 +19,7 @@ object MassExtendRenewalDateRequest
 
 - [Extending the renewal date for auto-renewable subscriptions](./extending-the-renewal-date-for-auto-renewable-subscriptions.md)
 
-#### Discussion
+## Discussion
 
 This request body applies to the [`Extend Subscription Renewal Dates for All Active Subscribers`](./extend-subscription-renewal-dates-for-all-active-subscribers.md) endpoint.
 

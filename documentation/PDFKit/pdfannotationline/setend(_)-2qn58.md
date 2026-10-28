@@ -19,7 +19,7 @@ func setEnd(_ point: NSPoint)
 - (void) setEndPoint:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 Page space is a 72-dpi coordinate system with the origin at the lower-left corner of the current page.
 

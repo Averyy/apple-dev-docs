@@ -21,7 +21,7 @@ A mode that paints source image samples over the background image samples.
 static var normal: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is the default blend mode.
 

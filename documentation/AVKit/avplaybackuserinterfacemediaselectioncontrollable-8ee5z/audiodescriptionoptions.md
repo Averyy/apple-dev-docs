@@ -19,7 +19,7 @@ Array of available audio description track options.
 var audioDescriptionOptions: [AVPlaybackUserInterfaceMediaSelectionOption] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Audio description tracks provide narrated descriptions of visual content for visually impaired viewers. Audio description options are distinct from those in [`audioOptions`](./audiooptions.md) — they provide a narration layer played alongside the primary audio rather than replacing it. Options are ordered by preference with the primary language or default audio description track typically appearing first. May be empty for content without audio description tracks.
 

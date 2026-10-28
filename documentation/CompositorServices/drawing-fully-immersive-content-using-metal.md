@@ -5,7 +5,7 @@
 
 Create a fully immersive experience in visionOS using a custom Metal-based rendering engine.
 
-#### Overview
+## Overview
 
 If your app draws fully immersive content using Metal, Compositor Services provides a bridge between your SwiftUI code and your Metal rendering engine code. Use this framework to present a fully immersive scene that supports Metal rendering. When you present the scene from your app, Compositor Services provides a layer, which contains the Metal types, textures, and other information you need. The layer also provides timing information to help you manage your app’s rendering loop and deliver frames of content in a timely manner.
 
@@ -15,7 +15,7 @@ When creating fully immersive content using Metal, you draw everything the perso
 
 For information about how to draw content with Metal, see [Metal](../Metal/Metal.md).
 
-#### Add an immersive space for your content
+## Add an immersive space for your content
 
 To present your fully immersive experience, configure your app with an `ImmersiveSpace` scene that gets its content from a [`CompositorLayer`](./compositorlayer.md) type. This type provides the [`LayerRenderer`](./layerrenderer.md) type you need to set up and run your app’s custom rendering loop. The following example shows how to set up the space and your app’s content. In the closure for the [`CompositorLayer`](./compositorlayer.md) type, create a new thread to configure and start your app’s render loop.
 
@@ -63,7 +63,7 @@ Don’t include any style modifiers on a space that contains a [`CompositorLayer
 
 Typically, apps don’t display an immersive space immediately at launch. Transitioning to a fully immersive experience can be jarring if someone isn’t ready for it, so it’s preferable to display a window first and let someone enter the space when they’re ready. However, if you need to display a space first, add the `UIApplicationPreferredDefaultSceneSessionRole` key to the [`UIApplicationSceneManifest`](../BundleResources/information-property-list/uiapplicationscenemanifest.md) in your app’s `Info.plist` file. Set the value of this key to `CPSceneSessionRoleImmersiveSpaceApplication`. When this key is present, the system displays the first space it finds in your app’s list of scenes.
 
-#### Customize the configuration of your layer
+## Customize the configuration of your layer
 
 If your Metal rendering engine requires specific texture layouts, pixel formats, or rendering options, specify those details when you configure your [`CompositorLayer`](./compositorlayer.md) type. In your scene creation code, pass a type that adopts [`CompositorLayerConfiguration`](./compositorlayerconfiguration.md) as a parameter to your scene content. The system uses that information to configure the Metal textures your [`LayerRenderer`](./layerrenderer.md) provides. If you don’t provide a custom configuration, Compositor Services uses a set of default configuration values.
 
@@ -112,7 +112,7 @@ struct MyApp: App {
 
 ```
 
-#### Configure your app’s rendering loop
+## Configure your app’s rendering loop
 
 When your app displays a space with a [`CompositorLayer`](./compositorlayer.md), the system runs the code you provide. Use that code to configure your Metal rendering engine and spawn a thread for your rendering loop, but don’t start rendering your content immediately. Instead, check the state of the [`LayerRenderer`](./layerrenderer.md) type to see if the scene is actually running. The system might leave a scene in the [`LayerRenderer.State.paused`](./layerrenderer/state-swift.enum/paused.md) state while it confirms the person wants to enter the fully immersive experience. The system changes the state to [`LayerRenderer.State.running`](./layerrenderer/state-swift.enum/running.md) only when it’s ready to display your scene’s content.
 
@@ -152,7 +152,7 @@ Creating Metal pipeline state information is potentially expensive, so use the s
 
 Until your scene is visible, you can’t fetch new frames from the [`LayerRenderer`](./layerrenderer.md) and use them to configure your rendering code. If you need information about the configuration of textures, create a [`LayerRenderer.Properties`](./layerrenderer/properties-swift.struct.md) type using the same [`CompositorLayerConfiguration`](./compositorlayerconfiguration.md) information you used to configure your scene. The [`LayerRenderer.Properties`](./layerrenderer/properties-swift.struct.md) type contains the number of views to draw and the organization of textures for each frame.
 
-#### Update and encode a single frame of content
+## Update and encode a single frame of content
 
 While your layer is in the [`LayerRenderer.State.running`](./layerrenderer/state-swift.enum/running.md) state, fetch a new frame and fill it with content each time through your render loop. The layer manages a finite number of frames, so render only one frame at a time and submit it. Compositor Services provides timing information with each frame to help you start work on the frame at the appropriate time and submit your changes before the system needs them.
 
@@ -222,7 +222,7 @@ void my_engine_render_new_frame(my_engine *engine) {
 
 For information about how to set up Metal command buffers and command encoders, see [Setting up a command structure](../Metal/setting-up-a-command-structure.md).
 
-#### Configure the render pass descriptor for the frame
+## Configure the render pass descriptor for the frame
 
 During drawing, add the textures from your frame’s [`LayerRenderer.Drawable`](./layerrenderer/drawable.md) to your render pass descriptor. The render pass descriptor tells Metal where to deliver the output of your rendering commands. Because each frame of content relies on different textures, you must create and configure a render pass descriptor with the current frame’s textures each time through your render loop.
 
@@ -250,7 +250,7 @@ MTLRenderPassDescriptor* my_renderer_create_render_descriptor(my_renderer *rende
 
 For a [`LayerRenderer.Layout.dedicated`](./layerrenderer/layout/dedicated.md) layout, you must perform two render passes on your content and create a separate render pass descriptor for each one. Configure each render pass descriptor with the texture at a different index in the arrays of the [`LayerRenderer.Drawable`](./layerrenderer/drawable.md) type.
 
-#### Retrieve device anchor information and attach it to the frame
+## Retrieve device anchor information and attach it to the frame
 
 To prevent the person viewing your content from experiencing disorientation or physical discomfort, it’s essential to match the position of the camera in your scene to the location of the person’s head. Matching the person’s head movements results in that what they see doesn’t conflict with the input their body receives from the real world.
 
@@ -277,7 +277,7 @@ When it displays your frame, the system checks for a discrepancy between the pre
 
 For more information about how to track the device anchor, see [ARKit](../ARKit/ARKit.md).
 
-#### Render each view with the correct perspective
+## Render each view with the correct perspective
 
 The goal of your Metal rendering engine is to produce 2D textures to display to the viewer. When your content is 3D, you need to map points in your scene to the 2D texture in a way that makes the content look realistically 3D to someone viewing it. This process requires you to create a projection matrix that maps points in your 3D content to points on the texture for each view. For stereoscopic rendering, you also have to account for the positional differences between the device anchor and the position of the person’s eyes.
 
@@ -324,7 +324,7 @@ static const NSUInteger MaxBuffersInFlight = 3;
 
 ```
 
-#### Respond to interactions with your custom content
+## Respond to interactions with your custom content
 
 When your scene is visible, you’re responsible for managing all interactions with your custom content. Because you render everything yourself using Metal, you can’t rely on view-based events or gesture recognizers for input. Instead, use one of the following techniques:
 

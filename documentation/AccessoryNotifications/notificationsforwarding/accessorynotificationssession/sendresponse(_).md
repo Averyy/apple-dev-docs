@@ -20,7 +20,7 @@ func sendResponse(_ response: NotificationResponse) async throws
 
 - [Responding to forwarded notifications](../../responding-to-forwarded-notifications.md)
 
-#### Discussion
+## Discussion
 
 After receiving a message through [`messageHandler(_:)`](../accessorynotificationshandler/messagehandler%28_%29.md), parse the accessory’s response data and create a [`NotificationResponse`](../../notificationresponse.md) instance. Call this method to deliver the response to the system for handling.
 

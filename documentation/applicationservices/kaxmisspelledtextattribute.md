@@ -19,7 +19,7 @@ var kAXMisspelledTextAttribute: Unmanaged<CFString>
 CFStringRef kAXMisspelledTextAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 
 ---

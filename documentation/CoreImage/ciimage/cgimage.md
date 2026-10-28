@@ -24,7 +24,7 @@ var cgImage: CGImage? { get }
 @property (nonatomic, readonly, nullable) CGImageRef CGImage;
 ```
 
-#### Discussion
+## Discussion
 
 If this image was created using the [`init(cgImage:)`](./init%28cgimage%29-2kvvb.md) or [`init(contentsOf:)`](./init%28contentsof%29.md) initializer, this property’s value is the [`CGImage`](../../CoreGraphics/cgimage.md) object that provides the image’s underlying image data. Otherwise, this property’s value is `nil`—in this case you can obtain a CoreGraphics image by rendering the image with the [`CIContext`](../cicontext.md) [`createCGImage(_:from:)`](../cicontext/createcgimage%28_,from%29.md) method.
 

@@ -20,7 +20,7 @@ optional func linkQualityDidChangeForWiFiInterface(withName interfaceName: Strin
 - (void) linkQualityDidChangeForWiFiInterfaceWithName:(NSString *) interfaceName rssi:(NSInteger) rssi transmitRate:(double) transmitRate;
 ```
 
-#### Discussion
+## Discussion
 
 Register for link quality change notifications by sending the [`startMonitoringEvent(with:)`](../cwwificlient/startmonitoringevent%28with%29.md) message to a Wi-Fi client object with the [`CWEventType.linkQualityDidChange`](../cweventtype/linkqualitydidchange.md) event type.
 

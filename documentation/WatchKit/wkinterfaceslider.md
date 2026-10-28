@@ -19,7 +19,7 @@ class WKInterfaceSlider
 @interface WKInterfaceSlider : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 You configure the appearance of sliders in your storyboard file, including the images to display for the minimum and maximum value. At runtime, you use a slider object to enable the slider or set its value.
 
@@ -55,7 +55,7 @@ When the user changes the value of a slider, WatchKit delivers the new value to 
 
 Declare a method of this form in the interface controller class used to receive the slider’s new value. You can change the method name to anything you like. When configuring the slider in Xcode, connect its selector to your custom action method.
 
-##### Interface Builder Configuration Options
+### Interface Builder Configuration Options
 
 Xcode lets you configure information about your slider in your storyboard file. The following table lists the attributes you can configure in your storyboard and their meaning.
 

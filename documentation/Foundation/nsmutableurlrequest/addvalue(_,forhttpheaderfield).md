@@ -25,7 +25,7 @@ func addValue(_ value: String, forHTTPHeaderField field: String)
 - (void) addValue:(NSString *) value forHTTPHeaderField:(NSString *) field;
 ```
 
-#### Discussion
+## Discussion
 
 This method provides the ability to add values to header fields incrementally. If a value was previously set for the specified field, the supplied value is appended to the existing value using the appropriate field delimiter (a comma).
 

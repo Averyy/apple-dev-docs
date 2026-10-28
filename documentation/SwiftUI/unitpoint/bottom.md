@@ -21,7 +21,7 @@ A point that’s centered horizontally on the bottom edge of a view.
 static let bottom: UnitPoint
 ```
 
-#### Discussion
+## Discussion
 
 This point occupies the position where the horizontal and vertical alignment guides intersect for [`bottom`](../alignment/bottom.md) alignment.
 

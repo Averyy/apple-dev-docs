@@ -19,7 +19,7 @@ var patternPhase: NSPoint { get set }
 @property NSPoint patternPhase;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property when you need to line up the pattern color with another pattern, such as the pattern in a superview. The pattern phase is a translation (width, height) applied before a pattern is drawn in the current context and is part of the saved graphics state of the context. The default pattern phase is (0,0). Setting the pattern phase has the effect of temporarily changing the pattern matrix of any pattern you decide to draw. For example, setting the pattern phase to (2,3) has the effect of moving the start of pattern cell tiling to the point (2,3) in default user space.
 

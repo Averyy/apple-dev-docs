@@ -25,11 +25,11 @@ func hasFault(forRelationshipNamed key: String) -> Bool
 - (BOOL) hasFaultForRelationshipNamed:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the relationship for `key` is a fault; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the specified relationship is a fault, calling this method does not result in the fault firing.
 

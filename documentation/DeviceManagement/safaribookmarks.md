@@ -19,11 +19,11 @@ The declaration to configure managed bookmarks in Safari.
 object SafariBookmarks
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.safari.bookmarks` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Specify `com.apple.configuration.safari.bookmarks` as the declaration type.
 | Allowed in user scope | macOS, Shared iPad |
 | Apply | Multiple configurations are combined and applied as a single effective configuration |
 
-##### Configuration example
+### Configuration example
 
 This configuration applies a set of managed bookmarks: two bookmarks and one bookmarks folder, which contains two more bookmarks.
 

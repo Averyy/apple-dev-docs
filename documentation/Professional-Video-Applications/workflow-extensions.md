@@ -5,7 +5,7 @@
 
 Integrate your app’s workflow within the Final Cut Pro interface to streamline data exchange.
 
-#### Overview
+## Overview
 
 When your app supports workflows that require users to exchange data between your app and Final Cut Pro, consider adding a workflow extension to your app. A workflow extension is not a replacement for your app; it’s an extension of the app’s functionality, made available within the Final Cut Pro interface. When a user’s workflow requires frequent switching between your app and the Final Cut Pro interface, having your app’s functionality within the interface provides a seamless user experience.
 

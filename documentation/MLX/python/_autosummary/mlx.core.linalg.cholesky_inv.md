@@ -6,30 +6,37 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.li
 
 # mlx.core.linalg.cholesky_inv
 
-**cholesky_inv(*a: array*, *upper: bool = False*, ***, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Compute the inverse of a real symmetric positive semi-definite matrix using it’s Cholesky decomposition.
+```python
+cholesky_inv(a: array, upper: bool = False, *, stream: StreamOrDevice = None) → array
+```
+
+Compute the inverse of a real symmetric positive semi-definite matrix using it’s Cholesky decomposition.
+
 Let \(\mathbf{A}\) be a real symmetric positive semi-definite matrix and \(\mathbf{L}\) its Cholesky decomposition such that:
 
 \[\begin{aligned}
   \mathbf{A} = \mathbf{L}\mathbf{L}^T
 \end{aligned}\]
+
 This function computes \(\mathbf{A}^{-1}\).
+
 This function supports arrays with at least 2 dimensions. When the input
 has more than two dimensions, the Cholesky inverse is computed for each matrix
 in the last two dimensions of \(\mathbf{L}\).
+
 If the input matrix is not a triangular matrix behaviour is undefined.
 
-Parameters:
+**Parameters:**
 
-**a** ([array](mlx.core.array.md#mlx.core.array)) – Input array. This is the Cholesky factor
+- **a** ([array](mlx.core.array.md#mlx.core.array)) – Input array. This is the Cholesky factor
 \(\mathbf{L}\), not \(\mathbf{A}\) itself.
-**upper** ([bool](https://docs.python.org/3/builtins/functions.html#bool)*, **optional*) – If `True`, return the upper triangular Cholesky factor.
+- **upper** ([bool](https://docs.python.org/3/builtins/functions.html#bool), *optional*) – If `True`, return the upper triangular Cholesky factor.
 If `False`, return the lower triangular Cholesky factor. Default: `False`.
-**stream** ([Stream](stream_class.md#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`
+- **stream** ([Stream](stream_class.md#mlx.core.Stream), *optional*) – Stream or device. Defaults to `None`
 in which case the default stream of the default device is used.
 
-Returns:
-\(\mathbf{A^{-1}}\) where \(\mathbf{A} = \mathbf{L}\mathbf{L}^T\).
+**Returns:**
+: \(\mathbf{A^{-1}}\) where \(\mathbf{A} = \mathbf{L}\mathbf{L}^T\).
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

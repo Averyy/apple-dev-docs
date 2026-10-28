@@ -5,7 +5,7 @@
 
 Specify an import preview file for the flattener with atoms.
 
-#### Overview
+## Overview
 
 The sample code in the following listing creates an atom container and adds atoms to indicate an import preview file for the flattener to use.
 

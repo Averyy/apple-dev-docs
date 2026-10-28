@@ -16,7 +16,7 @@ A string that specifies how the bounding box aligns vertically relative to the y
 attribute DOMString textBaseline;
 ```
 
-#### Discussion
+## Discussion
 
 The y-coordinate of a line of text corresponds to the point on the text glyphs specified by `textBaseline`. Possible values are `top`, `hanging`, `middle`, `alphabetic` (default), `ideographic`, and `bottom`. The position of each value on the text glyphs is illustrated in [Figure 1](./api-1629692-textbaseline.md#1965801).
 

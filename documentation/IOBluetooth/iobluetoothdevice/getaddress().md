@@ -19,7 +19,7 @@ func getAddress() -> UnsafePointer<BluetoothDeviceAddress>!
 - (const BluetoothDeviceAddress *) getAddress;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to the Bluetooth device address of the target device.
 

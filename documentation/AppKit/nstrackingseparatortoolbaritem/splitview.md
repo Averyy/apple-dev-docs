@@ -19,7 +19,7 @@ var splitView: NSSplitView { get set }
 @property (strong) NSSplitView * splitView;
 ```
 
-#### Discussion
+## Discussion
 
 The `splitView` must be in the same window as the toolbar containing the `NSTrackingSeparatorToolbarItem` before showing the toolbar.
 

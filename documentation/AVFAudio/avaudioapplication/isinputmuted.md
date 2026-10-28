@@ -25,7 +25,7 @@ var isInputMuted: Bool { get }
 @property (nonatomic, readonly, getter=isInputMuted) BOOL inputMuted;
 ```
 
-#### Discussion
+## Discussion
 
 Set a new value for this property by calling the [`setInputMuted(_:)`](./setinputmuted%28_%29.md) method.
 

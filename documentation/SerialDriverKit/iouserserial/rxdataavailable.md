@@ -15,7 +15,7 @@ Notifies the system that data from the device is now available.
 virtual void RxDataAvailable();
 ```
 
-#### Discussion
+## Discussion
 
 After receiving data from the device and placing it in your data buffer, call this method to let the system know that the data is available.
 

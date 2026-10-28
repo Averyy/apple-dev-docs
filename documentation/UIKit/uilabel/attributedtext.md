@@ -24,7 +24,7 @@ var attributedText: NSAttributedString? { get set }
 @property (nonatomic, copy, nullable) NSAttributedString * attributedText;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` by default.
 

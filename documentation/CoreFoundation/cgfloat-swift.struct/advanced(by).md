@@ -21,7 +21,7 @@ Returns a `Self` `x` such that `self.distance(to: x)` approximates `n`.
 func advanced(by amount: CGFloat) -> CGFloat
 ```
 
-#### Discussion
+## Discussion
 
 Complexity: O(1).
 

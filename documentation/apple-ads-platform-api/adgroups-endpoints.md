@@ -8,23 +8,23 @@ Create, retrieve, update, and delete ad groups.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 An ad group is the organizational unit within a campaign that groups a set of ads sharing the same targeting, bid strategy, and schedule. Ad groups let you run multiple targeting configurations or bid strategies side by side under the same campaign, without duplicating the campaign itself.
 
 A [`Campaign`](./campaign.md) must already exist before you can create an ad group. You create every ad group with a `campaignId` referencing its parent campaign, and it defines targeting, bid strategy, and scheduling for a set of ads within that campaign. You configure bid strategy via [`BidStrategy`](./bidstrategy.md), using a matched [`BidStrategyType`](./bidstrategytype.md) and [`BidStrategyGoal`](./bidstrategygoal.md) pair. Ad group behavior varies by the campaign’s `promotedObjectType`.
 
-##### Target App Store Ad Groups
+### Target App Store Ad Groups
 
 App Store (`APPSTORE_APP`) ad groups support the following targeting dimensions, including audience targeting (device class, age, gender, app category, and app downloader), [Geo Targeting Endpoints](./geo-targeting-endpoints.md) (country, admin area, and locality), daypart, and keyword targeting. Manage your own keyword list with explicit bid amounts, or use the Search Match feature (`automatedKeywordsOptIn: true`) to automatically match search queries. When you don’t provide a keyword-level bid, the ad group’s `bidStrategy` bid applies.
 
-##### Target Apple Maps Ad Groups
+### Target Apple Maps Ad Groups
 
 Apple Maps (`BUSINESS_BRAND`) ad groups support the following targeting dimensions, including geo targeting (admin area, locality, and postal code), [Managing Location Groups](./location-groups-overview.md) (location groups, or radius, used with `MAPS_SEARCH_RESULTS`), and daypart. You can add keyword phrases and keyword categories for Search Results placement. Keyword bids don’t apply to ad groups that use location groups.
 
 For full targeting mode details and payload examples, see [`Create an Ad Group`](./post-adgroups.md).
 
-#### Use These Endpoints
+## Use These Endpoints
 
 Use these endpoints to create, retrieve, update, and delete ad groups:
 
@@ -36,13 +36,13 @@ Use these endpoints to create, retrieve, update, and delete ad groups:
 | `PUT` | `/v1/adgroups/{id}` | [`Update an Ad Group`](./put-adgroups-_id_.md) updates an existing ad group. |
 | `DELETE` | `/v1/adgroups/{id}` | [`Delete an Ad Group`](./delete-adgroups-_id_.md) soft-deletes an ad group by its ID. |
 
-##### Build a Campaign Keywords Strategy
+### Build a Campaign Keywords Strategy
 
 When building a campaign promotion strategy, you define keywords relevant to your app and bid on them. Relevant keywords increase the viability of your app to rank high in user searches. You can either automate your keyword and bid strategy by using the Search Match feature, or use your own keywords and bid strategy.
 
 The Search Match feature is an algorithm that uses multiple resources to match your ad to relevant searches in the App Store. The resources include metadata from your App Store product page, information about similar apps in the same genre, and other available search data. Search Match is a good option if you don’t want to figure out all keyword possibilities and actively bid on them.
 
-##### Enable and Disable Search Match
+### Enable and Disable Search Match
 
 To enable Search Match, use [`Create an Ad Group`](./post-adgroups.md) or [`Update an Ad Group`](./put-adgroups-_id_.md) endpoints to perform the following steps:
 
@@ -62,7 +62,7 @@ If you’re using your own keywords and bid strategy, disable Search Match with 
 
 > ❗ **Important**: Keywords without an explicit `Keyword.bid` value use the campaign-level bid strategy settings.
 
-##### Automate Ad Groups with Maximize Conversions
+### Automate Ad Groups with Maximize Conversions
 
 The Maximize Conversions bid strategy uses an automated ad group with Search Match to automatically optimize bids for each search query. This eliminates the need to manually set and monitor individual keyword bids, while prioritizing keywords most likely to drive conversions.
 
@@ -74,7 +74,7 @@ For details on switching between [Campaigns Endpoints](./campaigns-endpoints.md)
 
 For reports with a Maximize Conversions bidding strategy, see campaign and ad group [`Campaigns Report`](./get-app-campaign-reports.md) and [`Ad Groups Report`](./get-app-ad-group-reports.md).
 
-##### Configure Daypart Targeting
+### Configure Daypart Targeting
 
 Daypart targeting restricts ad delivery to specific hour slots within a 7-day week. The API represents the week as a flat grid of 168 integer slots (0 through 167), starting at Sunday midnight. Slot 0 is Sunday 12:00 a.m., slot 1 is Sunday 1:00 a.m., and so on through slot 167 (Saturday 11:00 p.m.).
 
@@ -86,7 +86,7 @@ The system evaluates all slot values in the ad account’s configured time zone.
 
 For the include structure, see [`AdGroupTargeting`](./adgrouptargeting.md).
 
-##### Follow Apple Maps Ad Group Constraints
+### Follow Apple Maps Ad Group Constraints
 
 Ad groups for Maps campaigns (`BUSINESS_BRAND`) attach a location group via `targeting.locationGroup` to control which of the advertiser’s business locations the ad group promotes. For how to create and manage location groups, see [Managing Location Groups](./location-groups-overview.md). Key constraints:
 
@@ -97,7 +97,7 @@ Ad groups for Maps campaigns (`BUSINESS_BRAND`) attach a location group via `tar
 
 See [`Create an Ad Group`](./post-adgroups.md) for full targeting mode details and payload examples.
 
-##### Track Ad Group Status and System Status
+### Track Ad Group Status and System Status
 
 Ad groups have three status fields that together determine whether the ad group is delivering:
 

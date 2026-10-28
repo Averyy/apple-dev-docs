@@ -19,7 +19,7 @@ class IOBluetoothDeviceSelectorController
 @interface IOBluetoothDeviceSelectorController : NSWindowController
 ```
 
-#### Overview
+## Overview
 
 Implementation of a window controller to return a NSArray of selected bluetooth devices. This class will handle connecting to the Bluetooth Daemon for the purposes of searches, and displaying the results. This controller will return a NSArray of IOBluetoothDevice objects to the user.
 

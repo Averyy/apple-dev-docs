@@ -22,7 +22,7 @@ Modifies the view to use a given transition as its method of animating changes t
 nonisolated func contentTransition(_ transition: ContentTransition) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 This modifier allows you to perform a transition that animates a change within a single view. The provided [`ContentTransition`](../contenttransition.md) can present an opacity animation for content changes, an interpolated animation of the content’s paths as they change, or perform no animation at all.
 

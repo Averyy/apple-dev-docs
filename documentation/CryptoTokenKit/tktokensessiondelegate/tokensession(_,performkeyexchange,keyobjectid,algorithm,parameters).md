@@ -25,7 +25,7 @@ optional func tokenSession(_ session: TKTokenSession, performKeyExchange otherPa
 - (NSData *) tokenSession:(TKTokenSession *) session performKeyExchangeWithPublicKey:(NSData *) otherPartyPublicKeyData usingKey:(TKTokenObjectID) objectID algorithm:(TKTokenKeyAlgorithm *) algorithm parameters:(TKTokenKeyExchangeParameters *) parameters error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The result of the key exchange, or `nil` if an error occurred.
 

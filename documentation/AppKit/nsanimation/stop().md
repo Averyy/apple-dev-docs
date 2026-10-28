@@ -19,7 +19,7 @@ func stop()
 - (void) stopAnimation;
 ```
 
-#### Discussion
+## Discussion
 
 The current progress of the receiver is not reset.  When this method is sent to instances of [`NSViewAnimation`](../nsviewanimation.md) (a subclass of `NSAnimation`) the receiver moves to the end frame location.
 

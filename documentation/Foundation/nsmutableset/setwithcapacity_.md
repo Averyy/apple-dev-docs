@@ -21,11 +21,11 @@ Creates and returns a mutable set with a given initial capacity.
 + (instancetype) setWithCapacity:(NSUInteger) numItems;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable set with initial capacity to hold `numItems` members.
 
-#### Discussion
+## Discussion
 
 Mutable sets allocate additional memory as needed, so `numItems` simply establishes the object’s initial capacity.
 

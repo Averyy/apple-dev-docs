@@ -18,7 +18,7 @@ A projection of the observed object that provides bindings to its properties.
 
 Available when `DelegateType` inherits `NSObject`, `DelegateType` conforms to `NSApplicationDelegate`, and `DelegateType` conforms to `ObservableObject`.
 
-#### Discussion
+## Discussion
 
 Use the projected value to get a binding to a value that the delegate publishes. Access the projected value by prefixing the name of the delegate instance with a dollar sign (`$`). For example, you might publish a Boolean value in your application delegate:
 

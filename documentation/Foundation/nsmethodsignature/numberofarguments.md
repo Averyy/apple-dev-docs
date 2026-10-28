@@ -21,7 +21,7 @@ The number of arguments recorded in the receiver.
 @property (readonly) NSUInteger numberOfArguments;
 ```
 
-#### Discussion
+## Discussion
 
 There are always at least two arguments, because an `NSMethodSignature` object includes the implicit arguments `self` and `_cmd`, which are the first two arguments passed to every method implementation.
 

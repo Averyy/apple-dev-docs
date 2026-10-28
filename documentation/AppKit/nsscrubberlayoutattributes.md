@@ -19,7 +19,7 @@ class NSScrubberLayoutAttributes
 @interface NSScrubberLayoutAttributes : NSObject
 ```
 
-#### Overview
+## Overview
 
 A layout attributes object is the model for the layout of a single item in a scrubber control.
 

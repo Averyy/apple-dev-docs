@@ -4,7 +4,7 @@
 
 Displays text below the subtitle’s containing element.
 
-#### Overview
+## Overview
 
 The `subtitle` element contains text used to describe a displayed element. It is commonly used to provide a small amount of information about a product. Here’s an example that shows the subtitle for a mongoram.
 
@@ -16,7 +16,7 @@ The `subtitle` element contains text used to describe a displayed element. It is
 </monogramLockup>
 ```
 
-##### Contained In
+### Contained In
 
 - [listItemLockup](./listitemlockup.md)
 - [title](./title.md)

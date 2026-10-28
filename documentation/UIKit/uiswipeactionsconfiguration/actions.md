@@ -22,7 +22,7 @@ var actions: [UIContextualAction] { get }
 @property (nonatomic, copy, readonly) NSArray<UIContextualAction *> * actions;
 ```
 
-#### Discussion
+## Discussion
 
 The first object in this array corresponds to the default action, which is the action that’s performed in response to a full swipe.
 

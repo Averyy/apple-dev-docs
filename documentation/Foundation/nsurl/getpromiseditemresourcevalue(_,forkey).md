@@ -25,7 +25,7 @@ func getPromisedItemResourceValue(_ value: AutoreleasingUnsafeMutablePointer<Any
 - (BOOL) getPromisedItemResourceValue:(id*) value forKey:(NSURLResourceKey) key error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method behaves identically to [`getResourceValue(_:forKey:)`](./getresourcevalue%28_,forkey%29.md), but works on promised items. A promised item is not guaranteed to have its contents in the file system until you use a file coordinator to perform a coordinated read on its URL, which causes the contents to be downloaded or otherwise generated. Promised item URLs are returned by various APIs, including:
 

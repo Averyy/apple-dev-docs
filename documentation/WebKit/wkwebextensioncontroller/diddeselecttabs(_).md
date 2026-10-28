@@ -23,7 +23,7 @@ func didDeselectTabs(_ deselectedTabs: [any WKWebExtensionTab])
 - (void) didDeselectTabs:(NSArray<id<WKWebExtensionTab>> *) deselectedTabs;
 ```
 
-#### Discussion
+## Discussion
 
 This method informs all loaded extensions that tabs have been deselected, ensuring consistent understanding across extensions.
 

@@ -26,7 +26,7 @@ var previousServerChangeToken: CKServerChangeToken? { get set }
 @property (nonatomic, copy, nullable) CKServerChangeToken * previousServerChangeToken;
 ```
 
-#### Discussion
+## Discussion
 
 Assign the token you receive from the [`fetchDatabaseChangesCompletionBlock`](./fetchdatabasechangescompletionblock.md) to this property. Doing so yields only the changes that occur after your most recent fetch operation. If you specify `nil` for this parameter, the operation fetches all changes.
 

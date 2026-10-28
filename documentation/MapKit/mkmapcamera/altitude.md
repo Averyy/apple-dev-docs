@@ -26,7 +26,7 @@ var altitude: CLLocationDistance { get set }
 @property (nonatomic) CLLocationDistance altitude;
 ```
 
-#### Discussion
+## Discussion
 
 The value you specify for this property can’t be less than `0`.
 

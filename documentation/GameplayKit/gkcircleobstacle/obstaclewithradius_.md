@@ -20,11 +20,11 @@ Creates a circular obstacle with the specified radius.
 + (instancetype) obstacleWithRadius:(float) radius;
 ```
 
-#### Return Value
+## Return Value
 
 A circular obstacle.
 
-#### Discussion
+## Discussion
 
 To make agents avoid the obstacle, create a goal with the goalToAvoidObstacles:timeBeforeCollisionToAvoid: method.
 

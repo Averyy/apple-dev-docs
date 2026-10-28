@@ -19,11 +19,11 @@ func NewOSLCountUPP(_ userRoutine: OSLCountProcPtr!) -> OSLCountUPP!
 OSLCountUPP NewOSLCountUPP(OSLCountProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 See [`OSLCountUPP`](./oslcountupp.md).
 
-#### Discussion
+## Discussion
 
 See the [`OSLCountProcPtr`](./oslcountprocptr.md) callback function. 
 

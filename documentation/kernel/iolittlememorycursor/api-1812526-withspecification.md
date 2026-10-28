@@ -14,11 +14,11 @@ static IOLittleMemoryCursor * withSpecification(
  IOPhysicalLength alignment = 1);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a new memory cursor if successfully created and initialized, 0 otherwise.
 
-#### Overview
+## Overview
 
 Factory function to create and initialize an IOLittleMemoryCursor in one operation. See also IOLittleMemoryCursor::initWithSpecification.
 

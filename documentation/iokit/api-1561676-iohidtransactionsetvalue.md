@@ -16,7 +16,7 @@ Sets the value for a transaction element.
 void IOHIDTransactionSetValue(IOHIDTransactionRef transaction, IOHIDElementRef element, IOHIDValueRef value, IOOptionBits options);
 ```
 
-#### Discussion
+## Discussion
 
 The value set is pended until the transaction is committed and is only used if the transaction direction is kIOHIDTransactionDirectionTypeOutput. Use the kIOHIDTransactionOptionDefaultOutputValue option to set the default element value.
 

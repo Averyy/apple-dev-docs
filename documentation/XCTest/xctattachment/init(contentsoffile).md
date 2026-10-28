@@ -14,7 +14,7 @@ convenience init(contentsOfFile url: URL)
 + (instancetype) attachmentWithContentsOfFileAtURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 Creates an attachment with an existing file on disk. Attachment’s uniform type identifier is inferred from the file extension. If no type can be inferred from the extension, fallback is “public.data”.
 

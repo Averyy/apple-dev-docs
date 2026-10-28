@@ -23,7 +23,7 @@ protocol UIDragAnimating : NSObjectProtocol
 @protocol UIDragAnimating <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You can use a [`UIDragAnimating`](./uidraganimating.md) object to animate your own changes to the preview displayed during system-provided drag and drop animations.
 

@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app may have read-only access to the 
 - **Name**: `com.apple.security.files.downloads.read-only` (Access Downloads folder (Read Only))
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the App Sandbox capability in Xcode and set Downloads Folder to Read Only.
 

@@ -24,7 +24,7 @@ func createAndAppendTrack() -> AVMusicTrack
 - (AVMusicTrack *) createAndAppendTrack;
 ```
 
-#### Return Value
+## Return Value
 
 A new music track appended to the sequencer.
 

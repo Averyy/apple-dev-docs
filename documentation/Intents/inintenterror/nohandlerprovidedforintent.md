@@ -21,7 +21,7 @@ No object was provided to handle the specified intent.
 static var noHandlerProvidedForIntent: INIntentError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 If your extension declares support for an intent in its `Info.plist` file, the [`handler(for:)`](../inintenthandlerproviding/handler%28for%29.md) method of its [`INExtension`](../inextension.md) object must provide a corresponding handler object.
 

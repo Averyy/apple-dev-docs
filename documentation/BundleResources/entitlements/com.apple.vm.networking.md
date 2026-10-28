@@ -18,7 +18,7 @@ A Boolean that indicates whether the app manages virtual network interfaces with
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 The entitlement is required to use the [vmnet](../../vmnet/vmnet.md) APIs.
 

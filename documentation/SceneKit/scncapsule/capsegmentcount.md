@@ -25,7 +25,7 @@ var capSegmentCount: Int { get set }
 @property (nonatomic) NSInteger capSegmentCount;
 ```
 
-#### Discussion
+## Discussion
 
 A larger number of segments adds more vertex data to the geometry, creating a smoother curved surface for the capsule’s ends at a cost to rendering performance.
 

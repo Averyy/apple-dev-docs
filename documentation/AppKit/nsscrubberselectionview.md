@@ -19,7 +19,7 @@ class NSScrubberSelectionView
 @interface NSScrubberSelectionView : NSScrubberArrangedView
 ```
 
-#### Overview
+## Overview
 
 Create a subclass to customize the selection or highlight appearance of an item in your scrubber control. You need to return an instance of your subclass from the [`makeSelectionView()`](./nsscrubberselectionstyle/makeselectionview%28%29.md) method on [`NSScrubberSelectionStyle`](./nsscrubberselectionstyle.md).
 

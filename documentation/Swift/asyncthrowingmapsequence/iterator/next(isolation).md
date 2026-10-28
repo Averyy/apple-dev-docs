@@ -21,7 +21,7 @@ Produces the next element in the map sequence.
 mutating func next(isolation actor: isolated (any Actor)?) async throws -> Transformed?
 ```
 
-#### Discussion
+## Discussion
 
 This iterator calls `next(isolation:)` on its base iterator; if this call returns `nil`, `next(isolation:)` returns nil. Otherwise, `next(isolation:)` returns the result of calling the transforming closure on the received element. If calling the closure throws an error, the sequence ends and `next(isolation:)` rethrows the error.
 

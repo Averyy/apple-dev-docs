@@ -17,7 +17,7 @@
 extern void xpc_listener_set_peer_requirement(xpc_listener_t listener, xpc_peer_requirement_t requirement);
 ```
 
-#### Discussion
+## Discussion
 
 Requires that the listener peer satisfies a requirement.
 

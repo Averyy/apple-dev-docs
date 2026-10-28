@@ -25,7 +25,7 @@ func makeComputePipelineState(function computeFunction: any MTLFunction) throws 
 - (id<MTLComputePipelineState>) newComputePipelineStateWithFunction:(id<MTLFunction>) computeFunction error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use the compute pipeline state to configure a compute pass by calling the [`setComputePipelineState(_:)`](../mtlcomputecommandencoder/setcomputepipelinestate%28_%29.md) method of an [`MTLComputeCommandEncoder`](../mtlcomputecommandencoder.md) instance.
 

@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_SEARCHFS: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_SEARCHFS
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`searchfs`](./es_events_t/searchfs.md), which has the type [`es_event_searchfs_t`](./es_event_searchfs_t.md).
 

@@ -20,7 +20,7 @@ nonisolated
 func onDropSessionUpdated(_ onUpdate: @escaping (DropSession) -> Void) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The `onUpdate` closure is called when the closest drop session in the child view hierarchy becomes active.
 

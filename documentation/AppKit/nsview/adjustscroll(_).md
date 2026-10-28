@@ -19,7 +19,7 @@ func adjustScroll(_ newVisible: NSRect) -> NSRect
 - (NSRect) adjustScroll:(NSRect) newVisible;
 ```
 
-#### Discussion
+## Discussion
 
 [`NSClipView`](../nsclipview.md) invokes this method to allow its document view to adjust its position during scrolling. For example, a custom view object that displays a table of data can adjust the origin of `newVisible` so rows or columns aren’t cut off by the edge of the enclosing [`NSClipView`](../nsclipview.md). The [`NSView`](../nsview.md) implementation simply returns `newVisible`.
 

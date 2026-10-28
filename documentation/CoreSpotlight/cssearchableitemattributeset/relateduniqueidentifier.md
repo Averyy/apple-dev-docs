@@ -23,7 +23,7 @@ var relatedUniqueIdentifier: String? { get set }
 @property (copy, nullable) NSString * relatedUniqueIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If you’re using both [`NSUserActivity`](../../Foundation/nsuseractivity.md) and Core Spotlight APIs to index the same item, set this property in the activity to specify the unique identifier of the Core Spotlight item to which the activity is related, and to avoid displaying duplicate results in Spotlight.
 

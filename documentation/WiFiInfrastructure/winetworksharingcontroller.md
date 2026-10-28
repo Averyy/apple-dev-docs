@@ -17,7 +17,7 @@ A controller that enables your container app to control network-sharing function
 class WINetworkSharingController
 ```
 
-#### Overview
+## Overview
 
 Use the `WINetworkSharingController` class to request authorization for Wi-Fi network sharing and to prompt people to share networks with their accessories. This class manages the interaction between your container app and the system’s network-sharing infrastructure.
 

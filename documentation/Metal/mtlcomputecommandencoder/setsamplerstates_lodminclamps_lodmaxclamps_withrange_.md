@@ -20,7 +20,7 @@ Encodes multiple texture samplers with custom levels of detail clamping, allowin
 - (void) setSamplerStates:(id<MTLSamplerState> const[]) samplers lodMinClamps:(const float[]) lodMinClamps lodMaxClamps:(const float[]) lodMaxClamps withRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method requires that the lengths of `samplers`, `lodMinClamps`, and `lodMaxClamps` be the same as the length of `range`.
 

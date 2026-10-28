@@ -25,11 +25,11 @@ class func fetchMoments(with options: PHFetchOptions?) -> PHFetchResult<PHAssetC
 + (PHFetchResult<PHAssetCollection *> *) fetchMomentsWithOptions:(PHFetchOptions *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A fetch result that contains the requested [`PHAssetCollection`](../phassetcollection.md) objects, or an empty fetch result if no objects match the request.
 
-#### Discussion
+## Discussion
 
 The Photos app automatically creates moments to group assets by time and location.
 

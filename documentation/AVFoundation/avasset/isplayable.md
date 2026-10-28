@@ -26,7 +26,7 @@ var isPlayable: Bool { get }
 @property (nonatomic, readonly, getter=isPlayable) BOOL playable;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is [`true`](../../Swift/true.md) if you can use the asset to create an [`AVPlayerItem`](../avplayeritem.md).
 

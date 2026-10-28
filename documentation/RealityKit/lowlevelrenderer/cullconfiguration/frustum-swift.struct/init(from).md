@@ -18,7 +18,7 @@ Creates a frustum by computing the culling planes for the given camera.
 init(from camera: LowLevelRenderer.Camera)
 ```
 
-#### Discussion
+## Discussion
 
 Produces up to six outward-facing planes corresponding to the camera’s view volume. For perspective cameras with an infinite far plane, the far plane is omitted, yielding five planes.
 

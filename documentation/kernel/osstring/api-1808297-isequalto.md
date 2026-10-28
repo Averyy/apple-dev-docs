@@ -12,11 +12,11 @@ virtual bool isEqualTo(
  const OSString *aString) const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two OSString objects are equivalent, `false` otherwise.
 
-#### Overview
+## Overview
 
 Two OSString objects are considered equal if they have same length and if their byte buffers hold the same contents.
 

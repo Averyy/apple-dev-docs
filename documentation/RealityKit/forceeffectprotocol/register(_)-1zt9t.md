@@ -28,7 +28,7 @@ Registers the custom effect.
 @preconcurrency static func register(_ updateHandler: (@MainActor (inout ForceEffectEvent<Self>) -> Void)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 If a handler is specified, the physics system calls the handler and ignores the update function.
 

@@ -19,11 +19,11 @@ optional func webView(_ webView: WebView!, dragDestinationActionMaskFor dragging
 - (NSUInteger) webView:(WebView *) webView dragDestinationActionMaskForDraggingInfo:(id<NSDraggingInfo>) draggingInfo;
 ```
 
-#### Return Value
+## Return Value
 
 A mask that indicates which drag operations are allowed when content is dragged over the sending web view. (Note that the return value changed from an `unsigned int` to an `NSUInteger` in OS X v10.5.) See [`WebDragDestinationAction`](../webdragdestinationaction.md) for a list of return values.
 
-#### Discussion
+## Discussion
 
 This method can be invoked multiple times while content is dragged over the sending web view. When the content is dropped, the web view sends a notification ([`webView(_:willPerform:for:)`](./webview%28_,willperform,for%29.md)) to the receiver.
 

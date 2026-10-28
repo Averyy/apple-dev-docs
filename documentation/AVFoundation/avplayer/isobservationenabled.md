@@ -26,7 +26,7 @@ class var isObservationEnabled: Bool { get set }
 @property (class, readwrite, getter=isObservationEnabled) BOOL observationEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 When set to YES, new instances of AVPlayer, AVQueuePlayer, AVPlayerItem, and AVPlayerItemTrack are observable with Swift Observation. The default value is NO (not observable).  An exception is thrown if this property is set YES after initializing any objects of these types, or if it is set to NO after any observable objects are initialized.  In other words, all objects of these types must either be observable or not observable in an application instance.
 

@@ -19,7 +19,7 @@ var animates: Bool { get set }
 @property BOOL animates;
 ```
 
-#### Discussion
+## Discussion
 
 A popover may be animated when it shows, closes, moves, or appears to transition to a detachable window. This property also controls whether the popover animates when the content view or content size changes.
 

@@ -15,7 +15,7 @@ Creates and returns a bitmap image representation with the first image in the sp
 + (instancetype) imageRepWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSBitmapImageRep`](../nsbitmapimagerep.md) instance or `nil` if the class is unable to create an image representation.
 

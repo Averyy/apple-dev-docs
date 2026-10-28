@@ -19,7 +19,7 @@ func setOptions(_ inOptions: IOBluetoothServiceBrowserControllerOptions)
 - (void) setOptions:(IOBluetoothServiceBrowserControllerOptions) inOptions;
 ```
 
-#### Discussion
+## Discussion
 
 This method will set the options for the browser to new values.
 

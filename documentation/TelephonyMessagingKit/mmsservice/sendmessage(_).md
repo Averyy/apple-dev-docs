@@ -15,7 +15,7 @@ Sends an MMS message to the given destination.
 final func sendMessage(_ message: MMSMessage) async throws
 ```
 
-#### Discussion
+## Discussion
 
 If the [`totalSize`](../mmsmessage/totalsize.md) exceeds [`maximumMessageSize`](./configuration/maximummessagesize.md), this call fails with [`MMSService.Error.maximumSizeExceeded`](./error/maximumsizeexceeded.md).
 

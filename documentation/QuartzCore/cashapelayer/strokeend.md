@@ -24,7 +24,7 @@ var strokeEnd: CGFloat { get set }
 @property CGFloat strokeEnd;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property must be in the range 0.0 to 1.0. The default value of this property is 1.0.
 

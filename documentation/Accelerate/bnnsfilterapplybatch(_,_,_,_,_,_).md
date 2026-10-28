@@ -27,7 +27,7 @@ func BNNSFilterApplyBatch(_ filter: BNNSFilter?, _ batch_size: Int, _ in: Unsafe
 int BNNSFilterApplyBatch(BNNSFilter filter, size_t batch_size, const void *in, size_t in_stride, void *out, size_t out_stride);
 ```
 
-#### Return Value
+## Return Value
 
 ## Parameters
 

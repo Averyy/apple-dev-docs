@@ -13,7 +13,7 @@ virtual void detachFromParent(
  const IORegistryPlane *plane );
 ```
 
-#### Overview
+## Overview
 
 This is the usual method of removing an entry from the registry. It is a no-op if the entry is not attached to the parent. Detaching the entry will release both the child and parent. This method will call detachFromChild in the parent entry if it is not being called from detachFromChild.
 

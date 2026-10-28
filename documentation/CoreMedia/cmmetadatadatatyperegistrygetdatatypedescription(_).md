@@ -25,7 +25,7 @@ func CMMetadataDataTypeRegistryGetDataTypeDescription(_ dataType: CFString) -> C
 extern CFStringRefCMMetadataDataTypeRegistryGetDataTypeDescription(CFStringRef dataType);
 ```
 
-#### Return Value
+## Return Value
 
 The description of the requested data type.
 

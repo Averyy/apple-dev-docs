@@ -25,11 +25,11 @@ func annotatedString(from components: PersonNameComponents) -> NSAttributedStrin
 - (NSAttributedString *) annotatedStringFromPersonNameComponents:(NSPersonNameComponents *) components;
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string representation of the given name components. You can determine the person component corresponding to a particular range of the attributed string by querying the `NSPersonNameComponentKey` attribute, providing one of the `NSPersonNameComponent` constant values defined below as the attribute value.
 
-#### Discussion
+## Discussion
 
 Use this method to style individual components of a formatted name, such as a name in a label.
 

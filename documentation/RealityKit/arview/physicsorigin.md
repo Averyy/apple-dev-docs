@@ -24,7 +24,7 @@ The entity that defines the origin of the scene’s physics simulation.
 
 - [Designing scene hierarchies for efficient physics simulation](../designing-scene-hierarchies-for-efficient-physics-simulation.md)
 
-#### Discussion
+## Discussion
 
 By default, the scene’s origin acts as the origin for physics calculations. Set the [`physicsOrigin`](./physicsorigin.md) to choose a particular entity within the scene to act as the origin instead.
 

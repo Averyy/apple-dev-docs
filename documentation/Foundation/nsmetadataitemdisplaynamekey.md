@@ -23,7 +23,7 @@ let NSMetadataItemDisplayNameKey: String
 extern NSString * const NSMetadataItemDisplayNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSString`](./nsstring.md) object with the display name of the item, which may be different then the file system name.
 

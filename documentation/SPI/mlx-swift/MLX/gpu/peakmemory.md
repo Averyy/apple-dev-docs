@@ -17,7 +17,7 @@ Get the peak amount of active memory in bytes.
 static var peakMemory: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 The maximum memory used is recorded from the beginning of the program execution.
 

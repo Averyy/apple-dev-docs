@@ -20,7 +20,7 @@ func accessibilityPerformPress() -> Bool
 - (BOOL) accessibilityPerformPress;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the action was successfully triggered; otherwise, [`false`](../../Swift/false.md). This method does not indicate the success or failure of the action, just the fact that the action was successfully triggered.
 

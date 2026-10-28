@@ -31,7 +31,7 @@ The complication families for which the app can provide data.
 - `CLKComplicationFamilyGraphicRectangular`
 - `CLKComplicationFamilyGraphicExtraLarge`
 
-#### Discussion
+## Discussion
 
 To add this key to the information property list, enable the desired families in the WatchKit extension’s Complication Configuration settings.
 

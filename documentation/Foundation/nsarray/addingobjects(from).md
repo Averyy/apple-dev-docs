@@ -25,7 +25,7 @@ func addingObjects(from otherArray: [Any]) -> [Any]
 - (NSArray<id> *) arrayByAddingObjectsFromArray:(NSArray<id> *) otherArray;
 ```
 
-#### Return Value
+## Return Value
 
 A new array that is a copy of the receiving array with the objects contained in `otherArray` added to the end.
 

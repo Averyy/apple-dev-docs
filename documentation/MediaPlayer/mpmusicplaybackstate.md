@@ -23,7 +23,7 @@ enum MPMusicPlaybackState
 enum MPMusicPlaybackState : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You determine a music player’s state by checking the [`playbackState`](./mpmusicplayercontroller/playbackstate.md) property. Depending on the property’s value, you can update your application’s user interface or take other appropriate action.
 

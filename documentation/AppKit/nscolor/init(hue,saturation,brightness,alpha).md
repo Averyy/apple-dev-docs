@@ -19,11 +19,11 @@ init(hue: CGFloat, saturation: CGFloat, brightness: CGFloat, alpha: CGFloat)
 + (NSColor *) colorWithHue:(CGFloat) hue saturation:(CGFloat) saturation brightness:(CGFloat) brightness alpha:(CGFloat) alpha;
 ```
 
-#### Return Value
+## Return Value
 
 The color object.
 
-#### Discussion
+## Discussion
 
 This method accepts extended color component values. If the component values are outside of the `0-1.0` range, the method creates a color in the extended range color space. This method is provided for easier reuse of code that uses [`UIColor`](../../UIKit/uicolor.md) in iOS.
 

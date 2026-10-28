@@ -24,7 +24,7 @@ convenience init(input: URL, configuration: PhotogrammetrySession.Configuration 
 convenience init<S>(input: S, configuration: PhotogrammetrySession.Configuration = Configuration()) throws where S : Sequence, S.Element == PhotogrammetrySample
 ```
 
-#### Discussion
+## Discussion
 
 Creates a new session instance using all images in the specified [`URL`](../../Foundation/url.md) input directory [`URL`](../../Foundation/url.md) as samples for reconstruction.
 

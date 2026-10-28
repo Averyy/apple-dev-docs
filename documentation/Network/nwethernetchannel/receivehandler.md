@@ -16,7 +16,7 @@ A handler that delivers inbound Ethernet frames.
 final var receiveHandler: (@Sendable (Data, UInt16, NWEthernetChannel.EthernetAddress, NWEthernetChannel.EthernetAddress) -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The receive handler only needs to be set once, and will be invoked for each received Ethernet frame.
 

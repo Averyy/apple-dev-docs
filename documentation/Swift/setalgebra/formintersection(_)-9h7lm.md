@@ -23,7 +23,7 @@ mutating func formIntersection(_ other: Self)
 
 Available when `RawValue` conforms to `FixedWidthInteger`.
 
-#### Discussion
+## Discussion
 
 This method is implemented as a `&` (bitwise AND) operation on the two sets’ raw values.
 

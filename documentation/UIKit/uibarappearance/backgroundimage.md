@@ -23,7 +23,7 @@ var backgroundImage: UIImage? { get set }
 @property (nonatomic, strong, readwrite, nullable) UIImage * backgroundImage;
 ```
 
-#### Discussion
+## Discussion
 
 The bar layers the specified image on top of the content in the [`backgroundEffect`](./backgroundeffect.md) and [`backgroundColor`](./backgroundcolor.md) properties. UIKit sizes the image according to the value in the [`backgroundImageContentMode`](./backgroundimagecontentmode.md) property.
 

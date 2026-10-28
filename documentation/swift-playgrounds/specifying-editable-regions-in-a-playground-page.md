@@ -5,13 +5,13 @@
 
 Guide learning by marking code that learners can change or copy forward.
 
-#### Overview
+## Overview
 
 You mark a region of code as editable by surrounding the region with a special comment syntax. You use editable and noneditable regions of code to guide learners to the part of the code they should change while completing the task on a page.
 
 By default, all of the code on a playground page is editable until you add at least one editable region. Marking any region in a playground page as editable locks the rest of the code on the page. For playground pages geared toward beginners, restrict the editable area to a small region to avoid accidental edits that might be difficult to recover from.
 
-##### Mark Inline Editable Areas
+### Mark Inline Editable Areas
 
 You use an inline editable area to let learners edit a small region of code. For example, you might want to progressively disclose how a larger region of code works by first letting a learner experiment with changing a single value or variable to see how it influences the execution of the whole page.
 
@@ -34,7 +34,7 @@ When displayed on a playground page, the code from the example above is displaye
 
 ![A screenshot showing the rendered version of the code listing above. ](https://developer.apple.com/tutorials/images/com.apple.Swift-Playgrounds/specifying-editable-regions-in-a-playground-page-2@2x.png)
 
-##### Mark Multiline Editable Areas
+### Mark Multiline Editable Areas
 
 You use the same special comment syntax to mark editable areas that span multiple lines.
 
@@ -42,7 +42,7 @@ You use the same special comment syntax to mark editable areas that span multipl
 
 The content you write inside multiline editable areas must be indented to the same level as the surrounding code.
 
-##### Mark Editable Areas with Placeholder Tokens
+### Mark Editable Areas with Placeholder Tokens
 
 You can add placeholder tokens to editable areas. Placeholder tokens are rendered as selectable labels and can contain spaces and special characters. You can include the name of any Swift type in a placeholder token to restrict the type of values entered in the editable area.
 
@@ -58,7 +58,7 @@ var untypedLlamaCount = /*#-editable-code*/<#number of llamas#>/*#-end-editable-
 var typedLlamaCount = /*#-editable-code*/<#T##number of llamas##Int#>/*#-end-editable-code*/
 ```
 
-##### Mark Editable Areas as Copyable
+### Mark Editable Areas as Copyable
 
 You can mark editable areas with an identifier that lets learners reuse code between pages. Mark an editable area as a source area by using the `copy-source(`*identifier*`)` and `end-copy-source` comment syntax. Mark another editable area as a copy destination by using the `copy-destination(`*playgroundpage*`, `*identifier*`)` comment syntax. Once you’ve marked both the source and destination areas, the code a learner types in the source area becomes available in the destination area if they’ve passed the source page’s assessment.
 

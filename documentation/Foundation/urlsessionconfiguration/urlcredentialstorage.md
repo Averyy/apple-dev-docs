@@ -25,7 +25,7 @@ var urlCredentialStorage: URLCredentialStorage? { get set }
 @property (retain, nullable) NSURLCredentialStorage * URLCredentialStorage;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the credential storage object used by tasks within sessions based on this configuration.
 

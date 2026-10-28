@@ -24,11 +24,11 @@ func convert(_ r: CGRect, to l: CALayer?) -> CGRect
 - (CGRect) convertRect:(CGRect) r toLayer:(CALayer *) l;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle converted to the coordinate system of `l`.
 
-#### Discussion
+## Discussion
 
 If you specify `nil` for the `l` parameter, this method returns the original rect with an origin added to the layer’s frame’s origin.
 

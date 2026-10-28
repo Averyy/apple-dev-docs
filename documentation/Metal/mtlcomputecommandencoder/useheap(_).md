@@ -30,7 +30,7 @@ func useHeap(_ heap: any MTLHeap)
 - [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
 - [Tracking the resource residency of argument buffers](../tracking-the-resource-residency-of-argument-buffers.md)
 
-#### Discussion
+## Discussion
 
 You can make the resources in `heap` *resident* (available in GPU memory) for the remaining duration of the render pass by calling this method. Call the method before encoding draw calls that may access resources within `heap` through an argument buffer. The method ensures each resource is in a format that’s compatible with the shaders that depend on it.
 

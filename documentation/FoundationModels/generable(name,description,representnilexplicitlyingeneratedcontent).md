@@ -15,8 +15,8 @@
 ## Declaration
 
 ```swift
-@attached
-(extension, conformances: Generable, names: named(init(_:)), named(generatedContent)) @attached(member, names: arbitrary) macro Generable(name: String, description: String? = nil, representNilExplicitlyInGeneratedContent: Bool = false)
+@attached(extension, conformances: Generable, names: named(init(_:)), named(generatedContent))
+@attached(member, names: arbitrary) macro Generable(name: String, description: String? = nil, representNilExplicitlyInGeneratedContent: Bool = false)
 ```
 
 ## See Also

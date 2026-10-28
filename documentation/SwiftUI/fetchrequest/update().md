@@ -24,7 +24,7 @@ Updates the fetched results.
 
 Available when `Result` conforms to `NSFetchRequestResult`.
 
-#### Discussion
+## Discussion
 
 SwiftUI calls this function before rendering a view’s [`body`](../view/body-8kl5o.md) to ensure the view has the most recent fetched results.
 

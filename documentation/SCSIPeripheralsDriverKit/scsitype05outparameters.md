@@ -15,7 +15,7 @@ Parameters for commands to send to the external SCSI device.
 struct SCSIType05OutParameters;
 ```
 
-#### Discussion
+## Discussion
 
 This type contains all the fields from [`SCSIDeviceOutParameters`](./scsideviceoutparameters.md), typed for use only with [`IOUserSCSIPeripheralDeviceType05`](./iouserscsiperipheraldevicetype05.md) devices.
 

@@ -23,7 +23,7 @@ var errorStatusCode: Int { get }
 @property (nonatomic, readonly) NSInteger errorStatusCode;
 ```
 
-#### Discussion
+## Discussion
 
 If the error is unknown, the value of this property is negative.
 

@@ -24,11 +24,11 @@ init(placeholderForCreatedAsset: PHObjectPlaceholder)
 - (instancetype) initWithPlaceholderForCreatedAsset:(PHObjectPlaceholder *) placeholderForCreatedAsset;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized content editing output.
 
-#### Discussion
+## Discussion
 
 Use this method to add a new asset to the Photos library with edited content, as opposed to editing the content of an asset after adding it to the library. For example, you might use this option if your app applies filters to photos it captures with the device camera — instead of saving only the filtered image to the Photos library, your app can save both the filtered and the original image, allowing the user to revert to the original image or apply different filters later. The code below illustrates such a workflow.
 

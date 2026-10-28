@@ -22,7 +22,7 @@ var conformsCaptionsToTimeRange: Bool { get set }
 @property (nonatomic) BOOL conformsCaptionsToTimeRange;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property value is [`false`](../../Swift/false.md). If you set the value to [`true`](../../Swift/true.md), this object conforms the time range of captions to fit its encoded data.
 

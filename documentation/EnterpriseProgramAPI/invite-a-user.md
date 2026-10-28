@@ -6,7 +6,7 @@
 
 Invite a user with assigned user roles to join your team.
 
-#### Overview
+## Overview
 
 - HTTPBody
 

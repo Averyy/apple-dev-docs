@@ -21,7 +21,7 @@ The hour of the year, in UTC.
 var hour: Int
 ```
 
-#### Discussion
+## Discussion
 
 The hour ranges from 1 to 8784.
 

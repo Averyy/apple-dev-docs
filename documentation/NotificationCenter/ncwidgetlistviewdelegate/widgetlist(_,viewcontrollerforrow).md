@@ -22,7 +22,7 @@ func widgetList(_ list: NCWidgetListViewController, viewControllerForRow row: In
 - (NSViewController *) widgetList:(NCWidgetListViewController *) list viewControllerForRow:(NSUInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 A custom view controller to manage the content in the specified row.
 

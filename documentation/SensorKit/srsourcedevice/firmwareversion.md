@@ -19,7 +19,7 @@ var firmwareVersion: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * firmwareVersion;
 ```
 
-#### Discussion
+## Discussion
 
 Firmware version of the source. A nil value means a firmware version was not provided.
 

@@ -14,7 +14,7 @@
 typedef UInt32 IOMediumType;
 ```
 
-#### Discussion
+## Discussion
 
 A 32-bit value divided into fields which describes a single medium type.
 

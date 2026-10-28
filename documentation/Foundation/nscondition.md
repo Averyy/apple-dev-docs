@@ -25,7 +25,7 @@ class NSCondition
 @interface NSCondition : NSObject
 ```
 
-#### Overview
+## Overview
 
 A condition object acts as both a lock and a checkpoint in a given thread. The lock protects your code while it tests the condition and performs the task triggered by the condition. The checkpoint behavior requires that the condition be true before the thread proceeds with its task. While the condition is not true, the thread blocks. It remains blocked until another thread signals the condition object.
 

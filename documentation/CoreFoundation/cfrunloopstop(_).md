@@ -25,7 +25,7 @@ func CFRunLoopStop(_ rl: CFRunLoop!)
 extern void CFRunLoopStop(CFRunLoopRef rl);
 ```
 
-#### Discussion
+## Discussion
 
 This function forces `rl` to stop running and return control to the function that called [`CFRunLoopRun()`](./cfrunlooprun%28%29.md) or [`CFRunLoopRunInMode(_:_:_:)`](./cfrunloopruninmode%28_,_,_%29.md) for the current run loop activation. If the run loop is nested with a callout from one activation starting another activation running, only the innermost activation is exited.
 

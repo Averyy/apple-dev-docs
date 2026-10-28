@@ -23,7 +23,7 @@ func ABPersonRemoveImageData(_ person: ABRecord!, _ error: UnsafeMutablePointer<
 extern bool ABPersonRemoveImageData(ABRecordRef person, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` when successful, `false` otherwise.
 

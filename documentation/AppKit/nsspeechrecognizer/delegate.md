@@ -19,7 +19,7 @@ weak var delegate: (any NSSpeechRecognizerDelegate)? { get set }
 @property (weak, nullable) id<NSSpeechRecognizerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must conform to the [`NSSpeechRecognizerDelegate`](../nsspeechrecognizerdelegate.md) protocol.
 

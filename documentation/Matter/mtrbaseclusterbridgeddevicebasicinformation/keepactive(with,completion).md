@@ -29,7 +29,7 @@ func keepActive(with params: MTRBridgedDeviceBasicInformationClusterKeepActivePa
 - (void) keepActiveWithParams:(MTRBridgedDeviceBasicInformationClusterKeepActiveParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Upon receipt, the server SHALL attempt to keep the bridged device active for the duration specified by the command, when the device is next active.
 

@@ -16,7 +16,7 @@ The merchant’s two-letter ISO 3166 country code.
 required DOMString countryCode;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to the two-letter ISO 3166 code for the country or region of the merchant’s principle place of business. This is often the location for settling the payment. Consult with your payment service provider (PSP) to determine the appropriate country code.
 

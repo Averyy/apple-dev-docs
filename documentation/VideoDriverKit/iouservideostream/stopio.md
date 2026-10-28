@@ -15,7 +15,7 @@ Tells the stream to stop IO.
 virtual kern_return_t StopIO(IOUserVideoStartStopFlags in_flags);
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation always return s`kIOReturnSuccess`. Subclass and override this method to handle any hardware specific things when IO is stopping, then call the superclass implementation to update IO state.
 

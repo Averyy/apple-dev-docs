@@ -19,7 +19,7 @@ var image: NSImage? { get set }
 @property (strong, nullable) NSImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The combo button scales the image to fit within its bounds. Use the [`imageScaling`](./imagescaling.md) property to specify the scaling behavior to use with your image.
 

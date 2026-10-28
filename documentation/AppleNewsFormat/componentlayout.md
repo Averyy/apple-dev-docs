@@ -21,7 +21,7 @@ object ComponentLayout
 - [Creating an Article: Main Steps](../AppleNews/creating-an-article-main-steps.md)
 - [Displaying Components Side By Side](../AppleNews/displaying-components-side-by-side.md)
 
-#### Discussion
+## Discussion
 
 Use the `ComponentLayout` object to define a position for a specific component within the column system defined using the [`Layout`](./layout.md) object.
 
@@ -31,7 +31,7 @@ For information on setting the units for the width and height, see [Specifying M
 
 You can use this object in [`ArticleDocument`](./articledocument.md).
 
-##### Example
+### Example
 
 ```json
 {

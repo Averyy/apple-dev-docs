@@ -23,7 +23,7 @@ var localizedCancelTitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * localizedCancelTitle;
 ```
 
-#### Discussion
+## Discussion
 
 The system presents a cancel button during biometric authentication to let the user abort the authentication attempt. The button appears every time the system asks the user to present a finger registered with Touch ID. For Face ID, the button only appears if authentication fails and the user is prompted to try again. Either way, the user can stop trying to authenticate by tapping the button.
 

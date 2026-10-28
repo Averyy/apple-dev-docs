@@ -22,11 +22,11 @@ init(restaurant: INRestaurant?)
 - (instancetype) initWithRestaurant:(INRestaurant *) restaurant;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized intent object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Normally, you do not create instances of this class yourself. Instead, SiriKit creates instances when Maps asks for the default information to use when booking the restaurant. However, you can use this method during testing to create intent objects in order to validate your intent handling code paths.
 

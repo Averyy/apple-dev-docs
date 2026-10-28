@@ -23,7 +23,7 @@ optional func alertViewShouldEnableFirstOtherButton(_ alertView: UIAlertView) ->
 - (BOOL) alertViewShouldEnableFirstOtherButton:(UIAlertView *) alertView;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the button should be enabled, no if the button should be disabled.
 

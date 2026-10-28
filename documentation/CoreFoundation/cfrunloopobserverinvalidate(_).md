@@ -25,7 +25,7 @@ func CFRunLoopObserverInvalidate(_ observer: CFRunLoopObserver!)
 extern void CFRunLoopObserverInvalidate(CFRunLoopObserverRef observer);
 ```
 
-#### Discussion
+## Discussion
 
 Once invalidated, `observer` will never fire and call its callback function again. This function automatically removes `observer` from all run loop modes in which it had been added. The memory is not deallocated unless the run loop held the only reference to `observer`.
 

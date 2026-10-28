@@ -21,11 +21,11 @@ Runs a closure and then closes the file descriptor, even if an error occurs.
 func closeAfter<R>(_ body: () throws -> R) throws -> R
 ```
 
-#### Return Value
+## Return Value
 
 The value returned by the closure.
 
-#### Discussion
+## Discussion
 
 If `body` throws an error or an error occurs while closing the file descriptor, this method rethrows that error.
 

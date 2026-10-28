@@ -21,7 +21,7 @@ Resumes a paused animation.
 @preconcurrency func resume()
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to resume an animation that you paused with the [`pause()`](./pause%28%29.md) method. You can’t resume an animation that has finished naturally, or that you stopped by calling the [`stop()`](./stop%28%29.md) method.
 

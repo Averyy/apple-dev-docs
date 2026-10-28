@@ -25,7 +25,7 @@ let kCGImagePropertyGIFDelayTime: CFString
 extern CFStringRef const kCGImagePropertyGIFDelayTime;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFNumber`](../CoreFoundation/cfnumber.md) with a floating-point value. The value of this key is never less than 100 millseconds, and the system adjusts values less than that amount to 100 milliseconds, as needed. See [`kCGImagePropertyGIFUnclampedDelayTime`](./kcgimagepropertygifunclampeddelaytime.md).
 

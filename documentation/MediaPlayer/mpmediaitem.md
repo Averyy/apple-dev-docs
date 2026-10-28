@@ -23,7 +23,7 @@ class MPMediaItem
 @interface MPMediaItem : MPMediaEntity
 ```
 
-#### Overview
+## Overview
 
 A media item has an overall unique identifier, accessed using the [`MPMediaItemPropertyPersistentID`](./mpmediaitempropertypersistentid.md) property key, as well as specific identifiers for its metadata. These identifiers persists across application launches.
 

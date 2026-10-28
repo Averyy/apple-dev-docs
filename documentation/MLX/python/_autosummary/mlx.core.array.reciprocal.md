@@ -6,5 +6,8 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.reciprocal
 
-**array.reciprocal(*self*, ***, *stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: See [reciprocal()](mlx.core.reciprocal.md#mlx.core.reciprocal).
+```python
+array.reciprocal(self, *, stream: Stream | ThreadLocalStream | Device | mlx.core.DeviceType | None = None) → array
+```
+
+See [reciprocal()](mlx.core.reciprocal.md#mlx.core.reciprocal).

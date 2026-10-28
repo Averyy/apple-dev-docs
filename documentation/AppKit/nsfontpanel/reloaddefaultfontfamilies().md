@@ -19,7 +19,7 @@ func reloadDefaultFontFamilies()
 - (void) reloadDefaultFontFamilies;
 ```
 
-#### Discussion
+## Discussion
 
 This reloading provides the delegate opportunity to scrutinize the default list of fonts to be displayed in the panel.
 

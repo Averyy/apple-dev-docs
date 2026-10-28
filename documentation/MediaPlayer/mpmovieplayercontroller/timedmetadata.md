@@ -23,7 +23,7 @@ var timedMetadata: [Any]! { get }
 @property (nonatomic, readonly) NSArray * timedMetadata;
 ```
 
-#### Return Value
+## Return Value
 
 An array of the most recent [`MPTimedMetadata`](../mptimedmetadata.md) objects provided by the streamed movie.
 

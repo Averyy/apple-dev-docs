@@ -18,7 +18,7 @@ Returns true if the file or photo library asset used to construct this object co
 var imageContainsReferenceImageData: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine if the asset contains Apple Reference Image data that can be processed and/or viewed using `View/photosReferenceImageViewer`. If the input was not an image, or does not contain Apple Reference Image data, this returns false.
 

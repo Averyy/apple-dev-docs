@@ -22,7 +22,7 @@ Retrieves a limited number of strings near a string in the vocabulary.
 func neighbors(for string: String, maximumCount maxCount: Int, distanceType: NLDistanceType = .cosine) -> [(String, NLDistance)]
 ```
 
-#### Return Value
+## Return Value
 
 An array of tuples that contain neighboring strings and their distances.
 

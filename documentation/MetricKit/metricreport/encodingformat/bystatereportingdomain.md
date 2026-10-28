@@ -22,7 +22,7 @@ case byStateReportingDomain
 
 - [Analyzing app performance with MetricKit](../../analyzing-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 State entries are grouped by domain, and interval entries have their states grouped by domain within each entry.
 

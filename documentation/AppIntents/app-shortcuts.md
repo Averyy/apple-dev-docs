@@ -5,7 +5,7 @@
 
 Improve the experience of using your app intents and entities in system experiences like Siri, Spotlight, and the Shortcuts app.
 
-#### Overview
+## Overview
 
 App Shortcuts provide a polished experience for your app intents and entities in the Shortcuts app and other system experiences. An App Shortcut combines the action from your app intent with other data, such as a title, image, and spoken phrases that someone might use to run the shortcut. A shortcut can also contain preconfigured parameters, so someone can run the action quickly, and without having to specify additional information. For example, a hiking app might offer an app intent to start a hike, but require you to select a trail before starting the action. Without a shortcut, someone must provide the trail information each time they run the intent. However, a shortcut can simplify this flow by offering to start a hike on the person’s favorite trail.
 

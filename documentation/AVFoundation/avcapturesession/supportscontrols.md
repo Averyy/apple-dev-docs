@@ -23,7 +23,7 @@ var supportsControls: Bool { get }
 @property (nonatomic, readonly) BOOL supportsControls;
 ```
 
-#### Discussion
+## Discussion
 
 A capture session supports controls only on platforms that provide the required hardware.
 

@@ -24,11 +24,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 A new entity object.
 
-#### Discussion
+## Discussion
 
 If you create a [`GKEntity`](../gkentity.md) subclass and define any additional initializers, you must delegate to this initializer. You do not need to subclass [`GKEntity`](../gkentity.md) to use Entity-Component architecture—generally, you should create a custom entity class only when you need a place to store state or resources that are shared by multiple components.
 

@@ -23,7 +23,7 @@ func dataRepresentation() -> Data
 - (NSData *) dataRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`NSData`](../../Foundation/nsdata.md) object that contains the entire contents of the drawing.
 

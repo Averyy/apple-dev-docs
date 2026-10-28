@@ -36,7 +36,7 @@ var scheduleParameterBlock: AUScheduleParameterBlock { get }
 
 - [Migrating Your Audio Unit Host to the AUv3 API](../migrating-your-audio-unit-host-to-the-auv3-api.md)
 
-#### Discussion
+## Discussion
 
 As with the render block, a host should fetch this block before beginning to render, if it intends to schedule parameters.
 

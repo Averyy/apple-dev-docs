@@ -19,7 +19,7 @@ The requested size for any generated images.
 var sizeSpecification: ImagePlaygroundOptions.SizeSpecification
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property requests the smallest image size with a square aspect ratio.
 

@@ -25,7 +25,7 @@ class let variationAxisName: CFString
 extern CFStringRef const kCGFontVariationAxisName;
 ```
 
-#### Description
+## Description
 
 The value obtained with this key is a [`CFString`](../../CoreFoundation/cfstring.md) that specifies the name of the variation axis.
 

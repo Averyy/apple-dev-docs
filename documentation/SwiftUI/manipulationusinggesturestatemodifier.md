@@ -16,7 +16,7 @@ nonisolated
 struct ManipulationUsingGestureStateModifier
 ```
 
-#### Overview
+## Overview
 
 [`manipulable(using:)`](./view/manipulable%28using%29.md) returns a view modified with this type. You don’t create it directly.
 

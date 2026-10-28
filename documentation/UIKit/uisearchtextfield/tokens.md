@@ -22,7 +22,7 @@ var tokens: [UISearchToken] { get set }
 @property (nonatomic, copy) NSArray<UISearchToken *> * tokens;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access existing tokens, or to replace all tokens at once. To convert text in the search field into a token, use [`replaceTextualPortion(of:with:at:)`](./replacetextualportion%28of,with,at%29.md).
 

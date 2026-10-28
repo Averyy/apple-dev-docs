@@ -19,7 +19,7 @@ func dataWithEPS(inside rect: NSRect) -> Data
 - (NSData *) dataWithEPSInsideRect:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 This data can be placed on an [`NSPasteboard`](../nspasteboard.md) object, written to a file, or used to create an [`NSImage`](../nsimage.md) object.
 

@@ -19,7 +19,7 @@ var hidesOnDeactivate: Bool { get set }
 @property BOOL hidesOnDeactivate;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the window is removed from the screen when its application is deactivated; [`false`](../../Swift/false.md) if it remains onscreen. The default value for `NSWindow` is [`false`](../../Swift/false.md); the default value for `NSPanel` is [`true`](../../Swift/true.md).
 

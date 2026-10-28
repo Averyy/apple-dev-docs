@@ -29,7 +29,7 @@ func invokeCommands(_ commands: [[MTRCommandWithRequiredResponse]], queue: dispa
 - (void) invokeCommands:(NSArray<NSArray<MTRCommandWithRequiredResponse *> *> *) commands queue:(dispatch_queue_t) queue completion:(MTRDeviceResponseHandler) completion;
 ```
 
-#### Discussion
+## Discussion
 
 For any given group, if any command in any preceding group failed, the group will be skipped.  If all commands in all preceding groups succeeded, the commands within the group will be invoked, with no ordering guarantees within that group.
 

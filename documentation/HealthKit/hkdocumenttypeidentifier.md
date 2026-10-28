@@ -24,7 +24,7 @@ struct HKDocumentTypeIdentifier
 typedef NSString * HKDocumentTypeIdentifier;
 ```
 
-#### Overview
+## Overview
 
 To create an [`HKDocumentType`](./hkdocumenttype.md) instance, pass an [`HKDocumentTypeIdentifier`](./hkdocumenttypeidentifier.md) value to the [`documentType(forIdentifier:)`](./hkobjecttype/documenttype%28foridentifier%29.md) method.
 

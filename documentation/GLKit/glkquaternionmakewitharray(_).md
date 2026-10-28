@@ -22,7 +22,7 @@ func GLKQuaternionMakeWithArray(_ values: UnsafeMutablePointer<Float>!) -> GLKQu
 static GLKQuaternion GLKQuaternionMakeWithArray(float values[4]);
 ```
 
-#### Return Value
+## Return Value
 
 A new quaternion.
 

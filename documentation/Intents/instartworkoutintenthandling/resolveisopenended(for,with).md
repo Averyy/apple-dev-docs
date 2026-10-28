@@ -27,7 +27,7 @@ optional func resolveIsOpenEnded(for intent: INStartWorkoutIntent) async -> INBo
 - (void) resolveIsOpenEndedForStartWorkout:(INStartWorkoutIntent *) intent withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method resolves whether the workout is open ended. If you don’t implement this method, SiriKit assumes that you’re able to start either an open ended or fixed goal workout.
 

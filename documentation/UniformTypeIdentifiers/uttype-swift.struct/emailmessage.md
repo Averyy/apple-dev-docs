@@ -21,7 +21,7 @@ A type that represents an email message.
 static var emailMessage: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.email-message`.
 

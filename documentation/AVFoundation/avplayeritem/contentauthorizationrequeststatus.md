@@ -19,7 +19,7 @@ var contentAuthorizationRequestStatus: AVContentAuthorizationStatus { get }
 @property (nonatomic, readonly) AVContentAuthorizationStatus contentAuthorizationRequestStatus;
 ```
 
-#### Discussion
+## Discussion
 
 This property reports the authorization status as determined by the most recent call to [`requestContentAuthorizationAsynchronously(withTimeoutInterval:completionHandler:)`](./requestcontentauthorizationasynchronously%28withtimeoutinterval,completionhandler%29.md).
 

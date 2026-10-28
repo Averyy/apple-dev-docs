@@ -21,7 +21,7 @@ typedef struct VoiceFileInfo {
 } VoiceFileInfo;
 ```
 
-#### Overview
+## Overview
 
 A voice file information structure specifies the file in which a voice is stored and the resource ID of the voice within that file. Use the [`GetVoiceInfo(_:_:_:)`](./api-1461410-getvoiceinfo.md) function to obtain a voice file information structure for a voice.
 

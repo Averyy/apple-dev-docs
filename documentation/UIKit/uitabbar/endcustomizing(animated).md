@@ -21,11 +21,11 @@ func endCustomizing(animated: Bool) -> Bool
 - (BOOL) endCustomizingAnimated:(BOOL) animated;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if items on the tab bar changed or [`false`](../../Swift/false.md) if they did not.
 
-#### Discussion
+## Discussion
 
 You rarely need to call this method. Typically, the user dismisses the modal view by tapping the built-in Done button in the interface. However, you might call this method to cancel the customization process because of changes to other parts of your interface.
 

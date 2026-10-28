@@ -19,7 +19,7 @@ let supportedTransports: [AccessoryTransport]
 
 - [Forwarding notifications to your accessory using the internet transport type](../forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
-#### Discussion
+## Discussion
 
 The default is [`AccessoryTransport.bluetooth`](../accessorytransport/bluetooth.md). To support the [`AccessoryTransport.internet`](../accessorytransport/internet.md) or [`AccessoryTransport.localNetwork`](../accessorytransport/localnetwork.md) transport types, use the [`SecurityMessage.CipherSuite.xWing`](./ciphersuite-swift.enum/xwing.md) cipher suite.
 

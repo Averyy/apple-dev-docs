@@ -5,27 +5,27 @@
 
 Released April 26, 2021 — Version 14.1 (16611.1.21)
 
-#### Overview
+## Overview
 
 Safari 14.1 ships with iOS & iPadOS 14.5 and macOS Big Sur 11.3.
 
-##### Authentication and Passwords
+### Authentication and Passwords
 
-###### New Features
+#### New Features
 
 - Added support for Touch ID and Face ID via WebAuthentication to all WKWebViews. See [Web Authentication](https://www.w3.org/TR/webauthn/) for more information.
 
-##### CSS and Web Animations
+### CSS and Web Animations
 
-###### New Features
+#### New Features
 
 - Added support for [CSS individual transform properties: translate, rotate, and scale](https://drafts.csswg.org/css-transforms-2/#individual-transforms).
 - Web Animations now support animating discrete properties and pseudo-elements, see [Web Animations](https://drafts.csswg.org/web-animations-1/).
 - Safari now supports flexbox gaps with `row-gap` and `column-gap`, see [Gap Shorthand: the gap property](https://drafts.csswg.org/css-align/#gap-flex).
 
-##### JavaScript and WebAssembly
+### JavaScript and WebAssembly
 
-###### New Features
+#### New Features
 
 - Added support for static instance class fields, private instance class fields, and static public class fields — public instance class fields were already supported. See [Public and private instance fields proposal](https://tc39.es/proposal-class-fields/) for more information.
 - Added support for new ECMAScript Internationalization API features:
@@ -41,31 +41,31 @@ Safari 14.1 ships with iOS & iPadOS 14.5 and macOS Big Sur 11.3.
 - Added support for [WebAssembly BigInt integration](https://github.com/WebAssembly/JS-BigInt-integration).
 - Added support for [WebAssembly Sign-extension instructions](https://github.com/WebAssembly/sign-extension-ops).
 
-##### Media
+### Media
 
-###### New Features
+#### New Features
 
 - Added support for WebM files containing VP8 or VP9 video tracks and Vorbis audio tracks in macOS, see [WebM Container Guidelines](https://www.webmproject.org/docs/container/).
 - Added support for MediaStream Recording to enable websites to record audio and video, see [MediaStream Recording](https://w3c.github.io/mediacapture-record/MediaRecorder.html).
 - Added support for [getUserMedia](https://w3c.github.io/mediacapture-main/#dom-mediadevices-getusermedia) from MediaStream and Capture API in WKWebView.
 
-##### Safari Web Extensions
+### Safari Web Extensions
 
-###### New Features
+#### New Features
 
 - Added support for WebExtensions API to replace the new tab page.
 - Added support for non-persistent background pages.
 
-##### Security and Privacy
+### Security and Privacy
 
-###### New Features
+#### New Features
 
 - Improved Storage Access API interoperability and specification compliance, see [Storage Access API](https://webkit.org/blog/11545/updates-to-the-storage-access-api/).
 - Added support for [Private Click Measurement](https://webkit.org/blog/11529/introducing-private-click-measurement-pcm/), enabling privacy-preserving ad attribution for web-to-web and app-to-web flows.
 
-##### WebKit Framework
+### WebKit Framework
 
-###### New Features
+#### New Features
 
 - Added support for HTML `date`, `time`, and `datetime-local` input types in macOS, enabling date and time controls in forms. For more information, see [Date state (type=date)](https://html.spec.whatwg.org/#date-state-(type=date)).
 - Added support for Web Audio API, now unprefixed, compliant, and including Audio Worklets. This enables better compatibility for advanced audio processing, see [Web Audio API](https://www.w3.org/TR/webaudio/) for more information.

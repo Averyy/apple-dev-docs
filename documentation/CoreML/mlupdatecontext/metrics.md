@@ -25,7 +25,7 @@ var metrics: [MLMetricKey : Any] { get }
 @property (nonatomic, readonly) NSDictionary<MLMetricKey *,id> * metrics;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`MLMetricKey`](../mlmetrickey.md) to access the values within the dictionary.
 

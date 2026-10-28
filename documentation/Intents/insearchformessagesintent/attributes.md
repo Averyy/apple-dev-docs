@@ -31,7 +31,7 @@ var attributes: INMessageAttributeOptions { get }
 @property (atomic, assign, readonly) INMessageAttributeOptions attributes;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to limit the scope of the search to messages with the specified attributes.
 

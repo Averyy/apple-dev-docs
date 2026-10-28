@@ -20,11 +20,11 @@ func isNotEqual(to object: Any?) -> Bool
 - (BOOL) isNotEqualTo:(id) object;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the receiver is not equal to `object`, otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 Currently, [`isNotEqual(to:)`](./isnotequal%28to%29.md) messages are never sent to any object from within Cocoa itself.
 

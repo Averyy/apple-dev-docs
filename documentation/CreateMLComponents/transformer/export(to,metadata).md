@@ -20,7 +20,7 @@ Exports this transformer as a CoreML model with userInfo.
 func export(to url: URL, metadata: ModelMetadata) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: By default this method exports .mlpackage files. You can export a .mlmodel file by specifying that as the URL file extension. But if you specify .mlmodel and the transformer doesn’t support it, this method will throw an error.
 

@@ -30,7 +30,7 @@ class NSPersistentCloudKitContainerOptions
 - [Creating a Core Data Model for CloudKit](./creating-a-core-data-model-for-cloudkit.md)
 - [Setting Up Core Data with CloudKit](./setting-up-core-data-with-cloudkit.md)
 
-#### Overview
+## Overview
 
 Use [`NSPersistentCloudKitContainerOptions`](./nspersistentcloudkitcontaineroptions.md) to customize the behavior of an [`NSPersistentCloudKitContainer`](./nspersistentcloudkitcontainer.md) or to create additional store descriptions that sync to other containers.
 

@@ -23,7 +23,7 @@ optional func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingRaw
 - (void) captureOutput:(AVCapturePhotoOutput *) output didFinishProcessingRawPhotoSampleBuffer:(CMSampleBufferRef) rawSampleBuffer previewPhotoSampleBuffer:(CMSampleBufferRef) previewPhotoSampleBuffer resolvedSettings:(AVCaptureResolvedPhotoSettings *) resolvedSettings bracketSettings:(AVCaptureBracketedStillImageSettings *) bracketSettings error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to receive the results of a RAW format capture. (If you request capture in both RAW and a processed format, the photo output calls both this method and the [`photoOutput(_:didFinishProcessingPhoto:previewPhoto:resolvedSettings:bracketSettings:error:)`](./photooutput%28_,didfinishprocessingphoto,previewphoto,resolvedsettings,bracketsettings,error%29.md) method.)
 

@@ -24,11 +24,11 @@ func AudioQueueAllocateBufferWithPacketDescriptions(_ inAQ: AudioQueueRef, _ inB
 extern OSStatus AudioQueueAllocateBufferWithPacketDescriptions(AudioQueueRef inAQ, UInt32 inBufferByteSize, UInt32 inNumberPacketDescriptions, AudioQueueBufferRef*outBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 Use this function when allocating an audio queue buffer for use with a VBR compressed data format.
 

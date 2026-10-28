@@ -25,7 +25,7 @@ case openGLES2
 SCNRenderingAPIOpenGLES2
 ```
 
-#### Discussion
+## Discussion
 
 This option is available on all iOS devices supporting SceneKit. If you request the Metal rendering API for an [`SCNView`](../scnview.md) object on a device that does not support Metal, SceneKit falls back to the OpenGL ES 2.0 API.
 

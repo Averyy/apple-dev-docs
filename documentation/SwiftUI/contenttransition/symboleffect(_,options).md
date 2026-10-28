@@ -21,7 +21,7 @@ Creates a content transition that applies the symbol Replace animation to symbol
 static func symbolEffect<T>(_ effect: T, options: SymbolEffectOptions = .default) -> ContentTransition where T : ContentTransitionSymbolEffect, T : SymbolEffect
 ```
 
-#### Return Value
+## Return Value
 
 A new content transition.
 

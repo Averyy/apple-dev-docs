@@ -16,11 +16,11 @@ OSStatus PMSetJobNameCFString (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../core_printing.md#1670007). The result code `kPMInvalidParameter` is returned if you pass `NULL` or an empty string in the `name` parameter.
 
-#### Overview
+## Overview
 
 You should call this function before you open the Print dialog.
 

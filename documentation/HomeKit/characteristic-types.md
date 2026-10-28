@@ -5,7 +5,7 @@
 
 The characteristic types supported by HomeKit-based accessories.
 
-#### Overview
+## Overview
 
 A characteristic’s [`characteristicType`](./hmcharacteristic/characteristictype.md) is a string constant—typically containing one of the values listed below—that tells you what the characteristic’s [`value`](./hmcharacteristic/value.md) represents and how to interpret it. Manufacturers can also create custom types, not listed here.
 

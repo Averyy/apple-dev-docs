@@ -14,11 +14,11 @@ Capabilities of a helper extension process.
 ## Declaration
 
 ```swift
-@objc
-(BEProcessCapability) class BEProcessCapability
+@objc(BEProcessCapability)
+class BEProcessCapability
 ```
 
-#### Overview
+## Overview
 
 See [`BEProcessCapability`](./beprocesscapability-7av05.md).
 

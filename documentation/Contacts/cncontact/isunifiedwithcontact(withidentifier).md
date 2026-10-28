@@ -24,7 +24,7 @@ func isUnifiedWithContact(withIdentifier contactIdentifier: String) -> Bool
 - (BOOL) isUnifiedWithContactWithIdentifier:(NSString *) contactIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the current contact is a unified contact and if `contactIdentifier` represents one of the contacts that contributes to the unified information; otherwise, [`false`](../../Swift/false.md).
 

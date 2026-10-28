@@ -13,7 +13,7 @@
 void mbuf_setnextpkt(mbuf_t mbuf, mbuf_t nextpkt);
 ```
 
-#### Discussion
+## Discussion
 
 Sets the next packet attached to this mbuf.
 

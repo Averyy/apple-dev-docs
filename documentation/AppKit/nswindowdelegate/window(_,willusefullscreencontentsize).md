@@ -20,7 +20,7 @@ optional func window(_ window: NSWindow, willUseFullScreenContentSize proposedSi
 - (NSSize) window:(NSWindow *) window willUseFullScreenContentSize:(NSSize) proposedSize;
 ```
 
-#### Return Value
+## Return Value
 
 The window size to use when displaying content size.
 

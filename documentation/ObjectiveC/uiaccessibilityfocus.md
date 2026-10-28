@@ -5,7 +5,7 @@
 
 An informal protocol that provides a way to determine whether an assistive app, such as VoiceOver, has focus on an accessible element.
 
-#### Overview
+## Overview
 
 VoiceOver and other assistive technologies place a virtual focus on elements, which allows users to inspect an element without activating it. If you know the current location of the virtual focus, you can optimize the user experience for assistive technology users. For example, if your application expects people to tap once to select an object and then double-tap to activate it, VoiceOver users must make an extra tap to focus VoiceOver on the object before tapping to select it. To improve the VoiceOver user’s experience, you can move selection to an element at the same time VoiceOver focuses on the element. In this way, the user can activate the element without having to tap again to select the element.
 

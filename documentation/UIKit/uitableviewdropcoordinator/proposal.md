@@ -23,7 +23,7 @@ var proposal: UITableViewDropProposal { get }
 @property (nonatomic, readonly) UITableViewDropProposal * proposal;
 ```
 
-#### Discussion
+## Discussion
 
 If your drag delegate implements the [`tableView(_:dropSessionDidUpdate:withDestinationIndexPath:)`](../uitableviewdropdelegate/tableview%28_,dropsessiondidupdate,withdestinationindexpath%29.md) method, this object contains the information that you provided when making your drop proposal for the given location.
 

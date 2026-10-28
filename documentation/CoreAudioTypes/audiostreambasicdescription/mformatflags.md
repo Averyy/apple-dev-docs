@@ -25,7 +25,7 @@ var mFormatFlags: AudioFormatFlags
 AudioFormatFlags mFormatFlags;
 ```
 
-#### Discussion
+## Discussion
 
 Set to `0` to indicate no format flags.
 

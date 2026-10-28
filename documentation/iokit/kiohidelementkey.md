@@ -16,7 +16,7 @@ Keys that represents an element property.
 #define kIOHIDElementKey
 ```
 
-#### Discussion
+## Discussion
 
 Property for a HID Device or element dictionary. Elements can be heirarchical, so they can contain other elements.
 

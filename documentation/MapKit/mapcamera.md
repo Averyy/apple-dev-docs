@@ -21,7 +21,7 @@ Defines a virtual viewpoint above the map surface.
 struct MapCamera
 ```
 
-#### Overview
+## Overview
 
 `MapCamera` allows you to specify the viewpoint of a [`Map`](./map.md), as well as affect how MapKit presents the map to the user.
 

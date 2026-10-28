@@ -19,7 +19,7 @@ Generates an array of labeled image dictionaries by splitting the data source in
 func stratifiedSplit(proportions: [Double], seed: Int = timestampSeed()) throws -> [[String : [URL]]]
 ```
 
-#### Return Value
+## Return Value
 
 An array of dictionaries of labeled images.
 

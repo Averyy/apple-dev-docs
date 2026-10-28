@@ -20,7 +20,7 @@ nonisolated
 struct AutomaticTableStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`automatic`](./tablestyle/automatic.md) to construct this style.
 

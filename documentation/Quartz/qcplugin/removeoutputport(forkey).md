@@ -21,7 +21,7 @@ func removeOutputPort(forKey key: String!)
 - (void) removeOutputPortForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 This method throws an exception if called from within the [`execute(_:atTime:withArguments:)`](./execute%28_,attime,witharguments%29.md) method, if there is not an output port with that key, or if the port is created from a property.
 

@@ -25,7 +25,7 @@ class MXUnitSignalBars
 @interface MXUnitSignalBars : NSDimension
 ```
 
-#### Overview
+## Overview
 
 Cellular connectivity measures the relative strength of the device’s signal reception in decibels, which usually falls in a range of 0 to -110.
 

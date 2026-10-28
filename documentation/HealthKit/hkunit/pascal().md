@@ -24,7 +24,7 @@ class func pascal() -> Self
 + (instancetype) pascalUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring pressure in pascals.
 

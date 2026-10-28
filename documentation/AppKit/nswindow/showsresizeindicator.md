@@ -21,7 +21,7 @@ var showsResizeIndicator: Bool { get set }
 @property BOOL showsResizeIndicator;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the window’s resize indicator is visible; otherwise, [`false`](../../Swift/false.md). This property does not affect whether the window is resizable.
 

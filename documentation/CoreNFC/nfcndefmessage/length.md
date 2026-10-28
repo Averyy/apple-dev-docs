@@ -21,7 +21,7 @@ var length: Int { get }
 @property (nonatomic, readonly) NSUInteger length;
 ```
 
-#### Discussion
+## Discussion
 
 The maximum length of an NDEF message is 128 KB.
 

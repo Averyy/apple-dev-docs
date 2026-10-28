@@ -25,7 +25,7 @@ func property_copyAttributeList(_ property: objc_property_t, _ outCount: UnsafeM
 extern objc_property_attribute_t *property_copyAttributeList(objc_property_t property, unsigned int *outCount);
 ```
 
-#### Return Value
+## Return Value
 
 An array of property attributes. You must free the array with `free()`.
 

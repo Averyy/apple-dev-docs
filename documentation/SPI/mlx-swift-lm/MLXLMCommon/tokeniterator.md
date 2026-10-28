@@ -21,7 +21,7 @@ struct TokenIterator
 
 - [Observing token log probabilities](./generation-observability.md)
 
-#### Overview
+## Overview
 
 This is typically used via a call to [`generate(input:cache:state:parameters:context:components:wiredMemoryTicket:tools:)`](./generate%28input,cache,state,parameters,context,components,wiredmemoryticket,tools%29.md) returning `AsyncStream<Generation>`.
 

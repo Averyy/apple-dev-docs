@@ -20,7 +20,7 @@ Renormalization data.
 let renormalization: USDPlayer.DeformationData.RenormalizationData?
 ```
 
-#### Discussion
+## Discussion
 
 Present whenever skinning or blend shape data is present.
 

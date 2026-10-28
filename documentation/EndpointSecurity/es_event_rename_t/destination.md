@@ -20,7 +20,7 @@ var destination: es_event_rename_t.__Unnamed_union_destination
 union { ... } destination;
 ```
 
-#### Discussion
+## Discussion
 
 To parse this `union`, check the [`destination_type`](./destination_type.md) to determine whether the rename event’s destination file already exists:
 

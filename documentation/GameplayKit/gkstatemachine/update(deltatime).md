@@ -24,7 +24,7 @@ func update(deltaTime sec: TimeInterval)
 - (void) updateWithDeltaTime:(NSTimeInterval) sec;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method, the state machine sends the [`update(deltaTime:)`](../gkstate/update%28deltatime%29.md) message to its [`currentState`](./currentstate.md) object. In that method, your custom [`GKState`](../gkstate.md) subclasses can do work that needs to be done periodically while the machine is in a specific state. Typically, you call this method once for every frame your game processes or renders—such as in the [`update(_:)`](../../SpriteKit/skscene/update%28_%29.md) method of a SpriteKit scene or the [`renderer(_:updateAtTime:)`](../../SceneKit/scnscenerendererdelegate/renderer%28_,updateattime%29.md) method of a SceneKit render delegate. If your game uses Entity-Component design (see [Entities and Components](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/EntityComponent.html#//apple_ref/doc/uid/TP40015172-CH6) in [GameplayKit Programming Guide](https://developer.apple.com/library/archive/documentation/General/Conceptual/GameplayKit_Guide/index.html#//apple_ref/doc/uid/TP40015172)), you can call this method from the [`update(deltaTime:)`](../gkcomponent/update%28deltatime%29.md) method of a [`GKComponent`](../gkcomponent.md) subclass.
 

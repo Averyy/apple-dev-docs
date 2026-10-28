@@ -16,7 +16,7 @@ The safe area regions that this view controller adds to its view.
 @preconcurrency var safeAreaRegions: SafeAreaRegions { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `SafeAreaRegions.all`.
 

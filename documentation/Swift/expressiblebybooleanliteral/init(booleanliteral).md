@@ -22,7 +22,7 @@ Creates an instance initialized to the given Boolean value.
 init(booleanLiteral value: Self.BooleanLiteralType)
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this initializer directly. Instead, initialize a variable or constant using one of the Boolean literals `true` and `false`. For example:
 

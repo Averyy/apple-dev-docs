@@ -23,7 +23,7 @@ var relatedUUID: String? { get }
 @property (nonatomic, readonly, nullable) NSString * relatedUUID;
 ```
 
-#### Discussion
+## Discussion
 
 This value is the same for both the image and video of a LivePhoto.
 

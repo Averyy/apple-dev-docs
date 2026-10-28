@@ -24,11 +24,11 @@ class func linearLightBlendMode() -> any CIFilter & CICompositeOperation
 + (CIFilter<CICompositeOperation> *) linearLightBlendModeFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The blended image as a [`CIImage`](../ciimage.md).
 
-#### Discussion
+## Discussion
 
 The linear-light blend mode combines the linear-dodge and linear-burn blend modes (rescaled so that neutral colors become middle gray). If the input image’s values are lighter than middle gray, the filter uses dodge; for darker values, the filter uses burn.
 

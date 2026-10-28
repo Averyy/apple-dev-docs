@@ -25,7 +25,7 @@ var BNNSLossFunctionYolo: BNNSLossFunction { get }
 BNNSLossFunctionYolo
 ```
 
-#### Discussion
+## Discussion
 
 [`BNNSLossFunctionYolo`](./bnnslossfunctionyolo.md) performs YOLO loss computation between prediction and ground truth labels.
 

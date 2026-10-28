@@ -21,11 +21,11 @@ Returns the reporter instance unique to the given domain name.
 + (instancetype) reporterForDomain:(NSString *) domain;
 ```
 
-#### Return Value
+## Return Value
 
 The reporter instance for the specified domain.
 
-#### Discussion
+## Discussion
 
 This method is the only way to obtain an `SRStateReporter`. Calling it multiple times with the same domain string always returns the same object.
 

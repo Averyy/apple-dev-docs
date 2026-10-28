@@ -20,7 +20,7 @@ A component that stores accessibility information for an entity.
 struct AccessibilityComponent
 ```
 
-#### Overview
+## Overview
 
 Add an `AccessibilityComponent` to entities to provide accessibility information to the system, such as the entity’s name which VoiceOver says aloud when it describes the entity.
 

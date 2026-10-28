@@ -20,7 +20,7 @@ var sortComposer: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * sortComposer;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, iTunes uses [`composer`](./composer.md) when sorting media items by composer.
 

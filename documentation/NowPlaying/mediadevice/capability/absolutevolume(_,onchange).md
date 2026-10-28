@@ -22,7 +22,7 @@ static func absoluteVolume(_ currentLevel: Float, onChange: @escaping @Sendable 
 
 - [Publishing remote media sessions](../../publishing-remote-media-sessions.md)
 
-#### Discussion
+## Discussion
 
 Use this when the device supports setting an absolute volume level in the range `0.0` to `1.0`, where `0` represents silence and `1.0` represents the maximum volume level.
 

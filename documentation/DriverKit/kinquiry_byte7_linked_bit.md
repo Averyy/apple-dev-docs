@@ -16,7 +16,7 @@
 kINQUIRY_Byte7_LINKED_Bit
 ```
 
-#### Discussion
+## Discussion
 
 LINKED bit definition.
 

@@ -17,7 +17,7 @@ Options that determine the underlying data format of a scan export.
 struct USDExportOptions
 ```
 
-#### Overview
+## Overview
 
 The `exportOptions` parameter of the captured room ([`CapturedRoom`](../capturedroom.md)) and captured structure ([`CapturedStructure`](../capturedstructure.md)) functions `export(to:metadataURL:modelProvider:exportOptions:)` are of this type.
 

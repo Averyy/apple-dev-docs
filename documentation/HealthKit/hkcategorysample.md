@@ -30,13 +30,13 @@ class HKCategorySample
 - [Recording and querying menopausal state](./recording-and-querying-menopausal-state.md)
 - [Saving data to HealthKit](./saving-data-to-healthkit.md)
 
-#### Overview
+## Overview
 
 You can use category samples to record data associated with a [`HKCategoryType`](./hkcategorytype.md). The value for the sample must come from the appropriate category value enumeration. Each category type uses its own enumeration. Individual samples represent a value and time period. Samples with different values may have overlapping time intervals.
 
 The [`HKCategorySample`](./hkcategorysample.md) class is a concrete subclass of the [`HKSample`](./hksample.md) class. Category samples are immutable: You set the sample’s properties when you create it, and they can’t change.
 
-##### Extend Category Samples
+### Extend Category Samples
 
 Like many HealthKit classes, don’t subclass the `HKCategorySample` class. You may extend the `HKCategorySample` class by adding metadata with custom keys as appropriate for your app.
 

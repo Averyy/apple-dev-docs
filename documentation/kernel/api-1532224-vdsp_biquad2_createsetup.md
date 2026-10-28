@@ -15,7 +15,7 @@ Builds a data structure that contains precalculated single-precision data for st
 vDSP_biquad_Setup vDSP_biquad2_CreateSetup(const double *, const size_t, const IIRChannel);
 ```
 
-#### Discussion
+## Discussion
 
 If the channel parameter is [`vDSP_IIRMonoLeft`](./api-1645949-anonymous/vdsp_iirmonoleft.md) or [`vDSP_IIRMonoRight`](./api-1645949-anonymous/vdsp_iirmonoright.md), the number of elements in the coefficients array must be five times the number of sections. The filter applies pass-through coefficients to the other channel.
 

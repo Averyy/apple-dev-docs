@@ -15,7 +15,7 @@ Mark a buffer as a delayed write: mark it dirty without actually scheduling I/O.
 void buf_markdelayed(buf_t bp);
 ```
 
-#### Discussion
+## Discussion
 
 Data will be flushed to disk at some later time, not with brelse(). A sync()/fsync() or pressure necessitating reuse of the buffer will cause it to be written back to disk.
 

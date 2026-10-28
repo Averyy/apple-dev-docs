@@ -19,7 +19,7 @@ var length: CGFloat { get set }
 @property CGFloat length;
 ```
 
-#### Discussion
+## Discussion
 
 If the status bar is horizontal, the value of this property is the width of the status item. In addition to a fixed length, this value can be NSSquareStatusItemLength or NSVariableStatusItemLength (see `NSStatusBar` Constants) to allow the status bar to allocate (and adjust) the space according to either the status bar’s thickness or the status item’s true size.
 

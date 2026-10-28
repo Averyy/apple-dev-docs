@@ -22,7 +22,7 @@ Returns a date instance that represents the current date and time, at the moment
 static var now: Date { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is equivalent to calling [`init()`](./init%28%29.md). If you assign this value to a variable or property, the assigned value doesn’t automatically update as time passes.
 

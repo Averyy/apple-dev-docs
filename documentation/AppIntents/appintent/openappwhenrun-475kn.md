@@ -20,7 +20,7 @@ A Boolean property that tells the system to consider the app intent even if its 
 static var openAppWhenRun: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is deprecated. Use [`supportedModes`](./supportedmodes.md) instead. Setting this property to `true` generates an error if the app intent runs in an app extension. For backward compatability, you can set this property to `true` for app intents you run inside your app. For example:
 

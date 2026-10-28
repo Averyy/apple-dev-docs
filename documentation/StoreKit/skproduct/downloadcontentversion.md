@@ -27,7 +27,7 @@ var downloadContentVersion: String { get }
 @property (nonatomic, readonly) NSString * downloadContentVersion;
 ```
 
-#### Discussion
+## Discussion
 
 The version string is formatted as a series of integers separated by periods.
 

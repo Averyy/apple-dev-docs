@@ -14,7 +14,7 @@ Integrate SwiftUI elements and watch-specific features, and build widgets for th
 - watchOS 10.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 watchOS 10 introduces a redesigned user interface to surface timely information, communicate focused content at a glance, and make navigation consistent and predictable. This sample code project demonstrates how to update your app and widgets for watchOS 10.
 

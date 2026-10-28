@@ -20,7 +20,7 @@ Assigns multiple intersection function tables to a range of entries in the tile 
 func setTileIntersectionFunctionTables(_ functionTables: [(any MTLIntersectionFunctionTable)?], bufferRange: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 By default, the intersection function table at each index is `nil`.
 

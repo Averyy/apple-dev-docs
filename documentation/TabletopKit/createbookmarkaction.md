@@ -15,7 +15,7 @@ An action that takes a snapshot of the game.
 struct CreateBookmarkAction
 ```
 
-#### Overview
+## Overview
 
 To create a bookmark action, use the [`createBookmark(_:context:)`](./tabletopaction/createbookmark%28_,context%29.md) or the [`createBookmark(id:context:)`](./tabletopaction/createbookmark%28id,context%29.md) static method.
 

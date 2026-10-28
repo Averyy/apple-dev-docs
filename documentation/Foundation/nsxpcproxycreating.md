@@ -25,7 +25,7 @@ protocol NSXPCProxyCreating
 @protocol NSXPCProxyCreating
 ```
 
-#### Overview
+## Overview
 
 [`NSXPCConnection`](./nsxpcconnection.md) implements this protocol. All objects returned from the methods in this protocol also implement the protocol. This allows creation of new proxies from other proxies.
 

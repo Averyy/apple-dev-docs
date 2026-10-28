@@ -17,7 +17,7 @@ An object that contains information about files.
 interface File
 ```
 
-#### Overview
+## Overview
 
 This class is provided for the Node.js platform in order to support file upload.
 

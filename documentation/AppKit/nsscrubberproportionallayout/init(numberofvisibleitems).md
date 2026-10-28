@@ -19,7 +19,7 @@ init(numberOfVisibleItems: Int)
 - (instancetype) initWithNumberOfVisibleItems:(NSInteger) numberOfVisibleItems;
 ```
 
-#### Return Value
+## Return Value
 
 A properly initialized proportional layout object.
 

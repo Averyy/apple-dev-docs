@@ -5,7 +5,7 @@
 
 Create JSON Web Tokens (JWTs) signed with your private key to authorize API requests.
 
-#### Overview
+## Overview
 
 JSON Web Token (JWT) is an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)) that defines a way to securely transmit information. The the Enterprise Program API requires JWTs to authorize each API request. You create the token, and sign it with the private key you downloaded from the Enterprise Program API.
 
@@ -17,7 +17,7 @@ To generate a signed JWT:
 
 Include the signed JWT in the authorization header of each the Enterprise Program API request.
 
-##### Create the JWT Header
+### Create the JWT Header
 
 To create a JWT to communicate with the the Enterprise Program API, use the following fields and values in the header:
 
@@ -49,7 +49,7 @@ Here’s an example of a JWT header:
 }
 ```
 
-##### Create the JWT Payload for Enterprise Program API Keys
+### Create the JWT Payload for Enterprise Program API Keys
 
 The JWT payload contains information specific to the the Enterprise Program APIs, such as issuer ID and expiration time. Use the following fields and values in the JWT payload:
 
@@ -83,7 +83,7 @@ Here’s an example of a JWT payload:
 
 ```
 
-##### Determine the Scope of the Token
+### Determine the Scope of the Token
 
 To reduce potential attack surface and improve security of your tokens, you can explicitly specify the scope of a token. The scope tells the Enterprise Program API which requests it needs to accept for the token. If you unintentionally share a token with an unauthorized party, a limited scope reduces the requests that a potential attacker can make using the token.
 
@@ -115,13 +115,13 @@ With this payload, the Enterprise Program API only allows you to fetch a list of
 
 You can use a JWT without a `scope` for any request as long as the role of the API key allows it.
 
-##### Determine the Appropriate Token Lifetime
+### Determine the Appropriate Token Lifetime
 
 For every request, the Enterprise Program API calculates the valid time for a token, referred as the token’s `lifetime`, by subtracting the `iat` claim from the `exp` claim. For increased security, carefully consider the lifetime of tokens you create and choose a lifetime that doesn’t allow usage of the token for longer than necessary. For example, an appropriate lifetime for a token you use for a one-off request is two minutes. In contrast, consider using a token with a lifetime of 20 minutes for a long-running process that makes many requests with the same token. Additionally, consider generating a new token periodically throughout the process, instead of issuing tokens with longer lifetimes.
 
 For most requests, the Enterprise Program API rejects a token with a lifetime greater than 20 minutes.
 
-##### Sign the JWT
+### Sign the JWT
 
 Use the private key associated with the key ID you specified in the header to sign the token.
 
@@ -129,7 +129,7 @@ Regardless of the programming language you’re using with the the Enterprise Pr
 
 > 💡 **Tip**:  You don’t need to generate a new token for every API request. To get better performance from the the Enterprise Program API, reuse the same signed token for multiple requests until it expires.
 
-##### Include the JWT in the Request’s Authorization Header
+### Include the JWT in the Request’s Authorization Header
 
 Once you have a complete and signed token, provide the token in the request’s authorization header as a bearer token.
 

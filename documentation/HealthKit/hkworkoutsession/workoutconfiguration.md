@@ -25,7 +25,7 @@ var workoutConfiguration: HKWorkoutConfiguration { get }
 @property (copy, readonly) HKWorkoutConfiguration * workoutConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Returns a copy of the configuration object passed to [`init(configuration:)`](./init%28configuration%29.md) when instantiating the workout session. Changes made to the returned value have no affect on the workout session.
 

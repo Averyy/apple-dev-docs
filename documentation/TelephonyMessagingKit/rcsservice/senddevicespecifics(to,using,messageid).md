@@ -15,7 +15,7 @@ Sends device specifics in response to a suggested action to send device specific
 final func sendDeviceSpecifics(to destination: RCSHandle.URI, using cellularServiceID: CellularServiceID, messageID: RCSMessageID) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Call this method after the person using the app selects a [`RCSService.Business.Suggestion`](./business/suggestion.md) of type [`RCSService.Business.Suggestion.action(_:)`](./business/suggestion/action%28_%29.md), whose action type is [`RCSService.Business.SuggestedAction.Action.sendDeviceSpecifics`](./business/suggestedaction/action-swift.enum/senddevicespecifics.md) .
 

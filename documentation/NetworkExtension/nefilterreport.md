@@ -23,7 +23,7 @@ class NEFilterReport
 @interface NEFilterReport : NSObject
 ```
 
-#### Overview
+## Overview
 
 The system issues a report by calling your control provider’s [`handle(_:)`](./nefilterprovider/handle%28_%29.md) method with a report instance when the data provider issues a verdict whose [`shouldReport`](./nefilterverdict/shouldreport.md) property is set to [`true`](../Swift/true.md).
 

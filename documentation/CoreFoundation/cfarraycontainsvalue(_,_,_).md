@@ -25,7 +25,7 @@ func CFArrayContainsValue(_ theArray: CFArray!, _ range: CFRange, _ value: Unsaf
 extern Boolean CFArrayContainsValue(CFArrayRef theArray, CFRange range, const void *value);
 ```
 
-#### Return Value
+## Return Value
 
 `true`, if `value` is in the specified range of `theArray`, otherwise `false`.
 

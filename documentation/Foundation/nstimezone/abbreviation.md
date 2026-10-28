@@ -25,7 +25,7 @@ var abbreviation: String? { get }
 @property (copy, readonly, nullable) NSString * abbreviation;
 ```
 
-#### Discussion
+## Discussion
 
 Invokes [`abbreviation(for:)`](./abbreviation%28for%29.md) with the current date as the argument.
 

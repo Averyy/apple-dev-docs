@@ -31,7 +31,7 @@ var year: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * year;
 ```
 
-#### Discussion
+## Discussion
 
 Maps displays this value when it presents information about the electric vehicle.
 

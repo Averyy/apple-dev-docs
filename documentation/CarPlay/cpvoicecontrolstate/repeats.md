@@ -21,7 +21,7 @@ var repeats: Bool { get }
 @property (nonatomic, readonly) BOOL repeats;
 ```
 
-#### Discussion
+## Discussion
 
 The animation repeats when this property is [`true`](../../Swift/true.md); otherwise, animation occurs only once.
 

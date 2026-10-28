@@ -19,7 +19,7 @@ A value that represents the azimuth angle of a hovering Apple Pencil.
 let azimuth: Angle
 ```
 
-#### Discussion
+## Discussion
 
 This value is `.zero` when the Apple Pencil points along the view’s positive x-axis.
 

@@ -21,7 +21,7 @@ func videoFieldOfView(for aspectRatio: AVCaptureDevice.AspectRatio, geometricDis
 - (float) videoFieldOfViewForAspectRatio:(AVCaptureAspectRatio) aspectRatio geometricDistortionCorrected:(BOOL) geometricDistortionCorrected;
 ```
 
-#### Discussion
+## Discussion
 
 A float indicating the field of view for the corresponding [`AVCaptureDevice.AspectRatio`](../aspectratio.md). Set `AVCaptureDevice/geometricDistortionCorrected` to `true` to receive the field of view corrected for geometric distortion. If this device format does not support dynamic aspect ratio, this function returns `0`.
 

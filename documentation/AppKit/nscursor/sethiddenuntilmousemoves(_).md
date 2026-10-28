@@ -22,7 +22,7 @@ class func setHiddenUntilMouseMoves(_ flag: Bool)
 + (void) setHiddenUntilMouseMoves:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 Do not try to counter this method by invoking [`unhide()`](./unhide%28%29.md). The results are undefined.
 

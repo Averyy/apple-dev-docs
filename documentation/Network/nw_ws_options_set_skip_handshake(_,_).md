@@ -25,7 +25,7 @@ func nw_ws_options_set_skip_handshake(_ options: nw_protocol_options_t, _ skip_h
 void nw_ws_options_set_skip_handshake(nw_protocol_options_t options, bool skip_handshake);
 ```
 
-#### Discussion
+## Discussion
 
 This option should not be set when communicating with a generic WebSocket server or client. This option allows a custom handshake (or no handshake) to be implemented below the WebSocket layer when both client and server are coordinated.
 

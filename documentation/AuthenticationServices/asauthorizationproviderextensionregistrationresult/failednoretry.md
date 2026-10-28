@@ -23,7 +23,7 @@ ASAuthorizationProviderExtensionRegistrationResultFailedNoRetry
 
 - [Registering devices and users](../registering-devices-and-users.md)
 
-#### Discussion
+## Discussion
 
 The system attemps to reregister when the mobile device management (MDM) profile changes, or the extension updates.
 

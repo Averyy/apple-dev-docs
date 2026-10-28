@@ -16,11 +16,11 @@ Closes an IOI2CConnectRef.
 IOReturn IOI2CInterfaceClose(IOI2CConnectRef connect, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Discussion
+## Discussion
 
 Frees the resources associated with an IOI2CConnectRef.
 

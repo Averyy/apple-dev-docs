@@ -21,7 +21,7 @@ protocol QCPlugInInputImageSource
 @protocol QCPlugInInputImageSource
 ```
 
-#### Overview
+## Overview
 
 Input images are opaque source objects that comply to this protocol. To create an image input port as an Objective-C 2.0 property, declare it as follows:
 

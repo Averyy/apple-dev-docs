@@ -20,7 +20,7 @@ func imageSize(_ imageSize: UnsafeMutablePointer<CGSize>, fromParameter paramete
 - (BOOL) imageSize:(CGSize *) imageSize fromParameter:(UInt32) parameterID atTime:(CMTime) time error:(NSError * *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Removes the effects of pixel aspect ratio, fields, proxy resolution scaling, or user scaling, and provides the dimensions of the image well image in image space.
 

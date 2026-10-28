@@ -24,7 +24,7 @@ func endUpdates()
 - (void) endUpdates;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method upon completion of the batch updates. If you call this method in the middle of an update, all updates stop and you’ll need to apply remaining updates at a later time.
 

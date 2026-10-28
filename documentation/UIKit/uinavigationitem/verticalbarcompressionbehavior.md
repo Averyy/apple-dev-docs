@@ -23,7 +23,7 @@ var verticalBarCompressionBehavior: UIVerticalBarCompressionBehavior { get set }
 @property (nonatomic, assign, readwrite) UIVerticalBarCompressionBehavior verticalBarCompressionBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `UIVerticalBarCompressionBehaviorAutomatic`.
 

@@ -25,7 +25,7 @@ protocol EntityPropertyQuery : EntityQuery
 
 - [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
-#### Overview
+## Overview
 
 `EntityPropertyQuery` provides an [`EntityQuery`](./entityquery.md) with the ability to query instances according to its traits as they are modeled through query properties and their corresponding comparators.
 

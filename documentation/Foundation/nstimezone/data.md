@@ -25,7 +25,7 @@ var data: Data { get }
 @property (copy, readonly) NSData * data;
 ```
 
-#### Discussion
+## Discussion
 
 Treat this data as an opaque object.
 

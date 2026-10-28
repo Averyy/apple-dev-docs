@@ -9,7 +9,7 @@ Download App Store information and app-install activity about your app.
 **Availability**:
 - App Data Transfer 1.0+
 
-#### Overview
+## Overview
 
 Use the App Data Transfer web API to request and download App Store information and app-install activity data about your app. The data available relates to a user’s use of Apple’s App Store and includes information such as previous transactions and downloads. If you have multiple apps, integrate each app with the API separately to enable users to transfer their data to you.
 
@@ -32,14 +32,14 @@ To get permission for your App ID or Services ID to request these scopes, follow
 >
 > [Learn more](https://support.apple.com/guide/feedback-assistant/welcome/mac) about how to use Feedback Assistant.
 
-##### Set required HTTP headers
+### Set required HTTP headers
 
 When you make requests for your app’s App Store information or app-install activity, using any of the endpoints listed below, set the following HTTP headers:
 
 - **`Authorization`**: Set the value to `Bearer <ACCESS_TOKEN>` to assert that your app is authorized to fetch data with the `appstore-info-account-data-for-EU-users`and `appstore-info-account-data-for-UK-users` or `app-install-activity-account-data-for-EU-users` or `app-install-activity-account-data-for-UK-users`  scopes.
 - **`X-Apple-Transaction-Id`**: Set the value to a UUID that uniquely identifies the request. If you need to contact Apple to get support, quote the UUID of the request for which you need help.
 
-##### Submit a request
+### Submit a request
 
 Make an HTTP `POST` request to the [`Submit request`](./submit-request.md) endpoint, requesting the `app-store` data type. To make a one-time request, set the `mode` key to `ONE_TIME`. To make recurring requests, use one of the following values:
 
@@ -56,13 +56,13 @@ If you submit a `WEEKLY_180` recurring request and don’t resubmit the recurrin
 
 > **Note**: If you already have a recurring request pending and make another recurring request, the system returns an error, along with the ID of the existing request.
 
-##### Find the request status
+### Find the request status
 
 The data corresponding to the request you submitted isn’t available immediately. After the status-check delay expires, make a `GET` request to [`Get one-time request status`](./get-one-time-request-status.md) or [`Get recurring request status`](./get-recurring-request-status.md), including the request identifier in the path.
 
 If the job status is `completed` or `completed_with_error`, the data associated with the request is ready to download.
 
-##### Transfer data
+### Transfer data
 
 Get the download URLs for a completed request by making a `GET` request to [`Get one-time request download URLs`](./get-one-time-request-download-urls.md) or [`Get recurring request download URLs`](./get-recurring-request-download-urls.md), including the request identifier in the path.
 
@@ -72,7 +72,7 @@ Download URLs are available for 3 days after the download request completes. The
 
 For information on the content and terms used in the files you download, see [Data and Privacy](https://privacy.apple.com/file-guides/transfer/appdata).
 
-##### Resubmit recurring requests
+### Resubmit recurring requests
 
 Enqueue the next instance of a recurring request by making a `POST` request to the [`Resubmit request`](./resubmit-request.md) endpoint, passing the parent request identifier and the request identifier of the most recent instance.
 

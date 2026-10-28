@@ -21,7 +21,7 @@ var adType: String? { get set }
 @property (nonatomic, strong, nullable) NSString * adType;
 ```
 
-#### Discussion
+## Discussion
 
 This property is not used.
 

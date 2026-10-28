@@ -20,7 +20,7 @@ var commandName: String { get }
 @property (copy, readonly) NSString * commandName;
 ```
 
-#### Return Value
+## Return Value
 
 The command name as it appears in the application’s scriptability information; may be different from what is displayed to the scripter.
 

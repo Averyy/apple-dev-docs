@@ -21,7 +21,7 @@ Generates a categorical summary of the column slice’s elements.
 func summary() -> AnyCategoricalSummary
 ```
 
-#### Discussion
+## Discussion
 
 The method tries to cast the the untyped column slice to a typed column slice before summarizing. Generating a summary for a typed column is faster and more efficient than for an untyped column.
 

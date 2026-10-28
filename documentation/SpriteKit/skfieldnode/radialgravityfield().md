@@ -25,11 +25,11 @@ class func radialGravityField() -> SKFieldNode
 + (SKFieldNode *) radialGravityField;
 ```
 
-#### Return Value
+## Return Value
 
 A new radial gravity field node.
 
-#### Discussion
+## Discussion
 
 The strength of the field measures the acceleration of the field in meters per second squared. A positive number indicates that the body is accelerating toward the field node. The calculated force is proportional to the physics body’s mass (meaning that the acceleration applied to all affected physics bodies is a constant). The [`falloff`](./falloff.md) property of a radial gravity field node is set by default to `2`.
 

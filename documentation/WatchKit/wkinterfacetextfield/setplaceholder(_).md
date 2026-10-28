@@ -19,7 +19,7 @@ func setPlaceholder(_ placeholder: String?)
 - (void) setPlaceholder:(NSString *) placeholder;
 ```
 
-#### Discussion
+## Discussion
 
 Use placeholders to describe the text field’s expected content to the user. An empty text field displays the placeholder, and any entered text hides the placeholder. The system automatically formats the placeholder, making it obvious that it’s not a valid text entry.
 

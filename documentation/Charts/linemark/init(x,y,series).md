@@ -22,7 +22,7 @@ nonisolated
 init<X, Y, S>(x: PlottableValue<X>, y: PlottableValue<Y>, series: PlottableValue<S>) where X : Plottable, Y : Plottable, S : Plottable
 ```
 
-##### Discussion
+### Discussion
 
 Use this initializer to create a multi-line chart from a single data source.
 

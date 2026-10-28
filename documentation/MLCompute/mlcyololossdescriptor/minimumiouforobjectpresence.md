@@ -23,7 +23,7 @@ var minimumIOUForObjectPresence: Float { get set }
 @property (nonatomic, readwrite) float minimumIOUForObjectPresence;
 ```
 
-#### Discussion
+## Discussion
 
 If the prediction IOU with groundTruth is higher than this value, consider this is a confident object presence.
 

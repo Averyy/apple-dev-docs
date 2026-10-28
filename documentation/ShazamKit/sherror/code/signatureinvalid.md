@@ -25,7 +25,7 @@ case signatureInvalid
 SHErrorCodeSignatureInvalid
 ```
 
-#### Discussion
+## Discussion
 
 The most common cause of this error is silent audio input.
 

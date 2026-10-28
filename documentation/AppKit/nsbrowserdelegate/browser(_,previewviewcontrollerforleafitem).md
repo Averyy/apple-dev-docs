@@ -20,11 +20,11 @@ optional func browser(_ browser: NSBrowser, previewViewControllerForLeafItem ite
 - (NSViewController *) browser:(NSBrowser *) browser previewViewControllerForLeafItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 A view controller that provides a preview column, or `nil` to suppress the preview column.
 
-#### Discussion
+## Discussion
 
 The returned controller’s represented object is set to the specified leaf item. This method is called only if the delegate implements the item data source methods.
 

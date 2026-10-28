@@ -25,7 +25,7 @@ var fetchedObjects: [ResultType]? { get }
 @property (nonatomic, readonly, nullable) NSArray<id<NSFetchRequestResult>> * fetchedObjects;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property is `nil` if [`performFetch()`](./performfetch%28%29.md) hasn’t been called.
 

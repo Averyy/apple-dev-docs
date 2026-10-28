@@ -21,7 +21,7 @@ An animation that makes the layers of a symbol-based image appear separately or 
 + (instancetype) effect;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the appear effect options.
 

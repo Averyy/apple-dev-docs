@@ -19,7 +19,7 @@ class IOBluetoothL2CAPChannel
 @interface IOBluetoothL2CAPChannel : IOBluetoothObject
 ```
 
-#### Overview
+## Overview
 
 A client won’t create IOBluetoothL2CAPChannel objects directly. Instead, the IOBluetoothDevice’s L2CAP channel open API is responsible for opening a new L2CAP channel and returning an IOBluetoothL2CAPChannel instance representing that newly opened channel. Additionally, the IOBluetooth notification system will send notifications when new L2CAP channels are open (if requested).
 

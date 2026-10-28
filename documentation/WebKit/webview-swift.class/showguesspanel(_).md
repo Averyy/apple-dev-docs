@@ -19,7 +19,7 @@ func showGuessPanel(_ sender: Any?)
 - (void) showGuessPanel:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This action method opens the Spelling panel, allowing the user to make a correction during spell checking.
 

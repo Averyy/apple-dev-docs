@@ -15,7 +15,7 @@ A dictionary that contains the attributes Video Toolbox uses to create a pixel b
 @property (nonatomic, copy, readwrite) NSDictionary<NSString *,id> * pixelBufferAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 The processor can update this dictionary before it requests a new pixel buffer.
 

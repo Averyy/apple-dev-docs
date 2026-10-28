@@ -5,13 +5,13 @@
 
 Add a table formatted in HTML to your article.
 
-#### Overview
+## Overview
 
 To add an HTML table to your article, you add a component with the `role` property set to `htmltable`. In the required `html` property, add the coded HTML table consisting of your data and the HTML tags that indicate rows. Make sure that all of your HTML code is enclosed in `<table> </table>` tags.
 
 To change the appearance of an HTML table, you can use any of the HTML tags Apple News Format supports; for more information, see [Using HTML with Apple News Format](./using-html-with-apple-news-format.md). You can also apply c`omponentStyles` from Apple News Format; for more information, see [`TableStyle`](../AppleNewsFormat/tablestyle.md).
 
-##### Review the HTML Table Tags
+### Review the HTML Table Tags
 
 Apple News Format supports these tags for HTML tables:
 

@@ -19,7 +19,7 @@ func boundingBox() -> NSRect
 - (NSRect) boundingBox;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle that represents the bounding box of the onscreen rendering of the node.
 

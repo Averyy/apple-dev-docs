@@ -16,7 +16,7 @@ var absoluteTimeNanoSeconds: UInt64 { get }
 @property (readonly) uint64_t absoluteTimeNanoSeconds;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the number of nanoseconds since an arbitrary reference time. It doesn’t update while the system is sleeping.
 

@@ -23,7 +23,7 @@ struct Level
 typedef CGFloat UIWindowLevel;
 ```
 
-#### Overview
+## Overview
 
 The stacking of levels takes precedence over the stacking of windows within each level. That is, even the bottom window in a level obscures the top window of the next level down. Levels are listed in order from lowest to highest.
 

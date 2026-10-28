@@ -24,7 +24,7 @@ var orientation: AVAudioSession.Orientation? { get }
 @property (readonly, nullable) AVAudioSessionOrientation orientation;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns `nil` if the data source’s orientation isn’t known.
 

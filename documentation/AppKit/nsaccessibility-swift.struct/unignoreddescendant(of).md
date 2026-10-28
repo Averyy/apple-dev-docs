@@ -19,7 +19,7 @@ static func unignoredDescendant(of element: Any) -> Any?
 extern idNSAccessibilityUnignoredDescendant(id element);
 ```
 
-#### Discussion
+## Discussion
 
 Tests whether `element` is an ignored object, returning either `element`, if it is not ignored, or the first unignored descendant of `element`. Use this function only if you know there is a linear, one-to-one, hierarchy below `element`. Otherwise, if `element` has either no unignored children or multiple unignored children, this function fails and returns `nil`.
 

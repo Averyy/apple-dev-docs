@@ -24,7 +24,7 @@ init?(frameWidth: Int, frameHeight: Int, spatialScaleFactor: Int)
 - (instancetype) initWithFrameWidth:(NSInteger) frameWidth frameHeight:(NSInteger) frameHeight spatialScaleFactor:(NSInteger) spatialScaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 When you configure the processor for spatial scaling, the low-latency frame interpolation processor only supports 2x spatial upscaling and a single frame of temporal interpolation at a 0.5 interpolation phase.
 

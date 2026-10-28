@@ -17,7 +17,7 @@ Evaluate the block with a scoped MLX error handler (async).
 func withErrorHandler<R>(_ handler: @escaping @Sendable (String) -> Void, _ body: () async throws -> R) async rethrows -> R
 ```
 
-#### Discussion
+## Discussion
 
 For example this will print a message instead of exiting the process:
 
@@ -37,7 +37,7 @@ withErrorHandler(printHandler) {
 
 Note: using the [`MLXArray`](./mlxarray.md) produced after an error will likely result in additional errors. See [`withError(_:)`](./witherror%28_%29-4tvdu.md) for examples that convert the errors into Swift `throws`.
 
-##### See Also
+### See Also
 
 - [`withError(_:)`](./witherror%28_%29-4tvdu.md)
 - [`withError(_:)`](./witherror%28_%29-7f0hv.md)

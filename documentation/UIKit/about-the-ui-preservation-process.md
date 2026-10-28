@@ -5,7 +5,7 @@
 
 Learn how to customize the UIKit state preservation process.
 
-#### Overview
+## Overview
 
 The following diagram shows the sequence of calls that happens during the interface preservation process. After asking your app delegate if you want your app state to be preserved, UIKit encodes the objects currently in your app’s view controller hierarchy. Only view controllers with a valid [`restorationIdentifier`](./uiviewcontroller/restorationidentifier.md) are preserved.
 
@@ -15,7 +15,7 @@ The preservation process walks your view controller hierarchy and recursively en
 
 UIKit view controllers automatically encode their child view controllers, as appropriate. If you define a custom container view controller, your view controller’s [`encodeRestorableState(with:)`](./uistaterestoring/encoderestorablestate%28with%29.md) method must similarly write any child view controllers to the provided archive.
 
-##### Exclude view controllers from preservation
+### Exclude view controllers from preservation
 
 There are two ways to exclude a view controller (and its views) from the state restoration process:
 
@@ -24,7 +24,7 @@ There are two ways to exclude a view controller (and its views) from the state r
 
 Excluding a view controller prevents that view controller from being saved in the archive. It also excludes all of the view controller’s children from being preserved.
 
-##### Encode any object in your app
+### Encode any object in your app
 
 State restoration isn’t limited to your app’s views and view controllers. Any object that adopts the [`UIStateRestoring`](./uistaterestoring.md) protocol can also be included in the restoration archive. For example, you might adopt this protocol in an object that stores global configuration data for your app. To add an object like this to the archive:
 

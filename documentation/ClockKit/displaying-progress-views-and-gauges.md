@@ -5,13 +5,13 @@
 
 Add rich visual data to your SwiftUI complications with progress views and gauges.
 
-#### Overview
+## Overview
 
 Progress views provide a visual depiction of progress on a task by showing the task’s percent complete. You can configure progress views as either a circle or a line, and include an optional label and tint color.
 
 Gauges, on the other hand, depict a value within a given range of values. You configure gauges much as you do progress views, but gauges have even more options, including minimum and maximum value labels and color gradients.
 
-##### Create a Progress View
+### Create a Progress View
 
 To instantiate a [`ProgressView`](../SwiftUI/progressview.md), call the initializer and pass a value.
 
@@ -22,7 +22,7 @@ ProgressView(value: 0.2)
 
 By default, the progress view takes a value between 0.0 and 1.0, and visually represents the percentage of the task’s completion.
 
-##### Customize a Progress View
+### Customize a Progress View
 
 Customize a progress view by selecting a style, adding labels, and setting a tint color. [`ProgressView`](../SwiftUI/progressview.md) supports linear and circular styles. By default, the SwiftUI selects the style based on the view’s context. However, you can add a `progressViewStyle(_:)` modifier to specify the style.
 
@@ -74,11 +74,11 @@ ProgressView(value: 0.4) {
 
 ![A preview of the tinted, circular progress view with a green gauge.](https://developer.apple.com/tutorials/images/com.apple.clockkit/media-3686514@2x.png)
 
-##### Create a Gauge
+### Create a Gauge
 
 In many ways, the [`Gauge`](../SwiftUI/gauge.md) is similar to the [`ProgressView`](../SwiftUI/progressview.md). It supports both a linear and circular style, and you can add a label and tinting. The main difference is that the gauge represents a value within a specified range—not the percent complete. It also has additional options, like labels for the range’s minimum, maximum values, and a label for the current value. Finally, it supports color gradients.
 
-##### Customize a Gauge
+### Customize a Gauge
 
 The following example creates temperature gauge, and then customizes it by adding value labels for the minimum, maximum, and current values. It also assigns a color gradient to the gauge.
 

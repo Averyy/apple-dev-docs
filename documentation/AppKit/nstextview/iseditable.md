@@ -19,7 +19,7 @@ var isEditable: Bool { get set }
 @property (getter=isEditable) BOOL editable;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) to allow the user to edit text and attributes of all text views sharing the receiver’s layout manager, [`false`](../../Swift/false.md) otherwise.
 

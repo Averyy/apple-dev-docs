@@ -24,7 +24,7 @@ class MPSCNNDilatedPoolingMax
 @interface MPSCNNDilatedPoolingMax : MPSCNNPooling
 ```
 
-#### Overview
+## Overview
 
 For each pixel, returns the maximum value of pixels in the `kernelWidth * kernelHeight` filter region by step size `dilationFactorX` `*` `dilationFactorY`.
 

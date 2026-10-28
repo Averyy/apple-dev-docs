@@ -23,7 +23,7 @@ enum UILetterformAwareSizingRule
 enum UILetterformAwareSizingRule : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 For more information on typographic bounds sizing behavior, see [`UILetterformAwareAdjusting`](./uiletterformawareadjusting.md).
 

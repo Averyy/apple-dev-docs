@@ -25,7 +25,7 @@ class NSFileSecurity
 @interface NSFileSecurity : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NSFileSecurity`](./nsfilesecurity.md) contains no methods of its own. Instead, it is transparently bridged to [`CFFileSecurity`](../CoreFoundation/cffilesecurity.md).
 

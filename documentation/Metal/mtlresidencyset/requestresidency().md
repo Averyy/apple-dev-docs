@@ -29,7 +29,7 @@ func requestResidency()
 
 - [Simplifying GPU resource management with residency sets](../simplifying-gpu-resource-management-with-residency-sets.md)
 
-#### Discussion
+## Discussion
 
 Call the method anytime after calling a residency set’s [`commit()`](./commit%28%29.md) method, ideally well before calling the [`commit()`](../mtlcommandbuffer/commit%28%29.md) method of any [`MTLCommandBuffer`](../mtlcommandbuffer.md) that uses it.
 

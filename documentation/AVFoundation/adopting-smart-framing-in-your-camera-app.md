@@ -5,13 +5,13 @@
 
 Capture the optimal shot by providing automatic framing recommendations.
 
-#### Overview
+## Overview
 
 Smart framing detects when people enter or leave the scene, and frames the shot to compose a great photo. Available in iPhone 17, iPhone Air, and iPhone 17 Pro, the front Ultra Wide camera enables dynamic aspect ratio changes without interrupting the camera’s preview. You can add smart framing to your app by adopting [`AVCaptureSmartFramingMonitor`](./avcapturesmartframingmonitor.md).
 
 The [`AVCaptureSmartFramingMonitor`](./avcapturesmartframingmonitor.md) class monitors a supported camera’s field of view and provides aspect ratio and zoom factor suggestions for better photographic composition. When optimal framing opportunities occur, the monitor provides recommendations through its [`recommendedFraming`](./avcapturesmartframingmonitor/recommendedframing.md) property.
 
-#### Find a smart framing-capable device
+## Find a smart framing-capable device
 
 Start by verifying whether the person’s device supports smart framing:
 
@@ -51,7 +51,7 @@ func findAndConfigureSmartFramingDevice() -> AVCaptureDevice? {
 
 The above code uses an [`AVCaptureDevice.DiscoverySession`](./avcapturedevice/discoverysession.md) object to find the front Ultra Wide camera, and validates that it provides an [`AVCaptureDevice.Format`](./avcapturedevice/format.md) that supports the feature. If the device configuration supports smart framing, it returns the capture device. Otherwise, it sets the [`activeFormat`](./avcapturedevice/activeformat.md) and then returns the configured device.
 
-#### Configure the smart framing monitor
+## Configure the smart framing monitor
 
 After finding a supported capture device, configure its monitoring behavior by accessing the device’s associated [`AVCaptureSmartFramingMonitor`](./avcapturesmartframingmonitor.md) object:
 
@@ -66,7 +66,7 @@ func configureSmartFraming() async {
 
 By default, the smart framing monitor isn’t configured to provide recommendations. Attempting to start it in this state results in an error. To monitor the scene, specify the framings the monitor should consider by setting its [`enabledFramings`](./avcapturesmartframingmonitor/enabledframings.md) property value. The example above enables all the monitor’s [`supportedFramings`](./avcapturesmartframingmonitor/supportedframings.md), but you can enable a subset of these values, depending on the needs of your app. For example, it could limit the enabled framings to [`ratio3x4`](./avcapturedevice/aspectratio/ratio3x4.md) and [`ratio4x3`](./avcapturedevice/aspectratio/ratio4x3.md) for photo capture, or [`ratio9x16`](./avcapturedevice/aspectratio/ratio9x16.md) and [`ratio16x9`](./avcapturedevice/aspectratio/ratio16x9.md) for video. Set the enabled framings before you start your capture session so the monitor is prepared to make recommendations as soon as the session runs.
 
-#### Monitor framing recommendations
+## Monitor framing recommendations
 
 With the smart framing monitor configured, it’s ready to start generating framing recommendations. To respond to new recommendations, key-value observe the monitor’s [`recommendedFraming`](./avcapturesmartframingmonitor/recommendedframing.md) property like shown below:
 
@@ -112,7 +112,7 @@ Calling this method causes the monitor to stop generating recommendations until 
 
 > **Note**: You can start and stop the smart framing monitor independently of the capture session, which lets you toggle the feature state without interrupting the video stream.
 
-#### Apply framing recommendations
+## Apply framing recommendations
 
 When the monitor generates new framing recommendations, apply them by setting the device’s dynamic aspect ratio and video zoom factor as follows:
 

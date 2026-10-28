@@ -23,7 +23,7 @@ optional func matchmakerViewController(_ viewController: GKMatchmakerViewControl
 - (void) matchmakerViewController:(GKMatchmakerViewController *) viewController didReceiveAcceptFromHostedPlayer:(NSString *) playerID;
 ```
 
-#### Discussion
+## Discussion
 
 After a player accepts an invitation, that player’s device should connect to your server. Once the connection is established, your game should call the view controller’s [`setHostedPlayer(_:connected:)`](../gkmatchmakerviewcontroller/sethostedplayer%28_,connected%29.md) method to update the player’s connection status.
 

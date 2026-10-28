@@ -21,7 +21,7 @@ Returns a point that results from unapplying the specified projective transform.
 static SPPoint3D SPPoint3DUnapplyProjectiveTransform(SPPoint3D point, SPProjectiveTransform3D transform);
 ```
 
-#### Return Value
+## Return Value
 
 The point that results from unapplying the specified projective transform.
 

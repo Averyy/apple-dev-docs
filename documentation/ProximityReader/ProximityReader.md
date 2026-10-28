@@ -12,7 +12,7 @@ Read contactless physical and digital wallet cards using your iPhone.
 - [Adding support for Tap to Share to your app](./adding-support-for-tap-to-share-to-your-app.md)
 - [Adopting the Verifier API in your iPhone app](./adopting-the-verifier-api-in-your-iphone-app.md)
 
-#### Overview
+## Overview
 
 The ProximityReader framework supports *Tap to Pay on iPhone*, which allows a person’s iPhone to act as a point-of-sale device without additional hardware. ProximityReader also supports the reading of loyalty cards from the Wallet app. Use this framework to initiate the payment process from your app.
 

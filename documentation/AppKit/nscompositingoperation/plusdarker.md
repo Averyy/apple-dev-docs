@@ -19,7 +19,7 @@ case plusDarker
 NSCompositingOperationPlusDarker
 ```
 
-#### Discussion
+## Discussion
 
 The source image is applied using the formula `R = MAX(0, (1 - D) + (1 - S))`.
 

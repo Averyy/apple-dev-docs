@@ -14,7 +14,7 @@
 kIOAudioControlCallGetValue = 1
 ```
 
-#### Discussion
+## Discussion
 
 Used to get the value of an IOAudioControl.
 

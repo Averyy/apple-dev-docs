@@ -22,7 +22,7 @@ A type that specifies the appearance and interaction of Apple In-App Purchase pr
 @preconcurrency protocol ProductViewStyle
 ```
 
-#### Overview
+## Overview
 
 To configure the Apple In-App Purchase product style for a view hierarchy, use the [`productViewStyle(_:)`](../SwiftUI/view/productviewstyle%28_%29.md) modifier.
 

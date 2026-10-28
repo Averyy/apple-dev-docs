@@ -15,7 +15,7 @@ Checks whether the current session is authorized for particular authorization ty
 final func queryAuthorization(for authorizationTypes: [ARKitSession.AuthorizationType]) async -> [ARKitSession.AuthorizationType : ARKitSession.AuthorizationStatus]
 ```
 
-#### Return Value
+## Return Value
 
 A list of the authorization statuses for each authorization type you passed in `authorizationTypes`.
 

@@ -17,11 +17,11 @@ Returns an `FSRef` to the single most likely target of an alias record.
 OSErr FSResolveAlias(const FSRef *fromFile, AliasHandle alias, FSRef *target, Boolean *wasChanged);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. When it finds the specified volume and parent directory but fails to find the target file or directory in that location, `FSResolveAlias` returns `fnfErr`. Note that the `FSRef` in the `alias` parameter is not valid in this case.
 
-#### Discussion
+## Discussion
 
 The `FSResolveAlias` function performs a fast search for the target of the alias. If the resolution is successful, `FSResolveAlias` returns (in the `target` parameter) the `FSRef` for the target file system object, updates the alias record if necessary, and reports (through the `wasChanged` parameter) whether the record was updated. If the target is on an unmounted AppleShare volume, `FSResolveAlias` automatically mounts the volume. If the target is on an unmounted ejectable volume, `FSResolveAlias` asks the user to insert the volume. The `FSResolveAlias` function exits after it finds one acceptable target.
 

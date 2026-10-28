@@ -24,7 +24,7 @@ let kCIInputWidthKey: String
 extern NSString * const kCIInputWidthKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for a scalar value ([`NSNumber`](../Foundation/nsnumber.md)) that specifies the width of the effect.
 

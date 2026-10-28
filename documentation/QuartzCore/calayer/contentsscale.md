@@ -24,7 +24,7 @@ var contentsScale: CGFloat { get set }
 @property CGFloat contentsScale;
 ```
 
-#### Discussion
+## Discussion
 
 This value defines the mapping between the logical coordinate space of the layer (measured in points) and the physical coordinate space (measured in pixels). Higher scale factors indicate that each point in the layer is represented by more than one pixel at render time. For example, if the scale factor is `2.0` and the layer’s bounds are 50 x 50 points, the size of the bitmap used to present the layer’s content is 100 x 100 pixels.
 

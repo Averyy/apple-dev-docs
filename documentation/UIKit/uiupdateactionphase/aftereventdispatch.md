@@ -23,7 +23,7 @@ class var afterEventDispatch: UIUpdateActionPhase { get }
 @property (class, nonatomic, readonly) UIUpdateActionPhase * afterEventDispatch;
 ```
 
-#### Discussion
+## Discussion
 
 This phase runs after [`UIEvent`](../uievent.md) and [`UIGestureRecognizer`](../uigesturerecognizer.md) handlers run for standard events. After that point, the app doesn’t receive new user input events. However, if you request low-latency event dispatch using [`wantsLowLatencyEventDispatch`](../uiupdatelink/wantslowlatencyeventdispatch.md), more events might dispatch in the low-latency event dispatch phase.
 

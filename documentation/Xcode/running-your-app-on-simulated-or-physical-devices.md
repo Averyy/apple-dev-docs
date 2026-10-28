@@ -5,11 +5,11 @@
 
 Launch your app on a simulated iOS, iPadOS, tvOS, visionOS, or watchOS device, or on a physical device paired with your Mac.
 
-#### Overview
+## Overview
 
 To test your app, build and run it on a simulated or physical device. Use simulated devices to debug your app on a variety of hardware that you might not have access to. Be aware that simulators run within Device Hub on your Mac and don’t replicate the performance or features of a physical device. To verify that your app runs exactly as intended, run it on one or more physical devices.
 
-#### Select a build scheme and run destination
+## Select a build scheme and run destination
 
 Before you build and run your app, select a build scheme that includes the target for your app in Xcode. A *scheme* is a collection of project details and settings that tell Xcode how to build and run a product from your project. In the toolbar, choose a scheme from the pop-up menu on the left of the run-destination.
 
@@ -23,7 +23,7 @@ To learn more about schemes, see [Customizing the build schemes for a project](.
 
 > ❗ **Important**: When running apps in a simulator in Device Hub, some hardware-specific features might not be available. Frameworks that provide access to device-specific features also provide API to tell you when those features are available. Call those APIs and handle the case where a feature isn’t available. To test the feature itself, run your code on a physical device.
 
-#### Run the app
+## Run the app
 
 To build and run the app on the selected simulated or physical device, click the Run button in the toolbar or choose Product > Run. View the status of the build in the activity area of the toolbar.
 
@@ -43,7 +43,7 @@ If Xcode stops building the app because it encounters an error, click the indica
 
 When you’re done testing your app in Device Hub, click the Stop button in the Xcode toolbar.
 
-#### Set up code signing for physical devices
+## Set up code signing for physical devices
 
 If you choose a physical device as the run destination, perform a few additional steps to create a development provisioning profile in Xcode. First, sign in with your Apple Developer Program or personal Apple Account in Xcode > Settings > Apple Accounts.
 

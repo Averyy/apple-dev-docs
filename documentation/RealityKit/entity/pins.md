@@ -21,13 +21,13 @@ The entity’s geometric pins.
 @preconcurrency var pins: EntityGeometricPins { get }
 ```
 
-#### Discussion
+## Discussion
 
 You can look up, add, and remove a [`GeometricPin`](../geometricpin.md) for the owning entity through this [`EntityGeometricPins`](../entitygeometricpins.md) instance. The entity’s [`GeometricPinsComponent`](../geometricpinscomponent.md) stores any added geometric pins.
 
 Other [`Component`](../component.md) types on an [`Entity`](../entity.md) may also provide [`GeometricPin`](../geometricpin.md) instances, such as for skeletal pose joints. There is no distinction between these two when [`GeometricPin`](../geometricpin.md) instances are accessed.
 
-##### Geometric pins for skeletal pose joints
+### Geometric pins for skeletal pose joints
 
 Pins for skeletal pose joints are not predefined, they need to be set in entity’s GeometricPinsComponent before you can access them. When associating a pin with a skeletal pose joint, you need to pass in the correct joint names either in full pose joint name or with its leaf joint name:
 

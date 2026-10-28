@@ -24,11 +24,11 @@ func `is`(compatibleWith unit: HKUnit) -> Bool
 - (BOOL) isCompatibleWithUnit:(HKUnit *) unit;
 ```
 
-#### Return Value
+## Return Value
 
 YES if the quantity type is compatible with the given unit; otherwise, NO.
 
-#### Discussion
+## Discussion
 
 When creating a HealthKit quantity sample, the sample’s type and quantity object must use compatible units. For more information, see [`HKQuantity`](../hkquantity.md).
 

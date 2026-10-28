@@ -26,11 +26,11 @@ convenience init(peer myPeerID: MCPeerID)
 - (instancetype) initWithPeer:(MCPeerID *) myPeerID;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized session object, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to calling [`init(peer:securityIdentity:encryptionPreference:)`](./init%28peer,securityidentity,encryptionpreference%29.md) with a `nil` identity and an encryption setting that varies based on which version of the SDK was used to link the application. On apps linked on or after iOS 9, the encryption is set to [`MCEncryptionPreference.required`](../mcencryptionpreference/required.md). On apps linked prior to iOS 9, the encryption is set to [`MCEncryptionPreference.optional`](../mcencryptionpreference/optional.md).
 

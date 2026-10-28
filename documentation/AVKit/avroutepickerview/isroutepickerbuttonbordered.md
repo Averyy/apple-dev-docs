@@ -19,7 +19,7 @@ var isRoutePickerButtonBordered: Bool { get set }
 @property (nonatomic, getter=isRoutePickerButtonBordered) BOOL routePickerButtonBordered;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

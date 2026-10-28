@@ -25,7 +25,7 @@ var confidence: Double { get }
 @property (assign, readonly) double confidence;
 ```
 
-#### Discussion
+## Discussion
 
 The model assigns confidence values in the range `[0, 1.0]`, where `1.0` represents 100% confidence.
 

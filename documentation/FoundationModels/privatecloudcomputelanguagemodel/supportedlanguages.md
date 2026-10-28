@@ -17,11 +17,11 @@ Languages that the model supports.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) final var supportedLanguages: Set<Locale.Language> { get async throws }
+nonisolated(nonsending)
+final var supportedLanguages: Set<Locale.Language> { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 To check if a given locale is considered supported by the model, use [`supportsLocale(_:)`](./supportslocale%28_%29.md), which also takes language fallbacks into consideration.
 

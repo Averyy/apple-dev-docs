@@ -24,7 +24,7 @@ var videoGravity: AVLayerVideoGravity { get set }
 @property (copy) AVLayerVideoGravity videoGravity;
 ```
 
-#### Discussion
+## Discussion
 
 [`AVLayerVideoGravity`](../avlayervideogravity.md) defines the supported video gravities. The default value is [`resizeAspect`](../avlayervideogravity/resizeaspect.md).
 

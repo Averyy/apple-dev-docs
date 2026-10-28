@@ -23,11 +23,11 @@ Returns a new asynchronous sequence containing the elements of this asynchronous
 func interspersed(every: Int = 1, with separator: @escaping @Sendable () async throws -> Self.Element) -> AsyncThrowingInterspersedSequence<Self>
 ```
 
-#### Return Value
+## Return Value
 
 The interspersed asynchronous sequence of elements.
 
-#### Discussion
+## Discussion
 
 Any value of this asynchronous sequence’s element type can be used as the separator.
 

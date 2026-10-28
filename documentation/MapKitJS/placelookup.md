@@ -15,7 +15,7 @@ An object that provides the ability to look up place information for a specified
 class PlaceLookup extends Service
 ```
 
-#### Overview
+## Overview
 
 For more information on places, see [Identifying unique locations with Place IDs](../MapKit/identifying-unique-locations-with-place-ids.md).
 

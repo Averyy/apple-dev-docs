@@ -25,7 +25,7 @@ func removeTokenConfiguration(for instanceID: TKToken.InstanceID)
 - (void) removeTokenConfigurationForTokenInstanceID:(TKTokenInstanceID) instanceID;
 ```
 
-#### Discussion
+## Discussion
 
 The method does nothing if the token configuration you specify doesn’t exist.
 

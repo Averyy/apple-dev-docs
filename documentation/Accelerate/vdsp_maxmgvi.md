@@ -21,7 +21,7 @@ Calculates the maximum magnitude and corresponding index in a single-precision v
 extern void vDSP_maxmgvi(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Length *__I, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the maximum magnitude and its corresponding index of the first `N` elements of the input vector and writes the results to the output scalar parameters, `C` and `I`, respectively.
 

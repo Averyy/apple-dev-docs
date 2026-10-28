@@ -21,7 +21,7 @@ A Boolean value indicating whether this character is considered lowercase.
 var isLowercase: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Lowercase characters change when converted to uppercase, but not when converted to lowercase. The following characters are all lowercase:
 

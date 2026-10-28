@@ -15,11 +15,11 @@ Compare and swap operation, performed atomically with respect to all devices tha
 Boolean OSCompareAndSwapPtr(void *oldValue, void *newValue, void *volatile *address);
 ```
 
-#### Return Value
+## Return Value
 
 true if newValue was written to the address.
 
-#### Discussion
+## Discussion
 
 The OSCompareAndSwapPtr function compares the pointer-sized value at the specified address with oldVal. The value of newValue is written to the address only if oldValue and the value at the address are equal. OSCompareAndSwapPtr returns true if newValue is written to the address; otherwise, it returns false.
 

@@ -5,7 +5,7 @@
 
 Reduce the time-window for ad attributions and inspect postbacks using a proxy during testing.
 
-#### Overview
+## Overview
 
 You can reduce the time window for receiving ad attribution postbacks by installing an SKAdNetwork testing profile on your test device.
 
@@ -17,11 +17,11 @@ With this profile, the installed app has five minutes to update the conversion v
 
 This testing profile expires two weeks after you install it on the device. To continue testing, download the latest profile and reinstall it.
 
-##### Log in with an Apple Account to test ad attributions
+### Log in with an Apple Account to test ad attributions
 
 To test ad attributions, you must log in to the device with a production Apple Account. SKAdNetwork doesn’t support Sandbox Apple Accounts.
 
-##### Inspect postbacks using an HTTP proxy
+### Inspect postbacks using an HTTP proxy
 
 On devices running iOS 14.7 and later with this profile installed, the system can send SKAdNetwork postbacks through an HTTP proxy that you configure. By using an HTTP proxy, you can monitor the HTTP traffic between your device and the network, including SKAdNetwork postbacks.
 

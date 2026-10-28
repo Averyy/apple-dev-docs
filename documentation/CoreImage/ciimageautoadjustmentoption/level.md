@@ -24,7 +24,7 @@ static let level: CIImageAutoAdjustmentOption
 extern CIImageAutoAdjustmentOption const kCIImageAutoAdjustLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is a `CFBoolean` value. If `true`, Core Image analyzes the image to determine whether it would benefit from rotation—for example, a landscape photo in which the horizon is not horizontal—and returns a filter to perform that rotation. Supply `false` to indicate not to return a rotation filter. If you don’t specify this option, Core Image assumes its value is `false`.
 

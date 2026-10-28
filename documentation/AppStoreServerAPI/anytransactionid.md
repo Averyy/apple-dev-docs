@@ -19,7 +19,7 @@ string anyTransactionId
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 This type represents any [`originalTransactionId`](./originaltransactionid.md), [`transactionId`](./transactionid.md) or [`appTransactionId`](./apptransactionid.md) that belongs to the customer of your app.
 

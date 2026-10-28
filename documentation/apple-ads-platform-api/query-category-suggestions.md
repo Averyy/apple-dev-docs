@@ -9,13 +9,13 @@ Query category suggestions for apps or brands using either a discovery or search
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Each result is a [`CategorySuggestion`](./categorysuggestion.md) object with a `category` name (for example, `"Productivity"`) and a `popularity` score. Sort by `popularity DESC` and use `pagination` to page through results.
 
 See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Description |
 | --- | --- | --- | --- |
@@ -24,13 +24,13 @@ See [`FilterOperator`](./recommendationfilteroperator.md) for the full set of su
 | `promotedObjectType` | string (enum) | `EQUALS` | Required for the `SUGGESTION` route. Can be either `APPSTORE_APP` or `BUSINESS_BRAND`. |
 | `category` | string | `IN`, `LIKE` | Required for the `SEARCH` route. `IN` fetches popularity for specific named categories. `LIKE` performs a partial string match search across all available categories. |
 
-#### Payload Examples
+## Payload Examples
 
 This example discovers category suggestions for a brand using the SUGGESTION route. The response is a list of category names with their relative popularity scores. The same route also works for apps, using `APPSTORE_APP` as the `promotedObjectType`.
 
 **Suggestion for Brand**:
 
-##### Request
+### Request
 
 ```http
 POST /v1/suggestions/categories/query
@@ -62,7 +62,7 @@ POST /v1/suggestions/categories/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -90,7 +90,7 @@ POST /v1/suggestions/categories/query
 
 **Search by Category Name**:
 
-##### Request
+### Request
 
 ```http
 POST /v1/suggestions/categories/query
@@ -116,7 +116,7 @@ POST /v1/suggestions/categories/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -142,7 +142,7 @@ POST /v1/suggestions/categories/query
 
 This example uses `LIKE` to perform a partial string match search across all available categories, rather than looking up specific named categories with `IN`.
 
-##### Request
+### Request
 
 ```http
 POST /v1/suggestions/categories/query
@@ -167,7 +167,7 @@ POST /v1/suggestions/categories/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

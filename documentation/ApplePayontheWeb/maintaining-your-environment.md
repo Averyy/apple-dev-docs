@@ -5,7 +5,7 @@
 
 Prevent interruptions in your Apple Pay service by keeping certificates and domain verification current.
 
-#### Overview
+## Overview
 
 To prevent interruptions in your website’s Apple Pay service, your domain verification and the certificates that you set up in [Configuring Your Environment](https://developer.apple.com/library/archive/ApplePay_Guide/Configuration.html#//apple_ref/doc/uid/TP40014764-CH2) must remain valid. While your merchant ID never expires, certificates and domain verification do expire, as follows:
 
@@ -15,7 +15,7 @@ To prevent interruptions in your website’s Apple Pay service, your domain veri
 
 > ❗ **Important**:  As the expiration dates for certificates and domain verifications approach, Apple sends an email reminder to the Admin and the Account Holder of the Apple Developer Account. Ensure that your organization continually monitors the inbox of these users so you can renew certificates before they expire to avoid interruptions to your Apple Pay service.
 
-##### View Expiration Dates and Update Certificates
+### View Expiration Dates and Update Certificates
 
 You can view expiration dates and update your certificates on the Apple developer website by following these steps:
 
@@ -26,7 +26,7 @@ You can view expiration dates and update your certificates on the Apple develope
 
 Certificate expiration dates appear for each of the certificates listed on the page. You can also update the certificates on this page.
 
-##### Renew Your Domain Verification
+### Renew Your Domain Verification
 
 Domain verification expires on the same date that your domain’s SSL certificate expires. Apple servers check if SSL certificates have been renewed at 30, 15, and 7 days before expiration.
 

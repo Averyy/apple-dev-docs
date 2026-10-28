@@ -19,7 +19,7 @@ func activateFileViewerSelecting(_ fileURLs: [URL])
 - (void) activateFileViewerSelectingURLs:(NSArray<NSURL *> *) fileURLs;
 ```
 
-#### Discussion
+## Discussion
 
 You can safely call this method from any thread of your app.
 

@@ -28,7 +28,7 @@ HKErrorHealthDataRestricted
 
 - [Authorizing access to health data](../../authorizing-access-to-health-data.md)
 
-#### Discussion
+## Discussion
 
 Because an MDM profile can disable HealthKit on a managed device, always verify that the current device supports HealthKit by calling [`isHealthDataAvailable()`](../../hkhealthstore/ishealthdataavailable%28%29.md) before calling any other HealthKit methods. If HealthKit is restricted (for example, in an enterprise environment), the methods fail with an [`errorHealthDataRestricted`](../errorhealthdatarestricted.md) error.
 

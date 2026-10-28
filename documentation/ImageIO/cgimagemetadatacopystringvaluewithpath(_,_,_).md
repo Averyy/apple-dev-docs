@@ -25,11 +25,11 @@ func CGImageMetadataCopyStringValueWithPath(_ metadata: CGImageMetadata, _ paren
 extern CFStringRefCGImageMetadataCopyStringValueWithPath(CGImageMetadataRef metadata, CGImageMetadataTagRef parent, CFStringRef path);
 ```
 
-#### Return Value
+## Return Value
 
 The string value for the specified tag, or `NULL` if the tag wasn’t found or doesn’t contain a string value.
 
-#### Discussion
+## Discussion
 
 The XMP type of the property at the specified path must be [`CGImageMetadataType.string`](./cgimagemetadatatype/string.md) or [`CGImageMetadataType.alternateText`](./cgimagemetadatatype/alternatetext.md). If the property contains alternate text, this function returns the element with the `x-default` language qualifier.
 

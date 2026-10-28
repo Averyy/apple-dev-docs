@@ -25,7 +25,7 @@ case none
 kCMPackingType_None
 ```
 
-#### Discussion
+## Discussion
 
 This is the default frame-packing type for 3D video.
 

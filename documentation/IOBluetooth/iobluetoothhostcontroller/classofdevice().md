@@ -19,7 +19,7 @@ func classOfDevice() -> BluetoothClassOfDevice
 - (BluetoothClassOfDevice) classOfDevice;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the current class of device value.
 

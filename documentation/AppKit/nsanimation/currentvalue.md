@@ -19,7 +19,7 @@ var currentValue: Float { get }
 @property (readonly) float currentValue;
 ```
 
-#### Discussion
+## Discussion
 
 An `NSAnimation` object gets the current value from delegate’s [`animation(_:valueForProgress:)`](../nsanimationdelegate/animation%28_,valueforprogress%29.md) method. If that method is not implemented, the animation computes the current value from the current progress by factoring in the animation curve. An animation object does not access this property directly. Instances of `NSAnimation` subclasses or other objects can invoke this method on a periodic basis to get the current value.
 

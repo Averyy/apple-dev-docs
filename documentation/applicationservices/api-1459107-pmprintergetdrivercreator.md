@@ -19,11 +19,11 @@ func PMPrinterGetDriverCreator(_ printer: PMPrinter, _ creator: UnsafeMutablePoi
 OSStatus PMPrinterGetDriverCreator(PMPrinter printer, OSType *creator);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function is not recommended because it makes your application driver-dependent. 
 

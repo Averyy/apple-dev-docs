@@ -23,7 +23,7 @@ var `protocol`: NEVPNProtocol? { get set }
 @property (strong, nullable) NEVPNProtocol * protocol;
 ```
 
-#### Discussion
+## Discussion
 
 For `NEVPNManager` objects, this property can be set to either an [`NEVPNProtocolIPSec`](../nevpnprotocolipsec.md) object or an [`NEVPNProtocolIKEv2`](../nevpnprotocolikev2.md) object.
 

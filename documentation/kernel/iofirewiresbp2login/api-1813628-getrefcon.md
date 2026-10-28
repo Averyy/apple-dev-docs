@@ -12,11 +12,11 @@ virtual void * getRefCon(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns the previously stored user defined value.
 
-#### Overview
+## Overview
 
 Returns the user defined value previously stored in the login with setRefCon.
 

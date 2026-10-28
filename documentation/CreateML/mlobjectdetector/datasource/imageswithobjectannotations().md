@@ -17,7 +17,7 @@ Generates a data table where each row represents an image, and its columns are t
 func imagesWithObjectAnnotations() throws -> MLDataTable
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLDataTable`](../../mldatatable.md) containing the contents of the data source.
 

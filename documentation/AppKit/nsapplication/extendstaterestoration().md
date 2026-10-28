@@ -19,7 +19,7 @@ func extendStateRestoration()
 - (void) extendStateRestoration;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows an app to extend the state restoration period beyond the usual. For example, the app crashes before state restoration is complete, then it may offer to discard restorable state on the next launch.
 

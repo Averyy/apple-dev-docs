@@ -25,7 +25,7 @@ class NSOrderedCollectionDifference
 @interface NSOrderedCollectionDifference : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use [`differenceFromArray:`](./nsarray/differencefromarray_.md) or one of its variations to get an instance of [`NSOrderedCollectionDifference`](./nsorderedcollectiondifference.md), which represents the difference between two ordered collections.
 

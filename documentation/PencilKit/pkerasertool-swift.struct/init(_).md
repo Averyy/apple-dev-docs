@@ -19,7 +19,7 @@ Creates an eraser tool object that removes objects wholly or partially from a ca
 init(_ eraserType: PKEraserTool.EraserType)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a new eraser tool object.
 

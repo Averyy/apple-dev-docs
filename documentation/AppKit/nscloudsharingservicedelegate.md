@@ -19,7 +19,7 @@ protocol NSCloudSharingServiceDelegate : NSSharingServiceDelegate
 @protocol NSCloudSharingServiceDelegate <NSSharingServiceDelegate>
 ```
 
-#### Overview
+## Overview
 
 CloudKit allows a user to share a hierarchy of records with other iCloud users. In macOS, you use [`NSItemProvider`](../Foundation/nsitemprovider.md) and [`NSSharingService`](./nssharingservice.md) to facilitate sharing. Register an instance of [`CKShare`](../CloudKit/ckshare.md) with an item provider, and then use a sharing service to present it to the user. You must initialize the service with the [`cloudSharing`](./nssharingservice/name/cloudsharing.md) service name. If the share is new, the user can configure the share and invite other iCloud users to participate. Otherwise, they can use the service to manage the share’s participants and their permissions.
 

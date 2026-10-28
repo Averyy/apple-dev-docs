@@ -24,7 +24,7 @@ var speechSynthesisOutputMetadataBlock: AVSpeechSynthesisProviderOutputBlock? { 
 @property (nonatomic, copy, nullable) AVSpeechSynthesisProviderOutputBlock speechSynthesisOutputMetadataBlock;
 ```
 
-#### Discussion
+## Discussion
 
 A host sets this block to retrieve metadata for a request.
 

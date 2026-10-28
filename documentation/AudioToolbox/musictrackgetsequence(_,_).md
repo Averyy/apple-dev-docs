@@ -24,7 +24,7 @@ func MusicTrackGetSequence(_ inTrack: MusicTrack, _ outSequence: UnsafeMutablePo
 extern OSStatus MusicTrackGetSequence(MusicTrack inTrack, MusicSequence*outSequence);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

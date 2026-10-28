@@ -22,7 +22,7 @@ var hasURLs: Bool { get }
 @property (nonatomic, readonly) BOOL hasURLs;
 ```
 
-#### Discussion
+## Discussion
 
 Employ this property to determine if a pasteboard contains URL data.
 

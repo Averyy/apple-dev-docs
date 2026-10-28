@@ -22,7 +22,7 @@ string RecommendationState
 - `DISMISSED`: The recommendation was explicitly rejected. No change was made to the campaign or ad group. Terminal state.
 - `DELETE`: The recommendation has been archived by the system, typically because the underlying campaign entity was removed or the recommendation became irrelevant, and is no longer surfaced in active queries unless explicitly filtered. Terminal state.
 
-#### Discussion
+## Discussion
 
 The `RecommendationState` tracks the advertiser’s response to a recommendation. Only recommendations in `AVAILABLE` state can be acted on. Applying or dismissing a recommendation moves it to `APPLIED` or `DISMISSED`, respectively, and creates a corresponding history record.
 

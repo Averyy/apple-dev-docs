@@ -15,7 +15,7 @@ A property of IONetworkController objects.
 #define kIOMinPacketSize
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMinPacketSize property is a property of IONetworkController objects. It has an OSNumber value that describes the minimum packet size supported by the controller.
 

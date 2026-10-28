@@ -25,7 +25,7 @@ func suspend()
 - (void) suspend;
 ```
 
-#### Discussion
+## Discussion
 
 A task, while suspended, produces no network traffic and isn’t subject to timeouts. Call [`resume()`](./resume%28%29.md) to resume data transfer.
 

@@ -21,7 +21,7 @@ Returns a new time range with the time elements of both this time range and the 
 func union(_ otherRange: CMTimeRange) -> CMTimeRange
 ```
 
-#### Return Value
+## Return Value
 
 A time range with the unique time elements of this time range and the input.
 

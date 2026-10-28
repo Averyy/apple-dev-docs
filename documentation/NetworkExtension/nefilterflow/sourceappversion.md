@@ -22,7 +22,7 @@ var sourceAppVersion: String? { get }
 @property (readonly, nullable) NSString * sourceAppVersion;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` if the app info is unavailable.
 

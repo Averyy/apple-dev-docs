@@ -21,7 +21,7 @@ The full unit name.
 static var wide: Duration.UnitsFormatStyle.UnitWidth { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, `wide` produces the unit label “3 hours” for a 3-hour duration in the `en_US` locale.
 

@@ -17,7 +17,7 @@ A `LogitSampler` is responsible for sampling `logits` produced by a [`LanguageMo
 protocol LogitSampler
 ```
 
-#### Overview
+## Overview
 
 See also: [`LogitProcessor`](./logitprocessor.md)
 

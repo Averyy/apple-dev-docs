@@ -14,7 +14,7 @@ A surface shader that defines properties for a RealityKit Occlusion material tha
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Output | Type |
 | --- | --- |

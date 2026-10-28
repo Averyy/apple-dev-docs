@@ -13,7 +13,7 @@
 kIOVideoDeviceNotificationID_ControlValueChanged = 'cval'
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that the value of the control with the given ID has changed. The first argument is the new value.
 

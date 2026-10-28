@@ -19,7 +19,7 @@ Placement for commands that provide information about the app, the terms of the 
 static let appInfo: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following command in macOS:
 

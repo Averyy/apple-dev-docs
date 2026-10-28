@@ -19,11 +19,11 @@ func setSelectionIndexPath(_ indexPath: IndexPath?) -> Bool
 - (BOOL) setSelectionIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 Return [`true`](../../Swift/true.md) if the selection has changed, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Attempting to change the selection may cause a `commitEditing` message which fails, thus denying the selection change.
 

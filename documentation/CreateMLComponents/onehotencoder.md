@@ -21,7 +21,7 @@ An estimator that encodes categorical values to an integer array.
 struct OneHotEncoder<Category> where Category : Comparable, Category : Decodable, Category : Encodable, Category : Hashable
 ```
 
-#### Overview
+## Overview
 
 The encoded array has an element count equal to the number of categories to encode. The encoded array for a given category has repeating zero values except at one index where the value is 1.
 

@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, didStartProvisionalLoadFor frame: WebF
 - (void) webView:(WebView *) sender didStartProvisionalLoadForFrame:(WebFrame *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked when a new client request is made by `sender` to load a provisional data source for `frame`. This method may be invoked after sending [`load(_:)`](../webframe/load%28_%29-47p2s.md) to a `WebFrame` object or as a consequence of the user clicking a link displayed in a web frame view. Delegates might implement this method to notify the user that a request is in progress. Additional information about the request can be obtained from the data source of `frame`.
 

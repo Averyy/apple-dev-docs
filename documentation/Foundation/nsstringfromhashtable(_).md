@@ -25,11 +25,11 @@ func NSStringFromHashTable(_ table: NSHashTable<AnyObject>) -> String
 extern NSString *NSStringFromHashTable(NSHashTable *table);
 ```
 
-#### Return Value
+## Return Value
 
 A string describing `table`’s contents.
 
-#### Discussion
+## Discussion
 
 The function iterates over the elements of `table`, and for each one appends the string returned by the `describe` callback function. If `NULL` was specified for the callback function, the hexadecimal value of each pointer is added to the string.
 

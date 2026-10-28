@@ -27,7 +27,7 @@ convenience init(userIdentityLookupInfos: [CKUserIdentity.LookupInfo])
 - (instancetype) initWithUserIdentityLookupInfos:(NSArray<CKUserIdentityLookupInfo *> *) userIdentityLookupInfos;
 ```
 
-#### Discussion
+## Discussion
 
 After you create the operation, assign a handler to [`discoverUserIdentitiesCompletionBlock`](./discoveruseridentitiescompletionblock.md) so that you can process the search results.
 

@@ -12,7 +12,7 @@ virtual void setConfigurationApplicationBundle(
  const char *bundleID);
 ```
 
-#### Overview
+## Overview
 
 This is useful for device drivers that are too complex to be represented by the Sound Preferences panel. The bundle ID is a more flexible way of specifying where the application is than a hard coded path.
 

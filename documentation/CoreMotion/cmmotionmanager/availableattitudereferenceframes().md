@@ -23,11 +23,11 @@ class func availableAttitudeReferenceFrames() -> CMAttitudeReferenceFrame
 + (CMAttitudeReferenceFrame) availableAttitudeReferenceFrames;
 ```
 
-#### Return Value
+## Return Value
 
 A bitmask that you can bitwise-AND with the `enum` constants of the [`CMAttitudeReferenceFrame`](../cmattitudereferenceframe.md) type.
 
-#### Discussion
+## Discussion
 
 When starting a service that allows you to specify a reference frame, it’s your responsibility to specify a reference frame that’s available on the current device. Some reference frames might be unavailable because the required hardware isn’t present or not currently available.
 

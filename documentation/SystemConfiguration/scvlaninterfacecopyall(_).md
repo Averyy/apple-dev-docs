@@ -19,7 +19,7 @@ func SCVLANInterfaceCopyAll(_ prefs: SCPreferences) -> CFArray
 CFArrayRefSCVLANInterfaceCopyAll(SCPreferencesRef prefs);
 ```
 
-#### Return Value
+## Return Value
 
 The list of VLAN interfaces on the system. You must release the returned value.
 

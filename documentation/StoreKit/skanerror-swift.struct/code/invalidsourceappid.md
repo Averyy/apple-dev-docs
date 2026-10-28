@@ -22,7 +22,7 @@ case invalidSourceAppId
 SKANErrorInvalidSourceAppId
 ```
 
-#### Discussion
+## Discussion
 
 Check that the value you provide for [`SKStoreProductParameterAdNetworkSourceAppStoreIdentifier`](../../skstoreproductparameteradnetworksourceappstoreidentifier.md) or [`sourceAppStoreItemIdentifier`](../../skadimpression/sourceappstoreitemidentifier.md) is correct and matches the App Store ID of the app that’s displaying the ad.
 

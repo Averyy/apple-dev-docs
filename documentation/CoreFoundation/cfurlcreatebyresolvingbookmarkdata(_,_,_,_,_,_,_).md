@@ -25,11 +25,11 @@ func CFURLCreateByResolvingBookmarkData(_ allocator: CFAllocator!, _ bookmark: C
 extern CFURLRefCFURLCreateByResolvingBookmarkData(CFAllocatorRef allocator, CFDataRef bookmark, CFURLBookmarkResolutionOptions options, CFURLRef relativeToURL, CFArrayRef resourcePropertiesToInclude, Boolean *isStale, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A new URL made by resolving `bookmark`, or `NULL` if an error occurs.
 
-#### Discussion
+## Discussion
 
 To obtain a security-scoped URL from a security-scoped bookmark, call this method using the [`cfurlBookmarkResolutionWithSecurityScope`](./cfurlbookmarkresolutionoptions/cfurlbookmarkresolutionwithsecurityscope.md) option. In addition, to use security scope, you must first have enabled the appropriate entitlements for your app, as described in [Enabling Security-Scoped Bookmark and URL Access](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html#//apple_ref/doc/uid/TP40011195-CH4-SW18).
 

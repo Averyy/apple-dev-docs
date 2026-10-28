@@ -14,7 +14,7 @@ The backward limit of compatibility for the current driver.
 - **Name**: `OSBundleCompatibleVersion`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Specify a previous version for the current driver, or the driver’s current version. Format this string the same way you format the value of the [`CFBundleVersion`](./cfbundleversion.md) key. The combination of this value and the value in the [`CFBundleVersion`](./cfbundleversion.md) key define the range of versions that offers the same level of compatibility. Dependent drivers use this information to determine if they are compatible with the driver. For example, if the driver’s current version is `10.0`, and you set the value of this key to `5.0`, a driver that depends on version `7.0` can successfully use the current driver.
 

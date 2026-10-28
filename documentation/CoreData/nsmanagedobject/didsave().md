@@ -25,7 +25,7 @@ func didSave()
 - (void) didSave;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to notify other objects after a save, and to compute transient values from persistent values.
 
@@ -33,7 +33,7 @@ This method can have “side effects” on the persistent values, however any ch
 
 The sense of “save” in the method name is that of a database commit statement and so applies to deletions as well as to updates to objects. For subclasses, this method is therefore an appropriate locus for code to be executed when an object deleted as well as “saved to disk.” You can find out if an object is marked for deletion with [`isDeleted`](./isdeleted.md).
 
-##### Special Considerations
+### Special Considerations
 
 You cannot attempt to resurrect a deleted object in `didSave`.
 

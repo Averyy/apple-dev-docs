@@ -23,7 +23,7 @@ func visualDescription() -> String
 - (NSString *) visualDescription;
 ```
 
-#### Discussion
+## Discussion
 
 An asterisk (`*`) represents a visible item, a plus sign (`+`) represents an expanded item, and a minus sign (`-`) represents a collapsed item.
 

@@ -19,7 +19,7 @@ func FxRectsAreEqual(_ thisRect: FxRect, _ thatRect: FxRect) -> Bool
 bool FxRectsAreEqual(FxRect thisRect, FxRect thatRect);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating if the two rectangles are equal.
 

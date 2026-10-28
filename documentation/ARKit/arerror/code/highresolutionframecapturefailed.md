@@ -20,7 +20,7 @@ case highResolutionFrameCaptureFailed
 ARErrorCodeHighResolutionFrameCaptureFailed
 ```
 
-#### Discussion
+## Discussion
 
 The system provides this error to the completion handler of [`captureHighResolutionFrame(completion:)`](../../arsession/capturehighresolutionframe%28completion%29.md) for failed operations.
 

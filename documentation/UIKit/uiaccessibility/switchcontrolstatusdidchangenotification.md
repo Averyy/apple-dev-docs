@@ -24,7 +24,7 @@ static let switchControlStatusDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UIAccessibilitySwitchControlStatusDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 This notification doesn’t include a parameter. Observe this notification using the default notification center.
 

@@ -22,7 +22,7 @@ A result builder that creates map content from closures you provide.
 struct MapContentBuilder
 ```
 
-#### Overview
+## Overview
 
 The [`buildBlock(_:)`](./mapcontentbuilder/buildblock%28_%29-5ewn9.md) methods in this type create [`MapContent`](./mapcontent.md) instances based on the number and types of sources you provide as parameters.
 

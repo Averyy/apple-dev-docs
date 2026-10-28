@@ -22,7 +22,7 @@ static let livePhoto: UIImagePickerController.InfoKey
 extern UIImagePickerControllerInfoKey const UIImagePickerControllerLivePhoto;
 ```
 
-#### Discussion
+## Discussion
 
 A Live Photo is a picture, that includes motion and sound from the moments just before and after its capture. On compatible devices, the Camera app captures all photos as Live Photos by default, but the [`imagePickerController:didFinishPickingImage:editingInfo:`](../../uiimagepickercontrollerdelegate/imagepickercontroller_didfinishpickingimage_editinginfo_.md) method’s `image` parameter contains only the still image representation.
 

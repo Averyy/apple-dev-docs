@@ -29,7 +29,7 @@ optional func confirm(intent: INPayBillIntent) async -> INPayBillIntentResponse
 - (void) confirmPayBill:(INPayBillIntent *) intent completion:(void (^)(INPayBillIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to validate that scheduling payment for the specified bill is possible. You might use this method to validate the following information:
 

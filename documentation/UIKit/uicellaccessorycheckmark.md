@@ -19,7 +19,7 @@ The checkmark system accessory.
 @interface UICellAccessoryCheckmark : UICellAccessory
 ```
 
-#### Overview
+## Overview
 
 A checkmark accessory is a checkmark with the default system green color. This accessory appears on the trailing edge of the cell.
 

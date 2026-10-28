@@ -20,11 +20,11 @@ init?(url: URL)
 - (SBApplication *) initWithURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `SBApplication` that you can use to communicate with the target application specified by the process ID. Returns `nil` if an application could not be found or if the application does not have a scripting interface.
 
-#### Discussion
+## Discussion
 
 This approach to initializing `SBApplication` objects should be used only if you know for certain the URL of the target application. In most cases, it is better to use [`applicationWithBundleIdentifier:`](./applicationwithbundleidentifier_.md) which dynamically locates the target application at runtime. Even so, you should rarely have to initialize an `SBApplication` yourself.
 

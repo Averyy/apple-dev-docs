@@ -5,11 +5,11 @@
 
 Initiate outgoing calls with VoIP and configure your app to receive incoming calls.
 
-#### Overview
+## Overview
 
 You can handle outgoing calls in your app by providing information about the recipient and initiating the call. To receive incoming calls, you can configure your app to respond to an external VoIP notification.
 
-##### Make outgoing calls
+### Make outgoing calls
 
 Initiate an outgoing call with a VoIP app in any of the following ways:
 
@@ -89,7 +89,7 @@ func provider(_ provider: CXProvider, perform action: CXStartCallAction) {
 }
 ```
 
-##### Receive incoming calls
+### Receive incoming calls
 
 To configure your app to receive incoming calls, first create a [`CXProvider`](./cxprovider.md) object and store it for global access. An app reports an incoming call to the provider in response to an external notification, such as a VoIP push notification from [PushKit](../PushKit/PushKit.md), with the [`pushRegistry(_:didReceiveIncomingPushWith:for:completion:)`](../PushKit/pkpushregistrydelegate/pushregistry%28_,didreceiveincomingpushwith,for,completion%29.md) and [`pushRegistry(_:didReceiveIncomingPushWith:for:completion:)`](../PushKit/pkpushregistrydelegate/pushregistry%28_,didreceiveincomingpushwith,for,completion%29.md) callbacks.
 

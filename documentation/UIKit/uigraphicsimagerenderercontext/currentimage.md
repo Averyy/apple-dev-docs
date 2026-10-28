@@ -23,7 +23,7 @@ var currentImage: UIImage { get }
 @property (nonatomic, readonly) UIImage * currentImage;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to access the current Core Graphics context as a [`UIImage`](../uiimage.md) object while providing drawing instructions for one of the drawing methods in [`UIGraphicsImageRenderer`](../uigraphicsimagerenderer.md).
 

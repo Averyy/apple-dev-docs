@@ -15,7 +15,7 @@ Sets the value indicating the box’s MIDI support
 kern_return_t SetHasMIDI(bool in_has_midi);
 ```
 
-#### Discussion
+## Discussion
 
 The object sends a notification to the host to update the object state on success. The object’s work queue synchronizes access to the value.
 

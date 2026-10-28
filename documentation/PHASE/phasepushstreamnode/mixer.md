@@ -24,7 +24,7 @@ var mixer: PHASEMixer { get }
 @property (nonatomic, strong, readonly) PHASEMixer * mixer;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value based on the definition initializer’s `mixerDefinition` argument. See [`init(mixerDefinition:format:)`](../phasepushstreamnodedefinition/init%28mixerdefinition,format%29.md).
 

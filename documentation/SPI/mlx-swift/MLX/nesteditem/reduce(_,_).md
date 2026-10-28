@@ -17,7 +17,7 @@ Reduces the contents of the NestedDictionary by visiting each value and applying
 func reduce<R>(_ initialValue: R, _ reducer: (R, Element) throws -> R) rethrows -> R
 ```
 
-#### Discussion
+## Discussion
 
 Typically called via [`reduce(_:_:)`](../nesteddictionary/reduce%28_,_%29.md).
 

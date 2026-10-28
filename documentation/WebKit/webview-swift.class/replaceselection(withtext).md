@@ -19,7 +19,7 @@ func replaceSelection(withText text: String!)
 - (void) replaceSelectionWithText:(NSString *) text;
 ```
 
-#### Discussion
+## Discussion
 
 If the current selection is collapsed (a range is selected with the same nodes and offsets for the start and end) then no content is removed when inserting the text, and the selection is collapsed and moved to the end of the inserted content. If no content is selected, the text is not inserted.
 

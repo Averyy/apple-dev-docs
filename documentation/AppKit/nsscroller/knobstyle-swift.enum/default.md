@@ -19,7 +19,7 @@ case `default`
 NSScrollerKnobStyleDefault
 ```
 
-#### Discussion
+## Discussion
 
 This is the default style; it is good against any background.
 

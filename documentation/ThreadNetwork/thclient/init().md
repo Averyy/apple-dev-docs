@@ -24,7 +24,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of the client object.
 

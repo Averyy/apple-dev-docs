@@ -21,7 +21,7 @@ Stores the given value’s bytes into raw memory at the specified offset.
 func storeBytes<T>(of value: T, toByteOffset offset: Int = 0, as type: T.Type)
 ```
 
-#### Discussion
+## Discussion
 
 The type `T` to be stored must be a trivial type. The memory must also be uninitialized, initialized to `T`, or initialized to another trivial type that is layout compatible with `T`.
 

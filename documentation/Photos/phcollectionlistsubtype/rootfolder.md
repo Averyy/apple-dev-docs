@@ -24,7 +24,7 @@ case rootFolder
 PHCollectionListSubtypeRootFolder
 ```
 
-#### Discussion
+## Discussion
 
 There is always one root folder in the library and does not allow [`PHCollectionEditOperation.rename`](../phcollectioneditoperation/rename.md) or [`PHCollectionEditOperation.delete`](../phcollectioneditoperation/delete.md)
 

@@ -20,7 +20,7 @@ Opaque producer-supplied signature for this reasoning entry.
 var signature: Data?
 ```
 
-#### Discussion
+## Discussion
 
 When this is non-nil, `segments` may represent a partial summary or be empty; full reasoning text may not be available.
 

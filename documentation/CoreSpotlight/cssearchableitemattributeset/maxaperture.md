@@ -23,7 +23,7 @@ var maxAperture: NSNumber? { get set }
 @property (strong, nullable) NSNumber * maxAperture;
 ```
 
-#### Discussion
+## Discussion
 
 The unit of the F number is the APEX value, which is typically in the range of 00.00 to 99.99.
 

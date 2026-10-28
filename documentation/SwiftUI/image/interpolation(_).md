@@ -25,11 +25,11 @@ func interpolation(_ interpolation: Image.Interpolation) -> Image
 
 - [Fitting images into available space](../fitting-images-into-available-space.md)
 
-#### Return Value
+## Return Value
 
 An image with the given interpolation value set.
 
-#### Discussion
+## Discussion
 
 See the article [Fitting images into available space](../fitting-images-into-available-space.md) for examples of using `interpolation(_:)` when scaling an [`Image`](../image.md).
 

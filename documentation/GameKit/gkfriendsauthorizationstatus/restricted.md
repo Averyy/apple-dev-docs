@@ -29,7 +29,7 @@ GKFriendsAuthorizationStatusRestricted
 
 - [Connecting players with their friends in your game](../connecting-players-with-their-friends-in-your-game.md)
 
-#### Discussion
+## Discussion
 
 While GameKit restricts access to a player’s friends’ data, the player can’t change the authorization status. If you previously loaded the player’s friends, delete the friends’ data from your game.
 

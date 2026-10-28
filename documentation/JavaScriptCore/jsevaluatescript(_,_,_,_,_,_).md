@@ -24,7 +24,7 @@ func JSEvaluateScript(_ ctx: JSContextRef!, _ script: JSStringRef!, _ thisObject
 JSValueRefJSEvaluateScript(JSContextRef ctx, JSStringRef script, JSObjectRef thisObject, JSStringRef sourceURL, int startingLineNumber, JSValueRef*exception);
 ```
 
-#### Return Value
+## Return Value
 
 The value that results from evaluating `script`, or `NULL` if the system throws an exception.
 

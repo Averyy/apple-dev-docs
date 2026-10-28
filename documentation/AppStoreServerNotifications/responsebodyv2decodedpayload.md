@@ -19,7 +19,7 @@ object responseBodyV2DecodedPayload
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 The `responseBodyV2DecodedPayload` is the Base64URL-decoded notification information from the JWS payload portion of the [`signedPayload`](./signedpayload.md). Use the [`notificationType`](./notificationtype.md) and [`subtype`](./subtype.md) to understand the event that led to this notification.
 

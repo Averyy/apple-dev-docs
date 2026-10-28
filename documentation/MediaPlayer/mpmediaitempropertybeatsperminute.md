@@ -25,7 +25,7 @@ let MPMediaItemPropertyBeatsPerMinute: String
 extern NSString * const MPMediaItemPropertyBeatsPerMinute;
 ```
 
-#### Discussion
+## Discussion
 
 This value is an [`NSNumber`](../Foundation/nsnumber.md) object that represents an [`NSUInteger`](../ObjectiveC/nsuinteger.md) data type.
 

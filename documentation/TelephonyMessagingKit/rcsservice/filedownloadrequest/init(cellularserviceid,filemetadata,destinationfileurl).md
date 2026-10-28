@@ -15,7 +15,7 @@ Creates a download request instance.
 init(cellularServiceID: CellularServiceID, fileMetadata: RCSFileTransferMetadata, destinationFileURL: URL)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when downloading end-to-end encrypted files.
 

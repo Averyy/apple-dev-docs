@@ -12,11 +12,11 @@ virtual IOFireWireSBP2Login * getLogin(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to an IOFireWireSBP2Login.
 
-#### Overview
+## Overview
 
 Returns the IOFireWireSBP2Login object associated with this ORB.
 

@@ -25,7 +25,7 @@ var wheels: [SCNPhysicsVehicleWheel] { get }
 @property (nonatomic, readonly) NSArray<SCNPhysicsVehicleWheel *> * wheels;
 ```
 
-#### Discussion
+## Discussion
 
 You can dynamically change the suspension and traction properties of a wheel connected to the vehicle by using the corresponding [`SCNPhysicsVehicleWheel`](../scnphysicsvehiclewheel.md) object or by using [Key-value coding](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KeyValueCoding.html#//apple_ref/doc/uid/TP40008195-CH25) with a keypath of the form `wheels[index].propertyName`. For example, the following code changes the size of the first wheel attached to the vehicle, simulating a failed tire:
 

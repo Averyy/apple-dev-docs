@@ -24,7 +24,7 @@ init(opaque: Bool = false, colorMode: ColorRenderingMode = .nonLinear, rendersAs
 
 Available when `Symbols` is `EmptyView`.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a new canvas that you can draw into. For example, you can draw a path:
 

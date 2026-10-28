@@ -23,7 +23,7 @@ var isFullScreen: Bool { get }
 @property (nonatomic, readonly, getter=isFullScreen) BOOL fullScreen;
 ```
 
-#### Discussion
+## Discussion
 
 The system only supports this property in Mac Catalyst apps.
 

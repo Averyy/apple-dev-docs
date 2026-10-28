@@ -21,7 +21,7 @@ struct ABPersonImageFormat
 typedef enum { ... } ABPersonImageFormat;
 ```
 
-#### Overview
+## Overview
 
 See `Image Format`.
 

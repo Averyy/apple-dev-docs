@@ -31,7 +31,7 @@ var senders: [INPerson]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<INPerson *> * senders;
 ```
 
-#### Discussion
+## Discussion
 
 When this property contains one or more [`INPerson`](../inperson.md) objects, your search should return only messages sent by the specified users. Use the [`sendersOperator`](./sendersoperator.md) property to determine whether to search for messages sent by any of the users, or not sent by any of the users.
 

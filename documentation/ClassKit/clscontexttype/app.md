@@ -23,7 +23,7 @@ case app
 CLSContextTypeApp
 ```
 
-#### Discussion
+## Discussion
 
 This context type is typically reserved for the main app context.
 

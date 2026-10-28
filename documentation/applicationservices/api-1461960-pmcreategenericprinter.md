@@ -19,11 +19,11 @@ func PMCreateGenericPrinter(_ printer: UnsafeMutablePointer<PMPrinter?>) -> OSSt
 OSStatus PMCreateGenericPrinter(PMPrinter  _Nullable *printer);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 This function provides a way to create a `PMPrinter` object that represents the generic formatting printer.
 

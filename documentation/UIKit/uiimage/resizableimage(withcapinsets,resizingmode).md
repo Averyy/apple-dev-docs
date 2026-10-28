@@ -24,11 +24,11 @@ func resizableImage(withCapInsets capInsets: UIEdgeInsets, resizingMode: UIImage
 - (UIImage *) resizableImageWithCapInsets:(UIEdgeInsets) capInsets resizingMode:(UIImageResizingMode) resizingMode;
 ```
 
-#### Return Value
+## Return Value
 
 A new image object with the specified cap insets and resizing mode.
 
-#### Discussion
+## Discussion
 
 This method is exactly the same as its counterpart [`resizableImage(withCapInsets:)`](./resizableimage%28withcapinsets%29.md) except that the resizing mode of the new image object can be explicitly declared. You should only call this method in place of its counterpart if you specifically want your image to be resized with the [`UIImage.ResizingMode.stretch`](./resizingmode-swift.enum/stretch.md) resizing mode.
 

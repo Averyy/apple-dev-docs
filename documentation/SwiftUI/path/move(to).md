@@ -21,7 +21,7 @@ Begins a new subpath at the specified point.
 mutating func move(to end: CGPoint)
 ```
 
-#### Discussion
+## Discussion
 
 The specified point becomes the start point of a new subpath. The current point is set to this start point.
 

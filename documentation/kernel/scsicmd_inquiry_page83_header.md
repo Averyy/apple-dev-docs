@@ -13,7 +13,7 @@
 typedef struct SCSICmd_INQUIRY_Page83_Header SCSICmd_INQUIRY_Page83_Header;
 ```
 
-#### Discussion
+## Discussion
 
 INQUIRY Page 83h Header.
 

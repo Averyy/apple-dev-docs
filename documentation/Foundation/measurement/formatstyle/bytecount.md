@@ -23,7 +23,7 @@ struct ByteCount
 
 Available when `UnitType` is `UnitInformationStorage`.
 
-#### Overview
+## Overview
 
 Use this style with a [`Measurement`](../../measurement.md) whose unit type is [`UnitInformationStorage`](../../unitinformationstorage.md) to format byte counts according to locale conventions.
 

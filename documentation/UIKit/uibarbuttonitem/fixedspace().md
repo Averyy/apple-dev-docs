@@ -23,7 +23,7 @@ class func fixedSpace() -> Self
 + (instancetype) fixedSpaceItem;
 ```
 
-#### Discussion
+## Discussion
 
 A fixed space of 0 width separates the shared background used in navigation bars and toolbars to visually group items.
 

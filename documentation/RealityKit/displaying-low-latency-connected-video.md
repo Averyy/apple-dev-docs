@@ -10,7 +10,7 @@ Render connected camera feeds in visionOS with minimal latency.
 - visionOS 27.0+
 - Xcode 27.0+
 
-#### Overview
+## Overview
 
 Your visionOS app can access video from USB Video Class (UVC) devices connected with the Developer Strap for Apple Vision Pro. You can use [AVFoundation](../AVFoundation/AVFoundation.md) to capture and display connected camera feeds, as demonstrated in [Displaying video from connected devices](../visionOS/displaying-video-from-connected-devices.md). Although this sample captures from a UVC device, you can apply the same low-latency rendering technique to video frames from other sources, such as a wireless camera stream.
 
@@ -25,7 +25,7 @@ This article uses [`LowLevelTexture`](./lowleveltexture.md) and [`LowLevelDevice
 
 > **Note**: Displaying low-latency connected camera feeds is not supported in the simulator.
 
-#### Review the rendering pipeline
+## Review the rendering pipeline
 
 The low-latency rendering pipeline consists of four main components:
 
@@ -36,7 +36,7 @@ The low-latency rendering pipeline consists of four main components:
 
 This architecture minimizes latency by using shared texture handles to avoid copying data between Metal and RealityKit. It renders directly to GPU-private memory and signals frame updates efficiently through device resource replacement.
 
-#### Create shared textures for low-latency rendering
+## Create shared textures for low-latency rendering
 
 Create a `CameraFeedSharedTexture` class that manages the low-level textures and their associated device resources. This class bridges Metal and RealityKit by creating shared texture handles that both frameworks can access.
 
@@ -118,7 +118,7 @@ final class CameraFeedSharedTexture {
 
 The `TextureConfiguration` enumeration stores either a single texture set for mono cameras or separate left and right texture sets for stereo cameras. Each texture set contains a Metal texture for rendering and a RealityKit low-level texture for display. Each texture set also includes two device resources that signal updates.
 
-#### Initialize low-level textures with shared texture handles
+## Initialize low-level textures with shared texture handles
 
 Create a method to initialize the [`LowLevelTexture`](./lowleveltexture.md) using a shared Metal texture handle. This allows both Metal (for rendering) and RealityKit (for display) to access the same texture memory without copying data.
 
@@ -178,7 +178,7 @@ The `createSharedTexture` method:
 - Creates matching [`MTLTexture`](../Metal/mtltexture.md) and [`LowLevelTexture`](./lowleveltexture.md) objects with identical pixel formats and dimensions. The storage mode must be [`MTLStorageMode.private`](../Metal/mtlstoragemode/private.md) to create shared textures that reside entirely in GPU memory.
 - Creates two separate device resource instances from the same shared texture handle. You use these to signal frame updates to RealityKit.
 
-#### Signal frame updates by toggling device resources
+## Signal frame updates by toggling device resources
 
 Create a method that alternates between two device resources on each frame. This signals to RealityKit that the texture content has changed and needs redrawing:
 
@@ -214,7 +214,7 @@ func replaceTexture() {
 
 RealityKit updates the display each time you call `replace(deviceResource:)`, even though both device resources point to the same underlying shared texture. This mechanism ensures frame-accurate updates without copying texture data. Call this method before rendering each new camera frame.
 
-#### Create an entity to display camera textures
+## Create an entity to display camera textures
 
 Create [`Entity`](./entity.md) factory methods that build camera feed entities for your scene. For mono cameras, use [`UnlitMaterial`](./unlitmaterial.md) with a single texture. For stereo cameras, use [`ShaderGraphMaterial`](./shadergraphmaterial.md) that combines left and right eye textures:
 
@@ -273,7 +273,7 @@ extension Entity {
 
 The `makeCameraFeed(texture:width:height:)` method creates a plane with an unlit material displaying the camera texture. The `makeStereoCameraFeed(leftEyeTexture:rightEyeTexture:width:height:material:)` method assigns separate textures to a shader graph material’s left and right eye parameters. This enables proper stereo presentation in visionOS. To learn how the app uses [`ShaderGraphMaterial`](./shadergraphmaterial.md) to render stereo images, see [Displaying a stereoscopic image](../visionOS/displaying-a-stereoscopic-image-in-visionos.md).
 
-#### Add the camera feed entity to your scene
+## Add the camera feed entity to your scene
 
 Create a [`RealityView`](./realityview.md) that reads the shared texture from the renderer, builds the appropriate camera feed entity, and adds it to the scene:
 
@@ -321,7 +321,7 @@ RealityView { content in
 
 The code calculates plane dimensions based on the camera’s aspect ratio. For stereo cameras, it divides the texture width by two because the camera provides side-by-side stereo images in a single buffer. The code then calls the appropriate factory method to create either a mono or stereo entity depending on the texture configuration.
 
-#### Render pixel buffers to textures
+## Render pixel buffers to textures
 
 Use Core Image to convert incoming [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md) frames to Metal textures. Create a Metal command buffer and use [`CIRenderDestination`](../CoreImage/cirenderdestination.md) to render directly to the shared texture.
 
@@ -400,7 +400,7 @@ private func renderImage(
 
 Core Image handles color space conversion automatically, transforming YCbCr camera data to RGB for display. For stereo cameras, the code crops the side-by-side stereo image into separate left and right images before rendering each to its respective texture. The `replaceTexture()` call toggles the device resource before rendering, ensuring RealityKit detects the new frame.
 
-#### Process camera frames from the capture session
+## Process camera frames from the capture session
 
 Extract the pixel buffer from each [`CMSampleBuffer`](../CoreMedia/cmsamplebuffer.md) you receive from the camera capture session and send it to the renderer:
 

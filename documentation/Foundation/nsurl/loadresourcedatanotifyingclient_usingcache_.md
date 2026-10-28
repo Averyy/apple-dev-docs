@@ -15,11 +15,11 @@ Loads the receiver’s resource data in the background.
 - (void) loadResourceDataNotifyingClient:(id) client usingCache:(BOOL) shouldUseCache;
 ```
 
-#### Discussion
+## Discussion
 
 A given NSURL object can perform only one background load at a time.
 
-##### Special Considerations
+### Special Considerations
 
 Use the [`URLSession`](../urlsession.md) or [`NSURLConnection`](../nsurlconnection.md) classes for loading content from remote URLs.
 

@@ -26,11 +26,11 @@ func getInputStream(_ inputStream: UnsafeMutablePointer<InputStream?>?, outputSt
 - (BOOL) getInputStream:(NSInputStream **) inputStream outputStream:(NSOutputStream **) outputStream;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the streams are created successfully, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 After this method is called, no delegate callbacks are called by the receiver.
 

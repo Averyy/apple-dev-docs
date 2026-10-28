@@ -19,7 +19,7 @@ func viewDidLoad()
 - (void) viewDidLoad;
 ```
 
-#### Discussion
+## Discussion
 
 You can override this method to perform tasks to immediately follow the setting of the [`view`](./view.md) property.
 

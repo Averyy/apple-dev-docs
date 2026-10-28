@@ -23,7 +23,7 @@ convenience init(mapView: MKMapView?)
 + (instancetype) compassButtonWithMapView:(MKMapView *) mapView;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized compass button.
 

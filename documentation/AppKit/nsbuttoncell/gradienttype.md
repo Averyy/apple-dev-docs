@@ -21,7 +21,7 @@ var gradientType: NSButton.GradientType { get set }
 @property NSGradientType gradientType;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a constant that specifies the gradient used for the button’s border. See [`NSButton.GradientType`](../nsbutton/gradienttype.md) for a list of possible values.
 

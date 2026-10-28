@@ -25,7 +25,7 @@ case contentRemoved
 NSPersistentStoreUbiquitousTransitionTypeContentRemoved
 ```
 
-#### Discussion
+## Discussion
 
 The Core Data integration will transition to an empty store file as a result of this event.
 

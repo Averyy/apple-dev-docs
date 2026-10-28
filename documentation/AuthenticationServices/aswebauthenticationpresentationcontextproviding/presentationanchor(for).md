@@ -28,7 +28,7 @@ func presentationAnchor(for session: ASWebAuthenticationSession) -> ASPresentati
 
 - [Authenticating a User Through a Web Service](../authenticating-a-user-through-a-web-service.md)
 
-#### Return Value
+## Return Value
 
 A user interface element that can act as the anchor for the authentication presentation.
 

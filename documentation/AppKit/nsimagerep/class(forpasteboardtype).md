@@ -21,7 +21,7 @@ class func `class`(forPasteboardType type: NSPasteboard.PasteboardType) -> AnyCl
 + (Class) imageRepClassForPasteboardType:(NSPasteboardType) type;
 ```
 
-#### Return Value
+## Return Value
 
 A `Class` object for the image representation that can handle the specified pasteboard type, or `nil` if no image representation could handle the type.
 

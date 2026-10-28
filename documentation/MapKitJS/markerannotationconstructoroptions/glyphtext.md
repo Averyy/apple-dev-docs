@@ -15,7 +15,7 @@ The text to display in the marker balloon.
 glyphText?: string;
 ```
 
-#### Discussion
+## Discussion
 
 The text to display in the balloon instead of a glyph image. The default value is `null`. There’s a limited amount of space available for displaying glyph text. Specify no more than two or three characters.
 

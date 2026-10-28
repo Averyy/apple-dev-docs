@@ -24,7 +24,7 @@ protocol VNRequestProgressProviding : NSObjectProtocol
 @protocol VNRequestProgressProviding <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt this protocol for potentially long-running Vision requests to provide information about progress throughout processing. For example, you can use the optional [`progressHandler`](./vnrequestprogressproviding/progresshandler.md) to update the user interface, provide a percentage of completion, or process partial results.
 

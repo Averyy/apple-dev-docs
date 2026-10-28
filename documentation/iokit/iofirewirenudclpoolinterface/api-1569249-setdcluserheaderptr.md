@@ -16,11 +16,11 @@ Set a user specified header for a send NuDCL
 IOReturn (*SetDCLUserHeaderPtr)(NuDCLRef dcl, UInt32 *headerPtr, UInt32 *mask);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn error code.
 
-#### Discussion
+## Discussion
 
 Allows the client to create a custom header for a transmitted isochronous packet. The header is masked with 'mask', and the FireWire system software fills in the masked out bits.
 

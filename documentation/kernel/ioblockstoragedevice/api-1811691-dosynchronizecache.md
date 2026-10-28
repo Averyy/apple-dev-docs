@@ -12,7 +12,7 @@ virtual IOReturn doSynchronizeCache(
  void) = 0;
 ```
 
-#### Overview
+## Overview
 
 This method should only be called if the media is writable.
 

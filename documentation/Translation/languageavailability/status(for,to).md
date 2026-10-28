@@ -18,11 +18,11 @@ Checks to see if the framework supports the language pairing based off a string 
 func status(for text: String, to target: Locale.Language?) async throws -> LanguageAvailability.Status
 ```
 
-#### Return Value
+## Return Value
 
 The availability status for the language pairing to use in the translation.
 
-#### Discussion
+## Discussion
 
 Use this function when you don’t know the source language and want the framework to attempt a translation based on the sample text you pass in.
 

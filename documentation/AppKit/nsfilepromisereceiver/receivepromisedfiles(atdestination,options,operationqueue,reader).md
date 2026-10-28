@@ -19,7 +19,7 @@ func receivePromisedFiles(atDestination destinationDir: URL, options: [AnyHashab
 - (void) receivePromisedFilesAtDestination:(NSURL *) destinationDir options:(NSDictionary *) options operationQueue:(NSOperationQueue *) operationQueue reader:(void (^)(NSURL *fileURL, NSError *errorOrNil)) reader;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method only when you’re accepting the file promise. All file promise receivers in a drag must specify the same destination location. The `options` dictionary is ignored for now. The `reader` block is called on the supplied `operationQueue` when the promised file is ready to be read.
 

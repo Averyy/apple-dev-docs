@@ -19,7 +19,7 @@ An intent schema that adds a video to a page.
 var addVideoToPage: some AppSchemaIntent { get }
 ```
 
-#### Discussion
+## Discussion
 
 To make your app’s actions available to Apple Intelligence, conform your [`AppIntent`](../../appintent.md) to a schema that describes your action to the system. If your app’s functionality aligns with the `wordProcessor` domain and one of your app’s actions matches the `addVideoToPage` schema, you can generate the properties and protocol conformance the schema requires for your intent implementation with the `@AppIntent( .wordProcessor.addVideoToPage)` Swift macro. To make your app work with Siri, see [Apple Intelligence and Siri AI](../../apple-intelligence-and-siri-ai.md).
 

@@ -16,7 +16,7 @@ Sets the duration of the timeout for this command.
 void (*SetTimeoutDuration)(IOFireWireLibCommandRef self, UInt32 duration);
 ```
 
-#### Return Value
+## Return Value
 
 void
 

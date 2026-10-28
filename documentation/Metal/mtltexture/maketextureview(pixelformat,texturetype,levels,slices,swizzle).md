@@ -20,7 +20,7 @@ Creates a new view of the texture, reinterpreting a subset of its data using a d
 func makeTextureView(pixelFormat: MTLPixelFormat, textureType: MTLTextureType, levels levelRange: Range<Int>, slices sliceRange: Range<Int>, swizzle: MTLTextureSwizzleChannels) -> (any MTLTexture)?
 ```
 
-#### Discussion
+## Discussion
 
 For more information on texture views, see [`makeTextureView(pixelFormat:textureType:levels:slices:)`](./maketextureview%28pixelformat,texturetype,levels,slices%29.md)
 

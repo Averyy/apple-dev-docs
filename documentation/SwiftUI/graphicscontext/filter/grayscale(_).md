@@ -21,11 +21,11 @@ Returns a filter that applies a grayscale adjustment.
 static func grayscale(_ amount: Double) -> GraphicsContext.Filter
 ```
 
-#### Return Value
+## Return Value
 
 A filter that applies a grayscale adjustment.
 
-#### Discussion
+## Discussion
 
 This filter is equivalent to the `grayscale` filter primitive defined by the Scalable Vector Graphics (SVG) specification.
 

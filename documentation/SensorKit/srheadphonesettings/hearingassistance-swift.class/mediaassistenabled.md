@@ -19,7 +19,7 @@ var mediaAssistEnabled: SRHeadphoneSettings.SettingEnablement { get }
 @property (nonatomic, assign, readonly) SRHeadphoneSettingsSettingEnablement mediaAssistEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Setting to enable adjustments to media that improve the clarity of music, video, and calls when hearing aid is active.
 

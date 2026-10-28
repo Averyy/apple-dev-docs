@@ -23,11 +23,11 @@ class func threshold(_ threshold: Float, replacement: Float) -> Self
 + (instancetype) thresholdLayerWithThreshold:(float) threshold replacement:(float) replacement;
 ```
 
-#### Return Value
+## Return Value
 
 A new `MLCActivationLayer` instance.
 
-#### Discussion
+## Discussion
 
 The [`threshold(_:replacement:)`](./threshold%28_,replacement%29.md) factory type method creates an activation descriptor using [`init(type:a:b:)`](../mlcactivationdescriptor/init%28type,a,b%29.md), where `type =` [`MLCActivationType.threshold`](../mlcactivationtype/threshold.md), `a = threshold`, and `b = replacement`, and passes that descriptor to [`init(descriptor:)`](./init%28descriptor%29.md).
 

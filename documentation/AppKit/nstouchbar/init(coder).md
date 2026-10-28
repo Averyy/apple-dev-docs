@@ -22,7 +22,7 @@ init?(coder: NSCoder)
 - (instancetype) initWithCoder:(NSCoder *) coder;
 ```
 
-#### Return Value
+## Return Value
 
 A fully initialized Touch Bar object, or `nil` if the coder doesn’t define a Touch Bar object.
 

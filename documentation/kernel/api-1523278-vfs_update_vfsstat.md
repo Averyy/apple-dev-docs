@@ -15,11 +15,11 @@ Update cached filesystem status information in the VFS mount structure.
 int vfs_update_vfsstat(mount_t mp, vfs_context_t ctx, int eventtype);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, or an error code for authentication failure or problem with call to filesystem to request information.
 
-#### Discussion
+## Discussion
 
 Each filesystem has a struct vfsstatfs associated with it which is updated as events occur; this function updates it so that the structure pointer returned by vfs_statfs() returns a pointer to fairly recent data.
 

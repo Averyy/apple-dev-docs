@@ -19,7 +19,7 @@ A Boolean value that indicates whether you can extend the asset by fragments.
 var canContainFragments: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 For QuickTime movie files and MPEG-4 files, the value is [`true`](../../Swift/true.md) if an `mvex` box is present in the `moov` box. For those types, the `mvex` box signals the possible presence of later `moof` boxes.
 

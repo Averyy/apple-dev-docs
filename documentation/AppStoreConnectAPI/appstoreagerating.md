@@ -48,7 +48,7 @@ string AppStoreAgeRating
 - [App Store Connect API 3.3 release notes](./app-store-connect-api-3-3-release-notes.md)
 - [App Store Connect API 4.4 release notes](./app-store-connect-api-4-4-release-notes.md)
 
-#### Discussion
+## Discussion
 
 For more information about app ratings, see [Age ratings](https://developer.apple.com/help/app-store-connect/reference/age-ratings/).
 

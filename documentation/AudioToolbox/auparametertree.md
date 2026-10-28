@@ -24,7 +24,7 @@ class AUParameterTree
 @interface AUParameterTree : AUParameterGroup
 ```
 
-#### Overview
+## Overview
 
 An audio unit’s parameters are organized into a tree containing groups and parameters (groups may be nested).
 

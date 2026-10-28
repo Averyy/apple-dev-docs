@@ -24,7 +24,7 @@ var colorSpace: CGColorSpace? { get }
 @property (atomic, readonly, nullable) CGColorSpaceRef colorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value is `nil` if the image’s color space cannot be determined.
 

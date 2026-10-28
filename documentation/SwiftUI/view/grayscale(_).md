@@ -22,11 +22,11 @@ nonisolated
 func grayscale(_ amount: Double) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that adds a grayscale effect to this view.
 
-#### Discussion
+## Discussion
 
 A grayscale effect reduces the intensity of colors in this view.
 

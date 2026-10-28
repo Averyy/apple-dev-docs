@@ -21,7 +21,7 @@ A clock that measures time that always increments but stops incrementing while t
 struct SuspendingClock
 ```
 
-#### Overview
+## Overview
 
 `SuspendingClock` can be considered as a system awake time clock. The frame of reference of the `Instant` may be bound machine boot or some other locally defined reference point. This means that the instants are only comparable on the same machine in the same booted session.
 

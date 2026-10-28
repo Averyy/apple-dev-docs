@@ -22,7 +22,7 @@ optional func findInteraction(_ interaction: UIFindInteraction, didEnd session: 
 - (void) findInteraction:(UIFindInteraction *) interaction didEndFindSession:(UIFindSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to undo decoration on your view to indicate that a search operation is complete. For example, remove a dimming view from around the unhighlighted search results.
 

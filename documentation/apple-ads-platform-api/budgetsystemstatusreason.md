@@ -25,7 +25,7 @@ string BudgetSystemStatusReason
 - `SCHEDULE_EXPIRED`: The budget’s `endTime` has passed.
 - `SCHEDULE_PENDING`: The budget’s `startTime` has not yet been reached.
 
-#### Discussion
+## Discussion
 
 One or more `BudgetSystemStatusReason` values appear in the `systemStatusReasons` array on a budget or budget order. These codes are read-only and system-applied. They update automatically as conditions change. Use them to diagnose why a budget is `INACTIVE` and determine what action, if any, is required.
 

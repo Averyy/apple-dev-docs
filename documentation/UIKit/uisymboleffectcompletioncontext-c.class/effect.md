@@ -19,7 +19,7 @@ The symbol effect that completed.
 @property (nonatomic, readonly, nullable) NSSymbolEffect * effect;
 ```
 
-#### Discussion
+## Discussion
 
 For a symbol effect completion, this property may not be the same instance as the original effect.
 

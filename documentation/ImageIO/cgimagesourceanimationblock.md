@@ -25,7 +25,7 @@ typealias CGImageSourceAnimationBlock = (Int, CGImage, UnsafeMutablePointer<Bool
 typedef void (^)(unsigned long, struct CGImage *, _Bool *) CGImageSourceAnimationBlock;
 ```
 
-#### Discussion
+## Discussion
 
 During the animation of an image, the system calls this block for each successive frame of the animation. Use this block to display the new image in your app’s interface, and to update any additional details.
 

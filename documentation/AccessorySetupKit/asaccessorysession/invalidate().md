@@ -20,7 +20,7 @@ func invalidate()
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 This call breaks any retain cycles. The session is unusable after calling `invalidate`.
 

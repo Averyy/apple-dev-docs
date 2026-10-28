@@ -25,7 +25,7 @@ class let linearSRGB: CFString
 extern CFStringRef const kCGColorSpaceLinearSRGB;
 ```
 
-#### Discussion
+## Discussion
 
 This color space has the same colorimetry as [`sRGB`](./srgb.md), but uses a linear transfer function.
 

@@ -25,7 +25,7 @@ func functionHandle(function: any MTL4BinaryFunction, stage: MTLRenderStages) ->
 - (id<MTLFunctionHandle>) functionHandleWithBinaryFunction:(id<MTL4BinaryFunction>) function stage:(MTLRenderStages) stage;
 ```
 
-#### Return Value
+## Return Value
 
 A function handle representing the function if present, otherwise `nil`.
 

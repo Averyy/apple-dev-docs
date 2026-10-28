@@ -32,7 +32,7 @@ var style: CNContactFormatterStyle { get set }
 @property (atomic) CNContactFormatterStyle style;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is [`CNContactFormatterStyle.fullName`](../cncontactformatterstyle/fullname.md). For more information on formatting styles, see [`CNContactFormatterStyle`](../cncontactformatterstyle.md).
 

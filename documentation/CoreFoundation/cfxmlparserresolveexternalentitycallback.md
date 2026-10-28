@@ -19,11 +19,11 @@ typealias CFXMLParserResolveExternalEntityCallBack = (CFXMLParser?, UnsafeMutabl
 typedef const struct __CFData *(*)(struct __CFXMLParser *, CFXMLExternalID *, void *) CFXMLParserResolveExternalEntityCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 The external entity or `NULL` if it should not be resolved.
 
-#### Discussion
+## Discussion
 
 If this callback is not defined, the parser uses its internal routines to try and resolve the entity. Otherwise, if this callback returns NULL, a place holder for the external entity is inserted into the tree. In this manner, the parser’s client can prevent any external network or file accesses. This callback is optional.
 

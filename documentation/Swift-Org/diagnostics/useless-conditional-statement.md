@@ -10,11 +10,11 @@ framework: "Swift-Org/diagnostics"
 
 Warnings that identify conditional statements (`if`, `while`, and `guard`) whose conditions can never be false.
 
-#### Overview
+## Overview
 
 When the condition of an `if`, `while`, or `guard` statement is statically known to always be true, the conditional structure is unnecessary. For `if` and `while`, the body always executes (and a `while` loop with no `break` would never terminate); for `guard`, the `else` branch is unreachable.
 
-#### Examples
+## Examples
 
 ```
 let x = 0

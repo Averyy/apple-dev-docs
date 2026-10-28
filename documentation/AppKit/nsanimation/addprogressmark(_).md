@@ -19,7 +19,7 @@ func addProgressMark(_ progressMark: NSAnimation.Progress)
 - (void) addProgressMark:(NSAnimationProgress) progressMark;
 ```
 
-#### Discussion
+## Discussion
 
 A progress mark represents a percentage of the animation completed. When the animation reaches a progress mark, an [`animation(_:didReachProgressMark:)`](../nsanimationdelegate/animation%28_,didreachprogressmark%29.md) message is sent to the delegate and an [`progressMarkNotification`](./progressmarknotification.md) is broadcast to all observers. You might receive multiple notifications of progress advances over multiple marks.
 

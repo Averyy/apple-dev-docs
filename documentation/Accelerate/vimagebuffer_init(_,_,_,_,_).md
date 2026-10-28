@@ -25,11 +25,11 @@ func vImageBuffer_Init(_ buf: UnsafeMutablePointer<vImage_Buffer>, _ height: vIm
 vImage_Error vImageBuffer_Init(vImage_Buffer *buf, vImagePixelCount height, vImagePixelCount width, uint32_t pixelBits, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function provides two different operations, depending on whether you pass the [`kvImageNoAllocate`](./kvimagenoallocate.md) flag.
 

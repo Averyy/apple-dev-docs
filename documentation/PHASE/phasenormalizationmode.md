@@ -24,7 +24,7 @@ enum PHASENormalizationMode
 enum PHASENormalizationMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Different output devices feature loudness characteristics that require the audio engine to adjust the volume of the input audio to achieve a consistent listening experience across devices.
 

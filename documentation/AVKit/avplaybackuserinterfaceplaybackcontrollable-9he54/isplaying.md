@@ -19,7 +19,7 @@ Indicates whether playback is active.
 var isPlaying: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Setting this to `true` should start playback; setting it to `false` should pause it. This property reflects playback intent — it should remain `true` while [`isBuffering`](./isbuffering.md) is `true`, indicating that playback should resume automatically once sufficient data is available.
 

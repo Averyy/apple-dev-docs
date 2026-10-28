@@ -23,7 +23,7 @@ Fetches the long-lived operation for the specified operation ID.
 func fetchLongLivedOperation(withID operationID: CKOperation.ID, completionHandler: @escaping @Sendable (CKOperation?, (any Error)?) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The closure doesn’t return a value and takes the following parameters:
 

@@ -20,11 +20,11 @@ string AdGroup.Status
 - `ENABLED`: The ad group is active and eligible to serve ads.
 - `PAUSED`: The ad group is paused and will not serve ads.
 
-#### Discussion
+## Discussion
 
 This field directly controls auction eligibility for the ad group, independent of the system-computed [`AdGroup.SystemStatus`](./systemstatus-data.typealias.md).
 
-##### Example
+### Example
 
 ```json
 {

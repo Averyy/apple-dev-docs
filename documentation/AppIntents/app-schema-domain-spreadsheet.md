@@ -5,7 +5,7 @@
 
 Make your spreadsheet app’s actions available in the Shortcuts app by adopting schemas for spreadsheet management.
 
-#### Overview
+## Overview
 
 The `.spreadsheet` domain defines app schemas that provide a structured representation for common spreadsheet actions and content. Apply schemas in the `.spreadsheet` domain to make your spreadsheet app’s functionality available as actions in the Shortcuts app. Schemas in this domain don’t make your conforming types discoverable by Apple Intelligence and Siri.
 

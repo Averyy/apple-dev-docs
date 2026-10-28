@@ -23,7 +23,7 @@ static var withWeekOfYear: ISO8601DateFormatter.Options { get }
 NSISO8601DateFormatWithWeekOfYear
 ```
 
-#### Discussion
+## Discussion
 
 The date representation includes the week of the year. The format for week of year is `ww`, including the `W` prefix.
 

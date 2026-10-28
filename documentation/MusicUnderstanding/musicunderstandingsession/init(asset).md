@@ -21,7 +21,7 @@ Creates a music understanding session from an audio asset.
 convenience init(asset: any AVAsset & Sendable) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when your audio source is an `AVAsset` rather than a streaming sequence of audio buffers.
 

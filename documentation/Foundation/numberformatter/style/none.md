@@ -25,7 +25,7 @@ case none
 NSNumberFormatterNoStyle
 ```
 
-#### Discussion
+## Discussion
 
 For example, the number 1234.5678 is represented as 1235.
 

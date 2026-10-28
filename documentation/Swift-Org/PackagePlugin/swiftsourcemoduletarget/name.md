@@ -17,7 +17,7 @@ The name of the target, as defined in the package manifest.
 let name: String
 ```
 
-#### Discussion
+## Discussion
 
 This name is unique among the targets of the package in which it is defined.
 

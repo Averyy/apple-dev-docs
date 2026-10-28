@@ -19,7 +19,7 @@ var isFirstResponder: Bool { get }
 @property (readonly, getter=isFirstResponder) BOOL firstResponder;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the collection view is the first responder. This property is fully key-value observing compliant.
 

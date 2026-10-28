@@ -19,11 +19,11 @@
 static bool SPAffineTransform3DFloatIsUniform(SPAffineTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the transform is uniform over all dimensions.
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the transform scales equally over all dimensions.
 

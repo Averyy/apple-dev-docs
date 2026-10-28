@@ -22,11 +22,11 @@ func presentOpenInMenu(from item: UIBarButtonItem, animated: Bool) -> Bool
 - (BOOL) presentOpenInMenuFromBarButtonItem:(UIBarButtonItem *) item animated:(BOOL) animated;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if this method was able to display the menu or [`false`](../../Swift/false.md) if it was not.
 
-#### Discussion
+## Discussion
 
 This method is similar to the [`presentOptionsMenu(from:animated:)`](./presentoptionsmenu%28from,animated%29.md) method, but presents a menu restricted to a list of apps capable of opening the current document. This determination is made based on the document type (as indicated by the [`uti`](./uti.md) property) and on the document types supported by the installed apps. To support one or more document types, an app must register those types in its `Info.plist` file using the `CFBundleDocumentTypes` key.
 

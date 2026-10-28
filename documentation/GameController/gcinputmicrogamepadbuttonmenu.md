@@ -24,7 +24,7 @@ let GCInputMicroGamepadButtonMenu: String
 extern NSString * const GCInputMicroGamepadButtonMenu;
 ```
 
-#### Discussion
+## Discussion
 
 For the first-generation Siri Remote, this represents the menu button. For the second-generation Siri Remote, this represents the back button.
 

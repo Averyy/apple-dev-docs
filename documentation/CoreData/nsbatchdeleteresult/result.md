@@ -25,7 +25,7 @@ var result: Any? { get }
 @property (strong, readonly, nullable) id result;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`resultType`](./resulttype.md) to determine the kind of value this property contains, and then cast to the appropriate type as the following example shows:
 

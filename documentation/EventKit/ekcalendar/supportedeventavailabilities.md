@@ -24,7 +24,7 @@ var supportedEventAvailabilities: EKCalendarEventAvailabilityMask { get }
 @property (nonatomic, readonly) EKCalendarEventAvailabilityMask supportedEventAvailabilities;
 ```
 
-#### Discussion
+## Discussion
 
 If the calendar doesn’t support event availability settings, this value is [`EKCalendarEventAvailabilityNone`](../ekcalendareventavailabilitymask/ekcalendareventavailabilitynone.md).
 

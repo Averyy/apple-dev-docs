@@ -47,7 +47,7 @@ protocol GKLocalPlayerListener : GKChallengeListener, GKInviteEventListener, GKT
 - [Saving the player’s game data to an iCloud account](./saving-the-player-s-game-data-to-an-icloud-account.md)
 - [Starting turn-based matches and passing turns between players](./starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Overview
+## Overview
 
 Adopt the [`GKLocalPlayerListener`](./gklocalplayerlistener.md) protocol to listen for and handle a variety of Game Center events for player accounts instead of the individual [`GKChallengeListener`](./gkchallengelistener.md), [`GKInviteEventListener`](./gkinviteeventlistener.md), [`GKSavedGameListener`](./gksavedgamelistener.md), and [`GKTurnBasedEventListener`](./gkturnbasedeventlistener.md) protocols.
 

@@ -19,7 +19,7 @@ func NSUpdateDynamicServices()
 extern void NSUpdateDynamicServices();
 ```
 
-#### Discussion
+## Discussion
 
 Used by a service-providing application to reregister the services it is willing to provide. To do this, you create a bundle with the extension “`.service`” and place it in the application’s path or `~/Library/Services`. The content of the bundle is identical to a normal service bundle. You then call this function.
 

@@ -19,7 +19,7 @@ func exitFullScreenMode(options: [NSView.FullScreenModeOptionKey : Any]? = nil)
 - (void) exitFullScreenModeWithOptions:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Discussion
+## Discussion
 
 When the [`fullScreenModeApplicationPresentationOptions`](./fullscreenmodeoptionkey/fullscreenmodeapplicationpresentationoptions.md) options is specified when [`enterFullScreenMode(_:withOptions:)`](./enterfullscreenmode%28_,withoptions%29.md) is invoked, exiting full screen mode will restore the previously active [`presentationOptions`](../nsapplication/presentationoptions-swift.property.md).
 

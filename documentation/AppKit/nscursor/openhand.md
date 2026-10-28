@@ -22,7 +22,7 @@ class var openHand: NSCursor { get }
 @property (class, strong, readonly) NSCursor * openHandCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The open-hand cursor.
 

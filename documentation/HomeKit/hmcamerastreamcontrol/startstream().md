@@ -24,7 +24,7 @@ func startStream()
 - (void) startStream;
 ```
 
-#### Discussion
+## Discussion
 
 When streaming has successfully started, the [`cameraStream`](./camerastream.md) property is updated with the new stream.
 

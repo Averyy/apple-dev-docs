@@ -25,7 +25,7 @@ func setColorAttachmentMap(_ mapping: MTLLogicalToPhysicalColorAttachmentMap?)
 - (void) setColorAttachmentMap:(MTLLogicalToPhysicalColorAttachmentMap *) mapping;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to define how the physical color attachments you specify via [`colorAttachments`](../mtl4renderpassdescriptor/colorattachments.md) map to the logical color output the fragment shader writes to.
 

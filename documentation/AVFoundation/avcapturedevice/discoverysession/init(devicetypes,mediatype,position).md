@@ -24,11 +24,11 @@ convenience init(deviceTypes: [AVCaptureDevice.DeviceType], mediaType: AVMediaTy
 + (instancetype) discoverySessionWithDeviceTypes:(NSArray<NSString *> *) deviceTypes mediaType:(AVMediaType) mediaType position:(AVCaptureDevicePosition) position;
 ```
 
-#### Return Value
+## Return Value
 
 A new discovery session.
 
-#### Discussion
+## Discussion
 
 After creating a discovery session, query its [`devices`](./devices.md) property to examine matching devices and choose one for capture.
 

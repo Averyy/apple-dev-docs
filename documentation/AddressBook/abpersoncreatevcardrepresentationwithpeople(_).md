@@ -23,7 +23,7 @@ func ABPersonCreateVCardRepresentationWithPeople(_ people: CFArray!) -> Unmanage
 extern CFDataRefABPersonCreateVCardRepresentationWithPeople(CFArrayRef people);
 ```
 
-#### Return Value
+## Return Value
 
 The vCard representation of the records.
 

@@ -16,11 +16,11 @@ Sets a property in the assertion.
 IOReturn IOPMAssertionSetProperty(IOPMAssertionID theAssertion, CFStringRef theProperty, CFTypeRef theValue);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnNotPriviliged if the caller doesn't have permission to modify this assertion. Returns kIOReturnNotFound if PM can't locate this assertion. Returns kIOReturnError upon an unidentified error. Returns kIOReturnSuccess otherwise.
 
-#### Discussion
+## Discussion
 
 Only the process that created an assertion may change its properties.
 

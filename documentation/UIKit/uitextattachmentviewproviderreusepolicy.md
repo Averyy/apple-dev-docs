@@ -24,7 +24,7 @@ struct UITextAttachmentViewProviderReusePolicy
 enum UITextAttachmentViewProviderReusePolicy : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 By default, when content scrolls out of the visible area, `UITextView` removes the attachment view from the view hierarchy. [`NSTextAttachmentViewProvider`](./nstextattachmentviewprovider.md) itself persists, but the text view may recreate its view when the content returns. Editing the paragraph containing an attachment has a more significant effect: Because [`NSTextLayoutFragment`](./nstextlayoutfragment.md) is immutable, the text view replaces the existing fragment, discarding and recreating any [`NSTextAttachmentViewProvider`](./nstextattachmentviewprovider.md) instances it holds. For attachments with views like a media player, a drawing canvas, or a focused control, either behavior can cause views to flicker or lose their state.
 

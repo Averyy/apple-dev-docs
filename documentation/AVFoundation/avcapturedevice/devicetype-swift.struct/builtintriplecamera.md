@@ -22,7 +22,7 @@ static let builtInTripleCamera: AVCaptureDevice.DeviceType
 extern AVCaptureDeviceType const AVCaptureDeviceTypeBuiltInTripleCamera;
 ```
 
-#### Discussion
+## Discussion
 
 The built-in triple camera supports the following features:
 

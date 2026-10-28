@@ -5,7 +5,7 @@
 
 Adjust the clip’s frame rate to match the project’s frame rate.
 
-#### Overview
+## Overview
 
 Final Cut Pro uses frame sampling to adjust playback speed for time maps and rate conforming. The `frameSampling` attribute accepts one of the following rate conform settings: `floor`, `nearest-neighbor`, `frame-blending`, `optical-flow-classic`, or `optical-flow`. If you apply both time maps and rate conforming on the same clip, specify the same frame sampling method in both.
 

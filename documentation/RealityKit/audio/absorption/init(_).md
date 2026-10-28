@@ -26,7 +26,7 @@ init(_ coefficientByFrequency: [Float : Float])
 init(_ coefficients: [Float])
 ```
 
-#### Discussion
+## Discussion
 
 The Sabine absorption coefficient is a value between zero and one that describes the proportion of incident sound energy a surface absorbs.
 

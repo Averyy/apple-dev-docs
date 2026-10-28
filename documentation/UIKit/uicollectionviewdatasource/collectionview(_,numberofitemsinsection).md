@@ -24,7 +24,7 @@ func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection s
 - (NSInteger) collectionView:(UICollectionView *) collectionView numberOfItemsInSection:(NSInteger) section;
 ```
 
-#### Return Value
+## Return Value
 
 The number of items in `section`.
 

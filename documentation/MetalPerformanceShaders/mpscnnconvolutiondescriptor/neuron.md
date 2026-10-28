@@ -24,7 +24,7 @@ var neuron: MPSCNNNeuron? { get set }
 @property (nonatomic, retain, readwrite) const MPSCNNNeuron * neuron;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

@@ -23,11 +23,11 @@ func input(before input: Self.FormatInput) -> Self.FormatInput?
 
 Available when `FormatInput` conforms to `FixedWidthInteger`.
 
-#### Return Value
+## Return Value
 
 The next “smalller” input value that can be represented by [`FormatInput`](../formatstyle/formatinput.md) or an underlying representation the format style uses internally.
 
-#### Discussion
+## Discussion
 
 Use this function to determine if the return value provided by [`discreteInput(after:)`](./discreteinput%28after%29.md) is precise enough for your use case for any input `y`:
 

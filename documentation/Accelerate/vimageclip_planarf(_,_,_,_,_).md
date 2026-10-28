@@ -25,11 +25,11 @@ func vImageClip_PlanarF(_ src: UnsafePointer<vImage_Buffer>, _ dest: UnsafePoint
 vImage_Error vImageClip_PlanarF(const vImage_Buffer *src, const vImage_Buffer *dest, Pixel_F maxFloat, Pixel_F minFloat, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function performs the following calculation for each pixel:
 

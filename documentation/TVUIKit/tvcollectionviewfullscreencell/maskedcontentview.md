@@ -19,7 +19,7 @@ var maskedContentView: UIView { get }
 @property (nonatomic, readonly) UIView * maskedContentView;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to modify the parallax effect applied on the cell and its content. Add any other UI elements to be included on the cell to this view.
 

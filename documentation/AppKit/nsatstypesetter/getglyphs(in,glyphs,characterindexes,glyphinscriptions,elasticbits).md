@@ -19,7 +19,7 @@ func getGlyphs(in glyphsRange: NSRange, glyphs glyphBuffer: UnsafeMutablePointer
 - (NSUInteger) getGlyphsInRange:(NSRange) glyphsRange glyphs:(NSGlyph *) glyphBuffer characterIndexes:(NSUInteger *) charIndexBuffer glyphInscriptions:(NSGlyphInscription *) inscribeBuffer elasticBits:(BOOL *) elasticBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 The `charIndexBuffer` contains the original characters for the glyphs. Note that a glyph at index 1 is not necessarily mapped to the character at index 1, since a glyph may be for a ligature or accent.
 

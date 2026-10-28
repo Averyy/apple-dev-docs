@@ -21,7 +21,7 @@ The two-digit representation of a quarter.
 static var twoDigits: Date.FormatStyle.Symbol.Quarter { get }
 ```
 
-#### Discussion
+## Discussion
 
 This custom format style conveys a two-digit representation of a quarter. For example, `02`, for the second quarter.
 

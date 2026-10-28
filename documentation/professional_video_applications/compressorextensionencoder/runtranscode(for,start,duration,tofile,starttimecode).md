@@ -20,7 +20,7 @@ func runTranscode(for decoder: CompressorMediaDecoderPtr!, start startFrame: Int
 - (void) runTranscodeFor:(CompressorMediaDecoderPtr) decoder start:(int64_t) startFrame duration:(int64_t) numFrames toFile:(NSURL *) file startTimeCode:(NSDictionary *) timeCodeDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 The Compressor app invokes this method to run an encoding job. Implement this method to transcode media files from the source format into an output format your extension supports. Inside the implementation, call the decoder interface methods to get individual video frames and audio samples to encode.
 

@@ -19,7 +19,7 @@ func transformContext(for box: PDFDisplayBox)
 - (void) transformContextForBox:(PDFDisplayBox) box;
 ```
 
-#### Discussion
+## Discussion
 
 When transforming the current context, this method takes into account the rotation of the page, as well as the origin of the box with respect to the page’s base coordinate system. This is a convenient method to call within the `PDFView` [`draw(_:)`](../pdfview/draw%28_%29.md) method or from within a draw method of a `PDFAnnotation` subclass.
 

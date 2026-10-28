@@ -21,7 +21,7 @@ func load(_ composition: QCComposition!) -> Bool
 - (BOOL) loadComposition:(QCComposition *) composition;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; otherwise [`false`](../../Swift/false.md). If unsuccessful, any composition that’s already loaded in the view remains loaded.
 

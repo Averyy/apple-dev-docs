@@ -20,7 +20,7 @@ Creates an IK rig from a joint hierarchy.
 init(named name: String, rootJoint: SkeletonResource.Joint) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the joint hierarchy contains invalid data.
 

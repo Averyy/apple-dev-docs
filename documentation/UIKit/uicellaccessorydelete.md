@@ -19,7 +19,7 @@ The delete system accessory.
 @interface UICellAccessoryDelete : UICellAccessory
 ```
 
-#### Overview
+## Overview
 
 A delete accessory is a minus sign inside of a circle with the default system red color. This accessory appears on the leading edge of the cell.
 

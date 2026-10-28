@@ -19,7 +19,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 Instead of initializing a Wi-Fi client directly, consider using the shared instance available from the [`shared()`](./shared%28%29.md) class method.
 

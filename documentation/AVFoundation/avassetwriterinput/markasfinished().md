@@ -24,7 +24,7 @@ func markAsFinished()
 - (void) markAsFinished;
 ```
 
-#### Discussion
+## Discussion
 
 Apps that monitor an input’s [`isReadyForMoreMediaData`](./isreadyformoremediadata.md) value must call this method when they finish appending to it. This is necessary to prevent other inputs from stalling because they’re waiting on the input’s media data to complete the ideal interleaving pattern.
 

@@ -21,7 +21,7 @@ A closure that the playback controller executes when it reaches the end of the a
 @preconcurrency var completionHandler: (() -> Void)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The controller doesn’t call the closure if you manually stop the audio by calling the [`stop()`](./stop%28%29.md) or the [`pause()`](./pause%28%29.md) method.
 

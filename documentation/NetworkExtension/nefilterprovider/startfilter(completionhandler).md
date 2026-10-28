@@ -27,7 +27,7 @@ func startFilter() async throws
 - (void) startFilterWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by the system to start the filter.
 

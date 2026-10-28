@@ -25,7 +25,7 @@ let kCGImageDestinationOptimizeColorForSharing: CFString
 extern CFStringRef const kCGImageDestinationOptimizeColorForSharing;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key must be a [`CFBoolean`](../CoreFoundation/cfboolean.md) value. The default value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md). Include this key and set it to [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) to color convert the image using its colorspace, which provides better compatibility with older devices.
 

@@ -24,7 +24,7 @@ var domainVersion: NSFileProviderDomainVersion? { get }
 @property (nonatomic, readonly, nullable) NSFileProviderDomainVersion * domainVersion;
 ```
 
-#### Discussion
+## Discussion
 
 The system sets this property when you call the enumerator’s methods. The value is initially `nil`.
 

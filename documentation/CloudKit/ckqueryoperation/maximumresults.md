@@ -25,7 +25,7 @@ class let maximumResults: Int
 extern const NSUInteger CKQueryOperationMaximumResults;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this constant doesn’t correspond to the actual number of records. CloudKit dynamically determines the actual number according to various conditions at runtime.
 

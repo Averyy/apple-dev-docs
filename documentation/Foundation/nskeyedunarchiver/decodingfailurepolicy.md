@@ -25,7 +25,7 @@ var decodingFailurePolicy: NSCoder.DecodingFailurePolicy { get set }
 @property (readwrite) NSDecodingFailurePolicy decodingFailurePolicy;
 ```
 
-#### Discussion
+## Discussion
 
 The unarchiver may fail to decode an entry for the following reasons:
 

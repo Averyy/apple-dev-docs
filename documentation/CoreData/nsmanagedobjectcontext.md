@@ -32,17 +32,17 @@ class NSManagedObjectContext
 - [Using Core Data in the background](./using-core-data-in-the-background.md)
 - [Setting up a Core Data stack](./setting-up-a-core-data-stack.md)
 
-#### Overview
+## Overview
 
 A context consists of a group of related model objects that represent an internally consistent view of one or more persistent stores. Changes to managed objects remain in memory in the associated context until Core Data saves that context to one or more persistent stores. A single managed object instance exists in one and only one context, but multiple copies of an object can exist in different contexts. Therefore, an object is unique to a particular context.
 
-##### Life cycle management
+### Life cycle management
 
 The context is a powerful object with a central role in the life cycle of managed objects, with responsibilities from life cycle management (including faulting) to validation, inverse relationship handling, and undo/redo. Through a context you can retrieve or “fetch” objects from a persistent store, make changes to those objects, and then either discard the changes or—again through the context—commit them back to the persistent store. The context is responsible for watching for changes in its objects and maintains an undo manager so you can have finer-grained control over undo and redo. You can insert new objects and delete ones you have fetched, and commit these modifications to the persistent store.
 
 All objects fetched from an external store are registered in a context together with a global identifier (an instance of `NSManagedObjectID`) that’s used to uniquely identify each object to the external store.
 
-##### Parent store
+### Parent store
 
 Managed object contexts have a parent store from which they retrieve data representing managed objects and through which they commit changes to managed objects.
 
@@ -57,7 +57,7 @@ As the first scenario implies, a parent context can service requests from childr
 
 When you save changes in a context, the changes are only committed “one store up.” If you save a child context, changes are pushed to its parent. Changes are not saved to the persistent store until the root context is saved. (A root managed object context is one whose parent context is `nil`.) In addition, a parent does not pull changes from children before it saves. You must save a child context if you want ultimately to commit the changes.
 
-##### Notifications
+### Notifications
 
 A context posts notifications at various points—see [`NSManagedObjectContextObjectsDidChange`](../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextobjectsdidchange.md) for example. Typically, you should register to receive these notifications only from known contexts:
 
@@ -81,7 +81,7 @@ NotificationCenter.default.addObserver(self,
 
 Several system frameworks use Core Data internally. If you register to receive these notifications from all contexts (by passing `nil` as the object parameter to a method such as [`addObserver(_:selector:name:object:)`](../Foundation/notificationcenter/addobserver%28_,selector,name,object%29.md)), then you may receive unexpected notifications that are difficult to handle.
 
-##### Concurrency
+### Concurrency
 
 Core Data uses thread (or serialized queue) confinement to protect managed objects and managed object contexts (see [Core Data Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/CoreData/index.html#//apple_ref/doc/uid/TP40001075)). A consequence of this is that a context assumes the default owner is the thread or queue that creates it. Don’t, therefore, initialize a context on one thread then pass it to another. Instead, pass a reference to a persistent store coordinator and have the receiving thread or queue create a new context using that. If you use [`Operation`](../Foundation/operation.md), you must create the context in [`main()`](../Foundation/operation/main%28%29.md) (for a serial queue) or [`start()`](../Foundation/operation/start%28%29.md) (for a concurrent queue).
 
@@ -169,7 +169,7 @@ __block NSUInteger count = 0;
 NSLog(@"The fetch request would return %lu objects", count);
 ```
 
-##### Subclassing notes
+### Subclassing notes
 
 You are strongly discouraged from subclassing `NSManagedObjectContext`. The change tracking and undo management mechanisms are highly optimized and hence intricate and delicate. Interposing your own additional logic that might impact [`processPendingChanges()`](./nsmanagedobjectcontext/processpendingchanges%28%29.md) can have unforeseen consequences. In situations such as store migration, Core Data will create instances of `NSManagedObjectContext` for its own use. Under these circumstances, you cannot rely on any features of your custom subclass. Any `NSManagedObject` subclass must always be fully compatible with `NSManagedObjectContext` (that is, it cannot rely on features of a subclass of `NSManagedObjectContext`).
 

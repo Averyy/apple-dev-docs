@@ -21,7 +21,7 @@ SwiftUI places the search field automatically.
 static let automatic: SearchFieldPlacement
 ```
 
-#### Discussion
+## Discussion
 
 Placement of the search field depends on the platform:
 

@@ -22,7 +22,7 @@ nonisolated
 struct LinearProgressViewStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`linear`](./progressviewstyle/linear.md) to construct this style.
 

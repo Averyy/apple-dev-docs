@@ -21,11 +21,11 @@ func SecACLRemove(_ aclRef: SecACL) -> OSStatus
 OSStatus SecACLRemove(SecACLRef aclRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This method fails if you attempt to remove the owner entry because an access instance must have exactly one such ACL at all times. If you need to change ownership settings, modify the existing owner entry rather than replacing it. In particular, use the [`SecAccessCopyMatchingACLList(_:_:)`](./secaccesscopymatchingacllist%28_,_%29.md) method with the [`kSecACLAuthorizationChangeACL`](./ksecaclauthorizationchangeacl.md) authorization to find the existing entry, and the [`SecACLSetContents(_:_:_:_:)`](./secaclsetcontents%28_,_,_,_%29.md) method to change it as needed.
 

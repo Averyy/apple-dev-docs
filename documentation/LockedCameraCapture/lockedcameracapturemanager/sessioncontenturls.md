@@ -16,7 +16,7 @@ An array of URLs that each point to a directory containing captured content.
 final var sessionContentURLs: [URL] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Content in the URLs is captured during a capture extension’s [`LockedCameraCaptureSession`](../lockedcameracapturesession.md). These directories are located within the capture extension’s containing app’s data container.
 

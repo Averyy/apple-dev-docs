@@ -16,7 +16,7 @@ var symbolicationError: (any Error)? { get }
 @property (readonly, nullable) NSError * symbolicationError;
 ```
 
-#### Discussion
+## Discussion
 
 The system doesn’t serialize this error when it encodes the frames.
 

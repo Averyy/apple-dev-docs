@@ -25,7 +25,7 @@ func save(_ subscription: CKSubscription, completionHandler: @escaping @Sendable
 - (void) saveSubscription:(CKSubscription *) subscription completionHandler:(void (^)(CKSubscription *subscription, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameters:
 

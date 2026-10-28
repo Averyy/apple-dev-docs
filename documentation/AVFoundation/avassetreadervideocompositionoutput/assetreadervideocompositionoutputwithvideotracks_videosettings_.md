@@ -20,7 +20,7 @@ Returns a new object that reads composited video from the specified video tracks
 + (instancetype) assetReaderVideoCompositionOutputWithVideoTracks:(NSArray<AVAssetTrack *> *) videoTracks videoSettings:(NSDictionary<NSString *,id> *) videoSettings;
 ```
 
-#### Return Value
+## Return Value
 
 A new video composition output, or `nil` if initialization fails.
 

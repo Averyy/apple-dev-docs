@@ -20,7 +20,7 @@ Animates changes to one or more views using a spring animation with the specifie
 @preconcurrency class func animate(springDuration duration: TimeInterval = 0.5, bounce: CGFloat = 0.0, initialSpringVelocity: CGFloat = 0.0, delay: TimeInterval = 0.0, options: UIView.AnimationOptions = [], animations: () -> Void, completion: ((Bool) -> Void)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 > **Related sessions from WWDC23**:  Session 10055: [What’s new in UIKit](https://developer.apple.com/videos/play/wwdc2023/10055/)
 

@@ -29,7 +29,7 @@ class GKTurnBasedExchangeReply
 
 - [Exchanging data between players in turn-based games](./exchanging-data-between-players-in-turn-based-games.md)
 
-#### Overview
+## Overview
 
 When you accept an exchange request using the [`reply(withLocalizableMessageKey:arguments:data:completionHandler:)`](./gkturnbasedexchange/reply%28withlocalizablemessagekey,arguments,data,completionhandler%29.md) method, GameKit sends a `GKTurnBasedExchangeReply` object to participants using the [`player(_:receivedExchangeReplies:forCompletedExchange:for:)`](./gkturnbasedeventlistener/player%28_,receivedexchangereplies,forcompletedexchange,for%29.md) protocol method. You can also get responses to exchange requests from the [`GKTurnBasedExchange`](./gkturnbasedexchange.md) object using the [`replies`](./gkturnbasedexchange/replies.md) parameter.
 

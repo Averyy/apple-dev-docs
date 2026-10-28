@@ -25,7 +25,7 @@ func NSDecimalDivide(_ result: UnsafeMutablePointer<Decimal>, _ leftOperand: Uns
 extern NSCalculationError NSDecimalDivide(NSDecimal *result, const NSDecimal *leftOperand, const NSDecimal *rightOperand, NSRoundingMode roundingMode);
 ```
 
-#### Discussion
+## Discussion
 
 Divides `leftOperand` by `rightOperand` and stores the quotient, possibly rounded off according to `roundingMode`, in `result`. If `rightOperand` is 0, returns `NSDivideByZero`.
 

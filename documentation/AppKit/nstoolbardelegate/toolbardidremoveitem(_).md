@@ -23,7 +23,7 @@ optional func toolbarDidRemoveItem(_ notification: Notification)
 - (void) toolbarDidRemoveItem:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to update data structures related to your toolbar items.
 

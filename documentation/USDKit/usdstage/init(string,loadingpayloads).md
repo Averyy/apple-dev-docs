@@ -20,7 +20,7 @@ Creates a stage from a string containing a `.usda` document.
 init(string: String, loadingPayloads: USDStage.InitialLoadRule = .all) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the string cannot be read as a `.usda` layer.
 

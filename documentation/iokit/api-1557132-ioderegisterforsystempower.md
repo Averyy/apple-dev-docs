@@ -16,7 +16,7 @@ Disconnects the caller from the Root Power Domain IOService after receiving syst
 IOReturn IODeregisterForSystemPower(io_object_t *notifier);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess or an error condition if request failed.
 

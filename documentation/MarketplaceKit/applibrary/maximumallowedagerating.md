@@ -21,7 +21,7 @@ final var maximumAllowedAgeRating: Int { get }
 
 - [Providing age-rating appropriate content](../providing-age-rating-appropriate-content.md)
 
-#### Discussion
+## Discussion
 
 The framework derives the value of this property according to the restrictions set on the device.
 

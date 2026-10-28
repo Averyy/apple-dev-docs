@@ -40,7 +40,7 @@ func selectionForLine(at point: NSPoint) -> PDFSelection?
 - (PDFSelection *) selectionForLineAtPoint:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 Returns `NULL` if no line of text contains `point`.
 

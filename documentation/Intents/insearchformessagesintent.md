@@ -27,7 +27,7 @@ class INSearchForMessagesIntent
 
 - [Improving interactions between Siri and your messaging app](../SiriKit/improving-interactions-between-siri-and-your-messaging-app.md)
 
-#### Overview
+## Overview
 
 Siri creates [`INSearchForMessagesIntent`](./insearchformessagesintent.md) objects when the user asks to see sent or received messages. You must implement this intent to support the reading of messages by Siri. This intent object contains the values for you to match when searching the user’s messages. Users can search for messages involving a specific person, messages with specific sent or received dates, or messages containing specific terms. When performing the search, use only the provided parameters, and ignore any that have no values.
 
@@ -37,7 +37,7 @@ To handle this intent, the handler object in your Intents extension must adopt t
 
 To allow a user wearing AirPods to automatically hear messages, you must implement both [`INSearchForMessagesIntent`](./insearchformessagesintent.md) and [`INSendMessageIntent`](./insendmessageintent.md). Add [`announcement`](../UserNotifications/unauthorizationoptions/announcement.md) to the options when calling [`requestAuthorization(options:completionHandler:)`](../UserNotifications/unusernotificationcenter/requestauthorization%28options,completionhandler%29.md). Finally, add [`allowAnnouncement`](../UserNotifications/unnotificationcategoryoptions/allowannouncement.md) to the category option and [`INSearchForMessagesIntent`](./insearchformessagesintent.md) to the category intent identifier.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 Additional attributes of this intent object include the following:
 

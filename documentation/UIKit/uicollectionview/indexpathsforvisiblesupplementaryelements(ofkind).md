@@ -23,7 +23,7 @@ func indexPathsForVisibleSupplementaryElements(ofKind elementKind: String) -> [I
 - (NSArray<NSIndexPath *> *) indexPathsForVisibleSupplementaryElementsOfKind:(NSString *) elementKind;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects, each of which corresponds to a visible supplementary view in the collection view. If there are no visible supplementary views, this method returns an empty array.
 

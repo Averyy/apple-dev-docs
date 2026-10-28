@@ -25,11 +25,11 @@ func vImageClipToAlpha_PlanarF(_ src: UnsafePointer<vImage_Buffer>, _ alpha: Uns
 vImage_Error vImageClipToAlpha_PlanarF(const vImage_Buffer *src, const vImage_Buffer *alpha, const vImage_Buffer *dest, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 On return of this function, the value of each pixel in the destination buffer is:
 

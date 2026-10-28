@@ -21,7 +21,7 @@ App Transport Security disallowed a connection because there is no secure networ
 NSURLErrorAppTransportSecurityRequiresSecureConnection
 ```
 
-#### Discussion
+## Discussion
 
 Starting in iOS 9.0 and macOS v10.11, App Transport Security (ATS) is enabled by default for connections created by [`URLSession`](./urlsession.md). ATS requires the use of best practice secure protocols in HTTPS. For more information on ATS, see [NSAppTransportSecurity](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CocoaKeys.html#//apple_ref/doc/plist/info/NSAppTransportSecurity) in [Information Property List Key Reference](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009247).
 

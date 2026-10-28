@@ -23,11 +23,11 @@ optional func application(_ application: UIApplication, shouldRestoreSecureAppli
 - (BOOL) application:(UIApplication *) application shouldRestoreSecureApplicationState:(NSCoder *) coder;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to restore the app’s saved state; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Apps must implement both this method and [`application(_:shouldSaveSecureApplicationState:)`](./application%28_,shouldsavesecureapplicationstate%29.md) for state preservation to occur.
 

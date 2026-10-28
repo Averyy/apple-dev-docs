@@ -14,7 +14,7 @@ Combines the channels from three streams into three channels of a single output 
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Combine 3 (color3f)**:
 

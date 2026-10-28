@@ -13,7 +13,7 @@
 #define kIOPropertyInternalKey
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of Internal for the key kIOPropertyPhysicalInterconnectLocationKey. If the device is connected to an internal bus, this key should be set.
 

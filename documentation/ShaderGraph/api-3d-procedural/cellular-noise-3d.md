@@ -14,7 +14,7 @@ A 3D cellular noise generator.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -24,11 +24,11 @@ A 3D cellular noise generator.
 | --- | --- |
 | `Out` | Float |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Position`**: The 3D coordinates at which the data is read in order to map the texture onto a surface. The default is to use the current 3D object-space coordinates.
 
-#### Discussion
+## Discussion
 
 The `Cellular Noise 3D` shader node procedurally generates noise patterns that you can use to add texture and variation to materials. Because this node generates noise in 3D, the texture doesn’t repeat in the Z direction, but rather continue as depth changes. Below is an example of a node graph that uses the `Cellular Noise 3D` node to generate a black and white pattern procedurally:
 

@@ -24,7 +24,7 @@ enum EKSourceType
 enum EKSourceType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The [`sourceType`](./eksource/sourcetype.md) property will be set to one of these values.
 

@@ -23,11 +23,11 @@ func contains(_ member: Element) -> Bool
 
 Available when `Element` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 `true` if `member` exists in the set; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This example uses the `contains(_:)` method to test whether an integer is a member of a set of prime numbers.
 

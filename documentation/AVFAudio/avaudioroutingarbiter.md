@@ -19,7 +19,7 @@ class AVAudioRoutingArbiter
 @interface AVAudioRoutingArbiter : NSObject
 ```
 
-#### Overview
+## Overview
 
 AirPods Automatic Switching is a feature of Apple operating systems that intelligently connects wireless headphones to the most appropriate audio device in a multidevice environment. For example, if a user plays a movie on iPad, and then locks the device and starts playing music on iPhone, the system automatically switches the source audio device from iPad to iPhone.
 

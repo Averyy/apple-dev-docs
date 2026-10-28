@@ -20,7 +20,7 @@ func toggleQuickLookPreviewPanel(_ sender: Any?)
 - (void) toggleQuickLookPreviewPanel:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This action message toggles the visibility state of the Quick Look preview panel if the receiver is the current Quick Look controller.
 

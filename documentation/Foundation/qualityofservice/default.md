@@ -23,7 +23,7 @@ case `default`
 NSQualityOfServiceDefault
 ```
 
-#### Discussion
+## Discussion
 
 Indicates no explicit quality of service information. Whenever possible, an appropriate quality of service is determined from available sources. Otherwise, some quality of service level between `NSQualityOfServiceUserInteractive` and `NSQualityOfServiceUtility` is used.
 

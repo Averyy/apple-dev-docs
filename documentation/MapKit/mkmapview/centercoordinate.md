@@ -24,7 +24,7 @@ var centerCoordinate: CLLocationCoordinate2D { get set }
 @property (nonatomic) CLLocationCoordinate2D centerCoordinate;
 ```
 
-#### Discussion
+## Discussion
 
 Changing the value in this property centers the map on the new coordinate without changing the current zoom level. It also updates the values in the [`region`](./region.md) property to reflect the new center coordinate and the new span values needed to maintain the current zoom level.
 

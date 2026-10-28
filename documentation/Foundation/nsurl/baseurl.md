@@ -29,7 +29,7 @@ var baseURL: URL? { get }
 
 - [isEqual:](../nsurl-isequal.md)
 
-#### Discussion
+## Discussion
 
 This property contains the base URL. If the receiver is an absolute URL, this property contains `nil`.
 

@@ -21,7 +21,7 @@ class var controlHighlightColor: NSColor { get }
 @property (class, strong, readonly) NSColor * controlHighlightColor;
 ```
 
-#### Return Value
+## Return Value
 
 Of the two light borders that run along the top and left of controls, representing reflections from a light source in the upper left, the color of the inner, duller border. For more information, see [`NSColor`](../nscolor.md).
 

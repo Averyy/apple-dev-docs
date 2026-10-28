@@ -15,7 +15,7 @@ Creates a new [`HoverEffectGroup`](../hovereffectgroup.md) from a `Namespace.ID`
 init(_ namespace: Namespace.ID, behavior: HoverEffectGroup.Behavior = .activatesGroup)
 ```
 
-#### Return Value
+## Return Value
 
 A new HoverEffectGroup
 

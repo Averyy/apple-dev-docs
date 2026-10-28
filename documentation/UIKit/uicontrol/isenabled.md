@@ -23,7 +23,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property to [`true`](../../Swift/true.md) to enable the control or [`false`](../../Swift/false.md) to disable it. An enabled control is capable of responding to user interactions, whereas a disabled control ignores touch events and may draw itself differently. Setting this property to [`false`](../../Swift/false.md) adds the [`disabled`](./state-swift.struct/disabled.md) flag to the control’s [`state`](./state-swift.property.md) bitmask; enabling the control again removes that flag.
 

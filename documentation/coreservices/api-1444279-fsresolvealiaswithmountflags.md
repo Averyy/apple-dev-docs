@@ -17,11 +17,11 @@ Returns an `FSRef` to the target of an alias.
 OSErr FSResolveAliasWithMountFlags(const FSRef *fromFile, AliasHandle inAlias, FSRef *target, Boolean *wasChanged, unsigned long mountFlags);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The function `FSResolveAliasWithMountFlags` is identical to [`FSResolveAlias`](./api-1444297-fsresolvealias.md) with the exception that it provides the `mountFlags` parameter, allowing callers additional control over how the alias is resolved.
 

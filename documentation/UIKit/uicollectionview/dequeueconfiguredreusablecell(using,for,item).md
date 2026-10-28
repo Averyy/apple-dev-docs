@@ -20,7 +20,7 @@ Dequeues a configured reusable cell object.
 @preconcurrency func dequeueConfiguredReusableCell<Cell, Item>(using registration: UICollectionView.CellRegistration<Cell, Item>, for indexPath: IndexPath, item: Item?) -> Cell where Cell : UICollectionViewCell
 ```
 
-#### Return Value
+## Return Value
 
 A configured reusable cell object.
 

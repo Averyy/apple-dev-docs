@@ -25,7 +25,7 @@ func setDepthStencilState(_ depthStencilState: (any MTLDepthStencilState)?)
 - (void) setDepthStencilState:(id<MTLDepthStencilState>) depthStencilState;
 ```
 
-#### Discussion
+## Discussion
 
 This method changes the combined depth and stencil state for the render command encoder that’s compatible with its depth and stencil attachment configuration. For example, if the new state enables depth testing or depth writing, the render pass needs to have a depth attachment. Similarly, if the new state enables stencil testing or stencil writing, the render pass’s stencil needs to have a stencil attachment. You create depth and stencil attachments for a render pass by assigning the [`depthAttachment`](../mtlrenderpassdescriptor/depthattachment.md) and [`stencilAttachment`](../mtlrenderpassdescriptor/stencilattachment.md) properties of the [`MTLRenderPassDescriptor`](../mtlrenderpassdescriptor.md) instance that creates it.
 

@@ -21,7 +21,7 @@ The repeat mode for media playback.
 enum RepeatMode
 ```
 
-#### Overview
+## Overview
 
 Use this enumeration to specify how the player repeats content during playback.
 

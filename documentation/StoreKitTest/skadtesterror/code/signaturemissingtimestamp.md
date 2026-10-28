@@ -21,7 +21,7 @@ case signatureMissingTimestamp
 SKAdTestErrorCodeSignatureMissingTimestamp
 ```
 
-#### Discussion
+## Discussion
 
 Be sure to include a timestamp when you create and validate an ad impression in the testing environment.
 

@@ -19,7 +19,7 @@ func server() -> IMKServer!
 - (IMKServer *) server;
 ```
 
-#### Return Value
+## Return Value
 
 The server object.
 

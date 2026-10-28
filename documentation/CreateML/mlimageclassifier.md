@@ -24,7 +24,7 @@ struct MLImageClassifier
 - [Creating an Image Classifier Model](./creating-an-image-classifier-model.md)
 - [Improving Your Model’s Accuracy](./improving-your-model-s-accuracy.md)
 
-#### Overview
+## Overview
 
 Use an image classifier to train a machine learning model that you can include in your app to categorize images.
 

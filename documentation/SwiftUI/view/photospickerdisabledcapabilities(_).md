@@ -19,7 +19,7 @@ nonisolated
 func photosPickerDisabledCapabilities(_ disabledCapabilities: PHPickerCapabilities) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A Photos picker with specified capabilities that are disabled.
 

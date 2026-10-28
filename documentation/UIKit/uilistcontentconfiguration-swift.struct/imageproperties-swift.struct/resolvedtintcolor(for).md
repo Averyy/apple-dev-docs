@@ -19,7 +19,7 @@ Generates the resolved tint color for the specified tint color, using the tint c
 func resolvedTintColor(for tintColor: UIColor) -> UIColor
 ```
 
-#### Discussion
+## Discussion
 
 The resulting color depends on [`tintColor`](./tintcolor.md) and [`tintColorTransformer`](./tintcolortransformer.md).
 

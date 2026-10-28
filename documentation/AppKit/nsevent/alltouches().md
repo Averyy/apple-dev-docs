@@ -19,11 +19,11 @@ func allTouches() -> Set<NSTouch>
 - (NSSet<NSTouch *> *) allTouches;
 ```
 
-#### Return Value
+## Return Value
 
 A set of [`NSTouch`](../nstouch.md) objects that correspond to the touches of this event.
 
-#### Discussion
+## Discussion
 
 If the touches originate in different views or windows, each [`NSTouch`](../nstouch.md) object may have a different responder object.
 

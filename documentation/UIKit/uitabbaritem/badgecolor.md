@@ -24,7 +24,7 @@ var badgeColor: UIColor? { get set }
 @property (nonatomic, copy, readwrite, nullable) UIColor * badgeColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. If you don’t specify a value, the item uses [`systemRed`](../uicolor/systemred.md).
 

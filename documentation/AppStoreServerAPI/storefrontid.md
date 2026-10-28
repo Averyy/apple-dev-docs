@@ -19,7 +19,7 @@ string storefrontId
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 This value is the same as the [`id`](../StoreKit/storefront/id.md) value in StoreKit.
 

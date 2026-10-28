@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, didFinishLoadFor frame: WebFrame!)
 - (void) webView:(WebView *) sender didFinishLoadForFrame:(WebFrame *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked when a location request for `frame` has completed; that is, when all the resources are done loading. Additional information about the request can be obtained from the data source of `frame`.
 

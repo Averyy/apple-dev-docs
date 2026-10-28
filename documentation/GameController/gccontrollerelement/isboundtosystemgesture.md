@@ -24,7 +24,7 @@ var isBoundToSystemGesture: Bool { get }
 @property (nonatomic, readonly, getter=isBoundToSystemGesture) BOOL boundToSystemGesture;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`true`](../../Swift/true.md) if the user binds this element to a gesture; otherwise, it’s [`false`](../../Swift/false.md).
 

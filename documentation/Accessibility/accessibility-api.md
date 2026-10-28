@@ -5,7 +5,7 @@
 
 Browse API in the Accessibility framework.
 
-#### Overview
+## Overview
 
 While many Apple frameworks provide built-in accessibility support, the Accessibility framework defines API for supporting additional accessibility features across multiple platforms. The Accessibility framework includes API that enable you to:
 

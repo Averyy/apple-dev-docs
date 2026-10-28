@@ -22,7 +22,7 @@ var availableVideoCodecTypes: [AVVideoCodecType] { get }
 @property (nonatomic, readonly) NSArray<NSString *> * availableVideoCodecTypes;
 ```
 
-#### Discussion
+## Discussion
 
 The first codec in this list is the default for recording movie files. To record using a different codec, call the [`setOutputSettings(_:for:)`](./setoutputsettings%28_,for%29.md) method, passing a video settings dictionary with a value for [`AVVideoCodecKey`](../avvideocodeckey.md) that matches one of the other values in this list.
 

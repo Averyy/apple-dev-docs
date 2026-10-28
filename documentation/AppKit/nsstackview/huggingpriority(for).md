@@ -19,7 +19,7 @@ func huggingPriority(for orientation: NSLayoutConstraint.Orientation) -> NSLayou
 - (NSLayoutPriority) huggingPriorityForOrientation:(NSLayoutConstraintOrientation) orientation;
 ```
 
-#### Return Value
+## Return Value
 
 The Auto Layout priority for the stack view to minimize its size.
 

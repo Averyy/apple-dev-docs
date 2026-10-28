@@ -20,7 +20,7 @@ let SLServiceTypeTwitter: String
 extern NSString * const SLServiceTypeTwitter;
 ```
 
-#### Discussion
+## Discussion
 
 A string constant that identifies the social networking site, Twitter.
 

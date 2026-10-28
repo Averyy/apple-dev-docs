@@ -11,7 +11,7 @@ Share Wi-Fi network credentials securely between devices and connected accessori
 - iPadOS 26.2+
 - Mac Catalyst 26.2+
 
-#### Overview
+## Overview
 
 Companion apps that have paired an accessory with [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) can use the Wi-Fi™️ Infrastructure framework to share networks with their paired accessory over a local Bluetooth 4.2 Secure connection.
 

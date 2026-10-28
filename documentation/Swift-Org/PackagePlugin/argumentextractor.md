@@ -17,7 +17,7 @@ A rudimentary helper for extracting options and flags from a list of strings tha
 struct ArgumentExtractor
 ```
 
-#### Overview
+## Overview
 
 Create the extractor with the full command line arguments provided, then extract all known options and flags, which leaves the positional arguments.
 

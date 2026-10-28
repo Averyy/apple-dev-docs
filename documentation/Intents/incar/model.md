@@ -31,7 +31,7 @@ var model: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * model;
 ```
 
-#### Discussion
+## Discussion
 
 Maps displays this value when it presents information about the electric vehicle.
 

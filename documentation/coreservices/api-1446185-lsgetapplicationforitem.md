@@ -21,11 +21,11 @@ func LSGetApplicationForItem(_ inItemRef: UnsafePointer<FSRef>!, _ inRoleMask: L
 OSStatus LSGetApplicationForItem(const FSRef *inItemRef, LSRolesMask inRoleMask, FSRef *outAppRef, CFURLRef *outAppURL);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Launch Services](./launch_services.md). If no application suitable for opening the item is found in the Launch Services database, the function will return the result code `kLSApplicationNotFoundErr`.
 
-#### Discussion
+## Discussion
 
 Thread-safe since Mac OS version 10.2.
 

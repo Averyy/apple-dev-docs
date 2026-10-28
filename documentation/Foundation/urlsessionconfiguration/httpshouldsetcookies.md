@@ -25,7 +25,7 @@ var httpShouldSetCookies: Bool { get set }
 @property BOOL HTTPShouldSetCookies;
 ```
 
-#### Discussion
+## Discussion
 
 This property controls whether tasks within sessions based on this configuration should automatically provide cookies from the shared cookie store when making requests.
 

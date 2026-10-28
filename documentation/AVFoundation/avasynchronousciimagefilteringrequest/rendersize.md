@@ -26,7 +26,7 @@ var renderSize: CGSize { get }
 @property (nonatomic, readonly) CGSize renderSize;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this property if you need to work with Core Image filters that apply transforms to the image.
 

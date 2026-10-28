@@ -19,7 +19,7 @@ class QLPreviewProvider
 @interface QLPreviewProvider : NSObject
 ```
 
-#### Overview
+## Overview
 
 When you subclass [`QLPreviewProvider`](./qlpreviewprovider.md), conform your subclass to [`QLPreviewingController`](./qlpreviewingcontroller.md).
 

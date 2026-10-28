@@ -22,11 +22,11 @@ func outputImageProviderFromTexture(withPixelFormat format: String!, pixelsWide 
 - (id) outputImageProviderFromTextureWithPixelFormat:(NSString *) format pixelsWide:(NSUInteger) width pixelsHigh:(NSUInteger) height name:(GLuint) name flipped:(BOOL) flipped releaseCallback:(QCPlugInTextureReleaseCallback) callback releaseContext:(void *) context colorSpace:(CGColorSpaceRef) colorSpace shouldColorMatch:(BOOL) colorMatch;
 ```
 
-#### Return Value
+## Return Value
 
 An image provider.
 
-#### Discussion
+## Discussion
 
 You must not modify the texture until the release callback is invoked.
 

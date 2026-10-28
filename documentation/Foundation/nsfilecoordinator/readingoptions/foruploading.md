@@ -25,7 +25,7 @@ static var forUploading: NSFileCoordinator.ReadingOptions { get }
 NSFileCoordinatorReadingForUploading
 ```
 
-#### Discussion
+## Discussion
 
 When this option is used, the file coordinator creates a temporary snapshot of the item being read and relinquishes its claim on the original file. This action prevents the read operation from blocking other coordinated writes during a potentially long upload.
 

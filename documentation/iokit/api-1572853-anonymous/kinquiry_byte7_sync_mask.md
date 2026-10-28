@@ -15,7 +15,7 @@
 kINQUIRY_Byte7_SYNC_Mask = (1 << kINQUIRY_Byte7_SYNC_Bit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to test the SYNC bit.
 

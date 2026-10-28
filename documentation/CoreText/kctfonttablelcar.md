@@ -23,7 +23,7 @@ var kCTFontTableLcar: Int { get }
 kCTFontTableLcar
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for ligature caret.
 

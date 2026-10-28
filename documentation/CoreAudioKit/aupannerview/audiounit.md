@@ -19,7 +19,7 @@ var audioUnit: AudioUnit { get }
 @property (readonly) AudioUnit audioUnit;
 ```
 
-#### Discussion
+## Discussion
 
 On error, returns `nil`.
 

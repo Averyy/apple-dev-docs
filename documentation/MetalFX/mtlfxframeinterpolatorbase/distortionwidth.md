@@ -24,7 +24,7 @@ var distortionWidth: Int { get set }
 @property (nonatomic, readwrite) NSUInteger distortionWidth;
 ```
 
-#### Discussion
+## Discussion
 
 When set to zero (the default), the frame interpolator uses [`contentWidth`](./contentwidth.md) instead.
 

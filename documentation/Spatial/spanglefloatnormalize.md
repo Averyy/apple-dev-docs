@@ -19,11 +19,11 @@
 static SPAngleFloat SPAngleFloatNormalize(SPAngleFloat angle);
 ```
 
-#### Return Value
+## Return Value
 
 The normalized angle.
 
-#### Discussion
+## Discussion
 
 Returns the specified angle normalized to `(-π, π]` radians (`(-180°, 180.0°]`).
 

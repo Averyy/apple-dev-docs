@@ -21,7 +21,7 @@ class SLComposeSheetConfigurationItem
 @interface SLComposeSheetConfigurationItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`SLComposeSheetConfigurationItem`](./slcomposesheetconfigurationitem.md) class gives users a way to configure the properties of a post before posting it. For example, you can use these objects to let users choose an account from which to post, an album to which to post, or a location to add to a post.
 

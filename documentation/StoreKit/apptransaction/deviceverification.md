@@ -21,7 +21,7 @@ The device verification value to use to verify whether the app transaction belon
 let deviceVerification: Data
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [`deviceVerificationID`](../appstore/deviceverificationid.md).
 

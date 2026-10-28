@@ -24,7 +24,7 @@ var type: EKCalendarType { get }
 @property (nonatomic, readonly) EKCalendarType type;
 ```
 
-#### Discussion
+## Discussion
 
 CalDAV-subscribed calendars are of type [`EKCalendarType.calDAV`](../ekcalendartype/caldav.md) with [`isSubscribed`](./issubscribed.md) set to [`true`](../../Swift/true.md).
 

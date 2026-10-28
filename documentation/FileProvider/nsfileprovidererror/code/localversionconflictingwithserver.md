@@ -23,13 +23,13 @@ case localVersionConflictingWithServer
 NSFileProviderErrorLocalVersionConflictingWithServer
 ```
 
-#### Discussion
+## Discussion
 
 When a provider returns this error, it causes the item to be excluded from sync. The system will ensure that the item (and any descendents, in case of a directory), are downloaded, and then issue a deleteItem call to the provider for the item.
 
 The system will call createItemBasedOnTemplate for the item, whenever the item’s metadata changes on disk. This ensures that the provider’s rules for excluding from sync are re-evaluated whenever the item’s properties change.
 
-#### Re-evaluating items
+## Re-evaluating items
 
 If the provider wishes for previously excluded items to be re-sent as createItemBasedOnTemplate calls, the provider may call -[NSFileProviderManager signalErrorResolved:completionHandler:] with this error code.
 

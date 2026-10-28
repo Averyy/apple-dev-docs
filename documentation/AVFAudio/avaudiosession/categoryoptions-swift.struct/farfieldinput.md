@@ -21,7 +21,7 @@ static var farFieldInput: AVAudioSession.CategoryOptions { get }
 AVAudioSessionCategoryOptionFarFieldInput
 ```
 
-#### Discussion
+## Discussion
 
 - This option requires `AVAudioSessionCategoryOptionAllowBluetoothHFP` to be set. Otherwise error will be returned.
 - Support for this can be queried on input ports via the BluetoothMicrophone interface on a port, via its member `farFieldCapture.isSupported`.

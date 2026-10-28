@@ -25,11 +25,11 @@ func comparePositionInDecodeOrder(withPositionOf cursor: AVSampleCursor) -> Comp
 - (NSComparisonResult) comparePositionInDecodeOrderWithPositionOfCursor:(AVSampleCursor *) cursor;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a comparison result that indicates of this cursor points at a sample before, the same as, or after the sample pointed to by the specified cursor.
 
-#### Discussion
+## Discussion
 
 Undefined results occur if this cursor and the passed in cursor reference different sequences of samples, such as when they’re created by different instances of [`AVAssetTrack`](../avassettrack.md).
 

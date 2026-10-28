@@ -20,7 +20,7 @@ class CAConstraint
 @interface CAConstraint : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each [`CAConstraint`](./caconstraint.md) instance encapsulates one geometry relationship between two layers on the same axis.
 

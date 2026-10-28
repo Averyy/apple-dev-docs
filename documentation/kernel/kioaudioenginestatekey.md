@@ -15,7 +15,7 @@ The key in the IORegistry for the IOAudioEngine state atrribute
 #define kIOAudioEngineStateKey
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key may be one of: "Running", "Stopped" or "Paused". Currently the "Paused" state is unimplemented.
 

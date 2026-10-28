@@ -13,7 +13,7 @@
 kSCSITaskStatus_TaskTimeoutOccurred = 0x01
 ```
 
-#### Discussion
+## Discussion
 
 If a task is aborted by the SCSI Protocol Layer due to it exceeding the timeout value specified by the task, the task status shall be set to kSCSITaskStatus_TaskTimeoutOccurred.
 

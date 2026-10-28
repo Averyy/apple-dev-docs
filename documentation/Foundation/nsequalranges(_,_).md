@@ -25,7 +25,7 @@ func NSEqualRanges(_ range1: NSRange, _ range2: NSRange) -> Bool
 static BOOL NSEqualRanges(NSRange range1, NSRange range2);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `range1` and `range2` have the same locations and lengths.
 

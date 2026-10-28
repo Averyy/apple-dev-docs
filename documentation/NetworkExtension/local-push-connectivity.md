@@ -5,7 +5,7 @@
 
 Provide functionality similar to Apple Push Notification Service when access to the wider internet is unavailable.
 
-#### Overview
+## Overview
 
 Use the Local Push Connectivity API to maintain a persistent network connection to a server to alert users to Voice-over-IP (VoIP) calls and other messages. Local Push Connectivity is appropriate for use cases where an iOS device operates on a local, restricted network that doesn’t have access to APNs. The App Push Provider extension functions like a local network replacement for APNs; use it primarily to send small messages and alerts to users.
 
@@ -16,7 +16,7 @@ Local Push Connectivity has two components:
 
 > ❗ **Important**:  To use the Local Push Connectivity API, your app must have the [`Network Extensions Entitlement`](../BundleResources/entitlements/com.apple.developer.networking.networkextension.md) with the `app-push-provider` value. Request this entitlement from the [Entitlement Request Page](https://developer.apple.com/contact/request/local-push-connectivity). After you receive the entitlement, apply it to both your app target and your provider extension target.
 
-##### Supporting APNs and local push connectivity in one app
+### Supporting APNs and local push connectivity in one app
 
 An app can use both Local Push Connectivity and Apple Push Notification Service. Typically, you use Local Push Connectivity in a restricted network environment, and use APNs in an unrestricted network. Think of Local Push Connectivity as your private network replacement for APNs, and therefore limit your functionality within the push provider extension to delivering local notifications and CallKit alerts to users.
 

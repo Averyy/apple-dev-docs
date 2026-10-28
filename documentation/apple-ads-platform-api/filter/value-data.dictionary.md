@@ -15,7 +15,7 @@ The comparison operand supplied for the filter condition.
 object Filter.Value
 ```
 
-#### Discussion
+## Discussion
 
 For single-value operators (`EQUALS`, `NOT_EQUALS`, `GREATER_THAN`, and similar), pass either a bare string or a single-element array. For multi-value operators (`IN`, `BETWEEN`, `CONTAINS_ANY`, `CONTAINS_ALL`), pass an array. The server enforces the operator-specific cardinality.
 

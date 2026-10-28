@@ -35,7 +35,7 @@ typedef struct vImage_Buffer { ... } vImage_Buffer;
 - [Compositing images with vImage blend modes](./compositing-images-with-vimage-blend-modes.md)
 - [Converting bitmap data between Core Graphics images and vImage buffers](./converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md)
 
-#### Overview
+## Overview
 
 The vImage buffer is the fundamental data structure that the vImage library uses to represent image data. To ensure the best performance, the vImage buffer initialization functions may add extra padding to each row. For example, the following code declares an 8-bit per pixel buffer that’s 10 pixels wide:
 

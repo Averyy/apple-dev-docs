@@ -19,11 +19,11 @@ func es_subscriptions(_ client: OpaquePointer, _ count: UnsafeMutablePointer<Int
 extern es_return_t es_subscriptions(es_client_t *client, size_t *count, es_event_type_t **subscriptions);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates whether the subscriptions query succeeded. [`ES_RETURN_ERROR`](./es_return_error.md) indicates that the caller couldn’t reach the Endpoint Security subsystem or that the request was invalid.
 
-#### Discussion
+## Discussion
 
 On return, the caller takes ownership of the memory pointed to by the `subscriptions` parameter, and must free it.
 

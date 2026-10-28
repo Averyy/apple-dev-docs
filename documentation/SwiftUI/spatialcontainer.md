@@ -16,7 +16,7 @@ A layout container that aligns overlapping content in 3D space.
 struct SpatialContainer
 ```
 
-#### Overview
+## Overview
 
 The container will take the max size of each dimension of each of its children, aligning its children based on the `alignment`.
 

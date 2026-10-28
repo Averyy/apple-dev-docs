@@ -23,7 +23,7 @@ case center
 UIStackViewAlignmentCenter
 ```
 
-#### Discussion
+## Discussion
 
 The following image shows an example of a horizontal stack view that uses the [`UIStackView.Alignment.center`](./center.md) alignment.
 

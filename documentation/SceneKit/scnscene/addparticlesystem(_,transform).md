@@ -25,7 +25,7 @@ func addParticleSystem(_ system: SCNParticleSystem, transform: SCNMatrix4)
 - (void) addParticleSystem:(SCNParticleSystem *) system withTransform:(SCNMatrix4) transform;
 ```
 
-#### Discussion
+## Discussion
 
 A particle system directly attached to a scene is not related to the coordinate space of any node in the scene. To attach a particle system whose emitter location follows the movement of a node within the scene, use the corresponding [`SCNNode`](../scnnode.md) method.
 

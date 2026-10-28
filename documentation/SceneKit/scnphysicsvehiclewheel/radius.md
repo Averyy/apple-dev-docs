@@ -25,7 +25,7 @@ var radius: CGFloat { get set }
 @property CGFloat radius;
 ```
 
-#### Discussion
+## Discussion
 
 When you create a wheel from a node, its default radius is half of the largest dimension of the node’s bounding box. (A wheel is always circular, even if the content of the node representing it is not.)
 

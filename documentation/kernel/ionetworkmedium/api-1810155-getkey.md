@@ -9,7 +9,7 @@
 virtual const OSSymbol * getKey() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the key to use for this medium object. This key should be used when this object is added to a dictionary. Same as getName().
 

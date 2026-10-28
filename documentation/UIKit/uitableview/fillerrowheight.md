@@ -23,7 +23,7 @@ var fillerRowHeight: CGFloat { get set }
 @property (nonatomic) CGFloat fillerRowHeight;
 ```
 
-#### Discussion
+## Discussion
 
 Table views with a [`style`](./style-swift.property.md) of [`UITableView.Style.plain`](./style-swift.enum/plain.md) can display filler rows, empty rows that appear below the last row when there isn’t enough content to fill the table view. Set this property to adjust the height of each filler row:
 

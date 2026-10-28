@@ -27,7 +27,7 @@ var delegateClass: AnyClass? { get set }
 
 - [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 
-#### Discussion
+## Discussion
 
 If you specified [`UIWindowScene`](../uiwindowscene.md) in the [`sceneClass`](./sceneclass.md) property, your delegate class must conform to the [`UIWindowSceneDelegate`](../uiwindowscenedelegate.md) protocol. Otherwise, you must specify a class that conforms to the [`UISceneDelegate`](../uiscenedelegate.md) protocol.
 

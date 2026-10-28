@@ -19,17 +19,17 @@ func LSCopyApplicationURLsForURL(_ inURL: CFURL, _ inRoleMask: LSRolesMask) -> U
 CFArrayRef LSCopyApplicationURLsForURL(CFURLRef inURL, LSRolesMask inRoleMask);
 ```
 
-#### Return Value
+## Return Value
 
 An array of Core Foundation URL references, one for each app that can open the designated item with at least one of the specified roles. You are responsible for releasing the array object. If no suitable apps are found in the Launch Services database, the function will return `NULL.`
 
 In macOS 10.15 and later, the returned array is sorted with the first element containing the best available apps for opening the specified URL. Prior to macOS 10.15, the order of elements in the array was undefined.
 
-#### Discussion
+## Discussion
 
 If the item URL’s scheme is `file` (designating either a file or a directory), the selection of suitable applications is based on the designated item’s filename extension, file type, and creator signature, along with the role specified by the `inRolesMask` parameter. Otherwise, the selection is based on the URL scheme (such as `http`, `ftp`, or `mailto`).
 
-##### Version Notes
+### Version Notes
 
 Thread-safe since macOS 10.3.
 

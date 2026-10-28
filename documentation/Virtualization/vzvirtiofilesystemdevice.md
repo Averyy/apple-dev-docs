@@ -19,7 +19,7 @@ class VZVirtioFileSystemDevice
 @interface VZVirtioFileSystemDevice : VZDirectorySharingDevice
 ```
 
-#### Overview
+## Overview
 
 This device exposes host resources to the guest as a file system mount. The directory share defines which resources the host exposes to the guest.
 

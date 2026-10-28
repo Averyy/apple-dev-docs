@@ -19,7 +19,7 @@ struct AccessorySummaryKey
 typedef NSString * NSPrintPanelAccessorySummaryKey;
 ```
 
-#### Discussion
+## Discussion
 
 These keys must be included in the dictionaries returned by the [`localizedSummaryItems()`](../nsprintpanelaccessorizing/localizedsummaryitems%28%29.md) method.
 

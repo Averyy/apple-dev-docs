@@ -19,7 +19,7 @@ func startRecording(to outputFileURL: URL, outputFileType fileType: AVFileType, 
 - (void) startRecordingToOutputFileURL:(NSURL *) outputFileURL outputFileType:(AVFileType) fileType recordingDelegate:(id<AVCaptureFileOutputRecordingDelegate>) delegate;
 ```
 
-#### Discussion
+## Discussion
 
 You do not need not to call [`stopRecording()`](../avcapturefileoutput/stoprecording%28%29.md) before calling this method while another recording is in progress. If this method is invoked while an existing output file was already being recorded, no media samples will be discarded between the old file and the new file.
 

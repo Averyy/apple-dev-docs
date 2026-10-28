@@ -12,7 +12,7 @@ Locate and demarcate rectangles, faces, barcodes, and text in images using the V
 - Mac Catalyst 11.3+
 - Xcode 11.3+
 
-#### Overview
+## Overview
 
 The [Vision](./Vision.md) framework can detect rectangles, faces, text, and barcodes at any orientation.  This sample code shows how to create requests to detect these types of objects, and how to interpret the results of those requests.  To help you visualize where an observation occurs, and how it looks, this code uses Core Animation layers to draw paths around detected features in images.  For example, the following mock gift card has a QR code and rectangles that surface through the detector.  The sample highlights not only text blocks (shown in red) but also individual characters within text (shown in purple):
 
@@ -22,21 +22,21 @@ This sample code project runs on iOS 11. However, you can also use Vision in you
 
 To see this sample in action, build and run the project, then use the toggle switches to choose which kinds of objects (any combination of rectangles, faces, barcodes, and text) to detect.  Tapping anywhere else prompts the sample to request a picture, which you either capture by camera or select from your photo library. The sample then applies computer vision algorithms to find the desired features in the provided image. Finally, the sample draws colored paths around observed features on [Core Animation](../QuartzCore/QuartzCore.md) layers.
 
-##### Prepare an Input Image for Vision
+### Prepare an Input Image for Vision
 
-Vision handles still image-based requests using a [VNImageRequestHandler](./vnimagerequesthandler.md) and assumes that images are oriented upright, so pass your image with orientation in mind. [CGImage](../CoreGraphics/cgimageref.md), [CIImage](../CoreImage/ciimage.md), and [CVPixelBuffer](../CoreVideo/cvpixelbuffer.md) objects don’t carry orientation, so provide it as part of the initializer.
+Vision handles still image-based requests using a [VNImageRequestHandler](./vnimagerequesthandler.md) and assumes that images are oriented upright, so pass your image with orientation in mind. [CGImage](../CoreGraphics/cgimage.md), [CIImage](../CoreImage/ciimage.md), and [CVPixelBuffer](../CoreVideo/cvpixelbuffer.md) objects don’t carry orientation, so provide it as part of the initializer.
 
 You can initialize a [`VNImageRequestHandler`](./vnimagerequesthandler.md) from image data in the following formats:
 
-- [`CGImage`](../CoreGraphics/cgimageref.md): The [Core Graphics](../CoreGraphics/CoreGraphics.md) image format, obtainable from any [UIImage](../UIKit/uiimage.md) through its helper method [CGImage](../UIKit/uiimage/api-1624147-cgimage.md). Specify orientation through the initializer using [CGImagePropertyOrientation](../ImageIO/cgimagepropertyorientation.md).
-- [`CIImage`](../CoreImage/ciimage.md): The [Core Image](../CoreImage/CoreImage.md) format, best used if you already have Core Image in your image processing pipeline. `CIImage` objects don’t contain orientation, so supply it in the initializer [init(ciImage:orientation:options:)](./vnimagerequesthandler/api-2869641-init.md).
-- [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer.md): The [Core Video](../CoreVideo/CoreVideo.md) image format for data from a live feed and movies.  `CVPixelBuffer` objects don’t contain orientation, so supply it in the initializer [init(cvPixelBuffer:orientation:options:)](./vnimagerequesthandler/api-2880303-init.md).
-- [Data](../Foundation/nsdata.md): Image data compressed or held in memory, as you might receive over a network connection. For example, photos downloaded from a website or the cloud fall into this category. Check that any images downloaded from the web have upright orientation; if they don’t, inform Vision about the orientation through the initializer  [init(data:orientation:options:)](./vnimagerequesthandler/api-2869635-init.md).
+- [`CGImage`](../CoreGraphics/cgimage.md): The [Core Graphics](../CoreGraphics/CoreGraphics.md) image format, obtainable from any [UIImage](../UIKit/uiimage.md) through its helper method [CGImage](../UIKit/uiimage/cgimage.md). Specify orientation through the initializer using [CGImagePropertyOrientation](../ImageIO/cgimagepropertyorientation.md).
+- [`CIImage`](../CoreImage/ciimage.md): The [Core Image](../CoreImage/CoreImage.md) format, best used if you already have Core Image in your image processing pipeline. `CIImage` objects don’t contain orientation, so supply it in the initializer [init(ciImage:orientation:options:)](./vnimagerequesthandler/init%28ciimage,orientation,options%29-3svy6.md).
+- [`CVPixelBuffer`](../CoreVideo/cvpixelbuffer.md): The [Core Video](../CoreVideo/CoreVideo.md) image format for data from a live feed and movies.  `CVPixelBuffer` objects don’t contain orientation, so supply it in the initializer [init(cvPixelBuffer:orientation:options:)](./vnimagerequesthandler/init%28cvpixelbuffer,orientation,options%29-9fxug.md).
+- [Data](../Foundation/nsdata.md): Image data compressed or held in memory, as you might receive over a network connection. For example, photos downloaded from a website or the cloud fall into this category. Check that any images downloaded from the web have upright orientation; if they don’t, inform Vision about the orientation through the initializer  [init(data:orientation:options:)](./vnimagerequesthandler/init%28data,orientation,options%29.md).
 - [URL](../Foundation/nsurl.md): A URL path to the image on disk.
 
-Vision may not detect sideways or upside-down features properly if it assumes the wrong orientation.  Photos selected in the sample’s image picker contain orientation information.  Access this data through the `UIImage` property [imageOrientation](../UIKit/uiimage/api-1624141-imageorientation.md). If you acquire your photos through other means, such as from the web or other apps, be sure to check for orientation and provide it separately if it doesn’t come baked into the image.
+Vision may not detect sideways or upside-down features properly if it assumes the wrong orientation.  Photos selected in the sample’s image picker contain orientation information.  Access this data through the `UIImage` property [imageOrientation](../UIKit/uiimage/imageorientation.md). If you acquire your photos through other means, such as from the web or other apps, be sure to check for orientation and provide it separately if it doesn’t come baked into the image.
 
-##### Create Vision Requests
+### Create Vision Requests
 
 Create a [`VNImageRequestHandler`](./vnimagerequesthandler.md) object with the image to be processed.
 
@@ -62,7 +62,7 @@ lazy var rectangleDetectionRequest: VNDetectRectanglesRequest = {
 }()
 ```
 
-After you’ve created all your requests, pass them as an array to the request handler’s synchronous [perform(_:)](./vnimagerequesthandler/api-2880297-perform.md). Vision computations may consume resources and take time, so use a background queue to avoid blocking the main queue as it executes.
+After you’ve created all your requests, pass them as an array to the request handler’s synchronous [perform(_:)](./vnimagerequesthandler/perform%28_%29.md). Vision computations may consume resources and take time, so use a background queue to avoid blocking the main queue as it executes.
 
 ```swift
 // Send the requests to the request handler.
@@ -77,13 +77,13 @@ DispatchQueue.global(qos: .userInitiated).async {
 }
 ```
 
-##### Interpret Detection Results
+### Interpret Detection Results
 
-The method [`perform(_:)`](./vnimagerequesthandler/api-2880297-perform.md) returns a Boolean representing whether the requests succeeded or resulted in an error. If it succeeded, its [results](./vnrequest/api-2867238-results.md) property contains observation or tracking data, such as a detected object’s location and bounding box.
+The method [`perform(_:)`](./vnimagerequesthandler/perform%28_%29.md) returns a Boolean representing whether the requests succeeded or resulted in an error. If it succeeded, its [results](./vnrequest/api-2867238-results.md) property contains observation or tracking data, such as a detected object’s location and bounding box.
 
 You can access results in two ways:
 
-- Check the [`results`](./vnrequest/api-2867238-results.md) property after calling [`perform(_:)`](./vnimagerequesthandler/api-2880297-perform.md).
+- Check the [`results`](./vnrequest/api-2867238-results.md) property after calling [`perform(_:)`](./vnimagerequesthandler/perform%28_%29.md).
 - In the [VNImageBasedRequest](./vnimagebasedrequest.md) object’s completion handler, use the callback’s observation parameter to retrieve detection information.  The callback results may contain multiple observations, so loop through the observations array to process each one.
 
 For example, the sample uses facial observations and their landmarks’ bounding boxes to locate the features and draw a rectangle around them.
@@ -116,13 +116,13 @@ CATransaction.commit()
 
 For face landmark requests, the detector provides [VNFaceObservation](./vnfaceobservation.md) results with greater detail, such as [facial-feature landmark regions](./vnfacelandmarkregion2d.md).
 
-For text observations, you can locate individual characters by checking the [characterBoxes](./vntextobservation/api-2867213-characterboxes.md) property.
+For text observations, you can locate individual characters by checking the [characterBoxes](./vntextobservation/characterboxes.md) property.
 
-For barcode observations, some supported [symbologies](./vndetectbarcodesrequest/api-2875397-symbologies.md) contain payload information in the [payloadStringValue](./vnbarcodeobservation/api-2923485-payloadstringvalue.md) property, allowing you to parse the content of detected barcodes. Like a supermarket scanner, barcode detection is optimized for finding one barcode per image.
+For barcode observations, some supported [symbologies](./vndetectbarcodesrequest/symbologies.md) contain payload information in the [payloadStringValue](./vnbarcodeobservation/payloadstringvalue.md) property, allowing you to parse the content of detected barcodes. Like a supermarket scanner, barcode detection is optimized for finding one barcode per image.
 
 It’s up to your app to use or store data from the observations before exiting the completion handler.  Instead of drawing paths like the sample does, write custom code to extract what your app needs from each observation.
 
-##### Follow Best Practices
+### Follow Best Practices
 
 To reduce unnecessary computation, don’t create multiple request handlers and submit them multiple times on the same image.  Instead, create all your requests before querying Vision, bundle them inside a requests array, and submit that array in a single call.
 

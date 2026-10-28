@@ -15,7 +15,7 @@ The identifier for a terminal type of a line level stream.
 Line
 ```
 
-#### Discussion
+## Discussion
 
 This applies to both input streams and output streams.
 

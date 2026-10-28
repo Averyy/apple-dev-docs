@@ -19,7 +19,7 @@ A type of button that people use to redeem an offer code.
 static var redeemCode: StoreButtonKind { get }
 ```
 
-#### Discussion
+## Discussion
 
 This button type is available for [`SubscriptionStoreView`](../subscriptionstoreview.md) only.
 

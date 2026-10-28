@@ -23,7 +23,7 @@ var manifestVersion: Double { get }
 @property (nonatomic, readonly) double manifestVersion;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: A [`unsupportedManifestVersion`](./error/unsupportedmanifestversion.md) error will be reported if the manifest version isn’t specified.
 

@@ -23,7 +23,7 @@ class MPMovieAccessLogEvent
 @interface MPMovieAccessLogEvent : NSObject
 ```
 
-#### Overview
+## Overview
 
 For a description of movie access logs, see [`MPMovieAccessLog`](./mpmovieaccesslog.md).
 

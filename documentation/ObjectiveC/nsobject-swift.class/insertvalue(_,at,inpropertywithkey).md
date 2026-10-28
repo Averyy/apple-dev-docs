@@ -20,7 +20,7 @@ func insertValue(_ value: Any, at index: Int, inPropertyWithKey key: String)
 - (void) insertValue:(id) value atIndex:(NSUInteger) index inPropertyWithKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 The method `insertIn<Key>:atIndex:` is invoked if it exists. If no corresponding scripting-KVC-compliant method (`insertIn<Key>:atIndex:` ) is found, this method invokes `mutableArrayValueForKey:` and mutates the result.
 

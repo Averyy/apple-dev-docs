@@ -13,7 +13,7 @@
 SFLT_EXTENDED = 0x04
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that this socket filter utilizes the extended fields within the sflt_filter structure.
 

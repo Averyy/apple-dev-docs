@@ -19,11 +19,11 @@
 int (*)(const struct AudioServerPlugInHostInterface *, const struct __CFString *, const void *) WriteToStorage;
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 This method will associate the given data with the named storage key, replacing any existing data.
 

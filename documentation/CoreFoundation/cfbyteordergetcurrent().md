@@ -25,7 +25,7 @@ func CFByteOrderGetCurrent() -> CFByteOrder
 static CFByteOrder CFByteOrderGetCurrent();
 ```
 
-#### Return Value
+## Return Value
 
 The byte order of the current computer. See [`CFByteOrder`](./cfbyteorder.md) for the list of possible return values.
 

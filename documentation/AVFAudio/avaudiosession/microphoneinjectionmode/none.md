@@ -24,7 +24,7 @@ case none
 AVAudioSessionMicrophoneInjectionModeNone
 ```
 
-#### Discussion
+## Discussion
 
 This is the default mode.
 

@@ -28,11 +28,11 @@ class PHASEGeometricSpreadingDistanceModelParameters
 
 - [Playing sound from a location in a 3D scene](./playing-sound-from-a-location-in-a-3d-scene.md)
 
-#### Overview
+## Overview
 
 This class implements a *roll-off* effect — a strategy that aims to model the real-world manner in which sound changes with distance. When the distance between a sound and listener changes, the roll-off effect dissipates certain audio frequencies more than others.
 
-##### Dissipate Sound by Choosing a Roll-Off Factor
+### Dissipate Sound by Choosing a Roll-Off Factor
 
 PHASE emphasizes or deemphasizes the volume loss of the mixer’s sound sources based on the [`rolloffFactor`](./phasegeometricspreadingdistancemodelparameters/rollofffactor.md) you choose. For example, a [`rolloffFactor`](./phasegeometricspreadingdistancemodelparameters/rollofffactor.md) of `1.0` reduces sound between the source and listener by 6 dB for every doubling of distance. At `2.0`, the loss doubles. At `0.5`, the loss halves.
 

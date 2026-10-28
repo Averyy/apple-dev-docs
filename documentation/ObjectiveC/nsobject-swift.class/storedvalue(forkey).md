@@ -26,7 +26,7 @@ func storedValue(forKey key: String) -> Any?
 - (id) storedValueForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 This method is used when the value is retrieved for storage in an object store (generally, this storage is ultimately in a database) or for inclusion in a snapshot. The default implementation is similar to the implementation of [`value(forKey:)`](./value%28forkey%29.md), but it resolves `key` with a different method/instance variable search order:
 

@@ -25,11 +25,11 @@ typealias AVAudioIONodeInputBlock = (AVAudioFrameCount) -> UnsafePointer<AudioBu
 typedef const struct AudioBufferList *(^)(unsigned int) AVAudioIONodeInputBlock;
 ```
 
-#### Return Value
+## Return Value
 
 An [`AudioBufferList`](../CoreAudioTypes/audiobufferlist.md) that contains the data to render, or `nil` if no data is available.
 
-#### Discussion
+## Discussion
 
 Don’t clear or refill the data in the return value until the framework calls the input block again or the rendering finishes. The format of the buffer list must match the format you specify when registering the block.
 

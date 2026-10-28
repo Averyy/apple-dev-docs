@@ -21,11 +21,11 @@ Creates a box shape with the specified dimensions.
 @preconcurrency static func generateBox(width: Float, height: Float, depth: Float) -> ShapeResource
 ```
 
-#### Return Value
+## Return Value
 
 The new box centered at the local origin and aligned with the local axes.
 
-#### Discussion
+## Discussion
 
 > **Note**: Collision shape extents that fall below 2mm are forced to be 2mm in size - this includes, entities with negative scale values.
 

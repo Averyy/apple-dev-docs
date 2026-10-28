@@ -24,7 +24,7 @@ func systemLayoutFittingSizeDidChange(forChildContentContainer container: any UI
 - (void) systemLayoutFittingSizeDidChangeForChildContentContainer:(id<UIContentContainer>) container;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when a view controller that doesn’t use Auto Layout has a child view controller that uses Auto Layout and the child view controller is resized. When the child view controller responds to the [`systemLayoutSizeFitting(_:)`](../uiview/systemlayoutsizefitting%28_%29.md) method, the [`systemLayoutFittingSizeDidChange(forChildContentContainer:)`](./systemlayoutfittingsizedidchange%28forchildcontentcontainer%29.md) method is sent to the parent view controller.
 

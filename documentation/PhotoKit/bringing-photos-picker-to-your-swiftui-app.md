@@ -14,19 +14,19 @@ Select media assets by using a Photos picker view that SwiftUI provides.
 - watchOS 9.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 This sample shows how to use the SwiftUI Photos picker to browse and select a photo from your photo library. The app displays an interface that allows you to fill in customer profile details, and includes a button to select a photo from the Photos library. The sample explores how to retrieve a SwiftUI image by using [`Transferable`](../CoreTransferable/transferable.md) — a new SwiftUI protocol you use to move data.
 
 > **Note**: This sample code project is associated with WWDC22 session [10023: What’s new in the Photos picker](https://developer.apple.com/wwdc22/10023).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 Before you run the sample code project in Xcode, ensure you’re using iOS 16 or later, watchOS 9 or later, macOS 13 or later.
 
 You must use a physical device when building the watchOS target in Xcode.
 
-##### Add a Photos picker view
+### Add a Photos picker view
 
 To display the picker, the sample adds a [`PhotosPicker`](../PhotosUI/photospicker.md) view as an overlay to a profile image. The view provides a label that describes the action of choosing an item from the photo library. The sample displays assets that match the image type. In iOS 16 or later, [`PHPickerFilter`](../PhotosUI/phpickerfilter-swift.struct.md) contains new filters for [`bursts`](../PhotosUI/phpickerfilter-swift.struct/bursts.md), [`cinematicVideos`](../PhotosUI/phpickerfilter-swift.struct/cinematicvideos.md), and [`depthEffectPhotos`](../PhotosUI/phpickerfilter-swift.struct/deptheffectphotos.md).
 
@@ -45,7 +45,7 @@ CircularProfileImage(imageState: viewModel.imageState)
 	}
 ```
 
-##### Load an image from the selection
+### Load an image from the selection
 
 The sample contains an [`PhotosPickerItem`](../PhotosUI/photospickeritem.md) that contains the selection. The selection only contains a placeholder object. Some large files may take a long time to download, so the sample shows an inline loading indicator instead of an indicator that blocks execution.
 

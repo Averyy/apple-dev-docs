@@ -15,7 +15,7 @@ Use this key to access the JSON push-notification payload from the user info dic
 extern NSString * const NSApplicationLaunchRemoteNotificationKey;
 ```
 
-#### Discussion
+## Discussion
 
 > **Deprecated**: Use [`launchUserNotificationUserInfoKey`](./nsapplication/launchusernotificationuserinfokey.md) instead.
 

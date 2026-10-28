@@ -23,7 +23,7 @@ func cloudSharingController(_ csc: UICloudSharingController, failedToSaveShareWi
 - (void) cloudSharingController:(UICloudSharingController *) csc failedToSaveShareWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to receive a notification from the [`UICloudSharingController`](../uicloudsharingcontroller.md) instance after it fails to save changes to the [`CKShare`](../../CloudKit/ckshare.md) record.
 

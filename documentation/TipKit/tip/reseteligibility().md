@@ -21,7 +21,7 @@ Reset a previously invalidated tip.
 func resetEligibility() async
 ```
 
-#### Overview
+## Overview
 
 By default tips that are invalidated will never become eligible for display. This prevents tips about already discovered features from appearing. Resetting a tip changes its status back to `.pending` or `.available` and makes it re-eligible for display.
 

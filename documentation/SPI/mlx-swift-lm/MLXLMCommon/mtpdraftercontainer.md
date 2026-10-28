@@ -17,7 +17,7 @@ Sendable container for an [`MTPDrafterContext`](./mtpdraftercontext.md).
 final class MTPDrafterContainer
 ```
 
-#### Overview
+## Overview
 
 Mirrors the [`ModelContainer`](./modelcontainer.md) pattern: a `final class : Sendable` that wraps the non-Sendable context in a `SerialAccessContainer` and exposes async `perform(_:)` closures for serialized access.
 

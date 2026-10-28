@@ -19,7 +19,7 @@ var activationPolicy: NSApplication.ActivationPolicy { get }
 @property (readonly) NSApplicationActivationPolicy activationPolicy;
 ```
 
-#### Discussion
+## Discussion
 
 The value returned by this property is usually fixed, but it may change through a call to [`activate(options:)`](./activate%28options%29.md).
 

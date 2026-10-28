@@ -29,7 +29,7 @@ var colorBlendFactor: CGFloat { get set }
 
 - [Tinting a Sprite](../tinting-a-sprite.md)
 
-#### Discussion
+## Discussion
 
 The value must be a number between `0.0` and `1.0`, inclusive. The default value (`0.0`) indicates the color property is ignored and that the texture’s values should be used unmodified. For values greater than `0.0`, the texture is blended with the color before being drawn to the scene.
 

@@ -22,11 +22,11 @@ func viewPrintFormatter() -> UIViewPrintFormatter
 - (UIViewPrintFormatter *) viewPrintFormatter;
 ```
 
-#### Return Value
+## Return Value
 
 A [`UIViewPrintFormatter`](../uiviewprintformatter.md) object or `nil` if the object could not be created. If it is successfully created, the returned object is automatically associated with this view.
 
-#### Discussion
+## Discussion
 
 When initiating a print job, you can call this method to obtain an appropriate view print formatter object for your view. You can use the formatter object to configure the page layout options for your view during printing. Each time you call this method, you get a unique view print formatter object.
 

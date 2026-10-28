@@ -24,7 +24,7 @@ init(x: LocalizedStringKey, y: LocalizedStringKey, domain: ClosedRange<Double>? 
 
 Available when `Content` is `FunctionAreaPlotContent`.
 
-#### Discussion
+## Discussion
 
 Parameters:
 

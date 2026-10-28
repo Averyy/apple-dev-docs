@@ -20,7 +20,7 @@ Updates the per instance transform data synchronously on the CPU.
 final func withMutableTransforms(_ callback: (UnsafeMutableBufferPointer<float4x4>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The transform buffer provided is only valid for the lifetime of the callback.
 

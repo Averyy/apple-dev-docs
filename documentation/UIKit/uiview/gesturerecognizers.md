@@ -23,7 +23,7 @@ var gestureRecognizers: [UIGestureRecognizer]? { get set }
 @property (nonatomic, copy, nullable) NSArray<__kindof UIGestureRecognizer *> * gestureRecognizers;
 ```
 
-#### Discussion
+## Discussion
 
 Each of these objects is an instance of a subclass of the abstract base class [`UIGestureRecognizer`](../uigesturerecognizer.md). The default value of this property is `nil`. If you add a gesture recognizer and then remove it, the value of the property is an empty array.
 

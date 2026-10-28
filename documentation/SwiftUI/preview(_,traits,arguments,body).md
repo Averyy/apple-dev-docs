@@ -18,8 +18,8 @@ Creates a group of previews of a parameterized SwiftUI view, varying its inputs 
 ## Declaration
 
 ```swift
-@freestanding
-(declaration) macro Preview<T>(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], @ContentBuilder body: @escaping @MainActor (T) -> any View)
+@freestanding(declaration)
+macro Preview<T>(_ name: String? = nil, traits: PreviewTrait<Preview.ViewTraits>..., arguments: [T], @ContentBuilder body: @escaping @MainActor (T) -> any View)
 ```
 
 ## Parameters

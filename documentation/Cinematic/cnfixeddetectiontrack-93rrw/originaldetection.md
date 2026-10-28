@@ -19,7 +19,7 @@ The original detection based on the fixed detection track.
 var originalDetection: CNDetection? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is the way to determine the time and bounds from which the fixed focus originated. This detection isn’t part of the detection track and has a different detection ID or none.
 

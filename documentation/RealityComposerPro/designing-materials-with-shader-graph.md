@@ -5,27 +5,27 @@
 
 Create realistic materials with Reality Composer Pro’s Shader Graph.
 
-#### Overview
+## Overview
 
 Physically Based Rendering (PBR) materials accurately reproduce real-world surfaces, but they don’t support logic or nonrealistic effects such as cartoon shaders. Reality Composer Pro’s **Shader Graph** provides a visual, code-free node-based interface you can use to design materials with dynamic logic and highly stylized effects. The Shader Graph editor gives you extensive control over materials — including capabilities that otherwise require writing custom shaders.
 
 ![A screenshot of the Project Browser showing how to add a new material.](https://developer.apple.com/tutorials/images/RealityComposerPro/ShaderGraph@2x.png)
 
-#### Review Graph Editor basics
+## Review Graph Editor basics
 
 See [Working with the Graph Editor](./realitycomposerpro-essentials-grapheditoroverview.md) to learn about general navigation and features in the Reality Composer Pro Graph Editor.
 
-#### Open new Shader Graph materials in the Shader Graph Editor
+## Open new Shader Graph materials in the Shader Graph Editor
 
 In the Project Browser, double-click a Shader Graph material to open it in the Shader Graph.
 
-#### Create a Shader Graph material
+## Create a Shader Graph material
 
 Two methods let you create a new Shader Graph material. To create a new Shader Graph material, Control-click a folder in the project browser and choose **New Material**. Alternatively, click (+) (Add Asset) > **New** > **Material**. Double-click the new Shader material to open it in the Shader Graph Editor. When the new material opens in the Shader Graph Editor, a default graph appears. The Graph Editor workspace appears as a tab at the top of the Viewport. From the Workspace tab bar, you can switch between workspace tabs as well as drag and drop the Graph Editor workspace to a new window.
 
 See [Configuring the project workspace](./realitycomposerpro-essentials-configuringprojectworkspace.md) to learn more about working in and configuring Reality Composer Pro workspaces.
 
-#### Build materials in the Shader Graph editor
+## Build materials in the Shader Graph editor
 
 When you first open a material in the Shader Graph Editor, you will see 2 default nodes: **PreviewSurface** and **Output**.
 
@@ -37,7 +37,7 @@ When you first open a material in the Shader Graph Editor, you will see 2 defaul
 - Below the Inspector panel (lower right) is a Preview of the material.
 - The project browser displays the material in the project files. (Note that you can still interact with the project browser independently of what is shown in the Viewport.)
 
-#### Create a new Shader Graph material and apply it
+## Create a new Shader Graph material and apply it
 
 In the following walkthrough, you will create a new Shader Graph material, change the material, and then apply it to an entity. In the Project Browser, click [+] New Asset and then select Material. Notice in the Inspector that the properties for the new material are displayed, and that new the new material type defaults to Shader Graph.
 
@@ -49,13 +49,13 @@ In the following walkthrough, you will create a new Shader Graph material, chang
 6. Click on the newly added box to select it and view the properties in the Inspector.
 7. In the Inspector, under **Material Slots**, click the **Material** field and then select `my_sg_material`. The box should change to the color you set in step 4.
 
-#### Add new nodes to Shader Graph
+## Add new nodes to Shader Graph
 
 To add a new node to a Shader Graph: Control-click in any empty space, press the Spacebar, or drag a connector from an existing node to any empty space to open the Node Selector.
 
 1. Select a node from the Node Selector to add it to your graph. The basics of working in the Shader Graph Editor — adding and connecting nodes, comments, and changing properties —  are fundamentally the same as with any graph.  See [Working with the Graph Editor](./realitycomposerpro-essentials-grapheditoroverview.md)  to learn how to use the Graph Editor.
 
-#### Add a new node to your Shader Graph
+## Add a new node to your Shader Graph
 
 The walkthrough guides you through adding a new node to the Shader Graph created in the first tutorial.
 
@@ -65,7 +65,7 @@ The walkthrough guides you through adding a new node to the Shader Graph created
 4. In the **Noise 2D node**, next to Amplitude, change the first number to 2. Notice the effect changing the Amplitude has on the material in the preview tab.
    Try experimenting with changing other values and watch how they affect your material.
 
-#### Change material attributes with nodes
+## Change material attributes with nodes
 
 Materials you build in the editor affect both the look of an entity and its shape.
 
@@ -76,7 +76,7 @@ Shader Graph contains nodes that either connect to a specific output or perform 
 
 > 💡 **Tip**: Node connections must be between compatible input and output types. For example, a boolean output can’t connect to a matrix input.
 
-##### Update material values at runtime
+### Update material values at runtime
 
 Shader Graph lets you change values on your custom materials while your app runs. Shader Graph creates **promoted inputs**, which are parameters you can set and read from Swift to change your material at runtime. Using the Input Inspector, you can set three types of material parameters through the input metadata:
 
@@ -90,14 +90,14 @@ Shader Graph lets you change values on your custom materials while your app runs
 
 - **Function Constant** — Use function constants to optimize shader performance. You access and set this material input at runtime, which causes the shader to fully recompile. After recompilation, the system bakes this value into the shader. In the API, these correspond to [`MTLFunctionConstantValues`](../Metal/mtlfunctionconstantvalues.md). For more information, see `MTLFunctionConstantValues`.
 
-##### Explore promoted input examples
+### Explore promoted input examples
 
 Use promoted inputs to:
 
 - **Turn a material’s emission on and off:** Create a Boolean input parameter and implement conditional logic based on its value.
 - **Smoothly interpolate between two colors:** Create a `Float` input parameter and use it to control the interpolation between the two colors.
 
-##### Configure Shader Graph node options
+### Configure Shader Graph node options
 
 The following options apply to nodes used in Shader Graphs.
 

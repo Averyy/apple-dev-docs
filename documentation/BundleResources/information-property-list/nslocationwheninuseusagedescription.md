@@ -16,7 +16,7 @@ A message that tells people why the app is requesting access to their location i
 - **Name**: `NSLocationWhenInUseUsageDescription` (Privacy - Location When In Use Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 Use this key if your iOS app accesses location information only when running in the foreground. If your app needs location information when in the background, use [`NSLocationAlwaysAndWhenInUseUsageDescription`](./nslocationalwaysandwheninuseusagedescription.md) instead. For more information, see [Choosing the  Location Services Authorization to Request](../choosing-the-location-services-authorization-to-request.md).
 

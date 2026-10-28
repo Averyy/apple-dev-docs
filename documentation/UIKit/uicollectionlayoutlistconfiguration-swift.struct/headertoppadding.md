@@ -19,7 +19,7 @@ The amount of padding above each section header.
 var headerTopPadding: CGFloat? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`, which indicates automatic padding.
 

@@ -12,7 +12,7 @@ virtual void setControlID(
  UInt32cntrlID);
 ```
 
-#### Overview
+## Overview
 
 The control ID is an optional attribute that can be used to track IOAudioControls. A typical use is for the IOAudioDevice to assign a unique controlID to each control that it creates and then do a switch statement on the id of the control when it gets an audioControlValueChanged() notification. Typically the control ID is set when the object is created and doesn't need to be called again.
 

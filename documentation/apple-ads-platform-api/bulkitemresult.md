@@ -15,13 +15,13 @@ The base result envelope for a single item in a bulk operation response.
 object BulkItemResult
 ```
 
-#### Discussion
+## Discussion
 
 The `BulkItemResult` object is the shared result wrapper that the API returns for each item in a bulk create, update, or delete response. It extends the standard `Response` envelope with per-item operation metadata. All keyword and negative keyword bulk response types extend this schema by adding a typed `result` field.
 
 When `allowPartialSuccess` is `true` in the request, inspect `success` on each entry individually. A `false` value indicates that the specific item failed.
 
-##### Example
+### Example
 
 ```json
 {

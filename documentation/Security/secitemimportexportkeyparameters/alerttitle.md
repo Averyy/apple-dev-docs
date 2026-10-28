@@ -19,7 +19,7 @@ var alertTitle: Unmanaged<CFString>?
 CFStringRef alertTitle;
 ```
 
-#### Discussion
+## Discussion
 
 When importing or exporting a key, if you set the [`securePassphrase`](../seckeyimportexportflags/securepassphrase.md) flag bit, you can optionally use this field to specify a string for the password panel’s title bar.
 

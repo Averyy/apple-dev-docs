@@ -14,11 +14,11 @@ CMError CMGetProfileRefCount (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The ColorSync Manager keeps an internal reference count for each profile reference returned from calls such as [CMOpenProfile](./api-1804853-cmopenprofile.md) or [CMNewProfile](./api-1804911-cmnewprofile.md). Calling the function [CMCloneProfileRef](./api-1804891-cmcloneprofileref.md) increments the count; calling the function [CMCloseProfile](./api-1804861-cmcloseprofile.md) decrements it. The profile remains open as long as the reference count is greater than 0, indicating at least one routine retains a reference to the profile. When the count reaches 0, the ColorSync Manager releases all memory, files, or resources allocated in association with that profile.
 

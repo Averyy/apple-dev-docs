@@ -16,11 +16,11 @@ Creates the configuration for a provisional home.
 init(threadNetworkIdentifier: Data, hubPairingIdentity: HMHomeManager.PairingIdentity)
 ```
 
-#### Return Value
+## Return Value
 
 The configuration for a provisional home.
 
-#### Overview
+## Overview
 
 ## Parameters
 

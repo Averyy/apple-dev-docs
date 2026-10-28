@@ -5,60 +5,60 @@
 
 Released December 13, 2021 — Version 15.2 (17612.3.6)
 
-#### Overview
+## Overview
 
 Safari 15.2 ships with iOS and iPadOS 15.2 and macOS 12.1.
 
-##### General
+### General
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed opening local HTML or WebArchive files from the Desktop, Documents, or Downloads folder.
 - Fixed broken XHR with a `requestType` of document for large HTML files.
 - Fixed WebGL using an incorrect power context compared to the requested power context.
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added support for the File System Access API for creating and iterating files in an origin-specific storage space.
 - Added Origin Private File System extension support for the File System Access API, allowing developers to read and write files in the origin-specific storage space.
 
-##### Web Extensions
+### Web Extensions
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where `browser.storage.sync` entries were saved into the `browser.storage.local` storage area. If you’re unable to locate sync storage entries, check the local storage area and perform a one-time migration to the sync storage area.
 
-##### WebAssembly
+### WebAssembly
 
-###### New Features
+#### New Features
 
 - Expanded addressable memory to 4 GB.
 - Added zero-cost exception handling.
 
-##### Rendering
+### Rendering
 
-###### New Features
+#### New Features
 
 - Added wide gamut support for canvas.
 
-##### Private Click Measurement
+### Private Click Measurement
 
-###### New Features
+#### New Features
 
 - Added support for using Private Click Measurement for in-app direct response advertising with [`SFSafariViewController`](../SafariServices/sfsafariviewcontroller.md).
 
-##### Security
+### Security
 
-###### New Features
+#### New Features
 
 - Added support for COOP and COEP HTTP headers.
 - Re-enabled `SharedArrayBuffer` for sites that use COOP and COEP securely to create an isolated environment.
 
-##### Media
+### Media
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed microphone switching during FaceTime calls for Safari on macOS.
 - Fixed audio cutting off and `AudioContext.currentTime` drifting when connected to a Bluetooth speaker.

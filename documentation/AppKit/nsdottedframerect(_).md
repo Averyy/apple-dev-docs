@@ -19,7 +19,7 @@ func NSDottedFrameRect(_ rect: NSRect)
 extern void NSDottedFrameRect(NSRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 Deprecated. Use a dashed [`NSBezierPath`](./nsbezierpath.md) instead.
 

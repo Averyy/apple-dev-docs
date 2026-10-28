@@ -15,7 +15,7 @@ Campaign-level performance metrics for apps.
 object AppsCampaignMetrics
 ```
 
-#### Discussion
+## Discussion
 
 The `AppsCampaignMetrics` extends [`AppsMetrics`](./appsmetrics.md) with no additional fields. It’s the metrics object embedded in apps campaign report rows.
 

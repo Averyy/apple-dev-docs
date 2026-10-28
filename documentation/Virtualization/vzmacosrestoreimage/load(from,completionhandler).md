@@ -16,7 +16,7 @@ Load a restore image from a file on the local file system.
 class func load(from fileURL: URL, completionHandler: @escaping @Sendable (Result<VZMacOSRestoreImage, any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 `VZMacOSRestoreImage` can load macOS installation media from a local file. If the `fileURL` parameter doesn’t refer to a local file, the system raises an exception.
 

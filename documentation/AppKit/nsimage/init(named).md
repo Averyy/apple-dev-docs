@@ -19,11 +19,11 @@ init?(named name: NSImage.Name)
 + (NSImage *) imageNamed:(NSImageName) name;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSImage` object associated with the specified name or `nil` if no such image was found.
 
-#### Discussion
+## Discussion
 
 This method searches for named images in several places, returning the first image it finds matching the given name. The order of the search is as follows:
 

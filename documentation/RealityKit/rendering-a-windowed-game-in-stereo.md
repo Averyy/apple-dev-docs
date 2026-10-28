@@ -10,7 +10,7 @@ Bring an iOS or iPadOS game to visionOS and enhance it.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample shows how to render a Metal app in a window on visionOS, with stereoscopy, head tracking, [VRR](../Metal/rendering-at-different-rasterization-rates.md), and a 3D frame around the window. The starting app is the [Deferred Lighting sample](../Metal/rendering-a-scene-with-deferred-lighting-in-swift.md) for iOS, iPadOS, and macOS.
 
@@ -18,7 +18,7 @@ This sample shows how to render a Metal app in a window on visionOS, with stereo
 
 > **Note**: This sample code project is associated with WWDC24 session 10093: [Bring your iOS or iPadOS game to visionOS](https://developer.apple.com/wwdc24/10093/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 This project requires an Apple Vision Pro, and cannot be run in the simulator.
 

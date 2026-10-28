@@ -5,7 +5,7 @@
 
 Build a File Provider extension that syncs the local copies of your files with your remote storage.
 
-#### Overview
+## Overview
 
 When creating a replicated File Provider extension, the system takes responsibility for managing and storing the local copies of your documents and folders. Your extension syncs data between the local copy and the remote storage, providing the local system with the metadata and contents of the items in your remote storage. It also alerts the system to any remote changes to those items and uploads any local changes back to the remote storage. For more information, see [Synchronizing the File Provider Extension](./synchronizing-the-file-provider-extension.md).
 

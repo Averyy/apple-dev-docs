@@ -23,7 +23,7 @@ struct PrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions
 enum AVCapturePrimaryConstituentDeviceRestrictedSwitchingBehaviorConditions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants to control the conditions that allow fallback camera selection when you set the value of the [`primaryConstituentDeviceSwitchingBehavior`](./primaryconstituentdeviceswitchingbehavior-swift.property.md) property to [`AVCaptureDevice.PrimaryConstituentDeviceSwitchingBehavior.restricted`](./primaryconstituentdeviceswitchingbehavior-swift.enum/restricted.md).
 

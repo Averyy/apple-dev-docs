@@ -25,11 +25,11 @@ func description(withLocale locale: Any?) -> String
 - (NSString *) descriptionWithLocale:(id) locale;
 ```
 
-#### Return Value
+## Return Value
 
 A string that represents the contents of the number object formatted using the locale information in `locale`.
 
-#### Discussion
+## Discussion
 
 For example, if you have an `NSNumber` object that has the integer value 522, sending it the [`description(withLocale:)`](./description%28withlocale%29.md) message returns the string “522”.
 

@@ -25,7 +25,7 @@ struct SparseOrder_t
 typedef enum { ... } SparseOrder_t;
 ```
 
-#### Overview
+## Overview
 
 The column and row ordering you use when eliminating variables in a sparse factorization has a significant influence on the size of the resulting factors and the amount of work necessary to calculate them. Minimizing the size or the amount of work is an NP-complete problem, so the system only implements heuristics in this library.
 

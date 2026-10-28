@@ -12,11 +12,11 @@ virtual bool enqueue(
  mbuf_tm);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success, or false to indicate over-capacity and refusal to accept the packet chain provided.
 
-#### Overview
+## Overview
 
 Packets are not added if the size of the queue has reached its capacity.
 

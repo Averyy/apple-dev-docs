@@ -19,7 +19,7 @@ A linked item for use in import and export.
 struct ASImportableLinkedItem
 ```
 
-#### Overview
+## Overview
 
 A linked item serves as a reference to an item, and contains no data of its own.
 

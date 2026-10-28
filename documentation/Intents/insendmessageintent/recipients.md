@@ -36,7 +36,7 @@ var recipients: [INPerson]? { get }
 
 - [Improving interactions between Siri and your messaging app](../../SiriKit/improving-interactions-between-siri-and-your-messaging-app.md)
 
-#### Discussion
+## Discussion
 
 Use this property to identify the intended recipients of the message. During the resolution phase, use the information in each [`INPerson`](../inperson.md) object to resolve the named individual to a specific user of your app.
 

@@ -19,7 +19,7 @@ var addressString: String! { get }
 @property (readonly) NSString * addressString;
 ```
 
-#### Discussion
+## Discussion
 
 NOTE: This method is only available in macOS 10.2.4 (Bluetooth v1.1) or later.
 

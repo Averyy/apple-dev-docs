@@ -19,7 +19,7 @@ let kSpeechStatusNumberOfCharactersLeft: CFString
 const CFStringRef kSpeechStatusNumberOfCharactersLeft;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this constant is zero, you can destroy the input string.
 

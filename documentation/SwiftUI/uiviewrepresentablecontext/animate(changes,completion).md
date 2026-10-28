@@ -20,7 +20,7 @@ Animates changes using the animation in the current transaction.
 @preconcurrency func animate(changes: () -> Void, completion: (() -> Void)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 This combines https://developer.apple.com/documentation/UIKit/UIView/4429628-animate with the current transaction’s animation. When you start a SwiftUI animation using [`withAnimation(_:_:)`](../withanimation%28_,_%29.md) and have a mutated SwiftUI state that causes the representable object to update, use this method to animate changes in the representable object using the same `Animation` timing.
 

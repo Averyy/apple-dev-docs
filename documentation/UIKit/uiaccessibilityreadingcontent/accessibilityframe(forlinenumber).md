@@ -25,11 +25,11 @@ func accessibilityFrame(forLineNumber lineNumber: Int) -> CGRect
 - (CGRect) accessibilityFrameForLineNumber:(NSInteger) lineNumber;
 ```
 
-#### Return Value
+## Return Value
 
 The frame in the receiver that contains the specified line number, in screen coordinates. By default, this method returns `CGRectZero`.
 
-#### Discussion
+## Discussion
 
 To determine the onscreen rectangle (or frame) of a line, you can use code such as the following:
 

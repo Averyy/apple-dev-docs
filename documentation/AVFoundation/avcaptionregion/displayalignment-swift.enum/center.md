@@ -22,7 +22,7 @@ case center
 AVCaptionRegionDisplayAlignmentCenter
 ```
 
-#### Discussion
+## Discussion
 
 The Apple iTT caption format doesn’t support this alignment.
 

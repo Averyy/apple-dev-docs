@@ -24,7 +24,7 @@ var billingContact: PKContact? { get }
 @property (nonatomic, strong, readonly, nullable) PKContact * billingContact;
 ```
 
-#### Discussion
+## Discussion
 
 Only the fields specified in the [`requiredBillingAddressFields`](../pkpaymentrequest/requiredbillingaddressfields.md) property of the [`PKPaymentRequest`](../pkpaymentrequest.md) object are populated. If no required billing fields were specified, the value of this property is `nil`.
 

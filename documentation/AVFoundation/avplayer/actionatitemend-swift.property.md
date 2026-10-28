@@ -26,7 +26,7 @@ var actionAtItemEnd: AVPlayer.ActionAtItemEnd { get set }
 @property AVPlayerActionAtItemEnd actionAtItemEnd;
 ```
 
-#### Discussion
+## Discussion
 
 For possible values, see [`AVPlayer.ActionAtItemEnd`](./actionatitemend-swift.enum.md).
 

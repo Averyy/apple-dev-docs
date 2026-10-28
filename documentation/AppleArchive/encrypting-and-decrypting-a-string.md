@@ -10,11 +10,11 @@ Encrypt the contents of a string and save the result to the file system, then de
 - macOS 12.0+
 - Xcode 13.0+
 
-#### Overview
+## Overview
 
 This sample code project implements the Apple Encrypted Archive library to compress and encrypt the contents of a [`String`](../Swift/string.md) structure using a [`SymmetricKey`](../CryptoKit/symmetrickey.md). The sample saves the encrypted string to the user’s temporary directory and then calls a second function that decrypts the contents of the file and recreates the string.
 
-##### Generate a Symmetric Key
+### Generate a Symmetric Key
 
 The sample imports the [Apple CryptoKit](../CryptoKit/CryptoKit.md) framework to create the symmetric cryptographic key.
 
@@ -24,7 +24,7 @@ let key = SymmetricKey(size: SymmetricKeySize.bits256)
 
 The sample uses the same key for encryption and decryption.
 
-##### Create a Context for Encryption
+### Create a Context for Encryption
 
 An `ArchiveEncryptionContext` object contains the parameters, keys, and other data that the Apple Encrypted Archive library requires to open an encrypted archive for encryption and decryption streams. The sample initializes the context with a profile and compression algorithm, and its symmetric key set for encryption.
 
@@ -34,7 +34,7 @@ let context = ArchiveEncryptionContext(profile: .hkdf_sha256_aesctr_hmac__symmet
 try context.setSymmetricKey(key)
 ```
 
-##### Open the Destination File Stream
+### Open the Destination File Stream
 
 The destination file stream writes the encrypted file to the file system. In this case, the file stream’s mode is [`writeOnly`](../System/filedescriptor/accessmode/writeonly.md).  The options specify that the stream creates the file if it doesn’t exist, and if the file does exist, it should be truncated to zero bytes before the stream performs any operations.
 
@@ -48,7 +48,7 @@ guard let destinationFileStream = ArchiveByteStream.fileStream(
 }
 ```
 
-##### Create the Encryption Stream
+### Create the Encryption Stream
 
 The encryption stream uses the encryption context and the destination file stream to write the encrypted string to the file system.
 
@@ -60,7 +60,7 @@ guard let encryptionStream = ArchiveByteStream.encryptionStream(
 }
 ```
 
-##### Open the Encode Stream
+### Open the Encode Stream
 
 The encoding stream encodes its data as a byte stream and sends the encoded data to the encryption stream.
 
@@ -70,7 +70,7 @@ guard let encodeStream = ArchiveStream.encodeStream(writingTo: encryptionStream)
 }
 ```
 
-##### Define the Archive Header
+### Define the Archive Header
 
 The archive headers contains three fields that specify the unarchived file name, the compressed file type, and the compressed file payload.
 
@@ -96,7 +96,7 @@ header.append(.blob(key: ArchiveHeader.FieldKey("DAT"),
 try encodeStream.writeHeader(header)
 ```
 
-##### Write the String to the Encode Stream
+### Write the String to the Encode Stream
 
 The sample calls [`writeBlob(key:from:)`](./archivestreamprotocol/writeblob%28key,from%29.md) to write the contents of the string as a data buffer to the encode stream. In turn, the encode stream writes to the compression stream, and then the encryption stream writes to the file stream. Finally, the file stream writes the archive file to the file system:
 
@@ -112,7 +112,7 @@ try mutableString.withUTF8 { textPtr in
 
 On return, the file at `encryptedFilePath` exists as an AppleArchive file in the user’s temporary directory and contains a single encrypted text file, specified by `unarchivedFileName`. The content of this text file is the specified string.
 
-##### Open the Source File Stream
+### Open the Source File Stream
 
 The sample creates a source file stream to open the encrypted file.
 
@@ -126,7 +126,7 @@ guard let sourceFileStream = ArchiveByteStream.fileStream(
 }
 ```
 
-##### Create a Context for Decryption
+### Create a Context for Decryption
 
 The `ArchiveEncryptionContext` object for decryption derives its parameters, keys, and other data from the encrypted source file, and the sample sets the decryption context with the same symmetric key that the sample used for encryption.
 
@@ -139,7 +139,7 @@ guard let decryptionContext = ArchiveEncryptionContext(from: sourceFileStream) e
 try decryptionContext.setSymmetricKey(key)
 ```
 
-##### Create the Decryption Stream
+### Create the Decryption Stream
 
 The decryption stream uses the encryption context and the source file stream to read the encrypted string from the file system.
 
@@ -151,7 +151,7 @@ guard let decryptionStream = ArchiveByteStream.decryptionStream(
 }
 ```
 
-##### Open the Decode Stream
+### Open the Decode Stream
 
 The decoding stream provides archive elements from the raw, decompressed data.
 
@@ -162,7 +162,7 @@ guard let decodeStream = ArchiveStream.decodeStream(
 }
 ```
 
-##### Allocate a Buffer for the Decoded Data
+### Allocate a Buffer for the Decoded Data
 
 The sample derives the size of the decompressed and decrypted string from the `DAT` field of the decode stream’s header.
 
@@ -198,7 +198,7 @@ defer {
 }
 ```
 
-##### Populate the Buffer with Decoded Data
+### Populate the Buffer with Decoded Data
 
 The [`readBlob(key:into:)`](./archivestreamprotocol/readblob%28key,into%29.md) function reads the decompressed data from the `DAT` field and writes it to the raw buffer pointer. The decode stream parses its input from the decryption stream that, in turn, decrypts its input from the AppleArchive file supplied by the file stream.
 
@@ -207,7 +207,7 @@ try decodeStream.readBlob(key: ArchiveHeader.FieldKey("DAT"),
                           into: rawBufferPtr)
 ```
 
-##### Initialize a String from the Raw Buffer Pointer
+### Initialize a String from the Raw Buffer Pointer
 
 The sample creates a string from the raw buffer pointer by creating a typed pointer that’s bound to [`CChar`](../Swift/cchar.md), and calls [`init(cString:)`](../Swift/string/init%28cstring%29-2p84k.md) to initialize the new string.
 

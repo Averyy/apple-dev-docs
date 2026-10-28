@@ -15,7 +15,7 @@ A pattern that indicates the pasteboard detects a string that contains a phone n
 extern NSPasteboardDetectionPattern const NSPasteboardDetectionPatternPhoneNumber;
 ```
 
-#### Return Value
+## Return Value
 
 Array of DDMatchPhoneNumber values
 

@@ -19,7 +19,7 @@ init?(deviceMatchingDictionary dictionary: [String : any Sendable])
 - (instancetype) initWithDeviceMatchingDictionary:(NSDictionary<NSString *,id> *) dictionary;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`createMatchingDictionaryWithVendorID:productID:bcdDevice:deviceClass:deviceSubclass:deviceProtocol:speed:productIDArray:`](../../IOUSBHost/iousbhostdevice/creatematchingdictionarywithvendorid_productid_bcddevice_deviceclass_devicesubclass_deviceprotocol_speed_productidarray_.md) to create such a matching dictionary.
 

@@ -24,11 +24,11 @@ class PHASEGroupPreset
 @interface PHASEGroupPreset : NSObject
 ```
 
-#### Overview
+## Overview
 
 Group presets pair groups with audio settings that your app can apply to specific sounds at a particular time in your app’s life cycle. This class enables many predefined group settings to take effect all at once.
 
-##### Toggle Between Group Presets
+### Toggle Between Group Presets
 
 The group preset’s utility materializes when you switch between settings. The following example creates two group presets: one for an in-game experience and another for a menu that displays when the user pauses the app.
 

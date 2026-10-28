@@ -15,7 +15,7 @@ A DriverKit provider object that manages communications with an audio device.
 class IOUserAudioDriver;
 ```
 
-#### Overview
+## Overview
 
 For the Core Audio host to match against this driver, add the following keys to `IOKitPersonalities`, in the driver’s `Info.plist` file:
 

@@ -25,11 +25,11 @@ init(name: String, bundle storyboardBundleOrNil: Bundle?)
 + (UIStoryboard *) storyboardWithName:(NSString *) name bundle:(NSBundle *) storyboardBundleOrNil;
 ```
 
-#### Return Value
+## Return Value
 
 A storyboard object for the specified file. If no storyboard resource file matching `name` exists, an exception is thrown with description: `Could not find a storyboard named 'XXXXXX' in bundle...`.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve the storyboard object containing the view controller graph you want to access. All of the resources associated with the storyboard must be in the bundle indicated by the `storyboardBundleOrNil` parameter.
 

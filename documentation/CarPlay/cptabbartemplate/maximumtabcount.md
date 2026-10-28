@@ -21,7 +21,7 @@ class var maximumTabCount: Int { get }
 @property (class, nonatomic, readonly) NSInteger maximumTabCount;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value depends on the app’s entitlements. At runtime, use this value to determine the maximum number of tabs that your tab bar can display.
 

@@ -19,7 +19,7 @@ The user’s subscription provider didn’t allow the request to proceed.
 static var providerRejected: VSError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur when the user’s subscription doesn’t include the resource the user requested, or when the system requires the user to authenticate, but the request doesn’t allow interruption.
 

@@ -17,7 +17,7 @@ let IMKControllerClass: String
 extern const NSString * IMKControllerClass;
 ```
 
-#### Discussion
+## Discussion
 
 The key used to find an input method  input controller class name from the input method  bundle.
 

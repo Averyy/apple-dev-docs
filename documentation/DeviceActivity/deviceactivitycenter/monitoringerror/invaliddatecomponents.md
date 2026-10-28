@@ -17,7 +17,7 @@ The schedule’s date range is invalid.
 case invalidDateComponents
 ```
 
-#### Discussion
+## Discussion
 
 The schedule’s start or end date components don’t match any future dates. Consider specifying a different calendar or different date components.
 

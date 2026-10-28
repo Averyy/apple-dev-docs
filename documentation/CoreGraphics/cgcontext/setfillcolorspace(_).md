@@ -25,7 +25,7 @@ func setFillColorSpace(_ space: CGColorSpace)
 extern void CGContextSetFillColorSpace(CGContextRef c, CGColorSpaceRef space);
 ```
 
-#### Discussion
+## Discussion
 
 As a side effect of this function, Core Graphics assigns an appropriate initial value to the fill color, based on the specified color space. To change this value, call [`setFillColor(_:)`](./setfillcolor%28_%29-756dy.md). Note that the preferred API to use is now [`setFillColor(_:)`](./setfillcolor%28_%29-8lhn8.md).
 

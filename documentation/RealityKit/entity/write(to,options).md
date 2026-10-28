@@ -15,8 +15,8 @@
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func write(to url: URL, options: Entity.WriteOptions) async throws
+nonisolated(nonsending)
+func write(to url: URL, options: Entity.WriteOptions) async throws
 ```
 
 ## See Also

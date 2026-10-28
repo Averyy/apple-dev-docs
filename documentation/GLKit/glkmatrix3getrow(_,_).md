@@ -22,7 +22,7 @@ func GLKMatrix3GetRow(_ matrix: GLKMatrix3, _ row: Int32) -> GLKVector3
 static GLKVector3 GLKMatrix3GetRow(GLKMatrix3 matrix, int row);
 ```
 
-#### Return Value
+## Return Value
 
 A vector representing the row retrieved from the matrix.
 

@@ -14,7 +14,7 @@
 IOReturn (*GetSubdirectories)(IOFireWireLibConfigDirectoryRef self, io_iterator_t *outIterator);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

@@ -25,7 +25,7 @@ static var dryRun: NSPersistentCloudKitContainerSchemaInitializationOptions { ge
 NSPersistentCloudKitContainerSchemaInitializationOptionsDryRun
 ```
 
-#### Discussion
+## Discussion
 
 This option is useful for unit testing to ensure your managed object model is valid for use with CloudKit.
 

@@ -22,7 +22,7 @@ var searchTextField: UISearchTextField { get }
 @property (nonatomic, readonly) UISearchTextField * searchTextField;
 ```
 
-#### Discussion
+## Discussion
 
 For details about interacting with the text field, accessing its content, and using tokens, see [`UISearchTextField`](../uisearchtextfield.md) and [`UISearchToken`](../uisearchtoken.md).
 

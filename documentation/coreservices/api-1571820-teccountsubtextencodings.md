@@ -15,11 +15,11 @@ Counts and returns the number of subencodings a text encodingsupports.
 OSStatus TECCountSubTextEncodings(TextEncoding inputEncoding, ItemCount *numberOfEncodings);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 Subencodings are text encodings that are embedded as partof a larger text encoding specification. For example, EUC-JP containsJIS Roman or ASCII, JIS X0208, JIS X0212, and half-width Katakanafrom JIS X0201. Not every encoding that can be broken into multiple encodingsnecessarily supports this routine. It’s up to the plug-in developerto decide which encodings might be useful to break up. Subencodingsare not the same as text encoding variants.
 

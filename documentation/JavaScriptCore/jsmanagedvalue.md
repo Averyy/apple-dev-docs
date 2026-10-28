@@ -24,7 +24,7 @@ class JSManagedValue
 @interface JSManagedValue : NSObject
 ```
 
-#### Overview
+## Overview
 
 The primary use case for a managed value is to store a JavaScript value in an Objective-C or Swift object that exports to JavaScript.
 

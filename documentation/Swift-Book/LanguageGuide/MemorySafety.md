@@ -25,14 +25,6 @@ so you can avoid writing code that has conflicting access to memory.
 If your code does contain conflicts,
 you'll get a compile-time or runtime error.
 
-<!--
-  TODO: maybe re-introduce this text...
-
-  Memory safety refers to...
-  The term *safety* usually refers to :newTerm:`memory safety`...
-  Unsafe access to memory is available, if you ask for it explicitly...
--->
-
 ## Understanding Conflicting Access to Memory
 
 Access to memory happens in your code
@@ -48,24 +40,6 @@ var one = 1
 // A read access from the memory where one is stored.
 print("We're number \(one)!")
 ```
-
-<!--
-  - test: `memory-read-write`
-
-  ```swifttest
-  // A write access to the memory where one is stored.
-  -> var one = 1
-
-  // A read access from the memory where one is stored.
-  -> print("We're number \(one)!")
-  << We're number 1!
-  ```
--->
-
-<!--
-  Might be worth a different example,
-  or else I'm going to keep getting "We are Number One" stuck in my head.
--->
 
 A conflicting access to memory can occur
 when different parts of your code are trying
@@ -127,11 +101,6 @@ you have to determine what it was intended to do.
 > use [Thread Sanitizer](https://developer.apple.com/documentation/xcode/diagnosing_memory_thread_and_crash_issues_early)
 > to help detect conflicting access across threads.
 
-<!--
-  TODO: The xref above doesn't seem to give enough information.
-  What should I be looking for when I get to the linked page?
--->
-
 ### Characteristics of Memory Access
 
 There are three characteristics of memory access
@@ -166,12 +135,6 @@ For a list of C atomic functions, see the `stdatomic(3)` man page.
 [`Atomic`]: https://developer.apple.com/documentation/synchronization/atomic
 [`AtomicLazyReference`]: https://developer.apple.com/documentation/synchronization/atomiclazyreference
 
-<!--
-  Using the C atomic functions from Swift
-  requires some shimming that's out of scope for TSPL - for example:
-  https://github.com/apple/swift-atomics/tree/main/Sources/_AtomicsShims
--->
-
 An access is *instantaneous*
 if it's not possible for other code to run
 after that access starts but before it ends.
@@ -190,21 +153,6 @@ myNumber = oneMore(than: myNumber)
 print(myNumber)
 // Prints "2".
 ```
-
-<!--
-  - test: `memory-instantaneous`
-
-  ```swifttest
-  -> func oneMore(than number: Int) -> Int {
-         return number + 1
-     }
-
-  -> var myNumber = 1
-  -> myNumber = oneMore(than: myNumber)
-  -> print(myNumber)
-  <- 2
-  ```
--->
 
 However,
 there are several ways to access memory,
@@ -251,24 +199,6 @@ increment(&stepSize)
 // Error: Conflicting accesses to stepSize.
 ```
 
-<!--
-  - test: `memory-increment`
-
-  ```swifttest
-  -> var stepSize = 1
-
-  -> func increment(_ number: inout Int) {
-         number += stepSize
-     }
-
-  -> increment(&stepSize)
-  // Error: Conflicting accesses to stepSize.
-  xx Simultaneous accesses to 0x10e8667d8, but modification requires exclusive access.
-  xx Previous access (a modification) started at  (0x10e86b032).
-  xx Current access (a read) started at:
-  ```
--->
-
 In the code above,
 `stepSize` is a global variable,
 and it's normally accessible from within `increment(_:)`.
@@ -295,25 +225,6 @@ increment(&copyOfStepSize)
 stepSize = copyOfStepSize
 // stepSize is now 2
 ```
-
-<!--
-  - test: `memory-increment-copy`
-
-  ```swifttest
-  >> var stepSize = 1
-  >> func increment(_ number: inout Int) {
-  >>     number += stepSize
-  >> }
-  // Make an explicit copy.
-  -> var copyOfStepSize = stepSize
-  -> increment(&copyOfStepSize)
-
-  // Update the original.
-  -> stepSize = copyOfStepSize
-  /> stepSize is now \(stepSize)
-  </ stepSize is now 2
-  ```
--->
 
 When you make a copy of `stepSize` before calling `increment(_:)`,
 it's clear that the value of `copyOfStepSize` is incremented
@@ -342,35 +253,6 @@ balance(&playerOneScore, &playerOneScore)
 // Error: Conflicting accesses to playerOneScore.
 ```
 
-<!--
-  - test: `memory-balance`
-
-  ```swifttest
-  -> func balance(_ x: inout Int, _ y: inout Int) {
-         let sum = x + y
-         x = sum / 2
-         y = sum - x
-     }
-  -> var playerOneScore = 42
-  -> var playerTwoScore = 30
-  -> balance(&playerOneScore, &playerTwoScore)  // OK
-  -> balance(&playerOneScore, &playerOneScore)
-  // Error: Conflicting accesses to playerOneScore.
-  !$ error: inout arguments are not allowed to alias each other
-  !! balance(&playerOneScore, &playerOneScore)
-  !!                          ^~~~~~~~~~~~~~~
-  !$ note: previous aliasing argument
-  !! balance(&playerOneScore, &playerOneScore)
-  !!         ^~~~~~~~~~~~~~~
-  !$ error: overlapping accesses to 'playerOneScore', but modification requires exclusive access; consider copying to a local variable
-  !! balance(&playerOneScore, &playerOneScore)
-  !!                          ^~~~~~~~~~~~~~~
-  !$ note: conflicting access is here
-  !! balance(&playerOneScore, &playerOneScore)
-  !!         ^~~~~~~~~~~~~~~
-  ```
--->
-
 The `balance(_:_:)` function above
 modifies its two parameters
 to divide the total value evenly between them.
@@ -393,19 +275,6 @@ to the same location in memory at the same time.
 
 ## Conflicting Access to self in Methods
 
-<!--
-  This (probably?) applies to all value types,
-  but structures are the only place you can observe it.
-  Enumerations can have mutating methods
-  but you can't mutate their associated values in place,
-  and tuples can't have methods.
--->
-
-<!--
-  Methods behave like self is passed to the method as inout
-  because, under the hood, that's exactly what happens.
--->
-
 A mutating method on a structure has write access to `self`
 for the duration of the method call.
 For example, consider a game where each player
@@ -424,28 +293,6 @@ struct Player {
     }
 }
 ```
-
-<!--
-  - test: `memory-player-share-with-self`
-
-  ```swifttest
-  >> func balance(_ x: inout Int, _ y: inout Int) {
-  >>     let sum = x + y
-  >>     x = sum / 2
-  >>     y = sum - x
-  >> }
-  -> struct Player {
-         var name: String
-         var health: Int
-         var energy: Int
-
-         static let maxHealth = 10
-         mutating func restoreHealth() {
-             health = Player.maxHealth
-         }
-     }
-  ```
--->
 
 In the `restoreHealth()` method above,
 a write access to `self` starts at the beginning of the method
@@ -468,22 +315,6 @@ var oscar = Player(name: "Oscar", health: 10, energy: 10)
 var maria = Player(name: "Maria", health: 5, energy: 10)
 oscar.shareHealth(with: &maria)  // OK
 ```
-
-<!--
-  - test: `memory-player-share-with-self`
-
-  ```swifttest
-  -> extension Player {
-         mutating func shareHealth(with teammate: inout Player) {
-             balance(&teammate.health, &health)
-         }
-     }
-
-  -> var oscar = Player(name: "Oscar", health: 10, energy: 10)
-  -> var maria = Player(name: "Maria", health: 5, energy: 10)
-  -> oscar.shareHealth(with: &maria)  // OK
-  ```
--->
 
 In the example above,
 calling the `shareHealth(with:)` method
@@ -509,27 +340,6 @@ there's a conflict:
 oscar.shareHealth(with: &oscar)
 // Error: Conflicting accesses to oscar.
 ```
-
-<!--
-  - test: `memory-player-share-with-self`
-
-  ```swifttest
-  -> oscar.shareHealth(with: &oscar)
-  // Error: Conflicting accesses to oscar.
-  !$ error: inout arguments are not allowed to alias each other
-  !! oscar.shareHealth(with: &oscar)
-  !!                         ^~~~~~
-  !$ note: previous aliasing argument
-  !! oscar.shareHealth(with: &oscar)
-  !! ^~~~~
-  !$ error: overlapping accesses to 'oscar', but modification requires exclusive access; consider copying to a local variable
-  !! oscar.shareHealth(with: &oscar)
-  !!                          ^~~~~
-  !$ note: conflicting access is here
-  !! oscar.shareHealth(with: &oscar)
-  !! ^~~~~~
-  ```
--->
 
 The mutating method needs write access to `self`
 for the duration of the method,
@@ -564,24 +374,6 @@ balance(&playerInformation.health, &playerInformation.energy)
 // Error: Conflicting access to properties of playerInformation.
 ```
 
-<!--
-  - test: `memory-tuple`
-
-  ```swifttest
-  >> func balance(_ x: inout Int, _ y: inout Int) {
-  >>     let sum = x + y
-  >>     x = sum / 2
-  >>     y = sum - x
-  >> }
-  -> var playerInformation = (health: 10, energy: 20)
-  -> balance(&playerInformation.health, &playerInformation.energy)
-  // Error: Conflicting access to properties of playerInformation.
-  xx Simultaneous accesses to 0x10794d848, but modification requires exclusive access.
-  xx Previous access (a modification) started at  (0x107952037).
-  xx Current access (a modification) started at:
-  ```
--->
-
 In the example above,
 calling `balance(_:_:)` on the elements of a tuple
 produces a conflict
@@ -606,28 +398,6 @@ var holly = Player(name: "Holly", health: 10, energy: 10)
 balance(&holly.health, &holly.energy)  // Error
 ```
 
-<!--
-  - test: `memory-share-health-global`
-
-  ```swifttest
-  >> struct Player {
-  >>     var name: String
-  >>     var health: Int
-  >>     var energy: Int
-  >> }
-  >> func balance(_ x: inout Int, _ y: inout Int) {
-  >>     let sum = x + y
-  >>     x = sum / 2
-  >>     y = sum - x
-  >> }
-  -> var holly = Player(name: "Holly", health: 10, energy: 10)
-  -> balance(&holly.health, &holly.energy)  // Error
-  xx Simultaneous accesses to 0x10794d848, but modification requires exclusive access.
-  xx Previous access (a modification) started at  (0x107952037).
-  xx Current access (a modification) started at:
-  ```
--->
-
 In practice,
 most access to the properties of a structure
 can overlap safely.
@@ -643,28 +413,6 @@ func someFunction() {
     balance(&oscar.health, &oscar.energy)  // OK
 }
 ```
-
-<!--
-  - test: `memory-share-health-local`
-
-  ```swifttest
-  >> struct Player {
-  >>     var name: String
-  >>     var health: Int
-  >>     var energy: Int
-  >> }
-  >> func balance(_ x: inout Int, _ y: inout Int) {
-  >>     let sum = x + y
-  >>     x = sum / 2
-  >>     y = sum - x
-  >> }
-  -> func someFunction() {
-         var oscar = Player(name: "Oscar", health: 10, energy: 10)
-         balance(&oscar.health, &oscar.energy)  // OK
-     }
-  >> someFunction()
-  ```
--->
 
 In the example above,
 Oscar's health and energy are passed
@@ -694,70 +442,3 @@ if the following conditions apply:
 
 If the compiler can't prove the access is safe,
 it doesn't allow the access.
-
-<!--
-  Because there's no syntax
-  to mutate an enum's associated value in place,
-  we can't show that overlapping mutations
-  to two different associated values on the same enum
-  would violate exclusivity.
-  Otherwise, we'd want an example of that
-  in this section too --
-  it's the moral equivalent of property access.
--->
-
-<!--
-  .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. .. ..
--->
-
-<!--
-  In Swift 4, the only way to create a long-term read
-  is to use implicit pointer conversion
-  when passing a value as a nonmutating unsafe pointer parameter,
-  as in the example below.
-  There's discussion in <rdar://problem/33115142>
-  about changing the semantics of nonmutating method calls
-  to be long-term reads,
-  but it's not clear if/when that change will land.
-
-  ::
-
-      var global = 4
-
-      func foo(_ x: UnsafePointer<Int>){
-          global = 7
-      }
-
-      foo(&global)
-      print(global)
-
-      // Simultaneous accesses to 0x106761618, but modification requires exclusive access.
-      // Previous access (a read) started at temp2`main + 87 (0x10675e417).
-      // Current access (a modification) started at:
-      // 0    libswiftCore.dylib                 0x0000000106ac7b90 swift_beginAccess + 605
-      // 1    temp2                              0x000000010675e500 foo(_:) + 39
-      // 2    temp2                              0x000000010675e3c0 main + 102
-      // 3    libdyld.dylib                      0x00007fff69c75144 start + 1
-      // Fatal access conflict detected.
--->
-
-<!--
-  TEXT FOR THE FUTURE
-
-  Versions of Swift before Swift 5 ensure memory safety
-  by aggressively making a copy of the shared mutable state
-  when a conflicting access is possible.
-  The copy is no longer shared, preventing the possibility of conflicts.
-  However, the copying approach has a negative impact
-  on performance and memory usage.
--->
-
-<!--
-This source file is part of the Swift.org open source project
-
-Copyright (c) 2014 - 2022 Apple Inc. and the Swift project authors
-Licensed under Apache License v2.0 with Runtime Library Exception
-
-See https://swift.org/LICENSE.txt for license information
-See https://swift.org/CONTRIBUTORS.txt for the list of Swift project authors
--->

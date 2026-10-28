@@ -19,7 +19,7 @@ The entity renders with no light or shadow calculations.
 case unlit
 ```
 
-#### Discussion
+## Discussion
 
 A custom material that uses the unlit lighting model renders much like an entity with an [`UnlitMaterial`](../../unlitmaterial.md). Custom materials using [`CustomMaterial.LightingModel.unlit`](./unlit.md) don’t respond to lights in the scene. Use this lighting model for user interface elements or other elements where visibility is more important than fitting in to the environment.
 

@@ -21,7 +21,7 @@ A transformer that composes two tabular transformers by applying them one after 
 struct ComposedTabularTransformer<Inner, Outer> where Inner : TabularTransformer, Outer : TabularTransformer
 ```
 
-#### Overview
+## Overview
 
 The result of this transformer is equivalent to invoking `outer(inner(x))` on an input `x`,
 

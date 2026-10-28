@@ -15,11 +15,11 @@ Get disjoint mesh geometries of a given surface classification.
 extern ar_mesh_geometries_tar_room_anchor_get_mesh_geometries_for_surface_classification(ar_room_anchor_t room_anchor, ar_surface_classification_t classification);
 ```
 
-#### Return Value
+## Return Value
 
 A collection of mesh geometries where each geometry represents a disjoint mesh of type `classification`.
 
-#### Discussion
+## Discussion
 
 > **Note**: Only `ar_surface_classification_wall` and `ar_surface_classification_floor` are supported.
 

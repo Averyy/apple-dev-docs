@@ -19,11 +19,11 @@ func convertAttributes(_ attributes: [String : Any] = [:]) -> [String : Any]
 - (NSDictionary<NSString *,id> *) convertAttributes:(NSDictionary<NSString *,id> *) attributes;
 ```
 
-#### Return Value
+## Return Value
 
 The converted attributes, or `attributes` itself if the conversion isn’t possible.
 
-#### Discussion
+## Discussion
 
 Attributes unused by the sender should not be changed or removed.
 

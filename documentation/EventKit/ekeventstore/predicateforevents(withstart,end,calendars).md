@@ -28,11 +28,11 @@ func predicateForEvents(withStart startDate: Date, end endDate: Date, calendars:
 
 - [Retrieving events and reminders](../retrieving-events-and-reminders.md)
 
-#### Return Value
+## Return Value
 
 A predicate to use when calling [`enumerateEvents(matching:using:)`](./enumerateevents%28matching,using%29.md) or [`events(matching:)`](./events%28matching%29.md).
 
-#### Discussion
+## Discussion
 
 Use this method to create a predicate for use with [`events(matching:)`](./events%28matching%29.md) or [`enumerateEvents(matching:using:)`](./enumerateevents%28matching,using%29.md). The events returned using this predicate are in the default time zone. For performance reasons, this method matches only those events within a four-year time span. If the date range between `startDate` and `endDate` is greater than four years, it’s shortened to the first four years.
 

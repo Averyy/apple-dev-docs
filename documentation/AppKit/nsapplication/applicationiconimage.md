@@ -19,7 +19,7 @@ var applicationIconImage: NSImage! { get set }
 @property (strong, null_resettable) NSImage * applicationIconImage;
 ```
 
-#### Discussion
+## Discussion
 
 Assign an image to this property when you want to temporarily change the app icon in the dock app tile. The image you provide is scaled as needed so that it fits in the tile. To restore your app’s original icon, set this property to `nil`.
 

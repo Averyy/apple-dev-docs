@@ -25,11 +25,11 @@ class func success(with resolvedNoteContentType: INNoteContentType) -> Self
 + (instancetype) successWithResolvedNoteContentType:(INNoteContentType) resolvedNoteContentType;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INNoteContentTypeResolutionResult`](../innotecontenttyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you support the specified type of content.
 

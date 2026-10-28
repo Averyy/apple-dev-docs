@@ -22,7 +22,7 @@ optional var selectionContainerViewAboveText: UIView? { get }
 @property (nonatomic, readonly, nullable) UIView * selectionContainerViewAboveText;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. If you supply a view to this property, the framework layers the supplied view above [`textInputView`](./textinputview.md) to render text selection above the text, and includes text-selection handles in the rendering.
 

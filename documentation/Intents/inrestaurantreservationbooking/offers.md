@@ -30,7 +30,7 @@ var offers: [INRestaurantOffer]? { get set }
 @property (atomic, copy, nullable) NSArray<INRestaurantOffer *> * offers;
 ```
 
-#### Discussion
+## Discussion
 
 If a given reservation has associated special offers, assign those offers to this property. The system presents the offers to the user, who then has the option of selecting one. Specify `nil` if there are no available offers. The default value of this property is `nil`.
 

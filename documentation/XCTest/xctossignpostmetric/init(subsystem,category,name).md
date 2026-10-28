@@ -24,7 +24,7 @@ init(subsystem: String, category: String, name: String)
 - (instancetype) initWithSubsystem:(NSString *) subsystem category:(NSString *) category name:(NSString *) name;
 ```
 
-#### Discussion
+## Discussion
 
 Create an `XCTOSSignpostMetric` that records the time that elapses between the beginning and end of the named signpost in a particular log subsystem and category.
 

@@ -21,7 +21,7 @@ func setMaintainsBackForwardList(_ flag: Bool)
 - (void) setMaintainsBackForwardList:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 The back-forward list maintains a page cache, so applications that do not use the [`goForward()`](./goforward%28%29.md) or [`goBack()`](./goback%28%29.md) methods should disable it.
 

@@ -23,7 +23,7 @@ var encryptionScheme: PKEncryptionScheme { get }
 @property (nonatomic, copy, readonly) PKEncryptionScheme encryptionScheme;
 ```
 
-#### Discussion
+## Discussion
 
 This property provides access to the encryption scheme provided to the designated initializer.
 

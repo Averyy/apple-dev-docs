@@ -23,11 +23,11 @@ func cellForRow(at indexPath: IndexPath) -> UITableViewCell?
 - (UITableViewCell *) cellForRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 The cell object at the corresponding index path. In versions of iOS earlier than iOS 15, this method returns `nil` if the cell isn’t visible or if `indexPath` is out of range. In iOS 15 and later, this method returns a non-`nil` cell if the table view retains a prepared cell at the specified index path, even if the cell isn’t currently visible.
 
-#### Discussion
+## Discussion
 
 In iOS 15 and later, the table view retains a prepared cell in the following situations:
 

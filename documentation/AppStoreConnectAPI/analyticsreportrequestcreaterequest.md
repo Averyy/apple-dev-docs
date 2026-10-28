@@ -15,7 +15,7 @@ The request body you use to create an analytics report request.
 object AnalyticsReportRequestCreateRequest
 ```
 
-#### Discussion
+## Discussion
 
 Use this object with [`Request Reports`](./post-v1-analyticsreportrequests.md).
 

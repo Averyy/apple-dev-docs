@@ -5,7 +5,7 @@
 
 Read and manage image assets that appear on the App Clip card.
 
-#### Overview
+## Overview
 
 The `appClipHeaderImages` resource represents the image that appears on the App Clip card. Use it to read the image you provided for use on the App Clip card, to add new imagery, to update image information, and to delete an existing image.
 

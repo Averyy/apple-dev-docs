@@ -25,7 +25,7 @@ var accuracyAuthorization: CLAccuracyAuthorization { get }
 @property (nonatomic, readonly) CLAccuracyAuthorization accuracyAuthorization;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`CLAccuracyAuthorization.fullAccuracy`](../claccuracyauthorization/fullaccuracy.md), you can set the [`desiredAccuracy`](./desiredaccuracy.md) property to any value. If the value is [`CLAccuracyAuthorization.reducedAccuracy`](../claccuracyauthorization/reducedaccuracy.md), setting [`desiredAccuracy`](./desiredaccuracy.md) to a value other than [`kCLLocationAccuracyReduced`](../kcllocationaccuracyreduced.md) has no effect on the location information, and your app can’t use region monitoring or beacon ranging.
 

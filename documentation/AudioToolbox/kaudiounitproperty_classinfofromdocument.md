@@ -24,7 +24,7 @@ var kAudioUnitProperty_ClassInfoFromDocument: AudioUnitPropertyID { get }
 kAudioUnitProperty_ClassInfoFromDocument
 ```
 
-#### Discussion
+## Discussion
 
 If the audio unit implements this property then it is going to do different actions establishing its state from a document rather than from a user preset. Thus, a host app should use this property first (instead of kAudioUnitProperty_ClassInfo) when restoring the state of an audio unit when opening a document. If the audio unit returns an error (or doesn’t implement this property) then the host should use the same preset with the kAudioUnitProperty_ClassInfo.
 

@@ -5,13 +5,13 @@
 
 Learn which extensions to the RFC 3501 IMAP protocol are supported by Mail for iOS, iPadOS, and visionOS.
 
-#### Overview
+## Overview
 
 The IMAP protocol defined in [RFC 3501](https://www.rfc-editor.org/rfc/rfc3501.html) (IMAP4rev1) is one of the protocols used by Mail for iOS, iPadOS, and visionOS to connect to email servers.
 
 To improve efficiency and performance for both the Mail app and email servers, the Mail app supports various extensions to the IMAP protocol. This document is intended for IMAP email server implementers to guide decisions on which extensions to support. For example, the `CONDSTORE`, `IDLE`, and `ESEARCH` extensions are especially important for efficient synchronization.
 
-#### Details
+## Details
 
 Below are the IMAP extensions that Mail for iOS, iPadOS, and visionOS uses, with descriptions of their implementation.
 
@@ -37,7 +37,7 @@ Below are the IMAP extensions that Mail for iOS, iPadOS, and visionOS uses, with
 | [UIDBATCHES](https://datatracker.ietf.org/doc/draft-ietf-mailmaint-imap-uidbatches/) | `UIDBATCHES` | The Mail app operates on roughly equally sized batches of messages for many operations. If the server supports `UIDBATCHES`, the client will use this extension to divide the messages in a particular mailbox into these batches. Otherwise, the Mail app will fall back to using `UID SEARCH` using message sequence numbers. |
 | [RFC 9738](https://www.rfc-editor.org/rfc/rfc9738.html) | `MESSAGELIMIT` | As noted under `UIDBATCHES`, the Mail app operates on batches of messages. The server can use `MESSAGELIMIT` to lower the size of these batches if the server is constrained. |
 
-#### Revision History
+## Revision History
 
 - **2025-08-27** First published.
 

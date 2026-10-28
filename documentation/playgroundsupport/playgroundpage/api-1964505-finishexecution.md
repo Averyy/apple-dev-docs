@@ -25,7 +25,7 @@ final func finishExecution() -> Never
 func finishExecution() -> Never
 ```
 
-#### Discussion
+## Discussion
 
 This function immediately terminates any code running in the playground. Call this function when you've set [`needsIndefiniteExecution`](./api-1964501-needsindefiniteexecution.md) to `true` to indicate that the indefinite period of code execution has ended.
 

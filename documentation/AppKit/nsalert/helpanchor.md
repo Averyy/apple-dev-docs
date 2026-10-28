@@ -19,7 +19,7 @@ var helpAnchor: NSHelpManager.AnchorName? { get set }
 @property (copy, nullable) NSHelpAnchorName helpAnchor;
 ```
 
-#### Discussion
+## Discussion
 
 To provide a help anchor for the alert, set this property to the appropriate string value. To remove the help anchor, set this property’s value to `nil`.
 

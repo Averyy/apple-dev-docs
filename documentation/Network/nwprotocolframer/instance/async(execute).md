@@ -21,7 +21,7 @@ Requests that a block be executed on the connection’s internal scheduling cont
 final func async(execute: @escaping () -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 You should call this if you need to call any framer functions but are in another scheduling context.
 

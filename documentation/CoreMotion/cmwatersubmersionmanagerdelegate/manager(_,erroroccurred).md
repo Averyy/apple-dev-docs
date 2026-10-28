@@ -27,7 +27,7 @@ optional func manager(_ manager: CMWaterSubmersionManager, errorOccurred error: 
 
 - [Accessing submersion data](../accessing-submersion-data.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to respond to errors.
 

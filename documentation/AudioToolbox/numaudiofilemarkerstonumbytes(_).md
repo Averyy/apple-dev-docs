@@ -24,11 +24,11 @@ func NumAudioFileMarkersToNumBytes(_ inNumMarkers: Int) -> Int
 static size_t NumAudioFileMarkersToNumBytes(size_t inNumMarkers);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes required to contain the specified number of audio file markers.
 
-#### Discussion
+## Discussion
 
 Use this convenience function when you call the [`AudioFileSetProperty(_:_:_:_:)`](./audiofilesetproperty%28_,_,_,_%29.md) function with the [`kAudioFilePropertyMarkerList`](./kaudiofilepropertymarkerlist.md) property to calculate the size of buffer needed to hold a specific number of audio file markers.
 

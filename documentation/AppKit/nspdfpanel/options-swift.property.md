@@ -19,7 +19,7 @@ var options: NSPDFPanel.Options { get set }
 @property NSPDFPanelOptions options;
 ```
 
-#### Discussion
+## Discussion
 
 You specify a set of options by combining the appropriate constants defined in [`NSPDFPanel.Options`](./options-swift.struct.md).
 

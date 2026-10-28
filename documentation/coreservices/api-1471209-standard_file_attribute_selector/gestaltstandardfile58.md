@@ -14,7 +14,7 @@
 gestaltStandardFile58 = 0
 ```
 
-#### Discussion
+## Discussion
 
 If the `gestaltStandardFile58` flag bit is set, you can call the four new procedures—`StandardPutFile`, `StandardGetFile`, `CustomPutFile`, and `CustomGetFile`—introduced with System 7. (The name of the constant reflects the enabling of selectors 5 through 8 on the trap macro that handles the Standard File Package.)
 

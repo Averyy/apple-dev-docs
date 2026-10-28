@@ -24,7 +24,7 @@ init(_ configuration: ToggleStyleConfiguration)
 
 Available when `Label` is `ToggleStyleConfiguration.Label`.
 
-#### Discussion
+## Discussion
 
 You can use this initializer within the [`makeBody(configuration:)`](../togglestyle/makebody%28configuration%29.md) method of a [`ToggleStyle`](../togglestyle.md) to create an instance of the styled toggle. This is useful for custom toggle styles that only modify the current toggle style, as opposed to implementing a brand new style.
 

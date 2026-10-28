@@ -19,7 +19,7 @@ protocol MEFormatReaderExtension : NSObjectProtocol
 @protocol MEFormatReaderExtension <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Media Toolbox creates the `MEFormatReaderExtension` object and the [`MEByteSource`](./mebytesource.md) object based on the media asset.
 

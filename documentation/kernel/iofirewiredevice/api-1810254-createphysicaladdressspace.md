@@ -12,7 +12,7 @@ virtual IOFWPhysicalAddressSpace *createPhysicalAddressSpace(
  IOMemoryDescriptor *mem);
 ```
 
-#### Return Value
+## Return Value
 
 A valid `IOFWPhysicalAddressSpace` object on success; NULL on failure.
 

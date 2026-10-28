@@ -17,7 +17,7 @@ An event type that a cloth query volume publishes (before simulation update) whe
 struct NewBodyIntersections
 ```
 
-#### Overview
+## Overview
 
 This event should be treated as having a non-escapable lifetime. Some of its data is no longer available after its lifetime has ended.
 

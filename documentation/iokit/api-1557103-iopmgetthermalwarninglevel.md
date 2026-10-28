@@ -16,7 +16,7 @@ Get thermal warning level of the system.
 IOReturn IOPMGetThermalWarningLevel(uint32_t *thermalLevel);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess, or other error report. Returns kIOReturnNotFound if thermal warning level has not been published.
 

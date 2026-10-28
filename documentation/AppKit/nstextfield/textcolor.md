@@ -20,7 +20,7 @@ var textColor: NSColor? { get set }
 @property (copy, nullable) NSColor * textColor;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  When the text field has an attributed string value, the system ignores the [`textColor`](./textcolor.md), [`font`](../nscontrol/font.md), [`alignment`](../nscontrol/alignment.md), [`lineBreakMode`](../nscontrol/linebreakmode.md), and `lineBreakStrategy` properties. Set the [`foregroundColor`](../../Foundation/nsattributedstring/key/foregroundcolor.md), [`font`](../../Foundation/nsattributedstring/key/font.md), [`alignment`](../nsmutableparagraphstyle/alignment.md), [`lineBreakMode`](../nsparagraphstyle/linebreakmode.md), and [`lineBreakStrategy`](../nsparagraphstyle/linebreakstrategy-swift.property.md) properties in the attributed string instead.
 

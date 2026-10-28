@@ -22,11 +22,11 @@ Finds multiple possible tags for a given linguistic unit, for a single scheme, a
 func tagHypotheses(at index: String.Index, unit: NLTokenUnit, scheme: NLTagScheme, maximumCount: Int) -> ([String : Double], Range<String.Index>)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple containing a dictionary and a range.
 
-#### Discussion
+## Discussion
 
 Each dictionary entry is a predicted tag with its associated probability score. These tags are the top candidates proposed as possible tags for the token. The dictionary contains up to `maximumCount` entries.
 

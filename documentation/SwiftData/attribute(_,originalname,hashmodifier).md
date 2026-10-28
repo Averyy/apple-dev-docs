@@ -19,8 +19,8 @@ Specifies the custom behavior that SwiftData applies to the annotated property w
 ## Declaration
 
 ```swift
-@attached
-(peer) macro Attribute(_ options: Schema.Attribute.Option..., originalName: String? = nil, hashModifier: String? = nil)
+@attached(peer)
+macro Attribute(_ options: Schema.Attribute.Option..., originalName: String? = nil, hashModifier: String? = nil)
 ```
 
 ## Mentions
@@ -28,7 +28,7 @@ Specifies the custom behavior that SwiftData applies to the annotated property w
 - [Fetching and filtering time-based model changes](./fetching-and-filtering-time-based-model-changes.md)
 - [Preserving your app’s model data across launches](./preserving-your-apps-model-data-across-launches.md)
 
-#### Overview
+## Overview
 
 The framework’s default behavior for managing a model class’s stored properties is suitable for most use cases. However, if you need to alter the persistence behavior of a particular property, annotate it with the `@Attribute` macro. For example, you may want to avoid conflicts in your model data by specifying that an attribute’s value is unique across all instances of that model.
 

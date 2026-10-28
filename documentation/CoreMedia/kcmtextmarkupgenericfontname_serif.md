@@ -25,7 +25,7 @@ let kCMTextMarkupGenericFontName_Serif: CFString
 extern CFStringRef const kCMTextMarkupGenericFontName_Serif;
 ```
 
-#### Discussion
+## Discussion
 
 The font may be proportional or monospaced.
 

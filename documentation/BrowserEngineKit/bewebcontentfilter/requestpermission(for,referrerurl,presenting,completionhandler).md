@@ -22,7 +22,7 @@ func requestPermission(for url: URL, referrerURL: URL?, presenting presentingVie
 - (void) requestPermissionForURL:(NSURL *) url referrerURL:(NSURL *) referrerURL presentingView:(UIView *) presentingView completionHandler:(void (^)(BEWebContentFilterPermissionDecision result, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Request a blocked URL to be added to built-in web content filter’s allowlist
 

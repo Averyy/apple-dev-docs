@@ -25,7 +25,7 @@ static var traitExpanded: CTFontSymbolicTraits { get }
 kCTFontTraitExpanded
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  [`expandedTrait`](./expandedtrait.md) and [`condensedTrait`](./condensedtrait.md) are mutually exclusive.
 

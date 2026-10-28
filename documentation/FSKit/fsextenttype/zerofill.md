@@ -19,7 +19,7 @@ case zeroFill
 FSExtentTypeZeroFill
 ```
 
-#### Discussion
+## Discussion
 
 Only use this extent type in file systems that support sparse files, and only then to represent ranges in the file that aren’t allocated yet.
 

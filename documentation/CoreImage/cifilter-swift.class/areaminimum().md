@@ -24,11 +24,11 @@ class func areaMinimum() -> any CIFilter & CIAreaMinimum
 + (CIFilter<CIAreaMinimum> *) areaMinimumFilter;
 ```
 
-#### Return Value
+## Return Value
 
 A 1 x 1 size image containing the minimum color component values.
 
-#### Discussion
+## Discussion
 
 This filter returns the minimum color components in the region defined by `extent`.
 

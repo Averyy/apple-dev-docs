@@ -19,7 +19,7 @@ func SCPreferencesPathSetValue(_ prefs: SCPreferences, _ path: CFString, _ value
 Boolean SCPreferencesPathSetValue(SCPreferencesRef prefs, CFStringRef path, CFDictionaryRef value);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if successful; otherwise, `FALSE`.
 

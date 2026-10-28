@@ -25,7 +25,7 @@ class var learningRate: MLParameterKey { get }
 @property (class, nonatomic, readonly) MLParameterKey * learningRate;
 ```
 
-#### Discussion
+## Discussion
 
 The value type for the [`learningRate`](./learningrate.md) key is a [`Double`](../../Swift/double.md).
 

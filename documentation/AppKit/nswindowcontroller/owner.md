@@ -19,7 +19,7 @@ weak var owner: AnyObject? { get }
 @property (weak, readonly) id owner;
 ```
 
-#### Discussion
+## Discussion
 
 The owner of the nib file containing the window managed by the receiver is usually `self`, but it can be the receiver’s document or some other object.
 

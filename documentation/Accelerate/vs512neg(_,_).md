@@ -19,7 +19,7 @@ func vS512Neg(_ a: UnsafePointer<vS512>, _ result: UnsafeMutablePointer<vS512>)
 extern void vS512Neg(const vS512 *a, vS512 *result);
 ```
 
-#### Discussion
+## Discussion
 
 Returns the negated value through the result parameter.
 

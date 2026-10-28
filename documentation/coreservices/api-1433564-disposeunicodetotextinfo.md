@@ -15,7 +15,7 @@ Releases the memory allocated for the specified Unicodeconverter object.
 OSStatus DisposeUnicodeToTextInfo(UnicodeToTextInfo *ioUnicodeToTextInfo);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).  The function returns `noErr` ifit disposes of the Unicode converter object successfully. If your applicationspecifies an invalid Unicode converter object, such as `NULL`,the function returns a `paramErr` resultcode.
 

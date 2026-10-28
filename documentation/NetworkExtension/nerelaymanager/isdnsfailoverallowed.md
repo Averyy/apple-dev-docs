@@ -22,7 +22,7 @@ var isDNSFailoverAllowed: Bool { get set }
 @property (getter=isDNSFailoverAllowed) BOOL allowDNSFailover;
 ```
 
-#### Discussion
+## Discussion
 
 Determines if DNS queries that fail over relay can fallback to default DNS
 

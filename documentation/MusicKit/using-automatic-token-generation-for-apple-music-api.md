@@ -5,13 +5,13 @@
 
 Enable your app’s integration with the MusicKit App Service in the developer portal.
 
-#### Overview
+## Overview
 
 MusicKit accelerates the way you integrate your app with Apple Music API by automatically generating the developer token on behalf of your app. It then includes the developer token in requests that it issues to Apple Music API for your app.
 
 To benefit from this automatic behavior, just enable the MusicKit App Service in the developer portal for your app. The MusicKit App Service is a runtime service that automatically associates with your app’s bundle identifier.
 
-##### Enable the MusicKit App Service
+### Enable the MusicKit App Service
 
 1. In Safari, visit the [Certificates, Identifiers, and Profiles](https://developer.apple.com/account/resources) section of the developer web site.
 2. In the Identifiers subsection, open the App ID for your app and begin editing its configuration, or create a new one.

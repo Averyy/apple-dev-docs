@@ -19,7 +19,7 @@ class TVTopShelfSectionedContent
 @interface TVTopShelfSectionedContent : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a [`TVTopShelfSectionedContent`](./tvtopshelfsectionedcontent.md) object when you want to display your top shelf content using a sectioned interface. A sectioned interface displays a single labled row of items. Items are organized by section. As the row scrolls horizontally through the items, the system updates the label above the items to indicate the current section. You specify the title of each section and its items using [`TVTopShelfItemCollection`](./tvtopshelfitemcollection.md) objects.
 

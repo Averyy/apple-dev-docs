@@ -25,7 +25,7 @@ case note
 INNotebookItemTypeNote
 ```
 
-#### Discussion
+## Discussion
 
 Search your app’s notes and return each one using an [`INNote`](../innote.md) object.
 

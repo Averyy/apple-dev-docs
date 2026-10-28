@@ -21,7 +21,7 @@ The queue schedules tasks concurrently.
 static let concurrent: DispatchQueue.Attributes
 ```
 
-#### Discussion
+## Discussion
 
 If this attribute is not present, the queue schedules tasks serially in first-in, first-out (FIFO) order.
 

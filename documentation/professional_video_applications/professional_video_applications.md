@@ -6,7 +6,7 @@
 
 Exchange data with Final Cut Pro, and create effects plug-ins for Final Cut Pro and Motion.
 
-#### Overview
+## Overview
 
 Final Cut Pro XML (FCPXML) offers a way for video producers to streamline the exchange of media and metadata between apps and Final Cut Pro. Use FCPXML to send media and metadata from your app to Final Cut Pro for editing, and receive rendered projects—along with their edit descriptions and metadata—from Final Cut Pro into your app.
 

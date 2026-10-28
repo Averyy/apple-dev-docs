@@ -25,11 +25,11 @@ func CFPreferencesCopyMultiple(_ keysToFetch: CFArray?, _ applicationID: CFStrin
 extern CFDictionaryRefCFPreferencesCopyMultiple(CFArrayRef keysToFetch, CFStringRef applicationID, CFStringRef userName, CFStringRef hostName);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the preference values for the keys specified by `keysToFetch` for the specified domain. If no values were located, returns an empty dictionary. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Note that values returned from this function are immutable, even if you have recently set the value using a mutable object.
 

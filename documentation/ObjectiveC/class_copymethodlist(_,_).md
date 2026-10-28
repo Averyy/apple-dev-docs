@@ -25,13 +25,13 @@ func class_copyMethodList(_ cls: AnyClass?, _ outCount: UnsafeMutablePointer<UIn
 extern Method*class_copyMethodList(Class cls, unsigned int *outCount);
 ```
 
-#### Return Value
+## Return Value
 
 An array of pointers of type `Method` describing the instance methods implemented by the class—any instance methods implemented by superclasses are not included. The array contains `*outCount` pointers followed by a `NULL` terminator. You must free the array with `free()`.
 
 If `cls` implements no instance methods, or `cls` is `Nil`, returns `NULL` and `*outCount` is `0`.
 
-#### Discussion
+## Discussion
 
 To get the class methods of a class, use `class_copyMethodList(object_getClass(cls), &count)`.
 

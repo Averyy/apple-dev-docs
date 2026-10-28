@@ -22,7 +22,7 @@ func handleError(_ error: any Error, userInteractionPermitted: Bool)
 - (void) handleError:(NSError *) error userInteractionPermitted:(BOOL) userInteractionPermitted;
 ```
 
-#### Discussion
+## Discussion
 
 Typical [`UIDocument`](../uidocument.md) subclasses don’t need to call or override this method. Instead, they can observe the [`stateChangedNotification`](./statechangednotification.md) notification to be notified of changes in document state. In their notification handler, they can check the value of the [`documentState`](./documentstate.md) property and proceed accordingly. See [Resolve conflicts and handle errors](../uidocument.md#Resolve-conflicts-and-handle-errors) for a discussion of this.
 

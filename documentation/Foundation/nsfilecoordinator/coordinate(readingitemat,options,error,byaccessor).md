@@ -25,7 +25,7 @@ func coordinate(readingItemAt url: URL, options: NSFileCoordinator.ReadingOption
 - (void) coordinateReadingItemAtURL:(NSURL *) url options:(NSFileCoordinatorReadingOptions) options error:(NSError **) outError byAccessor:(void (^)(NSURL *newURL)) reader;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to perform read-related operations on a file or directory in a coordinated manner. This method executes synchronously, blocking the current thread until the `reader` block finishes executing. Before executing that block, though, the file coordinator waits until other relevant file presenter objects finish in-progress actions. Similarly, your read operation may cause pending actions for other file presenters to wait until your operations are complete. Whether or not the file coordinator waits depends on whether the item being read is a file or a directory and also depends on other related operations.
 

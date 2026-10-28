@@ -19,7 +19,7 @@ Begins or continues an asynchronous hand pose classifier’s training session.
 static func resume(_ session: MLTrainingSession<MLHandPoseClassifier>) throws -> MLJob<MLHandPoseClassifier>
 ```
 
-#### Return Value
+## Return Value
 
 An [`MLJob`](../mljob.md) that represents the hand pose training session.
 

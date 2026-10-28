@@ -25,7 +25,7 @@ var bytesToSend: UInt32
 UInt32 bytesToSend;
 ```
 
-#### Discussion
+## Discussion
 
 Initially, the number of bytes to send. [`MIDISendSysex(_:)`](../midisendsysex%28_%29.md) decrements this counter as it sends bytes.
 

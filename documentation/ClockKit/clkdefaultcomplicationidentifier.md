@@ -19,7 +19,7 @@ let CLKDefaultComplicationIdentifier: String
 extern NSString * const CLKDefaultComplicationIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The system assigns a [`CLKDefaultComplicationIdentifier`](./clkdefaultcomplicationidentifier.md) value to the complication’s `identifier` property, whenever a specific identifier is unavailable. For example, ClockKit uses default type identifiers to represent the type on complications designed for watchOS 6 or earlier. It also uses the default type for complications from a shared watch face, when the sender chose to not include complication data in the shared watch face.
 

@@ -29,7 +29,7 @@ extern NSString * const NSMigratePersistentStoresAutomaticallyOption;
 
 - [Migrating your data model automatically](./migrating-your-data-model-automatically.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSNumber` object. If the [`boolValue`](../Foundation/nsnumber/boolvalue.md) of the number is [`true`](../Swift/true.md) and if the version hash information for the added store is determined to be incompatible with the model for the coordinator, Core Data will attempt to locate the source and mapping models in the application bundles, and perform a migration.
 

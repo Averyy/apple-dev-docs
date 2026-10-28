@@ -25,7 +25,7 @@ var dictionaryRepresentation: [String : Any] { get }
 @property (copy, readonly) NSDictionary<NSString *,id> * dictionaryRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 Getting this property retrieves the in-memory copy of the keys and values. If changes to the keys and values are pending, the system fetches those changes from iCloud and updates the dictionary before returning it. To ensure the dictionary contains all recent changes, call [`synchronize()`](./synchronize%28%29.md) shortly before accessing this property. All of the values in the dictionary are property list object types.
 

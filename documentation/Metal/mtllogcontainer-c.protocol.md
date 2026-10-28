@@ -20,7 +20,7 @@ A collection of logged messages, created when a Metal device runs a command buff
 @protocol MTLLogContainer <NSObject, NSFastEnumeration>
 ```
 
-#### Overview
+## Overview
 
 Enumerate a log container object to get a list of [`MTLFunctionLog`](./mtlfunctionlog.md) instances.
 

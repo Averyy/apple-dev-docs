@@ -30,7 +30,7 @@ protocol MTLFence : NSObjectProtocol, Sendable
 - [Tracking the resource residency of argument buffers](./tracking-the-resource-residency-of-argument-buffers.md)
 - [Synchronizing stages within a pass](./synchronizing-stages-within-a-pass.md)
 
-#### Overview
+## Overview
 
 Create a fence by calling the [`makeFence()`](./mtldevice/makefence%28%29.md) method.
 
@@ -59,7 +59,7 @@ The encoder types that inherit the [`MTLCommandEncoder`](./mtlcommandencoder.md)
 
 > **Note**:  Earlier versions of Metal support hazard tracking for work you encode and commit with [`MTLCommandEncoder`](./mtlcommandencoder.md), [`MTLCommandBuffer`](./mtlcommandbuffer.md), and [`MTLCommandQueue`](./mtlcommandqueue.md) instances, which means you don’t need to synchronize memory operations for resources with a [`hazardTrackingMode`](./mtlresource/hazardtrackingmode.md) property that’s equal to [`hazardTrackingModeTracked`](./mtlresourceoptions/hazardtrackingmodetracked.md).
 
-##### Submit producing passes before consuming passes
+### Submit producing passes before consuming passes
 
 Send producing passes that update a fence to a queue before submitting consuming passes that wait for a fence. When encoding the producing and consuming passes into the same command buffer, encode the producing passes before the consuming passes. When submitting the producing and consuming passes in different command buffers, commit the command buffers with the producing passes before those with the consuming passes.
 

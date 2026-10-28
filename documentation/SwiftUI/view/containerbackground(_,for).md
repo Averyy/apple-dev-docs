@@ -22,7 +22,7 @@ nonisolated
 func containerBackground<S>(_ style: S, for container: ContainerBackgroundPlacement) -> some View where S : ShapeStyle
 ```
 
-#### Discussion
+## Discussion
 
 The following example uses a [`LinearGradient`](../lineargradient.md) as a background:
 

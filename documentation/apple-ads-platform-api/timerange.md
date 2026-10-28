@@ -15,11 +15,11 @@ Date range, time zone, and granularity settings for reporting requests.
 object TimeRange
 ```
 
-#### Discussion
+## Discussion
 
 The `TimeRange` defines the date window, timezone, and optional time-series breakdown for a reporting request.
 
-##### Example
+### Example
 
 ```json
 {

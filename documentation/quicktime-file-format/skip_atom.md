@@ -6,7 +6,7 @@
 
 An atom that designates unused space in the movie data file.
 
-#### Overview
+## Overview
 
 Both `free` and `skip` atoms designate unused space in the movie data file. These atoms consist of only an atom header (`size` and `type` fields), followed by the appropriate number of bytes of free space. When reading a QuickTime movie, your application may safely skip these atoms. When writing or updating a movie, you may reuse the space associated with these atom types.
 

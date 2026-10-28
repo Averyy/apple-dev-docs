@@ -19,7 +19,7 @@ class let availableInputsChangeNotification: NSNotification.Name
 extern NSNotificationName const AVAudioSessionAvailableInputsChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Notification sent to registered listeners when there are changes in [`availableInputs`](./availableinputs.md).
 

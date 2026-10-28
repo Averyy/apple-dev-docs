@@ -24,7 +24,7 @@ class AUParameterNode
 @interface AUParameterNode : NSObject
 ```
 
-#### Overview
+## Overview
 
 Nodes are instances of either an [`AUParameter`](./auparameter.md) or [`AUParameterGroup`](./auparametergroup.md) class.
 

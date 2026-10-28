@@ -23,7 +23,7 @@ init(_ configuration: LabeledContentStyleConfiguration)
 
 Available when `Label` is `LabeledContentStyleConfiguration.Label` and `Content` is `LabeledContentStyleConfiguration.Content`.
 
-#### Discussion
+## Discussion
 
 You can use this initializer within the [`makeBody(configuration:)`](../labeledcontentstyle/makebody%28configuration%29.md) method of a [`LabeledContentStyle`](../labeledcontentstyle.md) to create a labeled content instance. This is useful for custom styles that only modify the current style, as opposed to implementing a brand new style.
 

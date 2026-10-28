@@ -21,7 +21,7 @@ An image-analysis request that you track over time to determine the perspective 
 final class TrackHomographicImageRegistrationRequest
 ```
 
-#### Overview
+## Overview
 
 This request generates an [`ImageHomographicAlignmentObservation`](./imagehomographicalignmentobservation.md) object that describes the matrix data the request detects.
 

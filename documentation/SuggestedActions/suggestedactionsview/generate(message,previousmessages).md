@@ -20,7 +20,7 @@ nonisolated
 static func generate(message: SuggestedActionsMessage, previousMessages: [SuggestedActionsMessage] = []) async
 ```
 
-#### Discussion
+## Discussion
 
 Call this method ahead of presenting a [`SuggestedActionsView`](../suggestedactionsview.md) to generate and cache suggested actions for future use. When you later initialize the view with a [`SuggestedActionsMessage`](../suggestedactionsmessage.md) that has a matching `id`, the view uses the cached result and renders immediately without displaying a loading indicator.
 

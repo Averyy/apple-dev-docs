@@ -22,11 +22,11 @@ Returns an asynchronous sequence, containing the initial, consecutive elements o
 func prefix(while predicate: @escaping @Sendable (Self.Element) async -> Bool) rethrows -> AsyncPrefixWhileSequence<Self>
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence of the initial, consecutive elements that satisfy `predicate`.
 
-#### Discussion
+## Discussion
 
 Use `prefix(while:)` to produce values while elements from the base sequence meet a condition you specify. The modified sequence ends when the predicate closure returns `false`.
 

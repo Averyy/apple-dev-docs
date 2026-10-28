@@ -12,11 +12,11 @@ virtual bool initWithCapacity(
  UInt32 capacity = capacity);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if initialized successfully, false otherwise.
 
-#### Overview
+## Overview
 
 This method initializes an IOPacketQueue object with the given capacity.
 

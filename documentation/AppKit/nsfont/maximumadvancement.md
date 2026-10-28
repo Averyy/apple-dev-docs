@@ -19,7 +19,7 @@ var maximumAdvancement: NSSize { get }
 @property (readonly) NSSize maximumAdvancement;
 ```
 
-#### Discussion
+## Discussion
 
 The advancement is always either strictly horizontal or strictly vertical.
 

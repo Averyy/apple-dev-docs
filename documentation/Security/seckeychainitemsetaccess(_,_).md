@@ -21,11 +21,11 @@ func SecKeychainItemSetAccess(_ itemRef: SecKeychainItem, _ access: SecAccess) -
 OSStatus SecKeychainItemSetAccess(SecKeychainItemRef itemRef, SecAccessRef access);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Use this function to attach an access instance to a particular keychain item. Alternatively, you can use the [`kSecAttrAccess`](./ksecattraccess.md) attribute when calling either of the [`SecItemAdd(_:_:)`](./secitemadd%28_,_%29.md) or [`SecItemUpdate(_:_:)`](./secitemupdate%28_,_%29.md) methods.
 

@@ -18,7 +18,7 @@ Insert an item in the checklist.
 @MainActor func insertItem(withTitle title: String, at index: Int, animated: Bool) -> OCKChecklistItemButton
 ```
 
-#### Return Value
+## Return Value
 
 The item that was inserted.
 

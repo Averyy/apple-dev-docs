@@ -19,11 +19,11 @@ Get detailed information about a device.
 
 - [Validating a Managed Device Attestation](./validating-a-managed-device-attestation-attestation.md)
 
-#### Discussion
+## Discussion
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### DeviceInformation attestation hardware support
+### DeviceInformation attestation hardware support
 
 The following table indicates which System on Chips (SoCs) support DeviceInformation attestation. Unsupported devices ignore the DevicePropertiesAttestation and DeviceAttestationNonce keys.
 
@@ -32,7 +32,7 @@ The following table indicates which System on Chips (SoCs) support DeviceInforma
 | Unsupported | A10x Fusion and earlier | Intel | A10x Fusion and earlier | S3 and earlier | none |
 | Supported | A11 Bionic and laterAll M series | Apple silicon | A12 Bionic and later | S4 and later | All |
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -42,7 +42,7 @@ The following table indicates which System on Chips (SoCs) support DeviceInforma
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | Special Case |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

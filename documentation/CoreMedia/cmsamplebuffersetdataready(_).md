@@ -25,11 +25,11 @@ func CMSampleBufferSetDataReady(_ sbuf: CMSampleBuffer) -> OSStatus
 extern OSStatus CMSampleBufferSetDataReady(CMSampleBufferRef sbuf);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 There’s no way to undo this operation. The only way to get an “unready” `CMSampleBuffer` is to call `CMSampleBufferCreate` with the `dataReady` parameter set to `false`.
 

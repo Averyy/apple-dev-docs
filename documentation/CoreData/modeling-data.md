@@ -5,7 +5,7 @@
 
 Configure the data model file to contain your app’s object graph.
 
-#### Overview
+## Overview
 
 A data model holds information about your application’s objects and the graph of how objects relate to each other. You provide this information in your project’s `.xcdatamodeld` file package. To add a data model to your project, see [Creating a Core Data model](./creating-a-core-data-model.md).
 

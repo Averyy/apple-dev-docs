@@ -22,7 +22,7 @@ init(attributedText: NSAttributedString)
 - (instancetype) initWithAttributedText:(NSAttributedString *) attributedText;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized instance of `UISimpleTextPrintFormatter` or `nil` if the object could not be created.
 

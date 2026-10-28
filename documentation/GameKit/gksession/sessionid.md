@@ -24,7 +24,7 @@ var sessionID: String! { get }
 @property (readonly) NSString * sessionID;
 ```
 
-#### Discussion
+## Discussion
 
 The session ID is used by sessions configured as servers to advertise itself to other peers and by sessions configured as clients to search for compatible servers. The session ID should be the short name of an approved Bonjour service type.
 

@@ -24,7 +24,7 @@ var anisotropicRotation: MDLMaterialProperty { get }
 @property (nonatomic, retain, readonly) MDLMaterialProperty * anisotropicRotation;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is zero, indicating no rotation. Values `0.0` to `1.0` in this property correspond to rotations of `0.0` to `2 * M_PI` radians.
 

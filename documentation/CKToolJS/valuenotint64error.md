@@ -15,7 +15,7 @@ An error a validator emits when a value isn’t an `Int64` or isn’t castable t
 interface ValueNotInt64Error
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueNotConvertibleToTypeError`.
 

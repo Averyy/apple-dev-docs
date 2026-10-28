@@ -21,7 +21,7 @@ Accesses the element at the specified position.
 subscript(index: Int) -> Element { get set }
 ```
 
-#### Overview
+## Overview
 
 The following example uses indexed subscripting to update an array’s second element. After assigning the new value (`"Butler"`) at a specific position, that value is immediately available at that same position.
 

@@ -19,7 +19,7 @@ var allowsTextInputContextCandidates: Bool { get set }
 @property BOOL allowsTextInputContextCandidates;
 ```
 
-#### Discussion
+## Discussion
 
 When [`true`](../../Swift/true.md), the candidate list item shows candidates from the text input client provided in the [`client`](./client.md) property, before those in the [`candidates`](./candidates.md) property.
 

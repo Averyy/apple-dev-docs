@@ -19,11 +19,11 @@ func fieldEditor(for controlView: NSView) -> NSTextView?
 - (NSTextView *) fieldEditorForView:(NSView *) controlView;
 ```
 
-#### Return Value
+## Return Value
 
 A custom field editor. The field editor must have [`isFieldEditor`](../nstextview/isfieldeditor.md) set to [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 This is an override point for `NSCell` subclasses designed to use their own custom field editors. This message is sent to the selected cell of `aControlView` using the [`NSWindow`](../nswindow.md) method in [`fieldEditor(_:for:)`](../nswindow/fieldeditor%28_,for%29.md).
 

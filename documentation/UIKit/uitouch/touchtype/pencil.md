@@ -23,7 +23,7 @@ case pencil
 UITouchTypePencil
 ```
 
-#### Discussion
+## Discussion
 
 A pencil touch occurs when Apple Pencil interacts with the device’s screen.
 

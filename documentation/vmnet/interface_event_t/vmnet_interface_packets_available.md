@@ -18,7 +18,7 @@ static var VMNET_INTERFACE_PACKETS_AVAILABLE: interface_event_t { get }
 VMNET_INTERFACE_PACKETS_AVAILABLE
 ```
 
-#### Discussion
+## Discussion
 
 Event indicating packets are available to be read on the interface.
 

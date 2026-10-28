@@ -24,7 +24,7 @@ class MTLTensorAuxiliaryPlaneDescriptorMap
 @interface MTLTensorAuxiliaryPlaneDescriptorMap : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this collection to associate [`MTLTensorPlaneType`](./mtltensorplanetype.md) values with [`MTLTensorAuxiliaryPlaneDescriptor`](./mtltensorauxiliaryplanedescriptor.md) configurations, then attach it to a [`MTLTensorDescriptor`](./mtltensordescriptor.md) to create a multi-plane tensor.
 

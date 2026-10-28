@@ -24,7 +24,7 @@ var dispatchQueue: dispatch_queue_t { get set }
 @property (atomic, retain, readwrite) dispatch_queue_t dispatchQueue;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is nil.
 

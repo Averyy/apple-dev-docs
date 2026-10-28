@@ -19,7 +19,7 @@ let IKSlideshowScreen: String
 extern NSString * const IKSlideshowScreen;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSScreen`](../AppKit/nsscreen.md) object. By default [`main`](../AppKit/nsscreen/main.md) is used.
 

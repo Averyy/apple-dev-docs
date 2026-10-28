@@ -21,11 +21,11 @@ Returns the position immediately before the given index.
 borrowing func index(before i: InlineArray<count, Element>.Index) -> InlineArray<count, Element>.Index
 ```
 
-#### Return Value
+## Return Value
 
 The index value immediately before `i`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

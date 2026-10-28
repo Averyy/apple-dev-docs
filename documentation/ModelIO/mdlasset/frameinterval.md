@@ -24,7 +24,7 @@ var frameInterval: TimeInterval { get set }
 @property (nonatomic, readwrite) NSTimeInterval frameInterval;
 ```
 
-#### Discussion
+## Discussion
 
 If the asset does not contain timed information, this property’s value is zero. Otherwise, this property represents frame timing: For example, if an asset contains animation data to be presented at 24 frames per second, this property’s value is `0.04167` (1/24 second).
 

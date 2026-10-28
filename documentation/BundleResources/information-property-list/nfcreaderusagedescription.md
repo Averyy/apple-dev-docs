@@ -15,7 +15,7 @@ A message that tells people why the app is requesting access to the device’s N
 - **Name**: `NFCReaderUsageDescription` (Privacy - NFC Scan Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You’re required to provide this key if your app uses APIs that access the NFC hardware.
 

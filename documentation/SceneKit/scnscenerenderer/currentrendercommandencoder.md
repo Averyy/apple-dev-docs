@@ -26,7 +26,7 @@ var currentRenderCommandEncoder: (any MTLRenderCommandEncoder)? { get }
 @property (nonatomic, readonly, nullable) id<MTLRenderCommandEncoder> currentRenderCommandEncoder;
 ```
 
-#### Discussion
+## Discussion
 
 Use this render command encoder to encode additional rendering commands before or after SceneKit draws its own content.
 

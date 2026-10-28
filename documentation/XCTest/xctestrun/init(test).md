@@ -16,7 +16,7 @@ init(test: XCTest)
 - (instancetype) initWithTest:(XCTest *) test;
 ```
 
-#### Return Value
+## Return Value
 
 A test run for the provided test.
 

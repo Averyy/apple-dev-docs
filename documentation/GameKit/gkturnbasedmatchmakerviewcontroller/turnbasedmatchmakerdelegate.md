@@ -24,7 +24,7 @@ weak var turnBasedMatchmakerDelegate: (any GKTurnBasedMatchmakerViewControllerDe
 @property (nonatomic, weak, readwrite, nullable) id<GKTurnBasedMatchmakerViewControllerDelegate> turnBasedMatchmakerDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 You must set the delegate for GameKit to notify you when players cancel matchmaking or an error occurs.
 

@@ -21,7 +21,7 @@ A mode that produces schedule updates at a reduced rate.
 case lowFrequency
 ```
 
-#### Discussion
+## Discussion
 
 In this mode, the schedule should generate only “major” updates, if possible. For example, a timeline providing updates to a timer might restrict updates to once a minute while in this mode.
 

@@ -26,7 +26,7 @@ var backgroundColor: NSColor { get set }
 @property (nonatomic, copy) NSColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit displays this color behind the contents of the rendered scene. If the scene contents fill the view or if the scene provides its own background using the [`background`](../scnscene/background.md) property, the view’s background color may not be visible.
 

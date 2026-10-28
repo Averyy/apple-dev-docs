@@ -19,7 +19,7 @@ protocol NSCollectionViewDelegate : NSObjectProtocol
 @protocol NSCollectionViewDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You use the methods of this protocol to facilitate the user-initiated selection and highlighting of items, to track changes to the collection view’s visual elements, and to implement drag and drop support. The methods of this protocol are optional, but for some features, you must implement specific methods to support the feature.
 
@@ -33,7 +33,7 @@ To implement drag and drop support in your collection view, implement the follow
 
 For more information about handling drag and drop operations, see [Drag and Drop Programming Topics](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/DragandDrop/DragandDrop.html#//apple_ref/doc/uid/10000069i).
 
-##### Legacy Support
+### Legacy Support
 
 Before OS X 10.11, collection views supported only a single section of items organized in a grid layout. The drag and drop methods of this protocol include variants that take a single index or an [`NSIndexSet`](../Foundation/nsindexset.md) as a parameter. Although you can use those methods to implement your drag and drop support, it is recommended that you use the newer methods that take [`NSIndexPath`](../Foundation/nsindexpath.md) objects instead.
 

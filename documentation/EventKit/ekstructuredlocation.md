@@ -24,7 +24,7 @@ class EKStructuredLocation
 @interface EKStructuredLocation : EKObject
 ```
 
-#### Overview
+## Overview
 
 Use [`init(title:)`](./ekstructuredlocation/init%28title%29.md) to create a new structured location, then set it to the [`structuredLocation`](./ekalarm/structuredlocation.md) property of an [`EKAlarm`](./ekalarm.md) object.
 

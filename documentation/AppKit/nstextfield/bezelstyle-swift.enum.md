@@ -19,7 +19,7 @@ enum BezelStyle
 enum NSTextFieldBezelStyle : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Use [`bezelStyle`](../nstextfieldcell/bezelstyle.md) to set a text field’s bezel style.
 

@@ -20,7 +20,7 @@ Generates PDF data from the web view’s contents asynchronously.
 @preconcurrency func pdf(configuration: WKPDFConfiguration = .init()) async throws -> Data
 ```
 
-#### Return Value
+## Return Value
 
 A data object that contains the PDF data to use for rendering the contents of the web view.
 

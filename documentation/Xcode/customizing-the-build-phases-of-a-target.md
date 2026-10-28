@@ -5,13 +5,13 @@
 
 Specify the tasks to perform during a build, including the source files to compile, the scripts to run, and the resources to include in the final product.
 
-#### Overview
+## Overview
 
 When you build a target in your Xcode project, the build system executes a specific set of tasks to produce the resulting product. In Xcode, you specify the files and scripts for your target using build phases. The build system then uses that information and other build settings to determine the tasks required to build the target.
 
 Xcode configures the initial build phases for each target at creation time, but you can add or modify those build phases later. You might add build phases to copy additional files to your app bundle, or to execute custom shell scripts. You can also examine the build phases to diagnose potential issues. For example, you might make sure that Xcode is linking your code against third-party libraries that your code uses.
 
-##### View and add build phases to a target
+### View and add build phases to a target
 
 To view the build phases for a target, select the target and navigate to the Build Phases tab, as shown in the following figure. To add a new build phase, click the Add button (+) and select an appropriate build phase from the pop-up menu. Xcode disables any menu options that aren’t valid. For example, Xcode disables the Compile Sources build phase if your target already contains a build phase of that type.
 
@@ -33,7 +33,7 @@ After you add a build phase, configure its contents. For most build phases, you 
 
 Xcode adds new build phases to the end of the list initially. You can rearrange build phases by dragging them in the editor, but Xcode still executes tasks according to dependency order. To remove a build phase from your target, click the close button (x) next to that build phase.
 
-##### Link against additional frameworks and libraries
+### Link against additional frameworks and libraries
 
 Most targets include a Link Binary with Libraries build phase, which resolves your code’s references to frameworks, libraries, external XCFrameworks, and library products in Swift packages. If your project relies on custom libraries, add them to this build phase and specify the linkage type. For each library, you can specify the following details.
 
@@ -44,7 +44,7 @@ Most targets include a Link Binary with Libraries build phase, which resolves yo
 
 Xcode automatically links your Swift code against Apple frameworks and libraries, so you don’t need to include them in this build phase. For C, C++, and Objective-C code, Xcode links against Apple frameworks and libraries only when the `CLANG_MODULES_AUTOLINK` build setting is enabled, which it is by default. Add any add third-party libraries or custom libraries from your own project to this build phase.
 
-##### Add public and private headers to a target
+### Add public and private headers to a target
 
 Frameworks and libraries typically expose APIs for external clients to call, and other targets can expose APIs too. If your target exposes any API to external clients, use a Headers build phase to add the appropriate header files to the built product. Clients use your header files to learn about and call the available APIs.
 
@@ -56,7 +56,7 @@ In the Headers build phase, drag files to one of three sections:
 
 When Xcode copies files to the built product, the Headers build phase usually doesn’t modify files. However, if you enable the `COPY_HEADERS_RUN_UNIFDEF` build setting, Xcode runs the `unifdef` tool over your headers to remove preprocessor conditional code.
 
-##### Copy files to the finished product
+### Copy files to the finished product
 
 To copy custom resources or data files into a bundle, add a Copy Files or Copy Bundle Resources build phase to your target. Xcode uses a Copy Bundle Resources build phase to copy storyboards and asset catalogs to the appropriate directory for resources, which differs by platform. Xcode also uses instances of the Copy Files build phase to embed frameworks, app extensions, app clips, and other content inside your bundle. You use these build phases to copy other project files into a bundle. For example, you might copy templates for new documents into your app’s bundle.
 

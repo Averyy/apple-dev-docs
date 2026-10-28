@@ -6,7 +6,7 @@
 
 An atom that stores duration information for a media’s samples, providing a mapping from a time in a media to the corresponding data sample.
 
-#### Overview
+## Overview
 
 Time-to-sample atoms store duration information for a media’s samples, providing a mapping from a time in a media to the corresponding data sample. The time-to-sample atom has an atom type of `'stts'`.
 

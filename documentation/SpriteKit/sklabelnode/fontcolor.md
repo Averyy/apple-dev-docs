@@ -41,7 +41,7 @@ var fontColor: NSColor? { get set }
 @property (nonatomic, retain, nullable) NSColor * fontColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default color is white.
 

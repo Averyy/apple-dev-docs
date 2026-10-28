@@ -13,7 +13,7 @@ Log in to a registry.
 **Availability**:
 - Swift 5.9+
 
-#### Overview
+## Overview
 
 The package manager verifies the credentials using the registry service’s login API. If it returns a successful response, the credentials are persisted to the operating system’s credential store (for example, Keychain in macOS). On non-macOS platforms, or if the `--netrc` flag is provided, the credentials are persisted to the user-level .netrc (which by default is located at `~/.netrc`). The user-level configuration file located at ~/.swiftpm/configuration/registries.json is also updated.
 
@@ -36,7 +36,7 @@ If the operating system’s credential store is not supported, the tool prompts 
 
 To force usage of netrc file instead of the operating system’s credential store, pass the `--netrc` flag.
 
-##### Example: basic authentication (macOS, interactive)
+### Example: basic authentication (macOS, interactive)
 
 ```bash
 > swift package-registry login https://example-registry.com \
@@ -53,7 +53,7 @@ Package manager updated `registries.json` to indicate that `example-registry.com
 
 { “authentication”: { “example-registry.com”: { “type”: “basic” }, … }, … }
 
-##### Example: basic authentication (operating system’s credential store not supported, interactive)
+### Example: basic authentication (operating system’s credential store not supported, interactive)
 
 ```bash
 > swift package-registry login https://example-registry.com \
@@ -91,7 +91,7 @@ Package manager updates `registries.json` to indicate that example-registry.com 
 }
 ```
 
-##### Example: basic authentication (use netrc file instead of operating system’s credential store, interactive)
+### Example: basic authentication (use netrc file instead of operating system’s credential store, interactive)
 
 ```bash
 > swift package-registry login https://example-registry.com \
@@ -130,7 +130,7 @@ Package manager updates `registries.json` to indicate that `example-registry.com
 }
 ```
 
-##### Example: basic authentication (operating system’s credential store not supported, non-interactive)
+### Example: basic authentication (operating system’s credential store not supported, non-interactive)
 
 ```bash
 > swift package-registry login https://example-registry.com \
@@ -164,7 +164,7 @@ Package manager updates `registries.json` to indicate that `example-registry.com
 }
 ```
 
-##### Example: basic authentication (operating system’s credential store not supported, non-interactive, non-default login URL)
+### Example: basic authentication (operating system’s credential store not supported, non-interactive, non-default login URL)
 
 ```bash
 > swift package-registry login https://example-registry.com/api/v1/login \
@@ -199,7 +199,7 @@ Package manager updates `registries.json` to indicate that `example-registry.com
 }
 ```
 
-##### Example: token authentication
+### Example: token authentication
 
 ```bash
 > swift package-registry login https://example-registry.com \
@@ -228,7 +228,7 @@ Package manager updates `registries.json` to indicate that `example-registry.com
 }
 ```
 
-##### Usage
+### Usage
 
 ```
 package-registry login [--package-path=<package-path>]

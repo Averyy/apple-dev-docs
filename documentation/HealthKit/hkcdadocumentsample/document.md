@@ -23,7 +23,7 @@ var document: HKCDADocument? { get }
 @property (readonly, nullable) HKCDADocument * document;
 ```
 
-#### Discussion
+## Discussion
 
 If the user is authorized to access the document’s data, this property contains an [`HKCDADocument`](../hkcdadocument.md) object representing that data. Otherwise, it is set to `nil`.
 

@@ -13,6 +13,7 @@ A type that can be executed asynchronously, as part of a nested tree of commands
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
@@ -28,7 +29,7 @@ protocol AsyncParsableCommand : ParsableCommand
 
 - [Providing Custom Validation](./validation.md)
 
-#### Overview
+## Overview
 
 To use `async`/`await` code in your commands’ `run()` method implementations, follow these steps:
 
@@ -57,7 +58,7 @@ struct CountLines: AsyncParsableCommand {
 
 > **Note**: The Swift compiler uses either the type marked with `@main` or a `main.swift` file as the entry point for an executable program. You can use either one, but not both — rename your `main.swift` file to the name of the command when you add `@main`.
 
-##### Usage in Swift 5.5
+### Usage in Swift 5.5
 
 Swift 5.5 is supported by the obsolete versions 1.1.x & 1.2.x versions of Swift Argument Parser.
 
@@ -88,7 +89,7 @@ Continue to follow the other steps above to use `async`/`await` code within your
 ### Type Methods
 - [static func asyncParse([String]?) async throws -> Self](./asyncparsablecommand/asyncparse%28_%29.md)
   Parses a new instance of this type from command-line arguments.
-- [static func asyncParseAsRoot([String]?) async throws -> any ParsableCommand](./asyncparsablecommand/asyncparseasroot%28_%29.md)
+- [static func asyncParseAsRoot([String]?) async throws -> ParsableCommand](./asyncparsablecommand/asyncparseasroot%28_%29.md)
   Parses an instance of this type, or one of its subcommands, from command-line arguments.
 - [static func main([String]?) async](./asyncparsablecommand/main%28_%29.md)
   Executes this command, or one of its subcommands, with the given arguments.
@@ -104,6 +105,8 @@ Continue to follow the other steps above to use `async`/`await` code within your
 ## See Also
 
 ### Essentials
+- [Using ArgumentParser Tools](./usingargumentparsertools.md)
+  Learn how to provide input to command-line tools built with `ArgumentParser`.
 - [Getting Started with ArgumentParser](./gettingstarted.md)
   Learn to set up and customize a simple command-line tool.
 - [protocol ParsableCommand](./parsablecommand.md)

@@ -31,7 +31,7 @@ var restaurant: INRestaurant { get set }
 @property (atomic, copy) INRestaurant * restaurant;
 ```
 
-#### Discussion
+## Discussion
 
 This property must contain a valid restaurant object.
 

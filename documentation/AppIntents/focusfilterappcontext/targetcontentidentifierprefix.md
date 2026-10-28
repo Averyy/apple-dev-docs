@@ -21,7 +21,7 @@ An identifier you provide to the system for use in scheme prefixes for Focus.
 let targetContentIdentifierPrefix: String?
 ```
 
-#### Discussion
+## Discussion
 
 The system combines this prefix with the scheme `focus:` to prefix any `targetContentIdentifier` strings you provide for the system to evaluate against your app’s `sceneActivationConditions`.
 

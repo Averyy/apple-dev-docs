@@ -15,7 +15,7 @@ An anchor location at the center of the palm.
 static let palm: AnchoringComponent.Target.HandLocation
 ```
 
-#### Discussion
+## Discussion
 
 Content anchored this way has its positive y-axis pointing out of the palm and its negative z-axis pointing towards the side where the thumb is.
 

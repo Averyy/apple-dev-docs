@@ -21,7 +21,7 @@ The track’s transform preference to apply to its visual content during present
 var preferredTransform: CGAffineTransform { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is typically, but not always, [`CGAffineTransformIdentity`](../../CoreGraphics/cgaffinetransformidentity.md).
 

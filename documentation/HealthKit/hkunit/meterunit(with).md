@@ -24,11 +24,11 @@ class func meterUnit(with prefix: HKMetricPrefix) -> Self
 + (instancetype) meterUnitWithMetricPrefix:(HKMetricPrefix) prefix;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring length based on meters and the provided prefix.
 
-#### Discussion
+## Discussion
 
 This method is used to create prefixed versions of meters. Common uses include creating kilometer and centimeter units, as shown below.
 

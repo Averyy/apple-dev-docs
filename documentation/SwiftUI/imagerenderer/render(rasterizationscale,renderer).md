@@ -22,7 +22,7 @@ Draws the renderer’s current contents to an arbitrary Core Graphics context.
 final func render(rasterizationScale: CGFloat = 1, renderer: (CGSize, (CGContext) -> Void) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to rasterize the renderer’s content to a [`CGContext`](../../CoreGraphics/cgcontext.md) you provide. The `renderer` closure receives two parameters: the current size of the view, and a function that renders the view to your `CGContext`. Implement the closure to provide a suitable `CGContext`, then invoke the function to render the content to that context.
 

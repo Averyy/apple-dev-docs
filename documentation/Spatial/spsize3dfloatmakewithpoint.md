@@ -19,11 +19,11 @@
 static SPSize3DFloat SPSize3DFloatMakeWithPoint(SPPoint3DFloat point);
 ```
 
-#### Return Value
+## Return Value
 
 A new size stucture.
 
-#### Discussion
+## Discussion
 
 Creates a size structure with dimensions specified as the coordinates of a  point structure.
 

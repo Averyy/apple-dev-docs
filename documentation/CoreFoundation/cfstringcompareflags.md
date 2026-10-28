@@ -25,7 +25,7 @@ struct CFStringCompareFlags
 enum CFStringCompareFlags : CFOptionFlags;
 ```
 
-#### Overview
+## Overview
 
 See [String Comparison Flags](./string-comparison-flags.md) for values.
 

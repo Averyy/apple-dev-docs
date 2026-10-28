@@ -9,7 +9,7 @@ Query negative keywords using structured filters, sorting, and pagination.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint queries negative keywords using a standard `QueryRequest` body. The `adGroupId` field is always required. The API returns an error if it is omitted.
 
@@ -20,9 +20,11 @@ This endpoint queries negative keywords using a standard `QueryRequest` body. Th
 - The `campaignId` field only supports `EQUALS`.
 - Filtering by `id` (`EQUALS` or `IN`) is exempt from the `adGroupId` requirement, since `id` already fully bounds the query.
 
+The query doesn’t return deleted negative keywords, regardless of any `deleted` filter. Filtering for `deleted EQUALS true` or `deleted IN [true]` returns no records, and `deleted IN [true, false]` returns only non-deleted records.
+
 See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of supported comparison operators.
 
-##### Filterable Fields
+### Filterable Fields
 
 | Field | Type | Operators | Sortable | Description |
 | --- | --- | --- | --- | --- |
@@ -32,16 +34,17 @@ See [`QueryFilterOperator`](./queryfilteroperator.md) for the full set of suppor
 | `text` | string | `EQUALS`, `STARTS_WITH` |  | The original advertiser-given keyword text. |
 | `matchType` | string (enum) | `EQUALS`, `IN` |  | Match type for this negative keyword. See [`KeywordMatchType`](./keywordmatchtype.md). |
 | `status` | string (enum) | `EQUALS`, `IN` |  | Whether the negative keyword is active or paused. See [`NegativeKeywordStatus`](./negativekeywordstatus.md). |
+| `deleted` | boolean | `EQUALS` |  | Whether the negative keyword has been deleted. Deleted negative keywords are not returned. |
 
 The request body is a [`QueryRequest`](./queryrequest.md) composed of [`QueryFilter`](./queryfilter.md) conditions and [`QuerySort`](./querysort.md) directives ([`QuerySortOrder`](./querysortorder.md)), controlled by [`QueryPagination`](./querypagination.md).
 
-#### Payload Examples
+## Payload Examples
 
 **Query by Ad Group**:
 
 Retrieve negative keywords for one or more specific ad groups using `adGroupId EQUALS` or `adGroupId IN`. `campaignId` is not required with this pattern.
 
-##### Request
+### Request
 
 ```http
 POST /v1/negative-keywords/query
@@ -62,7 +65,7 @@ POST /v1/negative-keywords/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -92,7 +95,7 @@ POST /v1/negative-keywords/query
 
 Retrieve campaign-level negative keywords for a campaign by combining a `campaignId EQUALS` filter with `adGroupId IS_NULL`.
 
-##### Request
+### Request
 
 ```http
 POST /v1/negative-keywords/query
@@ -123,7 +126,7 @@ POST /v1/negative-keywords/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -163,7 +166,7 @@ POST /v1/negative-keywords/query
 
 Retrieve all ad group-level negative keywords across every ad group under a campaign. The `adGroupId IS_NOT_NULL` filter excludes campaign-level negatives and returns only those scoped to an ad group.
 
-##### Request
+### Request
 
 ```http
 POST /v1/negative-keywords/query
@@ -194,7 +197,7 @@ POST /v1/negative-keywords/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -224,7 +227,7 @@ POST /v1/negative-keywords/query
 
 Retrieve ad-group-level negative keywords for a campaign while excluding one specific ad group, using `adGroupId NOT_EQUALS` combined with a `campaignId EQUALS` filter.
 
-##### Request
+### Request
 
 ```http
 POST /v1/negative-keywords/query
@@ -250,7 +253,7 @@ POST /v1/negative-keywords/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

@@ -15,7 +15,7 @@ A callback function used to load the security key for an item.
 readonly attribute Object loadKey;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute must be set if FairPlay Streaming is supported. The `callback` function must return either the asset identifier that was retrieved or `null`. This attribute must be assigned to a function that takes three parameters, `url`, `requestData`, and `callback`. For example, `item.loadKey = function getKey(url, requestData, callback) {}`. 
 

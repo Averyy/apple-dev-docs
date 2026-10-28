@@ -17,7 +17,7 @@ A property that identifies the version of the format the export uses.
 var resourcesVersion: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 AppMigrationKit transmits this value along with the exported resources. Use this value to distinguish between potentially incompatible versions of your app’s data.
 

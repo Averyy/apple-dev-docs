@@ -19,11 +19,11 @@ Returns a new payment with the specified product identifier.
 + (id) paymentWithProductIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 A new payment object.
 
-#### Discussion
+## Discussion
 
 The product identifier is a string previously agreed on between your application and the Apple App Store. The quantity property defaults to `1`.
 

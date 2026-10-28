@@ -19,7 +19,7 @@ var effectIsInteractive: Bool { get set }
 @property BOOL effectIsInteractive;
 ```
 
-#### Discussion
+## Discussion
 
 This should be enabled for glass that is used as the background for interactive controls or when used as the container of interactive controls.
 

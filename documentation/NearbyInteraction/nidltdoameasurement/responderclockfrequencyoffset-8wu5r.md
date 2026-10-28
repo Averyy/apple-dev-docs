@@ -16,7 +16,7 @@ The clock frequency offset of the responder anchor relative to the initiator anc
 var responderClockFrequencyOffset: Double? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property represents relative clock frequency information between the responder anchor and initiator anchor. The relative difference is a key part of calculating precise distances. Drift between the clocks of anchors represents a persistent issue in DL-TDOA deployments that the responder clock frequency offset helps mitigate.
 

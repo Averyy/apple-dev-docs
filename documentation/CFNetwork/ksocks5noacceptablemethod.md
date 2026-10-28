@@ -24,7 +24,7 @@ var kSOCKS5NoAcceptableMethod: Int { get }
 kSOCKS5NoAcceptableMethod
 ```
 
-#### Discussion
+## Discussion
 
 This error code is only valid for errors in the `kCFStreamErrorSOCKS5SubDomainMethod` subdomain.
 

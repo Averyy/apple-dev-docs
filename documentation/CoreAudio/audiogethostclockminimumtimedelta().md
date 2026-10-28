@@ -20,11 +20,11 @@ func AudioGetHostClockMinimumTimeDelta() -> UInt32
 extern UInt32 AudioGetHostClockMinimumTimeDelta();
 ```
 
-#### Return Value
+## Return Value
 
 A UInt32 containing the smallest number of ticks that two succeeding values will ever differ.
 
-#### Discussion
+## Discussion
 
 Gets the smallest number of ticks that two succeeding values will ever differ. by.
 

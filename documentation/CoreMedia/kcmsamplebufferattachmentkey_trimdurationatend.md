@@ -25,7 +25,7 @@ let kCMSampleBufferAttachmentKey_TrimDurationAtEnd: CFString
 extern CFStringRef const kCMSampleBufferAttachmentKey_TrimDurationAtEnd;
 ```
 
-#### Discussion
+## Discussion
 
 If this attachment is not present, the trim duration is zero (nothing removed).        This is a [`CMTime`](./cmtime.md) in Core Foundation dictionary format as made by [`CMTimeCopyAsDictionary(_:allocator:)`](./cmtimecopyasdictionary%28_,allocator%29.md);         use [`CMTimeMakeFromDictionary(_:)`](./cmtimemakefromdictionary%28_%29.md) to convert to [`CMTime`](./cmtime.md).
 

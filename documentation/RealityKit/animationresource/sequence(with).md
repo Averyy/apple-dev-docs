@@ -21,7 +21,7 @@ Creates an animation resource that plays a collection of animations in a specifi
 @preconcurrency static func sequence(with resources: [AnimationResource]) throws -> AnimationResource
 ```
 
-#### Return Value
+## Return Value
 
 An animation resource that plays the given array of animations.
 

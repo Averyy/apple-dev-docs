@@ -11,11 +11,11 @@ Checks whether the OSBoolean object represents a `true`` bool` value.
 virtual bool isTrue() const;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the OSBoolean object is `true`, `false` otherwise.
 
-#### Overview
+## Overview
 
 You can also use `==` against [`kOSBooleanTrue`](../kosbooleantrue.md).
 

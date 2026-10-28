@@ -21,11 +21,11 @@ Modifies the format style to use the specified notation.
 func notation(_ notation: Decimal.FormatStyle.Configuration.Notation) -> Decimal.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A decimal format style modified to use the specified notation.
 
-#### Discussion
+## Discussion
 
 The following example creates a default [`Decimal.FormatStyle`](../formatstyle.md) for the `en_US` locale, and a second style that uses scientific notation style. It then applies each style to an array of decimal values.
 

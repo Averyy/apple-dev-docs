@@ -28,7 +28,7 @@ nonisolated
 init(viewing modelTypes: [any PersistentModel.Type], contentType: UTType, viewer: @escaping () -> Content)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
  @main

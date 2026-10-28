@@ -21,7 +21,7 @@ A type that represents MP3 audio.
 extern UTType * const UTTypeMP3;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.mp3`.
 

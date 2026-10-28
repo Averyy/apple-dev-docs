@@ -15,7 +15,7 @@ Opens a connection to the component with the component identifier specified by y
 ComponentInstance OpenComponent(Component aComponent);
 ```
 
-#### Return Value
+## Return Value
 
 A component instance which identifies your application’s connection to the component. You must supply this component instance whenever you call the functions provided by the component. When you close the component, you must also supply this component instance to the [`CloseComponent`](./api-1516436-closecomponent.md) function.
 
@@ -23,7 +23,7 @@ If it cannot open the specified component, the function returns `NULL`.
 
 See the description of the `ComponentInstance` data type.
 
-#### Discussion
+## Discussion
 
 Your application must open a component before it can call any component functions. To use this function, you must already have obtained a component identifier. Alternatively, you can use the  [`OpenDefaultComponent`](./api-1516523-opendefaultcomponent.md)  function to open a component without calling `FindNextComponent`. 
 

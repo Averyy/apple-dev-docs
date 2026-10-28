@@ -21,7 +21,7 @@ class MSMessageLayout
 @interface MSMessageLayout : NSObject
 ```
 
-#### Overview
+## Overview
 
 You do not subclass `MSMessageLayout` or create instances of it directly. Instead, instantiate the provided concrete subclass, the [`MSMessageTemplateLayout`](./msmessagetemplatelayout.md) class.
 

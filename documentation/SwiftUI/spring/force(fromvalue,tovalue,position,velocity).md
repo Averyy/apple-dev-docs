@@ -21,7 +21,7 @@ Calculates the force upon the spring given a current position, velocity, and div
 func force<V>(fromValue: V, toValue: V, position: V, velocity: V) -> V where V : Animatable
 ```
 
-#### Discussion
+## Discussion
 
 This value is in units of the vector type per second squared.
 

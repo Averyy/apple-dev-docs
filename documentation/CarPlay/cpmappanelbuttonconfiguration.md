@@ -21,7 +21,7 @@ class CPMapPanelButtonConfiguration
 @interface CPMapPanelButtonConfiguration : CPPanelButtonConfiguration
 ```
 
-#### Overview
+## Overview
 
 A `CPMapPanelbuttonConfiguration` object specifies the controls and details to display at the bottom of a [`CPMapPanel`](./cpmappanel.md). Create this type when to add a primary action button and an optional secondary action button to the bottom of the panel. These buttons are separate from your map panel’s section content and remain pinned to the bottom of the panel during scrolling. You can also use this type to specify travel estimates you want to keep pinned to the bottom of the panel.
 

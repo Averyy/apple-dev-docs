@@ -18,7 +18,7 @@ static var optionIncludingWindow: CGWindowListOption { get }
 kCGWindowListOptionIncludingWindow
 ```
 
-#### Discussion
+## Discussion
 
 Include the specified window (from the `relativeToWindow` parameter) in the returned list. You must combine this option with the [`optionOnScreenAboveWindow`](./optiononscreenabovewindow.md) or [`optionOnScreenBelowWindow`](./optiononscreenbelowwindow.md) option to retrieve meaningful results.
 

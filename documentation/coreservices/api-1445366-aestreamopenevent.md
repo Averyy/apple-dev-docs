@@ -19,11 +19,11 @@ func AEStreamOpenEvent(_ event: UnsafeMutablePointer<AppleEvent>!) -> AEStreamRe
 AEStreamRef AEStreamOpenEvent(AppleEvent *event);
 ```
 
-#### Return Value
+## Return Value
 
 An [`AEStreamRef`](./aestreamref.md) for the Apple event or `NULL` if the stream data structures could not be allocated.
 
-#### Discussion
+## Discussion
 
 Use this function to open a stream and add parameters to an existing Apple event. This function copies any parameters already in the Apple event to the stream prior to returning the `AEStreamRef`. When you are done adding parameters, use [`AEStreamClose(_:_:)`](./api-1449821-aestreamclose.md) to save them to the Apple event and close the stream. 
 

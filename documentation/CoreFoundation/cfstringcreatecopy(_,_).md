@@ -25,11 +25,11 @@ func CFStringCreateCopy(_ alloc: CFAllocator!, _ theString: CFString!) -> CFStri
 extern CFStringRefCFStringCreateCopy(CFAllocatorRef alloc, CFStringRef theString);
 ```
 
-#### Return Value
+## Return Value
 
 An immutable string whose contents are identical to `theString`. Returns `NULL` if there was a problem copying the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The resulting object has the same Unicode contents as the original object, but it is always immutable. It might also have different storage characteristics, and hence might reply differently to functions such as [`CFStringGetCStringPtr(_:_:)`](./cfstringgetcstringptr%28_,_%29.md). Also, if the specified allocator and the allocator of the original object are the same, and the string is already immutable, this function may simply increment the retention count without making a true copy. However, the resulting object is a true immutable copy, except the operation was a lot more efficient.
 

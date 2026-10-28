@@ -19,7 +19,7 @@ A document reader that deserializes a `FileWrapper` into a snapshot.
 struct FileWrapperDocumentReader<Snapshot>
 ```
 
-#### Overview
+## Overview
 
 This is the recommended reader for most documents. Provide a closure that converts a `FileWrapper` into your snapshot type, and `FileWrapperDocumentReader` handles file coordination and loading.
 

@@ -19,7 +19,7 @@ func setExtraLineFragmentRect(_ fragmentRect: NSRect, usedRect: NSRect, textCont
 - (void) setExtraLineFragmentRect:(NSRect) fragmentRect usedRect:(NSRect) usedRect textContainer:(NSTextContainer *) container;
 ```
 
-#### Discussion
+## Discussion
 
 The extra line fragment is used when the text backing ends with a hard line break or when the text backing is totally empty, to define the extra line which needs to be displayed at the end of the text. If the text backing is not empty and does not end with a hard line break, this should be set to [`NSZeroRect`](../../Foundation/nszerorect.md) and `nil`.
 

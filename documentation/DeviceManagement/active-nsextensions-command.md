@@ -9,7 +9,7 @@ Get a list of active extensions for a user on a device.
 **Availability**:
 - macOS 10.13+
 
-#### Discussion
+## Discussion
 
 This command returns information about the active extensions for a user. Extensions exist for each user, not for the device.
 
@@ -17,7 +17,7 @@ Extensions restricted from executing by Application Launch Restrictions or the [
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -27,7 +27,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | N/A |
 | Required access right | QueryInstalledApps |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

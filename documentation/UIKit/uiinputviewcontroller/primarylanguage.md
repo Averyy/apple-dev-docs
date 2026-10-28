@@ -23,7 +23,7 @@ var primaryLanguage: String? { get set }
 @property (nonatomic, copy, nullable) NSString * primaryLanguage;
 ```
 
-#### Discussion
+## Discussion
 
 A BCP 47 language identifier, such as `en-US`. If specified, this value supersedes the `PrimaryLanguage` key in a custom keyboard’s `Info.plist` file.
 

@@ -11,7 +11,7 @@ Releases the global debugger lock.
 void releaseDebuggerLock();
 ```
 
-#### Overview
+## Overview
 
 This method should not be used. Instead, call the unlock() method provided by IOKernelDebugger.
 

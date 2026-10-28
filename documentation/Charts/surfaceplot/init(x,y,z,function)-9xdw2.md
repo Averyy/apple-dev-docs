@@ -20,7 +20,7 @@ nonisolated
 init(x: some StringProtocol, y: some StringProtocol, z: some StringProtocol, function: @escaping @Sendable (Double, Double) -> Double)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: For x values where the function is undefined or is infinity, the function is expected to return `Double.nan`
 

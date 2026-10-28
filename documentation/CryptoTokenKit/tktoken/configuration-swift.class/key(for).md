@@ -25,11 +25,11 @@ func key(for objectID: TKToken.ObjectID) throws -> TKTokenKeychainKey
 - (TKTokenKeychainKey *) keyForObjectID:(TKTokenObjectID) objectID error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The key that the keychain stores.
 
-#### Discussion
+## Discussion
 
 If the key the `objectID` specifies isn’t found, the system fills the `error` with [`TKError.Code.objectNotFound`](../../tkerror/code/objectnotfound.md).
 

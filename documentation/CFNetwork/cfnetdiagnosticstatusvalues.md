@@ -24,7 +24,7 @@ enum CFNetDiagnosticStatusValues
 enum CFNetDiagnosticStatusValues : int;
 ```
 
-#### Overview
+## Overview
 
 Diagnostic status values are returned by [`CFNetDiagnosticDiagnoseProblemInteractively(_:)`](./cfnetdiagnosticdiagnoseprobleminteractively%28_%29.md) and [`CFNetDiagnosticCopyNetworkStatusPassively(_:_:)`](./cfnetdiagnosticcopynetworkstatuspassively%28_,_%29.md).
 

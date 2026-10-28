@@ -21,7 +21,7 @@ A request that detects rectangular regions that contain text in the input image.
 struct DetectDocumentSegmentationRequest
 ```
 
-#### Overview
+## Overview
 
 Perform this request to detect a document in an image. The result that the request generates contains the four corner points of a document’s quadrilateral and saliency masks. The request returns the resulting location and segmentation mask in an instance of [`DetectedDocumentObservation`](./detecteddocumentobservation.md).
 

@@ -25,11 +25,11 @@ init(indexes: UnsafePointer<Int>?, length: Int)
 - (instancetype) initWithIndexes:(const NSUInteger[]) indexes length:(NSUInteger) length;
 ```
 
-#### Return Value
+## Return Value
 
 Initialized [`NSIndexPath`](../nsindexpath.md) object with `indexes` up to `length`.
 
-#### Discussion
+## Discussion
 
 This method is a designated initializer of [`NSIndexPath`](../nsindexpath.md).
 

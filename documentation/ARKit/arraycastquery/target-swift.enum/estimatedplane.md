@@ -20,7 +20,7 @@ case estimatedPlane
 ARRaycastTargetEstimatedPlane
 ```
 
-#### Discussion
+## Discussion
 
 A raycast with this target intersects feature points around the ray that ARKit estimates may be a real-world surface.
 

@@ -19,7 +19,7 @@ func configurePersistentStoreCoordinator(for url: URL, ofType fileType: String, 
 - (BOOL) configurePersistentStoreCoordinatorForURL:(NSURL *) url ofType:(NSString *) fileType modelConfiguration:(NSString *) configuration storeOptions:(NSDictionary<NSString *,id> *) storeOptions error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically when an existing document is opened. You override this method to customize creation of a persistent store for a given document or store type. You can retrieve the persistent store coordinator with the following code:
 

@@ -23,7 +23,7 @@ var isUserInterfaceEnabled: Bool { get }
 @property (nonatomic, readonly, getter=isUserInterfaceEnabled) BOOL userInterfaceEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `false`, then calls to [`presentAuthorizationViewController(completion:)`](./presentauthorizationviewcontroller%28completion%29.md) fail and the system cancels the request.
 

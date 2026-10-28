@@ -24,7 +24,7 @@ extern NSString * const BEBrowserDataExchangeImportActivity;
 
 - [Transferring browsing data to another browser](../transferring-browsing-data-to-another-browser.md)
 
-#### Discussion
+## Discussion
 
 The system launches your browser app with this activity when someone initiates a data import request ([`requestImport(for:completionHandler:)`](./requestimport%28for,completionhandler%29.md)) from your browser.
 

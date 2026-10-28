@@ -23,7 +23,7 @@ object ArticleDocument
 - [Enhancing Your Articles with Styles](../AppleNews/enhancing-your-articles-with-styles.md)
 - [JSON Concepts and Article Structure](../AppleNews/json-concepts-and-article-structure.md)
 
-#### Discussion
+## Discussion
 
 Every Apple News Format document must have the same filename: `article.json`. An `article.json` file must contain the `ArticleDocument` object. This is the object that is sent in [`Create an Article`](../AppleNewsAPI/post-channels-_channelid_-articles.md) and [`Update an Article`](../AppleNewsAPI/post-articles-_articleid_.md) requests.
 
@@ -33,7 +33,7 @@ In JSON, the order of properties in an object is not important; however, as you 
 
 To view this example in News Preview, copy the example code to a file named `article.json` and put a file named `image.jpg` in the same folder. (You can use any JPEG, GIF, or PNG file.)
 
-##### Example
+### Example
 
 ```json
 {

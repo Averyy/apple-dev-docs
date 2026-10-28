@@ -20,11 +20,11 @@ A blend node that contains an animation.
 struct BlendTreeSourceNode
 ```
 
-#### Overview
+## Overview
 
 This structure adopts [`BlendTreeNode`](./blendtreenode.md) and adds the ability to store a single animation. A complete [`BlendTreeAnimation`](./blendtreeanimation.md) represents a mix of all the animations that its source nodes contain. Each source node defines a [`weight`](./blendtreesourcenode/weight.md) that determines how much effect the source’s animation has in the blend tree’s resulting, mixed animation. To define the source’s animation, set this structure’s [`source`](./blendtreesourcenode/source.md) property.
 
-##### Access a source node of a blend tree
+### Access a source node of a blend tree
 
 A source may exist in any leaf-node position in the blend animation’s tree. The following code checks the root node for a source. If instead the root node is a branch, the code begins checking the branches sources.
 

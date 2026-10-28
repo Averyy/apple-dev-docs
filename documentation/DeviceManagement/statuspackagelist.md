@@ -19,9 +19,9 @@ object StatusPackageList
 
 - [Installing packages](./installing-packages.md)
 
-#### Discussion
+## Discussion
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -32,7 +32,7 @@ object StatusPackageList
 | Allowed in system scope | macOS |
 | Allowed in user scope | N/A |
 
-##### Reason Codes
+### Reason Codes
 
 - `Error.DownloadFailed`: The package download failed.
 
@@ -41,7 +41,7 @@ object StatusPackageList
 
   - `Timestamp`: (string) The RFC 3339 timestamp of the last install failure.
 
-##### Status item example
+### Status item example
 
 **New or updated package**:
 

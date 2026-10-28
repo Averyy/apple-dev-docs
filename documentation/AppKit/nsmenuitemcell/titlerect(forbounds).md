@@ -19,7 +19,7 @@ func titleRect(forBounds cellFrame: NSRect) -> NSRect
 - (NSRect) titleRectForBounds:(NSRect) cellFrame;
 ```
 
-#### Return Value
+## Return Value
 
 The returned rectangle is based on `cellFrame` but encompasses only the area to be occupied by the text of the title.
 

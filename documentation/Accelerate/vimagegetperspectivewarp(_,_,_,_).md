@@ -29,7 +29,7 @@ vImage_Error vImageGetPerspectiveWarp(const float srcPoints[4][2], const float d
 
 - [Transforming an image in three dimensions](./transforming-an-image-in-three-dimensions.md)
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 

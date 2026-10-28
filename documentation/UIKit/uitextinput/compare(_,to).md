@@ -24,7 +24,7 @@ func compare(_ position: UITextPosition, to other: UITextPosition) -> Comparison
 - (NSComparisonResult) comparePosition:(UITextPosition *) position toPosition:(UITextPosition *) other;
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates whether the two text positions are identical or whether one is before the other.
 

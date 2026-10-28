@@ -25,11 +25,11 @@ func CFPropertyListCreateDeepCopy(_ allocator: CFAllocator!, _ propertyList: CFP
 extern CFPropertyListRefCFPropertyListCreateDeepCopy(CFAllocatorRef allocator, CFPropertyListRef propertyList, CFOptionFlags mutabilityOption);
 ```
 
-#### Return Value
+## Return Value
 
 A new property list that is a copy of `propertyList`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Recursively creates a copy of the given property list so nested arrays and dictionaries are copied as well as the top-most container.
 

@@ -24,7 +24,7 @@ func label(_ label: String) -> Attachment<Content>
 
 - [Analyzing images with multimodal prompting](../analyzing-images-with-multimodal-prompting.md)
 
-#### Discussion
+## Discussion
 
 Labels help the model identify specific attachments when making tool calls.
 

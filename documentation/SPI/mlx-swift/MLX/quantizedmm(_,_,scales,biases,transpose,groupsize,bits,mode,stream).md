@@ -21,7 +21,7 @@ func quantizedMM(_ x: MLXArray, _ w: MLXArray, scales: MLXArray, biases: MLXArra
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [`dequantized(_:scales:biases:groupSize:bits:mode:globalScale:dtype:stream:)`](./dequantized%28_,scales,biases,groupsize,bits,mode,globalscale,dtype,stream%29.md)
 - [`quantized(_:groupSize:bits:mode:globalScale:stream:)`](./quantized%28_,groupsize,bits,mode,globalscale,stream%29.md)

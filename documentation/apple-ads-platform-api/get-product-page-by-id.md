@@ -9,7 +9,7 @@ Retrieves a specific Custom Product Page (CPP) by its unique UUID.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves a single App Store Custom Product Page (CPP) by its unique UUID. You create and manage product pages in App Store Connect. This endpoint reads the product page state as it appears to the Apple Ads Platform API.
 
@@ -25,11 +25,11 @@ Keep the following constraints in mind when fetching a product page:
 | UUID format | `productPageId` is a UUID assigned by App Store Connect. It is not an integer. |
 | Discovery | Use [`Query Product Pages`](./query-product-pages.md) to list all product pages for an app by `adamId` before fetching by ID. |
 
-#### Payload Examples
+## Payload Examples
 
 **Get Product Page**:
 
-##### Request
+### Request
 
 Retrieves a product page by its unique identifier.
 
@@ -37,7 +37,7 @@ Retrieves a product page by its unique identifier.
 GET /v1/product-pages/{productPageId}
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -55,13 +55,13 @@ GET /v1/product-pages/{productPageId}
 
 **Product Page Not Found**:
 
-##### Request
+### Request
 
 ```
 GET /v1/product-pages/{productPageId}
 ```
 
-##### Response
+### Response
 
 ```json
 {

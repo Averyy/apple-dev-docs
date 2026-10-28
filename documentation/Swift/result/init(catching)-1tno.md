@@ -18,8 +18,8 @@ Creates a new result by evaluating an async throwing closure, capturing the retu
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) init(catching body: nonisolated(nonsending) () async throws(Failure) -> Success) async
+nonisolated(nonsending)
+init(catching body: nonisolated(nonsending) () async throws(Failure) -> Success) async
 ```
 
 Available when `Failure` conforms to `Error`.

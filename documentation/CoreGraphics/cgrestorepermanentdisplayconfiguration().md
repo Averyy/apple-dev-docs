@@ -20,7 +20,7 @@ func CGRestorePermanentDisplayConfiguration()
 extern void CGRestorePermanentDisplayConfiguration();
 ```
 
-#### Discussion
+## Discussion
 
 This function provides a convenient way to restore the permanent display configuration.
 

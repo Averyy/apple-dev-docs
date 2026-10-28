@@ -21,7 +21,7 @@ A mode that subtracts the brighter of the source image sample color or the backg
 static var difference: GraphicsContext.BlendMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 Source image sample values that are black produce no change; white inverts the background color values.
 

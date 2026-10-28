@@ -19,11 +19,11 @@
 static SPVector3DFloat SPVector3DFloatRotate(SPVector3DFloat vector, SPRotation3DFloat rotation);
 ```
 
-#### Return Value
+## Return Value
 
 A vector that’s rotated by the specified rotation.
 
-#### Discussion
+## Discussion
 
 Returns a vector that’s rotated by the specified rotation around the origin.
 

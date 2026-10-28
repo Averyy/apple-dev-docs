@@ -14,7 +14,7 @@
 #define kIOPropertyPortTopologyKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is associated with the current port topology. The port topology can be any valid topology for the interconnect.
 

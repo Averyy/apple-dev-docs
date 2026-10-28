@@ -25,7 +25,7 @@ func nw_quic_get_max_datagram_frame_size(_ options: nw_protocol_options_t) -> UI
 uint16_t nw_quic_get_max_datagram_frame_size(nw_protocol_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 The value of the `max_datagram_frame_size` transport parameter.
 

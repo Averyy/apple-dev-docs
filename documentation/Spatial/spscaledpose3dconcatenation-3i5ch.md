@@ -19,11 +19,11 @@
 static SPScaledPose3D SPScaledPose3DConcatenation(SPScaledPose3D lhs, SPPose3D rhs);
 ```
 
-#### Return Value
+## Return Value
 
 A new scaled pose structure.
 
-#### Discussion
+## Discussion
 
 Returns a new scaled pose that’s constructed by concatenating a scaled pose and a pose.
 

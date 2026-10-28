@@ -21,7 +21,7 @@ func beginAnalysis(of captureDeviceInput: AVCaptureDeviceInput) throws
 - (BOOL) beginAnalysisOfCaptureDeviceInput:(AVCaptureDeviceInput *) captureDeviceInput error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to begin analyzing a video stream from the given [`AVCaptureDeviceInput`](../../AVFoundation/avcapturedeviceinput.md). If the framework detects sensitive content in the video stream, the `AVCaptureDeviceInput` interrupts subsequent frames with the `AVCaptureSessionInterruptionReasonSensitiveContentMitigationActivated` interruption reason to effectively censor the video stream on the person’s behalf. When your app is ready to show the video stream again, resume analysis by calling [`continueStream()`](./continuestream%28%29.md).
 

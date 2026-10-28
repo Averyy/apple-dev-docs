@@ -25,11 +25,11 @@ func replacingOccurrences(of target: String, with replacement: String) -> String
 - (NSString *) stringByReplacingOccurrencesOfString:(NSString *) target withString:(NSString *) replacement;
 ```
 
-#### Return Value
+## Return Value
 
 A new string in which all occurrences of `target` in the receiver are replaced by `replacement`.
 
-#### Discussion
+## Discussion
 
 Invokes [`replacingOccurrences(of:with:options:range:)`](./replacingoccurrences%28of,with,options,range%29.md)with `0` options and range of the whole string.
 

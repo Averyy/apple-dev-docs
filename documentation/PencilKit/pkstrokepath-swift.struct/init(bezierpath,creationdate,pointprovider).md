@@ -23,7 +23,7 @@ init(bezierPath: CGPath, creationDate: Date, pointProvider: (PKStrokePath.Conver
 
 - [Importing Bézier path data into PencilKit](../importing-external-drawing-data-into-pencilkit.md)
 
-#### Discussion
+## Discussion
 
 The count of control points of the generated spline is not guaranteed to be a specific value except when the provided path is the output of `bezierRepresentation->CGPath`, where it will match the original curve.
 

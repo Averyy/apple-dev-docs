@@ -29,7 +29,7 @@ optional func confirm(intent: INTransferMoneyIntent) async -> INTransferMoneyInt
 - (void) confirmTransferMoney:(INTransferMoneyIntent *) intent completion:(void (^)(INTransferMoneyIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the transaction details. Use this method to validate that scheduling payment for the specified bill is possible. You might use this method to validate the following information:
 

@@ -21,7 +21,7 @@ A guide that marks the bottom and trailing edges of the view.
 static let bottomTrailing: Alignment
 ```
 
-#### Discussion
+## Discussion
 
 This alignment combines the [`trailing`](../horizontalalignment/trailing.md) horizontal guide and the [`bottom`](../verticalalignment/bottom.md) vertical guide:
 

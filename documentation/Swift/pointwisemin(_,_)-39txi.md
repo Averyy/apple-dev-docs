@@ -21,7 +21,7 @@ The lanewise minimum of two vectors.
 func pointwiseMin<T>(_ a: T, _ b: T) -> T where T : SIMD, T.Scalar : FloatingPoint
 ```
 
-#### Discussion
+## Discussion
 
 Each element of the result is the minimum of the corresponding elements of the inputs.
 

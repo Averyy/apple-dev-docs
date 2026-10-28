@@ -21,7 +21,7 @@ Returns an `NSMethodSignature` object that contains a description of the instanc
 + (NSMethodSignature *) instanceMethodSignatureForSelector:(SEL) aSelector;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSMethodSignature` object that contains a description of the instance method identified by `aSelector`, or `nil` if the method can’t be found.
 

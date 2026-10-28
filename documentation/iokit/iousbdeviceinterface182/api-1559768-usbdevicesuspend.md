@@ -16,11 +16,11 @@ Tells the USB Family to either suspend or resume the port to which a device is a
 IOReturn (*USBDeviceSuspend)(void *self, Boolean suspend);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, or kIOReturnNotOpen if the device is not open for exclusive access.
 
-#### Discussion
+## Discussion
 
 The device must be open to use this function.
 

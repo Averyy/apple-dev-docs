@@ -22,7 +22,7 @@ Sets the visibility of titles for markers and annotations.
 @preconcurrency func annotationTitles(_ visibility: Visibility) -> some MapContent
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`MapContent`](../mapcontent.md) whose titles have the visibility setting you specified.
 

@@ -25,7 +25,7 @@ class CGMutablePath
 typedef struct CGPath * CGMutablePathRef;
 ```
 
-#### Overview
+## Overview
 
 Neither `CGPath` nor [`CGMutablePath`](./cgmutablepath.md) define functions to draw a path. To draw a Core Graphics path to a graphics context, you add the path to the graphics context by calling [`addPath(_:)`](./cgcontext/addpath%28_%29.md) and then call one of the context’s drawing functions—see [`CGContext`](./cgcontext.md).
 

@@ -21,11 +21,11 @@ Returns a random element of the collection.
 func randomElement() -> Self.Element?
 ```
 
-#### Return Value
+## Return Value
 
 A random element from the collection. If the collection is empty, the method returns `nil`.
 
-#### Discussion
+## Discussion
 
 Call `randomElement()` to select a random element from an array or another collection. This example picks a name at random from an array:
 

@@ -21,11 +21,11 @@ Returns an index that is the specified distance from the given index.
 func index(_ i: Int, offsetBy distance: Int) -> Int
 ```
 
-#### Return Value
+## Return Value
 
 An index offset by `distance` from the index `i`.
 
-#### Discussion
+## Discussion
 
 The value passed as `distance` must not offset `i` beyond the bounds of the collection.
 

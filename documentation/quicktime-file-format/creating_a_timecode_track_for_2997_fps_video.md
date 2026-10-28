@@ -5,7 +5,7 @@
 
 Configure a timecode track to specify timecode information for other tracks.
 
-#### Overview
+## Overview
 
 A timecode track specifies timecode information for other tracks. The timecode keeps track of the time codes of the original source of the video and audio. After a movie has been edited, the timecode can be extracted to determine the source tape and the time codes of the frames.
 

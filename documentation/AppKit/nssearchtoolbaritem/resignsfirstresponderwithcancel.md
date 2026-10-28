@@ -19,7 +19,7 @@ var resignsFirstResponderWithCancel: Bool { get set }
 @property BOOL resignsFirstResponderWithCancel;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`. If set to `false`, the cancel button only clears the contents of the search field.
 

@@ -24,7 +24,7 @@ func AudioUnitRemoveRenderNotify(_ inUnit: AudioUnit, _ inProc: AURenderCallback
 extern OSStatus AudioUnitRemoveRenderNotify(AudioUnit inUnit, AURenderCallback inProc, void *inProcUserData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

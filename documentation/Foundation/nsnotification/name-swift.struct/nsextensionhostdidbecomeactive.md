@@ -24,7 +24,7 @@ static let NSExtensionHostDidBecomeActive: NSNotification.Name
 extern NSString * const NSExtensionHostDidBecomeActiveNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Extensions can use this notification to adjust their activity when they become active. The `object` parameter contains the `NSExtensionContext` object. This notification does not contain a `userInfo` dictionary.
 

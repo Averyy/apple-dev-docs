@@ -28,7 +28,7 @@ class ASAuthorizationPlatformPublicKeyCredentialAssertionRequest
 
 - [Supporting passkeys](./supporting-passkeys.md)
 
-#### Overview
+## Overview
 
 Use this class to sign in with an existing credential that the system stores in iCloud Keychain.
 

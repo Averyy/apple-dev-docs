@@ -25,7 +25,7 @@ var weekdayOrdinal: Int { get set }
 @property NSInteger weekdayOrdinal;
 ```
 
-#### Discussion
+## Discussion
 
 Weekday ordinal units represent the position of the weekday within the next larger calendar unit, such as the month. For example, *2* is the weekday ordinal unit for the *second* Friday of the month.
 

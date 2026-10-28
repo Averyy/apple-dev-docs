@@ -5,7 +5,7 @@
 
 Simplify test reports by creating activities that organize substeps within complex test methods.
 
-#### Overview
+## Overview
 
 Use activities to break longer test methods, such as UI tests and integration tests, into smaller named substeps.
 
@@ -13,7 +13,7 @@ Each activity wraps a block of code, giving the code a name. You can nest and ca
 
 For long test methods, especially in UI tests that contain lots of steps, simplify your test methods by refactoring them into utility methods or substeps with activities.
 
-##### Organize Long Test Methods into Substeps
+### Organize Long Test Methods into Substeps
 
 Identify the substeps that you want to group into named activities. For example, you might break down a login UI test into three substeps: opening the login window, entering a password, and closing the login window. Then, create named activities for each substep you identify.
 
@@ -122,7 +122,7 @@ func closeLoginWindow() {
 
 Activities run against the current testing context, represented by [`XCTContext`](./xctcontext.md). To run a block of code as an activity, call the [`runActivityNamed:block:`](./xctcontext/runactivitynamed_block_.md) class method on `XCTContext`, passing your test code as the block to execute.
 
-##### Build Utility Methods from Common Test Substeps
+### Build Utility Methods from Common Test Substeps
 
 Convert common test substeps into self-contained utility methods for reuse in multiple tests with activities. For example, if you have three UI tests that each require the user to be logged in, extract the login process into a utility method that wraps the process inside an activity called `Login`, and call the utility method from within each test method. The login activity appears in the Xcode test report for each test method that calls it.
 

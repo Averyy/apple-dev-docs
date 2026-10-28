@@ -25,7 +25,7 @@ case full
 MKDistanceFormatterUnitStyleFull
 ```
 
-#### Discussion
+## Discussion
 
 For example, your map displays “kilometer” instead of the abbreviation “km.”
 

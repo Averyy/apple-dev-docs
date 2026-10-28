@@ -21,7 +21,7 @@ func addSwitch(descriptor: TCSwitchDescriptor) -> TCSwitch
 - (TCSwitch *) addSwitchWithDescriptor:(TCSwitchDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new `TCSwitch` instance.
 

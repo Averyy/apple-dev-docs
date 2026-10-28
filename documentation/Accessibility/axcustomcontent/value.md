@@ -25,7 +25,7 @@ var value: String { get }
 @property (nonatomic, copy, readonly) NSString * value;
 ```
 
-#### Discussion
+## Discussion
 
 Make the value succinct to work well with assistive technology. For example, either `Portrait` or `Landscape` is an appropriate content value for an `Orientation` label on a photo.
 

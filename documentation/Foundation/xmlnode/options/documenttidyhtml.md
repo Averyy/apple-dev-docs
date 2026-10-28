@@ -20,7 +20,7 @@ static var documentTidyHTML: XMLNode.Options { get }
 NSXMLDocumentTidyHTML
 ```
 
-#### Discussion
+## Discussion
 
 When tidying, `NSXMLDocument` adds a line break before the close tag of a block-level element (`<p>`, `<div>`, `<h1>`, and so on); it also makes the string value of `<br>` or `<hr>` a line break. These operations make the string value of the HTML `<body>` more readable. After using this option, avoid outputting the document as anything other than the default kind, `NSXMLDocumentXHTMLKind`.
 

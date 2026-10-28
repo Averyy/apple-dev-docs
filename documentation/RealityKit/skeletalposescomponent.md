@@ -20,11 +20,11 @@ A component that exposes the collection of named animation skeletal poses.
 struct SkeletalPosesComponent
 ```
 
-#### Overview
+## Overview
 
 Use the entity’s skeletal poses to either read the pose evaluated from animations bound to [`BindTarget.jointTransforms`](./bindtarget/jointtransforms.md) and [`BindTarget.skeletalPose(_:)`](./bindtarget/skeletalpose%28_%29.md), or write your own pose to animate the skeletal model.
 
-##### Setting updated value on an entity
+### Setting updated value on an entity
 
 When an updated [`SkeletalPose`](./skeletalpose.md) is set on an entity as part of this component, these rules are followed:
 

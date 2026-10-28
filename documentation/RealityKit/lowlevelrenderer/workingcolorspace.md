@@ -18,7 +18,7 @@ The color space in which the renderer performs all shading calculations.
 final var workingColorSpace: CGColorSpace { get }
 ```
 
-#### Discussion
+## Discussion
 
 Do not assume a fixed working color space. Query this property and pass its value as `workingColorSpace:` to `ColorMatch.init(workingColorSpace:targetColorSpace:)` to compute a correct gamut conversion matrix.
 

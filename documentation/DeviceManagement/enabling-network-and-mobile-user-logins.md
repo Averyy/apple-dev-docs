@@ -5,13 +5,13 @@
 
 Manage network users on macOS devices bound to an Open Directory server, and mobile users on Shared iPad.
 
-#### Overview
+## Overview
 
 MDM protocol extensions enable network users to log in to a macOS device that’s bound to an Open Directory server. Upon login, these users also become managed by the device management service with their user profiles.
 
 A network login begins when a network user logs in; the device management service then issues a challenge to the device and it responds with a digest, and then the service validates the digest and issues an authentication token.
 
-#### Log in a network user
+## Log in a network user
 
 At login time, if the user is a network user or has a mobile home, the device issues a `UserAuthenticate` request to the device management service to authenticate the current user to the service and obtain an `AuthToken` value. The device uses this token in subsequent requests made by this user to the device management service.
 
@@ -23,11 +23,11 @@ The authentication transaction is an HTTP `PUT` request to the `CheckInURL` addr
 | `UDID` | String | The `UDID` to use for all management requests for the user. |
 | `UserID` | String | The local user’s `GUID`, or the network user’s `GUID` from the Open Directory record. |
 
-#### Issue a challenge
+## Issue a challenge
 
 The device management service response contains a dictionary with a `DigestChallenge` value that contains the standard HTTP digest. The service provides a `200` response, but a zero-length (empty) `DigestChallenge` value if it doesn’t require an `AuthToken` for this user. Otherwise, the device management service provides a `200` response and a non-empty `DigestChallenge` value, and the client generates a digest from the userʼs shortname, their clear-text password, and the `DigestChallenge` value.
 
-#### Send a digest response
+## Send a digest response
 
 The device sends this digest in a second request to the device management service. This request is also sent to the `CheckInURL` specified in the device management (MDM) enrollment profile, and it includes the same identity used for all other management requests. The message body contains these values:
 
@@ -38,7 +38,7 @@ The device sends this digest in a second request to the device management servic
 | `UDID` | String | The `UDID` to use for all management requests for the user. |
 | `UserID` | String | The local user’s `GUID`, or the network user’s `GUID` from the Open Directory record. |
 
-#### Validate the digest to issue an authentication token
+## Validate the digest to issue an authentication token
 
 If the device management service rejects the `DigestResponse` value, for example if the password is invalid, it returns a `200` response and an empty `AuthToken` value. Otherwise, the service returns an `AuthToken` value for use by the device on subsequent requests to the device management service. This token remains valid until the next time the device sends a `UserAuthenticate` handshake request, which it does each time a network user logs in.
 
@@ -48,7 +48,7 @@ For push notifications, the device uses different push tokens for device and use
 
 > ⚠️ **Warning**:  Push notification tokens and `AuthToken` are separate values.
 
-#### Review a complete login
+## Review a complete login
 
 The following is an example of a `UserAuthenticate` transaction:
 
@@ -102,7 +102,7 @@ The following is an example of a `UserAuthenticate` transaction:
 </dict>
 ```
 
-#### Support multiple users on iPad
+## Support multiple users on iPad
 
 A device management service manages a Shared iPad and its users using a similar technique to the process described above for enabling network users in macOS.
 

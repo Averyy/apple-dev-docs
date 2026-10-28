@@ -16,11 +16,11 @@ Used to poll the current state of the UPS.
 IOReturn (*getEvent)(void *thisPointer, CFDictionaryRef *event);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code.
 
-#### Discussion
+## Discussion
 
 Keys are defined in IOPSKeys.h and begin with kIOPS. This is not an allocation method. Thus the caller does not release the CFDictionary that is returned.
 

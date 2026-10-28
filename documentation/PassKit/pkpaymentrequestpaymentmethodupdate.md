@@ -24,7 +24,7 @@ class PKPaymentRequestPaymentMethodUpdate
 @interface PKPaymentRequestPaymentMethodUpdate : PKPaymentRequestUpdate
 ```
 
-#### Overview
+## Overview
 
 This is the handler for [`paymentAuthorizationController(_:didSelectPaymentMethod:handler:)`](./pkpaymentauthorizationcontrollerdelegate/paymentauthorizationcontroller%28_,didselectpaymentmethod,handler%29.md) and [`paymentAuthorizationViewController(_:didSelect:handler:)`](./pkpaymentauthorizationviewcontrollerdelegate/paymentauthorizationviewcontroller%28_,didselect,handler%29-3bex6.md). Update the summary items to reflect the change in payment method.
 

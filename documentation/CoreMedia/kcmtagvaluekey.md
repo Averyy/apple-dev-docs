@@ -21,7 +21,7 @@ A constant for use as a key during tag creation from a dictionary, whose value i
 extern CFStringRef const kCMTagValueKey;
 ```
 
-#### Discussion
+## Discussion
 
 Values for this key are of the type held by the [`kCMTagDataTypeKey`](./kcmtagdatatypekey.md) key of the enclosing dictionary. Ensure that your value can be safely cast to the appropriate type.
 

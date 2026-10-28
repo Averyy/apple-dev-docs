@@ -19,7 +19,7 @@ Creates a configuration state with the specified trait collection.
 - (instancetype) initWithTraitCollection:(UITraitCollection *) traitCollection;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you don’t create a configuration state yourself. To access the current configuration state for a content-unavailable view, read [`contentUnavailableConfigurationState`](../uiviewcontroller/contentunavailableconfigurationstate-9bvga.md). View controller subclasses can override that property to customize the configuration state returned by the system.
 

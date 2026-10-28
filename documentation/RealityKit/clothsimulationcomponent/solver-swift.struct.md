@@ -17,7 +17,7 @@ The permanent solver configuration of a cloth simulation.
 struct Solver
 ```
 
-#### Overview
+## Overview
 
 The solver used for a simulation affects the quality, performance and power cost of the simulation.
 

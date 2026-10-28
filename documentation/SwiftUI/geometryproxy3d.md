@@ -15,7 +15,7 @@ A proxy for access to the size and coordinate space of the container view.
 struct GeometryProxy3D
 ```
 
-#### Overview
+## Overview
 
 You can use a proxy for anchor resolution.
 

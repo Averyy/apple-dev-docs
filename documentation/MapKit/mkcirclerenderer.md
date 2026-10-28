@@ -24,7 +24,7 @@ class MKCircleRenderer
 @interface MKCircleRenderer : MKOverlayPathRenderer
 ```
 
-#### Overview
+## Overview
 
 This renderer fills and strokes the circular region that the overlay object represents. You can change the color and other drawing attributes of the circle by modifying the properties it inherits from the main class. You typically use this class as-is and don’t subclass it.
 

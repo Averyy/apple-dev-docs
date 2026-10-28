@@ -24,7 +24,7 @@ optional func home(_ home: HMHome, didEncounterError error: any Error, for acces
 - (void) home:(HMHome *) home didEncounterError:(NSError *) error forAccessory:(HMAccessory *) accessory;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate should check whether the accessory is blocked.
 

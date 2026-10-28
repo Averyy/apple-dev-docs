@@ -21,7 +21,7 @@ Converts a direction vector from the local space of a reference entity to the lo
 @preconcurrency func convert(direction: SIMD3<Float>, from referenceEntity: Entity?) -> SIMD3<Float>
 ```
 
-#### Return Value
+## Return Value
 
 The direction vector given in the local space of the entity.
 

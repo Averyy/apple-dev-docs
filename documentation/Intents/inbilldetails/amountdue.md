@@ -34,7 +34,7 @@ var amountDue: INCurrencyAmount? { get set }
 @property (atomic, copy, readwrite, nullable) INCurrencyAmount * amountDue;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the total amount due for the bill, as reported by the payee. This value must be greater than or equal to the value in the [`minimumDue`](./minimumdue.md) property.
 

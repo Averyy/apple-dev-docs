@@ -21,13 +21,13 @@ class Module
 
 - [Creating Modules](./custom-layers.md)
 
-#### Overview
+## Overview
 
 The workhorse of any neural network library is the [`Module`](./module.md) class. In MLX the [`Module`](./module.md) class is a container of `MLXArray` or [`Module`](./module.md) instances. Its main function is to provide a way to recursively access and update its parameters and those of its submodules.
 
 All the layers provided in [Layers](./layers.md) subclass this class and your models should do the same.  See [Creating Modules](./custom-layers.md).
 
-##### Parameters
+### Parameters
 
 A `Module` can contain other `Module` instances or `MLXArray` instances in structures of `Array` and `Dictionary`. The `Module` then allows recursively extracting all the `MLXArray` instances using [`parameters()`](./module/parameters%28%29.md)
 
@@ -35,7 +35,7 @@ In addition, the `Module` has the concept of trainable and non trainable paramet
 
 [`valueAndGrad(model:_:)`](./valueandgrad%28model,_%29-12a2c.md) the gradients returned will be with respect to these trainable parameters.
 
-##### Example
+### Example
 
 Here is an example multi-layer perception (MLP):
 
@@ -73,15 +73,15 @@ let result = model(input)
 
 > **Note**: Please read [Creating Modules](./custom-layers.md) for more information about implementing custom layers including how to override the module and parameter keys and allowing dynamic updates of the module structure to occur via [`update(modules:verify:path:modulePath:)`](./module/update%28modules,verify,path,modulepath%29.md).
 
-##### Training
+### Training
 
 See [Training a Model](./training.md)
 
-##### Mutation
+### Mutation
 
 All mutation of parameters and modules must go through [`update(parameters:)`](./module/update%28parameters%29.md) and [`update(modules:)`](./module/update%28modules%29.md).  This is important because `Module` uses reflection (`Mirror`) to find parameters and modules but caches the values.  These two methods make sure the cache is kept up-to-date.
 
-##### See Also
+### See Also
 
 - [Creating Modules](./custom-layers.md)
 

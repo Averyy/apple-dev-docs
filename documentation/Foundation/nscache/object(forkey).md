@@ -25,7 +25,7 @@ func object(forKey key: KeyType) -> ObjectType?
 - (ObjectType) objectForKey:(KeyType) key;
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with `key`, or `nil` if no value is associated with `key`.
 

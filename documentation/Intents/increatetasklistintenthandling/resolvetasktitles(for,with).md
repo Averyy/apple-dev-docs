@@ -29,7 +29,7 @@ optional func resolveTaskTitles(for intent: INCreateTaskListIntent) async -> [IN
 - (void) resolveTaskTitlesForCreateTaskList:(INCreateTaskListIntent *) intent withCompletion:(void (^)(NSArray<INSpeakableStringResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the tasks for a task list. Use the intent object to obtain the initial titles suggested by the user. If the user doesn’t supply any task titles and you don’t require an initial set of tasks, return a resolution of not required. Alternatively, you can supply a default task title and create a successful resolution.
 

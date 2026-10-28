@@ -20,7 +20,7 @@ Returns the object at a given path, if it exists.
 func object(at path: USDLayer.Path) -> USDStage.Object
 ```
 
-#### Discussion
+## Discussion
 
 If no object exists at the resolved path, returns an invalid object handle.
 

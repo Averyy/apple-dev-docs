@@ -21,7 +21,7 @@ The default memory alignment of `T`, in bytes.
 static var alignment: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use the `alignment` property for a type when allocating memory using an unsafe pointer. This value is always positive.
 

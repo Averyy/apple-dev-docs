@@ -25,7 +25,7 @@ convenience init(track: AVAssetTrack?)
 + (instancetype) audioMixInputParametersWithTrack:(AVAssetTrack *) track;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable input parameters object with no volume ramps and [`trackID`](./trackid.md) set to `track`’s identifier.
 

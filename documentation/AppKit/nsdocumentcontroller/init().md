@@ -19,11 +19,11 @@ init()
 - (instancetype) init;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized document controller object.
 
-#### Discussion
+## Discussion
 
 The first instance of `NSDocumentController` or any of its subclasses that is created becomes the shared instance.
 

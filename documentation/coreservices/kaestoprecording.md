@@ -14,7 +14,7 @@
 var kAEStopRecording: AEEventID { get }
 ```
 
-#### Discussion
+## Discussion
 
 Event ID for an event sent by a scripting component to the recording process (or to any running process on the local computer), but handled by the Apple Event Manager. The Apple Event Manager responds by sending a `recording off` event to all running processes on the local computer. 
 

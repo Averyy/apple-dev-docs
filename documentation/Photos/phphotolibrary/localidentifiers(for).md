@@ -21,7 +21,7 @@ func localIdentifiers(for cloudIdentifiers: [PHCloudIdentifier]) -> [String]
 - (NSArray<NSString *> *) localIdentifiersForCloudIdentifiers:(NSArray<PHCloudIdentifier *> *) cloudIdentifiers;
 ```
 
-#### Return Value
+## Return Value
 
 The array of corresponding iCloud identifiers.
 

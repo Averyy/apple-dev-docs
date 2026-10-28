@@ -15,7 +15,7 @@ The string encoding for the document.
 extern NSAttributedStringDocumentAttributeKey NSCharacterEncodingDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../Foundation/nsnumber.md) object containing integer specifying [`NSStringEncoding`](../Foundation/nsstringencoding.md) for the file; default for plain text is the default encoding. This key in options can specify the string encoding for reading the data. Upon return, the document attributes can contain the actual encoding used. For writing methods, this value is used for generating the plain text data.
 

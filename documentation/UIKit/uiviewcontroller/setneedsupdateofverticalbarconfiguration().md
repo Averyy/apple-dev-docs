@@ -23,7 +23,7 @@ func setNeedsUpdateOfVerticalBarConfiguration()
 - (void) setNeedsUpdateOfVerticalBarConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method following changes to any state that affects the return values of methods like [`preferredVerticalBarBehavior`](./preferredverticalbarbehavior.md) or [`childForPreferredVerticalBarBehavior`](./childforpreferredverticalbarbehavior.md).
 

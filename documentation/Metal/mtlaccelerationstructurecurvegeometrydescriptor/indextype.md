@@ -24,7 +24,7 @@ var indexType: MTLIndexType { get set }
 @property (nonatomic) MTLIndexType indexType;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to a value that reflects the size of the indices in the [`indexBuffer`](./indexbuffer.md) property, such as [`MTLIndexType.uint16`](../mtlindextype/uint16.md) or [`MTLIndexType.uint32`](../mtlindextype/uint32.md).
 

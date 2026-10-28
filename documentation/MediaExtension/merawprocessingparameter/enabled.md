@@ -19,7 +19,7 @@ var enabled: Bool { get set }
 @property (readwrite) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 This parameter can only be modified by the extension. From the application-facing interface, `VTRAWProcessingSession`, this is a read-only value which indicates whether the parameter should be grayed out and disabled in any UI being generated.
 

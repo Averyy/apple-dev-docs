@@ -25,11 +25,11 @@ func compression_decode_scratch_buffer_size(_ algorithm: compression_algorithm) 
 extern size_t compression_decode_scratch_buffer_size(compression_algorithm algorithm);
 ```
 
-#### Return Value
+## Return Value
 
 Size in bytes.
 
-#### Discussion
+## Discussion
 
 This function returns the number of bytes to provide in an optional scratch buffer when calling [`compression_decode_buffer(_:_:_:_:_:_:)`](./compression_decode_buffer%28_,_,_,_,_,_%29.md).
 

@@ -19,7 +19,7 @@ Defines a text transformation that can affect the visual appearance of a string.
 typedef NSDictionary<NSString *,id> *(^)(NSDictionary<NSString *,id> *) UIConfigurationTextAttributesTransformer;
 ```
 
-#### Discussion
+## Discussion
 
 Use a transformer to affect how your attributed text appears on the UI. You provide a closure when initializing the transformer. Your closure accepts a container with the current text attributes and returns a container with the new text attributes.
 

@@ -21,7 +21,7 @@ Performs a classification on a single input.
 func applied(to input: MLShapedArray<Scalar>, eventHandler: EventHandler? = nil) async throws -> ClassificationDistribution<Label>
 ```
 
-#### Return Value
+## Return Value
 
 A classification distribution.
 

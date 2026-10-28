@@ -19,7 +19,7 @@ var backgroundView: NSView? { get set }
 @property (strong, nullable) NSView * backgroundView;
 ```
 
-#### Discussion
+## Discussion
 
 The view you assign to this property is positioned underneath all other content and sized automatically to match the enclosing clip view’s frame. The view itself does not scroll with the rest of the collection view content. The view’s layer redraw policy is also changed to [`NSView.LayerContentsRedrawPolicy.never`](../nsview/layercontentsredrawpolicy-swift.enum/never.md).
 

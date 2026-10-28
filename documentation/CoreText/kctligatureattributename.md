@@ -25,7 +25,7 @@ let kCTLigatureAttributeName: CFString
 extern CFStringRef const kCTLigatureAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this attribute must be a [`CFNumber`](../CoreFoundation/cfnumber.md) object. Default is an integer value of `1`. The ligature attribute determines what kinds of ligatures should be used when displaying the string. A value of `0` indicates that only ligatures essential for proper rendering of text should be used. A value of `1` indicates that standard ligatures should be used, and `2` indicates that all available ligatures should be used. Which ligatures are standard depends on the script and possibly the font. Arabic text, for example, requires ligatures for many character sequences but has a rich set of additional ligatures that combine characters. English text has no essential ligatures, and typically has only two standard ligatures, those for “fi” and “fl”—all others are considered more advanced or fancy.
 

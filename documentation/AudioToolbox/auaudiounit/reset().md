@@ -28,7 +28,7 @@ func reset()
 
 - [Migrating Your Audio Unit Host to the AUv3 API](../migrating-your-audio-unit-host-to-the-auv3-api.md)
 
-#### Discussion
+## Discussion
 
 Hosts should call this at the point of a discontinuity in the input stream being provided to an audio unit—for example, when seeking forward or backward within a track. In response, audio units should clear delay lines, filters, etc. Subclasses should call the superclass implementation.
 

@@ -20,11 +20,11 @@ func copyAudio(atStart start: Int64, count: UnsafeMutablePointer<Int64>!) -> Dat
 - (NSData *) copyAudioAtStart:(int64_t) start count:(int64_t *) count;
 ```
 
-#### Return Value
+## Return Value
 
 A data buffer with decoded audio samples at the sample rate and channel layout specified in the encoder settings.
 
-#### Discussion
+## Discussion
 
 If the decoder does not have enough samples to return as specified in the `count` parameter, it updates the `count` parameter with the actual number of samples in the returned audio data buffer.
 

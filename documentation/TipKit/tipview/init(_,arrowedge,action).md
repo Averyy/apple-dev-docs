@@ -24,14 +24,14 @@ Creates a tip view with an optional arrow.
 
 Available when `Content` conforms to `Tip`.
 
-#### Discussion
+## Discussion
 
 - arrowEdge: The edge of the tip view that displays the arrow.
 - action: The closure to perform when the user triggers a tip’s action.
 
 > 💡 **Tip**: The tip to display.
 
-#### Overview
+## Overview
 
 Use a `TipView` when you want to indicate the UI element to which the tip applies, but don’t want to directly anchor the tip view to that element. Use the [`popoverTip(_:arrowEdge:action:)`](../../SwiftUI/view/popovertip%28_,arrowedge,action%29.md) to anchor your tip to an element.
 

@@ -58,7 +58,7 @@ static func buildBlock<each Content>(_ content: repeat each Content) -> some Too
 static func buildBlock<each C>(_ content: repeat each C) -> AnyChartContent where repeat each C : ChartContent
 ```
 
-#### Discussion
+## Discussion
 
 An example of a single item written as child content is `{ Text("Hello") }`.
 

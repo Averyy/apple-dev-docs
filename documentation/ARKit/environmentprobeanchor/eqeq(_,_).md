@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two environment probe anchors are equ
 static func == (lhs: EnvironmentProbeAnchor, rhs: EnvironmentProbeAnchor) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two environment probe anchors are equal; otherwise, `false`.
 

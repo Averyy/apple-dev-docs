@@ -15,7 +15,7 @@ Get the process group id for the passed-in process.
 pid_t proc_pgrpid(proc_t p);
 ```
 
-#### Return Value
+## Return Value
 
 pgrpid for "p".
 

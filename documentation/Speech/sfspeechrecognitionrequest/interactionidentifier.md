@@ -25,7 +25,7 @@ var interactionIdentifier: String? { get set }
 @property (nonatomic, copy, nullable) NSString * interactionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 If different parts of your app have different speech recognition needs, you can use this property to identify the part of your app that is making each request. For example, if one part of your app lets users speak phone numbers and another part lets users speak street addresses, consistently identifying the part of the app that makes a recognition request may help improve the accuracy of the results.
 

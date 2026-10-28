@@ -4,7 +4,7 @@
 
 Arranges elements in a grid pattern.
 
-#### Overview
+## Overview
 
 Items inside of the `grid` are displayed in a row that is bound by the size of the screen. Items are automatically moved to another row after a row is filled. Here’s an example of three `lockup` elements inside of a `grid` element.
 
@@ -27,12 +27,12 @@ Items inside of the `grid` are displayed in a row that is bound by the size of t
 </grid>
 ```
 
-##### Subelements of grid
+### Subelements of grid
 
 - [header](./header.md)
 - [section](./section.md)
 
-##### Elements that Use grid
+### Elements that Use grid
 
 - [collectionList](./collectionlist.md)
 - [relatedContent](./relatedcontent.md)

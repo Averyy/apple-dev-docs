@@ -19,7 +19,7 @@ optional func deviceBrowserDidEnumerateLocalDevices(_ browser: ICDeviceBrowser)
 - (void) deviceBrowserDidEnumerateLocalDevices:(ICDeviceBrowser *) browser;
 ```
 
-#### Discussion
+## Discussion
 
 Detecting locally connected devices (USB and FireWire devices) is faster than detecting devices connected using a network protocol. An Image Capture client application may use this message to update its user interface to let the user know that it has completed looking for locally connected devices and then started looking for network devices.
 

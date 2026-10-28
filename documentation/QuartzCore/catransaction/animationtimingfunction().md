@@ -24,11 +24,11 @@ class func animationTimingFunction() -> CAMediaTimingFunction?
 + (CAMediaTimingFunction *) animationTimingFunction;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `CAMediaTimingFunction`.
 
-#### Discussion
+## Discussion
 
 This is a convenience method that returns the [`CAMediaTimingFunction`](../camediatimingfunction.md) for the [`value(forKey:)`](./value%28forkey%29.md) value returned by the  [`kCATransactionAnimationTimingFunction`](../kcatransactionanimationtimingfunction.md) key.
 

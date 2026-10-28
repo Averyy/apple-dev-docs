@@ -12,7 +12,7 @@ Access read-only collections of the user’s multimedia content.
 
 > **Deprecated**: Use the [PhotoKit](../PhotoKit/PhotoKit.md) and [iTunes Library](../iTunesLibrary/iTunesLibrary.md) frameworks instead.
 
-#### Overview
+## Overview
 
 The Media Library framework provides a read-only Objective-C data model representing a user’s collections of images, audio, and video. The initial access point of the Media Library framework is [`MLMediaLibrary`](./mlmedialibrary.md), which loads the user’s media into a hierarchical structure consisting of media sources, groups, and objects.
 

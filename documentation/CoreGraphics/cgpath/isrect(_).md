@@ -25,7 +25,7 @@ func isRect(_ rect: UnsafeMutablePointer<CGRect>?) -> Bool
 extern bool CGPathIsRect(CGPathRef path, CGRect *rect);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the specified path represents a rectangle. If the path represents a rectangle, returns [`true`](../../Swift/true.md).
 

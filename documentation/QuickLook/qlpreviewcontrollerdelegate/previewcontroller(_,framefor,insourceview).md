@@ -22,11 +22,11 @@ optional func previewController(_ controller: QLPreviewController, frameFor item
 - (CGRect) previewController:(QLPreviewController *) controller frameForPreviewItem:(id<QLPreviewItem>) item inSourceView:(UIView **) view;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CGRect`](../../CoreFoundation/cgrect.md) object defining the frame rectangle for the preview item as it appears in your app.
 
-#### Discussion
+## Discussion
 
 Use this delegate method to configure a zoom animation for presenting and dismissing a preview. The zoom proceeds between your own representation of the item and full screen.
 

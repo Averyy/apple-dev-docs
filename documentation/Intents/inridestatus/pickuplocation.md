@@ -32,7 +32,7 @@ var pickupLocation: CLPlacemark? { get set }
 @property (atomic, copy, readwrite, nullable) CLPlacemark * pickupLocation;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the location where your driver will pick up the user. Do not include the pickup location in the[`waypoints`](./waypoints.md) property.
 

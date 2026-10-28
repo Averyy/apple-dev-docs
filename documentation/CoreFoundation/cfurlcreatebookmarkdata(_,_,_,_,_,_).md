@@ -25,11 +25,11 @@ func CFURLCreateBookmarkData(_ allocator: CFAllocator!, _ url: CFURL!, _ options
 extern CFDataRefCFURLCreateBookmarkData(CFAllocatorRef allocator, CFURLRef url, CFURLBookmarkCreationOptions options, CFArrayRef resourcePropertiesToInclude, CFURLRef relativeToURL, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The bookmark data for the URL.
 
-#### Discussion
+## Discussion
 
 To use this function to create a security-scoped bookmark to support App Sandbox, you must first have enabled the appropriate entitlements for your app, as described in [Enabling Security-Scoped Bookmark and URL Access](https://developer.apple.com/library/archive/documentation/Miscellaneous/Reference/EntitlementKeyReference/Chapters/EnablingAppSandbox.html#//apple_ref/doc/uid/TP40011195-CH4-SW18). In addition, be sure to understand the behavior of the `options` and `relativeToURL` parameters.
 

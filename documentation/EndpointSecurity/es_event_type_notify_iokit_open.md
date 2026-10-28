@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_IOKIT_OPEN: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_IOKIT_OPEN
 ```
 
-#### Discussion
+## Discussion
 
 This identifier represents a call to [`IOServiceOpen(_:_:_:_:)`](../iokit/api-1514515-ioserviceopen.md). This value corresponds to the [`es_events_t`](./es_events_t.md) union member [`iokit_open`](./es_events_t/iokit_open.md), which has the type [`es_event_iokit_open_t`](./es_event_iokit_open_t.md).
 

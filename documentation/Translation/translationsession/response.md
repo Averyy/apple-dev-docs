@@ -18,7 +18,7 @@ The response to a translation request.
 struct Response
 ```
 
-#### Overview
+## Overview
 
 You get a single response structure after you translate a string, or when you call one of the batch translation methods passing in an array of translation requests. When the translation completes, a response instance returns with the translation result along with properties the framework used to perform the translation.
 

@@ -29,7 +29,7 @@ func endCommandBuffer()
 
 - [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
-#### Discussion
+## Discussion
 
 Metal generates an error if you submit a command buffer to a queue, such as with its [`commit:count:`](../mtl4commandqueue/commit_count_.md) method, before calling this method.
 

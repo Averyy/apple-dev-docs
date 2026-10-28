@@ -19,7 +19,7 @@ Creates a concept structure from the specified image object.
 static func image(_ image: CGImage) -> ImagePlaygroundConcept
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you want to use an image as the basis for generating a new image. Typically, you include other text-based concept structures in addition to this one. Include at most one image among the collection of concepts. Including more than one image yields unpredictable image results.
 

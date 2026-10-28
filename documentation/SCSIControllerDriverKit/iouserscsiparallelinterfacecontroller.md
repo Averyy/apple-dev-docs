@@ -15,7 +15,7 @@ A DriverKit provider object that manages communications with SCSI-based devices.
 class IOUserSCSIParallelInterfaceController;
 ```
 
-#### Overview
+## Overview
 
 Implement your driver by subclassing this class and overriding all pure virtual methods.
 
@@ -25,7 +25,7 @@ The framework invokes the dext class’s [`Start`](../DriverKit/ioservice/start.
 
 The framework provides the [`UserReportHBAConstraints`](./iouserscsiparallelinterfacecontroller/userreporthbaconstraints.md) API to report controller I/O constraints. Make sure your dext reports these constraints accurately — particularly all mandatory keys — during initialization. This helps prevent intermittent failures, such as controller firmware buffer overflows.
 
-#### Support power capabilities
+## Support power capabilities
 
 IOUserSCSIParallelInterfaceController supports the following power capabilities:
 

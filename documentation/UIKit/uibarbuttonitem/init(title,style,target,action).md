@@ -23,7 +23,7 @@ convenience init(title: String?, style: UIBarButtonItem.Style, target: Any?, act
 - (instancetype) initWithTitle:(NSString *) title style:(UIBarButtonItemStyle) style target:(id) target action:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`UIBarButtonItem`](../uibarbuttonitem.md).
 

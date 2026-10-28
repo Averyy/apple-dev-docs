@@ -34,7 +34,7 @@ nonisolated
 func attributedTextFormattingDefinition<S>(_ scope: S.Type) -> some View where S : AttributeScope
 ```
 
-#### Discussion
+## Discussion
 
 Applying a text formatting definition to a [`Text`](../text.md) or [`TextEditor`](../texteditor.md) created using the [`init(_:)`](../text/init%28_%29-1a4oh.md) or [`init(text:selection:)`](../texteditor/init%28text,selection%29.md) initializer, respectively, makes sure that any content observable to the user adheres to the constraints of the formatting definition.
 

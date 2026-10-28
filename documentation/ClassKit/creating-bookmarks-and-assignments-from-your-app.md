@@ -5,7 +5,7 @@
 
 Make it easier for teachers to find and assign your content.
 
-#### Overview
+## Overview
 
 When you adopt ClassKit and declare your app’s assignable content, teachers can use Apple’s Schoolwork app to assign your content to students. They do this by creating a new Assignment in Schoolwork.
 
@@ -19,7 +19,7 @@ You can make it easier for teachers to find your app’s content in Schoolwork b
 
 To enable bookmarks, you provide a ClassKit context ([`CLSContext`](./clscontext.md)) to an activity view controller as described below. When you do this, Schoolwork offers a bookmark creation action extension in the activity view. Inside the same activity view, Schoolwork also offers a share extension that provides a shortcut to Assignment creation. This allows teachers to create assignments without leaving your app.
 
-##### Associate action buttons with content
+### Associate action buttons with content
 
 To provide a point from which to launch an activity view in your app, add one or more [`UIBarButtonItem.SystemItem.action`](../UIKit/uibarbuttonitem/systemitem/action.md) buttons to your interface. Users know that tapping an action button typically reveals a modal activity view with share and action extensions that are relevant to the current task, as described in [Activity Views](https://developer.apple.com/design/human-interface-guidelines/ios/views/activity-views/). Add action buttons to your app’s UI in places that correspond to activities that a teacher might want to assign right away or to bookmark for later assignment.
 
@@ -27,7 +27,7 @@ To provide a point from which to launch an activity view in your app, add one or
 
 When deciding where to place action buttons in your UI, choose locations that clearly correspond to an assignable task. For example, in a play reader like the Great Plays sample app (see [Incorporating ClassKit into an Educational App](./incorporating-classkit-into-an-educational-app.md)), users would expect an action button that appears with a play’s table of contents, as shown in the figure above, to apply to the play as a whole. On the other hand, an action button that appears as part of a quiz should apply specifically to that quiz.
 
-##### Initialize and present an activity view
+### Initialize and present an activity view
 
 For each action button you add to your UI, add a corresponding method that’s called when the person taps the button. Use this method to initialize and present an instance of a [`UIActivityViewController`](../UIKit/uiactivityviewcontroller.md). Initialize the activity view with the [`CLSContext`](./clscontext.md) corresponding to the assignable task the person would expect, given the state of your app at the time. For example, if they tap the action button on the table of contents shown in the previous section, provide the play context as the activity item:
 
@@ -46,7 +46,7 @@ Then present the activity view. On iPad, you present an activity view as a popov
  self.present(activityView, animated: true)
 ```
 
-##### Update activity view metadata
+### Update activity view metadata
 
 To provide context to the user about the information in the activity view, add the meta data describing the information they’re sharing by conforming your view controller to the [`UIActivityItemSource`](../UIKit/uiactivityitemsource.md) protocol.
 

@@ -24,7 +24,7 @@ let HMCharacteristicTypeTargetSecuritySystemState: String
 extern NSString * const HMCharacteristicTypeTargetSecuritySystemState;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is one of the constants in the [`HMCharacteristicValueTargetSecuritySystemState`](./hmcharacteristicvaluetargetsecuritysystemstate.md) enumeration.
 

@@ -21,7 +21,7 @@ Constants for the text layout sections document attribute key.
 struct TextLayoutSectionKey
 ```
 
-#### Overview
+## Overview
 
 Use these constants as values for the [`textLayoutSections`](./documentattributekey/textlayoutsections.md) key in the document attributes dictionary.
 

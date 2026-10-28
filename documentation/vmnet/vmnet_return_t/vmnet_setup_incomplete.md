@@ -18,7 +18,7 @@ case VMNET_SETUP_INCOMPLETE
 VMNET_SETUP_INCOMPLETE
 ```
 
-#### Discussion
+## Discussion
 
 Indicates failure due to an incomplete interface setup.
 

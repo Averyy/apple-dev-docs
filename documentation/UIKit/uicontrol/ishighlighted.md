@@ -23,7 +23,7 @@ var isHighlighted: Bool { get set }
 @property (nonatomic, getter=isHighlighted) BOOL highlighted;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the control draws a highlight; otherwise, the control doesn’t draw a highlight. Controls automatically set and clear this state in response to appropriate touch events. You can change the value of this property as needed to apply or remove a highlight programmatically
 

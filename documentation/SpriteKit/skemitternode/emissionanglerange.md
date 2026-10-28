@@ -25,7 +25,7 @@ var emissionAngleRange: CGFloat { get set }
 @property (nonatomic) CGFloat emissionAngleRange;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `0.0`. If non-zero, the emission angle of each particle is randomly determined and may vary by plus or minus half of the range value.
 

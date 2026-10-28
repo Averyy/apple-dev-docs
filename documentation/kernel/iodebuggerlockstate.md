@@ -15,7 +15,7 @@ typedef enum IODebuggerLockState : unsigned int {
 } IODebuggerLockState;
 ```
 
-#### Overview
+## Overview
 
 Defines flags returned by IOKernelDebugger::lock().
 

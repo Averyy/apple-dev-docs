@@ -23,7 +23,7 @@ static var willEnterForeground: NotificationCenter.BaseMessageIdentifier<NSExten
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<NSExtensionContext.WillEnterForegroundMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`NSExtensionContext.WillEnterForegroundMessage`](../../nsextensioncontext/willenterforegroundmessage.md).
 

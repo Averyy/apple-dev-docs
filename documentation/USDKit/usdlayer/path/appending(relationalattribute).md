@@ -20,7 +20,7 @@ Returns a new path with a relational attribute appended.
 func appending(relationalAttribute name: USDToken) -> USDLayer.Path
 ```
 
-#### Return Value
+## Return Value
 
 A new path identifying the relational attribute.
 

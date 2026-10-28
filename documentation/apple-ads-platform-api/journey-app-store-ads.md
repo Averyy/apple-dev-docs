@@ -8,7 +8,7 @@ Set up and launch an App Store campaign, from account verification through keywo
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Overview
+## Overview
 
 You can promote your app on the App Store in four placements, as detailed in the table below: search results, the Search tab, the Today tab, and Product Pages. Every App Store campaign uses `promotedObjectType: APPSTORE_APP`.
 
@@ -27,7 +27,7 @@ Before you begin:
 - When automating campaign, creative, or keyword operations at scale, watch the rate-limit headers described in [Applying Rate Limits](./rate-limits.md) and back off before hitting a `429`.
 - See [Calling the Apple Ads Platform API](./calling-apple-ads-platform-api.md) for details on the request structure and common query patterns.
 
-#### Confirm Your Organization and Ad Account
+## Confirm Your Organization and Ad Account
 
 Start by confirming which organization and ad account you’re working under. [`Get User ACL`](./get-user-acls.md) returns the ad accounts and roles available to your token, as shown here:
 
@@ -43,7 +43,7 @@ GET https://api.ads.apple.com/v1/ad-accounts/{adAccountId}
 
 Confirm the `productFeatures` and `CONTENT_PROVIDER` delegation mentioned above are present on this ad account. To update an ad account’s delegations, use [`Update Ad Accounts`](./put-ad-accounts-_id_.md). The `delegations` field uses full-replacement semantics: a partial array removes unlisted entries, so always send the complete desired state.
 
-#### Choose Your App
+## Choose Your App
 
 To search the App Store catalog for your app and retrieve its Adam ID, use [`Search for Apps`](./searches-for-a-list-of-apps.md). The Adam ID is the `promotedObjectId` you set on every App Store campaign.
 
@@ -59,7 +59,7 @@ GET https://api.ads.apple.com/v1/apps/{adamId}
 
 Check `availableStorefronts` to confirm which App Store countries or regions you can target before setting campaign targets. See [Search Apps Endpoints](./search-apps-endpoints.md) for more information.
 
-#### Verify Your App Is Eligible to Advertise
+## Verify Your App Is Eligible to Advertise
 
 To confirm your app’s advertising eligibility status before you build a campaign, use [`Check App Eligibility`](./find-apps-eligibilities.md). Pass your app’s Adam ID to check which placements and App Store countries or regions are available, as shown here:
 
@@ -79,7 +79,7 @@ POST /v1/eligibilities/apps/query
 
 For eligibility states and per-placement details, see [App Eligibility Endpoints](./app-eligibility-endpoints.md).
 
-#### Choose Placements and App Store Countries or Regions
+## Choose Placements and App Store Countries or Regions
 
 Before creating the campaign, select where you want your ads to run on the App Store (Today tab, Search tab, search results, or product pages) and choose one or more App Store countries or regions for the campaign to run.
 
@@ -125,7 +125,7 @@ Set `countryOrRegion.include` using the `availableStorefronts` list you retrieve
 
 After creation, `supplyPlacement` and `countryOrRegion` remain mutable and you can update them via [`CampaignTargetingUpdate`](./campaigntargetingupdate.md), but `supplySource` is fixed at creation and can’t be changed afterward.
 
-#### Create a Campaign
+## Create a Campaign
 
 This example creates an `APPSTORE_SEARCH_RESULTS` placement campaign:
 
@@ -153,7 +153,7 @@ POST /v1/campaigns
 }
 ```
 
-#### Create an Ad Group
+## Create an Ad Group
 
 Ad groups sit under a campaign and control targeting, scheduling, and bidding. Create one with [`Create an Ad Group`](./post-adgroups.md), supplying the `campaignId` from the previous step. App Store ad groups support audience targeting (device class, age, gender, app category, and app downloader), geo targeting (country, admin area, and locality), daypart, and keyword targeting. For a full description, see [Ad Groups Endpoints](./adgroups-endpoints.md).
 
@@ -175,7 +175,7 @@ POST /v1/adgroups
 }
 ```
 
-#### Add Keywords
+## Add Keywords
 
 To add keywords to an ad group for Search results placement, use [`Create a Keyword`](./post-keywords.md) or [`Bulk Create Keywords`](./post-keywords-bulk-create.md). `matchType` is `BROAD` or `EXACT`, as shown in the example below. An optional per-keyword bid overrides the ad group default. For the full match type reference, see [`KeywordMatchType`](./keywordmatchtype.md).
 
@@ -216,7 +216,7 @@ POST /v1/keywords/bulk-create
 
 If you’re not sure which keywords to add, use [`Query Keyword Suggestions`](./query-keyword-suggestions.md) to discover terms related to your app’s category and [`Query Phrase Suggestions`](./query-phrase-suggestions.md) to explore broader phrase ideas.
 
-#### Exclude Irrelevant Traffic with Negative Keywords
+## Exclude Irrelevant Traffic with Negative Keywords
 
 Negative keywords prevent your ads from showing for unrelated searches. Apply them at two levels:
 
@@ -236,7 +236,7 @@ POST /v1/negative-keywords
 }
 ```
 
-#### Create a Creative and an Ad
+## Create a Creative and an Ad
 
 First, create the creative with [`Create an Ad Creative`](./post-creatives.md) using `creativeType: DEFAULT_PRODUCT_PAGE`, as the example below demonstrates. You also need `destination.parameters.adamId`, which should match the `promotedObjectId` you set when creating the campaign.
 
@@ -271,7 +271,7 @@ POST /v1/ads
 
 To use a custom product page instead of the default, first retrieve available pages with [`Query Product Pages`](./query-product-pages.md), then set `creativeType: CUSTOM_PRODUCT_PAGE` and pass the chosen `productPageId` alongside `adamId` in the creative’s `destination.parameters`. For more information on fetching page IDs and locale details, see [Product Pages Endpoints](./product-pages-endpoints.md). For the full creative workflow, see [Creatives Endpoints](./creatives-endpoints.md).
 
-#### Pull Campaign Performance Reports
+## Pull Campaign Performance Reports
 
 After your campaign is live, you can retrieve performance data with [`Campaigns Report`](./get-app-campaign-reports.md). All report calls follow the same `POST /query` structure with a required `timeRange` as shown below:
 
@@ -293,7 +293,7 @@ POST /v1/reports/apps/campaigns/query
 
 Search term reports show the actual queries that triggered your ads, so you can use them to discover new keyword opportunities and build out your [Managing Keywords and Negative Keywords](./keywords-and-negative-keywords.md) list. To understand which keywords and creatives are driving results, drill deeper with [`Ad Groups Report`](./get-app-ad-group-reports.md), [`Keywords Report`](./get-app-keyword-reports.md), and [`Search Terms Report`](./get-app-search-term-reports.md).
 
-#### Optimize Your Campaigns
+## Optimize Your Campaigns
 
 With a campaign running and data flowing, you’re ready to optimize in the following ways:
 

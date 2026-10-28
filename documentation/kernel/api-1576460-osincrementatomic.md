@@ -15,11 +15,11 @@
 SInt32 OSIncrementAtomic(volatile SInt32 *address);
 ```
 
-#### Return Value
+## Return Value
 
 The value before the increment.
 
-#### Discussion
+## Discussion
 
 The OSIncrementAtomic function increments the value at the specified address by one and returns the original value.
 

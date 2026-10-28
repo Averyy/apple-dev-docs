@@ -23,7 +23,7 @@ func addChildContext(_ child: CLSContext)
 - (void) addChildContext:(CLSContext *) child;
 ```
 
-#### Discussion
+## Discussion
 
 You don’t need to call this method directly. Instead, use the [`CLSDataStoreDelegate`](../clsdatastoredelegate.md) protocol to build contexts.
 

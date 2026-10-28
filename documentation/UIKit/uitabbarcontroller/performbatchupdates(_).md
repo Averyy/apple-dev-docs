@@ -23,7 +23,7 @@ func performBatchUpdates(_ updates: () -> Void)
 - (void) performBatchUpdates:(void (^)()) updates;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you need to make several changes to tab properties simultaneously. Changes made inside the `updates` block are coalesced into a single animated layout pass, preventing intermediate states from being visible to the user.
 

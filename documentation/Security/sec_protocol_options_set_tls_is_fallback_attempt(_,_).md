@@ -23,7 +23,7 @@ func sec_protocol_options_set_tls_is_fallback_attempt(_ options: sec_protocol_op
 void sec_protocol_options_set_tls_is_fallback_attempt(sec_protocol_options_t options, bool is_fallback_attempt);
 ```
 
-#### Discussion
+## Discussion
 
 Signal if this is a TLS fallback attempt.
 

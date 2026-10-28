@@ -16,11 +16,11 @@ Returns the transform which can be used for monocular frustum culling. A matrix 
 simd_float4x4 cp_frame_monocular_frustum_matrix_for_drawable_target(cp_frame_t frame, cp_drawable_target drawable_target, cp_axis_direction_convention normalized_device_coordinates_convension, size_t view_index, simd_float4 increase_tangents, simd_float2 depth_range);
 ```
 
-#### Return Value
+## Return Value
 
 A perspective projection matrix that transforms coordinates from view coordinate space to clip space.
 
-#### Discussion
+## Discussion
 
 The convention is defined in normalized device coordinates, which impact the rendering direction of rendering but have no impact on the convention used for model/view space. To convert from view space to the axis direction convention used by the projection matrix, a rotation/mirror matrix can be applied pre-projection matrix.
 

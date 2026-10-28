@@ -19,7 +19,7 @@ var widthAdjustLimit: CGFloat { get }
 @property (readonly) CGFloat widthAdjustLimit;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a floating point number in the range `0.0` to `1.0`. This fraction is used to calculate the right edge limit for a [`adjustPageWidthNew(_:left:right:limit:)`](./adjustpagewidthnew%28_,left,right,limit%29.md) message.
 

@@ -14,7 +14,7 @@
 Boolean (*SetSize)(IOFireWireLibDCLCommandPoolRef self, IOByteCount inSize);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

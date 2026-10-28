@@ -19,7 +19,7 @@ optional func skipToPreviousItem(for playerViewController: AVPlayerViewControlle
 - (void) skipToPreviousItemForPlayerViewController:(AVPlayerViewController *) playerViewController;
 ```
 
-#### Discussion
+## Discussion
 
 The framework calls this method when you set the player view controller’s skipping behavior to [`AVPlayerViewControllerSkippingBehavior.skipItem`](../avplayerviewcontrollerskippingbehavior/skipitem.md) and a user performs a backward skip gesture (by pressing the left side of the Siri Remote’s Touch surface). Implement this method to update the player view controller’s [`player`](../avplayerviewcontroller/player.md) to play the previous player item.
 

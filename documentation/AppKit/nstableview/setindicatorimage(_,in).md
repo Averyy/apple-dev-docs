@@ -19,7 +19,7 @@ func setIndicatorImage(_ image: NSImage?, in tableColumn: NSTableColumn)
 - (void) setIndicatorImage:(NSImage *) image inTableColumn:(NSTableColumn *) tableColumn;
 ```
 
-#### Discussion
+## Discussion
 
 The default sorting order indicators are available as named `NSImage` objects. These images are accessed using `[NSImage imageNamed:]` passing either `@"NSAscendingSortIndicator"` (the “^” icon), and `@"NSDescendingSortIndicator"` (the “v” icon).
 

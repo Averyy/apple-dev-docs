@@ -5,7 +5,7 @@
 
 Improve the appearance of the text and components in your article by using Apple News Format styles.
 
-#### Overview
+## Overview
 
 In Apple News Format, you can use your own custom styles throughout an article to get precisely the look you want for your content and give your users a better experience.
 
@@ -19,7 +19,7 @@ You can create custom styles that a single component uses (for example, a stylis
 | Component (such as `photo` or `body`) | [`ComponentStyle`](../AppleNewsFormat/componentstyle.md) | Background color, background fill, background image, background video, opacity, borders, and table styles. |
 | Document (the whole article) | [`ArticleDocument`](../AppleNewsFormat/articledocument.md) | Background color. |
 
-##### Define Custom Styles
+### Define Custom Styles
 
 In Apple News Format, you can create custom styles and custom text styles for a specific component or range of text. Or, if you want all components or text in your article to be able to use them, you can include them in one of the following objects:
 
@@ -31,15 +31,15 @@ Creating custom styles in one of these objects makes it easier to ensure a consi
 
 However, if you plan to have pull quotes throughout your article — all with a top and bottom border — then you can define a style named `PullQuoteBorder` in the [`ArticleDocument.componentStyles`](../AppleNewsFormat/articledocument/componentstyles-data.dictionary.md) object, so that it’s available to all other components in your document. When you want to use that same border style, you simply use the style name you created (`PullQuoteBorder`) as the value of a component’s `style` property instead of redefining the style every time.
 
-###### Define a Custom Style for a Component
+#### Define a Custom Style for a Component
 
 Include a [`ComponentStyle`](../AppleNewsFormat/componentstyle.md) object as the value of the individual component’s style property. To define a custom style that’s available to *any* component, include a property, with a name that you define, in the [`ArticleDocument.componentStyles`](../AppleNewsFormat/articledocument/componentstyles-data.dictionary.md) object. Include a [`ComponentStyle`](../AppleNewsFormat/componentstyle.md) object as the value of that property, and use that property’s name string as the value of the individual component’s style property.
 
-###### Define a Custom Text Style for the Content of a Text Component
+#### Define a Custom Text Style for the Content of a Text Component
 
 Include a [`ComponentTextStyle`](../AppleNewsFormat/componenttextstyle.md) object as the value of the individual component’s `textStyle` property. To define a custom text style that’s available to *any* text components, include a property, with a name that you define, in the [`ArticleDocument.componentTextStyles`](../AppleNewsFormat/articledocument/componenttextstyles-data.dictionary.md) object. Include a [`ComponentTextStyle`](../AppleNewsFormat/componenttextstyle.md) object as the value of that property, and use the property’s name string as the value of the individual component’s `textStyle` property.
 
-###### Define a Custom Text Style for a Range of Text in a Component
+#### Define a Custom Text Style for a Range of Text in a Component
 
 Include a property, with a name that you define, in the [`ArticleDocument.textStyles`](../AppleNewsFormat/articledocument/textstyles-data.dictionary.md) object, and include a [`TextStyle`](../AppleNewsFormat/textstyle.md) object as the value of that property. Use either HTML or Markdown to refer to the TextStyles objects, or use an [`InlineTextStyle`](../AppleNewsFormat/inlinetextstyle.md) object.
 

@@ -19,11 +19,11 @@ class func userFont(ofSize fontSize: CGFloat) -> NSFont?
 + (NSFont *) userFontOfSize:(CGFloat) fontSize;
 ```
 
-#### Return Value
+## Return Value
 
 A font object of the specified size.
 
-#### Discussion
+## Discussion
 
 If `fontSize` is 0 or negative, returns the user font at the default size.
 

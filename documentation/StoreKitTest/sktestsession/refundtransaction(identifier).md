@@ -25,7 +25,7 @@ func refundTransaction(identifier: Int) throws
 - (BOOL) refundTransactionWithIdentifier:(NSUInteger) identifier error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 In the testing environment, the system always approves refund requests, and processes them immediately. You can choose the reason for the refund by using [`beginRefundRequest(in:)`](../../StoreKit/transaction/beginrefundrequest%28in%29-9k0pj.md) in your app and selecting a reason. (Your app may also use [`beginRefundRequest(for:in:)`](../../StoreKit/transaction/beginrefundrequest%28for,in%29-65tph.md), [`beginRefundRequest(in:)`](../../StoreKit/transaction/beginrefundrequest%28in%29-63bvd.md), or [`beginRefundRequest(in:)`](../../StoreKit/transaction/beginrefundrequest%28in%29-63bvd.md).  If your app uses SwiftUI, it may use [`refundRequestSheet(for:isPresented:onDismiss:)`](../../SwiftUI/view/refundrequestsheet%28for,ispresented,ondismiss%29.md).) Otherwise, the refund reason defaults to [`other`](../../StoreKit/transaction/revocationreason-swift.struct/other.md).
 

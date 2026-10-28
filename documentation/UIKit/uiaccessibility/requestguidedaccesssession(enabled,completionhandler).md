@@ -24,7 +24,7 @@ static func requestGuidedAccessSession(enabled enable: Bool, completionHandler: 
 extern void UIAccessibilityRequestGuidedAccessSession(BOOL enable, void (^)(_Bool)completionHandler);
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to lock your app into Single App mode and to release it from that mode later. For example, a test-taking app might enter this mode at the beginning of a test and exit it when the user completes the test. Entering Single App mode is supported only for devices that are supervised using Mobile Device Management (MDM), and the app itself must be enabled for this mode by MDM. You must balance each call to enter Single App mode with a call to exit that mode.
 

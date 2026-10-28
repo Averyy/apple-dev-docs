@@ -5,7 +5,7 @@
 
 Configure a listener, establish a client session, and exchange messages between processes.
 
-#### Overview
+## Overview
 
 XPC services have two sides: a listener or server that receives incoming connections and performs tasks, and a client that initiates connections and makes requests. The service in this example performs a task of adding two numbers together. The sections below show:
 
@@ -13,7 +13,7 @@ XPC services have two sides: a listener or server that receives incoming connect
 - How the client connects to the listener
 - How the client sends a message to the listener and receives a response
 
-##### Add an XPC Service target to your project
+### Add an XPC Service target to your project
 
 The XPC Service template provides a starting point for you to build the listener side of an XPC connection. To add a target, follow these steps:
 
@@ -29,7 +29,7 @@ The XPC Service template provides a starting point for you to build the listener
 
 ![A screenshot showing Xcode’s new target sheet with the macOS XPC Service extension selected.](https://developer.apple.com/tutorials/images/com.apple.xpc/media-4154694@2x.png)
 
-##### Accept incoming connection requests
+### Accept incoming connection requests
 
 When `launchd` launches an XPC service, it starts a process that runs the binary of the service. To perform tasks, the service creates an [`XPCListener`](./xpclistener.md) with a service name and a closure to handle incoming session requests. For services in an app bundle or framework, the service name is the XPC service’s bundle identifier. After creating an `XPCListener`, the service must call [`dispatchMain()`](../Dispatch/dispatchmain%28%29.md) to begin processing requests.
 
@@ -55,7 +55,7 @@ request.reject(reason: "Service unavailable.")
 
 ```
 
-##### Perform a task and respond to messages
+### Perform a task and respond to messages
 
 After creating the listener and accepting an incoming request, the service is ready to perform its defined task. In the example below, clients submit requests by passing an instance of a custom [`Codable`](../Swift/codable.md) type named `CalculationRequest`. The request contains two numbers that the service adds together. The service’s response to the request is an instance of `CalculationResponse` that contains the result of the addition.
 
@@ -83,7 +83,7 @@ func performCalculation(with message: XPCReceivedMessage) -> Encodable? {
 
 With the connection and request-handling code in place, `launchd` can now hand off client requests to your XPC service.
 
-##### Connect from the client to the server and make requests
+### Connect from the client to the server and make requests
 
 When a client wants to use an XPC service, it creates a session with the service and then sends it a message. The following code shows how to set up an XPC session. In response to this request, `launchd` locates the service, launching it if necessary, and establishes a connection between the client process and the listener’s process.
 

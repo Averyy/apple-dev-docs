@@ -25,11 +25,11 @@ convenience init(url: URL, options: [SCNSceneSource.LoadingOption : Any]? = nil)
 + (instancetype) sceneWithURL:(NSURL *) url options:(NSDictionary<NSString *,id> *) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new scene object, or `nil` if no scene could be loaded.
 
-#### Discussion
+## Discussion
 
 This method provides a convenient way to load a complete scene from a file at an arbitrary URL. For more detailed options or to load only part of a file’s scene graph, use the [`SCNSceneSource`](../scnscenesource.md) class.
 

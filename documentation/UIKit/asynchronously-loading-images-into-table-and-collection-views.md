@@ -12,11 +12,11 @@ Store and fetch images asynchronously to make your app more responsive.
 - Mac Catalyst 17.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 Caching images can help you make the table and collection views in your app instantiate fast and respond quickly to scrolling. The app in the sample project demonstrates fetching images with URLs. The images are not part of the assets catalog and instead are a part of the app bundle to simulate loading each asynchronously by URL. This ensures the user interface remains responsive. This project also supports Mac Catalyst.
 
-##### Handle image loading and caching
+### Handle image loading and caching
 
 In the sample, the class `ImageCache.swift` demonstrates a basic mechanism for image loading from a URL with [`NSURLSession`](../Foundation/urlsession.md) and caching the downloaded images using [`NSCache`](../Foundation/nscache.md). Views such as `UITableView` and `UICollectionView` are subclasses of `UIScrollView`.
 
@@ -62,7 +62,7 @@ final func load(url: NSURL, item: Item, completion: @escaping (Item, UIImage?) -
 }
 ```
 
-##### Update your datasource responsibly
+### Update your datasource responsibly
 
 An app that loads all of its data on launch risks running out of memory or terminating for taking too long to complete. Unless the app requires all data to be loaded before operation, load your images as the UI requests them.
 

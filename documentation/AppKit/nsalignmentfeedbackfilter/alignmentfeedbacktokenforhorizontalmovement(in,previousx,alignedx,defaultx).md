@@ -19,11 +19,11 @@ func alignmentFeedbackTokenForHorizontalMovement(in view: NSView?, previousX: CG
 - (id<NSAlignmentFeedbackToken>) alignmentFeedbackTokenForHorizontalMovementInView:(NSView *) view previousX:(CGFloat) previousX alignedX:(CGFloat) alignedX defaultX:(CGFloat) defaultX;
 ```
 
-#### Return Value
+## Return Value
 
 If the system determines that the alignment should not occur, a null value is returned. Otherwise, a feedback token of type `NSAlignmentFeedbackToken` is returned.
 
-#### Discussion
+## Discussion
 
 This method requests a feedback token for the alignment of an object requiring horizontal movement only.
 

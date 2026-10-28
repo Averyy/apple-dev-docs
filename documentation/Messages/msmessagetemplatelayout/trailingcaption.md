@@ -21,7 +21,7 @@ var trailingCaption: String? { get set }
 @property (nonatomic, copy, nullable) NSString * trailingCaption;
 ```
 
-#### Discussion
+## Discussion
 
 The trailing caption is drawn using black text and is positioned at the bottom-right corner of the message bubble, just below the image or media file. This text is right aligned and positioned on the same line as the caption. The trailing caption can wrap to three lines before being truncated. This property defaults to `nil`.
 

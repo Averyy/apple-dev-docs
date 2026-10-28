@@ -24,7 +24,7 @@ static let inhalerUsage: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierInhalerUsage;
 ```
 
-#### Discussion
+## Discussion
 
 These samples use count units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

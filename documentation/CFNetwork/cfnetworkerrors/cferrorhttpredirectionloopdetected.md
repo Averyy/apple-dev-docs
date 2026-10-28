@@ -24,7 +24,7 @@ case cfErrorHTTPRedirectionLoopDetected
 kCFErrorHTTPRedirectionLoopDetected
 ```
 
-#### Discussion
+## Discussion
 
 This usually indicates a redirect loop.
 

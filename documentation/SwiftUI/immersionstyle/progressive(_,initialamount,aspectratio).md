@@ -28,7 +28,7 @@ static func progressive(_ immersionRange: PartialRangeFrom<Double>, initialAmoun
 static func progressive(_ immersionRange: PartialRangeThrough<Double>, initialAmount: Double? = nil, aspectRatio: ProgressiveImmersionAspectRatio?) -> ProgressiveImmersionStyle
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`immersionStyle(selection:in:)`](../scene/immersionstyle%28selection,in%29.md) scene modifier to specify this style for an [`ImmersiveSpace`](../immersivespace.md).
 

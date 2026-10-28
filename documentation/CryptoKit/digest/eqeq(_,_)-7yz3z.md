@@ -21,7 +21,7 @@ Determines whether a digest is equivalent to a collection of contiguous bytes.
 static func == <D>(lhs: Self, rhs: D) -> Bool where D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that’s `true` if the digest is equivalent to the collection of binary data.
 

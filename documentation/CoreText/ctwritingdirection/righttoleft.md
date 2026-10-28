@@ -23,7 +23,7 @@ case rightToLeft
 kCTWritingDirectionRightToLeft
 ```
 
-#### Discussion
+## Discussion
 
 The writing direction is right to left.
 

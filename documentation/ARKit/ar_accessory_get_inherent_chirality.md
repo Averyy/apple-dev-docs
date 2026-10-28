@@ -15,7 +15,7 @@ Get inherent chirality for the accessory (what hand it is designed to be held in
 extern ar_accessory_chirality_t ar_accessory_get_inherent_chirality(ar_accessory_t accessory);
 ```
 
-#### Return Value
+## Return Value
 
 The chirality.
 

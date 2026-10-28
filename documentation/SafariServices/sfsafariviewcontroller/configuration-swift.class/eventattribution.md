@@ -23,7 +23,7 @@ var eventAttribution: UIEventAttribution? { get set }
 @property (nonatomic, copy, nullable) UIEventAttribution * eventAttribution;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about preparing event attribution data, see [`UIEventAttribution`](../../../UIKit/uieventattribution.md).
 

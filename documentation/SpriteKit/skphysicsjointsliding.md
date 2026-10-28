@@ -25,7 +25,7 @@ class SKPhysicsJointSliding
 @interface SKPhysicsJointSliding : SKPhysicsJoint
 ```
 
-#### Overview
+## Overview
 
 An [`SKPhysicsJointSliding`](./skphysicsjointsliding.md) object allows the anchor points of the two physics bodies to slide along a chosen axis. The joint can be configured to limit the distance that the two objects are allowed to slide along the axis.
 

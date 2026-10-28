@@ -17,11 +17,11 @@ Obtains a value indicating whether RSA blinding is enabled.
 OSStatus SSLGetRsaBlinding(SSLContextRef context, Boolean *blinding);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function is used only on the server side of a connection.
 

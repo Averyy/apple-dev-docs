@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_AUTH_GETATTRLIST: es_event_type_t { get }
 ES_EVENT_TYPE_AUTH_GETATTRLIST
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`getattrlist`](./es_events_t/getattrlist.md), which has the type [`es_event_getattrlist_t`](./es_event_getattrlist_t.md).
 

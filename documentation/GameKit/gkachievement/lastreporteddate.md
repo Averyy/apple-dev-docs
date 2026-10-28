@@ -33,7 +33,7 @@ var lastReportedDate: Date { get }
 @property (atomic, copy, readonly) NSDate * lastReportedDate;
 ```
 
-#### Discussion
+## Discussion
 
 GameKit initializes this property to the current date.
 

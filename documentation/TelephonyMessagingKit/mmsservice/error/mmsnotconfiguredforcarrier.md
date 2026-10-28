@@ -15,7 +15,7 @@ The carrier isn’t currently configured to handle MMS.
 case mmsNotConfiguredForCarrier
 ```
 
-#### Discussion
+## Discussion
 
 This error might mean the carrier isn’t currently configured to handle MMS, or doesn’t support MMS at all.
 

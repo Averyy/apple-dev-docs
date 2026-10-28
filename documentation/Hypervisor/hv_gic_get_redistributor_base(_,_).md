@@ -19,11 +19,11 @@ func hv_gic_get_redistributor_base(_ vcpu: hv_vcpu_t, _ redistributor_base_addre
 extern hv_return_t hv_gic_get_redistributor_base(hv_vcpu_t vcpu, hv_ipa_t *redistributor_base_address);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Call this method after you set the affinity of the given vCPU in its `MPIDR_EL1` register.
 

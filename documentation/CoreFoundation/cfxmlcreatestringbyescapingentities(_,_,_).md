@@ -19,11 +19,11 @@ func CFXMLCreateStringByEscapingEntities(_ allocator: CFAllocator!, _ string: CF
 extern CFStringRefCFXMLCreateStringByEscapingEntities(CFAllocatorRef allocator, CFStringRef string, CFDictionaryRef entitiesDictionary);
 ```
 
-#### Return Value
+## Return Value
 
 A CFString object derived from `string` with substrings identified in `entitiesDictionary` escaped to their corresponding entities. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The standard five predefined entities are automatically supported.
 

@@ -24,7 +24,7 @@ class NEOnDemandRule
 @interface NEOnDemandRule : NSObject
 ```
 
-#### Overview
+## Overview
 
 Each rule is defined by a single action and a set of optional matching conditions. The action defines how the system should trigger the VPN when the conditions are met, such as connecting automatically for all connections, connecting conditionally, or disconnecting. The optional conditions describe parameters of a network. Some common rules include disconnecting the VPN on a trusted, internal network, and triggering on all other networks. When rules are defined in an array, they are evaluated in order and the action of the first rule to match all conditions is chosen.
 

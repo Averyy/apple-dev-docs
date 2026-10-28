@@ -23,7 +23,7 @@ func releaseKnownFolders(_ knownFolders: NSFileProviderKnownFolders, localizedRe
 - (void) releaseKnownFolders:(NSFileProviderKnownFolders) knownFolders localizedReason:(NSString *) localizedReason completionHandler:(void (^)(NSError *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to immediately disable replication of the specified known folders.
 

@@ -27,7 +27,7 @@ var allowsFocus: Bool { get set }
 
 - [Building a desktop-class iPad app](../building-a-desktop-class-ipad-app.md)
 
-#### Discussion
+## Discussion
 
 If you implement [`collectionView(_:canFocusItemAt:)`](../uicollectionviewdelegate/collectionview%28_,canfocusitemat%29.md), its return value takes precedence over the value of this property.
 

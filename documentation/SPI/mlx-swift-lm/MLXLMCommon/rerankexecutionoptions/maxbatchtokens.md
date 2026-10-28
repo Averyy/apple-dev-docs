@@ -17,7 +17,7 @@ Maximum number of token slots in one model forward pass.
 var maxBatchTokens: Int
 ```
 
-#### Discussion
+## Discussion
 
 For pairwise models this bounds `batchSize * paddedSequenceLength`. For listwise models it bounds the complete query-and-document prompt.
 

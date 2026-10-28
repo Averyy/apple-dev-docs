@@ -23,7 +23,7 @@ var cfx_kd: gss_krb5_cfx_keydata_t
 gss_krb5_cfx_keydata_t cfx_kd;
 ```
 
-#### Discussion
+## Discussion
 
 Use this structure only if the `protocol` member is set to 1. In that case, the `rfc1964_kd` member contents are invalid and should be zero.
 

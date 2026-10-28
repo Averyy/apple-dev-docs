@@ -25,11 +25,11 @@ func CTFontManagerCreateFontDescriptorsFromData(_ data: CFData) -> CFArray
 extern CFArrayRefCTFontManagerCreateFontDescriptorsFromData(CFDataRef data);
 ```
 
-#### Return Value
+## Return Value
 
 An array of font descriptors.
 
-#### Discussion
+## Discussion
 
 This is the preferred function when the data contains a font collection (TTC or OTC). This function returns an empty array in the event of invalid or unsupported font data.
 

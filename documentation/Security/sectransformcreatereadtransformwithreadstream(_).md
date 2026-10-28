@@ -21,7 +21,7 @@ func SecTransformCreateReadTransformWithReadStream(_ inputStream: CFReadStream) 
 SecTransformRefSecTransformCreateReadTransformWithReadStream(CFReadStreamRef inputStream);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a new transform. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free this object’s memory when you are done with it.
 

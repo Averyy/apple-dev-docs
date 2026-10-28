@@ -19,7 +19,7 @@ typealias PMPrintSession = OpaquePointer
 typedef struct OpaquePMPrintSession *PMPrintSession;
 ```
 
-#### Discussion
+## Discussion
 
 A printing session object contains information that’s needed by the page format and print settings objects, such as default page format and print settings values. For this reason, some printing functions can be called only after you have created a printing session object. For example, setting defaults for or validating page format and print settings objects can only be done after you have created a printing session object. Your application creates a printing session object using the function [`PMCreateSession(_:)`](./api-1463247-pmcreatesession.md).
 

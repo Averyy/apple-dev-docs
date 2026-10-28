@@ -17,7 +17,7 @@ A container for per-layer [`BaseConfiguration.Quantization`](./quantization-swif
 struct PerLayerQuantization
 ```
 
-#### Overview
+## Overview
 
 This allows for “Mixed-Precision” or “Heterogeneous” quantization, where sensitive layers (like the embedding head) can be kept at higher precision while the rest of the model is compressed.
 

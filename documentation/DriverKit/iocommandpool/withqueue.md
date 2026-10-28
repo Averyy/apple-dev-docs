@@ -16,7 +16,7 @@
 static IOCommandPoolPtr withQueue(IODispatchQueue *queue);
 ```
 
-#### Discussion
+## Discussion
 
 Primary factory method for the IOCommandPool class
 

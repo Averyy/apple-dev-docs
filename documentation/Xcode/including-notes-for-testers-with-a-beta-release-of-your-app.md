@@ -5,7 +5,7 @@
 
 Add text files to your Xcode project to provide notes to beta testers about what to test.
 
-#### Overview
+## Overview
 
 You can include notes when you distribute a beta version of your app from Xcode Cloud through TestFlight to give testers details about the changes the update includes, and to provide guidance for the areas of your app to test. Use these notes to focus testing on the areas of your app that need attention. The notes appear in the “What to test” field in the TestFlight app. The information you provide can be language- and locale-specific.
 
@@ -13,7 +13,7 @@ For more information about distributing a beta version of your app, see [Creatin
 
 > **Related sessions from WWDC23**: Session 10224: [Simplify distribution in Xcode and Xcode Cloud](https://developer.apple.com/videos/play/wwdc2023/10224)
 
-##### Create a TestFlight folder
+### Create a TestFlight folder
 
 Xcode Cloud uses text files that you add to your Xcode project to create the notes for testers. The text files reside in a folder named TestFlight located in the same folder as your Xcode project or workspace.
 
@@ -23,7 +23,7 @@ To create the TestFlight folder:
 - In the Project navigator, Control-click your project and choose New Group to create the group and its corresponding folder.
 - Name the new group TestFlight.
 
-##### Add text files to the folder to include notes
+### Add text files to the folder to include notes
 
 Add text files to the TestFlight folder to provide notes to your testers. Provide notes in multiple languages by creating a file per language. For a list of the locales TestFlight supports, see [`BetaBuildLocalizationCreateRequest.Data.Attributes`](../AppStoreConnectAPI/betabuildlocalizationcreaterequest/data-data.dictionary/attributes-data.dictionary.md). For general information on language and region codes, see [Choosing localization regions and scripts](./choosing-localization-regions-and-scripts.md).
 
@@ -35,7 +35,7 @@ To add the text files to your project:
 
 The next time Xcode Cloud builds and uploads your app to TestFlight, it automatically finds this file and includes the text in your app’s “What to test” field in TestFlight.
 
-##### Provide useful and appropriate content
+### Provide useful and appropriate content
 
 Include information that is useful to testers and relevant to the current release, such as the following:
 
@@ -45,7 +45,7 @@ Include information that is useful to testers and relevant to the current releas
 
 > **Note**: When Xcode Cloud deploys your app, the information you provide is available to all testers in all groups who have access to the build.
 
-##### Write a script to generate content dynamically
+### Write a script to generate content dynamically
 
 You can use a custom build script to generate the notes during an Xcode Cloud build. The following example provides the last three commit messages from the GIT log as the tester notes:
 

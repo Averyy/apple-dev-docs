@@ -25,11 +25,11 @@ func CMBufferQueueInstallTrigger(_ queue: CMBufferQueue, callback: CMBufferQueue
 extern OSStatus CMBufferQueueInstallTrigger(CMBufferQueueRef queue, CMBufferQueueTriggerCallback callback, void *refcon, CMBufferQueueTriggerCondition condition, CMTime time, CMBufferQueueTriggerToken*triggerTokenOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Result Codes`
 
-#### Discussion
+## Discussion
 
 The returned trigger token can be passed to `CMBufferQueueTestTrigger` and `CMBufferQueueRemoveTrigger`. The `triggerTokenOut` parameter can be `NULL` (client doesn’t need to test or remove trigger), and the `triggerCallback` parameter can be `NULL` (client doesn’t need callbacks, but rather will explicitly test the trigger).  One of these two parameters must be non-NULL, however, since an untestable trigger that does not perform a callback is meaningless.  If the trigger condition is already true,  `CMBufferQueueInstallTrigger` will call the triggerCallback and will first write the trigger token to *triggerTokenOut.
 

@@ -21,11 +21,11 @@ Increments the retain count of a Core Graphics pattern.
 extern CGPatternRefCGPatternRetain(CGPatternRef pattern);
 ```
 
-#### Return Value
+## Return Value
 
 The same pattern youpassed in as the `pattern` parameter.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md),except that it does not cause an error if the `pattern` parameteris `NULL`.
 

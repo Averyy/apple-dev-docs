@@ -17,7 +17,7 @@ Generate values from a truncated normal distribution between `low` and `high`.
 static func truncatedNormal(low: some ScalarOrArray, high: some ScalarOrArray, _ shape: (some Collection<Int>)? = [Int]?.none, type: (some HasDType & BinaryFloatingPoint).Type = Float.self, key: (some RandomStateOrKey)? = MLXArray?.none, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The values are sampled from the truncated normal distribution on the domain `(lower, upper)`. The bounds `lower` and `upper` can be scalars or arrays and must be broadcastable to `shape`.
 

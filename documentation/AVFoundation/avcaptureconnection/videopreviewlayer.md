@@ -23,7 +23,7 @@ var videoPreviewLayer: AVCaptureVideoPreviewLayer? { get }
 @property (nonatomic, readonly, nullable) AVCaptureVideoPreviewLayer * videoPreviewLayer;
 ```
 
-#### Discussion
+## Discussion
 
 The connection sets the property in its [`init(inputPort:videoPreviewLayer:)`](./init%28inputport,videopreviewlayer%29.md) initializer.
 

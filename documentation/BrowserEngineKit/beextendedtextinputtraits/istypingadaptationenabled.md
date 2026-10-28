@@ -22,7 +22,7 @@ optional var isTypingAdaptationEnabled: Bool { get }
 @property (nonatomic, readonly, getter=isTypingAdaptationEnabled) BOOL typingAdaptationEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property to `false` prevents the system from learning of words or corrections by omitting their addition to the keyboard lexicon.
 

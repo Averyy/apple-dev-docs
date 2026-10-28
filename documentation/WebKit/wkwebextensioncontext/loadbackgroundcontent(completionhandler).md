@@ -27,7 +27,7 @@ func loadBackgroundContent() async throws
 - (void) loadBackgroundContentWithCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method forces the loading of the background content for the extension that will otherwise be loaded on-demand during specific events.
 

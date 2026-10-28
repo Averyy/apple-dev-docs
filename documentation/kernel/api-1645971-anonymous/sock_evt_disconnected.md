@@ -13,7 +13,7 @@
 sock_evt_disconnected = 4
 ```
 
-#### Discussion
+## Discussion
 
 Indicates this socket has moved to the disconnected state.
 

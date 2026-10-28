@@ -19,7 +19,7 @@ func setConnectionCodeSigningRequirement(_ requirement: String)
 - (void) setConnectionCodeSigningRequirement:(NSString *) requirement;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to enforce a code-signing requirement on incoming XPC connections.
 

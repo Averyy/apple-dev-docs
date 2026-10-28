@@ -15,7 +15,7 @@ Creates an object containing the width and height of a projected coordinate span
 constructor(width?: number, height?: number);
 ```
 
-#### Discussion
+## Discussion
 
 The following example demonstrates how to create a `mapkit.MapSize` instance from map units:
 

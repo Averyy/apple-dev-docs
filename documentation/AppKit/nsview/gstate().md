@@ -21,7 +21,7 @@ func gState() -> Int
 - (NSInteger) gState;
 ```
 
-#### Discussion
+## Discussion
 
 A view object’s graphics state object is recreated from scratch whenever the view is focused, unless the [`allocateGState()`](./allocategstate%28%29.md) method has been invoked. So if the view hasn’t been focused or hasn’t received the [`allocateGState()`](./allocategstate%28%29.md) message, this method returns 0.
 

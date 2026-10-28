@@ -17,7 +17,7 @@ Types of norms available.
 enum NormKind
 ```
 
-##### See Also
+### See Also
 
 - [`norm(_:ord:axes:keepDims:stream:)`](../norm%28_,ord,axes,keepdims,stream%29.md)
 - [`MLXLinalg`](../mlxlinalg.md)

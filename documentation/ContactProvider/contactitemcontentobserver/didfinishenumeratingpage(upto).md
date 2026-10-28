@@ -17,7 +17,7 @@ Marks a page of items as completed.
 func didFinishEnumeratingPage(upTo nextPage: ContactItemPage)
 ```
 
-#### Discussion
+## Discussion
 
 Call this method only if there are more items to enumerate after this page. An interrupted content enumeration can resume in the future, continuing from this page. Calling this method saves the current page of items to the system Contacts database.
 

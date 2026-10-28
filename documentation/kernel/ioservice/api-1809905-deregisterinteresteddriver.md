@@ -12,11 +12,11 @@ IOReturn deRegisterInterestedDriver(
  IOService *theDriver );
 ```
 
-#### Return Value
+## Return Value
 
 A return code that can be ignored by the caller.
 
-#### Overview
+## Overview
 
 The retain from `registerInterestedDriver` is released. This method is synchronous against any `powerStateWillChangeTo` or `powerStateDidChangeTo` call targeting the interested driver, so when this method returns it is guaranteed those interest handlers will not be entered. Most drivers do not need to override `deRegisterInterestedDriver`.
 

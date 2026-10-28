@@ -24,7 +24,7 @@ let HKMetadataKeyFitnessMachineDuration: String
 extern NSString * const HKMetadataKeyFitnessMachineDuration;
 ```
 
-#### Discussion
+## Discussion
 
 Set this key on a workout sample representing exercise on a GymKit fitness machine. Set its value to an [`HKQuantity`](./hkquantity.md) object with a time unit.
 

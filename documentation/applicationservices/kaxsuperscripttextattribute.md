@@ -19,7 +19,7 @@ var kAXSuperscriptTextAttribute: Unmanaged<CFString>
 CFStringRef kAXSuperscriptTextAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 
 ---

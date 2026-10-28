@@ -24,7 +24,7 @@ func retractFact(_ fact: any NSObjectProtocol)
 - (void) retractFact:(id<NSObject>) fact;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method is equivalent to calling the [`retractFact(_:grade:)`](./retractfact%28_,grade%29.md) method with a `grade` value of 1.0, thus reducing the fact’s membership grade to zero and removing it from the [`facts`](./facts.md) array.
 

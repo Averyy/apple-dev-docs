@@ -21,7 +21,7 @@ type TileOverlayImageCallback = (
 ) => ImageSource | Promise<ImageSource> | null;
 ```
 
-#### Discussion
+## Discussion
 
 When MapKit JS needs to display a tile, it invokes the callback with the parameters `x`, `y`, `z`, `scale`, and `data`. Return one of the following:
 

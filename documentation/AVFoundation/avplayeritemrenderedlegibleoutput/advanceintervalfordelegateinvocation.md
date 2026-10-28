@@ -22,7 +22,7 @@ var advanceIntervalForDelegateInvocation: TimeInterval { get set }
 @property (nonatomic, readwrite) NSTimeInterval advanceIntervalForDelegateInvocation;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property specify the number of seconds early to invoke the delegate object. When possible, an AVPlayerItemLegibleOutput uses this value to call its delegate earlier than it would otherwise.
 

@@ -23,7 +23,7 @@ Creates a new string that contains the specified number of bytes from the given 
 init?(bytesNoCopy bytes: UnsafeMutableRawPointer, length: Int, encoding: String.Encoding, freeWhenDone flag: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: This initializer is not memory-safe!
 

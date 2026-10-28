@@ -18,7 +18,7 @@ A setting that contains a single line of editable text.
 final class HomeAccessoryTextFieldSetting
 ```
 
-#### Overview
+## Overview
 
 The Home app presents this setting as a text field with a Clear button. Your extension receives the new value after a person finishes editing, not after every keystroke.
 

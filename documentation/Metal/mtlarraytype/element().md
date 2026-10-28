@@ -24,11 +24,11 @@ func element() -> MTLArrayType?
 - (MTLArrayType *) elementArrayType;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an object that describes an array. If the array elements aren’t arrays, this method returns `nil`.
 
-#### Discussion
+## Discussion
 
 Use this method if [`elementType`](./elementtype.md) is [`MTLDataType.array`](../mtldatatype/array.md).
 

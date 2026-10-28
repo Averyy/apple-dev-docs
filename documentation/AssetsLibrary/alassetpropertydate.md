@@ -12,7 +12,7 @@ The key to retrieve the creation date of the asset.
 extern NSString * const ALAssetPropertyDate;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an [`NSDate`](../Foundation/nsdate.md) object.
 

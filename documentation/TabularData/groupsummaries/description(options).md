@@ -22,7 +22,7 @@ Generates a text representation of the group summaries.
 func description(options: FormattingOptions) -> String
 ```
 
-#### Discussion
+## Discussion
 
 See `DataFrame/description(options:)` for more information.
 

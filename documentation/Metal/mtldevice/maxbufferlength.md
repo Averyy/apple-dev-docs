@@ -25,7 +25,7 @@ var maxBufferLength: Int { get }
 @property (readonly) NSUInteger maxBufferLength;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s value is at least 256 MB (268,435,456 bytes).
 

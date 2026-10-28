@@ -23,7 +23,7 @@ var headingBody: (any CLBodyIdentifiable)? { get set }
 @property (nonatomic, retain, nullable) id<CLBodyIdentifiable> headingBody;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to associate heading calculations with a specific body or view, such as a [UIKit](../../UIKit/UIKit.md) [`UIView`](../../UIKit/uiview.md) that conforms to [`CLBodyIdentifiable`](../clbodyidentifiable.md).
 

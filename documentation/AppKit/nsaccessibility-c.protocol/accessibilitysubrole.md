@@ -15,7 +15,7 @@ The specialized interface element type that the accessibility element represents
 @property (copy, nullable) NSAccessibilitySubrole accessibilitySubrole;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible subroles, see `Subroles`.
 

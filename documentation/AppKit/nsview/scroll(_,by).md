@@ -21,7 +21,7 @@ func scroll(_ rect: NSRect, by delta: NSSize)
 - (void) scrollRect:(NSRect) rect by:(NSSize) delta;
 ```
 
-#### Discussion
+## Discussion
 
 This method is useful during scrolling or translation of the coordinate system to efficiently move as much of the view’s rendered image as possible without requiring it to be redrawn, following these steps:
 

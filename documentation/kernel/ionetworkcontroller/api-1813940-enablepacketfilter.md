@@ -15,11 +15,11 @@ virtual IOReturn enablePacketFilter(
  IOOptionBits options = 0) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success, or an error otherwise.
 
-#### Overview
+## Overview
 
 A client will call this method to enable a supported filter from the filter group specified. If the client wishes to enable more than one filter, it must call this method multiple times to enable the desired set of filters. This method call is synchronized by the workloop's gate.
 

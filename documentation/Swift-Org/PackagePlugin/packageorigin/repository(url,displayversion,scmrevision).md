@@ -17,7 +17,7 @@ A package from a Git repository, with a URL and with a textual description of th
 case repository(url: String, displayVersion: String, scmRevision: String)
 ```
 
-#### Discussion
+## Discussion
 
 The revision is the Git commit hash and may be useful for plugins that generates source code that includes version information.
 

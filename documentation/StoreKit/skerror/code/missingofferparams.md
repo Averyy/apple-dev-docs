@@ -25,7 +25,7 @@ case missingOfferParams
 SKErrorMissingOfferParams
 ```
 
-#### Discussion
+## Discussion
 
 This error appears if all parameters of [`SKPaymentDiscount`](../../skpaymentdiscount.md) are not present.
 

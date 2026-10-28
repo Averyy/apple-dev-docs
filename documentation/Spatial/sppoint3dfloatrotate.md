@@ -19,11 +19,11 @@
 static SPPoint3DFloat SPPoint3DFloatRotate(SPPoint3DFloat point, SPRotation3DFloat rotation);
 ```
 
-#### Return Value
+## Return Value
 
 A point that’s rotated by the specified rotation.
 
-#### Discussion
+## Discussion
 
 Returns a point that’s rotated by the specified rotation around the origin.
 

@@ -17,7 +17,7 @@ A Boolean value that indicates whether the app can request or revoke authorizati
 - **Name**: `com.apple.developer.family-controls`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 You must add the Family Controls entitlement to your app before you call the [`AuthorizationCenter`](../../FamilyControls/authorizationcenter.md) class’s [`requestAuthorization(completionHandler:)`](../../FamilyControls/authorizationcenter/requestauthorization%28completionhandler%29.md) or [`revokeAuthorization(completionHandler:)`](../../FamilyControls/authorizationcenter/revokeauthorization%28completionhandler%29.md) methods.
 

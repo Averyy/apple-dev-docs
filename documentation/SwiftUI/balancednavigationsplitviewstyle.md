@@ -22,7 +22,7 @@ A navigation split style that reduces the size of the detail content to make roo
 @preconcurrency struct BalancedNavigationSplitViewStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`balanced`](./navigationsplitviewstyle/balanced.md) to construct this style.
 

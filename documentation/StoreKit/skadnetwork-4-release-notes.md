@@ -5,7 +5,7 @@
 
 A version of SKAdNetwork available in iOS 16.1 and later.
 
-#### Overview
+## Overview
 
 Use `“4.0”` as the version number when signing ads for this version.
 
@@ -17,7 +17,7 @@ You’re eligible to receive a version 4 postback if all participants meet the f
 
 Advertised apps built with iOS 16.1 SDK or later can register up to three conversions that result in postbacks for the winning ad impression. Apps built with earlier SDKs can register only one conversion, resulting in one winning postback.
 
-##### New features
+### New features
 
 - Multiple postbacks. SKAdNetwork now supports multiple conversions in three conversion windows. When you call the new methods [`updatePostbackConversionValue(_:coarseValue:completionHandler:)`](./skadnetwork/updatepostbackconversionvalue%28_,coarsevalue,completionhandler%29.md) and [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](./skadnetwork/updatepostbackconversionvalue%28_,coarsevalue,lockwindow,completionhandler%29.md), the app can update conversion values in three separate conversion windows. The app may send up to three postbacks for the winning ad attribution.
 

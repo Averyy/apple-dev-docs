@@ -6,7 +6,7 @@
 
 A table that defines the duration of each sample in the media.
 
-#### Overview
+## Overview
 
 Each table entry contains a count field and a duration field. The structure of the time-to-sample table is as follows.
 

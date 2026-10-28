@@ -19,11 +19,11 @@ func rulerView(_ ruler: NSRulerView, willMove marker: NSRulerMarker, toLocation 
 - (CGFloat) rulerView:(NSRulerView *) ruler willMoveMarker:(NSRulerMarker *) marker toLocation:(CGFloat) location;
 ```
 
-#### Return Value
+## Return Value
 
 The modified location to which the marker should be moved.
 
-#### Discussion
+## Discussion
 
 This method ensures that the proposed `location` of `aMarker` lies within the appropriate bounds for the receiver’s text container. Appropriate bounds are those of the text container minus its line fragment padding.
 

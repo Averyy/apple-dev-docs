@@ -24,7 +24,7 @@ func setLivePhotoVideoPlaybackEnabled(_ enabled: Bool)
 - (void) setLivePhotoVideoPlaybackEnabled:(BOOL) enabled;
 ```
 
-#### Discussion
+## Discussion
 
 Applies to Live Photos only.
 

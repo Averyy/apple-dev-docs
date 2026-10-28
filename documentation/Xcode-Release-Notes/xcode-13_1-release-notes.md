@@ -5,32 +5,32 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 ---
 
-#### Overview
+## Overview
 
 Xcode 13.1 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Monterey 12. The Xcode 13.1 release supports on-device debugging for iOS 9 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 13.1 requires a Mac running macOS 11.3 or later.
 
-##### Debugging
+### Debugging
 
-###### Known Issues
+#### Known Issues
 
 - Console, Xcode, `lldb`, and debugging tools can’t symbolicate crash logs that macOS transfers from connected devices running iOS 15, watchOS 8, or tvOS 15. (78124467, 83760462, 84048036, 84048399) (FB9669482)
 
   **Workaround**: Use Xcode’s Devices & Simulators window > View Device Logs to import log files from connected devices, and transform them into a human-readable form. You can also access crash logs directly on iOS devices using the Settings app under Privacy > Analytics > Analytics Data and use the share sheet to transfer them to a Mac without any loss of information. Open the resulting log files using Console, or by dragging and dropping them onto Xcode in the Dock.
 
-##### Interface Builder
+### Interface Builder
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed rendering issues that affected [`UITableView`](../UIKit/uitableview.md) for some iOS storyboards. (82731572, 83465487)
 - Fixed an issue where iPhone 13 mini wouldn’t rotate to landscape orientation. (83465491)
 
-##### Source Control
+### Source Control
 
-###### Known Issues
+#### Known Issues
 
 - Adding commits to a pull request in Xcode may not update the Changes navigator until you re-launch Xcode. (70398244)
 
@@ -45,9 +45,9 @@ Xcode 13.1 includes SDKs for iOS 15, iPadOS 15, tvOS 15, watchOS 8, and macOS Mo
   **Workaround**: Re-launch Xcode or wait for the status of these files to update.
 - In Flat view mode, the Commit sheet may sometimes present without selecting a file. (83417116)
 
-##### SwiftUI
+### SwiftUI
 
-###### Known Issues
+#### Known Issues
 
 - In Previews and in simulated iOS 15 devices, [`Button`](../SwiftUI/button.md) elements support the iPad cursor hover states by default, but in iOS 15.1 [`BorderedButtonStyle`](../SwiftUI/borderedbuttonstyle.md) no longer has a default hover effect. Use the [`HoverEffect`](../SwiftUI/hovereffect.md) modifier on the `Button` to add a default hover effect when running in iOS 15.1. (83516916)
 

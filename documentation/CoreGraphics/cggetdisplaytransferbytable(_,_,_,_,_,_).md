@@ -20,7 +20,7 @@ func CGGetDisplayTransferByTable(_ display: CGDirectDisplayID, _ capacity: UInt3
 extern CGError CGGetDisplayTransferByTable(CGDirectDisplayID display, uint32_t capacity, CGGammaValue *redTable, CGGammaValue *greenTable, CGGammaValue *blueTable, uint32_t *sampleCount);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 

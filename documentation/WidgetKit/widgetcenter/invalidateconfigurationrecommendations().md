@@ -24,7 +24,7 @@ func invalidateConfigurationRecommendations()
 
 - [Making a configurable widget](../making-a-configurable-widget.md)
 
-#### Discussion
+## Discussion
 
 In watchOS, call this function when your app receives new data for preconfigured widgets you’d like to appear in the list of available watch complications.
 

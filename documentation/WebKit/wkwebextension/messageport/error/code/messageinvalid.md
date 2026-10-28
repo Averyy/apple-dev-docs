@@ -23,7 +23,7 @@ case messageInvalid
 WKWebExtensionMessagePortErrorMessageInvalid
 ```
 
-#### Discussion
+## Discussion
 
 The message must be an object that is JSON-serializable.
 

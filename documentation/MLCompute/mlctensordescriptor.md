@@ -23,7 +23,7 @@ class MLCTensorDescriptor
 @interface MLCTensorDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class contains the mathematical properties of a tensor, such as data type and shape. It also includes initializers that help you create a tensor descriptor for common use cases, such as convolutional neural networks and recurrent neural networks.
 

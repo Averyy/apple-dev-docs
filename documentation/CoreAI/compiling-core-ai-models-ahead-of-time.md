@@ -5,7 +5,7 @@
 
 Reduce on-device specialization time by compiling Core AI models at build time.
 
-#### Overview
+## Overview
 
 Core AI models must be specialized to the specific device they run on before inference can begin. Specialization happens automatically when you create an [`AIModel`](./aimodel.md) in your app. For large models, this can take significant time, which can introduce a delay the first time your app loads the model.
 
@@ -17,7 +17,7 @@ Before compiling, set up your project to load a Core AI model. See [Integrating 
 
 > **Note**: Ahead-of-time compilation only compiles for devices that support Apple Intelligence, including iPhone or iPad with the A17 Pro chipset or later, a Mac with the M1 chipset or later, or Apple Vision Pro with the M2 chipset or later. Ahead-of-time compilation is not supported on tvOS and watchOS.
 
-#### Compile your model ahead of time
+## Compile your model ahead of time
 
 To use `coreai-build`, install the Metal Toolchain on your Mac, either through Xcode or the command line.
 
@@ -42,7 +42,7 @@ With the Metal Toolchain installed, use `xcrun` with `coreai-build` to compile y
 
 By default, Core AI selects the compute units that deliver the best performance for the model and platform. To override, pass `--preferred-compute`. For the available values, the minimum deployment version, the target architecture, and other options, run `coreai-build compile --help`. For background on compute unit configuration, see the *Choose how Core AI specializes your model* section of [Managing model specialization and caching](./managing-model-specialization-and-caching.md).
 
-#### Load a compiled model on device
+## Load a compiled model on device
 
 Ahead-of-time compilation produces one `.aimodelc` per supported device architecture, but each device only needs the variant that matches its own architecture. It’s recommended to host the compiled assets remotely and download the matching variant to the device at runtime, because each device only uses one of them. The [Background Assets](../BackgroundAssets/BackgroundAssets.md) framework can manage downloads, installs, and updates for your hosted model files.
 

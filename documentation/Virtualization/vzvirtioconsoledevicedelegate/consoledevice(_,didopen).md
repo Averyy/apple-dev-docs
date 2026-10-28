@@ -19,7 +19,7 @@ optional func consoleDevice(_ consoleDevice: VZVirtioConsoleDevice, didOpen cons
 - (void) consoleDevice:(VZVirtioConsoleDevice *) consoleDevice didOpenPort:(VZVirtioConsolePort *) consolePort;
 ```
 
-#### Discussion
+## Discussion
 
 Be sure to process or flush any pending data from the [`VZVirtioConsolePort`](../vzvirtioconsoleport.md) attachment before communicating with a new virtual machine process, or additional data might remain on the serial port from the previous session.
 

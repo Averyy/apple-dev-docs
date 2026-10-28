@@ -22,7 +22,7 @@ case success
 INEndWorkoutIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when your app successfully ends the workout.
 

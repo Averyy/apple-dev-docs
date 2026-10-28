@@ -21,7 +21,7 @@ struct VASReadResult
 
 - [Accepting loyalty passes from Wallet](./accepting-loyalty-passes-from-wallet.md)
 
-#### Overview
+## Overview
 
 A `VASReadResult` object contains the encrypted loyalty card information from the customer. Typically, you receive this object only after calling the [`readVAS(_:)`](./paymentcardreadersession/readvas%28_%29.md) or [`readPaymentCard(_:vasRequest:stopOnVASResult:)`](./paymentcardreadersession/readpaymentcard%28_,vasrequest,stoponvasresult%29.md) method of [`PaymentCardReaderSession`](./paymentcardreadersession.md).
 

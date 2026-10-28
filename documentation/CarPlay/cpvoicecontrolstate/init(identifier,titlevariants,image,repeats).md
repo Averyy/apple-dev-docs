@@ -21,7 +21,7 @@ init(identifier: String, titleVariants: [String]?, image: UIImage?, repeats: Boo
 - (instancetype) initWithIdentifier:(NSString *) identifier titleVariants:(NSArray<NSString *> *) titleVariants image:(UIImage *) image repeats:(BOOL) repeats;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized voice control state.
 

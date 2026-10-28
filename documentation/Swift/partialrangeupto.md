@@ -22,7 +22,7 @@ A partial half-open interval up to, but not including, an upper bound.
 struct PartialRangeUpTo<Bound> where Bound : Comparable
 ```
 
-#### Overview
+## Overview
 
 You create `PartialRangeUpTo` instances by using the prefix half-open range operator (prefix `..<`).
 

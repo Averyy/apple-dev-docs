@@ -19,7 +19,7 @@ A Boolean value indicating whether the view controller enforces a modal behavior
 @preconcurrency override dynamic var isModalInPresentation: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The view controller prevents swiping or tapping away its interface if there are active changes.
 

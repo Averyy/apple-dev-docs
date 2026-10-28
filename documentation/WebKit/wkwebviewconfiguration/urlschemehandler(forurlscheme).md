@@ -23,7 +23,7 @@ func urlSchemeHandler(forURLScheme urlScheme: String) -> (any WKURLSchemeHandler
 - (id<WKURLSchemeHandler>) urlSchemeHandlerForURLScheme:(NSString *) urlScheme;
 ```
 
-#### Return Value
+## Return Value
 
 The handler object for the specified scheme, or `nil` if the scheme has no handler.
 

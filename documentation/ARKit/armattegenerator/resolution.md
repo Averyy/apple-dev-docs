@@ -20,7 +20,7 @@ enum Resolution
 enum ARMatteResolution : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You generate a matte texture every frame, specifying whether its resolution is the full size or half of the camera image.
 

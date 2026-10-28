@@ -4,7 +4,7 @@
 
 Store QuickTime-compressed still images.
 
-#### Overview
+## Overview
 
 > ❗ **Important**: The QuickTime Image File Format is deprecated in the QuickTime file format. The information that follows documents existing content containing QuickTime image file media and should not be used for new development.
 

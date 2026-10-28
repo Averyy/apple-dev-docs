@@ -25,7 +25,7 @@ func setTarget(queue: dispatch_queue_t?)
 extern void dispatch_set_target_queue(dispatch_object_t object, dispatch_queue_t queue);
 ```
 
-#### Discussion
+## Discussion
 
 The target queue determines the queue on which the object’s finalizer is invoked. In addition, assigning a target queue affects how you deal with some dispatch objects, as described in the following table.
 

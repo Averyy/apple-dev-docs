@@ -19,11 +19,11 @@
 static SPProjectiveTransform3DFloat SPProjectiveTransform3DFloatMake(SPSize3DFloat scale, SPRotation3DFloat rotation, SPVector3DFloat translation);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transform structure.
 
-#### Discussion
+## Discussion
 
 Returns a new scale, rotate, translate affine transform.
 

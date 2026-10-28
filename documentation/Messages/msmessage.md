@@ -21,7 +21,7 @@ class MSMessage
 @interface MSMessage : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the [`MSMessage`](./msmessage.md) class to create custom message objects. To create interactive messages that can be updated by the conversation’s participants, instantiate a message with a session using the [`init(session:)`](./msmessage/init%28session%29.md) method. Otherwise, instantiate the message using the [`init()`](./msmessage/init%28%29.md) method.
 

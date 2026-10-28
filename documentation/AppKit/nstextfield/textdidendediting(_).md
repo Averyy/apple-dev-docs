@@ -19,7 +19,7 @@ func textDidEndEditing(_ notification: Notification)
 - (void) textDidEndEditing:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 After validating the new value, this method posts a [`textDidEndEditingNotification`](../nscontrol/textdidendeditingnotification.md) to the default notification center, which causes the text field’s delegate to receive a [`controlTextDidEndEditing:`](../../ObjectiveC/nsobject-swift.class/controltextdidendediting_.md) message. This method then sends [`endEditing(_:)`](../nscell/endediting%28_%29.md) to the text field’s cell and handles the key that causes editing to end as follows:
 

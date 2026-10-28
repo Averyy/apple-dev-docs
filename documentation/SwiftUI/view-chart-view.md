@@ -5,7 +5,7 @@
 
 Configure charts that you declare with Swift Charts.
 
-#### Overview
+## Overview
 
 Use these modifiers to configure a [`Chart`](../Charts/chart.md) view that you add to your SwiftUI app.
 

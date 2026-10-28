@@ -24,7 +24,7 @@ var clusteringIdentifier: String? { get set }
 @property (nonatomic, copy, nullable) NSString * clusteringIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`, which prevents MapKit from clustering the annotation view with other annotation views. Setting the property to a non-`nil` value enables it to participate in clustering.
 

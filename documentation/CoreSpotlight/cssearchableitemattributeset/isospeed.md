@@ -23,7 +23,7 @@ var isoSpeed: NSNumber? { get set }
 @property (strong, nullable) NSNumber * ISOSpeed;
 ```
 
-#### Discussion
+## Discussion
 
 Typical ISO speed values are 100, 200, 400, and so on.
 

@@ -25,7 +25,7 @@ func encode(_ value: Int, forKey key: String)
 - (void) encodeInteger:(NSInteger) value forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses must override this method if they perform keyed coding.
 

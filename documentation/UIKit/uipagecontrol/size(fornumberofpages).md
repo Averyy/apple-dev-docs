@@ -23,11 +23,11 @@ func size(forNumberOfPages pageCount: Int) -> CGSize
 - (CGSize) sizeForNumberOfPages:(NSInteger) pageCount;
 ```
 
-#### Return Value
+## Return Value
 
 The minimum size required to display dots for the page count.
 
-#### Discussion
+## Discussion
 
 Subclasses that customize the appearance of the page control can use this method to resize the page control when the page count changes.
 

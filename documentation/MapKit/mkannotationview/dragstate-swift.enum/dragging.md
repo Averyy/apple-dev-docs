@@ -23,7 +23,7 @@ case dragging
 MKAnnotationViewDragStateDragging
 ```
 
-#### Discussion
+## Discussion
 
 The view is in the middle of a drag operation and is tracking progress.
 

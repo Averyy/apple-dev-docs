@@ -24,7 +24,7 @@ var vertexBufferOffset: Int { get set }
 @property (nonatomic) NSUInteger vertexBufferOffset;
 ```
 
-#### Discussion
+## Discussion
 
 The offset needs to be a multiple of the vertex stride. Check the [Metal feature set tables (PDF)](https://developer.apple.com/metal/Metal-Feature-Set-Tables.pdf) for potential alignment restrictions. The default value is `0`.
 

@@ -17,7 +17,7 @@ static var allApplications: NSWindow.NumberListOptions { get }
 NSWindowNumberListAllApplications
 ```
 
-#### Discussion
+## Discussion
 
 The window numbers of windows visible on any space and belonging to any application.
 

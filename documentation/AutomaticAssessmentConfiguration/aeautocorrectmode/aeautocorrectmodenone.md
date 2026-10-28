@@ -19,7 +19,7 @@ A mode that indicates autocorrect doesn’t check anything.
 AEAutocorrectModeNone
 ```
 
-#### Discussion
+## Discussion
 
 Set the [`autocorrectMode`](../aeassessmentconfiguration/autocorrectmode-swift.property.md) value of an [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance to [`AEAutocorrectModeNone`](./aeautocorrectmodenone.md) to disable all autocorrect features during an assessment.
 

@@ -25,7 +25,7 @@ var includesActualByteCount: Bool { get set }
 @property BOOL includesActualByteCount;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this value to [`true`](../../Swift/true.md) causes the byte count to be displayed parenthetically (localized as appropriate), for instance `723 KB (722,842 bytes)`.  This will happen only if needed, that is, the first part is already not showing the exact byte count.
 

@@ -23,7 +23,7 @@ var kDNSServiceProtocol_IPv6: Int { get }
 kDNSServiceProtocol_IPv6
 ```
 
-#### Discussion
+## Discussion
 
 IPv6 protocol.
 

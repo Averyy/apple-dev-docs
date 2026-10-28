@@ -23,7 +23,7 @@ var hasConnected: Bool { get }
 @property (nonatomic, assign, readonly) BOOL hasConnected;
 ```
 
-#### Discussion
+## Discussion
 
 A call is considered connected when both caller and callee can start communicating.
 

@@ -16,7 +16,7 @@ case interrupted
 XCTWaiterResultInterrupted
 ```
 
-#### Discussion
+## Discussion
 
 This occurs when an “outer” waiter times out, resulting in any waiters nested inside it being interrupted to allow the call stack to quickly unwind.
 

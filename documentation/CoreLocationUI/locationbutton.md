@@ -19,7 +19,7 @@ A SwiftUI button that grants one-time location authorization.
 @preconcurrency struct LocationButton
 ```
 
-#### Overview
+## Overview
 
 `LocationButton` simplifies requesting one-time authorization to access location data. Add this button to your SwiftUI user interface in situations when users may want to grant temporary access to their location data each time they use a particular feature of your app.
 

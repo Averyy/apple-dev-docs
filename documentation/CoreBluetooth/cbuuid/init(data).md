@@ -25,11 +25,11 @@ init(data theData: Data)
 + (CBUUID *) UUIDWithData:(NSData *) theData;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`CBUUID`](../cbuuid.md) object for the specified UUID data.
 
-#### Discussion
+## Discussion
 
 This method is useful when handling the UUID of a Bluetooth attribute in raw bytes.
 

@@ -18,7 +18,7 @@ The combined, maximum size of the initial, non-essential asset download files.
 - **Name**: `BADownloadAllowance`
 - **Type**: integer
 
-#### Discussion
+## Discussion
 
 If you compress the initial assets, use the compressed file sizes that the system downloads, not the uncompressed file sizes, when providing this value. This key is required to use Background Assets.
 

@@ -22,7 +22,7 @@ Appends a literal segment to the interpolation.
 mutating func appendLiteral(_ literal: Self.StringLiteralType)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. Instead, initialize a variable or constant using a string literal with interpolated expressions.
 

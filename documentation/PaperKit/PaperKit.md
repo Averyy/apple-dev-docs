@@ -13,7 +13,7 @@ Add drawings, shapes, and a consistent markup experience to your app.
 - macOS 26.0+
 - visionOS 26.0+
 
-#### Overview
+## Overview
 
 PaperKit builds on top of [PencilKit](../PencilKit/PencilKit.md) to deliver a comprehensive markup experience. It adds a layer of elements — including shapes, images, and text boxes — to help create a unified canvas that supports both drawing and annotation. PaperKit powers the markup experience across all Apple platforms, and provides an easy way to add rich markup capabilities to any app.
 

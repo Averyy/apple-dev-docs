@@ -16,7 +16,7 @@ typealias VNRequestProgressHandler = (VNRequest, Double, (any Error)?) -> Void
 typedef void (^)(VNRequest *, double, NSError *) VNRequestProgressHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Vision may populate the [`results`](./vnrequest/results.md) array in the request with partial data, before all results are ready.
 

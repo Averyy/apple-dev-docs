@@ -21,11 +21,11 @@ Combines an 8-bit-per-channel, 3-channel BGR buffer and either an 8-bit alpha bu
 #define vImageConvert_BGR888toBGRA8888(_bgrSrc, _aSrc, _alpha, _bgraDest, _premultiply, _flags)
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 If you specify `premultiply` as `true`, the function uses the following calculation to perform the conversion:
 

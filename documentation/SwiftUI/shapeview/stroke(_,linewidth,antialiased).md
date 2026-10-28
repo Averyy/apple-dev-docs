@@ -22,11 +22,11 @@ Traces the outline of this shape with a color or gradient.
 nonisolated func stroke<S>(_ content: S, lineWidth: CGFloat = 1, antialiased: Bool = true) -> StrokeShapeView<Self.Content, S, Self> where S : ShapeStyle
 ```
 
-#### Return Value
+## Return Value
 
 A stroked shape.
 
-#### Discussion
+## Discussion
 
 The following example draws a circle with a purple stroke:
 

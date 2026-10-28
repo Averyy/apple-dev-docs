@@ -20,7 +20,7 @@ Time in a video frame where the observation was detected.
 let timeRange: CMTimeRange?
 ```
 
-#### Discussion
+## Discussion
 
 When evaluating a sequence of image buffers, use this property to determine each observation’s start time and duration.
 

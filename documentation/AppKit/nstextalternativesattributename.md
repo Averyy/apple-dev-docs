@@ -15,7 +15,7 @@ The alternatives for the text.
 extern NSAttributedStringKey NSTextAlternativesAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSTextAlternatives`](./nstextalternatives.md) object representing alternatives for a string that may be presented to the user.
 

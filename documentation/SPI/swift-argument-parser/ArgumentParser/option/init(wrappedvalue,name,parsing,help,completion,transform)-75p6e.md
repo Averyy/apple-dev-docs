@@ -15,10 +15,10 @@ Creates an optional property that reads its value from a labeled option, parsing
 
 ```swift
 @preconcurrency
-init<T>(wrappedValue: _OptionalNilComparisonType, name: NameSpecification = .long, parsing parsingStrategy: SingleValueParsingStrategy = .next, help: ArgumentHelp? = nil, completion: CompletionKind? = nil, transform: @escaping @Sendable (String) throws -> T) where Value == T?
+init<T>(wrappedValue: _OptionalNilComparisonType, name: NameSpecification = .long, parsing parsingStrategy: SingleValueParsingStrategy = .next, help: ArgumentHelp? = nil, completion: CompletionKind? = nil, transform: @Sendable @escaping (String) throws -> T) where Value == T?
 ```
 
-#### Discussion
+## Discussion
 
 This initializer is used when you declare an `@Option`-attributed property with a transform closure and with a default value of `nil`:
 

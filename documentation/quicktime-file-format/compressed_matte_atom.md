@@ -6,7 +6,7 @@
 
 An atom that specifies the image description structure and the matte data associated with a particular matte atom.
 
-#### Overview
+## Overview
 
 The compressed matte atom specifies the image description structure and the matte data associated with a particular matte atom. Compressed matte atoms have an atom type value of `'kmat'`.
 

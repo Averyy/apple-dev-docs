@@ -24,7 +24,7 @@ class MTL4AccelerationStructureDescriptor
 @interface MTL4AccelerationStructureDescriptor : MTLAccelerationStructureDescriptor
 ```
 
-#### Overview
+## Overview
 
 Don’t use this class directly. Use one of its subclasses instead.
 

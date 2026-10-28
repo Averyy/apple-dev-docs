@@ -6,7 +6,7 @@
 
 A 16-bit integer that specifies the media’s playback quality.
 
-#### Overview
+## Overview
 
 The media’s suitability for playback in a given environment.
 

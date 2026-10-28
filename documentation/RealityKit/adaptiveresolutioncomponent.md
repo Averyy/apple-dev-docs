@@ -20,7 +20,7 @@ A component that provides the suggested pixels per meter necessary to render an 
 struct AdaptiveResolutionComponent
 ```
 
-#### Overview
+## Overview
 
 Use the [`pixelsPerMeter`](./adaptiveresolutioncomponent/pixelspermeter.md) property to proactively update your scene to disable expensive systems and high-resolution content that is far away.
 

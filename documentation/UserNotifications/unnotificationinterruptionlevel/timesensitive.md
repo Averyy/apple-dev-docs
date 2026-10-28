@@ -25,7 +25,7 @@ case timeSensitive
 UNNotificationInterruptionLevelTimeSensitive
 ```
 
-#### Discussion
+## Discussion
 
 Time Sensitive notifications are similar to active notifications, but can break through system controls such as Notification Summary and Focus. The user can turn off the ability for time sensitive notification interruptions.
 

@@ -5,7 +5,7 @@
 
 Define the rasterization rates for each part of your render target.
 
-#### Overview
+## Overview
 
 A rasterization rate map specifies the size of the final render target in logical viewport coordinates and rasterization rates within that area. You partition the render target into different horizontal and vertical zones and provide rasterization rates for each of these zones. From this configuration data, the rate map calculates the sizes for your intermediate texture targets and provides mapping functions between logical viewport coordinates and physical pixel coordinates.
 
@@ -32,7 +32,7 @@ descriptor.label = @"My rate map";
 descriptor.screenSize = destinationMetalLayer.drawableSize;
 ```
 
-##### Create a layer rate descriptor
+### Create a layer rate descriptor
 
 To specify rasterization rates, create a layer rate descriptor with the rates you want to apply to each layer in the render target. If you aren’t using layered rendering, create a single layer rate descriptor. Otherwise, you can provide different rasterization rates for each layer. (For more information about layered rendering, see [Rendering to multiple texture slices in a draw command](./rendering-to-multiple-texture-slices-in-a-draw-command.md)).
 
@@ -54,7 +54,7 @@ MTLSize zoneCounts = MTLSizeMake(8, 4, 1);
 MTLRasterizationRateLayerDescriptor *layerDescriptor = [[MTLRasterizationRateLayerDescriptor alloc] initWithSampleCount:zoneCounts];
 ```
 
-##### Specify the rates for each zone
+### Specify the rates for each zone
 
 After creating the layer descriptor, specify rates for the rows and columns of the rate map. You determine the horizontal rate for a cell by specifying the rate for its column, and its vertical rate by specifying the rate for its row.
 
@@ -106,7 +106,7 @@ layerDescriptor.verticalSampleStorage[3] = 0.5;
 
 Metal guarantees that the actual rasterization rates are at least as high as the rates you specified. However, when you create the rate map, the device instance may split it into more detailed cells or choose higher rates for specific cells if the GPU requires it.
 
-##### Add the layer descriptor to the rate map descriptor
+### Add the layer descriptor to the rate map descriptor
 
 After you configure the layer descriptor, attach it to the rate map descriptor. When you’ve added all of the layer descriptors, create the rate map:
 

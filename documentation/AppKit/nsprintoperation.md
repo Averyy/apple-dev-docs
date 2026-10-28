@@ -20,7 +20,7 @@ class NSPrintOperation
 @interface NSPrintOperation : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`NSPrintOperation`](./nsprintoperation.md) object works in conjunction with two other objects: an [`NSPrintInfo`](./nsprintinfo.md) object, which specifies how the code should be generated, and an [`NSView`](./nsview.md) object, which generates the actual code.
 

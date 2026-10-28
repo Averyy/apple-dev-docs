@@ -20,7 +20,7 @@ case any
 kSecAuthenticationTypeAny
 ```
 
-#### Discussion
+## Discussion
 
 When performing a search, use this value to avoid constraining your search results to a particular authentication type.
 

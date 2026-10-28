@@ -24,7 +24,7 @@ class HMService
 @interface HMService : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`HMService`](./hmservice.md) instance represents a service provided by an accessory. Accessories have both user-controllable services, like a light, and services that are for the use of the accessory itself, like a firmware update service.
 

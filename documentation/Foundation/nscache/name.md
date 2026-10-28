@@ -25,7 +25,7 @@ var name: String { get set }
 @property (copy) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is an empty string (””).
 

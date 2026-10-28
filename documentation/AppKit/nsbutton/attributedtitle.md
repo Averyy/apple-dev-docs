@@ -20,7 +20,7 @@ var attributedTitle: NSAttributedString { get set }
 @property (copy) NSAttributedString * attributedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an string of class `NSAttributedString`, which appears on the button when the button is in an off state. If the button doesn’t display a title, then this property contains an empty attributed string.
 

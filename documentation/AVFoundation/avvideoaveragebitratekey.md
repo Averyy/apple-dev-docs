@@ -24,7 +24,7 @@ let AVVideoAverageBitRateKey: String
 extern NSString * const AVVideoAverageBitRateKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an instance of `NSNumber`.
 

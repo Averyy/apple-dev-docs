@@ -25,7 +25,7 @@ func xpc_connection_send_message(_ connection: xpc_connection_t, _ message: xpc_
 extern void xpc_connection_send_message(xpc_connection_t connection, xpc_object_t message);
 ```
 
-#### Discussion
+## Discussion
 
 Messages are delivered in FIFO order. This API is safe to call from multiple GCD queues. There is no indication that a message was delivered successfully. This is because even once the message has been successfully enqueued on the remote end, there are no guarantees about when the runtime will dequeue the message and invoke the other connection’s event handler block.
 

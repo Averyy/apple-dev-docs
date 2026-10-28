@@ -20,7 +20,7 @@ The date that anchors the collection’s time intervals.
 var anchorDate: Date
 ```
 
-#### Discussion
+## Discussion
 
 Use this parameter to set the start time for your time intervals. For example, if you’re using a day interval, you might create a date object with a time of 2:00 a.m. This value sets the start of the day for each of your time intervals.
 

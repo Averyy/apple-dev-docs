@@ -15,11 +15,11 @@ Disposes of a sniffer object.
 OSStatus TECDisposeSniffer(TECSnifferObjectRef encodingSniffer);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 This function releases all memory allocated to the snifferobject created by the  [`TECCreateSniffer`](./api-1571832-teccreatesniffer.md) function. 
 

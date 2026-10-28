@@ -15,7 +15,7 @@ Invokes your text-done callback function.
 void InvokeSpeechTextDoneUPP(SpeechChannel chan, SRefCon refCon, const void * _Nullable *nextBuf, unsigned long *byteLen, SInt32 *controlFlags, SpeechTextDoneUPP userUPP);
 ```
 
-#### Discussion
+## Discussion
 
 You should not need to call the `InvokeSpeechTextDoneUPP` function,because the system calls your text-done callback function for you.
 

@@ -23,7 +23,7 @@ func setScopeBarButtonBackgroundImage(_ backgroundImage: UIImage?, for state: UI
 - (void) setScopeBarButtonBackgroundImage:(UIImage *) backgroundImage forState:(UIControlState) state;
 ```
 
-#### Discussion
+## Discussion
 
 For more details, see [`scopeBarButtonBackgroundImage(for:)`](./scopebarbuttonbackgroundimage%28for%29.md).
 

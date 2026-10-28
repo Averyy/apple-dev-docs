@@ -25,7 +25,7 @@ let kCGImageAuxiliaryDataInfoDataDescription: CFString
 extern CFStringRef const kCGImageAuxiliaryDataInfoDataDescription;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CFDictionary`](../CoreFoundation/cfdictionary.md). The keys in this dictionary may include [`kCGImagePropertyWidth`](./kcgimagepropertywidth.md), [`kCGImagePropertyHeight`](./kcgimagepropertyheight.md), and [`kCGImagePropertyBytesPerRow`](./kcgimagepropertybytesperrow.md).
 

@@ -25,7 +25,7 @@ func disableAutoRenewForTransaction(identifier: Int) throws
 - (BOOL) disableAutoRenewForTransactionWithIdentifier:(NSUInteger) identifier error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to disable auto-renewing for a subscription. A subscription with auto-renew disabled expires at the end of the billing period and doesn’t renew at the start of the next billing period.
 

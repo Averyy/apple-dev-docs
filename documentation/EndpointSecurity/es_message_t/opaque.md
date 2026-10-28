@@ -16,7 +16,7 @@ An opaque storage field.
 uint64_t opaque[];
 ```
 
-#### Discussion
+## Discussion
 
 Apps shouldn’t access this field.
 

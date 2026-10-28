@@ -24,7 +24,7 @@ class WKExtendedRuntimeSession
 - [Using extended runtime sessions](./using-extended-runtime-sessions.md)
 - [Using background tasks](./using-background-tasks.md)
 
-#### Overview
+## Overview
 
 With extended runtime sessions, your app continues to run after the user stops interacting with it. The app can continue to communicate with Bluetooth devices, process data, or play sounds or haptics, even after the watch’s screen turns off.
 

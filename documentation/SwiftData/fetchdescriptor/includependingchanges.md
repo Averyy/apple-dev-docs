@@ -22,7 +22,7 @@ A Boolean value that indicates whether, when the fetch runs, it matches against 
 var includePendingChanges: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Set this property’s value to `false` to ignore any unsaved changes in the model context and match against a model’s persisted state instead.
 

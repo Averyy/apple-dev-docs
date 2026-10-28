@@ -15,11 +15,11 @@ Returns the offset and length into the target IOMemoryDescriptor of a prepared I
 virtual IOReturn getPreparedOffsetAndLength(UInt64 *offset, UInt64 *length);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code. kIOReturnNotReady if the IODMACommand is not prepared.
 
-#### Discussion
+## Discussion
 
 If successfully prepared, returns the offset and length into the IOMemoryDescriptor. Will fail for an unprepared IODMACommand.
 

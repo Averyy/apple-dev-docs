@@ -24,11 +24,11 @@ optional func documentInteractionController(_ controller: UIDocumentInteractionC
 - (BOOL) documentInteractionController:(UIDocumentInteractionController *) controller canPerformAction:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified action is supported for the associated document or [`false`](../../Swift/false.md) if it is not. If you do not implement this method, the return value is assumed to be [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 When building the options menu (invoked, for example, by the user performing a long press gesture), a document interaction controller calls this method to find out if your app can perform various actions. If you implement this method for a given action, you must also implement the [`documentInteractionController(_:performAction:)`](./documentinteractioncontroller%28_,performaction%29.md) method for that action.
 

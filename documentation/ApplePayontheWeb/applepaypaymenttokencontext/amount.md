@@ -16,7 +16,7 @@ The amount to authorize for the payment token context.
 required DOMString amount;
 ```
 
-#### Discussion
+## Discussion
 
 The sum of the [`amount`](./amount.md) of all the payment token contexts in a payment request must be less than or equal to the grand total amount of the enclosing payment request.
 

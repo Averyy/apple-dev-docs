@@ -26,7 +26,7 @@ func mediaSelectionCriteria(forMediaCharacteristic mediaCharacteristic: AVMediaC
 - (AVPlayerMediaSelectionCriteria *) mediaSelectionCriteriaForMediaCharacteristic:(AVMediaCharacteristic) mediaCharacteristic;
 ```
 
-#### Return Value
+## Return Value
 
 The [`AVPlayerMediaSelectionCriteria`](../avplayermediaselectioncriteria.md) for `mediaCharacteristic`.
 

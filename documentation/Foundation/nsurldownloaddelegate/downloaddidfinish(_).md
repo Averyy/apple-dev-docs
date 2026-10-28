@@ -19,7 +19,7 @@ optional func downloadDidFinish(_ download: NSURLDownload)
 - (void) downloadDidFinish:(NSURLDownload *) download;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate will receive no further messages for `download`.
 

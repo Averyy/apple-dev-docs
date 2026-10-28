@@ -22,7 +22,7 @@ class let touchBarRewindTemplateName: String
 extern NSImageName const NSImageNameTouchBarRewindTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for rewind](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793523@2x.png)
 

@@ -25,7 +25,7 @@ var particleTexture: SKTexture? { get set }
 @property (nonatomic, retain, nullable) SKTexture * particleTexture;
 ```
 
-#### Discussion
+## Discussion
 
 A particle is rendered as if it were a [`SKSpriteNode`](../skspritenode.md) object. The default value is `nil`, which means a single-color rectangle is used to draw the particle. If a non-`nil` value is specified, then the texture is colorized and used to draw particles.
 

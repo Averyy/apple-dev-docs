@@ -22,11 +22,11 @@ func CVDisplayLinkTranslateTime(_ displayLink: CVDisplayLink, _ inTime: UnsafePo
 extern CVReturn CVDisplayLinkTranslateTime(CVDisplayLinkRef displayLink, const CVTimeStamp *inTime, CVTimeStamp *outTime);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
-#### Discussion
+## Discussion
 
 Note that the display link has to be running for this call to succeed.
 

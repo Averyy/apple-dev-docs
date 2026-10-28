@@ -25,11 +25,11 @@ init(source: SCNAudioSource)
 - (instancetype) initWithSource:(SCNAudioSource *) source;
 ```
 
-#### Return Value
+## Return Value
 
 A positional audio player object.
 
-#### Discussion
+## Discussion
 
 Using this initializer is typically not necessary. Instead, call the [`audioPlayerWithSource:`](./audioplayerwithsource_.md) method, which returns a cached audio player object if one for the specified audio source has already been created and is available for use.
 

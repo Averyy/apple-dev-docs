@@ -14,7 +14,7 @@
 #define kIOPropertyFibreChannelCableDescriptionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is associated with the cabling type used for this Fibre Channel port. Valid values include "Copper" and "Fiber Optic".
 

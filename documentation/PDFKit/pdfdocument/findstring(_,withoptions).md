@@ -24,7 +24,7 @@ func findString(_ string: String, withOptions options: NSString.CompareOptions =
 - (NSArray<PDFSelection *> *) findString:(NSString *) string withOptions:(NSStringCompareOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 Each hit gets added to an `NSArray` object as a [`PDFSelection`](../pdfselection.md) object. If there are no hits, this method returns an empty array.
 

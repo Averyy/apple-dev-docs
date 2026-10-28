@@ -22,7 +22,7 @@ A view of a string’s contents as a collection of UTF-8 code units.
 struct UTF8View
 ```
 
-#### Overview
+## Overview
 
 You can access a string’s view of UTF-8 code units by using its `utf8` property. A string’s UTF-8 view encodes the string’s Unicode scalar values as 8-bit integers.
 
@@ -65,7 +65,7 @@ for v in flowermoji.utf8 {
 
 In the encoded representation of a Unicode scalar value, each UTF-8 code unit after the first is called a *continuation byte*.
 
-### UTF8View Elements Match Encoded C Strings
+## UTF8View Elements Match Encoded C Strings
 
 Swift streamlines interoperation with C string APIs by letting you pass a `String` instance to a function as an `Int8` or `UInt8` pointer. When you call a C function using a `String`, Swift automatically creates a buffer of UTF-8 code units and passes a pointer to that buffer. The code units of that buffer match the code units in the string’s `utf8` view.
 

@@ -24,11 +24,11 @@ class func checkerboardGenerator() -> any CIFilter & CICheckerboardGenerator
 + (CIFilter<CICheckerboardGenerator> *) checkerboardGeneratorFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The generated image.
 
-#### Discussion
+## Discussion
 
 This method generates a checkerboard pattern as an image. The effect requires the size, sharpness, and color properties to create the pattern.
 

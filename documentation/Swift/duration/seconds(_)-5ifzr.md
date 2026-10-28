@@ -21,11 +21,11 @@ Construct a `Duration` given a number of seconds represented as a `Double` by co
 static func seconds(_ seconds: Double) -> Duration
 ```
 
-#### Return Value
+## Return Value
 
 A `Duration` representing a given number of seconds.
 
-#### Discussion
+## Discussion
 
 ```swift
   let d: Duration = .seconds(22.93)

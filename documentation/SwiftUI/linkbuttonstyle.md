@@ -16,7 +16,7 @@ nonisolated
 struct LinkButtonStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`link`](./primitivebuttonstyle/link.md) to construct this style.
 

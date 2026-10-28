@@ -11,7 +11,7 @@ Retrieve data and derived metrics from sensors on an iPhone, or paired Apple Wat
 - iPadOS 14.0+
 - Mac Catalyst 14.0+
 
-#### Overview
+## Overview
 
 As the system gathers information using various sensors on a device, SensorKit enables an app to access select raw data, or metrics that the system processes from a sensor, such as:
 

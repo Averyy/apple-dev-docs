@@ -13,7 +13,7 @@
 kSBCModePageRigidDiskGeometry_RPL_Mask = 0x03
 ```
 
-#### Discussion
+## Discussion
 
 Mask for use with the RPL field.
 

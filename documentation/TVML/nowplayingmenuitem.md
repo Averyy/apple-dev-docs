@@ -4,7 +4,7 @@
 
 Displays information about currently playing audio.
 
-#### Overview
+## Overview
 
 The `nowPlayingMenuItem` element is used to display information about audio playing in a `menuBarTemplate`. The `nowPlayingMenuItem` element automatically appears and disappears from the menu bar as the audio session starts and stops. Here’s an example of a menu bar with the now playing information and two menu items.
 
@@ -22,11 +22,11 @@ The `nowPlayingMenuItem` element is used to display information about audio play
 </menuBar>
 ```
 
-##### Subelement of nowPlayingMenuItem
+### Subelement of nowPlayingMenuItem
 
 - [title](./title.md)
 
-##### Elements that Use nowPlayingMenuItem
+### Elements that Use nowPlayingMenuItem
 
 - [menuBar](./menubar.md)
 

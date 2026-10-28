@@ -20,7 +20,7 @@ The character’s collision filter.
 var collisionFilter: CollisionFilter
 ```
 
-#### Discussion
+## Discussion
 
 For more information on using collision filters, see https://developer.apple.com/documentation/realitykit/controlling_entity_collisions_in_realitykit.
 

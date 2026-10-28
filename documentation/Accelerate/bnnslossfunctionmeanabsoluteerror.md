@@ -25,7 +25,7 @@ var BNNSLossFunctionMeanAbsoluteError: BNNSLossFunction { get }
 BNNSLossFunctionMeanAbsoluteError
 ```
 
-#### Discussion
+## Discussion
 
 [`BNNSLossFunctionMeanAbsoluteError`](./bnnslossfunctionmeanabsoluteerror.md) performs mean absolute error (MAE) computation between input prediction and labels.
 

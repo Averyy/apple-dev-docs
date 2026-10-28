@@ -22,7 +22,7 @@ case move
 UIDropOperationMove
 ```
 
-#### Discussion
+## Discussion
 
 You may use this operation only if the drop session’s [`allowsMoveOperation`](../uidragdropsession/allowsmoveoperation.md) property is [`true`](../../Swift/true.md); otherwise, it’s treated as a [`UIDropOperation.cancel`](./cancel.md) operation. A move operation is allowed only within same app. Data shared with another app must be copied.
 

@@ -19,11 +19,11 @@ var windowsMenu: NSMenu? { get set }
 @property (strong, nullable) NSMenu * windowsMenu;
 ```
 
-#### Return Value
+## Return Value
 
 The window menu or `nil` if such a menu does not exist or has not yet been created.
 
-#### Discussion
+## Discussion
 
 This property contains the app’s Window menu or `nil` if such a menu does not yet exist or has not yet been created. You can use this property to specify the Window menu for your app.
 

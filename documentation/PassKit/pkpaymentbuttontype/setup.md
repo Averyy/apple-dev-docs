@@ -24,7 +24,7 @@ case setUp
 PKPaymentButtonTypeSetUp
 ```
 
-#### Discussion
+## Discussion
 
 This button looks like:
 

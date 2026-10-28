@@ -25,7 +25,7 @@ var processIdentifier: pid_t { get }
 @property (readonly) pid_t processIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute may be used by the listener delegate to accept or reject connections.
 

@@ -19,7 +19,7 @@ let WKAccessibilityVoiceOverStatusChanged: String
 extern NSString * const WKAccessibilityVoiceOverStatusChanged;
 ```
 
-#### Discussion
+## Discussion
 
 Use this notification to customize your application’s user interface for VoiceOver users. You can also use the [`isVoiceOverRunning`](../UIKit/uiaccessibility/isvoiceoverrunning.md) function to determine whether VoiceOver is currently running.
 

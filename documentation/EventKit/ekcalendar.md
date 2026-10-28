@@ -28,7 +28,7 @@ class EKCalendar
 
 - [Retrieving events and reminders](./retrieving-events-and-reminders.md)
 
-#### Overview
+## Overview
 
 Use the properties in this class to get attributes about a calendar, such as its title and type. Use the [`init(for:eventStore:)`](./ekcalendar/init%28for,eventstore%29.md) method to create a calendar object.
 

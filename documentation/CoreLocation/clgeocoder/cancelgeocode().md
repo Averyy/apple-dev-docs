@@ -27,7 +27,7 @@ func cancelGeocode()
 - (void) cancelGeocode;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to cancel a pending request and free up the resources associated with that request. Canceling a pending request causes the completion handler block to be called.
 

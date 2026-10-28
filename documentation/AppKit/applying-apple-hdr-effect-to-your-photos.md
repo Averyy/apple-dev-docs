@@ -5,17 +5,17 @@
 
 You can decode and apply Apple’s HDR gain map to your own images.
 
-#### Overview
+## Overview
 
 You can apply Apple high dynamic range (HDR) effect to digital photography images without using Apple SDKs. You compute the Apple HDR gain map from the image’s auxiliary data and then apply it to the image. The *Apple HDR gain map* is an 8-bit, single-channel luminance map that’s stored with an image.
 
-##### Extract the existing HDR gain map from the image
+### Extract the existing HDR gain map from the image
 
 Get the existing HDR gain map from the image’s auxiliary data using the `urn:com:apple:photo:2020:aux:hdrgainmap` image data type. The gain map is untagged and formatted as linear data. It’s encoded using the Rec.709 transfer function and is 1/4 the resolution of the original image.
 
 For example, using Apple APIs, you can extract the gain map from a [`CGImage`](../CoreGraphics/cgimage.md) object by passing [`kCGImageAuxiliaryDataTypeHDRGainMap`](../ImageIO/kcgimageauxiliarydatatypehdrgainmap.md) to the [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](../ImageIO/cgimagesourcecopyauxiliarydatainfoatindex%28_,_,_%29.md) function.
 
-##### Calculate the headroom from the image metadata
+### Calculate the headroom from the image metadata
 
 Write code that computes the headroom you need to change the dynamic range image. The headroom is the ratio of the luminance of the image’s brightest white to the luminance of standard dynamic range (SDR) white, in the image’s native color space.
 
@@ -51,7 +51,7 @@ if maker33 < 1.0 {
 let headroom = pow(2.0, max(stops, 0.0))
 ```
 
-##### Apply the HDR gain map to the image
+### Apply the HDR gain map to the image
 
 Before you apply the HDR gain map to the image, perform the following steps:
 

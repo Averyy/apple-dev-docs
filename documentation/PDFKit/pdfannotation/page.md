@@ -24,11 +24,11 @@ weak var page: PDFPage? { get set }
 @property (nonatomic, weak, nullable) PDFPage * page;
 ```
 
-#### Return Value
+## Return Value
 
 The PDF page associated with the annotation.
 
-#### Discussion
+## Discussion
 
 The [`addAnnotation(_:)`](../pdfpage/addannotation%28_%29.md) method in the `PDFPage` class lets you associate an annotation with a page.
 

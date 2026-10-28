@@ -18,7 +18,7 @@ typealias AudioClassID = UInt32
 typedef UInt32 AudioClassID;
 ```
 
-#### Discussion
+## Discussion
 
 AudioClassIDs are used to identify the class of an AudioObject.
 

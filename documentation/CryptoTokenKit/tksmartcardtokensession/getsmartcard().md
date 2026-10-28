@@ -23,7 +23,7 @@ func getSmartCard() throws -> TKSmartCard
 - (TKSmartCard *) getSmartCardWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 Returns a TKSmartCard instance with an active exclusive session and the SmartCard application selected. Replaces the deprecated @c smartCard property.
 

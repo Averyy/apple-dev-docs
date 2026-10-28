@@ -23,13 +23,13 @@ class INResumeWorkoutIntent
 @interface INResumeWorkoutIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 SiriKit creates an [`INResumeWorkoutIntent`](./inresumeworkoutintent.md) object when the user asks to resume a currently paused workout. Resuming a workout resumes gathering workout data and counting that data toward the user’s current workout goal. Use this intent object to validate the workout parameters.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INResumeWorkoutIntentHandling`](./inresumeworkoutintenthandling.md) protocol. Your handler should confirm the request and create an [`INResumeWorkoutIntentResponse`](./inresumeworkoutintentresponse.md) object that indicates it’s possible to resume the workout. For the successful handling of the intent, SiriKit launches your app and passes it an [`NSUserActivity`](../Foundation/nsuseractivity.md) object your app must then use to resume the workout.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

@@ -29,7 +29,7 @@ var alternateIdentifiers: Set<MKMapItem.Identifier> { get }
 
 - [Identifying unique locations with Place IDs](../identifying-unique-locations-with-place-ids.md)
 
-#### Discussion
+## Discussion
 
 The identifier for a point of interest may change over time. This property provides a set of alternative identifiers for this map item.
 

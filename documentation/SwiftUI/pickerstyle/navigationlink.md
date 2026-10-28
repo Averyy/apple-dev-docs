@@ -23,7 +23,7 @@ static var navigationLink: NavigationLinkPickerStyle { get }
 
 Available when `Self` is `NavigationLinkPickerStyle`.
 
-#### Discussion
+## Discussion
 
 In navigation stacks, prefer the default [`menu`](./menu.md) style. Consider the navigation link style when you have a large number of options or your design is better expressed by pushing onto a stack.
 

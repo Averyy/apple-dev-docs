@@ -11,9 +11,9 @@ Read information about a specific leaderboard.
 
 > **Deprecated**: This endpoint is deprecated. Use [`Read Game Center Leaderboard Information`](./get-v2-gamecenterleaderboards-_id_.md) instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

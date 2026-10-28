@@ -25,7 +25,7 @@ init(fovY: Angle2D, aspectRatio: Double, nearZ: Double, farZ: Double)
 static SPProjectiveTransform3D SPProjectiveTransform3DMakeWithRightHandPerspective(SPAngle fovY, double aspectRatio, double nearZ, double farZ);
 ```
 
-#### Discussion
+## Discussion
 
 - fovyRadians: The field-of-view angle along the y-axis.
 - aspectRatio: The aspect ratio.

@@ -19,7 +19,7 @@ var type: NSMenuItemBadge.BadgeType { get }
 @property (readonly) NSMenuItemBadgeType type;
 ```
 
-#### Discussion
+## Discussion
 
 If you create a badge with a custom string, this value is [`NSMenuItemBadge.BadgeType.none`](./badgetype/none.md).
 

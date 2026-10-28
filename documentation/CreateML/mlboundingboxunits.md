@@ -15,7 +15,7 @@ The units a bounding box annotation uses to define its position and size.
 enum MLBoundingBoxUnits
 ```
 
-#### Overview
+## Overview
 
 All bounding box annotations in an annotation file must use the same units for their coordinates and size. See [`MLObjectDetector.AnnotationType.boundingBox(units:origin:anchor:)`](./mlobjectdetector/annotationtype/boundingbox%28units,origin,anchor%29.md).
 

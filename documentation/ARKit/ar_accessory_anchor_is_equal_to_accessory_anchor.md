@@ -15,7 +15,7 @@ Returns a Boolean value that indicates whether the two accessory anchors are equ
 extern bool ar_accessory_anchor_is_equal_to_accessory_anchor(ar_accessory_anchor_t anchor, ar_accessory_anchor_t other_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the accessory anchors are equal, otherwise `false`.
 

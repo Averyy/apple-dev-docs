@@ -14,7 +14,7 @@ Outputs the value from one of ten input streams, according to a selector .
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Switch (float)**:
 

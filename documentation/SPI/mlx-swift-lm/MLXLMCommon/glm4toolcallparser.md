@@ -17,7 +17,7 @@ Parser for the GLM4 tool-call dialects.
 struct GLM4ToolCallParser
 ```
 
-#### Overview
+## Overview
 
 GLM-4.5 and later frame a call as `<tool_call>func<arg_key>k</arg_key><arg_value>v</arg_value></tool_call>`. GLM-4-0414 writes the function name on its own line followed by a JSON arguments object, with no delimiters at all. `ToolCallProcessor` anchors that markerless dialect on the declared tools before it reaches this parser.
 

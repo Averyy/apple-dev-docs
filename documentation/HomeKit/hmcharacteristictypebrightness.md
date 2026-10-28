@@ -24,7 +24,7 @@ let HMCharacteristicTypeBrightness: String
 extern NSString * const HMCharacteristicTypeBrightness;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an integer representing a percentage of the maximum brightness.
 

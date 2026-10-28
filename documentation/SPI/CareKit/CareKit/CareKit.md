@@ -11,7 +11,7 @@ framework: "CareKit/CareKit"
 
 Create apps that help people better understand and manage their health.
 
-#### Overview
+## Overview
 
 CareKit is an open source framework that you can use to build apps to manage and understand health data. Apps can highlight trends, celebrate goals, and create incentives for users. CareKit makes it easy to provide engaging, consistent interfaces with delightful animations, and full interaction with the accessibility features of iOS and iPadOS.
 

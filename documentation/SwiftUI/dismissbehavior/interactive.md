@@ -19,7 +19,7 @@ The interactive dismiss behavior.
 static let interactive: DismissBehavior
 ```
 
-#### Discussion
+## Discussion
 
 Use this behavior when you want to dismiss a window in a manner that is similar to the standard system affordances for window dismissal - for example, when a user clicks the close button.
 

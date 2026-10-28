@@ -20,7 +20,7 @@ Creates a schema by providing an array of dynamic schemas.
 init(root: DynamicGenerationSchema, dependencies: [DynamicGenerationSchema]) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If there are schemas with naming conflicts or references to undefined types.
 

@@ -5,7 +5,7 @@
 
 Define and manage one-time charges, subscriptions, and bundled subscriptions within your app.
 
-#### Overview
+## Overview
 
 For each purchase you plan to offer, create a product identifier, or SKU, in your system along with corresponding text such as display name and price. The App Store displays this information on the payment sheet when a customer initiates a purchase, which helps them understand the transaction before they confirm their purchase. The App Store also uses this information in additional communication to the customer, including in email receipts and in the Apple Account Settings under Subscriptions.
 
@@ -19,7 +19,7 @@ To ensure your purchases display properly and provide a quality experience, foll
 
 Review the Human Interface Guidelines for additional best practices for [writing](https://developer.apple.com/design/human-interface-guidelines/writing) and designing your [Apple In-App Purchases](https://developer.apple.com/design/human-interface-guidelines/in-app-purchase). If you offer subscriptions, get additional best practices for [clearly describing subscriptions](https://developer.apple.com/app-store/subscriptions/#clear-description) in your paywalls and payment sheets.
 
-#### Create one-time charges
+## Create one-time charges
 
 Manage one-time purchases — such as one-time rentals, books, or courses — by using the [`OneTimeChargeCreateRequest`](./onetimechargecreaterequest.md) API to provide information to the App Store when the customer initiates a purchase. After a one-time charge is complete, customers receive an email receipt from Apple.
 
@@ -34,7 +34,7 @@ The following details appear in the App Store payment sheet as well as your emai
 
 > **Note**: You can set up an image that displays in the payment sheet instead of the app icon. For more information, see the “Set up an image for the payment sheet to display” section in [Setting up your project for Advanced Commerce API](./setting-up-your-project-for-advanced-commerce.md).
 
-#### Create subscriptions
+## Create subscriptions
 
 Use the [`SubscriptionCreateRequest`](./subscriptioncreaterequest.md) API to provide information to the App Store when the customer initiates a purchase for each subscription SKU you offer. After a successful purchase, Apple sends customers a subscription confirmation email and a receipt. Customers can go to their Apple Account Subscription Settings to manage their subscription at any time.
 
@@ -51,7 +51,7 @@ The following details appear in the App Store payment sheet, email communication
 
 ![A diagram of two iOS screens in portrait orientation. The first screen shows a payment sheet for a generic in-app purchase for a subscription, with callouts showing where the app icon, subscription tier, currency, price, name, and billing frequency appear on the sheet. The second screen shows the subscription management page in Apple Account Subscriptions, with a callout indicating the link back to the related app.](https://developer.apple.com/tutorials/images/com.apple.advancedcommerceapi/subscription-creator-app-text-field-mapping@2x.png)
 
-#### Create bundled subscriptions
+## Create bundled subscriptions
 
 For subscription-specific services that are bundled with additional add-on content or services (all of which auto-renews as a single subscription), create a SKU for each service or content offering. Use the [`SubscriptionCreateRequest`](./subscriptioncreaterequest.md) API to provide information to the App Store when the customer initiates a purchase. After a successful purchase, Apple sends customers a subscription confirmation email and a receipt. Customers can go to their Apple Account Subscription Settings to manage their subscription at any time.
 

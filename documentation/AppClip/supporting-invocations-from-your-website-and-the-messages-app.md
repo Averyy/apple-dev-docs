@@ -5,7 +5,7 @@
 
 Display a Smart App Banner and the App Clip card on your website that people tap to launch your App Clip, and add support for invocations from the Messages app.
 
-#### Overview
+## Overview
 
 When you create your App Clip, register a *default App Clip experience*. By creating a default App Clip experience, you lay the foundation for supporting *invocations* from a Smart App Banner on your website. This has an added benefit: If a person shares a link to your website in the Messages app and the website displays a Smart App Banner, the recipient can tap the link to instantly launch your App Clip.
 
@@ -27,7 +27,7 @@ With the App Clip card on your website, people don’t need to tap the Smart App
 
 > 💡 **Tip**:  Displaying an App Clip card in Safari on devices that run iOS 15 or later increases the discoverability of your App Clip and reduces the number of taps required to launch the App Clip. However, obscuring your website’s content with the App Clip card may not be ideal. In this case, creating a dedicated page that displays the App Clip card in Safari and linking to it may be a good option to guide people to launch your App Clip.
 
-##### Add code to display the Smart App Banner and the App Clip Card on your website
+### Add code to display the Smart App Banner and the App Clip Card on your website
 
 In most cases, the best time to add the Smart App Banner and the App Clip card to your website is while you associate your App Clip with your website. Add both by including the following HTML `meta` tag and replacing all placeholders with the appropriate values:
 
@@ -41,7 +41,7 @@ Note how the `meta` tag’s `content` attribute includes the `app-clip-bundle-id
 
 Note that the value of a Smart App Banner’s `app-argument` attribute isn’t available to App Clips.
 
-##### Support invocations from links people share in Messages
+### Support invocations from links people share in Messages
 
 When you add the `meta` tag to your webpage to support invocations from Safari or an [`SFSafariViewController`](../SafariServices/sfsafariviewcontroller.md), you automatically add support for invocations from links people share with others in the Messages app. When a person shares a link to the website that displays the banner or App Clip card, the recipient can tap the link to instantly launch your App Clip.
 
@@ -65,7 +65,7 @@ To enable your App Clip or full app to respond to the invocation from a website 
 
 ![A screenshot of a conversation in the Messages app on iPhone that includes a preview of a shared App Clip.](https://developer.apple.com/tutorials/images/com.apple.appclip/food-truck-app-clip-message@2x.png)
 
-##### Add the Smart App Banner and App Clip card to multiple websites
+### Add the Smart App Banner and App Clip card to multiple websites
 
 In some cases, you may want to add the App Clip card and the Smart App Banner to several websites where each site uses its own domain — for example, if your App Clip serves several individual businesses. However, the default App Clip experience offers only one set of metadata. If you want to display the Smart App Banner on multiple websites where tapping each website’s banner displays a different App Clip card for your App Clip:
 

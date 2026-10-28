@@ -27,7 +27,7 @@ func deselectRow(at indexPath: IndexPath, animated: Bool)
 
 - [Handling row selection in a table view](../handling-row-selection-in-a-table-view.md)
 
-#### Discussion
+## Discussion
 
 Calling this method doesn’t cause the delegate to receive a [`tableView(_:willDeselectRowAt:)`](../uitableviewdelegate/tableview%28_,willdeselectrowat%29.md) or [`tableView(_:didDeselectRowAt:)`](../uitableviewdelegate/tableview%28_,diddeselectrowat%29.md) message, nor does it send [`selectionDidChangeNotification`](./selectiondidchangenotification.md) notifications to observers.
 

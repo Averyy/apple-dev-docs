@@ -25,7 +25,7 @@ case failure
 INSetTaskAttributeIntentResponseCodeFailure
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code for both transient and unrecoverable errors that prevented you from modifying the task.
 

@@ -25,11 +25,11 @@ func vImageConvert_ARGB8888ToRGB16U(_ src: UnsafePointer<vImage_Buffer>, _ dest:
 vImage_Error vImageConvert_ARGB8888ToRGB16U(const vImage_Buffer *src, const vImage_Buffer *dest, const uint8_t permuteMap[3], uint8_t copyMask, const Pixel_16U backgroundColor[3], vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 This function doesn’t work in place.
 

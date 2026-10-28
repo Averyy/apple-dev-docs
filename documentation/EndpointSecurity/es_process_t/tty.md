@@ -20,7 +20,7 @@ var tty: UnsafeMutablePointer<es_file_t>?
 es_file_t * tty;
 ```
 
-#### Discussion
+## Discussion
 
 This field is available if the message version is greater than `2`.
 

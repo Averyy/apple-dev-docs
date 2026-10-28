@@ -18,7 +18,7 @@ var FFEFF_SPHERICAL: Int { get }
 FFEFF_SPHERICAL
 ```
 
-#### Discussion
+## Discussion
 
 Sperical coordinates
 

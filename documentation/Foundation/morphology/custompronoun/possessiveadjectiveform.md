@@ -23,7 +23,7 @@ The posessive adjective pronoun form to apply when using this custom pronoun beh
 var possessiveAdjectiveForm: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 In the English phrase “his bike,” the pronoun “his” exhibits the possesive adjective form.
 

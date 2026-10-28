@@ -16,7 +16,7 @@ Adds the specified run loop to the list of run loops the receiver monitors and f
 - (void) addRunLoop:(NSRunLoop *) runloop;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically when a request comes in from a new run loop if [`enableMultipleThreads`](./enablemultiplethreads.md) has been set.
 

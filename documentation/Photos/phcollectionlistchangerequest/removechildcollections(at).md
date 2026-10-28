@@ -24,7 +24,7 @@ func removeChildCollections(at indexes: IndexSet)
 - (void) removeChildCollectionsAtIndexes:(NSIndexSet *) indexes;
 ```
 
-#### Discussion
+## Discussion
 
 To ensure that the index set you specify is valid even if the collection list has changed since you fetched it, create a change request with a snapshot of the collection list’s contents using the [`init(for:childCollections:)`](./init%28for,childcollections%29.md) method before removing child collections. To remove objects based on their identities (without regard to their indexes in the collection), use the [`removeChildCollections(_:)`](./removechildcollections%28_%29.md) method.
 

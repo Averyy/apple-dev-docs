@@ -15,7 +15,7 @@ The time of departure used in an estimated arrival time request.
 departureDate?: Date;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t specify a departure date, the server will use the current date and time when you make the request.
 

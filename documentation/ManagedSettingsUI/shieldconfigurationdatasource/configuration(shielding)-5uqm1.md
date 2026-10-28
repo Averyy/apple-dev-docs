@@ -17,7 +17,7 @@ Requests a configuration to use for a shield that covers an application.
 func configuration(shielding application: Application) -> ShieldConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 The shield to display.
 

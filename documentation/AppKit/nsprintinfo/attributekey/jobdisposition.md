@@ -19,7 +19,7 @@ static let jobDisposition: NSPrintInfo.AttributeKey
 extern NSPrintInfoAttributeKey const NSPrintJobDisposition;
 ```
 
-#### Discussion
+## Discussion
 
 `NSPrintSpoolJob`, `NSPrintPreviewJob`, `NSPrintSaveJob`, or `NSPrintCancelJob`. See [`jobDisposition`](../jobdisposition-swift.property.md) for details.
 

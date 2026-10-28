@@ -22,11 +22,11 @@ func ports(for mediaType: AVMediaType?, sourceDeviceType: AVCaptureDevice.Device
 - (NSArray<AVCaptureInputPort *> *) portsWithMediaType:(AVMediaType) mediaType sourceDeviceType:(AVCaptureDeviceType) sourceDeviceType sourceDevicePosition:(AVCaptureDevicePosition) sourceDevicePosition;
 ```
 
-#### Return Value
+## Return Value
 
 An array of ports that satisfy the search criteria, or an empty array if there are none.
 
-#### Discussion
+## Discussion
 
 [`AVCaptureMultiCamSession`](../avcapturemulticamsession.md) lets you simultaneously capture from multiple devices. It also lets you capture simultaneous streams from a virtual device, such as the dual camera. You use this method to find the ports associated with a virtual device’s underlying physical devices. A virtual device input’s [`ports`](../avcaptureinput/ports.md) property doesn’t include constituent device ports.
 

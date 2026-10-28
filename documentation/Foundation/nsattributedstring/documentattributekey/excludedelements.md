@@ -15,7 +15,7 @@ The HTML elements to exclude in generated HTML.
 static let excludedElements: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSArray`](../../nsarray.md) object containing [`NSString`](../../nsstring.md) objects, representing HTML elements not to be used in generated HTML.
 

@@ -25,7 +25,7 @@ case undefined
 OSLogEntryLogLevelUndefined
 ```
 
-#### Discussion
+## Discussion
 
 You should never encounter an undefined log level.
 

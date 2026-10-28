@@ -21,7 +21,7 @@ The behavior of a search field in a toolbar.
 struct SearchToolbarBehavior
 ```
 
-#### Overview
+## Overview
 
 Use this type in combination with the [`searchToolbarBehavior(_:)`](./view/searchtoolbarbehavior%28_%29.md) modifier.
 

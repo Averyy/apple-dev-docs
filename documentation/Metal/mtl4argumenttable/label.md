@@ -25,7 +25,7 @@ var label: String? { get }
 @property (nonatomic, readonly, nullable) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 You set this label by setting property [`label`](../mtl4argumenttabledescriptor/label.md) on the descriptor object, prior to creating this table instance.
 

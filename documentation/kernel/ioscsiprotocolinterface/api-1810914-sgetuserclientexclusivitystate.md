@@ -13,7 +13,7 @@ static void sGetUserClientExclusivityState (
  bool *state );
 ```
 
-#### Overview
+## Overview
 
 The sGetUserClientExclusivityState method is a static function used as C->C++ glue for going behind the command gate.
 

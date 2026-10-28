@@ -14,7 +14,7 @@
 DCLCommand *(*AllocateSendPacketWithHeaderStartDCL)(IOFireWireLibDCLCommandPoolRef self, DCLCommand *inDCL, void *inBuffer, IOByteCount inSize);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

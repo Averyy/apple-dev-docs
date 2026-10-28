@@ -21,11 +21,11 @@ CanvasGradient createLinearGradient(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A linear gradient object.
 
-#### Discussion
+## Discussion
 
 You must add at least a starting and ending color stop to a linear gradient before it can be used. The direction of the gradient is specified by the start and end points. When setting the fill style or stroke style for drawing objects, you can pass in a linear gradient object instead of a color. Anything subsequently drawn or filled over the rectangle defined by the starting and ending points of the gradient are rendered using the gradient as a color. Anything drawn outside the rectangle is rendered using the color stop of the nearest edge of the rectangle. All parameter values are in the canvas’s current coordinate system, subject to the current transformation matrix (rotation, scale, and so on).
 

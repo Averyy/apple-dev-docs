@@ -23,7 +23,7 @@ nonisolated func rotation3DLayout(_ angle: Angle, axis: (x: CGFloat, y: CGFloat,
 nonisolated func rotation3DLayout(_ angle: Angle, axis: RotationAxis3D) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The following example will rotate the top plane by 45 degrees while adjusting its frame to account for this rotation. The VStack sizes to fit the rotated and standard models.
 

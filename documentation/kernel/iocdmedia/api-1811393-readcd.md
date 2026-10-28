@@ -27,11 +27,11 @@ virtual IOReturn readCD(
 /* !__LP64__ */
 ```
 
-#### Return Value
+## Return Value
 
 Returns the status of the data transfer.
 
-#### Overview
+## Overview
 
 Read data from the CD media object at the specified byte offset into the specified buffer, synchronously. Special areas of the CD sector can be read via this method, such as the header and subchannel data. When the read completes, this method will return to the caller. The actual byte count field is optional.
 

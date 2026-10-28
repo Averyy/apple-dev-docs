@@ -23,7 +23,7 @@ class let referenceDisplayModeStatusDidChangeNotification: NSNotification.Name
 extern NSNotificationName const UIScreenReferenceDisplayModeStatusDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification’s [`object`](../../Foundation/notification/object.md) is the changed screen. Use that object’s [`referenceDisplayModeStatus`](./referencedisplaymodestatus-swift.property.md) property to retrieve the new status.
 

@@ -29,7 +29,7 @@ func run(_ action: SKAction)
 
 - [Getting Started with Actions](../getting-started-with-actions.md)
 
-#### Discussion
+## Discussion
 
 The new action is processed the next time the scene’s animation loop is processed.
 

@@ -16,7 +16,7 @@ The set of all possible activity categories.
 var activityCategories: Set<ActivityCategory> { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 Each category contains both a `localizedDisplayName` and a `token`.
 

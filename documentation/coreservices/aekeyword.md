@@ -20,7 +20,7 @@ typealias AEKeyword = FourCharCode
 typedef FourCharCode AEKeyword;
 ```
 
-#### Discussion
+## Discussion
 
 The Apple Event Manager uniquely identifies the various parts of an Apple event by means of keywords associated with corresponding descriptors. Keywords are arbitrary names, stored as four-character codes of type `AEKeyword`.
 

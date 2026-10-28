@@ -29,7 +29,7 @@ func makeMTL4CommandQueue() -> (any MTL4CommandQueue)?
 
 - [Understanding the Metal 4 core API](../understanding-the-metal-4-core-api.md)
 
-#### Return Value
+## Return Value
 
 A [`MTL4CommandQueue`](../mtl4commandqueue.md) instance, or `nil` if the function failed.
 

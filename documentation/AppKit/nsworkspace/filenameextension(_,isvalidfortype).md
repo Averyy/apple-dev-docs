@@ -21,11 +21,11 @@ func filenameExtension(_ filenameExtension: String, isValidForType typeName: Str
 - (BOOL) filenameExtension:(NSString *) filenameExtension isValidForType:(NSString *) typeName;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `fileNameExtension` is a valid extension for `typeName`; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 You can safely call this method from any thread of your app.
 

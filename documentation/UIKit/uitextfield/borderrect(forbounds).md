@@ -23,11 +23,11 @@ func borderRect(forBounds bounds: CGRect) -> CGRect
 - (CGRect) borderRectForBounds:(CGRect) bounds;
 ```
 
-#### Return Value
+## Return Value
 
 The border rectangle for the receiver.
 
-#### Discussion
+## Discussion
 
 You should not call this method directly. If you want to provide a different border rectangle for drawing, you can override this method and return that rectangle.
 

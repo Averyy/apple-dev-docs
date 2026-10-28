@@ -22,7 +22,7 @@ nonisolated
 struct PhaseAnimator<Phase, Content> where Phase : Equatable, Content : View
 ```
 
-#### Overview
+## Overview
 
 Use one of the phase animator view modifiers like [`phaseAnimator(_:content:animation:)`](./view/phaseanimator%28_,content,animation%29.md) to create a phased animation in your app.
 

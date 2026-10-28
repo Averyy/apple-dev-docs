@@ -22,7 +22,7 @@ The current contents of the view, rasterized as a Core Graphics image.
 final var cgImage: CGImage? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The renderer notifies its `objectWillChange` publisher when the contents of the image may have changed.
 

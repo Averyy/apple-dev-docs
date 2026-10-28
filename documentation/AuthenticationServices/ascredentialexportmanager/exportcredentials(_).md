@@ -19,7 +19,7 @@ Exports the provided credential data.
 func exportCredentials(_ credentialData: ASExportedCredentialData) async throws
 ```
 
-#### Discussion
+## Discussion
 
 After you call the [`requestExport(for:)`](./requestexport%28for%29.md) method and collect the credentials to export, pack the credentials into an [`ASExportedCredentialData`](../asexportedcredentialdata.md) object and call this method.
 

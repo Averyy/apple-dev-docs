@@ -21,7 +21,7 @@ func viewSizeChanged(_ sender: Any?)
 - (void) viewSizeChanged:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to perform special preparation when resizing the color picker’s view. Because this method is invoked only as appropriate, it’s better to implement this method than to override the method `superviewSizeChanged:` for the `NSView` in which the color picker’s user interface is contained.
 

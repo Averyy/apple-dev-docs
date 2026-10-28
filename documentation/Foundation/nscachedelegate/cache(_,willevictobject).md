@@ -25,7 +25,7 @@ optional func cache(_ cache: NSCache<AnyObject, AnyObject>, willEvictObject obj:
 - (void) cache:(NSCache *) cache willEvictObject:(id) obj;
 ```
 
-#### Discussion
+## Discussion
 
 It is not possible to modify `cache` from within the implementation of this delegate method.
 

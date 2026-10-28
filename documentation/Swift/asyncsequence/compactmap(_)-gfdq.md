@@ -22,11 +22,11 @@ Creates an asynchronous sequence that maps the given closure over the asynchrono
 func compactMap<ElementOfResult>(_ transform: @escaping @Sendable (Self.Element) async -> ElementOfResult?) -> AsyncCompactMapSequence<Self, ElementOfResult>
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence that contains, in order, the non-`nil` elements produced by the `transform` closure.
 
-#### Discussion
+## Discussion
 
 Use the `compactMap(_:)` method to transform every element received from a base asynchronous sequence, while also discarding any `nil` results from the closure. Typically, you use this to transform from one type of element to another.
 

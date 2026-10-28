@@ -19,7 +19,7 @@ func convertPoint(toImagePoint viewPoint: NSPoint) -> NSPoint
 - (NSPoint) convertViewPointToImagePoint:(NSPoint) viewPoint;
 ```
 
-#### Return Value
+## Return Value
 
 The point specified in coordinates relative to the image.
 

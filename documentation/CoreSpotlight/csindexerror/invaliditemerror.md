@@ -19,7 +19,7 @@ The searchable item object is invalid.
 static var invalidItemError: CSIndexError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Verify the information in your [`CSSearchableItem`](../cssearchableitem.md) object is correct.
 

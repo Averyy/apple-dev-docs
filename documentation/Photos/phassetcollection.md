@@ -29,7 +29,7 @@ class PHAssetCollection
 - [Requesting Changes to the Photo Library](../PhotoKit/requesting-changes-to-the-photo-library.md)
 - [Fetching Objects and Requesting Changes](../PhotoKit/fetching-objects-and-requesting-changes.md)
 
-#### Overview
+## Overview
 
 In the Photos framework, collection objects (including asset collections) do not directly reference their member objects, and there are no other objects that directly reference collection objects. To retrieve the members of an asset collection, fetch them with a [`PHAsset`](./phasset.md) class method such as [`fetchAssets(in:options:)`](./phasset/fetchassets%28in,options%29.md). To find asset collections, use one of the methods listed in the Fetching Asset Collections group below.
 

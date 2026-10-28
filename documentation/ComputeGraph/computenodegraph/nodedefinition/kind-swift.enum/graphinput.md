@@ -21,7 +21,7 @@ Return a uniform value supplied externally.
 case graphInput
 ```
 
-#### Discussion
+## Discussion
 
 If no inputs exist on the node, space for the output will be allocated.
 

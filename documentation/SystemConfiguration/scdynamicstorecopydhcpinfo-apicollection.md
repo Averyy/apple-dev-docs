@@ -3,7 +3,7 @@
 **Framework**: System Configuration  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 The functions of the `SCDynamicStoreCopyDHCPInfo` programming interface provide access to information returned by the DHCP or BootP server.
 

@@ -21,11 +21,11 @@ typealias SecKeychainCallback = (SecKeychainEvent, UnsafeMutablePointer<SecKeych
 typedef int (*)(enum SecKeychainEvent, struct SecKeychainCallbackInfo *, void *) SecKeychainCallback;
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Codes`.
 
-#### Discussion
+## Discussion
 
 You would declare your keychain callback function like this if you were to name it `MyKeychainCallback`:
 

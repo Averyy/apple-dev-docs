@@ -25,7 +25,7 @@ var isPublic: Bool { get }
 @property (readonly, getter=isPublicType) BOOL publicType;
 ```
 
-#### Discussion
+## Discussion
 
 Types in the public domain have identifiers starting with `public`, and are generally defined by a standards body or by convention. Public types aren’t dynamic.
 

@@ -20,7 +20,7 @@ func receivedError(_ error: (any Error)!, with dataSource: WebDataSource!)
 - (void) receivedError:(NSError *) error withDataSource:(WebDataSource *) dataSource;
 ```
 
-#### Discussion
+## Discussion
 
 The `error` argument contains details on the error that occurred.
 

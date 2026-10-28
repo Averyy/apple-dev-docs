@@ -25,7 +25,7 @@ let kCTFontNameAttribute: CFString
 extern CFStringRef const kCTFontNameAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value associated with this key is a [`CFString`](../CoreFoundation/cfstring.md) object. If the value is unspecified, it defaults to `Helvetica`, and if that font is unavailable, it falls back to the global font cascade list.
 

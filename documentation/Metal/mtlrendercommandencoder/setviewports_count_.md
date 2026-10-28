@@ -20,7 +20,7 @@ Configures the render pipeline with multiple viewports that apply transformation
 - (void) setViewports:(const MTLViewport[]) viewports count:(NSUInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to configure multiple active viewports and corresponding scissor rectangles. Multiple viewports give your app the ability to draw into separate areas of an image with a single draw call. You can either set a single scissor rectangle for all viewports with the [`setScissorRect(_:)`](./setscissorrect%28_%29.md) method, or set each viewport’s rectangle with the [`setScissorRects(_:)`](./setscissorrects%28_%29.md) method.
 

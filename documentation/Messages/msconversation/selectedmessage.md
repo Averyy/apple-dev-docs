@@ -21,7 +21,7 @@ var selectedMessage: MSMessage? { get }
 @property (nonatomic, readonly, nullable) MSMessage * selectedMessage;
 ```
 
-#### Discussion
+## Discussion
 
 If the user selected one of your extension’s messages in the conversation transcript, this property is set to the selected message object. Otherwise, it is set to `nil`.
 

@@ -13,7 +13,7 @@
 #define DATA_QUEUE_MEMORY_APPENDIX_SIZE
 ```
 
-#### Discussion
+## Discussion
 
 Represents the size of the data queue memory appendix independent of the actual size of the queue data itself. The total size of the queue memory is equal to this value plus the size of queue header and size of the queue data region which is stored in the queueSize field of IODataQueueMeory.
 

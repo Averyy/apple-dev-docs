@@ -13,7 +13,7 @@
 kINQUIRY_Page83_ProtocolIdentifierValidMask = (1 << kINQUIRY_Page83_ProtocolIdentifierValidBit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to use to determine if PIV is set.
 

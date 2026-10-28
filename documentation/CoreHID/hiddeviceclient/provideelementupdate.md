@@ -19,7 +19,7 @@ struct ProvideElementUpdate
 
 - [Communicating with human interface devices](../communicatingwithhiddevices.md)
 
-#### Overview
+## Overview
 
 Provide this structure to [`updateElements(_:timeout:)`](./updateelements%28_,timeout%29.md) to update the current values for a list of elements. In most cases, this triggers a set report request to the device for all of the reports containing elements in the provided element list.
 

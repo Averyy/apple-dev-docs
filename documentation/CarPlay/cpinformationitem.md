@@ -21,7 +21,7 @@ class CPInformationItem
 @interface CPInformationItem : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`CPInformationTemplate`](./cpinformationtemplate.md) uses information items to populate the rows of its list. Depending on the template’s layout, the item’s [`title`](./cpinformationitem/title.md) and [`detail`](./cpinformationitem/detail.md) values stack vertically or horizontally in the row. Use the `title` property to describe the content, and the `detail` property to provide the content. For example, when using `CPInformationTemplate` to present a food order summary, you could provide an item that displays the number of minutes until the order is ready.
 

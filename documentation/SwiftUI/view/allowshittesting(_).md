@@ -22,7 +22,7 @@ nonisolated
 func allowsHitTesting(_ enabled: Bool) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Specify `true` to indicate this view participates in hit testing for a method such as [`hitTest(_:)`](../nshostingview/hittest%28_%29.md) to determine whether a point is inside a view. Otherwise specify `false`.
 

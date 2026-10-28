@@ -4,7 +4,7 @@
 
 Override methods to handle user-initiated actions.
 
-#### Overview
+## Overview
 
 When the user performs an action in the document browser (for example, moving, renaming, or deleting an item) the system calls the corresponding method on your [`NSFileProviderExtension`](./nsfileproviderextension.md) subclass.
 

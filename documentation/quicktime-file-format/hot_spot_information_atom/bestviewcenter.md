@@ -6,7 +6,7 @@
 
 The best view center for viewing this hot spot.
 
-#### Overview
+## Overview
 
 Applies only to object nodes.
 

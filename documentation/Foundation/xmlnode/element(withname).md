@@ -20,11 +20,11 @@ class func element(withName name: String) -> Any
 + (id) elementWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSXMLElement` object or `nil` if the object couldn’t be created.
 
-#### Discussion
+## Discussion
 
 The equivalent XML markup is `<``name``></``name``>`.
 

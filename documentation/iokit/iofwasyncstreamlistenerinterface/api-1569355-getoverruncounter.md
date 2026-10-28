@@ -16,7 +16,7 @@ get overrun counter from the DCL program.
 UInt32 (*GetOverrunCounter)(IOFWAsyncStreamListenerInterfaceRef self);
 ```
 
-#### Return Value
+## Return Value
 
 returns the counter value.
 

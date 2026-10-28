@@ -23,11 +23,11 @@ convenience init(title: String?, message: String?, preferredStyle: UIAlertContro
 + (instancetype) alertControllerWithTitle:(NSString *) title message:(NSString *) message preferredStyle:(UIAlertControllerStyle) preferredStyle;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized alert controller object.
 
-#### Discussion
+## Discussion
 
 After creating the alert controller, configure any actions that you want people to be able to perform by calling the [`addAction(_:)`](./addaction%28_%29.md) method one or more times. When specifying a preferred style of [`UIAlertController.Style.alert`](./style/alert.md), you may also configure one or more text fields to display in addition to the actions.
 

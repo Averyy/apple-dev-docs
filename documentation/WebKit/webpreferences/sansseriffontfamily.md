@@ -19,7 +19,7 @@ var sansSerifFontFamily: String! { get set }
 @property (nonatomic, copy) NSString * sansSerifFontFamily;
 ```
 
-#### Discussion
+## Discussion
 
 This preference affects text whose properties indicate that it should be displayed in a sans-serif font but do not specify a particular font.
 

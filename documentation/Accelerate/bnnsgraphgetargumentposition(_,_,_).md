@@ -25,7 +25,7 @@ func BNNSGraphGetArgumentPosition(_ graph: bnns_graph_t, _ function: UnsafePoint
 size_t BNNSGraphGetArgumentPosition(const bnns_graph_t graph, const char *function, const char *argument);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the index into the arguments array for the given function argument, or `SIZE_T_MAX` if the query fails.
 

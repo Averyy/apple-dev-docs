@@ -5,7 +5,7 @@
 
 Predefined locale keys used to get calendar values—values for `kCFLocaleCalendarIdentifier`.
 
-#### Overview
+## Overview
 
 Locale objects use key-value pairs to store property values. Use the [`CFLocaleGetValue(_:_:)`](./cflocalegetvalue%28_,_%29.md) function to get the value of a specific property listed above.
 

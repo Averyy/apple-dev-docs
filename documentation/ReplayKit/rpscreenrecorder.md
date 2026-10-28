@@ -26,7 +26,7 @@ class RPScreenRecorder
 @interface RPScreenRecorder : NSObject
 ```
 
-#### Overview
+## Overview
 
 Apps on a user’s device can share the recording function, with each app having its own instance of  `RPScreenRecorder`. Your app can record the audio and video inside of the app, along with user commentary through the microphone. You get a reference to the recorder through the [`shared()`](./rpscreenrecorder/shared%28%29.md) function and use it to implement start-and-stop recording functionality. You can present a user interface (view controller) where a user can trim and preview recordings, and share them with other users. Only one app at a time can use the recorder on the user’s device. Your app can’t record video from [`AVPlayer`](../AVFoundation/avplayer.md).
 

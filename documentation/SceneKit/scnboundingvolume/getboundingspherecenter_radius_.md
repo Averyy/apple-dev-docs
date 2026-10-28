@@ -21,11 +21,11 @@ Gets the center point and radius of the object’s bounding sphere.
 - (BOOL) getBoundingSphereCenter:(SCNVector3 *) center radius:(CGFloat *) radius;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the object has a nonzero volume; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Scene Kit defines a bounding sphere in the local coordinate space using a center point and a radius. For example, if a node’s bounding sphere has the center point `{3, 1, 4}` and radius `2.0`, all points in the vertex data of node’s geometry (and any geometry attached to its child nodes) lie within `2.0` units of the center point.
 

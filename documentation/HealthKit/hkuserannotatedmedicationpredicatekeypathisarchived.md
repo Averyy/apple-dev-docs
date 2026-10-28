@@ -24,7 +24,7 @@ let HKUserAnnotatedMedicationPredicateKeyPathIsArchived: String
 extern NSString * const HKUserAnnotatedMedicationPredicateKeyPathIsArchived;
 ```
 
-#### Discussion
+## Discussion
 
 Use to predicate against the [`isArchived`](./hkuserannotatedmedication/isarchived.md) property of a medication.
 

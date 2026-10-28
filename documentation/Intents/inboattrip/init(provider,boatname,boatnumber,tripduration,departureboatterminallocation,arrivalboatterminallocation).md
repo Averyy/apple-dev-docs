@@ -24,7 +24,7 @@ init(provider: String?, boatName: String?, boatNumber: String?, tripDuration: IN
 - (instancetype) initWithProvider:(NSString *) provider boatName:(NSString *) boatName boatNumber:(NSString *) boatNumber tripDuration:(INDateComponentsRange *) tripDuration departureBoatTerminalLocation:(CLPlacemark *) departureBoatTerminalLocation arrivalBoatTerminalLocation:(CLPlacemark *) arrivalBoatTerminalLocation;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INBoatTrip`](../inboattrip.md) object or `nil` if the initializer can’t create one.
 

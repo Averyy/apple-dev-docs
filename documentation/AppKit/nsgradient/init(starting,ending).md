@@ -19,7 +19,7 @@ convenience init?(starting startingColor: NSColor, ending endingColor: NSColor)
 - (instancetype) initWithStartingColor:(NSColor *) startingColor endingColor:(NSColor *) endingColor;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSGradient` object.
 

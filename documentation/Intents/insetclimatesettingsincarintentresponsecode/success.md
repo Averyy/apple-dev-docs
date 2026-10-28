@@ -24,7 +24,7 @@ case success
 INSetClimateSettingsInCarIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code if your app successfully changed the climate control settings to the new values.
 

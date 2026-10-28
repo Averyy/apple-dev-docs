@@ -25,7 +25,7 @@ var NEFilterFlowBytesMax: UInt64 { get }
 #define NEFilterFlowBytesMax
 ```
 
-#### Discussion
+## Discussion
 
 When used as a pass value, this value directs to flow to pass all upcoming bytes. When used as a peek value, it indicates the flow should peek as many bytes as possible.
 

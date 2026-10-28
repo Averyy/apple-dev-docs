@@ -21,7 +21,7 @@ Creates a character with the specified value.
 init(extendedGraphemeClusterLiteral value: Character)
 ```
 
-#### Discussion
+## Discussion
 
 Do not call this initializer directly. It is used by the compiler when you use a string literal to initialize a `Character` instance. For example:
 

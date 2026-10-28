@@ -15,7 +15,7 @@ A protocol for seats at the table that players occupy.
 protocol TableSeat : Identifiable where Self.ID == TableSeatIdentifier
 ```
 
-#### Overview
+## Overview
 
 To represent seats in your game, follow these steps:
 

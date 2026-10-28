@@ -25,11 +25,11 @@ func CFURLCopyResourcePropertiesForKeys(_ url: CFURL!, _ keys: CFArray!, _ error
 extern CFDictionaryRefCFURLCopyResourcePropertiesForKeys(CFURLRef url, CFArrayRef keys, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of resource values indexed by key, or `NULL` if an error occurs.
 
-#### Discussion
+## Discussion
 
 This function first checks if the URL object already caches the specified resource values. If so, it returns the cached resource values to the caller. If not, then this function synchronously obtains the resource values from the backing store, adds the resource values to the URL object’s cache, and returns the resource values to the caller.
 

@@ -22,7 +22,7 @@ var notifyEntryStateOnDisplay: Bool { get set }
 @property (atomic, assign) BOOL notifyEntryStateOnDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 When you set this to [`true`](../../Swift/true.md), the location manager sends beacon notifications when the user turns on the display and the device is already inside the region. These are notifications the framework sends even if your app isn’t running. In that situation, the system launches your app into the background so that it can handle the notifications. In both situations, the location manager calls the [`locationManager(_:didDetermineState:for:)`](../cllocationmanagerdelegate/locationmanager%28_,diddeterminestate,for%29.md) method of its delegate object.
 

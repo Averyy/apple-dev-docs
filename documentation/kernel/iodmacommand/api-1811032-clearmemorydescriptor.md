@@ -12,7 +12,7 @@ virtual IOReturn clearMemoryDescriptor(
  bool autoComplete = true);
 ```
 
-#### Overview
+## Overview
 
 completes and invalidates the cache if the DMA command is currently active, copies all data from bounce buffers if necessary and releases all resources acquired during setMemoryDescriptor.
 

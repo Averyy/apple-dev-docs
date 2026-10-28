@@ -21,7 +21,7 @@ Creates a new string representing the given string repeated the specified number
 init(repeating repeatedValue: String, count: Int)
 ```
 
-#### Discussion
+## Discussion
 
 For example, you can use this initializer to create a string with ten `"ab"` strings in a row.
 

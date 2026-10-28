@@ -20,7 +20,7 @@ A path component to name a material parameter to animate
 case materialParameter(String)
 ```
 
-#### Discussion
+## Discussion
 
 This path component terminates an array of paths, and at the same time specifies the material parameter to be animated
 

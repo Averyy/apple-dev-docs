@@ -19,7 +19,7 @@ enum State
 enum NSDrawerState : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants are returned by [`state`](./state-swift.property.md).
 

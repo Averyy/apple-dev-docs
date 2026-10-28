@@ -23,7 +23,7 @@ var statusBarVisibility: NSNumber? { get }
 @property (nonatomic, readonly, nullable) NSNumber * statusBarVisibility;
 ```
 
-#### Discussion
+## Discussion
 
 If the webpage didn’t request a visible status bar, this property is `nil`.
 

@@ -23,7 +23,7 @@ func randomSplit(by proportion: Double, seed: Int? = nil) -> (RowGrouping<Groupi
 
 Available when `GroupingKey` conforms to `Hashable`.
 
-#### Return Value
+## Return Value
 
 A tuple of two row groupings.
 

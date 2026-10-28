@@ -22,7 +22,7 @@ An attribute defining the explicit horizontal alignment of a paragraph.
 enum TextAlignmentAttribute
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: Note that this attribute is not for usage with CoreText APIs directly, but exposed to give other frameworks common vocabulary to express the text alignment concept as defined by CoreText in Swift. For more details, see [`AttributeScopes.CoreTextAttributes`](../coretextattributes.md).
 

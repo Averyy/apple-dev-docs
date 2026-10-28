@@ -27,7 +27,7 @@ var focalBlurRadius: CGFloat { get set }
 @property (nonatomic) CGFloat focalBlurRadius;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `0.0`, disabling the depth of field visual effect. Changing this property to a nonzero value enables the depth of field effect, in which only objects at a specified distance from the camera appear in sharp focus, and objects nearer to or farther from the camera appear increasingly blurred (up to the amount specified by this property).
 

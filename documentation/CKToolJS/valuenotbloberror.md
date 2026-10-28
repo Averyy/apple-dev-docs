@@ -15,7 +15,7 @@ An error a validator emits when a value isn’t a `Blob`.
 interface ValueNotBlobError
 ```
 
-#### Overview
+## Overview
 
 Extends `ValueNotConvertibleToTypeError`.
 

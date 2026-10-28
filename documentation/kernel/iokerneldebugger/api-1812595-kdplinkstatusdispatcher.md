@@ -12,11 +12,11 @@ static UInt32 kdpLinkStatusDispatcher(
  void);
 ```
 
-#### Return Value
+## Return Value
 
 Return link status.
 
-#### Overview
+## Overview
 
 Field KDP link status requests, then dispatches the call to the registered link up handler.
 

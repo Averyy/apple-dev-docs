@@ -27,7 +27,7 @@ func startDownload(using request: URLRequest) async -> WKDownload
 - (void) startDownloadUsingRequest:(NSURLRequest *) request completionHandler:(void (^)(WKDownload *)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 To receive progress updates, set the delegate of the download object in the completion handler.
 

@@ -24,7 +24,7 @@ case lineSpacing
 kCTParagraphStyleSpecifierLineSpacing
 ```
 
-#### Discussion
+## Discussion
 
 Instead, use [`CTParagraphStyleSpecifier.maximumLineSpacing`](./maximumlinespacing.md), [`CTParagraphStyleSpecifier.minimumLineSpacing`](./minimumlinespacing.md), and [`CTParagraphStyleSpecifier.lineSpacingAdjustment`](./linespacingadjustment.md) to control space between lines. This value is always nonnegative. Type: [`CGFloat`](../../CoreFoundation/cgfloat-swift.struct.md). Default value: `0.0`. Affects: [`CTFramesetter`](../ctframesetter.md).
 

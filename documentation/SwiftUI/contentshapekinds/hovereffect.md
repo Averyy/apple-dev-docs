@@ -19,7 +19,7 @@ The kind for hover effects.
 static let hoverEffect: ContentShapeKinds
 ```
 
-#### Discussion
+## Discussion
 
 When using this kind, only the preview shape is affected. To control the shape used to hit-test and start the effect, use the `interaction` kind.
 

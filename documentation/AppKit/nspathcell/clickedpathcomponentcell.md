@@ -19,7 +19,7 @@ var clickedPathComponentCell: NSPathComponentCell? { get }
 @property (strong, readonly, nullable) NSPathComponentCell * clickedPathComponentCell;
 ```
 
-#### Discussion
+## Discussion
 
 When setting, an array of `NSPathComponentCell` objects is automatically set, based on the path in `url`. The type of `NSPathComponentCell` objects created can be controlled by subclassing `NSPathCell` and overriding [`pathComponentCellClass`](./pathcomponentcellclass.md).
 

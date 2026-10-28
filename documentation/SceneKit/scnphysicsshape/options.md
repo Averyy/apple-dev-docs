@@ -25,7 +25,7 @@ var options: [SCNPhysicsShape.Option : Any]? { get }
 @property (nonatomic, readonly, nullable) NSDictionary<NSString *,id> * options;
 ```
 
-#### Discussion
+## Discussion
 
 You provide this dictionary in the [`init(geometry:options:)`](./init%28geometry,options%29.md) or [`init(node:options:)`](./init%28node,options%29.md) method. Use this dictionary along with the [`sourceObject`](./sourceobject.md) property to recover the information that was used to create the shape.
 

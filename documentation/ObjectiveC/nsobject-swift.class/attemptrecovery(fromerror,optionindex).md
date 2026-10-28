@@ -25,11 +25,11 @@ func attemptRecovery(fromError error: any Error, optionIndex recoveryOptionIndex
 - (BOOL) attemptRecoveryFromError:(NSError *) error optionIndex:(NSUInteger) recoveryOptionIndex;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the error recovery was completed successfully, [`NO`](../no.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Invoked when an error alert is been presented to the user in an application-modal dialog, and the user has selected an error recovery option specified by `error`.
 

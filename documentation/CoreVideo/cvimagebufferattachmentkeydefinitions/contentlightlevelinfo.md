@@ -21,7 +21,7 @@ The content light level information for the image.
 static var contentLightLevelInfo: CVAttachmentKeyDefinition<Self.ShouldPropagate, Data> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is a 4 byte big-endian data sequence to match the payload of the content light level information metadata in the supplemental enhancement information (SEI) message.
 

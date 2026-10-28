@@ -21,11 +21,11 @@ func CGConfigureDisplayMode(_ config: CGDisplayConfigRef?, _ display: CGDirectDi
 extern CGError CGConfigureDisplayMode(CGDisplayConfigRef config, CGDirectDisplayID display, CFDictionaryRef mode);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See `Core Graphics Data Types and Constants`.
 
-#### Discussion
+## Discussion
 
 A display mode is a set of properties such as width, height, pixel depth, and refresh rate, and options such as stretched LCD panel filling.
 
@@ -36,7 +36,7 @@ The display mode you provide must be one of the following:
 
 If you use this function to change the mode of a display in a mirroring set, Quartz may adjust the bounds, resolutions, and depth of the other displays in the set to a safe mode, with matching depth and the smallest enclosing size.
 
-##### Special Considerations
+### Special Considerations
 
 This deprecated function takes as a parameter a display mode dictionary. Starting in OS X v10.6, display mode dictionaries have been replaced by the `CGDisplayMode` opaque type. For information on the `CGDisplayMode` opaque type, see [Getting Information About a Display Mode](./quartz-display-services.md#Getting-Information-About-a-Display-Mode).
 

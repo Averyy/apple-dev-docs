@@ -25,7 +25,7 @@ func setParent(_ parentRecordID: CKRecord.ID?)
 - (void) setParentReferenceFromRecordID:(CKRecordID *) parentRecordID;
 ```
 
-#### Discussion
+## Discussion
 
 This method creates and sets a [`CKRecord.Reference`](./reference.md) object that points to the record you provide. The resulting `CKReference` has an action of [`CKRecord.ReferenceAction.none`](./referenceaction/none.md).
 

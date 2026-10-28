@@ -24,11 +24,11 @@ static OSDataPtr withCapacity(uint32_t capacity);
 static OSPtr<OSData> withCapacity(unsigned int capacity);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSData with reference count 1 to be released by the caller.
 
-#### Discussion
+## Discussion
 
 Allocates an OSData object with preallocated capacity. The OSData will have zero length until data is added to it with appendBytes().
 

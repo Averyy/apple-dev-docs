@@ -25,7 +25,7 @@ var allocatedSize: UInt64 { get }
 @property (readonly) uint64_t allocatedSize;
 ```
 
-#### Discussion
+## Discussion
 
 The residency set updates the property’s value when you call the [`commit()`](./commit%28%29.md) method.
 

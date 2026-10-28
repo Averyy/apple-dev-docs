@@ -19,7 +19,7 @@ enum BackgroundStyle
 enum NSBackgroundStyle : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Apply these styles to the [`backgroundStyle`](../nscell/backgroundstyle.md) or [`interiorBackgroundStyle`](../nscell/interiorbackgroundstyle.md) properties of an [`NSCell`](../nscell.md) object.
 

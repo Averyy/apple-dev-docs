@@ -31,7 +31,7 @@ var code: INListRideOptionsIntentResponseCode { get }
 @property (atomic, readonly) INListRideOptionsIntentResponseCode code;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set automatically at initialization time and can’t be changed later.
 

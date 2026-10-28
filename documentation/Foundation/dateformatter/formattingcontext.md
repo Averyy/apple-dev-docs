@@ -25,7 +25,7 @@ var formattingContext: Formatter.Context { get set }
 @property NSFormattingContext formattingContext;
 ```
 
-#### Discussion
+## Discussion
 
 The formatting context allows the formatter to apply appropriate capitalization depending on how the how the string will be used, and whether the locale makes capitalization distinctions.
 

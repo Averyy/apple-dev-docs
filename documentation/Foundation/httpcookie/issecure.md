@@ -25,7 +25,7 @@ var isSecure: Bool { get }
 @property (readonly, getter=isSecure) BOOL secure;
 ```
 
-#### Discussion
+## Discussion
 
 This value is [`true`](../../Swift/true.md) if this cookie should only be sent over secure channels, otherwise [`false`](../../Swift/false.md).
 

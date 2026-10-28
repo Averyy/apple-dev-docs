@@ -23,7 +23,7 @@ var kDNSServiceType_TKEY: Int { get }
 kDNSServiceType_TKEY
 ```
 
-#### Discussion
+## Discussion
 
 Transaction key
 

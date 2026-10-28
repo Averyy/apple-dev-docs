@@ -23,7 +23,7 @@ var automaticReloadPaymentRequest: PKAutomaticReloadPaymentRequest? { get set }
 @property (nonatomic, strong, nullable) PKAutomaticReloadPaymentRequest * automaticReloadPaymentRequest;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property by assigning it to an instance of [`PKAutomaticReloadPaymentRequest`](../pkautomaticreloadpaymentrequest.md) to indicate that the payment request is for an automatic reload payment.
 

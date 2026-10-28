@@ -23,11 +23,11 @@ init(item: any UIDynamicItem, snapTo point: CGPoint)
 - (instancetype) initWithItem:(id<UIDynamicItem>) item snapToPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized snap behavior, or `nil` if there was a problem initializing the object.
 
-#### Discussion
+## Discussion
 
 At the conclusion of a snap, the rotation value (as indicated by the [`transform`](../uidynamicitem/transform.md) property) for a dynamic item is `0`.
 

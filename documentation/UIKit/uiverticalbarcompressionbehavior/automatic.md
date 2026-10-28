@@ -23,7 +23,7 @@ case automatic
 UIVerticalBarCompressionBehaviorAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 On iOS, this behavior prefers the tab bar.
 

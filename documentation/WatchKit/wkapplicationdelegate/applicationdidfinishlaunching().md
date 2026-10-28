@@ -19,7 +19,7 @@ optional func applicationDidFinishLaunching()
 - (void) applicationDidFinishLaunching;
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit calls this method after the launch cycle has finished and before your app’s interface is active. Use this method to complete your watchOS apps initialization and prepare it to run. For example, a page-based app could use this method to call the [`reloadRootControllers(withNames:contexts:)`](../wkinterfacecontroller/reloadrootcontrollers%28withnames,contexts%29.md) method to specify the initial set of interface controllers to display.
 

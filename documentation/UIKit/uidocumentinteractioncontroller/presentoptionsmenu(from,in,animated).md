@@ -22,11 +22,11 @@ func presentOptionsMenu(from rect: CGRect, in view: UIView, animated: Bool) -> B
 - (BOOL) presentOptionsMenuFromRect:(CGRect) rect inView:(UIView *) view animated:(BOOL) animated;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the options menu was displayed or [`false`](../../Swift/false.md) if it was not. The options menu may not be displayed in cases where there are no appropriate items to include in the menu.
 
-#### Discussion
+## Discussion
 
 The contents of the options menu are built dynamically based on three things:
 

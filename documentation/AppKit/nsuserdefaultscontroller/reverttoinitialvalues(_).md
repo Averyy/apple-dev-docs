@@ -20,7 +20,7 @@ func revertToInitialValues(_ sender: Any?)
 - (void) revertToInitialValues:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This effectively sets the preferences that a user can change to their “out-of-the-box” values. This method has no effect if initial values were not specified. The `sender` is typically the object that invoked this method.
 

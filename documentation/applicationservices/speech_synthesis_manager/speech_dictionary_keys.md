@@ -5,7 +5,7 @@
 
 Keys used in a speech dictionary to override the synthesizer’s default pronunciation of a word.
 
-#### Overview
+## Overview
 
 The keys in a speech dictionary can determine how a synthesizer pronounces a word. After you’ve created a speech dictionary, you register it with a speech channel with the [`UseSpeechDictionary(_:_:)`](../api-1463688-usespeechdictionary.md) function.
 

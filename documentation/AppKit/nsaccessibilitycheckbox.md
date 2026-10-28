@@ -19,7 +19,7 @@ protocol NSAccessibilityCheckBox : NSAccessibilityButton
 @protocol NSAccessibilityCheckBox <NSAccessibilityButton>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol when you want a user interface element to behave like a checkbox—a control that toggles between an on state, an off state, and an optional mixed state—in the accessibility hierarchy.
 

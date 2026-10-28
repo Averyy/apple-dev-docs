@@ -21,7 +21,7 @@ Configuration settings for formatting numbers of different types.
 enum NumberFormatStyleConfiguration
 ```
 
-#### Overview
+## Overview
 
 This type is effectively a namespace to collect types that configure parts of a formatted number, such as grouping, precision, and separator and sign characters.
 

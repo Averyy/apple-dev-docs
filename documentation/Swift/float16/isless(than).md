@@ -21,11 +21,11 @@ Returns a Boolean value indicating whether this instance is less than the given 
 func isLess(than other: Float16) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if this value is less than `other`; otherwise, `false`. If either this value or `other` is NaN, the result of this method is `false`.
 
-#### Discussion
+## Discussion
 
 This method serves as the basis for the less-than operator (`<`) for floating-point values. Some special cases apply:
 

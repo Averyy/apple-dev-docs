@@ -6,9 +6,9 @@
 
 Get the administrators for subscriptions that your organization manages.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

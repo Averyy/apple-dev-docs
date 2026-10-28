@@ -23,7 +23,7 @@ var canBeginTrimming: Bool { get }
 
 - [Trimming and exporting media in visionOS](../trimming-and-exporting-media-in-visionos.md)
 
-#### Discussion
+## Discussion
 
 Not all media supports trimming. For example, this property returns `false` for HTTP Live Streaming media or protected content.
 

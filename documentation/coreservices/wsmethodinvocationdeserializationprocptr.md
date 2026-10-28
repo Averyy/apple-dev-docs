@@ -15,15 +15,15 @@ This is an optional callback that handles custom deserialization of a particular
 typedef CFTypeRef (*WSMethodInvocationDeserializationProcPtr)(WSMethodInvocationRef invocation, CFXMLTreeRef msgRoot, CFXMLTreeRef deserializeRoot, void *info);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFTypeRef` representing the deserialized data. The caller will release this data. If you return `NULL`, the default deserializer is used.
 
-#### Discussion
+## Discussion
 
 If your callback is named MyDeserilaizerCallback, declare it like this:
 
-##### Discussion
+### Discussion
 
 This callback is passed a reference to the invocation currently being executed, the root of the response parse tree, the current node being deserialized, and a pointer to private data. The return result should be a valid `CFTypeRef` object (which will be released  by the caller) or `NULL` to allow the default deserializer to act. Unlike the serialization callback, which is called only for a specified data type, the deserialization callback is called for every element to be deserialized.
 

@@ -32,7 +32,7 @@ var payer: INPerson? { get }
 @property (atomic, copy, readonly, nullable) INPerson * payer;
 ```
 
-#### Discussion
+## Discussion
 
 Use the payer information to determine which user to notify.
 

@@ -21,7 +21,7 @@ Resume the task awaiting the continuation by having it throw an error from its s
 func resume(throwing error: E)
 ```
 
-#### Discussion
+## Discussion
 
 A continuation must be resumed exactly once. If the continuation has already been resumed through this object, then the attempt to resume the continuation will trap.
 

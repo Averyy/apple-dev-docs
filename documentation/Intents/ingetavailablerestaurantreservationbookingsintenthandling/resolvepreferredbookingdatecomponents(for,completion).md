@@ -26,7 +26,7 @@ optional func resolvePreferredBookingDateComponents(for intent: INGetAvailableRe
 - (void) resolvePreferredBookingDateComponentsForGetAvailableRestaurantReservationBookings:(INGetAvailableRestaurantReservationBookingsIntent *) intent withCompletion:(void (^)(INDateComponentsResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the date used when generating the reservation times.
 

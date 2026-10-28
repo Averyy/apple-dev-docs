@@ -19,7 +19,7 @@ func getTypeDescriptor() -> BluetoothSDPDataElementTypeDescriptor
 - (BluetoothSDPDataElementTypeDescriptor) getTypeDescriptor;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the type descriptor for the target data element.
 

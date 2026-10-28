@@ -25,7 +25,7 @@ init(objectID: NSManagedObjectID, withValues values: [String : Any], version: UI
 - (instancetype) initWithObjectID:(NSManagedObjectID *) objectID withValues:(NSDictionary<NSString *,id> *) values version:(uint64_t) version;
 ```
 
-#### Return Value
+## Return Value
 
 An object initialized with the given values.
 

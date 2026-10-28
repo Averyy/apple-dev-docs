@@ -25,11 +25,11 @@ class func success(with resolvedNotebookItemType: INNotebookItemType) -> Self
 + (instancetype) successWithResolvedNotebookItemType:(INNotebookItemType) resolvedNotebookItemType;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INNotebookItemTypeResolutionResult`](../innotebookitemtyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you support searching for the specified type of content.
 

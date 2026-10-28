@@ -18,7 +18,7 @@ var conversationContext: UIConversationContext { get set }
 @property (nonatomic, strong) UIConversationContext * conversationContext;
 ```
 
-#### Discussion
+## Discussion
 
 A reference to a conversation, such as a mail or messaging thread.
 

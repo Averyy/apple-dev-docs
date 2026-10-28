@@ -17,11 +17,11 @@ A pseudo metadata provider that merges metadata from multiple other metadata pro
 static func multiplex(_ providers: [Logger.MetadataProvider]) -> Logger.MetadataProvider?
 ```
 
-#### Return Value
+## Return Value
 
 A pseudo-`MetadataProvider` merging metadata from the given `MetadataProvider`s.
 
-##### Merging conflicting keys
+### Merging conflicting keys
 
 `MetadataProvider`s are invoked left to right in the order specified in the `providers` argument. In case multiple providers try to add a value for the same key, the last provider “wins” and its value is being used.
 

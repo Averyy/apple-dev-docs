@@ -5,7 +5,7 @@
 
 Learn about new features that require iOS 26, iPadOS 26, and macOS 26.
 
-#### Overview
+## Overview
 
 These features were added in the latest Apple News API release:
 

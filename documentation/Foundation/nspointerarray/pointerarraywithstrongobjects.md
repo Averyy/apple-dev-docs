@@ -17,7 +17,7 @@ Returns a new pointer array that maintains strong references to its elements.
 + (id) pointerArrayWithStrongObjects;
 ```
 
-#### Return Value
+## Return Value
 
 A new pointer array that maintains strong references to its elements.
 

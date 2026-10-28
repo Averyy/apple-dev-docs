@@ -29,7 +29,7 @@ optional func resolvePeopleInPhoto(for intent: INStartPhotoPlaybackIntent) async
 - (void) resolvePeopleInPhotoForStartPhotoPlayback:(INStartPhotoPlaybackIntent *) intent withCompletion:(void (^)(NSArray<INPersonResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the people in the photos. Use the information in the `intent` object to locate the corresponding users in your app. Always strive toward a successful resolution of the specified users, but feel free to ask for confirmation for one or more users if there’s some uncertainty.
 

@@ -19,7 +19,7 @@ class let selectionIsChangingNotification: NSNotification.Name
 extern NSNotificationName NSOutlineViewSelectionIsChangingNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the outline view whose selection is changing. This notification does not contain a `userInfo` dictionary.
 

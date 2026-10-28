@@ -6,7 +6,7 @@
 
 A reference movie atom contains references to one or more movies.
 
-#### Overview
+## Overview
 
 It can optionally contain a list of system requirements in order for each movie to play, and a quality rating for each movie. It is typically used to specify a list of alternate movies to be played under different conditions.
 

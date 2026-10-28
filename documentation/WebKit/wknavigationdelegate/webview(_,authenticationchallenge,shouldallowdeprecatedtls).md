@@ -27,7 +27,7 @@ optional func webView(_ webView: WKWebView, shouldAllowDeprecatedTLSFor challeng
 - (void) webView:(WKWebView *) webView authenticationChallenge:(NSURLAuthenticationChallenge *) challenge shouldAllowDeprecatedTLS:(void (^)(_Bool)) decisionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t implement this method, the web view uses system settings to determine whether to allow the use of deprecated versions of TLS.
 

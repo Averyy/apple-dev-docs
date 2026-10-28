@@ -20,7 +20,7 @@ var isDraft: Bool { get set }
 @property (getter=isDraft) BOOL draft;
 ```
 
-#### Discussion
+## Discussion
 
 The system presents a Save dialog when the user closes a draft document. Only documents with non-`nil` values for the [`fileURL`](./fileurl.md) property should be considered drafts.
 

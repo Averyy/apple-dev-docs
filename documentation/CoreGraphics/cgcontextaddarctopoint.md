@@ -21,7 +21,7 @@ Adds an arc of a circle to the current path, using a radius and tangent points.
 extern void CGContextAddArcToPoint(CGContextRef c, CGFloat x1, CGFloat y1, CGFloat x2, CGFloat y2, CGFloat radius);
 ```
 
-#### Discussion
+## Discussion
 
 This method calculates two tangent lines—the first from the current point to the point `(x1, y1)`, and the second from the point `(x1, y1)` to the point `(x2, y2)`—then calculates the start and end points for a circular arc of the specified radius such that the arc is tangent to both lines. Finally, this method approximates that arc with a sequence of cubic Bézier curves and appends those curves to the current path.
 

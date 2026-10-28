@@ -25,11 +25,11 @@ func vImageConvert_Planar4toPlanar8(_ src: UnsafePointer<vImage_Buffer>, _ dest:
 vImage_Error vImageConvert_Planar4toPlanar8(const vImage_Buffer *src, const vImage_Buffer *dest, const vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The conversion uses the source pixel value multiplied by `17` as the corresponding destination pixel value.
 

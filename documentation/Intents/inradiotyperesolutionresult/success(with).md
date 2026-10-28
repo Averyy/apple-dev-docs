@@ -24,11 +24,11 @@ class func success(with resolvedRadioType: INRadioType) -> Self
 + (instancetype) successWithResolvedRadioType:(INRadioType) resolvedRadioType;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INRadioTypeResolutionResult`](../inradiotyperesolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you recognize the chosen radio type and are able to switch to it.
 

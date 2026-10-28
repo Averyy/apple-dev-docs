@@ -22,7 +22,7 @@ Set a closure to be called when the connection’s state changes, which may be c
 final func onStateUpdate(_ handler: @escaping @isolated(any) @Sendable (NetworkConnection<ApplicationProtocol>, NetworkChannel<ApplicationProtocol>.State) -> Void) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 This closure will inherit the isolation domain of the caller.
 

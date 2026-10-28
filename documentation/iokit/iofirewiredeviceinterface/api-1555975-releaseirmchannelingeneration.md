@@ -16,11 +16,11 @@ Attempt to release an isochronous channel from the IRM
 IOReturn (*ReleaseIRMChannelInGeneration)(IOFireWireLibDeviceRef self, UInt8 isochChannel, UInt32 generation);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if channel relase was successful. Returns kIOFireWireBusReset if 'generation' does not match the current bus generation number. Returns kIOReturnError for any other error (such as the allocation failed)
 
-#### Discussion
+## Discussion
 
 Attempts to release an isochronous channel from the IRM, if the generation matches the current generation. Availability: IOFireWireDeviceInterface_v9 and newer
 

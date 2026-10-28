@@ -18,7 +18,7 @@ An asynchronous sequence of arrays of identity identifiers provided by the MDM s
 var identifiers: some AsyncSequence<Array<String>, Never> { get async }
 ```
 
-#### Discussion
+## Discussion
 
 Use [`identity(withIdentifier:)`](./identity%28withidentifier%29.md) to look up an identifier to obtain the associated identity. The sequence yields an array of identifiers when:
 

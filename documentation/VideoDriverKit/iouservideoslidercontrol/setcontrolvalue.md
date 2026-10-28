@@ -15,7 +15,7 @@ Sets the current control value.
 kern_return_t SetControlValue(uint32_t in_control_value);
 ```
 
-#### Discussion
+## Discussion
 
 Changing the control value will send a notification to the host to update the object state if successful. The object’s work queue synchronizes access to the value.
 

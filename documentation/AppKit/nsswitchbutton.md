@@ -17,7 +17,7 @@ This style is a variant of `NSToggleButton` that has no border and is typically 
 static const NSButtonType NSSwitchButton;
 ```
 
-#### Discussion
+## Discussion
 
 A checkbox button type is available as an Object Library item in Interface Builder.
 

@@ -19,7 +19,7 @@ var numberOfComponents: Int { get }
 @property (readonly) NSInteger numberOfComponents;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the number of floating-point component values in the color and includes the alpha component. If the color object does not have any floating-point component values, accessing this property raises an exception.
 

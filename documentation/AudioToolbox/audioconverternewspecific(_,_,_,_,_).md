@@ -24,11 +24,11 @@ func AudioConverterNewSpecific(_ inSourceFormat: UnsafePointer<AudioStreamBasicD
 extern OSStatus AudioConverterNewSpecific(const AudioStreamBasicDescription *inSourceFormat, const AudioStreamBasicDescription *inDestinationFormat, UInt32 inNumberClassDescriptions, const AudioClassDescription *inClassDescriptions, AudioConverterRef*outAudioConverter);
 ```
 
-#### Return Value
+## Return Value
 
 A  result code.
 
-#### Discussion
+## Discussion
 
 This function is identical to [`AudioConverterNew(_:_:_:)`](./audioconverternew%28_,_,_%29.md) function, except that your application may explicitly choose which codec to instantiate if there is more than one choice.
 

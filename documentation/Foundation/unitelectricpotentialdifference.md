@@ -25,11 +25,11 @@ class UnitElectricPotentialDifference
 @interface NSUnitElectricPotentialDifference : NSDimension
 ```
 
-#### Overview
+## Overview
 
 You typically use instances of [`UnitElectricPotentialDifference`](./unitelectricpotentialdifference.md) to represent specific quantities of electric potential difference using the [`NSMeasurement`](./nsmeasurement.md) class.
 
-##### Electric Potential Difference
+### Electric Potential Difference
 
 Electric potential difference is the amount of electric potential energy of a point charge at a point in space. The SI unit for electric potential difference is the volt (V), which is derived as the difference in electric potential energy between two points of a linear conductor when an electric current of one ampere dissipates one watt of power between those points (1V = 1W/1A).
 

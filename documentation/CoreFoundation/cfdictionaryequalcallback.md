@@ -25,7 +25,7 @@ typealias CFDictionaryEqualCallBack = (UnsafeRawPointer?, UnsafeRawPointer?) -> 
 typedef unsigned char (*)(const void *, const void *) CFDictionaryEqualCallBack;
 ```
 
-#### Discussion
+## Discussion
 
 This callback is passed to [`CFDictionaryCreate(_:_:_:_:_:_:)`](./cfdictionarycreate%28_,_,_,_,_,_%29.md) in a [`CFDictionaryKeyCallBacks`](./cfdictionarykeycallbacks.md) and [`CFDictionaryValueCallBacks`](./cfdictionaryvaluecallbacks.md) structure.
 

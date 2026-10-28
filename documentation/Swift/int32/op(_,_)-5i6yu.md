@@ -21,7 +21,7 @@ Returns the result of performing a bitwise OR operation on the two given values.
 static func | (lhs: Int32, rhs: Int32) -> Int32
 ```
 
-#### Discussion
+## Discussion
 
 A bitwise OR operation results in a value that has each bit set to `1` where *one or both* of its arguments have that bit set to `1`. For example:
 

@@ -19,7 +19,7 @@ optional func webViewAreToolbarsVisible(_ sender: WebView!) -> Bool
 - (BOOL) webViewAreToolbarsVisible:(WebView *) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if a web view’s window has any toolbars that are currently visible (other than the status bar); otherwise, [`false`](../../Swift/false.md).
 

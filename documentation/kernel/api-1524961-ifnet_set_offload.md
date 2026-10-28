@@ -13,11 +13,11 @@
 errno_t ifnet_set_offload(ifnet_t interface, ifnet_offload_t offload);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Sets a bitfield to indicate special hardware offload support provided by the interface such as hardware checksums and VLAN. This replaces the if_hwassist flags field. Any flags unrecognized by the stack will not be set.
 

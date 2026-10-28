@@ -25,7 +25,7 @@ enum Persistence
 enum NSURLCredentialPersistence : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 In iOS, credentials are stored in the app’s keychain, and can be accessed only by that app (and other apps in the same keychain access group, where applicable).
 

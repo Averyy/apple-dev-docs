@@ -21,7 +21,7 @@ var representedPathExtension: String? { get }
 extern NSString *NSGetFileType(NSPasteboardType pboardType);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the inverse of both [`fileContentsType(forPathExtension:)`](./filecontentstype%28forpathextension%29.md) and [`fileNameType(forPathExtension:)`](./filenametype%28forpathextension%29.md). When passed a pasteboard type as returned by those functions, it returns the extension or filename from which the type was derived. It returns `nil` if `pboardType` isn’t a pasteboard type created by those functions.
 

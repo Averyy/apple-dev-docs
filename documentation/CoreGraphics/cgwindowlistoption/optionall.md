@@ -18,7 +18,7 @@ static var optionAll: CGWindowListOption { get }
 kCGWindowListOptionAll
 ```
 
-#### Discussion
+## Discussion
 
 List all windows, including both onscreen and offscreen windows. When retrieving a list with this option, the `relativeToWindow` parameter should be set to [`kCGNullWindowID`](../kcgnullwindowid.md).
 

@@ -22,7 +22,7 @@ var attributedTitle: NSAttributedString? { get set }
 @property (copy, nullable) NSAttributedString * attributedTitle;
 ```
 
-#### Discussion
+## Discussion
 
 If an image is also set, the title appears to the right of the image.
 

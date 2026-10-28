@@ -20,7 +20,7 @@ var kSecNoGuest: SecGuestRef { get }
 kSecNoGuest
 ```
 
-#### Discussion
+## Discussion
 
 Some functions in the API use this value to indicate that there is no guest, and some functions use it to indicate that the function applies to the host itself rather than to a guest.
 

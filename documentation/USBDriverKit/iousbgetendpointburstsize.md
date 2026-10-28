@@ -15,11 +15,11 @@ Extracts the burst size from endpoint descriptors.
 uint32_t IOUSBGetEndpointBurstSize(uint32_t usbDeviceSpeed, const IOUSBEndpointDescriptor *descriptor, const IOUSBSuperSpeedEndpointCompanionDescriptor *companionDescriptor, const IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor *sspCompanionDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The burst size in bytes.
 
-#### Discussion
+## Discussion
 
 This method parses endpoint descriptors to determine burst size, which includes mult and burst factors as applicable. SuperSpeed Plus isochronous endpoints return the `dwBytesPerInterva`l field from the [`IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor`](./iousbsuperspeedplusisochronousendpointcompaniondescriptor.md) parameter.
 

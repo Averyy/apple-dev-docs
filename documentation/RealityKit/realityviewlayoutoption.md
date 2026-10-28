@@ -24,7 +24,7 @@ struct RealityViewLayoutOption
 
 - [Controlling the layout behavior of a reality view](./controlling-the-layout-behavior-of-a-realityview.md)
 
-#### Overview
+## Overview
 
 Pass in a `RealityViewLayoutOption` when using the [`realityViewLayoutBehavior(_:)`](../SwiftUI/view/realityviewlayoutbehavior%28_%29.md) modifier:
 

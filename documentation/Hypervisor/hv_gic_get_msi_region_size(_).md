@@ -19,7 +19,7 @@ func hv_gic_get_msi_region_size(_ msi_region_size: UnsafeMutablePointer<Int>) ->
 extern hv_return_t hv_gic_get_msi_region_size(size_t *msi_region_size);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 

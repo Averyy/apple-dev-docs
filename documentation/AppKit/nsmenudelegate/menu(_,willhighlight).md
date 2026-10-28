@@ -20,7 +20,7 @@ optional func menu(_ menu: NSMenu, willHighlight item: NSMenuItem?)
 - (void) menu:(NSMenu *) menu willHighlightItem:(NSMenuItem *) item;
 ```
 
-#### Discussion
+## Discussion
 
 Only one item per menu can be highlighted at a time. If `item` is `nil`, it means that all items in the menu are about to be unhighlighted.
 

@@ -21,7 +21,7 @@ The customization behavior of customizable toolbar content.
 struct ToolbarCustomizationBehavior
 ```
 
-#### Overview
+## Overview
 
 Customizable toolbar content support different types of customization behaviors. For example, some customizable content may not be removed by the user. Some content may be placed in a toolbar that supports customization overall, but not for that particular content.
 

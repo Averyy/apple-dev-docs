@@ -18,7 +18,7 @@ Add, remove, or change the logging metadata.
 subscript(metadataKey _: String) -> Logger.Metadata.Value? { get set }
 ```
 
-#### Overview
+## Overview
 
 > **Note**: `LogHandler`s must treat logging metadata as a value type. This means that the change in metadata must only affect this very `LogHandler`.
 

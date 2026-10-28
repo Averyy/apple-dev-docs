@@ -25,7 +25,7 @@ case rosettaNotInstalled
 AVErrorRosettaNotInstalled
 ```
 
-#### Discussion
+## Discussion
 
 Apple Silicon devices can use Intel-only codecs and file parsers, but only if you’ve installed Rosetta on the host system.
 

@@ -23,7 +23,7 @@ var isLayoutMarginsRelativeArrangement: Bool { get set }
 @property (nonatomic, getter=isLayoutMarginsRelativeArrangement) BOOL layoutMarginsRelativeArrangement;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the stack view will layout its arranged views relative to its layout margins. If [`false`](../../Swift/false.md), it lays out the arranged views relative to its bounds. The default is [`false`](../../Swift/false.md).
 

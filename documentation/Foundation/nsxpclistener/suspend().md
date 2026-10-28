@@ -25,7 +25,7 @@ func suspend()
 - (void) suspend;
 ```
 
-#### Discussion
+## Discussion
 
 As you cannot invalidate a suspended listener, every call to [`suspend()`](./suspend%28%29.md) that you make must be balanced by a call to [`resume()`](./resume%28%29.md).
 

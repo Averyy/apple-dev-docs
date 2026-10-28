@@ -13,7 +13,7 @@
 kIOReturnOutputSuccess = (kIOOutputStatusAccepted | kIOOutputCommandNone)
 ```
 
-#### Discussion
+## Discussion
 
 Packet was accepted.
 

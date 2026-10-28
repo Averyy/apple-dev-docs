@@ -23,11 +23,11 @@ optional func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, should
 - (BOOL) gestureRecognizer:(UIGestureRecognizer *) gestureRecognizer shouldReceiveEvent:(UIEvent *) event;
 ```
 
-#### Return Value
+## Return Value
 
 Return [`false`](../../Swift/false.md) to prevent the gesture recognizer from seeing this event.
 
-#### Discussion
+## Discussion
 
 UIKit calls this method once before either the [`gestureRecognizer(_:shouldReceive:)`](./gesturerecognizer%28_,shouldreceive%29-73vzu.md) method or the [`gestureRecognizer(_:shouldReceive:)`](./gesturerecognizer%28_,shouldreceive%29-16fuh.md) method of the gesture recognizer.
 

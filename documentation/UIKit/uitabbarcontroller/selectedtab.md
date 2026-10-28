@@ -23,7 +23,7 @@ var selectedTab: UITab? { get set }
 @property (nonatomic, strong, nullable) UITab * selectedTab;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property is `nil`.
 

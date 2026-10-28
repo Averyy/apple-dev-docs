@@ -17,7 +17,7 @@ var kIMKSingleColumnScrollingCandidatePanel: Int { get }
 kIMKSingleColumnScrollingCandidatePanel
 ```
 
-#### Discussion
+## Discussion
 
 A window that displays one column and can scroll if necessary.
 

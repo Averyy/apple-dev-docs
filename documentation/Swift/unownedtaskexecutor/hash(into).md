@@ -21,7 +21,7 @@ Hash the executor identity into the given hasher.
 func hash(into hasher: inout Hasher)
 ```
 
-#### Discussion
+## Discussion
 
 This function is available independently from the `Hashable` conformance, allowing back-deployment to older runtimes when implementing `Hashable` in user code
 

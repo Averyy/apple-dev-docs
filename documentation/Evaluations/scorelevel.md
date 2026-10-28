@@ -21,7 +21,7 @@ A type that defines individual levels within a scoring scale.
 protocol ScoreLevel : CaseIterable, Hashable, Sendable
 ```
 
-#### Overview
+## Overview
 
 Conform an enumeration to `ScoreLevel` to create a typed, reusable scoring vocabulary. Each case represents one level a model judge can assign. Labels default to the case name using `String(describing:)`. Override [`label`](./scorelevel/label.md) for human-readable formatting.
 

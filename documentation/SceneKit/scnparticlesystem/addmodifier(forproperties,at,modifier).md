@@ -25,7 +25,7 @@ func addModifier(forProperties properties: [SCNParticleSystem.ParticleProperty],
 - (void) addModifierForProperties:(NSArray<NSString *> *) properties atStage:(SCNParticleModifierStage) stage withBlock:(SCNParticleModifierBlock) block;
 ```
 
-#### Discussion
+## Discussion
 
 By associating a block with one or more particle properties, you can run arbitrary code that modifies those properties during each frame of animation. This option provides maximum flexibility for changing the appearance or behavior of particles over time.
 

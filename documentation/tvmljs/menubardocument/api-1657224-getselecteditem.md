@@ -15,7 +15,7 @@ Retrieves the menu item in the menu bar that is currently in focus.
 Element getSelectedItem();
 ```
 
-#### Return Value
+## Return Value
 
 The currently selected element.
 

@@ -19,7 +19,7 @@ weak var delegate: (any NSAnimationDelegate)? { get set }
 @property (weak, nullable) id<NSAnimationDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must conform to the [`NSAnimationDelegate`](../nsanimationdelegate.md).
 

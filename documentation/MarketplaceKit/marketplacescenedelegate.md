@@ -16,7 +16,7 @@ A delegate that handles deep link requests into your marketplace app.
 protocol MarketplaceSceneDelegate
 ```
 
-#### Overview
+## Overview
 
 The operating system calls your app’s scene delegate to launch your app to a specific screen, such as a search result or specific app page. The display option argument determines the specific screen.
 

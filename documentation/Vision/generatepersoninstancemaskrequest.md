@@ -21,7 +21,7 @@ A request that produces a mask of individual people it finds in the input image.
 struct GeneratePersonInstanceMaskRequest
 ```
 
-#### Overview
+## Overview
 
 The request returns the resulting image mask in an instance of [`InstanceMaskObservation`](./instancemaskobservation.md).
 

@@ -23,7 +23,7 @@ class WKWatchConnectivityRefreshBackgroundTask
 
 - [Using background tasks](./using-background-tasks.md)
 
-#### Overview
+## Overview
 
 Don’t subclass or create instances of this class. Instead, when this background watch connectivity task is triggered, the system launches your app in the background, instantiates a [`WKWatchConnectivityRefreshBackgroundTask`](./wkwatchconnectivityrefreshbackgroundtask.md) object, and passes the task object to your app delegate’s [`handle(_:)`](./wkapplicationdelegate/handle%28_%29-4vdjo.md) method.
 

@@ -22,7 +22,7 @@ class CPNowPlayingImageButton
 @interface CPNowPlayingImageButton : CPNowPlayingButton
 ```
 
-#### Overview
+## Overview
 
 `CPNowPlayingImageButton` is a concrete subclass of [`CPNowPlayingButton`](./cpnowplayingbutton.md). Use this class when you want to display a button that contains an image.
 

@@ -22,7 +22,7 @@ Removes the specified number of elements from the beginning of the collection.
 mutating func removeFirst(_ k: Int)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 var bugs = ["Aphid", "Bumblebee", "Cicada", "Damselfly", "Earwig"]

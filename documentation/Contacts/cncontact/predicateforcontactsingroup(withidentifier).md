@@ -24,7 +24,7 @@ class func predicateForContactsInGroup(withIdentifier groupIdentifier: String) -
 + (NSPredicate *) predicateForContactsInGroupWithIdentifier:(NSString *) groupIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that can be used to fetch contacts from [`CNContactStore`](../cncontactstore.md).
 

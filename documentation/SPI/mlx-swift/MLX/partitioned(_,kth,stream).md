@@ -17,11 +17,11 @@ Returns a partitioned copy of the flattened array such that the smaller `kth` el
 func partitioned(_ array: MLXArray, kth: Int, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The ordering of the elements in partitions is undefined.
 
-##### See Also
+### See Also
 
 - [Sorting](./sorting.md)
 - [`partitioned(_:kth:axis:stream:)`](./partitioned%28_,kth,axis,stream%29.md)

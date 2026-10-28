@@ -19,7 +19,7 @@ var VMENTRY_LOAD_EFER: UInt32 { get }
 VMENTRY_LOAD_EFER
 ```
 
-#### Discussion
+## Discussion
 
 Must be `1`.
 

@@ -20,7 +20,7 @@ A flag that indicates to enable asynchronous decompression.
 kVTDecodeFrame_EnableAsynchronousDecompression
 ```
 
-#### Discussion
+## Discussion
 
 With this bit cleared, the video decoder emits every frame before it returns. With the bit set, the decoder may process frames asynchronously, but it’s not compelled to do so.
 

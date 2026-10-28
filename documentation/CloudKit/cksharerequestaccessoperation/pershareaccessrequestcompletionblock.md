@@ -21,7 +21,7 @@ The closure to execute when CloudKit processes a share access request.
 @property (nonatomic, copy, nullable) void (^)(NSURL *, NSError *) perShareAccessRequestCompletionBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The server does not disclose share existence to protect user privacy.
 

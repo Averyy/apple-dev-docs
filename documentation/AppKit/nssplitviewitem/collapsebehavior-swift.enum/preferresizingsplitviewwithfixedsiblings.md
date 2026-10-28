@@ -19,7 +19,7 @@ case preferResizingSplitViewWithFixedSiblings
 NSSplitViewItemCollapseBehaviorPreferResizingSplitViewWithFixedSiblings
 ```
 
-#### Discussion
+## Discussion
 
 The split view item breaks this preference in full-screen mode, and to keep the window fully onscreen during resizing.
 

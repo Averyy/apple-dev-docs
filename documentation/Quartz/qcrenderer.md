@@ -21,7 +21,7 @@ class QCRenderer
 @interface QCRenderer : NSObject
 ```
 
-#### Overview
+## Overview
 
 A `QCRenderer` class is designed for low-level rendering of Quartz Composer compositions. This is the class to use if you want to be in charge of rendering a composition to a specific OpenGL context—either using the [`NSOpenGLContext`](../AppKit/nsopenglcontext.md) class or a `CGLContextObj` object. `QCRenderer` also allows you to load, play, and control a composition.
 

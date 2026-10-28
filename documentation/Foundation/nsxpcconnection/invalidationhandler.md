@@ -25,7 +25,7 @@ var invalidationHandler: (() -> Void)? { get set }
 @property (copy, nullable) void (^invalidationHandler)();
 ```
 
-#### Discussion
+## Discussion
 
 This handler is invoked on the same queue as reply messages and other handlers, and is always executed last (after the interruption handler, if required). You may not send messages over the connection from within an invalidation handler block.
 

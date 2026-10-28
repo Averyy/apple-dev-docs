@@ -13,13 +13,13 @@ Publish to a registry.
 **Availability**:
 - Swift 5.9+
 
-#### Overview
+## Overview
 
 This command creates a source archive for the package release, optionally signs it, and finally [publishes the package release](./registryserverspecification.md#46-Create-a-package-release) to the registry.
 
 If authentication is required for package publication, package authors should [configure registry login](./usingswiftpackageregistry.md#Registry-authentication) before running `publish`.
 
-##### Publisher TOFU
+### Publisher TOFU
 
 Some certificates allow the package manager to extract additional information about the signing identity. For packages signed with these certificates, package manager performs publisher TOFU (trust-on-first-use) to ensure the signer remains the same across all versions of the package.
 
@@ -27,7 +27,7 @@ The `--resolver-signing-entity-checking` option controls whether a publisher mis
 
 For more details on trust-on-first-use, see [Trust on First Use](./packagesecurity.md#Trust-on-First-Use).
 
-###### Package release metadata
+#### Package release metadata
 
 Package authors can specify a custom location of the package release metadata file by setting the `--metadata-path` option of the `publish` subcommand. Otherwise, package manager looks for a file named `package-metadata.json` in the package directory.
 
@@ -35,13 +35,13 @@ Contents of the metadata file must conform to the [JSON schema](https://github.c
 
 Refer to the [registry specification](./registryserverspecification.md#422-Package-release-metadata-standards) for any additional requirements.
 
-###### Package signing
+#### Package signing
 
 If a registry requires signing, package authors need to sign the package release by either setting the `signing-identity` (for reading from operating system’s identity store such as Keychain in macOS), or `private-key-path` and `cert-chain-paths` (for reading from files) options of the `publish` subcommand. This allows Package manager to locate the signing key and certificate.
 
 For more information on package signing, see [Signed packages from a registry](./packagesecurity.md#Signed-packages-from-a-registry).
 
-##### Usage
+### Usage
 
 ```
 package-registry publish [--package-path=<package-path>]

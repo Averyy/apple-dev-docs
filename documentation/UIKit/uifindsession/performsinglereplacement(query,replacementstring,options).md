@@ -22,7 +22,7 @@ func performSingleReplacement(query searchQuery: String, replacementString: Stri
 - (void) performSingleReplacementWithSearchQuery:(NSString *) searchQuery replacementString:(NSString *) replacementString options:(UITextSearchOptions *) options;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when the user initiates the replacement the text for a single match of a string in your app’s text content with the replacement string.
 

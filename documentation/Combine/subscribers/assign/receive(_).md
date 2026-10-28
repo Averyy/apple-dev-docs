@@ -21,7 +21,7 @@ Tells the subscriber that the publisher has produced an element.
 final func receive(_ value: Input) -> Subscribers.Demand
 ```
 
-#### Discussion
+## Discussion
 
 A [`Subscribers.Demand`](../demand.md) instance indicating how many more elements the subscriber expects to receive.
 

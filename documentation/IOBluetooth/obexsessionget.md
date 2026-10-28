@@ -15,11 +15,11 @@ Send a get command to a remote OBEX server.
 OBEXError OBEXSessionGet(OBEXSessionRef inSessionRef, Boolean inIsFinalChunk, void *inHeadersData, size_t inHeadersDataLength, OBEXSessionEventCallback inCallback, void *inUserRefCon);
 ```
 
-#### Return Value
+## Return Value
 
 An error code value. 0 if successful.
 
-#### Discussion
+## Discussion
 
 As all commands for OBEX sessions, this command is asynchronous only. A NULL callback paramter will result in an error.
 

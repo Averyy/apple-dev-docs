@@ -17,7 +17,7 @@ The distance by which the surface of the plane shape is displaced along the dire
 var bias: Float
 ```
 
-#### Discussion
+## Discussion
 
 This can be used to extend a plane collider slightly above its visual counterpart in order to avoid z-fighting.
 

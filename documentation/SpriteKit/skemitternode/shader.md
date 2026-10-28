@@ -25,7 +25,7 @@ var shader: SKShader? { get set }
 @property (nonatomic, retain, nullable) SKShader * shader;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`. If a shader is specified, then the shader is used to determine the output colors for any of the emitter’s particles.
 

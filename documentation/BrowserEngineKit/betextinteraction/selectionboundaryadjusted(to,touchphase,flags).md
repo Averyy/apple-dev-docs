@@ -22,7 +22,7 @@ func selectionBoundaryAdjusted(to point: CGPoint, touchPhase touch: BESelectionT
 - (void) selectionBoundaryAdjustedToPoint:(CGPoint) point touchPhase:(BESelectionTouchPhase) touch flags:(BESelectionFlags) flags;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when your browser text view receives [`adjustSelectionBoundary(to:touchPhase:baseIsStart:flags:)`](../betextinput/adjustselectionboundary%28to,touchphase,baseisstart,flags%29.md).
 

@@ -19,7 +19,7 @@ Determines whether a webpage allows scaling of the webpage.
 var ignoresViewportScaleLimits: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When set to `true`, this property overrides the user-scalable HTML property in a webpage, and lets the webpage scale its view’s content regardless of the author’s intent.
 

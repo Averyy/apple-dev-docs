@@ -19,7 +19,7 @@ The customization of the section, identified by its customization identifier.
 subscript(section id: String) -> TabViewCustomization.SectionCustomization { get set }
 ```
 
-#### Overview
+## Overview
 
 Section tab order can be read by subscripting with the tab section’s id:
 

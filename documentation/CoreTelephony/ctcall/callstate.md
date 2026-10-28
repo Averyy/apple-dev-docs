@@ -23,7 +23,7 @@ var callState: String { get }
 @property (nonatomic, copy, readonly) NSString * callState;
 ```
 
-#### Discussion
+## Discussion
 
 A cellular call’s initial state is either [`CTCallStateDialing`](../ctcallstatedialing.md) or [`CTCallStateIncoming`](../ctcallstateincoming.md). After establishing the call for all parties involved, the state transitions to [`CTCallStateConnected`](../ctcallstateconnected.md). When the call ends, the state transitions to [`CTCallStateDisconnected`](../ctcallstatedisconnected.md).
 

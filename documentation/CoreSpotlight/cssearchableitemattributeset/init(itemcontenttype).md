@@ -25,7 +25,7 @@ init(itemContentType: String)
 - (instancetype) initWithItemContentType:(NSString *) itemContentType;
 ```
 
-#### Return Value
+## Return Value
 
 An attribute set that represents an item of the specified content type.
 

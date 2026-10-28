@@ -25,7 +25,7 @@ static let pauseAssistiveTechnology: UIAccessibility.Notification
 extern const UIAccessibilityNotifications UIAccessibilityPauseAssistiveTechnologyNotification;
 ```
 
-#### Discussion
+## Discussion
 
 When posting the notification, specify the assistive app to pause as the parameter. For example, you might want to pause scanning in Switch Control while your app is playing an animation. You must balance this notification by posting a [`resumeAssistiveTechnology`](./resumeassistivetechnology.md) notification to resume the assistive app’s operations. Post this notification using the [`post(notification:argument:)`](../post%28notification,argument%29.md) function.
 

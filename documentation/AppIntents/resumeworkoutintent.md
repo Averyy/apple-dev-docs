@@ -25,7 +25,7 @@ protocol ResumeWorkoutIntent : SystemIntent
 
 - [Responding to the Action button on Apple Watch Ultra](./actionbuttonarticle.md)
 
-#### Overview
+## Overview
 
 On Apple Watch Ultra, someone can resume your app’s workout by simultaneously pressing the Action button and the side button when your app has a paused workout session.
 

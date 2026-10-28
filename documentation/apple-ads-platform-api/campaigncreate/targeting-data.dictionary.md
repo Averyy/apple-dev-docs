@@ -15,7 +15,7 @@ Targeting configuration supplied when creating a campaign.
 object CampaignCreate.Targeting
 ```
 
-#### Discussion
+## Discussion
 
 Sets the supply source, placement, and geographic markets a new campaign is eligible to serve on. These values establish the campaign-level targeting boundary within which ad group targeting must operate.
 

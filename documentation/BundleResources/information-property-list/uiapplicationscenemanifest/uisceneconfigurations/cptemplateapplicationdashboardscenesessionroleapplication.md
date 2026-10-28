@@ -15,7 +15,7 @@ Configurations for scenes that you use to display navigation content on a CarPla
 - **Name**: `CPTemplateApplicationDashboardSceneSessionRoleApplication`
 - **Type**: array of dictionary 
 
-#### Discussion
+## Discussion
 
 After setting [`CPSupportsDashboardNavigationScene`](../cpsupportsdashboardnavigationscene.md) to `YES`, use this key to specify the scene configuration when displaying navigation content in the CarPlay Dashboard.
 

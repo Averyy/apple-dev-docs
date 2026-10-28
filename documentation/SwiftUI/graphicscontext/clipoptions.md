@@ -22,7 +22,7 @@ Options that affect the use of clip shapes.
 struct ClipOptions
 ```
 
-#### Overview
+## Overview
 
 Use these options to affect how SwiftUI interprets a clip shape when you call [`clip(to:style:options:)`](./clip%28to,style,options%29.md) to add a path to the array of clip shapes, or when you call [`clipToLayer(opacity:options:content:)`](./cliptolayer%28opacity,options,content%29.md) to add a clipping layer.
 

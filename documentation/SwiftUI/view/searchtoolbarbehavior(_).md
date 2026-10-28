@@ -22,7 +22,7 @@ nonisolated
 func searchToolbarBehavior(_ behavior: SearchToolbarBehavior) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 This modifier can be used to change the default behavior of a search field that appears in the toolbar. Place this modifier after the [`searchable(text:isPresented:placement:prompt:)`](./searchable%28text,ispresented,placement,prompt%29.md) modifier that renders search in the toolbar.
 

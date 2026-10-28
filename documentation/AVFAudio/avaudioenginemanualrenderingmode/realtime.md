@@ -25,7 +25,7 @@ case realtime
 AVAudioEngineManualRenderingModeRealtime
 ```
 
-#### Discussion
+## Discussion
 
 You can only use the block-based render mechanism in this mode. See [`manualRenderingBlock`](../avaudioengine/manualrenderingblock.md).
 

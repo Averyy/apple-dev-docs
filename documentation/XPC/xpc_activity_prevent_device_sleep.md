@@ -19,7 +19,7 @@ let XPC_ACTIVITY_PREVENT_DEVICE_SLEEP: UnsafePointer<CChar>
 extern const char * const XPC_ACTIVITY_PREVENT_DEVICE_SLEEP;
 ```
 
-#### Discussion
+## Discussion
 
 When set to `true`, the activity scheduler takes the necessary power assertions to keep the device awake, excluding the screen. Only set this property for activities that perform critical system functions, and that system sleep can’t interrupt. Note that setting this property can affect battery life.
 

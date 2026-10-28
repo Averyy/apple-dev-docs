@@ -15,7 +15,7 @@ Creates a palette style menu displaying user-selectable color tags that tint usi
 + (instancetype) paletteMenuWithColors:(NSArray<NSColor *> *) colors titles:(NSArray<NSString *> *) itemTitles templateImage:(NSImage *) image selectionHandler:(void (^)(NSMenu *)) onSelectionChange;
 ```
 
-#### Return Value
+## Return Value
 
 A menu in the palette presentation style.
 

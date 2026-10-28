@@ -25,7 +25,7 @@ func contains(_ rect2: MKMapRect) -> Bool
 extern BOOL MKMapRectContainsRect(MKMapRect rect1, MKMapRect rect2);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `rect2` is `null` or lies entirely inside `rect1`; otherwise, returns [`false`](../../Swift/false.md) if `rect1` is `null` or doesn’t completely enclose `rect2`.
 

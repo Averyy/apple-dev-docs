@@ -25,7 +25,7 @@ init(path: CGPath)
 - (instancetype) initWithPath:(CGPathRef) path;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized region.
 

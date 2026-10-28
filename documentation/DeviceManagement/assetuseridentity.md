@@ -21,11 +21,11 @@ The user-identity data.
 object AssetUserIdentity
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.asset.useridentity` as the declaration type.
 
-##### Asset example
+### Asset example
 
 ```json
 {

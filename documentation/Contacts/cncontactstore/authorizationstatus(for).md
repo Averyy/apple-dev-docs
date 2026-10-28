@@ -28,11 +28,11 @@ class func authorizationStatus(for entityType: CNEntityType) -> CNAuthorizationS
 
 - [Accessing the contact store](../accessing-the-contact-store.md)
 
-#### Return Value
+## Return Value
 
 The current authorization status to access the contact data.
 
-#### Discussion
+## Discussion
 
 Based on the authorization status, your application might display or hide its UI elements that access any Contacts API. This method is thread-safe and will not block your application. To see different authorization status, see `CNAuthorizationStatus`.
 

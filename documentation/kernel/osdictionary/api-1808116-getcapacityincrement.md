@@ -11,11 +11,11 @@ Returns the storage increment of the dictionary.
 virtual unsigned int getCapacityIncrement() const;
 ```
 
-#### Return Value
+## Return Value
 
 The storage increment of the dictionary.
 
-#### Overview
+## Overview
 
 An OSDictionary allocates storage for key/object pairs in multiples of the capacity increment.
 

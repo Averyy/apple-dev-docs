@@ -19,7 +19,7 @@ optional func download(_ download: NSURLDownload, didReceive challenge: URLAuthe
 - (void) download:(NSURLDownload *) download didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *) challenge;
 ```
 
-#### Discussion
+## Discussion
 
 This method gives the delegate the opportunity to determine the course of action taken for the challenge: provide credentials, continue without providing credentials or cancel the authentication challenge and the download.
 

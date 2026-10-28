@@ -20,7 +20,7 @@ Fits a transformer to a sequence of examples.
 func fitted<InputSequence>(to input: InputSequence, eventHandler: EventHandler? = nil) async throws -> PreprocessingTemporalEstimator<Preprocessor, Estimator>.Transformer where InputSequence : Sequence, Preprocessor.Input == InputSequence.Element.Feature, InputSequence.Element : TemporalSequence
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

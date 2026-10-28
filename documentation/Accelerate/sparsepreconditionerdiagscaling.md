@@ -25,7 +25,7 @@ var SparsePreconditionerDiagScaling: SparsePreconditioner_t { get }
 SparsePreconditionerDiagScaling
 ```
 
-#### Discussion
+## Discussion
 
 [`SparsePreconditionerDiagScaling`](./sparsepreconditionerdiagscaling.md) provides a simple preconditioner for the least squares minimal residual (LSMR) method.
 

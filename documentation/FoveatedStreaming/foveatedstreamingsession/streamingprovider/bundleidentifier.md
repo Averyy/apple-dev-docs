@@ -15,7 +15,7 @@ The bundle identifier of the extension.
 let bundleIdentifier: String
 ```
 
-#### Discussion
+## Discussion
 
 This bundle identifier will be sent to endpoints during initial TCP handshake.
 

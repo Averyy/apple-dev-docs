@@ -13,7 +13,7 @@ Update your existing app to leverage the benefits of Observation in Swift.
 - macOS 14.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 Starting with iOS 17, iPadOS 17, macOS 14, tvOS 17, and watchOS 10, SwiftUI provides support for [Observation](../Observation/Observation.md), a Swift-specific implementation of the observer design pattern. Adopting Observation provides your app with the following benefits:
 
@@ -25,7 +25,7 @@ To take advantage of these benefits in your app, you’ll discover how to replac
 
 > **Note**: Download this sample to see the migrated version of the sample app. To see the premigrated version, download the sample available in [Monitoring data changes in your app](./monitoring-model-data-changes-in-your-app.md). You can also use the premigrated version to code along with this article.
 
-##### Use the Observable macro
+### Use the Observable macro
 
 To adopt [Observation](../Observation/Observation.md) in an existing app, begin by replacing [`ObservableObject`](../Combine/observableobject.md) in your data model type with the [`Observable()`](../Observation/observable%28%29.md) macro. The [`Observable()`](../Observation/observable%28%29.md) macro generates source code at compile time that adds observation support to the type.
 
@@ -65,7 +65,7 @@ class Library {
 
 If you have properties that are accessible to an observer that you don’t want to track, apply the [`ObservationIgnored()`](../Observation/observationignored%28%29.md) macro to the property.
 
-##### Migrate incrementally
+### Migrate incrementally
 
 You don’t need to make a wholesale replacement of the [`ObservableObject`](../Combine/observableobject.md) protocol throughout your app. Instead, you can make changes incrementally. Start by changing one data model type to use the [`Observable()`](../Observation/observable%28%29.md) macro. Your app can mix data model types that use different observation systems. However, SwiftUI tracks changes differently based on the observation system that a data model type uses, `Observable` versus `ObservableObject`.
 
@@ -73,7 +73,7 @@ You may notice slight behavioral differences in your app based on the tracking m
 
 > **Note**: To learn more about when SwiftUI updates views when observable properties change, see [Managing model data in your app](./managing-model-data-in-your-app.md).
 
-##### Migrate other source code
+### Migrate other source code
 
 The only change made to the sample app so far is to apply the [`Observable()`](../Observation/observable%28%29.md) macro to `Library` and remove support for the [`ObservableObject`](../Combine/observableobject.md) protocol. The app still uses the [`ObservableObject`](../Combine/observableobject.md) data flow primitive like [`StateObject`](./stateobject.md) to manage an instance of `Library`. If you were to build and run the app, SwiftUI still updates the views as expected. That’s because data flow property wrappers such as [`StateObject`](./stateobject.md) and [`EnvironmentObject`](./environmentobject.md) support types that use the [`Observable()`](../Observation/observable%28%29.md) macro. SwiftUI provides this support so apps can make source code changes incrementally.
 
@@ -139,7 +139,7 @@ struct LibraryView: View {
 }
 ```
 
-##### Remove the ObservedObject property wrapper
+### Remove the ObservedObject property wrapper
 
 To wrap up the migration of the sample app, change the data model type `Book` to support [Observation](../Observation/Observation.md) by removing [`ObservableObject`](../Combine/observableobject.md) from the type declaration and apply the [`Observable()`](../Observation/observable%28%29.md) macro. Then remove the [`Published`](../Combine/published.md) property wrapper from observable properties.
 

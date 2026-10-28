@@ -5,7 +5,7 @@
 
 Set up a window and view for optimally displaying your Metal content.
 
-#### Overview
+## Overview
 
 With Metal, apps can leverage a GPU to quickly render complex scenes and run computational tasks in parallel. Your results accumulate into a [`CAMetalLayer`](../QuartzCore/cametallayer.md) that you can display onscreen using a window. By configuring your window correctly, your app can achieve optimal results by engaging direct-to-display for its Metal drawable. And, when not in full-screen mode, your game’s content displays as expected in a window that works in familiar ways for people using macOS.
 
@@ -13,7 +13,7 @@ When a Metal drawable is direct-to-display, the hardware composites it directly 
 
 To enable direct-to-display, your app needs to run in full-screen mode, displaying an opaque [`CAMetalLayer`](../QuartzCore/cametallayer.md) layer and RGB content, and run on a Mac with Apple silicon. There may be other edge case conditions depending on the hardware and system software, but if you set up your window in this way, the drawable is direct-to-display in most situations. All of the RGB formats supported by Metal layers are capable of drawing direct-to-display content. You can enable the Metal HUD or use instruments to verify that your drawable goes direct-to-display.
 
-##### Choose the screen for displaying your window
+### Choose the screen for displaying your window
 
 To set up a window for displaying your game in macOS, begin by selecting a screen where you want to display your game. The computer running your game may be equipped with more than one monitor. You can use the [`NSScreen`](../AppKit/nsscreen.md) class to discover what [`screens`](../AppKit/nsscreen/screens.md) are connected to a computer running macOS and what screen the user designated as the main screen. The [`main`](../AppKit/nsscreen/main.md) is optimal for displaying a game. You can get a reference to the main screen like so:
 
@@ -23,7 +23,7 @@ NSScreen *screen = [NSScreen mainScreen];
 
 The [`NSScreen`](../AppKit/nsscreen.md) object includes detailed information such as the resolution, bit depth, dimensions and location of the screen, its color space, and other details. If you need more information about a screen or want to interact with the screen beyond the functionality offered by the [`NSScreen`](../AppKit/nsscreen.md) AppKit API, see the [Quartz Display Services](../CoreGraphics/quartz-display-services.md) API. [Quartz Display Services](../CoreGraphics/quartz-display-services.md) is a lower-level API that provides direct access to features in the macOS window server for configuring and controlling display hardware.
 
-##### Pick a style for your window
+### Pick a style for your window
 
 AppKit in macOS has a concept called *window style* that you store as a set of flags describing the layout of the frame and controls decorating the outside edges of a window. Use the following value for windows displaying Metal game content:
 
@@ -41,7 +41,7 @@ Here are the parts of the style above and the functionality each adds to your wi
 - **[`miniaturizable`](../AppKit/nswindow/stylemask-swift.struct/miniaturizable.md)**: The window contains a miniaturized (yellow dot) control with which a person can collapse the window into the Dock.
 - **[`resizable`](../AppKit/nswindow/stylemask-swift.struct/resizable.md)**: A person can resize the window. Note that allowing resizing doesn’t mean you need to resize all your render targets dynamically. In a later section, this article discusses how to adjust your [`CAMetalLayer`](../QuartzCore/cametallayer.md)’s [`drawableSize`](../QuartzCore/cametallayer/drawablesize.md) to match the pixels onscreen whenever someone resizes your window.
 
-##### Choose the content size of your window and Metal view
+### Choose the content size of your window and Metal view
 
 When you create a new window, you specify its coordinates in points relative to the coordinates of a screen. *Points* are an abstract measurement quantity that don’t correspond to any actual pixel sizes. There are roughly 72 points per inch. For more information on points, see [High Resolution Guidelines for OS X](https://developer.apple.com/library/archive/documentation/GraphicsAnimation/Conceptual/HighResolutionOSX/Explained/Explained.html#//apple_ref/doc/uid/TP40012302-CH4-SW1).
 
@@ -64,7 +64,7 @@ After you create your window, you can get more information about the actual reso
 
 Leave all of the AppKit settings for managing a window and the [`CALayer`](../QuartzCore/calayer.md) instance it depends on at their defaults so your app looks consistent on the rest of the system.
 
-##### Create the window
+### Create the window
 
 In macOS, the AppKit framework represents windows using the [`NSWindow`](../AppKit/nswindow.md) class, so you can easily add additional functionality to your [`NSWindow`](../AppKit/nswindow.md). Subclass [`NSWindow`](../AppKit/nswindow.md) like so:
 
@@ -88,7 +88,7 @@ GameWindow *window = [[GameWindow alloc] initWithContentRect:contentRect
 
 You already set up the [`contentRect`](../AppKit/nstabview/contentrect.md), mask, and screen parameters in the previous sections. The [`NSWindow.BackingStoreType.buffered`](../AppKit/nswindow/backingstoretype/buffered.md) parameter tells AppKit that you want a window that has a [`CALayer`](../QuartzCore/calayer.md) backing store. Later, you replace the [`CALayer`](../QuartzCore/calayer.md) with the [`CAMetalLayer`](../QuartzCore/cametallayer.md) so the window displays your content.
 
-##### Add the window
+### Add the window
 
 For a better user experience, after creating your new window, set the following properties on your window:
 
@@ -101,7 +101,7 @@ For a better user experience, after creating your new window, set the following 
 
 > **Note**:  If your window is closed and not showing, you can display it again by calling the window’s [`setIsVisible(_:)`](../AppKit/nswindow/setisvisible%28_%29.md) and [`makeKeyAndOrderFront(_:)`](../AppKit/nswindow/makekeyandorderfront%28_%29.md) methods. For an example, see the “Make the window visible and present in front” section below.
 
-##### Display your Metal content in your new view
+### Display your Metal content in your new view
 
 When you want Metal to render a layer’s contents, use a [`CAMetalLayer`](../QuartzCore/cametallayer.md). You set up a [`CAMetalLayer`](../QuartzCore/cametallayer.md) and use it to replace the [`CALayer`](../QuartzCore/calayer.md) in the view you set up previously. Begin by creating a new [`CAMetalLayer`](../QuartzCore/cametallayer.md):
 
@@ -135,7 +135,7 @@ view.layer = metalLayer;
 
 At this point, your window is ready to start rendering Metal content.
 
-##### Make the window visible and present in front
+### Make the window visible and present in front
 
 Up until now, everything you’ve done is offscreen. To present your new window and Metal view onscreen, call the following APIs:
 
@@ -146,7 +146,7 @@ Up until now, everything you’ve done is offscreen. To present your new window 
 
 If someone happens to close your window and you previously set `window.releasedWhenClosed = NO;` when creating your window, you can use these APIs to present your window onscreen again.
 
-##### Use the entire window
+### Use the entire window
 
 Lastly, set your window to full-screen mode by calling the [`toggleFullScreen(_:)`](../AppKit/nswindow/togglefullscreen%28_%29.md) method:
 
@@ -160,7 +160,7 @@ Note that when using the [`toggleFullScreen(_:)`](../AppKit/nswindow/togglefulls
 
 > ❗ **Important**:  Use [`toggleFullScreen(_:)`](../AppKit/nswindow/togglefullscreen%28_%29.md) to switch to full screen so your app’s full-screen mode works in a way consistent with other apps that use full-screen mode. This keeps control over the window in the user’s hands, and AppKit takes responsibility for finding the optimal position and size for your window on the screen that you selected. Avoid customizing any aspects of what [`toggleFullScreen(_:)`](../AppKit/nswindow/togglefullscreen%28_%29.md) does.
 
-##### Add code so your window can handle resizing
+### Add code so your window can handle resizing
 
 To keep the size of your `CAMetalLayer` instance’s [`drawableSize`](../QuartzCore/cametallayer/drawablesize.md) in sync with the part of the screen the window is drawing to, set up a [`windowDidResize(_:)`](../AppKit/nswindowdelegate/windowdidresize%28_%29.md) method on the window’s delegate as described below. Call this method every time your window is resized, including times when your app calls [`toggleFullScreen(_:)`](../AppKit/nswindow/togglefullscreen%28_%29.md).
 
@@ -206,7 +206,7 @@ if (windowDelegate != NULL) {
 
 After you set up your window delegate, it begins receiving method calls to your [`windowDidResize(_:)`](../AppKit/nswindowdelegate/windowdidresize%28_%29.md) method whenever the size of your window changes. When your app calls [`toggleFullScreen(_:)`](../AppKit/nswindow/togglefullscreen%28_%29.md), AppKit recomputes the size of your window and calls your delegate’s [`windowDidResize(_:)`](../AppKit/nswindowdelegate/windowdidresize%28_%29.md) method.
 
-##### Add code to prevent exposing your window class to unintentionally consuming key events
+### Add code to prevent exposing your window class to unintentionally consuming key events
 
 Interactions between the AppKit framework and the Game Controller framework can, under some conditions, expose the [`NSWindow`](../AppKit/nswindow.md) APIs to unintentionally consuming key events that need to go to [`GCController`](../GameController/gccontroller.md). To avoid this possibility, add a key down handler that does nothing on your `GameWindow` class:
 

@@ -18,7 +18,7 @@ The number of array elements for this texture.
 var arrayLength: Int { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLTextureDescriptor.arrayLength`.
 

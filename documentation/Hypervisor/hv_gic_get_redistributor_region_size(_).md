@@ -19,11 +19,11 @@ func hv_gic_get_redistributor_region_size(_ redistributor_region_size: UnsafeMut
 extern hv_return_t hv_gic_get_redistributor_region_size(size_t *redistributor_region_size);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 
-#### Discussion
+## Discussion
 
 Provides the total size of the GIC redistributor regions the GIC supports. Each redistributor is two 64 kilobyte frames per vCPU and the framework places it contiguously in memory.
 

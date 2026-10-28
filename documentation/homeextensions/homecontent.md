@@ -17,7 +17,7 @@ A type that represents content that your extension provides to the Home app.
 protocol HomeContent
 ```
 
-#### Overview
+## Overview
 
 Don’t add new conforming types.  Use the types from this framework, such as [`HomeAccessoryConfiguration`](./homeaccessoryconfiguration.md), [`HomeAccessorySettings`](./homeaccessorysettings.md), [`HomeAccessoryHelpGuide`](./homeaccessoryhelpguide.md), and [`HomeAccessoryTroubleshooting`](./homeaccessorytroubleshooting.md) in your [`body`](./homeextension/body.md) property.
 

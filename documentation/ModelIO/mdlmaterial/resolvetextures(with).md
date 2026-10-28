@@ -24,7 +24,7 @@ func resolveTextures(with resolver: any MDLAssetResolver)
 - (void) resolveTexturesWithResolver:(id<MDLAssetResolver>) resolver;
 ```
 
-#### Discussion
+## Discussion
 
 Iterates all material properties. If there are string values, they’re resolved into valid paths as NSURL values by the resolver.
 

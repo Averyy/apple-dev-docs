@@ -21,7 +21,7 @@ class CLKComplicationTemplateModularLargeColumns
 @interface CLKComplicationTemplateModularLargeColumns : CLKComplicationTemplate
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.modularLarge`](./clkcomplicationfamily/modularlarge.md) family.
 

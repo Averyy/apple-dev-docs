@@ -15,7 +15,7 @@ The document title.
 static let title: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../../nsstring.md) object containing document title.
 

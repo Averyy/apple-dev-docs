@@ -10,11 +10,11 @@ framework: "swift-argument-parser/ArgumentParser"
 
 Provide helpful feedback to users when things go wrong.
 
-#### Overview
+## Overview
 
 While `ArgumentParser` validates that the inputs given by your user match the requirements and types that you define in each command, there are some requirements that can’t easily be described in Swift’s type system, such as the number of elements in an array, or an expected integer value.
 
-##### Validating Command-Line Input
+### Validating Command-Line Input
 
 To validate your commands properties after parsing, implement the [`validate()`](./parsablearguments/validate%28%29.md) method on any [`ParsableCommand`](./parsablecommand.md), [`ParsableArguments`](./parsablearguments.md), or [`AsyncParsableCommand`](./asyncparsablecommand.md) type. Throwing an error from the `validate()` method causes the program to print a message to standard error and exit with an error code, preventing the `run()` method from being called with invalid inputs.
 
@@ -65,7 +65,7 @@ howdy
 hey
 ```
 
-##### Handling Post-Validation Errors
+### Handling Post-Validation Errors
 
 The [`ValidationError`](./validationerror.md) type is a special `ArgumentParser` error — a validation error’s message is always accompanied by an appropriate usage string. You can throw other errors, from either the `validate()` or `run()` method to indicate that something has gone wrong that isn’t validation-specific. Errors that conform to `CustomStringConvertible` or `LocalizedError` provide the best experience for users.
 
@@ -111,7 +111,7 @@ struct Example: ParsableCommand {
 }
 ```
 
-##### Handling Transform Errors
+### Handling Transform Errors
 
 During argument and option parsing, you can use a closure to transform the command line strings to custom types. If this transformation fails, you can throw a `ValidationError`; its `message` property will be displayed to the user.
 

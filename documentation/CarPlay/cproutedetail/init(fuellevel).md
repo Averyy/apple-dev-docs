@@ -21,11 +21,11 @@ convenience init(fuelLevel: Measurement<UnitVolume>)
 + (instancetype) routeDetailWithFuelLevel:(NSMeasurement<NSUnitVolume *> *) fuelLevel;
 ```
 
-#### Return Value
+## Return Value
 
 A new @c CPRouteDetail instance representing the fuel level
 
-#### Discussion
+## Discussion
 
 Use this method to display the estimated fuel level upon arrival at the destination. This helps drivers of liquid-fuel vehicles plan refueling stops along their route.
 

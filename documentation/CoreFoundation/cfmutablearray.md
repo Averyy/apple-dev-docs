@@ -23,7 +23,7 @@ class CFMutableArray
 typedef struct __CFArray * CFMutableArrayRef;
 ```
 
-#### Overview
+## Overview
 
 CFMutableArray manages dynamic arrays. The basic interface for managing arrays is provided by [`CFArray`](./cfarray.md). CFMutableArray adds functions to modify the contents of an array.
 

@@ -19,7 +19,7 @@ A task scheduling error that indicates there are too many pending tasks of the t
 static var tooManyPendingTaskRequests: BGTaskScheduler.Error.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Try canceling some existing task requests and then resubmit the request that failed.
 

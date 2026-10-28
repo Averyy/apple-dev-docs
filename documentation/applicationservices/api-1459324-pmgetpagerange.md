@@ -19,11 +19,11 @@ func PMGetPageRange(_ printSettings: PMPrintSettings, _ minPage: UnsafeMutablePo
 OSStatus PMGetPageRange(PMPrintSettings printSettings, UInt32 *minPage, UInt32 *maxPage);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 The page range returned by the function `PMGetPageRange` is independent of the first and last page values returned by [`PMGetFirstPage(_:_:)`](./api-1460271-pmgetfirstpage.md) and [`PMGetLastPage(_:_:)`](./api-1462747-pmgetlastpage.md). See `PMSetPageRange` for more information.
 

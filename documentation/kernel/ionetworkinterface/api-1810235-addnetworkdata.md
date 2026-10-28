@@ -12,11 +12,11 @@ virtual bool addNetworkData(
  IONetworkData *aData );
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the object was added, false otherwise.
 
-#### Overview
+## Overview
 
 The `IONetworkData` object is added to a collection using the key from `IONetworkData::getKey(). The object provided is retained.`
 

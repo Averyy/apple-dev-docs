@@ -25,7 +25,7 @@ func CMClockConvertHostTimeToSystemUnits(_ hostTime: CMTime) -> UInt64
 extern uint64_t CMClockConvertHostTimeToSystemUnits(CMTime hostTime);
 ```
 
-#### Discussion
+## Discussion
 
 This function performs a scale conversion, not a clock conversion. It can be more accurate than [`CMTimeConvertScale(_:timescale:method:)`](./cmtimeconvertscale%28_,timescale,method%29.md) because the system units may have a non-integer timescale.
 

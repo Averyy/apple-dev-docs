@@ -24,11 +24,11 @@ func rotationMatrix(atTime time: TimeInterval) -> matrix_float4x4
 - (matrix_float4x4) rotationMatrixAtTime:(NSTimeInterval) time;
 ```
 
-#### Return Value
+## Return Value
 
 The orientation, as a rotation matrix, of the transform.
 
-#### Discussion
+## Discussion
 
 A rotation matrix provides the same information as the vector returned by the [`rotation(atTime:)`](./rotation%28attime%29.md) method, but in a form more convenient for multiplying with position vectors.
 

@@ -24,11 +24,11 @@ func VTFrameSiloGetProgressOfCurrentPass(_ silo: VTFrameSilo, progressOut: Unsaf
 extern OSStatus VTFrameSiloGetProgressOfCurrentPass(VTFrameSiloRef silo, Float32 *progressOut);
 ```
 
-#### Return Value
+## Return Value
 
 `kVTFrameSiloInvalidTimeRangeErr` if any time ranges are non-numeric, overlap or are not in ascending order.
 
-#### Discussion
+## Discussion
 
 Calculates the current progress based on the most recent sample buffer added and the current pass time ranges.
 

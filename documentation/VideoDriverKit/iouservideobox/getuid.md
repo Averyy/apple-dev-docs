@@ -15,11 +15,11 @@ Gets the unique identifier of the video box.
 OSSharedPtr<OSString> GetUID();
 ```
 
-#### Return Value
+## Return Value
 
 An OSString unique identifier in an OSSharedPtr object.
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

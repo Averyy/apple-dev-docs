@@ -21,7 +21,7 @@ A constant that represents a Boolean value of false.
 var XPC_BOOL_FALSE: xpc_object_t { get }
 ```
 
-#### Discussion
+## Discussion
 
 You may compare a Boolean object against this constant to determine its value.
 

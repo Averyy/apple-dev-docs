@@ -21,7 +21,7 @@ Offsets the view by the horizontal and vertical amount specified in the offset p
 func offset(_ offset: CGSize) -> some VisualEffect
 ```
 
-#### Return Value
+## Return Value
 
 An effect that offsets the view by `offset`.
 

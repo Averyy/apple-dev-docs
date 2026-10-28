@@ -22,7 +22,7 @@ typedef struct UCKeyStateEntryTerminal {
 } UCKeyStateEntryTerminal;
 ```
 
-#### Overview
+## Overview
 
 The `UCKeyStateEntryTerminal` type is used in the `stateEntryData[]` field of a structure of type  [`UCKeyStateRecord`](./uckeystaterecord.md). You should use the `UCKeyStateEntryTerminal` format for simple dead-key states that are terminated by a single keystroke, as in the U.S. keyboard layout. Each entry maps from the current dead-key state to the Unicode character(s) produced when a given character key is pressed that terminates the dead-key state. 
 

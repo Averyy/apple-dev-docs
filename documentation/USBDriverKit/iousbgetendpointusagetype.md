@@ -13,11 +13,11 @@
 uint8_t IOUSBGetEndpointUsageType(const IOUSBEndpointDescriptor *descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 tEndpointUsageType indicating the type found.
 
-#### Discussion
+## Discussion
 
 Extract the usage type of an endpoint from an endpoint descriptor
 

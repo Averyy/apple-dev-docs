@@ -20,7 +20,7 @@ The identifier of an app entity that you associate with a custom view.
 @preconcurrency var appEntityIdentifier: EntityIdentifier? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Associate your view with one app entity to make it discoverable by Apple Intelligence and Siri when the view appears onscreen. For example, when a person taps an item in a list to view the detail view for the item, expose the item to Apple Intelligence and Siri using the `appEntityIdentifier`. If your custom view shows several separate items; for example, if you use a custom list implementation that manages selection states itself; use [`appEntityUIElementProvider`](./appentityuielementprovider.md) to provide the system with a list of items.
 

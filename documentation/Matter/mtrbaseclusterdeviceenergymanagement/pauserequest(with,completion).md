@@ -29,7 +29,7 @@ func pauseRequest(with params: MTRDeviceEnergyManagementClusterPauseRequestParam
 - (void) pauseRequestWithParams:(MTRDeviceEnergyManagementClusterPauseRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Allows a client to temporarily pause an operation and reduce the ESAs energy demand.
 

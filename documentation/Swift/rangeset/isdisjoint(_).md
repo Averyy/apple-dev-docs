@@ -23,7 +23,7 @@ func isDisjoint(_ other: RangeSet<Bound>) -> Bool
 
 Available when `Bound` conforms to `Comparable`.
 
-#### Return Value
+## Return Value
 
 `true` if this range set has no elements in common with `other`; otherwise, `false`.
 

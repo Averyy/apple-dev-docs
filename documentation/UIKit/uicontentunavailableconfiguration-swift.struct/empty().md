@@ -19,11 +19,11 @@ Creates the default configuration for unavailable content.
 static func empty() -> UIContentUnavailableConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration.
 
-#### Discussion
+## Discussion
 
 Use this method to create a new configuration to customize. This is useful if your empty content doesn’t fit the uses covered by configurations available with [`search()`](./search%28%29.md) or [`loading()`](./loading%28%29.md).
 

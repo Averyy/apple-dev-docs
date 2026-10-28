@@ -21,7 +21,7 @@ var pickerDisplaySettings: ASPickerDisplaySettings? { get set }
 @property (nonatomic, copy, readwrite, nullable) ASPickerDisplaySettings * pickerDisplaySettings;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to configure settings like the picker timeout.
 

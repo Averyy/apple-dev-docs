@@ -26,11 +26,11 @@ func CFNetServiceScheduleWithRunLoop(_ theService: CFNetService, _ runLoop: CFRu
 extern void CFNetServiceScheduleWithRunLoop(CFNetServiceRef theService, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 Schedules the specified service on a run loop, which places the service in asynchronous mode. The caller is responsible for ensuring that at least one of the run loops on which the service is scheduled is being run.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

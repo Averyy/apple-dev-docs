@@ -21,7 +21,7 @@ var gaugeColorLocations: [NSNumber]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSNumber *> * gaugeColorLocations;
 ```
 
-#### Discussion
+## Discussion
 
 This property specifies the location of each color in the [`gaugeColors`](./gaugecolors.md) array. Each location must be a value between `0.0` and `1.0`.
 

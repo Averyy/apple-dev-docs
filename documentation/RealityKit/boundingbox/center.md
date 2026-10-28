@@ -20,7 +20,7 @@ The center of the bounding box.
 var center: SIMD3<Float> { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is (0, 0, 0) if the box is empty.
 

@@ -19,11 +19,11 @@ var sortedAttributes: [Any]! { get }
 @property (copy, readonly) NSArray * sortedAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a sorted array of SDP attributes
 
-#### Discussion
+## Discussion
 
 This method will walk all the elements of the service record and return an array of IOBluetoothSDPServiceAttribute objects sorted by attributeID
 

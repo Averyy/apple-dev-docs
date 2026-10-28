@@ -26,7 +26,7 @@ static let imageOrientation: CIRAWFilterOption
 extern CIRAWFilterOption const kCIInputImageOrientationKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an integer value packaged as an [`NSNumber`](../../Foundation/nsnumber.md) object. Valid values are in range `1...8` and follow the EXIF specification. The value is disregarded when the `kCIIgnoreImageOrientationKey` flag is set. You can change the orientation of the image by overriding this value. By changing this value you can rotate an image in 90-degree increments.
 

@@ -25,7 +25,7 @@ var requestedAudioFormat: CMFormatDescription? { get set }
 @property (nonatomic, nullable) CMFormatDescriptionRef requestedAudioFormat;
 ```
 
-#### Discussion
+## Discussion
 
 Must be a PCM format.
 

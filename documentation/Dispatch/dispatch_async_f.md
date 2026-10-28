@@ -21,7 +21,7 @@ Submits an app-defined function for asynchronous execution on a dispatch queue a
 extern void dispatch_async_f(dispatch_queue_t queue, void *context, dispatch_function_t work);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the fundamental mechanism for submitting app-defined functions to a dispatch queue. Calls to this function always return immediately after the function is submitted and never wait for it to be invoked. The target queue determines whether the function is invoked serially or concurrently with respect to other tasks submitted to that same queue. Serial queues are processed concurrently with respect to each other.
 

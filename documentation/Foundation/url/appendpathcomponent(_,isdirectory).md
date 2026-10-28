@@ -23,7 +23,7 @@ Appends a path component to the URL, specifying whether the resulting path is a 
 mutating func appendPathComponent(_ pathComponent: String, isDirectory: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 New code should use [`append(path:directoryHint:)`](./append%28path,directoryhint%29.md) instead of this method.
 

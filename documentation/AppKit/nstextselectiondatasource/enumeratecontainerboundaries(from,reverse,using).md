@@ -19,7 +19,7 @@ optional func enumerateContainerBoundaries(from location: any NSTextLocation, re
 - (void) enumerateContainerBoundariesFromLocation:(id<NSTextLocation>) location reverse:(BOOL) reverse usingBlock:(void (^)(id<NSTextLocation>boundaryLocation, BOOL *stop)) block;
 ```
 
-#### Discussion
+## Discussion
 
 This is an optional method you implement to enumerate the text up to the container or page boundary when the text selection data provider supports this layout functionality.
 

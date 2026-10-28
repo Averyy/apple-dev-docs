@@ -25,11 +25,11 @@ typealias CFBagHashCallBack = (UnsafeRawPointer?) -> CFHashCode
 typedef unsigned long (*)(const void *) CFBagHashCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 An integer that can be used as a table address in a hash table structure.
 
-#### Discussion
+## Discussion
 
 This callback is passed to [`CFBagCreate(_:_:_:_:)`](./cfbagcreate%28_,_,_,_%29.md) in a [`CFBagCallBacks`](./cfbagcallbacks.md) structure.
 

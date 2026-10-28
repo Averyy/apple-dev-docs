@@ -21,7 +21,7 @@ The time interval, in seconds, to advance the simulation.
 var deltaTime: Float
 ```
 
-#### Discussion
+## Discussion
 
 When [`mode`](../simulationrate-swift.struct/mode-swift.property.md) is [`ComputeGraphSimulation.SimulationRate.Mode.fixedFrequency`](../simulationrate-swift.struct/mode-swift.enum/fixedfrequency.md) or [`ComputeGraphSimulation.SimulationRate.Mode.fixedTime`](../simulationrate-swift.struct/mode-swift.enum/fixedtime.md), the simulation takes between zero and [`maxSteps`](./maxsteps.md) fixed-size steps to consume this interval. Any remaining time is accumulated and carried into the next advance.
 

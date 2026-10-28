@@ -25,7 +25,7 @@ func CFCharacterSetIsLongCharacterMember(_ theSet: CFCharacterSet!, _ theChar: U
 extern Boolean CFCharacterSetIsLongCharacterMember(CFCharacterSetRef theSet, UTF32Char theChar);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if `theSet` contains `theChar`, otherwise `false`.
 

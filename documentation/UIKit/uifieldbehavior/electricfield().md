@@ -23,11 +23,11 @@ class func electricField() -> Self
 + (instancetype) electricField;
 ```
 
-#### Return Value
+## Return Value
 
 An field behavior object that applies an electric field to charged items.
 
-#### Discussion
+## Discussion
 
 The amount of force applied by the field is proportional to the charge of the item and is modeled after the first part of the Lorentz equation (`F = qE`). This equation means that the force equals the charge of the object multiplied by the strength of the electric field at the item’s current location in that field.
 

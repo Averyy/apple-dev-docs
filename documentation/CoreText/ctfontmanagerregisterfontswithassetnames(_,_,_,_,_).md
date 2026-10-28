@@ -22,7 +22,7 @@ func CTFontManagerRegisterFontsWithAssetNames(_ fontAssetNames: CFArray, _ bundl
 extern void CTFontManagerRegisterFontsWithAssetNames(CFArrayRef fontAssetNames, CFBundleRef bundle, CTFontManagerScope scope, bool enabled, bool (^registrationHandler)(CFArrayRef errors, bool done));
 ```
 
-#### Discussion
+## Discussion
 
 Registered fonts are discoverable through font descriptor matching in the calling process.
 

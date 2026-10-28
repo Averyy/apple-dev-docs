@@ -23,11 +23,11 @@ func shouldAutomaticallyForwardRotationMethods() -> Bool
 - (BOOL) shouldAutomaticallyForwardRotationMethods;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if rotation methods are forwarded or [`false`](../../Swift/false.md) if they are not.
 
-#### Discussion
+## Discussion
 
 This method is called to determine whether to automatically forward rotation-related containment callbacks to child view controllers.
 

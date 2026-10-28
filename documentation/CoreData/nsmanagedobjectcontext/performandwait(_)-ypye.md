@@ -29,7 +29,7 @@ func performAndWait(_ block: @Sendable () -> Void)
 
 - [Using Core Data in the background](../using-core-data-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 This method supports *reentrancy* — meaning it’s safe to call the method again, from within the closure, before the previous invocation completes.
 

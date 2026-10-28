@@ -24,7 +24,7 @@ typealias AUScheduleMIDIEventBlock = (AUEventSampleTime, UInt8, Int, UnsafePoint
 typedef void (^)(long long, unsigned char, long, const unsigned char *) __attribute__((nonblocking)) AUScheduleMIDIEventBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The block takes the following parameters:
 

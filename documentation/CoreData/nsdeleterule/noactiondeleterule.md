@@ -25,7 +25,7 @@ case noActionDeleteRule
 NSNoActionDeleteRule
 ```
 
-#### Discussion
+## Discussion
 
 If you use this delete rule, make sure you delete any referenced managed objects or nullify their inverse relationships. Otherwise, those objects will reference an object that doesn’t exist, and your persistent store will be in an inconsistent state.
 

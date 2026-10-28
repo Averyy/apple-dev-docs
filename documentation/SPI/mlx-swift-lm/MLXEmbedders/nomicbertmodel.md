@@ -17,7 +17,7 @@ The main entry point for the Nomic BERT model.
 class NomicBertModel
 ```
 
-#### Overview
+## Overview
 
 This class serves as the container for the entire architecture. It connects the embeddings, the encoder stack, and the optional output heads (Pooler or LM Head). It also handles weight key sanitization to ensure compatibility with checkpoints trained in other frameworks (e.g., PyTorch / Hugging Face).
 

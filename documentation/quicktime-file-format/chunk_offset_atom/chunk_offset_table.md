@@ -6,7 +6,7 @@
 
 A chunk offset table consisting of an array of offset values.
 
-#### Overview
+## Overview
 
 There is one table entry for each chunk in the media. The offset contains the byte offset from the beginning of the data stream to the chunk. The table is indexed by chunk number — the first table entry corresponds to the first chunk, the second table entry is for the second chunk, and so on.
 

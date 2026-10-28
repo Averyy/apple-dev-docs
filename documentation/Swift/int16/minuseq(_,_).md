@@ -21,7 +21,7 @@ Subtracts the second value from the first and stores the difference in the left-
 static func -= (lhs: inout Int16, rhs: Int16)
 ```
 
-#### Discussion
+## Discussion
 
 The difference of the two arguments must be representable in the arguments’ type. In the following example, the result of `21 - 50` is less than zero, the minimum representable `UInt8` value:
 

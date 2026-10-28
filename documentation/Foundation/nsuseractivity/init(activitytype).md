@@ -25,7 +25,7 @@ init(activityType: String)
 - (instancetype) initWithActivityType:(NSString *) activityType;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSUserActivity`](../nsuseractivity.md) object.
 

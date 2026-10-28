@@ -21,7 +21,7 @@ case stopped
 MPMoviePlaybackStateStopped
 ```
 
-#### Discussion
+## Discussion
 
 Playback is currently stopped. Playback will commence from the beginning of the movie.
 

@@ -25,7 +25,7 @@ func removeAllActions(withTarget target: Any)
 - (void) removeAllActionsWithTarget:(id) target;
 ```
 
-#### Discussion
+## Discussion
 
 Doesn’t re-enable the manager if it’s disabled.
 

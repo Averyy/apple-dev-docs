@@ -17,7 +17,7 @@ Adds a remote package dependency given a version requirement.
 static func package(url: String, _ requirement: Package.Dependency.Requirement) -> Package.Dependency
 ```
 
-#### Return Value
+## Return Value
 
 A `Package.Dependency` instance.
 

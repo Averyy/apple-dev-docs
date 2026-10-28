@@ -15,11 +15,11 @@ Converts the given Mac OS text encoding specificationto the corresponding script
 OSStatus RevertTextEncodingToScriptInfo(TextEncoding iEncoding, ScriptCode *oTextScriptID, LangCode *oTextLanguageID, Str255 oTextFontname);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).The function returns `paramErr` ifthe text encoding specification input parameter value is invalid. Thefunction returns a `kTECTableFormatErr `resultcode if the internal mapping tables used for translation are invalid.For a list of other possible result codes, see “Data Types”.
 
-#### Discussion
+## Discussion
 
 If you have applications that use Mac OS Script Manager andFont Manager functions, you can use the `RevertTextEncodingToScriptInfo` functionto convert information in a text encoding specification into theappropriate Mac OS script code, language code, and font name, ifthey can be unambiguously derived. Your application can then usethis information to display text to a user on the screen. 
 

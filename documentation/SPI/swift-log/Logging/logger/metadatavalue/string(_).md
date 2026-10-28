@@ -17,7 +17,7 @@ A string metadata value.
 case string(String)
 ```
 
-#### Discussion
+## Discussion
 
 Because `MetadataValue` implements `ExpressibleByStringInterpolation`, and `ExpressibleByStringLiteral`, you don’t need to type `.string(someType.description)` instead the string interpolation `"\(someType)"`.
 

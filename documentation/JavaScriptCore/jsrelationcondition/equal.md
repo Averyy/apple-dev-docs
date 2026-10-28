@@ -22,7 +22,7 @@ case equal
 kJSRelationConditionEqual
 ```
 
-#### Discussion
+## Discussion
 
 A constant identifying the type of JavaScript relation condition.
 

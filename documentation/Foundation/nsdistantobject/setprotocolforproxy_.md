@@ -16,7 +16,7 @@ Sets the methods known to be handled by the receiver to those in a given protoco
 - (void) setProtocolForProxy:(Protocol *) proto;
 ```
 
-#### Discussion
+## Discussion
 
 Setting a protocol for a remote proxy reduces network traffic needed to determine method argument and return types.
 

@@ -19,7 +19,7 @@ var source: FxImageTileRequestSource { get }
 @property (nonatomic, readonly) FxImageTileRequestSource source;
 ```
 
-#### Discussion
+## Discussion
 
 Set the type to the filter’s input or one of its parameters.
 

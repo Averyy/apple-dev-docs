@@ -15,7 +15,7 @@ Sent when a control with editable text ends an editing session.
 - (void) controlTextDidEndEditing:(NSNotification *) obj;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked when the user stops editing text in a control such as a text field or form. The control posts a [`textDidEndEditingNotification`](../../AppKit/nscontrol/textdidendeditingnotification.md) notification, and if the control’s delegate implements this method, it is automatically registered to receive the notification. Use the key `@"NSFieldEditor"` to obtain the field editor from the `userInfo` dictionary of the notification object.
 

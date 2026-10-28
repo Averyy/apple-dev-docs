@@ -19,7 +19,7 @@ func changeCurrentFolderToRoot() -> OBEXError
 - (OBEXError) changeCurrentFolderToRoot;
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to ‘cd ~/’
 

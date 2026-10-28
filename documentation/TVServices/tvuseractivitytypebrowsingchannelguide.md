@@ -23,7 +23,7 @@ extern NSString * const TVUserActivityTypeBrowsingChannelGuide;
 
 - [Providing Channel Navigation](./providing-channel-navigation.md)
 
-#### Discussion
+## Discussion
 
 Support this [`NSUserActivity`](../Foundation/nsuseractivity.md) activity type in your app to display a channel guide or content browser when the user presses the Guide button on a remote. For more details on implementing a channel guide, see [Providing Channel Navigation](./providing-channel-navigation.md).
 

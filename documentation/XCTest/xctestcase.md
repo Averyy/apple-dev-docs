@@ -23,7 +23,7 @@ class XCTestCase
 - [Adding Attachments to Tests, Activities, and Issues](./adding-attachments-to-tests-activities-and-issues.md)
 - [Grouping Tests into Substeps with Activities](./grouping-tests-into-substeps-with-activities.md)
 
-#### Overview
+## Overview
 
 A test case is a group of related test methods, with optional setup and teardown before and after tests run. See [Defining Test Cases and Test Methods](./defining-test-cases-and-test-methods.md) for more information.
 

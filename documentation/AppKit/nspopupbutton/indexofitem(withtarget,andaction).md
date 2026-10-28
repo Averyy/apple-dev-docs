@@ -19,11 +19,11 @@ func indexOfItem(withTarget target: Any?, andAction actionSelector: Selector?) -
 - (NSInteger) indexOfItemWithTarget:(id) target andAction:(SEL) actionSelector;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the menu item, or `-1` if no menu item contains the specified target and action.
 
-#### Discussion
+## Discussion
 
 If you specify `NULL` for the `actionSelector` parameter, the index of the first menu item with the specified target is returned. This method invokes the method of the same name of its `NSPopUpButtonCell` object.
 

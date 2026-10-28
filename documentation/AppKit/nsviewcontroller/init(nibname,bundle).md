@@ -19,11 +19,11 @@ init(nibName nibNameOrNil: NSNib.Name?, bundle nibBundleOrNil: Bundle?)
 - (instancetype) initWithNibName:(NSNibName) nibNameOrNil bundle:(NSBundle *) nibBundleOrNil;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized [`NSViewController`](../nsviewcontroller.md) object.
 
-#### Discussion
+## Discussion
 
 The [`NSViewController`](../nsviewcontroller.md) object looks for the nib file in the bundle’s language-specific project directories first, followed by the Resources directory.
 

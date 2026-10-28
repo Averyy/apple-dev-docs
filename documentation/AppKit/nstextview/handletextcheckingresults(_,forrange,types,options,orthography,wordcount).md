@@ -19,7 +19,7 @@ func handleTextCheckingResults(_ results: [NSTextCheckingResult], forRange range
 - (void) handleTextCheckingResults:(NSArray<NSTextCheckingResult *> *) results forRange:(NSRange) range types:(NSTextCheckingTypes) checkingTypes options:(NSDictionary<NSString *,id> *) options orthography:(NSOrthography *) orthography wordCount:(NSInteger) wordCount;
 ```
 
-#### Discussion
+## Discussion
 
 The [`NSTextViewDelegate`](../nstextviewdelegate.md) offers a method, [`textView(_:didCheckTextIn:types:options:results:orthography:wordCount:)`](../nstextviewdelegate/textview%28_,didchecktextin,types,options,results,orthography,wordcount%29.md) that is called after the checking is performed, allowing you to modify the results.
 

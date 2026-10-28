@@ -19,11 +19,11 @@ func continueTracking(last lastPoint: NSPoint, current currentPoint: NSPoint, in
 - (BOOL) continueTracking:(NSPoint) lastPoint at:(NSPoint) currentPoint inView:(NSView *) controlView;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if mouse tracking should continue, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method is invoked in [`trackMouse(with:in:of:untilMouseUp:)`](./trackmouse%28with,in,of,untilmouseup%29.md). The default implementation returns [`true`](../../Swift/true.md) if the cell is set to continuously send action messages to its target when the mouse button is down or the mouse is being dragged. Subclasses can override this method to provide more sophisticated tracking behavior.
 

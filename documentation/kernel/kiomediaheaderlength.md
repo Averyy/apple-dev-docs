@@ -15,7 +15,7 @@ A property of IONetworkInterface objects.
 #define kIOMediaHeaderLength
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediaHeaderLength property has an OSNumber value that specifies the size of the media header in bytes.
 

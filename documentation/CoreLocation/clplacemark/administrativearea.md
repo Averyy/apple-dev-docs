@@ -27,7 +27,7 @@ var administrativeArea: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * administrativeArea;
 ```
 
-#### Discussion
+## Discussion
 
 The string in this property can be either the spelled out name of the administrative area or its designated abbreviation, if one exists. If the placemark location is Apple’s headquarters, for example, the value for this property would be the string “CA” or “California”.
 

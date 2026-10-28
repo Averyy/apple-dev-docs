@@ -32,7 +32,7 @@ var identificationHint: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * identificationHint;
 ```
 
-#### Discussion
+## Discussion
 
 Use this string in conjunction with the [`name`](./name.md) property to identify the payment method uniquely. For example, this property may contain the last four digits of a credit card number to help distinguish it from other credit cards of the same type.
 

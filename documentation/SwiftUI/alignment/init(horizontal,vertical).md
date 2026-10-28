@@ -21,7 +21,7 @@ Creates a custom alignment value with the specified horizontal and vertical alig
 init(horizontal: HorizontalAlignment, vertical: VerticalAlignment)
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI provides a variety of built-in alignments that combine built-in [`HorizontalAlignment`](../horizontalalignment.md) and [`VerticalAlignment`](../verticalalignment.md) guides. Use this initializer to create a custom alignment that makes use of a custom horizontal or vertical guide, or both.
 

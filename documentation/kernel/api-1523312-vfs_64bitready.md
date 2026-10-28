@@ -15,7 +15,7 @@ Check if the filesystem associated with a mountpoint is marked ready for interac
 int vfs_64bitready(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if filesystem is ready for 64-bit; 0 otherwise.
 

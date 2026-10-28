@@ -24,7 +24,7 @@ func insert(_ page: PDFPage, at index: Int)
 - (void) insertPage:(PDFPage *) page atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 This method raises an exception if `index` is out of bounds.
 

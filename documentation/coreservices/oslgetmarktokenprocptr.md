@@ -20,11 +20,11 @@ typealias OSLGetMarkTokenProcPtr = (UnsafePointer<AEDesc>?, DescType, UnsafeMuta
 typedef OSErr (*OSLGetMarkTokenProcPtr)(const AEDesc *dContainerToken, DescType containerClass, AEDesc *result);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145). Your mark token function should return `noErr` if it successfully supplies a mark token and `errAEEventNotHandled` if it fails to supply a mark token. When the Apple Event Manager gets an error result of `errAEEventNotHandled` after calling a mark token function, it attempts to get a mark token by calling the equivalent system marking callback function.
 
-#### Discussion
+## Discussion
 
 To get a mark token, the Apple Event Manager calls your mark token function. Like other tokens, the mark token returned can be a descriptor of any type; however, unlike other tokens, a mark token identifies the way your application will mark Apple event objects during the current session while resolving a single object specifier that specifies the key form `formTest`. 
 

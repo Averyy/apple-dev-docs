@@ -20,11 +20,11 @@ func animation(forKey key: NSAnimatablePropertyKey) -> Any?
 - (id) animationForKey:(NSAnimatablePropertyKey) key;
 ```
 
-#### Return Value
+## Return Value
 
 The animation to perform. A subclass of [`CAAnimation`](../../QuartzCore/caanimation.md).
 
-#### Discussion
+## Discussion
 
 When the action specified by `key` is triggered for an object, this method is consulted to find the animation, if any, that should be performed in response.
 

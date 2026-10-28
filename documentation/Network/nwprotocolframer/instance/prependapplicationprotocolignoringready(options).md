@@ -21,7 +21,7 @@ Dynamically add a protocol to a connection establishment attempt “above” the
 final func prependApplicationProtocolIgnoringReady(options: NWProtocolOptions) throws
 ```
 
-#### Discussion
+## Discussion
 
 To ensure thread safety, this function can only be called in one of the callback blocks invoked on the framer, or in a block passed to NWProtocolFramer.Instance.async().
 

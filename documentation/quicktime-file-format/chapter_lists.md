@@ -5,7 +5,7 @@
 
 A chapter list provides a set of named entry points into a movie.
 
-#### Overview
+## Overview
 
 A chapter list provides a set of named entry points into a movie, allowing the user to jump to a preselected point in the movie from a convenient pop-up list.
 

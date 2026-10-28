@@ -29,7 +29,7 @@ func clearTargets(with params: MTREnergyEVSEClusterClearTargetsParams?) async th
 - (void) clearTargetsWithParams:(MTREnergyEVSEClusterClearTargetsParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Allows a client to clear all stored charging targets.
 

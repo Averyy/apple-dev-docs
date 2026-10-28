@@ -20,7 +20,7 @@ A reference to an external layer or asset.
 struct Reference
 ```
 
-#### Overview
+## Overview
 
 References are composition arcs that bring content from another layer into this prim. A reference specifies the asset path, an optional target prim path within that asset, a time offset for remapping animation, and arbitrary custom metadata.
 

@@ -21,7 +21,7 @@ The format style of the string representation of the day period, before or after
 struct AMPMStyle
 ```
 
-#### Overview
+## Overview
 
 Possible values for this style are: [`omitted`](./ampmstyle/omitted.md), [`narrow`](./ampmstyle/narrow.md), [`abbreviated`](./ampmstyle/abbreviated.md), and [`wide`](./ampmstyle/wide.md).
 

@@ -25,11 +25,11 @@ func components(separatedBy separator: String) -> [String]
 - (NSArray<NSString *> *) componentsSeparatedByString:(NSString *) separator;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSArray` object containing substrings from the receiver that have been divided by `separator`.
 
-#### Discussion
+## Discussion
 
 The substrings in the array appear in the order they did in the receiver. Adjacent occurrences of the separator string produce empty strings in the result. Similarly, if the string begins or ends with the separator, the first or last substring, respectively, is empty. For example, this code fragment:
 

@@ -12,11 +12,11 @@ Request authorization to query HealthKit for a user’s clinical records and dis
 - Mac Catalyst 12.0+
 - Xcode 13.2+
 
-#### Overview
+## Overview
 
 This sample demonstrates how to request access to a user’s clinical records through [HealthKit](./HealthKit.md). With the HealthKit framework’s clinical record support, you can read [Fast Healthcare Interoperability Resources](http://hl7.org/fhir) (FHIR) objects from the HealthKit store. People must first download their clinical records from one of the [supported healthcare institutions](https://support.apple.com/en-us/HT208647) before the records appear in HealthKit.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 To use HealthKit, you must first enable the HealthKit capability and include the [`NSHealthShareUsageDescription`](../BundleResources/information-property-list/nshealthshareusagedescription.md) key in your app’s `Info.plist` file, as described in [Accessing Health Records](./accessing-health-records.md). To access the clinical records, check the Clinical Health Records checkbox in the HealthKit capability and include the [`NSHealthClinicalHealthRecordsShareUsageDescription`](../BundleResources/information-property-list/nshealthclinicalhealthrecordsshareusagedescription.md) key in your app’s `Info.plist` file.
 
@@ -29,7 +29,7 @@ Before building and running the app:
 
 When you first run the app, it hasn’t requested permission to read or share any data in HealthKit. Tapping any items in the list results in an Authorization not Determined error. To authorize the app, scroll to the bottom of the list, and tap the Authorize button.
 
-##### Define the Sample Types to Request
+### Define the Sample Types to Request
 
 The app defines the clinical record sample types using the [`HKClinicalTypeIdentifier`](./hkclinicaltypeidentifier.md) enumeration. The app must request permission to read all the types that it intends to use. Note that the app may define both clinical records and standard HealthKit sample types at the same time.
 
@@ -73,7 +73,7 @@ enum Section {
 }
 ```
 
-##### Request Authorization
+### Request Authorization
 
 The app may request authorization to access both clinical data and HealthKit data simultaneously.
 
@@ -121,7 +121,7 @@ func requestAuthorization(_ sender: AnyObject? = nil) {
 
 Typically, apps that read or share HealthKit data automatically request authorization–either when the app first launches or just before the app needs to access the data. However, to provide readers with complete control over the authorization process, this sample code doesn’t automatically request authorization. Instead, anyone using the app must manually request authorization, by scrolling to the bottom of the list and tapping the Authorize button.
 
-##### Query for Health Records
+### Query for Health Records
 
 To query for clinical records, the app uses an [HKSampleQuery](./hksamplequery.md) as shown below.
 
@@ -145,7 +145,7 @@ func queryForSamples() {
 }
 ```
 
-##### Access Elements Within a FHIR Resource
+### Access Elements Within a FHIR Resource
 
 After a person using the app has given the app access to their clinical records, the app needs to extract the relevant information from the FHIR JSON data so that it can do something useful with it. For example, to display the status of a medication in the form of a [MedicationStatement](http://hl7.org/fhir/DSTU2/medicationstatement) resource, the app needs to access the `MedicationStatement.status` element.
 

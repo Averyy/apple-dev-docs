@@ -21,11 +21,11 @@ func SecKeychainItemCreatePersistentReference(_ itemRef: SecKeychainItem, _ pers
 OSStatus SecKeychainItemCreatePersistentReference(SecKeychainItemRef itemRef, CFDataRef*persistentItemRef);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Unlike normal references, a persistent reference may be stored on disk or passed between processes. You can convert a persistent reference into an ordinary keychain item reference (`SecKeychainItemRef`) by calling the [`SecKeychainItemCopyFromPersistentReference(_:_:)`](./seckeychainitemcopyfrompersistentreference%28_,_%29.md) function.
 

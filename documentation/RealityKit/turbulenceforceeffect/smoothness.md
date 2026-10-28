@@ -20,7 +20,7 @@ A smoothing factor that applies to the force, reducing randomness.
 let smoothness: Float
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0.0` specifies maximum noise, and a value of `1.0` specifies no noise at all.
 

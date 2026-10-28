@@ -25,11 +25,11 @@ func class_getMethodImplementation(_ cls: AnyClass?, _ name: Selector) -> IMP?
 extern IMPclass_getMethodImplementation(Class cls, SEL name);
 ```
 
-#### Return Value
+## Return Value
 
 The function pointer that would be called if `[object name]` were called with an instance of the class, or `NULL` if `cls` is `Nil`.
 
-#### Discussion
+## Discussion
 
 [`class_getMethodImplementation(_:_:)`](./class_getmethodimplementation%28_,_%29.md) may be faster than `method_getImplementation(class_getInstanceMethod(cls, name))`.
 

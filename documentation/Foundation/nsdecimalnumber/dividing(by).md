@@ -25,11 +25,11 @@ func dividing(by decimalNumber: NSDecimalNumber) -> NSDecimalNumber
 - (NSDecimalNumber *) decimalNumberByDividingBy:(NSDecimalNumber *) decimalNumber;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDecimalNumber` object whose value is the value of the receiver divided by `decimalNumber`.
 
-#### Discussion
+## Discussion
 
 This method uses the default behavior when handling calculation errors and rounding.
 

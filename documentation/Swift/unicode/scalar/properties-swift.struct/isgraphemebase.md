@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is a grapheme base.
 var isGraphemeBase: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 A grapheme base can be thought of as a space-occupying glyph above or below which other non-spacing modifying glyphs can be applied. For example, when the character `é` is represented in its decomposed form, the grapheme base is “e” (U+0065 LATIN SMALL LETTER E) and it is followed by a single grapheme extender, U+0301 COMBINING ACUTE ACCENT.
 

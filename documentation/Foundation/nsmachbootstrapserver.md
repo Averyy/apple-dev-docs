@@ -18,7 +18,7 @@ A port name server that takes and returns Mach port objects.
 @interface NSMachBootstrapServer : NSPortNameServer
 ```
 
-#### Overview
+## Overview
 
 Port removal functionality is not supported in [`NSMachBootstrapServer`](./nsmachbootstrapserver.md); if you want to cancel a service, you have to destroy the port (invalidate the [`NSMachPort`](./nsmachport.md) given to [`registerPort:name:`](./nsmachbootstrapserver/registerport_name_.md)).
 

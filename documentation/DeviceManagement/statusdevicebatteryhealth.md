@@ -18,7 +18,7 @@ The status item that reports the device’s battery health.
 object StatusDeviceBatteryHealth
 ```
 
-#### Discussion
+## Discussion
 
 For more information about battery health, see the following support articles:
 
@@ -26,7 +26,7 @@ For more information about battery health, see the following support articles:
 - [iPad devices](https://support.apple.com/117759)
 - [macOS devices](https://support.apple.com/108376)
 
-##### Status item availability
+### Status item availability
 
 |  |  |
 | --- | --- |
@@ -37,7 +37,7 @@ For more information about battery health, see the following support articles:
 | Allowed in system scope | iOS, macOS, Shared iPad |
 | Allowed in user scope | N/A |
 
-##### Status item example
+### Status item example
 
 ```json
 {

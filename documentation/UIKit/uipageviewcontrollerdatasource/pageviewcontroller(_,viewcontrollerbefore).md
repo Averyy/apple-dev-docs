@@ -24,7 +24,7 @@ func pageViewController(_ pageViewController: UIPageViewController, viewControll
 - (UIViewController *) pageViewController:(UIPageViewController *) pageViewController viewControllerBeforeViewController:(UIViewController *) viewController;
 ```
 
-#### Return Value
+## Return Value
 
 The view controller before the given view controller, or `nil` to indicate that there is no previous view controller.
 

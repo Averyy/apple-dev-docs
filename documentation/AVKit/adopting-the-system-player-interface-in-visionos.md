@@ -5,13 +5,13 @@
 
 Provide an optimized viewing experience for watching 3D video content.
 
-#### Overview
+## Overview
 
 The recommended way to provide a video playback interface for your visionOS app is to adopt [`AVPlayerViewController`](./avplayerviewcontroller.md). Using this class makes it simple to provide the same playback user interface and features found in system apps like TV and Music. It also provides essential system integration to deliver an optimal viewing experience whether you’re playing standard 2D content or immersive 3D video with spatial audio. This article describes best practices for presenting the player in visionOS and covers the options the player provides to customize its user interface to best fit your app.
 
 > **Note**:  In addition to providing the system playback interface, you can also use [`AVPlayerViewController`](./avplayerviewcontroller.md) to present a media-trimming experience similar to QuickTime Player in macOS. See [Trimming and exporting media in visionOS](./trimming-and-exporting-media-in-visionos.md) for more information.
 
-##### Explore presentation options
+### Explore presentation options
 
 Use [`AVPlayerViewController`](./avplayerviewcontroller.md) to play video in windowed environments in visionOS. It automatically adapts its user interface to best fit its presentation. For example, when you present it nested inside another view, it displays an inline user interface:
 
@@ -23,7 +23,7 @@ Present the player in full-screen mode by setting it as the exclusive root view 
 
 ![A screenshot of a player view controller’s interface when you present it fullscreen. At the top, along the leading edge, is a back button to close the player, and along the trailing edge is a horizontal slider to control the audio volume. Centered along the bottom edge is a bar that contains user interface to control playback. On the leading edge of this bar are controls to toggle the state of playback and skip through the presentation. In the center is a horizontal progress slider that you can pinch to scrub through the presentation. On the trailing edge is a button with an ellipsis icon that you can tap to display additional player controls.](https://developer.apple.com/tutorials/images/com.apple.avkit/media-4266546@2x.png)
 
-##### Display supporting metadata
+### Display supporting metadata
 
 The user interface displays a title view above the transport bar when the current player item contains title and subtitle metadata. When playing live-streaming content, the title view may also display a badge to indicate the content state to the viewer.
 
@@ -74,7 +74,7 @@ playerItem.externalMetadata = createMetadataItems(for: metadata)
 
 Only the title and subtitle values display in the title view. The player presents the other supported metadata values in its Info tab, which the section below describes.
 
-##### Display custom informational views
+### Display custom informational views
 
 The visionOS player UI can display one or more content tabs in the user interface to show supporting information or related content. By default, the player presents an Info tab when an asset contains embedded metadata or when you set external metadata on the player item, as the Display supporting metadata section above describes.
 
@@ -93,7 +93,7 @@ controller.customInfoViewControllers = [hostingController]
 
 ![A screenshot of the fullscreen player’s displaying a custom horizontal list from a custom info view controller. The player displays a panel along its bottom edge. At the top of the panel is a close button, anchored to the leading edge, and a title that’s centered. Below these items, the custom info view controller displays a horizontally scrollable list of video cards that you can select to watch another video.](https://developer.apple.com/tutorials/images/com.apple.avkit/media-4266544@2x.png)
 
-##### Present actions in the Info tab
+### Present actions in the Info tab
 
 The player UI presents an Info tab when the asset it displays provides embedded or external metadata. The tab’s view displays the metadata details, and it may show up to two [`UIAction`](../UIKit/uiaction.md) controls along its trailing edge:
 
@@ -110,7 +110,7 @@ let showMoreInfo = UIAction(title: "More Information", image: infoCircle) { acti
 playerViewController.infoViewActions.append(showMoreInfo)
 ```
 
-##### Display actions contextually
+### Display actions contextually
 
 You can use the visionOS player UI to present controls contextually, which your app displays for a specific range of time in the content and then dismiss. A common use for this type of control is a skip button that displays during the title sequence of a movie or TV show. People can tap the button to bypass the introduction and quickly skip to the main content.
 

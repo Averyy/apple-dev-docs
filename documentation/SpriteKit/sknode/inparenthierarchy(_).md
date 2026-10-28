@@ -25,7 +25,7 @@ func inParentHierarchy(_ parent: SKNode) -> Bool
 - (BOOL) inParentHierarchy:(SKNode *) parent;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the node is a descendant of the `parent` node; otherwise [`false`](../../Swift/false.md).
 

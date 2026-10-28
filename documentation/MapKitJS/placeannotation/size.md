@@ -15,7 +15,7 @@ The dimensions of the annotation, in CSS pixels.
 get size(): Size;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t change the size of a [`PlaceAnnotation`](../placeannotation.md).
 

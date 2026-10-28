@@ -21,7 +21,7 @@ The type’s version, if available.
 var version: Int? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Most types don’t have a version.
 

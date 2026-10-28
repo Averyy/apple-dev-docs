@@ -23,7 +23,7 @@ typealias CMStepUpdateHandler = (Int, Date, (any Error)?) -> Void
 typedef void (^)(long, NSDate *, NSError *) CMStepUpdateHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This block takes the following parameters:
 

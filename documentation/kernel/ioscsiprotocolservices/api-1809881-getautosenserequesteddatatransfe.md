@@ -12,11 +12,11 @@ UInt64 GetAutosenseRequestedDataTransferCount (
  SCSITaskIdentifierrequest );
 ```
 
-#### Return Value
+## Return Value
 
 The requested autosense data transfer count.
 
-#### Overview
+## Overview
 
 Accessor method to retrieve the requested data transfer count for autosense data associated with the specified request.
 

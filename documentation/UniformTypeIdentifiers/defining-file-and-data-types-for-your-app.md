@@ -5,7 +5,7 @@
 
 Declare uniform type identifiers to support your app’s proprietary data formats.
 
-#### Overview
+## Overview
 
 Apps that save, load, or transfer documents with proprietary data formats can define the file or data type for each format by:
 
@@ -14,7 +14,7 @@ Apps that save, load, or transfer documents with proprietary data formats can de
 3. Defining each type’s conformance to system-declared types
 4. Listing any associated file extensions or MIME types.
 
-##### Declare a custom type for your app
+### Declare a custom type for your app
 
 When defining a type, you need to define it as an exported or imported type; this declaration indicates whether your app is the source of the type or whether it supports using a type defined elsewhere, respectively. If your app uses a type that this framework provides, don’t redeclare it in your app’s bundle.
 
@@ -22,13 +22,13 @@ Define an exported type when your app is the canonical source of information for
 
 Define an imported type if your app uses a type that another app defines, or if it’s a proprietary file format the system doesn’t declare. When importing a type from another app, don’t declare your own identifier; instead, use the same type identifier as the original.
 
-##### Choose an identifier for your type
+### Choose an identifier for your type
 
 The identifiers you create for your app need to be unique. To ensure uniqueness, start by using a reverse DNS format that begins with `com.companyName`. Although the system supports different type identifier strings with the same specification, the reverse isn’t true. The identifier must contain only alphanumeric characters (`a–z`, `A`–`Z`, and `0`–`9`), hyphens (`-`), and periods (`.`). For example, you might use `com.example.greatAppDocument` or `com.example.greatApp-document` for the [`UTTypeIdentifier`](../BundleResources/information-property-list/utexportedtypedeclarations/uttypeidentifier.md) string in the `Info.plist` file.
 
 > ❗ **Important**:  Don’t use `public`, `dyn`, or `com.apple` as the prefix in your app’s types. The system reserves `public` for public domain or standard types. The framework reserves the prefix `dyn` for types that it generates dynamically when no other type is available, and the prefix `com.apple` for types that Apple declares.
 
-##### Define the conformance
+### Define the conformance
 
 The type declaration can include a list of type identifiers that the type conforms to. For example, if your app uses a proprietary file format based on `JSON`, use `public.json` in the [`UTTypeConformsTo`](../BundleResources/information-property-list/utexportedtypedeclarations/uttypeconformsto.md) string in the `Info.plist` file.
 
@@ -40,7 +40,7 @@ You can also add conformance to functional types, such as `public.database` or `
 
 If you specify conformance to a nonpublic type, make sure that you also declare that type in your bundle.
 
-##### Define the description, extensions, and MIME types
+### Define the description, extensions, and MIME types
 
 In addition to declaring the identifier, the type can define a user-readable string describing the type that you can also localize. For example, you might use `GreatApp Document` for the [`UTTypeDescription`](../BundleResources/information-property-list/utexportedtypedeclarations/uttypedescription.md) string in the `Info.plist` file.
 
@@ -72,7 +72,7 @@ The following sample shows the exported example type added to an `Info.plist` fi
 </array>
 ```
 
-##### Specify the keys for declaring a type
+### Specify the keys for declaring a type
 
 The following table lists the available property keys that you use in type declarations:
 

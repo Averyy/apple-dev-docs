@@ -5,7 +5,7 @@
 
 Identify performance optimization strategies for Apple silicon M-series and A-series chips.
 
-#### Overview
+## Overview
 
 The Apple Silicon CPU Optimization Guide provides an overview of the architecture of Apple silicon CPUs and optimization tips to help you optimize your code’s performance. The guide contains a wide range of information that is useful for all developers:
 

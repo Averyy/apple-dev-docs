@@ -17,7 +17,7 @@ A purchase transaction.
 case purchase
 ```
 
-#### Discussion
+## Discussion
 
 Use this type to receive money from the person’s card.
 

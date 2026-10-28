@@ -15,7 +15,7 @@ Add a buffer to a video stream.
 kern_return_t addBuffer(IOUserVideoBuffer *buffer);
 ```
 
-#### Discussion
+## Discussion
 
 Adds an IOUserVideoBuffer to an IOUserVideoStream. It will be added to the end of the buffer array, so the buffer ID of existing buffers will not change.
 

@@ -24,7 +24,7 @@ var geometryDescriptors: [MTLAccelerationStructureGeometryDescriptor]? { get set
 @property (nonatomic, retain, nullable) NSArray<MTLAccelerationStructureGeometryDescriptor *> * geometryDescriptors;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the [`motionKeyframeCount`](./motionkeyframecount.md) property determines what kinds of geometry descriptors you can assign to this property and how you need to configure them.
 

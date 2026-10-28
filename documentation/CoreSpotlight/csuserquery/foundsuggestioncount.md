@@ -23,7 +23,7 @@ var foundSuggestionCount: Int { get }
 @property (readonly) NSInteger foundSuggestionCount;
 ```
 
-#### Discussion
+## Discussion
 
 As the query runs, it updates the value in this property to reflect the total number of suggestions.
 

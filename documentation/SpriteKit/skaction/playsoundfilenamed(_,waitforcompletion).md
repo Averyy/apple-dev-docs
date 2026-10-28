@@ -25,11 +25,11 @@ class func playSoundFileNamed(_ soundFile: String, waitForCompletion wait: Bool)
 + (SKAction *) playSoundFileNamed:(NSString *) soundFile waitForCompletion:(BOOL) wait;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 Use [`SKAction`](../skaction.md) `playSoundFileNamed:waitForCompletion:` only for short incidentals. Use [`AVAudioPlayer`](../../AVFAudio/avaudioplayer.md) for long running background music. This action is not reversible; the reversed action is identical to the original action.
 

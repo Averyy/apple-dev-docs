@@ -28,7 +28,7 @@ class func report(_ achievements: [GKAchievement], withEligibleChallenges challe
 + (void) reportAchievements:(NSArray<GKAchievement *> *) achievements withEligibleChallenges:(NSArray<GKChallenge *> *) challenges withCompletionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to communicate to Game Center about the local player’s progress towards completing one or more achievements.
 

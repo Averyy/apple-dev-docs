@@ -20,7 +20,7 @@ A placement for items that represents a change in status.
 static let status: ToolbarItemPlacement
 ```
 
-#### Discussion
+## Discussion
 
 Status items are informational in nature, and don’t represent an action that can be taken by the user. For example, a message that indicates the time of the last communication with the server to check for new messages.
 

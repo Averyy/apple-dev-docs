@@ -20,7 +20,7 @@ static var removeExistingAnchors: ARSession.RunOptions { get }
 ARSessionRunOptionRemoveExistingAnchors
 ```
 
-#### Discussion
+## Discussion
 
 By default, when you call the [`run(_:options:)`](../run%28_,options%29.md) method on a session that has run before or is already running, the session keeps any [`ARAnchor`](../../aranchor.md) objects that you previously added. That is, objects in the AR scene keep their apparent real-world positions relative to the device (unless you enable the [`resetTracking`](./resettracking.md) option).
 

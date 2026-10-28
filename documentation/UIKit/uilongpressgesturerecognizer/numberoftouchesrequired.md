@@ -26,7 +26,7 @@ var numberOfTouchesRequired: Int { get set }
 
 - [Handling long-press gestures](../handling-long-press-gestures.md)
 
-#### Discussion
+## Discussion
 
 The default number of fingers is `1`.
 

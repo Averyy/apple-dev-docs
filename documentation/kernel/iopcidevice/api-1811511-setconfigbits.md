@@ -14,11 +14,11 @@ virtual UInt32 setConfigBits(
  UInt32data );
 ```
 
-#### Return Value
+## Return Value
 
 The value of the register masked with the mask before the write.
 
-#### Overview
+## Overview
 
 This method sets masked bits in a configuration space register on the device by reading and writing the register. The value of the masked bits before the write is returned.
 

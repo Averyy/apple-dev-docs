@@ -16,7 +16,7 @@ struct vnop_rename_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 See "man 2 link".
 

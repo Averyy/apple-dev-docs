@@ -24,7 +24,7 @@ var children: [PHASEObject] { get }
 @property (nonatomic, copy, readonly) NSArray<PHASEObject *> * children;
 ```
 
-#### Discussion
+## Discussion
 
 To manage members of this array, use [`addChild(_:)`](./addchild%28_%29.md),  [`removeChild(_:)`](./removechild%28_%29.md), and [`removeChildren()`](./removechildren%28%29.md).
 

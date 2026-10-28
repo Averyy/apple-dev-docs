@@ -25,7 +25,7 @@ func setSemantic(_ semantic: String?, forSymbol symbol: String, options: [String
 - (void) setSemantic:(NSString *) semantic forSymbol:(NSString *) symbol options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to provide inputs managed by SceneKit to your GLSL program.
 

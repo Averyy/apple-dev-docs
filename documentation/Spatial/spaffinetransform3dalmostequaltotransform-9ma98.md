@@ -19,11 +19,11 @@
 static bool SPAffineTransform3DAlmostEqualToTransform(SPAffineTransform3D t1, SPAffineTransform3D t2, double tolerance);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the two rotations are equal within the default absolute tolerance.
 
-#### Overview
+## Overview
 
 The default absolute tolerance is [`ulpOfOne`](../Swift/floatingpoint/ulpofone-3j2pj.md) in Swift or `DBL_EPSILON` in Objective-C.
 

@@ -22,7 +22,7 @@ Displays a grouping that contains text and an image or a video in a section on a
 }
 ```
 
-#### Overview
+## Overview
 
 Use a `ContentAndMedia` directive within a [`Section`](./section.md) or [`Stack`](./stack.md) directive to display a grouping that contains text and an image or a video. Set the `layout` parameter’s value to `"horizontal"`. Then, provide one or more paragraphs of text, followed by an [`Image`](./image.md) or [`Video`](./video.md) directive.
 
@@ -44,14 +44,14 @@ Use a `ContentAndMedia` directive within a [`Section`](./section.md) or [`Stack`
 }
 ```
 
-##### Contained Elements
+### Contained Elements
 
 A content and media element must contain one of the following items:
 
 - **[`Image`](./image.md)**: An image to display. **(optional)**
 - **[`Video`](./video.md)**: A video to display. **(optional)**
 
-##### Containing Elements
+### Containing Elements
 
 The following items can include a content and media element:
 

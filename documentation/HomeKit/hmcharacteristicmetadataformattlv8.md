@@ -24,7 +24,7 @@ let HMCharacteristicMetadataFormatTLV8: String
 extern NSString * const HMCharacteristicMetadataFormatTLV8;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an [`NSData`](../Foundation/nsdata.md) object containing a set of one or more TLV8’s, which are packed type-length-value items with an 8-bit type, 8-bit length, and N-byte value.
 

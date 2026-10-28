@@ -19,7 +19,7 @@ func loraMetadata(configurationData: Data) throws -> LoRAModelMetadata?
 
 Available when `T` is `any LanguageModel`.
 
-#### Discussion
+## Discussion
 
 Model construction and metadata access use an independent random state. Returns `nil` if the model does not conform to [`LoRAModel`](../loramodel.md).
 

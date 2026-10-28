@@ -25,7 +25,7 @@ class BGContinuedProcessingTaskRequest
 
 - [Performing long-running tasks on iOS and iPadOS](./performing-long-running-tasks-on-ios-and-ipados.md)
 
-#### Overview
+## Overview
 
 The app submits this request from the foreground. Submission needs to occur as a result of a person’s action, such as tapping a button. The framework begins processing the task immediately, if possible, and the system allows it to continue running even if the app moves to the background.
 

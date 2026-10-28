@@ -21,7 +21,7 @@ let kSecDigestHMACKeyAttribute: CFString
 extern CFStringRef const kSecDigestHMACKeyAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFData`](../CoreFoundation/cfdata.md) object that specifies the key when [`kSecDigestTypeAttribute`](./ksecdigesttypeattribute.md) attribute is set to one of the HMAC options listed in [Digest Types](./transform-attributes.md#Digest-Types). If this value is not set, the transform will assume a zero length key.
 

@@ -24,7 +24,7 @@ optional func session(_ session: GKSession, peer peerID: String, didChange state
 - (void) session:(GKSession *) session peer:(NSString *) peerID didChangeState:(GKPeerConnectionState) state;
 ```
 
-#### Discussion
+## Discussion
 
 A session calls this method whenever a visible peer changes it state relative to itself. The action your delegate should take depends on what state the peer moved to.
 

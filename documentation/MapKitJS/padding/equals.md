@@ -15,7 +15,7 @@ Compares whether two padding values are equal.
 equals(anotherPadding: Padding): boolean;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if a padding exactly matches `anotherPadding`. Returns `false` if the padding values are different.
 

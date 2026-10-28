@@ -19,7 +19,7 @@ Describes the alignment of the content of a table column.
 struct TableColumnAlignment
 ```
 
-#### Overview
+## Overview
 
 The alignment of a column applies to both its header label as well as the default alignment of its content view for each row.
 

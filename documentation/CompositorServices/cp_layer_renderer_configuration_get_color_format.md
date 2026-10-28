@@ -16,11 +16,11 @@ Returns the pixel format to use for the layer’s color textures.
 MTLPixelFormat cp_layer_renderer_configuration_get_color_format(cp_layer_renderer_configuration_t configuration);
 ```
 
-#### Return Value
+## Return Value
 
 The pixel format to use for color textures.
 
-#### Discussion
+## Discussion
 
 The compositor configures the color textures for each frame using this pixel format value.
 

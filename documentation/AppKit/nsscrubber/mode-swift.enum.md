@@ -19,7 +19,7 @@ enum Mode
 enum NSScrubberMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Scrolling is either *fixed* or *free*. For details on how to choose the correct scrolling mode for your app, see [Choose a scrubber touch-interaction model](../nsscrubber.md#Choose-a-scrubber-touch-interaction-model).
 

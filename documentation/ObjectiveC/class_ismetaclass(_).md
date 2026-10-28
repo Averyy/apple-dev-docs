@@ -25,7 +25,7 @@ func class_isMetaClass(_ cls: AnyClass?) -> Bool
 extern BOOL class_isMetaClass(Class cls);
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](./yes.md) if `cls` is a metaclass, [`NO`](./no.md) if `cls` is a non-meta class, [`NO`](./no.md) if `cls` is `Nil`.
 

@@ -21,7 +21,7 @@ unowned(unsafe) var policyDelegate: (any WebPolicyDelegate)! { get set }
 @property (nonatomic, assign) id<WebPolicyDelegate> policyDelegate;
 ```
 
-#### Discussion
+## Discussion
 
 Conforms to the WebPolicyDelegate protocol.
 

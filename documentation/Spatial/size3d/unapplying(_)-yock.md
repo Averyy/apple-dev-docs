@@ -21,7 +21,7 @@ Returns a size that results from unapplying the specified projective transform.
 func unapplying(_ transform: ProjectiveTransform3D) -> Size3D
 ```
 
-#### Return Value
+## Return Value
 
 The size that results from unapplying the specified projective transform.
 

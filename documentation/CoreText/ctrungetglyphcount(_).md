@@ -25,7 +25,7 @@ func CTRunGetGlyphCount(_ run: CTRun) -> CFIndex
 extern CFIndex CTRunGetGlyphCount(CTRunRef run);
 ```
 
-#### Return Value
+## Return Value
 
 The number of glyphs that the run contains, or if there are no glyphs in this run, a value of `0`.
 

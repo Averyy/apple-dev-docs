@@ -22,7 +22,7 @@ Notifies your protocol about a new outbound message.
 func handleOutput(framer: NWProtocolFramer.Instance, message: NWProtocolFramer.Message, messageLength: Int, isComplete: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 The output handler is your opportunity to encapsulate or encode a signle application message. You should write any output using [`writeOutput(data:)`](../nwprotocolframer/instance/writeoutput%28data%29-ydvk.md) or [`writeOutputNoCopy(length:)`](../nwprotocolframer/instance/writeoutputnocopy%28length%29.md) before returning from the output handler. If you do not write a message, the application message will be discarded.
 

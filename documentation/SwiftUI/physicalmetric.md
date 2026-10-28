@@ -16,7 +16,7 @@ Provides access to a value in points that corresponds to the specified physical 
 @frozen struct PhysicalMetric<Value>
 ```
 
-#### Overview
+## Overview
 
 Use this property wrapper inside a [`View`](./view.md) or a type that inherits a `View`’s environment, like a [`ViewModifier`](./viewmodifier.md). Its value will be the equivalent in points of the physical measurement of length you specify.
 
@@ -32,7 +32,7 @@ struct MyView: View {
 
 Using this wrapper for a property of a type not associated with a scene’s view contents, like an  [`App`](./app.md) or a [`Scene`](./scene.md), is unsupported.
 
-#### Compensating for World Scaling
+## Compensating for World Scaling
 
 Starting with apps built against the visionOS 2.0 SDK, the default behavior of `PhysicalMetric` is to produce values that match the distances used by `RealityView`s in the same scene, by scaling its returned values to match the world scaling of the current scene. Previously, the values were not scaled, and they were suitable for measuring distances and lengths within the user’s surroundings, outside of any scene. Unscaled values could produce unexpected behavior if used in conjunction with `RealityView`s within the scene.
 

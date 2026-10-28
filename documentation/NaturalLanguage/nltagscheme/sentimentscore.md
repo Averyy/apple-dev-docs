@@ -25,7 +25,7 @@ static let sentimentScore: NLTagScheme
 extern NLTagScheme const NLTagSchemeSentimentScore;
 ```
 
-#### Discussion
+## Discussion
 
 The range of a sentiment score is `[-1.0, 1.0]`. A score of `1.0` is the most positive, a score of `-1.0` is the most negative, and a score of `0.0` is neutral.
 

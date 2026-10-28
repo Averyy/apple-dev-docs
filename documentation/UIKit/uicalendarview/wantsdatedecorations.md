@@ -22,7 +22,7 @@ var wantsDateDecorations: Bool { get set }
 @property (nonatomic, assign) BOOL wantsDateDecorations;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`true`](../../Swift/true.md). You must implement `UICalendarDateDelegate`’s [`calendarView(_:decorationFor:)`](../uicalendarviewdelegate/calendarview%28_,decorationfor%29.md) to provide decorations that the calendar view shows.
 

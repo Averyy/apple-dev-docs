@@ -25,7 +25,7 @@ func CTFontGetSize(_ font: CTFont) -> CGFloat
 extern CGFloat CTFontGetSize(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 The point size of the given font reference. This is the point size provided when the font was created.
 

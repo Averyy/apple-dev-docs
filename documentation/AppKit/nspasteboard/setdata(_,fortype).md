@@ -19,7 +19,7 @@ func setData(_ data: Data?, forType dataType: NSPasteboard.PasteboardType) -> Bo
 - (BOOL) setData:(NSData *) data forType:(NSPasteboardType) dataType;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the data was written successfully, otherwise [`false`](../../Swift/false.md) if ownership of the pasteboard has changed. Any other error raises an `NSPasteboardCommunicationException`.
 

@@ -25,11 +25,11 @@ func subtracting(_ decimalNumber: NSDecimalNumber) -> NSDecimalNumber
 - (NSDecimalNumber *) decimalNumberBySubtracting:(NSDecimalNumber *) decimalNumber;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDecimalNumber` object whose value is `decimalNumber` subtracted from the receiver.
 
-#### Discussion
+## Discussion
 
 This method uses the default behavior when handling calculation errors and when rounding.
 

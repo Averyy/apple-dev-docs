@@ -25,7 +25,7 @@ func startSecureConnection()
 - (void) startSecureConnection;
 ```
 
-#### Discussion
+## Discussion
 
 Authentication callbacks are sent to the session’s delegate using the [`urlSession(_:task:didReceive:completionHandler:)`](../urlsessiontaskdelegate/urlsession%28_,task,didreceive,completionhandler%29.md) method.
 

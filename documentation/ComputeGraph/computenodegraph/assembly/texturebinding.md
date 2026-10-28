@@ -21,7 +21,7 @@ Describes how a Metal texture is bound to a compute pipeline stage.
 struct TextureBinding
 ```
 
-#### Overview
+## Overview
 
 A texture binding pairs an [`ComputeNodeGraph.Assembly.Attachment`](./attachment.md) (how the texture is connected to the graph) with an optional `MTLTextureType` indicating the texture’s dimensionality.
 

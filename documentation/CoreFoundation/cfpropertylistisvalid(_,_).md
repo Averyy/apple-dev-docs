@@ -25,11 +25,11 @@ func CFPropertyListIsValid(_ plist: CFPropertyList!, _ format: CFPropertyListFor
 extern Boolean CFPropertyListIsValid(CFPropertyListRef plist, CFPropertyListFormat format);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the object graph rooted at `plist` is a valid property list graph—that is, the property list contains no cycles, only contains property list objects, and all dictionary keys are strings; otherwise `false`.
 
-#### Discussion
+## Discussion
 
 The debugging library version of this function prints out some useful messages.
 

@@ -15,7 +15,7 @@
 kINQUIRY_Byte7_CMDQUE_Bit = 1
 ```
 
-#### Discussion
+## Discussion
 
 CMDQUE bit definition.
 

@@ -19,7 +19,7 @@ A structure that encapsulates a cell’s state.
 struct UICellConfigurationState
 ```
 
-#### Overview
+## Overview
 
 A cell configuration state encompasses a trait collection along with all of the common states that affect a cell’s appearance — view states like selected, focused, or disabled, and cell states like editing or swiped. A cell configuration state encapsulates the inputs that configure a cell for any possible state or combination of states. You use a cell configuration state with background and content configurations to obtain the default appearance for a specific state.
 

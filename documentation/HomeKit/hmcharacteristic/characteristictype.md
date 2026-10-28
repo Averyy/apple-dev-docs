@@ -24,7 +24,7 @@ var characteristicType: String { get }
 @property (nonatomic, copy, readonly) NSString * characteristicType;
 ```
 
-#### Discussion
+## Discussion
 
 A characteristic’s [`characteristicType`](./characteristictype.md) is a string constant that tells you what the characteristic’s [`value`](./value.md) represents. For example, if you detect a characteristic type of [`HMCharacteristicTypeCurrentTemperature`](../hmcharacteristictypecurrenttemperature.md), then you know that the corresponding [`value`](./value.md) is a measure of the current temperature.
 

@@ -21,7 +21,7 @@ The associated event parameter type.
 associatedtype EventParameterType = Never
 ```
 
-#### Discussion
+## Discussion
 
 Event parameters are used when more than one event interval is defined for a single action animation. Event parameters can vary for each event interval. The parameter data associated with each event will be returned to the event handler when it is called.
 

@@ -5,7 +5,7 @@
 
 Flags identifying the seriousness of a user notification.
 
-#### Overview
+## Overview
 
 If you specify an icon to display in the dialog, this icon overrides the default icon used for each alert level.
 

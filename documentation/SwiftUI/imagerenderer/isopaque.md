@@ -22,7 +22,7 @@ A Boolean value that indicates whether the alpha channel of the image is fully o
 final var isOpaque: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Setting this value to `true`, meaning the alpha channel is opaque, may improve performance. Don’t render non-opaque pixels to a renderer declared as opaque. This property defaults to `false`.
 

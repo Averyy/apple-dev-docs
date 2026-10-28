@@ -17,7 +17,7 @@ An error that indicates the device is banned until the specified date.
 case deviceBanned(Date?)
 ```
 
-#### Discussion
+## Discussion
 
 There is a security restriction on this device for Tap to Pay on iPhone use until the specified date and time.
 

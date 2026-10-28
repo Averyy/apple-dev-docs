@@ -25,7 +25,7 @@ var shadowBias: CGFloat { get set }
 @property (nonatomic) CGFloat shadowBias;
 ```
 
-#### Discussion
+## Discussion
 
 Rendering shadows from a shadow map can result in artifacts where the shadow color does not appear on all pixels in a shadowed surface as intended. (This effect is typically called *shadow acne*.) This property specifies the error margin SceneKit uses to correct such artifacts.
 

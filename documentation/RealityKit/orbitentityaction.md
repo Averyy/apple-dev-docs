@@ -20,7 +20,7 @@ An action which animates the transform of an entity to revolve around a specifie
 struct OrbitEntityAction
 ```
 
-#### Overview
+## Overview
 
 This action moves an entity in a circular path by gradually adjusting its local transform. The animation starts from the entity’s initial transform, and rotates around the pivot entity. The [`orbitalAxis`](./orbitentityaction/orbitalaxis.md) specifies which cartesian axis to rotate around in world space.. The axis is resolved when the action starts to produce an axis of rotation around the pivot entity. The full orbit completes after the action has ended.
 

@@ -24,11 +24,11 @@ func canAdd(_ output: AVAssetReaderOutput) -> Bool
 - (BOOL) canAddOutput:(AVAssetReaderOutput *) output;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if you can add the output; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 You may only add outputs that retrieve media data from the asset that you associate with the asset reader.
 

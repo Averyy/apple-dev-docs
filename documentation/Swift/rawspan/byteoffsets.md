@@ -21,7 +21,7 @@ The indices that are valid for subscripting the span, in ascending order.
 var byteOffsets: Range<Int> { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

@@ -23,11 +23,11 @@ func IOObjectIsEqualTo(_ object: io_object_t, _ anObject: io_object_t) -> boolea
 boolean_t IOObjectIsEqualTo(io_object_t object, io_object_t anObject);
 ```
 
-#### Return Value
+## Return Value
 
 If both object handles are valid, and represent the same object in the kernel true is returned, otherwise false.
 
-#### Discussion
+## Discussion
 
 If two object handles are returned by IOKitLib functions, this function will compare them to see if they represent the same kernel object.
 

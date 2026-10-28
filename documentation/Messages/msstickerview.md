@@ -21,7 +21,7 @@ class MSStickerView
 @interface MSStickerView : UIView
 ```
 
-#### Overview
+## Overview
 
 Use the [`MSStickerView`](./msstickerview.md) class to display stickers. The sticker view also provides drag-and-drop functionality. The user can press and hold a sticker to peel it from the view, and then drag the sticker to any balloon in the transcript.
 

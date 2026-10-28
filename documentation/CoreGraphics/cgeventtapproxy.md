@@ -20,7 +20,7 @@ typealias CGEventTapProxy = OpaquePointer
 typedef struct __CGEventTapProxy * CGEventTapProxy;
 ```
 
-#### Discussion
+## Discussion
 
 An event tap proxy object is passed to your event tap callback function when it receives a new Quartz event. Your callback function needs the proxy to post Quartz events using the function [`tapPostEvent(_:)`](./cgevent/tappostevent%28_%29.md).
 

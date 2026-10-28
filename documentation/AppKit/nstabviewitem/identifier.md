@@ -19,7 +19,7 @@ var identifier: Any? { get set }
 @property (strong, nullable) id identifier;
 ```
 
-#### Discussion
+## Discussion
 
 To customize how your application works with tabs, you can specify an identifier object for each tab view item.
 

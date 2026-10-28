@@ -5,7 +5,7 @@
 
 Allow users to create an account and sign in to your app with their Apple Account.
 
-#### Overview
+## Overview
 
 Sign in with Apple gives your users the option to sign in to your app with their existing Apple Account instead of creating a separate username and password. All Apple devices support Sign in with Apple. For information about using this feature in the browser, see [Sign in with Apple JS](../SigninwithAppleJS/SigninwithAppleJS.md).
 
@@ -13,7 +13,7 @@ To use Sign in with Apple in your app, add the capability by configuring your ap
 
 > **Note**: If your app targets an OS version that predates the availability of Sign in with Apple, use the JavaScript library to provide the same functionality. For more information, see [Incorporating Sign in with Apple into other platforms](../SigninwithApple/incorporating-sign-in-with-apple-into-other-platforms.md).
 
-##### Add the Sign in with Apple capability to your app
+### Add the Sign in with Apple capability to your app
 
 Follow the instructions in the [Add a capability](./adding-capabilities-to-your-app.md#Add-a-capability) section of [Adding capabilities to your app](./adding-capabilities-to-your-app.md). When you reach the Capabilities library, choose Sign in with Apple. For watchOS apps with separate WatchKit extensions, add the capability to the WatchKit Extension’s target.
 
@@ -25,7 +25,7 @@ After you add the capability, Xcode updates the target’s entitlements to inclu
 
 Users must provide their consent before Apple shares any information with your app. If you have a number of related apps — for example, an iOS app and a macOS app — group their App IDs so the user only needs to provide consent on the first device they use to access your app. For more information, see [Group Apps for Sign in with Apple](https://developer.apple.com/help/account/configure-app-capabilities/group-apps-for-sign-in-with-apple/).
 
-##### Prompt the user to sign in with their Apple Account
+### Prompt the user to sign in with their Apple Account
 
 After you add the Sign in with Apple capability to your Xcode project, update your app’s user interface to enable users to sign in with their Apple Account. For a reference implementation of the following steps, see the sample code [Implementing User Authentication with Sign in with Apple](../AuthenticationServices/implementing-user-authentication-with-sign-in-with-apple.md).
 
@@ -36,11 +36,11 @@ After you add the Sign in with Apple capability to your Xcode project, update yo
 
 If your app stores account information on a remote server, send the credential’s contents to that server. The remote server verifies the data’s legitimacy with the Apple Account servers before creating or updating a user account. For more information, see [Authenticating users with Sign in with Apple](../SigninwithApple/authenticating-users-with-sign-in-with-apple.md).
 
-##### Receive updates about Apple Account changes
+### Receive updates about Apple Account changes
 
 If your app uses a remote server to manage user accounts, turn on server-to-server notifications so that the Apple Account servers notify you when users make changes to their Apple Account. The Apple Account servers send notifications when users change their mail forwarding preferences, delete their app account, or permanently delete their Apple Account. Use these notifications to maintain a canonical list of users. For more information, see [Enabling Server to Server Notifications](https://developer.apple.com/help/account/configure-app-capabilities/enabling-server-to-server-notifications/).
 
-##### Send emails to users’ hidden inboxes
+### Send emails to users’ hidden inboxes
 
 If you include the [`email`](../AuthenticationServices/asauthorization/scope/email.md) scope when you prompt the user for authorization, the system provides an option for that user to hide their real email address and instead use a unique, random forwarding email address that Apple provides. To help prevent spam and ensure that emails to users originate from your registered domains and email addresses, follow these steps:
 

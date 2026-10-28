@@ -24,11 +24,11 @@ func caretRect(for position: UITextPosition) -> CGRect
 - (CGRect) caretRectForPosition:(UITextPosition *) position;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle that defines the area for drawing the caret.
 
-#### Discussion
+## Discussion
 
 The system uses this value to calculate the length of the beam—the vertical line representing the pointer—when using a trackpad to interact with a text input area. You must implement this method even if text never becomes editable, and an insertion point caret never appears.
 

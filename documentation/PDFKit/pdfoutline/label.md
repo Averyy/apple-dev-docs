@@ -24,7 +24,7 @@ var label: String? { get set }
 @property (nonatomic, copy, nullable) NSString * label;
 ```
 
-#### Discussion
+## Discussion
 
 The root outline serves only as a container for the outlines it owns; it does not have a label.
 

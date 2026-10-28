@@ -5,7 +5,7 @@
 
 Verify that requests for products function properly in the sandbox environment by inspecting the App Store response.
 
-#### Overview
+## Overview
 
 After setting a breakpoint in your code, use the list of product identifiers that you tested in [Testing fetching product identifiers](./testing-fetching-product-identifiers.md) to create and submit an instance of [`SKProductsRequest`](./skproductsrequest.md). Then inspect the lists of valid and invalid product identifiers. If there are invalid product identifiers, review your products in App Store Connect and correct your JSON file or property list.
 

@@ -21,7 +21,7 @@ The time of civil sunrise when the sun’s center is 6° below the horizon.
 var civilDawn: Date?
 ```
 
-#### Discussion
+## Discussion
 
 Civil dawn begins when there’s enough light for most objects to be seen, so it’s often used to determine when outdoor activities may begin. This property is optional because it’s possible for the sun to not rise on a given day, at extreme latitudes.
 

@@ -23,7 +23,7 @@ var exposureMode: AVCaptureDevice.ExposureMode { get set }
 @property (nonatomic) AVCaptureExposureMode exposureMode;
 ```
 
-#### Discussion
+## Discussion
 
 Before changing the value of this property, you must call [`lockForConfiguration()`](./lockforconfiguration%28%29.md) to acquire exclusive access to the device’s configuration properties. Otherwise, setting the value of this property raises an exception. When you’re done configuring the device, call [`unlockForConfiguration()`](./unlockforconfiguration%28%29.md) to release the lock and allow other devices to configure the settings.
 

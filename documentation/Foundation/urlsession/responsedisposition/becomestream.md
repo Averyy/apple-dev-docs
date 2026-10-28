@@ -25,7 +25,7 @@ case becomeStream
 NSURLSessionResponseBecomeStream
 ```
 
-#### Discussion
+## Discussion
 
 When used with the completion handler from [`urlSession(_:dataTask:didReceive:completionHandler:)`](../../urlsessiondatadelegate/urlsession%28_,datatask,didreceive,completionhandler%29.md), this disposition converts the task to a stream task. This will result in your delegate’s [`urlSession(_:dataTask:didBecome:)`](../../urlsessiondatadelegate/urlsession%28_,datatask,didbecome%29-7nqzu.md) being called to provide you with the new stream task that supersedes the current task.
 

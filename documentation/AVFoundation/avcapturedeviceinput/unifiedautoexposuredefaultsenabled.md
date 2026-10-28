@@ -22,7 +22,7 @@ var unifiedAutoExposureDefaultsEnabled: Bool { get set }
 @property (nonatomic) BOOL unifiedAutoExposureDefaultsEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 You may set the value of a capture device’s [`activeFormat`](../avcapturedevice/activeformat.md) in two ways:
 

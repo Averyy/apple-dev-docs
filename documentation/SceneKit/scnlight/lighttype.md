@@ -25,7 +25,7 @@ struct LightType
 typedef NSString * SCNLightType;
 ```
 
-#### Overview
+## Overview
 
 Each of the four scenes in the figure below has the same content illuminated by a single [`SCNLight`](../scnlight.md) object. The node containing the light source has the same position and orientation in each scene—all differences between the four pictures are due to the light’s [`type`](./type.md) property.
 

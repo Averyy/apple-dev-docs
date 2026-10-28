@@ -16,7 +16,7 @@ Requests that the extension terminate.
 func invalidate() async throws
 ```
 
-#### Discussion
+## Discussion
 
 This calls [`invalidate()`](../contactproviderextension/invalidate%28%29.md) on the extension.
 

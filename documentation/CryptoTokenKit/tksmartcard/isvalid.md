@@ -25,7 +25,7 @@ var isValid: Bool { get }
 @property (readonly) BOOL valid;
 ```
 
-#### Discussion
+## Discussion
 
 Use Key-Value-Observing to be notified for changes to accessibility, such as when a Smart Card is physically removed from its slot. For more information, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 

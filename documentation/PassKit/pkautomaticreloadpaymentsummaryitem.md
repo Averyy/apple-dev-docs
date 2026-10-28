@@ -23,7 +23,7 @@ class PKAutomaticReloadPaymentSummaryItem
 @interface PKAutomaticReloadPaymentSummaryItem : PKPaymentSummaryItem
 ```
 
-#### Overview
+## Overview
 
 [`PKAutomaticReloadPaymentSummaryItem`](./pkautomaticreloadpaymentsummaryitem.md) is a subclass of [`PKPaymentSummaryItem`](./pkpaymentsummaryitem.md) and inherits all properties of the parent class.
 

@@ -19,7 +19,7 @@ var windowNumber: Int { get }
 @property (readonly) NSInteger windowNumber;
 ```
 
-#### Discussion
+## Discussion
 
 Each window device in an application is given a unique window number—note that this isn’t the same as the global window number assigned by the window server. This number can be used to identify the window device with the [`order(_:relativeTo:)`](./order%28_,relativeto%29.md) method and in the AppKit function [`NSWindowList`](../nswindowlist.md).
 

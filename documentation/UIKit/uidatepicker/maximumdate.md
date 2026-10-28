@@ -22,7 +22,7 @@ var maximumDate: Date? { get set }
 @property (nonatomic, strong, nullable) NSDate * maximumDate;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to configure the maximum date that’s selected in the date picker interface. The property contains an [`NSDate`](../../Foundation/nsdate.md) object or `nil` (the default), which means no maximum date. This property, along with the [`minimumDate`](./minimumdate.md) property, lets you specify a valid date range. If the minimum date value is greater than the maximum date value, both properties are ignored. The minimum and maximum dates are also ignored in the countdown-timer mode ([`UIDatePicker.Mode.countDownTimer`](./mode/countdowntimer.md)).
 

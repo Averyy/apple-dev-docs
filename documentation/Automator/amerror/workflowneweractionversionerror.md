@@ -16,7 +16,7 @@ An error that indicates an action in a workflow is newer than the installed acti
 static var workflowNewerActionVersionError: AMError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error is presented to the user as a warning.
 

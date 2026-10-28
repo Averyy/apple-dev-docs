@@ -16,11 +16,11 @@ Creates a standard pop-up button with a menu, target, and action.
 @MainActor @preconcurrency convenience init(popUpMenu: NSMenu, target: AnyObject?, action: Selector?)
 ```
 
-#### Return Value
+## Return Value
 
 An initialized pop-up button object.
 
-#### Discussion
+## Discussion
 
 If `menu` is non-empty, the pop-up button uses the first item for its initial selection.
 

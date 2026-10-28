@@ -19,7 +19,7 @@ func setAlignment(_ alignment: NSTextAlignment, range: NSRange)
 - (void) setAlignment:(NSTextAlignment) alignment range:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 This method does not include undo support by default. Clients must invoke [`shouldChangeText(inRanges:replacementStrings:)`](./shouldchangetext%28inranges,replacementstrings%29.md) or [`shouldChangeText(in:replacementString:)`](./shouldchangetext%28in,replacementstring%29.md) to include this method in an undoable action.
 

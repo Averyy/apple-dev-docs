@@ -21,11 +21,11 @@ Exports this entity as a system intent value type.
 func exported<T>(as type: T.Type) async throws -> T where T : _SystemIntentValue, T : IntentValueConvertible
 ```
 
-#### Return Value
+## Return Value
 
 An instance of the requested type.
 
-#### Discussion
+## Discussion
 
 Use this for system-provided currency types that conform to `_SystemIntentValue`, such as `PlaceDescriptor`. The entity must declare a `ValueRepresentation` for the requested type.
 

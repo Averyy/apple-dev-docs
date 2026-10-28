@@ -19,7 +19,7 @@ func setDraggingSourceOperationMask(_ dragOperationMask: NSDragOperation, forLoc
 - (void) setDraggingSourceOperationMask:(NSDragOperation) dragOperationMask forLocal:(BOOL) localDestination;
 ```
 
-#### Discussion
+## Discussion
 
 This method configures the default value returned from [`draggingSourceOperationMaskForLocal:`](../../ObjectiveC/nsobject-swift.class/draggingsourceoperationmaskforlocal_.md). By default, this method returns [`every`](../nsdragoperation/every.md) when `localDestination` is [`true`](../../Swift/true.md) and [`NSDragOperationNone`](../nsdragoperation/nsdragoperationnone.md) when `localDestination` is [`false`](../../Swift/false.md). `NSCollectionView` will save the values you set for each `localDestination` value.
 

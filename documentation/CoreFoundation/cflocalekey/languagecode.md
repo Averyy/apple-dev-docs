@@ -25,7 +25,7 @@ static let languageCode: CFLocaleKey!
 extern CFLocaleKey const kCFLocaleLanguageCode;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a CFString containing an ISO 639-x/IETF BCP 47 language identifier, such as “`ja`”.
 

@@ -16,7 +16,7 @@ A key that contains the top-level usages of the device.
 #define kIOHIDDeviceUsagePairsKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an array of dictionaries. The keys and values of each dictionary are the usage pages and usages for which to match your driver. Use this key when the device supports multiple behaviors and you want to match your driver against more than one of these behaviors. 
 

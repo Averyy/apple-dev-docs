@@ -19,7 +19,7 @@ The user activity that defines the action to perform when invoking the shortcut.
 var userActivity: NSUserActivity? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is nil when you create the shortcut with an [`INIntent`](../inintent.md) object.
 

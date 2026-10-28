@@ -21,7 +21,7 @@ Associates the specified managed objects with a new or existing share record.
 - (void) shareManagedObjects:(NSArray<NSManagedObject *> *) managedObjects toShare:(CKShare *) share completion:(void (^)(NSSet<NSManagedObjectID *> *sharedObjectIDs, CKShare *share, CKContainer *cloudKitContainer, NSError *sharingError)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The `completion` closure returns no value and takes the following parameters:
 

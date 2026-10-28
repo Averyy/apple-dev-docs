@@ -17,7 +17,7 @@ A local package, referenced by path.
 case local(path: String)
 ```
 
-#### Discussion
+## Discussion
 
 A local package is unversioned.
 

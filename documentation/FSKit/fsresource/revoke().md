@@ -19,7 +19,7 @@ func revoke()
 - (void) revoke;
 ```
 
-#### Discussion
+## Discussion
 
 This method works by stripping away any underlying privileges associated with the resource. This effectively disconnects this object from its underlying resource.
 

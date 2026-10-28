@@ -25,7 +25,7 @@ var disableLanguageOptionCommand: MPRemoteCommand { get }
 @property (nonatomic, readonly) MPRemoteCommand * disableLanguageOptionCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Use the object in this property to register your app’s handler for disabling the language option for the media item. In your handler, change the language option to the new value. You can disable the command if your app does not support it.
 

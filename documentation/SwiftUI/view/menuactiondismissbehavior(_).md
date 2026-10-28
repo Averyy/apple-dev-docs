@@ -26,11 +26,11 @@ func menuActionDismissBehavior(_ behavior: MenuActionDismissBehavior) -> some Vi
 
 - [Populating SwiftUI menus with adaptive controls](../populating-swiftui-menus-with-adaptive-controls.md)
 
-#### Return Value
+## Return Value
 
 A view that has the specified menu dismissal behavior.
 
-#### Discussion
+## Discussion
 
 Use this modifier to control the dismissal behavior of a menu. In the example below, the menu doesn’t dismiss after someone chooses either the increase or decrease action:
 

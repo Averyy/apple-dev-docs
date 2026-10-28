@@ -25,11 +25,11 @@ func string(from components: DateComponents) -> String?
 - (NSString *) stringFromDateComponents:(NSDateComponents *) components;
 ```
 
-#### Return Value
+## Return Value
 
 A formatted string representing the specified date information.
 
-#### Discussion
+## Discussion
 
 Use this method to format date information that is already broken down into the component day and time values.
 

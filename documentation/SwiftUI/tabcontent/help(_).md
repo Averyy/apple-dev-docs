@@ -39,7 +39,7 @@ nonisolated
 func help<S>(_ text: S) -> some TabContent<Self.TabValue> where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Adding help to a tab configures the tab’s accessibility hint and its help tag (also called a *tooltip*) in macOS or visionOS. For more information on using help tags, see [Offering help](https://developer.apple.com/design/human-interface-guidelines/offering-help) in the Human Interface Guidelines.
 

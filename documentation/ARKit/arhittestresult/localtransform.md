@@ -22,7 +22,7 @@ var localTransform: simd_float4x4 { get }
 @property (nonatomic, readonly) simd_float4x4 localTransform;
 ```
 
-#### Discussion
+## Discussion
 
 This transform matrix indicates the intersection point between the detected surface and the ray that created the hit-test result. A hit-test projects a 2D point in the image or view coordinate system along a ray into the 3D world space and reports results where that line intersects detected surfaces.
 

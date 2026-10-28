@@ -19,7 +19,7 @@ final class RCSService
 
 - [Creating a carrier messaging app](./creating-a-carrier-messaging-app.md)
 
-#### Overview
+## Overview
 
 Use the [`TelephonyMessagingSession`](./telephonymessagingsession.md) property [`rcsService`](./telephonymessagingsession/rcsservice.md) to get an instance of this class.
 

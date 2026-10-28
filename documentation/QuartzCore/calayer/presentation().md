@@ -24,11 +24,11 @@ func presentation() -> Self?
 - (instancetype) presentationLayer;
 ```
 
-#### Return Value
+## Return Value
 
 A copy of the current presentation layer object.
 
-#### Discussion
+## Discussion
 
 The layer object returned by this method provides a close approximation of the layer that is currently being displayed onscreen. While an animation is in progress, you can retrieve this object and use it to get the current values for those animations.
 

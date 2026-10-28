@@ -29,7 +29,7 @@ nonisolated
 func listItemTint(_ tint: ListItemTint?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The containing list’s style applies the tint as appropriate. For example, watchOS uses the tint color for its background platter appearance. Sidebars on iOS and macOS apply the tint color to their [`Label`](../label.md) icons, which otherwise use the accent color by default.
 

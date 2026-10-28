@@ -15,11 +15,11 @@ Gets the name for the given element and scope of the video object.
 OSSharedPtr<OSString> GetElementName(IOUserVideoObjectPropertyElement in_element, IOUserVideoObjectPropertyScope in_scope);
 ```
 
-#### Return Value
+## Return Value
 
 The element name.
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

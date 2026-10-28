@@ -21,7 +21,7 @@ Returns a privacy structure that marks an interpolated value as private, and cus
 static func `private`(mask: OSLogPrivacy.Mask) -> OSLogPrivacy
 ```
 
-#### Return Value
+## Return Value
 
 A privacy object that redacts a value.
 

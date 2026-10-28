@@ -17,7 +17,7 @@ Notifies your app before the framework presents a context menu.
 func overlayView(_ overlayView: ImageAnalysisOverlayView, updatedMenuFor menu: NSMenu, for event: NSEvent, at point: CGPoint) -> NSMenu
 ```
 
-#### Discussion
+## Discussion
 
 This callback enables your app to add custom context menu items or manage the framework-provided content menu items. For example, the following implementation changes the title of the framework-provided `copySubject` menu item from “Copy” to “Copy and remove background”.
 

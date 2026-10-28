@@ -5,7 +5,7 @@
 
 Enable the background mode for audio, location updates, remote notifications, or workouts.
 
-#### Overview
+## Overview
 
 To receive background notifications or run background sessions, your app needs to enable the corresponding background mode. Add the Background Modes capability to your WatchKit extension, and then select the desired modes. Each mode sets its respective keys in the extension’s `Info.plist` file.
 

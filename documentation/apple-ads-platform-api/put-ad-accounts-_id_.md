@@ -9,7 +9,7 @@ Update an ad account’s name or delegations.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint updates an ad account’s name or delegations. See [`AdAccountUpdate`](./adaccountupdate.md) for field-level mutability details.
 
@@ -19,13 +19,13 @@ This endpoint updates an ad account’s name or delegations. See [`AdAccountUpda
 - Providing the `delegations` array replaces all existing delegations in full: the update keeps the items you include and removes the items you omit.
 - To link an App Store Connect account, include a `CONTENT_PROVIDER` delegation with the CPID as `resourceId`. See [`ProductFeatures`](./productfeatures.md) for delegation requirements by App Store or Apple Maps.
 
-#### Payload Examples
+## Payload Examples
 
 **Update with CPID Delegation**:
 
 All fields in the request body are optional. The `delegations` field is also nullable, but `name`, if provided, must not be null. Providing the `delegations` array replaces all existing delegations in full.
 
-##### Request
+### Request
 
 ```http
 PUT /v1/ad-accounts/123456789
@@ -40,7 +40,7 @@ PUT /v1/ad-accounts/123456789
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -69,7 +69,7 @@ PUT /v1/ad-accounts/123456789
 
 Renames the account and replaces the full set of delegations. All array fields use full-replacement semantics.
 
-##### Request
+### Request
 
 ```http
 PUT /v1/ad-accounts/123456789
@@ -85,7 +85,7 @@ PUT /v1/ad-accounts/123456789
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

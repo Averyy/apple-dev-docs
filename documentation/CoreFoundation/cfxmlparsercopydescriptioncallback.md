@@ -19,7 +19,7 @@ typealias CFXMLParserCopyDescriptionCallBack = (UnsafeRawPointer?) -> Unmanaged<
 typedef const struct __CFString *(*)(const void *) CFXMLParserCopyDescriptionCallBack;
 ```
 
-#### Return Value
+## Return Value
 
 A textual description of `info`. The caller is responsible for releasing this object.
 

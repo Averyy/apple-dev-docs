@@ -24,7 +24,7 @@ class func minKernelDiameter() -> Int
 + (NSUInteger) minKernelDiameter;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the minimum diameter, in pixels, of the filter window supported by the median filter.
 

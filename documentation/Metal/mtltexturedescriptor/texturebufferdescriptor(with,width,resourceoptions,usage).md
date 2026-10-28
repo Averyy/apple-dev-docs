@@ -24,7 +24,7 @@ class func textureBufferDescriptor(with pixelFormat: MTLPixelFormat, width: Int,
 + (MTLTextureDescriptor *) textureBufferDescriptorWithPixelFormat:(MTLPixelFormat) pixelFormat width:(NSUInteger) width resourceOptions:(MTLResourceOptions) resourceOptions usage:(MTLTextureUsage) usage;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a texture descriptor object for a texture buffer.
 

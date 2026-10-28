@@ -20,7 +20,7 @@ string currency
 - [Creating SKUs for your Apple In-App Purchases](./creating-your-purchases.md)
 - [Specifying prices for Advanced Commerce SKUs](./prices.md)
 
-#### Discussion
+## Discussion
 
 The currency property contains an ISO 4217 alpha-3 string that represents the currency of the price of a SKU. You provide a currency value each time you create or modify a purchase transaction.
 

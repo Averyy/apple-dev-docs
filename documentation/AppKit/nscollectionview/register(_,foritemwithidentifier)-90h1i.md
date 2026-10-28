@@ -19,7 +19,7 @@ func register(_ nib: NSNib?, forItemWithIdentifier identifier: NSUserInterfaceIt
 - (void) registerNib:(NSNib *) nib forItemWithIdentifier:(NSUserInterfaceItemIdentifier) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to register nib files containing prototype items to use in your collection view. When you request an item using the [`makeItem(withIdentifier:for:)`](./makeitem%28withidentifier,for%29.md) method, the collection view recycles an existing item with the same `identifier` or creates a new one by loading the contents of your nib file.
 

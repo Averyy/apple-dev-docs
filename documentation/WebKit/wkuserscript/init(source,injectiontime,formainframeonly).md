@@ -23,11 +23,11 @@ init(source: String, injectionTime: WKUserScriptInjectionTime, forMainFrameOnly:
 - (instancetype) initWithSource:(NSString *) source injectionTime:(WKUserScriptInjectionTime) injectionTime forMainFrameOnly:(BOOL) forMainFrameOnly;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized user script, or `nil` if initialization failed.
 
-#### Discussion
+## Discussion
 
 This method sets the script’s content world to the object in the [`page`](../wkcontentworld/page.md) property of [`WKContentWorld`](../wkcontentworld.md).
 

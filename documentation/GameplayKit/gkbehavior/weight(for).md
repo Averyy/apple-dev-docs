@@ -24,11 +24,11 @@ func weight(for goal: GKGoal) -> Float
 - (float) weightForGoal:(GKGoal *) goal;
 ```
 
-#### Return Value
+## Return Value
 
 The weight to be applied to the goal’s influence on an agent’s speed and direction, or `0.0` if the goal is not in the behavior.
 
-#### Discussion
+## Discussion
 
 When an agent evaluates its behavior, it examines each goal and calculates the change in direction and speed necessary to move toward fulfilling that goal (within the limits of the current time step and the agent’s maximum speed and turn rate). The agent then combines these influences to determine the total change in direction and speed for the current time step. Weights modulate the effects of multiple goals in a behavior.
 

@@ -28,7 +28,7 @@ func statusOfValue(forKey key: String, error outError: NSErrorPointer) -> AVKeyV
 - (AVKeyValueStatus) statusOfValueForKey:(NSString *) key error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The current status of the requested key.
 

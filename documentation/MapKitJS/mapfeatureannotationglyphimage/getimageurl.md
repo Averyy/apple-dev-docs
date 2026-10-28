@@ -18,7 +18,7 @@ getImageUrl(
 ): void;
 ```
 
-#### Discussion
+## Discussion
 
 The method returns the URL as the first argument of `callback`. The URL is a `blob:` URL. To avoid a memory leak, you need to revoke it with `URL.revokeObjectURL()` when you no longer need it.
 

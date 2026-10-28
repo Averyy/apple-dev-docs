@@ -21,11 +21,11 @@ Creates an object whose resolution requires that the user must confirm the value
 + (instancetype) confirmationRequiredWithValueToConfirm:(NSNumber *) valueToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INIntegerResolutionResult`](../inintegerresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the property to a single value but want the user to confirm that value.
 

@@ -17,7 +17,7 @@ Indicates whether particles are currently being grabbed.
 var isGrabbing: Bool
 ```
 
-#### Discussion
+## Discussion
 
 When first set to `true`, a selection of particles is made using the ray or volume. In the following frames, all selected particles will be dragged around until this value is set back to `false`.
 

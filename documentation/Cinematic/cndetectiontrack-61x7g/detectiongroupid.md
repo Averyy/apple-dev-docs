@@ -19,7 +19,7 @@ The detection group ID of the subject detected by the track.
 @property (readonly) CNDetectionGroupID detectionGroupID;
 ```
 
-#### Discussion
+## Discussion
 
 The detection group ID associates related detections such as the face and torso of the same person.
 

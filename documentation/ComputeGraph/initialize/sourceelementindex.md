@@ -16,7 +16,7 @@ When initializing a new particle from an event triggered from another particle, 
 uint initialize::sourceElementIndex()
 ```
 
-#### Discussion
+## Discussion
 
 > **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/initialize__sourceElementIndex.svg)
 

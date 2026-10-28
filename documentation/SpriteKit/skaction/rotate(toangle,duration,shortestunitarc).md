@@ -25,11 +25,11 @@ class func rotate(toAngle radians: CGFloat, duration: TimeInterval, shortestUnit
 + (SKAction *) rotateToAngle:(CGFloat) radians duration:(NSTimeInterval) duration shortestUnitArc:(BOOL) shortestUnitArc;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`zRotation`](../sknode/zrotation.md) property is animated to the new angle.
 

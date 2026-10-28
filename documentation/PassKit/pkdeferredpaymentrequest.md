@@ -23,7 +23,7 @@ class PKDeferredPaymentRequest
 @interface PKDeferredPaymentRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 This request receives a merchant-specific payment token, if the payment network supports merchant-specific payment tokens.
 

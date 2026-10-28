@@ -17,7 +17,7 @@ Whether the scanner is currently inside a reasoning span.
 var isInsideReasoning: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 The generation loop reads this to attribute generated tokens to the reasoning token count (one `.token` = one token), since the emitter itself only sees decoded text, not token IDs.
 

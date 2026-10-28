@@ -23,7 +23,7 @@ class NSSliderCell
 
 - [Updating views automatically with observation tracking in AppKit](./updating-views-automatically-with-observation-tracking-in-appkit.md)
 
-#### Overview
+## Overview
 
 You can customize an [`NSSliderCell`](./nsslidercell.md) to a certain degree, using its properties. If this doesn’t give you sufficient flexibility, you can create a subclass. In that subclass, you can override any of the following methods: [`knobRect(flipped:)`](./nsslidercell/knobrect%28flipped%29.md), [`drawBar(inside:flipped:)`](./nsslidercell/drawbar%28inside,flipped%29.md), [`drawKnob(_:)`](./nsslidercell/drawknob%28_%29.md), and [`prefersTrackingUntilMouseUp`](./nsslidercell/preferstrackinguntilmouseup.md).
 

@@ -21,7 +21,7 @@ func composition() -> QCComposition!
 - (QCComposition *) composition;
 ```
 
-#### Return Value
+## Return Value
 
 The composition object associated with the layer or `nil` if there is none.
 

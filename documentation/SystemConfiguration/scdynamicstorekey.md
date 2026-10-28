@@ -3,7 +3,7 @@
 **Framework**: System Configuration  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 The `SCDynamicStoreKey` programming interface provides convenience functions that an application can use to create a correctly formatted dynamic store key for accessing specific items in the dynamic store. An application can then use the resulting string in any function that requires a dynamic store key.
 

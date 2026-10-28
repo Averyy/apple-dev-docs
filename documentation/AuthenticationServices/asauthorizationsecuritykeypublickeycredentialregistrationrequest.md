@@ -22,7 +22,7 @@ class ASAuthorizationSecurityKeyPublicKeyCredentialRegistrationRequest
 @interface ASAuthorizationSecurityKeyPublicKeyCredentialRegistrationRequest : ASAuthorizationRequest
 ```
 
-#### Overview
+## Overview
 
 Create an instance of this class when registering for a new credential using security key authorization.
 

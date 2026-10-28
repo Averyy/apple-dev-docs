@@ -20,7 +20,7 @@ let ITLibMediaItemPropertyPlayStatus: String
 extern NSString * const ITLibMediaItemPropertyPlayStatus;
 ```
 
-#### Discussion
+## Discussion
 
 Represents partially played and unplayed states for videos and podcasts. Other media kinds always return [`ITLibMediaItemPlayStatus.none`](./itlibmediaitemplaystatus/none.md).
 

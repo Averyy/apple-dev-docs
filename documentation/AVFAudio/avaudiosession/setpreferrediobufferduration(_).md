@@ -23,7 +23,7 @@ func setPreferredIOBufferDuration(_ duration: TimeInterval) throws
 - (BOOL) setPreferredIOBufferDuration:(NSTimeInterval) duration error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 This method requests a change to the I/O buffer duration. To determine whether the change has taken effect, use the [`ioBufferDuration`](./iobufferduration.md) property.
 

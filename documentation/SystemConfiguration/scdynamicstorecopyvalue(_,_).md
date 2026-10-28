@@ -19,7 +19,7 @@ func SCDynamicStoreCopyValue(_ store: SCDynamicStore?, _ key: CFString) -> CFPro
 CFPropertyListRefSCDynamicStoreCopyValue(SCDynamicStoreRef store, CFStringRef key);
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with the specified key, or `NULL` if no value was located or if an error occurred. You must release the returned value.
 

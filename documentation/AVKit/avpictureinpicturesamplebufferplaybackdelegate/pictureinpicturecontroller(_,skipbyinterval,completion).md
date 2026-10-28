@@ -29,7 +29,7 @@ func pictureInPictureController(_ pictureInPictureController: AVPictureInPicture
 - (void) pictureInPictureController:(AVPictureInPictureController *) pictureInPictureController skipByInterval:(CMTime) skipInterval completionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Your app’s implementation of this method may choose to seek by a different interval for efficiency reasons, such as seeking to a particular key frame or only allowing seeks that fall within the playable timeline.
 

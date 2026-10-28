@@ -21,7 +21,7 @@ func transposed(_ axes: Int..., stream: StreamOrDevice = .default) -> MLXArray
 
 - [Converting From Python](../converting-python.md)
 
-##### See Also
+### See Also
 
 - [Shapes](../shapes.md)
 - [`transposed(axes:stream:)`](./transposed%28axes,stream%29.md)

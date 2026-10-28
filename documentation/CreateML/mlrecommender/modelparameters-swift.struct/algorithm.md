@@ -15,7 +15,7 @@ The algorithm the recommender uses to make recommendations.
 var algorithm: MLRecommender.ModelAlgorithmType
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`MLRecommender.ModelAlgorithmType.itemSimilarity(_:)`](../modelalgorithmtype/itemsimilarity%28_%29.md).
 

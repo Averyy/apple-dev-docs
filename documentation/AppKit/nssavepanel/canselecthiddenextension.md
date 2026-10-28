@@ -19,7 +19,7 @@ var canSelectHiddenExtension: Bool { get set }
 @property BOOL canSelectHiddenExtension;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property before displaying the panel. When the value of this property is [`true`](../../Swift/true.md), and the Finder preference “Show all extensions” is [`false`](../../Swift/false.md), the panel displays the Hide Extension menu item. The default value of this property is [`false`](../../Swift/false.md).
 

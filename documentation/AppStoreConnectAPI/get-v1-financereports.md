@@ -13,7 +13,7 @@ Download finance reports filtered by your specified criteria.
 
 - [Downloading Analytics Reports](./downloading-analytics-reports.md)
 
-#### Discussion
+## Discussion
 
 For more information see [Download financial reports](https://developer.apple.com/help/app-store-connect/getting-paid/download-financial-reports).
 

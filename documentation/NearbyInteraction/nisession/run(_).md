@@ -22,19 +22,19 @@ func run(_ configuration: NIConfiguration)
 - (void) runWithConfiguration:(NIConfiguration *) configuration;
 ```
 
-#### Discussion
+## Discussion
 
 This function starts an interaction session between two devices.
 
 Before calling this function, ensure the device supports the features your app requires by first inspecting global [`deviceCapabilities`](./devicecapabilities.md).
 
-##### Restart an Interaction Session
+### Restart an Interaction Session
 
 To restart a session as the result of unpausing, call this function as described in [`pause()`](./pause%28%29.md). The app calls this function when resuming from session suspension, as described in [`sessionSuspensionEnded(_:)`](../nisessiondelegate/sessionsuspensionended%28_%29.md).
 
 > **Note**:  A session’s [`discoveryToken`](./discoverytoken.md) maintains its original value through restarts.
 
-##### Prompt for User Approval
+### Prompt for User Approval
 
 The framework prompts for user permission to provide its relative position to nearby peers when it calls this function the first time the app launches. On subsequent calls to this function, the framework consults a preference in Settings that stores the user’s decision. For more information, see [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md).
 

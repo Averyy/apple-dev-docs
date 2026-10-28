@@ -17,11 +17,11 @@ CMError CMGetPS2ColorSpace (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 The `CMGetPS2ColorSpace` function obtains PostScript color space data from the source profile. The valid profile classes for the `CMGetPS2ColorSpace` function are display, input, and output profiles with at most four components.
 

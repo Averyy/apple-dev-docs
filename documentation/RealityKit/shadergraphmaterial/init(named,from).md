@@ -26,11 +26,11 @@ init(named name: String, from data: Data) async throws
 init(named name: String, from url: URL) async throws
 ```
 
-#### Return Value
+## Return Value
 
 A ShaderGraphMaterial object from the file with the name specified.
 
-#### Discussion
+## Discussion
 
 Supported file formats are USD (.usd, .usda, .usdc, .usdz)
 

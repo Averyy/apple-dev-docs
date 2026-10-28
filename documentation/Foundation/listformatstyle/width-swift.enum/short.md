@@ -21,7 +21,7 @@ Specifies a short list style.
 case short
 ```
 
-#### Discussion
+## Discussion
 
 This width creates a list like `One, Two, & Three` in U.S. English.
 

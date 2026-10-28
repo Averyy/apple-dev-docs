@@ -25,7 +25,7 @@ struct CGDataProviderDirectCallbacks
 struct CGDataProviderDirectCallbacks;
 ```
 
-#### Overview
+## Overview
 
 You supply a [`CGDataProviderDirectCallbacks`](./cgdataproviderdirectcallbacks.md) structure to the function [`init(directInfo:size:callbacks:)`](./cgdataprovider/init%28directinfo,size,callbacks%29.md) to create a data provider for direct access. The functions specified by the [`CGDataProviderDirectCallbacks`](./cgdataproviderdirectcallbacks.md) structure are responsible for copying data a block at a time to a memory buffer for Core Graphics to use. The functions are also responsible for handling the data provider’s basic memory management. For the callback to work, one of the `getBytePointer` and `getBytesAtPosition` parameters must be non-`NULL`. If both are non-`NULL`, then `getBytePointer` is used to access the data.
 

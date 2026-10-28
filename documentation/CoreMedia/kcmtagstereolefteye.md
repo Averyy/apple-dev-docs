@@ -21,7 +21,7 @@ A value for a stereo tag indicating the video track has a left eye layer.
 extern const CMTag kCMTagStereoLeftEye;
 ```
 
-#### Discussion
+## Discussion
 
 This value is for use in tags with the [`kCMTagCategory_StereoView`](./cmtagcategory/kcmtagcategory_stereoview.md) category.
 

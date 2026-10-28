@@ -24,7 +24,7 @@ let AVVideoCleanApertureKey: String
 extern NSString * const AVVideoCleanApertureKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an instance of `NSDictionary` containing one or more of the following keys: [`AVVideoCleanApertureWidthKey`](./avvideocleanaperturewidthkey.md), [`AVVideoCleanApertureHeightKey`](./avvideocleanapertureheightkey.md), [`AVVideoCleanApertureHorizontalOffsetKey`](./avvideocleanaperturehorizontaloffsetkey.md), or [`AVVideoCleanApertureVerticalOffsetKey`](./avvideocleanapertureverticaloffsetkey.md). If no clean aperture region is specified, the playback displays the entire frame.
 

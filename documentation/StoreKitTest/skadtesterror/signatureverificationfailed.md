@@ -17,7 +17,7 @@ The signature verification failed in the testing environment.
 static var signatureVerificationFailed: SKAdTestError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 The ad impression signature isn’t valid. Check the following:
 

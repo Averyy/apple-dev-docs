@@ -25,13 +25,13 @@ object ExtensibleSingleSignOn
 - [Configuring Platform Single Sign-on](./configuring-platform-single-sign-on.md)
 - [Implementing Platform SSO for unattended device enrollment](./implementing-platform-sso-for-unattended-device-enrollment.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.extensiblesso` as the payload type.
 
 The system supports user channel installation in macOS 11 and later.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -43,7 +43,7 @@ The system supports user channel installation in macOS 11 and later.
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">

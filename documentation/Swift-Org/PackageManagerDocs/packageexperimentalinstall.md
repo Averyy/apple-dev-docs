@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Offers the ability to install executable products of the current package.
 
-#### Overview
+## Overview
 
 ```
 package experimental-install [--package-path=<package-path>]

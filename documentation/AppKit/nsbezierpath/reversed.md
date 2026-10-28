@@ -20,7 +20,7 @@ var reversed: NSBezierPath { get }
 @property (copy, readonly) NSBezierPath * bezierPathByReversingPath;
 ```
 
-#### Discussion
+## Discussion
 
 The reversed path does not necessarily have a different appearance when rendered. Instead, it changes the direction in which path segments are drawn. For example, reversing the path of a rectangle (whose line segments are normally drawn starting at the origin and proceeding in a counterclockwise direction) causes its line segments to be drawn in a clockwise direction instead. Drawing a reversed path could affect the appearance of a filled pattern, depending on the pattern and the fill rule in use.
 

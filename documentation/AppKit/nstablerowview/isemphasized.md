@@ -19,7 +19,7 @@ var isEmphasized: Bool { get set }
 @property (getter=isEmphasized) BOOL emphasized;
 ```
 
-#### Discussion
+## Discussion
 
 When emphasized is [`true`](../../Swift/true.md), the view will draw with the [`alternateSelectedControlColor`](../nscolor/alternateselectedcontrolcolor.md) defined by [`NSColor`](../nscolor.md). When [`false`](../../Swift/false.md) it will use the [`secondarySelectedControlColor`](../nscolor/secondaryselectedcontrolcolor.md) defined by [`NSColor`](../nscolor.md).
 

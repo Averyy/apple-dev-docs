@@ -9,7 +9,7 @@ Retrieve performance metrics for Apple Maps keywords.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Apple Maps keyword performance reports return one row per keyword. Each row contains a `metadata` object with keyword identifiers (including `campaignId`, `adGroupId`, `text`, and `matchType`), `totalMetrics` aggregated over the full date range, and a `granularMetrics` array broken down by the selected `granularity`.
 
@@ -17,11 +17,11 @@ Use `filters` to scope results to specific campaigns or ad groups. For Apple Map
 
 See [`Filter`](./filter.md) for the full set of supported comparison operators.
 
-#### Request Body
+## Request Body
 
 See [`BrandsReportingRequest`](./brandsreportingrequest.md).
 
-##### groupBy Dimensions
+### groupBy Dimensions
 
 Apple Maps keyword reports support a reduced set of `groupBy` dimensions. Neither `supplyPlacement` nor `locationId` is available at the keyword entity level.
 
@@ -51,11 +51,11 @@ Keyword reports also exclude `EMPTY_METRICS` and the `supplyPlacement`/`location
 | `locationId` groupBy | Not supported at the keyword level. |
 | Filter scope | Always filter by `adGroupId` or `campaignId` to avoid retrieving all keywords across the account. |
 
-#### Payload Examples
+## Payload Examples
 
 Retrieve daily keyword metrics for all keywords in an Apple Maps ad group.
 
-##### Request
+### Request
 
 Filters by `adGroupId` for an Apple Maps ad group with no `groupBy` dimension, returning daily keyword metrics aggregated across all devices and locations for March 2025.
 
@@ -83,7 +83,7 @@ POST /v1/reports/business-brands/keywords/query
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

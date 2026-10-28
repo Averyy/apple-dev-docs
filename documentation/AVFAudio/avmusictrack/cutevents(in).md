@@ -24,7 +24,7 @@ func cutEvents(in range: AVBeatRange)
 - (void) cutEventsInRange:(AVBeatRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 All events past the end of the range you specify shift backward by the duration of the range.
 

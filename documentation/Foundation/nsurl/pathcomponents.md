@@ -25,7 +25,7 @@ var pathComponents: [String]? { get }
 @property (copy, readonly, nullable) NSArray<NSString *> * pathComponents;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array containing the individual path components of the URL, each unescaped using the [`replacingPercentEscapes(using:)`](../nsstring/replacingpercentescapes%28using%29.md) method. For example, in the URL `file:///directory/directory%202/file`, the path components array would be `@[@"/", @"directory", @"directory 2", @"file"]`.
 

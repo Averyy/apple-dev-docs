@@ -22,7 +22,7 @@ var screenshotService: UIScreenshotService? { get }
 @property (nonatomic, readonly, nullable) UIScreenshotService * screenshotService;
 ```
 
-#### Discussion
+## Discussion
 
 When you want to make your scene content available in PDF format, supply a delegate to the [`UIScreenshotService`](../uiscreenshotservice.md) object in this property. When the user takes a screenshot involving your scene, the screenshot service asks your delegate to provide the associated PDF data. Your delegate object must conform to the [`UIScreenshotServiceDelegate`](../uiscreenshotservicedelegate.md) protocol.
 

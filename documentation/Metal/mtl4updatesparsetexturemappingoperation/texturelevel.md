@@ -24,7 +24,7 @@ var textureLevel: Int
 NSUInteger textureLevel;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a value between `0` and the texture’s [`firstMipmapInTail`](../mtltexture/firstmipmapintail.md).
 

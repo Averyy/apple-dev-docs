@@ -23,13 +23,13 @@ class INPauseWorkoutIntent
 @interface INPauseWorkoutIntent : INIntent
 ```
 
-#### Overview
+## Overview
 
 SiriKit creates an [`INPauseWorkoutIntent`](./inpauseworkoutintent.md) object when the user asks to pause a currently running workout. Pausing a workout stops the gathering of workout data without clearing the current workout progress information. Use this intent object to validate workout parameters.
 
 To handle this intent, the handler object in your Intents extension must adopt the [`INPauseWorkoutIntentHandling`](./inpauseworkoutintenthandling.md) protocol. Your handler should confirm the request and create an [`INPauseWorkoutIntentResponse`](./inpauseworkoutintentresponse.md) object that indicates it’s possible to pause the workout. SiriKit launches your app and passes it an [`NSUserActivity`](../Foundation/nsuseractivity.md) object that your app must then use to pause the workout.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

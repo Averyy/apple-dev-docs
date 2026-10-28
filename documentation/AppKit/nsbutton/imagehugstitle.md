@@ -19,7 +19,7 @@ var imageHugsTitle: Bool { get set }
 @property BOOL imageHugsTitle;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`false`](../../Swift/false.md) (the default value), the button’s image is positioned according to the [`imagePosition`](./imageposition.md) property at the edge of the button bezel, and the title is positioned within the remaining space.
 

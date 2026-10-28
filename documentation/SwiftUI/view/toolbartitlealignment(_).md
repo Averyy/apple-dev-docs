@@ -18,7 +18,7 @@ nonisolated
 func toolbarTitleAlignment(_ alignment: ToolbarTitleAlignment) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 The navigation bar resolves the alignment of its title automatically based on context, and toolbar roles. Use this modifier to override that resolution.
 

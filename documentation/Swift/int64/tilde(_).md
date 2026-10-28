@@ -21,7 +21,7 @@ Returns the inverse of the bits set in the argument.
 static func ~ (x: Self) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 The bitwise NOT operator (`~`) is a prefix operator that returns a value in which all the bits of its argument are flipped: Bits that are `1` in the argument are `0` in the result, and bits that are `0` in the argument are `1` in the result. This is equivalent to the inverse of a set. For example:
 

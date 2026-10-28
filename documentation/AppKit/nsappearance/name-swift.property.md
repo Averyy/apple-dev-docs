@@ -19,7 +19,7 @@ var name: NSAppearance.Name { get }
 @property (copy, readonly) NSAppearanceName name;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of standard appearance names, see [`NSAppearance.Name`](./name-swift.struct.md).
 

@@ -23,7 +23,7 @@ class CXCall
 @interface CXCall : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t instantiate [`CXCall`](./cxcall.md) objects directly. Instead, [`CXCall`](./cxcall.md) objects are created by the telephony provider when an incoming call is received or an outgoing call is initiated.
 

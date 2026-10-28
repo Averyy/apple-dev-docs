@@ -16,7 +16,7 @@ An object that can request to open the extension’s containing app and receives
 final class LockedCameraCaptureSession
 ```
 
-#### Overview
+## Overview
 
 Provided during the initialization of the [`LockedCameraCaptureExtensionScene`](./lockedcameracaptureextensionscene.md). Only the system can initialize this object.
 

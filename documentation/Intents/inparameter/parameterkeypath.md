@@ -22,7 +22,7 @@ var parameterKeyPath: String { get }
 @property (nonatomic, copy, readonly) NSString * parameterKeyPath;
 ```
 
-#### Discussion
+## Discussion
 
 This string defines the location of a property in an [`INInteraction`](../ininteraction.md) object. For example, in the pickup location of a ride request intent, the key path would be represented by the string `pickupLocation`.
 

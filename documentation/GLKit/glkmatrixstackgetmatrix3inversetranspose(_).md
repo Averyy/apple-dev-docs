@@ -22,7 +22,7 @@ func GLKMatrixStackGetMatrix3InverseTranspose(_ stack: GLKMatrixStack) -> GLKMat
 GLKMatrix3 GLKMatrixStackGetMatrix3InverseTranspose(GLKMatrixStackRef stack);
 ```
 
-#### Return Value
+## Return Value
 
 A `3x3` matrix created by taking the top-left corner of the top matrix and returning its inverse transpose.
 

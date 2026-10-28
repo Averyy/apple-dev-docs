@@ -19,11 +19,11 @@ Creates a concept structure from a long-form string and a title that guides the 
 static func extracted(from text: String, title: String? = nil) -> ImagePlaygroundConcept
 ```
 
-#### Return Value
+## Return Value
 
 A concept object that encapsulates the concepts from the specified text.
 
-#### Discussion
+## Discussion
 
 Call this method when you want to use long-form text to generate an image. The method extracts relevant details from the text and uses them to create the returned object.
 

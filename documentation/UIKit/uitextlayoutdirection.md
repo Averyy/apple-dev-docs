@@ -23,7 +23,7 @@ enum UITextLayoutDirection
 enum UITextLayoutDirection : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Constants of this type are used as arguments in the [`position(from:in:offset:)`](./uitextinput/position%28from,in,offset%29.md), [`position(within:farthestIn:)`](./uitextinput/position%28within,farthestin%29.md), and [`characterRange(byExtending:in:)`](./uitextinput/characterrange%28byextending,in%29.md) methods.
 

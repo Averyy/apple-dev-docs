@@ -24,7 +24,7 @@ func setDefaults()
 - (void) setDefaults;
 ```
 
-#### Discussion
+## Discussion
 
 Input values whose default values are not defined are left unchanged.
 

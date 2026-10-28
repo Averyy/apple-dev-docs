@@ -25,11 +25,11 @@ func date(_ date: Date, matchesComponents components: DateComponents) -> Bool
 - (BOOL) date:(NSDate *) date matchesComponents:(NSDateComponents *) components;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the given date matches the given components, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method is useful for determining whether dates calculated by methods like  [`nextDate(after:matching:value:options:)`](./nextdate%28after,matching,value,options%29.md) or [`enumerateDates(startingAfter:matching:options:using:)`](./enumeratedates%28startingafter,matching,options,using%29.md) are exact, or required an adjustment due to a nonexistent time.
 

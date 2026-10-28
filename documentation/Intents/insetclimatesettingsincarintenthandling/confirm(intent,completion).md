@@ -28,7 +28,7 @@ optional func confirm(intent: INSetClimateSettingsInCarIntent) async -> INSetCli
 - (void) confirmSetClimateSettingsInCar:(INSetClimateSettingsInCarIntent *) intent completion:(void (^)(INSetClimateSettingsInCarIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can change the climate settings using the given parameters. For example, you might use this method to verify that you have an active connection to the vehicle. At some point in your implementation, execute the provided completion block with a response object indicating your app’s readiness to make the change.
 

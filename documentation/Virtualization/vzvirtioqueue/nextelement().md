@@ -19,11 +19,11 @@ func nextElement() -> VZVirtioQueueElement?
 - (VZVirtioQueueElement *) nextElement;
 ```
 
-#### Return Value
+## Return Value
 
 The next available element on this queue, or `nil` if no elements are available or if the device is no longer live.
 
-#### Discussion
+## Discussion
 
 Use this method to obtain any elements (available buffers), that the Virtualization framework represents as `VZVirtioQueueElement`, in the virtqueue for processing.
 

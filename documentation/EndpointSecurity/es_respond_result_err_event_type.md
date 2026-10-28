@@ -20,7 +20,7 @@ var ES_RESPOND_RESULT_ERR_EVENT_TYPE: es_respond_result_t { get }
 ES_RESPOND_RESULT_ERR_EVENT_TYPE
 ```
 
-#### Discussion
+## Discussion
 
 Authorization events require the client to respond with an appropriate result using either [`es_respond_auth_result(_:_:_:_:)`](./es_respond_auth_result%28_,_,_,_%29.md) or [`es_respond_flags_result(_:_:_:_:)`](./es_respond_flags_result%28_,_,_,_%29.md). This error occurs if the client attempts to respond to an authorization event using the wrong interface. It also occurs when the client performs any response to a notification-only event.
 

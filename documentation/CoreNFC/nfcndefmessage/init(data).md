@@ -21,7 +21,7 @@ convenience init?(data: Data)
 + (instancetype) ndefMessageWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 An NDEF message, or `nil` when the raw data is invalid.
 

@@ -22,7 +22,7 @@ A half-open interval from a lower bound up to, but not including, an upper bound
 struct Range<Bound> where Bound : Comparable
 ```
 
-#### Overview
+## Overview
 
 You create a `Range` instance by using the half-open range operator (`..<`).
 
@@ -51,7 +51,7 @@ empty.isEmpty
 // true
 ```
 
-#### Using a Range as a Collection of Consecutive Values
+## Using a Range as a Collection of Consecutive Values
 
 When a range uses integers as its lower and upper bounds, or any other type that conforms to the `Strideable` protocol with an integer stride, you can use that range in a `for`-`in` loop or with any sequence or collection method. The elements of the range are the consecutive values from its lower bound up to, but not including, its upper bound.
 

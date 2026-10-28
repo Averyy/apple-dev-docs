@@ -28,7 +28,7 @@ class EKRecurrenceDayOfWeek
 
 - [Creating a recurring event](./creating-a-recurring-event.md)
 
-#### Overview
+## Overview
 
 The `EKRecurrenceDayOfWeek` class represents a day of the week for use with an [`EKRecurrenceRule`](./ekrecurrencerule.md) object.
 

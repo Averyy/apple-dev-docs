@@ -13,11 +13,11 @@
 bool getVlanTag(uint16_t *vlanTag) const;
 ```
 
-#### Return Value
+## Return Value
 
 True if the tag is present, false otherwise.
 
-#### Discussion
+## Discussion
 
 Get the Vlan Tag from the packet, where the driver has enabled the kFeatureHardwareVlan capability, for the case that feature is not enabled, this method will return false.
 

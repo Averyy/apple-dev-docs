@@ -21,7 +21,7 @@ Applies a loaded snapshot to the document model.
 func apply(snapshot: sending Self.Reader.Snapshot, previous: sending Self.Reader.Snapshot?) async throws
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI calls this on the main actor after the reader’s [`read(from:progress:)`](../documentreader/read%28from,progress%29.md) completes. Update your model properties here. Keep this method lightweight — all deserialization should happen in the reader.
 

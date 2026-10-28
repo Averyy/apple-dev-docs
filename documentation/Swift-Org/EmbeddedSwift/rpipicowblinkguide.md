@@ -11,7 +11,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Run a Swift program on a Raspberry Pi Pico W or Pico 2 W that signals “SOS” in Morse code using the Pico SDK’s Wi-Fi chip driver.
 
-#### Overview
+## Overview
 
 This example demonstrates how to integrate with the Pico SDK’s CMake build system on a Wi-Fi-enabled Pico board. Unlike the plain Raspberry Pi Pico, the Pico W and Pico 2 W don’t wire their LED directly to a GPIO pin — it’s attached to the onboard CYW43439 wireless chip instead, so the LED is controlled through the `cyw43_arch` driver rather than the regular GPIO API. See [Blinking an LED on the Raspberry Pi Pico with the Pico SDK](./rpipicoguide.md) for the CMake and Pico SDK integration this example builds on for the non-Wi-Fi Pico.
 
@@ -47,7 +47,7 @@ struct Main {
 }
 ```
 
-#### Install dependencies
+## Install dependencies
 
 - A Raspberry Pi Pico W or Pico 2 W board. If you have a plain Pico (non-W) instead, see [Blinking an LED on the Raspberry Pi Pico with the Pico SDK](./rpipicoguide.md) or the [rpi-pico-blink-sdk](https://github.com/swiftlang/swift-embedded-examples/tree/main/rpi-pico-blink-sdk) example instead.
 - Follow the setup steps in the [Pico “Getting Started” guide](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf). In particular, you’ll need:
@@ -59,11 +59,11 @@ struct Main {
 
 Before adding Swift, confirm that your setup can build the standard C/C++ sample projects. A good test is building and running the “blink” example from pico-examples.
 
-#### Install Swift
+## Install Swift
 
 Follow the instructions in [Installing Embedded Swift](./installembeddedswift.md) to install the latest Swift development snapshot with Embedded Swift support. Confirm the installation by running `swift --version` — it reports a “6.2-dev” or newer development snapshot.
 
-#### Build the project
+## Build the project
 
 Navigate to the example directory, set the required environment variables, and configure the build:
 
@@ -81,7 +81,7 @@ Build the project:
 $ cmake --build build
 ```
 
-#### Run on a device
+## Run on a device
 
 Connect the Pico W board to your Mac using USB, and make sure it’s in USB Mass Storage firmware upload mode (hold the BOOTSEL button while plugging in the board, or make sure the flash memory doesn’t already contain valid firmware).
 

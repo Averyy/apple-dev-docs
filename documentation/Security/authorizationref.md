@@ -25,7 +25,7 @@ typealias AuthorizationRef = OpaquePointer
 typedef const struct AuthorizationOpaqueRef * AuthorizationRef;
 ```
 
-#### Discussion
+## Discussion
 
 This data type points to a structure the Security Server uses to store information about the authorization session. Use the functions described in [Authorization Services](./authorization-services.md) to create, access, and free the authorization reference.
 

@@ -21,7 +21,7 @@ The term of address that should be used for addressing the user
 + (instancetype) currentUser;
 ```
 
-#### Discussion
+## Discussion
 
 This term of address will only compare equal to another `+[NSTermOfAddress currentUser]`
 

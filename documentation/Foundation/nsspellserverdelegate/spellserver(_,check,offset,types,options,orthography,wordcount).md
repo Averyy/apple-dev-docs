@@ -19,11 +19,11 @@ optional func spellServer(_ sender: NSSpellServer, check stringToCheck: String, 
 - (NSArray<NSTextCheckingResult *> *) spellServer:(NSSpellServer *) sender checkString:(NSString *) stringToCheck offset:(NSUInteger) offset types:(NSTextCheckingTypes) checkingTypes options:(NSDictionary<NSString *,id> *) options orthography:(NSOrthography *) orthography wordCount:(NSInteger *) wordCount;
 ```
 
-#### Return Value
+## Return Value
 
 An array of NSTextCheckingResult instances of the spelling, grammar, or correction types, depending on the `checkingTypes` requested.
 
-#### Discussion
+## Discussion
 
 This method is optional, but if implemented it will be called during the course of unified text checking via the `NSSpellChecker` [`checkSpelling(of:startingAt:)`](../../AppKit/nsspellchecker/checkspelling%28of,startingat%29.md) and [`requestChecking(of:range:types:options:inSpellDocumentWithTag:completionHandler:)`](../../AppKit/nsspellchecker/requestchecking%28of,range,types,options,inspelldocumentwithtag,completionhandler%29.md) methods.  This allows spelling and grammar checking to be performed simultaneously, which can be significantly more efficient, and allows the delegate to return autocorrection results as well.
 

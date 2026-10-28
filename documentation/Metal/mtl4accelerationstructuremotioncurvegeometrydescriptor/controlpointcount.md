@@ -24,7 +24,7 @@ var controlPointCount: Int { get set }
 @property (nonatomic) NSUInteger controlPointCount;
 ```
 
-#### Discussion
+## Discussion
 
 All keyframes have the same number of control points.
 

@@ -21,7 +21,7 @@ Returns the position of the Unicode scalar immediately after a Unicode scalar in
 func index(afterUnicodeScalar i: AttributedString.Index) -> AttributedString.Index
 ```
 
-#### Return Value
+## Return Value
 
 The position of the Unicode scalar immediately after the Unicode scalar at index `i`.
 

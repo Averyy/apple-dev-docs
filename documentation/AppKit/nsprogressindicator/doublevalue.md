@@ -19,7 +19,7 @@ var doubleValue: Double { get set }
 @property double doubleValue;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a determinate progress indicator goes from `0.0` to `100.0`. If the progress bar has advanced halfway across the view, this value would be `50.0`.
 

@@ -20,7 +20,7 @@ convenience init(value: ObjectType?)
 - (instancetype) initWithValue:(ObjectType) value;
 ```
 
-#### Discussion
+## Discussion
 
 The system supports the following value types: [`NSDictionary`](../../Foundation/nsdictionary.md), [`NSArray`](../../Foundation/nsarray.md), [`NSString`](../../Foundation/nsstring.md), [`NSData`](../../Foundation/nsdata.md), and [`NSNumber`](../../Foundation/nsnumber.md).
 

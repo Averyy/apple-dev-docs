@@ -19,7 +19,7 @@ Creates a convolution descriptor with the kernel and padding options, number of 
 + (instancetype) descriptorWithKernelSizes:(NSArray<NSNumber *> *) kernelSizes inputFeatureChannelCount:(NSUInteger) inputFeatureChannelCount outputFeatureChannelCount:(NSUInteger) outputFeatureChannelCount groupCount:(NSUInteger) groupCount strides:(NSArray<NSNumber *> *) strides dilationRates:(NSArray<NSNumber *> *) dilationRates paddingPolicy:(MLCPaddingPolicy) paddingPolicy paddingSizes:(NSArray<NSNumber *> *) paddingSizes;
 ```
 
-#### Return Value
+## Return Value
 
 A convolution descriptor.
 

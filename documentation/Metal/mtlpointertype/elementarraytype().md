@@ -24,7 +24,7 @@ func elementArrayType() -> MTLArrayType?
 - (MTLArrayType *) elementArrayType;
 ```
 
-#### Return Value
+## Return Value
 
 An object that describes the array. If the pointer does not point to an array, this method returns `nil`.
 

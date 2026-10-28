@@ -25,7 +25,7 @@ var modelNumber: Data { get }
 @property (nonatomic, readonly) NSData * modelNumber;
 ```
 
-#### Discussion
+## Discussion
 
 This value is 2 bytes long.
 

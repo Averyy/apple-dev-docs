@@ -19,7 +19,7 @@ The role to request.
 @property (nonatomic, readonly) UISceneSessionRole role;
 ```
 
-#### Discussion
+## Discussion
 
 If you created the request using [`requestWithSession:`](./requestwithsession_.md), this property reflects the role of the `session`.
 

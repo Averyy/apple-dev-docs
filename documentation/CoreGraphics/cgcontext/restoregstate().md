@@ -25,7 +25,7 @@ func restoreGState()
 extern void CGContextRestoreGState(CGContextRef c);
 ```
 
-#### Discussion
+## Discussion
 
 Core Graphics removes the graphics state at the top of the stack so that the most recently saved state becomes the current graphics state.
 

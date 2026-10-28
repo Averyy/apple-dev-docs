@@ -25,7 +25,7 @@ case failureRequiringAppLaunch
 INDeleteTasksIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you can’t delete the tasks from your Intents extension, but the user can do so from your app. Don’t use this code for general errors or to force the user to launch your app.
 

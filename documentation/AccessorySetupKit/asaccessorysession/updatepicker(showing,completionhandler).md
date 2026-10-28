@@ -28,7 +28,7 @@ func updatePicker(showing displayItems: [ASDiscoveredDisplayItem]) async throws
 
 - [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
-#### Discussion
+## Discussion
 
 You use this method when your picker uses the [`filterDiscoveryResults`](../aspickerdisplaysettings/options-swift.struct/filterdiscoveryresults.md) option to enable manual filtering of discovered accessories. After creating customized [`ASDiscoveredDisplayItem`](../asdiscovereddisplayitem.md) instances for included accessories, call this method to update the picker to show your app-filtered accessories with updated assets.
 

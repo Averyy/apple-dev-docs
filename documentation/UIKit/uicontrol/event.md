@@ -27,7 +27,7 @@ enum UIControlEvents : NSUInteger;
 
 - [Responding to control-based events using target-action](../responding-to-control-based-events-using-target-action.md)
 
-#### Overview
+## Overview
 
 You set up a control so that it sends an action message to a target object by associating both target and action with one or more control events. To do this, send [`addTarget(_:action:for:)`](./addtarget%28_,action,for%29.md) to the control for each target-action pair you want to specify.
 

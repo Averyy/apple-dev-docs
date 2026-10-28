@@ -21,11 +21,11 @@ Returns the class object.
 + (Class) class;
 ```
 
-#### Return Value
+## Return Value
 
 The class object.
 
-#### Discussion
+## Discussion
 
 Refer to a class only by its name when it is the receiver of a message. In all other cases, the class object must be obtained through this or a similar method. For example, here `SomeClass` is passed as an argument to the [`isKind(of:)`](../nsobjectprotocol/iskind%28of%29.md) method (declared in the `NSObject` protocol):
 

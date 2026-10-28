@@ -21,11 +21,11 @@ func which(_ condition: MLXArray, _ a: some ScalarOrArray, _ b: some ScalarOrArr
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 The condition and input arrays must be the same shape or [Numpy Style Broadcasting](./broadcasting.md) with each another.
 
-##### See Also
+### See Also
 
 - [Logical Operators](./logical.md)
 - [`where(_:_:_:stream:)`](./where%28_,_,_,stream%29.md)

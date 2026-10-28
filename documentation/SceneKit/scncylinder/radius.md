@@ -25,7 +25,7 @@ var radius: CGFloat { get set }
 @property (nonatomic) CGFloat radius;
 ```
 
-#### Discussion
+## Discussion
 
 The cylinder is centered in its local coordinate system. For example, a cylinder of radius `5.0` extends from `-5.0` to `5.0` along the x- and z-axes. The default radius is `0.5`. A radius of zero or less creates an empty geometry.
 

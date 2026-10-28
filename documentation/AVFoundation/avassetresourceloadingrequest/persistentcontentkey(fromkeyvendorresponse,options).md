@@ -25,11 +25,11 @@ func persistentContentKey(fromKeyVendorResponse keyVendorResponse: Data, options
 - (NSData *) persistentContentKeyFromKeyVendorResponse:(NSData *) keyVendorResponse options:(NSDictionary<NSString *,id> *) options error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 The persistable content key.
 
-#### Discussion
+## Discussion
 
 The data returned from this method may be used to immediately satisfy an [`AVAssetResourceLoadingDataRequest`](../avassetresourceloadingdatarequest.md), as well as any subsequent requests for the same key URL. The value of [`contentType`](../avassetresourceloadingcontentinformationrequest/contenttype.md) must be set to [`AVStreamingKeyDeliveryPersistentContentKeyType`](../avstreamingkeydeliverypersistentcontentkeytype.md) when responding with data created with this method.
 

@@ -25,7 +25,7 @@ var fieldBitMask: UInt32 { get set }
 @property (nonatomic, assign) uint32_t fieldBitMask;
 ```
 
-#### Discussion
+## Discussion
 
 When a physics body is inside the region of an [`SKFieldNode`](../skfieldnode.md) object, that field node’s [`categoryBitMask`](../skfieldnode/categorybitmask.md) property is compared to this physics body’s [`fieldBitMask`](./fieldbitmask.md) property by performing a logical AND operation. If the result is a nonzero value, the field node’s effect is applied to the physics body.
 

@@ -30,7 +30,7 @@ enum MTLStoreActionOptions : NSUInteger;
 
 - [Understanding the Metal 4 core API](./understanding-the-metal-4-core-api.md)
 
-#### Overview
+## Overview
 
 This property modifies the intended behavior of the store actions in the [`MTLStoreAction`](./mtlstoreaction.md) enumeration.
 

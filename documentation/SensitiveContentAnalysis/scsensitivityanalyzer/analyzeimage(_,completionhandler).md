@@ -31,7 +31,7 @@ func analyzeImage(_ image: CGImage) async throws -> SCSensitivityAnalysis
 
 - [Testing your app’s response to sensitive media](../testing-your-app-s-response-to-sensitive-media.md)
 
-#### Discussion
+## Discussion
 
 The completion handler:
 

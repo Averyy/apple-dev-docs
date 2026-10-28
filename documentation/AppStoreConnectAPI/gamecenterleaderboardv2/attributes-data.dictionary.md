@@ -15,7 +15,7 @@ Attributes that describe a Game Center leaderboard v2 resource.
 object GameCenterLeaderboardV2.Attributes
 ```
 
-#### Overview
+## Overview
 
 - activityProperties:
 - archived:

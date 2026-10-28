@@ -18,7 +18,7 @@ Indicates that the device needs more horizontal motion.
 static let insufficientHorizontalSweep: NIAlgorithmConvergenceStatus.Reason
 ```
 
-#### Discussion
+## Discussion
 
 Coach the user to resolve the issue, such as by presenting text that asks the user to move the device in a horizontal direction.
 

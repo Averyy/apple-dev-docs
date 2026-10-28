@@ -25,7 +25,7 @@ optional func urlSession(_ session: URLSession, task: URLSessionTask, didSendBod
 - (void) URLSession:(NSURLSession *) session task:(NSURLSessionTask *) task didSendBodyData:(int64_t) bytesSent totalBytesSent:(int64_t) totalBytesSent totalBytesExpectedToSend:(int64_t) totalBytesExpectedToSend;
 ```
 
-#### Discussion
+## Discussion
 
 The `totalBytesSent` and `totalBytesExpectedToSend` parameters are also available as [`URLSessionTask`](../urlsessiontask.md) properties [`countOfBytesSent`](../urlsessiontask/countofbytessent.md) and [`countOfBytesExpectedToSend`](../urlsessiontask/countofbytesexpectedtosend.md). Or, since [`URLSessionTask`](../urlsessiontask.md) supports [`ProgressReporting`](../progressreporting.md), you can use the task’s [`progress`](../urlsessiontask/progress.md) property instead, which may be more convenient.
 

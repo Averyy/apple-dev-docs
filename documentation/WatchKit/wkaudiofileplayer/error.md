@@ -19,7 +19,7 @@ var error: (any Error)? { get }
 @property (nonatomic, readonly, nullable) NSError * error;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` unless the [`status`](./status.md) property of the player item is [`WKAudioFilePlayerStatus.failed`](../wkaudiofileplayerstatus/failed.md). When playback fails, the error indicates the reason for the failure.
 

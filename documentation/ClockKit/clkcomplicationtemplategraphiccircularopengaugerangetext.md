@@ -21,7 +21,7 @@ class CLKComplicationTemplateGraphicCircularOpenGaugeRangeText
 @interface CLKComplicationTemplateGraphicCircularOpenGaugeRangeText : CLKComplicationTemplateGraphicCircular
 ```
 
-#### Overview
+## Overview
 
 This template belongs to the [`CLKComplicationFamily.graphicCircular`](./clkcomplicationfamily/graphiccircular.md) family. [Figure 1](./clkcomplicationtemplategraphiccircularopengaugerangetext.md#3030687) shows the layout of the image and where the template might appear on the clock face.
 

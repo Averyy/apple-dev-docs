@@ -5,11 +5,11 @@
 
 Record traces of Wi-Fi traffic and traffic management.
 
-#### Overview
+## Overview
 
 When working with Wi-Fi, your best option for recording a packet trace depends on whether you’re interested in the network traffic itself, or in the details of how the Wi-Fi network manages traffic.
 
-##### Record a High-Level Packet Trace of Wi-Fi Traffic
+### Record a High-Level Packet Trace of Wi-Fi Traffic
 
 If you’re primarily interested in the traffic going over the Wi-Fi — that is, you would like to ignore all the low-level details of Wi-Fi and treat the Wi-Fi network like an Ethernet network without all those pesky wires — use one of the following high-level approaches:
 
@@ -17,7 +17,7 @@ If you’re primarily interested in the traffic going over the Wi-Fi — that is
 - If your Wi-Fi access point supports bridge mode (notably, all Apple base stations do), you can bridge the Wi-Fi network on to an Ethernet network and then use standard Ethernet techniques to capture a packet trace. You won’t be able to see Wi-Fi to Wi-Fi traffic, but in many situations that’s not a problem.
 - If you enable Internet Sharing on your Mac, and have your Wi-Fi clients join the shared network, you can run your packet trace program on the Mac and see all the Wi-Fi traffic. If you target the Mac’s Wi-Fi interface, you will see all traffic, including Wi-Fi to Wi-Fi traffic. If you target the Mac’s Ethernet interface, you will only see traffic entering or leaving the Wi-Fi network.
 
-##### Record Low-Level Details of Wi-Fi Traffic Management
+### Record Low-Level Details of Wi-Fi Traffic Management
 
 If you are interested in the low-level details of how the Wi-Fi network manages traffic, record a low-level Wi-Fi packet trace. To do this:
 

@@ -22,7 +22,7 @@ var isExclusiveTouch: Bool { get set }
 @property (nonatomic, getter=isExclusiveTouch) BOOL exclusiveTouch;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property to [`true`](../../Swift/true.md) causes the receiver to block the delivery of touch events to other views in the same window. The default value of this property is [`false`](../../Swift/false.md).
 

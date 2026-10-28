@@ -19,7 +19,7 @@ func SCNetworkSetCopyCurrent(_ prefs: SCPreferences) -> SCNetworkSet?
 SCNetworkSetRefSCNetworkSetCopyCurrent(SCPreferencesRef prefs);
 ```
 
-#### Return Value
+## Return Value
 
 The current set, or `NULL` if no current set has been defined.
 

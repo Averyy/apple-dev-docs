@@ -16,7 +16,7 @@ Performs the rendering of an immersive video frame.
 func process(_ frame: ImmersiveVideoFrame, for eye: ImmersivePreviewRenderer.Eye = .left, rotation: Rotation3D = .identity, fieldOfView: Float = 90, presentationDescriptor: PresentationDescriptor, renderTexture: any MTLTexture) async
 ```
 
-#### Discussion
+## Discussion
 
 This method is available on macOS and provides manual control over camera pose and projection parameters. It updates the camera pose based on the provided rotation, configures the projection matrix using the specified field of view, and processes presentation commands to determine the active camera and rendering parameters.
 

@@ -29,7 +29,7 @@ GKTurnBasedParticipantStatusDone
 
 - [Starting turn-based matches and passing turns between players](../../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 You set the [`matchOutcome`](../matchoutcome.md) property to state the reason why the participant left.
 

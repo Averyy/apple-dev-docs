@@ -21,7 +21,7 @@ The number of bits used to represent the type’s exponent.
 static var exponentBitCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 A binary floating-point type’s `exponentBitCount` imposes a limit on the range of the exponent for normal, finite values. The *exponent bias* of a type `F` can be calculated as the following, where `**` is exponentiation:
 

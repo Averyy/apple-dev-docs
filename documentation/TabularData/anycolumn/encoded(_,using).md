@@ -21,11 +21,11 @@ Generates a column by encoding each element’s value.
 func encoded<T, Encoder>(_ type: T.Type, using encoder: Encoder) throws -> AnyColumn where T : Encodable, Encoder : TopLevelEncoder
 ```
 
-#### Return Value
+## Return Value
 
 A new column of encoded values.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `ColumnEncodingError` when the encoder fails to encode an element.
 

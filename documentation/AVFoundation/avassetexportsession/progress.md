@@ -26,7 +26,7 @@ var progress: Float { get }
 @property (nonatomic, readonly) float progress;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property ranges from `0.0` to `1.0.`
 

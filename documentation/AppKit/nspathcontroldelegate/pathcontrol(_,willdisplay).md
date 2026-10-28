@@ -20,7 +20,7 @@ optional func pathControl(_ pathControl: NSPathControl, willDisplay openPanel: N
 - (void) pathControl:(NSPathControl *) pathControl willDisplayOpenPanel:(NSOpenPanel *) openPanel;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called before the Open panel is shown but after its allowed file types are set to the cell’s allowed types. At this time, you can further customize the Open panel as required. This method is called only when the style is set to `NSPathStylePopUp`. Implementation of this method is optional.
 

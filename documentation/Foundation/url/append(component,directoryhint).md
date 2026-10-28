@@ -21,7 +21,7 @@ Appends a path component to the URL, with a hint for handling directory awarenes
 mutating func append<S>(component: S, directoryHint: URL.DirectoryHint = .inferFromPath) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 For non-file URLs, this method percent-encodes any path separators (`/`) in the path component before appending.
 

@@ -26,7 +26,7 @@ var isDecodable: Bool { get }
 @property (nonatomic, readonly, getter=isDecodable) BOOL decodable;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../Swift/true.md), the system can decode the track, even if decoding may be too slow for real-time playback.
 

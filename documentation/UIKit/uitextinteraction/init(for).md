@@ -22,7 +22,7 @@ convenience init(for mode: UITextInteractionMode)
 + (instancetype) textInteractionForMode:(UITextInteractionMode) mode;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized text interaction object.
 

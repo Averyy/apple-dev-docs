@@ -19,7 +19,7 @@ func SCPreferencesPathGetValue(_ prefs: SCPreferences, _ path: CFString) -> CFDi
 CFDictionaryRefSCPreferencesPathGetValue(SCPreferencesRef prefs, CFStringRef path);
 ```
 
-#### Return Value
+## Return Value
 
 The dictionary associated with the specified path, or `NULL` if the path does not exist.
 

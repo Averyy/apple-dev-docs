@@ -17,7 +17,7 @@ The metadata for the setting that denies explicit content.
 static let denyExplicitContent: SettingMetadata<Bool>
 ```
 
-#### Discussion
+## Discussion
 
 Use `denyExplicitContent` to access the metadata for [`denyExplicitContent`](./denyexplicitcontent-swift.property.md). The default value is `false`.
 

@@ -21,7 +21,7 @@ Calculates the mean of squares of a single-precision vector.
 extern void vDSP_measqv(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the mean of squares of the first `N` elements of the input vector and writes the result to the output scalar parameter, `C`.
 

@@ -21,11 +21,11 @@ convenience init(trafficLights: Int)
 + (instancetype) routeDetailWithTrafficLights:(NSUInteger) trafficLights;
 ```
 
-#### Return Value
+## Return Value
 
 A new @c CPRouteDetail instance representing the traffic light count
 
-#### Discussion
+## Discussion
 
 Use this method to display the count of traffic signals that will be encountered along the route. This helps users understand potential stop-and-go traffic patterns and estimate realistic travel time.
 

@@ -19,7 +19,7 @@ var sectionContents: [PHProjectSectionContent] { get }
 @property (nonatomic, readonly) NSArray<PHProjectSectionContent *> * sectionContents;
 ```
 
-#### Discussion
+## Discussion
 
 The content is ordered by number of elements, from fewest to most. Projects should present only one level of content to the user at a time, because assets are reused within individual content objects.
 

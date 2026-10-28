@@ -15,7 +15,7 @@ A pagination token that you return to the endpoint on a subsequent call to recei
 string paginationToken
 ```
 
-#### Discussion
+## Discussion
 
 Endpoints that paginate their results return a `paginationToken` when more results are available. Provide it on your next call to that endpoint to get the following page, and check [`hasMore`](./hasmore.md) to determine whether to keep requesting pages.
 

@@ -20,7 +20,7 @@ func willSelect()
 - (void) willSelect;
 ```
 
-#### Discussion
+## Discussion
 
 Default implementation does nothing. Override this method to perform actions right before the main view is displayed.
 

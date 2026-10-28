@@ -14,7 +14,7 @@ Outputs a normalized vector.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Normalize (vector2f)**:
 

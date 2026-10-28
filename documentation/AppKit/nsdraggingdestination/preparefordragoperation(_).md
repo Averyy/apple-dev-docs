@@ -20,11 +20,11 @@ optional func prepareForDragOperation(_ sender: any NSDraggingInfo) -> Bool
 - (BOOL) prepareForDragOperation:(id<NSDraggingInfo>) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver agrees to perform the drag operation and [`false`](../../Swift/false.md) if not.
 
-#### Discussion
+## Discussion
 
 This method is invoked only if the most recent [`draggingEntered(_:)`](./draggingentered%28_%29.md) or [`draggingUpdated(_:)`](./draggingupdated%28_%29.md) message returned an acceptable drag-operation value.
 

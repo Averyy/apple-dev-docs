@@ -15,11 +15,11 @@ The request body for updating the invoice details of a budget order.
 object InvoiceDetailUpdate
 ```
 
-#### Discussion
+## Discussion
 
 All fields are optional, allowing partial updates to an existing invoice detail record. See [`InvoiceDetailCreate`](./invoicedetailcreate.md) for required fields on create.
 
-##### Example
+### Example
 
 ```json
 {

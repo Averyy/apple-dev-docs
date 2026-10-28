@@ -23,7 +23,7 @@ var unobscuredContentRect: CGRect { get }
 @property (nonatomic, readonly) CGRect unobscuredContentRect;
 ```
 
-#### Discussion
+## Discussion
 
 Return a [`CGRect`](../../CoreFoundation/cgrect.md) instance configured in the coordinate space of [`textInputView`](./textinputview.md).
 

@@ -16,11 +16,11 @@ Applies a 3D transformation to this view’s rendered output.
 nonisolated func transform3DEffect(_ transform: AffineTransform3D) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that renders transformed according to the provided `transform`
 
-##### Apply a transform about an anchor
+### Apply a transform about an anchor
 
 This does not adjust the transform relative to an anchor point. Instead, apply the scale and rotation separately using [`scaleEffect(_:anchor:)`](./scaleeffect%28_,anchor%29.md) together with [`rotation3DEffect(_:anchor:)`](./rotation3deffect%28_,anchor%29.md).
 

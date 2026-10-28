@@ -21,7 +21,7 @@ init(mediaTypes: MPMediaType)
 - (instancetype) initWithMediaTypes:(MPMediaType) mediaTypes;
 ```
 
-#### Return Value
+## Return Value
 
 A new media item picker.
 

@@ -19,11 +19,11 @@ func people() -> [Any]!
 - (NSArray *) people;
 ```
 
-#### Return Value
+## Return Value
 
 An array of all the people in the Address Book database.
 
-#### Discussion
+## Discussion
 
 If the database doesn’t contain any people, this method returns an empty array.
 

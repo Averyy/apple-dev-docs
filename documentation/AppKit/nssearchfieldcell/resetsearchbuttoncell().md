@@ -19,7 +19,7 @@ func resetSearchButtonCell()
 - (void) resetSearchButtonCell;
 ```
 
-#### Discussion
+## Discussion
 
 This method resets the target, action, regular image, and pressed image for the search button cell. By default, when users click the search button or press the Return key, the action defined for the receiver is sent to its designated target. This method gives you a way to customize the search button for specific situations and then reset the button defaults without having to undo changes individually.
 

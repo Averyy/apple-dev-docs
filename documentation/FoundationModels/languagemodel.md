@@ -25,7 +25,7 @@ protocol LanguageModel : Sendable
 - [Adding server-side intelligence with Private Cloud Compute](./adding-server-side-intelligence-with-private-cloud-compute.md)
 - [Running a Core AI model in a Foundation Models session](./running-a-core-ai-model-in-a-foundation-models-session.md)
 
-#### Overview
+## Overview
 
 Implement this protocol to create a bridge between a model and the framework. The protocol describes the capabilities and the configuration for your model. An [`Executor`](./languagemodel/executor.md) does the work of translating framework types into the types your platform expects, and streams results back through [`LanguageModelExecutorGenerationChannel`](./languagemodelexecutorgenerationchannel.md). Because most of the work is done in the executor, keep the type that adopts this protocol intentionally light.
 

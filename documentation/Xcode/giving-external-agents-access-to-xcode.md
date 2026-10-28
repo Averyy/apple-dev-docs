@@ -5,7 +5,7 @@
 
 Let agents access your project and Xcode capabilities using the Model Context Protocol.
 
-#### Overview
+## Overview
 
 You can give permission for external agents, that you launch outside of Xcode, to modify your Xcode project and perform actions, such as building your app.
 
@@ -17,7 +17,7 @@ If you use an external agent for development:
 
 Xcode alerts you when the external agent connects to Xcode and when it’s active.
 
-##### Update Intelligence settings to give external agents access to Xcode
+### Update Intelligence settings to give external agents access to Xcode
 
 In Intelligence settings, allow external agents to connect with Xcode using its MCP server:
 
@@ -26,7 +26,7 @@ In Intelligence settings, allow external agents to connect with Xcode using its 
 
 ![A screenshot of the Intelligence settings showing the “Allow external agents to use Xcode tools” toggle under Model Context Protocol.](https://developer.apple.com/tutorials/images/com.apple.Xcode/intelligence-settings@2x.png)
 
-##### Configure external agents to use the MCP server
+### Configure external agents to use the MCP server
 
 In Terminal, use the `xcrun mcpbridge` command to configure the external agent to use Xcode Tools. For example, run the following command in Terminal to give Claude Code access to your open project and Xcode capabilities:
 

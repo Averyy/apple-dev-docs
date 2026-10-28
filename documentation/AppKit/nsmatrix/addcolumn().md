@@ -19,7 +19,7 @@ func addColumn()
 - (void) addColumn;
 ```
 
-#### Discussion
+## Discussion
 
 This method raises an `NSRangeException` if there are 0 rows or 0 columns. This method creates new cells as needed with [`makeCell(atRow:column:)`](./makecell%28atrow,column%29.md). Use [`renewRows(_:columns:)`](./renewrows%28_,columns%29.md) to add new cells to an empty matrix.
 

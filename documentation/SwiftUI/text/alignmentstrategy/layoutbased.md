@@ -21,7 +21,7 @@ The alignment following the environment setting.
 static let layoutBased: Text.AlignmentStrategy
 ```
 
-#### Discussion
+## Discussion
 
 This alignment follows the [`multilineTextAlignment`](../../environmentvalues/multilinetextalignment.md) in the view hierarchy.
 

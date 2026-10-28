@@ -21,7 +21,7 @@ var userInfo: Any? { get set }
 @property (nonatomic, strong, nullable) id userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to attach a value that provides additional context to the list item.
 

@@ -25,7 +25,7 @@ var bitsPerComponent: Int { get }
 extern size_t CGImageGetBitsPerComponent(CGImageRef image);
 ```
 
-#### Description
+## Description
 
 Possible values are 1, 2, 4, or 8. For example, for a 16-bit RGB(A) colorspace, the function would return a value of 4 bits per color component.
 

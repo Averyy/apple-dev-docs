@@ -19,11 +19,11 @@ var resumeData: Data? { get }
 @property (copy, readonly, nullable) NSData * resumeData;
 ```
 
-#### Return Value
+## Return Value
 
 The resume data for a download that is not yet complete. This data represents the necessary state information that an `NSURLDownload` object needs to resume a download. The resume data can later be used when initializing a download with [`init(resumeData:delegate:path:)`](./init%28resumedata,delegate,path%29.md). Returns `nil` if the download is not able to be resumed.
 
-#### Discussion
+## Discussion
 
 Resume data is returned only if both the protocol and the server support resuming. For details on how to resume a connection, see the documentation for [`init(resumeData:delegate:path:)`](./init%28resumedata,delegate,path%29.md).
 

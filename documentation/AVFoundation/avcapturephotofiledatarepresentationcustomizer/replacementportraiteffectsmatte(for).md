@@ -22,11 +22,11 @@ optional func replacementPortraitEffectsMatte(for photo: AVCapturePhoto) -> AVPo
 - (AVPortraitEffectsMatte *) replacementPortraitEffectsMatteForPhoto:(AVCapturePhoto *) photo;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of [`AVPortraitEffectsMatte`](../avportraiteffectsmatte.md).  To preserve the existing portrait effects matte, return `photo.portraitEffectsMatte`. To strip the existing portrait effects matte, return `nil`.  To replace the portrait effects matte, provide a replacement [`AVPortraitEffectsMatte`](../avportraiteffectsmatte.md) instance.
 
-#### Discussion
+## Discussion
 
 This callback is optional. If your delegate doesn’t implement this callback, the existing metadata in the in-memory [`AVCapturePhoto`](../avcapturephoto.md) container is written directly to the file data representation.
 

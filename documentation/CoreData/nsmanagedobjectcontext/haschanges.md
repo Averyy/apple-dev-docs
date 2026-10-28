@@ -25,11 +25,11 @@ var hasChanges: Bool { get }
 @property (nonatomic, readonly) BOOL hasChanges;
 ```
 
-#### Discussion
+## Discussion
 
 If you are observing this property using key-value observing (KVO) you should not touch the context or its objects within your implementation of [`observeValue(forKeyPath:of:change:context:)`](../../ObjectiveC/nsobject-swift.class/observevalue%28forkeypath,of,change,context%29.md) for this notification. (This is because of the intricacy of the locations of the KVO notifications—for example, the context may be in the middle of an undo operation, or repairing a merge conflict.) If you need to send messages to the context or change any of its managed objects as a result of a change to the value of `hasChanges`, you must do so after the call stack unwinds (typically using [`perform(_:with:afterDelay:)`](../../ObjectiveC/nsobject-swift.class/perform%28_,with,afterdelay%29.md) or a similar method).
 
-##### Special Considerations
+### Special Considerations
 
 In macOS 10.6 and later, this property is [Key-value observing](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/KVO.html#//apple_ref/doc/uid/TP40008195-CH16) compliant.
 

@@ -25,11 +25,11 @@ class func success(with resolvedTask: INTask) -> Self
 + (instancetype) successWithResolvedTask:(INTask *) resolvedTask;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INTaskResolutionResult`](../intaskresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you successfully locate the task object to modify. Provide an [`INTask`](../intask.md) object with as much information about the task as you have available.
 

@@ -24,7 +24,7 @@ case rg8Snorm
 MTLDataTypeRG8Snorm
 ```
 
-#### Discussion
+## Discussion
 
 The color components are in RG order, which stands for red and green.
 

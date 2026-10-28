@@ -13,7 +13,7 @@
 void mbuf_freem(mbuf_t mbuf);
 ```
 
-#### Discussion
+## Discussion
 
 Frees a chain of mbufs link through mnext.
 

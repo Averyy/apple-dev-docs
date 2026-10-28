@@ -24,7 +24,7 @@ var springTimingParameters: UISpringTimingParameters? { get }
 @property (nonatomic, readonly, nullable) UISpringTimingParameters * springTimingParameters;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this property and use it to provide spring-based timing information. If the value of the [`timingCurveType`](./timingcurvetype.md) property is [`UITimingCurveType.spring`](../uitimingcurvetype/spring.md) or [`UITimingCurveType.composed`](../uitimingcurvetype/composed.md), you must return an object from this property.
 

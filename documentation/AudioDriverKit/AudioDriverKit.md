@@ -9,7 +9,7 @@ Develop drivers for audio devices.
 **Availability**:
 - DriverKit 21.0+
 
-#### Overview
+## Overview
 
 The AudioDriverKit framework supports the development of [DriverKit](../DriverKit/DriverKit.md)-based audio extensions that communicate with the CoreAudio HAL. AudioDriverKit handles all of the necessary user client communication between the CoreAudio HAL and the driver extension, which eliminates the need to implement an audio server plug-in. You can also integrate with transport-based driver extension frameworks like [PCIDriverKit](../PCIDriverKit/PCIDriverKit.md).
 

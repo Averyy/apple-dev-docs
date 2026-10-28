@@ -21,11 +21,11 @@ convenience init(symbolName: String, value: String)
 + (instancetype) routeDetailWithSymbolName:(NSString *) symbolName value:(NSString *) value;
 ```
 
-#### Return Value
+## Return Value
 
 A new @c CPRouteDetail instance with the custom symbol and value
 
-#### Discussion
+## Discussion
 
 Use this method to display app-specific route information that doesn’t fit the predefined categories. You provide a custom SF Symbol name and a formatted string value that will be displayed together.
 

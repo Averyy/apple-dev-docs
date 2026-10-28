@@ -23,7 +23,7 @@ protocol NSServicesMenuRequestor : NSObjectProtocol
 
 - [Supporting Writing Tools via the pasteboard](./supporting-writing-tools-via-the-pasteboard.md)
 
-#### Overview
+## Overview
 
 This informal protocol consists of two methods, [`writeSelection(to:types:)`](./nsservicesmenurequestor/writeselection%28to,types%29.md) and [`readSelection(from:)`](./nsservicesmenurequestor/readselection%28from%29.md). The first method provides data to a remote service, and the second receives any data the remote service might send back. Both respond to messages that are generated when the user chooses a command from the Services menu.
 

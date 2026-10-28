@@ -17,7 +17,7 @@ The playback control interface for the remote session.
 @property (readonly, nullable) NSObject<AVPlaybackUserInterfaceControllable> * playbackControl;
 ```
 
-#### Discussion
+## Discussion
 
 This property is always non-nil when obtained from a successful call to [`start()`](../avsystemroutesession-gp78/start%28%29.md).
 

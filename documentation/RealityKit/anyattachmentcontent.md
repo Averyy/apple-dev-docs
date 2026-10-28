@@ -16,7 +16,7 @@ A type-erased attachment content.
 @frozen @preconcurrency struct AnyAttachmentContent
 ```
 
-#### Overview
+## Overview
 
 An `AnyAttachmentContent` allows changing the type of attachment used in a given attachment content. Whenever the type of attachment content used with an `AnyAttachmentContent` changes, the old content is destroyed and the new content is created for the new type.
 

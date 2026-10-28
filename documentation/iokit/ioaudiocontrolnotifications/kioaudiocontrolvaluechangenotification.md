@@ -14,7 +14,7 @@
 kIOAudioControlValueChangeNotification = 0
 ```
 
-#### Discussion
+## Discussion
 
 Used to request value change notifications.
 

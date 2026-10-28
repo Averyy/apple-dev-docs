@@ -22,7 +22,7 @@ var identifier: String? { get }
 @property (nonatomic, readonly, nullable) NSString * identifier;
 ```
 
-#### Discussion
+## Discussion
 
 The system considers two regions the same if their region identifier is equal. Your app needs to ensure that equal caption regions have the same property values.
 

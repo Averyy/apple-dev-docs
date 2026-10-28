@@ -24,7 +24,7 @@ Mutates the raw bytes in the data’s buffer.
 mutating func withUnsafeMutableBytes<ResultType, ContentType>(_ body: (UnsafeMutablePointer<ContentType>) throws -> ResultType) rethrows -> ResultType
 ```
 
-#### Discussion
+## Discussion
 
 This function assumes that you are mutating the contents.
 

@@ -19,7 +19,7 @@ func add(_ record: ABRecord!, error: ()) throws
 - (BOOL) addRecord:(ABRecord *) record error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 If the `record` argument is `nil`, this method raises an exception. Your changes are not committed until you call the [`save()`](./save%28%29.md) method.
 

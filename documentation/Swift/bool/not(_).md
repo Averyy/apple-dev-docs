@@ -21,7 +21,7 @@ Performs a logical NOT operation on a Boolean value.
 static func ! (a: Bool) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 The logical NOT operator (`!`) inverts a Boolean value. If the value is `true`, the result of the operation is `false`; if the value is `false`, the result is `true`.
 

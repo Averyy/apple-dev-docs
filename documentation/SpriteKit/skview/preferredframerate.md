@@ -22,7 +22,7 @@ var preferredFrameRate: Float { get set }
 @property (nonatomic) float preferredFrameRate;
 ```
 
-#### Discussion
+## Discussion
 
 This function is deprecated. Use [`preferredFramesPerSecond`](./preferredframespersecond.md) instead.
 

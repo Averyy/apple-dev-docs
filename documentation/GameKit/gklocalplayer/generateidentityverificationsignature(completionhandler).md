@@ -31,7 +31,7 @@ func generateIdentityVerificationSignature() async throws -> (URL, Data, Data, U
 - (void) generateIdentityVerificationSignatureWithCompletionHandler:(void (^)(NSURL *publicKeyUrl, NSData *signature, NSData *salt, uint64_t timestamp, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 To generate a signature on your server, see the [`fetchItems(forIdentityVerificationSignature:)`](./fetchitems%28foridentityverificationsignature%29.md) method.
 

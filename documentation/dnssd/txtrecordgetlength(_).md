@@ -25,7 +25,7 @@ func TXTRecordGetLength(_ txtRecord: UnsafePointer<TXTRecordRef>!) -> UInt16
 uint16_t TXTRecordGetLength(const TXTRecordRef *txtRecord);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the size of the raw bytes inside a TXTRecordRef which you can pass directly to [`DNSServiceRegister(_:_:_:_:_:_:_:_:_:_:_:_:)`](./dnsserviceregister%28_,_,_,_,_,_,_,_,_,_,_,_%29.md) or to [`DNSServiceUpdateRecord(_:_:_:_:_:_:)`](./dnsserviceupdaterecord%28_,_,_,_,_,_%29.md). Returns 0 if the TXTRecordRef is empty.
 

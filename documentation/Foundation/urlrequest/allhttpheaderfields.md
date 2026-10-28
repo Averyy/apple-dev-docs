@@ -21,7 +21,7 @@ A dictionary containing all of the HTTP header fields for a request.
 var allHTTPHeaderFields: [String : String]? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Certain header fields are reserved (see [Reserved HTTP headers](../nsurlrequest.md#Reserved-HTTP-headers)). Do not use this property to set such headers.
 

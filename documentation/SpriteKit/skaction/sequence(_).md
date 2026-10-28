@@ -25,11 +25,11 @@ class func sequence(_ actions: [SKAction]) -> SKAction
 + (SKAction *) sequence:(NSArray<SKAction *> *) actions;
 ```
 
-#### Return Value
+## Return Value
 
 A sequence action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the first action in the sequence starts and runs to completion. Subsequent actions in the sequence run in a similar fashion until all of the actions in the sequence have executed. The duration of the sequence action is the sum of the durations of the actions in the sequence.
 

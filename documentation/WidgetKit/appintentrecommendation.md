@@ -25,7 +25,7 @@ struct AppIntentRecommendation<Intent> where Intent : WidgetConfigurationIntent
 - [Migrating ClockKit complications to WidgetKit](./converting-a-clockkit-app.md)
 - [Making a configurable widget](./making-a-configurable-widget.md)
 
-#### Overview
+## Overview
 
 By adding a custom App Intent to your project and using an [`AppIntentTimelineProvider`](./appintenttimelineprovider.md), you allow users to configure widgets to show data that’s most relevant to them. Some platforms don’t have a dedicated user interface to configure all of your intent parameters. For example, watchOS doesn’t offer a dedicated user interface to configure data that appears on a complication. Use intent recommendations in watchOS to offer preconfigured complications that show data that’s most relevant to the user.
 

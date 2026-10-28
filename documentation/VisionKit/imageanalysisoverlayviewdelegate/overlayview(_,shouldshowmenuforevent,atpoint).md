@@ -17,11 +17,11 @@ Provides a Boolean value that indicates whether the overlay view shows a menu fo
 func overlayView(_ overlayView: ImageAnalysisOverlayView, shouldShowMenuForEvent event: NSEvent, atPoint point: CGPoint) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the menu appears in the overlay; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 Implement this method if you don’t want the overlay view to show a menu for a specific event at a location. The default return value is `true`.
 

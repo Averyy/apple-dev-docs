@@ -25,7 +25,7 @@ static let adjustable: UIAccessibilityTraits
 extern const UIAccessibilityTraits UIAccessibilityTraitAdjustable;
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait to characterize an accessibility element that users can adjust in a continuous manner, such as a slider or a picker view. If you specify this trait on an accessibility element, you must also implement the [`accessibilityIncrement()`](../../ObjectiveC/nsobject-swift.class/accessibilityincrement%28%29.md) and [`accessibilityDecrement()`](../../ObjectiveC/nsobject-swift.class/accessibilitydecrement%28%29.md) methods in the `UIAccessibilityAction` protocol.
 

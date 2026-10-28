@@ -27,7 +27,7 @@ var norm_type: Float
 float norm_type;
 ```
 
-#### Discussion
+## Discussion
 
 If `max_norm` is nonzero, this value specifies the p-norm where `p = norm_type`.
 

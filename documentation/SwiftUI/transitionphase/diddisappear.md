@@ -21,7 +21,7 @@ The transition is being applied to a view that has been requested to be removed 
 case didDisappear
 ```
 
-#### Discussion
+## Discussion
 
 In this phase, a transition should show the appearance that will be animated to make the disappearance transition.
 

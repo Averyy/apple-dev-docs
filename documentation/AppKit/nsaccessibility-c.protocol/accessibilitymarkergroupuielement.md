@@ -15,7 +15,7 @@ The user interface element that functions as a marker group for the ruler access
 @property (strong, nullable) id accessibilityMarkerGroupUIElement;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property on a ruler element.
 

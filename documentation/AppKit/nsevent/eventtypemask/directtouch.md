@@ -19,7 +19,7 @@ static var directTouch: NSEvent.EventTypeMask { get }
 NSEventMaskDirectTouch
 ```
 
-#### Discussion
+## Discussion
 
 Use this mask to filter out [`NSEvent.EventType.directTouch`](../eventtype/directtouch.md) events.
 

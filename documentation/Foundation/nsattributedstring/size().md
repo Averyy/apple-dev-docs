@@ -25,11 +25,11 @@ func size() -> CGSize
 - (CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 The minimum size required to draw the entire contents of the string.
 
-#### Discussion
+## Discussion
 
 You can use this method prior to drawing to compute how much space is required to draw the string.
 

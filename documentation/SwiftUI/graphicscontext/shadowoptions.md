@@ -22,7 +22,7 @@ Options that configure the graphics context filter that creates shadows.
 struct ShadowOptions
 ```
 
-#### Overview
+## Overview
 
 You can use a set of these options when you call [`shadow(color:radius:x:y:blendMode:options:)`](./filter/shadow%28color,radius,x,y,blendmode,options%29.md) to create a [`GraphicsContext.Filter`](./filter.md) that adds a drop shadow to an object that you draw into a [`GraphicsContext`](../graphicscontext.md).
 

@@ -10,7 +10,7 @@ virtual UInt16 GetProductID(
  void);
 ```
 
-#### Overview
+## Overview
 
 returns the Product ID of the device
 

@@ -20,7 +20,7 @@ Options that determine whether an animation switches between frames gradually or
 enum TweenMode
 ```
 
-#### Overview
+## Overview
 
 This enumeration declares the options for a sampled animation’s [`tweenMode`](./sampledanimation/tweenmode.md). The gradual or abrupt change, or *interpolation*, refers to the visual behavior that occurs between adjacent values in a sampled animation’s [`frames`](./sampledanimation/frames-2hobp.md).
 

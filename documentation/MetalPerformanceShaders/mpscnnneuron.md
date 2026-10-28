@@ -24,7 +24,7 @@ class MPSCNNNeuron
 @interface MPSCNNNeuron : MPSCNNKernel
 ```
 
-#### Overview
+## Overview
 
 Do not use this class directly; use one of the [`MPSCNNNeuron`](./mpscnnneuron.md) subclasses instead.
 

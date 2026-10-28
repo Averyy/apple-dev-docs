@@ -5,13 +5,13 @@
 
 Create a low-level texture and update its pixel data on the GPU to form a dynamic height and normal map.
 
-#### Overview
+## Overview
 
 A height map is a texture in which each pixel stores height information describing the shape of a surface. You can read height data from a height map to offset the vertices of a mesh, as well as derive the surface normal directions. Generally speaking, height maps are static textures that remain unmodified at runtime; however, by leveraging [`LowLevelTexture`](./lowleveltexture.md), you can create a dynamic height map that you write height data to in every frame on the GPU. Additionally, you can derive surface normals from your height map every time you update it, allowing for a variety of dynamic and interactive effects.
 
 Create a height map with [`LowLevelTexture`](./lowleveltexture.md), and write height data to its alpha channel in every frame by dispatching a Metal compute shader. Derive normal directions from the height map and store them in the red, green, and blue channels of the texture. See [Generating interactive geometry with RealityKit](./generating-interactive-geometry-with-realitykit.md) for an example of how you can dynamically modify the vertices of a low-level mesh with this height and normal map texture.
 
-#### Create a low-level texture
+## Create a low-level texture
 
 Create a height map [`LowLevelTexture`](./lowleveltexture.md) by describing its pixel format, width, height, and usage:
 
@@ -32,7 +32,7 @@ init(dimensions: SIMD2<UInt32>) throws {
 
 Initialize this texture with a pixel format of [MTLPixelFormat.rgba32Float](../Metal/mtlpixelformat/rgba32float.md) so that each pixel in the texture has four 32-bit floats, composing its red, green, blue, and alpha channels. You can store height in the alpha channel, and the surface normal direction in the red, green, and blue channels.
 
-#### Write height data to the low-level texture with a compute shader
+## Write height data to the low-level texture with a compute shader
 
 Write height data to the texture on the GPU by dispatching a Metal compute shader. For example, you can create a height map with waves that oscillate outward from the center of the texture by setting the height of each pixel to the sine of the pixel’s distance from the center:
 
@@ -82,7 +82,7 @@ The following video shows the alpha channel of texture this compute shader funct
 
 [Video: A video of the height map texture the generate sine wave height map compute shader function creates. The texture oscillates from black to white in concentric circles growing outward from the center of the texture over time.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/creating-a-dynamic-height-map-with-low-level-texture-1.mp4)
 
-#### Dispatch the compute shader
+## Dispatch the compute shader
 
 Create a helper method that makes the [MTLComputePipelineState](../Metal/mtlcomputepipelinestate.md) for a given compute shader function:
 
@@ -146,9 +146,9 @@ computeEncoder.setBytes(&amplitude, length: MemoryLayout<Float>.size, index: 3)
 computeEncoder.dispatchThreadgroups(threadgroups, threadsPerThreadgroup: threadsPerThreadgroup)
 ```
 
-See [Performing Calculations on a GPU](../Metal/performing_calculations_on_a_gpu.md) for general information about dispatching Metal shaders, as well as [Passing Metal command objects around your application](./passing-metal-command-objects-around-your-application.md) for specifics on how to obtain the compute encoder, command buffer, and delta time parameters.
+See [Performing Calculations on a GPU](../Metal/performing-calculations-on-a-gpu.md) for general information about dispatching Metal shaders, as well as [Passing Metal command objects around your application](./passing-metal-command-objects-around-your-application.md) for specifics on how to obtain the compute encoder, command buffer, and delta time parameters.
 
-#### Derive surface normals from the height map texture
+## Derive surface normals from the height map texture
 
 You can derive surface normal directions directly from the height map and store them in its red, green, and blue channels.
 

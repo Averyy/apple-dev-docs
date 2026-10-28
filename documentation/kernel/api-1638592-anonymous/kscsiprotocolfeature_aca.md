@@ -13,7 +13,7 @@
 kSCSIProtocolFeature_ACA = 1
 ```
 
-#### Discussion
+## Discussion
 
 Not yet used.
 

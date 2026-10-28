@@ -25,11 +25,11 @@ func indexOfObject(options opts: NSEnumerationOptions = [], passingTest predicat
 - (NSUInteger) indexOfObjectWithOptions:(NSEnumerationOptions) opts passingTest:(BOOL (^)(ObjectType obj, NSUInteger idx, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 The index whose corresponding value in the array passes the test specified by `predicate` and `opts`. If the `opts` bit mask specifies reverse order, then the last item that matches is returned. Otherwise, the index of the first matching object is returned. If no objects in the array pass the test, returns `NSNotFound`.
 
-#### Discussion
+## Discussion
 
 By default, the enumeration starts with the first object and continues serially through the array to the last object. You can specify `NSEnumerationConcurrent` and/or `NSEnumerationReverse` as enumeration options to modify this behavior.
 

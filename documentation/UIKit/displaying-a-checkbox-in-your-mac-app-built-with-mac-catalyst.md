@@ -5,11 +5,11 @@
 
 Present a switch control as a Mac-style checkbox when your app runs in the Mac user interface idiom.
 
-#### Overview
+## Overview
 
 A Mac app built with Mac Catalyst that uses the Mac user interface idiom displays a [`UISwitch`](./uiswitch.md) as a checkbox when the [`preferredStyle`](./uiswitch/preferredstyle.md) value is [`UISwitch.Style.automatic`](./uiswitch/style-swift.enum/automatic.md) (the default value) or [`UISwitch.Style.checkbox`](./uiswitch/style-swift.enum/checkbox.md). If your app doesn’t use the [`UIUserInterfaceIdiom.mac`](./uiuserinterfaceidiom/mac.md) idiom, the switch appears as a slider switch. To learn more, see [Choosing a user interface idiom for your Mac app](./choosing-a-user-interface-idiom-for-your-mac-app.md).
 
-##### Add text to the checkbox
+### Add text to the checkbox
 
 To display text alongside the checkbox, set the [`title`](./uiswitch/title.md) property.
 
@@ -18,7 +18,7 @@ let showFavoritesAtTop = UISwitch()
 showFavoritesAtTop.title = "Always show favorite recipes at the top"
 ```
 
-##### Resize the checkbox
+### Resize the checkbox
 
 A checkbox-style switch has a default frame size of zero. If you’re not using Auto Layout to determine the size and position of the switch, call [`sizeToFit()`](./uiview/sizetofit%28%29.md) to resize it so that it uses the appropriate amount of space needed to display the checkbox and its title.
 

@@ -13,11 +13,11 @@
 typedef errno_t (*iff_input_func)(void *cookie, ifnet_t interface, protocol_family_t protocol, mbuf_t *data, char **frame_ptr);
 ```
 
-#### Return Value
+## Return Value
 
 Return: 0 - The caller will continue with normal processing of the packet. EJUSTRETURN - The caller will stop processing the packet, the packet will not be freed. Anything Else - The caller will free the packet and stop processing.
 
-#### Discussion
+## Discussion
 
 iff_input_func is used to filter incoming packets. The interface is only valid for the duration of the filter call. If you need to keep a reference to the interface, be sure to call ifnet_reference and ifnet_release. The packets passed to the inbound filter are different from those passed to the outbound filter. Packets to the inbound filter have the frame header passed in separately from the rest of the packet. The outbound data filters is passed the whole packet including the frame header.
 

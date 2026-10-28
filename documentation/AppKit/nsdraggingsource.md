@@ -19,7 +19,7 @@ protocol NSDraggingSource : NSObjectProtocol
 @protocol NSDraggingSource <NSObject>
 ```
 
-#### Overview
+## Overview
 
 In macOS 10.7 and later `NSDraggingSource` is now a formal protocol and has an updated interface. The OS X v10.6 behavior has been retained, but will be dropped in a future version of the operating system. The methods that are to be deprecated are marked as such.
 

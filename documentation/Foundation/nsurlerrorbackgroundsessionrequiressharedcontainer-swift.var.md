@@ -21,7 +21,7 @@ The shared container identifier of the URL session configuration is needed but h
 var NSURLErrorBackgroundSessionRequiresSharedContainer: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 To use a [`URLSession`](./urlsession.md) to perform background uploading or downloading in an app extension, you coordinate with the host app using a shared container. The app extension must set the [`sharedContainerIdentifier`](./urlsessionconfiguration/sharedcontaineridentifier.md) of the URL session’s configuration to the shared container’s identifier. See [Performing Uploads and Downloads](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/ExtensionScenarios.html#//apple_ref/doc/uid/TP40014214-CH21-SW2) in [App Extension Essentials](https://developer.apple.com/library/archive/documentation/General/Conceptual/ExtensibilityPG/index.html#//apple_ref/doc/uid/TP40014214-CH4) for more information.
 

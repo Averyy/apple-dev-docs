@@ -24,7 +24,7 @@ protocol UICollectionViewDataSourcePrefetching : NSObjectProtocol
 @protocol UICollectionViewDataSourcePrefetching <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You use a prefetch data source object in conjunction with your collection view’s data source to begin loading data for cells before the [`collectionView(_:cellForItemAt:)`](./uicollectionviewdatasource/collectionview%28_,cellforitemat%29.md) data source method is called.
 
@@ -40,7 +40,7 @@ Follow these steps to add a prefetch data source to your collection view:
 
 For more information, see [`UICollectionView`](./uicollectionview.md).
 
-##### Load data asynchronously
+### Load data asynchronously
 
 The [`collectionView(_:prefetchItemsAt:)`](./uicollectionviewdatasourceprefetching/collectionview%28_,prefetchitemsat%29.md) method isn’t necessarily called for every cell in the collection view. Your implementation of [`collectionView(_:cellForItemAt:)`](./uicollectionviewdatasource/collectionview%28_,cellforitemat%29.md) must therefore be able to cope with the following potential situations:
 

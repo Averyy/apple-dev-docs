@@ -24,7 +24,7 @@ class UITableViewDiffableDataSourceReference
 @interface UITableViewDiffableDataSource : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: If you’re working in a Swift codebase, always use [`UITableViewDiffableDataSource`](./uitableviewdiffabledatasource-2euir.md) instead.
 

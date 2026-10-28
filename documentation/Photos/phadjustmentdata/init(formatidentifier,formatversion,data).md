@@ -24,11 +24,11 @@ init(formatIdentifier: String, formatVersion: String, data: Data)
 - (instancetype) initWithFormatIdentifier:(NSString *) formatIdentifier formatVersion:(NSString *) formatVersion data:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized adjustment object.
 
-#### Discussion
+## Discussion
 
 To uniquely identify the adjustments your app makes, use the `formatIdentifier` and `formatVersion` parameters. These parameters help you determine whether and how to interpret the adjustment data when working with an edited asset later. For best results, use reverse-DNS-style identifiers and monotonically increasing version numbers.
 

@@ -25,11 +25,11 @@ func sel_isMapped(_ sel: Selector) -> Bool
 extern BOOL sel_isMapped(SEL sel);
 ```
 
-#### Return Value
+## Return Value
 
 YES if selector is valid and has a function implementation, NO otherwise.
 
-#### Discussion
+## Discussion
 
 A crash.
 

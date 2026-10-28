@@ -19,7 +19,7 @@ weak var appearanceSource: (any NSAppearanceCustomization)! { get set }
 @property (weak, null_resettable) NSObject<NSAppearanceCustomization> * appearanceSource;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NSApp`](../nsapp.md). The window uses key-value observing to monitor the source’s [`effectiveAppearance`](../nsappearancecustomization/effectiveappearance.md) for changes. Typically, you use this property for child windows shown from a parent window or specific view.
 

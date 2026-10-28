@@ -20,11 +20,11 @@ convenience init(name: String)
 - (instancetype) initWithName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized `NSXMLElement` object or `nil` if initialization did not succeed.
 
-#### Discussion
+## Discussion
 
 The XML string representation of this object is `<``name``></``name``>`. This method invokes [`init(name:uri:)`](./init%28name,uri%29-1r286.md) with the URI parameter set to `nil`.
 

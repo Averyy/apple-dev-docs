@@ -20,7 +20,7 @@ static let dirtyRects: SCStreamFrameInfo
 extern SCStreamFrameInfo const SCStreamFrameInfoDirtyRects;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an array of rectangles that represents a union of the rectangles redrawn and moved.
 

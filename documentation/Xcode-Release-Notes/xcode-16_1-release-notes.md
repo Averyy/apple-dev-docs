@@ -5,36 +5,36 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 16.1 includes SDKs for iOS 18.1, iPadOS 18.1, tvOS 18.1, watchOS 11.1, macOS Sequoia 15.1, and visionOS 2.1. The Xcode 16.1 release supports on-device debugging in iOS 15 and later, tvOS 15 and later, watchOS 7 and later, and visionOS. Xcode 16.1 requires a Mac running macOS Sonoma 14.5 or later.
 
-##### General
+### General
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Users that upgrade to Xcode 16 after having previously installed Xcode 16 Beta 6 or Xcode 16 RC may experience Developer Disk Image mounting errors when using iPhone 16 or Apple Watch Series 10 devices.  (136364979) (FB15189777)
 
-###### Deprecations
+#### Deprecations
 
-- The simulator runtimes are currently available on the Apple Developer website, but will no longer be posted through the website in future updates.  Please use `xcodebuild -downloadPlatform <platform> -exportPath <path>` command to download the runtime and then `xcodebuild -importPlatform <path/simruntime.dmg>` to install it.  For more details, see [Installing and managing Simulator runtimes](../Xcode/installing-additional-simulator-runtimes.md).  (133776444)
+- The simulator runtimes are currently available on the Apple Developer website, but will no longer be posted through the website in future updates.  Please use `xcodebuild -downloadPlatform <platform> -exportPath <path>` command to download the runtime and then `xcodebuild -importPlatform <path/simruntime.dmg>` to install it.  For more details, see [Installing and managing Simulator runtimes](../Xcode/downloading-and-installing-additional-xcode-components.md).  (133776444)
 
-##### App Distribution
+### App Distribution
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Some iOS apps built with Xcode 16.1 beta may have their watchOS apps uninstall or fail to launch with an error about needing an iPhone App when one already exists.  (135527507)
 
-##### Camera Control
+### Camera Control
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Launching app via Camera Control button without Camera permission can result in completely black unlock screen  (133409619)
 - Fixed: Installing an app with a Capture Extension while another Camera Control app is already selected might cause a momentary system crash.  (135021680)
 
-##### Interface Builder
+### Interface Builder
 
-###### New Features
+#### New Features
 
 - Xcodebuild’s download platforms command now supports an optional -buildVersion  argument to request a specific released simulator runtime. The  can be a build update number or the release number. Simulator runtime version that are supported versions are iOS 16.0+, watchOS 9.0+, tvOS 16+, visionOS 1.0+.
 
@@ -42,51 +42,51 @@ Xcode 16.1 includes SDKs for iOS 18.1, iPadOS 18.1, tvOS 18.1, watchOS 11.1, mac
 
   xcodebuild -downloadPlatform iOS -buildVersion 16.0 -exportPath  ./SimRuntimeImages/ xcodebuild -downloadPlatform iOS -buildVersion 20A360 -exportPath  ./SimRuntimeImages/  (135989441) (FB15126412)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: New and existing trait variations targeting 42mm watches are only applied on Series 10. Functionality to target Series 3 or older watches is missing.  (136342368) (FB15185073)
 
-###### Known Issues
+#### Known Issues
 
 - Custom app fonts may fail to be listed at the top of the custom fonts list in the Interface Builder inspector.  (100908086) (FB11662082)
 
   **Workaround:** Restarting Xcode will force this list to be recreated.
 - IBInspectable properties are no longer accessible in Interface Builder. Current values in IB Documents are still compiled into the NIBs and used at runtime.  (135140474) (FB15011501)
 
-##### Localization
+### Localization
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Resolved a hang that could occur in the String Catalog Editor shortly after opening the file or building the project.  (134611283) (FB14906651)
 
-##### LockedCameraCapture
+### LockedCameraCapture
 
-###### Known Issues
+#### Known Issues
 
 - Logging does not appear in Xcode when debugging Capture Extensions when using “Attach to Process”.  (129785280)
 
   **Workaround:** Use “Attach to Process by PID or Name” in Xcode to debug Capture Extensions.
 
-##### Previews
+### Previews
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Previews could have failed when specifying “@” relative paths in linker arguments.  (127267024)
 - Fixed: Some complex projects would time out when trying to launch a Preview.  (133734391) (FB14777005)
 - Fixed: Previews could fail to find frameworks used by static libraries built with `libtool`.  (133937490) (FB14810092)
 - Fixed: Previews would periodically fail with PreviewShell crash reports during preview teardown.  (136227462)
 
-##### Simulator
+### Simulator
 
-###### Known Issues
+#### Known Issues
 
 - On Simulator.app launch with visionOS device, “Simulated Scenes” Control for visionOS can be disabled   (136714857)
 
   **Workaround:** Device Restart or Simulator.app restart
 
-##### Testing
+### Testing
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Screen recordings will not be available when running UI tests using a scheme with a space in its name, or when producing an .xcresult bundle with a space in its path.  (122016656)
 - Fixed: Expectation checking in Swift Testing is significantly slower than expected.  (133517028)

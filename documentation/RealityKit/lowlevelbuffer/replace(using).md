@@ -20,7 +20,7 @@ Retrieve an MTLBuffer that can be used to replace the contents of the buffer on 
 final func replace(using commandBuffer: any MTLCommandBuffer) -> any MTLBuffer
 ```
 
-#### Discussion
+## Discussion
 
 The buffer’s contents are in an uninitialized state.
 

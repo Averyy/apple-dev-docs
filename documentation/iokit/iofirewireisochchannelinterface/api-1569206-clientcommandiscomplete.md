@@ -14,7 +14,7 @@
 void (*ClientCommandIsComplete)(IOFireWireLibIsochChannelRef self, FWClientCommandID commandID, IOReturn status);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

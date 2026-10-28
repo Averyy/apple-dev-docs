@@ -28,7 +28,7 @@ var timestamp: CFTimeInterval { get }
 
 - [Optimizing iPhone and iPad apps to support ProMotion displays](../optimizing-iphone-and-ipad-apps-to-support-promotion-displays.md)
 
-#### Discussion
+## Discussion
 
 If you need to calculate what to display next, use [`targetTimestamp`](./targettimestamp.md) instead.
 

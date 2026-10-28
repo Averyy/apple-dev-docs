@@ -20,7 +20,7 @@ var allowsAccessibilityVoiceControl: Bool { get set }
 @property (nonatomic, assign) BOOL allowsAccessibilityVoiceControl;
 ```
 
-#### Discussion
+## Discussion
 
 Users can enable Voice Control in the Settings app (Accessibility > Voice Control) to control their device using voice commands. An assessment session **does not** disable Voice Control by default, but you can disable it by setting [`allowsAccessibilityVoiceControl`](./allowsaccessibilityvoicecontrol.md) to `NO` in the [`AEAssessmentConfiguration`](../aeassessmentconfiguration.md) instance that you use to initialize a session.
 

@@ -14,7 +14,7 @@
 #define kUSBDeviceClass
 ```
 
-#### Discussion
+## Discussion
 
 The field in the USB Device Descriptor corresponding to the device class
 

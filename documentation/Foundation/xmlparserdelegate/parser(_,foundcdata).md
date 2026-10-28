@@ -25,7 +25,7 @@ optional func parser(_ parser: XMLParser, foundCDATA CDATABlock: Data)
 - (void) parser:(NSXMLParser *) parser foundCDATA:(NSData *) CDATABlock;
 ```
 
-#### Discussion
+## Discussion
 
 Through this method the parser object passes the contents of the block to its delegate in an [`NSData`](../nsdata.md) object. The CDATA block is character data that is ignored by the parser. The encoding of the character data is UTF-8. To convert the data object to a string object, use the `NSString` method [`init(data:encoding:)`](../nsstring/init%28data,encoding%29.md).
 

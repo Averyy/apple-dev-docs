@@ -22,7 +22,7 @@ let kCFProxyUsernameKey: CFString
 extern CFStringRef const kCFProxyUsernameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The username to be used when contacting the proxy. This key is only present if the username can be determined from the information passed in. (External credential stores such as the keychain are not consulted.)
 

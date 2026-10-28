@@ -24,7 +24,7 @@ let kVTPixelTransferPropertyKey_DestinationPixelAspectRatio: CFString
 extern CFStringRef const kVTPixelTransferPropertyKey_DestinationPixelAspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CFDictionary`](../CoreFoundation/cfdictionary.md) object with same keys as used in the [`kCVImageBufferPixelAspectRatioKey`](../CoreVideo/kcvimagebufferpixelaspectratiokey.md) dictionary.
 

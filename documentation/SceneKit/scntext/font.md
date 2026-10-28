@@ -41,7 +41,7 @@ var font: NSFont! { get set }
 @property (nonatomic, retain, null_resettable) NSFont * font;
 ```
 
-#### Discussion
+## Discussion
 
 If the text geometry’s [`string`](./string.md) property is an [`NSString`](../../Foundation/nsstring.md) object, SceneKit uses this font to render the entire text. If the [`string`](./string.md) property is an an [`NSAttributedString`](../../Foundation/nsattributedstring.md) object, SceneKit uses this font for any portions of the string not containing style attributes.
 

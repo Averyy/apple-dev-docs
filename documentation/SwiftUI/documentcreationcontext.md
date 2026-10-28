@@ -19,7 +19,7 @@ Context about how a document was created.
 struct DocumentCreationContext
 ```
 
-#### Overview
+## Overview
 
 SwiftUI passes this to the `makeDocument` closure of [`DocumentGroup`](./documentgroup.md). Use [`creationSource`](./documentcreationcontext/creationsource.md) to determine which [`NewDocumentButton`](./newdocumentbutton.md) the person tapped and configure the document accordingly:
 

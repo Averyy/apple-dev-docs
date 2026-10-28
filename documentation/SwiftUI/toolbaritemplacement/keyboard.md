@@ -18,7 +18,7 @@ A placement for items in the keyboard section.
 static let keyboard: ToolbarItemPlacement
 ```
 
-#### Discussion
+## Discussion
 
 On iOS, keyboard items are above the software keyboard when present, or at the bottom of the screen when a hardware keyboard is attached.
 

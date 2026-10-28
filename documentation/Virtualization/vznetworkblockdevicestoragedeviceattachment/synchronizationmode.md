@@ -19,7 +19,7 @@ var synchronizationMode: VZDiskSynchronizationMode { get }
 @property (readonly) VZDiskSynchronizationMode synchronizationMode;
 ```
 
-#### Discussion
+## Discussion
 
 See [`VZDiskSynchronizationMode`](../vzdisksynchronizationmode.md) for details on how the specific mode affects data synchronization between the NBD client and server.
 

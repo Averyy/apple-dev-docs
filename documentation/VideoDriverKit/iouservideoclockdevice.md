@@ -15,7 +15,7 @@ A clock device.
 class IOUserVideoClockDevice;
 ```
 
-#### Overview
+## Overview
 
 [`IOUserVideoClockDevice`](./iouservideoclockdevice.md) handles the necessary configurations to be able to run IO.
 

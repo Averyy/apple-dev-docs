@@ -5,7 +5,7 @@
 
 Identify common configurations that make your In-App Purchases unavailable in the sandbox environment.
 
-#### Overview
+## Overview
 
 When testing your In-App Purchases in the Apple sandbox environment, your app may not display its products. After [submitting your In-App Purchases](https://developer.apple.com/help/app-store-connect/manage-submissions-to-app-review/submit-for-review#submit-an-in-app-purchase) to App Review, they might also be missing or unresponsive during review. The sandbox environment is a test environment for testing the In-App Purchase implementation in your app with real product data from App Store Connect. TestFlight also uses the sandbox for In-App Purchases. StoreKit queries App Store Connect for this data when your app calls StoreKit APIs in the sandbox. For more information, see [Testing In-App Purchases with sandbox](../StoreKit/testing-in-app-purchases-with-sandbox.md).
 
@@ -27,7 +27,7 @@ After you complete the above checks, retry the product request. If the In-App Pu
 
 > **Note**: If your app fails to display its products when testing In-App Purchases in Xcode, or when launching the app in the App Store, see [TN3185: Troubleshooting In-App Purchases availability in Xcode](./tn3185-troubleshooting-in-app-purchases-availability-in-xcode.md) and [TN3188: Troubleshooting In-App Purchases availability in the App Store](./tn3188-troubleshooting-in-app-purchases-availability-in-the-app-store.md), respectively.
 
-#### Validate your product identifier list
+## Validate your product identifier list
 
 To verify your product identifier list, perform these steps:
 
@@ -35,13 +35,13 @@ To verify your product identifier list, perform these steps:
 2. In App Store Connect, find the app that matches your app’s bundle ID.
 3. Verify each product identifier in your list matches the product identifier (`Product ID`) of an In-App Purchase created for the app in App Store Connect.
 
-#### Identify the test environment
+## Identify the test environment
 
 Apple provides test environments in Xcode and the Apple sandbox to help you verify your implementation of In-App Purchases. For more information, see [Testing at all stages of development with Xcode and the sandbox](../StoreKit/testing-at-all-stages-of-development-with-xcode-and-the-sandbox.md).
 
 If your Xcode project contains a [StoreKit Configuration file](../Xcode/setting-up-storekit-testing-in-xcode.md), ensure you are testing your In-App Purchases in the environment you wish to use. [Disable StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md) in your Xcode project to test in the sandbox. [Enable StoreKit Testing in Xcode](../Xcode/setting-up-storekit-testing-in-xcode.md) to test in Xcode local test environment.
 
-#### Use a bundle ID registered in App Store Connect and enabled for In-App Purchase
+## Use a bundle ID registered in App Store Connect and enabled for In-App Purchase
 
 Testing your In-App Purchases in the sandbox requires that your app uses a [bundle ID](../BundleResources/information-property-list/cfbundleidentifier.md) registered in App Store Connect and enabled for In-App Purchase in [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources). A bundle ID uniquely identifies your app throughout the system, for example, a bundle ID like `com.example` uniquely identifies an app using the bundle ID `com.example.myapp` and you are guaranteed that no other apps are using that same bundle ID. You register a bundle ID for your app when you [create an App Store Connect record](https://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app) for the app. App Store Connect displays the registered bundle ID under the App Information section of your app. In your Xcode project, the bundle ID appears in the [Signing & Capabilities pane](../Xcode/preparing-your-app-for-distribution.md) of your app’s target. Confirm the bundle ID in your Xcode project matches the bundle ID you have registered for your app.
 
@@ -49,7 +49,7 @@ After you confirm your Xcode project uses a registered bundle ID, verify you hav
 
 > **Note**: In Certificates, Identifiers & Profiles, you can register an explicit App ID or a wildcard App ID for your app. An explicit App ID contains the full path of a bundle ID such as `com.example`. A wildcard App ID contains an asterisk as the last part of its bundle ID search string, for example, `com.example.myapp.*`. For more information, see [Register an App ID](https://developer.apple.com/help/account/identifiers/register-an-app-id). The In-App Purchase capability appears enabled by default for an explicit App ID and disabled for a wildcard App ID. In the sandbox, you can’t test In-App Purchase with a provisioning profile that contains a wildcard App ID.
 
-#### Sign your app with a valid certificate and provisioning profile
+## Sign your app with a valid certificate and provisioning profile
 
 To use In-App Purchases in your app, you must sign your app with a provisioning profile that grants the app access to the In-App Purchase capability. For more information, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md). A provisioning profile contains App ID and capabilities information. Inspect your provisioning profile, confirm the value of App ID matches your registered [bundle ID](../BundleResources/information-property-list/cfbundleidentifier.md) and capabilities includes In-App Purchase. To view the content of your provisioning profile, see [Check Your Provisioning Profile](../BundleResources/diagnosing-issues-with-entitlements.md) in [Diagnosing Issues with Entitlements](../BundleResources/diagnosing-issues-with-entitlements.md).
 
@@ -57,7 +57,7 @@ To use In-App Purchases in your app, you must sign your app with a provisioning 
 
 Use [automatic signing](https://help.apple.com/xcode/mac/current/#/dev80cc24546) to allow Xcode to manage code signing for you. For more information, see [Configure code signing](../Xcode/distributing-your-app-to-registered-devices.md).
 
-#### Review your Apple Developer Program membership
+## Review your Apple Developer Program membership
 
 To build apps with advanced capabilities such as In-App Purchase, you must have an active developer account. For more information, see [Choosing a Membership](https://developer.apple.com/support/compare-memberships). The following table lists reasons why your account might be inactive:
 
@@ -66,7 +66,7 @@ To build apps with advanced capabilities such as In-App Purchase, you must have 
 | The developer account expired. | Your [Account Holder](https://developer.apple.com/help/account/access/roles) must renew membership, accept the Paid Apps Agreement again, and update tax and banking information. For more information, see [Expired memberships](https://developer.apple.com/help/account/membership/renewal). |
 | The most recent version of the Apple Developer Program Licence Agreement is available and unsigned. | Your [Account Holder](https://developer.apple.com/help/account/access/roles) must accept the latest version of the Apple Developer Program Licence Agreement. |
 
-#### Ensure you have a Paid Apps Agreement in effect
+## Ensure you have a Paid Apps Agreement in effect
 
 To offer In-App Purchases in your app, you must have a [Paid Apps Agreement](https://developer.apple.com/help/app-store-connect/manage-agreements/sign-and-update-agreements) in effect in App Store Connect. The agreement is in effect if App Store Connect shows an `Active` status in its Agreements section. For more information about the statuses, see [View agreements status](https://developer.apple.com/help/app-store-connect/manage-agreements/view-agreements-status). The following table lists reasons why your Paid Apps Agreement might not be in effect:
 
@@ -76,17 +76,17 @@ To offer In-App Purchases in your app, you must have a [Paid Apps Agreement](htt
 | The most recent version of the Paid Apps Agreement is available and unsigned. | Your [Account Holder](https://developer.apple.com/help/account/access/roles) must accept the latest version of the Paid Apps Agreement. |
 | The Paid Apps Agreement expires. | Your [Account Holder](https://developer.apple.com/help/account/access/roles) must renew the Paid Apps Agreement. |
 
-#### Complete all banking and tax information
+## Complete all banking and tax information
 
 After you accept the [Paid Apps Agreement](https://developer.apple.com/help/app-store-connect/manage-agreements/sign-and-update-agreements), your [Account Holder](https://developer.apple.com/help/account/access/roles) needs to submit all required banking and tax information. The banking and tax information are complete if App Store Connect shows an `Active` status in its Bank Accounts and Tax Forms sections, respectively. For more information, see [Manage banking information](https://developer.apple.com/help/app-store-connect/manage-banking-information/enter-banking-information), [Manage tax information](https://developer.apple.com/help/app-store-connect/manage-tax-information/provide-tax-information), and [View agreements status](https://developer.apple.com/help/app-store-connect/manage-agreements/view-agreements-status).
 
 After you renew the developer membership, check if your Account Holder needs to accept the Paid Apps Agreement and update the financial information again.
 
-#### Retry your product request later
+## Retry your product request later
 
 When you edit In-App Purchase information in App Store Connect, it can take up to 1 hour for your changes to appear in the sandbox environment. For more information, see [View and edit in-app purchase information](https://developer.apple.com/help/app-store-connect/manage-in-app-purchases/view-and-edit-in-app-purchase-information).
 
-#### Revision History
+## Revision History
 
 - **2025-04-29** First published.
 

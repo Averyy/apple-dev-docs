@@ -15,7 +15,7 @@ Creates a package dependency trait condition.
 static func when(traits: Set<String>) -> Package.Dependency.Trait.Condition?
 ```
 
-#### Discussion
+## Discussion
 
 If the depending package enables any of the traits you provide, the package manager enables the dependency to which this condition applies.
 

@@ -25,7 +25,7 @@ func NSSearchPathForDirectoriesInDomains(_ directory: FileManager.SearchPathDire
 extern NSArray<NSString *> *NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory directory, NSSearchPathDomainMask domainMask, BOOL expandTilde);
 ```
 
-#### Discussion
+## Discussion
 
 Creates a list of path strings for the specified directories in the specified domains. The list is in the order in which you should search the directories. If `expandTilde` is [`true`](../Swift/true.md), tildes are expanded as described in [`expandingTildeInPath`](./nsstring/expandingtildeinpath.md).
 

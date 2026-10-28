@@ -18,7 +18,7 @@ var kDADiskDescriptionWatchVolumePath: Unmanaged<CFArray>
 extern CFArrayRef kDADiskDescriptionWatchVolumePath;
 ```
 
-#### Discussion
+## Discussion
 
 Predefined CFArray object containing a set of disk description keys appropriate for watching volume mount changes using DARegisterDiskDescriptionChangedCallback().
 

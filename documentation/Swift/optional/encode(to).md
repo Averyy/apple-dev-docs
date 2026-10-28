@@ -23,7 +23,7 @@ func encode(to encoder: any Encoder) throws
 
 Available when `Wrapped` conforms to `Encodable`.
 
-#### Discussion
+## Discussion
 
 This function throws an error if any values are invalid for the given encoder’s format.
 

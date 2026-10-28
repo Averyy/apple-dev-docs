@@ -24,7 +24,7 @@ var baseColor: MDLMaterialProperty { get }
 @property (nonatomic, retain, readonly) MDLMaterialProperty * baseColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default base color is medium gray (50% white).
 

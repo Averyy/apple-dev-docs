@@ -21,11 +21,11 @@ Creates a unidirectional data channel, which can be used for interprocess commun
 static func pipe(options: FileDescriptor.PipeOptions) throws(Errno) -> (readEnd: FileDescriptor, writeEnd: FileDescriptor)
 ```
 
-#### Return Value
+## Return Value
 
 The pair of file descriptors.
 
-#### Discussion
+## Discussion
 
 The corresponding C function is `pipe2`.
 

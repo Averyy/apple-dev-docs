@@ -21,7 +21,7 @@ func accessibilitySetValue(_ value: Any?, forAttribute attribute: NSAccessibilit
 - (void) accessibilitySetValue:(id) value forAttribute:(NSAccessibilityAttributeName) attribute;
 ```
 
-#### Discussion
+## Discussion
 
 User interface classes must implement this method if any of its attributes are settable. Subclasses should invoke the superclass’s implementation, if it exists, if `attribute` is not implemented in the subclass.
 

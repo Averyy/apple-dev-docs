@@ -22,7 +22,7 @@ struct PHASEAutomaticHeadTrackingFlags
 enum PHASEAutomaticHeadTrackingFlags : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Automatic Head-Tracking flags.
 

@@ -22,7 +22,7 @@ nonisolated
 func lineSpacing(_ lineSpacing: CGFloat) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use `lineSpacing(_:)` to set the amount of spacing from the bottom of one line to the top of the next for text elements in the view.
 

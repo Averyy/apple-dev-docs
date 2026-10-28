@@ -15,7 +15,7 @@ static void sSetUserClientExclusivityState (
  boolstate );
 ```
 
-#### Overview
+## Overview
 
 The sSetUserClientExclusivityState method is a static function used as C->C++ glue for going behind the command gate.
 

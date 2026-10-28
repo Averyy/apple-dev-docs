@@ -25,7 +25,7 @@ func CGImageSourceCreateImageAtIndex(_ isrc: CGImageSource, _ index: Int, _ opti
 extern CGImageRefCGImageSourceCreateImageAtIndex(CGImageSourceRef isrc, size_t index, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 The image at the specified index, or `NULL` if an error occurs. You’re responsible for releasing the returned object using [`CGImageRelease`](../CoreGraphics/cgimagerelease.md).
 

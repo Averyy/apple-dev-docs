@@ -17,7 +17,7 @@ Creates a metadata value from string interpolation.
 init(stringInterpolation: StringInterpolation)
 ```
 
-#### Discussion
+## Discussion
 
 If any interpolation segment specified attributes, the result is `.stringConvertible(AttributedStringCarrier(...))`. Otherwise, `.string(...)`.
 

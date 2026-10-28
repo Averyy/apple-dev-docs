@@ -21,7 +21,7 @@ A property wrapper that notifies the system that a property value change has inv
 struct Invalidating<Value, InvalidationType> where Value : Equatable, InvalidationType : UIViewInvalidating
 ```
 
-#### Overview
+## Overview
 
 Use this wrapper when a change in the property value invalidates the display, layout, configuration, constraints, or intrinsic sizing of a view. This wrapper performs any actions necessary to notify the system that your view is invalid and requires an update. The actions depend on the invalidation types you specify. For more information on available invalidation types, see [`UIViewInvalidating`](../uiviewinvalidating.md).
 

@@ -25,11 +25,11 @@ func object_getIvar(_ obj: Any?, _ ivar: Ivar) -> Any?
 extern idobject_getIvar(id obj, Ivar ivar);
 ```
 
-#### Return Value
+## Return Value
 
 The value of the instance variable specified by `ivar`, or `nil` if `object` is `nil`.
 
-#### Discussion
+## Discussion
 
 [`object_getIvar(_:_:)`](./object_getivar%28_,_%29.md) is faster than [`object_getInstanceVariable`](./object_getinstancevariable.md) if the Ivar for the instance variable is already known.
 

@@ -15,13 +15,13 @@ The standard request body used across all query endpoints, supporting filters, s
 object QueryRequest
 ```
 
-#### Discussion
+## Discussion
 
 The `QueryRequest` object is the standard request body used across all query endpoints in the Apple Ads Platform API.
 
 To filter on fields marked **Filterable** in each entity’s dictionary keys, use `QueryFilter` entries. The query combines multiple filters with logical AND.
 
-##### Example
+### Example
 
 ```json
 {

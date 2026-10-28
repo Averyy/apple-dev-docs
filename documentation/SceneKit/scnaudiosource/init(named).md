@@ -25,11 +25,11 @@ convenience init?(named fileName: String)
 + (instancetype) audioSourceNamed:(NSString *) fileName;
 ```
 
-#### Return Value
+## Return Value
 
 An audio source object.
 
-#### Discussion
+## Discussion
 
 This method looks in the system caches for an audio source with the specified name and returns that object if it exists. If a matching audio source is not already in the cache, this method locates the audio file with the specified name in the application’s main bundle, then creates a new audio source and caches it for reuse.
 

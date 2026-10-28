@@ -28,7 +28,7 @@ func endCurrentActivity(on date: Date)
 
 - [Dividing a HealthKit workout into activities](../dividing-a-healthkit-workout-into-activities.md)
 
-#### Discussion
+## Discussion
 
 This method asynchronously ends the current activity. HealthKit calls the session delegate’s [`workoutSession(_:didEndActivityWith:date:)`](../hkworkoutsessiondelegate/workoutsession%28_,didendactivitywith,date%29.md) method after the activity ends. HealthKit stops collecting data related to this activity.
 

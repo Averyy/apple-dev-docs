@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_AspectRatio16x9: CFString
 extern CFStringRef const kVTCompressionPropertyKey_AspectRatio16x9;
 ```
 
-#### Discussion
+## Discussion
 
 This property is supported by the DV25/50 family of encoders.
 

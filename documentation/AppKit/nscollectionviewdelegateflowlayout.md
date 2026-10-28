@@ -19,7 +19,7 @@ protocol NSCollectionViewDelegateFlowLayout : NSCollectionViewDelegate
 @protocol NSCollectionViewDelegateFlowLayout <NSCollectionViewDelegate>
 ```
 
-#### Overview
+## Overview
 
 Implement the methods of this protocol when you want to customize the layout behavior and perhaps return different values for different items or sections.
 

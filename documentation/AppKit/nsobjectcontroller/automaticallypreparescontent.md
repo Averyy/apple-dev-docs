@@ -19,7 +19,7 @@ var automaticallyPreparesContent: Bool { get set }
 @property BOOL automaticallyPreparesContent;
 ```
 
-#### Discussion
+## Discussion
 
 If `flag` is [`true`](../../Swift/true.md) and the receiver is not using a managed object context, [`prepareContent()`](./preparecontent%28%29.md) is used to create the content object. If `flag` is [`true`](../../Swift/true.md) and a managed object context is set, the initial content is fetched from the managed object context using the current fetch predicate. The default is [`false`](../../Swift/false.md).
 

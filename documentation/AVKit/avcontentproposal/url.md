@@ -19,7 +19,7 @@ var url: URL? { get set }
 @property (nonatomic, strong, readwrite, nullable) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property value to initialize a new [`AVPlayerItem`](../../AVFoundation/avplayeritem.md) to play when the user accepts the content proposal. If the value of this property is `nil`, the [`AVPlayerViewControllerDelegate`](../avplayerviewcontrollerdelegate.md) must handle the content proposal acceptance.
 

@@ -21,7 +21,7 @@ Instruction to render a line from the current location (not currently used).
 HVFPartRenderInstructionAddLine
 ```
 
-#### Discussion
+## Discussion
 
 The `HVFPartRenderParams` union will contain the data for `addPoint`.
 

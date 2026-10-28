@@ -22,7 +22,7 @@ convenience init(toolTip: String)
 + (instancetype) configurationWithToolTip:(NSString *) toolTip;
 ```
 
-#### Discussion
+## Discussion
 
 Create a configuration using this method to show the tooltip when the pointer hovers over any area of the view or control. For example, the following code listing creates a configuration that instructs the view to show the tooltip when the pointer hovers over any area of the view:
 

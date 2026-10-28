@@ -19,11 +19,11 @@ func NSPerformService(_ itemName: String, _ pboard: NSPasteboard?) -> Bool
 extern BOOL NSPerformService(NSString *itemName, NSPasteboard *pboard);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the service was successfully performed or [`false`](../Swift/false.md) if it was not.
 
-#### Discussion
+## Discussion
 
 Use this function to programmatically invoke a service found in the application’s Services menu.
 

@@ -27,7 +27,7 @@ func completeRegistrationRequest(using credential: ASPasskeyRegistrationCredenti
 - (void) completeRegistrationRequestWithSelectedPasskeyCredential:(ASPasskeyRegistrationCredential *) credential completionHandler:(void (^)(BOOL expired)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The synchronous version of this method calls its completion handler with [`background`](../../Dispatch/dispatchqos/background.md) priority.
 

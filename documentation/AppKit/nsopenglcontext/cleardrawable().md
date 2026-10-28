@@ -21,7 +21,7 @@ func clearDrawable()
 - (void) clearDrawable;
 ```
 
-#### Discussion
+## Discussion
 
 This method disassociates the receiver from any associated `NSView` object. If the receiver is in full-screen or offscreen mode, it exits that mode.
 

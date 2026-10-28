@@ -20,7 +20,7 @@ The linear motion limits along the z-axis.
 var linearMotionAlongZ: PhysicsCustomJoint.MotionLimit
 ```
 
-#### Discussion
+## Discussion
 
 This property sets the limits of `pin1` along the z-axis of `pin0`.
 

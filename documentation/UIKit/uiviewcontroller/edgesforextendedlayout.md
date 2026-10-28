@@ -23,7 +23,7 @@ var edgesForExtendedLayout: UIRectEdge { get set }
 @property (nonatomic, assign) UIRectEdge edgesForExtendedLayout;
 ```
 
-#### Discussion
+## Discussion
 
 Instead of this property, use the safe area of your view to determine which parts of your interface are occluded by other content. For more information, see the [`safeAreaLayoutGuide`](../uiview/safearealayoutguide.md) and [`safeAreaInsets`](../uiview/safeareainsets.md) properties of [`UIView`](../uiview.md).
 

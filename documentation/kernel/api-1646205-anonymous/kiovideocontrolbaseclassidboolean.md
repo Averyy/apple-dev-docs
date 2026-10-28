@@ -13,7 +13,7 @@
 kIOVideoControlBaseClassIDBoolean = 'togl'
 ```
 
-#### Discussion
+## Discussion
 
 The class ID that identifies the boolean control class which is a subclass of the base control class. Boolean controls manipulate on/off switches in the hardware.
 

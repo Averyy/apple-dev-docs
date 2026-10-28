@@ -15,7 +15,7 @@ Customize content in the interface for Siri and Maps.
 - visionOS 1.0+
 - watchOS 3.2+
 
-#### Overview
+## Overview
 
 > **Note**: SiriKit, Intents, and IntentsUI frameworks continue to provide legacy support for Shortcuts actions, widget configuration, and most existing Siri interactions. To implement modern support for these features and integrate your app with Apple Intelligence and Siri AI, use the [App Intents](../AppIntents/AppIntents.md) framework.
 

@@ -25,7 +25,7 @@ func byUnion(with region: SKRegion) -> Self
 - (instancetype) regionByUnionWithRegion:(SKRegion *) region;
 ```
 
-#### Return Value
+## Return Value
 
 A new region whose contents include all points that are included in either region.
 

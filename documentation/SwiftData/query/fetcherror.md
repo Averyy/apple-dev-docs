@@ -22,7 +22,7 @@ An error encountered during the most recent attempt to fetch data.
 @preconcurrency var fetchError: (any Error)? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` unless an fetch attempt failed. It contains the latest error from SwiftData. Access it from Query’s stored property:
 

@@ -6,7 +6,7 @@
 
 A record that indicates the time of the embedded movie to use.
 
-#### Overview
+## Overview
 
 A `MovieMediaTimeRecord` that indicates the time of the embedded movie that should be used. The clip begin atom provides a way to specify that a portion of the beginning of the embedded movie should not be used. If this atom is not present, the beginning of the embedded movie is not changed. Note that this atom does not change the time at which the embedded movie begins playing in the parent movie’s time line. If the time specified in the clip begin atom is greater than the duration of the embedded movie, then the embedded movie will not play at all.
 

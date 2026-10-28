@@ -15,7 +15,7 @@ A Boolean value that determines whether the overlay responds to user interaction
 enabled?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

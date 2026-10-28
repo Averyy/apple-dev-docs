@@ -20,7 +20,7 @@ Starts the incremental segment writing.
 - (void) executePlanWithCompletionHandler:(void (^)(AVComposition *assemblyComposition, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The planner calls the writingSegmentCallbackBlock sequentially, starting with the first segment work, or at the next unfinished segment if resuming a previously suspended session. The completionHandler is called upon failure or success. When called with success (error is nil), this means that all segments for all tracks have been completed. The assemblyComposition will be non-nil and can be used to put the incremental tracks back together. One way to accomplish this is by feeding the assemblyComposition through AVAssetExportSession with the pass-through preset. The client is responsible for combining any other tracks (those that were not eligible for incremental writing), as well as establishing any track references between the incrementally written tracks and the other tracks in the final asset.
 

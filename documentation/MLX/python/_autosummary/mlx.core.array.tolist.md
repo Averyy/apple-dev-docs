@@ -6,16 +6,19 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.ar
 
 # mlx.core.array.tolist
 
-**array.tolist(*self*) → list_or_scalar**
-: Convert the array to a Python [list](https://docs.python.org/3/builtins/stdtypes.html#list).
+```python
+array.tolist(self) → list_or_scalar
+```
 
-Returns:
-The Python list.
+Convert the array to a Python [list](https://docs.python.org/3/builtins/stdtypes.html#list).
+
+**Returns:**
+: The Python list.
 If the array is a scalar then a standard Python scalar is returned.
 If the array has more than one dimension then the result is a nested
 list of lists.
 The value type of the list corresponding to the last dimension is either
 `bool`, `int` or `float` depending on the `dtype` of the array.
 
-Return type:
-[list](https://docs.python.org/3/builtins/stdtypes.html#list)
+**Return type:**
+: [list](https://docs.python.org/3/builtins/stdtypes.html#list)

@@ -21,7 +21,7 @@ case prefersBarItems
 UIVerticalBarCompressionBehaviorPrefersBarItems
 ```
 
-#### Discussion
+## Discussion
 
 The tab bar will compress before bar items when space is constrained.
 

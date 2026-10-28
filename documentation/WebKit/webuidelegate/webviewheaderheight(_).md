@@ -19,11 +19,11 @@ optional func webViewHeaderHeight(_ sender: WebView!) -> Float
 - (float) webViewHeaderHeight:(WebView *) sender;
 ```
 
-#### Return Value
+## Return Value
 
 The height of the web view’s printed page header. Returns `0.0` if no space is reserved for the header.
 
-#### Discussion
+## Discussion
 
 The height returned by this method is used to calculate the rectangle passed to the [`webView(_:drawHeaderIn:)`](./webview%28_,drawheaderin%29.md) method.
 

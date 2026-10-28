@@ -24,7 +24,7 @@ let HMCharacteristicTypeSupportedRTPConfiguration: String
 extern NSString * const HMCharacteristicTypeSupportedRTPConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a TLV8-encoded list of supported RTP parameters and their values.
 

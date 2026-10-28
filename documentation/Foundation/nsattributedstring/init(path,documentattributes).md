@@ -21,11 +21,11 @@ init?(path: String, documentAttributes dict: AutoreleasingUnsafeMutablePointer<N
 - (instancetype) initWithPath:(NSString *) path documentAttributes:(NSDictionary **) dict;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized object, or `nil` if the data can’t be decoded.
 
-#### Discussion
+## Discussion
 
 The contents of `path` will be examined to best load the file in whatever format it’s in. Filter services can be used to convert the file into a format recognized by Cocoa. Also returns by reference in `docAttributes` a dictionary containing document-level attributes described in `Document Attributes`. `docAttributes` may be `NULL`, in which case no document attributes are returned. Returns an initialized object, or `nil` if the file at `path` can’t be decoded.
 

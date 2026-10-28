@@ -22,7 +22,7 @@ weak var delegate: (any NSTouchBarDelegate)? { get set }
 @property (weak, nullable) id<NSTouchBarDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Employ a bar delegate, according to the needs of your app, to dynamically create items ([`NSTouchBarItem`](../nstouchbaritem.md) instances). For more information, see [Item objects](../nstouchbar.md#Item-objects).
 

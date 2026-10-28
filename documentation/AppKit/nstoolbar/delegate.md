@@ -22,7 +22,7 @@ weak var delegate: (any NSToolbarDelegate)? { get set }
 @property (weak, nullable) id<NSToolbarDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Assign an object to this property if you customize the toolbar’s behavior. The object you assign to this property must adopt the [`NSToolbarDelegate`](../nstoolbardelegate.md) protocol.
 

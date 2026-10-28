@@ -27,11 +27,11 @@ init(placemark: MKPlacemark)
 - (instancetype) initWithPlacemark:(MKPlacemark *) placemark;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized map item object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a map item for an existing placemark. Don’t use it to create a map item representing the user’s location. To do that, use the [`forCurrentLocation()`](./forcurrentlocation%28%29.md) method instead.
 

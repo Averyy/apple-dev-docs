@@ -11,9 +11,9 @@ Get the endpoint URL for alternative distribution package notifications.
 
 > **Deprecated**: This endpoint is deprecated.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

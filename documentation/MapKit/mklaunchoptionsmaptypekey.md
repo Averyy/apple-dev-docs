@@ -23,7 +23,7 @@ let MKLaunchOptionsMapTypeKey: String
 extern NSString * const MKLaunchOptionsMapTypeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSNumber`](../Foundation/nsnumber.md) object whose value is an integer corresponding to an [`MKMapType`](./mkmaptype.md) value.
 

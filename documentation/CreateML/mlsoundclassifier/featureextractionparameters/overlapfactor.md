@@ -19,7 +19,7 @@ The proportion of overlap that the feature-extraction session uses to analyze tw
 var overlapFactor: Double
 ```
 
-#### Discussion
+## Discussion
 
 The overlap factor — which must be in the range `[0.0, 1.0)` — affects how much audio data the feature- extraction session analyzes in each file. Sessions with smaller overlap factors read fewer audio data samples and finish in less time but may compromise the model’s prediction accuracy. Sessions with larger overlap factors read more audio samples for each file, which increases the session’s training data and processing time. The additional training data can improve a sound classifier’s accuracy; however, it may only be a modest improvement that isn’t worth the extra processing time.
 

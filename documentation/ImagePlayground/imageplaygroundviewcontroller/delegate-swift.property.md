@@ -20,7 +20,7 @@ The delegate object that receives the generated image and handles events from th
 @objc @preconcurrency weak var delegate: (any ImagePlaygroundViewController.Delegate)?
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property to a custom type you define. The view controller reports relevant interactions to your type using the methods of the [`ImagePlaygroundViewController.Delegate`](./delegate-swift.protocol.md) protocol. For example, the view controller notifies your delegate when the person accepts a generated image.
 

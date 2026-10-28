@@ -19,7 +19,7 @@ var textContainerOrigin: NSPoint { get }
 @property (readonly) NSPoint textContainerOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 Calculated from the receiver’s bounds rectangle, container inset, and the container’s used rect.
 

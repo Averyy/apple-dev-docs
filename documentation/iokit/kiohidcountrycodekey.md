@@ -16,7 +16,7 @@ A key that specifies the country code or region of the device.
 #define kIOHIDCountryCodeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a number that identifies the country or region code stored in the device.
 

@@ -21,7 +21,7 @@ func disableExecution(_ context: (any QCPlugInContext)!)
 - (void) disableExecution:(id<QCPlugInContext>) context;
 ```
 
-#### Discussion
+## Discussion
 
 The Quartz Composer engine calls this method when results are no longer being pulled from the  custom patch. You can optionally override this execution method to perform custom tasks at that time.
 

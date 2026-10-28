@@ -23,7 +23,7 @@ var isExposurePointOfInterestSupported: Bool { get }
 @property (nonatomic, readonly, getter=isExposurePointOfInterestSupported) BOOL exposurePointOfInterestSupported;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value observable.
 

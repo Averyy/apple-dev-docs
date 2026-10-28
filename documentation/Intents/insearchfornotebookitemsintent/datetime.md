@@ -34,7 +34,7 @@ var dateTime: INDateComponentsRange? { get }
 @property (atomic, copy, readonly, nullable) INDateComponentsRange * dateTime;
 ```
 
-#### Discussion
+## Discussion
 
 Use the value in the [`dateSearchType`](./datesearchtype.md) property to determine how to apply the specified date to your search criteria.
 

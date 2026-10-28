@@ -21,7 +21,7 @@ Sets the relevant app intents for the system to suggest.
 final func updateRelevantIntents(_ relevantIntents: [RelevantIntent]) async throws
 ```
 
-#### Discussion
+## Discussion
 
 - Parameter
 

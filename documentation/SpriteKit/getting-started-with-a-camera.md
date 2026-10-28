@@ -5,7 +5,7 @@
 
 Learn the semantics of using a camera in your scene.
 
-#### Overview
+## Overview
 
 `SKCameraNode` defines which portion of a scene is visible on the screen. You must do the following to use a camera:
 

@@ -15,13 +15,13 @@ The payload that configures Conference Room Display mode for Apple TV.
 object ConferenceRoomDisplay
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.conferenceroomdisplay` as the payload type.
 
 Conference Room Display mode locks Apple TV into that mode, to prevent other types of usage.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -33,7 +33,7 @@ Conference Room Display mode locks Apple TV into that mode, to prevent other typ
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

@@ -20,7 +20,7 @@ func delete() throws
 - (BOOL) deleteRecordAndReturnError:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The record should be released after this method is called.
 

@@ -24,7 +24,7 @@ class EAAccessory
 @interface EAAccessory : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`EAAccessory`](./eaaccessory.md) object gives your app information about a single connected hardware accessory. You can use the information in this class to determine whether your app is able to open a session to a given accessory. After you have an open session, you can also associate a custom delegate with the accessory object to be notified to changes in the accessory state. Your delegate must adopt the [`EAAccessoryDelegate`](./eaaccessorydelegate.md) protocol.
 

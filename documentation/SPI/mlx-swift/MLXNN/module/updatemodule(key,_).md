@@ -17,7 +17,7 @@ Set a module to a new value.
 func updateModule(key: String, _ value: Any) throws
 ```
 
-#### Discussion
+## Discussion
 
 The module property must be wrapped in a [`ModuleInfo`](../moduleinfo.md):
 

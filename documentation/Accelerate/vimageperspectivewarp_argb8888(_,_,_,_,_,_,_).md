@@ -29,15 +29,15 @@ vImage_Error vImagePerspectiveWarp_ARGB8888(const vImage_Buffer *src, const vIma
 
 - [Transforming an image in three dimensions](./transforming-an-image-in-three-dimensions.md)
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, a negative value indicates one of the error codes that [Data Types and Constants](./data-types-and-constants.md) describes, and a positive value indicates the required size for the temporary buffer.
 
-#### Discussion
+## Discussion
 
 This function doesn’t work in place, that is, the source and destination buffers need to point to different underlying memory.
 
-##### Optimize performance with temporary buffers
+### Optimize performance with temporary buffers
 
 This function uses a multiple-pass algorithm that saves intermediate pixel values between passes. In some cases, the destination buffer may not be large enough to store that intermediate data, so the operation requires additional storage.
 

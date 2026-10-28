@@ -5,25 +5,25 @@
 
 Learn about changes to the App Store Server Notifications service.
 
-#### Overview
+## Overview
 
 App Store Server Notifications has two versions of notifications. Version 1 notifications and the [`App Store Server Notifications V1`](./app-store-server-notifications-v1.md) endpoint are deprecated. Instead, implement the [`App Store Server Notifications V2`](./app-store-server-notifications-v2.md) endpoint on your server to receive version 2 notifications.
 
 To set up your server to receive notifications, see [Enabling App Store Server Notifications](./enabling-app-store-server-notifications.md). Use this changelog to learn about feature updates, version information, deprecations, and removals for App Store Server Notifications.
 
-##### October 23, 2026
+### October 23, 2026
 
 **New features**
 
 - The `ASSIGNED` value of [`inAppOwnershipType`](./inappownershiptype.md) and the `ASSIGNMENT_REVOKE` value of [`revocationType`](./revocationtype.md) are now available in both the sandbox and production environments, for subscriptions that organizations assign to customers.
 
-##### October 1, 2026
+### October 1, 2026
 
 **New features**
 
 - Updated [`tokenType`](./tokentype.md) to include the `CORE_TECHNOLOGY` token type.
 
-##### September 28, 2026
+### September 28, 2026
 
 **New features**
 
@@ -31,93 +31,93 @@ To set up your server to receive notifications, see [Enabling App Store Server N
 - The App Store sends a `REVOKE` notification when an organization removes a subscription that it assigned to a customer. In this case, the [`revocationType`](./revocationtype.md) in the transaction is `ASSIGNMENT_REVOKE`.
 - The [`quantity`](./quantity.md) field also reports the number of seats for a subscription that a customer buys as a multiseat purchase.
 
-##### April 27, 2026
+### April 27, 2026
 
 **New features**
 
 - Added the following fields to support monthly subscriptions with a 12-month commitment: [`TransactionCommitmentInfo`](./transactioncommitmentinfo.md) and [`billingPlanType`](./billingplantype.md) in [`JWSTransactionDecodedPayload`](./jwstransactiondecodedpayload.md); [`RenewalCommitmentInfo`](./renewalcommitmentinfo.md) and [`renewalBillingPlanType`](./renewalbillingplantype.md) in [`JWSRenewalInfoDecodedPayload`](./jwsrenewalinfodecodedpayload.md).
 
-##### December 10, 2025
+### December 10, 2025
 
 **New features**
 
 - Added the [`revocationType`](./revocationtype.md) and [`revocationPercentage`](./revocationpercentage.md) fields to the [`JWSTransactionDecodedPayload`](./jwstransactiondecodedpayload.md).
 - Added the [`advancedCommercePriceIncreaseInfo`](./advancedcommercepriceincreaseinfo.md) object, and [`advancedCommercePriceIncreaseInfoDependentSKU`](./advancedcommercepriceincreaseinfodependentsku.md), [`advancedCommercePriceIncreaseInfoStatus`](./advancedcommercepriceincreaseinfostatus.md), [`advancedCommercePriceIncreaseInfoPrice`](./advancedcommercepriceincreaseinfoprice.md), fields to the [`JWSRenewalInfoDecodedPayload`](./jwsrenewalinfodecodedpayload.md).
 
-##### November 4, 2025
+### November 4, 2025
 
 **New features**
 
 - Updated the [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md) to include the new payload object, [`appData`](./appdata.md).
 - Added the notification type `RESCIND_CONSENT` to [`notificationType`](./notificationtype.md).
 
-##### October 29, 2025
+### October 29, 2025
 
 **New features**
 
 - Added the `ONE_TIME` value to [`offerDiscountType`](./offerdiscounttype.md) to indicate In-App Purchase offer codes.
 
-##### June 26, 2025
+### June 26, 2025
 
 **New features**
 
 - Added the `ACTIVE_TOKEN_REMINDER` and `CREATED` values to [`subtype`](./subtype.md), which can appear in notifications with an `EXTERNAL_PURCHASE_TOKEN` [`notificationType`](./notificationtype.md).
 - Updated [`externalPurchaseToken`](./externalpurchasetoken.md) to include the new fields [`tokenType`](./tokentype.md) and [`tokenExpirationDate`](./tokenexpirationdate.md).
 
-##### May 27, 2025
+### May 27, 2025
 
 **New features**
 
 - The `ONE_TIME_CHARGE` [`notificationType`](./notificationtype.md) is now available in the production environment.
 
-##### March 24, 2025
+### March 24, 2025
 
 **New features**
 
 - Added the notification types `METADATA_UPDATE` and `MIGRATE` to [`notificationType`](./notificationtype.md).
 - Added the [`previousOriginalTransactionId`](./previousoriginaltransactionid.md) field to the [`JWSTransactionDecodedPayload`](./jwstransactiondecodedpayload.md).
 
-##### February 21, 2025
+### February 21, 2025
 
 **New features**
 
 - Updated the [`JWSRenewalInfoDecodedPayload`](./jwsrenewalinfodecodedpayload.md) and [`JWSTransactionDecodedPayload`](./jwstransactiondecodedpayload.md) to include the new [`appTransactionId`](./apptransactionid.md) and [`offerPeriod`](./offerperiod.md) fields.
 - Updated the [`JWSRenewalInfoDecodedPayload`](./jwsrenewalinfodecodedpayload.md) to include the [`appAccountToken`](./appaccounttoken.md) field.
 
-##### January 17, 2025
+### January 17, 2025
 
 **New features**
 
 - Added support for the [Advanced Commerce API](../AdvancedCommerceAPI/AdvancedCommerceAPI.md).
 
-##### July 8, 2024
+### July 8, 2024
 
 **New features**
 
 - Updated the [`JWSRenewalInfoDecodedPayload`](./jwsrenewalinfodecodedpayload.md) to include the new field [`eligibleWinBackOfferIds`](./eligiblewinbackofferids.md).
 - Added the win-back offer type to [`offerType`](./offertype.md).
 
-##### June 10, 2024
+### June 10, 2024
 
 **New features**
 
 - Added the notification type `ONE_TIME_CHARGE` to [`notificationType`](./notificationtype.md). This notification type is currently available only in the sandbox environment.
 - Added the fields [`renewalPrice`](../AppStoreServerAPI/renewalprice.md), [`currency`](./currency.md), and [`offerDiscountType`](./offerdiscounttype.md) to the [`JWSRenewalInfoDecodedPayload`](./jwsrenewalinfodecodedpayload.md).
 
-##### April 11, 2024
+### April 11, 2024
 
 **New features**
 
 - Added the [`consumptionRequestReason`](./consumptionrequestreason.md) to the [`data`](./data.md) object.
 - The `CONSUMPTION_REQUEST` [`notificationType`](./notificationtype.md) added notifications for refund requests for auto-renewable subscriptions.
 
-##### March 12, 2024
+### March 12, 2024
 
 **New features**
 
 - The type of the [`price`](./price.md) field changed from `int32` to `int64`.
 
-##### February 29, 2024
+### February 29, 2024
 
 **New features**
 
@@ -125,19 +125,19 @@ To set up your server to receive notifications, see [Enabling App Store Server N
 - Updated the [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md) to include the new payload object, [`externalPurchaseToken`](./externalpurchasetoken.md).
 - Added the types [`externalPurchaseId`](./externalpurchaseid.md) and [`tokenCreationDate`](./tokencreationdate.md).
 
-##### January 23, 2024
+### January 23, 2024
 
 **New features**
 
 - Changed the notification type the App Store server sends when a customer redeems a subscription offer for an inactive subscription to the `SUBSCRIBED` [`notificationType`](./notificationtype.md). The App Store server only sends the `OFFER_REDEEMED` notification type when customers redeem an offer on an active subscription.
 
-##### October 26, 2023
+### October 26, 2023
 
 **New features**
 
 - Added new properties in the [`JWSTransactionDecodedPayload`](./jwstransactiondecodedpayload.md) object: [`price`](./price.md), [`currency`](./currency.md), and [`offerDiscountType`](./offerdiscounttype.md).
 
-##### June 5, 2023
+### June 5, 2023
 
 **New features**
 
@@ -151,45 +151,45 @@ To set up your server to receive notifications, see [Enabling App Store Server N
 
 - The [`App Store Server Notifications V1`](./app-store-server-notifications-v1.md) endpoint and version 1 notifications are deprecated. Implement the [`App Store Server Notifications V2`](./app-store-server-notifications-v2.md) endpoint on your server to receive version 2 notifications instead.
 
-##### January 30, 2023
+### January 30, 2023
 
 **New features**
 
 - Added a new notification type for App Store Server Notifications 2 that consists of the [`notificationType`](./notificationtype.md) value `RENEWAL_EXTENSION` and [`subtype`](./subtype.md) values of `SUMMARY` and `FAILURE`. This notification provides information when you extend the subscription renewal date for all active subscribers, based on a product identifier. For more information, see [`Extend Subscription Renewal Dates for All Active Subscribers`](../AppStoreServerAPI/extend-subscription-renewal-dates-for-all-active-subscribers.md) in the [App Store Server API](../AppStoreServerAPI/AppStoreServerAPI.md).
 - Updated the [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md) to include the new [`summary`](./summary.md) object, which appears in the payload for a `RENEWAL_EXTENSION` notification with a `SUMMARY` [`subtype`](./subtype.md).
 
-##### November 7, 2022
+### November 7, 2022
 
 **New features**
 
 - Added the `PRODUCT_NOT_FOR_SALE` [`subtype`](./subtype.md) for the `EXPIRED` [`notificationType`](./notificationtype.md).
 
-##### June 6, 2022
+### June 6, 2022
 
 **New features**
 
 - App Store Server Notifications 2 supports sending a `TEST` notification. For more information, see [`notificationType`](./notificationtype.md), and the endpoints [`Request a Test Notification`](../AppStoreServerAPI/request-a-test-notification.md) and [`Get Test Notification Status`](../AppStoreServerAPI/get-test-notification-status.md) in the [App Store Server API](../AppStoreServerAPI/AppStoreServerAPI.md).
 
-##### May 12, 2022
+### May 12, 2022
 
 **New features**
 
 - In App Store Server Notifications 2, the notification subtype `ACCEPTED` is now sent when the App Store notifies the customer of an auto-renewable subscription price increase that doesn’t require customer consent. This notification subtype is available only in version 2 notifications. For more information, see [`subtype`](./subtype.md).
 
-##### October 21, 2021 - version 2
+### October 21, 2021 - version 2
 
 **New features**
 
 - [`App Store Server Notifications V2`](./app-store-server-notifications-v2.md) is available, and version 1 is still supported. For information about the notifications sent in version 2, see [`notificationType`](./notificationtype.md), `substate`, and [`responseBodyV2`](./responsebodyv2.md).
 - For information about the notifications sent in version 1, see [`notification_type`](./notification_type.md) and [`responseBodyV1`](./responsebodyv1.md) (previously named `responseBody`).
 
-##### March 10, 2021
+### March 10, 2021
 
 **Deprecations**
 
 - In [App Store Server Notifications Version 1](./app-store-server-notifications-version-1.md), the following notification type and top-level objects are deprecated and removed: `RENEWAL,latest_receipt`, `latest_receipt_info`, `latest_expired_receipt`, and `latest_expired_receipt_info`. For more information, see [`responseBodyV1`](./responsebodyv1.md) and [`notification_type`](./notification_type.md).
 
-##### November 21, 2019 - version 1
+### November 21, 2019 - version 1
 
 **New features**
 

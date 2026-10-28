@@ -24,7 +24,7 @@ var inheritBuffers: Bool { get set }
 @property (nonatomic, readwrite) BOOL inheritBuffers;
 ```
 
-#### Discussion
+## Discussion
 
 Always set this property explicitly.
 

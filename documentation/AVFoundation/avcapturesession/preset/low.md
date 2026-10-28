@@ -23,7 +23,7 @@ static let low: AVCaptureSession.Preset
 extern AVCaptureSessionPreset const AVCaptureSessionPresetLow;
 ```
 
-#### Discussion
+## Discussion
 
 Use this preset to achieve output video and audio bitrates suitable for sharing over 3G.
 

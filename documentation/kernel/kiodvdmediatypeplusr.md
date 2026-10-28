@@ -13,7 +13,7 @@
 #define kIODVDMediaTypePlusR
 ```
 
-#### Discussion
+## Discussion
 
 The kIODVDMediaTypeKey constant for DVD "Plus" Recordable (DVD+R) media.
 

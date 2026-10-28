@@ -4,7 +4,7 @@
 
 Create interactive Playground Book based learning experiences for the Swift Playgrounds app.
 
-#### Overview
+## Overview
 
 You may create content for the [Swift Playgrounds](https://www.apple.com/swift/playgrounds/) app by writing playground books. Like traditional books, playground books are made up of chapters and pages. Unlike traditional books, they include executable Swift code that displays the results live, right on the page.
 

@@ -24,7 +24,7 @@ Begins a web authentication session.
 func authenticate(using url: URL, callbackURLScheme: String, preferredBrowserSession: WebAuthenticationSession.BrowserSession? = nil) async throws -> URL
 ```
 
-#### Return Value
+## Return Value
 
 The URL that the authentication provider returns.
 

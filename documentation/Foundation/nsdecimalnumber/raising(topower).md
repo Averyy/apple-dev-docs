@@ -25,11 +25,11 @@ func raising(toPower power: Int) -> NSDecimalNumber
 - (NSDecimalNumber *) decimalNumberByRaisingToPower:(NSUInteger) power;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDecimalNumber` object whose value is the value of the receiver raised to the power `power`.
 
-#### Discussion
+## Discussion
 
 This method uses the default behavior when handling calculation errors and when rounding.
 

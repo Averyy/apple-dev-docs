@@ -21,7 +21,7 @@ Returns a string containing a given number of characters taken from a given C ar
 + (instancetype) stringWithCharacters:(const unichar *) characters length:(NSUInteger) length;
 ```
 
-#### Return Value
+## Return Value
 
 A string containing `length` UTF-16 code units taken (starting with the first) from `chars`.
 

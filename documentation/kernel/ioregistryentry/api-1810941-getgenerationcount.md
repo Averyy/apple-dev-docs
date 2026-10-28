@@ -12,11 +12,11 @@ static SInt32 getGenerationCount(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 An integer generation count.
 
-#### Overview
+## Overview
 
 This method provides an accessor to the current generation count (or seed) of the registry which changes when any topology change occurs in the registry - this does not include property table changes. It may be used to invalidate any caching of the results from IORegistryEntry methods.
 

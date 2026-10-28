@@ -9,21 +9,21 @@ Return the ad accounts and roles accessible to the authenticated API caller.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves a `UserAclListResponse` for the authenticated user. The response contains a `result` object with an `acls` array. Each `UserAcl` entry contains an `adAccount` object and a `roles` array listing the roles the user holds for that account.
 
 To discover which ad accounts an API token can access and what permission level applies, use this endpoint at the start of a session. Each access token binds to exactly one org. The `orgId` on every returned `adAccount` will be the same.
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 ```
 GET /v1/acls
 ```
 
-##### Response
+### Response
 
 ```json
 {

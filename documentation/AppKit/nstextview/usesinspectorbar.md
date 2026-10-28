@@ -19,7 +19,7 @@ var usesInspectorBar: Bool { get set }
 @property BOOL usesInspectorBar;
 ```
 
-#### Discussion
+## Discussion
 
 The inspector bar displays text formatting controls, much like those in iWork applications, which can be used in place of the formatting controls in the ruler accessory view.
 

@@ -22,7 +22,7 @@ nonisolated
 func scrollDisabled(_ disabled: Bool) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to control whether a [`ScrollView`](../scrollview.md) can scroll:
 

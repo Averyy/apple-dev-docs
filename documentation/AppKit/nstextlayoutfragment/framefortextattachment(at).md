@@ -19,11 +19,11 @@ func frameForTextAttachment(at location: any NSTextLocation) -> CGRect
 - (CGRect) frameForTextAttachmentAtLocation:(id<NSTextLocation>) location;
 ```
 
-#### Return Value
+## Return Value
 
 The frame rectangle that describes the text layout fragment.
 
-#### Discussion
+## Discussion
 
 Returns [`CGRectZero`](../../CoreGraphics/cgrectzero.md) if `location` isn’t with any attachment or the state isn’t [`NSTextLayoutFragment.State.layoutAvailable`](./state-swift.enum/layoutavailable.md).
 

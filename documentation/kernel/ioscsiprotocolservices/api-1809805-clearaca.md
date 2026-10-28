@@ -12,11 +12,11 @@ SCSIServiceResponse ClearACA (
  UInt8theLogicalUnit );
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSIServiceResponse.
 
-#### Overview
+## Overview
 
 The Task Management function to clear an Auto-Contingent Allegiance condition.
 

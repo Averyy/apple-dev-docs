@@ -26,7 +26,7 @@ An element of a RealityKit scene to which you attach components that provide app
 - [Improving the Accessibility of RealityKit Apps](./improving-the-accessibility-of-realitykit-apps.md)
 - [Automatically animating RealityKit entities](./automatically-animating-realitykit-entities.md)
 
-#### Overview
+## Overview
 
 You create and configure entities to embody objects that you want to place in the real world in an AR app. You do this by adding [`Entity`](./entity.md) instances to the [`Scene`](./scene.md) instance associated with an [`ARView`](./arview.md).
 

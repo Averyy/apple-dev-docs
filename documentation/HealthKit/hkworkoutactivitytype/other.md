@@ -24,7 +24,7 @@ case other
 HKWorkoutActivityTypeOther
 ```
 
-#### Discussion
+## Discussion
 
 If your app uses the [`HKWorkoutActivityType.swimming`](./swimming.md) or [`HKWorkoutActivityType.other`](./other.md) activity type, you must explain how your app calculates workout data when sensor information is not available. For more information, see the [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/watchos/interaction/workout/).
 

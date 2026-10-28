@@ -28,7 +28,7 @@ extern MTLCommonCounterSet MTLCommonCounterSetTimestamp;
 
 - [Converting a GPU’s counter data into a readable format](../converting-a-gpus-counter-data-into-a-readable-format.md)
 
-#### Discussion
+## Discussion
 
 The [`timestamp`](./timestamp.md) counter set contains the [`timestamp`](../mtlcommoncounter/timestamp.md) counter. Use this name to check whether a GPU device supports the corresponding counter set (see [Confirming which counters and counter sets a GPU supports](../confirming-which-counters-and-counter-sets-a-gpu-supports.md)).
 

@@ -19,7 +19,7 @@ var objectValues: [Any] { get }
 @property (copy, readonly) NSArray * objectValues;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains the objects you added or inserted into the combo box, so the type of each object can vary. Accessing this property logs a warning if the [`usesDataSource`](./usesdatasource.md) property is [`true`](../../Swift/true.md).
 

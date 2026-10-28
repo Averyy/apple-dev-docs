@@ -18,7 +18,7 @@ typealias FFState = UInt32
 typedef UInt32 FFState;
 ```
 
-#### Discussion
+## Discussion
 
 Device state flags returned by **FFDeviceGetForceFeedbackState()**.
 

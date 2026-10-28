@@ -17,7 +17,7 @@ The document’s DHS (U.S. Department of Homeland Security) compliance status.
 static let documentDHSComplianceStatus: MobileDriversLicenseDataRequest.Element
 ```
 
-#### Discussion
+## Discussion
 
 This is also known as the document’s “REAL ID status”.
 

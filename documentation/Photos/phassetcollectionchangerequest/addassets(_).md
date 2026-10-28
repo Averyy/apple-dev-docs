@@ -28,7 +28,7 @@ func addAssets(_ assets: any NSFastEnumeration)
 
 - [Requesting Changes to the Photo Library](../../PhotoKit/requesting-changes-to-the-photo-library.md)
 
-#### Discussion
+## Discussion
 
 If you created the change request with a snapshot of the asset collection’s contents using the [`init(for:assets:)`](./init%28for,assets%29.md) method, Photos inserts the new assets after the existing assets in the collection. Otherwise, the arrangement of the new assets relative to others in the collection is undefined.
 

@@ -19,11 +19,11 @@ init(frame frameRect: NSRect, textContainer container: NSTextContainer?)
 - (instancetype) initWithFrame:(NSRect) frameRect textContainer:(NSTextContainer *) container;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized text view.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for `NSTextView` objects.
 

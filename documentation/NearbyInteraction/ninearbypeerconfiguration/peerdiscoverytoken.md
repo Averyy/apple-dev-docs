@@ -23,7 +23,7 @@ var peerDiscoveryToken: NIDiscoveryToken { get }
 @property (nonatomic, copy, readonly) NIDiscoveryToken * peerDiscoveryToken;
 ```
 
-#### Discussion
+## Discussion
 
 NI sets this property to the value of the peer discovery token you pass to the [`init(peerToken:)`](./init%28peertoken%29.md) initializer.
 

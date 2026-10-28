@@ -25,11 +25,11 @@ func CTRunDelegateGetRefCon(_ runDelegate: CTRunDelegate) -> UnsafeMutableRawPoi
 extern void *CTRunDelegateGetRefCon(CTRunDelegateRef runDelegate);
 ```
 
-#### Return Value
+## Return Value
 
 A constant value associated with the run delegate as an identifier.
 
-#### Discussion
+## Discussion
 
 The run delegate object was created with the returned “refCon” value.
 

@@ -26,7 +26,7 @@ func enable(_ enable: Bool) async throws
 - (void) enable:(BOOL) enable completionHandler:(void (^)(NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Triggers can only be enabled when they are in a home. You add triggers to a home using the [`addTrigger(_:completionHandler:)`](../hmhome/addtrigger%28_,completionhandler%29.md) method of [`HMHome`](../hmhome.md).
 

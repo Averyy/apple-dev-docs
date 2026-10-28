@@ -23,11 +23,11 @@ func DDDeviceStateToString(_ inValue: DDDeviceState) -> String
 extern NSString *DDDeviceStateToString(DDDeviceState inValue);
 ```
 
-#### Return Value
+## Return Value
 
 A textual value for the specified device state.
 
-#### Discussion
+## Discussion
 
 Your extension can use this function for logging.
 

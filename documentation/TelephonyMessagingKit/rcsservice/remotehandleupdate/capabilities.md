@@ -15,7 +15,7 @@ The updated capabilities.
 let capabilities: RCSService.RemoteCapabilities?
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the capabilities didn’t change.
 

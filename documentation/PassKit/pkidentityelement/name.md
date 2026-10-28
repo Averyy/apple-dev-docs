@@ -22,7 +22,7 @@ class var name: PKIdentityElement { get }
 @property (class, nonatomic, readonly) PKIdentityElement * nameElement;
 ```
 
-#### Discussion
+## Discussion
 
 For National ID and other identity documents, requesting this element returns the person’s full name as a single properly formatted string. The response may also include [`givenName`](./givenname.md) and [`familyName`](./familyname.md) when available.
 

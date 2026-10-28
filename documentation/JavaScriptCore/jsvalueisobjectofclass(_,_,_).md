@@ -24,7 +24,7 @@ func JSValueIsObjectOfClass(_ ctx: JSContextRef!, _ value: JSValueRef!, _ jsClas
 bool JSValueIsObjectOfClass(JSContextRef ctx, JSValueRef value, JSClassRef jsClass);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if `value` is an object and has `jsClass` in its class chain; otherwise, [`false`](../Swift/false.md).
 

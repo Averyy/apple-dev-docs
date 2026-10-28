@@ -21,11 +21,11 @@ Tells the system a widget is relevant at a specific date and provides an additio
 static func date(_ exact: Date, kind: RelevantContext.DateKind) -> RelevantContext
 ```
 
-#### Return Value
+## Return Value
 
 A contextual clue that the system uses to determine the relevance of a widget in the Smart Stack on Apple Watch.
 
-#### Discussion
+## Discussion
 
 Several widgets might be relevant to a person at a specific time. To help the system show a widget when it’s most relevant, provide a `DateKind` as an additional contextual hint to help it determine the widget’s relevance. For example, a widget that’s related to a person’s schedule or requires an action, pass [`scheduled`](./datekind/scheduled.md).
 

@@ -15,11 +15,11 @@ Gets the Boolean value of the control.
 bool GetControlValue();
 ```
 
-#### Return Value
+## Return Value
 
 The current value of the control.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

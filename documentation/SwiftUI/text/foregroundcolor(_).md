@@ -24,11 +24,11 @@ nonisolated
 func foregroundColor(_ color: Color?) -> Text
 ```
 
-#### Return Value
+## Return Value
 
 A text view that uses the color value you supply.
 
-#### Discussion
+## Discussion
 
 Use this method to change the color of the text rendered by a text view.
 

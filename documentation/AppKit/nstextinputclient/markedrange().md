@@ -20,11 +20,11 @@ func markedRange() -> NSRange
 - (NSRange) markedRange;
 ```
 
-#### Return Value
+## Return Value
 
 The range of marked text or `{NSNotFound, 0}` if there is no marked range.
 
-#### Discussion
+## Discussion
 
 The returned range measures from the start of the receiver’s text storage. The return value’s `location` is `NSNotFound` and its `length` is 0 if and only if [`hasMarkedText()`](./hasmarkedtext%28%29.md) returns [`false`](../../Swift/false.md).
 

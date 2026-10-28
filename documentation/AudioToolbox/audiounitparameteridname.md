@@ -24,7 +24,7 @@ typealias AudioUnitParameterIDName = AudioUnitParameterNameInfo
 typedef struct AudioUnitParameterNameInfo AudioUnitParameterIDName;
 ```
 
-#### Discussion
+## Discussion
 
 `AudioUnitParameterIDName` is a `typedef` for [`AudioUnitParameterNameInfo`](./audiounitparameternameinfo.md).
 

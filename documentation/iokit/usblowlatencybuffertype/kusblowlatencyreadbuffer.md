@@ -14,7 +14,7 @@
 kUSBLowLatencyReadBuffer = 1
 ```
 
-#### Discussion
+## Discussion
 
 The buffer will be used to read data from a device.
 

@@ -22,7 +22,7 @@ nonisolated
 struct SlideTransition
 ```
 
-#### Overview
+## Overview
 
 > **See Also**: `MoveTransition`
 

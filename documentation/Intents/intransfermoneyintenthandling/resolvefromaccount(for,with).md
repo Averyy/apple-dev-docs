@@ -29,7 +29,7 @@ optional func resolveFromAccount(for intent: INTransferMoneyIntent) async -> INP
 - (void) resolveFromAccountForTransferMoney:(INTransferMoneyIntent *) intent withCompletion:(void (^)(INPaymentAccountResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the account that’s the source of the transferred funds. Use this method to verify that the specified account exists and you can use it as the source of a funds transfer. The [`fromAccount`](../intransfermoneyintent/fromaccount.md) property of the intent object contains any information provided by the user about which account to use. Don’t try to verify that the account has sufficient funds for the transfer. Instead, verify that the account has sufficient funds in the [`confirm(intent:completion:)`](./confirm%28intent,completion%29.md) method.
 

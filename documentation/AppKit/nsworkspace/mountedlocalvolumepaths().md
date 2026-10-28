@@ -21,7 +21,7 @@ func mountedLocalVolumePaths() -> [Any]?
 - (NSArray *) mountedLocalVolumePaths;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, each of which contains the full pathname of the mount point for any local volumes.
 

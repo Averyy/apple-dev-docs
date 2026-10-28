@@ -17,7 +17,7 @@ The devices to include in a report.
 let devices: DeviceActivityFilter.Devices?
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, then the filter only includes data for the current device.
 

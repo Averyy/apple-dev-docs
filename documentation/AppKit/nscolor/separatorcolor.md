@@ -19,7 +19,7 @@ class var separatorColor: NSColor { get }
 @property (class, strong, readonly) NSColor * separatorColor;
 ```
 
-#### Discussion
+## Discussion
 
 Do not use this color for split view dividers or window chrome dividers.
 

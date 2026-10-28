@@ -25,7 +25,7 @@ func xpc_connection_get_context(_ connection: xpc_connection_t) -> UnsafeMutable
 extern void *xpc_connection_get_context(xpc_connection_t connection);
 ```
 
-#### Return Value
+## Return Value
 
 The context associated with the connection. `NULL` if there has been no context associated with the object.
 

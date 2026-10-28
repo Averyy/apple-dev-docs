@@ -15,7 +15,7 @@ An async sequence of anchor updates for a specific anchor.
 final func anchorUpdates(forID id: UUID) -> AnchorUpdateSequence<CameraRegionAnchor>
 ```
 
-#### Return Value
+## Return Value
 
 An async sequence of updates for the given anchor.
 

@@ -19,11 +19,11 @@ var certificate: SecCertificate? { get }
 @property (nonatomic, readonly, nullable) SecCertificateRef certificate;
 ```
 
-#### Return Value
+## Return Value
 
 The public authentication certificate, or `nil` if none exists.
 
-#### Discussion
+## Discussion
 
 The Collaboration framework supports certificate-based authentication in addition to passwords. If a certificate is stored for a user identity, it will be the default method of authentication.
 

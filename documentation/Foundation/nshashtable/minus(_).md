@@ -25,7 +25,7 @@ func minus(_ other: NSHashTable<ObjectType>)
 - (void) minusHashTable:(NSHashTable<id> *) other;
 ```
 
-#### Discussion
+## Discussion
 
 The equality test used for members depends on the personality option selected. For instance, choosing the [`objectPersonality`](../nspointerfunctions/options/objectpersonality.md) option will use `isEqual:` to determine equality. See [`NSPointerFunctions.Options`](../nspointerfunctions/options.md) for more information on personality options and their corresponding equality tests.
 

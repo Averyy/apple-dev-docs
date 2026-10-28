@@ -25,7 +25,7 @@ func class_getImageName(_ cls: AnyClass?) -> UnsafePointer<CChar>?
 extern const char *class_getImageName(Class cls);
 ```
 
-#### Return Value
+## Return Value
 
 A C string representing the name of the library containing the `cls` class.
 

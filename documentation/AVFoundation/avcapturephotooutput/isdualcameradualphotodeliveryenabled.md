@@ -21,7 +21,7 @@ var isDualCameraDualPhotoDeliveryEnabled: Bool { get set }
 @property (nonatomic, getter=isDualCameraDualPhotoDeliveryEnabled) BOOL dualCameraDualPhotoDeliveryEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Enabling this property (on a supported device) allows the capture output to deliver separate images from both the wide-angle and telephoto cameras in a single capture.
 

@@ -21,7 +21,7 @@ object Section
 - [Displaying Components Side By Side](../AppleNews/displaying-components-side-by-side.md)
 - [Nesting Components in an Article](../AppleNews/nesting-components-in-an-article.md)
 
-#### Discussion
+## Discussion
 
 A `section` is a full-width container component that lets you nest components so you can divide a large article into separate parts with potentially different styling. You can also use the `section` component to divide large chapters.
 
@@ -29,7 +29,7 @@ The `section` component is a structural component intended to organize an entire
 
 > **Note**:  The `section` component has the same properties as the `chapter` component, so you can use the one that fits best for your content.
 
-##### Example
+### Example
 
 ```json
 {

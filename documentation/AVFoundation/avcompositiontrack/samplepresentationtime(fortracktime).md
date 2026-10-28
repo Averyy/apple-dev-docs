@@ -25,7 +25,7 @@ func samplePresentationTime(forTrackTime trackTime: CMTime) -> CMTime
 - (CMTime) samplePresentationTimeForTrackTime:(CMTime) trackTime;
 ```
 
-#### Return Value
+## Return Value
 
 The sample presentation time corresponding to the specified time; otherwise [`invalid`](../../CoreMedia/cmtime/invalid.md) if the time is out of range.
 

@@ -23,7 +23,7 @@ class func prepareProtectionClasses(_ protectionClasses: [FileProtectionType])
 + (void) prepareProtectionClasses:(NSArray<NSString *> *) protectionClasses;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method once during your app’s lifecycle to give Spotlight time to load the resources it needs for search. This method prepares only the indexes that have the specified protetction levels. This preparation comes at a cost, so measure your app’s performance and determine an appropriate time to call it. For example, you might call it when you load an interface that includes search features.
 

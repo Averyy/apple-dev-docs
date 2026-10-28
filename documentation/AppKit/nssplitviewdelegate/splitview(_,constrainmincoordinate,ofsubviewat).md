@@ -20,11 +20,11 @@ optional func splitView(_ splitView: NSSplitView, constrainMinCoordinate propose
 - (CGFloat) splitView:(NSSplitView *) splitView constrainMinCoordinate:(CGFloat) proposedMinimumPosition ofSubviewAt:(NSInteger) dividerIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The minimum coordinate limit of the divider.
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  If your split view uses Auto Layout to size its subviews, don’t implement this method.
 

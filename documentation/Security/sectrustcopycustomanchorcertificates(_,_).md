@@ -25,11 +25,11 @@ func SecTrustCopyCustomAnchorCertificates(_ trust: SecTrust, _ anchors: UnsafeMu
 OSStatus SecTrustCopyCustomAnchorCertificates(SecTrustRef trust, CFArrayRef*anchors);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 You can use the [`SecTrustSetAnchorCertificates(_:_:)`](./sectrustsetanchorcertificates%28_,_%29.md) function to set custom anchor certificates.
 

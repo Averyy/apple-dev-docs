@@ -21,7 +21,7 @@ string CreativeSystemStatus
 - `INVALID`: The ad creative has failed one or more validation checks. Check `systemStatusReasons` for the cause.
 - `PENDING`: The ad creative is undergoing system validation, policy determination, or waiting for asset CDN availability.
 
-#### Discussion
+## Discussion
 
 The `CreativeSystemStatus` is a read-only field that reflects whether an ad creative has passed all system validation checks and is eligible to serve.
 

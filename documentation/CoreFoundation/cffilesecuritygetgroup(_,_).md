@@ -25,7 +25,7 @@ func CFFileSecurityGetGroup(_ fileSec: CFFileSecurity!, _ group: UnsafeMutablePo
 extern Boolean CFFileSecurityGetGroup(CFFileSecurityRef fileSec, gid_t *group);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the group ID was stored in the address pointed to by `group`, or `false` if there is no address property associated with this `CFFileSecurityRef` object.
 

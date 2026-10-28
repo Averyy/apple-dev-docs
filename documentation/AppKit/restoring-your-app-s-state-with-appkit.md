@@ -10,7 +10,7 @@ Provide continuity for people using your app by preserving current activities on
 - macOS 12.5+
 - Xcode 14.2+
 
-#### Overview
+## Overview
 
 This sample app demonstrates how to preserve your app’s state information and restore the app to that previous state on subsequent launches. During a subsequent launch, restoring your interface to the previous interaction point provides continuity for your app, and lets people finish active tasks quickly.
 
@@ -27,11 +27,11 @@ The state restoration system in AppKit uses three key mechanisms working togethe
 
 To learn how to adopt state restoration in your iOS app, see [Restoring your app’s state](../UIKit/restoring-your-app-s-state.md). For state restoration in your SwiftUI app, see [Restoring your app’s state with SwiftUI](../SwiftUI/restoring-your-app-s-state-with-swiftui.md).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 In Xcode, select your development team on the macOS target’s Signing & Capabilities tab.
 
-#### Enable window state restoration
+## Enable window state restoration
 
 To enable window state restoration, each window must be configured with a unique identifier, a frame autosave name, and a restoration class. The restoration class conforms to the [`NSWindowRestoration`](./nswindowrestoration.md) protocol and is responsible for recreating the window during restoration.
 
@@ -50,7 +50,7 @@ func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
 }
 ```
 
-#### Restore windows with the NSWindowRestoration protocol
+## Restore windows with the NSWindowRestoration protocol
 
 The `WindowRestorationHandler` class conforms to [`NSWindowRestoration`](./nswindowrestoration.md) and implements the static [`restoreWindow(withIdentifier:state:completionHandler:)`](./nswindowrestoration/restorewindow%28withidentifier,state,completionhandler%29.md) method. AppKit calls this method at launch for each window that was open when the app last quit. The method creates the appropriate window controller based on the window identifier and passes the window back through the completion handler; otherwise, ignores the window and any errors by passing `nil`.
 
@@ -88,7 +88,7 @@ class WindowRestorationHandler: NSObject, NSWindowRestoration {
 
 After AppKit creates each window through this method, it calls [`restoreState(with:)`](./nsresponder/restorestate%28with%29.md) on the window controller to decode the saved state.
 
-#### Encode and decode window state
+## Encode and decode window state
 
 Each window controller overrides [`encodeRestorableState(with:)`](./nsresponder/encoderestorablestate%28with%29.md) to save its state, and `restoreState(with:)` to read it back. The main window controller encodes the selected product identifier, the active tab index, and whether the editor sheet was presented with its field values:
 
@@ -135,7 +135,7 @@ override func restoreState(with coder: NSCoder) {
 }
 ```
 
-#### Invalidate restorable state on changes
+## Invalidate restorable state on changes
 
 Whenever someone makes a change that should be preserved—selecting a product, switching tabs, or editing fields—the window controller calls [`invalidateRestorableState()`](./nsresponder/invalidaterestorablestate%28%29.md). This tells AppKit that the saved state is out of date and needs to be re-encoded before the app terminates.
 
@@ -148,7 +148,7 @@ splitViewController.onTabChanged = { [weak self] in
 }
 ```
 
-#### Restore multiple windows
+## Restore multiple windows
 
 The sample app supports multiple windows. The main window displays a split view with a product collection in the sidebar and a detail pane. Additional standalone image windows can be opened for any product. Each window type has its own window controller and encodes its own state independently.
 
@@ -165,7 +165,7 @@ override func encodeRestorableState(with coder: NSCoder) {
 
 AppKit restores all open windows on relaunch. The `WindowRestorationHandler` class routes each window to the correct controller based on its identifier.
 
-#### Test state restoration
+## Test state restoration
 
 This sample app restores the following user interface:
 

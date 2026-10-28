@@ -13,7 +13,7 @@
 class OSCollectionIterator : OSIterator
 ```
 
-#### Overview
+## Overview
 
 OSCollectionIterator defines a consistent mechanism to iterate through the objects of an OSCollection. It expands on the basic interface of OSIterator to allow association of an iterator with a specific collection.
 

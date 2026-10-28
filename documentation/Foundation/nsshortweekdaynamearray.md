@@ -17,7 +17,7 @@ Key for an array of strings that specify the abbreviations for the days of the w
 extern NSString * const NSShortWeekDayNameArray;
 ```
 
-#### Discussion
+## Discussion
 
 Sunday should be the first day of the week.
 

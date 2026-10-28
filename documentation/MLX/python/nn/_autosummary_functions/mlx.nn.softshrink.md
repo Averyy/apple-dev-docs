@@ -6,8 +6,11 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.softshrink
 
-**class softshrink(*x*, *lambd: float = 0.5*)**
-: Applies the Softshrink activation function.
+```python
+class softshrink(x, lambd: float = 0.5)
+```
+
+Applies the Softshrink activation function.
 
 \[\begin{split}\text{softshrink}(x) = \begin{cases}
 x - \lambda & \text{if } x > \lambda \\

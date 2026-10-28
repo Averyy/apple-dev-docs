@@ -21,7 +21,7 @@ The system field key for the share’s thumbnail image data.
 extern CKRecordFieldKey const CKShareThumbnailImageDataKey;
 ```
 
-#### Discussion
+## Discussion
 
 This predefined key is part of the `CKRecordTypeShare` schema.  It is used by the out of process UI flow to send a share, and as part of the share acceptance flow.  It is an optional value on a `CKShare` record.
 

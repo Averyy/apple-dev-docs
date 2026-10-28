@@ -16,7 +16,7 @@ A protocol describing images that can be converted to instances of [Attachment](
 protocol AttachableAsImage
 ```
 
-#### Overview
+## Overview
 
 Instances of types conforming to this protocol do not themselves conform to [Attachable](./attachable.md). Instead, the testing library provides additional initializers on [Attachment](./attachment.md) that take instances of such types and handle converting them to image data when needed.
 

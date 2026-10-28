@@ -40,7 +40,7 @@ func convert(_ region: MKCoordinateRegion, toRectTo view: NSView?) -> CGRect
 - (CGRect) convertRegion:(MKCoordinateRegion) region toRectToView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The rectangle corresponding to the specified map region.
 

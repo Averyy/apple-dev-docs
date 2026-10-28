@@ -20,7 +20,7 @@ Narrows an untyped [`USDLayer.Spec`](../../usdlayer/spec.md) to a variant set sp
 init?(_ spec: USDLayer.Spec)
 ```
 
-#### Return Value
+## Return Value
 
 A variant set spec, or `nil` if `spec` is not a variant set spec.
 

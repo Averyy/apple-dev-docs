@@ -28,15 +28,15 @@ struct CommandLineArgumentsProvider
 
 - [Integrating with Swift Argument Parser](./integrating-with-swift-argument-parser.md)
 
-#### Overview
+## Overview
 
 Reads configuration values from CLI arguments with type conversion and secrets handling. Keys are encoded to CLI flags at lookup time.
 
-#### Package traits
+## Package traits
 
 This type is guarded by the `CommandLineArguments` package trait.
 
-#### Key formats
+## Key formats
 
 - `--key value` - A key-value pair with separate arguments.
 - `--key=value` - A key-value pair with an equals sign.
@@ -45,7 +45,7 @@ This type is guarded by the `CommandLineArguments` package trait.
 
 Configuration keys are transformed to CLI flags: `["http", "serverTimeout"]` → `--http-server-timeout`.
 
-#### Array handling
+## Array handling
 
 Arrays can be specified in multiple ways:
 
@@ -56,7 +56,7 @@ Arrays can be specified in multiple ways:
 
 All formats produce the same result when accessed as an array type.
 
-#### Usage
+## Usage
 
 ```swift
 // CLI: program --debug --host localhost --ports 8080 8443
@@ -68,7 +68,7 @@ let host = config.string(forKey: "host", default: "0.0.0.0") // "localhost"
 let ports = config.intArray(forKey: "ports", default: []) // [8080, 8443]
 ```
 
-##### With secrets
+### With secrets
 
 ```swift
 let provider = CommandLineArgumentsProvider(
@@ -76,7 +76,7 @@ let provider = CommandLineArgumentsProvider(
 )
 ```
 
-##### Custom arguments
+### Custom arguments
 
 ```swift
 let provider = CommandLineArgumentsProvider(
@@ -85,7 +85,7 @@ let provider = CommandLineArgumentsProvider(
 )
 ```
 
-#### Using with Swift Argument Parser
+## Using with Swift Argument Parser
 
 This provider doesn’t support subcommands, positional arguments, or generated help. To combine it with Swift Argument Parser, check out [Integrating with Swift Argument Parser](./integrating-with-swift-argument-parser.md).
 

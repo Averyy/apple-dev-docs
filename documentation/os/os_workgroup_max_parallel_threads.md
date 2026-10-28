@@ -21,7 +21,7 @@ Returns the maximum number of threads that the system recommends you add to the 
 extern int os_workgroup_max_parallel_threads(os_workgroup_t wg, os_workgroup_mpt_attr_t attr);
 ```
 
-#### Discussion
+## Discussion
 
 This function returns the theoretical maximum number of threads for a workgroup, which doesn’t take into account the current system load or whether your app has any other workgroups. The actual number of effective threads may be lower.
 

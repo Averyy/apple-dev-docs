@@ -5,15 +5,15 @@
 
 Considerations for running iPhone and iPad apps on Macs with Apple silicon.
 
-#### Overview
+## Overview
 
 Macs with Apple silicon can run many iPad and iPhone apps as-is, and these apps will be made available to users on the Mac through the Mac App Store. For more information, see [Running your iOS apps in macOS](../apple-silicon/running-your-ios-apps-in-macos.md), and watch [iPad and iPhone apps on Macs with Apple silicon](https://developer.apple.com/videos/play/wwdc2020/10114).
 
 macOS Big Sur 11.0.1 enables you to test your iPad and iPhone apps through Xcode. Below are notes pertaining to running these apps on macOS Big Sur 11.0.1. For additional macOS 11 changes, see [macOS Big Sur 11.0.1 Release Notes](./macos-big-sur-11_0_1-release-notes.md).
 
-##### General
+### General
 
-###### Known Issues
+#### Known Issues
 
 - iOS apps which don’t support iPad multitasking might display certain content in an incorrect orientation. (64660250)
 - `WebGL` content in [`WKWebView`](../WebKit/wkwebview.md) might experience reduced performance. (70587571)

@@ -25,7 +25,7 @@ class MessagePort
 @interface NSMessagePort : NSPort
 ```
 
-#### Overview
+## Overview
 
 [`MessagePort`](./messageport.md) is a subclass of [`Port`](./port.md) that allows for local (on the same machine) communication only. A companion class, [`SocketPort`](./socketport.md), allows for both local and remote communication, but may be more expensive than [`MessagePort`](./messageport.md) for the local case.
 

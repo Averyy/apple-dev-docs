@@ -19,7 +19,7 @@ A key the container app uses to retrieve a unique identifier for the live assist
 static let containerAppLaunchRequestIDKey: String
 ```
 
-#### Discussion
+## Discussion
 
 When launched with the user activity type [`containerAppLaunchReasonKey`](./containerapplaunchreasonkey.md), your app retrieves this key from the [`userInfo`](../../Foundation/nsuseractivity/userinfo.md) dictionary of the [`NSUserActivity`](../../Foundation/nsuseractivity.md) received by the launch method. After your container app finishes performing sign-in or collecting any needed information from the person using the service, your app sends the request id to [`returnToCall(requestID:)`](./returntocall%28requestid%29.md) to return to the FaceTime call and allow your app extension to finish setting up the live assistance service.
 

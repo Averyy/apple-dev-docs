@@ -5,7 +5,7 @@
 
 These registers support the operation of a generic interrupt controller and its interface with the Hypervisor and virtual CPUs.
 
-#### Discussion
+## Discussion
 
 For more information on the purpose of specific register sets and their operation in GICs, see the [ARM Generic Interrupt Controller (GIC) v3 architecture specification](https://developer.arm.com/documentation/ihi0069/latest/).
 

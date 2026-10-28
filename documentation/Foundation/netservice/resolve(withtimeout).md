@@ -26,7 +26,7 @@ func resolve(withTimeout timeout: TimeInterval)
 - (void) resolveWithTimeout:(NSTimeInterval) timeout;
 ```
 
-#### Discussion
+## Discussion
 
 During the resolve period, the service sends [`netServiceDidResolveAddress(_:)`](../netservicedelegate/netservicedidresolveaddress%28_%29.md) to the delegate for each address it discovers that matches the service parameters. Once the timeout is hit, the service sends [`netServiceDidStop(_:)`](../netservicedelegate/netservicedidstop%28_%29.md) to the delegate. If no addresses resolve during the timeout period, the service sends [`netService(_:didNotResolve:)`](../netservicedelegate/netservice%28_,didnotresolve%29.md) to the delegate.
 

@@ -21,7 +21,7 @@ The position of the first element in a nonempty array.
 var startIndex: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 `ArraySlice` instances are not always indexed from zero. Use `startIndex` and `endIndex` as the bounds for any element access, instead of `0` and `count`.
 

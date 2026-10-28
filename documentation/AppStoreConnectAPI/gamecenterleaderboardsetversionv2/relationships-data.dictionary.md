@@ -15,7 +15,7 @@ The relationships you include in the request and those you can operate on.
 object GameCenterLeaderboardSetVersionV2.Relationships
 ```
 
-#### Overview
+## Overview
 
 - leaderboardSet:
 - localizations:

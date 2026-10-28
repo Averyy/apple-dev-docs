@@ -16,7 +16,7 @@ A type that indicates how to ship purchased items.
 enum ApplePayShippingType
 ```
 
-#### Overview
+## Overview
 
 Shipping types values are:
 

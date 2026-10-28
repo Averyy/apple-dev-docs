@@ -15,7 +15,7 @@ A Boolean value that indicates whether your app supports a shared context when a
 var supportsGroupImmersiveSpace: Bool
 ```
 
-#### Discussion
+## Discussion
 
 If your app presents an immersive space, set this property to `true` if you want the system to display spatial Personas when that space is open. The default value of this property is `false`.
 

@@ -24,7 +24,7 @@ class VNDetectBarcodesRequest
 @interface VNDetectBarcodesRequest : VNImageBasedRequest
 ```
 
-#### Overview
+## Overview
 
 This request returns an array of [`VNBarcodeObservation`](./vnbarcodeobservation.md) objects, one for each barcode it detects.
 

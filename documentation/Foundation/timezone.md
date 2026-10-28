@@ -21,7 +21,7 @@ Information about standard time conventions associated with a specific geopoliti
 struct TimeZone
 ```
 
-#### Overview
+## Overview
 
 `TimeZone` defines the behavior of a time zone. Time zone values represent geopolitical regions. Consequently, these values have names for these regions. Time zone values also represent a temporal offset, either plus or minus, from Greenwich Mean Time (GMT) and an abbreviation (such as PST for Pacific Standard Time).
 

@@ -21,7 +21,7 @@ Whether the [`Toggle`](../toggle.md) is currently in a mixed state.
 var isMixed: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to determine whether the toggle style should render a mixed state presentation. A mixed state corresponds to an underlying collection with a mix of true and false Bindings. To toggle the state, use the `Bool.toggle()` method on the [`isOn`](./ison.md) binding.
 

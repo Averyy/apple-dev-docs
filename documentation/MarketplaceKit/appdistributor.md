@@ -20,7 +20,7 @@ enum AppDistributor
 
 - [Distributing your app on an alternative app marketplace](./distributing-your-app-on-an-alternative-marketplace.md)
 
-#### Overview
+## Overview
 
 Apps on alternative app marketplaces need to use APIs that vary from apps on the App Store. Specifically, use:
 

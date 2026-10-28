@@ -24,7 +24,7 @@ var vertical: CGFloat
 CGFloat vertical;
 ```
 
-#### Discussion
+## Discussion
 
 Positive values indicate an offset downward, and negative values indicate an offset upward.
 

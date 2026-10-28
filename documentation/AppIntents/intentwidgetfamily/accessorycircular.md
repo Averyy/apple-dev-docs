@@ -20,7 +20,7 @@ A circular widget.
 case accessoryCircular
 ```
 
-#### Discussion
+## Discussion
 
 The accessory circular widget can appear as a complication in watchOS, or on the Lock Screen in iOS.
 

@@ -24,11 +24,11 @@ class func boxBlur() -> any CIFilter & CIBoxBlur
 + (CIFilter<CIBoxBlur> *) boxBlurFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The blurred image.
 
-#### Discussion
+## Discussion
 
 This method applies the box blur filter to an image. The effect targets a square area and calculates the median color value of the pixels to create the output image. The `radius` is the width of a square area with a larger area, resulting in a stronger blur effect on the output image.
 

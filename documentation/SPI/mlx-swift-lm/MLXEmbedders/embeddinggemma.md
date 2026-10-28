@@ -17,7 +17,7 @@ A text embedding model based on Gemma 3.
 class EmbeddingGemma
 ```
 
-#### Overview
+## Overview
 
 This class conforms to `EmbeddingModel` and provides high-quality text embeddings by passing inputs through a `Gemma3ModelBackbone`, followed by mean pooling and a projection head.
 

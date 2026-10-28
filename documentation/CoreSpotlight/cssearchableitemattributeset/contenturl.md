@@ -23,7 +23,7 @@ var contentURL: URL? { get set }
 @property (strong, nullable) NSURL * contentURL;
 ```
 
-#### Discussion
+## Discussion
 
 This is an optional property. An app that is also a client of iCloud Drive can set this property to allow Spotlight to deduplicate its searchable items against the iCloud Drive items. In this scenario, Spotlight does not display searchable items from iCloud Drive that have the same [`contentURL`](./contenturl.md) property.
 

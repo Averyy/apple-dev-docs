@@ -22,7 +22,7 @@ static let print: NSToolbarItem.Identifier
 extern NSToolbarItemIdentifier NSToolbarPrintItemIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 When selected, this item sends a `printDocument:` message to the first responder.
 

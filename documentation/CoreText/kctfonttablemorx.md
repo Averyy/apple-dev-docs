@@ -23,7 +23,7 @@ var kCTFontTableMorx: Int { get }
 kCTFontTableMorx
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for extended morph.
 

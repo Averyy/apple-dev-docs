@@ -25,11 +25,11 @@ func stringByReplacingMatches(in string: String, options: NSRegularExpression.Ma
 - (NSString *) stringByReplacingMatchesInString:(NSString *) string options:(NSMatchingOptions) options range:(NSRange) range withTemplate:(NSString *) templ;
 ```
 
-#### Return Value
+## Return Value
 
 A string with matching regular expressions replaced by the template string.
 
-#### Discussion
+## Discussion
 
 See [Flag Options](../nsregularexpression.md#Flag-Options) for the format of `templ`.
 

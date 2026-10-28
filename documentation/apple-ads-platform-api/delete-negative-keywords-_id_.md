@@ -9,25 +9,25 @@ Soft-delete a negative keyword by ID.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
-This endpoint soft-deletes the specified negative keyword by setting its `deleted` field to `true`. The record remains queryable by including `deleted=true` in query filters. The operation returns HTTP 200 with an empty response body on success.
+This endpoint soft-deletes the specified negative keyword by setting its `deleted` field to `true`. The record is no longer returned by the query endpoint or by ID. The operation returns HTTP 200 with an empty response body on success.
 
 Once soft-deleted, the previously blocked search terms are no longer suppressed. If the deleted negative keyword was campaign-level, ads across all ad groups in the campaign may begin appearing for those queries again. If it was ad-group-level, only that ad group is affected. To temporarily stop suppression without deleting the negative keyword, use `PUT /negative-keywords/{id}` with `status: "PAUSED"`. To have the negative keyword start suppressing search terms again, set `status: "ENABLED"` instead of deleting.
 
-The soft delete is reflected consistently across subsequent GET and PUT requests, and reversible by re-enabling the record.
+Deletion is permanent. A deleted negative keyword can’t be retrieved, updated, or re-enabled. To suppress those search terms again, create a new negative keyword.
 
 | Constraint | Detail |
 | --- | --- |
-| Soft deletion | Deletion sets `deleted=true` on the negative keyword record instead of removing it. The record remains queryable with the appropriate filter. |
+| Soft deletion | Deletion sets `deleted=true` on the negative keyword record instead of removing it. The record never appears in query results. |
 | Exclusion is lifted immediately | Previously blocked search terms are no longer suppressed after deletion. |
-| GET returns the deleted negative keyword | GET requests after deletion return the negative keyword with `deleted: true`, not a 404. |
+| GET returns 404 after deletion | GET requests for a deleted negative keyword return 404 Not Found. |
 | PUT returns 404 after deletion | PUT requests to update a deleted negative keyword return 404 Not Found. |
 | Use ENABLED status to resume suppression | To have the negative keyword start suppressing search terms again, set `status: "ENABLED"` rather than deleting. |
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Deletes a negative keyword by its unique identifier. A successful delete returns HTTP 200 with an empty response body.
 
@@ -35,7 +35,7 @@ Deletes a negative keyword by its unique identifier. A successful delete returns
 DELETE /v1/negative-keywords/777888999
 ```
 
-##### Response
+### Response
 
 ```json
 {}

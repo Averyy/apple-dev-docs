@@ -18,7 +18,7 @@ static var outline: AccessibilityQuickActionOutlineStyle { get }
 
 Available when `Self` is `AccessibilityQuickActionOutlineStyle`.
 
-#### Discussion
+## Discussion
 
 Use the [`contentShape(_:_:eoFill:)`](../view/contentshape%28_,_,eofill%29.md) modifier to provide a shape for [`focusEffect`](../contentshapekinds/focuseffect.md) if necessary.
 

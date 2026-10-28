@@ -20,7 +20,7 @@ The stage that owns this object.
 var stage: USDStage { get }
 ```
 
-#### Discussion
+## Discussion
 
 An object’s state and validity is connected to its stage. An object becomes invalid when the lifetime of its stage ends. It can also become invalid when the stage is modified.
 

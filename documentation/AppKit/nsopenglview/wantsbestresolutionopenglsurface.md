@@ -21,7 +21,7 @@ var wantsBestResolutionOpenGLSurface: Bool { get set }
 @property BOOL wantsBestResolutionOpenGLSurface;
 ```
 
-#### Discussion
+## Discussion
 
 This property is relevant only for views bound to an [`NSOpenGLContext`](../nsopenglcontext.md) object (including, but not limited to, [`NSOpenGLView`](../nsopenglview.md) objects). Layer-backed views ignore the value in this property and configure their own backing surface at an appropriate resolution.
 

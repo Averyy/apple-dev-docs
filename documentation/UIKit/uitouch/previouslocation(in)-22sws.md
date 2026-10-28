@@ -23,7 +23,7 @@ func previousLocation(in view: UIView?) -> CGPoint
 - (CGPoint) previousLocationInView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 This method returns the previous location of a [`UITouch`](../uitouch.md) object in the coordinate system of the specified view. Because the touch object might have been forwarded to a view from another view, this method performs any necessary conversion of the touch location to the coordinate system of the specified view.
 

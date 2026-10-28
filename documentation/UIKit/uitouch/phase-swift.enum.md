@@ -23,7 +23,7 @@ enum Phase
 enum UITouchPhase : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The phase of a `UITouch` instance changes as the system receives updates during the course of an event. Access this value through the [`phase`](./phase-swift.property.md) property.
 

@@ -23,7 +23,7 @@ optional func scene(_ scene: UIScene, willContinueUserActivityWithType userActiv
 - (void) scene:(UIScene *) scene willContinueUserActivityWithType:(NSString *) userActivityType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to prepare to handle an activity with the specified type. After this method returns, UIKit provides feedback to the user that your scene is handling the activity.
 

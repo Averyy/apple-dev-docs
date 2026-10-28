@@ -5,7 +5,7 @@
 
 Resize an image with vImage.
 
-#### Overview
+## Overview
 
 vImage provides fast and accurate high-level functions for image manipulation; for example, compositing, convolution, and histogram operations. It operates on common image formats through [`vImage_Buffer`](./vimage_buffer.md) structures. vImage buffers describe the size of an image and the number of bytes in each row, and point to the image pixel data. Buffers are initialized from Core Graphics images, Core Video pixel buffers, or raw pixel data. The pixel data a buffer points to can be used to create a new Core Graphics image or can be copied into a Core Video pixel buffer.
 
@@ -13,7 +13,7 @@ In the simplest workflow, you convert an image to a vImage buffer, apply an oper
 
 ![Photos showing the original image and the resized image.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-2953430@2x.png)
 
-##### Initialize an Image Format and vImage Buffers
+### Initialize an Image Format and vImage Buffers
 
 To learn about initializing the buffers you’ll need to perform a scaling operation, see [Converting bitmap data between Core Graphics images and vImage buffers](./converting-bitmap-data-between-core-graphics-images-and-vimage-buffers.md) and [Creating and Populating Buffers from Core Graphics Images](./creating-and-populating-buffers-from-core-graphics-images.md). In this example, you’ll need the image format and buffers discussed in [Creating and Populating Buffers from Core Graphics Images](./creating-and-populating-buffers-from-core-graphics-images.md). However, you’ll use the following code to initialize a destination buffer with a height and width that are a quarter of the source dimensions.
 
@@ -32,7 +32,7 @@ defer {
 }
 ```
 
-##### Apply the Scale Operation
+### Apply the Scale Operation
 
 If you’re rescaling an image with premultiplied alpha (that is, with a [`bitmapInfo`](./vimage_cgimageformat/bitmapinfo.md) value with [`CGImageAlphaInfo.premultipliedFirst`](../CoreGraphics/cgimagealphainfo/premultipliedfirst.md) or [`CGImageAlphaInfo.premultipliedLast`](../CoreGraphics/cgimagealphainfo/premultipliedlast.md)), before you apply the scale operation, see [Building a Basic Image-Processing Workflow](./building-a-basic-image-processing-workflow.md).
 
@@ -75,7 +75,7 @@ sourceBuffer.free()
 destinationBuffer.free()
 ```
 
-##### Avoid Artifacts by Unpremultiplying
+### Avoid Artifacts by Unpremultiplying
 
 If you’re rescaling an image with premultiplied alpha, you may see artifacts in high-frequency regions of the image. To avoid this situation, unpremultiply the image data — that is, remove the premultiplied alpha value from the image data — before the scaling operation, and premultiply the scaled result.
 

@@ -17,7 +17,7 @@ A fast implementation of multi-head attention: `O = softmax(Q @ K.T, dim=-1) @ V
 static func scaledDotProductAttention(queries: MLXArray, keys: MLXArray, values: MLXArray, scale: Float, mask: MLXArray?, sinks: MLXArray? = nil, memoryEfficientThreshold: Int? = nil, forceFused: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Supports [Multi-Head Attention](https://arxiv.org/abs/1706.03762), [Grouped Query Attention](https://arxiv.org/abs/2305.13245), and [Multi-Query Attention](https://arxiv.org/abs/1911.02150).
 

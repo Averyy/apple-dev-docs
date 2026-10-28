@@ -20,7 +20,7 @@ An array of precision estimates for each landmark point.
 @property (readonly, nullable) NSArray<NSNumber *> * precisionEstimatesPerPoint;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only populated when you configure your [`VNDetectFaceLandmarksRequest`](../vndetectfacelandmarksrequest.md) object with [`VNRequestFaceLandmarksConstellation.constellation76Points`](../vnrequestfacelandmarksconstellation/constellation76points.md). For other constellation types, this array is set to `nil`.
 

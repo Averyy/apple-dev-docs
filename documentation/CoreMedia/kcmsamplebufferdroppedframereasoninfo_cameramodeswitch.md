@@ -25,7 +25,7 @@ let kCMSampleBufferDroppedFrameReasonInfo_CameraModeSwitch: CFString
 extern CFStringRef const kCMSampleBufferDroppedFrameReasonInfo_CameraModeSwitch;
 ```
 
-#### Discussion
+## Discussion
 
 The module providing sample buffers has experienced a discontinuity due to a camera mode switch. Short discontinuities of this type can occur when the session is configured for still image capture on some devices.
 

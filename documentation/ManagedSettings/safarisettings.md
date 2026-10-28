@@ -17,7 +17,7 @@ Constraints on Safari’s AutoFill and cookie behaviors.
 struct SafariSettings
 ```
 
-#### Overview
+## Overview
 
 Use `SafariSettings` to manage Safari settings for cookies and AutoFill. You can prevent AutoFill and specify the websites from which Safari accepts cookies.
 

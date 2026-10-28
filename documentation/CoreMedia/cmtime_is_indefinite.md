@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether a time is indefinite.
 #define CMTIME_IS_INDEFINITE(time)
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the time is indefinite; otherwise, [`false`](../Swift/false.md).
 

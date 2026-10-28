@@ -19,7 +19,7 @@ typealias NSFontFamilyClass = UInt32
 typedef uint32_t NSFontFamilyClass;
 ```
 
-#### Discussion
+## Discussion
 
 These values correspond closely to the font class values in the OpenType OS/2 table. The class values are bundled in the upper four bits of [`NSFontSymbolicTraits`](./nsfontsymbolictraits.md) and can be accessed via [`NSFontFamilyClassMask`](./nsfontfamilyclassmask.md). For more information about the specific meaning of each identifier, refer to the OpenType specification.
 

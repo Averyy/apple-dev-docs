@@ -24,11 +24,11 @@ class func depthToDisparity() -> any CIFilter & CIDepthToDisparity
 + (CIFilter<CIDepthToDisparity> *) depthToDisparityFilter;
 ```
 
-#### Return Value
+## Return Value
 
 An image containing the disparity data.
 
-#### Discussion
+## Discussion
 
 This method applies the depth-to-disparity filter. The filter takes depth data as an input and produces disparity data in the output image. You can use the output of this filter to create a stereo image.
 

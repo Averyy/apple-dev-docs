@@ -16,7 +16,7 @@ The unique identifier of the security domain you use to install the instance.
 let securityDomainAID: Data
 ```
 
-#### Discussion
+## Discussion
 
 Use this identifier when selecting the security domain to perform data transceive with, such as forming a Secure Channel Protocol 3 (SCP03) channel.
 

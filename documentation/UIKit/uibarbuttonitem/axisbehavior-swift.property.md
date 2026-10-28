@@ -23,7 +23,7 @@ var axisBehavior: UIBarButtonItem.AxisBehavior { get set }
 @property (nonatomic, assign, readwrite) UIBarButtonItemAxisBehavior axisBehavior;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `UIBarButtonItemAxisBehaviorAutomatic`.
 

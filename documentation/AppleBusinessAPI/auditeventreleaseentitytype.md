@@ -23,7 +23,7 @@ string AuditEventReleaseEntityType
 - `API`
 - `REPLACEMENT`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

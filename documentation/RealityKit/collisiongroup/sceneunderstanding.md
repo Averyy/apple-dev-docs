@@ -20,7 +20,7 @@ The default collision group for scene-understanding meshes.
 static let sceneUnderstanding: CollisionGroup
 ```
 
-#### Discussion
+## Discussion
 
 See [Implementing scene understanding and reconstruction in your RealityKit app](../realitykit-scene-understanding.md) for usage and platform availability of [`SpatialTrackingSession.Configuration.SceneUnderstandingCapability`](../spatialtrackingsession/configuration/sceneunderstandingcapability.md) and [`ARView.Environment.SceneUnderstanding`](../arview/environment-swift.struct/sceneunderstanding-swift.struct.md). See [Implementing scene understanding and reconstruction in your RealityKit app](../realitykit-scene-understanding.md) for a complete overview of scene-understanding functionality.
 

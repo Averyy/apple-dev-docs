@@ -6,7 +6,7 @@
 
 A 16-bit integer that indicates the font to use.
 
-#### Overview
+## Overview
 
 Set this field to `0` to use the system font. If the font name field contains a valid name, ignore this field.
 

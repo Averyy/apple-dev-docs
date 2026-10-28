@@ -15,7 +15,7 @@ The route distance, in meters.
 distance: number;
 ```
 
-#### Discussion
+## Discussion
 
 This property reflects the distance that the user covers while traversing the path of the route. It isn’t a straight line distance between the [`origin`](../directionsrequest/origin.md) and [`destination`](../directionsrequest/destination.md).
 

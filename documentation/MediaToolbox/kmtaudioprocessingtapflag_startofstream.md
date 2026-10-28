@@ -24,7 +24,7 @@ var kMTAudioProcessingTapFlag_StartOfStream: MTAudioProcessingTapFlags { get }
 kMTAudioProcessingTapFlag_StartOfStream
 ```
 
-#### Discussion
+## Discussion
 
 Returned from [`MTAudioProcessingTapGetSourceAudio(_:_:_:_:_:_:)`](./mtaudioprocessingtapgetsourceaudio%28_,_,_,_,_,_%29.md).
 

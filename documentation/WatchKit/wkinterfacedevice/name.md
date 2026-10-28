@@ -19,7 +19,7 @@ var name: String { get }
 @property (nonatomic, copy, readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property varies according to the device’s operating system version number:
 

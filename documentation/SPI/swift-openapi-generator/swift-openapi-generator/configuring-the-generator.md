@@ -10,13 +10,13 @@ framework: "swift-openapi-generator/swift-openapi-generator"
 
 Create a configuration file to control the behavior of the generator.
 
-#### Overview
+## Overview
 
 Swift OpenAPI Generator build plugin requires a configuration file that controls what files are generated.
 
 The command-line tool also uses the same configuration file.
 
-##### Create a configuration file
+### Create a configuration file
 
 The configuration file is named `openapi-generator-config.yaml` or `openapi-generator-config.yml` and must exist in the target source directory.
 
@@ -62,7 +62,7 @@ The configuration file has the following keys:
   - `schemas` (optional): a string to string dictionary. The key is the name of the schema, the last component of `#/components/schemas/Foo` (here, `Foo`). The value is the custom type name, such as `CustomFoo`. Check out details in [SOAR-0014](https://swiftpackageindex.com/apple/swift-openapi-generator/documentation/swift-openapi-generator/soar-0014).
 - `featureFlags` (optional): array of strings. Each string must be a valid feature flag to enable. For a list of currently supported feature flags, check out [FeatureFlags.swift](https://github.com/apple/swift-openapi-generator/blob/main/Sources/_OpenAPIGeneratorCore/FeatureFlags.swift).
 
-##### Editor support
+### Editor support
 
 A JSON Schema for the configuration file is available at `https://raw.githubusercontent.com/apple/swift-openapi-generator/main/Public/openapi-generator-config.schema.json`. Editors that use the YAML language server, such as Visual Studio Code with the [YAML extension](https://github.com/redhat-developer/vscode-yaml), provide validation and autocompletion when you add this line to the top of your configuration file:
 
@@ -70,7 +70,7 @@ A JSON Schema for the configuration file is available at `https://raw.githubuser
 # yaml-language-server: $schema=https://raw.githubusercontent.com/apple/swift-openapi-generator/main/Public/openapi-generator-config.schema.json
 ```
 
-##### Example config files
+### Example config files
 
 To generate client code in a single target:
 
@@ -144,7 +144,7 @@ Types generation emits a fixed set of files organized by generated namespace:
 
 > ❗ **Important**: The number and names of generated files are *not* considered to be stable, and can change at any time. For details, check out [API stability of the generator](./api-stability-of-the-generator.md).
 
-##### Document filtering
+### Document filtering
 
 The generator supports filtering the OpenAPI document prior to generation, which can be useful when generating client code for a subset of a large API, or splitting an implementation of a server across multiple modules.
 
@@ -180,7 +180,7 @@ filter:
     - myTag
 ```
 
-##### Type overrides
+### Type overrides
 
 Type Overrides can be used used to replace the default generated type with a custom type.
 

@@ -15,7 +15,7 @@ A line-level stream.
 Line
 ```
 
-#### Discussion
+## Discussion
 
 This terminal type applies to both input and output streams.
 

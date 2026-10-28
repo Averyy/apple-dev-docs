@@ -23,11 +23,11 @@ class func confirmationRequired(with paymentStatusToConfirm: INPaymentStatus) ->
 + (instancetype) confirmationRequiredWithPaymentStatusToConfirm:(INPaymentStatus) paymentStatusToConfirm;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INPaymentStatusResolutionResult`](../inpaymentstatusresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method when you can resolve the parameter to a single value but want the user to confirm that value. For example, you might use this method if you cannot search based on the requested payment status but can search based on another value.
 

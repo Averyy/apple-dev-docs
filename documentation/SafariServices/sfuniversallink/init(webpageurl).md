@@ -19,7 +19,7 @@ init?(webpageURL url: URL)
 - (instancetype) initWithWebpageURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 This designated initializer creates a [`SFUniversalLink`](../sfuniversallink.md) object.
 

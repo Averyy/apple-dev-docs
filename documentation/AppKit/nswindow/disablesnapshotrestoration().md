@@ -19,7 +19,7 @@ func disableSnapshotRestoration()
 - (void) disableSnapshotRestoration;
 ```
 
-#### Discussion
+## Discussion
 
 After disabling snapshot restoration, the system doesn’t snapshot the window’s restorable state.
 

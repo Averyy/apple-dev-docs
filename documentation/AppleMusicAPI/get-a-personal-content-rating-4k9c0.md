@@ -9,7 +9,7 @@ Fetch a user’s rating for a song by using the song’s identifier.
 **Availability**:
 - Apple Music 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint requires a music user token. For more information, see [User Authentication for MusicKit](./user-authentication-for-musickit.md).
 
@@ -17,7 +17,7 @@ A rating indicates whether a user likes `(1)` or dislikes `(-1)` the song. These
 
 For a particular song, the personal ratings for that song’s catalog ID and library ID (if the playlist is in the library) stay synced.
 
-##### Example
+### Example
 
 **Request**:
 

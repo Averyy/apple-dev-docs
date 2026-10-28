@@ -21,7 +21,7 @@ var minItemSize: NSSize { get set }
 @property NSSize minItemSize;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is (`0`, `0`). If the item’s view is resizable, set the value to the minimum size that the view should use.
 

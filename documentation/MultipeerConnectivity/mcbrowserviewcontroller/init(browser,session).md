@@ -26,11 +26,11 @@ init(browser: MCNearbyServiceBrowser, session: MCSession)
 - (instancetype) initWithBrowser:(MCNearbyServiceBrowser *) browser session:(MCSession *) session;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an initialized object, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 This method throws an exception if the `browser` or `session` parameters do not contain valid objects.
 

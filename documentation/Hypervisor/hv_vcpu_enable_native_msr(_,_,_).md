@@ -19,11 +19,11 @@ func hv_vcpu_enable_native_msr(_ vcpu: hv_vcpuid_t, _ msr: UInt32, _ enable: Boo
 extern hv_return_t hv_vcpu_enable_native_msr(hv_vcpuid_t vcpu, uint32_t msr, bool enable);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 This function must be called by the owning thread..
 

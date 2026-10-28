@@ -13,7 +13,7 @@ static void timerFired(
  IOTimerEventSource *sender);
 ```
 
-#### Overview
+## Overview
 
 This function simply calls dispatchTimerEvents() on the IOAudioDevice to do just that.
 

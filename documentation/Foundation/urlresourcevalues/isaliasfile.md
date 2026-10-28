@@ -21,7 +21,7 @@ true if the resource is a Finder alias file or a symlink, false otherwise
 var isAliasFile: Bool? { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Only applicable to regular files.
 

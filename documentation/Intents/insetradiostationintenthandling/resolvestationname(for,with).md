@@ -28,7 +28,7 @@ optional func resolveStationName(for intent: INSetRadioStationIntent) async -> I
 - (void) resolveStationNameForSetRadioStation:(INSetRadioStationIntent *) intent withCompletion:(void (^)(INStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the name of the radio station. Use this method to set the radio to the station associated with the resolved name.
 

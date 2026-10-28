@@ -19,11 +19,11 @@ func es_unmute_path_events(_ client: OpaquePointer, _ path: UnsafePointer<CChar>
 extern es_return_t es_unmute_path_events(es_client_t *client, const char *path, es_mute_path_type_t type, const es_event_type_t *events, size_t event_count);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates whether the unmute request succeeded or failed with an error.
 
-#### Discussion
+## Discussion
 
 To unmute all events from a path, use [`es_unmute_path(_:_:_:)`](./es_unmute_path%28_,_,_%29.md).
 

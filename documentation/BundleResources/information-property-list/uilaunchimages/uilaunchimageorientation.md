@@ -28,7 +28,7 @@ A string containing the orientation of the image
 
 **Default**: `Portrait`
 
-#### Discussion
+## Discussion
 
 If it is not specified, the default orientation is `Portrait`.
 

@@ -5,11 +5,11 @@
 
 Global accessibility functions for custom views and controls.
 
-#### Overview
+## Overview
 
 Use these [`NSAccessibility`](./nsaccessibility-swift.struct.md) functions to enhance the accessibility experience of your custom view or control. Standard AppKit elements handle this behavior for you.
 
-##### Notifications
+### Notifications
 
 Your custom view or control may need to let the assistive app know when changes occur. For example, if your control’s value changes, you need to send a [`valueChanged`](./nsaccessibility-swift.struct/notification/valuechanged.md) notification.
 

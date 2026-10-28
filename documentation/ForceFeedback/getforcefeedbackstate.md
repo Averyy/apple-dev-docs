@@ -5,7 +5,7 @@
 
 This function returns the state of the device.
 
-#### Overview
+## Overview
 
 ```c
 HRESULT ( *GetForceFeedbackState)(
@@ -13,12 +13,12 @@ HRESULT ( *GetForceFeedbackState)(
    ForceFeedbackDeviceState *pDeviceState );
 ```
 
-##### Parameters
+### Parameters
 
 - **self**: Pointer to the FFPlugInDriver implementation instance.
 - **pDeviceState**: Pointer to a ForceFeedbackDeviceState structure that receives the device state. FF API sets the dwSize member of the ForceFeedbackDeviceState structure to sizeof(ForceFeedbackDeviceState) before calling this method.
 
-##### Return Value
+### Return Value
 
 Returns FF_OK.
 

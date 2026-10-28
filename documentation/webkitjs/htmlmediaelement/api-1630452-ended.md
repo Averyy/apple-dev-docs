@@ -16,7 +16,7 @@ A Boolean value that indicates whether the media played to the end. (read-only)
 readonly attribute boolean ended;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the video played to the end; otherwise, it did not.
 

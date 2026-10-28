@@ -31,7 +31,7 @@ var estimatedDropOffDate: Date? { get set }
 @property (atomic, copy, readwrite, nullable) NSDate * estimatedDropOffDate;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to provide an estimated time of arrival at the user’s destination.
 

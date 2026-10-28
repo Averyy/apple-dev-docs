@@ -24,7 +24,7 @@ case stackOverflow
 MTLCommandBufferErrorStackOverflow
 ```
 
-#### Discussion
+## Discussion
 
 You can set the largest number of stack frames your pipelines by configuring these properties:
 

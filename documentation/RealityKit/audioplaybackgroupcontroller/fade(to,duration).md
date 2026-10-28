@@ -21,7 +21,7 @@ Transitions the gain to the given value over a time interval using a linear curv
 @preconcurrency func fade(to newValue: Audio.Decibel, duration: TimeInterval)
 ```
 
-#### Discussion
+## Discussion
 
 The target gain must be zero or negative, where zero is nominal loudness and negative infinity is silent. If the gain is positive, it will be reset to zero.
 

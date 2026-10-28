@@ -5,7 +5,7 @@
 
 A type used by Endpoint Security to notify your client when a monitored action occurs.
 
-#### Overview
+## Overview
 
 When Endpoint Security monitors an event of a given type, it sends a message to all clients subscribed to that event type, containing data about the event. Handlers use this information to react to the event. In the case of authorization events, handlers must actively respond to the message and authorize or deny the monitored action. The client must respond before the [`deadline`](./es_message_t/deadline.md) specified by the message.
 

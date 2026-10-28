@@ -5,13 +5,13 @@
 
 Extend your web browser app to handle web authentication requests from other apps.
 
-#### Overview
+## Overview
 
 Apps can authenticate users through a web service using an instance of [`ASWebAuthenticationSession`](./aswebauthenticationsession.md). When an app calls the authentication session’s [`start()`](./aswebauthenticationsession/start%28%29.md) method, the system asks the user’s default web browser to initiate the authentication attempt at a given URL. If the default browser doesn’t handle authentication requests, the system falls back on Safari. Either way, the designated browser loads the URL, waits for the user to authenticate, and returns a callback URL that indicates the outcome of the attempt.
 
 If you distribute a web browser app on macOS, you can make it eligible to participate in this flow. You register the browser as a session handler, and then listen for and handle authentication requests.
 
-##### Declare the Session Handling Capability
+### Declare the Session Handling Capability
 
 Using the Xcode property list editor, add the [`ASWebAuthenticationSessionWebBrowserSupportCapabilities`](../BundleResources/information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities.md) key to your web browser’s [`Information Property List`](../BundleResources/information-property-list.md). For the key’s value, create a dictionary that contains the [`IsSupported`](../BundleResources/information-property-list/aswebauthenticationsessionwebbrowsersupportcapabilities/issupported.md) key, with a corresponding value of `YES`.
 
@@ -27,7 +27,7 @@ If you don’t provide the key, or if you set its value to `NO` and an app tries
 
 > **Note**:  It’s strongly recommended that your web browser support ephemeral sessions. Apps can specifically request this kind of session, and it’s important to honor the request.
 
-##### Listen for Authentication Requests
+### Listen for Authentication Requests
 
 Adopt the [`ASWebAuthenticationSessionWebBrowserSessionHandling`](./aswebauthenticationsessionwebbrowsersessionhandling.md) protocol in your web browser app to receive authentication requests. Choose a class that can act as the handler, and declare conformance to the protocol:
 
@@ -70,7 +70,7 @@ func applicationDidFinishLaunching(_ aNotification: Notification) {
 }
 ```
 
-##### Perform Authentication
+### Perform Authentication
 
 When your handler receives a new authentication request, load the URL given in the request’s [`url`](./aswebauthenticationsessionrequest/url.md) property and display the content to the user. The user interacts with the content to authenticate—for example, by entering credentials and clicking a button. The service performing the authentication indicates the outcome by redirecting the browser to a URL that uses a known callback scheme.
 
@@ -95,7 +95,7 @@ Alternatively, if the browser can’t complete the operation for any reason—fo
 
 If you declare that your browser supports ephemeral browsing, as described above in [Declare the Session Handling Capability](./supporting-single-sign-on-in-a-web-browser-app.md#Declare-the-Session-Handling-Capability), be sure to respect the request’s [`shouldUseEphemeralSession`](./aswebauthenticationsessionrequest/shoulduseephemeralsession.md) property. When this value is `true`, avoid using any existing browsing data, like cookies, during the authentication process. Also, avoid retaining any data collected during the authentication attempt beyond the lifetime of the attempt, or sharing it with any other session.
 
-##### Handle Launch for Authentication
+### Handle Launch for Authentication
 
 When your browser supports the authentication flow, the system might launch the browser specifically for the purpose of authentication. You can detect this condition by checking the [`wasLaunchedByAuthenticationServices`](./aswebauthenticationsessionwebbrowsersessionmanager/waslaunchedbyauthenticationservices.md) property of the shared session manager.
 

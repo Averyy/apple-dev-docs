@@ -19,7 +19,7 @@ var canResume: Bool { get }
 @property (readonly) BOOL canResume;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the VM is in a state that allows you to resume it. Call the [`resume(completionHandler:)`](./resume%28completionhandler%29.md) method (Swift)  or [`resume()`](./resume%28%29.md) method (Objective-C) to resume the VM
 

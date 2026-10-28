@@ -21,7 +21,7 @@ The system definition of the WebSocket protocol.
 struct WebSocket
 ```
 
-#### Overview
+## Overview
 
 Can be used to add WebSocket to a protocol stack and configure its options.
 

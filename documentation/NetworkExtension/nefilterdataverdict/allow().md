@@ -23,7 +23,7 @@ class func allow() -> NEFilterDataVerdict
 + (NEFilterDataVerdict *) allowVerdict;
 ```
 
-#### Return Value
+## Return Value
 
 A `NEFilterDataVerdict` object.
 

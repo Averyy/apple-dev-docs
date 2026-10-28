@@ -19,7 +19,7 @@ class var shared: NSFontManager { get }
 @property (class, strong, readonly) NSFontManager * sharedFontManager;
 ```
 
-#### Return Value
+## Return Value
 
 The shared font manager.
 

@@ -24,7 +24,7 @@ void IORWLockWrite(struct IORWLock *lock);
 void IORWLockWrite(IORWLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Lock the lock for write, allowing one writer exlusive access. If the lock is held for read or write, block waiting for its unlock. This function may block and so should not be called from interrupt level or while a spin lock is held. Locking the lock recursively from one thread, for read or write, can result in deadlock.
 

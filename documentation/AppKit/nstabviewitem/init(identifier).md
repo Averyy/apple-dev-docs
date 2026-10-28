@@ -19,7 +19,7 @@ init(identifier: Any?)
 - (instancetype) initWithIdentifier:(id) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Sets the receiver’s identifier object to `identifier`, if it is not `nil`. Use this method when creating tab view items programmatically.
 

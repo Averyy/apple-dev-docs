@@ -16,11 +16,11 @@
 virtual kern_return_t gatedReturnCommand(IOCommand *command);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success. See IOReturn.h for error codes.
 
-#### Discussion
+## Discussion
 
 The gatedReturnCommand method is used to serialize the return of a command to the pool synchronized with the pool’s queue.
 

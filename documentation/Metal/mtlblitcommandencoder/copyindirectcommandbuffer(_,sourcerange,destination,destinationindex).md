@@ -20,7 +20,7 @@ Encodes a command that copies commands from one indirect command buffer into ano
 func copyIndirectCommandBuffer(_ buffer: any MTLIndirectCommandBuffer, sourceRange: Range<Int>, destination: any MTLIndirectCommandBuffer, destinationIndex: Int)
 ```
 
-#### Discussion
+## Discussion
 
 You can copy commands from one indirect command buffer to another, but only a compatible one. You can create compatible indirect command buffers by passing [`MTLIndirectCommandBufferDescriptor`](../mtlindirectcommandbufferdescriptor.md) instances with the same configuration to the [`makeIndirectCommandBuffer(descriptor:maxCommandCount:options:)`](../mtldevice/makeindirectcommandbuffer%28descriptor,maxcommandcount,options%29.md) method of [`MTLDevice`](../mtldevice.md).
 

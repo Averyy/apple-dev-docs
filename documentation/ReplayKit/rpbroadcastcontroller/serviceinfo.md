@@ -26,7 +26,7 @@ var serviceInfo: [String : any NSCoding & NSObjectProtocol]? { get }
 @property (nonatomic, readonly, nullable) NSDictionary<NSString *,NSObject<NSCoding> *> * serviceInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The keys and values for the dictionary are defined by the broadcast service and updated through the [`updateServiceInfo(_:)`](../rpbroadcasthandler/updateserviceinfo%28_%29.md) function. This property is KVO observable.
 

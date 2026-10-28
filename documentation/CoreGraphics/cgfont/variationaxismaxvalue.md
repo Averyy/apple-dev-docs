@@ -25,7 +25,7 @@ class let variationAxisMaxValue: CFString
 extern CFStringRef const kCGFontVariationAxisMaxValue;
 ```
 
-#### Discussion
+## Discussion
 
 The value obtained with this key is a [`CFNumber`](../../CoreFoundation/cfnumber.md) that specifies the maximum value of the variation axis.
 

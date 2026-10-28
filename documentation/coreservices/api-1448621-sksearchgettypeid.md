@@ -19,11 +19,11 @@ func SKSearchGetTypeID() -> CFTypeID
 CFTypeID SKSearchGetTypeID(void);
 ```
 
-#### Return Value
+## Return Value
 
 A CFTypeID object containing the type identifier for the SKSearch opaque type.
 
-#### Discussion
+## Discussion
 
 Search Kit represents searches with search objects ([`SKSearch`](./sksearch.md) opaque types). If your code needs to determine whether a particular data type is a search object, you can use this function along with the [`CFGetTypeID(_:)`](../CoreFoundation/cfgettypeid%28_%29.md) function and perform a comparison.
 

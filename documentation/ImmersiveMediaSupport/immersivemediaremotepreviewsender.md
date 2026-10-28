@@ -15,7 +15,7 @@ An observable object that helps an app send the required data to all connected r
 class ImmersiveMediaRemotePreviewSender
 ```
 
-#### Overview
+## Overview
 
 Applications have to implement the protocol [`ImmersiveMediaPreviewMessagingProtocol`](./immersivemediapreviewmessagingprotocol.md) so that messages exchanged between sender and receivers are in the correct format for processing. Applications need to provide this as custom protocol when establishing the network connection between the sender and the receivers.
 

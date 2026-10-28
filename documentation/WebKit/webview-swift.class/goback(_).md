@@ -20,7 +20,7 @@ func goBack(_ sender: Any?)
 - (void) goBack:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method does nothing if it is unable to move backward.
 

@@ -19,7 +19,7 @@ func resetCursorRects()
 - (void) resetCursorRects;
 ```
 
-#### Discussion
+## Discussion
 
 This method resets the cursor rectangles by sending [`resetCursorRect(_:in:)`](../nscell/resetcursorrect%28_,in%29.md) to each cell in the receiver. Any cell that has a cursor rectangle to set up should then send [`addCursorRect(_:cursor:)`](../nsview/addcursorrect%28_,cursor%29.md) back to the receiver.
 

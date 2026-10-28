@@ -19,7 +19,7 @@ optional func webView(_ webView: WebView!, didClearWindowObject windowObject: We
 - (void) webView:(WebView *) webView didClearWindowObject:(WebScriptObject *) windowObject forFrame:(WebFrame *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to set custom properties on the window object before the page is actually loaded. Every time a frame loads or is reloaded all DOM properties are cleared from the window object so the new page has a fresh window object to use. If the page you are loading depends on specific window object properties to exist, they should be added at this point before any scripts are executed.
 

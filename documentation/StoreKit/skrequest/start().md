@@ -27,7 +27,7 @@ func start()
 - (void) start;
 ```
 
-#### Discussion
+## Discussion
 
 The results for a request are sent to the request’s delegate.
 

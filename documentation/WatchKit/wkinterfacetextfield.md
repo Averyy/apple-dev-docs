@@ -19,7 +19,7 @@ class WKInterfaceTextField
 @interface WKInterfaceTextField : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 Text fields gather text-based input from the user. The text field defines an area of editable text within your user interface, letting you create forms with multiple input fields.
 
@@ -33,7 +33,7 @@ You can also describe the expected content to the user in the text field’s pla
 
 For general text input, consider using [`presentTextInputController(withSuggestions:allowedInputMode:completion:)`](./wkinterfacecontroller/presenttextinputcontroller%28withsuggestions,allowedinputmode,completion%29.md) or [`presentTextInputControllerWithSuggestions(forLanguage:allowedInputMode:completion:)`](./wkinterfacecontroller/presenttextinputcontrollerwithsuggestions%28forlanguage,allowedinputmode,completion%29.md) instead. Call these methods to display the text input controller with the suggestions that you provide. Keep in mind that the system doesn’t provide the text input controller with a content type, so the system cannot optimize its behavior.
 
-##### Configure the Text Field
+### Configure the Text Field
 
 As with other WatchKit interface objects, you should not subclass or create instances of this class. Instead, add a text field to your WatchKit App’s storyboard. The system then creates the text field when it loads the storyboard.
 
@@ -64,7 +64,7 @@ To dynamically modify a text field at runtime, define an outlet in your interfac
 
 During your interface controller’s initialization, WatchKit creates a new instance of the [`WKInterfaceTextField`](./wkinterfacetextfield.md) class and assigns it to your outlet. At that point, you can use the object in your outlet to manage the text field.
 
-##### Receive Text Input
+### Receive Text Input
 
 To receive the text entered by the user, connect the text field in the storyboard to an action method defined in your interface controller.
 

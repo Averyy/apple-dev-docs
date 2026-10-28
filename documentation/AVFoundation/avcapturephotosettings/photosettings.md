@@ -19,11 +19,11 @@ Creates a photo settings object with default settings.
 + (instancetype) photoSettings;
 ```
 
-#### Return Value
+## Return Value
 
 A new photo settings object.
 
-#### Discussion
+## Discussion
 
 Capturing a photo with default settings delivers a single image in JPEG format.
 

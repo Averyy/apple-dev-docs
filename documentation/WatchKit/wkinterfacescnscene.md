@@ -19,7 +19,7 @@ class WKInterfaceSCNScene
 @interface WKInterfaceSCNScene : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 To provide content for a [`WKInterfaceSCNScene`](./wkinterfacescnscene.md) interface object, assign a [`SCNScene`](../SceneKit/scnscene.md) object to the interface’s [`scene`](./wkinterfacescnscene/scene.md) property. For additional methods and properties for working with SceneKit, see the [`SCNSceneRenderer`](../SceneKit/scnscenerenderer.md) protocol, which defines functionality common across all platforms.
 
@@ -41,7 +41,7 @@ During the initialization of your interface controller, WatchKit creates a new i
 
 The SceneKit scene in your Watch app must be connected to a [`WKInterfaceSCNScene`](./wkinterfacescnscene.md) outlet in your WatchKit extension for the scene to be visible in your watchOS app’s user interface.
 
-##### Interface Builder Attributes
+### Interface Builder Attributes
 
 Xcode lets you configure information about your SceneKit Scene in your storyboard file. The following table lists the attributes you can configure in your storyboard and their meaning.
 
@@ -54,7 +54,7 @@ Xcode lets you configure information about your SceneKit Scene in your storyboar
 | Play | A checkbox that determines whether the scene is animated. If unchecked, SceneKit does not increment the scene time, so animations associated with the scene do not play. You can also set this value programmatically using the [`isPlaying`](../SceneKit/scnscenerenderer/isplaying.md) property. |
 | Loop | A checkbox that determines whether SceneKit restarts the scene time after all animations in the scene have played. If checked, SceneKit returns the scene time to zero after all animations associated with the scene have played, causing those animations to repeat; otherwise, SceneKit stops playing the scene when all animations have completed. You can also set this value programmatically using the [`loops`](../SceneKit/scnscenerenderer/loops.md) property. |
 
-##### Enabling Full Screen Mode
+### Enabling Full Screen Mode
 
 By default, when a watchOS app is running, the system reserves a strip of space across the top of the screen to display the time. The app’s content is only displayed in the area below the time.
 

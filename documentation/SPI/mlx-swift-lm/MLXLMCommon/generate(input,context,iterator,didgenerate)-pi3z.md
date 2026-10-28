@@ -19,11 +19,11 @@ Low-level token generation using a [`TokenIterator`](./tokeniterator.md).
 func generate(input: LMInput, context: ModelContext, iterator: TokenIterator, didGenerate: ([Int]) -> GenerateDisposition) -> GenerateResult
 ```
 
-#### Return Value
+## Return Value
 
 The generated output
 
-#### Discussion
+## Discussion
 
 [`generate(input:cache:state:parameters:context:components:wiredMemoryTicket:tools:)`](./generate%28input,cache,state,parameters,context,components,wiredmemoryticket,tools%29.md) returning `AsyncStream<Generation>` is the preferred call.
 

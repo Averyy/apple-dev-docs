@@ -25,11 +25,11 @@ func map() -> MDLMeshBufferMap
 - (MDLMeshBufferMap *) map;
 ```
 
-#### Return Value
+## Return Value
 
 A data object mapped to the storage memory for the buffer.
 
-#### Discussion
+## Discussion
 
 The buffer’s storage remains mapped for as long as the returned [`MDLMeshBufferMap`](../mdlmeshbuffermap.md) object exists, potentially restricting other uses of that storage. For example, if a buffer’s storage is shared with GPU memory, that buffer may be unavailable for use in rendering until the [`MDLMeshBufferMap`](../mdlmeshbuffermap.md) object is deallocated.
 

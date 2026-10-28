@@ -24,7 +24,7 @@ class PHASECardioidDirectivityModelSubbandParameters
 @interface PHASECardioidDirectivityModelSubbandParameters : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class defines one subband in the [`PHASECardioidDirectivityModelParameters`](./phasecardioiddirectivitymodelparameters.md) class’s `subbands`. Depending on the specific shape you define with [`pattern`](./phasecardioiddirectivitymodelsubbandparameters/pattern.md) and [`sharpness`](./phasecardioiddirectivitymodelsubbandparameters/sharpness.md), you can attenuate sound focused at [`frequency`](./phasecardioiddirectivitymodelsubbandparameters/frequency.md) to the sides of the listener, while leaving the sound in front of or behind the listener unchanged.
 

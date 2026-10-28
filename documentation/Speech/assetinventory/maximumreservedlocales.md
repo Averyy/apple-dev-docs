@@ -20,7 +20,7 @@ The number of locale reservations permitted to an app.
 static var maximumReservedLocales: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is the largest allowed count of [`reservedLocales`](./reservedlocales.md). The value may vary between devices according to storage space.
 

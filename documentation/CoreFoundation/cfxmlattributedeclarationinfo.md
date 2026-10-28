@@ -19,7 +19,7 @@ struct CFXMLAttributeDeclarationInfo
 typedef struct { ... } CFXMLAttributeDeclarationInfo;
 ```
 
-#### Overview
+## Overview
 
 This structure is part of the definition of the [`CFXMLAttributeListDeclarationInfo`](./cfxmlattributelistdeclarationinfo.md) structure.
 

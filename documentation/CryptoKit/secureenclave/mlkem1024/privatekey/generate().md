@@ -21,11 +21,11 @@ Generates a new random private key.
 static func generate() throws -> SecureEnclave.MLKEM1024.PrivateKey
 ```
 
-#### Return Value
+## Return Value
 
 The generated private key
 
-#### Discussion
+## Discussion
 
 This method implements the required interface for the KEMPrivateKey extension, in this case invoking the initializer with a default SecAccessControl and no LAContext.
 

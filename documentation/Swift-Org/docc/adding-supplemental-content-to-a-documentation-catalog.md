@@ -10,7 +10,7 @@ framework: "Swift-Org/docc"
 
 Include articles and extension files to extend your source documentation comments or provide supporting conceptual content.
 
-#### Overview
+## Overview
 
 A documentation catalog (a directory with a ‘.docc’ extension) contains files that enrich your source documentation comments. Two types of files that documentation catalogs can contain are articles and extension files.
 
@@ -29,7 +29,7 @@ For details about adding a landing page and organizing symbols using extension f
 
 The process of crafting great documentation is an art. Your content is unique; you know which elements, beyond source documentation comments, provide the most value to your readers. For information about adding documentation to your project and creating a documentation catalog, see [Documenting a Swift Framework or Package](./documenting-a-swift-framework-or-package.md).
 
-##### Add Articles to Explain Concepts or Describe Tasks
+### Add Articles to Explain Concepts or Describe Tasks
 
 Adding articles to your documentation catalog helps readers understand how the types and methods in your project work as a system. They let you explain how to complete a task, or discuss a broader concept that doesn’t fit into an Overview section for a specific symbol.
 
@@ -63,7 +63,7 @@ After the Overview section, additional sections and subsections use a double has
 
 When you add an article to a documentation catalog, DocC includes a link to it on the project’s top-level page. To choose a different location for the article, add a link to it from a group or collection. When DocC renders a link to an article, it uses the article’s title for the text of the link. For more information about organizing your project’s documentation, see [Adding Structure to Your Documentation Pages](./adding-structure-to-your-documentation-pages.md).
 
-##### Add Extension Files to Append to or Override Source Documentation Comments
+### Add Extension Files to Append to or Override Source Documentation Comments
 
 Although writing documentation comments in source files has many benefits, in some circumstances it makes more sense to separate content from the source files, such as:
 

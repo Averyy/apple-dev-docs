@@ -15,7 +15,7 @@ A set of attributes that indicate the notification’s priority level.
 let attributes: AccessoryNotification.Attributes
 ```
 
-#### Discussion
+## Discussion
 
 Use these attributes to change the visual appearance of and add information about your notification. For guidance on whether to alert for a notification, see [`AlertingContext`](../alertingcontext.md).
 

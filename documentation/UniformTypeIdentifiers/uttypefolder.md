@@ -21,7 +21,7 @@ A type that represents a user-browsable directory.
 extern UTType * const UTTypeFolder;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.folder`.
 

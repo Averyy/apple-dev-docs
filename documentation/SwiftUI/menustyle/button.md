@@ -23,7 +23,7 @@ nonisolated static var button: ButtonMenuStyle { get }
 
 Available when `Self` is `ButtonMenuStyle`.
 
-#### Discussion
+## Discussion
 
 On macOS, the button displays an arrow to indicate that it presents a menu.
 

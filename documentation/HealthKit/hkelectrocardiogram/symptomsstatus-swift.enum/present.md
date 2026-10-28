@@ -24,7 +24,7 @@ case present
 HKElectrocardiogramSymptomsStatusPresent
 ```
 
-#### Discussion
+## Discussion
 
 To access the symptoms, query for the [`HKCategorySample`](../../hkcategorysample.md) samples associated with the electrocardiogram sample.
 

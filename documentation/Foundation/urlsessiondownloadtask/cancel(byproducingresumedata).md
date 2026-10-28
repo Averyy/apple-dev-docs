@@ -34,7 +34,7 @@ func cancelByProducingResumeData() async -> Data?
 - [Pausing and resuming downloads](../pausing-and-resuming-downloads.md)
 - [Pausing and resuming uploads](../pausing-and-resuming-uploads.md)
 
-#### Discussion
+## Discussion
 
 A download can be resumed only if the following conditions are met:
 

@@ -5,7 +5,7 @@
 
 Add custom simulators and pair physical devices with your Mac so you can choose them as run destinations in Xcode.
 
-#### Overview
+## Overview
 
 Use Device Hub to add specific simulator configurations and pair physical devices that you want to test your app on.
 
@@ -19,7 +19,7 @@ To see the status of a device, select it in the sidebar and any issues appear in
 
 For information on running your app on devices that you manage in Device Hub, see [Running your app on simulated or physical devices](./running-your-app-on-simulated-or-physical-devices.md).
 
-#### Add additional simulators
+## Add additional simulators
 
 You can add simulators for specific platforms and operating system versions that don’t appear in the Xcode run destination pop-up menu.
 
@@ -31,7 +31,7 @@ If the operating system version you want to use doesn’t appear in the dialog, 
 
 To remove a simulator from Device Hub, Control-click it in the sidebar and choose Remove.
 
-#### Pair physical devices wirelessly to your Mac
+## Pair physical devices wirelessly to your Mac
 
 > ❗ **Important**: Upgrade your iPhone or iPad to iOS or iPadOS 27 or later to wirelessly pair it; otherwise, use a cable.
 
@@ -54,7 +54,7 @@ When the Trust This Computer dialog appears on the device, tap Trust. For an App
 
 After completing the steps, the device appears in the Device Hub sidebar. If you upgrade the operating system later, you’ll need to pair the device again. To explicitly unpair a device, Control-click the device in the sidebar and choose Unpair.
 
-#### Pair devices using a cable
+## Pair devices using a cable
 
 Connect the device with an appropriate cable to your Mac. If a Trust This Computer dialog appears on the device, tap Trust.
 

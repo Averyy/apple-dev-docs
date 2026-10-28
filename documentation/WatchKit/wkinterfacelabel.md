@@ -23,7 +23,7 @@ class WKInterfaceLabel
 
 - [Connecting Your User Interface to Your Code](./connecting-your-user-interface-to-your-code.md)
 
-#### Overview
+## Overview
 
 Use [`WKInterfaceLabel`](./wkinterfacelabel.md) to manipulate the contents of a label at runtime, such as setting a new text string. The string you specify can use the default styling you specified at design time, or you can use an attributed string to add custom styling to the text.
 
@@ -45,7 +45,7 @@ During the initialization of your interface controller, WatchKit creates any nee
 
 Label objects apply the font and style information specified in your storyboard. You can specify a different set of style attributes by calling the [`setAttributedText(_:)`](./wkinterfacelabel/setattributedtext%28_%29.md) method and providing an appropriately formatted attributed string object. When specifying text with an [`NSString`](../Foundation/nsstring.md) object, the only other change you can make is to the text color.
 
-##### Interface Builder Configuration Options
+### Interface Builder Configuration Options
 
 Xcode lets you configure information about your label interface object in your storyboard file. The following table lists the attributes you can configure and their meaning.
 

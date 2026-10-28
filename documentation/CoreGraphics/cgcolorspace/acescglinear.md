@@ -25,7 +25,7 @@ class let acescgLinear: CFString
 extern CFStringRef const kCGColorSpaceACESCGLinear;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see “ACEScg—A Working Space for CGI Render and Compositing”, Version 1.0.1, Academy of Motion Picture Arts and Sciences ([http://www.oscars.org/science-technology/sci-tech-projects/aces](http://www.oscars.org/science-technology/sci-tech-projects/aces)).
 

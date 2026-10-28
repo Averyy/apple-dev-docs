@@ -24,7 +24,7 @@ protocol MTL4MachineLearningPipelineState : MTLAllocation, Sendable
 @protocol MTL4MachineLearningPipelineState <MTLAllocation, NSObject>
 ```
 
-#### Overview
+## Overview
 
 See [`MTL4MachineLearningCommandEncoder`](./mtl4machinelearningcommandencoder.md) for more information.
 

@@ -21,7 +21,7 @@ Accesses the element at the specified position.
 subscript(unchecked i: InlineArray<count, Element>.Index) -> Element { get set }
 ```
 
-#### Overview
+## Overview
 
 > ⚠️ **Warning**: This subscript trades safety for performance. Using an invalid index results in undefined behavior.
 

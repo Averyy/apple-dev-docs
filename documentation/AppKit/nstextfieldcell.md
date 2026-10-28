@@ -19,7 +19,7 @@ class NSTextFieldCell
 @interface NSTextFieldCell : NSActionCell
 ```
 
-#### Overview
+## Overview
 
 The [`NSTextFieldCell`](./nstextfieldcell.md) class adds to the text display capabilities of the [`NSCell`](./nscell.md) class by allowing you to set the color of both the text and its background. You can also specify whether the cell draws its background at all.
 
@@ -27,7 +27,7 @@ All of the methods declared by this class are also declared by the [`NSTextField
 
 Placeholder strings, set using the [`placeholderString`](./nstextfieldcell/placeholderstring.md) or [`placeholderAttributedString`](./nstextfieldcell/placeholderattributedstring.md) property, appear in the text field cell if the actual string is `nil` or an empty string. They’re drawn in gray on the cell and aren’t archived in the “pre-10.2” nib format.
 
-##### Designated Initializers
+### Designated Initializers
 
 When subclassing `NSTextFieldCell` you must implement the designated initializers [`init(coder:)`](./nscell/init%28coder%29.md) and [`init(textCell:)`](./nscell/init%28textcell%29.md).
 

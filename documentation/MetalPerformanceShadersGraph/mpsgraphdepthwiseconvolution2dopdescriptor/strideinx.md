@@ -24,7 +24,7 @@ var strideInX: Int { get set }
 @property (nonatomic, readwrite) NSUInteger strideInX;
 ```
 
-#### Discussion
+## Discussion
 
 Default value: 1.
 

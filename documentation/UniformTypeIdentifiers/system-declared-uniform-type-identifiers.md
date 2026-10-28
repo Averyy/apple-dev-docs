@@ -5,7 +5,7 @@
 
 Common types that the system declares.
 
-#### Overview
+## Overview
 
 Uniform type identifiers declare common types for resources an app loads, saves, or opens from other apps. Apps that use proprietary types can define them by using the system’s unified type identifiers as base types.
 

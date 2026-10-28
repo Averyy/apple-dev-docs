@@ -25,7 +25,7 @@ var bufferOffset: Int { get }
 @property (readonly) NSUInteger bufferOffset;
 ```
 
-#### Discussion
+## Discussion
 
 This property is only valid for textures created from a [`buffer`](./buffer.md). The default value is `0`.
 

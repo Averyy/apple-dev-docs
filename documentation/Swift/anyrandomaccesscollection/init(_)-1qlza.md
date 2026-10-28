@@ -21,7 +21,7 @@ Creates a type-erased collection that wraps the given collection.
 init<C>(_ base: C) where Element == C.Element, C : RandomAccessCollection
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1).
 

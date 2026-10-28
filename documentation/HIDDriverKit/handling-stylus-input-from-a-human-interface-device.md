@@ -11,7 +11,7 @@ Process stylus-related input from a human interface device and dispatch events t
 - macOS 10.15+
 - Xcode 12.0+
 
-#### Overview
+## Overview
 
 The human interface device (HID) specification defines how hardware, such as keyboards and mice, communicates information to a host computer. HID hardware comes in a variety of types, and corresponds to an expected type of usage. Each device communicates this usage information, along with data values, to the host computer. A driver processes the data and uses it to dispatch relevant events to the operating system.
 
@@ -19,7 +19,7 @@ The HIDStylusDriver sample implements an event service that processes input from
 
 For details about working with HID hardware, see the HID specification at [https://www.usb.org/](https://www.usb.org/).
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 You can’t use automatic code signing for this sample app. You must create an explicit App ID and provisioning profile, and your provisioning profile must contain the following set of entitlements:
 
@@ -44,7 +44,7 @@ Note: If an error occurs during the installation process, the app writes an appr
 
 For additional information, see [Debugging and Testing System Extensions](../DriverKit/debugging-and-testing-system-extensions.md).
 
-##### Start Up the Event Service
+### Start Up the Event Service
 
 After matching an event service to a device, the system calls the [`Start`](./iouserhideventservice/start.md) method of that service. The [`Start`](./iouserhideventservice/start.md) method verifies that the event service is able to run, and puts it into the running state.
 
@@ -71,7 +71,7 @@ IMPL(HIDStylusDriver, Start)
 
 Notice that the implementation of the `Start` method includes the [`IMPL`](../DriverKit/impl.md) macro instead of the normal list of parameters. This macro provides binding between the kernel (which calls the method), and the method itself (which runs in user space). The [`SUPERDISPATCH`](../DriverKit/superdispatch.md) macro provides a similar binding in the other direction. The sample uses it to call inherited methods that run in the kernel, such as the [`Start`](./iouserhideventservice/start.md) method of [`IOUserHIDEventService`](./iouserhideventservice.md).
 
-##### Identify Stylus-Related Elements
+### Identify Stylus-Related Elements
 
 The [`IOUserHIDEventService`](./iouserhideventservice.md) class automatically handles incoming reports from the device, turning the raw bytes of the report into a set of [`IOHIDElement`](./iohidelement.md) objects. Each element object contains details about a particular piece of data that the device supports. For example, some elements from a stylus contain the position of the stylus, its tilt, or the amount of pressure at its tip.
 
@@ -189,7 +189,7 @@ exit:
 }
 ```
 
-##### Dispatch an Event When the Stylus Data Changes
+### Dispatch an Event When the Stylus Data Changes
 
 When HID hardware detects changes in its state, it reports the details of those changes to the host computer. The host forwards each new report to the relevant drivers for handling. In a custom subclass of [`IOUserHIDEventService`](./iouserhideventservice.md), the [`handleReport`](./iouserhideventservice/handlereport.md) method receives the report data and processes it. For example, a driver might use custom data provided by the device to dispatch a modified event to the system.
 

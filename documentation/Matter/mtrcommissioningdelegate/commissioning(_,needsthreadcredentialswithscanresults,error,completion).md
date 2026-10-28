@@ -29,7 +29,7 @@ optional func commissioning(_ commissioning: MTRCommissioningOperation, needsThr
 - (void) commissioning:(MTRCommissioningOperation *) commissioning needsThreadCredentialsWithScanResults:(NSArray<MTRNetworkCommissioningClusterThreadInterfaceScanResultStruct *> *) networks error:(NSError *) error completion:(void (^)(NSData *operationalDataset)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Commissioning will pause, including in cases when the network scan failed, until the completion is invoked with the operational dataset the commissionee should use, or until commissioning is stopped.
 

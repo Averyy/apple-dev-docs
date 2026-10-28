@@ -23,7 +23,7 @@ case byTruncatingTail
 kCTLineBreakByTruncatingTail
 ```
 
-#### Discussion
+## Discussion
 
 Each line is displayed so that the beginning fits in the container and the missing text is indicated by an ellipsis glyph.
 

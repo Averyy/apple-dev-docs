@@ -22,7 +22,7 @@ Create the `AXChartDescriptor` for this view, and return it.
 func makeChartDescriptor() -> AXChartDescriptor
 ```
 
-#### Discussion
+## Discussion
 
 This will be called once per identity of your `View`. It will not be run again unless the identity of your `View` changes. If you need to update the `AXChartDescriptor` based on changes in your `View`, or in the `Environment`, implement `updateChartDescriptor`. This method will only be called if / when accessibility needs the `AXChartDescriptor` of your view, for VoiceOver.
 

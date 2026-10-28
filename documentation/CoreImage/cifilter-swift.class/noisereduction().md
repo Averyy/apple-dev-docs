@@ -24,11 +24,11 @@ class func noiseReduction() -> any CIFilter & CINoiseReduction
 + (CIFilter<CINoiseReduction> *) noiseReductionFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The blurred image.
 
-#### Discussion
+## Discussion
 
 This method applies the noise reduction filter to an image. The effect calculates changes in luminance below the noise level and locally blurs the area. Values above the threshold are determined to be edges, and become sharpened.
 

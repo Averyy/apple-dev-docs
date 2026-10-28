@@ -5,11 +5,11 @@
 
 Mark issues as known when running tests.
 
-#### Overview
+## Overview
 
 The testing library provides several functions named `withKnownIssue()` that you can use to mark issues as known. Use them to inform the testing library that a test should not be marked as failing if only known issues are recorded.
 
-##### Mark an expectation failure as known
+### Mark an expectation failure as known
 
 Consider a test function with a single expectation:
 
@@ -35,7 +35,7 @@ If the value of the `isHeating` property is `false`, `#expect` will record an is
 
 The issue recorded by `#expect` will then be considered “known” and the test will not be marked as a failure. You may include an optional comment to explain the problem or provide context.
 
-##### Mark a thrown error as known
+### Mark a thrown error as known
 
 If an `Error` is caught by the closure passed to `withKnownIssue()`, the issue representing that caught error will be marked as known. Continuing the previous example, suppose the problem is that the `startGrill()` function is throwing an error. You can apply `withKnownIssue()` to this situation as well:
 
@@ -53,7 +53,7 @@ Because all errors thrown from the closure are caught and interpreted as known i
 
 > **Note**: `withKnownIssue()` is recommended instead of `#expect(throws:)` for any error which is considered a known issue so that the test status and results will reflect the situation more accurately.
 
-##### Match a specific issue
+### Match a specific issue
 
 By default, `withKnownIssue()` considers all issues recorded while invoking the body closure known. If multiple issues may be recorded, you can pass a trailing closure labeled `matching:` which will be called once for each recorded issue to determine whether it should be treated as known:
 
@@ -72,11 +72,11 @@ By default, `withKnownIssue()` considers all issues recorded while invoking the 
 }
 ```
 
-##### Resolve a known issue
+### Resolve a known issue
 
 If there are no issues recorded while calling `function`, `withKnownIssue()` will record a distinct issue about the lack of any issues having been recorded. This notifies you that the underlying problem may have been resolved so that you can investigate and consider removing `withKnownIssue()` if it’s no longer necessary.
 
-##### Handle a nondeterministic failure
+### Handle a nondeterministic failure
 
 If `withKnownIssue()` sometimes succeeds but other times records an issue indicating there were no known issues, this may indicate a nondeterministic failure or a “flaky” test.
 

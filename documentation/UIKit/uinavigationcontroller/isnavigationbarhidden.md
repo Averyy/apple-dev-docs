@@ -23,7 +23,7 @@ var isNavigationBarHidden: Bool { get set }
 @property (nonatomic, getter=isNavigationBarHidden) BOOL navigationBarHidden;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the navigation bar is hidden. The default value is [`false`](../../Swift/false.md). Setting this property changes the visibility of the navigation bar without animating the changes. If you want to animate the change, use the [`setNavigationBarHidden(_:animated:)`](./setnavigationbarhidden%28_,animated%29.md)method instead.
 

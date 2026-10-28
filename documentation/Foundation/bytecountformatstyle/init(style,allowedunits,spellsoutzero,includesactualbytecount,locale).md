@@ -21,7 +21,7 @@ Initializes a byte count format style.
 init(style: ByteCountFormatStyle.Style = .file, allowedUnits: ByteCountFormatStyle.Units = .all, spellsOutZero: Bool = true, includesActualByteCount: Bool = false, locale: Locale = .autoupdatingCurrent)
 ```
 
-#### Discussion
+## Discussion
 
 In situations that can infer the [`ByteCountFormatStyle`](../bytecountformatstyle.md) type, you can call [`byteCount(style:allowedUnits:spellsOutZero:includesActualByteCount:)`](../formatstyle/bytecount%28style,allowedunits,spellsoutzero,includesactualbytecount%29-59ep0.md) instead of explicitly using this initializer. This is the case when you call [`formatted(_:)`](../../Swift/binaryinteger/formatted%28_%29-4qd73.md) on a [`BinaryInteger`](../../Swift/binaryinteger.md).
 

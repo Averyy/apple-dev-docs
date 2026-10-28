@@ -23,7 +23,7 @@ case `default`
 UITextSmartInsertDeleteTypeDefault
 ```
 
-#### Discussion
+## Discussion
 
 This option selectively enables the automatic deletion of one or two neighboring spaces after a cut or delete, and the insertion of an extra space after a paste. For example, this option disables the behavior for email address and password keyboards.
 

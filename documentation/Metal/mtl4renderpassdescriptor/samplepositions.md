@@ -20,7 +20,7 @@ Configures the custom sample positions to use in MSAA rendering.
 var samplePositions: [MTLSamplePosition] { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set to an empty array to disable custom sample positions.
 

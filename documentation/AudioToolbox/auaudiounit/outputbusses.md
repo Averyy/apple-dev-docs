@@ -32,7 +32,7 @@ var outputBusses: AUAudioUnitBusArray { get }
 @property (atomic, readonly) AUAudioUnitBusArray * outputBusses;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses must override this property’s getter. The audio unit should return the same object every time it is asked for it, since hosts can install KVO observers on it.
 

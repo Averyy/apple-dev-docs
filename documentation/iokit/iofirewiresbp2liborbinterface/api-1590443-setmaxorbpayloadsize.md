@@ -16,7 +16,7 @@ Sets max payload size for the ORB.
 void (*setMaxORBPayloadSize)(void *self, UInt32 size);
 ```
 
-#### Discussion
+## Discussion
 
 This sets the maximum payload size for this ORB only. This size is clipped by the global max payload size set in the login object.
 

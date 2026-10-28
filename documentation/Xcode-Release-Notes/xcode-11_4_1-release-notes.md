@@ -5,86 +5,86 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 Xcode 11.4.1 includes SDKs for iOS 13.4, iPadOS 13.4, tvOS 13.4, watchOS 6.2, and macOS Catalina 10.15.4. The Xcode 11.4.1 release supports on-device debugging for iOS 8 and later, tvOS 9 and later, and watchOS 2 and later. Xcode 11.4.1 requires a Mac running macOS Catalina 10.15.2 or later.
 
-##### Apple Clang Compiler
+### Apple Clang Compiler
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a crash that could occur when compiling with `-fstack-check` and `-fomit-frame-pointer` on x86_64, if the stack was not 16-byte aligned before the call to the stack check function `__darwin_chkstk`. (61028954) (FB7644341)
 
-##### Asset Catalog
+### Asset Catalog
 
-###### Known Issues
+#### Known Issues
 
 - iOS apps with asset catalogs built with Xcode 11.4 may experience slower image loading performance in Dark Mode when deployed to devices running iOS 13.3 or earlier. (61200701) (FB7648891)
 
   **Workaround**: Add a symbol glyph to the app’s asset catalog.
 
-##### Instruments
+### Instruments
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where Instruments wouldn’t record [`os_log`](../os/os_log.md) and `os_signpost` data when targeting Simulator devices. (60883664) (FB7639664)
 
-##### Interface Builder
+### Interface Builder
 
 - Fixed an issue that caused some [`UINavigationBar`](../UIKit/uinavigationbar.md) appearance properties set in storyboard and XIB documents to be ignored when building with Xcode 11.4. (60883063) (FB7639654)
 
-##### Linking
+### Linking
 
-###### Resolved Issues
+#### Resolved Issues
 
 - The linker no longer sanitizes `-segprot` permissions and allows programs to be built with different `init` and `max` segment permissions. Note that future OS releases may not support non-standard segment permissions. (61137066)
 
-##### Previews
+### Previews
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue that could cause previews to fail for applications built with Mac Catalyst or sandboxed macOS applications when Xcode is not in the `/Applications` folder. (57096274, 61216983)
 
-##### Signing and Distribution
+### Signing and Distribution
 
-###### Known Issues
+#### Known Issues
 
 - Automatic signing may fail to make changes to app IDs that use a seed prefix and not a team ID prefix. (59672760) (FB7593038)
 
   **Workaround**: Adjust your app ID manually on the [Apple Developer](https://developer.apple.com/account) website, then return to Xcode to generate a provisioning profile.
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Resolved a crash in the distribution workflow caused by a failure to detect the platform of an archived binary. (61228514)
 
-##### Simulator
+### Simulator
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Simulator pointer capture mode now handles the original Apple Magic Mouse. (59437811, 61227692)
 - Fixed an issue where large binaries could cause watchdog timeouts or failures to launch in the simulator. (61013375)
 
-##### Siri Intents
+### Siri Intents
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue that prevented generation of source files from intent definition files when using the Legacy Build System. (60591035, 61227177)
 
-##### Swift
+### Swift
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a crash that could occur in Swift code that imported an Objective-C class defined with the `objc_runtime_name` attribute. (60888835)
 
-##### Swift Packages
+### Swift Packages
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where an error like “Swift package product A is linked as a static library by B and C. This will result in duplication of library code.” was incorrectly emitted if an app and an embedded app extension or helper tool statically linked the same package product. If you previously set the `DISABLE_DIAMOND_PROBLEM_DIAGNOSTIC` build setting to work around this issue, you can delete this setting now. (59310009, 61227255)
 
-##### Testing
+### Testing
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a bug which could cause test runners to crash when resuming from a breakpoint fired on a background thread while the main thread is suspended by a waiter. (61228606)
 

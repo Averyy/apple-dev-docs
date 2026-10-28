@@ -21,11 +21,11 @@ Returns a summary for a custom integer property across the progress subtree.
 final func summary<P>(of property: KeyPath<ProgressManager.Properties, P.Type>) -> P.Summary where P : ProgressManager.Property, P.Summary == Int, P.Value == Int
 ```
 
-#### Return Value
+## Return Value
 
 An `Int` summary value for the specified property.
 
-#### Discussion
+## Discussion
 
 This method aggregates the values of a custom integer property from this progress manager and all its children, returning a consolidated summary value.
 

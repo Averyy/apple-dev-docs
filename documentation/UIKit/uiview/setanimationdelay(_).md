@@ -24,7 +24,7 @@ class func setAnimationDelay(_ delay: TimeInterval)
 + (void) setAnimationDelay:(NSTimeInterval) delay;
 ```
 
-#### Discussion
+## Discussion
 
 If you specify your animations using begin/commit set of methods, you use this method to specify the amount of time to wait before starting the animations. This method does nothing if called from outside of an animation block. It must be called between calls to the [`beginAnimations(_:context:)`](./beginanimations%28_,context%29.md) and [`commitAnimations()`](./commitanimations%28%29.md) methods. And you must call this method prior to changing the animatable properties of your views. The default value is `0.0` seconds.
 

@@ -19,7 +19,7 @@ The line join style to apply to corners of the path.
 @property CGLineJoin lineJoin;
 ```
 
-#### Discussion
+## Discussion
 
 The default line join style is [`CGLineJoin.miter`](../../CoreGraphics/cglinejoin/miter.md).
 

@@ -16,7 +16,7 @@ A Boolean value that determines whether the media resource plays automatically w
 attribute boolean autoplay;
 ```
 
-#### Discussion
+## Discussion
 
 If `false`, the media resource does not automatically play when loaded; otherwise, it does. The default value is `false`.
 

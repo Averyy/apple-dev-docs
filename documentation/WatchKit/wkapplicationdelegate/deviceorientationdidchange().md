@@ -19,7 +19,7 @@ optional func deviceOrientationDidChange()
 - (void) deviceOrientationDidChange;
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit calls this method when the [`WKInterfaceDevice`](../wkinterfacedevice.md) object’s  [`wristLocation`](../wkinterfacedevice/wristlocation.md), [`crownOrientation`](../wkinterfacedevice/crownorientation.md), or [`isAutorotated`](../wkextension/isautorotated.md) properties change.
 

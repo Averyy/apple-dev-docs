@@ -27,7 +27,7 @@ optional func resolveCarName(for intent: INGetCarPowerLevelStatusIntent) async -
 - (void) resolveCarNameForGetCarPowerLevelStatus:(INGetCarPowerLevelStatusIntent *) intent withCompletion:(void (^)(INSpeakableStringResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the name for the car. If the app has access to more than one car, use the intent’s [`carName`](../ingetcarpowerlevelstatusintent/carname.md) property to identify the correct car. If the app has access to only a single car, you can call the completion block with a [`notRequired()`](../inintentresolutionresult/notrequired%28%29.md) resolution, to indicate that the car name is not necessary.
 

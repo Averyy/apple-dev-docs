@@ -22,7 +22,7 @@ static var readOnly: IOSurfaceLockOptions { get }
 kIOSurfaceLockReadOnly
 ```
 
-#### Discussion
+## Discussion
 
 If you are not going to modify the data while you hold the lock, you should set this flag to avoid invalidating any existing caches of the buffer contents. This flag should be passed both to the lock and unlock functions. Non-symmentrical usage of this flag will result in undefined behavior.
 

@@ -24,7 +24,7 @@ func frameBoundingBox(_ boundingBox: MDLAxisAlignedBoundingBox, setNearAndFar: B
 - (void) frameBoundingBox:(MDLAxisAlignedBoundingBox) boundingBox setNearAndFar:(BOOL) setNearAndFar;
 ```
 
-#### Discussion
+## Discussion
 
 When calculating the new camera position and orientation, this method assumes the camera points in the negative z-axis direction and that the positive y-axis represents the up direction for the camera’s view.
 

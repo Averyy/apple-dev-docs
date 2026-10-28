@@ -21,7 +21,7 @@ The entitlement required for an executable to opt in to enhanced security protec
 
 **Default**: `*`
 
-#### Discussion
+## Discussion
 
 The default value for this entitlement is the `*` wildcard.
 

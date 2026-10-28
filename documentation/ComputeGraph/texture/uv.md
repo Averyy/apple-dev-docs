@@ -16,7 +16,7 @@ Current pixel’s position, in UV [0.0, 1.0] coordinates.
 float2 texture::uv()
 ```
 
-#### Discussion
+## Discussion
 
 In the context of a texture stage, returns the current pixel position, in UV coordinates.
 

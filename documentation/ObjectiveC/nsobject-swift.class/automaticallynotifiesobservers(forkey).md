@@ -25,11 +25,11 @@ class func automaticallyNotifiesObservers(forKey key: String) -> Bool
 + (BOOL) automaticallyNotifiesObserversForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the key-value observing machinery should automatically invoke [`willChangeValue(forKey:)`](./willchangevalue%28forkey%29.md)/[`didChangeValue(forKey:)`](./didchangevalue%28forkey%29.md) and [`willChange(_:valuesAt:forKey:)`](./willchange%28_,valuesat,forkey%29.md)/[`didChange(_:valuesAt:forKey:)`](./didchange%28_,valuesat,forkey%29.md) whenever instances of the class receive key-value coding messages for the `key`, or mutating key-value-coding-compliant methods for the `key` are invoked; otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 The default implementation returns [`YES`](../yes.md). Starting in OS X 10.5, the default implementation of this method searches the receiving class for a method whose name matches the pattern `+automaticallyNotifiesObserversOf<Key>`, and returns the result of invoking that method if it is found. Any found methods must return `BOOL`. If no such method is found [`YES`](../yes.md) is returned.
 

@@ -23,7 +23,7 @@ func encodeRestorableState(with coder: NSCoder)
 - (void) encodeRestorableStateWithCoder:(NSCoder *) coder;
 ```
 
-#### Discussion
+## Discussion
 
 If your app supports state preservation, you can override this method for any views that have state information that should be saved between launches of your app. You should save only the data required to return the view to its current configuration. Do not save the view object itself and do not save any data that could be determined by other means at launch time.
 

@@ -25,7 +25,7 @@ let kCGImageSourceShouldAllowFloat: CFString
 extern CFStringRef const kCGImageSourceShouldAllowFloat;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFBoolean`](../CoreFoundation/cfboolean.md). The default value is [`kCFBooleanFalse`](../CoreFoundation/kcfbooleanfalse.md), which tells the image source not to use floating-point values.
 

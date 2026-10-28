@@ -25,7 +25,7 @@ func CFErrorGetTypeID() -> CFTypeID
 extern CFTypeID CFErrorGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFError opaque type.
 

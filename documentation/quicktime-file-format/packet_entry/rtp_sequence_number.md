@@ -6,7 +6,7 @@
 
 A 16-bit integer specifying the RTP sequence number for this packet.
 
-#### Overview
+## Overview
 
 The RTP server adds a random offset to this sequence number before transmitting the packet. This field allows re-transmission of packets—for example, the same packet can be assembled with the same sequence number and a different (later) packet transmission time. A text sample with a duration of 5 minutes can be retransmitted every 10 seconds, so that clients that miss the original sample transmission (perhaps they started playing the movie in the middle) will be refreshed after a maximum of 10 seconds.
 

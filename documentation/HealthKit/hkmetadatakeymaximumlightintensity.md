@@ -24,7 +24,7 @@ let HKMetadataKeyMaximumLightIntensity: String
 extern NSString * const HKMetadataKeyMaximumLightIntensity;
 ```
 
-#### Discussion
+## Discussion
 
 The expected value type is an [`HKQuantity`](./hkquantity.md) expressed in [`lux()`](./hkunit/lux%28%29.md).
 

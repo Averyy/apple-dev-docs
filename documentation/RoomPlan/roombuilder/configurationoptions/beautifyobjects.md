@@ -17,7 +17,7 @@ An option that instructs the captured room to enhance its look.
 static let beautifyObjects: RoomBuilder.ConfigurationOptions
 ```
 
-#### Discussion
+## Discussion
 
 If a capture contains a group of chairs around a table, this option realigns the chairs neatly around the table. If a chair has object attributes, this option unifies the attributes such that each chair in the group contains the same attributes.
 

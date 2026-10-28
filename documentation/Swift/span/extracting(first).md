@@ -21,11 +21,11 @@ Returns a span containing the initial elements of this span, up to the specified
 func extracting(first maxLength: Int) -> Span<Element>
 ```
 
-#### Return Value
+## Return Value
 
 A span with at most `maxLength` elements.
 
-#### Discussion
+## Discussion
 
 If the maximum length exceeds the length of this span, the result contains all the elements.
 

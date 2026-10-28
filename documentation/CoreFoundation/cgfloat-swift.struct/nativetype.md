@@ -21,7 +21,7 @@ The native type used to store the `CGFloat`.
 typealias NativeType = Double
 ```
 
-#### Discussion
+## Discussion
 
 The native type used to store the [`CGFloat`](../cgfloat-swift.struct.md), which is [`Float`](../../Swift/float.md) on 32-bit architectures and [`Double`](../../Swift/double.md) on 64-bit architectures.
 

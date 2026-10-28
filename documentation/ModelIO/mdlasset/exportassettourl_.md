@@ -20,11 +20,11 @@ Writes asset data to a file at the specified URL.
 - (BOOL) exportAssetToURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if export succeeded; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 For best results, use the [`export(to:)`](./export%28to%29.md) method so that you can respond to possible errors during export.
 

@@ -25,11 +25,11 @@ class func unarchivedObject(ofClasses classes: Set<AnyHashable>, from data: Data
 + (id) unarchivedObjectOfClasses:(NSSet<Class> *) classes fromData:(NSData *) data error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The decoded root of the object graph, as an instance of one of the specified classes, or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 This method produces an error if data does not contain valid keyed data.
 

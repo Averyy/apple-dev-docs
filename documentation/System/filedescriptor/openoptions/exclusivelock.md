@@ -25,7 +25,7 @@ static var exclusiveLock: FileDescriptor.OpenOptions { get }
 
 - [Adopting Swift File Options](../../adopting-file-options.md)
 
-#### Discussion
+## Discussion
 
 Setting this option or the [`sharedLock`](./sharedlock.md) option. obtains a lock with `flock(2)` semantics. If you’re creating a file using the [`create`](./create.md) option, the request for the lock always succeeds except on file systems that don’t support locking.
 

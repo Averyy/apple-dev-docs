@@ -14,7 +14,7 @@
 kIOHIDTransactionDirectionTypeInput
 ```
 
-#### Discussion
+## Discussion
 
 Transaction direction used for requesting element values from a device.
 

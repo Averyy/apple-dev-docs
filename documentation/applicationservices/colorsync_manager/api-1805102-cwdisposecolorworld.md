@@ -13,7 +13,7 @@ void CWDisposeColorWorld (
 );
 ```
 
-#### Overview
+## Overview
 
 The following functions use color worlds. If you create a color world to pass to one of these functions, you must dispose of the color world when your application is finished with it.
 

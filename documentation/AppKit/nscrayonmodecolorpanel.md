@@ -15,7 +15,7 @@
 static const NSColorPanelMode NSCrayonModeColorPanel;
 ```
 
-#### Discussion
+## Discussion
 
 Crayons.
 

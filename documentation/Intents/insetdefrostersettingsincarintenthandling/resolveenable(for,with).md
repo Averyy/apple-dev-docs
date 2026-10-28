@@ -28,7 +28,7 @@ optional func resolveEnable(for intent: INSetDefrosterSettingsInCarIntent) async
 - (void) resolveEnableForSetDefrosterSettingsInCar:(INSetDefrosterSettingsInCarIntent *) intent withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve whether the app can enable the defrost.
 

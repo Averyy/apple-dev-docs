@@ -25,7 +25,7 @@ func addAttribute(_ name: NSAttributedString.Key, value: Any, range: NSRange)
 - (void) addAttribute:(NSAttributedStringKey) name value:(id) value range:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 You may assign any `name`/`value` pair you wish to a range of characters. Raises an [`invalidArgumentException`](../nsexceptionname/invalidargumentexception.md) if `name` or `value` is `nil` and an [`rangeException`](../nsexceptionname/rangeexception.md) if any part of `range` lies beyond the end of the receiver’s characters.
 

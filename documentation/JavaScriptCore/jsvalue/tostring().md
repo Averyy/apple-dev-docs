@@ -24,11 +24,11 @@ func toString() -> String!
 - (NSString *) toString;
 ```
 
-#### Return Value
+## Return Value
 
 The string representation of the value.
 
-#### Discussion
+## Discussion
 
 This method uses JavaScript type coercion rules to convert the value to a JavaScript string, then creates a native string from the result. Thus, this method can return a string even when the [`isString`](./isstring.md) property is [`false`](../../Swift/false.md); for example, an empty object becomes the string `"[object Object]"`.
 

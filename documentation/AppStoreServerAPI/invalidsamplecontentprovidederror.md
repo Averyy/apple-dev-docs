@@ -19,7 +19,7 @@ object InvalidSampleContentProvidedError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 See [`sampleContentProvided`](./samplecontentprovided.md) for valid values.
 

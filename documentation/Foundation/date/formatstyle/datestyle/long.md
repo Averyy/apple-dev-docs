@@ -21,7 +21,7 @@ A lengthened date style with the full month, day of month, and year components r
 static let long: Date.FormatStyle.DateStyle
 ```
 
-#### Discussion
+## Discussion
 
 A `long` date style represents the full date without the day of week in the format. For example, `October 17, 2020`.
 

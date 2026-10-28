@@ -21,7 +21,7 @@ A format style that displays a countdown or count-up timer within a bounded time
 struct Timer
 ```
 
-#### Overview
+## Overview
 
 `Timer` produces a time-pattern output (like `4:32` or `1:23:45`) that progresses between zero and the interval’s total duration. Unlike [`SystemFormatStyle.Stopwatch`](./stopwatch.md), a timer operates within a defined start and end date and can count in either direction.
 
@@ -36,7 +36,7 @@ Text(.currentDate, format: .timer(countingDownIn: start..<end))
 Text(.currentDate, format: .timer(countingUpIn: start..<end))
 ```
 
-##### Countdown behavior
+### Countdown behavior
 
 A countdown timer starts at the total interval duration and decreases to zero:
 
@@ -54,7 +54,7 @@ Text(.currentDate, format: .timer(countingDownIn: start..<end))
 | 4 min, 30 sec | `0:30` |
 | 5 minutes | `0:00` |
 
-##### Count-up behavior
+### Count-up behavior
 
 A count-up timer starts at zero and increases toward the total interval duration:
 
@@ -72,7 +72,7 @@ Text(.currentDate, format: .timer(countingUpIn: start..<end))
 | 59 min, 59 sec | `59:59` |
 | 1 hour | `1:00:00` |
 
-##### Hours display
+### Hours display
 
 When `showsHours` is `true` (the default), the hours field appears once the displayed value reaches one hour. The transition between formats happens cleanly:
 
@@ -88,7 +88,7 @@ When `showsHours` is `false`, minutes accumulate beyond 60:
 // Output for 90 minutes remaining: "90:00"
 ```
 
-##### Precision control
+### Precision control
 
 The `maxPrecision` parameter determines the smallest displayed unit:
 

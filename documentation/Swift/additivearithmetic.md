@@ -21,7 +21,7 @@ A type with values that support addition and subtraction.
 protocol AdditiveArithmetic : Equatable
 ```
 
-#### Overview
+## Overview
 
 The `AdditiveArithmetic` protocol provides a suitable basis for additive arithmetic on scalar values, such as integers and floating-point numbers, or vectors. You can write generic methods that operate on any numeric type in the standard library by using the `AdditiveArithmetic` protocol as a generic constraint.
 
@@ -45,7 +45,7 @@ let rangeSum = (1..<10).sum()
 // rangeSum == 45
 ```
 
-### Conforming to the AdditiveArithmetic Protocol
+## Conforming to the AdditiveArithmetic Protocol
 
 To add `AdditiveArithmetic` protocol conformance to your own custom type, implement the required operators, and provide a static `zero` property.
 

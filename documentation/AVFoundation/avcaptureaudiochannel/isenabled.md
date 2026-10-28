@@ -19,7 +19,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a connection enables all audio channels that it exposes. You can set this value to [`false`](../../Swift/false.md) to stop the flow of data for a particular channel.
 

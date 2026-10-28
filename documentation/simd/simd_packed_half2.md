@@ -14,7 +14,7 @@ typealias simd_packed_half2 = SIMD2<Float16>
 typedef _Float16 __attribute__((ext_vector_type(2))) simd_packed_half2;
 ```
 
-#### Discussion
+## Discussion
 
 A vector of two 16-bit floating-point numbers with relaxed alignment.
 

@@ -15,7 +15,7 @@ Get the timestamp corresponding to the accessory anchor.
 extern CFTimeInterval ar_accessory_anchor_get_timestamp(ar_accessory_anchor_t accessory_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 The timestamp associated with the accessory anchor.
 

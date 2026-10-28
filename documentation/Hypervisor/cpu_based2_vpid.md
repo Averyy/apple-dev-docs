@@ -19,7 +19,7 @@ var CPU_BASED2_VPID: UInt32 { get }
 CPU_BASED2_VPID
 ```
 
-#### Discussion
+## Discussion
 
 Must be `1`.
 

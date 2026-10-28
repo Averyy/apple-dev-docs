@@ -21,7 +21,7 @@ Install a third-party app on a device.
 - [Migrating managed devices](./migrating-managed-devices.md)
 - [Transferring management of apps to declarative management](./transferring-management-of-apps-to-declarative-management.md)
 
-#### Discussion
+## Discussion
 
 The request must contain only one of these keys: `iTunesStoreID`, `Identifier`, or `ManifestURL`.
 
@@ -39,7 +39,7 @@ Prior to iOS 16.0 and tvOS 16.0, this command would return `NotNow` when Setup A
 
 Refer to the following sections to determine supported channels and requirements, and to see an example request and response.
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -49,7 +49,7 @@ Refer to the following sections to determine supported channels and requirements
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Required access right | AllowAppInstallation |
 
-##### Example request and response
+### Example request and response
 
 **Enterprise**:
 

@@ -26,7 +26,7 @@ subscript(blendShapeName: String) -> BlendShapeWeightsSet.Element? { get }
 subscript(index: BlendShapeWeightsSet.Index) -> BlendShapeWeightsSet.Element { get set }
 ```
 
-#### Return Value
+## Return Value
 
 Blend shape weights data associated with the given name owned by this set, or nil if not found.
 

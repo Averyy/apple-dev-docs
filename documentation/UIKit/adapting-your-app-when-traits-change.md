@@ -5,7 +5,7 @@
 
 Find out when system changes happen that affect your app, then update your app efficiently.
 
-#### Overview
+## Overview
 
 When a person rotates their device, enables Dark Mode, or updates accessibility settings, the system updates the associated traits and propagates them through your app’s view hierarchy. You can monitor traits for changes, and then respond to those changes with code that adapts to the changed traits. For example, you might change what your view shows when either the [`horizontalSizeClass`](./uitraitcollection/horizontalsizeclass.md) or [`verticalSizeClass`](./uitraitcollection/verticalsizeclass.md) changes, or you might adjust what colors you use for light or dark appearance.
 
@@ -15,7 +15,7 @@ Alternatively, when you want to listen for trait changes outside those methods, 
 
 > 💡 **Tip**: If your app uses the deprecated [`traitCollectionDidChange(_:)`](./uitraitenvironment/traitcollectiondidchange%28_%29.md) method to listen for trait changes, the system calls that method for every trait change, regardless of whether it needs to inform your code about the change. Migrate to either [Automatic trait tracking](./automatic-trait-tracking.md) or [`UITraitChangeObservable`](./uitraitchangeobservable-67e94.md) methods to avoid the extra calls and improve performance.
 
-##### Track trait changes automatically
+### Track trait changes automatically
 
 To track a trait change automatically, add code that references a trait in one of the methods that UIKit supports for automatic trait tracking, such as [`horizontalSizeClass`](./uitraitcollection/horizontalsizeclass.md) in [`layoutSubviews()`](./uiview/layoutsubviews%28%29.md). In the following example, the implementation applies a layout appropriate for a smaller view when the size class is [`UIUserInterfaceSizeClass.compact`](./uiuserinterfacesizeclass/compact.md), or a layout appropriate for a larger view when the size class is [`UIUserInterfaceSizeClass.regular`](./uiuserinterfacesizeclass/regular.md):
 
@@ -37,7 +37,7 @@ When [`horizontalSizeClass`](./uitraitcollection/horizontalsizeclass.md) changes
 
 For more information on the methods that UIKit supports for automatic trait tracking, see [Automatic trait tracking](./automatic-trait-tracking.md).
 
-##### Track trait changes with registration
+### Track trait changes with registration
 
 To track a specific trait or group of traits outside the automatic methods, use the registration methods in the [`UITraitChangeObservable`](./uitraitchangeobservable-67e94.md) protocol. Select the trait or list of traits that you want to observe, and then specify a block of code or method to process each time those traits change. For example:
 
@@ -97,7 +97,7 @@ func stopObservingTraits() {
 }
 ```
 
-##### Migrate from deprecated methods
+### Migrate from deprecated methods
 
 If your code currently uses [`traitCollectionDidChange(_:)`](./uitraitenvironment/traitcollectiondidchange%28_%29.md), migrate to automatic trait tracking or trait registration for better performance and maintainability.
 

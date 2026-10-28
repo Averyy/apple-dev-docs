@@ -25,7 +25,7 @@ func CFURLCopyAbsoluteURL(_ relativeURL: CFURL!) -> CFURL!
 extern CFURLRefCFURLCopyAbsoluteURL(CFURLRef relativeURL);
 ```
 
-#### Return Value
+## Return Value
 
 A new `CFURL` object, or `NULL` if `relativeURL` cannot be made absolute. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

@@ -20,7 +20,7 @@ A buffer of vertex-joint influences which bind the mesh part’s vertices to a s
 struct JointInfluences
 ```
 
-#### Overview
+## Overview
 
 Each vertex is associated with a fixed number of influences. If `influencesPerVertex` is 4, then there should be four elements in the buffer of joint influences for each vertex in the mesh part.
 

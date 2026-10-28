@@ -22,7 +22,7 @@ var mixer: PHASEMixer { get }
 @property (nonatomic, strong, readonly) PHASEMixer * mixer;
 ```
 
-#### Discussion
+## Discussion
 
 The readonly property that returns the PHASEMixer this stream was created with and assigned to.
 

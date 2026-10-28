@@ -17,7 +17,7 @@ static func feathered(padding length: CGFloat, softEdgeRadius: CGFloat? = nil) -
 
 Available when `Self` is `FeatheredGlassBackgroundEffect`.
 
-#### Return Value
+## Return Value
 
 A feathered background effect.
 

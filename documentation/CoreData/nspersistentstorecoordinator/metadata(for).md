@@ -25,7 +25,7 @@ func metadata(for store: NSPersistentStore) -> [String : Any]
 - (NSDictionary<NSString *,id> *) metadataForPersistentStore:(NSPersistentStore *) store;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that contains the metadata currently stored or to-be-stored in `store`.
 

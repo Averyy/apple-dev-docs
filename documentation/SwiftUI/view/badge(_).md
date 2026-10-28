@@ -42,7 +42,7 @@ nonisolated
 func badge<S>(_ label: S?) -> some View where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Use a badge to convey optional, supplementary information about a view. Keep the contents of the badge as short as possible. Badges appear in list rows, tab bars, toolbar items, and menus.
 

@@ -19,7 +19,7 @@ case ccittfax4
 NSTIFFCompressionCCITTFAX4
 ```
 
-#### Discussion
+## Discussion
 
 Used for 1-bit fax images sent over ISDN lines.
 

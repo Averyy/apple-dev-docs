@@ -5,7 +5,7 @@
 
 Identify common configurations that cause unsuccessful privacy manifest validation with the App Store.
 
-#### Overview
+## Overview
 
 Starting November 12, 2024, apps you submit for review in App Store Connect must contain a valid privacy manifest file. If you upload an app to App Store Connect that contains invalid privacy manifest files, you’ll receive an email that includes the name and path of the invalid files in your app bundle. For example:
 
@@ -23,7 +23,7 @@ An invalid privacy manifest is:
 
 Review [Privacy manifest files](../BundleResources/privacy-manifest-files.md) to learn about the keys you can include in a privacy manifest. This document lists possible reasons for invalid privacy tracking and accessed API values in your privacy manifest. Validate your privacy manifest to determine why your privacy manifest is malformed.
 
-#### Configure a tracking domain
+## Configure a tracking domain
 
 A tracking domain is a string that identifies an internet domain your app or third-party SDK connects to that engages in tracking. You set the value of the `NSPrivacyTrackingDomains` key to a list of tracking domains in your privacy manifest. The value of the string meets the following requirements:
 
@@ -31,11 +31,11 @@ A tracking domain is a string that identifies an internet domain your app or thi
 - Contains no path and query components.
 - Contains no trailing slash.
 
-#### Possible reason for an invalid tracking value
+## Possible reason for an invalid tracking value
 
 A value for the `NSPrivacyTracking` key is invalid if the value is any other type than a `Boolean`. In your privacy manifest, change the type of the key to `Boolean`.
 
-#### Possible reasons for an invalid tracking domains value
+## Possible reasons for an invalid tracking domains value
 
 A value for the `NSPrivacyTrackingDomains` key is invalid if the value is any other type than an array of strings. In your privacy manifest, change the type of the key to `Array`, then add one or more tracking domains to the array. For more information, see [Configure a tracking domain](./tn3181-debugging-invalid-privacy-manifest.md#Configure-a-tracking-domain).
 
@@ -49,7 +49,7 @@ You can create an invalid privacy manifest when you use both `NSPrivacyTrackingD
 
 > **Note**: If your app or third-party SDK doesn’t connect, or no longer connects to any tracking domains, remove both `NSPrivacyTrackingDomains` and `NSPrivacyTracking` keys from your privacy manifest. Alternatively, set the value of `NSPrivacyTracking` to `false` and remove `NSPrivacyTrackingDomains` from your privacy manifest.
 
-#### Possible reasons for an invalid accessed API type value
+## Possible reasons for an invalid accessed API type value
 
 The following table lists reasons why a value for the `NSPrivacyAccessedAPIType` key is invalid:
 
@@ -58,7 +58,7 @@ The following table lists reasons why a value for the `NSPrivacyAccessedAPIType`
 | The value is any other type than a string. | Change the type of the `NSPrivacyAccessedAPIType` key to `String` in your privacy manifest. |
 | The value is an empty string, or a string whose value doesn’t match a category of required reason APIs. | Set the value of the `NSPrivacyAccessedAPIType` key to a string that exactly matches a category of required reason APIs your app uses. For possible values, see [Describing use of required reason API](../BundleResources/describing-use-of-required-reason-api.md). |
 
-#### Possible reasons for an invalid accessed API type reasons value
+## Possible reasons for an invalid accessed API type reasons value
 
 The following table lists reasons why a value for the `NSPrivacyAccessedAPITypeReasons` key is invalid:
 
@@ -70,7 +70,7 @@ The following table lists reasons why a value for the `NSPrivacyAccessedAPITypeR
 
 > **Note**: If your app or third-party SDK doesn’t use, or no longer uses a specific required reason API, remove its related dictionary from the `NSPrivacyAccessedAPITypes` key. If `NSPrivacyAccessedAPITypes` is empty, remove it from the privacy manifest.
 
-#### Possible reasons for an invalid accessed API types value
+## Possible reasons for an invalid accessed API types value
 
 The following table lists reasons why a value for the `NSPrivacyAccessedAPITypes` key is invalid:
 
@@ -80,7 +80,7 @@ The following table lists reasons why a value for the `NSPrivacyAccessedAPITypes
 | The value is an empty array of dictionaries. | Create a dictionary that includes information about a required reason API your app or third-party SDK uses, then add the dictionary to the array. Repeat the process for all required reason APIs your app or third-party SDK uses. |
 | The value is an array of dictionaries, but some of the dictionaries are invalid. | Confirm each dictionary in the array contains a `NSPrivacyAccessedAPIType` key and a `NSPrivacyAccessedAPITypeReasons` key, and both keys contain valid values. |
 
-#### Validate your privacy manifest file
+## Validate your privacy manifest file
 
 You can use the `plutil` command to ensure your privacy manifest is a properly formatted plist file. To validate your privacy manifest, run `plutil` with the `-lint` option in Terminal:
 
@@ -107,7 +107,7 @@ To fix the errors, open your privacy manifest in a text editor or Xcode to addre
 
 > **Note**: If your privacy manifest is a valid plist, check its keys and values. Your privacy manifest could still be invalid if its keys and values don’t match the values App Store Connect expects. For more information about the keys and values App Store Connect expects, see [Privacy manifest files](../BundleResources/privacy-manifest-files.md).
 
-#### Revision History
+## Revision History
 
 - **2024-11-12** First published.
 

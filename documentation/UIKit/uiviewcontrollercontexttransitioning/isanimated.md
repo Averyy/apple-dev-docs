@@ -24,7 +24,7 @@ var isAnimated: Bool { get }
 @property (nonatomic, readonly, getter=isAnimated) BOOL animated;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is always [`true`](../../Swift/true.md) for modal presentation styles other than the [`UIModalPresentationStyle.custom`](../uimodalpresentationstyle/custom.md) style. When the modal presentation style is [`UIModalPresentationStyle.custom`](../uimodalpresentationstyle/custom.md), the value is [`true`](../../Swift/true.md) if the transition should be animated or [`false`](../../Swift/false.md) if it should not. Use this value to determine whether you need to animate a custom transition into place, or whether you should install the final views into the container without animating the changes.
 

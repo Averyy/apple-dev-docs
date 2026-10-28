@@ -24,7 +24,7 @@ var notifyOnEntry: Bool { get set }
 @property (atomic, assign) BOOL notifyOnEntry;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../Swift/true.md), a device crossing from outside the region to inside the region triggers the delivery of a notification. If the property is [`false`](../../Swift/false.md), a notification is not generated. The default value of this property is [`true`](../../Swift/true.md).
 

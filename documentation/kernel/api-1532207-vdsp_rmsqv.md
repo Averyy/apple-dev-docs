@@ -15,7 +15,7 @@ Calculates the root mean square of a single-precision vector.
 void vDSP_rmsqv(const float *__A, vDSP_Stride __IA, float *__C, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the root mean square of the first `N` elements of `A` and writes the result to `C`:
 

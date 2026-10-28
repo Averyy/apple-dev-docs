@@ -21,11 +21,11 @@ A type that you can use to configure the domain of a chart.
 protocol ScaleDomain
 ```
 
-#### Overview
+## Overview
 
 A type you use to configure the domain of a chart scale.
 
-#### Including zero in number scales
+## Including zero in number scales
 
 By default, number scales include zero in the domain to ensure charts follow the best practice to include a zero baseline in bar charts.
 
@@ -48,7 +48,7 @@ Chart([20, 30, 50, 70, 85], id: \.self) {
 
 ![Horizontal dot plot with x-axis ranging from 20 to 100. It has 5 dots, at 20, 30, 50, 70, and 85.](https://developer.apple.com/tutorials/images/com.apple.Charts/ScaleDomain.ChartWithNumberScaleExcludingZero@2x.png)
 
-#### Reversing the order of inferred domain
+## Reversing the order of inferred domain
 
 You can also reverse the order of the inferred domain:
 

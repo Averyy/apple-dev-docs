@@ -21,7 +21,7 @@ A structure that creates a locale-appropriate string representation of a date in
 struct FormatStyle
 ```
 
-#### Overview
+## Overview
 
 A date format style shares the date and time formatting pattern preferred by the user’s locale for formatting and parsing.
 
@@ -31,7 +31,7 @@ When you want to apply a specific formatting style to a single [`Date`](../date.
 - To represent an interval between two date instances, use [`Date.RelativeFormatStyle`](./relativeformatstyle.md).
 - To represent two dates as a pair, for example to get output that looks like `10/21/1985 1:45 PM - 9/13/2015 6:33 PM`, use [`Date.IntervalFormatStyle`](./intervalformatstyle.md).
 
-##### Formatting String Representations of Dates and Times
+### Formatting String Representations of Dates and Times
 
 [`Date.FormatStyle`](./formatstyle.md) provides a variety of localized presets and configuration options to create user-visible representations of dates and times from instances of [`Date`](../date.md).
 
@@ -107,7 +107,7 @@ for localeID in localeArray {
 // je 12 novembre, 19 h
 ```
 
-##### Parsing Dates and Times
+### Parsing Dates and Times
 
 To parse a [`Date`](../date.md) instance from an input string, use a date parse strategy. For example:
 
@@ -168,7 +168,7 @@ if let anniversary = try? Date(dateString, strategy: myFormat) {
 
 After this code executes, `anniversary` contains a [`Date`](../date.md) instance parsed from `dateString`.
 
-##### Applying Format Styles Repeatedly
+### Applying Format Styles Repeatedly
 
 Once you create a date format style, you can use it to format dates multiple times.
 

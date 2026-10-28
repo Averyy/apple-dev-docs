@@ -15,7 +15,7 @@ A single audio or video item.
 interface MediaItem
 ```
 
-#### Overview
+## Overview
 
 In order to play audio or video, at a minimum, there must be a [`Player`](./player.md) object that contains a single [`Playlist`](./playlist.md) object which contains a single `MediaItem` object.
 

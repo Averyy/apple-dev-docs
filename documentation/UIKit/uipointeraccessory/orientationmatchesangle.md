@@ -22,7 +22,7 @@ var orientationMatchesAngle: Bool { get set }
 @property (nonatomic) BOOL orientationMatchesAngle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md) for custom accessories, and varies for system accessories.
 

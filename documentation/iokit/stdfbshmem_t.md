@@ -15,7 +15,7 @@ struct StdFBShmem_t {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure contains cursor and window server state data and occupies a slice of shared memory between the kernel and window server. Several elements of this structure are only used in software cursor mode. Unless otherwise indicated, the coordinates in this structure are given in display space. Display space is the coordinate space that encompasses all the screens. The positions of the screens within display space indicate their location relative to each other as the cursor moves between them. If there is only one screen, the screen coordinates and display space coordinates will be the same.
 

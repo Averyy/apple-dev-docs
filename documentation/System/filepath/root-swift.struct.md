@@ -21,7 +21,7 @@ Represents a root of a file path.
 struct Root
 ```
 
-#### Overview
+## Overview
 
 On Unix, a root is simply the directory separator `/`.
 

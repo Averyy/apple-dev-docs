@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_AllowTemporalCompression: CFString
 extern CFStringRef const kVTCompressionPropertyKey_AllowTemporalCompression;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.  Set this `value` to false to require key-frame-only compression.
 

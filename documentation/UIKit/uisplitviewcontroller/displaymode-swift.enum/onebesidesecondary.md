@@ -23,7 +23,7 @@ case oneBesideSecondary
 UISplitViewControllerDisplayModeOneBesideSecondary
 ```
 
-#### Discussion
+## Discussion
 
 This display mode shows one sidebar tiled next to the secondary view controller. The sidebar shown is the primary column for [`UISplitViewController.Style.doubleColumn`](../style-swift.enum/doublecolumn.md) interfaces and the supplementary column for [`UISplitViewController.Style.tripleColumn`](../style-swift.enum/triplecolumn.md) interfaces. The sidebar is displayed on the side specified by [`primaryEdge`](../primaryedge-swift.property.md), followed by the secondary view controller. The secondary view controller’s view is fully interactive.
 

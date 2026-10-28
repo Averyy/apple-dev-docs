@@ -14,7 +14,7 @@
 kSCSITaskState_BLOCKED = 2
 ```
 
-#### Discussion
+## Discussion
 
 The task is blocked.
 

@@ -24,11 +24,11 @@ func CFHTTPAuthenticationCopyRealm(_ auth: CFHTTPAuthentication) -> Unmanaged<CF
 extern CFStringRefCFHTTPAuthenticationCopyRealm(CFHTTPAuthenticationRef auth);
 ```
 
-#### Return Value
+## Return Value
 
 The namespace, if there is one; otherwise `NULL`. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Some authentication methods provide a namespace, and it is usually used to prompt the user for a name and password.
 

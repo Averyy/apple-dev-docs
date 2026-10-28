@@ -25,7 +25,7 @@ func CFMessagePortInvalidate(_ ms: CFMessagePort!)
 extern void CFMessagePortInvalidate(CFMessagePortRef ms);
 ```
 
-#### Discussion
+## Discussion
 
 Invalidating a message port prevents the port from ever sending or receiving any more messages; the message port is not deallocated, though. If the port has not already been invalidated, the port’s invalidation callback function is invoked, if one has been set with [`CFMessagePortSetInvalidationCallBack(_:_:)`](./cfmessageportsetinvalidationcallback%28_,_%29.md). The [`CFMessagePortContext`](./cfmessageportcontext.md)  `info` information for `ms` is also released, if a release callback was specified in the port’s context structure. Finally, if a run loop source was created for `ms`, the run loop source is also invalidated.
 

@@ -19,7 +19,7 @@ Handles recognition of the represented `UIGestureRecognizer`.
 @preconcurrency func handleUIGestureRecognizerAction(_ recognizer: Self.UIGestureRecognizerType, context: Self.Context)
 ```
 
-#### Discussion
+## Discussion
 
 If you implement this method, SwiftUI calls it when the wrapped gesture recognizer is recognized.
 

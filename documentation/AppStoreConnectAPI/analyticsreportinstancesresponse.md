@@ -15,7 +15,7 @@ The response body for endpoints that list instances of an analytics report.
 object AnalyticsReportInstancesResponse
 ```
 
-#### Discussion
+## Discussion
 
 Use this object with [`Read a List of Instances of a Report`](./get-v1-analyticsreports-_id_-instances.md).
 

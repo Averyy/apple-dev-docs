@@ -5,7 +5,7 @@
 
 Use code coverage to focus new test development on areas that lack adequate testing.
 
-#### Overview
+## Overview
 
 By implementing code coverage, you can visualize and measure how much of your code you are actually testing. Use it during development to identify areas that your tests are missing. Although achieving a high level of coverage is an excellent goal, code coverage alone doesn’t ensure that your tests are doing their job and are robust enough for unexpected behaviors. Be sure to pair high code coverage with well-written tests.
 
@@ -15,7 +15,7 @@ Code coverage can answer:
 - What parts of your code aren’t you testing?
 - Have you written enough tests to ensure that you’re checking all of your code?
 
-##### Enable code coverage in your test plan
+### Enable code coverage in your test plan
 
 Code coverage is a testing option you can configure for your test plans. When you enable code coverage, the build system instructs the code to gather coverage data based on the frequency that it calls methods and functions. The code coverage option can collect data to report on tests of correctness and of performance, whether unit tests or UI tests.
 
@@ -32,7 +32,7 @@ You enable code coverage in the Configurations pane of your test plan using the 
 
 ![An Xcode screenshot showing the Code Coverage setting in the Configurations pane of the test plan editor.](https://developer.apple.com/tutorials/images/com.apple.Xcode/determining-how-much-code-your-tests-cover-1@2x.png)
 
-##### Examine code coverage results
+### Examine code coverage results
 
 After completing a test run, Xcode uses the coverage data to create a report in the Coverage pane of the Report navigator. The coverage report shows summary information about the test run, a listing of source files and functions within the files, and the coverage percentage for each.
 

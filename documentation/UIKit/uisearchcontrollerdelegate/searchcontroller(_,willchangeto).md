@@ -22,7 +22,7 @@ optional func searchController(_ searchController: UISearchController, willChang
 - (void) searchController:(UISearchController *) searchController willChangeToSearchBarPlacement:(UINavigationItemSearchBarPlacement) newPlacement;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method before a search bar placement change occurs, such as in response to a layout change that alters the amount of available space in the navigation bar. Implement this method if you need to make any custom changes to your search suggestions UI according to the new search bar placement.
 

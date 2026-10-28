@@ -19,11 +19,11 @@ func representedItem() -> Any!
 - (id) representedItem;
 ```
 
-#### Return Value
+## Return Value
 
 The item represented by the cell.
 
-#### Discussion
+## Discussion
 
 Subclasses should not override this method.
 

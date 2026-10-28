@@ -20,7 +20,7 @@ Registers a new component type.
 static func registerComponent()
 ```
 
-#### Discussion
+## Discussion
 
 Call the `registerComponent()` method once for every custom component type that you use in your app before you use it. You don’t need to call the method for built-in component types, like [`ModelComponent`](../modelcomponent.md) or [`AnchoringComponent`](../anchoringcomponent.md).
 

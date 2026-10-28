@@ -25,7 +25,7 @@ func CFURLCopyPassword(_ anURL: CFURL!) -> CFString!
 extern CFStringRefCFURLCopyPassword(CFURLRef anURL);
 ```
 
-#### Return Value
+## Return Value
 
 The password, or `NULL` if no password exists. In some cases, this function may also return the empty string (`CFSTR("")`) if no password exists. You should consider `NULL` and the empty string to be equivalent. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

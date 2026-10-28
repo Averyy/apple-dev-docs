@@ -21,7 +21,7 @@ Schedules a work item asynchronously for execution and associates it with the sp
 func async(group: DispatchGroup, execute workItem: DispatchWorkItem)
 ```
 
-#### Discussion
+## Discussion
 
 This method adds the work item to the group before scheduling it on the current queue.
 

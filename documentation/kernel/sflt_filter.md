@@ -14,7 +14,7 @@ struct sflt_filter {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure is used to define a socket filter.
 

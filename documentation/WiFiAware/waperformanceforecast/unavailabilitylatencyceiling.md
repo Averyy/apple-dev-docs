@@ -17,7 +17,7 @@ The highest forecasted packet latency due to this device’s unavailability.
 let unavailabilityLatencyCeiling: Duration?
 ```
 
-#### Discussion
+## Discussion
 
 This only considers the latency caused by time periods where this local device is not able to communicate to the other device via Wi-Fi Aware. Additional latency can be caused by channel or RF conditions.
 

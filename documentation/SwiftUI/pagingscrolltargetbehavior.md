@@ -21,7 +21,7 @@ The scroll behavior that aligns scroll targets to container-based geometry.
 struct PagingScrollTargetBehavior
 ```
 
-#### Overview
+## Overview
 
 In the following example, every view in the lazy stack is flexible in both directions and the scroll view settles to container-aligned boundaries.
 

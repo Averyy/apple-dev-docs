@@ -15,13 +15,13 @@ The response object for a negative keyword query, containing matched results and
 object NegativeKeywordQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `NegativeKeywordQueryResponse` object is returned by the negative keyword query endpoint and contains the filtered, sorted, and paginated set of `NegativeKeyword` objects matching the request.
 
 To scope results to a specific campaign or ad group, filter by status, or retrieve by ID, use the `QueryRequest` body with `filters`, `sorting`, and `pagination`.
 
-##### Example
+### Example
 
 ```json
 {

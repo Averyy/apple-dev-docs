@@ -25,11 +25,11 @@ func MIDIInputPortCreateWithBlock(_ client: MIDIClientRef, _ portName: CFString,
 extern OSStatus MIDIInputPortCreateWithBlock(MIDIClientRef client, CFStringRef portName, MIDIPortRef *outPort, MIDIReadBlock readBlock);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code.
 
-#### Discussion
+## Discussion
 
 After creating a port, use MIDIPortConnectSource to establish an input connection from any number of sources to your port.
 

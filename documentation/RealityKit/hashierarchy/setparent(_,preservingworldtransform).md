@@ -21,7 +21,7 @@ Attaches the entity as a child to the specified entity.
 @preconcurrency func setParent(_ parent: Entity?, preservingWorldTransform: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 Attaching an entity to a new parent automatically detaches it from its old parent.
 

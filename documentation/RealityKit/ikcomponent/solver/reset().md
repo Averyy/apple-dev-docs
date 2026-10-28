@@ -20,7 +20,7 @@ Enqueues a solver reset call that executes before the next solve.
 func reset()
 ```
 
-#### Discussion
+## Discussion
 
 Resets the solver to its rest pose. Useful if the source animation or constraint demands change significantly.
 

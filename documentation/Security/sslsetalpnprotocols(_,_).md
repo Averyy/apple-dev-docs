@@ -24,7 +24,7 @@ func SSLSetALPNProtocols(_ context: SSLContext, _ protocols: CFArray) -> OSStatu
 OSStatus SSLSetALPNProtocols(SSLContextRef context, CFArrayRef protocols);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 

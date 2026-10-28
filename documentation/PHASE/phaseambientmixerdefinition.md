@@ -24,7 +24,7 @@ class PHASEAmbientMixerDefinition
 @interface PHASEAmbientMixerDefinition : PHASEMixerDefinition
 ```
 
-#### Overview
+## Overview
 
 As an audio-layering object, this class combines multiple audio signals to a single signal for the output device. Play audio with a 3D orientation using this class when you supply a quaternion for the `orientation` argument of the [`init(channelLayout:orientation:)`](./phaseambientmixerdefinition/init%28channellayout,orientation%29.md) initializer. For information on orientation the sound, see [Working with Quaternions](../Accelerate/working-with-quaternions.md).
 
@@ -32,7 +32,7 @@ You also supply the intitializer with a channel layout in either mono, stereo, o
 
 > **Note**:  For one-time sounds that require no position or orientation, use [`PHASEChannelMixerDefinition`](./phasechannelmixerdefinition.md) instead of this class. If your audio playback needs to react to distance or contain environmental effects, use a spatial mixer; for more information, see [Spatial Mixing](./spatial-mixing.md).
 
-##### Play Sound with a Specific Orientation, Channel Layout, and Listener
+### Play Sound with a Specific Orientation, Channel Layout, and Listener
 
 To play ambient sound, define an orientation for the mixer and a channel layout for the source audio data. For example, the following code creates a 5.0 surround-sound ambient source from a 5.1 surround-sound asset.
 

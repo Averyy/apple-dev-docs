@@ -19,7 +19,7 @@ class NSAccessibilityCustomRotor
 @interface NSAccessibilityCustomRotor : NSObject
 ```
 
-#### Overview
+## Overview
 
 Assistive apps, like VoiceOver, provide interfaces to quickly search apps for content of a specific type. For example, in a web browser, a user can quickly explore a list of navigational links or buttons using VoiceOver’s content menus.
 

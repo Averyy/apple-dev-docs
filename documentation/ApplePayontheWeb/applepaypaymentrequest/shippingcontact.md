@@ -16,7 +16,7 @@ Shipping contact information for the user.
 ApplePayPaymentContact shippingContact;
 ```
 
-#### Discussion
+## Discussion
 
 If you have an up-to-date shipping address on file, you can set it here. See [`ApplePayPaymentContact`](../applepaypaymentcontact.md) for the fields in [`shippingContact`](./shippingcontact.md).
 

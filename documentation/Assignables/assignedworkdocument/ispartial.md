@@ -18,7 +18,7 @@ Denotes whether or not this document is a partial one.
 var isPartial: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Documents are considered partial when they are reconstituted with some, not all, of their parts. When a document is considered partial, you cannot read or write to its missing parts.
 

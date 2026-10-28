@@ -20,7 +20,7 @@ A time value in USD, typically used for animation keyframe times.
 struct TimeCode
 ```
 
-#### Overview
+## Overview
 
 Wraps a `Double` but is treated as a distinct schema-registered value type by USD, allowing attributes to be explicitly typed as time code rather than generic floating-point.
 

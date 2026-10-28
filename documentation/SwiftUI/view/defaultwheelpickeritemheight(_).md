@@ -16,7 +16,7 @@ nonisolated
 func defaultWheelPickerItemHeight(_ height: CGFloat) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use `defaultWheelPickerItemHeight(_:)` when you need to change the default item height in a picker control. In this example, the view sets the default height for picker elements to 30 points.
 

@@ -4,7 +4,7 @@
 
 Define four-character-sequences associated with color spaces.
 
-#### Overview
+## Overview
 
 A ColorSync profile header contains a `dataColorSpace` field that carries the signature of the data color space in which the color values in an image using the profile are expressed. This enumeration defines the signatures for the color spaces supported by ColorSync for version 2.x profiles. 
 

@@ -25,7 +25,7 @@ var sensorHeight: CGFloat { get set }
 @property (nonatomic) CGFloat sensorHeight;
 ```
 
-#### Discussion
+## Discussion
 
 The [`sensorHeight`](./sensorheight.md) and [`focalLength`](./focallength.md) properties determine the camera’s horizontal and vertical viewing angles using terms that model physical camera devices. (Alternatively, you can work with viewing angle directly though the [`fieldOfView`](./fieldofview.md) property.) For example, with the default sensor height of 24 mm and default focal length of 50 mm, the vertical field of view is 60°.
 

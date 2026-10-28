@@ -24,7 +24,7 @@ class UIWebView
 @interface UIWebView : UIView
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  In apps that run in iOS 8 and later, use the [`WKWebView`](../WebKit/wkwebview.md) class instead of using [`UIWebView`](./uiwebview.md). Additionally, consider setting the [`WKPreferences`](../WebKit/wkpreferences.md) property [`javaScriptEnabled`](../WebKit/wkpreferences/javascriptenabled.md) to [`false`](../Swift/false.md) if you render files that aren’t supposed to run JavaScript.
 
@@ -46,15 +46,15 @@ You can debug the HTML, CSS, and JavaScript contained inside a [`UIWebView`](./u
 
 For information about basic view behaviors, see [View Programming Guide for iOS](https://developer.apple.com/library/archive/documentation/WindowsViews/Conceptual/ViewPG_iPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009503).
 
-##### Supported file formats
+### Supported file formats
 
 In addition to HTML content, [`UIWebView`](./uiwebview.md) objects can be used to display other content types, such as Keynote, PDF, and Pages documents. For the best rendering of plain and rich text in your app, however, you should use [`UITextView`](./uitextview.md) instead.
 
-##### State preservation
+### State preservation
 
 In iOS 6 and later, if you assign a value to this view’s [`restorationIdentifier`](./uiviewcontroller/restorationidentifier.md) property, it attempts to preserve its URL history, the scaling and scrolling positions for each page, and information about which page is currently being viewed. During restoration, the view restores these values so that the web content appears just as it did before. For more information about how state preservation and restoration works, see [App Programming Guide for iOS](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007072).
 
-##### Subclassing notes
+### Subclassing notes
 
 The [`UIWebView`](./uiwebview.md) class shouldn’t be subclassed.
 

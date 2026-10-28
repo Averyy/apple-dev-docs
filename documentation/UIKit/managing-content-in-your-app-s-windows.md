@@ -5,7 +5,7 @@
 
 Build your app’s user interface from view controllers, and change the currently visible view controller when you want to display new content.
 
-#### Overview
+## Overview
 
 Each scene in your app’s UI contains a window object and one or more view objects. The window serves as an invisible container for the rest of your UI, acts as a top-level container for your views, and routes events to them. The views provide the actual content that users see onscreen, drawing text, images, and other types of custom content. Windows are long-lived objects, and you dismiss them only when tearing down your scene’s entire UI. By contrast, you might change the views in that window frequently, particularly when you want to display new content or information.
 
@@ -13,7 +13,7 @@ Each scene in your app’s UI contains a window object and one or more view obje
 
 To manage your views effectively and to make it easy to add and remove them from a window, UIKit provides view controllers. A view controller manages a single set of views for your app, and it keeps the information in those views up-to-date. Each window has a root view controller, which you use to specify the window’s initial set of views. When you want to change that set of views, you tell UIKit to present or dismiss additional view controllers. UIKit handles the transition from one set of views to another, and manages your app’s entire interface through your view controller objects. As a result, view controllers play an important role in implementing your UI.
 
-##### Define view controllers for each unique page of content
+### Define view controllers for each unique page of content
 
 When designing the UI for a new app, first divide that UI into distinct pages of content. Each page represents a unique way to display your app’s custom information. For example, one page might display rows of data in a table, another might display images in a grid, and another might display a set of text fields for capturing data. Only the structure and overall appearance of each page is important; the specific data you display from each page isn’t. In fact, many apps use the same type of page in multiple places, filling each copy with different sets of data.
 
@@ -28,7 +28,7 @@ For each distinct page, define a view controller to represent that page and mana
 
 For more information, see [Displaying and managing views with a view controller](./displaying-and-managing-views-with-a-view-controller.md).
 
-##### Choose the navigation model for your content
+### Choose the navigation model for your content
 
 Simple apps might display only one screen of content, but most apps have multiple screens of content to display. To make navigating between those view controllers easy, UIKit provides container view controllers that implement common navigation models.
 
@@ -49,7 +49,7 @@ In addition to container view controllers, you can replace the contents of the c
 
 For information about how to create your own container view controllers, see [Creating a custom container view controller](./creating-a-custom-container-view-controller.md).
 
-##### Assign a root view controller to each window
+### Assign a root view controller to each window
 
 The root view controller defines the initial navigation model of your window. If you use storyboards, the root view controller is the initial view controller of your scene’s storyboard file. If you create your windows programmatically, assign a value to the [`rootViewController`](./uiwindow/rootviewcontroller.md) property of the window before showing the window.
 

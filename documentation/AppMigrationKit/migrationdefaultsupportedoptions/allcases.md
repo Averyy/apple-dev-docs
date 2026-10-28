@@ -16,7 +16,7 @@ A collection of all values of this type.
 static let allCases: [MigrationDefaultSupportedOptions]
 ```
 
-#### Discussion
+## Discussion
 
 The `MigrationDefaultSupportedOptions` enumeration contains no cases, so this value is an empty array.
 

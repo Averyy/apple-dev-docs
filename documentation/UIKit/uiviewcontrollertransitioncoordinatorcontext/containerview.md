@@ -24,11 +24,11 @@ var containerView: UIView { get }
 @property (nonatomic, readonly) UIView * containerView;
 ```
 
-#### Return Value
+## Return Value
 
 The container view for the transition animation.
 
-#### Discussion
+## Discussion
 
 The container view acts as the host view for any animations between the transitioning view controllers. When animating your own custom views, add them to the container view if you want them to interoperate with the view controllers’ views.
 

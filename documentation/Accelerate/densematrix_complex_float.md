@@ -25,7 +25,7 @@ struct DenseMatrix_Complex_Float
 typedef struct { ... } DenseMatrix_Complex_Float;
 ```
 
-#### Overview
+## Overview
 
 - **`rowCount`**: Number of rows in the matrix.
 - **`columnCount`**: Number of columns in the matrix.

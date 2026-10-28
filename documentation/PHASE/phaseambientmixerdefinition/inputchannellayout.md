@@ -24,7 +24,7 @@ var inputChannelLayout: AVAudioChannelLayout { get }
 @property (nonatomic, strong, readonly) AVAudioChannelLayout * inputChannelLayout;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value to the `channelLayout` initializer argument. See [`init(channelLayout:orientation:)`](./init%28channellayout,orientation%29.md).
 

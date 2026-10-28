@@ -25,7 +25,7 @@ protocol AXBrailleMapRenderer : NSObjectProtocol
 @protocol AXBrailleMapRenderer <NSObject>
 ```
 
-#### Overview
+## Overview
 
 You update the braille display in one of these ways:
 

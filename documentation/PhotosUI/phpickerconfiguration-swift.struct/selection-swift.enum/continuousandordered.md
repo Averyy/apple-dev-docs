@@ -19,7 +19,7 @@ An option that provides the app a person’s selection immediately and displays 
 case continuousAndOrdered
 ```
 
-#### Discussion
+## Discussion
 
 This option notifies the app of photo selections dynamically, as someone taps the photo picker.
 

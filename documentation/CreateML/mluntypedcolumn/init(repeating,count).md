@@ -26,7 +26,7 @@ init(repeating repeatedValue: MLDataValue, count: Int)
 init<T>(repeating repeatedValue: T, count: Int) where T : MLDataValueConvertible
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a column of repeating elements of a data value.
 

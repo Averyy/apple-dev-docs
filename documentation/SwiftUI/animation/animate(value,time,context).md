@@ -21,7 +21,7 @@ Calculates the current value of the animation.
 func animate<V>(value: V, time: TimeInterval, context: inout AnimationContext<V>) -> V? where V : VectorArithmetic
 ```
 
-#### Return Value
+## Return Value
 
 The current value of the animation, or `nil` if the animation has finished.
 

@@ -24,11 +24,11 @@ class func disambiguation(with paymentMethodsToDisambiguate: [INPaymentMethod]) 
 + (instancetype) disambiguationWithPaymentMethodsToDisambiguate:(NSArray<INPaymentMethod *> *) paymentMethodsToDisambiguate;
 ```
 
-#### Return Value
+## Return Value
 
 A new `INPaymentMethodResolutionResult` object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when there’s more one value that might match the given parameter. Siri asks the user to select from among the objects you provide.
 

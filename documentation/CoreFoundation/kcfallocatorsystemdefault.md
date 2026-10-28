@@ -25,7 +25,7 @@ let kCFAllocatorSystemDefault: CFAllocator!
 extern CFAllocatorRef const kCFAllocatorSystemDefault;
 ```
 
-#### Discussion
+## Discussion
 
 You rarely need to use this.
 

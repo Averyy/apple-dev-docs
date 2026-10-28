@@ -25,11 +25,11 @@ init?(contentsOfFile path: String)
 - (instancetype) initWithContentsOfFile:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 A data object initialized by reading into it the data from the file specified by `path`.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to [`init(contentsOfFile:options:)`](./init%28contentsoffile,options%29.md) with no options.
 

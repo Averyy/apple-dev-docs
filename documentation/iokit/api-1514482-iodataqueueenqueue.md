@@ -23,17 +23,17 @@ func IODataQueueEnqueue(_ dataQueue: UnsafeMutablePointer<IODataQueueMemory>!, _
 IOReturn IODataQueueEnqueue(IODataQueueMemory *dataQueue, void *data, uint32_t dataSize);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success. Other return values possible are: kIOReturnOverrun - queue is full.
 
-#### Discussion
+## Discussion
 
 This method adds a new data entry of dataSize to the queue. It sets the size parameter of the entry pointed to by the tail value and copies the memory pointed to by the data parameter in place in the queue. Once that is done, it moves the tail to the next available location. When attempting to add a new entry towards the end of the queue and there isn't enough space at the end, it wraps back to the beginning.
 
 If the queue is empty when a new entry is added, the port specified in IODataQueueSetNotificationPort will be used to send a message to the client process that data is now available.
 
-**Please note that using this method without mapped memory create from an IOSharedDataQueue will result in undefined behavior. **
+**Please note that using this method without mapped memory create from an IOSharedDataQueue will result in undefined behavior.** 
 
 ## Parameters
 

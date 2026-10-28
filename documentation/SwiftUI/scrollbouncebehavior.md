@@ -21,7 +21,7 @@ The ways that a scrollable view can bounce when it reaches the end of its conten
 struct ScrollBounceBehavior
 ```
 
-#### Overview
+## Overview
 
 Use the [`scrollBounceBehavior(_:axes:)`](./view/scrollbouncebehavior%28_,axes%29.md) view modifier to set a value of this type for a scrollable view, like a [`ScrollView`](./scrollview.md) or a [`List`](./list.md). The value configures the bounce behavior when people scroll to the end of the view’s content.
 

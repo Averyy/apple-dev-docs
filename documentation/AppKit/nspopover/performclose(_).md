@@ -20,7 +20,7 @@ func performClose(_ sender: Any?)
 - (void) performClose:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The popover will not be closed if it has a delegate and the delegate implements the returns [`popoverShouldClose(_:)`](../nspopoverdelegate/popovershouldclose%28_%29.md) method returning [`false`](../../Swift/false.md), or if a subclass of the NSPopover class implements `popoverShouldClose:` and returns [`false`](../../Swift/false.md)).
 

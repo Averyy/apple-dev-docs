@@ -20,11 +20,11 @@ func CGDisplayIsInHWMirrorSet(_ display: CGDirectDisplayID) -> boolean_t
 extern boolean_t CGDisplayIsInHWMirrorSet(CGDirectDisplayID display);
 ```
 
-#### Return Value
+## Return Value
 
 If `true`, the specified display is a member of a hardware mirroring set; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 When hardware mirroring is enabled, the contents of a single framebuffer are rendered in all displays in the hardware mirroring set. All drawing operations are directed to the primary display in the set—see [`CGDisplayPrimaryDisplay(_:)`](./cgdisplayprimarydisplay%28_%29.md).
 

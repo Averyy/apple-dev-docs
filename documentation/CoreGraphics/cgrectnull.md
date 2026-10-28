@@ -25,7 +25,7 @@ let CGRectNull: CGRect
 extern const CGRect CGRectNull;
 ```
 
-#### Discussion
+## Discussion
 
 This is the rectangle returned when, for example, you intersect two disjoint rectangles. Note that the null rectangle is not the same as the [`CGRectZero`](./cgrectzero.md) rectangle. For example, the union of a rectangle with the null rectangle is the original rectangle (that is, the null rectangle contributes nothing).
 

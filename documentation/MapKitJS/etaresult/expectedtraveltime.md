@@ -15,7 +15,7 @@ The estimated travel time in seconds, including delays due to traffic.
 expectedTravelTime: number;
 ```
 
-#### Discussion
+## Discussion
 
 The [`expectedTravelTime`](./expectedtraveltime.md) reflects the estimated time, in seconds, it takes to complete the route including traffic delay estimates.
 

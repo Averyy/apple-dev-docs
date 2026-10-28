@@ -21,7 +21,7 @@ A static sequence of drawing operations that may be drawn multiple times, preser
 struct ResolvedSymbol
 ```
 
-#### Overview
+## Overview
 
 You resolve a child view in preparation for drawing it into a context by calling [`resolveSymbol(id:)`](./resolvesymbol%28id%29.md). The resolved view takes into account environment values like the display resolution and current color scheme.
 

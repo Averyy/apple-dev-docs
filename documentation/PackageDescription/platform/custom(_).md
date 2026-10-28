@@ -15,11 +15,11 @@ Creates a custom platform.
 static func custom(_ platformName: String) -> Platform
 ```
 
-#### Return Value
+## Return Value
 
 A `Platform` instance.
 
-#### Discussion
+## Discussion
 
 Use this function if none of the predefined platform names match the platform you are targeting.
 

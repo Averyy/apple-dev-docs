@@ -22,7 +22,7 @@ A rule that doesn’t make changes to any related models.
 case noAction
 ```
 
-#### Discussion
+## Discussion
 
 Ensure that you take the appropriate action on any related models when using this delete rule, such as deleting them or nullifying their references to the deleted model. Otherwise, your data will be in an inconsistent state and may reference models that don’t exist.
 

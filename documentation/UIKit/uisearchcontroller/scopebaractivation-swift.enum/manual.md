@@ -22,7 +22,7 @@ case manual
 UISearchControllerScopeBarActivationManual
 ```
 
-#### Discussion
+## Discussion
 
 When you use this mode, you control when to show and hide the scope bar through the [`showsScopeBar`](../../uisearchbar/showsscopebar.md) property on the [`searchBar`](../searchbar.md) of the [`UISearchController`](../../uisearchcontroller.md).
 

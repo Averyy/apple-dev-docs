@@ -26,11 +26,11 @@ func enumerator(for containerItemIdentifier: NSFileProviderItemIdentifier) throw
 
 - [Defining Your File Provider’s Content](../defining-your-file-provider-s-content.md)
 
-#### Return Value
+## Return Value
 
 An enumerator for the specified document or folder, or `nil` in Objective-C if an error has occurred.
 
-#### Discussion
+## Discussion
 
 Your File Provider extension must define one or more classes that adopt the [`NSFileProviderEnumerator`](../nsfileproviderenumerator.md) protocol. Instances of these classes must be able to enumerate both the contents of the specified item and any changes to the content.
 

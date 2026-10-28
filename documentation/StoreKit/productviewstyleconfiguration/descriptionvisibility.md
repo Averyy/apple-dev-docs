@@ -21,7 +21,7 @@ The visibility of product descriptions.
 let descriptionVisibility: Visibility
 ```
 
-#### Discussion
+## Discussion
 
 Subscription products have a localized [`description`](../product/description.md) property that you can conditionally display in your custom style. Use the [`descriptionVisibility`](../subscriptionstorecontrolstyleconfiguration/descriptionvisibility.md) property to check the value that the  [`productDescription(_:)`](../../SwiftUI/view/productdescription%28_%29.md) view modifier configures on an ancestor of the [`SubscriptionStoreView`](../subscriptionstoreview.md).
 

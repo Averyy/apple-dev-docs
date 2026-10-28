@@ -22,7 +22,7 @@ class var dragCopy: NSCursor { get }
 @property (class, strong, readonly) NSCursor * dragCopyCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The drag copy cursor.
 

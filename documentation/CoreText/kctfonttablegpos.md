@@ -23,7 +23,7 @@ var kCTFontTableGPOS: Int { get }
 kCTFontTableGPOS
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for glyph positioning.
 

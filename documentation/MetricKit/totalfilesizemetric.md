@@ -16,7 +16,7 @@ A metric that measures the sizes of files attributed to the app.
 struct TotalFileSizeMetric
 ```
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.totalFileSize(_:)`](./metricresult/totalfilesize%28_%29.md) case. It appears only in [`intervalEntries`](./metricreport/intervalentries.md) and is not included in state entries.
 

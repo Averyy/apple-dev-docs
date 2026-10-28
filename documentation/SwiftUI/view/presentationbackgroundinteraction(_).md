@@ -22,7 +22,7 @@ nonisolated
 func presentationBackgroundInteraction(_ interaction: PresentationBackgroundInteraction) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 On many platforms, SwiftUI automatically disables the view behind a sheet that you present, so that people can’t interact with the backing view until they dismiss the sheet. Use this modifier if you want to enable interaction.
 

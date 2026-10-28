@@ -23,7 +23,7 @@ struct BNNSSparsityParameters
 typedef struct { ... } BNNSSparsityParameters;
 ```
 
-#### Overview
+## Overview
 
 Parameters to describe sparsity attributes
 

@@ -23,7 +23,7 @@ class func allow() -> NEFilterNewFlowVerdict
 + (NEFilterNewFlowVerdict *) allowVerdict;
 ```
 
-#### Return Value
+## Return Value
 
 A `NEFilterNewFlowVerdict` object.
 

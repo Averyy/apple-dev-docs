@@ -24,11 +24,11 @@ class PHASEEnvelopeDistanceModelParameters
 @interface PHASEEnvelopeDistanceModelParameters : PHASEDistanceModelParameters
 ```
 
-#### Overview
+## Overview
 
 This class provides an envelope that the app configures to dissipate the volume of a source’s sound with distance. The envelope describes a graph that the app configures using points and curves, where the input value is the distance between a sound source and the listener, and the output value is the sound’s volume.
 
-##### Dissipate Sound by Using an Envelope
+### Dissipate Sound by Using an Envelope
 
 The framework interprets this class’s envelope as a *gain curve*, which determines the sound’s volume over a distance. An envelope offers more precise control over sound dissipation than a geometric [`rolloffFactor`](./phasegeometricspreadingdistancemodelparameters/rollofffactor.md). For example, the following code defines slow sound dissipation followed by a sharp decrease:
 

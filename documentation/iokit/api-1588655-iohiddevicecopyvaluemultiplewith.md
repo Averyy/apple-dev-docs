@@ -16,11 +16,11 @@ Copies a values for multiple elements and returns status via a completion callba
 IOReturn IOHIDDeviceCopyValueMultipleWithCallback(IOHIDDeviceRef device, CFArrayRef elements, CFDictionaryRef  _Nullable *pMultiple, CFTimeInterval timeout, IOHIDValueMultipleCallback callback, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful.
 
-#### Discussion
+## Discussion
 
 This method behaves asynchronusly and is only relevent for either output or feature type elements.
 

@@ -24,11 +24,11 @@ func reverseSquareRoot(with tensor: MPSGraphTensor, name: String?) -> MPSGraphTe
 - (MPSGraphTensor *) reverseSquareRootWithTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 
-#### Discussion
+## Discussion
 
 The reverse square root operation is the reciprocal of the square root.
 

@@ -17,7 +17,7 @@ Optional validation for constraints that depend on generation parameters.
 var parameterValidator: (@Sendable (GenerateParameters) throws -> Void)?
 ```
 
-#### Discussion
+## Discussion
 
 Validation runs before a token iterator performs prefill, so an invalid configuration fails without spending model work or mutating a cache.
 

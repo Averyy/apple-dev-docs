@@ -22,7 +22,7 @@ var visibilityPriority: NSToolbarItem.VisibilityPriority { get set }
 @property NSToolbarItemVisibilityPriority visibilityPriority;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`standard`](./visibilitypriority-swift.struct/standard.md). Assign a higher priority to give preference to the toolbar item when space is limited.
 

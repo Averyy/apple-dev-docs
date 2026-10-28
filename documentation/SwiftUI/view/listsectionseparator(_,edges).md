@@ -20,7 +20,7 @@ nonisolated
 func listSectionSeparator(_ visibility: Visibility, edges: VerticalEdge.Set = .all) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Separators can be presented above and below a section. You can specify to which edge this preference should apply.
 

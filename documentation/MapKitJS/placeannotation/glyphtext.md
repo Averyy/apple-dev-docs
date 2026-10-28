@@ -15,7 +15,7 @@ The glyph text for the place.
 get glyphText(): string | null;
 ```
 
-#### Discussion
+## Discussion
 
 This property always returns `null`. You can’t set the glyph text property of a place annotation.
 

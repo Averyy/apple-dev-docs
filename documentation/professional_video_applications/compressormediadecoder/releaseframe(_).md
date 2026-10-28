@@ -20,7 +20,7 @@ func releaseFrame(_ frame: IOSurface!)
 - (void) releaseFrame:(IOSurface *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `releaseFrame:` method to release a frame that the extension obtains by using the `copyFrame:` method and to notify the decoder that the encoder extension no longer needs the frame.
 

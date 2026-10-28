@@ -15,7 +15,7 @@ A value that represents the Accessory Access framework’s error domain.
 static var errorDomain: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 For most errors, you shouldn’t need the value provided by this key.
 

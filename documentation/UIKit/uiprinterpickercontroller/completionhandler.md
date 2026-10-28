@@ -22,7 +22,7 @@ typealias CompletionHandler = (UIPrinterPickerController, Bool, (any Error)?) ->
 typedef void (^)(UIPrinterPickerController *, _Bool, NSError *) UIPrinterPickerCompletionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 A printer picker completion handler takes the following parameters:
 

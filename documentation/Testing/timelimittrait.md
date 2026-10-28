@@ -23,7 +23,7 @@ A type that defines a time limit to apply to a test.
 struct TimeLimitTrait
 ```
 
-#### Overview
+## Overview
 
 To add this trait to a test, use [`timeLimit(_:)`](./trait/timelimit%28_%29.md).
 

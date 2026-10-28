@@ -36,7 +36,7 @@ var threadIdentifier: String { get set }
 
 - [Generating a remote notification](../generating-a-remote-notification.md)
 
-#### Discussion
+## Discussion
 
 You may specify any value for the string, but assign the same thread identifier string to all notifications that you want to group together visually.
 

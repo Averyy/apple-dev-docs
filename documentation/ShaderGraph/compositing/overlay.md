@@ -14,11 +14,11 @@ A blend operation that multiplies dark areas and screens light areas.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 2 * F * B if F < 0.5; 1 - (1 - F)(1 - B) if F >= 0.5
 
-#### Parameter Types
+## Parameter Types
 
 **Overlay (float)**:
 
@@ -68,13 +68,13 @@ A blend operation that multiplies dark areas and screens light areas.
 | --- | --- |
 | `Out` | Half |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Foreground`**: The foreground input. Represented by `F` in the mathmatical equation.
 - **`Background`**: The background input. Represented by `B` in the mathmatical equation.
 - **`Mix`**: The weight of the blend operation. The higher the value of `Mix`, the more apparent the effect of the blend operation. The default value is `1`. Values outside of the range `0-1` produce an undefined effect outside of the node’s intended function.
 
-#### Discussion
+## Discussion
 
 The `Overlay` node has one of two effects:
 

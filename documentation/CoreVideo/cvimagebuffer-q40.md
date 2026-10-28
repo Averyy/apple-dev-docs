@@ -5,7 +5,7 @@
 
 An interface for managing different types of image data.
 
-#### Overview
+## Overview
 
 Core Video image buffers provides a convenient interface for managing different types of image data. Pixel buffers and Core Video OpenGL buffers derive from the Core Video image buffer.
 

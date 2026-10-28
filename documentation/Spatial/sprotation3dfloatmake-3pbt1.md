@@ -19,11 +19,11 @@
 static SPRotation3DFloat SPRotation3DFloatMake(SPAngleFloat angle, SPRotationAxis3DFloat axis);
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation stucture.
 
-#### Discussion
+## Discussion
 
 Returns a rotation over the specified axis with the specified angle.
 

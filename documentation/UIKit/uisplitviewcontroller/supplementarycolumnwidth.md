@@ -23,7 +23,7 @@ var supplementaryColumnWidth: CGFloat { get }
 @property (nonatomic, readonly) CGFloat supplementaryColumnWidth;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the actual width applied to the supplementary view controller’s view.
 

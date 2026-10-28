@@ -25,7 +25,7 @@ class var `default`: NotificationCenter { get }
 @property (class, strong, readonly) NSNotificationCenter * defaultCenter;
 ```
 
-#### Discussion
+## Discussion
 
 All system notifications sent to an app are posted to the [`default`](./default.md) notification center. You can also post your own notifications there.
 

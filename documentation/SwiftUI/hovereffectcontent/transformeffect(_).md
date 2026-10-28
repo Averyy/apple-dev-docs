@@ -15,11 +15,11 @@ Applies an affine transformation to the view’s rendered output.
 func transformEffect(_ transform: CGAffineTransform) -> some HoverEffectContent
 ```
 
-#### Return Value
+## Return Value
 
 An effect that applies an affine transformation to the view’s rendered output.
 
-#### Discussion
+## Discussion
 
 Use `transformEffect(_:)` to rotate, scale, translate, or skew the output of the view according to the provided [`CGAffineTransform`](../../CoreFoundation/cgaffinetransform.md).
 

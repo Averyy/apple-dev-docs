@@ -5,7 +5,7 @@
 
 Register your app as a provider or consumer of systemwide custom fonts.
 
-#### Overview
+## Overview
 
 In iOS 13 and later, your iOS app can contribute fonts for systemwide use and leverage fonts that other apps install.
 
@@ -21,7 +21,7 @@ To register your app as a provider or consumer of systemwide custom fonts, follo
 
 > **Note**: The Fonts capability is only available to use with iOS apps that target iOS 13 and later.
 
-##### Select the required privileges
+### Select the required privileges
 
 Before your iOS app can install one or more custom fonts or use fonts that other apps provide, you must enable the necessary privileges by performing the following:
 

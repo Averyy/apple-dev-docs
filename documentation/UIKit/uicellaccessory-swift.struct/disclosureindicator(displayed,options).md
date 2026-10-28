@@ -19,11 +19,11 @@ Creates a disclosure indicator system accessory with the specified display state
 static func disclosureIndicator(displayed: UICellAccessory.DisplayedState = .always, options: UICellAccessory.DisclosureIndicatorOptions = DisclosureIndicatorOptions()) -> UICellAccessory
 ```
 
-#### Return Value
+## Return Value
 
 A configured disclosure indicator cell accessory. This accessory is a disclosure chevron that points in the trailing direction. This accessory appears on the trailing edge of the cell.
 
-#### Discussion
+## Discussion
 
 Use this cell accessory to indicate that users can tap on the cell to disclose additional content.
 

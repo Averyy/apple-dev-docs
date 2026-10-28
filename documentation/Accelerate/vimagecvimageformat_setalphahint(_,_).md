@@ -25,11 +25,11 @@ func vImageCVImageFormat_SetAlphaHint(_ format: vImageCVImageFormat, _ alphaIsOn
 vImage_Error vImageCVImageFormat_SetAlphaHint(vImageCVImageFormatRef format, int alphaIsOne);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 When an image format contains an alpha channel, but the image is fully opaque, set this property to a nonzero value.
 

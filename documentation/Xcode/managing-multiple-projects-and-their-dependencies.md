@@ -5,7 +5,7 @@
 
 Manage related projects in one place using a workspace, or configure build-time dependencies between different Xcode projects using cross-project references.
 
-#### Overview
+## Overview
 
 An Xcode project manages the code and resources associated with your company’s software products. Most projects are organized around a single product, but you can also use one project to manage multiple products. For example, a project might build an app, app extensions, and app-related frameworks. The organization of your projects affects how your teams work on those projects, and can also affect build performance.
 
@@ -17,7 +17,7 @@ Although you can use a single project for all of your company’s content, there
 
 When you separate content into independent projects, there might still be dependencies between them. For example, if an app team and framework team are developing their content in tandem, they each need access to the latest changes from both projects. Workspaces and cross-project references help you manage these dependencies between projects.
 
-##### Manage multiple related projects using a workspace
+### Manage multiple related projects using a workspace
 
 A workspace is a container for several related projects. Use a workspace to organize multiple projects that have explicit or implicit dependencies. For example, you might use a workspace to organize one or more apps and the shared frameworks they link against.
 
@@ -33,7 +33,7 @@ To create a workspace and add projects to it:
 
 When you add projects to a workspace, Xcode automatically detects dependencies between the targets in those projects and builds them in the correct order. For example, when you build an app that implicitly depends on a framework in a different project, Xcode automatically builds the framework before it builds the app. When you change your project, Xcode automatically updates any dependencies, so you don’t have to change them manually.
 
-##### Refer explicitly to targets, files, and products in another project
+### Refer explicitly to targets, files, and products in another project
 
 By default, a project in a workspace can’t refer to targets, files, or products in another project. If you need to refer to items in another project, you must create a cross-project reference:
 

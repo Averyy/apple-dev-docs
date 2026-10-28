@@ -26,7 +26,7 @@ func writeMultipleDatagrams(_ datagramArray: [Data], completionHandler: @escapin
 - (void) writeMultipleDatagrams:(NSArray<NSData *> *) datagramArray completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Callers should wait until the `completionHandler` is executed before issuing another write.
 

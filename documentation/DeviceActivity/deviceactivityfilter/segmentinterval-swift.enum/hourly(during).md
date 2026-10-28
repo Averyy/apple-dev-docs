@@ -20,7 +20,7 @@ case hourly(during: DateInterval = DateInterval(
             ))
 ```
 
-#### Discussion
+## Discussion
 
 If you do not provide an interval, then the system aggregates device activity into hour-long segments for the current day. The system disregards any date components in the interval that are smaller than `.hour` and instead uses the start of the hour specified by `interval.start` and the end of the hour specified by `interval.end`.
 

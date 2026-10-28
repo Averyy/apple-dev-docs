@@ -40,7 +40,7 @@ func challengeComposeController(withMessage message: String?, players: [GKPlayer
 - (NSViewController *) challengeComposeControllerWithMessage:(NSString *) message players:(NSArray<GKPlayer *> *) players completion:(GKChallengeComposeHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method presents the view controller modally from the top view controller. GameKit calls the completion handler block after it displays the view controller and the player sends or cancels the challenge.
 

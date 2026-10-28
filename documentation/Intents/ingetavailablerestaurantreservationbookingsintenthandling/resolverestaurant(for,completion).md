@@ -26,7 +26,7 @@ optional func resolveRestaurant(for intent: INGetAvailableRestaurantReservationB
 - (void) resolveRestaurantForGetAvailableRestaurantReservationBookings:(INGetAvailableRestaurantReservationBookingsIntent *) intent withCompletion:(void (^)(INRestaurantResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the restaurant to use when gathering reservation time.
 

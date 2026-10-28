@@ -11,7 +11,7 @@ Deactivates all of the ports in the device.
 virtual void detachAllAudioPorts();
 ```
 
-#### Overview
+## Overview
 
 This is called by the stop() and free() methods in IOAudioDevice to completely shut down all ports as the driver is being shut down.
 

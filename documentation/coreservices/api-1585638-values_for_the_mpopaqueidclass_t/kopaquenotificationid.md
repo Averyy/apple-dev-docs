@@ -14,7 +14,7 @@
 kOpaqueNotificationID = 12
 ```
 
-#### Discussion
+## Discussion
 
 A notification.
 

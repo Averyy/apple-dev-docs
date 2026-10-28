@@ -25,7 +25,7 @@ case debug
 OSLogEntryLogLevelDebug
 ```
 
-#### Discussion
+## Discussion
 
 This level captures information that may be useful during development or while troubleshooting a specific problem.
 

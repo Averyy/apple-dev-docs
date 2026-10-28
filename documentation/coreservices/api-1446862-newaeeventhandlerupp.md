@@ -19,11 +19,11 @@ func NewAEEventHandlerUPP(_ userRoutine: AEEventHandlerProcPtr!) -> AEEventHandl
 AEEventHandlerUPP NewAEEventHandlerUPP(AEEventHandlerProcPtr userRoutine);
 ```
 
-#### Return Value
+## Return Value
 
 See [`AEEventHandlerUPP`](./aeeventhandlerupp.md).
 
-#### Discussion
+## Discussion
 
 See the [`AEEventHandlerProcPtr`](./aeeventhandlerprocptr.md) callback function. 
 

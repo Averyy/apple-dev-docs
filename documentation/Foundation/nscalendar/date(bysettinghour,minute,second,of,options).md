@@ -25,11 +25,11 @@ func date(bySettingHour h: Int, minute m: Int, second s: Int, of date: Date, opt
 - (NSDate *) dateBySettingHour:(NSInteger) h minute:(NSInteger) m second:(NSInteger) s ofDate:(NSDate *) date options:(NSCalendarOptions) opts;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDate` instance representing the date calculated by setting the given hour, minute, and second, to a given time. If no such time exists for the specified components, the next available date is returned, which may be on a different calendar day.
 
-#### Discussion
+## Discussion
 
 You can use this method to calculate a date at a different time of a particular calendar day.
 

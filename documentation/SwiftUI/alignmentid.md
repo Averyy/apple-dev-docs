@@ -21,7 +21,7 @@ A type that you use to create custom alignment guides.
 protocol AlignmentID
 ```
 
-#### Overview
+## Overview
 
 Every built-in alignment guide that [`VerticalAlignment`](./verticalalignment.md) or [`HorizontalAlignment`](./horizontalalignment.md) defines as a static property, like [`top`](./verticalalignment/top.md) or [`leading`](./horizontalalignment/leading.md), has a unique alignment identifier type that produces the default offset for that guide. To create a custom alignment guide, define your own alignment identifier as a type that conforms to the `AlignmentID` protocol, and implement the required [`defaultValue(in:)`](./alignmentid/defaultvalue%28in%29.md) method:
 

@@ -23,7 +23,7 @@ var parentFolder: ICCameraFolder? { get }
 @property (nonatomic, readonly, nullable) ICCameraFolder * parentFolder;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property on the root folder is nil.
 

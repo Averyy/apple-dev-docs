@@ -24,11 +24,11 @@ class func moleUnit(withMolarMass gramsPerMole: Double) -> Self
 + (instancetype) moleUnitWithMolarMass:(double) gramsPerMole;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring the mass of an item in moles.
 
-#### Discussion
+## Discussion
 
 To create a unit for measuring an item in moles, you need to know that item’s molar mass. For example, you can use the [`HKUnitMolarMassBloodGlucose`](../hkunitmolarmassbloodglucose.md) constant to create the mole unit for blood glucose, as shown below.
 

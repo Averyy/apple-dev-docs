@@ -26,11 +26,11 @@ func CFNetServiceResolveWithTimeout(_ theService: CFNetService, _ timeout: CFTim
 extern Boolean CFNetServiceResolveWithTimeout(CFNetServiceRef theService, CFTimeInterval timeout, CFStreamError *error);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if an asynchronous service resolution was started or if a synchronous service resolution updated the CFNetService; `FALSE` if an asynchronous or synchronous resolution failed or timed out, or if a synchronous resolution was canceled.
 
-#### Discussion
+## Discussion
 
 This function updates the specified CFNetService with the IP address or addresses associated with the service. Call [`CFNetServiceGetAddressing(_:)`](./cfnetservicegetaddressing%28_%29.md) to get the addresses.
 
@@ -38,7 +38,7 @@ When resolving a service that runs in asynchronous mode, this function returns `
 
 When resolving a service that runs in synchronous mode, this function blocks until the CFNetService is updated with at least one IP address, until an error occurs, or until [`CFNetServiceCancel(_:)`](./cfnetservicecancel%28_%29.md) is called.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

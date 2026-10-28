@@ -26,11 +26,11 @@ func statusUpdates(forAssetPackWithID assetPackID: String) -> some Sendable & As
 - [Downloading Apple-hosted asset packs](../downloading-apple-hosted-asset-packs.md)
 - [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
-#### Return Value
+## Return Value
 
 An asynchronous sequence of download-status updates.
 
-#### Discussion
+## Discussion
 
 The sequence finishes after yielding [`AssetPackManager.DownloadStatusUpdate.finished(_:)`](./downloadstatusupdate/finished%28_%29.md) or [`AssetPackManager.DownloadStatusUpdate.failed(_:_:)`](./downloadstatusupdate/failed%28_,_%29.md).
 

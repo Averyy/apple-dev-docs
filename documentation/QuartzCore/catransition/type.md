@@ -24,7 +24,7 @@ var type: CATransitionType { get set }
 @property (copy) CATransitionType type;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values are shown in [Common Transition Types](../common-transition-types.md). This property is ignored if a custom transition is specified in the [`filter`](./filter.md) property. The default is [`fade`](../catransitiontype/fade.md).
 

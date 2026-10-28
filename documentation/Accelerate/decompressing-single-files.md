@@ -5,13 +5,13 @@
 
 Recreate a single file from a compressed file.
 
-#### Overview
+## Overview
 
 In this article, you’ll learn how to use AppleArchive to decompress a previously compressed file, and write the decompressed data to a file.
 
 The code below decompresses the file generated using the steps explained in [Compressing single files](./compressing-single-files.md).
 
-##### Create the file stream to read the source archive
+### Create the file stream to read the source archive
 
 The [`ArchiveByteStream`](../AppleArchive/archivebytestream.md) class provides static factory methods that create streams for different functions. In this case, use [`fileStream(path:mode:options:permissions:)`](../AppleArchive/archivebytestream/filestream%28path,mode,options,permissions%29.md) to create a byte stream that reads the source file:
 
@@ -30,7 +30,7 @@ defer {
 }
 ```
 
-##### Create the file stream to write the decompressed file
+### Create the file stream to write the decompressed file
 
 You also use [`fileStream(path:mode:options:permissions:)`](../AppleArchive/archivebytestream/filestream%28path,mode,options,permissions%29.md) to create the file stream that writes the decompressed file to the file system. In this case, use the [`writeOnly`](../System/filedescriptor/accessmode/writeonly.md) mode:
 
@@ -49,7 +49,7 @@ defer {
 }
 ```
 
-##### Create the decompression stream
+### Create the decompression stream
 
 Create the decompression stream. Specify the file-reading stream as the input stream that provides the compressed data:
 
@@ -63,7 +63,7 @@ defer {
 }
 ```
 
-##### Decompress the source archive
+### Decompress the source archive
 
 Finally, call [`process(readingFrom:writingTo:)`](../AppleArchive/archivebytestream/process%28readingfrom,writingto%29.md) to write the output of the decompression stream to the file-writing stream:
 

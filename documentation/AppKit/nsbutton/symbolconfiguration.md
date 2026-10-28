@@ -20,7 +20,7 @@ var symbolConfiguration: NSImage.SymbolConfiguration? { get set }
 @property (copy, nullable) NSImageSymbolConfiguration * symbolConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t provide a symbol configuration, the button uses its [`font`](../nscontrol/font.md) property to size and display the symbol image.
 

@@ -19,7 +19,7 @@ var minimumSize: NSSize { get }
 @property (readonly) NSSize minimumSize;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the value of this property to limit how much a user can resize a tab view.
 

@@ -14,7 +14,7 @@
 #define kUSBProductStringIndex
 ```
 
-#### Discussion
+## Discussion
 
 The field in the USB Device Descriptor corresponding to the index for the product name's string
 

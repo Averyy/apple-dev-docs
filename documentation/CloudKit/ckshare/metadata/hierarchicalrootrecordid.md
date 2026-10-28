@@ -26,7 +26,7 @@ var hierarchicalRootRecordID: CKRecord.ID? { get }
 @property (copy, readonly, nullable) CKRecordID * hierarchicalRootRecordID;
 ```
 
-#### Discussion
+## Discussion
 
 CloudKit populates this property only for metadata that belongs to a shared record hierarchy. If the metadata is part of a shared record zone, the property is `nil`. This is because, unlike a shared record hierarchy, a shared record zone doesn’t have a nominated root record.
 

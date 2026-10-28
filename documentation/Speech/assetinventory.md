@@ -20,13 +20,13 @@ Manages the assets that are necessary for transcription or other analyses.
 final class AssetInventory
 ```
 
-#### Overview
+## Overview
 
 Before using the [`SpeechAnalyzer`](./speechanalyzer.md) class, you must install assets required by the modules you plan to use. These assets are machine-learning models downloaded from Apple’s servers and managed by the system. Once you download, install, or use an asset, the system retains and updates it automatically, and shares it with other apps. The system makes a certain number of locale-specific asset reservations available to your app to limit storage space and network usage.
 
 Your app does not work with assets directly. Instead, your app configures module objects. The system uses the modules’ configuration to determine what assets are relevant.
 
-##### Install assets
+### Install assets
 
 Installing an asset is a four-step process:
 
@@ -37,7 +37,7 @@ Installing an asset is a four-step process:
 
 Once assets are downloaded, they persist between app launches and are shared between apps. The system may unsubscribe your app from assets that haven’t been used in a while.
 
-##### Manage assets
+### Manage assets
 
 When your app no longer needs assets for a particular locale, call [`release(reservedLocale:)`](./assetinventory/release%28reservedlocale%29.md) to free up that reservation. The system will remove the assets at a later time.
 

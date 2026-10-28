@@ -21,7 +21,7 @@ Retains the `Cancellable` as long as the entity is active (see `Entity.isActive`
 @preconcurrency func storeWhileEntityActive(_ entity: Entity)
 ```
 
-#### Discussion
+## Discussion
 
 This method does nothing if the entity is already inactive.
 

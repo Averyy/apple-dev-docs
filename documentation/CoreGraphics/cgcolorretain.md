@@ -21,11 +21,11 @@ Increments the retain count of a color.
 extern CGColorRefCGColorRetain(CGColorRef color);
 ```
 
-#### Return Value
+## Return Value
 
 The same color you passed in as the `color` parameter.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md), except that it does not cause an error if the `color` parameter is `NULL`.
 

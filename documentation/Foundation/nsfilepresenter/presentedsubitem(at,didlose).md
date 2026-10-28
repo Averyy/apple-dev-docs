@@ -25,7 +25,7 @@ optional func presentedSubitem(at url: URL, didLose version: NSFileVersion)
 - (void) presentedSubitemAtURL:(NSURL *) url didLoseVersion:(NSFileVersion *) version;
 ```
 
-#### Discussion
+## Discussion
 
 Your delegate can use this method to determine how to handle the loss of the specified file version. For an old version, you might not have to do anything. However, if your application is currently using the lost version, you would need to update your application’s user interface or prompt the user about how to proceed.
 

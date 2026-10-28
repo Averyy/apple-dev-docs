@@ -18,7 +18,7 @@ Customize the dock accessory’s tracking behavior.
 final func setFramingMode(_ mode: DockAccessory.FramingMode) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to change where DockKit places a subject within the frame. For example, a face may be on the left or right side within the video. If you disable system tracking, this setting applies locally to the current dock accessory only. Otherwise, this setting applies to any active camera stream.
 

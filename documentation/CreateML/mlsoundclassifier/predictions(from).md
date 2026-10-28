@@ -19,7 +19,7 @@ Generates predictions for an array of audio files.
 func predictions(from audioFiles: [URL]) throws -> [String]
 ```
 
-#### Return Value
+## Return Value
 
 An array of prediction labels for the audio files.
 

@@ -25,13 +25,13 @@ object SCEP
 
 - [Implementing Platform SSO during Automated Device Enrollment](./implementing-platform-sso-during-automated-device-enrollment.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.security.scep` as the payload type.
 
 A SCEP payload automates the request of a client certificate from a SCEP server, as described in [Over-the-Air Profile Delivery and Configuration](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/iPhoneOTAConfiguration/Introduction/Introduction.html).
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -43,7 +43,7 @@ A SCEP payload automates the request of a client certificate from a SCEP server,
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

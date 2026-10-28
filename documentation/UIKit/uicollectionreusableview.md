@@ -24,11 +24,11 @@ class UICollectionReusableView
 @interface UICollectionReusableView : UIView
 ```
 
-#### Overview
+## Overview
 
 Reusable views are so named because the collection view places them on a reuse queue rather than deleting them when they’re scrolled out of the visible bounds. Such a view can then be retrieved and repurposed for a different set of content.
 
-##### Subclassing notes
+### Subclassing notes
 
 This class is intended to be subclassed. Most methods defined by this class have minimal or no implementations. You aren’t required to override any of the methods but can do so in cases where you want to respond to changes in the view’s usage or layout.
 

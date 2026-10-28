@@ -15,7 +15,7 @@ The video object identifier of the driver.
 constexpr const IOUserVideoObjectID kIOUserVideoObjectIDDriver;
 ```
 
-#### Discussion
+## Discussion
 
 This video object ID always refers to the one and only instance of the `IOUserVideoDriver` class.
 

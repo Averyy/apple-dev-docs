@@ -17,11 +17,11 @@ Retrieves a peer certificate and its certificate chain.
 OSStatus SSLCopyPeerCertificates(SSLContextRef context, CFArrayRef*certs);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function is valid any time after a handshake attempt. You can use it to examine a peer certificate, to examine a certificate chain to determine why a handshake attempt failed, or to retrieve the certificate chain in order to validate the certificate yourself. (To disable validation so that you can validate the certificate yourself, use the [`SSLSetSessionOption(_:_:_:)`](./sslsetsessionoption%28_,_,_%29.md) function to set the session’s [`SSLSessionOption.breakOnServerAuth`](./sslsessionoption/breakonserverauth.md) flag.)
 

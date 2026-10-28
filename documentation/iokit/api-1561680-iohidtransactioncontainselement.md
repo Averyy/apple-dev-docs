@@ -16,7 +16,7 @@ Queries the transaction to determine if elemement has been added.
 Boolean IOHIDTransactionContainsElement(IOHIDTransactionRef transaction, IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true or false depending if element is present.
 

@@ -20,7 +20,7 @@ let SLServiceTypeSinaWeibo: String
 extern NSString * const SLServiceTypeSinaWeibo;
 ```
 
-#### Discussion
+## Discussion
 
 A string constant that identifies the social networking site, Sina Weibo.
 

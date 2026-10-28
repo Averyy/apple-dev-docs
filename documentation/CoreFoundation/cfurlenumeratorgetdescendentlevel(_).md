@@ -25,11 +25,11 @@ func CFURLEnumeratorGetDescendentLevel(_ enumerator: CFURLEnumerator!) -> CFInde
 extern CFIndex CFURLEnumeratorGetDescendentLevel(CFURLEnumeratorRef enumerator);
 ```
 
-#### Return Value
+## Return Value
 
 The current descendent level of the enumerator.
 
-#### Discussion
+## Discussion
 
 The children of the starting directory are at level 1. Each time a recursive enumerator descends into a subdirectory, it adds 1 to the descendent level. It subtracts 1 from its level when it finishes a subdirectory and continues enumerating the parent directory.
 

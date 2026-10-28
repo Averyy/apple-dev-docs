@@ -20,7 +20,7 @@ Continuously anchors the entity to its target based on the target’s predicted 
 static let predicted: AnchoringComponent.TrackingMode
 ```
 
-#### Discussion
+## Discussion
 
 `predicted` means the `Entity` will be updated whenever the corresponding anchor is updated but its transformation will be `ARKit` prediction.
 

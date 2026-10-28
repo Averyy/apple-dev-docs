@@ -25,7 +25,7 @@ var contentMayVary: Bool { get set }
 @property (nonatomic, readonly) BOOL contentMayVary;
 ```
 
-#### Discussion
+## Discussion
 
 If the value is [`false`](../../Swift/false.md), the primary asset participates in coordinated playback, this event does as well.
 

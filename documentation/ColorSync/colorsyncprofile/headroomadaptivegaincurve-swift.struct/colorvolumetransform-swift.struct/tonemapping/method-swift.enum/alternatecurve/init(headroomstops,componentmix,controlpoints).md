@@ -21,7 +21,7 @@ Creates an alternate gain curve.
 init(headroomStops: Float = 0.0, componentMix: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ComponentMix, controlPoints: ColorSyncProfile.HeadroomAdaptiveGainCurve.ColorVolumeTransform.ToneMapping.Method.AlternateCurve.ControlPoints) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.negativeHeadroomStops(_:)`](../../../../error/negativeheadroomstops%28_%29.md) if `headroomStops` is negative, or [`ColorSyncProfile.HeadroomAdaptiveGainCurve.Error.zeroFreeStyleWeights`](../../../../error/zerofreestyleweights.md) if a free-style `componentMix` has all-zero weights.
 

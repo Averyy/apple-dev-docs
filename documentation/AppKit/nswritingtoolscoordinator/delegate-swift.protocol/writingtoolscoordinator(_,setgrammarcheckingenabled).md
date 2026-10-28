@@ -19,7 +19,7 @@ optional func writingToolsCoordinator(_ writingToolsCoordinator: NSWritingToolsC
 - (void) writingToolsCoordinator:(NSWritingToolsCoordinator *) writingToolsCoordinator setGrammarCheckingEnabled:(BOOL) enabled;
 ```
 
-#### Discussion
+## Discussion
 
 To support the grammar presentation UI, the delegate is notified if the user chooses the option provided in the grammar presentation UI to disable grammar checking for the view. If you use grammar presentation, you should implement this method to respond to that action.
 

@@ -27,7 +27,7 @@ func call(arguments: Self.Arguments) async throws -> Self.Output
 - [Expanding generation with tool calling](../expanding-generation-with-tool-calling.md)
 - [Analyzing images with multimodal prompting](../analyzing-images-with-multimodal-prompting.md)
 
-#### Discussion
+## Discussion
 
 If errors are thrown in the body of this method, the framework wraps them in a [`LanguageModelSession.ToolCallError`](../languagemodelsession/toolcallerror.md) and rethrows them at the call site of [`respond(to:options:)`](../languagemodelsession/respond%28to,options%29-6a2gb.md).
 

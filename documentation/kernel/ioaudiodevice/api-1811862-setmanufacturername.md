@@ -12,7 +12,7 @@ virtual void setManufacturerName(
  const char *manufacturerName);
 ```
 
-#### Overview
+## Overview
 
 This method should be called during initialization or startup. This should be called by the time initHardware() completes. The string should be localized by the driver.
 

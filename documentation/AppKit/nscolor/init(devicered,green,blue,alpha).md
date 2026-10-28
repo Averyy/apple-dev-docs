@@ -19,11 +19,11 @@ init(deviceRed red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat)
 + (NSColor *) colorWithDeviceRed:(CGFloat) red green:(CGFloat) green blue:(CGFloat) blue alpha:(CGFloat) alpha;
 ```
 
-#### Return Value
+## Return Value
 
 The color object.
 
-#### Discussion
+## Discussion
 
 Values below 0.0 are interpreted as 0.0, and values above 1.0 are interpreted as 1.0.
 

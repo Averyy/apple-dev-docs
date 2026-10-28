@@ -21,7 +21,7 @@ An action that initiates a refresh operation.
 struct RefreshAction
 ```
 
-#### Overview
+## Overview
 
 When the [`refresh`](./environmentvalues/refresh.md) environment value contains an instance of this structure, certain built-in views in the corresponding [`Environment`](./environment.md) begin offering a refresh capability. They apply the instance’s handler to any refresh operation that the user initiates. By default, the environment value is `nil`, but you can use the [`refreshable(action:)`](./view/refreshable%28action%29.md) modifier to create and store a new refresh action that uses the handler that you specify:
 
@@ -36,7 +36,7 @@ List(mailbox.conversations) { conversation in
 
 On iOS and iPadOS, the [`List`](./list.md) in the example above offers a pull to refresh gesture because it detects the refresh action. When the user drags the list down and releases, the list calls the action’s handler. Because SwiftUI declares the handler as asynchronous, it can safely make long-running asynchronous calls, like fetching network data.
 
-##### Refreshing custom views
+### Refreshing custom views
 
 You can also offer refresh capability in your custom views. Read the [`refresh`](./environmentvalues/refresh.md) environment value to get the `RefreshAction` instance for a given [`Environment`](./environment.md). If you find a non-`nil` value, change your view’s appearance or behavior to offer the refresh to the user, and call the instance to conduct the refresh. You can call the refresh instance directly because it defines a [`callAsFunction()`](./refreshaction/callasfunction%28%29.md) method that Swift calls when you call the instance:
 

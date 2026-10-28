@@ -16,7 +16,7 @@
 - (instancetype) initWithContextSize:(CGSize) contextSize isBitmap:(BOOL) isBitmap drawingBlock:(BOOL (^)(CGContextRef context, QLPreviewReply *reply, NSError **error)) drawingBlock;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to provide a preview by drawing into a context.
 

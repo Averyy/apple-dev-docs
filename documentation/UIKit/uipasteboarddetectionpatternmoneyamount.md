@@ -18,7 +18,7 @@ A pattern that indicates the pasteboard detects a string that contains an amount
 extern UIPasteboardDetectionPattern const UIPasteboardDetectionPatternMoneyAmount;
 ```
 
-#### Discussion
+## Discussion
 
 When you include this pattern in calls to [`detectValuesForPatterns:inItemSet:completionHandler:`](./uipasteboard/detectvaluesforpatterns_initemset_completionhandler_.md) or [`detectValuesForPatterns:completionHandler:`](./uipasteboard/detectvaluesforpatterns_completionhandler_.md) and the pasteboard detects a string that contains an amount of money, the system reports the value as an array of [`NSString`](../Foundation/nsstring.md) and a Double. You can return the detected results in a paste operation with `UIPasteboardDetectionResultMoneyAmount`, which contains a semantic representation of the amount of money and currency values.
 

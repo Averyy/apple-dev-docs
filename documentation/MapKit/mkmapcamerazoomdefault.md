@@ -24,7 +24,7 @@ let MKMapCameraZoomDefault: CLLocationDistance
 extern const CLLocationDistance MKMapCameraZoomDefault;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`MKMapCameraZoomDefault`](./mkmapcamerazoomdefault.md) for the minimum or maximum zoom range when you create an instance of [`MKMapView.CameraZoomRange`](./mkmapview/camerazoomrange-swift.class.md) to allow the user to zoom to any level that MapKit supports.
 

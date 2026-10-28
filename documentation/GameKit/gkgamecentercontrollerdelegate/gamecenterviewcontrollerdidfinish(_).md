@@ -29,7 +29,7 @@ func gameCenterViewControllerDidFinish(_ gameCenterViewController: GKGameCenterV
 
 - [Displaying the Game Center dashboard](../displaying-the-game-center-dashboard.md)
 
-#### Discussion
+## Discussion
 
 Implement this method to dismiss the Game Center view controller. If your game paused any gameplay or other activities, this method can restart those services.
 

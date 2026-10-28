@@ -21,11 +21,11 @@ nonisolated
 func contextMenu<M, P>(@ContentBuilder menuItems: () -> M, @ContentBuilder preview: () -> P) -> some View where M : View, P : View
 ```
 
-#### Return Value
+## Return Value
 
 A view that can display a context menu with a preview.
 
-#### Discussion
+## Discussion
 
 When you use this modifer to add a context menu to a view in your app’s user interface, the system displays the custom preview beside the menu. Compose the menu by returning controls like [`Button`](../button.md), [`Toggle`](../toggle.md), and [`Picker`](../picker.md) from the `menuItems` closure. You can also use [`Menu`](../menu.md) to define submenus or [`Section`](../section.md) to group items.
 

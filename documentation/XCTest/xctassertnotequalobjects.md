@@ -12,7 +12,7 @@ Asserts that two objects aren’t equal.
 #define XCTAssertNotEqualObjects(expression1, expression2, ...)
 ```
 
-#### Discussion
+## Discussion
 
 Generates a failure when `expression1` is equal to `expression2`.
 

@@ -31,7 +31,7 @@ var guestDisplayPreferences: INRestaurantGuestDisplayPreferences? { get set }
 @property (atomic, copy, nullable) INRestaurantGuestDisplayPreferences * guestDisplayPreferences;
 ```
 
-#### Discussion
+## Discussion
 
 After returning your response, the system uses the preferences in this property to determine how to present guest information in the resulting system interface. Specifying a value for this property is your way of controlling how to display information about the user. For example, you might use this property to specify that you always want the user’s email address shown.
 

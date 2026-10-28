@@ -15,7 +15,7 @@ Creates an instance of a camera zoom range object with an object literal.
 constructor(rangeParams: Partial<CameraZoomRangeData>);
 ```
 
-#### Discussion
+## Discussion
 
 Calling the constructor with an [`CameraZoomRangeData`](../camerazoomrangedata.md) object literal creates a [`CameraZoomRange`](../camerazoomrange.md) instance that constrains the camera.
 

@@ -20,11 +20,11 @@ func recordDetails(forAttributes inAttributes: [Any]!) throws -> [AnyHashable : 
 - (NSDictionary *) recordDetailsForAttributes:(NSArray *) inAttributes error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of the attributes in `inAttributes` with their respective values.
 
-#### Discussion
+## Discussion
 
 If `inAttributes` is `nil`, all currently retrieved attributes are returned.
 

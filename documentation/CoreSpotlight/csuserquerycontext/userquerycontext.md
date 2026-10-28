@@ -19,7 +19,7 @@ Returns the current behavior configuration for the user query.
 + (CSUserQueryContext *) userQueryContext;
 ```
 
-#### Return Value
+## Return Value
 
 The current `CSUserQueryContext` object.
 

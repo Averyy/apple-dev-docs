@@ -25,7 +25,7 @@ func xpc_connection_resume(_ connection: xpc_connection_t)
 extern void xpc_connection_resume(xpc_connection_t connection);
 ```
 
-#### Discussion
+## Discussion
 
 In order for a connection to become live, every call to [`xpc_connection_suspend(_:)`](./xpc_connection_suspend%28_%29.md) must be balanced with a call to [`xpc_connection_resume(_:)`](./xpc_connection_resume%28_%29.md) after the initial call to [`xpc_connection_resume(_:)`](./xpc_connection_resume%28_%29.md). After the initial resume of the connection, calling [`xpc_connection_resume(_:)`](./xpc_connection_resume%28_%29.md) more times than [`xpc_connection_suspend(_:)`](./xpc_connection_suspend%28_%29.md) has been called is considered an error.
 

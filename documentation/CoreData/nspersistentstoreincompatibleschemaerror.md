@@ -25,7 +25,7 @@ var NSPersistentStoreIncompatibleSchemaError: Int { get }
 NSPersistentStoreIncompatibleSchemaError
 ```
 
-#### Discussion
+## Discussion
 
 This code pertains to database level errors such as a missing table.
 

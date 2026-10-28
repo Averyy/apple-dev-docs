@@ -9,9 +9,9 @@ Get information about a specific scheduled price change for an In-App Purchase.
 **Availability**:
 - App Store Connect API 2.0+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

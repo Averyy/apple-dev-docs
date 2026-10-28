@@ -20,7 +20,7 @@ var is_platform_binary: Bool
 bool is_platform_binary;
 ```
 
-#### Discussion
+## Discussion
 
 For the purposes of this value, a “platform binary” is one signed with Apple certificates.
 

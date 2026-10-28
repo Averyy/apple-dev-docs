@@ -15,7 +15,7 @@ A class that represents a Unified Extensible Firmware Interface (UEFI) signature
 @interface VZEFISignatureX509Certificate : VZEFISignature
 ```
 
-#### Overview
+## Overview
 
 This class represents a signature entry containing a DER-encoded X.509 certificate. The Platform Key (PK), the Key Exchange Key (KEK) database, and the allowed signature database (db) commonly use X.509 certificates.
 

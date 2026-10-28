@@ -24,7 +24,7 @@ struct LocalAvailabilityError
 
 - [Reducing download and storage demands with localized asset packs](../reducing-download-and-storage-demands-with-localized-asset-packs.md)
 
-#### Overview
+## Overview
 
 Inspect the [`successes`](./localavailabilityerror/successes.md) property to determine the asset packs for which the system successfully ensured availability. The [`failures`](./localavailabilityerror/failures.md) property provides a dictionary that maps from asset packs to errors that detail why the system couldn’t ensure their local availability.
 

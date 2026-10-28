@@ -19,7 +19,7 @@ class TVTopShelfSectionedItem
 @interface TVTopShelfSectionedItem : TVTopShelfItem
 ```
 
-#### Overview
+## Overview
 
 Create a [`TVTopShelfSectionedItem`](./tvtopshelfsectioneditem.md) object for each item you want to display in the top shelf. Each sectioned item corresponds to one item of your app’s content. For example, a video playback app uses sectioned items to represent movies or shows. Specify the image for the item using the [`setImageURL(_:for:)`](./tvtopshelfitem/setimageurl%28_,for%29.md) method. Use the inherited [`playAction`](./tvtopshelfitem/playaction.md) and [`displayAction`](./tvtopshelfitem/displayaction.md) properties to let the system know what to do when the user interacts with the item.
 

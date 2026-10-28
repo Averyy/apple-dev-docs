@@ -25,7 +25,7 @@ func CFBagAddValue(_ theBag: CFMutableBag!, _ value: UnsafeRawPointer!)
 extern void CFBagAddValue(CFMutableBagRef theBag, const void *value);
 ```
 
-#### Discussion
+## Discussion
 
 The `value` parameter is retained by `theBag` using the retain callback provided when `theBag` was created. If `value` is not of the type expected by the retain callback, the behavior is undefined. If `value` already exists in the collection, it is simply retained again—no memory is allocated for the added value. Use a CFSet object if you don’t want duplicate values in your collection.
 

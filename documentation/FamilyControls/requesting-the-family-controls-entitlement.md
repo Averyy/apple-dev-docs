@@ -5,11 +5,11 @@
 
 Register your app and its Screen Time API app extensions to use Family Controls.
 
-#### Overview
+## Overview
 
 Before you distribute an app that uses Family Controls, your Apple Developer Account Holder must request permission to use the [`Family Controls`](../BundleResources/entitlements/com.apple.developer.family-controls.md) entitlement, and update your Xcode project to use the entitlement.
 
-##### Request the entitlement
+### Request the entitlement
 
 Request the Family Controls entitlement at [Family Controls distribution](https://developer.apple.com/contact/request/family-controls-distribution). If your app includes a Screen Time API app extension such as Device Activity Monitor, Device Activity Report, Shield Action, or Shield Configuration, submit the same request for the extension. For more information on the Screen Time APIs, see [Screen Time Technology Frameworks](https://developer.apple.com/documentation/ScreenTimeAPIDocumentation).
 
@@ -17,7 +17,7 @@ Request the Family Controls entitlement at [Family Controls distribution](https:
 
 Apple reviews your app, and if it’s approved, adds the entitlement to your developer account using managed capabilities. For more information, see [Provisioning with capabilities](https://developer.apple.com/help/account/reference/provisioning-with-managed-capabilities).
 
-##### Check the status of your request
+### Check the status of your request
 
 To check your request status, follow the steps in Check the status of your request in [Capability Requests](https://developer.apple.com/help/account/capabilities/capability-requests/), then select Family Controls from the Capabilities list. When Apple approves your request, [Certificates, Identifiers & Profiles](https://developer.apple.com/account/resources/) displays an Assigned status for this capability.
 
@@ -27,7 +27,7 @@ Click the info button next to the capability. In the dialog that appears, check 
 
 ![A Capability Requests tab for Family Controls showing the entitlement key com.apple.developer.family-controls and distribution capability with Assigned status.](https://developer.apple.com/tutorials/images/com.apple.FamilyControls/family-controls-support@2x.png)
 
-##### Configure the Family Controls entitlement for your app
+### Configure the Family Controls entitlement for your app
 
 When you receive the Family Controls entitlement, update your Xcode project to use it. For more information, see [Configuring Family Controls](../Xcode/configuring-family-controls.md).
 

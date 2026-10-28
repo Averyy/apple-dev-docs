@@ -24,7 +24,7 @@ func process(with commandBuffer: any MTLCommandBuffer, parameters: any VTFramePr
 - (void) processWithCommandBuffer:(id<MTLCommandBuffer>) commandBuffer parameters:(id<VTFrameProcessorParameters>) parameters;
 ```
 
-#### Discussion
+## Discussion
 
 This function allows you to add the effect to an existing Metal command buffer. This can be used by clients that have an existing Metal pipeline and want to add this effect to it.
 

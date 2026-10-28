@@ -19,7 +19,7 @@ Creates a new graph.
 + (instancetype) graph;
 ```
 
-#### Return Value
+## Return Value
 
 A new graph.
 

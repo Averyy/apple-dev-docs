@@ -18,7 +18,7 @@ A button with a location image, title and detail labels.
 let addressButton: OCKAddressButton
 ```
 
-#### Discussion
+## Discussion
 
 Set `isHidden` to `false` to hide the button.
 

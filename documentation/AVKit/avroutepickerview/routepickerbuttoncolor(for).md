@@ -27,7 +27,7 @@ func routePickerButtonColor(for state: AVRoutePickerView.ButtonState) -> NSColor
 - (NSColor *) routePickerButtonColorForState:(AVRoutePickerViewButtonState) state;
 ```
 
-#### Return Value
+## Return Value
 
 A color value for the specified state.
 

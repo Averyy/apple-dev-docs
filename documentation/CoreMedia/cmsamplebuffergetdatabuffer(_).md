@@ -25,11 +25,11 @@ func CMSampleBufferGetDataBuffer(_ sbuf: CMSampleBuffer) -> CMBlockBuffer?
 extern CMBlockBufferRefCMSampleBufferGetDataBuffer(CMSampleBufferRef sbuf);
 ```
 
-#### Return Value
+## Return Value
 
 `CMBlockBuffer` of media data. The result will be `NULL` if the `CMSampleBuffer` does not contain a `CMBlockBuffer`, if the `CMSampleBuffer` contains a `CVImageBuffer`, or if there is some other error.
 
-#### Discussion
+## Discussion
 
 The caller doesn’t own the returned `dataBuffer`, and must retain it explicitly if the caller needs to maintain a reference to it.
 

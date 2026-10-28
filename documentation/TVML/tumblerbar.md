@@ -4,7 +4,7 @@
 
 Displays a list of `tumblerItem` elements.
 
-#### Overview
+## Overview
 
 The `tumblerBar` element contains a list of `tumblerItem` elements that are displayed horizontally. Use the remote to move between the contained `tumblerItem` elements. Here’s an example of a tumbler bar containing two tumbler items.
 
@@ -21,11 +21,11 @@ The `tumblerBar` element contains a list of `tumblerItem` elements that are disp
 </tumblerBar>
 ```
 
-##### Subelements of tumblerBar
+### Subelements of tumblerBar
 
 - [tumblerItem](./tumbleritem.md)
 
-##### Elements that Use tumblerBar
+### Elements that Use tumblerBar
 
 - [list](./list.md)
 

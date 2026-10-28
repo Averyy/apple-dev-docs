@@ -20,7 +20,7 @@ var isApplicationAuthorizedForPlayback: Bool { get }
 @property (nonatomic, readonly, getter=isApplicationAuthorizedForPlayback) BOOL applicationAuthorizedForPlayback;
 ```
 
-#### Discussion
+## Discussion
 
 This property reports whether or not the calling application is authorized to play the content associated with the item.
 

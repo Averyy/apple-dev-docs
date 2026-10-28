@@ -22,11 +22,11 @@ func location(in coordinateSpace: (any UICoordinateSpace)?) -> CGPoint
 - (CGPoint) locationInCoordinateSpace:(id<UICoordinateSpace>) coordinateSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The [`CGPoint`](../../CoreFoundation/cgpoint.md) that represents the current location of the touch, translated into the requested coordinate space.
 
-#### Discussion
+## Discussion
 
 Use this method to establish the current location of the touch that triggered the preview interaction.
 

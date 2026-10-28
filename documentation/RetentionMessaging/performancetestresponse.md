@@ -15,7 +15,7 @@ The performance test response object.
 object PerformanceTestResponse
 ```
 
-#### Overview
+## Overview
 
 Use the `requestId` to get the test results, by calling [`Get Performance Test Results`](./get-performance-test-results.md).
 

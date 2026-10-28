@@ -23,11 +23,11 @@ func captureDevicePointConverted(fromLayerPoint pointInLayer: CGPoint) -> CGPoin
 - (CGPoint) captureDevicePointOfInterestForPoint:(CGPoint) pointInLayer;
 ```
 
-#### Return Value
+## Return Value
 
 A point in capture device coordinates.
 
-#### Discussion
+## Discussion
 
 A capture device’s [`focusPointOfInterest`](../avcapturedevice/focuspointofinterest.md) and [`exposurePointOfInterest`](../avcapturedevice/exposurepointofinterest.md) properties provide a [`CGPoint`](../../CoreFoundation/cgpoint.md) value where `{0,0}` represents the top-left and `{1,1}` represents the bottom-right of the unrotated image.
 

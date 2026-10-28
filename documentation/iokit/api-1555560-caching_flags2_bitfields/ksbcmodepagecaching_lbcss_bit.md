@@ -14,7 +14,7 @@
 kSBCModePageCaching_LBCSS_Bit = 6
 ```
 
-#### Discussion
+## Discussion
 
 LBCSS Bit definition.
 

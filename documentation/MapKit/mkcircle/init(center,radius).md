@@ -25,7 +25,7 @@ convenience init(center coord: CLLocationCoordinate2D, radius: CLLocationDistanc
 + (instancetype) circleWithCenterCoordinate:(CLLocationCoordinate2D) coord radius:(CLLocationDistance) radius;
 ```
 
-#### Return Value
+## Return Value
 
 A circle overlay object.
 

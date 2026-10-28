@@ -10,7 +10,7 @@ framework: "Swift-Org/diagnostics"
 
 Warnings that identify `import` declarations with the `@_implementationOnly` attribute.
 
-#### Overview
+## Overview
 
 When applied to `import` declarations, the compiler-internal attribute `@_implementationOnly` attempts prevents declarations from the imported module from being exposed in the ABI or public interface of the dependent module. This attribute became deprecated when support for access levels on `import` declarations was introduced with [SE-0409: Access level on imports](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0409-access-level-on-imports.md).
 

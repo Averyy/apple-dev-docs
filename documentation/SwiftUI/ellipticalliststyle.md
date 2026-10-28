@@ -15,7 +15,7 @@ The list style that describes the behavior and appearance of an elliptical list.
 struct EllipticalListStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`elliptical`](./liststyle/elliptical.md) to construct this style.
 

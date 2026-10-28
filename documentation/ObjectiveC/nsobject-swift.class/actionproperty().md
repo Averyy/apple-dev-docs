@@ -19,11 +19,11 @@ func actionProperty() -> String!
 - (NSString *) actionProperty;
 ```
 
-#### Return Value
+## Return Value
 
 The property that the action applies to.
 
-#### Discussion
+## Discussion
 
 See [Table 1The documentation for property-list constants](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AddressBook/Tasks/AccessingData.html#//apple_ref/doc/uid/20001023-136659) for the properties for person and group records.
 

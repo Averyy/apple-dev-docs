@@ -5,7 +5,7 @@
 
 Submit a payment request to the App Store when a customer selects a product to buy.
 
-#### Overview
+## Overview
 
 After you present your app’s store UI, users can make purchases from within your app. When the user chooses a product, your app creates and submits a payment request to the App Store.
 
@@ -13,7 +13,7 @@ Implementing an Apple In-App Purchase flow consists of three stages. In the firs
 
 ![A flowchart depicting the three stages of the Apple In-App Purchase process between your app and the App Store. First, your app makes a request for a product, the App Store provides that product information, and your app displays it. Next, the user selects a product, your app makes a payment request, and the App Store processes the payment. Finally, the App Store calls your app’s transaction queue observer, and your app delivers the purchased product. The second stage, requesting payment, is highlighted.](https://developer.apple.com/tutorials/images/com.apple.storekit/media-3315895@2x.png)
 
-##### Create a payment request
+### Create a payment request
 
 When the user selects a product to buy, create a payment request using the corresponding [`SKProduct`](./skproduct.md) object and set the quantity if needed, as the code below shows. The product object comes from the array of products that your app’s products request returns, as described in [Fetching product information from the App Store](./fetching-product-information-from-the-app-store.md).
 
@@ -33,7 +33,7 @@ SKMutablePayment *payment = [SKMutablePayment paymentWithProduct:product];
 payment.quantity = 2;
 ```
 
-##### Submit a payment request
+### Submit a payment request
 
 Submit your payment request to the App Store by adding it to the payment queue. If you add a payment object to the queue more than once, the system submits it to the App Store multiple times, charging the user and requiring your app to deliver the product each time.
 

@@ -21,7 +21,7 @@ A type that specifies a format for a cyclic year in a date format style.
 struct CyclicYear
 ```
 
-#### Overview
+## Overview
 
 Calendars such as the Chinese lunar calendar and Hindu calendars use 60-year cycles of year names. If the calendar doesn’t provide cyclic year-name data, or if the year value to format is out of the range of years for which the system provides cyclic name data, then the formatting is numeric, as in [`Date.FormatStyle.Symbol.Year`](./year.md).
 

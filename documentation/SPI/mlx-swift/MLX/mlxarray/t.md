@@ -21,7 +21,7 @@ var T: MLXArray { get }
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 Cover for [`transposed(stream:)`](./transposed%28stream%29.md)
 

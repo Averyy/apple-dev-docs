@@ -15,7 +15,7 @@ Ad creative containing all data for visually rendering an ad.
 object Creative
 ```
 
-#### Discussion
+## Discussion
 
 A `Creative` is the unit of visual presentation for an ad, composed of a pre-tap `creativeSpec` and a post-tap `destination`.
 
@@ -34,7 +34,7 @@ The system always returns the `eligibility` field unless you exclude it with the
 
 Fields you can filter and sort on when querying ad creatives are listed in [`Query Ad Creatives`](./post-creatives-query.md).
 
-##### Example
+### Example
 
 ```json
 {

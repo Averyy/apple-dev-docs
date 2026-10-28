@@ -22,11 +22,11 @@ optional func tableView(_ tableView: UITableView, titleForDeleteConfirmationButt
 - (NSString *) tableView:(UITableView *) tableView titleForDeleteConfirmationButtonForRowAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A localized string to used as the title of the delete-confirmation button.
 
-#### Discussion
+## Discussion
 
 By default, the delete-confirmation button, which appears on the right side of the cell, has the title of “Delete”. The table view displays this button when the user attempts to delete a row, either by swiping the row or tapping the red minus icon in editing mode. You can implement this method to return an alternative title, which should be localized.
 

@@ -33,7 +33,7 @@ var status: INTaskStatus { get }
 @property (atomic, assign, readonly) INTaskStatus status;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`INTaskStatus.unknown`](../intaskstatus/unknown.md), do not attempt to change the status of the task.
 

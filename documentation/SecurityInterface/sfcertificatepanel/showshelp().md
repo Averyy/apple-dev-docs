@@ -19,7 +19,7 @@ func showsHelp() -> Bool
 - (BOOL) showsHelp;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns [`true`](../../Swift/true.md) if the help button is currently set to be displayed.
 

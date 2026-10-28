@@ -24,7 +24,7 @@ init<V>(value: Binding<V>, formatter: Formatter, prompt: Text? = nil, @ContentBu
 
 Available when `Label` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a text field that binds to a bound optional value, using a [`Formatter`](../../Foundation/formatter.md) to convert to and from this type. Changes to the bound value update the string displayed by the text field. Editing the text field updates the bound value, as long as the formatter can parse the text. If the format style can’t parse the input, the bound value remains unchanged.
 

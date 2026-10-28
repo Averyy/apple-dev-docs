@@ -20,7 +20,7 @@ var currentReplyAppleEvent: NSAppleEventDescriptor? { get }
 @property (retain, readonly, nullable) NSAppleEventDescriptor * currentReplyAppleEvent;
 ```
 
-#### Discussion
+## Discussion
 
 An Apple event is being handled on the current thread if [`currentAppleEvent`](./currentappleevent.md) does not return `nil`. Returns `nil` otherwise. This descriptor, including any mutations, will be returned to the sender of the current event when all handling of the event has been completed, if the sender has requested a reply. The effects of retaining the descriptor are undefined; it may be copied, but mutations of the copy are not returned to the sender of the current event.
 

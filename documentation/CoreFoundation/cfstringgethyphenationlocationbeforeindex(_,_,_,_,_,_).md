@@ -25,7 +25,7 @@ func CFStringGetHyphenationLocationBeforeIndex(_ string: CFString!, _ location: 
 extern CFIndex CFStringGetHyphenationLocationBeforeIndex(CFStringRef string, CFIndex location, CFRange limitRange, CFOptionFlags options, CFLocaleRef locale, UTF32Char *character);
 ```
 
-#### Return Value
+## Return Value
 
 An index in the string where it is appropriate to insert a hyphen, if one exists; otherwise, `kCFNotFound`.
 

@@ -21,7 +21,7 @@ Generates a gathered copy of the specified single-precision vector using a vecto
 extern void vDSP_vgathra(const float * const*__A, vDSP_Stride __IA, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 The following code shows an example of gathering the values in `source` using the values in `indices`:
 

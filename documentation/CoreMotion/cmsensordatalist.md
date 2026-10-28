@@ -22,7 +22,7 @@ class CMSensorDataList
 @interface CMSensorDataList : NSObject
 ```
 
-#### Overview
+## Overview
 
 You do not create instances of this class directly. Instead, you receive one as the result of a query for accelerometer data from a [`CMSensorRecorder`](./cmsensorrecorder.md) object.
 

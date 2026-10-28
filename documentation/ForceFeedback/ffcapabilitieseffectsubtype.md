@@ -18,7 +18,7 @@ typealias FFCapabilitiesEffectSubType = UInt32
 typedef UInt32 FFCapabilitiesEffectSubType;
 ```
 
-#### Discussion
+## Discussion
 
 Flags used to specify the subtype of an effect.
 

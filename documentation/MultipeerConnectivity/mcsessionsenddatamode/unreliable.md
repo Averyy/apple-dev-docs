@@ -26,7 +26,7 @@ case unreliable
 MCSessionSendDataUnreliable
 ```
 
-#### Discussion
+## Discussion
 
 Use this message type for data that ceases to be relevant if delayed, such as real-time gaming data.
 

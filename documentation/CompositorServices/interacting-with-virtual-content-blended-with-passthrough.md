@@ -10,7 +10,7 @@ Present a mixed immersion style space to draw content in a person’s surroundin
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10092: [Render Metal with passthrough in visionOS](https://developer.apple.com/wwdc24/10092/).
 

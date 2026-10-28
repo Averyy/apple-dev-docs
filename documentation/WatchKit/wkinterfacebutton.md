@@ -19,7 +19,7 @@ class WKInterfaceButton
 @interface WKInterfaceButton : WKInterfaceObject
 ```
 
-#### Overview
+## Overview
 
 The content of a button’s tappable area is filled with text and an optional background color or image. When tapped by the user, the button calls its associated action method, which you define on the owning interface controller. Use that action method to initiate tasks and update your app’s interface.
 
@@ -55,7 +55,7 @@ To respond to taps in the button, declare a method of this form in the interface
 
 You can change the name of your action method to anything you like. In your Xcode storyboard, connect the button’s selector to the custom action method defined in your class.
 
-##### Interface Builder Configuration Options
+### Interface Builder Configuration Options
 
 Xcode lets you configure information about your button interface object in your storyboard file. The following table lists the attributes you can configure in your storyboard and their meaning.
 

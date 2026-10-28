@@ -24,7 +24,7 @@ A list of dictionaries that report the categories of private data your app or th
 
 - [Describing data use in privacy manifests](../describing-data-use-in-privacy-manifests.md)
 
-#### Overview
+## Overview
 
 For more information, see [Describing data use in privacy manifests](../describing-data-use-in-privacy-manifests.md).
 

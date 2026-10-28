@@ -22,11 +22,11 @@ class func canPrint(_ url: URL) -> Bool
 + (BOOL) canPrintURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if UIKit can print the contents of the referenced file, otherwise [`false`](../../Swift/false.md). The method returns [`false`](../../Swift/false.md) if `url` references PDF data that specifies that printing is not allowed.
 
-#### Discussion
+## Discussion
 
 You should call this method to test the data referenced by a URL prior to assigning that URL to [`printingItem`](./printingitem.md) or [`printingItems`](./printingitems.md).
 

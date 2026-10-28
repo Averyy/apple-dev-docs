@@ -17,7 +17,7 @@ Constants that specify how a glyph is laid out relative to the previous glyph.
 enum NSGlyphInscription : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The glyph inscription constants are possible values for the glyph attribute [`NSGlyphAttributeInscribe`](./nsglyphattributeinscribe.md); glyph inscriptions are set during glyph generation. The only constants that the text system currently uses are `NSGlyphInscribeBase` (for most glyphs) and `NSGlyphInscribeOverstrike` (for nonbase glyphs). Nonbase glyphs occur when diacritical marks are applied to a base character, and the font does not have a single glyph to represent the combination.
 

@@ -25,7 +25,7 @@ struct AppShortcut
 
 - [Getting started with the App Intents framework](./getting-started-with-the-app-intents-framework.md)
 
-#### Overview
+## Overview
 
 > **Related sessions from WWDC22**:  Session 10170: [Implement App Shortcuts with App Intents](https://developer.apple.com/videos/play/wwdc2022/10170), and session 10169: [Design App Shortcuts](https://developer.apple.com/videos/play/wwdc2022/10169).
 

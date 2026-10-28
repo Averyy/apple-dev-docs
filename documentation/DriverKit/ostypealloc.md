@@ -18,11 +18,11 @@ Allocates memory for a named class.
 #define OSTypeAlloc(type)
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the allocated memory block, or `NULL` on failure.
 
-#### Discussion
+## Discussion
 
 This is a general-purpose utility to allocate memory for DriverKit objects. Consider using object-specific creation methods instead. To allocate memory for use in I/O transfers, create an [`IOBufferMemoryDescriptor`](./iobuffermemorydescriptor.md) instead.
 

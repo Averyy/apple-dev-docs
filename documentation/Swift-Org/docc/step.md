@@ -22,7 +22,7 @@ Defines an individual task the reader performs within a set of steps on a tutori
 }
 ```
 
-#### Overview
+## Overview
 
 Use the `Step` directive to define a single task the reader performs within a set of steps  on a tutorial page. Provide text that explains what to do, and provide a code listing , an image, or a video that illustrates the step.
 
@@ -59,7 +59,7 @@ Use the `Step` directive to define a single task the reader performs within a se
 
 > 💡 **Tip**: Don’t number steps. Steps are automatically numbered in the rendered documentation.
 
-##### Setting Context for a Step
+### Setting Context for a Step
 
 To provide additional context about the step, add text before or after the step.
 
@@ -77,7 +77,7 @@ The following steps display your customized sloth view in the preview.
 }
 ```
 
-##### Contained Elements
+### Contained Elements
 
 A step contains one the following items:
 
@@ -85,7 +85,7 @@ A step contains one the following items:
 - **[`Image`](./image.md)**: An image the reader sees when they reach the step. **(optional)**
 - **[`Video`](./video.md)**: A video the reader sees when they reach the step. **(optional)**
 
-##### Containing Elements
+### Containing Elements
 
 The following items can include a step:
 

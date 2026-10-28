@@ -27,11 +27,11 @@ optional func connection(_ connection: NSURLConnection, canAuthenticateAgainstPr
 - (BOOL) connection:(NSURLConnection *) connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *) protectionSpace;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the delegate if able to respond to a protection space’s form of authentication, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method is called before [`connection(_:didReceive:)`](./connection%28_,didreceive%29.md), allowing the delegate to inspect a protection space before attempting to authenticate against it. By returning [`true`](../../Swift/true.md), the delegate indicates that it can handle the form of authentication, which it does in the subsequent call to [`connection(_:didReceive:)`](./connection%28_,didreceive%29.md). If the delegate returns [`false`](../../Swift/false.md), the system attempts to use the user’s keychain to authenticate. If your delegate does not implement this method and the protection space uses client certificate authentication or server trust authentication, the system behaves as if you returned [`false`](../../Swift/false.md). The system behaves as if you returned [`true`](../../Swift/true.md) for all other authentication methods.
 

@@ -12,11 +12,11 @@ static const OSSymbol * withCString(
  const char *cString);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of OSSymbol representing the same characters as `cString`; `NULL` on failure.
 
-#### Overview
+## Overview
 
 This function returns the unique OSSymbol instance representing the string value of `cString`. You can compare it with other OSSymbols using the `==` operator.
 

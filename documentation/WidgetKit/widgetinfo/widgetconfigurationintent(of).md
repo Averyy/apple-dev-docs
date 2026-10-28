@@ -24,7 +24,7 @@ func widgetConfigurationIntent<Intent>(of intentType: Intent.Type = Intent.self)
 
 - [Making a configurable widget](../making-a-configurable-widget.md)
 
-#### Return Value
+## Return Value
 
 An App Intent that contains the user-edited values or nil if there is no associated App Intent or the type does not match `intentType`.
 

@@ -24,7 +24,7 @@ var contentSource: AVPictureInPictureController.ContentSource? { get set }
 @property (nonatomic, strong, nullable) AVPictureInPictureControllerContentSource * contentSource;
 ```
 
-#### Discussion
+## Discussion
 
 You can change a content source while a Picture in Picture session is active, but only if the new content source is ready for display. If it isn’t ready, the session ends immediately.
 

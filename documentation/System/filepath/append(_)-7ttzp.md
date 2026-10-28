@@ -21,7 +21,7 @@ Append the contents of `other`, ignoring any spurious leading separators.
 mutating func append(_ other: String)
 ```
 
-#### Discussion
+## Discussion
 
 A leading separator is spurious if `self` is non-empty.
 

@@ -21,7 +21,7 @@ A numeric character of another type.
 case otherNumber
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Other_Number` (abbreviated `No`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

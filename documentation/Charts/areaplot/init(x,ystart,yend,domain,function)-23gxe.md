@@ -24,7 +24,7 @@ init<S1, S2, S3>(x: S1, yStart: S2, yEnd: S3, domain: ClosedRange<Double>? = nil
 
 Available when `Content` is `FunctionAreaPlotContent`.
 
-#### Discussion
+## Discussion
 
 Parameters:
 

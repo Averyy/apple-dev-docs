@@ -5,7 +5,7 @@
 
 This function sends an effect to the device.
 
-#### Overview
+## Overview
 
 ```c
 HRESULT ( *DownloadEffect)(
@@ -16,7 +16,7 @@ HRESULT ( *DownloadEffect)(
    FFEffectParameterFlag flags );
 ```
 
-##### Parameters
+### Parameters
 
 - **self**: Pointer to the FFPlugInDriver implementation instance.
 - **effectType**: Indicates the type of effect being created. Valid UUIDs are listed as kFFEffectType_* constants in the ForceFeedbackConstants.h file. (Supported effect types include Sine, Square, Triangle, SawtoothUp, SawtoothDown, Constant, Spring, Damper, etc.).
@@ -78,7 +78,7 @@ HRESULT ( *DownloadEffect)(
 
   Suppresses the automatic download that is normally performed after the parameters are updated. If this flag is set, the driver should validate parameters without performing an actual download.
 
-##### Return Value
+### Return Value
 
 Returns FF_OK if successful, or an error value otherwise:
 

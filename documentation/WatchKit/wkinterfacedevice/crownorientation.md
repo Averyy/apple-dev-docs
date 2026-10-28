@@ -19,7 +19,7 @@ var crownOrientation: WKInterfaceDeviceCrownOrientation { get }
 @property (nonatomic, readonly) WKInterfaceDeviceCrownOrientation crownOrientation;
 ```
 
-#### Discussion
+## Discussion
 
 Users specify the Digital Crown orientation during the initial setup of Apple Watch, and this property reflects the information provided by the user.
 

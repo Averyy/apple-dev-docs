@@ -19,7 +19,7 @@ var displayMode: NSTextInsertionIndicator.DisplayMode { get set }
 @property NSTextInsertionIndicatorDisplayMode displayMode;
 ```
 
-#### Discussion
+## Discussion
 
 Set the [`displayMode`](./displaymode-swift.property.md) to [`NSTextInsertionIndicator.DisplayMode.automatic`](./displaymode-swift.enum/automatic.md) when your custom view becomes the first responder. When your custom view resigns first responder, set the [`displayMode`](./displaymode-swift.property.md) to [`NSTextInsertionIndicator.DisplayMode.hidden`](./displaymode-swift.enum/hidden.md) to indicate that key events aren’t sent to your view.
 

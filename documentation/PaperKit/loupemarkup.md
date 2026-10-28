@@ -19,7 +19,7 @@ A loupe magnifier that magnifies the content below the loupe.
 struct LoupeMarkup
 ```
 
-#### Overview
+## Overview
 
 The loupe magnifies the content beneath its frame within the parent markup. The loupe centers the magnified region on the center of its frame.
 

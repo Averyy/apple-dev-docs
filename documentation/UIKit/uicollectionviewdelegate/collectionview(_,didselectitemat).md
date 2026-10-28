@@ -23,7 +23,7 @@ optional func collectionView(_ collectionView: UICollectionView, didSelectItemAt
 - (void) collectionView:(UICollectionView *) collectionView didSelectItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method when the user successfully selects an item in the collection view. It does not call this method when you programmatically set the selection.
 

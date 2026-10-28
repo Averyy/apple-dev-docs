@@ -26,11 +26,11 @@ func hitTest(_ point: CGPoint, options: [SCNHitTestOption : Any]? = nil) -> [SCN
 - (NSArray<SCNHitTestResult *> *) hitTest:(CGPoint) point options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`SCNHitTestResult`](../scnhittestresult.md) objects representing search results.
 
-#### Discussion
+## Discussion
 
 A 2D point in the rendered screen coordinate space can refer to any point along a line segment in the 3D scene coordinate space. Hit-testing is the process of finding elements of a scene located along this line segment. For example, you can use this method to find the geometry corresponding to a click event in a SceneKit view.
 

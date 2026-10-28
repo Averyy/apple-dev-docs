@@ -16,11 +16,11 @@ Obtain attached elements.
 CFArrayRef IOHIDElementCopyAttached(IOHIDElementRef element);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a copy of the current attached elements.
 
-#### Discussion
+## Discussion
 
 Attached elements are those that have been grouped via IOHIDElementAttach.
 

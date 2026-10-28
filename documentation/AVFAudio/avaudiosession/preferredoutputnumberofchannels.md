@@ -23,7 +23,7 @@ var preferredOutputNumberOfChannels: Int { get }
 @property (readonly) NSInteger preferredOutputNumberOfChannels;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property indicates the preferred number of output channels selected using the [`setPreferredOutputNumberOfChannels(_:)`](./setpreferredoutputnumberofchannels%28_%29.md) method.
 

@@ -29,7 +29,7 @@ optional func urlSession(_ session: URLSession, task: URLSessionTask, didReceive
 - (void) URLSession:(NSURLSession *) session task:(NSURLSessionTask *) task didReceiveChallenge:(NSURLAuthenticationChallenge *) challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition disposition, NSURLCredential *credential)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method handles task-level authentication challenges. The [`URLSessionDelegate`](../urlsessiondelegate.md) protocol also provides a session-level authentication delegate method. The method called depends on the type of authentication challenge:
 

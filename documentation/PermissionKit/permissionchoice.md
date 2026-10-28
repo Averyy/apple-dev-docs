@@ -23,7 +23,7 @@ struct PermissionChoice
 
 - [Creating a communication experience](./creating-a-communication-experience.md)
 
-#### Overview
+## Overview
 
 Each [`PermissionQuestion`](./permissionquestion.md) contains a set of possible answer choices, each corresponding to a globally unique identifier that you can interpret.
 

@@ -8,7 +8,7 @@ framework: "Swift-Org/diagnostics"
 **Framework**: Swift-Org/diagnostics  
 **Role**: Article
 
-#### Overview
+## Overview
 
 Where trailing closures are used to pass one or more arguments to a function, the argument label for the first trailing closure is always omitted:
 
@@ -70,7 +70,7 @@ animate {
 
 For source compatibility in Swift 5, the compiler will attempt to apply *both* the new forward scanning rule and the old backward scanning rule when it encounters a function call with a single trailing closure. If the forward and backward scans produce *different valid* matches of arguments to parameters, the compiler will prefer the result of the backward scanning rule and produce a warning. To silence this warning, rewrite the function call to label the argument explicitly without using trailing closure syntax.
 
-#### Structural resemblance to a function type
+## Structural resemblance to a function type
 
 A parameter structurally resembles a function type if both of the following are true:
 
@@ -83,7 +83,7 @@ The adjusted type of the parameter is the parameter’s type as it appears in th
 2. If the parameter is variadic, look at the base element type.
 3. Remove all outer “optional” types.
 
-#### Heuristic for skipping parameters
+## Heuristic for skipping parameters
 
 To maintain source compatibility, the forward scanning rule applies an additional heuristic when matching trailing closure arguments. If:
 

@@ -17,11 +17,11 @@ Deletes the current batch and all its Store and Forward payments, allowing you t
 func resolveBatch(batchDeletionToken: StoreAndForwardBatchDeletionToken) async throws -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The remaining number of payments to process.
 
-#### Discussion
+## Discussion
 
 > **Throws**: This method throws a [`PaymentCardReaderStore.StoreError`](./storeerror.md) if the customer isn’t online at the moment you call it, if there’s no Store and Forward batch to resolve, or if the deletion token is invalid.
 

@@ -19,7 +19,7 @@ optional func options(for cloudKitSharingService: NSSharingService, share provid
 - (NSCloudKitSharingServiceOptions) optionsForSharingService:(NSSharingService *) cloudKitSharingService shareProvider:(NSItemProvider *) provider;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to specify whether the share is public or private. The options you return also determine any permissions that the share’s participants have. If you don’t implement this method, the cloud-sharing service uses the [`standard`](../nssharingservice/cloudkitoptions/standard.md) options.
 

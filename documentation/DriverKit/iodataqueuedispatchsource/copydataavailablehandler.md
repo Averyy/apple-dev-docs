@@ -18,7 +18,7 @@ A private method that the dispatch source uses to detect enqueued data.
 virtual kern_return_t CopyDataAvailableHandler(OSAction **action);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../error-codes.md).
 

@@ -16,7 +16,7 @@ Processes the information in a new device report and dispatches any relevant eve
 virtual void handleReport(uint64_t timestamp, uint8_t *report, uint32_t reportLength, IOHIDReportType type, uint32_t reportID);
 ```
 
-#### Discussion
+## Discussion
 
 This method iterates over the elements in the report and dispatches events for any changed values. The system calls this method automatically when a new report arrives; don’t call this method yourself.
 

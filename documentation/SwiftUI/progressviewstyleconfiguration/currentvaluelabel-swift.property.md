@@ -21,7 +21,7 @@ A view that describes the current value of a progress view.
 var currentValueLabel: ProgressViewStyleConfiguration.CurrentValueLabel?
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, then the value of the progress view is either self-evident from the surrounding context or unknown, and the style does not need to provide any additional description.
 

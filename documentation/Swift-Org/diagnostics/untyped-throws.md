@@ -10,7 +10,7 @@ framework: "Swift-Org/diagnostics"
 
 A Swift function can declare that it can throw an error using `throws`, optionally providing a specific thrown error type:
 
-#### Overview
+## Overview
 
 ```swift
 func canThrowAnything() throws { ... }          // untyped throws

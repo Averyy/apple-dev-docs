@@ -15,7 +15,7 @@ The AES3-2003 format.
 AES3
 ```
 
-#### Discussion
+## Discussion
 
 MXF and MPEG-2 containers and SDTI transport streams adopt this format with SMPTE specs 302M-2002 and 331M-2000.
 

@@ -19,7 +19,7 @@ class let willPopUpNotification: NSNotification.Name
 extern NSNotificationName NSPopUpButtonCellWillPopUpNotification;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this notification to lazily construct your part’s menus, thus preventing unnecessary calculations until they are needed. The notification object can be either a pop-up button or its enclosed pop-up button cell. This notification does not contain a `userInfo` dictionary.
 

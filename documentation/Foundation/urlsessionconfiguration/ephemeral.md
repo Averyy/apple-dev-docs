@@ -25,13 +25,13 @@ class var ephemeral: URLSessionConfiguration { get }
 @property (class, strong, readonly) NSURLSessionConfiguration * ephemeralSessionConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 An ephemeral session configuration object is similar to a default session configuration (see [`default`](./default.md)), except that the corresponding session object doesn’t store caches, credential stores, or any session-related data to disk. Instead, session-related data is stored in RAM. The only time an ephemeral session writes data to disk is when you tell it to write the contents of a URL to a file.
 
 > **Note**:  It is possible to customize a default session configuration object to obtain the same behavior (or any portion thereof) provided by an ephemeral session configuration object, but the use of this method is more convenient.
 
-##### Privacy and performance considerations
+### Privacy and performance considerations
 
 The main advantage to using ephemeral sessions is privacy. By not writing potentially sensitive data to disk, you make it less likely that the data will be intercepted and used later. For this reason, ephemeral sessions are ideal for private browsing modes in web browsers and other similar situations.
 

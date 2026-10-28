@@ -19,7 +19,7 @@ func es_subscribe(_ client: OpaquePointer, _ events: UnsafePointer<es_event_type
 extern es_return_t es_subscribe(es_client_t *client, const es_event_type_t *events, uint32_t event_count);
 ```
 
-#### Return Value
+## Return Value
 
 A value that indicates whether subscribing succeeded. [`ES_RETURN_ERROR`](./es_return_error.md) indicates that the caller couldn’t reach the Endpoint Security subsystem or that the request was invalid.
 

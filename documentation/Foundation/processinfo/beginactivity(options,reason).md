@@ -25,11 +25,11 @@ func beginActivity(options: ProcessInfo.ActivityOptions = [], reason: String) ->
 - (id<NSObject>) beginActivityWithOptions:(NSActivityOptions) options reason:(NSString *) reason;
 ```
 
-#### Return Value
+## Return Value
 
 An object token representing the activity.
 
-#### Discussion
+## Discussion
 
 Indicate completion of the activity by calling [`endActivity(_:)`](./endactivity%28_%29.md) passing the returned object as the argument.
 

@@ -19,11 +19,11 @@ func PMGetCollate(_ printSettings: PMPrintSettings, _ collate: UnsafeMutablePoin
 OSStatus PMGetCollate(PMPrintSettings printSettings, Boolean *collate);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007). 
 
-#### Discussion
+## Discussion
 
 The Collated checkbox is displayed in the Copies & Pages pane of the Print dialog. This option determines how printed material is organized. For example, if you have a document that is three pages long and you are printing multiple copies with the Collated option selected, the job prints pages 1, 2, and 3 in that order and then repeats. However, if the Collated option is not selected and you’re printing multiple copies of those same three pages, the job prints copies of page 1, then copies of page 2, and finally copies of page 3.
 

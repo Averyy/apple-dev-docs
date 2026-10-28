@@ -23,7 +23,7 @@ var region: CLRegion? { get }
 @property (nonatomic, strong, readonly, nullable) CLRegion * region;
 ```
 
-#### Discussion
+## Discussion
 
 The event is triggered based on the values of the [`notifyOnEntry`](../../CoreLocation/clregion/notifyonentry.md) and [`notifyOnExit`](../../CoreLocation/clregion/notifyonexit.md) properties.
 

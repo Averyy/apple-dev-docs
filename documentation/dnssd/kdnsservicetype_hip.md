@@ -23,7 +23,7 @@ var kDNSServiceType_HIP: Int { get }
 kDNSServiceType_HIP
 ```
 
-#### Discussion
+## Discussion
 
 Host Identity Protocol
 

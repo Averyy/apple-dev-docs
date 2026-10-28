@@ -24,7 +24,7 @@ var name: String { get }
 @property (nonatomic, copy, readonly) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`updateName(_:completionHandler:)`](./updatename%28_,completionhandler%29.md) method to change the name to a value chosen by the user.
 

@@ -22,7 +22,7 @@ class func new() -> Self
 + (instancetype) new;
 ```
 
-#### Return Value
+## Return Value
 
 A new assessment participant configuration instance.
 

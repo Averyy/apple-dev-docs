@@ -24,11 +24,11 @@ class func success(with resolvedURL: URL) -> Self
 + (instancetype) successWithResolvedURL:(NSURL *) resolvedURL;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INURLResolutionResult`](../inurlresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you’re able to resolve the URL.
 

@@ -18,7 +18,7 @@ case VMNET_PACKET_TOO_BIG
 VMNET_PACKET_TOO_BIG
 ```
 
-#### Discussion
+## Discussion
 
 Indicates failure due to packet size exceeding the maximum transmission unit (MTU).
 

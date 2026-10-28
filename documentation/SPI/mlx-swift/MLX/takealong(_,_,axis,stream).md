@@ -21,7 +21,7 @@ func takeAlong(_ array: MLXArray, _ indices: MLXArray, axis: Int, stream: Stream
 
 - [Converting From Python](./converting-python.md)
 
-##### See Also
+### See Also
 
 - [Indexes](./indexes.md)
 - [`takeAlong(_:_:stream:)`](./takealong%28_,_,stream%29.md)

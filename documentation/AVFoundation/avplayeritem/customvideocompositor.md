@@ -25,7 +25,7 @@ var customVideoCompositor: (any AVVideoCompositing)? { get }
 @property (nonatomic, readonly, nullable) id<AVVideoCompositing> customVideoCompositor;
 ```
 
-#### Discussion
+## Discussion
 
 The custom video compositor instance that is used during image generation is accessible via this property after the value of [`videoComposition`](./videocomposition.md) is set to an [`AVVideoComposition`](../avvideocomposition.md) instance that specifies a custom video compositor class. Any additional communication between the application and that instance of the custom video compositor, if any is required for configuration or other purposes, can only occur once that has happened.
 

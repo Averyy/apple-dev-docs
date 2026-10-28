@@ -19,7 +19,7 @@ func image(forSegment segment: Int) -> NSImage?
 - (NSImage *) imageForSegment:(NSInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 The image associated with the segment; otherwise, `nil`.
 

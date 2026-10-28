@@ -16,7 +16,7 @@ Sets the texture usage for the layer’s tracking areas textures to the specifie
 void cp_layer_renderer_configuration_set_tracking_areas_usage(cp_layer_renderer_configuration_t configuration, MTLTextureUsage tracking_areas_usage);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to modify the configuration details for your layer.
 

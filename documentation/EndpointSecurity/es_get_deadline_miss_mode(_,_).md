@@ -19,7 +19,7 @@ func es_get_deadline_miss_mode(_ client: OpaquePointer, _ mode: UnsafeMutablePoi
 extern es_return_t es_get_deadline_miss_mode(es_client_t *client, es_deadline_miss_mode_t *mode);
 ```
 
-#### Return Value
+## Return Value
 
 ES_RETURN_SUCCESS on success, ES_RETURN_ERROR on failure
 

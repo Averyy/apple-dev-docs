@@ -22,7 +22,7 @@ enum SubmissionMode
 enum VTSuperResolutionScalerParametersSubmissionMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 When submitting [`VTSuperResolutionScalerParameters`](../vtsuperresolutionscalerparameters.md) to the processor, you need to provide one of these values based on how the input frames are related to each other.
 

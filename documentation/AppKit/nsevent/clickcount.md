@@ -19,7 +19,7 @@ var clickCount: Int { get }
 @property (readonly) NSInteger clickCount;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an `NSInternalInconsistencyException` if accessed on a non-mouse event.
 

@@ -21,7 +21,7 @@ A type for use when defining optional Message identifiers.
 struct BaseMessageIdentifier<MessageType>
 ```
 
-#### Overview
+## Overview
 
 See [`NotificationCenter.MessageIdentifier`](./messageidentifier.md) for an example of how to use this type when defining your own message identifiers.
 

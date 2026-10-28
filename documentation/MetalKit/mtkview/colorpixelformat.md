@@ -24,7 +24,7 @@ var colorPixelFormat: MTLPixelFormat { get set }
 @property (nonatomic) MTLPixelFormat colorPixelFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The pixel format must be one that the underlying [`CAMetalLayer`](../../QuartzCore/cametallayer.md) can use. See [`pixelFormat`](../../QuartzCore/cametallayer/pixelformat.md).
 

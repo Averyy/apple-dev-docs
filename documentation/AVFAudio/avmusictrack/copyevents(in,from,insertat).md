@@ -24,7 +24,7 @@ func copyEvents(in range: AVBeatRange, from sourceTrack: AVMusicTrack, insertAt 
 - (void) copyEventsInRange:(AVBeatRange) range fromTrack:(AVMusicTrack *) sourceTrack insertAtBeat:(AVMusicTimeStamp) insertStartBeat;
 ```
 
-#### Discussion
+## Discussion
 
 All events originally at or past the insertion beat shift forward by the duration of the copied-in range.
 

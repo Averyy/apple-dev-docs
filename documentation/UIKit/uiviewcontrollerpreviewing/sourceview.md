@@ -25,7 +25,7 @@ var sourceView: UIView { get }
 @property (nonatomic, readonly) UIView * sourceView;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property when you register a view controller to participate in 3D Touch. Do this in the view controller’s [`registerForPreviewing(with:sourceView:)`](../uiviewcontroller/registerforpreviewing%28with,sourceview%29.md) method.
 

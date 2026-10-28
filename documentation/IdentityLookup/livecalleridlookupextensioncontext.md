@@ -23,7 +23,7 @@ struct LiveCallerIDLookupExtensionContext
 
 - [Getting up-to-date calling and blocking information for your app](./getting-up-to-date-calling-and-blocking-information-for-your-app.md)
 
-#### Overview
+## Overview
 
 The extension context allows the system to obtain information from your app.
 

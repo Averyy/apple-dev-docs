@@ -5,7 +5,7 @@
 
 Use a blit command encoder to copy buffer or texture data to a private resource.
 
-#### Overview
+## Overview
 
 Resources with an [`MTLStorageMode.private`](./mtlstoragemode/private.md) storage mode are accessible only to the GPU. Private resources perform better than shared resources, and you don’t have to explicitly synchronize them the way you do for managed resources.
 
@@ -13,7 +13,7 @@ However, because private resources aren’t accessible to the CPU, you can’t p
 
 For more information about resource storage modes, see [Setting resource storage modes](./setting-resource-storage-modes.md).
 
-##### Copying data from a shared buffer to a private buffer
+### Copying data from a shared buffer to a private buffer
 
 First, create a shared buffer and populate its contents using the [`makeBuffer(bytes:length:options:)`](./mtldevice/makebuffer%28bytes,length,options%29.md) method.
 
@@ -103,7 +103,7 @@ id <MTLBlitCommandEncoder> blitCommandEncoder = [commandBuffer blitCommandEncode
 
 > **Note**:  In macOS, Metal doesn’t reformat buffer contents or layout to improve GPU access. There’s no difference in GPU performance between managed or private buffers, so there’s no performance benefit in copying data from a managed buffer to a private buffer.
 
-##### Copying data from a shared buffer to a private texture
+### Copying data from a shared buffer to a private texture
 
 Use this implementation to copy texture data from the CPU to a private texture in one operation, without having to synchronize a managed texture.
 
@@ -218,7 +218,7 @@ id <MTLBlitCommandEncoder> blitCommandEncoder = [commandBuffer blitCommandEncode
 [commandBuffer commit];
 ```
 
-##### Copying data from a shared or managed texture to a private texture
+### Copying data from a shared or managed texture to a private texture
 
 First, create a shared texture or for Mac apps, a managed texture. For more information about creating buffers and textures with specific storage modes, see [Setting resource storage modes](./setting-resource-storage-modes.md).
 
@@ -321,7 +321,7 @@ id <MTLBlitCommandEncoder> blitCommandEncoder = [commandBuffer blitCommandEncode
 
 Copying data from a managed texture to a private texture involves two copy operations. For the first operation, Metal synchronizes the managed texture and copies the texture data from CPU-accessible memory to GPU-accessible memory. For the second operation, Metal copies the texture data from the managed texture to the private texture.
 
-##### Copying data from a private texture to a shared buffer
+### Copying data from a private texture to a shared buffer
 
 Use this implementation to copy texture data from the GPU to a shared buffer, without having to synchronize a managed texture.
 

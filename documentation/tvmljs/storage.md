@@ -17,7 +17,7 @@ An object used to store key-value-pair information.
 interface Storage
 ```
 
-#### Overview
+## Overview
 
 You cannot create a new instance of the `Storage` class. The available instances in TVMLKit JS are `localStorage` and `sessionStorage`. Local storage writes the data to the disk, while session storage writes the data to the memory only. Any data written to the session storage is purged when your app exits.
 

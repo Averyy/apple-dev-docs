@@ -15,7 +15,7 @@ Gets the video object that corresponds to a video object identifier.
 OSSharedPtr<IOUserVideoObject> GetVideoObjectForObjectID(IOUserVideoObjectID in_object_id);
 ```
 
-#### Return Value
+## Return Value
 
 OSSharedPtr to an IOUserVideoObject if in_object_id was found.
 

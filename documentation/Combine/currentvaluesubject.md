@@ -25,7 +25,7 @@ final class CurrentValueSubject<Output, Failure> where Failure : Error
 
 - [Using Combine for Your App’s Asynchronous Code](./using-combine-for-your-app-s-asynchronous-code.md)
 
-#### Overview
+## Overview
 
 Unlike [`PassthroughSubject`](./passthroughsubject.md), [`CurrentValueSubject`](./currentvaluesubject.md) maintains a buffer of the most recently published element.
 

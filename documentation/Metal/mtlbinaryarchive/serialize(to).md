@@ -25,7 +25,7 @@ func serialize(to url: URL) throws
 - (BOOL) serializeToURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The destination folder needs to exist when you call this method.
 

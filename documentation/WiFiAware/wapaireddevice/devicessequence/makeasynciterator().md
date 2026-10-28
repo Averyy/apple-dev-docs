@@ -17,7 +17,7 @@ Makes an asynchronous iterator that provides successive device snapshots when th
 func makeAsyncIterator() -> WAPairedDevice.DevicesSequence.AsyncIterator
 ```
 
-#### Return Value
+## Return Value
 
 A new asynchronous iterator vending [`WAPairedDevice.Devices`](../devices.md) elements when changes occur.
 

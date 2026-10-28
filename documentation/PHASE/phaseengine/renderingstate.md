@@ -24,7 +24,7 @@ var renderingState: PHASESoundEvent.RenderingState { get }
 @property (nonatomic, readonly) PHASERenderingState renderingState;
 ```
 
-#### Discussion
+## Discussion
 
 Access this property to check the engine’s playback status. The value reflects the state that you control by calling one of the functions: [`start()`](./start%28%29.md), [`stop()`](./stop%28%29.md), or [`pause()`](./pause%28%29.md).
 

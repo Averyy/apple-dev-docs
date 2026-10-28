@@ -17,7 +17,7 @@ The communication protocol the active route uses.
 final var protocolType: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The protocol’s `identifier` property enables your app to adapt its behavior based on the selected protocol. The protocol’s display name and icon can also be obtained from the `UTType`.
 

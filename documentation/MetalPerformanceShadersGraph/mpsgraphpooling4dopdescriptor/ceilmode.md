@@ -24,7 +24,7 @@ var ceilMode: Bool { get set }
 @property (nonatomic, readwrite) BOOL ceilMode;
 ```
 
-#### Discussion
+## Discussion
 
 Default value: `NO`.
 

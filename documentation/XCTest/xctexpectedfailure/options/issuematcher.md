@@ -24,7 +24,7 @@ var issueMatcher: (XCTIssueReference) -> Bool { get set }
 @property (copy) BOOL (^issueMatcher)(XCTIssue *);
 ```
 
-#### Discussion
+## Discussion
 
 Provide code to examine the issue and respond with a Boolean value indicating whether the issue fulfills the expected failure.
 

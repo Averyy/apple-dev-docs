@@ -23,7 +23,7 @@ class SAEmergencyResponseManager
 @interface SAEmergencyResponseManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the manager to place a voice call to an emergency contact upon receipt of a Crash Detection event. Provide an object that adopts [`SAEmergencyResponseDelegate`](./saemergencyresponsedelegate.md) in order to respond to the status of the voice call.
 

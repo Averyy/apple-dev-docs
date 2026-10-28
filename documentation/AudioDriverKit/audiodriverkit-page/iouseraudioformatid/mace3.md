@@ -15,7 +15,7 @@ The MACE 3:1 format.
 MACE3
 ```
 
-#### Discussion
+## Discussion
 
 This format uses no flags.
 

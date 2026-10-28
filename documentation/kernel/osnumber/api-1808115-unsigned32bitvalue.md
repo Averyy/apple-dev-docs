@@ -11,11 +11,11 @@ Returns the OSNumber object's integer value cast as an unsigned 32-bit integer.
 virtual unsigned int unsigned32BitValue() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the OSNumber object's integer value cast as an unsigned 32-bit integer.
 
-#### Overview
+## Overview
 
 This function merely casts the internal integer value, giving no indication of truncation or other potential conversion problems.
 

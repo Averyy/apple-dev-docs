@@ -5,7 +5,7 @@
 
 The properties that characteristics can have.
 
-#### Overview
+## Overview
 
 Check to see if a characteristic’s [`properties`](./hmcharacteristic/properties.md) array contains any of these constants to learn something about the corresponding characteristic ([`HMCharacteristic`](./hmcharacteristic.md)).
 

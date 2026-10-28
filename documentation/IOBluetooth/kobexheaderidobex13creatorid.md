@@ -17,7 +17,7 @@ var kOBEXHeaderIDOBEX13CreatorID: OBEXHeaderIdentifiers { get }
 kOBEXHeaderIDOBEX13CreatorID
 ```
 
-#### Discussion
+## Discussion
 
 4-byte unsigned integer that identifies the creator of the object.
 

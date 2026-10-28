@@ -5,7 +5,7 @@
 
 Debug your Safari app extension with these techniques.
 
-#### Overview
+## Overview
 
 Here are a few options for debugging your Safari app extension:
 

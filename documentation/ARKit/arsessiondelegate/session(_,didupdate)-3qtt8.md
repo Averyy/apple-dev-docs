@@ -20,7 +20,7 @@ optional func session(_ session: ARSession, didUpdate anchors: [ARAnchor])
 - (void) session:(ARSession *) session didUpdateAnchors:(NSArray<__kindof ARAnchor *> *) anchors;
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the session configuration, ARKit may automatically update the properties of anchors in a session.
 

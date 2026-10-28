@@ -17,7 +17,7 @@ An object with links to information about the upcoming pass information entry.
 object UpcomingPassInformationEntry.URLs
 ```
 
-#### Discussion
+## Discussion
 
 Use as deep a link as possible for each URL.
 

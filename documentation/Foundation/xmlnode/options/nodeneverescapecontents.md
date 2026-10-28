@@ -18,7 +18,7 @@ static var nodeNeverEscapeContents: XMLNode.Options { get }
 NSXMLNodeNeverEscapeContents
 ```
 
-#### Discussion
+## Discussion
 
 Requests that NSXML does not escape the reserved characters `<` and `&` in text nodes.
 

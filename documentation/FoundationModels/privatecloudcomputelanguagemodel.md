@@ -25,7 +25,7 @@ final class PrivateCloudComputeLanguageModel
 - [Adding server-side intelligence with Private Cloud Compute](./adding-server-side-intelligence-with-private-cloud-compute.md)
 - [Analyzing images with multimodal prompting](./analyzing-images-with-multimodal-prompting.md)
 
-#### Overview
+## Overview
 
 To use the server-based model that powers Apple Intelligence, you change a single line of code that you apply when creating your [`LanguageModelSession`](./languagemodelsession.md).
 

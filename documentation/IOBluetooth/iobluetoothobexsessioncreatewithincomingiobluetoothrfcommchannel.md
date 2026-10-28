@@ -15,11 +15,11 @@ Create an OBEX session with an IOBluetoothRFCOMMchannel. This implies you are cr
 OBEXError IOBluetoothOBEXSessionCreateWithIncomingIOBluetoothRFCOMMChannel(IOBluetoothRFCOMMChannelRef inRFCOMMChannelRef, OBEXSessionEventCallback inCallback, void *inUserRefCon, OBEXSessionRef*outSessionRef);
 ```
 
-#### Return Value
+## Return Value
 
 An error code value. 0 if successful.
 
-#### Discussion
+## Discussion
 
 This assumes that the RFCOMM channel you have passed it is already open and ready to transmit data to the session.
 

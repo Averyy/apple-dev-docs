@@ -23,7 +23,7 @@ var backgroundView: UIView? { get set }
 @property (nonatomic, strong, nullable) UIView * backgroundView;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to assign a custom background view to the cell. The background view appears behind the content view and its frame automatically adjusts so that it fills the bounds of the cell.
 

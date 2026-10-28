@@ -19,7 +19,7 @@ struct EventPoster
 
 - [Presenting the suggestions picker and processing a selection](../presenting-the-suggestions-picker-and-processing-a-selection.md)
 
-#### Overview
+## Overview
 
 The system provides a `EventPoster` value to your app when a person chooses a suggestion with a event poster
 

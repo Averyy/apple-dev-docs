@@ -5,13 +5,13 @@
 
 Released December 11, 2024 — 18.2 (20620.1.16)
 
-#### Overview
+## Overview
 
 Safari 18.2 is available for iOS 18.2, iPadOS 18.2, visionOS 2.2, macOS 15.2, macOS Sonoma, and macOS Ventura.
 
-##### Accessibility
+### Accessibility
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `text-transform: full-size-kana` to not affect speech output.  (115504070)
 - Fixed element reflection attributes to be able to retrieve a disconnected element.  (133693674)
@@ -20,25 +20,25 @@ Safari 18.2 is available for iOS 18.2, iPadOS 18.2, visionOS 2.2, macOS 15.2, ma
 - Fixed handling dynamically-created and nested `aria-modal` dialogs.  (137883473)
 - Fixed the accessibility tree to update when a text selection is cleared.  (137960839)
 
-##### Browser
+### Browser
 
-###### New Features
+#### New Features
 
 - Added contextual menu support for generating text fragment links.  (131712706)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed windows not getting restored after updating macOS.  (138413468)
 
-##### Canvas
+### Canvas
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed CanvasRenderingContext2D `globalAlpha` property getting ignored for some values of `globalCompositeOperation`.  (134840885)
 
-##### CSS
+### CSS
 
-###### New Features
+#### New Features
 
 - Added support for cross-document View Transitions.  (133994557)
 - Added support for View Transition Classes.  (129849286)
@@ -62,7 +62,7 @@ Safari 18.2 is available for iOS 18.2, iPadOS 18.2, visionOS 2.2, macOS 15.2, ma
 - Added support for `::target-text`.  (134010063)
 - Updated `calc()` to the most recent web standard, including support for dividing by numbers with additional units.  (134446246)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed backgrounds applied to a table row repeating in every table cell.  (11446455)
 - Fixed the `size` property of `@page` to parse as a descriptor, not a global CSS property.  (92963022)
@@ -83,31 +83,31 @@ Safari 18.2 is available for iOS 18.2, iPadOS 18.2, visionOS 2.2, macOS 15.2, ma
 - Fixed invalidating attribute values when programmatically mutated so that page attribute selectors work as expected.  (137228504)
 - Fixed CSS Nested declarations inside a `@scope` to behave like `:where(:scope)`.  (137307934)
 
-##### Editing
+### Editing
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed aligning with the standardized version of the `autocorrect` attribute, which does not support Email, URL, and Password fields and does not treat the empty string value in a special way.  (101036922)
 
-##### Forms
+### Forms
 
-###### New Features
+#### New Features
 
 - Added support for `input type=week` on iOS, iPadOS, and visionOS.  (10854201)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `HTMLSelectElement.prototype.add` with `optgroup` elements.  (120553757)
 
-##### History
+### History
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed using Cross-Origin-Opener-Policy HTTP header disabling the back-forward cache.  (128678196)
 
-##### JavaScript
+### JavaScript
 
-###### New Features
+#### New Features
 
 - Implemented Float16Array.  (109883982)
 - Added support for `Uint8Array.prototype.toBase64` and `Uint8Array.prototype.toHex`.  (129045737)
@@ -119,7 +119,7 @@ Safari 18.2 is available for iOS 18.2, iPadOS 18.2, visionOS 2.2, macOS 15.2, ma
 - Added support for `Iterator.prototype.constructor` and  `Iterator.prototype[@@toStringTag]`.  (134598491)
 - Added support for `Iterator.from` from Iterator Helpers Proposal.  (135065388)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed class field initializers to disallow `yield` and `await` expressions.  (119044881)
 - Fixed DestructuringAssignmentTarget to be evaluated prior to calling `[[Get]]` or a stepping iterator.  (121960976)
@@ -134,46 +134,46 @@ Safari 18.2 is available for iOS 18.2, iPadOS 18.2, visionOS 2.2, macOS 15.2, ma
 - Fixed: Improved the TypeError message when a WeakMap constructor takes an iterable that yields invalid entry.  (135333331)
 - Fixed incorrect SyntaxError when destructuring `let`.  (135353378)
 
-##### Loading
+### Loading
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `javascript:` URL navigation to another browsing context created from `window.open` not checking the source’s Content Security Policy.  (137941234)
 
-##### Media
+### Media
 
-###### New Features
+#### New Features
 
 - Added support for viewing Spatial Photos in Safari in visionOS.  (130545126)
 - Added a fallback image to Now Playing when a website doesn’t specify one in MediaSession metadata.  (131185836)
 - Added support for allowing websites to override the system-default accessibility caption styling.  (134265139)
 - Added support for Spatial Video in Safari in visionOS.  (138482091)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed fullscreen error handling to include error messages.  (103073510)
 - Fixed `audioTrack.configuration()` values for WebM files.  (133545263)
 
-##### Networking
+### Networking
 
-###### New Features
+#### New Features
 
 - Added support for Document render-blocking with `<link rel=expect>`.  (122797243)
 - Added support for `NavigationActivation.finished` handling.  (133220864)
 
-##### PDF
+### PDF
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed a hang that could occur using the Select All keyboard shortcut ⌘A (Command-A) on a PDF causing all pages to be blank.  (125375518)
 
-##### Rendering
+### Rendering
 
-###### New Features
+#### New Features
 
 - Added support for `blocking=render` attribute for `<script>` and `<style>`.  (121008856)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed non-separable blend modes in `mix-blend-mode` to workon elements in compositing layers.  (49387130)
 - Fixed MathML to layout invalid markup as an `<mrow>`.  (99335890)
@@ -187,21 +187,21 @@ Safari 18.2 is available for iOS 18.2, iPadOS 18.2, visionOS 2.2, macOS 15.2, ma
 - Fixed repeating `background-image` sized to the `content-box` failing to fill the viewport in an iframe.  (133952319)
 - Fixed rendering tick marks of the range input type when the page zoom is less than 1.  (134282707)
 
-##### Security
+### Security
 
-###### New Features
+#### New Features
 
 - Added a warning when connecting to a website over an insecure connection.  (99348736)
 - Added support for automatic fallback to HTTP if an HTTPS connection or request fails.  (114286729)
 - Changed to prefer HTTPS navigations by default.  (133799554)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an empty origin in the location permission prompt for a `blob://` resource.  (134369448)
 
-##### SVG
+### SVG
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed correctly applying `clip-path` to the SVG element.  (80516912)
 - Fixed zooming in or out of an SVG with `transform-origin`.  (96318505)
@@ -209,13 +209,13 @@ Safari 18.2 is available for iOS 18.2, iPadOS 18.2, visionOS 2.2, macOS 15.2, ma
 - Fixed `fill` to not be considered a presentation attribute on animation elements.  (128896937)
 - Fixed script elements in XHTML documents to work when trusted types are enforced.  (128935225)
 
-###### Deprecations
+#### Deprecations
 
 - Removed non-standard `hasExtension`.  (123734641)
 
-##### Web Animations
+### Web Animations
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `alignment-baseline` and `buffered-rendering` to support discrete animation.  (94613679)
 - Fixed `hanging-punctuation` to support discrete animation.  (94614108)
@@ -230,9 +230,9 @@ Safari 18.2 is available for iOS 18.2, iPadOS 18.2, visionOS 2.2, macOS 15.2, ma
 - Fixed `stroke-color` to be animatable.  (132784589)
 - Fixed transform animations that jump back and forth instead of animating continuously.  (135743482)
 
-##### Web API
+### Web API
 
-###### New Features
+#### New Features
 
 - Added `auxclick` event support to `PointerEvent`.  (25988904)
 - Updated `click`, `contextmenu`,  and `click()` to use PointerEvent, providing the `pointerType` property to these events.  (71202646)
@@ -242,7 +242,7 @@ Safari 18.2 is available for iOS 18.2, iPadOS 18.2, visionOS 2.2, macOS 15.2, ma
 - Added support for the `getCoalescedEvents` API to `PointerEvent`.  (132210576)
 - Added support for the `pageswap` and `pagereveal` events for View Transitions.  (133025306)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Aligned `oncuechange` event handler handling with other event handlers.  (98254058)
 - Fixed the Pointer Lock API to work when Fullscreen API is enabled.  (125924062)
@@ -263,69 +263,69 @@ Safari 18.2 is available for iOS 18.2, iPadOS 18.2, visionOS 2.2, macOS 15.2, ma
 - Fixed `pushManager.subscribe` returning an empty endpoint.  (138489579)
 - Fixed checking against the “active document” of the pointer when setting the pointer capture.  (139216227)
 
-###### Deprecations
+#### Deprecations
 
 - Removed support for the non-standard “overflow” event.  (71129110)
 
-##### Web Apps
+### Web Apps
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed Web Application Manifest parsing to trim all ASCII whitespace.  (134336817)
 
-##### Web Assembly
+### Web Assembly
 
-###### New Features
+#### New Features
 
 - Added support for Wasm garbage collection.  (126103011)
 - Added support for Wasm Tail Calls.  (131410516)
 
-##### Web Inspector
+### Web Inspector
 
-###### New Features
+#### New Features
 
 - Added support for blackboxing ranges within a file.  (130387125)
 - Added support for sourcemaps to be blackboxed.  (133731737)
 - Added support for showing `boundThis` for arrow functions in the console.  (134268331)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed parising attributes added when editing the tag name.  (131607290)
 - Fixed an issue where multi-line content in the Console prompt was not scrollable.  (131756916)
 
-##### WebDriver
+### WebDriver
 
-###### New Features
+#### New Features
 
 - Added support for using a persistent website data store.  (132757844)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed an issue where all script evaluation was unconditionally performed with user activation.  (111970701)
 - Fixed WebDriver sometimes taking screenshots with a transparent grey line at the top and no rounded corners.  (116020785)
 - Fixed WebDriver to use pointer origin rather than viewport origin for state location resolution.  (128668986)
 - Fixed chorded mouse interactions by ensuring input dispatch logic correctly interprets successive `mousepress` or `mouserelease` actions with different `button` values.  (128669517)
 
-##### WebXR
+### WebXR
 
-###### New Features
+#### New Features
 
 - Added support to re-project WebXR content converting depth from forward-Z to reverse-Z.  (125862366)
 - Added support for `XRSession.enabledFeatures`.  (132890511)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed audio not audible during an immersive session in visionOS.  (132038279)
 
-##### WKWebView
+### WKWebView
 
-###### New Features
+#### New Features
 
 - Added support for Genmoji on iOS and iPadOS. WKWebView also includes support for the `NSAdaptiveImageGlyph` API.  (116789598)
 - Added support for `WKDownload.originatingFrame` and `WKDownload.userInitiated` API.  (120389237)
 - Added support for `WKWebpagePreferences.UpgradeToHTTPSPolicy` in  WKWebView.  (138349588)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed `-[WKWebViewConfiguration writingToolsBehavior]` not available when using a deployment target lower than iOS 18.  (136830527) (FB15297419)
 - Fixed apps crashing intermittently crashing at launch.  (137595340)

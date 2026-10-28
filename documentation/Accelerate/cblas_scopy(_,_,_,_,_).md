@@ -25,7 +25,7 @@ func cblas_scopy(_ N: __LAPACK_int, _ X: UnsafePointer<Float>?, _ INCX: __LAPACK
 void cblas_scopy(const __LAPACK_int N, const float *X, const __LAPACK_int INCX, float *Y, const __LAPACK_int INCY);
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Apple provides the BLAS and LAPACK libraries under the Accelerate framework to be in line with LAPACK 3.9.1. Starting with iOS 26, iPadOS 26, macOS 26, tvOS 26, visionOS 26, and watchOS 26, the libraries are in line with LAPACK 3.12.0. These new interfaces provide additional functionality, as well as a new ILP64 interface. To use the new interfaces, define `ACCELERATE_NEW_LAPACK` before including the Accelerate or vecLib headers. For ILP64 interfaces, also define `ACCELERATE_LAPACK_ILP64`. For Swift projects, specify `ACCELERATE_NEW_LAPACK=1` and `ACCELERATE_LAPACK_ILP64=1` as preprocessor macros in Xcode build settings under Apple Clang - Preprocessing > Preprocessor Macros.
 

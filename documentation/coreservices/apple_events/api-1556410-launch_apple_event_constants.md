@@ -4,7 +4,7 @@
 
 In a `kAEOpenApplication` event, specify information about how the receiving application was launched.
 
-#### Overview
+## Overview
 
 Although these constants were not publicly defined in OS X version 10.4, corresponding information was provided in `kAEOpenApplication` Apple events sent by that version of the OS. Therefore your application, running in macOS 10.4 or later, can examine the open application Apple event to determine if the application was launched as a login item or a service item. However, for version 10.4, you will have to define these constants in your own code file.
 

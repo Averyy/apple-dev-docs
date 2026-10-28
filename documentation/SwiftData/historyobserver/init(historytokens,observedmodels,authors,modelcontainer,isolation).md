@@ -21,7 +21,7 @@ Creates a history observer that reports changes through its observable [`eventCo
 convenience init(historyTokens: [String : any HistoryToken]? = nil, observedModels: [any PersistentModel.Type] = [], authors: Set<String> = [], modelContainer: ModelContainer, isolation: isolated (any Actor)? = #isolation) throws
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer when you want to observe history changes via SwiftUI’s observation system or by reading [`eventCounter`](./eventcounter.md) directly.
 

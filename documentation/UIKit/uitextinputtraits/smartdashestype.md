@@ -23,7 +23,7 @@ optional var smartDashesType: UITextSmartDashesType { get set }
 @property (nonatomic) UITextSmartDashesType smartDashesType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to configure whether UIKit converts two hyphens into an en-dash and three hyphens into an em-dash automatically. The default value of this property is [`UITextSmartDashesType.default`](../uitextsmartdashestype/default.md), which selectively enables smart dashes based on the keyboard type.
 

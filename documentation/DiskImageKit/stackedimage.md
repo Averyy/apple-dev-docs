@@ -15,7 +15,7 @@ The protocol for stacked disk images that contain multiple layers.
 protocol StackedImage : DiskImage
 ```
 
-#### Overview
+## Overview
 
 A stacked disk image combines multiple layers into a single logical disk image. The first layer (the bottom of the stack) is the base layer, and subsequent layers are either cache or overlay layers that modify or cache the layers beneath.
 

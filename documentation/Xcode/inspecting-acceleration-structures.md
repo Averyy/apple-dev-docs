@@ -5,11 +5,11 @@
 
 Reveal ray intersection bottlenecks by examining your acceleration structures.
 
-#### Overview
+## Overview
 
 An *acceleration structure* is a data structure that Metal uses to accelerate ray intersection tests on the GPU. The Metal debugger allows you to inspect an acceleration structure with the Acceleration Structure viewer. After opening an acceleration structure, you can view it and its associated properties, along with various highlights.
 
-##### Navigate your acceleration structure
+### Navigate your acceleration structure
 
 You can navigate your acceleration structure using the two panes of the Acceleration Structure viewer — the structure outline on the left or the scene view on the right.
 
@@ -34,13 +34,13 @@ The scene view shows a 3D representation of your acceleration structure. You can
 | Option-Command-Control-click | Selects a primitive |
 | Command-Control-click | Selects an instance |
 
-##### Change the camera mode
+### Change the camera mode
 
 If you’re using the Fly camera, dragging in the scene view rotates the camera. Alternatively, when using the Orbit camera, dragging orbits the camera around any primitive beneath the pointer, or around the scene center if there’s no primitive. You can click the Camera button in the control bar to switch between modes.
 
 ![A screenshot of the Camera button in the control bar.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-asv-camera-button@2x.png)
 
-##### Configure intersection functions
+### Configure intersection functions
 
 Xcode automatically picks an intersection function table to use when rendering the scene, depending on how you open your acceleration structure. For example, if you open your acceleration structure from the Bound Resources viewer, Xcode selects any bound intersection function tables with matching intersector tags. For more information, see [Inspecting the bound resources for a command](./inspecting-the-bound-resources-for-a-command.md). If you open your acceleration structure from the All Resources viewer or the Memory viewer, Xcode automatically selects the last intersection function table, with matching intersector tags, in your workload. For more information, see [Analyzing memory usage](./analyzing-memory-usage.md).
 
@@ -48,13 +48,13 @@ You can switch to the intersection function table outline to configure which int
 
 ![A screenshot of the intersection function table outline. The sphere intersection function is selected, and the matching geometries are highlighted in the scene view.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-asv-intersection-functions@2x.png)
 
-##### Configure acceleration structure traversal behavior
+### Configure acceleration structure traversal behavior
 
 You can override the default behavior of the acceleration structure traversal by clicking the arrow in the bottom right of the control bar. The popover options let you configure the same properties as the intersector to control traversal behavior (see [Metal Shading Language Specification](https://developer.apple.com/metal/Metal-Shading-Language-Specification.pdf)). Match the traversal behavior with your shader to ensure that the Acceleration Structure viewer is correct.
 
 ![A screenshot of the Intersector Options popover.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-asv-intersector@2x.png)
 
-##### View your acceleration structure with highlights
+### View your acceleration structure with highlights
 
 You can view your acceleration structure with different highlights to emphasize various properties. To enable and switch between modes, click the Highlight button in the control bar.
 
@@ -89,7 +89,7 @@ You can view your acceleration structure with different highlights to emphasize 
 
 ![A screenshot of the Acceleration Structure viewer displaying the scene with the Intersection Functions highlight mode.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-metal-debugger-asv-highlight-intersection-function@2x.png)
 
-##### View per-primitive data
+### View per-primitive data
 
 To view per-primitive data, first navigate to a primitive in the structure outline. Then, click the arrow next to the data property to open a Buffer viewer containing the per-primitive data.
 
@@ -99,7 +99,7 @@ For information on configuring the Buffer viewer to better interpret the data, s
 
 > 💡 **Tip**: You can use Option-Command-Control-click at any time in the scene view to quickly reveal the primitive in the structure outline.
 
-##### View motion data
+### View motion data
 
 If your acceleration structure includes motion data, Xcode automatically shows additional motion data properties per-instance or per-geometry in the structure outline.
 

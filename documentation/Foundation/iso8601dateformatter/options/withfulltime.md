@@ -23,7 +23,7 @@ static var withFullTime: ISO8601DateFormatter.Options { get }
 NSISO8601DateFormatWithFullTime
 ```
 
-#### Discussion
+## Discussion
 
 The date representation includes the hour, minute, and second.
 

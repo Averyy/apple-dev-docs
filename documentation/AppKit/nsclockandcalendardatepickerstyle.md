@@ -13,7 +13,7 @@
 static const NSDatePickerStyle NSClockAndCalendarDatePickerStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Provide a visual clock and calendar style interface.
 

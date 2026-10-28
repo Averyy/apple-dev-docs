@@ -21,7 +21,7 @@ func setPageCacheSize(_ size: Int)
 - (void) setPageCacheSize:(NSUInteger) size;
 ```
 
-#### Discussion
+## Discussion
 
 The default page cache size can vary depending on the computer’s configuration. Use [`pageCacheSize()`](./pagecachesize%28%29.md) to get the current setting.
 

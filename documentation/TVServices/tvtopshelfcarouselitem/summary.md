@@ -19,7 +19,7 @@ var summary: String? { get set }
 @property (nonatomic, copy, nullable) NSString * summary;
 ```
 
-#### Discussion
+## Discussion
 
 The system displays the summary only in the [`TVTopShelfCarouselContent.Style.details`](../tvtopshelfcarouselcontent/style-swift.enum/details.md) style.
 

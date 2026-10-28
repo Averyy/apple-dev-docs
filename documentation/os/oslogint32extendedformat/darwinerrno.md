@@ -21,7 +21,7 @@ A format that displays a 32-bit integer as a Darwin error number.
 case darwinErrno
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to format the interpolated value as a Darwin error number, such as `32: Broken pipe`. The following example applies the `darwinErrno` formatter to the 32-bit integer value `24`:
 

@@ -9,13 +9,13 @@ Retrieve a single brand by its unique identifier.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves a single brand by its ID. The brand `id` in the response is the same value you use as `promotedObjectId` when creating a `BUSINESS_BRAND` campaign.
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Retrieves the brand with the given ID and returns its country or region, categories, and current eligibility status.
 
@@ -23,7 +23,7 @@ Retrieves the brand with the given ID and returns its country or region, categor
 GET /v1/business-brands/9151314442816847872
 ```
 
-##### Response
+### Response
 
 ```json
 {

@@ -21,7 +21,7 @@ The scalar value at the indices.
 subscript(scalarAt indices: Int...) -> Self.Scalar { get set }
 ```
 
-#### Overview
+## Overview
 
 The subscript returns scalar value of the slice pointed by the specified indices. It raises a runtime error if the specified indices is not a scalar.
 

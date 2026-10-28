@@ -19,7 +19,7 @@ var usesDataSource: Bool { get set }
 @property BOOL usesDataSource;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the combo box uses an external data source to populate its pop-up list; when it is [`false`](../../Swift/false.md), the combo box uses an internal item list.
 

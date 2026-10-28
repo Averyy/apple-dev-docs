@@ -19,11 +19,11 @@ func ABGroupCreateSearchElement(_ property: CFString!, _ label: CFString!, _ key
 extern ABSearchElementRefABGroupCreateSearchElement(CFStringRef property, CFStringRef label, CFStringRef key, CFTypeRef value, ABSearchComparison comparison);
 ```
 
-#### Return Value
+## Return Value
 
 A search element objectthat specifies a query according to the above parameters. You areresponsible for releasing this object.
 
-#### Discussion
+## Discussion
 
 Use the ABAddressBook [`ABCopyArrayOfMatchingRecords(_:_:)`](./abcopyarrayofmatchingrecords%28_,_%29.md) functionto actually perform the query. Also, see `ABSearchElement C` formore functions that create compound queries.
 

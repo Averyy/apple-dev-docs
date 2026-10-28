@@ -25,7 +25,7 @@ func nw_proxy_config_create_socksv5(_ proxy_endpoint: nw_endpoint_t) -> nw_proxy
 nw_proxy_config_tnw_proxy_config_create_socksv5(nw_endpoint_t proxy_endpoint);
 ```
 
-#### Return Value
+## Return Value
 
 An initialized proxy configuration object.
 

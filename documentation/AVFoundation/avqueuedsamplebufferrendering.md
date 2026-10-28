@@ -27,7 +27,7 @@ protocol AVQueuedSampleBufferRendering : NSObjectProtocol
 @protocol AVQueuedSampleBufferRendering <NSObject>
 ```
 
-#### Overview
+## Overview
 
 [`AVSampleBufferDisplayLayer`](./avsamplebufferdisplaylayer.md) and [`AVSampleBufferAudioRenderer`](./avsamplebufferaudiorenderer.md) conform to this protocol. When used in conjunction with an [`AVSampleBufferRenderSynchronizer`](./avsamplebufferrendersynchronizer.md), an object conforming to `AVQueuedSampleBufferRendering` can only be attached to a single synchronizer.
 

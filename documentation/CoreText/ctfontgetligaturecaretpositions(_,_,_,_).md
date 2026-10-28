@@ -25,11 +25,11 @@ func CTFontGetLigatureCaretPositions(_ font: CTFont, _ glyph: CGGlyph, _ positio
 extern CFIndex CTFontGetLigatureCaretPositions(CTFontRef font, CGGlyph glyph, CGFloat positions[], CFIndex maxPositions);
 ```
 
-#### Return Value
+## Return Value
 
 The maximum number of caret positions for the specified glyph
 
-#### Discussion
+## Discussion
 
 This function is used to obtain caret positions for a specific glyph. The return value is the maximum number of positions possible, and the function will populate the caller’s `positions` buffer with available positions if possible. This function might not be able to produce positions if the font does not have the appropriate data, in which case it will return 0.
 

@@ -25,7 +25,7 @@ class AVAssetWriterInputTaggedPixelBufferGroupAdaptor
 @interface AVAssetWriterInputTaggedPixelBufferGroupAdaptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class provides a [CVPixelBufferPool](../CoreVideo/cvpixelbufferpool-77o.md) to use for allocating the pixel buffers of tagged buffer groups to write to the output file. Using the provided pixel buffer pool for buffer allocation is typically more efficient than appending pixel buffers allocated using a separate pool.
 

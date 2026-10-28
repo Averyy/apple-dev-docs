@@ -25,7 +25,7 @@ init(objectID moid: NSManagedObjectID)
 - (instancetype) initWithObjectID:(NSManagedObjectID *) moid;
 ```
 
-#### Return Value
+## Return Value
 
 A cache node for the given managed object ID, or `nil` if the node could not be initialized.
 

@@ -15,7 +15,7 @@ A callback function called when a request is cancelled by the user.
 attribute function onabort;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute must be set to a function; for example, `XMLHttpRequest.onabort = function () {}`.
 

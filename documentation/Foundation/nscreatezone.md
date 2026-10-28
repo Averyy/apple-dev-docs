@@ -23,7 +23,7 @@ Creates a new zone.
 extern NSZone *NSCreateZone(NSUInteger startSize, NSUInteger granularity, BOOL canFree);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to a new zone of `startSize` bytes, which will grow and shrink by `granularity` bytes. If `canFree` is 0, the allocator will never free memory, and `malloc` will be fast. Returns `NULL` if a new zone could not be created.
 

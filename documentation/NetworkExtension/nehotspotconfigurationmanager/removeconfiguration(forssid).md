@@ -23,7 +23,7 @@ func removeConfiguration(forSSID SSID: String)
 - (void) removeConfigurationForSSID:(NSString *) SSID;
 ```
 
-#### Discussion
+## Discussion
 
 Your app can use this method to delete a configuration that it has added, but not a configuration added by another app or by the user.  The user can also delete configured networks through Settings > Wi-Fi.
 

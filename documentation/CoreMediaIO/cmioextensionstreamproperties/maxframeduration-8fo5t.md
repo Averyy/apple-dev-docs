@@ -16,7 +16,7 @@ The maximum duration of a frame.
 @property (atomic, strong, nullable) NSDictionary * maxFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The dictionary needs to represent a [`CMTime`](../../CoreMedia/cmtime.md) value that aligns with the frame duration of the current active format.
 

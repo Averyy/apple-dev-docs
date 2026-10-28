@@ -21,7 +21,7 @@ Builds a partial result that’s conditionally present.
 static func buildIf<T>(_ content: T?) -> T? where T : ChartContent
 ```
 
-#### Discussion
+## Discussion
 
 This method provides support for `if` statements. It produces optional chart content that is visible only when the condition evaluates to `true`.
 

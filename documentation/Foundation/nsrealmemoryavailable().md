@@ -26,7 +26,7 @@ func NSRealMemoryAvailable() -> Int
 extern NSUInteger NSRealMemoryAvailable();
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes available in RAM.
 

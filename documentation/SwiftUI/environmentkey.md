@@ -21,7 +21,7 @@ A key for accessing values in the environment.
 protocol EnvironmentKey
 ```
 
-#### Overview
+## Overview
 
 You can create custom environment values by extending the [`EnvironmentValues`](./environmentvalues.md) structure with new properties. First declare a new environment key type and specify a value for the required [`defaultValue`](./environmentkey/defaultvalue.md) property:
 

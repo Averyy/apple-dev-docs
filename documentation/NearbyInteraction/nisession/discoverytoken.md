@@ -28,7 +28,7 @@ var discoveryToken: NIDiscoveryToken? { get }
 - [Initiating and maintaining a session](../initiating-and-maintaining-a-session.md)
 - [Discovering peers with Multipeer Connectivity](../discovering-peers-with-multipeer-connectivity.md)
 
-#### Discussion
+## Discussion
 
 NI sets this property when an app initializes a session. The value of [`discoveryToken`](../ninearbyobject/discoverytoken.md) is unique to the session and identifies the device that created the session.
 

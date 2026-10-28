@@ -21,11 +21,11 @@ Gets the transactions that entitle the user to items purchased under a product I
 static func currentEntitlements(for productID: String) -> Transaction.Transactions
 ```
 
-#### Return Value
+## Return Value
 
 A sequence containing all transactions that entitle the user to the product.
 
-#### Discussion
+## Discussion
 
 If a generic SKU is provided, the returned sequence will yield all transactions that entitle the user to Advanced Commerce Items purchased using the generic product’s ID.
 

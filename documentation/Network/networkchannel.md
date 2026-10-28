@@ -21,7 +21,7 @@ A base class supporting sending and recieving data through an arbitrary network 
 class NetworkChannel<ApplicationProtocol> where ApplicationProtocol : NetworkProtocolOptions
 ```
 
-#### Overview
+## Overview
 
 The interface exposed by this type (and any derived classes) is dependent on the generic ApplicationProtocol parameter.
 

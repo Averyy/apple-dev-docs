@@ -25,7 +25,7 @@ func setTileAccelerationStructure(_ accelerationStructure: (any MTLAccelerationS
 - (void) setTileAccelerationStructure:(id<MTLAccelerationStructure>) accelerationStructure atBufferIndex:(NSUInteger) bufferIndex;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the acceleration structure at each index is `nil`.
 

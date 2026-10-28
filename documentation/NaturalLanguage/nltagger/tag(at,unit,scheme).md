@@ -22,7 +22,7 @@ Finds a tag for a given linguistic unit, for a single scheme, at the specified c
 func tag(at index: String.Index, unit: NLTokenUnit, scheme: NLTagScheme) -> (NLTag?, Range<String.Index>)
 ```
 
-#### Return Value
+## Return Value
 
 The tag for the requested tag scheme and linguistic unit, or `nil`. If a tag is returned, this function returns by reference the range of the token to `tokenRange`.
 

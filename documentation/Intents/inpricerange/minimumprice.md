@@ -31,7 +31,7 @@ var minimumPrice: NSDecimalNumber? { get }
 @property (atomic, readonly, nullable) NSDecimalNumber * minimumPrice;
 ```
 
-#### Discussion
+## Discussion
 
 If no minimum price was specified at initialization time, the value in this property is `nil`.
 

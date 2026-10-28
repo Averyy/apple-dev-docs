@@ -19,7 +19,7 @@ var preferredContentSize: NSSize { get set }
 @property NSSize preferredContentSize;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to express the desired size for a view controller’s view. A parent view controller can consult the value of this property when performing layout.
 

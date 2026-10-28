@@ -17,7 +17,7 @@ Applies Root Mean Square normalization [1] to the inputs.
 class RMSNorm
 ```
 
-#### Overview
+## Overview
 
 Concretely:
 
@@ -27,11 +27,11 @@ weight * x * MLX.rsqrt(x.square().mean() + eps)
 
 where `weight` is initialized with ones and `eps` is a small float to ensure the numerical stability of inverse square root.
 
-##### References
+### References
 
 1. [https://arxiv.org/abs/1910.07467](https://arxiv.org/abs/1910.07467)
 
-##### See also
+### See also
 
 - [Normalization](./normalization.md)
 

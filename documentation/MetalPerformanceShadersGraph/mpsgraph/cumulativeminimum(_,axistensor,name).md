@@ -24,7 +24,7 @@ func cumulativeMinimum(_ tensor: MPSGraphTensor, axisTensor: MPSGraphTensor, nam
 - (MPSGraphTensor *) cumulativeMinimumWithTensor:(MPSGraphTensor *) tensor axisTensor:(MPSGraphTensor *) axisTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 

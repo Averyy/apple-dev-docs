@@ -24,7 +24,7 @@ case configurationInvalid
 NEVPNErrorConfigurationInvalid
 ```
 
-#### Discussion
+## Discussion
 
 This error can occur in the following situations:
 

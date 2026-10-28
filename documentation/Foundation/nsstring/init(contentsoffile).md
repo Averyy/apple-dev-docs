@@ -26,7 +26,7 @@ convenience init?(contentsOfFile path: String)
 - (id) initWithContentsOfFile:(NSString *) path;
 ```
 
-#### Discussion
+## Discussion
 
 Initializes the receiver, a newly allocated `NSString` object, by reading data from the file named by `path`. If the contents begin with a byte-order mark (`U+FEFF` or `U+FFFE`), interprets the contents as UTF-16 code units; otherwise interprets the contents as data in the default C string encoding. Returns an initialized object, which might be different from the original receiver, or `nil` if the file can’t be opened.
 

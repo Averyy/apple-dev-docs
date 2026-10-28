@@ -19,7 +19,7 @@ var allowsAutomaticKeyEquivalentMirroring: Bool { get set }
 @property BOOL allowsAutomaticKeyEquivalentMirroring;
 ```
 
-#### Discussion
+## Discussion
 
 When a menu item represents a direction-related action, it’s common to specify an input string that conveys that direction. For example, Finder uses Command-[ to go back to the previous page, and Command-] to go forward to the next page. Because directions are different in left-to-right and right-to-left interfaces, this property lets the system swap some input strings to match the current language direction.
 

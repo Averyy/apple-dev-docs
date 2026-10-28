@@ -19,7 +19,7 @@ var bidiProcessingEnabled: Bool { get set }
 @property BOOL bidiProcessingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to disable the bidirectional layout stage if you know the paragraph does not need this stage; that is, if the characters in the backing store are in display order.
 

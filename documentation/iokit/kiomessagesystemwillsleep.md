@@ -17,7 +17,7 @@
 #define kIOMessageSystemWillSleep
 ```
 
-#### Discussion
+## Discussion
 
 Announces that sleep is beginning. Delivered to in-kernel IOKit drivers via `kIOGeneralInterest` and `kIOPriorityPowerStateInterest`. Delivered to user clients of `IORegisterForSystemPower`.
 

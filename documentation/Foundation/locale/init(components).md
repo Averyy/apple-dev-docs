@@ -21,7 +21,7 @@ Creates a locale from the given components.
 init(components: Locale.Components)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create a locale with a unique combination of components, beyond the defaults provided by a language and country code.
 

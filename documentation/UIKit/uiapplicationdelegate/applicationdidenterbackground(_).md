@@ -31,7 +31,7 @@ optional func applicationDidEnterBackground(_ application: UIApplication)
 - [Extending your app’s background execution time](../extending-your-app-s-background-execution-time.md)
 - [Transitioning to the UIKit scene-based life cycle](../transitioning-to-the-uikit-scene-based-life-cycle.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  If you’re using scenes (see [Scenes](../scenes.md)), UIKit will not call this method. Use [`sceneDidEnterBackground(_:)`](../uiscenedelegate/scenedidenterbackground%28_%29.md) instead to perform any final tasks. UIKit posts a [`didEnterBackgroundNotification`](../uiapplication/didenterbackgroundnotification.md) regardless of whether your app uses scenes.
 

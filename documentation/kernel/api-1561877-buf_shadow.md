@@ -15,7 +15,7 @@ returns true if 'bp' is a shadow of another buffer.
 int buf_shadow(buf_t bp);
 ```
 
-#### Return Value
+## Return Value
 
 1 if 'bp' is a shadow, 0 otherwise.
 

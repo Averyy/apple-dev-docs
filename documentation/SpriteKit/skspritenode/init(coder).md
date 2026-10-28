@@ -25,7 +25,7 @@ init?(coder aDecoder: NSCoder)
 - (instancetype) initWithCoder:(NSCoder *) aDecoder;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this function directly; the system calls this function when you should initialize your sprite from the argument archived data.
 

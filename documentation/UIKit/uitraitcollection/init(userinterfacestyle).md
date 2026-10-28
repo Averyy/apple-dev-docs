@@ -23,7 +23,7 @@ init(userInterfaceStyle: UIUserInterfaceStyle)
 + (UITraitCollection *) traitCollectionWithUserInterfaceStyle:(UIUserInterfaceStyle) userInterfaceStyle;
 ```
 
-#### Return Value
+## Return Value
 
 A new trait collection containing only the interface style trait.
 

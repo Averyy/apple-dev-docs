@@ -19,7 +19,7 @@ class CWWiFiClient
 @interface CWWiFiClient : NSObject
 ```
 
-#### Overview
+## Overview
 
 Wi-Fi client objects are heavy. Therefore, it’s more efficient to use a single, long-running client instance, rather than creating several short-lived instances. For convenience, you can use the singleton instance returned by the [`shared()`](./cwwificlient/shared%28%29.md) class method.
 

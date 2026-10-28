@@ -15,7 +15,7 @@ Resets a target.
 virtual kern_return_t UserTargetResetRequest(uint64_t theT, uint32_t *response);
 ```
 
-#### Discussion
+## Discussion
 
 The definition of the reset event that this request performs depends on the SCSI protocol.
 

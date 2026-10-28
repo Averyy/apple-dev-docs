@@ -9,7 +9,7 @@ Get the details on a set of devices.
 **Availability**:
 - Device Assignment Services 5.0+
 
-#### Discussion
+## Discussion
 
 ## Topics
 

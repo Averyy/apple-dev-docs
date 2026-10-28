@@ -21,7 +21,7 @@ A Boolean value indicating whether this array contains no elements.
 var isEmpty: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

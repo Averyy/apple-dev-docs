@@ -30,7 +30,7 @@ class UIResponder
 - [Handling key presses made on a physical keyboard](./handling-key-presses-made-on-a-physical-keyboard.md)
 - [Transitioning to the UIKit scene-based life cycle](./transitioning-to-the-uikit-scene-based-life-cycle.md)
 
-#### Overview
+## Overview
 
 Responder objects — instances of [`UIResponder`](./uiresponder.md) — constitute the event-handling backbone of a UIKit app. Many key objects are also responders, including the [`UIApplication`](./uiapplication.md) object, [`UIViewController`](./uiviewcontroller.md) objects, and all [`UIView`](./uiview.md) objects (which includes [`UIWindow`](./uiwindow.md)). As events occur, UIKit dispatches them to your app’s responder objects for handling.
 

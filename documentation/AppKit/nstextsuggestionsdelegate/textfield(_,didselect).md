@@ -17,7 +17,7 @@ Called when an item in the suggestions menu has been selected.
 func textField(_ textField: NSTextField, didSelect item: Self.Item)
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation inserts the item’s text completion (`textField(_:textCompletionFor:)`) into the control, replacing its existing text. Overriding this method allows you to do a custom behavior instead.
 

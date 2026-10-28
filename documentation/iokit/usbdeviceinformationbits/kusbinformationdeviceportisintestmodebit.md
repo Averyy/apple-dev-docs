@@ -14,7 +14,7 @@
 kUSBInformationDevicePortIsInTestModeBit = 8
 ```
 
-#### Discussion
+## Discussion
 
 The hub port to which the USB device is attached is in test mode
 

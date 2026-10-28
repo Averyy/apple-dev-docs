@@ -19,7 +19,7 @@ Data suitable for a table or chart.
 case table
 ```
 
-#### Discussion
+## Discussion
 
 The data for this type is a [`SearchResultsTable`](../searchresultstable.md) structure, which contains row and column data.
 

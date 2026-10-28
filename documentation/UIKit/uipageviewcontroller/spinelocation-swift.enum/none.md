@@ -23,7 +23,7 @@ case none
 UIPageViewControllerSpineLocationNone
 ```
 
-#### Discussion
+## Discussion
 
 This spine location is not valid if the transition style is [`UIPageViewController.TransitionStyle.pageCurl`](../transitionstyle-swift.enum/pagecurl.md).
 

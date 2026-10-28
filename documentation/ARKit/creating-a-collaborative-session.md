@@ -11,7 +11,7 @@ Enable nearby devices to share an AR experience by using a peer-to-peer multiuse
 - iPadOS 13.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 As an AR app runs, ARKit gathers information about a userʼs physical environment by processing the camera feed from the user’s device. To effect a multiuser AR experience in which users learn more about the environment by sharing the information from their device’s camera feed with other users, you enable *collaboration*.
 
@@ -25,7 +25,7 @@ Although this sample draws its graphics using RealityKit, it doesn’t use Reali
 
 To create a shared AR experience using a host-guest approach, see [Creating a multiuser AR experience](./creating-a-multiuser-ar-experience.md).
 
-#### Enable Collaboration
+## Enable Collaboration
 
 Collaborative sessions are available when your session uses [`ARWorldTrackingConfiguration`](./arworldtrackingconfiguration.md). To enable collaboration, set [`isCollaborationEnabled`](./arworldtrackingconfiguration/iscollaborationenabled.md) to `true`.
 
@@ -42,7 +42,7 @@ configuration?.environmentTexturing = .automatic
 arView.session.run(configuration!)
 ```
 
-#### Gather collaboration data
+## Gather collaboration data
 
 When collaboration is enabled, ARKit periodically invokes [`session(_:didOutputCollaborationData:)`](./arsessionobserver/session%28_,didoutputcollaborationdata%29.md), which provides collaboration data that you can share with nearby users. You are responsible for sending collaboration data over the network, including choosing the network framework and implementing the code. The data you send is a serialized version of the [`ARSession.CollaborationData`](./arsession/collaborationdata.md) object provided by your session. Before you send collaboration data over the network, first serialize it using [[`NSKeyedArchiver`](../Foundation/nskeyedarchiver.md).
 
@@ -63,7 +63,7 @@ func session(_ session: ARSession, didOutputCollaborationData data: ARSession.Co
 
 It’s safe to ignore the collaboration data if no peers have joined the session. In that case, ARKit outputs the collaboration data later to try again. The alternative approach of enabling collaboration only after peers have joined is not supported, because doing so restarts the session.
 
-#### Send collaboration data to others
+## Send collaboration data to others
 
 You choose the network protocol with which to share collaboration data. This sample app sends collaboration data using [Multipeer Connectivity](../MultipeerConnectivity/MultipeerConnectivity.md).
 
@@ -78,7 +78,7 @@ func sendToPeers(_ data: Data, reliably: Bool, peers: [MCPeerID]) {
 }
 ```
 
-#### Update your session with collaboration data
+## Update your session with collaboration data
 
 When you receive collaboration data from peer users, you instantiate an [`ARSession.CollaborationData`](./arsession/collaborationdata.md) object with it, and pass the object to your session via [`update(with:)`](./arsession/update%28with%29.md).
 
@@ -91,7 +91,7 @@ func receivedData(_ data: Data, from peer: MCPeerID) {
     // ...
 ```
 
-#### Facilitate world map merging
+## Facilitate world map merging
 
 For ARKit to know where two users are with respect to each other, it has to recognize overlap across their respective world maps. When ARKit succeeds in fitting the two world maps together, it can begin sharing those users’ respective locations and any anchors they created with each other.
 
@@ -104,7 +104,7 @@ messageLabel.displayMessage("""
     """, duration: 6.0)
 ```
 
-#### Identify when ARKit merges world data
+## Identify when ARKit merges world data
 
 The first time ARKit successfully merges world data from another user, it calls your app’s [`session(_:didAdd:)`](./arsessiondelegate/session%28_,didadd%29.md), passing in an [`ARSessionDelegate`](./arsessiondelegate.md) that identifies the other user. This action notifies you of the merging event.
 
@@ -116,7 +116,7 @@ func session(_ session: ARSession, didAdd anchors: [ARAnchor]) {
             // ...
 ```
 
-#### Visualize users by displaying virtual content
+## Visualize users by displaying virtual content
 
 When ARKit successfully merges two users’ world data, you can then initiate actions to begin the multiuser experience. The sample adds virtual content in the real-world location of newly joined peer users to visualize them in AR.
 
@@ -138,11 +138,11 @@ The multicolored coordinate system shown in the following illustration represent
 
 ![Screenshot of virtual content that represents the real-world position and pose of a peer user.](https://developer.apple.com/tutorials/images/com.apple.arkit/participant-annotated.jpg)
 
-#### Check an anchor’s owner
+## Check an anchor’s owner
 
 When ARKit merges two users’ world data, it collects all the anchors created by both users and calls [`session(_:didAdd:)`](./arsessiondelegate/session%28_,didadd%29.md) to notify each user of the collection. To check which user created an anchor, you compare the anchor’s [`sessionIdentifier`](./aranchor/sessionidentifier.md) with the active session’s [`identifier`](./arsession/identifier.md). If the anchor’s session ID is different from the active session’s ID, the other user created the anchor.
 
-#### Color Virtual Content Based on the User
+## Color Virtual Content Based on the User
 
 To distinguish virtual content by user, you choose a different color for each user. The sample app uses the `toRandomColor` function to assign user colors.
 
@@ -168,7 +168,7 @@ func toRandomColor() -> UIColor {
 }
 ```
 
-#### Place virtual content
+## Place virtual content
 
 When ARKit notifies you of a new nonparticipant anchor in [`session(_:didAdd:)`](./arsessiondelegate/session%28_,didadd%29.md), place a block geometry tinted with the color calculated in the previous section.
 

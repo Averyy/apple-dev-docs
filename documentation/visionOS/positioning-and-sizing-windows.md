@@ -5,7 +5,7 @@
 
 Influence the initial geometry of windows that your app presents.
 
-#### Overview
+## Overview
 
 visionOS and macOS enable people to move and resize windows. In some cases, your app can use scene modifiers to influence a window’s initial geometry on these platforms, as well as to specify the strategy that the system employs to place minimum and maximum size limitations on a window. This kind of configuration affects both windows and volumes, which are windows with the [`volumetric`](../SwiftUI/windowstyle/volumetric.md) window style.
 
@@ -17,7 +17,7 @@ Your ability to configure window size and position is subject to the following c
 
 > **Note**: Windows in iPadOS occupy the full screen, or share the screen with another window in Slide Over or Split View. You can’t programmatically affect window geometry on that platform.
 
-##### Specify initial window position
+### Specify initial window position
 
 **macOS**:
 
@@ -96,7 +96,7 @@ struct MyApp: App {
 
 Use one of the [`WindowPlacement.Position`](../SwiftUI/windowplacement/position.md) enumerations to choose the position of the window.
 
-##### Specify initial window size
+### Specify initial window size
 
 You can indicate a default initial size for a new window that the system creates from a [`Scene`](../SwiftUI/scene.md) declaration by applying one of the default size scene modifiers, like [`defaultSize(width:height:)`](../SwiftUI/scene/defaultsize%28width,height%29.md). For example, you can request that new windows that a [`WindowGroup`](../SwiftUI/windowgroup.md) generates occupy 600 points in the x-dimension and 400 points in the y-dimension.
 
@@ -114,7 +114,7 @@ struct MyApp: App {
 
 The system might clamp the actual size of the window, depending on both the window’s content and resizability settings.
 
-##### Specify window resizability
+### Specify window resizability
 
 Both macOS and visionOS provide interface controls that enable people to resize windows within certain limits. For example, people can use the control that appears when they look at the corner of a visionOS window to resize a window on that platform.
 
@@ -141,7 +141,7 @@ struct MyApp: App {
 
 You can take this even further and enforce a specific size for a window with content that has a fixed size.
 
-##### Specify a volume size
+### Specify a volume size
 
 When you create a volume, which is a window with the [`volumetric`](../SwiftUI/windowstyle/volumetric.md) style, you can specify the volume’s size using one of the three-dimensional default size modifiers, like [`defaultSize(width:height:depth:in:)`](../SwiftUI/scene/defaultsize%28width,height,depth,in%29.md). The following code creates a volume that’s one meter on a side:
 

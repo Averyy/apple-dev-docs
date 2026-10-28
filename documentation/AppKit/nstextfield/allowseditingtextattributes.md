@@ -19,7 +19,7 @@ var allowsEditingTextAttributes: Bool { get set }
 @property BOOL allowsEditingTextAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), and the text value is an attributed string, the text field’s content displays using the attributed string’s visual settings. The user can modify the text field’s style attributes in the font panel.
 

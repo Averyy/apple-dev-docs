@@ -21,7 +21,7 @@ The properties of a section of subscription options within a subscription store 
 struct Section
 ```
 
-#### Overview
+## Overview
 
 Each value represents an instance of [`SubscriptionOptionSection`](../subscriptionoptionsection.md) when the system creates a [`SubscriptionStoreView`](../subscriptionstoreview.md).
 

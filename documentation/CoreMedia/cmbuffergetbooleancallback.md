@@ -25,11 +25,11 @@ typealias CMBufferGetBooleanCallback = (CMBuffer, UnsafeMutableRawPointer?) -> D
 typedef unsigned char (*)(const void *, void *) CMBufferGetBooleanCallback;
 ```
 
-#### Discussion
+## Discussion
 
 There is one callback of this type that can be provided to `Creating Buffer Queues`: `isDataReady` (optional).
 
-##### Callback Parameters
+### Callback Parameters
 
 - **buf**: The buffer being interrogated.
 - **refcon**: The contextual data from the client (which may be `NULL`).

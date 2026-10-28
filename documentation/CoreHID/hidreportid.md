@@ -19,7 +19,7 @@ struct HIDReportID
 
 - [Communicating with human interface devices](./communicatingwithhiddevices.md)
 
-#### Overview
+## Overview
 
 Report IDs are defined to be 1 byte in the HID specification, and can help identify the reports received from or sent to a device. Report IDs are optional. If a descriptor only has one report, a report ID is unnecessary. A report ID of 0 is invalid.
 

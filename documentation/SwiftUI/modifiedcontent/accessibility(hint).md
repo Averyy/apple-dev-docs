@@ -26,7 +26,7 @@ func accessibility(hint: Text) -> ModifiedContent<Content, Modifier>
 
 Available when `Modifier` is `AccessibilityAttachmentModifier`.
 
-#### Discussion
+## Discussion
 
 Provide a hint in the form of a brief phrase, like “Purchases the item” or “Downloads the attachment”.
 

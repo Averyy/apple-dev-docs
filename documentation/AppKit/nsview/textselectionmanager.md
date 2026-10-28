@@ -19,7 +19,7 @@ var textSelectionManager: NSTextSelectionManager? { get set }
 @property (strong, nullable) NSTextSelectionManager * textSelectionManager;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property installs gesture recognizers and configures the view to handle text selection interactions. Setting it to `nil` removes text selection support. The default value is `nil`.
 

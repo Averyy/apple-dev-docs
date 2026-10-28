@@ -24,7 +24,7 @@ func union(_ textRange: NSTextRange) -> Self
 - (instancetype) textRangeByFormingUnionWithTextRange:(NSTextRange *) textRange;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSTextRange`](../nstextrange.md) that represent the union of the two ranges.
 

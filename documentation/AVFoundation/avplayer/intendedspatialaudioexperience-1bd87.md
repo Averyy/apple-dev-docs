@@ -16,7 +16,7 @@ nonisolated
 var intendedSpatialAudioExperience: any SpatialAudioExperience { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If unspecified, the property value defaults to [`CAAutomaticSpatialAudio`](../../AudioToolbox/caautomaticspatialaudio.md).
 

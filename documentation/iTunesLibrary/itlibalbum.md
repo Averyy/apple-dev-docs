@@ -20,7 +20,7 @@ class ITLibAlbum
 @interface ITLibAlbum : NSObject
 ```
 
-#### Overview
+## Overview
 
 A *media item* is a track that iTunes associates with an album. See [`ITLibMediaItem`](./itlibmediaitem.md).
 

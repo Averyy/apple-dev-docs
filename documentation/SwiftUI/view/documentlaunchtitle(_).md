@@ -35,7 +35,7 @@ nonisolated
 func documentLaunchTitle<S>(_ title: S) -> some View where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to override the default launch-card title, which is the application name. Apply the modifier to a [`DocumentLaunchView`](../documentlaunchview.md) or any of its ancestors.
 

@@ -20,11 +20,11 @@ Unprojects a point from the view onto a plane in 3D world coordinates.
 func unproject(_ point: CGPoint, from space: some CoordinateSpaceProtocol, to realitySpace: some RealityCoordinateSpace, ontoPlane planeTransform: float4x4) -> SIMD3<Float>?
 ```
 
-#### Return Value
+## Return Value
 
 3D position in `realitySpace`, or nil if unprojection is not possible.
 
-#### Discussion
+## Discussion
 
 A 2D point in the view’s coordinate space can refer to any point along a line segment in the 3D coordinate space. Unprojecting gets the 3D position of the point along this line segment that intersects the provided plane.
 

@@ -5,7 +5,7 @@
 
 Configure the generic product IDs in App Store Connect that the Advanced Commerce API requires.
 
-#### Overview
+## Overview
 
 A generic product ID is an identifier you set up in App Store Connect and use when you call Advanced Commerce APIs.  The generic product IDs tell the API whether your SKU is a one-time purchase or a subscription, and whether it’s a SKU for the Mini Apps Partner Program.
 
@@ -22,7 +22,7 @@ Generic product IDs aren’t the same as the SKUs for products you offer in your
 
 You need one of these roles: Account Holder, Admin, App Manager, Developer, or Marketing in App Store Connect to add and edit product IDs. For more information, see [Role permissions](https://developer.apple.com/help/app-store-connect/reference/role-permissions).
 
-##### Create a generic product ID for one-time purchases
+### Create a generic product ID for one-time purchases
 
 To offer one-time purchases using Advanced Commerce API, create a generic product ID in App Store Connect, as follows:
 
@@ -45,7 +45,7 @@ On the details page, configure the following settings:
    - **Display Name**: Generic Consumable Product
    - **Description**: Use the same text as the display name.
 
-##### Create a generic product ID for one-time purchases for the Mini Apps Partner Program
+### Create a generic product ID for one-time purchases for the Mini Apps Partner Program
 
 To offer one-time purchases within the Mini Apps Partner Program, create a generic product ID following the instructions for one-time purchases as described above, and enter the following values in the respective topics within the Create an Apple In-App Purchase dialog:
 
@@ -57,7 +57,7 @@ On the details page, enter these values:
 - **Display Name**: Mini App Consumable Product
 - **Description**: Mini App Consumable Product
 
-##### Create a generic product ID for subscriptions
+### Create a generic product ID for subscriptions
 
 To offer subscriptions using Advanced Commerce API, you first need to create a dedicated subscription group, and then create the generic product ID for a subscription.
 
@@ -89,7 +89,7 @@ On the details page, configure the following settings:
   - **Display Name**: For Advanced Commerce
   - **Description**: For Advanced Commerce
 
-##### Create a generic product ID for subscriptions for the Mini Apps Partner Program
+### Create a generic product ID for subscriptions for the Mini Apps Partner Program
 
 To offer subscriptions within the Mini Apps Partner Program, follow the same process to create a dedicated subscription group and subscription as above, but use the following values:
 

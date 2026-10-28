@@ -5,13 +5,13 @@
 
 Inspect and manage your app’s iCloud container data using the CloudKit Database app.
 
-#### Overview
+## Overview
 
 You can use the CloudKit Database app to inspect data within a public iCloud container. If you develop using the same iCloud account to store private data, you can also use the CloudKit Database app to inspect and edit private data.
 
 Don’t use the CloudKit Database app as a general data editor. Although you can create, modify, and delete records using the CloudKit Dashboard app, the intent of this functionality is to help you debug your schema during the design phase.
 
-##### Find and inspect records
+### Find and inspect records
 
 Use the CloudKit Database app to search for records of a particular record type within a zone of the chosen database. To  search for records in this way, you must first add a queryable index for that record type’s `recordName`. For more information, see the [Enable querying for your record type](./inspecting-and-editing-an-icloud-container-s-schema.md#Enable-querying-for-your-record-type) section of [Inspecting and Editing an iCloud Container’s Schema](./inspecting-and-editing-an-icloud-container-s-schema.md).
 
@@ -29,7 +29,7 @@ To search for records of a record type:
 
 > **Note**:  If you get the error, `“Field recordName is not marked queryable,”` see the [Enable querying for your record type](./inspecting-and-editing-an-icloud-container-s-schema.md#Enable-querying-for-your-record-type) section of [Inspecting and Editing an iCloud Container’s Schema](./inspecting-and-editing-an-icloud-container-s-schema.md).
 
-##### Create a record
+### Create a record
 
 You can create records in public databases in either the development or production environment. If your developer account is also an iCloud account, you can do the same for your private database.
 
@@ -43,7 +43,7 @@ To create a new record:
 
 ![A screenshot showing a container’s data management page in the CloudKit Database app. The screenshot highlights the Add options and the New Record dialog.](https://developer.apple.com/tutorials/images/com.apple.cloudkit/media-3699105@2x.png)
 
-##### Modify or delete a record
+### Modify or delete a record
 
 In the development and production environment, you can modify and delete records in public databases. If your developer account is also an iCloud account, you can do the same for your private or shared databases.
 

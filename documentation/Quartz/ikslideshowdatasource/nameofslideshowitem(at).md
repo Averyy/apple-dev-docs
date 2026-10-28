@@ -19,11 +19,11 @@ optional func nameOfSlideshowItem(at index: Int) -> String!
 - (NSString *) nameOfSlideshowItemAtIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The display name. For the best user experience, you should provide the localized name, because this string appears in the user interface.
 
-#### Discussion
+## Discussion
 
 This method is optional.
 

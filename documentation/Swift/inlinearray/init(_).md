@@ -21,7 +21,7 @@ Initializes every element in this array, by calling the given closure with each 
 init<E>(_ body: (InlineArray<count, Element>.Index) throws(E) -> Element) throws(E) where E : Error
 ```
 
-#### Discussion
+## Discussion
 
 This will call the closure `count` times, where `count` is the static count of the array, to initialize every element by passing the closure the index of the current element being initialized.
 

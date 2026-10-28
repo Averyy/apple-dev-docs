@@ -16,7 +16,7 @@ nonisolated
 func windowResizeBehavior(_ behavior: WindowInteractionBehavior) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 By default, the window resizability functionality is determined by the scene, as well as any modifiers applied to it. Additionally, when using the [`windowResizability(_:)`](../scene/windowresizability%28_%29.md) modifier, the minimum and maximum size of the window’s contents will also determine the resizability behavior.
 

@@ -19,7 +19,7 @@ func insertItem(withTitle title: String, at index: Int)
 - (void) insertItemWithTitle:(NSString *) title atIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 The value in `index` must represent a valid position in the array. The menu item at `index` and all those that follow it are shifted down one slot to make room for the new menu item.
 

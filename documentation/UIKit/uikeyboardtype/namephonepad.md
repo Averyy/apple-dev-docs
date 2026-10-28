@@ -27,7 +27,7 @@ UIKeyboardTypeNamePhonePad
 
 - [Configuring a custom keyboard interface](../configuring-a-custom-keyboard-interface.md)
 
-#### Discussion
+## Discussion
 
 This keyboard type does not support auto-capitalization.
 

@@ -15,11 +15,11 @@ Creates and returns an empty filter generator object.
 + (CIFilterGenerator *) filterGenerator;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIFilterGenerator`](../cifiltergenerator.md) object.
 
-#### Discussion
+## Discussion
 
 You use the returned object to connect two or more [`CIFilter`](../cifilter-swift.class.md) objects and input images. It is also valid to have only one [`CIFilter`](../cifilter-swift.class.md) object in a filter generator.
 

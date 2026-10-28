@@ -21,7 +21,7 @@ The shared actor instance that will be used to provide mutually-exclusive access
 static let shared: MainActor
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property must always evaluate to the same actor instance.
 

@@ -15,7 +15,7 @@ A pattern that indicates the pasteboard detects a string that contains an email 
 extern NSPasteboardDetectionPattern const NSPasteboardDetectionPatternEmailAddress;
 ```
 
-#### Return Value
+## Return Value
 
 Array of DDMatchEmailAddress values
 

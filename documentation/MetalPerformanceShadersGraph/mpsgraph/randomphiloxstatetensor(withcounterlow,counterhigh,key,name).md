@@ -24,11 +24,11 @@ func randomPhiloxStateTensor(withCounterLow counterLow: Int, counterHigh: Int, k
 - (MPSGraphTensor *) randomPhiloxStateTensorWithCounterLow:(NSUInteger) counterLow counterHigh:(NSUInteger) counterHigh key:(NSUInteger) key name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 An MPSGraphTensor representing a random state, to be passed as an input to a random op.
 
-#### Discussion
+## Discussion
 
 See randomPhiloxStateTensorWithSeed.
 

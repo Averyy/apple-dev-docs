@@ -22,7 +22,7 @@ static var tracks: AVAsyncProperty<Root, [AVMutableMovieTrack]> { get }
 
 Available when `Root` inherits `AVMutableMovie`.
 
-#### Discussion
+## Discussion
 
 Use the [`load(_:isolation:)`](../avasynchronouskeyvalueloading/load%28_,isolation%29.md) method to retrieve the property value.
 

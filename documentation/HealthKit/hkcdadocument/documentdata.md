@@ -23,7 +23,7 @@ var documentData: Data? { get }
 @property (copy, readonly, nullable) NSData * documentData;
 ```
 
-#### Discussion
+## Discussion
 
 The CDA document’s XML format is specified by the [Clinical Document Architecture, R2](http://www.hl7.org/implement/standards/product_brief.cfm?product_id=7) standard. .
 

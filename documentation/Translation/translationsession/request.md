@@ -18,7 +18,7 @@ A translation request containing a single item of text to translate.
 struct Request
 ```
 
-#### Overview
+## Overview
 
 Create a translation request to translate a string of text. Initialize the request using [`init(sourceText:clientIdentifier:)`](./request/init%28sourcetext,clientidentifier%29-ruyz.md). Set the [`sourceText`](./request/sourcetext.md) to the string of text you want to translate. Then pass that request in an array to one of the batch translation functions.
 

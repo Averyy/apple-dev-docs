@@ -19,7 +19,7 @@
 static const SPRay3DFloat SPRay3DFloatInfinity;
 ```
 
-#### Discussion
+## Discussion
 
 The ray with an infinite origin and direction.
 

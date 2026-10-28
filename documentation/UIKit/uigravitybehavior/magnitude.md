@@ -23,7 +23,7 @@ var magnitude: CGFloat { get set }
 @property (nonatomic, readwrite) CGFloat magnitude;
 ```
 
-#### Discussion
+## Discussion
 
 Modify this property when you want to change the magnitude of the gravity vector separately from the angle of that vector. A magnitude value of `1.0` represents an acceleration of 1000 points / second² at the specified angle, which roughly approximates the force of Earth’s gravity. The value in this property is tied to the value in the [`gravityDirection`](./gravitydirection.md) property, so changes in one affect the other.
 

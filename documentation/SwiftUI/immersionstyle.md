@@ -16,7 +16,7 @@ The styles that an immersive space can have.
 protocol ImmersionStyle
 ```
 
-#### Overview
+## Overview
 
 Configure the appearance and behavior of an [`ImmersiveSpace`](./immersivespace.md) by adding the [`immersionStyle(selection:in:)`](./scene/immersionstyle%28selection,in%29.md) scene modifier to the space and specifying a style that conforms to this protocol, like [`mixed`](./immersionstyle/mixed.md) or [`full`](./immersionstyle/full.md). For example, the following app defines a solar system scene that uses full immersion:
 

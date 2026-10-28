@@ -19,7 +19,7 @@ func SKSummaryCopySentenceSummaryString(_ summary: SKSummary!, _ numSentences: C
 CFStringRef SKSummaryCopySentenceSummaryString(SKSummaryRef summary, CFIndex numSentences);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFString`](../CoreFoundation/cfstring.md) object containing the requested summary.
 

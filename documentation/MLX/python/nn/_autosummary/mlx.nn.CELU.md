@@ -6,13 +6,17 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary/mlx.nn.C
 
 # mlx.nn.CELU
 
-**class CELU(*alpha=1.0*)**
-: Applies the Continuously Differentiable Exponential Linear Unit.Applies \(\max(0, x) + \min(0, \alpha * (\exp(x / \alpha) - 1))\)
+```python
+class CELU(alpha=1.0)
+```
+
+**Applies the Continuously Differentiable Exponential Linear Unit.**
+: Applies \(\max(0, x) + \min(0, \alpha * (\exp(x / \alpha) - 1))\)
 element wise.
 
 See [celu()](../_autosummary_functions/mlx.nn.celu.md#mlx.nn.celu) for the functional equivalent.
 
-Parameters:
-**alpha** – the \(\alpha\) value for the CELU formulation. Default: `1.0`
+**Parameters:**
+: **alpha** – the \(\alpha\) value for the CELU formulation. Default: `1.0`
 
 Methods

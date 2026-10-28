@@ -19,11 +19,11 @@ func itemObjectValue(at index: Int) -> Any
 - (id) itemObjectValueAtIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The object at the given location in the combo box’s internal item list.
 
-#### Discussion
+## Discussion
 
 This method logs a warning if [`usesDataSource`](./usesdatasource.md) is [`true`](../../Swift/true.md).
 

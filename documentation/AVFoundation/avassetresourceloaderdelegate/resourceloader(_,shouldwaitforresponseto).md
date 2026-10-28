@@ -24,11 +24,11 @@ optional func resourceLoader(_ resourceLoader: AVAssetResourceLoader, shouldWait
 - (BOOL) resourceLoader:(AVAssetResourceLoader *) resourceLoader shouldWaitForResponseToAuthenticationChallenge:(NSURLAuthenticationChallenge *) authenticationChallenge;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the resource loader should wait for a response to the authentication challenge; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Delegates receive this message when assistance is required of the application to respond to an authentication challenge.
 

@@ -10,13 +10,13 @@ framework: "Swift-Org/SwiftLinux"
 
 Interpret a Swift service’s crash trace to find the failing code on Linux.
 
-#### Overview
+## Overview
 
 When your Swift service crashes on Linux, the runtime spawns a helper process, `swift-backtrace`, that prints a stack trace that describes what was running and where it failed. This article covers how to persist a trace from a container, read its structure, map frames back to your source, recognize common crash patterns, and reproduce the crash locally.
 
 For the configuration options the trace responds to, see the [Swift backtracing reference](https://github.com/swiftlang/swift/blob/main/docs/Backtracing.rst#how-do-i-configure-backtracing). To install the backtracer in a container image, see [Include the backtracer in the runtime image](./packaging.md#Include-the-backtracer-in-the-runtime-image).
 
-##### Persist backtraces from a container
+### Persist backtraces from a container
 
 When a container exits, its filesystem is gone, so a crash that writes to a file inside the container loses the trace. For durable, addressable crash files, write the trace to a volume that you mount when you run the container. For example, if you mounted a volume at `/var/crash-logs`, use the configuration:
 
@@ -30,7 +30,7 @@ When `output-to` resolves to a directory, the backtracer writes each crash to a 
 
 For the format of the captured file (text or JSON) and other output options, see the [Swift backtracing reference](https://github.com/swiftlang/swift/blob/main/docs/Backtracing.rst#how-do-i-configure-backtracing).
 
-##### Read the trace structure
+### Read the trace structure
 
 A captured trace has four parts: a header naming the signal, a thread block for each thread the backtracer captures, a frame list inside each thread, and an optional images list. Here’s a representative trace, abbreviated:
 
@@ -65,7 +65,7 @@ The backtracer demangles the symbol by default. The `at <path>:<line>` portion a
 
 By default the trace includes registers and a list of loaded images for the crashed thread. You can tune or suppress both; see the [Swift backtracing reference](https://github.com/swiftlang/swift/blob/main/docs/Backtracing.rst#how-do-i-configure-backtracing).
 
-##### Map a frame to source
+### Map a frame to source
 
 Symbolication — turning addresses into function names, files, and lines — has a real cost. The default, `symbolicate=full`, walks DWARF for every captured frame, which extends crash-handling time noticeably on a large binary. Production services typically capture lightweight traces at crash time and resolve symbols offline.
 
@@ -104,7 +104,7 @@ llvm-symbolizer --obj=/usr/bin/MyServer 0x000055a9c4001234
 
 Time isn’t critical at this stage, so spending CPU on full demangling and inline-frame resolution is fine. Tools like `addr2line` from Linux binutils work as well; pick whichever your build environment already has.
 
-##### Recognize the crash pattern
+### Recognize the crash pattern
 
 The signal and the message that the runtime prints just before the trace are usually enough to identify the kind of bug.
 
@@ -123,14 +123,14 @@ The signal and the message that the runtime prints just before the trace are usu
 
 For runtime-trap crashes (the **trap** rows in the previous table), the relevant fix is almost always in the topmost frame of *your* code in the trace — the standard library trap is a few frames up from there. For `SIGSEGV` in unsafe code or dependencies, the topmost frame names the call that touched bad memory, but the actual cause is often earlier code that produces a bad pointer or frees memory still in use.
 
-##### Reproduce locally
+### Reproduce locally
 
 Once you’ve identified the suspect call site, capture the input that triggered it — request body, environment variables, mounted file, and configured client state — and rerun the service locally. Two paths are useful:
 
 - **Run under `lldb`.** Launch the service with `lldb` and let it stop at the crash for live inspection of variables and threads.
 - **Rerun with the interactive backtracer.** Set `SWIFT_BACKTRACE=interactive=yes` so the backtracer drops into a debugger-like prompt at crash time instead of printing and exiting. See the [Swift backtracing reference](https://github.com/swiftlang/swift/blob/main/docs/Backtracing.rst#how-do-i-configure-backtracing) for the option. Interactive mode requires a TTY, so it’s a developer-machine tool, not a production setting.
 
-##### Diagnose missing backtraces
+### Diagnose missing backtraces
 
 If a crash produced no trace at all, or one that ends after a few frames, the cause is almost always one of the following:
 

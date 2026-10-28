@@ -6,7 +6,7 @@
 
 An atom that expresses a metadata value.
 
-#### Overview
+## Overview
 
 The value of the metadata item is expressed as immediate data in a value atom. The value atom starts with two fields: a type indicator, and a locale indicator. Both the type and locale indicators are four bytes long. There may be multiple ‘value’ entries, using different type, country or language codes (see [Data ordering](./data_ordering.md) for the required ordering).
 

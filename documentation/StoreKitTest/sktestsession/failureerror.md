@@ -26,7 +26,7 @@ var failureError: SKError.Code { get set }
 @property (nonatomic, assign) SKErrorCode failureError;
 ```
 
-#### Discussion
+## Discussion
 
 You can force an error by setting [`failTransactionsEnabled`](./failtransactionsenabled.md) to `true` and setting [`failureError`](./failureerror.md) value to one of these supported error codes: [`SKError.Code.unknown`](../../StoreKit/skerror/code/unknown.md), [`SKError.Code.invalidOfferIdentifier`](../../StoreKit/skerror/code/invalidofferidentifier.md), [`SKError.Code.invalidSignature`](../../StoreKit/skerror/code/invalidsignature.md), [`SKError.Code.missingOfferParams`](../../StoreKit/skerror/code/missingofferparams.md), [`SKError.Code.invalidOfferPrice`](../../StoreKit/skerror/code/invalidofferprice.md).
 

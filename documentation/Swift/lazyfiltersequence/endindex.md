@@ -23,7 +23,7 @@ var endIndex: LazyFilterSequence<Base>.Index { get }
 
 Available when `Base` conforms to `Collection`.
 
-#### Discussion
+## Discussion
 
 `endIndex` is always reachable from `startIndex` by zero or more applications of `index(after:)`.
 

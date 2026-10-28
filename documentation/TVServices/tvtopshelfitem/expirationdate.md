@@ -19,7 +19,7 @@ var expirationDate: Date? { get set }
 @property (nonatomic, copy, nullable) NSDate * expirationDate;
 ```
 
-#### Discussion
+## Discussion
 
 Specify an expiration date when the content associated with the item has a limited lifespan. For example, use it to specify the date on which a rented movie expires. The system uses this property to remove items that have expired since you last provided data.
 

@@ -27,7 +27,7 @@ var isPriority: NSNumber? { get }
 
 - [Generating summary and priority data for indexed items](../generating-summary-and-priority-data-for-indexed-items.md)
 
-#### Discussion
+## Discussion
 
 During indexing, Apple Intelligence sets this property to `1` for any SMS content that requires priority classification. Use this property to prioritize the associated item’s content.
 

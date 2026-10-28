@@ -30,7 +30,7 @@ var code: INGetUserCurrentRestaurantReservationBookingsIntentResponseCode { get 
 @property (atomic, readonly) INGetUserCurrentRestaurantReservationBookingsIntentResponseCode code;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is set automatically at initialization time and can’t be changed later.
 

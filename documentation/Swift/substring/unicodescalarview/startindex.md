@@ -21,7 +21,7 @@ The position of the first element in a nonempty collection.
 var startIndex: Substring.UnicodeScalarView.Index { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the collection is empty, `startIndex` is equal to `endIndex`.
 

@@ -24,11 +24,11 @@ class func colorCubeWithColorSpace() -> any CIFilter & CIColorCubeWithColorSpace
 + (CIFilter<CIColorCubeWithColorSpace> *) colorCubeWithColorSpaceFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the color cube with color space filter to an image. The effect applies a mapping from `rgb` space within the color space defined to color values the cubeData defines. For each pixel, it matches the data and adjusts the color on the output image.
 

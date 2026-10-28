@@ -15,7 +15,7 @@ The human-readable error message of the user location error for the developer.
 readonly message: string;
 ```
 
-#### Discussion
+## Discussion
 
 This framework doesn’t display this message to a person; it’s printed to the console.
 

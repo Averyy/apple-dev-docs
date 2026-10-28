@@ -25,11 +25,11 @@ func CMBufferQueueGetFirstDecodeTimeStamp(_ queue: CMBufferQueue) -> CMTime
 extern CMTime CMBufferQueueGetFirstDecodeTimeStamp(CMBufferQueueRef queue);
 ```
 
-#### Return Value
+## Return Value
 
 The decode timestamp of the first buffer in the interrogated `CMBufferQueue`.
 
-#### Discussion
+## Discussion
 
 This API is is a faster alternative to [`CMBufferQueueIsEmpty(_:)`](./cmbufferqueueisempty%28_%29.md),                but only gives the same answer if your queue is in decode order.                If the `getDecodeTimeStamp` callback is `NULL`, `kCMTimeInvalid` will                be returned.
 

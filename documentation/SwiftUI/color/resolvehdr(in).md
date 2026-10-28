@@ -21,7 +21,7 @@ Evaluates this color to a resolved color with content headroom, given a set of e
 func resolveHDR(in environment: EnvironmentValues) -> Color.ResolvedHDR
 ```
 
-#### Return Value
+## Return Value
 
 The color’s value in the sRGB color space.
 

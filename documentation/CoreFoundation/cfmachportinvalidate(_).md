@@ -25,7 +25,7 @@ func CFMachPortInvalidate(_ port: CFMachPort!)
 extern void CFMachPortInvalidate(CFMachPortRef port);
 ```
 
-#### Discussion
+## Discussion
 
 Invalidating a CFMachPort object prevents the port from ever receiving any more messages. The CFMachPort object is not deallocated, though. If the port has not already been invalidated, the port’s invalidation callback function is invoked, if one has been set with [`CFMachPortSetInvalidationCallBack(_:_:)`](./cfmachportsetinvalidationcallback%28_,_%29.md). The [`CFMachPortContext`](./cfmachportcontext.md)  `info` information for `port` is also released, if a release callback was specified in the port’s context structure. Finally, if a run loop source was created for `port`, the run loop source is invalidated, as well.
 

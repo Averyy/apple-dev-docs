@@ -21,7 +21,7 @@ Retrieves a limited number of strings within a radius of a location in the vocab
 - (NSArray<NSString *> *) neighborsForVector:(NSArray<NSNumber *> *) vector maximumCount:(NSUInteger) maxCount maximumDistance:(NLDistance) maxDistance distanceType:(NLDistanceType) distanceType;
 ```
 
-#### Return Value
+## Return Value
 
 An array of strings.
 

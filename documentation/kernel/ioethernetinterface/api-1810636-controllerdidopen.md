@@ -12,11 +12,11 @@ virtual bool controllerDidOpen(
  IONetworkController *controller);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success, false otherwise. Returning false will cause the controller to be closed, and any pending client opens to be rejected.
 
-#### Overview
+## Overview
 
 This method will be called by IONetworkInterface after a network controller has accepted an open from this interface object. IOEthernetInterface will first call the implementation in its superclass, then inspect the controller through properties published in the registry. This method is called with the arbitration lock held.
 

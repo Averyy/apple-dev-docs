@@ -23,7 +23,7 @@ var playbackSessionID: String! { get }
 @property (nonatomic, readonly) NSString * playbackSessionID;
 ```
 
-#### Discussion
+## Discussion
 
 HTTP requests use the GUID.
 

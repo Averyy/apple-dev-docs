@@ -19,7 +19,7 @@ var wantsNotificationForMarkedText: Bool { get }
 @property (readonly) BOOL wantsNotificationForMarkedText;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the field editor should post text notification changes while editing marked text. When the value is NO, the field editor should delay notifications until the marked text is confirmed.
 

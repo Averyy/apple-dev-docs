@@ -23,7 +23,7 @@ init(code: INActivateCarSignalIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INActivateCarSignalIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized response object.
 

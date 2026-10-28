@@ -18,8 +18,8 @@ Fetches all instances of the attached model type, using the specified animation 
 ## Declaration
 
 ```swift
-@attached
-(accessor) @attached(peer, names: prefixed(`_`)) macro Query(animation: Animation)
+@attached(accessor)
+@attached(peer, names: prefixed(`_`)) macro Query(animation: Animation)
 ```
 
 ## Parameters

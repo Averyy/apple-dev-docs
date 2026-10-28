@@ -19,7 +19,7 @@ The projection technique the framework uses for splat footprints.
 final var projectionMode: GaussianSplatResource.ProjectionMode
 ```
 
-#### Discussion
+## Discussion
 
 The default value uses a tangential approximation.
 

@@ -18,7 +18,7 @@ var kCGNullWindowID: CGWindowID { get }
 #define kCGNullWindowID
 ```
 
-#### Discussion
+## Discussion
 
 A guaranteed invalid window ID.
 

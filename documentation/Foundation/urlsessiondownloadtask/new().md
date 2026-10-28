@@ -27,7 +27,7 @@ class func new() -> Self
 + (instancetype) new;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t use this method to manually create download tasks. Instead, use the factory methods on [`URLSession`](../urlsession.md) to add tasks to an existing URL session.
 

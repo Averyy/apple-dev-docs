@@ -34,7 +34,7 @@ var modifiedTaskList: INTaskList? { get set }
 @property (atomic, copy, readwrite, nullable) INTaskList * modifiedTaskList;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to the [`INTaskList`](../intasklist.md) object containing the newly created tasks.
 

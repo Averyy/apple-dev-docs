@@ -16,7 +16,7 @@ Defines valid authentication types associated with the user identity.
 enum AuthenticationType
 ```
 
-#### Overview
+## Overview
 
 Use of the systemBiometric authentication requires you to set the [`NSFaceIDUsageDescription`](../../../BundleResources/information-property-list/nsfaceidusagedescription.md) usage description.
 

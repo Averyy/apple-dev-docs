@@ -24,7 +24,7 @@ typealias AUImplementorDisplayNameWithLengthCallback = (AUParameterNode, Int) ->
 typedef NSString *(^)(AUParameterNode *, long) AUImplementorDisplayNameWithLengthCallback;
 ```
 
-#### Discussion
+## Discussion
 
 This block is only of interest to audio unit subclasses.
 

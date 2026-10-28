@@ -21,7 +21,7 @@ Creates a type based on a MIME type and a supertype that it conforms to.
 init?(mimeType: String, conformingTo supertype: UTType = .data)
 ```
 
-#### Discussion
+## Discussion
 
 This initializer is equivalent to calling:
 

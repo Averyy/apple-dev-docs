@@ -22,7 +22,7 @@ Removes the given key and its associated value from the dictionary.
 func removeValue(forKey key: String) -> xpc_object_t?
 ```
 
-#### Return Value
+## Return Value
 
 The value that was removed, or nil if the key was not present in the dictionary.
 

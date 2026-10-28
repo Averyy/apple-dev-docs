@@ -12,7 +12,7 @@ The acceleration value for the y axis of the device.
 @property (nonatomic, readonly) UIAccelerationValue y;
 ```
 
-#### Discussion
+## Discussion
 
 With the device held in portrait orientation and the screen facing you, the y axis runs from bottom (negative values) to top (positive values) across the face of the device.
 

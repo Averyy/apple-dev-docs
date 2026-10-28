@@ -21,7 +21,7 @@ func setEnabled(_ enabled: Bool, withBadgeText badgeText: String?)
 - (void) setEnabled:(BOOL) enabled withBadgeText:(NSString *) badgeText;
 ```
 
-#### Discussion
+## Discussion
 
 The badge text is visible even when the toolbar item is disabled.
 

@@ -23,7 +23,7 @@ func expandingShape(at axis: Int) -> MLShapedArray<Scalar>
 
 Available when `Scalar` conforms to `MLShapedArrayScalar`.
 
-#### Discussion
+## Discussion
 
 The shape of the new `MLShapedArray` gets a new dimension of 1 at the specified axis index.
 

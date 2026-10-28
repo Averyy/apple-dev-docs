@@ -19,7 +19,7 @@ func SCDynamicStoreCopyKeyList(_ store: SCDynamicStore?, _ pattern: CFString) ->
 CFArrayRefSCDynamicStoreCopyKeyList(SCDynamicStoreRef store, CFStringRef pattern);
 ```
 
-#### Return Value
+## Return Value
 
 An array of matching keys, or `NULL` if an error occurred. You must release the returned value.
 

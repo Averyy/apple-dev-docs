@@ -25,11 +25,11 @@ class func rotate(toAxisAngle axisAngle: SCNVector4, duration: TimeInterval) -> 
 + (SCNAction *) rotateToAxisAngle:(SCNVector4) axisAngle duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`rotation`](../scnnode/rotation.md) property animates to the new angle.
 

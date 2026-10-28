@@ -6,22 +6,25 @@ url: https://ml-explore.github.io/mlx/build/html/python/_autosummary/mlx.core.di
 
 # mlx.core.distributed.send
 
-**send(*x: array*, *dst: int*, ***, *group: Group | None = None*, *stream: StreamOrDevice = None*) → [array](mlx.core.array.md#mlx.core.array)**
-: Send an array from the current process to the process that has rank
+```python
+send(x: array, dst: int, *, group: Group | None = None, stream: StreamOrDevice = None) → array
+```
+
+Send an array from the current process to the process that has rank
 `dst` in the group.
 
-Parameters:
+**Parameters:**
 
-**x** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
-**dst** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Rank of the destination process in the group.
-**group** ([Group](mlx.core.distributed.Group.md#mlx.core.distributed.Group)) – The group of processes that will participate in the
+- **x** ([array](mlx.core.array.md#mlx.core.array)) – Input array.
+- **dst** ([int](https://docs.python.org/3/builtins/functions.html#int)) – Rank of the destination process in the group.
+- **group** ([Group](mlx.core.distributed.Group.md#mlx.core.distributed.Group)) – The group of processes that will participate in the
 send. If set to `None` the global group is used. Default:
 `None`.
-**stream** ([Stream](stream_class.md#mlx.core.Stream)*, **optional*) – Stream or device. Defaults to `None`
+- **stream** ([Stream](stream_class.md#mlx.core.Stream), *optional*) – Stream or device. Defaults to `None`
 in which case the default stream of the default device is used.
 
-Returns:
-An array identical to `x` which when evaluated the send is performed.
+**Returns:**
+: An array identical to `x` which when evaluated the send is performed.
 
-Return type:
-[array](mlx.core.array.md#mlx.core.array)
+**Return type:**
+: [array](mlx.core.array.md#mlx.core.array)

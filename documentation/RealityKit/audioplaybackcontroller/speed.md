@@ -21,7 +21,7 @@ The rate of playback of the audio resource, with a range of `[.25, 4]`
 @preconcurrency var speed: Double { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Set the speed to `1` for a normal playback rate.
 

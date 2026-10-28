@@ -12,11 +12,11 @@ virtual unsigned long initialPowerStateForDomainState (
  IOPMPowerFlagsflags );
 ```
 
-#### Return Value
+## Return Value
 
 A state number.
 
-#### Overview
+## Overview
 
 Power management calls this method once, when the driver is initializing power management. Subclasses should not need to override this method.
 

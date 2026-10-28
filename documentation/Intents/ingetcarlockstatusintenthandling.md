@@ -23,7 +23,7 @@ protocol INGetCarLockStatusIntentHandling : NSObjectProtocol
 @protocol INGetCarLockStatusIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the `INGetCarLockStatusIntentHandling` protocol to resolve, confirm, and handle requests for the current status of the car’s locks. Adopt this protocol in an object of your Intents extension that’s capable of accessing the status of the car’s locks.
 

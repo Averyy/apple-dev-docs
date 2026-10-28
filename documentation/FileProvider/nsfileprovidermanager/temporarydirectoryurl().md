@@ -23,7 +23,7 @@ func temporaryDirectoryURL() throws -> URL
 - (NSURL *) temporaryDirectoryURLWithError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The system guarantees that the temporary URL refers to a directory on the same volume as the user-visible URL so that the system can automatically clone or move files between the temporary URL and the user-visible URL. For example, the File Provider extension can use the temporary directory to store content passed to the [`createItem(basedOn:fields:contents:options:request:completionHandler:)`](../nsfileproviderreplicatedextension/createitem%28basedon,fields,contents,options,request,completionhandler%29.md) or [`modifyItem(_:baseVersion:changedFields:contents:options:request:completionHandler:)`](../nsfileproviderreplicatedextension/modifyitem%28_,baseversion,changedfields,contents,options,request,completionhandler%29.md) methods.
 

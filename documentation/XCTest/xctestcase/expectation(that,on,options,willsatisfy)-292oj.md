@@ -18,7 +18,7 @@ Creates an expectation using key-value observing to monitor changes to a given k
 func expectation<T, V>(that keyPath: KeyPath<T, V>, on observedObject: T, options: NSKeyValueObservingOptions = [.initial, .new, .old], willSatisfy filter: XCTKeyPathExpectation<T, V>.AsynchronousFilter? = nil) -> XCTKeyPathExpectation<T, V> where T : NSObject, T : Sendable, V : Sendable
 ```
 
-#### Return Value
+## Return Value
 
 Creates and returns an expectation associated with the test case that a specific key-value observing (KVO) condition fulfills, see [Using Key-Value Observing in Swift](../../Swift/using-key-value-observing-in-swift.md).
 

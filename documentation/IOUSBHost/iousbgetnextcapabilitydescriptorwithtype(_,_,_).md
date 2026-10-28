@@ -20,11 +20,11 @@ func IOUSBGetNextCapabilityDescriptorWithType(_ bosDescriptor: UnsafePointer<IOU
 const IOUSBDeviceCapabilityDescriptorHeader *IOUSBGetNextCapabilityDescriptorWithType(const IOUSBBOSDescriptor *bosDescriptor, const IOUSBDeviceCapabilityDescriptorHeader *currentDescriptor, const uint8_t type);
 ```
 
-#### Return Value
+## Return Value
 
 A device capability descriptor pointer, or `nil` if no matching descriptor returns.
 
-#### Discussion
+## Discussion
 
 This method uses [`IOUSBGetNextCapabilityDescriptor(_:_:)`](./iousbgetnextcapabilitydescriptor%28_,_%29.md), and further validates that the returned descriptor’s `bDevCapabilityType` field matches the type parameter.
 

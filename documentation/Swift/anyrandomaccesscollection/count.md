@@ -21,7 +21,7 @@ The number of elements.
 var count: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

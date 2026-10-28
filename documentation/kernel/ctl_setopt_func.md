@@ -13,7 +13,7 @@
 typedef errno_t (*ctl_setopt_func)(kern_ctl_ref kctlref, u_int32_t unit, void *unitinfo, int opt, void *data, size_t len);
 ```
 
-#### Discussion
+## Discussion
 
 The ctl_setopt_func is used to handle set socket option calls for the SYSPROTO_CONTROL option level.
 

@@ -21,13 +21,13 @@ A Boolean value that indicates whether the group was canceled.
 var isCancelled: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 To cancel a group, call the `ThrowingTaskGroup.cancelAll()` method.
 
 If the task that’s currently running this group is canceled, the group is also implicitly canceled, which is also reflected in this property’s value.
 
-##### Interaction with task cancellation shields
+### Interaction with task cancellation shields
 
 Cancellation may be suppressed by an active task cancellation shield (`withTaskCancellationShield(operation:)-(()->Value)`), which may cause `isCancelled` to return `false` even though the task has been cancelled externally.
 

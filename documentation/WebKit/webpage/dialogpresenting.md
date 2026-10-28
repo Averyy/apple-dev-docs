@@ -19,7 +19,7 @@ Allows providing custom behavior to handle JavaScript actions and provide a resp
 protocol DialogPresenting
 ```
 
-#### Overview
+## Overview
 
 Typically when handling these, some UI should be presented to the user for them to provide a response, which will then be communicated back to JavaScript.
 

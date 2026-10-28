@@ -22,7 +22,7 @@ func drawPrintFormatter(_ printFormatter: UIPrintFormatter, forPageAt pageIndex:
 - (void) drawPrintFormatter:(UIPrintFormatter *) printFormatter forPageAtIndex:(NSInteger) pageIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The system invokes this method for each print formatter associated with the specified page. The default implementation invokes the [`draw(in:forPageAt:)`](../uiprintformatter/draw%28in,forpageat%29.md) method of each [`UIPrintFormatter`](../uiprintformatter.md) object.
 

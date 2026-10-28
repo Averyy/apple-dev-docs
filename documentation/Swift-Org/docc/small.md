@@ -22,7 +22,7 @@ A directive for specifying small print text like legal, license, or copyright te
 }
 ```
 
-#### Overview
+## Overview
 
 The `@Small` directive is based on HTML’s small tag (`<small>`). It supports any inline markup formatting like bold and italics but does not support more structured markup like [`Row`](./row.md) and `Row/Column`.
 

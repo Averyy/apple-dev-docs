@@ -15,13 +15,13 @@ Links an ad account to an external advertiser resource, such as a content provid
 object Delegation
 ```
 
-#### Discussion
+## Discussion
 
 The `Delegation` object links an ad account to an external advertiser resource: a `CONTENT_PROVIDER` (App Store) or a `BUSINESS_BRAND` (Apple Maps).
 
 The `Delegation` objects appear in `AdAccount.delegations`, and [`Get Advertiser Resources`](./get-advertiser-resources.md) returns them.
 
-##### Example
+### Example
 
 ```json
 {

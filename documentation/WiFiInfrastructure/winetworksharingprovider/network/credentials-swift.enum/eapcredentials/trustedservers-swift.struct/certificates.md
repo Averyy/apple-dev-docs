@@ -17,7 +17,7 @@ The list of trusted server certificates.
 let certificates: [Data]
 ```
 
-#### Discussion
+## Discussion
 
 Array of DER encoded X.509 Trusted Server Certificates.
 

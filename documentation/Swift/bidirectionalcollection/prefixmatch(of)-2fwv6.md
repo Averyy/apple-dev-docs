@@ -23,7 +23,7 @@ func prefixMatch<Output>(@RegexComponentBuilder of content: () -> some RegexComp
 
 Available when `SubSequence` is `Substring`.
 
-#### Return Value
+## Return Value
 
 The match if there is one, or `nil` if none.
 

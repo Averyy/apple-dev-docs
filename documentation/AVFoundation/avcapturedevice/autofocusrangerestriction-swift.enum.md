@@ -22,7 +22,7 @@ enum AutoFocusRangeRestriction
 enum AVCaptureAutoFocusRangeRestriction : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 If you expect to focus primarily on near or far objects, you can use the [`autoFocusRangeRestriction`](./autofocusrangerestriction-swift.property.md) property to provide a hint to the focusing system. This approach makes autofocus faster, more power efficient, and less error prone. A restriction prioritizes focusing at distances in the specified range, but doesn’t prevent focusing elsewhere if the device finds no focus point within that range.
 

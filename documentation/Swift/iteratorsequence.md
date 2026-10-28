@@ -22,7 +22,7 @@ A sequence built around an iterator of type `Base`.
 struct IteratorSequence<Base> where Base : IteratorProtocol
 ```
 
-#### Overview
+## Overview
 
 Useful mostly to recover the ability to use `for`…`in`, given just an iterator `i`:
 

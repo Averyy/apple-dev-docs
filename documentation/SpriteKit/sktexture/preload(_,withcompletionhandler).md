@@ -34,7 +34,7 @@ class func preload(_ textures: [SKTexture]) async
 - [Maximizing Texture Performance](../maximizing-texture-performance.md)
 - [Preloading Textures into Memory](../preloading-textures-into-memory.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  You can call this method from synchronous code using a completion handler, as shown on this page, or you can call it as an asynchronous method that has the following declaration:
 >

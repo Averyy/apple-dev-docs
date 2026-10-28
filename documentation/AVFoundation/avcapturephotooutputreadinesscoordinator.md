@@ -23,7 +23,7 @@ class AVCapturePhotoOutputReadinessCoordinator
 @interface AVCapturePhotoOutputReadinessCoordinator : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this object to coordinate user interface updates on the main queue with a [`AVCapturePhotoOutput`](./avcapturephotooutput.md) that runs on a background queue. Adopt the [`AVCapturePhotoOutputReadinessCoordinatorDelegate`](./avcapturephotooutputreadinesscoordinatordelegate.md) protocol in your app and set its implementation as the coordinator’s delegate object to receive callbacks as the associated photo output’s [`captureReadiness`](./avcapturephotooutput/capturereadiness-swift.property.md) state changes.
 

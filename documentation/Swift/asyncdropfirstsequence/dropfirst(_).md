@@ -23,7 +23,7 @@ func dropFirst(_ count: Int = 1) -> AsyncDropFirstSequence<Base>
 
 Available when `Base` conforms to `AsyncSequence`.
 
-#### Discussion
+## Discussion
 
 When you call `dropFirst(_:)` on an asynchronous sequence that is already an `AsyncDropFirstSequence`, the returned sequence simply adds the new drop count to the current drop count.
 

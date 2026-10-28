@@ -19,7 +19,7 @@ var duration: TimeInterval { get }
 @property (nonatomic, assign, readonly) NSTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 Sleep session duration
 

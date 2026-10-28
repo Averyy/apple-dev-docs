@@ -21,7 +21,7 @@ Creates a sort descriptor with the specified key path, ordering, and comparison 
 + (instancetype) sortDescriptorWithKey:(NSString *) key ascending:(BOOL) ascending selector:(SEL) selector;
 ```
 
-#### Return Value
+## Return Value
 
 A sort descriptor that initializes with the specified key path, sort order, and comparison selector.
 

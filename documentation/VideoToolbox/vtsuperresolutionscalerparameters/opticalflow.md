@@ -22,7 +22,7 @@ var opticalFlow: VTFrameProcessorOpticalFlow? { get }
 @property (nonatomic, readonly, nullable) VTFrameProcessorOpticalFlow * opticalFlow;
 ```
 
-#### Discussion
+## Discussion
 
 You only need this if optical flow is pre-computed. For the first frame this is `nil`.
 

@@ -18,7 +18,7 @@ Allocates capacity for members in dictionary.
 virtual uint32_t ensureCapacity(uint32_t newCapacity);
 ```
 
-#### Return Value
+## Return Value
 
 New count of capacity for members in dictionary, may return prior capacity on failure.
 

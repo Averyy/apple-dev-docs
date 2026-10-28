@@ -21,7 +21,7 @@ A guide for resolving the content margins for a view.
 struct ContentMarginGuide
 ```
 
-#### Overview
+## Overview
 
 Apply a guide to a view with the [`contentMargins(for:edges:alignment:)`](./view/contentmargins%28for,edges,alignment%29.md) modifier, or read its value from a [`GeometryProxy`](./geometryproxy.md). SwiftUI provides [`container`](./contentmarginguide/container.md).
 

@@ -20,7 +20,7 @@ Returns a locally available asset pack’s version number.
 - (NSInteger) localVersionOfAssetPackWithIdentifier:(NSString *) assetPackIdentifier error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The asset pack’s version number. A return value of `-1` indicates that an error occurred.
 

@@ -20,7 +20,7 @@ optional func controlTextDidBeginEditing(_ obj: Notification)
 - (void) controlTextDidBeginEditing:(NSNotification *) obj;
 ```
 
-#### Discussion
+## Discussion
 
 Use the key `“NSFieldEditor”` to obtain the field editor from the notification object’s `userInfo` dictionary.
 

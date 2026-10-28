@@ -25,11 +25,11 @@ nonisolated
 func onPasteCommand(of supportedContentTypes: [UTType], perform payloadAction: @escaping ([NSItemProvider]) -> Void) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that triggers `action` when a system Paste command occurs.
 
-#### Discussion
+## Discussion
 
 Pass an array of uniform type identifiers to the `supportedTypes` parameter. Place the higher priority types closer to the beginning of the array. The Clipboard items that the `action` closure receives have the most preferred type out of all the types the source supports.
 

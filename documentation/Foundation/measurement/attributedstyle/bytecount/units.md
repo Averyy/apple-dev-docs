@@ -21,7 +21,7 @@ The type the measurement format style uses to represent byte-counting units.
 typealias Units = ByteCountFormatStyle.Units
 ```
 
-#### Discussion
+## Discussion
 
 This format style uses the [`ByteCountFormatStyle.Units`](../../../bytecountformatstyle/units.md) structure to represent the available units.
 

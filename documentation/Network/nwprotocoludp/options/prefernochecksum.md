@@ -21,7 +21,7 @@ A Boolean that configures the connection to not send UDP checksums.
 var preferNoChecksum: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 UDP checksums are optional when the datagrams are sent over IPv4. This option configures UDP to not set checksums on these datagrams, but has no effect on IPv6.
 

@@ -19,11 +19,11 @@ func value(forProperty property: String!) -> Any!
 - (id) valueForProperty:(NSString *) property;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the given property.
 
-#### Discussion
+## Discussion
 
 The type of the value depends on the property type (see [Property Types](../property_types.md) for a list of possible property types). Note that the returned value is always of an immutable type (for example, an `NSString` type, not an `NSMutableString` type, is returned).
 

@@ -5,7 +5,7 @@
 
 Indicates that a query’s results list has change during the live-update phase of a query.
 
-#### Overview
+## Overview
 
 The info dictionary of the notification can contain `kMDQueryUpdateAddedItems`, `kMDQueryUpdateChangedItems`, and `kMDQueryUpdateRemovedItems` keys. 
 

@@ -16,11 +16,11 @@ Decodes and returns an `NSPort` object that was previously encoded with any of t
 - (NSPort *) decodePortObject;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSPort` object that was previously encoded with any of the general `encode...Object:` messages.
 
-#### Discussion
+## Discussion
 
 This method is primarily for use by `NSPort` objects themselves—you can always use [`decodeObject()`](../nscoder/decodeobject%28%29.md) to decode any object.
 

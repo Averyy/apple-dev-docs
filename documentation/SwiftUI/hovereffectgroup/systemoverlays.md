@@ -15,7 +15,7 @@ A `HoverEffectGroup` that becomes active when system overlays are visible.
 static var systemOverlays: HoverEffectGroup { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this group to synchronize effects with system overlays. In the following example, the back button will be hidden whenever system overlays are hidden.
 

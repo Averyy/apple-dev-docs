@@ -25,11 +25,11 @@ func CTFontCopyAvailableTables(_ font: CTFont, _ options: CTFontTableOptions) ->
 extern CFArrayRefCTFontCopyAvailableTables(CTFontRef font, CTFontTableOptions options);
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`CTFontTableTag`](./ctfonttabletag.md) values for the given font and the supplied options.
 
-#### Discussion
+## Discussion
 
 The returned set will contain unboxed values, which can be extracted like so:
 

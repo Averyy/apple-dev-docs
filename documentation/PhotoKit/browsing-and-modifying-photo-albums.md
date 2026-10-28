@@ -13,13 +13,13 @@ Help people organize their photos into albums and browse photo collections in a 
 - tvOS 13.2+
 - Xcode 11.3+
 
-#### Overview
+## Overview
 
 The Photos app on iOS displays assets in a thumbnail grid. This sample demonstrates how to achieve a similar layout with a custom [`UICollectionViewController`](../UIKit/uicollectionviewcontroller.md). It fetches asset thumbnails using PhotoKit, then displays them as a single photo, video, or Live Photo asset.
 
 The sample app, PhotoBrowse, also demonstrates how to organize the user’s photos into albums and built-in collections, such as Recently Added and Favorites. It supports album creation, deletion, modification, as well as the editing and favoriting of individual assets.
 
-##### Getting Started
+### Getting Started
 
 The sample app, PhotoBrowse, runs on iOS and tvOS and requires the following:
 
@@ -28,7 +28,7 @@ The sample app, PhotoBrowse, runs on iOS and tvOS and requires the following:
 
 If you build and run the project in Xcode, you may also add photos to the app in Simulator.
 
-##### List Albums and Built-in Collections
+### List Albums and Built-in Collections
 
 When the app first launches, it fetches all of the user’s photo assets. All requests for asset data—single photos, albums, and user collections—go through PhotoKit’s shared [`PHPhotoLibrary`](../Photos/phphotolibrary.md) object, so the app registers the main view controller once its view loads:
 
@@ -48,7 +48,7 @@ userCollections = PHCollectionList.fetchTopLevelUserCollections(with: nil)
 
 The resulting [`PHFetchResult`](../Photos/phfetchresult.md) informs the app about the structure of the user’s photo library, allowing the user interface to show the number of photos in each album.
 
-##### Display Assets in a Thumbnail Grid
+### Display Assets in a Thumbnail Grid
 
 The sample app implements thumbnail grid browsing by subclassing `UICollectionViewController` in `AssetGridViewController`.
 
@@ -93,7 +93,7 @@ imageManager.requestImage(for: asset, targetSize: thumbnailSize, contentMode: .a
 })
 ```
 
-##### Show a Single Photo, Video, or Live Photo
+### Show a Single Photo, Video, or Live Photo
 
 `AssetViewController` implements the view of a single asset. If the asset is a video or Live Photo, the view controller also supports playback through a [`UIBarButtonItem`](../UIKit/uibarbuttonitem.md):
 
@@ -160,7 +160,7 @@ PHImageManager.default().requestPlayerItem(forVideo: asset, options: options, re
 })
 ```
 
-##### Apply Canned Filters in an Editing Interface
+### Apply Canned Filters in an Editing Interface
 
 The `AssetViewController` view allows the user to edit the photo and save changes back to the photo library. It uses an alert controller to display a list of preset editing options, including sepia tone, chrome, and revert.
 
@@ -220,7 +220,7 @@ DispatchQueue.global(qos: .userInitiated).async {
 
 After the user picks a filter, the app applies it and outputs the saved asset immediately. There’s no UI state for having chosen—but not yet committed—an edit. As such, there’s no role for reading adjustment data to resume in-progress edits, since PhotoBrowse has no notion of *in-progress*. However, it’s still good practice to write adjustment data so that potential future versions of the app—or other apps that understand your adjustment data format—could make use of it.
 
-##### Create a New Album
+### Create a New Album
 
 An alert controller allows the user to add a new album:
 
@@ -232,7 +232,7 @@ PHPhotoLibrary.shared().performChanges({
 })
 ```
 
-##### Add an Asset to a Collection
+### Add an Asset to a Collection
 
 When the user chooses to add an asset by tapping the Add button (+) in the navigation bar, PhotoBrowse creates a mock photo from a random color at a random orientation. Like other changes to a user’s photo library, adding an asset requires the app to wrap the addition inside a `PHAssetChangeRequest` as follows:
 
@@ -249,7 +249,7 @@ PHPhotoLibrary.shared().performChanges({
 })
 ```
 
-##### Delete Assets and Albums
+### Delete Assets and Albums
 
 The user can delete an asset through the trash can button at the lower-right corner of `AssetViewController`. For removal from an album, PhotoBrowse wraps the deletion operation inside a [`PHAssetCollectionChangeRequest`](../Photos/phassetcollectionchangerequest.md) object. For  removal from the entire photo library, PhotoBrowse wraps the deletion operation inside a [`PHAssetChangeRequest`](../Photos/phassetchangerequest.md) object:
 
@@ -268,7 +268,7 @@ if assetCollection != nil {
 }
 ```
 
-##### Favorite an Asset
+### Favorite an Asset
 
 Users can favorite an asset by toggling the [`PHAsset`](../Photos/phasset.md) parameter [`isFavorite`](../Photos/phasset/isfavorite.md):
 
@@ -287,7 +287,7 @@ PHPhotoLibrary.shared().performChanges({
 })
 ```
 
-##### Observe and Respond to Changes
+### Observe and Respond to Changes
 
 Register your main view controller—and any view that shows the user  assets—to observe changes to the photo library, so your app can receive and respond to notifications as assets change. These changes may not necessarily occur inside your app’s functionality; they could originate from other apps, other devices, iCloud Photos, or Shared Albums:
 

@@ -19,7 +19,7 @@ func keyUp(with event: NSEvent)
 - (void) keyUp:(NSEvent *) event;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation simply passes this message to the next responder.
 

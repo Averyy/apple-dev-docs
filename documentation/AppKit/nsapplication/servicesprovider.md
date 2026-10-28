@@ -19,11 +19,11 @@ var servicesProvider: Any? { get set }
 @property (strong, nullable) id servicesProvider;
 ```
 
-#### Return Value
+## Return Value
 
 The app’s service provider object.
 
-#### Discussion
+## Discussion
 
 The service provider performs all advertised services for the app. When another app requests a service from the current app, the app object forwards the request to its service provider. Service requests can arrive immediately after the service provider is set, so assign an object to this property only when your app is ready to receive requests.
 

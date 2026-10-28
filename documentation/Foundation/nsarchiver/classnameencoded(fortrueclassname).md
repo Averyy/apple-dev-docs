@@ -24,7 +24,7 @@ func classNameEncoded(forTrueClassName trueName: String) -> String?
 - (NSString *) classNameEncodedForTrueClassName:(NSString *) trueName;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the class used to archive instances of the class `trueName`.
 

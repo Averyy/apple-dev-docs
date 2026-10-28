@@ -19,7 +19,7 @@ var audioSettings: [String : Any]? { get set }
 @property (nonatomic, copy, nullable) NSDictionary<NSString *,id> * audioSettings;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a dictionary containing values for audio settings keys defined in `AVAudioSettings.h`. If you set the value of this property to `nil`, the output vends samples in their device native format.
 

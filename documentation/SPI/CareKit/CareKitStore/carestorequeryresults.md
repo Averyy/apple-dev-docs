@@ -17,7 +17,7 @@ A continuous stream of entities that exist in a CareKit store.
 struct CareStoreQueryResults<Result>
 ```
 
-#### Overview
+## Overview
 
 You can’t instantiate this stream directly. Instead, use methods like [`tasks(matching:)`](./ockreadabletaskstore/tasks%28matching%29.md) to create one. Similarly named methods exist for streaming other entities in a store.
 

@@ -21,7 +21,7 @@ A vector with the specified scalar in all lanes.
 init(repeating value: Self.Scalar)
 ```
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

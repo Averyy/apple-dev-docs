@@ -19,7 +19,7 @@ class FIFinderSyncController
 @interface FIFinderSyncController : NSExtensionContext
 ```
 
-#### Overview
+## Overview
 
 Use the Finder Sync controller to configure your extension, to set badges on items in the Finder’s window, and to get a list of selected and targeted items.
 

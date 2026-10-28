@@ -21,7 +21,7 @@ Deallocates the previously allocated memory block referenced by this pointer.
 func deallocate()
 ```
 
-#### Discussion
+## Discussion
 
 The memory to be deallocated must be uninitialized or initialized to a trivial type.
 

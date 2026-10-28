@@ -10,11 +10,11 @@ Invoke a Metal frame capture from your app, then save the resulting GPU trace to
 - macOS 10.15+
 - Xcode 11.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC 2019 session [606: Delivering Optimized Metal Apps and Games](https://developer.apple.com/videos/play/wwdc2019/606/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run the app:
 

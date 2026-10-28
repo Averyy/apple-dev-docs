@@ -22,11 +22,11 @@ func reshape(withSourceArray sourceArray: MPSNDArray, shape: [NSNumber]) -> MPSN
 - (MPSNDArray *) reshapeWithSourceArray:(MPSNDArray *) sourceArray shape:(MPSShape *) shape;
 ```
 
-#### Return Value
+## Return Value
 
 A new array view of `sourceArray` is returned. Or `nil` If aliasing is not possible.
 
-#### Discussion
+## Discussion
 
 Do a reshape operation on the CPU.
 

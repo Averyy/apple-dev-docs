@@ -21,7 +21,7 @@ Returns the abbreviation for the time zone at a given date.
 func abbreviation(for date: Date = Date()) -> String?
 ```
 
-#### Discussion
+## Discussion
 
 Note that the abbreviation may be different at different dates. For example, during daylight saving time the US/Eastern time zone has an abbreviation of “EDT.” At other times, its abbreviation is “EST.”
 

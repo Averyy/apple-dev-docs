@@ -20,7 +20,7 @@ Accesses a single weight in the collection at the given index.
 subscript(index: BlendShapeWeights.Index) -> Float { get set }
 ```
 
-#### Overview
+## Overview
 
 For more on accessing elements by index, see [`subscript(_:)`](../../Swift/array/subscript%28_%29-25iat.md).
 

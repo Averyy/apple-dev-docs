@@ -14,11 +14,11 @@ static IONetworkMedium * getMediumWithType(
  IOMediumType mask = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the first matching IONetworkMedium entry found, or 0 if no match was found.
 
-#### Overview
+## Overview
 
 This method iterates through a dictionary and returns an IONetworkMedium entry with the given type. An optional mask supplies the don't care bits.
 

@@ -26,7 +26,7 @@ var activationState: PKPaymentPassActivationState { get }
 @property (nonatomic, readonly) PKPaymentPassActivationState activationState;
 ```
 
-#### Discussion
+## Discussion
 
 You must activate a payment pass before you can use it.
 

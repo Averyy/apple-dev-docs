@@ -24,7 +24,7 @@ var lineDashPhase: CGFloat { get set }
 @property CGFloat lineDashPhase;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to start drawing a dashed line partway through a segment or gap. For example, a phase value of `6` for the pattern 5-2-3-2 would cause drawing to begin in the middle of the first gap.
 

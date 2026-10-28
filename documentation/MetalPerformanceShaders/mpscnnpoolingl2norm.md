@@ -24,7 +24,7 @@ class MPSCNNPoolingL2Norm
 @interface MPSCNNPoolingL2Norm : MPSCNNPooling
 ```
 
-#### Overview
+## Overview
 
 For each pixel, returns L2-Norm of pixels in the `kernelWidth * kernelHeight` filter region:
 

@@ -23,7 +23,7 @@ var kFxPropertyKey_MayRemapTime: String { get }
 
 - [Building an FxPlug plug-in manually](../Professional-Video-Applications/building-an-fxplug-plug-in-manually.md)
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../Swift/true.md).
 

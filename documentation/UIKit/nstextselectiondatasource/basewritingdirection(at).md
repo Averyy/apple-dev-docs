@@ -24,7 +24,7 @@ func baseWritingDirection(at location: any NSTextLocation) -> NSTextSelectionNav
 - (NSTextSelectionNavigationWritingDirection) baseWritingDirectionAtLocation:(id<NSTextLocation>) location;
 ```
 
-#### Return Value
+## Return Value
 
 The [`NSWritingDirection`](../nswritingdirection.md).
 

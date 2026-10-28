@@ -19,7 +19,7 @@ Properties you use to customize how an overlay arrangement presents a view.
 @interface UIOverlayArrangementViewProperties : NSObject
 ```
 
-#### Overview
+## Overview
 
 You can adjust how the overlay arrangement positions the primary and secondary views on a folded iPhone Duo with view properties. For example, if you would prefer the primary view to appear in the leading position instead of the trailing position when someone holds a folded iPhone Duo in landscape orientation, customize the overlay arrangement with view properties.
 

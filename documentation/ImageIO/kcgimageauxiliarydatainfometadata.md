@@ -25,7 +25,7 @@ let kCGImageAuxiliaryDataInfoMetadata: CFString
 extern CFStringRef const kCGImageAuxiliaryDataInfoMetadata;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CGImageMetadata`](./cgimagemetadata.md) type. Use it to obtain any metadata associated with the auxiliary data.
 

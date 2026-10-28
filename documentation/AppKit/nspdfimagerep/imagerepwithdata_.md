@@ -15,7 +15,7 @@ Creates and returns a representation of an image initialized with the specified 
 + (instancetype) imageRepWithData:(NSData *) pdfData;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`NSPDFImageRep`](../nspdfimagerep.md) object, or `nil` if the object could not be initialized. Initialization may fail if the PDF data does not conform to the PDF file format.
 

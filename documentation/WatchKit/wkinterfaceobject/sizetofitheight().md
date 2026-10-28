@@ -19,7 +19,7 @@ func sizeToFitHeight()
 - (void) sizeToFitHeight;
 ```
 
-#### Discussion
+## Discussion
 
 This method is equivalent of using the Size to Fit Content option in Interface Builder. It sizes the object so that its height matches the height of its content. For example, calling this method on a label sets the height of the label to the height of its text. The height of an object never exceeds the height of its container.
 

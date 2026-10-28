@@ -15,7 +15,7 @@ A [`CloudKit.QueryNotification`](./cloudkit.querynotification.md) object represe
 interface CloudKit.QueryNotification
 ```
 
-#### Overview
+## Overview
 
 This class is similar to the [`CKQueryNotification`](../CloudKit/ckquerynotification.md) class in the CloudKit framework.
 

@@ -19,7 +19,7 @@ class NSUserAppleScriptTask
 @interface NSUserAppleScriptTask : NSUserScriptTask
 ```
 
-#### Overview
+## Overview
 
 The [`NSUserAppleScriptTask`](./nsuserapplescripttask.md) class is intended to run AppleScript scripts from your application. It is intended to execute user-supplied scripts and will execute them outside of the application’s sandbox, if any.
 

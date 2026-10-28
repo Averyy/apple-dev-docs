@@ -19,11 +19,11 @@ func MDQueryGetResultCount(_ query: MDQuery!) -> CFIndex
 CFIndex MDQueryGetResultCount(MDQueryRef query);
 ```
 
-#### Return Value
+## Return Value
 
 The number of results in the query.
 
-#### Discussion
+## Discussion
 
 Note that the number of results in a query will change over time as the query's result list is updated.
 

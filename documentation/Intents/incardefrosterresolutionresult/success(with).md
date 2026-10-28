@@ -24,11 +24,11 @@ class func success(with resolvedCarDefroster: INCarDefroster) -> Self
 + (instancetype) successWithResolvedCarDefroster:(INCarDefroster) resolvedCarDefroster;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INCarDefrosterResolutionResult`](../incardefrosterresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you recognize the chosen defroster and are able to switch to it.
 

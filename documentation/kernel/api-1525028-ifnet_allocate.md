@@ -13,11 +13,11 @@
 errno_t ifnet_allocate(const struct ifnet_init_params *init, ifnet_t *interface);
 ```
 
-#### Return Value
+## Return Value
 
 May return ENOMEM if there is insufficient memory or EEXIST if an interface with the same uniqueid and family has already been allocated and is in use.
 
-#### Discussion
+## Discussion
 
 Allocate an ifnet_t with an initial refcount of 1. Many parts of the stack do not properly refcount the ifnet_t. In order to avoid freeing the ifnet_t while some parts of the stack may contain a reference to it, the ifnet_ts are only recycled, never freed. A unique id is used to try and recycle the same ifnet_t when allocating an interface. For example, for an ethernet interface, the hardware address of the ethernet card is usually used for the uniqueid. If a PC Card is removed and inserted again, if the ethernet address of the PC card is used, the same ifnet_t will be used for the card the second time it is inserted. In the future, when the ifnet_t is correctly refcounted by all of the stack, the interfaces may be freed and the unique ids ignored.
 

@@ -19,11 +19,11 @@ init(size: NSSize)
 - (instancetype) initWithSize:(NSSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSImage` object with no rendered content.
 
-#### Discussion
+## Discussion
 
 This method does not add any image representations to the image object. It is permissible to initialize the image object by passing a size of `(0.0, 0.0)`; however, you must set the size to a non-zero value before using it or an exception will be raised.
 

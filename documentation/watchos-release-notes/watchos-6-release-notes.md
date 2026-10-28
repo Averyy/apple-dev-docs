@@ -5,43 +5,43 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 6 SDK provides support for developing watchOS apps for Apple Watch devices running watchOS 6. The SDK comes bundled with Xcode 11 beta available from [Beta Software Downloads](https://developer.apple.com/download/). For information on the compatibility requirements for Xcode 11, see [Xcode 11 Release Notes](../Xcode-Release-Notes/xcode-11-release-notes.md).
 
 > ⚠️ **Warning**: You must update your watch to watchOS 6 beta 2 or later before updating to iOS 13 beta 7 or later, otherwise your watch will no longer be able to connect to your phone. (52854192)
 
-##### Networking
+### Networking
 
-###### New Features
+#### New Features
 
 - To enhance security, [`URLSession`](../Foundation/urlsession.md) no longer sniffs the MIME type when the server sends `Content-Type: application/octet-stream`. (7820658)
 - [`NSURLRequest.CachePolicy.reloadRevalidatingCacheData`](../Foundation/nsurlrequest/cachepolicy-swift.enum/reloadrevalidatingcachedata.md) and [`NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData`](../Foundation/nsurlrequest/cachepolicy-swift.enum/reloadignoringlocalandremotecachedata.md) APIs are now available. (49660334)
 - [`URLSessionWebSocketTask`](../Foundation/urlsessionwebsockettask.md) and [`URLSessionStreamTask`](../Foundation/urlsessionstreamtask.md) are now available for use in watchOS apps. (49779789)
 
-###### Known Issues
+#### Known Issues
 
 - The [`urlSession(_:taskIsWaitingForConnectivity:)`](../Foundation/urlsessiontaskdelegate/urlsession%28_,taskiswaitingforconnectivity%29.md) delegate callback might not function as expected. (54309264)
 
-###### Deprecations
+#### Deprecations
 
 - The [`URLSession`](../Foundation/urlsession.md) and [`NSURLConnection`](../Foundation/nsurlconnection.md) APIs no longer support SPDY. Servers should use HTTP 2 or HTTP 1.1. (43391641)
 
-##### Notifications
+### Notifications
 
-###### New Features
+#### New Features
 
 - To send a [User Notifications](../UserNotifications/UserNotifications.md) push to a watchOS device, a new `apns-push-type` key is now required as part of the APNs request header. Depending on the type of notification, this key can be set to `alert` or `background` and is supported across all Apple platforms. (47099534)
 
-##### Podcasts
+### Podcasts
 
-###### Known Issues
+#### Known Issues
 
 - Asking Siri to play a podcast on Apple Watch might result in an error message. (50392036)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - You can now create a [`Color`](../SwiftUI/color.md) from a [`UIColor`](../UIKit/uicolor.md) or [`NSColor`](../AppKit/nscolor.md). (49833933)
 - [`NSManagedObject`](../CoreData/nsmanagedobject.md) now conforms to [`ObservableObject`](../Combine/observableobject.md). The new `@`[`FetchRequest`](../SwiftUI/fetchrequest.md) property wrapper can drive views from the results of a fetch request, and [`managedObjectContext`](../SwiftUI/environmentvalues/managedobjectcontext.md) is now included in the environment. (50280673)
@@ -93,7 +93,7 @@ The watchOS 6 SDK provides support for developing watchOS apps for Apple Watch d
 - Updated the APIs for creating animations. The basic animations are now named after the curve type — such as [`linear`](../SwiftUI/animation/linear.md) and [`easeInOut`](../SwiftUI/animation/easeinout.md). The interpolation-based `spring(mass:stiffness:damping:initialVelocity:)` animation is now [`interpolatingSpring(mass:stiffness:damping:initialVelocity:)`](../SwiftUI/animation/interpolatingspring%28mass,stiffness,damping,initialvelocity%29.md), and `fluidSpring(stiffness:dampingFraction:blendDuration:timestep:idleThreshold:)` is now [`spring(response:dampingFraction:blendDuration:)`](../SwiftUI/animation/spring%28response,dampingfraction,blendduration%29.md) or [`interactiveSpring(response:dampingFraction:blendDuration:)`](../SwiftUI/animation/interactivespring%28response,dampingfraction,blendduration%29.md), depending on whether or not the animation is driven interactively. (50280375)
 - Added an initializer for creating a [`Font`](../SwiftUI/font.md) from a [`CTFont`](../CoreText/ctfont.md). (51849885)
 
-###### Known Issues
+#### Known Issues
 
 - SwiftUI has an API that lets you change the value type of [`Binding`](../SwiftUI/binding.md) to [`AnyHashable`](../Swift/anyhashable.md):
 
@@ -108,7 +108,7 @@ The watchOS 6 SDK provides support for developing watchOS apps for Apple Watch d
   **Workaround:** Wrap the [`WKInterfaceObjectRepresentable`](../SwiftUI/wkinterfaceobjectrepresentable.md) instance in a [`GeometryReader`](../SwiftUI/geometryreader.md) to get an explicit width for the view. (53512858)
 - [`Image`](../SwiftUI/image.md) instances don’t use resizing information configured in asset catalogs. Configure the size of an image using the [`resizable(capInsets:resizingMode:)`](../SwiftUI/image/resizable%28capinsets,resizingmode%29.md) modifier instead. (49114577)
 
-###### Deprecations
+#### Deprecations
 
 - SwiftUI APIs deprecated in previous betas are now removed. (52587863, 53310683)
 - The `Length` type is replaced by [`CGFloat`](../CoreFoundation/cgfloat-swift.struct.md). (50654095)
@@ -232,9 +232,9 @@ The watchOS 6 SDK provides support for developing watchOS apps for Apple Watch d
   ```
 - The `relativeWidth(_:)`, `relativeHeight(_:)`, and `relativeSize(width:height:)` modifiers are deprecated. Use other modifiers like [`frame(minWidth:idealWidth:maxWidth:minHeight:idealHeight:maxHeight:alignment:)`](../SwiftUI/view/frame%28minwidth,idealwidth,maxwidth,minheight,idealheight,maxheight,alignment%29.md) instead. (51494692)
 
-##### Xcode
+### Xcode
 
-###### Known Issues
+#### Known Issues
 
 - If your watch debugging session continuously times out, you might need to quit and relaunch Xcode after connecting to the internet in order to download the appropriate DeviceSupport files. (50554987)
 - The watchOS Mail app and related processes might quit unexpectedly when used within the Simulator. (53799899)

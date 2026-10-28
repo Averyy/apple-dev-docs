@@ -9,7 +9,7 @@ Delete an Xcode Cloud workflow and all of its associated data.
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 To delete an Xcode Cloud workflow, call this endpoint using the HTTP `DELETE` method like this:
 

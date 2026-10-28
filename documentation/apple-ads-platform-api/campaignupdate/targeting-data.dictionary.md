@@ -15,7 +15,7 @@ Targeting configuration for updating an existing campaign’s supply source, pla
 object CampaignUpdate.Targeting
 ```
 
-#### Discussion
+## Discussion
 
 Omit `supplyPlacement` or `countryOrRegion` to leave its current value unchanged. `supplySource` is fixed at creation; don’t include it in an update request.
 

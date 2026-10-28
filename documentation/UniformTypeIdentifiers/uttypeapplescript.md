@@ -21,7 +21,7 @@ A type that represents an AppleScript text-based script.
 extern UTType * const UTTypeAppleScript;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.applescript.text`.
 

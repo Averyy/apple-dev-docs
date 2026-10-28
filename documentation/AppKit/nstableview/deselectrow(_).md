@@ -19,7 +19,7 @@ func deselectRow(_ row: Int)
 - (void) deselectRow:(NSInteger) row;
 ```
 
-#### Discussion
+## Discussion
 
 Deselects the row at `rowIndex` if it’s selected, regardless of whether empty selection is allowed.
 

@@ -20,7 +20,7 @@ optional func outlineViewColumnDidResize(_ notification: Notification)
 - (void) outlineViewColumnDidResize:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked as a result of posting an [`columnDidResizeNotification`](../nsoutlineview/columndidresizenotification.md).
 

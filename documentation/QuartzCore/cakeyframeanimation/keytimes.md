@@ -24,7 +24,7 @@ var keyTimes: [NSNumber]? { get set }
 @property (copy, nullable) NSArray<NSNumber *> * keyTimes;
 ```
 
-#### Discussion
+## Discussion
 
 Each value in the array is a floating point number between `0.0` and `1.0` that defines the time point (specified as a fraction of the animation’s total duration) at which to apply the corresponding keyframe value. Each successive value in the array must be greater than, or equal to, the previous value. Usually, the number of elements in the array should match the number of elements in the [`values`](./values.md) property or the number of control points in the [`path`](./path.md) property. If they do not, the timing of your animation might not be what you expect.
 

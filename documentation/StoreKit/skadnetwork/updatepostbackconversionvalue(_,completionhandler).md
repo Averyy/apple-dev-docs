@@ -30,7 +30,7 @@ class func updatePostbackConversionValue(_ conversionValue: Int) async throws
 - [Configuring an advertised app](../configuring-an-advertised-app.md)
 - [Receiving ad attributions and postbacks](../receiving-ad-attributions-and-postbacks.md)
 
-#### Discussion
+## Discussion
 
 Invalid conversion values cause the method to fail and return error [`SKANError.Code.invalidConversionValue`](../skanerror-swift.struct/code/invalidconversionvalue.md).
 
@@ -42,7 +42,7 @@ The final conversion value appears in the postback if sending the data meets App
 
 The way this method behaves depends on the ad’s version, as described in the following sections. Ad networks determine an ad’s version when they sign the ad. For more information about signing ads, see [Signing and providing ads](../signing-and-providing-ads.md).
 
-##### Update the conversion value for version 3 ads and earlier
+### Update the conversion value for version 3 ads and earlier
 
 If the ad network signs the winning ad with version 3 or earlier, calling this method behaves as follows:
 
@@ -51,7 +51,7 @@ If the ad network signs the winning ad with version 3 or earlier, calling this m
 - When the timer expires, the conversion value is final and subsequent calls to [`updatePostbackConversionValue(_:completionHandler:)`](./updatepostbackconversionvalue%28_,completionhandler%29.md) have no effect.
 - The device sends the postback to the ad network’s URL within 0 to 24 hours after the timer expires. The postback contains the final conversion value only if sending the data meets Apple’s privacy threshold.
 
-##### Update the conversion value for version 4 ads and later
+### Update the conversion value for version 4 ads and later
 
 > **Note**:  This method supports ads signed with version 4 and later, however, it doesn’t provide advanced features, such as multiple postbacks and coarse conversion values, available starting in version 4. To get those advanced features for ads signed with version 4 and later, use [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](./updatepostbackconversionvalue%28_,coarsevalue,lockwindow,completionhandler%29.md) instead of this method.
 

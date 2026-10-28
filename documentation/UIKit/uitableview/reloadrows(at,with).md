@@ -23,7 +23,7 @@ func reloadRows(at indexPaths: [IndexPath], with animation: UITableView.RowAnima
 - (void) reloadRowsAtIndexPaths:(NSArray<NSIndexPath *> *) indexPaths withRowAnimation:(UITableViewRowAnimation) animation;
 ```
 
-#### Discussion
+## Discussion
 
 Reloading a row causes the table view to ask its data source for a new cell for that row. The table animates that new cell in as it animates the old row out. Call this method if you want to alert the user that the value of a cell is changing. If, however, notifying the user isn’t important — that is, you just want to change the value that a cell is displaying — you can get the cell for a particular row and set its new value.
 

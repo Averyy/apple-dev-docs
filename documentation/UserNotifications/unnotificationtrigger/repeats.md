@@ -33,7 +33,7 @@ var repeats: Bool { get }
 @property (atomic, readonly) BOOL repeats;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`false`](../../Swift/false.md), the system delivers the notification only once. When this property is [`true`](../../Swift/true.md), the system reschedules the notification request automatically, resulting in the system delivering the notification each time the trigger condition is met. To unschedule the notification request, use the methods of the [`UNUserNotificationCenter`](../unusernotificationcenter.md) to remove the notification request.
 

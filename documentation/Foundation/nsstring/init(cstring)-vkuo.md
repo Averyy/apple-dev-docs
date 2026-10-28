@@ -21,7 +21,7 @@ Initializes the receiver, a newly allocated `NSString` object, by converting the
 convenience init?(CString bytes: UnsafePointer<CChar>)
 ```
 
-#### Discussion
+## Discussion
 
 `cString` must be a zero-terminated C string in the default C string encoding, and may not be `NULL`. Returns an initialized object, which might be different from the original receiver.
 

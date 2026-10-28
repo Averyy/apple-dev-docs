@@ -19,7 +19,7 @@ func isEnabled(forSegment segment: Int) -> Bool
 - (BOOL) isEnabledForSegment:(NSInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the segment is enabled; otherwise, [`false`](../../Swift/false.md).
 

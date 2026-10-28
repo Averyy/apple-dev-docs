@@ -22,7 +22,7 @@ The phases that a view transitions between when it scrolls among other views.
 enum ScrollTransitionPhase
 ```
 
-#### Overview
+## Overview
 
 When a view with a scroll transition modifier applied is approaching the visible region of the containing scroll view or other container, the effect  will first be applied with the `topLeading` or `bottomTrailing` phase (depending on which edge the view is approaching), then will be moved to the `identity` phase as the view moves into the visible area. The timing and behavior that determines when a view is visible within the container is controlled by the configuration that is provided to the `scrollTransition` modifier.
 

@@ -22,11 +22,11 @@ init(mixerDefinition: PHASEMixerDefinition, format: AVAudioFormat)
 - (instancetype) initWithMixerDefinition:(PHASEMixerDefinition *) mixerDefinition format:(AVAudioFormat *) format;
 ```
 
-#### Return Value
+## Return Value
 
 A new PHASEPullStreamNodeDefinition object
 
-#### Discussion
+## Discussion
 
 Create a pull stream node definition
 

@@ -23,7 +23,7 @@ string SearchACResultType
 - `pointOfInterest`
 - `query`
 
-#### Possible Values
+## Possible Values
 
 - **poi**: A point of interest. address An address such as a street address, suburb, city, state, or country.
 - **physicalFeature**: A natural physical feature, such as a river, mountain, or delta.

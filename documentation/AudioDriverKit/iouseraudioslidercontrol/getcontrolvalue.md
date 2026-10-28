@@ -15,11 +15,11 @@ Gets the value of the slider control.
 uint32_t GetControlValue();
 ```
 
-#### Return Value
+## Return Value
 
 The value of the slider.
 
-#### Discussion
+## Discussion
 
 This method synchronizes by using the work queue created by the object.
 

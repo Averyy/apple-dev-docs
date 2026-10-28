@@ -23,7 +23,7 @@ var isVisible: Bool { get }
 @property (nonatomic, readonly, getter=isVisible) BOOL visible;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the receiver is displayed; otherwise, [`false`](../../Swift/false.md).
 

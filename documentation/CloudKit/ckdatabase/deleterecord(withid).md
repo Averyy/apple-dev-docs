@@ -22,11 +22,11 @@ Deletes a specific record.
 func deleteRecord(withID recordID: CKRecord.ID) async throws -> CKRecord.ID
 ```
 
-#### Return Value
+## Return Value
 
 The identifier of the deleted record.
 
-#### Discussion
+## Discussion
 
 Deleting a record may cause additional deletions if other records in the database reference the deleted record. CloudKit doesn’t provide the identifiers of any additional records it deletes. This method throws an error if the request fails, such as when the record doesn’t exist, the network is unavailable or the device doesn’t have an active iCloud account.
 

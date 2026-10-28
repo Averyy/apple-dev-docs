@@ -25,7 +25,7 @@ var lineJoin: CGLineJoin { get set }
 @property (nonatomic) CGLineJoin lineJoin;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`CGLineJoin.bevel`](../../CoreGraphics/cglinejoin/bevel.md). See [`CGLineJoin`](../../CoreGraphics/cglinejoin.md).
 

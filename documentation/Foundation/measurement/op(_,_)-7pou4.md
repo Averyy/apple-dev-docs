@@ -23,7 +23,7 @@ static func < <LeftHandSideType, RightHandSideType>(lhs: Measurement<LeftHandSid
 
 Available when `UnitType` inherits `Unit`.
 
-#### Return Value
+## Return Value
 
 `true` if the measurements can be compared and the `lhs` is less than the `rhs` converted value.
 

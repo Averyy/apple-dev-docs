@@ -15,7 +15,7 @@ Creates a new texture from the contents of the specified view.
 - (void) createTexture:(GLenum) target fromView:(NSView *) view internalFormat:(GLenum) format;
 ```
 
-#### Discussion
+## Discussion
 
 The new texture is assigned the identifier in the `target` parameter and is associated with the receiver’s context.
 

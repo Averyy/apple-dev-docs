@@ -25,11 +25,11 @@ func decodePropertyList(forKey key: String) -> Any?
 - (id) decodePropertyListForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 A decoded object containing a property list.
 
-#### Discussion
+## Discussion
 
 This method calls [`decodeObjectOfClasses:forKey:`](./decodeobjectofclasses_forkey_.md) with a set allowing only property list types.
 

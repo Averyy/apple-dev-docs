@@ -15,11 +15,11 @@ Finds the next descriptor matching a given type within a BOS descriptor.
 const IOUSBDeviceCapabilityDescriptorHeader *IOUSBGetNextCapabilityDescriptorWithType(const IOUSBBOSDescriptor *bosDescriptor, const IOUSBDeviceCapabilityDescriptorHeader *currentDescriptor, const uint8_t type);
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor pointer, or `NULL` if no matching descriptor is available.
 
-#### Discussion
+## Discussion
 
 This method uses `getNextCapabilityDescriptor`, and further validates that the returned descriptor’s `bDevCapabilityType` field matches the type parameter.
 

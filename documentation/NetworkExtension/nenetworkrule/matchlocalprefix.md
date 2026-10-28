@@ -19,7 +19,7 @@ var matchLocalPrefix: Int { get }
 @property (readonly) NSUInteger matchLocalPrefix;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`NSNotFound`](../../Foundation/nsnotfound-4qp9h.md) for rules whose [`matchLocalNetwork`](./matchlocalnetwork.md) property is `nil.`
 

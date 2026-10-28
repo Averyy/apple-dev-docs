@@ -24,11 +24,11 @@ func updateBounds() -> CGRect
 - (CGRect) updateBounds;
 ```
 
-#### Return Value
+## Return Value
 
 The bounds of the update region..
 
-#### Discussion
+## Discussion
 
 Initially `updateBounds` will include all differences between the current frame and the previously rendered frame.
 

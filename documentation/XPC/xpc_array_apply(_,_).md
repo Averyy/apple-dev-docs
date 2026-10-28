@@ -25,11 +25,11 @@ func xpc_array_apply(_ xarray: xpc_object_t, _ applier: (Int, xpc_object_t) -> B
 extern bool xpc_array_apply(xpc_object_t xarray, xpc_array_applier_t applier);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether iteration of the array completed successfully. Iteration will only fail if the applier block returns false.
 
-#### Discussion
+## Discussion
 
 You should not modify an array’s contents during iteration. The array indexes are iterated in order.
 

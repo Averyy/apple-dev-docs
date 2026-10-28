@@ -22,7 +22,7 @@ nonisolated
 struct AutomaticArrangementViewStyle
 ```
 
-#### Overview
+## Overview
 
 Using this style, the arrangement view resolves to a [`SplitArrangementViewStyle`](./splitarrangementviewstyle.md). You can also use [`automatic`](./arrangementviewstyle/automatic.md) to apply this style.
 

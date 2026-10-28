@@ -17,7 +17,7 @@ A container for Impression Share report metrics.
 object CustomReportResponse
 ```
 
-#### Discussion
+## Discussion
 
 See also [`Impression Share Report`](./impression-share-report.md),  [`Get a Single Impression Share Report`](./get-a-single-impression-share-report.md), [`Get All Impression Share Reports`](./get-all-impression-share-reports.md), and [`CustomReportRequest`](./customreportrequest.md).
 

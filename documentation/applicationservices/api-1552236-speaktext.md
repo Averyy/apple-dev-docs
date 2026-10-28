@@ -15,11 +15,11 @@ Begins speaking a buffer of text.
 OSErr SpeakText(SpeechChannel chan, const void *textBuf, unsigned long textBytes);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./speech_synthesis_manager.md#1659745).
 
-#### Discussion
+## Discussion
 
 Like `SpeakString`,the `SpeakText` functionalso generates speech, but through a speech channel through whichyou can exert control over the generated speech.
 

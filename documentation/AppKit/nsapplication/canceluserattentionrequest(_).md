@@ -19,7 +19,7 @@ func cancelUserAttentionRequest(_ request: Int)
 - (void) cancelUserAttentionRequest:(NSInteger) request;
 ```
 
-#### Discussion
+## Discussion
 
 A request is also canceled automatically by user activation of the app.
 

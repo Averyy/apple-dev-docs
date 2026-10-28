@@ -21,7 +21,7 @@ enum GLKViewDrawableMultisample
 enum GLKViewDrawableMultisample : GLint;
 ```
 
-#### Overview
+## Overview
 
 Multisampling improves the quality of the output image, but may require more memory and image processing to do so. As such, you should profile your application with and without multisampling enabled, and choose a setting that provides both the image quality and performance you require.
 

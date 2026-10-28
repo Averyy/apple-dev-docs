@@ -20,7 +20,7 @@ var start_time: timeval
 struct timeval start_time;
 ```
 
-#### Discussion
+## Discussion
 
 This value represents the time that a fork call created the process.
 

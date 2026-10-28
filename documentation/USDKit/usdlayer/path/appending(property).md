@@ -20,7 +20,7 @@ Returns a new path with the named property appended.
 func appending(property name: USDToken) -> USDLayer.Path
 ```
 
-#### Return Value
+## Return Value
 
 A new path identifying the property.
 

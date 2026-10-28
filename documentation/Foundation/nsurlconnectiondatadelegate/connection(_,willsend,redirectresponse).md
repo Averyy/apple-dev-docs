@@ -25,11 +25,11 @@ optional func connection(_ connection: NSURLConnection, willSend request: URLReq
 - (NSURLRequest *) connection:(NSURLConnection *) connection willSendRequest:(NSURLRequest *) request redirectResponse:(NSURLResponse *) response;
 ```
 
-#### Return Value
+## Return Value
 
 The actual URL request to use in light of the redirection response. The delegate may return `request` unmodified to allow the redirect, return a new request, or return `nil` to reject the redirect and continue processing the connection.
 
-#### Discussion
+## Discussion
 
 If `redirectResponse` is `nil`, the URL was canonicalized (rewritten into its standard form) by the [`URLProtocol`](../urlprotocol.md) object handling the request. Update your user interface to show the standardized form of the URL, then return the original request unmodified.
 

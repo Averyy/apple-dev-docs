@@ -18,7 +18,7 @@ var kCGNumReservedWindowLevels: Int32 { get }
 #define kCGNumReservedWindowLevels
 ```
 
-#### Discussion
+## Discussion
 
 The number of window levels reserved by Apple for internal use. Cocoa uses this constant during compilation.
 

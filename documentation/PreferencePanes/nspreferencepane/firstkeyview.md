@@ -20,7 +20,7 @@ var firstKeyView: NSView? { get set }
 @property (strong, nullable) NSView * firstKeyView;
 ```
 
-#### Discussion
+## Discussion
 
 The first key view can be set in the nib file by connecting a view to the receiver’s `_firstKeyView` outlet.
 

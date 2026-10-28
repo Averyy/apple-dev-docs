@@ -25,7 +25,7 @@ var mutableAudioBufferList: UnsafeMutablePointer<AudioBufferList> { get }
 @property (nonatomic, readonly) AudioBufferList * mutableAudioBufferList;
 ```
 
-#### Discussion
+## Discussion
 
 You use this with some lower-level Core Audio and Audio Toolbox APIs that require a mutable [`AudioBufferList`](../../CoreAudioTypes/audiobufferlist.md) (for example, the [`AudioConverterConvertComplexBuffer(_:_:_:_:)`](../../AudioToolbox/audioconverterconvertcomplexbuffer%28_,_,_,_%29.md) function).
 

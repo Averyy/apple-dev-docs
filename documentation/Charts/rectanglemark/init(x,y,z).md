@@ -20,7 +20,7 @@ nonisolated
 init(x: PlottableValue<some Plottable>, y: PlottableValue<some Plottable>, z: PlottableValue<some Plottable>)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: A 3D RectangleMark requires one parameter to be a single numeric value and the other two parameters to be numeric ranges.
 

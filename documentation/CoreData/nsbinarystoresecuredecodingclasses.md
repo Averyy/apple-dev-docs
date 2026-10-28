@@ -25,7 +25,7 @@ let NSBinaryStoreSecureDecodingClasses: String
 extern NSString * const NSBinaryStoreSecureDecodingClasses;
 ```
 
-#### Discussion
+## Discussion
 
 This option is preferable to using [`NSBinaryStoreInsecureDecodingCompatibilityOption`](./nsbinarystoreinsecuredecodingcompatibilityoption.md).
 

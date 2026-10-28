@@ -21,7 +21,7 @@ Calculates the absolute value of each element in the supplied integer vector usi
 extern void vDSP_vabsi(const int *__A, vDSP_Stride __IA, int *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code calculates the absolute values of the elements of an array:
 

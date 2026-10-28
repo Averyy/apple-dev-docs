@@ -22,7 +22,7 @@ var isVideoMinFrameDurationSupported: Bool { get }
 @property (nonatomic, readonly, getter=isVideoMinFrameDurationSupported) BOOL supportsVideoMinFrameDuration;
 ```
 
-#### Discussion
+## Discussion
 
 The property indicates whether the connection honors the [`videoMinFrameDuration`](./videominframeduration.md) property for a video connection.
 

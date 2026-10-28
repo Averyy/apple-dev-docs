@@ -21,7 +21,7 @@ The product ID of the auto-renewable subscription that will automatically renew.
 let autoRenewPreference: String?
 ```
 
-#### Discussion
+## Discussion
 
 This value is the product ID of the auto-renewable subscription that will renew after the current period expires. The value may be:
 

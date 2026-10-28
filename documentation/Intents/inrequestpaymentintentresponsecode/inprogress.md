@@ -23,7 +23,7 @@ case inProgress
 INRequestPaymentIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Use this code during the handling phase to indicate that you received the payment request details, but you haven’t sent the request to the intended user.
 

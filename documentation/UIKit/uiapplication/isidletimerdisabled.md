@@ -23,7 +23,7 @@ var isIdleTimerDisabled: Bool { get set }
 @property (nonatomic, getter=isIdleTimerDisabled) BOOL idleTimerDisabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). When most apps have no touches as user input for a short period, the system puts the device into a “sleep” state where the screen dims. This is done for the purposes of conserving power. However, apps that don’t have user input except for the accelerometer — games, for instance — can, by setting this property to [`true`](../../Swift/true.md), disable the “idle timer” to avert system sleep.
 

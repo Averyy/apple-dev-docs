@@ -21,7 +21,7 @@ A format style that converts byte counts into attributed strings.
 struct Attributed
 ```
 
-#### Overview
+## Overview
 
 Use the [`attributed`](./attributed-swift.property.md) modifier on a [`ByteCountFormatStyle`](../bytecountformatstyle.md) to create a format style of this type.
 

@@ -23,7 +23,7 @@ class func transition(with view: UIView, duration: TimeInterval, options: UIView
 + (void) transitionWithView:(UIView *) view duration:(NSTimeInterval) duration options:(UIViewAnimationOptions) options animations:(void (^)()) animations completion:(void (^)(BOOL finished)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method applies a transition to the specified view so that you can make state changes to it. The block you specify in the `animations` parameter contains whatever state changes you want to make. You can use this block to add, remove, show, or hide subviews of the specified view. If you want to incorporate other animatable changes, you must include the [`allowAnimatedContent`](./animationoptions/allowanimatedcontent.md) key in the `options` parameter.
 

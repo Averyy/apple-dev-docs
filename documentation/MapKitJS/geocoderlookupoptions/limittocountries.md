@@ -15,7 +15,7 @@ A list of countries for constraining the lookup results.
 limitToCountries?: string;
 ```
 
-#### Discussion
+## Discussion
 
 This property tells the geocoder to return results within a list of countries. Specify countries in the list using two-letter ISO country codes. For example, constrain the geocoder to return results in Australia and New Zealand with `{ limitToCountries: "AU, NZ" }`.
 

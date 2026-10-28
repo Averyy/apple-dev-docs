@@ -17,11 +17,11 @@ Retrieves the current list of trusted root certificates.
 OSStatus SSLCopyTrustedRoots(SSLContextRef context, CFArrayRef*trustedRoots);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 You can use the [`SSLSetTrustedRoots`](./sslsettrustedroots.md) function to replace or add to the set of trusted root certificates. If [`SSLSetTrustedRoots`](./sslsettrustedroots.md) has never been called for this session, the [`SSLCopyTrustedRoots`](./sslcopytrustedroots.md) function returns the system’s default set of trusted root certificates.
 

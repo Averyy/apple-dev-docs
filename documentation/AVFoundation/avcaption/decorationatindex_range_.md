@@ -18,7 +18,7 @@ Returns the text decoration at the index position.
 - (AVCaptionDecoration) decorationAtIndex:(NSInteger) index range:(NSRange *) outRange;
 ```
 
-#### Return Value
+## Return Value
 
 The text decoration.
 

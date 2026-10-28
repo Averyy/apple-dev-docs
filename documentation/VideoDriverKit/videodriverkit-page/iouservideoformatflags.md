@@ -15,7 +15,7 @@ Standard format flags for a basic description.
 enum IOUserVideoFormatFlags : uint32_t;
 ```
 
-#### Overview
+## Overview
 
 These are the standard flags for use in the `mFormatFlags` field of the [`IOUserVideoStreamBasicDescription`](./iouservideostreambasicdescription.md) structure.
 

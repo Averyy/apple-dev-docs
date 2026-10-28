@@ -23,7 +23,7 @@ var modelTime: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval modelTime;
 ```
 
-#### Discussion
+## Discussion
 
 This time provides a reference point for driving time-based model changes, like animations or physics. This property attempts to maintain constant latency between model changes and their onscreen presentation. It uses the same units as [`CACurrentMediaTime()`](../../QuartzCore/cacurrentmediatime%28%29.md). Numerically, this time is close to the start of the UI update, but its precise relation to the UI update start time might change, depending on frame rate and other UI update parameters.
 

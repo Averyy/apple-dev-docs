@@ -25,7 +25,7 @@ var versionHash: Data { get }
 @property (copy, readonly) NSData * versionHash;
 ```
 
-#### Discussion
+## Discussion
 
 To calculate its version hash, the relationship combines its superclass’s [`versionHash`](../nspropertydescription/versionhash.md) property with the values of [`inverseRelationship`](./inverserelationship.md), [`destinationEntity`](./destinationentity.md), [`minCount`](./mincount.md), and [`maxCount`](./maxcount.md).
 

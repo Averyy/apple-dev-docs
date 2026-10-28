@@ -22,7 +22,7 @@ var streamType: SCStreamType { get }
 @property (nonatomic, readonly) SCStreamType streamType;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Use the [`style`](./style.md) property instead, which provides additional information about the content.
 

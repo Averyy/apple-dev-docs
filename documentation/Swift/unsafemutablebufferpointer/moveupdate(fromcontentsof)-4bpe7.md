@@ -21,11 +21,11 @@ Updates this buffer’s initialized memory initialized memory by moving every el
 func moveUpdate(fromContentsOf source: Slice<UnsafeMutableBufferPointer<Element>>) -> UnsafeMutableBufferPointer<Element>.Index
 ```
 
-#### Return Value
+## Return Value
 
 An index one past the index of the last element updated.
 
-#### Discussion
+## Discussion
 
 Prior to calling the `moveUpdate(fromContentsOf:)` method on a buffer, the first `source.count` elements of the buffer’s memory must be initialized, or the buffer’s `Element` type must be a trivial type. The memory referenced by `source` is uninitialized after the function returns. The buffer must reference enough initialized memory to accommodate `source.count` elements.
 

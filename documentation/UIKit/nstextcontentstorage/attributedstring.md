@@ -24,7 +24,7 @@ var attributedString: NSAttributedString? { get set }
 @property (copy, nullable) NSAttributedString * attributedString;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is an [`NSTextStorage`](../nstextstorage.md) object. When you need to change the text in your view, fetch this string and make your changes to it. When making changes, place them in a block and pass them to the [`performEditingTransaction(_:)`](../nstextcontentmanager/performeditingtransaction%28_%29.md) method. Wrapping changes in an edit transaction gives the rest of the text system an opportunity to respond to those changes. For example, the layout manager uses edit transactions to update the text layout for any content in the visible portion of your view.
 

@@ -15,7 +15,7 @@ The getter to use to access the tile overlay class.
 get TileOverlay(): typeof TileOverlay;
 ```
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library before accessing the getter, otherwise, the getter throws an `Error`.
 

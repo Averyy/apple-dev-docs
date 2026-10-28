@@ -25,7 +25,7 @@ var baseLeaderboardID: String { get }
 @property (nonatomic, strong, readonly) NSString * baseLeaderboardID;
 ```
 
-#### Discussion
+## Discussion
 
 This is the same ID that App Store Connect uses to identify this leaderboard.
 

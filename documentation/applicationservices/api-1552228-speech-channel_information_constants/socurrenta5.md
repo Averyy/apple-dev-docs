@@ -13,7 +13,7 @@
 soCurrentA5 = 'myA5'
 ```
 
-#### Discussion
+## Discussion
 
 Set the value that the Speech Synthesis Managerassigns to the A5 register before invoking any application-definedcallback functions for the speech channel. The A5 register mustbe set correctly if the callback functions are to be able to accessapplication global variables. The `speechInfo` parameter shouldbe set to the pointer contained in the A5 register at a time whenthe application is not executing interrupt code or to `NULL` ifyour application wishes to clear a value previously set with the `soCurrentA5` selector.
 

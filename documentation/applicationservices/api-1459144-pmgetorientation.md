@@ -19,7 +19,7 @@ func PMGetOrientation(_ pageFormat: PMPageFormat, _ orientation: UnsafeMutablePo
 OSStatus PMGetOrientation(PMPageFormat pageFormat, PMOrientation *orientation);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 

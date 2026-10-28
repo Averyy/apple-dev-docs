@@ -19,7 +19,7 @@ func preferredContentSizeDidChange(for viewController: NSViewController)
 - (void) preferredContentSizeDidChangeForViewController:(NSViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method if you want to adjust layout when a child view controller or presented view controller changes its preferred content size.
 

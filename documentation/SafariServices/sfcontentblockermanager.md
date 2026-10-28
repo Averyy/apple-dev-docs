@@ -23,7 +23,7 @@ class SFContentBlockerManager
 @interface SFContentBlockerManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this class to determine the state of your content blocker and reload the content-blocking rules used by Safari.
 

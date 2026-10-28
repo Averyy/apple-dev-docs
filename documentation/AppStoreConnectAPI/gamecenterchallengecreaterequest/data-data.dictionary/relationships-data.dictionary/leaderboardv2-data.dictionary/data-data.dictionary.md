@@ -15,7 +15,7 @@ The type and ID of a related resource.
 object GameCenterChallengeCreateRequest.Data.Relationships.LeaderboardV2.Data
 ```
 
-#### Overview
+## Overview
 
 - id:
 - type:

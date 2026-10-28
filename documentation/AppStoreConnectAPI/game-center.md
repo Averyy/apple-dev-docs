@@ -4,7 +4,7 @@
 
 Manage Game Center data and configurations for your apps.
 
-#### Overview
+## Overview
 
 Game Center is an Apple service that provides social-gaming functionality to games. Game Center gives users the ability to track their scores on a leaderboard, view achievement progress, invite friends to play a game, and start a multiplayer game with friends or through auto-match.
 

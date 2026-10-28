@@ -24,7 +24,7 @@ class UIDevice
 @interface UIDevice : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a [`UIDevice`](./uidevice.md) object to get information about the device such as assigned name, device model, and operating-system name and version. You also use the `UIDevice` instance to detect changes in the device’s characteristics, such as physical orientation. You get the current orientation using the [`orientation`](./uidevice/orientation.md) property or receive change notifications by registering for the [`orientationDidChangeNotification`](./uidevice/orientationdidchangenotification.md) notification. Before using either of these techniques to get orientation data, you must enable data delivery using the [`beginGeneratingDeviceOrientationNotifications()`](./uidevice/begingeneratingdeviceorientationnotifications%28%29.md) method. When you no longer need to track the device orientation, call the [`endGeneratingDeviceOrientationNotifications()`](./uidevice/endgeneratingdeviceorientationnotifications%28%29.md) method to disable the delivery of notifications.
 

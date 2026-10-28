@@ -24,7 +24,7 @@ var automaticallyAdjustsScrollViewInsets: Bool { get set }
 @property (nonatomic, assign) BOOL automaticallyAdjustsScrollViewInsets;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md), which lets container view controllers know that they should adjust the scroll view insets of this view controller’s view to account for screen areas consumed by a status bar, search bar, navigation bar, toolbar, or tab bar. Set this property to [`false`](../../Swift/false.md) if your view controller implementation manages its own scroll view inset adjustments.
 

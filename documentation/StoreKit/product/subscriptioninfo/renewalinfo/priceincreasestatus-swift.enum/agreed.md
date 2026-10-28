@@ -25,7 +25,7 @@ case agreed
 
 - [Managing Price Increases for Auto-Renewable Subscriptions](../../../../managing-price-increases-for-auto-renewable-subscriptions.md)
 
-#### Discussion
+## Discussion
 
 There are two types of price increases for auto-renewable subscriptions: those that require customer consent, and those that don’t require customer consent. For a price increase that requires customer consent, this value indicates that the customer consented to the price increase. For a price increase that doesn’t require customer consent, this value indicates that the App Store informed the customer of the price increase and the subscription is subject to the price increase.
 

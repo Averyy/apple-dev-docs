@@ -21,7 +21,7 @@ class TVMonogramView
 @interface TVMonogramView : TVLockupView
 ```
 
-#### Overview
+## Overview
 
 If you don’t provide an image, the system provides a generic placeholder image. If [`personNameComponents`](./tvmonogramview/personnamecomponents.md) is not `nil`, the system creates a localized monogram image using the first initials from the name components.
 

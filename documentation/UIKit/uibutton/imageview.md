@@ -23,7 +23,7 @@ var imageView: UIImageView? { get }
 @property (nonatomic, strong, readonly, nullable) UIImageView * imageView;
 ```
 
-#### Discussion
+## Discussion
 
 Although this property is read-only, its own properties are read/write. Use these properties to configure the appearance and behavior of the button’s view. For example:
 

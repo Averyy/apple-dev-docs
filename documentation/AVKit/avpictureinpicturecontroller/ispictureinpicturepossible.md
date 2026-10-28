@@ -28,7 +28,7 @@ var isPictureInPicturePossible: Bool { get }
 
 - [Adopting Picture in Picture in a custom player](../adopting-picture-in-picture-in-a-custom-player.md)
 
-#### Discussion
+## Discussion
 
 This property value is `false` if another app, like FaceTime, is presenting Picture in Picture content.
 

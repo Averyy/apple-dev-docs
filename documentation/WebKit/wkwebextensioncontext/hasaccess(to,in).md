@@ -23,7 +23,7 @@ func hasAccess(to url: URL, in tab: (any WKWebExtensionTab)?) -> Bool
 - (BOOL) hasAccessToURL:(NSURL *) url inTab:(id<WKWebExtensionTab>) tab;
 ```
 
-#### Discussion
+## Discussion
 
 Some match patterns can be granted on a per-tab basis. When the tab is known, access checks should always use this method.
 

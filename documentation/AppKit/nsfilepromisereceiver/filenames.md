@@ -19,7 +19,7 @@ var fileNames: [String] { get }
 @property (copy, readonly) NSArray<NSString *> * fileNames;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns an empty array until the file promise is called using [`receivePromisedFiles(atDestination:options:operationQueue:reader:)`](./receivepromisedfiles%28atdestination,options,operationqueue,reader%29.md).
 

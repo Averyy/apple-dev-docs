@@ -19,7 +19,7 @@ weak var delegate: (any NSImageDelegate)? { get set }
 @property (weak, nullable) id<NSImageDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property contains `nil`.
 

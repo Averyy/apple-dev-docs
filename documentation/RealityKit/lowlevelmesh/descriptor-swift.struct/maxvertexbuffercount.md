@@ -20,7 +20,7 @@ The maximum number of separate buffers the system supports.
 static let maxVertexBufferCount: Int
 ```
 
-#### Discussion
+## Discussion
 
 For optimal performance, most applications use one buffer.
 

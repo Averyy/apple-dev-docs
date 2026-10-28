@@ -21,7 +21,7 @@ A territory or political boundary.
 static var territory: MapFeature.FeatureKind { get }
 ```
 
-#### Discussion
+## Discussion
 
 A territorial or regional boundary, such as a national border, a state boundary, or a neighborhood.
 

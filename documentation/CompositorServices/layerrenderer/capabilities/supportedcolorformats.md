@@ -17,7 +17,7 @@ An array of color formats that the layer supports for its textures.
 var supportedColorFormats: [MTLPixelFormat] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The pixel formats in this property tell you which pixel arrangements and characteristics the layer supports for its color textures.
 

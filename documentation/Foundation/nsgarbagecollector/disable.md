@@ -15,7 +15,7 @@ Temporarily disables collections.
 - (void) disable;
 ```
 
-#### Discussion
+## Discussion
 
 Invocations of this method can be nested. To reenable collection, you must send the collector an [`enable`](./enable.md) message once for each invocation of this method.
 

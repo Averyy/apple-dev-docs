@@ -17,11 +17,11 @@ Compute the Jacobian-vector product.
 func jvp(_ f: @escaping ([MLXArray]) -> [MLXArray], primals: some Collection<MLXArray>, tangents: some Collection<MLXArray>) -> ([MLXArray], [MLXArray])
 ```
 
-#### Return Value
+## Return Value
 
 Array of the Jacobian-vector products which is the same in number, shape and type of the outputs of `f`
 
-#### Discussion
+## Discussion
 
 This computes the product of the Jacobian of a function `f` evaluated at `primals` with the `tangents`.
 

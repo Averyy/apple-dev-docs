@@ -5,7 +5,7 @@
 
 Make your custom types easier to use by ensuring that they conform to Swift protocols.
 
-#### Overview
+## Overview
 
 When using custom types to model data in your programs, you may frequently need to check whether two values are the same or different, or whether a particular value is included in a list of values. This capability, as well as the ability to store values in a set or use them as keys in a dictionary, are governed by two related standard library protocols, [`Equatable`](./equatable.md) and [`Hashable`](./hashable.md).
 
@@ -27,7 +27,7 @@ if favoriteNumbers.contains(todaysDate.day) {
 
 Conforming to the `Equatable` and `Hashable` protocols is straightforward and makes it easier to use your own types in Swift. It’s a good idea for all your custom model types to conform.
 
-##### Conform Automatically to Equatable and Hashable
+### Conform Automatically to Equatable and Hashable
 
 You can make many custom types equatable and hashable by simply declaring these protocol conformances in the same file as the type’s original declaration. Add `Equatable` and `Hashable` to the list of adopted protocols when declaring the type, and the compiler automatically fills in the requirements for the two protocols:
 
@@ -84,7 +84,7 @@ In addition to simplifying your code, this automatic conformance reduces errors,
 - For a structure, *all* its stored properties must conform to `Equatable` and `Hashable`.
 - For an enumeration, *all* its associated values must conform to `Equatable` and `Hashable`. (Enumerations without associated values have `Equatable` and `Hashable` conformance even without declaring adoption.)
 
-##### Conform Manually to Equatable and Hashable
+### Conform Manually to Equatable and Hashable
 
 You need to manually implement `Equatable` and `Hashable` conformance for a type in these cases:
 
@@ -125,7 +125,7 @@ extension Player: Hashable {
 }
 ```
 
-###### Use All Significant Properties for Equatable and Hashable
+#### Use All Significant Properties for Equatable and Hashable
 
 When implementing the `==` method and the `hash(into:)` method, use all the properties that affect whether two instances of your custom type are considered equal. In the implementations above, the `Player` type uses `name` and `position` in both methods.
 
@@ -133,7 +133,7 @@ If your type contains properties that don’t affect whether two instances are c
 
 > ❗ **Important**: Always use the same properties in both your `==` and `hash(into:)` methods. Using different groups of properties in the two methods can lead to unexpected behavior or performance when using your custom type in sets and dictionaries.
 
-##### Customize NSObject Subclass Behavior
+### Customize NSObject Subclass Behavior
 
 `NSObject` subclasses inherit conformance to the `Equatable` and `Hashable` protocols, with equality based on instance identity. If you need to customize this behavior, override the [`isEqual(_:)`](../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) method and [`hash`](../ObjectiveC/nsobjectprotocol/hash.md) property instead of the `==` operator method and `hashValue` property.
 

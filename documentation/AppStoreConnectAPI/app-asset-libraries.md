@@ -5,7 +5,7 @@
 
 Read an app’s library of reusable image and video assets.
 
-#### Overview
+## Overview
 
 The `appAssetLibraries` resource represents an app’s library of reusable image and video assets. Use it to:
 

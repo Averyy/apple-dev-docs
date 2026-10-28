@@ -21,7 +21,7 @@ The intended purpose of the formatted measurement.
 var usage: MeasurementFormatUnitUsage<UnitType>?
 ```
 
-#### Discussion
+## Discussion
 
 You can use the `usage` property to specify the intended purpose of the formatted measurement. The default option, `general`, formats the measurement with the default unit for the current locale. The `asProvided` option formats the measurement using the specified unit, ignoring the unit that the locale uses.
 

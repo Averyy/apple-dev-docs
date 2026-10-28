@@ -22,7 +22,7 @@ class MPMediaItemCollection
 @interface MPMediaItemCollection : MPMediaEntity
 ```
 
-#### Overview
+## Overview
 
 Typically, you use this class by requesting an array of [`collections`](./mpmediaquery/collections.md) from a media query by way of its collections property. [`MPMediaQuery`](./mpmediaquery.md) describes media queries.
 

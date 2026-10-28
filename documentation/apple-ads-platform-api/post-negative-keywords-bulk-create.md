@@ -9,15 +9,15 @@ Create multiple negative keywords in a single request.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint creates multiple negative keywords in a single API call. The request body contains an `items` array where each item wraps a `BulkNegativeKeywordCreate` object with a `correlationId`. You can mix campaign-level and ad-group-level negatives in the same request. The API processes each item independently.
 
 When `allowPartialSuccess: true` is set in the request, this endpoint uses partial success semantics: if some items in the request fail validation (for example, a duplicate text and matchType combination), the API still creates the successful items. When omitted or `false`, any single item failure rejects the entire batch. The response includes a per-item result array with each item’s `correlationId`, success status, the created object, and any error details for failures.
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Create two negative keywords in one request: one campaign-level and one ad-group-level. Each item in `items` maps to a result in the response by `correlationId`.
 
@@ -49,7 +49,7 @@ POST /v1/negative-keywords/bulk-create
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

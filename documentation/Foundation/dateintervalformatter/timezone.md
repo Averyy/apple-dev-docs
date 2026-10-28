@@ -25,7 +25,7 @@ var timeZone: TimeZone! { get set }
 @property (copy, null_resettable) NSTimeZone * timeZone;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is the default time zone for the current user, which is accessible from the [`default`](../nstimezone/default.md) method of [`NSTimeZone`](../nstimezone.md). You can change this value to a different time zone to generate strings based on that time zone.
 

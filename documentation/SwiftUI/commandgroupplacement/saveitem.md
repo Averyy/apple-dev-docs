@@ -19,7 +19,7 @@ Placement for commands that save open documents and close windows.
 static let saveItem: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following commands in macOS:
 

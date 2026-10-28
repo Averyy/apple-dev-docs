@@ -24,11 +24,11 @@ init(data voxelData: Data, boundingBox: MDLAxisAlignedBoundingBox, voxelExtent: 
 - (instancetype) initWithData:(NSData *) voxelData boundingBox:(MDLAxisAlignedBoundingBox) boundingBox voxelExtent:(float) voxelExtent;
 ```
 
-#### Return Value
+## Return Value
 
 A new voxel array.
 
-#### Discussion
+## Discussion
 
 The `boundingBox` parameter relates the integer grid of the newly created voxel array to a continuous Cartesian space. The methods listed in Relating Voxels to Scene Space and Creating a Mesh from Voxels operate with respect to this bounding volume.
 

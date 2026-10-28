@@ -23,7 +23,7 @@ var socketProtocol: Int32 { get }
 @property (readonly) int socketProtocol;
 ```
 
-#### Discussion
+## Discussion
 
 Examples of protocols include `IPPROTO_TCP` and `IPPROTO_IP`.
 

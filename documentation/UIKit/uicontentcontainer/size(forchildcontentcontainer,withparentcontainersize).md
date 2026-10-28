@@ -24,11 +24,11 @@ func size(forChildContentContainer container: any UIContentContainer, withParent
 - (CGSize) sizeForChildContentContainer:(id<UIContentContainer>) container withParentContainerSize:(CGSize) parentSize;
 ```
 
-#### Return Value
+## Return Value
 
 The size to apply to the child view controller.
 
-#### Discussion
+## Discussion
 
 Container view controllers use this method to return the sizes for their child view controllers. UIKit calls the method as part of the default implementation of the [`viewWillTransition(to:with:)`](./viewwilltransition%28to,with%29.md) method for view controllers. It calls the method once for each child view controller embedded in the view controller. If you’re implementing a custom container view controller, you should override this method and use it to return the sizes of the contained children.
 

@@ -20,7 +20,7 @@ A new sequence of speech analyzer input objects containing captured audio.
 final var analyzerInputs: some Sendable & AsyncSequence<AnalyzerInput, any Error> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The sequence includes only newly captured audio.
 

@@ -21,7 +21,7 @@ An asynchronous sequence of eagerly stored temporal features.
 struct PreprocessedFeatureSequence<Feature>
 ```
 
-#### Overview
+## Overview
 
 This sequence eagerly stores the results of preprocessing a temporal estimator.
 

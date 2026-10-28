@@ -23,7 +23,7 @@ case success
 INRequestRideIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code when your ride service acknowledged receipt of the ride information and is actively working on completing the booking. Use the [`phase`](../inridestatus/phase.md) property of the [`INRideStatus`](../inridestatus.md) object you create to indicate the progress toward fulfilling the request.
 

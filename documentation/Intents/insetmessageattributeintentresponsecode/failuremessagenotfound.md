@@ -22,7 +22,7 @@ case failureMessageNotFound
 INSetMessageAttributeIntentResponseCodeFailureMessageNotFound
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you could not find one or more of the specified messages.
 

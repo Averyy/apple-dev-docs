@@ -23,7 +23,7 @@ init(storeIDs: [String])
 - (instancetype) initWithStoreIDs:(NSArray<NSString *> *) storeIDs;
 ```
 
-#### Return Value
+## Return Value
 
 A new queue descriptor consisting of the media items identified by the designated store identifiers.
 

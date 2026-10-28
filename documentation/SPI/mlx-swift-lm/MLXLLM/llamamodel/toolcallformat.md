@@ -17,7 +17,7 @@ Llama 3 uses an inline `<|python_tag|>` JSON format; Llama 1/2 have no tool-call
 var toolCallFormat: ToolCallFormat? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Gated on `model_type == "llama"` because this class also backs the `mistral` registry entry, and Mistral-Nemo’s vocabulary (131072) would otherwise trip the Llama 3 vocabulary signal.
 

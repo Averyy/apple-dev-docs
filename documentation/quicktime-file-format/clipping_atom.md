@@ -6,7 +6,7 @@
 
 An atom that specifies the clipping regions for movies and for tracks.
 
-#### Overview
+## Overview
 
 The clipping atom has an atom type value of `'clip'`.
 

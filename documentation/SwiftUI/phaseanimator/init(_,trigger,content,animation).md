@@ -22,7 +22,7 @@ nonisolated
 init(_ phases: some Sequence<Phase>, trigger: some Equatable, @ContentBuilder content: @escaping (Phase) -> Content, animation: @escaping (Phase) -> Animation? = { _ in .default })
 ```
 
-#### Discussion
+## Discussion
 
 When the phase animator first appears, this initializer renders the `content` closure using the first phase as input to the closure. When the value of the `trigger` input changes, the animator reevaluates the `content` closure using the value from the second phase and animates the change. This procedure repeats with each successive phase until reaching the last phase, at which point the animator loops back to the first phase.
 

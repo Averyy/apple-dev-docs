@@ -26,7 +26,7 @@ static var shouldResume: AVAudioSession.InterruptionOptions { get }
 AVAudioSessionInterruptionOptionShouldResume
 ```
 
-#### Discussion
+## Discussion
 
 If the interruption type is [`AVAudioSession.InterruptionType.ended`](../interruptiontype/ended.md), check for this value in the [`AVAudioSessionInterruptionOptionKey`](../../avaudiosessioninterruptionoptionkey.md) key in the `userInfo` dictionary of the [`interruptionNotification`](../interruptionnotification.md) notification. It serves as a hint that it’s appropriate for your app to resume audio playback without waiting for user input.
 

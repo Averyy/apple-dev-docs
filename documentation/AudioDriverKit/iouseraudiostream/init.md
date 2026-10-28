@@ -15,7 +15,7 @@ Initializes an instance of the audio stream class.
 virtual bool init(IOUserAudioDriver *in_driver, IOUserAudioStreamDirection in_direction, IOMemoryDescriptor *in_io_memory_descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if initialization succeeded; `false` otherwise.
 

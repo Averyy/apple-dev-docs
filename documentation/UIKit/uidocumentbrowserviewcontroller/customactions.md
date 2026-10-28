@@ -26,7 +26,7 @@ var customActions: [UIDocumentBrowserAction] { get set }
 
 - [Adding custom actions and activities](../adding-custom-actions-and-activities.md)
 
-#### Discussion
+## Discussion
 
 By default, this property contains an empty array. Assign an array of [`UIDocumentBrowserAction`](../uidocumentbrowseraction.md) objects to add custom document browser actions.
 

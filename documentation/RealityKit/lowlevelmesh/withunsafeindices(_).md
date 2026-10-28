@@ -21,7 +21,7 @@ Reads the index buffer synchronously on the CPU.
 func withUnsafeIndices(_ callback: (UnsafeRawBufferPointer) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The buffer is only valid for the lifetime of the callback.
 

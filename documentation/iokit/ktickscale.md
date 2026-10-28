@@ -17,7 +17,7 @@
 var kTickScale: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Scale factor for the standard (100Hz) tick.
 

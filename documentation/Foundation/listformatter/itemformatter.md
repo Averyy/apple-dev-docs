@@ -26,7 +26,7 @@ var itemFormatter: Formatter? { get set }
 @property (copy, nullable) NSFormatter * itemFormatter;
 ```
 
-#### Discussion
+## Discussion
 
 If this property isn’t set, the list formatter falls back to the item’s [`description(withLocale:)`](../nsarray/description%28withlocale%29.md) or [`localizedDescription`](../progress/localizeddescription.md) methods if implemented. If those methods aren’t implemented, the formatter uses [`description`](../../ObjectiveC/nsobjectprotocol/description.md) instead.
 

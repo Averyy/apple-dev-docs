@@ -5,7 +5,7 @@
 
 In Swift Playgrounds 3.0 and later, make code available across multiple chapters to teach the value of reusable code.
 
-#### Overview
+## Overview
 
 Where you place the code in a book determines its visibilty to other parts of the book. For example, the code in the `main.swift` file on a page isn’t visible to the rest of the book. If your book contains multiple pages or chapters that require access to a shared codebase, place the code in a module. The following screenshot shows files from multiple modules open across several tabs:
 
@@ -13,7 +13,7 @@ Where you place the code in a book determines its visibilty to other parts of th
 
 By sharing code throughout your book, you provide consistent APIs that teach a common interface.
 
-##### Share Code with Modules
+### Share Code with Modules
 
 Modules are folders of Swift code that you use to define APIs for learners to use, while also implementing functionality for your pages’ live views. There are two kinds of modules:
 

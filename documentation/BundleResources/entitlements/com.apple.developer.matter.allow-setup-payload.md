@@ -24,7 +24,7 @@ A Boolean value that allows an app to provide an optional Matter Setup payload w
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 You may use this entitlement in the following ways:
 

@@ -19,7 +19,7 @@ An event that signals the framework changed how it renders an entity’s splats 
 struct RenderingChanged
 ```
 
-#### Overview
+## Overview
 
 Subscribe to this event to learn when the framework throttles splat rendering. In response, you can reduce the workload yourself — for example, by switching to a lower-count asset or removing other splat components from the scene.
 

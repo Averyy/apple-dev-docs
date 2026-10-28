@@ -20,7 +20,7 @@ An environmental collision object.
 case colliding
 ```
 
-#### Discussion
+## Discussion
 
 Enabling this flag allows collision objects to interact with dynamic rigid bodies without requiring an extra physicsBody component.
 

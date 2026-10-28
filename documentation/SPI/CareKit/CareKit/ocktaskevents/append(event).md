@@ -18,7 +18,7 @@ Append an event. The event will only be appended if it unique.
 mutating func append(event: OCKAnyEvent) -> (OCKAnyEvent?, Bool)
 ```
 
-#### Return Value
+## Return Value
 
 (Event, true) if the `event` was successfully appended. (event, false) If the `event` already exists. (nil, false) If the provided event’s task has a nil stable identity.
 

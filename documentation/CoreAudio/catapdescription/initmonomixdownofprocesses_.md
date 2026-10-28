@@ -14,7 +14,7 @@
 - (instancetype) initMonoMixdownOfProcesses:(NSArray<NSNumber *> *) processesObjectIDsToIncludeInTap;
 ```
 
-#### Discussion
+## Discussion
 
 Mix all given process audio streams audio to mono.
 

@@ -17,8 +17,8 @@ A value describing the current processing state of the analyzer.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) final var state: FaceGroupAnalyzer.State { get async }
+nonisolated(nonsending)
+final var state: FaceGroupAnalyzer.State { get async }
 ```
 
 ## Mentions

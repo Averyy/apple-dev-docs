@@ -16,11 +16,11 @@ Performs the authorization request using a custom authorization method.
 func performRequest(_ request: ASAuthorizationRequest, customMethods: [ASAuthorizationCustomMethod]) async throws -> ASAuthorizationResult
 ```
 
-#### Return Value
+## Return Value
 
 The request’s outcome. For more information, see [`ASAuthorizationResult`](../asauthorizationresult.md).
 
-#### Discussion
+## Discussion
 
 If the return value is [`ASAuthorizationResult.customMethod(_:)`](../asauthorizationresult/custommethod%28_%29.md), use the case’s associated value to access the chosen authorization method.
 

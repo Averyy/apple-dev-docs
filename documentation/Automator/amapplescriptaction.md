@@ -22,7 +22,7 @@ class AMAppleScriptAction
 @interface AMAppleScriptAction : AMBundleAction
 ```
 
-#### Overview
+## Overview
 
 An [`AMAppleScriptAction`](./amapplescriptaction.md) object holds the compiled script as an instance of the `OSAScript` class. By default, the `OSAScript` object is instantiated from the script in the Xcode project file `main.applescript`.
 

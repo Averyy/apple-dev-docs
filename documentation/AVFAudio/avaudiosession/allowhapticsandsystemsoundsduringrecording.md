@@ -24,7 +24,7 @@ var allowHapticsAndSystemSoundsDuringRecording: Bool { get }
 @property (readonly) BOOL allowHapticsAndSystemSoundsDuringRecording;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md).
 

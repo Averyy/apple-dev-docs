@@ -13,7 +13,7 @@
 var soSynthExtension: OSType { get }
 ```
 
-#### Discussion
+## Discussion
 
 Get or set synthesizer-specific informationor settings. The `speechInfo` parameteris a pointer to a speech extension data structure, described in [`SpeechXtndData`](./speechxtnddata.md). Yourapplication should set the `synthCreator` fieldof this structure before calling `GetSpeechInfo` or `SetSpeechInfo`.Ordinarily, your application must pass additional information tothe synthesizer in the `synthData` field.
 

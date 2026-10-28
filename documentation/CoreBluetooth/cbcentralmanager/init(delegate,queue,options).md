@@ -25,11 +25,11 @@ init(delegate: (any CBCentralManagerDelegate)?, queue: dispatch_queue_t?, option
 - (instancetype) initWithDelegate:(id<CBCentralManagerDelegate>) delegate queue:(dispatch_queue_t) queue options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a newly initialized central manager.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for the [`CBCentralManager`](../cbcentralmanager.md) class.
 

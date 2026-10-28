@@ -24,11 +24,11 @@ var transitionDuration: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval transitionDuration;
 ```
 
-#### Return Value
+## Return Value
 
 The expected duration, in seconds, of the view controller transition, if it proceeds noninteractively.
 
-#### Discussion
+## Discussion
 
 The transition duration defines the time for the main transition to finish. Use this value when configuring your own animations if you want them to end at the same time as the main transition.
 

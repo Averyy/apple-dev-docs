@@ -15,7 +15,7 @@ Schedule a method invocation for asynchronous execution on a run loop.
 void WSMethodInvocationScheduleWithRunLoop(WSMethodInvocationRef invocation, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 Schedules the invocation to execute on the run loop. You must also set a callback to handle the response, using `WSMethodInvocationSetCallBack`. This is the recommended way to invoke web services, due to the unpredictable network delays inherent in such operations.
 

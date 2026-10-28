@@ -24,7 +24,7 @@ static let LANG4: GCKeyCode
 extern const GCKeyCode GCKeyCodeLANG4;
 ```
 
-#### Discussion
+## Discussion
 
 For Japanese USB word-processing keyboards, this is the code for the Hiragana key.
 

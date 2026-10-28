@@ -25,11 +25,11 @@ func MIDIBluetoothDriverActivateAllConnections() -> OSStatus
 extern OSStatus MIDIBluetoothDriverActivateAllConnections();
 ```
 
-#### Return Value
+## Return Value
 
 A status code that indicates the result of the activation.
 
-#### Discussion
+## Discussion
 
 To establish a Bluetooth MIDI driver connection to a Bluetooth Low Energy (BLE) MIDI peripheral, perform the following steps:
 

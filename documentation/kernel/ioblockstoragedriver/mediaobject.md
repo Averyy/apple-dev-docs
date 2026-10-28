@@ -9,7 +9,7 @@
 IOMedia * _mediaObject;
 ```
 
-#### Overview
+## Overview
 
 A pointer to the media object we have instantiated (if any).
 

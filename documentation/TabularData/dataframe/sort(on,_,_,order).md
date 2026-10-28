@@ -21,7 +21,7 @@ Arranges the rows of a data frame according to three columns that you select by 
 mutating func sort<T0, T1, T2>(on columnID0: ColumnID<T0>, _ columnID1: ColumnID<T1>, _ columnID2: ColumnID<T2>, order: Order = .ascending) where T0 : Comparable, T1 : Comparable, T2 : Comparable
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Elements with a value of `nil` are less than all non-`nil` values.
 

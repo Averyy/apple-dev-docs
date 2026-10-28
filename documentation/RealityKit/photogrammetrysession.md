@@ -22,7 +22,7 @@ class PhotogrammetrySession
 
 - [Creating 3D objects from photographs](./creating-3d-objects-from-photographs.md)
 
-#### Overview
+## Overview
 
 For more information on using [`PhotogrammetrySession`](./photogrammetrysession.md), see [Creating 3D objects from photographs](./creating-3d-objects-from-photographs.md).
 

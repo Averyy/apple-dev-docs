@@ -10,7 +10,7 @@ framework: "mlx-swift/MLXNN"
 
 Built-in activation functions and layers.
 
-#### Overview
+## Overview
 
 `MLXNN` provides a number of activation functions and modules.  The modules simply wrap the functions, though some like [`GELU`](./gelu.md) provide some settings that select between different functions.  Others, like [`CELU`](./celu.md) encapsulate parameters such as `alpha`.
 

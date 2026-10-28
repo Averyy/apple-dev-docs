@@ -15,7 +15,7 @@ An IOMemoryCursor subclass that outputs a vector of PhysicalSegments in the natu
 class IONaturalMemoryCursor : IOMemoryCursor
 ```
 
-#### Overview
+## Overview
 
 The IONaturalMemoryCursor would be used when it is too difficult to safely describe a SegmentFunction that is more appropriate for your hardware. This cursor just outputs an array of PhysicalSegments.
 

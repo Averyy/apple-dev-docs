@@ -24,7 +24,7 @@ let kCIInputColorSpaceKey: String
 extern NSString * const kCIInputColorSpaceKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key needs to be a `CGColorSpace` instance.
 

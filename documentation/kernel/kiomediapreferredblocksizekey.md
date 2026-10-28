@@ -15,7 +15,7 @@ A property of IOMedia objects.
 #define kIOMediaPreferredBlockSizeKey
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediaPreferredBlockSizeKey property has an OSNumber value and describes the media's natural block size in bytes. This information is useful to clients that want to optimize access to the media.
 

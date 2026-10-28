@@ -30,7 +30,7 @@ var timingFunction: SKActionTimingFunction { get set }
 - [Configuring Action Timing](../configuring-action-timing.md)
 - [Getting Started with Actions](../getting-started-with-actions.md)
 
-#### Discussion
+## Discussion
 
 If a timing function is provided, after the normal timing mode is applied, the result is sent to the timing function. The return [`SKActionTimingFunction`](../skactiontimingfunction.md) value of the timing function determines the actual time used to perform the animation.
 

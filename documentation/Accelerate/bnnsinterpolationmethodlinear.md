@@ -25,7 +25,7 @@ var BNNSInterpolationMethodLinear: BNNSInterpolationMethod { get }
 BNNSInterpolationMethodLinear
 ```
 
-#### Discussion
+## Discussion
 
 Linear interpolation is suitable for one or two interpolation dimensions.
 

@@ -21,7 +21,7 @@ This element represents the content part of the label / content pair.
 case content
 ```
 
-#### Discussion
+## Discussion
 
 For example, it might be the custom control itself.
 

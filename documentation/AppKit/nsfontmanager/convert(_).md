@@ -19,11 +19,11 @@ func convert(_ fontObj: NSFont) -> NSFont
 - (NSFont *) convertFont:(NSFont *) fontObj;
 ```
 
-#### Return Value
+## Return Value
 
 The converted font, or `aFont` itself if the conversion isn’t possible.
 
-#### Discussion
+## Discussion
 
 This method is invoked in response to an action message such as [`addFontTrait(_:)`](./addfonttrait%28_%29.md) or [`modifyFontViaPanel(_:)`](./modifyfontviapanel%28_%29.md). These initiating methods cause the font manager to query the sender for the action to take and the traits to change. See Converting Fonts Manually for more information.
 

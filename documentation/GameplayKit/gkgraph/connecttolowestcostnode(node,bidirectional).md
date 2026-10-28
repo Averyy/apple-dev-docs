@@ -24,7 +24,7 @@ func connectToLowestCostNode(node: GKGraphNode, bidirectional: Bool)
 - (void) connectNodeToLowestCostNode:(GKGraphNode *) node bidirectional:(BOOL) bidirectional;
 ```
 
-#### Discussion
+## Discussion
 
 This method uses the [`cost(to:)`](../gkgraphnode/cost%28to%29.md) method of the specified node to find the node already in the graph that is most easily reached from the new node. For nodes that contain geometry information ([`GKGraphNode2D`](../gkgraphnode2d.md) or [`GKGridGraphNode`](../gkgridgraphnode.md) objects), cost is by default based on distance, so this method connects the new node to the geometrically closest node already in the graph. If you create a custom [`GKGraphNode`](../gkgraphnode.md) subclass, this method selects the “closest” node according to whatever algorithm you implement in your [`cost(to:)`](../gkgraphnode/cost%28to%29.md) method.
 

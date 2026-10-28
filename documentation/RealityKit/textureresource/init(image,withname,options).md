@@ -28,7 +28,7 @@ Asynchronously creates a texture resource from an in-memory Core Graphics image.
 @preconcurrency convenience init(image cgImage: CGImage, withName resourceName: String? = nil, options: TextureResource.CreateOptions) throws
 ```
 
-#### Discussion
+## Discussion
 
 This method creates a texture resource from an existing [`CGImage`](../../CoreGraphics/cgimage.md) with specific options.
 

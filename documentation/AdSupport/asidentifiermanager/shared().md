@@ -23,7 +23,7 @@ class func shared() -> ASIdentifierManager
 + (ASIdentifierManager *) sharedManager;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the shared instance of the AdSupport identifier manager class.
 

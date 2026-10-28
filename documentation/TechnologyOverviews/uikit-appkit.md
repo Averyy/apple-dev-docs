@@ -6,7 +6,7 @@ Build your app using a traditional design approach and the Swift or Objective-C 
 
 [UIKit](../UIKit/UIKit.md) and [AppKit](../AppKit/AppKit.md) both provide a more traditional approach to creating apps that some people might prefer. Both frameworks provide a library of objects that you assemble to create your app. To implement your app’s behavior, you write additional code to update the objects when your data changes or in response to interactions with your app’s interface.
 
-#### Assemble your app’s core content
+## Assemble your app’s core content
 
 When someone launches your app, your app needs to initialize itself, prepare its interface, check in with the system, begin its main event loop, and start handling events as quickly as possible. When you build your app using UIKit or AppKit, you handle some of these tasks yourself while the frameworks handle the rest.
 
@@ -20,7 +20,7 @@ One special data object you use to manage content is the document object. If you
 
 Another important object in UIKit apps is the [trait collection](../UIKit/uitraitcollection.md). Traits help you make decisions about how to present your app’s content on different types of devices. For example, traits indicate whether your app runs in a large or small space. You use trait information to make decisions about your content, such as what views to display in your interface.
 
-#### Assemble your interface
+## Assemble your interface
 
 Construct your app’s interface from system-provided views and controls, or create your own views when you want a more custom appearance. Views handle the basic presentation of content in your interface. [UIKit](../UIKit/views-and-controls.md) and [AppKit](../AppKit/views-and-controls.md) provide standard views for buttons, text fields, and other views you use as is. They also provide an architecture for creating views with any content you want. You can draw custom content in your views, or use them to organize one or more child views.
 
@@ -36,7 +36,7 @@ Your interface needs to be able to fit different-sized devices and different amo
 
 UIKit and AppKit require that all UI-related tasks run on your app’s main thread to ensure correctness. If your app uses [Dispatch](../Dispatch/Dispatch.md) to perform work asynchronously on background threads, make sure to direct code that modifies your interface to the [main dispatch queue](../Dispatch/dispatchqueue/main.md).
 
-#### Handle events and interactions
+## Handle events and interactions
 
 Interactions with your app can come from a variety of sources. On a Mac, people interact with your app primarily using the [mouse and keyboard](../AppKit/mouse-keyboard-and-trackpad.md), but they can also use the trackpad of a MacBook Pro, an input tablet, or other input device. On iPad, people interact by [touching the screen](../UIKit/handling-touches-in-your-view.md), but can also interact with apps using Apple Pencil or a Magic Keyboard. UIKit and AppKit intercept events coming from the system and redirect them to your app’s views and controller objects.
 
@@ -50,7 +50,7 @@ Another way people interact with your app is using menus. In AppKit, put commonl
 
 The event-handling infrastructure relies on responder objects to distribute events throughout your app. A responder is an instance of the [`UIResponder`](../UIKit/uiresponder.md) (UIKit) or [`NSResponder`](../AppKit/nsresponder.md) (AppKit) class. The application object, windows, views, view controllers, and window controllers (AppKit only) are all responder objects. Explore the responder classes to see what other types of events you can handle in your apps.
 
-#### Explore other features
+## Explore other features
 
 In addition to displaying content using the framework-provided views, you can draw anything you want using the [UIKit](../UIKit/drawing.md) and [AppKit](../AppKit/drawing.md) drawing support. Custom views offer a blank canvas for drawing anything you want, including:
 

@@ -20,7 +20,7 @@ var isDisplayCriteriaMatchingEnabled: Bool { get }
 @property (nonatomic, readonly, getter=isDisplayCriteriaMatchingEnabled) BOOL displayCriteriaMatchingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 This value reflects the user’s current Match Content settings, which they set in the Settings app under Video and Audio > Match Content.
 

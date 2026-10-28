@@ -5,17 +5,17 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 16.4 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 16.5. The SDK comes bundled with Xcode 14.3. For information on the compatibility requirements for Xcode 14.3, see [Xcode 14.3 Release Notes](../Xcode-Release-Notes/xcode-14_3-release-notes.md).
 
-##### Home
+### Home
 
-###### New Features
+#### New Features
 
 - A shared administrator in a home is now able to pair and add Matter accessories. (106449382)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When a manual software update is attempted on a Matter accessory with an available update, Home might not indicate that the update has been requested and continue to indicate an update is available. (104902918)
 - Fixed: Accessory paring by shared administrators will fail if Home hubs are running versions prior than tvOS 16.5 beta. (105204882)

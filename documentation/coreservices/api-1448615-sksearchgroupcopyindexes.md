@@ -17,11 +17,11 @@ Obtains the indexes for a search group.
 CFArrayRef SKSearchGroupCopyIndexes(SKSearchGroupRef inSearchGroup);
 ```
 
-#### Return Value
+## Return Value
 
 A CFArray object containing the indexes in the search group.
 
-#### Discussion
+## Discussion
 
 Although the search functions [`SKSearchResultsCreateWithQuery`](./api-1448610-sksearchresultscreatewithquery.md) and [`SKSearchResultsCreateWithDocuments`](./api-1448629-sksearchresultscreatewithdocumen.md) operate directly on search groups, many Search Kit functions, such as [`SKIndexCompact`](./api-1443628-skindexcompact.md), operate on one index at a time. When you want to examine or manage all the indexes in a search group, use `SKSearchGroupCopyIndexes` to get the search group’s list of indexes.
 

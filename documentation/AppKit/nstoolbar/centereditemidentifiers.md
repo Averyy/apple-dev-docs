@@ -22,7 +22,7 @@ var centeredItemIdentifiers: Set<NSToolbarItem.Identifier> { get set }
 @property (copy) NSSet<NSString *> * centeredItemIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to the items you want to appear together in the center of the toolbar. Specify the initial order of the items using the [`toolbarDefaultItemIdentifiers(_:)`](../nstoolbardelegate/toolbardefaultitemidentifiers%28_%29.md) method of your toolbar delegate object.
 

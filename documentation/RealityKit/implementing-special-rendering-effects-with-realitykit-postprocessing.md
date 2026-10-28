@@ -12,7 +12,7 @@ Implement a variety of postprocessing techniques to alter RealityKit rendering.
 - Mac Catalyst 15.0+
 - Xcode 13.3+
 
-#### Overview
+## Overview
 
 For more information about the app and how it works, see [Implementing special rendering effects with RealityKit postprocessing](./implementing-special-rendering-effects-with-realitykit-postprocessing.md).
 

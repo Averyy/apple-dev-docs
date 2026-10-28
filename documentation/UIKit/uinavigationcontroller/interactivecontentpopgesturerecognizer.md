@@ -22,7 +22,7 @@ var interactiveContentPopGestureRecognizer: UIGestureRecognizer? { get }
 @property (nonatomic, readonly, nullable) UIGestureRecognizer * interactiveContentPopGestureRecognizer;
 ```
 
-#### Discussion
+## Discussion
 
 The navigation controller installs this gesture recognizer on its view and uses it to interactively pop the topmost view controller off the navigation stack when a person initially pans horizontally in a leading to trailing direction in the view. It recognizes a gesture on the entire content area of the navigation controller in cases that are not covered by [`interactivePopGestureRecognizer`](./interactivepopgesturerecognizer.md) and initiates an interactive pop.
 

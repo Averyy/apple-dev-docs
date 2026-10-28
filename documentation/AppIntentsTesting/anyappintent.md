@@ -22,7 +22,7 @@ A type-erased, intermediate representation of an app intent for testing purposes
 struct AnyAppIntent
 ```
 
-#### Overview
+## Overview
 
 The [`AnyAppIntent`](./anyappintent.md) structure resolves to your actual app intent type and gives you access to its parameters and results at runtime, enabling you to test your app intent code as shown in the following example:
 

@@ -5,7 +5,7 @@
 
 Cryptographically sign and encrypt S/MIME messages.
 
-#### Overview
+## Overview
 
 When you want to exchange data securely using the Multipurpose Internet Mail Extensions (MIME) protocol, you use the version of the protocol known as S/MIME defined in [RFC 3851](https://tools.ietf.org/html/rfc3851). This allows you to, among other things, ensure data integrity through digital signatures and data confidentiality through encryption. S/MIME in turn relies on the Cryptographic Message Syntax (CMS) protocol defined in [RFC 3852](https://tools.ietf.org/html/rfc3852) to carry out these operations.
 

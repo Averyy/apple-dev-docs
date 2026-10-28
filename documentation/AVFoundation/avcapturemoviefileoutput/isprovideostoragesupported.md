@@ -23,7 +23,7 @@ var isProVideoStorageSupported: Bool { get }
 @property (nonatomic, readonly, getter=isProVideoStorageSupported) BOOL proVideoStorageSupported;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `YES` indicates that Pro Video Storage support is enabled for this output while `NO` indicates it is not. Check this value prior to setting property usesProVideoStorage to avoid exceptions when Pro Video Storage support is not enabled.
 

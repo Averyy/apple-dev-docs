@@ -24,7 +24,7 @@ case short
 AVAudioSessionPromptStyleShort
 ```
 
-#### Discussion
+## Discussion
 
 The audio session’s prompt style is short when Siri is active but not recording, when a voicemail is playing back, or when a voice call is active.
 

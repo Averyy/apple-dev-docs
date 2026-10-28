@@ -32,7 +32,7 @@ var format: AVAudioFormat { get }
 @property (atomic, readonly) AVAudioFormat * format;
 ```
 
-#### Discussion
+## Discussion
 
 This version 3 property is bridged to the version 2 `kAudioUnitProperty_StreamFormat` API.
 

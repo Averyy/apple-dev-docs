@@ -19,7 +19,7 @@ Tells the delegate that a reverse geocoder successfully obtained placemark infor
 - (void) reverseGeocoder:(MKReverseGeocoder *) geocoder didFindPlacemark:(MKPlacemark *) placemark;
 ```
 
-#### Discussion
+## Discussion
 
 You can get the map coordinate for the associated request from either the reverse geocoder object or from the placemark object, which itself supports the [`MKAnnotation`](../mkannotation.md) protocol.
 

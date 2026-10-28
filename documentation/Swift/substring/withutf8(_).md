@@ -21,7 +21,7 @@ Runs `body` over the content of this substring in contiguous memory. If this sub
 mutating func withUTF8<R, E>(_ body: (UnsafeBufferPointer<UInt8>) throws(E) -> R) throws(E) -> R where E : Error
 ```
 
-#### Discussion
+## Discussion
 
 Note that it is unsafe to escape the pointer provided to `body`. For example, strings of up to 15 UTF-8 code units in length may be represented in a small-string representation, and thus will be spilled into temporary stack space which is invalid after `withUTF8` finishes execution.
 

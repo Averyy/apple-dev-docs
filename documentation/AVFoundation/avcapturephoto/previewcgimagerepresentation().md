@@ -22,7 +22,7 @@ func previewCGImageRepresentation() -> CGImage?
 - (CGImageRef) previewCGImageRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 A Core Graphics image representation of the captured photo, or `nil` if either the image cannot be converted or a preview image was not requested as part of the photo capture.
 

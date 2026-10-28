@@ -21,7 +21,7 @@ The content insets of the scroll view.
 var contentInsets: EdgeInsets
 ```
 
-#### Discussion
+## Discussion
 
 Adding these insets to the content size of the scroll view will give you the total scrollable space of the scroll view.
 

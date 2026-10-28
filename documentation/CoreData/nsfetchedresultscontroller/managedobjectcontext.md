@@ -25,7 +25,7 @@ var managedObjectContext: NSManagedObjectContext { get }
 @property (nonatomic, readonly) NSManagedObjectContext * managedObjectContext;
 ```
 
-#### Discussion
+## Discussion
 
 The controller registers to listen to change notifications on this context and properly update its result set and section information.
 

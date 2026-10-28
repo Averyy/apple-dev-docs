@@ -5,7 +5,7 @@
 
 Update your programming workflow to use new features, and test your workflow against changes.
 
-#### Overview
+## Overview
 
 Read these notes when you’re editing source code in Xcode 10.
 
@@ -18,7 +18,7 @@ Xcode 10 has increased support for code folding, including:
 
 To turn on the code folding ribbon, open preferences under Text Editing > Editing and select “Code folding ribbon”. (33518606, 34203382, 35391767, 35932817, 36554006)
 
-##### New Features
+### New Features
 
 - Selected text ranges in the source editor can now be split into multiple selected text ranges by line using the Editor > Structure > Split Selection By Lines menu item. (39300660)
 - You can add selections for the next and previous find results using the “Find and Select Next” and “Find and Select Previous” menu commands. Additionally, you can quickly add selections for the next and previous occurrences of the current selected text using the “Select Next Occurrence” and “Select Previous Occurrence” menu commands. (39283721)
@@ -33,7 +33,7 @@ To turn on the code folding ribbon, open preferences under Text Editing > Editin
 - Find results in the source editor can now be selected using the Find > Select All Find Matches menu item. The results to select can be constrained to those in the current selection using the menu item Find > Select Find Matches in Selection. (35064581, 39283557)
 - The Xcode Source Editor now supports multi-cursor editing allowing you to quickly edit multiple ranges of code at once. You can place additional cursors with the mouse via ⌃+⇧+Click or with column select (⌥+Click+Drag), or with the keyboard using ⌃+⇧+Up to column select up or ⌃+⇧+Down to column select down. (12564506)
 
-##### Resolved Issues
+### Resolved Issues
 
 - Highlighting of a matching brace can now be disabled with the following user default: `defaults write com.apple.dt.Xcode DVTTextShowMatchingBrace -bool NO` (33876309)
 - Fixed issue that could cause Xcode to crash when working with some Windows-formatted Markdown files. (35725637)

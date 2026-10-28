@@ -24,7 +24,7 @@ func matchedToWorkingSpace(from colorSpace: CGColorSpace) -> CIImage?
 - (CIImage *) imageByColorMatchingColorSpaceToWorkingSpace:(CGColorSpaceRef) colorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 An image object representing the result of the color matching operation, or `nil` if the color spaces to be converted are not compatible.
 

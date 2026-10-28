@@ -21,11 +21,11 @@ func intAttribute(_ attributeTag: Int, forGlyphAt glyphIndex: Int) -> Int
 - (NSInteger) intAttribute:(NSInteger) attributeTag forGlyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The value of the attribute identified by `attributeTag` and `glyphIndex`.
 
-#### Discussion
+## Discussion
 
 Subclasses that define their own custom attributes must override this method to access their own storage for the attribute values. Nonnegative tags are reserved by Apple; you can define your own attributes with negative tags and set values using [`setIntAttribute(_:value:forGlyphAt:)`](./setintattribute%28_,value,forglyphat%29.md).
 

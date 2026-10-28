@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, didCommitLoadFor frame: WebFrame!)
 - (void) webView:(WebView *) sender didCommitLoadForFrame:(WebFrame *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked when a data source transitions from a provisional to committed state—that is, once the data source of `frame` has received one byte or more of data. This method is invoked after a [`webView(_:didStartProvisionalLoadFor:)`](./webview%28_,didstartprovisionalloadfor%29.md) message but before a `webView:didFinishLoadForFrame:` message is sent to the delegate.
 

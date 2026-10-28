@@ -20,7 +20,7 @@ Adds an existing reference arc to the prim.
 func add(_ reference: USDPrim.Reference, position: USDPrim.ListPosition = .backOfPrependList) throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the reference cannot be added.
 

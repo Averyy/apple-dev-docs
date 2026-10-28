@@ -23,7 +23,7 @@ case background
 NSQualityOfServiceBackground
 ```
 
-#### Discussion
+## Discussion
 
 Used for work that is not user initiated or visible. In general, a user is unaware that this work is even happening. For example, pre-fetching content, search indexing, backups, or syncing of data with external systems.
 

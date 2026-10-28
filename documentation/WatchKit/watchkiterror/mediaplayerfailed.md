@@ -15,7 +15,7 @@ A media player error.
 static var mediaPlayerFailed: WatchKitError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit reports this error when it’s unable to play a media file.
 

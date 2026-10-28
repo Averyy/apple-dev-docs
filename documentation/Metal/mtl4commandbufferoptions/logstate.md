@@ -24,7 +24,7 @@ var logState: (any MTLLogState)? { get set }
 @property (nonatomic, retain, readwrite, nullable) id<MTLLogState> logState;
 ```
 
-#### Discussion
+## Discussion
 
 To enable shader logging, call [`beginCommandBuffer(allocator:options:)`](../mtl4commandbuffer/begincommandbuffer%28allocator,options%29.md) with an instance of [`MTL4CommandBufferOptions`](../mtl4commandbufferoptions.md) that contains a non-`nil` [`MTLLogState`](../mtllogstate.md) instance in this property.
 

@@ -19,7 +19,7 @@ The style to use when this button appears in macOS.
 var macIdiomStyle: UIButton.Configuration.MacIdiomStyle { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property when building your app with Mac Catalyst. The value [`UIButton.Configuration.MacIdiomStyle.automatic`](./macidiomstyle-swift.enum/automatic.md) lets the system choose the appropriate style. Select a specific style to force the button to always use that style.
 

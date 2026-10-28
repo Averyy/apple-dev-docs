@@ -20,11 +20,11 @@ optional func browser(_ browser: NSBrowser, selectionIndexesForProposedSelection
 - (NSIndexSet *) browser:(NSBrowser *) browser selectionIndexesForProposedSelection:(NSIndexSet *) proposedSelectionIndexes inColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The set of indexes of the items that should be selected.
 
-#### Discussion
+## Discussion
 
 This method may be called multiple times, with one new index added to the previous selection, to see whether a particular index can be selected when the user is extending the selection with the keyboard or mouse. The `proposedSelectionIndexes` parameter contains the entire selection, and you can return the existing selection if you do not want to change it. This method works only for item-based browsers.
 

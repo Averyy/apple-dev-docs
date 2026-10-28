@@ -20,7 +20,7 @@ func setReceiversSpecifier(_ receiversRef: NSScriptObjectSpecifier?)
 - (void) setReceiversSpecifier:(NSScriptObjectSpecifier *) receiversRef;
 ```
 
-#### Discussion
+## Discussion
 
 When evaluated, the specifier indicates the receiver or receivers of the `clone` command.
 

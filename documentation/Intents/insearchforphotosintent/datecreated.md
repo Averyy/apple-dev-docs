@@ -34,7 +34,7 @@ var dateCreated: INDateComponentsRange? { get }
 @property (atomic, copy, readonly, nullable) INDateComponentsRange * dateCreated;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to limit the scope of the search to photos taken within the specified dates.
 

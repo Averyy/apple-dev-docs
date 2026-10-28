@@ -21,11 +21,11 @@ Returns a span containing the initial bytes of this span, up to the specified ma
 func extracting(first maxLength: Int) -> RawSpan
 ```
 
-#### Return Value
+## Return Value
 
 A span with at most `maxLength` bytes.
 
-#### Discussion
+## Discussion
 
 If the maximum length exceeds the length of this span, the result contains all the bytes.
 

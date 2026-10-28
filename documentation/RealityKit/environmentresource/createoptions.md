@@ -20,7 +20,7 @@ A type that controls compression, sampling quality, and cubemap dimensions when 
 struct CreateOptions
 ```
 
-#### Overview
+## Overview
 
 The options provide control for balancing memory usage, quality, and processing power when creating an environment’s lighting data.
 

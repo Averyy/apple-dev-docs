@@ -17,7 +17,7 @@ Writes document data to a URL.
 - (BOOL) writeToURL:(NSURL *) url ofType:(NSString *) type;
 ```
 
-#### Discussion
+## Discussion
 
 Writes document data of type `docType` to the URL `aURL`, returning whether the operation was successful. This method only supports URLs of the `file:` scheme and calls [`writeToFile:ofType:`](./writetofile_oftype_.md).
 

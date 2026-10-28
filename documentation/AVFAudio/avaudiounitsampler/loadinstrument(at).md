@@ -24,7 +24,7 @@ func loadInstrument(at instrumentURL: URL) throws
 - (BOOL) loadInstrumentAtURL:(NSURL *) instrumentURL error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 The instrument can be one of the following types: Logic or GarageBand `EXS24`, the sampler’s native `aupreset` file, or an audio file, such as `caf`, `aiff`, `wav`, or `mp3`.
 

@@ -25,7 +25,7 @@ func fileType() -> String?
 - (NSString *) fileType;
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with the [`type`](../fileattributekey/type.md) file attributes key, or `nil` if the file attributes dictionary has no entry for the key. For possible values, see [`FileAttributeType`](../fileattributetype.md).
 

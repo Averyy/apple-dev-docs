@@ -5,7 +5,7 @@
 
 The different types of node interactions.
 
-#### Overview
+## Overview
 
 The term interaction is used as a general term to describe some interaction of a node. Currently, the interactions of a node that the graph manages are described below.
 

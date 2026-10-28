@@ -25,9 +25,9 @@ func cblas_sgemv(_ ORDER: CBLAS_ORDER, _ TRANSA: CBLAS_TRANSPOSE, _ M: __LAPACK_
 void cblas_sgemv(const enum CBLAS_ORDER ORDER, const enum CBLAS_TRANSPOSE TRANSA, const __LAPACK_int M, const __LAPACK_int N, const float ALPHA, const float *A, const __LAPACK_int LDA, const float *X, const __LAPACK_int INCX, const float BETA, float *Y, const __LAPACK_int INCY);
 ```
 
-#### Discussion
+## Discussion
 
-This function multiplies *A * X* (after transposing `A`, if needed) and multiplies the resulting matrix by `alpha`. It then multiplies vector `Y` by `beta`. It stores the sum of these two products in vector `Y`.
+This function multiplies *A \* X* (after transposing `A`, if needed) and multiplies the resulting matrix by `alpha`. It then multiplies vector `Y` by `beta`. It stores the sum of these two products in vector `Y`.
 
 Thus, it calculates either
 

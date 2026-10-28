@@ -23,7 +23,7 @@ func open(_ urls: [URL], withApplicationAt applicationURL: URL, configuration: N
 - (void) openURLs:(NSArray<NSURL *> *) urls withApplicationAtURL:(NSURL *) applicationURL configuration:(NSWorkspaceOpenConfiguration *) configuration completionHandler:(void (^)(NSRunningApplication *app, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You may call this method safely from any thread of your app.
 

@@ -19,11 +19,11 @@ object ArticleDocument.componentLayouts
 
 - [Positioning the Content in Your Article](../../AppleNews/positioning-the-content-in-your-article.md)
 
-#### Discussion
+## Discussion
 
 `ArticleDocument.componentLayouts` is an object containing the component layout objects that components in your article can use. You provide each component layout object as a key-value pair. In each pair, you create a key that’s meaningful to you. The value of each pair is a [`ComponentLayout`](../componentlayout.md) object.
 
-##### Example
+### Example
 
 ```json
 {

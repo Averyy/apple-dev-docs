@@ -19,7 +19,7 @@ A view model that holds all the resources needed to render an immersive camera v
 struct ImmersiveCameraViewModel
 ```
 
-#### Overview
+## Overview
 
 App needs to query this type instance from [`VenueDescriptor`](./venuedescriptor.md) instance given the immersive camera identifier.
 

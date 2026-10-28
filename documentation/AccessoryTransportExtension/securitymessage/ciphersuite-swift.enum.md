@@ -15,7 +15,7 @@ A cryptographic cipher suite for key exchange.
 enum CipherSuite
 ```
 
-#### Overview
+## Overview
 
 Choose a cipher suite based on your accessory’s capabilities and the transport methods it supports. Use [`SecurityMessage.CipherSuite.xWing`](./ciphersuite-swift.enum/xwing.md) for post-quantum security, which is required for [`AccessoryTransport.internet`](../accessorytransport/internet.md) and [`AccessoryTransport.localNetwork`](../accessorytransport/localnetwork.md) transports. Use [`SecurityMessage.CipherSuite.p256`](./ciphersuite-swift.enum/p256.md) as a fallback option for Bluetooth-only accessories that don’t support xWing.
 

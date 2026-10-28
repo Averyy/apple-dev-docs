@@ -19,11 +19,11 @@ func knowsPageRange(_ range: NSRangePointer) -> Bool
 - (BOOL) knowsPageRange:(NSRangePointer) range;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the view handles page boundaries; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Returns [`false`](../../Swift/false.md) if the view uses the default auto-pagination mechanism. The default implementation returns [`false`](../../Swift/false.md). Override this method if your class handles page boundaries.
 

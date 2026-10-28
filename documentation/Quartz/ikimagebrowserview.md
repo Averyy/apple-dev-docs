@@ -21,7 +21,7 @@ class IKImageBrowserView
 @interface IKImageBrowserView : NSView
 ```
 
-#### Overview
+## Overview
 
 The [`IKImageBrowserView`](./ikimagebrowserview.md) class is a view for displaying and browsing a large amount of images and movies efficiently. This class will be deprecated in a future release. Please switch to [`NSCollectionView`](../AppKit/nscollectionview.md) instead.
 

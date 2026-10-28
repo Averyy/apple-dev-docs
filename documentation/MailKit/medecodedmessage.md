@@ -19,7 +19,7 @@ class MEDecodedMessage
 @interface MEDecodedMessage : NSObject
 ```
 
-#### Overview
+## Overview
 
 When MailKit invokes your message security handler’s [`decodedMessage(forMessageData:)`](./memessagedecoder/decodedmessage%28formessagedata%29.md) method, you decode the message data and return an instance of [`MEDecodedMessage`](./medecodedmessage.md) that contains unencrypted MIME data.
 

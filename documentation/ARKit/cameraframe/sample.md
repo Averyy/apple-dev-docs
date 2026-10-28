@@ -15,7 +15,7 @@ Information that describes a sample from a camera frame.
 struct Sample
 ```
 
-#### Overview
+## Overview
 
 Use this structure to access information about a sample from a [`CameraFrame`](../cameraframe.md), such as the frame’s settings and parameters, a pixel buffer that contains the sample’s data, and so on.
 

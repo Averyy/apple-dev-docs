@@ -19,7 +19,7 @@ class NSPrinter
 @interface NSPrinter : NSObject
 ```
 
-#### Overview
+## Overview
 
 [`NSPrinter`](./nsprinter.md) provides information about a printer; it does not modify printer attributes or control a printing job. A printer object can be constructed by specifying either the printer name or the make and model of an available printer. Typically, Cocoa apps don’t create [`NSPrinter`](./nsprinter.md) objects; instead, the printing system uses these objects to support the printing jobs and when it shows users a list of printers.
 

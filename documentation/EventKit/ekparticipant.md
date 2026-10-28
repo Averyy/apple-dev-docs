@@ -24,7 +24,7 @@ class EKParticipant
 @interface EKParticipant : EKObject
 ```
 
-#### Overview
+## Overview
 
 Do not create `EKParticipant` objects directly. Instead, use the property attendees on [`EKCalendarItem`](./ekcalendaritem.md) to return an array of `EKParticipant` objects.
 

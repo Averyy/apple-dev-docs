@@ -13,7 +13,7 @@
 var kAllPPDDomains: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Specifies all available domains.
 

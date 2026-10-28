@@ -25,7 +25,7 @@ var sampleDependsOnOthers: ObjCBool
 BOOL sampleDependsOnOthers;
 ```
 
-#### Discussion
+## Discussion
 
 This value indicates whether the sample depends on other media samples when [`sampleIndicatesWhetherItDependsOnOthers`](./sampleindicateswhetheritdependsonothers.md) is [`true`](../../Swift/true.md).
 

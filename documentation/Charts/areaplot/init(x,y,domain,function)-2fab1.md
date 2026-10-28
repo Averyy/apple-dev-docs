@@ -24,7 +24,7 @@ init(x: Text, y: Text, domain: ClosedRange<Double>? = nil, function: @escaping @
 
 Available when `Content` is `FunctionAreaPlotContent`.
 
-#### Discussion
+## Discussion
 
 Parameters:
 

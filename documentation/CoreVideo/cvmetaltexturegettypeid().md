@@ -24,7 +24,7 @@ func CVMetalTextureGetTypeID() -> CFTypeID
 extern CFTypeID CVMetalTextureGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The Core Foundation type identifier for the `CVMetalTextureRef` type.
 

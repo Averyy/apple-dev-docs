@@ -5,7 +5,7 @@
 
 Use a continuous background task to do work that can complete as needed.
 
-#### Overview
+## Overview
 
 On iOS and iPadOS, apps can execute long-running jobs using the Continuous Background Task ([`BGContinuedProcessingTask`](./bgcontinuedprocessingtask.md)), which enables your app’s critical work that can take minutes or more, to complete in the background if a person backgrounds the app before the job completes.
 
@@ -25,7 +25,7 @@ If a person cancels a task through the interface, the framework invokes the task
 
 ![A flow chart that contains interconnected boxes, which represent actors, actions, or conditions. The flowchart shows a long-running task as it begins with the system and flows to and from the framework, the app, and a person, including background processing or task expiration. The flow culminates when the task completes and the app handles success or failure.](https://developer.apple.com/tutorials/images/com.apple.backgroundtasks/performing-long-running-tasks-on-ios-and-ipados-2@2x.png)
 
-#### Create a Continuous Background Task request
+## Create a Continuous Background Task request
 
 To begin a job that you want to complete even if a person backgrounds the app, start by creating a task request ([`BGContinuedProcessingTaskRequest`](./bgcontinuedprocessingtaskrequest.md)). Choose a name the system can use to identify the specific job in the `taskIdentifier` parameter of the initializer and prefix it with your app’s bundle ID:
 
@@ -42,7 +42,7 @@ let request = BGContinuedProcessingTaskRequest(
 
 Make the `task-name` portion of the task identifier unique for this specific job. The system displays the `title` and `subtitle` arguments you choose in a Live Activity, where a person can monitor the job’s progress and cancel it, if they choose.
 
-#### Enable background GPU use
+## Enable background GPU use
 
 If your job includes API that can utilize the GPU, enable background GPU use for your task by setting [`requiredResources`](./bgcontinuedprocessingtaskrequest/requiredresources.md) to [`gpu`](./bgcontinuedprocessingtaskrequest/resources/gpu.md). First, check whether the device supports background GPU use by seeing if [`supportedResources`](./bgtaskscheduler/supportedresources.md) contains `.gpu`:
 
@@ -54,7 +54,7 @@ if BGTaskScheduler.supportedResources.contains(.gpu) {
 
 The system requires your app to have the [`Background GPU Access`](../BundleResources/entitlements/com.apple.developer.background-tasks.continued-processing.gpu.md) entitlement with a value of `true` to use the GPU in the background. To do that, enable the Background GPU Access capability on your app’s target. For more information about capabilities in Xcode, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
-#### Choose a processing strategy
+## Choose a processing strategy
 
 When the system is busy or resource constrained, it might queue your task request for later execution. The default submission strategy, [`BGContinuedProcessingTaskRequest.SubmissionStrategy.queue`](./bgcontinuedprocessingtaskrequest/submissionstrategy/queue.md), instructs the system to add your task request to a queue if there’s no immediately available room to run it.
 
@@ -66,7 +66,7 @@ request.strategy = .fail
 
 The system cancels a `fail` task right away if it can’t begin processing the task immediately, for example, when the system reaches a maximum number of concurrent tasks.
 
-#### Run the continuous background task
+## Run the continuous background task
 
 To run the job, register the task request with the shared [`BGTaskScheduler`](./bgtaskscheduler.md) using the unique `taskIdentifier`:
 
@@ -117,7 +117,7 @@ private func submit() {
 }
 ```
 
-#### Report progress
+## Report progress
 
 The system displays the job and other continuous background tasks in a Live Activity to inform people of background task progress. It’s important to display accurate progress, as a person can cancel a task through the Live Activity widget if the task appears to be stuck.
 
@@ -136,7 +136,7 @@ for i in 1...stepCount {
 
 The system also prioritizes the termination of tasks that reflect minimal progress, if resource constraints occur at run time.
 
-#### Respond to task completion
+## Respond to task completion
 
 Prepare to handle task failure or success by checking the tasks [`expirationHandler`](./bgtask/expirationhandler.md):
 

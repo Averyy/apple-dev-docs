@@ -17,7 +17,7 @@ Applies the Softshrink activation function.
 class Softshrink
 ```
 
-#### Overview
+## Overview
 
 This is (element-wise):
 
@@ -31,7 +31,7 @@ if x > lambda {
 }
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`softshrink(_:lambda:)`](./softshrink%28_,lambda%29.md)

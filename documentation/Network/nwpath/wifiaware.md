@@ -16,7 +16,7 @@ Current status and performance information for Wi-Fi Aware, or `nil` if this pat
 var wifiAware: WAPath? { get async throws }
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: An error if the path could not be retrieved, or if the App does not have access to Wi-Fi Aware.
 

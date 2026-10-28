@@ -16,7 +16,7 @@ Creates a async stream listener object and returns an interface to it.
 IOFWAsyncStreamListenerInterfaceRef (*CreateAsyncStreamListener)(IOFireWireLibDeviceRef self, UInt32 channel, IOFWAsyncStreamListenerHandler callback, void *inRefCon, UInt32 inQueueBufferSize, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOFWAsyncStreamListenerInterfaceRef. Returns 0 upon failure
 

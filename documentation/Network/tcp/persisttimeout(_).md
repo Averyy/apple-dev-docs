@@ -21,7 +21,7 @@ Set the TCP persist timeout.
 func persistTimeout(_ timeout: UInt32) -> TCP
 ```
 
-#### Discussion
+## Discussion
 
 The TCP persist timeout, in seconds (`PERSIST_TIMEOUT`). See RFC 6429.
 

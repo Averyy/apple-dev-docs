@@ -16,7 +16,7 @@ nonisolated
 final let deviceReference: HIDDeviceClient.DeviceReference
 ```
 
-#### Discussion
+## Discussion
 
 Use to create a [`HIDDeviceClient`](../hiddeviceclient.md), if creating a device and monitoring it within the same app is desired. For more details, see [`HIDDeviceClient.DeviceReference`](../hiddeviceclient/devicereference-swift.struct.md).
 

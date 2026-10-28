@@ -25,7 +25,7 @@ optional func timelineAnimationBehavior(for complication: CLKComplication) async
 - (void) getTimelineAnimationBehaviorForComplication:(CLKComplication *) complication withHandler:(void (^)(CLKComplicationTimelineAnimationBehavior behavior)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Only implement this method if your app supports Time Travel on watchOS 4 or earlier.
 

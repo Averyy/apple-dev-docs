@@ -14,7 +14,7 @@ The name of your watchOS app’s extension delegate.
 - **Name**: `WKExtensionDelegateClassName`
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This key provides the name of a class that adopts the [`WKExtensionDelegate`](../../WatchKit/wkextensiondelegate.md) protocol. Xcode automatically includes this key in the WatchKit extension’s information property list when you create a watchOS project from a template. You only modify this value when you rename or replace the extension delegate.
 

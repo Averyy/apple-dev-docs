@@ -21,7 +21,7 @@ A type that represents a user-browsable directory.
 static var folder: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.folder`.
 

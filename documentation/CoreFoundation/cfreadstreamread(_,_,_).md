@@ -25,11 +25,11 @@ func CFReadStreamRead(_ stream: CFReadStream!, _ buffer: UnsafeMutablePointer<UI
 extern CFIndex CFReadStreamRead(CFReadStreamRef stream, UInt8 *buffer, CFIndex bufferLength);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes read; `0` if the stream has reached its end; or `-1` if either the stream is not open or an error occurs.
 
-#### Discussion
+## Discussion
 
 If `stream` is in the process of opening, this function waits until it has completed. This function blocks until at least one byte is available; it does not block until `buffer` is filled. To avoid blocking, call this function only if [`CFReadStreamHasBytesAvailable(_:)`](./cfreadstreamhasbytesavailable%28_%29.md) returns `TRUE` or after the stream’s client (set with [`CFReadStreamSetClient(_:_:_:_:)`](./cfreadstreamsetclient%28_,_,_,_%29.md)) is notified of a [`hasBytesAvailable`](./cfstreameventtype/hasbytesavailable.md) event.
 

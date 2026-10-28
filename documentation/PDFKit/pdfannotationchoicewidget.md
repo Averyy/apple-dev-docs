@@ -21,7 +21,7 @@ class PDFAnnotationChoiceWidget
 @interface PDFAnnotationChoiceWidget : PDFAnnotation
 ```
 
-#### Overview
+## Overview
 
 `PDFAnnotationChoiceWidget` inherits general annotation behavior from the `PDFAnnotation` class. If you use a `PDFAnnotationChoiceWidget` object, your application must handle hit testing, unless you are simply using `PDFView` to display content. This is because `PDFView` automatically handles hit testing for you.
 

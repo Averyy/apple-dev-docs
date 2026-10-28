@@ -24,7 +24,7 @@ var originalResourceChoice: PHAsset.OriginalResourceChoice { get }
 @property (nonatomic, assign, readonly) PHOriginalResourceChoice originalResourceChoice;
 ```
 
-#### Discussion
+## Discussion
 
 This value is only meaningful for assets that have a RAW alternate, such as RAW+JPEG assets, where it indicates whether the RAW or the compressed resource serves as the unadjusted base. For all other assets the value is [`PHAsset.OriginalResourceChoice.compressed`](./originalresourcechoice-swift.enum/compressed.md).
 

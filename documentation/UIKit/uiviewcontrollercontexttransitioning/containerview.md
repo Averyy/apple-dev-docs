@@ -24,11 +24,11 @@ var containerView: UIView { get }
 @property (nonatomic, readonly) UIView * containerView;
 ```
 
-#### Return Value
+## Return Value
 
 The view that contains both views involved in the transition.
 
-#### Discussion
+## Discussion
 
 The container view acts as the superview of all other views (including those of the presenting and presented view controllers) during the animation sequence. UIKit sets this view for you and automatically adds the view of the presenting view controller to it. The animator object is responsible for adding the view of the presented view controller, and the animator object or presentation controller must use this view as the container for all other views involved in the transition.
 

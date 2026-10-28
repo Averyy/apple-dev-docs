@@ -19,7 +19,7 @@ protocol VZGraphicsDisplayObserver : NSObjectProtocol
 @protocol VZGraphicsDisplayObserver <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Implement the methods in this protocol to observe and react to display reconfiguration.
 

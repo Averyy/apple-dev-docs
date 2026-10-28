@@ -16,11 +16,11 @@ Returns the transform which can be used for binocular frustum culling. A matrix 
 simd_float4x4 cp_frame_binocular_frustum_matrix_for_drawable_target(cp_frame_t frame, cp_drawable_target drawable_target, cp_axis_direction_convention convention, simd_float4 increase_tangents, simd_float2 depth_range);
 ```
 
-#### Return Value
+## Return Value
 
 A transform which combines  perspective projection matrix that transforms coordinates from view coordinate space to clip space and a view matrix which brings device coordinate space to binocular camera space
 
-#### Discussion
+## Discussion
 
 ```
            /

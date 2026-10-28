@@ -19,11 +19,11 @@ func obtain(withRight rightName: AuthorizationString!, flags: AuthorizationFlags
 - (BOOL) obtainWithRight:(AuthorizationString) rightName flags:(AuthorizationFlags) flags error:(NSError **) error;
 ```
 
-#### Return value
+## Return value
 
 [`true`](../../Swift/true.md) if operation completes successfully.
 
-#### Discussion
+## Discussion
 
 Use this method to authorize or preauthorize a single right.
 

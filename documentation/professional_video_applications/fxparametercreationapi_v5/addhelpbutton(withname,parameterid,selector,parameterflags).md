@@ -20,7 +20,7 @@ func addHelpButton(withName name: String, parameterID: UInt32, selector: Selecto
 - (BOOL) addHelpButtonWithName:(NSString *) name parameterID:(UInt32) parameterID selector:(SEL *) selector parameterFlags:(FxParameterFlags) flags;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the application successfully creates a help button parameter; `NO` otherwise.
 

@@ -25,7 +25,7 @@ func profileState(forChannel channel: MIDIChannelNumber) -> MIDICIProfileState
 - (MIDICIProfileState *) profileStateForChannel:(MIDIChannelNumber) channel;
 ```
 
-#### Return Value
+## Return Value
 
 A profile state object.
 

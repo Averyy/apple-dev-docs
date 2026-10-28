@@ -19,7 +19,7 @@ func SCNetworkProtocolGetEnabled(_ protocol: SCNetworkProtocol) -> Bool
 Boolean SCNetworkProtocolGetEnabled(SCNetworkProtocolRef protocol);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the protocol is enabled; otherwise, `FALSE`.
 

@@ -24,11 +24,11 @@ func mapPoint(for point: CGPoint) -> MKMapPoint
 - (MKMapPoint) mapPointForPoint:(CGPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The point on the two-dimensional map projection corresponding to the specified point.
 
-#### Discussion
+## Discussion
 
 You may call this method safely from your view’s [`draw(_:zoomScale:in:)`](./draw%28_,zoomscale,in%29.md) method.
 

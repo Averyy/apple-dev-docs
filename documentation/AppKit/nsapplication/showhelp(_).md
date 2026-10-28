@@ -19,7 +19,7 @@ func showHelp(_ sender: Any?)
 - (void) showHelp:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 For information on how to set up your project to take advantage of having Help Viewer display your help book, see [Specifying the Comprehensive Help File](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/OnlineHelp/Tasks/SpecifyHelpFile.html#//apple_ref/doc/uid/20000020).
 

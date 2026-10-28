@@ -16,11 +16,11 @@ Returns a Boolean value that indicates whether the parent should allow a given n
 - (BOOL) makeNewConnection:(NSConnection *) conn sender:(NSConnection *) ancestor;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `ancestor` should allow `conn` to be created and configured, [`false`](../../Swift/false.md) if `ancestor` should refuse and immediately release `conn`.
 
-#### Discussion
+## Discussion
 
 Use this method to limit the number of `NSConnection` objects created in your application or to change the parameters of child `NSConnection` objects.
 

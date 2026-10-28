@@ -13,7 +13,7 @@
 #define IOEventSourceAction
 ```
 
-#### Discussion
+## Discussion
 
 Backward compatibilty define for the old non-class scoped type definition. See $link IOEventSource::Action
 

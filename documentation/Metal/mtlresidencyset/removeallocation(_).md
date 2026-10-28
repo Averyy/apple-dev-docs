@@ -25,7 +25,7 @@ func removeAllocation(_ allocation: any MTLAllocation)
 - (void) removeAllocation:(id<MTLAllocation>) allocation;
 ```
 
-#### Discussion
+## Discussion
 
 Finalize the removal of these resource allocations, and all others changes you stage, by calling a residency set’s [`commit()`](./commit%28%29.md) method.
 

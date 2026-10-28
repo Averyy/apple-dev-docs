@@ -18,7 +18,7 @@ static var elliptical: EllipticalListStyle { get }
 
 Available when `Self` is `EllipticalListStyle`.
 
-#### Discussion
+## Discussion
 
 On watchOS, the elliptical list style uses a transform for items rolling off the top or bottom of the list, as if on a rounded surface that faces the user.
 

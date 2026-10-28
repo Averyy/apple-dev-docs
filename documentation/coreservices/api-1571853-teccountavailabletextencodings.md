@@ -15,11 +15,11 @@ Counts and returns the number of text encodings currentlyconfigured in the Text 
 OSStatus TECCountAvailableTextEncodings(ItemCount *numberEncodings);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 The number of text encodings includes every instance of atext encoding. If different conversion plug-ins support the sametext encoding, the text encoding will be counted more than once.For example, the Japanese Encodings plug-in supports Mac OS Japanese, andso does the Unicode Encodings plug-in. Since the `TECGetAvailableTextEncodings` functionignores duplicate text encoding specifications, `TECCountAvailableTextEncodings` mayreturn a number greater than the number of array elements neededfor the `availableEncodings ` []parameter.  
 

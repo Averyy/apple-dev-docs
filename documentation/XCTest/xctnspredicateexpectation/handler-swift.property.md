@@ -16,7 +16,7 @@ var handler: XCTNSPredicateExpectation.Handler? { get set }
 @property (copy, nullable) XCPredicateExpectationHandler handler;
 ```
 
-#### Discussion
+## Discussion
 
 If a handler isn’t provided, the first successful evaluation of the predicate fulfills the expectation. If you provide a handler, the handler can override this default behavior to tailor the conditions that fulfill the expectation.
 

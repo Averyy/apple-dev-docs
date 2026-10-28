@@ -5,7 +5,7 @@
 
 Present video with the system player, complete with transport controls and Picture in Picture.
 
-#### Overview
+## Overview
 
 AVKit provides the best way to build a playback interface for your app. The player it presents is the one people use in the apps that come with their devices, so its controls need no explanation. It also connects to the system features that surround playback, from Now Playing to Picture in Picture and AirPlay. Your work goes into your content instead of into controls.
 

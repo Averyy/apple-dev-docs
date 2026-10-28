@@ -24,11 +24,11 @@ func compare(_ quantity: HKQuantity) -> ComparisonResult
 - (NSComparisonResult) compare:(HKQuantity *) quantity;
 ```
 
-#### Return Value
+## Return Value
 
 [`ComparisonResult.orderedDescending`](../../Foundation/comparisonresult/ordereddescending.md) if the parameter is less than the receiver. [`ComparisonResult.orderedAscending`](../../Foundation/comparisonresult/orderedascending.md) if the parameter is greater than the receiver. [`ComparisonResult.orderedSame`](../../Foundation/comparisonresult/orderedsame.md) if the quantities are equal.
 
-#### Discussion
+## Discussion
 
 Returns whether the quantity argument is less than, equal to, or greater than the current quantity. This method automatically converts the quantities into the same units before comparing the values. You just need to ensure that the quantities have compatible units.
 

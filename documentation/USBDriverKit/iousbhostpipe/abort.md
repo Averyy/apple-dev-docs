@@ -15,11 +15,11 @@ Aborts all of the pipe’s pending I/O requests.
 virtual kern_return_t Abort(IOOptionBits options, kern_return_t withError, IOService *forClient);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 If the `options` argument includes `kAbortSynchronous`, this method blocks all new I/O requests except those submitted by an aborted completion routine.
 

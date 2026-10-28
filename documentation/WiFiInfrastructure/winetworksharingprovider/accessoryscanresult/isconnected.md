@@ -17,7 +17,7 @@ A Boolean value that indicates whether the accessory currently has a connection 
 let isConnected: Bool
 ```
 
-#### Discussion
+## Discussion
 
 The system sets this flag on multiple scan results when your accessory connects to multiple access points simultaneously or uses multiple Multi-Link Operation (MLO) links on a single access point.
 

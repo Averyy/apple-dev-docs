@@ -5,11 +5,11 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The watchOS 9.4 SDK provides support to develop watchOS apps for Apple Watch devices running watchOS 9.6. The SDK comes bundled with Xcode 14.3. For information on the compatibility requirements for Xcode 14.3, see [Xcode 14.3 Release Notes](../Xcode-Release-Notes/xcode-14_3-release-notes.md).
 
-##### General
+### General
 
 There are no new release notes for this software update.
 

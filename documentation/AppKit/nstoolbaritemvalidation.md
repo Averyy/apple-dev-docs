@@ -19,7 +19,7 @@ protocol NSToolbarItemValidation : NSObjectProtocol
 @protocol NSToolbarItemValidation <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A toolbar item with a valid target and action is enabled by default. To allow a toolbar item to be disabled in certain situations, a toolbar item’s target can implement the [`validateToolbarItem(_:)`](./nstoolbaritemvalidation/validatetoolbaritem%28_%29.md) method.
 

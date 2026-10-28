@@ -24,7 +24,7 @@ var pixelBufferAttributes: [String : Any]? { get set }
 @property (nonatomic, copy, nullable) NSDictionary<NSString *,id> * pixelBufferAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to customize the format of the pixel buffers that the player layer vends.
 

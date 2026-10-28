@@ -20,7 +20,7 @@ static var nodeLoadExternalEntitiesAlways: XMLNode.Options { get }
 NSXMLNodeLoadExternalEntitiesAlways
 ```
 
-#### Discussion
+## Discussion
 
 Requests that external entities are always loaded. You may choose only one of [`nodeLoadExternalEntitiesAlways`](./nodeloadexternalentitiesalways.md), [`nodeLoadExternalEntitiesSameOriginOnly`](./nodeloadexternalentitiessameoriginonly.md), or [`nodeLoadExternalEntitiesNever`](./nodeloadexternalentitiesnever.md) or none.
 

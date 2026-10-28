@@ -19,7 +19,7 @@ func ABGroupCopyArrayOfAllSubgroups(_ group: ABGroupRef!) -> Unmanaged<CFArray>!
 extern CFArrayRefABGroupCopyArrayOfAllSubgroups(ABGroupRef group);
 ```
 
-#### Return Value
+## Return Value
 
 An array of ABGroupobjects representing the subgroups of `group`.If `group` doesn’t contain any groups,this function returns an empty array. You are responsible for releasingthis object.
 

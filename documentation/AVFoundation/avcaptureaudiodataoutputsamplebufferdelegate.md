@@ -23,7 +23,7 @@ protocol AVCaptureAudioDataOutputSampleBufferDelegate : NSObjectProtocol
 @protocol AVCaptureAudioDataOutputSampleBufferDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 This protocol defines an interface for delegates of an [`AVCaptureAudioDataOutput`](./avcaptureaudiodataoutput.md) object to receive captured audio sample buffers.
 

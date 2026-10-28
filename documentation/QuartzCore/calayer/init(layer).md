@@ -24,11 +24,11 @@ init(layer: Any)
 - (instancetype) initWithLayer:(id) layer;
 ```
 
-#### Return Value
+## Return Value
 
 A layer instance with any custom instance variables copied from `layer`.
 
-#### Discussion
+## Discussion
 
 This initializer is used to create shadow copies of layers, for example, for the [`presentation()`](./presentation%28%29.md) method. Using this method in any other situation will produce undefined behavior. For example, do not use this method to initialize a new layer with an existing layer’s content.
 

@@ -25,7 +25,7 @@ func makeAliasable()
 - (void) makeAliasable;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method is only valid for heap-allocated resources using the [`MTLHeapType.automatic`](../mtlheaptype/automatic.md) allocator.
 

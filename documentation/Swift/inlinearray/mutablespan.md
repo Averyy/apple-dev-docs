@@ -21,11 +21,11 @@ A mutable span over the elements of this array.
 var mutableSpan: MutableSpan<Element> { mutating get }
 ```
 
-#### Return Value
+## Return Value
 
 A `MutableSpan` over the elements of this array.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1)
 

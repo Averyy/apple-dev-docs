@@ -21,7 +21,7 @@ A Boolean value indicating whether this decimal has a negative sign.
 var isSignMinus: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `true` when the value is negative or `-0.0`; otherwise, `false`.
 

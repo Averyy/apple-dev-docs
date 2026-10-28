@@ -19,11 +19,11 @@ func LSCopyDefaultApplicationURLForURL(_ inURL: CFURL, _ inRoleMask: LSRolesMask
 CFURLRef LSCopyDefaultApplicationURLForURL(CFURLRef inURL, LSRolesMask inRoleMask, CFErrorRef  _Nullable *outError);
 ```
 
-#### Return Value
+## Return Value
 
 If an acceptable app is found, its URL is returned. If the URL is a `file://` URL, the application bound to the specified file or directory's type is returned. If the URL's scheme is something else, its default scheme handler is returned. If no app could be found, `NULL` is returned and outError (if not `NULL`) is populated with [`kLSApplicationNotFoundErr`](./klsapplicationnotfounderr.md). The caller is responsible for releasing this URL.
 
-#### Discussion
+## Discussion
 
 Consults the binding tables to return the application that would be used to open inURL if it were double-clicked in the Finder. This application will be the user-specified override if appropriate or the default otherwise.
 

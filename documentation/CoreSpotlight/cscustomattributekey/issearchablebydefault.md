@@ -23,7 +23,7 @@ var isSearchableByDefault: Bool { get }
 @property (readonly, getter=isSearchableByDefault) BOOL searchableByDefault;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `false`.
 

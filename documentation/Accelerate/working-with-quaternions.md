@@ -5,7 +5,7 @@
 
 Rotate points around the surface of a sphere, and interpolate between them.
 
-#### Overview
+## Overview
 
 Quaternions are defined by a scalar (*real*) part, and three imaginary parts collectively called the *vector* part. Quaternions are often used in graphics programming as a compact representation of the rotation of an object in three dimensions.
 
@@ -40,7 +40,7 @@ Quaternions have some advantages over matrices. For example, they’re smaller: 
 
 The following examples show a few common uses of quaternions.
 
-##### Rotate a Point Around a Sphere
+### Rotate a Point Around a Sphere
 
 The following illustration shows a point, defined by `originVector`, rotated over the surface of a sphere by 60º about the x axis.
 
@@ -69,7 +69,7 @@ let rotatedVector = quaternion.act(originVector)
 
 `rotatedVector` is now at the position of the blue point in the illustration above.
 
-##### Interpolate Between Two Points on a Sphere
+### Interpolate Between Two Points on a Sphere
 
 One of the advantages quaternions have over matrices when representing rotations is that they simplify interpolation between rotated coordinates.
 
@@ -118,7 +118,7 @@ for t: Float in stride(from: 0, to: 1, by: 0.001) {
 }
 ```
 
-##### Interpolate Between Multiple Points on a Sphere
+### Interpolate Between Multiple Points on a Sphere
 
 To interpolate between multiple quaternions that define positions on the surface of a sphere, the simd library provides the [`simd_spline(_:_:_:_:_:)`](../simd/simd_spline%28_,_,_,_,_%29-1ok51.md) function.
 

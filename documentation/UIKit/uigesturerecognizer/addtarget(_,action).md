@@ -23,7 +23,7 @@ func addTarget(_ target: Any, action: Selector)
 - (void) addTarget:(id) target action:(SEL) action;
 ```
 
-#### Discussion
+## Discussion
 
 You may call this method multiple times to specify multiple target-action pairs. However, if you request to add a target-action pair that has already been added, then the request is ignored.
 

@@ -23,11 +23,11 @@ func contains(_ search: Self.Element) async rethrows -> Bool
 
 Available when `Element` conforms to `Equatable`.
 
-#### Return Value
+## Return Value
 
 `true` if the method found the element in the asynchronous sequence; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 In this example, an asynchronous sequence called `Counter` produces `Int` values from `1` to `10`. The `contains(_:)` method checks to see whether the sequence produces the value `5`:
 

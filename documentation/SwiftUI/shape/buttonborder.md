@@ -23,7 +23,7 @@ static var buttonBorder: ButtonBorderShape { get }
 
 Available when `Self` is `ButtonBorderShape`.
 
-#### Discussion
+## Discussion
 
 You can override the resolved shape in a given view hierarchy by using the [`buttonBorderShape(_:)`](../view/buttonbordershape%28_%29.md) modifier. If no button border shape is specified, it is resolved automatically for the given context and platform.
 

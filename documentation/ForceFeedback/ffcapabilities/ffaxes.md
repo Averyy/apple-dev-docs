@@ -20,7 +20,7 @@ var ffAxes: (UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt8, UInt
 UInt8 ffAxes[32];
 ```
 
-#### Discussion
+## Discussion
 
 The number of valid elements in the array is specified in numFfAxes. Each element of the array can contain one of the following values:
 

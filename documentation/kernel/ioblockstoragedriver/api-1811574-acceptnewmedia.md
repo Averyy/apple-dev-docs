@@ -12,7 +12,7 @@ virtual IOReturn acceptNewMedia(
  void);
 ```
 
-#### Overview
+## Overview
 
 This method logs the media block size and block count, then calls instantiateMediaObject to get a media object instantiated. The media object is then attached above us and registered.
 

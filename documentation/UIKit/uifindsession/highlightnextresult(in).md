@@ -22,7 +22,7 @@ func highlightNextResult(in direction: UITextStorageDirection)
 - (void) highlightNextResultInDirection:(UITextStorageDirection) direction;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when a person taps the next or previous button, or enters `Return` or `Shift+Return` on a hardware keyboard while the search field has focus.
 

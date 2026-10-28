@@ -17,7 +17,7 @@ Stops the web content process.
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 The system halts the web content process for your browser app when you call this function. In platform versions earlier than iOS 18, the system marks the web content process as no longer in use, and might stop it at a later time to free its resources. The system doesn’t call the interruption handler that you passed when you launched the extension.
 

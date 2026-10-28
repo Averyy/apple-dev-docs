@@ -25,11 +25,11 @@ class func speechVoices() -> [AVSpeechSynthesisVoice]
 + (NSArray<AVSpeechSynthesisVoice *> *) speechVoices;
 ```
 
-#### Return Value
+## Return Value
 
 An array of voices.
 
-#### Discussion
+## Discussion
 
 Use the [`language`](./language.md) property to identify each voice by its language and locale.
 

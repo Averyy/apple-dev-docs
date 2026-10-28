@@ -25,11 +25,11 @@ init(texture: SKTexture, alphaThreshold: Float, size: CGSize)
 + (SKPhysicsBody *) bodyWithTexture:(SKTexture *) texture alphaThreshold:(float) alphaThreshold size:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A new volume-based physics body.
 
-#### Discussion
+## Discussion
 
 Use this method when your sprite has a shape that you want replicated in its physics body. The texture is scaled to the new size and then analyzed. A new physics body is created that includes all of the texels in the texture whose alpha values equal or exceed the `alphaThreshold` parameter. The shape of this body attempts to strike a good balance between performance and accuracy. For example, fine details may be ignored if keeping them would cause a significant performance penalty.
 

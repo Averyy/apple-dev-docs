@@ -20,11 +20,11 @@ optional func textView(_ view: NSTextView, menu: NSMenu, for event: NSEvent, at 
 - (NSMenu *) textView:(NSTextView *) view menu:(NSMenu *) menu forEvent:(NSEvent *) event atIndex:(NSUInteger) charIndex;
 ```
 
-#### Return Value
+## Return Value
 
 A menu to use as the contextual menu. You can return `menu` unaltered, or you can return a customized menu.
 
-#### Discussion
+## Discussion
 
 This method allows the delegate to control the context menu returned by [`menu(for:)`](../nsview/menu%28for%29.md).
 

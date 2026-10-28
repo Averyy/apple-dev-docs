@@ -20,7 +20,7 @@ A constant force or torque applied to a body, influencing motion over time.
 case force
 ```
 
-#### Discussion
+## Discussion
 
 The quantity that user sets via [`setForce(_:index:)`](../forceeffectparameters/setforce%28_,index%29.md) has the units of mass * distance /  time^2. i.e. a force ( mass * acceleration ). `force` mode causes a change in acceleration that varies proportionally to a body’s mass.
 

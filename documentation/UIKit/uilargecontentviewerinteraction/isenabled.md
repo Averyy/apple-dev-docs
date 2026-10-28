@@ -22,7 +22,7 @@ class var isEnabled: Bool { get }
 @property (class, nonatomic, readonly, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 It isn’t necessary to check this value before adding a [`UILargeContentViewerInteraction`](../uilargecontentviewerinteraction.md) to a view, but it may be helpful if you need to adjust the behavior of coexisting gesture handlers. For example, a button with a long press handler might increase its long press duration so the user can read the text in the large content viewer first.
 

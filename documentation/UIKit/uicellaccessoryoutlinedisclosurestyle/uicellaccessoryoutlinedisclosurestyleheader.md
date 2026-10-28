@@ -18,7 +18,7 @@ The style to use for a section header.
 UICellAccessoryOutlineDisclosureStyleHeader
 ```
 
-#### Discussion
+## Discussion
 
 When using this style, a tap anywhere in the header toggles the expansion state of the item. The cell itself is not selectable when using this style.
 

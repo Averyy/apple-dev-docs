@@ -19,7 +19,7 @@ var allowsDocumentSharing: Bool { get }
 @property (readonly) BOOL allowsDocumentSharing;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the owning document controller enables share options for this document. When the value is [`false`](../../Swift/false.md), the document controller disables the Share menu when this document is selected.
 

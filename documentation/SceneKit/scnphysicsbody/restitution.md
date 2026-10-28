@@ -25,7 +25,7 @@ var restitution: CGFloat { get set }
 @property (nonatomic) CGFloat restitution;
 ```
 
-#### Discussion
+## Discussion
 
 This property simulates the “bounciness” of a body. A restitution of `1.0` means that the body loses no energy in a collision—for example, a ball dropped onto a flat surface will bounce back to the height it fell from. A restitution of `0.0` means the body does not bounce after a collision. A restitution of greater than `1.0` causes the body to gain energy in collisions. The default restitution is `0.5`.
 

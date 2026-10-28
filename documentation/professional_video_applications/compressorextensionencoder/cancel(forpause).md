@@ -20,11 +20,11 @@ func cancel(forPause: Bool) -> [AnyHashable : Any]!
 - (NSDictionary *) cancelForPause:(BOOL) forPause;
 ```
 
-#### Return Value
+## Return Value
 
 `nil` if the extension does not support resuming a job where it left off. Otherwise, it returns a dictionary with attributes defining the extension’s paused state.
 
-#### Discussion
+## Discussion
 
 Implement this method to pause or cancel an encoding job when the Compressor app requests to do so. If the extension supports resuming from a paused state, return the extension’s current state to the Compressor app. If the extension returns `nil`, an encoding job starts from the beginning when it resumes at a later point.
 

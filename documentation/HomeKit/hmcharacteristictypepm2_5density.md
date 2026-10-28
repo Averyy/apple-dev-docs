@@ -24,7 +24,7 @@ let HMCharacteristicTypePM2_5Density: String
 extern NSString * const HMCharacteristicTypePM2_5Density;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a number in units of micrograms per cubic meter.
 

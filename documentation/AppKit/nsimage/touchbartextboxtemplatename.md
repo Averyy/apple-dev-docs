@@ -22,7 +22,7 @@ class let touchBarTextBoxTemplateName: String
 extern NSImageName const NSImageNameTouchBarTextBoxTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for text box](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793530@2x.png)
 

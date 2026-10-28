@@ -25,7 +25,7 @@ func awakeFromFetch()
 - (void) awakeFromFetch;
 ```
 
-#### Discussion
+## Discussion
 
 You typically use this method to compute derived values or to recreate transient relationships from the receiver’s persistent properties.
 

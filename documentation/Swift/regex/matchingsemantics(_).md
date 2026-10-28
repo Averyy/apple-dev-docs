@@ -21,11 +21,11 @@ Returns a regular expression that matches with the specified semantic level.
 func matchingSemantics(_ semanticLevel: RegexSemanticLevel) -> Regex<Regex<Output>.RegexOutput>
 ```
 
-#### Return Value
+## Return Value
 
 The modified regular expression.
 
-#### Discussion
+## Discussion
 
 When matching with grapheme cluster semantics (the default), metacharacters like `.` and `\w`, custom character classes, and character class instances like `.any` match a grapheme cluster when possible, corresponding with the default string representation. In addition, matching with grapheme cluster semantics compares characters using their canonical representation, corresponding with how strings comparison works.
 

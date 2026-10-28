@@ -25,7 +25,7 @@ enum CBCharacteristicWriteType
 enum CBCharacteristicWriteType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Characteristic write types have corresponding restrictions on the length of the data that you can write to a characteristic’s value. For the [`CBCharacteristicWriteType.withResponse`](./cbcharacteristicwritetype/withresponse.md) write type’s restrictions, see the Bluetooth 4.0 specification, Volume 3, Part G, Sections 4.9.3–4. For the [`CBCharacteristicWriteType.withoutResponse`](./cbcharacteristicwritetype/withoutresponse.md) write type restrictions, see the Bluetooth 4.0 specification, Volume 3, Part G, Sections 4.9.1–2.
 

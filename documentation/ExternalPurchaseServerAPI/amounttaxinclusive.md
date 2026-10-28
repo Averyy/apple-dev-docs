@@ -15,7 +15,7 @@ The amount, in milli-units, that the customer paid, including taxes.
 int64 amountTaxInclusive
 ```
 
-#### Discussion
+## Discussion
 
 This amount must equal [`taxAmount`](./taxamount.md) plus [`amountTaxExclusive`](./amounttaxexclusive.md).
 

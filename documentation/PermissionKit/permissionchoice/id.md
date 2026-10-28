@@ -19,7 +19,7 @@ A unique identifier for this choice.
 var id: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Requires**: This identifier must be globally unique, including across devices and on any server/s.
 

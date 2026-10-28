@@ -19,7 +19,7 @@ class NSGradient
 @interface NSGradient : NSObject
 ```
 
-#### Overview
+## Overview
 
 This class provides convenience methods for drawing radial or linear (axial) gradients for rectangles and [`NSBezierPath`](./nsbezierpath.md) objects. It also supports primitive methods that let you customize the shape of the gradient fill. A gradient consists of two or more color changes over the range of the gradient shape. When creating a gradient object, you specify the colors and their locations relative to the start and end of the gradient. This combination of color and location is known as a *color stop*. During drawing, the [`NSGradient`](./nsgradient.md) object uses the color stop information to compute color changes for you and passes that information to the Quartz shading functions.
 

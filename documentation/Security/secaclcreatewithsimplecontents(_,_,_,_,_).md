@@ -21,11 +21,11 @@ func SecACLCreateWithSimpleContents(_ access: SecAccess, _ applicationList: CFAr
 OSStatus SecACLCreateWithSimpleContents(SecAccessRef access, CFArrayRef applicationList, CFStringRef description, SecKeychainPromptSelector promptSelector, SecACLRef*newAcl);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The ACL entry returned by this method includes a list of trusted apps, the name of the keychain item as it appears in user prompts, the prompt selector flag, and a list of one or more operations to which this ACL entry applies. By default, a new ACL entry applies to all operations. Use the [`SecACLUpdateAuthorizations(_:_:)`](./secaclupdateauthorizations%28_,_%29.md) method to set the list of operations for an ACL entry.
 

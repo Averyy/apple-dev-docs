@@ -19,7 +19,7 @@ var allowsMultipleSelection: Bool { get set }
 @property BOOL allowsMultipleSelection;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the user may select multiple items from the browser. When the selection contains multiple items, use the [`urls`](./urls.md) property to retrieve those items instead of the inherited [`url`](../nssavepanel/url.md) property.
 

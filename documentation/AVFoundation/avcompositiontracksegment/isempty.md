@@ -25,7 +25,7 @@ var isEmpty: Bool { get }
 @property (nonatomic, readonly, getter=isEmpty) BOOL empty;
 ```
 
-#### Discussion
+## Discussion
 
 An empty segment has a valid target time range, but its [`sourceURL`](./sourceurl.md) value is `nil` and the source start time is [`invalid`](../../CoreMedia/cmtime/invalid.md). It doesn’t set values for its other properties.
 

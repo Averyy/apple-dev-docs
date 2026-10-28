@@ -17,7 +17,7 @@ A condition that describes the characteristics of a beacon.
 struct BeaconIdentityCondition
 ```
 
-#### Overview
+## Overview
 
 Use `CLMonitor.BeaconIdentityCondition` to observe events from beacons based on any combination on their UUID, major, or minor characteristics.
 

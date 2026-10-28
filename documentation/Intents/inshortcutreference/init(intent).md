@@ -24,7 +24,7 @@ init?(intent: INIntent)
 - (instancetype) initWithIntent:(INIntent *) intent;
 ```
 
-#### Return Value
+## Return Value
 
 A new shortcut object if the specified intent is valid; otherwise, returns `nil`.
 

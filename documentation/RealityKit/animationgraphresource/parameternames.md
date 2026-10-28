@@ -20,7 +20,7 @@ The names of all parameters declared by the graph definition.
 var parameterNames: [String] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this list to discover the parameters a graph exposes for runtime control. Set values for these parameters through the owning entity’s parameter binding rather than through the resource itself, so that any entity using the graph can drive it with values that match its own state:
 

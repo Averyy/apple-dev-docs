@@ -18,7 +18,7 @@ A configuration that determines what starts dictation in a search field.
 struct TextInputDictationActivation
 ```
 
-#### Overview
+## Overview
 
 Pass a value of this type to [`inline(activation:)`](./textinputdictationbehavior/inline%28activation%29.md) when you want to keep the dictation microphone in a search field but choose how someone begins speaking:
 

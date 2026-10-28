@@ -23,7 +23,7 @@ func setTextColor(_ color: UIColor?)
 
 - [Connecting Your User Interface to Your Code](../connecting-your-user-interface-to-your-code.md)
 
-#### Discussion
+## Discussion
 
 The value set by this method represents the default color applied to text. This color is used unless you explicitly override it in an attributed string using the [`NSForegroundColorAttributeName`](../../UIKit/nsforegroundcolorattributename.md) attribute.
 

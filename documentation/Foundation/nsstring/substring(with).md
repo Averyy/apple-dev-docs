@@ -25,11 +25,11 @@ func substring(with range: NSRange) -> String
 - (NSString *) substringWithRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 A string object containing the characters of the receiver that lie within `aRange`.
 
-#### Discussion
+## Discussion
 
 This method detects all invalid ranges (including those with negative lengths). For applications linked against macOS 10.6 and later, this error causes an exception; for applications linked against earlier releases, this error causes a warning, which is displayed just once per application execution.
 

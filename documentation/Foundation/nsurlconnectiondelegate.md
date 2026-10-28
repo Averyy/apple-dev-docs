@@ -25,7 +25,7 @@ protocol NSURLConnectionDelegate : NSObjectProtocol
 @protocol NSURLConnectionDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Delegates of [`NSURLConnection`](./nsurlconnection.md) objects should implement either the [`NSURLConnectionDataDelegate`](./nsurlconnectiondatadelegate.md) or [`NSURLConnectionDownloadDelegate`](./nsurlconnectiondownloaddelegate.md) protocol in addition to the [`NSURLConnectionDelegate`](./nsurlconnectiondelegate.md) protocol. Specifically:
 

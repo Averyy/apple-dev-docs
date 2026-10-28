@@ -21,7 +21,7 @@ Creates an absolute time for a specified value.
 init(timespec: timespec)
 ```
 
-#### Discussion
+## Discussion
 
 The `timespec` type is declared in the Darwin framework.
 

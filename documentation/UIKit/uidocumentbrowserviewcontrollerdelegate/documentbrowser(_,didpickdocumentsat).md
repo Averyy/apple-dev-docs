@@ -22,7 +22,7 @@ optional func documentBrowser(_ controller: UIDocumentBrowserViewController, did
 - (void) documentBrowser:(UIDocumentBrowserViewController *) controller didPickDocumentsAtURLs:(NSArray<NSURL *> *) documentURLs;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to process the documents selected by the user. Typically, you create a view controller to display the selected documents, then present that view modally, like in the following code.
 

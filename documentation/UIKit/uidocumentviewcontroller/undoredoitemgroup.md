@@ -22,7 +22,7 @@ var undoRedoItemGroup: UIBarButtonItemGroup { get }
 @property (nonatomic, readonly) UIBarButtonItemGroup * undoRedoItemGroup;
 ```
 
-#### Discussion
+## Discussion
 
 If you want undo and redo buttons to appear in your `UIDocumentViewController`, add an `undoRedoItemGroup` to the navigation bar and ensure that your custom `UIDocument` has an undo manager assigned to it. `UIDocumentViewController` sets the hidden property of this group, depending on the availability of an undo manager. It automatically enables or disables the buttons inside the group, as necessary.
 

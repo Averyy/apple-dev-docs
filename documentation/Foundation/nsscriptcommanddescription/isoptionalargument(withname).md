@@ -20,7 +20,7 @@ func isOptionalArgument(withName argumentName: String) -> Bool
 - (BOOL) isOptionalArgumentWithName:(NSString *) argumentName;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified argument exists and is optional; otherwise, [`false`](../../Swift/false.md).
 

@@ -20,7 +20,7 @@ Specifies the dimensions of the 2D array texture.
 static func dimensions(width: Int, height: Int, length: Int) -> TextureResource.Dimensions2DArray
 ```
 
-#### Discussion
+## Discussion
 
 The content specifies the number of mipmap levels.
 

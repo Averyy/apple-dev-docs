@@ -19,11 +19,11 @@ func isPaired() -> Bool
 - (BOOL) isPaired;
 ```
 
-#### Return Value
+## Return Value
 
 Returns TRUE if the target device is paired, FALSE if not.
 
-#### Discussion
+## Discussion
 
 NOTE: This method is only available in macOS 10.2.5 (Bluetooth v1.2) or later.
 

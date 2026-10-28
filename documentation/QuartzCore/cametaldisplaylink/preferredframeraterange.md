@@ -24,7 +24,7 @@ var preferredFrameRateRange: CAFrameRateRange { get set }
 @property (nonatomic) CAFrameRateRange preferredFrameRateRange;
 ```
 
-#### Discussion
+## Discussion
 
 The display link makes a best attempt to invoke your app’s callback within the frequency range you set to this property. However, the system also takes into account the device’s hardware capabilities and the other tasks your game or app is running.
 

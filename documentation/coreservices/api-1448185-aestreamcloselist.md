@@ -19,11 +19,11 @@ func AEStreamCloseList(_ ref: AEStreamRef!) -> OSStatus
 OSStatus AEStreamCloseList(AEStreamRef ref);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Call this function to balance a preceding call to [`AEStreamOpenList(_:)`](./api-1448594-aestreamopenlist.md). This function completes the definition of the `AEDescList`. 
 

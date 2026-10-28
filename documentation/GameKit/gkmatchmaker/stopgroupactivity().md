@@ -23,7 +23,7 @@ func stopGroupActivity()
 - (void) stopGroupActivity;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to stop showing a group activity in SharePlay that players use to join a match. This method doesn’t quit the match in your game that players previously join using SharePlay. Players can also stop a group activity using the SharePlay interface.
 

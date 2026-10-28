@@ -5,94 +5,94 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The visionOS 27 SDK provides support to develop apps for Apple Vision Pro devices running visionOS 27. The SDK comes bundled with Xcode 27. For information on the compatibility requirements for Xcode 27, see [Xcode 27 Release Notes](../Xcode-Release-Notes/xcode-27-release-notes.md).
 
-##### App Intents
+### App Intents
 
-###### New Features
+#### New Features
 
 - You can now pass a name parameter of type `AttributedString` to the `notes.createNote` and `notes.updateNote` schemas. (173431080)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Requests that should result in an app’s `reminders.updateReminder`-conforming intent to be called might fail with “ cannot be used for this action right now.” (181212609) (FB23526663)
 - Fixed: AppEntity instances have a cumulative size limit of 10MB, including all child properties and their values. Your app might crash if an entity exceeds this limit, and the exception is logged. (181763422)
 - Fixed: The notes.appendText schema erroneously disappeared from the SDK. (182532125)
 
-###### Known Issues
+#### Known Issues
 
 - Existing entities that conformed to @AppEntity(schema: .photos.asset) in prior releases might no longer compile in the 27 SDKs because new properties were added to the schema in this release. (181800016) (FB23652582)
 
   **Workaround:** To continue conforming to the schema, adopt the additional properties and move the code behind an availability check.
 
-###### Deprecations
+#### Deprecations
 
 - The `calendar.deleteEvents` schema has been renamed to `calendar.deleteEvent`. (176751155)
 
-##### Apple Intelligence Report
+### Apple Intelligence Report
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When you view Apple Intelligence Report entries for Home Intelligence, some data that was sent to Private Cloud Compute won’t appear in the report. (176056930)
 
-##### ARKit
+### ARKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: For room anchors delivered by the `RoomTrackingProvider` Swift API, `RoomAnchor.planeAnchorID`s and `RoomAnchor.meshAnchorID`s are always empty. Likewise, for the `room_tracking.h` C API, `ar_room_anchor_get_plane_anchor_identifiers` and `ar_room_anchor_get_mesh_anchor_identifiers` always return an empty list of identifiers. (173005535)
 - Fixed: Due to a bug fix for ARKit Object Tracking, callers of the C API functions for loading reference objects (`ar_reference_object_load_from_url`, `ar_reference_object_load_with_name`, and similar) must now retain the reference objects and errors returned by the completion handlers that client code passes to these functions, in contexts where ARC is not enabled. Note, `ar_retain` must be called in the completion handler for reference objects, and also errors (if there is a desire to hold onto these items beyond the scope of the completion handler). Otherwise, the items will be invalid to use after the completion handler finishes execution. (173812495)
 
-##### Background Assets
+### Background Assets
 
-###### New Features
+#### New Features
 
 - You can reduce your app’s storage usage with localized asset packs. The system delivers the appropriately localized asset packs based on the user’s preferred languages. (163944365)
 
-##### Bluetooth
+### Bluetooth
 
-###### Known Issues
+#### Known Issues
 
 - Spatial accessory tracking might not initialize when first paired via Bluetooth. (181827411)
 
   **Workaround:** Turn the accessory off and then on, or turn Bluetooth off and on.
 
-##### Communication Safety
+### Communication Safety
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Sensitive QRCode detected as non-sensitive, preventing 3rd party developers from testing API functionality. (183962032)
 
-##### Compositor Services
+### Compositor Services
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `RemoteImmersiveSpace` might be unable to discover the remote device, causing immersive content delivered to Apple Vision Pro to fail to display. (177989580)
 
-##### Eye Setup
+### Eye Setup
 
-###### Known Issues
+#### Known Issues
 
 - You might experience a degradation in eye tracking quality after performing Eye Setup in visionOS 27.0 Beta 1 through Beta 4. (175305506)
 
   **Workaround:** After updating to visionOS 27.0 Beta 5 or later, [redo eye and hand setup on your Apple Vision Pro](https://support.apple.com/guide/apple-vision-pro/redo-eye-and-hand-setup-tanf67b02683/visionos).
 
-##### EyeSight
+### EyeSight
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The EyeSight privacy indicator animation for screen capture only appears during your first Siri query after you restart your device. (177984075)
 
-##### Foundation
+### Foundation
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `+[NSURL URLWithString:]` no longer double-encodes the `%` of valid percent-escape sequences when encoding other invalid characters. (161588649) (FB20439045)
 
-##### Foundation Models
+### Foundation Models
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Private Cloud Compute might not work when you use simulators. (177684296)
 - Fixed: When using the on-device Apple Foundation Model for both tool calling and guided generation, some prompts might cause the model to call tools excessively. (177748926)
@@ -101,108 +101,108 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 - Fixed: `onPrompt` might not be called when applied to a `Profile` without instructions. (177902488)
 - Fixed: `PrivateCloudComputeLanguageModel` always uses greedy decoding. (178181782)
 
-##### Foveated Streaming
+### Foveated Streaming
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `FoveatedStreamingProvider` app extensions cannot access the microphone. (175954012)
 
-##### Freeform
+### Freeform
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When a Freeform board is curved, the back button might become unresponsive after you exit preview mode for a spatial photo, spatial video, or USDZ file. (172204615)
 
-##### Gaussian Splats
+### Gaussian Splats
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When 3DGS content rendered by a GaussianSplatComponent is moved offscreen and then returns to the visible area, some splats might be missing or truncated. Camera or asset movement can restore rendering. (183538823)
 
-##### Genmoji
+### Genmoji
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Genmoji or Image Playground panel might appear blank when invoked from Safari or Freeform. (175025165)
 
-##### Hand UI
+### Hand UI
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The battery percentage that appears in the status bar when you raise your hand and flip it over might be inconsistent with the percentage displayed in Control Center. (175742923)
 
-##### HealthKit
+### HealthKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: null unit might incorrectly convert to count and percent units. (171273931) (FB22066297)
 
-##### Image Playground
+### Image Playground
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In the Image Playground photo picker, the All and Suggested tabs are missing, which might limit the number of photos available for you to choose from. (178256174)
 
-##### Mac Virtual Display
+### Mac Virtual Display
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When donning the Apple Vision Pro it may sometimes disconnect instead of resuming the session. (178359724)
 
-##### Mail
+### Mail
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Emails might display content that doesn’t match their subject line. (169101671)
 
-##### Metal
+### Metal
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When you use a sampler to read from a texture with clamp-to-edge addressing mode, the result might be clamped to zero. (172520325)
 - Fixed: On devices in the Apple 10 GPU family, using a sampler to read from a texture with clamp-to-edge addressing mode might produce results that are clamped to zero. (177318505)
 
-##### Network Security
+### Network Security
 
-###### New Features
+#### New Features
 
 - Starting in 27.0 operating systems, select system processes now enforce stricter network security (TLS) requirements. These new requirements might cause connections to fail if the server does not meet them. The affected processes are those involved in MDM, DDM, Automated Device Enrollment, configuration profile installation, app installation, and software updates. Servers must support TLS 1.2 at minimum, using cipher suites and certificates that meet App Transport Security (ATS) requirements.
 
   For additional details on affected processes, requirements, and how to audit and diagnose failures in managed environments, please reference [Prepare your network environment for stricter security requirements](https://support.apple.com/en-us/126655). For additional details on ATS and the new requirements, please reference [Preventing Insecure Network Connections](../Security/preventing-insecure-network-connections.md) and [NSRequiresNIAPTLSPackageVersion](../BundleResources/information-property-list/nsrequiresniaptlspackageversion.md). (176055825)
 
-##### On Demand Resources
+### On Demand Resources
 
-###### Deprecations
+#### Deprecations
 
 - On Demand Resources and the `NSBundleResourceRequest` API are deprecated. Use Background Assets instead. (170066290)
 
-##### Persona
+### Persona
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Spatial Personas might appear laggy during High Quality Recording. (178441141)
 
-##### PhotoKit
+### PhotoKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The `addedDate` property on `PHAsset` might return `nil` even though it’s marked as non-nullable. (175050631)
 
-###### Deprecations
+#### Deprecations
 
 - The `originalFilename` property on `PHAssetResource` is incorrectly marked as non-nullable, which misrepresents the property value; a new, nullable `filename` property is available as a replacement. (175412725) (FB22589474)
 
-##### Photos
+### Photos
 
-###### Known Issues
+#### Known Issues
 
 - Toggling between 2D and Spatial views of a large panorama image (>300Mb) might cause the Photos application to unexpectedly quit. (183442382)
 
   **Workaround:** Convert the asset to JPEG or HEIC before importing it into the photos library.
 
-##### Quick Look
+### Quick Look
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Buttons in the annotation window might lose focus and become unresponsive on the first pinch. (172214657)
 - Fixed: When in annotation mode, annotations placed inside an object or within the bounding box of a convex object might not be selectable. (174174518)
@@ -210,23 +210,23 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 - Fixed: In annotation mode, annotations don’t respond to direct touch input and flicker when directly touched. (178087194)
 - Fixed: In annotation mode, the Delete button sometimes switches the annotation to the editing UI. (178087667)
 
-###### Known Issues
+#### Known Issues
 
 - When at an interior Viewpoint in a USD preview, using drag gestures to move the scene can cause a severe jump of the asset position. (180152079)
 
   **Workaround:** Apply the gesture slowly, avoiding a quick hand motion. Reset the positioning by choosing the desired Viewpoint again.
 
-##### Reality Composer Pro Preview on visionOS
+### Reality Composer Pro Preview on visionOS
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Reality Composer Pro Preview, which lets you preview your content on visionOS in real time directly from your Mac, is now available.
 
   For more information on the Reality Composer Pro macOS app, see [Reality Composer Pro Release Notes](../RealityComposerPro/reality-composer-pro-release-notes.md). (179045352)
 
-##### RealityKit
+### RealityKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The `.highlight` hover effect style highlights the entire RealityKit entity hierarchy during direct interactions, rather than only the entity being targeted. (158462269) (FB19680952)
 - Fixed: Soft Shadows and Spotlight Shadow Quality do not work in visionOS Simulator because the feature relies on the clustering system, which is disabled due to restricted tier 2 argument buffer issues. (169054912)
@@ -244,32 +244,32 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 - Fixed: Subtitles might become clipped in Multiview when resizing tiles in Multiview in TV app. (181267166)
 - Fixed: Shaders using the new RealityKit shader node name of `ND_realitykit_pbr_surfaceshader_2_0` will fail to load in Quick Look or with USDKit. (181616779)
 
-##### Screen Recording
+### Screen Recording
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: With High Quality Recording enabled, capturing a High Quality recording while the device is warm may fail silently. No recording is saved and no error or feedback is shown. (170105618)
 - Fixed: When you switch between High Quality Recording and Standard Recording in Screen Recording settings, the recording subsystem may enter an unrecoverable state; subsequent screen recordings from Control Center might not start. (178467174)
 
-##### Security
+### Security
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail. (183456836)
 
-##### ShaderGraph
+### ShaderGraph
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The `realitykit_hair_surfaceshader` node does not support `DiffuseLightProbeGroupComponent`. Materials built with this node might not respond to diffuse light probe group lighting. (177976666)
 
-##### Shortcuts
+### Shortcuts
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Use Model action might fail to run when using the On-Device option for some output types. (181071784)
 
-###### Known Issues
+#### Known Issues
 
 - If an app intent uses Duration or `LPLinkMetadata`, creating a shortcut with that intent and then attempting to edit it with “Describe a change” might fail. (166068090)
 
@@ -278,13 +278,13 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
   **Workaround:** Define only one number-related type in the `UnionValue` parameter (for example, use only Int or only Double, not both).
 
-##### Siri
+### Siri
 
-###### New Features
+#### New Features
 
 - You can now activate Siri by looking at the Siri “orb” and speaking, as an alternative to using “Hey Siri” or “Siri”. This feature is enabled in Beta 2. (177137200)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Siri ignores custom values for navigation preferences, transport, and incident types in apps that use `maps.startNavigation` or `maps.reportIncident` intent schemas. (175230813)
 - Fixed: If you select the Ask Siri button in context menus or the text edit bar multiple times, multiple instances of Siri might appear and overlap with each other. (175372716)
@@ -306,7 +306,7 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 - Fixed: Tapping an inactive Siri “orb” or the microphone button in the Siri app might not turn on Siri. (180066367)
 - As of beta 5, Siri AI conversation history no longer syncs to devices running a prior beta. iCloud sync works between devices updated to beta 5. No existing conversations will be lost. (182145010)
 
-###### Known Issues
+#### Known Issues
 
 - When you ask Siri for Maps information, the response snippets might appear incomplete or display formatting issues. (177116121)
 
@@ -315,54 +315,54 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 
   **Workaround:** Use gaze and pinch to open environments from the Home View.
 
-##### Siri Setup
+### Siri Setup
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The App Clips navigation button appears in Siri settings, even though the App Clips feature is not supported on visionOS. (178269460)
 
-##### Spatial Accessories
+### Spatial Accessories
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: During use, Spatial Accessories - such as the Logitech Muse stylus or PSVR2 controllers - might stop registering inputs or being tracked. (177983488)
 
-##### Spatial Gallery
+### Spatial Gallery
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Spatial Gallery may freeze when loading panoramas. (177737702)
 
-##### Spatial Preview
+### Spatial Preview
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Some large 3D models with poor mesh connectivity of approximately 750,000 to 3.75 million triangles might not appear when previewing on Apple Vision Pro. (174366004)
 
-##### Spatial Web
+### Spatial Web
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: WebXR might not render when you use Simulator. (178666073)
 
-##### Status Bar
+### Status Bar
 
-###### Known Issues
+#### Known Issues
 
 - Battery percentage might not be up-to-date in the status bar. (174929463)
 
   **Workaround:** Open Control Center to update the battery percentage.
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - Offer code redemption APIs now return a `VerificationResult` when redemption completes. If a redemption succeeds, your app receives a `VerificationResult` that contains a `Transaction` object. If a redemption fails, your app receives an error that describes what caused the redemption to fail. (141012819)
 - StoreKit now includes the `Transaction.OwnershipType.assigned` and `Transaction.RevocationType.assignmentRevoked` enum values to support volume purchases. `Transaction` query methods now additionally return transactions assigned to the Managed Apple Account. (156749517)
 - New `Product.ProductType` APIs represent subscription Bundles and subscription Suites. New APIs in `Product.SubscriptionInfo.BundledSubscription` let you fetch merchandising data about subscriptions contained in a Bundle. Transaction and RenewalInfo contain new fields that provide information about purchases and customer status regarding Bundles and Suites. (160501742)
 - `partnerName` and `partnerId` properties for Advanced Commerce API are available in [Transaction.AdvancedCommerceInfo](../StoreKit/transaction/advancedcommerceinfo-swift.struct.md) and [RenewalInfo.AdvancedCommerceInfo](../StoreKit/product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct.md). (167808780)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The refund request, offer code redemption, and manage subscriptions sheets might fail to present in TestFlight. (180999342) (FB23487953)
 - Fixed: Displaying the offer code sheet or the manage subscription sheet consecutively might cause the app to hang when using StoreKit Testing in Xcode. (181171733)
@@ -370,9 +370,9 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 - Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases. (181842500)
 - Fixed: Transactions fail to finish. (183165269)
 
-##### StoreKit Testing in Xcode
+### StoreKit Testing in Xcode
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The unified app receipt is not updated after forcing a subscription expiration with `SKTestSession`. (102093015) (FB11767567)
 - Fixed: The `SKTestSession` `disableDialogs` setting is not always respected for all system dialogs. (154390284) (FB18403150)
@@ -385,26 +385,26 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 - Fixed: Purchases fail on visionOS when initiated from offer code redemption or from the manage subscriptions sheet. (180741834)
 - Fixed: Intro offer eligibility does not reset immediately after calling `SKTestSession.clearTransactions()`. (183933307) (FB24137836)
 
-###### Known Issues
+#### Known Issues
 
 - Changing the storefront or locale using `SKTestSession` doesn’t propagate through `Storefront.updates`. (184155259)
 - Failed purchases using `SKTestSession` might display error dialogs even when `dialogsDisabled` is set to true. (184255116)
 
-##### Swift Charts
+### Swift Charts
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When your project has a minimum deployment target lower than 27.0, using conditionals inside a `Chart` closure produces the warning “Conformance of `_ConditionalContent<TrueContent, FalseContent>` to `ChartContent` is only available in ‘’ 27.0 or newer,” and the app might crash at runtime when that content is loaded. (174168981)
 
-##### SwiftData
+### SwiftData
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: You might experience a deadlock for @Query when saving a ModelContext on a background actor while scheduling new async tasks for a ModelActor. (178113288)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - `AsyncImage` now automatically caches downloaded images using HTTP caching protocols, allowing servers to control caching behavior via standard headers. You can customize caching for specific images using the new `AsyncImage` initializers that accept `URLRequest` with custom `cachePolicy` settings. Additionally, you can set a custom `URLSession` using the new `View.asyncImageURLSession(_:)` API to control how all child `AsyncImage` views perform data tasks. (78212597)
 - A `@State` declared with an expression as its initial value used to evaluate the expression each time the view struct re-instantiates. In the case of `@State private var model = Model()`, this means `Model.init()` gets called many times throughout the view’s lifetime. Xcode 27 introduces a new `@State` implementation that avoids this repeated evaluation. This new behavior back-deploys to iOS 17 aligned OSes. The new `@State` is implemented with a Swift macro. It is largely source compatible with the property wrapper version, with a few exceptions.
@@ -483,7 +483,7 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 - The `makeFileWrapper` closure of `FileWrapperDocumentWriter` now receives a second argument, `previous: FileWrapper?`, holding the `FileWrapper` from the document’s most recent read or write when one is available. Package documents can mutate `previous` in place and return it so that `FileWrapper` only writes children whose contents changed, avoiding rewriting an entire package on every save. Documents stored as a single file can ignore the second argument and return a fresh `FileWrapper` as before. Existing call sites must update their closures to accept the new parameter. (180301399)
 - `DocumentReader.Source` and `DocumentWriter.Destination` now default to `URL`. Conforming types that read from or write to a file URL no longer need to declare `typealias Source = URL` or `typealias Destination = URL`. (180301692)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When you apply both `.fileExporter(_:...)` and `.fileMover(_:...)` modifiers to a view, some dialogs might not present correctly. (154080867)
 - Fixed: In apps built with the 27.0 SDKs, `containerRelativeFrame(_:alignment:)` incorrectly accounts for safe-area insets on a `ScrollView`’s non-scrollable axis, causing the calculated scrollable content size to be too small. For example, a view using `containerRelativeFrame(.vertical)` inside a horizontal `ScrollView` extends into vertical safe-area regions, such as the navigation bar and home indicator, because only the scrollable axis insets are applied. (165913417)
@@ -494,78 +494,78 @@ The visionOS 27 SDK provides support to develop apps for Apple Vision Pro device
 - The `makeDocument:` and `makeReadableDocument:` closures passed to `DocumentGroup` initializers are now `@MainActor`-isolated. SwiftUI invokes these factories on the main actor when constructing a document instance, allowing the closure body to access main-actor state — including the supplied `URLDocumentConfiguration` — without hopping isolation domains. (180302065)
 - `URLDocumentConfiguration` is a `@MainActor`-isolated `@Observable` reference type and no longer conforms to `Sendable`. Code that captured a configuration in a `Sendable` closure or stored it in a `Sendable` value should drop the constraint and access the configuration on the main actor. (180302075)
 
-###### Deprecations
+#### Deprecations
 
 - The `FileDocument` protocol is deprecated. Use `ReadableDocument` for read-only documents or `Document` for documents that support reading and writing. (178776840)
 
-##### System
+### System
 
-###### New Features
+#### New Features
 
 - System now provides Swift APIs for the C `stat`, `lstat`, `fstat`, and `fstatat` system calls. This includes a new `Stat` type with initializers from `FilePath`, `FileDescriptor`, or a C string; `FilePath.stat()` and `FileDescriptor.stat()` instance methods; and supporting types (`FileType`, `FileMode`, `FileFlags`, `UserID`, `GroupID`, `DeviceID`, and `Inode`). See [SYS-0006](https://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md) for more details. (160612181)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [SYS-0006](https://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [SYS-0008](https://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details. (177911316)
 
-##### TestFlight
+### TestFlight
 
-###### Known Issues
+#### Known Issues
 
 - Apps installed via TestFlight may launch into a blank window with no content. The TestFlight “What to Test” introductory screen may not appear before the app, or the app’s window may render empty. (179387790)
 
   **Workaround:** Close the blank window and relaunch the app from the Home View. The launch typically succeeds within 1–3 attempts. If an app remains stuck, force-quit it (long-press the Digital Crown) and launch again from the Home View.
 
-##### TextKit
+### TextKit
 
-###### New Features
+#### New Features
 
 - `NSTextTable` and its related objects and types are available to UIKit clients starting with OS 27 releases. (159870239)
 
-##### UIKit
+### UIKit
 
-###### New Features
+#### New Features
 
 - When linked on iOS 27, tvOS 27, macCatalyst 27, or visionOS 27 SDKs, you can use `UIScene.extendStateRestoration` and `UIScene.completeStateRestoration` to extend state restoration for `UIScene.ActivationState.background` to `UIScene.ActivationState.foreground` lifecycle transitions. (161843040)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `-[UIApplication supportedInterfaceOrientationsForWindow:]` and `-[UIApplicationDelegate application:supportedInterfaceOrientationsForWindow:]` are marked as unavailable in the visionOS SDK rather than deprecated. (178170882)
 - Fixed: Views hosted in a UIHostingController and positioned using Auto Layout might have broken layout due to an overly aggressive fix for a layout feedback loop. (181943015)
 
-###### Deprecations
+#### Deprecations
 
 - Apps built with the latest SDK must adopt the scene-based life cycle or they fail to launch. For migration guidance, see [Transitioning to the UIKit scene-based life cycle](../UIKit/transitioning-to-the-uikit-scene-based-life-cycle.md). (141837548)
 
-##### USDKit
+### USDKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Some types of USD attributes cannot be read or modified. (170653056)
 - Fixed: Array, vector, matrix, and quaternion types cannot be authored using USDKit. (178071414)
 
-###### Deprecations
+#### Deprecations
 
 - Meshes compressed using the USDKit export API or `usdcrush tool` in Beta 1 cannot be decoded by Beta 2, and  meshes from Beta 2 cannot be decoded by Beta 1. (177417812)
 
-##### VideoToolbox
+### VideoToolbox
 
-###### New Features
+#### New Features
 
 - `VTLowLatencySuperResolutionScalerConfiguration` now supports a 1.5x scale factor. Call `+supportedScaleFactorsForFrameWidth:frameHeight:` to discover the scale factors available for your source dimensions. (177635243)
 - `VTLowLatencyFrameInterpolationConfiguration` now supports arbitrary source dimensions up to 1080p. (179040806)
 
-##### WebKit
+### WebKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Some models embedded in web pages might render off-center within the portal or might be hidden by portal edges. (174193414)
 - Fixed: 3D models hosted in `<model>` HTML elements might appear darker than expected when the system environment is set to Dark Mode. (175191357)
 - Fixed: The `<model>` element renders differently across iOS, macOS and visionOS, primarily as brightness/darkening differences and some color temperature and specular highlight discrepancies. (177195829)
 
-##### Xcode
+### Xcode
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When you use the Debug View Hierarchy tool (View Debugger) to inspect an app that presents RealityKit content with SwiftUI RealityView, the RealityKit scene appears empty: the RealityView’s entities are missing from the captured hierarchy and the RealityKit debugger shows no content. This affects apps running on visionOS, the iOS Simulator, and macOS. Debugging of non-RealityKit content (UIKit, AppKit, and 2D SwiftUI views) is unaffected. The content is still present in your app and renders correctly at runtime; only its visibility to the View Debugger is affected, due to a change in how RealityKit exposes RealityView-hosted entities to the debugging APIs the View Debugger relies on. (177083261)
 

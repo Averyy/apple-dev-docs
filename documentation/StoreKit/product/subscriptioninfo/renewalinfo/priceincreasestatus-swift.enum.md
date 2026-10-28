@@ -22,7 +22,7 @@ Status values that indicate whether an auto-renewable subscription is subject to
 enum PriceIncreaseStatus
 ```
 
-#### Overview
+## Overview
 
 For more information, see [Managing Price Increases for Auto-Renewable Subscriptions](../../../managing-price-increases-for-auto-renewable-subscriptions.md).
 

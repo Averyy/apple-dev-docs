@@ -15,7 +15,7 @@ Creates a new Open panel and initializes it with a default configuration.
 + (NSOpenPanel *) openPanel;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized Open panel.
 

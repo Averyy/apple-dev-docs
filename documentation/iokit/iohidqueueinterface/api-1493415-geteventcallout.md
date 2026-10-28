@@ -16,11 +16,11 @@ Gets the event callout.
 IOReturn (*getEventCallout)(void *self, IOHIDCallbackFunction *outCallback, void **outCallbackTarget, void **outCallbackRefcon);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 
-#### Discussion
+## Discussion
 
 This callback will be called the queue transitions to non-empty.
 

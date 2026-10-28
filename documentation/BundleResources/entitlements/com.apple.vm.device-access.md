@@ -18,7 +18,7 @@ A Boolean value that indicates whether the app captures USB devices and uses the
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 The entitlement is required to use the [IOUSBHost](../../IOUSBHost/IOUSBHost.md) APIs for USB device capture.
 

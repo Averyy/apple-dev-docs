@@ -21,11 +21,11 @@ Formats a decimal value, using this style.
 func format(_ value: Decimal) -> String
 ```
 
-#### Return Value
+## Return Value
 
 A string representation of `value`, formatted according to the style’s configuration.
 
-#### Discussion
+## Discussion
 
 Use this method when you want to create a single style instance, and then use it to format multiple decimal values. To format a single decimal value, use the [`Decimal`](../../../decimal.md) instance method [`formatted(_:)`](../../formatted%28_%29.md), passing in an instance of [`Decimal.FormatStyle.Currency`](../currency.md).
 

@@ -21,11 +21,11 @@ optional func safariViewController(_ controller: SFSafariViewController, activit
 - (NSArray<UIActivity *> *) safariViewController:(SFSafariViewController *) controller activityItemsForURL:(NSURL *) URL title:(NSString *) title;
 ```
 
-#### Return Value
+## Return Value
 
 An array of application-specific services you have chosen to include in the [`UIActivityViewController`](../../UIKit/uiactivityviewcontroller.md) object.
 
-#### Discussion
+## Discussion
 
 The view controller calls this method when the view is about to show an activity view controller. Your delegate can provide unique, application-specific services (such as a social media service) to be included with the system-provided sharing services. See [`UIActivity`](../../UIKit/uiactivity.md).
 

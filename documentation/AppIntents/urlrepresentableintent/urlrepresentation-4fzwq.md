@@ -22,7 +22,7 @@ The URL representation of the app intent.
 static var urlRepresentation: Self.URLRepresentation { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to store the URL for your app intent. When setting the value of this property, you can use a combination of static text and placeholder values to generate the final URL. The following code shows an app intent that opens a specific website page:
 

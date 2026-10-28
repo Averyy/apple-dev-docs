@@ -16,11 +16,11 @@ Sets the amount of idle time that must pass before suspending the device.
 virtual kern_return_t setIdlePolicy(USBIdlePolicyType type, uint16_t idleTimeMs);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 Once the interface or pipe is idle, it defers electrical suspension of the device for the specified duration.
 

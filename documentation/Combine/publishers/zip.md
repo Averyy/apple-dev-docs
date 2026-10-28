@@ -21,7 +21,7 @@ A publisher created by applying the zip function to two upstream publishers.
 struct Zip<A, B> where A : Publisher, B : Publisher, A.Failure == B.Failure
 ```
 
-#### Overview
+## Overview
 
 Use `Publishers.Zip` to combine the latest elements from two publishers and emit a tuple to the downstream. The returned publisher waits until both publishers have emitted an event, then delivers the oldest unconsumed event from each publisher together as a tuple to the subscriber.
 

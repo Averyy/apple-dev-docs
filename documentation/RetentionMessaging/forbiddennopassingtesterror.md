@@ -15,7 +15,7 @@ An error that indicates that passing a performance test is required before you c
 object ForbiddenNoPassingTestError
 ```
 
-#### Overview
+## Overview
 
 Your server needs to pass a performance test before you can call the [`Configure Realtime URL`](./configure-realtime-url.md) endpoint to set a URL for your production environment. For more information, see [`Initiate Performance Test`](./initiate-performance-test.md).
 

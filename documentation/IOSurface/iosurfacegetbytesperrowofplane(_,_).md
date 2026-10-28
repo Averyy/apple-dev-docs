@@ -24,7 +24,7 @@ func IOSurfaceGetBytesPerRowOfPlane(_ buffer: IOSurfaceRef, _ planeIndex: Int) -
 size_t IOSurfaceGetBytesPerRowOfPlane(IOSurfaceRef buffer, size_t planeIndex);
 ```
 
-#### Discussion
+## Discussion
 
 If the planeIndex is greater than or equal to the plane count of the IOSurface, zero is returned…. with one exception. If this IOSurface has zero planes and a planeIndex of zero is passed in, the routines function just like the non-planar APIs. This is to allow higher level code to treat planar and non-planar buffers is a more uniform fashion.
 

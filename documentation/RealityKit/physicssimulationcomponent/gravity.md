@@ -20,7 +20,7 @@ The gravity for the simulation relative to the simulation entity.
 var gravity: SIMD3<Float>
 ```
 
-#### Discussion
+## Discussion
 
 The value stored in this property is the gravitational acceleration applied to dynamic physics body entities every frame along the negative world y-axis. The default value is `-9.81` meters per second squared.
 

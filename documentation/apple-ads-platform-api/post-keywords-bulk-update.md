@@ -9,15 +9,15 @@ Updates multiple keywords in a single request.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint updates multiple keywords in a single request. Each item in the `items` array must include the keyword `id`. You can update only `bid` and `status` per keyword. The keyword `text` and `matchType` are immutable after creation.
 
 This endpoint is well-suited for batch bid adjustments. For example, raise bids on high-performing keywords after a performance review, or pause a set of underperforming keywords in one call.
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Raise bids on two keywords and pause a third.
 
@@ -58,7 +58,7 @@ POST /v1/keywords/bulk-update
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

@@ -21,7 +21,7 @@ The range of characters in the original text corresponding to the match.
 let range: Range<String.Index>?
 ```
 
-#### Discussion
+## Discussion
 
 Use this range to add visual highlighting or interactive UI controls to the displayed text.
 

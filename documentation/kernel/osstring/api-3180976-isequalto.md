@@ -24,11 +24,11 @@ bool isEqualTo(const OSString *aString);
 virtual bool isEqualTo(const OSString *aString);
 ```
 
-#### Return Value
+## Return Value
 
 true iff the two strings have the same length and characters.
 
-#### Discussion
+## Discussion
 
 If the passed OSString object has the same length and all characters are identical, true is returned. Otherwise false is returned.
 

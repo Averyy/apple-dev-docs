@@ -19,7 +19,7 @@ enum Category
 enum AVAudioRoutingArbitrationCategory : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The category provides context that helps the operating system arbitrate between Apple devices that are trying to take ownership of a Bluetooth audio route.
 

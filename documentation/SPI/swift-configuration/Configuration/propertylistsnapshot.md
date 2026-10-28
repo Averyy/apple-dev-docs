@@ -24,11 +24,11 @@ A snapshot of configuration values parsed from property list (plist) data.
 struct PropertyListSnapshot
 ```
 
-#### Overview
+## Overview
 
 This structure represents a point-in-time view of configuration values. It handles the conversion from property list types to configuration value types.
 
-#### Usage
+## Usage
 
 Use with [`FileProvider`](./fileprovider.md) or [`ReloadingFileProvider`](./reloadingfileprovider.md):
 

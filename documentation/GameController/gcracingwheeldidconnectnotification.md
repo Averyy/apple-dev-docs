@@ -16,7 +16,7 @@ A notification that posts after a racing wheel controller connects to the device
 extern NSString * const GCRacingWheelDidConnectNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the [`GCRacingWheel`](./gcracingwheel.md) object that connects to the device.
 

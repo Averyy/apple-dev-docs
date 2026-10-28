@@ -19,7 +19,7 @@ The name your app displays for the contact.
 var displayName: String
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the name of a person or business. For example, you might specify “John Appleseed” or “Acme Corp”.
 

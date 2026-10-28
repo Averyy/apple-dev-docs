@@ -24,7 +24,7 @@ var sampleReferenceBaseURL: URL? { get set }
 @property (nonatomic, copy, nullable) NSURL * sampleReferenceBaseURL;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is an absolute URL, the sample locations written to the file when appending sample references to this track are relative to this URL. The URL must point to a location contained by any common parent directory of the locations that will be referenced. For example, setting the this property to `file:///Users/johnappleseed/Movies/` and appending sample buffers that refer to `file:///Users/johnappleseed/Movies/data/movie1.mov` will cause the sample reference `data/movie1.mov` to be written to the movie file.
 

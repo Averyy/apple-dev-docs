@@ -18,7 +18,7 @@ Support hardware game controllers in your game.
 
 - [Discovering game controllers](./discovering-game-controllers.md)
 
-#### Overview
+## Overview
 
 Use Game Controller to support users interacting with your app using a physical or virtual game controller. Game controllers include third-party products, such as the DualShock 4, DualSense, and Xbox, as well as the mouse, keyboard, Siri Remote, and racing wheels.
 

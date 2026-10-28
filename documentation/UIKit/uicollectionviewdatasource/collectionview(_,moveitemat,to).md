@@ -23,7 +23,7 @@ optional func collectionView(_ collectionView: UICollectionView, moveItemAt sour
 - (void) collectionView:(UICollectionView *) collectionView moveItemAtIndexPath:(NSIndexPath *) sourceIndexPath toIndexPath:(NSIndexPath *) destinationIndexPath;
 ```
 
-#### Discussion
+## Discussion
 
 You must implement this method to support the reordering of items within the collection view. If you don’t implement this method, the collection view ignores any attempts to reorder items.
 

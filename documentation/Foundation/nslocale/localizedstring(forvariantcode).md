@@ -25,11 +25,11 @@ func localizedString(forVariantCode variantCode: String) -> String?
 - (NSString *) localizedStringForVariantCode:(NSString *) variantCode;
 ```
 
-#### Return Value
+## Return Value
 
 The localized name of the variant.
 
-#### Discussion
+## Discussion
 
 For example, calling this method on an American English (`en_US`) locale, passing `"POSIX"` for `variantCode`, produces the string `"Computer"`.
 

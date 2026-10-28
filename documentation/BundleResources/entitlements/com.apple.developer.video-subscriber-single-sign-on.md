@@ -17,7 +17,7 @@ A Boolean value that indicates whether your app can use the TV Provider Authenti
 - **Name**: `com.apple.developer.video-subscriber-single-sign-on`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 This entitlement lets you use the [Video Subscriber Account](../../VideoSubscriberAccount/VideoSubscriberAccount.md) framework.
 

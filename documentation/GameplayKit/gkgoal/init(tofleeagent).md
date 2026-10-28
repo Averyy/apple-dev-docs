@@ -24,11 +24,11 @@ convenience init(toFleeAgent agent: GKAgent)
 + (instancetype) goalToFleeAgent:(GKAgent *) agent;
 ```
 
-#### Return Value
+## Return Value
 
 A new goal object.
 
-#### Discussion
+## Discussion
 
 This goal is similar to one produced by the [`init(toAvoid:maxPredictionTime:)`](./init%28toavoid,maxpredictiontime%29-96a0i.md) method with a single agent and a `maxPredictionTime` parameter of zero. Affected agents will attempt to move away from the target agent, but without taking the target’s movement into account.
 

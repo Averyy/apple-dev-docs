@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two plane anchors are equal.
 static func == (lhs: PlaneAnchor, rhs: PlaneAnchor) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two plane anchors are equal; otherwise, `false`.
 

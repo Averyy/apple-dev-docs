@@ -21,7 +21,7 @@ let kSecDigestLengthAttribute: CFString
 extern CFStringRef const kSecDigestLengthAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFNumber`](../CoreFoundation/cfnumber.md) that contains the digest length.
 

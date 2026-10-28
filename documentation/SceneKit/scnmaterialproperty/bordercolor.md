@@ -27,7 +27,7 @@ var borderColor: Any? { get set }
 @property (nonatomic, retain, nullable) id borderColor;
 ```
 
-#### Discussion
+## Discussion
 
 When the material property’s contents are a texture image and its texture wrapping properties are set to [`SCNWrapMode.clampToBorder`](../scnwrapmode/clamptoborder.md), the border color appears in areas of a textured geometry not covered by the texture image, as shown in .
 

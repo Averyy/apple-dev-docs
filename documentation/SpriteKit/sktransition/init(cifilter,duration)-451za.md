@@ -24,11 +24,11 @@ init(ciFilter filter: CIFilter, duration sec: TimeInterval)
 + (SKTransition *) transitionWithCIFilter:(CIFilter *) filter duration:(NSTimeInterval) sec;
 ```
 
-#### Return Value
+## Return Value
 
 A new transition.
 
-#### Discussion
+## Discussion
 
 The filter used to perform the transition must a be filter that requires only two image parameters (`inputImage`, `inputTargetImage`) and generates a single image (`outputImage`). The transition automatically sets the filter’s `inputImage`, `inputTargetImage`, and `inputTime` properties. You must set up any other filter properties before creating the transition.
 

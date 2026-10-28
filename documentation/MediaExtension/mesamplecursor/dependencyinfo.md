@@ -19,7 +19,7 @@ optional var dependencyInfo: AVSampleCursorDependencyInfo { get }
 @property (nonatomic, readonly) AVSampleCursorDependencyInfo dependencyInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This value includes any valid flags set. Don’t implement this property if this kind of dependency information doesn’t make sense for the sequence of samples.
 

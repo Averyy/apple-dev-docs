@@ -24,7 +24,7 @@ let kCFStreamPropertySSLPeerTrust: CFString
 extern CFStringRef const kCFStreamPropertySSLPeerTrust;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see `SSLCopyPeerTrust` in `Security/SecureTransport.h`.
 

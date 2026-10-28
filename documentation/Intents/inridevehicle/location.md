@@ -32,7 +32,7 @@ var location: CLLocation? { get set }
 @property (atomic, copy, readwrite, nullable) CLLocation * location;
 ```
 
-#### Discussion
+## Discussion
 
 Siri uses this information to display the vehicle’s approximate location on the map. Siri and Maps use the image in the [`mapAnnotationImage`](./mapannotationimage.md) property to display the vehicle on the map.
 

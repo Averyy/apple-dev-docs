@@ -21,7 +21,7 @@ An object that represents a message to send or receive, containing protocol meta
 class ContentContext
 ```
 
-#### Overview
+## Overview
 
 For sending, you should use [`defaultMessage`](./contentcontext/defaultmessage.md) unless there is a reason to override some values.
 

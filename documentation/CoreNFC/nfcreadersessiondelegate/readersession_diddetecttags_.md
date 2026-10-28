@@ -17,7 +17,7 @@ Provides an array of tags detected by the reader session.
 - (void) readerSession:(NFCReaderSession *) session didDetectTags:(NSArray<__kindof id<NFCTag>> *) tags;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when the reader session detects NFC tags in a polling sequence.
 

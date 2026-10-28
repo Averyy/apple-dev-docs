@@ -15,7 +15,7 @@ Set the handler for receiving accessory anchor updates.
 extern void ar_accessory_tracking_provider_set_update_handler(ar_accessory_tracking_provider_t accessory_tracking_provider, dispatch_queue_t accessory_tracking_updates_queue, ar_accessory_tracking_update_handler_t accessory_tracking_update_handler);
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Routine anchor updates will be disabled unless a handler is provided to this method. This is done to save CPU time for applications which do not need an anchor stream.
 

@@ -22,7 +22,7 @@ func GLKMatrix4MultiplyVector3Array(_ matrix: GLKMatrix4, _ vectors: UnsafeMutab
 static void GLKMatrix4MultiplyVector3Array(GLKMatrix4 matrix, GLKVector3 *vectors, size_t vectorCount);
 ```
 
-#### Discussion
+## Discussion
 
 The input vectors are treated as they were 4-component vectors with a `w`-component of `0.0`.
 

@@ -25,11 +25,11 @@ func BLASSetThreading(_ threading: BLAS_THREADING) -> Int32
 int BLASSetThreading(const enum BLAS_THREADING threading);
 ```
 
-#### Return Value
+## Return Value
 
 `0` on success or `-1` if the current platform doesn’t support the threading model.
 
-#### Discussion
+## Discussion
 
 This function sets the threading model for subsequent calls into BLAS and LAPACK.
 

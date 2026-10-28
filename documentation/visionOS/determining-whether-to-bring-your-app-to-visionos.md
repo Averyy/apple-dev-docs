@@ -5,7 +5,7 @@
 
 Decide whether to bring your existing iPadOS or iOS app to visionOS.
 
-#### Overview
+## Overview
 
 If you have an existing app that runs in iPadOS or iOS and you want to bring it to visionOS, you can choose to either run your compatible app as-is or create a visionOS-specific version.
 
@@ -13,7 +13,7 @@ visionOS supports most of the same technologies as iOS, so many apps built to ru
 
 The visionOS SDK has many differences from the iOS SDK. Frameworks and features might behave differently or be unavailable when your app runs in visionOS. Use this article to ensure your app behaves as you expect on every platform.
 
-#### Decide whether your app suits the platform
+## Decide whether your app suits the platform
 
 In some cases, you may decide your app is not well-suited to visionOS due to platform differences. For example, consider the following types of apps:
 
@@ -21,7 +21,7 @@ In some cases, you may decide your app is not well-suited to visionOS due to pla
 - **Navigation-based apps.** This includes apps that follow a person’s location changes, such as apps that offer turn-by-turn directions or navigation.
 - **Selfie or camera-based apps.** This includes apps where the primary purpose is to capture images or video from the device’s cameras. The device cameras are unavailable, but continuity camera and persona capture are available on Apple Vision Pro.
 
-#### Opt out of running on visionOS
+## Opt out of running on visionOS
 
 If you don’t want your app to run on Apple Vision Pro, change your app’s availability in App Store Connect:
 
@@ -33,15 +33,15 @@ When you remove your app’s availability for Apple Vision Pro, the App Store st
 
 For information on managing your app’s availability for Apple Vision Pro, see [Manage availability of iPhone and iPad apps on Apple Vision Pro](https://developer.apple.com/help/app-store-connect/manage-your-apps-availability/manage-availability-of-iphone-and-ipad-apps-on-apple-vision-pro).
 
-#### Run as a compatible app on visionOS
+## Run as a compatible app on visionOS
 
 visionOS runs compatible iPad and iPhone apps by linking against the iOS SDK to provide continuous access to existing content right away. visionOS supports most of the same technologies as iOS, so many apps built to run on iPad or iPhone can run unmodified on Apple Vision Pro. Read [Making your existing app compatible with visionOS](./making-your-app-compatible-with-visionos.md) to learn how to make your app run successfully as a compatible app in visionOS.
 
-#### Create a visionOS version of your app
+## Create a visionOS version of your app
 
 Apps built specifically for visionOS adopt the standard system appearance, and they look more natural on the platform. Creating a version of your app specifically for visionOS gives you the opportunity to add elements that work well on the platform, such as 3D content and immersive experiences. Read [Bringing your existing apps to visionOS](./bringing-your-app-to-visionos.md) for more information on how to modify your app to run successfully as a visionOS app and how to update your interface to take advantage of visionOS-specific elements.
 
-#### Check framework availability in visionOS
+## Check framework availability in visionOS
 
 The following frameworks are deprecated in their entirety in both iOS and visionOS. If your app still uses these frameworks, stop using them immediately. The reference documentation for each framework includes information about how to update your code.
 

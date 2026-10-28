@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_PTY_GRANT: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_PTY_GRANT
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`pty_grant`](./es_events_t/pty_grant.md), which has the type [`es_event_pty_grant_t`](./es_event_pty_grant_t.md).
 

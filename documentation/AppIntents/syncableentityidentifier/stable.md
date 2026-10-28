@@ -21,7 +21,7 @@ The identifier you use to refer to the entity across devices.
 let stable: StableID?
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to retrieve the stable identifier value you specified at initialization time. When the framework creates identifiers for on-device operations, it can set this property to `nil` if it doesn’t need the stable identifier.
 

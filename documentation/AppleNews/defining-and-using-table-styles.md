@@ -5,7 +5,7 @@
 
 Apply table styles, such as borders and backgrounds, to the rows, columns, and cells in your HTML and JSON  tables.
 
-#### Overview
+## Overview
 
 Apple News Format lets you apply styles to individual rows, columns, and cells in your HTML and JSON data tables. In addition, you can apply text styles to text in table cells. In an HTML table, you format the text using HTML. In a JSON table, you use [`FormattedText`](../AppleNewsFormat/formattedtext.md) as the value of a key-value pair in a record in [`RecordStore`](../AppleNewsFormat/recordstore.md). The [`DataDescriptor`](../AppleNewsFormat/datadescriptor.md) for that record must have a `dataType` of `text`.
 

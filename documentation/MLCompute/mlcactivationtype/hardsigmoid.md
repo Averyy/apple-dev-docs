@@ -23,7 +23,7 @@ case hardSigmoid
 MLCActivationTypeHardSigmoid
 ```
 
-#### Discussion
+## Discussion
 
 This activation type implements the following function:
 

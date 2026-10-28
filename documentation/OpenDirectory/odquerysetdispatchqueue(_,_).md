@@ -20,7 +20,7 @@ func ODQuerySetDispatchQueue(_ query: ODQueryRef!, _ queue: dispatch_queue_t!)
 extern void ODQuerySetDispatchQueue(ODQueryRef query, dispatch_queue_t queue);
 ```
 
-#### Discussion
+## Discussion
 
 When the query is complete, the query’s callback function is called with both `inResults` and `inError` set to `NULL`.
 

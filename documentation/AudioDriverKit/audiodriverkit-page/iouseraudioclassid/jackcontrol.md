@@ -15,7 +15,7 @@ The identifier for the audio jack control class.
 JackControl
 ```
 
-#### Discussion
+## Discussion
 
 This class is a subclass of the [`IOUserAudioBooleanControl`](../../iouseraudiobooleancontrol.md) class where a `true` value indcates the presence of something plugged into the element.
 

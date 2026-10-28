@@ -21,7 +21,7 @@ Decoder that must be provided to `executeDistributedTarget` and is used by the S
 protocol DistributedTargetInvocationDecoder<SerializationRequirement>
 ```
 
-##### Decoding DistributedActor arguments using Codable
+### Decoding DistributedActor arguments using Codable
 
 When using an actor system where `ActorID` is `Codable`, every distributed actor using that system is also implicitly `Codable` (see [`DistributedActorSystem`](./distributedactorsystem.md)). Such distributed actors are encoded as their `ActorID` stored in an `Encoder.singlevaluecontainer()`. When `Codable` is being used by such a system, the [`decodeNextArgument()`](./distributedtargetinvocationdecoder/decodenextargument%28%29.md) method will be using `Decoder` to decode the incoming values, which may themselves be distributed actors.
 

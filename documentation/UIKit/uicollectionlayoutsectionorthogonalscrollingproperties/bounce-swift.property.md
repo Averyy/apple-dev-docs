@@ -23,7 +23,7 @@ var bounce: UICollectionLayoutSectionOrthogonalScrollingProperties.Bounce { get 
 @property (nonatomic) UICollectionLayoutSectionOrthogonalScrollingBounce bounce;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to specify whether the section stops scrolling immediately upon encountering the content boundary, or if it continues scrolling past the boundary and then bounces back.
 

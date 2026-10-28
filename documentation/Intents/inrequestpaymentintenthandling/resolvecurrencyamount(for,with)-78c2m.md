@@ -33,7 +33,7 @@ optional func resolveCurrencyAmount(for intent: INRequestPaymentIntent) async ->
 - (void) resolveCurrencyAmountForRequestPayment:(INRequestPaymentIntent *) intent withCompletion:(void (^)(INCurrencyAmountResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to verify that the request can be made in the intended currency. If the amount is outside of the minimum or maximum transaction amount supported by your app, return a successful result and use your response object to communicate that the amount is below the minimum or above the maximum amount. Do not use this method to validate that the payer’s account contains the necessary funds to complete the transaction.
 

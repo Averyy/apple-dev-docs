@@ -20,7 +20,7 @@ Returns the object at a given path, relative to this prim.
 func object(at path: USDLayer.Path) -> USDStage.Object
 ```
 
-#### Discussion
+## Discussion
 
 If `path` is relative, it is anchored to this prim’s path. If no object exists at the resolved path, returns an invalid object handle.
 

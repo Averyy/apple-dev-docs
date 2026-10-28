@@ -23,7 +23,7 @@ case currentContext
 UIModalPresentationCurrentContext
 ```
 
-#### Discussion
+## Discussion
 
 Using this presentation style, the current view controller’s content is displayed over the view controller whose [`definesPresentationContext`](../uiviewcontroller/definespresentationcontext.md) property is [`true`](../../Swift/true.md). UIKit may walk up the view controller hierarchy to find a view controller that wants to define the presentation context. The views belonging to the presenting view controller are removed after the presentation completes.
 

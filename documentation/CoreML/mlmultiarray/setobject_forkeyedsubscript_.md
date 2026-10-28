@@ -21,7 +21,7 @@ Assigns a number to the multiarray’s element at the location that the number a
 - (void) setObject:(NSNumber *) obj forKeyedSubscript:(NSArray<NSNumber *> *) key;
 ```
 
-#### Discussion
+## Discussion
 
 See [`subscript(_:)`](./subscript%28_%29-3d9el.md) for the method’s getter counterpart.
 

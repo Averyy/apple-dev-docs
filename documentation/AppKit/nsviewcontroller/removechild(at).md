@@ -19,7 +19,7 @@ func removeChild(at index: Int)
 - (void) removeChildViewControllerAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method if you want to perform work during the removal of a child view controller. If you do override this method, in your implementation call this method on `super`.
 

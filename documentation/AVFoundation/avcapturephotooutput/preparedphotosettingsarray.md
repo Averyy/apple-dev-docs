@@ -22,7 +22,7 @@ var preparedPhotoSettingsArray: [AVCapturePhotoSettings] { get }
 @property (nonatomic, readonly) NSArray<AVCapturePhotoSettings *> * preparedPhotoSettingsArray;
 ```
 
-#### Discussion
+## Discussion
 
 Some types of photo capture, such as bracketed captures and RAW captures, require the photo output to allocate additional buffers or prepare other resources. To prevent photo capture requests from executing slowly due to lazy resource allocation, you may call the [`setPreparedPhotoSettingsArray(_:completionHandler:)`](./setpreparedphotosettingsarray%28_,completionhandler%29.md) method with an array of settings objects representative of the types of capture you will be performing (such as settings for a bracketed capture, RAW capture, or capture with still image stabilization).
 

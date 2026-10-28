@@ -25,7 +25,7 @@ static var numeric: NSString.CompareOptions { get }
 NSNumericSearch
 ```
 
-#### Discussion
+## Discussion
 
 Numeric comparison only applies to the numerals in the string, not other characters that would have meaning in a numeric representation such as a negative sign, a comma, or a decimal point.
 

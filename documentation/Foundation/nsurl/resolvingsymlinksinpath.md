@@ -25,7 +25,7 @@ var resolvingSymlinksInPath: URL? { get }
 @property (copy, readonly, nullable) NSURL * URLByResolvingSymlinksInPath;
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver has no symbolic links, this property contains a copy of the original URL.
 

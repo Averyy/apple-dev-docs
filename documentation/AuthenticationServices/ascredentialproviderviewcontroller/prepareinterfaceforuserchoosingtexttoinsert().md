@@ -20,7 +20,7 @@ func prepareInterfaceForUserChoosingTextToInsert()
 - (void) prepareInterfaceForUserChoosingTextToInsert;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by the system to prepare the extension’s view controller to present a list of any insertable text with selectable fields.
 

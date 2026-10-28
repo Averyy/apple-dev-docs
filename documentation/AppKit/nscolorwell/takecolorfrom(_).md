@@ -19,7 +19,7 @@ func takeColorFrom(_ sender: Any?)
 - (void) takeColorFrom:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method attempts to access a property or accessor method named `color`. If the object doesn’t implement a `color` accessor, this method does nothing.
 

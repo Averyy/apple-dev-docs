@@ -21,7 +21,7 @@ nonisolated
 func subscriptionStorePickerItemBackground(_ backgroundStyle: some ShapeStyle, in shape: some Shape) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this view modifier to customize the shape of the picker options in a subscription store view, as well as the background style.
 

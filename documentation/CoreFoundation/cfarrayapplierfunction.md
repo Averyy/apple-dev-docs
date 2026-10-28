@@ -25,7 +25,7 @@ typealias CFArrayApplierFunction = (UnsafeRawPointer?, UnsafeMutableRawPointer?)
 typedef void (*)(const void *, void *) CFArrayApplierFunction;
 ```
 
-#### Discussion
+## Discussion
 
 This callback is passed to the [`CFArrayApplyFunction(_:_:_:_:)`](./cfarrayapplyfunction%28_,_,_,_%29.md) function, which iterates over the values in an array and applies the behavior defined in the applier function to each value in an array.
 

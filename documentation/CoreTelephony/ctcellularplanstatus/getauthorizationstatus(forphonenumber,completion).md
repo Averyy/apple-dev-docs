@@ -25,7 +25,7 @@ class func authorizationStatus(forPhoneNumber phoneNumber: String) async throws 
 + (void) getAuthorizationStatusForPhoneNumber:(NSString *) phoneNumber completion:(void (^)(CTCellularPlanStatusAuthorization status, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method before calling [`getHintForPhoneNumber(_:completion:)`](./gethintforphonenumber%28_,completion%29.md) to check whether the person already approved your app’s request to check cellular plan status for their phone number.
 

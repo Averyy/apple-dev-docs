@@ -23,7 +23,7 @@ class func meanSquaredError(reductionType: MLCReductionType, weight: Float) -> S
 + (instancetype) meanSquaredErrorLossWithReductionType:(MLCReductionType) reductionType weight:(float) weight;
 ```
 
-#### Return Value
+## Return Value
 
 A mean squared loss layer.
 

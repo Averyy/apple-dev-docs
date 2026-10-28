@@ -18,7 +18,7 @@ Attaches the output to the reader and returns an output provider for reading cap
 func outputCaptionProvider(for output: AVAssetReaderTrackOutput, validationDelegate: (any AVAssetReaderCaptionValidationHandling)? = nil) -> sending AVAssetReaderOutput.Provider<AVCaptionGroup>
 ```
 
-#### Return Value
+## Return Value
 
 A reader output provider with an interface for reading caption groups.
 

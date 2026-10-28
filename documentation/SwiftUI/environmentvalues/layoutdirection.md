@@ -21,7 +21,7 @@ The layout direction associated with the current environment.
 var layoutDirection: LayoutDirection { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to determine or set whether the environment uses a left-to-right or right-to-left direction.
 

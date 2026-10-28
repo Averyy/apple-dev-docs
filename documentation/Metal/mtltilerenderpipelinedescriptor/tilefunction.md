@@ -24,7 +24,7 @@ var tileFunction: any MTLFunction { get set }
 @property (nonatomic, strong, readwrite) id<MTLFunction> tileFunction;
 ```
 
-#### Discussion
+## Discussion
 
 Kernel-based and fragment-based tile pipeline dispatches act as a barrier against previous draw commands and other dispatches. Kernel-based pipelines wait until all prior access to the tile completes. Fragment-based pipelines wait only until all prior access to the fragment’s location completes.
 

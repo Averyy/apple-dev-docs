@@ -21,7 +21,7 @@ func QLThumbnailCreate(_ allocator: CFAllocator!, _ url: CFURL!, _ maxThumbnailS
 extern QLThumbnailRefQLThumbnailCreate(CFAllocatorRef allocator, CFURLRef url, CGSize maxThumbnailSize, CFDictionaryRef options);
 ```
 
-#### Return Value
+## Return Value
 
 A generated thumbnail of the file at the provided `url`.
 

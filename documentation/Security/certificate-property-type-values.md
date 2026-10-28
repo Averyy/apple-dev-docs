@@ -5,7 +5,7 @@
 
 Recognize the possible certificate property types.
 
-#### Overview
+## Overview
 
 These are the possible values that may be assigned to the [`kSecPropertyKeyType`](./ksecpropertykeytype.md) key in each of the property dictionaries returned by a call to the [`SecCertificateCopyValues(_:_:_:)`](./seccertificatecopyvalues%28_,_,_%29.md) function.
 

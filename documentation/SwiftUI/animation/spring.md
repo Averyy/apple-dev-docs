@@ -22,7 +22,7 @@ A persistent spring animation. When mixed with other `spring()` or `interactiveS
 static var spring: Animation { get }
 ```
 
-#### Discussion
+## Discussion
 
 This uses the default parameter values.
 

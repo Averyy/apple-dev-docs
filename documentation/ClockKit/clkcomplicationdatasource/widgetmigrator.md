@@ -19,7 +19,7 @@ optional var widgetMigrator: any CLKComplicationWidgetMigrator { get }
 @property (nonatomic, readonly) id<CLKComplicationWidgetMigrator> widgetMigrator;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this to provide an instance that can migrate a user’s ClockKit complications to their WidgetKit replacements. For example, update your data source so that it also conforms to the [`CLKComplicationWidgetMigrator`](../clkcomplicationwidgetmigrator.md) protocol.
 

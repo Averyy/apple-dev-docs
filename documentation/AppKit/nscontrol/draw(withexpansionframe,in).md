@@ -19,7 +19,7 @@ func draw(withExpansionFrame contentFrame: NSRect, in view: NSView)
 - (void) drawWithExpansionFrame:(NSRect) contentFrame inView:(NSView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 Note that the view may be different from the original view in which the text appeared.
 

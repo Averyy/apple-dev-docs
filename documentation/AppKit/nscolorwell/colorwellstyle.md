@@ -19,7 +19,7 @@ var colorWellStyle: NSColorWell.Style { get set }
 @property (assign) NSColorWellStyle colorWellStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property determines how the color well presents itself, and how interactions affect it. For details, see [`NSColorWell.Style`](./style.md).
 

@@ -19,7 +19,7 @@ A setting that determines which type of items tightly hug their content.
 @property (nonatomic) UICollectionLayoutListContentHuggingElements contentHuggingElements;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`UICollectionLayoutListContentHuggingElementsSupplementaryHeader`](../uicollectionlayoutlistcontenthuggingelements/uicollectionlayoutlistcontenthuggingelementssupplementaryheader.md) in visionOS, and [`UICollectionLayoutListContentHuggingElementsNone`](../uicollectionlayoutlistcontenthuggingelements/uicollectionlayoutlistcontenthuggingelementsnone.md) on all other platforms.
 

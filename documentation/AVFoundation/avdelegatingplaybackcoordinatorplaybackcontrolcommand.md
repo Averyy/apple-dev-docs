@@ -24,7 +24,7 @@ class AVDelegatingPlaybackCoordinatorPlaybackControlCommand
 @interface AVDelegatingPlaybackCoordinatorPlaybackControlCommand : NSObject
 ```
 
-#### Overview
+## Overview
 
 Playback commands inherit state that identifies their originator and applicable item.
 

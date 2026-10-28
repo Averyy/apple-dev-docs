@@ -20,7 +20,7 @@ Binds multiple textures to the texture argument table, allowing compute function
 func setTextures(_ textures: [(any MTLTexture)?], range: Range<Int>)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This method requires that the number of instances in `textures` be the same as the length of `range`.
 

@@ -18,7 +18,7 @@ The configuration for a new low-level texture resource.
 struct Descriptor
 ```
 
-#### Overview
+## Overview
 
 This descriptor is analogous to `MTLTextureDescriptor`.
 

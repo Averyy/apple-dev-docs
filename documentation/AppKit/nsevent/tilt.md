@@ -19,7 +19,7 @@ var tilt: NSPoint { get }
 @property (readonly) NSPoint tilt;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s value can range from -1.0 to 1.0 for both axes. A negative x-coordinate value indicates a tilt to the left and a positive value indicates a tilt to the right; a negative y-coordinate value indicates a tilt to the top and a positive value indicates a tilt to the bottom. If the device is perfectly perpendicular to the table surface, the values are 0.0 for both axes. This property is valid for mouse events with subtype `NSTabletPointEventSubtype` and for `NSTabletPoint` events.
 

@@ -22,7 +22,7 @@ var pullStreamNodes: [String : PHASEPullStreamNode] { get }
 @property (copy, readonly) NSDictionary<NSString *,PHASEPullStreamNode *> * pullStreamNodes;
 ```
 
-#### Discussion
+## Discussion
 
 A Dictionary containing the pull stream nodes associated with this sound event, for setting renderBlocks on.
 

@@ -12,13 +12,13 @@ Develop games where multiple players interact in real time.
 - Mac Catalyst 17.4+
 - Xcode 15.3+
 
-#### Overview
+## Overview
 
 This sample code project uses the GameKit framework to create a simple real-time game where two players are immediately aware of the actions each other takes. The sample shows both the matchmaker interface that enables players to invite others, and the automatch feature that lets Game Center find players. It provides access to Game Center using the access point and dashboard to show the players’ progress toward an achievement, as well as scores on the game leaderboard. It uses the match object to send game data and text messages between players. It also uses voice chat for additional communications.
 
 To create your own real-time game, replace the SwiftUI files with your gameplay interface, and modify the `RealTimeGame` class to support your game. To extend this sample to use matchmaking rules, see [Finding players using matchmaking rules](./finding-players-using-matchmaking-rules.md).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To configure the sample code project, perform the following steps in Xcode:
 
@@ -33,7 +33,7 @@ To configure the sample code project, perform the following steps in Xcode:
 9. Build and run the sample on the two iOS devices.
 10. If the Welcome to Game Center sheet appears, sign in using a different Apple ID on each device.
 
-##### Initialize the player and register for real-time events
+### Initialize the player and register for real-time events
 
 Before using any GameKit APIs, the game needs to initialize the local player by presenting an interface for them to sign in to Game Center on their device. The `RealTimeGame.authenticatePlayer()` method handles the initialization flow and, when complete, registers for real-time game events.
 
@@ -42,7 +42,7 @@ Before using any GameKit APIs, the game needs to initialize the local player by 
 GKLocalPlayer.local.register(self)
 ```
 
-##### Start a real-time match
+### Start a real-time match
 
 To start a real-time game, the player taps Choose Player on the content view. Then the `RealTimeGame.choosePlayer()` method creates a match request for a two-player game and presents a [`GKMatchmakerViewController`](./gkmatchmakerviewcontroller.md) interface where the player can invite friends or automatch to fill empty slots.
 
@@ -78,7 +78,7 @@ When the status of the players changes from Connecting to Ready in the interface
 
 The `startMyMatchWith(match:)` method sets the `playingGame` property to `true`, which displays the game interface, and loads the opponent’s avatar.
 
-##### Automatch the local player with others
+### Automatch the local player with others
 
 To let Game Center find an opponent without presenting the matchmaker view controller, the player taps the Automatch toggle. The `RealTimeGame.findPlayer()` method creates a match request and passes it to the [`GKMatchmaker.findMatch(for:withCompletionHandler:)`](./gkmatchmaker/findmatch%28for,withcompletionhandler%29.md) method. When a player running another game instance taps the Automatch toggle, the `GKMatchmaker.findMatch(for:withCompletionHandler:)` method returns a match object.
 
@@ -86,7 +86,7 @@ Then the `findPlayer()` method invokes `startMyMatchWith(match:)`, which sets th
 
 To stop finding players, the player taps Automatch again and it invokes `GKMatchmaker.shared().cancel()`.
 
-##### Exchange game data between players
+### Exchange game data between players
 
 Each time the player takes an action, the game shares the results with the other player. When the player taps Take Action, their score increases in both game instances. If the player taps End Game or Forfeit, both game instances exit the match.
 
@@ -109,7 +109,7 @@ In the recipient’s game instance, GameKit invokes the [`GKMatchDelegate.match(
 
 For example, this method exits the match if the opponent ends or forfeits the game. In both game instances, an alert appears showing each player the outcome of the game. When the player taps OK, the game returns to the content view.
 
-##### Start voice chat between players
+### Start voice chat between players
 
 When the player taps the telephone bubble in the game view, the `RealTimeGame.startVoiceChat()` method starts a voice chat audio session with the opponent.
 
@@ -178,7 +178,7 @@ You can enhance this sample to provide more feedback and controls, such as:
 - Let players change the volume using the `voiceChat(volume:)` method.
 - Notify the player when the opponent wants to voice chat.
 
-##### Connect players with friends
+### Connect players with friends
 
 This sample uses Game Center features that let players request friends and let the game access the player’s friends list.
 
@@ -209,7 +209,7 @@ The first time the sample loads the player’s friends, the system displays a di
 
 An error occurs if the sample calls [`loadFriends(_:)`](./gklocalplayer/loadfriends%28_%29.md) without permission or without providing a reason using the `NSGKFriendListUsageDescription` key.
 
-##### Report progress toward an achievement
+### Report progress toward an achievement
 
 The `startMyMatchWith(match:)` method also reports progress toward an achievement. Each time the player starts a match, they earn 10% toward this achievement until they reach 100%.
 
@@ -227,7 +227,7 @@ GKAchievement.report(achievementsToReport, withCompletionHandler: {(error: Error
 
 For details about configuring achievements for a game, see [Rewarding players with achievements](./rewarding-players-with-achievements.md).
 
-##### Submit scores to the leaderboard
+### Submit scores to the leaderboard
 
 The `saveScore()` method saves the local player’s score to the leaderboard when either the player wins or the opponent forfeits.
 
@@ -242,7 +242,7 @@ GKLeaderboard.submitScore(myScore, context: 0, player: GKLocalPlayer.local,
 
 For details about configuring leaderboards, see [Creating recurring leaderboards](./creating-recurring-leaderboards.md).
 
-##### Display achievements and leaderboards
+### Display achievements and leaderboards
 
 The player can see their achievements and top scores using the access point that appears in the upper-left corner, or by tapping the buttons below Game Center Data in the content view. For example, when the player taps Top Scores, the `RealTimeGame.topScore()` method shows the scores in the Game Center dashboard.
 

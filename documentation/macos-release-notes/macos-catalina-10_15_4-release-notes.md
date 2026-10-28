@@ -5,25 +5,25 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 10.15.4 SDK provides support to develop apps for Macs running macOS Catalina 10.15.4. The SDK comes bundled with Xcode 11.4. For information on the compatibility requirements for Xcode 11.4, see [Xcode 11.4 Release Notes](../Xcode-Release-Notes/xcode-11_4-release-notes.md).
 
-##### Endpoint Security
+### Endpoint Security
 
-###### New Features
+#### New Features
 
 - Using a custom Mach service name is now supported for `XPC` between apps and extensions. See [Endpoint Security](../EndpointSecurity/EndpointSecurity.md) for more information. (57244148)
 
-##### Music
+### Music
 
-###### New Features
+#### New Features
 
 - The Music app now supports time-synced lyrics for Apple Music subscribers. (53877474)
 
-##### Safari
+### Safari
 
-###### New Features
+#### New Features
 
 - Content Blocker extensions delivered with Mac Catalyst apps are now available for use in Safari. (43646265)
 

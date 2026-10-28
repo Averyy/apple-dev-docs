@@ -15,7 +15,7 @@ A point that’s centered in the depth dimension on the bottom-leading edge of a
 static let bottomLeading: UnitPoint3D
 ```
 
-#### Discussion
+## Discussion
 
 The leading edge appears on the left in a left-to-right language environment and on the right in a right-to-left environment.
 

@@ -15,7 +15,7 @@ Authorization type used when requesting:
 ar_authorization_type_accessory_tracking
 ```
 
-#### Discussion
+## Discussion
 
 - Accessory tracking @see `ar_accessory_tracking_provider_t`
 

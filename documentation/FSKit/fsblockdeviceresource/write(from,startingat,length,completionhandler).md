@@ -15,7 +15,7 @@ Writes data from from a buffer to the resource and executes a closure afterwards
 func write(from buffer: UnsafeRawBufferPointer, startingAt offset: off_t, length: Int, completionHandler: @escaping (Int, (any Error)?) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 For the read to succeed, requests must conform to any transfer requirements of the underlying resource. Disk drives typically require sector (`physicalBlockSize`) addressed operations of one or more sector-aligned offsets.
 

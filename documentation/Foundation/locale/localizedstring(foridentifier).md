@@ -21,7 +21,7 @@ Returns a localized string for a specified locale identifier.
 func localizedString(forIdentifier identifier: String) -> String?
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the “en” locale, the result for `"es"` is `"Spanish"`.
 

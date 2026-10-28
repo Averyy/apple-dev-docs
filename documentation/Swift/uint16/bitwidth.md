@@ -21,7 +21,7 @@ The number of bits used for the underlying binary representation of values of th
 static var bitWidth: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 The bit width of a `UInt16` instance is 16.
 

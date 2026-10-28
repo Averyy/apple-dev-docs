@@ -21,11 +21,11 @@ nonisolated
 func distortionEffect(_ shader: Shader, maxSampleOffset: CGSize, isEnabled: Bool = true) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A new view that renders `self` with the shader applied as a distortion effect.
 
-#### Discussion
+## Discussion
 
 For a shader function to act as a distortion effect it must have a function signature matching:
 

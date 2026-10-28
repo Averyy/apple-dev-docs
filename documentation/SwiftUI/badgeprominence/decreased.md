@@ -19,7 +19,7 @@ The lowest level of prominence for a badge.
 static let decreased: BadgeProminence
 ```
 
-#### Discussion
+## Discussion
 
 This level or prominence should be used for badges that display a value of passive information that requires no user action, such as total number of messages or content.
 

@@ -5,11 +5,11 @@
 
 Create a view layout by adjusting the size of views.
 
-#### Overview
+## Overview
 
 To create a layout for a view, start by composing a hierarchy of child views. Then, refine the size and spacing of the child views with configuration parameters, and by adding view modifiers, like those that affect a view’s frame and padding. To review how to compose layouts, see [Building layouts with stack views](./building-layouts-with-stack-views.md).
 
-##### Establish a view hierarchy
+### Establish a view hierarchy
 
 The following example creates a view to display an incoming message from a messaging service. The view uses an [`HStack`](./hstack.md) to collect a view that identifies the sender and another that provides the content of the message:
 
@@ -47,7 +47,7 @@ The `MessageRow` view proposes a size to its only child, the [`HStack`](./hstack
 
 When all child views have reported their size, the parent view renders them.
 
-##### Limit the view size
+### Limit the view size
 
 In the example above, SwiftUI has built-in views that manage size in different ways, including views that:
 
@@ -84,7 +84,7 @@ When SwiftUI evaluates this new hierarchy, the frame modifier fixes the width of
 
 ![A figure of a black rectangle as the border of a view, inside which is a small yellow circle on the left side, constrained to 40 points in diameter, with the letters “MR” at the center of the circle. On the right side are three lines of text. The text and circle are centered vertically.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Laying-Out-a-Simple-View-4@2x.png)
 
-##### Position content with alignment
+### Position content with alignment
 
 If you want the top of the circle aligned with the top of the message content text, you can refine the view by applying an alignment to the [`HStack`](./hstack.md). To position the content vertically within the stack, specify the `alignment` parameter to [`top`](./verticalalignment/top.md):
 
@@ -140,7 +140,7 @@ The contents of the [`HStack`](./hstack.md) are now top aligned, although the st
 
 ![A black rectangle shows the border of the view, inside which is a small yellow circle on the left, constrained to 40 points in diameter, with the letters “MR” at the center of the circle. On the right are three lines of text. The top of the circle is aligned with the top of the lines of text. The view shows extra space above and below the circle and text, but none to the left or right. The circle and text press against the left and right edges of the border of the view.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Laying-Out-a-Simple-View-7@2x.png)
 
-##### Add padding to the view
+### Add padding to the view
 
 To avoid visually crowding the outer edges of a view, add padding. This introduces a fixed amount of space along the specified edges, reducing the space available for the contents of the view by a corresponding amount. For example, you can use [`padding(_:_:)`](./view/padding%28_,_%29.md) to add extra space along the [`horizontal`](./edge/set/horizontal.md) edges of the [`HStack`](./hstack.md):
 

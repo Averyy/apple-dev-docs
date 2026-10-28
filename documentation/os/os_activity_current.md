@@ -21,7 +21,7 @@ A special value that selects the current activity, if there is one.
 #define OS_ACTIVITY_CURRENT
 ```
 
-#### Discussion
+## Discussion
 
 When creating a new activity, pass this value as the activity’s parent to create the new activity with the current activity as its parent. If there is no active activity, the creation function returns the new activity as a top-level activity without a parent.
 

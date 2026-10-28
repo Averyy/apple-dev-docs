@@ -23,7 +23,7 @@ func setOutputDataSource(_ dataSource: AVAudioSessionDataSourceDescription?) thr
 - (BOOL) setOutputDataSource:(AVAudioSessionDataSourceDescription *) dataSource error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 You can change the output source to one of the [`AVAudioSessionDataSourceDescription`](../avaudiosessiondatasourcedescription.md) objects in the [`outputDataSources`](./outputdatasources.md) array. Only certain USB accessories support this feature.
 

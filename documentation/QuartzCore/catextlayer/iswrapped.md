@@ -24,7 +24,7 @@ var isWrapped: Bool { get set }
 @property (getter=isWrapped) BOOL wrapped;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to [`false`](../../Swift/false.md).
 

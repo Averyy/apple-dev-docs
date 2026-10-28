@@ -19,7 +19,7 @@ A Boolean value indicating whether the receiver is in the middle of reverse-geoc
 @property (nonatomic, readonly, getter=isQuerying) BOOL querying;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains YES if the process is ongoing or NO if the process is done or has not yet been initiated.
 

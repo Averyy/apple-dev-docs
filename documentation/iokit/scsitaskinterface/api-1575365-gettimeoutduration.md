@@ -16,11 +16,11 @@ Method to get the timeout duration for the SCSITask.
 UInt32 (*GetTimeoutDuration)(void *task);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a value between zero and ULONG_MAX.
 
-#### Discussion
+## Discussion
 
 This method can be used to get the timeout duration for the SCSITask. The timeout duration is counted in milliseconds.
 

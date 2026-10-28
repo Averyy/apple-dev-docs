@@ -25,11 +25,11 @@ class var contextShouldIgnoreUnmodeledPropertyChanges: Bool { get }
 @property (class, readonly) BOOL contextShouldIgnoreUnmodeledPropertyChanges;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) if instances of the class should be marked as having changes if an unmodeled property is changed, otherwise [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md).
 

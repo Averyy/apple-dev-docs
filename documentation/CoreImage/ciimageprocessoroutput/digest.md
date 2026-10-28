@@ -25,7 +25,7 @@ var digest: UInt64 { get }
 @property (nonatomic, readonly) uint64_t digest;
 ```
 
-#### Discussion
+## Discussion
 
 This digest will change if the graph up to and including the output of the processor changes in any way.
 

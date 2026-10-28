@@ -20,7 +20,7 @@ The default distance attenuation, which uses a rolloff model that mimics real-wo
 static let `default`: Audio.DistanceAttenuation
 ```
 
-#### Discussion
+## Discussion
 
 The [`Audio.DistanceAttenuation.rolloff(factor:)`](./rolloff%28factor%29.md) model attenuates spatial audio with a factor of `1.0` as the listener moves away from the source.
 

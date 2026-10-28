@@ -27,7 +27,7 @@ func add(_ payment: SKPayment)
 - (void) addPayment:(SKPayment *) payment;
 ```
 
-#### Discussion
+## Discussion
 
 An application should always have at least one observer of the payment queue before adding payment requests.
 

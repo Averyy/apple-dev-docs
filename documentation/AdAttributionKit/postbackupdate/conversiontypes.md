@@ -17,7 +17,7 @@ An array conversion type the system uses to determine which postbacks to update 
 let conversionTypes: [PostbackUpdate.ConversionType]?
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, the system updates all types of postbacks by default.
 

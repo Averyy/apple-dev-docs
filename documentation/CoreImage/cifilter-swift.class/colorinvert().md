@@ -24,11 +24,11 @@ class func colorInvert() -> any CIFilter & CIColorInvert
 + (CIFilter<CIColorInvert> *) colorInvertFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies a preconfigured set of effects that invert the colors of an image.
 

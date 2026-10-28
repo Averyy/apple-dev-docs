@@ -25,11 +25,11 @@ func sparse_insert_block_double(_ A: sparse_matrix_double!, _ val: UnsafePointer
 sparse_status sparse_insert_block_double(sparse_matrix_double A, const double * restrictval, sparse_dimension row_stride, sparse_dimension col_stride, sparse_index bi, sparse_index bj);
 ```
 
-#### Return Value
+## Return Value
 
 On successful insertion, `A` has been updated with the value and [`SPARSE_SUCCESS`](./sparse_success.md) is returned. If `A` creation requirements are not met, [`SPARSE_ILLEGAL_PARAMETER`](./sparse_illegal_parameter.md) is returned and `A` is unchanged.
 
-#### Discussion
+## Discussion
 
 Use to build a sparse matrix by providing a dense block for entry at block location `A[bi,bj]`. Block size is determined at object creation time. Given a block dimension of `k * l` and for location `bi,bj`, update as: `A[bi,bj][i,j] = val[i*row_stride + j*col_stride]` for each `i` in `k` and each `j` in `l`.
 

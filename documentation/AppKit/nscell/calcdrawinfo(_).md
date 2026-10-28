@@ -19,7 +19,7 @@ func calcDrawInfo(_ rect: NSRect)
 - (void) calcDrawInfo:(NSRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 Objects (such as controls) that manage `NSCell` objects generally maintain a flag that informs them if any of their cells have been modified in such a way that the location or size of the cell should be recomputed. If so, [`calcSize()`](../nscontrol/calcsize%28%29.md) method of `NSControl` is automatically invoked prior to the display of the cell, and that method invokes the [`calcDrawInfo(_:)`](./calcdrawinfo%28_%29.md) method of the cell.
 

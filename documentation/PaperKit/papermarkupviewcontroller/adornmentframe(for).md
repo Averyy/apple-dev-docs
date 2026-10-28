@@ -20,11 +20,11 @@ Returns the current frame of the specified adornment.
 @preconcurrency func adornmentFrame(for id: UUID) -> CGRect?
 ```
 
-#### Return Value
+## Return Value
 
 The frame of the adornment in the coordinate system of this view controller’s view, or `nil` if the canvas does not display the adornment or cannot determine its frame.
 
-#### Discussion
+## Discussion
 
 This method calculates the visual frame of an adornment based on its anchor position, image size, attachment point, zoom scale and content offset.
 

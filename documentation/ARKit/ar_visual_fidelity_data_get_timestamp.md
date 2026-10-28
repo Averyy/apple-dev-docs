@@ -15,7 +15,7 @@ Get the timestamp when this validation data was captured.
 extern CFTimeInterval ar_visual_fidelity_data_get_timestamp(ar_visual_fidelity_data_t fidelity_data);
 ```
 
-#### Return Value
+## Return Value
 
 The timestamp when this validation data was captured.
 

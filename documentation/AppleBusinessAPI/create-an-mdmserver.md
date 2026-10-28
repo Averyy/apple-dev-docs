@@ -9,11 +9,11 @@ Create a new device management service in an organization.
 **Availability**:
 - Apple Business API 2.6+
 
-#### Overview
+## Overview
 
 > **Note**: The `serverName` and `serverCertificate` attributes are required.
 
-##### Example
+### Example
 
 **Request**:
 

@@ -19,11 +19,11 @@ func availableFontNames(with someTraits: NSFontTraitMask) -> [String]?
 - (NSArray<NSString *> *) availableFontNamesWithTraits:(NSFontTraitMask) someTraits;
 ```
 
-#### Return Value
+## Return Value
 
 The names of the corresponding fonts.
 
-#### Discussion
+## Discussion
 
 These fonts are in various system font directories.
 

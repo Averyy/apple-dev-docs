@@ -16,7 +16,7 @@ func stop()
 - (void) stop;
 ```
 
-#### Discussion
+## Discussion
 
 This method must not be called unless the run has been started, and must not be called more than once.
 

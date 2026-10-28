@@ -19,7 +19,7 @@ func stop() -> Bool
 - (BOOL) stop;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) when playback is concluded successfully or if it’s paused, [`false`](../../Swift/false.md) otherwise.
 

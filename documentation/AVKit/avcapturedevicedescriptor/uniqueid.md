@@ -21,7 +21,7 @@ var uniqueID: String { get }
 @property (nonatomic, readonly) NSString * uniqueID;
 ```
 
-#### Discussion
+## Discussion
 
 This value matches the [`uniqueID`](../../AVFoundation/avcapturedevice/uniqueid.md) of the camera it describes. Pass it to [`init(uniqueID:)`](../../AVFoundation/avcapturedevice/init%28uniqueid%29.md) on a background actor to get the camera itself.
 

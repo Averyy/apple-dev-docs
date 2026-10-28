@@ -19,7 +19,7 @@ func setDomain(_ domainString: String!)
 - (void) setDomain:(NSString *) domainString;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to associate a domain with the chosen identity. If the user chooses an identity and a domain is set, an identity preference item is created in the default keychain. Subsequent calls to  [`SecIdentitySearchCreate`](../../Security/secidentitysearchcreate.md) and [`SecIdentitySearchCopyNext`](../../Security/secidentitysearchcopynext.md) return the preferred identity for this domain first.
 

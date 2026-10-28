@@ -21,7 +21,7 @@ func resetAnalyzer()
 - (void) resetAnalyzer;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method if you need to abort generating the audio timed metadata buffer for audio already provided to [`analyzeAudioSample(_:)`](./analyzeaudiosample%28_%29.md).
 

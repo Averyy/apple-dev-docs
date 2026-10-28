@@ -25,7 +25,7 @@ class INTaskPriorityResolutionResult
 @interface INTaskPriorityResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INTaskPriorityResolutionResult`](./intaskpriorityresolutionresult.md) object when resolving parameters containing an [`INTaskPriority`](./intaskpriority.md) object. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

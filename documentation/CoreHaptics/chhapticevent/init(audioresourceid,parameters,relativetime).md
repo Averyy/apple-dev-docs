@@ -24,7 +24,7 @@ init(audioResourceID resID: CHHapticAudioResourceID, parameters eventParams: [CH
 - (instancetype) initWithAudioResourceID:(CHHapticAudioResourceID) resID parameters:(NSArray<CHHapticEventParameter *> *) eventParams relativeTime:(NSTimeInterval) time;
 ```
 
-#### Discussion
+## Discussion
 
 To register an audio resource, call the [`CHHapticEngine`](../chhapticengine.md) object’s [`registerAudioResource(_:options:)`](../chhapticengine/registeraudioresource%28_,options%29.md) method.
 

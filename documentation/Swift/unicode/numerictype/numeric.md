@@ -21,7 +21,7 @@ A digit that does not meet the requirements of the `decimal` numeric type or a n
 case numeric
 ```
 
-#### Discussion
+## Discussion
 
 This numeric type includes fractions such as “⅕” (U+2155 VULGAR FRACTION ONE FIFTH), numerical CJK ideographs like “兆” (U+5146 CJK UNIFIED IDEOGRAPH-5146), and other scalars that are not decimal digits used positionally in the writing of base-10 numbers.
 

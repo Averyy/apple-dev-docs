@@ -28,7 +28,7 @@ var foundItemsHandler: (([CSSearchableItem]) -> Void)? { get set }
 - [Searching for information in your app](../searching-for-information-in-your-app.md)
 - [Building a search interface for your app](../building-a-search-interface-for-your-app.md)
 
-#### Discussion
+## Discussion
 
 Assign a block to this property that has no return value and takes the following parameter:
 

@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatUnapplyAffineTransform(SPRect3DFloat rect, SPAffineTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed rectangle.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle that’s transformed by the inverse of the specified affine transform.
 

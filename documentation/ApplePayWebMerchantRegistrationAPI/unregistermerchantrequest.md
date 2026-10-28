@@ -15,7 +15,7 @@ The request body you use to unregister one or more merchant domains.
 object UnregisterMerchantRequest
 ```
 
-#### Overview
+## Overview
 
 The following example shows the format of an `UnregisterMerchant` request.
 

@@ -25,7 +25,7 @@ var totalBinaryFileCount: Int { get }
 @property (readonly) NSInteger totalBinaryFileCount;
 ```
 
-#### Discussion
+## Discussion
 
 Binary files include the application’s executables, frameworks, and other constant files that are generated during the build process.
 

@@ -24,11 +24,11 @@ Synchronously gets an array of config values for the given config key with defau
 func intArray<Value>(forKey key: ConfigKey, as type: Value.Type = Value.self, isSecret: Bool = false, default defaultValue: [Value], fileID: String = #fileID, line: UInt = #line) -> [Value] where Value : RawRepresentable, Value.RawValue == Int
 ```
 
-#### Return Value
+## Return Value
 
 The config array if found and convertible, otherwise the default array.
 
-#### Discussion
+## Discussion
 
 Use this method when you need a guaranteed non-nil result for integer-convertible array types. If the configuration value is missing or can’t be converted to the expected type, the default value is returned instead.
 

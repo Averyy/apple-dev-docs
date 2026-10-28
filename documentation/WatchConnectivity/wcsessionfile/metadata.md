@@ -23,7 +23,7 @@ var metadata: [String : Any]? { get }
 @property (nonatomic, copy, readonly, nullable) NSDictionary<NSString *,id> * metadata;
 ```
 
-#### Discussion
+## Discussion
 
 The keys of the dictionary are strings. The values are property-list object types.
 

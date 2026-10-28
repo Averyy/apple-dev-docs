@@ -24,7 +24,7 @@ static let lowCardioFitnessEvent: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierLowCardioFitnessEvent;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 14.3 and later, users with a paired Apple Watch running watchOS 7.2 or later can enable a Health app experience that classifies their cardio fitness levels as either “Low”, “Below Average”, “Above Average”, or “High”, based on individual parameters and characteristics.
 

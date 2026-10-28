@@ -24,7 +24,7 @@ var kAudioQueueParam_VolumeRampTime: AudioQueueParameterID { get }
 kAudioQueueParam_VolumeRampTime
 ```
 
-#### Discussion
+## Discussion
 
 For example, to fade from unity gain down to silence over the course of 1 second, set this parameter to `1` and then set the `kAudioQueueParam_Volume` parameter to `0`.
 

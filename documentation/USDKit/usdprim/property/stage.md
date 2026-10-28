@@ -20,7 +20,7 @@ The stage that owns this property.
 var stage: USDStage { get }
 ```
 
-#### Discussion
+## Discussion
 
 A property’s state and validity is connected to its stage. A property becomes invalid when the lifetime of its stage ends. It can also become invalid when the stage is modified.
 

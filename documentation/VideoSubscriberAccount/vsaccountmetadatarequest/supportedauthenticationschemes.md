@@ -24,7 +24,7 @@ var supportedAuthenticationSchemes: [VSAccountProviderAuthenticationScheme] { ge
 @property (nonatomic, copy) NSArray<NSString *> * supportedAuthenticationSchemes;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to check if the authentication schemes your app supports are compatible with account providers. The default is `VSAccountProviderAuthenticationSchemeSAML`.
 

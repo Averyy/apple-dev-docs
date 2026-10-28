@@ -17,7 +17,7 @@ The data channel for sending and receiving data with the remote application.
 @property (readonly, nullable) AVSystemRouteDataChannel * dataChannel;
 ```
 
-#### Discussion
+## Discussion
 
 This property is always non-nil when obtained from a successful call to [`start()`](../avsystemroutesession-gp78/start%28%29.md).
 

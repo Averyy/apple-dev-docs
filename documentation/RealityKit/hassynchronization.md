@@ -21,7 +21,7 @@ An interface that enables an entity to be synchronized between processes and net
 @preconcurrency protocol HasSynchronization : Entity
 ```
 
-#### Overview
+## Overview
 
 All entities automatically adopt this protocol because the [`Entity`](./entity.md) base class does. This adoption gives all entities a [`SynchronizationComponent`](./synchronizationcomponent.md) instance, and a collection of methods for manipulating the component, that you use to manage ownership of the entity.
 

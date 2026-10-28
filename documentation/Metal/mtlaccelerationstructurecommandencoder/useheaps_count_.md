@@ -20,7 +20,7 @@ Specifies that an array of heaps containing resources in an argument buffer can 
 - (void) useHeaps:(id<MTLHeap> const[]) heaps count:(NSUInteger) count;
 ```
 
-#### Discussion
+## Discussion
 
 This method makes all the resources in the array of heaps resident for the duration of a compute pass and ensures that they’re in a format compatible with the compute function.
 

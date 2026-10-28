@@ -24,7 +24,7 @@ func loadFactoryPreset(_ preset: AVAudioUnitDistortionPreset)
 - (void) loadFactoryPreset:(AVAudioUnitDistortionPreset) preset;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about possible values for `preset`, see [`AVAudioUnitDistortionPreset`](../avaudiounitdistortionpreset.md). The default value is [`AVAudioUnitDistortionPreset.drumsBitBrush`](../avaudiounitdistortionpreset/drumsbitbrush.md).
 

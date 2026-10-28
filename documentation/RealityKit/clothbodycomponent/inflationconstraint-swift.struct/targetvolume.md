@@ -17,7 +17,7 @@ The target volume (in ㎥) that the body tries to match.
 var targetVolume: Float? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Must be positive when non-`nil`. When `nil`, the volume of the body’s [`mesh`](../mesh.md) is used.
 

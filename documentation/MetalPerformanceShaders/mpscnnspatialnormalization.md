@@ -24,7 +24,7 @@ class MPSCNNSpatialNormalization
 @interface MPSCNNSpatialNormalization : MPSCNNKernel
 ```
 
-#### Overview
+## Overview
 
 The spatial normalization for a feature channel applies the kernel over local regions which extend spatially, but are in separate feature channels (i.e., they have the shape `1 x kernel width x kernel height`).
 

@@ -20,7 +20,7 @@ Make custom UI from an app extension available in a host app, and manage the lis
 - [Including extension-based UI in your interface](./including-extension-based-ui-in-your-interface.md)
 - [Displaying the app extensions available to your app](./displaying-the-app-extensions-available-to-your-app.md)
 
-#### Overview
+## Overview
 
 An app extension is a code bundle that extends the capabilities of the system, or the capabilities of another app. At the system level, app extensions give you a way to add your custom capabilities to system features. For example, [widgets](../WidgetKit/creating-a-widget-extension.md) display your app’s content in specific locations like the iOS Home Screen and Lock screen. System features typically provide a custom workflow for building the associated app extension, but still use this framework to implement support for those features.
 

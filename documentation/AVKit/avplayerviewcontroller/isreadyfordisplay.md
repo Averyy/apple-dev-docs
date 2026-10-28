@@ -22,7 +22,7 @@ var isReadyForDisplay: Bool { get }
 @property (nonatomic, readonly, getter=isReadyForDisplay) BOOL readyForDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value observable.
 

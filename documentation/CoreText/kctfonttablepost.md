@@ -23,7 +23,7 @@ var kCTFontTablePost: Int { get }
 kCTFontTablePost
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for PostScript information.
 

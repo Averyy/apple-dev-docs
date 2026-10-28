@@ -23,7 +23,7 @@ var metadataObjectTypes: [AVMetadataObject.ObjectType]! { get set }
 @property (nonatomic, copy, null_resettable) NSArray<NSString *> * metadataObjectTypes;
 ```
 
-#### Discussion
+## Discussion
 
 This property is used to filter the metadata objects reported by the receiver. Only metadata objects whose type matches one of the strings in this property are forwarded to the delegate’s [`metadataOutput(_:didOutput:from:)`](../avcapturemetadataoutputobjectsdelegate/metadataoutput%28_,didoutput,from%29.md) method for processing.
 

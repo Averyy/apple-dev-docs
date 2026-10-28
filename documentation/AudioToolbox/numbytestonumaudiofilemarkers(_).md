@@ -24,11 +24,11 @@ func NumBytesToNumAudioFileMarkers(_ inNumBytes: Int) -> Int
 static size_t NumBytesToNumAudioFileMarkers(size_t inNumBytes);
 ```
 
-#### Return Value
+## Return Value
 
 The number of audio file markers that can be contained in the specified number of bytes.
 
-#### Discussion
+## Discussion
 
 Use this convenience macro when you call the [`AudioFileGetProperty(_:_:_:_:)`](./audiofilegetproperty%28_,_,_,_%29.md) function with the [`kAudioFilePropertyMarkerList`](./kaudiofilepropertymarkerlist.md) property to calculate the number of markers that will be returned.
 

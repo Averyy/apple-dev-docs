@@ -17,7 +17,7 @@ Indicates whether the browser allows navigation using the arrow keys.
 - (BOOL) acceptsArrowKeys;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the arrow keys are enabled; otherwise, [`false`](../../Swift/false.md).
 

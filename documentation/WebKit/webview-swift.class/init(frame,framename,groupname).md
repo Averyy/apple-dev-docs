@@ -21,11 +21,11 @@ init!(frame: NSRect, frameName: String!, groupName: String!)
 - (instancetype) initWithFrame:(NSRect) frame frameName:(NSString *) frameName groupName:(NSString *) groupName;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized view object or `nil` if the object couldn’t be created.
 
-#### Discussion
+## Discussion
 
 This method is the designated initializer for the `WebView` class.
 

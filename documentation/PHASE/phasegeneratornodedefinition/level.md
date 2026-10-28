@@ -24,7 +24,7 @@ var level: Double { get }
 @property (readonly) double level;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`. To set a value, call [`setCalibrationMode(calibrationMode:level:)`](./setcalibrationmode%28calibrationmode,level%29.md).
 

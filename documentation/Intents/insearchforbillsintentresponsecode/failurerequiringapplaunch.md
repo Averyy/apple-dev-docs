@@ -25,7 +25,7 @@ case failureRequiringAppLaunch
 INSearchForBillsIntentResponseCodeFailureRequiringAppLaunch
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when you can’t perform the search from your Intents extension but can perform it from your app. Don’t use this code for general errors or to force the user to launch your app.
 

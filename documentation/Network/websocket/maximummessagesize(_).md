@@ -21,7 +21,7 @@ Set the maximum allowed message size to be received by the WebSocket connection.
 func maximumMessageSize(_ size: Int) -> WebSocket
 ```
 
-#### Discussion
+## Discussion
 
 This does not limit the sending message size.
 

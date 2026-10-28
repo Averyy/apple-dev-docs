@@ -24,7 +24,7 @@ struct MTLIndirectAccelerationStructureInstanceDescriptor
 typedef struct { ... } MTLIndirectAccelerationStructureInstanceDescriptor;
 ```
 
-#### Overview
+## Overview
 
 This memory layout corresponds to the [`MTLAccelerationStructureInstanceDescriptorType.indirect`](./mtlaccelerationstructureinstancedescriptortype/indirect.md) instance type.
 

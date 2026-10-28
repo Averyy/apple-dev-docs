@@ -16,7 +16,7 @@ Defines a pointer to a function that obtainsthe text encoding for an Internet te
 typedef OSStatus (*TECPluginGetTextEncodingFromInternetNamePtr)(TextEncoding *textEncoding, ConstStr255Param encodingName);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 

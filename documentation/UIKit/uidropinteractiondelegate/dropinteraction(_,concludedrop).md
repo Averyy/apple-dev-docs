@@ -22,7 +22,7 @@ optional func dropInteraction(_ interaction: UIDropInteraction, concludeDrop ses
 - (void) dropInteraction:(UIDropInteraction *) interaction concludeDrop:(id<UIDropSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 When the interaction calls this method, update the interaction’s view with its post-drop appearance.
 

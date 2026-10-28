@@ -21,7 +21,7 @@ case noAuthorization
 SRErrorNoAuthorization
 ```
 
-#### Discussion
+## Discussion
 
 This error code indicates the user denied access for the sensor on the in-app prompt, or by switching off authorization for the sensor in Settings.
 

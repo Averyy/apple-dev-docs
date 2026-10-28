@@ -25,7 +25,7 @@ static let NSCalendarDayChanged: NSNotification.Name
 extern NSNotificationName const NSCalendarDayChangedNotification;
 ```
 
-#### Discussion
+## Discussion
 
 If the the device is asleep when the day changes, this notification will be posted on wakeup. Only one notification will be posted on wakeup if the device has been asleep for multiple days.
 

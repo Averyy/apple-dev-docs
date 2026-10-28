@@ -23,7 +23,7 @@ var isHighlighted: Bool { get set }
 @property (nonatomic, getter=isHighlighted) BOOL highlighted;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines whether the regular or highlighted images are used. When [`isHighlighted`](./ishighlighted.md) is set to [`true`](../../Swift/true.md), a non-animated image will use the [`highlightedImage`](./highlightedimage.md) property and an animated image will use the [`highlightedAnimationImages`](./highlightedanimationimages.md). If both of those properties are set to `nil` or if [`isHighlighted`](./ishighlighted.md) is set to [`false`](../../Swift/false.md), it will use the [`image`](./image.md) and [`animationImages`](./animationimages.md) properties.
 

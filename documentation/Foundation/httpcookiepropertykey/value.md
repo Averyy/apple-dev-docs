@@ -25,7 +25,7 @@ static let value: HTTPCookiePropertyKey
 extern NSHTTPCookiePropertyKey const NSHTTPCookieValue;
 ```
 
-#### Discussion
+## Discussion
 
 This cookie attribute is required.
 

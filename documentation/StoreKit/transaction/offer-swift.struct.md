@@ -21,7 +21,7 @@ Discounts or promotions that apply to a transaction.
 struct Offer
 ```
 
-#### Overview
+## Overview
 
 You set up offers for auto-renewable subscriptions and other Apple In-App Purchase types in App Store Connect. If a customer redeems an offer, it appears in the [`offer`](./offer-swift.property.md) property of the transaction. For auto-renewable subscriptions, if the offer applies to one or more renewal periods, it also appears in the [`offer`](../product/subscriptioninfo/renewalinfo/offer.md) property of [`Product.SubscriptionInfo.RenewalInfo`](../product/subscriptioninfo/renewalinfo.md).
 

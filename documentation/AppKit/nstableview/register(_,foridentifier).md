@@ -19,7 +19,7 @@ func register(_ nib: NSNib?, forIdentifier identifier: NSUserInterfaceItemIdenti
 - (void) registerNib:(NSNib *) nib forIdentifier:(NSUserInterfaceItemIdentifier) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to associate one of the NIB’s cell views with `identifier` so that the table can instantiate this view when requested. This method is used when [`makeView(withIdentifier:owner:)`](./makeview%28withidentifier,owner%29.md) is called, and there was no NIB created at design time for the specified identifier. This allows dynamic loading of NIBs that can be associated with the table.
 

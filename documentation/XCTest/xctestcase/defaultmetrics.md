@@ -24,7 +24,7 @@ class var defaultMetrics: [any XCTMetric] { get }
 @property (class, copy, readonly) NSArray<id<XCTMetric>> * defaultMetrics;
 ```
 
-#### Discussion
+## Discussion
 
 When you call [`measure(options:block:)`](./measure%28options,block%29.md), the test uses this property to determine which metrics to record. The default is an array that contains [`XCTClockMetric`](../xctclockmetric.md). Subclasses of [`XCTestCase`](../xctestcase.md) can override this property to change the default metrics.
 

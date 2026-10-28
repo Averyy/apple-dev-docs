@@ -27,7 +27,7 @@ func open(_ url: URL, options: [UIApplication.OpenExternalURLOptionsKey : Any] =
 - (void) openURL:(NSURL *) url options:(NSDictionary<NSString *,id> *) options completionHandler:(void (^)(_Bool)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to open the specified resource. If the specified URL scheme is handled by another app, iOS launches that app and passes the URL to it. (Launching the app brings the other app to the foreground.)  If no app is capable of handling the specified scheme, the completion handler is called with the *success* parameter set to [`false`](../../Swift/false.md).
 

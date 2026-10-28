@@ -19,7 +19,7 @@ func cellSize() -> NSSize
 - (NSSize) cellSize;
 ```
 
-#### Return Value
+## Return Value
 
 The current size for the cells in the image browser view.
 

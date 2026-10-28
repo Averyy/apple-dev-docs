@@ -19,7 +19,7 @@ var kAXLinkTextAttribute: Unmanaged<CFString>
 CFStringRef kAXLinkTextAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 
 ---

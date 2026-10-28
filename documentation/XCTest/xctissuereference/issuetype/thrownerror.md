@@ -16,7 +16,7 @@ case thrownError
 XCTIssueTypeThrownError
 ```
 
-#### Discussion
+## Discussion
 
 This could also occur if an Objective-C test uses the form `-(BOOL)testExample:(NSError **)outError` and returns `NO` with a non-`nil` out error.
 

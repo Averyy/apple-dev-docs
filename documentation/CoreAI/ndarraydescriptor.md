@@ -19,7 +19,7 @@ A description of an array’s shape, scalar type, and memory layout expectations
 struct NDArrayDescriptor
 ```
 
-#### Overview
+## Overview
 
 You obtain an `NDArrayDescriptor` from an [`InferenceFunctionDescriptor`](./inferencefunctiondescriptor.md) by querying the descriptor of a specific input or output:
 

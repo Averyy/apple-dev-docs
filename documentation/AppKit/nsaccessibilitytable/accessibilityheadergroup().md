@@ -21,7 +21,7 @@ optional func accessibilityHeaderGroup() -> String?
 - (NSString *) accessibilityHeaderGroup;
 ```
 
-#### Return Value
+## Return Value
 
 The table’s header group.
 

@@ -19,11 +19,11 @@ func doubleClick(at location: Int) -> NSRange
 - (NSRange) doubleClickAtIndex:(NSUInteger) location;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the range of characters that form a word (or other linguistic unit) surrounding the given index, taking language characteristics into account.
 
-#### Discussion
+## Discussion
 
 Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if `index` lies beyond the end of the receiver’s characters.
 

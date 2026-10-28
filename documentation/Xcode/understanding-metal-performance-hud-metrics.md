@@ -5,7 +5,7 @@
 
 Learn what each of the metrics reported by the heads-up display indicates.
 
-#### Overview
+## Overview
 
 The Metal Performance HUD provides a variety of performance metrics to help you spot performance issues, or find the perfect scope to capture in Xcode (see [Capturing a Metal workload in Xcode](./capturing-a-metal-workload-in-xcode.md)) or in Instruments (see [Analyzing the performance of your Metal app](./analyzing-the-performance-of-your-metal-app.md)).
 

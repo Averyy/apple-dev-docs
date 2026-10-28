@@ -25,7 +25,7 @@ enum CFStreamErrorDomain
 enum CFStreamErrorDomain : CFIndex;
 ```
 
-#### Overview
+## Overview
 
 These constants indicate how the error code in the `error` field in the [`CFStreamError`](./cfstreamerror.md) structure should be interpreted.
 

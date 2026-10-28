@@ -24,7 +24,7 @@ var channelEncoding: MDLTextureChannelEncoding { get }
 @property (nonatomic, readonly) MDLTextureChannelEncoding channelEncoding;
 ```
 
-#### Discussion
+## Discussion
 
 For example, each channel value for a texel may be an 8-bit integer or a 32-bit floating point value. For possible channel encodings, see [`MDLTextureChannelEncoding`](../mdltexturechannelencoding.md).
 

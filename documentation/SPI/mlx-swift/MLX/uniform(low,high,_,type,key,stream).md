@@ -17,7 +17,7 @@ Generate uniformly distributed random numbers between `low` and `high`.
 func uniform(low: some ScalarOrArray, high: some ScalarOrArray, _ shape: (some Collection<Int>)? = [Int]?.none, type: (some HasDType & BinaryFloatingPoint).Type = Float.self, key: (some RandomStateOrKey)? = MLXArray?.none, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The values are sampled uniformly in the half-open interval `[lb, ub)`. The lower and upper bound can be scalars or arrays and must be broadcastable to the optional `shape` (it will be the shape of the `lb` if not specified).
 

@@ -5,7 +5,7 @@
 
 Align article components with columns in your layout.
 
-#### Overview
+## Overview
 
 You set the number of columns you want in your design using the `layout` property of Article Document. To determine the position for a component, like a heading, you align the left edge of the component with a column in your layout. (The component automatically lines up with the left edge of the column.) See [`Layout`](../AppleNewsFormat/layout.md) and [Planning the Layout for Your Article](./planning-the-layout-for-your-article.md).
 
@@ -13,7 +13,7 @@ Layout columns are numbered from left to right starting with 0. You use this col
 
 ![Screenshot of an article with a caption and pull quote on iPad.](https://developer.apple.com/tutorials/images/com.apple.applenews/media-4087463@2x.png)
 
-##### Specify Positions for Components
+### Specify Positions for Components
 
 Specify the starting column and how many columns you want a component to span. For example, in the previous figure, a pull quote component is positioned at column 0 and spans three columns. The figure also shows a caption component positioned at column 7 that spans three columns.
 
@@ -38,7 +38,7 @@ The following code example shows a component layout object called `heading1Layou
 
 > 💡 **Tip**:  For best results, the sum of the `columnStart` value and the `columnSpan` value shouldn’t exceed the number of columns available for the component. Otherwise, your article may not render as expected.
 
-##### Fine-Tune the Position of Components
+### Fine-Tune the Position of Components
 
 You can use the `margin` property of a [`ComponentLayout`](../AppleNewsFormat/componentlayout.md) object to specify the top and bottom margins (in points) for a component and to create space above and below the component.  Specify a single number to use for both measurements, or — to specify different settings for the top and bottom margins — use the [`Margin`](../AppleNewsFormat/margin.md) object.
 
@@ -50,7 +50,7 @@ Horizontally align the contents of a component within the component. (This prope
 
 > 💡 **Tip**:  To position text *within* a component, such as for centered text or for a drop cap, use the [`ComponentTextStyle`](../AppleNewsFormat/componenttextstyle.md) object for the individual component.
 
-##### Align and Position Content
+### Align and Position Content
 
 To make your content span the entire device screen, use the `ignoreViewportPadding` property of the [`ComponentLayout`](../AppleNewsFormat/componentlayout.md) object.
 
@@ -98,7 +98,7 @@ In the following code example, the `image` object ignores the left and right mar
 }
 ```
 
-###### What Changed in iOS 13, iPadOS 13, and macOS 10.15
+#### What Changed in iOS 13, iPadOS 13, and macOS 10.15
 
 Prior to iOS 13, iPadOS 13, and macOS 10.15, the `ignoreDocumentMargin` property of the [`ComponentLayout`](../AppleNewsFormat/componentlayout.md) object caused a component to span the entire screen.
 

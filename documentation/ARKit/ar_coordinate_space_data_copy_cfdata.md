@@ -15,7 +15,7 @@ Copy out a `CFDataRef` that archives the coordinate space data.
 extern CFDataRefar_coordinate_space_data_copy_cfdata(ar_coordinate_space_data_t data);
 ```
 
-#### Return Value
+## Return Value
 
 The `CFDataRef`. The caller is responsible for calling `CFRelease` on the returned pointer.
 

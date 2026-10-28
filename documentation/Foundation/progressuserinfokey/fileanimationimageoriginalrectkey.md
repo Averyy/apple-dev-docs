@@ -19,7 +19,7 @@ static let fileAnimationImageOriginalRectKey: ProgressUserInfoKey
 extern NSProgressUserInfoKey const NSProgressFileAnimationImageOriginalRectKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an [`NSValue`](../nsvalue.md) that contains an [`NSRect`](../nsrect.md), in screen coordinates. This entry is optional, but if present, along with a value for [`fileAnimationImageKey`](./fileanimationimagekey.md), the Dock may show an animation. When the Dock has an item for the folder that contains the relevant file (such as the Downloads folder), the Dock uses this key to show an animation of the file flying into the Dock.
 

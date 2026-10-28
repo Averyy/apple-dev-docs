@@ -15,7 +15,7 @@ Work with audiovisual assets, control device cameras, process audio, and configu
 - visionOS 1.0+
 - watchOS 3.0+
 
-#### Overview
+## Overview
 
 AVFoundation combines several major technology areas that together encompass a wide range of tasks for inspecting, playing, capturing, and processing audiovisual media on Apple platforms.
 

@@ -23,11 +23,11 @@ OSStatus SecIdentityCreateWithCertificate(CFTypeRef keychainOrArray, SecCertific
 
 - [Creating an Identity](./creating-an-identity.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 If the associated private key is not found in one of the specified keychains, this function fails with an appropriate error code (usually [`errSecItemNotFound`](./errsecitemnotfound.md)), and does not return anything in the `identityRef` parameter.
 

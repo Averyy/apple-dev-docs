@@ -34,11 +34,11 @@ OSStatus SecItemCopyMatching(CFDictionaryRef query, CFTypeRef*result);
 - [Storing a Certificate in the Keychain](./storing-a-certificate-in-the-keychain.md)
 - [Updating and deleting keychain items](./updating-and-deleting-keychain-items.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 By default, this function returns only the first match found. To obtain more than one matching item at a time, specify the search key [`kSecMatchLimit`](./ksecmatchlimit.md) with a value greater than `1`. The `result` is a [`CFArray`](../CoreFoundation/cfarray.md) containing up to that number of matching items.
 
@@ -52,7 +52,7 @@ To convert from persistent item references to normal item references, specify th
 
 When you use Xcode to create an application, Xcode adds an `application-identifier` entitlement to the application bundle. Keychain Services uses this entitlement to grant the application access to its own keychain items. You can also add a [`Keychain Access Groups Entitlement`](../BundleResources/entitlements/keychain-access-groups.md) to the application, specifying an array of keychain access groups to which the application belongs. When you call the [`SecItemAdd(_:_:)`](./secitemadd%28_,_%29.md) function to add an item to the keychain, you can specify the access group to which that item should belong. By default, the [`SecItemCopyMatching(_:_:)`](./secitemcopymatching%28_,_%29.md) function searches all the access groups to which the application belongs. However, you can add the [`kSecAttrAccessGroup`](./ksecattraccessgroup.md) key to the search dictionary to specify which access group to search for keychain items.
 
-##### Performance considerations
+### Performance considerations
 
 `SecItemCopyMatching` blocks the calling thread, so it can cause your app’s UI to hang if called from the main thread. Instead, call `SecItemCopyMatching` from a background dispatch queue or `async` function:
 

@@ -24,7 +24,7 @@ class UISpringTimingParameters
 @interface UISpringTimingParameters : NSObject
 ```
 
-#### Overview
+## Overview
 
 The timing provided by a [`UISpringTimingParameters`](./uispringtimingparameters.md) object mimics the behavior of a spring acting on the value of the property being animated. This property’s value accelerates toward its final value according to the relative force of the spring, which you configure. It then oscillates around that final value until it comes to a rest. The speed at which a property animates to its new value is based on the initial velocity of the value and the damping ratio applied to the spring. You can specify those values directly or using analogous spring-related values.
 

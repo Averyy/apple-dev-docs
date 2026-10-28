@@ -6,7 +6,7 @@
 
 An atom that lists items that are suitable for more than one country.
 
-#### Overview
+## Overview
 
 When one or more items must be identified as being suitable for more than one country, each list of countries is stored in this otherwise optional atom. The country list atom is a full atom with an atom type of `‘ctry’`.
 

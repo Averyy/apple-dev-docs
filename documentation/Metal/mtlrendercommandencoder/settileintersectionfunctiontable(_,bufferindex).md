@@ -25,7 +25,7 @@ func setTileIntersectionFunctionTable(_ intersectionFunctionTable: (any MTLInter
 - (void) setTileIntersectionFunctionTable:(id<MTLIntersectionFunctionTable>) intersectionFunctionTable atBufferIndex:(NSUInteger) bufferIndex;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the intersection function table at each index is `nil`.
 

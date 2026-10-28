@@ -16,7 +16,7 @@ A data storage container you use to persist information across different session
 class PlaygroundKeyValueStore
 ```
 
-#### Overview
+## Overview
 
 The key-value store is available only in Swift Playgrounds and is persistent only in playground books.
 

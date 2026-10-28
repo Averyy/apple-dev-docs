@@ -25,7 +25,7 @@ func class_getInstanceSize(_ cls: AnyClass?) -> Int
 extern size_t class_getInstanceSize(Class cls);
 ```
 
-#### Return Value
+## Return Value
 
 The size in bytes of instances of the class `cls`, or `0` if `cls` is `Nil`.
 

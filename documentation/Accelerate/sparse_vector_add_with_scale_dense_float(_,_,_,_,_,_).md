@@ -25,13 +25,13 @@ func sparse_vector_add_with_scale_dense_float(_ nz: sparse_dimension, _ alpha: F
 void sparse_vector_add_with_scale_dense_float(sparse_dimension nz, float alpha, const float * restrictx, const sparse_index * restrictindx, float * restricty, sparse_stride incy);
 ```
 
-#### Discussion
+## Discussion
 
-Performs the operation *y = alpha * x + y* in place. If `alpha` or `nz` is zero, *y* is unchanged.
+Performs the operation *y = alpha \* x + y* in place. If `alpha` or `nz` is zero, *y* is unchanged.
 
 Scales the sparse vector x by alpha and adds the result to the dense vector y.
 
-If the desired operation is *y = alpha * x*, then an efficient option is to create the *y* buffer of zeros and then perform the operation with the zero filled *y*.
+If the desired operation is *y = alpha \* x*, then an efficient option is to create the *y* buffer of zeros and then perform the operation with the zero filled *y*.
 
 Indices in `indx` are always assumed to be stored in ascending order. Additionally, indices are assumed to be unique.  The behavior of this function is undefined if either of these assumptions are not met.
 

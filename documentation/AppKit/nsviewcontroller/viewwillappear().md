@@ -19,7 +19,7 @@ func viewWillAppear()
 - (void) viewWillAppear;
 ```
 
-#### Discussion
+## Discussion
 
 You can override this method to perform tasks prior to a view controller’s view getting added to view hierarchy, such as setting the view’s highlight color. This method is called when:
 

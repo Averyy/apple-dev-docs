@@ -22,7 +22,7 @@ var pencilKitResponderState: PKResponderState { get }
 @property (nonatomic, readonly, nonnull) PKResponderState * pencilKitResponderState;
 ```
 
-#### Discussion
+## Discussion
 
 The state controls PencilKit behavior related to this responder.
 

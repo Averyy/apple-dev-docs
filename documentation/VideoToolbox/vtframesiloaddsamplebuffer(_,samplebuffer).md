@@ -24,11 +24,11 @@ func VTFrameSiloAddSampleBuffer(_ silo: VTFrameSilo, sampleBuffer: CMSampleBuffe
 extern OSStatus VTFrameSiloAddSampleBuffer(VTFrameSiloRef silo, CMSampleBufferRef sampleBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 `kVTFrameSiloInvalidTimeRangeErr` if an attempt is made to add a sample buffer with an inappropriate decode timestamp.
 
-#### Discussion
+## Discussion
 
 Within each pass, sample buffers must have strictly increasing decode timestamps. Passes after the first pass begin with a call to [`VTFrameSiloSetTimeRangesForNextPass(_:timeRangeCount:timeRangeArray:)`](./vtframesilosettimerangesfornextpass%28_,timerangecount,timerangearray%29.md).
 

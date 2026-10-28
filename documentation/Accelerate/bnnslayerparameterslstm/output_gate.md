@@ -27,7 +27,7 @@ var output_gate: BNNSLSTMGateDescriptor
 BNNSLSTMGateDescriptor output_gate;
 ```
 
-#### Discussion
+## Discussion
 
 Use C style multidimensional array notation to order the memory pointers as `[` [`num_layers`](./num_layers.md) `][num_directions][` [`hidden_size`](./hidden_size.md) `][` [`input_size`](./input_size.md) / [`hidden_size`](./hidden_size.md) `]`.
 

@@ -20,11 +20,11 @@ func IOMasterPort(_ bootstrapPort: mach_port_t, _ mainPort: UnsafeMutablePointer
 kern_return_t IOMasterPort(mach_port_t bootstrapPort, mach_port_t *mainPort);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 Functions that don't specify an existing object require the IOKit primary port to be passed. This function obtains that port.
 

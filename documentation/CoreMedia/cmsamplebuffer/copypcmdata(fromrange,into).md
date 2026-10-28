@@ -21,7 +21,7 @@ Copies PCM audio data from a sample buffer into a prepopulated audio buffer list
 func copyPCMData(fromRange range: Range<Int>, into bufferList: UnsafeMutablePointer<AudioBufferList>) throws
 ```
 
-#### Discussion
+## Discussion
 
 The audio buffer list must contain the same number of channels, and must be appropriately sized for its data buffers to hold the specified number of frames. This API is specific to audio format sample buffers, and throws an [`invalidMediaTypeForOperation`](./error/invalidmediatypeforoperation.md) if called with a nonaudio sample buffer. Likewise, this method throws an error if the sample buffer doesn’t contain PCM audio data or if its data buffer isn’t ready.
 

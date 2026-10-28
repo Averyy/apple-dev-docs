@@ -20,7 +20,7 @@ func openDocument(_ sender: Any?)
 - (void) openDocument:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 The method adds the newly created objects to the list of `NSDocument` objects managed by the document controller. This method calls [`openDocument(withContentsOf:display:completionHandler:)`](./opendocument%28withcontentsof,display,completionhandler%29.md), which actually creates the `NSDocument` objects.
 

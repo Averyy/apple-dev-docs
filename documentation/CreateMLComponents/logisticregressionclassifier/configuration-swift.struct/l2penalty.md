@@ -21,7 +21,7 @@ Weight of the L2 regularization term.
 var l2Penalty: Double
 ```
 
-#### Discussion
+## Discussion
 
 The larger this weight, the more the model coefficients shrink toward 0. This introduces bias into the model but decreases variance, potentially leading to better predictions. The default is 0.01.
 

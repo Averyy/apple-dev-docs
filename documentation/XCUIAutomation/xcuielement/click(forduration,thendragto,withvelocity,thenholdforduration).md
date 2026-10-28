@@ -23,7 +23,7 @@ func click(forDuration duration: TimeInterval, thenDragTo otherElement: XCUIElem
 - (void) clickForDuration:(NSTimeInterval) duration thenDragToElement:(XCUIElement *) otherElement withVelocity:(XCUIGestureVelocity) velocity thenHoldForDuration:(NSTimeInterval) holdDuration;
 ```
 
-#### Discussion
+## Discussion
 
 Specify a duration long enough to initiate a drag operation. If the element exists within a scrollable view but is offscreen, the framework attempts to scroll the element onscreen before performing the click.
 

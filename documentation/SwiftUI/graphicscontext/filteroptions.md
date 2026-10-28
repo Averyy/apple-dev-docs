@@ -22,7 +22,7 @@ Options that configure a filter that you add to a graphics context.
 struct FilterOptions
 ```
 
-#### Overview
+## Overview
 
 You can use filter options to configure a [`GraphicsContext.Filter`](./filter.md) that you apply to a [`GraphicsContext`](../graphicscontext.md) with the [`addFilter(_:options:)`](./addfilter%28_,options%29.md) method.
 

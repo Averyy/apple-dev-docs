@@ -19,7 +19,7 @@ class func registerClass(_ imageRepClass: AnyClass)
 + (void) registerImageRepClass:(Class) imageRepClass;
 ```
 
-#### Discussion
+## Discussion
 
 This method posts an [`registryDidChangeNotification`](./registrydidchangenotification.md), along with the receiving object, to the default notification center.
 

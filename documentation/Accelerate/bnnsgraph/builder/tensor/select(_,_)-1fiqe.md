@@ -23,7 +23,7 @@ func select<U>(_ valueIfTrue: BNNSGraph.Builder.Tensor<U>, _ valueIfFalse: BNNSG
 
 Available when `T` is `Bool`.
 
-#### Discussion
+## Discussion
 
 For example, the following code returns the `valueIfTrue` elements when the corresponding elements in `z` are `true` and the elements in `valueIfFalse` when the corresponding elements in `z` are `false`:
 

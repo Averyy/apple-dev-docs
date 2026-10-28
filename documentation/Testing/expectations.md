@@ -5,13 +5,13 @@
 
 Check for expected values, outcomes, and asynchronous events in tests.
 
-#### Overview
+## Overview
 
 Use [`expect(_:_:sourceLocation:)`](./expect%28_,_,sourcelocation%29.md) and [`require(_:_:sourceLocation:)`](./require%28_,_,sourcelocation%29-5l63q.md) macros to validate expected outcomes. To validate that an error is thrown, or *not* thrown, the testing library provides several overloads of the macros that you can use. For more information, see [Testing for errors in Swift code](./testing-for-errors-in-swift-code.md).
 
 Use a [`Confirmation`](./confirmation.md) to confirm the occurrence of an asynchronous event that you can’t check directly using an expectation. For more information, see [Testing asynchronous code](./testing-asynchronous-code.md).
 
-##### Validate your code’s result
+### Validate your code’s result
 
 To validate that your code produces an expected value, use [`expect(_:_:sourceLocation:)`](./expect%28_,_,sourcelocation%29.md). This macro captures the expression you pass, and provides detailed information when the code doesn’t satisfy the expectation.
 

@@ -16,7 +16,7 @@ get lineJoin(): "round" | "bevel" | "miter";
 set lineJoin(lineJoin: "round" | "bevel" | "miter");
 ```
 
-#### Discussion
+## Discussion
 
 The three options for line joins are `miter` (join is a sharp corner), `round` (join is a rounded corner), or `bevel` (join is a beveled corner). The default line join is `round`.
 

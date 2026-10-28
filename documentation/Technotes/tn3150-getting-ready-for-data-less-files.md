@@ -5,7 +5,7 @@
 
 Understand dataless files and how to minimize the performance impact as the system materializes them.
 
-#### Overview
+## Overview
 
 In a modern file system, a file’s content may not be available locally on the device. A file that contains only metadata is known as a *dataless* file. The file’s content typically resides on a remote server and is available to people or apps, transparently, when they access the file.
 
@@ -13,7 +13,7 @@ For example, a person can create a dataless file in iCloud Drive on iOS by selec
 
 Materializing a dataless file can take time if the file is large or there are poor network conditions. In such a scenario, the app may become unresponsive. If an app’s main queue remains unresponsive for a long time, the system may terminate the app and trigger a watchdog crash. See [Addressing watchdog terminations](../Xcode/addressing-watchdog-terminations.md) for details.
 
-#### Understand the impact of file materialization
+## Understand the impact of file materialization
 
 Dataless files reduce the amount of storage space a file typically consumes, but accessing a dataless file causes the system to materialize the file. This can take a long time, creating a poor user experience in apps that aren’t ready for it.
 
@@ -42,7 +42,7 @@ If you app encounters one of these symptoms, use Instruments to profile your app
  *1000 apfs_materialize_dataless_file_ext + 160 (apfs + 738928) [0xffffff80035bc670]
 ```
 
-#### Prepare your app for dataless file access
+## Prepare your app for dataless file access
 
 The system, or a person using the device, can make dataless files whenever they determine it’s appropriate, and your app needs to be ready to handle them. Specifically, avoid unnecessarily materializing dataless files and, when your app requires access to a file’s contents, perform that work asynchronously off the main thread. For more information, see [Improving performance and stability when accessing the file system](../Foundation/improving-performance-and-stability-when-accessing-the-file-system.md).
 
@@ -81,7 +81,7 @@ if (iopolicy >= 0) {
 
 For more information about the functions and constants in the above code, see their man pages. https://developer.apple.com/documentation/os/reading-unix-manual-pages covers how to read man pages.
 
-#### Revision History
+## Revision History
 
 - **2023-05-09** First published.
 

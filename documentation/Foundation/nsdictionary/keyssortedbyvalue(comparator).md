@@ -25,7 +25,7 @@ func keysSortedByValue(comparator cmptr: (Any, Any) -> ComparisonResult) -> [Any
 - (NSArray<id> *) keysSortedByValueUsingComparator:(NSComparator) cmptr;
 ```
 
-#### Return Value
+## Return Value
 
 An array of the dictionary’s keys, in the order they would be in if the dictionary were sorted by its values using `cmptr`.
 

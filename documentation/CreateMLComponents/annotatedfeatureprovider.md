@@ -21,7 +21,7 @@ An adaptor that converts a regular estimator to a tabular estimator by selecting
 struct AnnotatedFeatureProvider<Base, UnwrappedInput> where Base : SupervisedEstimator, Base.Transformer.Input == UnwrappedInput?
 ```
 
-#### Overview
+## Overview
 
 Tabular estimators use multiple features columns as input. When there is a single column of features, you may use a non-tabular estimator. Do this by combining multiple columns with a `ColumnConcatenator` transformer. Once there is a single column of features, use `AnnotatedFeatureProvider` to specify which column contains the features, which column contains the annotations, and which column should hold the results.
 

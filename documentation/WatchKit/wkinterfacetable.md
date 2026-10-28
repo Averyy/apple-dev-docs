@@ -23,7 +23,7 @@ class WKInterfaceTable
 
 - [Navigating Between Scenes](./navigating-between-scenes.md)
 
-#### Overview
+## Overview
 
 You use a table object to set the number and type of rows and to configure the data objects for those rows. Take the following steps to configure a table object and fill it with data:
 
@@ -48,7 +48,7 @@ Don’t subclass or create instances of this class yourself. Instead, define out
 
 During the initialization of your interface controller, WatchKit creates a new instance of this class and assigns it to your outlet. At that point, you can use the object in your outlet to make changes to the table.
 
-##### Define Your Table’s Rows
+### Define Your Table’s Rows
 
 After adding a table object to your storyboard, configure the row controller that comes with the table. A row controller defines the appearance of a specific type of row. A table comes with one row type initially and you can add more later. Each row controller in your table requires some minimal configuration to be usable at runtime.
 
@@ -79,7 +79,7 @@ class MyRowController: NSObject {
 @end
 ```
 
-##### Set the Number of Rows at Runtime
+### Set the Number of Rows at Runtime
 
 To fill a table interface object with data, use the [`setRowTypes(_:)`](./wkinterfacetable/setrowtypes%28_%29.md) or [`setNumberOfRows(_:withRowType:)`](./wkinterfacetable/setnumberofrows%28_,withrowtype%29.md) method. These methods specify the type (and number) of rows to add to the table. If all rows are of the same type, use the [`setNumberOfRows(_:withRowType:)`](./wkinterfacetable/setnumberofrows%28_,withrowtype%29.md) method. If you use more than one row controller in your table, use the [`setRowTypes(_:)`](./wkinterfacetable/setrowtypes%28_%29.md) method. The row type string corresponds to the name you entered into the Identifier property for that row controller in your storyboard.
 
@@ -130,7 +130,7 @@ In this example, the table gets the data for the rows, and then calls the table�
 
 When you want to update the contents of a table, call [`setRowTypes(_:)`](./wkinterfacetable/setrowtypes%28_%29.md) or [`setNumberOfRows(_:withRowType:)`](./wkinterfacetable/setnumberofrows%28_,withrowtype%29.md) again with the new row type information. Calling these methods again forces the table to discard the old rows and create new ones. To insert new rows without removing the old ones, use the [`insertRows(at:withRowType:)`](./wkinterfacetable/insertrows%28at,withrowtype%29.md) method.
 
-##### Respond to Taps in Table Rows
+### Respond to Taps in Table Rows
 
 In your storyboard, create a segue between a row controller and a destination interface controller. When the user taps on a row of that type, the system automatically pushes the destination interface controller onto the screen. To pass data to the destination controller, override your current interface controller’s [`contextForSegue(withIdentifier:in:rowIndex:)`](./wkinterfacecontroller/contextforsegue%28withidentifier,in,rowindex%29.md) method, and return context data based on the selected row.
 
@@ -138,7 +138,7 @@ Alternatively, you can explicitly respond to taps in a table row by implementing
 
 > **Note**:  Row controllers that include controls such as switches, sliders, and buttons must use action methods to respond to interactions with those controls. The system doesn’t deliver taps in controls to your interface controller’s [`table(_:didSelectRowAt:)`](./wkinterfacecontroller/table%28_,didselectrowat%29.md) method.
 
-##### Support Item Pagination
+### Support Item Pagination
 
 Item Pagination lets users easily navigate through lists of items. When the user selects an item from the table, the app displays a detailed view for the item. The user can then scroll up and down to navigate between other sibling items from that table. For example if the user selects a stock symbol in the Stocks app, it loads the details for that stock. They can then scroll vertically to navigate to other stocks.
 
@@ -148,7 +148,7 @@ Item Pagination is disabled by default. To enable it, perform the following step
 2. In the storyboard, define segues for all of the table’s row controllers. Your table must use segues to drive its navigation.
 3. If you programmatically navigate through a table’s items (for example, when launching from a complication to a specific interface controller), be sure to use the table’s [`performSegue(forRow:)`](./wkinterfacetable/performsegue%28forrow%29.md) method, instead of the interface controller’s [`pushController(withName:context:)`](./wkinterfacecontroller/pushcontroller%28withname,context%29.md) method. The [`performSegue(forRow:)`](./wkinterfacetable/performsegue%28forrow%29.md) method lets watchOS know which table and which row initiated the segue. The system needs this information to provide the correct sibling items as the user scrolls.
 
-##### Configure the Table’s Attributes
+### Configure the Table’s Attributes
 
 Xcode lets you configure information about your table interface object in your storyboard file. The following table lists the attributes you can configure in your storyboard and their meaning.
 

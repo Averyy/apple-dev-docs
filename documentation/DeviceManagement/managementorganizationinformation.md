@@ -21,11 +21,11 @@ The declaration to configure the managing organization’s contact information.
 object ManagementOrganizationInformation
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.management.organization-info` as the declaration type.
 
-##### Management declaration example
+### Management declaration example
 
 ```json
 {

@@ -24,11 +24,11 @@ func coordinate(alongAxis axis: Int, withShapeTensor shapeTensor: MPSGraphTensor
 - (MPSGraphTensor *) coordinateAlongAxis:(NSInteger) axis withShapeTensor:(MPSGraphTensor *) shapeTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 See [`coordinate(alongAxis:withShape:name:)`](./coordinate%28alongaxis,withshape,name%29.md).
 

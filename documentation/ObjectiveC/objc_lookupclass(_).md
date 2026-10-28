@@ -25,11 +25,11 @@ func objc_lookUpClass(_ name: UnsafePointer<CChar>) -> AnyClass?
 extern Classobjc_lookUpClass(const char *name);
 ```
 
-#### Return Value
+## Return Value
 
 The Class object for the named class, or `nil` if the class is not registered with the Objective-C runtime.
 
-#### Discussion
+## Discussion
 
 The implementation of this function is identical to the implementation of the  [`objc_getClass(_:)`](./objc_getclass%28_%29.md) function.
 

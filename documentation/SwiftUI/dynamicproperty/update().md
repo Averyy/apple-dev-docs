@@ -22,7 +22,7 @@ Updates the underlying value of the stored value.
 mutating func update()
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI calls this function before rendering a view’s [`body`](../view/body-8kl5o.md) to ensure the view has the most recent value.
 

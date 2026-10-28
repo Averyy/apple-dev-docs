@@ -22,7 +22,7 @@ static let localOnly: UIPasteboard.OptionsKey
 extern UIPasteboardOption const UIPasteboardOptionLocalOnly;
 ```
 
-#### Description
+## Description
 
 The value is expressed as an [`NSNumber`](../../../Foundation/nsnumber.md) type.
 

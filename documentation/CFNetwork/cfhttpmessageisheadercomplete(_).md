@@ -24,7 +24,7 @@ func CFHTTPMessageIsHeaderComplete(_ message: CFHTTPMessage) -> Bool
 extern Boolean CFHTTPMessageIsHeaderComplete(CFHTTPMessageRef message);
 ```
 
-#### Discussion
+## Discussion
 
 After calling [`CFHTTPMessageAppendBytes(_:_:_:)`](./cfhttpmessageappendbytes%28_,_,_%29.md), call this function to see if the message header is complete.
 

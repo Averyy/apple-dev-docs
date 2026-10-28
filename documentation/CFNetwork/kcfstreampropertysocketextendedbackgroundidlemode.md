@@ -24,7 +24,7 @@ let kCFStreamPropertySocketExtendedBackgroundIdleMode: CFString
 extern CFStringRef const kCFStreamPropertySocketExtendedBackgroundIdleMode;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Set this property before opening the stream.
 

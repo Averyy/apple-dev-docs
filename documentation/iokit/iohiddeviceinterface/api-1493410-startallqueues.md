@@ -16,7 +16,7 @@ Starts data delivery on all queues for this device.
 IOReturn (*startAllQueues)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an IOReturn code.
 

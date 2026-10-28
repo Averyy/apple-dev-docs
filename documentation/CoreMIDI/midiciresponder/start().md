@@ -25,7 +25,7 @@ func start() -> Bool
 - (BOOL) start;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the the responder started.
 

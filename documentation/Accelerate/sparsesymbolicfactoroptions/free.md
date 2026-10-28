@@ -25,7 +25,7 @@ var free: (UnsafeMutableRawPointer?) -> Void
 void (*)(void *) free;
 ```
 
-#### Discussion
+## Discussion
 
 If this function pointer is `nil`, the system uses `free``()`.
 

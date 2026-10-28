@@ -19,7 +19,7 @@ class var shared: NSHelpManager { get }
 @property (class, strong, readonly) NSHelpManager * sharedHelpManager;
 ```
 
-#### Return Value
+## Return Value
 
 Shared help manager.
 

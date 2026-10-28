@@ -25,7 +25,7 @@ convenience init?(named name: String)
 + (instancetype) tileSetNamed:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A new tile set or `nil` if a tile set with a matching name cannot be found.
 

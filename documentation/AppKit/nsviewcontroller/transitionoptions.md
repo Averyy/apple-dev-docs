@@ -19,7 +19,7 @@ struct TransitionOptions
 enum NSViewControllerTransitionOptions : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The up and down slide animation options are disjoint and you cannot combine them.
 

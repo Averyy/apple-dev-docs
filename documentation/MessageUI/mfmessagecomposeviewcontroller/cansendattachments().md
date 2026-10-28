@@ -22,7 +22,7 @@ class func canSendAttachments() -> Bool
 + (BOOL) canSendAttachments;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the device can send attachments in MMS or iMessage messages, or [`false`](../../Swift/false.md) otherwise.
 

@@ -19,7 +19,7 @@ func setButtonType(_ type: NSButton.ButtonType)
 - (void) setButtonType:(NSButtonType) type;
 ```
 
-#### Discussion
+## Discussion
 
 The  [`setButtonType(_:)`](./setbuttontype%28_%29.md) method redisplays the button before returning.
 

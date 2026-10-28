@@ -22,7 +22,7 @@ func GLKMatrix3MakeWithArray(_ values: UnsafeMutablePointer<Float>!) -> GLKMatri
 static GLKMatrix3 GLKMatrix3MakeWithArray(float values[9]);
 ```
 
-#### Return Value
+## Return Value
 
 A new matrix.
 

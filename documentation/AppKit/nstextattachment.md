@@ -19,7 +19,7 @@ class NSTextAttachment
 @interface NSTextAttachment : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`NSAttributedString`](../Foundation/nsattributedstring.md) class uses text attachment objects as the values for attachment attributes (stored in the attributed string under the [`attachment`](../Foundation/nsattributedstring/key/attachment.md) key).
 

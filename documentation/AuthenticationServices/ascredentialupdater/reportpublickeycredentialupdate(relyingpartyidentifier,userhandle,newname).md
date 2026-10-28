@@ -21,7 +21,7 @@ Provides credential managers with an update to a credential’s name, such as wh
 final func reportPublicKeyCredentialUpdate(relyingPartyIdentifier: String, userHandle: Data, newName: String) async throws
 ```
 
-#### Discussion
+## Discussion
 
 This call shares the updated credential data with all credential managers installed on the system.
 

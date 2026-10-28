@@ -20,7 +20,7 @@ Displays a standard system interface to generate images from the provided input.
 @objc @preconcurrency class ImagePlaygroundViewController
 ```
 
-#### Overview
+## Overview
 
 Present an [`ImagePlaygroundViewController`](./imageplaygroundviewcontroller.md) to display a standard system interface to generate images from a description you provide. People use the view controller interface to generate images and experiment with the contents before returning an image to your app. You can then incorporate that image into your app’s content.
 

@@ -25,7 +25,7 @@ class GKLeaderboardSet
 @interface GKLeaderboardSet : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`GKLeaderboardSet`](./gkleaderboardset.md) object represents a group of leaderboards that you configure in App Store Connect. For example, if your game has different worlds or levels, you can organize the leaderboards into sets for each world or level. In the Game Center dashboard, players navigate from the leaderboard sets to the individual leaderboards. If you use leaderboard sets, you must have one or more leaderboards and then place each leaderboard in a set, which can be a mix of classic and recurring leaderboards.
 

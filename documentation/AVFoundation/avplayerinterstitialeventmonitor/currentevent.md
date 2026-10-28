@@ -25,7 +25,7 @@ var currentEvent: AVPlayerInterstitialEvent? { get }
 @property (readonly, nullable) AVPlayerInterstitialEvent * currentEvent;
 ```
 
-#### Discussion
+## Discussion
 
 The value is `nil` when primary content is playing.
 

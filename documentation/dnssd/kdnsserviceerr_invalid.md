@@ -23,7 +23,7 @@ var kDNSServiceErr_Invalid: Int { get }
 kDNSServiceErr_Invalid
 ```
 
-#### Discussion
+## Discussion
 
 An invalid index or character was passed.
 

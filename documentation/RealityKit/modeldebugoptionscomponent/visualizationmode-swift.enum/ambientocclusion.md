@@ -20,7 +20,7 @@ A mode that displays the calculated ambient occlusion value as the surface color
 case ambientOcclusion
 ```
 
-#### Discussion
+## Discussion
 
 Add a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `ambientOcclusion` to an entity to tell RealityKit to draw the calculated ambient occlusion values as the entity’s surface color. Ambient occlusion represents the entity’s exposure to ambient light. RealityKit draws ambient occlusion values as a grayscale value from black (`0.0`) to white (`1.0`), rendering flat surface areas in white, and crevices, dents, and recessed areas in darker shades.
 

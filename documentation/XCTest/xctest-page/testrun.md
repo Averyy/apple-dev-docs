@@ -16,7 +16,7 @@ var testRun: XCTestRun? { get }
 @property (readonly, nullable) XCTestRun * testRun;
 ```
 
-#### Discussion
+## Discussion
 
 An instance of [`testRunClass`](./testrunclass.md), or `nil` if the test hasn’t run.
 

@@ -16,7 +16,7 @@ The maximum bounds near the midpoint of a logical value in which the value is ig
 #define kIOHIDElementCalibrationDeadZoneMaxKey
 ```
 
-#### Discussion
+## Discussion
 
 The dead zone property is used to allow for slight differences in the idle value returned by an element.
 

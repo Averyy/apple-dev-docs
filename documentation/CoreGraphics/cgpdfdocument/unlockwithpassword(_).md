@@ -25,11 +25,11 @@ func unlockWithPassword(_ password: UnsafePointer<CChar>) -> Bool
 extern bool CGPDFDocumentUnlockWithPassword(CGPDFDocumentRef document, const char *password);
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean that, if [`true`](../../Swift/true.md), indicates that the document has been successfully unlocked. If the value is [`false`](../../Swift/false.md), the document has not been unlocked.
 
-#### Discussion
+## Discussion
 
 Given an encrypted PDF document and a password, this function does the following:
 

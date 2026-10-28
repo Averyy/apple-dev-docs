@@ -4,7 +4,7 @@
 
 Show the output from a GPU’s rendering pass to the user in your app.
 
-#### Overview
+## Overview
 
 A texture contains visual data that you may want to display onscreen, such as a filtered image or a frame of animation in a game. To display a texture on a device’s screen, you need to create or acquire a drawable texture from [Core Animation](../QuartzCore/QuartzCore.md).
 

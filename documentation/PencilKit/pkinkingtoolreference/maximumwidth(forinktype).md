@@ -23,7 +23,7 @@ class func maximumWidth(forInkType inkType: __PKInkType) -> CGFloat
 + (CGFloat) maximumWidthForInkType:(PKInkType) inkType;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum line width (in points) for the specified tool type.
 

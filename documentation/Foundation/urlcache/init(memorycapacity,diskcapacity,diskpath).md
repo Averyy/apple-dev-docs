@@ -25,11 +25,11 @@ init(memoryCapacity: Int, diskCapacity: Int, diskPath path: String?)
 - (instancetype) initWithMemoryCapacity:(NSUInteger) memoryCapacity diskCapacity:(NSUInteger) diskCapacity diskPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized cache object.
 
-#### Discussion
+## Discussion
 
 The returned cache instance is backed by disk, so you have more leeway when choosing the capacity for this kind of cache. A disk cache measured in the tens of megabytes should be acceptable in most cases.
 

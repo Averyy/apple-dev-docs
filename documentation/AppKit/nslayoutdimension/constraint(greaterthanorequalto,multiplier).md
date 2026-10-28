@@ -19,11 +19,11 @@ func constraint(greaterThanOrEqualTo anchor: NSLayoutDimension, multiplier m: CG
 - (NSLayoutConstraint *) constraintGreaterThanOrEqualToAnchor:(NSLayoutDimension *) anchor multiplier:(CGFloat) m;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSLayoutConstraint`](../nslayoutconstraint.md) object that defines the attribute represented by this layout anchor as greater than or equal to the attribute represented by the `anchor` parameter multiplied by the `m` constant.
 
-#### Discussion
+## Discussion
 
 This method defines the relationship `first attribute >= m * second attribute`. Where `first attribute` is the layout attribute represented by the anchor receiving this method call, and `second attribute` is the layout attribute represented by the `anchor` parameter.
 

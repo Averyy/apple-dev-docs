@@ -21,7 +21,7 @@ optional func sheetPresentationControllerDidChangeSelectedDetentIdentifier(_ she
 - (void) sheetPresentationControllerDidChangeSelectedDetentIdentifier:(UISheetPresentationController *) sheetPresentationController;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method if you want to perform changes in response to the user resizing a sheet to a new detent.
 

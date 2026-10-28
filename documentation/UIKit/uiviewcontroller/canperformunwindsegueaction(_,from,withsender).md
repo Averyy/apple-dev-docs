@@ -22,11 +22,11 @@ func canPerformUnwindSegueAction(_ action: Selector, from fromViewController: UI
 - (BOOL) canPerformUnwindSegueAction:(SEL) action fromViewController:(UIViewController *) fromViewController withSender:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the view controller wants to handle the unwind action, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 When an unwind segue is triggered, UIKit uses this method and the [`allowedChildrenForUnwinding(from:)`](./allowedchildrenforunwinding%28from%29.md) method to locate a suitable view controller to handle the unwind segue.
 

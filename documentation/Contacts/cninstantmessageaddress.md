@@ -24,7 +24,7 @@ class CNInstantMessageAddress
 @interface CNInstantMessageAddress : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use the methods and properties of `CNInstantMessageAddress` to identify instant messaging addresses. Some instant message services, such as Facebook and Skype are predefined in this class. You can also specify your own instant message service using the [`init(username:service:)`](./cninstantmessageaddress/init%28username,service%29.md) method.
 

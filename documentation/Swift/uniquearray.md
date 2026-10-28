@@ -22,7 +22,7 @@ A dynamically self-resizing, heap allocated, noncopyable array of potentially no
 struct UniqueArray<Element> where Element : ~Copyable
 ```
 
-#### Overview
+## Overview
 
 `UniqueArray` instances automatically resize their underlying storage as needed to accommodate newly inserted items, using a geometric growth curve. This lets code using `UniqueArray` avoid having to allocate enough capacity in advance; on the other hand, it makes it difficult to tell when and where such reallocations may happen.
 

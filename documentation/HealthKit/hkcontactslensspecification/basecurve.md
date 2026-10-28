@@ -25,7 +25,7 @@ var baseCurve: HKQuantity? { get }
 @property (nonatomic, copy, readonly, nullable) HKQuantity * baseCurve;
 ```
 
-#### Discussion
+## Discussion
 
 The property’s range is 7.8 to 9.2 mm.
 

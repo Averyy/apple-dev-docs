@@ -26,7 +26,7 @@ var layerInstructions: [AVVideoCompositionLayerInstruction] { get set }
 @property (nonatomic, copy) NSArray<AVVideoCompositionLayerInstruction *> * layerInstructions;
 ```
 
-#### Discussion
+## Discussion
 
 Tracks are layered in the composition according to the top-to-bottom order of the `layerInstructions` array; the track with trackID of the first instruction in the array will be layered on top, with the track with the trackID of the second instruction immediately underneath, and so on.
 

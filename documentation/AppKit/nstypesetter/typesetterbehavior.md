@@ -19,7 +19,7 @@ var typesetterBehavior: NSLayoutManager.TypesetterBehavior { get set }
 @property NSTypesetterBehavior typesetterBehavior;
 ```
 
-#### Return Value
+## Return Value
 
 The current typesetter behavior.
 

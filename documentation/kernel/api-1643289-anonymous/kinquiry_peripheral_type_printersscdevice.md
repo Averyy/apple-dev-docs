@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_PrinterSSCDevice = 0x02
 ```
 
-#### Discussion
+## Discussion
 
 SSC Device.
 

@@ -5,7 +5,7 @@
 
 Learn the best way to record a packet trace when communicating with Apple.
 
-#### Overview
+## Overview
 
 At times you may need to record a packet trace and then share it with Apple for further analysis. For example:
 
@@ -16,7 +16,7 @@ When you submit a packet trace in such situations, follow the instructions below
 
 > **Note**:  These instructions are also useful if you’re investigating a problem reported by an advanced user and need them to send *you* a packet trace to further that investigation.
 
-##### Record the Trace
+### Record the Trace
 
 Follow these steps to record a packet trace to submit to Apple.
 
@@ -30,7 +30,7 @@ Follow these steps to record a packet trace to submit to Apple.
 6. Follow the instructions in [Work Through the Submission Checklist](./submitting-a-packet-trace-to-apple.md#Work-Through-the-Submission-Checklist) to ensure that you’ve included all the necessary information.
 7. Submit the file to Apple as described in [Submit the Packet Trace to Apple](./submitting-a-packet-trace-to-apple.md#Submit-the-Packet-Trace-to-Apple).
 
-##### Work Through the Submission Checklist
+### Work Through the Submission Checklist
 
 When you submit a packet trace to Apple, make sure you provide:
 
@@ -44,7 +44,7 @@ For each relevant machine shown in the packet trace, describe the following:
 - The machine’s IP address
 - The machine’s hardware address (also known as the Ethernet address, Wi-Fi address, or MAC address)
 
-##### Submit the Packet Trace to Apple
+### Submit the Packet Trace to Apple
 
 Before you submit your trace to Apple, make sure you’ve included all of the information described in [Work Through the Submission Checklist](./submitting-a-packet-trace-to-apple.md#Work-Through-the-Submission-Checklist). You can put this information in a separate text file if you want, but it’s OK to just include it as text in your bug report, DTS support request, and so on.
 

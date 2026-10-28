@@ -23,7 +23,7 @@ static func .^= (a: inout SIMDMask<Storage>, b: SIMDMask<Storage>)
 
 Available when `Storage` is `SIMD32<Int>`.
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

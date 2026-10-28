@@ -19,7 +19,7 @@ The reverse geocoder’s delegate object.
 @property (nonatomic, weak) id<MKReverseGeocoderDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 A reverse-geocoder object sends messages to its delegate regarding the successful (or unsuccessful) acquisition of placemark data. You must provide a delegate object to receive this data.
 

@@ -29,7 +29,7 @@ class NSData
 
 - [Implementing Handoff in Your App](./implementing-handoff-in-your-app.md)
 
-#### Overview
+## Overview
 
 In Swift, the buffer bridges to [`Data`](./data.md); use [`NSData`](./nsdata.md) when you need reference semantics or other Foundation-specific behavior.
 
@@ -41,7 +41,7 @@ The size of the data is subject to a theoretical limit of about 8 exabytes (1 EB
 
 > ❗ **Important**:  The Swift overlay to the Foundation framework provides the [`Data`](./data.md) structure, which bridges to the [`NSData`](./nsdata.md) class and its mutable subclass [`NSMutableData`](./nsmutabledata.md). For more information about value types, see [Working with Foundation Types](../Swift/working-with-foundation-types.md).
 
-##### Writing Data Atomically
+### Writing Data Atomically
 
 [NSData](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/PropertyLists/OldStylePlists/OldStylePLists.html#//apple_ref/doc/uid/20001012-47169) provides methods for atomically saving their contents to a file, which guarantee that the data is either saved in its entirety, or it fails completely. An atomic write first writes the data to a temporary file and then, only if this write succeeds, moves the temporary file to its final location.
 

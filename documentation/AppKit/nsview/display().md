@@ -19,7 +19,7 @@ func display()
 - (void) display;
 ```
 
-#### Discussion
+## Discussion
 
 If the view isn’t opaque, this method backs up the view hierarchy to the first opaque ancestor, calculates the portion of the opaque ancestor covered by the view, and begins displaying from there.
 

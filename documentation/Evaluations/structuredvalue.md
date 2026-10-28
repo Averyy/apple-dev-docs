@@ -21,7 +21,7 @@ A type-safe representation of JSON values.
 enum StructuredValue
 ```
 
-#### Overview
+## Overview
 
 ```swift
 let name: StructuredValue = "Alice"

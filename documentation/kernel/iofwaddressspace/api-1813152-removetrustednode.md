@@ -12,7 +12,7 @@ inline void removeTrustedNode(
  IOFireWireDevice *device )
 ```
 
-#### Return Value
+## Return Value
 
 none
 

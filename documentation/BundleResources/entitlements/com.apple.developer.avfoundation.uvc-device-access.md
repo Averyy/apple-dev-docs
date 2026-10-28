@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app can stream USB UVC devices connec
 - **Name**: `com.apple.developer.avfoundation.uvc-device-access`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 On visionOS, your app must have the this entitlement to discover and use devices of type [`external`](../../AVFoundation/avcapturedevice/devicetype-swift.struct/external.md) using an [`AVCaptureDevice.DiscoverySession`](../../AVFoundation/avcapturedevice/discoverysession.md).
 

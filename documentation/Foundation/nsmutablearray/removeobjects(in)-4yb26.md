@@ -25,7 +25,7 @@ func removeObjects(in otherArray: [Any])
 - (void) removeObjectsInArray:(NSArray<id> *) otherArray;
 ```
 
-#### Discussion
+## Discussion
 
 This method is similar to [`remove(_:)`](./remove%28_%29.md), but it allows you to efficiently remove large sets of objects with a single operation. If the receiving array does not contain objects in `otherArray`, the method has no effect (although it does incur the overhead of searching the contents).
 

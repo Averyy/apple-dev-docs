@@ -24,7 +24,7 @@ var audioTapProcessor: MTAudioProcessingTap? { get }
 @property (nonatomic, retain, readonly, nullable) MTAudioProcessingTapRef audioTapProcessor;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the audio tap to access the track’s audio data before it is played, read, or exported. This property is `nil` by default.
 

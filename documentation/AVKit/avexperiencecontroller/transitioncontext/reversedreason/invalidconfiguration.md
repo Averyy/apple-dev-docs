@@ -15,7 +15,7 @@ A transition could not be completed because some required configuration was unav
 case invalidConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 This can happen if AVPlayerViewController has been freed.
 

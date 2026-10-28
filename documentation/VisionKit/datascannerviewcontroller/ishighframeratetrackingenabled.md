@@ -18,7 +18,7 @@ A Boolean value that determines the frequency at which the scanner updates the g
 final let isHighFrameRateTrackingEnabled: Bool
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, the scanner updates the geometry of items more frequently allowing your app to closely track recognized items. If you don’t track items in the live video, set this property to `false`. The default value is `true`.
 

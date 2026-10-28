@@ -20,7 +20,7 @@ A generation event sent on a generation channel.
 struct Event
 ```
 
-#### Overview
+## Overview
 
 Construct one with a leading-dot factory — [`response(entryID:action:)`](./event/response%28entryid,action%29.md), [`reasoning(entryID:action:)`](./event/reasoning%28entryid,action%29.md), or [`toolCalls(entryID:action:)`](./event/toolcalls%28entryid,action%29.md) — and pass it to [`send(_:)`](./send%28_%29.md).
 

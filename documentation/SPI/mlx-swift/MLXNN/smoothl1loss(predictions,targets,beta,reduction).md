@@ -17,15 +17,15 @@ Computes the smooth L1 loss.
 func smoothL1Loss(predictions: MLXArray, targets: MLXArray, beta: Float = 1, reduction: LossReduction = .mean) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Computed smooth L1 loss
 
-#### Discussion
+## Discussion
 
 The smooth L1 loss is a variant of the L1 loss which replaces the absolute difference with a squared difference when the absolute difference is less than `beta`.
 
-##### See Also
+### See Also
 
 - [Loss Functions](./losses.md)
 

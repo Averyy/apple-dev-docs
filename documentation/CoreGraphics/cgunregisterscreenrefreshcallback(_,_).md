@@ -21,7 +21,7 @@ func CGUnregisterScreenRefreshCallback(_ callback: CGScreenRefreshCallback, _ us
 extern void CGUnregisterScreenRefreshCallback(CGScreenRefreshCallback callback, void *userInfo);
 ```
 
-#### Discussion
+## Discussion
 
 When you call this function, the two arguments must match the registered entry to be removed.
 

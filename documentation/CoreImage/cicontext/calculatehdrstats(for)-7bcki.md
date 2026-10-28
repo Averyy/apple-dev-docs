@@ -24,7 +24,7 @@ func calculateHDRStats(for buffer: CVPixelBuffer)
 - (void) calculateHDRStatsForCVPixelBuffer:(CVPixelBufferRef) buffer;
 ```
 
-#### Discussion
+## Discussion
 
 If the `CVPixelBuffer` has a Clean Aperture rectangle then only pixels within that rectangle are considered.
 

@@ -20,11 +20,11 @@ Returns a queue change for a new up-next item.
 static func setUpNext(_ item: GroupSessionEvent.Action.QueueChange.Item) -> GroupSessionEvent.Action.QueueChange
 ```
 
-#### Return Value
+## Return Value
 
 A type that contains information about the change.
 
-#### Discussion
+## Discussion
 
 Before showing a notice to the user, call this method to generate a type for the changed up-next item. Pass this type to the [`updatedQueue(_:)`](../updatedqueue%28_%29.md) method to create the postable action.
 

@@ -21,7 +21,7 @@ Creates a string representing the given value in base 10, or some other specifie
 init<T>(_ value: T, radix: Int = 10, uppercase: Bool = false) where T : BinaryInteger
 ```
 
-#### Discussion
+## Discussion
 
 The following example converts the maximal `Int` value to a string and prints its length:
 

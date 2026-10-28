@@ -20,11 +20,11 @@ func ODNodeCreateRecord(_ node: ODNodeRef!, _ recordType: String!, _ recordName:
 extern ODRecordRefODNodeCreateRecord(ODNodeRef node, ODRecordType recordType, CFStringRef recordName, CFDictionaryRef attributeDict, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 The created record.
 
-#### Discussion
+## Discussion
 
 The keys in `inAttributes` can be of type `CFStringRef` or one of the `ODRecordType` constants. The values in `inAttributes` must be of type `CFArrayRef`, containing elements of type `CFStringRef` or `CFDataRef`.
 

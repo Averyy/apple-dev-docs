@@ -20,11 +20,11 @@ init(archiveURL url: URL) throws
 - (instancetype) initWithArchiveURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The reference object contained in the file.
 
-#### Discussion
+## Discussion
 
 To use the object for detection in a world-tracking AR session, add it to the [`detectionObjects`](../arworldtrackingconfiguration/detectionobjects.md) set in your session configuration.
 

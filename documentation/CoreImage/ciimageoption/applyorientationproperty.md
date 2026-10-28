@@ -24,7 +24,7 @@ static let applyOrientationProperty: CIImageOption
 extern CIImageOption const kCIImageApplyOrientationProperty;
 ```
 
-#### Discussion
+## Discussion
 
 Images can contain metadata that reveals the orientation at capture time.  You can load this metadata into [`CIImage`](../ciimage.md) with [`imageWithContentsOfURL:`](../ciimage/imagewithcontentsofurl_.md) or [`init(data:)`](../ciimage/init%28data%29.md) when the captured image contains orientation metadata.  Use any of the `initWith:options:` methods if the [`properties`](./properties.md) ([`NSDictionary`](../../Foundation/nsdictionary.md) of metadata properties) option is also provided.
 

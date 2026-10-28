@@ -29,11 +29,11 @@ nonisolated
 func background<S>(in shape: S, fillStyle: FillStyle = FillStyle()) -> some View where S : Shape
 ```
 
-#### Return Value
+## Return Value
 
 A view with the specified insettable shape drawn behind it.
 
-#### Discussion
+## Discussion
 
 This modifier behaves like [`background(_:in:fillStyle:)`](./background%28_,in,fillstyle%29.md), except that it always uses the [`background`](../shapestyle/background.md) shape style to fill the specified insettable shape. For example, you can use a [`RoundedRectangle`](../roundedrectangle.md) as a background on a [`Label`](../label.md):
 

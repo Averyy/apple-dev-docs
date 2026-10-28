@@ -25,7 +25,7 @@ func CGImageMetadataGetTypeID() -> CFTypeID
 extern CFTypeID CGImageMetadataGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for [`CGImageMetadata`](./cgimagemetadata.md) and [`CGMutableImageMetadata`](./cgmutableimagemetadata.md) objects.
 

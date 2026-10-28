@@ -19,7 +19,7 @@ func setData(_ data: Data, forType type: NSPasteboard.PasteboardType) -> Bool
 - (BOOL) setData:(NSData *) data forType:(NSPasteboardType) type;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the value was set successfully, otherwise [`false`](../../Swift/false.md).
 

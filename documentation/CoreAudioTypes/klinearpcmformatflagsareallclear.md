@@ -25,7 +25,7 @@ var kLinearPCMFormatFlagsAreAllClear: AudioFormatFlags { get }
 kLinearPCMFormatFlagsAreAllClear
 ```
 
-#### Discussion
+## Discussion
 
 This flag is a synonym for [`kAudioFormatFlagsAreAllClear`](./kaudioformatflagsareallclear.md).
 

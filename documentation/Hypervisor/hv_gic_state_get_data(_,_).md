@@ -19,11 +19,11 @@ func hv_gic_state_get_data(_ state: hv_gic_state_t, _ gic_state_data: UnsafeMuta
 extern hv_return_t hv_gic_state_get_data(hv_gic_state_t state, void *gic_state_data);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) on success; otherwise, an error code.
 
-#### Discussion
+## Discussion
 
 The function returns an opaque data buffer that contains the complete serialized state of the device, except for the GIC CPU registers. You can write the data to a file and is stable. It’s also versioned which allows the framework to detect incompatibilities when it restores the state. The size of this GIC state buffer must be at least as large as the size returned by [`hv_gic_state_get_size(_:_:)`](./hv_gic_state_get_size%28_,_%29.md).
 

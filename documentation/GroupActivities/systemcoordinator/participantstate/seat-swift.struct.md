@@ -15,7 +15,7 @@ A seat assigned to a single participant in a spatial template.
 struct Seat
 ```
 
-#### Overview
+## Overview
 
 You can use this structure to inspect the initial position of a participant in your group activity and place UI elements near them.
 

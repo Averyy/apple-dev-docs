@@ -24,7 +24,7 @@ var vertexStride: Int { get set }
 @property (nonatomic) NSUInteger vertexStride;
 ```
 
-#### Discussion
+## Discussion
 
 The stride you specify needs to be a multiple of the size of the vertex format you provide in the [`vertexFormat`](./vertexformat.md) property. Similarly, you are responsible for ensuring this stride matches the vertex format data type’s alignment.
 

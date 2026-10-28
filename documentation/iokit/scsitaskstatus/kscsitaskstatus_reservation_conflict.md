@@ -14,7 +14,7 @@
 kSCSITaskStatus_RESERVATION_CONFLICT = 0x18
 ```
 
-#### Discussion
+## Discussion
 
 The task completed with a status of RESERVATION_CONFLICT.
 

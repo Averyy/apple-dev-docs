@@ -21,7 +21,7 @@ The projective transform’s rotation.
 var rotation: Rotation3DFloat? { get }
 ```
 
-#### Discussion
+## Discussion
 
 This function computes the rotation from the first three rows of the transform matrix and ignores the fourth row. This function can’t extract rotation from a non-scale-rotate-translate projective transform. In that case, the function returns `nil`.
 

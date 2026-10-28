@@ -19,7 +19,7 @@ var showsFullScreenToggleButton: Bool { get set }
 @property BOOL showsFullScreenToggleButton;
 ```
 
-#### Discussion
+## Discussion
 
 This property is currently supported only with a [`controlsStyle`](./controlsstyle.md) of [`AVPlayerViewControlsStyle.floating`](../avplayerviewcontrolsstyle/floating.md) or [`AVPlayerViewControlsStyle.inline`](../avplayerviewcontrolsstyle/inline.md).
 

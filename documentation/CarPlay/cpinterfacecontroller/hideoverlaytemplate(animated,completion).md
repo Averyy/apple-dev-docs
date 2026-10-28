@@ -25,7 +25,7 @@ func hideOverlayTemplate(animated: Bool) async throws -> Bool
 - (void) hideOverlayTemplateAnimated:(BOOL) animated completion:(void (^)(BOOL success, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: If there is no current overlay template, this method will have no effect.
 

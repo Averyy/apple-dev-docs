@@ -15,7 +15,7 @@ An unresponsive delegate error.
 static var applicationDelegateWatchKitRequestReplyNotCalled: WatchKitError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 WatchKit no longer uses this error code.
 

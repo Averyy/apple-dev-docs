@@ -24,7 +24,7 @@ class OSOrderedSet : OSSet
 class OSOrderedSet : OSCollection
 ```
 
-#### Overview
+## Overview
 
 OSOrderedSet is a container for Libkern C++ objects (those derived from OSMetaClassBase, in particular OSObject). Storage and access follow ordered set logic. A given object is stored in the set only once, but you can:
 
@@ -38,7 +38,7 @@ Note that automated ordering is performed only upon addition of objects and depe
 
 As with all Libkern collection classes, OSOrderedSet retains objects added to it, and releases objects removed from it. An OSOrderedSet also grows as necessary to accommodate new objects, *unlike* Core Foundation collections (it does not, however, shrink).
 
-##### Use Restrictions
+### Use Restrictions
 
 With very few exceptions in the I/O Kit, all Libkern-based C++ classes, functions, and macros are **unsafe** to use in a primary interrupt context. Consult the I/O Kit documentation related to primary interrupts for more information.
 

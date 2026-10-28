@@ -23,7 +23,7 @@ var applicationContext: [String : Any] { get }
 @property (nonatomic, copy, readonly) NSDictionary<NSString *,id> * applicationContext;
 ```
 
-#### Discussion
+## Discussion
 
 After calling the [`updateApplicationContext(_:)`](./updateapplicationcontext%28_%29.md) method, the session object places a copy of your dictionary in this property so that you can determine what data you last sent to the counterpart.
 

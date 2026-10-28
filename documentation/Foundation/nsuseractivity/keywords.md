@@ -29,7 +29,7 @@ var keywords: Set<String> { get set }
 
 - [Creating a user activity object](../creating-a-user-activity-object.md)
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`. The system indexes the keywords you provide.
 

@@ -20,7 +20,7 @@ Instructions you provide to the model that define its behavior.
 struct Instructions
 ```
 
-#### Overview
+## Overview
 
 Instructions are typically provided to define the role and behavior of the model. The model is typically trained to obey instructions over any commands it receives in prompts. This is a security mechanism to help mitigate prompt injection attacks.
 

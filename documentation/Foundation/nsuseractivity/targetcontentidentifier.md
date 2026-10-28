@@ -37,7 +37,7 @@ var targetContentIdentifier: String? { get set }
 
 - [Supporting the creation of Quick Notes](../supporting-the-creation-of-quick-notes.md)
 
-#### Discussion
+## Discussion
 
 A target content identifier is a string you define within your app. This string provides a unique identifier for specific content in your app, like a particular document or the location of a piece of data in a database. This string isn’t visible to the user.
 

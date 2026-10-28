@@ -20,7 +20,7 @@ Creates a session you use to generate a pixel buffer of motion vectors from two 
 extern OSStatus VTMotionEstimationSessionCreate(CFAllocatorRef allocator, CFDictionaryRef motionVectorProcessorSelectionOptions, uint32_t width, uint32_t height, VTMotionEstimationSessionRef*motionEstimationSessionOut);
 ```
 
-#### Discussion
+## Discussion
 
 The function creates a session for computing motion vectors between two pixel buffers.
 

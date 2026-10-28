@@ -33,7 +33,7 @@ var speakableGroupName: INSpeakableString? { get }
 @property (atomic, copy, readonly, nullable) INSpeakableString * speakableGroupName;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to identify the group that is the intended recipient of the message. Your app is responsible for managing groups and for using this parameter to identify the appropriate group.
 

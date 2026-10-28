@@ -24,7 +24,7 @@ var groups: Int { get set }
 @property (nonatomic, readwrite) NSUInteger groups;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`.
 

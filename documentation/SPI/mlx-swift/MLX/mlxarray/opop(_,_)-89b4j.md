@@ -17,11 +17,11 @@ Element-wise right shift.
 static func >> (lhs: some ScalarOrArray, rhs: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Shift the bits of the first input to the right by the second using numpy-style broadcasting semantics. Either or both input arrays can also be scalars.
 
-##### See Also
+### See Also
 
 - [Arithmetic](../arithmetic.md)
 - [`rightShift(_:_:stream:)`](../rightshift%28_,_,stream%29.md)

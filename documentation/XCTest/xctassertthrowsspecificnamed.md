@@ -12,7 +12,7 @@ Asserts that an expression throws a specific NSException with a specific name.
 #define XCTAssertThrowsSpecificNamed(expression, exception_class, exception_name, ...)
 ```
 
-#### Discussion
+## Discussion
 
 This function generates a failure if `expression` doesn’t throw an [`NSException`](../Foundation/nsexception.md) of class `exception_class` with a name of `exception_name`.
 

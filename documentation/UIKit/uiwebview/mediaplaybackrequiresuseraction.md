@@ -21,7 +21,7 @@ var mediaPlaybackRequiresUserAction: Bool { get set }
 @property (nonatomic) BOOL mediaPlaybackRequiresUserAction;
 ```
 
-#### Discussion
+## Discussion
 
 The default value on both iPad and iPhone is [`true`](../../Swift/true.md). To make media play automatically when loaded, set this property to [`false`](../../Swift/false.md) and ensure the `<audio>` or `<video>` element you want to play has the `autoplay` attribute set.
 

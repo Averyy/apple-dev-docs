@@ -25,7 +25,7 @@ class NSCache<KeyType, ObjectType> where KeyType : AnyObject, ObjectType : AnyOb
 @interface NSCache : NSObject
 ```
 
-#### Overview
+## Overview
 
 Cache objects differ from other mutable collections in a few ways:
 

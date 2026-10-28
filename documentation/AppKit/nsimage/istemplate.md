@@ -19,7 +19,7 @@ var isTemplate: Bool { get set }
 @property (getter=isTemplate) BOOL template;
 ```
 
-#### Discussion
+## Discussion
 
 Images you mark as template images should consist of only black and clear colors. You can use the alpha channel in the image to adjust the opacity of black content, however.
 

@@ -16,7 +16,7 @@ get callout(): AnnotationCalloutDelegate | null;
 set callout(callout: AnnotationCalloutDelegate | null);
 ```
 
-#### Discussion
+## Discussion
 
 The [`callout`](./callout.md) delegate is an optional object that implements methods for customizing the appearance, content, and animations of the callout that appear when selecting the annotation.
 

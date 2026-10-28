@@ -16,11 +16,11 @@ Returns the shared instance representing the target application specified by its
 + (SBApplication *) applicationWithBundleIdentifier:(NSString *) ident;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of a `SBApplication` subclass that represents the target application whose bundle identifier is `ident`. Returns `nil` if no such application can be found or if the application does not have a scripting interface.
 
-#### Discussion
+## Discussion
 
 For applications that declare themselves to have a dynamic scripting interface, this method will launch the application if it is not already running.
 

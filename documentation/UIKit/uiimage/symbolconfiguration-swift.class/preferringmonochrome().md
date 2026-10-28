@@ -28,7 +28,7 @@ class func preferringMonochrome() -> Self
 
 - [Configuring and displaying symbol images in your UI](../../configuring-and-displaying-symbol-images-in-your-ui.md)
 
-#### Return Value
+## Return Value
 
 A symbol configuration that acquires the monochrome variant of a symbol.
 

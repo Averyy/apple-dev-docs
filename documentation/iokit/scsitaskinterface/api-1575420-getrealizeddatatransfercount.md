@@ -16,11 +16,11 @@ Method to get the actual transfer count in bytes from the SCSITask.
 UInt64 (*GetRealizedDataTransferCount)(void *task);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a UInt64 value of bytes transferred.
 
-#### Discussion
+## Discussion
 
 This method can be used to get the actual transfer count in bytes from the SCSITask.
 

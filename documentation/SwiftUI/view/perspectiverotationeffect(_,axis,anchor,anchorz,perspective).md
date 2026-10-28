@@ -16,11 +16,11 @@ Renders a view’s content as if it’s rotated in three dimensions around the s
 nonisolated func perspectiveRotationEffect(_ angle: Angle, axis: (x: CGFloat, y: CGFloat, z: CGFloat), anchor: UnitPoint = .center, anchorZ: CGFloat = 0, perspective: CGFloat = 1) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view with rotated content.
 
-#### Discussion
+## Discussion
 
 Use this method to create the effect of rotating a view in three dimensions around a specified axis of rotation. The modifier projects the rotated, two-dimensional content onto the original view’s plane. Use the `perspective` input to control the renderer’s vanishing point. The following example creates the appearance of rotating text 45˚ about the y-axis:
 

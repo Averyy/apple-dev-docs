@@ -20,7 +20,7 @@ optional func textView(_ textView: UITextView, didEndFormattingWith viewControll
 - (void) textView:(UITextView *) textView didEndFormattingWithViewController:(UITextFormattingViewController *) viewController;
 ```
 
-#### Discussion
+## Discussion
 
 Informs the delegate that text formatting controller has been dismissed.
 

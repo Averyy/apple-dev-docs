@@ -25,7 +25,7 @@ weak var delegate: (any MKLocalSearchCompleterDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<MKLocalSearchCompleterDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 You must provide a delegate object to receive completion results and to handle any errors that might occur. For more information about the methods of the delegate protocol, see [`MKLocalSearchCompleterDelegate`](../mklocalsearchcompleterdelegate.md).
 

@@ -14,13 +14,13 @@ Render into an offscreen texture by creating a custom render pass.
 - tvOS 17.0+
 - Xcode 26.3+
 
-#### Overview
+## Overview
 
 A render pass is a sequence of rendering commands that draw into a set of textures. This sample executes a pair of render passes to render a view’s contents. For the first pass, the sample creates a custom render pass to render an image into a texture. This pass is  an *offscreen render pass*, because the sample renders to a normal texture, rather than one created by the display subsystem. The second render pass uses a render pass descriptor, provided by the [`MTKView`](../MetalKit/mtkview.md) object, to render and display the final image. The sample uses the texture from the offscreen render pass as source data for the drawing command in the second render pass.
 
 Offscreen render passes are fundamental building blocks for larger or more complicated renderers. For example, many lighting and shadow algorithms require an offscreen render pass to render shadow information and a second pass to calculate the final scene lighting. Offscreen render passes are also useful when performing batch processing of data that doesn’t need to be displayed onscreen.
 
-##### Create a texture for the offscreen render pass
+### Create a texture for the offscreen render pass
 
 An [`MTKView`](../MetalKit/mtkview.md) object automatically creates drawable textures to render into. The sample also needs a texture to render into during the offscreen render pass.  To create that texture, it first creates an [`MTLTextureDescriptor`](./mtltexturedescriptor.md) object and configures its properties.
 
@@ -38,7 +38,7 @@ The sample configures the [`usage`](./mtltexturedescriptor/usage.md) property to
 
 Setting usage flags precisely can improve performance, because Metal can configure the texture’s underlying data only for the specified uses.
 
-##### Create the render pipelines
+### Create the render pipelines
 
 A render pipeline specifies how to execute a drawing command, including the vertex and fragment functions to execute, and the pixel formats of any render targets it acts upon. Later, when the sample creates the custom render pass, it needs to use the same pixel formats.
 
@@ -55,7 +55,7 @@ _renderToTextureRenderPipeline = [_device newRenderPipelineStateWithDescriptor:p
 
 The code to create the pipeline for the drawable render pass is similar to that found in [Drawing a triangle with Metal 4](./drawing-a-triangle-with-metal-4.md). To guarantee that the two pixel formats match, the sample sets the descriptor’s pixel format to the view’s `colorPixelFormat`. Similarly, when creating the offscreen render pipeline, the sample sets the descriptor’s pixel format to the offscreen texture’s format.
 
-##### Set up the offscreen render pass descriptor
+### Set up the offscreen render pass descriptor
 
 To render to the offscreen texture, the sample configures a new render pass descriptor. It creates an [`MTLRenderPassDescriptor`](./mtlrenderpassdescriptor.md) object and configures its properties. This sample renders to a single color texture, so it sets `colorAttachment[0].texture` to point to the offscreen texture:
 
@@ -78,7 +78,7 @@ Metal uses load and store actions to optimize how the GPU manages texture data. 
 
 A render pass descriptor has other properties not used in this sample that further modify the rendering process. For information on other ways to customize the render pass descriptor, see [`MTLRenderPassDescriptor`](./mtlrenderpassdescriptor.md).
 
-##### Render to the offscreen texture
+### Render to the offscreen texture
 
 The sample has everything it needs to encode both render passes. It’s important to understand how Metal schedules commands on the GPU before seeing how the sample encodes the render passes.
 
@@ -101,7 +101,7 @@ Everything else in the render pass is similar to [Drawing a triangle with Metal 
 
 Multiple passes need to be encoded sequentially into a command buffer, so the sample needs to finish encoding the first render pass before starting the next one.
 
-##### Render to the drawable texture
+### Render to the drawable texture
 
 The second render pass needs renders the final image. The drawable render pipeline’s fragment shader samples data from a texture and returns that sample as the final color:
 

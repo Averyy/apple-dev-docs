@@ -19,11 +19,11 @@ class var shared: NSWorkspace { get }
 @property (class, strong, readonly) NSWorkspace * sharedWorkspace;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSWorkspace` object associated with the process.
 
-#### Discussion
+## Discussion
 
 You can access this object safely from any thread in your app.
 

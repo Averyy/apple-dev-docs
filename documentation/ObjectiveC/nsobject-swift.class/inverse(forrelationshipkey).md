@@ -20,11 +20,11 @@ func inverse(forRelationshipKey relationshipKey: String) -> String?
 - (NSString *) inverseForRelationshipKey:(NSString *) relationshipKey;
 ```
 
-#### Return Value
+## Return Value
 
 The name of the relationship that is the inverse of the receiver’s relationship named `relationshipKey`.
 
-#### Discussion
+## Discussion
 
 `NSObject`’s implementation of `inverseForRelationshipKey:` simply invokes `[[self classDescription] inverseForRelationshipKey:relationshipKey]`.  To make use of the default implementation, you must therefore implement and register a suitable class description—see [`NSClassDescription`](../../Foundation/nsclassdescription.md).
 

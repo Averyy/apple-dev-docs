@@ -19,7 +19,7 @@ class TVLockupHeaderFooterView
 @interface TVLockupHeaderFooterView : UIView
 ```
 
-#### Overview
+## Overview
 
 You can add header and footer views containing titles and subtitles to the lockup view. Headers and footers are always displayed when the lockup view is in focus.
 

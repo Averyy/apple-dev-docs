@@ -21,7 +21,7 @@ A type that can be initialized with a string literal containing a single Unicode
 protocol ExpressibleByUnicodeScalarLiteral
 ```
 
-#### Overview
+## Overview
 
 The `String`, `StaticString`, `Character`, and `Unicode.Scalar` types all conform to the `ExpressibleByUnicodeScalarLiteral` protocol. You can initialize a variable of any of these types using a string literal that holds a single Unicode scalar.
 
@@ -31,7 +31,7 @@ print(ñ)
 // Prints "ñ"
 ```
 
-### Conforming to ExpressibleByUnicodeScalarLiteral
+## Conforming to ExpressibleByUnicodeScalarLiteral
 
 To add `ExpressibleByUnicodeScalarLiteral` conformance to your custom type, implement the required initializer.
 

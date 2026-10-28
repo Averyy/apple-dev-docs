@@ -21,7 +21,7 @@ The kind of value published by this publisher.
 typealias Output = Wrapped
 ```
 
-#### Discussion
+## Discussion
 
 This publisher produces the type wrapped by the optional.
 

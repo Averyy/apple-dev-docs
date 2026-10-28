@@ -28,7 +28,7 @@ class PHASEObject
 
 - [Playing sound from a location in a 3D scene](./playing-sound-from-a-location-in-a-3d-scene.md)
 
-#### Overview
+## Overview
 
 This class models a member of your app’s scene by defining a 3D position and orientation.
 

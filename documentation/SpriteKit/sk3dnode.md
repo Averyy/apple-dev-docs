@@ -29,7 +29,7 @@ class SK3DNode
 
 - [Displaying 3D Content in a SpriteKit Scene](./displaying-3d-content-in-a-spritekit-scene.md)
 
-#### Overview
+## Overview
 
 Use [`SK3DNode`](./sk3dnode.md) objects to incorporate 3D SceneKit content into a SpriteKit-based game. When SpriteKit renders the node, the SceneKit scene is animated and rendered first. Then this rendered image is composited into the SpriteKit scene. Use the [`scnScene`](./sk3dnode/scnscene.md) property to specify the SceneKit scene to be rendered.
 

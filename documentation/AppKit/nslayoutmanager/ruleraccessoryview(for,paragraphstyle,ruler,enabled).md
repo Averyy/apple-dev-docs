@@ -19,11 +19,11 @@ func rulerAccessoryView(for view: NSTextView, paragraphStyle style: NSParagraphS
 - (NSView *) rulerAccessoryViewForTextView:(NSTextView *) view paragraphStyle:(NSParagraphStyle *) style ruler:(NSRulerView *) ruler enabled:(BOOL) isEnabled;
 ```
 
-#### Return Value
+## Return Value
 
 The accessory view containing tab wells, text alignment buttons, and so on.
 
-#### Discussion
+## Discussion
 
 If you have turned off automatic ruler updating through the use of [`usesRuler`](../nstextview/usesruler.md) so that you can do more complex things, but you still want to display the appropriate accessory view, you can use this method.
 

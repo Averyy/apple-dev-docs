@@ -15,11 +15,11 @@ Removes a video device from the video box.
 kern_return_t RemoveDevice(IOUserVideoDevice *in_device);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if device was successfully removed.
 
-#### Discussion
+## Discussion
 
 The device’s reference count will be decremented if it was successfully removed.
 

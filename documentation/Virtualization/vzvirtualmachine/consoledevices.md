@@ -19,7 +19,7 @@ var consoleDevices: [VZConsoleDevice] { get }
 @property (copy, readonly) NSArray<VZConsoleDevice *> * consoleDevices;
 ```
 
-#### Discussion
+## Discussion
 
 Return an empty array if there are no console devices configured.
 

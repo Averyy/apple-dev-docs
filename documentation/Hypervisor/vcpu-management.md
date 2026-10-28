@@ -5,7 +5,7 @@
 
 Create and run virtual CPUs, and manage CPU-specific registers and features.
 
-#### Overview
+## Overview
 
 Hypervisor creates Virtual CPUs with [`hv_vcpu_create(_:_:_:)`](./hv_vcpu_create%28_,_,_%29.md). Call functions that operate on the vCPU from the same thread with the exception of [`hv_vcpus_exit(_:_:)`](./hv_vcpus_exit%28_,_%29.md).
 

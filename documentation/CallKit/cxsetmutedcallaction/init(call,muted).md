@@ -23,7 +23,7 @@ convenience init(call callUUID: UUID, muted: Bool)
 - (instancetype) initWithCallUUID:(NSUUID *) callUUID muted:(BOOL) muted;
 ```
 
-#### Return Value
+## Return Value
 
 A new action for the specified call UUID and whether the call is muted.
 

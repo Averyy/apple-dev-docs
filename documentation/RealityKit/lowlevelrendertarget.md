@@ -18,7 +18,7 @@ An object that describes the pixel format configuration for a render pass’s co
 final class LowLevelRenderTarget
 ```
 
-#### Overview
+## Overview
 
 `LowLevelRenderTarget.Descriptor` is analogous to `MTLRenderPassDescriptor`’s attachment descriptors — it specifies the `MTLPixelFormat` for color and depth targets, and the MSAA sample count. Build a [`LowLevelRenderTarget.DescriptorSet`](./lowlevelrendertarget/descriptorset.md) from one or more descriptors and provide it when creating a `LowLevelRenderPipelineState` and a `LowLevelMeshInstanceArray`.
 

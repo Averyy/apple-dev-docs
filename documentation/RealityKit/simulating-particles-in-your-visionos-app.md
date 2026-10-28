@@ -10,7 +10,7 @@ Add a range of visual effects to a RealityKit view by attaching a particle emitt
 - visionOS 1.0+
 - Xcode 15.3+
 
-#### Overview
+## Overview
 
 Define and tailor a particle system by creating and configuring a particle emitter component and then adding it to an entity. A particle emitter component can simulate various effects including fire, smoke, confetti, and so on.
 
@@ -27,7 +27,7 @@ You can add a particle emitter to your RealityKit scene in four steps.
 3. Add that component to the entity.
 4. Add the entity to a scene.
 
-##### Create an entity
+### Create an entity
 
 You can turn any entity into a particle emitter, including one that’s already in your app’s scene. The app creates a new entity with the default initializer [`init()`](./entity/init%28%29.md).
 
@@ -35,7 +35,7 @@ You can turn any entity into a particle emitter, including one that’s already 
 let emitterEntity = Entity()
 ```
 
-##### Create a particle emitter component
+### Create a particle emitter component
 
 Create a [`ParticleEmitterComponent`](./particleemittercomponent.md) instance by calling one of its initializers.
 
@@ -94,7 +94,7 @@ Each preset is an initial configuration that sets up a new particle emitter syst
 
 You can use a preset as a starting point and then alter the behavior and appearance of the emitter and its particles by modifying the component’s properties. This approach may be more convenient than configuring every property of a particle emitter component.
 
-##### Add a particle emitter component to an entity
+### Add a particle emitter component to an entity
 
 Add the particle emitter  component to an entity by calling the [`set(_:)`](./entity/componentset/set%28_%29-8sii2.md) method of its [`components`](./entity/components.md) property.
 
@@ -103,7 +103,7 @@ Add the particle emitter  component to an entity by calling the [`set(_:)`](./en
 emitterEntity.components.set(emitterComponent)
 ```
 
-##### Add the entity to a scene
+### Add the entity to a scene
 
 Add the entity with the particle emitter component to the scene by calling the [`add(_:)`](./realityviewcontentprotocol/add%28_%29.md) method of the [`RealityViewContent`](./realityviewcontent.md) instance from a [`RealityView`](./realityview.md).
 
@@ -116,7 +116,7 @@ The scene can now present the entity as a particle emitter because it has the co
 
 [Video: A large visionOS window with a blurred glass background, displaying pink particles flowing from the bottom to the top.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/particles-base.mp4)
 
-##### Configure the behavior of the emitter’s particles
+### Configure the behavior of the emitter’s particles
 
 You can alter the behavior of a particle system by changing the values of a [`ParticleEmitterComponent`](./particleemittercomponent.md) instance’s properties. For example, the [`speed`](./particleemittercomponent/speed.md) property adjusts the starting speed of the particles as the emitter creates them, and the [`birthRate`](./particleemittercomponent/particleemitter/birthrate.md) property modifies how many times per second the emitter creates a new particle.
 
@@ -133,7 +133,7 @@ This example modifies the component’s `speed` and `birthrate` properties to `0
 
 > ❗ **Important**: If you adjust one or more particle component properties, you need to replace the entity’s current particle component instance by setting it again because component instances are from value types.
 
-##### Configure the color for the emitter’s particles
+### Configure the color for the emitter’s particles
 
 You can customize the color of the particles an emitter component creates by setting the [`color`](./particleemittercomponent/particleemitter/color-swift.property.md) property to one of the enumeration cases, including:
 
@@ -228,7 +228,7 @@ The method creates an evolving color by passing two single color value instances
 
 [Video: A screen recording of the app's particle emitter producing particles that transition from one color to another as they flow upward from the bottom of the app's window in visionOS.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/particles-color-evolve.mp4)
 
-##### Customize the appearance of the emitter’s particles with images
+### Customize the appearance of the emitter’s particles with images
 
 The app lets a person change the appearance of the emitter’s particles by applying an image to each. It does this by creating a [`TextureResource`](./textureresource.md) instance from an image and assigning it to the emitter’s [`image`](./particleemittercomponent/particleemitter/image.md) property.
 

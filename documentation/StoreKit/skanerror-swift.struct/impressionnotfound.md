@@ -18,7 +18,7 @@ The system can’t find the ad impression.
 static var impressionNotFound: SKANError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error may occur if an app calls [`endImpression(_:completionHandler:)`](../skadnetwork/endimpression%28_,completionhandler%29.md) before calling [`startImpression(_:completionHandler:)`](../skadnetwork/startimpression%28_,completionhandler%29.md).
 

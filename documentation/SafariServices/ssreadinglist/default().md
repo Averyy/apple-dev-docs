@@ -22,7 +22,7 @@ class func `default`() -> SSReadingList?
 + (SSReadingList *) defaultReadingList;
 ```
 
-#### Return Value
+## Return Value
 
 The shared instance of the Reading List, or `nil` if access to the Reading List is not permitted.
 

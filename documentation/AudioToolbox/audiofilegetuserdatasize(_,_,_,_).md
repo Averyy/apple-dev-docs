@@ -24,11 +24,11 @@ func AudioFileGetUserDataSize(_ inAudioFile: AudioFileID, _ inUserDataID: UInt32
 extern OSStatus AudioFileGetUserDataSize(AudioFileID inAudioFile, UInt32 inUserDataID, UInt32 inIndex, UInt32 *outUserDataSize);
 ```
 
-#### Return Value
+## Return Value
 
 A result code if there’s an error (see Result Codes) or `noErr` if the operation succeeds.
 
-#### Discussion
+## Discussion
 
 In this function, *user data* refers to:
 

@@ -20,7 +20,7 @@ An path component to animate an opacity. Requires that the entity has an Opacity
 case opacity
 ```
 
-#### Discussion
+## Discussion
 
 This BindTarget references a Float type
 

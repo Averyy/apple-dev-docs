@@ -12,7 +12,7 @@ The type of the library.
 final let type: Product.Library.LibraryType?
 ```
 
-#### Discussion
+## Discussion
 
 If the type is unspecified, the Swift Package Manager automatically chooses a type based on the client’s preference.
 

@@ -15,11 +15,11 @@ Mark a vnode as being stored in a filesystem hash.
 int vnode_addfsref(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Always 0.
 
-#### Discussion
+## Discussion
 
 Should only be called once on a vnode, and never if that vnode was created with VNFS_ADDFSREF. There should be a corresponding call to vnode_removefsref() when the vnode is reclaimed; VFS assumes that a n unused vnode will not be marked as referenced by a filesystem.
 

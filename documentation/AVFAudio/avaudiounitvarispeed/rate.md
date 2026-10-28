@@ -24,7 +24,7 @@ var rate: Float { get set }
 @property (nonatomic) float rate;
 ```
 
-#### Discussion
+## Discussion
 
 The varispeed audio unit resamples the input signal, and as a result, changing the playback rate also changes the pitch. For example, changing the rate to `2.0` results in the output audio playing one octave higher. Similarly changing the rate to `0.5`, results in the output audio playing one octave lower.
 

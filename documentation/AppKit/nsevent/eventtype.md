@@ -19,7 +19,7 @@ enum EventType
 enum NSEventType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 These constants appear in the event’s [`type`](./type.md) property. You also use them when you construct new events.
 

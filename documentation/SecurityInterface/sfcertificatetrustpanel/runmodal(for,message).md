@@ -19,7 +19,7 @@ func runModal(for trust: SecTrust!, message: String!) -> Int
 - (NSInteger) runModalForTrust:(SecTrustRef) trust message:(NSString *) message;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns [`NSOKButton`](../../AppKit/nsokbutton.md) if the default button is clicked, or [`NSCancelButton`](../../AppKit/nscancelbutton.md) if the alternate button is clicked.
 

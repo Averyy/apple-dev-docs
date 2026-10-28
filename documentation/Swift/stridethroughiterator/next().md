@@ -23,7 +23,7 @@ mutating func next() -> Element?
 
 Available when `Element` conforms to `Strideable`.
 
-#### Discussion
+## Discussion
 
 Once `nil` has been returned, all subsequent calls return `nil`.
 

@@ -19,11 +19,11 @@ func OBEXAddByteSequenceHeader(_ inHeaderData: UnsafeRawPointer!, _ inHeaderData
 OBEXError OBEXAddByteSequenceHeader(const void *inHeaderData, uint32_t inHeaderDataLength, CFMutableDictionaryRef dictRef);
 ```
 
-#### Return Value
+## Return Value
 
 Error code, kOBEXSuccess (0) if success.
 
-#### Discussion
+## Discussion
 
 Byte Sequence header - OBEX Spec, 2.2.5: Byte sequence. One thing of important note here - since we don’t know what Header Identifier and length you intend to use here, you MUST include your own identifier and length in the data you pass. Thus, your data must be in this format: <1:HI><2:LENGTH><n:()> Also, note that LENGTH = (3 + n), (1 for HI, 2 for the 2 bytes of length information, plus your n bytes of custom data). Be careful here to not mess up these values, as it could adversely affect the ability of the remote-device’s headers parser.
 

@@ -19,7 +19,7 @@ func MDSchemaCopyDisplayNameForAttribute(_ name: CFString!) -> CFString!
 CFStringRef MDSchemaCopyDisplayNameForAttribute(CFStringRef name);
 ```
 
-#### Return Value
+## Return Value
 
 The localized displayname of the metadata attribute, or `NULL` ifno localized display name is available.
 

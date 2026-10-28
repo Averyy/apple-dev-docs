@@ -24,11 +24,11 @@ func planarTensor(tensor: MPSGraphTensor, name: String?) -> MPSGraphTensor
 - (MPSGraphTensor *) planarTensorWithComplexTensor:(MPSGraphTensor *) tensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid `MPSGraphTensor` object containing the elementwise result of the applied operation.
 
-#### Discussion
+## Discussion
 
 Creates a complexToPlanar operation and returns the result tensor. In case the input tensor is a complex tensor the result tensor is twice as wide as the input tensor in the last dimension, and its datatype will be the underlying datatype of the input tensor - for example `<3xcomplex<f16>>` becomes `<6xf16>`. In case the input is not complex-valued, this op simply returns the input tensor. For complex input:
 

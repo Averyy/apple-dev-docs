@@ -19,7 +19,7 @@ class ScreenSaverDefaults
 @interface ScreenSaverDefaults : NSUserDefaults
 ```
 
-#### Overview
+## Overview
 
 [`ScreenSaverDefaults`](./screensaverdefaults.md) gives you access to preference values you need to configure your screen saver. Because multiple apps can load a screen saver, you can’t use the standard [`UserDefaults`](../Foundation/userdefaults.md) object to store preferences. Instead, instantiate this class using the [`init(forModuleWithName:)`](./screensaverdefaults/init%28formodulewithname%29.md) method, which takes your screen saver’s bundle identifier as a parameter. The resulting object gives you a way to store your preference values and associate them only with your screen saver. Use the inherited [`UserDefaults`](../Foundation/userdefaults.md) methods to load, store, or modify values.
 

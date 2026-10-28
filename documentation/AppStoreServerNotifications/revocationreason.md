@@ -20,7 +20,7 @@ int32 revocationReason
 - `0`: The App Store refunded the transaction on behalf of the customer for other reasons, for example, an accidental purchase.
 - `1`: The App Store refunded the transaction on behalf of the customer due to an actual or perceived issue within your app.
 
-#### Discussion
+## Discussion
 
 For Family Sharing transactions, the revocation reason value is `0` if the customer leaves the family group or the owner stops sharing. If the purchaser of a Family Sharing transaction receives a refund, the revocation reason for Family Sharing transactions matches the value of the purchaser’s revocation reason.
 

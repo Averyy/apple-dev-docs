@@ -22,7 +22,7 @@ Fits a transformer to a data frame
 func fitted(to input: DataFrame, validateOn validation: DataFrame?, eventHandler: EventHandler?) async throws -> Self.Transformer
 ```
 
-#### Return Value
+## Return Value
 
 The fitted transformer.
 

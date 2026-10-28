@@ -19,7 +19,7 @@ let kMDItemMeteringMode: CFString!
 const CFStringRef kMDItemMeteringMode;
 ```
 
-#### Discussion
+## Discussion
 
 Possible values are: Unknown, Average, CenterWeightedAverage, Spot, MultiSpot, Pattern, and Partial.
 

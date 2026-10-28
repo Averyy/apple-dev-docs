@@ -21,7 +21,7 @@ Modifies the format style to use the specified presentation.
 func presentation(_ p: FloatingPointFormatStyle<Value>.Currency.Configuration.Presentation) -> FloatingPointFormatStyle<Value>.Currency
 ```
 
-#### Return Value
+## Return Value
 
 A floating-point currency format style modified to use the specified presentation.
 

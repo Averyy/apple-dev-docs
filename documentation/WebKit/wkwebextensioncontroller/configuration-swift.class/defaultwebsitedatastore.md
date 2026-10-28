@@ -23,7 +23,7 @@ var defaultWebsiteDataStore: WKWebsiteDataStore! { get set }
 @property (nonatomic, retain, null_resettable) WKWebsiteDataStore * defaultWebsiteDataStore;
 ```
 
-#### Discussion
+## Discussion
 
 This property sets the primary data store for managing website data, including cookies, which extensions can access, subject to the granted permissions within the extension contexts. Defaults to [`default()`](../../wkwebsitedatastore/default%28%29.md).
 

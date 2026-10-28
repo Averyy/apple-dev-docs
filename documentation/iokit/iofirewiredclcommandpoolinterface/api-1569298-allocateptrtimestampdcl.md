@@ -14,7 +14,7 @@
 DCLCommand *(*AllocatePtrTimeStampDCL)(IOFireWireLibDCLCommandPoolRef self, DCLCommand *inDCL, UInt32 *inTimeStampPtr);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

@@ -20,7 +20,7 @@ optional func browser(_ browser: NSBrowser, objectValueForItem item: Any?) -> An
 - (id) browser:(NSBrowser *) browser objectValueForItem:(id) item;
 ```
 
-#### Return Value
+## Return Value
 
 The item’s object.
 

@@ -27,7 +27,7 @@ func BNNSFilterCreateFullyConnectedLayer(_ in_desc: UnsafePointer<BNNSVectorDesc
 BNNSFilterBNNSFilterCreateFullyConnectedLayer(const BNNSVectorDescriptor *in_desc, const BNNSVectorDescriptor *out_desc, const BNNSFullyConnectedLayerParameters *layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Return Value
+## Return Value
 
 A BNNSFilter object representing a fully connected filter configured with the specified  parameters
 

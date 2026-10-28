@@ -19,7 +19,7 @@ case graphicCorner
 CLKComplicationFamilyGraphicCorner
 ```
 
-#### Discussion
+## Discussion
 
 The following figure shows the size and location of the graphic corner complication.
 

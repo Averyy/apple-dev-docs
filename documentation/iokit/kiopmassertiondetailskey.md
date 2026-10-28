@@ -16,7 +16,7 @@ The CFDictionary key for assertion name. Setting this key is required when you'r
 #define kIOPMAssertionDetailsKey
 ```
 
-#### Discussion
+## Discussion
 
 `kIOPMAssertionNameKey` describes the the activity the assertion is protecting. The creator should specify a CFString value for this key in the dictionary passed to [`IOPMAssertionCreateWithProperties`](./api-1557082-iopmassertioncreatewithpropertie.md)
 

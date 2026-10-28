@@ -27,7 +27,7 @@ func save(_ event: EKEvent, span: EKSpan, commit: Bool) throws
 
 - [Creating events and reminders](../creating-events-and-reminders.md)
 
-#### Discussion
+## Discussion
 
 This method raises an exception if it’s passed an event from another event store.
 

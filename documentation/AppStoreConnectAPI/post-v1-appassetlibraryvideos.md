@@ -15,9 +15,9 @@ Create an app asset library video.
 - [Migrating to the App Asset Library](./migrating-to-the-app-asset-library.md)
 - [Uploading and managing video assets](./uploading-and-managing-video-assets.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

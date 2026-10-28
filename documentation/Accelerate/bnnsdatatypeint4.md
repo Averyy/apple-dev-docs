@@ -23,7 +23,7 @@ var BNNSDataTypeInt4: BNNSDataType { get }
 BNNSDataTypeInt4
 ```
 
-#### Discussion
+## Discussion
 
 Storage data type
 

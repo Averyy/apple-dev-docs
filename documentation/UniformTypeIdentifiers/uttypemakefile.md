@@ -21,7 +21,7 @@ A type that represents a Makefile.
 extern UTType * const UTTypeMakefile;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.make-source`.
 

@@ -15,7 +15,7 @@ Gets the transport state of the device.
 IOUserVideoDeviceTransportState GetDeviceTransportState();
 ```
 
-#### Discussion
+## Discussion
 
 The object’s work queue synchronizes access to the value.
 

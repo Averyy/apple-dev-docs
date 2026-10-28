@@ -15,11 +15,11 @@ The object for creating a text shadow.
 object TextShadow
 ```
 
-#### Discussion
+## Discussion
 
 Use a `TextShadow` object to define a shadow that Apple News can apply to characters as part of a [`TextStyle`](./textstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

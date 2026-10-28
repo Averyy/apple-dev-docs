@@ -19,7 +19,7 @@ var extensionName: String { get }
 @property (nonatomic, readonly) NSString * extensionName;
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the extension’s [`CFBundleDisplayName`](../../BundleResources/information-property-list/cfbundledisplayname.md).
 

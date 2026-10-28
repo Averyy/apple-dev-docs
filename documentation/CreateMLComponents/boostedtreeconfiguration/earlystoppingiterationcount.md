@@ -21,7 +21,7 @@ Stops training after this number of iterations where the validation metric does 
 var earlyStoppingIterationCount: Int?
 ```
 
-#### Discussion
+## Discussion
 
 Validation data must be specified for an early stop.
 

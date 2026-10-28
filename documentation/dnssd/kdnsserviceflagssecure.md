@@ -23,7 +23,7 @@ var kDNSServiceFlagsSecure: UInt32 { get }
 kDNSServiceFlagsSecure
 ```
 
-#### Discussion
+## Discussion
 
 The response has been validated by verifying all the signaures in the response and was able to build a successful authentication chain starting from a known trust anchor.
 

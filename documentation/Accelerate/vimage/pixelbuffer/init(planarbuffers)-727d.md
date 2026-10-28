@@ -23,7 +23,7 @@ init(planarBuffers: [vImage.PixelBuffer<vImage.Planar8>])
 
 Available when `Format` is `vImage.Interleaved8x2`.
 
-#### Discussion
+## Discussion
 
 Use this function to interleave two discrete planar buffers. For example, the following code creates a two-channel interleaved buffer from two planar buffers:
 

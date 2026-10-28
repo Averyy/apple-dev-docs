@@ -21,7 +21,7 @@ The extended red, green, blue (sRGB) color space.
 case sRGB
 ```
 
-#### Discussion
+## Discussion
 
 For information about the sRGB colorimetry and nonlinear transform function, see the IEC 61966-2-1 specification.
 

@@ -27,7 +27,7 @@ let kSecUseAuthenticationUIFail: CFString
 extern CFStringRef const kSecUseAuthenticationUIFail;
 ```
 
-#### Discussion
+## Discussion
 
 When you specify this value, if user authentication is needed, the function returns the [`errSecInteractionNotAllowed`](./errsecinteractionnotallowed.md) error.
 

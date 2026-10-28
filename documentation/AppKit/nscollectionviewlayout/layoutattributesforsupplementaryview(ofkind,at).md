@@ -19,11 +19,11 @@ func layoutAttributesForSupplementaryView(ofKind elementKind: NSCollectionView.S
 - (NSCollectionViewLayoutAttributes *) layoutAttributesForSupplementaryViewOfKind:(NSCollectionViewSupplementaryElementKind) elementKind atIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A layout attributes object containing the layout information to apply to the supplementary view.
 
-#### Discussion
+## Discussion
 
 If your layout includes supplementary views, you must override this method. In your implementation, create an instance of the appropriate layout attributes class and fill the resulting object with the layout information for the corresponding supplementary view. You define the supported supplementary views by assigning each one a string that identifies its kind. Use the `elementKind` and `indexPath` properties to identify the specific supplementary view whose attributes were requested.
 

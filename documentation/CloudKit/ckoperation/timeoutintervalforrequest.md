@@ -27,7 +27,7 @@ var timeoutIntervalForRequest: TimeInterval { get set }
 @property (nonatomic, assign) NSTimeInterval timeoutIntervalForRequest;
 ```
 
-#### Discussion
+## Discussion
 
 This property determines the request timeout interval for the operation, which controls how long, in seconds, the operation waits for additional data to arrive before stopping. The timer for this value resets whenever new data arrives. When the timer reaches the interval without receiving any new data, it triggers a timeout.
 

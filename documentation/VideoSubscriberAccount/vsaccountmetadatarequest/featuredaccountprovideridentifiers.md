@@ -24,7 +24,7 @@ var featuredAccountProviderIdentifiers: [String] { get set }
 @property (nonatomic, copy) NSArray<NSString *> * featuredAccountProviderIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify which providers your app gives prominent placement to when it asks the user to choose an account provider for authentication. By default, no providers are promoted.
 

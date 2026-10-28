@@ -25,7 +25,7 @@ var locale: Locale! { get set }
 @property (copy, null_resettable) NSLocale * locale;
 ```
 
-#### Discussion
+## Discussion
 
 The locale determines the default values for many formatter attributes, such as ISO region and language codes, currency code, calendar, system of measurement, and decimal separator.
 

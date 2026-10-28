@@ -21,7 +21,7 @@ func requestEnableTethering()
 - (void) requestEnableTethering;
 ```
 
-#### Discussion
+## Discussion
 
 To confirm whether a camera can take pictures while connected, check whether its [`capabilities`](../icdevice/capabilities.md) include [`cameraDeviceCanTakePicture`](../icdevicecapability/cameradevicecantakepicture.md).
 

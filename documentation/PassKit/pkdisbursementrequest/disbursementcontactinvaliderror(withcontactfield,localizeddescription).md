@@ -23,11 +23,11 @@ class func disbursementContactInvalidError(withContactField field: PKContactFiel
 + (NSError *) disbursementContactInvalidErrorWithContactField:(PKContactField) field localizedDescription:(NSString *) localizedDescription;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSError`](../../Foundation/nserror.md) object.
 
-#### Discussion
+## Discussion
 
 There’s limited display space available for descriptions, so keep your messages concise.
 

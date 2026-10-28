@@ -5,17 +5,17 @@
 
 Update your server-side code to use new features, and test your code against API changes.
 
-#### Overview
+## Overview
 
 App Store Connect API version 1.8 provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New features
+### New features
 
 - The app price point information is now updated to `AppPricePointV2` to reflect the effect of the tax category settings on proceeds.
 - The [`Download sales and trends reports`](./get-v1-salesreports.md) endpoint supports a new `reportType` value of `SUBSCRIPTION_OFFER_CODE_REDEMPTION`.
 - TestFlight now offers a new relationship, [`Build.Relationships.BetaGroups`](./build/relationships-data.dictionary/betagroups-data.dictionary.md), that identifies all beta groups for a specific build.
 
-##### Deprecations
+### Deprecations
 
 - The endpoints and objects listed in `App Price Reference Data` that used the `appPricePoints` resource are now deprecated, including: `List All Price Points for an App Price Tier`, `Read the Territory Information of an App Price Point`, `Read App Price Point Information`, `List App Price Points`, `AppPricePoint`, `AppPricePointResponse`, and `AppPricePointsResponse`.
 

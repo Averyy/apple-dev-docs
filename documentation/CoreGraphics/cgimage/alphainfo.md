@@ -25,7 +25,7 @@ var alphaInfo: CGImageAlphaInfo { get }
 extern CGImageAlphaInfo CGImageGetAlphaInfo(CGImageRef image);
 ```
 
-#### Discussion
+## Discussion
 
 The returned value specifies (1) whether the bitmap contains an alpha channel, (2) where the alpha bits are located in the image data, and (3) whether the alpha value is premultiplied. For possible values, see [Constants](../cgimage.md#Constants). The function returns [`CGImageAlphaInfo.none`](../cgimagealphainfo/none.md) if the `image` parameter refers to an image mask.
 

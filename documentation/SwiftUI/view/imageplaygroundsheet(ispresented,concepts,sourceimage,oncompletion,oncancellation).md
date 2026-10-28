@@ -20,7 +20,7 @@ Presents the system sheet to create an image using one or more concepts and an o
 @preconcurrency func imagePlaygroundSheet(isPresented: Binding<Bool>, concepts: [ImagePlaygroundConcept] = [], sourceImage: Image? = nil, onCompletion: @escaping (URL) -> Void, onCancellation: (() -> Void)? = nil) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to display the image-creation sheet from one of your SwiftUI views. The sheet presents a system-provided UI to generate an image from one or more strings or concepts and an optional image. The sheet gives the person controls to modify the image before returning it to your app. When the person dismisses the sheet, the system runs one of the blocks you provided. Use the completion block to integrate the generated image into your app’s content.
 

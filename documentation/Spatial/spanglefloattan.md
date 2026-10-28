@@ -19,11 +19,11 @@
 static float SPAngleFloatTan(SPAngleFloat angle);
 ```
 
-#### Return Value
+## Return Value
 
 The tangent of the specified angle.
 
-#### Discussion
+## Discussion
 
 Returns the tangent of the specified angle.
 

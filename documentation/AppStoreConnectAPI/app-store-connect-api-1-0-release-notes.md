@@ -5,11 +5,11 @@
 
 The initial version of the API.
 
-#### Overview
+## Overview
 
 This REST API provides resources that enable you to automate actions you take in App Store Connect.
 
-##### New features
+### New features
 
 - Manage beta builds of your app, beta testers, and groups for TestFlight with resources in [Prerelease Versions and Beta Testers](./prerelease-versions-and-beta-testers.md).
 - Manage your users and their access with the [Users](./users.md) resources. Invite users to join your team with the [User Invitations](./user-invitations.md) resource.

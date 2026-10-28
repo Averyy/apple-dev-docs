@@ -23,7 +23,7 @@ var contactIdentifier: String? { get set }
 @property (nonatomic, copy, nullable) NSString * contactIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier is displayed in the native call UI, and is typically the name of the call recipient.
 

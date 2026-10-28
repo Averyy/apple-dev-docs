@@ -24,7 +24,7 @@ static let featureSettings: UIFontDescriptor.AttributeName
 extern UIFontDescriptorAttributeName const UIFontDescriptorFeatureSettingsAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an array of dictionaries that represents nondefault font feature settings. Each dictionary contains a [`type`](../featurekey/type.md) and [`selector`](../featurekey/selector.md) key.
 

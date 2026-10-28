@@ -20,7 +20,7 @@ typealias CGEventTimestamp = UInt64
 typedef uint64_t CGEventTimestamp;
 ```
 
-#### Discussion
+## Discussion
 
 You set an event’s timestamp with [`CGEventSetTimestamp`](./cgeventsettimestamp.md), and access it later with `CGEvent`’s [`timestamp`](./cgevent/timestamp.md) property.
 

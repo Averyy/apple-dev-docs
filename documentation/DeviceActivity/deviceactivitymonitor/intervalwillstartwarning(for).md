@@ -17,7 +17,7 @@ Warns your app of an upcoming activity a specified time before the activity star
 func intervalWillStartWarning(for activity: DeviceActivityName)
 ```
 
-#### Discussion
+## Discussion
 
 When an activity is about to start, `intervalWillStartWarning` warns your app extension of the upcoming activity.
 

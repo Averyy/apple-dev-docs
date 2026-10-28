@@ -19,7 +19,7 @@ Creates a new keyboard shortcut with the given key equivalent and set of modifie
 init(_ key: KeyEquivalent, modifiers: EventModifiers = .command)
 ```
 
-#### Discussion
+## Discussion
 
 The localization configuration defaults to [`automatic`](./localization-swift.struct/automatic.md).
 

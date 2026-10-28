@@ -10,13 +10,13 @@ framework: "Swift-Org/docc"
 
 Create developer documentation from in-source comments, add articles with code snippets, and add tutorials for a guided learning experience.
 
-#### Overview
+## Overview
 
 DocC, or *Documentation Compiler*, makes it easy to produce rich and engaging developer documentation for your Swift frameworks and packages. The compiler builds documentation by combining in-source comments with extension files, articles, and other resources, allowing you to create rich and engaging documentation for developers.
 
 With DocC, you provide a combination of reference and conceptual content, and connect it together using powerful organization and linking capabilities. Because you write documentation directly in source, you can use the tools you’re already familiar with, like Git, to track changes.
 
-##### Build Simple Documentation from Your Source Comments
+### Build Simple Documentation from Your Source Comments
 
 For DocC to compile your documentation, the Swift compiler first builds your Swift framework or package, and stores additional information about its public APIs alongside the compiled artifacts. DocC consumes that information and compiles the documentation into a DocC Archive. This process repeats for every Swift framework or package your target depends on.
 
@@ -32,7 +32,7 @@ DocC uses the comments you write in your source code as the content for the docu
 
 Alternatively, add thorough documentation comments to provide further detail, including information about parameters, return values, and errors. For more information, see [Writing Symbol Documentation in Your Source Files](./writing-symbol-documentation-in-your-source-files.md).
 
-##### Configure a Richer Documentation Experience
+### Configure a Richer Documentation Experience
 
 By default, DocC compiles only in-source symbol documentation and then groups those symbols together by their kind, such as protocols, classes, enumerations, and so forth. When you want to provide additional content or customize the organization of symbols, use a documentation catalog (a directory with a ‘.docc’ extension).
 
@@ -51,7 +51,7 @@ Use a documentation catalog when you want to include any of the following:
 
 To associate a documentation catalog with a target in your package, add the catalog to the same directory as the target’s other source files (`[PackageRoot]/Sources/[TargetName]` by default).
 
-#### Building, Publishing, and Previewing Documentation with the DocC Plug-in
+## Building, Publishing, and Previewing Documentation with the DocC Plug-in
 
 The preferred way of building documentation for your Swift package is by using the Swift-DocC Plugin. Refer to instructions in the plugin’s [documentation](https://swiftlang.github.io/swift-docc-plugin/documentation/swiftdoccplugin/) to get started with [building](https://swiftlang.github.io/swift-docc-plugin/documentation/swiftdoccplugin/generating-documentation-for-a-specific-target), [previewing](https://swiftlang.github.io/swift-docc-plugin/documentation/swiftdoccplugin/previewing-documentation), and publishing your documentation to your [website](https://swiftlang.github.io/swift-docc-plugin/documentation/swiftdoccplugin/generating-documentation-for-hosting-online) or [GitHub Pages](https://swiftlang.github.io/swift-docc-plugin/documentation/swiftdoccplugin/publishing-to-github-pages).
 

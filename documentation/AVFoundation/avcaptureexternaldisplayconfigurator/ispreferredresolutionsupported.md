@@ -23,7 +23,7 @@ class var isPreferredResolutionSupported: Bool { get }
 @property (class, readonly, getter=isPreferredResolutionSupported) BOOL supportsPreferredResolution;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, you may instantiate a configurator with a configuration specifying [`preferredResolution`](../avcaptureexternaldisplayconfiguration/preferredresolution.md) set to `true`.
 

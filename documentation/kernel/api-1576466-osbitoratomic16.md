@@ -15,11 +15,11 @@
 UInt16 OSBitOrAtomic16(UInt32 mask, volatile UInt16 *address);
 ```
 
-#### Return Value
+## Return Value
 
 The value before the bitwise operation.
 
-#### Discussion
+## Discussion
 
 The OSBitOrAtomic16 function logically ors the bits of the specified mask into the value at the specified address and returns the original value.
 

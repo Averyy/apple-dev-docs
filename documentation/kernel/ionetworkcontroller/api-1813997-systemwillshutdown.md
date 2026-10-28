@@ -12,7 +12,7 @@ virtual void systemWillShutdown(
  IOOptionBitsspecifier );
 ```
 
-#### Overview
+## Overview
 
 Overrides `IOService::systemWillShutdown` in order to notify network clients that the power-managed controller should be disabled. As a result, drivers can expect their `disable` method to be called before system shutdown or restart. This implementation is synchronous and can block before calling `IOService::systemWillShutdown` and return.
 

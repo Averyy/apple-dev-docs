@@ -5,7 +5,7 @@
 
 Configure the device’s status bar style to work well with your app’s user interface.
 
-#### Overview
+## Overview
 
 Status bar content elements must be readable or visible to the user. Your app’s status bar style or [UIStatusBarStyle](../UIKit/uistatusbarstyle.md) should be set to a value that’s compatible with your app’s background color: [lightContent](../UIKit/uistatusbarstyle/lightcontent.md) or [darkContent](../UIKit/uistatusbarstyle/darkcontent.md).
 
@@ -15,9 +15,9 @@ If you find that your status bar elements aren’t visible, the problem might be
 
 If you have a dark colored background, set the `UIStatusBarStyle` to `lightContent`. If you have a light colored background, set the `UIStatusBarStyle` to `darkContent`.
 
-#### Set a style for the entire app
+## Set a style for the entire app
 
-For a single status bar style throughout your app, add [UIViewControllerBasedStatusBarAppearance](../BundleResources/information_property_list/uiviewcontrollerbasedstatusbarappearance.md) with a value of `false` to your `Info.plist`. Then add `UIStatusBarStyle` with the specific style. For example, to set a light content status bar, use the following:
+For a single status bar style throughout your app, add [UIViewControllerBasedStatusBarAppearance](../BundleResources/information-property-list/uiviewcontrollerbasedstatusbarappearance.md) with a value of `false` to your `Info.plist`. Then add `UIStatusBarStyle` with the specific style. For example, to set a light content status bar, use the following:
 
 ```
 <key>UIStatusBarStyle</key>
@@ -27,7 +27,7 @@ For a single status bar style throughout your app, add [UIViewControllerBasedSta
 <false/>
 ```
 
-#### Set a style for each view controller
+## Set a style for each view controller
 
 To allow individual view controllers to determine their status bar style, set `UIViewControllerBasedStatusBarAppearance` to `true`.
 
@@ -45,7 +45,7 @@ Second, if your initial root view controller’s status bar style is light conte
 <string>UIStatusBarStyleLightContent</string>
 ```
 
-Third, override each view controller’s [preferredStatusBarStyle()](../UIKit/uiviewcontroller/api-1621416-preferredstatusbarstyle.md) method. For example, to set the status bar’s content intended for use on dark backgrounds:
+Third, override each view controller’s [preferredStatusBarStyle()](../UIKit/uiviewcontroller/preferredstatusbarstyle.md) method. For example, to set the status bar’s content intended for use on dark backgrounds:
 
 ```swift
 
@@ -58,7 +58,7 @@ class ViewController: UIViewController {
 }
 ```
 
-If a particular view controller is embedded as a child or resides inside a [UINavigationController](../UIKit/uinavigationcontroller.md) stack, its parent or navigation controller determines the status bar style. If you want the containing view controller to give control of the status bar style to its children, override the [childForStatusBarStyle](../UIKit/uiviewcontroller/api-1621433-childforstatusbarstyle.md) property. For example:
+If a particular view controller is embedded as a child or resides inside a [UINavigationController](../UIKit/uinavigationcontroller.md) stack, its parent or navigation controller determines the status bar style. If you want the containing view controller to give control of the status bar style to its children, override the [childForStatusBarStyle](../UIKit/uiviewcontroller/childforstatusbarstyle.md) property. For example:
 
 ```swift
 class MyNavigationController: UINavigationController {
@@ -73,7 +73,7 @@ It is not necessary to override the `childForStatusBarStyle` property when using
 
 When using this approach, any child view controller determines the status bar style that will match up with its color scheme or customization it uses with [UINavigationBarAppearance](../UIKit/uinavigationbarappearance.md). If you return `nil` or do not override this method, the status bar style for `self` is used. If the return value from this method changes, call the `setNeedsStatusBarAppearanceUpdate()` method.
 
-#### Revision History
+## Revision History
 
 - **2022-03-01** First published.
 

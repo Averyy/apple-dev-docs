@@ -25,7 +25,7 @@ var data: UnsafeMutablePointer<Float>
 float * data;
 ```
 
-#### Discussion
+## Discussion
 
 The matrix stores each block in column-major order. The number of elements in [`data`](../sparsematrix_double/data.md) must be equal to [`blockSize`](../sparsematrixstructure/blocksize.md) x [`blockSize`](../sparsematrixstructure/blocksize.md) x the number of nonzero blocks in the matrix.
 

@@ -16,7 +16,7 @@ Obtains currently enumerated devices.
 CFSetRef IOHIDManagerCopyDevices(IOHIDManagerRef manager);
 ```
 
-#### Return Value
+## Return Value
 
 CFSetRef containing IOHIDDeviceRefs.
 

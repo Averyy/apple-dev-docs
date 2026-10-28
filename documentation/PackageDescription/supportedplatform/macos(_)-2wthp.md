@@ -12,7 +12,7 @@ Configures the minimum deployment target version for the macOS platform.
 static func macOS(_ version: SupportedPlatform.MacOSVersion) -> SupportedPlatform
 ```
 
-#### Discussion
+## Discussion
 
 > **Since**: First available in PackageDescription 5.0
 

@@ -14,11 +14,11 @@ CMError CMProfileModified (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 When a profile is first opened, its modified flag is set to `false`. On calls that add to, delete from, or set the profile header or tags, the modified flag is set to `true`. After calling the function [CMUpdateProfile](./api-1804864-cmupdateprofile.md), the modified flag is reset to `false`. 
 

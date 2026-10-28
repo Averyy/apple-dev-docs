@@ -18,7 +18,7 @@ Unproject `point` from a 2D coordinate space into 3D world coordinates.
 func unproject(_ point: CGPoint, from space: some CoordinateSpaceProtocol, to realitySpace: some RealityCoordinateSpace) -> SIMD3<Float>?
 ```
 
-#### Return Value
+## Return Value
 
 3D position in `realitySpace`.
 

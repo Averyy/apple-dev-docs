@@ -5,13 +5,13 @@
 
 Catch runtime issues in your Metal app using API Validation.
 
-#### Overview
+## Overview
 
 The API Validation layer checks for code that calls the Metal API incorrectly, including errors in creating resources, encoding Metal commands, and performing other common tasks. You can enable API Validation using the runtime diagnostics options in Xcode, or by using environment variables.
 
 > ❗ **Important**: The API Validation layer has a small, but measurable, impact on CPU performance.
 
-##### Enable API Validation in Xcode
+### Enable API Validation in Xcode
 
 Follow these steps to enable API Validation using the runtime diagnostics options in the scheme settings:
 
@@ -29,7 +29,7 @@ You can additionally use the Diagnostics tab to enable extra API Validation beha
 
 > **Note**: You can also control these options through environment variables.
 
-##### Enable API Validation with environment variables
+### Enable API Validation with environment variables
 
 You can also enable API Validation by setting the following environment variables on your Metal app:
 

@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the first demand requests fewer o
 static func <= (lhs: Subscribers.Demand, rhs: Subscribers.Demand) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 If both sides are `.unlimited`, the result is always `true`. If `lhs` is `.unlimited`, then the result is always `false`. If `rhs` is unlimited then the result is always `true`. Otherwise, this operator compares the demands’ `max` values.
 

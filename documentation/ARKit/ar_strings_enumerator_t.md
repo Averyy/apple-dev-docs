@@ -15,7 +15,7 @@ Handler for enumerating a collection of strings.
 typedef _Bool (^)(const char *) ar_strings_enumerator_t;
 ```
 
-#### Return Value
+## Return Value
 
 `true` to continue enumerating, or `false` to stop enumerating.
 

@@ -29,7 +29,7 @@ convenience init(fromDictionaryRepresentation imageSourceAuxDataInfoDictionary: 
 
 - [Extracting Portrait Effects matte image data from a photo](../extracting-portrait-effects-matte-image-data-from-a-photo.md)
 
-#### Discussion
+## Discussion
 
 When using the [Image I/O](../../ImageIO/ImageIO.md) API to read from a HEIF or JPEG file containing a portrait effects matte, you can create an [`AVPortraitEffectsMatte`](../avportraiteffectsmatte.md) object from the result of [`CGImageSourceCopyAuxiliaryDataInfoAtIndex(_:_:_:)`](../../ImageIO/cgimagesourcecopyauxiliarydatainfoatindex%28_,_,_%29.md). This function returns a [`CFDictionary`](../../CoreFoundation/cfdictionary.md) of primitive map information.
 

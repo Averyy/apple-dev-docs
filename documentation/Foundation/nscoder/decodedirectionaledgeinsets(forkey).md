@@ -24,7 +24,7 @@ func decodeDirectionalEdgeInsets(forKey key: String) -> NSDirectionalEdgeInsets
 - (NSDirectionalEdgeInsets) decodeDirectionalEdgeInsetsForKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to decode edge inset information that was previously encoded using the [`encode(_:forKey:)`](./encode%28_,forkey%29-7oo2n.md) method.
 

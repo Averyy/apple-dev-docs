@@ -24,7 +24,7 @@ let kCFStreamSSLCertificates: CFString
 extern CFStringRef const kCFStreamSSLCertificates;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see `SSLSetCertificate()` in `Security/SecureTransport.h`.
 

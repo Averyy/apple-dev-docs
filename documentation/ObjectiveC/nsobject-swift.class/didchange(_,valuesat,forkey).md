@@ -25,11 +25,11 @@ func didChange(_ changeKind: NSKeyValueChange, valuesAt indexes: IndexSet, forKe
 - (void) didChange:(NSKeyValueChange) changeKind valuesAtIndexes:(NSIndexSet *) indexes forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when implementing key-value-observing compliance manually.
 
-##### Special Considerations
+### Special Considerations
 
 You rarely need to override this method in subclasses, but if you do, be sure to call `super`. Calls to this method are always paired with a matching call to [`willChange(_:valuesAt:forKey:)`](./willchange%28_,valuesat,forkey%29.md).
 

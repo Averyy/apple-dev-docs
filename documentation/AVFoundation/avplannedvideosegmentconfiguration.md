@@ -24,7 +24,7 @@ class AVPlannedVideoSegmentConfiguration
 @interface AVPlannedVideoSegmentConfiguration : AVPlannedSegmentConfiguration
 ```
 
-#### Overview
+## Overview
 
 Use this class instead of the base class AVPlannedSegmentConfiguration if you are setting up AVAssetWriterInput to do video compression. AVAssetWritingPlanner will provide required video compression properties in its AVPlannedSegmentWritingRequest that are needed to prevent visual artifacts on segment boundaries.
 

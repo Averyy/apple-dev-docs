@@ -20,7 +20,7 @@ The level of the direct unreverberated signal that an entity emits.
 var directLevel: Audio.Decibel { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The direct level is in relative decibels, in the range `[-Decibel.infinity, Decibel.zero]`, where `Decibel.zero` is the default.
 

@@ -20,7 +20,7 @@ Switch levels based on projected screen area (0.0 = invisible, 1.0 = fills scree
 static func screenArea(_ thresholds: [Float]) -> LevelOfDetailComponent.SelectionStrategy
 ```
 
-#### Discussion
+## Discussion
 
 Each threshold specifies the minimum screen area for a level, in descending order.
 

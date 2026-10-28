@@ -21,7 +21,7 @@ An object that controls access to a resource across multiple execution contexts 
 class DispatchSemaphore
 ```
 
-#### Overview
+## Overview
 
 A dispatch semaphore is an efficient implementation of a traditional counting semaphore. Dispatch semaphores call down to the kernel only when the calling thread needs to be blocked. If the calling semaphore does not need to block, no kernel call is made.
 

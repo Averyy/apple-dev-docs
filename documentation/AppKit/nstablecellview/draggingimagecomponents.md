@@ -19,7 +19,7 @@ var draggingImageComponents: [NSDraggingImageComponent] { get }
 @property (strong, readonly) NSArray<NSDraggingImageComponent *> * draggingImageComponents;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method returns an array of up to two `NSDraggingImageComponent` instances – one for the [`imageView`](./imageview.md) and another for the [`textField`](./textfield.md) (unless the property is `nil`).
 

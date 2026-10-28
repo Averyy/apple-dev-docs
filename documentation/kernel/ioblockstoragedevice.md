@@ -15,7 +15,7 @@ A generic block storage device abstraction.
 class IOBlockStorageDevice : IOService
 ```
 
-#### Overview
+## Overview
 
 The IOBlockStorageDevice class exports the generic block storage protocol, independent of the physical connection protocol (e.g. SCSI, ATA, USB), forwarding all requests to its provider (the Transport Driver). Though the nub does no actual processing of requests, it is necessary in a C++ environment. The Transport Driver can be of any type, as long as it inherits from IOService. Because Transport Drivers needn't derive from a type known to IOBlockStorageDriver, it isn't possible for IOBlockStorageDriver to include the appropriate header file to allow direct communication with the Transport Driver. Thus we achieve polymorphism by having the Transport Driver instantiate a subclass of IOBlockStorageDevice. A typical implementation for a concrete subclass of IOBlockStorageDevice simply relays all methods to its provider (the Transport Driver), which implements the protocol- and device-specific behavior.
 

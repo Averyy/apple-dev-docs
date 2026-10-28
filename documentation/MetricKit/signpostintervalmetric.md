@@ -22,7 +22,7 @@ struct SignpostIntervalMetric
 
 - [Monitoring app performance with MetricKit](./monitoring-app-performance-with-metrickit.md)
 
-#### Discussion
+## Discussion
 
 This metric corresponds to the [`MetricResult.signpostInterval(_:)`](./metricresult/signpostinterval%28_%29.md) case. This metric appears in both [`intervalEntries`](./metricreport/intervalentries.md) and [`stateEntries`](./metricreport/stateentries.md) when you enable state reporting.
 

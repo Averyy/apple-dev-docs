@@ -29,7 +29,7 @@ var size: CGSize { get set }
 
 - [Adding a Video to a Scene](../adding-a-video-to-a-scene.md)
 
-#### Discussion
+## Discussion
 
 The default value is the size of the video used to instantiate the node.
 

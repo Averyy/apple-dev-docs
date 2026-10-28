@@ -19,7 +19,7 @@ var intercellSpacing: NSSize { get set }
 @property NSSize intercellSpacing;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the horizontal and vertical spacing between cells in the combo box’s pop-up list. The default spacing is (3.0, 2.0).
 

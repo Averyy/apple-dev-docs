@@ -24,7 +24,7 @@ var model: VNCoreMLModel { get }
 @property (nonatomic, readonly) VNCoreMLModel * model;
 ```
 
-#### Discussion
+## Discussion
 
 This object wraps a [Core ML](../../CoreML/CoreML.md) model.
 

@@ -17,7 +17,7 @@ An export option that formats the output file as a collection of size-dependent 
 static let parametric: CapturedRoom.USDExportOptions
 ```
 
-#### Discussion
+## Discussion
 
 A parametric model stores elements as unit-sized cubes versus polygonal units. The scale of each element determines whether it appears as a plane or a box.
 

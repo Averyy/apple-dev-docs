@@ -25,7 +25,7 @@ func nw_listener_set_new_connection_handler(_ listener: nw_listener_t, _ handler
 void nw_listener_set_new_connection_handler(nw_listener_t listener, nw_listener_new_connection_handler_t handler);
 ```
 
-#### Discussion
+## Discussion
 
 Upon receiving a new connection, you should set update handlers on the connection and start it in order to accept it. If you want to reject the connection, cancel the connection.
 

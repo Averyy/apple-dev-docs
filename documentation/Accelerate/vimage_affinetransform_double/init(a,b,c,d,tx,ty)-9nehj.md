@@ -21,7 +21,7 @@ Returns a new affine transform.
 init(a: Double, b: Double, c: Double, d: Double, tx: Double, ty: Double)
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

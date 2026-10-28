@@ -21,7 +21,7 @@ A Boolean value that indicates whether there are pending changes that the sync e
 final var hasPendingUntrackedChanges: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to inform the sync engine that there are pending changes other than those available in [`pendingRecordZoneChanges`](./pendingrecordzonechanges.md). After you set this property, the sync engine automatically schedules a send operation and, when that operation executes, asks your delegate to provide those changes by invoking the [`nextRecordZoneChangeBatch(_:syncEngine:)`](../../cksyncenginedelegate-1q7g8/nextrecordzonechangebatch%28_,syncengine%29.md) method.
 

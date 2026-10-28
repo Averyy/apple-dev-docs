@@ -24,7 +24,7 @@ var validTypes: [String]? { get }
 @property (nonatomic, copy, readonly, nullable) NSArray<NSString *> * validTypes;
 ```
 
-#### Discussion
+## Discussion
 
 While in the `UIDocumentPickerModeImport` or `UIDocumentPickerModeOpen` modes, this property holds an array of valid UTIs; otherwise, it is `nil`.
 

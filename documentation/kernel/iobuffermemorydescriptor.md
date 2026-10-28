@@ -15,7 +15,7 @@ A simple memory descriptor that allocates its own buffer memory.
 class IOBufferMemoryDescriptor : IOGeneralMemoryDescriptor
 ```
 
-#### Overview
+## Overview
 
 Use an [`IOBufferMemoryDescriptor`](./iobuffermemorydescriptor.md) object to store data and share it with the kernel. 
 

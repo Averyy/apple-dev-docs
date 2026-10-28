@@ -19,7 +19,7 @@ func value(forIdentifier identifier: String!) -> Any!
 - (id) valueForIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 If the identifier is not found, returns `nil`.
 

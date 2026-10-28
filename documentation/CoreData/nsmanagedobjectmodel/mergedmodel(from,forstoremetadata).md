@@ -25,11 +25,11 @@ class func mergedModel(from bundles: [Bundle]?, forStoreMetadata metadata: [Stri
 + (NSManagedObjectModel *) mergedModelFromBundles:(NSArray<NSBundle *> *) bundles forStoreMetadata:(NSDictionary<NSString *,id> *) metadata;
 ```
 
-#### Return Value
+## Return Value
 
 The managed object model used to create the store for the metadata. If a model cannot be created to match the version information specified by `metadata`, returns `nil`.
 
-#### Discussion
+## Discussion
 
 This method is a companion to [`mergedModel(from:)`](./mergedmodel%28from%29.md).
 

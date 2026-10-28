@@ -19,7 +19,7 @@ case fsync
 VZDiskImageSynchronizationModeFsync
 ```
 
-#### Discussion
+## Discussion
 
 This mode synchronizes the data with the drive, but doesn’t ensure the data moves from the disk’s internal cache to permanent storage.
 

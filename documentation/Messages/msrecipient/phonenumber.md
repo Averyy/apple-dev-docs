@@ -16,7 +16,7 @@ The phone number of a critical message recipient.
 var phoneNumber: String
 ```
 
-#### Discussion
+## Discussion
 
 The phone number of a critical message recipient. When the framework calls [`requestAuthorization(for:)`](../mscriticalsmsmessenger/requestauthorization%28for%29.md) it shows this phone number to a person.
 

@@ -23,7 +23,7 @@ func sendSubviewToBack(_ view: UIView)
 - (void) sendSubviewToBack:(UIView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 This method moves the specified view to the beginning of the array of views in the [`subviews`](./subviews.md) property.
 

@@ -21,7 +21,7 @@ let kSecOAEPMGF1DigestAlgorithmAttributeName: CFString
 extern CFStringRef const kSecOAEPMGF1DigestAlgorithmAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 Set this value to one of the digest algorithms listed in [Digest Types](./transform-attributes.md#Digest-Types) when the [`kSecPaddingKey`](./ksecpaddingkey.md) attribute is set to [`kSecPaddingOAEPKey`](./ksecpaddingoaepkey.md). If you don’t set this attribute, [`kSecDigestSHA1`](./ksecdigestsha1.md) is used by default.
 

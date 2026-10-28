@@ -25,7 +25,7 @@ let kCVImageBufferGammaLevelKey: CFString
 extern CFStringRef const kCVImageBufferGammaLevelKey;
 ```
 
-#### Discussion
+## Discussion
 
 The gamma level value is of type [`CFNumber`](../CoreFoundation/cfnumber.md).
 

@@ -19,7 +19,7 @@ Presents an image viewer for an image containing Apple Reference Image data sele
 @preconcurrency func photosReferenceImageViewer(pickerItem: Binding<PhotosPickerItem?>, onProcessingCompletion: ((Result<PHAsset, any Error>) -> Void)?) -> some View
 ```
 
-#### Discussion
+## Discussion
 
 - Parameters
 

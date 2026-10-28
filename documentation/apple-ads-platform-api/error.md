@@ -15,7 +15,7 @@ The standard error envelope that the API returns when a request fails.
 object Error
 ```
 
-#### Discussion
+## Discussion
 
 The `Error` object is the standard error envelope that the API returns when a request fails.
 
@@ -23,7 +23,7 @@ Change History endpoints use a separate, ChangeHistory-specific error object, [`
 
 Check `details` when you need to pinpoint exactly which part of the request was invalid, for example, a specific field value that violated a constraint or a missing required parameter.
 
-##### Example
+### Example
 
 ```json
 {

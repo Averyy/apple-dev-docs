@@ -17,7 +17,7 @@ Categories of apps for the system to cover with a shielding view.
 var applicationCategories: ShieldSettings.ActivityCategoryPolicy<Application>? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 When the user launches an application in one of these categories, the system calls your extension that customizes the shield’s appearance. When the user taps on a button the shield displays, the system calls your extension that handles user actions. Your app is exempt from `.all`. If your app doesn’t provide a list of categories to shield, this value is `nil`. Your app can shield up to 50 category tokens and specify up to 50 application tokens exceptions at once.
 

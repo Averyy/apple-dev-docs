@@ -22,7 +22,7 @@ Creates an instance of [`ProminentDetailNavigationSplitViewStyle`](../prominentd
 @preconcurrency init()
 ```
 
-#### Discussion
+## Discussion
 
 You can also use [`prominentDetail`](../navigationsplitviewstyle/prominentdetail.md) to construct this style.
 

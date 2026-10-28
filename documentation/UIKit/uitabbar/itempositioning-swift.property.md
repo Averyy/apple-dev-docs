@@ -22,7 +22,7 @@ var itemPositioning: UITabBar.ItemPositioning { get set }
 @property (nonatomic) UITabBarItemPositioning itemPositioning;
 ```
 
-#### Discussion
+## Discussion
 
 The default value for this property, [`UITabBar.ItemPositioning.automatic`](./itempositioning-swift.enum/automatic.md), results in the default tab bar item positioning according to the current environment:
 

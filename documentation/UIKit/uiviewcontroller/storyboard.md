@@ -25,7 +25,7 @@ var storyboard: UIStoryboard? { get }
 @property (nonatomic, strong, readonly, nullable) UIStoryboard * storyboard;
 ```
 
-#### Discussion
+## Discussion
 
 If the view controller was not instantiated from a storyboard, this property is `nil`.
 

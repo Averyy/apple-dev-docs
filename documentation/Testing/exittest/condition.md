@@ -20,7 +20,7 @@ struct Condition
 
 - [Exit testing](../exit-testing.md)
 
-#### Overview
+## Overview
 
 Values of this type are used to describe the conditions under which an exit test is expected to pass or fail by passing them to [`expect(processExitsWith:observing:_:sourceLocation:performing:)`](../expect%28processexitswith,observing,_,sourcelocation,performing%29.md) or [`require(processExitsWith:observing:_:sourceLocation:performing:)`](../require%28processexitswith,observing,_,sourcelocation,performing%29.md).
 

@@ -23,7 +23,7 @@ weak var delegate: (any UITabBarControllerDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UITabBarControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the delegate object to track changes to the items in the tab bar and to monitor the selection of tabs. The delegate object you provide should conform to the [`UITabBarControllerDelegate`](../uitabbarcontrollerdelegate.md) protocol. The default value for this property is `nil`.
 

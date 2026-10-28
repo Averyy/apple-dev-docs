@@ -22,7 +22,7 @@ nonisolated
 init(_ configuration: ProductViewStyleConfiguration) where Icon == ProductViewStyleConfiguration.Icon, PlaceholderIcon == ProductViewStyleConfiguration.Icon
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer within the [`makeBody(configuration:)`](../productviewstyle/makebody%28configuration%29.md) method of a [`ProductViewStyle`](../productviewstyle.md) to create an instance of the product view you want to style. This is useful for custom product view styles that modify the current style, rather than implementing a new style.
 

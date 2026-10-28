@@ -16,7 +16,7 @@ Set the callback that should be called to handle read accesses to the correspond
 const IOFireWirePseudoAddressSpaceReadHandler (*SetReadHandler)(IOFireWireLibPseudoAddressSpaceRef self, IOFireWirePseudoAddressSpaceReadHandler inReader);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the callback that was previously set or nil for none.
 

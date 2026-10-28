@@ -25,11 +25,11 @@ convenience init(chassisBody: SCNPhysicsBody, wheels: [SCNPhysicsVehicleWheel])
 + (instancetype) vehicleWithChassisBody:(SCNPhysicsBody *) chassisBody wheels:(NSArray<SCNPhysicsVehicleWheel *> *) wheels;
 ```
 
-#### Return Value
+## Return Value
 
 A new vehicle behavior.
 
-#### Discussion
+## Discussion
 
 Each object in the `wheels` array associates a node with the wheel to serve as its visual representation and defines properties for the wheel’s physical characteristics. Each wheel object must reference a unique node, which should be a child of the node containing the physics body used for the vehicle’s chassis. Typically, you load a node hierarchy representing the vehicle and all of its wheels from a scene file and then designate which nodes serve as the body and wheels.
 

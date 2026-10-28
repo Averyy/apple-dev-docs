@@ -25,7 +25,7 @@ var remappedControlType: MIDITransformControlType
 MIDITransformControlType remappedControlType;
 ```
 
-#### Discussion
+## Discussion
 
 If transform is [`MIDITransformType.mapControl`](../miditransformtype/mapcontrol.md), the output control type.
 

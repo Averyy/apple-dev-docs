@@ -20,11 +20,11 @@ optional func sharingService(_ sharingService: NSSharingService, transitionImage
 - (NSImage *) sharingService:(NSSharingService *) sharingService transitionImageForShareItem:(id) item contentRect:(NSRect *) contentRect;
 ```
 
-#### Return Value
+## Return Value
 
 The image to display for the sharing transition. Its size should exactly match that of the original image.
 
-#### Discussion
+## Discussion
 
 A sample implementation of this method:
 

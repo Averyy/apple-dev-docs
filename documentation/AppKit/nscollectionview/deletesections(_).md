@@ -19,7 +19,7 @@ func deleteSections(_ sections: IndexSet)
 - (void) deleteSections:(NSIndexSet *) sections;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to delete entire sections and their contained items. Always update your data source object before calling this method. Calling this method kicks off an update (and possible animations) to delete the specified sections. Specifically, the collection view asks the layout object for the final layout attributes for any deleted sections and may also ask for updated layout attributes for any remaining sections. If the layout attributes of any visible items changed, those changes are animated into place.
 

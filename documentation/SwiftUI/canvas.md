@@ -22,7 +22,7 @@ nonisolated
 struct Canvas<Symbols> where Symbols : View
 ```
 
-#### Overview
+## Overview
 
 Use a canvas to draw rich and dynamic 2D graphics inside a SwiftUI view. The canvas passes a [`GraphicsContext`](./graphicscontext.md) to the closure that you use to perform immediate mode drawing operations. The canvas also passes a [`CGSize`](../CoreFoundation/cgsize.md) value that you can use to customize what you draw. For example, you can use the context’s [`stroke(_:with:lineWidth:)`](./graphicscontext/stroke%28_,with,linewidth%29.md) command to draw a [`Path`](./path.md) instance:
 

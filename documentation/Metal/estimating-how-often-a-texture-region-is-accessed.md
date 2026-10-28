@@ -5,7 +5,7 @@
 
 Use texture access patterns to determine when you need to map a texture region.
 
-#### Overview
+## Overview
 
 When you use sparse textures, you need to decide when to map or unmap texture regions. For example, one option is to map entire mipmaps, using existing techniques for determining which mipmaps are accessed. (For more information, see [Dynamically adjusting texture level of detail](./dynamically-adjusting-texture-level-of-detail.md)). You may also want to go further, and only map subregions within individual mipmaps. To help you do that, Metal provides a mechanism to estimate how often you access each region. When you detect a sufficient number of requests to a given region, you can map a sparse tile to it.
 
@@ -24,7 +24,7 @@ To normalize the access counts, Metal increments the count as if you accessed al
 
 Determine your own heuristics to decide how many pixel memory operations is sufficient to start mapping a sparse tile for that region.
 
-##### Request the estimated texture access counts
+### Request the estimated texture access counts
 
 To get the current access counts for a sparse texture, create a blit command encoder and encode commands to copy the GPU’s internal counters to an [`MTLBuffer`](./mtlbuffer.md) instance. The following example code takes a tile region in the texture’s top-level mipmap, creates an [`MTLBuffer`](./mtlbuffer.md) instance large enough to accommodate all of the region’s tiles, and encodes a command to copy the counters.
 

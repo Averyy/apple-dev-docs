@@ -20,7 +20,7 @@ Changed position delta offsets.
 let positionOffsets: [[SIMD3<Float>]]?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

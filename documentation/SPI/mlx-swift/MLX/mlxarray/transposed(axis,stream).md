@@ -17,11 +17,11 @@ Transpose the dimensions of the array.
 func transposed(axis: Int, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This swaps the position of the first dimension with the given axis.
 
-##### See Also
+### See Also
 
 - [Shapes](../shapes.md)
 - [`transposed(axes:stream:)`](./transposed%28axes,stream%29.md)

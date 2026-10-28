@@ -25,7 +25,7 @@ func class_getProperty(_ cls: AnyClass?, _ name: UnsafePointer<CChar>) -> objc_p
 extern objc_property_tclass_getProperty(Class cls, const char *name);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer of type `objc_property_t` describing the property, or `NULL` if the class does not declare a property with that name, or `NULL` if `cls` is `Nil`.
 

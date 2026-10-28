@@ -26,7 +26,7 @@ func provideImage(to texture: any MTLTexture, commandBuffer: any MTLCommandBuffe
 - (void) provideImageToMTLTexture:(id<MTLTexture>) texture commandBuffer:(id<MTLCommandBuffer>) commandBuffer originx:(size_t) originx originy:(size_t) originy width:(size_t) width height:(size_t) height userInfo:(id) info;
 ```
 
-#### Discussion
+## Discussion
 
 The implementation should provide pixels for the requested sub-rect `x,y,width,height` of the image. The sub-rect is in defined in the image’s local coordinate space, where the origin is relative to the top left corner of the image.
 

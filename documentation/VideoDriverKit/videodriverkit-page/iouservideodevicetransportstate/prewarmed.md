@@ -15,7 +15,7 @@ Device transport state is prewarmed.
 Prewarmed
 ```
 
-#### Discussion
+## Discussion
 
 In this state, enable the minimal hardware for I/O, to minimize transition to normal I/O operation.
 

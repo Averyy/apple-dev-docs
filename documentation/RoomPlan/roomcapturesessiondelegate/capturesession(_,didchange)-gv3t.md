@@ -17,7 +17,7 @@ Provides a default, blank implementation for when the capture session updates th
 func captureSession(_ session: RoomCaptureSession, didChange room: CapturedRoom)
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this implementation if your app doesn’t implement [`captureSession(_:didChange:)`](./capturesession%28_,didchange%29.md).
 

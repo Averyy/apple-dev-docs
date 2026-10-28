@@ -19,7 +19,7 @@ func SecCodeCopyGuestWithAttributes(_ host: SecCode?, _ attributes: CFDictionary
 OSStatus SecCodeCopyGuestWithAttributes(SecCodeRef host, CFDictionaryRef attributes, SecCSFlags flags, SecCodeRef*guest);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Code Signing Services Result Codes](./code-signing-services-result-codes.md). In particular:
 
@@ -29,7 +29,7 @@ A result code. See [Code Signing Services Result Codes](./code-signing-services-
 - **[`errSecCSNotAHost`](./errseccsnotahost.md)**: The code specified in the `host` parameter cannot act as a code host, because it’s missing the [`host`](./seccodesignatureflags/host.md) option flag in its code signature.
 - **[`errSecCSMultipleGuests`](./errseccsmultipleguests.md)**: The attributes specified do not unambiguously identify a guest (the specification is not unique).
 
-#### Discussion
+## Discussion
 
 Different hosts support different types and combinations of attributes. The methods a host uses to identify, separate, and control its guests are specific to each type of host. This function provides a generic abstraction layer that allows uniform interrogation of all hosts.
 

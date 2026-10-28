@@ -25,7 +25,7 @@ case forward
 AVSampleBufferRequestDirectionForward
 ```
 
-#### Discussion
+## Discussion
 
 The number of following samples allowed is subject to the [`limitCursor`](../limitcursor.md), [`preferredMinSampleCount`](../preferredminsamplecount.md), and [`maxSampleCount`](../maxsamplecount.md) property values.
 

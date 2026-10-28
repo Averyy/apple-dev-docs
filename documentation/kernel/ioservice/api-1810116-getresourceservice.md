@@ -12,11 +12,11 @@ static IOService * getResourceService(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the IOResources instance. It should not be released by the caller.
 
-#### Overview
+## Overview
 
 IOService maintains a resource service IOResources that allows objects to be published and found globally in the I/O Kit based on a name, using the standard IOService matching and notification calls.
 

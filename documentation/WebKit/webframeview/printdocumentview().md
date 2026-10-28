@@ -19,7 +19,7 @@ func printDocumentView()
 - (void) printDocumentView;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked if the [`documentViewShouldHandlePrint`](./documentviewshouldhandleprint.md) method returns [`false`](../../Swift/false.md).
 

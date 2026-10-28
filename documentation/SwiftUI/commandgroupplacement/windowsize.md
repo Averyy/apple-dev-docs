@@ -19,7 +19,7 @@ Placement for commands that control the size of the window.
 static let windowSize: CommandGroupPlacement
 ```
 
-#### Discussion
+## Discussion
 
 By default, this group includes the following commands in macOS:
 

@@ -20,7 +20,7 @@ var kMEVideoDecoderObjectNameKey: String { get }
 #define kMEVideoDecoderObjectNameKey
 ```
 
-#### Discussion
+## Discussion
 
 This string is used internally for uniquely identifying video decoders and possibly for debug logging but is typically not visible to users.
 

@@ -25,7 +25,7 @@ let kCMTextFormatDescriptionExtension_DefaultStyle: CFString
 extern CFStringRef const kCMTextFormatDescriptionExtension_DefaultStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The value needs to be a [`CFDictionary`](../CoreFoundation/cfdictionary.md).
 

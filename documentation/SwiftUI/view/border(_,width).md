@@ -27,11 +27,11 @@ func border<S>(_ content: S, width: CGFloat = 1) -> some View where S : ShapeSty
 - [Configuring views](../configuring-views.md)
 - [Inspecting view layout](../inspecting-view-layout.md)
 
-#### Return Value
+## Return Value
 
 A view that adds a border with the specified style and width to this view.
 
-#### Discussion
+## Discussion
 
 Use this modifier to draw a border of a specified width around the view’s frame. By default, the border appears inside the bounds of this view. For example, you can add a four-point wide border covers the text:
 

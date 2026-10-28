@@ -20,7 +20,7 @@ func channelCount(_ count: UnsafeMutablePointer<Int>, forParameter parameterID: 
 - (NSError *) channelCount:(NSUInteger *) count forParameter:(NSUInteger) parameterID;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of channels in a parameter (sliders = 1, 2D points = 2, RGBA colors = 4, etc.) in the count parameter. If any errors occur, the return value will be a non-nil pointer to an NSError containing information about the error.
 

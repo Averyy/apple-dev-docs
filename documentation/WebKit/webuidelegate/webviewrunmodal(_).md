@@ -19,7 +19,7 @@ optional func webViewRunModal(_ sender: WebView!)
 - (void) webViewRunModal:(WebView *) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method should display and order front a modal window containing the specified web view. This method is invoked after the [`webView(_:createWebViewModalDialogWith:)`](./webview%28_,createwebviewmodaldialogwith%29.md) method is used to create a new window.
 

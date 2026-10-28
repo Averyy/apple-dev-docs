@@ -25,7 +25,7 @@ enum ScenePhase
 
 - [Migrating to the SwiftUI life cycle](./migrating-to-the-swiftui-life-cycle.md)
 
-#### Overview
+## Overview
 
 The system moves your app’s [`Scene`](./scene.md) instances through phases that reflect a scene’s operational state. A scene’s operational state can vary depending on what platform it’s on and whether it’s in the foreground, minimized, in the app switcher, or in the background. You can perform actions when the phase changes. Read the current phase by observing the [`scenePhase`](./environmentvalues/scenephase.md) value in the [`Environment`](./environment.md):
 

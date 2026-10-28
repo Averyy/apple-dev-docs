@@ -24,7 +24,7 @@ case placement
 MTLHeapTypePlacement
 ```
 
-#### Discussion
+## Discussion
 
 Use placement heaps when you need direct control over memory use and heap fragmentation. Typically, you use placement heaps for resources you keep for long time periods and rarely change.
 

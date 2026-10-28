@@ -22,7 +22,7 @@ class WebView
 @interface WebView : NSView
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  In apps that run in OS X 10.10 and later, use the [`WKWebView`](./wkwebview.md) class instead of using [`WebView`](./webview-swift.class.md).
 

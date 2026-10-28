@@ -17,7 +17,7 @@ No falloff is applied.
 static var disabled: ClothGrabComponent.Falloff { get }
 ```
 
-#### Discussion
+## Discussion
 
 All particles inside the volume are grabbed with equal strength.
 

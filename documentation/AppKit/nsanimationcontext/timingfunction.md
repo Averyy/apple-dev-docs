@@ -19,7 +19,7 @@ var timingFunction: CAMediaTimingFunction? { get set }
 @property (strong, nullable) CAMediaTimingFunction * timingFunction;
 ```
 
-#### Discussion
+## Discussion
 
 The NSAnimationContext timing function is analogous to the CATransaction [`setAnimationTimingFunction(_:)`](../../QuartzCore/catransaction/setanimationtimingfunction%28_%29.md) method.
 

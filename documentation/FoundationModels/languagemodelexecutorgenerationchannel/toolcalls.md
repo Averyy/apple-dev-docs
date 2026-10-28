@@ -20,7 +20,7 @@ A tool-call lifecycle event, including per-call argument streaming, reasoning, m
 struct ToolCalls
 ```
 
-#### Overview
+## Overview
 
 Events for a specific tool call route through [`toolCall(id:name:action:)`](./toolcalls/action-swift.struct/toolcall%28id,name,action%29.md). Use [`removeToolCall(id:)`](./toolcalls/action-swift.struct/removetoolcall%28id%29.md) to drop a tool call the model retracted.
 

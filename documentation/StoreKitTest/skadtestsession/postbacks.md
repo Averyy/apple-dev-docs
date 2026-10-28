@@ -21,7 +21,7 @@ var postbacks: [SKAdTestPostback] { get }
 @property (nonatomic, strong, readonly) NSArray<SKAdTestPostback *> * postbacks;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to check that your updates to the test postbacks, such as conversion value updates, are working as expected. See [`setPostbacks(_:)`](./setpostbacks%28_%29.md) for information on adding postbacks to the test session.
 

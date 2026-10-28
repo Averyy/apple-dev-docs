@@ -21,7 +21,7 @@ static var eligibilityRegion: String? { get async }
 - [Distributing your app on an alternative app marketplace](../distributing-your-app-on-an-alternative-marketplace.md)
 - [Participating in alternative distribution for specific regions](../participating-in-alternative-distribution-for-specific-regions.md)
 
-#### Discussion
+## Discussion
 
 This property returns the device’s current country code based on its region setting, for example, `ie` for Ireland, and `jp` for Japan.
 

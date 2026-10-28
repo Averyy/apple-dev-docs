@@ -25,7 +25,7 @@ func nw_quic_get_initial_max_streams_unidirectional(_ options: nw_protocol_optio
 uint64_t nw_quic_get_initial_max_streams_unidirectional(nw_protocol_options_t options);
 ```
 
-#### Return Value
+## Return Value
 
 The value of the `initial_max_streams_uni` transport parameter.
 

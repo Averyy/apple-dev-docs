@@ -16,11 +16,11 @@ Issues a GET_EVENT_STATUS_NOTIFICATION command to the device as defined in MMC-2
 IOReturn (*GetTrayState)(void *self, UInt8 *trayState);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, or kIOReturnExclusiveAccess if the device is already opened for exclusive access by another client.
 
-#### Discussion
+## Discussion
 
 Once an MMCDeviceInterface is opened, the client may send this command to find out if the device's medium tray is open.
 

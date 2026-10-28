@@ -22,7 +22,7 @@ A gesture that’s a sequence of two gestures.
 nonisolated struct SequenceGesture<First, Second> where First : Gesture, Second : Gesture
 ```
 
-#### Overview
+## Overview
 
 Read [Composing SwiftUI gestures](./composing-swiftui-gestures.md) to learn how you can create a sequence of two gestures.
 

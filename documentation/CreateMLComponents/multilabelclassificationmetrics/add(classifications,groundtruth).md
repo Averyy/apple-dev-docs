@@ -23,7 +23,7 @@ mutating func add(classifications: some Sequence<ClassificationDistribution<Labe
 
 Available when `Label` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 The classifications and ground truth sequences are matched element by element in the order they are provided. Both sequences must have the same number of elements.
 

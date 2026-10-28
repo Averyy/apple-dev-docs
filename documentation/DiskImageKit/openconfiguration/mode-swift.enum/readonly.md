@@ -15,7 +15,7 @@ Open the disk image in read-only mode.
 case readOnly
 ```
 
-#### Discussion
+## Discussion
 
 Use this mode when opening the base image of a stacked disk image.
 

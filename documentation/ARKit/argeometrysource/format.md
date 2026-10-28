@@ -20,7 +20,7 @@ var format: MTLVertexFormat { get }
 @property (nonatomic, assign, readonly) MTLVertexFormat format;
 ```
 
-#### Discussion
+## Discussion
 
 ## See Also
 

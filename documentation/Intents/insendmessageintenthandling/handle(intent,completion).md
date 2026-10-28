@@ -29,7 +29,7 @@ func handle(intent: INSendMessageIntent) async -> INSendMessageIntentResponse
 - (void) handleSendMessage:(INSendMessageIntent *) intent completion:(void (^)(INSendMessageIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Your implementation of this method must send the message to the designated recipients. The response object you provide should indicate the status of the message.
 

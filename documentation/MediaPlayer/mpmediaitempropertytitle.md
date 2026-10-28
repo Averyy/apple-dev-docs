@@ -25,7 +25,7 @@ let MPMediaItemPropertyTitle: String
 extern NSString * const MPMediaItemPropertyTitle;
 ```
 
-#### Discussion
+## Discussion
 
 This property is unrelated to the [`MPMediaItemPropertyAlbumTitle`](./mpmediaitempropertyalbumtitle.md) property. Value is an [`NSString`](../Foundation/nsstring.md) object.
 

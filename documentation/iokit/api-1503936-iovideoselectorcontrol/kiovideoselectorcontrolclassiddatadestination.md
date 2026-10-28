@@ -14,7 +14,7 @@
 kIOVideoSelectorControlClassIDDataDestination = 'dest'
 ```
 
-#### Discussion
+## Discussion
 
 A IOVideoSelectorControl that identifies where the data for the element is going.
 

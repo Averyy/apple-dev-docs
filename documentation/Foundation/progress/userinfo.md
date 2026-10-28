@@ -25,7 +25,7 @@ var userInfo: [ProgressUserInfoKey : Any] { get }
 @property (copy, readonly) NSDictionary<NSString *,id> * userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 A KVO-compliant dictionary that changes in response to [`setUserInfoObject(_:forKey:)`](./setuserinfoobject%28_,forkey%29.md). The dictionary sends all of its KVO notifications on the thread that updates the property.
 

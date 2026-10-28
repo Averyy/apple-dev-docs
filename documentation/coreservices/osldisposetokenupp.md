@@ -20,7 +20,7 @@ typealias OSLDisposeTokenUPP = OSLDisposeTokenProcPtr
 typedef OSLDisposeTokenProcPtr OSLDisposeTokenUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For a description of a dispose token callback function, see [`OSLDisposeTokenProcPtr`](./osldisposetokenprocptr.md). 
 

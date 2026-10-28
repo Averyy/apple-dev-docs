@@ -4,7 +4,7 @@
 
 Debug and profile your Metal workload with a GPU trace.
 
-#### Overview
+## Overview
 
 The Metal debugger consists of a suite of tools for debugging and profiling your Metal app.
 

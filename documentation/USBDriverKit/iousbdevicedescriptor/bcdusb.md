@@ -15,7 +15,7 @@ The USB specification release number with which the device complies.
 uint16_t bcdUSB;
 ```
 
-#### Discussion
+## Discussion
 
 The value in this field is formatted as a binary-coded decimal number.
 

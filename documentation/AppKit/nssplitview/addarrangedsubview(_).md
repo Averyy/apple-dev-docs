@@ -19,7 +19,7 @@ func addArrangedSubview(_ view: NSView)
 - (void) addArrangedSubview:(NSView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 If the view isn’t a subview of the split view, calling this method adds it to the split view’s [`subviews`](../nsview/subviews.md) array.
 

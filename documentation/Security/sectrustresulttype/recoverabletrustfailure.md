@@ -29,7 +29,7 @@ kSecTrustResultRecoverableTrustFailure
 
 - [Discovering Why a Trust Evaluation Failed](../discovering-why-a-trust-evaluation-failed.md)
 
-#### Discussion
+## Discussion
 
 This value indicates that you should not trust the chain as is, but that the chain could be trusted with some minor change to the evaluation context, such as ignoring expired certificates or adding another anchor to the set of trusted anchors.
 

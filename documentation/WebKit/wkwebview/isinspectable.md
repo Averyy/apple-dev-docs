@@ -23,7 +23,7 @@ var isInspectable: Bool { get set }
 @property (nonatomic, getter=isInspectable) BOOL inspectable;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `false`.
 

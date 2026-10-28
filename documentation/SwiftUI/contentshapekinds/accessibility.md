@@ -21,7 +21,7 @@ The kind for accessibility visuals and sorting.
 static let accessibility: ContentShapeKinds
 ```
 
-#### Discussion
+## Discussion
 
 Setting a content shape with this kind causes the accessibility frame and path of the view’s underlying accessibility element to match the shape without adjusting the hit-testing shape, updating the visual focus ring that assistive apps, such as VoiceOver, draw, as well as how the element is sorted. Updating the accessibility shape is only required if the shape or size used to hit-test significantly diverges from the visual shape of the view.
 

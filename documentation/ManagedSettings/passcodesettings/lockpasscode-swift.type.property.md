@@ -17,7 +17,7 @@ The metadata for the setting that prevents the user from changing their passcode
 static let lockPasscode: SettingMetadata<Bool>
 ```
 
-#### Discussion
+## Discussion
 
 Use `lockPasscode` to access metadata for [`lockPasscode`](./lockpasscode-swift.property.md). The default value is `false`.
 

@@ -23,7 +23,7 @@ var configuration: SFSafariViewController.Configuration { get }
 @property (nonatomic, copy, readonly) SFSafariViewControllerConfiguration * configuration;
 ```
 
-#### Discussion
+## Discussion
 
 See [`SFSafariViewController.Configuration`](./configuration-swift.class.md) for configuration properties.
 

@@ -22,7 +22,7 @@ struct SystemShortcut
 - [Adding parameters to an app intent](./adding-parameters-to-an-app-intent.md)
 - [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md)
 
-#### Overview
+## Overview
 
 The system creates `SystemShortcut` instances to represent a person’s choice when they configure the action for a button in a widget. It can represent a custom shortcut, App Shortcut, system action, or an installed app. `SystemShortcut` only exposes metadata that the system needs to fill the configuration UI, for example, the action’s display representation. It doesn’t provide the app or widget with a custom shortcut’s actions, parameters, or implementation details.
 

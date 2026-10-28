@@ -25,7 +25,7 @@ var contactTestBitMask: UInt32 { get set }
 @property (nonatomic, assign) uint32_t contactTestBitMask;
 ```
 
-#### Discussion
+## Discussion
 
 When two bodies share the same space, each body’s category mask is tested against the other body’s contact mask by performing a logical AND operation. If either comparison results in a nonzero value, an [`SKPhysicsContact`](../skphysicscontact.md) object is created and passed to the physics world’s delegate. For best performance, only set bits in the contacts mask for interactions you are interested in.
 

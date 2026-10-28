@@ -25,7 +25,7 @@ var titleHighlightRanges: [NSValue] { get }
 @property (nonatomic, strong, readonly) NSArray<NSValue *> * titleHighlightRanges;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`NSValue`](../../Foundation/nsvalue.md) objects, each of which contains an [`NSRange`](../../Foundation/nsrange-c.struct.md) type defining a range of characters in the [`title`](./title.md) string. Use this property to identify the ranges of characters in the title string that you want to highlight. Highlighting the matching text of a search completion is optional, but it’s a best practice for providing helpful information to the user.
 

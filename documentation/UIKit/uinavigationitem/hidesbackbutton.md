@@ -22,7 +22,7 @@ var hidesBackButton: Bool { get set }
 @property (nonatomic, assign, readwrite) BOOL hidesBackButton;
 ```
 
-#### Discussion
+## Discussion
 
 When set to [`true`](../../Swift/true.md), the Back button is hidden when this navigation item is the top item. This is true regardless of the value in the [`leftItemsSupplementBackButton`](./leftitemssupplementbackbutton.md) property. When set to [`false`](../../Swift/false.md), the Back button is shown if it’s still present. (It can be replaced by values in either the [`leftBarButtonItem`](./leftbarbuttonitem.md) or [`leftBarButtonItems`](./leftbarbuttonitems.md) properties.) The default value is [`false`](../../Swift/false.md).
 

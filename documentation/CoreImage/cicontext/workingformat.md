@@ -24,7 +24,7 @@ var workingFormat: CIFormat { get }
 @property (nonatomic, readonly) CIFormat workingFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The working format determines the pixel format that Core Image uses to create intermediate buffers for executing filter kernels. Core Image automatically converts to and from the source and destination pixel formats of input images and output  contexts. You specify a working pixel format using the [`workingFormat`](../cicontextoption/workingformat.md) key in the `options` dictionary when creating a Core Image context.
 

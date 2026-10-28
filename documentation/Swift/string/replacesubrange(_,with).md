@@ -21,7 +21,7 @@ Replaces the text within the specified bounds with the given characters.
 mutating func replaceSubrange<C>(_ subrange: Range<String.Index>, with newElements: C) where C : Collection, C.Element == Character
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method invalidates any existing indices for use with this string.
 

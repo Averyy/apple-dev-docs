@@ -19,7 +19,7 @@ var subtype: NSEvent.EventSubtype { get }
 @property (readonly) NSEventSubtype subtype;
 ```
 
-#### Discussion
+## Discussion
 
 Access this property only if the event is a mouse event or if the [`type`](./type.md) property contains [`NSAppKitDefined`](../nsappkitdefined.md), [`NSSystemDefined`](../nssystemdefined.md), [`NSApplicationDefined`](../nsapplicationdefined.md), or [`NSPeriodic`](../nsperiodic.md). If you access this property for other types, AppKit raises [`internalInconsistencyException`](../../Foundation/nsexceptionname/internalinconsistencyexception.md). For information about predefined mouse and tablet subtypes, see `Getting Unicode Values`.
 

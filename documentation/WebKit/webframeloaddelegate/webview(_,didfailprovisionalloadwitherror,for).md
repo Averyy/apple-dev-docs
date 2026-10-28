@@ -19,7 +19,7 @@ optional func webView(_ sender: WebView!, didFailProvisionalLoadWithError error:
 - (void) webView:(WebView *) sender didFailProvisionalLoadWithError:(NSError *) error forFrame:(WebFrame *) frame;
 ```
 
-#### Discussion
+## Discussion
 
 The frame continues to display the committed data source if there is one.
 

@@ -22,7 +22,7 @@ func enableEditing()
 - (void) enableEditing;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses should override this method to allow the user to edit the document when it’s safe to do so. This method override should be paired with an override of [`disableEditing()`](./disableediting%28%29.md). The default implementation of this method does nothing.
 

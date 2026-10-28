@@ -25,7 +25,7 @@ var dateComponentsRange: PKDateComponentsRange? { get set }
 @property (nonatomic, copy, nullable) PKDateComponentsRange * dateComponentsRange;
 ```
 
-#### Discussion
+## Discussion
 
 Use this object to set the expected date range for shipping a package, or the time an item is available for pickup. The payment sheet displays the range as part of the shipping method on the main sheet.
 

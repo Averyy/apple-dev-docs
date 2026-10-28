@@ -21,7 +21,7 @@ var notificationInstructionVariants: [String] { get set }
 @property (nonatomic, copy) NSArray<NSString *> * notificationInstructionVariants;
 ```
 
-#### Discussion
+## Discussion
 
 Localize each variant for display to the user, and make sure the array contains at least one variant. The system displays the first variant that fits into the available screen space, so arrange the variants in order from most- to least-preferred.
 

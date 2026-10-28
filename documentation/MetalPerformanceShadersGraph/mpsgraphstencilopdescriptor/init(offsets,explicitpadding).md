@@ -24,7 +24,7 @@ convenience init?(offsets: [NSNumber], explicitPadding: [NSNumber])
 + (instancetype) descriptorWithOffsets:(MPSShape *) offsets explicitPadding:(MPSShape *) explicitPadding;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphStencilOpDescriptor object
 

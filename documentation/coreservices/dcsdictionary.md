@@ -16,7 +16,7 @@ An opaque object that represents a dictionary file.
 class DCSDictionary
 ```
 
-#### Overview
+## Overview
 
 This data type is reserved for future use.
 

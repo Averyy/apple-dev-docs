@@ -24,7 +24,7 @@ typealias AURenderPullInputBlock = (UnsafeMutablePointer<AudioUnitRenderActionFl
 typedef int (^)(enum AudioUnitRenderActionFlags *, const struct AudioTimeStamp *, unsigned int, long, struct AudioBufferList *) __attribute__((nonblocking)) AURenderPullInputBlock;
 ```
 
-#### Discussion
+## Discussion
 
 The caller must supply valid buffers in the input data’s `mBuffers'` `mData` and `mDataByteSize` fields (`mDataByteSize` must be consistent with `frameCount`). This block may provide input in those specified buffers, or it may replace the `mData` pointers with pointers to memory which it owns and guarantees will remain valid until the next render cycle.
 

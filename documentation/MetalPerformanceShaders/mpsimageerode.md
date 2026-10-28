@@ -24,7 +24,7 @@ class MPSImageErode
 @interface MPSImageErode : MPSImageDilate
 ```
 
-#### Overview
+## Overview
 
 An [`MPSImageErode`](./mpsimageerode.md) behaves like the [`MPSImageAreaMin`](./mpsimageareamin.md) filter, except that Metal calculates the intensity at each position relative to a different value before determining which is the maximum pixel value, allowing for shaped, nonrectangular morphological probes.
 

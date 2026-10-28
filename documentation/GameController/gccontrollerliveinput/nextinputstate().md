@@ -24,7 +24,7 @@ func nextInputState() -> (any GCControllerInputState & GCDevicePhysicalInputStat
 - (GCControllerInputState<GCDevicePhysicalInputStateDiff> *) nextInputState;
 ```
 
-#### Return Value
+## Return Value
 
 The next input state in the queue or `nil` if the queue is empty.
 

@@ -16,7 +16,7 @@ Write to the buffer of a network data object.
 IOReturn IONetworkWriteData(io_connect_t conObj, IONDHandle dataHandle, UInt8 *srcBuf, UInt32 inSize);
 ```
 
-#### Return Value
+## Return Value
 
 kIOReturnSuccess on success, or an error code otherwise.
 

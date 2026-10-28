@@ -25,7 +25,7 @@ func CVPixelBufferGetBytesPerRowOfPlane(_ pixelBuffer: CVPixelBuffer, _ planeInd
 extern size_t CVPixelBufferGetBytesPerRowOfPlane(CVPixelBufferRef pixelBuffer, size_t planeIndex);
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes per row for the plane, or `NULL` for nonplanar pixel buffers.
 

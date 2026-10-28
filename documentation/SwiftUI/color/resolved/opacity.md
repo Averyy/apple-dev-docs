@@ -21,7 +21,7 @@ The degree of opacity in the color, given in the range `0` to `1`.
 var opacity: Float
 ```
 
-#### Discussion
+## Discussion
 
 A value of `0` means 100% transparency, while a value of `1` means 100% opacity.
 

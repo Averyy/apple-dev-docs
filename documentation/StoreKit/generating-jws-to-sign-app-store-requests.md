@@ -5,7 +5,7 @@
 
 Create signed JSON Web Signature (JWS) strings on your server to authorize your API requests in your app.
 
-#### Overview
+## Overview
 
 JWS is an open standard ([RFC 7515](https://datatracker.ietf.org/doc/html/rfc7515)) that defines a way to securely transmit information. You create the JWS header and payload using information specific to the App Store feature. You sign the JWS on your server using a private API key that you download from App Store Connect.
 
@@ -25,7 +25,7 @@ To get started, you need your key ID and issuer ID from App Store Connect. Then,
 2. Create the JWS payload. The payload includes the base payload claims, and may also require feature-specific claims.
 3. Sign the JWS.
 
-##### Get your key ID and issuer ID from App Store Connect
+### Get your key ID and issuer ID from App Store Connect
 
 First you need your key ID for the JWS header and your issuer ID for the JWS payload. Sign in to [App Store Connect](https://appstoreconnect.apple.com/) to get these values. Use your Apple In-App Purchase key, not your App Store Connect API key.
 
@@ -44,7 +44,7 @@ To get the issuer ID:
 2. Select the Apple In-App Purchase tab.
 3. To copy the issuer ID that appears near the top of the page, click Copy next to the ID.
 
-##### Create the JWS header
+### Create the JWS header
 
 The App Store features all use the same JWS header.
 
@@ -66,7 +66,7 @@ Here’s an example of a JWS header:
 }
 ```
 
-##### Create the JWS payload
+### Create the JWS payload
 
 The JWS payload contains base claims specific to the App Store, such as an issuer ID and issuance time.  It also includes custom claims that are specific to App Store features.  The following table shows the base claims. The next sections shows the feature-specific claims that you also include in the JWS payload.
 
@@ -104,7 +104,7 @@ Here’s an example of the base payload, without any feature-specific fields:
 
 Be sure to include feature-specific custom claims in the JWS payload as well.
 
-##### Include custom claims for Advanced Commerce API in-app requests
+### Include custom claims for Advanced Commerce API in-app requests
 
 For custom claims for Advanced Commerce in-app requests, use the following values:
 
@@ -129,7 +129,7 @@ Here’s an example of a payload for an Advanced Commerce API in-app request:
 
 For more information about making Advanced Commerce API requests in StoreKit, see [Sending Advanced Commerce API requests from your app](./sending-advanced-commerce-api-requests-from-your-app.md).
 
-##### Include custom claims for promotional offer signatures
+### Include custom claims for promotional offer signatures
 
 For promotional offer signature custom claims, use the following values:
 
@@ -154,7 +154,7 @@ Here’s an example of a payload for a promotional offer signature:
 }
 ```
 
-##### Include custom claims for introductory offer eligibility
+### Include custom claims for introductory offer eligibility
 
 For introductory offer eligibility custom claims, use the following values:
 
@@ -181,7 +181,7 @@ Here’s an example of a payload for introductory offer eligibility:
 
 For more information about providing the introductory offer eligibility signed value in a purchase option, see [`introductoryOfferEligibility(compactJWS:)`](./product/purchaseoption/introductoryoffereligibility%28compactjws%29.md).
 
-##### Sign the JWS
+### Sign the JWS
 
 On your server, use the private key associated with the key ID you specified in the header to generate the signature using ES256 encryption.  The process of signing combines the JWS Header and JWS Payload into a single signed string.
 

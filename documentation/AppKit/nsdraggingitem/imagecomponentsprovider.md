@@ -19,7 +19,7 @@ var imageComponentsProvider: (() -> [NSDraggingImageComponent])? { get set }
 @property (copy, nullable) NSArray<NSDraggingImageComponent *> * (^imageComponentsProvider)();
 ```
 
-#### Discussion
+## Discussion
 
 The dragging image is the composite of an array of [`NSDraggingImageComponent`](../nsdraggingimagecomponent.md) objects.
 

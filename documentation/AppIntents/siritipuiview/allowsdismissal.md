@@ -18,7 +18,7 @@ Indicates if the tip view should display a dismissal button
 @preconcurrency final var allowsDismissal: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `false`.
 

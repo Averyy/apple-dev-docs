@@ -19,7 +19,7 @@ Creates a data source from a data table of audio features.
 case features(table: MLDataTable, featureColumn: String = __Defaults.featureColumnName, labelColumn: String = __Defaults.labelColumnName, parameters: MLSoundClassifier.FeatureExtractionParameters = FeatureExtractionParameters())
 ```
 
-#### Discussion
+## Discussion
 
 Use [`extractFeatures(trainingData:parameters:sessionParameters:)`](../extractfeatures%28trainingdata,parameters,sessionparameters%29.md) to create an [`MLDataTable`](../../mldatatable.md) of audio features.
 

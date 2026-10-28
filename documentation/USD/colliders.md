@@ -5,11 +5,11 @@
 
 A list of prims that interact with objects to create a collision.
 
-#### Overview
+## Overview
 
 Add prims that implement physics to this list. For more information about enabling physics on prims, see `Simulating a Physical Interaction`.
 
-##### Declaration
+### Declaration
 
 ```other
 rel colliders

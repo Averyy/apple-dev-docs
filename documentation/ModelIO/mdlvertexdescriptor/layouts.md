@@ -24,7 +24,7 @@ var layouts: NSMutableArray { get set }
 @property (nonatomic, retain) NSMutableArray<MDLVertexBufferLayout *> * layouts;
 ```
 
-#### Discussion
+## Discussion
 
 A [`MDLVertexBufferLayout`](../mdlvertexbufferlayout.md) object describes the layout of data in one of the vertex buffers of a of a [`MDLMesh`](../mdlmesh.md) object.
 

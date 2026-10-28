@@ -15,7 +15,7 @@ A versioned snapshot of an alternative distribution package, containing its vari
 object AlternativeDistributionPackageVersion
 ```
 
-#### Discussion
+## Discussion
 
 For more information about the responses that includes alternative distribution package version objects, see [`AlternativeDistributionPackageVersionResponse`](./alternativedistributionpackageversionresponse.md) or [`AlternativeDistributionPackageVersionsResponse`](./alternativedistributionpackageversionsresponse.md).
 

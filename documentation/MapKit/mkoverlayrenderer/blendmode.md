@@ -23,7 +23,7 @@ var blendMode: CGBlendMode { get set }
 @property (nonatomic, assign) CGBlendMode blendMode;
 ```
 
-#### Discussion
+## Discussion
 
 Choose the blend mode from one of the possible [`CGBlendMode`](../../CoreGraphics/cgblendmode.md) enumerations.
 

@@ -5,7 +5,7 @@
 
 Store different types of media data, including video, sound, subtitles, and more.
 
-#### Overview
+## Overview
 
 QuickTime uses atoms of different types to store different types of media data—video media atoms for video data, sound media atoms for audio data, and so on. Review the following topics to understand the fundamentals of how QuickTime uses atoms for storage of different types of media data.
 

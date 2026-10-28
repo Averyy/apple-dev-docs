@@ -19,7 +19,7 @@ The amount the surface of the 3D object scatters reflected light.
 var roughness: CustomMaterial.Roughness { get set }
 ```
 
-#### Discussion
+## Discussion
 
 In physically based rendering, the `roughness` property represents how much the surface of an entity scatters the light that it reflects. A material with a high roughness has a matte appearance, whereas one with a low roughness has a shiny appearance. With custom materials, RealityKit doesn’t automatically use the values set on this property. To render a custom material using roughness, set [`lightingModel`](./lightingmodel-swift.property.md) to [`CustomMaterial.LightingModel.lit`](./lightingmodel-swift.enum/lit.md) or [`CustomMaterial.LightingModel.clearcoat`](./lightingmodel-swift.enum/clearcoat.md), and specify a roughness value by calling `params.surface().set_roughness()` from the surface shader.
 

@@ -25,7 +25,7 @@ var contrast: Float { get set }
 @property (nonatomic) float contrast;
 ```
 
-#### Discussion
+## Discussion
 
 Higher values produce higher contrast edges, that is, they’re less antialiased.
 

@@ -19,7 +19,7 @@ The edges on which the configuration adds the containing view’s layout margins
 @property (nonatomic) NSDirectionalRectEdge edgesAddingLayoutMarginsToBackgroundInsets;
 ```
 
-#### Discussion
+## Discussion
 
 For the specified edges, the [`backgroundInsets`](./backgroundinsets.md) values are relative to the containing view’s layout margins.
 

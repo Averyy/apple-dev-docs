@@ -24,11 +24,11 @@ func broadcast(_ tensor: MPSGraphTensor, shapeTensor: MPSGraphTensor, name: Stri
 - (MPSGraphTensor *) broadcastTensor:(MPSGraphTensor *) tensor toShapeTensor:(MPSGraphTensor *) shapeTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Broadcasts values inside the tensor, starting from the trailing dimensions, to give it the correct shape. This is equivalent to the broadcasting for arithmetic operations when operands have different shapes.
 

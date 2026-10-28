@@ -29,7 +29,7 @@ SecKeyRefSecKeyCreateWithData(CFDataRef keyData, CFDictionaryRef attributes, CFE
 
 - [Storing Keys as Data](./storing-keys-as-data.md)
 
-#### Return Value
+## Return Value
 
 The restored key or `NULL` on failure. In Objective-C, call [`CFRelease`](../CoreFoundation/cfrelease.md) to free the key’s memory when you are done with it.
 

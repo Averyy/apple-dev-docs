@@ -19,11 +19,11 @@ func forceTerminate() -> Bool
 - (BOOL) forceTerminate;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if the application successfully terminated, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method will return [`false`](../../Swift/false.md) if the application is no longer running when the `forceTerminate` message is sent to the receiver.
 

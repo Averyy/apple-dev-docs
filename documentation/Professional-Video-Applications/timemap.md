@@ -5,7 +5,7 @@
 
 Adjust or retime the playback speed of an element.
 
-#### Overview
+## Overview
 
 A time map is defined with the `timeMap` element, which contains one or more `timept` elements that specify the new timing. FInal Cut Pro adjusts the parent element’s playback speed over a range of time using points on a curve to interpolate values. For example, if the local time range for a clip is originally 0-5s, then the time map for playing this clip at 50 percent speed, followed by playback at -50 percent speed, might look like:
 

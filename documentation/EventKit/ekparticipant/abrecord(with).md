@@ -21,15 +21,15 @@ func abRecord(with addressBook: ABAddressBook) -> ABRecord?
 - (ABRecordRef) ABRecordWithAddressBook:(ABAddressBookRef) addressBook;
 ```
 
-#### Return Value
+## Return Value
 
 The address book record for the participant, or `nil` if the record is not found.
 
-#### Discussion
+## Discussion
 
 This method searches for a record match based on the participant’s email address.
 
-##### Special Considerations
+### Special Considerations
 
 > **Note**:  This instance method is only available on iOS. For macOS, see the [`abPerson(in:)`](./abperson%28in%29.md) instance method.
 

@@ -20,13 +20,13 @@ A component that turns mesh surfaces into portals to a different world.
 struct PortalComponent
 ```
 
-#### Overview
+## Overview
 
 A RealityKit portal defines a way to look into a different, immersive world. You define an entity as a portal when it also has a [`ModelComponent`](./modelcomponent.md) that contains a mesh part with [`PortalMaterial`](./portalmaterial.md).
 
 To create a portal, set its [`targetEntity`](./portalcomponent/targetentity.md) property to an entity with a [`WorldComponent`](./worldcomponent.md). Entities under that world only render within the portal.
 
-##### Quick start
+### Quick start
 
 On iOS 27, macOS 27, tvOS 27, visionOS 27, and later, [`makePortal(surfaceStyle:boundaryStyle:boundaryMode:)`](./portalcomponent/makeportal%28surfacestyle,boundarystyle,boundarymode%29.md) creates a configured portal entity and its target world entity in a single call:
 
@@ -43,7 +43,7 @@ content.add(portal.portalEntity)
 
 To configure existing entities, use [`configure(world:portalEntity:surfaceStyle:boundaryStyle:boundaryMode:)`](./portalcomponent/configure%28world,portalentity,surfacestyle,boundarystyle,boundarymode%29.md).
 
-##### Manual construction
+### Manual construction
 
 On earlier OS releases, or when you need direct control over the portal’s mesh, material, or boundary geometry, set the components yourself:
 
@@ -64,7 +64,7 @@ content.add(world)
 content.add(portal)
 ```
 
-##### Clipping and Crossing
+### Clipping and Crossing
 
 You can enable clipping by configuring [`clippingMode`](./portalcomponent/clippingmode-swift.property.md) to something other than [`PortalComponent.ClippingMode.disabled`](./portalcomponent/clippingmode-swift.enum/disabled.md). For example, you can use [`PortalComponent.ClippingMode.plane(_:)`](./portalcomponent/clippingmode-swift.enum/plane%28_%29.md) to clip portal content to an infinite half-space, or [`PortalComponent.ClippingMode.volume(_:)`](./portalcomponent/clippingmode-swift.enum/volume%28_%29.md) to clip to a box-bounded region of space. Clipping prevents portal world content from rendering beyond the portal boundary and causing depth confusion.
 
@@ -115,7 +115,7 @@ The spaceships below *don’t* have a [`PortalCrossingComponent`](./portalcrossi
 
 [Video: Four videos of space ships poking out of portals looking into outer space. Each video is in a grid formation. The two videos on the top row have clipping mode disabled so the space ships are bounded by the portal geometry. The two videos on the bottom row have clipping mode enabled so the space ships are clipped by the portal plane.](https://developer.apple.com/tutorials/videos/com.apple.RealityKit/portal-clipping-video.mov)
 
-##### Lighting
+### Lighting
 
 You define the lighting in a portal world with [`ImageBasedLightComponent`](./imagebasedlightcomponent.md) and [`ImageBasedLightReceiverComponent`](./imagebasedlightreceivercomponent.md).
 

@@ -22,11 +22,11 @@ A view into a subsequence of elements of another collection.
 struct Slice<Base> where Base : Collection
 ```
 
-#### Overview
+## Overview
 
 A slice stores a base collection and the start and end indices of the view. It does not copy the elements from the collection into separate storage. Thus, creating a slice has O(1) complexity.
 
-#### Slices Share Indices
+## Slices Share Indices
 
 Indices of a slice can be used interchangeably with indices of the base collection. An element of a slice is located under the same index in the slice and in the base collection, as long as neither the collection nor the slice has been mutated since the slice was created.
 
@@ -52,7 +52,7 @@ if let i = secondHalf.indices.max(by: { secondHalf[$0] < secondHalf[$1] }) {
 // Prints "Highest second-half absences: 3"
 ```
 
-#### Slices Inherit Semantics
+## Slices Inherit Semantics
 
 A slice inherits the value or reference semantics of its base collection. That is, if a `Slice` instance is wrapped around a mutable collection that has value semantics, such as an array, mutating the original collection would trigger a copy of that collection, and not affect the base collection stored inside of the slice.
 

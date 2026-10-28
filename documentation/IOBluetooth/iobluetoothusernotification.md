@@ -19,7 +19,7 @@ class IOBluetoothUserNotification
 @interface IOBluetoothUserNotification : NSObject
 ```
 
-#### Overview
+## Overview
 
 When registering for various notifications in the system, an IOBluetoothUserNotification object is returned. To unregister from the notification, call -unregister on the IOBluetoothUserNotification object. Once -unregister is called, the object will no longer be valid.
 

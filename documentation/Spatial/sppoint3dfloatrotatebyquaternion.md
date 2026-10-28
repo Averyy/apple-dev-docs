@@ -19,11 +19,11 @@
 static SPPoint3DFloat SPPoint3DFloatRotateByQuaternion(SPPoint3DFloat point, simd_quatf quaternion);
 ```
 
-#### Return Value
+## Return Value
 
 A point that’s rotated by the specified rotation.
 
-#### Discussion
+## Discussion
 
 Returns a point that’s rotated by the specified quaternion around the origin.
 

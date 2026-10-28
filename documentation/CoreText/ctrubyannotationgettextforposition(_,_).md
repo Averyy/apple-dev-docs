@@ -25,7 +25,7 @@ func CTRubyAnnotationGetTextForPosition(_ rubyAnnotation: CTRubyAnnotation, _ po
 extern CFStringRefCTRubyAnnotationGetTextForPosition(CTRubyAnnotationRef rubyAnnotation, CTRubyPosition position);
 ```
 
-#### Return Value
+## Return Value
 
 A [`CFString`](../CoreFoundation/cfstring.md) for the ruby text at the specified position, if the `rubyAnnotation` object is valid; otherwise, `NULL`.
 

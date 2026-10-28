@@ -25,11 +25,11 @@ func localizedString(forCollatorIdentifier collatorIdentifier: String) -> String
 - (NSString *) localizedStringForCollatorIdentifier:(NSString *) collatorIdentifier;
 ```
 
-#### Return Value
+## Return Value
 
 The localized name of the collator.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to calling the [`displayName(forKey:value:)`](./displayname%28forkey,value%29.md) method passing the [`collatorIdentifier`](./key/collatoridentifier.md) key and `collatorIdentifier` value.
 

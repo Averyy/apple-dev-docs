@@ -25,7 +25,7 @@ func resolve()
 - (void) resolveReferenceNode;
 ```
 
-#### Discussion
+## Discussion
 
 The archive is deserialized and the root node is added as a child of the reference node. If this method is called on a reference node whose content is already loaded, the existing node tree is discarded and replaced with a fresh copy of the archive’s data.
 

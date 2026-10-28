@@ -25,7 +25,7 @@ var executionBlocks: [@Sendable () -> Void] { get }
 @property (copy, readonly) NSArray<void (^)(void)> * executionBlocks;
 ```
 
-#### Discussion
+## Discussion
 
 The blocks in this array are copies of those originally added using the [`addExecutionBlock(_:)`](./addexecutionblock%28_%29.md) method.
 

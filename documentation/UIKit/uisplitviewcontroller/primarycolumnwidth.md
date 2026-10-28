@@ -23,7 +23,7 @@ var primaryColumnWidth: CGFloat { get }
 @property (nonatomic, readonly) CGFloat primaryColumnWidth;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the actual width applied to the primary view controller’s view.
 

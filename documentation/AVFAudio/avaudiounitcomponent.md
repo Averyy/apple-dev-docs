@@ -24,7 +24,7 @@ class AVAudioUnitComponent
 @interface AVAudioUnitComponent : NSObject
 ```
 
-#### Overview
+## Overview
 
 Details can include information such as type, subtype, manufacturer, and location. An `AVAudioUnitComponent` can include user tags, which you can query later for display.
 

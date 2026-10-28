@@ -23,7 +23,7 @@ var allowsAutomaticLocalization: Bool { get set }
 @property (nonatomic) BOOL allowsAutomaticLocalization;
 ```
 
-#### Discussion
+## Discussion
 
 A keyboard shortcut you specify in one language might be difficult or impossible to reproduce on a keyboard with a different character set or layout. Localized keyboards sometimes rearrange punctuation marks or replace them altogether to make room for a language’s required characters. The new locations of those keys might make it difficult to use your key command’s current shortcut. To ensure your shortcuts are always usable, the system can automatically remap shortcuts, as needed, to accommodate the connected keyboard.
 

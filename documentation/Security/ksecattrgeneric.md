@@ -25,7 +25,7 @@ let kSecAttrGeneric: CFString
 extern CFStringRef const kSecAttrGeneric;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFData`](../CoreFoundation/cfdata.md) and contains a user-defined attribute. Items of class [`kSecClassGenericPassword`](./ksecclassgenericpassword.md) have this attribute.
 

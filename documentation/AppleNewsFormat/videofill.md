@@ -21,13 +21,13 @@ object VideoFill
 - [Adding a Video](../AppleNews/adding-a-video.md)
 - [Applying a Background to a Component](../AppleNews/applying-a-background-to-a-component.md)
 
-#### Discussion
+## Discussion
 
 Use the `VideoFill` object to fill a component’s background with a video that starts playing automatically with no audio. You can specify whether the video scrolls or stays in one place when a person scrolls, what happens when the video ends, and the position of the video within the component. You can also supply an image to display when the video isn’t playing.
 
 You can use this object in [`ComponentStyle`](./componentstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

@@ -20,7 +20,7 @@ func addObserver(_ observer: Any, selector aSelector: Selector, name aName: NSNo
 - (void) addObserver:(id) observer selector:(SEL) aSelector name:(NSNotificationName) aName object:(NSString *) anObject;
 ```
 
-#### Discussion
+## Discussion
 
 This method calls [`addObserver(_:selector:name:object:suspensionBehavior:)`](./addobserver%28_,selector,name,object,suspensionbehavior%29.md), passing [`DistributedNotificationCenter.SuspensionBehavior.coalesce`](./suspensionbehavior/coalesce.md) for `suspensionBehavior`.
 

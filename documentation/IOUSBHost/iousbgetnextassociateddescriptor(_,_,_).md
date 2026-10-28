@@ -20,11 +20,11 @@ func IOUSBGetNextAssociatedDescriptor(_ configurationDescriptor: UnsafePointer<I
 const IOUSBDescriptorHeader *IOUSBGetNextAssociatedDescriptor(const IOUSBConfigurationDescriptor *configurationDescriptor, const IOUSBDescriptorHeader *parentDescriptor, const IOUSBDescriptorHeader *currentDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor pointer, or `nil` if no matching descriptor returns.
 
-#### Discussion
+## Discussion
 
 This method uses [`IOUSBGetNextDescriptor(_:_:)`](./iousbgetnextdescriptor%28_,_%29.md), but returns `nil` if it finds another descriptor with a `bDescriptorType` field that matches the value for `parentDescripto`r’s `bDescriptorType`. Use `nil` for `currentDescriptor` to return the first descriptor after `parentDescriptor`.
 

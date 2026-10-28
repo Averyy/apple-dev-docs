@@ -17,7 +17,7 @@ Convert to [`MLXArray`](../../mlxarray.md) using the optional suggested [`DType`
 func asMLXArray(dtype: DType?) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 If the receiver is a scalar this should consider the `dtype` when producing an `MLXArray`.  For example:
 

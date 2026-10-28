@@ -24,7 +24,7 @@ func CFHTTPMessageCopyResponseStatusLine(_ response: CFHTTPMessage) -> Unmanaged
 extern CFStringRefCFHTTPMessageCopyResponseStatusLine(CFHTTPMessageRef response);
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the message’s status line, or `NULL` if there was a problem creating the object. The status line includes the message’s protocol version and a success or error code. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

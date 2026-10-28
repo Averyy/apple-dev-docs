@@ -19,7 +19,7 @@ static var floatingPointSamples: NSBitmapImageRep.Format { get }
 NSBitmapFormatFloatingPointSamples
 ```
 
-#### Discussion
+## Discussion
 
 If this option is not specified, samples are integer values.
 

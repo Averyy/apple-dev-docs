@@ -24,7 +24,7 @@ case resourceNotAvailable
 CHHapticErrorCodeResourceNotAvailable
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when your app’s registered audio resources reach the limit. The app needs to unregister others to make resources available again.
 

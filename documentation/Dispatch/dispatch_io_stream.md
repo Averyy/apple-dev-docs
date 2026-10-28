@@ -23,7 +23,7 @@ var DISPATCH_IO_STREAM: Int32 { get }
 #define DISPATCH_IO_STREAM
 ```
 
-#### Discussion
+## Discussion
 
 The channel represents a linear stream of bytes. Read and write operations are performed serially in the order they were started. Operations always read or write data at the file pointer position that is current when the read or write begins. Read and write operations may be performed simultaneously on the same channel.
 

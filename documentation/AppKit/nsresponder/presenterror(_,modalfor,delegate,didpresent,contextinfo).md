@@ -19,7 +19,7 @@ func presentError(_ error: any Error, modalFor window: NSWindow, delegate: Any?,
 - (void) presentError:(NSError *) error modalForWindow:(NSWindow *) window delegate:(id) delegate didPresentSelector:(SEL) didPresentSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The information displayed in the alert is extracted from the [`NSError`](../../Foundation/nserror.md) object `error`; it may include a description, recovery suggestion, failure reason, and button titles (all localized). Once the user dismisses the alert and any recovery attempter associated with the error object has had a chance to recover from it, the receiver sends a message identified by `didPresentSelector` to the modal delegate `delegate`. (A recovery attempter is an object that conforms to the NSErrorRecoveryAttempting informal protocol.)
 

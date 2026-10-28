@@ -20,7 +20,7 @@ case rightUpForward
 cp_axis_direction_convention_right_up_forward
 ```
 
-#### Discussion
+## Discussion
 
 This convention positions the left-most pixel at the left edge of the view and the top-most pixel at the top edge of the view, and the system renders with a clockwise winding order.
 

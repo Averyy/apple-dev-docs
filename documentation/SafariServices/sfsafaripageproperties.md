@@ -23,7 +23,7 @@ class SFSafariPageProperties
 
 - [Adjusting website access permissions](./adjusting-website-access-permissions.md)
 
-#### Overview
+## Overview
 
 Use the properties object to retrieve page information, such as the current URL, page title, active status, and private browsing status.
 

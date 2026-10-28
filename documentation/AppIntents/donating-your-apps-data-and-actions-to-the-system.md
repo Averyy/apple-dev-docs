@@ -5,7 +5,7 @@
 
 Improve how people interact with your app through Apple Intelligence and Siri by teaching the system about your app’s data and actions.
 
-#### Overview
+## Overview
 
 Apple Intelligence and Siri help people perform actions and access that information outside your app. However, these features still rely on your app to provide content using the App Intents framework. Integrate this framework into your project and use it to define *app intents* for your app’s actions and *app entities* for your app’s data.
 
@@ -13,13 +13,13 @@ After you define app intents and app entities for your content, use *donations* 
 
 For more on how to implement app intents, see [Creating your first app intent](./creating-your-first-app-intent.md). For more on how to implement app entities, see [Defining app entities for your custom data types](./defining-app-entities-for-your-custom-data-types.md).
 
-##### Add app entities to your Spotlight search index
+### Add app entities to your Spotlight search index
 
 Apps use Spotlight to build a searchable index of their content, and the Core Spotlight framework offers APIs to index entities directly or add them to your existing Spotlight metadata. When a search yields a result with an app entity, Spotlight can use the entity to launch your app and navigate to the result. When building app intents to perform actions, Apple Intelligence and Siri can also use your entities to fill in parameters automatically.
 
 Adding entities to your search index requires some changes to your app entity types. For details about how to make these changes, see [Making app entities available in Spotlight](./making-app-entities-available-in-spotlight.md).
 
-##### Help the system predict someone’s future actions
+### Help the system predict someone’s future actions
 
 The system can suggest potential actions from the Lock Screen, in Siri Suggestions, and in other system interfaces. It makes these suggestions with the help of donations from your app and donations from system apps and features. For example, the system automatically donates the app intents that Siri, system apps, and other system features run. When you make donations from your app, you give the system a more complete picture of a person’s behaviors, which leads to more accurate suggestions.
 
@@ -35,7 +35,7 @@ The system uses the contents of your app intents to craft a suitable message whe
 
 > **Note**: Apps still need to donate Handoff-related actions using the [`NSUserActivity`](../Foundation/nsuseractivity.md) type. For more information on how to add Handoff support to your app, see [Implementing Handoff in Your App](../Foundation/implementing-handoff-in-your-app.md).
 
-##### Provide contextual awareness of what’s in your app’s interface
+### Provide contextual awareness of what’s in your app’s interface
 
 The views in your app’s interface reflect your app’s data — specifically, the portions of that data currently visible to someone. During a conversation, your app’s data offers additional context to help Apple Intelligence and Siri determine what someone meant. For example, when someone asks Siri to “Send *this* message”, Siri needs to knows what “this message” means. You provide Siri with this understanding by attaching app entities to your app’s views, and using them to reflect the data currently in your app’s interface.
 
@@ -46,7 +46,7 @@ When you configure your app’s interface, you fetch specific data objects and u
 
 For more information, see [Providing contextual cues to Apple Intelligence and Siri](./providing-contextual-cues-to-apple-intelligence-and-siri.md).
 
-##### Suggest relevant actions and data from your app
+### Suggest relevant actions and data from your app
 
 In specific situations, you might want to suggest app intents or app entities that you think someone might find relevant. The App Intents framework provides the following APIs to support these types of donations:
 

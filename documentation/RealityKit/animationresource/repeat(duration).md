@@ -21,7 +21,7 @@ Repeats an animation for the specified amount of time.
 @preconcurrency func `repeat`(duration: TimeInterval = .infinity) -> AnimationResource
 ```
 
-#### Return Value
+## Return Value
 
 A new animation resource that you play on an entity by calling the entity’s [`playAnimation(_:transitionDuration:startsPaused:)`](../entity/playanimation%28_,transitionduration,startspaused%29.md) method.
 

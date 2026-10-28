@@ -25,11 +25,11 @@ func makeDefaultLibrary() -> (any MTLLibrary)?
 - (id<MTLLibrary>) newDefaultLibrary;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLLibrary`](../mtllibrary.md) instance if the method completes successfully; otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 Xcode compiles all the Metal source files (ending in `.metal`) in an Xcode project into a single default library.
 

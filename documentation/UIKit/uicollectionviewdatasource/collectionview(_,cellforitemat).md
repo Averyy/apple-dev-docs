@@ -24,11 +24,11 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
 - (UICollectionViewCell *) collectionView:(UICollectionView *) collectionView cellForItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A configured cell object. You must not return `nil` from this method.
 
-#### Discussion
+## Discussion
 
 Your implementation of this method is responsible for creating, configuring, and returning the appropriate cell for the given item. You do this by calling the [`dequeueReusableCell(withReuseIdentifier:for:)`](../uicollectionview/dequeuereusablecell%28withreuseidentifier,for%29.md) method of the collection view and passing the reuse identifier that corresponds to the cell type you want. That method always returns a valid cell object. Upon receiving the cell, you should set any properties that correspond to the data of the corresponding item, perform any additional needed configuration, and return the cell.
 

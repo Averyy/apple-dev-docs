@@ -21,7 +21,7 @@ The time interval between the date value and the current date and time.
 var timeIntervalSinceNow: TimeInterval { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the date is earlier than the current date and time, this property’s value is negative.
 

@@ -13,7 +13,7 @@
 typedef void (*sf_notify_func)(void *cookie, socket_t so, sflt_event_t event, void *param);
 ```
 
-#### Discussion
+## Discussion
 
 sf_notify_func is called to notify the filter of various state changes and other events occuring on the socket.
 

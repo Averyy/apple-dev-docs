@@ -13,7 +13,7 @@
 kINQUIRY_RESPONSE_DATA_FORMAT_Mask = 0x0F
 ```
 
-#### Discussion
+## Discussion
 
 Mask for valid bits for RESPONSE_DATA_FORMAT.
 

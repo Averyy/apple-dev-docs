@@ -24,7 +24,7 @@ var sendLevelMetaParameterDefinition: PHASENumberMetaParameterDefinition? { get 
 @property (nonatomic, strong, nullable) PHASENumberMetaParameterDefinition * sendLevelMetaParameterDefinition;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to fade reverb effects into a spatial mixer’s output.
 

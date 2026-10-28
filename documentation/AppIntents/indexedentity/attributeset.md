@@ -24,7 +24,7 @@ var attributeSet: CSSearchableItemAttributeSet { get }
 
 - [Making app entities available in Spotlight](../making-app-entities-available-in-spotlight.md)
 
-#### Discussion
+## Discussion
 
 Use this property to include additional metadata in the index for your app entity. This property augments the set of declared properties in your entity that have an indexing key. The default implementation of this property provides an attribute set with the title, subtitle, and image values from the entity’s display representation.
 

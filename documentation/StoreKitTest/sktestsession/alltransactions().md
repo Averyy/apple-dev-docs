@@ -25,11 +25,11 @@ func allTransactions() -> [SKTestTransaction]
 - (NSArray<SKTestTransaction *> *) allTransactions;
 ```
 
-#### Return Value
+## Return Value
 
 An array that contains all transactions.
 
-#### Discussion
+## Discussion
 
 This array contains all transactions, including those that don’t appear in the receipt, such as:
 

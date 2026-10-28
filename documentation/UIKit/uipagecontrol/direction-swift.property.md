@@ -23,7 +23,7 @@ var direction: UIPageControl.Direction { get set }
 @property (nonatomic, assign) UIPageControlDirection direction;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`UIPageControl.Direction.natural`](./direction-swift.enum/natural.md).
 

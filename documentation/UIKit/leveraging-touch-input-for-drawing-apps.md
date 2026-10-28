@@ -12,7 +12,7 @@ Capture touches as a series of strokes and render them efficiently on a drawing 
 - Mac Catalyst 10.0+
 - Xcode 11.3+
 
-#### Overview
+## Overview
 
 This sample project, Speed Sketch, shows how to render a series of strokes a user makes by moving their finger or Apple Pencil across the screen. The project also demonstrates how to:
 
@@ -20,7 +20,7 @@ This sample project, Speed Sketch, shows how to render a series of strokes a use
 - Improve drawing performance.
 - Enhance the app for Apple Pencil.
 
-##### Distinguish between finger and Apple Pencil touches
+### Distinguish between finger and Apple Pencil touches
 
 With Speed Sketch, users can draw by moving their finger or Apple Pencil across the screen, and the system reports the touches to the app. Speed Sketch captures these touches using the custom gesture recognizer, `StrokeGestureRecognizer`.
 
@@ -136,7 +136,7 @@ var pencilMode = false {
 }
 ```
 
-##### Improve drawing performance
+### Improve drawing performance
 
 The stroke gesture recognizer receives touch events from the system. For most apps, the time span between each touch event is enough to handle the gesture. However, users of drawing apps expect greater precision, which requires the app to gather all the touches reported since the last delivered touch event.
 
@@ -197,7 +197,7 @@ override func touchesEstimatedPropertiesUpdated(_ touches: Set<UITouch>) {
 }
 ```
 
-##### Enhance for Apple Pencil
+### Enhance for Apple Pencil
 
 Apple Pencil can sense tilt (altitude), force (pressure), and orientation (azimuth), which drawing apps can use to affect the appearance of strokes. For instance, Speed Sketch uses azimuth to enhance the strokes when using the app’s Calligraphy drawing tool.
 

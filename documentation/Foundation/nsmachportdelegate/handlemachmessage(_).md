@@ -25,7 +25,7 @@ optional func handleMachMessage(_ msg: UnsafeMutableRawPointer)
 - (void) handleMachMessage:(void *) msg;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate should interpret this data as a pointer to a Mach message beginning with a msg_header_t structure and should handle the message appropriately.
 

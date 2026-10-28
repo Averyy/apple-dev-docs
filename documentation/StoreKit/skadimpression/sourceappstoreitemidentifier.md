@@ -26,7 +26,7 @@ var sourceAppStoreItemIdentifier: NSNumber { get set }
 - [Generating the signature to validate view-through ads](../generating-the-signature-to-validate-view-through-ads.md)
 - [Identifying the parameters in install-validation postbacks](../identifying-the-parameters-in-install-validation-postbacks.md)
 
-#### Discussion
+## Discussion
 
 Set this property to the App Store item identifier of the app that’s displaying the ad.
 

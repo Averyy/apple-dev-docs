@@ -21,11 +21,11 @@ Calls a closure with a pointer to the viewed contiguous storage.
 func withUnsafeBufferPointer<E, Result>(_ body: (UnsafeBufferPointer<Element>) throws(E) -> Result) throws(E) -> Result where E : Error, Result : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The return value of the `body` closure parameter.
 
-#### Discussion
+## Discussion
 
 The buffer pointer passed as an argument to `body` is valid only during the execution of `withUnsafeBufferPointer(_:)`. Do not store or return the pointer for later use.
 

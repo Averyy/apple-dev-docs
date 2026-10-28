@@ -24,7 +24,7 @@ func stopMonitoring(for region: CLRegion)
 - (void) stopMonitoringForRegion:(CLRegion *) region;
 ```
 
-#### Discussion
+## Discussion
 
 If the specified region object is not currently being monitored, this method has no effect. If a compatible iPad or iPhone app calls this method when running in visionOS, the method does nothing.
 

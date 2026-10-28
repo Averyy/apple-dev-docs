@@ -23,7 +23,7 @@ func beginCriticalSheet(_ sheetWindow: NSWindow) async -> NSApplication.ModalRes
 - (void) beginCriticalSheet:(NSWindow *) sheetWindow completionHandler:(void (^)(NSModalResponse returnCode)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 This method displays the sheet—on top of the window’s current sheet, if one exists—makes it key and returns control to the caller. While the sheet remains visible, most events targeted at the receiver are prohibited. The runloop does not enter any special mode to accomplish this.
 

@@ -25,7 +25,7 @@ struct CFStringInlineBuffer
 typedef struct { ... } CFStringInlineBuffer;
 ```
 
-#### Overview
+## Overview
 
 This structure is used for in-line buffer access of characters contained by a CFString object. Use the [`CFStringInitInlineBuffer(_:_:_:)`](./cfstringinitinlinebuffer%28_,_,_%29.md) function for initializing the fields of this structure; do not do it manually. Once the buffer is initialized, use the [`CFStringGetCharacterFromInlineBuffer(_:_:)`](./cfstringgetcharacterfrominlinebuffer%28_,_%29.md) function to access characters from the buffer. Do not access the fields directly as they might change between releases.
 

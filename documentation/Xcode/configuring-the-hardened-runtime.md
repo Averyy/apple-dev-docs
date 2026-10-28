@@ -5,7 +5,7 @@
 
 Protect the runtime integrity of your macOS app by restricting access to sensitive resources and preventing common exploits.
 
-#### Overview
+## Overview
 
 The *Hardened Runtime* is a collection of system-enforced restrictions that disable a set of functional capabilities, such as loading third-party frameworks, and prohibit access to restricted resources, such as the device’s built-in camera, to prevent certain classes of exploits from compromising the runtime integrity of your macOS app. If your app relies on something the Hardened Runtime restricts, you remove that specific protection by adding an entitlement to your app’s entitlements file. Xcode’s Hardened Runtime capability provides an easy way to manage those entitlements.
 
@@ -15,7 +15,7 @@ Before you select the required runtime exceptions and access to restricted resou
 
 > ❗ **Important**: Apple only notarizes macOS apps that enable the Hardened Runtime capability. For more information, see [Notarizing macOS software before distribution](../Security/notarizing-macos-software-before-distribution.md).
 
-##### Specify your app’s runtime exceptions
+### Specify your app’s runtime exceptions
 
 Before your app can perform functionality that depends upon one or more runtime exceptions, you must add the entitlements for those exceptions by performing the following:
 
@@ -42,7 +42,7 @@ The following table describes the runtime exceptions the Hardened Runtime suppor
 
 > ⚠️ **Warning**: Specific runtime exceptions, such as Disable Executable Memory Protection, remove core security barriers from your app. Always apply caution when using runtime exceptions and opt for the narrowest set of entitlements that enable the required functionality.
 
-##### Specify the resource access your app requires
+### Specify the resource access your app requires
 
 If your app accesses restricted or sensitive resources, such as the user’s photo library or address book, you must include the entitlements that provide access to those resources by following these steps:
 

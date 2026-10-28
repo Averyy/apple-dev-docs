@@ -25,11 +25,11 @@ init(sharedKeySet keyset: Any)
 + (NSMutableDictionary<id,id> *) dictionaryWithSharedKeySet:(id) keyset;
 ```
 
-#### Return Value
+## Return Value
 
 A new mutable dictionary optimized for a known set of keys.
 
-#### Discussion
+## Discussion
 
 Keys that are not in the key set can still be set in the dictionary, but that usage is not optimal.
 

@@ -19,7 +19,7 @@ The size of the smallest permissible font when drawing the label’s text.
 @property (nonatomic) CGFloat minimumFontSize;
 ```
 
-#### Discussion
+## Discussion
 
 When drawing text that might not fit within the bounding rectangle of the label, you can use this property to prevent the label from reducing the font size to a point where it’s no longer legible.
 

@@ -17,7 +17,7 @@ Save dictionary of arrays in `safetensors` format into `Data`.
 func saveToData(arrays: [String : MLXArray], metadata: [String : String] = [:]) throws -> Data
 ```
 
-##### See Also
+### See Also
 
 - [`save(arrays:metadata:url:stream:)`](./save%28arrays,metadata,url,stream%29.md)
 - [`loadArrays(data:stream:)`](./loadarrays%28data,stream%29.md)

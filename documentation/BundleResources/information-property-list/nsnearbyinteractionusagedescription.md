@@ -16,7 +16,7 @@ A request for user permission to begin an interaction session with nearby device
 - **Name**: `NSNearbyInteractionUsageDescription` (Privacy - Nearby Interaction Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 This property defines localizable text that explains your interaction session’s purpose to the user.
 

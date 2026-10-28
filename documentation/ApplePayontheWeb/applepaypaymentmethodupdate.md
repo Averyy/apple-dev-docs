@@ -29,7 +29,7 @@ dictionary ApplePayPaymentMethodUpdate {
 
 - [Apple Pay on the Web Version 3 Release Notes](./apple-pay-on-the-web-version-3-release-notes.md)
 
-#### Overview
+## Overview
 
 If a user changes their payment method on the payment sheet, you respond by updating the payment request details in [`ApplePayPaymentMethodUpdate`](./applepaypaymentmethodupdate.md).
 

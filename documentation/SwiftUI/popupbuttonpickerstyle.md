@@ -17,7 +17,7 @@ A picker style that presents the options as a menu when the user presses a butto
 struct PopUpButtonPickerStyle
 ```
 
-#### Overview
+## Overview
 
 Use this style when there are more than five options. Consider using [`RadioGroupPickerStyle`](./radiogrouppickerstyle.md) when there are fewer than five options.
 
@@ -25,7 +25,7 @@ The button itself indicates the selected option. You can include additional cont
 
 To apply this style to a picker, or to a view that contains pickers, use the [`pickerStyle(_:)`](./view/pickerstyle%28_%29.md) modifier.
 
-##### Creating the picker style
+### Creating the picker style
 
 - [`init()`](./popupbuttonpickerstyle/init%28%29.md)
 

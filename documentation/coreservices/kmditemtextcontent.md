@@ -19,7 +19,7 @@ let kMDItemTextContent: CFString!
 const CFStringRef kMDItemTextContent;
 ```
 
-#### Discussion
+## Discussion
 
 An application's Spotlight importer provides the content of this attribute. Applications can search for values in this attribute, but are not able to read the content of this attribute directly.
 

@@ -26,7 +26,7 @@ func draw(in view: MTKView)
 - (void) drawInMTKView:(MTKView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called on the delegate when it is asked to render into the view.
 

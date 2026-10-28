@@ -24,7 +24,7 @@ enum AVAudio3DMixingPointSourceInHeadMode
 enum AVAudio3DMixingPointSourceInHeadMode : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The in-head mode that determines what happens when a [`AVAudio3DMixingSourceMode.pointSource`](./avaudio3dmixingsourcemode/pointsource.md) moves inside the head of the listener. The in-head mode applies when using the [`AVAudio3DMixingRenderingAlgorithm.auto`](./avaudio3dmixingrenderingalgorithm/auto.md) rendering algorithm.
 

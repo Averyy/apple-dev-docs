@@ -20,11 +20,11 @@ optional func textView(_ view: NSTextView, didCheckTextIn range: NSRange, types 
 - (NSArray<NSTextCheckingResult *> *) textView:(NSTextView *) view didCheckTextInRange:(NSRange) range types:(NSTextCheckingTypes) checkingTypes options:(NSDictionary<NSString *,id> *) options results:(NSArray<NSTextCheckingResult *> *) results orthography:(NSOrthography *) orthography wordCount:(NSInteger) wordCount;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSTextCheckingResult`](../../Foundation/nstextcheckingresult.md) instances. You can return the results array as is, or an altered array of [`NSTextCheckingResult`](../../Foundation/nstextcheckingresult.md) objects.
 
-#### Discussion
+## Discussion
 
 Invoked by [`handleTextCheckingResults(_:forRange:types:options:orthography:wordCount:)`](../nstextview/handletextcheckingresults%28_,forrange,types,options,orthography,wordcount%29.md), this method allows observation of text checking, or modification of the results
 

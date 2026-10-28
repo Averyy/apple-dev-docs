@@ -20,11 +20,11 @@ func AudioObjectIsPropertySettable(_ inObjectID: AudioObjectID, _ inAddress: Uns
 extern OSStatus AudioObjectIsPropertySettable(AudioObjectID inObjectID, const AudioObjectPropertyAddress *inAddress, Boolean *outIsSettable);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure.
 
-#### Discussion
+## Discussion
 
 Queries an AudioObject about whether or not the given property can be set using AudioObjectSetPropertyData.
 

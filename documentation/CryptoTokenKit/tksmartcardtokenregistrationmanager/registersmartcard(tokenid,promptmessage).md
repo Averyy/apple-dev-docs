@@ -22,7 +22,7 @@ func registerSmartCard(tokenID: String, promptMessage: String) throws
 - (BOOL) registerSmartCardWithTokenID:(NSString *) tokenID promptMessage:(NSString *) promptMessage error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 In case the same tokenID is already registered, the registration data are overwritten. In case the smartcard with provided tokenID isn’t found in the system, failure is returned.
 

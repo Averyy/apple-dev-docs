@@ -15,7 +15,7 @@ The width-to-height ratio of the portal frame.
 var aspectRatio: Double? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Common aspect ratios include:
 

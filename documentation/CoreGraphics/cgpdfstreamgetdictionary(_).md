@@ -25,7 +25,7 @@ func CGPDFStreamGetDictionary(_ stream: CGPDFStreamRef) -> CGPDFDictionaryRef?
 extern CGPDFDictionaryRefCGPDFStreamGetDictionary(CGPDFStreamRef stream);
 ```
 
-#### Return Value
+## Return Value
 
 The PDF dictionary for the specified stream.
 

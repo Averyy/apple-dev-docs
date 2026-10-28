@@ -25,11 +25,11 @@ func nextObject() -> Any?
 - (ObjectType) nextObject;
 ```
 
-#### Return Value
+## Return Value
 
 The next object from the collection being enumerated, or `nil` when all objects have been enumerated.
 
-#### Discussion
+## Discussion
 
 The following code illustrates how this method works using an array:
 

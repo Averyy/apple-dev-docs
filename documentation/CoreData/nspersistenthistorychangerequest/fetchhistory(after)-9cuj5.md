@@ -25,7 +25,7 @@ class func fetchHistory(after transaction: NSPersistentHistoryTransaction?) -> S
 + (instancetype) fetchHistoryAfterTransaction:(NSPersistentHistoryTransaction *) transaction;
 ```
 
-#### Return Value
+## Return Value
 
 A persistent history fetch request ([`NSPersistentHistoryChangeRequest`](../nspersistenthistorychangerequest.md)) with an initial transaction boundary.
 

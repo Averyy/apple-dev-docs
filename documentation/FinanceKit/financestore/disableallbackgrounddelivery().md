@@ -17,7 +17,7 @@ Disables background delivery for all data types.
 func disableAllBackgroundDelivery()
 ```
 
-#### Discussion
+## Discussion
 
 The app’s background delivery extension will no longer receive updates when data changes in the finance store.
 

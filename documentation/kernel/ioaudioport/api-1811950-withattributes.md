@@ -15,11 +15,11 @@ static IOAudioPort *withAttributes(
  OSDictionary *properties = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the newly allocated and initialized IOAudioPort instance.
 
-#### Overview
+## Overview
 
 This static method allocates a new IOAudioPort and calls initWithAttributes() on it with the parameters passed in to it.
 

@@ -25,7 +25,7 @@ let kCGImageDestinationImageMaxPixelSize: CFString
 extern CFStringRef const kCGImageDestinationImageMaxPixelSize;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key must be a [`CFNumber`](../CoreFoundation/cfnumber.md). If present, the destination rescales the image as needed to fit within the maximum width and height. If this key isn’t present, the destination retains the native image size.
 

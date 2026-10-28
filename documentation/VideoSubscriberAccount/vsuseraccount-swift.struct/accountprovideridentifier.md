@@ -19,7 +19,7 @@ A string that uniquely identifies a provider known to Apple that provides the us
 var accountProviderIdentifier: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 For use only with TV Provider Authentication integrated apps.
 

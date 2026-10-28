@@ -22,7 +22,7 @@ var isPreviewing: Bool { get }
 @property (nonatomic, readonly, getter=isPreviewing) BOOL previewing;
 ```
 
-#### Discussion
+## Discussion
 
 A preview layer begins displaying content when you call the capture session’s [`startRunning()`](../avcapturesession/startrunning%28%29.md) method. If you associate the layer with an instance of [`AVCaptureMultiCamSession`](../avcapturemulticamsession.md), the system guarantees that all video preview layers display content by the time the blocking call to [`startRunning()`](../avcapturesession/startrunning%28%29.md) or [`commitConfiguration()`](../avcapturesession/commitconfiguration%28%29.md) returns.
 

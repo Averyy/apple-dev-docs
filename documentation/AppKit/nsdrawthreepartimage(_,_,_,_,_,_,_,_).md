@@ -19,7 +19,7 @@ func NSDrawThreePartImage(_ frame: NSRect, _ startCap: NSImage?, _ centerFill: N
 extern void NSDrawThreePartImage(NSRect frame, NSImage *startCap, NSImage *centerFill, NSImage *endCap, BOOL vertical, NSCompositingOperation op, CGFloat alphaFraction, BOOL flipped);
 ```
 
-#### Discussion
+## Discussion
 
 This function is typically used to draw custom cells (such as the backgrounds for push button and slider controls) that are capable of being resized along a single axis only. Cells of this type are comprised of fixed-size end cap images and a center area that is filled by tiling the specified center image as many times as needed to fill the gap. These cells allow you to create sophisticated looking controls that can grow and shrink without distorting the control’s overall appearance.
 

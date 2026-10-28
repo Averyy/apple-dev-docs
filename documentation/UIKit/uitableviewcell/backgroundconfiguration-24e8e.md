@@ -20,7 +20,7 @@ The current background configuration of the cell.
 @preconcurrency var backgroundConfiguration: UIBackgroundConfiguration? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 [`UITableViewCell`](../uitableviewcell.md) automatically sets up a default background configuration to provide its default appearance.
 

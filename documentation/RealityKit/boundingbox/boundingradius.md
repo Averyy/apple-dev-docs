@@ -20,7 +20,7 @@ The radius of a bounding sphere that encompasses the bounding box.
 var boundingRadius: Float { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value is 0 if the box is empty.
 

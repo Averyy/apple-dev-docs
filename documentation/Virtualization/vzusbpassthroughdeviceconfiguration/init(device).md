@@ -17,11 +17,11 @@ init(device: AAUSBAccessory)
 - (instancetype) initWithDevice:(AAUSBAccessory *) device;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized VZUSBPassthroughDeviceConfiguration.
 
-#### Discussion
+## Discussion
 
 Initialize a passthrough USB device configuration.
 

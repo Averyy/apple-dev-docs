@@ -21,7 +21,7 @@ static let dualRoute: AVAudioSession.Mode
 extern AVAudioSessionMode const AVAudioSessionModeDualRoute;
 ```
 
-#### Discussion
+## Discussion
 
 This mode can only be used with the [`multiRoute`](../category-swift.struct/multiroute.md) category. It additionally requires you to set the [`allowBluetoothHFP`](../categoryoptions-swift.struct/allowbluetoothhfp.md) option.
 

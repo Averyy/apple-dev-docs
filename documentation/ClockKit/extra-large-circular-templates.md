@@ -5,7 +5,7 @@
 
 Display large, easy-to-read content on the X-Large watch face.
 
-#### Overview
+## Overview
 
 These templates are larger versions of the [Circular complication templates](./circular-complication-templates.md).
 

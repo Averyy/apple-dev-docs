@@ -23,7 +23,7 @@ func invalidateSupplementaryElements(ofKind elementKind: String, at indexPaths: 
 - (void) invalidateSupplementaryElementsOfKind:(NSString *) elementKind atIndexPaths:(NSArray<NSIndexPath *> *) indexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method to identify the specific supplementary views of your layout that require updates. The views you specify are added to the dictionary in the [`invalidatedSupplementaryIndexPaths`](./invalidatedsupplementaryindexpaths.md) property. All of the views you specify should be of the type that you specified in the `elementKind` parameter. If you call this method two or more times with the same value for the `elementKind` parameter, this method merges the new index paths with the ones previously specified.
 

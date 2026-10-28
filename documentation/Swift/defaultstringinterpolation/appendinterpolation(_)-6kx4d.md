@@ -21,7 +21,7 @@ Interpolates the given value’s textual representation into the string literal 
 mutating func appendInterpolation<T>(_ value: T) where T : CustomStringConvertible
 ```
 
-#### Discussion
+## Discussion
 
 You don’t need to call this method directly. It’s used by the compiler when interpreting string interpolations. Instead, use string interpolation to create a new string by including values, literals, variables, or expressions enclosed in parentheses, prefixed by a backslash (`\(`…`)`).
 

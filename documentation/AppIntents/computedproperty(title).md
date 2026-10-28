@@ -18,11 +18,11 @@ A macro that adds a computed app entity property with a get accessor and an opti
 ## Declaration
 
 ```swift
-@attached
-(peer, names: prefixed(`$`), prefixed(`_`)) @attached(accessor, names: named(get), named(set)) macro ComputedProperty(title: LocalizedStringResource)
+@attached(peer, names: prefixed(`$`), prefixed(`_`))
+@attached(accessor, names: named(get), named(set)) macro ComputedProperty(title: LocalizedStringResource)
 ```
 
-#### Example
+## Example
 
 ```swift
 struct Restaurant: AppEntity {

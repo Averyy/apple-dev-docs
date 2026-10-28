@@ -23,7 +23,7 @@ class AVMetadataFocusTrackedObject
 @interface AVMetadataFocusTrackedObject : AVMetadataObject
 ```
 
-#### Overview
+## Overview
 
 [`AVMetadataFocusTrackedObject`](./avmetadatafocustrackedobject.md) represents a single tracked object in a picture. It is an immutable object describing the focus-tracked object.
 

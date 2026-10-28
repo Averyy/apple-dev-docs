@@ -19,7 +19,7 @@ var leafKeyPath: String? { get set }
 @property (copy, nullable) NSString * leafKeyPath;
 ```
 
-#### Discussion
+## Discussion
 
 Specifying a key path for this property is optional. If the tree controller is able to determine that a node is a leaf node, it can disable inserting or adding children to those nodes.
 

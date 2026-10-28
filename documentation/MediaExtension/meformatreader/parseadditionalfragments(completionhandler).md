@@ -23,7 +23,7 @@ optional func parseAdditionalFragments() async throws -> MEFormatReaderParseAddi
 - (void) parseAdditionalFragmentsWithCompletionHandler:(void (^)(MEFormatReaderParseAdditionalFragmentsStatus fragmentStatus, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method additional fragments of the media asset if they exist. Media asset formats that don’t support incremental fragments don’t need implement this method. Create the [`MEFormatReader`](../meformatreader.md) object with the [`MEFormatReaderInstantiationOptions`](../meformatreaderinstantiationoptions.md) property [`allowIncrementalFragmentParsing`](../meformatreaderinstantiationoptions/allowincrementalfragmentparsing.md) set to [`true`](../../Swift/true.md). This method does nothing if the value for [`MEFileInfo.FragmentsStatus`](../mefileinfo/fragmentsstatus-swift.enum.md) is [`MEFileInfo.FragmentsStatus.containsFragments`](../mefileinfo/fragmentsstatus-swift.enum/containsfragments.md). Once this method returns an error, additional calls fail.
 

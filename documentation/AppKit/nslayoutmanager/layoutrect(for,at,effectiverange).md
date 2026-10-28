@@ -19,11 +19,11 @@ func layoutRect(for block: NSTextBlock, at glyphIndex: Int, effectiveRange effec
 - (NSRect) layoutRectForTextBlock:(NSTextBlock *) block atIndex:(NSUInteger) glyphIndex effectiveRange:(NSRangePointer) effectiveGlyphRange;
 ```
 
-#### Return Value
+## Return Value
 
 The layout rectangle of the text block, or `NSZeroRect` if no rectangle has been set for the specified block since the last invalidation.
 
-#### Discussion
+## Discussion
 
 This method causes glyph generation but not layout. Block layout rectangles and bounds rectangles are always in container coordinates.
 

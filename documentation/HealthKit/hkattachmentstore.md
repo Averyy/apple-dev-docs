@@ -24,7 +24,7 @@ class HKAttachmentStore
 @interface HKAttachmentStore : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use an [`HKAttachmentStore`](./hkattachmentstore.md) object to manage attachments for samples that your app has saved to the HealthKit store.
 

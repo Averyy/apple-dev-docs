@@ -26,7 +26,7 @@ class DDDevicePickerViewController
 
 - [Connecting a tvOS app to other devices over the local network](./connecting-a-tvos-app-to-other-devices-over-the-local-network.md)
 
-#### Overview
+## Overview
 
 Always display the device picker as a full-screen, modal view. If the user selects a device, the system sets the `endpoint` property and calls the `endpointPickedHandler`.
 

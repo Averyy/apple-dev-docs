@@ -19,7 +19,7 @@ An entitlement that lets an app extension discover and set up accessories.
 
 **Default**: `true`
 
-#### Discussion
+## Discussion
 
 To use [AccessorySetupKit](../../AccessorySetupKit/AccessorySetupKit.md) in your app, your accessory setup extension needs this entitlement. Don’t add the entitlement to your app.
 

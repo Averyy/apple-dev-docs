@@ -24,11 +24,11 @@ class func success(with resolvedLength: Measurement<UnitLength>) -> Self
 + (instancetype) successWithResolvedLength:(NSMeasurement<NSUnitLength *> *) resolvedLength;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INLengthResolutionResult`](../inlengthresolutionresult.md) object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a result object when you can resolve a parameter successfully to a value in your own internal data structures.
 

@@ -31,7 +31,7 @@ var selectedOffer: INRestaurantOffer? { get set }
 @property (atomic, copy, nullable) INRestaurantOffer * selectedOffer;
 ```
 
-#### Discussion
+## Discussion
 
 If the user selects a special offer when making the reservation, use this property to store the selected offer. You can retrieve the selected offer from the [`selectedOffer`](../inbookrestaurantreservationintent/selectedoffer.md) property of the [`INBookRestaurantReservationIntent`](../inbookrestaurantreservationintent.md) object when providing your response to that intent.
 

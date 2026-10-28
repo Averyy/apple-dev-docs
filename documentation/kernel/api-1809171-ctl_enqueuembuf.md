@@ -13,11 +13,11 @@
 errno_t ctl_enqueuembuf(kern_ctl_ref kctlref, u_int32_t unit, mbuf_t m, u_int32_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 0 - Data was enqueued to be read by the client. EINVAL - Invalid parameters. ENOBUFS - The queue is full.
 
-#### Discussion
+## Discussion
 
 Send data stored in an mbuf chain from the kernel control to the client. The caller is responsible for freeing the mbuf chain if ctl_enqueuembuf returns an error.
 

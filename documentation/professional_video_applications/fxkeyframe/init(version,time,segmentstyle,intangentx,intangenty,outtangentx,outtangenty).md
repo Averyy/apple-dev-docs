@@ -15,7 +15,7 @@ Contains information about a single keyframe.
 init(version: Int, time: CMTime, segmentStyle: FxKeyframeSegmentStyle, inTangentX: Double, inTangentY: Double, outTangentX: Double, outTangentY: Double)
 ```
 
-#### Discussion
+## Discussion
 
 Note that this is not an FxKeyframeInfo type and should only be used for FxPlug 4 style plug-ins.
 

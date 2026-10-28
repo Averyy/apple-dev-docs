@@ -16,7 +16,7 @@ The connection to a peripheral has been lost.
 case noConnection
 ```
 
-#### Discussion
+## Discussion
 
 The connection view title corresponding to this state should be in the following format:
 

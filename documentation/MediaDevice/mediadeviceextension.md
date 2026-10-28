@@ -22,7 +22,7 @@ protocol MediaDeviceExtension : AppExtension
 
 - [Creating a media device extension](./creating-a-media-device-extension.md)
 
-#### Overview
+## Overview
 
 The extension requires the `com.apple.developer.media-device-extension` entitlement. As part of this entitlement an ID for your protocol needs to be specified. This same identifier must also be declared in the extension’s Info.plist as the `UTTypeIdentifier`. If the identifier in the entitlement and Info.plist do not match, the extension will not be run. This ID value can be used by other apps that use the `AVSystemRouting` framework and which intend to make use of an extension of this type.
 

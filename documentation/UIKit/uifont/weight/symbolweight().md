@@ -24,11 +24,11 @@ func symbolWeight() -> UIImage.SymbolWeight
 extern UIImageSymbolWeight UIImageSymbolWeightForFontWeight(UIFontWeight fontWeight);
 ```
 
-#### Return Value
+## Return Value
 
 The [`UIImage.SymbolWeight`](../../uiimage/symbolweight.md) that most closely coordinates with the provided font weight.
 
-#### Discussion
+## Discussion
 
 When placing symbols adjacent to text, use this method to find the appropriate symbol weight to match the weight of the text. Similarly, if you want to display a symbol with a particular weight, you can use [`fontWeight()`](../../uiimage/symbolweight/fontweight%28%29.md) to look up the matching font weight for adjacent text.
 

@@ -15,11 +15,11 @@ A single row in an apps campaign report, containing campaign metadata, total met
 object AppsCampaignReportRow
 ```
 
-#### Discussion
+## Discussion
 
 The `metadata` field captures campaign identifiers and configuration at report time. The `totalMetrics` field contains the aggregated performance figures across the full reporting period.
 
-##### Example
+### Example
 
 ```json
 {

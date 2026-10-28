@@ -5,7 +5,7 @@
 
 Manage the color profiles assigned to displays, printers, scanners, and cameras.
 
-#### Overview
+## Overview
 
 ColorSync tracks the color devices attached to the system and the profiles assigned to each. Register a device, enumerate its profiles, and read or set the factory and custom profiles that describe how it reproduces color. Displays are a color device too: you can find a display’s profile from its display ID and read its gamma and transfer tables. Device profiles are themselves [`ColorSyncProfile`](./colorsyncprofile.md) objects. See [Color profiles](./color-profiles.md).
 

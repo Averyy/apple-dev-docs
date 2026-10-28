@@ -14,7 +14,7 @@ Send and receive different kinds of data securely by validating inputs and async
 - macOS 14.0+
 - Xcode 15.0+
 
-#### Overview
+## Overview
 
 This sample code project shows how a DriverKit extension (dext) receives data from an app client running on macOS or iPadOS. The sample handles both scalar data and structures, and has two code paths for each type: an insecure version, and a “checked” version that validates traits like data size and input count.
 
@@ -27,7 +27,7 @@ The sample project contains two targets:
 - `DriverKitSampleApp` - A  SwiftUI app for macOS and iPadOS. Use this app to install or update the driver, and then to call the driver directly.
 - `NullDriver` - The dext itself, which responds to client calls and optionally checks that each call sends the expected data.
 
-##### Configure the Sample Code Project
+### Configure the Sample Code Project
 
 To run the sample code project, you first need to build and run `DriverKitSampleApp`, which installs the driver.
 
@@ -48,7 +48,7 @@ If you want to build with manual signing instead, do the following:
 6. Download each profile and add it to Xcode.
 7. In the “Signing & Capabilities” tab, set each target to manual code signing and select the newly-created profile.
 
-##### Install and run the driver extension on macOS
+### Install and run the driver extension on macOS
 
 To run the sample app in macOS, use the scheme selector to select the `DriverKitSampleApp` scheme and the My Mac destination. Build the target, then copy the app to the Applications folder and launch the app. For simplicity, you can run the app directly from Xcode instead, without moving the app bundle to the Applications folder each time. To do this, use the `systemextensionsctl` command to enable system extensions developer mode, as explained in [Debugging and testing system extensions](./debugging-and-testing-system-extensions.md).
 
@@ -66,13 +66,13 @@ OSSystemExtensionManager.shared.submitRequest(request)
 
 > **Note**: This call may prompt a “System Extension Blocked” dialog, which explains that `DriverKitSampleApp` tried to install a new system extension. To complete the installation, open System Preferences and go to the Security & Privacy pane. Unlock the pane if necessary, and click “Allow” to complete the installation. To confirm installation of the `NullDriver` extension, run `systemextensionsctl list` in Terminal.
 
-##### Run the sample in iPadOS
+### Run the sample in iPadOS
 
 To run the sample app in iPadOS, connect an iPad with an M-series chip to your Mac. Use the scheme selector to select the `DriverKitSampleApp` scheme and the name of your iPad as the destination. Run the app directly from Xcode to launch it on your iPad.
 
 In iPadOS, the `DriverKitSampleApp` app doesn’t show the Driver Manager section because the app isn’t responsible for installing the driver like it is in macOS. Instead, open the Settings app, navigate to Privacy & Security > Drivers, and enable the driver there. You can also navigate to this settings panel by tapping “Open Settings to Enable Driver” in DriverKitSampleApp.
 
-##### Call the driver from the client
+### Call the driver from the client
 
 After installing the driver and granting it permission to run in the Settings app, you can use DriverKitSampleApp to communicate with the driver. Click the “Communicate with Dext” button to connect to the driver.
 
@@ -166,7 +166,7 @@ if (ret != kIOReturnSuccess)
 
 The other options are all similar, differing only in which `IOConnect...` function they call and the type of data they send.
 
-##### Validate arguments to driver function calls
+### Validate arguments to driver function calls
 
 The `NullDriver` receives calls from the client in its overridden [`ExternalMethod`](./iouserclient/externalmethod.md) method. The Unchecked options in the SwiftUI view perform calls that the driver passes unchecked to its [`ExternalMethod`](./iouserclient/externalmethod.md) implementation. In practice, it’s important that a driver validates its inputs before passing them along, to make sure the data is the expected size and contains reasonable values. `NullDriver` has functions that check scalar and structure calls, which are exercised by the Checked buttons in the SwiftUI app.
 
@@ -186,7 +186,7 @@ The “checked” methods in `NullDriver` — `CheckedScalar` and `CheckedStruct
 
 After fetching the appropriate  [`IOUserClientMethodDispatch`](./iouserclientmethoddispatch.md) instance from the array, the driver passes it in its call to the superclass’s [`ExternalMethod`](./iouserclient/externalmethod.md) along with the method selector and its arguments. If the number of arguments or return values don’t match what’s in the dispatch instance, the call fails and returns [`kIOReturnBadArgument`](./kioreturnbadargument.md). Checking client calls like this prevents a malicious call to the driver from using attack vectors like buffer overruns.
 
-##### Prepare for driver-to-client callbacks
+### Prepare for driver-to-client callbacks
 
 `DriverKitSampleApp` also shows how to communicate from the driver to the client by using a callback function. The Assign Callback button sets up a callback to make an asynchronous call to the client, and then invokes the callback after a short delay to simulate the driver acting on its own. After registering a callback with this button, calls to Async Action re-invoke the callback.
 
@@ -220,7 +220,7 @@ if (ret != kIOReturnSuccess)
 }
 ```
 
-##### Retain and use the callback to notify the client
+### Retain and use the callback to notify the client
 
 When the driver is running and it receives a request from the client to register a callback, it calls `NullDriver::RegisterAsyncCallback`. This method stores the completion, if it exists, in the `ivars` structure, like this:
 

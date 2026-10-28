@@ -25,7 +25,7 @@ class MLSequence
 @interface MLSequence : NSObject
 ```
 
-#### Overview
+## Overview
 
 A sequence stores a series of integers or strings of any length as the underlying type of an `MLFeatureValue`. Some classifier models — typically natural language models, such as an [`NLTagger`](../NaturalLanguage/nltagger.md) — produce an [`MLSequence`](./mlsequence.md) feature value from their output features.
 

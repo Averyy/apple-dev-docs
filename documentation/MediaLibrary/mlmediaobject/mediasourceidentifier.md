@@ -22,7 +22,7 @@ var mediaSourceIdentifier: String { get }
 @property (copy, readonly) NSString * mediaSourceIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible media source identifiers, see [`MLMediaLibrary`](../mlmedialibrary.md).
 

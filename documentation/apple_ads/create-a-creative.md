@@ -15,11 +15,11 @@ Creates a creative object within an organization.
 
 - [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint to create a [`Creative`](./creative.md) object within your organization using your `productPageId`.
 
-##### Payload example: Create a creative
+### Payload example: Create a creative
 
 **Request**:
 

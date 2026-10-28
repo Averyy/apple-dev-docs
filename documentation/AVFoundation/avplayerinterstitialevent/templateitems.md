@@ -25,7 +25,7 @@ var templateItems: [AVPlayerItem] { get set }
 @property (nonatomic, readonly) NSArray<AVPlayerItem *> * templateItems;
 ```
 
-#### Discussion
+## Discussion
 
 If you require the system to create new player items using the same asset instance as the template item, create the asset with an [`AVURLAssetPrimarySessionIdentifierKey`](../avurlassetprimarysessionidentifierkey.md) value equal to [`httpSessionIdentifier`](../avurlasset/httpsessionidentifier.md) of the primary item’s [`asset`](../avplayeritem/asset.md). Creating assets this way simplifies cases where you require loading their data with a custom [`AVAssetResourceLoader`](../avassetresourceloader.md) delegate.
 

@@ -24,7 +24,7 @@ protocol NSTextViewportRenderingSurfaceKey : NSObjectProtocol
 @protocol NSTextViewportRenderingSurfaceKey <NSObject>
 ```
 
-#### Overview
+## Overview
 
 When TextKit lays out text in a viewport, it can ask your delegate to store and retrieve rendering surfaces across layout passes. Objects that conform to `NSTextViewportRenderingSurfaceKey` act as the identifier for each surface — TextKit passes them to your delegate when it needs to store or look one up.
 

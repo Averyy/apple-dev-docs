@@ -15,11 +15,11 @@ Converts a numeric value to a `Byte`.
 static Byte toByte();
 ```
 
-#### Return Value
+## Return Value
 
 If the value passes validation, this function returns a `Byte`; otherwise it throws `ValueNotByteError`. A numeric value passes validation if it’s an integer in the range 0 to 255, inclusive.
 
-#### Discussion
+## Discussion
 
 In TypeScript, `Byte` is a branded number type. In JavaScript, it’s a number.
 

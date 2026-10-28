@@ -15,7 +15,7 @@ A brand eligible for promotion through Apple Maps ads.
 object Brand
 ```
 
-#### Discussion
+## Discussion
 
 The `Brand` object represents a business entity registered in Apple Ads. Use the `id` field as the `promotedObjectId` when creating a `BUSINESS_BRAND` campaign. You can actively promote only brands with `eligibility.status: ELIGIBLE`.
 
@@ -23,7 +23,7 @@ To understand the business type, use the `categories` field. The `countryOrRegio
 
 Query endpoint requests support fields marked **Filterable** in the properties as filter criteria. See [Calling the Apple Ads Platform API](./calling-apple-ads-platform-api.md) for details on constructing queries.
 
-##### Example
+### Example
 
 ```json
 {

@@ -25,7 +25,7 @@ func CFStringCreateArrayWithFindResults(_ alloc: CFAllocator!, _ theString: CFSt
 extern CFArrayRefCFStringCreateArrayWithFindResults(CFAllocatorRef alloc, CFStringRef theString, CFStringRef stringToFind, CFRange rangeToSearch, CFStringCompareFlags compareOptions);
 ```
 
-#### Return Value
+## Return Value
 
 An array that contains pointers to [`CFRange`](./cfrange.md) structures identifying the character locations of `stringToFind` in `theString`. Returns `NULL`, if no matching substring is found in the source object, or if there was a problem creating the array. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

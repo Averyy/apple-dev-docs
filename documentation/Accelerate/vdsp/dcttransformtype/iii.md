@@ -21,7 +21,7 @@ A constant that represents a type-III discrete cosine transform.
 case III
 ```
 
-#### Discussion
+## Discussion
 
 The type-III DCT uses the following operation for a discrete cosine transform:
 

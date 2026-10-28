@@ -22,7 +22,7 @@ Encodes a null value.
 mutating func encodeNil() throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `EncodingError.invalidValue` if a null value is invalid in the current context for this format.
 

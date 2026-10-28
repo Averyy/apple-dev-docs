@@ -23,7 +23,7 @@ func extractChannel(at channelIndex: Int, destination: vImage.PixelBuffer<vImage
 
 Available when `Format` is `vImage.Interleaved16Ux4`.
 
-#### Discussion
+## Discussion
 
 For example, the following code extracts channel `2` from a four-channel pixel buffer.
 

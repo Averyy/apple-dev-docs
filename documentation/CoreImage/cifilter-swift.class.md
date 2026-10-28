@@ -30,7 +30,7 @@ class CIFilter
 - [Selectively Focusing on an Image](./selectively-focusing-on-an-image.md)
 - [Customizing Image Transitions](./customizing-image-transitions.md)
 
-#### Overview
+## Overview
 
 The `CIFilter` class produces a [`CIImage`](./ciimage.md) object as output. Typically, a filter takes one or more images as input. Some filters, however, generate an image based on other types of input parameters. The par`CIFilter` swift.class` object are set and retrieved through the use of key-value pairs.
 
@@ -40,7 +40,7 @@ You use the `CIFilter` object in conjunction with other Core Image classes, such
 
 To get a quick overview of how to set up and use Core Image filters, see [Core Image Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185).
 
-##### Create type-safe filters
+### Create type-safe filters
 
 Core Image provides methods that create type-safe `CIFilter` instances. Use these filters to avoid run-time errors that can occur when relying on Core Image’s string-based API.
 
@@ -67,7 +67,7 @@ The false color filter maps luminance to a color ramp of two colors:
 
 ![Two photographs showing a flower. The image on the left shows the original version of the flower. The image on the right shows the false color version of the flower.](https://developer.apple.com/tutorials/images/com.apple.coreimage/media-4336877@2x.png)
 
-##### Subclassing notes
+### Subclassing notes
 
 You can subclass `CIFilter` in order to create custom filter effects:
 

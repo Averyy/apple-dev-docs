@@ -21,7 +21,7 @@ The most recent transaction associated with the generic product ID, if it exists
 var latestTransaction: VerificationResult<Transaction>? { get async }
 ```
 
-#### Discussion
+## Discussion
 
 This value is `nil` if the customer hasn’t made any purchases associated with the generic product ID.
 

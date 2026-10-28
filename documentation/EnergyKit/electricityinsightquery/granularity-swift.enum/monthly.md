@@ -17,7 +17,7 @@ A monthly aggregated insight record for at least 1 calendar year.
 case monthly
 ```
 
-#### Discussion
+## Discussion
 
 The data period returns insight records aggregated by month for at least one calendar year, and includes the requested date range, potentially starting before the query date. The data range begins and ends in a month or the last available data for the query.
 

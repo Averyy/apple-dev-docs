@@ -21,7 +21,7 @@ Initializes the receiver, a newly allocated `NSString` object, by reading data f
 convenience init?(contentsOfURL url: URL)
 ```
 
-#### Discussion
+## Discussion
 
 Initializes the receiver, a newly allocated `NSString` object, by reading data from the location named by `aURL`. If the contents begin with a byte-order mark (`U+FEFF` or `U+FFFE`), interprets the contents as UTF-16 code units; otherwise interprets the contents as data in the default C string encoding. Returns an initialized object, which might be different from the original receiver, or `nil` if the location can’t be opened.
 

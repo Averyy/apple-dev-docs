@@ -22,7 +22,7 @@ struct PaymentCardReadResult
 - [Adding support for Tap to Pay on iPhone to your app](./adding-support-for-tap-to-pay-on-iphone-to-your-app.md)
 - [Accepting loyalty passes from Wallet](./accepting-loyalty-passes-from-wallet.md)
 
-#### Overview
+## Overview
 
 The system returns a `PaymentCardReadResult` in response to your requests to read a person’s payment card. Use this information to facilitate payments with your payment service provider.
 

@@ -10,7 +10,7 @@ An atom that contains subtitle sample data.
 
 - [Preparing sound and subtitle alternate groups for use with Apple devices](./preparing_sound_and_subtitle_alternate_groups_for_use_with_apple_devices.md)
 
-#### Overview
+## Overview
 
 Subtitle sample data consists of a 16-bit word that specifies the length (number of bytes) of the subtitle text, followed by the subtitle text and then by optional sample extensions. The subtitle text is Unicode text, encoded either as UTF-8 text or UTF-16 text beginning with a UTF-16 BYTE ORDER MARK (`'\uFEFF'`) in big or little endian order. There is no null termination for the text.
 

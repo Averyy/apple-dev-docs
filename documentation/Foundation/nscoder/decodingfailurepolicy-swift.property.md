@@ -25,7 +25,7 @@ var decodingFailurePolicy: NSCoder.DecodingFailurePolicy { get }
 @property (readonly) NSDecodingFailurePolicy decodingFailurePolicy;
 ```
 
-#### Discussion
+## Discussion
 
 A decode call can fail for the following reasons:
 

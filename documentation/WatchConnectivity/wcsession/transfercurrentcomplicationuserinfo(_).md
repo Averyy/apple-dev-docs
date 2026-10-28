@@ -22,11 +22,11 @@ func transferCurrentComplicationUserInfo(_ userInfo: [String : Any] = [:]) -> WC
 - (WCSessionUserInfoTransfer *) transferCurrentComplicationUserInfo:(NSDictionary<NSString *,id> *) userInfo;
 ```
 
-#### Return Value
+## Return Value
 
 A transfer object that you can use to monitor and cancel the operation.
 
-#### Discussion
+## Discussion
 
 Call this method when you have new data to send to your complication. Your WatchKit extension can use the data to replace or extend its current timeline entries.
 

@@ -30,7 +30,7 @@ func makeBuffer(length: Int, options: MTLResourceOptions = []) -> (any MTLBuffer
 - [Copying data to a private resource](../copying-data-to-a-private-resource.md)
 - [Setting resource storage modes](../setting-resource-storage-modes.md)
 
-#### Return Value
+## Return Value
 
 A new [`MTLBuffer`](../mtlbuffer.md) instance if the method completed successfully; otherwise `nil`.
 

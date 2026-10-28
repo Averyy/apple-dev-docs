@@ -18,7 +18,7 @@ The behavior or functionality of this command.
 mutating func run() throws
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method in your `ParsableCommand`-conforming type with the functionality that this command represents.
 
@@ -28,7 +28,6 @@ This method has a default implementation that prints the help screen for this co
 
 ### ParsableCommand Implementations
 - [func run() throws](./run%28%29-20aoy.md)
-  The behavior or functionality of this command.
 
 ## See Also
 

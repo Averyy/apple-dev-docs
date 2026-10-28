@@ -21,7 +21,7 @@ Returns the previous consecutive location before `i`.
 func index(before i: String.UnicodeScalarView.Index) -> String.UnicodeScalarView.Index
 ```
 
-#### Discussion
+## Discussion
 
 > **Precondition**: The previous location exists.
 

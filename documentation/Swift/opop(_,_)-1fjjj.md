@@ -21,7 +21,7 @@ Performs a nil-coalescing operation, returning the wrapped value of an `Optional
 func ?? <T>(optional: consuming T?, defaultValue: @autoclosure () throws -> T?) rethrows -> T? where T : ~Copyable
 ```
 
-#### Discussion
+## Discussion
 
 A nil-coalescing operation unwraps the left-hand side if it has a value, or returns the right-hand side as a default. The result of this operation will be the same type as its arguments.
 

@@ -24,7 +24,7 @@ var source: HKSource { get }
 @property (readonly) HKSource * source;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an [`HKSource`](../hksource.md) object representing the app that saved the data into the HealthKit store. The source can also represent a hardware device that writes data directly to HealthKit (for example, an iPhone, Apple Watch, or Bluetooth LE heart rate monitor). Before iOS 9.0, the companion app for other peripherals also saved device information in the object’s [`source`](./source.md) property.
 

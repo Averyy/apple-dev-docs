@@ -19,7 +19,7 @@ case byTruncatingMiddle
 NSLineBreakByTruncatingMiddle
 ```
 
-#### Discussion
+## Discussion
 
 Use this mode for single-line layout; using it with multiline text truncates the text into a single line.
 

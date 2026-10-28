@@ -15,7 +15,7 @@ The object detector’s underlying Core ML model instance.
 var model: MLModel { get }
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This computed property exports and compiles a Core ML model. Prefer storing the result to using this property repeatedly.
 

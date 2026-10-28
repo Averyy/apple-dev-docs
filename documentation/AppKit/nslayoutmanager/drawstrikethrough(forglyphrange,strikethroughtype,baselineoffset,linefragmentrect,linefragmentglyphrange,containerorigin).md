@@ -19,7 +19,7 @@ func drawStrikethrough(forGlyphRange glyphRange: NSRange, strikethroughType stri
 - (void) drawStrikethroughForGlyphRange:(NSRange) glyphRange strikethroughType:(NSUnderlineStyle) strikethroughVal baselineOffset:(CGFloat) baselineOffset lineFragmentRect:(NSRect) lineRect lineFragmentGlyphRange:(NSRange) lineGlyphRange containerOrigin:(NSPoint) containerOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked automatically by [`strikethroughGlyphRange(_:strikethroughType:lineFragmentRect:lineFragmentGlyphRange:containerOrigin:)`](./strikethroughglyphrange%28_,strikethroughtype,linefragmentrect,linefragmentglyphrange,containerorigin%29.md); you should rarely need to invoke it directly. This method’s `strikethroughVal` parameter does not take account of any setting for[`NSUnderlineByWordMask`](../nsunderlinebywordmask.md) because that’s taken care of by [`underlineGlyphRange(_:underlineType:lineFragmentRect:lineFragmentGlyphRange:containerOrigin:)`](./underlineglyphrange%28_,underlinetype,linefragmentrect,linefragmentglyphrange,containerorigin%29.md).
 

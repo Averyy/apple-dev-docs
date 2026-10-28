@@ -21,7 +21,7 @@ Creates an annotated batch.
 init(features: MLShapedArray<Scalar>, annotations: MLShapedArray<Scalar>)
 ```
 
-#### Discussion
+## Discussion
 
 The features and annotations must have the same rank, and the first dimensions must be equal.
 

@@ -23,7 +23,7 @@ var deferredStartDelegateCallbackQueue: dispatch_queue_t? { get }
 @property (nonatomic, readonly, nullable) dispatch_queue_t deferredStartDelegateCallbackQueue;
 ```
 
-#### Discussion
+## Discussion
 
 Call the [`setDeferredStartDelegate(_:deferredStartDelegateCallbackQueue:)`](./setdeferredstartdelegate%28_,deferredstartdelegatecallbackqueue%29.md) method to specify the dispatch queue on which to call the deferred start delegate methods.
 

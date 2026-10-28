@@ -24,11 +24,11 @@ class func millimeterOfMercury() -> Self
 + (instancetype) millimeterOfMercuryUnit;
 ```
 
-#### Return Value
+## Return Value
 
 A HealthKit unit for measuring pressure in millimeters of mercury.
 
-#### Discussion
+## Discussion
 
 One millimeter of mercury is the pressure needed to raise a column of mercury by 1 millimeter. Even through it is not an SI unit, the millimeter of mercury unit is used in many scientific fields. In HealthKit, it is commonly used to measure blood pressure.
 

@@ -17,11 +17,11 @@ framework: "mlx-swift/MLX"
 func convTransposed1d(_ array: MLXArray, _ weight: MLXArray, stride: Int = 1, padding: Int = 0, dilation: Int = 1, outputPadding: Int = 0, groups: Int = 1, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Only the default `groups=1` is currently supported.
 
-##### See Also
+### See Also
 
 - [Convolution](./convolution.md)
 - [`conv1d(_:_:stride:padding:dilation:groups:stream:)`](./conv1d%28_,_,stride,padding,dilation,groups,stream%29.md)

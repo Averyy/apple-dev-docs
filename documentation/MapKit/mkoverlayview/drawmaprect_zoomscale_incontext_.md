@@ -19,7 +19,7 @@ Draws the contents of the overlay view.
 - (void) drawMapRect:(MKMapRect) mapRect zoomScale:(MKZoomScale) zoomScale inContext:(CGContextRef) context;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation of this method does nothing. Subclasses are expected to override this method (instead of the [`draw(_:)`](../../UIKit/uiview/draw%28_%29.md) method) and use it to draw the contents of the view.
 

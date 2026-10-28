@@ -13,7 +13,7 @@
 kSCSITaskStatus_CONDITION_MET = 0x04
 ```
 
-#### Discussion
+## Discussion
 
 The task completed with a status of CONDITION_MET.
 

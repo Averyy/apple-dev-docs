@@ -19,7 +19,7 @@ func convertFromBacking(_ point: NSPoint) -> NSPoint
 - (NSPoint) convertPointFromBacking:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 A point in the view’s interior coordinate system.
 

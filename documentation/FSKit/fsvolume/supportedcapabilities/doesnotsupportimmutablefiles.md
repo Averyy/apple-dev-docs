@@ -19,7 +19,7 @@ var doesNotSupportImmutableFiles: Bool { get set }
 @property (nonatomic) BOOL doesNotSupportImmutableFiles;
 ```
 
-#### Discussion
+## Discussion
 
 A `true` value means this volume doesn’t support setting the `UF_IMMUTABLE` flag.
 

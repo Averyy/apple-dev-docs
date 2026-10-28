@@ -21,7 +21,7 @@ Exchanges the values at the specified indices of the array.
 mutating func swapAt(_ i: InlineArray<count, Element>.Index, _ j: InlineArray<count, Element>.Index)
 ```
 
-#### Discussion
+## Discussion
 
 Both parameters must be valid indices of the array and not equal to `endIndex`. Passing the same index as both `i` and `j` has no effect.
 

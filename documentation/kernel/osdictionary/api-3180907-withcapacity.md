@@ -24,7 +24,7 @@ static OSDictionaryPtr withCapacity(uint32_t capacity);
 static OSPtr<OSDictionary> withCapacity(unsigned int capacity);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSDictionary with reference count 1 to be released by the caller.
 

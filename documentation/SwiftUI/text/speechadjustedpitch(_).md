@@ -21,7 +21,7 @@ Raises or lowers the pitch of spoken text.
 func speechAdjustedPitch(_ value: Double) -> Text
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier when you want to change the pitch of spoken text. The value indicates how much higher or lower to change the pitch.
 

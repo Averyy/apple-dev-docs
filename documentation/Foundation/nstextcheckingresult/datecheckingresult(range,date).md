@@ -25,7 +25,7 @@ class func dateCheckingResult(range: NSRange, date: Date) -> NSTextCheckingResul
 + (NSTextCheckingResult *) dateCheckingResultWithRange:(NSRange) range date:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an `NSTextCheckingResult` with the specified [`range`](./range.md) and a [`resultType`](./resulttype.md) of [`date`](./checkingtype/date.md).
 

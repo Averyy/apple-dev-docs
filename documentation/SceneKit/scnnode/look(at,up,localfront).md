@@ -25,7 +25,7 @@ func look(at worldTarget: SCNVector3, up worldUp: SCNVector3, localFront: SCNVec
 - (void) lookAt:(SCNVector3) worldTarget up:(SCNVector3) worldUp localFront:(SCNVector3) localFront;
 ```
 
-#### Discussion
+## Discussion
 
 The effects of this method are animatable; that is, calling this method during an implicit-animation transaction animates the rotation effect. (See [Animating SceneKit Content](../animating-scenekit-content.md).)
 

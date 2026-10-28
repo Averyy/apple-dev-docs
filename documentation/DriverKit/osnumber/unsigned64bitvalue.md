@@ -18,7 +18,7 @@ Returns the value of the OSNumber as a uint64_t value.
 uint64_t unsigned64BitValue() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the value of the OSNumber as a uint64_t value.
 

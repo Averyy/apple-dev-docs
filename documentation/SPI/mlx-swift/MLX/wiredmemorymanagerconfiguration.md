@@ -21,7 +21,7 @@ struct WiredMemoryManagerConfiguration
 
 - [Wired Memory Management](./wired-memory.md)
 
-#### Overview
+## Overview
 
 These settings implement hysteresis to prevent small or frequent shrinks while active work is running. Growing the limit is always allowed; shrinking is gated by a minimum drop and a minimum time between changes.
 

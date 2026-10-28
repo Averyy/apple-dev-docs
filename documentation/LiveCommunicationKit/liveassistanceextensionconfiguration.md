@@ -20,7 +20,7 @@ An interface type required to conform to the ExtensionFoundation framework proto
 @preconcurrency protocol LiveAssistanceExtensionConfiguration : AppExtensionConfiguration
 ```
 
-#### Overview
+## Overview
 
 Your app doesn’t interact directly with this type.
 

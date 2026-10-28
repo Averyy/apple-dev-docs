@@ -19,7 +19,7 @@ protocol PHProjectTypeDescriptionDataSource : NSObjectProtocol
 @protocol PHProjectTypeDescriptionDataSource <NSObject>
 ```
 
-#### Overview
+## Overview
 
 An object adheres to this protocol to provide a type description for your app’s Photos project extension. You must implement this protocol to provide subtypes, a description, and footer text. You can optionally respond to the system discarding the data source by implementing [`extensionWillDiscardDataSource()`](./phprojecttypedescriptiondatasource/extensionwilldiscarddatasource%28%29.md).
 

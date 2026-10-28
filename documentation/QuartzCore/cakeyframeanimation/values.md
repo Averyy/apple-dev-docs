@@ -24,7 +24,7 @@ var values: [Any]? { get set }
 @property (copy, nullable) NSArray * values;
 ```
 
-#### Discussion
+## Discussion
 
 The keyframe values represent the values through which the animation must proceed. The time at which a given keyframe value is applied to the layer depends on the animation timing, which is controlled by the [`calculationMode`](./calculationmode.md), [`keyTimes`](./keytimes.md), and [`timingFunctions`](./timingfunctions.md) properties. Values between keyframes are created using interpolation, unless the calculation mode is set to [`discrete`](../caanimationcalculationmode/discrete.md).
 

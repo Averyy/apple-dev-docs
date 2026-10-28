@@ -20,11 +20,11 @@ optional func gestureRecognizer(_ gestureRecognizer: NSGestureRecognizer, should
 - (BOOL) gestureRecognizer:(NSGestureRecognizer *) gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(NSGestureRecognizer *) otherGestureRecognizer;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `gestureRecognizer` must fail before `otherGestureRecognizer` is allowed to recognize its gesture. If you do not implement this method, the default return value is [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method is called once per attempt to recognize, so you can change the failure requirements dynamically. The two gesture recognizers do not have to belong to the same view hierarchy.
 

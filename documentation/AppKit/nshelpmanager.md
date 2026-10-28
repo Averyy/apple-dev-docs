@@ -20,7 +20,7 @@ class NSHelpManager
 @interface NSHelpManager : NSObject
 ```
 
-#### Overview
+## Overview
 
 The [`NSHelpManager`](./nshelpmanager.md) class provides an approach to displaying online help. An app contains one [`NSHelpManager`](./nshelpmanager.md) object.
 

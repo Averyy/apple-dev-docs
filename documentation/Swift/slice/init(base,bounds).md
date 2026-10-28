@@ -21,7 +21,7 @@ Creates a view into the given collection that allows access to elements within t
 init(base: Base, bounds: Range<Base.Index>)
 ```
 
-#### Discussion
+## Discussion
 
 It is unusual to need to call this method directly. Instead, create a slice of a collection by using the collection’s range-based subscript or by using methods that return a subsequence.
 

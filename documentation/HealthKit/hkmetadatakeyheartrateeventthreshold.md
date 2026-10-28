@@ -24,7 +24,7 @@ let HKMetadataKeyHeartRateEventThreshold: String
 extern NSString * const HKMetadataKeyHeartRateEventThreshold;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key contains an [`HKQuantity`](./hkquantity.md) object with count/time units, described in [`HKUnit`](./hkunit.md). This metadata key is used by [`highHeartRateEvent`](./hkcategorytypeidentifier/highheartrateevent.md) and [`lowHeartRateEvent`](./hkcategorytypeidentifier/lowheartrateevent.md) category samples.
 

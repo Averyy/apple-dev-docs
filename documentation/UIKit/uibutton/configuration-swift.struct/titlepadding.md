@@ -19,7 +19,7 @@ The distance between the title and subtitle labels.
 var titlePadding: CGFloat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The title padding adjusts the distance between the title and subtitle labels.
 

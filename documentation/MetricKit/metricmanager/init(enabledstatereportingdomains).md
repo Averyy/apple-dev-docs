@@ -18,7 +18,7 @@ Creates a new `MetricManager` instance with state reporting domains enabled for 
 init(enabledStateReportingDomains: Set<StateReportingDomain>)
 ```
 
-#### Discussion
+## Discussion
 
 Pass a set of [`StateReportingDomain`](../statereportingdomain.md) values to enable state-contextualized metrics. When state reporting is enabled, the [`stateEntries`](../metricreport/stateentries.md) property of each [`MetricReport`](../metricreport.md) is populated with metric values segmented by each recorded app state.
 

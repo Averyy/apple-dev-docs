@@ -17,7 +17,7 @@ An entitlement that enables someone’s head movement to determine the orientati
 - **Name**: `com.apple.developer.coremotion.head-pose`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 This entitlement changes the orientation of spatial audio output to match the person’s head pose via compatible AirPods for the following APIs:
 

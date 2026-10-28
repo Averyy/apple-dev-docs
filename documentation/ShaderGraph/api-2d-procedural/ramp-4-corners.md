@@ -14,7 +14,7 @@ A four-point linear value ramp (gradient) generator.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Ramp 4 Corners (float)**:
 
@@ -156,7 +156,7 @@ A four-point linear value ramp (gradient) generator.
 | --- | --- |
 | `Out` | Vector2f |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`Top left`**: The top-left value of the four-point interpolation.
 - **`Top right`**: The top-right value of the four-point interpolation.
@@ -164,7 +164,7 @@ A four-point linear value ramp (gradient) generator.
 - **`Bottom right`**: The bottom-right value of the four-point interpolation.
 - **`Texture Coordinates`**: The 2D coordinate at which the data is read for mapping the texture onto a surface. The default is to use the current UV coordinates, in which U is the horizontal axis and V is the vertical axis.
 
-#### Discussion
+## Discussion
 
 This node uses bilinear interpolation to create a ramp from four corner values. Any point within the output ramp is a mix of one of the four corner values. A given point is more similar to a corner value the closer its position is to that corner. Below is a an example of a simple node graph that uses `Ramp 4 Corners` to create a gradient with four different colors:
 

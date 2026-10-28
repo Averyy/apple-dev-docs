@@ -20,7 +20,7 @@ var bundleIDs: [String] { get set }
 @property (atomic, copy, readwrite) NSArray<NSString *> * bundleIDs;
 ```
 
-#### Discussion
+## Discussion
 
 An Array of Strings where each String holds the bundle ID of a process to tap or exclude.
 

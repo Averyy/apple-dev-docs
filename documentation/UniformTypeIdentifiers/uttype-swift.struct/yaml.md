@@ -21,7 +21,7 @@ A type that represents Yet Another Markup Language data.
 static var yaml: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.yaml`.
 

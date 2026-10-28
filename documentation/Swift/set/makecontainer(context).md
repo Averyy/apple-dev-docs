@@ -23,11 +23,11 @@ func makeContainer(context: IntentValueContainer.ConversionContext) -> IntentVal
 
 Available when `Element` conforms to `IntentValueConvertible` and `Hashable`.
 
-#### Return Value
+## Return Value
 
 An intent value container representing this set.
 
-#### Discussion
+## Discussion
 
 This method converts each element in the set to its container representation and wraps them in an `ArrayContainerElement`.
 

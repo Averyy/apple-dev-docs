@@ -23,7 +23,7 @@ case ready
 GSSyncStateReady
 ```
 
-#### Discussion
+## Discussion
 
 In this state, the value of [`url`](../gssynceddirectorystate/url.md) is nonnull.
 

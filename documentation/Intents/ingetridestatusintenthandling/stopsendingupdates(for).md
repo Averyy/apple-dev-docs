@@ -28,7 +28,7 @@ func stopSendingUpdates(for intent: INGetRideStatusIntent)
 
 - [Providing Live Status Updates](../../SiriKit/providing-live-status-updates.md)
 
-#### Discussion
+## Discussion
 
 SiriKit asks you to stop delivering updates when the user no longer has any active rides. You define when a ride becomes inactive by setting the [`rideStatus`](../ingetridestatusintentresponse/ridestatus.md) property of your response object to `nil` when crafting your response. You can clear this property after ride completion or wait until after you have received payment and handled any feedback from the user. Until you do, continue to provide observer updates at regular intervals.
 

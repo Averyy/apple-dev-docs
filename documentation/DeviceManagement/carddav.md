@@ -19,11 +19,11 @@ The payload that configures a Contacts account.
 object CardDAV
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.carddav.account` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Specify `com.apple.carddav.account` as the payload type.
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, visionOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

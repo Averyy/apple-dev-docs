@@ -10,7 +10,7 @@ framework: "Swift-Org/docc"
 
 Arrange information into rows and columns.
 
-#### Overview
+## Overview
 
 To add a table to your documentation, start a new paragraph and add the following required elements, each on its own line:
 
@@ -64,7 +64,7 @@ The content of a table cell supports the same style attributes as other text and
 
 > **Note**: A table cell can only contain a single line of formatted content. Lists, asides, code blocks, headings, and directives are not supported inside a table cell.
 
-##### Aligning content in a column
+### Aligning content in a column
 
 By default, all table columns align their content to the leading edge. To change the horizontal alignment for a column, modify the table’s separator row to add a colon (`:`) around the hyphens (`-`) for that column, either before the hyphens for leading alignment, before *and* after the hyphens for center alignment, or after the hyphens for trailing alignment.
 
@@ -73,7 +73,7 @@ By default, all table columns align their content to the leading edge. To change
 | `:-----` | `:----:` | `-----:` |
 | ![Four different rectangular blocks with their left edges aligned](https://docs.swift.org/latest/images/org.swift.docc/table-align-leading.svg) | ![Four different rectangular blocks with their centers horizontally aligned](https://docs.swift.org/latest/images/org.swift.docc/table-align-center.svg) | ![Four different rectangular blocks with their right edges aligned](https://docs.swift.org/latest/images/org.swift.docc/table-align-trailing.svg) |
 
-##### Spanning cells across columns
+### Spanning cells across columns
 
 By default, each table cell is one column wide and one row tall. To span a table cell across multiple columns, place two or more column separators (`|`) next to each other after the cell’s content. If the spanning cell is the last or only element of a row, you need to add the extra trailing pipe (`|`) for that row, otherwise DocC interprets the row as having an additional empty cell at the end. For example:
 
@@ -113,7 +113,7 @@ Five                      |||
 | Three | Four |  |
 | Five |  |  |
 
-##### Spanning cells across rows
+### Spanning cells across rows
 
 To span a table cell across multiple rows, write the cell’s content in the first row and a single caret (`^`) in one or more cells below it. For example:
 

@@ -5,7 +5,7 @@
 
 Work with the Color Management Modules that perform color conversions.
 
-#### Overview
+## Overview
 
 A Color Management Module (CMM) performs the calculations for a color conversion. ColorSync includes a default CMM and can load additional CMMs packaged as bundles. Most apps never work with a CMM directly, because ColorSync selects one automatically. You can also enumerate the installed CMMs, choose a preferred CMM for a transform with [`kColorSyncPreferredCMM`](./kcolorsyncpreferredcmm.md), or implement your own by exporting the required entry-point functions from a bundle.
 

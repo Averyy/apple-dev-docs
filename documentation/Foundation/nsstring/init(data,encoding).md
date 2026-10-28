@@ -25,7 +25,7 @@ convenience init?(data: Data, encoding: UInt)
 - (instancetype) initWithData:(NSData *) data encoding:(NSStringEncoding) encoding;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSString` object initialized by converting the bytes in `data` into UTF-16 code units using `encoding`. The returned object may be different from the original receiver. Returns `nil` if the initialization fails for some reason (for example if `data` does not represent valid data for `encoding`).
 

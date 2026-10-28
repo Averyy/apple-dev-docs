@@ -23,11 +23,11 @@ func getGlyphs(in glyphRange: NSRange, glyphs glyphBuffer: UnsafeMutablePointer<
 - (NSUInteger) getGlyphsInRange:(NSRange) glyphRange glyphs:(CGGlyph *) glyphBuffer properties:(NSGlyphProperty *) props characterIndexes:(NSUInteger *) charIndexBuffer bidiLevels:(unsigned char *) bidiLevelBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 The number of glyphs returned in `glyphBuffer`.
 
-#### Discussion
+## Discussion
 
 Each pointer passed in should either be `NULL` or else point to sufficient memory to hold `glyphRange.length` elements.
 

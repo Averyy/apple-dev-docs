@@ -21,7 +21,7 @@ var buttonConfiguration: CPMapPanelButtonConfiguration? { get }
 @property (nonatomic, strong, readonly, nullable) CPMapPanelButtonConfiguration * buttonConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 You specify this information initially when you create the panel, but can also update it by assigning a new value to this property. The property stores the buttons and other map-related information to display in the panel.
 

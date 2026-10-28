@@ -16,7 +16,7 @@ An action that presents a new document.
 @preconcurrency struct NewDocumentAction
 ```
 
-#### Overview
+## Overview
 
 Use the [`newDocument`](./environmentvalues/newdocument.md) environment value to get the instance of this structure for a given [`Environment`](./environment.md). Then call the instance to present a new document. You call the instance directly because it defines a [`callAsFunction(_:)`](./newdocumentaction/callasfunction%28_%29.md) method that Swift calls when you call the instance.
 

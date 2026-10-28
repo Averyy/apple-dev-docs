@@ -19,7 +19,7 @@ enum WindingRule
 enum NSWindingRule : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 For more information, see [`NSBezierPath`](../nsbezierpath.md).
 

@@ -27,7 +27,7 @@ var title: String? { get set }
 
 - [Searching for information in your app](../searching-for-information-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 An item title might be the title of a document or MP3 file or the subject of an email message.
 

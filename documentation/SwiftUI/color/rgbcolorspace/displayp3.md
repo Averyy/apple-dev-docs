@@ -21,7 +21,7 @@ The Display P3 color space.
 case displayP3
 ```
 
-#### Discussion
+## Discussion
 
 This color space uses the Digital Cinema Initiatives - Protocol 3 (DCI-P3) primary colors, a D65 white point, and the [`Color.RGBColorSpace.sRGB`](./srgb.md) transfer function.
 

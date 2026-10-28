@@ -22,11 +22,11 @@ constructor(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A [`Annotation`](../annotation.md) instance.
 
-#### Discussion
+## Discussion
 
 The `factory` function returns a DOM element to represent the annotation. It can be a single element or a containing element with subelements. MapKit JS calls this function with the following two arguments:
 

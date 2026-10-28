@@ -19,7 +19,7 @@ Provides an image asynchronously that contains the given subjects with the backg
 final func image(for subjects: Set<ImageAnalysisInteraction.Subject>) async throws -> UIImage
 ```
 
-#### Discussion
+## Discussion
 
 If one or more subjects fail to produce an image, the method throws [`ImageAnalysisInteraction.SubjectUnavailable.imageUnavailable`](./subjectunavailable/imageunavailable.md).
 

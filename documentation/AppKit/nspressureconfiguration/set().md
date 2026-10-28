@@ -19,7 +19,7 @@ func set()
 - (void) set;
 ```
 
-#### Discussion
+## Discussion
 
 During a mouse drag or pressure event sequence, this method may be called to change the pressure configuration of the trackpad to the initialized pressure configuration. The trackpad’s pressure configuration is automatically reset when the user releases the mouse or ends the gesture. If called outside of a mouse drag or pressure event sequence, this method has no effect on the trackpad.
 

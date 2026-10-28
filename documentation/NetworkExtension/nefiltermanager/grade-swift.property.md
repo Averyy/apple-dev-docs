@@ -19,7 +19,7 @@ var grade: NEFilterManager.Grade { get set }
 @property NEFilterManagerGrade grade;
 ```
 
-#### Discussion
+## Discussion
 
 The default grade is [`NEFilterManager.Grade.firewall`](./grade-swift.enum/firewall.md).
 

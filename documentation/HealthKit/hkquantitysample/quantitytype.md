@@ -25,7 +25,7 @@ var quantityType: HKQuantityType { get }
 @property (copy, readonly) HKQuantityType * quantityType;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a reference to the [`sampleType`](../hksample/sampletype.md) property that is cast as an [`HKQuantityType`](../hkquantitytype.md) object.
 

@@ -5,7 +5,7 @@
 
 Metadata keys for International Press Telecommunications Council (IPTC) data.
 
-#### Overview
+## Overview
 
 IPTC constants are metadata elements of the Information Interchange Model (IIM) used to provide information about images. The IIM was developed by the Newspaper Association of America (NAA) and the IPTC.
 

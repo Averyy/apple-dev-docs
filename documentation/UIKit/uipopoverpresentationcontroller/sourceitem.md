@@ -26,7 +26,7 @@ var sourceItem: (any UIPopoverPresentationControllerSourceItem)? { get set }
 
 - [Getting the user’s attention with alerts and action sheets](../getting-the-user-s-attention-with-alerts-and-action-sheets.md)
 
-#### Discussion
+## Discussion
 
 Assign a value to this property to anchor the popover to the specified [`UIBarButtonItem`](../uibarbuttonitem.md) or [`NSToolbarItem`](../../AppKit/nstoolbaritem.md). In iOS 18 and earlier, the popover’s arrow points to the specified item. In iOS 26 and later, the popover animates from and replaces the specified item until someone selects an action item or dismisses the popover.
 

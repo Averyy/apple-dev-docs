@@ -19,7 +19,7 @@ var allowedInputSourceLocales: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * allowedInputSourceLocales;
 ```
 
-#### Discussion
+## Discussion
 
 `NSAllRomanInputSourcesLocaleIdentifier` can be specified as a valid locale.
 

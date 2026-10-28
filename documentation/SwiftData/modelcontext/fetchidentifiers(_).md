@@ -22,7 +22,7 @@ Returns an array of persistent identifiers, where each identifier represents a s
 func fetchIdentifiers<T>(_ descriptor: FetchDescriptor<T>) throws -> [PersistentIdentifier] where T : PersistentModel
 ```
 
-#### Return Value
+## Return Value
 
 The array of persistent identifiers. If no models match the descriptor’s criteria, the array is empty.
 

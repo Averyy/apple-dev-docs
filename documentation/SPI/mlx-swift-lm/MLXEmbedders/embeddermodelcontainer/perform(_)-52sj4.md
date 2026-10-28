@@ -17,7 +17,7 @@ Perform an action on the [`EmbedderModelContext`](../embeddermodelcontext.md). C
 func perform<R>(_ action: @Sendable (EmbedderModelContext) async throws -> sending R) async rethrows -> sending R where R : Sendable
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The closure receives `EmbedderModelContext` which is not `Sendable`. This is intentional - the closure runs within the actor’s isolation, ensuring thread-safe access to the model.
 

@@ -19,7 +19,7 @@ func displayIgnoringOpacity(_ rect: NSRect, in context: NSGraphicsContext)
 - (void) displayRectIgnoringOpacity:(NSRect) rect inContext:(NSGraphicsContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Acts as [`display()`](./display%28%29.md), but confines drawing to `aRect`. This method initiates drawing with the view, even if the view is not opaque. Appropriate scaling factors for the view are obtained from `context`.
 

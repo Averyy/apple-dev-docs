@@ -19,11 +19,11 @@
 extern bool xpc_peer_requirement_match_received_message(xpc_peer_requirement_t peer_requirement, xpc_object_t message, xpc_rich_error_t*error_out);
 ```
 
-#### Return Value
+## Return Value
 
 On match this returns true. On mismatch or failure this will return false and if set, error_out will be set to an error describing the failure.
 
-#### Discussion
+## Discussion
 
 Check the specified requirement against a received message from the peer.
 

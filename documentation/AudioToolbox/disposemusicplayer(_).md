@@ -24,7 +24,7 @@ func DisposeMusicPlayer(_ inPlayer: MusicPlayer) -> OSStatus
 extern OSStatus DisposeMusicPlayer(MusicPlayer inPlayer);
 ```
 
-#### Return Value
+## Return Value
 
 A result code
 

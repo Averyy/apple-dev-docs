@@ -25,7 +25,7 @@ var timeRate: SKTestSession.TimeRate { get set }
 @property (nonatomic, assign) SKTestTimeRate timeRate;
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`timeRate`](./timerate-swift.property.md) value when you test auto-renewable subscriptions to speed up or slow down the time it takes for subscriptions to renew in the test environment. The default value is [`SKTestSession.TimeRate.realTime`](./timerate-swift.enum/realtime.md). For maximum accelerated time, use [`SKTestSession.TimeRate.oneRenewalEveryTwoSeconds`](./timerate-swift.enum/onerenewaleverytwoseconds.md).
 

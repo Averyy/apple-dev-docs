@@ -14,11 +14,11 @@ virtual IOReturn messageClients(
  vm_size_t argSize = 0 );
 ```
 
-#### Return Value
+## Return Value
 
 Any non-`kIOReturnSuccess` return codes returned by the clients, or `kIOReturnSuccess` if all return `kIOReturnSuccess`.
 
-#### Overview
+## Overview
 
 A provider may deliver messages via the message method to its clients informing them of state changes, such as `kIOMessageServiceIsTerminated` or `kIOMessageServiceIsSuspended`. Certain messages are defined by the I/O Kit in `IOMessage.h` while others may be family dependent. This method may be called in the provider to send a message to all the attached clients, via the messageClient method.
 

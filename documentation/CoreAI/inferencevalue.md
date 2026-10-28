@@ -23,7 +23,7 @@ struct InferenceValue
 
 - [Integrating on-device AI models in your app with Core AI](./integrating-on-device-ai-models-in-your-app-with-core-ai.md)
 
-#### Overview
+## Overview
 
 An `InferenceValue` wraps either an [`NDArray`](./ndarray.md) or a pixel buffer, and you retrieve it after inference using the [`ndArray`](./inferencevalue/ndarray.md) property.
 

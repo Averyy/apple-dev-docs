@@ -14,7 +14,7 @@
 IOReturn (*SetDCLTagBits)(NuDCLRef dcl, UInt8 tagBits);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

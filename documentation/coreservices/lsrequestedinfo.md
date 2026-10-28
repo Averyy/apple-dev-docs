@@ -22,7 +22,7 @@ typedef enum LSRequestedInfo : OptionBits {
 } LSRequestedInfo;
 ```
 
-#### Overview
+## Overview
 
 These flags are passed to the `LSCopyItemInfoForRef` and `LSCopyItemInfoForURL` functions to specify the type of information to be obtained in an item-information record; see [`LSItemInfoRecord`](./lsiteminforecord.md) for a description of this structure.
 

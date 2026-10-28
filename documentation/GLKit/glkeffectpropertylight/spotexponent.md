@@ -24,7 +24,7 @@ var spotExponent: GLfloat { get set }
 @property (nonatomic, assign) GLfloat spotExponent;
 ```
 
-#### Discussion
+## Discussion
 
 The higher the value stored in the [`spotExponent`](./spotexponent.md) property, the tighter the focus of the spotlight. The default value is `0.0`.
 

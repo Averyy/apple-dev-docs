@@ -24,7 +24,7 @@ var deliveryMode: PHImageRequestOptionsDeliveryMode { get set }
 @property (nonatomic, assign) PHImageRequestOptionsDeliveryMode deliveryMode;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to tell Photos to provide an image quickly (possibly sacrificing image quality), to provide a high-quality image (possibly sacrificing speed), or to provide both automatically if needed. See [`PHImageRequestOptionsDeliveryMode`](../phimagerequestoptionsdeliverymode.md).
 

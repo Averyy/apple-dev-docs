@@ -19,11 +19,11 @@ func OBEXAddTimeISOHeader(_ inHeaderData: UnsafeRawPointer!, _ inHeaderDataLengt
 OBEXError OBEXAddTimeISOHeader(const void *inHeaderData, uint32_t inHeaderDataLength, CFMutableDictionaryRef dictRef);
 ```
 
-#### Return Value
+## Return Value
 
 Error code, kOBEXSuccess (0) if success.
 
-#### Discussion
+## Discussion
 
 TimeISO header - OBEX Spec, 2.2.5: Byte Sequence
 

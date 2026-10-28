@@ -19,7 +19,7 @@ The button style that controls the display behavior of the background corner rad
 var cornerStyle: UIButton.Configuration.CornerStyle { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property controls the behavior of the [`cornerRadius`](../../uibackgroundconfiguration-swift.struct/cornerradius.md) you set on the configuration background. The default corner style is [`UIButton.Configuration.CornerStyle.dynamic`](./cornerstyle-swift.enum/dynamic.md).
 

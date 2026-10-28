@@ -25,7 +25,7 @@ func drawPDFPage(_ page: CGPDFPage)
 extern void CGContextDrawPDFPage(CGContextRef c, CGPDFPageRef page);
 ```
 
-#### Discussion
+## Discussion
 
 This function works in conjunction with the [`CGPDFPage`](../cgpdfpage.md) type to draw individual PDF pages into a context.
 

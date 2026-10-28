@@ -9,7 +9,7 @@ Encode and decode JSON data, regardless of its structure, using Swift’s JSON s
 **Availability**:
 - Xcode 10.0+
 
-#### Overview
+## Overview
 
 JSON data you send or receive from other apps, services, and files can come in many different shapes and structures. Use the techniques described in this sample to handle the differences between external JSON data and your app’s model types.
 
@@ -27,7 +27,7 @@ struct GroceryProduct: Codable {
 
 The sample is an Xcode playground, which you interact with by executing the code in the playground. Each of the sections in this article refers to a different page in the playground.
 
-##### Read Data from Arrays
+### Read Data from Arrays
 
 Use Swift’s expressive type system to avoid manually looping over collections of identically structured objects. This playground uses array types as values to see how to work with JSON that’s structured like this:
 
@@ -41,7 +41,7 @@ Use Swift’s expressive type system to avoid manually looping over collections 
 ]
 ```
 
-##### Change Key Names
+### Change Key Names
 
 Learn how to map data from JSON keys into properties on your custom types, regardless of their names. For example, this playground shows how to map the `"product_name"` key in the JSON below to the `name` property on `GroceryProduct`:
 
@@ -55,7 +55,7 @@ Learn how to map data from JSON keys into properties on your custom types, regar
 
 Custom mappings let you to apply the Swift [API Design Guidelines](https://swift.org/documentation/api-design-guidelines/) to the names of properties in your Swift model, even if the names of the JSON keys are different.
 
-##### Access Nested Data
+### Access Nested Data
 
 Learn how to ignore structure and data in JSON that you don’t need in your code. This playground uses an intermediate type to see how to extract grocery products from JSON that looks like this to skip over unwanted data and structure:
 
@@ -82,7 +82,7 @@ Learn how to ignore structure and data in JSON that you don’t need in your cod
 ]
 ```
 
-##### Merge Data at Different Depths
+### Merge Data at Different Depths
 
 Combine or separate data from different depths of a JSON structure by writing custom implementations of protocol requirements from `Encodable` and `Decodable`. This playground shows how to construct a `GroceryProduct` instance from JSON that looks like this:
 

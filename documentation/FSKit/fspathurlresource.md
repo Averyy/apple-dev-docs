@@ -19,7 +19,7 @@ class FSPathURLResource
 @interface FSPathURLResource : FSResource
 ```
 
-#### Overview
+## Overview
 
 The URL passed to `FSPathURLResource` may be a security-scoped URL. If the URL is a security-scoped URL, FSKit transports it intact from a client application to your extension.
 

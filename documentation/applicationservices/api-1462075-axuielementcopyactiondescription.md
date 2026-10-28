@@ -19,7 +19,7 @@ func AXUIElementCopyActionDescription(_ element: AXUIElement, _ action: CFString
 AXError AXUIElementCopyActionDescription(AXUIElementRef element, CFStringRef action, CFStringRef  _Nullable *description);
 ```
 
-#### Return Value
+## Return Value
 
 If unsuccessful, `AXUIElementCopyActionDescription` may return one of the following error codes, among others:
 

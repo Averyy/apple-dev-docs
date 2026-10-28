@@ -21,7 +21,7 @@ Sets an output presentation timestamp to use in place of a calculated value.
 func setOutputPresentationTimeStamp(_ pts: CMTime) throws
 ```
 
-#### Discussion
+## Discussion
 
 This value is the time at which the system should present the decoded, trimmed, stretched and possibly reversed samples. By default, retrieving the value of the `outputPresentationTimeStamp` property calculates the time dynamically. You can use this method to set a specific value for `outputPresentationTimeStamp`.
 

@@ -23,7 +23,7 @@ var contentHuggingElements: UITableViewContentHuggingElements { get set }
 @property (nonatomic) UITableViewContentHuggingElements contentHuggingElements;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`sectionHeaders`](../uitableviewcontenthuggingelements/sectionheaders.md) for plain-style table views in visionOS, and [`UITableViewContentHuggingElementsNone`](../uitableviewcontenthuggingelements/uitableviewcontenthuggingelementsnone.md) on all other platforms.
 

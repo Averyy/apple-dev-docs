@@ -20,7 +20,7 @@ func requestNeedsUserApproval(_ request: OSSystemExtensionRequest)
 - (void) requestNeedsUserApproval:(OSSystemExtensionRequest *) request;
 ```
 
-#### Discussion
+## Discussion
 
 Activating an extension may require explicit user approval to proceed. For example, this occurs when the user hasn’t approved the extension. The manager calls this method to notify the delegate. Activation remains pending until the user grants or denies permission, or until the app quits.
 

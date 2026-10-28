@@ -18,7 +18,7 @@ A collection view that sizes itself based on the size of its content.
 lazy var collectionView: UICollectionView { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Ensure that cells have a constant width constraint. The default cell is an `OCKGridTaskView.DefaultCellType` (`OCKGridTaskCell`). Set a data source to control the content of the grid.
 

@@ -25,7 +25,7 @@ var pointOfView: SCNNode? { get set }
 @property (nonatomic, retain, nullable) SCNNode * pointOfView;
 ```
 
-#### Discussion
+## Discussion
 
 Use a [`SCNNode`](../../SceneKit/scnnode.md) object with an [`SCNCamera`](../../SceneKit/scncamera.md) instance assigned to its [`camera`](../../SceneKit/scnnode/camera.md) property to view a scene. This SceneKit node provides the position and direction of a virtual camera, and the camera object provides rendering parameters such as field of view and focus. The direction of view is along the negative z-axis of the SceneKit node’s local coordinate space.
 

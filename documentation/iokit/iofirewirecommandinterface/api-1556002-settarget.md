@@ -16,7 +16,7 @@ Set command target address
 void (*SetTarget)(IOFireWireLibCommandRef self, const FWAddress *addr);
 ```
 
-#### Discussion
+## Discussion
 
 Availability: (for interfaces obtained with ID)
 

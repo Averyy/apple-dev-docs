@@ -19,7 +19,7 @@ var bottomMargin: CGFloat { get set }
 @property CGFloat bottomMargin;
 ```
 
-#### Discussion
+## Discussion
 
 bottomMargin is measured in points in the user coordinate space.
 

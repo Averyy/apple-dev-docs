@@ -17,7 +17,7 @@ The kinetic friction to use between the material pair.
 var kineticFriction: Float { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Must be non-negative; negative values are clamped to zero.
 

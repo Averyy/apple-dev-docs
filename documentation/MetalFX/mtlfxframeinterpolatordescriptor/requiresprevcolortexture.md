@@ -23,7 +23,7 @@ var requiresPrevColorTexture: Bool { get set }
 @property (nonatomic, readwrite) BOOL requiresPrevColorTexture;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is YES (the default), you must assign a valid texture to the interpolator’s `prevColorTexture` property before encoding. When NO, the frame interpolator internally manages the previous color data and `prevColorTexture` may be nil.
 

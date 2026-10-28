@@ -15,7 +15,7 @@ Sent when the text in the receiving control changes.
 - (void) controlTextDidChange:(NSNotification *) obj;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked when text in a control such as a text field or form changes. The control posts a [`textDidChangeNotification`](../../AppKit/nscontrol/textdidchangenotification.md) notification, and if the control’s delegate implements this method, it is automatically registered to receive the notification. Use the key `@"NSFieldEditor"` to obtain the field editor from the `userInfo` dictionary of the notification object.
 

@@ -29,7 +29,7 @@ var countOfBytesClientExpectsToReceive: Int64 { get set }
 
 - [Downloading files in the background](../downloading-files-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 The value set for this property should account for the size of both HTTP response headers and the response body. If no value is specified, the system uses [`NSURLSessionTransferSizeUnknown`](../nsurlsessiontransfersizeunknown.md) instead. This property is used by the system to optimize the scheduling of URL session tasks. Developers are strongly encouraged to provide an approximate upper bound, or an exact byte count, if possible, rather than accept the default.
 

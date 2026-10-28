@@ -20,7 +20,7 @@ var ES_PROC_CHECK_TYPE_SETCONTROL: es_proc_check_type_t { get }
 ES_PROC_CHECK_TYPE_SETCONTROL
 ```
 
-#### Discussion
+## Discussion
 
 This type corresponds to the `proc_setpcontrol` function from `libproc.h`.
 

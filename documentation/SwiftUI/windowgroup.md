@@ -26,7 +26,7 @@ struct WindowGroup<Content> where Content : View
 
 - [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
 
-#### Overview
+## Overview
 
 Use a `WindowGroup` as a container for a view hierarchy that your app presents. The hierarchy that you declare as the group’s content serves as a template for each window that the app creates from that group:
 
@@ -49,7 +49,7 @@ Every window in the group maintains independent state. For example, the system a
 
 For document-based apps, use [`DocumentGroup`](./documentgroup.md) to define windows instead.
 
-##### Open windows programmatically
+### Open windows programmatically
 
 If you initialize a window group with an identifier, a presentation type, or both, you can programmatically open a window from the group. For example, you can give the mail viewer scene from the previous example an identifier:
 
@@ -75,7 +75,7 @@ struct NewViewerButton: View {
 
 Be sure to use unique strings for identifiers that you apply to window groups in your app.
 
-##### Present data in a window
+### Present data in a window
 
 If you initialize a window group with a presentation type, you can pass data of that type to the window when you open it. For example, you can define a second window group for the Mail app that displays a specified message:
 
@@ -124,7 +124,7 @@ WindowGroup(for: Message.ID.self) { $messageID in
 
 SwiftUI persists the value of the binding for the purposes of state restoration, and reapplies the same value when restoring the window. If the restoration process results in an error, SwiftUI sets the binding to the default value if you provide one, or `nil` otherwise.
 
-##### Title your app’s windows
+### Title your app’s windows
 
 To help people distinguish among windows from different groups, include a title as the first parameter in the group’s initializer:
 
@@ -144,7 +144,7 @@ If you don’t provide a title for a window, the system refers to the window usi
 
 > **Note**: You can override the title that SwiftUI uses for a window in the window’s title bar and the menu’s list of open windows by adding one of the [`navigationTitle(_:)`](./view/navigationtitle%28_%29.md) modifiers to the window’s content. This enables you to customize and dynamically update the title for each individual window instance.
 
-##### Distinguish windows that present like data
+### Distinguish windows that present like data
 
 To programmatically distinguish between windows that present the same type of data, like when you use a [`UUID`](../Foundation/uuid.md) as the identifier for more than one model type, add the `id` parameter to the group’s initializer to provide a unique string identifier:
 
@@ -179,7 +179,7 @@ struct ActionButtons: View {
 }
 ```
 
-##### Dismiss a window programmatically
+### Dismiss a window programmatically
 
 The system provides people with platform-appropriate controls to dismiss a window. You can also dismiss windows programmatically by calling the [`dismiss`](./environmentvalues/dismiss.md) action from within the window’s view hierarchy. For example, you can include a button in the account detail view from the previous example that dismisses the view:
 

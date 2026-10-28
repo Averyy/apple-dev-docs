@@ -15,11 +15,11 @@ Finds and returns the identity stored for corresponding network with the specifi
 OSStatus CWKeychainCopyEAPIdentity(CFDataRef ssidData, SecIdentityRef*identity);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus error code which will indicate whether or not a failure occurred during execution. *errSecSuccess* indicates no error occurred.
 
-#### Discussion
+## Discussion
 
 If there is no matching keychain entry for the specified SSID, this method will return *NO*.
 

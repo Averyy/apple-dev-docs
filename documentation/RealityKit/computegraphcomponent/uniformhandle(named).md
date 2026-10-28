@@ -19,7 +19,7 @@ Returns a handle for the named uniform.
 func uniformHandle(named name: String) -> ComputeGraphComponent.UniformHandle?
 ```
 
-#### Return Value
+## Return Value
 
 A [`ComputeGraphComponent.UniformHandle`](./uniformhandle.md), or `nil` if no match is found.
 

@@ -11,7 +11,7 @@ The accuracy of the compass data in degrees.
 readonly attribute double webkitCompassAccuracy
 ```
 
-#### Overview
+## Overview
 
 For example, if this property value is `10`, the heading is off by plus or minus 10 degrees. A value of `-1` means that the compass is not calibrated and not giving usable readings.
 

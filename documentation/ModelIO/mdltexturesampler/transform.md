@@ -24,7 +24,7 @@ var transform: MDLTransform? { get set }
 @property (nonatomic, retain, nullable) MDLTransform * transform;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to translate, scale, or rotate a texture relative to the surfaces it’s rendered on.
 

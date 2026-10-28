@@ -24,7 +24,7 @@ class UIPercentDrivenInteractiveTransition
 @interface UIPercentDrivenInteractiveTransition : NSObject
 ```
 
-#### Overview
+## Overview
 
 A percent-driven interactive transition object relies on a transition animator delegate—a custom object that adopts the [`UIViewControllerAnimatedTransitioning`](./uiviewcontrolleranimatedtransitioning.md) protocol—to set up and perform the animations.
 

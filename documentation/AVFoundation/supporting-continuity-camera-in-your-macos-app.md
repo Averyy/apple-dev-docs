@@ -10,7 +10,7 @@ Enable high-quality photo and video capture by using an iPhone camera as an exte
 - macOS 13.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 Continuity Camera brings the power of an iPhone device’s camera and image signal processing to the Mac. It lets you use the rear-facing, wide-angle camera of iPhone to support high-quality photo and video capture in your macOS app. Continuity Camera also brings advanced features like Center Stage, Portrait mode, and Studio Light to all Mac devices. An important part of adopting this feature in your app is supporting automatic camera selection.
 
@@ -20,7 +20,7 @@ The sample app shows you how to access the iPhone camera and microphone, adopt a
 
 > **Note**: This sample code project is associated with WWDC22 session [10018: Bring Continuity Camera to your macOS app](https://developer.apple.com/wwdc22/10018)
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample app, you’ll need the following:
 
@@ -31,7 +31,7 @@ To run this sample app, you’ll need the following:
 
 Connect the iPhone to the Mac over USB. The first time you run this sample, the system prompts you to grant the app access to the camera and microphone. You must allow the sample app to access both devices for it to function correctly.
 
-##### Configure device discovery
+### Configure device discovery
 
 When the app performs its initial setup, it configures two instances of [`AVCaptureDevice.DiscoverySession`](./avcapturedevice/discoverysession.md): one to discover video devices, and the other to discover audio devices. It initializes each discovery session with a list of devices that includes a built-in device, and also an [`externalUnknown`](./avcapturedevice/devicetype-swift.struct/externalunknown.md) device. Specifying an external unknown device type enables the discovery session to find compatible iPhone cameras and microphones, as well as supported capture devices from other vendors.
 
@@ -48,7 +48,7 @@ audioDiscoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInM
 
 The app observes the state of each discovery session’s [`devices`](./avcapturedevice/discoverysession/devices.md) array, and as devices connect and disconnect from the system, it updates the list of devices it presents in the user interface.
 
-##### Set the initial video device selection
+### Set the initial video device selection
 
 The sample app enables automatic camera selection by default, so when it performs its initial capture session configuration, it uses the system’s preferred camera as its default camera device as shown below.
 
@@ -68,7 +68,7 @@ private var defaultVideoCaptureDevice: AVCaptureDevice {
 
 The [`systemPreferredCamera`](./avcapturedevice/systempreferredcamera.md) property of [`AVCaptureDevice`](./avcapturedevice.md) provides an optional capture device value. However, it always provides a valid capture device unless the host system provides no built-in or connected devices.
 
-##### Respond to system-preferred camera changes
+### Respond to system-preferred camera changes
 
 The system-preferred camera changes based on device availability and user camera selection. The sample app provides a `PreferredCameraObserver` object that key-value observes the `systemPreferredCamera` property to monitor changes. When it observes a change to the value, it updates the state of its `@Published` property value as shown below.
 
@@ -118,7 +118,7 @@ private func systemPreferredCameraChanged(to captureDevice: AVCaptureDevice) asy
 }
 ```
 
-##### Update the user-preferred camera selection
+### Update the user-preferred camera selection
 
 When the app selects a new device, it removes the old device input, attempts to add an input for the new device, and if it succeeds, updates the state of the appropriate active input device as shown below.
 
@@ -148,7 +148,7 @@ In the case of a camera device, if the selection request came from user input, t
 
 > **Note**: Setting the user-preferred camera also updates the value of the [systemPreferredCamera][7] property.
 
-##### Support system video effects
+### Support system video effects
 
 When the app’s selected camera changes, the system evaluates the new capture device’s [`activeFormat`](./avcapturedevice/activeformat.md) to determine if it supports Center Stage. If it does, the app enables the Center Stage checkbox so you can change its value. Toggling the state of the feature sets the [`centerStageControlMode`](./avcapturedevice/centerstagecontrolmode-swift.type.property.md) to [`AVCaptureDevice.CenterStageControlMode.cooperative`](./avcapturedevice/centerstagecontrolmode-swift.enum/cooperative.md) and updates its enabled state.
 

@@ -22,7 +22,7 @@ func sharedAlbumCustomizationViewController(_ customizationViewController: PHSha
 - (void) sharedAlbumCustomizationViewController:(PHSharedAlbumCustomizationViewController *) customizationViewController didCompleteWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 Called when shared album customization completes.
 

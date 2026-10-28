@@ -30,7 +30,7 @@ static func != (a: MLUntypedColumn, b: MLUntypedColumn) -> MLUntypedColumn
 static func != (a: any MLDataValueConvertible, b: MLUntypedColumn) -> MLUntypedColumn
 ```
 
-#### Return Value
+## Return Value
 
 A new column of Booleans if the column and value have the same underlying type; otherwise an invalid column.
 

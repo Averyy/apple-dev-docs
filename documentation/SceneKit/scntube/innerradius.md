@@ -25,7 +25,7 @@ var innerRadius: CGFloat { get set }
 @property (nonatomic) CGFloat innerRadius;
 ```
 
-#### Discussion
+## Discussion
 
 The tube is centered in its local coordinate system. For example, if a tube has an inner radius of `1.0`, the cylindrical hole through its center extends from `-0.5` to `0.5` along the x- and z-axes. The default inner radius is `0.25`.
 

@@ -24,7 +24,7 @@ var initializationValue: vector_float4 { get set }
 @property (nonatomic, readwrite) vector_float4 initializationValue;
 ```
 
-#### Discussion
+## Discussion
 
 When you set the [`vertexDescriptor`](../mdlmesh/vertexdescriptor.md) property of a [`MDLMesh`](../mdlmesh.md) object, the mesh automatically formats its vertex buffers to match the new descriptor. If the vertex descriptor contains a vertex attribute that is not already present in the mesh, the mesh creates a new vertex buffer (or allocates space in an interleaved vertex buffer, if the vertex descriptor describes such) for the new attribute, and fills in per-vertex data for that attribute using this property’s value.
 

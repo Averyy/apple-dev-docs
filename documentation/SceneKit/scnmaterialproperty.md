@@ -25,7 +25,7 @@ class SCNMaterialProperty
 @interface SCNMaterialProperty : NSObject
 ```
 
-#### Overview
+## Overview
 
 A material has several visual properties that together determine its appearance under lighting and shading. SceneKit renders each pixel in the scene by combining the information from material properties with the locations, intensities, and colors of lights.
 

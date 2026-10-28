@@ -16,7 +16,7 @@ Sets one of the aggressiveness factors in IOKit Power Management.
 IOReturn IOPMSetAggressiveness(io_connect_t fb, unsigned long type, unsigned long aggressiveness);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess or an error condition if request failed.
 

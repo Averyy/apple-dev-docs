@@ -24,11 +24,11 @@ func displayedPixelBuffer() -> CVPixelBuffer?
 - (CVPixelBufferRef) copyDisplayedPixelBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 The currently displayed pixel buffer, or `nil` if one isn’t available.
 
-#### Discussion
+## Discussion
 
 This method only returns an image when playback is in a paused state, and otherwise returns `nil`. It also returns `nil` when displaying protected content or if the layer isn’t currently displaying an image.
 

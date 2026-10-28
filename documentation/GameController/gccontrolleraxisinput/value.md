@@ -24,7 +24,7 @@ var value: Float { get }
 @property (nonatomic, readonly) float value;
 ```
 
-#### Discussion
+## Discussion
 
 Often a physical controller ignores values near the neutral position called the dead zone. The [`GCControllerAxisInput`](../gccontrolleraxisinput.md) element handles this dead zone, and other physical constraints of a hardware control, by computing a normalized value.
 

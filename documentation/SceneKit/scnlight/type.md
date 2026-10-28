@@ -25,7 +25,7 @@ var type: SCNLight.LightType { get set }
 @property (nonatomic, copy) SCNLightType type;
 ```
 
-#### Discussion
+## Discussion
 
 A light’s type determines the shape and directionality of illumination provided by the light, as well as the set of attributes available for modifying the light’s behavior. For example, light types include omnidirectional lights and spotlights. See `Light Types` for the full set of types and their behaviors.
 

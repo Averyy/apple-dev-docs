@@ -25,7 +25,7 @@ var localizedDescription: String { get }
 @property (copy, readonly) NSString * localizedDescription;
 ```
 
-#### Discussion
+## Discussion
 
 The object in the user info dictionary for the key [`NSLocalizedDescriptionKey`](../nslocalizeddescriptionkey.md). If the user info dictionary doesn’t contain a value for [`NSLocalizedDescriptionKey`](../nslocalizeddescriptionkey.md), a default string is constructed from the domain and code.
 

@@ -26,7 +26,7 @@ enum VerificationResult<SignedType>
 
 - [Supporting offer codes in your app](./supporting-offer-codes-in-your-app.md)
 
-#### Overview
+## Overview
 
 StoreKit automatically verifies the [`Transaction`](./transaction.md), [`Product.SubscriptionInfo.RenewalInfo`](./product/subscriptioninfo/renewalinfo.md), and [`AppTransaction`](./apptransaction.md) values. To access the wrapped values, check whether the values are verified or unverified.
 

@@ -40,7 +40,7 @@ var image: NSImage? { get set }
 @property (nonatomic, strong, nullable) NSImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a new image to this property also changes the size of the view’s frame so that it matches the width and height of the new image. The position of the view’s frame doesn’t change.
 

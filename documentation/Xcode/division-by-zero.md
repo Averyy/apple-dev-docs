@@ -5,11 +5,11 @@
 
 Detects division where the divisor is zero.
 
-#### Overview
+## Overview
 
 Use this check to detect integer and float division where the divisor is zero. Division by zero has undefined behavior, and can result in crashes or incorrect program output. Available in Xcode 9 and later.
 
-##### Integer division by zero in C
+### Integer division by zero in C
 
 In the following code, the `for` loop performs division by zero on its first iteration:
 
@@ -22,7 +22,7 @@ for (int i = 0; i < 64; ++i) {
 
 > **Note**: The optimizer may remove parts of a loop if it determines that undefined behavior might trigger in any of its iterations.
 
-###### Solution
+#### Solution
 
 Modify the logic to check for and avoid division when the divisor might equal zero.
 

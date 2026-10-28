@@ -20,7 +20,7 @@ The number of output tokens that were part of the model’s reasoning output.
 var reasoningTokenCount: Int
 ```
 
-#### Discussion
+## Discussion
 
 This value is always less than or equal to [`totalTokenCount`](./totaltokencount.md). A non-zero value requires the model to declare the [`reasoning`](../../../languagemodelcapabilities/capability/reasoning.md) capability.
 

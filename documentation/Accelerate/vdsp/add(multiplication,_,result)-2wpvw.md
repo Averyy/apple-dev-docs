@@ -21,7 +21,7 @@ Calculates the double-precision element-wise sum of the product of two vectors, 
 static func add<T, U, V>(multiplication: (a: T, b: U), _ scalar: Double, result: inout V) where T : AccelerateBuffer, U : AccelerateBuffer, V : AccelerateMutableBuffer, T.Element == Double, U.Element == Double, V.Element == Double
 ```
 
-#### Discussion
+## Discussion
 
 This function calculates the element-wise product of vectors `A` and `B`, adds scalar value `C` to the product, and writes the result to vector `D`, as follows:
 

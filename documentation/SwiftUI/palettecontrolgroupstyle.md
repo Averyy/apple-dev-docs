@@ -20,7 +20,7 @@ nonisolated
 struct PaletteControlGroupStyle
 ```
 
-#### Overview
+## Overview
 
 Use [`palette`](./controlgroupstyle/palette.md) to construct this style.
 

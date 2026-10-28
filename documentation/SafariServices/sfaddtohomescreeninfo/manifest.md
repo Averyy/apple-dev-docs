@@ -20,7 +20,7 @@ var manifest: BEWebAppManifest { get }
 @property (nonatomic, copy, readonly) BEWebAppManifest * manifest;
 ```
 
-#### Discussion
+## Discussion
 
 A property for the web app manifest. This is only available to apps that can use BrowserEngineKit.
 

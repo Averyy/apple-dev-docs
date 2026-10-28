@@ -25,11 +25,11 @@ func decodeBytes(forKey key: String, returnedLength lengthp: UnsafeMutablePointe
 - (const uint8_t *) decodeBytesForKey:(NSString *) key returnedLength:(NSUInteger *) lengthp;
 ```
 
-#### Return Value
+## Return Value
 
 The stream of bytes associated with the key `key`. Returns `NULL` if `key` does not exist.
 
-#### Discussion
+## Discussion
 
 The returned value is a pointer to a temporary buffer owned by the receiver. The buffer goes away with the unarchiver, not the containing autorelease pool block. You must copy the bytes into your own buffer if you need the data to persist beyond the life of the receiver.
 

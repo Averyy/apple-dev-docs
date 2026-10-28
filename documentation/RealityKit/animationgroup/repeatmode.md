@@ -20,7 +20,7 @@ An option that determines how the animations repeat.
 var repeatMode: AnimationRepeatMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 If you call `FromToByAnimation/trimmed(start:end:duration:)` with a `start` or `end` that lies outside of the timeline defined by [`duration`](./duration.md), the animation fills the additional playback by applying this property.
 

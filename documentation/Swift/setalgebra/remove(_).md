@@ -23,7 +23,7 @@ Removes the given element and any elements subsumed by the given element.
 mutating func remove(_ member: Self.Element) -> Self.Element?
 ```
 
-#### Return Value
+## Return Value
 
 For ordinary sets, an element equal to `member` if `member` is contained in the set; otherwise, `nil`. In some cases, a returned element may be distinguishable from `member` by identity comparison or some other means.
 

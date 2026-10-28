@@ -4,7 +4,7 @@
 
 Enforce secure network links in your app by relying on App Transport Security.
 
-#### Overview
+## Overview
 
 On Apple platforms, a networking security feature called App Transport Security (ATS) improves privacy and data integrity for all apps and app extensions. It does this by requiring that network connections made by your app are secured by the Transport Layer Security (TLS) protocol using reliable certificates and ciphers. ATS blocks connections that don’t meet minimum security requirements.
 
@@ -14,7 +14,7 @@ ATS operates by default for apps linked against the iOS 9.0 or macOS 10.11 SDKs 
 
 > **Note**:  If you link your app against an SDK older than iOS 9.0 or macOS 10.11, ATS is disabled no matter which version of the operating system your app runs on.
 
-##### Prefer High-Level Frameworks in Your App
+### Prefer High-Level Frameworks in Your App
 
 The system enforces ATS when you use the standard [URL Loading System](../Foundation/url-loading-system.md). Instances of [`URLSession`](../Foundation/urlsession.md) automatically negotiate the most secure connection available from the server. The only action your app must take is to use secure URLs, like those beginning with `https`. Otherwise, ATS denies the connection and prints a console message:
 
@@ -26,7 +26,7 @@ your app's Info.plist file.
 
 ATS doesn’t apply to calls your app makes to lower-level networking interfaces like the [Network](../Network/Network.md) framework or [CFNetwork](../CFNetwork/CFNetwork.md). In these cases, you take responsibility for ensuring the security of the connection. You can construct a secure connection this way, but mistakes are both easy to make and costly. It’s typically safest to rely on the [URL Loading System](../Foundation/url-loading-system.md) instead.
 
-##### Ensure the Network Server Meets Minimum Requirements
+### Ensure the Network Server Meets Minimum Requirements
 
 A secure server establishes its identity using an X.509 digital certificate. A connecting client examines this certificate to perform default server trust evaluation, which includes checking that the certificate:
 
@@ -45,11 +45,11 @@ ATS requires all of these things, and then provides extended security checks:
 
 > **Note**:  [`URLSession`](../Foundation/urlsession.md) automatically handles server trust evaluation for you, but enables you to customize the process, for example to extend trust to a self-signed certificate embedded in your app, or to bypass certificate expiry. When ATS is enabled, you can no longer loosen trust evaluation requirements that way, but you can still tighten them — for example, to implement certificate pinning. For more information, see [Performing manual server trust authentication](../Foundation/performing-manual-server-trust-authentication.md).
 
-##### Optional NIAP Functional Package for TLS Requirements
+### Optional NIAP Functional Package for TLS Requirements
 
 ATS provides support to further restrict default TLS client behavior to help meet requirements outlined by the National Information Assurance Partnership (NIAP) in the Functional Package for Transport Layer Security. This compliance mode is opt-in only and provides additional options for regulated environments. To opt-in to this mode, use the [`NSRequiresNIAPTLSPackageVersion`](../BundleResources/information-property-list/nsrequiresniaptlspackageversion.md) key, which can be set to enforce this mode globally, and the [`NSExceptionRequiresNIAPTLSPackageVersion`](../BundleResources/information-property-list/nsexceptionrequiresniaptlspackageversion.md) key to configure exceptions to the global policy on a per-domain basis.
 
-##### Configure Exceptions Only When Needed and Prefer Server Fixes
+### Configure Exceptions Only When Needed and Prefer Server Fixes
 
 ATS disallows a connection if the server fails to meet one of the security checks discussed in the previous section. Your best response is to update the server. If you can’t do that for some reason, you can specify exceptions in your app to disable one or more aspects of ATS.
 
@@ -93,7 +93,7 @@ You might only need to limit your ATS exception to a single domain. For example,
 
 You can use the `nscurl` command line tool to connect to a server using different combinations of ATS exceptions. This helps you quickly narrow down the source of any ATS failures you have and figure out what exceptions you need. See [Identifying the Source of Blocked Connections](./identifying-the-source-of-blocked-connections.md) for details.
 
-##### Provide Justification for Exceptions
+### Provide Justification for Exceptions
 
 Adding certain ATS exceptions to your app’s [`Information Property List`](../BundleResources/information-property-list.md) file requires you to provide justification, and might trigger additional App Store review for your app. Exceptions that require justification are:
 

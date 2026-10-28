@@ -13,9 +13,9 @@ List users in a class of an Apple School Manager organization.
 
 - [Obtaining information about people and classes](./obtaining-information-about-people-and-classes.md)
 
-#### Discussion
+## Discussion
 
-##### Example
+### Example
 
 **Request**:
 

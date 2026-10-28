@@ -23,7 +23,7 @@ func tileGroup(atColumn column: Int, row: Int) -> SKTileGroup?
 - (SKTileGroup *) tileGroupAtColumn:(NSUInteger) column row:(NSUInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 The tile group for the tile at the specified column and row.
 

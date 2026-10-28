@@ -5,7 +5,7 @@
 
 Verify that your app handles failed subscription renewals that are in the billing retry or billing grace period states, as well as failed Apple In-App Purchases.
 
-#### Overview
+## Overview
 
 Payments can fail unexpectedly at any stage of the billing cycle, such as when a payment card expires. Test your app’s user experience to ensure it handles these unexpected events, and provides appropriate levels of service when billing issues occur.
 
@@ -17,7 +17,7 @@ The sandbox environment renews auto-renewable subscriptions up to 12 times. For 
 
 For more information about subscription state changes when billing issues occur, see [Reducing Involuntary Subscriber Churn](./reducing-involuntary-subscriber-churn.md). For information about how apps determine access to subscription content, see [Handling Subscriptions Billing](./handling-subscriptions-billing.md).
 
-##### Configure the sandbox environment to simulate billing issues
+### Configure the sandbox environment to simulate billing issues
 
 Follow these steps on a test device running iOS 16 or iPadOS 16, or later:
 
@@ -31,7 +31,7 @@ Disabling this setting causes Apple In-App Purchases to fail, and auto-renewable
 
 This setting stays in a disabled state until you reenable it. Reenable it to simulate a customer resolving a billing issue.
 
-##### Enable Billing Grace Period in the sandbox environment
+### Enable Billing Grace Period in the sandbox environment
 
 To enable Billing Grace Period in the sandbox environment, log in to [App Store Connect](https://appstoreconnect.apple.com/login), and do the following:
 
@@ -46,7 +46,7 @@ To enable Billing Grace Period in the sandbox environment, log in to [App Store 
 
 To test billing issues for subscriptions with Billing Grace Period, first, purchase an auto-renewable subscription, and then configure the setting to simulate billing issues (as described above in [Configure the sandbox environment to simulate billing issues](./testing-failing-subscription-renewals-and-in-app-purchases.md#Configure-the-sandbox-environment-to-simulate-billing-issues)).
 
-##### Test subscriptions that enter a billing retry state
+### Test subscriptions that enter a billing retry state
 
 Auto-renewable subscriptions expire and enter a billing retry state when a subscription fails to auto-renew.
 
@@ -57,7 +57,7 @@ This test case assumes that Billing Grace Period is in a disabled state for the 
 3. Wait for the subscription period to renew. The renewal fails, and it enters a billing retry state.
 4. Check that your app recognizes the state. Subscriptions in a billing retry state that aren’t in a billing grace period are not entitled to service. StoreKit provides the [`isInBillingRetry`](./product/subscriptioninfo/renewalinfo/isinbillingretry.md) value in the [`Product.SubscriptionInfo.RenewalState`](./product/subscriptioninfo/renewalstate.md) object.
 
-##### Test subscriptions that enter a billing grace period
+### Test subscriptions that enter a billing grace period
 
 Auto-renewable subscriptions enter a billing grace period when both of the following occur:
 
@@ -76,7 +76,7 @@ To test subscriptions entering a billing grace period:
 
 > **Note**:  Auto-renewable subscriptions in a billing grace period state are entitled to service.
 
-##### Test billing problem messaging after a subscription enters a billing retry state
+### Test billing problem messaging after a subscription enters a billing retry state
 
 Auto-renewable subscriptions expire and enter a billing retry state when a subscription fails to auto-renew. The system displays a Billing Problem message when your app launches, unless your app chooses to delay the [`billingIssue`](./message/reason-swift.struct/billingissue.md) message. Use these steps to trigger the message and test how your app responds to the message in various views. For more information about managing these system messages, see [`Message`](./message.md).
 
@@ -91,7 +91,7 @@ To test when the system presents the Billing Problem sheet after subscriptions e
 
 You may perform this test with or without Billing Grace Period enabled.
 
-##### Test subscriptions that recover from billing issues
+### Test subscriptions that recover from billing issues
 
 A subscription is *recovered* when a billing retry succeeds. It exits a billing retry or billing grace period state, and is active again.
 
@@ -105,7 +105,7 @@ Repeat the test starting with a subscription in the billing grace period, as des
 
 The subscription billing cycle for a subscription that recovers from a billing retry state starts on the recovery date. The billing cycle for a subscription that recovers during a billing grace period doesn’t change.
 
-##### Test subscriptions that don’t recover from billing issues
+### Test subscriptions that don’t recover from billing issues
 
 Subscriptions exit a billing retry state when any of the following happens:
 
@@ -128,7 +128,7 @@ To test a subscription that a customer cancels, follow these steps:
 
 Repeat the test starting with a subscription in the billing retry state, as described above in [Test subscriptions that enter a billing retry state](./testing-failing-subscription-renewals-and-in-app-purchases.md#Test-subscriptions-that-enter-a-billing-retry-state).
 
-##### Test a failed Apple In-App Purchase
+### Test a failed Apple In-App Purchase
 
 To test a failed purchase attempt, follow these steps:
 

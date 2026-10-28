@@ -25,11 +25,11 @@ func CFURLCreateWithBytes(_ allocator: CFAllocator!, _ URLBytes: UnsafePointer<U
 extern CFURLRefCFURLCreateWithBytes(CFAllocatorRef allocator, const UInt8 *URLBytes, CFIndex length, CFStringEncoding encoding, CFURLRef baseURL);
 ```
 
-#### Return Value
+## Return Value
 
 A new `CFURL` object. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The specified string encoding will be used both to interpret `URLBytes`, and to interpret any percent-escapes within the string.
 

@@ -12,7 +12,7 @@ inline bool isTrustedNode(
  UInt16nodeID )
 ```
 
-#### Return Value
+## Return Value
 
 false if nodeID is not trusted
 

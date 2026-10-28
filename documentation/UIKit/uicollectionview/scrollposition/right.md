@@ -23,7 +23,7 @@ static var right: UICollectionView.ScrollPosition { get }
 UICollectionViewScrollPositionRight
 ```
 
-#### Discussion
+## Discussion
 
 This option is mutually exclusive with the [`left`](./left.md) and [`centeredHorizontally`](./centeredhorizontally.md) options.
 

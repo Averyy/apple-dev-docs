@@ -22,11 +22,11 @@ Decode an object as one of several expected types, failing if the archived type 
 func decodeObject(of classes: [AnyClass]?, forKey key: String) -> Any?
 ```
 
-#### Return Value
+## Return Value
 
 The decoded object, or `nil` if decoding fails.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to [`decodeObject(of:forKey:)`](./decodeobject%28of,forkey%29-7tmft.md), but accepts a set of classes that the decoded object can match. If [`requiresSecureCoding`](./requiressecurecoding.md) is [`true`](../../Swift/true.md), the decoded object’s class must be a member of the `classes` parameter, or a sublcass of a member.
 

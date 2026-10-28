@@ -23,7 +23,7 @@ func addCoordinatedAnimations(_ animations: (() -> Void)?, completion: (() -> Vo
 - (void) addCoordinatedAnimations:(void (^)()) animations completion:(void (^)()) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to coordinate your custom animations with the system animations for adding or removing focus.
 

@@ -20,7 +20,7 @@ Creates an environment creation options structure.
 init(skyboxMode: EnvironmentResource.SkyboxMode, samplingQuality: EnvironmentResource.CreateOptions.SamplingQuality = .fast, specularCubeDimension: Int? = nil, compression: EnvironmentResource.Compression = .default)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The skybox is not needed for image based lighting with `VirtualEnvironmentProbeComponent` and `ImageBasedLightComponent`.
 

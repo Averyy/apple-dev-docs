@@ -24,7 +24,7 @@ var outputSettings: [String : Any]? { get }
 @property (nonatomic, readonly, nullable) NSDictionary<NSString *,id> * outputSettings;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a dictionary that contains values for audio and video settings keys. A value of `nil` indicates that the track output vends samples in their original format as stored in the target track. In that case, the track output skips decoding and returns the samples in decode order. A non-`nil` value causes the track output to decode the samples and return them in presentation order.
 

@@ -25,7 +25,7 @@ class INNoteContent
 @interface INNoteContent : NSObject
 ```
 
-#### Overview
+## Overview
 
 You don’t create instances of this class directly. Instead, you create instances of the [`INTextNoteContent`](./intextnotecontent.md) or [`INImageNoteContent`](./inimagenotecontent.md) subclasses.
 

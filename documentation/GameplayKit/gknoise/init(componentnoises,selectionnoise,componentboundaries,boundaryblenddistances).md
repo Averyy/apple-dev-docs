@@ -24,11 +24,11 @@ convenience init(componentNoises noises: [GKNoise], selectionNoise: GKNoise, com
 + (instancetype) noiseWithComponentNoises:(NSArray<GKNoise *> *) noises selectionNoise:(GKNoise *) selectionNoise componentBoundaries:(NSArray<NSNumber *> *) componentBoundaries boundaryBlendDistances:(NSArray<NSNumber *> *) blendDistances;
 ```
 
-#### Return Value
+## Return Value
 
 A new noise object.
 
-#### Discussion
+## Discussion
 
 Use this method to create a composite noise map where different regions contain different kinds of noise. For example, you can generate realistic terrain textures by creating several noise objects to represent different biomes (such as ocean, grasslands, forests, and mountains), then combining them with this method. This method preserves the [`gradientColors`](./gradientcolors.md) property of each component noise object, so generating a colorized texture from the result with the [`SKTexture`](../../SpriteKit/sktexture.md) [`init(noiseMap:)`](../../SpriteKit/sktexture/init%28noisemap%29.md) method uses the color scheme for each component noise object in the regions where its content appears in the composite noise.
 

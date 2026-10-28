@@ -25,7 +25,7 @@ let NSMigrationDestinationObjectKey: String
 extern NSString * const NSMigrationDestinationObjectKey;
 ```
 
-#### Discussion
+## Discussion
 
 To access this key in a custom value expression string in the Xcode mapping model editor use `$destination`.
 

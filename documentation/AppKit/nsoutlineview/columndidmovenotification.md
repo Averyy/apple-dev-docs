@@ -19,7 +19,7 @@ class let columnDidMoveNotification: NSNotification.Name
 extern NSNotificationName NSOutlineViewColumnDidMoveNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the `NSOutlineView` object in which a column moved. The `userInfo` dictionary contains the following information:
 

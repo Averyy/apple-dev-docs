@@ -14,7 +14,7 @@
 kIOHIDValueScaleTypeCalibrated
 ```
 
-#### Discussion
+## Discussion
 
 Type for value that is scaled with respect to the calibration properties.
 

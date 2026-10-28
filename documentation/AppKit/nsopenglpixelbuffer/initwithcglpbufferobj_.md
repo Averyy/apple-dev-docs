@@ -15,11 +15,11 @@ Initializes and returns an OpenGL pixel buffer object that encapsulates an exist
 - (NSOpenGLPixelBuffer *) initWithCGLPBufferObj:(CGLPBufferObj) pbuffer;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`NSOpenGLPixelBuffer`](../nsopenglpixelbuffer.md) object.
 
-#### Discussion
+## Discussion
 
 If your application already has a CGL pixel buffer object, you can wrap it inside an [`NSOpenGLPixelBuffer`](../nsopenglpixelbuffer.md) object by using this initializer. This method retains the CGL pixel buffer object by calling the `CGLRetainPBuffer` function.
 

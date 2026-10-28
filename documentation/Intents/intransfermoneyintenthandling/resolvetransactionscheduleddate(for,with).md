@@ -29,7 +29,7 @@ optional func resolveTransactionScheduledDate(for intent: INTransferMoneyIntent)
 - (void) resolveTransactionScheduledDateForTransferMoney:(INTransferMoneyIntent *) intent withCompletion:(void (^)(INDateComponentsRangeResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the date on which to transfer money between the user’s accounts. Adjust the date, as needed, to ensure that you can perform the transfer. If the user doesn’t specify a date, assume that the user wants to transfer the money immediately.
 

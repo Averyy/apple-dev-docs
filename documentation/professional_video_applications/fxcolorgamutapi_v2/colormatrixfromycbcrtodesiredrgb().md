@@ -24,7 +24,7 @@ func colorMatrixFromYCbCrToDesiredRGB() -> FxMatrix44!
 
 - [Managing color space and gamut in plug-ins](../../Professional-Video-Applications/managing-color-space-and-gamut-in-plug-ins.md)
 
-#### Return Value
+## Return Value
 
 A 4x4 matrix for converting an RGB value into YCbCr.
 

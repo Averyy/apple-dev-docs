@@ -19,7 +19,7 @@ weak var owningView: NSView? { get set }
 @property (weak, nullable) NSView * owningView;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is `nil`.  To participate in Auto Layout, the layout guide must be added to a view by calling its [`addLayoutGuide(_:)`](../nsview/addlayoutguide%28_%29.md) method. Do not modify this property directly. Instead, use the view’s [`addLayoutGuide(_:)`](../nsview/addlayoutguide%28_%29.md) and [`removeLayoutGuide(_:)`](../nsview/removelayoutguide%28_%29.md) methods, which update this property as necessary.
 

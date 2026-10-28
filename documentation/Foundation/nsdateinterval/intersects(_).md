@@ -25,7 +25,7 @@ func intersects(_ dateInterval: DateInterval) -> Bool
 - (BOOL) intersectsDateInterval:(NSDateInterval *) dateInterval;
 ```
 
-#### Discussion
+## Discussion
 
 See [`intersection(with:)`](./intersection%28with%29.md) for more information about determining whether two date intervals intersect.
 

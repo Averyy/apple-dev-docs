@@ -25,7 +25,7 @@ case free
 SCNParticleOrientationModeFree
 ```
 
-#### Discussion
+## Discussion
 
 When using this mode, you can modify the rotation axis of each particle with the [`rotationAxis`](../scnparticlesystem/particleproperty/rotationaxis.md) key.
 

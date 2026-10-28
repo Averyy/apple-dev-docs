@@ -25,7 +25,7 @@ init(pixelBuffer: CVPixelBuffer, shape: [NSNumber])
 - (instancetype) initWithPixelBuffer:(CVPixelBufferRef) pixelBuffer shape:(NSArray<NSNumber *> *) shape;
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to create an [IOSurface](../../IOSurface/IOSurface.md)-backed `MLMultiArray` that reduces the inference latency by avoiding the buffer copy to and from some compute units.
 

@@ -15,11 +15,11 @@ Retains a Core Video OpenGL texture.
 extern CVOpenGLTextureRefCVOpenGLTextureRetain(CVOpenGLTextureRef texture);
 ```
 
-#### Return Value
+## Return Value
 
 For convenience, the Core Video OpenGL texture you want to retain.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to `CFRetain`, but is `NULL` safe.
 

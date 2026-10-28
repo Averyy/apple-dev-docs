@@ -20,7 +20,7 @@ Appends the contents of the given data table to the end of this data table.
 mutating func append(contentsOf newTable: MLDataTable)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: The columns of both data tables must have the same names and types. Otherwise, the data table will be invalidated.
 

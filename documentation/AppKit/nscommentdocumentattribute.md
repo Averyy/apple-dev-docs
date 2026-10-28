@@ -15,7 +15,7 @@ The document comments.
 extern NSAttributedStringDocumentAttributeKey NSCommentDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSString`](../Foundation/nsstring.md) object containing document comments.
 

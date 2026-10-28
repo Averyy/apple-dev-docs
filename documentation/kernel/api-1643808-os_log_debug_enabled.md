@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether debug-level logging is enabled for a 
 bool os_log_debug_enabled(os_log_t log);
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../ObjectiveC/yes.md) if debug-level logging is enabled, otherwise [`NO`](../ObjectiveC/no.md).
 

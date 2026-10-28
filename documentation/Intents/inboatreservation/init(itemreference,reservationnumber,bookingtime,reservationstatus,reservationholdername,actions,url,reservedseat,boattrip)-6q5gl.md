@@ -24,7 +24,7 @@ init(itemReference: INSpeakableString, reservationNumber: String?, bookingTime: 
 - (instancetype) initWithItemReference:(INSpeakableString *) itemReference reservationNumber:(NSString *) reservationNumber bookingTime:(NSDate *) bookingTime reservationStatus:(INReservationStatus) reservationStatus reservationHolderName:(NSString *) reservationHolderName actions:(NSArray<INReservationAction *> *) actions URL:(NSURL *) URL reservedSeat:(INSeat *) reservedSeat boatTrip:(INBoatTrip *) boatTrip;
 ```
 
-#### Return Value
+## Return Value
 
 A new `INBoatTripReservation` object or `nil` if the initializer can’t create one.
 

@@ -29,7 +29,7 @@ optional func resolveTasks(for intent: INSnoozeTasksIntent) async -> [INSnoozeTa
 - (void) resolveTasksForSnoozeTasks:(INSnoozeTasksIntent *) intent withCompletion:(void (^)(NSArray<INSnoozeTasksTaskResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the tasks to snooze. Use the intent object to obtain information about the tasks to snooze. Use the information in the [`INTask`](../intask.md) object to look up the corresponding task information in your app’s data structures. Return a resolution that includes as much information as you have available about the task.
 

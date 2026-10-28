@@ -20,7 +20,7 @@ object responseBodyV2
 - [Receiving App Store Server Notifications](./receiving-app-store-server-notifications.md)
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 The `signedPayload` object is a JWS representation. To get the transaction and subscription renewal details from the notification payload, process the `signedPayload` as follows:
 

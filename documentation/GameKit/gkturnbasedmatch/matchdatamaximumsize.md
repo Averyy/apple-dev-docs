@@ -37,7 +37,7 @@ var matchDataMaximumSize: Int { get }
 
 - [Starting turn-based matches and passing turns between players](../starting-turn-based-matches-and-passing-turns-between-players.md)
 
-#### Discussion
+## Discussion
 
 An error occurs if your game sends match data that exceeds this limit.
 

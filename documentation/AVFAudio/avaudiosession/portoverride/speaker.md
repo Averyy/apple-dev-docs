@@ -22,7 +22,7 @@ case speaker
 AVAudioSessionPortOverrideSpeaker
 ```
 
-#### Discussion
+## Discussion
 
 This override type is only valid for the [`playAndRecord`](../category-swift.struct/playandrecord.md) category.
 

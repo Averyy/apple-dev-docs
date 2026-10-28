@@ -20,7 +20,7 @@ var preservesAspectRatio: Bool { get set }
 @property (nonatomic, assign) BOOL preservesAspectRatio;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

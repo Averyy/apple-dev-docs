@@ -20,7 +20,7 @@ A boolean value that sets whether the solver rotates the joint.
 var active: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Leaf hierarchies that do not need to be directly constrained can be deactivated to reduce the compute cost of the solver.
 

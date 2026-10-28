@@ -21,11 +21,11 @@ Creates a collection containing the specified number of the given element.
 func repeatElement<T>(_ element: T, count n: Int) -> Repeated<T>
 ```
 
-#### Return Value
+## Return Value
 
 A collection that contains `count` elements that are all `element`.
 
-#### Discussion
+## Discussion
 
 The following example creates a `Repeated<Int>` collection containing five zeroes:
 

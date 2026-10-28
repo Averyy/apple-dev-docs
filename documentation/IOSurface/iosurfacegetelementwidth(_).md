@@ -24,7 +24,7 @@ func IOSurfaceGetElementWidth(_ buffer: IOSurfaceRef) -> Int
 size_t IOSurfaceGetElementWidth(IOSurfaceRef buffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns 0 if buffer is invalid.
 

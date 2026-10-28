@@ -19,7 +19,7 @@ init!()
 - (id) init;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.5 and later, this is equivalent to `initWithAddressBook:[ABAddressBook addressBook]`.
 

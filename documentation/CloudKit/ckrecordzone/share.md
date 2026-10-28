@@ -26,7 +26,7 @@ var share: CKRecord.Reference? { get }
 @property (copy, readonly, nullable) CKReference * share;
 ```
 
-#### Discussion
+## Discussion
 
 CloudKit sets this property only for fetched record zones that contain a share record; otherwise, it’s `nil`.
 

@@ -20,7 +20,7 @@ var messageCornerRadius: CGFloat { get }
 @property (nonatomic, assign, readonly) CGFloat messageCornerRadius;
 ```
 
-#### Discussion
+## Discussion
 
 The corner radius of the message when presented in the transcript. Use this value to create concentric rounded subviews inside your view. Use continuous corners (kCACornerCurveContinuous) on your view.
 

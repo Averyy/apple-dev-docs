@@ -21,7 +21,7 @@ var showsTabBadge: Bool { get set }
 @property (nonatomic) BOOL showsTabBadge;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to `true` to display a small red indicator on the tab to show that it requires action from the user, or is displaying ephemeral information.
 

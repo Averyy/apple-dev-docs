@@ -19,7 +19,7 @@ var words: [NSTextStorage] { get set }
 @property (copy) NSArray<NSTextStorage *> * words;
 ```
 
-#### Discussion
+## Discussion
 
 Unless you’re dealing with scriptability, you shouldn’t use or modify this property directly.
 

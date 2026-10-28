@@ -25,7 +25,7 @@ func stopLoading()
 - (void) stopLoading;
 ```
 
-#### Discussion
+## Discussion
 
 When this method is called, the subclass implementation should stop loading a request. This could be in response to a cancel operation, so protocol implementations must be able to handle this call while a load is in progress. When your protocol receives a call to this method, it should also stop sending notifications to the client.
 

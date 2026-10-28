@@ -24,7 +24,7 @@ var produceCell: Bool { get set }
 @property (nonatomic, readwrite) BOOL produceCell;
 ```
 
-#### Discussion
+## Discussion
 
 If set to `YES` then this layer will produce the internal cell of the LSTM unit as secondary output. Default value: `NO`.
 

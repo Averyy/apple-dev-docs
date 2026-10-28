@@ -23,7 +23,7 @@ func addTextField(configurationHandler: ((UITextField) -> Void)? = nil)
 - (void) addTextFieldWithConfigurationHandler:(void (^)(UITextField *textField)) configurationHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Calling this method adds an editable text field to the alert. You can call this method more than once to add additional text fields. The text fields are stacked in the resulting alert.
 

@@ -23,11 +23,11 @@ init(device: AVCaptureDevice, previewLayer: CALayer, configuration: AVCaptureExt
 - (instancetype) initWithDevice:(AVCaptureDevice *) device previewLayer:(CALayer *) previewLayer configuration:(AVCaptureExternalDisplayConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 An [`AVCaptureExternalDisplayConfigurator`](../avcaptureexternaldisplayconfigurator.md) instance.
 
-#### Discussion
+## Discussion
 
 An [`AVCaptureExternalDisplayConfigurator`](../avcaptureexternaldisplayconfigurator.md) is only applicable to external displays. It determines which properties to configure on the external display based on your provided configuration (see [`AVCaptureExternalDisplayConfiguration`](../avcaptureexternaldisplayconfiguration.md)). The configurator observes changes to your camera’‘s configuration, and when changes are observed, it modifies the external display’s properties to match.
 

@@ -25,11 +25,11 @@ func sel_isEqual(_ lhs: Selector, _ rhs: Selector) -> Bool
 extern BOOL sel_isEqual(SEL lhs, SEL rhs);
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](./yes.md) if `rhs` and `rhs` are equal, otherwise [`NO`](./no.md).
 
-#### Discussion
+## Discussion
 
 `sel_isEqual` is equivalent to `==`.
 

@@ -21,7 +21,7 @@ case unknown
 MPMovieSourceTypeUnknown
 ```
 
-#### Discussion
+## Discussion
 
 The movie type is not yet known.
 

@@ -21,7 +21,7 @@ Creates a timer format style that counts down within the interval you provide.
 init(countingDownIn interval: Range<Date>, showsHours: Bool = true, maxFieldCount: Int = 3, maxPrecision: Duration = .seconds(1))
 ```
 
-#### Discussion
+## Discussion
 
 The timer displays the remaining time, starting from the total interval duration and decreasing to zero.
 

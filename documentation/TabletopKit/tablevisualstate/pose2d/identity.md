@@ -15,7 +15,7 @@ The identity pose
 static var identity: TableVisualState.Pose2D { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identity pose is defined as `rotation = 0`, and `position = (0, 0)``.
 

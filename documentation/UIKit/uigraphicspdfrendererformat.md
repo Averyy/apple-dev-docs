@@ -23,7 +23,7 @@ class UIGraphicsPDFRendererFormat
 @interface UIGraphicsPDFRendererFormat : UIGraphicsRendererFormat
 ```
 
-#### Overview
+## Overview
 
 Use this subclass of [`UIGraphicsRendererFormat`](./uigraphicsrendererformat.md) to provide context configuration parameters to a [`UIGraphicsPDFRenderer`](./uigraphicspdfrenderer.md).
 

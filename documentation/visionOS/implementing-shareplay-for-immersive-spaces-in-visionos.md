@@ -10,7 +10,7 @@ Enable collaborative spatial experiences by using SharePlay to synchronize 3D co
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 Immersive spaces in visionOS are unbounded 3D environments that allow you to place content anywhere in someone’s surroundings. With SharePlay, multiple people can collaborate within these spaces, creating synchronized shared experiences for gaming, training, collaboration, and entertainment.
 
@@ -29,7 +29,7 @@ This sample code project provides a small-scale app that demonstrates:
 
 For a more in-depth SharePlay sample code project, see [Building a guessing game for visionOS](../GroupActivities/building-a-guessing-game-for-visionos.md).
 
-##### Define a custom group activity
+### Define a custom group activity
 
 The sample creates a [`GroupActivity`](../GroupActivities/groupactivity.md) that defines the shared experience and allows you to start an activity-related SharePlay session. The activity provides metadata that appears in the system UI when people share an experience.
 
@@ -50,7 +50,7 @@ struct ChangeColorActivity: GroupActivity, Transferable {
 
 See [Defining your app’s SharePlay activities](../GroupActivities/defining-your-apps-shareplay-activities.md) for more information.
 
-##### Start a SharePlay session
+### Start a SharePlay session
 
 The app displays a Start button when someone isn’t part of an active SharePlay session. When a person presses the Start button, the sample calls [`activate()`](../GroupActivities/groupactivity/activate%28%29.md) to configure a session and invite other participants to join the activity.
 
@@ -82,7 +82,7 @@ In visionOS, if a person is on a FaceTime call or is nearby sharing with someone
 
 > **Note**: In visionOS, windows and immersive spaces handle SharePlay sessions differently. This sample demonstrates using an immersive space. For information on starting a SharePlay session in a window, see [Presenting SharePlay activities from your app’s UI](../GroupActivities/promoting-shareplay-activities-from-your-apps-ui.md).
 
-##### Join and manage the activity
+### Join and manage the activity
 
 When someone starts a SharePlay session, the system creates a [`GroupSession`](../GroupActivities/groupsession.md) for the custom activity to synchronize content between devices. To join a started activity, the sample continuously monitors for new `ChangeColorActivity` sessions. When one becomes available, the sample starts observing the session state and creates a `SessionController` to manage the session.
 
@@ -188,7 +188,7 @@ The session controller handles observing when participants join or leave, and br
 
 For more information, see [Joining and managing a shared activity](../GroupActivities/joining-and-managing-a-shared-activity.md).
 
-##### Send and receive messages to synchronize state
+### Send and receive messages to synchronize state
 
 When someone taps the cube, the sample sets the cube’s color to a random color.
 
@@ -232,7 +232,7 @@ struct UpdateColorMessage: Codable, Sendable {
 
 > ❗ **Important**: The update count ensures the app can determine which change takes precedence when multiple participants make changes simultaneously.
 
-##### Apply color changes
+### Apply color changes
 
 To send the new color change message, the sample creates an `UpdateColorMessage` instance with the new color and incremented update count before sending it with `GroupSessionMessenger`.
 

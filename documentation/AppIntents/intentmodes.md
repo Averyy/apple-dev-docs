@@ -21,7 +21,7 @@ A set of options you use to configure the runtime behavior of an app intent.
 struct IntentModes
 ```
 
-#### Overview
+## Overview
 
 This structure defines the mode values you can assign to the [`supportedModes`](./appintent/supportedmodes.md) property of your app intent. Intent modes indicate whether your app needs to run in the foreground or background when performing the app intent’s action. For example, the [`foreground`](./intentmodes/foreground.md) mode requires your app intent code to run in a foreground process.
 

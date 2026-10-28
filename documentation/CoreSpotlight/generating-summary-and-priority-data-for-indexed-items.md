@@ -5,13 +5,13 @@
 
 Summarize mail, message, and audio transcripts or assess the priority of mail and messages using Spotlight and Apple Intelligence.
 
-#### Overview
+## Overview
 
 Apps that offer email, messaging, or audio transcription can use Spotlight and Apple Intelligence to generate additional information about that content. When you index your app’s email or message threads or your app’s audio transcripts, you can tell Spotlight to summarize that content with the help of Apple Intelligence. You can also ask it to classify the priority of SMS messages to help you assess their importance. Spotlight returns the results of these requests to you asynchronously so you can integrate them into your content.
 
 Apps can use summary and priority information to augment the information they display in their interface. You might highlight SMS message threads with high priorities or elevate them to a more visible part of your interface. Similarly, you might present content summaries for email or message threads when space is constrained.
 
-##### Ask Spotlight to summarize or classify your searchable items
+### Ask Spotlight to summarize or classify your searchable items
 
 Spotlight returns summary and priority data only for the [`CSSearchableItem`](./cssearchableitem.md) objects you designate. Generating summaries and classifying the priority of messages requires you to provide specific information in your app’s indexable content. Spotlight also requires you to enable the generation of summary and priority information on an item-by-item basis to minimize the impact on system performance and battery life. For example, you might enable this capability only on your app’s email content and not on your app’s other content.
 
@@ -53,7 +53,7 @@ func indexEmail(email: MyEmail)  {
 
 When you submit an item for indexing, Apple Intelligence generates the requested summary or priority information if the item contains the required data. The system doesn’t report any errors if the required data isn’t present or the resources to generate the content aren’t available. For example, the system might forego generating summaries when battery power is limited.
 
-##### Receive item updates in your indexing delegate
+### Receive item updates in your indexing delegate
 
 When Apple Intelligence successfully generates summary or priority data for an item, Spotlight adds that data to the item’s attributes and notifies your app. Spotlight stores content summaries in the [`textContentSummary`](./cssearchableitemattributeset/textcontentsummary.md), or [`transcribedTextContent`](./cssearchableitemattributeset/transcribedtextcontent.md) property of the item’s attribute set. When classifying the priority of messages, Spotlight updates the [`isPriority`](./cssearchableitemattributeset/ispriority.md) property of the item’s attributes.
 

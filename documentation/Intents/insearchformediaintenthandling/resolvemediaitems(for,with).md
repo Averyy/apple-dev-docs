@@ -28,7 +28,7 @@ optional func resolveMediaItems(for intent: INSearchForMediaIntent) async -> [IN
 - (void) resolveMediaItemsForSearchForMedia:(INSearchForMediaIntent *) intent withCompletion:(void (^)(NSArray<INSearchForMediaMediaItemResolutionResult *> *resolutionResults)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the media items for which to search. Always strive toward a successful resolution to the specific media items, but feel free to ask for confirmation of the selected media items if there’s some uncertainty about whether your app found the correct media.
 

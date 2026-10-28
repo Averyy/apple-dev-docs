@@ -23,11 +23,11 @@ func flatMap<NewSuccess>(_ transform: (Success) -> Result<NewSuccess, Failure>) 
 
 Available when `Failure` conforms to `Error`.
 
-#### Return Value
+## Return Value
 
 A `Result` instance, either from the closure or the previous `.failure`.
 
-#### Discussion
+## Discussion
 
 Use this method to avoid a nested result when your transformation produces another `Result` type.
 

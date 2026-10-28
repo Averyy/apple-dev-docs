@@ -23,11 +23,11 @@ func sec_protocol_options_are_equal(_ optionsA: sec_protocol_options_t, _ option
 bool sec_protocol_options_are_equal(sec_protocol_options_t optionsA, sec_protocol_options_t optionsB);
 ```
 
-#### Return Value
+## Return Value
 
 True if equal, and false otherwise.
 
-#### Discussion
+## Discussion
 
 Compare two `sec_protocol_options_t` instances.
 

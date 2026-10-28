@@ -25,7 +25,7 @@ func CFTimeZoneGetName(_ tz: CFTimeZone!) -> CFString!
 extern CFStringRefCFTimeZoneGetName(CFTimeZoneRef tz);
 ```
 
-#### Return Value
+## Return Value
 
 A string containing the geopolitical region name that identifies `tz`. Ownership follows the [The Get Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-SW1).
 

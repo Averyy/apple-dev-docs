@@ -21,7 +21,7 @@ Removes the specified database changes from the state.
 - (void) removePendingDatabaseChanges:(NSArray<CKSyncEnginePendingDatabaseChange *> *) changes;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you no longer want the sync engine to send certain pending changes.
 

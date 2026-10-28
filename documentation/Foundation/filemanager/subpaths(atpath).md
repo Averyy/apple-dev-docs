@@ -25,11 +25,11 @@ func subpaths(atPath path: String) -> [String]?
 - (NSArray<NSString *> *) subpathsAtPath:(NSString *) path;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSString`](../nsstring.md) objects, each of which contains the path of an item in the directory specified by `path`. If `path` is a symbolic link, this method traverses the link. This method returns `nil` if it cannot retrieve the device of the linked-to file.
 
-#### Discussion
+## Discussion
 
 This method recurses the specified directory and its subdirectories. The method skips the “`.`” and “`..`” directories at each level of the recursion.
 
@@ -44,7 +44,7 @@ if ([fileManager fileExistsAtPath:fontPath isDirectory:&isDir] && isDir)
     subpaths = [fileManager subpathsAtPath:fontPath];
 ```
 
-##### Special Considerations
+### Special Considerations
 
 In macOS 10.5 and later, use [`subpathsOfDirectory(atPath:)`](./subpathsofdirectory%28atpath%29.md) instead.
 

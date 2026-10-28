@@ -21,7 +21,7 @@ Creates a new collection containing the specified number of a single, repeated v
 init(repeating repeatedValue: Self.Element, count: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Here’s an example of creating an array initialized with five strings containing the letter *Z*.
 

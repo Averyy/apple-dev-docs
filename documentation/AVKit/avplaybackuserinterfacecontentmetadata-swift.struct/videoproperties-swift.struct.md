@@ -17,7 +17,7 @@ Properties specific to video content.
 struct VideoProperties
 ```
 
-#### Overview
+## Overview
 
 The presence of a `VideoProperties` instance indicates the content contains video. Use [`AVPlaybackUserInterfaceContentMetadata.VideoProperties`](./videoproperties-swift.struct.md) to provide the natural presentation size for video content.
 

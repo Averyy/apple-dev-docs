@@ -19,7 +19,7 @@ var acceptsFirstResponder: Bool { get }
 @property (readonly) BOOL acceptsFirstResponder;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the text field is editable and can become the first responder; otherwise, [`false`](../../Swift/false.md).
 

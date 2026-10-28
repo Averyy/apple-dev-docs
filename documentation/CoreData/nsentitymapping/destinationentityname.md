@@ -25,7 +25,7 @@ var destinationEntityName: String? { get set }
 @property (copy, nullable) NSString * destinationEntityName;
 ```
 
-#### Discussion
+## Discussion
 
 Mappings are not directly bound to entity descriptions. You can use the migration manager’s [`destinationEntity(for:)`](../nsmigrationmanager/destinationentity%28for%29.md) method to retrieve the entity description for this entity name.
 

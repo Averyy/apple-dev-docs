@@ -20,7 +20,7 @@ Creates a geometric pin that attaches to a skeletal joint.
 init(named name: String, skeletalJointName: String, offsetPosition: SIMD3<Float> = SIMD3<Float>(0, 0, 0), offsetOrientation: simd_quatf = simd_quatf(ix: 0, iy: 0, iz: 0, r: 1))
 ```
 
-#### Discussion
+## Discussion
 
 The current animated joint transform defines the position and orientation of the pin.
 

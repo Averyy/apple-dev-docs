@@ -18,7 +18,7 @@ typedef struct IOHIDDeviceQueueInterface {
 } IOHIDDeviceQueueInterface;
 ```
 
-#### Overview
+## Overview
 
 The functions listed here will work with any version of the IOHIDDeviceQueueInterface. This behavior is useful when you need to keep track of all values of an input element, rather than just the most recent one.
 

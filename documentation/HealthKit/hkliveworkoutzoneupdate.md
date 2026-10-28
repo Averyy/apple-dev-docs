@@ -27,7 +27,7 @@ class HKLiveWorkoutZoneUpdate
 
 - [Accessing workout zone data](./accessing-workout-zone-data.md)
 
-#### Overview
+## Overview
 
 This structure provides details about zone changes as they occur during a workout. The system sends updates to the [`HKLiveWorkoutBuilderDelegate`](./hkliveworkoutbuilderdelegate.md) when the person moves between zones.
 

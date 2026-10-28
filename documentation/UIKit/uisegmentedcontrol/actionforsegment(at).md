@@ -23,7 +23,7 @@ func actionForSegment(at segment: Int) -> UIAction?
 - (UIAction *) actionForSegmentAtIndex:(NSUInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 The [`UIAction`](../uiaction.md) for the segment at the index you specify, or `nil` if the segment doesn’t have an action assigned.
 

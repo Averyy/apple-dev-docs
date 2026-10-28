@@ -24,7 +24,7 @@ init!(bool value: Bool, in context: JSContext!)
 + (JSValue *) valueWithBool:(BOOL) value inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 A JavaScript Boolean value.
 

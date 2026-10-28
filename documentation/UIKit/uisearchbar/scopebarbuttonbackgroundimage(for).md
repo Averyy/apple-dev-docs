@@ -23,11 +23,11 @@ func scopeBarButtonBackgroundImage(for state: UIControl.State) -> UIImage?
 - (UIImage *) scopeBarButtonBackgroundImageForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The background image for the scope bar button in `state`.
 
-#### Discussion
+## Discussion
 
 If the background image is an image returned from [`stretchableImage(withLeftCapWidth:topCapHeight:)`](../uiimage/stretchableimage%28withleftcapwidth,topcapheight%29.md) (`UIImage`), the cap widths are calculated from that information, otherwise, the cap width is calculated by subtracting one from the image’s width then dividing by 2. The cap widths are used as the margins for text placement. To adjust the margin use the margin adjustment methods.
 

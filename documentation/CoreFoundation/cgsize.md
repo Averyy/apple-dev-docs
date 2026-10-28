@@ -25,7 +25,7 @@ struct CGSize
 struct CGSize;
 ```
 
-#### Overview
+## Overview
 
 A [`CGSize`](./cgsize.md) structure is sometimes used to represent a distance vector, rather than a physical size. As a vector, its values can be negative. To normalize a [`CGRect`](./cgrect.md) structure so that its size is represented by positive values, call the [`standardized`](./cgrect/standardized.md) function.
 

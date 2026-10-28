@@ -23,7 +23,7 @@ func supportsManifestVersion(_ manifestVersion: Double) -> Bool
 - (BOOL) supportsManifestVersion:(double) manifestVersion;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `YES` if the extension specified a manifest version that is greater than or equal to `manifestVersion`.
 

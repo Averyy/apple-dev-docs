@@ -5,11 +5,11 @@
 
 Structure your nodes for maximum performance.
 
-#### Overview
+## Overview
 
 As a high-level graphics framework, you configure your scene by laying out nodes, and `SpriteKit` builds the [Metal](https://developer.apple.com/library/archive/releasenotes/General/WhatsNewIniOS/Articles/iOS10.html#//apple_ref/doc/uid/TP40017084-SW36) draw calls for you that actually render the content. Thus, you have little control over the amount of low-level graphics work that SpriteKit does, but this article gives you hints that can speed up SpriteKit’s efforts.
 
-##### Show Draw Count
+### Show Draw Count
 
 Each draw call is an expensive operation; the more graphical elements you can pack into a single draw, the faster your scene can be rendered, and thus the higher frames per second it can achieve.
 
@@ -26,7 +26,7 @@ In general, all nodes can be rendered in a single draw call that came from the s
 
 For all other SpriteKit nodes that draw, pay attention to the [`showsDrawCount`](./skview/showsdrawcount.md) statistic  as you develop your app to gain an understanding of which configurations affect draw count.
 
-##### Show Node Count
+### Show Node Count
 
 The number of nodes in your scene relates to the number of draw calls. Therefore, minimizing the number of nodes in your scene is a good practice to keep the draw call count down. Showing the node count in your scene is done through the `SKView` [`showsNodeCount`](./skview/showsnodecount.md) property.
 

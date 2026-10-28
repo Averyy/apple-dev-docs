@@ -23,7 +23,7 @@ var isSelected: Bool { get set }
 @property (nonatomic, assign, getter=isSelected) BOOL selected;
 ```
 
-#### Discussion
+## Discussion
 
 For switches, the app can manually set `isSelected`.
 

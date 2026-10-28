@@ -5,7 +5,7 @@
 
 Configure your app to help people understand when background processes may continue after they close your app.
 
-#### Overview
+## Overview
 
 macOS provides a number of ways for apps and services to perform useful tasks for people, including:
 
@@ -28,17 +28,17 @@ When an app runs in the background for the first time, macOS also presents a not
 
 ![An screenshot of a notification that informs someone that an app they quit has background processes that continue to run.](https://developer.apple.com/tutorials/images/com.apple.appkit/background-app-running-notification@2x.png)
 
-#### Keep people in charge of what’s running
+## Keep people in charge of what’s running
 
 People need to have control over when an app runs and how it utilizes the resources on their Mac: a best practice is to ensure apps running in macOS are visible. This means an app is visible in the Dock, menu bar, Control Center, or listed in the Background Items list in System Settings. Helper apps, services, or other processes that an app starts also need to end when an app quits or need to give people the capability to stop them.
 
 Apps running in macOS have a number of options available to manage their use of background processes, depending on what kinds of background services the app uses. The following scenarios describe how to keep people informed on what an app is doing on their behalf and enable them to control when and for how long these apps and services run.
 
-#### Provide a control to manage long running work after an app quits
+## Provide a control to manage long running work after an app quits
 
 In the scenarios where an app has to finish up a long running task (such as cloud syncing operations, or importing or exporting data) after someone quits, having a visible UI element, such as a progress bar indicates to the system that the background processing can continue. Another strategy is to use a [`MenuBarExtra`](../SwiftUI/menubarextra.md) to provide progress updates and include some way to control the action. You can implement this either by a menu bar extra command that returns the app to a visible state — which makes the app reappear in the Dock — or by giving people additional options in menu bar extra such as the ability to suspend or cancel the background activity (for example, through a “Quit” or “Stop XXX activity” command), or both.
 
-#### Manage a persistent app-related background service
+## Manage a persistent app-related background service
 
 If your app needs a persistent background service to support its activities, consider using the [Service Management](../ServiceManagement/ServiceManagement.md) framework to register a launch agent or launch daemon. Registering a service using the [`SMAppService`](../ServiceManagement/smappservice.md) notifies someone about the new background item. Someone can then, if necessary, disable registered services in System Settings.
 
@@ -46,7 +46,7 @@ Test your app when the service is in a disabled state (toggled off) in the Syste
 
 ![An screenshot of System Settings that shows details of apps that start at login or run in the background.](https://developer.apple.com/tutorials/images/com.apple.appkit/background-app-settings@2x.png)
 
-#### Control apps without a user interface (UI)
+## Control apps without a user interface (UI)
 
 Some apps don’t have a UI. For example, an app that handles a custom URL scheme in the form of links for a cloud storage service. Such an app may contact a server to determine the content type and then launch a different app to open the provided URL. The system may detect these apps as a background apps. If the app isn’t visible and continues to run, the system presents the background process continuation alert as shown above.
 
@@ -59,11 +59,11 @@ Non-UI apps may use one or the other of these options (doing both also works, bu
 
 For an example of a GUI-less agent app, see [Updating your app package installer to use the new Service Management API](../ServiceManagement/updating-your-app-package-installer-to-use-the-new-service-management-api.md).
 
-#### Understand how implementation decisions affect processes management
+## Understand how implementation decisions affect processes management
 
 > **Note**: These best practices are not mutually exclusive, and depend on the your app’s specific architecture. You may need to use these in combination to ensure your background processes terminate properly depending on your app’s components and how their specific implementations work.
 
-##### Send quit or terminate events to purely background apps
+### Send quit or terminate events to purely background apps
 
 If your visible application directly launches background / non-visible applications to perform work, you should ensure the applications you launched terminate before your visible applications completes its own exit process. You can ensure this by using one of two methods:
 
@@ -86,7 +86,7 @@ If your visible application directly launches background / non-visible applicati
 
 1. Set the property [`automaticTerminationSupportEnabled`](../Foundation/processinfo/automaticterminationsupportenabled.md) or [`NSSupportsSuddenTermination`](../BundleResources/information-property-list/nssupportssuddentermination.md) in the app’s [`Information Property List`](../BundleResources/information-property-list.md) in Xcode. The choice of which method to use depends on whether your non-UI app needs a graceful shutdown (`NSSupportsAutomaticTermination`) or whether it can tolerate a sudden termination with no warning (`NSSupportsSuddenTermination`).
 
-#### Managing Exec’ed Processes
+## Managing Exec’ed Processes
 
 If your app creates background processes using `system()` , `fork()`, or `posix_spawn()` to start other processes from your app, then ensure that these processes are terminated as your app quits by adopting one of these best practices.
 
@@ -94,7 +94,7 @@ If your app creates background processes using `system()` , `fork()`, or `posix_
 - If your app needs to start a long-term process which runs after your app terminates, consider using a launch agent managed with [`SMAppService`](../ServiceManagement/smappservice.md) instead of using `fork()`, `posix_spawn()`, or `system()`, which allows a person to control this in the System Settings app pane.
 - If your app needs to share information or processing between a group of apps, look into a per-user XPC service or a launch agent. For more information on launch agents, see [Service Management](../ServiceManagement/ServiceManagement.md).
 
-#### Manage self-backgrounding apps
+## Manage self-backgrounding apps
 
 There are certain types of apps that start as GUI apps, but then remove themselves from the Dock using [`TransformProcessType(_:_:)`](../applicationservices/api-1462420-transformprocesstype.md). Apps which are not present in the Dock, or which transition between being present in the Dock while running and not-present in the Dock while remaining running have a different status, depending on how they present themselves after launch:
 

@@ -24,11 +24,11 @@ func startHardware() throws
 - (BOOL) startHardwareAndReturnError:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 - [`false`](../../Swift/false.md) if the operation failed.
 
-#### Discussion
+## Discussion
 
 > **Handling Errors in Swift**:  In Swift, this method returns `Void` and is marked with the `throws` keyword to indicate that it throws an error in cases of failure.
 >

@@ -20,7 +20,7 @@ A mode that displays the texture coordinates as a color.
 case textureCoordinates
 ```
 
-#### Discussion
+## Discussion
 
 Adding a [`ModelDebugOptionsComponent`](../../modeldebugoptionscomponent.md) with a visualization mode of `textureCoordinates` to an entity tells RealityKit to draw that entity’s UV texture coordinates as its surface color. RealityKit draws the texture coordinates by using its `U` and `V` values as the `R` and `G` components of the color, using a value of `0` for the color’s `B` component.
 

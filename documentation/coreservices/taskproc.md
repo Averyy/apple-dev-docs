@@ -16,7 +16,7 @@ Defines the entry point of a task.
 typedef OSStatus (*TaskProc)(void *parameter);
 ```
 
-#### Discussion
+## Discussion
 
 For example, this is how you would declare the application-defined function if you were to name the function `MyTaskProc`:
 

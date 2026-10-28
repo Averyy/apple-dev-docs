@@ -16,7 +16,7 @@ Sets the lifetime of an element in seconds.
 void module::setLifetime(float lifetime)
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to control how long an element will exist before being automatically removed from the system.
 

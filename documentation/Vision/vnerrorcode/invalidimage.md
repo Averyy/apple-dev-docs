@@ -16,7 +16,7 @@ case invalidImage
 VNErrorInvalidImage
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when you pass an invalid image to an operation, such as passing an image with no dimensions.
 

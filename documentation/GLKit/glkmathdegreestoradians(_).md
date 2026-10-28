@@ -22,7 +22,7 @@ func GLKMathDegreesToRadians(_ degrees: Float) -> Float
 static float GLKMathDegreesToRadians(float degrees);
 ```
 
-#### Return Value
+## Return Value
 
 The converted angle in radians.
 

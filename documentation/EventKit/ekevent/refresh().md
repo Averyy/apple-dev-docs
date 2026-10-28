@@ -24,11 +24,11 @@ func refresh() -> Bool
 - (BOOL) refresh;
 ```
 
-#### Return Value
+## Return Value
 
 If the event was successfully refreshed, [`true`](../../Swift/true.md); otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 You should call this method only on events that your application is editing, and only when your application receives the [`EKEventStoreChangedNotification`](../ekeventstorechangednotification.md) notification. If this method returns [`false`](../../Swift/false.md), the event has been deleted or otherwise invalidated, and you should not continue to use it.
 

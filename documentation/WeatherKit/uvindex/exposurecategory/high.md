@@ -21,7 +21,7 @@ The UV index is high.
 case high
 ```
 
-#### Discussion
+## Discussion
 
 The valid values of this property are 6 and 7.
 

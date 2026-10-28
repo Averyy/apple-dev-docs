@@ -19,11 +19,11 @@ func createDocumentFragment(withMarkupString markupString: String!, baseURL: URL
 - (DOMDocumentFragment *) createDocumentFragmentWithMarkupString:(NSString *) markupString baseURL:(NSURL *) baseURL;
 ```
 
-#### Return Value
+## Return Value
 
 A `DOMDocumentFragment` derived from the original markup string.
 
-#### Discussion
+## Discussion
 
 This is a convenience method for the `createDocumentFragment` method in `DOMDocument`. It creates a fragment that has the HTML markup parsed into child nodes of the fragment using the `baseURL` to resolve any relative paths for images or other resources.
 

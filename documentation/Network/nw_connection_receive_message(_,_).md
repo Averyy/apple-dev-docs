@@ -25,7 +25,7 @@ func nw_connection_receive_message(_ connection: nw_connection_t, _ completion: 
 void nw_connection_receive_message(nw_connection_t connection, nw_connection_receive_completion_t completion);
 ```
 
-#### Discussion
+## Discussion
 
 Receiving messages allows you to deal with complete datagrams or application-layer messages without needing to reconstruct a stream.
 

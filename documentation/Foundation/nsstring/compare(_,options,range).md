@@ -25,11 +25,11 @@ func compare(_ string: String, options mask: NSString.CompareOptions = [], range
 - (NSComparisonResult) compare:(NSString *) string options:(NSStringCompareOptions) mask range:(NSRange) rangeOfReceiverToCompare;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an [`ComparisonResult`](../comparisonresult.md) value that indicates the lexical ordering. [`ComparisonResult.orderedAscending`](../comparisonresult/orderedascending.md) the receiver precedes `aString` in lexical ordering, [`ComparisonResult.orderedSame`](../comparisonresult/orderedsame.md) the receiver and `aString` are equivalent in lexical value, and [`ComparisonResult.orderedDescending`](../comparisonresult/ordereddescending.md) if the receiver follows `aString`.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to invoking [`compare(_:options:range:locale:)`](./compare%28_,options,range,locale%29.md) with a `nil` locale.
 

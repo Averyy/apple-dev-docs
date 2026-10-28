@@ -27,7 +27,7 @@ func BNNSPoolingFilterApplyBatchEx(_ filter: BNNSFilter?, _ batch_size: Int, _ i
 int BNNSPoolingFilterApplyBatchEx(BNNSFilter filter, size_t batch_size, const void *in, size_t in_stride, void *out, size_t out_stride, const BNNSDataType indices_data_type, void *indices, size_t idx_stride);
 ```
 
-#### Discussion
+## Discussion
 
 This function is an extension to [`BNNSPoolingFilterApplyBatch(_:_:_:_:_:_:_:_:)`](./bnnspoolingfilterapplybatch%28_,_,_,_,_,_,_,_%29.md) that supports 32- and 64-bit unsigned-integer indices for max pooling and unpooling.
 

@@ -16,7 +16,7 @@ Asks the window’s content for its size.
 func sizeThatFits(_ proposal: ProposedViewSize) -> CGSize
 ```
 
-#### Return Value
+## Return Value
 
 The size that the content chooses for itself, given the proposal from its container view.
 

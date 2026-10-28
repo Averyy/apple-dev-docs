@@ -5,7 +5,7 @@
 
 Record useful debugging and analysis information, and include dynamic content in your messages.
 
-#### Overview
+## Overview
 
 Insert log messages at appropriate points in your code and use them to diagnose issues later. Typically, you use log messages to:
 
@@ -17,7 +17,7 @@ Insert log messages at appropriate points in your code and use them to diagnose 
 
 Messages may contain more than just static strings. The unified logging system allows you to include custom data from your app, and format that data to make it more readable. Like `fprintf`, you can incorporate strings, numbers, Objective-C objects, and other custom data types from your app directly into your log messages. When data types contain sensitive user information, the system has privacy options that hide the actual values without losing any filtering capabilities.
 
-##### Create a Log Object to Organize Messages
+### Create a Log Object to Organize Messages
 
 A log object collects messages associated with a particular part of your app. When you generate log messages, you do so either directly from, or in conjunction with, a log object that you create. The type of log object you create depends on whether you write your code using Swift or Objective-C.
 
@@ -31,7 +31,7 @@ To prevent the system from displaying an overwhelmingly large number of log mess
 
 If you don’t need to filter messages, [`Logger`](./logger.md) and [`OSLog`](./oslog.md) provide a default log for storing messages. You might use the default log to record messages that don’t require a specific subsystem and category.
 
-##### Choose the Appropriate Log Level for Each Message
+### Choose the Appropriate Log Level for Each Message
 
 Log levels define the severity and importance of a particular message, and you specify a log level value each time you record a message. The log level you choose determines how the system handles the message. The system stores all messages in memory initially, and it writes messages with more severe log levels to disk. The following table lists the log levels in increasing order of severity.
 
@@ -49,7 +49,7 @@ Normally, the system stores debug and info messages only in memory, but you can 
 
 The severity of the log level impacts the speed at which the system logs the information. Debug logs have very low overhead because the system stores them only in memory. Faults and other severe messages incur more overhead because the system often captures additional information and writes all of that information to disk.
 
-##### Generate a Log Message
+### Generate a Log Message
 
 To generate a log message:
 
@@ -70,7 +70,7 @@ os_log_with_type(customLog, OS_LOG_TYPE_ERROR, "An error occurred!");
 
 ```
 
-##### Include Custom Data Values in Log Messages
+### Include Custom Data Values in Log Messages
 
 Message strings may include the content of program variables. How you include these variables depends on which programming language you use:
 
@@ -92,7 +92,7 @@ os_log(customLog, "The user selected the color %@", selectedColor);
 os_log(customLog, "%.*P", 11, pointer);
 ```
 
-##### Format Custom Values in Message Strings
+### Format Custom Values in Message Strings
 
 The unified logging system formats Swift interpolated variables based on the default settings, but you can apply custom formatting to your variables to make them more readable. In particular, you can:
 
@@ -145,7 +145,7 @@ os_log(customLog, "The UUID is %{uuid}.*P", (int)sizeof(uuid_t), uuid);
 
 For information about the options to use when formatting values, see [`OSLogStringAlignment`](./oslogstringalignment.md), [`OSLogIntegerFormatting`](./oslogintegerformatting.md), [`OSLogFloatFormatting`](./oslogfloatformatting.md), [`OSLogBoolFormat`](./oslogboolformat.md), [`OSLogInt32ExtendedFormat`](./oslogint32extendedformat.md), and [`OSLogPointerFormat`](./oslogpointerformat.md).
 
-##### Redact Sensitive User Data from a Log Message
+### Redact Sensitive User Data from a Log Message
 
 Log messages that contain sensitive user data present a potential problem for users, because anyone with access to the logs or the user’s computer can see the information. To protect the privacy of your users, try to limit your log messages to static strings and numbers that you define. If you must include dynamically generated data in your messages, redact any values that contain sensitive user information.
 

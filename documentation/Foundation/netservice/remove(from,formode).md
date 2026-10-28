@@ -26,7 +26,7 @@ func remove(from aRunLoop: RunLoop, forMode mode: RunLoop.Mode)
 - (void) removeFromRunLoop:(NSRunLoop *) aRunLoop forMode:(NSRunLoopMode) mode;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method in conjunction with [`schedule(in:forMode:)`](./schedule%28in,formode%29.md) to transfer the service to a different run loop. Although it is possible to remove an `NSNetService` object completely from any run loop and then attempt actions on it, it is an error to do so.
 

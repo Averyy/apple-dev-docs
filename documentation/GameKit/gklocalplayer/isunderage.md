@@ -37,7 +37,7 @@ var isUnderage: Bool { get }
 
 - [Authenticating a player](../authenticating-a-player.md)
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), Game Center disables some features for the local player. On all platforms, Game Center provides the value for the underage property for the Game Center account that the player signs into on the device. Note that the Game Center account defaults to the iCloud account that the player signs into on the device, but the player can sign into a different Game Center account.
 

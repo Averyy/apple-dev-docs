@@ -19,11 +19,11 @@ func es_set_deadline_miss_mode(_ client: OpaquePointer, _ mode: es_deadline_miss
 extern es_return_t es_set_deadline_miss_mode(es_client_t *client, es_deadline_miss_mode_t mode);
 ```
 
-#### Return Value
+## Return Value
 
 ES_RETURN_SUCCESS on success, ES_RETURN_ERROR on failure
 
-#### Discussion
+## Discussion
 
 This determines how the system responds when the client fails to respond to an auth event within the deadline. The default mode is ES_DEADLINE_MISS_MODE_KILL.
 

@@ -25,7 +25,7 @@ var kColorSyncHeadroomAdaptiveToneMappingInfo: Unmanaged<CFString>
 extern CFStringRef kColorSyncHeadroomAdaptiveToneMappingInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Present when Headroom-Adaptive tone mapping is encoded. Contains [`kColorSyncBaselineHeadroomStops`](./kcolorsyncbaselineheadroomstops.md) and either [`kColorSyncHeadroomAdaptiveGainCurveInfo`](./kcolorsyncheadroomadaptivegaincurveinfo.md) or, when set to `kCFBooleanFalse`, indicates the Reference-White Tone Mapping Operator (RWTMO) method.
 

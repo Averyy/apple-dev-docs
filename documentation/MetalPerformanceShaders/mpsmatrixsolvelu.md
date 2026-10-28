@@ -24,9 +24,9 @@ class MPSMatrixSolveLU
 @interface MPSMatrixSolveLU : MPSMatrixBinaryKernel
 ```
 
-#### Overview
+## Overview
 
-This kernel finds the solution matrix to the system *op(A) * X = B*, where:
+This kernel finds the solution matrix to the system *op(A) \* X = B*, where:
 
 - *op(A)* is *Aᵀ* or *A*
 - *X* is the resulting matrix of solutions

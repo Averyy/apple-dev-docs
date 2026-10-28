@@ -25,7 +25,7 @@ convenience init?(_ identifier: String)
 + (instancetype) typeWithIdentifier:(NSString *) identifier;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer returns `nil` if the system doesn’t know the type identifier.
 

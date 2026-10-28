@@ -28,7 +28,7 @@ optional func match(_ match: GKMatch, didReceive data: Data, fromRemotePlayer pl
 
 - [Exchanging data between players in real-time games](../exchanging-data-between-players-in-real-time-games.md)
 
-#### Discussion
+## Discussion
 
 Your game defines its own format for data packets it transmits and receives over the network.
 

@@ -22,7 +22,7 @@ func imageColorSpace() -> Unmanaged<CGColorSpace>!
 - (CGColorSpaceRef) imageColorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The color space of the image source, typically RGB or Gray type.
 

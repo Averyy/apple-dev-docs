@@ -25,7 +25,7 @@ class INDeleteTasksTaskListResolutionResult
 @interface INDeleteTasksTaskListResolutionResult : INTaskListResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INDeleteTasksTaskListResolutionResult`](./indeletetaskstasklistresolutionresult.md) object when resolving parameters containing an [`INDeleteTasksTaskListUnsupportedReason`](./indeletetaskstasklistunsupportedreason.md) value. Use the creation method that best reflects your ability to successfully resolve the parameter.
 

@@ -19,7 +19,7 @@ var kCEPixelAspectKey: String { get }
 #define kCEPixelAspectKey
 ```
 
-#### Discussion
+## Discussion
 
 If the value is set to zero, the pixel ratio of the source file is used.
 

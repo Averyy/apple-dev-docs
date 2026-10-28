@@ -19,7 +19,7 @@ var imageRectInRuler: NSRect { get }
 @property (readonly) NSRect imageRectInRuler;
 ```
 
-#### Discussion
+## Discussion
 
 The rectangle occupied by the receiver’s image, in the ruler view’s coordinate system, accounting for whether the ruler view’s coordinate system is flipped.
 

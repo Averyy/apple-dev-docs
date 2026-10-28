@@ -18,7 +18,7 @@ An object that represents one image and its corresponding metadata.
 struct PhotogrammetrySample
 ```
 
-#### Overview
+## Overview
 
 This object holds a single input image for constructing 3D objects from a series of photographs, along with the image’s metadata, such as EXIF data or information about a depth buffer, an object mask, or gravity vector.
 

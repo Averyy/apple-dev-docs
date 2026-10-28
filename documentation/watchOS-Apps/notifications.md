@@ -4,7 +4,7 @@
 
 Communicate with users even when your app isn’t running.
 
-#### Overview
+## Overview
 
 Notifications play an integral role in watchOS app design. Apple Watch is ideally suited for short, personal interactions, but you can use notifications to string together longer workflows, for instance to convey a series of short steps. An app for ordering coffee might let users place an order with just a few taps, then drop their wrist and allow the app to finish the transaction on its own. The coffee-ordering app could alert the user with a notification when their order is ready, or notify them if an error occurs.
 

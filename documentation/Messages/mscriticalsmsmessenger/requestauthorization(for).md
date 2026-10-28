@@ -20,7 +20,7 @@ func requestAuthorization(for recipients: [MSRecipient]) async throws -> [MSReci
 
 - [Sending SMS messages from an app](../critical-messaging-api.md)
 
-#### Discussion
+## Discussion
 
 Request someone’s authorization to be able to send critical messages from this app. The framework shows an authorization alert for each recipient, one at a time, up to the maximum of recipients the framework allows, which you can determine by examining the constant [`maximumCriticalMessagingRecipients`](./maximumcriticalmessagingrecipients.md).
 

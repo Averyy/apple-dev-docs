@@ -11,11 +11,11 @@ Returns the storage increment of the set.
 virtual unsigned int getCapacityIncrement() const;
 ```
 
-#### Return Value
+## Return Value
 
 The storage increment of the set.
 
-#### Overview
+## Overview
 
 An OSSet allocates storage for objects in multiples of the capacity increment.
 

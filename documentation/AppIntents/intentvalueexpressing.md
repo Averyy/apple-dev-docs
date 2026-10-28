@@ -21,7 +21,7 @@ A protocol for types that can create intent value expressions.
 protocol IntentValueExpressing : Sendable
 ```
 
-#### Overview
+## Overview
 
 `IntentValueExpressing` enables types to participate in the lazy evaluation system of the App Intents framework. Types conforming to this protocol can create expressions that are evaluated only when needed, improving performance by deferring potentially expensive conversions.
 

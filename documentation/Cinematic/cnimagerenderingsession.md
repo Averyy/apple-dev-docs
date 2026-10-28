@@ -23,7 +23,7 @@ class CNImageRenderingSession
 @interface CNImageRenderingSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use CNImageRenderingSession to apply a cinematic, lens-simulated bokeh effect to an image given a disparity map. For large images, prefer the tiled API to avoid excessive GPU memory usage.
 

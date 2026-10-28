@@ -23,7 +23,7 @@ class var preferredMicrophoneMode: AVCaptureDevice.MicrophoneMode { get }
 @property (class, readonly) AVCaptureMicrophoneMode preferredMicrophoneMode;
 ```
 
-#### Discussion
+## Discussion
 
 Use key-value observing to monitor the user’s microphone mode selection.
 

@@ -5,11 +5,11 @@
 
 Migrate an existing test method or test class written using XCTest.
 
-#### Overview
+## Overview
 
 The testing library provides much of the same functionality of XCTest, but uses its own syntax to declare test functions and types. Here, you’ll learn how to convert XCTest-based content to use the testing library instead.
 
-##### Import the testing library
+### Import the testing library
 
 XCTest and the testing library are available from different modules. Instead of importing the XCTest module, import the Testing module:
 
@@ -25,11 +25,11 @@ import Testing
 
 A single source file can contain tests written with XCTest as well as other tests written with the testing library. Import both XCTest and Testing if a source file contains mixed test content.
 
-##### Use interoperability between Swift Testing and XCTest
+### Use interoperability between Swift Testing and XCTest
 
 You can use interoperability to share test helpers between XCTest and Swift Testing tests. Interoperability is a feature that enables XCTest’s assertions to work with Swift Testing, and Swift Testing’s expectations to work with XCTest.
 
-For example, you can replace [XCTAssert()](../XCTest/api-1500669-xctassert.md) with [`expect(_:_:sourceLocation:)`](./expect%28_,_,sourcelocation%29.md) in your XCTests and immediately get the benefits of Swift Testing. In the meantime, you can incrementally migrate the rest of your test infrastructure to use Swift Testing at your own pace.
+For example, you can replace [XCTAssert()](../XCTest/xctassert%28_,_,file,line%29.md) with [`expect(_:_:sourceLocation:)`](./expect%28_,_,sourcelocation%29.md) in your XCTests and immediately get the benefits of Swift Testing. In the meantime, you can incrementally migrate the rest of your test infrastructure to use Swift Testing at your own pace.
 
 ```swift
 class UniqueElementsTests: XCTestCase {
@@ -57,7 +57,7 @@ A *cross-library issue* is an issue created by an XCTest assertion in a Swift Te
 
 In the example above, `assertUnique` wraps [XCTAssertEqual()](../XCTest/xctassertequal%28_,_,_,file,line%29.md). So, calling `assertUnique` in the `Duplicate elements` Swift Testing test case creates a *cross-library issue from XCTest*.
 
-##### Select an interoperability mode
+### Select an interoperability mode
 
 Interoperability has multiple modes that control how Swift Testing reports cross-library issues:
 
@@ -103,7 +103,7 @@ Use `complete` mode to ensure cross-library issues from XCTest maintain their or
 | `complete` | ❌ “Interop failure”, ⚠️ Replace XCTest API … |
 | `strict` | `fatalError`: Replace XCTest API … |
 
-##### Convert test classes
+### Convert test classes
 
 XCTest groups related sets of test methods in test classes: classes that inherit from the [XCTestCase](../XCTest/xctestcase.md) class provided by the [XCTest](../XCTest/XCTest.md) framework. The testing library doesn’t require that test functions be instance members of types. Instead, they can be *free* or *global* functions, or can be `static` or `class` members of a type.
 
@@ -127,9 +127,9 @@ struct FoodTruckTests {
 
 For more information about suites and how to declare and customize them, see [Organizing test functions with suite types](./organizingtests.md).
 
-##### Convert setup and teardown functions
+### Convert setup and teardown functions
 
-In XCTest, code can be scheduled to run before and after a test using the [setUp()](../XCTest/xctest-page/api-3856481-setup.md) and [tearDown()](../XCTest/xctest-page/api-3856482-teardown.md) family of functions. When writing tests using the testing library, implement `init()` and/or `deinit` instead:
+In XCTest, code can be scheduled to run before and after a test using the [setUp()](../XCTest/xctest-page/setup%28completion%29.md) and [tearDown()](../XCTest/xctest-page/teardown%28completion%29.md) family of functions. When writing tests using the testing library, implement `init()` and/or `deinit` instead:
 
 ```swift
 // Before
@@ -183,7 +183,7 @@ final class FoodTruckTests {
 }
 ```
 
-##### Convert test methods
+### Convert test methods
 
 The testing library represents individual tests as functions, similar to how they are represented in XCTest. However, the syntax for declaring a test function is different. In XCTest, a test method must be a member of a test class and its name must start with `test`. The testing library doesn’t require a test function to have any particular name. Instead, it identifies a test function by the presence of the `@Test` attribute:
 
@@ -209,9 +209,9 @@ As with XCTest, the testing library allows test functions to be marked `async`, 
 
 For more information about test functions and how to declare and customize them, see [Defining test functions](./definingtests.md).
 
-##### Check for expected values and outcomes
+### Check for expected values and outcomes
 
-XCTest uses a family of approximately 40 functions to assert test requirements. These functions are collectively referred to as [`XCTAssert()`](../XCTest/api-1500669-xctassert.md). The testing library has two replacements, [`expect(_:_:sourceLocation:)`](./expect%28_,_,sourcelocation%29.md) and [`require(_:_:sourceLocation:)`](./require%28_,_,sourcelocation%29-5l63q.md). They both behave similarly to `XCTAssert()` except that [`require(_:_:sourceLocation:)`](./require%28_,_,sourcelocation%29-5l63q.md) throws an error if its condition isn’t met:
+XCTest uses a family of approximately 40 functions to assert test requirements. These functions are collectively referred to as [`XCTAssert()`](../XCTest/xctassert%28_,_,file,line%29.md). The testing library has two replacements, [`expect(_:_:sourceLocation:)`](./expect%28_,_,sourcelocation%29.md) and [`require(_:_:sourceLocation:)`](./require%28_,_,sourcelocation%29-5l63q.md). They both behave similarly to `XCTAssert()` except that [`require(_:_:sourceLocation:)`](./require%28_,_,sourcelocation%29-5l63q.md) throws an error if its condition isn’t met:
 
 ```swift
 // Before
@@ -235,9 +235,9 @@ func testEngineWorks() throws {
 }
 ```
 
-##### Check for optional values
+### Check for optional values
 
-XCTest also has a function, [XCTUnwrap()](../XCTest/api-3380195-xctunwrap.md), that tests if an optional value is `nil` and throws an error if it is. When using the testing library, you can use [`require(_:_:sourceLocation:)`](./require%28_,_,sourcelocation%29-6w9oo.md) with optional expressions to unwrap them:
+XCTest also has a function, [XCTUnwrap()](../XCTest/xctunwrap%28_,_,file,line%29.md), that tests if an optional value is `nil` and throws an error if it is. When using the testing library, you can use [`require(_:_:sourceLocation:)`](./require%28_,_,sourcelocation%29-6w9oo.md) with optional expressions to unwrap them:
 
 ```swift
 // Before
@@ -257,9 +257,9 @@ func testEngineWorks() throws {
 }
 ```
 
-##### Record issues
+### Record issues
 
-XCTest has a function, [XCTFail()](../XCTest/api-1500970-xctfail.md), that causes a test to fail immediately and unconditionally. This function is useful when the syntax of the language prevents the use of an `XCTAssert()` function. To record an unconditional issue using the testing library, use the [`record(_:severity:sourceLocation:)`](./issue/record%28_,severity,sourcelocation%29.md) function:
+XCTest has a function, [XCTFail()](../XCTest/xctfail%28_,file,line%29.md), that causes a test to fail immediately and unconditionally. This function is useful when the syntax of the language prevents the use of an `XCTAssert()` function. To record an unconditional issue using the testing library, use the [`record(_:severity:sourceLocation:)`](./issue/record%28_,severity,sourcelocation%29.md) function:
 
 ```swift
 // Before
@@ -285,7 +285,7 @@ func testEngineWorks() {
 }
 ```
 
-The following table includes a list of the various [`XCTAssert()`](../XCTest/api-1500669-xctassert.md) functions and their equivalents in the testing library:
+The following table includes a list of the various [`XCTAssert()`](../XCTest/xctassert%28_,_,file,line%29.md) functions and their equivalents in the testing library:
 
 | XCTest | Swift Testing |
 | --- | --- |
@@ -307,11 +307,11 @@ The following table includes a list of the various [`XCTAssert()`](../XCTest/api
 | `try XCTUnwrap(x)` | `try #require(x)` |
 | `XCTFail("…")` | `Issue.record("…")` |
 
-The testing library doesn’t provide an equivalent of [XCTAssertEqual(_:_:accuracy:_:file:line:)](../XCTest/api-3551607-xctassertequal.md). To compare two numeric values within a specified accuracy, use `isApproximatelyEqual()` from [swift-numerics](https://github.com/apple/swift-numerics).
+The testing library doesn’t provide an equivalent of [XCTAssertEqual(_:_:accuracy:_:file:line:)](../XCTest/xctassertequal%28_,_,accuracy,_,file,line%29-4epu5.md). To compare two numeric values within a specified accuracy, use `isApproximatelyEqual()` from [swift-numerics](https://github.com/apple/swift-numerics).
 
-##### Continue or halt after test failures
+### Continue or halt after test failures
 
-An instance of an `XCTestCase` subclass can set its [continueAfterFailure](../XCTest/xctestcase/api-1496260-continueafterfailure.md) property to `false` to cause a test to stop running after a failure occurs. XCTest stops an affected test by throwing an Objective-C exception at the time the failure occurs.
+An instance of an `XCTestCase` subclass can set its [continueAfterFailure](../XCTest/xctestcase/continueafterfailure.md) property to `false` to cause a test to stop running after a failure occurs. XCTest stops an affected test by throwing an Objective-C exception at the time the failure occurs.
 
 > **Note**: `continueAfterFailure` isn’t fully supported when using the [swift-corelibs-xctest](https://github.com/swiftlang/swift-corelibs-xctest) library on non-Apple platforms.
 
@@ -338,7 +338,7 @@ func testTruck() async {
 
 When using either `continueAfterFailure` or [`require(_:_:sourceLocation:)`](./require%28_,_,sourcelocation%29-5l63q.md), other tests will continue to run after the failed test method or test function.
 
-##### Validate asynchronous behaviors
+### Validate asynchronous behaviors
 
 XCTest has a class, [XCTestExpectation](../XCTest/xctestexpectation.md), that represents some asynchronous condition. You create an instance of this class (or a subclass like [XCTKeyPathExpectation](../XCTest/xctkeypathexpectation.md)) using an initializer or a convenience method on `XCTestCase`. When the condition represented by an expectation occurs, the developer *fulfills* the expectation. Concurrently, the developer *waits for* the expectation to be fulfilled using an instance of [XCTWaiter](../XCTest/xctwaiter.md) or using a convenience method on `XCTestCase`.
 
@@ -380,7 +380,7 @@ func testTruckEvents() async {
 
 By default, `XCTestExpectation` expects to be fulfilled exactly once, and will record an issue in the current test if it is not fulfilled or if it is fulfilled more than once. `Confirmation` behaves the same way and expects to be confirmed exactly once by default. You can configure the number of times an expectation should be fulfilled by setting its [expectedFulfillmentCount](../XCTest/xctestexpectation/api-2806572-expectedfulfillmentcount.md) property, and you can pass a value for the `expectedCount` argument of [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](./confirmation%28_,expectedcount,isolation,sourcelocation,_%29-5mqz2.md) for the same purpose.
 
-`XCTestExpectation` has a property, [assertForOverFulfill](../XCTest/xctestexpectation/api-2806575-assertforoverfulfill.md), which when set to `false` allows an expectation to be fulfilled more times than expected without causing a test failure. When using a confirmation, you can pass a range to [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](./confirmation%28_,expectedcount,isolation,sourcelocation,_%29-l3il.md) as its expected count to indicate that it must be confirmed *at least* some number of times:
+`XCTestExpectation` has a property, [assertForOverFulfill](../XCTest/xctestexpectation/assertforoverfulfill.md), which when set to `false` allows an expectation to be fulfilled more times than expected without causing a test failure. When using a confirmation, you can pass a range to [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](./confirmation%28_,expectedcount,isolation,sourcelocation,_%29-l3il.md) as its expected count to indicate that it must be confirmed *at least* some number of times:
 
 ```swift
 // Before
@@ -423,9 +423,9 @@ func testRegularCustomerOrders() async {
 
 Any range expression with a lower bound (that is, whose type conforms to both [RangeExpression<Int>](../Swift/rangeexpression.md) and [Sequence<Int>](../Swift/sequence.md)) can be used with [`confirmation(_:expectedCount:isolation:sourceLocation:_:)`](./confirmation%28_,expectedcount,isolation,sourcelocation,_%29-l3il.md). You must specify a lower bound for the number of confirmations because, without one, the testing library cannot tell if an issue should be recorded when there have been zero confirmations.
 
-##### Control whether a test runs
+### Control whether a test runs
 
-When using XCTest, the [XCTSkip](../XCTest/xctskip.md) error type can be thrown to bypass the remainder of a test function. As well, the [XCTSkipIf()](../XCTest/api-3521325-xctskipif.md) and [XCTSkipUnless()](../XCTest/api-3521326-xctskipunless.md) functions can be used to conditionalize the same action. The testing library allows developers to skip a test function or an entire test suite before it starts running using the [`ConditionTrait`](./conditiontrait.md) trait type. Annotate a test suite or test function with an instance of this trait type to control whether it runs:
+When using XCTest, the [XCTSkip](../XCTest/xctskip-swift.struct.md) error type can be thrown to bypass the remainder of a test function. As well, the [XCTSkipIf()](../XCTest/xctskipif%28_,_,file,line%29.md) and [XCTSkipUnless()](../XCTest/xctskipunless%28_,_,file,line%29.md) functions can be used to conditionalize the same action. The testing library allows developers to skip a test function or an entire test suite before it starts running using the [`ConditionTrait`](./conditiontrait.md) trait type. Annotate a test suite or test function with an instance of this trait type to control whether it runs:
 
 ```swift
 // Before
@@ -451,7 +451,7 @@ struct FoodTruckTests {
 }
 ```
 
-If a test is running and you determine it cannot complete and should end early without failing, use [`cancel(_:sourceLocation:)`](./test/cancel%28_,sourcelocation%29.md) instead of [`XCTSkip`](../XCTest/xctskip.md) to cancel the task associated with the current test:
+If a test is running and you determine it cannot complete and should end early without failing, use [`cancel(_:sourceLocation:)`](./test/cancel%28_,sourcelocation%29.md) instead of [`XCTSkip`](../XCTest/xctskip-swift.struct.md) to cancel the task associated with the current test:
 
 ```swift
 // Before
@@ -501,9 +501,9 @@ func testCashRegister() throws {
 }
 ```
 
-##### Annotate known issues
+### Annotate known issues
 
-A test may have a known issue that sometimes or always prevents it from passing. When written using XCTest, such tests can call [XCTExpectFailure(_:options:failingBlock:)](../XCTest/api-3727246-xctexpectfailure.md) to tell XCTest and its infrastructure that the issue shouldn’t cause the test to fail. The testing library has an equivalent function with synchronous and asynchronous variants:
+A test may have a known issue that sometimes or always prevents it from passing. When written using XCTest, such tests can call [XCTExpectFailure(_:options:failingBlock:)](../XCTest/xctexpectfailure%28_,options,failingblock%29.md) to tell XCTest and its infrastructure that the issue shouldn’t cause the test to fail. The testing library has an equivalent function with synchronous and asynchronous variants:
 
 - [`withKnownIssue(_:isIntermittent:sourceLocation:_:)`](./withknownissue%28_,isintermittent,sourcelocation,_%29.md)
 - [`withKnownIssue(_:isIntermittent:isolation:sourceLocation:_:)`](./withknownissue%28_,isintermittent,isolation,sourcelocation,_%29.md)
@@ -530,7 +530,7 @@ func testGrillWorks() async {
 }
 ```
 
-> **Note**: The XCTest function [XCTExpectFailure(_:options:)](../XCTest/api-3727245-xctexpectfailure.md), which doesn’t take a closure and which affects the remainder of the test, doesn’t have a direct equivalent in the testing library. To mark an entire test as having a known issue, wrap its body in a call to `withKnownIssue()`.
+> **Note**: The XCTest function [XCTExpectFailure(_:options:)](../XCTest/xctexpectfailure%28_,options%29.md), which doesn’t take a closure and which affects the remainder of the test, doesn’t have a direct equivalent in the testing library. To mark an entire test as having a known issue, wrap its body in a call to `withKnownIssue()`.
 
 If a test may fail intermittently, the call to `XCTExpectFailure(_:options:failingBlock:)` can be marked *non-strict*. When using the testing library, specify that the known issue is *intermittent* instead:
 
@@ -562,8 +562,8 @@ func testGrillWorks() async {
 
 Additional options can be specified when calling `XCTExpectFailure()`:
 
-- [isEnabled](../XCTest/xctexpectedfailure/options/api-3726085-isenabled.md) can be set to `false` to skip known-issue matching (for instance, if a particular issue only occurs under certain conditions)
-- [issueMatcher](../XCTest/xctexpectedfailure/options/api-3726086-issuematcher.md) can be set to a closure to allow marking only certain issues as known and to allow other issues to be recorded as test failures
+- [isEnabled](../XCTest/xctexpectedfailure/options/isenabled.md) can be set to `false` to skip known-issue matching (for instance, if a particular issue only occurs under certain conditions)
+- [issueMatcher](../XCTest/xctexpectedfailure/options/issuematcher.md) can be set to a closure to allow marking only certain issues as known and to allow other issues to be recorded as test failures
 
 The testing library includes overloads of `withKnownIssue()` that take additional arguments with similar behavior:
 
@@ -614,7 +614,7 @@ Interoperability allows `withKnownIssue()` to also match XCTest issues:
 }
 ```
 
-##### Run tests sequentially
+### Run tests sequentially
 
 By default, the testing library runs all tests in a suite in parallel. The default behavior of XCTest is to run each test in a suite sequentially. If your tests use shared state such as global variables, you may see unexpected behavior including unreliable test outcomes when you run tests in parallel.
 
@@ -655,7 +655,7 @@ class RefrigeratorTests {
 
 For more information, see [Running tests serially or in parallel](./parallelization.md).
 
-##### Attach values
+### Attach values
 
 In XCTest, you can create an instance of [XCTAttachment](../XCTest/xctattachment.md) representing arbitrary data, files, property lists, encodable objects, images, and other types of information that would be useful to have available if a test fails. Swift Testing has an [`Attachment`](./attachment.md) type that serves much the same purpose.
 

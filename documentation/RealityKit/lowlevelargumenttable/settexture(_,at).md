@@ -18,7 +18,7 @@ Binds a texture to the slot at the given index.
 final func setTexture(_ texture: LowLevelTextureResource, at index: Int) throws(LowLevelRenderContextError)
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`LowLevelRenderContextError`](../lowlevelrendercontexterror.md) if `index` is out of range or `texture` is incompatible with the slot.
 

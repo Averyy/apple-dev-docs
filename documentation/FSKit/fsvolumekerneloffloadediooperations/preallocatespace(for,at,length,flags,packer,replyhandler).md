@@ -23,7 +23,7 @@ optional func preallocateSpace(for file: FSItem, at offset: off_t, length: Int, 
 - (void) preallocateSpaceForFile:(FSItem *) file atOffset:(off_t) offset length:(size_t) length flags:(FSPreallocateFlags) flags packer:(FSExtentPacker *) packer replyHandler:(void (^)(size_t bytesAllocated, NSError *error)) reply;
 ```
 
-#### Discussion
+## Discussion
 
 This method allows the module to opportunistically supply extents, avoiding future calls to `blockmapFile(_:offset:length:flags:operationID:packer:)`.
 

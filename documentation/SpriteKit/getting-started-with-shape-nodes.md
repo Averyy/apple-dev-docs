@@ -5,13 +5,13 @@
 
 Create a filled or stroked shape from a path object.
 
-#### Overview
+## Overview
 
 A graphics path is a collection of straight lines and curves that can define either open or closed subpaths. You can specify separate rendering behavior for the filled and stroked portion of the path. Each part can be rendered using either a solid color or a texture; if you need to render more sophisticated effects, you can also use a custom shader.
 
 Shape nodes are useful for content that cannot be easily decomposed into simple textured sprites. They’re also useful for building and displaying debugging information on top of your game content. However, the [`SKSpriteNode`](./skspritenode.md) class offers higher performance than this class, so use shape nodes sparingly.
 
-##### Create a Shape Node
+### Create a Shape Node
 
 The following code demonstrates how to create a shape node. The example creates a circle with a blue interior and a white outline. The path is created and attached to the shape node’s [`path`](./skshapenode/path.md) property.
 

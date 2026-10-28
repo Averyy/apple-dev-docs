@@ -21,11 +21,11 @@ func gState() -> Int
 - (NSInteger) gState;
 ```
 
-#### Return Value
+## Return Value
 
 The graphics state object associated with the window.
 
-#### Discussion
+## Discussion
 
 This graphics state is used by default for all `NSView` objects in the window’s view hierarchy, but individual views can be made to use their own with the `NSView` method [`allocateGState()`](../nsview/allocategstate%28%29.md).
 

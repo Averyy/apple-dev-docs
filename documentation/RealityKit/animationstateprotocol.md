@@ -20,7 +20,7 @@ The protocol representing the current animation state of an action animation.
 protocol AnimationStateProtocol
 ```
 
-#### Overview
+## Overview
 
 The animation state allows actions to animate a target value using RealityKit’s animation engine.
 

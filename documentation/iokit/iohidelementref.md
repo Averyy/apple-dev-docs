@@ -14,7 +14,7 @@
 typedef struct __IOHIDElement IOHIDElementRef;
 ```
 
-#### Overview
+## Overview
 
 This is the type of a reference to the IOHIDElement.
 

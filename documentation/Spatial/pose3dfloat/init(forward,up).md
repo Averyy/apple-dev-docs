@@ -21,7 +21,7 @@ Creates a pose with the specified forward and up vectors.
 init(forward: Vector3DFloat, up: Vector3DFloat = Vector3DFloat(x: 0, y: 1, z: 0))
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This function creates a pose where `+z` is forward.
 

@@ -25,7 +25,7 @@ class var urlPasswordAllowed: CharacterSet { get }
 @property (class, copy, readonly) NSCharacterSet * URLPasswordAllowedCharacterSet;
 ```
 
-#### Discussion
+## Discussion
 
 The password component of a URL is the component immediately following the colon after the username component of the URL, and ends at the `@` sign. For example, in the URL `http://username:password@www.example.com/index.html`, the pass component is `password`.
 

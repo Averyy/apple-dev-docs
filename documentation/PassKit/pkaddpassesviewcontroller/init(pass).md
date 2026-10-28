@@ -22,7 +22,7 @@ init?(pass: PKPass)
 - (instancetype) initWithPass:(PKPass *) pass;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized add-passes view controller object or `nil` if there was a problem initializing the object.
 

@@ -21,7 +21,7 @@ A C0 or C1 control code.
 case control
 ```
 
-#### Discussion
+## Discussion
 
 This value corresponds to the category `Control` (abbreviated `Cc`) in the [Unicode Standard](https://unicode.org/reports/tr44/#General_Category_Values).
 

@@ -23,7 +23,7 @@ func requestFocusUpdate(to environment: any UIFocusEnvironment)
 - (void) requestFocusUpdateToEnvironment:(id<UIFocusEnvironment>) environment;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to ask the focus engine to update the focus-related information for the specified object. If the update request is accepted, the focus engine updates the object’s focus-related information during the next run loop cycle. If the specified object does not contain a focused item, calling this method has no effect.
 

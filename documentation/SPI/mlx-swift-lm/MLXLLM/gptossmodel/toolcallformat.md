@@ -17,7 +17,7 @@ Selects the Harmony streaming path in the generation token loop.
 var toolCallFormat: ToolCallFormat? { get }
 ```
 
-#### Discussion
+## Discussion
 
 `.gptOSS` is not “another tool-call JSON dialect” — it means the full Harmony framing protocol (channels, recipients, terminators). The `ToolCallFormat` enum is the existing selection knob on `ChatConventionsProviding`; the implementation lives in `HarmonyFrameParser` / `HarmonyOutputRouter`.
 

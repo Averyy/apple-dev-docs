@@ -5,11 +5,11 @@
 
 Display animated artwork for your app’s media in system views, such as the lock screen, by providing video assets through your now playing info.
 
-#### Overview
+## Overview
 
 If your app provides media with static artwork (such as music with associated album artwork), you can augment your media with additional expressive animated artwork that the system may display in place of the static artwork. Use animated artwork to highlight unique aspects of your content and provide a more immersive experience for people who use your app. To make your content more appealing, aim to provide animated artwork that functions as an extension of your static artwork, such as an animated variant of your existing static album artwork.
 
-#### Provide animated artwork
+## Provide animated artwork
 
 Animated artwork consists of a video asset for the animated artwork itself and a static preview image which should ideally match the first frame of the video. The system displays the preview image while loading the video into the view, or under certain device conditions, including when:
 
@@ -45,13 +45,13 @@ let squareArtworkSupported = availableKeys.contains(MPNowPlayingInfoProperty1x1A
 let tallArtworkSupported = availableKeys.contains(MPNowPlayingInfoProperty3x4AnimatedArtwork)
 ```
 
-#### Construct animated artwork
+## Construct animated artwork
 
 For each animated artwork variant you want to provide, include an [`MPMediaItemAnimatedArtwork`](./mpmediaitemanimatedartwork.md) instance keyed by the relevant animated artwork key in the now playing info you set to [`nowPlayingInfo`](./mpnowplayinginfocenter/nowplayinginfo.md).  Each [`MPMediaItemAnimatedArtwork`](./mpmediaitemanimatedartwork.md) describes the animated artwork content for a single variant. Initialize an instance with an `artworkID` (uniquely identifying the artwork for the associated variant), and request handlers for the preview image and video asset (`previewImageRequestHandler` and `videoAssetFileURLRequestHandler`, respectively).
 
 The system uses the `artworkID` to detect changes in the provided animated artwork. When you need to change your animated artwork, provide a new [`MPMediaItemAnimatedArtwork`](./mpmediaitemanimatedartwork.md) to [`nowPlayingInfo`](./mpnowplayinginfocenter/nowplayinginfo.md) with an updated `artworkID`. This prompts the system to re-request the preview image and video asset, if required. Aim to use the same `artworkID` between media items if the animated artwork doesn’t change; for example, the album artwork for songs within an album is constant.
 
-#### Return animated artwork assets
+## Return animated artwork assets
 
 When the system requires a preview image, it uses the `previewImageRequestHandler` for the currently-provided [`MPMediaItemAnimatedArtwork`](./mpmediaitemanimatedartwork.md) (for the required animated artwork variant). It passes the dimensions of the requested image to this handler; however, you can return an image of any size as long as the aspect ratio is appropriate for the associated animated artwork key. You can use the requested size if you require this information in order to provide the resulting preview image.
 
@@ -96,7 +96,7 @@ func updateInfoCenter() {
 
 Ensure any local file URLs you return from a `videoAssetFileURLRequestHandler` remain valid for as long as the associated [`MPMediaItemAnimatedArtwork`](./mpmediaitemanimatedartwork.md) is part of your now playing info. You can invalidate these URLs — for example, when you need to delete the associated asset — when you replace (or remove) the [`MPMediaItemAnimatedArtwork`](./mpmediaitemanimatedartwork.md) in your now playing info. If you later provide an [`MPMediaItemAnimatedArtwork`](./mpmediaitemanimatedartwork.md) with an `artworkID` that’s identical to one you provided previously, you don’t need to provide the same assets, as the system re-requests them.
 
-#### Follow asset recommendations
+## Follow asset recommendations
 
 Ensure the aspect ratio of any preview images or video assets you provide matches the aspect ratio indicated by the animated artwork key you associate the [`MPMediaItemAnimatedArtwork`](./mpmediaitemanimatedartwork.md) with. Avoid high frame rate video (greater than 60 fps), as the system may not display your animated artwork. The system doesn’t impose a technical limitation on the file size of the video assets you provide, and it supports any local asset playable by an `AVPlayerLayer`.
 

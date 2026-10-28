@@ -19,7 +19,7 @@ var isDisconnected: Bool { get }
 @property (readonly, getter=isDisconnected) BOOL disconnected;
 ```
 
-#### Discussion
+## Discussion
 
 Users can continue to browse the content from a disconnected domain; however, the File Provider extension no longer sends or receives updates about modifications to the files.
 

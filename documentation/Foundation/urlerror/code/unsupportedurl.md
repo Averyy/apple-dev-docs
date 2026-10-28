@@ -21,7 +21,7 @@ A properly formed URL couldn’t be handled by the framework.
 static var unsupportedURL: URLError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Typically this occurs when there is no available protocol handler for the URL.
 

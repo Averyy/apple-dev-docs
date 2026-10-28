@@ -10,7 +10,7 @@ Preview spatial content from a macOS app on a connected visionOS device.
 - macOS 27.0+
 - visionOS 27.0+
 
-#### Overview
+## Overview
 
 Use Spatial Preview to work with spatial content from a macOS app to a connected visionOS device in real time. The framework centers on two abstractions: [`SpatialPreviewEndpoint`](./spatialpreviewendpoint.md), which identifies the target visionOS device, and [`SpatialPreviewSession`](./spatialpreviewsession.md), which manages the active preview connection and the flow of content. The [`USDPreviewSession`](./usdpreviewsession.md) and [`DocumentPreviewSession`](./documentpreviewsession.md) objects adopt `SpatialPreviewSession` and support visionOS previews of Universal Scene Description (USD) content and general file content, respectively. [USDKit](../USDKit/USDKit.md) is recommended for Spatial Preview because it works without any additional setup. If you want to use your own OpenUSD library, see the documentation below on how to bridge OpenUSD to [USDKit](../USDKit/USDKit.md).
 

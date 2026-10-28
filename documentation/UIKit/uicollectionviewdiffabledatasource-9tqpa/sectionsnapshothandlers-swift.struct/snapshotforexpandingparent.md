@@ -19,7 +19,7 @@ The handler that provides the section snapshot for expanding the parent item.
 var snapshotForExpandingParent: ((ItemIdentifierType, NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>) -> NSDiffableDataSourceSectionSnapshot<ItemIdentifierType>)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`snapshotForExpandingParent`](./snapshotforexpandingparent.md) handler to customize the snapshot that returns when a particular parent item is expanded.
 

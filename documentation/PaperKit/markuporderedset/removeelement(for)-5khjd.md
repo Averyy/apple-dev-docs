@@ -20,7 +20,7 @@ Removes the associated element for the given id from the set.
 mutating func removeElement(for id: MarkupOrderedSet.ElementID) -> MarkupOrderedSet.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The associated element for `id` if the set contains `id`; otherwise, `nil`.
 

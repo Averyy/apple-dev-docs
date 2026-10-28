@@ -21,7 +21,7 @@ var draggingPasteboard: NSPasteboard { get }
 @property (readonly) NSPasteboard * draggingPasteboard;
 ```
 
-#### Discussion
+## Discussion
 
 The dragging operation that is ultimately performed utilizes this pasteboard data and not the image returned by the [`draggedImage`](./draggedimage.md) method.
 

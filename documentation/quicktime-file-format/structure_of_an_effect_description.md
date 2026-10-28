@@ -5,7 +5,7 @@
 
 An effect description is the sole media sample for an effect track.
 
-#### Overview
+## Overview
 
 An effect description is implemented as a `QTAtomContainer` structure, the general QuickTime structure for holding a set of QuickTime atoms. All effect descriptions must contain the set of required atoms, which specify attributes such as which effect component to use. In addition, effect descriptions can contain a variable number of parameter atoms, which hold the values of the parameters for the effect.
 

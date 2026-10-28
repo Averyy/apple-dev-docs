@@ -31,7 +31,7 @@ var requestedBalanceType: INBalanceType { get }
 @property (atomic, assign, readonly) INBalanceType requestedBalanceType;
 ```
 
-#### Discussion
+## Discussion
 
 If this property contains a value other than [`INBalanceType.unknown`](../inbalancetype/unknown.md), use the value to retrieve the balance associated with the specified account. Include the balance information in your response object.
 

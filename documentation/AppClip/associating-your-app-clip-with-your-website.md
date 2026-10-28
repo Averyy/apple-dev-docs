@@ -5,7 +5,7 @@
 
 Enable the system to verify your App Clip to support invocations from your website and devices running iOS 16.3 or earlier.
 
-#### Overview
+## Overview
 
 An App Clip gives people quick access to a particular workflow in your app, even when a person hasn’t installed your app. NFC readers, App Clip Codes, or QR codes define an *invocation URL* that specifies which App Clip, or workflow within your full app, the system needs to run. If you want to support invocations from your website or support iOS 16.3 and earlier, enable the system to verify your App Clip. The system’s verification checks that the App Clip includes the URL in its code signature as the [`Associated Domains Entitlement`](../BundleResources/entitlements/com.apple.developer.associated-domains.md), which cites the invocation URL’s domain. The system also verifies that the server of the domain agrees to launch the App Clip, by citing the App Clip within an Apple App Site Association (AASA) file that it hosts.
 
@@ -22,7 +22,7 @@ The system verifies that both the entitlement and the configuration in the AASA 
 
 > 💡 **Tip**:  You may already be familiar with the `Associated Domains Entitlement` if your app supports [Handoff](https://developer.apple.com/handoff/) or [universal links](https://developer.apple.com/ios/universal-links/). If you’re new to using this entitlement and universal links, read [Allowing apps and websites to link to your content](../Xcode/allowing-apps-and-websites-to-link-to-your-content.md) and [Supporting universal links in your app](../Xcode/supporting-universal-links-in-your-app.md). For additional information about the `Associated Domains Entitlement` — including cache policies — read [Supporting associated domains](../Xcode/supporting-associated-domains.md).
 
-##### Add the Associated Domains entitlement
+### Add the Associated Domains entitlement
 
 To associate your App Clip with your website, you must add the [`Associated Domains Entitlement`](../BundleResources/entitlements/com.apple.developer.associated-domains.md) to the app and the App Clip targets.
 
@@ -30,7 +30,7 @@ First, open your project in Xcode; then, in your project settings, enable the As
 
 Second, for each URL that launches your App Clip or full app, add its domain to the Associated Domains capability using the pattern: `appclips:<fully qualified domain>`. For example, add `appclips:example.com` or `appclips:appclip.example.com`. Make sure to only include the desired subdomain and the top-level domain. Don’t include a trailing slash (`/`), wildcard (`*`), or path and query components in the URL. For more information, refer to  [Supporting associated domains](../Xcode/supporting-associated-domains.md).
 
-##### Make changes to your server
+### Make changes to your server
 
 In addition to adding the [`Associated Domains Entitlement`](../BundleResources/entitlements/com.apple.developer.associated-domains.md) to your Xcode project, you need to make changes to your server to associate your App Clip with your server and allow the system to verify the URL that tries to invoke your App Clip.
 
@@ -55,7 +55,7 @@ Then, add the AASA file to your website’s `.well-known` directory. If you prev
 
 Finally, to make sure the system can validate the association between your App Clip and the AASA file on your server, check your server’s configuration and make sure it allows `AASA-Bot` and `CFNetwork` as user agents.
 
-##### Check the validation status of your App Clip
+### Check the validation status of your App Clip
 
 App Store Connect verifies the AASA file configuration of your App Clip after you’ve uploaded a build to App Store Connect and created an App Clip experience. To check the verification status:
 

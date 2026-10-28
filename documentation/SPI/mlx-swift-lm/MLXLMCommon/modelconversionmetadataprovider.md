@@ -17,7 +17,7 @@ Optional metadata a model wants written into converted safetensors.
 protocol ModelConversionMetadataProvider
 ```
 
-#### Overview
+## Overview
 
 Model-specific metadata lets future loaders distinguish transformed MLX-native checkpoints from original upstream checkpoints without relying only on tensor shapes.
 

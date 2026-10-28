@@ -24,7 +24,7 @@ class RPSystemBroadcastPickerView
 @interface RPSystemBroadcastPickerView : UIView
 ```
 
-#### Overview
+## Overview
 
 Add this view to your view hierarchy to let users broadcast directly from your app. When a user taps the broadcast button, it displays a broadcast picker, allowing the user to select a broadcast provider.
 

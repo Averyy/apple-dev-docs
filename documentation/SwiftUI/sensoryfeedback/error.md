@@ -21,7 +21,7 @@ Indicates that an error has occurred.
 static let error: SensoryFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Only plays feedback on iOS and watchOS.
 

@@ -15,11 +15,11 @@ The payload that configures the names of the account user.
 object Identification
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configurationprofile.identification` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ Specify `com.apple.configurationprofile.identification` as the payload type.
 | Allowed in user enrollment | macOS |
 | Allow multiple payloads | N/A |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

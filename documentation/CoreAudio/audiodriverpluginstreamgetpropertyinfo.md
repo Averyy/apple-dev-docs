@@ -14,11 +14,11 @@
 extern OSStatus AudioDriverPlugInStreamGetPropertyInfo(AudioDeviceID inDevice, io_object_t inIOAudioStream, UInt32 inChannel, AudioDevicePropertyID inPropertyID, UInt32 *outSize, Boolean *outWritable);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus indicating success or failure. Note that if the plug-in does not implement the given property, it should return kAudioHardwareUnknownPropertyError to ensure that the HAL handles the property normally.
 
-#### Discussion
+## Discussion
 
 Retrieve information about the given property of an AudioStream.
 

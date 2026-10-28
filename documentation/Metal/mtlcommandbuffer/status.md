@@ -30,7 +30,7 @@ var status: MTLCommandBufferStatus { get }
 - [Preparing your Metal app to run in the background](../preparing-your-metal-app-to-run-in-the-background.md)
 - [Setting up a command structure](../setting-up-a-command-structure.md)
 
-#### Discussion
+## Discussion
 
 Each command buffer can be in any one of the following states:
 

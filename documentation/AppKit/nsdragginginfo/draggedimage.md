@@ -22,7 +22,7 @@ var draggedImage: NSImage? { get }
 @property (readonly, nullable) NSImage * draggedImage;
 ```
 
-#### Discussion
+## Discussion
 
 This image object visually represents the data put on the pasteboard during the drag operation; however, it is the pasteboard data and not this image that is ultimately utilized in the dragging operation.
 

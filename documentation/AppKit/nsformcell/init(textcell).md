@@ -19,11 +19,11 @@ init(textCell string: String?)
 - (instancetype) initTextCell:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSFormCell` object.
 
-#### Discussion
+## Discussion
 
 The contents of the cell’s editable text entry field are set to the empty string (`@""`). The font for both title and text is the user’s chosen system font in 12.0 point, and the text area is drawn with a bezel. This method is the designated initializer for the `NSFormCell` class.
 

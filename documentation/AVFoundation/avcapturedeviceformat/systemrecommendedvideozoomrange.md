@@ -19,7 +19,7 @@ The system’s recommended zoom range for this device format.
 @property (nonatomic, readonly, nullable) AVZoomRange * systemRecommendedVideoZoomRange;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to create a slider in your app’s user interface that controls a device’s zoom within a system-recommended range. When a recommendation isn’t available, this property returns `nil`.
 

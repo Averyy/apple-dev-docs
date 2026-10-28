@@ -21,7 +21,7 @@ var replyThreadIdentifier: String? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSString * replyThreadIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 When an entry is a reply to another conversation entry, this contains the identifier of the conversation entry that the person replied to.
 

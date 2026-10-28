@@ -27,7 +27,7 @@ protocol XCUIElementTypeQueryProvider
 @protocol XCUIElementTypeQueryProvider
 ```
 
-#### Overview
+## Overview
 
 Accessing the properties to get queries for descendant elements on an instance of a conforming class (such as an [`XCUIElement`](./xcuielement.md) or [`XCUIElementQuery`](./xcuielementquery.md) instance) is equivalent to calling [`descendants(matching:)`](./xcuielementquery/descendants%28matching%29.md) for the corresponding element type.
 

@@ -25,7 +25,7 @@ init?(parameters: MTRCommissioningParameters, setupPayload payload: String, dele
 - (instancetype) initWithParameters:(MTRCommissioningParameters *) parameters setupPayload:(NSString *) payload delegate:(id<MTRCommissioningDelegate>) delegate queue:(dispatch_queue_t) queue;
 ```
 
-#### Discussion
+## Discussion
 
 The deviceAttestationDelegate property of MTRCommissioningParameters will be ignored. Device attestation notifications will be delivered to the MTRCommissioningDelegate instead.  The failSafeTimeout property of MTRCommissioningParameters will be respected.
 

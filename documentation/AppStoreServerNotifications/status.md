@@ -27,7 +27,7 @@ int32 status
 
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 
-#### Discussion
+## Discussion
 
 This status value is current as of the `signedDate` in the decoded payload, [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md).
 

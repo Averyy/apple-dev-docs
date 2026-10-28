@@ -22,11 +22,11 @@ nonisolated
 func shadow(color: Color = Color(.sRGBLinear, white: 0, opacity: 0.33), radius: CGFloat, x: CGFloat = 0, y: CGFloat = 0) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that adds a shadow to this view.
 
-#### Discussion
+## Discussion
 
 Use this modifier to add a shadow of a specified color behind a view. You can offset the shadow from its view independently in the horizontal and vertical dimensions using the `x` and `y` parameters. You can also blur the edges of the shadow using the `radius` parameter. Use a radius of zero to create a sharp shadow. Larger radius values produce softer shadows.
 

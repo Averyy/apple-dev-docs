@@ -24,7 +24,7 @@ var lifeTimeInDays: NSNumber { get set }
 @property (copy) NSNumber * lifeTimeInDays;
 ```
 
-#### Discussion
+## Discussion
 
 The minimum value is 1 day and the maximum value is 365 days. If this property is not set or is set to an invalid value the configuration never expires.
 

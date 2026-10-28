@@ -26,11 +26,11 @@ func perform(_ aSelector: Selector!, with object1: Any!, with object2: Any!) -> 
 - (id) performSelector:(SEL) aSelector withObject:(id) object1 withObject:(id) object2;
 ```
 
-#### Return Value
+## Return Value
 
 An object that is the result of the message.
 
-#### Discussion
+## Discussion
 
 This method is the same as [`perform(_:)`](./perform%28_%29.md) except that you can supply two arguments for `aSelector`. `aSelector` should identify a method that can take two arguments of type id. For methods with other argument types and return values, use [`NSInvocation`](../../Foundation/nsinvocation.md).
 

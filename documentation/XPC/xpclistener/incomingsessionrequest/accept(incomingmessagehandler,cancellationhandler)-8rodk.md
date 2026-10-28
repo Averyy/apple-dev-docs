@@ -22,11 +22,11 @@ Accepts an incoming session request from a client using closures to handle dicti
 func accept(incomingMessageHandler: @escaping @Sendable (XPCDictionary) -> XPCDictionary?, cancellationHandler: (@Sendable (XPCRichError) -> Void)? = nil) -> XPCListener.IncomingSessionRequest.Decision
 ```
 
-#### Return Value
+## Return Value
 
 A decision that indicates whether the listener accepts or rejects the incoming session.
 
-#### Discussion
+## Discussion
 
 If you need to perform additional configuration on the session, use [`accept(incomingMessageHandler:cancellationHandler:)`](./accept%28incomingmessagehandler,cancellationhandler%29-48c3k.md) instead; that version returns a tuple that contains the session.
 

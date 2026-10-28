@@ -24,7 +24,7 @@ var diffieHellmanGroup: NEVPNIKEv2DiffieHellmanGroup { get set }
 @property NEVPNIKEv2DiffieHellmanGroup diffieHellmanGroup;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NEVPNIKEv2DiffieHellmanGroup.group14`](../nevpnikev2diffiehellmangroup/group14.md).
 

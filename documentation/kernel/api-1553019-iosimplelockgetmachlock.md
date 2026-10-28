@@ -15,7 +15,7 @@ Accessor to a Mach spin lock.
 lck_spin_t * IOSimpleLockGetMachLock(IOSimpleLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Accessor to the Mach spin lock.
 

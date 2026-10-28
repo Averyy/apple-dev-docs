@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Temporarily switch a remote dependency to local in order to edit the dependency.
 
-#### Overview
+## Overview
 
 Swift package manager supports editing dependencies, when your work requires making a change to one of your dependencies (for example, to fix a bug, or add a new API). The package manager moves the dependency into a location under the `Packages/` directory where it can be edited.
 
@@ -46,7 +46,7 @@ This command fails if you have uncommitted changes or changes which are not push
 $ swift package unedit PlayingCard --force
 ```
 
-##### Top of Tree Development
+### Top of Tree Development
 
 This feature allows overriding a dependency with a local checkout on the filesystem. This checkout is completely unmanaged by the package manager and is used as-is. The only requirement is that the package name in the overridden checkout shouldn’t change. This is useful when developing multiple packages in tandem, or when working on packages alongside an application.
 

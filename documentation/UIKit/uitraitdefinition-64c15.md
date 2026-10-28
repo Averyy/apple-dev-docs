@@ -19,7 +19,7 @@ A type representing a trait in a trait collection.
 protocol UITraitDefinition
 ```
 
-#### Overview
+## Overview
 
 All traits contained in a [`UITraitCollection`](./uitraitcollection.md) conform to this protocol. You can create custom traits by defining your own conforming type.
 

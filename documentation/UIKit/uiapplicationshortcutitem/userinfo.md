@@ -22,7 +22,7 @@ var userInfo: [String : any NSSecureCoding]? { get }
 @property (nonatomic, copy, readonly, nullable) NSDictionary<NSString *,id<NSSecureCoding>> * userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The keys and values in this property’s dictionary must conform to the [`NSSecureCoding`](../../Foundation/nssecurecoding.md) protocol, and must be property-list-encodable. If they aren’t, the system raises a runtime exception when initializing the quick action. For information about property-list-encodable data, see [Serializing Property Lists](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Articles/serializing.html#//apple_ref/doc/uid/20000952) in [Archives and Serializations Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Archiving/Archiving.html#//apple_ref/doc/uid/10000047i) and see [`PropertyListSerialization`](../../Foundation/propertylistserialization.md).
 

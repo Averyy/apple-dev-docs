@@ -23,7 +23,7 @@ func addItem(_ item: any UIDynamicItem)
 - (void) addItem:(id<UIDynamicItem>) item;
 ```
 
-#### Discussion
+## Discussion
 
 You can add a dynamic item to one or more dynamic item behaviors. For example, you could add a dynamic item to one dynamic item behavior to configure the item’s elasticity and to a second dynamic item behavior to configure its density. This is especially useful when you are defining custom, combined behaviors for your dynamic items.
 

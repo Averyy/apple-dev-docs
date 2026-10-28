@@ -20,7 +20,7 @@ Creates and returns an image object from bitmap data.
 + (CIImage *) imageWithBitmapData:(NSData *) data bytesPerRow:(size_t) bytesPerRow size:(CGSize) size format:(CIFormat) format colorSpace:(CGColorSpaceRef) colorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 An image object.
 

@@ -19,7 +19,7 @@ func completions(forPartialWordRange range: NSRange, in string: String, language
 - (NSArray<NSString *> *) completionsForPartialWordRange:(NSRange) range inString:(NSString *) string language:(NSString *) language inSpellDocumentWithTag:(NSInteger) tag;
 ```
 
-#### Return Value
+## Return Value
 
 List of complete words from the spell checker dictionary in the order they should be presented to the user.
 

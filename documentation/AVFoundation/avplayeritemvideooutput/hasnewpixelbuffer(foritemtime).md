@@ -24,11 +24,11 @@ func hasNewPixelBuffer(forItemTime itemTime: CMTime) -> Bool
 - (BOOL) hasNewPixelBufferForItemTime:(CMTime) itemTime;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if there is available video output that has not been previously acquired or [`false`](../../Swift/false.md) if there is not.
 
-#### Discussion
+## Discussion
 
 This method returns [`true`](../../Swift/true.md) if the video data at the specified time has not yet been acquired or is different from the video that was acquired previously. If you require multiple objects to acquire video output from the same [`AVPlayerItem`](../avplayeritem.md) object, you should create separate `AVPlayerItemVideoOutput` objects for each.
 

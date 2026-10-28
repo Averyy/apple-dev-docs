@@ -11,11 +11,11 @@ Fetches product page locales by identifier.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 Use this endpoint to return localized product page metadata using your `adamId` and `productPageId` in the resource path.
 
-##### Payload example: Get product page locales
+### Payload example: Get product page locales
 
 **Request**:
 
@@ -41,7 +41,7 @@ GET https://api.searchads.apple.com/api/v5/apps/{adamId}/product-pages/{productP
 }
 ```
 
-##### Payload example: Expanded format
+### Payload example: Expanded format
 
 **Request**:
 

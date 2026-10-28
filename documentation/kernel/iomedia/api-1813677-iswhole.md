@@ -9,11 +9,11 @@
 virtual bool isWhole() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if the media represents the whole disk, false otherwise.
 
-#### Overview
+## Overview
 
 Ask the media object whether it represents the whole disk.
 

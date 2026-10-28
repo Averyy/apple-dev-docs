@@ -20,7 +20,7 @@ A type of button that people use to dismiss the current store presentation.
 static var cancellation: StoreButtonKind { get }
 ```
 
-#### Discussion
+## Discussion
 
 This button type is available for [`StoreView`](../storeview.md) and [`SubscriptionStoreView`](../subscriptionstoreview.md) only.
 

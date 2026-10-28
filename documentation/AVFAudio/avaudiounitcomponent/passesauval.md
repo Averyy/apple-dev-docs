@@ -23,7 +23,7 @@ var passesAUVal: Bool { get }
 @property (nonatomic, readonly) BOOL passesAUVal;
 ```
 
-#### Discussion
+## Discussion
 
 This property is [`true`](../../Swift/true.md) if the component passes the validation tests; otherwise, [`false`](../../Swift/false.md).
 

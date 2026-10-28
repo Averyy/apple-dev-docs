@@ -23,7 +23,7 @@ func setScopeBarButtonDividerImage(_ dividerImage: UIImage?, forLeftSegmentState
 - (void) setScopeBarButtonDividerImage:(UIImage *) dividerImage forLeftSegmentState:(UIControlState) leftState rightSegmentState:(UIControlState) rightState;
 ```
 
-#### Discussion
+## Discussion
 
 To customize the segmented control appearance you need to provide divider images to go between two unselected segments (`leftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateNormal`), selected on the left and unselected on the right (`leftSegmentState:UIControlStateSelected rightSegmentState:UIControlStateNormal`), and unselected on the left and selected on the right (`leftSegmentState:UIControlStateNormal rightSegmentState:UIControlStateSelected`).
 

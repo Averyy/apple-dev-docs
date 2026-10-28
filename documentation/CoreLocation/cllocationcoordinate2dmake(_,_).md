@@ -25,7 +25,7 @@ func CLLocationCoordinate2DMake(_ latitude: CLLocationDegrees, _ longitude: CLLo
 extern CLLocationCoordinate2D CLLocationCoordinate2DMake(CLLocationDegrees latitude, CLLocationDegrees longitude);
 ```
 
-#### Return Value
+## Return Value
 
 A coordinate structure encompassing the latitude and longitude values.
 

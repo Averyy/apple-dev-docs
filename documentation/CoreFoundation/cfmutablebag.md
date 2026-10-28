@@ -23,7 +23,7 @@ class CFMutableBag
 typedef struct __CFBag * CFMutableBagRef;
 ```
 
-#### Overview
+## Overview
 
 CFMutableBag manages dynamic bags. The basic interface for managing bags is provided by [`CFBag`](./cfbag.md). CFMutableBag adds functions to modify the contents of a bag.
 

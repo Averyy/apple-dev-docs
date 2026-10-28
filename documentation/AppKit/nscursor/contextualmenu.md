@@ -22,7 +22,7 @@ class var contextualMenu: NSCursor { get }
 @property (class, strong, readonly) NSCursor * contextualMenuCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The contextual menu cursor
 

@@ -19,7 +19,7 @@ A 6-bit signed integer.
 case int6
 ```
 
-#### Discussion
+## Discussion
 
 Six-bit signed integers can represent values in the range [-32, 31]. This type is used for quantization.
 

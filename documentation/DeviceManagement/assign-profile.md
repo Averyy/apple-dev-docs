@@ -13,11 +13,11 @@ Assign a profile to a list of devices.
 
 - [Migrating managed devices](./migrating-managed-devices.md)
 
-#### Discussion
+## Discussion
 
 To avoid performance issues, limit requests to 1000 devices at a time.
 
-##### Throttling
+### Throttling
 
 With X-Server-Protocol-Version 9 and later, the server may throttle profile assignment on a per-device basis. When the server throttles a device, its value in the `devices` dictionary is `THROTTLED` instead of `SUCCESS`.
 

@@ -15,7 +15,7 @@ The length of the sense buffer, if any.
 uint8_t fSenseLength;
 ```
 
-#### Discussion
+## Discussion
 
 This value is the length of valid data that the [`fSenseBuffer`](./fsensebuffer.md) array contains.
 

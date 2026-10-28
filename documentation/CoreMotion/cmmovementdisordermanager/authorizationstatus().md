@@ -19,7 +19,7 @@ class func authorizationStatus() -> CMAuthorizationStatus
 + (CMAuthorizationStatus) authorizationStatus;
 ```
 
-#### Discussion
+## Discussion
 
 The first time your app attempts to monitor or query for movement disorder data, the manager asks the user for permission to collect or retrieve their movement disorder data. To request permission, your app must set a motion usage description in its `Info.plist` file. For more information, see [Provide the motion usage description](../getting-movement-disorder-symptom-data.md#Provide-the-motion-usage-description).
 

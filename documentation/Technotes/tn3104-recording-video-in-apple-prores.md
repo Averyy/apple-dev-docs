@@ -5,17 +5,17 @@
 
 Configure pieces of an AVCaptureSession to capture video in Apple ProRes.
 
-#### Overview
+## Overview
 
 iPhone 13 Pro supports Apple ProRes video recording up to 4k at 30 fps and 1080p at 60 fps (except the 128GB model, which supports Apple ProRes video recording up to 1080p at 30 fps). This Technote details how to configure an AVCapture pipeline to capture and record a video encoded in Apple ProRes 422.
 
 For a general overview of Apple ProRes codecs, see [About Apple ProRes](https://support.apple.com/en-us/HT202410).
 
-#### Choosing a preset
+## Choosing a preset
 
 Capturing video in Apple ProRes requires manual configuration of the [`AVCaptureDevice`](../AVFoundation/avcapturedevice.md)’s [`activeFormat`](../AVFoundation/avcapturedevice/activeformat.md). There is no [`AVCaptureSession.Preset`](../AVFoundation/avcapturesession/preset.md) available that supports capture in Apple ProRes. For this reason, set the [`sessionPreset`](../AVFoundation/avcapturesession/sessionpreset.md) of your [`AVCaptureSession`](../AVFoundation/avcapturesession.md) to [`inputPriority`](../AVFoundation/avcapturesession/preset/inputpriority.md), which specifies that the [`AVCaptureSession`](../AVFoundation/avcapturesession.md) should not automatically configure its inputs and outputs.
 
-#### Selecting a capture format
+## Selecting a capture format
 
 As described in [About Apple ProRes](https://support.apple.com/en-us/HT202410), Apple ProRes 422 codecs require 10-bits-per-channel video sources, and Apple ProRes 4444 codecs support up to 12-bits-per-channel and up to 16 bits for the alpha channel. If you iterated through all of the supported capture [`formats`](../AVFoundation/avcapturedevice/formats.md) of an [`AVCaptureDevice`](../AVFoundation/avcapturedevice.md) on iPhone 13 Pro, you would see capture formats with one of the following pixel formats:
 
@@ -52,13 +52,13 @@ extension AVCaptureDevice {
 
 Once you have identified a capture format suitable for Apple ProRes 422, set it as the [`activeFormat`](../AVFoundation/avcapturedevice/activeformat.md) of your capture device, and ensure that the capture device has a corresponding [`AVCaptureDeviceInput`](../AVFoundation/avcapturedeviceinput.md) which you have successfully added as an input to the [`AVCaptureSession`](../AVFoundation/avcapturesession.md). See [Setting up a capture session](../AVFoundation/setting-up-a-capture-session.md) for more information about adding inputs to a capture session.
 
-#### Choosing an output type
+## Choosing an output type
 
 For many apps, using an [`AVCaptureMovieFileOutput`](../AVFoundation/avcapturemoviefileoutput.md) to write an Apple ProRes movie file is sufficient.
 
 If you require a greater amount of control when writing the movie file, or you need access to video samples before they are written to a movie file, then you can use an [`AVCaptureVideoDataOutput`](../AVFoundation/avcapturevideodataoutput.md) to get access to the video samples. Next, you can process or inspect the video samples, and then submit the video samples to an [`AVAssetWriter`](../AVFoundation/avassetwriter.md).
 
-#### Configuring the output
+## Configuring the output
 
 [`AVCaptureMovieFileOutput`](../AVFoundation/avcapturemoviefileoutput.md) supports writing movie files encoded with Apple ProRes 422 codecs. To check the available video codecs at runtime, you can iterate through the [`availableVideoCodecTypes`](../AVFoundation/avcapturemoviefileoutput/availablevideocodectypes.md).
 
@@ -82,11 +82,11 @@ movieFileOutput.setOutputSettings([AVVideoCodecKey : AVVideoCodecType.proRes422.
 
 [`AVCaptureVideoDataOutput`](../AVFoundation/avcapturevideodataoutput.md) does not require any special configuration to be compatible with an ‘x422’ input, simply set its sample buffer delegate with the [`setSampleBufferDelegate(_:queue:)`](../AVFoundation/avcapturevideodataoutput/setsamplebufferdelegate%28_,queue%29.md) method, and add the output to the capture session.
 
-#### Recording and saving with AVCaptureMovieFileOutput
+## Recording and saving with AVCaptureMovieFileOutput
 
 Use the [`startRecording(to:recordingDelegate:)`](../AVFoundation/avcapturefileoutput/startrecording%28to,recordingdelegate%29.md) method to set a recording delegate and start recording to a file. When recording is stopped, you will receive the output file in [`fileOutput(_:didFinishRecordingTo:from:error:)`](../AVFoundation/avcapturefileoutputrecordingdelegate/fileoutput%28_,didfinishrecordingto,from,error%29.md). You can save this movie file directly to the Photo Library using the [`creationRequestForAssetFromVideo(atFileURL:)`](../Photos/phassetchangerequest/creationrequestforassetfromvideo%28atfileurl%29.md) method. Once saved, you can view the video in the Photos app, where you will notice that the asset has a “ProRes” badge in the upper-left corner.
 
-#### Recording and saving with AVCaptureVideoDataOutput and AVAssetWriter
+## Recording and saving with AVCaptureVideoDataOutput and AVAssetWriter
 
 Once you have decided to start recording, create an [`AVAssetWriter`](../AVFoundation/avassetwriter.md), and an [`AVAssetWriterInput`](../AVFoundation/avassetwriterinput.md). When you create the [`AVAssetWriterInput`](../AVFoundation/avassetwriterinput.md), specify outputSettings that use your preferred Apple ProRes 422 video codec. You can request recommended settings from the [`AVCaptureVideoDataOutput`](../AVFoundation/avcapturevideodataoutput.md):
 
@@ -130,7 +130,7 @@ if writerVideoInput.isReadyForMoreMediaData {
 
 When you decide to stop recording, call [`finishWriting(completionHandler:)`](../AVFoundation/avassetwriter/finishwriting%28completionhandler%29.md). In the completion handler, you can save the movie file directly to the Photo Library using the [`creationRequestForAssetFromVideo(atFileURL:)`](../Photos/phassetchangerequest/creationrequestforassetfromvideo%28atfileurl%29.md) method, passing in the [`outputURL`](../AVFoundation/avassetwriter/outputurl.md) of the asset writer. Once saved, you can view the video in the Photos app, where you will notice that the asset has a “ProRes” badge in the upper-left corner.
 
-#### Revision History
+## Revision History
 
 - **2022-05-24** Made minor editorial changes.
 - **2022-02-08** First published.

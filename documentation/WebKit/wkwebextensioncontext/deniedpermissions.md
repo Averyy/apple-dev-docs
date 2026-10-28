@@ -23,7 +23,7 @@ var deniedPermissions: [WKWebExtension.Permission : Date] { get set }
 @property (nonatomic, copy) NSDictionary<NSString *,NSDate *> * deniedPermissions;
 ```
 
-#### Discussion
+## Discussion
 
 Permissions that don’t expire will have a distant future date. This will never include expired entries at time of access.
 

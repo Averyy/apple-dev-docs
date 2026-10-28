@@ -29,7 +29,7 @@ class func requestPersonalVoiceAuthorization() async -> AVSpeechSynthesizer.Pers
 + (void) requestPersonalVoiceAuthorizationWithCompletionHandler:(void (^)(AVSpeechSynthesisPersonalVoiceAuthorizationStatus status)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 ## Parameters
 

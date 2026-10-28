@@ -28,7 +28,7 @@ optional func application(_ application: UIApplication, performFetchWithCompleti
 
 - [Using background tasks to update your app](../using-background-tasks-to-update-your-app.md)
 
-#### Discussion
+## Discussion
 
 Implement this method if your app supports the `fetch` background mode. When an opportunity arises to download data, the system calls this method to give your app a chance to download any data it needs. Your implementation of this method should download the data, prepare that data for use, and call the block in the `completionHandler` parameter.
 

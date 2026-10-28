@@ -25,7 +25,7 @@ var NSMergeByPropertyStoreTrumpMergePolicy: AnyObject
 extern id NSMergeByPropertyStoreTrumpMergePolicy;
 ```
 
-#### Discussion
+## Discussion
 
 A policy that merges conflicts between the persistent store’s version of the object and the current in-memory version by individual property, with external changes trumping in-memory changes.
 

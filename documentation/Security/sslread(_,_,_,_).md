@@ -28,11 +28,11 @@ OSStatus SSLRead(SSLContextRef context, void *data, size_t dataLength, size_t *p
 
 - [Using the Secure Socket Layer for Network Communication](./using-the-secure-socket-layer-for-network-communication.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The [`SSLRead(_:_:_:_:)`](./sslread%28_,_,_,_%29.md) function might call the [`SSLReadFunc`](./sslreadfunc.md) function that you provide (see [`SSLSetIOFuncs(_:_:_:)`](./sslsetiofuncs%28_,_,_%29.md). Because you may configure the underlying connection to operate in a nonblocking manner, a read operation might return `errSSLWouldBlock`, indicating that less data than requested was actually transferred. In this case, you should repeat the call to [`SSLRead(_:_:_:_:)`](./sslread%28_,_,_,_%29.md) until some other result is returned.
 

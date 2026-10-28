@@ -19,11 +19,11 @@ func insert(_ value: Any!, withLabel label: String!, at index: Int) -> String!
 - (NSString *) insertValue:(id) value withLabel:(NSString *) label atIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The identifier of the inserted value and label if they are added successfully; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 If either the value or the label is `nil` or if the index is out of bounds, this method raises an exception
 

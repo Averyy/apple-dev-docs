@@ -19,7 +19,7 @@ class CLKComplicationStaticWidgetMigrationConfiguration
 @interface CLKComplicationStaticWidgetMigrationConfiguration : CLKComplicationWidgetMigrationConfiguration
 ```
 
-#### Overview
+## Overview
 
 You can use static complications if your app doesn’t dynamically customize the list of complications available in the complication picker. For example, if your complications display the current temperature and chance of precipitation at the user’s current location, you can use a set of static widgets to define these complications.
 

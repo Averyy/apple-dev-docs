@@ -25,7 +25,7 @@ typealias CFPlugInFactoryFunction = (CFAllocator?, CFUUID?) -> UnsafeMutableRawP
 typedef void *(*)(const struct __CFAllocator *, const struct __CFUUID *) CFPlugInFactoryFunction;
 ```
 
-#### Discussion
+## Discussion
 
 The plug-in author’s implementation of this function is registered with `CFPlugIn` either statically in the plug-in’s information property list, or dynamically. This function is executed as a result of a call to [`CFPlugInInstanceCreate(_:_:_:)`](./cfplugininstancecreate%28_,_,_%29.md) by the plug-in host.
 

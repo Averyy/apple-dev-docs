@@ -21,11 +21,11 @@ Returns the fragment component of the URL, optionally removing any percent-encod
 func fragment(percentEncoded: Bool = true) -> String?
 ```
 
-#### Return Value
+## Return Value
 
 The fragment component of the URL, optionally percent-encoding any unreserved characters.
 
-#### Discussion
+## Discussion
 
 The system doesn’t allow certain characters in the URL fragment component, so [`URL`](../url.md) percent-encodes those characters to create a valid URL. Calling this function with `percentEncoded = false` removes any percent-encoding and returns the unencoded fragment.
 

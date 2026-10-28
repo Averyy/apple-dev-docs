@@ -19,7 +19,7 @@ func CFUserNotificationSecureTextField(_ i: CFIndex) -> CFOptionFlags
 static CFOptionFlags CFUserNotificationSecureTextField(CFIndex i);
 ```
 
-#### Return Value
+## Return Value
 
 A flag that can be used to set the secure state of a text field when creating a user notification with [`CFUserNotificationCreate(_:_:_:_:_:)`](./cfusernotificationcreate%28_,_,_,_,_%29.md).
 

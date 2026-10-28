@@ -32,7 +32,7 @@ var frame: CGRect { get }
 - [Positioning a Scene’s Origin Within its View](../positioning-a-scene-s-origin-within-its-view.md)
 - [Resizing a Sprite in Nine Parts](../resizing-a-sprite-in-nine-parts.md)
 
-#### Discussion
+## Discussion
 
 The frame is the smallest rectangle that contains the node’s content, taking into account the node’s [`xScale`](./xscale.md), [`yScale`](./yscale.md), and [`zRotation`](./zrotation.md) properties.
 

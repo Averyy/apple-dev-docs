@@ -4,7 +4,7 @@
 
 Learn about new features and updates in the Enterprise Program API.
 
-#### Overview
+## Overview
 
 The Enterprise Program API is a REST API that enables the automation of actions you take in developer.apple.com. Download the latest [OpenAPI specification](http://developer.apple.com/sample-code/enterprise/enterprise-program-openapi-oas.zip).
 

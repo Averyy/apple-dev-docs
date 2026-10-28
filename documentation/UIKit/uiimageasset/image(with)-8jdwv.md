@@ -23,11 +23,11 @@ func image(with configuration: UIImage.Configuration) -> UIImage
 - (UIImage *) imageWithConfiguration:(UIImageConfiguration *) configuration;
 ```
 
-#### Return Value
+## Return Value
 
 The image object for the specified configuration.
 
-#### Discussion
+## Discussion
 
 If this method can’t locate an image that matches the specified image configuration precisely, it returns the best match available.
 

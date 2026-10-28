@@ -31,7 +31,7 @@ var shortcutAvailability: INShortcutAvailabilityOptions { get set }
 @property (atomic, assign, readwrite) INShortcutAvailabilityOptions shortcutAvailability;
 ```
 
-#### Discussion
+## Discussion
 
 When you donate an intent, include a set of relevant [`INShortcutAvailabilityOptions`](../inshortcutavailabilityoptions.md) options to describe appropriate situations for offering a shortcut to the intent.
 

@@ -21,7 +21,7 @@ Returns a new time range with the time elements that are common to both this tim
 func intersection(_ otherRange: CMTimeRange) -> CMTimeRange
 ```
 
-#### Return Value
+## Return Value
 
 A time range that represents the largest intersection of the input.
 

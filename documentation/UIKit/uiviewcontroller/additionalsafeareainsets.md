@@ -28,7 +28,7 @@ var additionalSafeAreaInsets: UIEdgeInsets { get set }
 - [Creating a custom container view controller](../creating-a-custom-container-view-controller.md)
 - [Positioning content relative to the safe area](../positioning-content-relative-to-the-safe-area.md)
 
-#### Discussion
+## Discussion
 
 Use this property to adjust the safe area insets of this view controller’s views by the specified amount. The safe area defines the portion of your view controller’s visible area that is guaranteed to be unobscured by the system status bar or by an ancestor-provided view such as the navigation bar.
 

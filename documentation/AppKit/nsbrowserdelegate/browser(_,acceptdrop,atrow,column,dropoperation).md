@@ -20,11 +20,11 @@ optional func browser(_ browser: NSBrowser, acceptDrop info: any NSDraggingInfo,
 - (BOOL) browser:(NSBrowser *) browser acceptDrop:(id<NSDraggingInfo>) info atRow:(NSInteger) row column:(NSInteger) column dropOperation:(NSBrowserDropOperation) dropOperation;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to accept the drop; [`false`](../../Swift/false.md) to decline it.
 
-#### Discussion
+## Discussion
 
 This method is required for a browser to be a drag destination. It is invoked after the [`browser(_:validateDrop:proposedRow:column:dropOperation:)`](./browser%28_,validatedrop,proposedrow,column,dropoperation%29.md) method allows the drop.
 

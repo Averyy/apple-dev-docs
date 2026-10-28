@@ -20,7 +20,7 @@ var sortName: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * sortName;
 ```
 
-#### Discussion
+## Discussion
 
 If `nil`, iTunes uses [`name`](./name.md) to sort by artist name.
 

@@ -19,7 +19,7 @@ static var canJoinAllApplications: NSWindow.CollectionBehavior { get }
 NSWindowCollectionBehaviorCanJoinAllApplications
 ```
 
-#### Discussion
+## Discussion
 
 Windows marked with this behavior don’t participate in Stage Manager layout but can join the windows of other apps in full screen spaces when eligible.
 

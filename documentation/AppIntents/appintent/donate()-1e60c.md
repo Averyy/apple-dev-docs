@@ -26,11 +26,11 @@ func donate() async throws -> IntentDonationIdentifier
 
 - [Donating your app’s data and actions to the system](../donating-your-apps-data-and-actions-to-the-system.md)
 
-#### Return Value
+## Return Value
 
 An opaque identifier you can use to manage the donation later using an [`IntentDonationManager`](../intentdonationmanager.md) type.
 
-#### Discussion
+## Discussion
 
 When someone interacts with your app’s interface, create an app intent for the interaction and call this method. Donating intents helps the system predict future actions and improve the overall system experience. Don’t donate app intents that the system creates and asks you to handle.
 

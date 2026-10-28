@@ -24,7 +24,7 @@ enum PHASECurveType
 enum PHASECurveType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 PHASE applies curves in several places across the framework:
 
@@ -32,7 +32,7 @@ PHASE applies curves in several places across the framework:
 - The [`PHASEGroup`](./phasegroup.md) class applies a curve type to its sounds by fading its volume with the [`fadeGain(gain:duration:curveType:)`](./phasegroup/fadegain%28gain,duration,curvetype%29.md) function, and to its rate, with [`fadeRate(rate:duration:curveType:)`](./phasegroup/faderate%28rate,duration,curvetype%29.md).
 - Each [`PHASEGroupPresetSetting`](./phasegrouppresetsetting.md) applies a curve to control a setting’s rate of change.
 
-##### Apply a Curve as a Rate of Change
+### Apply a Curve as a Rate of Change
 
 In most cases, PHASE applies curves to output a rate of change. For example, an  envelope segment’s [`curveType`](./phaseenvelopesegment/curvetype.md) determines where along the segment’s domain the y-value changes more quickly. The following figure compares all the curves’ rate of change by plotting their input over the range `(0,0)` to `(1,1)`.
 

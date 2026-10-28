@@ -24,7 +24,7 @@ class MPSImageMedian
 @interface MPSImageMedian : MPSUnaryImageKernel
 ```
 
-#### Overview
+## Overview
 
 An [`MPSImageMedian`](./mpsimagemedian.md) filter finds the median color value for each channel within a `kernelDiameter * kernelDiameter` window surrounding the pixel of interest.  It is a common means of noise reduction and also as a smoothing filter with edge preserving qualities.
 

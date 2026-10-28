@@ -21,7 +21,7 @@ Adds a child task to the group, unless the group has been canceled. Returns a bo
 mutating func addTaskUnlessCancelled(name: String?, priority: TaskPriority? = nil, operation: sending @escaping @isolated(any) () async -> Void) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the child task was added to the group; otherwise `false`.
 

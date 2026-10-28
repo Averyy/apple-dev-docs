@@ -21,7 +21,7 @@ case document
 UITextGranularityDocument
 ```
 
-#### Discussion
+## Discussion
 
 The unit of text is a document.
 

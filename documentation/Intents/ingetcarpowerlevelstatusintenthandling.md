@@ -23,7 +23,7 @@ protocol INGetCarPowerLevelStatusIntentHandling : NSObjectProtocol
 @protocol INGetCarPowerLevelStatusIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use the methods of the `INGetCarPowerLevelStatusIntentHandling` protocol to resolve, confirm, and handle requests for the current power level of one of the user’s electric vehicles. Adopt this protocol in an object of your Intents extension that can access the vehicle’s power level.
 

@@ -21,7 +21,7 @@ case delete
 UICollectionUpdateActionDelete
 ```
 
-#### Discussion
+## Discussion
 
 Remove the item from the collection view.
 

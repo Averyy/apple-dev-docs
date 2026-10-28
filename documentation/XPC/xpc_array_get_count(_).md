@@ -25,7 +25,7 @@ func xpc_array_get_count(_ xarray: xpc_object_t) -> Int
 extern size_t xpc_array_get_count(xpc_object_t xarray);
 ```
 
-#### Return Value
+## Return Value
 
 The count of values in the array.
 

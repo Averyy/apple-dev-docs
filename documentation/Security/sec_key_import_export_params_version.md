@@ -19,7 +19,7 @@ var SEC_KEY_IMPORT_EXPORT_PARAMS_VERSION: Int32 { get }
 #define SEC_KEY_IMPORT_EXPORT_PARAMS_VERSION
 ```
 
-#### Discussion
+## Discussion
 
 Use this constant to set the [`version`](./seckeyimportexportparameters/version.md) property of an instance of the [`SecItemImportExportKeyParameters`](./secitemimportexportkeyparameters.md) structure.
 

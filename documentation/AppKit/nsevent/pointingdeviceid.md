@@ -19,7 +19,7 @@ var pointingDeviceID: Int { get }
 @property (readonly) NSUInteger pointingDeviceID;
 ```
 
-#### Discussion
+## Discussion
 
 This index is significant for multimode (or Dual Tracking) tablets that support multiple concurrent pointing devices; the index is incremented for each pointing device that comes into proximity. Otherwise, zero is always returned. This property is valid for mouse events with subtype `NSTabletProximityEventSubtype` or an event of type `NSTabletProximity`.
 

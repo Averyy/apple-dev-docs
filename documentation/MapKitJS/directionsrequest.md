@@ -15,7 +15,7 @@ The requested start and end points for a route, as well as the planned mode of t
 interface DirectionsRequest
 ```
 
-#### Overview
+## Overview
 
 Provide a `DirectionsRequest` object to the [`route()`](./directions/route.md) method to get directions between two points. You must provide [`origin`](./directionsrequest/origin.md) and [`destination`](./directionsrequest/destination.md).
 

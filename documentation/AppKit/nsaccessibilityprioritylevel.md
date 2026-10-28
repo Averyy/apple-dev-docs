@@ -19,7 +19,7 @@ enum NSAccessibilityPriorityLevel
 enum NSAccessibilityPriorityLevel : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these priority levels as values for the [`priority`](./nsaccessibility-swift.struct/notificationuserinfokey/priority.md) key.
 

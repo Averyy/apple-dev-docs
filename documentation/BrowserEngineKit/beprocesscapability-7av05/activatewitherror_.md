@@ -16,7 +16,7 @@ Activates the capability.
 - (BOOL) activateWithError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if the capability was activated, or `NO` if an error occurred.
 

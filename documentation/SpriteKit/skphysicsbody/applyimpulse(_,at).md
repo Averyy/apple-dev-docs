@@ -25,7 +25,7 @@ func applyImpulse(_ impulse: CGVector, at point: CGPoint)
 - (void) applyImpulse:(CGVector) impulse atPoint:(CGPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 Because this impulse is applied to a specific point on the object, it may change both the body’s velocity and angular velocity.
 

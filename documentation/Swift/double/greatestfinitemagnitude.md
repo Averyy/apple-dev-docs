@@ -21,7 +21,7 @@ The greatest finite number representable by this type.
 static var greatestFiniteMagnitude: Double { get }
 ```
 
-#### Discussion
+## Discussion
 
 This value compares greater than or equal to all finite numbers, but less than `infinity`.
 

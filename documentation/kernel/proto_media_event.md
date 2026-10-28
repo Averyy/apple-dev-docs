@@ -13,7 +13,7 @@
 typedef void (*proto_media_event)(ifnet_t ifp, protocol_family_t protocol, const struct kev_msg *event);
 ```
 
-#### Discussion
+## Discussion
 
 proto_media_event is called to notify this layer of interface specific events.
 

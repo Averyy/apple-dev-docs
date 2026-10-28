@@ -25,7 +25,7 @@ func la_vector_to_float_buffer(_ buffer: UnsafeMutablePointer<Float>, _ buffer_s
 extern la_status_t la_vector_to_float_buffer(float *buffer, la_index_t buffer_stride, la_object_t vector);
 ```
 
-#### Discussion
+## Discussion
 
 Stores the elements of a vector to a buffer.
 

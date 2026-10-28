@@ -4,7 +4,7 @@
 
 Store compressed and uncompressed audio data in QuickTime movies.
 
-#### Overview
+## Overview
 
 Sound media is used to store compressed and uncompressed audio data in QuickTime movies. It has a media type of `'soun'`. This section describes the sound sample description and the storage format of sound files using various data formats.
 

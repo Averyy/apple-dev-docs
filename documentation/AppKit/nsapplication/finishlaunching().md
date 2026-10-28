@@ -19,7 +19,7 @@ func finishLaunching()
 - (void) finishLaunching;
 ```
 
-#### Discussion
+## Discussion
 
 The [`run()`](./run%28%29.md) method calls this method before it starts the event loop. When this method begins, it posts an [`willFinishLaunchingNotification`](./willfinishlaunchingnotification.md) to the default notification center. If you override [`finishLaunching()`](./finishlaunching%28%29.md), the subclass method should invoke the superclass method.
 

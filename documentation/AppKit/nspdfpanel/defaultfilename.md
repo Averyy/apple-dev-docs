@@ -19,7 +19,7 @@ var defaultFileName: String { get set }
 @property (copy) NSString * defaultFileName;
 ```
 
-#### Discussion
+## Discussion
 
 The `defaultFileName` string should never include a file extension. By default, the string’s value is “Untitled” (or its equivalent for the current locale).
 

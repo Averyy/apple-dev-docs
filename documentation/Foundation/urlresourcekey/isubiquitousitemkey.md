@@ -25,7 +25,7 @@ static let isUbiquitousItemKey: URLResourceKey
 extern NSURLResourceKey const NSURLIsUbiquitousItemKey;
 ```
 
-#### Discussion
+## Discussion
 
 The system returns the read-only value as a Boolean [`NSNumber`](../nsnumber.md). The value is `true` if this item is in iCloud storage; otherwise, `false` if it’s a local item.
 

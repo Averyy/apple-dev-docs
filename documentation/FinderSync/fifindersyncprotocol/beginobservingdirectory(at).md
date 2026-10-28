@@ -19,7 +19,7 @@ optional func beginObservingDirectory(at url: URL)
 - (void) beginObservingDirectoryAtURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 Override this method to receive notifications when the user opens the contents of a monitored directory or one of its subdirectories in the Finder. The system calls `beginObservingDirectoryAtURL:` only once for each unique URL. As long as the content remains visible in at least one Finder window, any additional Finder windows that open to the same URL are ignored.
 

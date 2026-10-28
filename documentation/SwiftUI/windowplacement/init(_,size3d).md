@@ -15,7 +15,7 @@ Creates a new window placement with an optional position and 3D size. Depth is i
 init(_ position: WindowPlacement.Position? = nil, size3D: Size3D? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Any values not provided will use use the default values for the `Scene` that this placement is being applied to.
 

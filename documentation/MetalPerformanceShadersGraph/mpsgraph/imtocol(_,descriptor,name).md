@@ -24,7 +24,7 @@ func imToCol(_ source: MPSGraphTensor, descriptor: MPSGraphImToColOpDescriptor, 
 - (MPSGraphTensor *) imToColWithSourceTensor:(MPSGraphTensor *) source descriptor:(MPSGraphImToColOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 

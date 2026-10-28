@@ -20,11 +20,11 @@ Initialize a Core Image color object in the sRGB color space with the specified 
 - (instancetype) initWithRed:(CGFloat) red green:(CGFloat) green blue:(CGFloat) blue;
 ```
 
-#### Return Value
+## Return Value
 
  An initialized [`CIColor`](../cicolor.md) instance.
 
-#### Discussion
+## Discussion
 
 On macOS before 10.10, the CIColor’s color space will be Generic RGB.
 

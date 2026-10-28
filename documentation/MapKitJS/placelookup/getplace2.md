@@ -21,11 +21,11 @@ getPlace(
 ): Promise<Place>;
 ```
 
-#### Return Value
+## Return Value
 
 A promise that resolves with a [`Place`](../place.md) on success.
 
-#### Discussion
+## Discussion
 
 For information about Places, see [Identifying unique locations with Place IDs](../../MapKit/identifying-unique-locations-with-place-ids.md).
 

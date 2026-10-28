@@ -22,7 +22,7 @@ struct OptionsKey
 typedef NSString * UIPasteboardOption;
 ```
 
-#### Overview
+## Overview
 
 Use these options with the [`setItems(_:options:)`](./setitems%28_,options%29.md) method. Options that you set apply to all the items on a pasteboard.
 

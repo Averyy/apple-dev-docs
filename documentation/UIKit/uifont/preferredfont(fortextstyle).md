@@ -28,15 +28,15 @@ class func preferredFont(forTextStyle style: UIFont.TextStyle) -> UIFont
 
 - [Scaling fonts automatically](../scaling-fonts-automatically.md)
 
-#### Return Value
+## Return Value
 
 The system font associated with the specified text style.
 
-#### Discussion
+## Discussion
 
 > **Related sessions from WWDC23**:  Session 10058: [What’s new with text and text interactions](https://developer.apple.com/videos/play/wwdc2023/10058/)
 
-#### Discussion
+## Discussion
 
 To create a styled font based on a custom font, use a [`UIFontMetrics`](../uifontmetrics.md) object.
 

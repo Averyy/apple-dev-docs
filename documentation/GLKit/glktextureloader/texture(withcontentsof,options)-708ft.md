@@ -24,11 +24,11 @@ class func texture(withContentsOf url: URL, options: [String : NSNumber]? = nil)
 + (GLKTextureInfo *) textureWithContentsOfURL:(NSURL *) url options:(NSDictionary<NSString *,NSNumber *> *) options error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A texture info object that describes the loaded texture or `nil` if an error occurred.
 
-#### Discussion
+## Discussion
 
 This class method loads the texture into the sharegroup attached to the current context for the thread this method is called on.
 

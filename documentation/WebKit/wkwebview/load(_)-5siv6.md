@@ -21,11 +21,11 @@ func load(_ request: URLRequest) -> WKNavigation?
 - (WKNavigation *) loadRequest:(NSURLRequest *) request;
 ```
 
-#### Return Value
+## Return Value
 
 A new navigation for the given request.
 
-#### Discussion
+## Discussion
 
 Navigates to a requested URL.
 

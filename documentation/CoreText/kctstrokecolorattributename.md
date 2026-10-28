@@ -25,7 +25,7 @@ let kCTStrokeColorAttributeName: CFString
 extern CFStringRef const kCTStrokeColorAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 Value must be a [`CGColor`](../CoreGraphics/cgcolor.md) object. Default is the foreground color.
 

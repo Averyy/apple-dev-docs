@@ -24,7 +24,7 @@ var pixelFormat: MTLPixelFormat { get set }
 @property MTLPixelFormat pixelFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLPixelFormat.bgra8Unorm`](../../Metal/mtlpixelformat/bgra8unorm.md).
 

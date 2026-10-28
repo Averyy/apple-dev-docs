@@ -25,7 +25,7 @@ func CMMemoryPoolGetAllocator(_ pool: CMMemoryPool) -> CFAllocator
 extern CFAllocatorRefCMMemoryPoolGetAllocator(CMMemoryPoolRef pool);
 ```
 
-#### Return Value
+## Return Value
 
 The memory pool’s allocator.
 

@@ -13,7 +13,7 @@
 #define kIODVDMediaTypeHDR
 ```
 
-#### Discussion
+## Discussion
 
 The kIODVDMediaTypeKey constant for HD DVD Recordable (HD DVD-R) media.
 

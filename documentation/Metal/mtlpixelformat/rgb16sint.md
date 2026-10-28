@@ -24,7 +24,7 @@ case rgb16Sint
 MTLPixelFormatRGB16Sint
 ```
 
-#### Discussion
+## Discussion
 
 The order of the color components in this format are red, green and blue.
 

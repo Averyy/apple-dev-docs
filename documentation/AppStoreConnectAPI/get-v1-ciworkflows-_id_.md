@@ -9,11 +9,11 @@ Get information about a specific Xcode Cloud workflow.
 **Availability**:
 - App Store Connect API 1.5+
 
-#### Discussion
+## Discussion
 
 The example request below accesses information about an Xcode Cloud workflow. Display the workflow data provided in the response on a dashboard or use it to read additional information; for example, detailed data about builds Xcode Cloud performed.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

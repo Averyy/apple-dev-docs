@@ -22,7 +22,7 @@ func GLKVector4Minimum(_ vectorLeft: GLKVector4, _ vectorRight: GLKVector4) -> G
 static GLKVector4 GLKVector4Minimum(GLKVector4 vectorLeft, GLKVector4 vectorRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 

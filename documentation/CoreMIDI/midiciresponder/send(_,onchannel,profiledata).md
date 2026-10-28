@@ -25,7 +25,7 @@ func send(_ aProfile: MIDICIProfile, onChannel channel: MIDIChannelNumber, profi
 - (BOOL) sendProfile:(MIDICIProfile *) aProfile onChannel:(MIDIChannelNumber) channel profileData:(NSData *) profileSpecificData;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value that indicates whether the operation succeeded.
 

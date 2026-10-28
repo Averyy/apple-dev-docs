@@ -14,11 +14,11 @@ Rounds to the nearest integer value, per-channel.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Overview
+## Overview
 
 Floor(I + 0.5)
 
-#### Parameter Types
+## Parameter Types
 
 **Round (float)**:
 

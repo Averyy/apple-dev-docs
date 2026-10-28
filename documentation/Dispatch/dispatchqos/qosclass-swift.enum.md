@@ -21,7 +21,7 @@ Quality-of-service classes that specify the priorities for executing tasks.
 enum QoSClass
 ```
 
-#### Overview
+## Overview
 
 Use quality-of-service classes to communicate the intent behind the work that your app performs. The system uses those intentions to determine the best way to execute your tasks given the available resources. For example, the system gives higher priority to threads that contain user-interactive tasks to ensure that those tasks are executed quickly. Conversely, it gives lower priority to background tasks, and may attempt to save power by executing them on more power-efficient CPU cores. The system determines how to execute your tasks dynamically based on system conditions and the tasks you schedule.
 

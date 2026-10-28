@@ -17,7 +17,7 @@ An object that defines the durations used in an alarm that has a countdown.
 struct CountdownDuration
 ```
 
-#### Overview
+## Overview
 
 Provide the countdown duration in seconds.
 

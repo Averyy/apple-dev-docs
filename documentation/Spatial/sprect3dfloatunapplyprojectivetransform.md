@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatUnapplyProjectiveTransform(SPRect3DFloat rect, SPProjectiveTransform3DFloat transform);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed rectangle.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle that’s transformed by the inverse of the specified projective transform.
 

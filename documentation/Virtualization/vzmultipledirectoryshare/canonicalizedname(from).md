@@ -19,7 +19,7 @@ class func canonicalizedName(from name: String) -> String?
 + (NSString *) canonicalizedNameFromName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a String with the canonicalized name, or `nil` if there was an error.
 

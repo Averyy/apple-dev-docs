@@ -15,11 +15,11 @@ Returns an unsigned integer indicating the character in the alternate title that
 - (NSUInteger) alternateMnemonicLocation;
 ```
 
-#### Return Value
+## Return Value
 
 An unsigned integer indicating the character in the alternate title (the title displayed on the button when it’s in its alternate state) that’s marked as the “keyboard mnemonic.” If the alternate title doesn’t have a keyboard mnemonic, returns `NSNotFound`.
 
-#### Discussion
+## Discussion
 
 Mnemonics are not supported in macOS.
 

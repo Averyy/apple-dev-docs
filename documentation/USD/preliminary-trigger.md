@@ -4,7 +4,7 @@
 
 A condition that, when met, performs an action.
 
-#### Overview
+## Overview
 
 Because it inherits `Typed`, this schema declares a `Preliminary_Trigger` as a type of prim. For more information about typed schemas, see USD Specification > [Typed](http://graphics.pixar.com/usd/docs/USD-Glossary.html#USDGlossary-TypedSchema).
 
@@ -14,7 +14,7 @@ The runtime executes triggers based on:
 - Scene state, including a prim’s proximity to the user’s device.
 - Programmatic conditions, like application state or a function result.
 
-##### Declaration
+### Declaration
 
 ```other
 class "Preliminary_Trigger" (
@@ -22,7 +22,7 @@ class "Preliminary_Trigger" (
 )
 ```
 
-##### Add a tap trigger to a cube
+### Add a tap trigger to a cube
 
 The following example shows how a prim named `TapCube` opts in to notification of user taps.
 

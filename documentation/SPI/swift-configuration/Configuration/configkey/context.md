@@ -24,7 +24,7 @@ Additional context information for this configuration key.
 var context: [String : ConfigContextValue]
 ```
 
-#### Discussion
+## Discussion
 
 Context provides extra information that providers can use to refine lookups or return more specific values. Not all providers use context information.
 

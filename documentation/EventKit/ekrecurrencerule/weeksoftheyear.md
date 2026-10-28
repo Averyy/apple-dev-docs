@@ -24,7 +24,7 @@ var weeksOfTheYear: [NSNumber]? { get }
 @property (nonatomic, readonly, nullable) NSArray<NSNumber *> * weeksOfTheYear;
 ```
 
-#### Discussion
+## Discussion
 
 Values can be from `1` to `53` and from `-1` to `-53`. This property value is valid only for recurrence rules initialized with specific weeks of the year and a frequency type of [`EKRecurrenceFrequency.yearly`](../ekrecurrencefrequency/yearly.md).
 

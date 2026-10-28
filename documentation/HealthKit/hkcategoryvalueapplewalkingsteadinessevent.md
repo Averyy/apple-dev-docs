@@ -24,7 +24,7 @@ enum HKCategoryValueAppleWalkingSteadinessEvent
 enum HKCategoryValueAppleWalkingSteadinessEvent : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 These values indicate that the user received a Low or Very Low score for their Walking Steadiness. The [`HKCategoryValueAppleWalkingSteadinessEvent.repeatLow`](./hkcategoryvalueapplewalkingsteadinessevent/repeatlow.md) and [`HKCategoryValueAppleWalkingSteadinessEvent.repeatVeryLow`](./hkcategoryvalueapplewalkingsteadinessevent/repeatverylow.md) values indicate that the Low and Very Low scores persisted over a significant period of time.
 

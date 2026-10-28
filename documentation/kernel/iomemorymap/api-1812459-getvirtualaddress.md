@@ -11,11 +11,11 @@ Accessor to the virtual address of the first byte in the mapping.
 virtual IOVirtualAddress getVirtualAddress();
 ```
 
-#### Return Value
+## Return Value
 
 A virtual address.
 
-#### Overview
+## Overview
 
 This method returns the virtual address of the first byte in the mapping. Since the IOVirtualAddress is only 32bit in 32bit kernels, the getAddress() method should be used for compatibility with 64bit task mappings.
 

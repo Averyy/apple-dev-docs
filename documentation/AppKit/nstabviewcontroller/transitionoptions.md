@@ -19,7 +19,7 @@ var transitionOptions: NSViewController.TransitionOptions { get set }
 @property NSViewControllerTransitionOptions transitionOptions;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this property is set to the [`crossfade`](../nsviewcontroller/transitionoptions/crossfade.md) and [`allowUserInteraction`](../nsviewcontroller/transitionoptions/allowuserinteraction.md) options.
 

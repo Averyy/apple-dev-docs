@@ -24,7 +24,7 @@ class PHASEStringMetaParameter
 @interface PHASEStringMetaParameter : PHASEMetaParameter
 ```
 
-#### Overview
+## Overview
 
 This class contains text that updates, like a “weather” metaparameter that the app changes from “rainy” to “sunny.”
 

@@ -16,11 +16,11 @@ Obtains the transaction value for an element in this IOHIDDeviceTransactionInter
 IOReturn (*getValue)(void *self, IOHIDElementRef element, IOHIDValueRef *pValue, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 
-#### Discussion
+## Discussion
 
 Use the kIOHIDTransactionOptionDefaultOutputValue option to get the default element value.
 

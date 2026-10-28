@@ -25,11 +25,11 @@ func CFAttributedStringGetTypeID() -> CFTypeID
 extern CFTypeID CFAttributedStringGetTypeID();
 ```
 
-#### Return Value
+## Return Value
 
 The type identifier for the CFAttributedString opaque type.
 
-#### Discussion
+## Discussion
 
 CFMutableAttributedString objects have the same type identifier as CFAttributedString objects.
 

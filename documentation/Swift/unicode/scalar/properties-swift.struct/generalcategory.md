@@ -21,7 +21,7 @@ The general category (most usual classification) of the scalar.
 var generalCategory: Unicode.GeneralCategory { get }
 ```
 
-#### Discussion
+## Discussion
 
 This property corresponds to the “General_Category” property in the [Unicode Standard](http://www.unicode.org/versions/latest/).
 

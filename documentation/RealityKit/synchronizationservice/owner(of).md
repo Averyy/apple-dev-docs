@@ -22,7 +22,7 @@ Gets the device that owns a given entity, if any.
 @preconcurrency func owner(of entity: Entity) -> (any SynchronizationPeerID)?
 ```
 
-#### Return Value
+## Return Value
 
 The networked device that owns the entity. The value is `nil` if the entity isn’t synchronized or is owned locally.
 

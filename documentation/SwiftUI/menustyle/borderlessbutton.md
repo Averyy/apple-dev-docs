@@ -25,7 +25,7 @@ nonisolated static var borderlessButton: BorderlessButtonMenuStyle { get }
 
 Available when `Self` is `BorderlessButtonMenuStyle`.
 
-#### Discussion
+## Discussion
 
 On macOS, the button optionally displays an arrow indicating that it presents a menu.
 

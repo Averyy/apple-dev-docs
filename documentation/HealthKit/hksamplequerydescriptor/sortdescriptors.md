@@ -20,7 +20,7 @@ An array that specifies the order of the results that the query returns.
 var sortDescriptors: [SortDescriptor<Sample>]
 ```
 
-#### Discussion
+## Discussion
 
 The system applies the sort descriptors in order. The later descriptors sort any items that the earlier sort descriptors considered equal. If you don’t need the results in a specific order, pass an empty array.
 

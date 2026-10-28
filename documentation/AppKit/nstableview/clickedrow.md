@@ -19,11 +19,11 @@ var clickedRow: Int { get }
 @property (readonly) NSInteger clickedRow;
 ```
 
-#### Return Value
+## Return Value
 
 The index of the row the user clicked to trigger an action message. Returns `–1` if the user clicked in an area of the table view not occupied by table rows.
 
-#### Discussion
+## Discussion
 
 This property contains the index of the row that the user clicked. The value is `-1` when the user clicks in an area of the table view that is not occupied by table rows.
 

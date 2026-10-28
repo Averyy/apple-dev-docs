@@ -16,7 +16,7 @@ get isRotationAvailable(): boolean;
 set isRotationAvailable(_: boolean);
 ```
 
-#### Discussion
+## Discussion
 
 MapKit JS determines whether it’s possible to rotate the map, and sets [`isRotationAvailable`](./isrotationavailable.md) to `true` or `false`. When the value is `true`, users can rotate the map, and any labels on the map remain horizontal.
 

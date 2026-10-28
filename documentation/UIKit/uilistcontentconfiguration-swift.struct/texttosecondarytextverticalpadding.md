@@ -19,7 +19,7 @@ The vertical padding between the text and secondary text.
 var textToSecondaryTextVerticalPadding: CGFloat { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This value only applies when there’s both text and secondary text, and they’re in a stacked vertical layout.
 

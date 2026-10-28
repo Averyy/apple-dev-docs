@@ -13,7 +13,7 @@
 #define kIOPropertyTPGSInfoSize
 ```
 
-#### Discussion
+## Discussion
 
 Size of the kIOPropertyTPGSInfo key.
 

@@ -25,7 +25,7 @@ var cumulativeNormalAppExitCount: Int { get }
 @property (readonly) NSUInteger cumulativeNormalAppExitCount;
 ```
 
-#### Discussion
+## Discussion
 
 Normal exits include terminations by the app switcher when the user swipes up to exit the app.
 

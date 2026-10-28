@@ -17,7 +17,7 @@ A yearly aggregated insight record for at least one calendar year.
 case yearly
 ```
 
-#### Discussion
+## Discussion
 
 The data period returns insight records aggregated by year for at least one calendar year, and includes the requested date range, potentially starting before the query date. The data range begins and ends in a year or the last available data for the query.
 

@@ -21,7 +21,7 @@ The product identifier of the Apple In-App Purchase.
 let productID: String
 ```
 
-#### Discussion
+## Discussion
 
 You create product identifiers for Apple In-App Purchases in App Store Connect.
 

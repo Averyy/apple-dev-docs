@@ -23,7 +23,7 @@ func multiply<Matrix>(by matrix: Matrix, divisor: Int, preBias: (Int, Int, Int, 
 
 Available when `Format` is `vImage.Interleaved8x4`.
 
-#### Discussion
+## Discussion
 
 This function applies the following operation to each pixel:
 

@@ -24,7 +24,7 @@ func setCenter(_ coordinate: CLLocationCoordinate2D, animated: Bool)
 - (void) setCenterCoordinate:(CLLocationCoordinate2D) coordinate animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Changing the center coordinate centers the map on the new coordinate without changing the current zoom level. It also updates the value in the [`region`](./region.md) property to reflect the new center coordinate and the new span values needed to maintain the current zoom level.
 

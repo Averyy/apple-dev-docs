@@ -25,7 +25,7 @@ var verticalAccuracy: CLLocationAccuracy { get }
 @property (nonatomic, readonly) CLLocationAccuracy verticalAccuracy;
 ```
 
-#### Discussion
+## Discussion
 
 A positive [`verticalAccuracy`](./verticalaccuracy.md) value represents the estimated uncertainty associated with [`altitude`](./altitude.md) and [`ellipsoidalAltitude`](./ellipsoidalaltitude.md). This value is available whenever altitude values are available.
 

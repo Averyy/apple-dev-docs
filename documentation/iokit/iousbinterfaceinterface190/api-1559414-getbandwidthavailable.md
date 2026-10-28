@@ -16,11 +16,11 @@ Returns the amount of bandwidth available on the bus for allocation to isochrono
 IOReturn (*GetBandwidthAvailable)(void *self, UInt32 *bandwidth);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService.
 
-#### Discussion
+## Discussion
 
 This function is useful for determining the correct AltInterface setting as well as for using SetPipePolicy.
 

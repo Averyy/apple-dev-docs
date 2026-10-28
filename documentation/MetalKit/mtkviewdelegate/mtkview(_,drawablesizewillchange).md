@@ -26,7 +26,7 @@ func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize)
 - (void) mtkView:(MTKView *) view drawableSizeWillChange:(CGSize) size;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to recompute any view or projection matrices, or to regenerate any buffers to be compatible with the view’s new size.
 

@@ -19,7 +19,7 @@ var titleBaseWritingDirection: NSWritingDirection { get set }
 @property NSWritingDirection titleBaseWritingDirection;
 ```
 
-#### Discussion
+## Discussion
 
 Can be one of the following constants: `NSWritingDirectionNatural`, `NSWritingDirectionLeftToRight`, or `NSWritingDirectionRightToLeft`.
 

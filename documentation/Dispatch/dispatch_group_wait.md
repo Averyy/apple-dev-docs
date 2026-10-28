@@ -21,11 +21,11 @@ Waits synchronously for the previously submitted block objects to finish; return
 extern intptr_t dispatch_group_wait(dispatch_group_t group, dispatch_time_t timeout);
 ```
 
-#### Return Value
+## Return Value
 
 Returns zero on success (all blocks associated with the group completed before the specified timeout) or non-zero on error (timeout occurred).
 
-#### Discussion
+## Discussion
 
 This function waits for the completion of the blocks associated with the given dispatch group and returns when either all blocks have completed or the specified timeout has elapsed. When a timeout occurs, the group is restored to its original state.
 

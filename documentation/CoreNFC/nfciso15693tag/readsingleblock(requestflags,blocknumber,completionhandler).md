@@ -26,7 +26,7 @@ func readSingleBlock(requestFlags flags: NFCISO15693RequestFlag, blockNumber: UI
 - (void) readSingleBlockWithRequestFlags:(NFCISO15693RequestFlag) flags blockNumber:(uint8_t) blockNumber completionHandler:(void (^)(NSData *data, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method sends the tag’s [`identifier`](./identifier.md) with the command.
 

@@ -20,7 +20,7 @@ An asynchronous sequence of messages sent to the session.
 struct Messages<Message> where Message : Decodable, Message : Encodable
 ```
 
-#### Overview
+## Overview
 
 When you use a [`GroupSessionMessenger`](../groupsessionmessenger.md) to communicate across devices, the `Messages` structure provides the sequence of messages the other devices send. Iterate over the contents of this structure asynchronously to retrieve each message and update your app.
 

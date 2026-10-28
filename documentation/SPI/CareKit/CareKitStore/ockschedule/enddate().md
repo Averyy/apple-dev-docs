@@ -17,7 +17,7 @@ The date of the last event of this schedule, or nil if the schedule is of infini
 func endDate() -> Date?
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: This operation has an upperbound complexity of O(NlogN)
 

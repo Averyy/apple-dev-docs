@@ -19,11 +19,11 @@ func SKSearchCreate(_ inIndex: SKIndex!, _ inQuery: CFString!, _ inSearchOptions
 SKSearchRef SKSearchCreate(SKIndexRef inIndex, CFStringRef inQuery, SKSearchOptions inSearchOptions);
 ```
 
-#### Return Value
+## Return Value
 
 A search object.
 
-#### Discussion
+## Discussion
 
 This function creates an asynchronous search object for querying the document contents in an index. It also initiates the search on a separate thread.
 
@@ -65,7 +65,7 @@ Search Kit is thread-safe. You can use separate indexing and searching threads. 
 
 When your application no longer needs the search object, dispose of it by calling [`CFRelease`](../CoreFoundation/cfrelease.md).
 
-##### Special Considerations
+### Special Considerations
 
 Search Kit supports logical exclusion. The `NOT` and `!` operators behave as though they were `EXCLUDE` operators. For example, a search for ‘red `NOT` blue’ returns all documents that contain the word ‘red’ and do not contain the word ‘blue’.
 
@@ -73,7 +73,7 @@ Unary Boolean operators, however, are not currently implemented in Search Kit. A
 
 You cannot use [`CFMakeCollectable`](../CoreFoundation/cfmakecollectable.md) with SKSearch objects. In a garbage-collected environment, you must use [`CFRelease`](../CoreFoundation/cfrelease.md) to dispose of an SKSearch object.
 
-##### Version-Notes
+### Version-Notes
 
 OS X version 10.4 uses a completely revised, and far more powerful, query approach than did earlier versions of macOS. Refer to the Discussion in this function for details. Refer to [`SKSearchResultsCreateWithQuery`](./api-1448610-sksearchresultscreatewithquery.md) (deprecated) for a description of Search Kit’s behavior in earlier versions of macOS.
 

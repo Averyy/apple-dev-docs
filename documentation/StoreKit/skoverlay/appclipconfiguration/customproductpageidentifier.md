@@ -22,7 +22,7 @@ var customProductPageIdentifier: String? { get set }
 @property (nonatomic, retain, nullable) NSString * customProductPageIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier, referred to as the product variant identifier, identifies specific variant product pages from App Store Connect for your app.
 

@@ -21,7 +21,7 @@ Adds two values and produces their sum, rounded to a representable value.
 static func + (lhs: Float16, rhs: Float16) -> Float16
 ```
 
-#### Discussion
+## Discussion
 
 The addition operator (`+`) calculates the sum of its two arguments. For example:
 

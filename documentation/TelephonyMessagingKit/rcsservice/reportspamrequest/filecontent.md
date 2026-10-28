@@ -15,7 +15,7 @@ The content of the file attachment message.
 var fileContent: Data?
 ```
 
-#### Discussion
+## Discussion
 
 When possible, supply downloaded file content when reporting a message as spam.
 

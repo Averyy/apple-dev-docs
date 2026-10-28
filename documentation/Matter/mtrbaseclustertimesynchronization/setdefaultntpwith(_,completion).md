@@ -29,7 +29,7 @@ func setDefaultNTPWith(_ params: MTRTimeSynchronizationClusterSetDefaultNTPParam
 - (void) setDefaultNTPWithParams:(MTRTimeSynchronizationClusterSetDefaultNTPParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command is used to set the DefaultNTP attribute.
 

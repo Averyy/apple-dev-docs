@@ -20,7 +20,7 @@ func execute() -> Any?
 - (id) executeCommand;
 ```
 
-#### Discussion
+## Discussion
 
 Before this method executes the command (through `NSInvocation` mechanisms), it evaluates all object specifiers involved in the command, validates that the receivers can actually handle the command, and verifies that the types of any arguments that were initially object specifiers are valid.
 

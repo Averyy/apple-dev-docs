@@ -19,7 +19,7 @@ let AVURLAssetShouldSupportAliasDataReferencesKey: String
 extern NSString * const AVURLAssetShouldSupportAliasDataReferencesKey;
 ```
 
-#### Discussion
+## Discussion
 
 Most QuickTime movie files contain all of the media data they require, but some contain references to media in other files. While AVFoundation and CoreMedia typically employ a URL reference for this purpose, older implementations commonly use a Macintosh alias instead, as the QuickTime File Format specification documents. Specify this option if your app must work with legacy QuickTime movie files that contain alias-based references to media data in other files.
 

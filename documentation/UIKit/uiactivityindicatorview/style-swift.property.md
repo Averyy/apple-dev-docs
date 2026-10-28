@@ -23,7 +23,7 @@ var style: UIActivityIndicatorView.Style { get set }
 @property (nonatomic) UIActivityIndicatorViewStyle activityIndicatorViewStyle;
 ```
 
-#### Discussion
+## Discussion
 
 See [`UIActivityIndicatorView.Style`](./style-swift.enum.md) for the available styles. The default value is [`UIActivityIndicatorView.Style.medium`](./style-swift.enum/medium.md).
 

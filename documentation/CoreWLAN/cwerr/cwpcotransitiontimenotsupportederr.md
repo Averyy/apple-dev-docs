@@ -17,7 +17,7 @@ case cwpcoTransitionTimeNotSupportedErr
 kCWPCOTransitionTimeNotSupportedErr
 ```
 
-#### Discussion
+## Discussion
 
 Association was denied because the requesting station does not support the PCO transition time required by the AP.
 

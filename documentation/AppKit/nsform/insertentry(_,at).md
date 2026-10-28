@@ -21,11 +21,11 @@ func insertEntry(_ title: String, at index: Int) -> NSFormCell!
 - (NSFormCell *) insertEntry:(NSString *) title atIndex:(NSInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The form cell object that was created for the entry.
 
-#### Discussion
+## Discussion
 
 The new entry has no tag, target, or action, but is enabled and editable.
 

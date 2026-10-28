@@ -5,7 +5,7 @@
 
 Measure CPU and GPU utilization to find ways to improve your app’s performance.
 
-#### Overview
+## Overview
 
 You use the RealityKit framework to add 3D content to an [ARKit](../ARKit/ARKit.md) app. The framework runs an entity component system (ECS) on the CPU to manage tasks like physics calculations, animations, audio processing, and network synchronization. It also relies on the [Metal](../Metal/Metal.md) framework and GPU hardware to perform multithreaded rendering.
 
@@ -13,7 +13,7 @@ You use the RealityKit framework to add 3D content to an [ARKit](../ARKit/ARKit.
 
 Although RealityKit handles much of the complexity of this system for you, it’s still important to optimize your app for performance. Use debugging features built in to RealityKit — along with standard tools like Xcode and Instruments — to pinpoint the causes of reduced frame rate. Then make data-driven adjustments to your assets or to the way you use the framework to improve performance.
 
-##### Locate performance bottlenecks
+### Locate performance bottlenecks
 
 To address performance problems, you need data. RealityKit provides a debugging option to collect a basic set of statistics, like CPU utilization, ECS operations, and memory footprint. Add the [`showStatistics`](./arview/debugoptions-swift.struct/showstatistics.md) option to the [`debugOptions`](./arview/debugoptions-swift.property.md) option set of your [`ARView`](./arview.md):
 
@@ -31,15 +31,15 @@ If the main thread consumes more than 16.6 ms, then the app is CPU limited. If n
 
 > 💡 **Tip**: If you need more detailed data, use tools like Xcode’s [debug gauges](https://help.apple.com/xcode/mac/current/#/dev94c128b7b) and the [Instruments](https://help.apple.com/instruments/mac/current/) app. Combined with OS signposts, available among the [Logging](../os/logging.md) methods of the [os](../os/os.md) framework, you can identify processor utilization with a great deal of precision, as described in [Improving your app’s performance](../Xcode/improving-your-app-s-performance.md).
 
-##### Reduce CPU utilization
+### Reduce CPU utilization
 
 For an app that’s CPU limited, examine what RealityKit task or tasks — like rendering, ECS, physics, network, and so on — consume the most time during each frame. Also consider your app’s custom logic, which contributes to the main thread time. Then target the appropriate areas for optimization, as described in [Reducing CPU Utilization in Your RealityKit App](./reducing-cpu-utilization-in-your-realitykit-app.md).
 
-##### Reduce GPU utilization
+### Reduce GPU utilization
 
 If your app is GPU limited, look for ways to reduce render work. For example, you can reduce the complexity of your content, like textures, meshes, and materials. Alternatively, you can disable or scale back certain render features, like depth of field, shadows, and environmental texturing. For more information, see [Reducing GPU Utilization in Your RealityKit App](./reducing-gpu-utilization-in-your-realitykit-app.md).
 
-##### Make runtime adjustments for older devices
+### Make runtime adjustments for older devices
 
 Be sure to test your app on all supported devices before shipping your app. If you find that older devices can’t achieve the full frame rate, experiment with complexity reductions that you can make dynamically. For example:
 

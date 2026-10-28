@@ -13,7 +13,7 @@ Invoke a command plugin or perform other actions on command plugins.
 **Availability**:
 - Swift 5.6+
 
-#### Overview
+## Overview
 
 ```
 package plugin [--package-path=<package-path>]

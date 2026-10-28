@@ -21,7 +21,7 @@ A protocol that associates a definition type with its corresponding instance typ
 protocol AppIntentTypeDefinition
 ```
 
-#### Overview
+## Overview
 
 The `AppIntentTypeDefinition` bridges a definition type you use to retrieve your intent, entity, and enum type, and the type-erased instance of your concrete intent, entity, or enum. For example, `AppIntentTypeDefinition` bridges [`AppEntityDefinition`](./appentitydefinition.md) to the [`AnyAppEntity`](./anyappentity.md). Validate that a given instance was produced from the correct definition using the [`isInstance(_:)`](./appintenttypedefinition/isinstance%28_%29.md) function.
 

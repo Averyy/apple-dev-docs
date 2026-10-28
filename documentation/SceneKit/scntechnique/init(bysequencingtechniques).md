@@ -25,11 +25,11 @@ init?(bySequencingTechniques techniques: [SCNTechnique])
 + (SCNTechnique *) techniqueBySequencingTechniques:(NSArray<SCNTechnique *> *) techniques;
 ```
 
-#### Return Value
+## Return Value
 
 A new technique object.
 
-#### Discussion
+## Discussion
 
 The new technique applies the effects of the techniques in the order specified in the `techniques` array. Each output of a technique in the array becomes an input to the next technique in the array.
 

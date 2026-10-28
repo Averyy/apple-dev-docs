@@ -24,7 +24,7 @@ convenience init?(preset presetIdentifier: AVOutputSettingsPreset)
 + (instancetype) outputSettingsAssistantWithPreset:(AVOutputSettingsPreset) presetIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 - presetIdentifier: A preset configuration for the object.
 

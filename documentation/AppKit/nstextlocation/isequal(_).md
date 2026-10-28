@@ -20,7 +20,7 @@ func isEqual(_ location: Any?) -> Bool
 - (BOOL) isEqual:(id) location;
 ```
 
-#### Discussion
+## Discussion
 
 Must not depend on auxiliary state such as affinity or visual-edge preference. Locations from different data source methods are compared using `isEqual:` and must agree when they refer to the same position.
 

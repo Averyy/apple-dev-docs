@@ -15,7 +15,7 @@ A spatial template element that represents a seat for a participant in the activ
 struct SpatialTemplateSeatElement
 ```
 
-#### Overview
+## Overview
 
 Add [`SpatialTemplateSeatElement`](./spatialtemplateseatelement.md) types to a custom [`SpatialTemplate`](./spatialtemplate.md) to specify the placement and orientation of participants in a group activity. When an activity starts, the system places participants into the shared coordinate space and orients them according to the seat information you provide. If you associate roles with one or more seats, participants must acquire the associated role before they can occupy the corresponding seat.
 

@@ -17,7 +17,7 @@ MLX Swift is a Swift API for MLX.
 - [Installation](./install.md)
 - [Troubleshooting](./troubleshooting.md)
 
-#### Overview
+## Overview
 
 MLX is an array framework for machine learning on Apple silicon. MLX Swift expands MLX to the Swift language, making research and experimentation easier on Apple silicon.
 
@@ -35,7 +35,7 @@ The main differences between MLX and NumPy are:
 
 The design of MLX is inspired by frameworks like [PyTorch](https://pytorch.org/), [Jax](https://github.com/google/jax), and [ArrayFire](https://arrayfire.org/). A notable difference from these frameworks and MLX is the [Unified Memory](./unified-memory.md). Arrays in MLX live in shared memory. Operations on MLX arrays can be performed on any of the supported device types without performing data copies. Currently supported device types are the CPU and GPU.
 
-#### Wired Memory
+## Wired Memory
 
 MLX includes a process-wide wired memory coordinator for GPU workloads. Use `WiredMemoryManager` and `WiredMemoryTicket` to coordinate wired limit changes across concurrent tasks, and implement `WiredMemoryPolicy` to define how limits are computed.
 
@@ -59,7 +59,7 @@ try await ticket.withWiredLimit {
 
 See [Wired Memory Management](./wired-memory.md) for configuration, best practices, and policy guidance.
 
-#### Other MLX Packages
+## Other MLX Packages
 
 - [MLXNN](../MLXNN/MLXNN.md)
 - [MLXOptimizers](../MLXOptimizers/MLXOptimizers.md)

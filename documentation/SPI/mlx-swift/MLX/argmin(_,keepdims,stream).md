@@ -17,7 +17,7 @@ Indices of the minimum value over the entire array.
 func argMin(_ array: MLXArray, keepDims: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray(4 ..< 16, [4, 3])
@@ -26,7 +26,7 @@ let array = MLXArray(4 ..< 16, [4, 3])
 let i = array.argMin()
 ```
 
-##### See Also
+### See Also
 
 - [Indexes](./indexes.md)
 - [`argMin(_:axis:keepDims:stream:)`](./argmin%28_,axis,keepdims,stream%29.md)

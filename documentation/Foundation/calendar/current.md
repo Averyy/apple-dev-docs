@@ -21,7 +21,7 @@ The user’s current calendar.
 static var current: Calendar { get }
 ```
 
-#### Discussion
+## Discussion
 
 This calendar does not track changes that the user makes to their preferences.
 

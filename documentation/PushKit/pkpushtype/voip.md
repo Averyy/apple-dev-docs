@@ -23,7 +23,7 @@ static let voIP: PKPushType
 extern PKPushType const PKPushTypeVoIP;
 ```
 
-#### Discussion
+## Discussion
 
 Use this type of notification to initiate live voice calls over the network. Apps receiving VoIP push notifications must report the call quickly to CallKit, so it can alert the user to the presence of the incoming call. For apps linked against the iOS 13 SDK or later, the system terminates your app if you fail to report these notifications to CallKit. If your app repeatedly fails to report VoIP notifications to CallKit, the system stops launching your app for VoIP push notifications.
 

@@ -20,7 +20,7 @@ class PortMessage
 @interface NSPortMessage : NSObject
 ```
 
-#### Overview
+## Overview
 
 Port messages are used primarily by the distributed objects system. You should implement inter-application communication using distributed objects whenever possible and use [`PortMessage`](./portmessage.md) only when necessary.
 

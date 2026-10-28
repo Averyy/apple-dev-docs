@@ -20,4 +20,4 @@ init(vocabSize: Int, hiddenSize: Int, numHiddenLayers: Int, numAttentionHeads: I
 
 ---
 
-*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/nemotronhconfiguration/init(vocabsize:hiddensize:numhiddenlayers:numattentionheads:numkeyvalueheads:mambanumheads:mambaheaddim:ssmstatesize:convkernel:ngroups:intermediatesize:moeintermediatesize:moesharedexpertintermediatesize:nroutedexperts:numexpertspertok:hyb-29sud)*
+*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxllm/nemotronhconfiguration/init%28vocabsize:hiddensize:numhiddenlayers:numattentionheads:numkeyvalueheads:mambanumheads:mambaheaddim:ssmstatesize:convkernel:ngroups:intermediatesize:moeintermediatesize:moesharedexpertintermediatesize:nroutedexperts:numexpertspertok:hyb-29sud)*

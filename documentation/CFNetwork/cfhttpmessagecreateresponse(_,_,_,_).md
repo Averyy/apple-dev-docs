@@ -24,11 +24,11 @@ func CFHTTPMessageCreateResponse(_ alloc: CFAllocator?, _ statusCode: CFIndex, _
 extern CFHTTPMessageRefCFHTTPMessageCreateResponse(CFAllocatorRef alloc, CFIndex statusCode, CFStringRef statusDescription, CFStringRef httpVersion);
 ```
 
-#### Return Value
+## Return Value
 
 A new `CFHTTPMessage` object, or `NULL` if there was a problem creating the object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function returns a `CFHTTPMessage` object that you can use to build an HTTP response. Continue building the response by calling[`CFHTTPMessageSetBody(_:_:)`](./cfhttpmessagesetbody%28_,_%29.md) to set the message’s body. Call [`CFHTTPMessageSetHeaderFieldValue(_:_:_:)`](./cfhttpmessagesetheaderfieldvalue%28_,_,_%29.md) to set the message’s headers. Then call [`CFHTTPMessageCopySerializedMessage(_:)`](./cfhttpmessagecopyserializedmessage%28_%29.md) to make the message ready for transmission by serializing it.
 

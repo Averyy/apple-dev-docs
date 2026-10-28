@@ -24,7 +24,7 @@ protocol HMHomeDelegate : NSObjectProtocol
 @protocol HMHomeDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Adopt this protocol to find out about changes made outside your app to a particular home, like when the home’s name changes, or when a room is added.
 

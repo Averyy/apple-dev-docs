@@ -22,7 +22,7 @@ var currentLaneGuidance: CPLaneGuidance? { get set }
 @property (nonatomic, copy, readwrite, nullable) CPLaneGuidance * currentLaneGuidance;
 ```
 
-#### Discussion
+## Discussion
 
 First, add the required [`CPLaneGuidance`](../cplaneguidance.md) objects to the session using [`add(_:)`](./add%28_%29-93qpu.md), then set this property with the current lane guidance.
 

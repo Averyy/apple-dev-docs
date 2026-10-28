@@ -18,7 +18,7 @@ A card that displays a header, grid of buttons, and a multi-line label In CareKi
 class OCKGridTaskView
 ```
 
-#### Overview
+## Overview
 
 To insert custom views vertically the view, see `contentStack`. To modify the data in the grid, set a `dataSource` for the `collectionView`.
 

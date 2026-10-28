@@ -27,7 +27,7 @@ case subscription
 SKProductDiscountTypeSubscription
 ```
 
-#### Discussion
+## Discussion
 
 For more information about promotional offers, see [Implementing promotional offers in your app](../../implementing-promotional-offers-in-your-app.md).
 

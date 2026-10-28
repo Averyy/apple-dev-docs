@@ -26,7 +26,7 @@ func cStringLength() -> Int
 - (NSUInteger) cStringLength;
 ```
 
-#### Discussion
+## Discussion
 
 Raises if the receiver can’t be represented in the default C-string encoding without loss of information. You can also use [`canBeConverted(to:)`](./canbeconverted%28to%29.md) to check whether a string can be losslessly converted to the default C-string encoding. If it can’t, use [`lossyCString()`](./lossycstring%28%29.md) to get a C-string representation with some loss of information, then check its length explicitly using the ANSI function `strlen()`.
 

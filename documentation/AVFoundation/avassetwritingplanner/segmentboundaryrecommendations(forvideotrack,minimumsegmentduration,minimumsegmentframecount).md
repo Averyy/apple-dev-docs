@@ -24,11 +24,11 @@ class func segmentBoundaryRecommendations(forVideoTrack videoAssetTrack: AVAsset
 + (NSArray<AVPlannedVideoSegmentConfiguration *> *) segmentBoundaryRecommendationsForVideoAVAssetTrack:(AVAssetTrack *) videoAssetTrack minimumSegmentDuration:(CMTime) minimumSegmentDuration minimumSegmentFrameCount:(NSInteger) minimumSegmentFrameCount;
 ```
 
-#### Return Value
+## Return Value
 
 Array of AVPlannedVideoSegmentConfiguration objects, each element specifying the configuration of a planned video segment, ordered in output PTS order
 
-#### Discussion
+## Discussion
 
 This is a convenience method that can help clients to pick optimal segmentation boundaries for a given source video AVAssetTrack based on the structure of the track and the minimumSegmentDuration and minimumSegmentFrameCount values provided.
 

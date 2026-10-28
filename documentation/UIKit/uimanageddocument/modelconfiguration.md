@@ -22,7 +22,7 @@ var modelConfiguration: String? { get set }
 @property (nonatomic, copy, nullable) NSString * modelConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 By default, this value is `nil`.
 

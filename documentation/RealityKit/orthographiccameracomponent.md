@@ -20,7 +20,7 @@ A component that defines an orthographic virtual camera and its settings.
 struct OrthographicCameraComponent
 ```
 
-#### Overview
+## Overview
 
 Each scene requires a camera that defines the viewpoint from which RealityKit renders the scene. The orthographic camera renders the entities in the scene without the perspective of depth, meaning faraway objects don’t look smaller.
 

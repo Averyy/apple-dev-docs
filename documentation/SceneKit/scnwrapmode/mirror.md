@@ -29,7 +29,7 @@ SCNWrapModeMirror
 
 - [SCNMirror](../scnmirror.md)
 
-#### Discussion
+## Discussion
 
 Texture sampling in areas of the material whose texture coordinates would fall outside from `0.0` to `1.0` results in tiling both texture image and its mirror image across the surface using the material.
 

@@ -17,7 +17,7 @@ The structure that determines the devices to connect to.
 struct Devices
 ```
 
-#### Overview
+## Overview
 
 This structure determines the devices the `NetworkBrowser` acts on when subscribing, such as which devices to try to connect to. It allows your app to include only the devices that are relevant for a given `NetworkBrowser` operation and use case.
 

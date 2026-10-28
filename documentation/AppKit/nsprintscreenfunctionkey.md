@@ -19,7 +19,7 @@ var NSPrintScreenFunctionKey: Int { get }
 NSPrintScreenFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

@@ -16,7 +16,7 @@ var handler: XCTDarwinNotificationExpectation.Handler? { get set }
 @property (copy, nullable) XCTDarwinNotificationExpectationHandler handler;
 ```
 
-#### Discussion
+## Discussion
 
 If provided, the custom handler will be queried each time a matching notification is received to determine whether the expectation should be fulfilled. This allows the handler to check Darwin state variables or perform other logic beyond simply verifying that the notification has been received.
 

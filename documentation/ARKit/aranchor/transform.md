@@ -24,7 +24,7 @@ var transform: simd_float4x4 { get }
 
 - [Displaying an AR Experience with Metal](../displaying-an-ar-experience-with-metal.md)
 
-#### Discussion
+## Discussion
 
 World coordinate space in ARKit always follows a right-handed convention, but is oriented based on the session configuration. For details, see [Understanding World Tracking](../understanding-world-tracking.md).
 

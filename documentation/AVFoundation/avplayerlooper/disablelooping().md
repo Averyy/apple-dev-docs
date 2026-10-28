@@ -24,7 +24,7 @@ func disableLooping()
 - (void) disableLooping;
 ```
 
-#### Discussion
+## Discussion
 
 The player looper will stop performing player queue operations for looping and let the current looping item replica play to the end. The player’s original [`actionAtItemEnd`](../avplayer/actionatitemend-swift.property.md) property will be restored afterwards.
 

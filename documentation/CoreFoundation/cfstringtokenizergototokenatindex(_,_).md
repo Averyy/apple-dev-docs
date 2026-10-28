@@ -25,11 +25,11 @@ func CFStringTokenizerGoToTokenAtIndex(_ tokenizer: CFStringTokenizer!, _ index:
 extern CFStringTokenizerTokenType CFStringTokenizerGoToTokenAtIndex(CFStringTokenizerRef tokenizer, CFIndex index);
 ```
 
-#### Return Value
+## Return Value
 
 The type of the token if the tokenizer succeeded in finding a token and setting it as the current token. Returns `kCFStringTokenizerTokenNone` if the tokenizer failed to find a token. For possible values, see [`CFStringTokenizerTokenType`](./cfstringtokenizertokentype.md).
 
-#### Discussion
+## Discussion
 
 You can obtain the range and attribute of the token calling [`CFStringTokenizerGetCurrentTokenRange(_:)`](./cfstringtokenizergetcurrenttokenrange%28_%29.md) and [`CFStringTokenizerCopyCurrentTokenAttribute(_:_:)`](./cfstringtokenizercopycurrenttokenattribute%28_,_%29.md). If the token is a compound (with type `kCFStringTokenizerTokenHasSubTokensMask` or `kCFStringTokenizerTokenHasDerivedSubTokensMask`), you can obtain its subtokens and (or) derived subtokens by calling [`CFStringTokenizerGetCurrentSubTokens(_:_:_:_:)`](./cfstringtokenizergetcurrentsubtokens%28_,_,_,_%29.md).
 

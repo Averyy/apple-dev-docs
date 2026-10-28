@@ -24,7 +24,7 @@ class CMStepCounter
 @interface CMStepCounter : NSObject
 ```
 
-#### Overview
+## Overview
 
 Step information is gathered on devices with the appropriate built-in hardware and stored so that you can run queries to determine the user’s recent physical activity. You use this class to gather both current step data and any historical data.
 

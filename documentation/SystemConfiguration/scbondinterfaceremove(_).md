@@ -19,7 +19,7 @@ func SCBondInterfaceRemove(_ bond: SCBondInterface) -> Bool
 Boolean SCBondInterfaceRemove(SCBondInterfaceRef bond);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the interface was removed; `FALSE` if an error occurred.
 

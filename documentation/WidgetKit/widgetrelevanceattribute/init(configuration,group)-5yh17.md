@@ -22,7 +22,7 @@ init(configuration: Configuration, group: WidgetRelevanceGroup)
 
 Available when `Configuration` inherits `INIntent`.
 
-#### Discussion
+## Discussion
 
 Multiple groups can be associated with the same widget by providing multiple `WidgetRelevanceAttribute` instances with different groups.
 

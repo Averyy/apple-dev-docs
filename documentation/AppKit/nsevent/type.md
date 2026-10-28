@@ -19,7 +19,7 @@ var type: NSEvent.EventType { get }
 @property (readonly) NSEventType type;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of possible values, see [`NSEvent.EventType`](./eventtype.md).
 

@@ -27,7 +27,7 @@ A Boolean value indicating whether the workout is open ended.
 @property (atomic, copy, readonly, nullable) NSNumber * isOpenEnded;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a Boolean whose value is [`true`](../../Swift/true.md) when the user wants an open-ended workout instead of one with a specific goal.
 

@@ -25,7 +25,7 @@ func clearBarrier()
 - (void) clearBarrier;
 ```
 
-#### Discussion
+## Discussion
 
 You need to set or clear barriers (as needed) before executing any of the commands in the indirect command buffer.
 

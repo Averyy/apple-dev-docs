@@ -23,11 +23,11 @@ func MIDIObjectGetDataProperty(_ obj: MIDIObjectRef, _ propertyID: CFString, _ o
 extern OSStatus MIDIObjectGetDataProperty(MIDIObjectRef obj, CFStringRef propertyID, CFDataRef*outData);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 See [`MIDIObjectRef`](./midiobjectref.md) for information about properties.
 

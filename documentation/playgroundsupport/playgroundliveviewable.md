@@ -17,7 +17,7 @@ A protocol that displays an instance as a live view in a playground.
 protocol PlaygroundLiveViewable
 ```
 
-#### Overview
+## Overview
 
 A playground that presents a simplified user interface programming environment, for example, can make its view-like type conform to [`PlaygroundLiveViewable`](./playgroundliveviewable.md) and appear in the live view. By default, [`UIView`](../UIKit/uiview.md) and [`UIViewController`](../UIKit/uiviewcontroller.md) conform to this protocol in iOS and tvOS, and [`NSView`](../AppKit/nsview.md) and [`NSViewController`](../AppKit/nsviewcontroller.md) conform to this protocol in macOS. You only need to implement this protocol for custom objects that don't already inherit from [`UIView`](../UIKit/uiview.md), [`UIViewController`](../UIKit/uiviewcontroller.md), [`NSView`](../AppKit/nsview.md), or [`NSViewController`](../AppKit/nsviewcontroller.md).
 

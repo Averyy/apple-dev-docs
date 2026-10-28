@@ -5,7 +5,7 @@
 
 Encode a render pass to draw graphics into an image.
 
-#### Overview
+## Overview
 
 A render pass processes and rasterizes geometry to one or more output attachments using a render pipeline.
 

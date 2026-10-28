@@ -24,7 +24,7 @@ case alphaIsOne
 MPSAlphaTypeAlphaIsOne
 ```
 
-#### Overview
+## Overview
 
 The alpha value is guaranteed to be `1` even if it is not encoded as `1` or even not encoded at all.
 

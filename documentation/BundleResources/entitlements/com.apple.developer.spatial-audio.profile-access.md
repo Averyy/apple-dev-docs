@@ -18,7 +18,7 @@ An entitlement that enables your app to use the personalized spatial audio profi
 - **Name**: `com.apple.developer.spatial-audio.profile-access`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 This entitlement applies the personalized spatial audio profile someone makes in Settings to your app’s audio output for the following APIs:
 

@@ -19,11 +19,11 @@ func value(forProperty property: NSBitmapImageRep.PropertyKey) -> Any?
 - (id) valueForProperty:(NSBitmapImageRepPropertyKey) property;
 ```
 
-#### Return Value
+## Return Value
 
 A value specific to `property`, or `nil` if the property is not set for the bitmap.
 
-#### Discussion
+## Discussion
 
 Image properties can affect how an image is read in and saved to file. When retrieving the bitmap image properties defined in [`NSBitmapImageRep.PropertyKey`](./propertykey.md), be sure to check the return value of this method for a `nil` value. If a particular value is not set for the image, this method may return `nil`.
 

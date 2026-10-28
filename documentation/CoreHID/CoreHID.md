@@ -9,7 +9,7 @@ Interact with keyboards, mice, and other human interface devices.
 **Availability**:
 - macOS 15.0+
 
-#### Overview
+## Overview
 
 The CoreHID framework facilitates interaction with human interface devices (HID), like a keyboard, mouse, or other device. Interactions include receiving data that a device generates, such as a key press or mouse click. CoreHID also allows sending requests to a device, such as a request to turn on an LED. You can also emulate a device connected to the system, such as a virtual game controller, and send input to other apps without physical hardware.
 

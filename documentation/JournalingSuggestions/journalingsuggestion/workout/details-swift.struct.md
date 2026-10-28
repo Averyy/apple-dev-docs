@@ -15,7 +15,7 @@ Information about a workout that a person completes.
 struct Details
 ```
 
-#### Overview
+## Overview
 
 Each [`JournalingSuggestion.Workout`](../workout.md) contains an instance of this structure with its [`details`](./details-swift.property.md) property.
 

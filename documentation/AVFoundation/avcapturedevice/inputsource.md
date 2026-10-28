@@ -19,7 +19,7 @@ class InputSource
 @interface AVCaptureDeviceInputSource : NSObject
 ```
 
-#### Overview
+## Overview
 
 A capture device may optionally present an array of input sources that represent distinct mutually exclusive inputs to the device. For example, an audio capture device might have ADAT optical and analog input sources; a video capture device might have an HDMI or component input source.
 

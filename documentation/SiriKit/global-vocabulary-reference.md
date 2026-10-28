@@ -4,7 +4,7 @@
 
 Understand the keys and values included in your app’s global vocabulary file.
 
-#### Overview
+## Overview
 
 The `AppIntentVocabulary.plist` file in your iOS app contains examples of how users can engage your app’s intents from Siri and any custom terminology that applies to all users of the app. Place the `AppIntentVocabulary.plist` file in the bundle of your iOS app. You can include localized versions of your vocabulary property list file in the language-specific project (.lproj) directories of your app. When you submit your app to the App Store, your `AppIntentVocabulary.plist` file and any localized versions of that file are sent to Siri for processing. The content of those files remains on the server and that content is specific to that app version.
 

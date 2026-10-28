@@ -23,7 +23,7 @@ case immediateRunIneligible
 BGTaskSchedulerErrorCodeImmediateRunIneligible
 ```
 
-#### Discussion
+## Discussion
 
 The framework throws this error when a [`BGContinuedProcessingTaskRequest`](../../../bgcontinuedprocessingtaskrequest.md) that your app submits with [`strategy`](../../../bgcontinuedprocessingtaskrequest/strategy.md) set to  [`BGContinuedProcessingTaskRequest.SubmissionStrategy.fail`](../../../bgcontinuedprocessingtaskrequest/submissionstrategy/fail.md) isn’t able to begin right away due to runtime conditions.
 

@@ -15,7 +15,7 @@ Sends a reaction message to a specified destination.
 final func sendMessage(_ content: RCSMessage.Reaction, to destination: RCSHandle, using cellularServiceID: CellularServiceID, messageID: RCSMessageID) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**:  If the reaction content is not a valid emoji sequence, this method throws [`RCSService.Error.invalidArgument`](./error/invalidargument.md).
 

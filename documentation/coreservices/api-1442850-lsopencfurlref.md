@@ -19,11 +19,11 @@ func LSOpenCFURLRef(_ inURL: CFURL, _ outLaunchedURL: UnsafeMutablePointer<Unman
 OSStatus LSOpenCFURLRef(CFURLRef inURL, CFURLRef  _Nullable *outLaunchedURL);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 The designated item is opened in the default manner, as if it had been opened with the `LSOpenFromURLSpec` function with a launch specification specifying the launch flag `kLSLaunchDefaults`: that is, asynchronously, and with the remaining launch parameters taken from the application’s information property list. For greater control, call `LSOpenFromURLSpec` directly. See [`LSLaunchFlags`](./lslaunchflags.md) for more information about launch flags.
 
@@ -41,7 +41,7 @@ If the item URL’s scheme is `file` (designating either a file or a directory),
 
 As of macOS 10.4 and later, [`launchApplication(at:options:configuration:)`](../AppKit/nsworkspace/launchapplication%28at,options,configuration%29.md) is the preferred way of opening a URL.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since Mac OS version 10.2.
 

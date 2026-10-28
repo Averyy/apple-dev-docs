@@ -21,7 +21,7 @@ func setFrameSize(_ newSize: NSSize)
 - (void) setFrameSize:(NSSize) newSize;
 ```
 
-#### Discussion
+## Discussion
 
 The width of `NSFormCell` objects always match the width of their encompassing `NSForm` object. The cell width is always changed to match the view regardless of the value returned by [`autosizesCells`](../nsmatrix/autosizescells.md).
 

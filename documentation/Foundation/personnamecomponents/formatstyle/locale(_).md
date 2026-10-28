@@ -21,7 +21,7 @@ Modifies the person name components format style to use the specified locale.
 func locale(_ locale: Locale) -> PersonNameComponents.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A person name components format style with the provided locale.
 

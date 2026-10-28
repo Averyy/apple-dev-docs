@@ -18,7 +18,7 @@ The preferred model to handle translations in your app.
 struct Strategy
 ```
 
-#### Overview
+## Overview
 
 This determines which model your app uses for translating content. The framework uses this strategy when available, or automatically selects an appropriate alternative based on device capabilities and language availability.
 

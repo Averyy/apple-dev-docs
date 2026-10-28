@@ -10,19 +10,19 @@ framework: "swift-log/Logging"
 
 Propagate caller context by accepting a `Logger` parameter or reading the task-local [`current`](./logger/current.md) — never by constructing your own logger.
 
-#### Overview
+## Overview
 
 Libraries should obtain a `Logger` in one of two ways: accept one through a method parameter or read [`current`](./logger/current.md) from the task-local. Both approaches preserve the caller’s metadata, log level, and handler choice. Constructing a logger inside a library — via [`init(label:)`](./logger/init%28label%29.md) — takes those choices away from the application and breaks metadata propagation.
 
-##### Motivation
+### Motivation
 
 The application controls logging: which backend, which log level, which metadata travels with each request. Libraries that participate in this picture obtain a logger the application has set up, rather than constructing their own from scratch. This ensures correlation IDs and other contextual metadata flow through the entire call stack, and gives the application a single place to redirect or filter all log output.
 
 Two propagation mechanisms are available, and they coexist. Choose the explicit parameter when the library’s API already accepts a `Logger` (or it’s natural to add one) — the call site stays declarative about what gets logged where. Choose the task-local when adding a `logger:` parameter would pollute an API that otherwise has no logging concern in its signature. Application code binds the initial task-local; library code reads it and updates the metadata.
 
-##### Example
+### Example
 
-###### Recommended: Read ``doc://Logging/documentation/Logging/Logger/current`` from the task-local
+#### Recommended: Read ``doc://Logging/documentation/Logging/Logger/current`` from the task-local
 
 When there is no `logger:` parameter in the API, read the task-local. The application’s accumulated metadata (`request.id`, etc.) flows in automatically without an explicit hand-off.
 
@@ -67,7 +67,7 @@ local.info("entering")
 local.info("done")
 ```
 
-###### Alternative: Accept logger through method parameters
+#### Alternative: Accept logger through method parameters
 
 ```swift
 // ✅ Good: Pass the logger through method parameters,
@@ -104,7 +104,7 @@ struct RequestProcessor {
 }
 ```
 
-###### Alternative: Accept logger through initializer for long-lived components
+#### Alternative: Accept logger through initializer for long-lived components
 
 ```swift
 // ⚠️ Acceptable: Logger through initializer for long-lived components
@@ -123,7 +123,7 @@ final class BackgroundJobProcessor {
 }
 ```
 
-###### Avoid: Libraries creating their own loggers
+#### Avoid: Libraries creating their own loggers
 
 Constructing [`init(label:)`](./logger/init%28label%29.md) inside a library takes control over the handler, log level, and base metadata away from the application. The application cannot redirect, filter, or silence the library’s output.
 
@@ -136,7 +136,7 @@ final class MyLibrary {
 
 [`init(label:)`](./logger/init%28label%29.md) is for the application — typically at `@main` paired with `.withLogger()`. Library code, including internal application modules, should not construct loggers. If they do, setting up the global factory with [`bootstrap(_:)`](./loggingsystem/bootstrap%28_%29.md) allows enforcing a specific factory on all the loggers constructed in the process. This does not necessary need to be the same factory as was used to create the task-local logger.
 
-###### Avoid: Relying on ``doc://Logging/documentation/Logging/Logger/current`` across non-Task boundaries
+#### Avoid: Relying on ``doc://Logging/documentation/Logging/Logger/current`` across non-Task boundaries
 
 [`current`](./logger/current.md) is backed by a `TaskLocal` and propagates through Swift’s structured concurrency model only. Callbacks invoked on non-Task threads — GCD blocks, `URLSession` completion handlers, delegate methods dispatched onto specific queues, `NotificationCenter` observers, C-API callbacks — see the *default* fallback logger, not the bound one. Metadata bound by the calling `Task` is invisible inside those callbacks.
 

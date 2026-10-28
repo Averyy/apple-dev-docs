@@ -17,7 +17,7 @@ Optional behavioral components that augment [`GenerateParameters`](./generatepar
 struct GenerationComponents
 ```
 
-#### Overview
+## Overview
 
 [`GenerateParameters`](./generateparameters.md) is a plain, `Sendable` value describing *what* to generate (sampling temperature, penalties, token limits, …). `GenerationComponents` carries the *behavioral* hooks that shape generation but are not themselves simple values – for example a custom [`LogitProcessor`](./logitprocessor.md) or parameter validation. Keeping these out of [`GenerateParameters`](./generateparameters.md) lets that type stay a pure value while still letting callers inject custom behavior through the same parameters-driven APIs ([`TokenIterator`](./tokeniterator.md), [`ChatSession`](./chatsession.md), the speculative iterators and the `generate(...)` free functions).
 

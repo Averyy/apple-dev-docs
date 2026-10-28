@@ -16,11 +16,11 @@ Prompts a person to give FinanceKit authorization to access financial data.
 func requestAuthorization() async throws -> AuthorizationStatus
 ```
 
-#### Return Value
+## Return Value
 
 An [`AuthorizationStatus`](../authorizationstatus.md) value that indicates the current state of authorization.
 
-#### Discussion
+## Discussion
 
 If there are no accounts are available to display, the framework presents a “No Accounts” screen and returns a status of [`AuthorizationStatus.authorized`](../authorizationstatus/authorized.md) or [`AuthorizationStatus.denied`](../authorizationstatus/denied.md) depending on the state of a person’s consent.
 

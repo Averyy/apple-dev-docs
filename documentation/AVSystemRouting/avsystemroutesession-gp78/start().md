@@ -21,11 +21,11 @@ final func start() async throws -> AVSystemRouteMediaSession
 
 - [Routing media to third-party devices](../routing-media-to-third-party-devices.md)
 
-#### Return Value
+## Return Value
 
 An [`AVSystemRouteMediaSession`](../avsystemroutemediasession-98ioq.md) for communicating with the remote device. Access its [`dataChannel`](../avsystemroutemediasession-98ioq/datachannel.md) property to send and receive data between your app and the remote application. Access its [`playbackControl`](../avsystemroutemediasession-98ioq/playbackcontrol.md) property to send and receive playback commands between your app and the remote application. For [`AVSystemRoute.LaunchMode.player`](../avsystemroute-5s2um/launchmode/player.md), [`dataChannel`](../avsystemroutemediasession-98ioq/datachannel.md) is `nil`.
 
-#### Discussion
+## Discussion
 
 Call this function to begin the playback session after adding it to an [`AVSystemRoute`](../avsystemroute-5s2um.md). The session uses the URL and launch mode specified during initialization to start playback on the remote device.
 

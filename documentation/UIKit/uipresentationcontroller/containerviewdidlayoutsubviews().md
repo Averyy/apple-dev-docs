@@ -23,7 +23,7 @@ func containerViewDidLayoutSubviews()
 - (void) containerViewDidLayoutSubviews;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method after adjusting the layout of the views in the container view. Use this method to make any additional changes to the view hierarchy.
 

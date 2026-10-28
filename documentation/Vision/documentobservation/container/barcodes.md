@@ -20,7 +20,7 @@ The machine-readable codes found within the container.
 var barcodes: [BarcodeObservation] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Vision recognizes 20 different barcode types; to see the specific codes you can use [`supportedBarcodeSymbologies`](../../recognizedocumentsrequest/supportedbarcodesymbologies.md). To see this value, set [`enabled`](../../recognizedocumentsrequest/barcodedetectionoptions-swift.struct/enabled.md) within [`RecognizeDocumentsRequest.BarcodeDetectionOptions`](../../recognizedocumentsrequest/barcodedetectionoptions-swift.struct.md) to `true`.
 

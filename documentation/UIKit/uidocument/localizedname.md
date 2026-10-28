@@ -22,7 +22,7 @@ var localizedName: String { get }
 @property (copy, readonly) NSString * localizedName;
 ```
 
-#### Discussion
+## Discussion
 
 By default, UIKit obtains the value from the filename component of [`fileURL`](./fileurl.md). You can override the getter accessor method of this property to provide a custom name for presentation to the user, such as in error strings. See [`UIDocument`](../uidocument.md) for overriding advice.
 

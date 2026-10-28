@@ -5,13 +5,13 @@
 
 Configure your app intents to run from your app in the foreground or background, or from an app extension in the background.
 
-#### Overview
+## Overview
 
 Most app intents run quietly in the background and deliver results back to the system, but some app intents need to bring your app to the foreground to complete their action. An app intent that plays a video, shows search results, or displays content in your app’s interface needs your app to be in the foreground to show the content. You might also define custom app intents that update your app’s interface or perform actions that require your app to be visible.
 
 Because the system runs app intents, it’s responsible for bringing your app to the foreground when needed. Certain factors automatically affect whether an app intent runs in the foreground or background, such as the app intent’s type or where it runs. After that, the system relies on your code to specify the behavior you prefer. The system also relies on your code to direct foreground app intents to specific scenes of your app, which you might do to configure your views before the app becomes visible.
 
-##### Place app intent code in the correct bundle
+### Place app intent code in the correct bundle
 
 The placement of your app intent code affects whether the system is able to run your app in the foreground. When assembling your project, you can place your app intent–related code in your app bundle, in an App Intents extension, or in a shared framework that you include in both your app and app extension. Each location imposes specific restrictions on how the code runs:
 
@@ -45,7 +45,7 @@ If you distribute app intent code among multiple shared frameworks, you can use 
 
 > **Note**: If you include the same shared framework in your app and app extension, you can restrict where an app intent runs using its [`allowedExecutionTargets`](./appintent/allowedexecutiontargets.md) property. Implement this property in your app intent type to run it from your app, App Intents extension, Widget extension, or a combination of those bundles.
 
-##### Choose the preferred runtime modes for your app intent
+### Choose the preferred runtime modes for your app intent
 
 When it’s time to run an app intent, the system consults the app intent’s [`supportedModes`](./appintent/supportedmodes.md) property to determine whether to run it in the foreground or background. In addition to running either in the foreground or background, you can use this property to add nuanced runtime behaviors to your app intent. For example, you can tell the system you want the app intent to run in the background initially but transition your app to the foreground at some point later. If you don’t assign a value to this property, the system applies a default behavior based on various factors, but which typically results in your app intent running in the background.
 
@@ -69,7 +69,7 @@ if systemContext.currentMode == .background {
 }
 ```
 
-##### Update your app’s interface using your app intent
+### Update your app’s interface using your app intent
 
 One of the main reasons to run an app intent in the foreground is to show something from your app’s interface. For example, an app intent that adopts the [`ShowInAppSearchResultsIntent`](./showinappsearchresultsintent.md) protocol runs a search query and displays the results, and one that adopts the [`PlayVideoIntent`](./playvideointent.md) protocol shows the app’s video playback interface. To make the required changes to your app’s interface, you need to write code to update your app’s views. However, you have several options for how to make the actual changes:
 

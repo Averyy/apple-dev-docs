@@ -22,11 +22,11 @@ nonisolated
 func gridCellColumns(_ count: Int) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that occupies the specified number of columns in a grid row.
 
-#### Discussion
+## Discussion
 
 By default, each view that you put into the content closure of a [`GridRow`](../gridrow.md) corresponds to exactly one column of the grid. Apply the `gridCellColumns(_:)` modifier to a view that you want to span more than one column, as in the following example of a typical macOS configuration view:
 

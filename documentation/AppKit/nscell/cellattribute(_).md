@@ -19,7 +19,7 @@ func cellAttribute(_ parameter: NSCell.Attribute) -> Int
 - (NSInteger) cellAttribute:(NSCellAttribute) parameter;
 ```
 
-#### Return Value
+## Return Value
 
 The value for the cell attribute specified by `aParameter`.
 

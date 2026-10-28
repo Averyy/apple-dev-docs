@@ -24,7 +24,7 @@ let PHContentEditingInputResultIsInCloudKey: String
 extern NSString * const PHContentEditingInputResultIsInCloudKey;
 ```
 
-#### Discussion
+## Discussion
 
 If `true`, no asset data was provided because the asset data must be downloaded from iCloud. To do this, submit another request, specifying `true` for the [`isNetworkAccessAllowed`](./phcontenteditinginputrequestoptions/isnetworkaccessallowed.md) option.
 

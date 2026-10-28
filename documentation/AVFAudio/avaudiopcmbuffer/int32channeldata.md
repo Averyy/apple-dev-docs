@@ -25,7 +25,7 @@ var int32ChannelData: UnsafePointer<UnsafeMutablePointer<Int32>>? { get }
 @property (nonatomic, readonly) int32_t * const* int32ChannelData;
 ```
 
-#### Discussion
+## Discussion
 
 The `int32ChannelData` property returns the buffer’s audio samples if the buffer’s format has 4-byte integer samples, or `nil` if it’s another format. For more information, see [`floatChannelData`](./floatchanneldata.md).
 

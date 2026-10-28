@@ -5,7 +5,7 @@
 
 Move your back-end services to a private framework so your app and app extensions can use them.
 
-#### Overview
+## Overview
 
 An app extension is an agent that acts on behalf of your app, vending services or providing information to the system when asked. Because they extend your app’s behavior, app extensions often need access to the same back-end services and data that your app uses.
 

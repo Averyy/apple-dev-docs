@@ -25,7 +25,7 @@ var multiply: SCNMaterialProperty { get }
 @property (nonatomic, readonly) SCNMaterialProperty * multiply;
 ```
 
-#### Discussion
+## Discussion
 
 After combining a material’s other visual properties with lighting and other information about a scene, Scene kit multiplies the color of each rendered pixel by the color this property provides. You can use this property to darken or tint a surface independent of the effects of lighting and other properties, or to add precomputed lighting to a scene via a shadow map.
 

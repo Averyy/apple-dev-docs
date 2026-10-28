@@ -26,7 +26,7 @@ protocol StartWorkoutIntent : InstanceDisplayRepresentable, SystemIntent
 - [Responding to the Action button on Apple Watch Ultra](./actionbuttonarticle.md)
 - [Configuring the runtime behavior of your app intents](./configuring-the-runtime-behavior-of-your-app-intents.md)
 
-#### Overview
+## Overview
 
 On Apple Watch Ultra, this intent registers a start workout action for the Action button. After installing your app, the user can select this action in Settings > Action Button by setting Action to Workout and App to your app.
 

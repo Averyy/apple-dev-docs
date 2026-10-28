@@ -19,7 +19,7 @@ var objectID: IOBluetoothObjectID { get }
 @property (assign, readonly) IOBluetoothObjectID objectID;
 ```
 
-#### Discussion
+## Discussion
 
 The IOBluetoothObjectID can be used as a global reference for a given IOBluetoothL2CAPChannel. It allows two separate applications to refer to the same IOBluetoothL2CAPChannel.
 

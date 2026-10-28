@@ -19,7 +19,7 @@ var keyboardInputSources: [NSTextInputSourceIdentifier]? { get }
 @property (readonly, nullable) NSArray<NSString *> * keyboardInputSources;
 ```
 
-#### Discussion
+## Discussion
 
 The Text Input Source Services API identifies text input sources with text input source identifier strings (for example, `com.apple.inputmethod.Kotoeri.Japanese`) supplied by the underlying text input sources framework. The ID corresponds to the `kTISPropertyInputSourceID` attribute.
 

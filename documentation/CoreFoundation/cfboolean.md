@@ -23,7 +23,7 @@ class CFBoolean
 typedef const struct __CFBoolean * CFBooleanRef;
 ```
 
-#### Overview
+## Overview
 
 CFBoolean objects are used to wrap boolean values for use in Core Foundation property lists and collection types.
 

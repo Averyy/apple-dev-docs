@@ -23,7 +23,7 @@ var playerLayoutGuide: UILayoutGuide { get }
 
 - [Presenting content proposals in tvOS](../presenting-content-proposals-in-tvos.md)
 
-#### Discussion
+## Discussion
 
 The view controller can constrain its views using the anchors of the player layout guide, which has the same size and position as the player view. The layout guide is always relative to the current [`preferredPlayerViewFrame`](./preferredplayerviewframe.md) property value.
 

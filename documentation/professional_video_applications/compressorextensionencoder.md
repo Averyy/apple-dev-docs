@@ -19,7 +19,7 @@ protocol CompressorExtensionEncoder
 @protocol CompressorExtensionEncoder
 ```
 
-#### Overview
+## Overview
 
 Implement the methods in this interface to run an encoding job, support parallel processing, and send output files to a specified destination. To run an encoding job, the Compressor app calls the [`runTranscode(for:start:duration:toFile:startTimeCode:)`](./compressorextensionencoder/runtranscode%28for,start,duration,tofile,starttimecode%29.md) method. During the encoding process, the Compressor app calls the methods in the `CompressorExtensionEncoder` protocol to get updates on the status and progress of an encoding job.
 

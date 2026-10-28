@@ -19,7 +19,7 @@ init(fileURL: URL)
 - (instancetype) initWithFileURL:(NSURL *) fileURL;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`init(fileURL:)`](./init%28fileurl%29.md) to create a reply from an existing file URL, such as an image or PDF. The following example illustrates creating a reply from an existing URL:
 

@@ -19,7 +19,7 @@ var boundingRectForFont: NSRect { get }
 @property (readonly) NSRect boundingRectForFont;
 ```
 
-#### Discussion
+## Discussion
 
 The bounding rectangle is the union of the bounding rectangles of every glyph in the font.
 

@@ -25,7 +25,7 @@ func webSocketTask(with url: URL) -> URLSessionWebSocketTask
 - (NSURLSessionWebSocketTask *) webSocketTaskWithURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 The provided URL must have a `ws` or `wss` scheme.
 

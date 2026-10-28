@@ -23,7 +23,7 @@ let UITextInputTextColorKey: String
 extern NSString * const UITextInputTextColorKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`UIColor`](./uicolor.md) object.
 

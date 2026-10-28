@@ -14,7 +14,7 @@
 typedef void (*IOHIDReportCallback)(void *context, IOReturn result, void *sender, IOHIDReportType type, uint32_t reportID, uint8_t *report, CFIndex reportLength);
 ```
 
-#### Discussion
+## Discussion
 
 Type and arguments of callout C function that is used when a HID report completion routine is called.
 

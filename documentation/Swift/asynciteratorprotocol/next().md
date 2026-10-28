@@ -22,7 +22,7 @@ Asynchronously advances to the next element and returns it, or ends the sequence
 mutating func next() async throws -> Self.Element?
 ```
 
-#### Return Value
+## Return Value
 
 The next element, if it exists, or `nil` to signal the end of the sequence.
 

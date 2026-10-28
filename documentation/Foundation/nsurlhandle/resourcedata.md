@@ -17,11 +17,11 @@ Returns the resource data managed by the receiver, loading it if necessary.
 - (NSData *) resourceData;
 ```
 
-#### Return Value
+## Return Value
 
 The resource data managed by the receiver.
 
-#### Discussion
+## Discussion
 
 Blocks until all data is available.
 

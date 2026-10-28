@@ -23,7 +23,7 @@ class ASAuthorizationPublicKeyCredentialParameters
 @interface ASAuthorizationPublicKeyCredentialParameters : NSObject
 ```
 
-#### Overview
+## Overview
 
 This object is mainly for signing algorithm negotiation, and is only relevant for physical security keys.
 

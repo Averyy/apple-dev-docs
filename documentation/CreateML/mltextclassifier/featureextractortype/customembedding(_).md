@@ -19,7 +19,7 @@ A feature extractor that uses a custom embedding contained in a CoreML model fil
 case customEmbedding(URL)
 ```
 
-#### Discussion
+## Discussion
 
 - URL: The path to a model file (ending in `.mlmodel`, `.mlmodelc`, or `.dat`).
 

@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_ObjectBasedStorageDevice = 0x11
 ```
 
-#### Discussion
+## Discussion
 
 OSD device.
 

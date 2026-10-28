@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatApplyPose(SPRect3DFloat rect, SPPose3DFloat pose);
 ```
 
-#### Return Value
+## Return Value
 
 The transformed rectangle.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle that’s transformed by the specified pose.
 

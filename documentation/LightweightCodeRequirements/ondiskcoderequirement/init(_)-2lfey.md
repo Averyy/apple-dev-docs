@@ -21,7 +21,7 @@ Convert a [`LaunchCodeRequirement`](../launchcoderequirement.md) to an [`OnDiskC
 init(_ launchRequirement: LaunchCodeRequirement) throws
 ```
 
-#### Discussion
+## Discussion
 
 Conversion will fail if the [`LaunchCodeRequirement`](../launchcoderequirement.md) contains a constraint that cannot be converted to [`OnDiskConstraint`](../ondiskconstraint.md).
 

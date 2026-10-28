@@ -5,11 +5,11 @@
 
 Create a simple DriverKit extension to override the default driver-matching behavior for USB devices.
 
-#### Overview
+## Overview
 
 Starting in macOS 12.3, the operating system provides a class-compliant Core Media I/O (CMIO) extension that enables the use of USB cameras and other video capture devices. When you connect a USB camera, the system finds its default driver and connects it with the camera. To override the system’s default matching behavior so that you can load a custom CMIO extension instead, create a simple [DriverKit](../DriverKit/DriverKit.md) extension.
 
-##### Create a DriverKit extension
+### Create a DriverKit extension
 
 In a standalone Xcode project, or as a target within an existing project, create a new DriverKit extension. In Xcode’s menu, select File > New and choose either the Project or Target menu items as appropriate. In the dialog that appears, select the DriverKit tab and the Driver template, and click the Next button.
 
@@ -19,7 +19,7 @@ In the dialog that follows, give the driver an appropriate Product Name and clic
 
 The default IOKit interface generator (`.iig`) and C++ implementation files that the template creates provide the sufficient implementation for your driver. The driver is effectively codeless, but the system requires a minimal binary for entitlement purposes.
 
-##### Configure the Info.plist file
+### Configure the Info.plist file
 
 Specify your matching parameters as one or more entries in the [`IOKitPersonalities`](../BundleResources/information-property-list/iokitpersonalities.md) dictionary inside the DriverKit extension’s `Info.plist` file. The following example shows the standard configuration to provide within this file.
 

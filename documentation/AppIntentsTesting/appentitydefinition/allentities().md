@@ -21,11 +21,11 @@ Fetches all available entities of this type.
 func allEntities() async throws -> [AnyAppEntity]
 ```
 
-#### Return Value
+## Return Value
 
 An array containing all entities of this type.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Any errors encountered during the query execution.
 

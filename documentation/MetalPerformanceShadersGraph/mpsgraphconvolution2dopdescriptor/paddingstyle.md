@@ -24,7 +24,7 @@ var paddingStyle: MPSGraphPaddingStyle { get set }
 @property (nonatomic, readwrite) MPSGraphPaddingStyle paddingStyle;
 ```
 
-#### Discussion
+## Discussion
 
 If paddingStyle is `MPSGraphPaddingStyleExplicit`, `paddingLeft`, `laddingRight`, `paddingTop`, and `paddingBottom` must to be specified. For all other padding styles, framework compute these values so you dont need to provide these values.
 

@@ -15,11 +15,11 @@ The component for opening a link in a button.
 object LinkButton
 ```
 
-#### Discussion
+## Discussion
 
 Use the `LinkButton` component to display a button with a link. The link opens when someone interacts with the button. You can place the `LinkButton` anywhere in the document and style it using [`ComponentStyle`](./componentstyle.md) and [`ComponentTextStyle`](./componenttextstyle.md) properties.
 
-##### Example
+### Example
 
 ```json
 {

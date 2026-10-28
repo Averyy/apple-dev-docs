@@ -21,7 +21,7 @@ The custom minute format style showing the minimum number of digits that represe
 static var defaultDigits: Date.FormatStyle.Symbol.Minute { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, this style represents one minute past the hour as `1`, and eighteen past as `18`.
 

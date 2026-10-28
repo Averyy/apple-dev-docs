@@ -21,7 +21,7 @@ A Boolean value that indicates whether to sort the keys.
 var sortKeys: Bool
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `false`.
 

@@ -20,7 +20,7 @@ class CGDisplayStreamUpdate
 typedef const struct CGDisplayStreamUpdate * CGDisplayStreamUpdateRef;
 ```
 
-#### Overview
+## Overview
 
 This data type encapsulates information about how the frame changed since the previous frame delivered by a display stream. The metadata about the frame describes the portions of the screen that were redrawn and the portions of the screen that were moved from one place to another. You can merge multiple updates into a single update.
 

@@ -22,11 +22,11 @@ nonisolated
 func blendMode(_ blendMode: BlendMode) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that applies `blendMode` to this view.
 
-#### Discussion
+## Discussion
 
 Use `blendMode(_:)` to combine overlapping views and use a different visual effect to produce the result. The [`BlendMode`](../blendmode.md) enumeration defines many possible effects.
 

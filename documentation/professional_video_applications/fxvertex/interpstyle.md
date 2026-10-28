@@ -19,7 +19,7 @@ var interpStyle: FxPathStyle
 FxPathStyle interpStyle;
 ```
 
-#### Discussion
+## Discussion
 
 See [`FxPathStyle`](../fxpathstyle.md) for supported values.
 

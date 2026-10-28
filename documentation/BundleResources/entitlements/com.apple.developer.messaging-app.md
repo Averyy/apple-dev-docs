@@ -19,7 +19,7 @@ A Boolean value that indicates whether an app can be the default messaging app o
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 Add the Default Messaging App entitlement to your app by following these steps:
 

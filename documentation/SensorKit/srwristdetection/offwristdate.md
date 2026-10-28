@@ -21,7 +21,7 @@ var offWristDate: Date? { get }
 @property (strong, readonly, nullable) NSDate * offWristDate;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to compute the duration that the user wears their Apple Watch.
 

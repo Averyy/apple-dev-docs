@@ -13,13 +13,13 @@ Create and include code snippets to illustrate and provide examples of how to us
 **Availability**:
 - Swift 5.7+
 
-#### Overview
+## Overview
 
 DocC supports code listings in your code, as described in [Formatting Your Documentation Content](./formatting-your-documentation-content.md). In addition to code listings written directly in the markup, Swift Package Manager and DocC supports compiler verified code examples called “snippets”.
 
 Swift Package Manager looks for, and builds, any code included in the `Snippets` directory for your package. DocC supports referencing all, or parts, of those files to present as code listings. In addition to snippets presenting your code examples, you can run snippets directly on the command line. This allows you to verify that code examples, referenced in your documentation, continue to compile as you evolve you app or library.
 
-##### Add the Swift DocC plugin
+### Add the Swift DocC plugin
 
 To generate or preview documentation with snippets, add [swift-docc-plugin](https://github.com/apple/swift-docc-plugin) as a dependency to your package.
 
@@ -44,7 +44,7 @@ let package = Package(
 )
 ```
 
-##### Create a code snippet
+### Create a code snippet
 
 Swift Package Manager expects to find your code examples in the directory `Snippets` at the top of your project, parallel to the file `Package.swift` and the directory `Sources`. At the root of your project, create the directory `Snippets`. Within the `Snippets` directory, create a file with your code snippet.
 
@@ -75,7 +75,7 @@ Your snippets can import targets defined in your local package, as well as produ
 
 Every time you build your project, the Swift Package Manager compiles any code snippets, and then fails if the build if they are unable to compile.
 
-##### Run the snippet
+### Run the snippet
 
 You and consumers of your library can run your snippets from the command line using `swift run snippet-name` where “snippet-name” corresponds to a file name in your Snippets directory without the “.swift” file extension.
 
@@ -85,7 +85,7 @@ Run the earlier code example file named `example-snippet.swift` using the follow
 swift run example-snippet
 ```
 
-##### Embed the snippet
+### Embed the snippet
 
 To embed your snippet in an article or within the symbol reference pages, use the `@Snippet` directive.
 
@@ -133,7 +133,7 @@ print("Shown")
 
 Hide segments of your snippet for content such as license footers, test code, or unique setup code. Generally, it is useful for things that you wouldn’t want the reader to use as a starting point.
 
-##### Preview your content
+### Preview your content
 
 Use the [swift-docc-plugin](https://github.com/swiftlang/swift-docc-plugin) to preview content that includes snippets. To run the preview, use the following command from a terminal. Replace `YourTarget` with a target from your package to preview:
 
@@ -141,7 +141,7 @@ Use the [swift-docc-plugin](https://github.com/swiftlang/swift-docc-plugin) to p
 swift package --disable-sandbox preview-documentation --target YourTarget
 ```
 
-##### Slice up your snippet to break it up in your content
+### Slice up your snippet to break it up in your content
 
 Long snippets dropped into documentation can result in a wall of text that is harder to parse and understand. Instead, annotate non-overlapping slices in the snippet, which allows you to reference and embed the slice portion of the example code.
 

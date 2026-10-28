@@ -13,7 +13,7 @@
 typedef void (*IOStorageCompletionAction)(void *target, void *parameter, IOReturn status, UInt64 actualByteCount);
 ```
 
-#### Discussion
+## Discussion
 
 The IOStorageCompletionAction declaration describes the C (or C++) completion routine that is called once an asynchronous storage operation completes.
 

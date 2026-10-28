@@ -16,11 +16,11 @@ Sets the depth for this IOHIDDeviceQueueInterface instance.
 IOReturn (*setDepth)(void *self, uint32_t depth, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 
-#### Discussion
+## Discussion
 
 Regardless of element value size, queue will guarantee n=depth elements will be serviced.
 

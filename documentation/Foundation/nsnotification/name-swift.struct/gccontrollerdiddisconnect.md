@@ -20,7 +20,7 @@ A notification that posts after a controller disconnects from the device.
 static let GCControllerDidDisconnect: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the [`GCController`](../../../GameController/gccontroller.md) object that disconnects from the device.
 

@@ -19,11 +19,11 @@ Creates a configuration ready to customize.
 + (instancetype) emptyConfiguration;
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration.
 
-#### Discussion
+## Discussion
 
 Use this method to create a new configuration to customize. This is useful if your empty content doesn’t fit the uses covered by configurations available with [`searchConfiguration`](./searchconfiguration.md) or [`loadingConfiguration`](./loadingconfiguration.md).
 

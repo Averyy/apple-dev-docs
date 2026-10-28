@@ -28,11 +28,11 @@ var hasAppearanceStream: Bool { get }
 
 - [Adding Custom Graphics to a PDF](../adding-custom-graphics-to-a-pdf.md)
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the annotation has an appearance stream; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 An appearance stream is a sequence of draw instructions used to render a PDF item. If an appearance stream exists, PDF Kit draws the annotation using the stream, which may override existing set parameters (such as the stroke color set with `setColor`).
 

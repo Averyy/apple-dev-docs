@@ -21,11 +21,11 @@ convenience init(iconRef: IconRef)
 - (instancetype) initWithIconRef:(IconRef) iconRef;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSImage` object.
 
-#### Discussion
+## Discussion
 
 Creates one or more bitmap image representations, one for each size icon contained in the `IconRef` data structure. This initialization method automatically retains the data in the `iconRef` parameter and loads the bitmaps from that data file lazily.
 

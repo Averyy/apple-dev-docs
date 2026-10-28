@@ -3,7 +3,7 @@
 **Framework**: IOKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 IOHIDDevice defines a Human Interface Device (HID) object, which interacts with an IOHIDDevicePlugIn object that typically maps to an object in the kernel. IOHIDDevice is used to communicate with a single HID device in order to obtain or set device properties, element values, and reports. IOHIDDevice is also a CFType object and as such conforms to all the conventions expected such object.
 
@@ -11,7 +11,7 @@ This documentation assumes that you have a basic understanding of the material c
 
 All of the information described in this document is contained in the header file `IOHIDDevice.h` found at `/System/Library/Frameworks/IOKit.framework/Headers/hid/IOHIDDevice.h`.
 
-##### Included Headers
+### Included Headers
 
 - <CoreFoundation/CoreFoundation.h>
 - <IOKit/hid/IOHIDBase.h>

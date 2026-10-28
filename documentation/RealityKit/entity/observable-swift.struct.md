@@ -21,7 +21,7 @@ An observable interface to an entity’s properties and components, enabling rea
 struct Observable
 ```
 
-#### Overview
+## Overview
 
 When you access properties in this structure, they participate in Observation. This means that the app notifies obersvers when they change in value. Each of these properties passes through to the underlying entity’s corresponding properties, so modifications of them modify the entity’s corresponding property.
 

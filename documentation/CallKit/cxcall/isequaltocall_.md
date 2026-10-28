@@ -19,7 +19,7 @@ Returns a Boolean value that indicates whether a given call is equal to the rece
 - (BOOL) isEqualToCall:(CXCall *) call;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `call` is equal to the receiver, otherwise [`false`](../../Swift/false.md).
 

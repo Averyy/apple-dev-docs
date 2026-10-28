@@ -18,7 +18,7 @@ A metric entry scoped to a specific recorded app state.
 struct StateEntry
 ```
 
-#### Discussion
+## Discussion
 
 `StateEntry` is only present when state reporting is enabled via [`init(enabledStateReportingDomains:)`](../metricmanager/init%28enabledstatereportingdomains%29.md). Access state entries through [`stateEntries`](./stateentries.md).
 

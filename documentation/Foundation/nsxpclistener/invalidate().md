@@ -25,7 +25,7 @@ func invalidate()
 - (void) invalidate;
 ```
 
-#### Discussion
+## Discussion
 
 After calling this method, no more connections are created. Once a listener is invalidated it may not be resumed or suspended.
 

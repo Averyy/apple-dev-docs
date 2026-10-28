@@ -19,11 +19,11 @@ func setDistributionIdentifier(_ identifier: String!, forProperty property: Stri
 - (BOOL) setDistributionIdentifier:(NSString *) identifier forProperty:(NSString *) property person:(ABPerson *) person;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The default distribution identifier is a multivalue list’s primary identifier. If `person` is `nil`, this method raises an exception.
 

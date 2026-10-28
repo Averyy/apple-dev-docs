@@ -20,11 +20,11 @@ Creates a [`CIFilter`](../cifilter-swift.class.md) object for a specific kind of
 + (CIFilter *) filterWithName:(NSString *) name keysAndValues:(id) key0;
 ```
 
-#### Return Value
+## Return Value
 
 A [`CIFilter`](../cifilter-swift.class.md) object whose input values are initialized.
 
-#### Discussion
+## Discussion
 
 As with all Objective-C methods that accept `nil`-terminated argument lists, to prevent unintended behavior you must take take care not to pass a `nil` value before the intended end of the argument list. You can avoid such issues by using the [`init(name:withInputParameters:)`](./init%28name,withinputparameters%29.md) method to create a filter, expressing the parameter list as a dictionary literal.
 

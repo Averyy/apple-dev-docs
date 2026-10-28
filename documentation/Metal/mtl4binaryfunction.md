@@ -24,7 +24,7 @@ protocol MTL4BinaryFunction : NSObjectProtocol, Sendable
 @protocol MTL4BinaryFunction <NSObject>
 ```
 
-#### Overview
+## Overview
 
 A binary function is a shader that you precompile from Metal IR to GPU machine code.
 

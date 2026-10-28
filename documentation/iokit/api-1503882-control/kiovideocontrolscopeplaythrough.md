@@ -14,7 +14,7 @@
 kIOVideoControlScopePlayThrough = 'ptru'
 ```
 
-#### Discussion
+## Discussion
 
 The scope for controls that apply to the play through section of the device.
 

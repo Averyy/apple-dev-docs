@@ -33,7 +33,7 @@ SKPaymentTransactionStateRestored
 - [Restoring purchased products](../restoring-purchased-products.md)
 - [Supporting Family Sharing in your app](../supporting-family-sharing-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 Read the [`original`](../skpaymenttransaction/original.md) property to obtain information about the original purchase.
 

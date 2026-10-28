@@ -25,7 +25,7 @@ var region: MKCoordinateRegion { get set }
 @property (nonatomic, assign) MKCoordinateRegion region;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to specify the map using geographical coordinates. If you assign a value for this property, the snapshotter updates the value in the [`mapRect`](./maprect.md) property to match the corresponding area as closely as possible.
 

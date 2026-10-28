@@ -15,11 +15,11 @@ Retrieves the specified equipment type associated with an entity if it exists.
 func equipment<E>(of type: E.Type, forEntity entity: Entity) -> E? where E : EntityEquipment
 ```
 
-#### Return Value
+## Return Value
 
 The equipment associated with the entity if it exists; otherwise, `nil`.
 
-#### Discussion
+## Discussion
 
 You can use this method to create custom interactions.
 

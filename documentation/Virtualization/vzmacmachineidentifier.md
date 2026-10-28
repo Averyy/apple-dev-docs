@@ -19,7 +19,7 @@ class VZMacMachineIdentifier
 @interface VZMacMachineIdentifier : NSObject
 ```
 
-#### Overview
+## Overview
 
 This value uniquely identifies a virtual Mac hardware instance. Two VMs running concurrently shouldn’t use the same identifier.
 

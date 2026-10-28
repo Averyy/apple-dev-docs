@@ -20,7 +20,7 @@ DOMString phoneticFamilyName;
 
 - [Apple Pay on the Web Version 3 Release Notes](../apple-pay-on-the-web-version-3-release-notes.md)
 
-#### Discussion
+## Discussion
 
 Typically, you use phonetic names for transactions in Japan.
 

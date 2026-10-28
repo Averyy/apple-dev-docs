@@ -24,7 +24,7 @@ convenience init(device: any MTLDevice, centerWeight: Float)
 - (instancetype) initWithDevice:(id<MTLDevice>) device centerWeight:(float) centerWeight;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSImagePyramid`](../mpsimagepyramid.md) object or `nil`, if failure.
 

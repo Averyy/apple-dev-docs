@@ -11,7 +11,7 @@ Tracks updates to the collection.
 void haveUpdated();
 ```
 
-#### Overview
+## Overview
 
 Subclasses call this function *before* making any change to their contents (not after, as the name implies). Update tracking is used for collection iterators, and to enforce certain protections in the IORegistry.
 

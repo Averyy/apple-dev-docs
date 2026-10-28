@@ -9,7 +9,7 @@ Update an existing custom Configuration in an organization.
 **Availability**:
 - Apple Business API 2.6+
 
-#### Overview
+## Overview
 
 > ❗ **Important**: Only Configurations with type `CUSTOM_SETTING` can be updated via the API.
 
@@ -17,7 +17,7 @@ Update an existing custom Configuration in an organization.
 
 > **Note**: Only the fields included in the request are updated. One of `name`, `configuredForPlatforms`, `configurationProfile`, or `filename` must be included, and any omitted fields retain their existing values.
 
-##### Example
+### Example
 
 **Request**:
 

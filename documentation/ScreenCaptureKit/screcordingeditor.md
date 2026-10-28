@@ -22,7 +22,7 @@ class SCRecordingEditor
 @interface SCRecordingEditor : NSObject
 ```
 
-#### Overview
+## Overview
 
 Presents a system-owned preview UI for a completed recording via SCStream.
 

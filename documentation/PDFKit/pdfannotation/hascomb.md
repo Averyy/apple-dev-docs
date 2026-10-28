@@ -24,7 +24,7 @@ var hasComb: Bool { get set }
 @property (nonatomic, getter=hasComb) BOOL comb;
 ```
 
-#### Discussion
+## Discussion
 
 The [`maximumLength`](./maximumlength.md) property specifies the number of spaces the text widget divides the bounds into.
 

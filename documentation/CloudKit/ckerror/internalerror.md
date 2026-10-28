@@ -21,7 +21,7 @@ A nonrecoverable error that CloudKit encounters.
 static var internalError: CKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 If you receive this error, file a [bug report](http://radar.apple.com) that includes the error log.
 

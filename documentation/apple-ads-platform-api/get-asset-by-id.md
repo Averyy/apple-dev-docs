@@ -9,15 +9,15 @@ Retrieve a single asset by its UUID.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves a single asset by its UUID. Use it after uploading an asset to check its `eligibility` status before referencing it in a creative.
 
 This endpoint still returns deleted assets, with `deleted: true`. Responses always include the `eligibility` field unless excluded via a `fields` projection parameter.
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Retrieves a single asset by its UUID.
 
@@ -25,7 +25,7 @@ Retrieves a single asset by its UUID.
 GET /v1/assets/770e8400-e29b-41d4-a716-446655440002
 ```
 
-##### Response
+### Response
 
 ```json
 {

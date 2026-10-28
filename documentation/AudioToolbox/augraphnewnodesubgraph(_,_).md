@@ -21,11 +21,11 @@ func AUGraphNewNodeSubGraph(_ inGraph: AUGraph, _ outNode: UnsafeMutablePointer<
 extern OSStatus AUGraphNewNodeSubGraph(AUGraph inGraph, AUNode *outNode);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 This function creates a node that represents a subgraph. The subgraph can be retrieved with the [`AUGraphGetNodeInfoSubGraph(_:_:_:)`](./augraphgetnodeinfosubgraph%28_,_,_%29.md) function. The subgraph is owned by the parent graph and will be disposed when the parent graph is disposed or when the node is removed from the parent graph.
 

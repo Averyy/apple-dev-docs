@@ -20,11 +20,11 @@ func resume() -> Bool
 - (BOOL) resume;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiver was able to resume execution, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 If the system sent multiple [`suspend()`](./suspend%28%29.md) messages to the receiver, an equal number of [`resume()`](./resume%28%29.md) messages must be sent before the task resumes execution.
 

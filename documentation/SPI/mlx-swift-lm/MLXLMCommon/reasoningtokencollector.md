@@ -17,7 +17,7 @@ Drives a [`ReasoningEventEmitter`](./reasoningeventemitter.md) over a raw genera
 struct ReasoningTokenCollector
 ```
 
-#### Overview
+## Overview
 
 This is the pure, model-free core of think-then-call **Phase 1**: it owns a [`StreamingDetokenizer`](./streamingdetokenizer.md) and an emitter, so the device-side caller only supplies token IDs (from `generateTokens`) and forwards the returned segments to its channel. Token IDs are carried verbatim — no decode→re-encode round-trip — so the accumulated span prefills the constrained Phase 2 exactly.
 

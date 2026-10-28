@@ -17,7 +17,7 @@ An object that can display and handle interactions with a calendar.
 protocol OCKCalendarDisplayable : AnyObject
 ```
 
-#### Overview
+## Overview
 
 A calendar displays information about a specified range of days.
 

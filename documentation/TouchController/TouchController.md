@@ -12,7 +12,7 @@ Integrate onscreen touch controls into your Metal-based games.
 - Mac Catalyst 26.0+
 - visionOS 26.0+
 
-#### Overview
+## Overview
 
 Use Touch Controller to add custom and interactive touch controls for your games. The framework offers a suite of controls that enable support for a variety of control schemes, like buttons, directional pads, thumbsticks, throttle controls, and touchpads. The Game Controller framework supports each control and surfaces them through a [`GCController`](../GameController/gccontroller.md) instance.
 

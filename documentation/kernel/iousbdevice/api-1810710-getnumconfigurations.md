@@ -10,7 +10,7 @@ virtual UInt8 GetNumConfigurations(
  void);
 ```
 
-#### Overview
+## Overview
 
 returns the number of configs in the device config descriptor
 

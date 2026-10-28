@@ -15,11 +15,11 @@ The optional neutral value for this parameter.
 - (BOOL) hasNeutralValue:(float *) outNeutralValue;
 ```
 
-#### Return Value
+## Return Value
 
 `YES` if a neutral value exists for this parameter; otherwise, `NO`.
 
-#### Discussion
+## Discussion
 
 If the return value is `YES` and `outNeutralValue` isn’t `nil`, the value held by `outNeutralValue` will be set to the neutral value. If the return value is `NO` and `outNeutralValue` isn’t `nil`, the value held by `outNeutralValue` will be set to 0.0.
 

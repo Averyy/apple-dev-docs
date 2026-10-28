@@ -6,7 +6,7 @@
 
 The movie controller type.
 
-#### Overview
+## Overview
 
 The movieType field of the object sample atom structure specifies an object controller type, that is, the user interface to be used to manipulate the object.
 

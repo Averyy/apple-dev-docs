@@ -13,7 +13,7 @@
 #define kIOPMMessageDarkWakeThermalEmergency
 ```
 
-#### Discussion
+## Discussion
 
 kIOPMMessageDarkWakeThermalEmergency Sent when machine becomes unsustainably warm in DarkWake. Kernel PM might choose to put the machine back to sleep right after.
 

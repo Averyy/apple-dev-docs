@@ -14,7 +14,7 @@
 kIOPMSystemCapabilityDidChange = 0x02
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the system capability has changed.
 

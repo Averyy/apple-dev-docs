@@ -20,7 +20,7 @@ func extendedRuntimeSessionDidStart(_ extendedRuntimeSession: WKExtendedRuntimeS
 - (void) extendedRuntimeSessionDidStart:(WKExtendedRuntimeSession *) extendedRuntimeSession;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when your session starts running, in response to the [`start()`](../wkextendedruntimesession/start%28%29.md) method, or because a scheduled session’s start date has arrived.
 

@@ -15,7 +15,7 @@ The modification date of the document.
 extern NSAttributedStringDocumentAttributeKey NSModificationTimeDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSDate`](../Foundation/nsdate.md) object containing the modification date of the document contents.
 

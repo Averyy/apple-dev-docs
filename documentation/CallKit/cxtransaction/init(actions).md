@@ -23,11 +23,11 @@ init(actions: [CXAction])
 - (instancetype) initWithActions:(NSArray<CXAction *> *) actions;
 ```
 
-#### Return Value
+## Return Value
 
 A new transaction with the specified actions.
 
-#### Discussion
+## Discussion
 
 This initializer is a convenience for using the designated initializer and calling the [`addAction(_:)`](./addaction%28_%29.md) method passing each object in `actions`.
 

@@ -5,7 +5,7 @@
 
 Contain events, clips, projects, and smart collections.
 
-#### Overview
+## Overview
 
 The library element has the following attributes:
 

@@ -23,7 +23,7 @@ consuming func unguardAndRelinquish() -> mach_port_name_t
 
 Available when `RightType` is `Mach.ReceiveRight`.
 
-#### Discussion
+## Discussion
 
 Returns the Mach port name representing the right.
 

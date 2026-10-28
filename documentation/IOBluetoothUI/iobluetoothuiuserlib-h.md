@@ -3,7 +3,7 @@
 **Framework**: IOBluetooth UI  
 **Role**: API Collection
 
-##### Included Headers
+### Included Headers
 
 - `<IOBluetooth/IOBluetoothUserLib.h>`
 

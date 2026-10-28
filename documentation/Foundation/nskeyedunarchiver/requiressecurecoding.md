@@ -25,7 +25,7 @@ var requiresSecureCoding: Bool { get set }
 @property (readwrite) BOOL requiresSecureCoding;
 ```
 
-#### Discussion
+## Discussion
 
 If you set the receiver to require secure coding, it will throw an exception if you attempt to unarchive a class which does not conform to [`NSSecureCoding`](../nssecurecoding.md).
 

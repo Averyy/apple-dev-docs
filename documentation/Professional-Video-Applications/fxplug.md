@@ -5,7 +5,7 @@
 
 Create custom effects plug-ins for Final Cut Pro and Motion.
 
-#### Overview
+## Overview
 
 When the effect or look you want to achieve can’t be created with the filters or generators provided with Final Cut Pro or Motion, use the FxPlug software development kit (SDK) to write your own custom visual effects. FxPlug is a compact, powerful image-processing plug-in architecture that lets you create unique, hardware-accelerated or CPU-based effects plug-ins with customized UI and onscreen controls.
 

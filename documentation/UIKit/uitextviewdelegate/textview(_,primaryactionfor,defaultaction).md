@@ -22,7 +22,7 @@ optional func textView(_ textView: UITextView, primaryActionFor textItem: UIText
 - (UIAction *) textView:(UITextView *) textView primaryActionForTextItem:(UITextItem *) textItem defaultAction:(UIAction *) defaultAction;
 ```
 
-#### Return Value
+## Return Value
 
 Return a UIAction to be performed when the text item is interacted with. Return @c nil to prevent the action from being performed.
 

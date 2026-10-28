@@ -19,7 +19,7 @@ The context SwiftUI passes to [`reader(configuration:)`](./readabledocument/read
 struct DocumentReadConfiguration
 ```
 
-#### Overview
+## Overview
 
 Contains the [`contentType`](./documentreadconfiguration/contenttype.md) of the file being read (one of the document’s [`readableContentTypes`](./readabledocument/readablecontenttypes.md)). Use it to choose the correct deserialization strategy when a document supports multiple formats.
 

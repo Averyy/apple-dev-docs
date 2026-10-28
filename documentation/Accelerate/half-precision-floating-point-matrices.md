@@ -5,7 +5,7 @@
 
 Perform operations on matrices that contain half-precision floating-point elements.
 
-#### Overview
+## Overview
 
 A matrix is a 2D array of values arranged in rows and columns. The simd library provides support for matrices of up to four rows and four columns. It uses a column-major naming convention; for example, a [`simd_half4x2`](../simd/simd_half4x2.md) is a matrix that contains four columns and two rows.
 

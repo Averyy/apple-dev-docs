@@ -28,7 +28,7 @@ optional func resolvePlayShuffled(for intent: INPlayMediaIntent) async -> INBool
 - (void) resolvePlayShuffledForPlayMedia:(INPlayMediaIntent *) intent withCompletion:(void (^)(INBooleanResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve whether to shuffle the played media.
 

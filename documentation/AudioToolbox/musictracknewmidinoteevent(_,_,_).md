@@ -24,7 +24,7 @@ func MusicTrackNewMIDINoteEvent(_ inTrack: MusicTrack, _ inTimeStamp: MusicTimeS
 extern OSStatus MusicTrackNewMIDINoteEvent(MusicTrack inTrack, MusicTimeStamp inTimeStamp, const MIDINoteMessage *inMessage);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

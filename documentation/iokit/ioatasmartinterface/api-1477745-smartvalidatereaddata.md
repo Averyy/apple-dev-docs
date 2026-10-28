@@ -16,7 +16,7 @@ Test the integrity of the device SMART data structure.
 IOReturn (*SMARTValidateReadData)(void *interface, const ATASMARTData *data);
 ```
 
-#### Discussion
+## Discussion
 
 The data structure checksum is the two's complement of the sum of the first 511 bytes in the data structure. The sum of all 512 bytes will be zero when the checksum is correct. See section 8.54.5.8.7 of ATA/ATAPI-6. Will return an error if checksum fails.
 

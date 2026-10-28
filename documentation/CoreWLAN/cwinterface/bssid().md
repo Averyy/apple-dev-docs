@@ -19,7 +19,7 @@ func bssid() -> String?
 - (NSString *) bssid;
 ```
 
-#### Discussion
+## Discussion
 
 Dynamically queries the interface for the current BSSID. Returns a UTF-8 string formatted as <00:00:00:00:00:00>, or *nil* in the case of an error, or if the interface is not participating in a network.
 

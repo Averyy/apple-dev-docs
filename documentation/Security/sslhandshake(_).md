@@ -28,11 +28,11 @@ OSStatus SSLHandshake(SSLContextRef context);
 
 - [Using the Secure Socket Layer for Network Communication](./using-the-secure-socket-layer-for-network-communication.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 On successful return, the session is ready for normal secure communication using the functions [`SSLRead(_:_:_:_:)`](./sslread%28_,_,_,_%29.md) and [`SSLWrite(_:_:_:_:)`](./sslwrite%28_,_,_,_%29.md).
 

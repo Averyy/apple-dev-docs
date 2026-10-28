@@ -23,7 +23,7 @@ struct IOHardwareCursorDescriptor {
 };
 ```
 
-#### Overview
+## Overview
 
 This structure is used by IOFramebuffer to define the format of a hardware cursor.
 

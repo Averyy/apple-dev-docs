@@ -20,7 +20,7 @@ func postNotificationName(_ name: NSNotification.Name, object: String?, userInfo
 - (void) postNotificationName:(NSNotificationName) name object:(NSString *) object userInfo:(NSDictionary *) userInfo options:(NSDistributedNotificationOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 The `userInfo` dictionary is serialized as a property list, so it can be passed to another task. In the receiving task, it is deserialized back into a dictionary. This serialization imposes some restrictions on the objects that can be placed in the `userInfo` dictionary. See XML Property Lists for details.
 

@@ -23,7 +23,7 @@ class UIScreenshotService
 @interface UIScreenshotService : NSObject
 ```
 
-#### Overview
+## Overview
 
 When people take a screenshot of your app’s content, you work with a [`UIScreenshotService`](./uiscreenshotservice.md) object to provide a PDF version of that screenshot. You don’t create a [`UIScreenshotService`](./uiscreenshotservice.md) object directly. Instead, you retrieve the object from the [`screenshotService`](./uiwindowscene/screenshotservice.md) property of your window scene and assign a delegate to it. Then when people take a screenshot, UIKit asks your delegate for the PDF data.
 

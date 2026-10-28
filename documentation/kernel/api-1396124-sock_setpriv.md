@@ -13,11 +13,11 @@
 errno_t sock_setpriv(socket_t so, int on);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Set the privileged bit in the socket. Allows for operations that require root privileges.
 

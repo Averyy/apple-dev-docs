@@ -22,11 +22,11 @@ Reads data to the specified buffer, not exceeding the buffer’s previously allo
 func read(into buffer: UnsafeMutableRawBufferPointer) throws -> Int
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes read and stored by the stream.
 
-#### Discussion
+## Discussion
 
 This function increments the internal stream position by the number of bytes read by the stream.
 

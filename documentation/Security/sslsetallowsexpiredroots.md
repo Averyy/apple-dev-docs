@@ -17,11 +17,11 @@ Specifies whether expired root certificates are allowed.
 OSStatus SSLSetAllowsExpiredRoots(SSLContextRef context, Boolean allowsExpired);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The default value for the `allowsExpired` flag is `false`. When this flag is `false`, Secure Transport returns an `errSSLCertExpired` result code during handshake if the root certificate is expired.
 

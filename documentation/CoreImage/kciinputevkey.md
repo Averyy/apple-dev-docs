@@ -24,7 +24,7 @@ let kCIInputEVKey: String
 extern NSString * const kCIInputEVKey;
 ```
 
-#### Discussion
+## Discussion
 
 A key for a scalar value ([`NSNumber`](../Foundation/nsnumber.md)) that specifies how many F-stops brighter or darker the image should be.
 

@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_DOTMAC_CERT_EMAIL_ENCRYPT;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

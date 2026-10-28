@@ -16,7 +16,7 @@ Emit a burst of particles periodically.
 void emitter::periodicBurst(float2 intervalRange, uint burstSize)
 ```
 
-#### Discussion
+## Discussion
 
 > **Visual**: ![Graph](https://developer.apple.com/tutorials/images/com.apple.computegraph/emitter__periodicBurst.svg)
 

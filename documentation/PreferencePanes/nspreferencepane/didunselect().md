@@ -20,7 +20,7 @@ func didUnselect()
 - (void) didUnselect;
 ```
 
-#### Discussion
+## Discussion
 
 Default implementation does nothing. Override this method to perform actions right after the main view has been removed from the screen.
 

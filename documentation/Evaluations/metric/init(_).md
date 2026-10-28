@@ -21,7 +21,7 @@ Creates a metric with just a name.
 init(_ name: String)
 ```
 
-#### Discussion
+## Discussion
 
 ```swift
 let metric = Metric("Accuracy")

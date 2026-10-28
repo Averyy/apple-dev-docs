@@ -22,7 +22,7 @@ var toolbarItems: [UIBarButtonItem]? { get set }
 @property (nonatomic, strong, nullable) NSArray<__kindof UIBarButtonItem *> * toolbarItems;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`UIBarButtonItem`](../uibarbuttonitem.md) objects and works in conjunction with a [`UINavigationController`](../uinavigationcontroller.md) object. If this view controller is embedded inside a navigation controller interface, and the navigation controller displays a toolbar, this property identifies the items to display in that toolbar.
 

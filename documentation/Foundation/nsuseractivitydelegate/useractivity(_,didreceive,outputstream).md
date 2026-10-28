@@ -25,7 +25,7 @@ optional func userActivity(_ userActivity: NSUserActivity, didReceive inputStrea
 - (void) userActivity:(NSUserActivity *) userActivity didReceiveInputStream:(NSInputStream *) inputStream outputStream:(NSOutputStream *) outputStream;
 ```
 
-#### Discussion
+## Discussion
 
 If [`supportsContinuationStreams`](../nsuseractivity/supportscontinuationstreams.md) is [`true`](../../Swift/true.md), the continuing app can request streams back to the originating app. This delegate callback is received with the streams from the continuing side. The streams are provided in an unopened state, and the delegate should open them immediately to start communicating with the continuing side.
 

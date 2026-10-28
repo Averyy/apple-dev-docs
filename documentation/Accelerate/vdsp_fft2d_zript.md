@@ -21,7 +21,7 @@ Computes a 2D forward or inverse in-place, single-precision real FFT using a tem
 extern void vDSP_fft2d_zript(FFTSetup __Setup, const DSPSplitComplex *__C, vDSP_Stride __IC0, vDSP_Stride __IC1, const DSPSplitComplex *__Buffer, vDSP_Length __Log2N0, vDSP_Length __Log2N1, FFTDirection __Direction);
 ```
 
-#### Discussion
+## Discussion
 
 > 💡 **Tip**:  To learn how the vDSP library scales and arranges the FFT output, see [Understanding data packing for Fourier transforms](./understanding-data-packing-for-fourier-transforms.md).
 

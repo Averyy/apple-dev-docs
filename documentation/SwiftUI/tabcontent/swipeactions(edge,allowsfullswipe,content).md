@@ -20,7 +20,7 @@ nonisolated
 func swipeActions<T>(edge: HorizontalEdge = .trailing, allowsFullSwipe: Bool = true, @ContentBuilder content: () -> T) -> some TabContent<Self.TabValue> where T : View
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add swipe actions to a view that acts as a row in the tab sidebar. Indicate the [`HorizontalEdge`](../horizontaledge.md) where the swipe action originates, and define individual actions with [`Button`](../button.md) instances. For example, if you have a group of message categories, you can add an action to toggle a category as unread on a swipe from the leading edge, and actions to hide or flag categories on a trailing edge swipe:
 

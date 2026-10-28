@@ -19,7 +19,7 @@ static var NSScaleToFit: NSImageScaling { get }
 NSScaleToFit
 ```
 
-#### Discussion
+## Discussion
 
 Use [`NSImageScaling.scaleAxesIndependently`](./scaleaxesindependently.md).
 

@@ -23,7 +23,7 @@ func imageForSegment(at segment: Int) -> UIImage?
 - (UIImage *) imageForSegmentAtIndex:(NSUInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the image assigned to the receiver as content. If there is no image, it returns `nil`.
 

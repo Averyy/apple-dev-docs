@@ -24,11 +24,11 @@ class func allExportPresets() -> [String]
 + (NSArray<NSString *> *) allExportPresets;
 ```
 
-#### Return Value
+## Return Value
 
 See [Export presets](../export-presets.md) for values an asset export session supports.
 
-#### Discussion
+## Discussion
 
 Not all presets are compatible with all assets.
 

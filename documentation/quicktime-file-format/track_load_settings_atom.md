@@ -6,7 +6,7 @@
 
 An atom that indicates how the track is to be used in its movie.
 
-#### Overview
+## Overview
 
 Track load settings atoms contain information that indicates how the track is to be used in its movie. Applications that read QuickTime files can use this information to process the movie data more efficiently. Track load settings atoms have an atom type value of `'load'`.
 

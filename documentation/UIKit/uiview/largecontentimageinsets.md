@@ -22,7 +22,7 @@ var largeContentImageInsets: UIEdgeInsets { get set }
 @property (nonatomic, assign, readwrite) UIEdgeInsets largeContentImageInsets;
 ```
 
-#### Discussion
+## Discussion
 
 This property defaults to [`zero`](../uiedgeinsets/zero.md).
 

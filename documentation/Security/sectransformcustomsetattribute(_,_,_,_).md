@@ -21,11 +21,11 @@ func SecTransformCustomSetAttribute(_ ref: SecTransformImplementationRef, _ attr
 extern CFTypeRefSecTransformCustomSetAttribute(SecTransformImplementationRef ref, SecTransformStringOrAttributeRef attribute, SecTransformMetaAttributeType type, CFTypeRef value);
 ```
 
-#### Return Value
+## Return Value
 
 An error on failure, or `NULL` on success. In Objective-C, call the [`CFRelease`](../CoreFoundation/cfrelease.md) function to free the error’s memory when you are done with it.
 
-#### Discussion
+## Discussion
 
 Unlike the [`SecTransformSetAttribute(_:_:_:_:)`](./sectransformsetattribute%28_,_,_,_%29.md) function this function can set attribute values while a transform is executing. These values are limited to the custom transform instance that is bound to the `ref` parameter.
 

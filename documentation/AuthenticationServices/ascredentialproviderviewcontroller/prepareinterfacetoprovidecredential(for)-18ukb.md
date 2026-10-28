@@ -25,7 +25,7 @@ func prepareInterfaceToProvideCredential(for credentialIdentity: ASPasswordCrede
 - (void) prepareInterfaceToProvideCredentialForIdentity:(ASPasswordCredentialIdentity *) credentialIdentity;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method when your extension can’t provide the requested credential without user interaction. Set up the view controller for any user interaction required to provide the requested credential. Limit user interaction to operations required for providing the requested credential, like showing an authentication UI to unlock the user’s passwords database.
 

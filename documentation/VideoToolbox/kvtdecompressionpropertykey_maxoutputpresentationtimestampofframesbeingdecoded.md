@@ -24,7 +24,7 @@ let kVTDecompressionPropertyKey_MaxOutputPresentationTimeStampOfFramesBeingDecod
 extern CFStringRef const kVTDecompressionPropertyKey_MaxOutputPresentationTimeStampOfFramesBeingDecoded;
 ```
 
-#### Discussion
+## Discussion
 
 This value may change asynchronously as frames are output.
 

@@ -19,7 +19,7 @@ func convertToBacking(_ size: NSSize) -> NSSize
 - (NSSize) convertSizeToBacking:(NSSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 The size in the pixel aligned coordinate system.
 

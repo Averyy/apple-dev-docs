@@ -20,7 +20,7 @@ A notification the system posts when a fragmented asset minder observes that the
 static let AVAssetWasDefragmented: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The system posts this notification only for changes that occur after an asset’s [`canContainFragments`](../../../AVFoundation/avasset/cancontainfragments.md) property reaches a [`AVKeyValueStatus.loaded`](../../../AVFoundation/avkeyvaluestatus/loaded.md) status.
 

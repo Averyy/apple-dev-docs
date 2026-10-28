@@ -24,7 +24,7 @@ case natural
 NSTextAlignmentNatural
 ```
 
-#### Discussion
+## Discussion
 
 The default alignment for left-to-right scripts is [`NSTextAlignment.left`](./left.md), and the default alignment for right-to-left scripts is [`NSTextAlignment.right`](./right.md).
 

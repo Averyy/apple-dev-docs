@@ -19,7 +19,7 @@ case client
 PHASERenderingModeClient
 ```
 
-#### Discussion
+## Discussion
 
 In this mode, the engine is connected to an audio device and renders audio in real-time in a secure process. The engine receives inputs from the client and renders in a server. Updating an engine that has a `client` configuration syncs pending API commands with the server for processing.
 

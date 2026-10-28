@@ -16,11 +16,11 @@ Returns the index of the current element within its group.
 int group::elementIndexInGroup()
 ```
 
-#### Return Value
+## Return Value
 
 The zero-based index of the current element within its group
 
-#### Discussion
+## Discussion
 
 Use this function to identify which particle within the group is being processed, allowing you to create unique behaviors for different particles in the same group.
 

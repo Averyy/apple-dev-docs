@@ -13,7 +13,7 @@ static IOCommandGate *commandGate(
  Action action = 0);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to the new command gate if sucessful, 0 otherwise.
 

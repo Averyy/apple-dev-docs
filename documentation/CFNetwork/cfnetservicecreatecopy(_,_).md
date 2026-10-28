@@ -26,15 +26,15 @@ func CFNetServiceCreateCopy(_ alloc: CFAllocator?, _ service: CFNetService) -> U
 extern CFNetServiceRefCFNetServiceCreateCopy(CFAllocatorRef alloc, CFNetServiceRef service);
 ```
 
-#### Return Value
+## Return Value
 
 Copy of `service`, including all previously resolved data, or `NULL` if `service` could not be copied. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function creates a copy of the CFNetService specified by `service`.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

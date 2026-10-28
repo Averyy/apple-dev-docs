@@ -16,7 +16,7 @@ Set the preferredOutputChannelsForStereo property.
 func setPreferredOutputChannelsForStereo(_ channels: [UInt32]) throws
 ```
 
-#### Discussion
+## Discussion
 
 There are no restrictions on the channel numbers that can be used.
 

@@ -20,7 +20,7 @@ Provides the events related to components.
 enum ComponentEvents
 ```
 
-#### Overview
+## Overview
 
 For more information on subscribing to scene events, see `RealityKit/Scene/Event`.
 

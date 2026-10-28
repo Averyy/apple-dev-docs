@@ -25,7 +25,7 @@ let kCVImageBufferDisplayMaskRectangle_RectangleWidthKey: CFString
 extern CFStringRef const kCVImageBufferDisplayMaskRectangle_RectangleWidthKey;
 ```
 
-#### Discussion
+## Discussion
 
 The width value is a [`CFNumber`](../CoreFoundation/cfnumber.md) of an unsigned 16-bit integer.
 

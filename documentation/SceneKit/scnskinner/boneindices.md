@@ -25,7 +25,7 @@ var boneIndices: SCNGeometrySource { get }
 @property (nonatomic, readonly) SCNGeometrySource * boneIndices;
 ```
 
-#### Discussion
+## Discussion
 
 This geometry source’s [`semantic`](../scngeometrysource/semantic-swift.property.md) property must be [`boneIndices`](../scngeometrysource/semantic-swift.struct/boneindices.md). Its data is an array of integer vectors, each of which corresponds to a weight vector in the [`boneWeights`](./boneweights.md) geometry source. Each component in a vector specifies the index of the node in the [`bones`](./bones.md) array for the corresponding bone weight component.
 

@@ -23,11 +23,11 @@ func titleTextAttributes(for state: UIControl.State) -> [NSAttributedString.Key 
 - (NSDictionary<NSString *,id> *) titleTextAttributesForState:(UIControlState) state;
 ```
 
-#### Return Value
+## Return Value
 
 The text attributes of the title for `state`.
 
-#### Discussion
+## Discussion
 
 For more details, see [`setTitleTextAttributes(_:for:)`](./settitletextattributes%28_,for%29.md)
 

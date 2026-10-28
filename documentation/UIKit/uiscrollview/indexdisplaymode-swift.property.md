@@ -23,7 +23,7 @@ var indexDisplayMode: UIScrollView.IndexDisplayMode { get set }
 @property (nonatomic) UIScrollViewIndexDisplayMode indexDisplayMode;
 ```
 
-#### Discussion
+## Discussion
 
 See [`UIScrollView.IndexDisplayMode`](./indexdisplaymode-swift.enum.md) for possible values.
 

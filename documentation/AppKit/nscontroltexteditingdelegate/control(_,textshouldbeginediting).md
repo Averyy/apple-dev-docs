@@ -20,11 +20,11 @@ optional func control(_ control: NSControl, textShouldBeginEditing fieldEditor: 
 - (BOOL) control:(NSControl *) control textShouldBeginEditing:(NSText *) fieldEditor;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the control’s field editor should be allowed to start editing the text; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 You can use this method to allow or disallow editing in a control. This message is sent by the control directly to its delegate object.
 

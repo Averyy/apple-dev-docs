@@ -23,7 +23,7 @@ case type60Drop
 kSMPTETimeType60Drop
 ```
 
-#### Discussion
+## Discussion
 
 60 video frames per second, with video-frame numbers adjusted to ensure that the timecode matches elapsed clock time.
 

@@ -23,7 +23,7 @@ init(uniqueIdentifier: String?, domainIdentifier: String?, attributeSet: CSSearc
 - (instancetype) initWithUniqueIdentifier:(NSString *) uniqueIdentifier domainIdentifier:(NSString *) domainIdentifier attributeSet:(CSSearchableItemAttributeSet *) attributeSet;
 ```
 
-#### Return Value
+## Return Value
 
 A searchable item that’s associated with the specified identifier, domain identifier, and attribute set.
 

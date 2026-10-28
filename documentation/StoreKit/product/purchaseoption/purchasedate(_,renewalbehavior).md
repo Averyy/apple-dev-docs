@@ -20,7 +20,7 @@ Sets the purchase date for the transaction in the testing environment, and indic
 static func purchaseDate(_ date: Date, renewalBehavior: Product.PurchaseOption.SubscriptionRenewalBehavior = .renewUntilNow) -> Product.PurchaseOption
 ```
 
-#### Discussion
+## Discussion
 
 Use this purchase option when you test your app in Xcode using [StoreKit Test](../../../StoreKitTest/StoreKitTest.md) and call [`buyProduct(identifier:options:)`](../../../StoreKitTest/sktestsession/buyproduct%28identifier,options%29.md).
 

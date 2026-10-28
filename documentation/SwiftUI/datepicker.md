@@ -25,7 +25,7 @@ struct DatePicker<Label> where Label : View
 
 - [Laying out a simple view](./laying-out-a-simple-view.md)
 
-#### Overview
+## Overview
 
 Use a `DatePicker` when you want to provide a view that allows the user to select a calendar date, and optionally a time. The view binds to a [`Date`](../Foundation/date.md) instance.
 
@@ -83,7 +83,7 @@ var body: some View {
 
 ![A SwiftUI standard date picker on iOS, with the label Start Date, and](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/SwiftUI-DatePicker-selectFromRange@2x.png)
 
-##### Styling date pickers
+### Styling date pickers
 
 To use a different style of date picker, use the [`datePickerStyle(_:)`](./view/datepickerstyle%28_%29.md) view modifier. The following example shows the graphical date picker style.
 

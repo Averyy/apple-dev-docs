@@ -25,7 +25,7 @@ func indexGreaterThanOrEqual(to value: Int) -> Int
 - (NSUInteger) indexGreaterThanOrEqualToIndex:(NSUInteger) value;
 ```
 
-#### Return Value
+## Return Value
 
 Closest index in the index set greater than or equal to `index`; NSNotFound when the index set contains no qualifying index.
 

@@ -9,15 +9,15 @@ Retrieve a single campaign by its unique identifier.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint retrieves a single campaign by its ID and returns the latest persisted state of the [`Campaign`](./campaign.md) object. The response includes all campaign fields, including `promotedObjectType` and `promotedObjectId`, which are read-only (immutable) after being set at campaign creation. Campaigns are returned regardless of their `deleted` status.
 
-#### Payload Examples
+## Payload Examples
 
 **App Store Campaign**:
 
-##### Request
+### Request
 
 Response for a campaign promoting an App Store app. The `promotedObjectType` field is `APPSTORE_APP` and `promotedObjectId` is the app’s `adamId`.
 
@@ -25,7 +25,7 @@ Response for a campaign promoting an App Store app. The `promotedObjectType` fie
 GET /v1/campaigns/444555681
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -81,7 +81,7 @@ GET /v1/campaigns/444555681
 
 **Apple Maps Campaign**:
 
-##### Request
+### Request
 
 Response for a campaign promoting a brand on Apple Maps. The `promotedObjectType` field is `BUSINESS_BRAND` and `promotedObjectId` is the brand’s unique ID.
 
@@ -89,7 +89,7 @@ Response for a campaign promoting a brand on Apple Maps. The `promotedObjectType
 GET /v1/campaigns/111222333
 ```
 
-##### Response
+### Response
 
 ```json
 {

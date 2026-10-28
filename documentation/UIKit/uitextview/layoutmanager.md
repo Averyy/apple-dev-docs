@@ -23,7 +23,7 @@ var layoutManager: NSLayoutManager { get }
 @property (nonatomic, readonly) NSLayoutManager * layoutManager;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a convenience accessor that provides access through the text container.
 

@@ -29,7 +29,7 @@ func start() async throws -> MKLocalSearch.Response
 - (void) startWithCompletionHandler:(MKLocalSearchCompletionHandler) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to initiate a map-based search operation. The search runs until the framework delivers the results, at which point the framework calls the specified completion handler.
 

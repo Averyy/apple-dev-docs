@@ -19,7 +19,7 @@ func getPrompt() -> String!
 - (NSString *) getPrompt;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the default button title of the device selector panel.
 

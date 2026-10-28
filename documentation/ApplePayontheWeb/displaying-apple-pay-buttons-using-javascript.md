@@ -5,7 +5,7 @@
 
 Load and configure the JavaScript Apple Pay button.
 
-#### Overview
+## Overview
 
 The JavaScript Apple Pay button provides a variety of Apple Pay button types that you can use on your website to initiate a transaction. You can specify the Apple Pay button style, type, and localization using attributes. Use CSS to set other properties, such as the size and corner radius.
 
@@ -15,7 +15,7 @@ Use the following code to load the button script into your webpage from the cont
 <script src="https://applepay.cdn-apple.com/jsapi/1.latest/apple-pay-sdk.js"></script>
 ```
 
-##### Display the Button
+### Display the Button
 
 Add an `apple-pay-button` element to your webpage to display the button. Set the style, type, and locale when you add the button. The following code adds a black Buy with Apple Pay button localized to Greek, using the default size and corner radius:
 

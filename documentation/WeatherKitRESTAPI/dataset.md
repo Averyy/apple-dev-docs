@@ -23,7 +23,7 @@ string DataSet
 - `forecastNextHour`
 - `weatherAlerts`
 
-#### Possible Values
+## Possible Values
 
 - **currentWeather**: The current weather for the requested location.
 - **forecastDaily**: The daily forecast for the requested location.

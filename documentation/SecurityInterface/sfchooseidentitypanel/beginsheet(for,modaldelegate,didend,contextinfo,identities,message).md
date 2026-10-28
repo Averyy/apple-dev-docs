@@ -19,7 +19,7 @@ func beginSheet(for docWindow: NSWindow!, modalDelegate delegate: Any!, didEnd d
 - (void) beginSheetForWindow:(NSWindow *) docWindow modalDelegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo identities:(NSArray *) identities message:(NSString *) message;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `identity` method to obtain the identity chosen by the user.
 

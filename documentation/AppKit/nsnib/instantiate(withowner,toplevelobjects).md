@@ -19,11 +19,11 @@ func instantiate(withOwner owner: Any?, topLevelObjects: AutoreleasingUnsafeMuta
 - (BOOL) instantiateWithOwner:(id) owner topLevelObjects:(NSArray **) topLevelObjects;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the nib is instantiated; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Unlike legacy methods, the objects adhere to standard Cocoa memory management rules; it is necessary to keep a strong reference to the objects or the array to prevent the nib contents from being deallocated.
 

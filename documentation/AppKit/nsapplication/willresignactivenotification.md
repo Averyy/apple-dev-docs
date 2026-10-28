@@ -19,7 +19,7 @@ class let willResignActiveNotification: NSNotification.Name
 extern NSNotificationName NSApplicationWillResignActiveNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is [`shared`](./shared.md). This notification doesn’t contain a `userInfo` dictionary.  The system posts this notification on the main actor.
 

@@ -21,7 +21,7 @@ The scoring constraint mode for a model evaluator.
 enum ScoringMode
 ```
 
-#### Overview
+## Overview
 
 ```swift
 let mode: ScoringMode = .discrete

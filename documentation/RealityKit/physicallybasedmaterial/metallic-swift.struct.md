@@ -20,7 +20,7 @@ An object that defines the reflectiveness of an entity.
 struct Metallic
 ```
 
-#### Overview
+## Overview
 
 Use this struct to specify an entity’s `metallic` property, which specifies the reflectiveness of an entity. For more information, see [`metallic`](./metallic-swift.property.md).
 

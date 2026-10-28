@@ -17,7 +17,7 @@ Registry of model type, e.g ‘llama’, to functions that can instantiate the m
 enum VLMTypeRegistry
 ```
 
-#### Overview
+## Overview
 
 Typically called via [`load(from:using:configuration:useLatest:progressHandler:)`](./vlmmodelfactory/load%28from,using,configuration,uselatest,progresshandler%29.md).
 

@@ -21,11 +21,11 @@ func LSCopyKindStringForTypeInfo(_ inType: OSType, _ inCreator: OSType, _ inExte
 OSStatus LSCopyKindStringForTypeInfo(OSType inType, OSType inCreator, CFStringRef inExtension, CFStringRef *outKindString);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 This function obtains the kind string that most closely describes items having the specified characteristics. It is useful when you want to display the kind string for a document you do not yet have (such as an email attachment).
 
@@ -33,7 +33,7 @@ You can request any combination of one, two, or all three of the characteristics
 
 Note that since the choice of a preferred application is subject to any document binding preferences the user may have set, the kind string will not necessarily be obtained from the default application that matches the specified creator signature (if any), but may instead be taken from a user-specified application that overrides the default. For example, if the user has specified that files of type `'PDF'` and creator `'ACRO'` should be opened in the Preview application rather than in Acrobat, the kind string for this combination of characteristics will be that defined for `'PDF '` files by Preview and not by Acrobat.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since Mac OS version 10.2
 

@@ -36,7 +36,7 @@ class PDFView
 
 - [Adding Custom Graphics to a PDF](./adding-custom-graphics-to-a-pdf.md)
 
-#### Overview
+## Overview
 
 `PDFView` may be the only class you need to deal with for adding PDF functionality to your application. It lets you display PDF data and allows users to select content, navigate through a document, set zoom level, and copy textual content to the Pasteboard. `PDFView` also keeps track of page history.
 

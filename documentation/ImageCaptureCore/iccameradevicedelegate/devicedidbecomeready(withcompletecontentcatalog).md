@@ -24,7 +24,7 @@ func deviceDidBecomeReady(withCompleteContentCatalog device: ICCameraDevice)
 - (void) deviceDidBecomeReadyWithCompleteContentCatalog:(ICCameraDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 You must open a session on the device before you can enumerate its content and make it ready to receive requests.
 

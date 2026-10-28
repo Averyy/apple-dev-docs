@@ -22,7 +22,7 @@ func insertItem(withItemIdentifier itemIdentifier: NSToolbarItem.Identifier, at 
 - (void) insertItemWithItemIdentifier:(NSToolbarItemIdentifier) itemIdentifier atIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, you don’t call this method directly from your code. Instead, you specify your toolbar’s allowed items, and the set of default items you want to appear. After that, you let the user customize the toolbar.
 

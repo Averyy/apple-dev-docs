@@ -24,11 +24,11 @@ func replacingDepthDataMap(with pixelBuffer: CVPixelBuffer) throws -> Self
 - (instancetype) depthDataByReplacingDepthDataMapWithPixelBuffer:(CVPixelBufferRef) pixelBuffer error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A new depth data object containing the pixel buffer.
 
-#### Discussion
+## Discussion
 
 If you apply simple transforms to media containing depth data, you can use the [`applyingExifOrientation(_:)`](./applyingexiforientation%28_%29.md) method to apply parallel transforms to the corresponding depth data. More complex transforms and edits require creating a derivative depth map reflecting whatever edits you make to the corresponding image. In such cases, use this [`replacingDepthDataMap(with:)`](./replacingdepthdatamap%28with%29.md) method to create a derivative depth data object.
 

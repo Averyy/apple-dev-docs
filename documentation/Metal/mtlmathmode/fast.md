@@ -24,7 +24,7 @@ case fast
 MTLMathModeFast
 ```
 
-#### Discussion
+## Discussion
 
 This is the default for Intel and AMD devices.
 

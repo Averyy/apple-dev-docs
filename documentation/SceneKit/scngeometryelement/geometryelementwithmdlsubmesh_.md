@@ -21,11 +21,11 @@ Creates a geometry element from the specified Model I/O submesh object.
 + (instancetype) geometryElementWithMDLSubmesh:(MDLSubmesh *) mdlSubMesh;
 ```
 
-#### Return Value
+## Return Value
 
 A new geometry element.
 
-#### Discussion
+## Discussion
 
 The Model I/O framework provides universal support for import, export, description, and processing of several 3D asset file formats and related resources. (For details, see [Model I/O](../../ModelIO/ModelIO.md).) The [`MDLSubmesh`](../../ModelIO/mdlsubmesh.md) class is a generic description of an index buffer to be used in rendering a 3D object, along with an assigned material.
 

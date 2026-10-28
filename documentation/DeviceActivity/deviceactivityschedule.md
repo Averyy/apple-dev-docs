@@ -17,7 +17,7 @@ A calendar-based schedule for when to monitor a device’s activity.
 struct DeviceActivitySchedule
 ```
 
-#### Overview
+## Overview
 
 Create a new schedule using `DateComponents` that allows your app to monitor the person’s device activity during a period of time. You can set a schedule for your app to monitor on a regularly occuring basis. You can create a warning time that the system uses to provide your app extension with callbacks whenever a schedule is about to start or end, or when an event is close to reaching its threshold.
 

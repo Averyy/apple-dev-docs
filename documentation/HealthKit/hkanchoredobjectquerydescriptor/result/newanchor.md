@@ -20,7 +20,7 @@ A value corresponding to the last sample that the anchor query has returned.
 let newAnchor: HKQueryAnchor
 ```
 
-#### Discussion
+## Discussion
 
 Subsequent anchor object queries can use this anchor to receive only the samples saved and objects deleted after this query completed.
 

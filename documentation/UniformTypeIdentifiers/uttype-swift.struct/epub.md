@@ -21,7 +21,7 @@ A type that represents data in the electronic publication (EPUB) format.
 static var epub: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `org.idpf.epub-container`.
 

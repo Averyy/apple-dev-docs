@@ -20,7 +20,7 @@ The lighting model used by a [`ShaderGraphMaterial.Program`](./shadergraphmateri
 enum LightingModel
 ```
 
-#### Overview
+## Overview
 
 This must match the type of the surface output node in the [`ShaderGraph`](./shadergraph.md). For example, a graph whose surface node is a PBR surface shader requires `.lit`.
 

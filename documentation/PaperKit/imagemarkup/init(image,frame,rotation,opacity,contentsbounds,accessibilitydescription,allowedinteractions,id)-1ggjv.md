@@ -15,7 +15,7 @@ Initializes and returns a new image markup from the specified parameters.
 init?(image: NSImage, frame: CGRect, rotation: CGFloat = 0.0, opacity: CGFloat = 1.0, contentsBounds: CGRect = CGRect(x: 0, y: 0, width: 1, height: 1), accessibilityDescription: String? = nil, allowedInteractions: MarkupInteractions = .all, id: MarkupID<ImageMarkup> = MarkupID())
 ```
 
-#### Discussion
+## Discussion
 
 Image content is shown scaled to fill.
 

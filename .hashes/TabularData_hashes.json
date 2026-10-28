@@ -1348,6 +1348,14 @@
       "file_path": "documentation/TabularData/dataframe/eqeq(_,_).md",
       "hash": "b88a38cbab0a490024d745a432a82f46ac4127d0272e19feb00e2d5e461e9908"
     },
+    "https://developer.apple.com/documentation/tabulardata/dataframe/append(column:)-45s2v": {
+      "file_path": "documentation/TabularData/dataframe/append(column)-45s2v.md",
+      "hash": "1ca3604c95c2e660e5a3f5e09195e594d39b5ba77b743cb86f95427499d11ce7"
+    },
+    "https://developer.apple.com/documentation/tabulardata/dataframe/append(column:)-aema": {
+      "file_path": "documentation/TabularData/dataframe/append(column)-aema.md",
+      "hash": "f7055a4a590397998b1fbc68d0ab9f589f8319058aa5eca9c03e3ab79f5f3352"
+    },
     "https://developer.apple.com/documentation/tabulardata/dataframe/base": {
       "file_path": "documentation/TabularData/dataframe/base.md",
       "hash": "7f6f16f61eedd2ac7cc9a149f537eabc7cb914bafb8a4d196634c16520e3b99b"
@@ -1471,6 +1479,14 @@
     "https://developer.apple.com/documentation/tabulardata/dataframe/init(jsondata:columns:types:options:)": {
       "file_path": "documentation/TabularData/dataframe/init(jsondata,columns,types,options).md",
       "hash": "a87939d2df0ba680487d3d136f8ba54ff9f9c0ff5afc34754f0776e1da708ebb"
+    },
+    "https://developer.apple.com/documentation/tabulardata/dataframe/insert(column:at:)-5g6i9": {
+      "file_path": "documentation/TabularData/dataframe/insert(column,at)-5g6i9.md",
+      "hash": "62bb057f97cd7b80110e5591e5dff2e78b251b2cd22a7825a9b61a0bd66efaa9"
+    },
+    "https://developer.apple.com/documentation/tabulardata/dataframe/insert(column:at:)-784jb": {
+      "file_path": "documentation/TabularData/dataframe/insert(column,at)-784jb.md",
+      "hash": "d83b334c7378bbcc87e320f1103cddc82eb8caf69335ccc1b6c7784991fc0fcb"
     },
     "https://developer.apple.com/documentation/tabulardata/dataframe/loadrangedannotations(parameters:continueonfailure:)": {
       "file_path": "documentation/TabularData/dataframe/loadrangedannotations(parameters,continueonfailure).md",
@@ -1995,6 +2011,10 @@
     "https://developer.apple.com/documentation/tabulardata/discontiguouscolumnslice/erasetoanycolumn()": {
       "file_path": "documentation/TabularData/discontiguouscolumnslice/erasetoanycolumn().md",
       "hash": "624becdf80e3e5c5bb9e2df534315484e1e3056e9fd6629412bef2bd1f35b0ce"
+    },
+    "https://developer.apple.com/documentation/tabulardata/discontiguouscolumnslice/filter(_:)": {
+      "file_path": "documentation/TabularData/discontiguouscolumnslice/filter(_).md",
+      "hash": "957af57265cbae0b227fab902d84f270800ac6c182437d928d0818ab67db1de2"
     },
     "https://developer.apple.com/documentation/tabulardata/discontiguouscolumnslice/hash(into:)": {
       "file_path": "documentation/TabularData/discontiguouscolumnslice/hash(into).md",
@@ -4200,6 +4220,14 @@
       "file_path": "documentation/TabularData/dataframe/eqeq(_,_).md",
       "hash": "b88a38cbab0a490024d745a432a82f46ac4127d0272e19feb00e2d5e461e9908"
     },
+    "https://developer.apple.com/tutorials/data/documentation/tabulardata/dataframe/append(column:)-45s2v.json": {
+      "file_path": "documentation/TabularData/dataframe/append(column)-45s2v.md",
+      "hash": "1ca3604c95c2e660e5a3f5e09195e594d39b5ba77b743cb86f95427499d11ce7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tabulardata/dataframe/append(column:)-aema.json": {
+      "file_path": "documentation/TabularData/dataframe/append(column)-aema.md",
+      "hash": "f7055a4a590397998b1fbc68d0ab9f589f8319058aa5eca9c03e3ab79f5f3352"
+    },
     "https://developer.apple.com/tutorials/data/documentation/tabulardata/dataframe/base.json": {
       "file_path": "documentation/TabularData/dataframe/base.md",
       "hash": "7f6f16f61eedd2ac7cc9a149f537eabc7cb914bafb8a4d196634c16520e3b99b"
@@ -4323,6 +4351,14 @@
     "https://developer.apple.com/tutorials/data/documentation/tabulardata/dataframe/init(jsondata:columns:types:options:).json": {
       "file_path": "documentation/TabularData/dataframe/init(jsondata,columns,types,options).md",
       "hash": "a87939d2df0ba680487d3d136f8ba54ff9f9c0ff5afc34754f0776e1da708ebb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tabulardata/dataframe/insert(column:at:)-5g6i9.json": {
+      "file_path": "documentation/TabularData/dataframe/insert(column,at)-5g6i9.md",
+      "hash": "62bb057f97cd7b80110e5591e5dff2e78b251b2cd22a7825a9b61a0bd66efaa9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tabulardata/dataframe/insert(column:at:)-784jb.json": {
+      "file_path": "documentation/TabularData/dataframe/insert(column,at)-784jb.md",
+      "hash": "d83b334c7378bbcc87e320f1103cddc82eb8caf69335ccc1b6c7784991fc0fcb"
     },
     "https://developer.apple.com/tutorials/data/documentation/tabulardata/dataframe/loadrangedannotations(parameters:continueonfailure:).json": {
       "file_path": "documentation/TabularData/dataframe/loadrangedannotations(parameters,continueonfailure).md",
@@ -4847,6 +4883,10 @@
     "https://developer.apple.com/tutorials/data/documentation/tabulardata/discontiguouscolumnslice/erasetoanycolumn().json": {
       "file_path": "documentation/TabularData/discontiguouscolumnslice/erasetoanycolumn().md",
       "hash": "624becdf80e3e5c5bb9e2df534315484e1e3056e9fd6629412bef2bd1f35b0ce"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/tabulardata/discontiguouscolumnslice/filter(_:).json": {
+      "file_path": "documentation/TabularData/discontiguouscolumnslice/filter(_).md",
+      "hash": "957af57265cbae0b227fab902d84f270800ac6c182437d928d0818ab67db1de2"
     },
     "https://developer.apple.com/tutorials/data/documentation/tabulardata/discontiguouscolumnslice/hash(into:).json": {
       "file_path": "documentation/TabularData/discontiguouscolumnslice/hash(into).md",
@@ -5707,8 +5747,8 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
-    "total_pages": 1426
+    "total_pages": 1436
   }
 }

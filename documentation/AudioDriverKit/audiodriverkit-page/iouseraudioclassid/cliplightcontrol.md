@@ -15,7 +15,7 @@ The identifier for the audio clip light control class.
 ClipLightControl
 ```
 
-#### Discussion
+## Discussion
 
 This class is a subclass of the `IOUserAudioBooleanControl` class where a true value indcates the signal for the element has exceeded the sample range. After a clip light turns on, it stays on until either:
 

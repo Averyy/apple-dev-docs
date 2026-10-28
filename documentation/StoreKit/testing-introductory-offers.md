@@ -5,7 +5,7 @@
 
 Test your introductory pricing in a variety of user scenarios.
 
-#### Overview
+## Overview
 
 To test introductory offers, verify that users see the same subscription and introductory offer prices in your app as they do in the App Store. As part of your test, make sure your app presents introductory offers only to users that are eligible for them.
 

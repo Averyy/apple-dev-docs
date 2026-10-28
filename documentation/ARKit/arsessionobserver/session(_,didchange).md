@@ -20,7 +20,7 @@ optional func session(_ session: ARSession, didChange geoTrackingStatus: ARGeoTr
 - (void) session:(ARSession *) session didChangeGeoTrackingStatus:(ARGeoTrackingStatus *) geoTrackingStatus;
 ```
 
-#### Discussion
+## Discussion
 
 To create and maintain an effective geo-tracking session, an app must react promptly when ARKit changes the geo-tracking status. For more information, see [`ARGeoTrackingStatus`](../argeotrackingstatus.md).
 

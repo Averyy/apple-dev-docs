@@ -15,7 +15,7 @@ Fills the passed rectangle with the current color.
 extern void NSRectFill(NSRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 Fills `aRect` with the current color using the compositing mode [`NSCompositingOperation.copy`](./nscompositingoperation/copy.md), which fills with the current color by copying the RGBA values. Use [`NSRectFillUsingOperation`](./nsrectfillusingoperation.md) to fill specifying a compositing mode.
 

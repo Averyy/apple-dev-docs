@@ -28,7 +28,7 @@ var endOfEncoderSampleIndex: Int { get set }
 
 - [Sampling GPU data into counter sample buffers](../sampling-gpu-data-into-counter-sample-buffers.md)
 
-#### Discussion
+## Discussion
 
 Specify [`MTLCounterDontSample`](../mtlcounterdontsample.md) if you don’t want to sample GPU counters at the end of the resource state pass. Otherwise, specify an index within the sample buffer where you want the GPU to write the sample data.
 

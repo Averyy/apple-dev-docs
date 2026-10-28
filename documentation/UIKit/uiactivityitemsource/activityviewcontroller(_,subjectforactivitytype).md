@@ -23,11 +23,11 @@ optional func activityViewController(_ activityViewController: UIActivityViewCon
 - (NSString *) activityViewController:(UIActivityViewController *) activityViewController subjectForActivityType:(UIActivityType) activityType;
 ```
 
-#### Return Value
+## Return Value
 
 A string to use as the contents of the subject field.
 
-#### Discussion
+## Discussion
 
 When posting an item the service may provide for a separate subject field and data field, such as an email message. Implement this method if you wish to provide a subject field for services that support one.
 

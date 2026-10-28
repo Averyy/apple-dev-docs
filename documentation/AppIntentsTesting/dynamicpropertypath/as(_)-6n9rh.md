@@ -21,7 +21,7 @@ Casts the value to the given type.
 func `as`<IntentType>(_ type: IntentType) throws -> IntentType.Instance where IntentType : AppIntentTypeDefinition
 ```
 
-#### Discussion
+## Discussion
 
 If the value’s type doesn’t match, this method throws an error.
 

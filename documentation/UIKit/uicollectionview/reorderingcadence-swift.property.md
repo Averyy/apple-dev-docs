@@ -22,7 +22,7 @@ var reorderingCadence: UICollectionView.ReorderingCadence { get set }
 @property (nonatomic) UICollectionViewReorderingCadence reorderingCadence;
 ```
 
-#### Discussion
+## Discussion
 
 The default value in this property is [`UICollectionView.ReorderingCadence.immediate`](./reorderingcadence-swift.enum/immediate.md). You might specify a slower cadence when you want to prevent the reordering of items from being a distraction to the user. For example, you might slow it down if immediate reordering makes it more difficult to drop items at the correct location.
 

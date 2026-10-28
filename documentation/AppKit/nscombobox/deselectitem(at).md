@@ -19,7 +19,7 @@ func deselectItem(at index: Int)
 - (void) deselectItemAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 If the selection does in fact change, this method posts an [`selectionDidChangeNotification`](./selectiondidchangenotification.md) to the default notification center.
 

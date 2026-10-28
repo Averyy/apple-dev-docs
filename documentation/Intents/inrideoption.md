@@ -27,7 +27,7 @@ class INRideOption
 
 - [Generating a List of Ride Options](../SiriKit/generating-a-list-of-ride-options.md)
 
-#### Overview
+## Overview
 
 When the user books a ride through Siri or Maps, you use [`INRideOption`](./inrideoption.md) objects to convey information about pricing and passenger capacity for that ride. Prior to booking, Maps asks for ride option objects representing the rides that are available from your service at that moment. Siri and Maps present ride option information to the user in appropriate contexts so that the user has information about potential rides.
 

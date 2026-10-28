@@ -15,7 +15,7 @@ A reference to an entity’s parent window scene.
 case scene
 ```
 
-#### Discussion
+## Discussion
 
 You can use this enum case to get an entity’s relative transform in its parented window scene:
 

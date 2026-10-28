@@ -24,7 +24,7 @@ class HKGlassesLensSpecification
 @interface HKGlassesLensSpecification : HKLensSpecification
 ```
 
-#### Overview
+## Overview
 
 To create a sample that stores a glasses prescription, start by defining a specification for each eye. Each lens specification object requires a `sphere` parameter. This measures the lens’s strength for correcting either nearsightedness or farsightedness (measured in [`diopter()`](./hkunit/diopter%28%29.md) units).
 

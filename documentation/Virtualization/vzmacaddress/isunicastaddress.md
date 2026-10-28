@@ -19,7 +19,7 @@ var isUnicastAddress: Bool { get }
 @property (readonly, getter=isUnicastAddress) BOOL isUnicastAddress;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the address is a unicast address, or [`false`](../../Swift/false.md) if it isn’t.
 

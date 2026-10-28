@@ -17,7 +17,7 @@ Initialize the `UserInput` with a model agnostic structured context.
 init(chat: [Chat.Message], processing: Processing = .init(), tools: [ToolSpec]? = nil, additionalContext: [String : any Sendable]? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 
@@ -31,7 +31,7 @@ let userInput = UserInput(chat: chat)
 
 A model specific [`MessageGenerator`](../messagegenerator.md) (supplied by the [`UserInputProcessor`](../userinputprocessor.md)) is used to convert this into a model specific format.
 
-##### See Also
+### See Also
 
 - [`UserInput.Prompt.text(_:)`](./prompt-swift.enum/text%28_%29.md)
 - [`init(chat:processing:tools:additionalContext:)`](./init%28chat,processing,tools,additionalcontext%29.md)

@@ -26,11 +26,11 @@ func nextTimedMetadataGroup() -> AVTimedMetadataGroup?
 - (AVTimedMetadataGroup *) nextTimedMetadataGroup;
 ```
 
-#### Return Value
+## Return Value
 
 A timed metadata group that represents the next logical segment of metadata from the source asset reader output.
 
-#### Discussion
+## Discussion
 
 This method returns `nil` after the adaptor reads all timed metadata groups from the output, or if an error occurs. When the return value is `nil`, check the asset reader’s [`status`](../avassetreader/status-swift.property.md) property to determine why it couldn’t read more samples.
 

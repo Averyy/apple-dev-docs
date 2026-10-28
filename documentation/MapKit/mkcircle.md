@@ -25,7 +25,7 @@ class MKCircle
 @interface MKCircle : MKShape
 ```
 
-#### Overview
+## Overview
 
 This class defines the portion of the map that the overlay covers. To draw the region, return an [`MKCircleRenderer`](./mkcirclerenderer.md) object from the [`mapView(_:rendererFor:)`](./mkmapviewdelegate/mapview%28_,rendererfor%29.md) method of your map view delegate.
 

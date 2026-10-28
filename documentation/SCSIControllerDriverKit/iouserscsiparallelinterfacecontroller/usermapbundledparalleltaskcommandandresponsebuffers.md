@@ -15,11 +15,11 @@ Maps the shared command and response buffers in the dext address space in respon
 virtual kern_return_t UserMapBundledParallelTaskCommandAndResponseBuffers(IOBufferMemoryDescriptor *parallelCommandIOMemoryDescriptor, IOBufferMemoryDescriptor *parallelResponseIOMemoryDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success and [`kIOReturnError`](../../DriverKit/kioreturnerror.md) on failure.
 
-#### Discussion
+## Discussion
 
 To optimize the interaction with the DriverKit Extension (dext) class, SCSIControllerDriverKit allocates contiguous command and response buffers to hold the maximum number of tasks reported by [`UserReportMaximumTaskCount`](./userreportmaximumtaskcount.md). The framework calls this method before [`UserStartController`](./userstartcontroller.md), so the dext class can map these buffers in the dext address space. The framework uses the shared buffers to pass command and response payloads. The command and response buffers use a one-to-one mapping; use the same slot number for related command and response payloads. For example, if the framework assigns buffer slot number 12 to a command, use slot number 12 in the mapped response buffers during I/O completion.
 

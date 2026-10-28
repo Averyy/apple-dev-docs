@@ -16,7 +16,7 @@ A collection of [`Touch`](../touch.md) objects representing all touches that cha
 readonly attribute TouchList? changedTouches;
 ```
 
-#### Discussion
+## Discussion
 
 You manipulate this collection using [`TouchList`](../touchlist.md) methods.
 

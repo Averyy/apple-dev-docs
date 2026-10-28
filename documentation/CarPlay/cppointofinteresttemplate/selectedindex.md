@@ -21,7 +21,7 @@ var selectedIndex: Int { get set }
 @property (nonatomic, assign) NSUInteger selectedIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the property must be within the bounds of the [`pointsOfInterest`](./pointsofinterest.md) array, or [`NSNotFound`](../../Foundation/nsnotfound-4qp9h.md) to indicate no selection.
 

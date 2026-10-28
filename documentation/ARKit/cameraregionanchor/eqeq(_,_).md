@@ -15,7 +15,7 @@ Returns a Boolean value indicating whether two camera region anchors are equal.
 static func == (lhs: CameraRegionAnchor, rhs: CameraRegionAnchor) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two camera region anchors are equal; otherwise, `false`.
 

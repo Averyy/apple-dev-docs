@@ -21,7 +21,7 @@ The port number of the remote interface for the connection.
 @property (copy, readonly, nullable) NSNumber * remotePort;
 ```
 
-#### Discussion
+## Discussion
 
 For multipath protocols, this is the remote port of the initial flow. If the app didn’t use the connection, this value is `nil`.
 

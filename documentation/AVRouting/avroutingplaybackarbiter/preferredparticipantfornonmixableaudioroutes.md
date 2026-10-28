@@ -22,7 +22,7 @@ weak var preferredParticipantForNonMixableAudioRoutes: (any AVRoutingPlaybackPar
 @property (nonatomic, weak, nullable) id<AVRoutingPlaybackParticipant> preferredParticipantForNonMixableAudioRoutes;
 ```
 
-#### Discussion
+## Discussion
 
 This participant takes precedence over all other participants to play audio in non-mixable audio routes when concurrent audio playback isn’t possible, and only a single participant can play audio. The system unmutes this participant’s audio, and mutes the audio of all other participants.
 

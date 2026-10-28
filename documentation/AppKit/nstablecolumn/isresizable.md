@@ -17,11 +17,11 @@ Returns whether the column is resizable.
 - (BOOL) isResizable;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the user is allowed to resize the receiver in its `NSTableView`, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 You can change the table column size programmatically regardless of this setting, with the minimum and maximum constraints defined by [`minWidth`](./minwidth.md) and [`maxWidth`](./maxwidth.md).
 

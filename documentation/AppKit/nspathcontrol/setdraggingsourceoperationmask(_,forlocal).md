@@ -19,7 +19,7 @@ func setDraggingSourceOperationMask(_ mask: NSDragOperation, forLocal isLocal: B
 - (void) setDraggingSourceOperationMask:(NSDragOperation) mask forLocal:(BOOL) isLocal;
 ```
 
-#### Discussion
+## Discussion
 
 This method configures the default return value of [`draggingSourceOperationMaskForLocal:`](../../ObjectiveC/nsobject-swift.class/draggingsourceoperationmaskforlocal_.md). By default, this method returns [`every`](../nsdragoperation/every.md) when `isLocal` is [`true`](../../Swift/true.md) and [`NSDragOperationNone`](../nsdragoperation/nsdragoperationnone.md) when `isLocal` is [`false`](../../Swift/false.md).
 

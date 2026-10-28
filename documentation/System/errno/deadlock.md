@@ -25,7 +25,7 @@ static var deadlock: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 You attempted to lock a system resource that would have resulted in a deadlock.
 

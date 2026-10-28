@@ -22,7 +22,7 @@ case activating
 UISpringLoadedInteractionEffectStateActivating
 ```
 
-#### Discussion
+## Discussion
 
 The interaction view is briefly styled with the default effect, then it returns to its original style.
 

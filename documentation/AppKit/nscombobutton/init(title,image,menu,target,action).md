@@ -19,7 +19,7 @@ convenience init(title: String, image: NSImage, menu: NSMenu?, target: Any?, act
 + (instancetype) comboButtonWithTitle:(NSString *) title image:(NSImage *) image menu:(NSMenu *) menu target:(id) target action:(SEL) action;
 ```
 
-#### Return Value
+## Return Value
 
 A combo button configured with both a title and image.
 

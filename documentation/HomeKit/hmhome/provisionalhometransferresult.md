@@ -16,7 +16,7 @@ The outcome of transferring a temporary home to a home hub.
 struct ProvisionalHomeTransferResult
 ```
 
-#### Overview
+## Overview
 
 HomeKit only returns a transfer result if the home hub accepted the transfer request and attempted the transfer. It’s possible for a transfer to be partially successful. Always check the result’s [`failedAccessories`](./provisionalhometransferresult/failedaccessories.md) and [`transferredAccessories`](./provisionalhometransferresult/transferredaccessories.md) properties.
 

@@ -15,7 +15,7 @@ A unified logging system for the reading of historical data.
 - visionOS 1.0+
 - watchOS 8.0+
 
-#### Overview
+## Overview
 
 The OSLog framework allows you to read logs. With the unified logging system, you can build custom debugging and analysis tools to be used alongside Apple tools like Instruments and Console. To learn more about how to create logs, see [Logging](../os/logging.md).
 

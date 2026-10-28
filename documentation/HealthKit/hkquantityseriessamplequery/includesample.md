@@ -24,7 +24,7 @@ var includeSample: Bool { get set }
 @property (nonatomic, assign) BOOL includeSample;
 ```
 
-#### Discussion
+## Discussion
 
 By default, a quantity series sample only returns the individual quantity objects that make up the series—not the [`HKQuantitySample`](../hkquantitysample.md) object that represents the entire series. Set this parameter to [`true`](../../Foundation/nsexpression/true.md) to have the query also return the quantity sample object for the series.
 

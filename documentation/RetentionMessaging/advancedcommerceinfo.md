@@ -19,7 +19,7 @@ object advancedCommerceInfo
 
 - [Retention Messaging API changelog](./retention-messaging-changelog.md)
 
-#### Discussion
+## Discussion
 
 Use the `advancedCommerceInfo` object to indicate the message to display and the signed request.
 

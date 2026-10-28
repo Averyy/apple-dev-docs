@@ -19,7 +19,7 @@ var currentEvent: NSEvent? { get }
 @property (strong, readonly, nullable) NSEvent * currentEvent;
 ```
 
-#### Discussion
+## Discussion
 
 The shared app object receives events and forwards them to the affected [`NSWindow`](../nswindow.md) objects, which then distribute them to the objects in its view hierarchy. Use this property to get the event that was last handled by the app.
 

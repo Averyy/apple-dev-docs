@@ -17,11 +17,11 @@ nonisolated
 func focusSection() -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that can guide focus to its focusable descendants.
 
-#### Discussion
+## Discussion
 
 Use focus sections to customize SwiftUI’s behavior when the user moves focus between views.
 

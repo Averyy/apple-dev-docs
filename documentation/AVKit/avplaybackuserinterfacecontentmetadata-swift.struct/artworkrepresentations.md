@@ -17,7 +17,7 @@ Array of available artwork representations in various formats and sizes.
 var artworkRepresentations: [AVPlaybackUserInterfaceContentArtwork]
 ```
 
-#### Discussion
+## Discussion
 
 Multiple representations allow the system to choose the most appropriate artwork for different display contexts (thumbnails, full-screen, high-DPI displays). Each representation specifies its dimensions, format, and URL for optimal loading and display performance.
 

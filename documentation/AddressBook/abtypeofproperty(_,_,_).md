@@ -19,7 +19,7 @@ func ABTypeOfProperty(_ addressBook: ABAddressBookRef!, _ recordType: CFString!,
 extern ABPropertyType ABTypeOfProperty(ABAddressBookRef addressBook, CFStringRef recordType, CFStringRef property);
 ```
 
-#### Return Value
+## Return Value
 
 The type of `property` as defined in [`ABPropertyType`](./abpropertytype.md). If `property` does not exist in `recordType`, this function returns [`kABErrorInProperty`](./kaberrorinproperty.md).
 

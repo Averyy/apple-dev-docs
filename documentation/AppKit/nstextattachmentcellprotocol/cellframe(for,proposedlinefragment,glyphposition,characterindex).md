@@ -21,7 +21,7 @@ func cellFrame(for textContainer: NSTextContainer, proposedLineFragment lineFrag
 - (NSRect) cellFrameForTextContainer:(NSTextContainer *) textContainer proposedLineFragment:(NSRect) lineFrag glyphPosition:(NSPoint) position characterIndex:(NSUInteger) charIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The proposed line fragment is specified by `lineFrag`.
 

@@ -22,7 +22,7 @@ var urlIsBlocked: Bool { get }
 @property (readonly) BOOL URLIsBlocked;
 ```
 
-#### Discussion
+## Discussion
 
 When a parent or guardian blocks the webpage’s URL, the webpage controller displays a blocking UI and then sets this property to [`YES`](../../ObjectiveC/yes.md).
 

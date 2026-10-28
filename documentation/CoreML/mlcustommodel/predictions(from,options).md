@@ -25,7 +25,7 @@ optional func predictions(from inputBatch: any MLBatchProvider, options: MLPredi
 - (id<MLBatchProvider>) predictionsFromBatch:(id<MLBatchProvider>) inputBatch options:(MLPredictionOptions *) options error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A batch provider that represents the model’s predictions for the batch of inputs.
 

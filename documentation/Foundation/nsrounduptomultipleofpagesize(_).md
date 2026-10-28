@@ -25,7 +25,7 @@ func NSRoundUpToMultipleOfPageSize(_ bytes: Int) -> Int
 extern NSUInteger NSRoundUpToMultipleOfPageSize(NSUInteger bytes);
 ```
 
-#### Return Value
+## Return Value
 
 In bytes, the multiple of the page size that is closest to, but not less than, `byteCount` (that is, the number of bytes rounded up to a multiple of the page size).
 

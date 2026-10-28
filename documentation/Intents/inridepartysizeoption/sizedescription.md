@@ -31,7 +31,7 @@ var sizeDescription: String { get }
 @property (atomic, readonly) NSString * sizeDescription;
 ```
 
-#### Discussion
+## Discussion
 
 When presenting party size options to the user, SiriKit displays this string.
 

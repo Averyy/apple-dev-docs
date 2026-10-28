@@ -23,7 +23,7 @@ var allowsRotation: Bool { get set }
 @property (nonatomic, readwrite) BOOL allowsRotation;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is [`true`](../../Swift/true.md). To disable rotation, set this property to [`false`](../../Swift/false.md).
 

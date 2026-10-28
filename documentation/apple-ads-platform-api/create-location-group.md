@@ -9,19 +9,19 @@ Create a named group of locations for geographic targeting.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 Location groups define which physical locations are in scope for an ad group. All other settings, including schedule, creatives, and bids, live on the ad group or ad itself. Each group belongs to a single brand and ad account. You set both at creation, and neither can change afterward. Once created, reference the group’s `id` in an ad group’s targeting configuration to restrict delivery to those locations.
 
-#### Request Body
+## Request Body
 
 See [`LocationGroupCreate`](./locationgroupcreate.md).
 
-#### Payload Examples
+## Payload Examples
 
 **Static Group**:
 
-##### Request
+### Request
 
 Creates a static group with an explicit list of location IDs.
 
@@ -40,7 +40,7 @@ POST /v1/location-groups
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {
@@ -68,7 +68,7 @@ POST /v1/location-groups
 
 **Dynamic Group**:
 
-##### Request
+### Request
 
 Creates a dynamic group that automatically includes all locations in the specified states.
 
@@ -95,7 +95,7 @@ POST /v1/location-groups
 }
 ```
 
-##### Response
+### Response
 
 ```json
 {

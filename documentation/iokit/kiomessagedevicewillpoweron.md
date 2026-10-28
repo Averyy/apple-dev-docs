@@ -17,7 +17,7 @@
 #define kIOMessageDeviceWillPowerOn
 ```
 
-#### Discussion
+## Discussion
 
 IOService power mgt does not send kIOMessageDeviceWillPowerOn.
 

@@ -24,7 +24,7 @@ var edgeMode: MPSImageEdgeMode { get set }
 @property (nonatomic, readwrite) MPSImageEdgeMode edgeMode;
 ```
 
-#### Discussion
+## Discussion
 
 Most [`MPSKernel`](../mpskernel.md) objects can read off the edge of the source image. This can happen because of a negative offset property, because the  value of `offset + clipRect.size` is larger than the source image or because the filter looks at neighboring pixels, such as a convolution filter.
 

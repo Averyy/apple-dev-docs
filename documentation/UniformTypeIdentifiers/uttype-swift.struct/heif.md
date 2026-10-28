@@ -21,7 +21,7 @@ A type that represents High Efficiency Image File Format images.
 static var heif: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.heif`.
 

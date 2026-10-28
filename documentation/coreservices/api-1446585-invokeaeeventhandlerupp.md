@@ -19,11 +19,11 @@ func InvokeAEEventHandlerUPP(_ theAppleEvent: UnsafePointer<AppleEvent>!, _ repl
 OSErr InvokeAEEventHandlerUPP(const AppleEvent *theAppleEvent, AppleEvent *reply, SRefCon handlerRefcon, AEEventHandlerUPP userUPP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 See the [`AEEventHandlerProcPtr`](./aeeventhandlerprocptr.md) callback function. 
 

@@ -21,7 +21,7 @@ The date that the App Store signed the JWS renewal information.
 let signedDate: Date
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`signedDate`](./signeddate.md) to verify whether the certificate used to sign the transaction was valid when the App Store signed the transaction.
 

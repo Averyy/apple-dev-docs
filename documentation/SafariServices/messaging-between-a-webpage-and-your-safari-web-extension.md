@@ -5,13 +5,13 @@
 
 Configure your extension to enable messaging from webpages, and then update your extension to handle messages.
 
-#### Overview
+## Overview
 
 With messaging, you can allow a webpage to control features in your extension based on events or data, or you can allow a webpage to request and use data from your extension.
 
 First, configure your web extension to receive messages from a list of webpages that you specify. Then, add functionality to handle messages that a webpage sends to your extension, and respond to that webpage.
 
-##### Enable messaging from webpages in your manifest
+### Enable messaging from webpages in your manifest
 
 To enable messaging from webpages, add `externally_connectable` to your extension’s `manifest.json` file. Include a list of webpages that you want to send messages to your extension in the `matches` attribute.
 
@@ -25,7 +25,7 @@ To enable messaging from webpages, add `externally_connectable` to your extensio
 
 If you don’t provide the `matches` attribute or you provide an empty list, no webpages can send messages to your extension.
 
-##### Send messages from a webpage to your extension
+### Send messages from a webpage to your extension
 
 Send a message from a webpage to your extension using `browser.runtime.sendMessage`. Provide your extension’s identifier, the message data, and a closure to handle the response from your extension.
 
@@ -48,7 +48,7 @@ browser.runtime.onMessageExternal.addListener(function(message, sender, sendResp
 });
 ```
 
-##### Set up a port for messages between a webpage and your extension
+### Set up a port for messages between a webpage and your extension
 
 If your extension needs to handle more continuous data from a webpage, establish a port connection between the webpage and your extension.
 

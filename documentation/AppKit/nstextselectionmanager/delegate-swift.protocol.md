@@ -19,7 +19,7 @@ protocol Delegate : NSObjectProtocol
 @protocol NSTextSelectionManagerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Delegates are responsible for managing the text selection state and can customize selection behavior by implementing optional methods.
 

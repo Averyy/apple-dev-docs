@@ -25,7 +25,7 @@ var mesh: [Any] { get set }
 @property (nonatomic, retain) NSArray * mesh;
 ```
 
-#### Discussion
+## Discussion
 
 Specify the mesh as an array of line segments. Each line segment is stored as a [`CIVector`](../civector.md) instance that describes the line as a start point and an end point.
 

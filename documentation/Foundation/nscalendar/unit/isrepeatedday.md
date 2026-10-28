@@ -25,7 +25,7 @@ static var isRepeatedDay: NSCalendar.Unit { get }
 NSCalendarUnitIsRepeatedDay
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSTimeZone`.
 

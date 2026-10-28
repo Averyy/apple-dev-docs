@@ -20,7 +20,7 @@ nonisolated
 func accept(connection: NSXPCConnection) -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 The framework calls this method. You don’t need to call it in your app extension.
 

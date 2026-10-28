@@ -19,7 +19,7 @@ class VZHostAudioInputStreamSource
 @interface VZHostAudioInputStreamSource : VZAudioInputStreamSource
 ```
 
-#### Overview
+## Overview
 
 The host input data comes from the same device that [`AudioQueueNewInput(_:_:_:_:_:_:_:)`](../AudioToolbox/audioqueuenewinput%28_,_,_,_,_,_,_%29.md) uses.
 

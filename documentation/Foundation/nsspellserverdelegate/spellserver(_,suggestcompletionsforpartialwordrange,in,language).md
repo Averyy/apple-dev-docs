@@ -20,7 +20,7 @@ optional func spellServer(_ sender: NSSpellServer, suggestCompletionsForPartialW
 - (NSArray<NSString *> *) spellServer:(NSSpellServer *) sender suggestCompletionsForPartialWordRange:(NSRange) range inString:(NSString *) string language:(NSString *) language;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects indicating possible completions.
 

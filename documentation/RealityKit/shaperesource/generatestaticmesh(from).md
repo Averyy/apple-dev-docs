@@ -33,7 +33,7 @@ nonisolated
 static func generateStaticMesh(from meshAnchor: MeshAnchor) async throws -> ShapeResource
 ```
 
-#### Discussion
+## Discussion
 
 You can use only the physics body mode [`PhysicsBodyMode.static`](../physicsbodymode/static.md) and the collision component mode [`CollisionComponent.Mode.default`](../collisioncomponent/mode-swift.enum/default.md) with this shape.
 

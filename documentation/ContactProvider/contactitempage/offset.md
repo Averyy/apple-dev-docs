@@ -16,7 +16,7 @@ An offset from the page’s generation marker.
 var offset: Int
 ```
 
-#### Discussion
+## Discussion
 
 You can use the offset to track a contiguous number of contact items which have been successfully enumerated for that database generation.
 

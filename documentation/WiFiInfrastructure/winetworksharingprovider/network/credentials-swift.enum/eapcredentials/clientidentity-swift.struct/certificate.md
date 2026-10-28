@@ -17,7 +17,7 @@ The client’s certificate.
 let certificate: Data
 ```
 
-#### Discussion
+## Discussion
 
 Data will be a DER encoded X.509 leaf certificate.
 

@@ -29,7 +29,7 @@ extern CFStringRef const kSecReturnData;
 
 - [Searching for keychain items](./searching-for-keychain-items.md)
 
-#### Discussion
+## Discussion
 
 The corresponding value is of type [`CFBoolean`](../CoreFoundation/cfboolean.md). A value of [`kCFBooleanTrue`](../CoreFoundation/kcfbooleantrue.md) indicates that the function needs to return the item’s data as a [`CFData`](../CoreFoundation/cfdata.md) object.
 

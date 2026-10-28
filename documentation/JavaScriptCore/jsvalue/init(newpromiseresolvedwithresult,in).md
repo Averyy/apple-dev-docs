@@ -24,11 +24,11 @@ init!(newPromiseResolvedWithResult result: Any!, in context: JSContext!)
 + (JSValue *) valueWithNewPromiseResolvedWithResult:(id) result inContext:(JSContext *) context;
 ```
 
-#### Return Value
+## Return Value
 
 A [`JSValue`](../jsvalue.md) that represents a new promise JavaScript object.
 
-#### Discussion
+## Discussion
 
 This method is equivalent to calling the following:
 

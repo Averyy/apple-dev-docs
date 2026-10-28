@@ -23,7 +23,7 @@ var isUnique: Bool { get }
 @property (readonly, getter=isUnique) BOOL unique;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `false`.
 

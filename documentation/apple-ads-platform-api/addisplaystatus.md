@@ -26,7 +26,7 @@ string AdDisplayStatus
 - `AD_GROUP_ON_HOLD`: Delivery stops because the parent ad group is on hold.
 - `CAMPAIGN_ON_HOLD`: Delivery stops because the parent campaign is on hold.
 
-#### Discussion
+## Discussion
 
 The `AdDisplayStatus` is a read-only derived field on [`Ad`](./ad.md) that summarizes the effective delivery state of the ad. It accounts for the ad’s own `AdStatus`, parent ad group status, and parent campaign status. When displaying ad health in a UI, use this field.
 

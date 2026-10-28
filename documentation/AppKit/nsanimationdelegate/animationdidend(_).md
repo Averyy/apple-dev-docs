@@ -20,7 +20,7 @@ optional func animationDidEnd(_ animation: NSAnimation)
 - (void) animationDidEnd:(NSAnimation *) animation;
 ```
 
-#### Discussion
+## Discussion
 
 When an `NSAnimation` object reaches the end of its planned duration, it has a progress value of 1.0.
 

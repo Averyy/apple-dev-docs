@@ -20,7 +20,7 @@ Events that trigger on an entity to indicate a change in anchor state.
 enum AnchorStateEvents
 ```
 
-#### Overview
+## Overview
 
 You need to set up [`SpatialTrackingSession`](./spatialtrackingsession.md) to listen for this event.
 

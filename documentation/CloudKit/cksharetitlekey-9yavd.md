@@ -21,7 +21,7 @@ The system field key for the share’s title.
 extern CKRecordFieldKey const CKShareTitleKey;
 ```
 
-#### Discussion
+## Discussion
 
 This predefined key is part of the `CKRecordTypeShare` schema. The out of process UI flow uses this key to send a share, and as part of the share acceptance flow. It is an optional value on a `CKShare` record.
 

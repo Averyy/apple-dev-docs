@@ -21,7 +21,7 @@ A protocol for types whose memory can safely be read as individual raw bytes.
 protocol ConvertibleToBytes
 ```
 
-#### Overview
+## Overview
 
 A type can conform to ConvertibleToBytes if its memory representation includes no padding. The sum of the size of its stored properties must be equal to its stride.
 

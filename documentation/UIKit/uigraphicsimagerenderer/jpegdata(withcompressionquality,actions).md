@@ -23,11 +23,11 @@ func jpegData(withCompressionQuality compressionQuality: CGFloat, actions: (UIGr
 - (NSData *) JPEGDataWithCompressionQuality:(CGFloat) compressionQuality actions:(UIGraphicsImageDrawingActions) actions;
 ```
 
-#### Return Value
+## Return Value
 
 A [`Data`](../../Foundation/data.md) object representing a JPEG-encoded representation of the image created by the supplied drawing actions.
 
-#### Discussion
+## Discussion
 
 You provide a set of drawing instructions as the block argument to this method, and the method returns the resulting image as a JPEG-encoded [`Data`](../../Foundation/data.md) object.
 

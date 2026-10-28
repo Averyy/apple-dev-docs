@@ -19,7 +19,7 @@ func stop(when animation: NSAnimation, reachesProgress stopProgress: NSAnimation
 - (void) stopWhenAnimation:(NSAnimation *) animation reachesProgress:(NSAnimationProgress) stopProgress;
 ```
 
-#### Discussion
+## Discussion
 
 This method links the running of two animations together. You can set only one `NSAnimation` object as a start animation and one as a stop animation at any one time. Setting a new stop animation removes any animation previously set.
 

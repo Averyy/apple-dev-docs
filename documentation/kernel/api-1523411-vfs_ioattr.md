@@ -15,7 +15,7 @@ Get I/O attributes associated with a mounpoint.
 void vfs_ioattr(mount_t mp, struct vfsioattr *ioattrp);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

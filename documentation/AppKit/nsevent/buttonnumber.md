@@ -19,7 +19,7 @@ var buttonNumber: Int { get }
 @property (readonly) NSInteger buttonNumber;
 ```
 
-#### Discussion
+## Discussion
 
 This property is intended for use with the `NSOtherMouseDown`, `NSOtherMouseUp`, and `NSOtherMouseDragged` events, but will return values for `NSLeftMouse...` and `NSRightMouse...` events also. If this event is not a mouse event, the property is set to `0`.
 

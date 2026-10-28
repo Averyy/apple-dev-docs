@@ -30,7 +30,7 @@ var emailAddressFieldShouldBeDisplayed: Bool { get set }
 @property (atomic) BOOL emailAddressFieldShouldBeDisplayed;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md), which displays the guest’s email address.
 

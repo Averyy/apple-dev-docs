@@ -25,7 +25,7 @@ var exportedObject: Any? { get set }
 @property (retain, nullable) id exportedObject;
 ```
 
-#### Discussion
+## Discussion
 
 Messages sent to the [`remoteObjectProxy()`](../nsxpcproxycreating/remoteobjectproxy%28%29.md) object from the other side of the connection are dispatched to this object. Messages delivered to exported objects are serialized and sent on a non-main queue. The receiver is responsible for handling the messages on a different queue or thread if it is required.
 

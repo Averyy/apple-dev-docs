@@ -28,7 +28,7 @@ func showPicker(for displayItems: [ASPickerDisplayItem]) async throws
 
 - [Discovering and configuring accessories](../discovering-and-configuring-accessories.md)
 
-#### Discussion
+## Discussion
 
 The session’s event handler receives events when this picker displays and dismisses, as well as when the person using the app picks an accessory.
 

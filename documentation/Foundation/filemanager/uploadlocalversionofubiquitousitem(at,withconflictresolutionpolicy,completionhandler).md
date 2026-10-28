@@ -27,7 +27,7 @@ func uploadLocalVersionOfUbiquitousItem(at url: URL, withConflictResolutionPolic
 - (void) uploadLocalVersionOfUbiquitousItemAtURL:(NSURL *) url withConflictResolutionPolicy:(NSFileManagerUploadLocalVersionConflictPolicy) conflictResolutionPolicy completionHandler:(void (^)(NSFileVersion *uploadedVersion, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Once your app pauses a sync for an item, call this method every time your document is in a stable state. This action keeps the server version as up-to-date as possible.
 

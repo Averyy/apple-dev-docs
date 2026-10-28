@@ -29,7 +29,7 @@ func makeCommandBuffer() -> (any MTLCommandBuffer)?
 
 - [Setting up a command structure](../setting-up-a-command-structure.md)
 
-#### Discussion
+## Discussion
 
 The command buffers you create with this method maintain strong references to the resources you encode into it, including buffers, textures, samplers, and pipeline states. The command buffer releases these references after it finishes running on the GPU.
 

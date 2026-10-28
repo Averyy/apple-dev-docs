@@ -14,7 +14,7 @@
 enum IOPCIMemoryRange : unsigned int;
 ```
 
-#### Overview
+## Overview
 
 BAR indexes for GetBARInfo
 

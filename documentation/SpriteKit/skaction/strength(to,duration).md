@@ -25,11 +25,11 @@ class func strength(to strength: Float, duration: TimeInterval) -> SKAction
 + (SKAction *) strengthTo:(float) strength duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the field node’s [`strength`](../skfieldnode/strength.md) property animates from its current value to its new value.
 

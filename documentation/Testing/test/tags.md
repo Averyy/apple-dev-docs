@@ -23,7 +23,7 @@ The complete, unique set of tags associated with this test.
 var tags: Set<Tag> { get }
 ```
 
-#### Discussion
+## Discussion
 
 Tags are associated with tests using the [`tags(_:)`](../trait/tags%28_%29.md) function.
 

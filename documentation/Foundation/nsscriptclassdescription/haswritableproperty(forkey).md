@@ -19,7 +19,7 @@ func hasWritableProperty(forKey key: String) -> Bool
 - (BOOL) hasWritablePropertyForKey:(NSString *) key;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the described class has a writable property identified by the specified key; otherwise, [`false`](../../Swift/false.md).
 

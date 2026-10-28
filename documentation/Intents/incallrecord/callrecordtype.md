@@ -32,7 +32,7 @@ var callRecordType: INCallRecordType { get }
 @property (atomic, assign, readonly) INCallRecordType callRecordType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to differentiate among different types of calls within your app.
 

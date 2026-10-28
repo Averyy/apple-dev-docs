@@ -19,7 +19,7 @@ The accessory, shown as an annotation callout on the map.
 static var callout: MapItemDetailSelectionAccessoryStyle { get }
 ```
 
-#### Discussion
+## Discussion
 
 This uses the [`automatic`](./calloutstyle/automatic.md) callout style.
 

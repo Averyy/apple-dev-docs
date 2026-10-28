@@ -23,7 +23,7 @@ enum UIReturnKeyType
 enum UIReturnKeyType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Use these constants with the [`returnKeyType`](./uitextinputtraits/returnkeytype.md) property.
 

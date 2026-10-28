@@ -17,7 +17,7 @@ case cweapolErr
 kCWEAPOLErr
 ```
 
-#### Discussion
+## Discussion
 
 EAPOL-related error.
 

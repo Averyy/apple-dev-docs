@@ -15,13 +15,13 @@ The object for defining color for text underline or strikethrough.
 object TextDecoration
 ```
 
-#### Discussion
+## Discussion
 
 Use the `TextDecoration` object to define a stroke for strikethrough or underline.
 
 You can use this object in [`TextStyle`](./textstyle.md) and [`ComponentTextStyle`](./componenttextstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

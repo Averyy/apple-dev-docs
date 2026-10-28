@@ -10,25 +10,25 @@ Add camera-based features to enterprise apps.
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample code project demonstrates how to use ARKit to access and display the main camera feed in your visionOS app. You can use this functionality to implement computer vision-powered experiences or livestreaming in your enterprise app. For instance, support technicians can livestream their surroundings to remote experts for improved guidance.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Replace `Enterprise.license` with your license file. The sample app requires a valid license file to display the main camera.
 
-##### Request the entitlement
+### Request the entitlement
 
 Main camera access is a part of enterprise APIs for visionOS, a collection of APIs that unlock capabilities for enterprise customers. To use main camera access, you need to apply for the [`Main camera access`](../BundleResources/entitlements/com.apple.developer.arkit.main-camera-access.allow.md) entitlement. For more information, including how to apply for this entitlement, see [Building spatial experiences for business apps with enterprise APIs for visionOS](./building-spatial-experiences-for-business-apps-with-enterprise-apis.md).
 
-##### Add usage descriptions for ARKit data access
+### Add usage descriptions for ARKit data access
 
 To help protect people’s privacy, visionOS limits app access to cameras and other sensors in Apple Vision Pro. You need to add an [`NSMainCameraUsageDescription`](../BundleResources/information-property-list/nsmaincamerausagedescription.md) to your app’s information property list file to provide a usage description that explains how your app uses the data those sensors provide. People see this description when your app prompts for access to camera data.
 
 > **Note**: Prior to visionOS 26, [`CameraFrameProvider`](../ARKit/cameraframeprovider.md) is only available in an immersive space. See [Setting up access to ARKit data](./setting-up-access-to-arkit-data.md) to learn more about opening an immersive space and requesting authorization for ARKit data access. To learn more about best practices for privacy, see [Adopting best practices for privacy and user preferences](./adopting-best-practices-for-privacy.md).
 
-##### Access and display main camera frames
+### Access and display main camera frames
 
 The code example below accesses and displays the main camera feed, which is a stereo camera that consists of left and right cameras. A person can configure the app to display the left, right, or combined stereo frames, with or without rectification, at one of two resolutions.
 

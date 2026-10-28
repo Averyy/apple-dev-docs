@@ -20,7 +20,7 @@ case manual
 AREnvironmentTexturingManual
 ```
 
-#### Discussion
+## Discussion
 
 When you use this [`environmentTexturing`](../environmenttexturing-swift.property.md) option, you must manually choose when and where to generate environment map textures:
 

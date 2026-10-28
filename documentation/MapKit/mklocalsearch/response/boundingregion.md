@@ -25,7 +25,7 @@ var boundingRegion: MKCoordinateRegion { get }
 @property (nonatomic, readonly) MKCoordinateRegion boundingRegion;
 ```
 
-#### Discussion
+## Discussion
 
 The returned region is the smallest bounding box that encloses all of the map items. If there’s only one search result, the size of the region may be `(0, 0)`.
 

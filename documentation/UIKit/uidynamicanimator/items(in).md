@@ -23,11 +23,11 @@ func items(in rect: CGRect) -> [any UIDynamicItem]
 - (NSArray<id<UIDynamicItem>> *) itemsInRect:(CGRect) rect;
 ```
 
-#### Return Value
+## Return Value
 
 The dynamic items, from the animator’s behaviors, that intersect the specified rectangle.
 
-#### Discussion
+## Discussion
 
 The coordinate system that pertains to the `rect` parameter depends on how you initialized the animator, as described in the Overview in this document.
 

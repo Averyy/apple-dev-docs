@@ -24,7 +24,7 @@ func rollback()
 - (void) rollback;
 ```
 
-#### Discussion
+## Discussion
 
 Any local changes to this object are lost when invoking this method. This method does not re-fetch property values from the event store. This method does nothing if the object was never changed.
 

@@ -21,11 +21,11 @@ Accesses a view of this collection with the elements at the given indices.
 subscript(subranges: RangeSet<Self.Index>) -> DiscontiguousSlice<Self> { get }
 ```
 
-#### Return Value
+## Return Value
 
 A collection of the elements at the positions in `subranges`.
 
-#### Overview
+## Overview
 
 > **Complexity**: O(1)
 

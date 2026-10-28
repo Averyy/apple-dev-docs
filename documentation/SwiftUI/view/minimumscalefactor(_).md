@@ -22,11 +22,11 @@ nonisolated
 func minimumScaleFactor(_ factor: CGFloat) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that limits the amount of text downscaling.
 
-#### Discussion
+## Discussion
 
 Use the `minimumScaleFactor(_:)` modifier if the text you place in a view doesn’t fit and it’s okay if the text shrinks to accommodate. For example, a label with a minimum scale factor of `0.5` draws its text in a font size as small as half of the actual font if needed.
 

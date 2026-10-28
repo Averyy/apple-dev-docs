@@ -25,7 +25,7 @@ var unit: HKUnit { get }
 @property (nonatomic, copy, readonly, nonnull) HKUnit * unit;
 ```
 
-#### Discussion
+## Discussion
 
 This ensures that the dose quantity is recorded with the correct measurement unit.
 

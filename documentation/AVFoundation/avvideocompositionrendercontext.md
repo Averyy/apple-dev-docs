@@ -24,7 +24,7 @@ class AVVideoCompositionRenderContext
 @interface AVVideoCompositionRenderContext : NSObject
 ```
 
-#### Overview
+## Overview
 
 A render context provides size and scaling information and offers a service for efficiently providing pixel buffers from a managed pool of buffers.
 

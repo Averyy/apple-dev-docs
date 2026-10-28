@@ -20,7 +20,7 @@ convenience init?(descriptorType: DescType, bytes: UnsafeRawPointer?, length byt
 - (instancetype) initWithDescriptorType:(DescType) descriptorType bytes:(const void *) bytes length:(NSUInteger) byteCount;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `NSAppleEventDescriptor` with the specified type and data. Returns `nil` if an error occurs.
 

@@ -24,7 +24,7 @@ class WKWindowFeatures
 @interface WKWindowFeatures : NSObject
 ```
 
-#### Overview
+## Overview
 
 A [`WKWindowFeatures`](./wkwindowfeatures.md) object contains the attributes that a webpage requests from its containing web view. You don’t create a [`WKWindowFeatures`](./wkwindowfeatures.md) object directly. When a navigation action results in the display of a new web view, [`WKWebView`](./wkwebview.md) creates this object and passes it to the [`webView(_:createWebViewWith:for:windowFeatures:)`](./wkuidelegate/webview%28_,createwebviewwith,for,windowfeatures%29.md) method of its UI delegate object. The delegate uses the information in this object to configure and return the new web view.
 

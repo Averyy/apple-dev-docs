@@ -17,7 +17,7 @@ A conversation to script: what the user says and what the model replies.
 struct Transcript
 ```
 
-#### Overview
+## Overview
 
 Write it as an array in code, or load it from JSON:
 

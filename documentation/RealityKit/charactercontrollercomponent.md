@@ -20,13 +20,13 @@ A component that manages character movement.
 struct CharacterControllerComponent
 ```
 
-#### Overview
+## Overview
 
 To use a character controller, add a `CharacterControllerComponent` to your entity to make it a character entity. Use [`moveCharacter(by:deltaTime:relativeTo:collisionHandler:)`](./entity/movecharacter%28by,deltatime,relativeto,collisionhandler%29.md) to move your character and respond to collisions, or [`teleportCharacter(to:relativeTo:)`](./entity/teleportcharacter%28to,relativeto%29.md) to place your character instantaneously in 3D space.
 
 > **Note**: [`PhysicsBodyComponent`](./physicsbodycomponent.md) and [`CollisionComponent`](./collisioncomponent.md) are incompatible with `CharacterControllerComponent`, and RealityKit deactivates them if you add them to the same entity.
 
-#### Handle collision
+## Handle collision
 
 Character entities are capsular, and you can specify their height and radius in the component’s initializer. A character’s capsule shape aligns with its [`upVector`](./charactercontrollercomponent/upvector.md) so that the top and bottom of the capsule pass through that direction vector.
 
@@ -41,7 +41,7 @@ entity.moveCharacter(by: velocity * deltaTime, deltaTime: deltaTime, relativeTo:
 
 To handle collisions with colliders that have a [`mode`](./collisioncomponent/mode-swift.property.md) of [`CollisionComponent.Mode.trigger`](./collisioncomponent/mode-swift.enum/trigger.md), subscribe to the [`CollisionEvents.Began`](./collisionevents/began.md) event for your [`RealityView`](./realityview.md). This event doesn’t occur for solid collisions with your character, but RealityKit invokes it when your character enters a trigger. This is useful for collecting coins, claiming checkpoints, activating enemy behavior when your character enters an area, and many other interactions within games.
 
-#### Update your character
+## Update your character
 
 A common use case for `CharacterControllerComponent` is to control a character in a video game. Video games have update loops where characters and game logic update once each frame, allowing them to respond to player input in real time. `CharacterControllerComponent` works well in such a setup.
 

@@ -19,7 +19,7 @@ The selector defining the action message to invoke when users tap the insert or 
 @property (nonatomic, nullable) SEL editAction;
 ```
 
-#### Discussion
+## Discussion
 
 When the cell’s table is in editing mode, the cell displays a green insert control or a red delete control to the left of it. (The [`selectedBackgroundView`](./selectedbackgroundview.md) constant applied to the cell via the [`editingStyle`](./editingstyle-swift.property.md) property determines which control is used.) Typically, the associated [`UITableView`](../uitableview.md) object sets the editing action for all cells; you can use this property to alter the editing action for individual cells. If the value of this property is `NULL`, no action message is sent.
 

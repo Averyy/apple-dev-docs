@@ -15,7 +15,7 @@ Returns the status of the specified table.
 - (NSPrinterTableStatus) statusForTable:(NSString *) tableName;
 ```
 
-#### Return Value
+## Return Value
 
 One of the return values described in `Constants`.
 

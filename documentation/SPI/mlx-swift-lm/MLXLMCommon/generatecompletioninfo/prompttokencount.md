@@ -17,7 +17,7 @@ The number of prompt tokens actually prefilled during this generation.
 let promptTokenCount: Int
 ```
 
-#### Discussion
+## Discussion
 
 When a session reuses a KV-cache prefix only the remaining suffix is fed to the model, so this counts fewer tokens than the rendered prompt. See [`cachedPromptTokenCount`](./cachedprompttokencount.md) and [`totalPromptTokenCount`](./totalprompttokencount.md).
 

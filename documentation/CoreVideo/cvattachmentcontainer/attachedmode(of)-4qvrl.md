@@ -21,11 +21,11 @@ Returns the propagation mode of a stored attachment you identify with a key path
 func attachedMode(of keyPath: KeyPath<Keys.Type, CVAttachmentKeyDefinition<some CVAttachmentModePreference, some CVAttachmentValueRepresentable>>) -> CVAttachmentMode?
 ```
 
-#### Return Value
+## Return Value
 
 The propagation mode of the attachment, or `nil` if the key isn’t attached.
 
-#### Discussion
+## Discussion
 
 Use this method to check for the presence of a specific key without converting its value.
 

@@ -19,7 +19,7 @@ var maskAmount: CGFloat { get set }
 @property (nonatomic, assign) CGFloat maskAmount;
 ```
 
-#### Discussion
+## Discussion
 
 Use the `maskAmount` property to change how much masking the collection view applies to its cells. Setting the value of the property on the layout updates the `maskAmount` value of all the cells.
 

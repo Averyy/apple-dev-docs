@@ -21,7 +21,7 @@ The value of this string.
 var description: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Using this property directly is discouraged. Instead, use simple assignment to create a new constant or variable equal to this string.
 

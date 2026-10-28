@@ -24,7 +24,7 @@ optional func animationDidStop(_ anim: CAAnimation, finished flag: Bool)
 - (void) animationDidStop:(CAAnimation *) anim finished:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 The animation may have ended because it has completed its active duration or because it has been removed from the layer it is attached to. `flag` is true if the animation reached the end of its duration without being removed.
 

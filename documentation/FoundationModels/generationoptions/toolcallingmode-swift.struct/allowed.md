@@ -24,7 +24,7 @@ static let allowed: GenerationOptions.ToolCallingMode
 
 - [Expanding generation with tool calling](../../expanding-generation-with-tool-calling.md)
 
-#### Discussion
+## Discussion
 
 This is the default.
 

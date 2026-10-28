@@ -23,7 +23,7 @@ class CXSetHeldCallAction
 @interface CXSetHeldCallAction : CXCallAction
 ```
 
-#### Overview
+## Overview
 
 [`CXSetHeldCallAction`](./cxsetheldcallaction.md) is a concrete subclass of [`CXCallAction`](./cxcallaction.md).
 

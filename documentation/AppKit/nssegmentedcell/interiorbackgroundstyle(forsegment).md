@@ -19,11 +19,11 @@ func interiorBackgroundStyle(forSegment segment: Int) -> NSView.BackgroundStyle
 - (NSBackgroundStyle) interiorBackgroundStyleForSegment:(NSInteger) segment;
 ```
 
-#### Return Value
+## Return Value
 
 The background style to use for specified segment. See [`NSView.BackgroundStyle`](../nsview/backgroundstyle.md) for possible values.
 
-#### Discussion
+## Discussion
 
 The interior background style describes the surface drawn onto in [`drawInterior(withFrame:in:)`](../nscell/drawinterior%28withframe,in%29.md).
 

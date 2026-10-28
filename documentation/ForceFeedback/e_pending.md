@@ -18,7 +18,7 @@ var E_PENDING: Int { get }
 #define E_PENDING
 ```
 
-#### Discussion
+## Discussion
 
 Data is not yet available.
 

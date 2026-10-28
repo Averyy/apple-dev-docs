@@ -5,13 +5,13 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 18.5 SDK provides support to develop apps for iPhone and iPad running iOS & iPadOS 18.6. The SDK comes bundled with Xcode 16.4. For information on the compatibility requirements for Xcode 16.4, see [Xcode 16.4 Release Notes](../Xcode-Release-Notes/xcode-16_4-release-notes.md).
 
-##### HealthKit
+### HealthKit
 
-###### Known Issues
+#### Known Issues
 
 - Health data becomes inaccessible when you reach the “slide to power off” page on an iPhone or iPad without a passcode.  (154706523)
 

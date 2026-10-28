@@ -15,7 +15,7 @@ An array of identifier strings the app handles with the card session API.
 - **Name**: `com.apple.developer.nfc.hce.iso7816.select-identifier-prefixes`
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 Set this value to include identifier strings for which the app handles ISO7816 `SELECT` requests. You can use a mix of the following identifier types:
 

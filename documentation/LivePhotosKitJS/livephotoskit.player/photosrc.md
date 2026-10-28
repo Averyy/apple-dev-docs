@@ -15,7 +15,7 @@ The source of the photo component of the Live Photo.
 attribute String,ArrayBuffer photoSrc;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property to three types of value:
 

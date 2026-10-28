@@ -26,7 +26,7 @@ var seekableTimeRanges: [NSValue] { get }
 @property (readonly) NSArray<NSValue *> * seekableTimeRanges;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains [`NSValue`](../../Foundation/nsvalue.md) objects containing a [`CMTimeRange`](../../CoreMedia/cmtimerange.md) value indicating the times ranges to which the player item can seek. The time ranges returned may be discontinuous.
 

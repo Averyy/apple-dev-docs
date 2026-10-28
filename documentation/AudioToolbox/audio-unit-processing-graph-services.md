@@ -5,7 +5,7 @@
 
 Audio Unit Processing Graph Services provide interfaces for representing a set of audio units, connections between their inputs and outputs, and callbacks used to provide inputs. It also enables the embedding of sub (or child) processing graphs within parent graphs to allow for a logical organization of parts of an overall signal chain.
 
-#### Overview
+## Overview
 
 An audio processing graph object (of type `AUGraph`) is a complete description of an audio signal processing network. Audio Unit Processing Graph Services may manage the instantiated audio units if the `AUGraphOpen` function is called.
 

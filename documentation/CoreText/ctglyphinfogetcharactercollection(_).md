@@ -25,11 +25,11 @@ func CTGlyphInfoGetCharacterCollection(_ glyphInfo: CTGlyphInfo) -> CTCharacterC
 extern CTCharacterCollection CTGlyphInfoGetCharacterCollection(CTGlyphInfoRef glyphInfo);
 ```
 
-#### Return Value
+## Return Value
 
 The character collection of the given glyph info object.
 
-#### Discussion
+## Discussion
 
 If the glyph info object was created with a glyph name or a glyph index, its character collection is [`kCTIdentityMappingCharacterCollection`](./ctcharactercollection/kctidentitymappingcharactercollection.md).
 

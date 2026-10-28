@@ -31,7 +31,7 @@ var make: String? { get }
 @property (atomic, copy, readonly, nullable) NSString * make;
 ```
 
-#### Discussion
+## Discussion
 
 Maps displays this value when it presents information about the electric vehicle.
 

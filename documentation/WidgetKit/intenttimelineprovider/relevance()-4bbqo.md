@@ -20,11 +20,11 @@ Provides an object containing attributes that describe when a specific widget is
 func relevance() async -> WidgetRelevance<Self.Intent>
 ```
 
-#### Return Value
+## Return Value
 
 The object that contains attributes that describe when a specific widget is relevant.
 
-#### Discussion
+## Discussion
 
 The system can use the relevance to show this widget in the Smart Stack when the provided relevance matches a person’s context. For example, if you indicate relevance at a specific location, the system could show the widget when a person is at or close to the location.
 

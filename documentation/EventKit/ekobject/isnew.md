@@ -24,7 +24,7 @@ var isNew: Bool { get }
 @property (nonatomic, readonly, getter=isNew) BOOL new;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the object hasn’t been saved; otherwise, [`false`](../../Swift/false.md).
 

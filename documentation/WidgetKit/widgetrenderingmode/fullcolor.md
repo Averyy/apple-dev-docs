@@ -27,7 +27,7 @@ static let fullColor: WidgetRenderingMode
 - [Updating your widgets for visionOS](../updating-your-widgets-for-visionos.md)
 - [Optimizing your widget for accented rendering mode and Liquid Glass](../optimizing-your-widget-for-accented-rendering-mode-and-liquid-glass.md)
 
-#### Discussion
+## Discussion
 
 In this mode, the system doesn’t alter or filter the widget’s colors.
 

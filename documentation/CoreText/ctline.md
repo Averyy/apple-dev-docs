@@ -25,7 +25,7 @@ class CTLine
 typedef const struct __CTLine * CTLineRef;
 ```
 
-#### Overview
+## Overview
 
 A `CTLine` object contains an array of glyph runs. Line objects are created by the typesetter during a framesetting operation and can draw themselves directly into a graphics context.
 

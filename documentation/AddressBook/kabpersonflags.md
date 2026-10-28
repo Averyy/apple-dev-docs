@@ -19,7 +19,7 @@ let kABPersonFlags: String
 extern NSString * const kABPersonFlags;
 ```
 
-#### Discussion
+## Discussion
 
 See [Person Flags](./person-flags.md).
 

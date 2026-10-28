@@ -24,7 +24,7 @@ let HMCharacteristicTypePowerState: String
 extern NSString * const HMCharacteristicTypePowerState;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is a Boolean indicating the power state of an accessory. A value of `true` indicates that the accessory is powered on.
 

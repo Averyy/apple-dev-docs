@@ -25,7 +25,7 @@ case cleared
 AVPlayerInterstitialEventAssetListResponseStatusCleared
 ```
 
-#### Discussion
+## Discussion
 
 This status indicates that the interstital event’s [`assetListResponse`](../avplayerinterstitialevent/assetlistresponse.md) property is `nil`.
 

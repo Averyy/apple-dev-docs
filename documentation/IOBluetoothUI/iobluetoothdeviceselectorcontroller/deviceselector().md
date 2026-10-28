@@ -17,11 +17,11 @@ class func deviceSelector() -> IOBluetoothDeviceSelectorController!
 + (IOBluetoothDeviceSelectorController *) deviceSelector;
 ```
 
-#### Return Value
+## Return Value
 
 Success - a new instance of the device selector Controller Failure - nil
 
-#### Discussion
+## Discussion
 
 Method call to instantiate a new IOBluetoothDeviceSelectorController object.
 

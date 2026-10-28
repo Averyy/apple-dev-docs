@@ -19,11 +19,11 @@ func usingColorSpace(_ space: NSColorSpace) -> NSColor?
 - (NSColor *) colorUsingColorSpace:(NSColorSpace *) space;
 ```
 
-#### Return Value
+## Return Value
 
 The new `NSColor` object. This method converts the receiver’s color to an equivalent one in the new color space. Although the new color might have different component values, it looks the same as the original.  Returns `nil` if conversion is not possible.
 
-#### Discussion
+## Discussion
 
 If the receiver’s color space is the same as that specified in `space`, this method returns the same `NSColor` object.
 

@@ -25,7 +25,7 @@ var catalog: CGPDFDictionaryRef? { get }
 extern CGPDFDictionaryRefCGPDFDocumentGetCatalog(CGPDFDocumentRef document);
 ```
 
-#### Discussion
+## Discussion
 
 The entries in a PDF document catalog recursively describe the contents of the PDF document. You can access the contents of a PDF document catalog by calling the function [`catalog`](./catalog.md). For information on accessing PDF metadata, see [Quartz 2D Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/drawingwithquartz2d/Introduction/Introduction.html#//apple_ref/doc/uid/TP30001066).
 

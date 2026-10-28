@@ -25,7 +25,7 @@ static let genericException: NSExceptionName
 extern NSExceptionName const NSGenericException;
 ```
 
-#### Discussion
+## Discussion
 
 You should typically use a more specific exception name.
 

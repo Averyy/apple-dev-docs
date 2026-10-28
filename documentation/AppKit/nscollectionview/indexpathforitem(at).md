@@ -19,11 +19,11 @@ func indexPathForItem(at point: NSPoint) -> IndexPath?
 - (NSIndexPath *) indexPathForItemAtPoint:(NSPoint) point;
 ```
 
-#### Return Value
+## Return Value
 
 The item at the specified point or `nil` if no item was found at that point.
 
-#### Discussion
+## Discussion
 
 This method uses the available layout attributes to determine which item is at the specified point. If more than one item is at the point, this method returns only the top-most item. This method ignores the opacity of the item, so items that are fully transparent are still returned by this method. Hidden items are never returned.
 

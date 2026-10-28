@@ -21,11 +21,11 @@ Retrieves the contents of a given URL and delivers an asynchronous sequence of b
 func bytes(from url: URL, delegate: (any URLSessionTaskDelegate)? = nil) async throws -> (URLSession.AsyncBytes, URLResponse)
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronously-delivered tuple that contains a [`URLSession.AsyncBytes`](./asyncbytes.md) sequence to iterate over, and a [`URLResponse`](../urlresponse.md).
 
-#### Discussion
+## Discussion
 
 Use this method when you want to process the bytes while the transfer is underway. You can use a `for`-`await`-`in` loop to handle each byte. For textual data, use the [`URLSession.AsyncBytes`](./asyncbytes.md) properties [`characters`](../../Swift/asyncsequence/characters.md), [`unicodeScalars`](../../Swift/asyncsequence/unicodescalars.md), or [`lines`](../../Swift/asyncsequence/lines.md) to receive the content as asynchronous sequences of those types.
 

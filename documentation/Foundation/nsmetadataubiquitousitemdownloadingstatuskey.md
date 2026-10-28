@@ -23,7 +23,7 @@ let NSMetadataUbiquitousItemDownloadingStatusKey: String
 extern NSString * const NSMetadataUbiquitousItemDownloadingStatusKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a string constant that indicates the download status of the item.
 

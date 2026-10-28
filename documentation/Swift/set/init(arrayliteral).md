@@ -23,7 +23,7 @@ init(arrayLiteral elements: Element...)
 
 Available when `Element` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 Do not call this initializer directly. It is used by the compiler when you use an array literal. Instead, create a new set using an array literal as its value by enclosing a comma-separated list of values in square brackets. You can use an array literal anywhere a set is expected by the type context.
 

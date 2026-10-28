@@ -23,7 +23,7 @@ var kDNSServiceType_DHCID: Int { get }
 kDNSServiceType_DHCID
 ```
 
-#### Discussion
+## Discussion
 
 DHCP Client Identifier
 

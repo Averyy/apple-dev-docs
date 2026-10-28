@@ -26,7 +26,7 @@ var state: SKDownloadState { get }
 @property (nonatomic, readonly) SKDownloadState state;
 ```
 
-#### Discussion
+## Discussion
 
 After you queue a download object, the payment queue object calls your transaction observer when the state of the download object changes. Your transaction observer should read the [`state`](./state.md) property and use it to determine how to proceed. For more information on the different states, see [`SKDownloadState`](../skdownloadstate.md).
 

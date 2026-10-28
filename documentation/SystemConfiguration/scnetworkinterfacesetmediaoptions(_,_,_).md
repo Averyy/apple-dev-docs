@@ -19,7 +19,7 @@ func SCNetworkInterfaceSetMediaOptions(_ interface: SCNetworkInterface, _ subtyp
 Boolean SCNetworkInterfaceSetMediaOptions(SCNetworkInterfaceRef interface, CFStringRef subtype, CFArrayRef options);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the configuration was updated; `FALSE` if an error occurred.
 

@@ -24,11 +24,11 @@ func indexPathForElement(withModelIdentifier identifier: String, in view: UIView
 - (NSIndexPath *) indexPathForElementWithModelIdentifier:(NSString *) identifier inView:(UIView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The current index of the object whose data matches the value in `identifier`, or `nil` if the object was not found.
 
-#### Discussion
+## Discussion
 
 During state restoration, `view` can call this method to locate objects that aren’t where they were expected to be. This can happen if the number of objects in the table isn’t the same as during the previous launch cycle. The view uses the information to ensure that the rows with the same data are once again selected or scrolled into view, even if those rows are in a different location now.
 

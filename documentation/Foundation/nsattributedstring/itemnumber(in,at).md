@@ -19,7 +19,7 @@ func itemNumber(in list: NSTextList, at location: Int) -> Int
 - (NSInteger) itemNumberInTextList:(NSTextList *) list atIndex:(NSUInteger) location;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the index within the list.
 

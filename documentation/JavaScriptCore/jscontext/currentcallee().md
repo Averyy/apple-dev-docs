@@ -24,11 +24,11 @@ class func currentCallee() -> JSValue!
 + (JSValue *) currentCallee;
 ```
 
-#### Return Value
+## Return Value
 
 The currently executing JavaScript function, or `nil` if not within native code called from JavaScript.
 
-#### Discussion
+## Discussion
 
 Call this method within an Objective-C or Swift block or method invoked from within JavaScript to obtain a [`JSValue`](../jsvalue.md) object representing the JavaScript function responsible for executing that code.
 

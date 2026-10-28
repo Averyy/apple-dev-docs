@@ -21,7 +21,7 @@ Returns a publisher that wraps a URL session data task for a given URL request.
 func dataTaskPublisher(for request: URLRequest) -> URLSession.DataTaskPublisher
 ```
 
-#### Discussion
+## Discussion
 
 The publisher publishes data when the task completes, or terminates if the task fails with an error.
 

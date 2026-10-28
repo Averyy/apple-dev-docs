@@ -20,7 +20,7 @@ Options available to determine the kinds of animation timing.
 enum EmphasisAnimationStyle
 ```
 
-#### Overview
+## Overview
 
 The [`EmphasizeAction`](../emphasizeaction.md) structure accepts this enumeration as an initializer argument.
 

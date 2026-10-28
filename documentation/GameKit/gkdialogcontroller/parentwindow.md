@@ -20,7 +20,7 @@ weak var parentWindow: NSWindow? { get set }
 @property (weak, nullable) NSWindow * parentWindow;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property before presenting a view controller. The window must be at least 800 x 600.
 

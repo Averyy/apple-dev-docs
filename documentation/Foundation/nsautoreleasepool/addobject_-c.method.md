@@ -21,7 +21,7 @@ Adds a given object to the receiver
 - (void) addObject:(id) anObject;
 ```
 
-#### Discussion
+## Discussion
 
 The same object may be added several times to the same pool; when the pool is deallocated, the object will receive a [`release`](../../ObjectiveC/nsobject-c.protocol/release.md) message for each time it was added.
 

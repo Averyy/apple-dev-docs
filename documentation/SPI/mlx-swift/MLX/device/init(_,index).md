@@ -17,7 +17,7 @@ Initialize a new `Device` with a type and optional index.
 init(_ deviceType: DeviceType, index: Int32 = 0)
 ```
 
-#### Discussion
+## Discussion
 
 If `deviceType` is [`DeviceType.cpu`](../devicetype/cpu.md) then index *must* be 0.
 

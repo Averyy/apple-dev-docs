@@ -19,7 +19,7 @@ class FCPXLibrary
 @interface FCPXLibrary : FCPXObject
 ```
 
-#### Overview
+## Overview
 
 An FCPXLibrary object contains a reference to a library that has the current project open in the Final Cut Pro timeline.
 

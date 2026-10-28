@@ -23,11 +23,11 @@ func joined(separator: String = "") -> String
 
 Available when `Element` conforms to `StringProtocol`.
 
-#### Return Value
+## Return Value
 
 A single, concatenated string.
 
-#### Discussion
+## Discussion
 
 The following example shows how an array of strings can be joined to a single, comma-separated string:
 

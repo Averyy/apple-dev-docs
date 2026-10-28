@@ -14,11 +14,11 @@ virtual IOReturn powerStateWillChangeTo(
  IOService *policyMaker );
 ```
 
-#### Return Value
+## Return Value
 
 Returns `IOPMAckImplied` to indicate synchronous completion.
 
-#### Overview
+## Overview
 
 The `controllerWillChangePowerState()` method is called by this handler. Subclasses are not expected to override this method.
 

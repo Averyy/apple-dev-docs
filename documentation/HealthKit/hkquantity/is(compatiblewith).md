@@ -24,11 +24,11 @@ func `is`(compatibleWith unit: HKUnit) -> Bool
 - (BOOL) isCompatibleWithUnit:(HKUnit *) unit;
 ```
 
-#### Return Value
+## Return Value
 
 `Yes` if the quantity is compatible; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Individual units are compatible if they measure the same feature. For example, all length units are compatible. All mass units are also compatible. However, a length unit is not compatible with a mass unit.
 

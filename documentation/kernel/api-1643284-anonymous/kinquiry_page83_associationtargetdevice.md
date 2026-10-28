@@ -13,7 +13,7 @@
 kINQUIRY_Page83_AssociationTargetDevice = 0x20
 ```
 
-#### Discussion
+## Discussion
 
 Association of the identifier is with the target device (i.e. all ports).
 

@@ -23,11 +23,11 @@ func initialLayoutAttributesForAppearingItem(at itemIndexPath: IndexPath) -> UIC
 - (UICollectionViewLayoutAttributes *) initialLayoutAttributesForAppearingItemAtIndexPath:(NSIndexPath *) itemIndexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A layout attributes object that describes the position at which to place the corresponding cell.
 
-#### Discussion
+## Discussion
 
 This method is called after the [`prepare(forCollectionViewUpdates:)`](./prepare%28forcollectionviewupdates%29.md) method and before the [`finalizeCollectionViewUpdates()`](./finalizecollectionviewupdates%28%29.md) method for any items that are about to be inserted. Your implementation should return the layout information that describes the initial position and state of the item. The collection view uses this information as the starting point for any animations. (The end point of the animation is the item’s new location in the collection view.) If you return `nil`, the layout object uses the item’s final attributes for both the start and end points of the animation.
 

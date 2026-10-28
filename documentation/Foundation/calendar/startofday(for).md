@@ -21,11 +21,11 @@ Returns the first moment of a given Date, as a Date.
 func startOfDay(for date: Date) -> Date
 ```
 
-#### Return Value
+## Return Value
 
 The first moment of the given date.
 
-#### Discussion
+## Discussion
 
 For example, pass in `Date()`, if you want the start of today. If there were two midnights, it returns the first.  If there was none, it returns the first moment that did exist.
 

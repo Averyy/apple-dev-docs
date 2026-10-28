@@ -18,4 +18,4 @@ init(promptTokenCount: Int, cachedPromptTokenCount: Int = 0, generationTokenCoun
 
 ---
 
-*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxlmcommon/generatecompletioninfo/init(prompttokencount:cachedprompttokencount:generationtokencount:evictedtokencount:reasoningtokencount:answertokencount:prompttime:generationtime:stopreason:proposeddrafttokens:accepteddrafttokens:passthroughreason:speculativedecodingtelem-vu3q)*
+*[View on Swift Package Index](https://swiftpackageindex.com/ml-explore/mlx-swift-lm/main/documentation/mlxlmcommon/generatecompletioninfo/init%28prompttokencount:cachedprompttokencount:generationtokencount:evictedtokencount:reasoningtokencount:answertokencount:prompttime:generationtime:stopreason:proposeddrafttokens:accepteddrafttokens:passthroughreason:speculativedecodingtelem-vu3q)*

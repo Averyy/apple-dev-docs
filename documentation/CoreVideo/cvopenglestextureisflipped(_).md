@@ -23,7 +23,7 @@ func CVOpenGLESTextureIsFlipped(_ image: CVOpenGLESTexture) -> Bool
 extern Boolean CVOpenGLESTextureIsFlipped(CVOpenGLESTextureRef image);
 ```
 
-#### Return Value
+## Return Value
 
 `True` if `{0,0}` represents the upper left of the texture; otherwise `False` if `{0,0}` represents the lower left of the texture.
 

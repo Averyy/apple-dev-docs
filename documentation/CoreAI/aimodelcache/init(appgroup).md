@@ -23,11 +23,11 @@ init?(appGroup groupIdentifier: String)
 
 - [Managing model specialization and caching](../managing-model-specialization-and-caching.md)
 
-#### Return Value
+## Return Value
 
 The shared app group cache, or `nil` when the group identifier is invalid (on iOS), the app group container cannot be accessed, or entitlement checks fail.
 
-#### Discussion
+## Discussion
 
 Use this initializer when multiple apps within an app group need to share a cache for their specialized assets. This allows all apps within an app group to avoid each performing their own specialization for a shared model.
 

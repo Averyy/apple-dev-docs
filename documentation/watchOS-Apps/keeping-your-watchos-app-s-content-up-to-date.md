@@ -5,13 +5,13 @@
 
 Ensure that your app’s content is relevant and up to date.
 
-#### Overview
+## Overview
 
 A watchOS app rarely runs in isolation; it needs data from the outside world. You can access data directly from a web service, CloudKit, or other online resources. You can also share data from a paired iPhone, although this can’t be your app’s primary way of accessing data.
 
 Because Apple Watch has several ways to connect to the internet, it’s important to test all of your app’s networking code over all possible routes.
 
-##### Access data directly
+### Access data directly
 
 Your watchOS app can connect directly to web services and other online sources. When making these requests, the system can send data through a paired iPhone as a proxy, over a known Wi-Fi network, or over the watch’s own cellular connection (see Test Your Update Code with Different Configurations below).
 
@@ -26,7 +26,7 @@ Background sessions, on the other hand, guarantee that your app eventually recei
 
 To learn more about using URL sessions, see [URL Loading System](../Foundation/url-loading-system.md).
 
-##### Use CloudKit to store data in the cloud
+### Use CloudKit to store data in the cloud
 
 CloudKit lets you save data in an iCloud container, sharing that data across all the user’s iCloud-connected devices. For example, you could use CloudKit to share your app’s settings or sync the user’s current location in a long-form audio file. CloudKit also lets you create cloud-based apps without having to set up and manage your own servers.
 
@@ -38,7 +38,7 @@ CloudKit offers the following advantages:
 
 CloudKit includes support for [`CKSubscription`](../CloudKit/cksubscription.md) and notifications in watchOS 6 and later, letting your watchOS app respond to changes from other devices. This makes CloudKit a potential replacement for Watch Connectivity for independent apps. For more information, see [CloudKit](../CloudKit/CloudKit.md).
 
-##### Share data with the paired iPhone
+### Share data with the paired iPhone
 
 While your watchOS app can schedule periodic background tasks to update its information, these tasks are strictly limited — both in the number of times your app can wake per day, and in the amount of time it can run when it wakes. Additionally, your app isn’t guaranteed to receive background execution time. The system gives priority to apps with a complication in the active watch face and apps in the dock.
 
@@ -52,7 +52,7 @@ However, WatchConnectivity isn’t always available. In watchOS 6 and later, use
 
 For more information on using background refresh tasks, see [`WKApplicationRefreshBackgroundTask`](../WatchKit/wkapplicationrefreshbackgroundtask.md). For more on the WatchConnectivity framework, see [`WCSession`](../WatchConnectivity/wcsession.md).
 
-##### Test your update code with different configurations
+### Test your update code with different configurations
 
 When your watchOS app connects to CloudKit or interacts with online resources using a URL session request, the system can route the request in one of three ways. While developing your app, make sure to test your network requests over all three routes. The system can route the request by:
 

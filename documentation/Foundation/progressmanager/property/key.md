@@ -22,11 +22,11 @@ A unique identifier for this property type.
 static var key: String { get }
 ```
 
-#### Return Value
+## Return Value
 
 A unique string identifier for this property type.
 
-#### Discussion
+## Discussion
 
 The key should use reverse DNS style notation to ensure uniqueness across different frameworks and applications.
 

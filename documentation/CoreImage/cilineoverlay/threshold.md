@@ -25,7 +25,7 @@ var threshold: Float { get set }
 @property (nonatomic) float threshold;
 ```
 
-#### Discussion
+## Discussion
 
 Larger values thin out the edges.
 

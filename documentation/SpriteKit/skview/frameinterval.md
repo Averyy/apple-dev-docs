@@ -24,7 +24,7 @@ var frameInterval: Int { get set }
 @property (nonatomic) NSInteger frameInterval;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1`, which results in your game being notified at the refresh rate of the display. If the value is set to a value larger than `1`, the display link notifies your game at a fraction of the native refresh rate. For example, setting the interval to `2` causes the scene to be called every other frame, providing half the frame rate.
 

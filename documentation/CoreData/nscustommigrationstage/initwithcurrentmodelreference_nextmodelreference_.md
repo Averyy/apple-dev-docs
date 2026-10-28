@@ -21,7 +21,7 @@ Creates a custom migration stage with the specified source and destination model
 - (instancetype) initWithCurrentModelReference:(NSManagedObjectModelReference *) currentModel nextModelReference:(NSManagedObjectModelReference *) nextModel;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized custom migration stage, or `nil` if Core Data can’t create one.
 

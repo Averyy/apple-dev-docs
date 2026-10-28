@@ -25,7 +25,7 @@ var aid: Data? { get }
 @property (readonly, nullable) NSData * AID;
 ```
 
-#### Discussion
+## Discussion
 
 This value is specified in the Smart Card token extension’s `NSExtensionAttributes` property list by the `com.apple.ctk.aid` attribute. If this attribute specifies multiple AIDs, this parameter represents the application identifier found on the card that is already preselected.  If the `com.apple.ctk.aid` attribute is not present, no application is automatically preselected and the value of this property is `nil`.
 

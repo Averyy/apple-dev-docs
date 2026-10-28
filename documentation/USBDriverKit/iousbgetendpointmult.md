@@ -15,11 +15,11 @@ Extracts the mult count from endpoint descriptors.
 uint8_t IOUSBGetEndpointMult(uint32_t usbDeviceSpeed, const IOUSBEndpointDescriptor *descriptor, const IOUSBSuperSpeedEndpointCompanionDescriptor *companionDescriptor, const IOUSBSuperSpeedPlusIsochronousEndpointCompanionDescriptor *sspCompanionDescriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The mult count.
 
-#### Discussion
+## Discussion
 
 This method parses endpoint descriptors to determine mult.
 

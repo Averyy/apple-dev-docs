@@ -5,7 +5,7 @@
 
 Display app intents and app entities visually using snippets, and associate intents and entities with your app’s scenes and views.
 
-#### Overview
+## Overview
 
 When you return a result from your app intent, you can include a snippet to display on the person’s device. A snippet is an interface element that displays static or interactive content. Siri, Spotlight, and the Shortcuts app display snippets when it’s appropriate to provide feedback visually. For interactive snippets, the buttons and controls in the snippet run other app intents to make the necessary changes.
 

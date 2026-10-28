@@ -5,7 +5,7 @@
 
 Use HTML formatting for text components.
 
-#### Overview
+## Overview
 
 Apple News Format supports a subset of HTML tags. You can use HTML tags in these components by setting their `format` property to `html`.
 
@@ -25,7 +25,7 @@ In addition to the components above, you can also use HTML tags to format text i
 
 To include an HTML table in your article, see [Adding an HTML Table](./adding-an-html-table.md).
 
-##### Example
+### Example
 
 ```json
 {
@@ -35,7 +35,7 @@ To include an HTML table in your article, see [Adding an HTML Table](./adding-an
 }
 ```
 
-##### Supported HTML Tags
+### Supported HTML Tags
 
 This section describes how to use the HTML tags Apple News Format supports.
 
@@ -178,7 +178,7 @@ You can use `<aside>` tags to define a section of the text that is related to, b
 
 To set off a long quotation (or any text) in your article, you can use the HTML `<blockquote>` tag. However, if you want to use different margins for your block quote, use the Apple News Format [`Quote`](../AppleNewsFormat/quote.md) component instead.
 
-##### Text Styling
+### Text Styling
 
 You can change the appearance of text in your article using styles from Apple News Format, HTML tags, or a combination of both. The following sections show you how to use HTML with Apple News Format text styles.
 
@@ -224,7 +224,7 @@ Apple News Format ignores most attributes on your HTML tags, but there are some 
 - The `href` attribute of the `<a>` tag
 - The `data-anf-textstyle` attribute on all supported tags
 
-##### Unsupported HTML Tags
+### Unsupported HTML Tags
 
 The following is a list of unsupported HTML tags. Apple News Format rejects articles that contain HTML formatting with these tags.
 

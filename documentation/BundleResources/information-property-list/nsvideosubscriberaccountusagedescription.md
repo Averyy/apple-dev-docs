@@ -14,7 +14,7 @@ A message that tells people why the app is requesting access to their TV provide
 - **Name**: `NSVideoSubscriberAccountUsageDescription` (Privacy - Video Subscriber Account Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the user’s TV provider account.
 

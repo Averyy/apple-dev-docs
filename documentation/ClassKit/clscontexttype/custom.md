@@ -23,7 +23,7 @@ case custom
 CLSContextTypeCustom
 ```
 
-#### Discussion
+## Discussion
 
 If you use the [`CLSContextType.custom`](./custom.md) type, you can provide a user-visible name for the type by setting the [`customTypeName`](../clscontext/customtypename.md) property.
 

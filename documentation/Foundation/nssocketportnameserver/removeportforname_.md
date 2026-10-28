@@ -17,11 +17,11 @@ Unregisters the port for a given name on the local host.
 - (BOOL) removePortForName:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If the operation is successful, the port can no longer be looked up using the name `portName`. Other applications that already have a reference to the port can continue to use it until it becomes invalid.
 

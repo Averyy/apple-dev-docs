@@ -25,7 +25,7 @@ case inProgress
 INAppendToNoteIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 Return this code if you began updating the note but didn’t receive a confirmation of the update. You might use this code when a server handles note modification and you’ve not yet received a confirmation from that server.
 

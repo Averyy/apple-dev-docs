@@ -22,7 +22,7 @@ var isLivePhotoCaptureEnabled: Bool { get set }
 @property (nonatomic, getter=isLivePhotoCaptureEnabled) BOOL livePhotoCaptureEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 This value defaults to [`false`](../../Swift/false.md). Changing this value while your session is running requires a lengthy reconfiguration of the capture render pipeline. If you intend to take any Live Photo captures, set this value to [`true`](../../Swift/true.md) before calling [`AVCaptureSession`](../avcapturesession.md) [`startRunning()`](../avcapturesession/startrunning%28%29.md). If you change this property while the session is running, in-progress Live Photo captures end immediately, unfulfilled photo requests cancel, and the video preview temporarily freezes.
 

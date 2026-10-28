@@ -5,23 +5,23 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 13.1 SDK provides support for developing apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 13.1. The SDK comes bundled with Xcode 11. For information on the compatibility requirements for Xcode 11, see [Xcode 11 Release Notes](../Xcode-Release-Notes/xcode-11-release-notes.md).
 
-##### General
+### General
 
-###### Known Issues
+#### Known Issues
 
 - Snapshots for apps that use Metal might have an unexpected appearance in the App Switcher. (53121694)
 
-###### Deprecations
+#### Deprecations
 
 - The [`UIApplicationExitsOnSuspend`](../BundleResources/information-property-list/uiapplicationexitsonsuspend.md) key is no longer supported in iOS & iPadOS 13. Update your apps to handle modern multitasking. (43958234)
 
-##### Audio
+### Audio
 
-###### New Features
+#### New Features
 
 - Voice Processing mode can now be enabled on [`AVAudioEngine`](../AVFAudio/avaudioengine.md). (50906329)
 - New [`AVAudioNode`](../AVFAudio/avaudionode.md) types can be used to wrap a user-defined block for sending or receiving data in real time.
@@ -32,7 +32,7 @@ The iOS & iPadOS 13.1 SDK provides support for developing apps for iPhone, iPad,
 - [`AVAudioSession.RouteSharingPolicy`](../AVFAudio/avaudiosession/routesharingpolicy-swift.enum.md) now permits apps to specify route-sharing policies so their audio and video routes to the same location as AirPlay.
 - Audio Unit Extensions now support user presets that are available across all host applications.
 
-###### Deprecations
+#### Deprecations
 
 - The OpenAL framework is deprecated and remains present for compatibility purposes. Transition to [`AVAudioEngine`](../AVFAudio/avaudioengine.md) for spatial audio functionality.
 - [`AUGraph`](../AudioToolbox/augraph.md) is deprecated in favor of [`AVAudioEngine`](../AVFAudio/avaudioengine.md).
@@ -40,21 +40,21 @@ The iOS & iPadOS 13.1 SDK provides support for developing apps for iPhone, iPad,
 - Carbon component-based Audio Units are deprecated and support will be removed in a future release.
 - Legacy Core Audio HAL audio hardware plug-ins are no longer supported.  Use audio server plug-ins for audio drivers moving forward.
 
-##### Audio Sharing
+### Audio Sharing
 
-###### New Features
+#### New Features
 
 - Audio sharing is compatible with AirPods (1st generation or later) and PowerBeats Pro. iPhone 8 or later, iPad Pro 12.9-inch (2nd generation or later), iPad Pro 11-inch, iPad Pro 10.5-inch, iPad (5th generation or later), iPad Air (3rd generation), iPad mini (5th generation), or iPod touch (7th generation or later) is required. (51331268)
 
-##### AVFoundation
+### AVFoundation
 
-###### New Features
+#### New Features
 
 - [AVFoundation](../AVFoundation/AVFoundation.md) now supports encoding video with alpha channels using HEVC.  Videos encoded in this manner are broadly supported in AVFoundation APIs, and by Safari within web pages. Technical details of the format can be found in the Interoperability Profile specification. (8045917)
 
-##### Core Haptics
+### Core Haptics
 
-###### Known Issues
+#### Known Issues
 
 - By default, haptics are disabled when microphone recording begins. You can override this by setting the [`AVAudioSession`](../AVFAudio/avaudiosession.md) property [`allowHapticsAndSystemSoundsDuringRecording`](../AVFAudio/avaudiosession/allowhapticsandsystemsoundsduringrecording.md) to `true` before activating its audio session. (25811898)
 - Events — such as [`audioContinuous`](../CoreHaptics/chhapticevent/eventtype/audiocontinuous.md), [`hapticContinuous`](../CoreHaptics/chhapticevent/eventtype/hapticcontinuous.md), and [`audioCustom`](../CoreHaptics/chhapticevent/eventtype/audiocustom.md) — can’t be resumed during the event; no output occurs for that event, only for subsequent events. This applies to playback at a specific time offset, seeking, and resuming. (29274583)
@@ -67,9 +67,9 @@ The iOS & iPadOS 13.1 SDK provides support for developing apps for iPhone, iPad,
 - The maximum duration for a [`hapticContinuous`](../CoreHaptics/chhapticevent/eventtype/hapticcontinuous.md) haptic event is 30 seconds. Events exceeding this limit can be constructed and accepted by [`CHHapticPatternPlayer`](../CoreHaptics/chhapticpatternplayer.md), but haptic playback will fade out after 30 seconds. (51322525)
 - There is a limit of 16 control points for any type of Parameter Curve. If more control points are desired, create additional parameter curves for consecutive windows of time for the same parameter. (49486454)
 
-##### Core Image
+### Core Image
 
-###### New Features
+#### New Features
 
 - The [`init(imageURL:options:)`](../CoreImage/cifilter-swift.class/init%28imageurl,options%29.md) and [`init(imageData:options:)`](../CoreImage/cifilter-swift.class/init%28imagedata,options%29.md) initializers no longer support RAW version 5 and earlier. Version 6 and later remain supported. (50911303)
 - Added new APIs for instantiating and modifying the built-in Core Image filters.
@@ -78,15 +78,15 @@ The iOS & iPadOS 13.1 SDK provides support for developing apps for iPhone, iPad,
 - Metal [`CIKernel`](../CoreImage/cikernel.md) instances support returning a group of 2 × 2 pixels.
 - The integer values of [`CIFormat`](../CoreImage/ciformat.md) symbols, such as [`ARGB8`](../CoreImage/ciformat/argb8.md), have changed to a new set of values that are consistent across platforms. The former values remain supported for backward compatibility; however, you should avoid dependancies on specific numerical values.
 
-##### Find My
+### Find My
 
-###### Known Issues
+#### Known Issues
 
 - When performing an action in Find My that generates an email, you might see references to the Find My Friends and Find My iPhone apps. (51123613)
 
-##### iCloud
+### iCloud
 
-###### Known Issues
+#### Known Issues
 
 - You might be unable to delete the Recovered Files folder in On My iPad/iPhone. (54785368)
 
@@ -96,21 +96,21 @@ The iOS & iPadOS 13.1 SDK provides support for developing apps for iPhone, iPad,
 
   **Workaround:** Close and reopen the document.
 
-##### Mail
+### Mail
 
-###### New Features
+#### New Features
 
 - Ignore Blocked Senders can now be enabled in Settings > Mail. The blocked contacts list is shared with Messages, FaceTime, and Phone. (50775961)
 
-##### Metal
+### Metal
 
-###### Known Issues
+#### Known Issues
 
 - In iOS 13, if you refer to a sparse texture in an argument buffer you must explicitly call [`useResource(_:usage:stages:)`](../Metal/mtlrendercommandencoder/useresource%28_,usage,stages%29.md) on the texture rather than calling [`useHeap(_:)`](../Metal/mtlrendercommandencoder/useheap%28_%29.md) on the heap. (54605833)
 
-##### Networking
+### Networking
 
-###### New Features
+#### New Features
 
 - To enhance security, [`URLSession`](../Foundation/urlsession.md) no longer sniffs the MIME type when the server sends `Content-Type: application/octet-stream`. (7820658)
 - [`NSURLRequest.CachePolicy.reloadRevalidatingCacheData`](../Foundation/nsurlrequest/cachepolicy-swift.enum/reloadrevalidatingcachedata.md) and [`NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData`](../Foundation/nsurlrequest/cachepolicy-swift.enum/reloadignoringlocalandremotecachedata.md) APIs are now available. (49660334)
@@ -118,34 +118,34 @@ The iOS & iPadOS 13.1 SDK provides support for developing apps for iPhone, iPad,
 - The [`CNCopyCurrentNetworkInfo`](../SystemConfiguration/cncopycurrentnetworkinfo.md) API has changed to address privacy. Please refer to the updated API documentation and headers for more details. (52707167)
 - All [`URLSessionTask`](../Foundation/urlsessiontask.md) instances with a `GET` HTTP method that contain a body now produce the error [`NSURLErrorDataLengthExceedsMaximum`](../Foundation/nsurlerrordatalengthexceedsmaximum-swift.var.md). (46025234)
 
-###### Deprecations
+#### Deprecations
 
 - Removed support for FTP and File URL schemes for Proxy Automatic Configuration (PAC). HTTP and HTTPS are the only supported URL schemes for PAC. This affects all PAC configurations including, but not limited to, configurations set using Settings, System Preferences, Profiles, and [`URLSession`](../Foundation/urlsession.md) APIs such as [`connectionProxyDictionary`](../Foundation/urlsessionconfiguration/connectionproxydictionary.md) and [`CFNetworkExecuteProxyAutoConfigurationURL(_:_:_:_:)`](../CFNetwork/cfnetworkexecuteproxyautoconfigurationurl%28_,_,_,_%29.md). (28578280)
 - The [`URLSession`](../Foundation/urlsession.md) and [`NSURLConnection`](../Foundation/nsurlconnection.md) APIs no longer support SPDY. Servers should use HTTP 2 or HTTP 1.1. (43391641)
 
-##### RealityKit
+### RealityKit
 
-###### Known Issues
+#### Known Issues
 
 - The camera feed will remain visible at the base of objects loaded from a Reality File when [`ARView.Environment.Background`](../RealityKit/arview/environment-swift.struct/background-swift.struct.md) is set to `ARView.Environment.Background.skybox(_:)` (53715030)
 
   **Workaround**: Turn off grounding shadows when setting the background to `ARView.Environment.Background.skybox(_:)` by setting [`ARView.RenderOptions`](../RealityKit/arview/renderoptions-swift.struct.md) to [`disableGroundingShadows`](../RealityKit/arview/renderoptions-swift.struct/disablegroundingshadows.md).
 
-##### Screen Time
+### Screen Time
 
-###### Known Issues
+#### Known Issues
 
 - If you enable Share Across Devices, Screen Time settings don’t sync with iCloud until your iOS device is restarted. Any edits you make to your Screen Time settings on that device before restarting are lost. (50194586)
 
-##### Sidecar
+### Sidecar
 
-###### Known Issues
+#### Known Issues
 
 - To use Sidecar with iPadOS 13.1 beta 2 or later, macOS Catalina Beta 8 or later is required. (54903543)
 
-##### Siri
+### Siri
 
-###### Known Issues
+#### Known Issues
 
 - The [`supportsOnDeviceRecognition`](../Speech/sfspeechrecognizer/supportsondevicerecognition.md) property always returns `false` the first time it’s accessed. After a few seconds, accessing it again returns the correct value. (47822242)
 - Shortcuts opened on iOS & iPadOS 13 beta are automatically upgraded and can no longer be opened on iOS 12. If a device with iOS 12 and a device with iOS 13 share an iCloud account, shortcuts might become unusable on the device running iOS 12. (50873839)
@@ -153,9 +153,9 @@ The iOS & iPadOS 13.1 SDK provides support for developing apps for iPhone, iPad,
   **Workaround:** Disable iCloud Sync between devices running iOS & iPadOS 13 beta and devices running iOS 12.
 - Currently, the only supported response for `INSearchForMediaIntent` is `continueInApp`. (51010311)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - You can now create a [`Color`](../SwiftUI/color.md) from a [`UIColor`](../UIKit/uicolor.md) or [`NSColor`](../AppKit/nscolor.md). (49833933)
 - [`NSManagedObject`](../CoreData/nsmanagedobject.md) now conforms to [`ObservableObject`](../Combine/observableobject.md). The new `@`[`FetchRequest`](../SwiftUI/fetchrequest.md) property wrapper can drive views from the results of a fetch request, and [`managedObjectContext`](../SwiftUI/environmentvalues/managedobjectcontext.md) is now included in the environment. (50280673)
@@ -221,13 +221,13 @@ The iOS & iPadOS 13.1 SDK provides support for developing apps for iPhone, iPad,
   .navigationViewStyle(DoubleColumnNavigationViewStyle())
   ```
 
-###### Known Issues
+#### Known Issues
 
 - Apps containing SwiftUI inside a Swift package might not run on versions of iOS earlier than iOS 13. (53706729)
 
   **Workaround**: When back-deploying to an OS which doesn’t contain the SwiftUI framework, add the `-weak_framework SwiftUI` flag to the Other Linker Flags setting in the Build Settings tab. See [Frameworks and Weak Linking](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPFrameworks/Concepts/WeakLinking.html#//apple_ref/doc/uid/20002378) for more information on weak linking a framework. This workaround doesn’t apply when using dynamically linked Swift packages which import SwiftUI.
 
-###### Deprecations
+#### Deprecations
 
 - SwiftUI APIs deprecated in previous betas are now removed. (52587863, 53310683)
 - `NavigationDestinationLink` and `DynamicNavigationDestinationLink` are deprecated; their functionality is now included in [`NavigationLink`](../SwiftUI/navigationlink.md). (50630794)
@@ -353,15 +353,15 @@ The iOS & iPadOS 13.1 SDK provides support for developing apps for iPhone, iPad,
   ```
 - The `relativeWidth(_:)`, `relativeHeight(_:)`, and `relativeSize(width:height:)` modifiers are deprecated. Use other modifiers like [`frame(minWidth:idealWidth:maxWidth:minHeight:idealHeight:maxHeight:alignment:)`](../SwiftUI/view/frame%28minwidth,idealwidth,maxwidth,minheight,idealheight,maxheight,alignment%29.md) instead. (51494692)
 
-##### Third-Party Apps
+### Third-Party Apps
 
-###### Known Issues
+#### Known Issues
 
 - You might be unable to stream to a Chromecast device. (51334673)
 
-##### UIKit
+### UIKit
 
-###### New Features
+#### New Features
 
 - The [`UITableViewCell`](../UIKit/uitableviewcell.md) class no longer changes the [`backgroundColor`](../UIKit/uiview/backgroundcolor.md) or [`isOpaque`](../UIKit/uiview/isopaque.md) properties of the [`contentView`](../UIKit/uitableviewcell/contentview.md) and any of its subviews when cells become highlighted or selected. If you are setting an opaque `backgroundColor` on any subviews of the cell inside (and including) the `contentView`, the appearance when the cell becomes highlighted or selected might be affected. The simplest way to resolve any issues with your subviews is to ensure their `backgroundColor` is set to `nil` or [`clear`](../UIKit/uicolor/clear.md), and their `opaque` property is `false`. However, if needed you can override the [`setHighlighted(_:animated:)`](../UIKit/uitableviewcell/sethighlighted%28_,animated%29.md) and [`setSelected(_:animated:)`](../UIKit/uitableviewcell/setselected%28_,animated%29.md) methods to manually change these properties on your subviews when moving to or from the highlighted and selected states. (13955336)
 - Since iOS 8, using [`UISearchController`](../UIKit/uisearchcontroller.md) with [`UINavigationController`](../UIKit/uinavigationcontroller.md) has required setting the [`definesPresentationContext`](../UIKit/uiviewcontroller/definespresentationcontext.md) property of the top view controller to `true`. Failure to do so leads to subtle bugs that can be hard to detect and debug. Starting in iOS & iPadOS 13 beta, if a view controller’s [`navigationItem`](../UIKit/uiviewcontroller/navigationitem.md) has a non-`nil` [`searchController`](../UIKit/uinavigationitem/searchcontroller.md), when the view controller is shown in a navigation controller, [`UINavigationController`](../UIKit/uinavigationcontroller.md) automatically sets that view controller’s [`definesPresentationContext`](../UIKit/uiviewcontroller/definespresentationcontext.md) property to `true`. If you are targeting earlier versions of iOS, set this property before your search controller becomes active. (31338934)
@@ -373,25 +373,25 @@ The iOS & iPadOS 13.1 SDK provides support for developing apps for iPhone, iPad,
 - The [`UITableViewCell`](../UIKit/uitableviewcell.md) class’s [`contentView`](../UIKit/uitableviewcell/contentview.md) property is always laid out edge-to-edge with adjacent accessories, both on the leading and the trailing side. This streamlines the layout code so developers who want the correct default offset no longer have to align their content with the content view border or the layout margin depending on whether there is an accessory on the trailing side or not. You should now always lay out their code on the layout margins of the cell’s content view to get the default system insets. These insets will be adjusted automatically based on the accessories visible in the cell to match the system’s default spacing. (48214114)
 - You can now invoke a custom initializer from a creation block that’s passed through [`instantiateInitialViewController(creator:)`](../UIKit/uistoryboard/instantiateinitialviewcontroller%28creator%29.md) or [`instantiateViewController(identifier:creator:)`](../UIKit/uistoryboard/instantiateviewcontroller%28identifier,creator%29.md). This makes it possible for you to initialize view controllers with additional context and arguments, while taking advantage of defining them in a storyboard through Interface Builder. A custom controller initializer must call its `super.init(coder:)` method and pass the coder argument that it receives through the creation block. (48313869)
 
-###### Known Issues
+#### Known Issues
 
 - Specifying `UIWindowScene.DestructionRequestOptions` in Swift is currently unavailable. (51036709)
 
-##### Voice Analytics
+### Voice Analytics
 
-###### Known Issues
+#### Known Issues
 
 - Voice Analytics is currently available only when using server based speech recognition. (53604093)
 
-##### Watch
+### Watch
 
-###### Known Issues
+#### Known Issues
 
 - Complications might disappear from Apple Watch after updating to iOS 13 beta or later if your watch isn’t running watchOS 6 beta or later. (50507942)
 
-##### Xcode
+### Xcode
 
-###### New Features
+#### New Features
 
 - [`CAMetalLayer`](../QuartzCore/cametallayer.md) is now available in Simulator. (45101325)
 

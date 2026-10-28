@@ -25,7 +25,7 @@ func vvpowsf(_: UnsafeMutablePointer<Float>, _: UnsafePointer<Float>, _: UnsafeP
 void vvpowsf(float *, const float *, const float *, const int *);
 ```
 
-##### Parameters
+### Parameters
 
 - **z**: (output) Output vector of size `*n`. `z[i]` is set to `pow(x[i], y)`.
 - **y**: (input)  Input scalar, exponent in calculation.

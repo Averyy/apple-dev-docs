@@ -25,11 +25,11 @@ func string(fromJoules numberInJoules: Double) -> String
 - (NSString *) stringFromJoules:(double) numberInJoules;
 ```
 
-#### Return Value
+## Return Value
 
 A string that combines a value and a unit string appropriate for the formatter’s locale.
 
-#### Discussion
+## Discussion
 
 This method converts the provided value in joules into units appropriate to the formatter’s locale.
 

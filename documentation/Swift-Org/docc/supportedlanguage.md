@@ -20,7 +20,7 @@ A directive that controls what programming languages an article is available in.
 @SupportedLanguage(_ language: SourceLanguage)
 ```
 
-#### Overview
+## Overview
 
 By default, an article is available in the languages the module that’s being documented is available in. Use this directive to override this behavior in a [`Metadata`](./metadata.md) directive:
 

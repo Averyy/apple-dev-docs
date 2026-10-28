@@ -21,7 +21,7 @@ init(gridButtons: [CPGridButton])
 - (instancetype) initWithGridButtons:(NSArray<CPGridButton *> *) gridButtons;
 ```
 
-#### Return Value
+## Return Value
 
 A panel item configured with the specified grid buttons.
 

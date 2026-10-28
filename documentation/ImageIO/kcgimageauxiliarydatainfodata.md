@@ -25,7 +25,7 @@ let kCGImageAuxiliaryDataInfoData: CFString
 extern CFStringRef const kCGImageAuxiliaryDataInfoData;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a [`CFData`](../CoreFoundation/cfdata.md). Use the [`kCGImagePropertyAuxiliaryDataType`](./kcgimagepropertyauxiliarydatatype.md) property to determine the format of this data.
 

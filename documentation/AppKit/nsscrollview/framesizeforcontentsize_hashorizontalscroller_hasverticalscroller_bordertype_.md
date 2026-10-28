@@ -17,11 +17,11 @@ Returns the frame size of an scroll view that contains a content view with the s
 + (NSSize) frameSizeForContentSize:(NSSize) cSize hasHorizontalScroller:(BOOL) hFlag hasVerticalScroller:(BOOL) vFlag borderType:(NSBorderType) type;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the frame size.
 
-#### Discussion
+## Discussion
 
 For an existing scroll view, you can simply use the `frame` method and extract its size.
 

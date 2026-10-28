@@ -5,11 +5,11 @@
 
 Specify which mipmaps that the data transfer affects.
 
-#### Overview
+## Overview
 
 When you copy data between resources, and the source or destination is a texture, specify which mipmaps that the data transfer affects.
 
-##### Copy data from system memory to a mipmap
+### Copy data from system memory to a mipmap
 
 When you copy data from system memory into a texture, using the [`replace(region:mipmapLevel:withBytes:bytesPerRow:)`](./mtltexture/replace%28region,mipmaplevel,withbytes,bytesperrow%29.md) or similar method, state which mipmap is the destination of that copy.
 
@@ -40,7 +40,7 @@ MTLRegion region = {
 
 Call this routine once for each mipmap you want to fill, changing the region to match the size of the mipmap level you’re writing to.
 
-##### Copy mipmap data between Metal resources
+### Copy mipmap data between Metal resources
 
 If you already have data in Metal resources, use an [`MTLBlitCommandEncoder`](./mtlblitcommandencoder.md) to copy data to and from different mipmaps in a texture.
 

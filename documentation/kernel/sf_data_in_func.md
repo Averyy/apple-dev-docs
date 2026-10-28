@@ -13,11 +13,11 @@
 typedef errno_t (*sf_data_in_func)(void *cookie, socket_t so, const struct sockaddr *from, mbuf_t *data, mbuf_t *control, sflt_data_flag_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 Return: 0 - The caller will continue with normal processing of the data. EJUSTRETURN - The caller will stop processing the data, the data will not be freed. Anything Else - The caller will free the data and stop processing.
 
-#### Discussion
+## Discussion
 
 sf_data_in_func is called to filter incoming data. If your filter intercepts data for later reinjection, it must queue all incoming data to preserve the order of the data. Use sock_inject_data_in to later reinject this data if you return EJUSTRETURN. Warning: This filter is on the data path. Do not spend excesive time. Do not wait for data on another socket.
 

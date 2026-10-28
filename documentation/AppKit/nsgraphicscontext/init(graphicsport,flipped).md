@@ -21,7 +21,7 @@ init(graphicsPort: UnsafeMutableRawPointer, flipped initialFlippedState: Bool)
 + (NSGraphicsContext *) graphicsContextWithGraphicsPort:(void *) graphicsPort flipped:(BOOL) initialFlippedState;
 ```
 
-#### Return Value
+## Return Value
 
 The created [`NSGraphicsContext`](../nsgraphicscontext.md) object, or `nil` if the object could not be created.
 

@@ -21,7 +21,7 @@ Creates a new configuration that interactively interpolates the transition’s e
 static func interactive(timingCurve: UnitCurve = .easeInOut) -> ScrollTransitionConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A configuration that interactively interpolates between transition phases based on the current scroll position.
 

@@ -25,7 +25,7 @@ class AXCustomContent
 @interface AXCustomContent : NSObject
 ```
 
-#### Overview
+## Overview
 
 An `AXCustomContent` object contains the accessibility strings for the labels you apply to your accessibility content. Combine them with the [`AXCustomContentProvider`](./axcustomcontentprovider.md) protocol to allow your users to experience the content in a more appropriate manner for each assistive technology.
 

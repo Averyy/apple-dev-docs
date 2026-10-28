@@ -31,7 +31,7 @@ var anchorPoint: CGPoint { get set }
 - [Drawing SpriteKit Content in a View](../drawing-spritekit-content-in-a-view.md)
 - [Getting Started with a Camera](../getting-started-with-a-camera.md)
 
-#### Discussion
+## Discussion
 
 When a scene is presented and a camera node has not been specified, the [`size`](./size.md) and [`anchorPoint`](./anchorpoint.md) properties determine which part of the scene’s coordinate space is visible in the view.
 

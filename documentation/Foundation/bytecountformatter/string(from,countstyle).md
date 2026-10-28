@@ -25,7 +25,7 @@ class func string(from measurement: Measurement<UnitInformationStorage>, countSt
 + (NSString *) stringFromMeasurement:(NSMeasurement<NSUnitInformationStorage *> *) measurement countStyle:(NSByteCountFormatterCountStyle) countStyle;
 ```
 
-#### Discussion
+## Discussion
 
 Throws an exception if the given measurement’s unit does not belong to the `NSUnitInformationStorage` dimension.
 

@@ -15,11 +15,11 @@ Returns the CSSM CSP handle for a key.
 OSStatus SecKeyGetCSPHandle(SecKeyRef keyRef, CSSM_CSP_HANDLE *cspHandle);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 A CSSM CSP handle is required as an input to a number of CSSM functions.
 

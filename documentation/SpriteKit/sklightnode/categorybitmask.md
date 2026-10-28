@@ -29,7 +29,7 @@ var categoryBitMask: UInt32 { get set }
 
 - [Lighting a Sprite with Light Nodes](../lighting-a-sprite-with-light-nodes.md)
 
-#### Discussion
+## Discussion
 
 Every light in a scene can be assigned to up to 32 different categories, each corresponding to a bit in the bit mask. SpriteKit does not predefine any lighting categories, so it is up to you to define which values are used in your game. When a scene is rendered, a light’s [`categoryBitMask`](./categorybitmask.md) property is compared to each sprite node’s [`lightingBitMask`](../skspritenode/lightingbitmask.md), [`shadowCastBitMask`](../skspritenode/shadowcastbitmask.md), and [`shadowedBitMask`](../skspritenode/shadowedbitmask.md) properties to determine whether that sprite interacts with the light.
 

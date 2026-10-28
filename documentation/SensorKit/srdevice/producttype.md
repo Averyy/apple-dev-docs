@@ -21,7 +21,7 @@ var productType: String { get }
 @property (copy, readonly) NSString * productType;
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**:  Samples saved using older versions of SensorKit may have a `nil`-valued product type that indicates the product type is unknown.
 

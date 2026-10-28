@@ -16,7 +16,7 @@ A representation of a managed package.
 struct ManagedPackage
 ```
 
-#### Overview
+## Overview
 
 [`ManagedPackage`](./managedpackage.md) represents a managed package that the framework can install. Use an instance of this object to obtain information about the package.
 

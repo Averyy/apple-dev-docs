@@ -19,7 +19,7 @@ let IKPictureTakerUpdateRecentPictureKey: String
 extern NSString * const IKPictureTakerUpdateRecentPictureKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is an `NSNumber` object that contains a `BOOL` value whose default value is [`true`](../Swift/true.md).
 

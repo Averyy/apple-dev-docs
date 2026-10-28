@@ -26,7 +26,7 @@ var sampleType: HKSampleType? { get }
 @property (strong, readonly, nullable) HKSampleType * sampleType;
 ```
 
-#### Discussion
+## Discussion
 
 Not all queries return objects of the specified type; however, they all use the object type to generate their results. For example, source queries return a set of data sources that have saved objects with a matching type, while statistics queries return statistical information about the objects with a matching type.
 

@@ -23,7 +23,7 @@ static var dateTime: Date.FormatStyle { get }
 
 Available when `Self` is `Date.FormatStyle`.
 
-#### Discussion
+## Discussion
 
 Use this type property when the call point allows the use of [`Date.FormatStyle`](../date/formatstyle.md); in other words, when the value type is [`Date`](../date.md). Typically, you use this with the [`formatted(_:)`](../date/formatted%28_%29.md) method of [`Date`](../date.md).
 

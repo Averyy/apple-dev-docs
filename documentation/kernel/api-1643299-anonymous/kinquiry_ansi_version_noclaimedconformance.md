@@ -13,7 +13,7 @@
 kINQUIRY_ANSI_VERSION_NoClaimedConformance = 0x00
 ```
 
-#### Discussion
+## Discussion
 
 No ANSI conformance claimed by the device server.
 

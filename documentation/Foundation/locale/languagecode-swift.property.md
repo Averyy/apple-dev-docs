@@ -21,7 +21,7 @@ The language code of the locale, or `nil` if has none.
 var languageCode: String? { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, for the locale “zh-Hant-HK”, returns “zh”.
 

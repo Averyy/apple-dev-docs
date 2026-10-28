@@ -19,7 +19,7 @@ optional func sharingService(_ sharingService: NSSharingService, didCompleteForI
 - (void) sharingService:(NSSharingService *) sharingService didCompleteForItems:(NSArray *) items error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The cloud-sharing service invokes this method when the user finishes sharing or dismisses the service’s view controller. If you implement this method, the service calls it instead of the [`sharingService(_:didFailToShareItems:error:)`](../nssharingservicedelegate/sharingservice%28_,didfailtoshareitems,error%29.md) and [`sharingService(_:didShareItems:)`](../nssharingservicedelegate/sharingservice%28_,didshareitems%29.md) methods.
 

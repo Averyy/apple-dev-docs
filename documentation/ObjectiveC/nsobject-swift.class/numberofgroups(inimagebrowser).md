@@ -19,11 +19,11 @@ func numberOfGroups(inImageBrowser aBrowser: IKImageBrowserView!) -> Int
 - (NSUInteger) numberOfGroupsInImageBrowser:(IKImageBrowserView *) aBrowser;
 ```
 
-#### Return Value
+## Return Value
 
 The number of groups.
 
-#### Discussion
+## Discussion
 
 This method is optional.
 

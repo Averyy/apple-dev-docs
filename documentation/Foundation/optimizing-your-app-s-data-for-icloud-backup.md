@@ -5,11 +5,11 @@
 
 Minimize the space and time that backups take to create by excluding purgeable and nonpurgeable data from backups.
 
-#### Overview
+## Overview
 
 When iCloud Backup is in an enabled state, it periodically creates a backup of the user’s device, including your app’s data. By storing purgeable data in specific directories and signaling to the system that backups can exclude certain nonpurgeable data, you can shorten the time it takes to create a backup and help reduce the amount of space that backup consumes.
 
-##### Exclude Purgeable Data
+### Exclude Purgeable Data
 
 *Purgeable data* is app data that the system can delete without affecting the app’s execution and that the app can re-create if it needs. For example, your app might generate thumbnails of larger images for display in a collection view. If the app saves the thumbnails to disk, consider them purgeable data because, if the system deletes those files, the app can create them again from source.
 
@@ -37,7 +37,7 @@ let cachesDirectoryURL = try manager.url(for: .cachesDirectory,
 
 Consider deleting purgeable data as soon as your app is done with it so that it doesn’t continue to consume space on the user’s device.
 
-##### Mark Nonpurgeable Data as Excludable
+### Mark Nonpurgeable Data as Excludable
 
 *Nonpurgeable data* is data the user creates, or data the app requires to function as the user expects. Some nonpurgeable data isn’t appropriate for backup.
 

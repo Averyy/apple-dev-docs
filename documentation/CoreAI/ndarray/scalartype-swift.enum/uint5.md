@@ -19,7 +19,7 @@ A 5-bit unsigned integer.
 case uint5
 ```
 
-#### Discussion
+## Discussion
 
 Five-bit unsigned integers can represent values in the range [0, 31]. This type is used for quantization and in lookup tables.
 

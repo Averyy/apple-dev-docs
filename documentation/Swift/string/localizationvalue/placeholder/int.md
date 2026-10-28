@@ -21,7 +21,7 @@ The signed integer type, as used for replacement values with the localized strin
 case int
 ```
 
-#### Discussion
+## Discussion
 
 To insert a signed int into a placeholder, use the syntax `\(placeholder: .int)`
 

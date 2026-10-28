@@ -24,7 +24,7 @@ static let origin: MTKTextureLoader.Option
 extern MTKTextureLoaderOption const MTKTextureLoaderOptionOrigin;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is one of the values listed for [`MTKTextureLoader.Origin`](../origin.md). If you omit this option, the texture loader doesn’t flip loaded textures.
 

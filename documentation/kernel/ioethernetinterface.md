@@ -15,7 +15,7 @@ The Ethernet interface object.
 class IOEthernetInterface : IONetworkInterface
 ```
 
-#### Overview
+## Overview
 
 An Ethernet controller driver, that is a subclass of IOEthernetController, will instantiate an object of this class when the driver calls the attachInterface() method. This interface object will then vend an Ethernet interface to DLIL, and manage the connection between the controller driver and the upper networking layers. Drivers will seldom need to subclass IOEthernetInterface.
 

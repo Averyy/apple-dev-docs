@@ -22,7 +22,7 @@ var secondaryButton: CPButton? { get }
 @property (nonatomic, copy, readonly, nullable) CPButton * secondaryButton;
 ```
 
-#### Discussion
+## Discussion
 
 Specify this button at initialization time and access it using this property. The value of this property can be `nil`.
 

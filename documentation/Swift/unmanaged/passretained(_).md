@@ -21,11 +21,11 @@ Creates an unmanaged reference with an unbalanced retain.
 static func passRetained(_ value: Instance) -> Unmanaged<Instance>
 ```
 
-#### Return Value
+## Return Value
 
 An unmanaged reference to the object passed as `value`.
 
-#### Discussion
+## Discussion
 
 The instance passed as `value` will leak if nothing eventually balances the retain.
 

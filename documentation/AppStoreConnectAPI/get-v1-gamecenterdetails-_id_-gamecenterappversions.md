@@ -9,9 +9,9 @@ Get a list of app versions for a Game Center detail.
 **Availability**:
 - App Store Connect API 3.0+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

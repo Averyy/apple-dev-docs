@@ -24,7 +24,7 @@ let HKMetadataKeyUDIProductionIdentifier: String
 extern NSString * const HKMetadataKeyUDIProductionIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Although the production identifier is part of a device’s UDI, it is not saved in the FDA’s GUDID (Globally Unique Device Identifier Database), and its use in HealthKit is now discouraged to protect user privacy. Apps that need this information should store it outside the HealthKit store.
 

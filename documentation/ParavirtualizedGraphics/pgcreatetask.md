@@ -15,11 +15,11 @@ The block signature for a routine that creates a task.
 typedef struct PGTask_s *(^)(unsigned long long, void **) PGCreateTask;
 ```
 
-#### Return Value
+## Return Value
 
 A [`PGTask_t`](./pgtask_t.md) pointer, or `NULL` if an error occurred.
 
-#### Discussion
+## Discussion
 
 The paravirtualization framework calls this block to request memory for a task. The block allocates virtual memory for the task and returns it to the framework. The block also records any data it needs to keep track of this task and returns a pointer to that data. The framework uses this pointer to identify the task in other operations. The framework never accesses the contents of the [`PGTask_t`](./pgtask_t.md) pointer.
 

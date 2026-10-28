@@ -20,7 +20,7 @@ The value of a cell in a data table.
 enum MLDataValue
 ```
 
-#### Overview
+## Overview
 
 The [`MLDataValue`](./mldatavalue.md) enumeration is the fundamental type that you use to store training data in a table. Classifiers use data values to store information like evaluation metrics. Data values wrap all of the possible data types you can use with Create ML.
 

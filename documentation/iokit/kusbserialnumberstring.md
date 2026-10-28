@@ -14,7 +14,7 @@
 #define kUSBSerialNumberString
 ```
 
-#### Discussion
+## Discussion
 
 IORegistry key for the device's USB serial number string
 

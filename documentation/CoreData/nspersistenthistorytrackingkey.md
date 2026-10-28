@@ -29,7 +29,7 @@ extern NSString * const NSPersistentHistoryTrackingKey;
 
 - [Consuming relevant store changes](./consuming-relevant-store-changes.md)
 
-#### Discussion
+## Discussion
 
 Persistent history tracking is off by default.
 

@@ -25,11 +25,11 @@ func instantiateViewController(withIdentifier identifier: String) -> UIViewContr
 - (UIViewController *) instantiateViewControllerWithIdentifier:(NSString *) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The view controller corresponding to the specified identifier string. If no view controller has the given identifier, this method throws an exception.
 
-#### Discussion
+## Discussion
 
 Use this method to create a view controller object to present programmatically. Each time you call this method, it creates a new instance of the view controller using the [`init(coder:)`](../uiviewcontroller/init%28coder%29.md) method.
 

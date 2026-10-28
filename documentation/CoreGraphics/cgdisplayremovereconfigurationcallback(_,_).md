@@ -20,7 +20,7 @@ func CGDisplayRemoveReconfigurationCallback(_ callback: CGDisplayReconfiguration
 extern CGError CGDisplayRemoveReconfigurationCallback(CGDisplayReconfigurationCallBack callback, void *userInfo);
 ```
 
-#### Discussion
+## Discussion
 
 When you call this function, the two arguments must match the registered entry to be removed.
 

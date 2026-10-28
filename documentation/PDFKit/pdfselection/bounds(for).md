@@ -40,7 +40,7 @@ func bounds(for page: PDFPage) -> NSRect
 - (NSRect) boundsForPage:(PDFPage *) page;
 ```
 
-#### Discussion
+## Discussion
 
 The selection rectangle is given in page space.
 

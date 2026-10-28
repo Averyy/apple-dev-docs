@@ -15,7 +15,7 @@ Creates an affine transformation matrix from scaling a single value.
 init(scale factor: CGFloat)
 ```
 
-#### Discussion
+## Discussion
 
 The matrix takes the following form:
 

@@ -23,7 +23,7 @@ func removeArrangedSubview(_ view: UIView)
 - (void) removeArrangedSubview:(UIView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 This method removes the provided view from the stack’s [`arrangedSubviews`](./arrangedsubviews.md) array. The stack view no longer manages the view’s position and size. However, this method doesn’t remove the provided view from the stack’s [`subviews`](../uiview/subviews.md) array; therefore, the view is still displayed as part of the view hierarchy.
 

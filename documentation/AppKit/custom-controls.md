@@ -5,7 +5,7 @@
 
 Support accessibility for custom user interface elements by adopting a role-specific protocol and implementing its methods.
 
-#### Overview
+## Overview
 
 Role-specific accessibility protocols represent the most common control types found in apps. Adopt a role-specific accessibility protocol if:
 

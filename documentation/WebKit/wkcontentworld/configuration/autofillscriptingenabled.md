@@ -21,7 +21,7 @@ var autofillScriptingEnabled: Bool { get set }
 @property (nonatomic, getter=isAutofillScriptingEnabled) BOOL autofillScriptingEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 A boolean value indicating whether the capability to trigger autofill is exposed to scripts or not.
 

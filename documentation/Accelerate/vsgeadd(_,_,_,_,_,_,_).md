@@ -21,7 +21,7 @@ func vSgeadd(_ height: Int32, _ width: Int32, _ a: UnsafePointer<vFloat>, _ form
 extern void vSgeadd(int32_t height, int32_t width, const vFloat *a, char forma, const vFloat *b, char formb, vFloat *c);
 ```
 
-#### Discussion
+## Discussion
 
 Matrix `a` (or its transpose) is added to matrix `b` (or its transpose); the result is stored in mactrix `c`.
 

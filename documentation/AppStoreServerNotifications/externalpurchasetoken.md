@@ -20,7 +20,7 @@ object externalPurchaseToken
 - [App Store Server Notifications changelog](./app-store-server-notifications-changelog.md)
 - [Receiving App Store Server Notifications](./receiving-app-store-server-notifications.md)
 
-#### Discussion
+## Discussion
 
 The `externalPurchaseToken` object is part of the [`responseBodyV2DecodedPayload`](./responsebodyv2decodedpayload.md). It’s present in the payload when the [`notificationType`](./notificationtype.md) is `EXTERNAL_PURCHASE_TOKEN`. This notification type applies to apps that use the [External Purchase](../StoreKit/external-purchase.md) API to offer alternative payment options.
 

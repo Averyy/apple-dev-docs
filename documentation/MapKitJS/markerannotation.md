@@ -21,7 +21,7 @@ class MarkerAnnotation extends Annotation
 - [MapKit JS 6](./mapkit-js-6.md)
 - [Migrating from Version 5 to Version 6](./migrating-from-version-5-to-version-6.md)
 
-#### Overview
+## Overview
 
 A *marker* is a balloon-shaped annotation that contains a glyph or text. On the map, the marker appears when its coordinate is in view.
 

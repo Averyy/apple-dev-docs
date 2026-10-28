@@ -24,7 +24,7 @@ var filters: [Any]? { get set }
 @property (copy, nullable) NSArray * filters;
 ```
 
-#### Discussion
+## Discussion
 
 The filters you add to this property affect the content of the layer, including its border, filled background and sublayers. The default value of this property is `nil`.
 
@@ -80,7 +80,7 @@ The following figure shows the result: a pointillist effect is added to the text
 
 ![Text layer with applied filter](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2851431@2x.png)
 
-##### Special Considerations
+### Special Considerations
 
 This property is not supported on layers in iOS.
 

@@ -19,7 +19,7 @@ Generate random integers from the given interval (`low:` and `high:`).
 func randInt(low: any ScalarOrArray, high: any ScalarOrArray, _ shape: [Int]? = nil, key: MLXArray? = nil, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 The values are sampled with equal probability from the integers in half-open interval `[lb, ub)`. The lower and upper bound can be scalars or arrays and must be roadcastable to `shape`.
 

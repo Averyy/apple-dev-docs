@@ -14,7 +14,7 @@
 #define kUSBDeviceResumeRecoveryTime
 ```
 
-#### Discussion
+## Discussion
 
 Useful property names in USB land.
 

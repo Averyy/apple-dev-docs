@@ -24,7 +24,7 @@ var options: MPSGraphOptions { get set }
 @property (atomic, readwrite) MPSGraphOptions options;
 ```
 
-#### Discussion
+## Discussion
 
 Default value is `MPSGraphOptionsDefault`.
 

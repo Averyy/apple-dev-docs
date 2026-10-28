@@ -19,7 +19,7 @@ var recentDocumentURLs: [URL] { get }
 @property (copy, readonly) NSArray<NSURL *> * recentDocumentURLs;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains an array of [`NSURL`](../../Foundation/nsurl.md) objects corresponding to the recently opened documents. Do not override this property.
 

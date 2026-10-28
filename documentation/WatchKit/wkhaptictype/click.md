@@ -19,7 +19,7 @@ case click
 WKHapticTypeClick
 ```
 
-#### Discussion
+## Discussion
 
 Use this haptic to mark fixed points along a path. Space out the intervals at which you play the haptic rather than playing it several times in quick succession.
 

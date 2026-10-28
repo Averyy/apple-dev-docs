@@ -24,7 +24,7 @@ func cameraDeviceDidChangeCapability(_ camera: ICCameraDevice)
 - (void) cameraDeviceDidChangeCapability:(ICCameraDevice *) camera;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about device capabilities, see [`ICDeviceCapability`](../icdevicecapability.md).
 

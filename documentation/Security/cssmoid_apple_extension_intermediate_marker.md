@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_APPLE_EXTENSION_INTERMEDIATE_MARKER;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

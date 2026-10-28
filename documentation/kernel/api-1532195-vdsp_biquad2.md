@@ -15,7 +15,7 @@ Applies a single-precision stereo biquadratic IIR filter.
 void vDSP_biquad2(const struct vDSP_biquad_SetupStruct *, const float *, float *, size_t);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to apply a stereo biquadratic IIR filter to the input and write the filtered result to the output. The input and output are interleaved so that even elements correspond to the left channel and odd elements correspond to the right channel.
 

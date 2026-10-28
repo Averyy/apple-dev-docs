@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app creates and manages virtual machi
 - **Name**: `com.apple.security.hypervisor`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 The entitlement is required to use the Hypervisor APIs in any process.
 

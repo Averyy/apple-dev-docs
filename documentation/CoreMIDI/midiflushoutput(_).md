@@ -23,7 +23,7 @@ func MIDIFlushOutput(_ dest: MIDIEndpointRef) -> OSStatus
 extern OSStatus MIDIFlushOutput(MIDIEndpointRef dest);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 

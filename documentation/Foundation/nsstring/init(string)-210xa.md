@@ -25,7 +25,7 @@ convenience init(string aString: String)
 - (instancetype) initWithString:(NSString *) aString;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSString` object initialized by copying the characters from `aString`. The returned object may be different from the original receiver.
 

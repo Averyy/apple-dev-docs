@@ -20,7 +20,7 @@ class ODSessionRef
 typedef struct __ODSession * ODSessionRef;
 ```
 
-#### Discussion
+## Discussion
 
 Session objects are usually created with [`ODSessionCreate(_:_:_:)`](./odsessioncreate%28_,_,_%29.md), and are typically passed to node functions.
 

@@ -24,7 +24,7 @@ case cfHostErrorHostNotFound
 kCFHostErrorHostNotFound
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that the DNS lookup failed.
 

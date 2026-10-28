@@ -23,7 +23,7 @@ case `default`
 NSPersonNameComponentsFormatterStyleDefault
 ```
 
-#### Discussion
+## Discussion
 
 The form with minimally necessary features for differentiation in a casual setting. See “[Default](../../personnamecomponentsformatter.md#Default)” for details about its specific behavior. Equivalent to [`PersonNameComponentsFormatter.Style.medium`](./medium.md).
 

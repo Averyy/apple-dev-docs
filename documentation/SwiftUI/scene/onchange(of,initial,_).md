@@ -29,11 +29,11 @@ nonisolated
 func onChange<V>(of value: V, initial: Bool = false, _ action: @escaping (V, V) -> Void) -> some Scene where V : Equatable
 ```
 
-#### Return Value
+## Return Value
 
 A scene that triggers an action in response to a change.
 
-#### Discussion
+## Discussion
 
 Use this modifier to trigger a side effect when a value changes, like the value associated with an [`Environment`](../environment.md) key or a [`Binding`](../binding.md). For example, you can clear a cache when you notice that a scene moves to the background:
 

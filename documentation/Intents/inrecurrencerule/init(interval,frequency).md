@@ -23,7 +23,7 @@ convenience init(interval: Int, frequency: INRecurrenceFrequency)
 - (instancetype) initWithInterval:(NSUInteger) interval frequency:(INRecurrenceFrequency) frequency;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INRecurrenceRule`](../inrecurrencerule.md) object or `nil` if the object could not be created.
 

@@ -25,7 +25,7 @@ func simdConvertPosition(_ position: simd_float3, to node: SCNNode?) -> simd_flo
 - (simd_float3) simdConvertPosition:(simd_float3) position toNode:(SCNNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 A position in the local coordinate space defined by the other node.
 

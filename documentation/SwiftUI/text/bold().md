@@ -26,11 +26,11 @@ func bold() -> Text
 
 - [Configuring views](../configuring-views.md)
 
-#### Return Value
+## Return Value
 
 Bold or emphasized text.
 
-#### Discussion
+## Discussion
 
 For fonts created from text styles, it could mean applying emphasized styling, which does not necessarily mean the bold weight specifically, so this modifier is not to be confused with [`fontWeight(_:)`](./fontweight%28_%29.md).
 

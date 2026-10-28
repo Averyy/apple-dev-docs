@@ -12,11 +12,11 @@ virtual IOStorage * copyPhysicalExtent(
  UInt64 *byteCount);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the physical storage object, which should be released by the caller, or a null on error.
 
-#### Overview
+## Overview
 
 Convert the specified byte offset into a physical byte offset, relative to a physical storage object. This call should only be made within the context of lockPhysicalExtents().
 

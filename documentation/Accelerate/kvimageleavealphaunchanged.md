@@ -25,7 +25,7 @@ var kvImageLeaveAlphaUnchanged: Int { get }
 kvImageLeaveAlphaUnchanged
 ```
 
-#### Discussion
+## Discussion
 
 When you set this flag, the alpha value is copied from source to destination. You can set this flag only for interleaved image formats.
 

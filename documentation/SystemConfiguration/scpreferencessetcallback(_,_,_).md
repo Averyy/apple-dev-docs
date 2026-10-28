@@ -19,11 +19,11 @@ func SCPreferencesSetCallback(_ prefs: SCPreferences, _ callout: SCPreferencesCa
 Boolean SCPreferencesSetCallback(SCPreferencesRef prefs, SCPreferencesCallBack callout, SCPreferencesContext *context);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the callback was successfully associated with the preferences session; otherwise, `FALSE`.
 
-#### Discussion
+## Discussion
 
 This function is called when the changes to the preferences have been committed or applied.
 

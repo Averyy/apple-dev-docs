@@ -23,11 +23,11 @@ func joined() -> FlattenSequence<Self>
 
 Available when `Element` conforms to `Sequence`.
 
-#### Return Value
+## Return Value
 
 A flattened view of the elements of this sequence of sequences.
 
-#### Discussion
+## Discussion
 
 In this example, an array of three ranges is flattened so that the elements of each range can be iterated in turn.
 

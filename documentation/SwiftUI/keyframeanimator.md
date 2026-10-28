@@ -22,7 +22,7 @@ nonisolated
 struct KeyframeAnimator<Value, KeyframePath, Content> where Value == KeyframePath.Value, KeyframePath : Keyframes, Content : View
 ```
 
-#### Overview
+## Overview
 
 The `content` closure updates every frame while animating, so avoid performing any expensive operations directly within `content`.
 

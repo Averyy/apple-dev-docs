@@ -19,7 +19,7 @@ var automaticallyAdjustsContentInsets: Bool { get set }
 @property BOOL automaticallyAdjustsContentInsets;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), and the clip view is used as the [`contentView`](../nsscrollview/contentview.md) of an [`NSScrollView`](../nsscrollview.md), the clip view automatically accounts for other scroll view subviews, such as rulers and headers. The default value is [`true`](../../Swift/true.md).
 

@@ -20,7 +20,7 @@ Skinning deformation data.
 let skinning: USDPlayer.DeformationData.SkinningData?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` when the mesh has no skeleton.
 

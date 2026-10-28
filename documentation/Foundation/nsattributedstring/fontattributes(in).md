@@ -19,11 +19,11 @@ func fontAttributes(in range: NSRange) -> [NSAttributedString.Key : Any]
 - (NSDictionary<NSString *,id> *) fontAttributesInRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary containing the font attributes for the range.
 
-#### Discussion
+## Discussion
 
 The dictionary attributes are all those listed in `Character Attributes`, except [`link`](./key/link.md), [`paragraphStyle`](./key/paragraphstyle.md), and [`attachment`](./key/attachment.md).
 

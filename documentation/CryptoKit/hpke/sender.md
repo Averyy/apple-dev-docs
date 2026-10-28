@@ -21,7 +21,7 @@ A type that represents the sending side of an HPKE message exchange.
 struct Sender
 ```
 
-#### Overview
+## Overview
 
 To create encrypted messages, initialize a `Sender` specifying the appropriate cipher suite, the recipient’s public key, and the additional cryptographic material relevant to your chosen mode of operation. Call [`seal(_:)`](./sender/seal%28_%29.md) or [`seal(_:authenticating:)`](./sender/seal%28_,authenticating%29.md) on the `Sender` instance for each message in turn to retrieve its ciphertext. The recipient of the messages needs to process them in the same order as the `Sender`, using the same encryption mode, cipher suite, and key schedule information (`info`), as well as the `Sender`’s [`encapsulatedKey`](./sender/encapsulatedkey.md).
 

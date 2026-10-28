@@ -20,7 +20,7 @@ func setAttributesWith(_ attributes: [String : String])
 - (void) setAttributesWithDictionary:(NSDictionary<NSString *,NSString *> *) attributes;
 ```
 
-#### Discussion
+## Discussion
 
 The method uses these names and object values to create [`XMLNode`](../xmlnode.md) objects of kind [`XMLNode.Kind.attribute`](../xmlnode/kind-swift.enum/attribute.md). Existing attributes are removed.
 

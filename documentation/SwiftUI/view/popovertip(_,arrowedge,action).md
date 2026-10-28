@@ -22,7 +22,7 @@ Presents a popover tip on the modified view.
 nonisolated func popoverTip(_ tip: (any Tip)?, arrowEdge: Edge? = nil, action: @escaping @MainActor @Sendable (Tips.Action) -> Void = { _ in }) -> some View
 ```
 
-##### Discussion
+### Discussion
 
 Use this modifier to present a tip as a popover on an existing view when the tip becomes eligible for display.
 

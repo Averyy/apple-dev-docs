@@ -29,7 +29,7 @@ optional func confirm(intent: INSnoozeTasksIntent) async -> INSnoozeTasksIntentR
 - (void) confirmSnoozeTasks:(INSnoozeTasksIntent *) intent completion:(void (^)(INSnoozeTasksIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to validate that you can snooze the tasks, but don’t do so yet. If snoozing tasks involves contacting a remote server, first validate that your server is available and ready to handle the requests, then in your implementation, execute the provided completion block with a response object that indicates your app’s readiness to snooze the tasks.
 

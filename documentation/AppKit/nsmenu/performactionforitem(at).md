@@ -19,7 +19,7 @@ func performActionForItem(at index: Int)
 - (void) performActionForItemAtIndex:(NSInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 If a target is not specified, the message is sent to the first responder. As a side effect, this method posts [`willSendActionNotification`](./willsendactionnotification.md) and [`didSendActionNotification`](./didsendactionnotification.md).
 

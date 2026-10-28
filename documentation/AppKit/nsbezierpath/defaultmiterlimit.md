@@ -19,7 +19,7 @@ class var defaultMiterLimit: CGFloat { get set }
 @property (class) CGFloat defaultMiterLimit;
 ```
 
-#### Return Value
+## Return Value
 
 The default miter limit for all paths, or 10.0 if no other value has been set.
 

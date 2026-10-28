@@ -25,11 +25,11 @@ func CTFontCreateForString(_ currentFont: CTFont, _ string: CFString, _ range: C
 extern CTFontRefCTFontCreateForString(CTFontRef currentFont, CFStringRef string, CFRange range);
 ```
 
-#### Return Value
+## Return Value
 
 The best substitute font from the cascade list of the current font that can encode the specified string range.
 
-#### Discussion
+## Discussion
 
 If the current font can encode the string range, the function retains and returns the font.
 

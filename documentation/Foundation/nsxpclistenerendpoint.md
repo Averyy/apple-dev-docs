@@ -25,7 +25,7 @@ class NSXPCListenerEndpoint
 @interface NSXPCListenerEndpoint : NSObject
 ```
 
-#### Overview
+## Overview
 
 An instance of [`NSXPCListenerEndpoint`](./nsxpclistenerendpoint.md) may be retrieved from an [`NSXPCListener`](./nsxpclistener.md) instance and sent over existing [`NSXPCConnection`](./nsxpcconnection.md)s. A process may then use the endpoint to create a new [`NSXPCConnection`](./nsxpcconnection.md) to the original [`NSXPCListener`](./nsxpclistener.md).
 

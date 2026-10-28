@@ -21,7 +21,7 @@ Creates a new integer value from the given string and radix.
 init?<S>(_ text: S, radix: Int = 10) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 The string passed as `text` may begin with a plus or minus sign character (`+` or `-`), followed by one or more numeric digits (`0-9`) or letters (`a-z` or `A-Z`). Parsing of the string is case insensitive.
 

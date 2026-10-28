@@ -22,7 +22,7 @@ optional func sessionWatchStateDidChange(_ session: WCSession)
 - (void) sessionWatchStateDidChange:(WCSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 The session object calls this method when the value in the [`isPaired`](../wcsession/ispaired.md), [`isWatchAppInstalled`](../wcsession/iswatchappinstalled.md), [`isComplicationEnabled`](../wcsession/iscomplicationenabled.md), or [`watchDirectoryURL`](../wcsession/watchdirectoryurl.md) properties of the [`WCSession`](../wcsession.md) object changes. Use this state to update the state of your iOS app. For example, when the complication is disabled, make a note of that fact and do not send any more data updates for the complication.
 

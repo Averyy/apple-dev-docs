@@ -24,7 +24,7 @@ protocol INSetDefrosterSettingsInCarIntentHandling : NSObjectProtocol
 @protocol INSetDefrosterSettingsInCarIntentHandling <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Automotive vendors can support the [`INSetDefrosterSettingsInCarIntentHandling`](./insetdefrostersettingsincarintenthandling.md) protocol in an Intents extension that they ship with their automotive apps. Use the methods of this protocol to resolve, confirm, and handle requests to change the vehicle’s defroster settings. Your extension should be able to communicate with the vehicle and make the necessary climate control changes.
 

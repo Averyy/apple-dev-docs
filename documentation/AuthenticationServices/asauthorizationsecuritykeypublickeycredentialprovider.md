@@ -26,7 +26,7 @@ class ASAuthorizationSecurityKeyPublicKeyCredentialProvider
 
 - [Supporting Security Key Authentication Using Physical Keys](./supporting-security-key-authentication-using-physical-keys.md)
 
-#### Overview
+## Overview
 
 The credential provider accesses public-private key pairs stored on a physical security key for registration or authentication with a relying party. Instantiate this object, passing in the relying party identifier for the credentials.
 

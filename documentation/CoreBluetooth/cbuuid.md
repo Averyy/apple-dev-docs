@@ -25,7 +25,7 @@ class CBUUID
 @interface CBUUID : NSObject
 ```
 
-#### Overview
+## Overview
 
 Instances of the [`CBUUID`](./cbuuid.md) class represent the 128-bit universally unique identifiers (UUIDs) of attributes used in Bluetooth low energy communication, such as a peripheral’s services, characteristics, and descriptors. This class provides a number of factory methods for dealing with long UUIDs when developing your app. For example, instead of passing around the string representation of a 128-bit Bluetooth low energy attribute in your code, you can create a [`CBUUID`](./cbuuid.md) object that represents it, and pass that around instead.
 

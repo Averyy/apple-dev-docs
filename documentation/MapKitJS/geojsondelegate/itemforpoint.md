@@ -18,11 +18,11 @@ itemForPoint?(
 ): Item | null;
 ```
 
-#### Return Value
+## Return Value
 
 An array of map items.
 
-#### Discussion
+## Discussion
 
 MapKit JS calls this method for every `Point` object. For a `MultiPoint` object or for a `GeometryCollection` of `Points` and `MultiPoints`, the framework calls [`itemForPoint()`](./itemforpoint.md) for each individual `Point` object.
 

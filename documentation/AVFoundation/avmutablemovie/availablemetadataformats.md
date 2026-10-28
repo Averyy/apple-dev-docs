@@ -20,7 +20,7 @@ The metadata formats this asset contains.
 var availableMetadataFormats: [AVMetadataFormat] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Metadata formats may include ID3, iTunes metadata, and so on.
 

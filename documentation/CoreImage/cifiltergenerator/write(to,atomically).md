@@ -19,11 +19,11 @@ func write(to aURL: URL, atomically flag: Bool) -> Bool
 - (BOOL) writeToURL:(NSURL *) aURL atomically:(BOOL) flag;
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if the object is successfully archived to the file.
 
-#### Discussion
+## Discussion
 
 Use this method to save your filter chain to a file for later use.
 

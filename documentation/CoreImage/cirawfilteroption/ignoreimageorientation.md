@@ -26,7 +26,7 @@ static let ignoreImageOrientation: CIRAWFilterOption
 extern CIRAWFilterOption const kCIInputIgnoreImageOrientationKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a Boolean value packaged as an [`NSNumber`](../../Foundation/nsnumber.md) object.  The default value is `false`. An image is usually loaded in its proper orientation, as long as the associated metadata records its orientation. For special purposes you might want to load the image in its physical orientation. The exact meaning of “physical orientation” is dependent on the specific image.
 

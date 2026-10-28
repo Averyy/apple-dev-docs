@@ -25,7 +25,7 @@ protocol SnippetIntent : AppIntent where Self.PerformResult : ShowsSnippetView
 
 - [Displaying static and interactive snippets](./displaying-static-and-interactive-snippets.md)
 
-#### Overview
+## Overview
 
 An app intent can present custom SwiftUI views to show people the result of their action, confirm a selection, and more. For example, an app could show a confirmation for a successful order.
 

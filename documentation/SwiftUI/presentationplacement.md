@@ -21,7 +21,7 @@ The placement of a presentation within the presenting view.
 struct PresentationPlacement
 ```
 
-#### Overview
+## Overview
 
 Only sheet presentations respect this placement.
 

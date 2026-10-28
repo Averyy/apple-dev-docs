@@ -26,7 +26,7 @@ struct FocusedValue<Value>
 
 - [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
 
-#### Overview
+## Overview
 
 If multiple views publish values using the same key, the wrapped property will reflect the value from the view closest to focus.
 

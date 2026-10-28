@@ -16,7 +16,7 @@ get tintColor(): string;
 set tintColor(value: string);
 ```
 
-#### Discussion
+## Discussion
 
 Use `tintColor` to color the outline of the controls, text, and glyphs. The tint color can be any valid [CSS color value or standard color name](https://drafts.csswg.org/css-color/#named-colors).
 

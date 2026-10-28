@@ -21,7 +21,7 @@ protocol KVCache : Evaluatable
 
 - [Developing mlx-swift-lm](./developing.md)
 
-#### Quantized Cache Usage
+## Quantized Cache Usage
 
 **Standard caches:**
 

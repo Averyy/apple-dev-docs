@@ -24,7 +24,7 @@ nonisolated func strokeBorder<S>(_ content: S = .foreground, style: StrokeStyle,
 
 Available when `Content` conforms to `InsettableShape`.
 
-#### Discussion
+## Discussion
 
 This method strokes the resulting shape with `style` and fills it with `content`.
 

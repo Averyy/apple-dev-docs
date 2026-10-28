@@ -19,7 +19,7 @@ init(fileHandle: FileHandle)
 - (instancetype) initWithFileHandle:(NSFileHandle *) fileHandle;
 ```
 
-#### Return Value
+## Return Value
 
 An attachment object for the specified file handle.
 

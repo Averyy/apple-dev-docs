@@ -33,7 +33,7 @@ func makeLibrary(source: String, options: MTLCompileOptions?) async throws -> an
 
 - [Minimizing the binary size of a shader library](../minimizing-the-binary-size-of-a-shader-library.md)
 
-#### Discussion
+## Discussion
 
 Because there’s no search path to find other functions, the source may only import the Metal default library.
 

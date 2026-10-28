@@ -22,7 +22,7 @@ The undo manager you use to register undo actions for your app intents.
 var undoManager: UndoManager? { get }
 ```
 
-#### Discussion
+## Discussion
 
 In your app intent’s [`perform()`](../appintent/perform%28%29.md) method, use this property to get an undo manager suitable for registering undoable actions. The system makes every effort to find a suitable undo manager given the current state of your app or app extension. However, if a suitable undo manager isn’t available, the value of this property is `nil`.
 

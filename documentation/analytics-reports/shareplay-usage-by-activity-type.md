@@ -5,7 +5,7 @@
 
 Review how people use SharePlay in your app.
 
-#### Overview
+## Overview
 
 The data in this report shows information about SharePlay usage including the type of activity.
 
@@ -22,7 +22,7 @@ The data in this report shows information about SharePlay usage including the ty
   - Individual rows will only appear if they have a value of 5 or more.
 - Data Context: You can analyze your data with additional context by comparing it with the data in the [App Sessions Context](./app-sessions-context.md) report, which provides a count of unique devices that use your app on a specific day. For example, if your app performed an action detailed in this report on 10 unique devices on a specific day, and the App Sessions Context report shows there were 100 unique devices running your app that day, then you can approximate that 10% of the devices running your app performed that action.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |
@@ -36,7 +36,7 @@ The data in this report shows information about SharePlay usage including the ty
 | Release Type | Type of software release | `string` |
 | Activity Type | Type of SharePlay activity in use, which matches the type in GroupActivityMetadata.ActivityType | `string` |
 
-#### Glossary
+## Glossary
 
 | Dimension | Value | Definition |
 | --- | --- | --- |

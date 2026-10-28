@@ -20,7 +20,7 @@ Configuration for recognizing text in the document.
 var textRecognitionOptions: RecognizeDocumentsRequest.TextRecognitionOptions
 ```
 
-#### Discussion
+## Discussion
 
 Set properties such as what languages are detected.
 

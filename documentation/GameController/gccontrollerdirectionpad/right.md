@@ -24,7 +24,7 @@ var right: GCControllerButtonInput { get }
 @property (nonatomic, readonly) GCControllerButtonInput * right;
 ```
 
-#### Discussion
+## Discussion
 
 The value of the `right` and `left` buttons are mutually exclusive because the user can only press one of these buttons at a time. Therefore, when the `right` button is nonzero, the `left` button is `0`.
 

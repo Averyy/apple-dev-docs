@@ -21,11 +21,11 @@ Publishes the maximum value received from the upstream publisher, using the prov
 func max(by areInIncreasingOrder: @escaping (Self.Output, Self.Output) -> Bool) -> Publishers.Comparison<Self>
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that publishes the maximum value received from the upstream publisher, after the upstream publisher finishes.
 
-#### Discussion
+## Discussion
 
 Use [`max(by:)`](./max%28by%29.md) to determine the maximum value of elements received from the upstream publisher based on an ordering closure you specify.
 

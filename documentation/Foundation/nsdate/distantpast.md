@@ -25,11 +25,11 @@ class var distantPast: Date { get }
 @property (class, copy, readonly) NSDate * distantPast;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSDate`](../nsdate.md) object representing a date in the distant past (in terms of centuries).
 
-#### Discussion
+## Discussion
 
 You can use this object as a control date, a guaranteed temporal boundary.
 

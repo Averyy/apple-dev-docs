@@ -23,11 +23,11 @@ convenience init(data documentData: Data, start startDate: Date, end endDate: Da
 + (instancetype) CDADocumentSampleWithData:(NSData *) documentData startDate:(NSDate *) startDate endDate:(NSDate *) endDate metadata:(NSDictionary<NSString *,id> *) metadata validationError:(NSError **) validationError;
 ```
 
-#### Return Value
+## Return Value
 
 A valid CDA document sample with the provided metadata.
 
-#### Discussion
+## Discussion
 
 To create a CDA document sample:
 

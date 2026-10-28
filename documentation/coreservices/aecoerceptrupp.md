@@ -20,7 +20,7 @@ typealias AECoercePtrUPP = AECoercePtrProcPtr
 typedef AECoercePtrProcPtr AECoercePtrUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For a description of a coerce pointer callback function, see [`AECoercePtrProcPtr`](./aecoerceptrprocptr.md). 
 

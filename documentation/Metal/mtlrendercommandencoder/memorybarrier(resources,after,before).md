@@ -20,7 +20,7 @@ Creates a memory barrier that enforces the order of write and read operations fo
 func memoryBarrier(resources: [any MTLResource], after: MTLRenderStages, before: MTLRenderStages)
 ```
 
-#### Discussion
+## Discussion
 
 Memory barriers ensure the relevant stages of prior draw commands finish modifying resources before starting the stages of subsequent commands that depend on those resources.
 

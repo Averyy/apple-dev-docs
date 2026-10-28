@@ -14,7 +14,7 @@
 #define kUSBInterfaceNumber
 ```
 
-#### Discussion
+## Discussion
 
 The field in the USB Configuration Descriptor corresponding to the number of configurations
 

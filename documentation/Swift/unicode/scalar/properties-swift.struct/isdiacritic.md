@@ -21,7 +21,7 @@ A Boolean value indicating whether the scalar is a diacritic.
 var isDiacritic: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 Diacritics are scalars that linguistically modify the meaning of another scalar to which they apply. Scalars for which this property is `true` are frequently, but not always, combining marks or modifiers.
 

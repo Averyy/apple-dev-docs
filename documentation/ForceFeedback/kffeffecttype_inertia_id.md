@@ -14,7 +14,7 @@
 #define kFFEffectType_Inertia_ID
 ```
 
-#### Discussion
+## Discussion
 
 UUID for an inertia effect type
 

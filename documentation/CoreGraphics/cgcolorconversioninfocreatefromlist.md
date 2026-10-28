@@ -21,7 +21,7 @@ Creates a conversion between an arbitrary number of specified color spaces.
 extern CGColorConversionInfoRefCGColorConversionInfoCreateFromList(CFDictionaryRef options, CGColorSpaceRef , CGColorConversionInfoTransformType , CGColorRenderingIntent , ...);
 ```
 
-##### Parameters
+### Parameters
 
 - **options**: A dictionary containing options for color space conversion. See [`CGColorConversionInfo`](./cgcolorconversioninfo.md).
 - **colorSpace**: The first color space in the conversion.
@@ -29,11 +29,11 @@ extern CGColorConversionInfoRefCGColorConversionInfoCreateFromList(CFDictionaryR
 - **renderingIntent**: The rendering intent to use with the first color space. See [`CGColorRenderingIntent`](./cgcolorrenderingintent.md).
 - **…**: A `NULL`-terminated list of additional `colorSpace, transformType, renderingIntent` triplets.
 
-##### Returns
+### Returns
 
 A color conversion object, or `nil` if no conversion between the specified color spaces is allowed.
 
-#### Discussion
+## Discussion
 
 To call this function you must pass a triplet of color space, transform type, and rendering intent for each color space in the chain of conversions. For example, the following code is equivalent to calling [`init(src:dst:)`](./cgcolorconversioninfo/init%28src,dst%29.md):
 

@@ -21,7 +21,7 @@ The error log level.
 static let error: OSLogType
 ```
 
-#### Discussion
+## Discussion
 
 Logging a message of this type is equivalent to calling the [`os_log_error`](../os_log_error.md) function. Use this log level to report process-level errors.
 

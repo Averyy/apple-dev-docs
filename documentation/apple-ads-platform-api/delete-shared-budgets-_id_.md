@@ -9,13 +9,13 @@ Soft-deletes a budget order by its unique identifier.
 **Availability**:
 - Apple Ads Platform API 1.0+
 
-#### Discussion
+## Discussion
 
 This endpoint soft-deletes the specified budget order. The system marks the record `deleted: true`, and it’s no longer available for assignment to campaigns. You must remove all campaign assignments before you can delete a budget order.
 
 Omit the `X-AP-Context` header. This endpoint requires organization-level permissions, and the API returns `403 Forbidden` if you send an ad account header. See [Budget Orders Endpoints](./budget-orders-endpoints.md).
 
-##### Check deletion restrictions
+### Check deletion restrictions
 
 Deletion returns a `400 Bad Request` in the following cases:
 
@@ -36,9 +36,9 @@ Deletion has different implications depending on what you’re trying to do next
 | Restoration | The API cannot restore soft-deleted budget orders. |
 | Re-creation | Create a new budget order with the same name and parameters if needed. |
 
-#### Payload Examples
+## Payload Examples
 
-##### Request
+### Request
 
 Deletes a budget order by its unique identifier. Remove all campaign assignments before issuing this request. A successful delete returns HTTP 200 with an empty response body.
 
@@ -46,7 +46,7 @@ Deletes a budget order by its unique identifier. Remove all campaign assignments
 DELETE /v1/shared-budgets/777890001
 ```
 
-##### Response
+### Response
 
 ```json
 {}

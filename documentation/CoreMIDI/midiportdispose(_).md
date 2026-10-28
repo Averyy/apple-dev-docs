@@ -23,11 +23,11 @@ func MIDIPortDispose(_ port: MIDIPortRef) -> OSStatus
 extern OSStatus MIDIPortDispose(MIDIPortRef port);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 Calling this method explicitly isn’t required because the framework automatically disposes of clients at termination.
 

@@ -21,7 +21,7 @@ A type that can function as storage for a SIMD vector type.
 protocol SIMDStorage
 ```
 
-#### Overview
+## Overview
 
 The `SIMDStorage` protocol defines a storage layout and provides elementwise accesses. Computational operations are defined on the `SIMD` protocol, which refines this protocol, and on the concrete types that conform to `SIMD`.
 

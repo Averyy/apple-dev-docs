@@ -18,7 +18,7 @@ var FFERR_GENERIC: HRESULT { get }
 #define FFERR_GENERIC
 ```
 
-#### Discussion
+## Discussion
 
 An undetermined error occurred.
 

@@ -24,11 +24,11 @@ convenience init(additionalLayer layer: sending CALayer, asTrackID trackID: CMPe
 + (instancetype) videoCompositionCoreAnimationToolWithAdditionalLayer:(CALayer *) layer asTrackID:(CMPersistentTrackID) trackID;
 ```
 
-#### Return Value
+## Return Value
 
 A new Core Animation tool for the layer.
 
-#### Discussion
+## Discussion
 
 You use this method to include a Core Animation layer as an individual track input in video composition.
 

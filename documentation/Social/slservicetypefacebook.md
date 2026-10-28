@@ -20,7 +20,7 @@ let SLServiceTypeFacebook: String
 extern NSString * const SLServiceTypeFacebook;
 ```
 
-#### Discussion
+## Discussion
 
 A string constant that identifies the social networking site, Facebook.
 

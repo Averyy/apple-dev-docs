@@ -23,7 +23,7 @@ var isZoomAnimating: Bool { get }
 @property (nonatomic, readonly, getter=isZoomAnimating) BOOL zoomAnimating;
 ```
 
-#### Discussion
+## Discussion
 
 Call [`stopScrollingAndZooming()`](./stopscrollingandzooming%28%29.md) to stop the animation.
 

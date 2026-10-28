@@ -24,7 +24,7 @@ var usesDefaultHyphenation: Bool { get set }
 @property (nonatomic, readwrite) BOOL usesDefaultHyphenation;
 ```
 
-#### Discussion
+## Discussion
 
 The system determines the exact hyphenation logic dynamically by examining the layout context such as language, platform, etc. When `true`, it affects the return value from [`hyphenationFactor`](./hyphenationfactor.md) when the property is set to `0.0`.
 

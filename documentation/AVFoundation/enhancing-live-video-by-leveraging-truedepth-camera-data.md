@@ -12,19 +12,19 @@ Apply your own background to a live capture feed streamed from the front-facing 
 - Mac Catalyst 12.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 The TrueDepth camera provides real-time depth data that allows you to segment foreground from background in a video feed.
 
 This sample app leverages depth data to dynamically replace the entire background with a custom image. It then performs Gaussian filtering and other image processing operations to remove holes and smooth the effect.
 
-##### Preview the sample app
+### Preview the sample app
 
 To see this sample app in action, build and run the project in Xcode on a device running iOS 11 or later. Because Xcode doesn’t have access to the TrueDepth camera, this sample won’t work in the Xcode simulator.
 
 The sample app begins by removing the background, replacing it with black. Apply your own image from the camera roll by swiping down anywhere on the video feed.
 
-##### Set up live capture from the TrueDepth camera
+### Set up live capture from the TrueDepth camera
 
 Set up an [`AVCaptureSession`](./avcapturesession.md) on a separate thread via the session queue. Initialize this session queue before configuring the camera for capture.
 
@@ -94,7 +94,7 @@ outputSynchronizer = AVCaptureDataOutputSynchronizer(dataOutputs: [videoDataOutp
 outputSynchronizer!.setDelegate(self, queue: dataOutputQueue)
 ```
 
-##### Create a binary foreground mask
+### Create a binary foreground mask
 
 Assume the foreground to be a human face. You can accomplish face detection through the Vision framework’s [`VNDetectFaceRectanglesRequest`](../Vision/vndetectfacerectanglesrequest.md), but this sample doesn’t need anything else from Vision, so it’s simpler to consult the [`AVMetadataObject`](./avmetadataobject.md) for [`face`](./avmetadataobject/objecttype/face.md).
 
@@ -145,7 +145,7 @@ for yMap in 0 ..< depthHeight {
 }
 ```
 
-##### Smooth the depth mask with Core Image filters
+### Smooth the depth mask with Core Image filters
 
 The depth map doesn’t share the RGB image’s sharp resolution, so the mask may contain holes along the interface between foreground and background. Once you have a downsampled mask image, use a Gaussian filter to smooth out the holes, so the interface doesn’t look jagged or pixelated. Clamp your image before filtering it, and crop it afterward, so it retains the proper size when applied with the original image.
 
@@ -165,7 +165,7 @@ The parameters of your `CIGaussianBlur` and `CIGammaAdjust` filters directly aff
 
 ![Graph showing the effect of fine-tuning Gaussian blur and Gamma adjustment](https://developer.apple.com/tutorials/images/com.apple.avfoundation/graph.png)
 
-##### Blend foreground and background with the alpha matte
+### Blend foreground and background with the alpha matte
 
 The final step is applying your filtered smooth binary mask to the input video frame.
 

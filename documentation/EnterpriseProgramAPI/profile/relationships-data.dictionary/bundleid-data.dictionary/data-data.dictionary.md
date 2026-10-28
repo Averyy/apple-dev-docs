@@ -20,7 +20,7 @@ object Profile.Relationships.BundleId.Data
 ## See Also
 
 ### Objects
-- [links](./links.md)
+- links
   The links to the related data and the relationship’s self-link.
 
 

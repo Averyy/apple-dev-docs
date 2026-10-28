@@ -25,7 +25,7 @@ struct AppEnumDefinition
 
 - [Testing your App Intents code](./testing-your-app-intents-code.md)
 
-#### Overview
+## Overview
 
 To create an app enum for testing, load the enum definition using [`IntentDefinitions`](./intentdefinitions.md) and its [`enums`](./intentdefinitions/enums.md) property. Then, set its value as shown in the following example:
 

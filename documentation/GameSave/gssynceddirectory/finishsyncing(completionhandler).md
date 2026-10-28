@@ -27,7 +27,7 @@ func finishSyncing() async
 - (void) finishSyncingWithCompletionHandler:(void (^)()) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to wait if your app displays its own syncing UI.
 

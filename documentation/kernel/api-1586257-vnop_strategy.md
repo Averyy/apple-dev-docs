@@ -15,11 +15,11 @@ Initiate I/O on a file (both read and write).
 errno_t VNOP_STRATEGY(struct buf *bp);
 ```
 
-#### Return Value
+## Return Value
 
 0 for success, else an error code.
 
-#### Discussion
+## Discussion
 
 A filesystem strategy routine takes a buffer, performs whatever manipulations are necessary for passing the I/O request down to the device layer, and calls the appropriate device's strategy routine. Most filesystems should just call buf_strategy() with "bp" as the argument.
 

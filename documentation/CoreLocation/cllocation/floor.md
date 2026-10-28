@@ -26,7 +26,7 @@ var floor: CLFloor? { get }
 @property (nonatomic, copy, readonly, nullable) CLFloor * floor;
 ```
 
-#### Discussion
+## Discussion
 
 If floor information is not available for the current location, the value of this property is `nil`.
 

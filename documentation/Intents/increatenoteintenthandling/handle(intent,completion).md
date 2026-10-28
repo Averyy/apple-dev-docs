@@ -30,7 +30,7 @@ func handle(intent: INCreateNoteIntent) async -> INCreateNoteIntentResponse
 - (void) handleCreateNote:(INCreateNoteIntent *) intent completion:(void (^)(INCreateNoteIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 In your implementation of this method, create the note described by the intent parameter, create a response object with any note-related details, and call the provided completion handler.
 

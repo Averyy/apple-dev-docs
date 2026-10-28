@@ -19,7 +19,7 @@ object AppTransactionInfoResponse
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 This response contains information that you request by calling the [`Get App Transaction Info`](./get-app-transaction-info.md) endpoint. For information on decoding and reading the app transaction, see [`JWSAppTransaction`](./jwsapptransaction.md) and [`JWSAppTransactionDecodedPayload`](./jwsapptransactiondecodedpayload.md).
 

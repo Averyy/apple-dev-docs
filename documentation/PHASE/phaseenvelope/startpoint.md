@@ -24,7 +24,7 @@ var startPoint: simd_double2 { get }
 @property (nonatomic, readonly) simd_double2 startPoint;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value of this property to the [`init(startPoint:segments:)`](./init%28startpoint,segments%29.md) argument.
 

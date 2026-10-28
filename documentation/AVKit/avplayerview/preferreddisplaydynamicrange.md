@@ -19,7 +19,7 @@ var preferredDisplayDynamicRange: AVDisplayDynamicRange { get set }
 @property (nonatomic, assign, readwrite) AVDisplayDynamicRange preferredDisplayDynamicRange;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `AVDisplayDynamicRangeAutomatic`.
 

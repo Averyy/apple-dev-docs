@@ -17,7 +17,7 @@ Returns the tag as a FeliCa tag object.
 - (id<NFCFeliCaTag>) asNFCFeliCaTag;
 ```
 
-#### Return Value
+## Return Value
 
 The tag object, if it conforms to the [`NFCFeliCaTag`](../nfcfelicatag.md) protocol; otherwise, returns `nil`.
 

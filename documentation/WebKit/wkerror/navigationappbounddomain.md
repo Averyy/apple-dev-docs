@@ -19,7 +19,7 @@ An error that indicates navigation failed due to an app-bound domain restriction
 static var navigationAppBoundDomain: WKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs when the web view navigates away from an app-bound domain.
 

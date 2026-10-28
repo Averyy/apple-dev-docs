@@ -19,7 +19,7 @@ An algorithm that leverages the knowledge of a general-purpose model built into 
 case transferLearning(featureExtractor: MLSoundClassifier.ModelParameters.FeatureExtractorType, classifier: MLSoundClassifier.ModelParameters.ClassifierType)
 ```
 
-#### Discussion
+## Discussion
 
 You typically use this transfer-learning algorithm to train an object detector in these situations:
 

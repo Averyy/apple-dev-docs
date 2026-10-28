@@ -21,7 +21,7 @@ A monthly display frequency.
 static var monthly: Tips.ConfigurationOption.DisplayFrequency { get }
 ```
 
-#### Discussion
+## Discussion
 
 When you set this, the system shows no more than one tip per month.
 

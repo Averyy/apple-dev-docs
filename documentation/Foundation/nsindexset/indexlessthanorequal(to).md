@@ -25,7 +25,7 @@ func indexLessThanOrEqual(to value: Int) -> Int
 - (NSUInteger) indexLessThanOrEqualToIndex:(NSUInteger) value;
 ```
 
-#### Return Value
+## Return Value
 
 Closest index in the index set less than or equal to `index`; NSNotFound when the index set contains no qualifying index.
 

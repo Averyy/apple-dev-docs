@@ -15,7 +15,7 @@ The default document attributes.
 extern NSAttributedStringDocumentAttributeKey NSDefaultAttributesDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an NSDictionary object containing attributes to be applied to plain files. Used by reader methods. This key in options can specify the default attributes applied to the entire document contents. Upon return, the document attributes can contain this key indicating the actual attributes used.+
 

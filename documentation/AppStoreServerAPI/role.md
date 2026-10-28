@@ -24,7 +24,7 @@ string role
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 Each [`RoleEntry`](./roleentry.md) that the [`Get Customer Groups`](./get-customer-groups.md) endpoint returns includes a `role` for a single [`productId`](./productid.md). A customer can hold a different role for each of your products within the same group.
 

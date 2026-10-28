@@ -16,11 +16,11 @@ Request that the system initiate sleep.
 IOReturn IOPMSleepSystem(io_connect_t fb);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess or an error condition if request failed.
 
-#### Discussion
+## Discussion
 
 For security purposes, caller must be root or the console user.
 

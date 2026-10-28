@@ -22,7 +22,7 @@ func export(to url: URL, previewImage: UIImage?) throws
 - (BOOL) exportObjectToURL:(NSURL *) url previewImage:(UIImage *) previewImage error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 After exporting a reference object from your object-scanning app to a file, you can bundle that reference object into other apps you create by inserting it into an Xcode asset catalog.
 

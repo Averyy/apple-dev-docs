@@ -15,7 +15,7 @@ The response body for endpoints that create or read an analytics report request.
 object AnalyticsReportRequestResponse
 ```
 
-#### Discussion
+## Discussion
 
 Use this object with [`Read Report Request Information`](./get-v1-analyticsreportrequests-_id_.md).
 

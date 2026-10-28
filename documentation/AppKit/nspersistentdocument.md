@@ -19,7 +19,7 @@ class NSPersistentDocument
 @interface NSPersistentDocument : NSDocument
 ```
 
-#### Overview
+## Overview
 
 The [`NSPersistentDocument`](./nspersistentdocument.md) class is a subclass of [`NSDocument`](./nsdocument.md) that is designed to easily integrate into the Core Data framework. It provides methods to access a document-wide [`NSManagedObjectContext`](../CoreData/nsmanagedobjectcontext.md) object, and provides default implementations of methods to read and write files using the persistence framework. In a persistent document, the undo manager functionality is taken over by managed object context.
 
@@ -45,7 +45,7 @@ You can customize the architecture of the persistence stack by overriding the [`
 >
 > [`NSPersistentDocument`](./nspersistentdocument.md) does not support the asynchronous saving API of [`NSDocument`](./nsdocument.md) because that API requires accessing the document’s state on multiple threads and that violates the requirements of the [`NSManagedObjectContext`](../CoreData/nsmanagedobjectcontext.md) class. Do not override [`canAsynchronouslyWrite(to:ofType:for:)`](./nsdocument/canasynchronouslywrite%28to,oftype,for%29.md).
 
-##### Undo Support
+### Undo Support
 
 The persistent document uses the managed object context’s undo manager.
 

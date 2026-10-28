@@ -24,7 +24,7 @@ let CIDetectorTypeText: String
 extern NSString * const CIDetectorTypeText;
 ```
 
-#### Discussion
+## Discussion
 
 The text detector finds areas that are likely to contain upright text, but does not perform optical character recognition.
 

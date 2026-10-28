@@ -21,7 +21,7 @@ weak var view: NSView? { get set }
 @property (weak, nullable) NSView * view;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses shouldn’t invoke setView:, but can override it if desired to intercept the layer’s association to, or dissociation from, a view.
 

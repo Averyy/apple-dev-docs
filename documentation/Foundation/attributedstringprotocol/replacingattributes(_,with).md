@@ -21,7 +21,7 @@ Returns an attributed string by replacing occurrences of attributes in one attri
 func replacingAttributes(_ attributes: AttributeContainer, with others: AttributeContainer) -> AttributedString
 ```
 
-#### Return Value
+## Return Value
 
 An attributed string created by replacing occurrences of attributes in one attribute container with those in another attribute container.
 

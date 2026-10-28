@@ -19,7 +19,7 @@ Returns the descriptor for the specified state.
 func stateDescriptor(of stateName: String) -> InferenceValue.Descriptor?
 ```
 
-#### Return Value
+## Return Value
 
 The descriptor for the state, or `nil` if the function doesn’t have a state with the specified name.
 

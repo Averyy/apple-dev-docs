@@ -21,11 +21,11 @@ func preparedCell(atColumn column: Int, row: Int) -> NSCell?
 - (NSCell *) preparedCellAtColumn:(NSInteger) column row:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 New [`NSCell`](../nscell.md) subclass instance to use for the specified `row` and `column`. The value for the cell is correctly set, and the delegate method [`tableView(_:willDisplayCell:for:row:)`](../nstableviewdelegate/tableview%28_,willdisplaycell,for,row%29.md) will have been called.
 
-#### Discussion
+## Discussion
 
 You can override this method to do any additional cell set up that is required, or invoke it to retrieve a cell that has its contents configured for the specified `column` and `row`.
 

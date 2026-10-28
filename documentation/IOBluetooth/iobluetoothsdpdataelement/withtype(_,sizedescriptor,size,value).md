@@ -19,11 +19,11 @@ class func withType(_ type: BluetoothSDPDataElementTypeDescriptor, sizeDescripto
 + (instancetype) withType:(BluetoothSDPDataElementTypeDescriptor) type sizeDescriptor:(BluetoothSDPDataElementSizeDescriptor) newSizeDescriptor size:(uint32_t) newSize value:(NSObject *) newValue;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the newly allocated data element object. Returns nil if an error is encountered (not likely due to the limited error checking currently done). The returned IOBluetoothSDPDataElement object has been autoreleased, so it is not necessary for the caller to release it. If the object is to be referenced and kept around, retain should be called.
 
-#### Discussion
+## Discussion
 
 Warning - be careful using this method. There is next to no error checking done on the attributes. It is entirely possible to construct an invalid data element. It is recommended that +withElementValue: be used instead of this one.
 

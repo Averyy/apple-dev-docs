@@ -20,7 +20,7 @@ typealias OSLAccessorUPP = OSLAccessorProcPtr
 typedef OSLAccessorProcPtr OSLAccessorUPP;
 ```
 
-#### Discussion
+## Discussion
 
 For a description of an object accessor callback function, see [`OSLAccessorProcPtr`](./oslaccessorprocptr.md). 
 

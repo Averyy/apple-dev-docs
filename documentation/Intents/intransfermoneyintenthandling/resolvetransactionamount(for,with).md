@@ -29,7 +29,7 @@ optional func resolveTransactionAmount(for intent: INTransferMoneyIntent) async 
 - (void) resolveTransactionAmountForTransferMoney:(INTransferMoneyIntent *) intent withCompletion:(void (^)(INPaymentAmountResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to resolve the amount of money the user wants to transfer. The [`transactionAmount`](../intransfermoneyintent/transactionamount.md) property of the intent contains information about how much the user wants to transfer. Return a successful resolution if you’re able to transfer the specified amount. If the amount exceeds the maximum or minimum amount allowed by your app, return an adjusted amount and ask for confirmation.
 

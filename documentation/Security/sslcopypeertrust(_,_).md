@@ -24,11 +24,11 @@ func SSLCopyPeerTrust(_ context: SSLContext, _ trust: UnsafeMutablePointer<SecTr
 OSStatus SSLCopyPeerTrust(SSLContextRef context, SecTrustRef*trust);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function is valid any time after a handshake attempt.
 

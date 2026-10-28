@@ -15,11 +15,11 @@ CMError CMUpdateProfileSearch (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 After a profile search has been set up and performed through a call to the `CMNewProfileSearch` function, the `CMUpdateProfileSearch` function updates the existing search result. You must use this function if the contents of the ColorSync Profiles folder have changed since the original search result was created.
 
@@ -29,7 +29,7 @@ Sharing a disk over a network makes it possible for modification of the contents
 
 For a description of the function you call to begin a new search, see the function [CMNewProfileSearch](./api-1805344-cmnewprofilesearch.md). That function specifies the filter function referred to in the description of the `refCon` parameter.  
 
-##### Version-Notes
+### Version-Notes
 
 Starting with version 2.5, you should use the function [CMIterateColorSyncFolder](./api-1804904-cmiteratecolorsyncfolder.md) for profile searching.
 

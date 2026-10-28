@@ -23,11 +23,11 @@ init(animationCurve curve: UIView.AnimationCurve)
 - (instancetype) initWithAnimationCurve:(UIViewAnimationCurve) curve;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized timing parameter object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 Use this method to create a timing curve that uses the standard UIKit timing curves such as [`UIView.AnimationCurve.easeIn`](../uiview/animationcurve/easein.md), [`UIView.AnimationCurve.easeOut`](../uiview/animationcurve/easeout.md), [`UIView.AnimationCurve.easeInOut`](../uiview/animationcurve/easeinout.md), or [`UIView.AnimationCurve.linear`](../uiview/animationcurve/linear.md).
 

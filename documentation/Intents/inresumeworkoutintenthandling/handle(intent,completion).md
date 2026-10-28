@@ -28,7 +28,7 @@ func handle(intent: INResumeWorkoutIntent) async -> INResumeWorkoutIntentRespons
 - (void) handleResumeWorkout:(INResumeWorkoutIntent *) intent completion:(void (^)(INResumeWorkoutIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to turn control of resuming the workout to your app. When your response object contains the [`INResumeWorkoutIntentResponseCode.continueInApp`](../inresumeworkoutintentresponsecode/continueinapp.md) code, SiriKit automatically launches your app and passes it the [`NSUserActivity`](../../Foundation/nsuseractivity.md) object from your response object.
 

@@ -15,7 +15,7 @@ The session is pausing its connection to a streaming endpoint.
 case pausing
 ```
 
-#### Discussion
+## Discussion
 
 The [`FoveatedStreamingSession`](../../foveatedstreamingsession.md) briefly enters this state while it pauses the connection after you call [`pause()`](../pause%28%29.md), or the person returned to the home screen on visionOS.
 

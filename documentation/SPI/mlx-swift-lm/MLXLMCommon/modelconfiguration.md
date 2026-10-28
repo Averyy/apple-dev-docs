@@ -21,7 +21,7 @@ struct ModelConfiguration
 
 - [Model Compatibility](./model-compatibility.md)
 
-#### Overview
+## Overview
 
 Optionally callers can provide some default values and overrides for:
 

@@ -15,7 +15,7 @@ Adds a color transition point to the gradient.
 addColorStop(offset: number, color: string): void;
 ```
 
-#### Discussion
+## Discussion
 
 If offset is less than `0` or greater than `1`, MapKit JS logs a warning to the console, but doesn’t change the object.
 

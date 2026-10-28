@@ -33,7 +33,7 @@ var sortType: INSortType { get set }
 @property (atomic, assign, readwrite) INSortType sortType;
 ```
 
-#### Discussion
+## Discussion
 
 After assigning the search results to the appropriate property of your response object, update this property to specify how you sorted the results.
 

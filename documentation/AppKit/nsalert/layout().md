@@ -19,7 +19,7 @@ func layout()
 - (void) layout;
 ```
 
-#### Discussion
+## Discussion
 
 You need to call this method only when you need to customize the alert’s layout. Call this method after all the alert’s attributes have been customized, including the suppression checkbox and the accessory layout. After the method returns, you can make the necessary layout changes; for example, adjusting the frame of the accessory view.
 

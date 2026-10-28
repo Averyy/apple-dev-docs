@@ -25,7 +25,7 @@ class SKTestTransaction
 @interface SKTestTransaction : NSObject
 ```
 
-#### Overview
+## Overview
 
 The test transaction represents the test environment’s knowledge of the transaction, including its identifier and the transaction’s state. It represents all the transaction-related configurations you control manually in Xcode for interrupted purchases, Ask to Buy scenarios, and changes to a subscription’s auto-renew state.
 

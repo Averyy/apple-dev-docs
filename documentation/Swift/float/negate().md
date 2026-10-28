@@ -21,7 +21,7 @@ Replaces this value with its additive inverse.
 mutating func negate()
 ```
 
-#### Discussion
+## Discussion
 
 The result is always exact. This example uses the `negate()` method to negate the value of the variable `x`:
 

@@ -23,7 +23,7 @@ var developmentLayoutDirection: UIUserInterfaceLayoutDirection { get }
 @property (nonatomic, readonly) UIUserInterfaceLayoutDirection developmentLayoutDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is the layout direction used by the language associated with the main bundle’s development region. Subclasses may override this property and return a different value.
 

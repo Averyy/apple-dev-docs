@@ -23,7 +23,7 @@ class Source
 @interface AVCaptureTimecodeSource : NSObject
 ```
 
-#### Overview
+## Overview
 
 `AVCaptureTimecodeSource` provides information about a specific timecode source available for synchronization in `AVCaptureTimecodeGenerator`. It includes metadata such as the source’s name, type, and unique identifier.
 

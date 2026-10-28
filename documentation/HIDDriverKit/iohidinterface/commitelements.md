@@ -16,7 +16,7 @@ Gets or sets the contents of the interface’s stored elements.
 virtual kern_return_t commitElements(OSArray *elements, IOHIDElementCommitDirection direction);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 

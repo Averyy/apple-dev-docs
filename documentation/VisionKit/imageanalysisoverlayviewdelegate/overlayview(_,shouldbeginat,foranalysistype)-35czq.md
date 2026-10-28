@@ -20,11 +20,11 @@ func overlayView(_ overlayView: ImageAnalysisOverlayView, shouldBeginAt point: C
 
 - [Enabling Live Text interactions with images](../enabling-live-text-interactions-with-images.md)
 
-#### Return Value
+## Return Value
 
 This default implementation returns `true`.
 
-#### Discussion
+## Discussion
 
 The overlay view invokes this method once for each type of interaction. The default return value is `true`, which starts the interface immediately upon presentation.
 

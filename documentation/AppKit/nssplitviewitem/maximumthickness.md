@@ -19,7 +19,7 @@ var maximumThickness: CGFloat { get set }
 @property CGFloat maximumThickness;
 ```
 
-#### Discussion
+## Discussion
 
 This value affects the split view item’s width (for a vertical split view) or height (for a horizontal split view).
 

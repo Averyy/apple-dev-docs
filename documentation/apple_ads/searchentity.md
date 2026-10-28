@@ -17,11 +17,11 @@ The list of geolocations that includes the geoidentifier and entity type.
 object SearchEntity
 ```
 
-#### Discussion
+## Discussion
 
 Use the [`Search for Geolocations`](./search-for-geolocations.md) endpoint to fetch a `displayName` for a geolocation.
 
-##### Example Search Entity Object
+### Example Search Entity Object
 
 ```json
 {

@@ -23,7 +23,7 @@ mutating func remove(atOffsets offsets: IndexSet)
 
 Available when `Self` conforms to `MutableCollection`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(*n*) where *n* is the length of the collection.
 

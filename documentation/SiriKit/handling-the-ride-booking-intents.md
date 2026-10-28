@@ -4,13 +4,13 @@
 
 Support the different intent-handling sequences for booking rides with Shortcuts or Maps.
 
-#### Overview
+## Overview
 
 A successful implementation of a ride-booking Intents app extension requires supporting all of the intents in the ride-booking domain. In fact, Maps on iOS expects your extension to handle all of the intents and doesn’t load it if it doesn’t.
 
 A ride-booking Intents app extension provides a list of available vehicles, details about the cost of each ride, and status updates for any booked rides. It also facilitates financial transactions associated with any rides and communicates any relevant information to your ride booking service. Shortcuts and Maps handle ride booking differently, and your extension must be able to support both flows.
 
-##### Book Rides from Maps
+### Book Rides from Maps
 
 With Maps, users specify information such as the start and end points of their route directly using the Maps interface. Then Maps sends an [`INListRideOptionsIntent`](../Intents/inlistrideoptionsintent.md) object that describes the user’s trip to your Intents app extension. Provide ride options available for the user’s requested trip. For more information about providing effective ride options, see [Generating a List of Ride Options](./generating-a-list-of-ride-options.md). After the user selects one of your ride options, Maps sends an [`INRequestRideIntent`](../Intents/inrequestrideintent.md) object to your Intents app extension to handle. Use the information in this object to book the ride.
 
@@ -18,7 +18,7 @@ With Maps, users specify information such as the start and end points of their r
 
 Maps may send the same [`INGetRideStatusIntent`](../Intents/ingetridestatusintent.md) object to your Intents app extension multiple times after booking is complete. Maps may also call the [`startSendingUpdates(for:to:)`](../Intents/ingetridestatusintenthandling/startsendingupdates%28for,to%29.md) method of your intent handler to ask for live status updates. Prepare your handler to push frequent status updates to the specified observer object. For information about how to handle live status updates, see [Providing Live Status Updates](./providing-live-status-updates.md).
 
-##### Book Rides from Shortcuts and Siri Suggestions
+### Book Rides from Shortcuts and Siri Suggestions
 
 Shortcuts and Siri Suggestions send your Intents app extension [`INRequestRideIntent`](../Intents/inrequestrideintent.md) objects to resolve, confirm, and handle. For more details about this sequence, see [Resolving and Handling Intents](./resolving-and-handling-intents.md). Implement the methods in the [`INRequestRideIntentHandling`](../Intents/inrequestrideintenthandling.md) protocol to prompt the user for additional information and confirm the details of their trip.
 

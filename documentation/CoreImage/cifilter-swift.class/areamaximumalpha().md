@@ -24,11 +24,11 @@ class func areaMaximumAlpha() -> any CIFilter & CIAreaMaximumAlpha
 + (CIFilter<CIAreaMaximumAlpha> *) areaMaximumAlphaFilter;
 ```
 
-#### Return Value
+## Return Value
 
 A 1 x 1 size image containing the pixel with the maximum alpha value.
 
-#### Discussion
+## Discussion
 
 This filter returns the pixel with highest alpha value in the region defined by `extent`.
 

@@ -21,7 +21,7 @@ Sets an explicit active appearance for this material.
 func materialActiveAppearance(_ appearance: MaterialActiveAppearance) -> Material
 ```
 
-#### Discussion
+## Discussion
 
 Materials used as the `window` container background on macOS will automatically appear inactive when their the window appears inactive, but can be made to always appear active by setting the active appearance behavior to be always active:
 

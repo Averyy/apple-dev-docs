@@ -19,7 +19,7 @@ var childViewControllerForUserInterfaceStyle: UIViewController? { get }
 @property (nonatomic, readonly, nullable) UIViewController * childViewControllerForUserInterfaceStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`. A container view controller can override this property and return the child view controller that supports the currently preferred user interface style, as determined by the [`preferredUserInterfaceStyle`](./preferreduserinterfacestyle.md) property.
 

@@ -25,7 +25,7 @@ class Timer
 @interface NSTimer : NSObject
 ```
 
-#### Overview
+## Overview
 
 Timers work in conjunction with run loops. Run loops maintain strong references to their timers, so you don’t have to maintain your own strong reference to a timer after you have added it to a run loop.
 
@@ -35,17 +35,17 @@ A timer is not a real-time mechanism. If a timer’s firing time occurs during a
 
 [`Timer`](./timer.md) is toll-free bridged with its Core Foundation counterpart, [`CFRunLoopTimer`](../CoreFoundation/cfrunlooptimer.md).  See [Toll-Free Bridging](https://developer.apple.com/library/archive/documentation/General/Conceptual/CocoaEncyclopedia/Toll-FreeBridgin/Toll-FreeBridgin.html#//apple_ref/doc/uid/TP40010810-CH2) for more information.
 
-##### Comparing Repeating and Nonrepeating Timers
+### Comparing Repeating and Nonrepeating Timers
 
 You specify whether a timer is repeating or nonrepeating at creation time. A nonrepeating timer fires once and then invalidates itself automatically, thereby preventing the timer from firing again. By contrast, a repeating timer fires and then reschedules itself on the same run loop.  A repeating timer always schedules itself based on the scheduled firing time, as opposed to the actual firing time. For example, if a timer is scheduled to fire at a particular time and every 5 seconds after that, the scheduled firing time will always fall on the original 5-second time intervals, even if the actual firing time gets delayed. If the firing time is delayed so far that it passes one or more of the scheduled firing times, the timer is fired only once for that time period; the timer is then rescheduled, after firing, for the next scheduled firing time in the future.
 
-##### Timer Tolerance
+### Timer Tolerance
 
 In iOS 7 and later and macOS 10.9 and later, you can specify a tolerance for a timer ([`tolerance`](./timer/tolerance.md)). This flexibility in when a timer fires improves the system’s ability to optimize for increased power savings and responsiveness. The timer may fire at any time between its scheduled fire date and the scheduled fire date plus the tolerance. The timer doesn’t fire before the scheduled fire date. For repeating timers, the next fire date is calculated from the original fire date regardless of tolerance applied at individual fire times, to avoid drift. The default value is zero, which means no additional tolerance is applied. The system reserves the right to apply a small amount of tolerance to certain timers regardless of the value of the [`tolerance`](./timer/tolerance.md) property.
 
 As the user of the timer, you can determine the appropriate tolerance for a timer. A general rule, set the tolerance to at least 10% of the interval, for a repeating timer. Even a small amount of tolerance has significant positive impact on the power usage of your application. The system may enforce a maximum value for the tolerance.
 
-##### Scheduling Timers in Run Loops
+### Scheduling Timers in Run Loops
 
 You can register a timer in only one run loop at a time, although it can be added to multiple run loop modes within that run loop. There are three ways to create a timer:
 
@@ -57,7 +57,7 @@ Once scheduled on a run loop, the timer fires at the specified interval until it
 
 After a repeating timer fires, it schedules the next firing for the nearest future date that is an integer multiple of the timer interval after the last scheduled fire date, within the specified [`tolerance`](./timer/tolerance.md). If the time taken to call out to perform a selector or invocation is longer than the specified interval, the timer schedules only the next firing; that is, the timer doesn’t attempt to compensate for any missed firings that would have occurred while calling the specified selector or invocation.
 
-##### Subclassing Notes
+### Subclassing Notes
 
 Do not subclass [`Timer`](./timer.md).
 

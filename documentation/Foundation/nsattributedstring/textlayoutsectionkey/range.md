@@ -21,7 +21,7 @@ The character range.
 static let range: NSAttributedString.TextLayoutSectionKey
 ```
 
-#### Discussion
+## Discussion
 
 An [`NSValue`](../../nsvalue.md) object containing an `NSRange` representing a character range. The default value is a range covering the entire string.
 

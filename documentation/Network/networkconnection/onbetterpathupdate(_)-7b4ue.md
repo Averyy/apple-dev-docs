@@ -24,7 +24,7 @@ final func onBetterPathUpdate(_ handler: @escaping @isolated(any) @Sendable (Net
 
 Available when `ApplicationProtocol` conforms to `OneToOneProtocol`.
 
-#### Discussion
+## Discussion
 
 Set a closure to be called when a better path becomes available or unavailable, which may be called multiple times until the connection is cancelled.
 

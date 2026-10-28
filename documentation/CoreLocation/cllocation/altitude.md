@@ -25,7 +25,7 @@ var altitude: CLLocationDistance { get }
 @property (nonatomic, readonly) CLLocationDistance altitude;
 ```
 
-#### Discussion
+## Discussion
 
 The [`altitude`](./altitude.md) property represents an orthometric height, which is the height above the approximate mean sea level. Positive values indicate altitudes above mean sea level. Negative values indicate altitudes below mean sea level.
 

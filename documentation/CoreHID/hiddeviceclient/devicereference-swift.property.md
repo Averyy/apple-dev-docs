@@ -16,7 +16,7 @@ nonisolated
 final let deviceReference: HIDDeviceClient.DeviceReference
 ```
 
-#### Discussion
+## Discussion
 
 For more details, see [`HIDDeviceClient.DeviceReference`](./devicereference-swift.struct.md).
 

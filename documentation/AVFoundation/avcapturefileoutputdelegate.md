@@ -19,7 +19,7 @@ protocol AVCaptureFileOutputDelegate : NSObjectProtocol
 @protocol AVCaptureFileOutputDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The `AVCaptureFileOutputDelegate` protocol defines an interface for delegates of an [`AVCaptureFileOutput`](./avcapturefileoutput.md) object to monitor and control recordings along exact sample boundaries.
 

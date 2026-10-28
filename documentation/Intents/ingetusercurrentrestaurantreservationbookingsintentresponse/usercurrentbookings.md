@@ -30,7 +30,7 @@ var userCurrentBookings: [INRestaurantReservationUserBooking] { get set }
 @property (atomic, copy) NSArray<INRestaurantReservationUserBooking *> * userCurrentBookings;
 ```
 
-#### Discussion
+## Discussion
 
 During the handling phase of the intent, your handler object should put the user’s reservations in this property. If there are no outstanding reservations associated with the user and matching the criteria in the intent object, specify an empty array for this property.
 

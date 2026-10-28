@@ -5,7 +5,7 @@
 
 The color formats, depth formats, and features that you can use to configure your rendering engine.
 
-#### Overview
+## Overview
 
 A `cp_layer_capabilities_t` type provides information about the capabilities of the current device. Simulator and devices support different sets of options. Use the information in this type to specify the configuration details for your layer.
 

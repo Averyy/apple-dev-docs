@@ -15,11 +15,11 @@ This method informs the host when the state of an driver’s object changes.
 kern_return_t PropertiesChanged(IOUserVideoObjectID in_object_id, IOUserVideoObjectPropertySelector *in_properties, uint32_t in_num_properties);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t indicating success or failure.
 
-#### Discussion
+## Discussion
 
 For device objects, this method is only used for state changes that don’t affect IO or the structure of the device.
 

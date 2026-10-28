@@ -21,7 +21,7 @@ var shouldPlaySound: Bool { get }
 @property (nonatomic, readonly) BOOL shouldPlaySound;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `true` only when both of the following conditions are true:
 

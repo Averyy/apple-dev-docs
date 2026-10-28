@@ -21,7 +21,7 @@ Replaces the specified subrange of elements by copying the elements of the given
 mutating func replaceSubrange(_ subrange: Range<Int>, copying newElements: Span<Element>)
 ```
 
-#### Discussion
+## Discussion
 
 This method has the effect of removing the specified range of elements from the array and inserting the new elements starting at the same location. The number of new elements need not match the number of elements being removed.
 

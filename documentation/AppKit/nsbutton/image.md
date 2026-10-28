@@ -19,7 +19,7 @@ var image: NSImage? { get set }
 @property (strong, nullable) NSImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 The image contained in this property is always displayed on a button that doesn’t change its contents when highlighting or showing an on state. Buttons don’t display images by default.
 

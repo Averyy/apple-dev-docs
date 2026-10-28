@@ -34,7 +34,7 @@ var attributedContentText: NSAttributedString? { get set }
 @property (atomic, copy, nullable) NSAttributedString * attributedContentText;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Alternatively, you can set attributed content in the [`userInfo`](./userinfo.md) dictionary using the [`NSExtensionItemAttributedContentTextKey`](../nsextensionitemattributedcontenttextkey.md) key. However, setting the [`userInfo`](./userinfo.md) dictionary after setting [`attributedContentText`](./attributedcontenttext.md) overrides this property.
 

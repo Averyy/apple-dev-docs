@@ -16,7 +16,7 @@ Sets the ORB refCon.
 void (*setRefCon)(void *self, void *refCon);
 ```
 
-#### Discussion
+## Discussion
 
 Sets a user defined value on the ORB that can be retrieved later with the method getRefCon.
 

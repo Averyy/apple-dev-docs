@@ -19,7 +19,7 @@ func MDItemCopyAttributes(_ item: MDItem!, _ names: CFArray!) -> CFDictionary!
 CFDictionaryRef MDItemCopyAttributes(MDItemRef item, CFArrayRef names);
 ```
 
-#### Return Value
+## Return Value
 
 A CFDictionary containing keys for the requested attribute names, and the corresponding values. If an attribute does not exist, or the attribute is unreadable, there will be no key-value pair for it in the dictionary. Returns `NULL` on failure.
 

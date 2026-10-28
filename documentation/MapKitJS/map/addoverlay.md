@@ -15,11 +15,11 @@ Adds an overlay to the map.
 addOverlay(overlay: Overlay): Overlay | null;
 ```
 
-#### Return Value
+## Return Value
 
 Returns the overlay.
 
-#### Discussion
+## Discussion
 
 MapKit JS adds the overlay to the end of the map’s [`overlays`](./overlays.md) array.
 

@@ -18,7 +18,7 @@ Creates and initializes a new uniform object that holds a vector of three floati
 + (instancetype) uniformWithName:(NSString *) name floatVector3:(GLKVector3) value;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized uniform object whose type is set to [`SKUniformType.floatVector3`](../skuniformtype/floatvector3.md).
 

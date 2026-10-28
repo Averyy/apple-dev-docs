@@ -19,7 +19,7 @@ var usesThreadedAnimation: Bool { get set }
 @property BOOL usesThreadedAnimation;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), animation of the progress indicator occurs in a separate thread.
 

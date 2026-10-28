@@ -23,7 +23,7 @@ class BEScrollViewScrollUpdate
 @interface BEScrollViewScrollUpdate : NSObject
 ```
 
-#### Overview
+## Overview
 
 When a person scrolls a [`BEScrollView`](./bescrollview.md), the system calls the view’s delegate’s [`scrollView(_:handle:completion:)`](./bescrollviewdelegate/scrollview%28_,handle,completion%29.md) method with an instance of this class as the `handle` parameter. Your app can continue to receive `BEScrollViewScrollUpdate` objects after the person completes their scroll gesture, as the scroll decelerates.
 

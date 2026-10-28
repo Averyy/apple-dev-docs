@@ -25,7 +25,7 @@ convenience init(fromImageSourceAuxiliaryDataType imageSourceAuxiliaryDataType: 
 + (instancetype) semanticSegmentationMatteFromImageSourceAuxiliaryDataType:(CFStringRef) imageSourceAuxiliaryDataType dictionaryRepresentation:(NSDictionary *) imageSourceAuxiliaryDataInfoDictionary error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A new semantic segmentation matte instance, or `nil` if the auxiliary data info dictionary is malformed.
 

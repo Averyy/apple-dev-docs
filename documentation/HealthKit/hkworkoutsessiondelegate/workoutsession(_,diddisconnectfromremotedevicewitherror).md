@@ -24,7 +24,7 @@ optional func workoutSession(_ workoutSession: HKWorkoutSession, didDisconnectFr
 - (void) workoutSession:(HKWorkoutSession *) workoutSession didDisconnectFromRemoteDeviceWithError:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 After the system calls this method, the provided workout session is no longer valid, and you can no longer use it.
 

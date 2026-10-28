@@ -16,11 +16,11 @@ Gets a value for an element and returns status via a completion callback.
 IOReturn IOHIDDeviceGetValueWithCallback(IOHIDDeviceRef device, IOHIDElementRef element, IOHIDValueRef  _Nonnull *pValue, CFTimeInterval timeout, IOHIDValueCallback callback, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful.
 
-#### Discussion
+## Discussion
 
 This method behaves asynchronusly and is only relevent for either output or feature type elements. If obtaining values for multiple elements you may want to consider using IOHIDDeviceCopyValueMultipleWithCallback or IOHIDTransaction.
 

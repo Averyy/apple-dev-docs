@@ -20,7 +20,7 @@ The optional time, in seconds, at which the source animation plays.
 var trimStart: TimeInterval? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` by default, which plays the animation with `time` = `0`. If you set a value, the animation edits the duration according to the specified beginning time.
 

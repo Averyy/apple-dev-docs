@@ -5,11 +5,11 @@
 
 Model your app’s objects.
 
-#### Overview
+## Overview
 
 An entity describes an object, including its name, attributes, and relationships. Create an entity for each of your app’s objects.
 
-##### Add Entities
+### Add Entities
 
 After you create a Core Data model as described in [Creating a Core Data model](./creating-a-core-data-model.md), add an entity to your project’s `.xcdatamodeld` file:
 
@@ -20,7 +20,7 @@ After you create a Core Data model as described in [Creating a Core Data model](
 
 In addition to the required name and class name fields, entities have a default setting for the required code generation field. If you need to add inheritance, unique constraints, versioning, or other optional information, configure your entity as described below. Otherwise, add the properties that compose your entity as described in [Configuring Attributes](./configuring-attributes.md).
 
-##### Configure Entities
+### Configure Entities
 
 Use the data model inspector (choose View > Inspectors > Show Data Model Inspector) to configure your entity.
 

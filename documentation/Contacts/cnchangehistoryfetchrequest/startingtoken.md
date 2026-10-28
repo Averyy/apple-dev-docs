@@ -24,7 +24,7 @@ var startingToken: Data? { get set }
 @property (nonatomic, copy, nullable) NSData * startingToken;
 ```
 
-#### Discussion
+## Discussion
 
 Specify [`nil`](../../ObjectiveC/nil-227m0.md) to receive a [`CNChangeHistoryDropEverythingEvent`](../cnchangehistorydropeverythingevent.md), followed by an add event for every contact and group in the Contacts database.
 

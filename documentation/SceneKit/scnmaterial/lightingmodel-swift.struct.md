@@ -25,7 +25,7 @@ struct LightingModel
 typedef NSString * SCNLightingModel;
 ```
 
-#### Discussion
+## Discussion
 
 ![](https://developer.apple.com/tutorials/images/com.apple.scenekit/media-2929794@2x.png)
 

@@ -15,7 +15,7 @@ Creates a new session.
 convenience init()
 ```
 
-#### Discussion
+## Discussion
 
 ARKit stops sessions when they’re deinitialized.
 

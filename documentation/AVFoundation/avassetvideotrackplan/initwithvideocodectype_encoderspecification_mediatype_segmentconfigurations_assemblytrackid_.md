@@ -20,7 +20,7 @@ Returns an instance of AVAssetVideoTrackPlan
 - (instancetype) initWithVideoCodecType:(AVVideoCodecType) videoCodecType encoderSpecification:(NSDictionary *) encoderSpecification mediaType:(AVMediaType) mediaType segmentConfigurations:(NSArray<AVPlannedSegmentConfiguration *> *) segmentConfigurations assemblyTrackID:(CMPersistentTrackID) trackID;
 ```
 
-#### Discussion
+## Discussion
 
 This initializer throws NSInvalidArgumentException in the following cases.
 

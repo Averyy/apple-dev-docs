@@ -20,7 +20,7 @@ An error that indicates that more than one identifier exists.
 static var multipleIdentifiersFound: PHPhotosError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 To retrieve a list of identifiers inspect [`userInfo`](../../Foundation/nserror/userinfo.md) using the key [`PHLocalIdentifiersErrorKey`](../phlocalidentifierserrorkey.md).
 

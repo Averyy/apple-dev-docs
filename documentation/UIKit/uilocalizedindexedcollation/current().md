@@ -23,7 +23,7 @@ class func current() -> Self
 + (instancetype) currentCollation;
 ```
 
-#### Return Value
+## Return Value
 
 A [`UILocalizedIndexedCollation`](../uilocalizedindexedcollation.md) object or `nil` if there was a problem creating the object.
 

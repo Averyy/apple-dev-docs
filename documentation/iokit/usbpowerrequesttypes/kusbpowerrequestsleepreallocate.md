@@ -14,7 +14,7 @@
 kUSBPowerRequestSleepReallocate = 5
 ```
 
-#### Discussion
+## Discussion
 
 When used with ReturnExtraPower(), it will send a message to all devices indicating that they can ask for more sleep power, as some device has released it.
 

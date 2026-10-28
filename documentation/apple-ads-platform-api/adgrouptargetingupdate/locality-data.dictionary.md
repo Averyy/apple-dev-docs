@@ -15,7 +15,7 @@ City or locality targeting.
 object AdGroupTargetingUpdate.Locality
 ```
 
-#### Discussion
+## Discussion
 
 Locality IDs are returned by [`Search Geo Locations`](../searches-for-a-list-of-geo-locations.md) or [`Query Geo Locations`](../gets-a-list-of-geo-locations.md). Applies to App Store and Apple Maps campaigns. Uses the [`TargetingDataUpdate`](../targetingdataupdate.md) `include`/`exclude` shape.
 

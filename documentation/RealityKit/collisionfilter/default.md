@@ -20,7 +20,7 @@ The default collision filter.
 static let `default`: CollisionFilter
 ```
 
-#### Discussion
+## Discussion
 
 Entities with a [`default`](./default.md) collision filter have a [`group`](./group.md) of [`default`](../collisiongroup/default.md) and a [`mask`](./mask.md) of [`all`](../collisiongroup/all.md).
 

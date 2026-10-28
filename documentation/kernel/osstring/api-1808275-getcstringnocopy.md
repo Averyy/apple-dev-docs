@@ -11,7 +11,7 @@ Returns a pointer to the internal C string buffer.
 virtual const char * getCStringNoCopy() const;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the internal C string buffer.
 

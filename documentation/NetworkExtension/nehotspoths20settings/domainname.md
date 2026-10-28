@@ -22,7 +22,7 @@ var domainName: String { get }
 @property (readonly, nonnull) NSString * domainName;
 ```
 
-#### Discussion
+## Discussion
 
 The domain name string may be 1-253 characters, inclusive.
 

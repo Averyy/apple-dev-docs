@@ -20,11 +20,11 @@ Finds the collection of entities at the specified point in the scene.
 @preconcurrency func entities(at point: CGPoint) -> [Entity]
 ```
 
-#### Return Value
+## Return Value
 
 An array of entities at `point`. The array is empty if there are no entities.
 
-#### Discussion
+## Discussion
 
 The method ignores entities that lack a [`CollisionComponent`](../collisioncomponent.md).
 

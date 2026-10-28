@@ -21,7 +21,7 @@ The aggregated results for all analysis types that a music understanding session
 struct SessionResult
 ```
 
-#### Overview
+## Overview
 
 Each property corresponds to one analysis type that the session can perform: the instrument activity, key, loudness, rhythm, pace, and structure. A property is nil if the session wasn’t configured to perform that analysis. Access a session result after the session finishes processing audio to retrieve the data for each configured type.
 

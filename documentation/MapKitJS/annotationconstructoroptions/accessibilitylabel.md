@@ -15,7 +15,7 @@ Accessibility text for the annotation.
 accessibilityLabel?: string;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `null`.
 

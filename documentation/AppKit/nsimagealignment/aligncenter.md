@@ -17,7 +17,7 @@ case alignCenter
 NSImageAlignCenter
 ```
 
-#### Discussion
+## Discussion
 
 Center the image in the cell.
 

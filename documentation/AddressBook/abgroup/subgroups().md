@@ -19,7 +19,7 @@ func subgroups() -> [Any]!
 - (NSArray *) subgroups;
 ```
 
-#### Discussion
+## Discussion
 
 If this group doesn’t contain any groups, this method returns an empty array.
 

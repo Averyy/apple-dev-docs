@@ -23,7 +23,7 @@ case restricted
 UIBackgroundRefreshStatusRestricted
 ```
 
-#### Discussion
+## Discussion
 
 For example, this status can occur when parental controls are in effect for the current user.
 

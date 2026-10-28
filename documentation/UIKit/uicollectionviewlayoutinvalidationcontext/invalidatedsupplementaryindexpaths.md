@@ -23,7 +23,7 @@ var invalidatedSupplementaryIndexPaths: [String : [IndexPath]]? { get }
 @property (nonatomic, readonly, nullable) NSDictionary<NSString *,NSArray<NSIndexPath *> *> * invalidatedSupplementaryIndexPaths;
 ```
 
-#### Discussion
+## Discussion
 
 The keys in this dictionary are the element kind strings of the invalid supplementary views. The value for each key is an array of [`NSIndexPath`](../../Foundation/nsindexpath.md) objects indicating which specific supplementary views have layout changes.
 

@@ -26,7 +26,7 @@ var audioEngine: AVAudioEngine { get }
 @property (nonatomic, readonly) AVAudioEngine * audioEngine;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit uses this audio engine to play sounds from [`SCNAudioPlayer`](../scnaudioplayer.md) objects attached to nodes in the scene. You can use this object directly to add other sound sources not related to scene contents, or to add other sound processing nodes or mixing nodes to the audio engine. To identify the node SceneKit uses for spatializing scene sounds when connecting other nodes, use the [`audioEnvironmentNode`](./audioenvironmentnode.md) property.
 

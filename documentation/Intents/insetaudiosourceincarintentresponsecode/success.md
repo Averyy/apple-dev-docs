@@ -24,7 +24,7 @@ case success
 INSetAudioSourceInCarIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code if your app successfully changed the audio source to the newly requested one.
 

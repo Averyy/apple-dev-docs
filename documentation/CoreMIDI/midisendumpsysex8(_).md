@@ -23,11 +23,11 @@ func MIDISendUMPSysex8(_ umpRequest: UnsafeMutablePointer<MIDISysexSendRequestUM
 extern OSStatus MIDISendUMPSysex8(MIDISysexSendRequestUMP *umpRequest);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 
-#### Discussion
+## Discussion
 
 The request’s [`data`](./midisysexsendrequest/data.md) needs to point to a single MIDI SysEx 8-bit message, or portion thereof.
 

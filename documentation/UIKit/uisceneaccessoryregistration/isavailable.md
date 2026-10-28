@@ -25,7 +25,7 @@ var isAvailable: Bool { get }
 
 - [Presenting content on a connected display](../presenting-content-on-a-connected-display.md)
 
-#### Discussion
+## Discussion
 
 This value is observable during the `updateProperties` and `layoutSubviews` lifecycle events.
 

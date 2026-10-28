@@ -24,11 +24,11 @@ var isEncrypted: Bool { get }
 @property (nonatomic, readonly) BOOL isEncrypted;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the document is encrypted, whether it is locked or unlocked; [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 If encrypted, reading the document requires a password.
 

@@ -16,7 +16,7 @@ The name of the IOPartitionScheme class.
 #define kIOPartitionSchemeClass
 ```
 
-#### Discussion
+## Discussion
 
 kIOPartitionSchemeClass is the name of the IOPartitionScheme class.
 

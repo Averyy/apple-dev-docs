@@ -21,7 +21,7 @@ The title is center-aligned.
 static let center: ToolbarTitleAlignment
 ```
 
-#### Discussion
+## Discussion
 
 Unlike [`automatic`](./automatic.md), this never falls back to the default alignment.
 

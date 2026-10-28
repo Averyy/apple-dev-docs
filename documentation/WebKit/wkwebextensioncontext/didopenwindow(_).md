@@ -23,7 +23,7 @@ func didOpenWindow(_ newWindow: any WKWebExtensionWindow)
 - (void) didOpenWindow:(id<WKWebExtensionWindow>) newWindow;
 ```
 
-#### Discussion
+## Discussion
 
 This method informs only the specific extension of the opening of a new window. If the intention is to inform all loaded extensions consistently, you should use the respective method on the extension controller instead.
 

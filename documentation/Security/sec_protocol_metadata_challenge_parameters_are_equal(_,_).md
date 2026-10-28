@@ -23,11 +23,11 @@ func sec_protocol_metadata_challenge_parameters_are_equal(_ metadataA: sec_proto
 bool sec_protocol_metadata_challenge_parameters_are_equal(sec_protocol_metadata_t metadataA, sec_protocol_metadata_t metadataB);
 ```
 
-#### Return Value
+## Return Value
 
 Returns true if both metadata values have the same challenge parameters.
 
-#### Discussion
+## Discussion
 
 Compare challenge-relevant information for two `sec_protocol_metadata` instances.
 

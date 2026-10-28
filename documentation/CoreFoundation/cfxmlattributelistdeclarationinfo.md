@@ -19,7 +19,7 @@ struct CFXMLAttributeListDeclarationInfo
 typedef struct { ... } CFXMLAttributeListDeclarationInfo;
 ```
 
-#### Overview
+## Overview
 
 A pointer to this structure is included in the CFXMLNode object passed to your application when the parser encounters an attribute declaration in the DTD. Use the [`CFXMLNodeGetInfoPtr`](./cfxmlnodegetinfoptr.md) function to obtain the pointer to this structure.
 

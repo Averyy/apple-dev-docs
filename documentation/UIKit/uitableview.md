@@ -33,7 +33,7 @@ class UITableView
 - [Making a view into a drag source](./making-a-view-into-a-drag-source.md)
 - [Making a view into a drop destination](./making-a-view-into-a-drop-destination.md)
 
-#### Overview
+## Overview
 
 Table views in iOS display rows of vertically scrolling content in a single column. Each row in the table contains one piece of your app’s content. You can configure a table to display a single long list of rows, or you can group related rows into sections to make navigating the content easier.
 
@@ -47,7 +47,7 @@ Tables are common in apps with data that’s highly structured or organized hier
 
 [`UITableView`](./uitableview.md) manages the basic appearance of the table, but your app provides the cells ([`UITableViewCell`](./uitableviewcell.md) objects) that display the actual content. The standard cell configurations display a simple combination of text and images, but you can define custom cells that display any content you want. You can also supply header and footer views to provide additional information for groups of cells.
 
-##### Add a table view to your interface
+### Add a table view to your interface
 
 To add a table view to your interface, drag a table view controller ([`UITableViewController`](./uitableviewcontroller.md)) object to your storyboard. Xcode creates a new scene that includes both the view controller and a table view, ready for you to configure and use.
 
@@ -55,7 +55,7 @@ Table views are data-driven, normally getting their data from a data source obje
 
 For information about how to specify your table’s data, see [Filling a table with data](./filling-a-table-with-data.md).
 
-##### Save and restore the table’s current state
+### Save and restore the table’s current state
 
 Table views support UIKit app restoration. To save and restore the table’s data, assign a nonempty value to the table view’s [`restorationIdentifier`](./uiviewcontroller/restorationidentifier.md) property. When you save its parent view controller, the table view automatically saves the index paths for the currently selected and visible rows. If the table’s data source object adopts the [`UIDataSourceModelAssociation`](./uidatasourcemodelassociation.md) protocol, the table stores the unique IDs that you provide for those items instead of their index paths.
 

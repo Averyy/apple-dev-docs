@@ -12,7 +12,7 @@ virtual void ResumeServices (
  void );
 ```
 
-#### Overview
+## Overview
 
 Method that will be called to resume services provided by the driver. ( See SuspendServices discussion )
 

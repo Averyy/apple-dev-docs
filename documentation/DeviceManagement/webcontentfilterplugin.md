@@ -19,11 +19,11 @@ The declaration to configure a WebContent Filter that uses a plugin.
 object WebContentFilterPlugin
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.configuration.webcontent-filter.plugin` as the declaration type.
 
-##### Configuration availability
+### Configuration availability
 
 |  |  |
 | --- | --- |
@@ -35,7 +35,7 @@ Specify `com.apple.configuration.webcontent-filter.plugin` as the declaration ty
 | Allowed in user scope | N/A |
 | Apply | Multiple configurations are applied separately |
 
-##### Configuration example
+### Configuration example
 
 This configuration sets up a web content filter using a Network Extension plugin bundle.
 

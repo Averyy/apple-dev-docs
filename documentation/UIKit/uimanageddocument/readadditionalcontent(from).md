@@ -22,7 +22,7 @@ func readAdditionalContent(from absoluteURL: URL) throws
 - (BOOL) readAdditionalContentFromURL:(NSURL *) absoluteURL error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 You override this method to read non-Core Data content from the additional content directory in the document’s file package.
 
@@ -34,7 +34,7 @@ There’s no need to invoke `super`’s implementation.
 >
 > When overriding this method, use the `throw` statement to throw an `NSError`, as described in [Error Handling](https://docs.swift.org/swift-book/LanguageGuide/ErrorHandling.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/) and `About Imported Cocoa Error Parameters`.
 
-##### Special considerations
+### Special considerations
 
 Additional content isn’t supported on iCloud.
 

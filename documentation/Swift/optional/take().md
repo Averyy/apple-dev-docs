@@ -21,11 +21,11 @@ Takes the wrapped value being stored in this instance and returns it while also 
 mutating func take() -> Optional<Wrapped>
 ```
 
-#### Return Value
+## Return Value
 
 The wrapped value being stored in this instance. If this instance is `nil`, returns `nil`.
 
-#### Discussion
+## Discussion
 
 ```swift
 var numberOfShoes: Int? = 34

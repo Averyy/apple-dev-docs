@@ -21,7 +21,7 @@ A type that specifies the format for the weekday name in a date format style.
 struct Weekday
 ```
 
-#### Overview
+## Overview
 
 The type [`Date.FormatStyle.Symbol.Weekday`](./weekday.md) includes static factory variables that create custom [`Date.FormatStyle.Symbol.Weekday`](./weekday.md) objects:
 

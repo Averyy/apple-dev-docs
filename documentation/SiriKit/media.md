@@ -5,7 +5,7 @@
 
 Listen and control audio through Siri Intents, or listen and watch media content from your app with shortcuts.
 
-#### Overview
+## Overview
 
 With the Media domain, users can play and control audio media in your app. Your Intents app extension directs any media-related requests to your app, which then handles the request.
 

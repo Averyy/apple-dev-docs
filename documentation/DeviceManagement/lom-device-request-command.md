@@ -9,13 +9,13 @@ Send requests to a device using lights-out management (LOM).
 **Availability**:
 - macOS 11.0+
 
-#### Discussion
+## Discussion
 
 This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOutManagementLOM`](./lightsoutmanagementlom.md) configuration and is available in macOS 11 and later on [supported macOS devices](https://support.apple.com/guide/deployment/lights-out-management-payload-settings-dep580cf25bc/web).
 
 `DeviceDNSName` is the `CommonName` in the Identity issued on the client certificate from [`LightsOutManagementLOM`](./lightsoutmanagementlom.md). [`LOMSetupRequestResponse`](./lomsetuprequestresponse.md) returns `PrimaryIPv6AddressList` and `SecondaryIPv6AddressList` after a successful deployment of Lights Out management configuration payload and subsequent [`LOMSetupRequestCommand`](./lomsetuprequestcommand.md).
 
-##### Command availability
+### Command availability
 
 |  |  |
 | --- | --- |
@@ -25,7 +25,7 @@ This command requires the `DeviceLockAndRemovePasscode` access right, [`LightsOu
 | Allowed in user enrollment | N/A |
 | Required access right | DeviceLockAndRemovePasscode |
 
-##### Example request and response
+### Example request and response
 
 **Request**:
 

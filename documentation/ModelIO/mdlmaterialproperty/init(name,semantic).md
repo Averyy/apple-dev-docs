@@ -24,11 +24,11 @@ init(name: String, semantic: MDLMaterialSemantic)
 - (instancetype) initWithName:(NSString *) name semantic:(MDLMaterialSemantic) semantic;
 ```
 
-#### Return Value
+## Return Value
 
 A new material property object.
 
-#### Discussion
+## Discussion
 
 The newly created material property’s value is empty, and its [`type`](./type.md) property is [`MDLMaterialPropertyType.none`](../mdlmaterialpropertytype/none.md). Use one of the properties listed in Working with a Material Property’s Value to provide a value for the material property.
 

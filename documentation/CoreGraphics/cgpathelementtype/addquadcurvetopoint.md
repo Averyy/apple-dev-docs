@@ -25,7 +25,7 @@ case addQuadCurveToPoint
 kCGPathElementAddQuadCurveToPoint
 ```
 
-#### Discussion
+## Discussion
 
 The element holds a control point and a destination point. See the function [`CGPathAddQuadCurveToPoint`](../cgpathaddquadcurvetopoint.md).
 

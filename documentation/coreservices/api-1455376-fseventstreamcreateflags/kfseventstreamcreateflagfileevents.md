@@ -14,7 +14,7 @@
 kFSEventStreamCreateFlagFileEvents = 0x00000010
 ```
 
-#### Discussion
+## Discussion
 
 Request file-level notifications. Your stream will receive events about individual files in the hierarchy you're watching instead of only receiving directory level notifications. Use this flag with care as it will generate significantly more events than without it.
 

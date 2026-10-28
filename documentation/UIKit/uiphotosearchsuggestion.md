@@ -21,7 +21,7 @@ class UIPhotoSearchSuggestion
 @interface UIPhotoSearchSuggestion : UIInputSuggestion
 ```
 
-#### Discussion
+## Discussion
 
 When someone types text that could match a photo library search, such as “photos from Paris last summer,” the system recognizes the input as a photo library search and delivers a `UIPhotoSearchSuggestion` through the [`textField(_:insertInputSuggestion:)`](./uitextfielddelegate/textfield%28_,insertinputsuggestion%29.md) or [`textView(_:insertInputSuggestion:)`](./uitextviewdelegate/textview%28_,insertinputsuggestion%29.md) delegate method. Use `as? UIPhotoSearchSuggestion` to check whether the incoming [`UIInputSuggestion`](./uiinputsuggestion.md) is a photo search suggestion and access its metadata.
 
@@ -29,7 +29,7 @@ After receiving a suggestion, you have two options: Pass the object directly to 
 
 You can’t create a `UIPhotoSearchSuggestion` directly. The system creates and delivers instances through the input suggestion system.
 
-##### Presenting a photo picker
+### Presenting a photo picker
 
 Pass the suggestion to `PHPickerSearchText(photoSearchSuggestion:)` to pre-populate a `PHPickerViewController` with photos matching the person’s search.
 
@@ -60,7 +60,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate, PHPickerViewC
 }
 ```
 
-##### Building a custom search
+### Building a custom search
 
 If your app has its own photo search UI, read the filter arrays and construct your own query.
 

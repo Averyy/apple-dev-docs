@@ -13,7 +13,7 @@
 #define kIOPropertyProtocolCharacteristicsKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to define Protocol Characteristics for a particular protocol and it has an associated dictionary which lists the protocol characteristics.
 

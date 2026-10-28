@@ -21,7 +21,7 @@ The full representation of a standalone weekday.
 static var wide: Date.FormatStyle.Symbol.StandaloneWeekday { get }
 ```
 
-#### Discussion
+## Discussion
 
 This custom format style conveys the complete representation of a standalone weekday, like `Monday`.
 

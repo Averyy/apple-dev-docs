@@ -21,7 +21,7 @@ An effect that hides inactive layers in a symbol-based image.
 var hideInactiveLayers: VariableColorSymbolEffect { get }
 ```
 
-#### Discussion
+## Discussion
 
 This effect hides inactive layers completely, rather than drawing them with reduced, but nonzero, opacity.
 

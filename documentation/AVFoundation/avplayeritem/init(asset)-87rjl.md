@@ -25,7 +25,7 @@ convenience init(asset: AVAsset)
 - (instancetype) initWithAsset:(AVAsset *) asset;
 ```
 
-#### Return Value
+## Return Value
 
 A new player item, initialized to play `asset`.
 

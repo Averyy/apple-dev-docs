@@ -28,7 +28,7 @@ protocol MTLResourceStateCommandEncoder : MTLCommandEncoder
 
 - [Assigning memory to sparse textures](./assigning-memory-to-sparse-textures.md)
 
-#### Overview
+## Overview
 
 Use a resource state command encoder to manage memory mappings for sparse textures.
 

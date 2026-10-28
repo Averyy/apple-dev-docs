@@ -21,7 +21,7 @@ Returns a new predicate formed by combining the left and right expressions using
 + (NSComparisonPredicate *) predicateWithLeftExpression:(NSExpression *) lhs rightExpression:(NSExpression *) rhs customSelector:(SEL) selector;
 ```
 
-#### Return Value
+## Return Value
 
 A new predicate formed by combining the left and right expressions using `selector`.
 

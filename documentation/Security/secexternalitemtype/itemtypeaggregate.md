@@ -19,7 +19,7 @@ case itemTypeAggregate
 kSecItemTypeAggregate
 ```
 
-#### Discussion
+## Discussion
 
 Possible values include [`SecExternalFormat.formatPKCS7`](../secexternalformat/formatpkcs7.md), [`SecExternalFormat.formatPKCS12`](../secexternalformat/formatpkcs12.md), or [`SecExternalFormat.formatPEMSequence`](../secexternalformat/formatpemsequence.md) formats (see [`SecExternalFormat`](../secexternalformat.md)).
 

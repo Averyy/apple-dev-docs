@@ -25,7 +25,7 @@ let SCNSceneSourceAssetUnitMeterKey: String
 extern NSString * const SCNSceneSourceAssetUnitMeterKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../Foundation/nsnumber.md) object whose floating-point value is the number of SI meters for each unit in the scene file.
 

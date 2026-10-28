@@ -23,7 +23,7 @@ static let dogHead: AVMetadataObject.ObjectType
 extern AVMetadataObjectType const AVMetadataObjectTypeDogHead;
 ```
 
-#### Discussion
+## Discussion
 
 [`AVMetadataDogHeadObject`](../../avmetadatadogheadobject.md) objects return this constant as their type.
 

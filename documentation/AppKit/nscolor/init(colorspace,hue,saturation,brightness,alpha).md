@@ -19,7 +19,7 @@ init(colorSpace space: NSColorSpace, hue: CGFloat, saturation: CGFloat, brightne
 + (NSColor *) colorWithColorSpace:(NSColorSpace *) space hue:(CGFloat) hue saturation:(CGFloat) saturation brightness:(CGFloat) brightness alpha:(CGFloat) alpha;
 ```
 
-#### Return Value
+## Return Value
 
 The color object.
 

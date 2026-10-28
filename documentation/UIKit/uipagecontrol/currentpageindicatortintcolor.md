@@ -23,7 +23,7 @@ var currentPageIndicatorTintColor: UIColor? { get set }
 @property (nonatomic, strong, nullable) UIColor * currentPageIndicatorTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default color is an opaque white for the current page indicator dot. The current page indicator dot is used to indicate the currently visible page. Assigning a new value to this property does not automatically change the color in the [`pageIndicatorTintColor`](./pageindicatortintcolor.md) property because the value for these two properties is not automatically derived from the other. Both properties must be specified independently.
 

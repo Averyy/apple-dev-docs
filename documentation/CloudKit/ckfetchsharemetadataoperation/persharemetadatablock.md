@@ -27,7 +27,7 @@ var perShareMetadataBlock: ((URL, CKShare.Metadata?, (any Error)?) -> Void)? { g
 @property (nonatomic, copy, nullable) void (^perShareMetadataBlock)(NSURL *shareURL, CKShareMetadata *shareMetadata, NSError *error);
 ```
 
-#### Discussion
+## Discussion
 
 The closure returns no value and takes the following parameters:
 

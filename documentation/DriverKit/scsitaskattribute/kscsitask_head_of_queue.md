@@ -16,7 +16,7 @@
 kSCSITask_HEAD_OF_QUEUE
 ```
 
-#### Discussion
+## Discussion
 
 The task has a head-of-queue attribute.
 

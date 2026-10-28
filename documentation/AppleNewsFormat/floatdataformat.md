@@ -15,13 +15,13 @@ The object that allows you to specify the number of digits after the decimal poi
 object FloatDataFormat
 ```
 
-#### Discussion
+## Discussion
 
 When you specify `float` as the data type for an item in [`DataDescriptor`](./datadescriptor.md), you can indicate the number of places after the decimal point that you want to display.
 
 This object can be used in [`DataDescriptor`](./datadescriptor.md).
 
-##### Example
+### Example
 
 ```json
 {

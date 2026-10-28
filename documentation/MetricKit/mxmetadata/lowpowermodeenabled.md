@@ -25,7 +25,7 @@ var lowPowerModeEnabled: Bool { get }
 @property (readonly) bool lowPowerModeEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Retrieve the current setting of the system for the low power mode setting. On systems where the low power mode is unknown or unsupported, the value returned from the [`lowPowerModeEnabled`](./lowpowermodeenabled.md) property is always NO.
 

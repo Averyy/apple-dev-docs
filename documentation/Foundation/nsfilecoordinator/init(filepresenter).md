@@ -25,11 +25,11 @@ init(filePresenter filePresenterOrNil: (any NSFilePresenter)?)
 - (instancetype) initWithFilePresenter:(id<NSFilePresenter>) filePresenterOrNil;
 ```
 
-#### Return Value
+## Return Value
 
 A file coordinator object to use to coordinate file-related operations.
 
-#### Discussion
+## Discussion
 
 Specifying a file presenter at initialization time is strongly recommended, especially if the file presenter is initiating the file operation. Otherwise, the file presenter itself would receive notifications when it made changes to the file and would have to compensate for that fact. Receiving such notifications could also deadlock if the file presenter’s code and its notifications run on the same thread.
 

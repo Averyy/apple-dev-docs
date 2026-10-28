@@ -24,7 +24,7 @@ init(shape: [NSNumber]?, dataType: MPSDataType)
 - (instancetype) initWithShape:(MPSShape *) shape dataType:(MPSDataType) dataType;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphShapedType, or nil if allocation failure.
 

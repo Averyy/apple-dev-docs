@@ -15,7 +15,7 @@ Obtains the best and alternate Mac text encoding.
 OSStatus NearestMacTextEncodings(TextEncoding generalEncoding, TextEncoding *bestMacEncoding, TextEncoding *alternateMacEncoding);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 

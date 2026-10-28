@@ -22,7 +22,7 @@ An edge on the horizontal axis.
 enum HorizontalEdge
 ```
 
-#### Overview
+## Overview
 
 Use a horizontal edge for tasks like setting a swipe action with the [`swipeActions(edge:allowsFullSwipe:content:)`](./view/swipeactions%28edge,allowsfullswipe,content%29.md) view modifier. The positions of the leading and trailing edges depend on the locale chosen by the user.
 

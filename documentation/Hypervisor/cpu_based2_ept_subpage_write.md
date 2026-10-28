@@ -19,7 +19,7 @@ var CPU_BASED2_EPT_SUBPAGE_WRITE: UInt32 { get }
 CPU_BASED2_EPT_SUBPAGE_WRITE
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

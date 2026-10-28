@@ -16,7 +16,7 @@ Flags that modify the I2C transaction type.
 IOOptionBits commFlags;
 ```
 
-#### Discussion
+## Discussion
 
 The following flags are defined:
 

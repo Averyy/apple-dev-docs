@@ -25,7 +25,7 @@ func allowEvaluation()
 - (void) allowEvaluation;
 ```
 
-#### Discussion
+## Discussion
 
 When securely decoding an `NSExpression` object encoded using [`NSSecureCoding`](../nssecurecoding.md), evaluation is disabled because it is potentially unsafe to evaluate expressions you get out of an archive.
 

@@ -15,7 +15,7 @@ Get the count of camera frame samples in the collection.
 extern size_t ar_camera_frame_samples_get_count(ar_camera_frame_samples_t camera_frame_samples);
 ```
 
-#### Return Value
+## Return Value
 
 The number of camera frame samples in the collection.
 

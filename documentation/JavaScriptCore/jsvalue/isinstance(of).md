@@ -24,11 +24,11 @@ func isInstance(of value: Any!) -> Bool
 - (BOOL) isInstanceOf:(id) value;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if this value inherits from `value`; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 This method is analogous to the `instanceof` operator in JavaScript: it tests for the presence of the specified value’s constructor prototype in this value’s prototype chain.
 

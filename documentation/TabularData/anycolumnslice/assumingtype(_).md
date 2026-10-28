@@ -21,11 +21,11 @@ Returns a slice of the underlying typed column.
 func assumingType<T>(_ type: T.Type) -> DiscontiguousColumnSlice<T>
 ```
 
-#### Return Value
+## Return Value
 
 A typed column slice.
 
-#### Discussion
+## Discussion
 
 When using this method, you must provide the correct underlying type.
 

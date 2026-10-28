@@ -15,7 +15,7 @@ Determine if a vnode is a named stream.
 int vnode_isnamedstream(vnode_t vp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if the vnode is a named stream, 0 otherwise.
 

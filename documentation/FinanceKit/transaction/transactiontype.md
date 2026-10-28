@@ -16,7 +16,7 @@ The type of the transaction.
 let transactionType: TransactionType
 ```
 
-#### Discussion
+## Discussion
 
 This value describes the specific kind of transaction, such as a purchase, a bill, a funds transfer, and so on. The transaction type may not always be available.
 

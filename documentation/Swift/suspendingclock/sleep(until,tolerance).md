@@ -21,7 +21,7 @@ Suspend task execution until a given deadline within a tolerance. If no toleranc
 func sleep(until deadline: SuspendingClock.Instant, tolerance: Duration? = nil) async throws
 ```
 
-#### Discussion
+## Discussion
 
 If the task is canceled before the time ends, this function throws `CancellationError`.
 

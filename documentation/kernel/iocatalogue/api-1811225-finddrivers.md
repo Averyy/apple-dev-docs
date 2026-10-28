@@ -13,7 +13,7 @@ OSOrderedSet * findDrivers(
  SInt32 *generationCount );
 ```
 
-#### Return Value
+## Return Value
 
 Returns an ordered set of driver personalities ranked on probe-scores. The ordered set must be released by the receiver.
 

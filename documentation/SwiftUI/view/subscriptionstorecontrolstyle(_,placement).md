@@ -22,7 +22,7 @@ nonisolated
 func subscriptionStoreControlStyle<S>(_ style: S, placement: S.Placement) -> some View where S : SubscriptionStoreControlStyle
 ```
 
-#### Discussion
+## Discussion
 
 This modifier sets the style and placement of the subscription controls in any [`SubscriptionStoreView`](../../StoreKit/subscriptionstoreview.md) instance within a view.
 

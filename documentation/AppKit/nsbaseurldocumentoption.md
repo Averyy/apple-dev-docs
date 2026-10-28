@@ -15,7 +15,7 @@ The base URL for HTML documents.
 extern NSAttributedStringDocumentReadingOptionKey NSBaseURLDocumentOption;
 ```
 
-#### Discussion
+## Discussion
 
 For HTML documents; [`NSURL`](../Foundation/nsurl.md) containing base URL. The previous string constant was `@"BaseURL"`.
 

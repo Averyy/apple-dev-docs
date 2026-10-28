@@ -15,7 +15,7 @@ An object that provides the real-time position of barcodes the framework detects
 final class BarcodeDetectionProvider
 ```
 
-#### Overview
+## Overview
 
 Use this provider to receive updates about barcodes that ARKit detect in a person’s surroundings, This provider returns the results in the form of an asynchronous sequence of [`BarcodeAnchor`](./barcodeanchor.md) structures. Your app needs to include the [`Spatial barcode and QR code scanning`](../BundleResources/entitlements/com.apple.developer.arkit.barcode-detection.allow.md) entitlement to use this capability; otherwise, it has no effect.
 

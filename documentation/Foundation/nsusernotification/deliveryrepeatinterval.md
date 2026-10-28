@@ -21,7 +21,7 @@ var deliveryRepeatInterval: DateComponents? { get set }
 @property (copy, nullable) NSDateComponents * deliveryRepeatInterval;
 ```
 
-#### Discussion
+## Discussion
 
 This value may be `nil` if the notification should not repeat.
 

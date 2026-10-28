@@ -28,7 +28,7 @@ func addChild(_ child: PHASEObject) throws
 
 - [Playing sound from a location in a 3D scene](../playing-sound-from-a-location-in-a-3d-scene.md)
 
-#### Discussion
+## Discussion
 
 This function throws an error if `child` already has a different parent.
 

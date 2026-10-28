@@ -23,7 +23,7 @@ case unspecified
 INSearchForAccountsIntentResponseCodeUnspecified
 ```
 
-#### Discussion
+## Discussion
 
 Don’t return this response code when handling the intent; doing so causes the device to display an error.
 

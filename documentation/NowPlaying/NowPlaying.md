@@ -15,7 +15,7 @@ Make your app’s media playback controls available on the Lock Screen, Control 
 - visionOS 27.0+
 - watchOS 27.0+
 
-#### Overview
+## Overview
 
 The Now Playing framework makes it easy for people to quickly access your app’s media controls across Apple platforms. The Now Playing interface integrates the controls on the Lock Screen, in Control Center, on Apple Watch, and in CarPlay. Use it to publish playback for music, audiobooks, podcasts, movies, TV shows, and other content. You describe your media content and supported commands with an [`Observable`](../Observation/observable.md) model, and the framework updates the system whenever your model changes.
 

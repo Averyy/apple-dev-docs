@@ -20,7 +20,7 @@ case partialCurl
 UIModalTransitionStylePartialCurl
 ```
 
-#### Discussion
+## Discussion
 
 When the view controller is presented, one corner of the current view curls up to reveal the presented view underneath. On dismissal, the curled up page unfurls itself back on top of the presented view. A view controller presented using this transition is itself prevented from presenting any additional view controllers.
 

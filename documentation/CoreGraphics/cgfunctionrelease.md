@@ -21,7 +21,7 @@ Decrements the retain count of a function object.
 extern void CGFunctionRelease(CGFunctionRef function);
 ```
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRelease`](../CoreFoundation/cfrelease.md), except that it does not cause an error if the `function` parameter is `nil`.
 

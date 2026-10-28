@@ -25,7 +25,7 @@ var classifications: [SNClassification] { get }
 @property (copy, readonly) NSArray<SNClassification *> * classifications;
 ```
 
-#### Discussion
+## Discussion
 
 `SNClassificationResult` sorts its classifications in descending confidence score order.
 

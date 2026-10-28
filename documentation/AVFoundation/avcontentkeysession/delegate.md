@@ -25,7 +25,7 @@ weak var delegate: (any AVContentKeySessionDelegate)? { get }
 @property (weak, readonly, nullable) id<AVContentKeySessionDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Set the session’s delegate using the [`setDelegate(_:queue:)`](./setdelegate%28_,queue%29.md) method.
 

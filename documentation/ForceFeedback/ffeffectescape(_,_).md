@@ -20,11 +20,11 @@ func FFEffectEscape(_ effectReference: FFEffectObjectReference!, _ pFFEffectEsca
 extern HRESULT FFEffectEscape(FFEffectObjectReference effectReference, FFEFFESCAPE *pFFEffectEscape);
 ```
 
-#### Return Value
+## Return Value
 
 If the method succeeds, the return value is FF_OK. If the method fails, the return value can be one of the following error values:
 
-#### Discussion
+## Discussion
 
 FFERR_INVALIDPARAM
 
@@ -34,7 +34,7 @@ FFERR_UNSUPPORTED
 
 Other device-specific error codes are also possible. Ask the hardware manufacturer for details
 
-#### Discussion
+## Discussion
 
 Because each driver implements different escapes, it is the application’s responsibility to ensure that it is sending the escape to the correct driver.
 

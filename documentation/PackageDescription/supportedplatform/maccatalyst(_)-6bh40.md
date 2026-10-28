@@ -15,11 +15,11 @@ Configures the minimum deployment target version for the Mac Catalyst platform.
 static func macCatalyst(_ version: SupportedPlatform.MacCatalystVersion) -> SupportedPlatform
 ```
 
-#### Return Value
+## Return Value
 
 A `SupportedPlatform` instance.
 
-#### Discussion
+## Discussion
 
 > **Since**: First available in PackageDescription 5.5
 

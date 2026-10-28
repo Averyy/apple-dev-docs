@@ -25,7 +25,7 @@ static let languageIdentifier: NSAttributedString.Key
 extern NSAttributedStringKey const NSLanguageIdentifierAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is an [`NSString`](../../nsstring.md) with the language identifier code in ISO 639 format.
 

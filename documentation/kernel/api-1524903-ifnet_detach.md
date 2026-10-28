@@ -13,11 +13,11 @@
 errno_t ifnet_detach(ifnet_t interface);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success, otherwise errno error.
 
-#### Discussion
+## Discussion
 
 Detaches the interface.
 

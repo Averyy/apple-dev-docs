@@ -29,7 +29,7 @@ var categoryBitMask: UInt32 { get set }
 
 - [About Collisions and Contacts](../about-collisions-and-contacts.md)
 
-#### Discussion
+## Discussion
 
 Every physics body in a scene can be assigned to up to 32 different categories, each corresponding to a bit in the bit mask. You define the mask values used in your game. In conjunction with the [`collisionBitMask`](./collisionbitmask.md) and [`contactTestBitMask`](./contacttestbitmask.md) properties, you define which physics bodies interact with each other and when your game is notified of these interactions.
 

@@ -25,11 +25,11 @@ func inputConnectionPoint(for node: AVAudioNode, inputBus bus: AVAudioNodeBus) -
 - (AVAudioConnectionPoint *) inputConnectionPointForNode:(AVAudioNode *) node inputBus:(AVAudioNodeBus) bus;
 ```
 
-#### Return Value
+## Return Value
 
 An `AVAudioConnectionPoint` object with connection information on the node’s input bus.
 
-#### Discussion
+## Discussion
 
 Connections are always one-to-one or one-to-many. This method returns `nil` if there’s no connection on the node’s specified input bus.
 

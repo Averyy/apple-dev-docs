@@ -26,7 +26,7 @@ convenience init(hostname: String, port: String)
 + (instancetype) endpointWithHostname:(NSString *) hostname port:(NSString *) port;
 ```
 
-#### Discussion
+## Discussion
 
 If the hostname is a domain name, such as `www.example.com`, starting a connection to the host endpoint causes the hostname to be resolved to an address during the connection process. If the hostname is an IPv4 or IPv6 address, such as `10.0.0.1` or `fe80::1`, starting a connection to the host endpoint will cause the address to be used directly.
 

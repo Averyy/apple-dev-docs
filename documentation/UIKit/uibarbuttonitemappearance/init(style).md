@@ -23,7 +23,7 @@ init(style: UIBarButtonItem.Style)
 - (instancetype) initWithStyle:(UIBarButtonItemStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 A new bar button item appearance object containing the default appearances for the specified button style.
 

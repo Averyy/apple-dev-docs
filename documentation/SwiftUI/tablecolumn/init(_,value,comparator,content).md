@@ -79,7 +79,7 @@ nonisolated
 init<V, C>(_ titleKey: LocalizedStringKey, value: KeyPath<RowValue, V>, comparator: C, @ContentBuilder content: @escaping (RowValue) -> Content) where V == C.Compared, C : SortComparator
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a [`Text`](../text.md) view on your behalf. See [`Text`](../text.md) for more information about localizing strings.
 

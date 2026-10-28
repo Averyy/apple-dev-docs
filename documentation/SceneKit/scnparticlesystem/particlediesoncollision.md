@@ -25,7 +25,7 @@ var particleDiesOnCollision: Bool { get set }
 @property (nonatomic) BOOL particleDiesOnCollision;
 ```
 
-#### Discussion
+## Discussion
 
 This property has no effect if the [`colliderNodes`](./collidernodes.md) array is empty or contains no nodes with attached geometry.
 

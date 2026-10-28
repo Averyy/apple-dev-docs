@@ -5,7 +5,7 @@
 
 Connect two physics bodies with a spring joint.
 
-#### Overview
+## Overview
 
 The following Swift code shows how you can create a spring joint between sprite nodes. The physics body of `staticNode` has its [`isDynamic`](./skphysicsbody/isdynamic.md) property set to [`false`](../Swift/false.md), preventing it from being affected by gravity. It is animated with an [`SKAction`](./skaction.md) to move it upward.
 

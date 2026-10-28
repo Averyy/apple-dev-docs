@@ -19,7 +19,7 @@ The system standard layout dimension for reserved layout size.
 static let standardDimension: CGFloat
 ```
 
-#### Discussion
+## Discussion
 
 Setting the [`reservedLayoutSize`](./reservedlayoutsize.md) width or height to this constant results in using the system standard value for a symbol image for that dimension, even when the image is not a symbol image.
 

@@ -26,7 +26,7 @@ func activate()
 - (void) activate;
 ```
 
-#### Discussion
+## Discussion
 
 This call is synchronous. The application is in a state ready to handle events when this method returns.
 

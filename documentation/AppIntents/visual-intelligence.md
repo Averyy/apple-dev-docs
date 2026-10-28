@@ -5,7 +5,7 @@
 
 Match images to your app’s content and report the results to the Visual Intelligence framework using an app intent.
 
-#### Overview
+## Overview
 
 People use visual intelligence to learn about the places and objects they see in their environment or on their device. To assist with item identification, the system asks apps to match their content against the images it provides. If an app finds a match, the system displays that match in the visual search results so people can navigate to the app for more information. The system relies on app intents to perform searches and open any search results.
 

@@ -19,7 +19,7 @@ class let didChangeScreenParametersNotification: NSNotification.Name
 extern NSNotificationName NSApplicationDidChangeScreenParametersNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The configuration change can be made either programmatically or when the user changes settings in the Displays control panel. The notification object is [`shared`](./shared.md). This notification doesn’t contain a `userInfo` dictionary.
 

@@ -19,11 +19,11 @@ func notShownAttribute(forGlyphAt glyphIndex: Int) -> Bool
 - (BOOL) notShownAttributeForGlyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the glyph at `glyphIndex` is not shown; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Some glyphs are not shown.  For example, a tab, newline, or attachment glyph is not shown; it just affects the layout of following glyphs or locates the attachment graphic. Space characters, however, typically are shown as glyphs with a displacement, although they leave no visible marks.
 

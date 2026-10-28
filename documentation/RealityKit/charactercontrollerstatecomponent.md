@@ -20,7 +20,7 @@ A component that represents the state of a character controller.
 struct CharacterControllerStateComponent
 ```
 
-#### Overview
+## Overview
 
 RealityKit adds this component to an entity when you add a [`CharacterControllerComponent`](./charactercontrollercomponent.md) instance to it. Manually adding this component to an entity that has a character controller component has no effect because it’s redundant.
 

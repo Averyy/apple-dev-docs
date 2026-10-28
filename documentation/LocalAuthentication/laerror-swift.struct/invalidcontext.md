@@ -20,7 +20,7 @@ The context was previously invalidated.
 static var invalidContext: LAError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 You invalidate a context by calling its [`invalidate()`](../lacontext/invalidate%28%29.md) method.
 

@@ -15,11 +15,11 @@ Submit a thread call work item for immediate execution, with an extra parameter.
 boolean_t thread_call_enter1(thread_call_t call, thread_call_param_t param1);
 ```
 
-#### Return Value
+## Return Value
 
 TRUE if the call was already pending for either delayed or immediate execution, FALSE otherwise.
 
-#### Discussion
+## Discussion
 
 This routine is identical to thread_call_enter(), except that the second parameter to the callback is specified.
 

@@ -19,7 +19,7 @@ var isContinuous: Bool { get set }
 @property (getter=isContinuous) BOOL continuous;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the action message is sent continuously; otherwise, [`false`](../../Swift/false.md).
 

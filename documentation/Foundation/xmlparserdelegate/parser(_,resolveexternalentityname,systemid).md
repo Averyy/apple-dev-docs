@@ -25,11 +25,11 @@ optional func parser(_ parser: XMLParser, resolveExternalEntityName name: String
 - (NSData *) parser:(NSXMLParser *) parser resolveExternalEntityName:(NSString *) name systemID:(NSString *) systemID;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSData`](../nsdata.md) object that contains the resolution of the given external entity.
 
-#### Discussion
+## Discussion
 
 The delegate can resolve the external entity (for example, locating and reading an externally declared DTD) and provide the result to the parser object as an `NSData` object.
 

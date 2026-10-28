@@ -18,7 +18,7 @@ A Boolean value that indicates whether the configuration is enabled.
 final var isEnabled: Bool { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The system starts the providers only when this property is `true`.
 

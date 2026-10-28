@@ -28,7 +28,7 @@ class UITargetedPreview
 
 - [Adding Writing Tools support to a custom UIKit view](./adding-writing-tools-support-to-a-custom-uiview.md)
 
-#### Overview
+## Overview
 
 Use a [`UITargetedPreview`](./uitargetedpreview.md) to specify the view to use during an animated transition.
 

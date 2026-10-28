@@ -24,7 +24,7 @@ var backButtonAppearance: UIBarButtonItemAppearance { get set }
 @property (nonatomic, copy, readwrite) UIBarButtonItemAppearance * backButtonAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 If you don’t change the value of this property, the navigation bar applies the attributes from the [`buttonAppearance`](./buttonappearance.md) property.
 

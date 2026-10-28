@@ -5,7 +5,7 @@
 
 Provide a payment request and create the session.
 
-#### Overview
+## Overview
 
 After you’ve checked that the Apple Pay JS API is available and is enabled on the current device, you’re ready to create the payment request and start the session.  You can create a session only when a user explicitly asks to make a payment.  For example, you can create the session when the user taps the Apple Pay button.
 

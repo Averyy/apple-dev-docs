@@ -9,7 +9,7 @@ Manage access to connected USB accessories.
 **Availability**:
 - macOS 27.0+
 
-#### Discussion
+## Discussion
 
 The AccessoryAccess framework provides access to connected USB devices that use the [IOUSBHost](../IOUSBHost/IOUSBHost.md) framework, allowing clients to express interest through one or more registered accessory listeners.
 

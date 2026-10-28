@@ -21,7 +21,7 @@ The target view is visible by the given amount, where zero is fully hidden, and 
 static func visible(_ amount: Double) -> ScrollTransitionConfiguration.Threshold
 ```
 
-#### Discussion
+## Discussion
 
 Values less than zero or greater than one are clamped.
 

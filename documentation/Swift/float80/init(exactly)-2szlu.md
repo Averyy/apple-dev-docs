@@ -15,7 +15,7 @@ Creates a new instance initialized to the given value, if it can be represented 
 init?(exactly other: Double)
 ```
 
-#### Discussion
+## Discussion
 
 If `other` can’t be represented as an instance of `Float80` without rounding, the result of this initializer is `nil`. In particular, passing NaN as `other` always results in `nil`.
 

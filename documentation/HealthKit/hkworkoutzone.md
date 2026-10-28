@@ -20,7 +20,7 @@ A structure that represents a single zone with defined thresholds for a quantity
 struct HKWorkoutZone
 ```
 
-#### Overview
+## Overview
 
 The system creates workout zones as part of an [`HKWorkoutZoneConfiguration`](./hkworkoutzoneconfiguration.md). This structure defines the minimum and maximum values that determine when a quantity type measurement falls within the zone. For example, a heart rate zone might have a minimum of 136.8 beats per minute and a maximum of 147.6 beats per minute.
 

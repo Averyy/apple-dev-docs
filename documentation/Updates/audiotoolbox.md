@@ -5,13 +5,13 @@
 
 Learn about important changes to Audio Toolbox.
 
-#### Overview
+## Overview
 
 Browse notable changes in [Audio Toolbox](../AudioToolbox/AudioToolbox.md).
 
-#### June 2024
+## June 2024
 
-##### Spatial audio with AUSpatialMixer
+### Spatial audio with AUSpatialMixer
 
 - Adjust the spatial mixer orientation to match someone’s head pose via compatible AirPods by setting the new [`kAudioUnitProperty_SpatialMixerEnableHeadTracking`](../AudioToolbox/kaudiounitproperty_spatialmixerenableheadtracking.md) property to `true`. The system requires your app to have the [`com.apple.developer.coremotion.head-pose`](../BundleResources/entitlements/com.apple.developer.coremotion.head-pose.md) entitlement to observe this property.
 - Tailor spatial mixing output according to a person’s personalized spatial audio profile that they configure in Settings by adding the [`com.apple.developer.spatial-audio.profile-access`](../BundleResources/entitlements/com.apple.developer.spatial-audio.profile-access.md) entitlement to your app.

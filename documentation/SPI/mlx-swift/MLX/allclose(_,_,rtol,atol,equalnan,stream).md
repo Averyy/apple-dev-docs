@@ -21,7 +21,7 @@ func allClose(_ array: MLXArray, _ other: some ScalarOrArray, rtol: Double = 1e-
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 Infinite values are considered equal if they have the same sign, NaN values are not equal unless `equalNAN` is `true`.
 
@@ -44,7 +44,7 @@ if a.allClose(b).all().item() {
 }
 ```
 
-##### See Also
+### See Also
 
 - [Logical Operators](./logical.md)
 - [`isClose(_:_:rtol:atol:equalNaN:stream:)`](./isclose%28_,_,rtol,atol,equalnan,stream%29.md)

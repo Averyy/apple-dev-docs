@@ -19,7 +19,7 @@ static let mixedStateImage: NSBindingName
 extern NSBindingName NSMixedStateImageBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

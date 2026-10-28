@@ -41,7 +41,7 @@ static SCNMatrix4 SCNMatrix4MakeScale(float sx, float sy, float sz);
 static SCNMatrix4 SCNMatrix4MakeScale(CGFloat sx, CGFloat sy, CGFloat sz);
 ```
 
-#### Return Value
+## Return Value
 
 A new scale matrix.
 

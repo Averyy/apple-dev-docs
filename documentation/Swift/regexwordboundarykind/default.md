@@ -21,7 +21,7 @@ A word boundary algorithm that implements the “default word boundary” Unicod
 static var `default`: RegexWordBoundaryKind { get }
 ```
 
-#### Discussion
+## Discussion
 
 Default word boundaries use a Unicode algorithm that handles some cases better than simple word boundaries, such as words with internal punctuation, changes in script, and Emoji.
 

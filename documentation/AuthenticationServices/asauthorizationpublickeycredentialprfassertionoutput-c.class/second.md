@@ -19,7 +19,7 @@ A second symmetric key that’s unique to the passkey, and derives from the seco
 @property (nonatomic, readonly, nullable) NSData * second;
 ```
 
-#### Discussion
+## Discussion
 
 If `input2` isn’t specified, this key is `nil`.
 

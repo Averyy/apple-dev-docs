@@ -19,7 +19,7 @@ class let selectionDidChangeNotification: NSNotification.Name
 extern NSNotificationName NSTableViewSelectionDidChangeNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is the table view whose selection changed. This notification does not contain a `userInfo` dictionary.
 

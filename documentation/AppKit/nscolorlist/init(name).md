@@ -19,11 +19,11 @@ init(name: NSColorList.Name)
 - (instancetype) initWithName:(NSColorListName) name;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized color list.
 
-#### Discussion
+## Discussion
 
 This method invokes [`init(name:fromFile:)`](./init%28name,fromfile%29.md) with a `fromFile:` argument of `nil`, indicating that the color list doesn’t need to be initialized from a file. Note that this method does not add the color list to [`availableColorLists`](./availablecolorlists.md) until the color list is saved into the user’s path with [`write(toFile:)`](./write%28tofile%29.md) with a value of `nil`.
 

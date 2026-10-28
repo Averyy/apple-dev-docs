@@ -18,11 +18,11 @@ CloudKit.RecordsBatchBuilder createOrUpdate(
 );
 ```
 
-#### Return Value
+## Return Value
 
 The object that received this method call.
 
-#### Discussion
+## Discussion
 
 This is a convenience method for adding create and update operations rather than adding them separately using the [`create`](./create.md) and [`update`](./update.md) methods. Depending on the information in the record, this method determines whether the record should be created or updated.
 

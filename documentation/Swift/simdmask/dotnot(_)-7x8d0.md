@@ -23,7 +23,7 @@ static func .! (a: SIMDMask<Storage>) -> SIMDMask<Storage>
 
 Available when `Storage` is `SIMD64<Int>`.
 
-#### Discussion
+## Discussion
 
 Equivalent to:
 

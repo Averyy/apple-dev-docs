@@ -21,7 +21,7 @@ class QCPlugIn
 @interface QCPlugIn : NSObject
 ```
 
-#### Overview
+## Overview
 
 The `QCPlugIn` class provides the base class to subclass for writing custom  Quartz Composer patches. You implement a custom patch by subclassing `QCPlugIn`, overriding the appropriate methods, packaging the code as an `NSBundle` object, and installing the bundle in the appropriate location. A bundle can contain more than one subclass  of `QCPlugIn`, allowing you to provide a suite of custom patches in one bundle. [Quartz Composer Custom Patch Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/QuartzComposer_Patch_PlugIn_ProgGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40004787) provides detailed instructions on how to create and package a custom patch. *QCPlugIn Class Reference* supplements the information in the programming guide.
 

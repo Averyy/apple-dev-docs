@@ -22,7 +22,7 @@ nonisolated
 func bold(_ isActive: Bool) -> Text
 ```
 
-#### Return Value
+## Return Value
 
 Bold text.
 

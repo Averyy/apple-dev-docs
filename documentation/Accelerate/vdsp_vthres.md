@@ -21,7 +21,7 @@ Calculates single-precision vector threshold with zero fill to the specified ran
 extern void vDSP_vthres(const float *__A, vDSP_Stride __IA, const float *__B, float *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 Performs the following operation:
 

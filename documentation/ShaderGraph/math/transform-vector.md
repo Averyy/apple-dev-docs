@@ -14,7 +14,7 @@ Transforms a vector3 from one space to another.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 | Input | Type |
 | --- | --- |
@@ -26,13 +26,13 @@ Transforms a vector3 from one space to another.
 | --- | --- |
 | `Out` | Vector3f |
 
-#### Parameter descriptions
+## Parameter descriptions
 
 - **`In`**: The normal vector to transform.
 - **`Fromspace`**: The space from which to transform the `In` vector.
 - **`Tospace`**: The space to which to transform the `In` vector.
 
-#### Discussion
+## Discussion
 
 The following spaces are valid values for the `Fromspace` and `Tospace` parameters:
 

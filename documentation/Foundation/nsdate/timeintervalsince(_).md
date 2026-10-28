@@ -25,7 +25,7 @@ func timeIntervalSince(_ anotherDate: Date) -> TimeInterval
 - (NSTimeInterval) timeIntervalSinceDate:(NSDate *) anotherDate;
 ```
 
-#### Return Value
+## Return Value
 
 The interval between the receiver and the `anotherDate` parameter. If the receiver is earlier than `anotherDate`, the return value is negative. If `anotherDate` is `nil`, the results are undefined.
 

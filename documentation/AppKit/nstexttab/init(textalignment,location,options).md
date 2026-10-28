@@ -19,11 +19,11 @@ init(textAlignment alignment: NSTextAlignment, location loc: CGFloat, options: [
 - (instancetype) initWithTextAlignment:(NSTextAlignment) alignment location:(CGFloat) loc options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized text tab.
 
-#### Discussion
+## Discussion
 
 The text alignment is used to determine the position of text inside the tab column. See [`NSParagraphStyle.TextTabType`](../nsparagraphstyle/texttabtype.md) for a mapping between alignments and tab stop types
 

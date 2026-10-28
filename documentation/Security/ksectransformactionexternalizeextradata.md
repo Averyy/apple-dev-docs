@@ -21,7 +21,7 @@ let kSecTransformActionExternalizeExtraData: CFString
 extern CFStringRef const kSecTransformActionExternalizeExtraData;
 ```
 
-#### Discussion
+## Discussion
 
 Allows for adding to the data that is stored using an override to the kSecTransformActionExternalizeExtraData block. The output of this override is a dictionary that contains the custom externalized data. A common use of this override is to write out a version number of a custom transform.
 

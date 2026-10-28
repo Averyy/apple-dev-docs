@@ -16,11 +16,11 @@ Creates a new IOFireWireSBP2ORB for this login.
 IUnknownVTbl **(*createORB)(void *self, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to the new ORB object.
 
-#### Discussion
+## Discussion
 
 Create a new IOFireWireSBP2ORB for this login. It can be configured with it's accessors and executed with submitORB below.
 

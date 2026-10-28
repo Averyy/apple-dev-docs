@@ -21,7 +21,7 @@ init(records: [NFCNDEFPayload])
 - (instancetype) initWithNDEFRecords:(NSArray<NFCNDEFPayload *> *) records;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized NDEF message object.
 

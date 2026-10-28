@@ -25,7 +25,7 @@ func CMTimebaseGetRate(_ timebase: CMTimebase) -> Float64
 extern Float64 CMTimebaseGetRate(CMTimebaseRef timebase);
 ```
 
-#### Discussion
+## Discussion
 
 This is the rate relative to its immediate host clock or timebase. For example, if a timebase is running at twice the rate of its host, its rate is 2.0.
 

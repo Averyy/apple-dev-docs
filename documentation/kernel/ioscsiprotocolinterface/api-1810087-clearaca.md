@@ -12,11 +12,11 @@ virtual SCSIServiceResponse ClearACA (
  UInt8theLogicalUnit ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 A valid SCSIServiceResponse code.
 
-#### Overview
+## Overview
 
 Clears an Auto-Contingent Allegiance (ACA) for the specified Logical Unit. Subclasses must override this method. Third party subclasses should not need to override this method.
 

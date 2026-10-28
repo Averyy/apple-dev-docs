@@ -25,7 +25,7 @@ func addEntries(from otherDictionary: [AnyHashable : Any])
 - (void) addEntriesFromDictionary:(NSDictionary<id,id> *) otherDictionary;
 ```
 
-#### Discussion
+## Discussion
 
 Each value object from `otherDictionary` is sent a [`retain`](../../ObjectiveC/nsobject-c.protocol/retain.md) message before being added to the receiving dictionary. In contrast, each key object is copied (using [`copy(with:)`](../nscopying/copy%28with%29.md)—keys must conform to the `NSCopying` protocol), and the copy is added to the receiving dictionary.
 

@@ -24,7 +24,7 @@ case billingContactInvalidError
 PKPaymentBillingContactInvalidError
 ```
 
-#### Discussion
+## Discussion
 
 Use this error code if the billing contact information on the Apple Pay sheet has an error in the address or name.
 

@@ -16,7 +16,7 @@ Dispatches a HID event to the system.
 virtual void dispatchEvent(IOHIDEvent *event);
 ```
 
-#### Discussion
+## Discussion
 
 This method is a funnel point for dispatching events to the system’s registered clients. You can also call it directly to dispatch events for which you create an `IOHIDEvent` object.
 

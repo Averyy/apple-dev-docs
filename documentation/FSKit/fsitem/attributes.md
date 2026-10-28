@@ -19,7 +19,7 @@ class Attributes
 @interface FSItemAttributes : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: FSKit internally maintains a unique sequence number for each set of attributes to determine the most up-to-date set of attributes of a given [`FSItem`](../fsitem.md). To prevent an older set of attributes from having a newer sequence number, all attributes of a given [`FSItem.Attributes`](./attributes.md) object should be populated within the same synchronization context. This synchronization context should prevent any other thread from populating another [`FSItem.Attributes`](./attributes.md) object of the given [`FSItem`](../fsitem.md).
 

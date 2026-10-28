@@ -19,15 +19,15 @@ func LSCopyDisplayNameForURL(_ inURL: CFURL!, _ outDisplayName: UnsafeMutablePoi
 OSStatus LSCopyDisplayNameForURL(CFURLRef inURL, CFStringRef *outDisplayName);
 ```
 
-#### Return Value
+## Return Value
 
 A result code; see [Result Codes](./launch_services.md#1661359).
 
-#### Discussion
+## Discussion
 
 The item’s display name is returned in the form in which it will appear on the user’s screen; it may be localized (for applications and folders), and it excludes the filename extension if the extension is set to be hidden and the Finder preference to always show extensions is not enabled.
 
-##### Version-Notes
+### Version-Notes
 
 Thread-safe since Mac OS version 10.2.
 

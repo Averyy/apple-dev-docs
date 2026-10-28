@@ -5,7 +5,7 @@
 
 Obtain all the values associated with a certificate.
 
-#### Overview
+## Overview
 
 In macOS, you can also dig deeper into the certificate content using a call to the [`SecCertificateCopyValues(_:_:_:)`](./seccertificatecopyvalues%28_,_,_%29.md) function:
 

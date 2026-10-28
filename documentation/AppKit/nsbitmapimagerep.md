@@ -19,11 +19,11 @@ class NSBitmapImageRep
 @interface NSBitmapImageRep : NSImageRep
 ```
 
-#### Overview
+## Overview
 
 Supported bitmap data formats include GIF, JPEG, TIFF, PNG, and various permutations of raw bitmap data.
 
-##### Alpha Premultiplication and Bitmap Formats
+### Alpha Premultiplication and Bitmap Formats
 
 When creating a bitmap using a premultiplied format, if a coverage (alpha) plane exists, the bitmap’s color components are premultiplied with it. In this case, if you modify the contents of the bitmap, you are therefore responsible for premultiplying the data. Note that premultiplying generally has negligible effect on output quality. For floating-point image data, premultiplying color components is a lossless operation, but for fixed-point image data, premultiplication can introduce small rounding errors. In either case, more rounding errors may appear when compositing many premultiplied images; however, such errors are generally not readily visible.
 

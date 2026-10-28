@@ -22,11 +22,11 @@ Parses a value, using this strategy.
 func parse(_ value: Self.ParseInput) throws -> Self.ParseOutput
 ```
 
-#### Return Value
+## Return Value
 
 A parsed value of the type declared by [`ParseOutput`](./parseoutput.md).
 
-#### Discussion
+## Discussion
 
 This method throws an error if the parse strategy can’t parse `value`.
 

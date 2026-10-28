@@ -19,7 +19,7 @@ func ABPersonCopyVCardRepresentation(_ person: ABPersonRef!) -> Unmanaged<CFData
 extern CFDataRefABPersonCopyVCardRepresentation(ABPersonRef person);
 ```
 
-#### Return Value
+## Return Value
 
 The vCard representation of `person` as a data object in vCard format. You are responsible for releasing this object.
 

@@ -24,11 +24,11 @@ class func fetchCollections(in collectionList: PHCollectionList, options: PHFetc
 + (PHFetchResult<PHCollection *> *) fetchCollectionsInCollectionList:(PHCollectionList *) collectionList options:(PHFetchOptions *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A fetch result that contains the requested [`PHCollection`](../phcollection.md) objects, or an empty fetch result if no objects match the request.
 
-#### Discussion
+## Discussion
 
 By default, the returned [`PHFetchResult`](../phfetchresult.md) object contains all collections in the specified collection list. To retrieve a more specific set of assets, provide a [`PHFetchOptions`](../phfetchoptions.md) object that contains a filter predicate.
 

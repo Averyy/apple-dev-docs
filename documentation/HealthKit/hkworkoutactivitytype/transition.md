@@ -28,7 +28,7 @@ HKWorkoutActivityTypeTransition
 
 - [Dividing a HealthKit workout into activities](../dividing-a-healthkit-workout-into-activities.md)
 
-#### Discussion
+## Discussion
 
 Use this constant to create an [`HKWorkoutActivity`](../hkworkoutactivity.md) instance that represents the transition between sports in a [`HKWorkoutActivityType.swimBikeRun`](./swimbikerun.md) workout.
 

@@ -17,7 +17,7 @@ Called when a background load begins.
 - (void) beginLoadInBackground;
 ```
 
-#### Discussion
+## Discussion
 
 This method is provided mainly for subclasses that wish to take advantage of the superclass failure-reporting mechanism.
 

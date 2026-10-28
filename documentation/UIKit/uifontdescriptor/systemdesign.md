@@ -24,7 +24,7 @@ struct SystemDesign
 typedef NSString * UIFontDescriptorSystemDesign;
 ```
 
-#### Overview
+## Overview
 
 Use these constants to specify a system-provided typeface design, such as:
 

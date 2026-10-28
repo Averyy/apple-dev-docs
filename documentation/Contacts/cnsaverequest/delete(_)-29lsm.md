@@ -23,7 +23,7 @@ func delete(_ group: CNMutableGroup)
 - (void) deleteGroup:(CNMutableGroup *) group;
 ```
 
-#### Discussion
+## Discussion
 
 This method overrides any previously made add request on the group. The group to be deleted must already exist in the contact store. If it does not, the delete request fails, the `CNErrorCodeRecordDoesNotExist` error is thrown, and the `CNErrorUserInfoAffectedRecordsKey` array is updated to contain that object.
 

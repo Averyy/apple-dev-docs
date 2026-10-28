@@ -22,7 +22,7 @@ static let SCC: AVFileType
 extern AVFileType const AVFileTypeSCC;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this UTI is `com.scenarist.closed-caption`. Files of this type have an `.scc` extension.
 

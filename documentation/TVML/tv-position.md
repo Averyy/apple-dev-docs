@@ -5,11 +5,11 @@
 
 Sets the position of an element inside of its parent element.
 
-#### Overview
+## Overview
 
 Use the `tv-position` style to specify where an element is positioned inside of its parent element.
 
-##### Values for tv-position
+### Values for tv-position
 
 - **`bottom`**: The element is positioned at the bottom of the containing element.
 - **`bottom-leading`**: The element is positioned in the bottom corner and leading edge of the containing element.
@@ -29,7 +29,7 @@ Use the `tv-position` style to specify where an element is positioned inside of 
 - **`top-trailing`**: The element is positioned in the top corner and trailing edge of the containing element.
 - **`trailing`**: The element is positioned along the trailing edge of the containing element.
 
-##### Elements that Use tv-position
+### Elements that Use tv-position
 
 - [banner](./banner.md)
 - [divTemplate](./divtemplate.md)

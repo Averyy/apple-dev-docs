@@ -13,11 +13,11 @@ virtual IOReturn getPacketFilters(
  UInt32 *filters) const = 0;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess on success, or an error to indicate a failure to discover the set of supported filters.
 
-#### Overview
+## Overview
 
 A subclass must implement this method and report the set of filters that are supported for the given filter group. This method call is synchronized by the workloop's gate.
 

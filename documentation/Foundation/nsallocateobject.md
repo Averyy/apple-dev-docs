@@ -21,11 +21,11 @@ Creates and returns a new instance of a given class.
 extern idNSAllocateObject(Class aClass, NSUInteger extraBytes, NSZone *zone);
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of `aClass` or `nil` if an instance could not be created.
 
-#### Discussion
+## Discussion
 
 This function is deprecated and unavailable for use with ARC.
 

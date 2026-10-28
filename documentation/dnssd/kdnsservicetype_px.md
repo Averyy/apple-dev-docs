@@ -23,7 +23,7 @@ var kDNSServiceType_PX: Int { get }
 kDNSServiceType_PX
 ```
 
-#### Discussion
+## Discussion
 
 X.400 mail mapping.
 

@@ -23,11 +23,11 @@ func link(with graphs: [MLCTrainingGraph]) -> Bool
 - (BOOL) linkWithGraphs:(NSArray<MLCTrainingGraph *> *) graphs;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the operation was successful.
 
-#### Discussion
+## Discussion
 
 When there are tensors shared by one or more layers in multiple sub-graphs, use this method to link subsequent training graphs with the first training sub-graph.
 

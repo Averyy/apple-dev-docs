@@ -21,7 +21,7 @@ A regex component that allows a match to continue only if its contents match at 
 struct Lookahead<Output>
 ```
 
-#### Overview
+## Overview
 
 A lookahead is a zero-length assertion that its included regex matches at a particular position. Lookaheads do not advance the overall matching position in the input string — once a lookahead succeeds, matching continues in the regex from the same position.
 

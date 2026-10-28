@@ -19,7 +19,7 @@ optional func spellServer(_ sender: NSSpellServer, checkGrammarIn stringToCheck:
 - (NSRange) spellServer:(NSSpellServer *) sender checkGrammarInString:(NSString *) stringToCheck language:(NSString *) language details:(NSArray<NSDictionary<NSString *,id> *> **) details;
 ```
 
-#### Return Value
+## Return Value
 
 Location of the first flagged grammatical unit within `string`.
 

@@ -19,7 +19,7 @@ func fontMenu(_ create: Bool) -> NSMenu?
 - (NSMenu *) fontMenu:(BOOL) create;
 ```
 
-#### Return Value
+## Return Value
 
 The font conversion system menu.
 

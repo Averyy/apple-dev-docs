@@ -24,7 +24,7 @@ class NSCollectionLayoutSupplementaryItem
 @interface NSCollectionLayoutSupplementaryItem : NSCollectionLayoutItem
 ```
 
-#### Overview
+## Overview
 
 You use supplementary items to attach additional views to your content. For example, you might attach a badge to an item or a frame around a group. A supplementary item follows the index path of the item it’s attached to.
 

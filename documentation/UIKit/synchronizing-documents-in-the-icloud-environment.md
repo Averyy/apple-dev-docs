@@ -12,7 +12,7 @@ Manage documents across multiple devices to create a seamless editing and collab
 - Mac Catalyst 14.0+
 - Xcode 12.4+
 
-#### Overview
+## Overview
 
 As technology advances, more and more people generate their digital assets from different devices, and expect those assets to synchronize seamlessly. To support such use cases, apps need to discover the assets, as well as their changes, from all the devices, and present the user with a consistent view.
 
@@ -20,7 +20,7 @@ This sample demonstrates how to discover and synchronize documents in the iCloud
 
 The sample also demonstrates how to publish an iCloud container to iCloud Drive so that the user can access the container’s `Documents` folder from other apps. Additionally, it shows how to support the Open-in-Place feature, which allows the user to launch an app by tapping a document in Files, and then edit it directly.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before building the sample, perform the following steps in Xcode:
 
@@ -36,7 +36,7 @@ Before running the sample on a device, configure the device as follows:
 2. Choose Settings > Apple ID > iCloud, and turn on iCloud Drive, if it is off.
 3. Prepare some pictures in the Photo Library to use in the sample.
 
-##### Publish an iCloud container to iCloud Drive
+### Publish an iCloud container to iCloud Drive
 
 Publishing an iCloud container to iCloud Drive makes the container’s `Documents` folder appear in iCloud Drive so the user can access the folder from other apps. Follow these steps to publish a container:
 
@@ -61,7 +61,7 @@ The `NSUbiquitousContainers` entry of the sample is as follows:
     </dict>
 ```
 
-##### Support Open-in-Place
+### Support Open-in-Place
 
 The Open-in-Place feature allows the user to launch an app by tapping a document of the type the app owns. After opening it, the app can change the document directly without copying it to the app’s sandbox container. Follow these steps to implement the feature:
 
@@ -71,7 +71,7 @@ The Open-in-Place feature allows the user to launch an app by tapping a document
 
 Apps need to wrap the code that accesses the passed-in URL with the [`startAccessingSecurityScopedResource`](../Foundation/nsurl/startaccessingsecurityscopedresource%28%29.md) and [`stopAccessingSecurityScopedResource`](../Foundation/nsurl/stopaccessingsecurityscopedresource%28%29.md) methods if the URL is outside of their sandbox. This sample doesn’t explicitly do that because it accesses the URL via [`UIDocument`](./uidocument.md), which handles [security-scoped bookmarks](https://developer.apple.com/library/archive/documentation/Security/Conceptual/AppSandboxDesignGuide/AppSandboxInDepth/AppSandboxInDepth.html#//apple_ref/doc/uid/TP40011183-CH3-SW16) automatically.
 
-##### Discover documents in an iCloud container
+### Discover documents in an iCloud container
 
 iOS apps use [`NSMetadataQuery`](../Foundation/nsmetadataquery.md) rather than file system APIs to discover documents in an iCloud container. When an app creates an iCloud document on one device, iCloud first synchronizes the document metadata to the other devices to tell them about the existence of the document. Then, depending on the device types, iCloud may or may not continue to synchronize the document data. For iOS devices, iCloud doesn’t synchronize the document data until an app asks (either explicitly or implicitly). When an iOS app receives a notification that a new document exists, the document data may not physically exist on the local file system, so it isn’t discoverable with file system APIs.
 
@@ -99,7 +99,7 @@ func metadataItemList() -> [MetadataItem] {
 }
 ```
 
-##### Manage a large data set
+### Manage a large data set
 
 Documents in this sample could potentially contain many images, and the images might be large. To load image data only when necessary, and release the data immediately after using it, the `Document` class provides public methods for directly accessing the images in the document package. As an example, the following method retrieves a full image asynchronously:
 
@@ -144,7 +144,7 @@ override func save(to url: URL, for saveOperation: UIDocument.SaveOperation, com
 }
 ```
 
-##### Resolve version conflicts
+### Resolve version conflicts
 
 In the iCloud environment, the user can edit a document from different devices. Depending on networking conditions and the timing of synchronization, that may trigger version conflicts. Apps that provide support for iCloud documents need to resolve these conflicts, and remove the obsolete versions so they don’t consume the user’s iCloud storage.
 

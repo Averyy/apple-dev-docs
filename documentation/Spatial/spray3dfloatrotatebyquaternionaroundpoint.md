@@ -19,11 +19,11 @@
 static SPRay3DFloat SPRay3DFloatRotateByQuaternionAroundPoint(SPRay3DFloat ray, simd_quatf quaternion, SPPoint3DFloat pivot);
 ```
 
-#### Return Value
+## Return Value
 
 A ray with a direction that’s rotated by the specified quaternion.
 
-#### Discussion
+## Discussion
 
 Returns a ray that’s rotated by the specified quaternion around a specified pivot.
 

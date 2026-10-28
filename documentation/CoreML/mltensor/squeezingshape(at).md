@@ -27,7 +27,7 @@ func squeezingShape(at axes: Int...) -> MLTensor
 func squeezingShape(at axes: [Int]) -> MLTensor
 ```
 
-#### Discussion
+## Discussion
 
 For example:
 

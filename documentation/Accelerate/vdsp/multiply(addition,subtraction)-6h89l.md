@@ -25,11 +25,11 @@ static func multiply<R, S, T, U>(addition: (a: R, b: S), subtraction: (c: T, d: 
 
 - [Using vDSP for vector-based arithmetic](../using-vdsp-for-vector-based-arithmetic.md)
 
-#### Return Value
+## Return Value
 
 The output vector `E` in `E = (A + B) * (C - D)`.
 
-#### Discussion
+## Discussion
 
 This function calculates the products of the first `N` elements of the addition of vectors `A` and `B` and the subtraction of vectors `C` and `D`, as follows:
 

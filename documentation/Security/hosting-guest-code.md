@@ -5,7 +5,7 @@
 
 Securely launch and manage plug-ins and other executable entities, known as guest code, from within your app acting as a host.
 
-#### Overview
+## Overview
 
 The functions in this section are called only by code that is hosting guests. In the context of code signing, a host is code that creates, launches, and manages other code—its guests. A host must do this without compromising its own integrity. As part of that duty, it maintains state for each of its guests and answers questions about them.
 

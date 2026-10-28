@@ -21,7 +21,7 @@ class NFCTagReaderSession
 @interface NFCTagReaderSession : NFCReaderSession
 ```
 
-#### Overview
+## Overview
 
 Use NFCTagReaderSession to interact with one of the tag types listed in [`NFCTagType`](./nfctagtype.md). To use this reader session, you must:
 

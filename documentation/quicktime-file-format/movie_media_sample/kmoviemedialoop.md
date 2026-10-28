@@ -6,7 +6,7 @@
 
 An 8-byte unsigned integer that indicates how the embedded movie should loop.
 
-#### Overview
+## Overview
 
 This atom is only used if the `TimeBase` of the embedded movie is not dependent on the container movie. If this atom contains a `0`, or if this atom is not present, the embedded movie will not loop. If this atom contains a value of `1`, the embedded movie loops normally — that is, when it reaches the end it loops back to the beginning. If this atom contains a value of `2`, the embedded movie uses palindromic looping. All other values are reserved.
 

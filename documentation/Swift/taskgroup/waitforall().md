@@ -18,8 +18,8 @@ Wait for all of the group’s remaining tasks to complete.
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) mutating func waitForAll() async
+nonisolated(nonsending)
+mutating func waitForAll() async
 ```
 
 ## See Also

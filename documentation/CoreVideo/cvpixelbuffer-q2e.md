@@ -5,7 +5,7 @@
 
 An image buffer that holds pixels in main memory.
 
-#### Overview
+## Overview
 
 A Core Video pixel buffer is an image buffer that holds pixels in main memory. Applications generating frames, compressing or decompressing video, or using Core Image can all make use of Core Video pixel buffers.
 

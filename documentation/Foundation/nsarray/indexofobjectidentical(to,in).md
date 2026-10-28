@@ -25,11 +25,11 @@ func indexOfObjectIdentical(to anObject: Any, in range: NSRange) -> Int
 - (NSUInteger) indexOfObjectIdenticalTo:(ObjectType) anObject inRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 The lowest index within `range` whose corresponding array value is identical to `anObject`. If none of the objects within `range` is identical to `anObject`, returns `NSNotFound`.
 
-#### Discussion
+## Discussion
 
 Objects are considered identical if their object addresses are the same.
 

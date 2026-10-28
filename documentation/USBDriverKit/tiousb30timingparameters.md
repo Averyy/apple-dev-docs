@@ -15,7 +15,7 @@ Constants for USB 3.0 timing parameters.
 enum tIOUSB30TimingParameters : unsigned int;
 ```
 
-#### Discussion
+## Discussion
 
 For information about these constants, see Table 8-36 of the USB 3.1 specification at [http://www.usb.org](http://www.usb.org).
 

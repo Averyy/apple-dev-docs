@@ -26,7 +26,7 @@ var mayRequireContentKeysForMediaDataProcessing: Bool { get }
 @property (nonatomic, readonly) BOOL mayRequireContentKeysForMediaDataProcessing;
 ```
 
-#### Discussion
+## Discussion
 
 When the value is [`true`](../../Swift/true.md), adding the recipient to a content key session allows the recipient to use the session’s existing keys. It also enables handling of new key requests by the session’s delegate object.
 

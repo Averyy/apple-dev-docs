@@ -27,7 +27,7 @@ var buttonImage: NSImage? { get set }
 @property (strong, nullable) NSImage * buttonImage;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is a sharing service picker image.
 

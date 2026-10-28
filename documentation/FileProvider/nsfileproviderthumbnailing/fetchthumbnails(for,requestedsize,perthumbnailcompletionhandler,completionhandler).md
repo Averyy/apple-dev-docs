@@ -24,11 +24,11 @@ func fetchThumbnails(for itemIdentifiers: [NSFileProviderItemIdentifier], reques
 - (NSProgress *) fetchThumbnailsForItemIdentifiers:(NSArray<NSString *> *) itemIdentifiers requestedSize:(CGSize) size perThumbnailCompletionHandler:(void (^)(NSFileProviderItemIdentifier identifier, NSData *imageData, NSError *error)) perThumbnailCompletionHandler completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 An object that reports the progress of this request. If the thumbnails are no longer needed, the system can cancel this request by calling the progress object’s [`cancel()`](../../Foundation/progress/cancel%28%29.md) method.
 
-#### Discussion
+## Discussion
 
 For local files, the system automatically provides thumbnails for supported content types, and calls a Quick Look Preview extension to get thumbnails for custom types.
 

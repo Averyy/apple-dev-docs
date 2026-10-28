@@ -19,7 +19,7 @@ var isBordered: Bool { get set }
 @property (getter=isBordered) BOOL bordered;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the cell has a plain border or [`false`](../../Swift/false.md) if it does not. This property is mutually exclusive with the [`isBezeled`](./isbezeled.md) property—that is, a cell’s border can be plain or bezeled but not both. Changing the value of this property automatically removes any bezel that has been set, regardless of the value you assign to the property.
 

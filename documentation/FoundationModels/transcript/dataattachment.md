@@ -20,7 +20,7 @@ A data attachment payload in a serialized, portable format.
 struct DataAttachment
 ```
 
-#### Overview
+## Overview
 
 A [`Transcript.DataAttachment`](./dataattachment.md) records the bytes and identifier of a value that a [`LanguageModel`](../languagemodel.md) implementation opted into via [`supportsDataAttachmentType(_:)`](../languagemodel/supportsdataattachmenttype%28_%29.md). It’s what a [`DataAttachmentRepresentable`](../dataattachmentrepresentable.md)-conforming type produces from its [`transcriptRepresentation`](../dataattachmentrepresentable/transcriptrepresentation.md), and it round-trips through the transcript’s `Codable` conformance so the transcript remains portable even in environments where the declaring package isn’t installed.
 

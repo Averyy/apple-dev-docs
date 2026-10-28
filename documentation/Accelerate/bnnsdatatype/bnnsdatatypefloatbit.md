@@ -19,7 +19,7 @@
 BNNSDataTypeFloatBit
 ```
 
-#### Discussion
+## Discussion
 
 Storage data type
 

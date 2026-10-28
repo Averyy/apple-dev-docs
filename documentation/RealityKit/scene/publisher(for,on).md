@@ -21,7 +21,7 @@ Generates a publisher for events of the specified type.
 @preconcurrency func publisher<E>(for event: E.Type, on sourceObject: (any EventSource)? = nil) -> Scene.Publisher<E> where E : Event
 ```
 
-#### Return Value
+## Return Value
 
 A publisher for events of the specified type.
 

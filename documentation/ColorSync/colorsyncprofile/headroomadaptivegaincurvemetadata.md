@@ -25,7 +25,7 @@ var headroomAdaptiveGainCurveMetadata: Data? { get }
 
 - [Authoring Headroom Adaptive Gain Curve metadata](../authoring-headroom-adaptive-gain-curve-metadata.md)
 
-#### Discussion
+## Discussion
 
 This is equivalent to the serialized SMPTE ST 2094-50. Embed it in another profile with [`adding(headroomAdaptiveGainCurveMetadata:options:)`](./adding%28headroomadaptivegaincurvemetadata,options%29.md), or read the decoded form from [`headroomAdaptiveGainCurve`](./headroomadaptivegaincurve-swift.property.md).
 

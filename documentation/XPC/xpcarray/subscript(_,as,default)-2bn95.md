@@ -21,7 +21,7 @@ Reads and writes the value at the given index as a Boolean value, falling back t
 subscript(index: Int, as type: Bool.Type = Bool.self, default defaultValue: @autoclosure () -> Bool) -> Bool { get }
 ```
 
-#### Return Value
+## Return Value
 
 The value at the specified index in the array.
 

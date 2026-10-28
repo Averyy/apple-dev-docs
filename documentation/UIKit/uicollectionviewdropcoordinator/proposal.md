@@ -23,7 +23,7 @@ var proposal: UICollectionViewDropProposal { get }
 @property (nonatomic, readonly) UICollectionViewDropProposal * proposal;
 ```
 
-#### Discussion
+## Discussion
 
 If your drag delegate implements the [`collectionView(_:dropSessionDidUpdate:withDestinationIndexPath:)`](../uicollectionviewdropdelegate/collectionview%28_,dropsessiondidupdate,withdestinationindexpath%29.md) method, this object contains the information that you provided when making your drop proposal for the given location.
 

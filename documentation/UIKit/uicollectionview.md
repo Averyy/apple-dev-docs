@@ -30,7 +30,7 @@ class UICollectionView
 - [Making a view into a drag source](./making-a-view-into-a-drag-source.md)
 - [Making a view into a drop destination](./making-a-view-into-a-drop-destination.md)
 
-#### Overview
+## Overview
 
 When you add a collection view to your user interface, your app’s main job is to manage the data associated with that collection view. The collection view gets its data from the data source object, stored in the collection view’s [`dataSource`](./uicollectionview/datasource.md) property. For your data source, you can use a [`UICollectionViewDiffableDataSource`](./uicollectionviewdiffabledatasource-9tqpa.md) object, which provides the behavior you need to simply and efficiently manage updates to your collection view’s data and user interface. Alternatively, you can create a custom data source object by adopting the [`UICollectionViewDataSource`](./uicollectionviewdatasource.md) protocol.
 
@@ -44,7 +44,7 @@ Besides embedding a [`UICollectionView`](./uicollectionview.md) in your user int
 
 You also use the collection view object to manage the selected items, although for this behavior the collection view works with its associated [`delegate`](./uicollectionview/delegate.md) object.
 
-##### Layouts
+### Layouts
 
 A layout object defines the visual arrangement of the content in the collection view. A subclass of the [`UICollectionViewLayout`](./uicollectionviewlayout.md) class, the layout object defines the organization and location of all cells and supplementary views inside the collection view. Although it defines their locations, the layout object doesn’t actually apply that information to the corresponding views. The collection view applies layout information to the corresponding views because the creation of cells and supplementary views involves coordination between the collection view and your data source object. The layout object is like another data source, except it provides visual information instead of item data.
 
@@ -54,7 +54,7 @@ To create an interactive transition — one that is driven by a gesture recogniz
 
 For more information, see [Layouts](./layouts.md).
 
-##### Cells and supplementary views
+### Cells and supplementary views
 
 The collection view’s data source object provides both the content for items and the views used to present that content. When the collection view first loads its content, it asks its data source to provide a view for each visible item. The collection view maintains a queue or list of view objects that the data source has marked for reuse. Instead of creating new views explicitly in your code, you always dequeue views.
 
@@ -67,14 +67,14 @@ Before you call either of these methods, you must tell the collection view how t
 
 After dequeueing the appropriate view in your data source method, configure its content and return it to the collection view for use. After getting the layout information from the layout object, the collection view applies it to the view and displays it.
 
-##### Data prefetching
+### Data prefetching
 
 Collection views provide two prefetching techniques you can use to improve responsiveness:
 
 - *Cell prefetching* prepares cells in advance of the time they’re required. When a collection view requires a large number of cells simultaneously — for example, a new row of cells in grid layout — the cells are requested earlier than the time required for display. Cell rendering is therefore spread across multiple layout passes, resulting in a smoother scrolling experience. Cell prefetching is enabled by default.
 - *Data prefetching* provides a mechanism whereby you’re notified of the data requirements of a collection view in advance of the requests for cells. This is useful if the content of your cells relies on an expensive data loading process, such as a network request. Assign an object that conforms to the [`UICollectionViewDataSourcePrefetching`](./uicollectionviewdatasourceprefetching.md) protocol to the [`prefetchDataSource`](./uicollectionview/prefetchdatasource.md) property to receive notifications of when to prefetch data for cells.
 
-##### Reorder items interactively
+### Reorder items interactively
 
 Collection views allow you to move items around based on user interactions. Typically, the order of items in a collection view is defined by your data source. If you allow users to reorder items, you can configure a gesture recognizer to track the user’s interactions with a collection view item and update that item’s position.
 
@@ -84,7 +84,7 @@ During user interactions, the collection view invalidates its layout dynamically
 
 The [`UICollectionViewController`](./uicollectionviewcontroller.md) class provides a default gesture recognizer that you can use to rearrange items in its managed collection view. To install this gesture recognizer, set the [`installsStandardGestureForInteractiveMovement`](./uicollectionviewcontroller/installsstandardgestureforinteractivemovement.md) property of the collection view controller to [`true`](../Swift/true.md).
 
-##### Interface Builder attributes
+### Interface Builder attributes
 
 The following table lists the attributes that you configure for collection views in Interface Builder.
 
@@ -95,11 +95,11 @@ The following table lists the attributes that you configure for collection views
 
 When the Flow layout is selected, the Size inspector for the collection view contains additional attributes for configuring flow layout metrics. Use those attributes to configure the size of your cells, the size of headers and footers, the minimum spacing between cells, and any margins around each section of cells. For more information about the meaning of the flow layout metrics, see [`UICollectionViewFlowLayout`](./uicollectionviewflowlayout.md).
 
-##### Internationalization
+### Internationalization
 
 A collection view has no direct content of its own to internationalize. Instead, you internationalize the cells and reusable views of the collection view. For more information about internationalization, see [Localization](https://developer.apple.com/localization/).
 
-##### Accessibility
+### Accessibility
 
 A collection view has no content of its own to make accessible. If your cells and reusable views contain standard UIKit controls such as [`UILabel`](./uilabel.md) and [`UITextField`](./uitextfield.md), you can make those controls accessible. When a collection view changes its onscreen layout, it posts the [`layoutChanged`](./uiaccessibility/notification/layoutchanged.md) notification.
 

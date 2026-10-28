@@ -20,7 +20,7 @@ Creates a new instance for storing descriptive information about an activity.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 After you create a new [`GroupActivityMetadata`](../groupactivitymetadata.md) structure, assign values to its properties and deliver it to the system from the [`metadata`](../groupactivity/metadata.md) property of your custom [`GroupActivity`](../groupactivity.md) type.
 

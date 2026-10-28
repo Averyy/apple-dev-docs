@@ -19,11 +19,11 @@ optional func additionalHeaders(for session: MEComposeSession) -> [String : [Str
 - (NSDictionary<NSString *,NSArray<NSString *> *> *) additionalHeadersForSession:(MEComposeSession *) session;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary that maps header keys to arrays of string values.
 
-#### Discussion
+## Discussion
 
 To add custom headers to an outgoing message, return a dictionary that contains the header key and an array of one or more values.
 

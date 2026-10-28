@@ -25,7 +25,7 @@ var NSUndoCloseGroupingRunLoopOrdering: Int { get }
 static const NSUInteger NSUndoCloseGroupingRunLoopOrdering;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value as the `order` parameter if you call [`perform(_:target:argument:order:modes:)`](./runloop/perform%28_,target,argument,order,modes%29.md) to have a [`RunLoop`](./runloop.md) perform a selector that closes an undo group.
 

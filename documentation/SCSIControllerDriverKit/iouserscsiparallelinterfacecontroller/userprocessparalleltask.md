@@ -15,7 +15,7 @@ Processes a parallel task in response to a call from the framework.
 virtual kern_return_t UserProcessParallelTask(SCSIUserParallelTask parallelRequest, uint32_t *response, OSAction *completion);
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method to put a command on the bus, sending all information necessary to process the request in the `parallelRequest` parameter. Your HBA-specific subclass must implement this method.
 

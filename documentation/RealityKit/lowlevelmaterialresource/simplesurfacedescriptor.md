@@ -18,7 +18,7 @@ The configuration for a built-in surface shader that applies a tint color, a tex
 struct SimpleSurfaceDescriptor
 ```
 
-#### Overview
+## Overview
 
 Pass a `SimpleSurfaceDescriptor` to [`makeSimpleSurfaceShader(descriptor:)`](../lowlevelrendercontext/makesimplesurfaceshader%28descriptor%29-74vhb.md) to compile the corresponding [`LowLevelMaterialResource.SurfaceShader`](./surfaceshader.md) function.
 

@@ -19,7 +19,7 @@ var tickMarkPosition: NSSlider.TickMarkPosition { get set }
 @property NSTickMarkPosition tickMarkPosition;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to set the position where the control draws tick marks. Regardless of the value in this property, tick marks are not drawn if the value in the [`numberOfTickMarks`](./numberoftickmarks.md) property is `0`.
 

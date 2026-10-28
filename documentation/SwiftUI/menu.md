@@ -26,7 +26,7 @@ struct Menu<Label, Content> where Label : View, Content : View
 - [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
 - [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
 
-#### Overview
+## Overview
 
 The following example presents a menu of three buttons and a submenu, which contains three buttons of its own.
 
@@ -73,7 +73,7 @@ Menu {
 
 > **Note**: This behavior does not apply to buttons outside of a menu’s content.
 
-##### Primary action
+### Primary action
 
 Menus can be created with a custom primary action. The primary action will be performed when the user taps or clicks on the body of the control, and the menu presentation will happen on a secondary gesture, such as on long press or on click of the menu indicator. The following example creates a menu that adds bookmarks, with advanced options that are presented in a menu.
 
@@ -95,7 +95,7 @@ Menu {
 }
 ```
 
-##### Styling menus
+### Styling menus
 
 Use the [`menuStyle(_:)`](./view/menustyle%28_%29.md) modifier to change the style of all menus in a view. The following example shows how to apply a custom style:
 

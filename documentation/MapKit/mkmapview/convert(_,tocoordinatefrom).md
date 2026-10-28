@@ -40,7 +40,7 @@ func convert(_ point: CGPoint, toCoordinateFrom view: NSView?) -> CLLocationCoor
 - (CLLocationCoordinate2D) convertPoint:(CGPoint) point toCoordinateFromView:(NSView *) view;
 ```
 
-#### Return Value
+## Return Value
 
 The map coordinate at the specified point.
 

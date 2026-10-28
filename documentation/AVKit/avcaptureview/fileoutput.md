@@ -19,7 +19,7 @@ var fileOutput: AVCaptureFileOutput? { get }
 @property (readonly, nullable) AVCaptureFileOutput * fileOutput;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the first capture file output object contained in the session’s [`outputs`](../../AVFoundation/avcapturesession/outputs.md) array, or `nil` if it has no outputs. In the latter case, the capture view disables the start recording button. However, it may still enable the controls for choosing input sources.
 

@@ -15,7 +15,7 @@ A type representing the world alignment behavior for a scene.
 struct WorldAlignmentBehavior
 ```
 
-#### Overview
+## Overview
 
 A value of this type can be provided to the [`volumeWorldAlignment(_:)`](./scene/volumeworldalignment%28_%29.md) scene modifier to control the world alignment volumes should maintain as they are repositioned. The default value is [`automatic`](./worldalignmentbehavior/automatic.md).
 

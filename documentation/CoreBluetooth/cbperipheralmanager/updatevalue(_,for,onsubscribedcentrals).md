@@ -25,11 +25,11 @@ func updateValue(_ value: Data, for characteristic: CBMutableCharacteristic, onS
 - (BOOL) updateValue:(NSData *) value forCharacteristic:(CBMutableCharacteristic *) characteristic onSubscribedCentrals:(NSArray<CBCentral *> *) centrals;
 ```
 
-#### Return Value
+## Return Value
 
 This value is [`true`](../../Swift/true.md) if the update is successfully sent to the subscribed central or centrals. [`false`](../../Swift/false.md) if the update isn’t successfully sent because the underlying transmit queue is full.
 
-#### Discussion
+## Discussion
 
 You use this method to send updates of a characteristic’s value—through a notification or indication—to selected centrals that have subscribed to that characteristic’s value. If the method returns [`false`](../../Swift/false.md) because the underlying transmit queue is full, the peripheral manager calls the [`peripheralManagerIsReady(toUpdateSubscribers:)`](../cbperipheralmanagerdelegate/peripheralmanagerisready%28toupdatesubscribers%29.md) method of its delegate object when more space in the transmit queue becomes available. After you receive this delegate method callback, you may resend the update.
 

@@ -24,7 +24,7 @@ var side: NSFileProviderTestingOperationSide { get }
 @property (nonatomic, readonly) NSFileProviderTestingOperationSide side;
 ```
 
-#### Discussion
+## Discussion
 
 Most operations are symmetrical. They can affect either items stored locally, or items in the File Provider extension’s remote storage.
 

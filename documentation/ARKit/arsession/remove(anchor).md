@@ -20,7 +20,7 @@ func remove(anchor: ARAnchor)
 - (void) removeAnchor:(ARAnchor *) anchor;
 ```
 
-#### Discussion
+## Discussion
 
 Changes to anchor tracking take effect when the next frame is captured.
 

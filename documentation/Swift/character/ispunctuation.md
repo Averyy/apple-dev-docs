@@ -21,7 +21,7 @@ A Boolean value indicating whether this character represents punctuation.
 var isPunctuation: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following characters all represent punctuation:
 

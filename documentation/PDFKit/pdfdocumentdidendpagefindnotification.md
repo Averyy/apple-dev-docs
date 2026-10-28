@@ -20,7 +20,7 @@ A notification that a find operation finishes working on a page in a document.
 extern NSNotificationName const PDFDocumentDidEndPageFindNotification;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this notification to update a progress bar.
 

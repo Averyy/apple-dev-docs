@@ -16,7 +16,7 @@ struct vnop_readlink_args {
 };
 ```
 
-#### Discussion
+## Discussion
 
 VNOP_READDIRATTR() packs a buffer with file attributes, as if the results of many "getattrlist" calls.
 

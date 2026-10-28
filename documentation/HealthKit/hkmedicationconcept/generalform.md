@@ -24,7 +24,7 @@ var generalForm: HKMedicationGeneralForm { get }
 @property (nonatomic, copy, readonly) HKMedicationGeneralForm generalForm;
 ```
 
-#### Discussion
+## Discussion
 
 A general manufactured dose form for the specific medication. This value tells you the manufactured form of the medication, such as tablet, capsule, cream, injection, or inhaler.
 

@@ -24,7 +24,7 @@ class func beginAnimations(_ animationID: String?, context: UnsafeMutableRawPoin
 + (void) beginAnimations:(NSString *) animationID context:(void *) context;
 ```
 
-#### Discussion
+## Discussion
 
 This method signals to the system that you want to specify one or more animations to perform. After calling this method, configure the animation options (using the `setAnimation…` class methods) and then change the desired animatable properties of your views. When you are done changing your view properties, call the [`commitAnimations()`](./commitanimations%28%29.md) method to close the set and schedule the animations.
 

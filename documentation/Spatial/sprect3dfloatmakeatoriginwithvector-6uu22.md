@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatMakeAtOriginWithVector(simd_float3 origin, simd_float3 size);
 ```
 
-#### Return Value
+## Return Value
 
 A new rectangle stucture.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle at the specified origin using simd vectors.
 

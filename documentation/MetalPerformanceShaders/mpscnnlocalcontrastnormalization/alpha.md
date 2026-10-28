@@ -24,7 +24,7 @@ var alpha: Float { get set }
 @property (nonatomic, readwrite) float alpha;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `1.0`.
 

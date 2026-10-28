@@ -23,7 +23,7 @@ static func partialRangeFrom(_ range: PartialRangeFrom<Int>, stride: Int = 1) ->
 
 Available when `Self` is `_MLTensorRange`.
 
-#### Discussion
+## Discussion
 
 For example:
 

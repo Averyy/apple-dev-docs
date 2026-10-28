@@ -19,11 +19,11 @@
 static SPSize3D SPSize3DMakeWithVector(simd_double3 xyz);
 ```
 
-#### Return Value
+## Return Value
 
 A new size stucture.
 
-#### Discussion
+## Discussion
 
 Creates a size structure with dimensions specified as a 3-element SIMD vector.
 

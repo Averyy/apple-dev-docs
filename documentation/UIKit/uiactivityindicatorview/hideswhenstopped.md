@@ -23,7 +23,7 @@ var hidesWhenStopped: Bool { get set }
 @property (nonatomic) BOOL hidesWhenStopped;
 ```
 
-#### Discussion
+## Discussion
 
 If the value of this property is [`true`](../../Swift/true.md) (the default), the receiver sets its [`isHidden`](../uiview/ishidden.md) property (`UIView`) to [`true`](../../Swift/true.md) when receiver is not animating. If the [`hidesWhenStopped`](./hideswhenstopped.md) property is [`false`](../../Swift/false.md), the receiver is not hidden when animation stops. You stop an animating progress indicator with the [`stopAnimating()`](./stopanimating%28%29.md) method.
 

@@ -15,7 +15,7 @@ Read and write most image file formats, and access an image’s metadata.
 - visionOS 1.0+
 - watchOS 2.0+
 
-#### Overview
+## Overview
 
 The Image I/O framework allows applications to read and write most image file formats. This framework offers high efficiency, color management, and access to image metadata.
 

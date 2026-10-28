@@ -16,7 +16,7 @@ An object containing the encrypted payment data.
 JSON paymentData;
 ```
 
-#### Discussion
+## Discussion
 
 This data is used by your e-commerce back-end system, which decrypts it and submits it to your payment processor.
 

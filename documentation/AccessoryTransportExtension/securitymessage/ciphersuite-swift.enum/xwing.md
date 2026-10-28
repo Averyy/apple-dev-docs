@@ -20,7 +20,7 @@ case xWing
 - [Receiving iOS notifications on an accessory](../../receiving-ios-notifications-on-an-accessory.md)
 - [Forwarding notifications to your accessory using the internet transport type](../../forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
-#### Discussion
+## Discussion
 
 Implement this cipher suite for post-quantum security. The [`AccessoryTransport.internet`](../../accessorytransport/internet.md) and [`AccessoryTransport.localNetwork`](../../accessorytransport/localnetwork.md) transport types require this cipher suite. Bluetooth transport supports this cipher suite, but you can alternatively use [`SecurityMessage.CipherSuite.p256`](./p256.md) as a fallback.
 

@@ -18,7 +18,7 @@ Get alerted when a `BackgroundDeliveryExtension` is about to close.
 func willTerminate() async
 ```
 
-#### Discussion
+## Discussion
 
 This is called when the extension approaches the end of its time window and is about to be terminated by the system. It provides an opportunity to safely end any ongoing operations and save changes to data. When the time window is exceeded, the extension terminates even if execution is within `willTerminate`.
 

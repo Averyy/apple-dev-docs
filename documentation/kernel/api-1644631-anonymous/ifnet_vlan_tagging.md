@@ -13,7 +13,7 @@
 IFNET_VLAN_TAGGING = 0x00010000
 ```
 
-#### Discussion
+## Discussion
 
 Hardware will generate VLAN headers.
 

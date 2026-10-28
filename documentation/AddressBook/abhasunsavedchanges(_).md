@@ -19,11 +19,11 @@ func ABHasUnsavedChanges(_ addressBook: ABAddressBookRef!) -> Bool
 extern bool ABHasUnsavedChanges(ABAddressBookRef addressBook);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if there are unsaved changes, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 The unsaved changes flag is set automatically whenever changes are made to the address book.
 

@@ -23,11 +23,11 @@ class func supportedLocales() -> Set<Locale>
 + (NSSet<NSLocale *> *) supportedLocales;
 ```
 
-#### Return Value
+## Return Value
 
 A set of locales that support speech recognition.
 
-#### Discussion
+## Discussion
 
 This method returns the locales for which speech recognition is supported. Support for a locale does not guarantee that speech recognition is currently possible for that locale. For some locales, the speech recognizer requires an active Internet connection to communicate with Apple’s servers. If the speech recognizer is currently unable to process requests,   [`isAvailable`](./isavailable.md) returns `false`.
 

@@ -19,7 +19,7 @@ Creates a plain-style item the specified title, image, target, action, and conte
 - (instancetype) initWithTitle:(NSString *) title image:(UIImage *) image target:(id) target action:(SEL) action menu:(UIMenu *) menu;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized [`UIBarButtonItem`](../uibarbuttonitem.md).
 

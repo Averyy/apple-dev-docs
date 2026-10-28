@@ -26,7 +26,7 @@ A type you use to deliver the contents of your app-extension-based UI.
 
 - [Including extension-based UI in your interface](./including-extension-based-ui-in-your-interface.md)
 
-#### Overview
+## Overview
 
 When defining an [`AppExtensionScene`](./appextensionscene.md) type, provide a `PrimitiveAppExtensionScene` structure as the body of that type. This type facilitates the delivery of the scene’s UI views back to the host app for incorporation into the host view controller. When constructing this type, specify one of the defined scene identifiers that the host app supports.
 

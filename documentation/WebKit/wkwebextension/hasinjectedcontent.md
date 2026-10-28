@@ -23,7 +23,7 @@ var hasInjectedContent: Bool { get }
 @property (nonatomic, readonly) BOOL hasInjectedContent;
 ```
 
-#### Discussion
+## Discussion
 
 If this property is `YES`, the extension has content that can be injected by matching against the extension’s requested match patterns.
 

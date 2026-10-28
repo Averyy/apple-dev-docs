@@ -20,7 +20,7 @@ The change in position and orientation since the previous frame.
 let rootMotionTransform: Transform
 ```
 
-#### Discussion
+## Discussion
 
 This value is the delta from the previous frame, not a cumulative transform.
 

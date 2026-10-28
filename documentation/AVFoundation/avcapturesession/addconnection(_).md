@@ -24,7 +24,7 @@ func addConnection(_ connection: AVCaptureConnection)
 - (void) addConnection:(AVCaptureConnection *) connection;
 ```
 
-#### Discussion
+## Discussion
 
 You can only add a capture connection to a session using this method if [`canAddConnection(_:)`](./canaddconnection%28_%29.md) returns [`true`](../../Swift/true.md).
 

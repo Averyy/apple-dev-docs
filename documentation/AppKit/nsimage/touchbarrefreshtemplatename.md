@@ -22,7 +22,7 @@ class let touchBarRefreshTemplateName: String
 extern NSImageName const NSImageNameTouchBarRefreshTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for refresh](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793474@2x.png)
 

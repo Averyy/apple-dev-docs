@@ -21,7 +21,7 @@ func round(_ array: MLXArray, decimals: Int = 0, stream: StreamOrDevice = .defau
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 Roughly equivalent to:
 
@@ -32,7 +32,7 @@ let s = 10 ** decimals
 let result = round(array * s) / s
 ```
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`floor(_:stream:)`](./floor%28_,stream%29.md)

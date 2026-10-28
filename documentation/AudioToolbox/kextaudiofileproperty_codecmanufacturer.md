@@ -24,7 +24,7 @@ var kExtAudioFileProperty_CodecManufacturer: ExtAudioFilePropertyID { get }
 kExtAudioFileProperty_CodecManufacturer
 ```
 
-#### Discussion
+## Discussion
 
 You must specify this property before setting the [`kExtAudioFileProperty_ClientDataFormat`](./kextaudiofileproperty_clientdataformat.md) property, which in turn triggers the creation of the codec. Use this property in iOS to choose between a hardware or software encoder, by specifying [`kAppleHardwareAudioCodecManufacturer`](./kapplehardwareaudiocodecmanufacturer.md) or [`kAppleSoftwareAudioCodecManufacturer`](./kapplesoftwareaudiocodecmanufacturer.md).
 

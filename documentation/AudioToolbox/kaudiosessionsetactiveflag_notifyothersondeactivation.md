@@ -25,7 +25,7 @@ var kAudioSessionSetActiveFlag_NotifyOthersOnDeactivation: Int { get }
 kAudioSessionSetActiveFlag_NotifyOthersOnDeactivation
 ```
 
-#### Discussion
+## Discussion
 
 Used only when deactivating your audio session.
 

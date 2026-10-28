@@ -25,7 +25,7 @@ class MKPointAnnotation
 @interface MKPointAnnotation : MKShape
 ```
 
-#### Overview
+## Overview
 
 You use this class, rather than define a custom annotation object, in situations where all you want to do is display a title string at the specified point on the map.
 

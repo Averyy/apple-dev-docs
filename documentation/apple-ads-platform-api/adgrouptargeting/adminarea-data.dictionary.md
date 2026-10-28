@@ -15,7 +15,7 @@ State or province (administrative area) targeting.
 object AdGroupTargeting.AdminArea
 ```
 
-#### Discussion
+## Discussion
 
 Admin area IDs are returned by [`Search Geo Locations`](../searches-for-a-list-of-geo-locations.md) or [`Query Geo Locations`](../gets-a-list-of-geo-locations.md). Used with App Store and Apple Maps campaigns. Uses the [`TargetingData`](../targetingdata.md) `include`/`exclude` shape.
 

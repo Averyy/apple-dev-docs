@@ -23,7 +23,7 @@ class HKVerifiableClinicalRecord
 @interface HKVerifiableClinicalRecord : HKSample
 ```
 
-#### Overview
+## Overview
 
 [`HKVerifiableClinicalRecord`](./hkverifiableclinicalrecord.md) samples contain data from a SMART Health Card or EU Digital COVID Certificate. Verifiable clinical records combine information about the user’s identity with clinical data, like an immunization record or a lab test result. The organization that produced the data cryptographically signs the bundle.
 

@@ -19,7 +19,7 @@ func webPlugInSetIsSelected(_ isSelected: Bool)
 - (void) webPlugInSetIsSelected:(BOOL) isSelected;
 ```
 
-#### Discussion
+## Discussion
 
 This may be used, for example, to change the plug-in’s appearance when it is selected by the user.
 

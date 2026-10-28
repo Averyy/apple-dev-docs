@@ -15,7 +15,7 @@ The name of the area within the locality.
 subLocality: string | null;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the [`subLocality`](./sublocality.md) for Golden Gate Park in San Francisco, California, is `"Golden Gate Park"`.
 

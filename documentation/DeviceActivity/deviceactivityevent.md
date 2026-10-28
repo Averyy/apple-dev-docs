@@ -17,7 +17,7 @@ An event that represents an application, category, or website activity.
 struct DeviceActivityEvent
 ```
 
-#### Overview
+## Overview
 
 Device activity is the amount of time an application, category, or web domain is frontmost on the screen and accumulates based on the time zone of the scheduled start date. Web domain activity includes domains visited in Safari or any third-party browser that contributes web usage via a `STWebpageController`.
 

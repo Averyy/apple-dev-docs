@@ -25,7 +25,7 @@ func makeComputeCommandEncoder(dispatchType: MTLDispatchType) -> (any MTLCompute
 - (id<MTLComputeCommandEncoder>) computeCommandEncoderWithDispatchType:(MTLDispatchType) dispatchType;
 ```
 
-#### Discussion
+## Discussion
 
 Use an [`MTLComputeCommandEncoder`](../mtlcomputecommandencoder.md) instance’s methods to set up a single compute pass.
 

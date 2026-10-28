@@ -28,7 +28,7 @@ var showsUserLocation: Bool { get set }
 
 - [Converting a user’s location to a descriptive placemark](../converting-a-user-s-location-to-a-descriptive-placemark.md)
 
-#### Discussion
+## Discussion
 
 This property doesn’t indicate whether the user’s location is actually visible on the map, only whether the map view tries to display it. Setting this property to [`true`](../../Swift/true.md) causes the map view to use the Core Location framework to find the user’s location and try to display it on the map. While this property is [`true`](../../Swift/true.md), the map view continues to track the user’s location and update it periodically. The default value of this property is [`false`](../../Swift/false.md).
 

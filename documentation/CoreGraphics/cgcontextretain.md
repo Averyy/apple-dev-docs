@@ -21,11 +21,11 @@ Increments the retain count of a graphics context.
 extern CGContextRefCGContextRetain(CGContextRef c);
 ```
 
-#### Return Value
+## Return Value
 
 The same graphics context you passed in as the `context` parameter.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to [`CFRetain`](../CoreFoundation/cfretain.md), except it does not cause an error if `c` is `NULL`.
 

@@ -5,7 +5,7 @@
 
 Specify which targets to build, and customize the settings Xcode uses to build, run, test, and profile those targets.
 
-#### Overview
+## Overview
 
 When you build, run, test, profile, or archive part of your project, Xcode uses the selected build scheme to determine what to do. A build scheme contains a list of targets to build, and any configuration and environment details that affect the selected action. For example, when you build and run an app, the scheme tells Xcode what launch arguments to pass to the app. Xcode provides default schemes for most targets, and you can customize those schemes or create new ones as needed.
 
@@ -17,7 +17,7 @@ To view and modify your project’s current schemes, select Manage Schemes. For 
 
 ![The scheme manager panel shows the list of available schemes and offers controls to create new schemes.](https://developer.apple.com/tutorials/images/com.apple.Xcode/build-scheme-manage@2x.png)
 
-##### Specify the build options for a scheme’s targets
+### Specify the build options for a scheme’s targets
 
 When you tell Xcode to build a scheme, Xcode analyzes your project and generates the list of tasks required to build the targets of that scheme. To speed up builds, Xcode executes as many tasks as possible in parallel, taking advantage of whatever resources are available. To ensure that products build correctly, Xcode serializes tasks when dependencies exist between them. For example, Xcode builds a private framework before it builds the app that links against that framework.
 
@@ -33,14 +33,14 @@ The following table lists the build options you can configure for your schemes.
 | Manual Order | Build targets serially in the order listed in the scheme, underutilizing your Mac’s multiple processors. This option is deprecated. Don’t use it. |
 | Find Implicit Dependencies | Gather information about additional dependencies during a build. The build system uses this information to help schedule build-related tasks. |
 
-##### Specify launch arguments and environment variables
+### Specify launch arguments and environment variables
 
 If your product configures itself using command-line arguments or environment variables, specify that information on the Arguments tab of the Run, Test, or Profile build scheme action.
 
 - Xcode configures and exports environment variables before it runs the process.
 - Xcode passes command-line arguments directly to the launched process.
 
-##### Configure the runtime environment for built products
+### Configure the runtime environment for built products
 
 In the Run, Test, and Profile build scheme actions, the Info tab contains high-level information about how to launch and run your product. Some options are available for all build actions, but some options are specific to the current build action. The following table lists the available options.
 
@@ -77,7 +77,7 @@ Xcode uses information in the Options tab to configure the runtime environment f
 | Test | Code Coverage | An option to gather code coverage metrics for your test targets. |
 | Profile | Testability | An option to enable testability when profiling tests. |
 
-##### Run diagnostics on your target
+### Run diagnostics on your target
 
 Xcode includes tools to validate the stability of your code and eliminate potential bugs. These tools annotate your code with runtime checks that examine specific types of operations. For example, one tool detects potential race conditions between your app’s threads. Enable these checks from the Diagnostics tab of your build scheme.
 
@@ -99,7 +99,7 @@ To detect memory-related issues, Xcode supports the following diagnostics:
 - Malloc Stack Logging captures function call stack information at the time of each memory allocation.
 - Memory Graph on Resource Exception captures information about your memory graph. You can view the information in the debugger.
 
-##### Run tasks before or after scheme actions
+### Run tasks before or after scheme actions
 
 For each action in your scheme, you can run scripts or send emails before or after Xcode performs that action using pre-actions and post-actions. For example, you might use a post-action to log test results to a custom server each time you run your code. Unlike build phases, Xcode executes your actions only when you select the appropriate command from the Product menu.
 

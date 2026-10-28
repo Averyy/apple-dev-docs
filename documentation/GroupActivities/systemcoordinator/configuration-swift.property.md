@@ -15,7 +15,7 @@ The current configuration of the system coordinator.
 final var configuration: SystemCoordinator.Configuration { get set }
 ```
 
-#### Discussion
+## Discussion
 
 This property stores the [`SystemCoordinator`](../systemcoordinator.md) object’s current support for displaying spatial Personas and placing them and your content in a shared simulation space. Assign a new value to this property to support spatial Personas and shared context in the current activity. The default configuration doesn’t enable support for these features.
 

@@ -24,7 +24,7 @@ var loopCount: Int { get }
 @property (readonly) NSInteger loopCount;
 ```
 
-#### Discussion
+## Discussion
 
 This value starts at 0 and increments as the player continues to loop the replica player items.
 

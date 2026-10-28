@@ -15,7 +15,7 @@ An option to display a date that uses the notification’s delivery timestamp.
 case deliveryDate
 ```
 
-#### Discussion
+## Discussion
 
 See [`deliveryDate`](../deliverydate.md) for the actual date value. Display this date with information that specifies the minute.
 

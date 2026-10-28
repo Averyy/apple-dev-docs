@@ -20,11 +20,11 @@ optional func windowWillResize(_ sender: NSWindow, to frameSize: NSSize) -> NSSi
 - (NSSize) windowWillResize:(NSWindow *) sender toSize:(NSSize) frameSize;
 ```
 
-#### Return Value
+## Return Value
 
 A custom size to which the specified window will be resized.
 
-#### Discussion
+## Discussion
 
 The  `frameSize` contains the size (in screen coordinates) `sender` will be resized to. To resize to a different size, simply return the desired size from this method; to avoid resizing, return the current size. `sender`’s minimum and maximum size constraints have already been applied when this method is called.
 

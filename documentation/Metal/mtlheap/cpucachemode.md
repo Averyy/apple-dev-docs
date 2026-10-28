@@ -25,7 +25,7 @@ var cpuCacheMode: MTLCPUCacheMode { get }
 @property (readonly) MTLCPUCacheMode cpuCacheMode;
 ```
 
-#### Discussion
+## Discussion
 
 Any resources you allocate on the heap have this CPU cache mode.
 

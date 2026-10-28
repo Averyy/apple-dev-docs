@@ -25,7 +25,7 @@ class func flush()
 + (void) flush;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit automatically calls this method at the end of each pass through the run loop, regardless of the run loop mode. If your app does not have a run loop, you must call this method explicitly.
 

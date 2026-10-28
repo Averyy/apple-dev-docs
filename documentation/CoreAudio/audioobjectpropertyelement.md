@@ -18,7 +18,7 @@ typealias AudioObjectPropertyElement = UInt32
 typedef UInt32 AudioObjectPropertyElement;
 ```
 
-#### Discussion
+## Discussion
 
 An AudioObjectPropertyElement is an integer that identifies, along with the AudioObjectPropertySelector and AudioObjectPropertyScope, a specific piece of information about an AudioObject.
 

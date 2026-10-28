@@ -23,11 +23,11 @@ extern id<NSObject> ProExtensionHostSingleton();
 
 - [Interacting with the Final Cut Pro Timeline](../Professional-Video-Applications/interacting-with-the-final-cut-pro-timeline.md)
 
-#### Return Value
+## Return Value
 
 An object that represents the singleton proxy instance of the host object.
 
-#### Discussion
+## Discussion
 
 The ProExtensionHost framework creates an instance of the proxy host object during workflow extension startup. The host object provides an initial access point for workflow extensions to interact with the Final Cut Pro timeline. Call this function to get the singleton instance of the proxy host object.
 

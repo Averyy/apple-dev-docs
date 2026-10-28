@@ -32,7 +32,7 @@ var rideStatus: INRideStatus? { get set }
 @property (atomic, copy, readwrite, nullable) INRideStatus * rideStatus;
 ```
 
-#### Discussion
+## Discussion
 
 You must assign a value to this property for any newly booked rides. The contents of this object convey important information to the user about the status and details of the ride. Siri and Maps display much of this information to the user. If you were unable to book the ride, you may leave this property set to `nil`.
 

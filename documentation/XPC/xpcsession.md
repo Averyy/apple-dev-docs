@@ -21,7 +21,7 @@ A type that sends messages to a server process.
 class XPCSession
 ```
 
-#### Overview
+## Overview
 
 XPC sessions are stateful connections you use to send structured messages to a separate process. Once established, a session remains active until one side of the connection cancels it, at which point the system invalidates the connection.
 

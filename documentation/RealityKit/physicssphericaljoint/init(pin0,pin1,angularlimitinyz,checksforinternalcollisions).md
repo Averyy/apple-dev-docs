@@ -20,7 +20,7 @@ Creates a new spherical joint.
 init(pin0: GeometricPin, pin1: GeometricPin, angularLimitInYZ: (Float, Float)? = nil, checksForInternalCollisions: Bool = false)
 ```
 
-#### Discussion
+## Discussion
 
 An elliptical cone is formed around the x-axis to limit the motion of `pin1` if `angularLimitInYZ` is defined.
 

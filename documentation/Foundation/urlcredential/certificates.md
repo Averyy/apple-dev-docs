@@ -25,7 +25,7 @@ var certificates: [Any] { get }
 @property (copy, readonly) NSArray * certificates;
 ```
 
-#### Discussion
+## Discussion
 
 The certificates are [`SecCertificate`](../../Security/seccertificate.md) objects representing the intermediate certificates of the credential. This value is `nil` if this is not a client certificate credential or if the credential was created with no intermediate certificates.
 

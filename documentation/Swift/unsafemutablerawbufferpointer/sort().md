@@ -23,7 +23,7 @@ mutating func sort()
 
 Available when `Self` conforms to `RandomAccessCollection` and `Element` conforms to `Comparable`.
 
-#### Discussion
+## Discussion
 
 You can sort any mutable collection of elements that conform to the `Comparable` protocol by calling this method. Elements are sorted in ascending order.
 

@@ -20,7 +20,7 @@ var requiresReleaseOS: Bool { get set }
 @property (nonatomic, assign) BOOL requiresReleaseOS;
 ```
 
-#### Discussion
+## Discussion
 
 When set to `true`, the assessment session will only start if the device is running a released build of the operating system, rather than a beta, seed, or other prerelease build. Defaults to `false`.
 

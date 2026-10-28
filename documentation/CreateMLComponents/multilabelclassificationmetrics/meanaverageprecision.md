@@ -21,7 +21,7 @@ The mean average precision.
 var meanAveragePrecision: Float { get }
 ```
 
-#### Discussion
+## Discussion
 
 An average precision score summarizes the precision-recall curve for a label. The mean average precision is the mean of the average precision scores for all the classification labels.
 

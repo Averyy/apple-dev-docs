@@ -25,7 +25,7 @@ var depth: Int { get }
 @property (readonly) NSUInteger depth;
 ```
 
-#### Discussion
+## Discussion
 
 For 1D, 2D, and cube textures, the value is `1`.
 

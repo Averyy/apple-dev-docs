@@ -22,7 +22,7 @@ Returns an array of typed models that match the criteria of the specified fetch 
 func fetch<T>(_ descriptor: FetchDescriptor<T>) throws -> [T] where T : PersistentModel
 ```
 
-#### Return Value
+## Return Value
 
 The array of typed models that satisfy the criteria of the fetch descriptor. If no models match the criteria, the array is empty.
 

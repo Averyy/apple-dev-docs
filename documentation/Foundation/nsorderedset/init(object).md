@@ -25,7 +25,7 @@ convenience init(object: Any)
 - (instancetype) initWithObject:(ObjectType) object;
 ```
 
-#### Return Value
+## Return Value
 
 A new ordered set that contains a single member, `object`.
 

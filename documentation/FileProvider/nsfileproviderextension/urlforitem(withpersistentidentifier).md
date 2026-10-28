@@ -22,11 +22,11 @@ func urlForItem(withPersistentIdentifier identifier: NSFileProviderItemIdentifie
 - (NSURL *) URLForItemWithPersistentIdentifier:(NSFileProviderItemIdentifier) identifier;
 ```
 
-#### Return Value
+## Return Value
 
 The URL of a shared document.
 
-#### Discussion
+## Discussion
 
 Override this method to provide the URL for the document with the given identifier. This method must be the inverse of [`persistentIdentifierForItem(at:)`](./persistentidentifierforitem%28at%29.md), mapping from the persistent identifier, back to the URL.
 

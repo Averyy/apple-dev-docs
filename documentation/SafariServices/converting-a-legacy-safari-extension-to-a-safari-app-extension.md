@@ -5,14 +5,14 @@
 
 Convert a legacy Safari extension to a Safari app extension, automatically with keys or manually.
 
-#### Overview
+## Overview
 
 When you distribute your Safari app extension, you may want it to completely replace your previously provided legacy Safari extensions. Two options are available:
 
 - Configure your Safari app extension to provide a clean upgrade path that automatically removes the previous legacy Safari extension when installing the Safari app extension.
 - Manually convert your legacy Safari extension to a Safari app extension.
 
-##### Convert legacy Safari extensions automatically
+### Convert legacy Safari extensions automatically
 
 Add the `SFSafariExtensionBundleIdentifiersToUninstall` key to the `NSExtension` element inside your app extension’s `Info.plis`t file. It specifies any legacy Safari extensions that you want to remove when your Safari app extension loads. The value for this key is an array of strings, each of which is the bundle identifier of a legacy Safari extension that you want to remove.
 
@@ -20,7 +20,7 @@ Add the `SFSafariExtensionBundleIdentifiersToUninstall` key to the `NSExtension`
 
 When your app installs, the Safari app extension installs with it, and the system removes the legacy Safari extensions you include in the `Info.plist` file from Safari. If any of the legacy Safari extensions are enabled when the upgrade occurs, the Safari app extension is also enabled.
 
-##### Convert legacy Safari extensions manually
+### Convert legacy Safari extensions manually
 
 If you already have a legacy Safari extension and you want to convert it to a Safari app extension, you need to modify parts of it and completely rewrite others. The lists below describe these changes:
 

@@ -20,7 +20,7 @@ class func `default`() -> ODSession!
 + (ODSession *) defaultSession;
 ```
 
-#### Return Value
+## Return Value
 
 A shared instance of the local session.
 

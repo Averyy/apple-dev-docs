@@ -25,7 +25,7 @@ static var badFileTypeOrFormat: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 The file was the wrong type for the operation, or a data file had the wrong format.
 

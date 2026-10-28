@@ -21,11 +21,11 @@ Creates one or more images from the provided description and style information a
 final func images(for concepts: [ImagePlaygroundConcept], style: ImagePlaygroundStyle, options: ImagePlaygroundOptions, limit: Int) -> some AsyncSequence<ImageCreator.CreatedImage, any Error>
 ```
 
-#### Return Value
+## Return Value
 
 An asynchronous stream you use to receive the images.
 
-#### Discussion
+## Discussion
 
 Call this method to start the image generation process with the specified parameters. The method runs asynchronously and returns the results using the provided [`AsyncSequence`](../../Swift/asyncsequence.md) object. The following example configures an image creator, starts the creation of the images, and processes the generated images as they arrive:
 

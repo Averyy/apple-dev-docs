@@ -24,7 +24,7 @@ struct MTAudioProcessingTapCallbacks
 typedef struct { ... } MTAudioProcessingTapCallbacks;
 ```
 
-#### Overview
+## Overview
 
 On 64-bit architectures, this struct contains misaligned function pointers. To avoid link-time issues, fill its function pointer fields by using assignment statements, rather than declaring them as global or static structs.
 

@@ -15,7 +15,7 @@ A Boolean value that indicates whether the Look Around view displays a close con
 showsCloseControl?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 When the user interacts with the close control, a `close` event dispatches. To handle the `close` event, cancel the event and invoke appropriate actions for your application to close the view. If the event is not cancelled, Look Around view will remove itself from the DOM.
 

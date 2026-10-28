@@ -5,7 +5,7 @@
 
 Perform basic arithmetic operations and common digital signal processing (DSP) routines on large vectors.
 
-#### Overview
+## Overview
 
 The vDSP library contains a collection of highly optimized functions for DSP, type conversion, and general purpose arithmetic on large collections. The library includes DSP operations such as convolution and correlation, Fourier transformation, and biquadratic filtering. For arithmetic on large collections, vDSP includes functions such as multiply-add and reduction functions including sum, mean, and maximum.
 

@@ -25,7 +25,7 @@ var timeoutIntervalForRequest: TimeInterval { get set }
 @property (assign) NSTimeInterval timeoutIntervalForRequest;
 ```
 
-#### Discussion
+## Discussion
 
 > **See Also**: `NSURLSessionConfiguration.timeoutIntervalForRequest`
 

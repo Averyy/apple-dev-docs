@@ -5,7 +5,7 @@
 
 AAC requires data beyond the source PCM audio samples in order to correctly encode and decode audio samples due to the nature of the encoding algorithm.
 
-#### Overview
+## Overview
 
 AAC requires data beyond the source PCM audio samples in order to correctly encode and decode audio samples due to the nature of the encoding algorithm. AAC encoding uses a transform over consecutive sets of 2048 audio samples, applied every 1024 audio samples (overlapped). For correct audio to be decoded, both transforms for any period of 1024 audio samples are needed. For this reason, encoders add at least 1024 samples of silence before the first ‘true’ audio sample, and often add more. This is called variously “priming”, “priming samples”, or “encoder delay”. A couple of definitions for use in this discussion:
 

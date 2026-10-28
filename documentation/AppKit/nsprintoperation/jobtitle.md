@@ -19,7 +19,7 @@ var jobTitle: String? { get set }
 @property (copy, nullable) NSString * jobTitle;
 ```
 
-#### Discussion
+## Discussion
 
 Assigning a title with this method overrides the job title provided by the printing view’s [`printJobTitle`](../nsview/printjobtitle.md) method. Specifying `nil` for the `jobTitle` parameter causes the receiver to once again take its title from the printing view.
 

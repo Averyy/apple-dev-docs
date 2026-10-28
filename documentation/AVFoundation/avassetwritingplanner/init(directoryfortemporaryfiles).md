@@ -20,7 +20,7 @@ Creates an instance of AVAssetWritingPlanner given a unique file directory to ho
 convenience init(directoryForTemporaryFiles: URL) throws
 ```
 
-#### Discussion
+## Discussion
 
 The `directoryForTemporaryFiles` must differ between export operations, but remain identical when resuming the same export operation. The client is responsible for ensuring that this URL can be re-synthesized exactly across multiple launches of the app and device reboots (if desired). For example, if there are multiple source assets that need to be exported concurrently, these should result in unique URLs so that the planner can correctly identify each one. Another example is if the same source asset is being output with different compression configurations, they also should be uniquely identifiable so that they do not alias to the same output file.
 

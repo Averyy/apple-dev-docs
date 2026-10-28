@@ -24,7 +24,7 @@ struct CMQuaternion
 typedef struct { ... } CMQuaternion;
 ```
 
-#### Overview
+## Overview
 
 A quaternion offers a way to parameterize attitude. If `q` is an instance of `CMQuaternion`, mathematically it represents the following unit quaternion: `q.x*i + q.y*j + q.z*k + q.w`. A unit quaternion represents a rotation of theta radians about the unit vector `{x,y,z}`, and `{q.x, q.y, q.z, q.w}` satisfies the following:
 

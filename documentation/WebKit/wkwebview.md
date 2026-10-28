@@ -36,7 +36,7 @@ class WKWebView
 
 - [Replacing UIWebView in your app](./replacing-uiwebview-in-your-app.md)
 
-#### Overview
+## Overview
 
 A [`WKWebView`](./wkwebview.md) object is a platform-native view that you use to incorporate web content seamlessly into your app’s UI. A web view supports a full web-browsing experience, and presents HTML, CSS, and JavaScript content alongside your app’s native views. Use it when web technologies satisfy your app’s layout and styling requirements more readily than native views. For example, you might use it when your app’s content changes frequently.
 
@@ -77,13 +77,13 @@ A web view automatically converts telephone numbers that appear in web content t
 
 You can also use [`setMagnification(_:centeredAt:)`](./wkwebview/setmagnification%28_,centeredat%29.md) to programmatically set the scale of web content the first time it appears in a web view. Thereafter, the user can change the scale using gestures.
 
-##### Manage the navigation through your web content
+### Manage the navigation through your web content
 
 [`WKWebView`](./wkwebview.md) provides a complete browsing experience, including the ability to navigate between different webpages using links, forward and back buttons, and more. When the user clicks a link in your content, the web view acts like a browser and displays the content at that link. To disallow navigation, or to customize your web view’s navigation behavior, provide your web view with a navigation delegate — an object that conforms to the [`WKNavigationDelegate`](./wknavigationdelegate.md) protocol. Use your navigation delegate to modify the web view’s navigation behavior, or to track the loading progress of new content.
 
 You can also use the methods of [`WKWebView`](./wkwebview.md) to navigate programmatically through your content, or to trigger navigation from other parts of your app’s interface. For example, if your UI includes forward and back buttons, connect those buttons to the [`goBack(_:)`](./wkwebview/goback%28_%29.md) and [`goForward(_:)`](./wkwebview/goforward%28_%29.md) methods of your web view to trigger the corresponding web navigation. Use the [`canGoBack`](./wkwebview/cangoback.md) and [`canGoForward`](./wkwebview/cangoforward.md) properties to determine when to enable or disable your buttons.
 
-##### Provide sharing options
+### Provide sharing options
 
 People may want to share the contents of your web view with an app or other people. Use a [`UIActivityViewController`](../UIKit/uiactivityviewcontroller.md) to present a share sheet offering all the ways people can share the web content.
 

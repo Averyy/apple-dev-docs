@@ -25,7 +25,7 @@ var audioMix: AVAudioMix? { get set }
 @property (nonatomic, copy, nullable) AVAudioMix * audioMix;
 ```
 
-#### Discussion
+## Discussion
 
 Use an audio mix to specify how an audio track’s volume changes over the media’s timeline.
 

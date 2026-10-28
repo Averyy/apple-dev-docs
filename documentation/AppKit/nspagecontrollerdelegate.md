@@ -19,7 +19,7 @@ protocol NSPageControllerDelegate : NSObjectProtocol
 @protocol NSPageControllerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 See [`NSPageController`](./nspagecontroller.md) for more information.
 

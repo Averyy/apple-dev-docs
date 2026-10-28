@@ -25,7 +25,7 @@ class let interstitialEventWasUnscheduledEventKey: String
 extern NSString * const AVPlayerInterstitialEventMonitorInterstitialEventWasUnscheduledEventKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value corresponding to this key is of type AVPlayerInterstitialEvent.
 

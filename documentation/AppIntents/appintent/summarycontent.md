@@ -22,7 +22,7 @@ The type of parameter summary representing this intent.
 associatedtype SummaryContent : ParameterSummary
 ```
 
-#### Discussion
+## Discussion
 
 When you create an intent, Swift infers this type from your implementation of the [`parameterSummary`](./parametersummary.md) property.
 

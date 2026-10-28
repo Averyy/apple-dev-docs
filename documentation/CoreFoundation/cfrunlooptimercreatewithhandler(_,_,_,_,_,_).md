@@ -25,11 +25,11 @@ func CFRunLoopTimerCreateWithHandler(_ allocator: CFAllocator!, _ fireDate: CFAb
 extern CFRunLoopTimerRefCFRunLoopTimerCreateWithHandler(CFAllocatorRef allocator, CFAbsoluteTime fireDate, CFTimeInterval interval, CFOptionFlags flags, CFIndex order, void (^block)(CFRunLoopTimerRef timer));
 ```
 
-#### Return Value
+## Return Value
 
 The new CFRunLoopTimer object. Ownership follows the Create Rule described in [Ownership Policy](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148).
 
-#### Discussion
+## Discussion
 
 A timer needs to be added to a run loop mode before it will fire. To add the timer to a run loop, use [`CFRunLoopAddTimer(_:_:_:)`](./cfrunloopaddtimer%28_,_,_%29.md). A timer can be registered to only one run loop at a time, although it can be in multiple modes within that run loop.
 

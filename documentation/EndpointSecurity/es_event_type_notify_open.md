@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_OPEN: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_OPEN
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`open`](./es_events_t/open.md), which has the type [`es_event_open_t`](./es_event_open_t.md).
 

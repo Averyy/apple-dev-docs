@@ -23,7 +23,7 @@ var sourceTypes: [HKVerifiableClinicalRecordSourceType] { get }
 @property (copy, readonly) NSArray<NSString *> * sourceTypes;
 ```
 
-#### Discussion
+## Discussion
 
 For a list of valid formats, see [`HKVerifiableClinicalRecordSourceType`](../hkverifiableclinicalrecordsourcetype.md).
 

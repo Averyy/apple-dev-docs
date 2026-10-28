@@ -31,7 +31,7 @@ var currentBatteryCapacity: Measurement<UnitEnergy>? { get set }
 @property (atomic, copy, readwrite, nullable) NSMeasurement<NSUnitEnergy *> * currentBatteryCapacity;
 ```
 
-#### Discussion
+## Discussion
 
 The value the system displays to the user as the current percentage of battery charge. It must always be within the range of `minBatteryCapacity` and `maxBatteryCapacity`.
 

@@ -19,11 +19,11 @@ func InvokeOSLAccessorUPP(_ desiredClass: DescType, _ container: UnsafePointer<A
 OSErr InvokeOSLAccessorUPP(DescType desiredClass, const AEDesc *container, DescType containerClass, DescType form, const AEDesc *selectionData, AEDesc *value, SRefCon accessorRefcon, OSLAccessorUPP userUPP);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 See the [`OSLAccessorProcPtr`](./oslaccessorprocptr.md) callback function. 
 

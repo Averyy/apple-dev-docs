@@ -21,7 +21,7 @@ A Combine publisher that produces a new element whenever the observed value chan
 struct KeyValueObservingPublisher<Subject, Value> where Subject : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this publisher to integrate a property that’s compliant with key-value observing into a Combine publishing chain. You can create a publisher of this type with the [`NSObject`](../nsobject-swift.class.md) instance method `publisher(for:options:)`, passing in the key path and a set of [`NSKeyValueObservingOptions`](../../Foundation/nskeyvalueobservingoptions.md).
 

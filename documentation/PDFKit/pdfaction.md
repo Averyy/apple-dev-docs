@@ -24,7 +24,7 @@ class PDFAction
 @interface PDFAction : NSObject
 ```
 
-#### Overview
+## Overview
 
 A `PDFAction` object represents an action associated with a PDF element, such as an annotation or a link, that the viewer application can perform. See the Adobe PDF Specification for more about actions and action types.
 

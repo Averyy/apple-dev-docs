@@ -29,7 +29,7 @@ func cancelRequest(with params: MTRDeviceEnergyManagementClusterCancelRequestPar
 - (void) cancelRequestWithParams:(MTRDeviceEnergyManagementClusterCancelRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Allows a client to request cancellation of a previous adjustment request in a StartTimeAdjustRequest, ModifyForecastRequest or RequestConstraintBasedForecast command.
 

@@ -19,7 +19,7 @@ let IKImageBrowserNSBitmapImageRepresentationType: String
 extern NSString * const IKImageBrowserNSBitmapImageRepresentationType;
 ```
 
-#### Discussion
+## Discussion
 
 An  [`NSBitmapImageRep`](../AppKit/nsbitmapimagerep.md)  object.
 

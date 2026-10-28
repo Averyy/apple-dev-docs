@@ -22,7 +22,7 @@ nonisolated
 func accessibilityLinkedGroup<ID>(id: ID, in namespace: Namespace.ID) -> some View where ID : Hashable
 ```
 
-#### Discussion
+## Discussion
 
 This can be useful to allow quickly jumping between content in a list and the same content shown in a detail view, for example. All elements marked with `accessibilityLinkedGroup` with the same namespace and identifier will be linked together.
 

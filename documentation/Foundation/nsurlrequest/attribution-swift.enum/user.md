@@ -25,7 +25,7 @@ case user
 NSURLRequestAttributionUser
 ```
 
-#### Discussion
+## Discussion
 
 Use this value for the [`attribution`](../../urlrequest/attribution-swift.property.md) parameter of a URL request that satisfies a user request to access an explicit, unmodified URL. In all other cases, use the [`NSURLRequest.Attribution.developer`](./developer.md) value instead.
 

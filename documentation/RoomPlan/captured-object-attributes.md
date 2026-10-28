@@ -5,7 +5,7 @@
 
 Determine details about the objects and surfaces that the framework identifies in a scan.
 
-#### Overview
+## Overview
 
 Each [`CapturedRoom.Object`](./capturedroom/object.md) contains attributes that the framework observes during a scan that convey details about the object. For example, an object of category [`CapturedRoom.Object.Category.chair`](./capturedroom/object/category-swift.enum/chair.md) may contain the attributes [`ChairType.stool`](./chairtype/stool.md) and [`ChairLegType.star`](./chairlegtype/star.md), which describes the framework’s observations of the chair during the scan. An object exposes these details through its [`attributes`](./capturedroom/object/attributes.md) array.
 

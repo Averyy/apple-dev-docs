@@ -15,7 +15,7 @@ Manage your customers’ App Store transactions from your server.
 - [Simplifying your implementation by using the App Store Server Library](./simplifying-your-implementation-by-using-the-app-store-server-library.md)
 - [Creating API keys to authorize API requests](./creating-api-keys-to-authorize-api-requests.md)
 
-#### Overview
+## Overview
 
 The App Store Server API is a REST API that you call from your server to request and provide information about your customers’ In-App Purchases. The App Store signs the transaction and subscription renewal information that this API returns using the [JSON Web Signature (JWS)](https://datatracker.ietf.org/doc/html/rfc7515) specification. Most endpoints return data for a single customer of your app, indicated by a transaction identifier that you provide.
 
@@ -35,17 +35,17 @@ Your server must support the Transport Layer Security (TLS) protocol 1.2 or late
 
 Check the [App Store Server API changelog](./app-store-server-api-changelog.md) to learn about the latest changes to this API. Look for videos about the App Store Server API on the [Apple Developer website](https://developer.apple.com/videos/all-videos/?q=%22App%20Store%20Server%20API%22).
 
-##### Authorize your API calls
+### Authorize your API calls
 
 Calls to the API require JSON Web Tokens (JWTs) for authorization; you obtain keys to create the tokens from your organization’s App Store Connect account. See [Creating API keys to authorize API requests](./creating-api-keys-to-authorize-api-requests.md) to create your keys. See [Generating JSON Web Tokens for API requests](./generating-json-web-tokens-for-api-requests.md) to generate tokens using your keys, and send API requests.
 
 After you have a complete and signed token, provide the token in the request’s authorization header as a bearer token. Generate a new token for each new API request, or reuse tokens until they expire.
 
-##### Create JWTs, verify transactions, and more using the App Store Server Library
+### Create JWTs, verify transactions, and more using the App Store Server Library
 
 The App Store Server Library is an open source library from Apple, available in four languages. It provides a client that make it easier to adopt the App Store Server APIs, including creating the JWTs to authorize calls. For more information, see [Simplifying your implementation by using the App Store Server Library](./simplifying-your-implementation-by-using-the-app-store-server-library.md) and the WWDC23 session [Meet the App Store Server Library](https://developer.apple.com/videos/play/wwdc2023/10143/).
 
-##### Test using the sandbox environment
+### Test using the sandbox environment
 
 All App Store Server API endpoints are available for testing in the sandbox environment, except [`Look Up Order ID`](./look-up-order-id.md). Access the sandbox environment by sending requests to the endpoints using the following base URL:
 

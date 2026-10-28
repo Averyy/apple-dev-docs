@@ -21,7 +21,7 @@ optional func mapTemplateShouldProvideRouteSharing(_ mapTemplate: CPMapTemplate)
 - (BOOL) mapTemplateShouldProvideRouteSharing:(CPMapTemplate *) mapTemplate;
 ```
 
-#### Return Value
+## Return Value
 
 YES if the template should provide route sharing, otherwise NO
 

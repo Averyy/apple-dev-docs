@@ -15,7 +15,7 @@ A callback function that is called when a request times out.
 attribute function ontimeout;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute must be set to a function; for example, `XMLHttpRequest.ontimeout = function () {}`.
 

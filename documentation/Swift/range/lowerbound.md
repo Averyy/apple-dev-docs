@@ -21,7 +21,7 @@ The range’s lower bound.
 let lowerBound: Bound
 ```
 
-#### Discussion
+## Discussion
 
 In an empty range, `lowerBound` is equal to `upperBound`.
 

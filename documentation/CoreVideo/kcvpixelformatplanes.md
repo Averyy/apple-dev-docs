@@ -23,7 +23,7 @@ let kCVPixelFormatPlanes: CFString
 extern CFStringRef const kCVPixelFormatPlanes;
 ```
 
-#### Discussion
+## Discussion
 
 The number of image planes associated with this format (type `CFNumber`). Each plane may contain a single component or an interleaved set of components. Note that if your pixel format is not planar, you can put the required format keys at the top-level dictionary.
 

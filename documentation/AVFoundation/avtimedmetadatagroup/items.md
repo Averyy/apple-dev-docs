@@ -25,7 +25,7 @@ var items: [AVMetadataItem] { get }
 @property (nonatomic, copy, readonly) NSArray<AVMetadataItem *> * items;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains instances of [`AVMetadataItem`](../avmetadataitem.md).
 

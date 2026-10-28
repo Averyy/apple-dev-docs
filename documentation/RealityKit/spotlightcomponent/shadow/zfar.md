@@ -20,7 +20,7 @@ The orthogonal plane of the shadow frustum that’s furthest from the spotlight.
 var zFar: SpotLightComponent.Shadow.ShadowClippingPlane { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The `zFar` is the maximum distance between the light and a visible surface for casting shadows.
 

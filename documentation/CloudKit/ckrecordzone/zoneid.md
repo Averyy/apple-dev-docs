@@ -26,7 +26,7 @@ var zoneID: CKRecordZone.ID { get }
 @property (copy, readonly) CKRecordZoneID * zoneID;
 ```
 
-#### Discussion
+## Discussion
 
 The zone ID contains the name of the zone and the name of the user who owns the zone. Use this property to access both of those values.
 

@@ -23,7 +23,7 @@ func sec_protocol_options_set_tls_ocsp_enabled(_ options: sec_protocol_options_t
 void sec_protocol_options_set_tls_ocsp_enabled(sec_protocol_options_t options, bool ocsp_enabled);
 ```
 
-#### Discussion
+## Discussion
 
 Enable or disable OCSP support.
 

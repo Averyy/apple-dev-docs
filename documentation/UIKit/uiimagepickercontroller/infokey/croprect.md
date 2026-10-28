@@ -22,7 +22,7 @@ static let cropRect: UIImagePickerController.InfoKey
 extern UIImagePickerControllerInfoKey const UIImagePickerControllerCropRect;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSValue`](../../../Foundation/nsvalue.md) object containing a [`CGRect`](../../../CoreFoundation/cgrect.md) opaque type.
 

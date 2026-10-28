@@ -22,11 +22,11 @@ class var general: UIPasteboard { get }
 @property (class, nonatomic, readonly) UIPasteboard * generalPasteboard;
 ```
 
-#### Return Value
+## Return Value
 
 A shared system pasteboard object with the name of [`general`](./name-swift.struct/general.md).
 
-#### Discussion
+## Discussion
 
 You may use the general pasteboard for copying and pasting text, images, URLs, colors, and other data within an app or between apps. The general pasteboard is persistent across device restarts and app uninstalls.
 

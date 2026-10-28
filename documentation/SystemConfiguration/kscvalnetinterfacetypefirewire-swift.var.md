@@ -19,7 +19,7 @@ let kSCValNetInterfaceTypeFireWire: CFString
 extern CFStringRef const kSCValNetInterfaceTypeFireWire;
 ```
 
-#### Discussion
+## Discussion
 
 This value applies to the [`kSCPropNetInterfaceType`](./kscpropnetinterfacetype-swift.var.md) key.
 

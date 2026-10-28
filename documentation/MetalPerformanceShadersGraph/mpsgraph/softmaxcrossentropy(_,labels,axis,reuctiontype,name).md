@@ -24,11 +24,11 @@ func softMaxCrossEntropy(_ sourceTensor: MPSGraphTensor, labels labelsTensor: MP
 - (MPSGraphTensor *) softMaxCrossEntropyWithSourceTensor:(MPSGraphTensor *) sourceTensor labelsTensor:(MPSGraphTensor *) labelsTensor axis:(NSInteger) axis reductionType:(MPSGraphLossReductionType) reductionType name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 The softmax cross-entropy operation computes:
 

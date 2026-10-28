@@ -13,11 +13,11 @@
 errno_t ifnet_add_multicast(ifnet_t interface, const struct sockaddr *maddr, ifmultiaddr_t *multicast);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Joins a multicast and returns an ifmultiaddr_t with the reference count incremented for you. You are responsible for decrementing the reference count after calling ifnet_remove_multicast and making sure you no longer have any references to the multicast.
 

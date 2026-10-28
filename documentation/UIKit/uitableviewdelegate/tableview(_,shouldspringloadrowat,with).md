@@ -22,11 +22,11 @@ optional func tableView(_ tableView: UITableView, shouldSpringLoadRowAt indexPat
 - (BOOL) tableView:(UITableView *) tableView shouldSpringLoadRowAtIndexPath:(NSIndexPath *) indexPath withContext:(id<UISpringLoadedInteractionContext>) context;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the row allows spring-loaded interactions or [`false`](../../Swift/false.md) if it does not.
 
-#### Discussion
+## Discussion
 
 Override this method when you want to selectively disable spring-loaded interactions with the rows of your table. For example, you might return [`false`](../../Swift/false.md) for rows that represent leaf content and not a folder of content. If you do not implement this method, the table view performs spring-loading animations on the row when it is not currently being dragged.By default, spring-loading animations are performed on the entire row. To modify these animations, modify the provided context object. For example, you might use the context object to apply the spring-loading animations to a single subview of the row instead of to the entire row.
 

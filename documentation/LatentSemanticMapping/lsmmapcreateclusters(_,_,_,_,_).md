@@ -20,7 +20,7 @@ func LSMMapCreateClusters(_ alloc: CFAllocator?, _ mapref: LSMMap, _ subset: CFA
 CFArrayRefLSMMapCreateClusters(CFAllocatorRef alloc, LSMMapRef mapref, CFArrayRef subset, CFIndex numClusters, CFOptionFlags flags);
 ```
 
-#### Discussion
+## Discussion
 
 If `subset` is non-`NULL`, this function only performs clustering on the categories or words in `subset`.
 

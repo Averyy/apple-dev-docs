@@ -25,7 +25,7 @@ init(forAggregate subexpressions: [NSExpression])
 + (NSExpression *) expressionForAggregate:(NSArray<NSExpression *> *) subexpressions;
 ```
 
-#### Return Value
+## Return Value
 
 A new expression that contains the expressions in `collection`.
 

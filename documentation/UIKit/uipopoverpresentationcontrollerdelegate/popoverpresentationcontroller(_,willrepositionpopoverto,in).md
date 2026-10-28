@@ -22,7 +22,7 @@ optional func popoverPresentationController(_ popoverPresentationController: UIP
 - (void) popoverPresentationController:(UIPopoverPresentationController *) popoverPresentationController willRepositionPopoverToRect:(CGRect *) rect inView:(UIView **) view;
 ```
 
-#### Discussion
+## Discussion
 
 The popover presentation controller calls this method in response to interface changes that require a new size for the popover. For example, UIKit calls this method when the popover must be resized to make room for the keyboard. You can use this method to obtain the new size of the popover and optionally to make changes to the proposed view and rectangle.
 

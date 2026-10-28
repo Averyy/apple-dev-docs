@@ -21,7 +21,7 @@ A container used to expose multiple widgets from a single widget extension.
 @preconcurrency protocol WidgetBundle
 ```
 
-#### Overview
+## Overview
 
 To support multiple types of widgets, add the `@main` attribute to a structure that conforms to `WidgetBundle`. For example, a game might have one widget to display summary information about the game and a second widget to display detailed information about individual characters.
 

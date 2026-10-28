@@ -20,11 +20,11 @@ string Org.SystemStatus
 - `ACTIVE`: The organization is active and operational.
 - `INACTIVE`: The organization is inactive. Check `systemStatusReasons` for the specific cause.
 
-#### Discussion
+## Discussion
 
 This status reflects the organization as a whole; individual ad accounts under it carry their own separate [`AdAccount.SystemStatus`](../adaccount/systemstatus-data.typealias.md).
 
-##### Example
+### Example
 
 ```json
 {

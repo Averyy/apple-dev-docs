@@ -26,7 +26,7 @@ var signature: String { get set }
 - [Generating the signature to validate view-through ads](../generating-the-signature-to-validate-view-through-ads.md)
 - [Signing and providing ads](../signing-and-providing-ads.md)
 
-#### Discussion
+## Discussion
 
 The ad network creates a cryptographic signature that it uses to sign ads. For instructions on generating this value, see [Generating the signature to validate view-through ads](../generating-the-signature-to-validate-view-through-ads.md).
 

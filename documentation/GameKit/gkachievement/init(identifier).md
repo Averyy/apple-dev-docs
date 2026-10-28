@@ -29,11 +29,11 @@ init(identifier: String)
 
 - [Rewarding players with achievements](../rewarding-players-with-achievements.md)
 
-#### Return Value
+## Return Value
 
 An achievement for a player, or `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 Before creating an achievement, use the [`loadAchievements(completionHandler:)`](./loadachievements%28completionhandler%29.md) method to load the achievements that are in progress. If the achievement you want to report progress on isn’t in the array that GameKit passes to the handler, use this method to initialize the achievement.
 

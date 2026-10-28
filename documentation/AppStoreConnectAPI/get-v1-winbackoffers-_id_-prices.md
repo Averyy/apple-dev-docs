@@ -9,13 +9,13 @@ The data structure that represents a get-v1-win back offers-{id}-prices resource
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 List all prices for specific win-back offers.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

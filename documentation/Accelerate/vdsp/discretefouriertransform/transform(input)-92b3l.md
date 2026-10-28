@@ -23,7 +23,7 @@ func transform<U>(input: U) -> [DSPComplex] where U : AccelerateBuffer, U.Elemen
 
 Available when `T` is `DSPComplex`.
 
-#### Return Value
+## Return Value
 
 An array of [`DSPComplex`](../../dspcomplex.md) structures.
 

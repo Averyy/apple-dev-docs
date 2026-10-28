@@ -5,7 +5,7 @@
 
 Options for parsing words to add to the text.
 
-#### Overview
+## Overview
 
 Specify these options for [`LSMTextAddWords(_:_:_:_:)`](./lsmtextaddwords%28_,_,_,_%29.md).
 

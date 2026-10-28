@@ -25,7 +25,7 @@ static let originURL: HTTPCookiePropertyKey
 extern NSHTTPCookiePropertyKey const NSHTTPCookieOriginURL;
 ```
 
-#### Discussion
+## Discussion
 
 If you do not provide a value for `NSHTTPCookieOriginURL`, you must provide a value for `NSHTTPCookieDomain`.
 

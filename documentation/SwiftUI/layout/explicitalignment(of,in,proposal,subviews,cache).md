@@ -28,11 +28,11 @@ func explicitAlignment(of guide: HorizontalAlignment, in bounds: CGRect, proposa
 func explicitAlignment(of guide: VerticalAlignment, in bounds: CGRect, proposal: ProposedViewSize, subviews: Self.Subviews, cache: inout Self.Cache) -> CGFloat?
 ```
 
-#### Return Value
+## Return Value
 
 The guide’s position relative to the `bounds`. Return `nil` to indicate that the guide doesn’t have an explicit value.
 
-#### Discussion
+## Discussion
 
 Implement this method to return a value for the specified alignment guide of a custom layout container. The value you return affects the placement of the container as a whole, but it doesn’t affect how the container arranges subviews relative to one another.
 

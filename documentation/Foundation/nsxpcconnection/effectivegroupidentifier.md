@@ -25,7 +25,7 @@ var effectiveGroupIdentifier: gid_t { get }
 @property (readonly) gid_t effectiveGroupIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 This attribute may be used by the listener delegate to accept or reject connections.
 

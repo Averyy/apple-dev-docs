@@ -24,7 +24,7 @@ case photoTag
 INVocabularyStringTypePhotoTag
 ```
 
-#### Discussion
+## Discussion
 
 For example, you might include the strings “food” or “vacation” if the user defined those tags in your app.
 

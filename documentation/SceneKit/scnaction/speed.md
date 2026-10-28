@@ -25,7 +25,7 @@ var speed: CGFloat { get set }
 @property (nonatomic) CGFloat speed;
 ```
 
-#### Discussion
+## Discussion
 
 The speed factor adjusts how fast an action’s animation runs. For example, a speed factor of `2.0` means the animation runs twice as fast.
 

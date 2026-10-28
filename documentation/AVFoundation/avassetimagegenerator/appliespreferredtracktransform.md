@@ -24,7 +24,7 @@ var appliesPreferredTrackTransform: Bool { get set }
 @property (nonatomic) BOOL appliesPreferredTrackTransform;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md). This class only supports rotation by 90, 180, or 270 degrees.
 

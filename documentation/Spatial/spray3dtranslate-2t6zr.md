@@ -21,7 +21,7 @@ Returns a ray with an origin that’s offset by the specified vector.
 static SPRay3D SPRay3DTranslate(SPRay3D ray, SPVector3D offset);
 ```
 
-#### Return Value
+## Return Value
 
 The ray with an origin that’s offset by the specified vector.
 

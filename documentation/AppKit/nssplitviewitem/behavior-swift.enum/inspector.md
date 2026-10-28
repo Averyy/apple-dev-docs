@@ -19,7 +19,7 @@ case inspector
 NSSplitViewItemBehaviorInspector
 ```
 
-#### Discussion
+## Discussion
 
 This behavior corresponds to split view items that you create using  [`init(inspectorWithViewController:)`](../init%28inspectorwithviewcontroller%29.md).
 

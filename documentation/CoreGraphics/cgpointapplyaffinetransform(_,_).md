@@ -25,7 +25,7 @@ func CGPointApplyAffineTransform(_ point: CGPoint, _ t: CGAffineTransform) -> CG
 extern CGPoint CGPointApplyAffineTransform(CGPoint point, CGAffineTransform t);
 ```
 
-#### Return Value
+## Return Value
 
 A new point resulting from applying the specified affine transform to the existing point.
 

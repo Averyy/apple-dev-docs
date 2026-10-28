@@ -24,7 +24,7 @@ func VNNormalizedRectIsIdentityRect(_ normalizedRect: CGRect) -> Bool
 extern bool VNNormalizedRectIsIdentityRect(CGRect normalizedRect);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the rectangle is the identity rectangle, otherwise [`false`](../Swift/false.md).
 

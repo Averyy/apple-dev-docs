@@ -15,7 +15,7 @@ Initializes an video stream.
 virtual bool init(IOUserVideoDriver *in_driver, OSString *in_stream_uid, IOUserVideoStreamDirection in_direction, OSArray *in_video_buffers);
 ```
 
-#### Return Value
+## Return Value
 
 True on success.
 

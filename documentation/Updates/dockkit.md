@@ -5,11 +5,11 @@
 
 Learn about important changes to DockKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [DockKit](../DockKit/DockKit.md).
 
-#### June 2024
+## June 2024
 
 - Use [`accessoryEvents`](../DockKit/dockaccessory/accessoryevents-swift.property.md) to acquire button events, including special ones such as shutter, flip and zoom, and custom events, along with their identifier and pressed state.
 - Obtain a summary of each tracked subject. A summary consists of an identifier, face bounding box, saliency rank, speaking confidence, and looking at camera confidence.

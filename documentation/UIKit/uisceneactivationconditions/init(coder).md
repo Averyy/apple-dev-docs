@@ -23,7 +23,7 @@ init?(coder aDecoder: NSCoder)
 - (instancetype) initWithCoder:(NSCoder *) aDecoder;
 ```
 
-#### Return Value
+## Return Value
 
 An activation conditions object containing the archived condition information.
 

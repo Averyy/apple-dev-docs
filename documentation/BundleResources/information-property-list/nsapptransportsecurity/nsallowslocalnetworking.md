@@ -21,7 +21,7 @@ A Boolean value that indicates whether to allow local resources to load.
 
 **Default**: `NO`
 
-#### Discussion
+## Discussion
 
 The `NSAllowsLocalNetworking` key controls whether App Transport Security (ATS) allows your app to connect to unqualified domains, `.local` domains, and IP addresses using IPv4 or IPv6.
 

@@ -20,7 +20,7 @@ Downloads and installs assets not already on the device.
 final func downloadAndInstall() async throws
 ```
 
-#### Discussion
+## Discussion
 
 If the system is unable to immediately download assets because of a connectivity issue or other error, the system will automatically attempt to download the assets later. This method will return when the initial download and installation attempt has succeeded or failed; use [`status(forModules:)`](../assetinventory/status%28formodules%29.md) or another installation request to monitor the success or progress of later attempts.
 

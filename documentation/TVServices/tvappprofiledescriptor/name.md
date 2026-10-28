@@ -21,7 +21,7 @@ var name: String { get set }
 @property (nonatomic, copy) NSString * name;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to store the user-readable name for the user profile. When prompting the user to select a preferred profile, the [`TVUserManager`](../tvusermanager.md) displays the names from your [`TVAppProfileDescriptor`](../tvappprofiledescriptor.md) objects in the selection dialog.
 

@@ -15,11 +15,11 @@ Creates a new empty polygon points collection.
 extern ar_polygon_points_tar_polygon_points_create();
 ```
 
-#### Return Value
+## Return Value
 
 A new polygon points collection, or `NULL` on failure.
 
-#### Discussion
+## Discussion
 
 > **Note**: This type supports ARC. In non-ARC files, use `ar_retain()` and `ar_release()` to retain and release the object.
 

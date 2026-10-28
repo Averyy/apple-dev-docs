@@ -34,7 +34,7 @@ var spatialEventTrigger: INSpatialEventTrigger? { get }
 @property (atomic, copy, readonly, nullable) INSpatialEventTrigger * spatialEventTrigger;
 ```
 
-#### Discussion
+## Discussion
 
 If no trigger information is available in this property, do not attempt to change the spatial trigger of the task.
 

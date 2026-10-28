@@ -20,7 +20,7 @@ let kLSItemContentType: CFString!
 const CFStringRef kLSItemContentType;
 ```
 
-#### Discussion
+## Discussion
 
  Use the URL resource property [`kCFURLTypeIdentifierKey`](../CoreFoundation/kcfurltypeidentifierkey.md)/[`typeIdentifierKey`](../Foundation/urlresourcekey/typeidentifierkey.md) instead.
 

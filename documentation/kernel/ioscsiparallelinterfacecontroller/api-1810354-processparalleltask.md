@@ -12,11 +12,11 @@ virtual SCSIServiceResponse ProcessParallelTask (
  SCSIParallelTaskIdentifierparallelRequest ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 serviceResponse (see <IOKit/scsi/SCSITask.h>)
 
-#### Overview
+## Overview
 
 This method is called to process a parallel task (i.e. put the command on the bus). The HBA specific sublcass must implement this method.
 

@@ -23,7 +23,7 @@ var largeThumbnailIfAvailable: CGImage? { get }
 @property (readonly, nullable) CGImageRef largeThumbnailIfAvailable;
 ```
 
-#### Discussion
+## Discussion
 
 If a large thumbnail is not readily available, accessing this property requests it from the device.
 

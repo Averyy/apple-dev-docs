@@ -24,7 +24,7 @@ class MTLArgument
 @interface MTLArgument : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`MTLArgument`](./mtlargument.md) instance describes a single argument to a Metal function. Your app uses the [`MTLArgument`](./mtlargument.md) properties to read details about a function argument as it was defined in the Metal Shading Language. You can determine the argument’s data type, access restrictions, and its associated resource type. For buffer, texture, and threadgroup memory arguments, additional properties can be read to determine more details about the argument.
 

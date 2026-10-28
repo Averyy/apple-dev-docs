@@ -19,11 +19,11 @@ func data(ofType typeName: String) throws -> Data
 - (NSData *) dataOfType:(NSString *) typeName error:(NSError **) outError;
 ```
 
-#### Return Value
+## Return Value
 
 A data object containing the document contents, or, if the data object could not be created, `nil`.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method throws an exception because at least one of the writing methods (this method, [`write(to:ofType:)`](./write%28to,oftype%29.md), [`fileWrapper(ofType:)`](./filewrapper%28oftype%29.md), or [`write(to:ofType:for:originalContentsURL:)`](./write%28to,oftype,for,originalcontentsurl%29.md)) must be overridden.
 

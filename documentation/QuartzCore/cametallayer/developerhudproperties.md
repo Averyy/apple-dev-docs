@@ -24,7 +24,7 @@ var developerHUDProperties: [AnyHashable : Any]? { get set }
 @property (copy, nullable) NSDictionary * developerHUDProperties;
 ```
 
-#### Discussion
+## Discussion
 
 The Metal performance HUD provides real-time statistics and logging, including CPU and GPU render time and frame-presentation deadlines.
 

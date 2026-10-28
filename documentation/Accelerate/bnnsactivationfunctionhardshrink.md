@@ -25,7 +25,7 @@ var BNNSActivationFunctionHardShrink: BNNSActivationFunction { get }
 BNNSActivationFunctionHardShrink
 ```
 
-#### Discussion
+## Discussion
 
 This constant defines an activation function that returns values using the following operation:
 

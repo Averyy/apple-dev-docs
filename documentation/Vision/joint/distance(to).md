@@ -21,7 +21,7 @@ Returns the distance to another joint.
 func distance(to joint: Joint) -> CGFloat
 ```
 
-#### Return Value
+## Return Value
 
 The calculated distance.
 

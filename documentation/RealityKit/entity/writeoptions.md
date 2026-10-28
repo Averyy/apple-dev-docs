@@ -20,7 +20,7 @@ A set of options that control how RealityKit writes entities to a reality file.
 struct WriteOptions
 ```
 
-#### Overview
+## Overview
 
 Use [`Entity.WriteOptions`](./writeoptions.md) to tune the tradeoff between export speed, file size, and runtime cost when you save a scene to a `.reality` file.
 
@@ -33,11 +33,11 @@ let combinedOptions: Entity.WriteOptions = [
 ]
 ```
 
-#### Expediting Reality File Exports
+## Expediting Reality File Exports
 
 The [`preferFastExport`](./writeoptions/preferfastexport.md) reduces the time required to write a reality file but produces a larger file on disk.
 
-#### Reducing Texture File Size
+## Reducing Texture File Size
 
 The [`preferSmallTextureFiles(quality:)`](./writeoptions/prefersmalltexturefiles%28quality%29.md) method returns options that instruct RealityKit to encode textures using smaller file representations,  at the cost of longer load times and higher memory usage. Specify a [`Entity.WriteOptions.TextureQuality`](./writeoptions/texturequality.md) level to control the tradeoff between visual fidelity and file size.
 

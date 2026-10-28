@@ -26,7 +26,7 @@ struct Bind
 
 - [Building an app extension to support a host app](../building-an-app-extension-to-support-a-host-app.md)
 
-#### Overview
+## Overview
 
 Apply this property wrapper to a variable that contains an [`AppExtensionPoint`](../appextensionpoint.md) type. Use the variable to define the extension point that your app extension supports. An app extension can bind to only one extension point in a host app.
 

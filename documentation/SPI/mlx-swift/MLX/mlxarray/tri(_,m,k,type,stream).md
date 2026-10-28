@@ -21,7 +21,7 @@ static func tri(_ n: Int, m: Int? = nil, k: Int = 0, type: (some HasDType).Type 
 
 - [Converting From Python](../converting-python.md)
 
-#### Discussion
+## Discussion
 
 Example:
 
@@ -30,7 +30,7 @@ Example:
 let r = MLXArray.triangle(5)
 ```
 
-##### See Also
+### See Also
 
 - [Initialization](../initialization.md)
 

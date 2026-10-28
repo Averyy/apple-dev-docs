@@ -25,11 +25,11 @@ func CFURLSetResourcePropertiesForKeys(_ url: CFURL!, _ keyedPropertyValues: CFD
 extern Boolean CFURLSetResourcePropertiesForKeys(CFURLRef url, CFDictionaryRef keyedPropertyValues, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if all resource values in `keyedValues` are successfully set; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 This function synchronously writes the new resource value out to disk. If an error occurs after some resource properties have been successfully changed, the `userInfo` dictionary in the returned error object contains a `kCFURLKeysOfUnsetValuesKey` key whose value is an array of the resource values that were not successfully set.
 

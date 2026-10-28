@@ -19,7 +19,7 @@ var editedRange: NSRange { get }
 @property (readonly) NSRange editedRange;
 ```
 
-#### Discussion
+## Discussion
 
 The specified range can reflect changes to characters or attributes. The text storage object’s delegate and layout managers can use this information to determine the nature of edits in their respective notification methods.
 

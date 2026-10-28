@@ -15,7 +15,7 @@ Closes the resource file that your component opened previously with the `OpenCom
 OSErr CloseComponentResFile(ResFileRefNum refnum);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/component_manager.md#1668759).
 

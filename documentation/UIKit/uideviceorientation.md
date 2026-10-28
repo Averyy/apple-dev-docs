@@ -22,7 +22,7 @@ enum UIDeviceOrientation
 enum UIDeviceOrientation : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The [`orientation`](./uidevice/orientation.md) property uses these constants to identify the device orientation. These constants identify the physical orientation of the device and aren’t tied to the orientation of your app’s user interface.
 

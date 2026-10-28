@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_AverageBitRate: CFString
 extern CFStringRef const kVTCompressionPropertyKey_AverageBitRate;
 ```
 
-#### Discussion
+## Discussion
 
 This value is not a hard limit; the bit rate may peak above this. The default bit rate is zero, which indicates that the video encoder should determine the size of compressed data. Note that bit rate settings only have an effect when timing information is provided for source frames, and that some codecs do not support limiting to specified bit rates.
 

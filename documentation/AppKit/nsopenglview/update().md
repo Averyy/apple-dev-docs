@@ -21,7 +21,7 @@ func update()
 - (void) update;
 ```
 
-#### Discussion
+## Discussion
 
 The default implementation simply calls the [`update()`](../nsopenglcontext/update%28%29.md) method of [`NSOpenGLContext`](../nsopenglcontext.md). You can override this method to perform additional update operations on the context or if you need to add locks for multithreaded access to multiple contexts.
 

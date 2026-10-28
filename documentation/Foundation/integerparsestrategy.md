@@ -21,7 +21,7 @@ A parse strategy for creating integer values from formatted strings.
 struct IntegerParseStrategy<Format> where Format : FormatStyle, Format.FormatInput : BinaryInteger
 ```
 
-#### Overview
+## Overview
 
 Create an explicit [`IntegerParseStrategy`](./integerparsestrategy.md) to parse multiple strings according to the same parse strategy. In the following example, `usCurrencyStrategy` is an [`IntegerParseStrategy`](./integerparsestrategy.md) that uses US dollars and the `en_US` locale’s conventions for number formatting. The example then uses this strategy to parse an array of strings, some of which represent valid US currency values.
 

@@ -25,11 +25,11 @@ optional func intersects(_ mapRect: MKMapRect) -> Bool
 - (BOOL) intersectsMapRect:(MKMapRect) mapRect;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if any part of the map rectangle intersects the receiver’s shape, or [`false`](../../Swift/false.md) if it doesn’t.
 
-#### Discussion
+## Discussion
 
 You can implement this method to provide more specific bounds-checking for an overlay. If you don’t implement it, the method uses the bounding rectangle to detect intersections.
 

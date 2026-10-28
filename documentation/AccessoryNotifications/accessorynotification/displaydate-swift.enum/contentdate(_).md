@@ -15,7 +15,7 @@ An option to display a date that includes a specific moment to which the notific
 case contentDate(Date)
 ```
 
-#### Discussion
+## Discussion
 
 Display this date with information that specifies the minute.
 

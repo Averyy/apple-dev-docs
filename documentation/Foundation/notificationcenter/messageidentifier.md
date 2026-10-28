@@ -21,7 +21,7 @@ An optional identifier to associate a given message with a given type.
 protocol MessageIdentifier
 ```
 
-#### Overview
+## Overview
 
 Implement a `MessageIdentifier` to provide a typed, ergonomic experience at the call point, as described in [SE-0299](https://github.com/swiftlang/swift-evolution/blob/main/proposals/0299-extend-generic-static-member-lookup.md).
 

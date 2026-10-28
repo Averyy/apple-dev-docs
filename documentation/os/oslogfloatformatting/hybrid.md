@@ -25,7 +25,7 @@ static var hybrid: OSLogFloatFormatting { get }
 
 - [Generating Log Messages from Your Code](../generating-log-messages-from-your-code.md)
 
-#### Discussion
+## Discussion
 
 This option is equivalent to the `%g` option in `fprintf`. It behaves like the [`fixed`](./fixed.md) option when the number is close to `1.0`, and like the [`exponential`](./exponential.md) option when the number has a large exponent.
 

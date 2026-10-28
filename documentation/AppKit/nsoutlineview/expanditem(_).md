@@ -19,7 +19,7 @@ func expandItem(_ item: Any?)
 - (void) expandItem:(id) item;
 ```
 
-#### Discussion
+## Discussion
 
 If `item` is not expandable or is already expanded, does nothing.
 

@@ -13,7 +13,7 @@
 kSBCModePageCaching_DEMAND_READ_Mask = 0xFF00
 ```
 
-#### Discussion
+## Discussion
 
 Mask for the DEMAND_READ_WRITE_RETENTION_PRIORITY field.
 

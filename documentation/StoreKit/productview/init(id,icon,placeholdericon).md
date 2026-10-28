@@ -22,7 +22,7 @@ nonisolated
 init(id productID: Product.ID, @ViewBuilder icon: @escaping (ProductIconPhase) -> Icon, @ViewBuilder placeholderIcon: () -> PlaceholderIcon)
 ```
 
-#### Discussion
+## Discussion
 
 The product view shows the `placeholderIcon` until the system finishes loading the product. After the product finishes loading, the view asynchronously loads and displays the product’s promotional image. Use the [`ProductIconPhase`](../producticonphase.md) to monitor the current loading state of the product’s promotional image.
 

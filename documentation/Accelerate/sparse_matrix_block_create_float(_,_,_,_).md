@@ -25,11 +25,11 @@ func sparse_matrix_block_create_float(_ Mb: sparse_dimension, _ Nb: sparse_dimen
 sparse_matrix_floatsparse_matrix_block_create_float(sparse_dimension Mb, sparse_dimension Nb, sparse_dimension k, sparse_dimension l);
 ```
 
-#### Return Value
+## Return Value
 
 A matrix object that is ready for receiving entries.  If an error occurs, `nil` is returned.
 
-#### Discussion
+## Discussion
 
 Create a sparse matrix object that is stored in block-entry format and is ready to receive values from the various block insert routines.  Blocks are are of fixed dimensions `k * l`.  Block-entry format means blocks of dense regions will be stored at block indices `i,j`.  For point wise format use non block version of create. See the various insert routines for details on inserting values into this matrix object.
 

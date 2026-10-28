@@ -15,7 +15,7 @@ The visible area of the map, in map units.
 visibleMapRect?: MapRectData;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `new mapkit.MapRect(0, 0, 1, 1).`
 

@@ -23,7 +23,7 @@ optional func sensorReader(_ reader: SRSensorReader, fetching fetchRequest: SRFe
 - (BOOL) sensorReader:(SRSensorReader *) reader fetchingRequest:(SRFetchRequest *) fetchRequest didFetchResult:(SRFetchResult *) result;
 ```
 
-#### Discussion
+## Discussion
 
 The framework expects the app to know the result’s type based on the reader’s sensor. To see a list of result types per sensor, see [Sample types](../srfetchresult/sample.md#Sample-types).
 

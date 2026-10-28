@@ -19,7 +19,7 @@ var size: NSSize { get set }
 @property NSSize size;
 ```
 
-#### Discussion
+## Discussion
 
 This size is the size of the image representation when it’s rendered. It is not necessarily the same as the width and height of the image in pixels as specified by the image data, nor must it be equal to the size set for the `NSImage` object that wraps this image representation.
 

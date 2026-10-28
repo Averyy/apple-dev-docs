@@ -20,7 +20,7 @@ optional func outlineViewItemWillExpand(_ notification: Notification)
 - (void) outlineViewItemWillExpand:(NSNotification *) notification;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked as a result of posting an [`itemWillExpandNotification`](../nsoutlineview/itemwillexpandnotification.md).
 

@@ -24,7 +24,7 @@ convenience init(identifier: String?, display displayString: String, subtitle su
 - (instancetype) initWithIdentifier:(NSString *) identifier displayString:(NSString *) displayString subtitleString:(NSString *) subtitleString displayImage:(INImage *) displayImage;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`INObject`](../inobject.md), or `nil` if the initializer couldn’t create the object.
 

@@ -26,7 +26,7 @@ var recurrenceCalendar: Calendar? { get }
 @property (nonatomic, copy, readonly, nullable) NSCalendar * recurrenceCalendar;
 ```
 
-#### Discussion
+## Discussion
 
 See [`recurrence`](./recurrence.md) for a discussion of how the recurrence value and recurrence calendar are used.
 

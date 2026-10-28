@@ -19,7 +19,7 @@ func helpRequested(_ eventPtr: NSEvent)
 - (void) helpRequested:(NSEvent *) eventPtr;
 ```
 
-#### Discussion
+## Discussion
 
 [`NSWindow`](../nswindow.md) invokes this method automatically when the user clicks for help and help has been registered using [`setContextHelp(_:for:)`](../nshelpmanager/setcontexthelp%28_,for%29.md). Otherwise, `NSWindow` passes the message to the next responder. Subclasses are not required to override this method.
 

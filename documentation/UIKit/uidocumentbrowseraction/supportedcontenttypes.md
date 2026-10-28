@@ -22,7 +22,7 @@ var supportedContentTypes: [String] { get set }
 @property (nonatomic, copy) NSArray<NSString *> * supportedContentTypes;
 ```
 
-#### Discussion
+## Discussion
 
 The action can be triggered only on documents that are allowed by both the action’s [`supportedContentTypes`](./supportedcontenttypes.md) property and the document browser’s [`allowedContentTypes`](../uidocumentbrowserviewcontroller/allowedcontenttypes.md) property.
 

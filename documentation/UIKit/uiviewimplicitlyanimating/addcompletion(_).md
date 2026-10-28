@@ -27,7 +27,7 @@ optional func addCompletion() async -> UIViewAnimatingPosition
 - (void) addCompletion:(void (^)(UIViewAnimatingPosition finalPosition)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to add the completion blocks to your custom animator object. Completion blocks should execute after the animations finish successfully. If the [`stopAnimation(_:)`](../uiviewanimating/stopanimation%28_%29.md) method is called, do not execute any completion blocks if the `withoutFinishing` parameter for that method contains the value [`true`](../../Swift/true.md). If the parameter is [`false`](../../Swift/false.md) and the client subsequent calls the [`finishAnimation(at:)`](../uiviewanimating/finishanimation%28at%29.md) method, execute the completion blocks in your implementation of that method. Your implementation must be able to handle multiple calls to this method.
 

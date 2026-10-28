@@ -25,7 +25,7 @@ var matteType: AVSemanticSegmentationMatte.MatteType { get }
 @property (readonly) AVSemanticSegmentationMatteType matteType;
 ```
 
-#### Discussion
+## Discussion
 
 A semantic segmentation matte’s [`matteType`](./mattetype-swift.property.md) is immutable for the life of the object.
 

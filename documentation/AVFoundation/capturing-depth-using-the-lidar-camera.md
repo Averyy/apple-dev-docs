@@ -12,13 +12,13 @@ Access the LiDAR camera on supporting devices to capture precise depth data.
 - Mac Catalyst 15.6+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 AVFoundation introduced depth data capture for photos and video in iOS 11. The data it provides is suitable for many apps, but may not meet the needs of those that require greater precision depth. Starting in iOS 15.4, you can access the LiDAR camera on supported hardware, which offers high-precision depth data suitable for use cases like room scanning and measurement.
 
 This sample code project shows how to capture and render depth data from the LiDAR camera. It starts in streaming mode, which demonstrates how to capture synchronized video and depth data. When you tap the Camera button in the upper-left corner of the screen, the app switches to photo mode, which illustrates how to capture photos with depth data. In both modes, the app provides several Metal-based visualizations of the depth and image data.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Run this sample code on a device that provides a LiDAR camera, such as:
 
@@ -26,7 +26,7 @@ Run this sample code on a device that provides a LiDAR camera, such as:
 - iPad Pro 11-inch (3rd generation) or later
 - iPad Pro 12.9-inch (5th generation) or later
 
-##### Configure the LiDAR camera
+### Configure the LiDAR camera
 
 The sample app’s `CameraController` class provides the code that configures and manages the capture session, and handles the delivery of new video and depth data. It begins its configuration by retrieving the LiDAR camera. It calls the capture device’s [`default(_:for:position:)`](./avcapturedevice/default%28_,for,position%29.md) class method, passing it the new [`builtInLiDARDepthCamera`](./avcapturedevice/devicetype-swift.struct/builtinlidardepthcamera.md) device type available in iOS 15.4 and later.
 
@@ -68,7 +68,7 @@ device.activeDepthDataFormat = depthFormat
 device.unlockForConfiguration()
 ```
 
-##### Configure the capture outputs
+### Configure the capture outputs
 
 The app operates in streaming or photo mode. To enable streaming output, it creates an instance of [`AVCaptureVideoDataOutput`](./avcapturevideodataoutput.md) and [`AVCaptureDepthDataOutput`](./avcapturedepthdataoutput.md) to capture video sample buffers and depth data, respectively. It configures them as follows:
 
@@ -103,7 +103,7 @@ photoOutput.isDepthDataDeliveryEnabled = true
 
 After it adds the output to the session, it enables the delivery of depth data, which configures the capture pipeline appropriately. It can only enable depth delivery after adding the output to the capture session because the output needs to determine whether the pipeline configuration can deliver it.
 
-##### Capture synchronized video and depth
+### Capture synchronized video and depth
 
 After configuring the capture session’s inputs and outputs as required, the app is ready to start capturing data. The app starts in streaming mode, which uses the video data and depth data outputs and an `AVCaptureDataOutputSynchronizer` to synchronize the delivery of their data. The app adopts the synchronizer’s delegate protocol and implements its [`dataOutputSynchronizer(_:didOutput:)`](./avcapturedataoutputsynchronizerdelegate/dataoutputsynchronizer%28_,didoutput%29.md) method to handle the delivery, as the following example shows:
 
@@ -130,7 +130,7 @@ func dataOutputSynchronizer(_ synchronizer: AVCaptureDataOutputSynchronizer,
 
 The app retrieves the container objects that store the synchronized data from the [`AVCaptureSynchronizedDataCollection`](./avcapturesynchronizeddatacollection.md). It then unwraps the underlying video pixel buffer and depth data, and packages them for the app’s Metal views to display.
 
-##### Capture photos and depth
+### Capture photos and depth
 
 When you tap the app’s Camera button in the upper-left corner of the user interface, the app switches to photo mode. When this occurs, the app calls its `capturePhoto()` method, which creates a photo settings object, requests depth delivery on it, and initiates a photo capture.
 

@@ -23,7 +23,7 @@ mutating func removeAll(keepingCapacity keepCapacity: Bool = false)
 
 Available when `Key` conforms to `Hashable`.
 
-#### Discussion
+## Discussion
 
 Calling this method invalidates all indices with respect to the dictionary.
 

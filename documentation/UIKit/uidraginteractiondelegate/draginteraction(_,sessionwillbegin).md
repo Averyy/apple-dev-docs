@@ -22,7 +22,7 @@ optional func dragInteraction(_ interaction: UIDragInteraction, sessionWillBegin
 - (void) dragInteraction:(UIDragInteraction *) interaction sessionWillBegin:(id<UIDragSession>) session;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method when you need to perform some action after the user starts dragging the items; for instance, dimming the view to show that its contents are being dragged.
 

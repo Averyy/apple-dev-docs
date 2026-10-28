@@ -20,11 +20,11 @@ optional func browser(_ sender: NSBrowser, numberOfRowsInColumn column: Int) -> 
 - (NSInteger) browser:(NSBrowser *) sender numberOfRowsInColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 The number of rows of data.
 
-#### Discussion
+## Discussion
 
 Either this method or [`browser(_:createRowsForColumn:in:)`](./browser%28_,createrowsforcolumn,in%29.md) must be implemented, but not both.
 

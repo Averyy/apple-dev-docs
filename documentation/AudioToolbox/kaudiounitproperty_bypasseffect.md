@@ -24,7 +24,7 @@ var kAudioUnitProperty_BypassEffect: AudioUnitPropertyID { get }
 kAudioUnitProperty_BypassEffect
 ```
 
-#### Discussion
+## Discussion
 
 Indicates if an audio unit’s processing code is being bypassed (`1`) or not (0).
 

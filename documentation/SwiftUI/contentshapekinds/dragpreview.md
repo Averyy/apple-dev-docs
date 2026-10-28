@@ -23,7 +23,7 @@ static let dragPreview: ContentShapeKinds
 
 - [Making a view into a drag source](../making-a-view-into-a-drag-source.md)
 
-#### Discussion
+## Discussion
 
 When using this kind, only the preview shape is affected. To control the shape used to hit-test and start the drag preview, use the `interaction` kind.
 

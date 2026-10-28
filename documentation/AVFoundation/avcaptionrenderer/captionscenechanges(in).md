@@ -22,7 +22,7 @@ func captionSceneChanges(in consideredTimeRange: CMTimeRange) -> [AVCaptionRende
 - (NSArray<AVCaptionRendererScene *> *) captionSceneChangesInRange:(CMTimeRange) consideredTimeRange;
 ```
 
-#### Return Value
+## Return Value
 
 An array of render scenes for the time range, or an empty array if there are none.
 

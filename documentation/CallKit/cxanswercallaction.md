@@ -23,7 +23,7 @@ class CXAnswerCallAction
 @interface CXAnswerCallAction : CXCallAction
 ```
 
-#### Overview
+## Overview
 
 [`CXAnswerCallAction`](./cxanswercallaction.md) is a concrete subclass of [`CXCallAction`](./cxcallaction.md).
 

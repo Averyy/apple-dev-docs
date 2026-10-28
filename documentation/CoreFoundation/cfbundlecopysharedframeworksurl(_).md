@@ -25,7 +25,7 @@ func CFBundleCopySharedFrameworksURL(_ bundle: CFBundle!) -> CFURL!
 extern CFURLRefCFBundleCopySharedFrameworksURL(CFBundleRef bundle);
 ```
 
-#### Return Value
+## Return Value
 
 A CFURL object containing the location of `bundle`’s shared frameworks directory, or `NULL` if it could not be found. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

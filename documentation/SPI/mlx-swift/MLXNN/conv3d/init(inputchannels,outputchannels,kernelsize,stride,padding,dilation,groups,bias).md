@@ -17,7 +17,7 @@ Applies a 3-dimensional convolution over the multi-channel input image.
 init(inputChannels: Int, outputChannels: Int, kernelSize: IntOrTriple, stride: IntOrTriple = 1, padding: IntOrTriple = 0, dilation: IntOrTriple = 1, groups: Int = 1, bias: Bool = true)
 ```
 
-#### Discussion
+## Discussion
 
 The channels are expected to be last i.e. the input shape should be `NDHWC` where:
 

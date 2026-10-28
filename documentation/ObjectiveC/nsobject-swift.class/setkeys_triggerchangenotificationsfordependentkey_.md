@@ -17,7 +17,7 @@ Configures the observed object to post change notifications for a given property
 + (void) setKeys:(NSArray *) keys triggerChangeNotificationsForDependentKey:(NSString *) dependentKey;
 ```
 
-#### Discussion
+## Discussion
 
 Invocations of will- and did-change KVO notification methods for any key in `keys` automatically invokes the corresponding change notification methods for `dependentKey`. The observed object does not receive `willChange` or `didChange` messages to generate the notifications.
 

@@ -25,7 +25,7 @@ class func unlock()
 + (void) unlock;
 ```
 
-#### Discussion
+## Discussion
 
 See the [`lock()`](./lock%28%29.md) method for more details on transaction locking.
 

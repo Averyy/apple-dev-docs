@@ -19,11 +19,11 @@ Sets the insert action for the dynamic table rows.
 func dropDestination<T>(for payloadType: T.Type = T.self, action: @escaping (Int, [T]) -> Void) -> ModifiedContent<Self, OnInsertTableRowModifier> where T : Transferable
 ```
 
-#### Return Value
+## Return Value
 
 A view that calls `action` when elements are inserted into the original view.
 
-#### Discussion
+## Discussion
 
 ```swift
 struct Profile: Identifiable {

@@ -23,7 +23,7 @@ func removeContact(_ contact: MIDINetworkHost) -> Bool
 - (BOOL) removeContact:(MIDINetworkHost *) contact;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the session successfully removed the host, otherwise [`false`](../../Swift/false.md).
 

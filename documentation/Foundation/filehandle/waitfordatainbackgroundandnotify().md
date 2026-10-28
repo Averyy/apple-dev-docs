@@ -25,7 +25,7 @@ func waitForDataInBackgroundAndNotify()
 - (void) waitForDataInBackgroundAndNotify;
 ```
 
-#### Discussion
+## Discussion
 
 When the data becomes available, this method posts a [`NSFileHandleDataAvailable`](../nsnotification/name-swift.struct/nsfilehandledataavailable.md) notification on the current thread.
 

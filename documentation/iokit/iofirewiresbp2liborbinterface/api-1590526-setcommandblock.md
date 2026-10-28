@@ -16,11 +16,11 @@ Sets the command block portion of the ORB.
 IOReturn (*setCommandBlock)(void *self, void *buffer, UInt32 length);
 ```
 
-#### Return Value
+## Return Value
 
 Returns KIOReturnSuccess if the command block was updated successfully.
 
-#### Discussion
+## Discussion
 
 Copys the data provided in the buffer to the command block portion of the ORB.
 

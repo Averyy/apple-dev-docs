@@ -21,11 +21,11 @@ convenience init(info: String)
 + (instancetype) routeDetailWithInfo:(NSString *) info;
 ```
 
-#### Return Value
+## Return Value
 
 A new @c CPRouteDetail instance representing the informational text.
 
-#### Discussion
+## Discussion
 
 Use this method to display a short piece of general information about the route that does not fit any of the predefined route detail categories.
 

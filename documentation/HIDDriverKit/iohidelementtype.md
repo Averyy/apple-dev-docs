@@ -16,7 +16,7 @@ The types of HID elements that you can examine.
 enum IOHIDElementType : unsigned int;
 ```
 
-#### Overview
+## Overview
 
 Use this type to identify the type of an element you are using. The type is also the value for the key `kIOHIDElementTypeKey` in the dictionary describing the element.
 

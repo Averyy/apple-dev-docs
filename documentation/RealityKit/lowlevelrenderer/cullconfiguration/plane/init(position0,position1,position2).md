@@ -18,7 +18,7 @@ Creates a plane from three positions.
 init(position0 p0: SIMD3<Float>, position1 p1: SIMD3<Float>, position2 p2: SIMD3<Float>)
 ```
 
-#### Discussion
+## Discussion
 
 The plane’s outward normal is computed as `cross(p1 − p0, p2 − p1)`, so the three positions wind counterclockwise when viewed from the outward (culled) side of the plane.
 

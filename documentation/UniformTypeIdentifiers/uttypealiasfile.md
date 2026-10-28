@@ -21,7 +21,7 @@ A type that represents an alias file.
 extern UTType * const UTTypeAliasFile;
 ```
 
-#### Discussion
+## Discussion
 
 This type conforms to both [`UTTypeData`](./uttypedata.md) and [`UTTypeResolvable`](./uttyperesolvable.md), and its identifier is `com.apple.alias-file`.
 

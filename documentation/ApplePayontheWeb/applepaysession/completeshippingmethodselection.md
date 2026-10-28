@@ -22,13 +22,13 @@ undefined completeShippingMethodSelection(
 
 - [Apple Pay on the Web Version 3 Release Notes](../apple-pay-on-the-web-version-3-release-notes.md)
 
-#### Discussion
+## Discussion
 
 This method must be called by [`onshippingmethodselected`](./onshippingmethodselected.md).
 
 For Apple Pay JS API version 3, the parameter is an [`ApplePayShippingMethodUpdate`](../applepayshippingmethodupdate.md) object.
 
-##### completeShippingMethodSelection in Apple Pay JS API version 1 and 2
+### completeShippingMethodSelection in Apple Pay JS API version 1 and 2
 
 In Apple Pay JS API version 1 and 2, [`completeShippingMethodSelection`](./completeshippingmethodselection.md) has the following parameters:
 

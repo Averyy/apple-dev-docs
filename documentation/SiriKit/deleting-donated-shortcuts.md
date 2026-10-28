@@ -5,7 +5,7 @@
 
 Remove your donations from Siri.
 
-#### Overview
+## Overview
 
 If your app donated a shortcut containing information that the user has since deleted, your app should delete the donation. For example, let’s say that a user sends a message to a contact using your messaging app. Your app donates the *send message* shortcut that includes information about the contact. Later, the user deletes that contact from the app. The app should delete the donations it made that included the contact information.
 
@@ -13,24 +13,24 @@ When a user deletes data from an app, they expect the data to be gone for good. 
 
 There are other times your app should delete donations; for instance, when your app no longer supports the action. In general, whenever a donation is no longer appropriate for the user, your app should delete the donation.
 
-##### Delete Interaction Donations
+### Delete Interaction Donations
 
 To delete donations made with interaction objects, use one of the `delete` class methods on [`INInteraction`](../Intents/ininteraction.md) (see Deleting Interactions from the System). To delete specific donations, use [`delete(with:completion:)`](../Intents/ininteraction/delete%28with,completion%29-2d1gs.md), passing in the list of [`identifier`](../Intents/ininteraction/identifier.md) strings for each interaction to delete. Or use [`delete(with:completion:)`](../Intents/ininteraction/delete%28with,completion%29-tcq9.md), passing in the [`groupIdentifier`](../Intents/ininteraction/groupidentifier.md) string used to group of two or more interactions.
 
 If you need to delete all interactions that your app donated—for example, when the user signs out of your app—use [`deleteAll(completion:)`](../Intents/ininteraction/deleteall%28completion%29.md).
 
-##### Delete User Activity Donations
+### Delete User Activity Donations
 
 The method you use to delete a donation made with [`NSUserActivity`](../Foundation/nsuseractivity.md) depends on how you set up the user activity.
 
-###### Persisted Activities
+#### Persisted Activities
 
 If user activity’s [`isEligibleForPrediction`](../Foundation/nsuseractivity/iseligibleforprediction.md) property is set to [`true`](../Swift/true.md) and the [`persistentIdentifier`](../Foundation/nsuseractivity/persistentidentifier.md) property is set to a unique string identifying the activity, then:
 
 - Use [`deleteSavedUserActivities(withPersistentIdentifiers:completionHandler:)`](../Foundation/nsuseractivity/deletesaveduseractivities%28withpersistentidentifiers,completionhandler%29.md), passing in the list of persistent identifiers, to delete individual activities. This method also deletes user activities stored by Core Spotlight that have a matching persistent identifier.
 - Use [`deleteAllSavedUserActivities(completionHandler:)`](../Foundation/nsuseractivity/deleteallsaveduseractivities%28completionhandler%29.md) to delete all activities saved by your app; for example, after the user signs out of your app. This method also deletes all user activities created by your app and stored by Core Spotlight.
 
-###### Spotlight Indexed Activities
+#### Spotlight Indexed Activities
 
 If the user activity is indexed in Spotlight and the [`relatedUniqueIdentifier`](../CoreSpotlight/cssearchableitemattributeset/relateduniqueidentifier.md) property is set to a unique string identifying the activity, then:
 

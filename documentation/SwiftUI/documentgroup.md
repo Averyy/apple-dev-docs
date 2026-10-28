@@ -24,7 +24,7 @@ struct DocumentGroup<Document, Content> where Content : View
 
 - [Building and customizing the menu bar with SwiftUI](./building-and-customizing-the-menu-bar-with-swiftui.md)
 
-#### Overview
+## Overview
 
 Use a `DocumentGroup` scene to tell SwiftUI what kinds of documents your app can open when you declare your app using the [`App`](./app.md) protocol.
 
@@ -43,7 +43,7 @@ struct MyApp: App {
 
 Any time the configuration changes, SwiftUI updates the contents with that new configuration, similar to other parameterized builders.
 
-##### Viewing documents
+### Viewing documents
 
 If your app only needs to display but not modify a specific document type, you can use the file viewer document group scene. You supply the file type of the document, and a view that displays the document type that you provide:
 
@@ -58,7 +58,7 @@ struct MyApp: App {
 }
 ```
 
-##### Supporting multiple document types
+### Supporting multiple document types
 
 Your app can support multiple document types by adding additional document group scenes:
 
@@ -76,7 +76,7 @@ struct MyApp: App {
 }
 ```
 
-##### Opening documents
+### Opening documents
 
 When a person opens a file — for example, by double-clicking it in macOS Finder or tapping it in the iOS Files app — the system looks through the list of registered Uniform Type Identifiers (or *content types*) to find one that corresponds to the file extension.
 
@@ -130,13 +130,13 @@ struct MyApp: App {
 }
 ```
 
-##### Document life cycle
+### Document life cycle
 
 Once SwiftUI selects the matching `DocumentGroup`, it loads the file’s contents into the document type and presents the view with the loaded document.
 
 For a value-type document, like a `struct`, SwiftUI tracks edits through the document binding. For a reference-type document, like a `class`, it tracks changes you register with `EnvironmentValues.undoManager`. SwiftUI writes the document back to disk when needed — for example, in response to a Save command.
 
-##### Accessing the document’s URL
+### Accessing the document’s URL
 
 If your app needs to know the document’s URL, you can read it from the `editor` closure’s `configuration` parameter, along with the binding to the document. When you create a new document, the configuration’s `fileURL` property is `nil`. Every time it changes, it is passed over to the `DocumentGroup` builder in the updated `configuration`. This ensures that the view you define in the closure always knows the URL of the document it hosts.
 

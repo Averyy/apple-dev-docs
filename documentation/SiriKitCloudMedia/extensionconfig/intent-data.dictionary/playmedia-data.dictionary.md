@@ -15,7 +15,7 @@ Configuration details for your service’s play media intent.
 object ExtensionConfig.Intent.PlayMedia
 ```
 
-#### Discussion
+## Discussion
 
 To specify that your service only implements the required methods, provide an empty array for the `opt` property. You may omit the `opt` property if your service implements all of the optional methods.
 

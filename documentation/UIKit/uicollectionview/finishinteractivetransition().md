@@ -23,7 +23,7 @@ func finishInteractiveTransition()
 - (void) finishInteractiveTransition;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method after a call to the [`startInteractiveTransition(to:completion:)`](./startinteractivetransition%28to,completion%29.md) method and after you determine through a gesture recognizer or other event-handling code that the user wants to transition to the new layout. This method removes the intermediate transition layout object from the collection view and installs the intended target layout object. It then performs any final animations to get the collection view’s items from their current positions to the positions specified by the newly installed layout object.
 

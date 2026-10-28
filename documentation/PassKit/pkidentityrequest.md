@@ -26,7 +26,7 @@ class PKIdentityRequest
 
 - [Verifying Wallet identity requests](./verifying-wallet-identity-requests.md)
 
-#### Overview
+## Overview
 
 A request consists of a [`PKIdentityDocumentDescriptor`](./pkidentitydocumentdescriptor.md), a [`nonce`](./pkidentityrequest/nonce.md), a [`merchantIdentifier`](./pkidentityrequest/merchantidentifier.md), and [`usageDescriptionKey`](./pkidentityrequest/usagedescriptionkey.md). A [`PKIdentityDocumentDescriptor`](./pkidentitydocumentdescriptor.md) describes the document an app requests.
 

@@ -20,7 +20,7 @@ optional func textView(_ textView: NSTextView, shouldUpdateTouchBarItemIdentifie
 - (NSArray<NSString *> *) textView:(NSTextView *) textView shouldUpdateTouchBarItemIdentifiers:(NSArray<NSString *> *) identifiers;
 ```
 
-#### Return Value
+## Return Value
 
 Returns an array of [`NSTouchBarItem.Identifier`](../nstouchbaritem/identifier-swift.struct.md) elements for framework to update.
 

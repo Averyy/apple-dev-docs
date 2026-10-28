@@ -5,11 +5,11 @@
 
 A vector that’s perpendicular to, and points outward from, the object’s face.
 
-#### Overview
+## Overview
 
 From the value of this property, the runtime calculates how much to spin the target object about the [upVector](./upvector.md). This property is in local space, and so it’s relative to the target object’s coordinate space. The default value faces positively in the x-direction.
 
-##### Declaration
+### Declaration
 
 ```other
 uniform vector3d front = (1.0, 0.0, 0.0)

@@ -26,7 +26,7 @@ var predicate: NSPredicate { get }
 @property (copy, readonly) NSPredicate * predicate;
 ```
 
-#### Discussion
+## Discussion
 
 A predicate contains one or more expressions that evaluate to [`true`](../../Swift/true.md) or [`false`](../../Swift/false.md). Expressions are often value-based comparisons, but predicates support other types of operators, including string comparisons and aggregate operations. For guidelines on how to construct predicates for your queries, see [Predicate Rules for Query Objects](../ckquery.md#Predicate-Rules-for-Query-Objects).
 

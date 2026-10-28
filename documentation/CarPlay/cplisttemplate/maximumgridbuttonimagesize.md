@@ -21,7 +21,7 @@ class var maximumGridButtonImageSize: CGSize { get }
 @property (class, nonatomic, readonly) CGSize maximumGridButtonImageSize;
 ```
 
-#### Discussion
+## Discussion
 
 To properly size your list images, your app should size them to the display scale of the car screen. See -[CPInterfaceController carTraitCollection].
 

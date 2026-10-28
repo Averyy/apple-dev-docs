@@ -15,11 +15,11 @@ Request wrapper for setting a campaign’s daily budget at creation time.
 object DailyBudgetCreate
 ```
 
-#### Discussion
+## Discussion
 
 The `DailyBudgetCreate` object is the create-time counterpart to [`DailyBudget`](./dailybudget.md). It wraps a single `value` field containing the desired daily spend cap as a `Money` object. The `dailyBudget` field is required for all campaigns. The `sharedBudgets` field may also be provided to assign the campaign to one or more budget orders.
 
-##### Example
+### Example
 
 ```json
 {

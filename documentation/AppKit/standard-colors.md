@@ -5,7 +5,7 @@
 
 Retrieve the standard color objects for common colors like red, blue, green, black, white, and more.
 
-#### Overview
+## Overview
 
 For design guidance, see [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/macos/visual-design/color#system-colors).
 

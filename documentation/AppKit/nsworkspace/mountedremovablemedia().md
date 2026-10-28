@@ -21,11 +21,11 @@ func mountedRemovableMedia() -> [Any]?
 - (NSArray *) mountedRemovableMedia;
 ```
 
-#### Return Value
+## Return Value
 
 An array of `NSString` objects, each of which contains the full pathname of a mounted removable disk.
 
-#### Discussion
+## Discussion
 
 If the computer provides an interrupt or other notification when the user inserts a disk into a drive, the Finder will mount the disk immediately. However, if no notification is given, the Finder won’t be aware that a disk needs to be mounted. On such systems, an app should invoke either [`mountNewRemovableMedia`](./mountnewremovablemedia.md) or [`checkForRemovableMedia`](./checkforremovablemedia.md) before invoking [`mountedRemovableMedia()`](./mountedremovablemedia%28%29.md). Either of these methods cause the Finder to poll the drives to see if a disk is present. If a disk has been inserted but not yet mounted, these methods will cause the Finder to mount it.
 

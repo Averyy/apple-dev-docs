@@ -25,7 +25,7 @@ let kCVImageBufferTransferFunction_UseGamma: CFString
 extern CFStringRef const kCVImageBufferTransferFunction_UseGamma;
 ```
 
-#### Discussion
+## Discussion
 
 The value for the [`kCVImageBufferGammaLevelKey`](./kcvimagebuffergammalevelkey.md) key defines this transfer function.
 

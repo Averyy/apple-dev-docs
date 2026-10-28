@@ -17,7 +17,7 @@ An error that indicates when the ARKit session runs an unsupported configuration
 case invalidARConfiguration
 ```
 
-#### Discussion
+## Discussion
 
 The system throws this error if the app attempts to set a value for the room-capture session’s[`arSession`](../arsession.md) object.
 

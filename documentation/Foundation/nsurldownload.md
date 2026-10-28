@@ -19,7 +19,7 @@ class NSURLDownload
 @interface NSURLDownload : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  This API is considered legacy. Use [`URLSession`](./urlsession.md) instead.
 

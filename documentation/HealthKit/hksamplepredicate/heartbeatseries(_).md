@@ -20,7 +20,7 @@ Returns a sample predicate that matches heartbeat series samples.
 static func heartbeatSeries(_ predicate: NSPredicate? = nil) -> HKSamplePredicate<HKHeartbeatSeriesSample>
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to create an [`HKSamplePredicate`](../hksamplepredicate.md) instance that you can use to query for [`HKHeartbeatSeriesSample`](../hkheartbeatseriessample.md) objects.
 

@@ -20,7 +20,7 @@ A standard geometric model for attenuating audio intensity naturally with distan
 case rolloff(factor: Double)
 ```
 
-#### Discussion
+## Discussion
 
 The case’s default value is `1.0`, which attenuates spatial audio as the listener moves away from the source, similar to real-world physics. You can increase or decrease this effect by changing `factor` to other values. For example:
 

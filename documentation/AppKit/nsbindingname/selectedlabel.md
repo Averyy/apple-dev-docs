@@ -19,7 +19,7 @@ static let selectedLabel: NSBindingName
 extern NSBindingName NSSelectedLabelBinding;
 ```
 
-#### Discussion
+## Discussion
 
 For more information, see [Cocoa Bindings](../cocoa-bindings.md).
 

@@ -23,7 +23,7 @@ func willMove(to dynamicAnimator: UIDynamicAnimator?)
 - (void) willMoveToAnimator:(UIDynamicAnimator *) dynamicAnimator;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method as the override point for responding to changes in the UIKit Dynamics behavior tree that involve the dynamic behavior.
 

@@ -5,7 +5,7 @@
 
 Create macOS apps and other executables that run natively on both Apple silicon and Intel-based Mac computers.
 
-#### Overview
+## Overview
 
 Native apps run more efficiently than translated apps because the compiler is able to optimize your code for the target architecture. An app that supports only the `x86_64` architecture must run under Rosetta translation on Apple silicon. A universal binary runs natively on both Apple silicon and Intel-based Mac computers, because it contains executable code for both architectures.
 
@@ -25,13 +25,13 @@ Turn all of your compiled code into universal binaries, not just apps. The follo
 
 > **Note**: You can build a universal binary on either an Apple silicon or Intel-based Mac computer, but you cannot debug the `arm64` slice of your binary on an Intel-based Mac computer. It’s possible to debug both slices of a universal binary on Apple silicon, but you must run the `x86_64` slice under Rosetta translation.
 
-##### Download and Install Xcode on Your Mac Computer
+### Download and Install Xcode on Your Mac Computer
 
 Xcode 12.2 and later is a requirement for building universal binaries. Earlier versions of Xcode don’t contain the support needed to build and test universal versions of your macOS code.
 
 Download the latest public version of Xcode from the App Store. Download prerelease versions of Xcode from [developer.apple.com](https://developer.apple.com).
 
-##### Update the Architecture List in Your Xcode Projects
+### Update the Architecture List in Your Xcode Projects
 
 Xcode 12.2 and later automatically adds the arm64 architecture to the list of standard architectures for all macOS binaries, including apps and libraries. During the debugging and testing process, Xcode builds only for the current system architecture by default. However, it automatically builds a universal binary for the release version of your code.
 
@@ -41,7 +41,7 @@ If you customized the Architectures build setting in your Xcode project, remove 
 
 For additional information about Xcode build settings and how to configure them, see [Configure build settings](https://help.apple.com/xcode/mac/current/#/dev04b3a04ba).
 
-##### Update the Architecture List of Custom Makefiles
+### Update the Architecture List of Custom Makefiles
 
 If you build your project using custom scripts or makefiles, add the `arm64` architecture to the appropriate environment variables. Xcode uses the `ARCHS` environment variable to define the current build architectures. Other build systems may use different environment variables, but with similar purposes. After adding the variable to the appropriate environment variable, build your code and verify that the compiler creates an `arm64` variant of your code. To create a universal binary for your project, merge the resulting executable files into a single executable binary using the `lipo` tool.
 
@@ -56,7 +56,7 @@ universal_app: x86_app arm_app
     lipo -create -output universal_app x86_app arm_app
 ```
 
-##### Wrap Platform-Specific Code with Conditional Compilation Macros
+### Wrap Platform-Specific Code with Conditional Compilation Macros
 
 When writing code for a specific platform or processor type, isolate that code using the appropriate conditional compilation statements. For C-based code, the system defines a set of macros for you to use in `/usr/include/TargetConditionals.h`. The Swift language also supports conditional compilation using conditional compilation blocks.
 
@@ -124,13 +124,13 @@ In Objective-C, implement the same code as shown below.
 
 For the complete list of conditional compilation macros, see the `/usr/include/TargetConditionals.h` header file in the appropriate SDK. For a list of Swift compilation conditions and arguments, see [Conditional Compilation Block](https://docs.swift.org/swift-book/ReferenceManual/Statements.html) in [The Swift Programming Language](https://docs.swift.org/swift-book/).
 
-##### Build Your Target
+### Build Your Target
 
 When you build a debuggable version of your code, Xcode builds only for the current architecture by default. Building for one architecture saves time when you are trying to debug your code and fix problems quickly.
 
 You can create a universal binary with debug symbols on any Mac computer by changing the Build Active Architecture Only build setting of your project. Although you can create this binary on an Intel-based Mac computer, you can’t run or debug the `arm64` slice of it. Only a Mac with Apple silicon is capable of running and debugging both slices of your binary; use Rosetta translation to run and debug the `x86_64` slice.
 
-##### Determine Whether Your Binary Is Universal
+### Determine Whether Your Binary Is Universal
 
 To users, a universal binary looks no different than a binary built for a single architecture. When you build a universal binary, Xcode compiles your source files twice—once for each architecture. After linking the binaries for each architecture, Xcode then merges the architecture-specific binaries into a single executable file using the `lipo` tool. If you build the source files yourself, you must call `lipo` as part of your build scripts to merge your architecture-specific binaries into a single universal binary.
 
@@ -145,7 +145,7 @@ To obtain more information about each architecture, pass the `-detailed_info` ar
 
 For information about how to determine whether your app is running as a translated binary, see [Determine whether your app is running as a translated binary](./about-the-rosetta-translation-environment.md#Determine-whether-your-app-is-running-as-a-translated-binary).
 
-##### Specify the Launch Behavior of Your App
+### Specify the Launch Behavior of Your App
 
 For universal binaries, the system prefers to execute the slice that is native to the current platform. On an Intel-based Mac computer, the system always executes the `x86_64` slice of the binary. On Apple silicon, the system prefers to execute the `arm64` slice when one is present. Users can force the system to run the app under Rosetta translation by enabling the appropriate option from the app’s Get Info window in the Finder.
 

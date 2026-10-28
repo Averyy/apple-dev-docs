@@ -20,7 +20,7 @@ var anchor: ARAnchor? { get }
 @property (nonatomic, strong, readonly, nullable) ARAnchor * anchor;
 ```
 
-#### Discussion
+## Discussion
 
 If you chose an existing plane target, ARKit provides its anchor. If you choose an estimated plane target, ARKit provides an anchor only if the ray intersects an existing plane.
 

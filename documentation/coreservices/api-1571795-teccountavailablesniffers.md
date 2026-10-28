@@ -15,11 +15,11 @@ Counts and returns the number of sniffers available inall installed plug-ins.
 OSStatus TECCountAvailableSniffers(ItemCount *numberOfEncodings);
 ```
 
-#### Return Value
+## Return Value
 
 A resultcode. See [Result Codes](./carbon_core/text_encoding_conversion_manager.md#1664324).
 
-#### Discussion
+## Discussion
 
 This function counts every instance of a sniffer. If differentconversion plug-ins support a sniffer for the same encoding, thesniffer is counted more than once. Since the `TECGetAvailableSniffers` functionignores duplicate sniffers, `TECCountAvailableSniffers` mayreturn a number greater than the number of array elements neededfor the `availableSniffers[]` parameterof the `TECGetAvailableSniffers` function. 
 

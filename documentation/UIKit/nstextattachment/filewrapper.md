@@ -24,7 +24,7 @@ var fileWrapper: FileWrapper? { get set }
 @property (nonatomic, strong, nullable) NSFileWrapper * fileWrapper;
 ```
 
-#### Discussion
+## Discussion
 
 The file wrapper holds the contents of the attached file. In iOS, modifying this property has a side effect of invalidating the [`image`](./image.md), [`contents`](./contents.md), and [`fileType`](./filetype.md) properties.
 

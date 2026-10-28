@@ -19,11 +19,11 @@ Tells the extension to start the evaluation provider, in response to a request f
 func start() async -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the provider started successfully; `false`, otherwise.
 
-#### Discussion
+## Discussion
 
 Use this method to prepare your provider to handle future calls to [`handleCommand(_:)`](./handlecommand%28_%29.md).
 

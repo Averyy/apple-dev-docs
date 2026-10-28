@@ -24,7 +24,7 @@ optional func cancelAllPendingVideoCompositionRequests()
 - (void) cancelAllPendingVideoCompositionRequests;
 ```
 
-#### Discussion
+## Discussion
 
 Upon receiving this message, a custom video compositor must block until it has either cancelled all pending frame requests, and called the [`finishCancelledRequest()`](../avasynchronousvideocompositionrequest/finishcancelledrequest%28%29.md) method for each of them. If cancellation is not possible, the method must block until it has finished processing of all the frames and called the [`finish(withComposedVideoFrame:)`](../avasynchronousvideocompositionrequest/finish%28withcomposedvideoframe%29.md) method for each of them.
 

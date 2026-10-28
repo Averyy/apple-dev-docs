@@ -24,11 +24,11 @@ func registerGlobalMetaParameter(metaParameterDefinition: PHASEMetaParameterDefi
 - (PHASEGlobalMetaParameterAsset *) registerGlobalMetaParameter:(PHASEMetaParameterDefinition *) metaParameterDefinition error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A global metaparameter object. If an error occurs, the function returns `nil`.
 
-#### Discussion
+## Discussion
 
 Global metaparameters attach to any number of sound event assets. When an app adjusts a global metaparameter at runtime, the change propagates immediately to all the attached sound events.
 

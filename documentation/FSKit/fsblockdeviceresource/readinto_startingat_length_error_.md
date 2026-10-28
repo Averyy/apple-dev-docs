@@ -15,11 +15,11 @@ Synchronously reads data from the resource into a buffer.
 - (size_t) readInto:(void *) buffer startingAt:(off_t) offset length:(size_t) length error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The actual number of bytes read.
 
-#### Discussion
+## Discussion
 
 This is a synchronous version of [`readInto:startingAt:length:completionHandler:`](./readinto_startingat_length_completionhandler_.md).
 

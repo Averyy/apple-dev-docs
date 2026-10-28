@@ -25,7 +25,7 @@ func CGAffineTransformEqualToTransform(_ t1: CGAffineTransform, _ t2: CGAffineTr
 extern bool CGAffineTransformEqualToTransform(CGAffineTransform t1, CGAffineTransform t2);
 ```
 
-#### Return Value
+## Return Value
 
 Returns `true` if `t1` and `t2` are equal, `false` otherwise.
 

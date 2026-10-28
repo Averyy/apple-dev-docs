@@ -15,7 +15,7 @@ Properties shared by all the behaviors you can use to affect how components reac
 object Behavior
 ```
 
-#### Discussion
+## Discussion
 
 A behavior defines the physics of a component and its context. The effect of a component behavior is persistent and occurs every time a person views the article. Compare that with an animation which happens just once each time a person views the component in your article.
 

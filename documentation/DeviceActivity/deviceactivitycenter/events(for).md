@@ -17,11 +17,11 @@ Fetches the events of a device activity.
 func events(for activity: DeviceActivityName) -> [DeviceActivityEvent.Name : DeviceActivityEvent]
 ```
 
-#### Return Value
+## Return Value
 
 The events of the activity. The dictionary is empty if your app doesn’t monitor the activity.
 
-#### Discussion
+## Discussion
 
 The returned object is a static representation of the events at the time the function was called. In other words, an `Event` fetched for a particular activity doesn’t dynamically update in response to future changes made to that activity.
 

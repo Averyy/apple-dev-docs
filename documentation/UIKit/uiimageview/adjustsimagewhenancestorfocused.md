@@ -19,7 +19,7 @@ var adjustsImageWhenAncestorFocused: Bool { get set }
 @property (nonatomic) BOOL adjustsImageWhenAncestorFocused;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md) and an ancestor of the image view becomes focused, the image view adjusts the frame of its image using the [`focusedFrameGuide`](./focusedframeguide.md) property. On supported Apple TV devices, setting this property to true renders the image with a Liquid Glass effect when it gains focus.
 

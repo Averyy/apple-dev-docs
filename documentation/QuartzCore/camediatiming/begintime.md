@@ -25,7 +25,7 @@ var beginTime: CFTimeInterval { get set }
 @property CFTimeInterval beginTime;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to 0.
 

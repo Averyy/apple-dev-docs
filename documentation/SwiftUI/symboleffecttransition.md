@@ -22,7 +22,7 @@ Creates a transition that applies the Appear, Disappear, DrawOn or DrawOff symbo
 @frozen @preconcurrency struct SymbolEffectTransition
 ```
 
-#### Overview
+## Overview
 
 Other views are unaffected by this transition.
 

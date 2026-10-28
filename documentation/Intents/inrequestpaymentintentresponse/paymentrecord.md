@@ -32,7 +32,7 @@ var paymentRecord: INPaymentRecord? { get set }
 @property (atomic, copy, readwrite, nullable) INPaymentRecord * paymentRecord;
 ```
 
-#### Discussion
+## Discussion
 
 Assign an object to this property that contains the details of the payment request. Include as much information as possible in the payment record.
 

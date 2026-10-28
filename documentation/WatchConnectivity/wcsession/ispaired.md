@@ -22,7 +22,7 @@ var isPaired: Bool { get }
 @property (nonatomic, readonly, getter=isPaired) BOOL paired;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the iPhone is paired to an Apple Watch or [`false`](../../Swift/false.md) when it is not.
 

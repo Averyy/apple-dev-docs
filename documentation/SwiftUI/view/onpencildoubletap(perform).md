@@ -20,11 +20,11 @@ nonisolated
 func onPencilDoubleTap(perform action: @escaping (PencilDoubleTapGestureValue) -> Void) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that performs `action` after the user double-taps their Apple Pencil.
 
-#### Discussion
+## Discussion
 
 You should respect people’s setting for the double-tap gesture by reading the [`preferredPencilDoubleTapAction`](../environmentvalues/preferredpencildoubletapaction.md) environment value, if the setting makes sense in your app. If it doesn’t, consider giving people a way to specify custom behavior in your app instead.
 

@@ -19,7 +19,7 @@ let kCGWindowWorkspace: CFString
 extern CFStringRef const kCGWindowWorkspace;
 ```
 
-#### Discussion
+## Discussion
 
 The key that identifies the workspace to which the window belongs. The value for this key is a [`CFNumber`](../CoreFoundation/cfnumber.md) type whose value is encoded using the [`CFNumberType.intType`](../CoreFoundation/cfnumbertype/inttype.md) type.
 

@@ -14,11 +14,11 @@ virtual bool SendSCSICommand (
  SCSITaskStatus *taskStatus ) = 0;
 ```
 
-#### Return Value
+## Return Value
 
 False if no more commands can be processed at this time, otherwise true.
 
-#### Overview
+## Overview
 
 Send a SCSI Command to the device. If the command was sent to the device and is pending completion, the subclass should return true and return back the kSCSIServiceResponse_Request_In_Process response. If the command completes immediately with an error, the subclass will return true and return back the appropriate status. If the subclass is currently processing all the commands it can, the subclass will return false and the command will be resent next time CommandCompleted is called.
 

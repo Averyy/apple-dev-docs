@@ -23,7 +23,7 @@ convenience init(graphObjects: [MLCGraph], lossLayer: MLCLayer?, optimizer: MLCO
 + (instancetype) graphWithGraphObjects:(NSArray<MLCGraph *> *) graphObjects lossLayer:(MLCLayer *) lossLayer optimizer:(MLCOptimizer *) optimizer;
 ```
 
-#### Discussion
+## Discussion
 
 You can also add a loss layer to a training graph using the [`node(with:sources:lossLabels:)`](../mlcgraph/node%28with,sources,losslabels%29.md) method.
 

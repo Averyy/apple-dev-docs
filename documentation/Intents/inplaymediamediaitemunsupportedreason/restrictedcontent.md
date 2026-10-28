@@ -24,7 +24,7 @@ case restrictedContent
 INPlayMediaMediaItemUnsupportedReasonRestrictedContent
 ```
 
-#### Discussion
+## Discussion
 
 Use this reason for geographic region restrictions, or when none of the other, more specific reasons apply.
 

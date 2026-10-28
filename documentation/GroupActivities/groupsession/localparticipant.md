@@ -20,7 +20,7 @@ The participant on the current device.
 final var localParticipant: Participant { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to differentiate the participant on the current device from participants on other devices.
 

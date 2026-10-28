@@ -20,7 +20,7 @@ The paper margin of the document.
 extern NSAttributedStringDocumentAttributeKey const NSPaperMarginDocumentAttribute;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSValue`](../Foundation/nsvalue.md) object containing [`UIEdgeInsets`](./uiedgeinsets.md).
 

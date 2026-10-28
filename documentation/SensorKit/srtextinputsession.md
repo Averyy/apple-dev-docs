@@ -21,7 +21,7 @@ class SRTextInputSession
 @interface SRTextInputSession : NSObject
 ```
 
-#### Overview
+## Overview
 
 The framework instantiates a new instance of this class every time the keyboard displays after dismissal.
 

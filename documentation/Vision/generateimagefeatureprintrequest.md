@@ -21,7 +21,7 @@ An image-based request to generate feature prints from an image.
 struct GenerateImageFeaturePrintRequest
 ```
 
-#### Overview
+## Overview
 
 This request generates an [`FeaturePrintObservation`](./featureprintobservation.md) object with the features in an image.
 

@@ -22,7 +22,7 @@ func notifyRulesChanged()
 - (void) notifyRulesChanged;
 ```
 
-#### Discussion
+## Discussion
 
 The Filter Control Provider can call this method to notify the Filter Data Provider that the rules changed. It is only necessary to call this method when the update to the rules was not a direct result of a call to [`handleNewFlow(_:completionHandler:)`](./handlenewflow%28_,completionhandler%29.md).
 

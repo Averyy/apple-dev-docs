@@ -22,7 +22,7 @@ func width(min: CGFloat? = nil, ideal: CGFloat? = nil, max: CGFloat? = nil) -> T
 
 Available when `RowValue` conforms to `Identifiable`, `Sort` conforms to `SortComparator`, `Content` conforms to `View`, and `Label` conforms to `View`.
 
-#### Discussion
+## Discussion
 
 Always specify at least one width constraint when calling this method. Pass `nil` or leave out a constraint to indicate no change to the sizing of a column.
 

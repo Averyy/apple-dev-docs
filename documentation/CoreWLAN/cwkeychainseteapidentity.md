@@ -15,11 +15,11 @@ Associates an exisiting identity item to the specified SSID.
 OSStatus CWKeychainSetEAPIdentity(CFDataRef ssidData, SecIdentityRef identity);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus error code which will indicate whether or not a failure occurred during execution. *errSecSuccess* indicates no error occurred.
 
-#### Discussion
+## Discussion
 
 If the *identity* is *nil the method will disassociate the specified SSID from its identitiy.*
 

@@ -25,7 +25,7 @@ var isPositional: Bool { get set }
 @property (nonatomic, assign, getter=isPositional) BOOL positional;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the audio mixer considers the position and velocity of the [`SKAudioNode`](../skaudionode.md) relative to scene’s current [`listener`](../skscene/listener.md) node. The mixer applies distance attenuation, doppler shift, and pan effects to the sound. If [`false`](../../Swift/false.md), then the sound is played normally. The default value is [`true`](../../Swift/true.md).
 

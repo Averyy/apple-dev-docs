@@ -26,7 +26,7 @@ class MCNearbyServiceAdvertiser
 @interface MCNearbyServiceAdvertiser : NSObject
 ```
 
-#### Overview
+## Overview
 
 Before you can advertise a service, you must create an `MCPeerID` object that identifies your app and the user to nearby devices.
 

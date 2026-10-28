@@ -24,7 +24,7 @@ var alertLaunchImage: String? { get set }
 @property (nonatomic, copy, nullable) NSString * alertLaunchImage;
 ```
 
-#### Discussion
+## Discussion
 
 The string is a filename of an image file in the app bundle. This image is a launching image specified for a given notification; when the user taps the action button (for example, “View”) or moves the action slider, the image is used in place of the default launching image. If the value of this property is `nil` (the default), the system either uses the previous snapshot, uses the image identified by the `UILaunchImageFile` key in the app’s `Info.plist` file, or falls back to `Default.png`.
 

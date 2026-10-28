@@ -24,7 +24,7 @@ var synchronizationClock: CMClock? { get }
 @property (nonatomic, readonly, nullable) CMClockRef synchronizationClock;
 ```
 
-#### Discussion
+## Discussion
 
 The synchronization clock provides the timebase for sample buffers that the stream outputs. Use it to synchronize with the clocks of other media sources, such as the [`synchronizationClock`](../../AVFoundation/avcapturesession/synchronizationclock.md) of [`AVCaptureSession`](../../AVFoundation/avcapturesession.md).
 

@@ -21,7 +21,7 @@ Aligns the value on the right side of a column with the specified width.
 static func right(columns: @autoclosure @escaping () -> Int) -> OSLogStringAlignment
 ```
 
-#### Return Value
+## Return Value
 
 A string-alignment structure with the specified value.
 

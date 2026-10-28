@@ -19,7 +19,7 @@ class func register(forChannelOpenNotifications object: Any!, selector: Selector
 + (IOBluetoothUserNotification *) registerForChannelOpenNotifications:(id) object selector:(SEL) selector withChannelID:(BluetoothRFCOMMChannelID) channelID direction:(IOBluetoothUserNotificationChannelDirection) inDirection;
 ```
 
-#### Discussion
+## Discussion
 
 The given selector will be called on the target object whenever an RFCOMM channel with the given attributes is opened. The selector should accept two arguments. The first is the user notification object. The second is the IOBluetoothRFCOMMChannel that was opened.
 

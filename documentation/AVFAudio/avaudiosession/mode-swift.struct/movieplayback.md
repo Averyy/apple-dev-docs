@@ -24,7 +24,7 @@ static let moviePlayback: AVAudioSession.Mode
 extern AVAudioSessionMode const AVAudioSessionModeMoviePlayback;
 ```
 
-#### Discussion
+## Discussion
 
 When you set this mode, the audio session uses signal processing to enhance movie playback for certain audio routes such as built-in speaker or headphones. You may only use this mode with the [`playback`](../category-swift.struct/playback.md) audio session category.
 

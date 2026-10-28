@@ -20,7 +20,7 @@ The current content-unavailable configuration of the view controller.
 @preconcurrency var contentUnavailableConfiguration: (any UIContentConfiguration)? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to configure a content-unavailable view that the view controller manages. The value of this property is commonly an instance of [`UIContentUnavailableConfiguration`](../uicontentunavailableconfiguration-swift.struct.md), but you can use other types of content configuration, including a [`UIHostingConfiguration`](../../SwiftUI/uihostingconfiguration.md), to display a SwiftUI view.
 

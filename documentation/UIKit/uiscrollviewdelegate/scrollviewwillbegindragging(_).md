@@ -23,7 +23,7 @@ optional func scrollViewWillBeginDragging(_ scrollView: UIScrollView)
 - (void) scrollViewWillBeginDragging:(UIScrollView *) scrollView;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate might not receive this message until dragging has occurred over a small distance.
 

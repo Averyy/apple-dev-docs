@@ -22,7 +22,7 @@ protocol GLKNamedEffect
 @protocol GLKNamedEffect
 ```
 
-#### Overview
+## Overview
 
 Objects that implement the [`GLKNamedEffect`](./glknamedeffect.md) protocol provide rendering support to shader-based apps. An effect is expected to provide access to one or more shaders. The typical usage pattern for an effect separates initialization tasks from rendering tasks, allowing the effect object to be used efficiently inside an animation loop.
 

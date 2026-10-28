@@ -34,7 +34,7 @@ var groupName: INSpeakableString? { get }
 @property (atomic, copy, readonly, nullable) INSpeakableString * groupName;
 ```
 
-#### Discussion
+## Discussion
 
 Use groups to organize notes within your app. For example, you might use this property to specify the name of the folder containing the note. Group names should always correspond to the user-visible name of the container, and not to any internal designation.
 

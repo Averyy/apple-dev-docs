@@ -15,11 +15,11 @@ Extracts the interval of an endpoint descriptor.
 uint32_t IOUSBGetEndpointIntervalFrames(uint32_t usbDeviceSpeed, const IOUSBEndpointDescriptor *descriptor);
 ```
 
-#### Return Value
+## Return Value
 
 The endpoint interval in frames.
 
-#### Discussion
+## Discussion
 
 This method parses an endpoint descriptor and returns the service interval in frames.
 

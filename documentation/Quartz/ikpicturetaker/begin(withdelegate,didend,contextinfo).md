@@ -19,7 +19,7 @@ func begin(withDelegate delegate: Any!, didEnd didEndSelector: Selector!, contex
 - (void) beginPictureTakerWithDelegate:(id) delegate didEndSelector:(SEL) didEndSelector contextInfo:(void *) contextInfo;
 ```
 
-#### Discussion
+## Discussion
 
 The `didEndSelector` method should have the following signature:
 

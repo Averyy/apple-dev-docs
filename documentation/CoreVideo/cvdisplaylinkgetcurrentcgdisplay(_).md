@@ -22,7 +22,7 @@ func CVDisplayLinkGetCurrentCGDisplay(_ displayLink: CVDisplayLink) -> CGDirectD
 extern CGDirectDisplayID CVDisplayLinkGetCurrentCGDisplay(CVDisplayLinkRef displayLink);
 ```
 
-#### Return Value
+## Return Value
 
 An identifier representing the current display. For more information on the display identifier type, see [`CGDirectDisplayID`](../CoreGraphics/cgdirectdisplayid.md).
 

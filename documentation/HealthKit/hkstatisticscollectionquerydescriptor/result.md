@@ -20,7 +20,7 @@ A collection of results.
 struct Result
 ```
 
-#### Overview
+## Overview
 
 The first set of results reflects the current state of the statistics collection. Additional results represent updates to the collection. When possible, HealthKit populates the `updateStatistics` property to indicate which statistics have changed.
 

@@ -25,7 +25,7 @@ let AVErrorPersistentTrackIDKey: String
 extern NSString * const AVErrorPersistentTrackIDKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is of type [`CMPersistentTrackID`](../CoreMedia/cmpersistenttrackid.md).
 

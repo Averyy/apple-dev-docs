@@ -25,7 +25,7 @@ struct SCNShaderModifierEntryPoint
 typedef NSString * SCNShaderModifierEntryPoint;
 ```
 
-#### Discussion
+## Discussion
 
 For details on shader modifiers, see [Use Shader Modifiers to Extend SceneKit Shading](./scnshadable.md#Use-Shader-Modifiers-to-Extend-SceneKit-Shading) in the protocol overview.
 

@@ -15,11 +15,11 @@ Registers all component resources in the given resource file.
 SInt32 RegisterComponentResourceFile(SInt16 resRefNum, SInt16 global);
 ```
 
-#### Return Value
+## Return Value
 
 The number of components registered, if all components in the specified resource file are successfully registered. If one or more of the components in the resource file could not be registered, or if the specified file reference number is invalid, a negative function result. 
 
-#### Discussion
+## Discussion
 
 Before a component can be used by an application, the component must be registered with the Component Manager. The Component Manager automatically registers component resources stored in files with file types of `'thng'` that are stored in the Extensions folder. For a description of the format and content of component resources, see “Resources”.  
 

@@ -20,7 +20,7 @@ The user hasn’t given the app permission to save data.
 static var errorAuthorizationDenied: HKError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error occurs only when your app attempts to save data. If your app isn’t authorized to query data, it receives only the data that the app has saved into HealthKit. For more information, see [Setting up HealthKit](../setting-up-healthkit.md).
 

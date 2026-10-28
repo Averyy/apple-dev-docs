@@ -25,11 +25,11 @@ func CFWriteStreamCreateWithFile(_ alloc: CFAllocator!, _ fileURL: CFURL!) -> CF
 extern CFWriteStreamRefCFWriteStreamCreateWithFile(CFAllocatorRef alloc, CFURLRef fileURL);
 ```
 
-#### Return Value
+## Return Value
 
 The new write stream, or `NULL` on failure. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 The stream overwrites an existing file unless you set the kCFStreamPropertyAppendToFile to kCFBooleanTrue with [`CFWriteStreamSetProperty(_:_:_:)`](./cfwritestreamsetproperty%28_,_,_%29.md), in which case the stream appends data to the file.
 

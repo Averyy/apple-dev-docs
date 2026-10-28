@@ -22,7 +22,7 @@ A type-erased scroll target behavior.
 struct AnyScrollTargetBehavior
 ```
 
-#### Overview
+## Overview
 
 Provide this to the [`scrollTargetBehavior(_:)`](./view/scrolltargetbehavior%28_%29.md) modifier. When the underlying behavior changes, the scroll view to which this behavior applies will be updated.
 

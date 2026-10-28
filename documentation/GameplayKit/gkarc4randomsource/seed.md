@@ -24,7 +24,7 @@ var seed: Data { get set }
 @property (nonatomic, copy) NSData * seed;
 ```
 
-#### Discussion
+## Discussion
 
 Any two random sources initialized with the same seed data will generate the same sequence of random numbers. To replicate the behavior of an existing [`GKARC4RandomSource`](../gkarc4randomsource.md) instance, read this property and then create a new instance by passing the resulting data to the [`init(seed:)`](./init%28seed%29.md) initializer.
 

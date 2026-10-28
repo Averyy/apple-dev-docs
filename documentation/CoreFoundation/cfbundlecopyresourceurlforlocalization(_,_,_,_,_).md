@@ -25,11 +25,11 @@ func CFBundleCopyResourceURLForLocalization(_ bundle: CFBundle!, _ resourceName:
 extern CFURLRefCFBundleCopyResourceURLForLocalization(CFBundleRef bundle, CFStringRef resourceName, CFStringRef resourceType, CFStringRef subDirName, CFStringRef localizationName);
 ```
 
-#### Return Value
+## Return Value
 
 The location of a localized resource in `bundle`, or `NULL` if the resource could not be found. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 Note that file names are case-sensitive, even on file systems (such as HFS+) that are not case sensitive with regards to file names.
 

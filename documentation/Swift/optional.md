@@ -22,7 +22,7 @@ A type that represents either a wrapped value or the absence of a value.
 enum Optional<Wrapped> where Wrapped : ~Copyable, Wrapped : ~Escapable
 ```
 
-#### Overview
+## Overview
 
 You use the `Optional` type whenever you use optional values, even if you never type the word `Optional`. Swift’s type system usually shows the wrapped type’s name with a trailing question mark (`?`) instead of showing the full type name. For example, if a variable has the type `Int?`, that’s just another way of writing `Optional<Int>`. The shortened form is preferred for ease of reading and writing code.
 
@@ -54,7 +54,7 @@ let imagePaths = ["star": "/glyphs/star.png",
 
 Getting a dictionary’s value using a key returns an optional value, so `imagePaths["star"]` has type `Optional<String>` or, written in the preferred manner, `String?`.
 
-#### Optional Binding
+## Optional Binding
 
 To conditionally bind the wrapped value of an `Optional` instance to a new variable, use one of the optional binding control structures, including `if let`, `guard let`, and `switch`.
 
@@ -67,7 +67,7 @@ if let starPath = imagePaths["star"] {
 // Prints "The star image is at '/glyphs/star.png'"
 ```
 
-#### Optional Chaining
+## Optional Chaining
 
 To safely access the properties and methods of a wrapped instance, use the postfix optional chaining operator (postfix `?`). The following example uses optional chaining to access the `hasSuffix(_:)` method on a `String?` instance.
 
@@ -78,7 +78,7 @@ if imagePaths["star"]?.hasSuffix(".png") == true {
 // Prints "The star image is in PNG format"
 ```
 
-#### Using the Nil-Coalescing Operator
+## Using the Nil-Coalescing Operator
 
 Use the nil-coalescing operator (`??`) to supply a default value in case the `Optional` instance is `nil`. Here a default path is supplied for an image that is missing from `imagePaths`.
 
@@ -97,7 +97,7 @@ print(shapePath)
 // Prints "/images/default.png"
 ```
 
-#### Unconditional Unwrapping
+## Unconditional Unwrapping
 
 When you’re certain that an instance of `Optional` contains a value, you can unconditionally unwrap the value by using the forced unwrap operator (postfix `!`). For example, the result of the failable `Int` initializer is unconditionally unwrapped in the example below.
 

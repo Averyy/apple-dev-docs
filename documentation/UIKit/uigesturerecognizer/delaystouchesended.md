@@ -23,7 +23,7 @@ var delaysTouchesEnded: Bool { get set }
 @property (nonatomic) BOOL delaysTouchesEnded;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md) (the default) and the gesture recognizer is analyzing touch events, the window suspends delivery of touch objects in the [`UITouch.Phase.ended`](../uitouch/phase-swift.enum/ended.md) phase to the attached view. If the gesture recognizer subsequently recognizes its gesture, these touch objects are canceled (with a [`touchesCancelled(_:with:)`](../uiresponder/touchescancelled%28_,with%29.md) message). If the gesture recognizer doesn’t recognize its gesture, the window delivers these objects in an invocation of the view’s [`touchesEnded(_:with:)`](../uiresponder/touchesended%28_,with%29.md) method. Set this property to [`false`](../../Swift/false.md) to have touch objects in the [`UITouch.Phase.ended`](../uitouch/phase-swift.enum/ended.md) delivered to the view while the gesture recognizer is analyzing the same touches.
 

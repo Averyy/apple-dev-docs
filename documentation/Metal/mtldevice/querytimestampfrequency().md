@@ -25,7 +25,7 @@ func queryTimestampFrequency() -> UInt64
 - (uint64_t) queryTimestampFrequency;
 ```
 
-#### Return Value
+## Return Value
 
 The frequency of the GPU timestamp in ticks per second.
 

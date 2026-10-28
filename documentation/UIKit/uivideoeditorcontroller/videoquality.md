@@ -21,7 +21,7 @@ var videoQuality: UIImagePickerController.QualityType { get set }
 @property (nonatomic) UIImagePickerControllerQualityType videoQuality;
 ```
 
-#### Discussion
+## Discussion
 
 The available video qualities are described in the [`UIImagePickerController.QualityType`](../uiimagepickercontroller/qualitytype.md) enumeration. The default value for this property is [`UIImagePickerController.QualityType.typeLow`](../uiimagepickercontroller/qualitytype/typelow.md).
 

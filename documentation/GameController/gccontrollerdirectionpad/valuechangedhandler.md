@@ -24,7 +24,7 @@ var valueChangedHandler: GCControllerDirectionPadValueChangedHandler? { get set 
 @property (nonatomic, copy, nullable) GCControllerDirectionPadValueChangedHandler valueChangedHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Set this handler to receive notifications when the user changes a direction value.
 

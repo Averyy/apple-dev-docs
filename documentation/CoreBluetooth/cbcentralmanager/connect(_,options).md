@@ -25,7 +25,7 @@ func connect(_ peripheral: CBPeripheral, options: [String : Any]? = nil)
 - (void) connectPeripheral:(CBPeripheral *) peripheral options:(NSDictionary<NSString *,id> *) options;
 ```
 
-#### Discussion
+## Discussion
 
 After successfully establishing a local connection to a peripheral, the central manager object calls the [`centralManager(_:didConnect:)`](../cbcentralmanagerdelegate/centralmanager%28_,didconnect%29.md) method of its delegate object. If the connection attempt fails, the central manager object calls the [`centralManager(_:didFailToConnect:error:)`](../cbcentralmanagerdelegate/centralmanager%28_,didfailtoconnect,error%29.md) method of its delegate object instead. Attempts to connect to a peripheral don’t time out. To explicitly cancel a pending connection to a peripheral, call the [`cancelPeripheralConnection(_:)`](./cancelperipheralconnection%28_%29.md) method. Deallocating `peripheral` also implicitly calls [`cancelPeripheralConnection(_:)`](./cancelperipheralconnection%28_%29.md).
 

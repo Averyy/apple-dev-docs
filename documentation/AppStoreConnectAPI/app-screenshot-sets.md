@@ -5,7 +5,7 @@
 
 Create sets of app screenshots to upload to App Store Connect.
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  This resource is deprecated. Use the [App Asset Library](./app-asset-library.md) and [placements](./app-asset-library-placements.md) instead.
 

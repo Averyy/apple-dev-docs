@@ -13,8 +13,8 @@ An array of output ports available for audio routing in the current session.
 ## Declaration
 
 ```swift
-@objc
-(availableOutputs) var availableOutputs: Array<AVAudioSessionPortDescription> { get }
+@objc(availableOutputs)
+var availableOutputs: Array<AVAudioSessionPortDescription> { get }
 ```
 
 ## See Also

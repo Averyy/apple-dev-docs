@@ -20,11 +20,11 @@ Subscribes to an event type, optionally limited to a specific component type for
 func subscribe<E>(to event: E.Type, componentType: (any Component.Type)? = nil, _ handler: @escaping (E) -> Void) -> EventSubscription where E : Event
 ```
 
-#### Return Value
+## Return Value
 
 An object that represents the subscription to this event stream.
 
-#### Discussion
+## Discussion
 
 Events you can subscribe to including scene updates, [`SceneEvents.Update`](../sceneevents/update.md), or when an animation ends, [`AnimationEvents.PlaybackCompleted`](../animationevents/playbackcompleted.md).
 

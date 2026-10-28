@@ -24,11 +24,11 @@ var documentAttributes: [AnyHashable : Any]? { get set }
 @property (nonatomic, copy, nullable) NSDictionary * documentAttributes;
 ```
 
-#### Return Value
+## Return Value
 
 The dictionary of document metadata. The dictionary may be empty, or only some of the keys may have associated values.
 
-#### Discussion
+## Discussion
 
 Metadata is optional for PDF documents.
 

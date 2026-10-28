@@ -15,7 +15,7 @@ The structure for the billboard alternative configuration compatibility device c
 struct IOUSBDeviceCapabilityBillboardAltConfigCompatibility;
 ```
 
-#### Overview
+## Overview
 
 See USB Billboard 3.1.6.2: Billboard Capability Descriptor V1.2.
 

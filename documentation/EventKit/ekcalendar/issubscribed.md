@@ -24,7 +24,7 @@ var isSubscribed: Bool { get }
 @property (nonatomic, readonly, getter=isSubscribed) BOOL subscribed;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the calendar is a subscribed calendar; otherwise it is not.
 

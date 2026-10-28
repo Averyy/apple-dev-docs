@@ -33,7 +33,7 @@ var icon: UNNotificationActionIcon? { get }
 @property (atomic, copy, readonly, nullable) UNNotificationActionIcon * icon;
 ```
 
-#### Discussion
+## Discussion
 
 The system displays this icon in the notification interface to help the user identify the app associated with the action.
 

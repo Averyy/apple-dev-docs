@@ -17,7 +17,7 @@ The amount of the purchase or refund in the specified currency.
 let amount: Decimal
 ```
 
-#### Discussion
+## Discussion
 
 The value in this property must be greater than 0.
 

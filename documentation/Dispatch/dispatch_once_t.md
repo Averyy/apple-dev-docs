@@ -21,7 +21,7 @@ A predicate for use with the `dispatch_once` function.
 typedef intptr_t dispatch_once_t;
 ```
 
-#### Discussion
+## Discussion
 
 Variables of this type must have global or static scope.  The result of using this type with automatic or dynamic allocation is undefined. See [`dispatch_get_global_queue`](./dispatch_get_global_queue.md) for details.
 

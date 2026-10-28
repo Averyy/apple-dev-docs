@@ -20,7 +20,7 @@ A textual name that identifies the particular property that animates.
 var bindTarget: BindTarget { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The property name is a key path. For more information on key paths, see [Key-Path Expressions](../../Swift/key-path-expressions.md).
 

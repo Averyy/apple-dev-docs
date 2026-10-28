@@ -31,7 +31,7 @@ func presentCodeRedemptionSheet()
 - [Supporting offer codes in your app](../supporting-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](../supporting-subscription-offer-codes-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 The [`presentCodeRedemptionSheet()`](./presentcoderedemptionsheet%28%29.md) function displays a system sheet where customers can enter and redeem offer codes. If you generate offer codes in App Store Connect, call this function to enable customers to redeem the offer. For information on implementing offer codes, see [Implementing offer codes in your app](../implementing-offer-codes-in-your-app.md).
 

@@ -18,7 +18,7 @@ Binds a buffer slice to the slot at the given index.
 final func setBufferSlice(_ bufferSlice: LowLevelBufferSlice, at index: Int) throws(LowLevelRenderContextError)
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: [`LowLevelRenderContextError`](../lowlevelrendercontexterror.md) if `index` is out of range or `bufferSlice` is incompatible with the slot.
 

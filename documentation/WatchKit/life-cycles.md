@@ -4,7 +4,7 @@
 
 Receive and respond to life-cycle notifications.
 
-#### Overview
+## Overview
 
 The system reports changes in your app’s execution state to your SwiftUI environment and your extension delegate object. State changes correspond to major events in the lifetime of your app, such as the app launching or moving into the background. Use the state changes to trigger relevant tasks, such as loading shared resources and configuring your initial user interface. The table below shows the possible states and their implications for your app.
 
@@ -18,7 +18,7 @@ The system reports changes in your app’s execution state to your SwiftUI envir
 
 For more information, see [Handling Common State Transitions](./handling-common-state-transitions.md).
 
-##### Receive background information
+### Receive background information
 
 When the system receives background data, it may not immediately wake the watchOS app to process that data. Instead, it may delay delivery of the data to preserve battery life.
 

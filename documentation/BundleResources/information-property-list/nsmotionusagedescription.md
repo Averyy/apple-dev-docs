@@ -17,7 +17,7 @@ A message that tells people why the app is requesting access to the device’s m
 - **Name**: `NSMotionUsageDescription` (Privacy - Motion Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the device’s motion data, including [`CMSensorRecorder`](../../CoreMotion/cmsensorrecorder.md), [`CMPedometer`](../../CoreMotion/cmpedometer.md), [`CMMotionActivityManager`](../../CoreMotion/cmmotionactivitymanager.md), and [`CMMovementDisorderManager`](../../CoreMotion/cmmovementdisordermanager.md). If you don’t include this key, your app will crash when it attempts to access motion data.
 

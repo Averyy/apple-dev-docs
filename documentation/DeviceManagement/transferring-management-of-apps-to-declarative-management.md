@@ -5,11 +5,11 @@
 
 Transition apps to declarative management.
 
-#### Overview
+## Overview
 
 A device management service can transfer management of an MDM-managed app to declarative management. With this feature, you can seamlessly transition to declarative management and not have to remove the app before managing it again.
 
-#### Transfer app management
+## Transfer app management
 
 To transfer management of an existing MDM-managed app, a device management service provides a [`AppManaged`](./appmanaged.md) configuration to the device. If the app is from the App Store, the service sets the configuration’s `AppStoreID` or `BundleID` key to match the app. If the app is an enterprise app, the service sets the configuration’s `ManifestURL` key to the same manifest document URL from the MDM [`Install Application`](./install-application-command.md) command that installed the app. The device takes over management of the app when it applies the configuration.
 

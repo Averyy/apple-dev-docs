@@ -25,7 +25,7 @@ func fill(_ rect: CGRect)
 extern void CGContextFillRect(CGContextRef c, CGRect rect);
 ```
 
-#### Discussion
+## Discussion
 
 The current path is cleared as a side effect of calling this function.
 

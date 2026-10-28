@@ -19,7 +19,7 @@ protocol RenameHandler : NSObjectProtocol
 @protocol FSVolumeRenameHandler <NSObject>
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**: This protocol replaces the [`FSVolume.RenameOperations`](./renameoperations.md) protocol. It exposes the same functionality, while using the [`FSVolumeRenameResult`](../fsvolumerenameresult.md) object, to align with all other `Handler` protocols.
 

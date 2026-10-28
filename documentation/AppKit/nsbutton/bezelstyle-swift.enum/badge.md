@@ -19,7 +19,7 @@ case badge
 NSBezelStyleBadge
 ```
 
-#### Discussion
+## Discussion
 
 Use this style of button when you need to provide additional information about something. For example, the count of an item.
 

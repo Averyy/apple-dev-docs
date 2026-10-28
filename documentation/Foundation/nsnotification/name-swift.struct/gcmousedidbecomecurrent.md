@@ -20,7 +20,7 @@ A notification that posts when a mouse becomes the most recent mouse that the us
 static let GCMouseDidBecomeCurrent: NSNotification.Name
 ```
 
-#### Discussion
+## Discussion
 
 The notification object is a [`GCMouse`](../../../GameController/gcmouse.md) object that represents the current mouse. For example, set the mouse input change handlers when you receive this notification.
 

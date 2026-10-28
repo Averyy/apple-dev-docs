@@ -21,11 +21,11 @@ init(image: UIImage)
 - (instancetype) initWithImage:(UIImage *) image;
 ```
 
-#### Return Value
+## Return Value
 
 A message compose button with the custom image.
 
-#### Discussion
+## Discussion
 
 > **Note**:  This button type does not use a handler. Instead, tapping this button activates Siri and initiates the compose message flow.
 

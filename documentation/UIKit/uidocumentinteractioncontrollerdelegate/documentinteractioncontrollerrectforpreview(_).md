@@ -22,11 +22,11 @@ optional func documentInteractionControllerRectForPreview(_ controller: UIDocume
 - (CGRect) documentInteractionControllerRectForPreview:(UIDocumentInteractionController *) controller;
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle in the coordinate system of the view returned by the [`documentInteractionControllerViewForPreview(_:)`](./documentinteractioncontrollerviewforpreview%28_%29.md) method.
 
-#### Discussion
+## Discussion
 
 If you do not implement the [`documentInteractionControllerViewForPreview(_:)`](./documentinteractioncontrollerviewforpreview%28_%29.md) method, or if you do implement it but return a `nil` value, this method is not called. If you do not implement this method, the starting rectangle is assumed to be the bounds of the view returned by the [`documentInteractionControllerViewForPreview(_:)`](./documentinteractioncontrollerviewforpreview%28_%29.md) method.
 

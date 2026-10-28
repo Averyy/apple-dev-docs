@@ -28,7 +28,7 @@ struct ConfigValue
 
 - [Handling secrets correctly](./handling-secrets-correctly.md)
 
-#### Overview
+## Overview
 
 Configuration values pair raw content with a flag indicating whether the value contains sensitive information. Secret values are protected from accidental disclosure in logs and debug output:
 

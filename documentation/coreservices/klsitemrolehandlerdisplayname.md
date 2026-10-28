@@ -20,7 +20,7 @@ let kLSItemRoleHandlerDisplayName: CFString!
 const CFStringRef kLSItemRoleHandlerDisplayName;
 ```
 
-#### Discussion
+## Discussion
 
 Instead of using this constant, resolve the desired role handler for the file, then use the URL resource property [`kCFURLLocalizedNameKey`](../CoreFoundation/kcfurllocalizednamekey.md)/[`localizedNameKey`](../Foundation/urlresourcekey/localizednamekey.md) on the role handler's URL.
 

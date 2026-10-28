@@ -23,7 +23,7 @@ var tetheredCaptureEnabled: Bool { get }
 @property (nonatomic, readonly) BOOL tetheredCaptureEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`requestEnableTethering()`](./requestenabletethering%28%29.md) and [`requestDisableTethering()`](./requestdisabletethering%28%29.md) to enable or disable tethered capture.
 

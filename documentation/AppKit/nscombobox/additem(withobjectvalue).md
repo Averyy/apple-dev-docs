@@ -19,7 +19,7 @@ func addItem(withObjectValue object: Any)
 - (void) addItemWithObjectValue:(id) object;
 ```
 
-#### Discussion
+## Discussion
 
 This method logs a warning if the [`usesDataSource`](./usesdatasource.md) property is [`true`](../../Swift/true.md).
 

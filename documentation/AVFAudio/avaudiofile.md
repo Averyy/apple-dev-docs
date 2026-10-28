@@ -25,7 +25,7 @@ class AVAudioFile
 @interface AVAudioFile : NSObject
 ```
 
-#### Overview
+## Overview
 
 Regardless of the file format, you read and write using [`AVAudioPCMBuffer`](./avaudiopcmbuffer.md) objects. These objects contain samples as [`AVAudioCommonFormat`](./avaudiocommonformat.md) that the framework refers to as the file’s processing format. You convert to and from using the file’s actual format.
 

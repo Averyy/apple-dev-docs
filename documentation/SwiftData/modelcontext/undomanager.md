@@ -22,7 +22,7 @@ The object that provides undo support for the context.
 var undoManager: UndoManager? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Assign an instance of [`UndoManager`](../../Foundation/undomanager.md) to this property to enable undo support for the context. The undo manager can be exclusive to the context, or an existing manager should you want to integrate this context’s undo operations with those of the rest of your app.
 

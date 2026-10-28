@@ -19,7 +19,7 @@ var allowedTypes: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * allowedTypes;
 ```
 
-#### Discussion
+## Discussion
 
 The `allowedTypes` array can contain file extensions (without the period that begins the extension) or UTIs. To allow folders, include the `public.folder` identifier. To allow any type, use `nil`. If the value of `allowedTypes` is an empty array, nothing is allowed. The default value is `nil`, allowing all types.
 

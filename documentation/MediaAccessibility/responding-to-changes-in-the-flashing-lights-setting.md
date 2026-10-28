@@ -12,7 +12,7 @@ Adjust your UI when a person chooses to dim flashing lights on their Apple devic
 - Mac Catalyst 16.4+
 - Xcode 14.3+
 
-#### Overview
+## Overview
 
 Dim Flashing Lights is a setting that allows a person to indicate that they want to avoid bright, frequent flashes of light on their Apple device. When a person turns on this setting, the device automatically dims video content when the system detects flashing or strobing effects.
 
@@ -20,13 +20,13 @@ In your app, you can check the current value of this setting and make any necess
 
 > ❗ **Important**: This sample code project includes a sample video that contains sequences of flashing effects.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 This sample code project relies on changes to a system setting. To observe a change in the sample app’s UI, change the value of the Dim Flashing Lights setting at any time, and return to the app to observe how the UI responds.
 
 To change the setting, open Settings > Accessibility > Motion and turn on Dim Flashing Lights.
 
-##### Play the video with dimmed flashing
+### Play the video with dimmed flashing
 
 With Dim Flashing Lights on, play the sample video in the video player. The sample app shows a custom media timeline below the video in the [`AVPlayer`](../AVFoundation/avplayer.md). This timeline annotates the segments of the sample video that present a high risk of flashing lights.
 
@@ -46,7 +46,7 @@ ForEach(videoFlashingTimes, id: \.self) { timeRange in
 
 When the video playback reaches one of those segments, the system automatically dims the video to reduce the flashing effects.
 
-##### Register for changes in the flashing lights setting
+### Register for changes in the flashing lights setting
 
 This sample app draws the custom media timeline only when the Dim Flashing Lights setting is on, which the app determines through a system notification. First, the app imports the [Media Accessibility](./MediaAccessibility.md) framework to interact with the API.
 
@@ -80,7 +80,7 @@ func dimFlashingLightsChanged(_ notification: Notification) {
 
 [View in Source](x-source-tag://SettingChanged)
 
-##### Draw the custom media timeline if the setting is on
+### Draw the custom media timeline if the setting is on
 
 When the app draws its UI, it checks the value of the current setting status, `dimFlashingLightsStatus`, to determine whether to draw the custom media timeline.
 

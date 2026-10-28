@@ -19,7 +19,7 @@ var allowsMultipleSelection: Bool { get set }
 @property BOOL allowsMultipleSelection;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the browser allows the user to select multiple items at once.
 

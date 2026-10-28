@@ -5,13 +5,13 @@
 
 Display the results of running a playground page's code in a persistent live view.
 
-#### Overview
+## Overview
 
 The always-on live view in Swift Playgrounds runs continuously as learners write and debug the code in the accompanying playground page. Because the code in the playground page may change continuously, the code you write for the always-on live view runs in a separate process so it isn't continuously restarting.
 
 Instances in a playground page can't communicate directly with instances in the always-on live view. Instead, you communicate asynchronously between the two parts of a playground by adopting a message-handling protocol and setting a delegate for a proxy object that mediates between the two processes.
 
-##### Configure the Always-On Live View
+### Configure the Always-On Live View
 
 You create the always-on live view by assigning a view or view controller to the global [`liveView`](./playgroundpage/api-1964506-liveview.md) for the current page.
 
@@ -34,7 +34,7 @@ button.setTitle("Always-on live view", for: .normal)
 PlaygroundPage.current.liveView = button
 ```
 
-##### Configure the Playground Page
+### Configure the Playground Page
 
 The always-on live view that you configure in `LiveView.swift` is visible to learner-facing code—code invoked from `main.swift`—as an instance of [`PlaygroundRemoteLiveViewProxy`](./playgroundremoteliveviewproxy.md). To receive messages from the always-on live view, you define a class to be that proxy's delegate.
 
@@ -59,7 +59,7 @@ guard let remoteView = PlaygroundPage.current.liveView as? PlaygroundRemoteLiveV
 remoteView.delegate = MessageHandler()
 ```
 
-##### Send and Receive Messages
+### Send and Receive Messages
 
 You send messages to the always-on live view by calling the [`send(_:)`](./playgroundremoteliveviewproxy/api-3029570-send.md) method on its proxy.
 

@@ -20,7 +20,7 @@ An object that contains the cloud identifier result from looking up a local iden
 @interface PHCloudIdentifierMapping : NSObject
 ```
 
-#### Overview
+## Overview
 
 The error property exhibits two common errors—[`PHPhotosError.Code.identifierNotFound`](./phphotoserror-swift.struct/code/identifiernotfound.md) and [`PHPhotosError.Code.multipleIdentifiersFound`](./phphotoserror-swift.struct/code/multipleidentifiersfound.md). When encountering multiple identifiers, use the error’s [`userInfo`](../Foundation/nserror/userinfo.md) property to retrieve a list of matched local identifiers. You can access them using [`PHLocalIdentifiersErrorKey`](./phlocalidentifierserrorkey.md).
 

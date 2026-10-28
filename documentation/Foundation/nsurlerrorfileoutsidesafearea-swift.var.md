@@ -21,7 +21,7 @@ An internal file operation failed.
 var NSURLErrorFileOutsideSafeArea: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 This error is never sent to third-party apps.
 

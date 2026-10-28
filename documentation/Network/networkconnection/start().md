@@ -23,7 +23,7 @@ final func start() -> Self
 
 Available when `ApplicationProtocol` conforms to `MultiplexProtocol`.
 
-#### Discussion
+## Discussion
 
 Start should only be called once on a connection, and multiple calls to start will be ignored.
 

@@ -18,7 +18,7 @@ Creates a standalone render context using resources prepared ahead of time.
 init(configuration: LowLevelRenderContextStandalone.Configuration, resources: LowLevelRenderContextStandalone.Resources) throws
 ```
 
-#### Discussion
+## Discussion
 
 Prefer this overload when sharing the same resources across multiple render contexts. To create a single context without prepared resources, use [`init(configuration:)`](./init%28configuration%29.md) instead.
 

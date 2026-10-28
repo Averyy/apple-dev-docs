@@ -23,7 +23,7 @@ var imageTitles: [String] { get }
 @property (nonatomic, copy, readonly) NSArray<NSString *> * imageTitles;
 ```
 
-#### Discussion
+## Discussion
 
 The @c text property of the image row item.
 

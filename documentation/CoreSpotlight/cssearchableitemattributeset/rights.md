@@ -23,7 +23,7 @@ var rights: String? { get set }
 @property (copy, nullable) NSString * rights;
 ```
 
-#### Discussion
+## Discussion
 
 Typically, this property contains a rights management statement for the media, or references a service that provides such information. Rights information often encompasses Intellectual Property Rights (IPR), copyright, and various property rights. If the `rights` property is absent, no assumptions can be made about the status of these and other rights with respect to the media.
 

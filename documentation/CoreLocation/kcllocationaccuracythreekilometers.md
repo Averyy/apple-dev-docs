@@ -25,7 +25,7 @@ let kCLLocationAccuracyThreeKilometers: CLLocationAccuracy
 extern const CLLocationAccuracy kCLLocationAccuracyThreeKilometers;
 ```
 
-#### Discussion
+## Discussion
 
 This level of accurate is available only if `isAuthorizedForPreciseLocation` is [`true`](../Swift/true.md).
 

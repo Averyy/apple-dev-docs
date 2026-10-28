@@ -25,11 +25,11 @@ class var nullDevice: FileHandle { get }
 @property (class, strong, readonly) NSFileHandle * fileHandleWithNullDevice;
 ```
 
-#### Return Value
+## Return Value
 
 A file handle associated with a null device.
 
-#### Discussion
+## Discussion
 
 You can use null-device file handles as “placeholders” for standard-device file handles or in collection objects to avoid exceptions and other errors resulting from messages being sent to invalid file handles. Read messages sent to a null-device file handle return an end-of-file indicator (an empty `NSData` object) rather than raise an exception. Write messages are no-ops, whereas [`fileDescriptor`](./filedescriptor.md) returns an illegal value. Other methods are no-ops or return “sensible” values.
 

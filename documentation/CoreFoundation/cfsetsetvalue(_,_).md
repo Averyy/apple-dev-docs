@@ -25,7 +25,7 @@ func CFSetSetValue(_ theSet: CFMutableSet!, _ value: UnsafeRawPointer!)
 extern void CFSetSetValue(CFMutableSetRef theSet, const void *value);
 ```
 
-#### Discussion
+## Discussion
 
 Depending on the implementation of the equal callback specified when creating `theSet`, the value that is replaced by `value` may not have the same pointer equality.
 

@@ -31,7 +31,7 @@ var completionUserActivity: NSUserActivity? { get set }
 @property (atomic, strong, readwrite, nullable) NSUserActivity * completionUserActivity;
 ```
 
-#### Discussion
+## Discussion
 
 Providing an object in this property lets the system know that it should prompt the user to open your app when the ride reaches the [`INRidePhase.completed`](../inridephase/completed.md) phase. In the user activity object, include any information needed to communicate what steps the user still needs to take. For example, you might include information to let your app know that payment is still required or that it should ask the user to provide feedback on the ride.
 

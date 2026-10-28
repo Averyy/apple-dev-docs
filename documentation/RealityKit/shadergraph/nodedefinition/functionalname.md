@@ -18,7 +18,7 @@ The name of the functional operation this definition implements.
 var functionalName: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Unlike [`name`](./name.md), the functional name omits type information and is shared by all definitions that implement the same operation across different types. For example, `ND_atan2_float` and `ND_atan2_vector2` both have the functional name `"atan2"`.
 

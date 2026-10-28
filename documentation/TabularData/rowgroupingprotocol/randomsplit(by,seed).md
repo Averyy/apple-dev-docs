@@ -22,7 +22,7 @@ Generates two row groupings by randomly splitting the original by a proportion.
 func randomSplit(by proportion: Double, seed: Int?) -> (Self, Self)
 ```
 
-#### Return Value
+## Return Value
 
 A tuple of two data row grouping types.
 

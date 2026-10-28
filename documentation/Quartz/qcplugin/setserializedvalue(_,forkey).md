@@ -21,7 +21,7 @@ func setSerializedValue(_ serializedValue: Any!, forKey key: String!)
 - (void) setSerializedValue:(id) serializedValue forKey:(NSString *) key;
 ```
 
-#### Discussion
+## Discussion
 
 If your patch has internal settings that do not conform to the [`NSCoding`](../../Foundation/nscoding.md) protocol, you must implement this method. After you deserialize the value, you need to call  `[self set:value forKey:key]` to set the corresponding internal setting of the custom patch instance to the deserialized value.
 

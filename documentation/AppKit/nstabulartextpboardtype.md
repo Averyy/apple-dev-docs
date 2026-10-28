@@ -15,7 +15,7 @@ An `NSString` object containing tab-separated fields of text.
 extern NSPasteboardType NSTabularTextPboardType;
 ```
 
-#### Discussion
+## Discussion
 
 In macOS 10.6 and later, use [`tabularText`](./nspasteboard/pasteboardtype/tabulartext.md) instead.
 

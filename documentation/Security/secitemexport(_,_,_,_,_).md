@@ -19,11 +19,11 @@ func SecItemExport(_ secItemOrArray: CFTypeRef, _ outputFormat: SecExternalForma
 OSStatus SecItemExport(CFTypeRef secItemOrArray, SecExternalFormat outputFormat, SecItemImportExportFlags flags, const SecItemImportExportKeyParameters *keyParams, CFDataRef*exportedData);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 This function works only with keys, certificates, and identities. An identity is the combination of a certificate and its associated private key. Although public keys are commonly stored in certificates, they can be stored separately in the keychain as well; for example, when you call the [`SecKeyCreatePair`](./seckeycreatepair.md) function to create a key pair, both the public and private keys are stored in the keychain. Use the [`SecKeychainSearchCopyNext`](./seckeychainsearchcopynext.md) function to find a key or certificate. Use the [`SecIdentitySearchCopyNext`](./secidentitysearchcopynext.md) function in the Certificate, Key, and Trust API to find an identity.
 

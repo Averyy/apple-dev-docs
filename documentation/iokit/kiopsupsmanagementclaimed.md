@@ -16,7 +16,7 @@ Claims UPS management for a third-party driver.
 #define kIOPSUPSManagementClaimed
 ```
 
-#### Discussion
+## Discussion
 
 kIOPSUPSManagementClaimed is obsolete. Do not use.
 

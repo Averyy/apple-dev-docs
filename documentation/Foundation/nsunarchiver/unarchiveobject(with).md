@@ -24,11 +24,11 @@ class func unarchiveObject(with data: Data) -> Any?
 + (id) unarchiveObjectWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 The object, or object graph, that was archived in `data`. Returns `nil` if `data` cannot be unarchived.
 
-#### Discussion
+## Discussion
 
 This method invokes [`init(forReadingWith:)`](./init%28forreadingwith%29.md) and [`decodeObject()`](../nscoder/decodeobject%28%29.md) to create a temporary `NSUnarchiver` object that decodes the object. If the archived object is the root of a graph of objects, the entire graph is unarchived.
 

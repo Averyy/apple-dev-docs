@@ -95,7 +95,7 @@ string PoiCategory
 - `Winery`
 - `Zoo`
 
-#### Discussion
+## Discussion
 
 - **Airport**: An airport.
 - **AirportGate**: A specific gate at an airport.

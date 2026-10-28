@@ -29,7 +29,7 @@ var currentRoute: AVAudioSessionRouteDescription { get }
 - [Responding to audio route changes](../responding-to-audio-route-changes.md)
 - [Routing audio to specific devices in multidevice sessions](../routing-audio-to-specific-devices-in-multidevice-sessions.md)
 
-#### Discussion
+## Discussion
 
 An audio route is an electronic pathway for audio signals. Inspect the state of device audio routes and configure your preferred input and output route settings.
 

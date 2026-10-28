@@ -19,7 +19,7 @@ The margins between the content and the edges of the content view.
 @property (nonatomic) NSDirectionalEdgeInsets directionalLayoutMargins;
 ```
 
-#### Discussion
+## Discussion
 
 When you preserve superview layout margins on one or both axes, this value specifies the minimum margins. The inherited margins may be larger.
 

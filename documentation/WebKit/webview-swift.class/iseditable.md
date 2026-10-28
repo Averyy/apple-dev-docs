@@ -19,7 +19,7 @@ var isEditable: Bool { get set }
 @property (nonatomic, getter=isEditable) BOOL editable;
 ```
 
-#### Discussion
+## Discussion
 
 [`true`](../../Swift/true.md) if the receiver allows the user to edit the HTML document, [`false`](../../Swift/false.md) if it doesn’t.
 

@@ -10,7 +10,7 @@ Desaturate a range of colors in an image with a multidimensional lookup table.
 - macOS 14.0+
 - Xcode 15.2+
 
-#### Overview
+## Overview
 
 This sample code app allows you to desaturate the colors in an image based on their similarity to a selected color. For example, the image below shows an original image (left) and the transformed image (right) where the app has transformed the cake sprinkles that aren’t yellow to grayscale.
 
@@ -18,7 +18,7 @@ This sample code app allows you to desaturate the colors in an image based on th
 
 Before exploring the code, try building and running the app to familiarize yourself with the effect of the different transformations on the image. In the app, click the smaller image to select a color and the app displays the transformed result as the larger image.
 
-##### Create the lookup table data
+### Create the lookup table data
 
 The multidimensional lookup table that this sample code project uses is a 3D cube with `entriesPerChannel` values along each axis.
 
@@ -72,7 +72,7 @@ for red in ramp {
 
 For more information about creating multidimensional lookup table data, see [Applying color transforms to images with a multidimensional lookup table](./applying-color-transforms-to-images-with-a-multidimensional-lookup-table.md).
 
-##### Create the multidimensional lookup
+### Create the multidimensional lookup
 
 The [`vImage.MultidimensionalLookupTable`](./vimage/multidimensionallookuptable.md) structure uses the lookup table to transform the source image, either desaturating or darkening colors that aren’t close to the selected target color.
 
@@ -93,7 +93,7 @@ lookupTable.apply(sources: rgbSourceBuffers,
 
 The three destination planar buffers contain the transformed image.
 
-##### Create a Core Graphics image
+### Create a Core Graphics image
 
 The code below interleaves the three planar buffers into a single RGB buffer. Finally, the [`makeCGImage(cgImageFormat:)`](./vimage/pixelbuffer/makecgimage%28cgimageformat%29.md) function returns a Core Graphics image that the app displays in the user interface.
 

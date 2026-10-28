@@ -24,7 +24,7 @@ class UIMotionEffectGroup
 @interface UIMotionEffectGroup : UIMotionEffect
 ```
 
-#### Overview
+## Overview
 
 This class behaves similarly to the [`CAAnimationGroup`](../QuartzCore/caanimationgroup.md) class in Core Animation. The key paths and values returned by each motion effect object are applied simultaneously and with the same timing. Because [`UIMotionEffectGroup`](./uimotioneffectgroup.md) is a subclass of [`UIMotionEffect`](./uimotioneffect.md), you can treat it like a single motion effect in your code. After setting a value for the [`motionEffects`](./uimotioneffectgroup/motioneffects.md) property, add the group object to one or more of your views.
 

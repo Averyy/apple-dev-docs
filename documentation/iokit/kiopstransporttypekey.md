@@ -16,7 +16,7 @@ CFDictionary key for the current power source's data transport type (e.g. the me
 #define kIOPSTransportTypeKey
 ```
 
-#### Discussion
+## Discussion
 
 - Apple-defined power sources will publish this key.
 - A value of [`kIOPSInternalType`](./kiopsinternaltype.md) describes an internal power source.

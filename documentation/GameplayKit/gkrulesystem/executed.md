@@ -24,7 +24,7 @@ var executed: [GKRule] { get }
 @property (nonatomic, retain, readonly) NSArray<GKRule *> * executed;
 ```
 
-#### Discussion
+## Discussion
 
 When you call the [`evaluate()`](./evaluate%28%29.md) method, the system considers each rule in the [`agenda`](./agenda.md) list in order. If a rule on the agenda is satisfied—that is, its predicate returns [`true`](../../Swift/true.md) and it executes its action—the system moves that rule to the [`executed`](./executed.md) list.
 

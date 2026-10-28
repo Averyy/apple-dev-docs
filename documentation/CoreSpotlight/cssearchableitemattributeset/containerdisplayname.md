@@ -23,7 +23,7 @@ var containerDisplayName: String? { get set }
 @property (copy, nullable) NSString * containerDisplayName;
 ```
 
-#### Discussion
+## Discussion
 
 For example, a container display name might be the title of a series of books. When you specify the containment properties, Spotlight can treat individual items as part of an ordered set.
 

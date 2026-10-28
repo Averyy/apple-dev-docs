@@ -21,7 +21,7 @@ Computes the softmax of the specified tensor along the specified axis.
 func softmax(alongAxis axis: Int = -1) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 A new tensor with the same shape and scalar type.
 

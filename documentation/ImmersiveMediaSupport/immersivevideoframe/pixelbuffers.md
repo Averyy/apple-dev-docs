@@ -13,8 +13,8 @@ An array of pixel buffers associated with this immersive frame.
 ## Declaration
 
 ```swift
-nonisolated
-(unsafe) let pixelBuffers: [CVPixelBuffer]
+nonisolated(unsafe)
+let pixelBuffers: [CVPixelBuffer]
 ```
 
 

@@ -24,7 +24,7 @@ func unregisterForPreviewing(withContext previewing: any UIViewControllerPreview
 - (void) unregisterForPreviewingWithContext:(id<UIViewControllerPreviewing>) previewing;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method automatically when a 3D Touch-registered view controller is deallocated.
 

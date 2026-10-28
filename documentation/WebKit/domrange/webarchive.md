@@ -19,7 +19,7 @@ var webArchive: WebArchive! { get }
 @property (nonatomic, strong, readonly) WebArchive * webArchive;
 ```
 
-#### Discussion
+## Discussion
 
 Falls within the specified DOM range.
 

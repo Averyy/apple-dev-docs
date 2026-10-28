@@ -22,7 +22,7 @@ func deleteHistory(for url: URL)
 - (void) deleteHistoryForURL:(NSURL *) url;
 ```
 
-#### Discussion
+## Discussion
 
 The framework references the entire URL to determine which web-usage data to delete.
 

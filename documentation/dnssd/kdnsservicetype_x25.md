@@ -23,7 +23,7 @@ var kDNSServiceType_X25: Int { get }
 kDNSServiceType_X25
 ```
 
-#### Discussion
+## Discussion
 
 X_25 calling address.
 

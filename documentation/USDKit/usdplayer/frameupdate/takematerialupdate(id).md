@@ -20,7 +20,7 @@ Consumes and returns the [`USDPlayer.MaterialData.Update`](../materialdata/updat
 mutating func takeMaterialUpdate(id: USDPlayer.MaterialID) -> USDPlayer.MaterialData.Update?
 ```
 
-#### Discussion
+## Discussion
 
 Returns `nil` if not present.
 

@@ -20,7 +20,7 @@ let kSecCodeInfoFormat: CFString
 extern CFStringRef const kSecCodeInfoFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The value is a [`CFString`](../CoreFoundation/cfstring.md) object.
 

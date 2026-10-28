@@ -25,7 +25,7 @@ convenience init(path: CGPath, centered: Bool)
 + (instancetype) shapeNodeWithPath:(CGPathRef) path centered:(BOOL) centered;
 ```
 
-#### Return Value
+## Return Value
 
 A new shape node.
 

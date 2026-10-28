@@ -22,7 +22,7 @@ var preferredPresentationStyle: NSItemProvider.PreferredPresentationStyle { get 
 @property (nonatomic) UIPreferredPresentationStyle preferredPresentationStyle;
 ```
 
-#### Discussion
+## Discussion
 
 The default preferred presentation style is `unspecified`.
 

@@ -20,7 +20,7 @@ A material that makes the mesh part a portal to a different world.
 struct PortalMaterial
 ```
 
-#### Overview
+## Overview
 
 You use a `PortalMaterial` with [`PortalComponent`](./portalcomponent.md) and [`WorldComponent`](./worldcomponent.md) to enable portal features.
 

@@ -21,7 +21,7 @@ A convenience method that creates and raises an exception.
 + (void) raise:(NSExceptionName) name format:(NSString *) format;
 ```
 
-#### Discussion
+## Discussion
 
 The user-defined information is `nil` for the generated exception object.
 

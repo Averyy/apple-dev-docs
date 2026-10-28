@@ -24,7 +24,7 @@ optional func prerollForRendering(using renderHint: AVVideoCompositionRenderHint
 - (void) prerollForRenderingUsingHint:(AVVideoCompositionRenderHint *) renderHint;
 ```
 
-#### Discussion
+## Discussion
 
 The AVFoundation framework may perform prerolling to load media data to prime the render pipelines for smoother playback. This method is called in the prerolling phase so that the compositor can load composition resources, such as overlay images, that will be needed as soon as the playback starts.
 

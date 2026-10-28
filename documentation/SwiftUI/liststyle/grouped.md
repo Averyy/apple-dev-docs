@@ -22,7 +22,7 @@ static var grouped: GroupedListStyle { get }
 
 Available when `Self` is `GroupedListStyle`.
 
-#### Discussion
+## Discussion
 
 On iOS, the grouped list style displays a larger header and footer than the [`plain`](./plain.md) style, which visually distances the members of different sections.
 

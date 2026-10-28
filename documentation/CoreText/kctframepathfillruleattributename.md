@@ -25,7 +25,7 @@ let kCTFramePathFillRuleAttributeName: CFString
 extern CFStringRef const kCTFramePathFillRuleAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value must be a [`CFNumber`](../CoreFoundation/cfnumber.md) object containing a [`CTFramePathFillRule`](./ctframepathfillrule.md) constant. The default value is [`CTFramePathFillRule.evenOdd`](./ctframepathfillrule/evenodd.md).
 

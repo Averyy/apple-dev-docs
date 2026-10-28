@@ -5,52 +5,52 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The iOS & iPadOS 15 SDK provides support to develop apps for iPhone, iPad, and iPod touch devices running iOS & iPadOS 15.1. The SDK comes bundled with Xcode 13. For information on the compatibility requirements for Xcode 13, see [Xcode 13 Release Notes](../Xcode-Release-Notes/xcode-13-release-notes.md).
 
-##### CoreData
+### CoreData
 
-###### Known Issues
+#### Known Issues
 
 - `NSExpression` immediately forbids certain operations that have significant side effects, like creating and destroying objects. Additionally, casting string class names into Class objects with `NSConstantValueExpression` is deprecated. (84017178)
 
   **Workaround:** Pass temporary objects to `NSExpression` in the context parameter of [`expressionValue(with:context:)`](../Foundation/nsexpression/expressionvalue%28with,context%29.md), or with `NSPredicate` as the `substitutionVariables` parameter of [`evaluate(with:substitutionVariables:)`](../Foundation/nspredicate/evaluate%28with,substitutionvariables%29.md). You can create a derived predicate with all the substitution variables replaced (bound), using [`withSubstitutionVariables(_:)`](../Foundation/nspredicate/withsubstitutionvariables%28_%29.md) on an existing `NSPredicate` so that code using the object can continue to use a simple `evaluate(with object: Any?)` invocation.
 
-##### Home
+### Home
 
-###### Known Issues
+#### Known Issues
 
 - The query for the connected admin list isn’t supported by Matter accessories. (82398328)
 - Matter accessory notifications don’t work. (82634464)
 
   **Workaround:** Relaunch the Home app to force a refresh of the Matter accessory state.
 
-##### SharePlay
+### SharePlay
 
-###### New Features
+#### New Features
 
 - SharePlay is now available in iOS 15.1, iPadOS 15.1, and tvOS 15.1. You can submit your apps that support SharePlay now. It’s also enabled in macOS 12.1 beta, so you can build SharePlay experiences across Apple platforms using the  [Group Activities](../GroupActivities/GroupActivities.md) entitlement, without the need for the SharePlay Development Profile.
 
-##### SwiftUI
+### SwiftUI
 
-###### Known Issues
+#### Known Issues
 
 - The [`BorderedButtonStyle`](../SwiftUI/borderedbuttonstyle.md) no longer has a default hover effect.
 
   **Workaround:** Use the [`HoverEffect`](../SwiftUI/hovereffect.md) modifier on the [`Button`](../SwiftUI/button.md). (81759097)
 
-##### Telephony
+### Telephony
 
-###### Known Issues
+#### Known Issues
 
 - Users might experience loss of audio during calls, followed by the call being dropped in some conditions. (83381816)
 
   **Workaround:** Toggle Airplane Mode on and off, or reboot.
 
-##### VoiceOver
+### VoiceOver
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Alarms now activate correctly in the Clock app. (82968832)
 

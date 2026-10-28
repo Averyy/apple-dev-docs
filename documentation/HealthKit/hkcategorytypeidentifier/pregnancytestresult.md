@@ -24,7 +24,7 @@ static let pregnancyTestResult: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierPregnancyTestResult;
 ```
 
-#### Discussion
+## Discussion
 
 Home pregnancy tests check for the presence of the human chorionic gonadotropin (hCG) hormone in a urine sample to determine if a person is pregnant.
 

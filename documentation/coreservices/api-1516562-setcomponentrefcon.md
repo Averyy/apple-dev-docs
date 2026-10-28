@@ -15,7 +15,7 @@ Sets the reference constant for your component.
 void SetComponentRefcon(Component aComponent, long theRefcon);
 ```
 
-#### Discussion
+## Discussion
 
 There is one reference constant for each component, regardless of the number of connections to that component. When your component is registered, the Component Manager sets this reference constant to 0.
 

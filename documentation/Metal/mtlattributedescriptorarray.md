@@ -24,7 +24,7 @@ class MTLAttributeDescriptorArray
 @interface MTLAttributeDescriptorArray : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`MTLAttributeDescriptorArray`](./mtlattributedescriptorarray.md) defines the data format and index binding for the attribute argument table, using [`MTLAttributeDescriptor`](./mtlattributedescriptor.md) instances.
 

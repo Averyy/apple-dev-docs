@@ -17,7 +17,7 @@ Could not find a tool with the given name.
 case toolNotFound(name: String)
 ```
 
-#### Discussion
+## Discussion
 
 This could be either because it doesn’t exist, or because the plugin doesn’t have a dependency on it.
 

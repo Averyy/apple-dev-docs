@@ -15,7 +15,7 @@ The status of the configuration change.
 readonly status: ConfigurationChangeStatus;
 ```
 
-#### Discussion
+## Discussion
 
 For details on configuration change events, see [Handling initialization events](../handling-initialization-events.md).
 

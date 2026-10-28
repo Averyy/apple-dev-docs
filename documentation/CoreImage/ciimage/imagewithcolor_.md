@@ -20,7 +20,7 @@ Creates and returns an image of infinite extent whose entire content is the spec
 + (CIImage *) imageWithColor:(CIColor *) color;
 ```
 
-#### Return Value
+## Return Value
 
 The image object initialized with the color represented by the [`CIColor`](../cicolor.md) object.
 

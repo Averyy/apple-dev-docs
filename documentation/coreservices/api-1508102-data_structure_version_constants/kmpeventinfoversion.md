@@ -14,7 +14,7 @@
 kMPEventInfoVersion = 1L | (kOpaqueEventID << 16)
 ```
 
-#### Discussion
+## Discussion
 
 The `MPEventInfo` structure version.
 

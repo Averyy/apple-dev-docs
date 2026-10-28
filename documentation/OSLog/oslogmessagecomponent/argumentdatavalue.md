@@ -25,7 +25,7 @@ var argumentDataValue: Data? { get }
 @property (nonatomic, readonly, nullable) NSData * argumentDataValue;
 ```
 
-#### Discussion
+## Discussion
 
 The `argumentDataValue` property can be `nil` if the argument can’t be decoded. For example, redacted arguments and the last component can’t be decoded.
 

@@ -17,7 +17,7 @@ A C++ type that represents a set of unique values.
 protocol CxxUniqueSet<Element> : CxxSet where Self.InsertionResult : CxxPair, Self.RawMutableIterator == Self.InsertionResult.First, Self.InsertionResult.Second == Bool
 ```
 
-#### Overview
+## Overview
 
 C++ standard library types such as `std::set` and `std::unordered_set` conform to this protocol.
 

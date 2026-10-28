@@ -25,7 +25,7 @@ static let measurementSystem: NSLocale.Key
 extern NSLocaleKey const NSLocaleMeasurementSystem;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an `NSString` object containing a description of the measurement system used by the locale; for example, `"Metric"` or `"U.S."`.
 

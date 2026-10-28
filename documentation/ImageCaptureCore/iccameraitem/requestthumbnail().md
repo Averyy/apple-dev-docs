@@ -23,7 +23,7 @@ func requestThumbnail()
 - (void) requestThumbnail;
 ```
 
-#### Discussion
+## Discussion
 
 If a thumbnail is not readily available, accessing this property will send a message to the device requesting a thumbnail for the file. The delegate of the device will be notified via method [`cameraDevice(_:didReceiveThumbnail:for:error:)`](../iccameradevicedelegate/cameradevice%28_,didreceivethumbnail,for,error%29.md), if this method is implemented by the delegate. Execution of the delegate callback will occur on the main thread.
 

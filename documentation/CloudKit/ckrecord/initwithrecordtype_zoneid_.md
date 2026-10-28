@@ -21,11 +21,11 @@ Creates a record in the specified zone.
 - (instancetype) initWithRecordType:(CKRecordType) recordType zoneID:(CKRecordZoneID *) zoneID;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized record object.
 
-#### Discussion
+## Discussion
 
 Use this method to initialize a new record object in the specified record zone.
 

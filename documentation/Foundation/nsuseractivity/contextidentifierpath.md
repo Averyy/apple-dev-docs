@@ -23,7 +23,7 @@ var contextIdentifierPath: [String]? { get }
 @property (nonatomic, strong, readonly, nullable) NSArray<NSString *> * contextIdentifierPath;
 ```
 
-#### Discussion
+## Discussion
 
 If you receive an [`NSUserActivity`](../nsuseractivity.md) instance that has its [`isClassKitDeepLink`](./isclasskitdeeplink.md) property set to [`true`](../../Swift/true.md), then the activity’s [`contextIdentifierPath`](./contextidentifierpath.md) contains the identifier path of the context associated with the assignment that the user tapped to generate the user activity. See [Linking directly to assignments](../../ClassKit/linking-directly-to-assignments.md) for more information.
 

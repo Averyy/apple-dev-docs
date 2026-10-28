@@ -29,7 +29,7 @@ var tokenIDs: [String] { get }
 
 - [Using Cryptographic Assets Stored on a Smart Card](../using-cryptographic-assets-stored-on-a-smart-card.md)
 
-#### Discussion
+## Discussion
 
 Each string in [`tokenIDs`](./tokenids.md) corresponds to the name of the token instance.
 

@@ -20,7 +20,7 @@ The content of the instructions, in natural language.
 var segments: [Transcript.Segment]
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Instructions are often provided in English even when the users interact with the model in another language.
 

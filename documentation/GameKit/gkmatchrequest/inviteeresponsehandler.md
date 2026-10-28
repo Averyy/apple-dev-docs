@@ -26,7 +26,7 @@ var inviteeResponseHandler: ((String, GKInviteeResponse) -> Void)? { get set }
 @property (copy, nullable) void (^)(NSString *, enum GKInviteRecipientResponse) inviteeResponseHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The block takes the following parameters:
 

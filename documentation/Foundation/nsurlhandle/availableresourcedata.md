@@ -17,7 +17,7 @@ Immediately returns the currently available resource data managed by the URL han
 - (NSData *) availableResourceData;
 ```
 
-#### Return Value
+## Return Value
 
 The currently available resource data managed by the URL handle. Returns `nil` if a previous attempt to load the data failed.
 

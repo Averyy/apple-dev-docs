@@ -19,7 +19,7 @@ Starts the reverse-geocoding process asynchronously.
 - (void) start;
 ```
 
-#### Discussion
+## Discussion
 
 You should call this method only once to begin the reverse-geocoding process. This method submits the coordinate value to the map server asynchronously and returns. Once the process is complete, the results are delivered to the associated delegate object.
 

@@ -23,7 +23,7 @@ class AVContentProposal
 
 - [Presenting content proposals in tvOS](./presenting-content-proposals-in-tvos.md)
 
-#### Overview
+## Overview
 
 A content proposal object models the data about the proposed content such as its title, preview image, presentation time, and content URL. You make a content proposal eligible for presentation by setting it as the [`nextContentProposal`](../AVFoundation/avplayeritem/nextcontentproposal.md) of the current [`AVPlayerItem`](../AVFoundation/avplayeritem.md).
 

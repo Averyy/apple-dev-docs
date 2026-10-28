@@ -25,7 +25,7 @@ func CGPDFArrayGetNumber(_ array: CGPDFArrayRef, _ index: Int, _ value: UnsafeMu
 extern bool CGPDFArrayGetNumber(CGPDFArrayRef array, size_t index, CGPDFReal *value);
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../Swift/true.md) if there is a PDF number at the specified index, otherwise [`false`](../Swift/false.md).
 

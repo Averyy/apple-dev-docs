@@ -24,11 +24,11 @@ func histogramSize(forSourceFormat sourceFormat: MTLPixelFormat) -> Int
 - (size_t) histogramSizeForSourceFormat:(MTLPixelFormat) sourceFormat;
 ```
 
-#### Return Value
+## Return Value
 
 The number of bytes needed to store the histogram results.
 
-#### Discussion
+## Discussion
 
 This convenience function calculates the minimum amount of space needed in the output histogram for the results. The buffer should be at least this length and longer if the `histogramOffset` value in the [`encode(to:sourceTexture:histogram:histogramOffset:)`](./encode%28to,sourcetexture,histogram,histogramoffset%29.md) method is non-zero.
 

@@ -32,7 +32,7 @@ var transportStateBlock: AUHostTransportStateBlock? { get set }
 @property (atomic, copy, nullable) AUHostTransportStateBlock transportStateBlock;
 ```
 
-#### Discussion
+## Discussion
 
 An audio unit accessing this property should cache it in realtime-safe storage before beginning to render.
 

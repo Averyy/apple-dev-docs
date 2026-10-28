@@ -5,19 +5,19 @@
 
 Save game data during play or after a game in the player’s iCloud account that’s accessible from any device.
 
-#### Overview
+## Overview
 
 GameKit provides a convenient method to save game data that needs to persist after the player quits the game. You can save game data to record a player’s progress, separate data for family members who use the same device, and support players who switch between devices. For example, let the player start your game on their iPhone, and then continue playing on their Mac when they arrive home. You can save just one game at a time using the same filename or multiple games by giving each game instance a unique filename.
 
 To save a game, the player must have an iCloud account and enable iCloud Drive in their iCloud settings. To save space in their account and improve performance in your game, minimize the amount of data you save.
 
-##### Provide a container identifier
+### Provide a container identifier
 
 For GameKit to store the game data in the player’s iCloud account, you need to provide an identifier for the iCloud container that stores the data. Add the iCloud capability to your project and select the iCloud Documents checkbox.
 
 For more information, see [Configuring iCloud services](../Xcode/configuring-icloud-services.md).
 
-##### Save a game
+### Save a game
 
 Decide what data to save to the file and encode it as a `Data` object. For example, create a structure containing the properties you want to save to the file that conforms to the [`Codable`](../Swift/codable.md) protocol. Then encode the structure using the [`PropertyListEncoder`](../Foundation/propertylistencoder.md) class.
 
@@ -33,7 +33,7 @@ do {
 }
 ```
 
-##### Fetch the saved games
+### Fetch the saved games
 
 Later, use the [`fetchSavedGames(completionHandler:)`](./gklocalplayer/fetchsavedgames%28completionhandler%29.md) method to retrieve all the saved games. This method returns an array of [`GKSavedGame`](./gksavedgame.md) objects that contain file properties, such as the filename and modification date. For example, you can use the results to present a list of the saved games to the player.
 
@@ -64,7 +64,7 @@ func load(game: GKSavedGame) async {
 
 Optionally, provide a similar interface for the player to remove saved games using the `GKLocalPlayer` [`deleteSavedGames(withName:completionHandler:)`](./gklocalplayer/deletesavedgames%28withname,completionhandler%29.md) method.
 
-##### Resolve conflicts
+### Resolve conflicts
 
 Occasionally, your game may need to resolve a conflict that occurs when the player saves game data from multiple devices using the same filename. For example, your game may present an interface that lets the player choose the correct game data or determine which data to keep based on some other criteria, such as the game with the highest score.
 

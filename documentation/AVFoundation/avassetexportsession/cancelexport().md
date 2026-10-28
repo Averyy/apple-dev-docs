@@ -26,7 +26,7 @@ func cancelExport()
 - (void) cancelExport;
 ```
 
-#### Discussion
+## Discussion
 
 Apple discourages the use of this symbol. Use [`cancel()`](../../Swift/task/cancel%28%29.md) on the [`Task`](../../Swift/task.md) or parent task that initiated the export instead.
 

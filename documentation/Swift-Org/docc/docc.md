@@ -10,7 +10,7 @@ framework: "Swift-Org/docc"
 
 Produce rich API reference documentation and interactive tutorials for your Swift framework or package.
 
-#### Overview
+## Overview
 
 The DocC documentation compiler converts Markdown-based text into rich documentation for Swift frameworks and packages. You can preview the documentation in its published form as you work on it, and also host it on a website when it’s complete.
 

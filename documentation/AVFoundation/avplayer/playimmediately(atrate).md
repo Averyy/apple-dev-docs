@@ -26,7 +26,7 @@ func playImmediately(atRate rate: Float)
 - (void) playImmediatelyAtRate:(float) rate;
 ```
 
-#### Discussion
+## Discussion
 
 This method plays the available media data at the specified `rate` regardless of whether there is sufficient media buffered to ensure smooth playback. If media data exists in the playback buffer, calling this method changes the player’s playback rate to the specified `rate` and its [`timeControlStatus`](./timecontrolstatus-swift.property.md) to a value of [`AVPlayer.TimeControlStatus.playing`](./timecontrolstatus-swift.enum/playing.md). If the player has insufficient media data buffered to begin playback, the player will behave as if it has encountered a stall during playback, except that no [`playbackStalledNotification`](../avplayeritem/playbackstallednotification.md) will be posted.
 

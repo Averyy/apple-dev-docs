@@ -22,7 +22,7 @@ struct Argument<Value>
 
 - [Declaring Arguments, Options, and Flags](./declaringarguments.md)
 
-#### Overview
+## Overview
 
 Use the `@Argument` wrapper to define a property of your custom command as a positional argument. A *positional argument* for a command-line tool is specified without a label and must appear in declaration order. `@Argument` properties with `Optional` type or a default value are optional for the user of your command-line tool.
 
@@ -56,22 +56,22 @@ Hi Tamara!
   Creates a property with no default value.
 - [init<T>(help: ArgumentHelp?, completion: CompletionKind?)](./argument/init%28help,completion%29-4p94d.md)
   Creates an optional property that reads its value from an argument.
-- [init(help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> Value)](./argument/init%28help,completion,transform%29-3fjtc.md)
+- [init(help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> Value)](./argument/init%28help,completion,transform%29-3fjtc.md)
   Creates a property with no default value, parsing with the given closure.
-- [init<T>(help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./argument/init%28help,completion,transform%29-7yn32.md)
+- [init<T>(help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./argument/init%28help,completion,transform%29-7yn32.md)
   Creates an optional property that reads its value from an argument.
 - [init(wrappedValue: Value, help: ArgumentHelp?, completion: CompletionKind?)](./argument/init%28wrappedvalue,help,completion%29-9yifn.md)
   Creates a property with a default value provided by standard Swift default value syntax.
-- [init(wrappedValue: Value, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> Value)](./argument/init%28wrappedvalue,help,completion,transform%29-667t1.md)
+- [init(wrappedValue: Value, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> Value)](./argument/init%28wrappedvalue,help,completion,transform%29-667t1.md)
   Creates a property with a default value provided by standard Swift default value syntax, parsing with the given closure.
 ### Array Arguments
 - [init<T>(parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./argument/init%28parsing,help,completion%29.md)
   Creates a property with no default value that reads an array from zero or more arguments.
-- [init<T>(parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./argument/init%28parsing,help,completion,transform%29.md)
+- [init<T>(parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./argument/init%28parsing,help,completion,transform%29.md)
   Creates a property with no default value that reads an array from zero or more arguments, parsing each element with the given closure.
 - [init<T>(wrappedValue: [T], parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?)](./argument/init%28wrappedvalue,parsing,help,completion%29.md)
   Creates a property that reads an array from zero or more arguments.
-- [init<T>(wrappedValue: [T], parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./argument/init%28wrappedvalue,parsing,help,completion,transform%29.md)
+- [init<T>(wrappedValue: [T], parsing: ArgumentArrayParsingStrategy, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./argument/init%28wrappedvalue,parsing,help,completion,transform%29.md)
   Creates a property that reads an array from zero or more arguments, parsing each element with the given closure.
 - [struct ArgumentArrayParsingStrategy](./argumentarrayparsingstrategy.md)
   The strategy to use when parsing multiple values from positional arguments into an array.
@@ -81,7 +81,7 @@ Hi Tamara!
 ### Initializers
 - [init<T>(wrappedValue: _OptionalNilComparisonType, help: ArgumentHelp?, completion: CompletionKind?)](./argument/init%28wrappedvalue,help,completion%29-1rfjo.md)
   This initializer allows a user to provide a `nil` default value for an optional `@Argument`-marked property without allowing a non-`nil` default value.
-- [init<T>(wrappedValue: _OptionalNilComparisonType, help: ArgumentHelp?, completion: CompletionKind?, transform: (String) throws -> T)](./argument/init%28wrappedvalue,help,completion,transform%29-84qu9.md)
+- [init<T>(wrappedValue: _OptionalNilComparisonType, help: ArgumentHelp?, completion: CompletionKind?, transform: @Sendable (String) throws -> T)](./argument/init%28wrappedvalue,help,completion,transform%29-84qu9.md)
   This initializer allows a user to provide a `nil` default value for an optional `@Argument`-marked property without allowing a non-`nil` default value.
 ### Default Implementations
 - [CustomStringConvertible Implementations](./argument/customstringconvertible-implementations.md)

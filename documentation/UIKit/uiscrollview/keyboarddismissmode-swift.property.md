@@ -22,7 +22,7 @@ var keyboardDismissMode: UIScrollView.KeyboardDismissMode { get set }
 @property (nonatomic) UIScrollViewKeyboardDismissMode keyboardDismissMode;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`UIScrollView.KeyboardDismissMode.none`](./keyboarddismissmode-swift.enum/none.md). See [`UIScrollView.KeyboardDismissMode`](./keyboarddismissmode-swift.enum.md) for possible values.
 

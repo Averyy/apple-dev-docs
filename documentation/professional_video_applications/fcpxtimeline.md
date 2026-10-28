@@ -19,7 +19,7 @@ class FCPXTimeline
 @interface FCPXTimeline : NSObject
 ```
 
-#### Overview
+## Overview
 
 For certain workflows, you will want to observe changes to the Final Cut Pro timeline and reflect those changes in the extension interface. Workflow extensions can use methods in this class to observe for state changes in the Final Cut Pro timeline. See [`add(_:)`](./fcpxtimeline/add%28_%29.md)/[`remove(_:)`](./fcpxtimeline/remove%28_%29.md) for details.
 

@@ -25,11 +25,11 @@ optional func fileManager(_ fileManager: FileManager, shouldRemoveItemAt URL: UR
 - (BOOL) fileManager:(NSFileManager *) fileManager shouldRemoveItemAtURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the specified item should be removed or [`false`](../../Swift/false.md) if it should not be removed.
 
-#### Discussion
+## Discussion
 
 Removed items are deleted immediately and not placed in the Trash. If the specified item is a directory, returning [`false`](../../Swift/false.md) prevents both the directory and its children from being deleted.
 

@@ -20,7 +20,7 @@ Notifies the view controller that its view is about to be added to a view hierar
 @preconcurrency override dynamic func viewWillAppear(_ animated: Bool)
 ```
 
-#### Discussion
+## Discussion
 
 SwiftUI calls this method before adding the hosting controller’s root view to the view hierarchy. You can override this method to perform custom tasks associated with the appearance of the view. If you override this method, you must call `super` at some point in your implementation.
 

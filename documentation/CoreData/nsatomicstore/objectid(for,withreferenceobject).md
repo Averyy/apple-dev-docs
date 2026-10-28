@@ -25,15 +25,15 @@ func objectID(for entity: NSEntityDescription, withReferenceObject data: Any) ->
 - (NSManagedObjectID *) objectIDForEntity:(NSEntityDescription *) entity referenceObject:(id) data;
 ```
 
-#### Return Value
+## Return Value
 
 The managed object ID from the reference data for a specified entity
 
-#### Discussion
+## Discussion
 
 You use this method to create managed object IDs which are then used to create cache nodes for information being loaded into the store.
 
-##### Special Considerations
+### Special Considerations
 
 You should not override this method.
 

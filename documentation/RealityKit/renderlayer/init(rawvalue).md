@@ -20,11 +20,11 @@ Creates a custom render layer with the specified runtime name.
 init?(rawValue: String)
 ```
 
-#### Return Value
+## Return Value
 
 A new render layer, or `nil` if `rawValue` is empty.
 
-#### Discussion
+## Discussion
 
 Use this failable initializer when the layer name comes from a runtime string, such as user input or data loaded from a file. To define a layer constant from a string literal, use [`init(_:)`](./init%28_%29.md) instead.
 

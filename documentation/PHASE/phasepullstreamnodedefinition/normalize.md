@@ -22,7 +22,7 @@ var normalize: Bool { get set }
 @property (nonatomic) BOOL normalize;
 ```
 
-#### Discussion
+## Discussion
 
 Determines whether or not the engine should normalize the stream. The default value is NO.
 

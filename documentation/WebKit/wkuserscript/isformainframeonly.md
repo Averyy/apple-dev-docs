@@ -23,7 +23,7 @@ var isForMainFrameOnly: Bool { get }
 @property (nonatomic, readonly, getter=isForMainFrameOnly) BOOL forMainFrameOnly;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the web view injects the script only into the main frame. When the value is [`false`](../../Swift/false.md), the web view injects the script into all frames.
 

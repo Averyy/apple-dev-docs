@@ -19,7 +19,7 @@ interface DirectionsResponse
 
 - [MapKit JS 5](./mapkit-js-5.md)
 
-#### Overview
+## Overview
 
 To get directions, create an instance of [`Directions`](./directions.md) and call the [`route()`](./directions/route.md) method.
 

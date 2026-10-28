@@ -22,7 +22,7 @@ nonisolated
 func accessibilityChildren<V>(@ContentBuilder children: () -> V) -> some View where V : View
 ```
 
-#### Discussion
+## Discussion
 
 Use this modifier to replace an existing element’s children with one or more new synthetic accessibility elements you provide. This allows for synthetic, non-visual accessibility elements to be set as children of a visual accessibility element.
 

@@ -23,7 +23,7 @@ init(userQueryString: String?, userQueryContext: CSUserQueryContext?)
 - (instancetype) initWithUserQueryString:(NSString *) userQueryString userQueryContext:(CSUserQueryContext *) userQueryContext;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized query object.
 

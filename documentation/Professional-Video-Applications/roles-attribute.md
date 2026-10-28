@@ -5,7 +5,7 @@
 
 Assign video, audio, title, and caption elements a role.
 
-#### Overview
+## Overview
 
 You can assign a role to a media component to distinguish the nature of the media component from other components. The `role` attribute format is: `main-role.sub-role`.
 

@@ -23,7 +23,7 @@ func addAction(_ action: UIAlertAction)
 - (void) addAction:(UIAlertAction *) action;
 ```
 
-#### Discussion
+## Discussion
 
 If your alert has multiple actions, the order in which you add those actions determines their order in the resulting alert or action sheet.
 

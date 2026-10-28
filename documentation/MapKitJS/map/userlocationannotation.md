@@ -15,7 +15,7 @@ An annotation that indicates the user’s location on the map.
 get userLocationAnnotation(): UserLocationAnnotation | null;
 ```
 
-#### Discussion
+## Discussion
 
 This is the annotation, or blue dot, that indicates the user’s location on the map. This property is `null` if:
 

@@ -29,7 +29,7 @@ class HKHealthStore
 - [Executing Observer Queries](./executing-observer-queries.md)
 - [Reading data from HealthKit](./reading-data-from-healthkit.md)
 
-#### Overview
+## Overview
 
 Use a [`HKHealthStore`](./hkhealthstore.md) object to request permission to share or read HealthKit data. People can grant your app full access to a data type, limited access restricted to a recent window of data, or no access at all. After requesting authorization, you can check the scope of your read access for specific data types before making queries. You can also use the HealthKit store to save new samples to the store, manage the samples that your app saves, and start, stop, and manage queries.
 

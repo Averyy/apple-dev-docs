@@ -21,7 +21,7 @@ Creates and returns a decimal number equivalent to the number specified by the a
 + (NSDecimalNumber *) decimalNumberWithMantissa:(unsigned long long) mantissa exponent:(short) exponent isNegative:(BOOL) flag;
 ```
 
-#### Discussion
+## Discussion
 
 The arguments express a number in a kind of scientific notation that requires the mantissa to be an integer. So, for example, if the number to be represented is `–12.345`, it is expressed as `12345x10^–3`—`mantissa` is `12345`; `exponent` is `–3`; and `flag` is [`true`](../../Swift/true.md), as illustrated by the following example.
 

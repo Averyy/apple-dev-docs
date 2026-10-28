@@ -21,7 +21,7 @@ static let textureTarget: CIImageOption
 extern CIImageOption const kCIImageTextureTarget;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key must be an [`NSNumber`](../../Foundation/nsnumber.md) object containing a supported OpenGL texture target constant, either `GL_TEXTURE_2D` or `GL_TEXTURE_RECTANGLE_ARB`. You may only use this key when initializing an image using the [`init(texture:size:flipped:options:)`](../ciimage/init%28texture,size,flipped,options%29.md) method.
 

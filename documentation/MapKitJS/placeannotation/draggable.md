@@ -15,7 +15,7 @@ A Boolean value that indicates whether the place annotation is draggable.
 get draggable(): boolean;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t set the draggable property of the place annotation. This property always returns `false`.
 

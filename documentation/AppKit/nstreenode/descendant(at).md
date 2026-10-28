@@ -19,7 +19,7 @@ func descendant(at indexPath: IndexPath) -> NSTreeNode?
 - (NSTreeNode *) descendantNodeAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 A tree node, or `nil` if the node does not exist.
 

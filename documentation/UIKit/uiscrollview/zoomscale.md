@@ -23,7 +23,7 @@ var zoomScale: CGFloat { get set }
 @property (nonatomic) CGFloat zoomScale;
 ```
 
-#### Discussion
+## Discussion
 
 This value determines how much the content is currently scaled. The default value is `1.0`.
 

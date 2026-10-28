@@ -22,7 +22,7 @@ var device: any MTLDevice { get }
 @property (nonatomic, retain, readonly) id<MTLDevice> device;
 ```
 
-#### Discussion
+## Discussion
 
 The device where the Metal Shading Language function will run
 

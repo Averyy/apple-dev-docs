@@ -21,7 +21,7 @@ An object that manages a memory-based data buffer and exposes it as a contiguous
 struct DispatchData
 ```
 
-#### Overview
+## Overview
 
 The memory buffer managed by this object may be a single contiguous block of memory, or it may consist of multiple discontiguous blocks. For the discontiguous case, the dispatch data object makes it appear as if the memory is contiguous.
 

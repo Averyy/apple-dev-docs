@@ -8,7 +8,7 @@ Display and manage connections to Bluetooth peripherals in Swift Playgrounds.
 **Availability**:
 - Swift Playgrounds 2.0+
 
-#### Overview
+## Overview
 
 The PlaygroundBluetooth framework provides a common interface that you use to display and manage connections to Bluetooth peripherals from the framework’s central manager within a playground page.
 

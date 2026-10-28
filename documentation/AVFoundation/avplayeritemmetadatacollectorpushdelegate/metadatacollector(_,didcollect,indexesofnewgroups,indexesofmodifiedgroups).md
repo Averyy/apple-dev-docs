@@ -26,7 +26,7 @@ func metadataCollector(_ metadataCollector: AVPlayerItemMetadataCollector, didCo
 - (void) metadataCollector:(AVPlayerItemMetadataCollector *) metadataCollector didCollectDateRangeMetadataGroups:(NSArray<AVDateRangeMetadataGroup *> *) metadataGroups indexesOfNewGroups:(NSIndexSet *) indexesOfNewGroups indexesOfModifiedGroups:(NSIndexSet *) indexesOfModifiedGroups;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when additions or modifications are made to the array of collected metadata groups. The initial invocation will have `indexesOfNewGroup` referring to every index in `metadataGroups`. Subsequent invocations may not contain all previously collected metadata groups if they no longer refer to a region in the player item’s [`seekableTimeRanges`](../avplayeritem/seekabletimeranges.md).
 

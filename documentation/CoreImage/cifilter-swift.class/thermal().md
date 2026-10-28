@@ -24,11 +24,11 @@ class func thermal() -> any CIFilter & CIThermal
 + (CIFilter<CIThermal> *) thermalFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies a preconfigured set of effects that make it appear like a thermal camera captured the image.
 

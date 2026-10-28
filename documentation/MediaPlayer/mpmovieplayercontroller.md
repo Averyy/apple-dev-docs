@@ -23,7 +23,7 @@ class MPMoviePlayerController
 @interface MPMoviePlayerController : NSObject
 ```
 
-#### Overview
+## Overview
 
 > ❗ **Important**:  The [`MPMoviePlayerController`](./mpmovieplayercontroller.md) class is formally deprecated in iOS 9. (The [`MPMoviePlayerViewController`](./mpmovieplayerviewcontroller.md) class is also formally deprecated.) To play video content in iOS 9 and later, instead use the [`AVPictureInPictureController`](../AVKit/avpictureinpicturecontroller.md) or [`AVPlayerViewController`](../AVKit/avplayerviewcontroller.md) class from the AVKit framework, or the [`WKWebView`](../WebKit/wkwebview.md) class from WebKit.
 
@@ -91,7 +91,7 @@ Add the URL credential and the protection space to the [Singleton](https://devel
 
 With the credential and protection space information in place, you can then play the protected stream.
 
-##### Movie player notifications
+### Movie player notifications
 
 A movie player generates notifications to keep your app informed about the state of movie playback. In addition to being notified when playback finishes, your app can be notified in the following situations:
 

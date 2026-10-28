@@ -25,7 +25,7 @@ let kCGImagePropertyWebPLoopCount: CFString
 extern CFStringRef const kCGImagePropertyWebPLoopCount;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`CFNumber`](../CoreFoundation/cfnumber.md).
 

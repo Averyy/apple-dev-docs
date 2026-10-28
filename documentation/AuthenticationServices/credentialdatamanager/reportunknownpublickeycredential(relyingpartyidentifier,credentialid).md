@@ -20,7 +20,7 @@ Report that a specific credential is unknown or no longer accepted. The credenti
 func reportUnknownPublicKeyCredential(relyingPartyIdentifier: String, credentialID: Data) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `ASAuthorizationError` if the system failed to accept the update.
 

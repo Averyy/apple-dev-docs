@@ -5,7 +5,7 @@
 
 Donate app-specific content, use Siri’s contact suggestions, and adopt the latest platform features to create a more consistent messaging experience.
 
-#### Overview
+## Overview
 
 SiriKit provides a number of supplementary APIs that are specific to messaging apps. Adopt these APIs and provide the required information so your messaging app can:
 
@@ -18,7 +18,7 @@ SiriKit provides a number of supplementary APIs that are specific to messaging a
 
 For information about how Apple protects people’s privacy when your messaging or VoIP app shares information with the system, see the Siri section of [Privacy - Features](https://www.apple.com/privacy/features).
 
-##### Donate contact vocabulary and app interactions to Siri
+### Donate contact vocabulary and app interactions to Siri
 
 Siri integrates with the Contacts app and uses the app’s contact database to suggest message recipients. If your app manages its own database of contacts, independent of the Contacts app, donate the names of those contacts using [`INVocabulary`](../Intents/invocabulary.md) to enable Siri to locate them when handling requests. If your messaging app supports group chats, use the same APIs to donate the in-app names of those group chats.
 
@@ -42,7 +42,7 @@ INVocabulary.shared().setVocabulary(contacts, of: .contactName)
 
 When someone performs an action in your messaging app and the app includes support for the corresponding intent, such as sending or replying to a message, create and donate an instance of [`INInteraction`](../Intents/ininteraction.md) to make Siri aware of the action. If your app uses the system’s Contacts database, reduce ambiguity by setting the [`contactIdentifier`](../Intents/inperson/contactidentifier.md) property for each of the interaction’s contacts to their corresponding database identifier; otherwise, set their [`customIdentifier`](../Intents/inperson/customidentifier.md) property to the unique value your app uses to identify them.
 
-##### Choose recipients from the matches Siri suggests
+### Choose recipients from the matches Siri suggests
 
 When Siri asks your intent handler to resolve a message’s recipients, it provides a collection of [`INPerson`](../Intents/inperson.md) objects — one for each recipient. Using data from the Contacts app (for example, work or family relationships), Siri populates the [`siriMatches`](../Intents/inperson/sirimatches.md) property on each instance of [`INPerson`](../Intents/inperson.md) with zero or more proposed contact matches, enabling your app to provide more accurate recipient options to the person sending the message.
 
@@ -55,7 +55,7 @@ Use the following guidance to determine which [`INPersonResolutionResult`](../In
 
 If your messaging app allows people to attach a custom image to each of their contacts, use the [`image`](../Intents/inperson/image.md) property on [`INPerson`](../Intents/inperson.md) to provide that image when returning an instance of [`INPersonResolutionResult`](../Intents/inpersonresolutionresult.md).
 
-##### Enable people to unsend or edit sent messages
+### Enable people to unsend or edit sent messages
 
 In iOS 16 and later, after a person sends a message from the Messages app or Siri, within a short duration after sending, they can unsend or edit that message. To add the same functionality to your messaging app, perform the following:
 
@@ -80,7 +80,7 @@ class UnsendMessagesIntentHandler: NSObject, INUnsendMessagesIntentHandling {
 
 SiriKit provides additional response codes specific to message unsending and editing. For more information, see [`INUnsendMessagesIntentResponseCode`](../Intents/inunsendmessagesintentresponsecode.md) and [`INEditMessageIntentResponseCode`](../Intents/ineditmessageintentresponsecode.md).
 
-##### Return attachment metadata in Siri search results
+### Return attachment metadata in Siri search results
 
 When someone asks Siri for information about their sent or received messages, Siri creates an instance of [`INSearchForMessagesIntent`](../Intents/insearchformessagesintent.md) and requests your app to fulfill that intent. If the messages in your app’s results include attachments, use the appropriate attachment-related initializers on [`INMessage`](../Intents/inmessage.md) to provide additional information for Siri to announce or display. For example, you can include an array of [`INFile`](../Intents/infile.md) instances that describe each file (including their content type), or if a single message has several attachments, provide the count of attachments instead.
 

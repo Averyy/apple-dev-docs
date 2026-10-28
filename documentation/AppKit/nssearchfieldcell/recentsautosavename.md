@@ -19,7 +19,7 @@ var recentsAutosaveName: NSSearchField.RecentsAutosaveName? { get set }
 @property (copy, nullable) NSSearchFieldRecentsAutosaveName recentsAutosaveName;
 ```
 
-#### Discussion
+## Discussion
 
 The autosave name is used as a key in the standard user defaults to save the recent searches. If you specify `nil` or an empty string for this parameter, no autosave name is set and searches are not automatically saved.
 

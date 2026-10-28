@@ -16,7 +16,7 @@ CFDictionary key for the current power source's presence.
 #define kIOPSIsPresentKey
 ```
 
-#### Discussion
+## Discussion
 
 - Apple-defined power sources will publish this key.
 - For instance, a portable with the capacity for two batteries but with only one present would show two power source dictionaries, but kIOPSIsPresentKey would have the value kCFBooleanFalse in one of them.

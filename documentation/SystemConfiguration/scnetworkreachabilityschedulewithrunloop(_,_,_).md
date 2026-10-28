@@ -24,7 +24,7 @@ func SCNetworkReachabilityScheduleWithRunLoop(_ target: SCNetworkReachability, _
 Boolean SCNetworkReachabilityScheduleWithRunLoop(SCNetworkReachabilityRef target, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the target is scheduled successfully; otherwise,  `FALSE`.
 

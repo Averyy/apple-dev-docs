@@ -21,7 +21,7 @@ A type that represents a PNG image.
 extern UTType * const UTTypePNG;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.png`.
 

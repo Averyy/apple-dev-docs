@@ -24,11 +24,11 @@ func sparseTensor(sparseTensorWithType sparseStorageType: MPSGraphSparseStorageT
 - (MPSGraphTensor *) sparseTensorWithType:(MPSGraphSparseStorageType) sparseStorageType tensors:(NSArray<MPSGraphTensor *> *) inputTensorArray shape:(MPSShape *) shape dataType:(MPSDataType) dataType name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid [`MPSGraphTensor`](../mpsgraphtensor.md) object.
 
-#### Discussion
+## Discussion
 
 sparseVals corresponds to non zero values in matrix. indexTensor0 and indexTensor1 are indices used for indexing into sparse data structure. For COO, indexTensor0 is x index and indexTensor1 is y index. For CSC, indexTensor0 and indexTensor1 correspond to rowIndex and colStarts respectively. For CSR, indexTensor0 and indexTensor1 correspond to colIndex and rowStarts respectively. You must set input tensors appropriately for each sparse storage type.
 

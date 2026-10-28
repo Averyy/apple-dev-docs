@@ -4,7 +4,7 @@
 
 Discover when and how to build your own gesture recognizers.
 
-#### Overview
+## Overview
 
 When the built-in UIKit gesture recognizers don’t provide the behavior you want, you can define custom gesture recognizers. UIKit defines highly configurable gesture recognizers to handle touch sequences for taps, long presses, pans, swipes, rotations, and pinches. For other touch sequences, or to handle gestures that involve button presses, you can define a custom gesture recognizer.
 

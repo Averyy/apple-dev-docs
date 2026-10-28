@@ -25,7 +25,7 @@ case fault
 OSLogEntryLogLevelFault
 ```
 
-#### Discussion
+## Discussion
 
 This log level represents system errors.
 

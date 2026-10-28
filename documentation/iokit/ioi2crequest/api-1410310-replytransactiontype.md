@@ -16,7 +16,7 @@ Specifies one of four possible reply transaction types.
 IOOptionBits replyTransactionType;
 ```
 
-#### Discussion
+## Discussion
 
 The following types of transaction are defined for the reply part of the request:
 

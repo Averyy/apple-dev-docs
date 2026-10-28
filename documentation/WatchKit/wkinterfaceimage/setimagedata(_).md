@@ -19,7 +19,7 @@ func setImageData(_ imageData: Data?)
 - (void) setImageData:(NSData *) imageData;
 ```
 
-#### Discussion
+## Discussion
 
 This method changes the image being displayed.
 

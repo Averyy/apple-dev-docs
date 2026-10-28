@@ -25,7 +25,7 @@ func object(forKey key: NSLocale.Key) -> Any?
 - (id) objectForKey:(NSLocaleKey) key;
 ```
 
-#### Return Value
+## Return Value
 
 The object corresponding to `key`.
 

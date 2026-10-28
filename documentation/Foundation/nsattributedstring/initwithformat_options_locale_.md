@@ -21,11 +21,11 @@ Initializes an attributed string by substituting arguments into a specially form
 - (instancetype) initWithFormat:(NSAttributedString *) format options:(NSAttributedStringFormattingOptions) options locale:(NSLocale *) locale;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized attributed string that combines the format string with the provided arguments and other information.
 
-#### Discussion
+## Discussion
 
 Pass an optional list of trailing variadic arguments to substitute into the `format` string.
 

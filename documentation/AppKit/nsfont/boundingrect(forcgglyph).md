@@ -19,7 +19,7 @@ func boundingRect(forCGGlyph glyph: CGGlyph) -> NSRect
 - (NSRect) boundingRectForCGGlyph:(CGGlyph) glyph;
 ```
 
-#### Discussion
+## Discussion
 
 Japanese fonts encoded with the scheme “EUC12-NJE-CFEncoding” do not have individual metrics or bounding boxes available for the glyphs above 127. For those glyphs, this method returns the bounding rectangle for the font instead.
 

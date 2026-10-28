@@ -25,11 +25,11 @@ func itemProviders(for contentTypes: [UTType]) -> [NSItemProvider]
 func itemProviders(for types: [String]) -> [NSItemProvider]
 ```
 
-#### Return Value
+## Return Value
 
 The item providers that conforms to `contentTypes`.
 
-#### Discussion
+## Discussion
 
 This function is only valid during the `performDrop()` action.
 

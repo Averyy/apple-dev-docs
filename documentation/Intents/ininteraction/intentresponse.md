@@ -34,7 +34,7 @@ var intentResponse: INIntentResponse? { get }
 @property (atomic, copy, readonly, nullable) INIntentResponse * intentResponse;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set at initialization time and cannot be changed later. Use this property to retrieve your app’s response to the specified [`intent`](./intent.md) object.
 

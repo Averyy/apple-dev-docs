@@ -14,7 +14,7 @@
 kMPTaskResumeBranch = 2
 ```
 
-#### Discussion
+## Discussion
 
 The task is resumed and branch stepping is enabled.
 

@@ -24,11 +24,11 @@ convenience init?(api: EAGLRenderingAPI)
 - (instancetype) initWithAPI:(EAGLRenderingAPI) api;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized context object, or `nil` if the object couldn’t be created.
 
-#### Discussion
+## Discussion
 
 To issue OpenGL ES commands to this context, you must first make the context current by calling [`setCurrent(_:)`](./setcurrent%28_%29.md).
 

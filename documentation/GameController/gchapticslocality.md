@@ -24,7 +24,7 @@ struct GCHapticsLocality
 typedef NSString * GCHapticsLocality;
 ```
 
-#### Discussion
+## Discussion
 
 Use this symbol to specify the location of the actuators when creating a haptic engine.
 

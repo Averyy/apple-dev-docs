@@ -21,11 +21,11 @@ Unwraps an optional element or throws if the value is `nil`.
 func applied(to input: Element?, eventHandler: EventHandler? = nil) throws -> Element
 ```
 
-#### Return Value
+## Return Value
 
 The unwrapped value.
 
-#### Discussion
+## Discussion
 
 > **Throws**: `MissingValueError` if the input is `nil`.
 

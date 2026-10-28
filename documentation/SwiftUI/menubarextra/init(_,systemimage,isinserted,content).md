@@ -30,7 +30,7 @@ nonisolated
 init<S>(_ title: S, systemImage: String, isInserted: Binding<Bool>, @ContentBuilder content: () -> Content) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 The item will be displayed in the system menu bar when the specified binding is set to `true`. If the user removes the item from the menu bar, the binding will be set to `false`.
 

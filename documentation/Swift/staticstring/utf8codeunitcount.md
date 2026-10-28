@@ -21,7 +21,7 @@ The number of UTF-8 code units (excluding the null terminator).
 var utf8CodeUnitCount: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: Accessing this property when `hasPointerRepresentation` is `false` triggers a runtime error.
 

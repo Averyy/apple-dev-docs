@@ -21,7 +21,7 @@ Creates an empty set with preallocated space for at least the specified number o
 init(minimumCapacity: Int)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to avoid intermediate reallocations of a set’s storage buffer when you know how many elements you’ll insert into the set after creation.
 

@@ -20,7 +20,7 @@ The maximum absolute slope at the location toward all directions, measured in de
 var maxAbsSlope: Double? { get }
 ```
 
-#### Discussion
+## Discussion
 
 If the maximum absolute slope is invalid due to low GPS accuracy, this property is [`nil`](../../ObjectiveC/nil-227m0.md).
 

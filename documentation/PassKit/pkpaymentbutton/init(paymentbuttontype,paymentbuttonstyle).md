@@ -23,7 +23,7 @@ init(paymentButtonType type: PKPaymentButtonType, paymentButtonStyle style: PKPa
 - (instancetype) initWithPaymentButtonType:(PKPaymentButtonType) type paymentButtonStyle:(PKPaymentButtonStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a `PKPaymentButton` instance with the specified type and style.
 

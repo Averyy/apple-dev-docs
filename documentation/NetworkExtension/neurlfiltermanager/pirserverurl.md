@@ -20,7 +20,7 @@ A URL that contains the domain name of the PIR server.
 var pirServerURL: URL? { get }
 ```
 
-#### Discussion
+## Discussion
 
 Have your URL filter app implementation set up a PIR server, which hosts a URL dataset, that’s reachable at this URL. When making an HTTP request with any of the system networking frameworks, NetworkExtension validates the URL with the specified PIR server before sending the request.
 

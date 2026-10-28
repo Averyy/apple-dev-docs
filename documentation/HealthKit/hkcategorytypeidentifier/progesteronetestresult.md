@@ -24,7 +24,7 @@ static let progesteroneTestResult: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierProgesteroneTestResult;
 ```
 
-#### Discussion
+## Discussion
 
 Home progesterone tests check for the presence of a progesterone hormone metabolite, known as pregnanediol-3-glucuronide (PDG), in a urine sample to confirm whether ovulation has occurred.
 

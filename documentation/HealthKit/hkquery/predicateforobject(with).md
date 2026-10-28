@@ -24,11 +24,11 @@ class func predicateForObject(with UUID: UUID) -> NSPredicate
 + (NSPredicate *) predicateForObjectWithUUID:(NSUUID *) UUID;
 ```
 
-#### Return Value
+## Return Value
 
 A predicate that matches a specific object based on its UUID.
 
-#### Discussion
+## Discussion
 
 HealthKit assigns a UUID to each object when it is saved to the HealthKit store. HealthKit uses these IDs to uniquely identify objects from the store. Use this convenience method to create a predicate that matches the object with the provided UUID. The following sample uses both the convenience method and a predicate format string to create equivalent predicates.
 

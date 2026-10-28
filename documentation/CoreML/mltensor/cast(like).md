@@ -21,11 +21,11 @@ Casts the elements of the tensor to the scalar type of the given array.
 func cast(like other: MLTensor) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 A new tensor with its contents cast to the scalar type of `other`.
 
-#### Discussion
+## Discussion
 
 For example:
 

@@ -17,11 +17,11 @@ Computes the negative log likelihood loss.
 func nllLoss(inputs: MLXArray, targets: MLXArray, axis: Int = -1, reduction: LossReduction = .none) -> MLXArray
 ```
 
-#### Return Value
+## Return Value
 
 Computed NLL loss
 
-##### See Also
+### See Also
 
 - [Loss Functions](./losses.md)
 

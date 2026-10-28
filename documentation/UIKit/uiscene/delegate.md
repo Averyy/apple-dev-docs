@@ -23,7 +23,7 @@ var delegate: (any UISceneDelegate)? { get set }
 @property (nonatomic, strong, nullable) id<UISceneDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The system creates a default delegate object based on the the class name you provide in your app’s `Info.plist` file, or that your app delegate specifies when configuring the scene. You can change this default delegate object later, as needed.
 

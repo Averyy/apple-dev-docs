@@ -5,13 +5,13 @@
 
 Initiate VoIP calls when your server can’t determine whether an outgoing notification is a request for a VoIP call due to metadata encryption.
 
-#### Overview
+## Overview
 
 If your app can send multiple types of end-to-end encrypted (E2EE) data—for example both text messages and voice over IP (VoIP) calls—send the encrypted content as a remote notification. Then, on the receiving device, use a notification service extension to decrypt the incoming content. If the content represents a VoIP call, pass the call information to [CallKit](./CallKit.md) by calling the [`reportNewIncomingVoIPPushPayload(_:completion:)`](./cxprovider/reportnewincomingvoippushpayload%28_,completion%29.md) method. The system launches your app before passing the message on to [CallKit](./CallKit.md). [CallKit](./CallKit.md) then displays the call to the user. It uses the same interface as the Phone app, giving your app a more native look and feel. It also responds appropriately to system-level behaviors such as Do Not Disturb.
 
 > ❗ **Important**:  Only use this approach when your server can’t determine whether an outgoing notification is a request for a VoIP call or some other data (such as a text message) due to metadata encryption. If your server knows that the outgoing content is a VoIP call, send a [`voIP`](../PushKit/pkpushtype/voip.md) push notification instead. For more information, see [PushKit](../PushKit/PushKit.md).
 
-##### Configure your App to Process Multiple Types of E2EE Data
+### Configure your App to Process Multiple Types of E2EE Data
 
 The workflow for receiving, decrypting, and processing multiple types of E2EE data involves several different components working together. To set up these systems:
 
@@ -20,7 +20,7 @@ The workflow for receiving, decrypting, and processing multiple types of E2EE da
 - Add a Notification Service Extension target to your app. See [Modifying content in newly delivered notifications](../UserNotifications/modifying-content-in-newly-delivered-notifications.md).
 - Add the `com.apple.developer.usernotifications.filtering` entitlement to the Notification Service Extension target’s entitlements file. To apply for this entitlement, see [Notification Service Extension Filtering Entitlement Request](https://developer.apple.com/contact/request/notification-service).
 
-##### Send the VoIP Request
+### Send the VoIP Request
 
 To send an E2EE VoIP message:
 

@@ -21,7 +21,7 @@ Indicates that a control’s value has changed to off, such as when a toggle is 
 static let off: SensoryFeedback.SelectionFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Only plays feedback on visionOS.
 

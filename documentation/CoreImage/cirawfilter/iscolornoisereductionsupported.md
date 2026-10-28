@@ -24,7 +24,7 @@ var isColorNoiseReductionSupported: Bool { get }
 @property (readonly, getter=isColorNoiseReductionSupported) BOOL colorNoiseReductionSupported;
 ```
 
-#### Discussion
+## Discussion
 
 If this value is `true`, you can adjust the amount of color noise reduction to apply to the image by setting [`colorNoiseReductionAmount`](./colornoisereductionamount.md).
 

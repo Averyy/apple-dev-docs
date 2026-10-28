@@ -16,7 +16,7 @@
 kINQUIRY_Page83_CodeSetUTF8Data
 ```
 
-#### Discussion
+## Discussion
 
 The identifier contains UTF-8 data.
 

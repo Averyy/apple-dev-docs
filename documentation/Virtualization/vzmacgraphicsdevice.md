@@ -19,7 +19,7 @@ class VZMacGraphicsDevice
 @interface VZMacGraphicsDevice : VZGraphicsDevice
 ```
 
-#### Overview
+## Overview
 
 You don’t instantiate a `VZMacGraphicsDevice` directly. Graphics devices are first configured on the [`VZVirtualMachineConfiguration`](./vzvirtualmachineconfiguration.md) through a subclass of [`VZMacGraphicsDeviceConfiguration`](./vzmacgraphicsdeviceconfiguration.md).  When the framework creates a VZVirtualMachine from the configuration, the graphics devices are available through the `graphicsDevices` property.
 

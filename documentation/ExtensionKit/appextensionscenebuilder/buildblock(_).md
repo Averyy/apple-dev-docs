@@ -22,7 +22,7 @@ Passes through a single extension scene unmodified.
 @preconcurrency static func buildBlock<Content>(_ content: Content) -> some AppExtensionScene where Content : AppExtensionScene
 ```
 
-#### Return Value
+## Return Value
 
 The composed scene.
 

@@ -21,7 +21,7 @@ A transaction reason that indicates a purchase is initiated by a customer.
 static let purchase: Transaction.Reason
 ```
 
-#### Discussion
+## Discussion
 
 The customer initiated the purchase, which may be for any Apple In-App Purchase type: consumable, non-consumable, non-renewing subscription, or auto-renewable subscription.
 

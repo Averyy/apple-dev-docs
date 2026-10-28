@@ -21,7 +21,7 @@ init(identifier: String, container: TVContentIdentifier?)
 - (instancetype) initWithIdentifier:(NSString *) identifier container:(TVContentIdentifier *) container;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized content identifier object.
 

@@ -25,11 +25,11 @@ func string(for obj: Any?) -> String?
 - (NSString *) stringForObjectValue:(id) obj;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSString` object that textually represents `object` for display. Returns `nil` if `object` is not of the correct class.
 
-#### Discussion
+## Discussion
 
 When implementing a subclass, return the `NSString` object that textually represents the cell’s object for display and—if [`editingString(for:)`](./editingstring%28for%29.md) is unimplemented—for editing. First test the passed-in object to see if it’s of the correct class. If it isn’t, return `nil`; but if it is of the right class, return a properly formatted and, if necessary, localized string. (See the specification of the [`NSString`](../nsstring.md) class for formatting and localizing details.)
 

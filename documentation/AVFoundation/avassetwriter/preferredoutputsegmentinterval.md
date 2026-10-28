@@ -24,7 +24,7 @@ var preferredOutputSegmentInterval: CMTime { get set }
 @property (nonatomic) CMTime preferredOutputSegmentInterval;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`invalid`](../../CoreMedia/cmtime/invalid.md), which indicates that the asset writer chooses an appropriate default value. You may also set a positive numeric or [`indefinite`](../../CoreMedia/cmtime/indefinite.md) time. When the value is [`indefinite`](../../CoreMedia/cmtime/indefinite.md), each call you make to [`flushSegment()`](./flushsegment%28%29.md) outputs a segment data.
 

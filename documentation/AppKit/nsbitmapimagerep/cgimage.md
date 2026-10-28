@@ -19,7 +19,7 @@ var cgImage: CGImage? { get }
 @property (readonly, nullable) CGImageRef CGImage;
 ```
 
-#### Discussion
+## Discussion
 
 The autoreleased [`CGImage`](../../CoreGraphics/cgimage.md) opaque type in this property has pixel dimensions that are identical to those of the bitmap image rep object. If an existing [`CGImage`](../../CoreGraphics/cgimage.md) opaque type is not available, accessing this property creates a new one. If you change the bitmap image rep’s contents later, accessing this property again might return a different [`CGImage`](../../CoreGraphics/cgimage.md) opaque type.
 

@@ -19,7 +19,7 @@ struct CollectionBehavior
 enum NSWindowCollectionBehavior : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Collection behaviors are properties you set on windows to control their display characteristics in window management technologies. Use them to specify a preference on how windows behave in window management technologies like Mission Control, Spaces, and Stage Manager.
 

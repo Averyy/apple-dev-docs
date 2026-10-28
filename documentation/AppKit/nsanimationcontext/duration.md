@@ -19,7 +19,7 @@ var duration: TimeInterval { get set }
 @property NSTimeInterval duration;
 ```
 
-#### Discussion
+## Discussion
 
 Any animations that occur as a result of setting the values of animatable properties in the current context will run for this duration.
 

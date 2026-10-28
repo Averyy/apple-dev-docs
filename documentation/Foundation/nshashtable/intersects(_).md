@@ -25,11 +25,11 @@ func intersects(_ other: NSHashTable<ObjectType>) -> Bool
 - (BOOL) intersectsHashTable:(NSHashTable<id> *) other;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if `other` intersects with the receiving hash table, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 The equality test used for members depends on the personality option selected. For instance, choosing the [`objectPersonality`](../nspointerfunctions/options/objectpersonality.md) option will use `isEqual:` to determine equality. See [`NSPointerFunctions.Options`](../nspointerfunctions/options.md) for more information on personality options and their corresponding equality tests.
 

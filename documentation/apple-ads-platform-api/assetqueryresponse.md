@@ -15,11 +15,11 @@ Paginated response object for asset queries.
 object AssetQueryResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `AssetQueryResponse` object is the top-level envelope returned by [`Query Assets`](./query-assets.md). The `pagination` object describes the current page position.
 
-##### Example
+### Example
 
 ```json
 {

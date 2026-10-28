@@ -19,7 +19,7 @@ enum ContextScope
 enum NSWritingToolsCoordinatorContextScope : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 At the start of any Writing Tools interaction, you provide the text for the system to evaluate from your [`NSWritingToolsCoordinator.Delegate`](./delegate-swift.protocol.md) object. The request for your content comes with a scope constant that indicates how much of your view’s text to provide.
 

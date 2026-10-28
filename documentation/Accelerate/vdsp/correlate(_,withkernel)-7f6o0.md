@@ -21,7 +21,7 @@ Returns the correlation of a double-precision signal vector and a filter vector.
 static func correlate<T, U>(_ vector: T, withKernel kernel: U) -> [Double] where T : AccelerateBuffer, U : AccelerateBuffer, T.Element == Double, U.Element == Double
 ```
 
-#### Return Value
+## Return Value
 
 The correlation result.
 

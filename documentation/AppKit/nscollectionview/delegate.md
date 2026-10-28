@@ -19,7 +19,7 @@ weak var delegate: (any NSCollectionViewDelegate)? { get set }
 @property (weak, nullable) id<NSCollectionViewDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 Use the delegate object to manage the selection and highlighting of items, track the addition and removal of items, and manage drag and drop operations. The object you assign to this property must conform to the [`NSCollectionViewDelegate`](../nscollectionviewdelegate.md) protocol. The default value of this property is `nil`.
 

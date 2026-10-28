@@ -23,7 +23,7 @@ let kCTFontManagerErrorDomain: CFString
 extern CFStringRef const kCTFontManagerErrorDomain;
 ```
 
-#### Discussion
+## Discussion
 
 CFError objects with this domain have error codes corresponding to one of the `CTFontManagerError` errors listed in `Font Registration Errors` and [`CTFontManagerError`](./ctfontmanagererror.md).
 

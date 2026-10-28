@@ -19,7 +19,7 @@ var widthTracksTextView: Bool { get set }
 @property BOOL widthTracksTextView;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the text container adjusts its width when the width of its text view changes. The default value of this property is [`false`](../../Swift/false.md).
 

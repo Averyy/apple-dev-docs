@@ -19,7 +19,7 @@ func velocityInObject() -> CGPoint
 - (CGPoint) velocityInObject;
 ```
 
-#### Return Value
+## Return Value
 
 The velocity of the gesture, which is expressed in points per second. The `x` field contains the horizontal velocity and the `y` field contains the vertical velocity.
 

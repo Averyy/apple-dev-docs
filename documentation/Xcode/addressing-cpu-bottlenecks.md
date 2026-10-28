@@ -5,7 +5,7 @@
 
 Locate and fix pipeline stalls, cache misses, and other performance issues.
 
-#### Overview
+## Overview
 
 To keep a device’s CPU running at its highest effectiveness while it’s processing your app, tune your app to best use the CPU instruction set and ensure that the CPU microarchitecture delivers and processes instructions efficiently. Modern processors have multiple facilities to improve the flow of instructions they process, including:
 
@@ -23,7 +23,7 @@ Use coding strategies that avoid CPU bottlenecks. Identify areas in your app tha
 
 > **Note**:  Remove other sources of processor overhead, including inefficient algorithms and redundant memory management code, before you investigate CPU bottlenecks. For more information, see [Analyzing CPU usage with the Processor Trace instrument](./analyzing-cpu-usage-with-processor-trace.md).
 
-##### Design your app to avoid CPU bottlenecks
+### Design your app to avoid CPU bottlenecks
 
 The following design principles help the system to optimize CPU performance when someone uses your app.
 
@@ -39,17 +39,17 @@ If you use Background Tasks, pick the correct task type for the work you assign 
 
 For more guidance on optimizing your code for Apple silicon, see [Tuning your code’s performance for Apple silicon](../apple-silicon/tuning-your-code-s-performance-for-apple-silicon.md).
 
-##### Establish performance goals
+### Establish performance goals
 
 Use information from the Metrics Organizer, and feedback from people who test and use your app, to identify performance issues and define targets for improvement. For more information, see [Improving your app’s performance](./improving-your-app-s-performance.md).
 
-##### Write performance tests
+### Write performance tests
 
 When you identify features that need performance improvements, create performance tests to automatically exercise those features and measure their performance. Set a performance baseline and run the tests when you make code changes, to compare your app’s performance with the baseline and detect regressions.
 
 Use [`XCTCPUMetric`](../XCTest/xctcpumetric.md) to measure CPU activity in your tests, and [`XCTClockMetric`](../XCTest/xctclockmetric.md) to measure time elapsed during your tests. For more information, see [Writing and running performance tests](./writing-and-running-performance-tests.md).
 
-##### Detect CPU bottlenecks
+### Detect CPU bottlenecks
 
 When your performance tests reveal that your app doesn’t meet your performance goals, use the CPU Counters instrument to identify situations where the system encounters CPU bottlenecks when it runs your app.
 
@@ -70,7 +70,7 @@ If you don’t have a performance test for the features you want to analyze, fol
 6. Interact with the features in your app that you want to analyze.
 7. In Instruments, click the Stop button to stop gathering data.
 
-##### Discover code that causes CPU bottlenecks
+### Discover code that causes CPU bottlenecks
 
 The CPU Counters instrument adds mode-specific lanes to the CPU Counters, process, and thread tracks you use to analyze the processor’s workload. In the initial CPU bottlenecks mode, the lane divides the maximum sustainable CPU bandwidth into four categories:
 
@@ -87,7 +87,7 @@ Use the Time Profiler track, and the tracks for your app’s threads, to correla
 
 Click the CPU Counters track to see the Summary: Metrics view, which shows the fraction of time the CPU spends doing useful work or encountering bottlenecks. Select a range in the timeline to focus the Summary: Metrics view on that range.
 
-##### Identify causes of CPU bottlenecks
+### Identify causes of CPU bottlenecks
 
 When you locate the code in your app that causes CPU bottlenecks and the category of bottleneck the processor encounters, gather more detailed information to determine the specific situations that lead to CPU bottlenecks, and plan to address those bottlenecks in code.
 

@@ -25,7 +25,7 @@ func remove(_ anObject: Any, in range: NSRange)
 - (void) removeObject:(ObjectType) anObject inRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 Matches are determined by comparing `anObject` to the objects in the receiver using the `isEqual:` method. If the array does not contain `anObject` within `aRange`, the method has no effect (although it does incur the overhead of searching the contents).
 

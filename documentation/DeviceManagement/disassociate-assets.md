@@ -13,9 +13,9 @@ Disassociate assets from client user IDs and serial numbers.
 
 - [Upgrading to the new management API](./upgrading-to-the-new-management-api.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -25,7 +25,7 @@ var YpMax: Int32
 int32_t YpMax;
 ```
 
-#### Discussion
+## Discussion
 
 All values larger than this are clamped to this value.
 

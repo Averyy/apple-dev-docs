@@ -19,7 +19,7 @@ A 32-bit complex floating-point type.
 case cfloat32
 ```
 
-#### Discussion
+## Discussion
 
 Complex Float32 represents complex numbers with 32-bit float real and imaginary parts, totaling 64 bits per value.
 

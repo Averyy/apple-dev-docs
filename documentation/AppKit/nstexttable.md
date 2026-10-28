@@ -19,7 +19,7 @@ class NSTextTable
 @interface NSTextTable : NSTextBlock
 ```
 
-#### Overview
+## Overview
 
 A text table is responsible for laying out and drawing the text table blocks it contains, and it maintains the basic parameters of the table.
 

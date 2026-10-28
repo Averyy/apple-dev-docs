@@ -25,11 +25,11 @@ func mutableSetValue(forKeyPath keyPath: String) -> NSMutableSet
 - (NSMutableSet *) mutableSetValueForKeyPath:(NSString *) keyPath;
 ```
 
-#### Return Value
+## Return Value
 
 A mutable set that provides read-write access to the unordered to-many relationship specified by `keyPath`.
 
-#### Discussion
+## Discussion
 
 See [`mutableSetValue(forKey:)`](./mutablesetvalue%28forkey%29.md) for additional details.
 

@@ -24,7 +24,7 @@ convenience init?(kernelSizes: [NSNumber], paddingStyle: MPSGraphPaddingStyle)
 + (instancetype) descriptorWithKernelSizes:(NSArray<NSNumber *> *) kernelSizes paddingStyle:(MPSGraphPaddingStyle) paddingStyle;
 ```
 
-#### Return Value
+## Return Value
 
 The descriptor on autoreleasepool.
 

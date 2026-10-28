@@ -20,11 +20,11 @@ class func counterForEventType(_ stateID: CGEventSourceStateID, eventType: CGEve
 extern uint32_t CGEventSourceCounterForEventType(CGEventSourceStateID stateID, CGEventType eventType);
 ```
 
-#### Return Value
+## Return Value
 
 The count of events of the specified type seen since the window server started.
 
-#### Discussion
+## Discussion
 
 Quartz provides these counters for applications that monitor user activity. For example, an application could prompt a typist to take a break to reduce repetitive stress injuries.
 

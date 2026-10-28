@@ -19,7 +19,7 @@ var NSClearDisplayFunctionKey: Int { get }
 NSClearDisplayFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

@@ -23,7 +23,7 @@ var sparseBufferTier: MTLBufferSparseTier { get }
 @property (readonly) MTLBufferSparseTier sparseBufferTier;
 ```
 
-#### Discussion
+## Discussion
 
 Query support tier for sparse buffers.
 

@@ -17,7 +17,7 @@ A protocol that defines functionality common to all package manger plugins.
 protocol Plugin
 ```
 
-#### Overview
+## Overview
 
 For example, the way to instantiate and run a plugin.
 

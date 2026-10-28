@@ -25,7 +25,7 @@ var groupingAttributes: [String]? { get set }
 @property (copy, nullable) NSArray<NSString *> * groupingAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 Setting this property while a query is running stops the query and discards the current results. The receiver immediately starts a new query.
 

@@ -23,7 +23,7 @@ case noCloudThumbnail
 QLThumbnailErrorNoCloudThumbnail
 ```
 
-#### Discussion
+## Discussion
 
 The creation of a thumbnail for a remote file stored in a FileProvider extension such as iCloud or another cloud service failed. The request to generate a thumbnail failed because the remote file itself isn’t available locally or couldn’t be used to generate a thumbnail. QuickLookThumbnailing tried to download a thumbnail from the cloud service instead but no thumbnail was available in the cloud service, or an available thumbnail couldn’t be downloaded.
 

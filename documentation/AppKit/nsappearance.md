@@ -23,7 +23,7 @@ class NSAppearance
 
 - [Choosing a Specific Appearance for Your macOS App](./choosing-a-specific-appearance-for-your-macos-app.md)
 
-#### Overview
+## Overview
 
 An [`NSAppearance`](./nsappearance.md) object manages how AppKit renders your app’s UI elements. Specifically, appearance objects determine which colors and images AppKit uses when drawing windows, views, and controls. Although you can use an appearance object to determine how to draw custom views and controls, a better approach is to choose colors and images that adapt automatically to the current appearance. For example, define a color asset whose actual color value changes for light and dark appearances. You can assign specific appearances to your views in Interface Builder.
 

@@ -25,7 +25,7 @@ func setFlatness(_ flatness: CGFloat)
 extern void CGContextSetFlatness(CGContextRef c, CGFloat flatness);
 ```
 
-#### Discussion
+## Discussion
 
 This function controls how accurately curved paths are rendered. Setting the flatness value to less than `1.0` renders highly accurate curves, but lengthens rendering times.
 

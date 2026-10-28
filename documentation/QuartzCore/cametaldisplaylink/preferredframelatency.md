@@ -24,7 +24,7 @@ var preferredFrameLatency: Float { get set }
 @property (nonatomic) float preferredFrameLatency;
 ```
 
-#### Discussion
+## Discussion
 
 The final latency may be bigger if the system needs more time, such as for windowed modes on macOS.
 

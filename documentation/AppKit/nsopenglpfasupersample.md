@@ -19,7 +19,7 @@ var NSOpenGLPFASupersample: Int { get }
 NSOpenGLPFASupersample
 ```
 
-#### Discussion
+## Discussion
 
 A Boolean attribute. If present and used with `NSOpenGLPFASampleBuffers` and `NSOpenGLPFASamples`, this attribute hints to OpenGL to prefer super-sampling. Super-sampling will process fragments with a texture sample per fragment and would likely be slower than multi-sampling. If the pixel format is not requesting anti-aliasing, this hint does nothing.
 

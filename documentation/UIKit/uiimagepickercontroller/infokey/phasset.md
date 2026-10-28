@@ -24,7 +24,7 @@ static let phAsset: UIImagePickerController.InfoKey
 extern UIImagePickerControllerInfoKey const UIImagePickerControllerPHAsset;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is a [`PHAsset`](../../../Photos/phasset.md) object.
 

@@ -11,7 +11,7 @@ Gets the type of data buffer managed by this object.
 virtual UInt32 getBufferType() const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns a constant that describes the type of the data buffer.
 

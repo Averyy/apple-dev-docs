@@ -24,11 +24,11 @@ init(vectorNoiseWithSmoothness smoothness: Float, name: String?, textureDimensio
 - (instancetype) initVectorNoiseWithSmoothness:(float) smoothness name:(NSString *) name textureDimensions:(vector_int2) textureDimensions channelEncoding:(MDLTextureChannelEncoding) channelEncoding;
 ```
 
-#### Return Value
+## Return Value
 
 A new directional noise texture object.
 
-#### Discussion
+## Discussion
 
 Unlike a color noise texture, in which the RGBA channels are independently randomized, a directional noise texture treats each texel’s RGB channels together as the XYZ components of a random direction vector, and the A channel as a scalar for the vector’s direction.
 

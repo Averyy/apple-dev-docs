@@ -25,11 +25,11 @@ func setTextureView(texture: any MTLTexture, descriptor: MTLTextureViewDescripto
 - (MTLResourceID) setTextureView:(id<MTLTexture>) texture descriptor:(MTLTextureViewDescriptor *) descriptor atIndex:(NSUInteger) index;
 ```
 
-#### Return Value
+## Return Value
 
 The [`MTLResourceID`](../mtlresourceid.md) of a newly created texture view in this pool.
 
-#### Discussion
+## Discussion
 
 This method creates a lightweight texture view over a texture according to a descriptor you provide. It then associates the texture view with a slot in this texture view pool at the index you specify.
 

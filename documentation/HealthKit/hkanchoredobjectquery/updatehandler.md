@@ -24,7 +24,7 @@ var updateHandler: (@Sendable (HKAnchoredObjectQuery, [HKSample]?, [HKDeletedObj
 @property (nonatomic, copy, nullable) void (^updateHandler)(HKAnchoredObjectQuery *query, NSArray<__kindof HKSample *> *addedObjects, NSArray<HKDeletedObject *> *deletedObjects, HKQueryAnchor *newAnchor, NSError *error);
 ```
 
-#### Discussion
+## Discussion
 
 If this property is set to `nil`, the anchor query automatically stops as soon as it finishes calculating the initial results. If this property is not `nil`, the query behaves similarly to the observer query: it continues to run, monitoring the HealthKit store. The system executes the update handler on a background queue whenever matching samples are saved to or deleted from the HealthKit store.
 

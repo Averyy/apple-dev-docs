@@ -24,7 +24,7 @@ protocol MDLMeshBufferAllocator : NSObjectProtocol
 @protocol MDLMeshBufferAllocator <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Classes adopting this protocol provide different ways of handling mesh buffer data. For example, the [`MTKMeshBufferAllocator`](../MetalKit/mtkmeshbufferallocator.md) class can share mesh data with Metal buffers for use in rendering.
 

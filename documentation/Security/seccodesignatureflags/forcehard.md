@@ -20,7 +20,7 @@ static var forceHard: SecCodeSignatureFlags { get }
 kSecCodeSignatureForceHard
 ```
 
-#### Discussion
+## Discussion
 
 The `kSecCodeStatusHard` flag indicates that the code prefers to be denied access to a resource if gaining such access would cause its invalidation. Once the hard bit is set, it cannot be cleared. Therefore, setting this option flag guarantees that the code will always have the `kSecCodeStatusHard` flag set.
 

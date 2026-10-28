@@ -12,7 +12,7 @@ bool AbortSCSITaskFromQueue (
  SCSITask *request );
 ```
 
-#### Overview
+## Overview
 
 Deprecated internal method.
 

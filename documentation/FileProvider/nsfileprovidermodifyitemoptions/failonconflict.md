@@ -23,7 +23,7 @@ static var failOnConflict: NSFileProviderModifyItemOptions { get }
 NSFileProviderModifyItemFailOnConflict
 ```
 
-#### Discussion
+## Discussion
 
 If you adopt this option, and an uploaded item’s base version doesn’t match the version on the server, fail and return [`localVersionConflictingWithServer`](../nsfileprovidererror/localversionconflictingwithserver.md) (Swift) or [`NSFileProviderError.Code.localVersionConflictingWithServer`](../nsfileprovidererror/code/localversionconflictingwithserver.md) (Objective-C) in your implementation of `modifyItem`.
 

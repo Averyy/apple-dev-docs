@@ -25,7 +25,7 @@ class AVPlayerItemIntegratedTimelineSnapshot
 @interface AVPlayerItemIntegratedTimelineSnapshot : NSObject
 ```
 
-#### Overview
+## Overview
 
 A snapshot doesn’t reflect the new timeline state as playback progresses. You can request a new snapshot instance from an [`AVPlayerItemIntegratedTimeline`](./avplayeritemintegratedtimeline.md) that reflect the latest timeline state.
 

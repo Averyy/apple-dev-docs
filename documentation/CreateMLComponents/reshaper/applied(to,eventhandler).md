@@ -21,7 +21,7 @@ Reshapes the input.
 func applied(to input: MLShapedArray<Scalar>, eventHandler: EventHandler? = nil) throws -> MLShapedArray<Scalar>
 ```
 
-#### Return Value
+## Return Value
 
 A shaped array with the target shape.
 

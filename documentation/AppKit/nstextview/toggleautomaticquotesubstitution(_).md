@@ -19,7 +19,7 @@ func toggleAutomaticQuoteSubstitution(_ sender: Any?)
 - (void) toggleAutomaticQuoteSubstitution:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Automatic quote substitution causes ASCII quotation marks and apostrophes to be automatically replaced, on a context-dependent basis, with more typographically accurate symbols.
 

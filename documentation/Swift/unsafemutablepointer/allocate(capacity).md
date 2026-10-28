@@ -21,7 +21,7 @@ Allocates uninitialized memory for the specified number of instances of type `Po
 static func allocate(capacity count: Int) -> UnsafeMutablePointer<Pointee>
 ```
 
-#### Discussion
+## Discussion
 
 The resulting pointer references a region of memory that is bound to `Pointee` and is `count * MemoryLayout<Pointee>.stride` bytes in size.
 

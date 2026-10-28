@@ -16,7 +16,7 @@ A message that explains to people why the app requests permission to read sample
 - **Name**: `NSHealthShareUsageDescription` (Privacy - Health Share Usage Description)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the someone’s health data.
 

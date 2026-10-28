@@ -25,7 +25,7 @@ let MPNowPlayingInfoPropertyAvailableLanguageOptions: String
 extern NSString * const MPNowPlayingInfoPropertyAvailableLanguageOptions;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an array of [`MPNowPlayingInfoLanguageOptionGroup`](./mpnowplayinginfolanguageoptiongroup.md) items. The system can play only one language option in a given group at a time.
 

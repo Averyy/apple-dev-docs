@@ -20,7 +20,7 @@ Creates an audio input object for audio that may be discontiguous with previous 
 init(buffer: AVAudioPCMBuffer, bufferStartTime: CMTime?)
 ```
 
-#### Discussion
+## Discussion
 
 The audio buffer must not overlap or precede other audio input, as determined by the `bufferStartTime` value.
 

@@ -17,7 +17,7 @@ Disable generation of the face entity with the default occlusion material.
 static let disableFaceMesh: ARView.RenderOptions
 ```
 
-#### Discussion
+## Discussion
 
 By default, [ARKit](../../../ARKit/ARKit.md) detects people and hides virtual objects behind their faces.
 

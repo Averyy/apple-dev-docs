@@ -23,7 +23,7 @@ optional var textContentType: UITextContentType! { get set }
 @property (nonatomic, copy, null_unspecified) UITextContentType textContentType;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to give the keyboard and the system information about the expected semantic meaning for the content that users enter. For example, you might specify [`emailAddress`](../uitextcontenttype/emailaddress.md) for a text field that users fill in to receive an email confirmation. When you provide this information about the content you expect users to enter in a text input area, the system can in some cases automatically select an appropriate keyboard and improve keyboard corrections and proactive integration with other text input opportunities.
 

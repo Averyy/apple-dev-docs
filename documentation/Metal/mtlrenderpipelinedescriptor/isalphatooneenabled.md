@@ -24,7 +24,7 @@ var isAlphaToOneEnabled: Bool { get set }
 @property (nonatomic, readwrite, getter=isAlphaToOneEnabled) BOOL alphaToOneEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

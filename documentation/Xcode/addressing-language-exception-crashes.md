@@ -5,7 +5,7 @@
 
 Identify the signs of a language exception, and address the crashes caused by uncaught language exceptions.
 
-#### Overview
+## Overview
 
 Language exceptions, such as those from Objective-C, indicate programming errors discovered at runtime, such as accessing an array with an index that’s out-of-bounds or not implementing a required method of a protocol. To determine whether a crash is due to a language exception, first confirm that the crash report contains this pattern:
 
@@ -19,7 +19,7 @@ A crash due to a language exception that isn’t caught has a `Last Exception Ba
 
 > **Note**: Exception backtraces to the code throwing the exception aren’t provided for C++ exceptions.
 
-##### Identify the API throwing the exception
+### Identify the API throwing the exception
 
 In the `Last Exception Backtrace`, the operating system records the full backtrace of function calls leading to the exception. This backtrace ends with frames that make it clear a language exception was thrown. Further down the backtrace, you’ll find key information about what method threw the exception, and what part of your code called the method that threw the exception. For example:
 
@@ -51,7 +51,7 @@ In this example backtrace, the operating system threw an exception in frames 0-2
 
 > ❗ **Important**: If the API throwing the exception is [`doesNotRecognizeSelector(_:)`](../ObjectiveC/nsobject-swift.class/doesnotrecognizeselector%28_%29.md):, the crash may be due to a zombie object. See [Investigating crashes for zombie objects](./investigating-crashes-for-zombie-objects.md) for additional information.
 
-##### Check the exception message
+### Check the exception message
 
 The uncaught exception handler provided by the operating system logs the exception message to the console before terminating the process. If you reproduce a crash resulting from a language exception with the Xcode debugger attached to your app, you can see this message:
 
@@ -74,13 +74,13 @@ If you can reproduce a language exception crash, set an exception breakpoint to 
 po $arg1
 ```
 
-##### Address crashes from a system language exception
+### Address crashes from a system language exception
 
 After identifying the operating system’s API throwing the exception, consult the documentation for that API to determine what conditions trigger the exception. Also try to reproduce the crash with the Xcode debugger attached to get the additional information about the exception in the console, using the frames in the backtrace as a guide to the specific code you need to test.
 
 If you can’t reproduce the crash, use all of the thread backtraces (not just the exception backtrace) as clues about what your app was doing at the time it crashed, and think about what that information says about your app’s state. Use those clues as a starting point for addressing the crash.
 
-##### Handle language exceptions thrown by your app’s code
+### Handle language exceptions thrown by your app’s code
 
 64-bit versions of iOS and iPadOS use a zero-cost exception implementation, where every function has additional data that describes how to unwind the stack, or exit each stack frame, if a function throws an exception. If the thrown exception encounters a stack frame that doesn’t have unwind data, exception handling can’t proceed and the process halts. There might be an exception handler further up the stack, but without the unwind data for a frame, there’s no way to reach the exception handler from the stack frame throwing the exception.
 

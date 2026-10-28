@@ -22,7 +22,7 @@ class let touchBarPlayTemplateName: String
 extern NSImageName const NSImageNameTouchBarPlayTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for play](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2793536@2x.png)
 

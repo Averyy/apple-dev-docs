@@ -15,11 +15,11 @@ Receive the result of a element update.
 subscript(originalRequest: HIDDeviceClient.ProvideElementUpdate) -> Result<Void, any Error>? { get }
 ```
 
-#### Return Value
+## Return Value
 
 The result for the specified request that contain Void if successful; otherwise, an error if unsuccessful. Access the results using  [`get()`](../../../Swift/result/get%28%29.md).
 
-#### Overview
+## Overview
 
 For an example, see [`updateElements(_:timeout:)`](../updateelements%28_,timeout%29.md).
 

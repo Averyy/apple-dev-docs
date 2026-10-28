@@ -19,7 +19,7 @@ var effectiveStyle: NSTableView.Style { get }
 @property (readonly) NSTableViewStyle effectiveStyle;
 ```
 
-#### Discussion
+## Discussion
 
 If the [`style`](./style-swift.property.md) property value is [`NSTableView.Style.automatic`](./style-swift.enum/automatic.md), then this property contains the resolved style.
 

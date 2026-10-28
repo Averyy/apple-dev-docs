@@ -19,7 +19,7 @@ A view controller that displays a popover tip in UIKit applications.
 @objc @preconcurrency final class TipUIPopoverViewController
 ```
 
-#### Overview
+## Overview
 
 Use this view controller to present a tip you want to display using [`UIPopoverPresentationController`](../UIKit/uipopoverpresentationcontroller.md).
 

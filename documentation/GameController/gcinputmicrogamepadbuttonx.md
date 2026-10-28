@@ -24,7 +24,7 @@ let GCInputMicroGamepadButtonX: String
 extern NSString * const GCInputMicroGamepadButtonX;
 ```
 
-#### Discussion
+## Discussion
 
 For the first-generation and second-generation Siri Remote and later, this represents the play and pause button.
 

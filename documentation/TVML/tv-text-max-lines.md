@@ -5,7 +5,7 @@
 
 Specifies the maximum number of lines of text in an element.
 
-#### Overview
+## Overview
 
 Here’s an example that shows a text element with a maximum of three lines of text.
 
@@ -13,11 +13,11 @@ Here’s an example that shows a text element with a maximum of three lines of t
 <text style="tv-text-max-lines:3">Maximum of 3 lines</text>
 ```
 
-##### Values for tv-text-max-lines
+### Values for tv-text-max-lines
 
 - **Integer**: The maximum number of lines to be displayed in an element.
 
-##### Elements that Use tv-text-max-lines
+### Elements that Use tv-text-max-lines
 
 - [description](./description.md)
 - [subtitle](./subtitle.md)

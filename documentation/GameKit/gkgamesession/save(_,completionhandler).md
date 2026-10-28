@@ -26,7 +26,7 @@ func save(_ data: Data, completionHandler: @escaping (Data?, (any Error)?) -> Vo
 - (void) saveData:(NSData *) data completionHandler:(void (^)(NSData *conflictingData, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The maximum amount of data to be saved is 512K. The `lastModifiedDate` and `lastModifiedPlayer` properties are updated upon completion. When a save conflict appears, the data is not saved to the server. The data property in the completion handler contains the information currently saved to the server. It is up to the developer to decide how to handle save conflicts.
 

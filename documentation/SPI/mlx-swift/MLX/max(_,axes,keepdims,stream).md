@@ -21,7 +21,7 @@ func max(_ array: MLXArray, axes: some Collection<Int>, keepDims: Bool = false, 
 
 - [Converting From Python](./converting-python.md)
 
-#### Discussion
+## Discussion
 
 ```swift
 let array = MLXArray([5, 8, 4, 9], [2, 2])
@@ -30,7 +30,7 @@ let array = MLXArray([5, 8, 4, 9], [2, 2])
 let result = array.max(axis=[0])
 ```
 
-##### See Also
+### See Also
 
 - [Reduction Functions](./reduction.md)
 - [`max(_:axis:keepDims:stream:)`](./max%28_,axis,keepdims,stream%29.md)

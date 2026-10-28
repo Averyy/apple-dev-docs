@@ -19,7 +19,7 @@ func CFUserNotificationCreate(_ allocator: CFAllocator!, _ timeout: CFTimeInterv
 extern CFUserNotificationRefCFUserNotificationCreate(CFAllocatorRef allocator, CFTimeInterval timeout, CFOptionFlags flags, SInt32 *error, CFDictionaryRef dictionary);
 ```
 
-#### Return Value
+## Return Value
 
 The new CFUserNotification object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

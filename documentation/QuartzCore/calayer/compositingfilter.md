@@ -24,7 +24,7 @@ var compositingFilter: Any? { get set }
 @property (strong, nullable) id compositingFilter;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`, which causes the layer to use source-over compositing. Although you can use any Core Image filter as a layer’s compositing filter, for best results, use those in the [CICategoryCompositeOperation](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Reference/CoreImageFilterReference/index.html#//apple_ref/doc/uid/TP30000136-SW71) category.
 
@@ -95,7 +95,7 @@ The following figure shows the default result when the foreground layer’s comp
 
 ![Default compositing filter](https://developer.apple.com/tutorials/images/com.apple.quartzcore/media-2851429@2x.png)
 
-##### Special Considerations
+### Special Considerations
 
 This property is not supported on layers in iOS.
 

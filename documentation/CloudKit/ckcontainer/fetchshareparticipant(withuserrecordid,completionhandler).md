@@ -25,7 +25,7 @@ func fetchShareParticipant(withUserRecordID userRecordID: CKRecord.ID, completio
 - (void) fetchShareParticipantWithUserRecordID:(CKRecordID *) userRecordID completionHandler:(void (^)(CKShareParticipant *shareParticipant, NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The closure doesn’t return a value and takes the following parameters:
 

@@ -19,7 +19,7 @@ Provides an array of identifiers of the currently dragged items if available.
 func draggedItemIDs<ItemID>(for type: ItemID.Type) -> [ItemID] where ItemID : Hashable
 ```
 
-#### Discussion
+## Discussion
 
 If drag started within the application, the dragged items have identifiers, and SwiftUI has access to these identifiers, you can access them using this method.
 

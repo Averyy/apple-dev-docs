@@ -19,7 +19,7 @@ class FSDeactivateItemResult
 @interface FSDeactivateItemResult : FSVolumeHandlerResult
 ```
 
-#### Overview
+## Overview
 
 Use this type in your implementation of [`deactivateItem(_:context:replyHandler:)`](./fsvolume/itemdeactivationhandler/deactivateitem%28_,context,replyhandler%29.md)
 

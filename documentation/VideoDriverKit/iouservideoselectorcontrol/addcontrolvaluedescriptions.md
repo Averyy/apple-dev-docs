@@ -15,7 +15,7 @@ Adds control value descriptions to the selector control.
 kern_return_t AddControlValueDescriptions(const IOUserVideoSelectorValueDescription *in_value_descriptions, size_t in_num_value_descriptions);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if the method successfully adds the value descriptions.
 

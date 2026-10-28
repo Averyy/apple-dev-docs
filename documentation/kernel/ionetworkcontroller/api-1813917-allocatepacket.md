@@ -12,11 +12,11 @@ virtual mbuf_t allocatePacket(
  UInt32size);
 ```
 
-#### Return Value
+## Return Value
 
 Returns an mbuf packet, or 0 if allocation failed.
 
-#### Overview
+## Overview
 
 This method will always return a single mbuf unless the size requested (plus the alignment padding) is greater than MCLBYTES. The data buffer for the mbuf (or an mbuf chain) returned is aligned according to the constraints reported by getPacketBufferConstraints(). The length fields in each mbuf returned are set by this method, thus allowing the mbuf to be passed directly to an IOMbufMemoryCursor object in order to convert the mbuf to a physical address scatter-gather list.
 

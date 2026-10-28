@@ -19,7 +19,7 @@ var data: Data { get }
 @property (copy, readonly) NSData * data;
 ```
 
-#### Discussion
+## Discussion
 
 For more information on accessing structured data, see [Access the data](../nsdataasset.md#Access-the-data).
 

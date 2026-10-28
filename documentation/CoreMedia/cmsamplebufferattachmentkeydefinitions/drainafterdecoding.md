@@ -21,7 +21,7 @@ Indicates whether the sample buffer should be drained after decoding.
 static let drainAfterDecoding: CVAttachmentKeyDefinitionWithDefault<CMSampleBufferAttachmentKeyDefinitions.ShouldPropagate, Bool>
 ```
 
-#### Discussion
+## Discussion
 
 This attachment is used at run time to indicate that a sample precedes a break in decode sequence and that it is appropriate to drain the decoder after decoding this sample. This attachment is not written to media files. The getter returns the default value of false if this attachment is not present.
 

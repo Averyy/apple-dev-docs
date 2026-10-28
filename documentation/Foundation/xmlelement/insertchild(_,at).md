@@ -20,7 +20,7 @@ func insertChild(_ child: XMLNode, at index: Int)
 - (void) insertChild:(NSXMLNode *) child atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 Insertion of the node increments the indexes of sibling nodes after it.
 

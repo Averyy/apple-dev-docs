@@ -20,7 +20,7 @@ func performDefaultImplementation() -> Any?
 - (id) performDefaultImplementation;
 ```
 
-#### Discussion
+## Discussion
 
 Do not invoke this method directly. [`execute()`](./execute%28%29.md) invokes this method when the command being executed is not supported by the class of the objects receiving the command. The default implementation returns `nil`.
 

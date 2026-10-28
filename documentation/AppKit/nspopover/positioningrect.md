@@ -19,7 +19,7 @@ var positioningRect: NSRect { get set }
 @property NSRect positioningRect;
 ```
 
-#### Discussion
+## Discussion
 
 Popovers are positioned relative to a positioning view and are automatically moved when the location or size of the positioning view changes.
 

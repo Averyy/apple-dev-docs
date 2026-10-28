@@ -25,7 +25,7 @@ func insertEmptyTimeRange(_ timeRange: CMTimeRange)
 - (void) insertEmptyTimeRange:(CMTimeRange) timeRange;
 ```
 
-#### Discussion
+## Discussion
 
 Inserting an empty time range pushes out existing content by the time range’s duration. Use this method to reserve a time range in the composition for a subsequently created track to present its media.
 

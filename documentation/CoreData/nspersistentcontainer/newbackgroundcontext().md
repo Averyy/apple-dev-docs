@@ -29,11 +29,11 @@ func newBackgroundContext() -> NSManagedObjectContext
 
 - [Using Core Data in the background](../using-core-data-in-the-background.md)
 
-#### Return Value
+## Return Value
 
 A newly created private managed object context.
 
-#### Discussion
+## Discussion
 
 Invoking this method causes the persistent container to create and return a new [`NSManagedObjectContext`](../nsmanagedobjectcontext.md) with the [`concurrencyType`](../nsmanagedobjectcontext/concurrencytype-swift.property.md) set to [`NSManagedObjectContextConcurrencyType.privateQueueConcurrencyType`](../nsmanagedobjectcontextconcurrencytype/privatequeueconcurrencytype.md). This new context will be associated with the [`NSPersistentStoreCoordinator`](../nspersistentstorecoordinator.md) directly and is set to consume [`NSManagedObjectContextDidSave`](../../Foundation/nsnotification/name-swift.struct/nsmanagedobjectcontextdidsave.md) broadcasts automatically.
 

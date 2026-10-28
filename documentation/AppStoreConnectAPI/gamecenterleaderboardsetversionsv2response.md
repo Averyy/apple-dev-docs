@@ -15,7 +15,7 @@ A response that contains a single Game Center leaderboard set versions v2 resour
 object GameCenterLeaderboardSetVersionsV2Response
 ```
 
-#### Overview
+## Overview
 
 - data:
 - included:

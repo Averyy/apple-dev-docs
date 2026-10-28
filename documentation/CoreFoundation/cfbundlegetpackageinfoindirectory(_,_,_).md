@@ -25,7 +25,7 @@ func CFBundleGetPackageInfoInDirectory(_ url: CFURL!, _ packageType: UnsafeMutab
 extern Boolean CFBundleGetPackageInfoInDirectory(CFURLRef url, UInt32 *packageType, UInt32 *packageCreator);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the package type and creator were found, otherwise `false`.
 

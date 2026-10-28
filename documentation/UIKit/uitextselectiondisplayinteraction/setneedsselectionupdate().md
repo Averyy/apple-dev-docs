@@ -27,7 +27,7 @@ func setNeedsSelectionUpdate()
 
 - [Adopting system selection UI in custom text views](../adopting-system-selection-ui-in-custom-text-views.md)
 
-#### Discussion
+## Discussion
 
 When the selection state changes in your text input view, call this method to notify the system of the change. The system fetches the current selection state from your text input view and updates the system UI to match.
 

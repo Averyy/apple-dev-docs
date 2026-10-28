@@ -21,7 +21,7 @@ A message that tells people why the app is requesting access to their photo libr
 
 - [Requesting Authorization for Media Capture on macOS](../requesting-authorization-for-media-capture-on-macos.md)
 
-#### Discussion
+## Discussion
 
 If your app only adds assets to the photo library and does not read assets, use the  [`NSPhotoLibraryAddUsageDescription`](./nsphotolibraryaddusagedescription.md) key instead.
 

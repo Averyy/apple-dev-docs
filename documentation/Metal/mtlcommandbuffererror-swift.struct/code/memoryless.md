@@ -24,7 +24,7 @@ case memoryless
 MTLCommandBufferErrorMemoryless
 ```
 
-#### Discussion
+## Discussion
 
 See the error string for more details.
 

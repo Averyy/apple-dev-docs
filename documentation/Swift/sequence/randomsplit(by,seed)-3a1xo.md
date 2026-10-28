@@ -21,7 +21,7 @@ Generates two AnnotatedFeatures by randomly splitting the elements of the sequen
 func randomSplit<Feature, Annotation>(by proportion: Double, seed: Int? = nil) -> ([AnnotatedFeature<Feature, Annotation>], [AnnotatedFeature<Feature, Annotation>]) where Annotation : Hashable, Self.Element == AnnotatedFeature<Feature, Annotation>
 ```
 
-#### Return Value
+## Return Value
 
 A tuple of arrays.
 

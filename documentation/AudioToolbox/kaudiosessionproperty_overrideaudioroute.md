@@ -23,7 +23,7 @@ var kAudioSessionProperty_OverrideAudioRoute: Int { get }
 kAudioSessionProperty_OverrideAudioRoute
 ```
 
-#### Discussion
+## Discussion
 
 A write-only `UInt32` value. Can be set with one of two values: [`kAudioSessionOverrideAudioRoute_None`](./kaudiosessionoverrideaudioroute_none.md), which specifies that you want to use the typical audio route; and [`kAudioSessionOverrideAudioRoute_Speaker`](./kaudiosessionoverrideaudioroute_speaker.md), when sends output audio to the built-in speaker. This property can be used only with the [`kAudioSessionCategory_PlayAndRecord`](./kaudiosessioncategory_playandrecord.md) (or the equivalent [`playAndRecord`](../AVFAudio/avaudiosession/category-swift.struct/playandrecord.md)) category.
 

@@ -25,17 +25,17 @@ func cString(using encoding: UInt) -> UnsafePointer<CChar>?
 - (const char *) cStringUsingEncoding:(NSStringEncoding) encoding;
 ```
 
-#### Return Value
+## Return Value
 
 A C string representation of the receiver using the encoding specified by `encoding`. Returns `NULL` if the receiver cannot be losslessly converted to `encoding`.
 
-#### Discussion
+## Discussion
 
 The returned C string is guaranteed to be valid only until either the receiver is freed, or until the current memory is emptied, whichever occurs first. You should copy the C string or use [`getCString(_:maxLength:encoding:)`](./getcstring%28_,maxlength,encoding%29.md) if it needs to store the C string beyond this time.
 
 You can use [`canBeConverted(to:)`](./canbeconverted%28to%29.md) to check whether a string can be losslessly converted to `encoding`. If it can’t, you can use [`data(using:allowLossyConversion:)`](./data%28using,allowlossyconversion%29.md) to get a C-string representation using `encoding`, allowing some loss of information (note that the data returned by [`data(using:allowLossyConversion:)`](./data%28using,allowlossyconversion%29.md) is not a strict C-string since it does not have a `NULL` terminator).
 
-##### Special Considerations
+### Special Considerations
 
 UTF-16 and UTF-32 are not considered to be C string encodings, and should not be used with this method—the results of passing [`NSUTF16StringEncoding`](../nsutf16stringencoding.md), [`NSUTF32StringEncoding`](../nsutf32stringencoding.md), or any of their variants are undefined.
 

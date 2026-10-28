@@ -23,11 +23,11 @@ func IORegistryEntrySearchCFProperty(_ entry: io_registry_entry_t, _ plane: Unsa
 CFTypeRef IORegistryEntrySearchCFProperty(io_registry_entry_t entry, const io_name_t plane, CFStringRef key, CFAllocatorRef allocator, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 A CF container is created and returned the caller on success. The caller should release with CFRelease.
 
-#### Discussion
+## Discussion
 
 This function creates an instantaneous snapshot of a registry entry property, creating a CF container analogue in the caller's task. Not every object available in the kernel is represented as a CF container; currently OSDictionary, OSArray, OSSet, OSSymbol, OSString, OSData, OSNumber, OSBoolean are created as their CF counterparts. This function will search for a property, starting first with specified registry entry's property table, then iterating recusively through either the parent registry entries or the child registry entries of this entry. Once the first occurrence is found, it will lookup and return the value of the property, using the same semantics as IORegistryEntryCreateCFProperty. The iteration keeps track of entries that have been recursed into previously to avoid loops.
 

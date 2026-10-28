@@ -24,7 +24,7 @@ func sourceTimedMetadata(byTrackID trackID: CMPersistentTrackID) -> AVTimedMetad
 - (AVTimedMetadataGroup *) sourceTimedMetadataByTrackID:(CMPersistentTrackID) trackID;
 ```
 
-#### Return Value
+## Return Value
 
 A timed metadata group, or `nil` if not found.
 

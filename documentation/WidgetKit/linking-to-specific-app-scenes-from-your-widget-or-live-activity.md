@@ -5,13 +5,13 @@
 
 Add deep links to your widgets and Live Activities that enable people to open a specific scene in your app.
 
-#### Overview
+## Overview
 
 People interact with a widget or Live Activity to launch a scene in the corresponding app with matching content and functionality. For example, when people click or tap a Stocks widget, the Stocks app opens to a page that displays information about that stock price.
 
 When you create widgets and Live Activities, think about how people interact with them. Make sure interactions launch the scene in your app that fits the widget’s content or the Live Activity.
 
-##### Launch a specific screen in your app
+### Launch a specific screen in your app
 
 By default, tapping or clicking your widget or Live Activity opens its corresponding app. To provide a good experience and not make people navigate to get to the right place in your app, open the app at a scene that matches the content of the widget or Live Activity. To open a specific screen in your app, add the [`widgetURL(_:)`](../SwiftUI/view/widgeturl%28_%29.md) modifier to a view in the view hierarchy of your widget or Live Activity.
 
@@ -45,13 +45,13 @@ For example, the leaderboard widget of the [Emoji Rangers: Supporting Live Activ
 
 > **Note**: When the widget or Live Activity receives an interaction, the system activates the containing app and passes the URL to [`onOpenURL(perform:)`](../SwiftUI/view/onopenurl%28perform%29.md), [`application(_:open:options:)`](../UIKit/uiapplicationdelegate/application%28_,open,options%29.md), or [`application(_:open:)`](../AppKit/nsapplicationdelegate/application%28_,open%29.md), depending on the life cycle your app uses.
 
-##### Detect the originating widget by accessing the user activity object
+### Detect the originating widget by accessing the user activity object
 
 If a widget doesn’t specify a deep link URL with [`widgetURL(_:)`](../SwiftUI/view/widgeturl%28_%29.md) or [`Link`](../SwiftUI/link.md) and a person interacts with it, the system opens the containing app and passes an [`NSUserActivity`](../Foundation/nsuseractivity.md) to [`onContinueUserActivity(_:perform:)`](../SwiftUI/view/oncontinueuseractivity%28_,perform%29.md), [`application(_:continue:restorationHandler:)`](../UIKit/uiapplicationdelegate/application%28_,continue,restorationhandler%29.md), or [`application(_:continue:restorationHandler:)`](../AppKit/nsapplicationdelegate/application%28_,continue,restorationhandler%29.md). The user activity’s `userInfo` dictionary contains details about the widget the person interacted with. Use the keys in [`WidgetCenter.UserInfoKey`](./widgetcenter/userinfokey.md) to access these values from Swift code. To access the `userInfo` values from Objective-C, use the keys `WGWidgetUserInfoKeyKind` and `WGWidgetUserInfoKeyFamily` instead. Then, update your app’s interface to match the widget so people don’t have to navigate to the right place in your app.
 
 > **Note**: If you use an [`AppIntentConfiguration`](./appintentconfiguration.md) to configure your widget, use the [`widgetConfigurationIntent(of:)`](../Foundation/nsuseractivity/widgetconfigurationintent%28of%29.md) function to access the widget’s intent. Similarly, if you use an [`IntentConfiguration`](./intentconfiguration.md), the user activity’s [`interaction`](../Foundation/nsuseractivity/interaction.md) property contains the associated [`INIntent`](../Intents/inintent.md).
 
-##### Review linking behavior in CarPlay
+### Review linking behavior in CarPlay
 
 In CarPlay, linking from your widget to your app works differently to match the specific context of using your app while using your car. For more information about supporting CarPlay, see [Adding StandBy and CarPlay support to your widget](./adding-standby-and-carplay-support-to-your-widget.md).
 

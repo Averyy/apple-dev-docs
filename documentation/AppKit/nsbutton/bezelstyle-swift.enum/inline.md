@@ -19,7 +19,7 @@ static var inline: NSButton.BezelStyle { get }
 NSBezelStyleInline
 ```
 
-#### Discussion
+## Discussion
 
 Common uses of this button style include:
 

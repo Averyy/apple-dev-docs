@@ -20,7 +20,7 @@ var ES_EVENT_TYPE_NOTIFY_UIPC_CONNECT: es_event_type_t { get }
 ES_EVENT_TYPE_NOTIFY_UIPC_CONNECT
 ```
 
-#### Discussion
+## Discussion
 
 This identifier corresponds to the [`es_events_t`](./es_events_t.md) union member [`uipc_connect`](./es_events_t/uipc_connect.md), which has the type [`es_event_uipc_connect_t`](./es_event_uipc_connect_t.md).
 

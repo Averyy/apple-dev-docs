@@ -19,11 +19,11 @@ func hyphenCharacter(forGlyphAt glyphIndex: Int) -> UTF32Char
 - (UTF32Char) hyphenCharacterForGlyphAtIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The hyphen character to be inserted after the glyph at `glyphIndex`.
 
-#### Discussion
+## Discussion
 
 The typesetter calls this method before hyphenating. A subclass can override this method to return a different hyphen glyph.
 

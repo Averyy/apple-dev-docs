@@ -19,7 +19,7 @@ object InvalidDeliveryStatusError
 
 - [App Store Server API changelog](./app-store-server-api-changelog.md)
 
-#### Discussion
+## Discussion
 
 For valid delivery status values, see [`deliveryStatus`](./deliverystatus.md) for [`ConsumptionRequest`](./consumptionrequest.md), or [`deliveryStatusV1`](./deliverystatusv1.md) for [`ConsumptionRequestV1`](./consumptionrequestv1.md).
 

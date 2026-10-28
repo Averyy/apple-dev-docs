@@ -23,11 +23,11 @@ init(radius: CGFloat)
 - (instancetype) initWithRadius:(CGFloat) radius;
 ```
 
-#### Return Value
+## Return Value
 
 A circular region with the specified radius.
 
-#### Discussion
+## Discussion
 
 The center of the circle is the origin of the region’s coordinate system.
 

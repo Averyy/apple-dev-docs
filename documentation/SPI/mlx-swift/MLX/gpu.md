@@ -17,11 +17,11 @@ API for controlling GPU related features.
 enum GPU
 ```
 
-#### Overview
+## Overview
 
 Note: previously this also had properties that managed the buffer use – those are now found in [`Memory`](./memory.md) but remain here as deprecated.
 
-##### See Also
+### See Also
 
 - [Running on iOS](./running-on-ios.md)
 - [`Memory`](./memory.md)

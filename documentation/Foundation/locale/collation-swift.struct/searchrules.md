@@ -21,7 +21,7 @@ A collation used for string search.
 static let searchRules: Locale.Collation
 ```
 
-#### Discussion
+## Discussion
 
 Use this collation only for determining whether to consider two strings as equivalent. Using this collation may modify the string for search purposes. For example, this colloation supresses the contractions in Thai and Lao.
 

@@ -19,7 +19,7 @@ var NSDeleteLineFunctionKey: Int { get }
 NSDeleteLineFunctionKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

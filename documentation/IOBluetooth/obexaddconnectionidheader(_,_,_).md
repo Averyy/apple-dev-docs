@@ -19,11 +19,11 @@ func OBEXAddConnectionIDHeader(_ inHeaderData: UnsafeRawPointer!, _ inHeaderData
 OBEXError OBEXAddConnectionIDHeader(const void *inHeaderData, uint32_t inHeaderDataLength, CFMutableDictionaryRef dictRef);
 ```
 
-#### Return Value
+## Return Value
 
 Error code, kOBEXSuccess (0) if success.
 
-#### Discussion
+## Discussion
 
 ConnectionID headers - OBEX Spec, 2.2.10: Byte Sequence
 

@@ -19,11 +19,11 @@ optional func convertInteractionPoint(_ point: CGPoint, toContainerAt containerL
 - (CGPoint) convertInteractionPoint:(CGPoint) point toContainerAtLocation:(id<NSTextLocation>) containerLocation;
 ```
 
-#### Return Value
+## Return Value
 
 The point mapped into the text container’s coordinate system. Return `point` unchanged when no transform is active.
 
-#### Discussion
+## Discussion
 
 `NSTextSelectionNavigation` calls this method before hit-testing to allow the data source to undo any display transform (rotation, flip, path layout, etc.) applied to the text.
 

@@ -23,11 +23,11 @@ convenience init(localizedName: String)
 - (instancetype) initWithLocalizedName:(NSString *) localizedName;
 ```
 
-#### Return Value
+## Return Value
 
 A new configuration object initialized with the specified localized name.
 
-#### Discussion
+## Discussion
 
 This is the designated initializer.
 

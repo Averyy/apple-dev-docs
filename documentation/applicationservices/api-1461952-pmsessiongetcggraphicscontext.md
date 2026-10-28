@@ -19,11 +19,11 @@ func PMSessionGetCGGraphicsContext(_ printSession: PMPrintSession, _ context: Un
 OSStatus PMSessionGetCGGraphicsContext(PMPrintSession printSession, CGContextRef  _Nullable *context);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./core_printing.md#1670007).
 
-#### Discussion
+## Discussion
 
 If you’re using Quartz 2D to draw the content for a print job, after each call to `PMSessionBeginPage` you should call `PMSessionGetCGGraphicsContext` to obtain the Quartz graphics context for the current page. Note that before you can use the function `PMSessionGetCGGraphicsContext`, you must have called `PMSessionBeginCGDocument` or [`PMSessionBeginCGDocumentNoDialog(_:_:_:)`](./api-1460101-pmsessionbegincgdocumentnodialog.md) instead of PMSessionBeginDocument or [PMSessionBeginDocumentNoDialog](./core_printing/api-1805538-pmsessionbegindocumentnodialog.md).
 

@@ -19,7 +19,7 @@ var animationTimeInterval: TimeInterval { get set }
 @property (atomic) NSTimeInterval animationTimeInterval;
 ```
 
-#### Discussion
+## Discussion
 
 If your screen saver has particular requirements for time between animation frames, call this method to set the animation rate to a reasonable value.
 

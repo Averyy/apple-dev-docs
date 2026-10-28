@@ -18,7 +18,7 @@ Indicates that the system limits communication features for the minor.
 static let communicationLimits: AgeRangeService.ParentalControls
 ```
 
-#### Discussion
+## Discussion
 
 When this option is present, the parent or guardian has enabled communication restrictions in Screen Time on behalf of their child or teen.
 

@@ -23,7 +23,7 @@ func matches(_ pattern: WKWebExtension.MatchPattern?, options: WKWebExtension.Ma
 - (BOOL) matchesPattern:(WKWebExtensionMatchPattern *) pattern options:(WKWebExtensionMatchPatternOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value indicating if the receiver pattern matches the specified pattern.
 

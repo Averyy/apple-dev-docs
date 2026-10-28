@@ -29,11 +29,11 @@ func createAudioUnit(with desc: AudioComponentDescription) throws -> AUAudioUnit
 
 - [Rendering Spatial Audio from Bluetooth headphones](../rendering-spatial-audio-from-bluetooth-headphones.md)
 
-#### Return Value
+## Return Value
 
 An instance of the extension’s audio unit.
 
-#### Discussion
+## Discussion
 
 This method is called only once per factory instance.
 

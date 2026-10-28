@@ -12,11 +12,11 @@ virtual UInt32 getMaxPayloadSize(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a UInt32 containing the currently set maximum payload size.
 
-#### Overview
+## Overview
 
 Returns the currently global maximum payload size in bytes.
 

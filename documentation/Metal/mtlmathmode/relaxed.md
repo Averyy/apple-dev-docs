@@ -24,7 +24,7 @@ case relaxed
 MTLMathModeRelaxed
 ```
 
-#### Discussion
+## Discussion
 
 This is the default for Apple silicon devices.
 

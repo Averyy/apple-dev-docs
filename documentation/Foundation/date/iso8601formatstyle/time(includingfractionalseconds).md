@@ -21,11 +21,11 @@ Modifies the ISO 8601 date format style to include the time in the formatted out
 func time(includingFractionalSeconds: Bool) -> Date.ISO8601FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 An ISO 8601 date format style modified to include the time.
 
-#### Discussion
+## Discussion
 
 The following example shows an ISO 8601 format with, and without, a time and fractional seconds.
 

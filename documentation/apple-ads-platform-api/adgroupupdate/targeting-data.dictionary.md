@@ -15,7 +15,7 @@ The targeting configuration for updating an existing ad group, specifying audien
 object AdGroupUpdate.Targeting
 ```
 
-#### Discussion
+## Discussion
 
 Defines the audience dimensions, such as geography, demographics, device, and behavior, to include or exclude when updating this ad group. The `daypart` dimension is include-only and doesn’t support `exclude`.
 

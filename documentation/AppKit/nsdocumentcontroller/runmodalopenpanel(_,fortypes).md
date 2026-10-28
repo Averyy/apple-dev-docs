@@ -19,7 +19,7 @@ func runModalOpenPanel(_ openPanel: NSOpenPanel, forTypes types: [String]?) -> I
 - (NSInteger) runModalOpenPanel:(NSOpenPanel *) openPanel forTypes:(NSArray<NSString *> *) types;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called by the [`urlsFromRunningOpenPanel()`](./urlsfromrunningopenpanel%28%29.md) method. It calls the `NSOpenPanel` [`runModalForTypes:`](../nsopenpanel/runmodalfortypes_.md) method, passing the `openPanel` object and the file extensions associated with a document type. The `extensions` parameter may also contain encoded HFS file types as well as filename extensions.
 

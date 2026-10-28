@@ -24,7 +24,7 @@ class func string(from contact: CNContact, style: CNContactFormatterStyle) -> St
 + (NSString *) stringFromContact:(CNContact *) contact style:(CNContactFormatterStyle) style;
 ```
 
-#### Return Value
+## Return Value
 
 The formatted contact name.
 

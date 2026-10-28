@@ -15,7 +15,7 @@ The request body for querying policy assignment with rejection reason details.
 object PolicyAssignmentQueryRequest
 ```
 
-#### Discussion
+## Discussion
 
 The `PolicyAssignmentQueryRequest` object extends the standard `QueryRequest` pattern. It accepts `filters`, `sorting`, and `pagination` to retrieve paginated `BrandRejectionReasonResponse` records.
 

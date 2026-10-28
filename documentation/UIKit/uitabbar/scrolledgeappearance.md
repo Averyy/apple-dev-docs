@@ -24,7 +24,7 @@ var scrollEdgeAppearance: UITabBarAppearance? { get set }
 @property (nonatomic, copy, readwrite, nullable) UITabBarAppearance * scrollEdgeAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 When a tab bar controller contains a tab bar and a scroll view, part of the scroll view’s content appears underneath the tab bar. If the edge of the scrolled content reaches that bar, UIKit applies the appearance settings in this property.
 

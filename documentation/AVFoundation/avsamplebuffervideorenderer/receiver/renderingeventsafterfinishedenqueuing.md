@@ -20,7 +20,7 @@ A sequence of events that may occur when rendering after enqueuing samples has f
 var renderingEventsAfterFinishedEnqueuing: some Sendable & AsyncSequence<AVSampleBufferVideoRenderer.Receiver.RenderingEvent, Never> { get }
 ```
 
-#### Discussion
+## Discussion
 
 After enqueuing samples, iterate over this sequence to discover any issues that may occur while the renderer continues rendering. Break out of the iteration when done monitoring rendering events.
 

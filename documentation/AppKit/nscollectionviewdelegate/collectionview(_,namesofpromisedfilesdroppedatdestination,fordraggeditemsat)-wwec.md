@@ -21,11 +21,11 @@ optional func collectionView(_ collectionView: NSCollectionView, namesOfPromised
 - (NSArray<NSString *> *) collectionView:(NSCollectionView *) collectionView namesOfPromisedFilesDroppedAtDestination:(NSURL *) dropURL forDraggedItemsAtIndexes:(NSIndexSet *) indexes;
 ```
 
-#### Return Value
+## Return Value
 
 An array of filenames (not full paths) for the created files that the receiver promises to create.
 
-#### Discussion
+## Discussion
 
 The delegate can support file promise drags by adding NSFilesPromisePboardType to the pasteboard in [`collectionView(_:writeItemsAt:to:)`](./collectionview%28_,writeitemsat,to%29-a1lk.md).
 

@@ -15,7 +15,7 @@ Remove an anchor with a given ID from camera region.
 final func removeAnchor(forID id: UUID) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `CameraRegionProvider.Error`
 

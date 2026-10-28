@@ -19,7 +19,7 @@ The list style that describes the behavior and appearance of a grouped list.
 struct GroupedListStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`grouped`](./liststyle/grouped.md) to construct this style.
 

@@ -24,7 +24,7 @@ var lowPassCutoff: Float { get set }
 @property (nonatomic) float lowPassCutoff;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `15000 Hz`. The valid range of values is `10 Hz` through `(sampleRate/2)`.
 

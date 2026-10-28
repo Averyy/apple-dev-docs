@@ -16,7 +16,7 @@ nonisolated
 func glassBackgroundEffect<T, S>(_ effect: S, in shape: T, displayMode: GlassBackgroundDisplayMode = .always) -> some View where T : InsettableShape, S : GlassBackgroundEffect
 ```
 
-#### Return Value
+## Return Value
 
 A view with a glass background.
 

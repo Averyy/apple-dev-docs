@@ -19,7 +19,7 @@ class func currentProcess() -> NSAppleEventDescriptor
 + (NSAppleEventDescriptor *) currentProcessDescriptor;
 ```
 
-#### Discussion
+## Discussion
 
 The result is suitable for use as the `targetDescriptor` parameter of `+appleEventWithEventClass:eventID:targetDescriptor:returnID:transactionID:`.
 

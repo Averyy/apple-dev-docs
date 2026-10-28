@@ -17,7 +17,7 @@ CloudKit.Container getContainer(
 );
 ```
 
-#### Return Value
+## Return Value
 
 The container with the specified container ID if it exists; otherwise, the value is undefined.
 

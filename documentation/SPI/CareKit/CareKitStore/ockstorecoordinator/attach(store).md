@@ -17,7 +17,7 @@ Attaches a new store. The new store must be capable of handling reading and writ
 func attach(store: OCKAnyStoreProtocol)
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: The order is which stores are attached is important.
 

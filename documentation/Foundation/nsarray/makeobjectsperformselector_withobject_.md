@@ -21,7 +21,7 @@ Sends the `aSelector` message to each object in the array, starting with the fir
 - (void) makeObjectsPerformSelector:(SEL) aSelector withObject:(id) argument;
 ```
 
-#### Discussion
+## Discussion
 
 This method raises an `NSInvalidArgumentException` if `aSelector` is `NULL`.
 

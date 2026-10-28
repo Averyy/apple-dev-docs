@@ -25,7 +25,7 @@ class MKGeoJSONDecoder
 @interface MKGeoJSONDecoder : NSObject
 ```
 
-#### Overview
+## Overview
 
 The GeoJSON decoder returns objects that conform to the [`MKGeoJSONObject`](./mkgeojsonobject.md) protocol.
 

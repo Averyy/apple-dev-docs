@@ -15,7 +15,7 @@ A response that contains a list of Game Center detail Game Center leaderboard se
 object GameCenterDetailGameCenterLeaderboardSetsV2LinkagesResponse
 ```
 
-#### Overview
+## Overview
 
 - data:
 - links:

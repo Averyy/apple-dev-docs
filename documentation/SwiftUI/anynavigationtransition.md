@@ -21,7 +21,7 @@ A type-erasing navigation transition that allows for providing any navigation tr
 struct AnyNavigationTransition
 ```
 
-#### Overview
+## Overview
 
 Use this navigation transition when you need to dynamically configure the transition of your content. For example, you could use this in a [`sheet(isPresented:onDismiss:content:)`](./view/sheet%28ispresented,ondismiss,content%29.md) modifier to dynamically configure how the sheet transitions in and out.
 

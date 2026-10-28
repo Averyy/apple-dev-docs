@@ -23,11 +23,11 @@ optional func selectionContainerViewBelowText(for interaction: UITextSelectionDi
 - (UIView *) selectionContainerViewBelowTextForSelectionDisplayInteraction:(UITextSelectionDisplayInteraction *) interaction;
 ```
 
-#### Return Value
+## Return Value
 
 The view in your interface you use to manage selection-related views.
 
-#### Discussion
+## Discussion
 
 Implement this delegate method if you use a view other than your text input view to display selection-related content and highlights. The container view you specify must sit below the text input view itself. The interaction object uses the view you provide as the parent for the views that display the selection highlight, selection handles, and caret.
 

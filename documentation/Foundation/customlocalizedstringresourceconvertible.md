@@ -21,7 +21,7 @@ A type that provides an out-of-process localizable description.
 protocol CustomLocalizedStringResourceConvertible
 ```
 
-#### Overview
+## Overview
 
 Similar to [`CustomStringConvertible`](../Swift/customstringconvertible.md), types that conform to [`CustomLocalizedStringResourceConvertible`](./customlocalizedstringresourceconvertible.md) provide their own representation when converting to a string instance. Whereas [`CustomStringConvertible`](../Swift/customstringconvertible.md) provides a [`description`](../Swift/customstringconvertible/description.md) string, this type offers a [`LocalizedStringResource`](./localizedstringresource.md). This allows out-of-process callers to create a localized description from the resource, possibly in a different locale than the current process uses.
 

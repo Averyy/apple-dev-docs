@@ -21,7 +21,7 @@ Provides a physical metaphor you can use to complement a visual experience.
 static func impact(flexibility: SensoryFeedback.Flexibility, intensity: Double = 1.0) -> SensoryFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Use this to provide feedback for UI elements colliding. It should supplement the user experience, since only some platforms will play feedback in response to it.
 

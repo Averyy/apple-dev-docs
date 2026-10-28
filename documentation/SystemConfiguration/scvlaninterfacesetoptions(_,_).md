@@ -19,7 +19,7 @@ func SCVLANInterfaceSetOptions(_ vlan: SCVLANInterface, _ newOptions: CFDictiona
 Boolean SCVLANInterfaceSetOptions(SCVLANInterfaceRef vlan, CFDictionaryRef newOptions);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the configuration was stored; `FALSE` if an error occurred.
 

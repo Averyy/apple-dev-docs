@@ -20,7 +20,7 @@ func NSIntegralRect(_ aRect: NSRect) -> NSRect
 extern NSRect NSIntegralRect(NSRect aRect);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of `aRect`, expanded outward just enough to ensure that none of its four defining values (x, y, width, and height) have fractional parts. If the width or height of `aRect` is `0` or negative, this function returns a rectangle with origin at (0.0, 0.0) and with zero width and height.
 

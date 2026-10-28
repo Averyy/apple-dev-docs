@@ -23,7 +23,7 @@ let AVCaptureSessionInterruptionReasonKey: String
 extern NSString * const AVCaptureSessionInterruptionReasonKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../Foundation/nsnumber.md) object containing a [`AVCaptureSession.InterruptionReason`](./avcapturesession/interruptionreason.md) value.
 

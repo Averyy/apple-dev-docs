@@ -24,7 +24,7 @@ func SCError() -> Int32
 int SCError();
 ```
 
-#### Return Value
+## Return Value
 
 The most recent status or error code generated as the result of calling a function defined by the System Configuration framework. See [Status and Error Codes](./api-1518026-status-and-error-codes.md) for descriptions of these codes.
 

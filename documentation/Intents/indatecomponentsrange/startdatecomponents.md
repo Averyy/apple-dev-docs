@@ -33,7 +33,7 @@ var startDateComponents: DateComponents? { get }
 @property (atomic, copy, readonly, nullable) NSDateComponents * startDateComponents;
 ```
 
-#### Discussion
+## Discussion
 
 The contents of this property are set at initialization time and cannot be changed later. If the value of this property is `nil`, the start time is in the distant past.
 

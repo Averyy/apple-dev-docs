@@ -21,7 +21,7 @@ The duration that should be removed at the beginning of the sample buffer, after
 static let trimDurationAtStart: CVAttachmentKeyDefinitionWithDefault<CMSampleBufferAttachmentKeyDefinitions.ShouldPropagate, CMTime>
 ```
 
-#### Discussion
+## Discussion
 
 The getter returns the default value of [`zero`](../cmtime/zero.md) (nothing removed) if this attachment is not present. In cases where all the output after decoding the sample buffer is to be discarded (for example, the samples are only being decoded to prime the decoder) the usual convention is to set [`trimDurationAtStart`](./trimdurationatstart.md) to the whole duration and not to set a [`trimDurationAtEnd`](./trimdurationatend.md) attachment.
 

@@ -25,11 +25,11 @@ func CFBundleLoadExecutable(_ bundle: CFBundle!) -> Bool
 extern Boolean CFBundleLoadExecutable(CFBundleRef bundle);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the executable was successfully loaded, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 You should typically try to avoid using this function, but instead use [`CFBundleGetFunctionPointerForName(_:_:)`](./cfbundlegetfunctionpointerforname%28_,_%29.md) and related functions since these make memory management of the bundle easier.
 

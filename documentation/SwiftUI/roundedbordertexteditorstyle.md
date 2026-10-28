@@ -16,7 +16,7 @@ nonisolated
 struct RoundedBorderTextEditorStyle
 ```
 
-#### Overview
+## Overview
 
 You can also use [`roundedBorder`](./texteditorstyle/roundedborder.md) to construct this style.
 

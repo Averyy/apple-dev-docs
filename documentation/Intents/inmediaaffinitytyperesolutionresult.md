@@ -24,7 +24,7 @@ class INMediaAffinityTypeResolutionResult
 @interface INMediaAffinityTypeResolutionResult : INIntentResolutionResult
 ```
 
-#### Overview
+## Overview
 
 You return an [`INMediaAffinityTypeResolutionResult`](./inmediaaffinitytyperesolutionresult.md) object when resolving parameters containing an [`INMediaAffinityType`](./inmediaaffinitytype.md) value. Use the creation method that best reflects your ability to resolve the parameter successfully.
 

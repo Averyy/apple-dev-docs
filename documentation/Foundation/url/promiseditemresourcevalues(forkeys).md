@@ -21,7 +21,7 @@ Gets resource values from URLs of ‘promised’ items.
 func promisedItemResourceValues(forKeys keys: Set<URLResourceKey>) throws -> URLResourceValues
 ```
 
-#### Discussion
+## Discussion
 
 A promised item is not guaranteed to have its contents in the file system until you use `FileCoordinator` to perform a coordinated read on its URL, which causes the contents to be downloaded or otherwise generated. Promised item URLs are returned by various APIs, including currently: NSMetadataQueryUbiquitousDataScope NSMetadataQueryUbiquitousDocumentsScope A `FilePresenter` presenting the contents of the directory located by -URLForUbiquitousContainerIdentifier: or a subdirectory thereof
 

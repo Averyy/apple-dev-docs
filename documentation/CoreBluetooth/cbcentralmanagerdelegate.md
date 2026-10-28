@@ -25,7 +25,7 @@ protocol CBCentralManagerDelegate : NSObjectProtocol
 @protocol CBCentralManagerDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The [`CBCentralManagerDelegate`](./cbcentralmanagerdelegate.md) protocol defines the methods that a delegate of a [`CBCentralManager`](./cbcentralmanager.md) object must adopt. The optional methods of the protocol allow the delegate to monitor the discovery, connectivity, and retrieval of peripheral devices. The only required method is [`centralManagerDidUpdateState(_:)`](./cbcentralmanagerdelegate/centralmanagerdidupdatestate%28_%29.md); the central manager calls this when its state updates, thereby indicating the availability of the central manager.
 

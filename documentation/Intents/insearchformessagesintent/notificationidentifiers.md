@@ -31,7 +31,7 @@ var notificationIdentifiers: [String]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<NSString *> * notificationIdentifiers;
 ```
 
-#### Discussion
+## Discussion
 
 When this property contains one or more [`NSString`](../../Foundation/nsstring.md) objects, your search should return [`UNNotification`](../../UserNotifications/unnotification.md) objects whose IDs match the specified strings. The [`UNNotificationRequest`](../../UserNotifications/unnotificationrequest.md) object, which is part of the notification, stores the notification’s identifier. You can use these identifiers to search your app’s delivered local and remote notifications.
 

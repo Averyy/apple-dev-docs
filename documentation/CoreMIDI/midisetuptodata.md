@@ -15,11 +15,11 @@ Creates an XML representation of a MIDISetup object.
 extern OSStatus MIDISetupToData(MIDISetupRef setup, CFDataRef*outData);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code.
 
-#### Discussion
+## Discussion
 
 As of CoreMIDI 1.1, it is usually not necessary to call this function, as CoreMIDI manages a single persistent MIDISetup itself.
 

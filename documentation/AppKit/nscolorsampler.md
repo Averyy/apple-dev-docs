@@ -19,7 +19,7 @@ class NSColorSampler
 @interface NSColorSampler : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create an [`NSColorSampler`](./nscolorsampler.md) object when you want the user to select a color based on existing onscreen colors. When you call the [`show(selectionHandler:)`](./nscolorsampler/show%28selectionhandler%29.md) method, AppKit shows the system’s color sampler interface and reports the selected color back to the provided block.
 

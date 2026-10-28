@@ -28,7 +28,7 @@ optional func confirm(intent: INStartCallIntent) async -> INStartCallIntentRespo
 - (void) confirmStartCall:(INStartCallIntent *) intent completion:(void (^)(INStartCallIntentResponse *response)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This method validates that your app is able to initiate the call to the specified users. For example, checking the availability of your calling network, verifying that the current user is able to place the call, or performing other tasks specific to your app.
 

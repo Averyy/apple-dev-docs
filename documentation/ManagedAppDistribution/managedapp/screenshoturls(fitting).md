@@ -19,11 +19,11 @@ An array of the app’s screenshot URLs.
 func screenshotURLs(fitting size: CGSize) -> [URL]
 ```
 
-#### Return Value
+## Return Value
 
 The URLs of the screenshots.
 
-#### Discussion
+## Discussion
 
 The screenshots scale to fit the given size.
 

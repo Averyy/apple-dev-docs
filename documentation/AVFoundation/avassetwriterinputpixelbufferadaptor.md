@@ -26,7 +26,7 @@ class AVAssetWriterInputPixelBufferAdaptor
 @interface AVAssetWriterInputPixelBufferAdaptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 A pixel buffer adaptor provides a pixel buffer pool that you use to allocate pixel buffers to the output file. Using the provided pool for buffer allocation is typically more efficient than managing your own pool.
 

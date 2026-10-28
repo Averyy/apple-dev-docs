@@ -25,11 +25,11 @@ class func bookmarkData(withContentsOf bookmarkFileURL: URL) throws -> Data
 + (NSData *) bookmarkDataWithContentsOfURL:(NSURL *) bookmarkFileURL error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The bookmark data for the alias file.
 
-#### Discussion
+## Discussion
 
 This method doesn’t check to see if `bookmarkFileURL` points to an alias file. This allows this method to work with any file containing bookmark data. If `bookmarkFileURL` refers to a file which does not contain bookmark data or to a non-file object, such as a directory or symbolic link, this method returns `nil` produces an error.
 

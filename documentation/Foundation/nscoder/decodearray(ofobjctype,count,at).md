@@ -25,7 +25,7 @@ func decodeArray(ofObjCType itemType: UnsafePointer<CChar>, count: Int, at array
 - (void) decodeArrayOfObjCType:(const char *) itemType count:(NSUInteger) count at:(void *) array;
 ```
 
-#### Discussion
+## Discussion
 
 The items are decoded into the buffer beginning at `address`, which must be large enough to contain them all. `itemType` must contain exactly one type code. `NSCoder`’s implementation invokes [`decodeValue(ofObjCType:at:)`](./decodevalue%28ofobjctype,at%29.md) to decode the entire array of items.
 
@@ -33,7 +33,7 @@ This method matches an [`encodeArray(ofObjCType:count:at:)`](./encodearray%28ofo
 
 For information on creating an Objective-C type code suitable for `itemType`, see [Type Encodings](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Articles/ocrtTypeEncodings.html#//apple_ref/doc/uid/TP40008048-CH100).
 
-##### Special Considerations
+### Special Considerations
 
 You should not use this method to decode C arrays of Objective-C objects. For historical reasons, returned objects will have an additional ownership reference which you can only relinquish using [`CFRelease`](../../CoreFoundation/cfrelease.md).
 

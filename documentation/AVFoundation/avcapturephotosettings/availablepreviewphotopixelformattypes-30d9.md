@@ -20,7 +20,7 @@ An array of available of pixel format types available to specify a preview photo
 var availablePreviewPhotoPixelFormatTypes: [OSType] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The array is sorted so that preview formats requiring fewer conversions come first.
 

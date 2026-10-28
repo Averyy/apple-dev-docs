@@ -16,11 +16,11 @@ immediately initiate collection of SMART data.
 IOReturn (*SMARTExecuteOffLineImmediate)(void *interface, Boolean extendedTest);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful, kIOReturnNoDevice if there is no connection to an IOService, kIOReturnExclusiveAccess if it is already opened by another client.
 
-#### Discussion
+## Discussion
 
 See section 8.54.4 of ATA/ATAPI-6.
 

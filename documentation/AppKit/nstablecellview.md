@@ -19,7 +19,7 @@ class NSTableCellView
 @interface NSTableCellView : NSView
 ```
 
-#### Overview
+## Overview
 
 The [`imageView`](./nstablecellview/imageview.md) and [`textField`](./nstablecellview/textfield.md) properties are connected in Interface Builder. Additional properties can be added by subclassing [`NSTableCellView`](./nstablecellview.md) and adding the required properties and connecting them programmatically or in Interface Builder.
 

@@ -25,7 +25,7 @@ func SparseRetain(_ SymbolicFactor: SparseOpaqueSymbolicFactorization) -> Sparse
 static SparseOpaqueSymbolicFactorization SparseRetain(SparseOpaqueSymbolicFactorization SymbolicFactor);
 ```
 
-#### Return Value
+## Return Value
 
 The supplied symbolic factorization object.
 

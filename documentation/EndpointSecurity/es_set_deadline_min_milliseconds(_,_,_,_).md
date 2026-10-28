@@ -19,11 +19,11 @@ func es_set_deadline_min_milliseconds(_ client: OpaquePointer, _ events: UnsafeP
 extern es_return_t es_set_deadline_min_milliseconds(es_client_t *client, const es_event_type_t *events, uint32_t event_count, uint32_t milliseconds);
 ```
 
-#### Return Value
+## Return Value
 
 ES_RETURN_SUCCESS on success, ES_RETURN_ERROR on failure, if client is not a descendants client, or if any event in the array is a bootstrap auth event.
 
-#### Discussion
+## Discussion
 
 This allows descendants clients to configure a deadline floor so that deadlines are never shorter than the specified value. Descendants clients can already kill or suspend their child processes directly, furthermore no system daemons are the children of ES clients, so strict deadline enforcement is unnecessary.
 

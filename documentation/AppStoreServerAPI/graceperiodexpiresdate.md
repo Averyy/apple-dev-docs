@@ -15,7 +15,7 @@ The time when the Billing Grace Period for subscription renewals expires.
 timestamp gracePeriodExpiresDate
 ```
 
-#### Discussion
+## Discussion
 
 For more information about billing grace periods, see [Enable Billing Grace Period for auto-renewable subscriptions](https://help.apple.com/app-store-connect/#/dev58bda3212).
 

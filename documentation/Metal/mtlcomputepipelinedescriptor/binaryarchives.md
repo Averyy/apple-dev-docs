@@ -24,7 +24,7 @@ var binaryArchives: [any MTLBinaryArchive]? { get set }
 @property (nonatomic, copy, readwrite, nullable) NSArray<id<MTLBinaryArchive>> * binaryArchives;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `nil`.
 

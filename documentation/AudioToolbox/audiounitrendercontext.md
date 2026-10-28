@@ -24,7 +24,7 @@ struct AudioUnitRenderContext;
 
 - [Adding Audio Unit Auxiliary Real-Time Threads to Audio Workgroups](./adding-audio-unit-auxiliary-real-time-threads-to-audio-workgroups.md)
 
-#### Overview
+## Overview
 
 When the thread context of a rendering operation changes, the system packages the new rendering context information in an [`AudioUnitRenderContext`](./audiounitrendercontext.md) structure and passes it to the [`AURenderContextObserver`](./aurendercontextobserver.md) block of any associated Audio Unit app extensions.
 

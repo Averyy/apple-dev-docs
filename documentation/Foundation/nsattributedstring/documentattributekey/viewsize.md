@@ -21,7 +21,7 @@ The view size.
 static let viewSize: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSValue`](../../nsvalue.md) object containing an [`NSSize`](../../nssize.md).
 

@@ -21,7 +21,7 @@ func addButton(descriptor: TCButtonDescriptor) -> TCButton
 - (TCButton *) addButtonWithDescriptor:(TCButtonDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new `TCButton` instance.
 

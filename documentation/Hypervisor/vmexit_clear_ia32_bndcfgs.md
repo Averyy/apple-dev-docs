@@ -19,7 +19,7 @@ var VMEXIT_CLEAR_IA32_BNDCFGS: UInt32 { get }
 VMEXIT_CLEAR_IA32_BNDCFGS
 ```
 
-#### Discussion
+## Discussion
 
 Must be `0`.
 

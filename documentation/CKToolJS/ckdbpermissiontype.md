@@ -20,7 +20,7 @@ interface CKDBPermissionType {
 };
 ```
 
-#### Overview
+## Overview
 
 Possible values are `NONE`, `READ_ONLY`, `READ_WRITE`, and `UNKNOWN`.
 

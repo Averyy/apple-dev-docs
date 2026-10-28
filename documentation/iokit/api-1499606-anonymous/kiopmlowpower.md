@@ -14,7 +14,7 @@
 kIOPMLowPower = 0x00010000
 ```
 
-#### Discussion
+## Discussion
 
 Indicates device is in a low power state. May be bitwis-OR'd together with kIOPMDeviceUsable flag, to indicate the device is still usable.
 

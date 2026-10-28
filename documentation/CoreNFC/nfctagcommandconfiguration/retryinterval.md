@@ -21,7 +21,7 @@ var retryInterval: TimeInterval { get set }
 @property (nonatomic, assign) NSTimeInterval retryInterval;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the value of this parameter is `0`.
 

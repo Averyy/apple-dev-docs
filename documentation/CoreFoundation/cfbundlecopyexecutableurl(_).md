@@ -25,7 +25,7 @@ func CFBundleCopyExecutableURL(_ bundle: CFBundle!) -> CFURL!
 extern CFURLRefCFBundleCopyExecutableURL(CFBundleRef bundle);
 ```
 
-#### Return Value
+## Return Value
 
 A CFURL object describing the location of `bundle`’s executable code, or `NULL` if none is found. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

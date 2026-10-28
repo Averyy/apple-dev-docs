@@ -19,7 +19,7 @@ Creates a data source from a folder that contains videos, each named after the h
 case labeledFiles(at: URL)
 ```
 
-#### Discussion
+## Discussion
 
 Create a hand action data source from a directory of videos with the `labeledFiles` case. You must name each video file with a hand action label, followed by a period and an arbitrary string, ending with the video file’s extension. For example, you can name a hand action classifier’s training files `Wave.3.mov`, `MoveCloser.1.mov`, `MoveCloser.2.mov`, and so on.
 

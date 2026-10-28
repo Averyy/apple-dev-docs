@@ -19,7 +19,7 @@ class func registerUnit(withName unitName: NSRulerView.UnitName, abbreviation: S
 + (void) registerUnitWithName:(NSRulerViewUnitName) unitName abbreviation:(NSString *) abbreviation unitToPointsConversionFactor:(CGFloat) conversionFactor stepUpCycle:(NSArray<NSNumber *> *) stepUpCycle stepDownCycle:(NSArray<NSNumber *> *) stepDownCycle;
 ```
 
-#### Discussion
+## Discussion
 
 `unitName` is the name of the unit in English, in plural form and capitalized by convention—“Inches”, for example. The unit name is used as a key to identify the measurement units and so shouldn’t be localized. `abbreviation` is a localized short form of the unit name, such as “in” for Inches. `conversionFactor` is the number of PostScript points in the specified unit; there are 72.0 points per inch, for example. `stepUpCycle` and `stepDownCycle` are arrays of NSNumbers that specify how hash marks are calculated, as explained in [Setting Up a Ruler View](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Rulers/Tasks/SettingUpRulerView.html#//apple_ref/doc/uid/20000874). All numbers in `stepUpCycle` should be greater than 1.0, those in `stepDownCycle` should be less than 1.0.
 

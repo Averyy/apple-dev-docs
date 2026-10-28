@@ -21,7 +21,7 @@ An error that sends to a peer connection’s event handler when the XPC runtime 
 #define XPC_ERROR_TERMINATION_IMMINENT
 ```
 
-#### Discussion
+## Discussion
 
 This error will be delivered to a peer connection’s event handler when the XPC runtime has determined that the program should exit and that all outstanding transactions must be wound down, and no new transactions can be opened.
 

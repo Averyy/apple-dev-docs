@@ -20,7 +20,7 @@ case critical
 ARCollaborationDataPriorityCritical
 ```
 
-#### Discussion
+## Discussion
 
 ARKit sets the data [`priority`](../priority-swift.property.md) to  [`ARSession.CollaborationData.Priority.critical`](./critical.md)  when it’s needed to establish or continue a collaborative session.
 

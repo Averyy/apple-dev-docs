@@ -21,7 +21,7 @@ var isInspectable: Bool { get set }
 @property (nonatomic, getter=isInspectable) BOOL inspectable;
 ```
 
-#### Discussion
+## Discussion
 
 A boolean indicating whether the JavaScript in this world is visible to the Web Inspector.
 

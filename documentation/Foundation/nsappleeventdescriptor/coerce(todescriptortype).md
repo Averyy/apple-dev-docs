@@ -20,7 +20,7 @@ func coerce(toDescriptorType descriptorType: DescType) -> NSAppleEventDescriptor
 - (NSAppleEventDescriptor *) coerceToDescriptorType:(DescType) descriptorType;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor of the specified type, or `nil` if an error occurs.
 

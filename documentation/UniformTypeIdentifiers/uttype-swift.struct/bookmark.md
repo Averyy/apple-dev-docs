@@ -21,7 +21,7 @@ A base type that represents bookmark data.
 static var bookmark: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.bookmark`.
 

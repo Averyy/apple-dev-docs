@@ -12,11 +12,11 @@ virtual IORangeAllocator * getAGPRangeAllocator(
  void );
 ```
 
-#### Return Value
+## Return Value
 
 Returns a pointer to the range allocator for the AGP space.
 
-#### Overview
+## Overview
 
 To allocate ranges in AGP space, obtain a range allocator for the space with this method. It is retained while the space is created (until destroyAGPSpace is called) and should not be released by the caller.
 

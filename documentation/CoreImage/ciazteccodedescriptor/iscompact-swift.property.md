@@ -24,7 +24,7 @@ var isCompact: Bool { get }
 @property (readonly) BOOL isCompact;
 ```
 
-#### Discussion
+## Discussion
 
 Compact Aztec symbols use one-fewer ring in the central finder pattern than full-range Aztec symbols of the same number of data layers.
 

@@ -11,11 +11,11 @@ Drops and frees all packets currently held by the queue.
 virtual UInt32 flush();
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of packets that were dropped and freed.
 
-#### Overview
+## Overview
 
 To ensure that all packets are removed from the queue, stop() should be called prior to flush(), to make sure there are no packets in-flight and being delivered to the target.
 

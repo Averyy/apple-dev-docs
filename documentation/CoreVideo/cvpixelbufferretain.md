@@ -21,11 +21,11 @@ Retains a pixel buffer.
 extern CVPixelBufferRefCVPixelBufferRetain(CVPixelBufferRef texture);
 ```
 
-#### Return Value
+## Return Value
 
 For convenience, the same pixel buffer you want to retain.
 
-#### Discussion
+## Discussion
 
 This function is equivalent to `CFRetain`, but is `NULL` safe.
 

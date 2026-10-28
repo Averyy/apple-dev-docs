@@ -18,7 +18,7 @@ A Boolean value that indicates whether the app receives location updates because
 var insufficientlyInUse: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../../Swift/true.md), then the app isn’t receiving location updates because it’s insufficiently in use.
 

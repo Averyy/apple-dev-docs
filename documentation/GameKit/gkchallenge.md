@@ -24,7 +24,7 @@ class GKChallenge
 @interface GKChallenge : NSObject
 ```
 
-#### Overview
+## Overview
 
 Players can use Game Center to challenge other players to beat their scores and achievements that they earn in your game. When a player issues a challenge to another player, Game Center sends a push notification to the other player. That player can then accept or refuse the challenge. If the player accepts the challenge, Game Center adds the challenge to the player’s list of challenges. Later, if the player beats the challenge, Game Center notifies both players.
 
@@ -35,11 +35,11 @@ Game Center supports two kinds of challenges:
 
 You never subclass the [`GKChallenge`](./gkchallenge.md) class directly. However, you can subclass [`GKScoreChallenge`](./gkscorechallenge.md) or [`GKAchievementChallenge`](./gkachievementchallenge.md) to create specific kinds of challenges.
 
-##### Enable Challenges
+### Enable Challenges
 
 You must enable challenges for your game in App Store Connect before you can use the challenges features. For details, see [Enable challenges](https://developer.apple.com/help/app-store-connect/configure-game-center/enable-challenges/) in App Store Connect Help.
 
-##### Load and Issue Challenges
+### Load and Issue Challenges
 
 You can load the challenges issued by the local player using the [`loadReceivedChallenges(completionHandler:)`](./gkchallenge/loadreceivedchallenges%28completionhandler%29.md) class method. You can issue challenges with the player’s permission using the [`challengeComposeController(withMessage:players:completion:)`](./gkscore/challengecomposecontroller%28withmessage,players,completion%29.md) method in the [`GKLeaderboard.Entry`](./gkleaderboard/entry.md), [`GKScore`](./gkscore.md), or [`GKAchievement`](./gkachievement.md) class.
 

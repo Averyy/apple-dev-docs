@@ -19,7 +19,7 @@ func SCDynamicStoreCreate(_ allocator: CFAllocator?, _ name: CFString, _ callout
 SCDynamicStoreRefSCDynamicStoreCreate(CFAllocatorRef allocator, CFStringRef name, SCDynamicStoreCallBack callout, SCDynamicStoreContext *context);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to the new dynamic store session. You must release the returned value.
 

@@ -4,7 +4,7 @@
 
 Displays elements horizontally and adds the ability to scroll to offscreen elements.
 
-#### Overview
+## Overview
 
 The `shelf` element is a horizontal row consisting of one or more elements. The user navigates along the items on a shelf by clicking left or right on the remote, and chooses an element by clicking the Select button on the remote. The generic shelf element structure is displayed first, followed by several standard shelf configurations. Here’s an example showing the basic layout of a `shelf` element.
 
@@ -26,7 +26,7 @@ The `shelf` element is a horizontal row consisting of one or more elements. The 
 
 There are several standard shelf configurations that are used to display related content.
 
-##### Also-Watched Shelf
+### Also-Watched Shelf
 
 The `shelf` element can display information about other products that have been watched by people who have also watched the selected product. The shelf displays the image you associate with the also-watched product, and the title is only displayed when the also-watched product is in focus. Here’s an example of a `shelf` element that contains three other products.
 
@@ -52,7 +52,7 @@ The `shelf` element can display information about other products that have been 
 </shelf>
 ```
 
-##### Cast-and-Crew Shelf
+### Cast-and-Crew Shelf
 
 The `shelf` element can display information about the cast and crew associated with the product. Each person is represented by a large circle that contains the individual’s initials. Below the circle is the individual’s name and the name of the character they play. Here’s an example of a `shelf` element that contains three cast members.
 
@@ -81,7 +81,7 @@ The `shelf` element can display information about the cast and crew associated w
 </shelf>
 ```
 
-##### Extras Shelf
+### Extras Shelf
 
 The `shelf` element can display information about additional items included with the product. Common additional items include deleted scenes, extended scenes, and trailers. The listing below shows an example of a `shelf` element that contains a link to the online extras, a brief description of the extras, and a product trailer.
 
@@ -114,7 +114,7 @@ The extras shelf typically contains two sections. The first section contains an 
 </shelf>
 ```
 
-##### Review-and-Ratings Shelf
+### Review-and-Ratings Shelf
 
 The `shelf` element can display a list of ratings and reviews of the item it is associated with. Typically, a `lockup` element is displayed, followed by one or more `buttonLockup` elements. Common rating lockups contain information from iTunes or Rotten Tomatoes.
 
@@ -163,13 +163,13 @@ The `shelf` element can display a list of ratings and reviews of the item it is 
 </shelf>
 ```
 
-##### Subelements of shelf
+### Subelements of shelf
 
 - [header](./header.md)
 - [section](./section.md)
 - [text](./text.md)
 
-##### Elements that Use shelf
+### Elements that Use shelf
 
 - [alertTemplate](./alerttemplate.md)
 - [descriptiveAlertTemplate](./descriptivealerttemplate.md)

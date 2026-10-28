@@ -21,7 +21,7 @@ Type that defines date styles varied in length or components included.
 struct DateStyle
 ```
 
-#### Overview
+## Overview
 
 The exact format depends on the locale. Possible values of date style include [`omitted`](./datestyle/omitted.md), [`numeric`](./datestyle/numeric.md), [`abbreviated`](./datestyle/abbreviated.md), [`long`](./datestyle/long.md), and [`complete`](./datestyle/complete.md).
 

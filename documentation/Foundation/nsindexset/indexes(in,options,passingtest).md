@@ -25,7 +25,7 @@ func indexes(in range: NSRange, options opts: NSEnumerationOptions = [], passing
 - (NSIndexSet *) indexesInRange:(NSRange) range options:(NSEnumerationOptions) opts passingTest:(BOOL (^)(NSUInteger idx, BOOL *stop)) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSIndexSet` containing the indexes of the receiving index set that passed the predicate Block test.
 

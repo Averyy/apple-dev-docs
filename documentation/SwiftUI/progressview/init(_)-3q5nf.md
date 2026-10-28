@@ -46,7 +46,7 @@ nonisolated
 init(_ titleKey: LocalizedStringKey) where Label == Text
 ```
 
-#### Discussion
+## Discussion
 
 This initializer creates a [`Text`](../text.md) view on your behalf, and treats the title similar to [`init(verbatim:)`](../text/init%28verbatim%29.md). See [`Text`](../text.md) for more information about localizing strings. To initialize a progress view with a localized string key, use the corresponding initializer that takes a `LocalizedStringKey` instance.
 

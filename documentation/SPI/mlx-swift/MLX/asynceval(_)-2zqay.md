@@ -17,7 +17,7 @@ Evaluate one or more `MLXArray` asynchronously.
 func asyncEval(_ values: some Sequence<Any>)
 ```
 
-#### Discussion
+## Discussion
 
 See [`asyncEval(_:)`](./asynceval%28_%29-488lb.md)
 

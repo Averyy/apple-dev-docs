@@ -18,7 +18,7 @@ Returns a pointer to the OSData object’s internal data buffer.
 const void * getBytesNoCopy(size_t start, size_t numBytes) const;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the data or NULL if the OSData does not have data for all the requested range.
 

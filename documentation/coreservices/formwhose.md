@@ -14,7 +14,7 @@
 var formWhose: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 Specifies a container of one or more objects and a test to perform on the objects.
 

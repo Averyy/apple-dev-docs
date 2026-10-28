@@ -21,7 +21,7 @@ The enqueued scheduled task type.
 case enqueued
 ```
 
-#### Discussion
+## Discussion
 
 Enqueued tasks execute asynchronously on the context’s queue. An enqueued task encapsulates an autorelease pool and a call to [`processPendingChanges()`](../processpendingchanges%28%29.md), and its behavior is analogous to [`perform(_:)`](../perform%28_%29.md). The context’s queue executes tasks in the order you add them.
 

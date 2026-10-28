@@ -19,11 +19,11 @@ convenience init?(systemSymbolName name: String, accessibilityDescription descri
 + (instancetype) imageWithSystemSymbolName:(NSString *) name accessibilityDescription:(NSString *) description;
 ```
 
-#### Return Value
+## Return Value
 
 A symbol image based on the name you specify; otherwise `nil` if the method couldn’t find a suitable image.
 
-#### Discussion
+## Discussion
 
 To look up the names of system symbol images, download the SF Symbols app from [Apple Design Resources](https://developer.apple.com/design/resources/).
 

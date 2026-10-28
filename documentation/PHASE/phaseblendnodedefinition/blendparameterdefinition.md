@@ -24,7 +24,7 @@ var blendParameterDefinition: PHASENumberMetaParameterDefinition? { get }
 @property (nonatomic, strong, readonly, nullable) PHASENumberMetaParameterDefinition * blendParameterDefinition;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value of this property to the [`init(blendMetaParameterDefinition:)`](./init%28blendmetaparameterdefinition%29.md) argument.
 

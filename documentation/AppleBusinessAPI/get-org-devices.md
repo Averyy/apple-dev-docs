@@ -9,7 +9,7 @@ Get a list of devices in an organization that enroll using Automated Device Enro
 **Availability**:
 - Apple Business API 2.6+
 
-##### Example
+### Example
 
 **Request**:
 

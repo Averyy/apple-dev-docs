@@ -13,7 +13,7 @@
 kUSBDeviceSpeedFull = 1
 ```
 
-#### Discussion
+## Discussion
 
 The device is a full speed device.
 

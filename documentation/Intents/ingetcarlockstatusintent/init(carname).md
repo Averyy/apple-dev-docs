@@ -23,11 +23,11 @@ init(carName: INSpeakableString?)
 - (instancetype) initWithCarName:(INSpeakableString *) carName;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized `INGetCarLockStatusIntent` object.
 
-#### Discussion
+## Discussion
 
 Normally, you don’t create instances of this class yourself. Instead, Siri creates instances when a user asks for the lock status of the car. However, you can use this method during testing to create intent objects to validate your intent-handling code paths.
 

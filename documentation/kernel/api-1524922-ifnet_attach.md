@@ -13,11 +13,11 @@
 errno_t ifnet_attach(ifnet_t interface, const struct sockaddr_dl *ll_addr);
 ```
 
-#### Return Value
+## Return Value
 
 Will return an error if there is anything wrong with the interface.
 
-#### Discussion
+## Discussion
 
 Attaches an interface to the global interface list. The interface must be setup properly before calling attach. The stack will take a reference on the interface and hold it until ifnet_detach is called.
 

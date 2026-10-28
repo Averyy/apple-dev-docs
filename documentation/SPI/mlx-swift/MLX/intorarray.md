@@ -17,7 +17,7 @@ Parameter for convolutions allowing single integers or arrays.
 enum IntOrArray
 ```
 
-#### Overview
+## Overview
 
 For example the numeric parameters here are all [`IntOrArray`](./intorarray.md):
 
@@ -25,7 +25,7 @@ For example the numeric parameters here are all [`IntOrArray`](./intorarray.md):
 convGeneral(input, weights, strides: 3, padding: [2, 2, 1, 0, 0], ...)
 ```
 
-##### See Also:
+### See Also:
 
 - [`IntOrPair`](./intorpair.md)
 - [`FloatOrArray`](./floatorarray.md)

@@ -21,7 +21,7 @@ func willSuspend()
 - (void) willSuspend;
 ```
 
-#### Discussion
+## Discussion
 
 The virtualized device stops generating interrupts and won’t accept new commands from the guest. You must halt any guest CPUs within a short interval after you call this method.
 

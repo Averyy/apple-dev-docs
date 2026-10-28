@@ -22,13 +22,13 @@ Contains a buffer object, and provides access to an instance of `Header` and con
 struct ManagedBufferPointer<Header, Element> where Element : ~Copyable
 ```
 
-#### Overview
+## Overview
 
 For most purposes, the `ManagedBuffer` class can be used on its own. However, in cases where objects of various different classes must serve as storage, you need to also use `ManagedBufferPointer`.
 
 A valid buffer class is non-`@objc`, with no declared stored properties.  Its `deinit` must destroy its stored `Header` and any constructed `Element`s.
 
-#### Example Buffer Class
+## Example Buffer Class
 
 ```swift
  class MyBuffer<Element> { // non-@objc

@@ -23,7 +23,7 @@ let kCTFontManufacturerNameKey: CFString
 extern CFStringRef const kCTFontManufacturerNameKey;
 ```
 
-#### Discussion
+## Discussion
 
 The name specifier for the manufacturer name.
 

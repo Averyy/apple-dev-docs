@@ -6,7 +6,7 @@
 
 An atom that identifies the location of each chunk of data in the media’s data stream.
 
-#### Overview
+## Overview
 
 Chunk offset atoms have an atom type of `'stco'`.
 

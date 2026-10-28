@@ -25,11 +25,11 @@ convenience init(radius: CGFloat)
 + (instancetype) sphereWithRadius:(CGFloat) radius;
 ```
 
-#### Return Value
+## Return Value
 
 A new sphere geometry.
 
-#### Discussion
+## Discussion
 
 The sphere is centered in its local coordinate system. For example, if you create a sphere whose radius is `5.0`, it extends from `-5.0` to `5.0` along each of the the x, y, and z-axes.
 

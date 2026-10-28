@@ -15,7 +15,7 @@ Use weak read and write barriers; use garbage-collected memory on copyIn.
 NSPointerFunctionsZeroingWeakMemory
 ```
 
-#### Discussion
+## Discussion
 
 If you do not use garbage collection, for object personalities, it will hold a non-retained object pointer.
 

@@ -20,11 +20,11 @@ func ODRecordSetNodeCredentials(_ record: ODRecordRef!, _ username: CFString!, _
 extern bool ODRecordSetNodeCredentials(ODRecordRef record, CFStringRef username, CFStringRef password, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the credentials are successfully set; otherwise, `false`.
 
-#### Discussion
+## Discussion
 
 If you want to set credentials for all references to a node, use [`ODNodeSetCredentials(_:_:_:_:_:)`](./odnodesetcredentials%28_,_,_,_,_%29.md) instead.
 

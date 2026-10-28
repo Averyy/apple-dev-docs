@@ -17,7 +17,7 @@ case custom
 NSBoxCustom
 ```
 
-#### Discussion
+## Discussion
 
 Specifies that the appearance of the box is determined entirely by the by box-configuration methods, without automatically applying Apple human interface guidelines. See Customizing for details.
 

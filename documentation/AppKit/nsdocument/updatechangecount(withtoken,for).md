@@ -19,7 +19,7 @@ func updateChangeCount(withToken changeCountToken: Any, for saveOperation: NSDoc
 - (void) updateChangeCountWithToken:(id) changeCountToken forSaveOperation:(NSSaveOperationType) saveOperation;
 ```
 
-#### Discussion
+## Discussion
 
 This method updates the values in the [`isDocumentEdited`](./isdocumentedited.md) and [`hasUnautosavedChanges`](./hasunautosavedchanges.md) properties. For example, [`save(to:ofType:for:completionHandler:)`](./save%28to,oftype,for,completionhandler%29.md) invokes this method, on the main thread, when it is done saving. The default implementation of this method also sends all of the document’s window controllers [`setDocumentEdited(_:)`](../nswindowcontroller/setdocumentedited%28_%29.md) messages when appropriate.
 

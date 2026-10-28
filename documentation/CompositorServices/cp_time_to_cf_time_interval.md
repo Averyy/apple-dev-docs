@@ -16,7 +16,7 @@ Converts a Mach absolute time value to a Core Foundation time value.
 CFTimeInterval cp_time_to_cf_time_interval(cp_time_t time);
 ```
 
-#### Return Value
+## Return Value
 
 The elapsed time in seconds that correspond to the specified time value.
 

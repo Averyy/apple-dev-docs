@@ -20,7 +20,7 @@ Health data types that require additional permission.
 
 - `health-records`: The app can request access to FHIR-backed clinical records.
 
-#### Discussion
+## Discussion
 
 The [HealthKit Entitlement](./com.apple.developer.healthkit.md) provides access to most HealthKit data types. However, because of their highly sensitive nature, some data types require additional entitlements. The [HealthKit Capabilities Entitlement](./com.apple.developer.healthkit.access.md) provides access to these data types.
 

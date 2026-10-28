@@ -28,7 +28,7 @@ SSLContextRefSSLCreateContext(CFAllocatorRef alloc, SSLProtocolSide protocolSide
 
 - [Using the Secure Socket Layer for Network Communication](./using-the-secure-socket-layer-for-network-communication.md)
 
-#### Return Value
+## Return Value
 
 A new context. In Objective-C, use [`CFRelease`](../CoreFoundation/cfrelease.md) to release this object’s memory when you are done with it.
 

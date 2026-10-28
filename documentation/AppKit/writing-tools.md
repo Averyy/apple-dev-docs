@@ -5,7 +5,7 @@
 
 Add support for Writing Tools to your app’s text views.
 
-#### Overview
+## Overview
 
 Writing Tools provides a simple way for people to improve what they write using your app. Text views that support Writing Tools gain the ability to proofread, rewrite, summarize, or compose content with the help of system-provided large language models (LLMs) and Apple Intelligence.
 

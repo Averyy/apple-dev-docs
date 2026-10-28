@@ -5,7 +5,7 @@
 
 Configure your app’s SharePlay support and define the activities that people can perform from your app.
 
-#### Overview
+## Overview
 
 SharePlay activities are an organic way to create experiences that people can enjoy together. When you add the Group Activities framework to your app, you gain the ability to share your app’s features over FaceTime, Messages, and AirDrop. Some examples of experiences people can share together include:
 
@@ -22,7 +22,7 @@ Consider the preceding list of activities, and any other activities your app sup
 
 After configuring your SharePlay activities, you can display and start them from the share sheet. See [Presenting SharePlay activities from your app’s UI](./promoting-shareplay-activities-from-your-apps-ui.md) for more information.
 
-##### Configure the Group Activities capability
+### Configure the Group Activities capability
 
 Before you start adding SharePlay support to your app, add the `Group Activities` capability to your Xcode project. Because SharePlay involves communication with other devices, you need this capability to support activities. To add the capability to your app:
 
@@ -34,7 +34,7 @@ Before you start adding SharePlay support to your app, add the `Group Activities
 Configure this capability only for app targets. When you add the Group Activities capability, Xcode adds the necessary entitlements to your app and updates its provisioning profile.
 For more information, see [Adding capabilities to your app](../Xcode/adding-capabilities-to-your-app.md).
 
-##### Create an activity
+### Create an activity
 
 Create a SharePlay experience by defining a struct conforming to the [`GroupActivity`](./groupactivity.md) protocol. This protocol provides the basic definition of a SharePlay activity and provides the information that SharePlay needs to promote that activity to participants.
 
@@ -65,7 +65,7 @@ Ensure your [`GroupActivity`](./groupactivity.md) type conforms to [`Transferabl
 
 > **Note**: If you have multiple activities in your app, each [`GroupActivity`](./groupactivity.md) type must have a unique string in its [`activityIdentifier`](./groupactivity/activityidentifier.md) property.
 
-##### Provide descriptive information about the activity
+### Provide descriptive information about the activity
 
 Each activity contains a [`GroupActivityMetadata`](./groupactivitymetadata.md) type that stores descriptive information about the activity. When inviting people to join the activity, the system incorporates this metadata into the system UI. A concise title, a short description of the activity, and an image help people understand which activity they’re joining. You can also provide additional details, such as a fallback URL that someone can use to join the activity from a web browser.
 

@@ -26,7 +26,7 @@ optional func windowScene(_ windowScene: UIWindowScene, performActionFor shortcu
 - (void) windowScene:(UIWindowScene *) windowScene performActionForShortcutItem:(UIApplicationShortcutItem *) shortcutItem completionHandler:(void (^)(BOOL succeeded)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 When the user selects one of your app’s shortcut items, use this method to perform the selected action. After you finish the action, execute the specified `completionHandler` block to report your success or failure in performing the action.
 

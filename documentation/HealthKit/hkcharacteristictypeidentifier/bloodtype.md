@@ -24,7 +24,7 @@ static let bloodType: HKCharacteristicTypeIdentifier
 extern HKCharacteristicTypeIdentifier const HKCharacteristicTypeIdentifierBloodType;
 ```
 
-#### Discussion
+## Discussion
 
 This type uses values from the [`HKBloodType`](../hkbloodtype.md) enum.
 

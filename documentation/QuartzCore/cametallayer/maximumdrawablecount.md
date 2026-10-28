@@ -24,7 +24,7 @@ var maximumDrawableCount: Int { get set }
 @property NSUInteger maximumDrawableCount;
 ```
 
-#### Discussion
+## Discussion
 
 You can set this value to `2` or `3` only; if you pass a different value, Core Animation ignores the value and throws an exception.
 

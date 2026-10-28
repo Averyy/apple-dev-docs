@@ -24,7 +24,7 @@ var targetTimestamp: CFTimeInterval { get }
 @property (nonatomic, readonly) CFTimeInterval targetTimestamp;
 ```
 
-#### Discussion
+## Discussion
 
 Your app needs to call the [`drawable`](./drawable.md) instance’s [`present()`](../../../Metal/mtldrawable/present%28%29.md) method before the deadline. GPU rendering can continue after this time, based on [`preferredFrameLatency`](../preferredframelatency.md). For more information on timing your app’s rendering, see [`metalDisplayLink(_:needsUpdate:)`](../../cametaldisplaylinkdelegate/metaldisplaylink%28_,needsupdate%29.md).
 

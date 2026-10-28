@@ -18,7 +18,7 @@ Creates an instance to check what languages are available.
 init()
 ```
 
-#### Discussion
+## Discussion
 
 This initializer uses the default translation strategy based on the SDK version your app was built with. Apps built with iOS 26.4 or macOS 26.4 SDKs and later default to checking for Apple Intelligence models when available. Apps built with earlier SDKs default to traditional models.
 

@@ -19,7 +19,7 @@ var options: NSPrintPanel.Options { get set }
 @property NSPrintPanelOptions options;
 ```
 
-#### Discussion
+## Discussion
 
 You can specify multiple options by adding them together. For a list of supported options, see [`NSPrintPanel.Options`](./options-swift.struct.md).
 

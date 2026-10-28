@@ -15,7 +15,7 @@ A string value that indicates that there are more zones to fetch.
 attribute string? continuationToken;
 ```
 
-#### Discussion
+## Discussion
 
 To fetch the other zones, pass the value of `continuationToken` as the `continuationToken` value in the next request
 

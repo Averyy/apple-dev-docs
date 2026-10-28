@@ -23,11 +23,11 @@ static func decodeMarkdown(from decoder: any Decoder) throws -> Self.Value
 
 Available when `Self` conforms to `DecodableAttributedStringKey`.
 
-#### Return Value
+## Return Value
 
 The decoded value.
 
-#### Discussion
+## Discussion
 
 The default implementation calls [`decode(from:)`](../decodableattributedstringkey/decode%28from%29.md), inherited from [`DecodableAttributedStringKey`](../decodableattributedstringkey.md), meaning it uses the same decoding as non-Markdown encoding.
 

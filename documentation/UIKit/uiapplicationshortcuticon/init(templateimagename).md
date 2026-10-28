@@ -22,11 +22,11 @@ convenience init(templateImageName: String)
 + (instancetype) iconWithTemplateImageName:(NSString *) templateImageName;
 ```
 
-#### Return Value
+## Return Value
 
 A Home Screen quick action icon initialized with the specified template image provided by your app.
 
-#### Discussion
+## Discussion
 
 Use this method to create icons based on custom artwork that you provide. If the image name you specify doesn’t correspond to a valid image resource in your app bundle, the system won’t display an icon.
 

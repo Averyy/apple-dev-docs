@@ -24,7 +24,7 @@ var recurrences: [DateComponents]? { get }
 @property (nonatomic, copy, readonly, nullable) NSArray<NSDateComponents *> * recurrences;
 ```
 
-#### Discussion
+## Discussion
 
 This property represents the days of the week that the trigger recurs; the trigger ignores all properties other than [`weekday`](../../Foundation/datecomponents/weekday.md) on the [`DateComponents`](../../Foundation/datecomponents.md) object.
 

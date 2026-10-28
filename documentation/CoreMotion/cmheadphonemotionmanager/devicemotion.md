@@ -23,7 +23,7 @@ var deviceMotion: CMDeviceMotion? { get }
 @property (readonly, nullable) CMDeviceMotion * deviceMotion;
 ```
 
-#### Discussion
+## Discussion
 
 This property is `nil` when there is no device-motion data.
 

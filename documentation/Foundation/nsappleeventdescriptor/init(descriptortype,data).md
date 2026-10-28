@@ -20,7 +20,7 @@ convenience init?(descriptorType: DescType, data: Data?)
 - (instancetype) initWithDescriptorType:(DescType) descriptorType data:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 An instance of `NSAppleEventDescriptor` with the specified type and data. Returns `nil` if an error occurs.
 

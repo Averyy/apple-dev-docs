@@ -19,7 +19,7 @@ func childIndex(forItem item: Any) -> Int
 - (NSInteger) childIndexForItem:(id) item;
 ```
 
-#### Discussion
+## Discussion
 
 The performance of this method is O(1) at best and O(n) at worst.
 

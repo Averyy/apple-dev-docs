@@ -25,7 +25,7 @@ void vDSP_vaddsub(const float *__I0, vDSP_Stride __I0S, const float *__I1, vDSP_
 
 - [Using vDSP for vector-based arithmetic](./using-vdsp-for-vector-based-arithmetic.md)
 
-#### Discussion
+## Discussion
 
 This function calculates the addition and subtraction of the first `N` elements of input vectors `A` and `B`, and writes the result to output vector `C`, as follows:
 

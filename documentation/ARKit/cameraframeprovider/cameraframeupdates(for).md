@@ -15,7 +15,7 @@ Gets a sequence of camera frame updates for a given video format.
 final func cameraFrameUpdates(for cameraVideoFormat: CameraVideoFormat) -> CameraFrameProvider.CameraFrameUpdates?
 ```
 
-#### Return Value
+## Return Value
 
 The sequence of camera frame updates. Returns `nil` if the provider wasn’t initialized with this format.
 

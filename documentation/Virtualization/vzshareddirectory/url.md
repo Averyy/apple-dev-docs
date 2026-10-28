@@ -19,7 +19,7 @@ var url: URL { get }
 @property (copy, readonly) NSURL * URL;
 ```
 
-#### Discussion
+## Discussion
 
 The URL must point to an existing directory path in the host file system.
 

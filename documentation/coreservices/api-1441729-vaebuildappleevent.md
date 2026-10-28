@@ -19,11 +19,11 @@ func vAEBuildAppleEvent(_ theClass: AEEventClass, _ theID: AEEventID, _ addressT
 OSStatus vAEBuildAppleEvent(AEEventClass theClass, AEEventID theID, DescType addressType, const void *addressData, Size addressLength, SInt16 returnID, SInt32 transactionID, AppleEvent *resultEvt, AEBuildError *error, const char *paramsFmt, va_list args);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 Passing an argument list to `vAEBuildAppleEvent` corresponds to passing a series of individual parameters to the [`AEBuildAppleEvent`](./api-1573757-aebuildappleevent.md) function.
 

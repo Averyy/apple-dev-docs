@@ -23,7 +23,7 @@ func show(_ vc: UIViewController, sender: Any?)
 - (void) showViewController:(UIViewController *) vc sender:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 Whenever possible, use this method (instead of modifying the contents of the [`viewControllers`](./viewcontrollers.md) property directly) to replace the primary view controller of your split view interface. This method displays the specified view controller in a way that’s optimal for the current size class in effect.
 

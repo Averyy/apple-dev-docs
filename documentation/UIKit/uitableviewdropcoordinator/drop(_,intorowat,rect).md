@@ -21,7 +21,7 @@ func drop(_ dragItem: UIDragItem, intoRowAt indexPath: IndexPath, rect: CGRect) 
 - (id<UIDragAnimating>) dropItem:(UIDragItem *) dragItem intoRowAtIndexPath:(NSIndexPath *) indexPath rect:(CGRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to animate drops where you incorporate the dragged items into another item of your table view. For example, when incorporating items into a folder, you would use this method to animate the items in a way that makes it look like they were placed into the folder.
 

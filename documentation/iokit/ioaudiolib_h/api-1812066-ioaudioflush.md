@@ -13,7 +13,7 @@ kern_return_t IOAudioFlush(
    IOAudioStreamPosition *end);
 ```
 
-#### Return Value
+## Return Value
 
 kern_return_t
 

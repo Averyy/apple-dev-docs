@@ -21,7 +21,7 @@ var deliveryDate: Date? { get set }
 @property (copy, nullable) NSDate * deliveryDate;
 ```
 
-#### Discussion
+## Discussion
 
 The delivery date is specified in an absolute time.
 

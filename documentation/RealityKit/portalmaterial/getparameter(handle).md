@@ -20,7 +20,7 @@ Returns the value of a parameter identified by a handle.
 func getParameter(handle: MaterialParameters.Handle) -> MaterialParameters.Value?
 ```
 
-#### Return Value
+## Return Value
 
 The current value of the parameter, or `nil` if the parameter has no value set on this material.
 

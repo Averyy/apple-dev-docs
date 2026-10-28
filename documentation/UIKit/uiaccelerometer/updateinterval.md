@@ -12,7 +12,7 @@ The interval at which to deliver acceleration data to the delegate.
 @property (nonatomic) NSTimeInterval updateInterval;
 ```
 
-#### Discussion
+## Discussion
 
 This property is measured in seconds. The value of this property is capped to certain minimum and maximum values. The maximum value is determined by the maximum frequency supported by the hardware. To ensure that it can deliver device orientation events in a timely fashion, the system determines the appropriate minimum value based on its needs.
 

@@ -22,7 +22,7 @@ func resumeWorkoutSession(_ workoutSession: HKWorkoutSession)
 - (void) resumeWorkoutSession:(HKWorkoutSession *) workoutSession;
 ```
 
-#### Discussion
+## Discussion
 
 This method resumes the provided session if it is currently paused. The workout session’s state transitions to [`HKWorkoutSessionState.running`](../hkworkoutsessionstate/running.md), and the system generates an [`HKWorkoutEventType.resume`](../hkworkouteventtype/resume.md) event and passes it to the workout session delegate’s `workoutSession:didGenerateEvent:` method.
 

@@ -25,11 +25,11 @@ func vImageConvert_ARGB16UToXRGB2101010(_ src: UnsafePointer<vImage_Buffer>, _ d
 vImage_Error vImageConvert_ARGB16UToXRGB2101010(const vImage_Buffer *src, const vImage_Buffer *dest, int32_t RGB101010RangeMin, int32_t RGB101010RangeMax, const uint8_t permuteMap[4], vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 The function uses the following calculation to perform the conversion:
 

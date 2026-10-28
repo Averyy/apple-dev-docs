@@ -5,7 +5,7 @@
 
 Provide a way for people to find, connect to, and control your media device by adding a device extension in your iOS app.
 
-#### Overview
+## Overview
 
 A media device extension brings TVs, speakers, and streaming devices into systems’s media device picker, the picker that opens when someone taps an [`AVRoutePickerView`](../AVKit/avroutepickerview.md) in an app. Your extension implements a media sharing protocol that handles discovery, connection, and playback for these devices.
 
@@ -19,7 +19,7 @@ When the device is active, your extension is ready to receive media. Media apps 
 
 Your extension works with [AVSystemRouting](../AVSystemRouting/AVSystemRouting.md), the framework media apps use to observe routes and control playback. Apps observe route changes through [`AVSystemRouteController`](../AVSystemRouting/avsystemroutecontroller-18ns8.md) and control playback through [`AVSystemRoute`](../AVSystemRouting/avsystemroute-5s2um.md). Your extension handles the protocol-specific communication with the hardware.
 
-#### Create and configure the extension target
+## Create and configure the extension target
 
 In Xcode, choose File > New > Target, select Generic Extension. Xcode adds the new extension to your project.
 
@@ -32,7 +32,7 @@ Both the extension and its container app require the [`com.apple.developer.media
 
 In the extension’s Info pane in Xcode, set `EXExtensionPointIdentifier` to `com.apple.media-device-extension` inside the `EXAppExtensionAttributes` dictionary.
 
-#### Declare your protocol type
+## Declare your protocol type
 
 Your Media Sharing Protocol ID identifies your protocol throughout the system, and you set it in three places that must all use the same value:
 
@@ -60,7 +60,7 @@ Declare a custom Uniform Type Identifier in the extension’s Info pane in Xcode
 
 The system uses the `UTTypeDescription` value as your protocol’s display name. It appears in the media device picker, in the Settings interface that lets people choose a preferred protocol, and in system-surfaced error screens. Choose a name that is short, recognizable, and appropriate for people to easily identify your device.
 
-#### Implement the media device extension
+## Implement the media device extension
 
 In the new target, create a class that conforms to [`MediaDeviceExtension`](./mediadeviceextension.md) and mark it with `@main`:
 
@@ -161,7 +161,7 @@ The `routingManager` property is how your extension communicates with the system
 
 The `supportsSimultaneousSessions` property tells the system whether your extension can handle multiple [`MediaOutputSession`](./mediaoutputsession.md) instances at the same time.
 
-#### Discover devices on the network
+## Discover devices on the network
 
 When a person opens the media device picker, the system calls [`startDeviceDiscovery()`](./mediadeviceextension/startdevicediscovery%28%29.md). Use your protocol’s discovery mechanism to find devices, then report them to the system through [`routingManager(for:)`](./mediadeviceroutingmanager/routingmanager%28for%29.md).
 
@@ -202,7 +202,7 @@ The next time someone opens the picker on the same network, the system uses the 
 
 Because of this caching, a device your extension hasn’t reported yet in the current session might appear in the picker. This is expected behavior, and the system removes the device if your extension calls [`lostDevice(_:)`](./mediadeviceroutingmanager/lostdevice%28_%29.md) or the device isn’t found when the person picks it.
 
-#### Activate a device
+## Activate a device
 
 When a person selects a device, the system calls [`activateDevice(_:session:for:)`](./mediadeviceextension/activatedevice%28_,session,for%29.md). Connect to the device and report the result through [`routingManager(for:)`](./mediadeviceroutingmanager/routingmanager%28for%29.md).
 
@@ -229,7 +229,7 @@ func activateDevice(
 
 When the person disconnects from the device, the system calls [`deactivateDevice(_:session:)`](./mediadeviceextension/deactivatedevice%28_,session%29.md). Disconnect and release any resources associated with the session.
 
-#### Handle device authorization
+## Handle device authorization
 
 Some devices require pairing before activation. When a device needs authorization, call [`requestPairingCode(for:session:reason:authorizationMethod:)`](./mediadeviceroutingmanager/requestpairingcode%28for,session,reason,authorizationmethod%29.md) to present a pairing interface. The [`MediaOutputDevice.AuthorizationMethod`](./mediaoutputdevice/authorizationmethod.md) type defines the available pairing interfaces:
 
@@ -295,7 +295,7 @@ func connectUsingPairingCode(
 }
 ```
 
-#### Start media playback
+## Start media playback
 
 After activation, the system calls [`startSession(_:identifier:url:)`](./mediadeviceextension/startsession%28_,identifier,url%29.md) to begin playback. Send the URL to the device and report success through [`routingManager(for:)`](./mediadeviceroutingmanager/routingmanager%28for%29.md):
 
@@ -332,7 +332,7 @@ The `playbackControl` parameter conforms to [`AVPlaybackUserInterfaceControllabl
 
 The system observes these properties and drives the shared playback UI from them, including Now Playing, the media device picker, and any controls surfaced by media apps. The system also uses the object’s conformance to `AVInterfacePlaybackControllable` to deliver play, pause, and seek commands back to your extension.
 
-##### Stream real-time samples
+### Stream real-time samples
 
 Some devices receive audio or video samples directly instead of fetching a URL. Real-time sample delivery is orthogonal to URL playback, and a device can support any combination of the two:
 
@@ -367,7 +367,7 @@ class MyDeviceExtension: MediaDeviceExtension, RealtimeSampleHandling {
 }
 ```
 
-#### Provide volume control
+## Provide volume control
 
 Configure volume support when you create a [`MediaOutputDevice`](./mediaoutputdevice.md) by setting its [`MediaOutputDevice.VolumeControl`](./mediaoutputdevice/volumecontrol-swift.enum.md) mode:
 

@@ -16,7 +16,7 @@
 void IOLockLock(struct IOLock *lock);
 ```
 
-#### Discussion
+## Discussion
 
 Lock a mutex.
 

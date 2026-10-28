@@ -23,11 +23,11 @@ string Keyword.DisplayStatus
 - `AD_GROUP_ON_HOLD`: The keyword’s parent ad group is on hold, stopping keyword delivery.
 - `CAMPAIGN_ON_HOLD`: The keyword’s parent campaign is on hold, stopping keyword delivery.
 
-#### Discussion
+## Discussion
 
 Because it rolls up the full hierarchy, a keyword can show `AD_GROUP_ON_HOLD` or `CAMPAIGN_ON_HOLD` even when its own status is otherwise fine.
 
-##### Example
+### Example
 
 ```json
 {

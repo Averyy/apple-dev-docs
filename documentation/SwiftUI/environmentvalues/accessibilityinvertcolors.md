@@ -21,7 +21,7 @@ Whether the system preference for Invert Colors is enabled.
 var accessibilityInvertColors: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 If this property’s value is true then the display will be inverted. In these cases it may be needed for UI drawing to be adjusted to in order to display optimally when inverted.
 

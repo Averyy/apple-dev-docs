@@ -19,7 +19,7 @@ Calls the given closure with an inout reference to the underlying storage bound 
 mutating func withMutableUniforms<UniformsType>(ofType: UniformsType.Type, stage: CustomShaderStage, _ callback: (inout UniformsType, inout CustomMaterial.ResourceStorage<UniformsType>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 SurfaceShaders and GeometryModifiers can declare an argument buffer parameter to be passed into their shader, along with the normal built in PBR parameters. This vastly increases the amount of data your surface shader or geometry modifier can have access to.
 

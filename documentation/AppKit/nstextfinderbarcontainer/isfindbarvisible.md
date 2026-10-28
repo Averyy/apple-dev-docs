@@ -20,7 +20,7 @@ var isFindBarVisible: Bool { get set }
 @property (getter=isFindBarVisible) BOOL findBarVisible;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is [`true`](../../Swift/true.md) and the [`findBarView`](./findbarview.md) property is set, then the find bar is displayed by the container. Otherwise, the find bar is not displayed.
 

@@ -21,7 +21,7 @@ struct PromotionInfo
 
 - [Supporting promoted Apple In-App Purchases in your app](../supporting-promoted-in-app-purchases-in-your-app.md)
 
-#### Overview
+## Overview
 
 The `Product.PromotionInfo` structure represents promoted Apple In-App Purchases available in your app. You set up promoted Apple In-App Purchases using App Store Connect, including their default display order and visibility settings. Use this API to override and customize their order and visibility. Overrides are per device. They can take effect after the user launches the app at least once.
 

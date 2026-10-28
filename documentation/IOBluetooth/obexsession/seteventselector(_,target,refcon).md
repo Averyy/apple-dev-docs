@@ -19,7 +19,7 @@ func setEventSelector(_ inEventSelector: Selector!, target inEventSelectorTarget
 - (void) setEventSelector:(SEL) inEventSelector target:(id) inEventSelectorTarget refCon:(void *) inUserRefCon;
 ```
 
-#### Discussion
+## Discussion
 
 Really not needed to be used, since the event selector will get set when an OBEX command is sent out.
 

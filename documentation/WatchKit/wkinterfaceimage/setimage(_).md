@@ -19,7 +19,7 @@ func setImage(_ image: UIImage?)
 - (void) setImage:(UIImage *) image;
 ```
 
-#### Discussion
+## Discussion
 
 This method changes the image being displayed. Use this method to assign either a static image or an animated image that you created using the [`animatedImage(with:duration:)`](../../UIKit/uiimage/animatedimage%28with,duration%29.md) method.
 

@@ -25,7 +25,7 @@ func BNNSGraphCompileOptionsSetOptimizationPreference(_ options: bnns_graph_comp
 void BNNSGraphCompileOptionsSetOptimizationPreference(bnns_graph_compile_options_t options, BNNSGraphOptimizationPreference preference);
 ```
 
-#### Discussion
+## Discussion
 
 The default option is to optimize for performance.
 

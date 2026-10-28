@@ -24,7 +24,7 @@ func AudioFormatGetPropertyInfo(_ inPropertyID: AudioFormatPropertyID, _ inSpeci
 extern OSStatus AudioFormatGetPropertyInfo(AudioFormatPropertyID inPropertyID, UInt32 inSpecifierSize, const void *inSpecifier, UInt32 *outPropertyDataSize);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Returns `noErr` if successful.
 

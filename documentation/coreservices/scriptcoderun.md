@@ -18,7 +18,7 @@ typedef struct ScriptCodeRun {
 } ScriptCodeRun;
 ```
 
-#### Overview
+## Overview
 
 To return the result of a multiple encoding conversion, the [`ConvertFromUnicodeToScriptCodeRun`](./api-1433662-convertfromunicodetoscriptcoderu.md) function uses a script code run structure. 
 

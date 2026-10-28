@@ -24,7 +24,7 @@ enum PHASECullOption
 enum PHASECullOption : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 Culling refers to the temporary removal of a sound from the audio output. This enumeration determines the actions a sampler node performs after the engine culls its sound or queues it for culling. To indicate a preference, the app sets a sampler node’s [`cullOption`](./phasesamplernodedefinition/culloption.md) property.
 

@@ -18,7 +18,7 @@ The result fetched from the CareKit store.
 var wrappedValue: CareStoreFetchedResults<Result, Query> { get }
 ```
 
-#### Discussion
+## Discussion
 
 The result synchronizes with changes in the store.
 

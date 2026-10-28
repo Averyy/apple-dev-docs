@@ -15,7 +15,7 @@ The device capability descriptor header.
 struct IOUSBDeviceCapabilityDescriptorHeader;
 ```
 
-#### Overview
+## Overview
 
 For more information about this descriptor type, see section 9.6.2 of the USB 3.0 specification at [http://www.usb.org](http://www.usb.org).
 

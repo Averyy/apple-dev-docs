@@ -23,7 +23,7 @@ var timedMetadataGroup: AVTimedMetadataGroup? { get }
 @property (nonatomic, readonly, nullable) AVTimedMetadataGroup * timedMetadataGroup;
 ```
 
-#### Discussion
+## Discussion
 
 Append this group to an [`AVAssetWriterInputMetadataAdaptor`](../avassetwriterinputmetadataadaptor.md) to write the Cinematic video metadata track.
 

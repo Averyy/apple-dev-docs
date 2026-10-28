@@ -19,7 +19,7 @@ A scalar count of the number of items.
 case count
 ```
 
-#### Discussion
+## Discussion
 
 The data for this type is an integer value.
 

@@ -19,11 +19,11 @@ class var extendedSRGB: NSColorSpace { get }
 @property (class, strong, readonly) NSColorSpace * extendedSRGBColorSpace;
 ```
 
-#### Return Value
+## Return Value
 
 The `NSColorSpace` object. This color-additive color space has red, green, blue, and alpha components.
 
-#### Discussion
+## Discussion
 
 This color space has the same colorimetry as sRGB, but component values below `0.0` and above `1.0` may be encoded in this color space. Negative values are encoded as the signed reflection of the original encoding function. `y(x) = sign(x)*f(abs(x))`
 

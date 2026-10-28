@@ -15,11 +15,11 @@ Writes file system metadata from a buffer to a cache, prior to flushing it to th
 - (BOOL) delayedMetadataWriteFrom:(void *) buffer startingAt:(off_t) offset length:(size_t) length error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean value indicating whether the metadata write succeeded.
 
-#### Discussion
+## Discussion
 
 This method provides access to the Kernel Buffer Cache, which is the primary system cache for file system metadata. Unlike equivalent kernel APIs, this method doesn’t hold any kernel-level claim to the underlying buffers.
 

@@ -22,7 +22,7 @@ typealias CVOpenGLESTexture = CVImageBuffer
 typedef CVImageBufferRef CVOpenGLESTextureRef;
 ```
 
-#### Discussion
+## Discussion
 
 Core Video OpenGLES textures are managed by a [`CVOpenGLESTextureCache`](./cvopenglestexturecache.md).
 

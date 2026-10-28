@@ -25,7 +25,7 @@ enum CLAuthorizationStatus
 enum CLAuthorizationStatus : int;
 ```
 
-#### Overview
+## Overview
 
 Handle changes to authorization status in your location manager’s delegate method, [`locationManager(_:didChangeAuthorization:)`](./cllocationmanagerdelegate/locationmanager%28_,didchangeauthorization%29.md).
 

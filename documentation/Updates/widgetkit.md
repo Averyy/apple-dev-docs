@@ -5,36 +5,36 @@
 
 Learn about important changes in WidgetKit.
 
-#### Overview
+## Overview
 
 Browse notable changes in [WidgetKit](../WidgetKit/WidgetKit.md).
 
-#### June 2025
+## June 2025
 
-##### General
+### General
 
 - Support Liquid Glass by using the [`WidgetAccentedRenderingMode`](../WidgetKit/widgetaccentedrenderingmode.md).
 - Use WidgetKit push notifications to request timeline reloads from the system by registering a [`WidgetPushHandler`](../WidgetKit/widgetpushhandler.md).
 - Update your [`WidgetFamily.systemSmall`](../WidgetKit/widgetfamily/systemsmall.md) widget to make sure it appears correctly in CarPlay.
 - Create controls that use [`ControlWidgetButton`](../WidgetKit/controlwidgetbutton.md) to execute an action and [`ControlWidgetToggle`](../WidgetKit/controlwidgettoggle.md) to toggle some state in your app in watchOS and macOS.
 
-##### Vision Pro
+### Vision Pro
 
 - Widgets are available on Apple Vision Pro. Support [`elevated`](../WidgetKit/widgetmountingstyle/elevated.md) and [`recessed`](../WidgetKit/widgetmountingstyle/recessed.md) mounting styles, choose [`glass`](../WidgetKit/widgettexture/glass.md) or [`paper`](../WidgetKit/widgettexture/paper.md) textures, and specify layouts for each [`LevelOfDetail`](../WidgetKit/levelofdetail.md) to show more ore less information based on a person’s proximity.
 
-##### Apple Watch
+### Apple Watch
 
 - Offer a relevance-based watchOS widget that uses a [`RelevanceConfiguration`](../WidgetKit/relevanceconfiguration.md).
 - Let people configure your watchOS widget by offering a widget that uses [`AppIntentConfiguration`](../WidgetKit/appintentconfiguration.md).
 
-#### June 2024
+## June 2024
 
-##### General
+### General
 
 - Controls allow people to customize and configure Control Center, their Lock Screen, and the Action button with actions from your apps. Take advantage of [`ControlWidgetButton`](../WidgetKit/controlwidgetbutton.md) to execute an action and [`ControlWidgetToggle`](../WidgetKit/controlwidgettoggle.md) to toggle some state in your app.
 - Accent views of widgets on iOS and iPadOS using [`widgetAccentable(_:)`](../SwiftUI/view/widgetaccentable%28_%29.md).
 
-##### Apple Watch
+### Apple Watch
 
 - Create interactive widgets on watchOS using a [`Button`](../SwiftUI/button.md) or [`Toggle`](../SwiftUI/toggle.md) to perform actions without launching your app.
 - Use an [`AccessoryWidgetGroup`](../WidgetKit/accessorywidgetgroup.md) container to provide up to three content views, optionally interactive, in a watchOS widget. Style [`AccessoryWidgetGroup`](../WidgetKit/accessorywidgetgroup.md) content views using [`circular`](../WidgetKit/accessorywidgetgroupstyle/circular.md) or [`roundedSquare`](../WidgetKit/accessorywidgetgroupstyle/roundedsquare.md).

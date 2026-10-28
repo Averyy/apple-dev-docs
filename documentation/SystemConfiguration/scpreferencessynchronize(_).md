@@ -19,7 +19,7 @@ func SCPreferencesSynchronize(_ prefs: SCPreferences)
 void SCPreferencesSynchronize(SCPreferencesRef prefs);
 ```
 
-#### Discussion
+## Discussion
 
 Any references to preference values returned by calls to [`SCPreferencesGetValue(_:_:)`](./scpreferencesgetvalue%28_,_%29.md) are no longer valid unless they were explicitly retained or copied. Any preference values that were updated (added, set, or removed), but not committed, are discarded.
 

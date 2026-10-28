@@ -17,7 +17,7 @@ This style is similar to `NSSwitchButton`, but it is used to constrain a selecti
 static const NSButtonType NSRadioButton;
 ```
 
-#### Discussion
+## Discussion
 
 You typically use this type of button in a group formed by an instance of [`NSMatrix`](./nsmatrix.md). In Interface Builder, a matrix of this type of button is available as a separate Library item.
 

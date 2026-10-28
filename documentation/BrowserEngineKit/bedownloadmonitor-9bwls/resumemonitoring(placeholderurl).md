@@ -13,11 +13,11 @@ Informs the system that it needs to resume monitoring the download.
 ## Declaration
 
 ```swift
-@objc
-(resumeMonitoring:completionHandler:) func resumeMonitoring(placeholderURL: URL) async throws
+@objc(resumeMonitoring:completionHandler:)
+func resumeMonitoring(placeholderURL: URL) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when your browser resumes the download after an interruption, for example, someone cancels the download, or your networking extension encounters a network error.
 

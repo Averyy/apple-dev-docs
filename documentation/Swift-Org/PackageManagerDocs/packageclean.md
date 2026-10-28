@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Delete build artifacts.
 
-#### Overview
+## Overview
 
 ```
 package clean [--package-path=<package-path>]

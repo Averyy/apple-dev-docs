@@ -24,7 +24,7 @@ enum MPSGraphNonMaximumSuppressionCoordinateMode
 enum MPSGraphNonMaximumSuppressionCoordinateMode : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 The coordinate mode to use. At initialization defaults to MPSGraphNonMaximumSuppressionCoordinateModeCornersHeightFirst. This mode specifies the representation used for the 4 box coordinate values. Center coordinate modes define a centered box and the box dimensions.
 

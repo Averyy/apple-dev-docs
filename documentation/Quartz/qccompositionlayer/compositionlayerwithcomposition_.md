@@ -15,7 +15,7 @@ Creates and returns an instance of a composition layer using the provided Quartz
 + (QCCompositionLayer *) compositionLayerWithComposition:(QCComposition *) composition;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `QCCompositionLayer` object or `nil` if initialization is not successful.
 

@@ -27,7 +27,7 @@ struct CFGregorianDate
 typedef struct { ... } CFGregorianDate;
 ```
 
-#### Overview
+## Overview
 
 [`CFGregorianDate`](./cfgregoriandate.md) is implemented using the smallest data type appropriate for the range of possible values. For example, there are only 12 months in the Gregorian year, so there is no need to use an integer type larger than 8 bits. To represent a time interval in Gregorian units, use a [`CFGregorianUnits`](./cfgregorianunits.md).
 

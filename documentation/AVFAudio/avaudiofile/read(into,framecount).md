@@ -25,7 +25,7 @@ func read(into buffer: AVAudioPCMBuffer, frameCount frames: AVAudioFrameCount) t
 - (BOOL) readIntoBuffer:(AVAudioPCMBuffer *) buffer frameCount:(AVAudioFrameCount) frames error:(NSError **) outError;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to read fewer frames than the buffer’s `frameCapacity`.
 

@@ -21,7 +21,7 @@ Remove the last n bytes from this span, returning the memory they occupy to the 
 mutating func removeLast(_ n: Int)
 ```
 
-#### Discussion
+## Discussion
 
 `n` must not be greater than `byteCount`.
 

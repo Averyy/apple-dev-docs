@@ -21,7 +21,7 @@ Generates a data frame by joining with another data frame type along the columns
 func joined<R, T>(_ other: R, on columnIDs: (left: ColumnID<T>, right: ColumnID<T>), kind: JoinKind = .inner) -> DataFrame where R : DataFrameProtocol, T : Hashable
 ```
 
-#### Return Value
+## Return Value
 
 A new data frame.
 

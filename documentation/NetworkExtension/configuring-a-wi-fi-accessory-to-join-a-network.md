@@ -13,13 +13,13 @@ Associate an iOS device with an accessory’s network to deliver network configu
 - macOS 11.0+
 - Xcode 12.4+
 
-#### Overview
+## Overview
 
 When you’re building a Wi-Fi accessory, getting it to join the user’s network can be a challenge.  The best way to accomplish this is by using [`EAWiFiUnconfiguredAccessoryBrowser`](../ExternalAccessory/eawifiunconfiguredaccessorybrowser.md) in the MFi Wireless Accessory Configuration process.  If you can’t use that process, this sample demonstrates an alternative method.
 
 The sample uses a macOS app to act as an accessory and an iOS app running on an iOS device to configure that accessory.  The goal for the iOS app is to deliver network information to the accessory so it can join the user’s standard Wi-Fi network.  To do that, the iOS app needs to deliver the user’s network SSID and its passphrase to the accessory.  After receiving this information, the accessory can use it to associate itself with the same network as the iOS device.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 After downloading the sample, follow these steps to configure it for use:
 
@@ -32,7 +32,7 @@ After downloading the sample, follow these steps to configure it for use:
 1. The iOS target is `BrandXAccessorySetup`, and requires the use of a physical device.
 2. When running the iOS target, you need to change the bundle identifier so that Xcode can create a unique provisioning profile with the project entitlements for your team.  Do this in the Xcode Signing & Capabilities pane by altering the Bundle Identifier text field.
 
-##### Run the sample code project
+### Run the sample code project
 
 The macOS app creates a QR code and a network listener. The QR code contains the accessory network information. The iOS app scans the QR code and sends that network information to the `BrandXAccessory` app for network configuration.
 

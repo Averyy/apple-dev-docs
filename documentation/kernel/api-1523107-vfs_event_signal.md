@@ -15,7 +15,7 @@ Post a kqueue-style event on a filesystem (EVFILT_FS).
 void vfs_event_signal(fsid_t *fsid, u_int32_t event, intptr_t data);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 

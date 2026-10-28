@@ -17,7 +17,7 @@ No reader session available or the session isn’t ready.
 case noReaderSession
 ```
 
-#### Discussion
+## Discussion
 
 The host app must call [`prepare(using:)`](../../paymentcardreader/prepare%28using%29.md) to create a reader session.
 

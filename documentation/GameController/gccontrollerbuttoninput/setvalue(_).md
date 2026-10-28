@@ -24,7 +24,7 @@ func setValue(_ value: Float)
 - (void) setValue:(float) value;
 ```
 
-#### Discussion
+## Discussion
 
 This method does nothing if the associated controller isn’t a snapshot (its [`isSnapshot`](../gccontroller/issnapshot.md) property is [`false`](../../Swift/false.md)`)`.
 

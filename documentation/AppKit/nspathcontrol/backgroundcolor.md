@@ -20,7 +20,7 @@ var backgroundColor: NSColor? { get set }
 @property (copy, nullable) NSColor * backgroundColor;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the background is set to a light blue color for `NSPathStyleStandard` and `nil` for the other styles. You can use `[NSColor clearColor]` to make the background transparent.
 

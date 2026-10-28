@@ -24,11 +24,11 @@ func yield() -> AsyncThrowingStream<Element, Failure>.Continuation.YieldResult w
 
 Available when `Failure` conforms to `Error`.
 
-#### Return Value
+## Return Value
 
 A `YieldResult` that indicates the success or failure of the yield operation.
 
-#### Discussion
+## Discussion
 
 Use this method with `AsyncThrowingStream` instances whose `Element` type is `Void`. In this case, the `yield()` call unblocks the awaiting iteration; there is no value to return.
 

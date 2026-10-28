@@ -24,11 +24,11 @@ func AudioFileReadBytes(_ inAudioFile: AudioFileID, _ inUseCache: Bool, _ inStar
 extern OSStatus AudioFileReadBytes(AudioFileID inAudioFile, Boolean inUseCache, SInt64 inStartingByte, UInt32 *ioNumBytes, void *outBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See Result Codes.
 
-#### Discussion
+## Discussion
 
 In most cases, you should use [`AudioFileReadPackets(_:_:_:_:_:_:_:)`](./audiofilereadpackets%28_,_,_,_,_,_,_%29.md) instead of this function.
 

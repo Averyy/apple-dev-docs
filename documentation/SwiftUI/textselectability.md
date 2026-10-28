@@ -19,7 +19,7 @@ A type that describes the ability to select text.
 protocol TextSelectability
 ```
 
-#### Overview
+## Overview
 
 To configure whether people can select text in your app, use the [`textSelection(_:)`](./view/textselection%28_%29.md) modifier, passing in a text selectability value like [`enabled`](./textselectability/enabled.md) or [`disabled`](./textselectability/disabled.md).
 

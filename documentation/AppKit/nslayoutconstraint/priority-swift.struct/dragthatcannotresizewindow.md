@@ -19,7 +19,7 @@ static var dragThatCannotResizeWindow: NSLayoutConstraint.Priority { get }
 static const NSLayoutPriority NSLayoutPriorityDragThatCannotResizeWindow;
 ```
 
-#### Discussion
+## Discussion
 
 A constraint with this priority cannot resize the window.
 

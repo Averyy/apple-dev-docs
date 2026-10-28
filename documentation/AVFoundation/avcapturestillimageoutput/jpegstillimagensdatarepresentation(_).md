@@ -24,11 +24,11 @@ class func jpegStillImageNSDataRepresentation(_ jpegSampleBuffer: CMSampleBuffer
 + (NSData *) jpegStillImageNSDataRepresentation:(CMSampleBufferRef) jpegSampleBuffer;
 ```
 
-#### Return Value
+## Return Value
 
 An `NSData` representation of `jpegSampleBuffer`.
 
-#### Discussion
+## Discussion
 
 This method merges the image data and `Exif` metadata sample buffer attachments without recompressing the image.
 

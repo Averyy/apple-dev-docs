@@ -25,11 +25,11 @@ init(protectionSpace space: URLProtectionSpace, proposedCredential credential: U
 - (instancetype) initWithProtectionSpace:(NSURLProtectionSpace *) space proposedCredential:(NSURLCredential *) credential previousFailureCount:(NSInteger) previousFailureCount failureResponse:(NSURLResponse *) response error:(NSError *) error sender:(id<NSURLAuthenticationChallengeSender>) sender;
 ```
 
-#### Return Value
+## Return Value
 
 A new authentication challenge object, with the given properties.
 
-#### Discussion
+## Discussion
 
 Most apps don’t create [`URLAuthenticationChallenge`](../urlauthenticationchallenge.md) instances themselves. Instead, they handle received challenges in the [`urlSession(_:task:didReceive:completionHandler:)`](../urlsessiontaskdelegate/urlsession%28_,task,didreceive,completionhandler%29.md) method of [`URLSessionTaskDelegate`](../urlsessiontaskdelegate.md).
 

@@ -21,7 +21,7 @@ A notification that posts after GameKit initializes the local player.
 extern NSNotificationName GKPlayerAuthenticationDidChangeNotificationName;
 ```
 
-#### Discussion
+## Discussion
 
 The object property for this notification is a `GKLocalPlayer` object. Passing `nil` provides standard Notification Center behavior, which is to receive the notification for any object.
 

@@ -24,7 +24,7 @@ class func cancelRequest(withRequestID requestID: PHLivePhotoRequestID)
 + (void) cancelLivePhotoRequestWithRequestID:(PHLivePhotoRequestID) requestID;
 ```
 
-#### Discussion
+## Discussion
 
 When you use the [`request(withResourceFileURLs:placeholderImage:targetSize:contentMode:resultHandler:)`](./request%28withresourcefileurls,placeholderimage,targetsize,contentmode,resulthandler%29.md) method to asynchronously load a Live Photo from resource files, the method returns a numeric identifier for the request. To cancel the request before it completes, provide the identifier when calling the [`cancelRequest(withRequestID:)`](./cancelrequest%28withrequestid%29.md) method.
 

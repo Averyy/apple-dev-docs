@@ -25,7 +25,7 @@ static var append: FileDescriptor.OpenOptions { get }
 
 - [Adopting Swift File Options](../../adopting-file-options.md)
 
-#### Discussion
+## Discussion
 
 If this option is specified, each time you write to the file, the new data is written at the end of the file, after all existing file data.
 

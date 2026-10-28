@@ -23,7 +23,7 @@ case blue
 UITableViewCellSelectionStyleBlue
 ```
 
-#### Discussion
+## Discussion
 
 In iOS 7, the selection color is no longer blue. Use [`UITableViewCell.SelectionStyle.default`](./default.md) instead.
 

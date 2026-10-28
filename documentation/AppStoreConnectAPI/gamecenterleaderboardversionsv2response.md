@@ -15,7 +15,7 @@ A response that contains a list of Game Center leaderboard version resources.
 object GameCenterLeaderboardVersionsV2Response
 ```
 
-#### Overview
+## Overview
 
 - data:
 - included:

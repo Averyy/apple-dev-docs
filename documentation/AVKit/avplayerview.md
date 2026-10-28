@@ -23,7 +23,7 @@ class AVPlayerView
 
 - [Implementing trimming in a macOS player](./implementing-trimming-in-a-macos-player.md)
 
-#### Overview
+## Overview
 
 The player view supports several controls styles, ranging from no controls to controls matching the look of QuickTime Player. This makes it easy for you to tailor the presentation to best match your use of the player view. Regardless of the selected controls style, the player view always supports the following standard set of keyboard shortcuts to control playback:
 

@@ -5,19 +5,19 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The visionOS 26.2 SDK provides support for developing apps for Apple Vision Pro devices running visionOS 26.3. The SDK comes bundled with Xcode 26.2. For information on the compatibility requirements for Xcode 26.2, see [Xcode 26.2 Release Notes](../Xcode-Release-Notes/xcode-26_2-release-notes.md).
 
-##### Game Controller
+### Game Controller
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `GCTouchedStateInput` might not correctly report the touch state of some buttons on PlayStation VR2 Sense game controllers.  (161227641) (FB20352828)
 
-##### StoreKit
+### StoreKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: [Product.products(for:)](../StoreKit/product/products%28for%29.md) fails silently instead of throwing errors.  (165186025) (FB21110809)
 

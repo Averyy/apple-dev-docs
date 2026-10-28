@@ -5,13 +5,13 @@
 
 Create a plug-in in Xcode with the FxPlug template.
 
-#### Overview
+## Overview
 
 When you run the FxPlug installation bundle, it makes an FxPlug Xcode template available in Xcode. The template’s application bundle contains preconfigured interfaces, source code files, and a Metal renderer that you can use to create a basic filter plug-in for adjusting brightness with Swift or Objective-C. Once you have the brightness plug-in working, you can modify it to make your own plug-in that serves your specific needs.
 
 > **Note**:  To set up your Mac to develop for FxPlug, see [Setting up for FxPlug development](./setting-up-for-fxplug-development.md).
 
-##### Create a basic plug-in from the Xcode template
+### Create a basic plug-in from the Xcode template
 
 Begin by launching Xcode and choosing “Create a new Xcode project,” then select the FxPlug 4 template.
 
@@ -29,7 +29,7 @@ This step ensures that your development environment is set up for FxPlug develop
 
 > 💡 **Tip**:  Quit the app you just created. Your plug-in app doesn’t need to be active for it to be discovered by the host application. You only need to launch it once to be registered by macOS as an available FxPlug plug-in.
 
-##### Try out your plug-in with Motion
+### Try out your plug-in with Motion
 
 Once you’ve successfully built and run the template plug-in, apply it to a Motion project to see it in effect.
 

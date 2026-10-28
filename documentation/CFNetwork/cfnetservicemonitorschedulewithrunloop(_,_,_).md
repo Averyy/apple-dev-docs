@@ -26,11 +26,11 @@ func CFNetServiceMonitorScheduleWithRunLoop(_ monitor: CFNetServiceMonitor, _ ru
 extern void CFNetServiceMonitorScheduleWithRunLoop(CFNetServiceMonitorRef monitor, CFRunLoopRef runLoop, CFStringRef runLoopMode);
 ```
 
-#### Discussion
+## Discussion
 
 Schedules the specified monitor on a run loop, which places the monitor in asynchronous mode. The caller is responsible for ensuring that at least one of the run loops on which the monitor is scheduled is being run.
 
-##### Special Considerations
+### Special Considerations
 
 This function is thread safe.
 

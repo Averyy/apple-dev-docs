@@ -24,7 +24,7 @@ class VNTargetedImageRequest
 @interface VNTargetedImageRequest : VNImageBasedRequest
 ```
 
-#### Overview
+## Overview
 
 Other Vision request handlers that operate on both the processed image and a secondary image inherit from this abstract base class. Instantiate one of its subclasses to perform image analysis, and pass in auxiliary image data by filling in the `options` dictionary at initialization.
 

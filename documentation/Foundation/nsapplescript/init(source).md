@@ -20,11 +20,11 @@ init?(source: String)
 - (instancetype) initWithSource:(NSString *) source;
 ```
 
-#### Return Value
+## Return Value
 
 The initialized script object, `nil` if an error occurs.
 
-#### Discussion
+## Discussion
 
 This method is a designated initializer for `NSAppleScript`.
 

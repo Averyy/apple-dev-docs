@@ -24,7 +24,7 @@ func AudioComponentFindNext(_ inComponent: AudioComponent?, _ inDesc: UnsafePoin
 extern AudioComponentAudioComponentFindNext(AudioComponent inComponent, const AudioComponentDescription *inDesc);
 ```
 
-#### Return Value
+## Return Value
 
 An audio component, or [`nil`](../ObjectiveC/nil-227m0.md) if not found.
 

@@ -24,11 +24,11 @@ class func `default`() -> PHAssetResourceManager
 + (PHAssetResourceManager *) defaultManager;
 ```
 
-#### Return Value
+## Return Value
 
 The asset resource manager.
 
-#### Discussion
+## Discussion
 
 This method always returns the same asset resource manager object, which is shared for all uses in your app.
 

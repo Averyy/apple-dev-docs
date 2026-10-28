@@ -26,7 +26,7 @@ func start(at when: AVAudioTime?) async -> PHASESoundEvent.StartHandlerReason
 - (void) startAtTime:(AVAudioTime *) when completion:(void (^)(PHASESoundEventStartHandlerReason reason)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Start the sound event
 

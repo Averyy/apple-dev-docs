@@ -19,7 +19,7 @@ The inline large mode.
 static var inlineLarge: ToolbarTitleDisplayMode { get }
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, this behavior displays the title as large inside the toolbar and moves any leading or centered toolbar items into the overflow menu of the toolbar. This has no effect in macOS.
 

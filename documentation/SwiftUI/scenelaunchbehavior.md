@@ -16,7 +16,7 @@ The launch behavior for a scene.
 struct SceneLaunchBehavior
 ```
 
-#### Overview
+## Overview
 
 Use the [`defaultLaunchBehavior(_:)`](./scene/defaultlaunchbehavior%28_%29.md) modifier to apply a value of this type to a [`Scene`](./scene.md) you specify in your [`App`](./app.md). The value you specify determines how the system will present the scene in the absense of any previously restored scenes on launch of your application.
 

@@ -9,7 +9,7 @@ Unregister one or more domains associated with a previously registered merchant.
 **Availability**:
 - Apple Pay Web Merchant Registration API 1.0+
 
-#### Discussion
+## Discussion
 
 Only request to unregister merchants for domains you previously registered using the [`Register Merchant`](./register-merchant.md) API.
 

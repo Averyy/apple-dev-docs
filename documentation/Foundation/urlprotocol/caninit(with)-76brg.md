@@ -25,11 +25,11 @@ class func canInit(with request: URLRequest) -> Bool
 + (BOOL) canInitWithRequest:(NSURLRequest *) request;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the protocol subclass can handle `request`, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 A subclass should inspect `request` and determine whether or not the implementation can perform a load with that request.
 

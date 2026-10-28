@@ -19,7 +19,7 @@ protocol NSScrubberFlowLayoutDelegate : NSScrubberDelegate
 @protocol NSScrubberFlowLayoutDelegate <NSScrubberDelegate>
 ```
 
-#### Overview
+## Overview
 
 This protocol conforms to the [`NSScrubberDelegate`](./nsscrubberdelegate.md) protocol. Create an object that conforms to [`NSScrubberFlowLayoutDelegate`](./nsscrubberflowlayoutdelegate.md) and assign it to the [`delegate`](./nsscrubber/delegate.md) property of your scrubber object.
 

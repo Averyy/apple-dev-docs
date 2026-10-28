@@ -5,17 +5,17 @@
 
 Create a TestFlight distribution workflow for internal testers.
 
-#### Overview
+## Overview
 
 When you’re ready to get feedback, use Xcode Cloud to deliver builds to TestFlight. Distributing your app with TestFlight lets people try new features and report bugs. When you’re ready to distribute your app through the App Store, you can use Xcode Cloud to deliver builds too.
 
-#### Before you begin
+## Before you begin
 
 Before you create a distribution workflow, set up Xcode Cloud to build and test your app for development. For more information, see [Getting started with Xcode Cloud](./getting-started-with-xcode-cloud.md).
 
 If you don’t have an app record in App Store Connect, make sure that your Apple Developer Program account has permission to create app records before you set up distribution. To join the Apple Developer Program, see [Become a member](https://developer.apple.com/programs/enroll/).
 
-#### Create an app record
+## Create an app record
 
 To get started, click the Cloud tab in the Report navigator. Control-click your product and choose Set Up Distribution from the context menu.
 
@@ -31,7 +31,7 @@ Xcode Cloud creates a workflow for getting started with internal TestFlight dist
 
 Alternatively, create an app record in App Store Connect before you set up distribution in Xcode. For more information, see [Add a new app](https://developer.apple.com/help/app-store-connect/create-an-app-record/add-a-new-app).
 
-#### Start your first build
+## Start your first build
 
 Then, start a build of your app or framework with Xcode Cloud.
 
@@ -42,7 +42,7 @@ Then, start a build of your app or framework with Xcode Cloud.
 
 Xcode Cloud archives the build and uploads it to App Store Connect for you.
 
-#### View build progress
+## View build progress
 
 As the final step, view the build in the Cloud pane of the Report navigator. To view distribution builds and manage workflows in App Store Connect instead, click your app, and then click the Xcode Cloud tab. In the sidebar, navigate to your builds, workflows, and settings.
 

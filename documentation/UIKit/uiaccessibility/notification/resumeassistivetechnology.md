@@ -25,7 +25,7 @@ static let resumeAssistiveTechnology: UIAccessibility.Notification
 extern const UIAccessibilityNotifications UIAccessibilityResumeAssistiveTechnologyNotification;
 ```
 
-#### Discussion
+## Discussion
 
 When posting the notification, specify the assistive app to resume as the parameter. You must post this notification to balance out the previous posting of a [`pauseAssistiveTechnology`](./pauseassistivetechnology.md) notification. Post this notification using the [`post(notification:argument:)`](../post%28notification,argument%29.md) function.
 

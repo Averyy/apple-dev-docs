@@ -10,7 +10,7 @@ virtual IOVideoStream* getStream(
  UInt32streamIndex);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the number of streams of the device.
 

@@ -23,7 +23,7 @@ convenience init?(payee: INPerson?, payer: INPerson?, currencyAmount: INCurrency
 - (instancetype) initWithPayee:(INPerson *) payee payer:(INPerson *) payer currencyAmount:(INCurrencyAmount *) currencyAmount paymentMethod:(INPaymentMethod *) paymentMethod note:(NSString *) note status:(INPaymentStatus) status;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized payment record object.
 

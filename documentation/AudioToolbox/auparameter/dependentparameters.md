@@ -32,7 +32,7 @@ var dependentParameters: [NSNumber]? { get }
 @property (atomic, copy, readonly, nullable) NSArray<NSNumber *> * dependentParameters;
 ```
 
-#### Discussion
+## Discussion
 
 The array contains [`NSNumber`](../../Foundation/nsnumber.md) objects representing [`AUParameterAddress`](../auparameteraddress.md) values.
 

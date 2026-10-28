@@ -20,7 +20,7 @@ A directive for specifying Swift-DocC’s automatic behavior when generating a p
 @AutomaticTitleHeading(_ enabledness: Enabledness)
 ```
 
-#### Overview
+## Overview
 
 A title heading is also known as a page eyebrow or kicker.
 

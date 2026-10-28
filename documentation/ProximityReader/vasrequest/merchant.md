@@ -21,7 +21,7 @@ struct Merchant
 
 - [Accepting loyalty passes from Wallet](../accepting-loyalty-passes-from-wallet.md)
 
-#### Overview
+## Overview
 
 Create `Merchant` objects to identify merchants whose loyalty programs you support. When placing a request for loyalty card information, or Value Added Services (VAS) information, specify the associated merchant details. The system uses the merchant information to return details only for those merchants.
 

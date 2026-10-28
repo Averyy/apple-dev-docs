@@ -25,7 +25,7 @@ var interval: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval interval;
 ```
 
-#### Discussion
+## Discussion
 
 The `interval` property provides the number of seconds to be skipped when a skip command is executed.
 

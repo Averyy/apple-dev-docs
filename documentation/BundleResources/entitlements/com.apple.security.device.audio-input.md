@@ -14,7 +14,7 @@ A Boolean value that indicates whether the app may record audio using the built-
 - **Name**: `com.apple.security.device.audio-input` (Audio Input)
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, first enable the Hardened Runtime capability in Xcode, and then under Resource Access, select Audio Input.
 

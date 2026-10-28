@@ -23,7 +23,7 @@ static var readCompletion: NotificationCenter.BaseMessageIdentifier<FileHandle.R
 
 Available when `Self` is `NotificationCenter.BaseMessageIdentifier<FileHandle.ReadCompletionMessage>`.
 
-#### Discussion
+## Discussion
 
 Use this identifier with [`NotificationCenter`](../../notificationcenter.md)’s `addObserver(of:for:using:)` or `messages(of:for:bufferSize:)` methods to observe messages of type [`FileHandle.ReadCompletionMessage`](../../filehandle/readcompletionmessage.md).
 

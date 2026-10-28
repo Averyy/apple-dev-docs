@@ -22,7 +22,7 @@ var teamIdentifier: String? { get }
 @property (nonatomic, copy, readonly, nullable) NSString * teamIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 You can get the team identifier for an app using the `codesign` command line utility:
 

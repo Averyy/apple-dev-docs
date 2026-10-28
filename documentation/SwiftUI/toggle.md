@@ -29,7 +29,7 @@ struct Toggle<Label> where Label : View
 - [Laying out a simple view](./laying-out-a-simple-view.md)
 - [Populating SwiftUI menus with adaptive controls](./populating-swiftui-menus-with-adaptive-controls.md)
 
-#### Overview
+## Overview
 
 You create a toggle by providing an `isOn` binding and a label. Bind `isOn` to a Boolean property that determines whether the toggle is on or off. Set the label to a view that visually describes the purpose of switching between toggle states. For example:
 
@@ -82,7 +82,7 @@ var body: some View {
 
 > **Note**: This behavior does not apply to [`button`](./togglestyle/button.md).
 
-##### Styling toggles
+### Styling toggles
 
 Toggles use a default style that varies based on both the platform and the context. For more information, read about the [`automatic`](./togglestyle/automatic.md) toggle style.
 

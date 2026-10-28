@@ -17,7 +17,7 @@ A known Wi-Fi Aware device that your app can connect to.
 struct WAPairedDevice
 ```
 
-#### Overview
+## Overview
 
 Your app may request the system securely pair and grant access to remote devices. Use [AccessorySetupKit](../AccessorySetupKit/AccessorySetupKit.md) or [DeviceDiscoveryUI](../DeviceDiscoveryUI/DeviceDiscoveryUI.md) to add the devices to the set of `WAPairedDevice.Devices` that your app may connect to on-demand. The list of paired devices can change over time as a person adds and removes devices from the system.
 

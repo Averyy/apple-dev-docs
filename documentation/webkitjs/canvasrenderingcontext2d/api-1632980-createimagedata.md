@@ -18,11 +18,11 @@ ImageData createImageData(
 );
 ```
 
-#### Return Value
+## Return Value
 
 An `imageData` object.
 
-#### Discussion
+## Discussion
 
 This method is typically used to create additional pixel arrays that can be blitted to the canvas in a single operation. You can optionally pass in another `imageData` object as a parameter, instead of a width and height, to create a new `imageData` object with the same pixel dimensions as the specified object.
 

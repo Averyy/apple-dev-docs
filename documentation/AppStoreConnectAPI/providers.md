@@ -5,7 +5,7 @@
 
 Read information about source code management providers you connected to Xcode Cloud.
 
-#### Overview
+## Overview
 
 The `scmProviders` resource represents the source code management (SCM) providers you connected to Xcode Cloud. Use it to access these SCM providers and read the following information for each provider:
 

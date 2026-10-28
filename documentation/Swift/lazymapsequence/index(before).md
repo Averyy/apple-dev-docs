@@ -23,7 +23,7 @@ func index(before i: LazyMapSequence<Base, Element>.Index) -> LazyMapSequence<Ba
 
 Available when `Base` conforms to `BidirectionalCollection`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*n*), where *n* is the length of the collection.
 

@@ -19,7 +19,7 @@ var audioExposureSampleLifetime: SRAcousticSettings.SampleLifetime { get }
 @property (nonatomic, assign, readonly) SRAcousticSettingsSampleLifetime audioExposureSampleLifetime;
 ```
 
-#### Discussion
+## Discussion
 
 Expected lifetime of headphone audio exposure samples in HealthKit
 

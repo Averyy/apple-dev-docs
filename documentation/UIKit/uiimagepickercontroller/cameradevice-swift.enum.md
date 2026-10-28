@@ -21,7 +21,7 @@ enum CameraDevice
 enum UIImagePickerControllerCameraDevice : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 The constants in this enumeration are for use as values of the [`cameraDevice`](./cameradevice-swift.property.md) property.
 

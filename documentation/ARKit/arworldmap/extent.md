@@ -20,7 +20,7 @@ var extent: simd_float3 { get }
 @property (nonatomic, readonly) simd_float3 extent;
 ```
 
-#### Discussion
+## Discussion
 
 The [`extent`](./extent.md) and [`center`](./center.md) properties together define a bounding box for the data recorded in the world map.
 

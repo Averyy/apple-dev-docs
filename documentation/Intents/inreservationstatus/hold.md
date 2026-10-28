@@ -24,7 +24,7 @@ case hold
 INReservationStatusHold
 ```
 
-#### Discussion
+## Discussion
 
 Use this status when the app is reserving the reservation time for the user, but the user hasn’t made the reservation.
 

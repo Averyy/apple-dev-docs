@@ -18,11 +18,11 @@ Add an additional, similar channel to the reporter.
 IOReturn addChannel(uint64_t channelID, const char *channelName);
 ```
 
-#### Return Value
+## Return Value
 
 Appropriate `IOReturn` code.
 
-#### Discussion
+## Discussion
 
 The reporter will allocate memory to track a new channel with the provided ID and name (if any). Its other traits (type, etc) will be those provided when the reporter was initialized.  If no channel name is provided and the channelID consists solely of ASCII bytes, those bytes (ignoring any NUL bytes) will be used as the human-readable channel name in user space.  The `IOREPORT_MAKEID()` macro in `IOReportTypes.h` can be used to create ASCII channel IDs.
 

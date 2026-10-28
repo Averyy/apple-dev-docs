@@ -25,7 +25,7 @@ var drawableProperties: [String : Any]? { get set }
 @property (copy, nullable) NSDictionary<NSString *,id> * drawableProperties;
 ```
 
-#### Discussion
+## Discussion
 
 The `drawableProperties` dictionary specifies the properties that are used by this object when it is attached to an OpenGL ES renderbuffer. Your application should set these properties before passing this object into the `EAGLContext` method [`renderbufferStorage(_:from:)`](../eaglcontext/renderbufferstorage%28_,from%29.md). If you change the `drawableProperties` dictionary, your application must call [`renderbufferStorage(_:from:)`](../eaglcontext/renderbufferstorage%28_,from%29.md) again on the context for the new values to take effect.
 

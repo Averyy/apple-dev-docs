@@ -6,7 +6,7 @@
 
 A 32-bit integer that indicates the type of atom that contains the preview data.
 
-#### Overview
+## Overview
 
 Typically, this is set to `'PICT'` to indicate a QuickDraw picture.
 

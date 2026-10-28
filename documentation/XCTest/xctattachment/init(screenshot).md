@@ -16,7 +16,7 @@ convenience init(screenshot: XCUIScreenshot)
 + (instancetype) attachmentWithScreenshot:(XCUIScreenshot *) screenshot;
 ```
 
-#### Discussion
+## Discussion
 
 Creates an attachment with a [`uniformTypeIdentifier`](./uniformtypeidentifier.md) of `"public.png"`. Equivalent to calling [`init(screenshot:quality:)`](./init%28screenshot,quality%29.md) with a `quality` value of [`XCTAttachment.ImageQuality.original`](./imagequality/original.md).
 

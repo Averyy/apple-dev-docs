@@ -21,7 +21,7 @@ Time of last access, given as a C `timespec` since the Epoch.
 var st_atim: timespec { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding C property is `st_atim` (or `st_atimespec` on Darwin).
 

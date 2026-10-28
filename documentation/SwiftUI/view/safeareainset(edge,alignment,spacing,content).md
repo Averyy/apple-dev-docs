@@ -29,11 +29,11 @@ nonisolated
 func safeAreaInset<V>(edge: VerticalEdge, alignment: HorizontalAlignment = .center, spacing: CGFloat? = nil, @ContentBuilder content: () -> V) -> some View where V : View
 ```
 
-#### Return Value
+## Return Value
 
 A new view that displays `content` beside the modified view, making space for the `content` view by horizontally insetting the modified view.
 
-#### Discussion
+## Discussion
 
 The `content` view is anchored to the specified horizontal edge in the parent view, aligning its vertical axis to the specified alignment guide. The modified view is inset by the width of `content`, from `edge`, with its safe area increased by the same amount.
 

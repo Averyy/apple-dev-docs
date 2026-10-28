@@ -22,11 +22,11 @@ Computes the maximum absolute error between predicted and ground truth values.
 func maximumAbsoluteError<T>(_ predicted: some Collection, _ groundTruth: some Collection) -> T where T : FloatingPoint
 ```
 
-#### Return Value
+## Return Value
 
 The maximum absolute error.
 
-#### Discussion
+## Discussion
 
 Empty collections of predicted and ground truth values will return a value of NaN.
 

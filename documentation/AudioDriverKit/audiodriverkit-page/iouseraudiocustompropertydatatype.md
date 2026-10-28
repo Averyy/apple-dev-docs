@@ -15,7 +15,7 @@ A data and qualifier type used for custom properties.
 enum IOUserAudioCustomPropertyDataType : uint32_t;
 ```
 
-#### Discussion
+## Discussion
 
 Use `0` to indicate the custom property doesn’t have any data.
 

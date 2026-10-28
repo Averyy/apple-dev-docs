@@ -19,7 +19,7 @@ var completeBuffer: String { get set }
 @property (copy) NSString * completeBuffer;
 ```
 
-#### Discussion
+## Discussion
 
 Changes to the `lines` property are immediately reflected in this property, and vice versa.
 

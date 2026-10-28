@@ -21,7 +21,7 @@ The shared default log.
 static let `default`: OSLog
 ```
 
-#### Discussion
+## Discussion
 
 Passing this constant to an `os_log` function causes the system to log a message with the system’s standard behavior.
 

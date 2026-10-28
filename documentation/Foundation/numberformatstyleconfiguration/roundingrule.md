@@ -21,7 +21,7 @@ The type used for rounding rule values.
 typealias RoundingRule = FloatingPointRoundingRule
 ```
 
-#### Discussion
+## Discussion
 
 [`NumberFormatStyleConfiguration`](../numberformatstyleconfiguration.md) uses the [`FloatingPointRoundingRule`](../../Swift/floatingpointroundingrule.md) enumeration for rounding rule values.
 

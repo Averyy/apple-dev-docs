@@ -22,7 +22,7 @@ class func predicateForMedicationDoseEvent(scheduledDates: Set<Date>) -> NSPredi
 + (NSPredicate *) predicateForMedicationDoseEventWithScheduledDates:(NSSet<NSDate *> *) scheduledDates;
 ```
 
-#### Discussion
+## Discussion
 
 Creates a predicate for use with HKQuery subclasses.
 

@@ -19,11 +19,11 @@ init?(name fontName: String, matrix fontMatrix: UnsafePointer<CGFloat>)
 + (NSFont *) fontWithName:(NSString *) fontName matrix:(const CGFloat *) fontMatrix;
 ```
 
-#### Return Value
+## Return Value
 
 A font object for the specified name and transformation matrix.
 
-#### Discussion
+## Discussion
 
 The  `fontName` is a fully specified family-face name, such as Helvetica-BoldOblique or Times-Roman (not a name as shown in the Font Panel). The `fontMatrix` is a standard 6-element transformation matrix as used in the PostScript language, specifically with the `makefont` operator. In most cases, you can simply use [`init(name:size:)`](./init%28name,size%29.md) to create standard scaled fonts.
 

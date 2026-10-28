@@ -20,7 +20,7 @@ The maximum number of hands to detect in an image.
 var maximumHandCount: Int
 ```
 
-#### Discussion
+## Discussion
 
 The request orders detected hands by relative size, with only the largest ones having key points determined.
 

@@ -23,7 +23,7 @@ case end
 kCTLineTruncationEnd
 ```
 
-#### Discussion
+## Discussion
 
 Truncate the end of the line, leaving the start portion visible.
 

@@ -21,7 +21,7 @@ Replaces the object at the index with the new object, possibly adding the object
 - (void) setObject:(ObjectType) obj atIndexedSubscript:(NSUInteger) idx;
 ```
 
-#### Discussion
+## Discussion
 
 This method has the same behavior as the [`replaceObject(at:with:)`](./replaceobject%28at,with%29.md) method.
 

@@ -22,11 +22,11 @@ Returns a new shape with filled regions either from this shape or the given shap
 nonisolated func symmetricDifference<T>(_ other: T, eoFill: Bool = false) -> some Shape where T : Shape
 ```
 
-#### Return Value
+## Return Value
 
 A new shape.
 
-#### Discussion
+## Discussion
 
 The filled region of the resulting shape is the filled region contained in either this shape or `other`, but not both.
 

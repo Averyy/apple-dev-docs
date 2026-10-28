@@ -9,7 +9,7 @@ Assign or unassign devices to a device management service, manage a device manag
 **Availability**:
 - Apple Business API 2.6+
 
-##### Example: Assign or Unassign Devices to a Device Management Service
+### Example: Assign or Unassign Devices to a Device Management Service
 
 **Request**:
 
@@ -65,7 +65,7 @@ curl -X POST https://api-business.apple.com/v1/orgDeviceActivities \
 }
 ```
 
-##### Example: Assign Devices to a Device Management Service With a Device Management Service Migration Deadline
+### Example: Assign Devices to a Device Management Service With a Device Management Service Migration Deadline
 
 To assign devices to a device management service and schedule a device management service migration, use the `ASSIGN_DEVICES_WITH_MDM_MIGRATION_DEADLINE` activity type and include `activityTypeMetadata.mdmMigrationDeadlineDateTime`, an ISO 8601 date and time by which the migration needs to complete. The deadline can’t be more than 90 days in the future.
 
@@ -130,7 +130,7 @@ curl -X POST https://api-business.apple.com/v1/orgDeviceActivities \
 }
 ```
 
-##### Example: Update a Device Management Service Migration Deadline
+### Example: Update a Device Management Service Migration Deadline
 
 To update the deadline for an in-progress device management service migration, use the `UPDATE_MDM_MIGRATION_DEADLINE` activity type. This doesn’t require a `mdmServer` relationship. If the new deadline is earlier than the existing one, or in the past, the device honors it without giving the user an option to delay the migration.
 
@@ -191,7 +191,7 @@ curl -X POST https://api-business.apple.com/v1/orgDeviceActivities \
 
 If the request tries to update the deadline for a serial number that isn’t undergoing a device management service migration, the activity log result indicates a failure for that serial number.
 
-##### Example: Cancel an MDM Migration
+### Example: Cancel an MDM Migration
 
 To cancel an in-progress device management service migration, use the `CANCEL_MDM_MIGRATION` activity type. This doesn’t require a `mdmServer` relationship or `activityTypeMetadata`.
 
@@ -249,7 +249,7 @@ curl -X POST https://api-business.apple.com/v1/orgDeviceActivities \
 
 If the request tries to cancel a device management service migration for a serial number that isn’t undergoing one, the activity log result indicates a failure for that serial number.
 
-##### Example: Release Devices from an Organization
+### Example: Release Devices from an Organization
 
 To release devices from an organization, use `RELEASE_DEVICES` activity type.
 

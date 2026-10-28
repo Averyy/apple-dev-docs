@@ -25,11 +25,11 @@ func SecTrustGetCertificateCount(_ trust: SecTrust) -> CFIndex
 CFIndex SecTrustGetCertificateCount(SecTrustRef trust);
 ```
 
-#### Return Value
+## Return Value
 
 The number of certificates in the certificate chain.
 
-#### Discussion
+## Discussion
 
 Call the [`SecTrustEvaluateWithError(_:_:)`](./sectrustevaluatewitherror%28_,_%29.md) function before calling this function.
 

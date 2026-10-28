@@ -23,7 +23,7 @@ var contentHorizontalAlignment: UIControl.ContentHorizontalAlignment { get set }
 @property (nonatomic) UIControlContentHorizontalAlignment contentHorizontalAlignment;
 ```
 
-#### Discussion
+## Discussion
 
 For controls that contain configurable text or image content, use this property to align that content appropriately inside the control’s bounds. Not all control subclasses have content that can be aligned, and it’s the responsibility of the subclass to determine how to apply this value. The default value of this property is [`UIControl.ContentHorizontalAlignment.center`](./contenthorizontalalignment-swift.enum/center.md).
 

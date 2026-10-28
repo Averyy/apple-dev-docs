@@ -17,11 +17,11 @@ Random state factory.
 class RandomState
 ```
 
-#### Overview
+## Overview
 
 Note: although this type is thread-safe, the MLXArrays that it returns are not – do not evaluate these values or expressions that depend on them across multiple threads simultaneously.
 
-##### See Also
+### See Also
 
 - [`globalState`](./globalstate.md)
 - [`withRandomState(_:body:)`](../withrandomstate%28_,body%29-18ob4.md)

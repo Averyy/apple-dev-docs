@@ -20,7 +20,7 @@ case notAvailable
 ARGeoTrackingStateNotAvailable
 ```
 
-#### Discussion
+## Discussion
 
 This state occurs when ARKit doesn’t have the landscape data necessary for visual localization at the user’s location. For more information, see [`ARGeoTrackingStatus.State.localizing`](./localizing.md).
 

@@ -29,7 +29,7 @@ optional func urlSession(_ session: URLSession, task: URLSessionTask, willBeginD
 - (void) URLSession:(NSURLSession *) session task:(NSURLSessionTask *) task willBeginDelayedRequest:(NSURLRequest *) request completionHandler:(void (^)(NSURLSessionDelayedRequestDisposition disposition, NSURLRequest *newRequest)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when a background session task with a delayed start time (as set with the [`earliestBeginDate`](../urlsessiontask/earliestbegindate.md) property) is ready to start. This delegate method should only be implemented if the request might become stale while waiting for the network load and needs to be replaced by a new request.
 

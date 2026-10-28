@@ -22,7 +22,7 @@ var strings: [String]? { get set }
 @property (nonatomic, copy, nullable) NSArray<NSString *> * strings;
 ```
 
-#### Discussion
+## Discussion
 
 The value stored in this property is an array of [`NSString`](../../Foundation/nsstring.md) objects. The associated array of representation types is [`typeListString`](./typeliststring.md), which includes type `kUTTypeUTF8PlainText`. Setting this property replaces all current items in the pasteboard with the new items.  The returned array may have fewer objects than the number of pasteboard items; this happens if a pasteboard item does not have a value of the indicated type.
 

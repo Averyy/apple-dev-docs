@@ -20,7 +20,7 @@ Compiles a program from the given descriptor.
 init(descriptor: PortalMaterial.Program.Descriptor) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Compilation translates the descriptor’s shader graph into a Metal function library, bakes in the descriptor’s function constant values, and links the result into a [`PortalMaterial`](../../portalmaterial.md)-compatible artifact. The work is asynchronous; build programs once during scene setup and reuse them across every material that needs them.
 

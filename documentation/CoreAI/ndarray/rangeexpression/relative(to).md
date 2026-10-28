@@ -20,11 +20,11 @@ Returns Range for the dimension.
 func relative(to dimension: Range<Int>) -> Range<Int>
 ```
 
-#### Return Value
+## Return Value
 
 The range of the selected dimension.
 
-#### Discussion
+## Discussion
 
 For example, when the range expression specifies `1...` on the axis with dimension 3, the resultant Range is `1 ..< 3`.
 

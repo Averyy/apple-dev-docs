@@ -18,7 +18,7 @@ The text provider for the first row of body text.
 <CLKTextProvider> @objc final var body1TextProvider: CLKTextProvider { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The template supports multicolored text from this text provider.
 

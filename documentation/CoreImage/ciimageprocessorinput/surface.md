@@ -25,7 +25,7 @@ var surface: IOSurfaceRef { get }
 @property (nonatomic, readonly) IOSurfaceRef surface;
 ```
 
-#### Discussion
+## Discussion
 
 > ⚠️ **Warning**: This surface must not be modified by the [`CIImageProcessorKernel`](../ciimageprocessorkernel.md).
 

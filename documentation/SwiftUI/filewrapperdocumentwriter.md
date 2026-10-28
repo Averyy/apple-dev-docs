@@ -19,7 +19,7 @@ A document writer that serializes a snapshot into a `FileWrapper`.
 struct FileWrapperDocumentWriter<Snapshot>
 ```
 
-#### Overview
+## Overview
 
 The `makeFileWrapper` closure in [`init(_:makeFileWrapper:)`](./filewrapperdocumentwriter/init%28_,makefilewrapper%29.md) turns the document’s snapshot into a `FileWrapper` that SwiftUI writes to disk. It receives the current snapshot and, when available, the `FileWrapper` from the document’s last read or write. For documents written as a single file, ignore `previous` and return a freshly built wrapper:
 

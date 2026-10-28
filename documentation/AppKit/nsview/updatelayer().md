@@ -19,7 +19,7 @@ func updateLayer()
 - (void) updateLayer;
 ```
 
-#### Discussion
+## Discussion
 
 You use this method to optimize the rendering of your view in situations where you can represent your views contents entirely using a layer object. If your view’s [`wantsUpdateLayer`](./wantsupdatelayer.md) property is [`true`](../../Swift/true.md), the view calls this method instead of [`draw(_:)`](./draw%28_%29.md) during the view update cycle. Custom views can override this method and use it to modify the properties of the underlying layer object. Modifying layer properties is a much more efficient way to update your view than is redrawing its content each time something changes.
 

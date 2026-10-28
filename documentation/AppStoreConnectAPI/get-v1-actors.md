@@ -9,11 +9,11 @@ Get a list of actors.
 **Availability**:
 - App Store Connect API 2.4+
 
-#### Discussion
+## Discussion
 
 This endpoint supports multiple id’s in the filter paramenter.
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

@@ -24,7 +24,7 @@ protocol UITimingCurveProvider : NSCoding, NSCopying
 @protocol UITimingCurveProvider <NSCoding, NSCopying>
 ```
 
-#### Overview
+## Overview
 
 An object that adopts the [`UITimingCurveProvider`](./uitimingcurveprovider.md) protocol provides the timing information needed to perform animations with a [`UIViewPropertyAnimator`](./uiviewpropertyanimator.md) object. A timing curve defines the velocity at which animated properties change to their new values over the duration of the animation. A custom timing curve provider can specify timing using the built-in UIKit curves, a cubic Bézier curve, a spring-based timing function, or a combination of timing information.
 

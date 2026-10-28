@@ -21,7 +21,7 @@ Writes a message to the log about a critical event in your app’s execution.
 func critical(_ message: OSLogMessage)
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  Don’t create an instance of [`OSLogMessage`](../oslogmessage.md). Instead, provide an interpolated string as the `message` parameter and the system converts it automatically.
 

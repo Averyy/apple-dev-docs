@@ -17,7 +17,7 @@ Defines the attributes types compatible with a particular object category.
 var supportedAttributeTypes: [any CapturedRoomAttribute.Type] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The framework defines the contents of this array. Only compatible attributes can pair up in association with a 3D model, for example, with the [`CapturedRoom.ModelProvider`](../../modelprovider.md) function [`setModelFileURL(_:for:)`](../../modelprovider/setmodelfileurl%28_,for%29-8xio.md). These [`CapturedRoom.ModelProvider`](../../modelprovider.md) functions for `setModelFileURL` and `modelFileURL` throw [`CapturedRoom.ModelProvider.Error.attributeCombinationNotSupported`](../../modelprovider/error/attributecombinationnotsupported.md) if no object category supports all of the attributes in the arguments to their call.
 

@@ -21,7 +21,7 @@ func vSgemm(_ l: Int32, _ m: Int32, _ n: Int32, _ a: UnsafePointer<vFloat>, _ fo
 extern void vSgemm(int32_t l, int32_t m, int32_t n, const vFloat *a, char forma, const vFloat *b, char formb, vFloat *c, float alpha, float beta, vFloat *matrix);
 ```
 
-#### Discussion
+## Discussion
 
 Matrix `a` (or its transpose) is multiplied by matrix `b` (or its transpose); matrix `c` is multiplied by `beta`, and the result is added to the result of the matrix multiplication; the result is stored in matrix `matrix`
 

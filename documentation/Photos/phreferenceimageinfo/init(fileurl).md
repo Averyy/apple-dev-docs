@@ -18,7 +18,7 @@ Creates an info object from a file URL representing a HEIC, JPEG, or DNG contain
 init(fileURL: URL)
 ```
 
-#### Discussion
+## Discussion
 
 If the file URL references a file that is not an image file, or an image file that does not contain Apple Reference Image data, `PHReferenceImageInfo/imageContainsReferenceImageData` will return false.
 

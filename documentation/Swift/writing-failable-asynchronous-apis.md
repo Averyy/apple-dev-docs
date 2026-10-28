@@ -5,11 +5,11 @@
 
 Vend results as part of an API when you can’t return errors synchronously.
 
-#### Overview
+## Overview
 
 When writing a function, method, or other API that might fail, you use the `throws` keyword on the declaration to indicate that the API call can throw an error. However, you can’t use the `throws` keyword to model APIs that return asynchronously. Instead, use the [`Result`](./result.md) enumeration to capture information about whether an asychronous call succeeds or fails, and use the associated values for the [`Result.success(_:)`](./result/success%28_%29.md) and [`Result.failure(_:)`](./result/failure%28_%29.md) cases to carry information about the result of the call.
 
-##### Return Result Instances Asynchronously
+### Return Result Instances Asynchronously
 
 The following example models an asynchronous source of random numbers. The `fetchRemoteRandomNumber(completion:)` method returns `Void` synchronously, and asynchronously calls a completion handler with a `Result<Int, EntropyError>` instance that contains either a random result or information about the failure.
 

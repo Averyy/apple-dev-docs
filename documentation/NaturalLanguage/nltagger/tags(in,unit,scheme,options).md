@@ -22,11 +22,11 @@ Finds an array of linguistic tags and token ranges for a given string range and 
 func tags(in range: Range<String.Index>, unit: NLTokenUnit, scheme: NLTagScheme, options: NLTagger.Options = []) -> [(NLTag?, Range<String.Index>)]
 ```
 
-#### Return Value
+## Return Value
 
 An array of the tags in the requested range.
 
-#### Discussion
+## Discussion
 
 When the returned array contains an entry that doesn’t have a corresponding tag scheme, that entry is an empty string (””).
 

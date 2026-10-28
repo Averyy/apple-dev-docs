@@ -15,7 +15,7 @@ Credential data obtained during QR code pairing.
 let pairingInformation: FoveatedStreamingProviderEndpoint.LocalPairingInformation
 ```
 
-#### Discussion
+## Discussion
 
 The extension is responsible for decoding this (e.g., extracting client tokens for its streaming protocol).
 

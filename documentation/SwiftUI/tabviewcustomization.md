@@ -19,7 +19,7 @@ The customizations a person makes to an adaptable sidebar tab view.
 struct TabViewCustomization
 ```
 
-#### Overview
+## Overview
 
 By default, if a person hasn’t made customizations, tabs appear according to the default builder visibilities and sections appear in the order you declare in the tab view’s tab builder.
 

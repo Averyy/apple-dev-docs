@@ -23,11 +23,11 @@ func replacingChildren(_ newChildren: [UIMenuElement]) -> UIMenu
 - (UIMenu *) menuByReplacingChildren:(NSArray<UIMenuElement *> *) newChildren;
 ```
 
-#### Return Value
+## Return Value
 
 A new menu object containing the specified children.
 
-#### Discussion
+## Discussion
 
 The new menu contains the same title, image, identifier, and options as the current menu. The new menu contains only the children in the `newChildren` parameter. It doesn’t contain any child elements from the current menu.
 

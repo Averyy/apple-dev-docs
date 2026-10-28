@@ -20,7 +20,7 @@ func loadSuite(with suiteDeclaration: [AnyHashable : Any], from bundle: Bundle)
 - (void) loadSuiteWithDictionary:(NSDictionary *) suiteDeclaration fromBundle:(NSBundle *) bundle;
 ```
 
-#### Discussion
+## Discussion
 
 The method extracts information from the dictionary and caches it in various internal collection objects. If keys are missing or values are of the wrong type, it logs messages to the console. It also registers class descriptions and command descriptions. In registering a class description, it invokes the [`NSClassDescription`](../nsclassdescription.md) class method [`register(_:for:)`](../nsclassdescription/register%28_,for%29.md). In registering a command description, it arranges for the Apple event translator to handle incoming Apple events that represent the defined commands.
 

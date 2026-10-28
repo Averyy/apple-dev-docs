@@ -20,7 +20,7 @@ A per-tool-call event payload.
 struct ToolCall
 ```
 
-#### Overview
+## Overview
 
 The `id` and `name` route the event to a specific tool call within the `ToolCalls` entry. The`action` names the mutation.
 

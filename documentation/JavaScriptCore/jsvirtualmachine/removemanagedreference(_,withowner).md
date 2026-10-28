@@ -24,7 +24,7 @@ func removeManagedReference(_ object: Any!, withOwner owner: Any!)
 - (void) removeManagedReference:(id) object withOwner:(id) owner;
 ```
 
-#### Discussion
+## Discussion
 
 Use this method to deregister object relationships recorded using the [`addManagedReference(_:withOwner:)`](./addmanagedreference%28_,withowner%29.md) method.
 

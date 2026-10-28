@@ -23,11 +23,11 @@ func initializeMemory<C>(as type: C.Element.Type, fromContentsOf source: C) -> U
 
 Available when `Base` is `UnsafeMutableRawBufferPointer`.
 
-#### Return Value
+## Return Value
 
 A typed buffer referencing the initialized elements. The returned buffer references memory starting at the same base address as this slice, and its count is equal to `source.count`
 
-#### Discussion
+## Discussion
 
 When calling the `initializeMemory(as:fromContentsOf:)` method, the memory referenced by the buffer slice must be uninitialized, or initialized to a trivial type. The buffer slice must reference enough memory to store `source.count` elements, and it must be properly aligned for accessing `C.Element`.
 

@@ -41,11 +41,11 @@ func snapshot(atTime time: CFTimeInterval, with size: CGSize, antialiasingMode: 
 - (NSImage *) snapshotAtTime:(CFTimeInterval) time withSize:(CGSize) size antialiasingMode:(SCNAntialiasingMode) antialiasingMode;
 ```
 
-#### Return Value
+## Return Value
 
 An image object reflecting the contents of the scene.
 
-#### Discussion
+## Discussion
 
 When you call this method, SceneKit updates its hierarchy of presentation nodes based on the specified timestamp, and then draws the scene into a new image object of the specified size.
 

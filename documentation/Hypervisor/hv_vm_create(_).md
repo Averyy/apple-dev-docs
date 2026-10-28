@@ -19,11 +19,11 @@ func hv_vm_create(_ config: hv_vm_config_t?) -> hv_return_t
 extern hv_return_t hv_vm_create(hv_vm_config_t config);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 
-#### Discussion
+## Discussion
 
 Intel-based Mac computers have different parameters:
 

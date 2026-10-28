@@ -27,7 +27,7 @@ optional func paymentQueue(_ paymentQueue: SKPaymentQueue, shouldContinue transa
 - (BOOL) paymentQueue:(SKPaymentQueue *) paymentQueue shouldContinueTransaction:(SKPaymentTransaction *) transaction inStorefront:(SKStorefront *) newStorefront;
 ```
 
-#### Discussion
+## Discussion
 
 StoreKit calls this delegate method if the storefront changes while processing a transaction.
 

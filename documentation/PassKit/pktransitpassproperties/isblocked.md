@@ -22,7 +22,7 @@ A Boolean value that indicates the pass issuer disabled the pass.
 override dynamic var isBlocked: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 A blocked pass isn’t accepted at a transit terminal.
 

@@ -19,7 +19,7 @@ func setString(_ authorizationString: AuthorizationString!)
 - (void) setString:(AuthorizationString) authorizationString;
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience method that creates an authorization rights set when you specify only the name of the requested right. The requested-right string is displayed in the Details pane of the user authentication dialog box. Either this method or the [`setAuthorizationRights(_:)`](./setauthorizationrights%28_%29.md) method must be called before the view displays correctly.
 

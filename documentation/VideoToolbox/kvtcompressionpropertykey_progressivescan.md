@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_ProgressiveScan: CFString
 extern CFStringRef const kVTCompressionPropertyKey_ProgressiveScan;
 ```
 
-#### Discussion
+## Discussion
 
 This property is supported by the DV25/50 family of encoders. If false, content is encoded as interlaced. If true, content is encoded as progressive. The value of this property fixes the [`kVTCompressionPropertyKey_FieldCount`](./kvtcompressionpropertykey_fieldcount.md) and [`kVTCompressionPropertyKey_FieldDetail`](./kvtcompressionpropertykey_fielddetail.md) properties.
 

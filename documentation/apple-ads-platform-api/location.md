@@ -15,13 +15,13 @@ The brand location object.
 object Location
 ```
 
-#### Discussion
+## Discussion
 
 The `Location` object represents a physical brand location sourced from Apple Maps. An `id` identifies each location, and each location belongs to a `brandId`. The `status` field reflects the operational state of the location. Typically, `brands` campaigns target only `OPEN` locations.
 
 The API always returns the `eligibility` field, which describes whether the location can be promoted through ads. Use `categories` to understand the business type, and `address.countryOrRegion` to verify country or region targeting compatibility. The `address` and `displayPoint` provide the geographic data used for map placement rendering.
 
-##### Example
+### Example
 
 ```json
 {

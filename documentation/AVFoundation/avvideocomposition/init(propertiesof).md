@@ -25,11 +25,11 @@ init(propertiesOf asset: AVAsset)
 + (AVVideoComposition *) videoCompositionWithPropertiesOfAsset:(AVAsset *) asset;
 ```
 
-#### Return Value
+## Return Value
 
 A new video composition object.
 
-#### Discussion
+## Discussion
 
 Apple discourages using this method in iOS 16, tvOS 16, and macOS 13 or later. Create a video composition asynchronously using [`videoComposition(withPropertiesOf:completionHandler:)`](./videocomposition%28withpropertiesof,completionhandler%29.md) instead.
 

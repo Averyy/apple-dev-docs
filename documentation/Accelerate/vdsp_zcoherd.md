@@ -21,7 +21,7 @@ Computes the coherence function of two double-precision vectors.
 extern void vDSP_zcoherD(const double *__A, const double *__B, const DSPDoubleSplitComplex *__C, double *__D, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_zcoher`](./vdsp_zcoher.md), except for the types of vectors `A`, `B`, `C`, and `D`.
 

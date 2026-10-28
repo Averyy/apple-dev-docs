@@ -18,11 +18,11 @@ A card whose content can be injected.
 struct CardView<Content> where Content : View
 ```
 
-### Style
+## Style
 
 The card supports styling using `careKitStyle(_:)`.
 
-### Composing Cards
+## Composing Cards
 
 To combine SwiftUI views with CareKit views that are already inside of a `CardView`, wrap the views in a new `CardView`. A CareKit view inside of a `CardView` is rendered without its border and background, since it inherits those visual affordances from the surrounding `CardView`.
 

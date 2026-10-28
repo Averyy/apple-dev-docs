@@ -19,7 +19,7 @@ func makePreviousSegmentKey()
 - (void) makePreviousSegmentKey;
 ```
 
-#### Discussion
+## Discussion
 
 The previous segment is the one to the left of the currently selected segment. For the first segment, the selection wraps around to the last segment of the control.
 

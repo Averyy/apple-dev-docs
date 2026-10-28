@@ -15,7 +15,7 @@ Set the function for receiving shared coordinate space connected participants up
 extern void ar_shared_coordinate_provider_set_connected_participants_update_handler_f(ar_shared_coordinate_space_provider_t shared_coordinate_space_provider, dispatch_queue_t connected_participants_update_queue, void *context, ar_shared_coordinate_space_connected_participants_update_handler_function_t connected_participants_update_handler_function);
 ```
 
-#### Discussion
+## Discussion
 
 > **Note**: Setting this function will override the handler set using `ar_shared_coordinate_space_provider_set_connected_participants_update_handler`.
 

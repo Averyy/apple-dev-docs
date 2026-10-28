@@ -25,7 +25,7 @@ optional func peripheralDidUpdateName(_ peripheral: CBPeripheral)
 - (void) peripheralDidUpdateName:(CBPeripheral *) peripheral;
 ```
 
-#### Discussion
+## Discussion
 
 Core Bluetooth invokes this method whenever the peripheral’s Generic Access Profile (GAP) device name changes. Since a peripheral device can change its GAP device name, you can implement this method if your app needs to display the current name of the peripheral device.
 

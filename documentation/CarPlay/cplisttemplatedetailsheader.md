@@ -22,7 +22,7 @@ class CPListTemplateDetailsHeader
 @interface CPListTemplateDetailsHeader : NSObject
 ```
 
-#### Overview
+## Overview
 
 CPListTemplateDetailsHeader provides a prominent header section for list templates that includes a thumbnail image, title, subtitle, and configurable action buttons. This component is ideal for displaying media items, content details, or featured items at the top of a list template in CarPlay applications.
 

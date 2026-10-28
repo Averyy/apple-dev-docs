@@ -23,7 +23,7 @@ func intentToStore(element: PKIdentityElement) -> PKIdentityIntentToStore?
 - (PKIdentityIntentToStore *) intentToStoreForElement:(PKIdentityElement *) element;
 ```
 
-#### Return Value
+## Return Value
 
 A [`PKIdentityIntentToStore`](../pkidentityintenttostore.md) for the element, if available.
 

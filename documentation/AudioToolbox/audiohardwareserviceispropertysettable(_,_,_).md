@@ -21,7 +21,7 @@ func AudioHardwareServiceIsPropertySettable(_ inObjectID: AudioObjectID, _ inAdd
 extern OSStatus AudioHardwareServiceIsPropertySettable(AudioObjectID inObjectID, const AudioObjectPropertyAddress *inAddress, Boolean *outIsSettable);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 

@@ -23,7 +23,7 @@ string Severity
 - `minor`
 - `unknown`
 
-#### Possible Values
+## Possible Values
 
 - **extreme**: Extraordinary threat.
 - **severe**: Significant threat.

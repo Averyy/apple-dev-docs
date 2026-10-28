@@ -21,7 +21,7 @@ A type that can serve as data to plot in a chart.
 protocol Plottable
 ```
 
-#### Overview
+## Overview
 
 You create [`PlottableValue`](./plottablevalue.md) items from data that conforms to `Plottable` using a method like [`value(_:_:)`](./plottablevalue/value%28_,_%29-13lvv.md). You then use those items as the values in a chart, like for the [`BarMark`](./barmark.md) chart in the following example:
 

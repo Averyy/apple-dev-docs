@@ -21,7 +21,7 @@ var alternateLayout: MSMessageTemplateLayout { get }
 @property (nonatomic, readonly) MSMessageTemplateLayout * alternateLayout;
 ```
 
-#### Discussion
+## Discussion
 
 To display the live layout, the device must be running iOS 11 or later, and must have your iMessage app installed. All other devices, including devices that do not support iMessage apps (macOS, iOS 9 and earlier, and SMS devices), use the  alternate layout.
 

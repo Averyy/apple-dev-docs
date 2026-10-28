@@ -13,7 +13,7 @@
 object GameCenterLeaderboardV2ChallengeLinkageRequest.Data
 ```
 
-#### Overview
+## Overview
 
 - id:
 - type:

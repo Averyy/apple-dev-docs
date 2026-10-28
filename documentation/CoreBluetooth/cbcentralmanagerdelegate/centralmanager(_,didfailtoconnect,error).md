@@ -25,7 +25,7 @@ optional func centralManager(_ central: CBCentralManager, didFailToConnect perip
 - (void) centralManager:(CBCentralManager *) central didFailToConnectPeripheral:(CBPeripheral *) peripheral error:(NSError *) error;
 ```
 
-#### Discussion
+## Discussion
 
 The manager invokes this method when a connection initiated with the [`connect(_:options:)`](../cbcentralmanager/connect%28_,options%29.md) method fails to complete. Because connection attempts don’t time out, a failed connection usually indicates a transient issue, in which case you may attempt connecting to the peripheral again.
 

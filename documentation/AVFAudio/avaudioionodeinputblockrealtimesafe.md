@@ -19,7 +19,7 @@
 typedef const struct AudioBufferList *(^)(unsigned int) __attribute__((nonblocking)) AVAudioIONodeInputBlockRealtimeSafe;
 ```
 
-#### Discussion
+## Discussion
 
 Identical to AVAudioIONodeInputBlock, with the addition of a realtime-safety guarantee. When the engine is configured to operate in `AVAudioEngineManualRenderingModeRealtime`, use of this block is preferred.
 

@@ -23,7 +23,7 @@ var diagnosisKeysAvailableHandler: ENDiagnosisKeysAvailableHandler? { get set }
 @property (nonatomic, copy, readwrite, nullable) ENDiagnosisKeysAvailableHandler diagnosisKeysAvailableHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Set this property before calling  [`requestPreAuthorizedDiagnosisKeys(completionHandler:)`](./requestpreauthorizeddiagnosiskeys%28completionhandler%29.md) to ensure [`ENManager`](../enmanager.md) can deliver the keys. Authorization expires after five days or the first time this method is called after authorization, whichever comes first.
 

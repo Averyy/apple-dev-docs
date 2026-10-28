@@ -19,11 +19,11 @@ func SCDynamicStoreAddTemporaryValue(_ store: SCDynamicStore, _ key: CFString, _
 Boolean SCDynamicStoreAddTemporaryValue(SCDynamicStoreRef store, CFStringRef key, CFPropertyListRef value);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the key was added; `FALSE` if the key was already present in the dynamic store or if an error occurred.
 
-#### Discussion
+## Discussion
 
 Unless the key is updated by another session, the key-value pair added by this function is removed automatically when the session is closed.
 

@@ -21,7 +21,7 @@ The fault log level.
 OS_LOG_TYPE_FAULT
 ```
 
-#### Discussion
+## Discussion
 
 Logging a message at this level is equivalent to calling the [`os_log_fault`](../os_log_fault.md) function. Use this level only to capture system-level or multi-process information when reporting system errors.
 

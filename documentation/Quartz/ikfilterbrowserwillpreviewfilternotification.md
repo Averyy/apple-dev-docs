@@ -15,7 +15,7 @@ Posted before showing a filter preview, allowing an application to set the param
 extern NSString * const IKFilterBrowserWillPreviewFilterNotification;
 ```
 
-#### Discussion
+## Discussion
 
 The selected filter is sent as the object in the notification.
 

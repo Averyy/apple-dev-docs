@@ -19,11 +19,11 @@ func CTFontManagerCompareFontFamilyNames(_ family1: UnsafeRawPointer, _ family2:
 extern CFComparisonResult CTFontManagerCompareFontFamilyNames(const void *family1, const void *family2, void *context);
 ```
 
-#### Return Value
+## Return Value
 
 A `CFComparisonResult` value indicating the sort order for the two family names. `kCFComparisonResultGreatherThan` if `family1` is greater than `family2`, `kCFComparisonResultLessThan` if `family1` is less than `family2`, and `kCFComparisonResultEqualTo` if they are equal.
 
-#### Discussion
+## Discussion
 
 This `CFComparatorFunction` function compares font family names and sorts them in the Apple preferred order, accounting for foundry prefix. Family names with recognized prefixes are sorted after the unprefixed names in prefix order.
 

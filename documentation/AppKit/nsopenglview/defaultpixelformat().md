@@ -21,11 +21,11 @@ class func defaultPixelFormat() -> NSOpenGLPixelFormat
 + (NSOpenGLPixelFormat *) defaultPixelFormat;
 ```
 
-#### Return Value
+## Return Value
 
 A pixel format object with no attributes set.
 
-#### Discussion
+## Discussion
 
 Typically used with the initializer [`init(frame:pixelFormat:)`](./init%28frame,pixelformat%29.md), this object has no attributes set.
 

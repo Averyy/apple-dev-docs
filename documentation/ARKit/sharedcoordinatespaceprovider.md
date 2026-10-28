@@ -15,7 +15,7 @@ Provides ability to establish a shared coordinate space among multiple participa
 final class SharedCoordinateSpaceProvider
 ```
 
-#### Overview
+## Overview
 
 You may access the shared coordinate space outside the context of a FaceTime call with the  [`Shared Coordinate Space access`](../BundleResources/entitlements/com.apple.developer.arkit.shared-coordinate-space.allow.md) entitlement.
 

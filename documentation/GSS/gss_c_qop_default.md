@@ -23,7 +23,7 @@ var GSS_C_QOP_DEFAULT: Int32 { get }
 #define GSS_C_QOP_DEFAULT
 ```
 
-#### Discussion
+## Discussion
 
 An implementation that offers multiple levels of QOP may define this value to be either zero (as done here) to mean “default protection,” or to a specific explicit QOP value. However, a value of 0 is always interpreted by a GSS-API implementation as a request for the default protection level.
 

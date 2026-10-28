@@ -25,7 +25,7 @@ func isEqual(to node: SKNode) -> Bool
 - (BOOL) isEqualToNode:(SKNode *) node;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the node is a descendant of the `parent` node; otherwise [`false`](../../Swift/false.md).
 

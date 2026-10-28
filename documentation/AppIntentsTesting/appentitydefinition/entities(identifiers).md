@@ -21,11 +21,11 @@ Retrieves entities by their identifiers.
 func entities<Identifier>(identifiers: [Identifier]) async throws -> [AnyAppEntity] where Identifier : EntityIdentifierConvertible
 ```
 
-#### Return Value
+## Return Value
 
 An array of entities matching the provided identifiers.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Any errors encountered during the query execution.
 

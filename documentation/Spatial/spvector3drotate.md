@@ -21,7 +21,7 @@ Returns a vector that results from applying the specified rotation.
 static SPVector3D SPVector3DRotate(SPVector3D vector, SPRotation3D rotation);
 ```
 
-#### Return Value
+## Return Value
 
 The vector that results from applying the specified rotation.
 

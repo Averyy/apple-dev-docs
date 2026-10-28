@@ -25,7 +25,7 @@ func SecKeyCopyKeyExchangeResult(_ privateKey: SecKey, _ algorithm: SecKeyAlgori
 CFDataRefSecKeyCopyKeyExchangeResult(SecKeyRef privateKey, SecKeyAlgorithm algorithm, SecKeyRef publicKey, CFDictionaryRef parameters, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A data object representing the result of the key exchange operation or `NULL` on failure. In Objective-C, call [`CFRelease`](../CoreFoundation/cfrelease.md) to free the data object’s memory when you are done with it.
 

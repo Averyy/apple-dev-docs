@@ -24,7 +24,7 @@ var encryptionAlgorithm: NEVPNIKEv2EncryptionAlgorithm { get set }
 @property NEVPNIKEv2EncryptionAlgorithm encryptionAlgorithm;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`NEVPNIKEv2EncryptionAlgorithm.algorithmAES256`](../nevpnikev2encryptionalgorithm/algorithmaes256.md), except on tvOS where the default is [`NEVPNIKEv2EncryptionAlgorithm.algorithmAES256GCM`](../nevpnikev2encryptionalgorithm/algorithmaes256gcm.md).
 

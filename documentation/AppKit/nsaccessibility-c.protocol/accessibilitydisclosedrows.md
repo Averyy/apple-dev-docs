@@ -15,7 +15,7 @@ The rows that the current row discloses.
 @property (strong, nullable) id accessibilityDisclosedRows;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property in the elements representing an outline’s row.
 

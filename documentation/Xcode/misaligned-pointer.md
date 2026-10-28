@@ -5,13 +5,13 @@
 
 Detects when code accesses a misaligned pointer or creates a misaligned reference.
 
-#### Overview
+## Overview
 
 In Xcode 9 and later, you can use this check to detect reads from, or writes to, a misaligned pointer, or when you create a misaligned reference. A pointer misaligns if its address isn’t a multiple of its type’s alignment. Dereferencing a misaligned pointer has undefined behavior, and may result in a crash or degraded performance.
 
 Alignment violations occur frequently in code that serializes or deserializes data. Avoid this issue by using a serialization format that preserves data alignment.
 
-##### Misaligned integer pointer assignment in C
+### Misaligned integer pointer assignment in C
 
 In the following example, the `pointer` variable must have 4-byte alignment, but has only 1-byte alignment:
 
@@ -21,7 +21,7 @@ int32_t *pointer = (int32_t *)(buffer + 1);
 *pointer = 42; // Error: misaligned integer pointer assignment
 ```
 
-###### Solution
+#### Solution
 
 Use an assignment function like `memcpy`, which can work with unaligned inputs.
 
@@ -33,7 +33,7 @@ memcpy(buffer + 1, &value, sizeof(int32_t)); // Correct
 
 > **Note**: The compiler can often safely optimize calls to `memcpy`, even for unaligned arguments.
 
-##### Misaligned structure pointer assignment in C
+### Misaligned structure pointer assignment in C
 
 In the following example, the `pointer` variable must have 8-byte alignment, but has only 1-byte alignment:
 
@@ -47,7 +47,7 @@ struct A *pointer = (struct A *)(buffer + 1);
 pointer->i32 = 7; // Error: pointer is misaligned
 ```
 
-###### Solution
+#### Solution
 
 One solution is to pack the structure. In the following example, the packed `A` structure prevents the compiler from adding padding between members:
 

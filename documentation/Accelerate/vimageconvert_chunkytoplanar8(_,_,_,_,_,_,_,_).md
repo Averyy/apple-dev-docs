@@ -25,11 +25,11 @@ func vImageConvert_ChunkyToPlanar8(_ srcChannels: UnsafeMutablePointer<UnsafeRaw
 vImage_Error vImageConvert_ChunkyToPlanar8(const void * srcChannels[], const vImage_Buffer * destPlanarBuffers[], unsigned int channelCount, size_t srcStrideBytes, vImagePixelCount srcWidth, vImagePixelCount srcHeight, size_t srcRowBytes, vImage_Flags flags);
 ```
 
-#### Return Value
+## Return Value
 
 [`kvImageNoError`](./kvimagenoerror.md); otherwise, one of the error codes in [Data Types and Constants](./data-types-and-constants.md).
 
-#### Discussion
+## Discussion
 
 Use this function to deinterleave formats that either aren’t supported by the vImage library or are only known at runtime.
 

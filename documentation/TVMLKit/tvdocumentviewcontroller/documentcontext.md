@@ -21,7 +21,7 @@ var documentContext: [String : Any] { get }
 @property (nonatomic, strong, readonly) NSDictionary<NSString *,id> * documentContext;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to retrieve the current context, whether it’s new or updated.
 

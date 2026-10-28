@@ -14,7 +14,7 @@ struct iff_filter {
 };
 ```
 
-#### Discussion
+## Discussion
 
 This structure is used to define an interface filter for use with the iflt_attach function.
 

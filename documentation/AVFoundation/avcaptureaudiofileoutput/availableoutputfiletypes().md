@@ -19,7 +19,7 @@ class func availableOutputFileTypes() -> [AVFileType]
 + (NSArray<NSString *> *) availableOutputFileTypes;
 ```
 
-#### Return Value
+## Return Value
 
 An array containing UTIs identifying the file types `AVCaptureAudioFileOutput` can write.
 

@@ -23,11 +23,11 @@ func bindAndWriteData(_ inputsData: [String : MLCTensorData], forInputs inputTen
 - (BOOL) bindAndWriteData:(NSDictionary<NSString *,MLCTensorData *> *) inputsData forInputs:(NSDictionary<NSString *,MLCTensor *> *) inputTensors toDevice:(MLCDevice *) device batchSize:(NSUInteger) batchSize synchronous:(BOOL) synchronous;
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the data is successfully associated with input tensors, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 Use this method if you execute the forward, gradient, and optimizer updates independently. Write the inputs to device memory before the layer executes the forward pass. Similarly, write the inputs—typically the initial gradient tensor—to device memory before the layer executes the gradient pass.
 

@@ -19,7 +19,7 @@ class var shared: NSUserDefaultsController { get }
 @property (class, strong, readonly) NSUserDefaultsController * sharedUserDefaultsController;
 ```
 
-#### Discussion
+## Discussion
 
 This instance has no initial values, and uses `[NSUserDefaults standardUserDefaults]` to create the defaults. An application can get this object when an application launches and configure it as required.
 

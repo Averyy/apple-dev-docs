@@ -19,7 +19,7 @@ func SCNetworkConnectionSetDispatchQueue(_ connection: SCNetworkConnection, _ qu
 Boolean SCNetworkConnectionSetDispatchQueue(SCNetworkConnectionRef connection, dispatch_queue_t queue);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if successful; otherwise, `FALSE` (use the [`SCError()`](./scerror%28%29.md) function to retrieve the specific error).
 

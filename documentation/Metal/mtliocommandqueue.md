@@ -24,7 +24,7 @@ protocol MTLIOCommandQueue : NSObjectProtocol, Sendable
 @protocol MTLIOCommandQueue <NSObject>
 ```
 
-#### Overview
+## Overview
 
 Use an input/output command queue to submit commands, in command buffers, that load assets from the file system directly into GPU resources. Your app can then use those resources with other commands it submits to an [`MTLCommandQueue`](./mtlcommandqueue.md) that comes from the same [`MTLDevice`](./mtldevice.md).
 

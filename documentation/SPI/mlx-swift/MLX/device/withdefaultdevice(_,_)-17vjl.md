@@ -21,7 +21,7 @@ static func withDefaultDevice<R>(_ device: Device, _ body: () async throws -> R)
 
 - [Using Streams](../using-streams.md)
 
-#### Discussion
+## Discussion
 
 This can be used to set the default device to e.g. the CPU:
 

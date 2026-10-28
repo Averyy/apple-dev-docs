@@ -13,7 +13,7 @@
 kIOOutputCommandStall = 0x0100
 ```
 
-#### Discussion
+## Discussion
 
 A command to stall the queue.
 

@@ -25,7 +25,7 @@ func set(_ url: URL?, forKey defaultName: String)
 - (void) setURL:(NSURL *) url forKey:(NSString *) defaultName;
 ```
 
-#### Discussion
+## Discussion
 
 This method handles file URLs differently than other types of URLs. For most URLs, the method stores the URL object as the root object of a [`Data`](../data.md) archive. If `url` contains a path to a file in the home directory, this method replaces the home directory portion of the path with a tilde (~) character before generating the data object. When you read the value back, the system expands the tilde character to the current home directory path.
 

@@ -24,11 +24,11 @@ func flatten2D(_ tensor: MPSGraphTensor, axisTensor: MPSGraphTensor, name: Strin
 - (MPSGraphTensor *) flatten2DTensor:(MPSGraphTensor *) tensor axisTensor:(MPSGraphTensor *) axisTensor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object.
 
-#### Discussion
+## Discussion
 
 Flattens dimensions before `axis` to `result[0]` and dimensions starting from `axis` to `result[1]` and returns a rank-2 tensor as result.
 

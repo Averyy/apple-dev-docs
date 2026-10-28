@@ -27,11 +27,11 @@ optional func tableView(_ tableView: UITableView, willSelectRowAt indexPath: Ind
 
 - [Handling row selection in a table view](../handling-row-selection-in-a-table-view.md)
 
-#### Return Value
+## Return Value
 
 An index path that confirms or alters the selected row. Return an [`IndexPath`](../../Foundation/indexpath.md) (Swift) or [`NSIndexPath`](../../Foundation/nsindexpath.md) (Objective-C) other than `indexPath` if you want another cell to be selected. Return `nil` if you don’t want the row selected.
 
-#### Discussion
+## Discussion
 
 The system calls this method after a user has lifted their finger; the row is highlighted on the initial touch, but only selected when the touch withdraws. You can use [`UITableViewCell.SelectionStyle.none`](../uitableviewcell/selectionstyle-swift.enum/none.md) to disable the appearance of the cell highlight on the initial touch. The system doesn’t call this method if the rows in the table aren’t selectable. See [Handling row selection in a table view](../handling-row-selection-in-a-table-view.md) for more information on controlling table row selection behavior.
 

@@ -21,7 +21,7 @@ Returns a precision that constrains formatted values to a range of allowed digit
 static func fractionLength<R>(_ limits: R) -> NumberFormatStyleConfiguration.Precision where R : RangeExpression, R.Bound == Int
 ```
 
-#### Return Value
+## Return Value
 
 A precision that constrains formatted values to a range of allowed digits in the fraction part.
 

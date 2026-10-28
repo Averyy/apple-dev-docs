@@ -15,11 +15,11 @@ Figure out if a path corresponds to a macOS package.
 int vn_path_package_check(vnode_t vp, char *path, int pathlen, int *component);
 ```
 
-#### Return Value
+## Return Value
 
 0 unless some parameter was invalid, in which case EINVAL is returned. Determine package-ness by checking what *component is set to.
 
-#### Discussion
+## Discussion
 
 Determines if the extension on a path is a known macOS extension type.
 

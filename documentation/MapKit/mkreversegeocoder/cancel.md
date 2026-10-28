@@ -19,7 +19,7 @@ Cancels a pending reverse-geocoding request.
 - (void) cancel;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to cancel a pending request and free up the resources associated with that request. If the request has already returned or has not yet begun, calling this method has no effect.
 

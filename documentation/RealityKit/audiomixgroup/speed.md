@@ -20,7 +20,7 @@ The rate of playback for an audio mix group.
 var speed: Double
 ```
 
-#### Discussion
+## Discussion
 
 The system limits the rate of playback to the range of `[0.25, 4]`. The default speed is `1`, which is equivalent to a normal playback rate.
 

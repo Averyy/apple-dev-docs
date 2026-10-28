@@ -20,11 +20,11 @@ var terminationStatus: Int32 { get }
 @property (readonly) int terminationStatus;
 ```
 
-#### Return Value
+## Return Value
 
 The exit status returned by the receiver’s executable.
 
-#### Discussion
+## Discussion
 
 Each task defines and documents how your app should interpret the return value. For example, many commands return 0 if they complete successfully or an error code if they don’t. You’ll need to look at the documentation for that task to learn what values it returns under what circumstances.
 

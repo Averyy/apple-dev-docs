@@ -20,7 +20,7 @@ var lightEstimate: ARLightEstimate? { get }
 @property (nonatomic, strong, readonly, nullable) ARLightEstimate * lightEstimate;
 ```
 
-#### Discussion
+## Discussion
 
 If you render your own overlay graphics for the AR scene, you can use this information in shading algorithms to help make those graphics match the real-world lighting conditions of the scene captured by the camera. (The [`ARSCNView`](../arscnview.md) class automatically uses this information to configure SceneKit lighting.)
 

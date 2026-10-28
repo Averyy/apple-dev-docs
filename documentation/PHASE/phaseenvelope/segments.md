@@ -24,7 +24,7 @@ var segments: [PHASEEnvelopeSegment] { get }
 @property (nonatomic, copy, readonly) NSArray<PHASEEnvelopeSegment *> * segments;
 ```
 
-#### Discussion
+## Discussion
 
 The framework sets the value of this property to the [`init(startPoint:segments:)`](./init%28startpoint,segments%29.md) argument.
 

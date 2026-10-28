@@ -9,7 +9,7 @@
 bool _ejectable;
 ```
 
-#### Overview
+## Overview
 
 True if the media is ejectable under software control.
 

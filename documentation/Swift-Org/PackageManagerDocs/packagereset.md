@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Reset the complete cache/build directory.
 
-#### Overview
+## Overview
 
 ```
 package reset [--package-path=<package-path>]

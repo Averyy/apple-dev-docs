@@ -17,7 +17,7 @@ The default display style for the maneuver.
 CPManeuverDisplayStyleDefault
 ```
 
-#### Discussion
+## Discussion
 
 The visual layout for this display style is the same as [`leadingSymbol`](./leadingsymbol.md).
 

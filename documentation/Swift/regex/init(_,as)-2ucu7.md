@@ -21,7 +21,7 @@ Creates a regular expression with a strongly-typed capture list from the given r
 init?(_ regex: Regex<AnyRegexOutput>, as outputType: Output.Type = Output.self)
 ```
 
-#### Discussion
+## Discussion
 
 You can use this initializer to convert a regular expression with a dynamic capture list to one with a strongly-typed capture list. If the type you provide as `outputType` doesn’t match the capture structure of `regex`, the initializer returns `nil`.
 

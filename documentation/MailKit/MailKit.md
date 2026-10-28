@@ -9,7 +9,7 @@ Secure, customize, and act on email messages that users send and receive.
 **Availability**:
 - macOS 12.0+
 
-#### Overview
+## Overview
 
 MailKit lets your app include an app extension that customizes several features of Mail. A Mail app extension provides one or more of the following enhancements:
 

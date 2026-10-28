@@ -23,7 +23,7 @@ optional func mapView(_ mapView: MKMapView, selectionAccessoryFor annotation: an
 - (MKSelectionAccessory *) mapView:(MKMapView *) mapView selectionAccessoryForAnnotation:(id<MKAnnotation>) annotation;
 ```
 
-#### Discussion
+## Discussion
 
 Called for all selected annotations. Not all types of annotations support displaying selection accessories. For example, the map item detail selection accessory is only supported for [`MKMapItemAnnotation`](../mkmapitemannotation.md) and [`MKMapFeatureAnnotation`](../mkmapfeatureannotation.md). Please return `nil` for annotations where a selection accessory is not desired.
 

@@ -25,7 +25,7 @@ func accelerationStructureSizes(descriptor: MTLAccelerationStructureDescriptor) 
 - (MTLAccelerationStructureSizes) accelerationStructureSizesWithDescriptor:(MTLAccelerationStructureDescriptor *) descriptor;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLAccelerationStructureSizes`](../mtlaccelerationstructuresizes.md) instance.
 

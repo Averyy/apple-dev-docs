@@ -5,7 +5,7 @@
 
 Manage custom End User License Agreements (EULA) that are related to territories.
 
-#### Overview
+## Overview
 
 `endUserLicenseAgreements` represents the custom End User License Agreement (EULA) that you provide. Apple provides a standard EULA that applies in all territories. If you need to provide a custom EULA, use this resource to provide your agreement text. Relate it to the app and territories for which it applies using the [Territories](./territories.md) resource.
 

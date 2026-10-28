@@ -25,7 +25,7 @@ func AVAudioMake3DVectorOrientation(_ forward: AVAudio3DVector, _ up: AVAudio3DV
 static AVAudio3DVectorOrientation AVAudioMake3DVectorOrientation(AVAudio3DVector forward, AVAudio3DVector up);
 ```
 
-#### Return Value
+## Return Value
 
 A new [`AVAudioMake3DVectorOrientation(_:_:)`](./avaudiomake3dvectororientation%28_,_%29.md) object.
 

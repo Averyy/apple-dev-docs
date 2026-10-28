@@ -17,7 +17,7 @@ A thumbnail image of the URL.
 var thumbnail: NSImage? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The URL populates ths property by retrieving the [`thumbnailKey`](../urlresourcekey/thumbnailkey.md) from the resource values, and is `nil` if there’s no value for the key.
 

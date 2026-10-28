@@ -19,7 +19,7 @@ A key the container app uses to retrieve the reason the app extension requested 
 static let containerAppLaunchReasonKey: String
 ```
 
-#### Discussion
+## Discussion
 
 When launched with the user activity type [`containerAppLaunchReasonKey`](./containerapplaunchreasonkey.md), your app retrieves this key from the [`userInfo`](../../Foundation/nsuseractivity/userinfo.md) dictionary of the [`NSUserActivity`](../../Foundation/nsuseractivity.md) received by the launch method. The value is a string that you pass to `LiveAssistanceLaunchReason(rawValue:)` to create an instance of the [`LiveAssistanceLaunchReason`](../liveassistancelaunchreason.md) enumeration. Compare this instance against the defined cases in the enumeration to determine why the container app launched, such as to perform sign-in or to collect further information or approval. The string you receive from the user activity is only appropriate for instantiating a [`LiveAssistanceLaunchReason`](../liveassistancelaunchreason.md) to compare against; it’s not appropriate for use in your user interface.
 

@@ -22,7 +22,7 @@ Submits a closure to the context’s queue for synchronous execution.
 nonisolated func performAndWait<T>(_ block: @Sendable () throws -> T) rethrows -> T
 ```
 
-#### Discussion
+## Discussion
 
 This method supports *reentrancy* — meaning it’s safe to call the method again, from within the closure, before the previous invocation completes.
 

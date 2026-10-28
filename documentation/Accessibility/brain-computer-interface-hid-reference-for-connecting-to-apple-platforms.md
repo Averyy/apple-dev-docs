@@ -11,7 +11,7 @@ An overview of the human interface device (HID) descriptor for interfacing betwe
 - Mac Catalyst 26.0+
 - visionOS 26.0+
 
-#### Overview
+## Overview
 
 This document provides a reference for manufacturers of third-party brain-computer interface hardware devices who want to build in firmware support for interfacing with Apple devices, such as an iPhone.
 
@@ -19,7 +19,7 @@ A *brain-computer interface (BCI)* establishes a signal link between the brain�
 
 The BCI hardware device interfaces with a *host computing device*, such as an iPhone, functioning as an input type for system control and interaction with on-device assistive technology features like Switch Control and AssistiveTouch. This technology supports user control of the host computing device and its apps through neural activity corresponding to specific mental states or tasks.
 
-#### HID descriptor background
+## HID descriptor background
 
 To be universally compatible, a BCI hardware device needs to translate its complex signals into the *human interface device (HID)* protocol. By identifying as a human interface device through a *HID descriptor*, the BCI hardware device can be recognized by a host computing device, allowing it to work seamlessly without requiring specialized drivers.
 
@@ -28,7 +28,7 @@ To be universally compatible, a BCI hardware device needs to translate its compl
 - The descriptor can support bidirectional communication, letting the BCI hardware device receive contextual information back from the host computing device, and allowing the BCI hardware device to update its own state (for example, switching decoding models) depending on how a person is interacting with their device.
 - The descriptor provides a way to send high-level commands to the operating system. It’s up to the BCI hardware device manufacturer to decide how to interpret the relevant signals, and convert them to commands that the operating system can understand as user intent.
 
-#### HID descriptor
+## HID descriptor
 
 The HID descriptor describes what the BCI hardware device can input and output. It defines the following input and output reports:
 
@@ -38,18 +38,18 @@ The HID descriptor describes what the BCI hardware device can input and output. 
 - [Report ID 4: BCI input item selection report](./brain-computer-interface-hid-reference-for-connecting-to-apple-platforms.md#Report-ID-4-BCI-input-item-selection-report)
 - [Report ID 4: BCI output scan information report](./brain-computer-interface-hid-reference-for-connecting-to-apple-platforms.md#Report-ID-4-BCI-output-scan-information-report)
 
-##### Report ID 1: BCI input signal report
+### Report ID 1: BCI input signal report
 
 This report provides real-time data on the interpretability and fidelity of neural signals the BCI hardware device acquires. This information helps the host computing device offer immediate user feedback through a visual indicator. When the host computing device receives a signal quality message, it can communicate that information in the UI. For example, iOS represents this information by an animated overlay visual when the Switch Control cursor has focus on an element.
 
-###### Technical summary
+#### Technical summary
 
 This section defines an input report (report ID = 1) for signal quality (BCI Usage 0x02).
 
 - `signalQuality[0]` represents a *button number ID*.
 - `signalQuality[1]` represents *neural activity strength*, which you scale from a percentage (`0-100`) to the full `0` to `255` range.
 
-###### Sending signal quality reports
+#### Sending signal quality reports
 
 The following code shows general examples of HID events a BCI hardware device might send to a host computing device. Since the firmware stack for HID messages might vary from manufacturer to manufacturer, follow these examples and modify them as necessary to the BCI hardware device’s framework. For example, some frameworks require the report ID in the first index of each report, so a signal quality report might use a three-element array instead of two.
 
@@ -90,11 +90,11 @@ void send_bci_neural_strength_report(void* hid_user_device, uint8_t button_id, u
 }
 ```
 
-##### Report ID 2: BCI input button report
+### Report ID 2: BCI input button report
 
 This report allows the BCI hardware device to simulate button presses and releases, for either sending basic system inputs (like navigation actions or performing a selection) or high-level system actions relevant to the host computing device’s operating system. The host computing device can map these button events to assistive technology features (such as Switch Control) or to various actions such as marking the current element as selected, navigating to the next element, navigating to the previous element, or other custom commands.
 
-###### Technical summary
+#### Technical summary
 
 This section defines an input report (report ID = 2) for 32 buttons (HID Button Usage Page).
 
@@ -131,7 +131,7 @@ List of actions:
 }
 ```
 
-###### Sending button event reports
+#### Sending button event reports
 
 ```c
 /**
@@ -188,7 +188,7 @@ void send_bci_button_click(void* hid_user_device, uint8_t button_index, uint64_t
 }
 ```
 
-##### Report ID 3: BCI input pointer report
+### Report ID 3: BCI input pointer report
 
 This report drives an onscreen pointer for features such as Switch Control. A single report can describe a one-, two-, or three-dimensional movement. The host computing device chooses how to interpret each report based on which axes the report marks as valid. The BCI hardware device chooses the dimensionality per report, so it can switch between gliding-cursor and head-tracking interaction without reconfiguring the HID descriptor. The host computing device can use this report to:
 
@@ -203,7 +203,7 @@ A report can carry either *relative* movement deltas or *absolute* positions, an
 
 The BCI hardware device selects relative or absolute positioning for the pointer through the pointer item’s descriptor flag, independent of the per-report dimensionality. For details, see [Relative and absolute positioning](./brain-computer-interface-hid-reference-for-connecting-to-apple-platforms.md#Relative-and-absolute-positioning).
 
-###### Technical summary
+#### Technical summary
 
 This section defines an input report (report ID = 3) for a pointer (HID Generic Desktop Usage Page).
 
@@ -219,7 +219,7 @@ This section defines an input report (report ID = 3) for a pointer (HID Generic 
 | 2D | valid | valid | `-128` | 2D pointer (head-tracking equivalent) |
 | 3D | valid | valid | valid | Spatial point picker (visionOS) |
 
-###### Relative and absolute positioning
+#### Relative and absolute positioning
 
 The pointer item declares whether its axes are relative or absolute through the HID Input item’s Relative/Absolute flag in the descriptor — `0x81, 0x06` (`Data, Variable, Relative`) or `0x81, 0x02` (`Data, Variable, Absolute`). This is a fixed, device-level choice for the pointer, unlike dimensionality, which the BCI hardware device selects per report.
 
@@ -231,7 +231,7 @@ The pointer item declares whether its axes are relative or absolute through the 
 
 Keep the pointer item’s logical range within `-127` to `127` so the `-128` absent-axis sentinel stays reserved. The host computing device applies absolute positioning to the 1D gliding cursor and the 2D pointer only; the 3D spatial pointer always uses relative deltas. All other pointer rules are unchanged in absolute mode: the x-axis must be valid, `-128` still marks an absent axis, and the set of valid axes selects the dimensionality as in the preceding table.
 
-###### Sending pointer event reports
+#### Sending pointer event reports
 
 To send pointer movement data, you populate the `BCIInputPointerReport` structure with the values for x, y, and z — deltas in relative mode, or positions in absolute mode.
 
@@ -321,17 +321,17 @@ void send_bci_pointer_2d_absolute(void* hid_user_device, int x, int y, uint64_t 
 }
 ```
 
-##### Report ID 4: BCI input item selection report
+### Report ID 4: BCI input item selection report
 
 This report allows the BCI hardware device to directly influence the element selection of accessibility features (like Switch Control). By sending a specific `itemIndex`, the BCI hardware device can instruct the host computing device to activate a particular UI item.
 
 The BCI hardware device can obtain an understanding of the current UI context and determine which item to select by observing the corresponding output reports for item selection ([Report ID 4: BCI output scan information report](./brain-computer-interface-hid-reference-for-connecting-to-apple-platforms.md#Report-ID-4-BCI-output-scan-information-report)).
 
-###### Technical summary
+#### Technical summary
 
 This section defines an input report for item selection (BCI Usage 0x04). It contains a single 8-bit field, `itemIndex`, which has a logical range from `0` to `255`.
 
-###### Sending item selection event reports
+#### Sending item selection event reports
 
 ```c
 /**
@@ -362,7 +362,7 @@ void send_bci_item_selection_report(void* hid_user_device, uint8_t item_index, u
 }
 ```
 
-##### Report ID 4: BCI output scan information report
+### Report ID 4: BCI output scan information report
 
 This report allows the host computing device (such as an iPhone with Switch Control on) to provide feedback and contextual information to the BCI hardware device about the current state of the interval-based sequential navigation process, also known as a *switch scanning mode*. The BCI hardware device can use this information to:
 
@@ -372,7 +372,7 @@ This report allows the host computing device (such as an iPhone with Switch Cont
 
 > **Privacy note**: The host computing device doesn’t send information about the focused item if it’s a keyboard key (for example, from a software keyboard) to protect user privacy.
 
-###### Technical summary
+#### Technical summary
 
 This section defines an output report (report ID = 4), which is data the host computing device sends this data to the BCI hardware device. It describes a total of 6 bytes of information with a range from `0` to `255`:
 
@@ -385,7 +385,7 @@ This section defines an output report (report ID = 4), which is data the host co
 | 5 | `UInt8` | `uiScanningLatencyInt` | The integer part of the UI scanning latency. This value represents the time between the host handling packet responses from the device and when “Move next/previous” commands are processed internally. |
 | 6 | `UInt8` | `uiScanningLatencyFrac` | The fractional part of the UI scanning latency. This value is `x/255`, where `x` is the byte’s value. |
 
-###### Receiving selected item reports
+#### Receiving selected item reports
 
 ```c
 typedef struct {
@@ -442,11 +442,11 @@ void output_report_callback(void* context, IOReturn result, void* sender, IOHIDR
 }
 ```
 
-#### Appendix
+## Appendix
 
 The following section provides an example HID descriptor for a BCI hardware device, and defines example structures for the input and output reports.
 
-##### Example BCI HID descriptor and report structure
+### Example BCI HID descriptor and report structure
 
 This header declares the protocol you integrate into the firmware for any BCI hardware device that needs to send and receive BCI HID messages.
 

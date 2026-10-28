@@ -20,7 +20,7 @@ var wantsHDREnvironmentTextures: Bool { get set }
 @property (nonatomic, assign) BOOL wantsHDREnvironmentTextures;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`true`](../../Swift/true.md). If your renderer supports HDR environment textures, this feature effects more realistic reflections.
 

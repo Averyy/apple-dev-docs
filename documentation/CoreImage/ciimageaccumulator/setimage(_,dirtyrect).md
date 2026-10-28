@@ -24,7 +24,7 @@ func setImage(_ image: CIImage, dirtyRect: CGRect)
 - (void) setImage:(CIImage *) image dirtyRect:(CGRect) dirtyRect;
 ```
 
-#### Discussion
+## Discussion
 
 For additional details on using this method, see “Imaging Dynamical Systems” in [Core Image Programming Guide](https://developer.apple.com/library/archive/documentation/GraphicsImaging/Conceptual/CoreImaging/ci_intro/ci_intro.html#//apple_ref/doc/uid/TP30001185).
 

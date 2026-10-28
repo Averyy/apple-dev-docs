@@ -13,7 +13,7 @@
 #define kIOPropertyPhysicalInterconnectLocationKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is used to define the Physical Interconnect Location.
 

@@ -15,7 +15,7 @@ An array of predicate dictionaries used to determine whether a record matches th
 attribute Object[] filterBy;
 ```
 
-#### Discussion
+## Discussion
 
 For details see [Fetching Records Using a Query (records/query)](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/QueryingRecords.html#//apple_ref/doc/uid/TP40015240-CH5) in [CloudKit Web Services Reference](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitWebServicesReference/index.html#//apple_ref/doc/uid/TP40015240)
 

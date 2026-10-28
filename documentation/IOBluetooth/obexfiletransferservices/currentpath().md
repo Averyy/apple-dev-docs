@@ -19,11 +19,11 @@ func currentPath() -> String!
 - (NSString *) currentPath;
 ```
 
-#### Return Value
+## Return Value
 
 The current path being browsed over FTP
 
-#### Discussion
+## Discussion
 
 This path is changed with each path-specific command called on OBEXFileTransferServices.
 

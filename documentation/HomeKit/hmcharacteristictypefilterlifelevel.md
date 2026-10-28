@@ -24,7 +24,7 @@ let HMCharacteristicTypeFilterLifeLevel: String
 extern NSString * const HMCharacteristicTypeFilterLifeLevel;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is the percentage of remaining life.
 

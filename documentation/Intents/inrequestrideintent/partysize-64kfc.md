@@ -27,7 +27,7 @@ The number of passengers that the ride must accommodate.
 @property (atomic, copy, readonly, nullable) NSNumber * partySize;
 ```
 
-#### Discussion
+## Discussion
 
 The party size includes the total number of passengers.
 

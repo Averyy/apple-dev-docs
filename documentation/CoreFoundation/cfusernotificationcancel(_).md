@@ -19,11 +19,11 @@ func CFUserNotificationCancel(_ userNotification: CFUserNotification!) -> Int32
 extern SInt32 CFUserNotificationCancel(CFUserNotificationRef userNotification);
 ```
 
-#### Return Value
+## Return Value
 
 `0` if the cancel was successful; a non-`0` value otherwise.
 
-#### Discussion
+## Discussion
 
 You must cancel a user notification if you want to remove its dialog from the screen before the user dismisses it. It is not sufficient to just release the object.
 

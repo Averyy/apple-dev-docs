@@ -21,7 +21,7 @@ Creates a new dispatch work item from an existing block and assigns it the speci
 init(qos: DispatchQoS = .unspecified, flags: DispatchWorkItemFlags = [], block: @escaping () -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Submit the returned dispatch work item to a queue to schedule it for execution in that queue. Dispatch queues may alter the specified quality-of-service level based on the specified `flags` and the quality-of-service level of the queue’s underlying threads. However, the queue never executes the block with a quality-of-service level lower than the one in the `qos` parameter.
 

@@ -24,7 +24,7 @@ static var skipAPIValidation: MPSKernelOptions { get }
 MPSKernelOptionsSkipAPIValidation
 ```
 
-#### Discussion
+## Discussion
 
 Most kernels double-check their arguments. This has a small but nonzero CPU cost. Setting this option, however, does not skip checks for memory allocation failure. Turning on this option can result in undefined behavior if the requested operation cannot be completed for some reason. Most error states will be passed through to Metal, which may do nothing or abort the program if Metal API validation is turned on.
 

@@ -19,7 +19,7 @@ func hv_vcpu_interrupt(_ vcpus: UnsafeMutablePointer<hv_vcpuid_t>, _ vcpu_count:
 extern hv_return_t hv_vcpu_interrupt(hv_vcpuid_t *vcpus, unsigned int vcpu_count);
 ```
 
-#### Return Value
+## Return Value
 
 [`HV_SUCCESS`](./hv_success.md) if the operation was successful, otherwise an error code specified in [`hv_return_t`](./hv_return_t.md).
 

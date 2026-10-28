@@ -23,7 +23,7 @@ func permissionStatus(for pattern: WKWebExtension.MatchPattern) -> WKWebExtensio
 - (WKWebExtensionContextPermissionStatus) permissionStatusForMatchPattern:(WKWebExtensionMatchPattern *) pattern;
 ```
 
-#### Discussion
+## Discussion
 
 Match patterns can be granted on a per-tab basis. When the tab is known, access checks should always use the method that checks in a tab.
 

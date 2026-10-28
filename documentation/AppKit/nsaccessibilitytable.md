@@ -19,7 +19,7 @@ protocol NSAccessibilityTable : NSAccessibilityGroup
 @protocol NSAccessibilityTable <NSAccessibilityGroup>
 ```
 
-#### Overview
+## Overview
 
 Use this protocol when you want a user interface element to behave like a table—a view that uses a row-and-column format to display a set of related records and their attributes—in the accessibility hierarchy.
 

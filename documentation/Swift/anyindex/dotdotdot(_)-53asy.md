@@ -21,7 +21,7 @@ Returns a partial range extending upward from a lower bound.
 static func ... (minimum: Self) -> PartialRangeFrom<Self>
 ```
 
-#### Discussion
+## Discussion
 
 Use the postfix range operator (postfix `...`) to create a partial range of any type that conforms to the `Comparable` protocol. This example creates a `PartialRangeFrom<Double>` instance that includes any value greater than or equal to `5.0`.
 

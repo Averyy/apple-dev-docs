@@ -16,7 +16,7 @@ nonisolated
 struct ManipulationGestureModifier
 ```
 
-#### Overview
+## Overview
 
 [`manipulationGesture(updating:coordinateSpace:operations:inertia:isEnabled:onChanged:)`](./view/manipulationgesture%28updating,coordinatespace,operations,inertia,isenabled,onchanged%29.md) returns a view modified with this type. You don’t create it directly.
 

@@ -20,7 +20,7 @@ Returns the information for the current contact.
 func userIdentity() -> ResolvedContact
 ```
 
-#### Return Value
+## Return Value
 
 A resolved contact structure with information your app manages. Fill this structure with information you manage directly such as app-specific account details. You can also include information from sources to which your app has approved access such as the Contacts framework.
 

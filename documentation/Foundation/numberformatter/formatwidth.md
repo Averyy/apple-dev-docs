@@ -25,7 +25,7 @@ var formatWidth: Int { get set }
 @property NSUInteger formatWidth;
 ```
 
-#### Discussion
+## Discussion
 
 The format width is the number of characters of a formatted number within a string that is either left justified or right justified based on the value contained in  [`paddingPosition`](./paddingposition.md).
 

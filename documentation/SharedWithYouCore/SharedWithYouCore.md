@@ -6,7 +6,7 @@
 
 Integrate custom collaboration with Messages, Mail, and FaceTime.
 
-#### Overview
+## Overview
 
 The Shared with You Core framework provides classes to collaborate and share documents directly with the Messages, Mail, and FaceTime apps. Use the classes in this framework to share content, create configurable collaboration settings, and manage participants.
 

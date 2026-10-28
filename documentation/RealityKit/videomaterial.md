@@ -20,7 +20,7 @@ A material that supports animated textures.
 struct VideoMaterial
 ```
 
-#### Overview
+## Overview
 
 In RealityKit, a *material* is an object that defines the surface properties of a rendered 3D object. A `VideoMaterial` is a material that maps a movie file on to the surface of an entity. Video materials are *unlit*, which means that scene lighting doesn’t affect them. Video materials support transparency if the source video’s file format also supports transparency.
 

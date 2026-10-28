@@ -20,7 +20,7 @@ Extracts image features from an image.
 func applied(to image: CIImage, eventHandler: EventHandler? = nil) async throws -> MLShapedArray<Float>
 ```
 
-#### Return Value
+## Return Value
 
 A shaped array containing the extracted features of the image.
 

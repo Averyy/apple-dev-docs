@@ -5,13 +5,13 @@
 
 Object Exchange over Bluetooth.
 
-#### Overview
+## Overview
 
 See the Overview section above for header-level documentation.
 
-##### Overview
+### Overview
 
-###### Included Headers
+#### Included Headers
 
 - <IOBluetooth/OBEX.h>
 - <IOBluetooth/IOBluetoothUserLib.h>

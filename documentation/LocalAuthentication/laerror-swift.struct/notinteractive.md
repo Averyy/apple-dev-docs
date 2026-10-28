@@ -20,7 +20,7 @@ Displaying the required authentication user interface is forbidden.
 static var notInteractive: LAError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Permit the display of the authentication UI by setting the [`interactionNotAllowed`](../lacontext/interactionnotallowed.md) property to [`false`](../../Swift/false.md).
 

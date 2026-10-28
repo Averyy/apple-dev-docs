@@ -21,7 +21,7 @@ Creates a new instance initialized to the given value, if it can be represented 
 init?(exactly other: Float16)
 ```
 
-#### Discussion
+## Discussion
 
 If `other` can’t be represented as an instance of `Double` without rounding, the result of this initializer is `nil`. In particular, passing NaN as `other` always results in `nil`.
 

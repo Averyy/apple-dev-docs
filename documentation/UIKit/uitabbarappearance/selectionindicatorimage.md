@@ -23,7 +23,7 @@ var selectionIndicatorImage: UIImage? { get set }
 @property (nonatomic, strong, readwrite, nullable) UIImage * selectionIndicatorImage;
 ```
 
-#### Discussion
+## Discussion
 
 UIKit renders the image in this property above the tab bar, but behind the tab bar item. If you specify a template or symbol image, UIKit renders that image with the tint color from the [`selectionIndicatorTintColor`](./selectionindicatortintcolor.md) property. If you specify any other type of image, UIKit displays your image without any additional tinting.
 

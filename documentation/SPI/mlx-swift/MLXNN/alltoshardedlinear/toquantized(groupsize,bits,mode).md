@@ -17,7 +17,7 @@ Quantizing keeps the layer sharded.
 override func toQuantized(groupSize: Int, bits: Int, mode: QuantizationMode) -> Module
 ```
 
-#### Discussion
+## Discussion
 
 Without this a quantized model built by [`quantize(model:groupSize:bits:mode:filter:apply:)`](../quantize%28model,groupsize,bits,mode,filter,apply%29.md) would hold plain [`QuantizedLinear`](../quantizedlinear.md) layers that no longer communicate.
 

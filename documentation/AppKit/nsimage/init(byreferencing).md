@@ -19,11 +19,11 @@ convenience init(byReferencing url: URL)
 - (instancetype) initByReferencingURL:(NSURL *) url;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized `NSImage` object.
 
-#### Discussion
+## Discussion
 
 This method initializes the image object lazily. It does not attempt to retrieve the data from the specified URL or create any image representations from that data until an app attempts to draw the image or request information about it.
 

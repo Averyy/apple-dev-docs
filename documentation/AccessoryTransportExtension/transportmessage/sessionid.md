@@ -19,7 +19,7 @@ let sessionID: UUID
 
 - [Forwarding notifications to your accessory using the internet transport type](../forwarding-notifications-to-your-accessory-using-the-internet-transport-type.md)
 
-#### Discussion
+## Discussion
 
 This identifier correlates messages with their capability (such as notifications or Live Activities). The system generates the session ID at feature enrollment time, and the value is fixed while the accessory remains paired through AccessorySetupKit.
 

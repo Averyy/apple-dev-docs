@@ -23,7 +23,7 @@ var mode: UIPushBehavior.Mode { get }
 @property (nonatomic, readonly) UIPushBehaviorMode mode;
 ```
 
-#### Discussion
+## Discussion
 
 The mode is one of the values available in the [`UIPushBehavior.Mode`](./mode-swift.enum.md) enumeration. Set the mode when you call the [`init(items:mode:)`](./init%28items,mode%29.md) method.
 

@@ -22,7 +22,7 @@ Creates a model container using the specified model types, migration plan, and z
 convenience init(for forTypes: any PersistentModel.Type..., migrationPlan: (any SchemaMigrationPlan.Type)? = nil, configurations: ModelConfiguration...) throws
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**: A container must have at least one configuration. If you don’t specify any, the framework creates an instance of [`ModelConfiguration`](../modelconfiguration.md) for you by combining your app’s entitlements with the type’s default values.
 

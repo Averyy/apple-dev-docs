@@ -24,7 +24,7 @@ static var storeFunctionInMetalPipelinesScript: MTLFunctionOptions { get }
 MTLFunctionOptionStoreFunctionInMetalPipelinesScript
 ```
 
-#### Discussion
+## Discussion
 
 Set this option when you want to inspect or consume binary archives with the `metal-source` tool. You don’t need this option when you recompile functions or store them in binary archives.
 

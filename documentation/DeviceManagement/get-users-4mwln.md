@@ -16,9 +16,9 @@ Get information about a set of users.
 - [Using paginated endpoints](./using-paginated-endpoints.md)
 - [Managing users](./managing-users.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

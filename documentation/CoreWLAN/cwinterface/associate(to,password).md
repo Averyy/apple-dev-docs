@@ -19,7 +19,7 @@ func associate(to network: CWNetwork, password: String?) throws
 - (BOOL) associateToNetwork:(CWNetwork *) network password:(NSString *) password error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method will block for the duration of the association. This operation may require an administrator password.
 

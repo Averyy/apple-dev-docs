@@ -15,11 +15,11 @@ Creates and returns a text encoding specification.
 TextEncoding CreateTextEncoding(TextEncodingBase encodingBase, TextEncodingVariant encodingVariant, TextEncodingFormat encodingFormat);
 ```
 
-#### Return Value
+## Return Value
 
 The text encodingspecification that the function creates from the values you passit.
 
-#### Discussion
+## Discussion
 
 When you create a text encoding specification, the three valuesthat you specify are packed into an unsigned integer, which youcan then pass by value to the functions that use text encodings.See the data type  [`TextEncodingRun`](./textencodingrun.md). 
 

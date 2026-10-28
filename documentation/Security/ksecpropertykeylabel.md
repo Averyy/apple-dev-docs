@@ -19,7 +19,7 @@ let kSecPropertyKeyLabel: CFString
 extern CFStringRef const kSecPropertyKeyLabel;
 ```
 
-#### Discussion
+## Discussion
 
 This label may contain a descriptive (localized) string or an OID string.
 

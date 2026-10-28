@@ -25,7 +25,7 @@ var retainsRegisteredObjects: Bool { get set }
 @property (nonatomic) BOOL retainsRegisteredObjects;
 ```
 
-#### Discussion
+## Discussion
 
 If set to [`true`](../../Swift/true.md), the receiver keeps strong references to all registered managed objects. If set to [`false`](../../Swift/false.md), then the receiver keeps strong references to registered objects only when they are inserted, updated, deleted, or locked. The default is [`false`](../../Swift/false.md).
 

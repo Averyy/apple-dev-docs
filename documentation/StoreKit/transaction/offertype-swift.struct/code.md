@@ -26,7 +26,7 @@ static let code: Transaction.OfferType
 - [Supporting offer codes in your app](../../supporting-offer-codes-in-your-app.md)
 - [Supporting subscription offer codes in your app](../../supporting-subscription-offer-codes-in-your-app.md)
 
-#### Discussion
+## Discussion
 
 You create and define offer codes in App Store Connect. Offer codes are available for any Apple In-App Purchase product type.
 

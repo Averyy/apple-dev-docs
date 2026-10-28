@@ -24,7 +24,7 @@ enum HKVO2MaxTestType
 enum HKVO2MaxTestType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 VO2 max represents the maximal oxygen consumption during incremental exercise. VO2 max is an important indicator of fitness and endurance.
 

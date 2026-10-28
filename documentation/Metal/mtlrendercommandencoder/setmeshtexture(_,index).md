@@ -25,7 +25,7 @@ func setMeshTexture(_ texture: (any MTLTexture)?, index: Int)
 - (void) setMeshTexture:(id<MTLTexture>) texture atIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the texture at each index is `nil`.
 

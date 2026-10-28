@@ -22,7 +22,7 @@ func updateSelectableDates()
 - (void) updateSelectableDates;
 ```
 
-#### Discussion
+## Discussion
 
 Call this function after you change the set of dates that are selectable in your calendar view.
 

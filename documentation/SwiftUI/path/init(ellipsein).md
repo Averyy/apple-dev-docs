@@ -21,7 +21,7 @@ Creates a path as an ellipse within the given rectangle.
 init(ellipseIn rect: CGRect)
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience function that creates a path of an ellipse. Using this convenience function is more efficient than creating a path and adding an ellipse to it.
 

@@ -23,7 +23,7 @@ class MPAdTimeRange
 @interface MPAdTimeRange : NSObject
 ```
 
-#### Overview
+## Overview
 
 This value must be in bounds of the duration of the current player item.
 

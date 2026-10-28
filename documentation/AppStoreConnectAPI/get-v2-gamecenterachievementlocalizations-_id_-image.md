@@ -9,7 +9,7 @@ Get a list of images for a specific Game Center achievement localization.
 **Availability**:
 - App Store Connect API 3.6+
 
-#### Overview
+## Overview
 
 - id:
 - fields[gameCenterAchievementImages]:

@@ -23,7 +23,7 @@ class func registerCustomURLScheme(_ urlScheme: String)
 + (void) registerCustomURLScheme:(NSString *) urlScheme;
 ```
 
-#### Discussion
+## Discussion
 
 This method should be used to register any custom URL schemes used by the app for the extension base URLs, other than `webkit-extension`, or if extensions should have access to other supported URL schemes when using `<all_urls>`.
 

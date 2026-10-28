@@ -15,7 +15,7 @@ A unique identifier for the notification.
 string notificationUUID
 ```
 
-#### Discussion
+## Discussion
 
 The App Store server assigns a unique identifier to each notification it sends. Use this value to identify, and ignore, duplicate notifications.
 

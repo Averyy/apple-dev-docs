@@ -23,7 +23,7 @@ var usageBoundsForTextContainer: CGRect { get }
 @property (readonly) CGRect usageBoundsForTextContainer;
 ```
 
-#### Discussion
+## Discussion
 
 Views can observe this property to trigger a resize operation. For example, `UIView or NSView` call [`setNeedsUpdateConstraints()`](../uiview/setneedsupdateconstraints%28%29.md) when the usage bounds changes. This property is KVO-compliant.
 

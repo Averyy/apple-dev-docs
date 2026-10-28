@@ -29,7 +29,7 @@ size_t SecKeyGetBlockSize(SecKeyRef key);
 
 - [Using Keys for Encryption](./using-keys-for-encryption.md)
 
-#### Return Value
+## Return Value
 
 The block length associated with the key in bytes. If the key is an RSA key, for example, this is the size of the modulus.
 

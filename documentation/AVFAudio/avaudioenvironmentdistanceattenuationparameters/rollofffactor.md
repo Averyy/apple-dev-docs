@@ -25,7 +25,7 @@ var rolloffFactor: Float { get set }
 @property (nonatomic) float rolloffFactor;
 ```
 
-#### Discussion
+## Discussion
 
 A higher value results in a steeper attenuation curve. The default value is `1.0`, and the value must be greater than `0.0`.
 

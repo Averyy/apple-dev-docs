@@ -15,7 +15,7 @@ The short code for the state or area.
 administrativeAreaCode: string | null;
 ```
 
-#### Discussion
+## Discussion
 
 For example, the [`administrativeAreaCode`](./administrativeareacode.md) for Golden Gate Park in San Francisco, California is `"CA"`.
 

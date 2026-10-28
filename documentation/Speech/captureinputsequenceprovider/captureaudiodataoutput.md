@@ -19,7 +19,7 @@ An audio data output that routes and converts captured audio buffers to async se
 final var captureAudioDataOutput: AVCaptureAudioDataOutput { get }
 ```
 
-#### Discussion
+## Discussion
 
 Add this output to an existing capture session. Calling [`providerWithSession(from:compatibleWith:priority:)`](./providerwithsession%28from,compatiblewith,priority%29.md) automatically adds this output to the session it creates.
 

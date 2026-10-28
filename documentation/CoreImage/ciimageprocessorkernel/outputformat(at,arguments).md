@@ -24,11 +24,11 @@ class func outputFormat(at outputIndex: Int32, arguments: [String : Any]?) -> CI
 + (CIFormat) outputFormatAtIndex:(int) outputIndex arguments:(NSDictionary<NSString *,id> *) arguments;
 ```
 
-#### Return Value
+## Return Value
 
  Return the desired `CIPixelFormat`
 
-#### Discussion
+## Discussion
 
 The format must be one of `kCIFormatBGRA8`, `kCIFormatRGBAh`, `kCIFormatRGBAf` or `kCIFormatR8`. On iOS 12 and macOS 10.14, the formats `kCIFormatRh` and `kCIFormatRf` are also supported.
 

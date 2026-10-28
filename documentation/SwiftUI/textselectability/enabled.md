@@ -22,7 +22,7 @@ static var enabled: EnabledTextSelectability { get }
 
 Available when `Self` is `EnabledTextSelectability`.
 
-#### Discussion
+## Discussion
 
 Enabling text selection allows people to perform actions on the text content, such as copying and sharing. Enable text selection in views where those operations are useful, such as copying unique IDs or error messages. This allows people to paste the data into emails or documents.
 

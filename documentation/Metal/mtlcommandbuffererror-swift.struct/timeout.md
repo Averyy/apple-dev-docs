@@ -20,7 +20,7 @@ An error code that indicates the system interrupted and terminated the command b
 static var timeout: MTLCommandBufferError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 Possible causes include:
 

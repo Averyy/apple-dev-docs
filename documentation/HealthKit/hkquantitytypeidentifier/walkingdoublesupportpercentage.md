@@ -24,7 +24,7 @@ static let walkingDoubleSupportPercentage: HKQuantityTypeIdentifier
 extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierWalkingDoubleSupportPercentage;
 ```
 
-#### Discussion
+## Discussion
 
 These samples measure the percentage of time during a walk that both of the user’s feet are on the ground. A lower value indicates that the user spends more time with the weight on just one foot instead of two. During a typical walk, this measure falls between 20% and 40%. Double support time varies depending on how fast the user walks and the terrain.
 

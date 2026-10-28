@@ -23,7 +23,7 @@ struct CoreSpotlightSource
 
 - [Making your indexed content available to Foundation Models](./making-your-indexed-content-available-to-foundation-models.md)
 
-#### Overview
+## Overview
 
 Use this type to configure the Spotlight search tool to search your app’s indexed content. When performing searches, the tool queries your content for [`CSSearchableItem`](./cssearchableitem.md) objects that match the specified criteria. When delivering search results to the model, the tool delivers each item’s identifier and any attributes you specify in the [`fetchAttributes`](./corespotlightsource/fetchattributes.md) property. To provide additional item-specific content that isn’t in the Spotlight index, provide a delegate object to generate that data dynamically from your content.
 

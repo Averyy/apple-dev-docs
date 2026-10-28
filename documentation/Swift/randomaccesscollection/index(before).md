@@ -22,7 +22,7 @@ Returns the position immediately before the given index.
 override func index(before i: Self.Index) -> Self.Index
 ```
 
-#### Return Value
+## Return Value
 
 The index value immediately before `i`.
 

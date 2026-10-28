@@ -23,7 +23,7 @@ init(situation: INDailyRoutineRelevanceProvider.Situation)
 - (instancetype) initWithSituation:(INDailyRoutineSituation) situation;
 ```
 
-#### Return Value
+## Return Value
 
 A a newly initialized daily routine relevance provider.
 

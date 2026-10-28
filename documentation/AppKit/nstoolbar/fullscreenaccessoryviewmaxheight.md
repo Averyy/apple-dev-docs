@@ -21,7 +21,7 @@ var fullScreenAccessoryViewMaxHeight: CGFloat { get set }
 @property CGFloat fullScreenAccessoryViewMaxHeight;
 ```
 
-#### Discussion
+## Discussion
 
 The [`fullScreenAccessoryViewMaxHeight`](./fullscreenaccessoryviewmaxheight.md) is used when displaying a fully revealed menu bar. During the reveal, the toolbar’s accessory view’s frame is interpolated between its [`fullScreenAccessoryViewMinHeight`](./fullscreenaccessoryviewminheight.md) and `fullScreenAccessoryViewMaxHeight` properties.
 

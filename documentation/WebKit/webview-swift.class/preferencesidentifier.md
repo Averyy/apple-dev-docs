@@ -21,7 +21,7 @@ var preferencesIdentifier: String! { get set }
 @property (nonatomic, copy) NSString * preferencesIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 It is fixed to the keys used to store the receiver’s preferences in the user defaults database. `WebView` objects can share instances of the `WebPreferences` class by using the same preferences identifier.
 

@@ -22,7 +22,7 @@ var nextFrame: VTFrameProcessorFrame? { get }
 @property (nonatomic, readonly, nullable) VTFrameProcessorFrame * nextFrame;
 ```
 
-#### Discussion
+## Discussion
 
 This value can be set to nil for the last frame.
 

@@ -24,7 +24,7 @@ var timeZone: TimeZone? { get set }
 @property (nonatomic, copy, nullable) NSTimeZone * timeZone;
 ```
 
-#### Discussion
+## Discussion
 
 The date specified in [`fireDate`](./firedate.md) is interpreted according to the value of this property. If you specify `nil` (the default), the fire date is interpreted as an absolute GMT time, which is suitable for cases such as countdown timers. If you assign a valid [`NSTimeZone`](../../Foundation/nstimezone.md) object to this property, the fire date is interpreted as a wall-clock time that is automatically adjusted when there are changes in time zones; an example suitable for this case is an an alarm clock.
 

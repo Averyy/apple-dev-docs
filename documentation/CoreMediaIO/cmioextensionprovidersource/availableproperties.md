@@ -21,7 +21,7 @@ var availableProperties: Set<CMIOExtensionProperty> { get }
 @property (atomic, copy, readonly) NSSet<NSString *> * availableProperties;
 ```
 
-#### Discussion
+## Discussion
 
 Don’t change this property value during the life cycle of the associated provider.
 

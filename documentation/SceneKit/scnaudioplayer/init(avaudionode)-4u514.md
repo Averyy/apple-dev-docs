@@ -25,11 +25,11 @@ init(avAudioNode audioNode: AVAudioNode)
 - (instancetype) initWithAVAudioNode:(AVAudioNode *) audioNode;
 ```
 
-#### Return Value
+## Return Value
 
 A positional audio player object.
 
-#### Discussion
+## Discussion
 
 Using this initializer is typically not necessary. Instead, call the [`audioPlayerWithAVAudioNode:`](./audioplayerwithavaudionode_.md) method, which returns a cached audio player object if one for the specified [`AVAudioNode`](../../AVFAudio/avaudionode.md) object has already been created and is available for use.
 

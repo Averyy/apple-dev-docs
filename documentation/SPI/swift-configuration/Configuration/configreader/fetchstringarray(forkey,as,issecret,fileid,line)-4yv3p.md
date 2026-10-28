@@ -24,11 +24,11 @@ Asynchronously fetches an array of config values for the given config key, conve
 func fetchStringArray<Value>(forKey key: ConfigKey, as type: Value.Type = Value.self, isSecret: Bool = false, fileID: String = #fileID, line: UInt = #line) async throws -> [Value]? where Value : ExpressibleByConfigString
 ```
 
-#### Return Value
+## Return Value
 
 An array of values converted to the expected type if found and convertible, otherwise `nil`.
 
-#### Discussion
+## Discussion
 
 Use this method to retrieve configuration arrays where each element can be converted from strings using async providers. If the value doesn’t exist, the method returns `nil`.
 

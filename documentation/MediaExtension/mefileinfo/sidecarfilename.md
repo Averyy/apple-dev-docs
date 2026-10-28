@@ -17,7 +17,7 @@ var sidecarFileName: String? { get set }
 @property (nonatomic, copy, nullable) NSString * sidecarFileName;
 ```
 
-#### Discussion
+## Discussion
 
 The sidecar filename used by the MediaExtension.
 

@@ -19,7 +19,7 @@ var isOnActiveSpace: Bool { get }
 @property (readonly, getter=isOnActiveSpace) BOOL onActiveSpace;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the window is on the currently active space; otherwise, [`false`](../../Swift/false.md). For visible windows, this property indicates whether the window is currently visible on the active space. For nonvisible windows, it indicates whether ordering the window onscreen would cause it to be on the active space.
 

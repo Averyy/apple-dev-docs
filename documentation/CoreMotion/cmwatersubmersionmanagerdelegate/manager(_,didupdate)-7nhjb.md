@@ -23,7 +23,7 @@ optional func manager(_ manager: CMWaterSubmersionManager, didUpdate measurement
 - (void) manager:(CMWaterSubmersionManager *) manager didUpdateMeasurement:(CMWaterSubmersionMeasurement *) measurement;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to receive updated surface pressure, water pressure, and depth data. The system sends measurement updates three times a second while submerged. When on the surface, the system provides updates at a slower rate, and may stop providing updates if the device isn’t moving.
 

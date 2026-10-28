@@ -25,7 +25,7 @@ let kSecValueRef: CFString
 extern CFStringRef const kSecValueRef;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value, depending on the item class requested, is of type [`SecKeychainItem`](./seckeychainitem.md), [`SecKey`](./seckey.md), [`SecCertificate`](./seccertificate.md), or [`SecIdentity`](./secidentity.md).
 

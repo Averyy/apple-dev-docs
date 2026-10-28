@@ -15,11 +15,11 @@ Update vnode data associated with the vfs cache.
 void vnode_update_identity(vnode_t vp, vnode_t dvp, const char *name, int name_len, uint32_t name_hashval, int flags);
 ```
 
-#### Return Value
+## Return Value
 
 void.
 
-#### Discussion
+## Discussion
 
 The vfs namecache is central to tracking vnode-identifying data and to locating files on the system. vnode_update_identity() is used to update vnode data associated with the cache. It can set a vnode's parent and/or name (also potentially set by vnode_create()) or flush cache data.
 

@@ -19,7 +19,7 @@ A value that represents a camera lens projection type.
 enum STMapType
 ```
 
-#### Overview
+## Overview
 
 Use this value for STMap generation output when using the `ImmersiveLensDefinition/generateSTMap(device:cameraEye:stmapType:into:)` function.
 

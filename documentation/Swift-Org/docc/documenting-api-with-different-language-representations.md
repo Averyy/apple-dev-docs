@@ -10,13 +10,13 @@ framework: "Swift-Org/docc"
 
 Create documentation for API that’s callable from more than one source language.
 
-#### Overview
+## Overview
 
 When a symbol has representations in more than one source language, DocC adds a source language toggle to the symbol’s page so that the reader can select which language’s representation of the symbol to view.
 
 The documentation you write for the symbol—both in-source, alongside its declaration, and in a documentation extension file—is displayed in all language versions of that symbol’s page.
 
-##### Linking to Symbols with Different Language Representations
+### Linking to Symbols with Different Language Representations
 
 You can use either source language’s spelling of the symbol path to refer to the symbol in a symbol link. For example, consider a `Sloth` class with `@objc` attributes:
 
@@ -36,7 +36,7 @@ Regardless of which source language’s spelling you use in the symbol link, Doc
 
 For more information about linking to symbols, see [Linking to Symbols and Other Content](./linking-to-symbols-and-other-content.md).
 
-##### Document Language Specific Parameters and Return Values
+### Document Language Specific Parameters and Return Values
 
 When a symbol has different parameters or return values in different source language representations, DocC hides the documentation for the parameters or return values that don’t apply to the source language version of the page that the reader selected. For example, consider an Objective-C method with an `error` parameter and a `BOOL` return value that correspond to a throwing function without a return value in Swift:
 

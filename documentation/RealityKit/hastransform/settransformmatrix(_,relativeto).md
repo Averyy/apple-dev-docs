@@ -21,7 +21,7 @@ Sets the transform of the entity relative to the given reference entity using a 
 @preconcurrency func setTransformMatrix(_ transform: float4x4, relativeTo referenceEntity: Entity?)
 ```
 
-#### Discussion
+## Discussion
 
 The [`Transform`](../transform.md) component can’t represent all transforms that a general 4x4 matrix can represent. Setting a [`transform`](./transform.md) using a 4x4 matrix is therefore a lossy event that might result in certain transformations, like shear, being dropped.
 

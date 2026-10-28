@@ -19,7 +19,7 @@ func sizeToCells()
 - (void) sizeToCells;
 ```
 
-#### Discussion
+## Discussion
 
 This method does not redraw the receiver.
 

@@ -25,11 +25,11 @@ func makeFunction(name: String, constantValues: MTLFunctionConstantValues) throw
 - (id<MTLFunction>) newFunctionWithName:(NSString *) name constantValues:(MTLFunctionConstantValues *) constantValues error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new [`MTLFunction`](../mtlfunction.md) instance if the method completes successfully; otherwise Swift throws an error and Objective-C returns `nil`.
 
-#### Discussion
+## Discussion
 
 Function constant values are first looked up by their index, then by their name. The compiler ignores any values that don’t correspond to a function constant in the named function, and doesn’t generate errors or warnings.
 

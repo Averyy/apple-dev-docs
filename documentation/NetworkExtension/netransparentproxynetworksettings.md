@@ -19,7 +19,7 @@ class NETransparentProxyNetworkSettings
 @interface NETransparentProxyNetworkSettings : NETunnelNetworkSettings
 ```
 
-#### Overview
+## Overview
 
 A proxy network settings object contains two properties: an array of rules to include traffic ([`includedNetworkRules`](./netransparentproxynetworksettings/includednetworkrules.md)) and an array of rules to exclude traffic ([`excludedNetworkRules`](./netransparentproxynetworksettings/excludednetworkrules.md)). The exclusion rules take prirority. Therefore, if a given flow matches any of the [`excludedNetworkRules`](./netransparentproxynetworksettings/excludednetworkrules.md), evaluation ends and the flow doesn’t route to the proxy. If there’s no match, then evaluation continues and attempts to match the flow against the [`includedNetworkRules`](./netransparentproxynetworksettings/includednetworkrules.md).
 

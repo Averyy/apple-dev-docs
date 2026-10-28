@@ -5,7 +5,7 @@
 
 Constants for keys to retrieve the collection of changed items from a notification’s user info dictionary.
 
-#### Overview
+## Overview
 
 When querying the ubiquitous scope, these keys get added to the user info dictionary only in OS X v10.10 and iOS 8.0 or later, and only when iCloud Drive is enabled for the user’s iCloud account. To track changes in earlier versions of the SDK, use KVO on the query’s `results` property instead.
 

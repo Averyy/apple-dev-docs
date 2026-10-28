@@ -17,7 +17,7 @@ Transform the values in the nested structure using the `transform()` function wh
 func mapValues<E2, E3, R1, R2, R3>(_ item1: NestedItem<Key, E2>, _ item2: NestedItem<Key, E3>, _ transform: (Element, E2?, E3?) throws -> (R1, R2?, R3?)) rethrows -> (NestedItem<Key, R1>, NestedItem<Key, R2>, NestedItem<Key, R3>)
 ```
 
-#### Discussion
+## Discussion
 
 This transforms all three values simultaneously and produces three new `NestedItem` conceptually somewhat like `map(zip(i1, i2, i3))`.
 

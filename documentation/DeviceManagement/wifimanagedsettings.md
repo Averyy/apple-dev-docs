@@ -15,11 +15,11 @@ The payload that configures managed Wi-Fi settings.
 object WiFiManagedSettings
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.MCX` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -31,7 +31,7 @@ Specify `com.apple.MCX` as the payload type.
 | Allowed in user enrollment | N/A |
 | Allow multiple payloads | macOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

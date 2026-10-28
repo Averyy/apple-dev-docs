@@ -21,7 +21,7 @@ Generates an EdDSA signature over Curve25519.
 func signature<D>(for data: D) throws -> Data where D : DataProtocol
 ```
 
-#### Return Value
+## Return Value
 
 The signature for the data. Although not required by [RFC 8032](https://tools.ietf.org/html/rfc8032), which describes the Edwards-Curve Digital Signature Algorithm (EdDSA), the CryptoKit implementation of the algorithm employs randomization to generate a different signature on every call, even for the same data and key, to guard against side-channel attacks.
 

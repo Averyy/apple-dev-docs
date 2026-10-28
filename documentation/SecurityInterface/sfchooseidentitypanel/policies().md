@@ -19,7 +19,7 @@ func policies() -> [Any]!
 - (NSArray *) policies;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns an autoreleased [`NSArray`](../../Foundation/nsarray.md) containing one or more objects of type [`SecPolicy`](../../Security/secpolicy.md) , as set by a previous [`setPolicies(_:)`](./setpolicies%28_%29.md) call, or the Apple X.509 Basic Policy if [`setPolicies(_:)`](./setpolicies%28_%29.md) has not been called. See [Certificate, Key, and Trust Services](../../Security/certificate-key-and-trust-services.md) in [Certificate, Key, and Trust Services](../../Security/certificate-key-and-trust-services.md) for a list of policies and object identifiers provided by the [AppleX509TP Module](https://developer.apple.com/library/archive/documentation/Security/Conceptual/cryptoservices/CDSA/CDSA.html#//apple_ref/doc/uid/TP40011172-CH4-CHDEEDBE).
 

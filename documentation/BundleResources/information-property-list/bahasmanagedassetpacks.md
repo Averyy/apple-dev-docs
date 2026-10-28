@@ -19,7 +19,7 @@ A Boolean value that indicates whether you let the system automatically manage y
 - **Name**: `BAHasManagedAssetPacks`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 Set this key to `YES` if you want the system to automatically download your asset packs and keep them up to date in the background.
 

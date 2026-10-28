@@ -4,13 +4,13 @@
 
 Initialize your app’s data structures, prepare your app to run, and respond to any launch-time requests from the system.
 
-#### Overview
+## Overview
 
 The system launches your app when the user taps your app’s icon on the Home Screen. If your app requested specific events, the system might also launch your app in the background to handle those events.
 
 All apps have an associated process and at least one scene, which the [`UIApplication`](./uiapplication.md) and [`UIScene`](./uiscene.md) objects represent. Apps also have an *app delegate object* — an object that conforms to the [`UIApplicationDelegate`](./uiapplicationdelegate.md) protocol — which responds to important events happening within that process. Even an app that implements the scene life cycle uses an app delegate to manage fundamental events like launch and termination. At launch time, UIKit automatically creates the [`UIApplication`](./uiapplication.md) object and your app delegate. It then starts your app’s main event loop before connecting to one or more of your app’s scenes.
 
-##### Provide a launch storyboard
+### Provide a launch storyboard
 
 When the user first launches your app on a device, the system displays your launch storyboard until your app is ready to display its UI. Displaying the launch storyboard assures the user that your app launched and is doing something. If your app initializes itself and readies its UI quickly, the user may see your launch storyboard only briefly.
 
@@ -24,7 +24,7 @@ Add views to your launch storyboard and use Auto Layout constraints to size and 
 
 > ❗ **Important**:  Don’t use a static image for your launch screen. In iOS 14 and later, the launch screen is limited to 25 MB.
 
-##### Initialize your app’s data structures
+### Initialize your app’s data structures
 
 Put your app’s launch-time initialization code in one or both of the following methods:
 
@@ -41,7 +41,7 @@ UIKit calls these methods at the beginning of your app’s launch cycle. Use the
 
 For apps that haven’t adopted the scene life cycle, UIKit loads your default user interface automatically at launch time. Use the [`application(_:didFinishLaunchingWithOptions:)`](./uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md) method to make additional changes to that interface before it appears onscreen. For example, you might install a different view controller to reflect what the user was doing the last time they used the app.
 
-##### Move long-running tasks off the main thread
+### Move long-running tasks off the main thread
 
 When the user launches your app, make a good impression by launching quickly. Performing long-running tasks in [`application(_:didFinishLaunchingWithOptions:)`](./uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md), [`application(_:willFinishLaunchingWithOptions:)`](./uiapplicationdelegate/application%28_,willfinishlaunchingwithoptions%29.md), or [`scene(_:willConnectTo:options:)`](./uiscenedelegate/scene%28_,willconnectto,options%29.md) might make your app appear sluggish to the user. Returning quickly is also important when launching to the background because the system limits your app’s background execution time.
 
@@ -50,7 +50,7 @@ Move tasks that aren’t critical to your app’s initialization out of the laun
 - Defer the initialization of features that your app doesn’t need immediately.
 - Move important, long-running tasks off your app’s main thread. For example, run them asynchronously on a global dispatch queue or in a [`Task`](../Swift/task.md).
 
-##### Determine why your scene connected
+### Determine why your scene connected
 
 When UIKit connects to a scene in your app, it passes along a [`UIScene.ConnectionOptions`](./uiscene/connectionoptions.md) object that contains information about why UIKit connected to the scene. For example, this could indicate that the user requested your app to open a [`URL`](../Foundation/url.md), which you might use to display a screen related to information provided in the `URL`.
 
@@ -78,7 +78,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 ```
 
-##### Determine why your app launched
+### Determine why your app launched
 
 When UIKit launches your app, it calls the  [`application(_:willFinishLaunchingWithOptions:)`](./uiapplicationdelegate/application%28_,willfinishlaunchingwithoptions%29.md) and [`application(_:didFinishLaunchingWithOptions:)`](./uiapplicationdelegate/application%28_,didfinishlaunchingwithoptions%29.md) methods to indicate when it’s reached these points in your app’s launch process. If your app hasn’t implemented the scene life cycle, UIKit passes along a launch options dictionary to these methods with information about why your app launched. The keys in that dictionary indicate important tasks to perform immediately. For example, they might reflect actions that the user started elsewhere and wants to continue in your app. Always check the contents of the launch options dictionary for keys that you expect, and respond appropriately to their presence.
 

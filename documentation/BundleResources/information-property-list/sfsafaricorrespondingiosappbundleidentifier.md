@@ -14,7 +14,7 @@ A string bundle ID that identifies the corresponding iOS app that contains a con
 - **Name**: `SFSafariCorrespondingIOSAppBundleIdentifier` (Safari - Associated iOS App Bundle Identifier)
 - **Type**: string
 
-#### Discussion
+## Discussion
 
 To enable extension syncing for your macOS app that contains a content blocker or Safari web extension, specify the bundle ID of the corresponding iOS app that contains the same content blocker or Safari web extension.
 

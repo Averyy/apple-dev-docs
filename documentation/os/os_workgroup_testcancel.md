@@ -21,7 +21,7 @@ Returns a Boolean value that indicates whether the workgroup is canceled.
 extern bool os_workgroup_testcancel(os_workgroup_t wg);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the workgroup is canceled, or `false` if it is still active.
 

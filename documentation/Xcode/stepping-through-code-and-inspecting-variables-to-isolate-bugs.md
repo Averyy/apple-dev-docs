@@ -5,7 +5,7 @@
 
 Find the cause of your bugs by watching variables change as you step through your source code in the debugger.
 
-#### Overview
+## Overview
 
 If the root cause of a bug isn’t immediately obvious when inspecting your source code, watching your variables change as you step through the code helps you isolate where the bug is occurring so you can investigate the possible cause for it.
 
@@ -13,7 +13,7 @@ The Xcode debugger provides several methods to step through your code and inspec
 
 Start your investigation at a breakpoint when your app is in a known good state before the bug occurs, at a point where you think the bug may be about to happen.
 
-##### Step through code in the debugger
+### Step through code in the debugger
 
 When you run your app, the debugger pauses at the first breakpoint it encounters, and, by default, updates the display to show the Debug navigator, the source editor, the debug bar, the variable viewer, and the console.
 
@@ -33,7 +33,7 @@ Use the buttons in the debug bar to control the execution of your app.
 
 As you step through your app, inspect variables relevant to your bug and watch for unexpected values.
 
-##### See variable values in code and the variable viewer
+### See variable values in code and the variable viewer
 
 When your app pauses at a breakpoint, hover over a variable in your source code to view its current value. If the variable is an image or other type that isn’t expressible as text, click the Quick Look button at the upper-right to see a preview of the variable. Click the Print Description button to print a description of the object in the console.
 
@@ -47,7 +47,7 @@ Each variable shows a brief summary of the variable’s type, value, and pointer
 
 Click the disclosure triangles to explore instance variables for classes and structures, or internals for other data types. Select a variable and click the Quick Look button to see a preview of the variable, click the Print Description button to print a description of the object in the console.
 
-##### See the call stack and navigate related code
+### See the call stack and navigate related code
 
 When the debugger pauses at a breakpoint, it shows the current active threads and the current call stack in the Debug navigator, and highlights the breakpoint. The call stack represents the relationships of function or method calls that result in the current breakpoint.
 
@@ -57,7 +57,7 @@ Select a line in the call stack if you suspect that your bug is in a calling fun
 
 Select a thread to expand or collapse the view of the call stack for that thread. Select a line in the call stack for the thread to see the source and variables.
 
-##### Evaluate expressions in the console
+### Evaluate expressions in the console
 
 To see more information than the summary of a variable shows in the variables viewer, or to change the value of a variable in the middle of a debugging session, use the console to interact with the debugger directly.
 

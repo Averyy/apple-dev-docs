@@ -15,7 +15,7 @@ Initializes a reference object from a bundle, with reference object configuratio
 init(named: String, from bundle: Bundle? = nil, configuration: ReferenceObject.Configuration) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: `ObjectTrackingProvider.Error`
 

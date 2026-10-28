@@ -20,7 +20,7 @@ Tells the delegate when the rename process ends.
 @preconcurrency func navigationItem(_: UINavigationItem, didEndRenamingWith title: String)
 ```
 
-#### Discussion
+## Discussion
 
 UIKit calls this method after a person finishes renaming the navigation item. Implement this method to update your data model with the new title as needed.
 

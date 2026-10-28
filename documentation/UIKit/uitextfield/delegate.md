@@ -23,7 +23,7 @@ weak var delegate: (any UITextFieldDelegate)? { get set }
 @property (nonatomic, weak, nullable) id<UITextFieldDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 A text field delegate responds to editing-related messages from the text field. You can use the delegate to respond to the text entered by the user and to some special commands, such as when the user taps Return.
 

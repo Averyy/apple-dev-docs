@@ -20,7 +20,7 @@ The zoom ranges that support the delivery of depth data.
 var supportedVideoZoomRangesForDepthDataDelivery: [ClosedRange<CGFloat>] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Virtual devices support limited zoom ranges when delivering depth data to any output. If a device format has no [`supportedDepthDataFormats`](./supporteddepthdataformats.md), the value of this property is an empty array.
 

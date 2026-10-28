@@ -25,7 +25,7 @@ class CKUserIdentity
 @interface CKUserIdentity : NSObject
 ```
 
-#### Overview
+## Overview
 
 A user identity provides identifiable data about an iCloud user, including their name, user record ID, and an email address or phone number. CloudKit retrieves this information from the user’s iCloud account. A user must give their consent to be discoverable before CloudKit can provide this data to your app. For more information, see [`requestApplicationPermission(_:completionHandler:)`](./ckcontainer/requestapplicationpermission%28_,completionhandler%29.md).
 

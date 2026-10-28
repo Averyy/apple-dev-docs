@@ -21,7 +21,7 @@ class NFCVASReaderSession
 @interface NFCVASReaderSession : NFCReaderSession
 ```
 
-#### Overview
+## Overview
 
 > **Note**:  Using NFCVASReaderSession requires an entitlement from Apple. Updates will include information about the entitlement and a link to the entitlement request form.
 

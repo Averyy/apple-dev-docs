@@ -19,7 +19,7 @@ func callWebScriptMethod(_ name: String!, withArguments arguments: [Any]!) -> An
 - (id) callWebScriptMethod:(NSString *) name withArguments:(NSArray *) arguments;
 ```
 
-#### Return Value
+## Return Value
 
 The return value of the method. Returns [`WebUndefined`](../webundefined.md) if an exception is thrown in the JavaScript environment or the method has no return value.
 

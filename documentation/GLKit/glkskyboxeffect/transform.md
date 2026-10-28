@@ -24,7 +24,7 @@ var transform: GLKEffectPropertyTransform { get }
 @property (nonatomic, readonly) GLKEffectPropertyTransform * transform;
 ```
 
-#### Discussion
+## Discussion
 
 Your application uses this transform to set the position and orientation of the camera.
 

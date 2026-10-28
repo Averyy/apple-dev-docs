@@ -19,7 +19,7 @@ var normalizedPosition: CGFloat { get set }
 @property (nonatomic, assign) CGFloat normalizedPosition;
 ```
 
-#### Discussion
+## Discussion
 
 A negative value indicates that the cell is positioned to the left of the center cell in the collection view. A positive value indicates that the cell is positioned to the right of the center cell. A 0 value indicates the cell is in the neutral position, in the center of the collection view.
 

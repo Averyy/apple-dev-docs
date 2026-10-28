@@ -19,7 +19,7 @@ func SCNetworkSetRemoveService(_ set: SCNetworkSet, _ service: SCNetworkService)
 Boolean SCNetworkSetRemoveService(SCNetworkSetRef set, SCNetworkServiceRef service);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the service was removed from the set; `FALSE` if the service was not already present or an error occurred.
 

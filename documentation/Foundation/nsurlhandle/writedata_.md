@@ -17,11 +17,11 @@ Attempts to write a specified set of data to the location specified by the recei
 - (BOOL) writeData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if successful, [`false`](../../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 Must be overridden by subclasses.
 

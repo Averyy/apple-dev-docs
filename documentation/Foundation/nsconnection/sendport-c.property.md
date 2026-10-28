@@ -16,7 +16,7 @@ The port that the connection sends outgoing network messages through.
 @property (retain, readonly) NSPort * sendPort;
 ```
 
-#### Discussion
+## Discussion
 
 You can inspect this object for debugging purposes or use it to create another `NSConnection` object, but shouldn’t use it to send or receive messages explicitly. Don’t set the delegate of the send port—it already has a delegate established by the `NSConnection` object.
 

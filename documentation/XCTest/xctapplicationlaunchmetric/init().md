@@ -24,7 +24,7 @@ init()
 - (instancetype) init;
 ```
 
-#### Discussion
+## Discussion
 
 If you didn’t start any extended launch tasks using [`extendLaunchMeasurement(forTaskID:)`](../../MetricKit/mxmetricmanager/extendlaunchmeasurement%28fortaskid%29.md), this metric measures only the time for your app to display its first frame to screen.
 

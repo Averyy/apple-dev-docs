@@ -21,7 +21,7 @@ Stores the given value’s bytes repeatedly into this span’s memory.
 mutating func storeBytes<T>(repeating repeatedValue: T, count: Int, as type: T.Type) where T : BitwiseCopyable
 ```
 
-#### Discussion
+## Discussion
 
 There must be at least `count * MemoryLayout<T>.stride` bytes available in the span.
 

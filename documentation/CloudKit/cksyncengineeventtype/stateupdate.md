@@ -25,7 +25,7 @@ case stateUpdate
 CKSyncEngineEventTypeStateUpdate
 ```
 
-#### Discussion
+## Discussion
 
 You should persist it locally.
 

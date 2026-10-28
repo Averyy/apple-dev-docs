@@ -24,7 +24,7 @@ var contentIdentifier: String { get }
 
 - [Directing app intents to your app’s scenes](../directing-app-intents-to-your-apps-scenes.md)
 
-#### Discussion
+## Discussion
 
 The protocol provides a default implementation of this property and sets its value to the name of the app intent type. You can also reimplement this property to provide a custom value for your app intent.
 

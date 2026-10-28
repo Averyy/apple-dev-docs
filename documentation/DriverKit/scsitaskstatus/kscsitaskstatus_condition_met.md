@@ -16,7 +16,7 @@
 kSCSITaskStatus_CONDITION_MET
 ```
 
-#### Discussion
+## Discussion
 
 The task completed with a status of CONDITION_MET.
 

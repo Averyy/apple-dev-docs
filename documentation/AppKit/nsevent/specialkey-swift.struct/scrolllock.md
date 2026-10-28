@@ -15,7 +15,7 @@ The scroll lock key.
 static let scrollLock: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

@@ -18,7 +18,7 @@ static var onlyShadows: CGWindowImageOption { get }
 kCGWindowImageOnlyShadows
 ```
 
-#### Discussion
+## Discussion
 
 When capturing the window, only the shadow effects are captured.
 

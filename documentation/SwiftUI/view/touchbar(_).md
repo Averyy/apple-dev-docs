@@ -16,11 +16,11 @@ nonisolated
 func touchBar<Content>(_ touchBar: TouchBar<Content>) -> some View where Content : View
 ```
 
-#### Return Value
+## Return Value
 
 A view that contains the Touch Bar content.
 
-#### Discussion
+## Discussion
 
 Use [`touchBar(_:)`](./touchbar%28_%29.md) to provide a static set of views that are displayed by the Touch Bar when appropriate, depending on whether the view has focus.
 

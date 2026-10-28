@@ -21,7 +21,7 @@ Moves the character instantly to a new position.
 @preconcurrency func teleportCharacter(to position: SIMD3<Float>, relativeTo referenceEntity: Entity?)
 ```
 
-#### Discussion
+## Discussion
 
 This method moves the character to a location specified relative to another entity. Pass `nil` in `relativeTo` to specify a position in world coordinates. A teleport move happens instantly. RealityKit does no collision checking when it moves the entity.
 

@@ -29,11 +29,11 @@ init(circleOfRadius r: CGFloat)
 
 - [Shaping a Physics Body to Match a Node’s Graphics](../shaping-a-physics-body-to-match-a-node-s-graphics.md)
 
-#### Return Value
+## Return Value
 
 A new volume-based physics body.
 
-#### Discussion
+## Discussion
 
 The following code shows the code that creates the physics body for a spherical or circular object. Because the physics body is attached to a sprite object, it usually needs volume. In this case, the sprite image is assumed to closely approximate a circle centered on the anchor point, so the radius of the circle is calculated and used to create the physics body.
 

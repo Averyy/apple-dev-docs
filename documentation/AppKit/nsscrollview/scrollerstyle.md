@@ -19,7 +19,7 @@ var scrollerStyle: NSScroller.Style { get set }
 @property NSScrollerStyle scrollerStyle;
 ```
 
-#### Discussion
+## Discussion
 
 See [`NSScroller.Style`](../nsscroller/style.md) for possible values.
 

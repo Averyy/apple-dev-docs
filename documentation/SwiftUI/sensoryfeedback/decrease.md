@@ -21,7 +21,7 @@ Indicates that an important value decreased below a significant threshold.
 static let decrease: SensoryFeedback
 ```
 
-#### Discussion
+## Discussion
 
 Only plays feedback on watchOS and visionOS.
 

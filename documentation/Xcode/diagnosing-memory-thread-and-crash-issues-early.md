@@ -4,7 +4,7 @@
 
 Identify runtime crashes and undefined behaviors in your app during testing using Xcode’s sanitizer tools.
 
-#### Overview
+## Overview
 
 Identifying potential issues during development saves testing time later and improves the stability of your code. Xcode provides several runtime tools to identify potential issues in your code:
 
@@ -17,7 +17,7 @@ These are LLVM-based tools that add specific checks to your code. To enable them
 
 > **Note**: The sanitizer tools support all C-based languages. The tools also support the Swift language, with the exception of the Undefined Behavior Sanitizer tool, which supports only C-based languages.
 
-##### Locate memory corruption issues in your code
+### Locate memory corruption issues in your code
 
 Accessing memory improperly can introduce unexpected issues into your code, and even pose a security threat. The Address Sanitizer tool detects memory-access attempts that don’t belong to an allocated block. To enable this tool, select Address Sanitizer from the Diagnostics section of the appropriate scheme.
 
@@ -35,7 +35,7 @@ The Address Sanitizer tool replaces the `malloc(_:)` and `free(_:)` functions wi
 
 For most use cases, the overhead that Address Sanitizer adds to your code should be acceptable for daily development. Running your code with Address Sanitizer increases memory usage by two to three times, and also adds 2x to 5x slowdown of your code. To improve your code’s memory usage, compile your code with the `-O1` optimization.
 
-##### Detect data races among your app’s threads
+### Detect data races among your app’s threads
 
 Race conditions occur when multiple threads access the same memory without proper synchronization. Race conditions are difficult to detect during regular testing because they don’t occur consistently. However, fixing them is important because they cause your code to behave unpredictably, and may even lead to memory corruption.
 
@@ -55,7 +55,7 @@ The Thread Sanitizer tool inserts diagnostics into your code to record each memo
 
 Because Thread Sanitizer inserts diagnostics into your code, it increases memory usage by five to ten times. Running your code with these diagnostics also introduces a 2x to 20x slowdown of your app. To improve your code’s memory usage, compile your code with the `-O1` optimization.
 
-##### Detect improper UI updates on background threads
+### Detect improper UI updates on background threads
 
 Some system frameworks contain APIs that you must only call from your app’s main thread. This requirement applies to most of the AppKit and UIKit user interface APIs, and also applies to some other system APIs. Calling these APIs from the main thread prevents race conditions by serializing the execution of the associated tasks. Failure to perform these operations on the main thread may result in visual defects, data corruption, or crashes.
 
@@ -84,7 +84,7 @@ task.resume()
 
 The performance impact of Main Thread Checker is minimal. The tool adds 1–2% CPU overhead to your process, and increases process launch time by no more than 100 milliseconds. Because of this minimal impact, Xcode enables Main Thread Checker by default for your development-related schemes.
 
-##### Detect operations with undefined semantics
+### Detect operations with undefined semantics
 
 Code that results in undefined behavior can lead to crashes or incorrect output. In some cases, the code may not result in any problems at all initially, making it even harder to diagnose the problem later when conditions are different. The Undefined Behavior Sanitizer tool checks C-based code for a variety of common runtime errors, including:
 

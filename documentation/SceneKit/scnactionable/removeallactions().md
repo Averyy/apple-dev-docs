@@ -26,7 +26,7 @@ func removeAllActions()
 - (void) removeAllActions;
 ```
 
-#### Discussion
+## Discussion
 
 When SceneKit removes an action from a node, it skips any remaining animation the action would perform. However, any changes the action has already made to the node’s state remain in effect.
 

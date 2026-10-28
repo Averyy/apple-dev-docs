@@ -17,7 +17,7 @@ The human-readable name of the manufacturer or vendor of the physical device as 
 let vendorName: String
 ```
 
-#### Discussion
+## Discussion
 
 The system receives this data from the device within an DNS-SD TXT record. The value set in the `vendorName` property is the  value that follows the DNS-SD TXT record key:
 

@@ -24,7 +24,7 @@ static let workingColorSpace: CIContextOption
 extern CIContextOption const kCIContextWorkingColorSpace;
 ```
 
-#### Discussion
+## Discussion
 
 Contexts support automatic color management by performing all processing operations in a working color space. This means that unless told otherwise:
 

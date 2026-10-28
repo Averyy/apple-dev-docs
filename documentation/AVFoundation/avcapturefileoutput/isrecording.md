@@ -23,7 +23,7 @@ var isRecording: Bool { get }
 @property (nonatomic, readonly, getter=isRecording) BOOL recording;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) when the file output currently has a file to which it is writing new samples, [`false`](../../Swift/false.md) otherwise.
 

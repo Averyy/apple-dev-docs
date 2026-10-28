@@ -22,7 +22,7 @@ func copy() -> MLDataColumn<Element>
 
 Available when `Element` conforms to `MLDataValueConvertible`.
 
-#### Return Value
+## Return Value
 
 A MLDataColumn which is a copy of the original MLDataColumn.
 

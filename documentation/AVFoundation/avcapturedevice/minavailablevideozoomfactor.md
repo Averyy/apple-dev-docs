@@ -22,7 +22,7 @@ var minAvailableVideoZoomFactor: CGFloat { get }
 @property (nonatomic, readonly) CGFloat minAvailableVideoZoomFactor;
 ```
 
-#### Discussion
+## Discussion
 
 On single-camera devices, this value is always `1.0`. On a dual-camera device, the allowed range of video zoom factors can change if the device is delivering depth data to one or more capture outputs.
 

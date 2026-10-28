@@ -20,7 +20,7 @@ The dose quantity a person is expected to take based on their medication schedul
 @property (nonatomic, copy, readonly, nullable) NSNumber * scheduledDoseQuantity;
 ```
 
-#### Discussion
+## Discussion
 
 The value is always non-null for [`HKMedicationDoseEvent.ScheduleType.schedule`](./scheduletype-swift.enum/schedule.md), and always null for [`HKMedicationDoseEvent.ScheduleType.asNeeded`](./scheduletype-swift.enum/asneeded.md).
 

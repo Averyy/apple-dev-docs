@@ -25,7 +25,7 @@ typealias xpc_object_t = any OS_xpc_object
 typedef NSObject<OS_xpc_object> * xpc_object_t;
 ```
 
-#### Discussion
+## Discussion
 
 XPC objects are created with a retain count of 1, and therefore it is the caller’s responsibility to call [`xpc_release`](./xpc_release.md) on them when they are no longer needed.
 

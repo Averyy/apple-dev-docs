@@ -25,7 +25,7 @@ var isCompatibleWithAirPlayVideo: Bool { get }
 @property (nonatomic, readonly, getter=isCompatibleWithAirPlayVideo) BOOL compatibleWithAirPlayVideo;
 ```
 
-#### Discussion
+## Discussion
 
 This property value is [`true`](../../Swift/true.md) if you can play this asset’s content to an external AirPlay device, like an Apple TV.
 

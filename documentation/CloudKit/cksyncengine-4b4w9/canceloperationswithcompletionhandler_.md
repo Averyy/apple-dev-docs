@@ -21,7 +21,7 @@ Cancels any in-progress or pending sync operations.
 - (void) cancelOperationsWithCompletionHandler:(void (^)()) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The sync engine processes cancellation requests asynchronously, meaning it’s possible for in-progress operations to complete even after this method returns.
 

@@ -28,7 +28,7 @@ CMAttitudeReferenceFrameXArbitraryCorrectedZVertical
 
 - [Getting processed device-motion data](../getting-processed-device-motion-data.md)
 
-#### Discussion
+## Discussion
 
 When you start the device-motion service, Core Motion uses the current device orientation to set the initial frame of reference. You might use this option when you don’t need to know the device’s attitude relative to true or magnetic north, and only track rotational changes over time.
 

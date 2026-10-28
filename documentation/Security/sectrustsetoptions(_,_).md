@@ -19,7 +19,7 @@ func SecTrustSetOptions(_ trustRef: SecTrust, _ options: SecTrustOptionFlags) ->
 OSStatus SecTrustSetOptions(SecTrustRef trustRef, SecTrustOptionFlags options);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 

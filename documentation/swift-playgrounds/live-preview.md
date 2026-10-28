@@ -5,7 +5,7 @@
 
 Use the canvas in Swift Playgrounds to see a live preview of the SwiftUI views in your app.
 
-#### Overview
+## Overview
 
 In Swift Playgrounds, you can see live Previews of your SwiftUI views just like [Previews in Xcode](../SwiftUI/previews-in-xcode.md). In an app playground, you have a default App Preview that generates from the structure that conforms to the [App](../SwiftUI/app.md) protocol. The canvas on the right hand side updates its title to “App Preview” when the App Preview renders.
 

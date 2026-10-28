@@ -20,7 +20,7 @@ set visible(visible: boolean);
 
 - [Adding interactivity to overlays](../adding-interactivity-to-overlays.md)
 
-#### Discussion
+## Discussion
 
 Set this property to `false` to temporarily hide an overlay. The default value is `true`.
 

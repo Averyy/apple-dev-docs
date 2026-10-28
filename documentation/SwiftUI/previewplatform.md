@@ -23,7 +23,7 @@ Platforms that can run the preview.
 enum PreviewPlatform
 ```
 
-#### Overview
+## Overview
 
 Xcode infers the platform for a preview based on the currently selected target. If you have a multiplatform target and want to suggest a particular target for a preview, implement the [`platform`](./previewprovider/platform.md) computed property as a hint, and specify one of the preview platforms:
 

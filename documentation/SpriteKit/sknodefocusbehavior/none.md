@@ -24,7 +24,7 @@ case none
 SKNodeFocusBehaviorNone
 ```
 
-#### Discussion
+## Discussion
 
 This behavior is the default for a node.
 

@@ -19,7 +19,7 @@ var hasUnautosavedChanges: Bool { get }
 @property (readonly) BOOL hasUnautosavedChanges;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if the document has changes that have not been autosaved; otherwise, the value is [`false`](../../Swift/false.md). A document has unsaved changes when the [`updateChangeCount(_:)`](./updatechangecount%28_%29.md) method has been called since the last save.
 

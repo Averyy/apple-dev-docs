@@ -11,7 +11,7 @@ Get'ter for $link provider variable.
 virtual const IOService *getProvider() const;
 ```
 
-#### Return Value
+## Return Value
 
 value of provider.
 

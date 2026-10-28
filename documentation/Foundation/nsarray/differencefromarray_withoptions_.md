@@ -21,7 +21,7 @@ Compares two arrays, with options, to create a difference object that represents
 - (NSOrderedCollectionDifference<id> *) differenceFromArray:(NSArray<id> *) other withOptions:(NSOrderedCollectionDifferenceCalculationOptions) options;
 ```
 
-#### Discussion
+## Discussion
 
 The difference method creates the difference object by comparing objects within the arrays with the `isEqual:` method.
 

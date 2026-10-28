@@ -27,7 +27,7 @@ var keyIdentifier: String { get }
 @property (nonatomic, copy, readonly) NSString * keyIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 You generate and download keys from App Store Connect. See the “KEY ID” column in App Store Connect to use as the [`keyIdentifier`](./keyidentifier.md).
 

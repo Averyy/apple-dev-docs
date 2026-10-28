@@ -9,11 +9,11 @@ Fetch one or more storefronts by using their identifiers.
 **Availability**:
 - Apple Music 1.0+
 
-#### Discussion
+## Discussion
 
 If successful, the HTTP status code is 200 (OK) and the `data` array contains one or more [`Storefronts`](./storefronts.md) objects. If unsuccessful, the HTTP status code indicates the error and the details are in the `errors` array.
 
-##### Example
+### Example
 
 **Request**:
 

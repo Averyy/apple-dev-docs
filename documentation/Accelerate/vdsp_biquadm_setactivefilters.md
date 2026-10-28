@@ -21,7 +21,7 @@ Activates or deactivates individual sections in a single-precision, multichannel
 extern void vDSP_biquadm_SetActiveFilters(vDSP_biquadm_Setup __setup, const _Bool *__filter_states);
 ```
 
-#### Discussion
+## Discussion
 
 For each section in a multichannel biquadratic filter, the corresponding Boolean value in `filter_states` sets the section to active or inactive. The apply function removes inactive filters from the processing chain. The biquadratic filter retains the state of inactive sections for future use.
 

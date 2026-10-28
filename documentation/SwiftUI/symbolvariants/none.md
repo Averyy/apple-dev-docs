@@ -21,7 +21,7 @@ No variant for a symbol.
 static let none: SymbolVariants
 ```
 
-#### Discussion
+## Discussion
 
 Using this variant with the [`symbolVariant(_:)`](../view/symbolvariant%28_%29.md) modifier doesn’t have any effect. Instead, to show a symbol that ignores the current variant, directly set the [`symbolVariants`](../environmentvalues/symbolvariants.md) environment value to `none` using the [`environment(_:_:)`](../view/environment%28_,_%29.md) modifer:
 

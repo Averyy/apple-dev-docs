@@ -23,7 +23,7 @@ var isInvertible: Bool { get }
 static bool SPProjectiveTransform3DFloatIsInvertible(SPProjectiveTransform3DFloat transform);
 ```
 
-#### Discussion
+## Discussion
 
 Returns a Boolean value that indicates whether the transform’s underlying matrix has an inverse.
 

@@ -20,7 +20,7 @@ A type that modulates the force strength based on the distance of rigid bodies.
 struct SpatialForceFalloff
 ```
 
-#### Overview
+## Overview
 
 Forces applied to rigid bodies near the effect’s origin have the largest strength and gradually decay to zero when approaching the boundary of [`ForceEffectBounds`](./forceeffectbounds.md).
 

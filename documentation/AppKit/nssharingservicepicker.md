@@ -19,7 +19,7 @@ class NSSharingServicePicker
 @interface NSSharingServicePicker : NSObject
 ```
 
-#### Overview
+## Overview
 
 An [`NSSharingServicePicker`](./nssharingservicepicker.md) object presents an interface for sharing one or more items using a specific service. In macOS 12 and earlier, this picker displays a menu with a list of services that someone can use to share the item. In macOS 13 and later, the picker displays a popover with a preview of the item and the list of services. When someone chooses a service, the picker automatically shares the proposed item with that service.
 

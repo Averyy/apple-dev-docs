@@ -19,7 +19,7 @@ case anticipateInactive
 NSWritingToolsCoordinatorTextAnimationAnticipateInactive
 ```
 
-#### Discussion
+## Discussion
 
 When Writing Tools isn’t actively evaluating your text, it creates this animation. When preparing for this animation, display the text in the specified range with a foreground color of 50% grey.
 

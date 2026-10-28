@@ -15,7 +15,7 @@ Check if two field of view anchors are equal.
 extern bool ar_field_of_view_anchor_is_equal_to_field_of_view_anchor(ar_field_of_view_anchor_t anchor, ar_field_of_view_anchor_t other_anchor);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the two field of view anchors are equal; otherwise, `false`.
 

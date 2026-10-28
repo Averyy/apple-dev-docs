@@ -21,7 +21,7 @@ The global concurrent executor that is used by default for Swift Concurrency tas
 var globalConcurrentExecutor: any TaskExecutor { get }
 ```
 
-#### Discussion
+## Discussion
 
 The executor’s implementation is platform dependent. By default it uses a fixed size pool of threads and should not be used for blocking operations which do not guarantee forward progress as doing so may prevent other tasks from being executed and render the system unresponsive.
 

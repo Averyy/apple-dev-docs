@@ -21,7 +21,7 @@ func addInputPort(withType type: String!, forKey key: String!, withAttributes at
 - (void) addInputPortWithType:(NSString *) type forKey:(NSString *) key withAttributes:(NSDictionary *) attributes;
 ```
 
-#### Discussion
+## Discussion
 
 This method throws an exception if called from within  the [`execute(_:atTime:withArguments:)`](./execute%28_,attime,witharguments%29.md) method  or if there’s already an input or output port with that key.
 

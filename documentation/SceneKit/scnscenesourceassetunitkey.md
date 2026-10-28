@@ -23,7 +23,7 @@ let SCNSceneSourceAssetUnitKey: String
 extern NSString * const SCNSceneSourceAssetUnitKey;
 ```
 
-#### Discussion
+## Discussion
 
 The unit used in the file. The corresponding value is a dictionary populated with keys documented in the [Unit Dictionary Keys](./unit-dictionary-keys.md) group.
 

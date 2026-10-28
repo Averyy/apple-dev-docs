@@ -24,7 +24,7 @@ var samplePredicates: [HKSampleType : NSPredicate]? { get }
 @property (copy, readonly, nullable) NSDictionary<__kindof HKSampleType *,NSPredicate *> * samplePredicates;
 ```
 
-#### Discussion
+## Discussion
 
 The query uses this dictionary to perform complex tests against the correlation’s contents. For more information, see [`init(type:predicate:samplePredicates:completion:)`](./init%28type,predicate,samplepredicates,completion%29.md).
 

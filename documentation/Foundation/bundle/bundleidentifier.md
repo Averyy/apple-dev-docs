@@ -25,7 +25,7 @@ var bundleIdentifier: String? { get }
 @property (copy, readonly, nullable) NSString * bundleIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 The bundle identifier is defined by the `CFBundleIdentifier` key in the bundle’s information property list.
 

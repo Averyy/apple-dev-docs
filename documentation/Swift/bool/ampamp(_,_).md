@@ -21,7 +21,7 @@ Performs a logical AND operation on two Boolean values.
 static func && (lhs: Bool, rhs: @autoclosure () throws -> Bool) rethrows -> Bool
 ```
 
-#### Discussion
+## Discussion
 
 The logical AND operator (`&&`) combines two Boolean values and returns `true` if both of the values are `true`. If either of the values is `false`, the operator returns `false`.
 

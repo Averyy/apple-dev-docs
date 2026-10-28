@@ -21,7 +21,7 @@ A string that contains the full string of the address.
 let fullAddress: String
 ```
 
-#### Discussion
+## Discussion
 
 This property may contain more than just the sum of the individual components of the rest of the address components.
 

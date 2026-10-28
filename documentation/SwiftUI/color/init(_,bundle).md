@@ -21,7 +21,7 @@ Creates a color from a color set that you indicate by name.
 init(_ name: String, bundle: Bundle? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Use this initializer to load a color from a color set stored in an Asset Catalog. The system determines which color within the set to use based on the environment at render time. For example, you can provide light and dark versions for background and foreground colors:
 

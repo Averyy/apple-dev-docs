@@ -25,7 +25,7 @@ var deviceCurrentTime: TimeInterval { get }
 @property (readonly) NSTimeInterval deviceCurrentTime;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property increases monotonically while an audio player is playing or is in a paused state. If you connect more than one audio player to the audio output device, the time continues incrementing while at least one of the players is playing or is in a paused state. If the audio output device has no connected audio players that are either playing or are in a paused state, device time reverts to `0.0`.
 

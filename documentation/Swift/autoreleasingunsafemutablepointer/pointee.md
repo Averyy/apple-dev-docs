@@ -21,7 +21,7 @@ Retrieve or set the `Pointee` instance referenced by `self`.
 var pointee: Pointee { get nonmutating set }
 ```
 
-#### Discussion
+## Discussion
 
 `AutoreleasingUnsafeMutablePointer` is assumed to reference a value with `__autoreleasing` ownership semantics, like `NSFoo **` declarations in ARC. Setting the pointee autoreleases the new value before trivially storing it in the referenced memory.
 

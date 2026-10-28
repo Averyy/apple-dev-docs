@@ -15,7 +15,7 @@ A property of IOMedia objects.
 #define kIOMediaSizeKey
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediaSizeKey property has an OSNumber value and describes the total length of the media in bytes.
 

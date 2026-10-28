@@ -29,7 +29,7 @@ func setActiveScheduleRequestWith(_ params: MTRThermostatClusterSetActiveSchedul
 - (void) setActiveScheduleRequestWithParams:(MTRThermostatClusterSetActiveScheduleRequestParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 This command will set the active schedule to the provided schedule handle.
 

@@ -24,7 +24,7 @@ func JSValueToBoolean(_ ctx: JSContextRef!, _ value: JSValueRef!) -> Bool
 bool JSValueToBoolean(JSContextRef ctx, JSValueRef value);
 ```
 
-#### Return Value
+## Return Value
 
 The Boolean result of conversion.
 

@@ -21,7 +21,7 @@ The portion of a name’s full form of address that follows the name itself.
 var nameSuffix: String? { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Examples of name suffixes include Esq., Jr., and Ph.D.
 

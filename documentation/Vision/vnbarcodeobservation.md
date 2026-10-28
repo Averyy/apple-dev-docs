@@ -24,7 +24,7 @@ class VNBarcodeObservation
 @interface VNBarcodeObservation : VNRectangleObservation
 ```
 
-#### Overview
+## Overview
 
 This type of observation results from a [`VNDetectBarcodesRequest`](./vndetectbarcodesrequest.md). It contains information about the detected barcode, including parsed payload data for supported symbologies.
 

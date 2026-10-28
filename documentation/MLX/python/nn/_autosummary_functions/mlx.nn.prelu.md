@@ -6,8 +6,12 @@ url: https://ml-explore.github.io/mlx/build/html/python/nn/_autosummary_function
 
 # mlx.nn.prelu
 
-**class prelu(*x: array*, *alpha: array*)**
-: Applies the element-wise parametric ReLU.
+```python
+class prelu(x: array, alpha: array)
+```
+
+Applies the element-wise parametric ReLU.
 
 \[\text{PReLU}(x) = \max(0,x) + a * \min(0,x)\]
+
 where \(a\) is an array.

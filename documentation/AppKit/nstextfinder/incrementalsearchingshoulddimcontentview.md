@@ -19,7 +19,7 @@ var incrementalSearchingShouldDimContentView: Bool { get set }
 @property BOOL incrementalSearchingShouldDimContentView;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), then when an incremental search begins, the `findBarContainer` instance’s parent `contentView` will be dimmed, except for the locations of the incremental matches. If [`false`](../../Swift/false.md), then the incremental matches will not be highlighted automatically, but you can use incrementalMatchRanges to highlight the matches yourself.
 

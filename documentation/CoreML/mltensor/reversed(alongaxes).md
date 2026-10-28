@@ -27,11 +27,11 @@ func reversed(alongAxes axes: Int...) -> MLTensor
 func reversed(alongAxes axes: [Int]) -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 A new tensor with the same shape and scalar type with the specified dimensions reversed.
 
-#### Discussion
+## Discussion
 
 For example:
 

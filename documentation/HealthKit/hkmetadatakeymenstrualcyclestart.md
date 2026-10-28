@@ -24,7 +24,7 @@ let HKMetadataKeyMenstrualCycleStart: String
 extern NSString * const HKMetadataKeyMenstrualCycleStart;
 ```
 
-#### Discussion
+## Discussion
 
 Set this key’s value to [`true`](../Swift/true.md) if the sample represents the start of a menstrual cycle; otherwise, set it to [`false`](../Swift/false.md).
 

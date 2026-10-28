@@ -25,7 +25,7 @@ func makeDynamicLibrary(url: URL) throws -> any MTLDynamicLibrary
 - (id<MTLDynamicLibrary>) newDynamicLibraryWithURL:(NSURL *) url error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A new dynamic Metal library upon success, `nil` otherwise.
 

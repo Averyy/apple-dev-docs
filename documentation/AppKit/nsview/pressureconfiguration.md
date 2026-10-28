@@ -19,7 +19,7 @@ var pressureConfiguration: NSPressureConfiguration? { get set }
 @property (strong, nullable) NSPressureConfiguration * pressureConfiguration;
 ```
 
-#### Discussion
+## Discussion
 
 This property configures the behavior and progression of the Force Touch trackpad when responding to touch input produced by the user when the cursor is over the view.
 

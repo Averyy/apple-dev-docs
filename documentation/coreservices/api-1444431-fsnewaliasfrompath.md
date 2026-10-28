@@ -17,11 +17,11 @@ Creates a new alias record, given the pathname of the target file or directory.
 OSStatus FSNewAliasFromPath(const char *fromFilePath, const char *targetPath, OptionBits flags, AliasHandle *inAlias, Boolean *isDirectory);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. For more information, see the Discussion.
 
-#### Discussion
+## Discussion
 
 If the specified target exists, this function creates an alias record for the target and returns `noErr`. If the parent directory specified in the target pathname exists but the target itself does not exist, this function creates an alias record for the target and returns `fnfErr`. Any other return value indicates that this function did not create an alias record.
 

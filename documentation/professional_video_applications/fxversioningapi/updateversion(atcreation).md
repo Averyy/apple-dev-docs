@@ -24,11 +24,11 @@ func updateVersion(atCreation newVersion: UInt32) -> Bool
 
 - [Versioning and obsoleting old plug-ins](../../Professional-Video-Applications/versioning-and-obsoleting-old-plug-ins.md)
 
-#### Return Value
+## Return Value
 
 If the update was successful, this method returns `YES`; otherwise, `NO`.
 
-#### Discussion
+## Discussion
 
 No information about previous backward compatibility is stored, and the plug-in is treated by the host app as if it were created with the specified version number. Updating fails if the specified number is lower than the already-saved version number.
 

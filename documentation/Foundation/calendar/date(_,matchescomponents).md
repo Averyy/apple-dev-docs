@@ -21,11 +21,11 @@ Determines if the date has all of the specified date components.
 func date(_ date: Date, matchesComponents components: DateComponents) -> Bool
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the date matches all of the components, otherwise `false`.
 
-#### Discussion
+## Discussion
 
 It may be useful to test the return value of `nextDate(after:matching:matchingPolicy:behavior:direction:)` to find out if the components were obeyed or if the method had to fudge the result value due to missing time (for example, a daylight saving time transition).
 

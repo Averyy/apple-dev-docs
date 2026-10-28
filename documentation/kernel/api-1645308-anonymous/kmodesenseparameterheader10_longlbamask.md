@@ -13,7 +13,7 @@
 kModeSenseParameterHeader10_LongLBAMask = (1 << kModeSenseParameterHeader10_LongLBABit)
 ```
 
-#### Discussion
+## Discussion
 
 Mask to test for kModeSenseParameterHeader10_LongLBABit.
 

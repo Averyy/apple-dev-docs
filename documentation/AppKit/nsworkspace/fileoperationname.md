@@ -21,7 +21,7 @@ struct FileOperationName
 typedef NSString * NSWorkspaceFileOperationName;
 ```
 
-#### Overview
+## Overview
 
 These constants specify different types of file operations used by [`performFileOperation(_:source:destination:files:tag:)`](./performfileoperation%28_,source,destination,files,tag%29.md).
 

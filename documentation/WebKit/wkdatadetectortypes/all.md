@@ -22,7 +22,7 @@ static var all: WKDataDetectorTypes { get }
 WKDataDetectorTypeAll
 ```
 
-#### Discussion
+## Discussion
 
 This option automatically includes new detection types when they become available.
 

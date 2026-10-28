@@ -24,7 +24,7 @@ Creates a reloading file provider that monitors the specified file path.
 convenience init(snapshotType: Snapshot.Type = Snapshot.self, parsingOptions: Snapshot.ParsingOptions = .default, filePath: FilePath, allowMissing: Bool = false, pollInterval: Duration = .seconds(15), logger: Logger = Logger(label: "ReloadingFileProvider"), metrics: any MetricsFactory = MetricsSystem.factory) async throws
 ```
 
-#### Discussion
+## Discussion
 
 > **Throws**: If the file cannot be read or if snapshot creation fails.
 

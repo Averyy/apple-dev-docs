@@ -15,7 +15,7 @@ The ad creative spec object matching the ad creative type being created.
 object CreativeCreate.CreativeSpec
 ```
 
-#### Discussion
+## Discussion
 
 - For `CUSTOM_PRODUCT_PAGE` and `DEFAULT_PRODUCT_PAGE`, pass an empty object (`{}`). Pre-tap content isn’t customizable for these types.
 - For `LOCAL_ADS_SEARCH_CREATIVE`, `creativeSpec` is required and must carry the Apple Maps ad creative spec:
@@ -26,7 +26,7 @@ object CreativeCreate.CreativeSpec
   - `localizedText`: Promotional copy keyed by locale, for example `"en-US": {"promoText": "Visit us today for special offers!"}`.
   - `defaultLocale`: The locale whose promo text is used as the fallback when a viewer’s locale isn’t present in `localizedText`.
 
-##### Example
+### Example
 
 This example shows a `LOCAL_ADS_SEARCH_CREATIVE` creativeSpec using the `BUSINESS_ASSET` subtype with multiple creative assets.
 

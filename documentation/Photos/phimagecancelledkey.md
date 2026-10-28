@@ -24,7 +24,7 @@ let PHImageCancelledKey: String
 extern NSString * const PHImageCancelledKey;
 ```
 
-#### Discussion
+## Discussion
 
 This key provides information about an image loading result in the `resultHandler` block for methods listed in Requesting Images. The corresponding value is an `NSNumber` object containing a Boolean value.If you call the [`cancelImageRequest(_:)`](./phimagemanager/cancelimagerequest%28_%29.md) method to cancel a request, Photos calls your result handler block with the value `true` for this key.
 

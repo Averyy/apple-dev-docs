@@ -25,7 +25,7 @@ optional func controller(_ controller: MTRDeviceController, read info: MTRCommis
 - (void) controller:(MTRDeviceController *) controller readCommissioneeInfo:(MTRCommissioneeInfo *) info;
 ```
 
-#### Discussion
+## Discussion
 
 Note that this notification happens before device attestation is performed, so the information delivered by this notification should not be trusted.
 

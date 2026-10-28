@@ -27,7 +27,7 @@ class PKCanvasView
 - [Importing Bézier path data into PencilKit](./importing-external-drawing-data-into-pencilkit.md)
 - [Supporting backward compatibility for ink types](./supporting-backward-compatibility-for-ink-types.md)
 
-#### Overview
+## Overview
 
 A [`PKCanvasView`](./pkcanvasview.md) object captures content drawn using Apple Pencil or the user’s finger and displays it in your app. The canvas view handles all of the touch events and data coming from Apple Pencil, and renders that information using the tool you specify. The canvas stores the captured input in a [`PKDrawingReference`](./pkdrawingreference.md) object.
 

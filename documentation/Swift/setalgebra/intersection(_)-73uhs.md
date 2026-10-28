@@ -21,11 +21,11 @@ Returns a new option set with only the elements contained in both this set and t
 func intersection(_ other: Self) -> Self
 ```
 
-#### Return Value
+## Return Value
 
 A new option set with only the elements contained in both this set and `other`.
 
-#### Discussion
+## Discussion
 
 This example uses the `intersection(_:)` method to limit the available shipping options to what can be used with a PO Box destination.
 

@@ -12,11 +12,11 @@ virtual bool serialize(
  OSSerialize *s) const;
 ```
 
-#### Return Value
+## Return Value
 
 Returns true on success, false otherwise.
 
-#### Overview
+## Overview
 
 If notification is enabled, then the notification handler is called just before the data buffer is serialized.
 

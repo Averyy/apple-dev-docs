@@ -20,7 +20,7 @@ The name of this relationship.
 var name: USDToken { get }
 ```
 
-#### Discussion
+## Discussion
 
 A relationship’s name is the last component of its [`path`](./path.md). This property is equivalent to the `USDLayer.Path/name` property of that path.
 

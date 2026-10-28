@@ -15,7 +15,7 @@ An accessor for the point-of-interest category enumeration.
 get PointOfInterestCategory(): typeof PointOfInterestCategory;
 ```
 
-#### Discussion
+## Discussion
 
 You must load the appropriate library first before accessing the getter, otherwise, the getter throws an `Error`.
 

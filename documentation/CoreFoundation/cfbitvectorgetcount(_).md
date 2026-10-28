@@ -25,7 +25,7 @@ func CFBitVectorGetCount(_ bv: CFBitVector!) -> CFIndex
 extern CFIndex CFBitVectorGetCount(CFBitVectorRef bv);
 ```
 
-#### Return Value
+## Return Value
 
 The current size of `bv`.
 

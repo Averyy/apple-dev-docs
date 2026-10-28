@@ -9,9 +9,9 @@ Get details about a specific app price point.
 **Availability**:
 - App Store Connect API 2.3+
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

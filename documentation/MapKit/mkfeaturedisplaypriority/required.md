@@ -24,7 +24,7 @@ static var required: MKFeatureDisplayPriority { get }
 static const MKFeatureDisplayPriority MKFeatureDisplayPriorityRequired;
 ```
 
-#### Discussion
+## Discussion
 
 An annotation view with this priority does not participate in clustering.
 

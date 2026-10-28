@@ -25,7 +25,7 @@ static var noRouteToHost: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 A socket operation failed because the destination host was unreachable.
 

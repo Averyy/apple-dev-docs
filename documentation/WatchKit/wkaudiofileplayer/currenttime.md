@@ -19,7 +19,7 @@ var currentTime: TimeInterval { get }
 @property (nonatomic, readonly) NSTimeInterval currentTime;
 ```
 
-#### Discussion
+## Discussion
 
 This property refers to how much of the audio file has already been played. The value in this property is updated during playback to reflect the current position of the playhead.
 

@@ -14,14 +14,14 @@ Use the given character as a short option label.
 ## Declaration
 
 ```swift
-static func customShort(_ char: Character, allowingJoined: Bool = false) -> NameSpecification.Element
+static func customShort(_ char: Character, allowingJoined: Bool = false) -> Element
 ```
 
-#### Return Value
+## Return Value
 
 A `short` name specification with the requested `char`.
 
-#### Discussion
+## Discussion
 
 When passing `true` as `allowingJoined` in an `@Option` declaration, the user can join a value with the option name. For example, if an option is declared as `-D`, allowing joined values, a user could pass `-Ddebug` to specify `debug` as the value for that option.
 

@@ -24,7 +24,7 @@ Creates a new file access logger that writes to the specified file path.
 convenience init(filePath: FilePath, timeZone: TimeZone = .current) throws
 ```
 
-#### Discussion
+## Discussion
 
 The file and any necessary parent directories will be created if they don’t exist. If the file already exists, new entries will be appended to it.
 

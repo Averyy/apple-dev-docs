@@ -22,11 +22,11 @@ Creates an encoded representation of the public key.
 func hpkeRepresentation(kem: HPKE.KEM) throws -> Data
 ```
 
-#### Return Value
+## Return Value
 
 The encoded key data.
 
-#### Discussion
+## Discussion
 
 - kem: The key encapsulation mechanism for encapsulating the key.
 

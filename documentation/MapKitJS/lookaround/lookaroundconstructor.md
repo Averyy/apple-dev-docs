@@ -19,11 +19,11 @@ constructor(
 );
 ```
 
-#### Return Value
+## Return Value
 
 A [`LookAround`](../lookaround.md) instance.
 
-#### Discussion
+## Discussion
 
 The Look Around view’s constructor takes an optional `parent` argument and an optional `options` argument. If you specify the `parent` argument, MapKit JS inserts the preview element into the DOM as a descendant of `parent`.
 

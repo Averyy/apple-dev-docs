@@ -25,7 +25,7 @@ var image: CIImage { get }
 @property (readonly) CIImage * image;
 ```
 
-#### Discussion
+## Discussion
 
 Core Image provides several ways to perform your adjustments to this image:
 

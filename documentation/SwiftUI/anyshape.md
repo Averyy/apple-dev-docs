@@ -22,7 +22,7 @@ A type-erased shape value.
 struct AnyShape
 ```
 
-#### Overview
+## Overview
 
 You can use this type to dynamically switch between shape types:
 

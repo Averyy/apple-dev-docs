@@ -13,7 +13,7 @@
 extern const SecAsn1Oid CSSMOID_SubjectInfoAccess;
 ```
 
-#### Discussion
+## Discussion
 
 ** Apple addenda *
 

@@ -24,7 +24,7 @@ var geometryDescriptors: [MTL4AccelerationStructureGeometryDescriptor]? { get se
 @property (nonatomic, retain, nullable) NSArray<MTL4AccelerationStructureGeometryDescriptor *> * geometryDescriptors;
 ```
 
-#### Discussion
+## Discussion
 
 If you enable keyframe motion by setting property [`motionKeyframeCount`](./motionkeyframecount.md) to a value greater than `1`, then all geometry descriptors this array references need to be motion geometry descriptors and have a number of primitive buffers equals to [`motionKeyframeCount`](./motionkeyframecount.md).
 

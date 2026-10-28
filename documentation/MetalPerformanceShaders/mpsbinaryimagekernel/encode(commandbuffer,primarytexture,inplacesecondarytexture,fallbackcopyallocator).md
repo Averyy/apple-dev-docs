@@ -24,11 +24,11 @@ func encode(commandBuffer: any MTLCommandBuffer, primaryTexture: any MTLTexture,
 - (BOOL) encodeToCommandBuffer:(id<MTLCommandBuffer>) commandBuffer primaryTexture:(id<MTLTexture>) primaryTexture inPlaceSecondaryTexture:(id<MTLTexture>*) inPlaceSecondaryTexture fallbackCopyAllocator:(MPSCopyAllocator) copyAllocator;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the operation succeeded (the texture may have been replaced with a new texture if a copy allocator was provided). [`false`](../../Swift/false.md) if the operation failed (the texture is unmodified).
 
-#### Discussion
+## Discussion
 
 This method attempts to apply the kernel in place on a texture. In-place operation means that the same texture is used both to hold the input image and the results. Operating in-place can be an excellent way to reduce resource utilization, and save time and energy. While simple Metal kernels can not operate in place because textures can not be readable and writable at the same time, some Metal Performance Shaders kernels can operate in place because they use multi-pass algorithms. Whether a kernel can operate in-place can depend on current hardware, OS version, and the parameters and properties passed to it. You should never assume that a kernel will continue to work in place, even if you have observed it doing so before.
 

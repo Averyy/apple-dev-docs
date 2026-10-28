@@ -23,7 +23,7 @@ var secondaryTextLayoutGuide: UILayoutGuide? { get }
 @property (nonatomic, strong, readonly, nullable) UILayoutGuide * secondaryTextLayoutGuide;
 ```
 
-#### Discussion
+## Discussion
 
 If the configuration doesn’t specify secondary text, the value of this property is `nil`.
 

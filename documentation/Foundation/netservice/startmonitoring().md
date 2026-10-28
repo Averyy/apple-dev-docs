@@ -26,7 +26,7 @@ func startMonitoring()
 - (void) startMonitoring;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate must implement [`netService(_:didUpdateTXTRecord:)`](../netservicedelegate/netservice%28_,didupdatetxtrecord%29.md), which is called when the TXT record for the receiver is updated.
 

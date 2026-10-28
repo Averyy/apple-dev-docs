@@ -41,7 +41,7 @@ var particleColor: NSColor { get set }
 @property (nonatomic, retain) NSColor * particleColor;
 ```
 
-#### Discussion
+## Discussion
 
 This color tints or shades the texture provided by the [`particleImage`](./particleimage.md) property. You can use this property to implement a range of many possible visual effects using the same artwork. For example, a small, blurry, white circle texture can be tinted yellow or orange to simulate fire, shaded gray or black to simulate smoke, or left alone to simulate falling snow.
 

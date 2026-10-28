@@ -18,7 +18,7 @@ Perform tasks with models that specialize in language understanding, structured 
 
 - [Updating prompts for new model versions](./updating-prompts-for-new-model-versions.md)
 
-#### Overview
+## Overview
 
 The Foundation Models framework provides access to any large language model, like the on-device and Private Cloud Compute models designed for Apple Intelligence. These models help you perform intelligent tasks specific to your use case.
 
@@ -34,7 +34,7 @@ Use [`Tool`](./tool.md) to create custom tools that the model can call to assist
 
 To use Apple Foundation Models, people need a device that supports Apple Intelligence. For a list of supported devices, see [Apple Intelligence](https://www.apple.com/apple-intelligence/).
 
-##### What’s new
+### What’s new
 
 - [Adding server-side intelligence with Private Cloud Compute](./adding-server-side-intelligence-with-private-cloud-compute.md)
   Access a larger context window and stronger reasoning by routing session requests through Private Cloud Compute.

@@ -24,11 +24,11 @@ class func colorCubesMixedWithMask() -> any CIFilter & CIColorCubesMixedWithMask
 + (CIFilter<CIColorCubesMixedWithMask> *) colorCubesMixedWithMaskFilter;
 ```
 
-#### Return Value
+## Return Value
 
 The modified image.
 
-#### Discussion
+## Discussion
 
 This method applies the color cubes mixed with mask filter to an image. The effect uses two color cube tables to modify the input image. The filter uses the mask image to interpolate between the two color cubes.
 

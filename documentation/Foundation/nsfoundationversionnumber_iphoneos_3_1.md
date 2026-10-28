@@ -24,7 +24,7 @@ var NSFoundationVersionNumber_iPhoneOS_3_1: Double { get }
 #define NSFoundationVersionNumber_iPhoneOS_3_1
 ```
 
-#### Discussion
+## Discussion
 
 This constant is only available on iOS.
 

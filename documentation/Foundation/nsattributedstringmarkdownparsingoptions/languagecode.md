@@ -21,7 +21,7 @@ The BCP-47 language code for this document.
 @property (copy, nullable) NSString * languageCode;
 ```
 
-#### Discussion
+## Discussion
 
 If not `nil`, the string applies the [`languageIdentifier`](../attributescopes/foundationattributes/languageidentifier.md) attribute to any range in the returned string that doesn’t otherwise specify a language attribute. The default is `nil`, which applies no attributes.
 

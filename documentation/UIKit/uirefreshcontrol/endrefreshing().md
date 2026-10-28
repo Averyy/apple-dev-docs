@@ -22,7 +22,7 @@ func endRefreshing()
 - (void) endRefreshing;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method at the end of any refresh operation (whether it was initiated programmatically or by the user) to return the refresh control to its default state. If the refresh control is at least partially visible, calling this method also hides it. If animations are also enabled, the control is hidden using an animation.
 

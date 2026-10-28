@@ -25,7 +25,7 @@ var value: String? { get }
 @property (readonly, nullable) NSString * value;
 ```
 
-#### Discussion
+## Discussion
 
 For example, in the URL `http://www.apple.com/search/?q=iPad`, the `value` parameter is `iPad`.
 

@@ -24,7 +24,7 @@ var emitterMode: CAEmitterLayerEmitterMode { get set }
 @property (copy) CAEmitterLayerEmitterMode emitterMode;
 ```
 
-#### Discussion
+## Discussion
 
 The possible values for emitterMode are shown in [Emitter Modes](../emitter-modes.md). The default value is [`volume`](../caemitterlayeremittermode/volume.md).
 

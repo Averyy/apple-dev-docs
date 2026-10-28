@@ -25,11 +25,11 @@ func CTFontCopyTraits(_ font: CTFont) -> CFDictionary
 extern CFDictionaryRefCTFontCopyTraits(CTFontRef font);
 ```
 
-#### Return Value
+## Return Value
 
 A retained reference to the font traits dictionary. Individual traits can be accessed with the trait key constants.
 
-#### Discussion
+## Discussion
 
 See the Constants section of [`CTFontDescriptor`](./ctfontdescriptor.md) for a definition of the font traits.
 

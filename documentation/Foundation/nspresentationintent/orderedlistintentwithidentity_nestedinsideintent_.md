@@ -21,7 +21,7 @@ Creates an ordered-list intent with the provided information.
 + (NSPresentationIntent *) orderedListIntentWithIdentity:(NSInteger) identity nestedInsideIntent:(NSPresentationIntent *) parent;
 ```
 
-#### Return Value
+## Return Value
 
 A new intent with the kind set to [`NSPresentationIntentKindOrderedList`](../nspresentationintentkind/nspresentationintentkindorderedlist.md).
 

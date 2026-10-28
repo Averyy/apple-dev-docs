@@ -24,7 +24,7 @@ var components: [ComponentType] { get }
 @property (nonatomic, retain, readonly) NSArray<GKComponent *> * components;
 ```
 
-#### Discussion
+## Discussion
 
 Calling a method of the system’s component class forwards that message to every component in this array.
 

@@ -22,7 +22,7 @@ case ignore
 UIPencilPreferredActionIgnore
 ```
 
-#### Discussion
+## Discussion
 
 The system returns this action if any of the following conditions are true:
 

@@ -21,7 +21,7 @@ Updates the proposed target that a scrollable view should scroll to.
 func updateTarget(_ target: inout ScrollTarget, context: ScrollTargetBehaviorContext)
 ```
 
-#### Discussion
+## Discussion
 
 The system calls this method in two main cases:
 

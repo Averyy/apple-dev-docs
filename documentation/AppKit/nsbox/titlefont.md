@@ -19,7 +19,7 @@ var titleFont: NSFont { get set }
 @property (strong) NSFont * titleFont;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the title is drawn using the small system font (obtained using ([`smallSystemFontSize`](../nsfont/smallsystemfontsize.md) as the parameter of [`systemFont(ofSize:)`](../nsfont/systemfont%28ofsize%29.md), both `NSFont` class methods). If the size of the new font is different from that of the old font, the content view is resized to absorb the difference.
 

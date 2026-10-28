@@ -24,7 +24,7 @@ func SCNetworkReachabilityGetFlags(_ target: SCNetworkReachability, _ flags: Uns
 Boolean SCNetworkReachabilityGetFlags(SCNetworkReachabilityRef target, SCNetworkReachabilityFlags *flags);
 ```
 
-#### Return Value
+## Return Value
 
 `TRUE` if the flags are valid; `FALSE` if the status could not be determined.
 

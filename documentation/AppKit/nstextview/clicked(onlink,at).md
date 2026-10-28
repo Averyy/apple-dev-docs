@@ -19,7 +19,7 @@ func clicked(onLink link: Any, at charIndex: Int)
 - (void) clickedOnLink:(id) link atIndex:(NSUInteger) charIndex;
 ```
 
-#### Discussion
+## Discussion
 
 If, for instance, you have a special attachment cell that can follow links, you can use this method to ask the text view to follow a link once you decide it should. In addition, this method is invoked by the text view during mouse tracking if the user clicks a link.
 

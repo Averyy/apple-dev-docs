@@ -24,7 +24,7 @@ final class GroupStateObserver
 
 - [Presenting SharePlay activities from your app’s UI](./promoting-shareplay-activities-from-your-apps-ui.md)
 
-#### Overview
+## Overview
 
 Starting a SharePlay experience with the Group Activities framework requires an active FaceTime call. Use a `GroupStateObserver` object to determine whether it’s possible to start such an experience. When no call is active, you might adjust your app’s user interface. For example, you might hide or remove controls that start a shared activity.
 

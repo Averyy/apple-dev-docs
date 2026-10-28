@@ -23,7 +23,7 @@ case none
 UNNotificationContentExtensionMediaPlayPauseButtonTypeNone
 ```
 
-#### Discussion
+## Discussion
 
 Specify this option when you don’t want a media button. This is the default option.
 

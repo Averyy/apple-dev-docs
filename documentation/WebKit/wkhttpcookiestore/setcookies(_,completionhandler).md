@@ -25,7 +25,7 @@ func setCookies(_ cookies: [HTTPCookie]) async
 - (void) setCookies:(NSArray<NSHTTPCookie *> *) cookies completionHandler:(void (^)(void)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Set multiple cookies.
 

@@ -14,7 +14,7 @@ Build robust apps with guided generation and tool calling by adopting the Founda
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample project shows how to integrate generative AI capabilities into an app using the Foundation Models framework. The sample app showcases intelligent trip planning features that help people discover landmarks and generate personalized itineraries.
 
@@ -27,14 +27,14 @@ The app creates an interactive experience where people can:
 
 > **Note**: This sample code project is associated with WWDC25 session 259: [Code-along: Add Intelligence to your App using the Foundation Models framework](https://developer.apple.com/wwdc25/259/).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 To run this sample, you’ll need to:
 
 1. Set the developer team in Xcode for the app target so it automatically manages the provisioning profile. For more information, see [Set the bundle ID](../Xcode/preparing-your-app-for-distribution.md#Set-the-bundle-ID) and [Assign the project to a team](../Xcode/preparing-your-app-for-distribution.md#Assign-the-project-to-a-team).
 2. In the Developer portal, enable the WeatherKit app service for your bundle ID so the app can access location-based weather information.
 
-#### Check model availability
+## Check model availability
 
 Before using the on-device model in the app, check that the model is available by creating an instance of [`SystemLanguageModel`](./systemlanguagemodel.md) with the [`default`](./systemlanguagemodel/default.md) property:
 
@@ -67,7 +67,7 @@ The app handles two unavailability scenarios: Apple Intelligence isn’t enabled
 
 > **Note**: To use the on-device language model, people need to turn on Apple Intelligence on their device. For a list of supported devices, see [Apple Intelligence](https://www.apple.com/apple-intelligence/).
 
-#### Define structured data for generation
+## Define structured data for generation
 
 The app starts by defining data structures with specific constraints to control what the model generates. The `Itinerary` type uses the [`Generable`](./generable.md) macro to create structured content that includes travel plans with activities, hotels, and restaurants.
 
@@ -118,7 +118,7 @@ enum Kind {
 
 The `@Generable` macro automatically creates two versions of each type: the complete structure and a [`PartiallyGenerated`](./generable/partiallygenerated.md) version which is a mirror of the outer structure except every property is optional. The app uses this `PartiallyGenerated` version when streaming and displaying the itinerary generation.
 
-#### Configure the model session
+## Configure the model session
 
 After checking that the model is available, the app configures a [`LanguageModelSession`](./languagemodelsession.md) object with custom tools and detailed instructions in `ItineraryPlanner`. Given a location, the initializer creates the session with structured guidance for generating personalized trip recommendations.
 
@@ -156,7 +156,7 @@ init(landmark: Landmark) {
 
 In a generated itinerary, the model instructions ensure that each day contains an activity, hotel, and restaurant. To get the location-specific businesses and activities, the sample uses a custom tool, called `FindPointsOfInterestTool`, with the chosen landmark. The instructions also call the landmark description property as added context when generating the activities.
 
-#### Create a custom tool
+## Create a custom tool
 
 You can use custom tools to extend the functionality of a model. Tool-calling allows the model to interact with external code you create to fetch up-to-date information, ground responses in sources of truth that you provide, and perform side effects.
 
@@ -199,7 +199,7 @@ struct Arguments {
 
 When you prompt the model with a question or make a request, the model decides whether it can provide an answer or if it needs the help of a tool. The app explicitly instructs the model to always use the `findPointsOfInterestTool` in the `ItineraryPlanner` instructions. This allows the model to automatically call the tool to find relevant hotels, restaurants, and activities for the destinations.
 
-#### Stream and display partial responses in real time
+## Stream and display partial responses in real time
 
 The app shows real-time content generation by streaming partial responses from the model. The `ItineraryPlanner` uses [`streamResponse(generating:includeSchemaInPrompt:options:prompt:)`](./languagemodelsession/streamresponse%28generating,includeschemainprompt,options,prompt%29.md) to generate `Itinerary.PartiallyGenerated` objects so itinerary items are shown incrementally to the person.
 
@@ -242,7 +242,7 @@ ForEach(planner.pointOfInterestTool.lookupHistory) { element in
 
 The app displays messages like “Searching **hotel** in Yosemite…” and “Searching **restaurant** in Yosemite…” to let people know which point of interest category the model provided as input to the tool when actively searching for nearby points of interest. In the background, however, the tool executes and provides updates to the view. The view shows a blurred overlay while generating each day plan, then reveals the full itinerary after the search completes.
 
-#### Tag content dynamically
+## Tag content dynamically
 
 The app uses content tagging on the provided landmarks to help people quickly understand the characteristics of each destination. A content tagging model produces a list of categorizing tags based on the input text you provide. When you prompt the content tagging model, it produces a tag that uses one to a few lowercase words. The `LandmarkDescriptionView` prompts the content tagging model to automatically generate relevant hashtags for landmark descriptions, like `#nature`, `#hiking`, or `#scenic`, based on each landmark’s description. For more information on initializing content tagging, see [Categorizing and organizing data with content tags](./categorizing-and-organizing-data-with-content-tags.md).
 
@@ -267,7 +267,7 @@ let contentTaggingModel = SystemLanguageModel(useCase: .contentTagging)
 }
 ```
 
-#### Integrate with other framework features
+## Integrate with other framework features
 
 You can combine these generative model features with other Apple frameworks. For example, the `LocationLookup` class uses [MapKit](../MapKit/MapKit.md) to search for addresses for our points of interest, showing how to combine model-generated content with weather information and location data for complete travel planning.
 

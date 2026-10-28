@@ -16,11 +16,11 @@ CMError CMRegisterColorDevice (
 );
 ```
 
-#### Return Value
+## Return Value
 
 A `CMError` value. See [Result Codes](../colorsync_manager.md#1670295).
 
-#### Overview
+## Overview
 
 For a device to be recognized by ColorSync (and possibly other parts of macOS) it needs to register itself using this function. If the device has ColorSync profiles associated with it, it should identify those u after registering with this function. Once a device is registered, it can appear as an input, output, or proofing device in ColorSync controls, as long as it has profiles associated with it. Registration need only happen once, when the device is installed. Device drivers need not register their device each time they are loaded. 
 

@@ -13,6 +13,7 @@ Parses an instance of this type, or one of its subcommands, from command-line ar
 
 **Availability**:
 - iOS 13.0+
+- iPadOS 13.0+
 - Mac Catalyst 13.0+
 - macOS 10.15+
 - tvOS 13.0+
@@ -21,14 +22,14 @@ Parses an instance of this type, or one of its subcommands, from command-line ar
 ## Declaration
 
 ```swift
-static func asyncParseAsRoot(_ arguments: [String]? = nil) async throws -> any ParsableCommand
+static func asyncParseAsRoot(_ arguments: [String]? = nil) async throws -> ParsableCommand
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of this type, one of its subcommands, or a command type internal to the `ArgumentParser` library.
 
-#### Discussion
+## Discussion
 
 > **Throws**: If parsing fails.
 

@@ -13,7 +13,7 @@ virtual void setLocation(
  const IORegistryPlane *plane = 0 );
 ```
 
-#### Overview
+## Overview
 
 Entries can be given a location string in a particular plane, or globally. If the plane is specified the location applies only to that plane, otherwise the global location is set. The location string may be used during path lookups of registry entries, to distinguish between sibling entries with the same name. The default IORegistryEntry parsing of location strings expects a list of hex numbers separated by commas, though subclasses of IORegistryEntry might do their own parsing.
 

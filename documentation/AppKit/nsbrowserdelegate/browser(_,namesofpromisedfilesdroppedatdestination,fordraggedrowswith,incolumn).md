@@ -21,11 +21,11 @@ optional func browser(_ browser: NSBrowser, namesOfPromisedFilesDroppedAtDestina
 - (NSArray<NSString *> *) browser:(NSBrowser *) browser namesOfPromisedFilesDroppedAtDestination:(NSURL *) dropDestination forDraggedRowsWithIndexes:(NSIndexSet *) rowIndexes inColumn:(NSInteger) column;
 ```
 
-#### Return Value
+## Return Value
 
 Filenames (not pathnames) for the actual files represented by the rows the user is dropping.
 
-#### Discussion
+## Discussion
 
 Note that file promise drag operation support requires adding the data type [`filePromise`](../nspasteboard/pasteboardtype/filepromise.md) to the pasteboard in the [`browser(_:writeRowsWith:inColumn:to:)`](./browser%28_,writerowswith,incolumn,to%29.md) method.
 

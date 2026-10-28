@@ -26,11 +26,11 @@ func debounce<S>(for dueTime: S.SchedulerTimeType.Stride, scheduler: S, options:
 - [Processing Published Elements with Subscribers](../processing-published-elements-with-subscribers.md)
 - [Receiving and Handling Events with Combine](../receiving-and-handling-events-with-combine.md)
 
-#### Return Value
+## Return Value
 
 A publisher that publishes events only after a specified time elapses.
 
-#### Discussion
+## Discussion
 
 Use the [`debounce(for:scheduler:options:)`](./debounce%28for,scheduler,options%29.md) operator to control the number of values and time between delivery of values from the upstream publisher. This operator is useful to process bursty or high-volume event streams where you need to reduce the number of values delivered to the downstream to a rate you specify.
 

@@ -20,7 +20,7 @@ The payload that configures a passcode policy.
 object Passcode
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.mobiledevice.passwordpolicy` as the payload type.
 
@@ -33,7 +33,7 @@ For user enrollments, the system allows this payload type, but ignores most of t
 - `minLength`: always set to `6`
 - `maxInactivity`: if this key is present its value is ignored, but the `never` option is removed in the Settings UI.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -45,7 +45,7 @@ For user enrollments, the system allows this payload type, but ignores most of t
 | Allowed in user enrollment | iOS, visionOS |
 | Allow multiple payloads | iOS, macOS, visionOS, watchOS |
 
-##### Profile example
+### Profile example
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

@@ -19,7 +19,7 @@ typealias SecKeychainStatus = UInt32
 typedef UInt32 SecKeychainStatus;
 ```
 
-#### Discussion
+## Discussion
 
 Use the values defined in [SecKeychainStatus Values](./seckeychainstatus-values.md).
 

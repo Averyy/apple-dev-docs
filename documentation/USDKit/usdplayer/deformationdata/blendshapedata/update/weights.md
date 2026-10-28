@@ -20,7 +20,7 @@ Changed blend shape weights.
 let weights: [Float]?
 ```
 
-#### Discussion
+## Discussion
 
 `nil` if unchanged.
 

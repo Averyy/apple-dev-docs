@@ -21,7 +21,7 @@ A prediction for an app intent that the system might display to someone when itâ
 struct IntentPrediction<Intent, T> where Intent : AppIntent
 ```
 
-#### Overview
+## Overview
 
 Use the `IntentPrediction` type to provide a description of your app intent that the system can use when offering proactive suggestions. You create this type from the [`predictionConfiguration`](./predictableintent/predictionconfiguration.md) property of your app intent. Use the type to provide a [`DisplayRepresentation`](./displayrepresentation.md) structure with a suitable description of your app intentâ€™s purpose.
 

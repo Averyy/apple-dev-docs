@@ -19,7 +19,7 @@ static let fullScreenModeSetting: NSView.FullScreenModeOptionKey
 extern NSViewFullScreenModeOptionKey const NSFullScreenModeSetting;
 ```
 
-#### Discussion
+## Discussion
 
 The corresponding value is an instance of [`NSDictionary`](../../../Foundation/nsdictionary.md) that contains keys specified in Display Mode Standard Properties and Display Mode Optional Properties in [Quartz Display Services](../../../CoreGraphics/quartz-display-services.md).
 

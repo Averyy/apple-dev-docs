@@ -5,13 +5,13 @@
 
 Configure your VPN to include and exclude some network traffic.
 
-#### Overview
+## Overview
 
 You can control some of the network traffic that the system routes to and from a personal VPN, packet tunnel provider, or app proxy provider. The Network Extension framework provides routing settings for all VPN types, and some settings specific to personal VPNs and packet tunnel providers. You can configure the routing of packets to per-app VPNs using rules, and make exceptions to always-on VPNs on MDM supervised devices.
 
 For the complete APIs to create the different types of VPNs, see [Personal VPN](./personal-vpn.md), [Packet tunnel provider](./packet-tunnel-provider.md), and [App proxy provider](./app-proxy-provider.md).
 
-##### Configure traffic for a packet tunnel provider
+### Configure traffic for a packet tunnel provider
 
 You configure a packet tunnel provider’s virtual interface by passing an [`NEPacketTunnelNetworkSettings`](./nepackettunnelnetworksettings.md) instance to the [`setTunnelNetworkSettings(_:completionHandler:)`](./netunnelprovider/settunnelnetworksettings%28_,completionhandler%29.md) method of an [`NETunnelProvider`](./netunnelprovider.md) instance. The system uses the routing settings you provide in the [`NEPacketTunnelNetworkSettings`](./nepackettunnelnetworksettings.md) instance by default.
 
@@ -64,7 +64,7 @@ Note that the system routing table supersedes the `includedRoutes` and `excluded
 
 Also, if an app creates a network connection that routes traffic over a specific network interface, called *scoping*, then it supersedes the system routing table.
 
-##### Route additional traffic through a personal VPN or packet tunnel provider
+### Route additional traffic through a personal VPN or packet tunnel provider
 
 To route network traffic that’s not related to designated system services necessary for maintaining expected device functionality through a personal VPN or packet tunnel provider, set the [`includeAllNetworks`](./nevpnprotocol/includeallnetworks.md) property to `true`.
 
@@ -90,7 +90,7 @@ The system always excludes the following traffic from the VPN, and the [`include
 - Certain cellular services traffic that uses the cellular network only, such as VoLTE.
 - Traffic that communicates with a companion device, such as an Apple Watch.
 
-##### Exclude some traffic from a personal VPN or packet tunnel provider
+### Exclude some traffic from a personal VPN or packet tunnel provider
 
 You can make other exceptions when routing network traffic through a VPN using other [`NEVPNProtocol`](./nevpnprotocol.md) properties. If you set the [`includeAllNetworks`](./nevpnprotocol/includeallnetworks.md) property to `true`, you can exclude specific types of traffic from the VPN.
 
@@ -108,7 +108,7 @@ protocolConfiguration.excludeAPNs = true
 protocolConfiguration.excludeCellularServices = true
 ```
 
-##### Enforce the inclusions and exclusions for a packet tunnel provider
+### Enforce the inclusions and exclusions for a packet tunnel provider
 
 To enforce the `includedRoutes` and `excludedRoutes` properties, set the [`enforceRoutes`](./nevpnprotocol/enforceroutes.md) property to `true`.
 
@@ -127,7 +127,7 @@ protocolConfiguration.enforceRoutes = true
 
 For example, if the [`includedRoutes`](./neipv4settings/includedroutes.md) property contains the `10.0.0.0/8` address and the local network subnet is `10.10.0.0/16`, the system scopes network connections to hosts in the `10.0.0.0/8` network to the VPN, but not those in the `10.10.0.0/16` network.
 
-##### Route network traffic to and from specific apps
+### Route network traffic to and from specific apps
 
 You can use two types of per-app VPN features in the Network Extension framework to control network traffic to and from specific apps. You can use a packet tunnel provider to scope network connections from an app to the VPN, or use an app proxy to divert network connections from an app to a transparent proxy. To programmatically configure a per-app VPN, use the [`NEPacketTunnelProvider`](./nepackettunnelprovider.md) class for packet tunnels, and the [`NEAppProxyProviderManager`](./neappproxyprovidermanager.md) class for app proxies.
 
@@ -142,7 +142,7 @@ Note that the apps generally can’t communicate over the network at all unless 
 
 For more information on per-app VPN features, see the [`NETunnelProviderManager`](./netunnelprovidermanager.md) class overview.
 
-##### Exclude traffic from an always-on VPN
+### Exclude traffic from an always-on VPN
 
 In iOS, you can exclude some network traffic from an always-on VPN device configuration. An always-on VPN acts as the only connection to the internet for an iOS device. You enable this feature by installing an always-on VPN profile on an MDM-supervised device.
 

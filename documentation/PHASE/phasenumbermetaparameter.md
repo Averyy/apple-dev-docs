@@ -24,7 +24,7 @@ class PHASENumberMetaParameter
 @interface PHASENumberMetaParameter : PHASEMetaParameter
 ```
 
-#### Overview
+## Overview
 
 This class contains a number that updates, like a “player speed” metaparameter that the app changes gradually from `0.0` to `1.0`.
 

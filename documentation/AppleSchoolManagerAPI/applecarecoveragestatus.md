@@ -20,7 +20,7 @@ string AppleCareCoverageStatus
 - `ACTIVE`
 - `INACTIVE`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

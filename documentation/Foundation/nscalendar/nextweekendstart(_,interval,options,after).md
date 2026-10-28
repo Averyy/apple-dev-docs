@@ -25,11 +25,11 @@ func nextWeekendStart(_ datep: AutoreleasingUnsafeMutablePointer<NSDate?>?, inte
 - (BOOL) nextWeekendStartDate:(NSDate **) datep interval:(NSTimeInterval *) tip options:(NSCalendarOptions) options afterDate:(NSDate *) date;
 ```
 
-#### Return Value
+## Return Value
 
 [`false`](../../Swift/false.md) if the calendar and locale do not have the concept of a weekend, otherwise [`true`](../../Swift/true.md).
 
-#### Discussion
+## Discussion
 
 Note that a particular calendar day may not necessarily fall entirely within a weekend period, as weekends can start in the middle of a day in some calendars and locales.
 

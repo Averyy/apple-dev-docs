@@ -15,7 +15,7 @@ Updates the size of the player.
 void updateSize();
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when the size of the element changes—for example, when you change the size directly or when the element size changes depending on the layout of other elements. Also call this method when attaching the player to the DOM or changing the `display` style from `none`. Since the player handles window resize events itself, you don’t need to call this method when the window size changes.
 

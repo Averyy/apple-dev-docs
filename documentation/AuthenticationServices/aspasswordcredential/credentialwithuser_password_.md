@@ -21,7 +21,7 @@ Creates a password credential instance with a given user name and password.
 + (instancetype) credentialWithUser:(NSString *) user password:(NSString *) password;
 ```
 
-#### Return Value
+## Return Value
 
 The credential object.
 

@@ -23,7 +23,7 @@ var identifierForVendor: UUID? { get }
 @property (nonatomic, strong, readonly, nullable) NSUUID * identifierForVendor;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is the same for apps that come from the same vendor running on the same device. A different value is returned for apps on the same device that come from different vendors, and for apps on different devices regardless of vendor.
 

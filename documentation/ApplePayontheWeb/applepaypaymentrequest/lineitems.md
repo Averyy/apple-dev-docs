@@ -16,7 +16,7 @@ A set of line items that explain recurring payments and additional charges and d
 sequence <ApplePayLineItem> lineItems;
 ```
 
-#### Discussion
+## Discussion
 
 See [`ApplePayLineItem`](../applepaylineitem.md).
 

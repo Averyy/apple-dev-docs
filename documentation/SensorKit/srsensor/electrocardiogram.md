@@ -21,7 +21,7 @@ static let electrocardiogram: SRSensor
 extern SRSensor const SRSensorElectrocardiogram;
 ```
 
-#### Discussion
+## Discussion
 
 The sample for this sensor is an array of [`SRElectrocardiogramSample`](../srelectrocardiogramsample.md) objects.
 

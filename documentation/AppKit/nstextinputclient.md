@@ -23,7 +23,7 @@ protocol NSTextInputClient : NSObjectProtocol
 
 - [Adopting the system text cursor in custom text views](./adopting-the-system-text-cursor-in-custom-text-views.md)
 
-#### Overview
+## Overview
 
 To create another text view class, you can either subclass [`NSTextView`](./nstextview.md), or subclass [`NSView`](./nsview.md) and implement the [`NSTextInputClient`](./nstextinputclient.md) protocol.
 

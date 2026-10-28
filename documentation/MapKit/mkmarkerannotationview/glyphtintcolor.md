@@ -42,7 +42,7 @@ var glyphTintColor: NSColor? { get set }
 @property (nonatomic, copy, nullable) NSColor * glyphTintColor;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is `nil`, which applies the standard tint color for the current map style.
 

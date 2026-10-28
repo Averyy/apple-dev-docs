@@ -21,7 +21,7 @@ typealias SKANTestPostbackResponseHandler = ([String : SKAdTestPostbackResponse]
 typedef void (^)(NSDictionary<NSString *,SKAdTestPostbackResponse *> *, NSError *) SKANTestPostbackResponseHandler;
 ```
 
-#### Discussion
+## Discussion
 
 The system calls the response handler and provides one of two values:
 

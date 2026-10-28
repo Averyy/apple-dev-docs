@@ -27,7 +27,7 @@ optional func resolvePickupLocation(for intent: INListRideOptionsIntent) async -
 - (void) resolvePickupLocationForListRideOptions:(INListRideOptionsIntent *) intent withCompletion:(void (^)(INPlacemarkResolutionResult *resolutionResult)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to verify that you are able to pick up the user at the specified location. If you are unable to pick up the user at the requested location, you can provide a nearby location and ask the user to confirm the new value. You can also provide other resolutions as appropriate.
 

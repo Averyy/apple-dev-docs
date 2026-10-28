@@ -20,7 +20,7 @@ var errAuthorizationBadAddress: OSStatus { get }
 errAuthorizationBadAddress
 ```
 
-#### Discussion
+## Discussion
 
 The socket address must be in the range (0, 1023) inclusive.
 

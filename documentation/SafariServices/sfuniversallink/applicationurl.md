@@ -19,7 +19,7 @@ var applicationURL: URL { get }
 @property (readonly) NSURL * applicationURL;
 ```
 
-#### Discussion
+## Discussion
 
 The URL represents a location on the file system. You can retrieve additional information about this app using [`resourceValues(forKeys:)`](../../Foundation/nsurl/resourcevalues%28forkeys%29.md).
 

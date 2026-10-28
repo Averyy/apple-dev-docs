@@ -20,7 +20,7 @@ class NSScriptCommandDescription
 @interface NSScriptCommandDescription : NSObject
 ```
 
-#### Overview
+## Overview
 
 A scriptable application provides scriptability information that describes the commands and objects scripters can use in scripts that target the application. An application’s scripting information is collected automatically by an instance of [`NSScriptSuiteRegistry`](./nsscriptsuiteregistry.md), which creates an `NSScriptCommandDescription` for each command it finds, caches these objects in memory, and installs a command handler for each command.
 

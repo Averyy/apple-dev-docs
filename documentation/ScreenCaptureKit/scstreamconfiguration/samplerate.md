@@ -24,7 +24,7 @@ var sampleRate: Int { get set }
 @property (nonatomic, assign) NSInteger sampleRate;
 ```
 
-#### Discussion
+## Discussion
 
 The framework supports sample rates of `8000`, `16000`, `24000`, and `48000`. If you don’t specify a sample rate, or specify an unsupported value, the system uses a default sample rate of 48 kHz.
 

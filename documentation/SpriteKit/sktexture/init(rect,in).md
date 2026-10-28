@@ -29,11 +29,11 @@ convenience init(rect: CGRect, in texture: SKTexture)
 
 - [Maximizing Node Drawing Performance](../maximizing-node-drawing-performance.md)
 
-#### Return Value
+## Return Value
 
 A new texture object.
 
-#### Discussion
+## Discussion
 
 The returned texture object shares the same texture data as the original texture object, meaning that only one copy of the texture data is kept in memory.
 

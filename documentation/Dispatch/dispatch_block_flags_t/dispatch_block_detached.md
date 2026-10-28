@@ -21,7 +21,7 @@ Disassociate the work item’s attributes from the current execution context.
 DISPATCH_BLOCK_DETACHED
 ```
 
-#### Discussion
+## Discussion
 
 Indicates that a dispatch block should execute disassociated from current execution context attributes such as QoS class, `os_activity_t`, and properties of the current IPC request, if any. If invoked directly, the block removes these attributes from the calling thread for the duration of the block body before applying attributes assigned to the block, if any. If submitted to a queue, the block object will be executed with the attributes of the queue, or any attributes specifically assigned to the block object.
 

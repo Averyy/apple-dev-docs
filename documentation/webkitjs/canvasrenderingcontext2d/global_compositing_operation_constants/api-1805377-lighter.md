@@ -3,7 +3,7 @@
 **Framework**: WebKit JS  
 **Kind**: clconst
 
-#### Overview
+## Overview
 
 Display the sum of the source image and destination image, with color values approaching 255 (100%) as a limit.
 

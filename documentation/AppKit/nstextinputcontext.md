@@ -19,7 +19,7 @@ class NSTextInputContext
 @interface NSTextInputContext : NSObject
 ```
 
-#### Overview
+## Overview
 
 The text input system communicates primarily with the client of the activated input context via the [`NSTextInputClient`](./nstextinputclient.md) protocol.
 

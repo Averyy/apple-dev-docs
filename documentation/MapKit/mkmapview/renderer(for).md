@@ -24,11 +24,11 @@ func renderer(for overlay: any MKOverlay) -> MKOverlayRenderer?
 - (MKOverlayRenderer *) rendererForOverlay:(id<MKOverlay>) overlay;
 ```
 
-#### Return Value
+## Return Value
 
 The renderer object in use for the specified overlay or `nil` if the overlay is not onscreen.
 
-#### Discussion
+## Discussion
 
 This method returns the renderer object that your map delegate provided in its [`mapView(_:rendererFor:)`](../mkmapviewdelegate/mapview%28_,rendererfor%29.md) method.
 

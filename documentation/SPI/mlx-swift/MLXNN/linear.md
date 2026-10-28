@@ -21,7 +21,7 @@ class Linear
 
 - [Creating Modules](./custom-layers.md)
 
-#### Overview
+## Overview
 
 Concretely:
 
@@ -39,7 +39,7 @@ W = MLXRandom.uniform(-scale ..< scale, [outputDimensions, inputDimensions])
 b = MLXRandom.uniform(-scale ..< scale, [outputDimensions])
 ```
 
-#### Using In A Module
+## Using In A Module
 
 > **Note**: Use `@ModuleInfo` with all your `Linear` module uses so that [`update(modules:verify:path:modulePath:)`](./module/update%28modules,verify,path,modulepath%29.md) can replace the modules, e.g. via [`quantize(model:groupSize:bits:predicate:)`](./quantizedlinear/quantize%28model,groupsize,bits,predicate%29.md).
 
@@ -71,7 +71,7 @@ public class Example : Module {
     }
 ```
 
-##### See Also
+### See Also
 
 - [Creating Modules](./custom-layers.md)
 - [`QuantizedLinear`](./quantizedlinear.md)

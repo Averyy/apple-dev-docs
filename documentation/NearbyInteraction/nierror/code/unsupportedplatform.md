@@ -22,7 +22,7 @@ case unsupportedPlatform
 NIErrorCodeUnsupportedPlatform
 ```
 
-#### Discussion
+## Discussion
 
 Before running an interaction session, call [`isSupported`](../../nisession/issupported.md) to ensure that Nearby Interaction supports the device’s platform.
 

@@ -16,7 +16,7 @@ Wrapper to return instances of the IOHIDOutputTransactionInterface.
 IOHIDOutputTransactionInterface **(*allocOutputTransaction)(void *self);
 ```
 
-#### Return Value
+## Return Value
 
 Returns the created IOHIDOutputTransactionInterface.
 

@@ -25,7 +25,7 @@ struct Key
 typedef NSString * NSLocaleKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use these keys with the methods [`object(forKey:)`](./object%28forkey%29.md) and [`displayName(forKey:value:)`](./displayname%28forkey,value%29.md).
 

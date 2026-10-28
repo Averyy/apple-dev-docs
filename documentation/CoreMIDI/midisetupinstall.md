@@ -15,11 +15,11 @@ Installs a MIDISetup as the system’s current state.
 extern OSStatus MIDISetupInstall(MIDISetupRef setup);
 ```
 
-#### Return Value
+## Return Value
 
 An OSStatus result code.
 
-#### Discussion
+## Discussion
 
 A client can create a MIDISetup object using MIDISetupCreate, or MIDISetupFromData. This function will install this state as the current state of the system, possibly changing the devices visible to clients.
 

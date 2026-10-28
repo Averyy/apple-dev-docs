@@ -21,7 +21,7 @@ The view mode.
 static let viewMode: NSAttributedString.DocumentAttributeKey
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSValue`](../../nsvalue.md) object containing an integer. A value of 0 indicates normal, and a value of 1 indicates page layout (use the value `@"PaperSize"`).
 

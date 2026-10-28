@@ -6,7 +6,7 @@
 
 An atom that defines a list of preferred colors for displaying the movie on devices that support only 256 colors.
 
-#### Overview
+## Overview
 
 For more information, see [`Color table atom`](../color_table_atom.md).
 

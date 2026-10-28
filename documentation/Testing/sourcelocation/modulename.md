@@ -23,7 +23,7 @@ The name of the module containing the source file.
 var moduleName: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 The name of the module is derived from this instance’s [`fileID`](./fileid.md) property. It consists of the substring of the file ID up to the first forward-slash character (`"/"`.) For example, if the value of this instance’s [`fileID`](./fileid.md) property is `"FoodTruck/WheelTests.swift"`, the module name is `"FoodTruck"`.
 

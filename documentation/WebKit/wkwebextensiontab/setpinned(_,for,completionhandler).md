@@ -27,7 +27,7 @@ optional func setPinned(_ pinned: Bool, for context: WKWebExtensionContext) asyn
 - (void) setPinned:(BOOL) pinned forWebExtensionContext:(WKWebExtensionContext *) context completionHandler:(void (^)(NSError *error)) completionHandler;
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to the user selecting to pin or unpin the tab through a menu item. When a tab is pinned, it should be moved to the front of the tab bar and usually reduced in size. When a tab is unpinned, it should be restored to a normal size and position in the tab bar. No action is performed if not implemented.
 

@@ -24,7 +24,7 @@ var mEnableAdvancedDucking: DarwinBoolean
 Boolean mEnableAdvancedDucking;
 ```
 
-#### Discussion
+## Discussion
 
 Advanced ducking ducks other non-voice audio based on the presence of voice activity from local and remote chat participants.
 

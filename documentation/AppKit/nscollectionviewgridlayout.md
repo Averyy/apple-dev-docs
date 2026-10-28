@@ -19,11 +19,11 @@ class NSCollectionViewGridLayout
 @interface NSCollectionViewGridLayout : NSCollectionViewLayout
 ```
 
-#### Overview
+## Overview
 
 The [`NSCollectionViewGridLayout`](./nscollectionviewgridlayout.md) object provides the same layout behavior offered by the [`NSCollectionView`](./nscollectionview.md) class prior to macOS 10.11, and you can use it in cases where you want to maintain the old appearance while still taking advantage of newer collection view features.
 
-##### Configuring a Collection View to Use a Grid Layout
+### Configuring a Collection View to Use a Grid Layout
 
 You can configure a collection view to use a grid layout object programmatically or at design time:
 

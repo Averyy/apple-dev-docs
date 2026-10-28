@@ -5,11 +5,11 @@
 
 Keep up to date with the optimal device for your display.
 
-#### Overview
+## Overview
 
 A user can have multiple external displays connected directly to a Mac or to an external GPU. Each view in your app shows on a single display, and a single GPU drives each display. The display in which your view appears and the GPU that drives the display can change dynamically; therefore, you need to prepare your app to handle these changes. Register for display change notifications, get the device that drives your view’s display, and decide if your app should use that device to present rendered graphics.
 
-##### Handle display change notifications
+### Handle display change notifications
 
 Register for the following notifications so the system can notify your app about specific display changes:
 
@@ -62,7 +62,7 @@ func registerForDisplayChangeNotifications() {
 
 To deregister from the previous notifications, call the [`removeObserver(_:name:object:)`](../Foundation/notificationcenter/removeobserver%28_,name,object%29.md) method.
 
-##### Identify the device that drives your view’s display
+### Identify the device that drives your view’s display
 
 Get the [`CGDirectDisplayID`](../CoreGraphics/cgdirectdisplayid.md) value for the display in which your view currently appears. Then call the [`CGDirectDisplayCopyCurrentMetalDevice(_:)`](../CoreGraphics/cgdirectdisplaycopycurrentmetaldevice%28_%29.md) function to get the device that drives that display.
 

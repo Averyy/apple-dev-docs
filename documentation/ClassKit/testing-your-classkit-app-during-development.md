@@ -5,7 +5,7 @@
 
 Use development mode to test your app without a Managed Apple ID.
 
-#### Overview
+## Overview
 
 When you distribute your ClassKit-enabled app through the App Store, it runs in production mode. In this mode, ClassKit shares data with Schoolwork on the device, and also with other devices through iCloud—for example, so that assignments made on a teacher’s device can be transmitted to students’ devices, or so that progress reported by a student returns to the teacher that made the assignment. To define these roles and enable these connections, users must be signed in to devices with Managed Apple IDs issued by an educational institution enrolled in Apple School Manager.
 
@@ -13,7 +13,7 @@ During development, you might not have access to users with Managed Apple IDs. I
 
 > **Note**:  You can’t test ClassKit behavior in Simulator because Schoolwork isn’t available in that environment. Instead, test your ClassKit adoption on real iOS devices with the Schoolwork app installed.
 
-##### Choose a role in the ClassKit developer settings
+### Choose a role in the ClassKit developer settings
 
 After you install Schoolwork on an iOS device, new developer settings appear for controlling ClassKit development mode behavior. Go to Settings > Developer on the device and choose ClassKit API.
 
@@ -27,13 +27,13 @@ You can switch back and forth between the teacher and student roles as needed. F
 
 If you later want to test with real managed accounts, as described in [Optionally, test in production mode with managed Apple IDs](./testing-your-classkit-app-during-development.md#Optionally-test-in-production-mode-with-managed-Apple-IDs) below, exit development mode by returning to the Off setting.
 
-##### Flush cached ClassKit data after changing roles
+### Flush cached ClassKit data after changing roles
 
 Because development mode stores teacher and student data in their own dedicated database on a single device, it’s important to flush any cached ClassKit data from memory after you change roles. Otherwise, you might be working with cached items from the teacher’s database after changing to the student role, or vice versa. This results in undefined behavior.
 
 The easiest way to flush data is to restart your app, forcing ClassKit to reload or recreate data when you begin operating in the new role, rather than relying on possibly stale data in memory.
 
-##### Optionally, test in production mode with managed Apple IDs
+### Optionally, test in production mode with managed Apple IDs
 
 You can fully qualify your ClassKit adoption using development mode, as explained above. But if you do need to launch your app from Xcode in an environment where users are logged in with Managed Apple IDs, you can choose production mode manually.
 

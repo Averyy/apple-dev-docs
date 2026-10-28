@@ -21,7 +21,7 @@ Constructs an asynchronous sequence for a given closure by tracking changes of `
 static func untilFinished(_ emit: @escaping @isolated(any) @Sendable () throws(Failure) -> Observations<Element, Failure>.Iteration) -> Observations<Element, Failure>
 ```
 
-#### Discussion
+## Discussion
 
 The emit closure is responsible for extracting a value out of a single or many `@Observable` types. This method continues to be invoked until the .finished option is returned or an error is thrown.
 

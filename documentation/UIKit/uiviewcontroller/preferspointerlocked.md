@@ -22,7 +22,7 @@ var prefersPointerLocked: Bool { get }
 @property (nonatomic, readonly) BOOL prefersPointerLocked;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`false`](../../Swift/false.md). Setting this property to [`true`](../../Swift/true.md) indicates the view controller’s preference to lock the pointer, although the system may not honor the request. Use [`isLocked`](../uipointerlockstate/islocked.md) to determine the current pointer lock state. For the system to consider locking the pointer:
 

@@ -24,11 +24,11 @@ init(source: HKSource, version: String?)
 - (instancetype) initWithSource:(HKSource *) source version:(NSString *) version;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized source revision object.
 
-#### Discussion
+## Discussion
 
 Use this method to create source revisions for use in queries. For more information, see [`HKPredicateKeyPathSourceRevision`](../hkpredicatekeypathsourcerevision.md).
 

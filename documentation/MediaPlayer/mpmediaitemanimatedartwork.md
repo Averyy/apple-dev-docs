@@ -29,7 +29,7 @@ class MPMediaItemAnimatedArtwork
 
 - [Providing animated artwork for media items](./providing-animated-artwork-for-media-items.md)
 
-#### Overview
+## Overview
 
 A single instance of animated artwork is comprised of two assets: an artwork video asset, and a preview image which should match the first frame of the artwork video. The preview image may be used when displaying the animated artwork whilst the video becomes available.
 

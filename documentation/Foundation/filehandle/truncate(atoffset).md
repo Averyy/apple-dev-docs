@@ -25,7 +25,7 @@ func truncate(atOffset offset: UInt64) throws
 - (BOOL) truncateAtOffset:(unsigned long long) offset error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 If the file is extended (if `offset` is beyond the current end of file), the added characters are null bytes.
 

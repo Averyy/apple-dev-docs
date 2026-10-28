@@ -25,7 +25,7 @@ func performFetch() throws
 - (BOOL) performFetch:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 After you execute this method, access the controller’s fetched objects using the [`fetchedObjects`](./fetchedobjects.md) property.
 

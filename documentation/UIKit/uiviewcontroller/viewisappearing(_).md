@@ -28,7 +28,7 @@ func viewIsAppearing(_ animated: Bool)
 - [Displaying and managing views with a view controller](../displaying-and-managing-views-with-a-view-controller.md)
 - [Enhancing your app with fluid transitions](../enhancing-your-app-with-fluid-transitions.md)
 
-#### Discussion
+## Discussion
 
 The system calls this method once each time a view controller’s view appears after the [`viewWillAppear(_:)`](./viewwillappear%28_%29.md) call. In contrast to `viewWillAppear(_:)`, the system calls this method after it adds the view controller’s view to the view hierarchy, and the superview lays out the view controller’s view. By the time the system calls this method, both the view controller and its view have received updated trait collections and the view has accurate geometry.
 
@@ -36,7 +36,7 @@ You can override this method to perform custom tasks associated with displaying 
 
 If you override this method, you need to call `super` at some point in your implementation.
 
-##### Choosing the appropriate callback
+### Choosing the appropriate callback
 
 Although the system calls this method after [`viewWillAppear(_:)`](./viewwillappear%28_%29.md), both callbacks occur within the same [`CATransaction`](../../QuartzCore/catransaction.md). This means that changes you make in either method become visible to the user at the same time.
 

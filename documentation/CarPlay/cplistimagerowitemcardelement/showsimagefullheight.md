@@ -21,7 +21,7 @@ var showsImageFullHeight: Bool { get }
 @property (nonatomic, assign, readonly) BOOL showsImageFullHeight;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property to @c YES to fill the element with the image or @c NO to use a rounded square image that does not fill the card.
 

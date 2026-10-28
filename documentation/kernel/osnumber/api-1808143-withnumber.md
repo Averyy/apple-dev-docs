@@ -13,11 +13,11 @@ static OSNumber * withNumber(
  unsigned intnumberOfBits);
 ```
 
-#### Return Value
+## Return Value
 
 An instance of OSNumber with a reference count of 1; `NULL` on failure.
 
-#### Overview
+## Overview
 
 `value` is masked to the provided `numberOfBits` when the OSNumber object is initialized.
 

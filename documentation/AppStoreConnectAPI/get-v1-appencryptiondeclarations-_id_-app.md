@@ -11,9 +11,9 @@ Get the app information from a specific app encryption declaration.
 
 > **Deprecated**: Use [`Read an app’s encryption declarations`](./get-v1-apps-_id_-appencryptiondeclarations.md) to update the relationship to an app encryption declaration instead.
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

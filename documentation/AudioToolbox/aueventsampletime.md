@@ -24,7 +24,7 @@ typealias AUEventSampleTime = Int64
 typedef int64_t AUEventSampleTime;
 ```
 
-#### Discussion
+## Discussion
 
 Sample times are normally positive, but hosts can propagate HAL sample times through audio units, and HAL sample times can be small negative numbers.
 

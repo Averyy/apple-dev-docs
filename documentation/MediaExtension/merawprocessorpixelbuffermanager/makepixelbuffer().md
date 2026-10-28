@@ -19,7 +19,7 @@ func makePixelBuffer() throws -> CVPixelBuffer
 - (CVPixelBufferRef) createPixelBufferAndReturnError:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A pixel buffer that’s compatible with the extension’s most recently set pixel buffer attributes.
 

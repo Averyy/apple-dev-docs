@@ -20,7 +20,7 @@ Looks up a symbol’s address by name.
 final func symbolAddress(imageName: String?, symbolName: String) -> UInt64
 ```
 
-#### Return Value
+## Return Value
 
 The symbol’s address, or `0` if searching the image didn’t find the symbol.
 

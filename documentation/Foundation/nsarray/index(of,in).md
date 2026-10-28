@@ -25,11 +25,11 @@ func index(of anObject: Any, in range: NSRange) -> Int
 - (NSUInteger) indexOfObject:(ObjectType) anObject inRange:(NSRange) range;
 ```
 
-#### Return Value
+## Return Value
 
 The lowest index within `range` whose corresponding array value is equal to `anObject`. If none of the objects within `range` is equal to `anObject`, returns `NSNotFound`.
 
-#### Discussion
+## Discussion
 
 Starting at `range.location`, each element of the array is passed as an argument to an [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) message sent to `anObject` until a match is found or the end of the `range` is reached. Objects are considered equal if [`isEqual(_:)`](../../ObjectiveC/nsobjectprotocol/isequal%28_%29.md) returns [`true`](../../Swift/true.md).
 

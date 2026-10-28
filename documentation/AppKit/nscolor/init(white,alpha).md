@@ -19,7 +19,7 @@ init(white: CGFloat, alpha: CGFloat)
 + (NSColor *) colorWithWhite:(CGFloat) white alpha:(CGFloat) alpha;
 ```
 
-#### Discussion
+## Discussion
 
 This method accepts extended color component values. If the alpha or white values are outside of the `0-1.0` range, the method creates a color in the extended range or [`extendedGenericGamma22Gray`](../nscolorspace/extendedgenericgamma22gray.md) color space that is compatible with the sRGB colorspace. This method is provided for easier reuse of code that uses [`UIColor`](../../UIKit/uicolor.md) in iOS.
 

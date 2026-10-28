@@ -15,7 +15,7 @@ Ad group-level performance metrics for apps.
 object AppsAdGroupMetrics
 ```
 
-#### Discussion
+## Discussion
 
 The `AppsAdGroupMetrics` extends [`AppsMetrics`](./appsmetrics.md) with no additional fields. It’s the metrics object embedded in apps ad group report rows.
 

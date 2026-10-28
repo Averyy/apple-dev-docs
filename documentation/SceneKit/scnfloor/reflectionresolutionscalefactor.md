@@ -25,7 +25,7 @@ var reflectionResolutionScaleFactor: CGFloat { get set }
 @property (nonatomic) CGFloat reflectionResolutionScaleFactor;
 ```
 
-#### Discussion
+## Discussion
 
 SceneKit creates a reflection effect by rendering the scene twice. First, it renders the scene into an offscreen buffer, using a point of view whose position is the reflection of the camera’s position. Next, it renders the scene from the camera’s point of view, using the offscreen buffer as a texture map for the floor’s surface. Rendering the scene twice incurs a performance cost. Reducing the resolution of the offscreen buffer reduces this cost but causes the reflected image to appear blurry.
 

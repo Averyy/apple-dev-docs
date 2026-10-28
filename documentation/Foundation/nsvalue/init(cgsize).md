@@ -28,7 +28,7 @@ init(cgSize size: CGSize)
 + (NSValue *) valueWithCGSize:(CGSize) size;
 ```
 
-#### Return Value
+## Return Value
 
 A new value object that contains the size information.
 

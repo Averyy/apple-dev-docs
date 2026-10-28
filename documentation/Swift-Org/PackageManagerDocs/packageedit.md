@@ -10,7 +10,7 @@ framework: "Swift-Org/PackageManagerDocs"
 
 Put a package in editable mode.
 
-#### Overview
+## Overview
 
 ```
 package edit [--package-path=<package-path>]

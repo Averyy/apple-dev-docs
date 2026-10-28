@@ -16,7 +16,7 @@ A floating-point number that controls the miter limit ratio for mitered line joi
 attribute unrestricted float miterLimit;
 ```
 
-#### Discussion
+## Discussion
 
 The `miterLimit` value must be a nonzero positive number. This property affects the appearance of line joins when the `lineJoin` property is set to `miter`.
 

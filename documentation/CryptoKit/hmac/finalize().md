@@ -21,7 +21,7 @@ Finalizes the message authentication computation and returns the computed code.
 func finalize() -> HMAC<H>.MAC
 ```
 
-#### Return Value
+## Return Value
 
 The message authentication code.
 

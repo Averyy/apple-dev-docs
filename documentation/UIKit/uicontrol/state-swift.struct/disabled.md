@@ -23,7 +23,7 @@ static var disabled: UIControl.State { get }
 UIControlStateDisabled
 ```
 
-#### Discussion
+## Discussion
 
 User interactions with disabled control have no effect and the control draws itself with a dimmed appearance to reflect that it’s disabled. You can retrieve and set this value through the [`isEnabled`](../isenabled.md) property.
 

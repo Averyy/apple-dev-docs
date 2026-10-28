@@ -19,11 +19,11 @@ func view(forUIConfiguration inUIConfiguration: [AnyHashable : Any]!, excludedKe
 - (IKFilterUIView *) viewForUIConfiguration:(NSDictionary *) inUIConfiguration excludedKeys:(NSArray *) inKeys;
 ```
 
-#### Return Value
+## Return Value
 
 An [`IKFilterUIView`](../../Quartz/ikfilteruiview.md) object.
 
-#### Discussion
+## Discussion
 
 Calling this method to receive a view for a filter causes the [`CIFilter`](../cifilter-swift.class.md) class to invoke the [`provideView(forUIConfiguration:excludedKeys:)`](../../Quartz/ikfiltercustomuiprovider/provideview%28foruiconfiguration,excludedkeys%29.md) method. If you override [`provideView(forUIConfiguration:excludedKeys:)`](../../Quartz/ikfiltercustomuiprovider/provideview%28foruiconfiguration,excludedkeys%29.md) the user interface is created by your filter subclass. Otherwise, Core Image automatically generates the user interface based on the filter keys and attributes.
 

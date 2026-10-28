@@ -24,7 +24,7 @@ object Pass.Barcodes
 - [Creating a store card pass](../creating-a-store-card-pass.md)
 - [Creating a poster event pass using semantic tags](../creating-an-event-pass-using-semantic-tags.md)
 
-#### Discussion
+## Discussion
 
 `Pass.Barcodes` is an array of barcode objects. In iOS 27 and later, you can provide more than one barcode as a fallback. For example, if you provide EAN 13 and QR formats in the barcodes array, the `EAN 13` barcode renders on devices using iOS 27 and later and the `QR` code renders for devices using pre iOS 27. Wallet supports `QR`, `PDF 417`, `Aztec`, `Code 128`, `Code 39`, `Codabar`, `EAN 13`, and `Interleaved 2 of 5 (ITF)` barcode formats.
 

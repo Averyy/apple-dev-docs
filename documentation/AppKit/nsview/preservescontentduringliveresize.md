@@ -19,7 +19,7 @@ var preservesContentDuringLiveResize: Bool { get }
 @property (readonly) BOOL preservesContentDuringLiveResize;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`false`](../../Swift/false.md). If your view supports content preservation, override this property and return [`true`](../../Swift/true.md). Content preservation lets your view decide what to redraw during a live resize operation. If your view supports this feature, you should also provide a custom implementation of the [`setFrameSize(_:)`](./setframesize%28_%29.md) method that invalidates the portions of your view that actually need to be redrawn.
 

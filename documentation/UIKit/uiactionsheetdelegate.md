@@ -25,7 +25,7 @@ protocol UIActionSheetDelegate : NSObjectProtocol
 @protocol UIActionSheetDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The delegate implements the button actions and any other custom behavior. Some of the methods defined in this protocol are optional.
 

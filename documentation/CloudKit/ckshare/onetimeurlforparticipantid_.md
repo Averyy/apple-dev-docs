@@ -21,7 +21,7 @@ Invitation URLs that any receiver can use to claim the associated participantID 
 - (NSURL *) oneTimeURLForParticipantID:(NSString *) participantID;
 ```
 
-#### Discussion
+## Discussion
 
 Only available after a share record has been saved to the server for participants created via [`oneTimeURLParticipant()`](./participant/onetimeurlparticipant%28%29.md). One-time URLs are stable, and tied to the associated participantIDs as long as the participant is part of the share. Typically, a share owner provides a [`url`](./url.md) directly to a user invited via their handle. However, any user can also use a one-time URL in the same manner to fetch share metadata and accept the share. After share acceptance, the one-time URL becomes functionally equivalent to the regular [`url`](./url.md).
 

@@ -34,7 +34,7 @@ weak var delegate: (any MCBrowserViewControllerDelegate)? { get set }
 @property (atomic, weak, nullable) id<MCBrowserViewControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 A browser view controller notifies the delegate:
 

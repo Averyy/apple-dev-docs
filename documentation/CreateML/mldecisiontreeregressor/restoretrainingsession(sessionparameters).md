@@ -20,7 +20,7 @@ Restores an existing training session.
 static func restoreTrainingSession(sessionParameters: MLTrainingSessionParameters) throws -> MLTrainingSession<MLDecisionTreeRegressor>
 ```
 
-#### Return Value
+## Return Value
 
 A `MLTrainingSession` that can be used to resume training.
 

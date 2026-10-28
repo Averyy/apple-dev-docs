@@ -21,7 +21,7 @@ var dominance: Double { get }
 @property (nonatomic, assign, readonly) double dominance;
 ```
 
-#### Discussion
+## Discussion
 
 This property is a range from `-1` to `1`, where negative values indicate negative sentiment, and positive values indicate positive sentiment.
 

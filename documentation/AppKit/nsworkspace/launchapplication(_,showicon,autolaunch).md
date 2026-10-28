@@ -21,11 +21,11 @@ func launchApplication(_ appName: String, showIcon: Bool, autolaunch: Bool) -> B
 - (BOOL) launchApplication:(NSString *) appName showIcon:(BOOL) showIcon autolaunch:(BOOL) autolaunch;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the app was successfully launched or was already running; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use of this method is discouraged. Its current behavior is the same as the [`launchApplication(_:)`](./launchapplication%28_%29.md) method.
 

@@ -21,7 +21,7 @@ Returns the difference of the two given values, wrapping the result in case of a
 static func &- (lhs: Self, rhs: Self) -> Self
 ```
 
-#### Discussion
+## Discussion
 
 The overflow subtraction operator (`&-`) discards any bits that overflow the fixed width of the integer type. In the following example, the difference of `10` and `21` is less than zero, the minimum representable `UInt` value, so the result is the partial value after discarding the overflowing bits.
 

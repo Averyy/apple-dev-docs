@@ -19,7 +19,7 @@ optional func displayDidBeginReconfiguration(_ display: VZGraphicsDisplay)
 - (void) displayDidBeginReconfiguration:(VZGraphicsDisplay *) display;
 ```
 
-#### Discussion
+## Discussion
 
 The framework issued a configuration change, such as a resize, and you can expect new frames with a new size or configuration.
 

@@ -23,7 +23,7 @@ var angle: CGFloat { get }
 @property (nonatomic, readonly) CGFloat angle;
 ```
 
-#### Discussion
+## Discussion
 
 The rate and granularity of angle updates are system policy and can change based on system state, so don’t depend on a particular update frequency or precision. If you only need to know whether the hinge is closed, partially open, or fully open, prefer `status` over the angle.
 

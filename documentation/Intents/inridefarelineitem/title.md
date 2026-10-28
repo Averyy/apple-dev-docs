@@ -23,7 +23,7 @@ var title: String! { get }
 @property (nonatomic, readonly) NSString * title;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains a user-readable string describing the purpose of the charge. For example, it might contain the string “Base fare” or “Per-mile charge”. Siri and Maps display this information separately from the price information.
 

@@ -25,7 +25,7 @@ func CTRunDraw(_ run: CTRun, _ context: CGContext, _ range: CFRange)
 extern void CTRunDraw(CTRunRef run, CGContextRef context, CFRange range);
 ```
 
-#### Discussion
+## Discussion
 
 This is a convenience call, because the run could be drawn by accessing the glyphs. This call can leave the graphics context in any state and does not flush the context after the draw operation.
 

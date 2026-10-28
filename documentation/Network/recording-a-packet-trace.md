@@ -4,7 +4,7 @@
 
 Learn how to record a low-level trace of network traffic.
 
-#### Overview
+## Overview
 
 A packet trace is a record of traffic traveling across the network. It’s useful for investigating complex network problems related to both correctness and performance.
 
@@ -14,7 +14,7 @@ Both macOS and iOS have built-in support for packet traces. This article explain
 
 > **Note**:  Packet traces are a low-level feature and, if you’re just getting started, you may be better off using one of the higher-level tools referenced in [Choosing a Network Debugging Tool](./choosing-a-network-debugging-tool.md). Additionally, while the focus of this article is the built-in packet trace tools, there are a variety of third-party packet trace tools that you might want to investigate; see [Taking Advantage of Third-Party Network Debugging Tools](./taking-advantage-of-third-party-network-debugging-tools.md) for details.
 
-##### Choose the Correct Interface
+### Choose the Correct Interface
 
 The first step in recording a packet trace on the Mac is to choose the correct interface. If you choose the wrong interface, you may end up recording an empty packet trace. For example, if you use the `en0` interface on a Mac that has built-in Ethernet but is connected to the Internet over Wi-Fi, your packet trace will include all the traffic over the built-in Ethernet, that is, nothing.
 
@@ -36,7 +36,7 @@ Ethernet Address: 78:a1:3c:02:2b:da
 
 In this example, the built-in Ethernet is `en0` and the built-in Wi-Fi is `en1`, but this will change from machine to machine. Look through this list for the user-visible name of the interface you want to trace (these match the names shown in Network preferences), then use the associated short interface name.
 
-##### Record and Analyze a Packet Trace on a Mac
+### Record and Analyze a Packet Trace on a Mac
 
 Working with packet traces usually involves recording a packet trace to a file and analyzing that file. It’s possible to do both steps at once, and it’s a good idea to do that when you’re just getting started. The following Terminal command starts a packet trace and prints information about each packet as it’s transferred.
 
@@ -76,7 +76,7 @@ This example records a packet trace and writes the results to a file call `trace
 
 If you’re having problems recording a packet trace, see [Troubleshooting Packet Traces](./troubleshooting-packet-traces.md).
 
-##### Set Up iOS Packet Tracing
+### Set Up iOS Packet Tracing
 
 iOS doesn’t let you record a packet trace directly. However, you can use your Mac to record a packet trace on an attached iOS device using the Remote Virtual Interface (RVI) mechanism. To get started, first connect your iOS device to your Mac via USB. Next run the `rvictl` command in Terminal.
 
@@ -106,7 +106,7 @@ sudo tcpdump -i rvi0 -w trace.pcap
 
 If you’re having problems working with RVIs, see [Troubleshooting Packet Traces](./troubleshooting-packet-traces.md) for some troubleshooting tips.
 
-##### Display and Filter iOS Interface Information
+### Display and Filter iOS Interface Information
 
 An RVI represents the entire networking stack of the iOS device; you cannot target a specific interface on the device as you would on the Mac. However, information about the interface is recorded in the packet metadata. You can use your packet trace tool to display the interface for each packet and filter the trace based on that interface. For the `tcpdump` tool, use the -k option to display packet metadata and tcpdump -Q to filter on it. The `tcpdump` man page has the details; see https://developer.apple.com/documentation/os/reading-unix-manual-pages.
 

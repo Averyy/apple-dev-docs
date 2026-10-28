@@ -24,11 +24,11 @@ func CFHTTPAuthenticationCopyDomains(_ auth: CFHTTPAuthentication) -> Unmanaged<
 extern CFArrayRefCFHTTPAuthenticationCopyDomains(CFHTTPAuthenticationRef auth);
 ```
 
-#### Return Value
+## Return Value
 
 A CFArray object that contains the domain URL’s to which `auth` should be applied. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function is provided for informational purposes only.
 

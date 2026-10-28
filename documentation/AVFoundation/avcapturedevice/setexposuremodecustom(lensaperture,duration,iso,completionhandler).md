@@ -26,7 +26,7 @@ func setExposureModeCustom(lensAperture: Float, duration: CMTime, iso ISO: Float
 - (void) setExposureModeCustomWithLensAperture:(float) lensAperture duration:(CMTime) duration ISO:(float) ISO completionHandler:(void (^)(CMTime syncTime)) handler;
 ```
 
-#### Discussion
+## Discussion
 
 Besides a numeric value, each of the exposure parameters can be set to either of these special constants:
 

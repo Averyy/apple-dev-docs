@@ -16,13 +16,13 @@ Fetches app asset metadata by adam ID.
 - [Apple Ads Campaign Management API 4](./apple-search-ads-campaign-management-api-4.md)
 - [Apple Ads Campaign Management API 5](./apple-search-ads-campaign-management-api-5.md)
 
-#### Discussion
+## Discussion
 
 Use this endpoint with [`Selector`](./selector.md) to find app asset metadata associated with an `adamId`. Use your `adamId` in the resource path. See the [`AppAsset`](./appasset.md) object for parameter descriptions and selector condition operators.
 
 This endpoint supports default and custom product page ads.
 
-##### Payload example: Find app assets
+### Payload example: Find app assets
 
 **Request**:
 

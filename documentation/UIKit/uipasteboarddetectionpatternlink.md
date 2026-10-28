@@ -18,7 +18,7 @@ A pattern that indicates the pasteboard detects of a string that contains a URL.
 extern UIPasteboardDetectionPattern const UIPasteboardDetectionPatternLink;
 ```
 
-#### Discussion
+## Discussion
 
 When you include this pattern in calls to [`detectValuesForPatterns:inItemSet:completionHandler:`](./uipasteboard/detectvaluesforpatterns_initemset_completionhandler_.md) or [`detectValuesForPatterns:completionHandler:`](./uipasteboard/detectvaluesforpatterns_completionhandler_.md) and the pasteboard detects a string that contains a website link, the system reports the value as an [`NSURL`](../Foundation/nsurl.md). You can return the detected results in a paste operation with `UIPasteboardDetectionResultLink`, which contains a semantic representation of the website link values.
 

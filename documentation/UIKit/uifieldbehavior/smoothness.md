@@ -23,7 +23,7 @@ var smoothness: CGFloat { get set }
 @property (nonatomic, assign) CGFloat smoothness;
 ```
 
-#### Discussion
+## Discussion
 
 For noise and turbulence fields, this value specifies the amount of noise or turbulence. The value of this property is in the range `0.0` to `1.0`, where `0.0` represents the maximum noise or turbulence and `1.0` represents the least amount of noise or turbulence.
 

@@ -21,11 +21,11 @@ optional func copyRenderedTexture(forCGLContext cgl_ctx: CGLContextObj!, pixelFo
 - (GLuint) copyRenderedTextureForCGLContext:(CGLContextObj) cgl_ctx pixelFormat:(NSString *) format bounds:(NSRect) bounds isFlipped:(BOOL *) flipped;
 ```
 
-#### Return Value
+## Return Value
 
 The name of an OpenGL texture of type `GL_TEXTURE_RECTANGLE_EXT` that contains a subregion of the image in a given pixel format or `0` if the texture can’t be provided.
 
-#### Discussion
+## Discussion
 
 Implement this method if you want to create the texture yourself or use framebuffer objects (FBO). Use `<OpenGL/CGLMacro.h>` to send commands to the OpenGL context. Make sure to preserve all the OpenGL states except the ones defined by `GL_CURRENT_BIT`.
 

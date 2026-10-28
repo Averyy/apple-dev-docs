@@ -23,7 +23,7 @@ func setHidden(_ hidden: Bool)
 
 - [Connecting Your User Interface to Your Code](../connecting-your-user-interface-to-your-code.md)
 
-#### Discussion
+## Discussion
 
 When you hide or show an object in your interface, WatchKit makes a note to update the layout during the next refresh cycle. During that cycle, WatchKit adjusts the layout to display only the currently visible objects.
 

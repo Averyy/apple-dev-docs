@@ -9,17 +9,13 @@ framework: "swift-argument-parser/ArgumentParser"
 **Kind**: method  
 **Role**: Instance Method
 
-Validates the properties of the instance after parsing.
+Inherited from `ParsableArguments.validate()`.
 
 ## Declaration
 
 ```swift
 mutating func validate() throws
 ```
-
-#### Discussion
-
-Implement this method to perform validation or other processing after creating a new instance from command-line arguments.
 
 
 ---

@@ -15,11 +15,11 @@ Removes aa clock device from the video box.
 kern_return_t RemoveClockDevice(IOUserVideoClockDevice *in_clock_device);
 ```
 
-#### Return Value
+## Return Value
 
 `kIOReturnSuccess` if clock device was successfully removed.
 
-#### Discussion
+## Discussion
 
 The clock device’s reference count will be decremented if it was successfully removed.
 

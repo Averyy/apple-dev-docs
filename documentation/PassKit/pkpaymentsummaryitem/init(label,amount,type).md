@@ -24,11 +24,11 @@ convenience init(label: String, amount: NSDecimalNumber, type: PKPaymentSummaryI
 + (instancetype) summaryItemWithLabel:(NSString *) label amount:(NSDecimalNumber *) amount type:(PKPaymentSummaryItemType) type;
 ```
 
-#### Return Value
+## Return Value
 
 A summary item with the given label, amount, and type.
 
-#### Discussion
+## Discussion
 
 When creating summary items for estimates or charges whose final value isn’t yet known, use a [`PKPaymentSummaryItemType.pending`](../pkpaymentsummaryitemtype/pending.md) type. Use [`zero`](../../Foundation/nsdecimalnumber/zero.md) for the amount of pending items. The payment sheet doesn’t show the value of pending items.
 

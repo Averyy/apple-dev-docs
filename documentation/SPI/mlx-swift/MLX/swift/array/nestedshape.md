@@ -19,7 +19,7 @@ var nestedShape: [Int] { get }
 
 Available when `Element` conforms to `NestedArrayElement`.
 
-#### Discussion
+## Discussion
 
 Note: the nesting must be rectangular – every element at a given level must have the same shape – or the precondition will fail.
 

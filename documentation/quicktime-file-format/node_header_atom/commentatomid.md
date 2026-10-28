@@ -6,7 +6,7 @@
 
 The ID of the string atom that contains a comment for the node.
 
-#### Overview
+## Overview
 
 This atom should be a sibling of the node header atom. The value of this field is `0` if no comment string atom exists.
 

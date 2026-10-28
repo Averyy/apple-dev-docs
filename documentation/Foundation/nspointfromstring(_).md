@@ -20,11 +20,11 @@ func NSPointFromString(_ aString: String) -> NSPoint
 extern NSPoint NSPointFromString(NSString *aString);
 ```
 
-#### Return Value
+## Return Value
 
 If `aString` is of the form “{x, y}” an `NSPoint` structure that uses x and y as the x and y coordinates, in that order.
 
-#### Discussion
+## Discussion
 
 If `aString` only contains a single number, it is used as the x coordinate. If `aString` does not contain any numbers, returns an `NSPoint` object whose x and y coordinates are both 0.
 

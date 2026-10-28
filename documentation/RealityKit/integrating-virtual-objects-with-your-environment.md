@@ -10,11 +10,11 @@ Create an immersive game using native anchor support, environmental blending, mo
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC25 session 287: [What’s new in RealityKit](https://developer.apple.com/videos/play/wwdc2025/287).
 
-#### Configure the sample code project
+## Configure the sample code project
 
 This sample won’t build and run in Simulator. Instead, you’ll need to build the sample and run it on Apple Vision Pro.
 

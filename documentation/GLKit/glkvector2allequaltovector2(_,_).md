@@ -22,11 +22,11 @@ func GLKVector2AllEqualToVector2(_ vectorLeft: GLKVector2, _ vectorRight: GLKVec
 static bool GLKVector2AllEqualToVector2(GLKVector2 vectorLeft, GLKVector2 vectorRight);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if all of the vectors’ components are equal , [`false`](../Swift/false.md) otherwise.
 
-#### Discussion
+## Discussion
 
 The vectors are considered equal when the value for the component at each position in the two source vectors is equal.
 

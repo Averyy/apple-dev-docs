@@ -19,11 +19,11 @@ func AEGetParamPtr(_ theAppleEvent: UnsafePointer<AppleEvent>!, _ theAEKeyword: 
 OSErr AEGetParamPtr(const AppleEvent *theAppleEvent, AEKeyword theAEKeyword, DescType desiredType, DescType *actualType, void *dataPtr, Size maximumSize, Size *actualSize);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](../applicationservices/apple_event_manager.md#1656145).
 
-#### Discussion
+## Discussion
 
 You should use this function only to extract data from value descriptors such as `typeUTF8Text`.
 
@@ -35,7 +35,7 @@ Before calling `AEGetParamPtr`, you can call the [`AESizeOfParam(_:_:_:_:)`](./a
 
 In some cases, you may get improved efficiency extracting information from an Apple event with the [`AEGetDescDataRange(_:_:_:_:)`](./api-1446560-aegetdescdatarange.md) function.
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.2.
 

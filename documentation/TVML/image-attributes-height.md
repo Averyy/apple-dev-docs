@@ -5,7 +5,7 @@
 
 Specifies the maximum height for an image.
 
-#### Overview
+## Overview
 
 The image is shrunk to fit the bounding box if the image is bigger than the size specified for the `height` attribute. You must declare either a `height` style or attribute for an image. Declaring a style overwrites an attribute declaration. Here’s an example that sets the height of the image to 200 points.
 
@@ -13,11 +13,11 @@ The image is shrunk to fit the bounding box if the image is bigger than the size
 <img src="resource://mpaa-g" height="200">
 ```
 
-##### Values for height
+### Values for height
 
 - **Integer**: The height of the element, in points.
 
-##### Elements that Use height
+### Elements that Use height
 
 - [decorationLabel](./decorationlabel.md)
 - [fullscreenImg](./fullscreenimg.md)

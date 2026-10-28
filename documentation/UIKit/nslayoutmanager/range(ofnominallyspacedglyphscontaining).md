@@ -23,11 +23,11 @@ func range(ofNominallySpacedGlyphsContaining glyphIndex: Int) -> NSRange
 - (NSRange) rangeOfNominallySpacedGlyphsContainingIndex:(NSUInteger) glyphIndex;
 ```
 
-#### Return Value
+## Return Value
 
 The range of nominally spaced glyphs.
 
-#### Discussion
+## Discussion
 
 This method returns the range for the glyphs around the given glyph that can be displayed using only their advancements from the font, without pairwise kerning or other adjustments to spacing. The range returned begins with the first glyph, counting back from `glyphIndex`, that has a location set, and it continues up to, but does not include, the next glyph that has a location set.
 

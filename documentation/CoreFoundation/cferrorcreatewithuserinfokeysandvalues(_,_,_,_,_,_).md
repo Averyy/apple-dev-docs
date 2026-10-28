@@ -25,7 +25,7 @@ func CFErrorCreateWithUserInfoKeysAndValues(_ allocator: CFAllocator!, _ domain:
 extern CFErrorRefCFErrorCreateWithUserInfoKeysAndValues(CFAllocatorRef allocator, CFErrorDomain domain, CFIndex code, const void * const*userInfoKeys, const void * const*userInfoValues, CFIndex numUserInfoValues);
 ```
 
-#### Return Value
+## Return Value
 
 A new CFError object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

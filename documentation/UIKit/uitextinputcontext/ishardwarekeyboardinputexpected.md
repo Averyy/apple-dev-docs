@@ -23,7 +23,7 @@ var isHardwareKeyboardInputExpected: Bool { get set }
 @property (nonatomic, readwrite, getter=isHardwareKeyboardInputExpected) BOOL hardwareKeyboardInputExpected;
 ```
 
-#### Discussion
+## Discussion
 
 When hardware keyboard input is likely, adjust your UI or perform any actions you need to accommodate that input.
 

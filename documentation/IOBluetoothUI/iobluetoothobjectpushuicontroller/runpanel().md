@@ -19,7 +19,7 @@ func runPanel()
 - (void) runPanel;
 ```
 
-#### Discussion
+## Discussion
 
 Returns immediately. The object will callback over the delegate method (above) when the transfer is completed. If no delegate is set the object will release itself.
 

@@ -22,7 +22,7 @@ var dataOutputs: [AVCaptureOutput] { get }
 @property (retain, readonly) NSArray<AVCaptureOutput *> * dataOutputs;
 ```
 
-#### Discussion
+## Discussion
 
 This array is read-only. You configure the list of data outputs to synchronize only when you create an [`AVCaptureDataOutputSynchronizer`](../avcapturedataoutputsynchronizer.md) object.
 

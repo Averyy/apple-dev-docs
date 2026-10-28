@@ -16,7 +16,7 @@ Creates and returns a new `NSPortCoder` object.
 + (id) portCoderWithReceivePort:(NSPort *) rcvPort sendPort:(NSPort *) sndPort components:(NSArray *) comps;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSPortCoder` object connected to the communication ports `rcvPort` and `sndPort`, with an encoded distributed objects message stored in `comps`.
 

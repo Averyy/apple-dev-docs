@@ -22,11 +22,11 @@ Loads two or more properties asynchronously and returns the values.
 func load<A, B, each C>(_ firstProperty: AVAsyncProperty<Self, A>, _ secondProperty: AVAsyncProperty<Self, B>, _ properties: repeat AVAsyncProperty<Self, each C>, isolation: isolated (any Actor)? = #isolation) async throws -> (A, B, repeat each C)
 ```
 
-#### Return Value
+## Return Value
 
 The loaded properties in a tuple.
 
-#### Discussion
+## Discussion
 
 See the [`load(_:isolation:)`](./load%28_,isolation%29.md) method for more information.
 

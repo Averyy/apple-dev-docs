@@ -20,7 +20,7 @@ func validate() throws
 - (BOOL) validateAndReturnError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 The constants indicating the kind of validation errors are emitted by the underlying parser; see `NSXMLParser.h` for most of these constants. If the schema is defined with a DTD, this method uses the [`XMLDTD`](../xmldtd.md) object set for the receiver for validation. If the schema is based on XML Schema, the method uses the URL specified as the value of the `xsi:schemaLocation` attribute of the root element.
 

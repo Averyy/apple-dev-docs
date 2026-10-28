@@ -22,11 +22,11 @@ class func supportsURL(_ URL: URL) -> Bool
 + (BOOL) supportsURL:(NSURL *) URL;
 ```
 
-#### Return Value
+## Return Value
 
 If [`true`](../../Swift/true.md), then the URL is supported by Reading List; otherwise, [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Use this method to determine whether to display a Reading List button in your app.
 

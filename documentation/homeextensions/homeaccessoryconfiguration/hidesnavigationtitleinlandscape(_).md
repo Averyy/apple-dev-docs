@@ -18,11 +18,11 @@ Hides or shows the Home app’s navigation title and app icon in landscape.
 func hidesNavigationTitleInLandscape(_ hides: Bool = true) -> HomeAccessoryConfiguration
 ```
 
-#### Return Value
+## Return Value
 
 A configuration that reflects the new setting.
 
-#### Discussion
+## Discussion
 
 The Close or Back button remains visible, so people can always dismiss the view.
 

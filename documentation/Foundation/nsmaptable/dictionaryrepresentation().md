@@ -25,11 +25,11 @@ func dictionaryRepresentation() -> [AnyHashable : ObjectType]
 - (NSDictionary<id,id> *) dictionaryRepresentation;
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary representation of the map table.
 
-#### Discussion
+## Discussion
 
 The map table’s values and keys must conform to all the requirements specified in [`setObject(_:forKey:)`](../nsmutabledictionary/setobject%28_,forkey%29.md) in [`NSMutableDictionary`](../nsmutabledictionary.md).
 

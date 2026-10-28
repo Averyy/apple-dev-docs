@@ -24,7 +24,7 @@ static let bottomLeft: MTKTextureLoader.Origin
 extern MTKTextureLoaderOrigin const MTKTextureLoaderOriginBottomLeft;
 ```
 
-#### Discussion
+## Discussion
 
 The texture will be flipped vertically if metadata in the file being loaded indicates that the source data starts with the top-left corner of the texture.
 

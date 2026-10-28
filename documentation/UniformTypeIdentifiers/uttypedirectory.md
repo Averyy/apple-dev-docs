@@ -21,7 +21,7 @@ A type that represents a file system directory, including packages and folders.
 extern UTType * const UTTypeDirectory;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.directory`.
 

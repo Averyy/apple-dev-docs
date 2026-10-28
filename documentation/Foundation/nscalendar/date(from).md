@@ -25,11 +25,11 @@ func date(from comps: DateComponents) -> Date?
 - (NSDate *) dateFromComponents:(NSDateComponents *) comps;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSDate` object representing the absolute time calculated from `comps`. Returns `nil` if the receiver cannot convert the components given in `comps` into an `NSDate` object.
 
-#### Discussion
+## Discussion
 
 When there are insufficient components provided to completely specify an absolute time, a calendar uses default values of its choice. When there is inconsistent information, a calendar may ignore some of the components parameters or the method may return `nil`. Unnecessary components are ignored (for example, Day takes precedence over Weekday and Weekday ordinals).
 

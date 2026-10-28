@@ -5,7 +5,7 @@
 
 Attributes to which Core Text responds when placed in a `CFAttributedString` object.
 
-#### Overview
+## Overview
 
 This reference document describes the attributes to which Core Text responds when the attributes are placed in a [`CFAttributedString`](../CoreFoundation/cfattributedstring.md) object.
 

@@ -21,7 +21,7 @@ The duration that should be removed at the end of the sample buffer, after decod
 static let trimDurationAtEnd: CVAttachmentKeyDefinitionWithDefault<CMSampleBufferAttachmentKeyDefinitions.ShouldPropagate, CMTime>
 ```
 
-#### Discussion
+## Discussion
 
 The getter returns the default value of [`zero`](../cmtime/zero.md) (nothing removed) if this attachment is not present.
 

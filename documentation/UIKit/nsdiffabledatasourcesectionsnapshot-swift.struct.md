@@ -20,7 +20,7 @@ A representation of the state of the data in a layout section at a specific poin
 struct NSDiffableDataSourceSectionSnapshot<ItemIdentifierType> where ItemIdentifierType : Hashable, ItemIdentifierType : Sendable
 ```
 
-#### Overview
+## Overview
 
 A section snapshot represents the data for a single section in a collection view. Through a section snapshot, you set up the initial state of the data that displays in an individual section of your view, and later update that data.
 

@@ -24,7 +24,7 @@ var dilationRateInZ: Int { get set }
 @property (nonatomic, readwrite) NSUInteger dilationRateInZ;
 ```
 
-#### Discussion
+## Discussion
 
 The weights tensor is dilated by inserting `dilationRateInZ-1` zeros between consecutive values in `z`-dimension. Dilated weights tensor depth is `(dilationRateInZ-1)*kernelDepth+1`. Default value is 1.
 

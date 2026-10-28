@@ -21,7 +21,7 @@ Modifies a format style to display a URL’s scheme component in accordance with
 func scheme(_ strategy: URL.FormatStyle.ComponentDisplayOption = .always) -> URL.FormatStyle
 ```
 
-#### Return Value
+## Return Value
 
 A modified [`URL.FormatStyle`](../formatstyle.md) that incorporates the specified behavior.
 

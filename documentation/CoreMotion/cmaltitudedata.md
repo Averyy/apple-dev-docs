@@ -22,7 +22,7 @@ class CMAltitudeData
 @interface CMAltitudeData : CMLogItem
 ```
 
-#### Overview
+## Overview
 
 You do not create instances of this class directly. When you want to receive altimeter changes, create an instance of the [`CMAltimeter`](./cmaltimeter.md) class and use that object to query for events or to start the delivery of events. The altimeter object creates new instances of this class at appropriate times and delivers them to the handler you specify.
 

@@ -22,11 +22,11 @@ func CVDisplayLinkCreateWithCGDisplays(_ displayArray: UnsafeMutablePointer<CGDi
 extern CVReturn CVDisplayLinkCreateWithCGDisplays(CGDirectDisplayID *displayArray, CFIndex count, CVDisplayLinkRef*displayLinkOut);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See [Core Video Constants](./core-video-constants.md) for possible values.
 
-#### Discussion
+## Discussion
 
 Use this call to create a display link for a set of displays identified by the Core Graphics display IDs. For more information on the display identifier type, see [`CGDirectDisplayID`](../CoreGraphics/cgdirectdisplayid.md).
 

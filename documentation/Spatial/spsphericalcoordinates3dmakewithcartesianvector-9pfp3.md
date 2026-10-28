@@ -19,11 +19,11 @@
 static SPSphericalCoordinates3D SPSphericalCoordinates3DMakeWithCartesianVector(SPVector3D xyz);
 ```
 
-#### Return Value
+## Return Value
 
 A new spherical coordinates structure.
 
-#### Discussion
+## Discussion
 
 Creates a spherical coordinates structure from the Cartesian coordinates represented by the specified Spatial vector.
 

@@ -39,7 +39,7 @@ var menuItems: [NSMenuItem] { get }
 @property (nonatomic, copy, readonly) NSArray<NSMenuItem *> * menuItems;
 ```
 
-#### Discussion
+## Discussion
 
 Provides menu items supplied by the extension, allowing the user to perform extension-defined actions.
 

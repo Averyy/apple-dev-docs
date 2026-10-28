@@ -21,7 +21,7 @@ var prefersInterfaceOrientationLocked: Bool { get }
 @property (nonatomic, readonly) BOOL prefersInterfaceOrientationLocked;
 ```
 
-#### Discussion
+## Discussion
 
 The default is [`false`](../../Swift/false.md). Set this property to [`true`](../../Swift/true.md) to indicate the view controller’s preference to lock the scene’s interface orientation. Check `UIWindowScene.effectiveGeometry.isInterfaceOrientationLocked` for the current state of the interface orientation lock. The system will consider locking the interface orientation when these conditions are true:
 

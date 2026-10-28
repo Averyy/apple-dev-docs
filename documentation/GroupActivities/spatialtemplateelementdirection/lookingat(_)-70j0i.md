@@ -15,11 +15,11 @@ Creates a direction that orients the participant to face another template elemen
 static func lookingAt(_ element: any SpatialTemplateElement) -> SpatialTemplateElementDirection
 ```
 
-#### Return Value
+## Return Value
 
 A direction type that faces the specified seat position.
 
-#### Discussion
+## Discussion
 
 Call this method when you want one participant to look at another participant.
 

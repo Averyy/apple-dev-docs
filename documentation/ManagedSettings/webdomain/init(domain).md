@@ -17,7 +17,7 @@ Creates an object that represents the specified web domain.
 init(domain: String)
 ```
 
-#### Discussion
+## Discussion
 
 Provide a high-level domain, such as `example.com`. To protect a family’s privacy, use [`init(token:)`](./init%28token%29.md) instead.
 

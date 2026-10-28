@@ -22,7 +22,7 @@ var includeFaces: Bool { get set }
 @property (nonatomic) BOOL includeFaces;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the font picker only lists font families, like Times New Roman or Helvetica. Set [`includeFaces`](./includefaces.md) to [`true`](../../../Swift/true.md) so the user can select a specific font face, such as Times New Roman Bold or Helvetica Light Oblique.
 

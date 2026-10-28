@@ -26,7 +26,7 @@ static var isDiscoverable: Bool { get }
 
 - [Creating your first app intent](../creating-your-first-app-intent.md)
 
-#### Discussion
+## Discussion
 
 When the value of this property is `true`, system features like Siri, Spotlight, and the Shortcuts app can discover and use the app intent. When the value of the property is `false`, you can run the intent from your app’s interface or from a widget, but system features can’t access it. The default value of this property is `true`.
 

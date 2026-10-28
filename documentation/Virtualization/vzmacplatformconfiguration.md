@@ -23,7 +23,7 @@ class VZMacPlatformConfiguration
 
 - [Installing macOS on a Virtual Machine](./installing-macos-on-a-virtual-machine.md)
 
-#### Overview
+## Overview
 
 When creating a VM, the [`hardwareModel`](./vzmacplatformconfiguration/hardwaremodel.md) and [`auxiliaryStorage`](./vzmacplatformconfiguration/auxiliarystorage.md) depend on the restore image that you use to install macOS.
 

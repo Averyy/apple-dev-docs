@@ -12,7 +12,7 @@ Streamline access to users’ location data through a standard, secure UI.
 - Mac Catalyst 15.0+
 - watchOS 10.0+
 
-#### Overview
+## Overview
 
 The CoreLocationUI framework contains a standardized UI that interacts securely with [Core Location](../CoreLocation/CoreLocation.md) to request authorization to access location data.
 

@@ -25,7 +25,7 @@ let MPMediaItemPropertyRating: String
 extern NSString * const MPMediaItemPropertyRating;
 ```
 
-#### Discussion
+## Discussion
 
 Value is an [`NSNumber`](../Foundation/nsnumber.md) object representing an [`NSUInteger`](../ObjectiveC/nsuinteger.md) data type.
 

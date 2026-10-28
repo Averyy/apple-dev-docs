@@ -19,7 +19,7 @@ The time range during which the focus transitioned toward the given decision.
 - (CMTimeRange) timeRangeOfTransitionBeforeDecision:(CNDecision *) decision;
 ```
 
-#### Return Value
+## Return Value
 
 A value representing the time range during which the focus transitioned toward the given decision.
 

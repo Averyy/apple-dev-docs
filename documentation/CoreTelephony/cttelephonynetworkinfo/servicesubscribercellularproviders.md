@@ -23,7 +23,7 @@ var serviceSubscriberCellularProviders: [String : CTCarrier]? { get }
 @property (retain, readonly, nullable) NSDictionary<NSString *,CTCarrier *> * serviceSubscriberCellularProviders;
 ```
 
-#### Discussion
+## Discussion
 
 The keys for the [`serviceSubscriberCellularProviders`](./servicesubscribercellularproviders.md) dictionary are [`NSString`](../../Foundation/nsstring.md) objects, each of which represents a service. Each entry in the dictionary is a [`CTCarrier`](../ctcarrier.md) object, which contains information about the subscriber’s home cellular service provider.
 

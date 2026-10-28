@@ -21,11 +21,11 @@ Calls the given closure with an extract output archive stream.
 static func withExtractStream<E>(extractingTo directory: FilePath, selectUsing filter: ArchiveHeader.EntryFilter? = nil, flags: ArchiveFlags = [], threadCount: Int = 0, _ body: (ArchiveStream) throws -> E) throws -> E
 ```
 
-#### Return Value
+## Return Value
 
 The result of the closure.
 
-#### Discussion
+## Discussion
 
 This function opens a stream created by [`extractStream(extractingTo:selectUsing:flags:threadCount:)`](./extractstream%28extractingto,selectusing,flags,threadcount%29.md), calls the specified closure, and closes the stream.
 

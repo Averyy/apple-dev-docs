@@ -21,7 +21,7 @@ A type that represents an Open Scripting Architecture script bundle.
 extern UTType * const UTTypeOSAScriptBundle;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `com.apple.applescript.script-bundle`.
 

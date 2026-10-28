@@ -19,7 +19,7 @@ var redComponent: CGFloat { get }
 @property (readonly) CGFloat redComponent;
 ```
 
-#### Discussion
+## Discussion
 
 Access this property only for colors in the [`calibratedRGB`](../nscolorspacename/calibratedrgb.md) or [`deviceRGB`](../nscolorspacename/devicergb.md) color spaces. Accessing it for other color types raises an exception.
 

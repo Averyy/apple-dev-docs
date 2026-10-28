@@ -24,11 +24,11 @@ bool isEqualTo(const char *cString);
 virtual bool isEqualTo(const char *cString);
 ```
 
-#### Return Value
+## Return Value
 
 true iff the two strings have the same length and characters.
 
-#### Discussion
+## Discussion
 
 If the passed c-string has the same length and all characters are identical to those in the OSString, true is returned. Otherwise false is returned.
 

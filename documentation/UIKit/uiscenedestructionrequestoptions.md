@@ -24,7 +24,7 @@ class UISceneDestructionRequestOptions
 @interface UISceneDestructionRequestOptions : NSObject
 ```
 
-#### Overview
+## Overview
 
 Create a [`UISceneDestructionRequestOptions`](./uiscenedestructionrequestoptions.md) object before calling the [`requestSceneSessionDestruction(_:options:errorHandler:)`](./uiapplication/requestscenesessiondestruction%28_,options,errorhandler%29.md) method of [`UIApplication`](./uiapplication.md). When destroying a [`UIWindowScene`](./uiwindowscene.md), create a [`UIWindowSceneDestructionRequestOptions`](./uiwindowscenedestructionrequestoptions.md) object instead and use it to configure the dismissal animations.
 

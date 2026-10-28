@@ -24,7 +24,7 @@ var requiredThreadsPerThreadgroup: MTLSize { get set }
 @property (nonatomic, readwrite) MTLSize requiredThreadsPerThreadgroup;
 ```
 
-#### Discussion
+## Discussion
 
 When you set this value, you are responsible for ensuring that the `threadsPerThreadgroup` argument of any compute dispatch matches it.
 

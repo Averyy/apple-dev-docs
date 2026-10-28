@@ -3,7 +3,7 @@
 **Framework**: SpriteKit  
 **Role**: Article
 
-#### Overview
+## Overview
 
 Typically, you transition to a new scene based on gameplay or user input. For example, if the user presses a button in your main menu scene, you might transition to a new scene to configure the match the player wants to play.
 

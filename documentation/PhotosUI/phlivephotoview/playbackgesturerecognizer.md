@@ -27,7 +27,7 @@ var playbackGestureRecognizer: UIGestureRecognizer { get }
 
 - [Displaying Live Photos](../../PhotoKit/displaying-live-photos.md)
 
-#### Discussion
+## Discussion
 
 The Live Photo view automatically creates and installs this gesture recognizer. Use this property to customize the gesture recognizer’s behavior. For example, you might use it in delegate methods that affect how it interacts with other gesture recognizers, or install it on a different view to ensure proper event handling in your app’s view hierarchy.
 

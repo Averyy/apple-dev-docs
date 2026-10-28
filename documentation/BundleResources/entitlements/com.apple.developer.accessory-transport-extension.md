@@ -15,7 +15,7 @@ An entitlement that enables your app extension to send sensitive data to an acce
 - **Name**: `com.apple.developer.accessory-transport-extension`
 - **Type**: boolean
 
-#### Discussion
+## Discussion
 
 If your app implements [`AccessoryTransportAppExtension`](../../AccessoryTransportExtension/accessorytransportappextension.md), the framework requires the extension to have this entitlement with a value of `true` in its signature.
 

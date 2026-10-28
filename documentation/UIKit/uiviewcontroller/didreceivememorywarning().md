@@ -27,7 +27,7 @@ func didReceiveMemoryWarning()
 
 - [Responding to memory warnings](../responding-to-memory-warnings.md)
 
-#### Discussion
+## Discussion
 
 Your app never calls this method directly. Instead, this method is called when the system determines that the amount of available memory is low.
 

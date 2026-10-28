@@ -19,11 +19,11 @@
 static SPRect3DFloat SPRect3DFloatScaleBySize(SPRect3DFloat rect, SPSize3DFloat scale);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle that’s scaled by the specified value.
 
-#### Discussion
+## Discussion
 
 Returns a rectangle with dimensions scaled by the specified size.
 

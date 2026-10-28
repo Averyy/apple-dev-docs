@@ -19,7 +19,7 @@ func prepareGState()
 - (void) prepareGState;
 ```
 
-#### Discussion
+## Discussion
 
 The [`draw()`](../nsimagerep/draw%28%29.md) method of [`NSEPSImageRep`](../nsepsimagerep.md) sends this message to itself just before rendering the EPS code. The default implementation of this method does nothing. You can override it in your subclass to prepare the graphics state as needed.
 

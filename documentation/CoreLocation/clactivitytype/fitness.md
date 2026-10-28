@@ -25,7 +25,7 @@ case fitness
 CLActivityTypeFitness
 ```
 
-#### Discussion
+## Discussion
 
 For other positioning sessions that aren’t workouts, use [`CLActivityType.otherNavigation`](./othernavigation.md) or [`CLActivityType.other`](./other.md). This activity might cause the system to pause location updates when the user doesn’t move a significant distance over a period of time.
 

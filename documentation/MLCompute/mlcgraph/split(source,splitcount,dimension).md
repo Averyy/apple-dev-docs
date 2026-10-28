@@ -23,7 +23,7 @@ func split(source: MLCTensor, splitCount: Int, dimension: Int) -> [MLCTensor]?
 - (NSArray<MLCTensor *> *) splitWithSource:(MLCTensor *) source splitCount:(NSUInteger) splitCount dimension:(NSUInteger) dimension;
 ```
 
-#### Return Value
+## Return Value
 
 A result tensor.
 

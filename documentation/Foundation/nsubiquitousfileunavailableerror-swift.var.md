@@ -21,7 +21,7 @@ The item has not been uploaded to iCloud by another device yet.
 var NSUbiquitousFileUnavailableError: Int { get }
 ```
 
-#### Discussion
+## Discussion
 
 When this error occurs, you do not need to ask the system to start downloading the item. The system will download the item as soon as it can. If you want to know when the item becomes available, use an [`NSMetadataQuery`](./nsmetadataquery.md) object to monitor changes to the file’s URL.
 

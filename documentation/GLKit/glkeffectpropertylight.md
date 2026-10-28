@@ -24,7 +24,7 @@ class GLKEffectPropertyLight
 @interface GLKEffectPropertyLight : GLKEffectProperty
 ```
 
-#### Overview
+## Overview
 
 The lighting model implemented by [`GLKEffectPropertyLight`](./glkeffectpropertylight.md) is identical to the lighting model implemented in OpenGL ES 1.1; each light interacts with any material properties on the effect to determine the intensity and color that particular light contributes to the scene at a fragment.
 

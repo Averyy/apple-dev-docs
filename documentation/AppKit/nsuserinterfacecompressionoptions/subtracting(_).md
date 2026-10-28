@@ -19,7 +19,7 @@ func subtracting(_ options: NSUserInterfaceCompressionOptions) -> NSUserInterfac
 - (NSUserInterfaceCompressionOptions *) optionsByRemovingOptions:(NSUserInterfaceCompressionOptions *) options;
 ```
 
-#### Return Value
+## Return Value
 
 A new `NSCompressibleUserInterfaceOptions` object with the supplied options removed.
 

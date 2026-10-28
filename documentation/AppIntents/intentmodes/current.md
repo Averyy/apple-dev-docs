@@ -21,7 +21,7 @@ The current runtime behavior of an app intent.
 struct Current
 ```
 
-#### Overview
+## Overview
 
 This type provides information about an app intent’s current runtime behavior. When an intent runs, its [`systemContext`](../appintent/systemcontext.md) property contains additional contextual information you can use to make decisions. Specifically, the [`currentMode`](../intentsystemcontext/currentmode.md) property tells you whether the intent is currently running in the foreground or background.
 

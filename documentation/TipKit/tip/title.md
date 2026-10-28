@@ -22,7 +22,7 @@ A title that names the tip.
 var title: Text { get }
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to convey the benefit of your tip. All tips require a title.
 

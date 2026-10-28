@@ -5,7 +5,7 @@
 
 Apply common patterns to migrate your closure-based, event-handling code.
 
-#### Overview
+## Overview
 
 Your app may use common patterns to handle asynchronous events, such as:
 
@@ -16,7 +16,7 @@ Combine provides compelling equivalents to these patterns, which allow you to el
 
 > 💡 **Tip**: You don’t need closure-based asychronicity patterns if you’re using the `async`-`await` features in Swift 5.5 and later. Instead, your code can `await` an asynchronous call, and then execute the code that would have been in the closure. This eliminates the need for both conventional completion handlers and Combine futures. For more information, see [Concurrency](https://docs.swift.org/swift-book/LanguageGuide/Concurrency.html) in *[The Swift Programming Language](https://docs.swift.org/swift-book/)*.
 
-##### Replace Completion-Handler Closures with Futures
+### Replace Completion-Handler Closures with Futures
 
 A completion handler is a closure accepted by a function that executes after the function completes its work. You typically implement this by invoking the completion handler directly when the function finishes its work, storing the closure outside the function if necessary. For example, the following function accepts a closure and then executes it after a two-second delay:
 
@@ -47,7 +47,7 @@ cancellable = performAsyncActionAsFuture()
     .sink() { _ in print("Future succeeded.") }
 ```
 
-##### Use Output Types to Represent a Future’s Parameters
+### Use Output Types to Represent a Future’s Parameters
 
 Sometimes, a long-running task generates a value that it passes to a completion handler as a parameter. To replicate this functionality in Combine, declare the parameter as the output type published by the future. The following example produces a randomly-generated integer, and passes it to the promise by declaring `Int` as the future’s output type:
 
@@ -69,7 +69,7 @@ cancellable = performAsyncActionAsFutureWithParameter()
     .sink() { rn in print("Got random number \(rn).") }
 ```
 
-##### Replace Repeatedly Invoked Closures with Subjects
+### Replace Repeatedly Invoked Closures with Subjects
 
 Your app may also have the common pattern of using a closure as a property to invoke when certain events happen. These properties often have names starting with `on`, and their call points look like the following:
 

@@ -19,7 +19,7 @@ struct PHProjectCategory
 typedef NSString * PHProjectCategory;
 ```
 
-#### Overview
+## Overview
 
 This structure encapsulates macOS Photos project extension categories. Use this category to designate the types of projects your extension can create, such as books, calendars, cards, and slideshows.
 

@@ -21,7 +21,7 @@ enum SessionType
 enum SRTextInputSessionType : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 This class defines available options for the [`sessionType`](./sessiontype-swift.property.md) property.
 

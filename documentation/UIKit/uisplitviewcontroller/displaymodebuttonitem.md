@@ -22,11 +22,11 @@ var displayModeButtonItem: UIBarButtonItem { get }
 @property (nonatomic, readonly) UIBarButtonItem * displayModeButtonItem;
 ```
 
-#### Return Value
+## Return Value
 
 A preconfigured bar button item that changes the display mode.
 
-#### Discussion
+## Discussion
 
 You use this property in classic split view interfaces only. This button doesn’t affect column-style split view interfaces.
 

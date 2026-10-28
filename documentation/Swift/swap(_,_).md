@@ -21,7 +21,7 @@ Exchanges the values of the two arguments.
 func swap<T>(_ a: inout T, _ b: inout T) where T : ~Copyable
 ```
 
-#### Discussion
+## Discussion
 
 The two arguments must not alias each other. To swap two elements of a mutable collection, use the `swapAt(_:_:)` method of that collection instead of this function.
 

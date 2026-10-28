@@ -10,7 +10,7 @@ framework: "Swift-Org/EmbeddedSwift"
 
 Learn about restrictions on existentials that apply in Embedded Swift.
 
-#### Background
+## Background
 
 Existentials (also known as “any” types) in Swift are a way to express a type-erased value, where the actual type is not known statically, and at runtime it can be any type that conforms to the specified protocol. Because the possible types can vary in size, the representation of such a value is an “existential container” and the actual represented value is stored either inline (when it fits) or indirectly as a pointer to a heap allocation. There are also multiple concrete representations of the existential container that are optimized for different constraints. For example, with class-bound existentials, the value does not make sense to ever store inline, so the size of the container is matched to hold exactly one pointer).
 
@@ -22,7 +22,7 @@ Existentials are somewhat restricted in Embedded Swift due to the requirement th
 
 The restrictions are described in more detail below. Additionally, all compiler diagnostics related to Embedded Swift restrictions are documented as part of the [EmbeddedRestrictions](https://docs.swift.org/compiler/documentation/diagnostics/embedded-restrictions/) diagnostic group, which can also be enabled in non-embedded Swift code to help ensure that the code will continue to work with Embedded Swift.
 
-#### Forming existentials
+## Forming existentials
 
 Embedded Swift allows and supports forming existentials of any kind:
 
@@ -48,7 +48,7 @@ guard let concrete = existential as? Derived else { ... } // ✅
 let concrete = existential as! Derived // ✅, and will trap at runtime if a different type is inside the existential
 ```
 
-#### Restrictions on casting to existential types
+## Restrictions on casting to existential types
 
 Existentials can be formed only from a concrete type. It is not possible to form an existential by casting to it from another type. For example:
 
@@ -67,7 +67,7 @@ if let metaP = anyType as? (any Error).Type { ... } // ❌, cannot cast to exist
 let metaP = anyType as! (any Error).Type // ❌, cannot cast to existential metatype
 ```
 
-#### Restrictions on use of generics on existentials
+## Restrictions on use of generics on existentials
 
 You cannot use an existential to call a unbounded generic method from a protocol or an extension of a protocol. This is described in depth in [Restricting non-final generic methods](./nonfinalgenericmethods.md). For example:
 
@@ -85,7 +85,7 @@ ex.genericFoo(t: 42) // ❌, genericFoo is an unbounded generic
 ex.genericBar(t: 42) // ❌, genericBar is an unbounded generic
 ```
 
-#### Alternatives to existentials
+## Alternatives to existentials
 
 When existentials are not possible, or not desirable (for example, because the indirection on an existential causes an observation performance or code-size degradation), consider one of the following alternatives (which all have different tradeoffs and code structure implications):
 

@@ -18,7 +18,7 @@ A setting that offers a choice among several options.
 final class HomeAccessoryEnumSetting<Value> where Value : HomeAccessoryEnumSettingConstant
 ```
 
-#### Overview
+## Overview
 
 Define the options with a type that adopts [`HomeAccessoryEnumSettingConstant`](./homeaccessoryenumsettingconstant.md), and specify how they appear with [`HomeAccessoryEnumSetting.SelectionStyle`](./homeaccessoryenumsetting/selectionstyle.md).
 

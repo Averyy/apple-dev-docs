@@ -23,11 +23,11 @@ func ABRecordGetRecordID(_ record: ABRecord!) -> ABRecordID
 extern ABRecordID ABRecordGetRecordID(ABRecordRef record);
 ```
 
-#### Return Value
+## Return Value
 
 The unique ID of `record` when the record exists in the Address Book database.
 
-#### Discussion
+## Discussion
 
 [`kABRecordInvalidID`](./kabrecordinvalidid.md) when the record hasn’t been saved to the database.
 

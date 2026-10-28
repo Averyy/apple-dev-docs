@@ -24,7 +24,7 @@ class VNTranslationalImageRegistrationRequest
 @interface VNTranslationalImageRegistrationRequest : VNImageRegistrationRequest
 ```
 
-#### Overview
+## Overview
 
 Create and perform a translational image registration request to align content in two images through translation.
 

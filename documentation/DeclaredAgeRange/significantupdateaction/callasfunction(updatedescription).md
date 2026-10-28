@@ -17,7 +17,7 @@ Shows the significant update acknowledgment interface.
 func callAsFunction(updateDescription: String) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Call this method when you need to inform people about significant changes to your app that require their acknowledgment and consent before proceeding. For a code example, refer to [`showSignificantUpdateAcknowledgment`](../../SwiftUI/environmentvalues/showsignificantupdateacknowledgment.md).
 

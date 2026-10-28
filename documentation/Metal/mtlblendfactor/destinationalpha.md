@@ -24,7 +24,7 @@ case destinationAlpha
 MTLBlendFactorDestinationAlpha
 ```
 
-#### Discussion
+## Discussion
 
 `F = Dest.a`
 

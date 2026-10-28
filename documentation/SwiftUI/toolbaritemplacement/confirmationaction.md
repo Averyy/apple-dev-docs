@@ -21,7 +21,7 @@ A placement for confirmation actions in a modal interface.
 static let confirmationAction: ToolbarItemPlacement
 ```
 
-#### Discussion
+## Discussion
 
 Use confirmation actions to receive user confirmation of a particular action. An example of a confirmation action would be an action with the label “Add” to add a new event to the calendar.
 

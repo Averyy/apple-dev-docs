@@ -14,7 +14,7 @@
 #define CURSORHEIGHT
 ```
 
-#### Discussion
+## Discussion
 
 The maximum height of the cursor image in pixels. This is only defined if IOFB_ARBITRARY_SIZE_CURSOR is not defined.
 

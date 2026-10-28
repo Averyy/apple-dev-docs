@@ -21,7 +21,7 @@ Create a [`ProcessCodeRequirement`](../processcoderequirement.md) that requires 
 static func anyOf(@ProcessConstraintBuilder requirement: () -> [any ProcessConstraint]) throws -> ProcessCodeRequirement
 ```
 
-#### Discussion
+## Discussion
 
 This operation will throw ConstraintError.duplicateKeys if more than one constraint of the same type is found in the same logical grouping. For example the following snippets will throw:
 

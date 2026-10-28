@@ -15,7 +15,7 @@ The index of the marked clause segment.
 extern NSAttributedStringKey NSMarkedClauseSegmentAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this attribute is an [`NSNumber`](../Foundation/nsnumber.md) object containing an integer, as an index in marked text indicating clause segments.
 

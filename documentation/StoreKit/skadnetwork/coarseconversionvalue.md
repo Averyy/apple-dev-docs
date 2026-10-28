@@ -25,7 +25,7 @@ typedef NSString * SKAdNetworkCoarseConversionValue;
 
 - [SKAdNetwork 4 release notes](../skadnetwork-4-release-notes.md)
 
-#### Discussion
+## Discussion
 
 When you provide the coarse conversion value to the [`updatePostbackConversionValue(_:coarseValue:completionHandler:)`](./updatepostbackconversionvalue%28_,coarsevalue,completionhandler%29.md) or [`updatePostbackConversionValue(_:coarseValue:lockWindow:completionHandler:)`](./updatepostbackconversionvalue%28_,coarsevalue,lockwindow,completionhandler%29.md) methods, use the static constants [`low`](./coarseconversionvalue/low.md), [`medium`](./coarseconversionvalue/medium.md), or [`high`](./coarseconversionvalue/high.md).
 

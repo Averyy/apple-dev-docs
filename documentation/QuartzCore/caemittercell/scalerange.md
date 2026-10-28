@@ -24,7 +24,7 @@ var scaleRange: CGFloat { get set }
 @property CGFloat scaleRange;
 ```
 
-#### Discussion
+## Discussion
 
 The range specifies the mean amount that the [`scale`](./scale.md) value can vary for the cell over its lifetime.
 

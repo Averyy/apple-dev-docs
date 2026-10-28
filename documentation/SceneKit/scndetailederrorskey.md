@@ -25,7 +25,7 @@ let SCNDetailedErrorsKey: String
 extern NSString * const SCNDetailedErrorsKey;
 ```
 
-#### Discussion
+## Discussion
 
 If SceneKit reports an error when creating or loading from a scene source, the [`userInfo`](../Foundation/nserror/userinfo.md) dictionary of the returned [`NSError`](../Foundation/nserror.md) object may contain this key, whose value is an array of dictionaries (each containing one or more of the keys listed in [Scene File Consistency Error Keys](./scene-file-consistency-error-keys.md)) providing details about the location of the error in the scene file.
 

@@ -26,7 +26,7 @@ var uploadJobExtensionEnabled: Bool { get }
 
 - [Uploading asset resources in the background](../../PhotoKit/uploading-asset-resources-in-the-background.md)
 
-#### Discussion
+## Discussion
 
 The value is `true` if the extension is enabled and active, and is `false` otherwise.
 

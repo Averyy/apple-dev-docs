@@ -25,11 +25,11 @@ func CTLineCreateWithAttributedString(_ attrString: CFAttributedString) -> CTLin
 extern CTLineRefCTLineCreateWithAttributedString(CFAttributedStringRef attrString);
 ```
 
-#### Return Value
+## Return Value
 
 A reference to a [`CTLine`](./ctline.md) object.
 
-#### Discussion
+## Discussion
 
 This function allows clients to create a line without creating a [`CTTypesetter`](./cttypesetter.md) object. The framework provides a typesetter for single-line typesetting under the hood. Simple elements that don’t require line breaks, such as text labels, can use this API.
 

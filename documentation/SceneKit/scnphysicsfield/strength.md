@@ -25,7 +25,7 @@ var strength: CGFloat { get set }
 @property (nonatomic) CGFloat strength;
 ```
 
-#### Discussion
+## Discussion
 
 Each type of physics field defines its own behavior for strength values. For details, see the methods listed in Creating Physics Fields.
 

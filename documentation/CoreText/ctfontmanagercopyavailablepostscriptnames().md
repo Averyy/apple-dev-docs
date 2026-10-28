@@ -25,7 +25,7 @@ func CTFontManagerCopyAvailablePostScriptNames() -> CFArray
 extern CFArrayRefCTFontManagerCopyAvailablePostScriptNames();
 ```
 
-#### Return Value
+## Return Value
 
 This function returns a retained reference to a `CFArray` of `CFStringRef` objects representing the PostScript names of the available fonts. The caller is responsible for releasing the array.
 

@@ -22,7 +22,7 @@ class var resizeRight: NSCursor { get }
 @property (class, strong, readonly) NSCursor * resizeRightCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The resize-right cursor. This cursor is used when moving or resizing an object to indicate that the user can move only in the indicated direction.
 

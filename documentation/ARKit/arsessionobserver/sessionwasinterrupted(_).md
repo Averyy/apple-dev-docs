@@ -20,7 +20,7 @@ optional func sessionWasInterrupted(_ session: ARSession)
 - (void) sessionWasInterrupted:(ARSession *) session;
 ```
 
-#### Discussion
+## Discussion
 
 A session is interrupted when it fails to receive camera or motion sensing data. Session interruptions occur whenever camera capture is not available—for example, when your app is in the background or there are multiple foreground apps—or when the device is too busy to process motion sensor data.
 

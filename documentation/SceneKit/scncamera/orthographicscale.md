@@ -25,7 +25,7 @@ var orthographicScale: Double { get set }
 @property (nonatomic) double orthographicScale;
 ```
 
-#### Discussion
+## Discussion
 
 In an orthographic projection, equally sized objects appear equally sized regardless of their distance from the camera. To switch between orthographic and perspective projections, see the [`usesOrthographicProjection`](./usesorthographicprojection.md) property.
 

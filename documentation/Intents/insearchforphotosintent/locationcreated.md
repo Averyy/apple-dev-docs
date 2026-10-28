@@ -34,7 +34,7 @@ var locationCreated: CLPlacemark? { get }
 @property (atomic, copy, readonly, nullable) CLPlacemark * locationCreated;
 ```
 
-#### Discussion
+## Discussion
 
 Use the placemark information to limit the scope of your search to photos in the given area. Define the area as precisely as you can given the available information. For example, if the placemark includes a specific address, limit your search to photos taken at that address.
 

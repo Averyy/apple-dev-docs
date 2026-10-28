@@ -19,7 +19,7 @@ var resizeFlags: NSEvent.ModifierFlags { get }
 @property (readonly) NSEventModifierFlags resizeFlags;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is a mask indicating which of the modifier keys was held down when the mouse-down event occurred. The flags are listed in [`NSEvent`](../nsevent.md) class’s [`modifierFlags`](../nsevent/modifierflags-swift.property.md) method description. The property is valid only while the window is being resized.
 

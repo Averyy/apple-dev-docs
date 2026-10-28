@@ -21,17 +21,17 @@ func SecKeychainSetUserInteractionAllowed(_ state: Bool) -> OSStatus
 OSStatus SecKeychainSetUserInteractionAllowed(Boolean state);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Security Framework Result Codes](./security-framework-result-codes.md).
 
-#### Discussion
+## Discussion
 
 Certain keychain services functions that require the presence of a keychain automatically display a *Keychain Not Found* dialog if there is none. Functions that require the keychain to be unlocked automatically display the *Unlock Keychain* dialog. The [`SecKeychainSetUserInteractionAllowed(_:)`](./seckeychainsetuserinteractionallowed%28_%29.md) function enables you to control whether these functions display a user interface. By default, user interaction is permitted.
 
 If you are writing an application that must run unattended on a server, you may wish to disable the user interface so that any subsequent keychain calls that normally bring up the unlock UI will instead return immediately with an [`errSecInteractionRequired`](./errsecinteractionrequired.md) result). In this case you must programmatically create a keychain or unlock the keychain when necessary.
 
-##### Special Considerations
+### Special Considerations
 
 If you disable user interaction before calling a Keychain Services function, be sure to reenable it when you are finished. Failure to reenable user interaction will affect other clients of the Keychain Services.
 

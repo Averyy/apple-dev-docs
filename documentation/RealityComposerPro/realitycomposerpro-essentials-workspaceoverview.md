@@ -5,7 +5,7 @@
 
 Explore the panes and toolbars that make up the Reality Composer Pro editing environment.
 
-#### Overview
+## Overview
 
 The Reality Composer Pro workspace is organized into four main sections: Hierarchy, Viewport, Project Browser, and Inspector (including the Preview area).
 
@@ -13,17 +13,17 @@ Together, the Hierarchy, Project Browser, Viewport, and Inspector form the core 
 
 ![An annotated screenshot of an empty Reality Composer Pro project, highlighting the four main panes: Hierarchy, Viewport, Project Browser, and Inspector.](https://developer.apple.com/tutorials/images/RealityComposerPro/Overview@2x.png)
 
-#### Browse the scene hierarchy
+## Browse the scene hierarchy
 
 The Scene Hierarchy shows the hierarchy of all assets, components, and entities for the scene currently opened in the Viewport.
 
 From the Hierarchy, you can add, remove, copy, paste, rename, and drag items directly in the hierarchy tree. Control-click an item to open a context menu with more options.
 
-#### Show or hide the Hierarchy
+## Show or hide the Hierarchy
 
 Click the Hide/Show icon at the top of the Hierarchy to open or close it.
 
-#### Lock or hide assets in the Hierarchy
+## Lock or hide assets in the Hierarchy
 
 These icons are available when you click on an item in the Hierarchy.
 
@@ -32,7 +32,7 @@ These icons are available when you click on an item in the Hierarchy.
 
 > **Note**: Locking, unlocking, hiding, and unhiding assets don’t affect exported files — these editor-only actions help you organize and focus on specific entities. To deactivate an entity, Control-click it and choose Deactivate.
 
-#### Add, show, or filter items shown in the Hierarchy
+## Add, show, or filter items shown in the Hierarchy
 
 Use the icons at the bottom of the Hierarchy to:
 
@@ -44,13 +44,13 @@ Use the icons at the bottom of the Hierarchy to:
 
 > 💡 **Tip**: You can also **Control-click** an entity in the Hierarchy to see all available options for that entity.
 
-#### Manage project files in the Project Browser
+## Manage project files in the Project Browser
 
 Use the Project Browser menu bar icons to view and manage files, folders, assets, and other project files.
 
 > 💡 **Tip**: When you open an asset in the Project Browser, it opens in a new tab at the top of the Viewport.
 
-#### Use the Project Browser toolbar icons
+## Use the Project Browser toolbar icons
 
 Use the following icons to navigate and manage your project assets:
 
@@ -66,23 +66,23 @@ Use the following icons to navigate and manage your project assets:
 - **Thumbnail size (slider)** — Adjusts the size of thumbnails when using the grid view.
 - **Search project** — Filters the Project Browser to show only items matching your search term.
 
-#### Interact with content in the Viewport
+## Interact with content in the Viewport
 
 The Viewport displays your project’s assets and scenes. Use the Viewport modes to change how you interact with content and navigate the scene.
 
-#### Run simulations from the Viewport toolbar
+## Run simulations from the Viewport toolbar
 
 Use the Viewport toolbar to preview and run simulations in the Viewport, on a simulated device, or through a connected device. For more information about previewing content, see [Previewing content and running simulations](./realitycomposerpro-essentials-previewcontentrunsimulations.md).
 
 ![A screenshot of additional entities opened from the Hierarchy view appearing as tabs in the Reality Composer Pro Viewport.](https://developer.apple.com/tutorials/images/RealityComposerPro/WorkspaceTab@2x.png)
 
-#### Manipulate entities in the Viewport
+## Manipulate entities in the Viewport
 
 ![A screenshot of the Reality Composer Pro Viewport icons for selecting, moving, rotating, scaling, snapping, transforming, and pivoting.](https://developer.apple.com/tutorials/images/RealityComposerPro/GizmoControl@2x.png)
 
 Click an object or entity in the Viewport to select it. You can also drag to select one or more objects (Marquee select) or Shift-click to select multiple, individual items. Use the scroll wheel to zoom in or out of the Viewport. Option-click to rotate (orbit) the view in the Viewport.
 
-#### Move, rotate, and scale entities
+## Move, rotate, and scale entities
 
 Select an entity in the Viewport, click a mode (Move, Rotate, or Scale) in the bottom-left of the Viewport, and then use the **manipulator** to manipulate the asset.
 
@@ -97,7 +97,7 @@ The Q, W, E, and R keys on the keyboard are also mapped to the Select, Move, Sca
 
 > 💡 **Tip**: For the Scale and Move tools, you can also click and drag the squares, which affects the entity in the constraint of the plane.
 
-#### Change Viewport visualization options
+## Change Viewport visualization options
 
 The following icons (to the right of the Select, Move, Rotate, and Scale icons) in the Viewport also let you change your visualization options in the Viewport.
 
@@ -109,7 +109,7 @@ The following icons (to the right of the Select, Move, Rotate, and Scale icons) 
   - **Local** — Manipulate and set transform values relative to the parent object.
 - **Pivot Point** — Defines the focal object for the Move, Rotate, or Scale interaction. First Selected, Last Selected, Center, or Bounding Box.
 
-#### Preview scenes with different cameras and lighting
+## Preview scenes with different cameras and lighting
 
 Preview your scene with different cameras, lighting, and visualization options by selecting the icons in the upper-right corner of the Viewport.
 
@@ -148,7 +148,7 @@ Preview your scene with different cameras, lighting, and visualization options b
     - **Lighting Diffuse** — Shows only the diffuse lighting contribution.
     - **Lighting Specular** — Shows only the specular lighting contribution.
 
-#### View and change entity properties in the Inspector
+## View and change entity properties in the Inspector
 
 Use the Inspector panel to:
 
@@ -158,7 +158,7 @@ Use the Inspector panel to:
 
 When an entity is selected, click **Add Component** to add more components. Use the Hide/Show Inspector icon to close or open the Inspector.
 
-#### Bake lightmaps with Lighting tools
+## Bake lightmaps with Lighting tools
 
 Lightmap baking is a precomputation step that renders static lighting into textures for more efficient runtime rendering. Use the Lighting tools icon in the Inspector to select the Lightmap Bake Quality (Low, Medium, High, Production), and then select **Bake Lightmap** or **Capture Environment** to run the bake.
 

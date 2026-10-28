@@ -15,11 +15,11 @@ Allows your component to retrieve a handle to the memory associated with a conne
 Handle GetComponentInstanceStorage(ComponentInstance aComponentInstance);
 ```
 
-#### Return Value
+## Return Value
 
 A handle to the memory associated with the specified connection. 
 
-#### Discussion
+## Discussion
 
 Typically, your component does not need to use this function, because the Component Manager provides this handle to your component each time the client application requests service from this connection.
 

@@ -19,7 +19,7 @@ func trackSwipeEvent(options: NSEvent.SwipeTrackingOptions = [], dampenAmountThr
 - (void) trackSwipeEventWithOptions:(NSEventSwipeTrackingOptions) options dampenAmountThresholdMin:(CGFloat) minDampenThreshold max:(CGFloat) maxDampenThreshold usingHandler:(void (^)(CGFloat gestureAmount, NSEventPhase phase, BOOL isComplete, BOOL *stop)) trackingHandler;
 ```
 
-#### Discussion
+## Discussion
 
 Scroll wheel swipes are tracked not only to the end of the physical gesture phase by the user, but also to the completion of any user interface animation that should be performed. Using this method allows your implementation to maintain a consistent fluid feel with other applications. Any gesture amount outside of the supplied minimum and maximum dampen amount is pre-dampened for you to provide an elastic feel.
 

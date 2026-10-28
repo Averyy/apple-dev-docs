@@ -20,7 +20,7 @@ A collection of entities in a RealityView.
 struct RealityViewEntityCollection
 ```
 
-#### Overview
+## Overview
 
 This collection is used by `RealityViewContent/entities`.
 

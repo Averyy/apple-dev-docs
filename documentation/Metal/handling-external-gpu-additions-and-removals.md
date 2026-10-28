@@ -5,7 +5,7 @@
 
 Register and respond to external GPU notifications that a person initiates.
 
-#### Overview
+## Overview
 
 A person can connect or disconnect external GPUs from a Mac at any time. The following sequence of events occurs when a person properly adds and removes an external GPU from the system:
 
@@ -20,7 +20,7 @@ Your app can support external GPUs effectively by responding to these events app
 
 > ⚠️ **Warning**:  A person can disconnect an external GPU from a Mac at any time, without requesting or following a safe disconnect procedure. Prepare your app for this possibility and take actions in response to an unexpected removal.
 
-##### Set a GPU eject policy
+### Set a GPU eject policy
 
 You can control how your app responds to a safe disconnect request for an external GPU by configuring the `GPUEjectPolicy` key in your app’s `Info.plist`. You can assign the key to one of the following string values:
 
@@ -30,14 +30,14 @@ You can control how your app responds to a safe disconnect request for an extern
 
 > 💡 **Tip**:  Support external GPUs effectively by setting the `GPUEjectPolicy` key in your app’s `Info.plist` to `“wait”` and appropriately respond to a safe disconnect ([`removalRequested`](./mtldevicenotificationname/removalrequested.md)) notification.
 
-##### Set a GPU selection policy
+### Set a GPU selection policy
 
 You can control whether Metal prefers to use or avoid external GPUs by configuring the `GPUSelectionPolicy` key in your app’s `Info.plist`. You can assign the key to one of the following string values:
 
 - **`“avoidRemovable”`**: Metal tries to avoid creating contexts on external GPUs. For legacy OpenGL apps, OpenGL also tries to avoid creating contexts for external GPUs. Set this option only if your app doesn’t run well on an external GPU.
 - **`“preferRemovable”`**: If external GPUs are visible to the system, Metal prefers them over other GPUs. Similarly, for legacy OpenGL apps, OpenGL also prefers to create contexts for the external GPU.
 
-##### Register for external GPU notifications
+### Register for external GPU notifications
 
 Call the [`MTLCopyAllDevicesWithObserver`](./mtlcopyalldeviceswithobserver.md) function to get a list of all the Metal devices available to a system and register an observer that’s called whenever this list changes (or may change due to a safe disconnect request).
 
@@ -66,7 +66,7 @@ _deviceList = deviceList;
 
 To deregister the observer, call the [`MTLRemoveDeviceObserver(_:)`](./mtlremovedeviceobserver%28_%29.md) function.
 
-##### Respond to external GPU notifications
+### Respond to external GPU notifications
 
 Metal notifies your app about the following external GPU events:
 

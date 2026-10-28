@@ -16,7 +16,7 @@ An error code that indicates the app is missing an Apple Push Notification servi
 static var missingPushServerEnvironment: CLLocationPushServiceError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 A Location Push Service Extension requires that your app has the APNs environment entitlement. For more information, see [`APS Environment Entitlement`](../../BundleResources/entitlements/aps-environment.md).
 

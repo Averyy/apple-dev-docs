@@ -19,11 +19,11 @@ func AERemoteProcessResolverScheduleWithRunLoop(_ ref: AERemoteProcessResolverRe
 void AERemoteProcessResolverScheduleWithRunLoop(AERemoteProcessResolverRef ref, CFRunLoopRef runLoop, CFStringRef runLoopMode, AERemoteProcessResolverCallback callback, const AERemoteProcessResolverContext *ctx);
 ```
 
-#### Discussion
+## Discussion
 
 Schedules a resolver for execution on a given run loop in a given mode. The resolver will move through various internal states as long as the specified run loop is run. When the resolver completes, either with success or with an error condition, the callback is executed. There is no explicit unschedule of the resolver; you must dispose of it to remove it from the run loop.
 
-##### Version-Notes
+### Version-Notes
 
 Thread safe starting in OS X v10.3.
 

@@ -21,7 +21,7 @@ A Combine publisher that publishes this instance’s value to each subscriber ex
 var publisher: Optional<Wrapped>.Publisher { get }
 ```
 
-#### Discussion
+## Discussion
 
 In the following example, the publisher for an `Int?` optional publishes its value once, then finishes normally:
 

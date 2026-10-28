@@ -23,7 +23,7 @@ class PKDisbursementRequest
 @interface PKDisbursementRequest : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use this object to create a disbursement (payment) request from a merchant to a user account — for example, a withdrawal from an online account.
 

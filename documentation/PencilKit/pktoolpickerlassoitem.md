@@ -22,7 +22,7 @@ class PKToolPickerLassoItem
 @interface PKToolPickerLassoItem : PKToolPickerItem
 ```
 
-#### Overview
+## Overview
 
 A lasso item represents a [`PKLassoTool`](./pklassotool-swift.struct.md) — a tool for selecting stroked lines and shapes in a canvas view — in a [`PKToolPicker`](./pktoolpicker.md).
 

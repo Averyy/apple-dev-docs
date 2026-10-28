@@ -29,7 +29,7 @@ enum NSAttributeType : NSUInteger;
 
 - [Configuring Attributes](./configuring-attributes.md)
 
-#### Overview
+## Overview
 
 Core Data supports the following attribute types, which differentiate between bit sizes to enable data-store independence. For some types, a scalar option is available.
 

@@ -24,7 +24,7 @@ func hitTest(_ p: CGPoint) -> CALayer?
 - (CALayer *) hitTest:(CGPoint) p;
 ```
 
-#### Return Value
+## Return Value
 
 The layer that contains `thePoint` or `nil` if the point lies outside the receiver’s bounds rectangle.
 

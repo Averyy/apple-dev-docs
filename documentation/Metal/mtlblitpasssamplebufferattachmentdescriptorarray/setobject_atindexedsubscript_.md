@@ -20,7 +20,7 @@ Copies the properties of a blit pass sample buffer attachment descriptor instanc
 - (void) setObject:(MTLBlitPassSampleBufferAttachmentDescriptor *) attachment atIndexedSubscript:(NSUInteger) attachmentIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The array has at
 

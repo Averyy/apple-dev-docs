@@ -23,7 +23,7 @@ class CFMachPort
 typedef struct __CFMachPort * CFMachPortRef;
 ```
 
-#### Overview
+## Overview
 
 A CFMachPort object is a wrapper for a native Mach port (`mach_port_t`). Mach ports are the native communication channel for the macOS kernel.
 

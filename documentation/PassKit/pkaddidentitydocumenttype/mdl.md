@@ -24,7 +24,7 @@ case mDL
 PKAddIdentityDocumentTypeMDL
 ```
 
-#### Discussion
+## Discussion
 
 The `mDL` identification type is `ISO 18013`-compliant.
 

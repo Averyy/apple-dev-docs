@@ -25,7 +25,7 @@ var timestamp: Date { get }
 @property (nonatomic, copy, readonly) NSDate * timestamp;
 ```
 
-#### Discussion
+## Discussion
 
 In iOS, this property is declared as `nonatomic`. In macOS, it is declared as `atomic`.
 

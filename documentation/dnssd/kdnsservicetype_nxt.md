@@ -23,7 +23,7 @@ var kDNSServiceType_NXT: Int { get }
 kDNSServiceType_NXT
 ```
 
-#### Discussion
+## Discussion
 
 Next domain (security).
 

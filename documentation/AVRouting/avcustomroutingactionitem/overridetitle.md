@@ -22,7 +22,7 @@ var overrideTitle: String? { get set }
 @property (nonatomic, copy, nullable) NSString * overrideTitle;
 ```
 
-#### Discussion
+## Discussion
 
 Use this value to dynamically override the title of the custom item.
 

@@ -24,7 +24,7 @@ optional func layoutSublayers(of layer: CALayer)
 - (void) layoutSublayersOfLayer:(CALayer *) layer;
 ```
 
-#### Discussion
+## Discussion
 
 The [`layoutSublayers(of:)`](./layoutsublayers%28of%29.md) method is called when a layer’s bounds have changed and its sublayers may need rearranging, for example by changing its frame’s size. You can implement this method if you need precise control over the layout of your layer’s sublayers.
 

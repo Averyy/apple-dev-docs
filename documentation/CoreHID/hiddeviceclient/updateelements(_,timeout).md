@@ -19,11 +19,11 @@ func updateElements(_ updates: [any HIDElementUpdate], timeout: Duration? = nil)
 
 - [Communicating with human interface devices](../communicatingwithhiddevices.md)
 
-#### Return Value
+## Return Value
 
 A [`HIDDeviceClient.HIDElementUpdateResult`](./hidelementupdateresult.md) containing the result of each operation. Even if the overall call succeeds, individual updates may have failed.
 
-#### Discussion
+## Discussion
 
 Multiple [`HIDDeviceClient.ProvideElementUpdate`](./provideelementupdate.md) or [`HIDDeviceClient.RequestElementUpdate`](./requestelementupdate.md) objects can be passed in a list to stage a series of transactions to the device. The multi-update behavior can be helpful in providing updates to the device and immediately querying how it responded. All of the updates fail if another client obtains the device.
 

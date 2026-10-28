@@ -19,7 +19,7 @@ The p of the Lp norm.
 @property (nonatomic, readonly) NSNumber * pNorm;
 ```
 
-#### Discussion
+## Discussion
 
 You can set this value to `[NSNumber numberWithFloat:INFINITY]`.
 

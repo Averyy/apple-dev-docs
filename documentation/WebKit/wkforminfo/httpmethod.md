@@ -21,7 +21,7 @@ var httpMethod: String { get }
 @property (nonatomic, readonly) NSString * httpMethod;
 ```
 
-#### Discussion
+## Discussion
 
 The HTTP method used to submit the form; generally either @“GET” or @“POST”.
 

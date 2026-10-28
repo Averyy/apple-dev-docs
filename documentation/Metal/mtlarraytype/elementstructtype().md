@@ -24,11 +24,11 @@ func elementStructType() -> MTLStructType?
 - (MTLStructType *) elementStructType;
 ```
 
-#### Return Value
+## Return Value
 
 An object that describes the struct. If the array elements aren’t structs, this method returns `nil`.
 
-#### Discussion
+## Discussion
 
 Use this method if [`elementType`](./elementtype.md) is [`MTLDataType.struct`](../mtldatatype/struct.md).
 

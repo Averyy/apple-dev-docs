@@ -22,7 +22,7 @@ func setNeedsUpdateOfHomeIndicatorAutoHidden()
 - (void) setNeedsUpdateOfHomeIndicatorAutoHidden;
 ```
 
-#### Discussion
+## Discussion
 
 When you change the value returned by your view controller’s [`prefersHomeIndicatorAutoHidden`](./prefershomeindicatorautohidden.md) or [`childForHomeIndicatorAutoHidden`](./childforhomeindicatorautohidden.md) method, call this method to let UIKit know that it should call those methods again.
 

@@ -21,7 +21,7 @@ Copies a vector into the given a pointer to a float array.
 - (BOOL) getVector:(float *) vector forString:(NSString *) string;
 ```
 
-#### Return Value
+## Return Value
 
 A Boolean indicating whether the method copied the vector.
 

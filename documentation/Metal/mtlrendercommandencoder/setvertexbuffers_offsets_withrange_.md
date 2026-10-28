@@ -20,7 +20,7 @@ Assigns multiple buffers to a range of entries in the vertex shader argument tab
 - (void) setVertexBuffers:(id<MTLBuffer> const[]) buffers offsets:(const NSUInteger[]) offsets withRange:(NSRange) range;
 ```
 
-#### Discussion
+## Discussion
 
 By default, the buffer at each index is `nil`.
 

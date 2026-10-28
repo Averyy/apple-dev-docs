@@ -19,7 +19,7 @@ var contentView: NSView? { get set }
 @property (strong, nullable) NSView * contentView;
 ```
 
-#### Discussion
+## Discussion
 
 The content view of the `NSBox` object. The content view is created automatically when the box is created and resized as the box is resized (you should never send frame-altering messages directly to a box’s content view). You can replace it with an `NSView` of your own.
 

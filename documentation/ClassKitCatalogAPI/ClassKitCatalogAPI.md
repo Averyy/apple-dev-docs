@@ -9,7 +9,7 @@ Declare the activities supported by your educational app through a web interface
 **Availability**:
 - ClassKit 1.0+
 
-#### Overview
+## Overview
 
 Access the ClassKit Catalog API from your computer or server to declare an app’s educational activities when you have an app that adopts the [ClassKit](../ClassKit/ClassKit.md) framework. Traditionally your app declares its activities — represented as contexts — to the ClassKit framework at run time so that teachers can assign the activities using the [Schoolwork](https://apps.apple.com/us/app/schoolwork/id1355112526) app. As an alternative, the ClassKit Catalog API lets you declare contexts ahead of time to a central server so that:
 

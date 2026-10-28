@@ -17,7 +17,7 @@ The current estimated average throughput capacity of the data path, given the cu
 let throughputCapacity: Double?
 ```
 
-#### Discussion
+## Discussion
 
 The result is in `Mbps` and can be `nil` if the system can’t calculate the capacity.
 

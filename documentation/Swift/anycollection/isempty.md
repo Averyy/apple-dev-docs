@@ -21,7 +21,7 @@ A Boolean value indicating whether the collection is empty.
 var isEmpty: Bool { get }
 ```
 
-#### Discussion
+## Discussion
 
 When you need to check whether your collection is empty, use the `isEmpty` property instead of checking that the `count` property is equal to zero. For collections that don’t conform to `RandomAccessCollection`, accessing the `count` property iterates through the elements of the collection.
 

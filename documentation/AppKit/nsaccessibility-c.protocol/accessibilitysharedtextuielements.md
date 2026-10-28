@@ -15,7 +15,7 @@ Other elements that share text with the accessibility element.
 @property (copy, nullable) NSArray * accessibilitySharedTextUIElements;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to manage text that is split across multiple elements—for example, an ebook reader that splits the text into multiple pages.
 

@@ -16,7 +16,7 @@ Perform synchronous lock operation
 IOReturn (*CompareSwap)(IOFireWireLibDeviceRef self, io_object_t device, const FWAddress *addr, UInt32 cmpVal, UInt32 newVal, Boolean failOnReset, UInt32 generation);
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn error code
 

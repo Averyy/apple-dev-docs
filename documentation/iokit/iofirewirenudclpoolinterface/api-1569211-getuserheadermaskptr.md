@@ -14,7 +14,7 @@
 UInt32 *(*GetUserHeaderMaskPtr)(NuDCLRef dcl);
 ```
 
-#### Discussion
+## Discussion
 
 Description forthcoming
 

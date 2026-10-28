@@ -27,7 +27,7 @@ func BNNSFilterCreateFusedLayer(_ number_of_fused_filters: Int, _ filter_type: U
 BNNSFilterBNNSFilterCreateFusedLayer(const size_t number_of_fused_filters, const BNNSFilterType *filter_type, const void **layer_params, const BNNSFilterParameters *filter_params);
 ```
 
-#### Discussion
+## Discussion
 
 Use this function to create an `N` layer fused filter that processes input as: `input → filter0 → filter1 →` … `→ filter N-1 → output`. The first `N - 1` filters must have [`BNNSActivationFunctionIdentity`](./bnnsactivationfunctionidentity.md) activation function. For the first `N - 2` filters, each filter’s output descriptor and its subsequent filter’s input descriptor must have the same size, stride, and data type.
 

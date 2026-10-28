@@ -25,7 +25,7 @@ init(principalMediaCharacteristics: [AVMediaCharacteristic]?, preferredLanguages
 - (instancetype) initWithPrincipalMediaCharacteristics:(NSArray<NSString *> *) principalMediaCharacteristics preferredLanguages:(NSArray<NSString *> *) preferredLanguages preferredMediaCharacteristics:(NSArray<NSString *> *) preferredMediaCharacteristics;
 ```
 
-#### Discussion
+## Discussion
 
 Principal media characteristics, when present, override language preferences when making selections within a specific media selection group. However, language preferences may still pertain to selections in other groups. For example, the system may consider language preferences when choosing whether to select nonforced subtitles for translation purposes.
 

@@ -17,7 +17,7 @@ Applies the Log Softmax function.
 class LogSoftmax
 ```
 
-#### Overview
+## Overview
 
 This is:
 
@@ -25,7 +25,7 @@ This is:
 x - MLX.logSumExp(x, axis: axis, keepDims: true)
 ```
 
-##### See Also
+### See Also
 
 - [Activation Functions and Layers](./activations.md)
 - [`logSoftmax(_:axis:)`](./logsoftmax%28_,axis%29.md)

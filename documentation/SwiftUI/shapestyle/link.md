@@ -24,7 +24,7 @@ static var link: LinkShapeStyle { get }
 
 Available when `Self` is `LinkShapeStyle`.
 
-#### Discussion
+## Discussion
 
 For information about how to use shape styles, see [`ShapeStyle`](../shapestyle.md).
 

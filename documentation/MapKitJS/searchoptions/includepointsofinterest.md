@@ -15,7 +15,7 @@ A Boolean value that indicates whether the search results should include points 
 includePointsOfInterest?: boolean;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is `true`.
 

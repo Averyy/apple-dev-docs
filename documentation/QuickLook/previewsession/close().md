@@ -15,7 +15,7 @@ Closes the preview session.
 func close() async throws
 ```
 
-#### Discussion
+## Discussion
 
 If the existing session is still open, this method closes it. The session’s events stream receives a `.didClose` event upon success.
 

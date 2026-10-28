@@ -26,7 +26,7 @@ class VSSubscription
 @interface VSSubscription : NSObject
 ```
 
-#### Overview
+## Overview
 
 Use a `VSSubscription` object to set user subscription information, such as account access type, proximity billing group, expiration date, and content catalog tier identifiers.
 

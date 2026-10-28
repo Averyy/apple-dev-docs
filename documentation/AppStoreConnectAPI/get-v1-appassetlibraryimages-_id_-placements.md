@@ -15,9 +15,9 @@ List the placements that reuse an app asset library image.
 - [Placing assets on your App Store surfaces](./placing-assets-on-your-app-store-surfaces.md)
 - [Uploading and managing image assets](./uploading-and-managing-image-assets.md)
 
-#### Discussion
+## Discussion
 
-##### Example Request and Response
+### Example Request and Response
 
 **Request**:
 

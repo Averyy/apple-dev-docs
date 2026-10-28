@@ -15,7 +15,7 @@ The supply source where a new campaign’s ads are eligible to appear.
 object CampaignTargetingCreate.SupplySource
 ```
 
-#### Discussion
+## Discussion
 
 The `supplySource` field is **include-only**; setting `exclude` has no effect. Valid values:
 

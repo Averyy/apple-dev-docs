@@ -21,7 +21,7 @@ A variant that encapsulates the symbol in a circle.
 static let circle: SymbolVariants
 ```
 
-#### Discussion
+## Discussion
 
 Use this variant with a call to the [`symbolVariant(_:)`](../view/symbolvariant%28_%29.md) modifier to draw symbols in a circle, for those symbols that have a circle variant:
 

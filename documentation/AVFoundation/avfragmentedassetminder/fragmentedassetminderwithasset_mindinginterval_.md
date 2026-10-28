@@ -21,7 +21,7 @@ Creates a fragmented asset minder containing the specified asset and minding int
 + (instancetype) fragmentedAssetMinderWithAsset:(AVAsset<AVFragmentMinding> *) asset mindingInterval:(NSTimeInterval) mindingInterval;
 ```
 
-#### Return Value
+## Return Value
 
 The new fragmented asset minder.
 

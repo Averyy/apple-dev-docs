@@ -20,7 +20,7 @@ Creates a new audio material with the provided scattering data.
 func scattering(_ data: Audio.Scattering) -> Audio.Material
 ```
 
-#### Discussion
+## Discussion
 
 Example usage:
 

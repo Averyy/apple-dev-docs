@@ -22,7 +22,7 @@ func GLKVector2AddScalar(_ vector: GLKVector2, _ value: Float) -> GLKVector2
 static GLKVector2 GLKVector2AddScalar(GLKVector2 vector, float value);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector.
 

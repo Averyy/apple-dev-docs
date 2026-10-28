@@ -25,7 +25,7 @@ optional func renderNode(_ node: SCNNode, renderer: SCNRenderer, arguments: [Str
 - (void) renderNode:(SCNNode *) node renderer:(SCNRenderer *) renderer arguments:(NSDictionary<NSString *,id> *) arguments;
 ```
 
-#### Discussion
+## Discussion
 
 Implement this method to perform custom rendering for a node. You should only execute Metal or OpenGL drawing commands (and any setup required to perform them) in this method—the results of modifying SceneKit objects in this method are undefined.
 

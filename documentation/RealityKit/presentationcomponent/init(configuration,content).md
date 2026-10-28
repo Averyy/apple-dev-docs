@@ -16,7 +16,7 @@ nonisolated
 init<Content>(configuration: PresentationComponent.Configuration, content: Content) where Content : View
 ```
 
-#### Discussion
+## Discussion
 
 Use this component when you want to present a modal that is anchored to an entity. Listen to `ComponentEvents.DidChange` event to receive notification about the presentation’s dismissal. To control the presentation through a SwiftUI Binding, use `PresentationComponent(isPresented:configuration:content)`
 

@@ -19,7 +19,7 @@ func runToolbarCustomizationPalette(_ sender: Any?)
 - (void) runToolbarCustomizationPalette:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 See the [`NSToolbar`](../nstoolbar.md) class description for additional information.
 

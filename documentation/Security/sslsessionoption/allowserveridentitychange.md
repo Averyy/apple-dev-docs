@@ -22,7 +22,7 @@ case allowServerIdentityChange
 kSSLSessionOptionAllowServerIdentityChange
 ```
 
-#### Discussion
+## Discussion
 
 Disallow by default to avoid the Triple Handshake attack.
 

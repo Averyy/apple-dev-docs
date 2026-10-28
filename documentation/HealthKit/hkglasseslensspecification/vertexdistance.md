@@ -25,7 +25,7 @@ var vertexDistance: HKQuantity? { get }
 @property (nonatomic, copy, readonly, nullable) HKQuantity * vertexDistance;
 ```
 
-#### Discussion
+## Discussion
 
 This property’s range is from 12 to 14 mm.
 

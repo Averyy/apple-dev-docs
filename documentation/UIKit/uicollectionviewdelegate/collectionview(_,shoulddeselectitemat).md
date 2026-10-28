@@ -23,11 +23,11 @@ optional func collectionView(_ collectionView: UICollectionView, shouldDeselectI
 - (BOOL) collectionView:(UICollectionView *) collectionView shouldDeselectItemAtIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the item should be deselected or [`false`](../../Swift/false.md) if it should not.
 
-#### Discussion
+## Discussion
 
 The collection view calls this method when the user tries to deselect an item in the collection view. It does not call this method when you programmatically deselect items.
 

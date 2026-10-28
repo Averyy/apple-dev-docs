@@ -10,7 +10,7 @@
 + (instancetype) settingsWithLinkLocalAddressing;
 ```
 
-#### Discussion
+## Discussion
 
 Create a NEIPv6Settings object that will only use link-local IPv6 addresses.
 

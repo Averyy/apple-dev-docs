@@ -13,13 +13,13 @@ Use your custom voices to synthesize speech by building a speech synthesis provi
 - macOS 14.5+
 - Xcode 15.4+
 
-#### Overview
+## Overview
 
 A speech synthesis provider allows you to bring your custom voices to iOS and macOS for system use with text-to-speech features like VoiceOver. A speech synthesizer receives text and information about speech properties, and provides an audio representation of the speech. To generate audio, you create an audio unit extension.
 
 The sample app shows you how to provide a list of voices to the system, and how to create a basic speech synthesizer to represent the voices you specify. It explores how to create an audio unit that’s responsible for handling text-to-speech requests to synthesize speech by using Speech Synthesis Markup Language (SSML). The sample inspects a request’s SSML for two strings — *hello* and *goodbye* — and plays the associated audio file.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To run this sample app, you’ll need the following:
 
@@ -38,7 +38,7 @@ After you run the project, provide a name for your voice and choose Add Voice. T
 
 In iOS, open the Settings app and choose Accessibility > Spoken Content > Voices.
 
-##### Create an app to provide voices
+### Create an app to provide voices
 
 The sample creates a host app to customize the list of voices available to the speech synthesis extension, using an App Group to share information between the host app and the audio unit extension. For more information about App Groups, see [Configuring app groups](../Xcode/configuring-app-groups.md).
 
@@ -60,7 +60,7 @@ private func saveVoicesToGroupDefaults() {
 }
 ```
 
-##### Get the list of available voices
+### Get the list of available voices
 
 The extension is an [`AVSpeechSynthesisProviderAudioUnit`](./avspeechsynthesisprovideraudiounit.md) that’s responsible for handling speech synthesis tasks. The audio unit provides a list of available voices to the system, inspects a request’s SSML, and provides audio buffers to the system. To provide a list of voices, the sample retrieves the list of voices the host app provides and initializes an [`AVSpeechSynthesisProviderVoice`](./avspeechsynthesisprovidervoice.md) for each one.
 
@@ -79,7 +79,7 @@ public override var speechVoices: [AVSpeechSynthesisProviderVoice] {
 }
 ```
 
-##### Handle the speech request
+### Handle the speech request
 
 When there’s text available to synthesize, the system calls [`synthesizeSpeechRequest(_:)`](./avspeechsynthesisprovideraudiounit/synthesizespeechrequest%28_%29.md) with an [`AVSpeechSynthesisProviderRequest`](./avspeechsynthesisproviderrequest.md). The request contains the SSML representation that describes the text to synthesize and the corresponding attributes for customizing pitch, rate, intonation, and more.
 
@@ -93,7 +93,7 @@ public override func synthesizeSpeechRequest(_ speechRequest: AVSpeechSynthesisP
 
 The sample calls a helper method with the SSML to retrieve a buffer that contains the audio to play back in a render block. The method [`cancelSpeechRequest()`](./avspeechsynthesisprovideraudiounit/cancelspeechrequest%28%29.md) discards the current speech request.
 
-##### Provide audio buffers to the system
+### Provide audio buffers to the system
 
 The system calls an audio unit’s rendering block to get a list of audio buffers for playback. The block receives the number of frames the system requests. The sample copies the current buffer’s frames into the target buffer for rendering. When the sample exhausts the available audio buffer, it sets the render action to [`offlineUnitRenderAction_Complete`](../AudioToolbox/audiounitrenderactionflags/offlineunitrenderaction_complete.md).
 

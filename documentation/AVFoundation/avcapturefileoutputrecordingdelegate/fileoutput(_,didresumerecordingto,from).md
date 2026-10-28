@@ -23,7 +23,7 @@ optional func fileOutput(_ output: AVCaptureFileOutput, didResumeRecordingTo fil
 - (void) captureOutput:(AVCaptureFileOutput *) output didResumeRecordingToOutputFileAtURL:(NSURL *) fileURL fromConnections:(NSArray<AVCaptureConnection *> *) connections;
 ```
 
-#### Discussion
+## Discussion
 
 Delegates can use this method to be informed when a request to resume recording is actually respected.
 

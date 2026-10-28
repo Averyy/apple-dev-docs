@@ -20,7 +20,7 @@ The fields for building a notification’s subtitle.
 @property (copy, nullable) NSArray<NSString *> * subtitleLocalizationArgs;
 ```
 
-#### Discussion
+## Discussion
 
 This property is an array of field names that CloudKit uses to extract the corresponding values from the record that triggers the push notification. The values must be strings, numbers, or dates. Don’t specify keys that use other value types. CloudKit may truncate strings with a length greater than 100 characters when it adds them to a notification’s payload.
 

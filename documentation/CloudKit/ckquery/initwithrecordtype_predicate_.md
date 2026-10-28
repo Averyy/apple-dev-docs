@@ -21,11 +21,11 @@ Creates a query with the specified record type and predicate.
 - (instancetype) initWithRecordType:(CKRecordType) recordType predicate:(NSPredicate *) predicate;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized query object.
 
-#### Discussion
+## Discussion
 
 You can’t change the record type and predicate of a query after you create it. If you want to search for a different set of records using a different set of search criteria, create a new query. You can add sort descriptors to the query and change them later as necessary.
 

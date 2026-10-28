@@ -15,7 +15,7 @@
 MPMovieMediaTypeMaskNone
 ```
 
-#### Discussion
+## Discussion
 
 The types of media available in the media are not yet known.
 

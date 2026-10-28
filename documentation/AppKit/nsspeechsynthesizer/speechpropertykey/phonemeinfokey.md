@@ -21,7 +21,7 @@ struct PhonemeInfoKey
 typedef NSString * NSSpeechPhonemeInfoKey;
 ```
 
-#### Discussion
+## Discussion
 
 Use these keys in the [`phonemeSymbols`](./phonemesymbols.md) dictionary.
 

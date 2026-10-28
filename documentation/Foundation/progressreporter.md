@@ -22,7 +22,7 @@ ProgressReporter is a wrapper for ProgressManager that carries information about
 final class ProgressReporter
 ```
 
-#### Overview
+## Overview
 
 It is read-only and can be added as a child of another ProgressManager.
 

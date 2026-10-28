@@ -21,7 +21,7 @@ weak var delegate: (any AVLegibleMediaOptionsMenuController.Delegate)? { get set
 @property (nonatomic, weak) id<AVLegibleMediaOptionsMenuControllerDelegate> delegate;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate for receiving caption preview and state change notifications.
 

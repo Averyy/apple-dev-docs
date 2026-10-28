@@ -15,7 +15,7 @@ The content type of the part, as a Uniform Type Identifier.
 var contentType: UTType?
 ```
 
-#### Discussion
+## Discussion
 
 Most MMS clients support the following content types:
 

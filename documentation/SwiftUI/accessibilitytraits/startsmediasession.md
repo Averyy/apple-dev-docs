@@ -21,7 +21,7 @@ The accessibility element starts a media session when it is activated.
 static let startsMediaSession: AccessibilityTraits
 ```
 
-#### Discussion
+## Discussion
 
 Use this trait to silence the audio output of an assistive technology, such as VoiceOver, during a media session that should not be interrupted. For example, you might use this trait to silence VoiceOver speech while the user is recording audio.
 

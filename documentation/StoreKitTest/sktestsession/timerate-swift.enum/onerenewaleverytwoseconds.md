@@ -25,7 +25,7 @@ case oneRenewalEveryTwoSeconds
 SKTestTimeRateOneRenewalEveryTwoSeconds
 ```
 
-#### Discussion
+## Discussion
 
 This time rate renews subscriptions every two seconds in the testing environment, regardless of actual renewal periods for each subscription.
 

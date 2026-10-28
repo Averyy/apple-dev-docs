@@ -23,7 +23,7 @@ var kCTFontTableCFF: Int { get }
 kCTFontTableCFF
 ```
 
-#### Discussion
+## Discussion
 
 Font table tag for a PostScript font program.
 

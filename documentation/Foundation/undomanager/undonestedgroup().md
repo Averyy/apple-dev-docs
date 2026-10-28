@@ -25,7 +25,7 @@ func undoNestedGroup()
 - (void) undoNestedGroup;
 ```
 
-#### Discussion
+## Discussion
 
 Raises an `NSInternalInconsistencyException` if any undo operations have been registered since the last [`enableUndoRegistration()`](./enableundoregistration%28%29.md) message.
 

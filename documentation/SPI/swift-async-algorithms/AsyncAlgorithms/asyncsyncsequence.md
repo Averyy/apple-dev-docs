@@ -24,7 +24,7 @@ An asynchronous sequence composed from a synchronous sequence.
 struct AsyncSyncSequence<Base> where Base : Sequence
 ```
 
-#### Overview
+## Overview
 
 Asynchronous lazy sequences can be used to interface existing or pre-calculated data to interoperate with other asynchronous sequences and algorithms based on asynchronous sequences.
 

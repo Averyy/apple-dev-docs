@@ -10,7 +10,7 @@ Create a spatial stylus drawing experience that balances latency and accuracy fo
 - visionOS 26.0+
 - Xcode 26.0+
 
-#### Overview
+## Overview
 
 This sample demonstrates how to build an interactive drawing app that responds to spatial stylus input in visionOS. It shows how to track a spatial stylus in 3D space, synchronize stylus button inputs with tracking information, and balance latency with accuracy by predicting brush strokes and correcting them over time. The sample also addresses the unique challenges of on-surface drawing.
 
@@ -22,7 +22,7 @@ The key techniques the sample demonstrates are as follows:
 
 > **Note**: This sample uses the low-level mesh drawing implementation from [Creating a spatial drawing app with RealityKit](../RealityKit/creating-a-spatial-drawing-app-with-realitykit.md) as its foundation.
 
-#### Discover and track the active stylus
+## Discover and track the active stylus
 
 Before any drawing can happen, the app must first discover available styli, establish a connection with one, and begin tracking its movements in 3D space.
 
@@ -137,7 +137,7 @@ private func runAccessoryTracking(for stylus: GCStylus) async {
 
 For more information about discovering and tracking spatial styli, see [Discovering and tracking spatial game controllers and styli](../GameController/discovering-and-tracking-spatial-game-controllers-and-styli.md).
 
-#### Capture stylus button inputs
+## Capture stylus button inputs
 
 The sample captures input data from each of the active stylus’ buttons every frame.
 
@@ -245,7 +245,7 @@ class DrawingInputProvider {
 
 This sample app supports two brush types, uniform and calligraphic. For the uniform type the sample creates strokes with a constant radius. For the calligraphic type, the radius of the strokes depends on the button input pressure. Here, the sample overrides the button input’s `isPressed` property when in calligraphic mode to allow the person to set a specific pressure threshold to start and stop drawing.
 
-#### Get stylus anchor inputs
+## Get stylus anchor inputs
 
 The sample stores tracking information about the stylus’ position and timestamp in the `StylusAnchorInput` structure:
 
@@ -301,7 +301,7 @@ func getStylusTipPosition(for anchor: AccessoryAnchor, correction: ARKitCoordina
 }
 ```
 
-#### Capture initial and final anchor inputs
+## Capture initial and final anchor inputs
 
 The app takes a dual-input approach to drawing that provides immediate visual feedback while also applying corrections for greater accuracy. Specifically, the app captures both “initial” and “final” stylus anchor inputs every frame, and later corrects the initial anchors with the final anchors over time to achieve a balance between low-latency and high-accuracy brush strokes.
 
@@ -368,7 +368,7 @@ var airDrawingSettings = DrawingSettings(
 
 > **Note**: The app uses a shorter prediction horizon for drawing on surfaces to reduce jitter. You can also use the latest anchors directly instead of predicting to minimize jitter as much as possible when drawing on surfaces. In air, you can use a comparatively longer prediction horizon before jitter becomes an issue.
 
-#### Synchronize stylus position with button inputs
+## Synchronize stylus position with button inputs
 
 Creating a fluid drawing experience requires precise synchronization between the stylus’s position in 3D space and its button input data. The `DrawingInputProvider` class is responsible for this synchronization. Each frame it queries for stylus anchors and aligns them with button inputs to create drawing inputs.
 
@@ -504,7 +504,7 @@ func provideLatestInputs(to drawingDocument: DrawingDocument) {
 }
 ```
 
-#### Draw strokes and correct them over time
+## Draw strokes and correct them over time
 
 People expect their brush strokes to appear instantly while still maintaining high visual quality. The sample addresses this challenge by implementing a dual-source drawing system that provides immediate visual feedback and refined, accurate strokes. The `DrawingDocument` class manages this dual-source approach. When the drawing document receives input, it passes the data to the drawing sources and animates between them:
 

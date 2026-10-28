@@ -24,7 +24,7 @@ func startVPNTunnel() throws
 - (BOOL) startVPNTunnelAndReturnError:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 This method returns immediately after starting the process of connecting the VPN. In order to be notified when the VPN is fully connected, register to observe the [`NEVPNStatusDidChangeNotification`](../nevpnstatusdidchangenotification.md) notification on the [`NEVPNConnection`](../nevpnconnection.md) object, and examine the status property when the notification is received.
 

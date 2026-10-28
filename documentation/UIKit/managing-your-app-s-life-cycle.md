@@ -4,7 +4,7 @@
 
 Respond to system notifications when your app is in the foreground or background, and handle other significant system-related events.
 
-#### Overview
+## Overview
 
 The current state of your app determines what it can and can’t do at any time. For example, a foreground app has someone’s attention, so it has priority over system resources, including the CPU. By contrast, a background app must do as little work as possible, and preferably nothing, because it’s offscreen. As your app changes from state to state, you must adjust its behavior accordingly.
 
@@ -15,7 +15,7 @@ When your app’s state changes, UIKit notifies you by calling methods of the ap
 
 > **Note**:  When you enable scene support in your app, iOS always uses your scene delegates in iOS 13 and later. In iOS 12 and earlier, the system uses your app delegate.
 
-##### Respond to scene-based life-cycle events
+### Respond to scene-based life-cycle events
 
 UIKit delivers separate life-cycle events for each scene. A scene represents one instance of your app’s UI running on a device. A person can create multiple scenes for each app, and show and hide them separately. Because each scene has its own life cycle, each can be in a different state of execution. For example, one scene might be in the foreground while others are in the background or are suspended.
 
@@ -34,7 +34,7 @@ Use scene transitions to perform the following tasks:
 - At scene disconnection, clean up any shared resources associated with the scene.
 - In addition to scene-related events, you must also respond to the launch of your app using your [`UIApplicationDelegate`](./uiapplicationdelegate.md) object. For information about what to do at app launch, see [Responding to the launch of your app](./responding-to-the-launch-of-your-app.md).
 
-##### Respond to app-based life-cycle events
+### Respond to app-based life-cycle events
 
 In iOS 12 and earlier, UIKit delivers all life-cycle events to the [`UIApplicationDelegate`](./uiapplicationdelegate.md) object. The app delegate manages all of your app’s windows, including those displayed on separate screens. As a result, app state transitions affect your app’s entire UI, including content on external displays.
 
@@ -50,7 +50,7 @@ Use app transitions to perform the following tasks:
 - Upon entering the background state, finish crucial tasks, free up as much memory as possible, and prepare for your app snapshot. See [Preparing your UI to run in the background](./preparing-your-ui-to-run-in-the-background.md).
 - At termination, stop all work immediately and release any shared resources. See [`applicationWillTerminate(_:)`](./uiapplicationdelegate/applicationwillterminate%28_%29.md).
 
-##### Respond to other significant events
+### Respond to other significant events
 
 In addition to handling life-cycle events, apps must also be prepared to handle the events listed in the following table. Use your [`UIApplicationDelegate`](./uiapplicationdelegate.md) object to handle most of these events. In some cases, you may also be able to handle them using notifications, allowing you to respond from other parts of your app.
 

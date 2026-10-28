@@ -24,7 +24,7 @@ var overallProgress: Float { get }
 @property (readonly) float overallProgress;
 ```
 
-#### Discussion
+## Discussion
 
 Returns a float value between 0.0 and 1.0 representing the overall progress. This is calculated as the average progress of all tracks weighted by their durations.
 

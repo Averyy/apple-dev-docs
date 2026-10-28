@@ -25,7 +25,7 @@ func CVPixelBufferGetHeightOfPlane(_ pixelBuffer: CVPixelBuffer, _ planeIndex: I
 extern size_t CVPixelBufferGetHeightOfPlane(CVPixelBufferRef pixelBuffer, size_t planeIndex);
 ```
 
-#### Return Value
+## Return Value
 
 The height of the buffer, in pixels, or `0` for nonplanar pixel buffers.
 

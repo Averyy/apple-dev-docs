@@ -15,13 +15,13 @@ The request body for creating a new ad group.
 object AdGroupCreate
 ```
 
-#### Discussion
+## Discussion
 
 The `AdGroupCreate` object is the request payload for creating a new ad group via `POST /v1/adgroups` ([`Create an Ad Group`](./post-adgroups.md)).
 
 You can’t create keywords or negative keywords inline. Create the ad group first, then add keywords and negative keywords with separate calls.
 
-##### Example
+### Example
 
 ```json
 {

@@ -26,7 +26,7 @@ class CMSensorRecorder
 
 - [Getting movement disorder symptom data](./getting-movement-disorder-symptom-data.md)
 
-#### Overview
+## Overview
 
 Use a sensor recorder to initiate the gathering of accelerometer data. Later, use the sensor recorder to fetch the recorded data so you can analyze it. You might use the recorded data to assess specific types of motion and incorporate the results into your app.
 

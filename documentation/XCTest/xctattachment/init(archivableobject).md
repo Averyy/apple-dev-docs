@@ -16,7 +16,7 @@ convenience init(archivableObject object: any NSSecureCoding)
 + (instancetype) attachmentWithArchivableObject:(id<NSSecureCoding>) object;
 ```
 
-#### Discussion
+## Discussion
 
 Creates an attachment with a [`uniformTypeIdentifier`](./uniformtypeidentifier.md) of `"``public.data"`.
 

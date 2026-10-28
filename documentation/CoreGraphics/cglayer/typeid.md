@@ -25,7 +25,7 @@ class var typeID: CFTypeID { get }
 extern CFTypeID CGLayerGetTypeID();
 ```
 
-#### Discussion
+## Discussion
 
 A type identifier is an integer that identifies the opaque type to which a Core Foundation object belongs. You use type IDs in various contexts, such as when you are operating on heterogeneous collections.
 

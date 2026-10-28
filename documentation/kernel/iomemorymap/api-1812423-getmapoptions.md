@@ -11,11 +11,11 @@ Accessor to the options the mapping was created with.
 virtual IOOptionBits getMapOptions();
 ```
 
-#### Return Value
+## Return Value
 
 Options for the mapping, including cache settings.
 
-#### Overview
+## Overview
 
 This method returns the options to IOMemoryDescriptor::map the mapping was created with.
 

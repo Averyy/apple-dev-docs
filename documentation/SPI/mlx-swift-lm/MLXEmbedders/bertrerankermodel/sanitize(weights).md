@@ -17,7 +17,7 @@ Maps external weight names (e.g., from Hugging Face) to this class’s internal 
 func sanitize(weights: [String : MLXArray]) -> [String : MLXArray]
 ```
 
-#### Discussion
+## Discussion
 
 This is essential for loading pre-trained weights, as it renames keys like `attention.output.dense` to `attention.out_proj`.
 

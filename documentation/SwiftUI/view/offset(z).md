@@ -16,7 +16,7 @@ Brings a view forward in Z by the provided distance in points.
 nonisolated func offset(z: CGFloat) -> some View
 ```
 
-#### Return Value
+## Return Value
 
 A view that is extruded forward in Z by `z`.
 

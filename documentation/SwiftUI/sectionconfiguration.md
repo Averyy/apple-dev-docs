@@ -21,7 +21,7 @@ Specifies the contents of a section.
 struct SectionConfiguration
 ```
 
-#### Overview
+## Overview
 
 A `SectionConfiguration` includes the content of the section, as well as its header and footer.
 

@@ -25,11 +25,11 @@ func CGPDFScannerScan(_ scanner: CGPDFScannerRef) -> Bool
 extern bool CGPDFScannerScan(CGPDFScannerRef scanner);
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../Swift/true.md) if the entire stream is parsed successfully; [`false`](../Swift/false.md) if parsing fails (for example, if the stream data is corrupted).
 
-#### Discussion
+## Discussion
 
 The function [`CGPDFScannerScan(_:)`](./cgpdfscannerscan%28_%29.md) parses the PDF content stream associated with the scanner. Each time Core Graphics parses a PDF operator for which you register a callback, Core Graphics invokes your callback.
 

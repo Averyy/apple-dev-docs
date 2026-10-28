@@ -9,7 +9,7 @@
 virtual void removeFromQ();
 ```
 
-#### Overview
+## Overview
 
 Removes command from current queue.
 

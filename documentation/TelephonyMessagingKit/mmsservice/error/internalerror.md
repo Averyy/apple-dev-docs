@@ -15,7 +15,7 @@ The framework encountered an unknown internal error.
 case internalError
 ```
 
-#### Discussion
+## Discussion
 
 You can handle this error by making another attempt to send the MMS message later.
 

@@ -19,11 +19,11 @@ func availableType(from types: [NSPasteboard.PasteboardType]) -> NSPasteboard.Pa
 - (NSPasteboardType) availableTypeFromArray:(NSArray<NSString *> *) types;
 ```
 
-#### Return Value
+## Return Value
 
 The first (according to the sender’s ordering of `types`) type in `types` contained in the pasteboard item, or `nil` if the receiver does not contain any types given in `types`.
 
-#### Discussion
+## Discussion
 
 The method checks for UTI conformance of the requested types, preferring an exact match to conformance.
 

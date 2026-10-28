@@ -25,11 +25,11 @@ object CertificatePEM
 
 - [Implementing Platform SSO during Automated Device Enrollment](./implementing-platform-sso-during-automated-device-enrollment.md)
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.security.pem` as the payload type.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |
@@ -41,7 +41,7 @@ Specify `com.apple.security.pem` as the payload type.
 | Allowed in user enrollment | iOS, macOS, visionOS |
 | Allow multiple payloads | iOS, macOS, Shared iPad, tvOS, visionOS, watchOS |
 
-##### Example profile
+### Example profile
 
 ```plist
 <?xml version="1.0" encoding="UTF-8"?>

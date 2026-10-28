@@ -16,7 +16,7 @@ A value that defines a specific model version intended to be run in parallel wit
 case specific(versionNumber: String)
 ```
 
-#### Discussion
+## Discussion
 
 You can use this to enable validation of or update your your internal server-side risk model to adapt to changes to weights that incorporate this insight.
 

@@ -19,7 +19,7 @@ func orderOut(_ sender: Any?)
 - (void) orderOut:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 If the window is the key or main window, the window object immediately behind it is made key or main in its place. Calling [`orderOut(_:)`](./orderout%28_%29.md) causes the window to be removed from the screen, but does not cause it to be released. See the [`close()`](./close%28%29.md) method for information on when a window is released. Calling [`orderOut(_:)`](./orderout%28_%29.md) on a child window causes the window to be removed from its parent window before being removed.
 

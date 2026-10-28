@@ -21,7 +21,7 @@ Returns all entities of the scene which pass the query.
 @preconcurrency func performQuery(_ query: EntityQuery) -> QueryResult<Entity>
 ```
 
-#### Discussion
+## Discussion
 
 When in [`update(context:)`](../system/update%28context%29.md), call [`entities(matching:updatingSystemWhen:)`](../sceneupdatecontext/entities%28matching,updatingsystemwhen%29.md) instead of `performQuery`. This allows the [`System`](../system.md) to sleep on some platforms when there is no matching component, reducing unnecessary work.
 

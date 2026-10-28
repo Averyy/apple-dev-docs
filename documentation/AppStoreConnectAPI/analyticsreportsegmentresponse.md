@@ -15,7 +15,7 @@ The response body for endpoints that read a single downloadable segment of an an
 object AnalyticsReportSegmentResponse
 ```
 
-#### Discussion
+## Discussion
 
 Use this object with [`Read the Details for a Report Segment`](./get-v1-analyticsreportsegments-_id_.md).
 

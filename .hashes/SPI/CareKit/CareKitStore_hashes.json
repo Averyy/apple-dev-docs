@@ -12490,8 +12490,11 @@
     }
   },
   "metadata": {
+    "gone_links": [
+      "https://swiftpackageindex.com/carekit-apple/CareKit/main/documentation/carekitstore/ockstore/1"
+    ],
     "render": {
-      "version": 3
+      "version": 4
     },
     "total_pages": 3122
   }

@@ -23,7 +23,7 @@ optional func tabs(for context: WKWebExtensionContext) -> [any WKWebExtensionTab
 - (NSArray<id<WKWebExtensionTab>> *) tabsForWebExtensionContext:(WKWebExtensionContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to an empty array if not implemented.
 

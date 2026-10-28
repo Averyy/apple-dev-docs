@@ -24,7 +24,7 @@ func child(at index: Int) -> PDFOutline?
 - (PDFOutline *) childAtIndex:(NSUInteger) index;
 ```
 
-#### Discussion
+## Discussion
 
 The index is zero-based. This method throws an exception if `index` is out of range.
 

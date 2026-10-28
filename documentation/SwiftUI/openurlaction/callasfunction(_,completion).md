@@ -21,7 +21,7 @@ Asynchronously opens a URL, following system conventions.
 @preconcurrency func callAsFunction(_ url: URL, completion: @escaping (Bool) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t call this method directly. SwiftUI calls it when you call the [`OpenURLAction`](../openurlaction.md) structure that you get from the [`Environment`](../environment.md), using a URL and a completion handler as arguments:
 

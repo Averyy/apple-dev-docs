@@ -15,11 +15,11 @@ Gets a Boolean value that indicates whether the device is hidden.
 bool GetIsHidden();
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the device is hidden; `false` otherwise.
 
-#### Discussion
+## Discussion
 
 This value defaults to `false` when the device initializes.
 

@@ -21,7 +21,7 @@ The informative log level.
 static let info: OSLogType
 ```
 
-#### Discussion
+## Discussion
 
 Logging a message of this type is equivalent to calling the [`os_log_info`](../os_log_info.md) function. Use this level to capture information that may be helpful, but not essential, for troubleshooting errors.
 

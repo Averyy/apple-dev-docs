@@ -14,7 +14,7 @@
 kCMIOSampleBufferDiscontinuityFlag_ClientSyncDiscontinuity
 ```
 
-#### Discussion
+## Discussion
 
 (As in another picture in the same MPEG-2 GOP) exhibits a discontinuity.
 

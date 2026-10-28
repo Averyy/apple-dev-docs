@@ -27,7 +27,7 @@ func CFWriteStreamGetError(_ stream: CFWriteStream!) -> CFStreamError
 extern CFStreamError CFWriteStreamGetError(CFWriteStreamRef stream);
 ```
 
-#### Return Value
+## Return Value
 
 The error status of `stream` returned in a CFStreamError structure.
 

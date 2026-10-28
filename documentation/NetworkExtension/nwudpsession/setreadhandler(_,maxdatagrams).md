@@ -26,7 +26,7 @@ func setReadHandler(_ handler: @escaping ([Data]?, (any Error)?) -> Void, maxDat
 - (void) setReadHandler:(void (^)(NSArray<NSData *> *datagrams, NSError *error)) handler maxDatagrams:(NSUInteger) maxDatagrams;
 ```
 
-#### Discussion
+## Discussion
 
 Reads will be scheduled by the system, so this method only needs to be called once for a session.
 

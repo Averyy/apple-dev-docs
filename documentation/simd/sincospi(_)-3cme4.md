@@ -20,7 +20,7 @@ Returns the sine and cosine of each element in a vector multiplied by pi.
 func sincospi(_ x: simd_float8) -> (sin: simd_float8, cos: simd_float8)
 ```
 
-#### Return Value
+## Return Value
 
 A two-element tuple. The first element contains the sines, and the second element contains the cosines.
 

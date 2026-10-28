@@ -20,7 +20,7 @@ An array of strings that indicates the wireless technologies AccessorySetupKit u
 - `Bluetooth`: Include this string if your app uses Bluetooth to set up accessories.
 - `WiFi`: Include this string if your app uses Wi-Fi to set up accessories.
 
-#### Discussion
+## Discussion
 
 If you use the `Bluetooth` value in your array, also add the following keys and values to your information property list:
 

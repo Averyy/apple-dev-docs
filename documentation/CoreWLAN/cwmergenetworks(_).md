@@ -19,7 +19,7 @@ func CWMergeNetworks(_ networks: Set<CWNetwork>) -> Set<CWNetwork>
 NSSet<CWNetwork *> *CWMergeNetworks(NSSet<CWNetwork *> *networks);
 ```
 
-#### Discussion
+## Discussion
 
 Duplicate networks are defined as networks with the same SSID, security type, and BSS type. When duplicates are found, the network with the best RSSI value will remain.
 

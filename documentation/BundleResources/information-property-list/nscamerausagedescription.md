@@ -22,7 +22,7 @@ A message that tells people why the app is requesting access to the device’s c
 
 - [Requesting Authorization for Media Capture on macOS](../requesting-authorization-for-media-capture-on-macos.md)
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This key is required if your app uses APIs that access the device’s camera.
 

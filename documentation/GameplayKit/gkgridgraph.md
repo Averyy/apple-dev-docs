@@ -24,7 +24,7 @@ class GKGridGraph<NodeType> where NodeType : GKGridGraphNode
 @interface GKGridGraph : GKGraph
 ```
 
-#### Overview
+## Overview
 
 Use this class to generate a graph containing [`GKGridGraphNode`](./gkgridgraphnode.md) objects representing a specified grid. Then use methods of the superclass [`GKGraph`](./gkgraph.md) to find routes through the graph.
 

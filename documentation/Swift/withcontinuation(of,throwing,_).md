@@ -18,15 +18,15 @@ Invokes the passed in closure with a non-copyable continuation for the current t
 ## Declaration
 
 ```swift
-nonisolated
-(nonsending) func withContinuation<Success, Failure>(of: Success.Type = Success.self, throwing: Failure.Type, _ body: (consuming Continuation<Success, Failure>) -> Void) async throws(Failure) -> sending Success where Failure : Error, Success : ~Copyable
+nonisolated(nonsending)
+func withContinuation<Success, Failure>(of: Success.Type = Success.self, throwing: Failure.Type, _ body: (consuming Continuation<Success, Failure>) -> Void) async throws(Failure) -> sending Success where Failure : Error, Success : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 The value the continuation is resumed with
 
-#### Discussion
+## Discussion
 
 The body of the closure executes synchronously on the calling task, and once it returns the calling task is suspended. It is possible to immediately resume the task, or escape the continuation in order to complete it afterwards, which will then resume the suspended task.
 

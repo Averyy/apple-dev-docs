@@ -25,7 +25,7 @@ func CFBridgingRetain(_ X: Any?) -> CFTypeRef?
 static CFTypeRefCFBridgingRetain(id X);
 ```
 
-#### Discussion
+## Discussion
 
 You use this function to cast an Objective-C object as Core Foundation-style object and take ownership of the object so that you can manage its lifetime. You are responsible for subsequently releasing the object, as illustrated in this example:
 

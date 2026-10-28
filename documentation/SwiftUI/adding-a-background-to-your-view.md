@@ -5,11 +5,11 @@
 
 Compose a background behind your view and extend it beyond the safe area insets.
 
-#### Overview
+## Overview
 
 You can add a view as a background with the [`background(alignment:content:)`](./view/background%28alignment,content%29.md) view modifier. To add a background under multiple views, or to have a background larger than an existing view, you can layer the views by placing them within a [`ZStack`](./zstack.md), and place the view you want to be in the background at the bottom of the view stack. You can specify that a background view should ignore the safe area insets to extend the background to some or all edges.
 
-##### Add a background
+### Add a background
 
 If your design calls for a background, you can use the [`background(alignment:content:)`](./view/background%28alignment,content%29.md) modifier to add it underneath an existing view. The following example adds a gradient to the vertical stack using the [`background(alignment:content:)`](./view/background%28alignment,content%29.md) view modifier:
 
@@ -46,7 +46,7 @@ The [`background(alignment:content:)`](./view/background%28alignment,content%29.
 
 ![A screenshot of an iPhone showing a gradient background for the welcome title, text field, and button in the horizontal stack, not filling in the rest of the phone’s background.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Adding-a-Background-to-Your-View-1@2x.png)
 
-##### Expand the background underneath your view
+### Expand the background underneath your view
 
 To create a background that’s larger than the vertical stack, use a different technique. You could add [`Spacer`](./spacer.md) views above and below the content in the [`VStack`](./vstack.md) to expand it, but that would also expand the size of the stack, possibly changing it’s layout. To add in a larger background without changing the size of the stack, nest the views within a [`ZStack`](./zstack.md) to layer the [`VStack`](./vstack.md) over the background view:
 
@@ -81,7 +81,7 @@ View sizes within a depth stack are independent, unlike when using the backgroun
 
 For more information on usings stacks to combine views, see [Building layouts with stack views](./building-layouts-with-stack-views.md).
 
-##### Extend the background into the safe areas
+### Extend the background into the safe areas
 
 By default, SwiftUI sizes and positions views to avoid system defined safe areas to ensure that system content or the edges of the device won’t obstruct your views. If your design calls for the background to extend to the screen edges, use the [`ignoresSafeArea(_:edges:)`](./view/ignoressafearea%28_,edges%29.md) modifier to override the default.
 
@@ -114,7 +114,7 @@ The background gradient fills the display area of the device and ignores the saf
 
 ![A screenshot of an iPhone showing a gradient background filling the entire background.](https://developer.apple.com/tutorials/images/com.apple.SwiftUI/Adding-a-Background-to-Your-View-3@2x.png)
 
-##### Adjust views when displaying the keyboard
+### Adjust views when displaying the keyboard
 
 You can ignore the keyboard’s safe area by adding the [`ignoresSafeArea(_:edges:)`](./view/ignoressafearea%28_,edges%29.md) modifier. When you activate the keyboard, the content of the vertical stack remains fixed, ignoring the space used by the keyboard:
 

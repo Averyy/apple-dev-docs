@@ -10,13 +10,13 @@ Adapt the content of your app for the current viewer by using an entitlement and
 - tvOS 15.0+
 - Xcode 14.0+
 
-#### Overview
+## Overview
 
 This sample demonstrates how to reduce configuration dialogs for people who share an Apple TV and a service account, such as a family media subscription. To let people get to your content more directly, your app should save shared login information where it can access the credentials regardless of the current user, and your code should also remember which profile to load for each user.
 
 > **Note**: This sample code project is associated with WWDC22 session 110384: [Support multiple users in tvOS apps](https://developer.apple.com/wwdc22/110384/).
 
-##### Configure the sample code project
+### Configure the sample code project
 
 Before you run the sample code project in Xcode:
 
@@ -24,7 +24,7 @@ Before you run the sample code project in Xcode:
 - Add users by choosing Settings > Users and Accounts > Add New User.
 - To switch TV users, press and hold the TV button on your remote or choose Settings > Users and Accounts > Switch Current User.
 
-##### Run as the current user
+### Run as the current user
 
 Apple TV supports multiple users. To opt-in to keeping separate data for each user, add the [User Management Entitlement](../BundleResources/entitlements/com.apple.developer.user-management.md) to your app or app extension, with the value `runs-as-current-user-with-user-independent-keychain`.
 
@@ -37,7 +37,7 @@ Apple TV supports multiple users. To opt-in to keeping separate data for each us
 
 > **Note**: This entitlement value grants your app per-user data storage on tvOS 16 and higher but maintains single-user behavior on tvOS 15 or earlier.
 
-##### Save each user’s profile
+### Save each user’s profile
 
 When your app or extension is running on tvOS 16 with multiple Apple TV users, you can store each person’s preferred profile directly with an API such as [`UserDefaults`](../Foundation/userdefaults.md) or CloudKit; the system separates the data for each Apple TV user. Your code doesn’t have to handle any data partitioning.
 
@@ -57,7 +57,7 @@ private var selectedProfileIdentifier: String? {
 
 The sample only attempts to save the selected profile when running on tvOS 16 or later; it doesn’t run as the current user on tvOS 15 or earlier. It also checks [`shouldStorePreferencesForCurrentUser`](./tvusermanager/shouldstorepreferencesforcurrentuser.md) before saving to avoid remembering the selected profile in case there aren’t multiple users on the Apple TV.
 
-##### Skip the profile-picker dialog
+### Skip the profile-picker dialog
 
 This sample app can skip the interstitial profile-picker dialog whenever a person who already has a saved profile launches the app.
 
@@ -79,7 +79,7 @@ private func presentProfilePickerIfNeeded() {
 
 The sample still presents the profile picker if the Apple TV doesn’t have multiple users, the current user doesn’t have a saved profile, or the app is running on tvOS 15 or earlier.
 
-##### Store shared login credentials in the user-independent Keychain
+### Store shared login credentials in the user-independent Keychain
 
 Another interstitial dialog that can get in the way of the content is the sign-in screen. Keychain data is automatically separated for each Apple TV user. To avoid having each user sign in individually, tvOS 16 adds a new Keychain API: [`kSecUseUserIndependentKeychain`](../Security/ksecuseuserindependentkeychain.md).
 

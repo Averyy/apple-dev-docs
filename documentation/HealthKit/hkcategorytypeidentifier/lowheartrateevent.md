@@ -24,7 +24,7 @@ static let lowHeartRateEvent: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierLowHeartRateEvent;
 ```
 
-#### Discussion
+## Discussion
 
 The system creates [`lowHeartRateEvent`](./lowheartrateevent.md) samples whenever Apple Watch produces a low heart rate notification. For more information, see [Heart rate notifications on your Apple Watch](https://support.apple.com/en-us/HT208931).
 

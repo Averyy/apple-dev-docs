@@ -28,7 +28,7 @@ extern HKQuantityTypeIdentifier const HKQuantityTypeIdentifierSwimmingStrokeCoun
 
 - [Dividing a HealthKit workout into activities](../dividing-a-healthkit-workout-into-activities.md)
 
-#### Discussion
+## Discussion
 
 These samples use count units (described in [`HKUnit`](../hkunit.md)) and measure cumulative values (described in [`HKQuantityAggregationStyle`](../hkquantityaggregationstyle.md)).
 

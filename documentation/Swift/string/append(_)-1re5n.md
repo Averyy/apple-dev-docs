@@ -21,7 +21,7 @@ Adds an element to the end of the collection.
 mutating func append(_ newElement: Self.Element)
 ```
 
-#### Discussion
+## Discussion
 
 If the collection does not have sufficient capacity for another element, additional storage is allocated before appending `newElement`. The following example adds a new number to an array of integers:
 

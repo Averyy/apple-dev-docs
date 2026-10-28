@@ -23,11 +23,11 @@ Creates a view that represents the body of a subscription store control.
 @MainActor @preconcurrency func makeBody(configuration: Self.Configuration) -> Self.Body
 ```
 
-#### Return Value
+## Return Value
 
 A view which provides UI controls to subscribe to a subscription service.
 
-#### Discussion
+## Discussion
 
 Implement this method to define a custom subscription store control style which conforms to the [`SubscriptionStoreControlStyle`](../subscriptionstorecontrolstyle.md). Use the `configuration` input — a value of [`SubscriptionStoreControlStyleConfiguration`](../subscriptionstorecontrolstyleconfiguration.md) — to access the collection of subscription options to merchandise, and other properties of the controls. Return a view that provides controls for someone to choose an option from the configuration and subscribe. The following code example defines a style that adds price comparison captions to buttons:
 
@@ -80,7 +80,7 @@ Whenever any of the properties of `configuration` change, the system calls your 
 
 The above example provides a button per plan, but not all control styles need to work this way. For example, you could combine multiple controls together with buttons, such as [`Picker`](../../SwiftUI/picker.md) or [`Toggle`](../../SwiftUI/toggle.md), and use state to implement more complicated interactions.
 
-##### Modifying subviews of standard control styles
+### Modifying subviews of standard control styles
 
 The `PriceComparisonButtonsSubscriptionStoreControlStyle` in the example code above uses the [`Button`](../../SwiftUI/button.md) type to add buttons, but you can also use the [`SubscriptionStoreButton`](../subscriptionstorebutton.md) view to modify the standard subscribe button. When within the scope of a type conforming to [`SubscriptionStoreControlStyle`](../subscriptionstorecontrolstyle.md), you can simply spell this view as `SubscribeButton`.
 

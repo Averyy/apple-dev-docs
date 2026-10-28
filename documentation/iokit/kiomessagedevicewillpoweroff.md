@@ -17,7 +17,7 @@
 #define kIOMessageDeviceWillPowerOff
 ```
 
-#### Discussion
+## Discussion
 
 Indicates the device is about to move to a lower power state. Sent to IOKit interest notification clients of type `kIOAppPowerStateInterest` and `kIOGeneralInterest`.
 

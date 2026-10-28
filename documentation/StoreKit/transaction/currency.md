@@ -22,7 +22,7 @@ The currency of the price of the product.
 var currency: Locale.Currency? { get }
 ```
 
-#### Discussion
+## Discussion
 
 The [`currency`](./currency.md) property represents the currency of the product’s [`price`](./price.md) that the system records at the time of purchase.
 

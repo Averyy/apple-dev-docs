@@ -15,11 +15,11 @@ Selects a new configuration for the device.
 virtual kern_return_t SetConfiguration(uint8_t bConfigurationValue, bool matchInterfaces);
 ```
 
-#### Return Value
+## Return Value
 
 [`kIOReturnSuccess`](../../DriverKit/kioreturnsuccess.md) on success, or another value if an error occurs. See [Error Codes](../../DriverKit/error-codes.md).
 
-#### Discussion
+## Discussion
 
 This method terminates all previously configured child interfaces and sets the new configuration for the device. This method sends a `SET_CONFIGURATION` control request (USB 2.0, section 9.4.7) to the device. When making the `GET_DESCRIPTOR` control request, this method acquires the service’s workloop lock and may call [`commandSleep`](../../kernel/iocommandgate/api-1573818-commandsleep.md).
 

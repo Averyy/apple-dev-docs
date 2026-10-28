@@ -19,7 +19,7 @@ func resignFocus()
 - (void) resignFocus;
 ```
 
-#### Discussion
+## Discussion
 
 If the volume control is inside a scrollable view, resigning the focus enables scrolling with the Digital Crown.
 

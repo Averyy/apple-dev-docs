@@ -21,7 +21,7 @@ A circular curve that starts out quickly, then slows down as it approaches the e
 static let circularEaseOut: UnitCurve
 ```
 
-#### Discussion
+## Discussion
 
 The shape of the curve is equal to the second (top left) quadrant of a unit circle.
 

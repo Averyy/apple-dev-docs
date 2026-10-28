@@ -25,7 +25,7 @@ func CFConvertDoubleHostToSwapped(_ arg: Double) -> CFSwappedFloat64
 static CFSwappedFloat64 CFConvertDoubleHostToSwapped(double arg);
 ```
 
-#### Return Value
+## Return Value
 
 A structure holding the real value in a canonical byte order.
 

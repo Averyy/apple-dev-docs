@@ -12,7 +12,7 @@ virtual void setIdleAudioSleepTime(
  unsigned long longsleepDelay);
 ```
 
-#### Overview
+## Overview
 
 This is useful if the device will want to power down its hardware into an idle sleep state, but doesn't want to do that unless audio hasn't been used for a while. Calling this function immediately changes the idle sleep timer and queues it up if the idle is different from the previous idle time. The idle time defaults to 0, which means be called immediately (backwards compatible with previous versions of IOAudioFamily). A value of 0xffffffffffffffffULL means don't ever tell the driver about going idle.
 

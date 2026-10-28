@@ -28,11 +28,11 @@ OSStatus SSLWrite(SSLContextRef context, const void *data, size_t dataLength, si
 
 - [Using the Secure Socket Layer for Network Communication](./using-the-secure-socket-layer-for-network-communication.md)
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Transport Result Codes](./secure-transport-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The [`SSLWrite(_:_:_:_:)`](./sslwrite%28_,_,_,_%29.md) function might call the [`SSLWriteFunc`](./sslwritefunc.md) function that you provide (see [`SSLSetIOFuncs(_:_:_:)`](./sslsetiofuncs%28_,_,_%29.md)). Because you may configure the underlying connection to operate in a no-blocking manner, a write operation might return `errSSLWouldBlock`, indicating that less data than requested was actually transferred. In this case, you should repeat the call to [`SSLWrite(_:_:_:_:)`](./sslwrite%28_,_,_,_%29.md) until some other result is returned.
 

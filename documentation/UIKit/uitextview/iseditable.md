@@ -22,7 +22,7 @@ var isEditable: Bool { get set }
 @property (nonatomic, getter=isEditable) BOOL editable;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is [`true`](../../Swift/true.md).
 

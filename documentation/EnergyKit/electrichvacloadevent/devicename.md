@@ -17,7 +17,7 @@ A human-readable name for the device.
 var deviceName: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 Set a String value that meets these criteria:
 

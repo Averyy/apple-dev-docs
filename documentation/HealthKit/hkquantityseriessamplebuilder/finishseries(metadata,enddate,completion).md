@@ -28,7 +28,7 @@ func finishSeries(metadata: [String : Any]?, endDate: Date?) async throws -> [HK
 - (void) finishSeriesWithMetadata:(NSDictionary<NSString *,id> *) metadata endDate:(NSDate *) endDate completion:(void (^)(NSArray<__kindof HKQuantitySample *> *samples, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call [`finishSeries(metadata:endDate:completion:)`](./finishseries%28metadata,enddate,completion%29.md) after inserting all the quantities for the series. The series builder then creates one or more samples to represent the series, saves the samples to the HealthKit store, and then passes them to the completion handler.
 

@@ -5,7 +5,7 @@
 
 Anchor a prim to a real-world object that the runtime recognizes in the physical environment.
 
-#### Overview
+## Overview
 
 When the runtime detects real-world landmarks such as surfaces, images, and faces, it keeps tabs on them in case the app needs to refer to them later as data points for adding virtual content. To track a landmark, the runtime assigns an anchor and updates it to track the orientation and position of that landmark while it’s visible in the camera feed.
 
@@ -13,7 +13,7 @@ Use this schema to attach prims to anchors that the runtime can recognize and tr
 
 > **Note**:  When a RealityKit app loads an anchored prim with `loadAnchor(named:in:)`, RealityKit instantiates an [`AnchorEntity`](../RealityKit/anchorentity.md) with the [`AnchoringComponent.Target`](../RealityKit/anchoringcomponent/target-swift.enum.md) set to the anchor type specified by the prim, such as a plane, image, or face.
 
-##### Place a prim on a surface, image, or face
+### Place a prim on a surface, image, or face
 
 The following cube requests that the runtime place it on the first real-world horizontal surface detected in the physical environment.
 

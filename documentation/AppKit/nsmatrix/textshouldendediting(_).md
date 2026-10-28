@@ -19,11 +19,11 @@ func textShouldEndEditing(_ textObject: NSText) -> Bool
 - (BOOL) textShouldEndEditing:(NSText *) textObject;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the text object should proceed to finish editing and resign first responder status. If the delegate returns [`false`](../../Swift/false.md), the text object selects all of its text and remains the first responder.
 
-#### Discussion
+## Discussion
 
 The [`NSMatrix`](../nsmatrix.md) method returns [`false`](../../Swift/false.md) if the text field contains invalid contents; otherwise it returns the value passed back from [`control(_:textShouldEndEditing:)`](../nscontroltexteditingdelegate/control%28_,textshouldendediting%29.md).
 

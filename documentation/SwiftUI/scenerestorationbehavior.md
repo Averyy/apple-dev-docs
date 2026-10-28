@@ -21,7 +21,7 @@ The restoration behavior for a scene.
 struct SceneRestorationBehavior
 ```
 
-#### Overview
+## Overview
 
 Use the [`restorationBehavior(_:)`](./scene/restorationbehavior%28_%29.md) scene modifier to apply a value of this type to a [`Scene`](./scene.md) you define in your [`App`](./app.md) declaration. The value you specify determines how the system will restore windows from a previous run of your application.
 

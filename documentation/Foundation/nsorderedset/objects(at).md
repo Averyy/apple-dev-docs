@@ -25,11 +25,11 @@ func objects(at indexes: IndexSet) -> [Any]
 - (NSArray<id> *) objectsAtIndexes:(NSIndexSet *) indexes;
 ```
 
-#### Return Value
+## Return Value
 
 The returned objects are in the ascending order of their indexes in indexes, so that object in returned ordered set with higher index in indexes will follow the object with smaller index in indexes.
 
-#### Discussion
+## Discussion
 
 Raises an [`rangeException`](../nsexceptionname/rangeexception.md) if any location in indexes exceeds the bounds of the array, of if `indexes` is `nil`.
 

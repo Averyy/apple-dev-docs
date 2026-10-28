@@ -13,9 +13,9 @@ Read analytics report requests for a specific app.
 
 - [Downloading Analytics Reports](./downloading-analytics-reports.md)
 
-#### Discussion
+## Discussion
 
-##### Examples Request and Response
+### Examples Request and Response
 
 **Request**:
 

@@ -24,7 +24,7 @@ var tessellationFactorFormat: MTLTessellationFactorFormat { get set }
 @property (nonatomic, readwrite) MTLTessellationFactorFormat tessellationFactorFormat;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`MTLTessellationFactorFormat.half`](../mtltessellationfactorformat/half.md).
 

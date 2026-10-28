@@ -27,7 +27,7 @@ subscript<K>(type: K.Type) -> some Sequence<Optional<K.Value>> where K : Attribu
 subscript<K>(type: KeyPath<AttributeDynamicLookup, K>) -> some Sequence<Optional<K.Value>> where K : AttributedStringKey, K.Value : Sendable { get }
 ```
 
-#### Overview
+## Overview
 
 In the case of a range selection, the returned sequence is based on the runs of the specified attribute, not the runs over all attributes.
 

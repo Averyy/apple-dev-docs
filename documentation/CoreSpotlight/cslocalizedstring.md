@@ -23,7 +23,7 @@ class CSLocalizedString
 @interface CSLocalizedString : NSString
 ```
 
-#### Overview
+## Overview
 
 The `CSLocalizedString` class helps you localize text in searchable items. You can use a `CSLocalizedString` object in place of an [`NSString`](../Foundation/nsstring.md) object to display localized text in search results related to your app.
 

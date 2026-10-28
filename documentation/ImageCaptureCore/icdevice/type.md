@@ -23,7 +23,7 @@ var type: ICDeviceType { get }
 @property (nonatomic, readonly) ICDeviceType type;
 ```
 
-#### Discussion
+## Discussion
 
 This property combines the device’s type, for example [`ICDeviceType.camera`](../icdevicetype/camera.md), with its location type, for example [`ICDeviceLocationType.bluetooth`](../icdevicelocationtype/bluetooth.md).
 

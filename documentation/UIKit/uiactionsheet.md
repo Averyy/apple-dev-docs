@@ -24,7 +24,7 @@ class UIActionSheet
 @interface UIActionSheet : UIView
 ```
 
-#### Overview
+## Overview
 
 In apps that target versions of iOS prior to iOS 8, use the [`UIActionSheet`](./uiactionsheet.md) class to present the user with a set of alternatives for how to proceed with a given task. You can also use action sheets to prompt the user to confirm a potentially dangerous action. The action sheet contains an optional title and one or more buttons, each of which corresponds to an action to take.
 
@@ -36,7 +36,7 @@ When presenting an action sheet on an iPad, there are times when you shouldn’t
 
 > ❗ **Important**:  In iOS 4 and later, action sheets aren’t dismissed automatically when an application moves to the background. This behavior differs from earlier versions of the operating system, where action sheets were automatically canceled (and their cancellation handler executed) as part of the termination sequence for the application. Now, it’s up to you to decide whether to dismiss the action sheet (and execute its cancellation handler) or leave it visible for when your application moves back to the foreground. Remember that your application can still be terminated while in the background, so some type of action may be necessary in either case.
 
-##### Subclassing notes
+### Subclassing notes
 
 [`UIActionSheet`](./uiactionsheet.md) isn’t designed to be subclassed, nor should you add views to its hierarchy. If you need to present a sheet with more customization than provided by the [`UIActionSheet`](./uiactionsheet.md) API, you can create your own and present it modally with [`present(_:animated:completion:)`](./uiviewcontroller/present%28_,animated,completion%29.md).
 

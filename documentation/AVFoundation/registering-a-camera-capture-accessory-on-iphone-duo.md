@@ -5,7 +5,7 @@
 
 Provide content to the person in front of the camera by pairing it with your capture interface.
 
-#### Overview
+## Overview
 
 Consider an app that records someone reading from a script. The person holding the device sees the capture interface, and the person in front of the camera sees nothing. They look away from the lens to read, or they memorize the script and lose the take. On iPhone Duo, an outer display faces the same way as the camera, so the app presents the script to the person who needs to read from it.
 
@@ -13,7 +13,7 @@ Consider an app that records someone reading from a script. The person holding t
 
 Your app declares the content as a [scene accessory](../UIKit/uisceneaccessory.md) and attaches it to the view that shows your capture interface. The system decides when and where to present it. Presentation happens while your app is in the foreground with an active capture session, while the capture interface runs on the inner display. Because the decision belongs to the system, treat accessory content as an enhancement.
 
-#### Decide what to show on the outer display
+## Decide what to show on the outer display
 
 Decide what the person in front of the camera needs to see while recording. For example, your app can scroll a script at a readable pace, count down before recording starts, or show how much of the subject the camera sees.
 
@@ -25,7 +25,7 @@ Consider the following before you design the content:
 
 Design your capture interface so it works when no outer display exists, and when the system presents nothing there. Accessory content enhances your app, and never carries a task your app can’t complete without it.
 
-#### Register content on your capture interface
+## Register content on your capture interface
 
 To scope content to the camera, register the accessory on the same view that shows your capture interface. The system presents your content only while that interface is onscreen, and stops when someone navigates away. Registration returns an object that reports whether the system can present the content. Later sections use that object to respond to availability and to turn the content off.
 
@@ -76,7 +76,7 @@ Hold a strong reference to the [`UISceneAccessoryRegistration`](../UIKit/uiscene
 
 The system assigns the session role for the accessory’s scene, and your app never sets it. Unlike ordinary window scenes, accessory scenes have no project-level configuration, so a scene manifest entry for one has no effect. If your scene delegate handles several kinds of scene, compare the session role against [`windowCameraCaptureAccessory`](../UIKit/uiscenesession/role-swift.struct/windowcameracaptureaccessory.md) to identify this one.
 
-#### Share state with your accessory content
+## Share state with your accessory content
 
 Your capture interface and your accessory content belong to the same capture session, so both need the same state. Rather than sending updates to your accessory content, give it the object your app already uses, and let each side read what it needs. A control the subject taps on the outer display then changes what the person holding the device sees, with no message passing in between.
 
@@ -128,7 +128,7 @@ class ScriptSceneDelegate: NSObject, UIWindowSceneDelegate {
 
 Keep a strong reference to the object you pass. The accessory identifies the object for the scene, and isn’t a place to store it.
 
-#### Respond to changes in availability
+## Respond to changes in availability
 
 Availability tells you whether the system can present your content, and only the system sets it. Turning the content on and off is your app’s decision, and the registration keeps the two separate. When the system can’t present anything, hide the outer display controls.
 
@@ -161,7 +161,7 @@ Availability changes for reasons your app doesn’t cause. The system presents t
 
 When the system can’t present anything, the registration stays inactive and availability stays false, which means one code path works everywhere. Accessories of different kinds never compete. An app that shows slides on a connected display can present capture content on the outer display at the same time.
 
-#### Let people turn the content off
+## Let people turn the content off
 
 Rather than unregistering the accessory, give people a control in your capture interface that turns the content off. Turning the content off says nothing about whether the system can present anything.
 
@@ -185,7 +185,7 @@ registration?.isEnabled = isScriptEnabled
 
 Accessory content is on by default. Turning it off dismisses the content, and the views come and go the way your main scene’s do. Keep any state that has to persist in your model rather than in the view that presents it.
 
-#### Test your accessory content on device
+## Test your accessory content on device
 
 Create your app’s accessory content from ordinary views, so you can check its layout in previews or in Simulator, and confirm that it reads the same state as your capture interface.
 

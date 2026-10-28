@@ -22,7 +22,7 @@ var eventStore: EKEventStore! { get set }
 @property (nonatomic, retain, null_unspecified) EKEventStore * eventStore;
 ```
 
-#### Discussion
+## Discussion
 
 This property must be set before displaying the view.
 

@@ -20,7 +20,7 @@ Executes the specified string as an asynchronous JavaScript function.
 @preconcurrency func callAsyncJavaScript(_ functionBody: String, arguments: [String : Any] = [:], in frame: WKFrameInfo? = nil, in contentWorld: WKContentWorld, completionHandler: (@MainActor @Sendable (Result<Any, any Error>) -> Void)? = nil)
 ```
 
-#### Discussion
+## Discussion
 
 Don’t format the string in the `functionBody` parameter as a function-like callable object, as you would in pure JavaScript. Instead, put only the body of the function in the string. For example, the following string shows a valid function body that takes `x`, `y`, and `z` arguments and returns a result.
 

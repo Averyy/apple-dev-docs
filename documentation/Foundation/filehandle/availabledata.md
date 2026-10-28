@@ -25,7 +25,7 @@ var availableData: Data { get }
 @property (copy, readonly) NSData * availableData;
 ```
 
-#### Discussion
+## Discussion
 
 The data currently available through the receiver, up to the maximum size that can be represented by an [`NSData`](../nsdata.md) object.
 

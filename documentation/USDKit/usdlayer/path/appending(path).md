@@ -20,7 +20,7 @@ Returns a new path with `newSuffix` appended.
 func appending(path newSuffix: USDLayer.Path) -> USDLayer.Path
 ```
 
-#### Return Value
+## Return Value
 
 A new path consisting of `self` followed by `newSuffix`.
 

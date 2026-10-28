@@ -15,11 +15,11 @@ Returns a list of URLs from which the data can be downloaded.
 OSStatus SecureDownloadCopyURLs(SecureDownloadRef downloadRef, CFArrayRef*urls);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Secure Download Result Codes](./secure-download-result-codes.md).
 
-#### Discussion
+## Discussion
 
 The first URL in the list is the preferred download location. The other URLs are backup locations in case earlier locations in the list can’t be accessed.
 

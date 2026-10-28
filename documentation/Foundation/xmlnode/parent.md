@@ -21,7 +21,7 @@ var parent: XMLNode? { get }
 @property (copy, readonly, nullable) NSXMLNode * parent;
 ```
 
-#### Discussion
+## Discussion
 
 Document nodes and standalone nodes (that is, the root of a detached branch of a tree) have no parent, and sending this message to them returns `nil`. A one-to-one relationship does not always exists between a parent and its children; although a namespace or attribute node cannot be a child, it still has a parent element.
 

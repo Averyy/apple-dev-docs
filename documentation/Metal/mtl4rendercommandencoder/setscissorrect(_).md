@@ -25,7 +25,7 @@ func setScissorRect(_ rect: MTLScissorRect)
 - (void) setScissorRect:(MTLScissorRect) rect;
 ```
 
-#### Discussion
+## Discussion
 
 Metal performs a scissor test and discards all fragments outside of the scissor rect.
 

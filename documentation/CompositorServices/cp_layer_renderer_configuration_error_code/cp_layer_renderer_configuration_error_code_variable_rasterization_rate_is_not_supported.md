@@ -16,7 +16,7 @@ An error that indicates foveation is enabled but not supported.
 cp_layer_renderer_configuration_error_code_variable_rasterization_rate_is_not_supported
 ```
 
-#### Discussion
+## Discussion
 
 Disable foveation in your layer’s configuration.
 

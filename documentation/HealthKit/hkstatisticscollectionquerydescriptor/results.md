@@ -20,7 +20,7 @@ An asynchronous sequence that emits updates from a statistics collection query.
 struct Results
 ```
 
-##### Creating an Iterator
+### Creating an Iterator
 
 - [`HKStatisticsCollectionQueryDescriptor.Results.Iterator`](./results/iterator.md)
 

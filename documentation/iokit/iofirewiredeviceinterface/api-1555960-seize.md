@@ -16,7 +16,7 @@ Seize control of device/unit
 IOReturn (*Seize)(IOFireWireLibDeviceRef self, IOOptionBits inFlags);
 ```
 
-#### Discussion
+## Discussion
 
 Allows a user space client to seize control of an in-kernel service even if that service has been Opened() by another client or in-kernel driver. This function should be used with care. Admin rights are required to use this function.
 

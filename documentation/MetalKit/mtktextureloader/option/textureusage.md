@@ -24,7 +24,7 @@ static let textureUsage: MTKTextureLoader.Option
 extern MTKTextureLoaderOption const MTKTextureLoaderOptionTextureUsage;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is an [`NSNumber`](../../../Foundation/nsnumber.md) object containing a [`MTLTextureUsage`](../../../Metal/mtltextureusage.md) value.
 

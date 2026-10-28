@@ -19,11 +19,11 @@
 static SPRay3DFloat SPRay3DFloatTranslate(SPRay3DFloat ray, SPVector3DFloat offset);
 ```
 
-#### Return Value
+## Return Value
 
 A ray that’s offset by the @p x, @p y, and @p z of the vector.
 
-#### Discussion
+## Discussion
 
 Returns a ray with an origin that is offset from that of the source ray.
 

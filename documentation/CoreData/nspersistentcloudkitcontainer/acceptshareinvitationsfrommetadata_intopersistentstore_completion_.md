@@ -21,7 +21,7 @@ Accepts one or more invitations to participate in sharing using the specified me
 - (void) acceptShareInvitationsFromMetadata:(NSArray<CKShareMetadata *> *) metadata intoPersistentStore:(NSPersistentStore *) persistentStore completion:(void (^)(NSArray<CKShareMetadata *> *acceptedShareMetadatas, NSError *acceptOperationError)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 The `completion` handler returns no value and takes the following parameters:
 

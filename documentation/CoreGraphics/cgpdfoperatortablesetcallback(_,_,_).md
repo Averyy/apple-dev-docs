@@ -25,7 +25,7 @@ func CGPDFOperatorTableSetCallback(_ table: CGPDFOperatorTableRef, _ name: Unsaf
 extern void CGPDFOperatorTableSetCallback(CGPDFOperatorTableRef table, const char *name, CGPDFOperatorCallback callback);
 ```
 
-#### Discussion
+## Discussion
 
 You call the function [`CGPDFOperatorTableSetCallback(_:_:_:)`](./cgpdfoperatortablesetcallback%28_,_,_%29.md) for each PDF operator for which you want to provide a callback. See Appendix A in the *PDF Reference, Second Edition*, version 1.3, Adobe Systems Incorporated for a summary of PDF operators.
 

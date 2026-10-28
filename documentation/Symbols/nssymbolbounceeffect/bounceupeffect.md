@@ -21,7 +21,7 @@ An effect that bounces the symbol upward.
 + (instancetype) bounceUpEffect;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the bounce effect options that bounces the symbol upward.
 

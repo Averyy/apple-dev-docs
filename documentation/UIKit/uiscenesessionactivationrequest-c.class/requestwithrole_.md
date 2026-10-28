@@ -19,11 +19,11 @@ Creates a scene session activation request object with a role that you provide.
 + (instancetype) requestWithRole:(UISceneSessionRole) role;
 ```
 
-#### Return Value
+## Return Value
 
 A scene session activation request object.
 
-#### Discussion
+## Discussion
 
 Create an activation request with this method when you want the system to activate a scene session appropriate for the `role` and `userActivity` you provide. The system activates an existing scene session when the scene session’s [`role`](../uiscenesession/role-swift.property.md) matches the [`role`](./role.md) you request, and the user activity’s [`targetContentIdentifier`](../../Foundation/nsuseractivity/targetcontentidentifier.md) satisfies the scene’s [`activationConditions`](../uiscene/activationconditions.md). Otherwise, the system activates a new scene session.
 

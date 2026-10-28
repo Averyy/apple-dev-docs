@@ -25,7 +25,7 @@ var cornerRadius: CGFloat { get set }
 @property (nonatomic) CGFloat cornerRadius;
 ```
 
-#### Discussion
+## Discussion
 
 The minimum (and default) corner radius is `0.0`, specifying square corners. Set this property to a nonzero value to add rounded corners to the plane. Setting a corner radius of less than zero creates an empty geometry.
 

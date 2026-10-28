@@ -16,11 +16,11 @@ Method to get the auto-sense data from the SCSITask.
 IOReturn (*GetAutoSenseData)(void *task, SCSI_Sense_Data *senseDataBuffer);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if sense data is valid, otherwise kIOReturnError.
 
-#### Discussion
+## Discussion
 
 This method can be used to get the auto-sense data from the SCSITask.
 

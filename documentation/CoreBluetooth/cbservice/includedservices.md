@@ -25,7 +25,7 @@ var includedServices: [CBService]? { get }
 @property (retain, readonly, nullable) NSArray<CBService *> * includedServices;
 ```
 
-#### Discussion
+## Discussion
 
 This array contains [`CBService`](../cbservice.md) objects that represent the included services of a service. A service of a peripheral may contain a reference to other services that are available on the peripheral. These other services are the included services of the service. You discover included services using the [`discoverIncludedServices(_:for:)`](../cbperipheral/discoverincludedservices%28_,for%29.md) method of the [`CBPeripheral`](../cbperipheral.md) class.
 

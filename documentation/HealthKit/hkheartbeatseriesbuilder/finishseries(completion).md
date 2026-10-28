@@ -28,7 +28,7 @@ func finishSeries() async throws -> HKHeartbeatSeriesSample
 - (void) finishSeriesWithCompletion:(void (^)(HKHeartbeatSeriesSample *heartbeatSeries, NSError *error)) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Call [`finishSeries(completion:)`](./finishseries%28completion%29.md) after inserting all the heartbeats for the series. The series builder creates the series sample, saves it to the HealthKit store, and passes it to the completion handler.
 

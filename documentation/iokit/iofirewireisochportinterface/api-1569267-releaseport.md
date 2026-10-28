@@ -16,11 +16,11 @@ The method is called to release the hardware after the channel has been stopped.
 IOReturn (*ReleasePort)(IOFireWireLibIsochPortRef self);
 ```
 
-#### Return Value
+## Return Value
 
 Return kIOReturnSuccess on success, other return any other IOReturn error code.
 
-#### Discussion
+## Discussion
 
 This method is called by the channel object to which a port has been added. Subclasses of IOFireWireIsochPortInterface override this method to support specific hardware. Do not call this method directly.
 

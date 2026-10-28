@@ -19,7 +19,7 @@ The standard level of prominence for a badge.
 static let standard: BadgeProminence
 ```
 
-#### Discussion
+## Discussion
 
 This level of prominence should be used for badges that display a value that suggests user action, such as a count of unread messages or new invitations.
 

@@ -24,7 +24,7 @@ var canGoToFirstPage: Bool { get }
 @property (nonatomic, readonly) BOOL canGoToFirstPage;
 ```
 
-#### Discussion
+## Discussion
 
 The return value will be [`true`](../../Swift/true.md) unless the view is already displaying the first page.
 

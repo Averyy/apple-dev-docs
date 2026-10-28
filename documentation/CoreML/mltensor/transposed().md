@@ -21,11 +21,11 @@ Permutes the tensor with dimensions permuted in reverse order.
 func transposed() -> MLTensor
 ```
 
-#### Return Value
+## Return Value
 
 A permuted tensor.
 
-#### Discussion
+## Discussion
 
 For example:
 

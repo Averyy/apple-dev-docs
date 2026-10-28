@@ -5,7 +5,7 @@
 
 Implement single sign-on for media-streaming apps by managing a sign-in token on a person’s Apple Account.
 
-#### Overview
+## Overview
 
 The Automatic Sign-In feature offers a single sign-on experience for media-streaming apps that have the [`com.apple.smoot.subscriptionservice`](../BundleResources/entitlements/com.apple.smoot.subscriptionservice.md) entitlement. The first time a person signs in to your media streaming service, your app prompts them to opt in to Automatic Sign-In. If they agree, your app generates a *string value* token. You provide the token to the framework, which stores it on the person’s Apple Account to sign the person in across all of their devices. When your app launches again, the framework provides the token if it exists on the person’s Apple Account, which your app uses to bypass the sign-in prompt and give the person quick access to the media streaming features in your app.
 
@@ -20,7 +20,7 @@ Only your app interprets the value to authenticate the person, for example, by e
 >
 > Automatic Sign-In doesn’t replace iCloud Keychain for storing generic secrets, such as those that enable a person to manage their account, or view their personal information.
 
-#### Generate an Automatic Sign-In token
+## Generate an Automatic Sign-In token
 
 When your app launches with the person signed out, check for an Automatic Sign-In token ([`autoSignInToken`](./vsuseraccountmanager/autosignintoken-swift.property.md)) to use for signing them in.
 
@@ -58,7 +58,7 @@ try? await accountManager.updateAutoSignInToken(newToken, updateContext: context
 
 The system stores the token value and its authorization status to the person’s Apple Account, where the framework can find it from your app across the their other devices.
 
-#### Sign in with an Automatic Sign-In token
+## Sign in with an Automatic Sign-In token
 
 If your app launches signed out but the Automatic Sign-In token ([`autoSignInToken`](./vsuseraccountmanager/autosignintoken-swift.property.md)) has a valid [`value`](./vsuseraccountmanager/autosignintoken-swift.struct/value.md), consume the token and sign them in:
 
@@ -74,7 +74,7 @@ if let token = autoSignInToken?.value {
 >
 > Consider other mechanisms to secure a person’s account itself, or to enable the app to display their personal information.
 
-#### Manage the token on device or from a web server
+## Manage the token on device or from a web server
 
 You might revoke an Automatic Sign-In token if:
 

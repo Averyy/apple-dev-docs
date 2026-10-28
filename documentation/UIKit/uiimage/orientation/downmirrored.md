@@ -24,7 +24,7 @@ case downMirrored
 UIImageOrientationDownMirrored
 ```
 
-#### Discussion
+## Discussion
 
 If an image is encoded with this orientation, then displayed by software unaware of orientation metadata, the image appears vertically flipped. (Alternatively, the image is rotated 180° and then flipped horizontally.)
 

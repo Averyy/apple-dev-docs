@@ -17,7 +17,7 @@ Compute the solution to a system of linear equations `AX = B`.
 static func solve(_ a: MLXArray, _ b: MLXArray, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 -Parameters:
 

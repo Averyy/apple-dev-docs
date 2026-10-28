@@ -24,7 +24,7 @@ class PDFActionGoTo
 @interface PDFActionGoTo : PDFAction
 ```
 
-#### Overview
+## Overview
 
 A `PDFActionGoTo` object represents the action of going to a specific location within the PDF document.
 

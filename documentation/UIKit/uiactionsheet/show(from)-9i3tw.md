@@ -23,7 +23,7 @@ func show(from view: UITabBar)
 - (void) showFromTabBar:(UITabBar *) view;
 ```
 
-#### Discussion
+## Discussion
 
 The appearance of the action sheet is animated.
 

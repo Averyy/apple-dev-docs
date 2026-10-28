@@ -15,7 +15,7 @@ A type to represent HID usage pages.
 enum HIDUsage
 ```
 
-#### Overview
+## Overview
 
 A HID usage page combines with a HID usage to specify the intended functionality for the associated item. Associated items can be descriptors, devices, reports, report data, elements, etc..
 

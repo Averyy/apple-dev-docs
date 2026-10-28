@@ -13,7 +13,7 @@ Use this code to follow along with a guide to migrating your code to take advant
 - watchOS 8.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10169: [Migrate your app to Swift 6](https://developer.apple.com/wwdc24/10169). It’s based on a similar session from WWDC21 showing how to adopt Swift concurrency in an app, [Swift concurrency: Update a sample app](https://developer.apple.com/videos/play/wwdc2021/10194/).
 
@@ -24,7 +24,7 @@ This sample provides two separate versions of the app:
 
 Watch the session to see the process step by step, and then compare the two projects to see the differences.
 
-##### Configure the sample code project
+### Configure the sample code project
 
 To add the complication to an active watch face, start by building and running the sample code project in the simulator, and follow these steps:
 
@@ -45,7 +45,7 @@ After configuring and running the app, you can test the background updates. Make
 5. Navigate back to the watch face.
 6. The complication will update within 15 minutes; however, the update may be delayed based on the system’s current state.
 
-##### Adopt strict concurrency checking in Swift
+### Adopt strict concurrency checking in Swift
 
 To see the issues highlighted in the original project, follow these steps:
 

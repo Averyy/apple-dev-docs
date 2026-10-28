@@ -8,13 +8,13 @@ Apple uses system frameworks to insulate apps from the underlying hardware, but 
 
 Apple silicon provides developers with optimization opportunities for their software. Take advantage of Apple silicon features to improve your code’s performance and power usage.
 
-#### Access a connected accessory from your app
+## Access a connected accessory from your app
 
 The [Made for iPhone (MFi) program](https://mfi.apple.com/) helps you create accessories that incorporate Apple licensed technologies. A hardware manufacturer might use this program to add AirPlay, HomeKit, and other features to an accessory that otherwise supports industry-standard connection and communication protocols.
 
 When someone connects an MFi accessory to their iPhone or iPad using a physical cable or wireless connection, connect to that device using the [External Accessory](../ExternalAccessory/ExternalAccessory.md) framework. This framework manages the connection to the device, and you choose one of the communication protocols the device supports. Most devices support both industry-standard and manufacturer-specific protocols. For example, a wireless blood pressure cuff might support sending blood pressure data to your app. Choose the appropriate protocol and configure a [communication session](../ExternalAccessory/easession.md) between your app and the device. Use that session to send commands to the device and retrieve data from it. You can also use the framework to detect when someone [disconnects](../ExternalAccessory/eaaccessorymanager.md) an accessory.
 
-#### Build drivers to support custom hardware features
+## Build drivers to support custom hardware features
 
 Macs and iPads provide USB ports for connecting external devices, and some devices support other types of ports. When someone attaches a device to the computer, the system searches for a driver capable of communicating with that device. If you develop custom hardware, create a *driver extension* (*dext*) to tell the system what services your device offers and how to communicate with it.
 
@@ -34,7 +34,7 @@ On Mac, you ship drivers as part of an app and [install them](../SystemExtension
 
 > ❗ **Important**: Create [codeless dexts](../kernel/implementing_drivers_system_extensions_and_kexts.md) instead of writing custom driver code whenever possible. Write custom driver code only to support features that are unique to your hardware, and debug your code thoroughly to eliminate crashes. Even minor bugs in drivers can prevent apps from communicating with your hardware or cause other issues.
 
-#### Build apps specifically for Apple silicon
+## Build apps specifically for Apple silicon
 
 Apple devices with [Apple silicon](../apple-silicon/apple-silicon.md) integrate the CPU, GPU, Apple Neural Engine (ANE), and memory into a single chip. Apple silicon is available on all Apple devices, making it easy to share code written for one device on other devices.
 

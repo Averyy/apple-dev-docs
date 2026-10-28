@@ -22,7 +22,7 @@ var isMultitaskingCameraAccessEnabled: Bool { get set }
 @property (nonatomic, getter=isMultitaskingCameraAccessEnabled) BOOL multitaskingCameraAccessEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`false`](../../Swift/false.md).
 

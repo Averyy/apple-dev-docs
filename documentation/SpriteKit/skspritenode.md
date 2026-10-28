@@ -35,7 +35,7 @@ class SKSpriteNode
 - [Getting Started with Nodes](./getting-started-with-nodes.md)
 - [Loading and Using Textures](./loading-and-using-textures.md)
 
-#### Overview
+## Overview
 
 `SKSpriteNode` is an onscreen graphical element that can be initialized from an image or a solid color. SpriteKit adds functionality to its ability to display images using the functions discussed below.
 

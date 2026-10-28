@@ -15,7 +15,7 @@ The most recently selected cell.
 @property (strong, readonly, nullable) NSCell * selectedCell;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is `nil`, no cell is selected. If more than one cell is selected, the value of this property is the cell that is lowest and farthest to the right in the matrix.
 

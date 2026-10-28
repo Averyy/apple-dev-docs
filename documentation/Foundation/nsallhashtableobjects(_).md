@@ -25,11 +25,11 @@ func NSAllHashTableObjects(_ table: NSHashTable<AnyObject>) -> [Any]
 extern NSArray *NSAllHashTableObjects(NSHashTable *table);
 ```
 
-#### Return Value
+## Return Value
 
 An array object containing all the elements of `table`.
 
-#### Discussion
+## Discussion
 
 This function should be called only when the table elements are objects, not when they’re any other data type.
 

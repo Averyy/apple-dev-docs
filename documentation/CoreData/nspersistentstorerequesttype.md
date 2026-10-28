@@ -25,7 +25,7 @@ enum NSPersistentStoreRequestType
 enum NSPersistentStoreRequestType : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 [`requestType`](./nspersistentstorerequest/requesttype.md) uses these constants.
 

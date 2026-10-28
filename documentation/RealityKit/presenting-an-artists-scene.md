@@ -10,7 +10,7 @@ Display a scene from Reality Composer Pro in visionOS.
 - visionOS 1.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 > **Note**: This sample code project is associated with WWDC24 session 10186: [Optimize your 3D assets for spatial computing](https://developer.apple.com/wwdc24/10186/).
 

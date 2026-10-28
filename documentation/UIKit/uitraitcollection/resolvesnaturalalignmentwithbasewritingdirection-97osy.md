@@ -19,7 +19,7 @@ Specifies the behavior for resolving `NSTextAlignment.natural` to the visual ali
 @property (nonatomic, readonly) BOOL resolvesNaturalAlignmentWithBaseWritingDirection;
 ```
 
-#### Discussion
+## Discussion
 
 When set to `true`, the resolved visual alignment is determined by the resolved base writing direction; otherwise, it is using the user’s preferred language.
 

@@ -15,7 +15,7 @@
 static const NSSliderType NSLinearSlider;
 ```
 
-#### Discussion
+## Discussion
 
 A bar representing a range, and a knob indicating the currently selected value.
 

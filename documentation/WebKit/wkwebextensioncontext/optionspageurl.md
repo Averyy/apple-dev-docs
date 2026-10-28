@@ -23,7 +23,7 @@ var optionsPageURL: URL? { get }
 @property (nonatomic, copy, readonly, nullable) NSURL * optionsPageURL;
 ```
 
-#### Discussion
+## Discussion
 
 Provides the URL for the dedicated options page, if provided by the extension; otherwise `nil` if no page is defined.
 

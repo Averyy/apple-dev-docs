@@ -23,7 +23,7 @@ mutating func reverse()
 
 Available when `Self` conforms to `BidirectionalCollection`.
 
-#### Discussion
+## Discussion
 
 The following example reverses the elements of an array of characters:
 

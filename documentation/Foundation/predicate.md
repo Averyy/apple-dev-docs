@@ -21,7 +21,7 @@ A logical condition used to test a set of input values for searching or filterin
 struct Predicate<each Input>
 ```
 
-#### Overview
+## Overview
 
 A predicate is a logical condition that evaluates to a Boolean value (true or false).  You use predicates for operations like filtering a collection or searching for matching elements.
 

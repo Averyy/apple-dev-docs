@@ -20,7 +20,7 @@ class func shared() -> NSScriptCoercionHandler
 + (NSScriptCoercionHandler *) sharedCoercionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 The shared `NSScriptCoercionHandler` for the application.
 

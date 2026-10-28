@@ -5,7 +5,7 @@
 
 QuickTime movies store date and time information in Macintosh date format.
 
-#### Overview
+## Overview
 
 The Macintosh date format is a 32-bit value indicating the number of seconds that have passed since midnight January 1, 1904.
 

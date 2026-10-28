@@ -19,7 +19,7 @@ class var defaultMenu: NSMenu? { get }
 @property (class, strong, readonly, nullable) NSMenu * defaultMenu;
 ```
 
-#### Return Value
+## Return Value
 
 The default menu. The `NSCell` implementation of this method returns `nil`.
 

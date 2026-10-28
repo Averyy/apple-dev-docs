@@ -25,7 +25,7 @@ static let presentationIntentAttributeName: NSAttributedString.Key
 extern NSAttributedStringKey const NSPresentationIntentAttributeName;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this key is an [`NSPresentationIntent`](../../nspresentationintent.md) object. Block-level elements include paragraphs, headers, lists, tables, and other structural elements of the Markdown content.
 

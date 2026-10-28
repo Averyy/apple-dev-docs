@@ -21,7 +21,7 @@ Gets or sets custom string properties.
 final subscript<P>(dynamicMember key: KeyPath<ProgressManager.Properties, P.Type>) -> String? where P : ProgressManager.Property, P.Summary == [String?], P.Value == String? { get set }
 ```
 
-#### Overview
+## Overview
 
 This subscript provides read-write access to custom progress properties where the value type is `String?` and the summary type is `[String?]`. If the property has not been set, the getter returns the property’s default value.
 

@@ -17,7 +17,7 @@ A display-friendly name for the model.
 var name: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 For Hub models, this returns the repo ID. For local directories, it returns a path-based name (e.g., “ParentDir/ModelDir”).
 

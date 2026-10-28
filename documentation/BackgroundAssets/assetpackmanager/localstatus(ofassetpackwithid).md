@@ -20,11 +20,11 @@ Checks an asset pack’s local status.
 func localStatus(ofAssetPackWithID assetPackID: String) async -> AssetPack.Status
 ```
 
-#### Return Value
+## Return Value
 
 The asset pack’s local status.
 
-#### Discussion
+## Discussion
 
 This method checks only status values that are determinable offline. It doesn’t induce any network traffic or automatically trigger any downloads, updates, or removals. The following status values are determinable offline:
 

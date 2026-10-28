@@ -22,7 +22,7 @@ func GLKVector2Multiply(_ vectorLeft: GLKVector2, _ vectorRight: GLKVector2) -> 
 static GLKVector2 GLKVector2Multiply(GLKVector2 vectorLeft, GLKVector2 vectorRight);
 ```
 
-#### Return Value
+## Return Value
 
 A new vector whose components each represent the product of the components found in the same positions of the two source vectors.
 

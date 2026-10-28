@@ -21,7 +21,7 @@ let QCPortTypeIndex: String
 extern NSString * const QCPortTypeIndex;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value can be an [`NSNumber`](../Foundation/nsnumber.md) object or any object that responds to the `-intValue`, `-floatValue`, or `-doubleValue` methods.
 

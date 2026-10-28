@@ -21,7 +21,7 @@ The number of completed files for a file progress object.
 @property (copy, nullable) NSNumber * fileCompletedCount;
 ```
 
-#### Discussion
+## Discussion
 
 If the current progress is operating on a set of files, set this property to the number of completed files in the operation.
 

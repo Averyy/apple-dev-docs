@@ -25,7 +25,7 @@ var NSPersistentStoreSaveConflictsError: Int { get }
 NSPersistentStoreSaveConflictsError
 ```
 
-#### Discussion
+## Discussion
 
 The `NSError` object’s user info dictionary contains the key [`NSPersistentStoreSaveConflictsErrorKey`](./nspersistentstoresaveconflictserrorkey.md).
 

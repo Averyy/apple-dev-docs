@@ -23,7 +23,7 @@ var color: UIColor? { get set }
 @property (nonatomic, copy, nullable) UIColor * color;
 ```
 
-#### Discussion
+## Discussion
 
 The value stored in this property is a [`UIColor`](../uicolor.md) object. The associated array of representation types is [`typeListColor`](./typelistcolor.md). Setting this property replaces all current items in the pasteboard with the new item. If the first item has no value of the indicated type, `nil` is returned.
 

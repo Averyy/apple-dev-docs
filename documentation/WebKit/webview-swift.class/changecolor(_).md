@@ -19,7 +19,7 @@ func changeColor(_ sender: Any?)
 - (void) changeColor:(id) sender;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked by the `NSColorPanel` sender and behaves similar to the [`changeColor(_:)`](../../AppKit/nstextview/changecolor%28_%29.md) method in [`NSTextView`](../../AppKit/nstextview.md).
 

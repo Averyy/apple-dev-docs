@@ -18,7 +18,7 @@ Produces thumbnails of question regions within the document.
 func questionThumbnails(visibleParts: [AssignableDocument.PartID]) async -> [AssignableDocument.Question.ID : [AssignableDocument.Question.Thumbnail]]
 ```
 
-#### Return Value
+## Return Value
 
 A dictionary of [`AssignableDocument.Question.ID`](./question/id-swift.typealias.md) to array of [`AssignableDocument.Question.Thumbnail`](./question/thumbnail.md).
 

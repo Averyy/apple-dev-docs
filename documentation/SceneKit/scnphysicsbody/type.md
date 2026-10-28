@@ -25,7 +25,7 @@ var type: SCNPhysicsBodyType { get set }
 @property (nonatomic) SCNPhysicsBodyType type;
 ```
 
-#### Discussion
+## Discussion
 
 See [`SCNPhysicsBodyType`](../scnphysicsbodytype.md).
 

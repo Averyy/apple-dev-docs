@@ -19,7 +19,7 @@ The image content displayed by this markup.
 var image: CGImage? { get async }
 ```
 
-#### Discussion
+## Discussion
 
 Image content is shown scaled to fill.
 

@@ -21,7 +21,7 @@ A value that indicates how the layout truncates the last line of text to fit int
 var truncationMode: Text.TruncationMode { get set }
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`Text.TruncationMode.tail`](../text/truncationmode/tail.md). Some controls, however, might have a different default if appropriate.
 

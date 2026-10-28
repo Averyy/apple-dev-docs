@@ -17,11 +17,11 @@ Gives the delegate the opportunity to filter items that it doesn’t want the us
 - (BOOL) panel:(id) sender shouldShowFilename:(NSString *) filename;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if `filename` should be selectable, and [`NO`](../no.md) if the save panel should disable the file or directory.
 
-#### Discussion
+## Discussion
 
 The `NSSavePanel` object `sender` sends this message to the panel’s delegate for each file or directory (filename) it is about to load in the browser.
 

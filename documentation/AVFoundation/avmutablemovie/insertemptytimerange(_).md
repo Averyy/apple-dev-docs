@@ -24,7 +24,7 @@ func insertEmptyTimeRange(_ timeRange: CMTimeRange)
 - (void) insertEmptyTimeRange:(CMTimeRange) timeRange;
 ```
 
-#### Discussion
+## Discussion
 
 You can’t add empty time ranges to the end of a movie.
 

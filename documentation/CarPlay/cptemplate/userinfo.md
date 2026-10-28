@@ -21,7 +21,7 @@ var userInfo: Any? { get set }
 @property (nonatomic, strong, nullable) id userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 Use [`userInfo`](./userinfo.md) to store additional information on the template that is useful in other areas of your app.
 

@@ -22,7 +22,7 @@ A vertical container that you can use in conditional layouts.
 struct VStackLayout
 ```
 
-#### Overview
+## Overview
 
 This layout container behaves like a [`VStack`](./vstack.md), but conforms to the [`Layout`](./layout.md) protocol so you can use it in the conditional layouts that you construct with [`AnyLayout`](./anylayout.md). If you don’t need a conditional layout, use [`VStack`](./vstack.md) instead.
 

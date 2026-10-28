@@ -22,7 +22,7 @@ var outputType: UIPrintInfo.OutputType { get set }
 @property (nonatomic) UIPrintInfoOutputType outputType;
 ```
 
-#### Discussion
+## Discussion
 
 The output type can be general, photo, or grayscale. An application can set this property to a value thats appropriate to the printable content. The default is [`UIPrintInfo.OutputType.general`](./outputtype-swift.enum/general.md).  See the descriptions of the [`UIPrintInfo.OutputType`](./outputtype-swift.enum.md) constants for more information.
 

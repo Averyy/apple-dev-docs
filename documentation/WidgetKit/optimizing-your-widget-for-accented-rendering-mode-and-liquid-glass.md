@@ -5,7 +5,7 @@
 
 Make your widget feel at home on Apple platforms and Liquid Glass by using accented rendering mode.
 
-#### Overview
+## Overview
 
 iPhone, iPad, Mac, and Apple Watch use Liquid Glass, a dynamic, adaptive material that also applies to widgets. When a person chooses a tinted or clear appearance for their Home Screen, the system:
 
@@ -18,7 +18,7 @@ iPhone, iPad, Mac, and Apple Watch use Liquid Glass, a dynamic, adaptive materia
 
 By already supporting the [`accented`](./widgetrenderingmode/accented.md) rendering mode, some widgets don’t need any further adjustments. However, you might need to update your widget to keep its text readable and make it look at home with Liquid Glass; for example, if your widget includes images, gradients, or transparent content.
 
-##### Support Liquid Glass
+### Support Liquid Glass
 
 To update your widget to support Liquid Glass:
 
@@ -28,7 +28,7 @@ To update your widget to support Liquid Glass:
 4. Group your views into a primary and an accent group using the [`widgetAccentable(_:)`](../SwiftUI/view/widgetaccentable%28_%29.md) view modifier. Views you don’t mark as accentable are part of the primary group.
 5. Configure the rendering of any image using the [`WidgetAccentedRenderingMode`](./widgetaccentedrenderingmode.md) view modifier.
 
-##### Choose rendering modes for images and views
+### Choose rendering modes for images and views
 
 Using the `WidgetAccentedRenderingMode` view modifier, conditionally render images and views as needed:
 

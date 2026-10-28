@@ -23,7 +23,7 @@ func MIDIEndpointDispose(_ endpt: MIDIEndpointRef) -> OSStatus
 extern OSStatus MIDIEndpointDispose(MIDIEndpointRef endpt);
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code.
 

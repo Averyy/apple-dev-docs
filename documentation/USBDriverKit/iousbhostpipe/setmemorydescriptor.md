@@ -13,11 +13,11 @@
 virtual kern_return_t SetMemoryDescriptor(IOMemoryDescriptor *memoryDescriptor, uint32_t index);
 ```
 
-#### Return Value
+## Return Value
 
 KERN_SUCCESS is successful see IOReturn.h for error codes.
 
-#### Discussion
+## Discussion
 
 Add a memory descriptor to the ring.
 

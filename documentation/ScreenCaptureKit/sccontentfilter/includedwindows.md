@@ -18,7 +18,7 @@ var includedWindows: [SCWindow] { get }
 @property (nonatomic, readonly, nonnull) NSArray<SCWindow *> * includedWindows;
 ```
 
-#### Discussion
+## Discussion
 
 Windows that are included in the content filter
 

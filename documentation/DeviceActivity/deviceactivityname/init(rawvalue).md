@@ -17,7 +17,7 @@ Creates a new instance with the specified raw value.
 init(rawValue: String)
 ```
 
-#### Discussion
+## Discussion
 
 The following code example prints the specified raw value.
 

@@ -18,11 +18,11 @@ Requests that a child send the significant app update permission question to the
 final func askSignificantChangePermission(for question: PermissionQuestion<SignificantAppUpdateTopic>, permissionFlow: PermissionFlow, in viewController: UIViewController) async throws -> PermissionResult
 ```
 
-#### Return Value
+## Return Value
 
 The user’s resolved action — `.askToApprove(didSend:)`, `.approveInPerson(approved:)`, or `.cancel`.
 
-#### Discussion
+## Discussion
 
 Throws an error if the system can’t request a child to send the permission question.
 

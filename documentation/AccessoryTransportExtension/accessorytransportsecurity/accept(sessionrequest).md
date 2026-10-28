@@ -16,7 +16,7 @@ Evaluates incoming security session requests for an accessory.
 func accept(sessionRequest: AccessorySecuritySession.Request) -> AccessorySecuritySession.Request.Decision
 ```
 
-#### Discussion
+## Discussion
 
 Return a decision by calling either [`accept(_:)`](../accessorysecuritysession/request/accept%28_%29.md) or [`reject(error:)`](../accessorysecuritysession/request/reject%28error%29.md) on the request.
 

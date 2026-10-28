@@ -24,7 +24,7 @@ class CAShapeLayer
 @interface CAShapeLayer : CALayer
 ```
 
-#### Overview
+## Overview
 
 The shape is composited between the layer’s contents and its first sublayer.
 

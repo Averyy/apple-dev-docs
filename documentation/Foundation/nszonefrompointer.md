@@ -23,11 +23,11 @@ Gets the zone for a given block of memory.
 extern NSZone *NSZoneFromPointer(void *ptr);
 ```
 
-#### Return Value
+## Return Value
 
 The zone for the block of memory indicated by `pointer`, or `NULL` if the block was not allocated from a zone.
 
-#### Discussion
+## Discussion
 
 `pointer` must be one that was returned by a prior call to an allocation function.
 

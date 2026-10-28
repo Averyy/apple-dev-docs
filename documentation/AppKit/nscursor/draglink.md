@@ -22,7 +22,7 @@ class var dragLink: NSCursor { get }
 @property (class, strong, readonly) NSCursor * dragLinkCursor;
 ```
 
-#### Return Value
+## Return Value
 
 The drag link cursor.
 

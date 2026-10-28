@@ -23,7 +23,7 @@ func gss_test_oid_set_member(_ minor_status: UnsafeMutablePointer<OM_uint32>, _ 
 OM_uint32 gss_test_oid_set_member(OM_uint32 *minor_status, gss_const_OID member, gss_OID_set const set, int *present);
 ```
 
-#### Return Value
+## Return Value
 
 A status code set to [`GSS_S_COMPLETE`](./gss_s_complete.md) on success. See [Function Status](./function-status.md) for a complete enumeration of status outputs.
 

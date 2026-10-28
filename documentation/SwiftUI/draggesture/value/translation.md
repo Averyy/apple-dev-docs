@@ -20,7 +20,7 @@ The total translation from the start of the drag gesture to the current event of
 var translation: CGSize { get }
 ```
 
-#### Discussion
+## Discussion
 
 This is equivalent to `location.{x,y} - startLocation.{x,y}`.
 

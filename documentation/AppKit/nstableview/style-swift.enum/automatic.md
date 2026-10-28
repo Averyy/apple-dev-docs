@@ -19,7 +19,7 @@ case automatic
 NSTableViewStyleAutomatic
 ```
 
-#### Discussion
+## Discussion
 
 The system resolves the table view style in the following manner:
 

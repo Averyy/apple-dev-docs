@@ -5,19 +5,19 @@
 
 Test your app’s implementation of refund requests, and your app’s and server’s handling of approved and declined refunds.
 
-#### Overview
+## Overview
 
 The sandbox environment and StoreKit Testing in Xcode both support testing refund requests, which enable your customers to request a refund from within your app. Your app displays the refund request sheet by calling any of these methods: [`beginRefundRequest(for:in:)`](./transaction/beginrefundrequest%28for,in%29-65tph.md) , [`beginRefundRequest(in:)`](./transaction/beginrefundrequest%28in%29-63bvd.md), [`beginRefundRequest(for:in:)`](./transaction/beginrefundrequest%28for,in%29-9mscy.md), [`beginRefundRequest(in:)`](./transaction/beginrefundrequest%28in%29-9k0pj.md), or [`refundRequestSheet(for:isPresented:onDismiss:)`](../SwiftUI/view/refundrequestsheet%28for,ispresented,ondismiss%29.md). While you’re testing your app, you fill out the sheet to submit the request.
 
 Depending on your testing setup, the App Store automatically approves or declines the refund request in the testing environment. Note that the App Store doesn’t send emails for refund requests in testing environments.
 
-##### Test approved refunds
+### Test approved refunds
 
 To set up a test for approved refunds, select any refund reason on the refund request sheet, and submit the sheet. The App Store automatically approves the refund request in the testing environment.
 
 Your app receives a [`Transaction`](./transaction.md) with refund information in the [`revocationDate`](./transaction/revocationdate.md) and [`revocationReason`](./transaction/revocationreason-swift.property.md) properties. If you’re testing in the sandbox environment and your server receives [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) for the sandbox, it gets a notification with a `REFUND` [`notificationType`](../AppStoreServerNotifications/notificationtype.md).
 
-##### Test declined refunds
+### Test declined refunds
 
 To set up a test for declined refunds, follow these steps on the refund request sheet with your app running in the sandbox environment:
 
@@ -29,7 +29,7 @@ The App Store automatically rejects the refund request in the testing environmen
 
 If your server receives [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) for the sandbox environment, it gets a notification with a `REFUND_DECLINED` [`notificationType`](../AppStoreServerNotifications/notificationtype.md).
 
-##### Test prorated refunds
+### Test prorated refunds
 
 To set up a test for prorated refunds, follow these steps on the refund request sheet with your app running in the sandbox environment:
 
@@ -46,7 +46,7 @@ In the testing environment, the App Store automatically approves the prorated re
 
 Your app receives a [`Transaction`](./transaction.md) with refund information in the [`revocationDate`](./transaction/revocationdate.md) and [`revocationReason`](./transaction/revocationreason-swift.property.md) properties. If you’re testing in the sandbox environment and your server receives [`App Store Server Notifications V2`](../AppStoreServerNotifications/app-store-server-notifications-v2.md) for the sandbox, it gets a notification with a `REFUND` [`notificationType`](../AppStoreServerNotifications/notificationtype.md). For prorated refunds, the transaction data includes the `revocationType` field with a value of `REFUND_PRORATED` and the `revocationPercentage` field.
 
-##### Test prorated refunds with information from your server
+### Test prorated refunds with information from your server
 
 Another way to test prorated refunds is to provide the refund information by calling the [`Send Consumption Information`](../AppStoreServerAPI/send-consumption-information.md), following these steps:
 

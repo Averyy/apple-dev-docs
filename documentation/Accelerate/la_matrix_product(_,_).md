@@ -25,7 +25,7 @@ func la_matrix_product(_ matrix_left: la_object_t, _ matrix_right: la_object_t) 
 extern la_object_tla_matrix_product(la_object_t matrix_left, la_object_t matrix_right);
 ```
 
-#### Discussion
+## Discussion
 
 Compute a matrix product.
 

@@ -22,7 +22,7 @@ nonisolated
 func position<P>(by value: PlottableValue<P>, axis: Axis? = nil, span: MarkDimension = .automatic) -> some ChartContent where P : Plottable
 ```
 
-#### Discussion
+## Discussion
 
 The code below creates a grouped bar chart that positions marks with the same “product” along the horizontal axis by their “type”.
 

@@ -25,11 +25,11 @@ class func string(from date: Date, timeZone: TimeZone, formatOptions: ISO8601Dat
 + (NSString *) stringFromDate:(NSDate *) date timeZone:(NSTimeZone *) timeZone formatOptions:(NSISO8601DateFormatOptions) formatOptions;
 ```
 
-#### Return Value
+## Return Value
 
 A user-readable string representing the date.
 
-#### Discussion
+## Discussion
 
 This method uses a date formatter configured with the specified time zone and format options. The following code examples produce the same string value:
 

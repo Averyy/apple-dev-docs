@@ -5,7 +5,7 @@
 
 Create a JSON Web Signature (JWS) for use with app impressions in AdAttributionKit.
 
-#### Overview
+## Overview
 
 A JSON Web Signature (JWS) is an open standard ([RFC 7515](https://datatracker.ietf.org/doc/html/rfc7515)) that defines a way to securely transmit information. AdAttributionKit requires a JWS to create an [`AppImpression`](./appimpression.md). You create the JWS and sign it with your private key. For more information about creating keys, see [Registering an ad network](./registering-an-ad-network.md)
 
@@ -15,7 +15,7 @@ To generate a signed compact JWS:
 2. Create the JWS payload.
 3. Sign the JWS.
 
-#### Create the JOSE header
+## Create the JOSE header
 
 To create a JWS impression to use with AdAttributionKit, use the following fields and values in the header:
 
@@ -33,7 +33,7 @@ Here’s an example of a JOSE header:
     }
 ```
 
-#### Create the JWS payload
+## Create the JWS payload
 
 The JWS payload contains information about the advertisement, such as the advertised app item ID, publisher app item ID, source identifier, and type of impression. Use the following fields to include these values in the JWS payload:
 
@@ -71,7 +71,7 @@ To create impressions eligible for reengagement conversions, add the following f
 }
 ```
 
-#### Sign the JWS
+## Sign the JWS
 
 Use the private key you generated during ad network registration to sign the JWS using ES256 encryption.
 

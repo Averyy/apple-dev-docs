@@ -21,7 +21,7 @@ Converts a vector of double-precision floating-point values to signed 32-bit int
 extern void vDSP_vfix32D(const double *__A, vDSP_Stride __IA, int *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_vfix16`](../kernel/api-1532172-vdsp_vfix16.md), except for the type of vector `A`.
 

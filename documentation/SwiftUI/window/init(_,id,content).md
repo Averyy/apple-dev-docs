@@ -34,7 +34,7 @@ nonisolated
 init<S>(_ title: S, id: String, @ContentBuilder content: () -> Content) where S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 The window displays the view that you specify.
 

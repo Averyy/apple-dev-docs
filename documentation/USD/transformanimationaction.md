@@ -4,11 +4,11 @@
 
 An action that plays a transform animation.
 
-#### Overview
+## Overview
 
 This action applies the transform animation defined by [animation](./animation.md) on the prims in [affectedObjects](./affectedobjects.md).
 
-##### Declaration
+### Declaration
 
 ```other
 class Preliminary_Action "TransformAnimationAction"

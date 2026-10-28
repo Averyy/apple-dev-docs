@@ -19,11 +19,11 @@ func writeSync(_ data: UnsafeMutableRawPointer!, length: UInt16) -> IOReturn
 - (IOReturn) writeSync:(void *) data length:(UInt16) length;
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if the data was written successfully.
 
-#### Discussion
+## Discussion
 
 The length of the data may not exceed the L2CAP channel’s ougoing MTU. This method will block until the data has been successfully sent to the hardware for transmission (or an error occurs).
 

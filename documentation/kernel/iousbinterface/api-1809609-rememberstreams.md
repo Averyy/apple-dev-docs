@@ -10,11 +10,11 @@ virtual IOReturn RememberStreams(
  void);
 ```
 
-#### Return Value
+## Return Value
 
 returns kIOReturnSuccess if sucessful.
 
-#### Overview
+## Overview
 
 Make a note of which pipes have streams, so they can be recreated later.
 

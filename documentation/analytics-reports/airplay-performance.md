@@ -5,11 +5,11 @@
 
 Review AirPlay performance in your apps.
 
-#### Overview
+## Overview
 
 The data in this report contains performance measures for [AirPlay](https://developer.apple.com/airplay) usage. The metrics include Video Start Up Time, Activate to Start Time, and Session Duration. The report presents each measure along with a configuration made up of multiple dimensions.
 
-#### Report Fields
+## Report Fields
 
 | Report Field | Description | Data Type |
 | --- | --- | --- |

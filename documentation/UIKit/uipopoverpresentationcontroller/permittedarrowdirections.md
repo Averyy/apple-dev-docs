@@ -22,7 +22,7 @@ var permittedArrowDirections: UIPopoverArrowDirection { get set }
 @property (nonatomic, assign) UIPopoverArrowDirection permittedArrowDirections;
 ```
 
-#### Discussion
+## Discussion
 
 Prior to displaying the popover, set this property to the arrow directions that you allow for your popover. The actual arrow direction in use by the popover is stored in the [`arrowDirection`](./arrowdirection.md) property.
 

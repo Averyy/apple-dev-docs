@@ -24,7 +24,7 @@ optional func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView)
 - (void) mapView:(MKMapView *) mapView didDeselectAnnotationView:(MKAnnotationView *) view;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this method to track changes in the selection state of annotation views.
 

@@ -21,7 +21,7 @@ The position of the viewer in world space.
 var viewPosition: SIMD3<Float>?
 ```
 
-#### Discussion
+## Discussion
 
 When provided, this value can be used for billboarding or read within the graph for viewer-relative effects.
 

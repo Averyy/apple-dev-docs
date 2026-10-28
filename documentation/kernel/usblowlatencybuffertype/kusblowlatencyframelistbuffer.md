@@ -15,7 +15,7 @@ A low-latency frame list buffer.
 kUSBLowLatencyFrameListBuffer = 2
 ```
 
-#### Discussion
+## Discussion
 
 The buffer is for a low-latency isochronous frame list.
 

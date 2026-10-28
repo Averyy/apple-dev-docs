@@ -15,7 +15,7 @@ Fills the rectangles in a list using the current fill color and specified compos
 extern void NSRectFillListUsingOperation(const NSRect *rects, NSInteger count, NSCompositingOperation op);
 ```
 
-#### Discussion
+## Discussion
 
 Fills a list of `count` rectangles with the current fill color, using the compositing operation `op`. For example, specifying [`NSCompositeSourceOver`](./nscompositesourceover.md) will blend with what’s already been drawn.
 

@@ -25,7 +25,7 @@ func CGRectMake(_ x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat)
 static CGRect CGRectMake(CGFloat x, CGFloat y, CGFloat width, CGFloat height);
 ```
 
-#### Return Value
+## Return Value
 
 A rectangle with the specified location and dimensions.
 

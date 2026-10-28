@@ -21,7 +21,7 @@ Constants that specify the highlight color to use with the text.
 struct TextHighlightColorScheme
 ```
 
-#### Overview
+## Overview
 
 Use an [`NSAttributedString.TextHighlightColorScheme`](./texthighlightcolorscheme.md) structure as the value of the [`textHighlightColorScheme`](./key/texthighlightcolorscheme.md) attribute. That attribute specifies which color to use when drawing the highlight on the text. This attribute specifies only the color option. To display the highlight itself, add the [`textHighlightStyle`](./key/texthighlightstyle.md) attribute to the text.
 

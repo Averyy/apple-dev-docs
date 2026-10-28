@@ -19,7 +19,7 @@ An option for augmenting training data by adding random amounts of noise to each
 static let noise: MLImageClassifier.ImageAugmentationOptions
 ```
 
-#### Discussion
+## Discussion
 
 Use this option to tell the image classifier to augment your training data set by adding noise to the original images.
 

@@ -19,7 +19,7 @@ optional func extensionDidFinishLaunching()
 - (void) extensionDidFinishLaunching;
 ```
 
-#### Discussion
+## Discussion
 
 There are no guarantees about the thread or queue on which this method is called.
 

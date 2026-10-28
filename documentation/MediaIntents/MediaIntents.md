@@ -15,7 +15,7 @@ Enable people to use Siri to find and play media from your app.
 - visionOS 27.0+
 - watchOS 27.0+
 
-#### Overview
+## Overview
 
 People use Siri to find and play media from your app. For example, people make specific requests like “Siri, play Example song by Example artist” or “Siri, play the latest episode from $podcast”. However, they also make vague requests, such as “Play the song my friend sent me” or “Play energetic music”. For every request, Siri needs to respond with a matching result from your app.
 

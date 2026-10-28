@@ -24,7 +24,7 @@ var aspect: Float { get set }
 @property (nonatomic, readwrite) float aspect;
 ```
 
-#### Discussion
+## Discussion
 
 If the light’s type is [`MDLLightType.discArea`](../mdllighttype/discarea.md),  [`MDLLightType.rectangularArea`](../mdllighttype/rectangulararea.md), or [`MDLLightType.superElliptical`](../mdllighttype/superelliptical.md), this property determines the lengths of the shape’s major and minor axes (longer and shorter dimensions) relative to the [`areaRadius`](./arearadius.md) property’s value.
 

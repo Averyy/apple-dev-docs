@@ -20,7 +20,7 @@ A message that posts after a mouse accessory disconnects from the device.
 struct DidDisconnectMessage
 ```
 
-#### Overview
+## Overview
 
 Use the `didDisconnect` identifier with `NotificationCenter` to listen for this message.
 

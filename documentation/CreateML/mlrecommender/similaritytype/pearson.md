@@ -15,7 +15,7 @@ The Pearson correlation similarity measure.
 case pearson
 ```
 
-#### Discussion
+## Discussion
 
 Use Pearson correlation similarity for comparing item ratings.
 

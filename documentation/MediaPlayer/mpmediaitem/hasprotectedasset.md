@@ -23,7 +23,7 @@ var hasProtectedAsset: Bool { get }
 @property (nonatomic, readonly, getter=hasProtectedAsset) BOOL protectedAsset;
 ```
 
-#### Discussion
+## Discussion
 
 When the value is [`true`](../../Swift/true.md), the media item has DRM protection.
 

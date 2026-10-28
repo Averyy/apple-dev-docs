@@ -23,7 +23,7 @@ enum RowAnimation
 enum UITableViewRowAnimation : NSInteger;
 ```
 
-#### Overview
+## Overview
 
 You specify one of these constants as a parameter of the [`insertRows(at:with:)`](./insertrows%28at,with%29.md), [`insertSections(_:with:)`](./insertsections%28_,with%29.md), [`deleteRows(at:with:)`](./deleterows%28at,with%29.md),[`deleteSections(_:with:)`](./deletesections%28_,with%29.md), [`reloadRows(at:with:)`](./reloadrows%28at,with%29.md), and [`reloadSections(_:with:)`](./reloadsections%28_,with%29.md) methods.
 

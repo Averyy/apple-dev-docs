@@ -21,7 +21,7 @@ Conjugate Gradient Options.
 SparseCGOptions cg;
 ```
 
-#### Discussion
+## Discussion
 
 Use CG to solve Ax=b when A is symmetric (Hermitian) positive-definite (the method may break down or fail to converge if A is not positive-definite).
 

@@ -13,11 +13,11 @@
 errno_t mbuf_setflags(mbuf_t mbuf, mbuf_flags_t flags);
 ```
 
-#### Return Value
+## Return Value
 
 0 upon success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Sets the set of set flags.
 

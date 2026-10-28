@@ -23,7 +23,7 @@ mutating func removeFirst(_ k: Int)
 
 Available when `Self` is `Self.SubSequence`.
 
-#### Discussion
+## Discussion
 
 > **Complexity**: O(1) if the collection conforms to `RandomAccessCollection`; otherwise, O(*k*), where *k* is the specified number of elements.
 

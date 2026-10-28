@@ -25,11 +25,11 @@ init?(base64Encoded base64String: String, options: NSData.Base64DecodingOptions 
 - (instancetype) initWithBase64EncodedString:(NSString *) base64String options:(NSDataBase64DecodingOptions) options;
 ```
 
-#### Return Value
+## Return Value
 
 A data object built by Base64 decoding the provided string. Returns `nil` if the data object could not be decoded.
 
-#### Discussion
+## Discussion
 
 The default implementation of this method will reject non-alphabet characters, including line break characters. To support different encodings and ignore non-alphabet characters, specify an `options` value of [`ignoreUnknownCharacters`](./base64decodingoptions/ignoreunknowncharacters.md).
 

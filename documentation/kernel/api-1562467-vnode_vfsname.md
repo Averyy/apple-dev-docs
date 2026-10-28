@@ -15,7 +15,7 @@ Get the name of the filesystem to which a vnode belongs.
 void vnode_vfsname(vnode_t vp, char *buf);
 ```
 
-#### Return Value
+## Return Value
 
 The name of the fileystem to which the vnode belongs.
 

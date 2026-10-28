@@ -5,13 +5,13 @@
 
 Use the `NS_SWIFT_NAME` macro to customize API names for Swift.
 
-#### Overview
+## Overview
 
 If you want to import an Objective-C API into Swift with a different name, use the `NS_SWIFT_NAME` macro. The macro preserves the Objective-C name for use with Objective-C code, so the API has appropriate names in each language.
 
 You apply the `NS_SWIFT_NAME` macro to an individual type, method, or function declaration in Objective-C. After applying the macro, the name you use in your Swift code will be what you’ve chosen by using the macro.
 
-##### Rename APIs
+### Rename APIs
 
 The example below renames a class and one of its properties:
 

@@ -19,7 +19,7 @@ class func imageReps(with data: Data) -> [NSImageRep]
 + (NSArray<NSImageRep *> *) imageRepsWithData:(NSData *) data;
 ```
 
-#### Return Value
+## Return Value
 
 An array of [`NSBitmapImageRep`](../nsbitmapimagerep.md) instances or an empty array if the class is unable to create any image representations.
 

@@ -12,7 +12,7 @@ virtual IOReturn recordMediaParameters(
  void);
 ```
 
-#### Overview
+## Overview
 
 This method obtains media-related parameters via calls to the Transport Driver's reportBlockSize, reportMaxValidBlock, and reportWriteProtection methods.
 

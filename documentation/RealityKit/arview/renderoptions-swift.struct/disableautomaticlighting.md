@@ -17,7 +17,7 @@ Disable automatic updates of the scene lighting.
 static let disableAutomaticLighting: ARView.RenderOptions
 ```
 
-#### Discussion
+## Discussion
 
 By default, ARKit analyzes the scene lighting in captured camera images and automatically updates lighting in the scene. Add the [`disableAutomaticLighting`](./disableautomaticlighting.md) option to the AR view’s [`renderOptions`](../renderoptions-swift.property.md) to disable the feature.
 

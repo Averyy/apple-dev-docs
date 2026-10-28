@@ -17,7 +17,7 @@ An error that indicates the device doesn’t have an active passcode.
 case passcodeDisabled
 ```
 
-#### Discussion
+## Discussion
 
 Devices must have an active passcode to process payments. Your app needs to ask the user to set a security passcode on their device.
 

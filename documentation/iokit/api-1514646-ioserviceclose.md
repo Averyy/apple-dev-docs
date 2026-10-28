@@ -23,11 +23,11 @@ func IOServiceClose(_ connect: io_connect_t) -> kern_return_t
 kern_return_t IOServiceClose(io_connect_t connect);
 ```
 
-#### Return Value
+## Return Value
 
 A kern_return_t error code.
 
-#### Discussion
+## Discussion
 
 A connection created with the IOServiceOpen should be closed when the connection is no longer to be used with IOServiceClose.
 

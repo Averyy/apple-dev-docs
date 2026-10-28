@@ -22,7 +22,7 @@ case formDidDisappear
 ASSavePasswordRequestEventFormDidDisappear
 ```
 
-#### Discussion
+## Discussion
 
 The recommended behavior is to save “new” credentials, and ask the user if they wish to overwrite “updated” credentials.
 

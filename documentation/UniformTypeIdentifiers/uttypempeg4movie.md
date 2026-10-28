@@ -21,7 +21,7 @@ A type that represents an MPEG-4 movie.
 extern UTType * const UTTypeMPEG4Movie;
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.mpeg-4`.
 

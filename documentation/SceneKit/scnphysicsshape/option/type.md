@@ -25,7 +25,7 @@ static let type: SCNPhysicsShape.Option
 extern SCNPhysicsShapeOption const SCNPhysicsShapeTypeKey;
 ```
 
-#### Discussion
+## Discussion
 
 The value for this key is one of the constants listed in `Shape Types`. The default type is [`convexHull`](../shapetype/convexhull.md).
 

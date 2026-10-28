@@ -18,7 +18,7 @@ An interface for interacting with low-level, interprocess connections.
 @protocol NSConnectionDelegate <NSObject>
 ```
 
-#### Overview
+## Overview
 
 The [`NSConnectionDelegate`](./nsconnectiondelegate.md) protocol defines the optional methods implemented by delegates of [`NSConnection`](./nsconnection.md) objects.
 

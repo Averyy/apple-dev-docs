@@ -25,7 +25,7 @@ struct SessionProperty<Value>
 
 - [Composing dynamic sessions with instructions and profiles](../composing-dynamic-sessions-with-instructions-and-profiles.md)
 
-#### Overview
+## Overview
 
 Use this to access properties across a language model session, like to access the session history:
 

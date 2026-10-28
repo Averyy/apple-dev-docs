@@ -15,7 +15,7 @@ A rectangular area on a map, defined by coordinates of the rectangle’s northea
 region: CoordinateRegion;
 ```
 
-#### Discussion
+## Discussion
 
 The region property is an instance of [`CoordinateRegion`](../coordinateregion.md)
 

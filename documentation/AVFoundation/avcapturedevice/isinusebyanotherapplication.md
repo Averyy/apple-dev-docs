@@ -20,7 +20,7 @@ var isInUseByAnotherApplication: Bool { get }
 @property (nonatomic, readonly, getter=isInUseByAnotherApplication) BOOL inUseByAnotherApplication;
 ```
 
-#### Discussion
+## Discussion
 
 This property is key-value observable.
 

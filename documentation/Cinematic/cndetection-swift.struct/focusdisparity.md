@@ -19,7 +19,7 @@ The disparity to use in order to focus on the object.
 var focusDisparity: Float { get }
 ```
 
-#### Discussion
+## Discussion
 
 
 ---

@@ -26,7 +26,7 @@ var isEnabled: Bool { get set }
 @property (nonatomic, assign, getter=isEnabled) BOOL enabled;
 ```
 
-#### Discussion
+## Discussion
 
 This property isn’t key-value observable.
 

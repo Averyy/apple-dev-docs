@@ -22,7 +22,7 @@ string AuditEventIdpVendorName
 - `MICROSOFT_OIDC`
 - `GENERIC_IDP`
 
-#### Discussion
+## Discussion
 
 - Possible Values
 

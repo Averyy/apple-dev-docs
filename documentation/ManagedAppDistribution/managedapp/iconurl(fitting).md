@@ -19,11 +19,11 @@ A URL for the icon of the app.
 func iconURL(fitting size: CGSize) -> URL?
 ```
 
-#### Return Value
+## Return Value
 
 The URL of the icon.
 
-#### Discussion
+## Discussion
 
 The icon scales to fit the given size.
 

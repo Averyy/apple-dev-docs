@@ -19,7 +19,7 @@ var VMEXIT_HOST_IA32E: UInt32 { get }
 VMEXIT_HOST_IA32E
 ```
 
-#### Discussion
+## Discussion
 
 Must be `1`.
 

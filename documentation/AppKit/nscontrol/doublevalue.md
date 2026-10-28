@@ -19,7 +19,7 @@ var doubleValue: Double { get set }
 @property double doubleValue;
 ```
 
-#### Discussion
+## Discussion
 
 If the control contains many cells (for example, `NSMatrix`), then this property contains the value of the currently selected cell. If the control is in the process of editing the affected cell, then it invokes the  [`validateEditing()`](./validateediting%28%29.md) method before getting the value.
 

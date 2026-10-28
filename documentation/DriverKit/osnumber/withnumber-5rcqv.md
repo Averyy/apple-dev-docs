@@ -18,11 +18,11 @@ Allocates an OSNumber object with value and size.
 static OSNumberPtr withNumber(uint64_t value, size_t numberOfBits);
 ```
 
-#### Return Value
+## Return Value
 
 NULL on failure, otherwise the allocated OSNumber with reference count 1 to be released by the caller.
 
-#### Discussion
+## Discussion
 
 Allocates an OSNumber object with value and size.
 

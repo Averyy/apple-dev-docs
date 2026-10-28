@@ -21,7 +21,7 @@ case bottomLeading
 TVElementPositionBottomLeading
 ```
 
-#### Discussion
+## Discussion
 
 For left-to-right languages, the leading edge is the left edge. For right-to-left languages, the leading edge is the right edge.
 

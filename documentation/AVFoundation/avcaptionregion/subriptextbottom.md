@@ -22,7 +22,7 @@ class var subRipTextBottom: AVCaptionRegion { get }
 @property (class, readonly) AVCaptionRegion * subRipTextBottomRegion;
 ```
 
-#### Discussion
+## Discussion
 
 This region is suitable for SRT format, and it occupies the entire video display area. The region uses a [`AVCaptionRegion.WritingMode.leftToRightAndTopToBottom`](./writingmode-swift.enum/lefttorightandtoptobottom.md) writing mode, where a line progresses left to right and the block extends from top to bottom. The system stacks each line of text with bottom justification.
 

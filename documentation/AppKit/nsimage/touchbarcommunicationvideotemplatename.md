@@ -22,7 +22,7 @@ class let touchBarCommunicationVideoTemplateName: String
 extern NSImageName const NSImageNameTouchBarCommunicationVideoTemplate;
 ```
 
-#### Discussion
+## Discussion
 
 ![Template image for communication video](https://developer.apple.com/tutorials/images/com.apple.appkit/media-2825110@2x.png)
 

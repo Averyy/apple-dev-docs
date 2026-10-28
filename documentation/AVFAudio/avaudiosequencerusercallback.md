@@ -24,7 +24,7 @@ typealias AVAudioSequencerUserCallback = (AVMusicTrack, Data, AVMusicTimeStamp) 
 typedef void (^)(AVMusicTrack *, NSData *, double) AVAudioSequencerUserCallback;
 ```
 
-#### Discussion
+## Discussion
 
 The sequencer delivers this callback asynchronously to the rendering thread on an internal queue. The `userData` this returns is unique to each [`AVMusicUserEvent`](./avmusicuserevent.md) instance.
 

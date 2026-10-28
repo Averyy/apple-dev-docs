@@ -21,7 +21,7 @@ A transition that applies the default animation to a symbol-based image in a con
 + (instancetype) transition;
 ```
 
-#### Return Value
+## Return Value
 
 A new instance of the automatic transition.
 

@@ -25,7 +25,7 @@ func CMTimeShow(_ time: CMTime)
 extern void CMTimeShow(CMTime time);
 ```
 
-#### Discussion
+## Discussion
 
 This function is most appropriate to use for debugging purposes.
 

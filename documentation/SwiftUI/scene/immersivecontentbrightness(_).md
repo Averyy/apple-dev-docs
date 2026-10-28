@@ -16,11 +16,11 @@ nonisolated
 func immersiveContentBrightness(_ brightness: ImmersiveContentBrightness) -> some Scene
 ```
 
-#### Return Value
+## Return Value
 
 A scene that has the specified content brightness.
 
-#### Discussion
+## Discussion
 
 Pass one of the standard brightness levels defined in [`ImmersiveContentBrightness`](../immersivecontentbrightness.md) or a custom one that you create with the [`custom(_:)`](../immersivecontentbrightness/custom%28_%29.md) method to this scene modifier to set a preference for the content brightness in an [`ImmersiveSpace`](../immersivespace.md). The system takes the value that you set into account, but might not be able to honor a specific preference.
 

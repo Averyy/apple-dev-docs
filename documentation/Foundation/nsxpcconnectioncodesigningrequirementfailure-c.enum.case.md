@@ -21,7 +21,7 @@ A code-signing requirement check failed.
 NSXPCConnectionCodeSigningRequirementFailure
 ```
 
-#### Discussion
+## Discussion
 
 This error represents a failure to meet the requirement set by a call to [`NSXPCConnection`](./nsxpcconnection.md)‘s [`setCodeSigningRequirement(_:)`](./nsxpcconnection/setcodesigningrequirement%28_%29.md) method, or NSXPCConnectionListener’s [`setConnectionCodeSigningRequirement(_:)`](./nsxpclistener/setconnectioncodesigningrequirement%28_%29.md) method.
 

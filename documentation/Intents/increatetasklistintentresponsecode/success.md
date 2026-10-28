@@ -25,7 +25,7 @@ case success
 INCreateTaskListIntentResponseCodeSuccess
 ```
 
-#### Discussion
+## Discussion
 
 Use this code after creating the task list successfully. Your response should contain the details of the task list that you created.
 

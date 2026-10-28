@@ -21,7 +21,7 @@ func numberOfItems(for scrubber: NSScrubber) -> Int
 - (NSInteger) numberOfItemsForScrubber:(NSScrubber *) scrubber;
 ```
 
-#### Return Value
+## Return Value
 
 The number of items in the scrubber.
 

@@ -21,7 +21,7 @@ var mediaFileURL: URL? { get set }
 @property (nonatomic, copy, nullable) NSURL * mediaFileURL;
 ```
 
-#### Discussion
+## Discussion
 
 The media file URL must be a file URL. For video files, the system crops the left and right edges of the media file by 6 points, and rounds its corners. For audio files, it shows a graphical representation of the audio’s waveform.
 

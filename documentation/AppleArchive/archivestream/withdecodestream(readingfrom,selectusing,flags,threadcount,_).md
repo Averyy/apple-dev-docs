@@ -21,11 +21,11 @@ Calls the given closure with a decode input archive stream.
 static func withDecodeStream<E>(readingFrom stream: ArchiveByteStream, selectUsing filter: ArchiveHeader.EntryFilter? = nil, flags: ArchiveFlags = [], threadCount: Int = 0, _ body: (ArchiveStream) throws -> E) throws -> E
 ```
 
-#### Return Value
+## Return Value
 
 The result of the closure.
 
-#### Discussion
+## Discussion
 
 This function opens a stream created by [`decodeStream(readingFrom:selectUsing:flags:threadCount:)`](./decodestream%28readingfrom,selectusing,flags,threadcount%29.md), calls the specified closure, and closes the stream.
 

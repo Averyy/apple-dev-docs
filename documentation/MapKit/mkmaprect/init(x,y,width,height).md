@@ -25,7 +25,7 @@ init(x: Double, y: Double, width: Double, height: Double)
 static MKMapRect MKMapRectMake(double x, double y, double width, double height);
 ```
 
-#### Return Value
+## Return Value
 
 A map rectangle with the specified values.
 

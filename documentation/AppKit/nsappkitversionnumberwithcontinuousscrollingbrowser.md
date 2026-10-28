@@ -15,7 +15,7 @@ The specific version of the AppKit framework that introduced support the continu
 static const NSAppKitVersion NSAppKitVersionNumberWithContinuousScrollingBrowser;
 ```
 
-#### Discussion
+## Discussion
 
 Developers should not need to use this constant unless they are writing applications for macOS 10.3 and earlier.
 

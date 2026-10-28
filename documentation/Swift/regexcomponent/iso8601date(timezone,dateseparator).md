@@ -23,11 +23,11 @@ static func iso8601Date(timeZone: TimeZone, dateSeparator: Date.ISO8601FormatSty
 
 Available when `Self` is `Date.ISO8601FormatStyle`.
 
-#### Return Value
+## Return Value
 
 A `RegexComponent` that matches ISO 8601-formatted date substrings as Foundation [`Date`](../../Foundation/date.md) instances.
 
-#### Discussion
+## Discussion
 
 This method matches an ISO 8601 date string using the provided date separator. This method only matches a date substring. If the source string also contains a time, this method doesn’t match it. To match both date and time in an ISO 8601-formatted string, use [`iso8601(timeZone:includingFractionalSeconds:dateSeparator:dateTimeSeparator:timeSeparator:)`](./iso8601%28timezone,includingfractionalseconds,dateseparator,datetimeseparator,timeseparator%29.md).
 

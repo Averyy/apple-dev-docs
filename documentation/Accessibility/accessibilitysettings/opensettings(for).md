@@ -21,7 +21,7 @@ Opens the Settings app to a specific section of Accessibility settings.
 static func openSettings(for feature: AccessibilitySettings.Feature) async throws
 ```
 
-#### Discussion
+## Discussion
 
 Some app behaviors depend on a person turning on a specific Accessibility setting on their device. You can use this method to open the Settings app to a specific Accessibility setting to help people turn it on more quickly, as shown in the following code example.
 

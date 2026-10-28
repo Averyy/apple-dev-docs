@@ -25,7 +25,7 @@ var BNNSDataLayoutColumnMajorMatrix: BNNSDataLayout { get }
 BNNSDataLayoutColumnMajorMatrix
 ```
 
-#### Discussion
+## Discussion
 
 The value `(row, col)` is at index `row * stride[0] + col * stride[1]`.
 

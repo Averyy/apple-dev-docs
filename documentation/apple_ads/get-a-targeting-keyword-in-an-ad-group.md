@@ -11,11 +11,11 @@ Fetches a specific targeting keyword in an ad group.
 
 > **Deprecated**: Apple Ads Campaign Management API is deprecated. Instead, use the [Apple Ads Platform API](../apple-ads-platform-api/apple-ads-platform-api.md).
 
-#### Discussion
+## Discussion
 
 To return a specific targeting keyword, use the associated `campaignId`, `adgroupId`, and `keywordId` in the URI. You can also use a partial fetch. For more information, see the Use a Partial Fetch section of [Using Apple Ads API Functionality](./using-apple-search-ads-api-functionality.md).
 
-##### Payload example: Get a targeting keyword in an ad group
+### Payload example: Get a targeting keyword in an ad group
 
 **Request**:
 
@@ -41,7 +41,7 @@ GET https://api.searchads.apple.com/api/v5/campaigns/{campaignId}/adgroups/{adgr
 }
 ```
 
-##### Payload example: Get a targeting keyword in an ad group in a Maximize Conversions campaign
+### Payload example: Get a targeting keyword in an ad group in a Maximize Conversions campaign
 
 **Request**:
 

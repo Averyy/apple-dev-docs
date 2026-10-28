@@ -13,7 +13,7 @@ virtual void handleClientClose(
  IOOptionBitsoptions );
 ```
 
-#### Overview
+## Overview
 
 This method is called by `handleClose()` to allow a subclass to handle a client close. The arbitration lock is held.
 

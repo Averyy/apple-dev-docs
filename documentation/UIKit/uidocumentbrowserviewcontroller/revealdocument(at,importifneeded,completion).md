@@ -30,7 +30,7 @@ func revealDocument(at url: URL, importIfNeeded: Bool) async throws -> URL
 
 - [Enabling document sharing](../enabling-document-sharing.md)
 
-#### Discussion
+## Discussion
 
 Call this method to display a document in the document browser.
 

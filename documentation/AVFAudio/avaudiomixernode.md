@@ -25,7 +25,7 @@ class AVAudioMixerNode
 @interface AVAudioMixerNode : AVAudioNode
 ```
 
-#### Overview
+## Overview
 
 The mixer accepts input at any sample rate and efficiently combines sample rate conversions. It also accepts any channel count and correctly upmixes or downmixes to the output channel count.
 

@@ -21,7 +21,7 @@ Adds a given key-value pair to the dictionary.
 - (void) setObject:(ObjectType) obj forKeyedSubscript:(id<NSCopying>) key;
 ```
 
-#### Discussion
+## Discussion
 
 This method has the same behavior as the [`setObject(_:forKey:)`](./setobject%28_,forkey%29.md) method.
 

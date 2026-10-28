@@ -19,7 +19,7 @@ var entryCompletionHandler: (String) -> Void { get set }
 @property (nonatomic, copy) void (^entryCompletionHandler)(NSString *entry);
 ```
 
-#### Discussion
+## Discussion
 
 Your app should respond with any required actions in response to the user’s entry.
 

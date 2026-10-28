@@ -19,7 +19,7 @@ var effectiveRowSizeStyle: NSTableView.RowSizeStyle { get }
 @property (readonly) NSTableViewRowSizeStyle effectiveRowSizeStyle;
 ```
 
-#### Discussion
+## Discussion
 
 If the value in the [`rowSizeStyle`](./rowsizestyle-swift.property.md) property is [`NSTableView.RowSizeStyle.default`](./rowsizestyle-swift.enum/default.md), then this property contains the default size for this  table. The default size is currently set in System Preferences by the user.
 

@@ -25,7 +25,7 @@ func deleteTransaction(identifier: Int) throws
 - (BOOL) deleteTransactionWithIdentifier:(NSUInteger) identifier error:(NSError **) error;
 ```
 
-#### Discussion
+## Discussion
 
 When you delete a transaction, the test environment also removes the existing transaction from the receipt. Some transactions don’t appear in the receipt, including finished consumable purchases, failed purchases, Ask To Buy transactions pending approval, and restored purchases. Deleting a transaction deletes its child transactions, for example:
 

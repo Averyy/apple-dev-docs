@@ -23,7 +23,7 @@ class UIColorPickerViewController
 @interface UIColorPickerViewController : UIViewController
 ```
 
-#### Overview
+## Overview
 
 [`UIColorPickerViewController`](./uicolorpickerviewcontroller.md) provides a standard interface to select colors. Use this class instead of [`UIColorWell`](./uicolorwell.md) if you need more fine-grained control over the presentation.
 

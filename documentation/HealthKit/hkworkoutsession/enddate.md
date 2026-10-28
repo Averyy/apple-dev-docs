@@ -24,7 +24,7 @@ var endDate: Date? { get }
 @property (readonly, nullable) NSDate * endDate;
 ```
 
-#### Discussion
+## Discussion
 
 This property is set to `nil` when the workout session is initialized. The system assigns an end date when the session’s state changes to [`HKWorkoutSessionState.ended`](../hkworkoutsessionstate/ended.md).
 

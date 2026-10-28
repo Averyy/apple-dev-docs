@@ -24,7 +24,7 @@ let MTLCommandBufferEncoderInfoErrorKey: String
 extern NSErrorUserInfoKey const MTLCommandBufferEncoderInfoErrorKey;
 ```
 
-#### Discussion
+## Discussion
 
 You can retrieve an [`MTLCommandBufferEncoderInfo`](./mtlcommandbufferencoderinfo.md) instance from the [`userInfo`](../Foundation/nserror/userinfo.md) dictionary of a command buffer’s [`error`](./mtlcommandbuffer/error.md) property.
 

@@ -19,7 +19,7 @@ var tiffRepresentation: Data? { get }
 @property (copy, readonly, nullable) NSData * TIFFRepresentation;
 ```
 
-#### Discussion
+## Discussion
 
 Accessing this property results in a call to the [`tiffRepresentation(using:factor:)`](./tiffrepresentation%28using,factor%29.md) method using the stored compression type and factor retrieved from the initial image data or changed using the [`setCompression(_:factor:)`](./setcompression%28_,factor%29.md) method. If the stored compression type isn’t supported for writing TIFF data (for example, [`NSBitmapImageRep.TIFFCompression.next`](./tiffcompression/next.md)), the stored compression is changed to [`NSBitmapImageRep.TIFFCompression.none`](./tiffcompression/none.md) before calling the [`tiffRepresentation(using:factor:)`](./tiffrepresentation%28using,factor%29.md) method using the compression that’s returned by [`getCompression(_:factor:)`](./getcompression%28_,factor%29.md) (if applicable).
 

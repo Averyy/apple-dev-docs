@@ -20,7 +20,7 @@ The type of value provided to the template.
 associatedtype Value
 ```
 
-#### Discussion
+## Discussion
 
 When you create a custom provider, Swift infers this type from your implementation of the required [`previewValue`](./previewvalue.md) property and [`currentValue()`](./currentvalue%28%29.md) method.
 

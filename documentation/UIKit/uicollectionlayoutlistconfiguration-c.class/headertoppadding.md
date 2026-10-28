@@ -19,7 +19,7 @@ The amount of padding above each section header.
 @property (nonatomic) CGFloat headerTopPadding;
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`UICollectionViewLayoutAutomaticDimension`](../uicollectionviewlayoutautomaticdimension.md).
 

@@ -25,7 +25,7 @@ var userInfo: [AnyHashable : Any]? { get set }
 @property (nonatomic, strong, nullable) NSDictionary * userInfo;
 ```
 
-#### Discussion
+## Discussion
 
 You can use the info dictionary in any way that might be useful in your migration. You can set the contents of the dictionary directory or using the appropriate inspector in the Xcode mapping model editor.
 

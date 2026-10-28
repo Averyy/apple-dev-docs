@@ -19,7 +19,7 @@ var userData: UnsafeMutableRawPointer? { get }
 @property (readonly, nullable) void * userData;
 ```
 
-#### Discussion
+## Discussion
 
 When you call [`addTrackingRect(_:owner:userData:assumeInside:)`](../nsview/addtrackingrect%28_,owner,userdata,assumeinside%29.md) to set up a tracking rectangle, you can provide custom data to store in the event. AppKit makes that custom data available to you from this property.
 

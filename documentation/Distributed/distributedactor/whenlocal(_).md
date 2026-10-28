@@ -22,7 +22,7 @@ nonisolated
 func whenLocal<T, E>(_ body: @Sendable (isolated Self) async throws(E) -> T) async throws(E) -> T? where T : Sendable, E : Error
 ```
 
-#### Discussion
+## Discussion
 
 The `Self` passed to the body closure is isolated, meaning that the closure can be used to call non-distributed functions, or even access actor state.
 

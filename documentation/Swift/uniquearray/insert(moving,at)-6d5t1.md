@@ -21,7 +21,7 @@ Moves the elements of an output span into this array, starting at the specified 
 mutating func insert(moving items: inout OutputSpan<Element>, at index: Int)
 ```
 
-#### Discussion
+## Discussion
 
 All existing elements at or following the specified position are moved to make room for the new items.
 

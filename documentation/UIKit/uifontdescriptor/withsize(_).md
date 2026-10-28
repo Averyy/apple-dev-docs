@@ -24,7 +24,7 @@ func withSize(_ newPointSize: CGFloat) -> UIFontDescriptor
 - (UIFontDescriptor *) fontDescriptorWithSize:(CGFloat) newPointSize;
 ```
 
-#### Return Value
+## Return Value
 
 The new font descriptor.
 

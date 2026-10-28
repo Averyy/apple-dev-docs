@@ -19,7 +19,7 @@ The identifiers for the keychain groups that the app may share items with.
 - **Name**: `keychain-access-groups` (Keychain Access Groups)
 - **Type**: array of string 
 
-#### Discussion
+## Discussion
 
 To add this entitlement to your app, enable the Keychain Sharing capability in Xcode.
 

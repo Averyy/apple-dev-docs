@@ -21,7 +21,7 @@ struct WebContentProcess
 
 - [Managing the browser extension life cycle](./managing-the-browser-extension-lifecycle.md)
 
-#### Overview
+## Overview
 
 A browser app can launch multiple web content extension processes. Each instance of this structure represents a separate process.
 

@@ -23,7 +23,7 @@ case character
 NSTextSelectionNavigationDestinationCharacter
 ```
 
-#### Discussion
+## Discussion
 
 When the movement direction isn’t along the line (for example up and down for a horizontal line), it moves to the adjacent line using the anchor point instead of resolving to the logical direction. This could result in a location inside a cluster depending on the specific characteristics of a given script.  For example, certain Indic scripts combine characters in specific ways depending on usage and position to form composite characters. The framework returns a location consistent with the rules of the script and the direction of movement.
 

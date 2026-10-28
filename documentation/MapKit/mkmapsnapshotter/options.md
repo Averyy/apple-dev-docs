@@ -25,7 +25,7 @@ class Options
 @interface MKMapSnapshotOptions : NSObject
 ```
 
-#### Overview
+## Overview
 
 After creating and configuring an instance of this class, you pass that instance to an [`MKMapSnapshotter`](../mkmapsnapshotter.md) object. The snapshotter uses the configuration options to determine which portion of the map to capture, the viewing angle to use for the camera, and the map’s overall appearance.
 

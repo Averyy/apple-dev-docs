@@ -5,13 +5,13 @@
 
 Import a reference object file to track a real-world object in your visionOS app.
 
-#### Overview
+## Overview
 
 You can use reference objects in your visionOS app to track real-world objects in a person’s surroundings. With this capability, you can attach virtual content to those real-world objects to create engaging experiences. For example, with a reference object, you can track a household item and add virtual content to it, like highlighting a part and showing how to fix it.
 
 To create a reference object, obtain a 3D model asset, train a machine learning model with that 3D model asset in Create ML, then import the resulting reference object file into your app. To track real-world objects in your app, set up object tracking in Reality Composer Pro by using the reference object file as an anchor entity. For more information about creating a reference object file, see [Implementing object tracking in your app](./implementing-object-tracking-in-your-app.md).
 
-#### Set up a scene in Reality Composer Pro
+## Set up a scene in Reality Composer Pro
 
 You can use Reality Composer Pro to import your reference object file and set up it up for tracking. However, before importing your reference object file, you need to set up a scene in Reality Composer Pro by following these steps:
 
@@ -23,7 +23,7 @@ You can use Reality Composer Pro to import your reference object file and set up
 
 ![An Xcode screenshot showing the Package file selected in the Project navigator on the left, and the Open in Reality Composer Pro button highlighted at the top of the 3D View.](https://developer.apple.com/tutorials/images/com.apple.visionOS/package-and-rcp@2x.png)
 
-##### Create an anchor entity
+### Create an anchor entity
 
 After creating an empty scene, you need to create an anchor entity for your reference object. This allows you to track the real-word object and attach virtual content to it.
 

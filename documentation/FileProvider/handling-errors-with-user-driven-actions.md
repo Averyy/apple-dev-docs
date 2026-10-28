@@ -5,7 +5,7 @@
 
 Handle any errors that occur while processing the action.
 
-#### Overview
+## Overview
 
 Whenever possible, handle the error in a way that allows the local action to succeed. If the local action can succeed, pass `nil` to the completion handler’s `error` property, and then fix any inconsistencies after the fact.
 
@@ -13,13 +13,13 @@ However, if an unrecoverable error occurs, do not make the local change. Instead
 
 The following sections describe tactics for responding to specific error types.
 
-##### Responding to Upload Errors
+### Responding to Upload Errors
 
 Handle any errors that occur while uploading the changes to your server  (such as [`NSFileProviderError.Code.insufficientQuota`](./nsfileprovidererror/code/insufficientquota.md) errors)  by updating the item locally and setting its [`uploadingError`](./nsfileprovideritemprotocol/uploadingerror.md) property. Upload errors should not prevent local changes. Instead, attempt to sync the change again, after the error is resolved.
 
 For authentication errors, you can present a custom user interface using the [File Provider UI](../FileProviderUI/FileProviderUI.md) framework. For more information, see the [`FPUIActionExtensionViewController`](../FileProviderUI/fpuiactionextensionviewcontroller.md) class’s [`prepare(forError:)`](../FileProviderUI/fpuiactionextensionviewcontroller/prepare%28forerror%29.md) method.
 
-##### Responding to Name Collisions
+### Responding to Name Collisions
 
 If a name collision occurs when syncing a local item with your server, update the local item, giving it a unique file name. A name collision is not considered an error.
 

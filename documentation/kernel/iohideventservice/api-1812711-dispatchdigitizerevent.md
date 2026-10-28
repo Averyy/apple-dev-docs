@@ -23,7 +23,7 @@ virtual void dispatchDigitizerEvent(
  IOOptionBits options = 0 );
 ```
 
-#### Overview
+## Overview
 
 This is meant to be used with transducers without any orientation.
 

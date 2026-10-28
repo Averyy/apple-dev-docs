@@ -26,7 +26,7 @@ func urlProtocol(_ protocol: URLProtocol, didLoad data: Data)
 - (void) URLProtocol:(NSURLProtocol *) protocol didLoadData:(NSData *) data;
 ```
 
-#### Discussion
+## Discussion
 
 The data object must contain only new data loaded since the previous invocation of this method.
 

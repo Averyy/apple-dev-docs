@@ -25,7 +25,7 @@ var defersCurrentPageDisplay: Bool { get set }
 @property (nonatomic) BOOL defersCurrentPageDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 Set the value of this property to [`true`](../../Swift/true.md) so that, when the user taps the control to go to a new page, the class defers updating the page control until it calls [`updateCurrentPageDisplay()`](./updatecurrentpagedisplay%28%29.md). Set the value to [`false`](../../Swift/false.md) (the default) to have the page control updated immediately.
 

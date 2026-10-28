@@ -20,11 +20,11 @@ optional func outlineView(_ outlineView: NSOutlineView, shouldTypeSelectFor even
 - (BOOL) outlineView:(NSOutlineView *) outlineView shouldTypeSelectForEvent:(NSEvent *) event withCurrentSearchString:(NSString *) searchString;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if type select should proceed, otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 Generally, this method will be called from [`keyDown(with:)`](../nsresponder/keydown%28with%29.md) and the event will be a key event.
 

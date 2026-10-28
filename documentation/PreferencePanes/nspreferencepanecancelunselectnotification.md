@@ -16,7 +16,7 @@ Notifies observers that the preference pane should not be deselected.
 extern NSString * const NSPreferencePaneCancelUnselectNotification;
 ```
 
-#### Discussion
+## Discussion
 
 Posted when [`reply(toShouldUnselect:)`](./nspreferencepane/reply%28toshouldunselect%29.md) is invoked with an argument of [`false`](../Swift/false.md) after [`shouldUnselect`](./nspreferencepane/shouldunselect.md) has returned a value of [`NSPreferencePaneUnselectReply.unselectLater`](./nspreferencepaneunselectreply/unselectlater.md).
 

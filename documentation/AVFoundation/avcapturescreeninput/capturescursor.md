@@ -19,7 +19,7 @@ var capturesCursor: Bool { get set }
 @property (nonatomic) BOOL capturesCursor;
 ```
 
-#### Discussion
+## Discussion
 
 When this property is true (the default), captured video frames include the mouse pointer. If you change this property to false, the captured output contains only the windows on the screen (that is, the mouse pointer is invisible in captured video).
 

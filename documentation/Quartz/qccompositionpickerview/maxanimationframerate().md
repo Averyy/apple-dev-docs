@@ -21,7 +21,7 @@ func maxAnimationFrameRate() -> Float
 - (float) maxAnimationFrameRate;
 ```
 
-#### Return Value
+## Return Value
 
 The maximum frame rate.
 

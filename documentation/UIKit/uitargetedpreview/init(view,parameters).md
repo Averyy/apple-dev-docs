@@ -23,7 +23,7 @@ convenience init(view: UIView, parameters: UIPreviewParameters)
 - (instancetype) initWithView:(UIView *) view parameters:(UIPreviewParameters *) parameters;
 ```
 
-#### Return Value
+## Return Value
 
 A new targeted preview object.
 

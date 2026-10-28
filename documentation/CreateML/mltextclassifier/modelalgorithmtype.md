@@ -24,7 +24,7 @@ enum ModelAlgorithmType
 - [Creating a text classifier model](../creating-a-text-classifier-model.md)
 - [Improving Your Model’s Accuracy](../improving-your-model-s-accuracy.md)
 
-#### Overview
+## Overview
 
 Typically, `maxEnt` is the fastest training algorithm. If the text classifier’s performance isn’t good enough, consider the `transferLearning` algorithm.
 

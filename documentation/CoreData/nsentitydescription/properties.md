@@ -25,11 +25,11 @@ var properties: [NSPropertyDescription] { get set }
 @property (strong) NSArray<__kindof NSPropertyDescription *> * properties;
 ```
 
-#### Discussion
+## Discussion
 
 The elements in the array are instances of [`NSAttributeDescription`](../nsattributedescription.md), [`NSRelationshipDescription`](../nsrelationshipdescription.md), and/or [`NSFetchedPropertyDescription`](../nsfetchedpropertydescription.md).
 
-##### Special Considerations
+### Special Considerations
 
 Setting the properties raises an exception if the receiver’s model has been used by an object graph manager.
 

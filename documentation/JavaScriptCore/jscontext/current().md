@@ -24,11 +24,11 @@ class func current() -> JSContext!
 + (JSContext *) currentContext;
 ```
 
-#### Return Value
+## Return Value
 
 The currently executing context, or `nil` if not within native code called from JavaScript.
 
-#### Discussion
+## Discussion
 
 Call this method within an Objective-C or Swift block or method invoked from within JavaScript to obtain the [`JSContext`](../jscontext.md) object responsible for executing that Javascript code.
 

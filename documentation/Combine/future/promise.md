@@ -25,7 +25,7 @@ typealias Promise = (Result<Output, Failure>) -> Void
 
 - [Using Combine for Your App’s Asynchronous Code](../using-combine-for-your-app-s-asynchronous-code.md)
 
-#### Discussion
+## Discussion
 
 The promise closure receives one parameter: a `Result` that contains either a single element published by a [`Future`](../future.md), or an error.
 

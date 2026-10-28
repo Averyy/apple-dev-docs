@@ -21,11 +21,11 @@ Provides scoped access to a raw buffer pointer with the specified byte count and
 func withUnsafeTemporaryAllocation<R, E>(byteCount: Int, alignment: Int, _ body: (UnsafeMutableRawBufferPointer) throws(E) -> R) throws(E) -> R where E : Error, R : ~Copyable
 ```
 
-#### Return Value
+## Return Value
 
 Whatever is returned by `body`.
 
-#### Discussion
+## Discussion
 
 > **Throws**: Whatever is thrown by `body`.
 

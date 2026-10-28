@@ -18,7 +18,7 @@ The targets that directly comprise the product, in the order in which they are d
 var targets: [Target] { get }
 ```
 
-#### Discussion
+## Discussion
 
 The product contains the transitive closure of the these targets and their dependencies. Some kinds of products have further restrictions on the set of targets (for example, an executable product must have one and only one target that defines the main entry point for an executable).
 

@@ -21,7 +21,7 @@ A point that’s in the top, leading corner of a view.
 static let topLeading: UnitPoint
 ```
 
-#### Discussion
+## Discussion
 
 This point occupies the position where the horizontal and vertical alignment guides intersect for [`topLeading`](../alignment/topleading.md) alignment. The leading edge appears on the left in a left-to-right language environment and on the right in a right-to-left environment.
 

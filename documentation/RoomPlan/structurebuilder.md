@@ -21,7 +21,7 @@ class StructureBuilder
 
 - [Scanning the rooms of a single structure](./scanning-the-rooms-of-a-single-structure.md)
 
-#### Overview
+## Overview
 
 This class in conjunction with [`CapturedStructure`](./capturedstructure.md) enables an app to export a 3D model that consists of multiple [`CapturedRoom`](./capturedroom.md) instances. First, combine the rooms into a single captured result by calling [`capturedStructure(from:)`](./structurebuilder/capturedstructure%28from%29.md). Then, generate a 3D model of the whole structure by calling [`export(to:metadataURL:modelProvider:exportOptions:)`](./capturedstructure/export%28to,metadataurl,modelprovider,exportoptions%29.md).
 

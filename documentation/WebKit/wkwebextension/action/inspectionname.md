@@ -23,7 +23,7 @@ var inspectionName: String? { get set }
 @property (nonatomic, copy, nullable) NSString * inspectionName;
 ```
 
-#### Discussion
+## Discussion
 
 This is the text that will appear when inspecting the pop-up web view.
 

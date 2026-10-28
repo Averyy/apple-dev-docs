@@ -21,7 +21,7 @@ The end date.
 var end: Date { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Precondition: `end >= start`
 

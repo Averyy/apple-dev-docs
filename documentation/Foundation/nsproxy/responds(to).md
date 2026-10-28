@@ -25,7 +25,7 @@ class func responds(to aSelector: Selector) -> Bool
 + (BOOL) respondsToSelector:(SEL) aSelector;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the receiving class responds to `aSelector` messages, otherwise [`false`](../../Swift/false.md).
 

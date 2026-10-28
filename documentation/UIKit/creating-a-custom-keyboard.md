@@ -4,7 +4,7 @@
 
 Add an extension to your Xcode project to provide systemwide customized text input.
 
-#### Overview
+## Overview
 
 A custom keyboard replaces the system keyboard for users who want capabilities such as a novel text input method or the ability to enter text in a language not otherwise supported. Users enable your custom keyboard in Settings, which allows them to access your keyboard systemwide wherever third-party keyboards are supported.
 
@@ -12,7 +12,7 @@ A custom keyboard replaces the system keyboard for users who want capabilities s
 
 Creating a custom keyboard requires several steps. In addition to adding a Custom Keyboard extension target to your project, you have to configure options, implement your custom interface, and decide what text interactions to support. Users expect a variety of common keyboard interactions such as autocorrection, autocapitalization, smart quotes, and more.
 
-##### Add a Custom Keyboard target to your app
+### Add a Custom Keyboard target to your app
 
 The Custom Keyboard Extension template provides a starting point for you to build your keyboard extension. Xcode configures your project to build the extension and includes it in your app’s bundle.
 
@@ -31,7 +31,7 @@ Make sure the Display Name field in the General tab of your keyboard target accu
 
 If you support multiple languages that require different keyboard layout or functionality, repeat the steps above to add additional custom keyboard targets for each language. Set the `PrimaryLanguage` value accordingly in each of the target’s `Info.plist` files.
 
-##### Configure information property list options
+### Configure information property list options
 
 If applicable to your custom keyboard, edit the keyboard extension’s `Info.plist` to configure the following options:
 
@@ -45,7 +45,7 @@ Set these keys in the [`NSExtension`](../BundleResources/information-property-li
 
 ![Screenshot showing the NSExtensionAttributes section in a custom keyboard target’s Info.plist file. ](https://developer.apple.com/tutorials/images/com.apple.uikit/media-3570266@2x.png)
 
-##### Add your custom user interface
+### Add your custom user interface
 
 When the user activates your keyboard, it replaces the system keyboard. Your custom keyboard extension’s principal class provides the view that’s displayed. By default, Xcode’s custom keyboard template configures a class named `KeyboardViewController` as the principal class. This controller’s view is where you define your user interface.
 
@@ -73,7 +73,7 @@ Your keyboard should also be flexible with the layout because the width of the k
 
 For more details, see [Configuring a custom keyboard interface](./configuring-a-custom-keyboard-interface.md).
 
-##### Handle text interactions
+### Handle text interactions
 
 Custom keyboards run in an isolated process that doesn’t have direct access to the text input view. [`UIInputViewController`](./uiinputviewcontroller.md) provides a [`textDocumentProxy`](./uiinputviewcontroller/textdocumentproxy.md) property allowing your keyboard to access the text input view. You use this proxy to get the selected text, insert or delete text, manipulate the text insertion position, and get surrounding textual context in order to support things like autocorrect or autocomplete.
 
@@ -87,7 +87,7 @@ let selectedText = textDocumentProxy.selectedText
 
 For more information, see [Handling text interactions in custom keyboards](./handling-text-interactions-in-custom-keyboards.md).
 
-##### Debug your custom keyboard
+### Debug your custom keyboard
 
 Debugging a custom keyboard is similar to debugging any app extension. Xcode prompts you to choose a host app to launch, then you begin editing text in that host app in order to invoke your custom keyboard. The host app can be any app available in the run destination, including your app that contains the keyboard extension.
 
@@ -101,7 +101,7 @@ iOS launches your keyboard extension in its own process, and Xcode attaches a de
 
 > ❗ **Important**:  If your keyboard isn’t available in the list of active keyboards, you have to enable it. In Settings, navigate to General > Keyboard > Keyboards and select Add New Keyboard. Choose your keyboard(s) from the list of third-party keyboards.
 
-##### Limit memory usage
+### Limit memory usage
 
 Your custom keyboard code executes in a separate process, and that process has a limit on the amount of memory it may use. If your keyboard extension exceeds the memory limit the system terminates it. Here are some tips for managing memory efficiently:
 

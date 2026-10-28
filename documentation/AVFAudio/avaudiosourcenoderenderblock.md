@@ -25,7 +25,7 @@ typealias AVAudioSourceNodeRenderBlock = (UnsafeMutablePointer<ObjCBool>, Unsafe
 typedef int (^)(_Bool *, const struct AudioTimeStamp *, unsigned int, struct AudioBufferList *) AVAudioSourceNodeRenderBlock;
 ```
 
-#### Return Value
+## Return Value
 
 An `OSStatus` result code. When returning an error, consider the audio data invalid.
 

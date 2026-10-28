@@ -19,11 +19,11 @@
 static simd_packed_double4 SPRotationAxis3DGetPackedVector(SPRotationAxis3D axis);
 ```
 
-#### Return Value
+## Return Value
 
 A new packed simd vector .
 
-#### Discussion
+## Discussion
 
 Creates a packed simd vector from a Spatial 3D rotation axis.
 

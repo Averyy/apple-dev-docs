@@ -21,7 +21,7 @@ The padding used to space a view from its containing scene.
 struct ScenePadding
 ```
 
-#### Overview
+## Overview
 
 Add scene padding to a view using the [`scenePadding(_:edges:)`](./view/scenepadding%28_,edges%29.md) modifier.
 

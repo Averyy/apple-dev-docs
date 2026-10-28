@@ -25,7 +25,7 @@ static var badAddress: Errno { get }
 
 - [Adopting Swift Error Constants](../adopting-errno.md)
 
-#### Discussion
+## Discussion
 
 An address passed as an argument to a system call was invalid.
 

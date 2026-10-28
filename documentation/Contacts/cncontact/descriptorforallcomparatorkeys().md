@@ -24,11 +24,11 @@ class func descriptorForAllComparatorKeys() -> any CNKeyDescriptor
 + (id<CNKeyDescriptor>) descriptorForAllComparatorKeys;
 ```
 
-#### Return Value
+## Return Value
 
 A descriptor object that defines the keys required by the sort comparator.
 
-#### Discussion
+## Discussion
 
 Use the returned object to specify the keys you want to fetch from the database. For example, use it when creating a [`CNContactFetchRequest`](../cncontactfetchrequest.md) object.
 

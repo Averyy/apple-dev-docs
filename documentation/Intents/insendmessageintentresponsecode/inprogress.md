@@ -24,7 +24,7 @@ case inProgress
 INSendMessageIntentResponseCodeInProgress
 ```
 
-#### Discussion
+## Discussion
 
 When handling the intent, return this code if you are unable to send the message within a few seconds.
 

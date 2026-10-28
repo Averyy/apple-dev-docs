@@ -15,7 +15,7 @@ Ad group-level performance metrics for brands.
 object BrandsAdGroupMetrics
 ```
 
-#### Discussion
+## Discussion
 
 The `BrandsAdGroupMetrics` extends [`BrandsMetrics`](./brandsmetrics.md) with no additional fields. It’s the metrics object embedded in brands ad group report rows.
 

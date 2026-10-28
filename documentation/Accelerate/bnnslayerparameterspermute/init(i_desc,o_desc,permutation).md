@@ -23,7 +23,7 @@ Returns a new permute layer parameters structure from the specified parameters.
 init(i_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, permutation: (Int, Int, Int, Int, Int, Int, Int, Int))
 ```
 
-#### Discussion
+## Discussion
 
 Use the permutation array to specify the input axis source for the corresponding output axis source. For example, a permutation array [2,1,0] applied on a [`BNNSDataLayoutImageCHW`](../bnnsdatalayoutimagechw.md) tensor results in axis reverse (that is, output axis 0 is input axis 2, output axis 1 is input axis 1, and output axis 2 is input axis 0).
 

@@ -25,7 +25,7 @@ func CFURLCreateCopyDeletingLastPathComponent(_ allocator: CFAllocator!, _ url: 
 extern CFURLRefCFURLCreateCopyDeletingLastPathComponent(CFAllocatorRef allocator, CFURLRef url);
 ```
 
-#### Return Value
+## Return Value
 
 A copy of `url` with the last path component deleted. Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

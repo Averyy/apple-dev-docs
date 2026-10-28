@@ -17,13 +17,13 @@ Perform quantized matrix multiplication with matrix-level gather.
 func gatherQuantizedMM(_ x: MLXArray, _ w: MLXArray, scales: MLXArray, biases: MLXArray?, lhsIndices: MLXArray? = nil, rhsIndices: MLXArray? = nil, transpose: Bool = true, groupSize: Int? = nil, bits: Int? = nil, mode: QuantizationMode = .affine, sortedIndices: Bool = false, stream: StreamOrDevice = .default) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 This operation is the quantized equivalent to [`gatherMM(_:_:lhsIndices:rhsIndices:sortedIndices:stream:)`](./gathermm%28_,_,lhsindices,rhsindices,sortedindices,stream%29.md)
 
 Note that `scales` and `biases` must have the same batch dimensions as `w` since they represent the same quantized matrix.
 
-##### See Also
+### See Also
 
 - [Arithmetic](./arithmetic.md)
 - [`quantizedMM(_:_:scales:biases:transpose:groupSize:bits:mode:stream:)`](./quantizedmm%28_,_,scales,biases,transpose,groupsize,bits,mode,stream%29.md)

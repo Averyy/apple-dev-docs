@@ -22,11 +22,11 @@ func CVDisplayLinkStart(_ displayLink: CVDisplayLink) -> CVReturn
 extern CVReturn CVDisplayLinkStart(CVDisplayLinkRef displayLink);
 ```
 
-#### Return Value
+## Return Value
 
 A Core Video result code. See[Core Video Constants](./core-video-constants.md) for possible values.
 
-#### Discussion
+## Discussion
 
 Calling this function starts the display link thread, which then periodically calls back to your application to request that you display frames. If the specified display link is already running, `CVDisplayLinkStart` returns an error.
 

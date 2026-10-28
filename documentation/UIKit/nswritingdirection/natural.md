@@ -24,7 +24,7 @@ case natural
 NSWritingDirectionNatural
 ```
 
-#### Discussion
+## Discussion
 
 This is the default writing direction.
 

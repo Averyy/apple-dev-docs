@@ -20,11 +20,11 @@ func copyStream(withStreamID streamID: Int) throws -> IOUSBHostStream
 - (IOUSBHostStream *) copyStreamWithStreamID:(NSUInteger) streamID error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to an [`IOUSBHostStream`](../iousbhoststream.md); otherwise, `nil` if the device or the underlying host controller doesn’t support the specified stream ID.
 
-#### Discussion
+## Discussion
 
 Call [`enableStreams()`](./enablestreams%28%29.md) before this method.
 

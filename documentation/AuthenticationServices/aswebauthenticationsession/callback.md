@@ -25,7 +25,7 @@ class Callback
 @interface ASWebAuthenticationSessionCallback : NSObject
 ```
 
-#### Overview
+## Overview
 
 When [`ASWebAuthenticationSession`](../aswebauthenticationsession.md) navigates to a matching URL, it passes the URL to the session completion handler.
 

@@ -5,7 +5,7 @@
 
 Verify that your app handles a subscription lapse properly using the accelerated time rates within the sandbox environment.
 
-#### Overview
+## Overview
 
 Auto-renewable subscriptions behave differently in the sandbox environment and the production environment.
 

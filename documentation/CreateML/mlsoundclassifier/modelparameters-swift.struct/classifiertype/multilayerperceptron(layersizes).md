@@ -15,7 +15,7 @@ A neural network model that uses three or more layers to classify an input into 
 case multilayerPerceptron(layerSizes: [Int])
 ```
 
-#### Discussion
+## Discussion
 
 The neural network has a minimum of three layers:
 

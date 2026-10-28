@@ -22,7 +22,7 @@ func bufferPixelsHigh() -> Int
 - (NSUInteger) bufferPixelsHigh;
 ```
 
-#### Return Value
+## Return Value
 
 The height, expressed in pixels.
 

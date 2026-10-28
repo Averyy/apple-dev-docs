@@ -15,7 +15,7 @@ The insert line key.
 static let insertLine: NSEvent.SpecialKey
 ```
 
-#### Discussion
+## Discussion
 
 This key is unavailable on most Macintosh keyboards.
 

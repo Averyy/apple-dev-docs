@@ -22,11 +22,11 @@ Returns the configuration name associated with the given on-disk store identifie
 func configurationName(forStoreIdentifier identifier: String) -> String?
 ```
 
-#### Return Value
+## Return Value
 
 The `name` of the `ModelConfiguration` that backs the given store, or `nil` if no store with that identifier exists in this container or if `invalidate()` has been called.
 
-#### Discussion
+## Discussion
 
 Use this when you already have a store identifier — such as `PersistentIdentifier.storeIdentifier` from a fetched object or a store identifier from a history transaction — and need to map it back to the human-readable configuration name that produced that store.
 

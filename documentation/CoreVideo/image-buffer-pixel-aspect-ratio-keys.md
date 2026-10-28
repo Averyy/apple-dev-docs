@@ -5,7 +5,7 @@
 
 Keys that describe the pixel aspect ratio of an image buffer.
 
-#### Overview
+## Overview
 
 Define these key-value pairs in a [`CFDictionary`](../CoreFoundation/cfdictionary.md) instance and use the [`kCVImageBufferPixelAspectRatioKey`](./kcvimagebufferpixelaspectratiokey.md) key to attach it to the image buffer.
 

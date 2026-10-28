@@ -20,11 +20,11 @@ optional func textView(_ textView: NSTextView, shouldChangeTextIn affectedCharRa
 - (BOOL) textView:(NSTextView *) textView shouldChangeTextInRange:(NSRange) affectedCharRange replacementString:(NSString *) replacementString;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) to allow the replacement, or [`false`](../../Swift/false.md) to reject the change.
 
-#### Discussion
+## Discussion
 
 If a delegate implements this method and not its multiple-selection replacement, [`textView(_:shouldChangeTextInRanges:replacementStrings:)`](./textview%28_,shouldchangetextinranges,replacementstrings%29.md), it is called with an appropriate range and string. If a delegate implements the new method, then this one is ignored.
 

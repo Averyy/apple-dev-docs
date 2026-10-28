@@ -24,7 +24,7 @@ func accessibilityIncrement()
 - (void) accessibilityIncrement;
 ```
 
-#### Discussion
+## Discussion
 
 If your element has the [`adjustable`](../../UIKit/uiaccessibilitytraits/adjustable.md) trait, you must implement this method. Use this method to increment the value of the element. For example, a [`UISlider`](../../UIKit/uislider.md) object uses this method to increment its value by an appropriate amount.
 

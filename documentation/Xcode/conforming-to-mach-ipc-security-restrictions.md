@@ -5,17 +5,17 @@
 
 Avoid crashes and potentially insecure situations associated with Mach messages.
 
-#### Overview
+## Overview
 
 Mach ports represent low-level inter-process communication (IPC) capabilities on the system, and as such are a fundamental and powerful construct. An attacker who gains access to a Mach port for your app or extension potentially gains a lot of privileges they can use to attack your app and other resources on the system.
 
 Higher-level IPC mechanisms, including the Mach Interface Generator (MIG) and [XPC](../XPC/XPC.md), are designed to mitigate many of the security issues related to Mach IPC. Using Mach IPC traps directly doesn’t take advantage of these mitigations, and is very difficult to do correctly. Adopt the [`com.apple.security.hardened-process.platform-restrictions`](../BundleResources/entitlements/com.apple.security.hardened-process.platform-restrictions.md) entitlement in the Enhanced Security capability to turn potentially insecure misuse of Mach and VM APIs into crashes, and use the crash reports to diagnose and fix or remove the potentially insecure code.
 
-##### Replace Mach IPC traps with other IPC mechanisms
+### Replace Mach IPC traps with other IPC mechanisms
 
 The easiest way to fix potentially insecure use of Mach IPC traps is to completely avoid using the API. Instead, use a different IPC mechanism that avoids the potentially insecure situations, for example, [XPC](../XPC/XPC.md).
 
-##### Diagnose crashes due to additional run-time platform restrictions
+### Diagnose crashes due to additional run-time platform restrictions
 
 If your process has the [`com.apple.security.hardened-process.platform-restrictions`](../BundleResources/entitlements/com.apple.security.hardened-process.platform-restrictions.md) entitlement with a value of at least `1` and the system detects a potentially insecure use of Mach IPC, the system crashes your process. The crash report has an exception type of `EXC_GUARD`, and exception subtype of `GUARD_TYPE_MACH_PORT`. The exception message in the crash report is one of these values:
 

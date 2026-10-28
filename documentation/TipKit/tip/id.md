@@ -22,7 +22,7 @@ The tip’s unique identifier.
 var id: String { get }
 ```
 
-#### Overview
+## Overview
 
 > **Note**: More information on custom tip identifiers can be found in WWDC24 Session 10070: [Customize feature discovery with TipKit](https://developer.apple.com/videos/play/wwdc2024/10070?time=312).
 

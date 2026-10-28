@@ -24,7 +24,7 @@ class AVCaptionRenderer
 @interface AVCaptionRenderer : NSObject
 ```
 
-#### Overview
+## Overview
 
 This object renders a caption scene for a given time from a collection of captions. If there aren’t any captions to display at the specified time, the renderer draws an empty flood fill with a zero alpha or a color.
 

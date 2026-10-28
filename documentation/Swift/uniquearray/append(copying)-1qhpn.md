@@ -21,7 +21,7 @@ Copies the elements of a buffer to the end of this array.
 mutating func append(copying newElements: UnsafeBufferPointer<Element>)
 ```
 
-#### Discussion
+## Discussion
 
 If the array does not have sufficient capacity to hold all items in the source buffer, then this automatically grows the array’s capacity, using a geometric growth rate.
 

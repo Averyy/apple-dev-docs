@@ -37,7 +37,7 @@ var customIdentifier: String? { get }
 - [Improving interactions between Siri and your messaging app](../../SiriKit/improving-interactions-between-siri-and-your-messaging-app.md)
 - [Resolving the Parameters of an Intent](../../SiriKit/resolving-the-parameters-of-an-intent.md)
 
-#### Discussion
+## Discussion
 
 Use this property to access the custom identification string that you specified at initialization time. The value of this property is also returned by the [`vocabularyIdentifier`](../inspeakable/vocabularyidentifier.md) property.
 

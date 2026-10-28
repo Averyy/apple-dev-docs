@@ -25,11 +25,11 @@ func downloadTask(with request: URLRequest, completionHandler: @escaping @Sendab
 - (NSURLSessionDownloadTask *) downloadTaskWithRequest:(NSURLRequest *) request completionHandler:(void (^)(NSURL *location, NSURLResponse *response, NSError *error)) completionHandler;
 ```
 
-#### Return Value
+## Return Value
 
 The new session download task.
 
-#### Discussion
+## Discussion
 
 By creating a task based on a request object, you can tune various aspects of the task’s behavior, including the cache policy and timeout interval.
 

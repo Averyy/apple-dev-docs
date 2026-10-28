@@ -21,7 +21,7 @@ Generates a column by adding each element in a column type to the corresponding 
 func + <L, R>(lhs: L, rhs: R) -> Column<L.Element> where L : ColumnProtocol, R : OptionalColumnProtocol, L.Element : AdditiveArithmetic, L.Element == R.WrappedElement
 ```
 
-#### Return Value
+## Return Value
 
 A new column with the same type as the left column.
 

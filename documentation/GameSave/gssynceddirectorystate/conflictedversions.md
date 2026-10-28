@@ -23,7 +23,7 @@ var conflictedVersions: [GSSyncedDirectoryVersion]? { get }
 @property (readonly, nullable) NSArray<GSSyncedDirectoryVersion *> * conflictedVersions;
 ```
 
-#### Discussion
+## Discussion
 
 If you’re implementing your own conflict resolution, read all of the conflicting versions, and modify one of them to incorporate the state and changes from the others. Then call [`resolveConflicts(with:)`](../gssynceddirectory/resolveconflicts%28with%29.md), passing that version.
 

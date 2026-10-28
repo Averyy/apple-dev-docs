@@ -25,7 +25,7 @@ func ColorSyncProfileCreate(_ data: CFData!, _ error: UnsafeMutablePointer<Unman
 extern ColorSyncProfileRefColorSyncProfileCreate(CFDataRef data, CFErrorRef*error);
 ```
 
-#### Return Value
+## Return Value
 
 A new profile, or `NULL` in case of failure.
 

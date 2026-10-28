@@ -21,15 +21,15 @@ func QLPreviewRequestIsCancelled(_ preview: QLPreviewRequest!) -> Bool
 extern Boolean QLPreviewRequestIsCancelled(QLPreviewRequestRef preview);
 ```
 
-#### Return Value
+## Return Value
 
 `true` if the request is being canceled, `false` otherwise.
 
-#### Discussion
+## Discussion
 
 While computing the response, the generator can poll the preview request object with this function to determine if the client has cancelled the request. Alternatively, the generator can implement the `CancelPreviewGeneration` callback. but since that function is called in a secondary thread, it is generally safer to take the polling approach.
 
-##### Special Considerations
+### Special Considerations
 
 Thread-safety: This function should be called in the same thread as the preview request is made in; generally, this is the same thread in which the `GeneratePreviewForURL` callback was invoked.
 

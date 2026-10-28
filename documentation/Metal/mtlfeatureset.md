@@ -26,7 +26,7 @@ enum MTLFeatureSet
 enum MTLFeatureSet : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 If your app is running on an operating system that supports the [`supportsFamily(_:)`](./mtldevice/supportsfamily%28_%29.md) method, use that method instead. See [Detecting GPU features and Metal software versions](./detecting-gpu-features-and-metal-software-versions.md) for more information about [`MTLGPUFamily`](./mtlgpufamily.md) — the replacement for this enumeration —  and the feature set tables. This type doesn’t define constants for GPU families introduced after iOS GPU family 5.
 

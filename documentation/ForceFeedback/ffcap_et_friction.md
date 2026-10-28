@@ -18,7 +18,7 @@ var FFCAP_ET_FRICTION: Int { get }
 FFCAP_ET_FRICTION
 ```
 
-#### Discussion
+## Discussion
 
 The effect represents a friction force effect.
 

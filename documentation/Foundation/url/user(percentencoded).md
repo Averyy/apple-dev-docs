@@ -21,7 +21,7 @@ Returns the user component of the URL, optionally removing any percent-encoding.
 func user(percentEncoded: Bool = true) -> String?
 ```
 
-#### Return Value
+## Return Value
 
 The system doesn’t allow certain characters in the URL user component, so [`URL`](../url.md) percent-encodes those characters to create a valid URL. Calling this function with `percentEncoded = false` removes any percent-encoding and returns the unencoded user.
 

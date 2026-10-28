@@ -21,7 +21,7 @@ init?(coder: NSCoder)
 - (instancetype) initWithCoder:(NSCoder *) coder;
 ```
 
-#### Return Value
+## Return Value
 
 A newly initialized content identifier object.
 

@@ -6,7 +6,7 @@
 
 A 16-bit integer that identifies which color table to use.
 
-#### Overview
+## Overview
 
 If this field is set to –1, the default color table should be used for the specified depth. For all depths below 16 bits per pixel, this indicates a standard Macintosh color table for the specified depth. Depths of 16, 24, and 32 have no color table.
 

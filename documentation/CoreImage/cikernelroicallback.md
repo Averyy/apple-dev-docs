@@ -24,7 +24,7 @@ typealias CIKernelROICallback = (Int32, CGRect) -> CGRect
 typedef struct CGRect (^)(int, struct CGRect) CIKernelROICallback;
 ```
 
-#### Discussion
+## Discussion
 
 The block takes the following parameters:
 

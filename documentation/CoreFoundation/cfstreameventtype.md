@@ -25,7 +25,7 @@ struct CFStreamEventType
 enum CFStreamEventType : CFOptionFlags;
 ```
 
-#### Overview
+## Overview
 
 This enumeration defines constants for stream-related events.
 

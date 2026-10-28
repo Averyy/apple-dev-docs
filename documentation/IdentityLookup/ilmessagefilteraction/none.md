@@ -22,7 +22,7 @@ case none
 ILMessageFilterActionNone
 ```
 
-#### Discussion
+## Discussion
 
 In a query response, setting this value allows the system to show the message unfiltered.
 

@@ -25,7 +25,7 @@ class var miniBatchIndex: MLMetricKey { get }
 @property (class, nonatomic, readonly) MLMetricKey * miniBatchIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Use this key to fetch the mini-batch index value in the [`metrics`](../mlupdatecontext/metrics.md) dictionary.
 

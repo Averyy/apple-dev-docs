@@ -24,7 +24,7 @@ func firstRect(for range: UITextRange) -> CGRect
 - (CGRect) firstRectForRange:(UITextRange *) range;
 ```
 
-#### Return Value
+## Return Value
 
 The first rectangle in a `range` of text. You might use this rectangle to draw a correction rectangle. The “first” in the name refers the rectangle enclosing the first line when the range encompasses multiple lines of text.
 

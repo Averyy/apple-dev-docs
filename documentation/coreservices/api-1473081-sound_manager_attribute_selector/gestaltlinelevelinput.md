@@ -14,7 +14,7 @@
 gestaltLineLevelInput = 9
 ```
 
-#### Discussion
+## Discussion
 
 Set if the built-in sound input port requires line level input.
 

@@ -21,11 +21,11 @@ Returns the double-precision element-wise difference of a vector and the product
 static func subtract<S, T, U>(multiplication: (a: T, b: U), _ vector: S) -> [Double] where S : AccelerateBuffer, T : AccelerateBuffer, U : AccelerateBuffer, S.Element == Double, T.Element == Double, U.Element == Double
 ```
 
-#### Return Value
+## Return Value
 
 The output vector `D` in `D = (A * B) - C`.
 
-#### Discussion
+## Discussion
 
 This function calculates the products of the first `N` elements of `A` and `B`, subtracts each product from the corresponding value in `C`, and writes the result to `D`, as follows:
 

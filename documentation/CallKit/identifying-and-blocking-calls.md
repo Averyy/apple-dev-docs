@@ -5,13 +5,13 @@
 
 Create a Call Directory app extension to identify and block incoming callers by their phone number.
 
-#### Overview
+## Overview
 
 Use the Call Directory app extension to manage callers by their phone number. The system communicates with the app extension and checks a person’s contacts and block lists to identify callers.
 
 > **Note**:  The [`CXCallDirectoryPhoneNumber`](./cxcalldirectoryphonenumber.md) type represents phone numbers in a Call Directory app extension, and consists of a country calling code (such as `1` for the United States) followed by a sequence of digits.
 
-##### Create a Call Directory app extension
+### Create a Call Directory app extension
 
 You can create a Call Directory app extension for your containing app by adding a new project target and selecting the Call Directory Extension template under Application Extension.
 
@@ -21,7 +21,7 @@ You set up both identification and blocking of incoming calls in the implementat
 
 For more information about how app extensions work, see [App extensions](https://developer.apple.com/app-extensions/).
 
-##### Identify incoming callers
+### Identify incoming callers
 
 When a phone receives an incoming call, the system first checks the person’s contacts to find a matching phone number. If there’s no match, the system then checks your app’s Call Directory app extension to find a matching entry to identify the phone number. This is useful for apps that maintain a contact list that’s separate from the system contacts, such as for a social network, or for identifying incoming calls that may initiate from within the app, such as for customer service support or a delivery notification.
 
@@ -65,7 +65,7 @@ class CustomCallDirectoryProvider: CXCallDirectoryProvider {
 
 Because the system calls this method only when it launches the app extension and not for each individual call, you need to specify call identification information all at once. For example, you can’t make a request to a web service to find information about an incoming call.
 
-###### Block incoming calls
+#### Block incoming calls
 
 When a phone receives an incoming call, the system first checks the person’s block list to determine whether to block the call. If the phone number isn’t on a user- or system-defined block list, the system then checks your app’s Call Directory app extension to find a matching blocked number. This is useful for apps that maintain a database of known solicitors, or allow someone to block any numbers that match a set of criteria.
 
@@ -106,7 +106,7 @@ class CustomCallDirectoryProvider: CXCallDirectoryProvider {
 @end
 ```
 
-##### Handle audio session interruptions
+### Handle audio session interruptions
 
 Like other audio apps, VoIP apps need to handle audio session interruptions. Interruptions may occur for several reasons, including a person accepting another call or closing the Smart Folio of their iPad. In these situations, an interruption notification contains the reason for the interruption and allows your app to correctly terminate the call, if necessary. For more information, see [Handling audio interruptions](../AVFAudio/handling-audio-interruptions.md).
 

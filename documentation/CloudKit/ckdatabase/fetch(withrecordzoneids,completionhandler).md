@@ -22,7 +22,7 @@ Fetches the specified record zones and delivers them to a completion handler.
 func fetch(withRecordZoneIDs zoneIDs: [CKRecordZone.ID], completionHandler: @escaping @Sendable (Result<[CKRecordZone.ID : Result<CKRecordZone, any Error>], any Error>) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 The completion handler takes the following parameters:
 

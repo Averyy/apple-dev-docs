@@ -16,11 +16,11 @@ Obtains a CFArrayRef containing the IOHIDDeviceDeviceInterface elements that mat
 IOReturn (*copyMatchingElements)(void *self, CFDictionaryRef matchingDict, CFArrayRef *pElements, IOOptionBits options);
 ```
 
-#### Return Value
+## Return Value
 
 Returns kIOReturnSuccess if successful or a kern_return_t if unsuccessful.
 
-#### Discussion
+## Discussion
 
 Objects contained in the returned array are of type IOHIDElementRef. Please see IOHIDElement.h for additional API information. Elemenet properties are prefixed by kIOHIDElement and declared in IOHIDKeys.h.
 

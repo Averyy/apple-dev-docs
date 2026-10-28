@@ -19,7 +19,7 @@ func parentGroups() -> [Any]!
 - (NSArray *) parentGroups;
 ```
 
-#### Discussion
+## Discussion
 
 If the person doesn’t belong to any groups, this method returns an empty array.
 

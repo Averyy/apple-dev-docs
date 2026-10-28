@@ -18,7 +18,7 @@ Indicates that the camera needs to view the physical environment under better li
 static let insufficientLighting: NIAlgorithmConvergenceStatus.Reason
 ```
 
-#### Discussion
+## Discussion
 
 Coach the user to resolve the issue, such as by presenting text that asks the user to turn on the lights.
 

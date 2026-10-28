@@ -25,7 +25,7 @@ func key(forObjectID objectID: TKToken.ObjectID) throws -> TKTokenKeychainKey
 - (TKTokenKeychainKey *) keyForObjectID:(TKTokenObjectID) objectID error:(NSError **) error;
 ```
 
-#### Return Value
+## Return Value
 
 The key, or `nil` if no key exists.
 

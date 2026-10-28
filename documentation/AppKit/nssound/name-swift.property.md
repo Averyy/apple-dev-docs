@@ -19,7 +19,7 @@ var name: NSSound.Name? { get }
 @property (copy, readonly, nullable) NSSoundName name;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is `nil` when no name has been assigned.
 

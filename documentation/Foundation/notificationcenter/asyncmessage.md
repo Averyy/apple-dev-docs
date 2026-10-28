@@ -21,7 +21,7 @@ A protocol for creating types that you can post to a notification center, which 
 protocol AsyncMessage : Sendable
 ```
 
-#### Overview
+## Overview
 
 You post types conforming to `AsyncMessage` to a notification center using `post(_:subject:)` and observe them with `addObserver(of:for:using:)`.
 
@@ -65,7 +65,7 @@ The notification center ties observation the lifetime of the returned [`Notifica
 NotificationCenter.default.removeObserver(observerToken)
 ```
 
-##### Notification Interoperability
+### Notification Interoperability
 
 `AsyncMessage` includes optional interoperability with [`Notification`](../notification.md), enabling posters and observers of both types to pass information.
 

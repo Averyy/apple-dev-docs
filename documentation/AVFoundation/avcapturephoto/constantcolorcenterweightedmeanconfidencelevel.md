@@ -23,7 +23,7 @@ var constantColorCenterWeightedMeanConfidenceLevel: Float { get }
 @property (readonly) float constantColorCenterWeightedMeanConfidenceLevel;
 ```
 
-#### Discussion
+## Discussion
 
 A value of `1.0` means full confidence and `0.0` means zero confidence. The default is `0.0.`
 

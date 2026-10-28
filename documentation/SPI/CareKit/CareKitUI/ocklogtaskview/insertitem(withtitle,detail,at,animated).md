@@ -18,7 +18,7 @@ Inserts an item in the list of logged items.
 @MainActor func insertItem(withTitle title: String?, detail: String?, at index: Int, animated: Bool) -> OCKLogItemButton
 ```
 
-#### Return Value
+## Return Value
 
 The item that was inserted.
 

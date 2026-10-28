@@ -20,7 +20,7 @@ Pauses playback of the current entry.
 func pause()
 ```
 
-#### Discussion
+## Discussion
 
 If playback isn’t currently underway, this method has no effect. To resume playback of the current entry from the pause point, call the [`play()`](./play%28%29.md) method.
 

@@ -20,11 +20,11 @@ optional func tableView(_ tableView: NSTableView, dataCellFor tableColumn: NSTab
 - (NSCell *) tableView:(NSTableView *) tableView dataCellForTableColumn:(NSTableColumn *) tableColumn row:(NSInteger) row;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSCell`](../nscell.md) subclass that is used for the specified `row` and `tableColumn`. The returned cell must properly implement `copyWithZone:`.
 
-#### Discussion
+## Discussion
 
 A different data cell can be returned for any particular table column and row, or a cell that will be used for the entire row (that is, a full width cell).
 

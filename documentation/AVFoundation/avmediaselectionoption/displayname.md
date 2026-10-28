@@ -25,7 +25,7 @@ var displayName: String { get }
 @property (nonatomic, readonly) NSString * displayName;
 ```
 
-#### Discussion
+## Discussion
 
 The string takes into account this option’s common metadata, media characteristics, and locale properties in addition to the provided locale to formulate a string intended for display
 

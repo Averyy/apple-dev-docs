@@ -20,7 +20,7 @@ optional func collectionView(_ collectionView: NSCollectionView, willDisplaySupp
 - (void) collectionView:(NSCollectionView *) collectionView willDisplaySupplementaryView:(NSView *) view forElementKind:(NSCollectionViewSupplementaryElementKind) elementKind atIndexPath:(NSIndexPath *) indexPath;
 ```
 
-#### Discussion
+## Discussion
 
 The collection view calls this method before adding new supplementary views to its content. You can use this method to track the addition of those views and perform related tasks.
 

@@ -25,7 +25,7 @@ var screenSpaceRadius: CGFloat { get }
 @property (readonly) CGFloat screenSpaceRadius;
 ```
 
-#### Discussion
+## Discussion
 
 When rendering a geometry with associated levels of detail, SceneKit calculates the radius in pixels of the circle covered by a geometry’s bounding sphere, then renders the geometry for the [`SCNLevelOfDetail`](../scnlevelofdetail.md) object with the smallest `radius` parameter larger than that circle.
 

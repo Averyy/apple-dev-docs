@@ -40,7 +40,7 @@ func startContentEditing(with contentEditingInput: PHContentEditingInput, placeh
 - (void) startContentEditingWithInput:(PHContentEditingInput *) contentEditingInput placeholderImage:(NSImage *) placeholderImage;
 ```
 
-#### Discussion
+## Discussion
 
 Photos calls this method before your extension view controller’s view appears.
 

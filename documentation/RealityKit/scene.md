@@ -21,7 +21,7 @@ A container that holds the collection of entities that an AR view renders.
 @preconcurrency class Scene
 ```
 
-#### Overview
+## Overview
 
 You don’t create a [`Scene`](./scene.md) instance directly. Instead, you get the one and only scene associated with a view from the [`scene`](./arview/scene.md) property of an [`ARView`](./arview.md) instance.
 

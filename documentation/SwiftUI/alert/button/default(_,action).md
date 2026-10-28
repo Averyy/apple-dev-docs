@@ -23,7 +23,7 @@ Creates an alert button with the default style.
 static func `default`(_ label: Text, action: (() -> Void)? = {}) -> Alert.Button
 ```
 
-#### Return Value
+## Return Value
 
 An alert button with the default style.
 

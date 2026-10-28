@@ -25,7 +25,7 @@ func fileModificationDate() -> Date?
 - (NSDate *) fileModificationDate;
 ```
 
-#### Return Value
+## Return Value
 
 The value associated with the [`modificationDate`](../fileattributekey/modificationdate.md) file attributes key, or `nil` if the file attributes dictionary has no entry for the key.
 

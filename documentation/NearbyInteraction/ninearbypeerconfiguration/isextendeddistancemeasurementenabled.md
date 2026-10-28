@@ -22,7 +22,7 @@ var isExtendedDistanceMeasurementEnabled: Bool { get set }
 @property (nonatomic, assign, getter=isExtendedDistanceMeasurementEnabled) BOOL extendedDistanceMeasurementEnabled;
 ```
 
-#### Discussion
+## Discussion
 
 If [`true`](../../Swift/true.md), the [`NISession`](../nisession.md) uses extended distance measurement (EDM) capabilities while ranging with a peer that’s also capable of EDM. This property is compatible with the [`isCameraAssistanceEnabled`](./iscameraassistanceenabled.md) property.
 

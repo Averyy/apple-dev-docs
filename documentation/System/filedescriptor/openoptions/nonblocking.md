@@ -25,7 +25,7 @@ static var nonBlocking: FileDescriptor.OpenOptions { get }
 
 - [Adopting Swift File Options](../../adopting-file-options.md)
 
-#### Discussion
+## Discussion
 
 If this option is specified, the system doesn’t wait for the device or file to be ready or available. If the doc:FileDescriptor/open(_:_:options:permissions:retryOnInterrupt:)-2266j call would result in the process being blocked for some reason, that method returns immediately. This flag also has the effect of making all subsequent input and output operations on the open file nonblocking.
 

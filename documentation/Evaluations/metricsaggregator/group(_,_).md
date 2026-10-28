@@ -25,11 +25,11 @@ mutating func group(_ name: String, _ body: (inout MetricsAggregator.Group) -> V
 
 - [Evaluating tool-calling behavior](../evaluating-tool-calling-behavior.md)
 
-#### Discussion
+## Discussion
 
 Use this to organize your metrics into logical groups for better readability.
 
-#### Example
+## Example
 
 ```swift
 let accuracy = Metric("Accuracy")

@@ -15,11 +15,11 @@ The top-level response envelope for brands keyword-level reports.
 object BrandsKeywordReportResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `brands` keyword reports exclude both `supplyPlacement` and `locationId` from supported `groupBy` dimensions. Use `deviceClass` only.
 
-##### Example
+### Example
 
 ```json
 {

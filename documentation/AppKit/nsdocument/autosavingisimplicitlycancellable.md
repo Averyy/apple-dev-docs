@@ -19,7 +19,7 @@ var autosavingIsImplicitlyCancellable: Bool { get }
 @property (readonly) BOOL autosavingIsImplicitlyCancellable;
 ```
 
-#### Discussion
+## Discussion
 
 The value of this property is [`true`](../../Swift/true.md) if autosaving is in progress but nothing bad would happen if it were cancelled. For example, when periodic autosaving is being done only for crash protection, which doesn’t need to be done all of the time, this property is set to [`true`](../../Swift/true.md). When autosaving is being done because the document is being closed, the property is set to [`false`](../../Swift/false.md).
 

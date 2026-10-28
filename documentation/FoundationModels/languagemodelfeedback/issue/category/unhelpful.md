@@ -24,7 +24,7 @@ case unhelpful
 
 - [Inspecting session transcripts and reporting model feedback](../../../inspecting-session-transcripts-and-reporting-model-feedback.md)
 
-#### Discussion
+## Discussion
 
 An unhelpful issue might be where you asked for a recipe, and the model gave you a list of ingredients but not amounts.
 

@@ -25,7 +25,7 @@ var isHidden: Bool { get set }
 @property (nonatomic, getter=isHidden) BOOL hidden;
 ```
 
-#### Discussion
+## Discussion
 
 The default value of this property is NO, specifying that SceneKit should render geometries and use lights attached to the node or its children. Change this property’s value to [`true`](../../Swift/true.md) to exclude attached geometries and lights from rendering. (Cameras attached to the node or its children are not affected by this property.) Hiding a node also hides its child nodes recursively.
 

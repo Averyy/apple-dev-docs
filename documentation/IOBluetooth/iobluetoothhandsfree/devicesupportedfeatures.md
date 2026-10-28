@@ -19,11 +19,11 @@ var deviceSupportedFeatures: UInt32 { get }
 @property (readonly) uint32_t deviceSupportedFeatures;
 ```
 
-#### Return Value
+## Return Value
 
 The device features bitmap
 
-#### Discussion
+## Discussion
 
 Returns the device’s supported features bitmap. The values are described in “IOBluetoothHandsFreeDeviceFeatures and IOBluetoothHandsFreeAudioGatewayFeatures.”
 

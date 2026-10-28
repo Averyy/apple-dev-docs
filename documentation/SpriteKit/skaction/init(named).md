@@ -25,7 +25,7 @@ init?(named name: String)
 + (SKAction *) actionNamed:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 

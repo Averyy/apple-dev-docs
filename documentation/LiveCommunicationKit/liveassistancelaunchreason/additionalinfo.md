@@ -19,7 +19,7 @@ A launch reason that indicates the person using the extension needs to provide s
 case additionalInfo
 ```
 
-#### Discussion
+## Discussion
 
 Use this value when your extension needs information like a language preference or other configuration. You might also use this value when you want confirmation to proceed with establishing the assistance service.
 

@@ -29,7 +29,7 @@ func disable(with params: MTREnergyEVSEClusterDisableParams?) async throws
 - (void) disableWithParams:(MTREnergyEVSEClusterDisableParams *) params completion:(MTRStatusCompletion) completion;
 ```
 
-#### Discussion
+## Discussion
 
 Allows a client to disable the EVSE from charging and discharging.
 

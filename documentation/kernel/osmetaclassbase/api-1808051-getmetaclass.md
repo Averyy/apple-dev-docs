@@ -11,7 +11,7 @@ Returns the OSMetaClass representing an OSMetaClassBase subclass.
 virtual const OSMetaClass * getMetaClass() const = 0;
 ```
 
-#### Overview
+## Overview
 
 OSObject overrides this abstract member function to return the OSMetaClass object that represents each class for run-time typing.
 

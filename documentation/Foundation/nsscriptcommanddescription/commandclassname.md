@@ -20,7 +20,7 @@ var commandClassName: String { get }
 @property (copy, readonly) NSString * commandClassName;
 ```
 
-#### Return Value
+## Return Value
 
 The Objective-C class name (for example, `"NSGetCommand"`). This is always [`NSScriptCommand`](../nsscriptcommand.md) or a subclass.
 

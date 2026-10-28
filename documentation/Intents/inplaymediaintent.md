@@ -29,13 +29,13 @@ class INPlayMediaIntent
 - [Improving Siri Media Interactions and App Selection](../SiriKit/improving-siri-media-interactions-and-app-selection.md)
 - [Creating an Intents App Extension](../SiriKit/creating-an-intents-app-extension.md)
 
-#### Overview
+## Overview
 
 Use [`INPlayMediaIntent`](./inplaymediaintent.md) to donate songs, movies, and other media the user plays in your app, or to recommend upcoming media, such as new TV shows or podcast episodes. The system uses these donations to offer the user relevant search results and suggestions.
 
 [`INPlayMediaIntent`](./inplaymediaintent.md) supports playing audio in the background. See `Enabling Background Audio` for more information about supporting background audio in your app.
 
-##### Additional Intent Attributes
+### Additional Intent Attributes
 
 The following table lists additional attributes of this intent object:
 

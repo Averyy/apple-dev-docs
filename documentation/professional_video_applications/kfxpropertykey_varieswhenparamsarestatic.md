@@ -23,7 +23,7 @@ var kFxPropertyKey_VariesWhenParamsAreStatic: String { get }
 
 - [Building an FxPlug plug-in manually](../Professional-Video-Applications/building-an-fxplug-plug-in-manually.md)
 
-#### Discussion
+## Discussion
 
 The value for this key is a Boolean `NSNumber` indicating whether this effect changes its rendering even when the parameters don’t change. This can happen if your rendering is based on timing in addition to parameters, for example. Note that this property is only checked once when the filter is applied, so it should go in static properties rather than dynamic properties.
 

@@ -23,7 +23,7 @@ Returns a new convolution layer parameters structure from the specified paramete
 init(i_desc: BNNSNDArrayDescriptor, w_desc: BNNSNDArrayDescriptor, o_desc: BNNSNDArrayDescriptor, bias: BNNSNDArrayDescriptor, activation: BNNSActivation, x_stride: Int, y_stride: Int, x_dilation_stride: Int, y_dilation_stride: Int, x_padding: Int, y_padding: Int, groups: Int, pad: (Int, Int, Int, Int))
 ```
 
-#### Discussion
+## Discussion
 
 If `groups` is greater than 1, the layer uses input, output, weights, and bias for a set of convolutions, and you must meet the following:
 

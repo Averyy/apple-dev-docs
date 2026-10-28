@@ -17,7 +17,7 @@ An array of scan results containing access points the accessory has discovered.
 let results: [WINetworkSharingProvider.AccessoryScanResult]
 ```
 
-#### Discussion
+## Discussion
 
 Provides an empty array if your accessory finds no networks during scanning.
 

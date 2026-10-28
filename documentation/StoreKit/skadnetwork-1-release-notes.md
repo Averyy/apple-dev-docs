@@ -5,7 +5,7 @@
 
 A version of SKAdNetwork available in iOS 11.3 and later.
 
-#### Overview
+## Overview
 
 You’re eligible to receive a version 1.0 postback when any of these conditions are met:
 
@@ -22,7 +22,7 @@ MEkwEwYHKoZIzj0CAQYIKoZIzj0DAQEDMgAEMyHD625uvsmGq4C43cQ9BnfN2xslVT5V1nOmAMP6qaRR
 
 For more information, see [Verifying an install-validation postback](./verifying-an-install-validation-postback.md).
 
-##### New features
+### New features
 
 This is the original version of SKAdNetwork.
 

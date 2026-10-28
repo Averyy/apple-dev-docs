@@ -19,11 +19,11 @@
 static SPAffineTransform3DFloat SPAffineTransform3DFloatChangeBasis(SPAffineTransform3DFloat transform, SPAffineTransform3DFloat from, SPAffineTransform3DFloat to);
 ```
 
-#### Return Value
+## Return Value
 
 A new affine transform structure or `SPAffineTransform3DInvalid`.
 
-#### Discussion
+## Discussion
 
 Returns a new affine transform structure by applying a change-of-basis.
 

@@ -19,7 +19,7 @@ var blocksOtherRecognizers: Bool { get set }
 @property BOOL blocksOtherRecognizers;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), all other speech recognition commands on the system are disabled until the speech recognizer is released, listening is stopped, or the property is set to [`false`](../../Swift/false.md). Setting this property to [`true`](../../Swift/true.md) effectively takes over the computer at the expense of other applications using speech recognition, so you should use it only in circumstances that warrant it, such as when listening for a response important to overall system operation or when an application is running in full-screen mode (such as games and presentation software). The default is value of this property is [`false`](../../Swift/false.md).
 

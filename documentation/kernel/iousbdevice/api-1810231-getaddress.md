@@ -10,7 +10,7 @@ virtual USBDeviceAddress GetAddress(
  void);
 ```
 
-#### Overview
+## Overview
 
 returns the bus address of the device
 

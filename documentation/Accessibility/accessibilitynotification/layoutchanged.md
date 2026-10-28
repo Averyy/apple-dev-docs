@@ -21,7 +21,7 @@ A notification that an app posts when the layout of a screen changes.
 struct LayoutChanged
 ```
 
-#### Overview
+## Overview
 
 Optionally, include a parameter that contains the accessibility element for VoiceOver to move to after processing the notification.
 

@@ -21,7 +21,7 @@ Resume the task that’s awaiting the continuation by returning the given value.
 func resume(returning value: sending T) where E == Never
 ```
 
-#### Discussion
+## Discussion
 
 A continuation must be resumed exactly once. If the continuation has already resumed, then calling this method results in undefined behavior.
 

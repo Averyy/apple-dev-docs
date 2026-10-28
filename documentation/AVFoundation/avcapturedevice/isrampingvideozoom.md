@@ -22,7 +22,7 @@ var isRampingVideoZoom: Bool { get }
 @property (nonatomic, readonly, getter=isRampingVideoZoom) BOOL rampingVideoZoom;
 ```
 
-#### Discussion
+## Discussion
 
 Key-value observe this property to determine when a zoom transitions begins or ends.
 

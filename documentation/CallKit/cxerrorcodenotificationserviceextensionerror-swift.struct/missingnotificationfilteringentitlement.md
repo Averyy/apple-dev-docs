@@ -19,7 +19,7 @@ An error indicating that the notification service extension is missing the requi
 static var missingNotificationFilteringEntitlement: CXErrorCodeNotificationServiceExtensionError.Code { get }
 ```
 
-#### Discussion
+## Discussion
 
 To call the [`reportNewIncomingVoIPPushPayload(_:completion:)`](../cxprovider/reportnewincomingvoippushpayload%28_,completion%29.md) method, a notification service extension must have a `com.apple.developer.usernotifications.filtering` entitlement. To apply for this entitlement, see [https://developer.apple.com/contact/request/notification-service](https://developer.apple.com/contact/request/notification-service).
 

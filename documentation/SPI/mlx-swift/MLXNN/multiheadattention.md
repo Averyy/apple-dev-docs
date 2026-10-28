@@ -17,7 +17,7 @@ Implements the scaled dot product attention with multiple heads.
 class MultiHeadAttention
 ```
 
-##### See Also
+### See Also
 
 - [Transformer](./transformers.md)
 - [`init(dimensions:numHeads:queryInputDimensions:keyInputDimensions:valueInputDimensions:valueDimensions:valueOutputDimensions:bias:)`](./multiheadattention/init%28dimensions,numheads,queryinputdimensions,keyinputdimensions,valueinputdimensions,valuedimensions,valueoutputdimensions,bias%29.md)

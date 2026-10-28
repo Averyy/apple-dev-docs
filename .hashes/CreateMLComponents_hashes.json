@@ -324,6 +324,10 @@
       "file_path": "documentation/CreateMLComponents/audioreader/read(_,configuration).md",
       "hash": "5e26d5d87fec50d1f25643d6e9e65bbad5a0c016567f981e251d9cfdd73306a1"
     },
+    "https://developer.apple.com/documentation/createmlcomponents/audioreader/read(_:configuration:)-3nyda": {
+      "file_path": "documentation/CreateMLComponents/audioreader/read(_,configuration)-3nyda.md",
+      "hash": "a8a950100d5dd6e260c76b98365e3a1459b5ef97891e592b9d8a9f84320be287"
+    },
     "https://developer.apple.com/documentation/createmlcomponents/audioreader/read(contentsof:configuration:)": {
       "file_path": "documentation/CreateMLComponents/audioreader/read(contentsof,configuration).md",
       "hash": "ae62b41ec6683f29240e9589fcd38d90f6169cf2f9aabf13fda08e209586dcef"
@@ -364,9 +368,17 @@
       "file_path": "documentation/CreateMLComponents/augmentationbuilder/buildpartialblock(accumulated,next).md",
       "hash": "93168b815ffcefac8c217bad4fbefb571bbbda9b8e1d7522fd343a6a699e6a44"
     },
+    "https://developer.apple.com/documentation/createmlcomponents/augmentationbuilder/buildpartialblock(accumulated:next:)-4a0qn": {
+      "file_path": "documentation/CreateMLComponents/augmentationbuilder/buildpartialblock(accumulated,next)-4a0qn.md",
+      "hash": "fedbc419d64c23ffb1e57d22b54a159180ebe9f84add071f974c30e965db8820"
+    },
     "https://developer.apple.com/documentation/createmlcomponents/augmentationbuilder/buildpartialblock(first:)": {
       "file_path": "documentation/CreateMLComponents/augmentationbuilder/buildpartialblock(first).md",
       "hash": "3026fe1a1c6dd9e234f32451492113f47ce9e59f745a11849d11668912e7d42c"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/augmentationbuilder/buildpartialblock(first:)-8uoqq": {
+      "file_path": "documentation/CreateMLComponents/augmentationbuilder/buildpartialblock(first)-8uoqq.md",
+      "hash": "c17c86d44e59d31262e5d8284145bd6957f8480ba27abe6afa67b02f2d2cc478"
     },
     "https://developer.apple.com/documentation/createmlcomponents/augmentationsequence": {
       "file_path": "documentation/CreateMLComponents/augmentationsequence.md",
@@ -700,6 +712,14 @@
       "file_path": "documentation/CreateMLComponents/classificationdistribution/subscript(_).md",
       "hash": "f5b6b4cdc12055057839def701d785f99a1ccf068677084bab5561df45f6fce4"
     },
+    "https://developer.apple.com/documentation/createmlcomponents/classificationdistribution/subscript(_:)-856r7": {
+      "file_path": "documentation/CreateMLComponents/classificationdistribution/subscript(_)-856r7.md",
+      "hash": "8f8c97abcb0412aeaa351607961d2f9d611ea57ca229b20d2685f757746295bc"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/classificationdistribution/subscript(_:)-s5as": {
+      "file_path": "documentation/CreateMLComponents/classificationdistribution/subscript(_)-s5as.md",
+      "hash": "17af61165d8dfd879546928063bbc82cc32cd38e626163ec6c91c5072007d624"
+    },
     "https://developer.apple.com/documentation/createmlcomponents/classificationdistribution/toplabels(_:)": {
       "file_path": "documentation/CreateMLComponents/classificationdistribution/toplabels(_).md",
       "hash": "b3f5f17c9e7bfec6903dc740d1e80ea5f7c1e5e34d187f823d8f3ff00173d7f8"
@@ -755,6 +775,10 @@
     "https://developer.apple.com/documentation/createmlcomponents/classificationmetrics/init(_:)": {
       "file_path": "documentation/CreateMLComponents/classificationmetrics/init(_).md",
       "hash": "1d82e2ac1c534ec85d70fb7ee0e3816f250bf9b33053a029fef98278a7319b6a"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/classificationmetrics/init(_:)-7nms4": {
+      "file_path": "documentation/CreateMLComponents/classificationmetrics/init(_)-7nms4.md",
+      "hash": "43315f0b4637d1b96bd6bf2adaab09686063619fd7d2c4a03da3e351389900a1"
     },
     "https://developer.apple.com/documentation/createmlcomponents/classificationmetrics/init(_:_:)": {
       "file_path": "documentation/CreateMLComponents/classificationmetrics/init(_,_).md",
@@ -1272,6 +1296,26 @@
       "file_path": "documentation/CreateMLComponents/estimator/appending(_).md",
       "hash": "61e3a404a2beb3588829141df749e362e66ad526c826a877e5a81624061100f6"
     },
+    "https://developer.apple.com/documentation/createmlcomponents/estimator/appending(_:)-10qfn": {
+      "file_path": "documentation/CreateMLComponents/estimator/appending(_)-10qfn.md",
+      "hash": "fdc40a793f171a0df2f583189f79f934723e20f3524827e9c236aaeb9a6dfe89"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/estimator/appending(_:)-2xkyp": {
+      "file_path": "documentation/CreateMLComponents/estimator/appending(_)-2xkyp.md",
+      "hash": "5fb760ea8def1acbbabae8a3c05f5202586bef62a69b4d281a690018e0cca966"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/estimator/appending(_:)-atvs": {
+      "file_path": "documentation/CreateMLComponents/estimator/appending(_)-atvs.md",
+      "hash": "3c84278c2f90c96d0cdec9a9ac3f09f9029869ffef20887e5a68b49892086979"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/estimator/appending(_:)-u0ef": {
+      "file_path": "documentation/CreateMLComponents/estimator/appending(_)-u0ef.md",
+      "hash": "f354f43ba1495673378d5c600dd61bb30d61b6781e346b31444a8673339b553b"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/estimator/appending(_:)-w1ek": {
+      "file_path": "documentation/CreateMLComponents/estimator/appending(_)-w1ek.md",
+      "hash": "6ac5563fdc31ad4a052cd01ee394d7ddb01d5d851794b2c7ff7ebb33042da8d7"
+    },
     "https://developer.apple.com/documentation/createmlcomponents/estimator/decode(from:)": {
       "file_path": "documentation/CreateMLComponents/estimator/decode(from).md",
       "hash": "fe6c12ee873f160d5aeeb90a9b1b685eefabaff4e9f2e5073f80c97a210b09a5"
@@ -1623,6 +1667,10 @@
     "https://developer.apple.com/documentation/createmlcomponents/fullyconnectednetworkmultilabelclassifiermodel/prediction(from:confidencethresholds:)": {
       "file_path": "documentation/CreateMLComponents/fullyconnectednetworkmultilabelclassifiermodel/prediction(from,confidencethresholds).md",
       "hash": "06991c1a729facb685a3ba4ce5f89756dc3fc20a765e082195a43bac9904a1ab"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/fullyconnectednetworkmultilabelclassifiermodel/prediction(from:confidencethresholds:)-3kiaw": {
+      "file_path": "documentation/CreateMLComponents/fullyconnectednetworkmultilabelclassifiermodel/prediction(from,confidencethresholds)-3kiaw.md",
+      "hash": "84ce6782c4ac7954b90f72f19527c6cd5ccd7a691065b38c1bd27c774a0d5066"
     },
     "https://developer.apple.com/documentation/createmlcomponents/fullyconnectednetworkmultilabelclassifiermodel/updateprecisionrecallcurves(_:)": {
       "file_path": "documentation/CreateMLComponents/fullyconnectednetworkmultilabelclassifiermodel/updateprecisionrecallcurves(_).md",
@@ -2372,6 +2420,10 @@
       "file_path": "documentation/CreateMLComponents/lineartimeseriesforecaster/model/applied(to,eventhandler)-3h2wx.md",
       "hash": "3bb21a0ca4144bdf98097166b5b01eee79b36e6093219f66c204e261493ebd05"
     },
+    "https://developer.apple.com/documentation/createmlcomponents/lineartimeseriesforecaster/model/applied(to:eventhandler:)-5kkin": {
+      "file_path": "documentation/CreateMLComponents/lineartimeseriesforecaster/model/applied(to,eventhandler)-5kkin.md",
+      "hash": "b6e6b07f966ba478938c378fe780aa419594fe803b8c713ee968275cb0a8076e"
+    },
     "https://developer.apple.com/documentation/createmlcomponents/lineartimeseriesforecaster/model/applied(towindow:eventhandler:)": {
       "file_path": "documentation/CreateMLComponents/lineartimeseriesforecaster/model/applied(towindow,eventhandler).md",
       "hash": "f386074b43b71bca9b35f73f421f0142cf6190cd7712d75d439542abfe5dfabf"
@@ -2479,6 +2531,10 @@
     "https://developer.apple.com/documentation/createmlcomponents/lineartransformer/applied(to:eventhandler:)": {
       "file_path": "documentation/CreateMLComponents/lineartransformer/applied(to,eventhandler).md",
       "hash": "15725cbf7332c34b009b380f9ba6ededf23763d4ff7fbc217f60fae06ebcca25"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/lineartransformer/applied(to:eventhandler:)-3p0ia": {
+      "file_path": "documentation/CreateMLComponents/lineartransformer/applied(to,eventhandler)-3p0ia.md",
+      "hash": "96da74b82f90e818c323af499819b2f88a0c54719ffbd88b31a680229e4854e1"
     },
     "https://developer.apple.com/documentation/createmlcomponents/lineartransformer/init(scale:offset:)": {
       "file_path": "documentation/CreateMLComponents/lineartransformer/init(scale,offset).md",
@@ -3147,6 +3203,14 @@
     "https://developer.apple.com/documentation/createmlcomponents/multivariatelinearregressor/fitted(to:validateon:eventhandler:)": {
       "file_path": "documentation/CreateMLComponents/multivariatelinearregressor/fitted(to,validateon,eventhandler).md",
       "hash": "79c020cabe2af81d52f5715544cb60bd65d3eab964d549b2ef8d1ee20d820268"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/multivariatelinearregressor/fitted(to:validateon:eventhandler:)-82szq": {
+      "file_path": "documentation/CreateMLComponents/multivariatelinearregressor/fitted(to,validateon,eventhandler)-82szq.md",
+      "hash": "cabb528a33739c25e3a0c8fd81c2812209ef8ab7d86a43ffc19debea7a4313b7"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/multivariatelinearregressor/fitted(to:validateon:eventhandler:)-9bluu": {
+      "file_path": "documentation/CreateMLComponents/multivariatelinearregressor/fitted(to,validateon,eventhandler)-9bluu.md",
+      "hash": "77a6dd6159843702dd8b6407b443ccd0fb06199d9be49ffd3c8138a0e7ac68fa"
     },
     "https://developer.apple.com/documentation/createmlcomponents/multivariatelinearregressor/init(configuration:)": {
       "file_path": "documentation/CreateMLComponents/multivariatelinearregressor/init(configuration).md",
@@ -4516,6 +4580,10 @@
       "file_path": "documentation/CreateMLComponents/regressor/prediction(from).md",
       "hash": "e312d82b2526ad086b9f690e77f369425ab82c2745db9b83bd37adc94ab1ea15"
     },
+    "https://developer.apple.com/documentation/createmlcomponents/regressor/prediction(from:)-7iqkm": {
+      "file_path": "documentation/CreateMLComponents/regressor/prediction(from)-7iqkm.md",
+      "hash": "d3cd740fee01c4dad6ea60ab800bcea962631ee4e06c41d187007bd3963adf24"
+    },
     "https://developer.apple.com/documentation/createmlcomponents/reshaper": {
       "file_path": "documentation/CreateMLComponents/reshaper.md",
       "hash": "7d58d6dcf6fc1e6f4bbb5666d77167b53e3ffcdd30de011c65ab9c36a984a706"
@@ -4664,6 +4732,10 @@
       "file_path": "documentation/CreateMLComponents/slidingwindows/subscript(_).md",
       "hash": "5a5a7bc267f936e498cbc8ba267ced089f5246b23b2f2b706672b4e15368f68e"
     },
+    "https://developer.apple.com/documentation/createmlcomponents/slidingwindows/subscript(_:)-1x8i9": {
+      "file_path": "documentation/CreateMLComponents/slidingwindows/subscript(_)-1x8i9.md",
+      "hash": "4ad0f5d7d29d71ef2cb6f094289122bec67262af597b323d643f916033aafe71"
+    },
     "https://developer.apple.com/documentation/createmlcomponents/slidingwindowtransformer": {
       "file_path": "documentation/CreateMLComponents/slidingwindowtransformer.md",
       "hash": "354d7089169ca283c126dab62133ffac383d1d13598c5dc8c58e829c1a2eb5b2"
@@ -4767,6 +4839,26 @@
     "https://developer.apple.com/documentation/createmlcomponents/supervisedestimator/appending(_:)": {
       "file_path": "documentation/CreateMLComponents/supervisedestimator/appending(_).md",
       "hash": "698512fe8b7477ec00092cc6f65c1c35845342832c6b5461fd9b8ee89fd96c37"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/supervisedestimator/appending(_:)-2436m": {
+      "file_path": "documentation/CreateMLComponents/supervisedestimator/appending(_)-2436m.md",
+      "hash": "a0bb8d59174bf32ec7cc64a2625658bdab56e1d7fd200a88ea0db4780cf29b2f"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/supervisedestimator/appending(_:)-36sou": {
+      "file_path": "documentation/CreateMLComponents/supervisedestimator/appending(_)-36sou.md",
+      "hash": "f9e023a1179f3800e9a6db8e2fea38e0e0b6e7b8e8daf8c8a63753a49a8ab29d"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/supervisedestimator/appending(_:)-629ia": {
+      "file_path": "documentation/CreateMLComponents/supervisedestimator/appending(_)-629ia.md",
+      "hash": "a67ff81c89a1121e60cc6ab116cfcf870b62457d6ffdf4bd9553430a2c07e7f8"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/supervisedestimator/appending(_:)-8mm57": {
+      "file_path": "documentation/CreateMLComponents/supervisedestimator/appending(_)-8mm57.md",
+      "hash": "87cd99034f990136ed9bd86c7be7100101477adfded4decaaa6658a4f51cafa0"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/supervisedestimator/appending(_:)-m18k": {
+      "file_path": "documentation/CreateMLComponents/supervisedestimator/appending(_)-m18k.md",
+      "hash": "59cbba2e12ca5488c6077eaf1ee689074ecef892641c8ac35e8d687d12eff89a"
     },
     "https://developer.apple.com/documentation/createmlcomponents/supervisedestimator/decode(from:)": {
       "file_path": "documentation/CreateMLComponents/supervisedestimator/decode(from).md",
@@ -4876,6 +4968,14 @@
       "file_path": "documentation/CreateMLComponents/supervisedtabularestimator/appending(_).md",
       "hash": "5485dc2164c9e9bf3bf006ffbd72e367ce88789c1a30f8d31c83f5f6121a786d"
     },
+    "https://developer.apple.com/documentation/createmlcomponents/supervisedtabularestimator/appending(_:)-1x6qv": {
+      "file_path": "documentation/CreateMLComponents/supervisedtabularestimator/appending(_)-1x6qv.md",
+      "hash": "3137986ac6b7dd831e6bae1247792b39c56252eac025ecbe370ede63248fb600"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/supervisedtabularestimator/appending(_:)-54zun": {
+      "file_path": "documentation/CreateMLComponents/supervisedtabularestimator/appending(_)-54zun.md",
+      "hash": "08057cc410df03022f66c0f3b4509f287dec3e31124c202246d0814e859c41f1"
+    },
     "https://developer.apple.com/documentation/createmlcomponents/supervisedtabularestimator/decode(from:)": {
       "file_path": "documentation/CreateMLComponents/supervisedtabularestimator/decode(from).md",
       "hash": "824a72b17d59172300632b211cdfe3142c886ca5c59dc758f7497077165ccc06"
@@ -4923,6 +5023,26 @@
     "https://developer.apple.com/documentation/createmlcomponents/supervisedtemporalestimator/appending(_:)": {
       "file_path": "documentation/CreateMLComponents/supervisedtemporalestimator/appending(_).md",
       "hash": "6e53515487ed547e8b6010c140c8ad551b7477d6963e709033d2a0fc8b6554ac"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/supervisedtemporalestimator/appending(_:)-1vtjj": {
+      "file_path": "documentation/CreateMLComponents/supervisedtemporalestimator/appending(_)-1vtjj.md",
+      "hash": "6011cc9db172516aa1383f39988bc59834a081343c959ca0330962c0c0b126e4"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/supervisedtemporalestimator/appending(_:)-3xipm": {
+      "file_path": "documentation/CreateMLComponents/supervisedtemporalestimator/appending(_)-3xipm.md",
+      "hash": "04017c9ce735a32e9dbce8f34458370f6935e338dc5f84b672386da304587515"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/supervisedtemporalestimator/appending(_:)-4km9v": {
+      "file_path": "documentation/CreateMLComponents/supervisedtemporalestimator/appending(_)-4km9v.md",
+      "hash": "f5ef33e29df1efc6a9e7cd171a039e8bf561ef51a0d25abe1537e15a035a9b53"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/supervisedtemporalestimator/appending(_:)-4vdf2": {
+      "file_path": "documentation/CreateMLComponents/supervisedtemporalestimator/appending(_)-4vdf2.md",
+      "hash": "1ae2960c6068c67c30f50c2a0b54405e6d2be474ade7e50c0d130e4f322a0ac1"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/supervisedtemporalestimator/appending(_:)-9g19r": {
+      "file_path": "documentation/CreateMLComponents/supervisedtemporalestimator/appending(_)-9g19r.md",
+      "hash": "90537235b6c641e26e262d6b5d123c98c16f4dd0221433623155fe76e7cae750"
     },
     "https://developer.apple.com/documentation/createmlcomponents/supervisedtemporalestimator/decode(from:)": {
       "file_path": "documentation/CreateMLComponents/supervisedtemporalestimator/decode(from).md",
@@ -4972,6 +5092,14 @@
       "file_path": "documentation/CreateMLComponents/tabularestimator/appending(_).md",
       "hash": "8e895cecd001e4a4b7a4b48d93add30469d55fde847985f9b7e25c40770cf399"
     },
+    "https://developer.apple.com/documentation/createmlcomponents/tabularestimator/appending(_:)-2i7ef": {
+      "file_path": "documentation/CreateMLComponents/tabularestimator/appending(_)-2i7ef.md",
+      "hash": "8cce5553cf11b11ef331427ce076cc979cce661aa7186a82ffb8353adfe7f777"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/tabularestimator/appending(_:)-4d7fj": {
+      "file_path": "documentation/CreateMLComponents/tabularestimator/appending(_)-4d7fj.md",
+      "hash": "b642d8d5da5551bfb73312edff4e4455ea5b8bcd9d976b6be91dd5f06df83a2d"
+    },
     "https://developer.apple.com/documentation/createmlcomponents/tabularestimator/decode(from:)": {
       "file_path": "documentation/CreateMLComponents/tabularestimator/decode(from).md",
       "hash": "3a48455acdfd73847a33b679cf5c79846c5d04e4bcc28a874a43fe5db03aee5d"
@@ -4991,6 +5119,10 @@
     "https://developer.apple.com/documentation/createmlcomponents/tabularestimator/fitted(to:)": {
       "file_path": "documentation/CreateMLComponents/tabularestimator/fitted(to).md",
       "hash": "c8a06fdb65cba16ce211ea989e735281ef1ae598536d41e60a17e04547fa55e4"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/tabularestimator/fitted(to:)-62p88": {
+      "file_path": "documentation/CreateMLComponents/tabularestimator/fitted(to)-62p88.md",
+      "hash": "5ce29f31c811eb2694ea69e653297be3301ccf049fb14ec3481358c5fd314b6f"
     },
     "https://developer.apple.com/documentation/createmlcomponents/tabularestimator/fitted(to:eventhandler:)": {
       "file_path": "documentation/CreateMLComponents/tabularestimator/fitted(to,eventhandler).md",
@@ -5075,6 +5207,30 @@
     "https://developer.apple.com/documentation/createmlcomponents/tabulartransformer/appending(_:)": {
       "file_path": "documentation/CreateMLComponents/tabulartransformer/appending(_).md",
       "hash": "a2b860403f7882714756755048c147fb5509a1fd69485c176de5f9835b37a354"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/tabulartransformer/appending(_:)-3ah47": {
+      "file_path": "documentation/CreateMLComponents/tabulartransformer/appending(_)-3ah47.md",
+      "hash": "642491e40b641a4d4af6f88cf43c470e443847c1b8826317258971a4af58f3c7"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/tabulartransformer/appending(_:)-3cljt": {
+      "file_path": "documentation/CreateMLComponents/tabulartransformer/appending(_)-3cljt.md",
+      "hash": "287b692cd725a397f9a85541c150467b92996682dbb8f292ef3d858ccf165548"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/tabulartransformer/appending(_:)-5xcrt": {
+      "file_path": "documentation/CreateMLComponents/tabulartransformer/appending(_)-5xcrt.md",
+      "hash": "6bbf0ef7c8cdd9ebc407f789b0ebb83a27ab39796afaad939d89748b6519004f"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/tabulartransformer/appending(_:)-6klpi": {
+      "file_path": "documentation/CreateMLComponents/tabulartransformer/appending(_)-6klpi.md",
+      "hash": "e2381f463449f87116c074422e03485f3d03fc56b9e0bec0a133ef001b2db626"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/tabulartransformer/appending(_:)-7sy5c": {
+      "file_path": "documentation/CreateMLComponents/tabulartransformer/appending(_)-7sy5c.md",
+      "hash": "71edb8838d326a80072e53b44687b86eb2c391502bb345814350435709a87c51"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/tabulartransformer/appending(_:)-8jrnz": {
+      "file_path": "documentation/CreateMLComponents/tabulartransformer/appending(_)-8jrnz.md",
+      "hash": "dd49dc409d46d9f0bb1960e9d5397fb6d1bebccc84fdd2372a1d31afa546cf73"
     },
     "https://developer.apple.com/documentation/createmlcomponents/tabulartransformer/callasfunction(_:eventhandler:)": {
       "file_path": "documentation/CreateMLComponents/tabulartransformer/callasfunction(_,eventhandler).md",
@@ -5187,6 +5343,26 @@
     "https://developer.apple.com/documentation/createmlcomponents/temporalestimator/appending(_:)": {
       "file_path": "documentation/CreateMLComponents/temporalestimator/appending(_).md",
       "hash": "5ed0d67dfd15b1acb47378e8c401f3d0dba0c0b7776a7d50068f49d1cf8ff005"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/temporalestimator/appending(_:)-3ywtc": {
+      "file_path": "documentation/CreateMLComponents/temporalestimator/appending(_)-3ywtc.md",
+      "hash": "95af653ba01e6a7da2fda2d7fe0a3974efcce75fd94bd007e96bbb6a1fbf61bd"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/temporalestimator/appending(_:)-40b0": {
+      "file_path": "documentation/CreateMLComponents/temporalestimator/appending(_)-40b0.md",
+      "hash": "dbff00de66abe7aa1768760c3d8c6d4b58ed5e3dff3d07044b5b82fb3ecf8ba6"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/temporalestimator/appending(_:)-43khh": {
+      "file_path": "documentation/CreateMLComponents/temporalestimator/appending(_)-43khh.md",
+      "hash": "6dc186ac0ccc168f8ab38638976f14624a0a85d822eae04ec10c8f58810cbf4c"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/temporalestimator/appending(_:)-5bepa": {
+      "file_path": "documentation/CreateMLComponents/temporalestimator/appending(_)-5bepa.md",
+      "hash": "51dabe1143a011efab191633abc9c96bb39ebf6543c037403e13c04311730ccf"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/temporalestimator/appending(_:)-933dy": {
+      "file_path": "documentation/CreateMLComponents/temporalestimator/appending(_)-933dy.md",
+      "hash": "b741f89ac185dfe700c288783c3613d46747a0f68899507832070a9f5850e882"
     },
     "https://developer.apple.com/documentation/createmlcomponents/temporalestimator/decode(from:)": {
       "file_path": "documentation/CreateMLComponents/temporalestimator/decode(from).md",
@@ -5331,6 +5507,46 @@
     "https://developer.apple.com/documentation/createmlcomponents/temporaltransformer/appending(_:)": {
       "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_).md",
       "hash": "5058c8d222d730c768affa9b9c1ffbc1e6e24734574e2570509d5d6dab3290c8"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/temporaltransformer/appending(_:)-152om": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-152om.md",
+      "hash": "531bd7c6e1faaf3b9d0a87d1ad8664fa105b75fcaa3c6c707beb9323b2b97cdb"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/temporaltransformer/appending(_:)-1ljim": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-1ljim.md",
+      "hash": "d2f30996bff65c09baadf503ae73004708d277dfaa9521783905d163b7ec1809"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/temporaltransformer/appending(_:)-1pxxi": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-1pxxi.md",
+      "hash": "27ba9bb0c4757900f9d50935e6d7fc036ea08b733c65e3edff2debbd9a117b76"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/temporaltransformer/appending(_:)-2w0z6": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-2w0z6.md",
+      "hash": "30a312e67ce7b0932c98f0889401383c3a22fcd881a159f36b366e73fbfa31a2"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/temporaltransformer/appending(_:)-3vdcn": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-3vdcn.md",
+      "hash": "d7ae92d2ff2d753a8548dc59cd39ce143d279e65d1cc2cd5c2071b2e3326ea12"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/temporaltransformer/appending(_:)-68mym": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-68mym.md",
+      "hash": "4fb533c2274f40618e7cf6215b05de761c254dc965fd06f4d9c3638109f3eba9"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/temporaltransformer/appending(_:)-6pxsk": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-6pxsk.md",
+      "hash": "0742c541fde28ace1d3458c9407f8edbbce8ec644af5f074d027e39b95ec3cbc"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/temporaltransformer/appending(_:)-703rv": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-703rv.md",
+      "hash": "4f86a28897164a1e5f8d262ed7113bf903eab162d3fd3f21190bee9b189734e8"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/temporaltransformer/appending(_:)-70exs": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-70exs.md",
+      "hash": "ff13925fe357564a1cf1294cc04e6a911ca75dbd2d0d35195993c6bfc1029b22"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/temporaltransformer/appending(_:)-9jeg2": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-9jeg2.md",
+      "hash": "d914db435359e19f15f75dc4a00333fc6bca9823204ee1703ccdbe6b1fd64dd9"
     },
     "https://developer.apple.com/documentation/createmlcomponents/temporaltransformer/applied(to:eventhandler:)": {
       "file_path": "documentation/CreateMLComponents/temporaltransformer/applied(to,eventhandler).md",
@@ -5660,6 +5876,10 @@
       "file_path": "documentation/CreateMLComponents/transformer/adaptedastemporal().md",
       "hash": "8f7d1e4a8ee357fed141d60b20c329895ce43f98c8d4d930d8e3f4e0905a7e10"
     },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/adaptedastemporal()-4irar": {
+      "file_path": "documentation/CreateMLComponents/transformer/adaptedastemporal()-4irar.md",
+      "hash": "6f653ee1295632641b1b6cd3cdd099bd668f2b1c22998ba1aa83ebbfdc3c075d"
+    },
     "https://developer.apple.com/documentation/createmlcomponents/transformer/adaptedasupdatableestimator()": {
       "file_path": "documentation/CreateMLComponents/transformer/adaptedasupdatableestimator().md",
       "hash": "a163207e2ca38a5bb7244f03b8d64d3bc4fb3edf0721ba26f32a3db1ccdb8862"
@@ -5667,6 +5887,62 @@
     "https://developer.apple.com/documentation/createmlcomponents/transformer/appending(_:)": {
       "file_path": "documentation/CreateMLComponents/transformer/appending(_).md",
       "hash": "af1398b8e69ce89e0545e1866ef09e7bae956c818510f3398d5f7f43d053b731"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/appending(_:)-13v67": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-13v67.md",
+      "hash": "36eeb43558d6570fda42d05abde050847e807a1ca566ffbc53dde6e6bdaba737"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/appending(_:)-2bp6m": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-2bp6m.md",
+      "hash": "0816299a7f4765f01b692cde5db0dc1c7d6adbca5922cb38dc7a8ef03db0e4d8"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/appending(_:)-2i7p8": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-2i7p8.md",
+      "hash": "fb03711eafdecb33788d6b8ebc305a7a99c4b6fc78589992b5e4f2fc61c7e51b"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/appending(_:)-4xmcp": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-4xmcp.md",
+      "hash": "d282bc7b99a2801934fd43ef3d44b00be02bafb6809275c8fb2dba95abcd6821"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/appending(_:)-6btna": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-6btna.md",
+      "hash": "21da946176ca731ec546570ba1e6e59bb86974487ea06cae572bf5b83dd73fa8"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/appending(_:)-6fg5q": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-6fg5q.md",
+      "hash": "567f3e67c80ea6ba316b196c569f415a07e0273f9e34a6086b0fae0e342ee2e7"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/appending(_:)-70fmy": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-70fmy.md",
+      "hash": "fe53660e0f80ad1fa71ff47afe48aef44d039785e6e796526a1f5134dccf98dc"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/appending(_:)-86js4": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-86js4.md",
+      "hash": "e26a208a31f146108e8476da9c73b57ac0bdd3f7b808eedd5a840e5938cd9946"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/appending(_:)-8y0df": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-8y0df.md",
+      "hash": "05fcb7a2547e84c20c3df1c9034129ddafc58cab46c1617a11803b5f5c7605a0"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/appending(_:)-91f58": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-91f58.md",
+      "hash": "638aec6ca2c2869b144d40be834e687756b684ca097296ab3e88ab9dab8e214f"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/appending(_:)-9myn0": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-9myn0.md",
+      "hash": "b91e1ccea95f7753783a849bdb0026bf6600718614421923e3df11fbd10130ec"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/appending(_:)-lta": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-lta.md",
+      "hash": "2737d1572fc248d3588c25ea448594da73a18a32a2113ad89ac6aba31e8ed6c6"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/appending(_:)-qqh2": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-qqh2.md",
+      "hash": "acea7b00a3cf6c3674dc8cb073dc376849555d0a4667f3ab5069f708e32487ca"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/appending(_:)-wd3u": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-wd3u.md",
+      "hash": "890bdbd66fa3e41f39932e2b8f990e4ebc93e3b297efd5cb0b077ed7fc8d937a"
     },
     "https://developer.apple.com/documentation/createmlcomponents/transformer/applied(to:eventhandler:)": {
       "file_path": "documentation/CreateMLComponents/transformer/applied(to,eventhandler).md",
@@ -5683,6 +5959,10 @@
     "https://developer.apple.com/documentation/createmlcomponents/transformer/callasfunction(_:eventhandler:)": {
       "file_path": "documentation/CreateMLComponents/transformer/callasfunction(_,eventhandler).md",
       "hash": "80e595891e24dfb5fa7094a2b85971be59829bb60463cc17516663f025f0dde3"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/callasfunction(_:eventhandler:)-477jv": {
+      "file_path": "documentation/CreateMLComponents/transformer/callasfunction(_,eventhandler)-477jv.md",
+      "hash": "c32d37bcbb92f115fc0ded94995d431e34b412449a3d52331fcbab6840324f7d"
     },
     "https://developer.apple.com/documentation/createmlcomponents/transformer/export(to:)": {
       "file_path": "documentation/CreateMLComponents/transformer/export(to).md",
@@ -5703,6 +5983,10 @@
     "https://developer.apple.com/documentation/createmlcomponents/transformer/prediction(from:)": {
       "file_path": "documentation/CreateMLComponents/transformer/prediction(from).md",
       "hash": "23b037f3af67bcf7ef7ef0ca47489856f9b67998054b81849106c8de35d4ac3c"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/transformer/prediction(from:)-107lm": {
+      "file_path": "documentation/CreateMLComponents/transformer/prediction(from)-107lm.md",
+      "hash": "00bb9366f32df48c7cac64a041dabd4719333c2aeacad19b1262ec6f90b67033"
     },
     "https://developer.apple.com/documentation/createmlcomponents/transformer/prediction(from:eventhandler:)": {
       "file_path": "documentation/CreateMLComponents/transformer/prediction(from,eventhandler).md",
@@ -5864,6 +6148,10 @@
       "file_path": "documentation/CreateMLComponents/uniformrandomintegerparameter/init(range,_).md",
       "hash": "4c6c0a05d8af96a032a56a76b8e8afe13280fcec43ffa8c6f2c122719133e1af"
     },
+    "https://developer.apple.com/documentation/createmlcomponents/uniformrandomintegerparameter/init(range:_:)-6lm90": {
+      "file_path": "documentation/CreateMLComponents/uniformrandomintegerparameter/init(range,_)-6lm90.md",
+      "hash": "bce8fa327bf403711e61de7c329226a62e2e3cfa18f3e3d50524a21eade7cbbb"
+    },
     "https://developer.apple.com/documentation/createmlcomponents/uniformrandomintegerparameter/range": {
       "file_path": "documentation/CreateMLComponents/uniformrandomintegerparameter/range.md",
       "hash": "0f2b65f9ab3df9be938ea2da13a190ef6236ebd4e29d162d7613e148090e2e17"
@@ -5883,6 +6171,26 @@
     "https://developer.apple.com/documentation/createmlcomponents/updatableestimator/appending(_:)": {
       "file_path": "documentation/CreateMLComponents/updatableestimator/appending(_).md",
       "hash": "e1d6e54a574761e8aac72507b69d05163e6cc866cf16f6667b12de03ea6872ce"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatableestimator/appending(_:)-2a8g6": {
+      "file_path": "documentation/CreateMLComponents/updatableestimator/appending(_)-2a8g6.md",
+      "hash": "9f3a0fed60ce0b8028f624823de2317788bea66d2e34aec980bb8345d7d22d26"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatableestimator/appending(_:)-2zfb9": {
+      "file_path": "documentation/CreateMLComponents/updatableestimator/appending(_)-2zfb9.md",
+      "hash": "93259cf688ccbc9a7262323c1e4bf7fc2678bd5ac6d61eefa40c71bfd347578d"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatableestimator/appending(_:)-376x7": {
+      "file_path": "documentation/CreateMLComponents/updatableestimator/appending(_)-376x7.md",
+      "hash": "6ae571ab02cf58be99477455b542c7b0c6450b7a484c7bcab9f69cd15f0e88d1"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatableestimator/appending(_:)-4wr8e": {
+      "file_path": "documentation/CreateMLComponents/updatableestimator/appending(_)-4wr8e.md",
+      "hash": "3ad0cfc7cdae8a1f702098ad862a691eceb3d9f1248b45b27f00bcc302e0a3b4"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatableestimator/appending(_:)-9m5rg": {
+      "file_path": "documentation/CreateMLComponents/updatableestimator/appending(_)-9m5rg.md",
+      "hash": "644708e0fff76abb207880a41e28ac7d4ede20aee07dfb2589a63c708debd665"
     },
     "https://developer.apple.com/documentation/createmlcomponents/updatableestimator/decodewithoptimizer(from:)": {
       "file_path": "documentation/CreateMLComponents/updatableestimator/decodewithoptimizer(from).md",
@@ -6012,6 +6320,26 @@
       "file_path": "documentation/CreateMLComponents/updatablesupervisedestimator/appending(_).md",
       "hash": "9fcc11bc79c16050ee367dc31d7069c794f2b658e9ce3368a84f747fabd7a93e"
     },
+    "https://developer.apple.com/documentation/createmlcomponents/updatablesupervisedestimator/appending(_:)-2vrlg": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedestimator/appending(_)-2vrlg.md",
+      "hash": "7ea2f68499895c6c696809d9372d591c3c5380a336a5c2c6657b95e888407287"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatablesupervisedestimator/appending(_:)-34bdm": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedestimator/appending(_)-34bdm.md",
+      "hash": "2f3164ff73d38f28110cd84162a2bbb133d0107d3e2c4ef3e13f10029e2d0d8e"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatablesupervisedestimator/appending(_:)-8dx6": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedestimator/appending(_)-8dx6.md",
+      "hash": "a123c6a770baf9ef0502feecac3591e291abed684072e1bd2aad54de2151dd77"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatablesupervisedestimator/appending(_:)-950l5": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedestimator/appending(_)-950l5.md",
+      "hash": "1ca3e45203673c8625266d354ebe52a9eaa5cc226c5d7de4d63c8ff71771257f"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatablesupervisedestimator/appending(_:)-95vxi": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedestimator/appending(_)-95vxi.md",
+      "hash": "def6868514b9a9ac07807a6cab5faa073cbf772a9de559ee3c833f2ef891c68d"
+    },
     "https://developer.apple.com/documentation/createmlcomponents/updatablesupervisedestimator/decodewithoptimizer(from:)": {
       "file_path": "documentation/CreateMLComponents/updatablesupervisedestimator/decodewithoptimizer(from).md",
       "hash": "4b184765cd0ef9eb37a82523441d9394e64470d3ec135d6c75baec2cb0f97d35"
@@ -6108,6 +6436,14 @@
       "file_path": "documentation/CreateMLComponents/updatablesupervisedtabularestimator/appending(_).md",
       "hash": "449476e884a3176441dd3403687914a0d73b2ee289884e731184b03f42029d30"
     },
+    "https://developer.apple.com/documentation/createmlcomponents/updatablesupervisedtabularestimator/appending(_:)-5wg05": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedtabularestimator/appending(_)-5wg05.md",
+      "hash": "8b5987add3cf7a5eca8f995e1b4a09d8d61885595b6c702e4f6f657065bc027a"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatablesupervisedtabularestimator/appending(_:)-66swx": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedtabularestimator/appending(_)-66swx.md",
+      "hash": "d44ca372653d9fb262fd8d4d69546d44130a869b7a286039ceba395fc714ddff"
+    },
     "https://developer.apple.com/documentation/createmlcomponents/updatablesupervisedtabularestimator/decodewithoptimizer(from:)": {
       "file_path": "documentation/CreateMLComponents/updatablesupervisedtabularestimator/decodewithoptimizer(from).md",
       "hash": "e472c58344c330c5628287247b418376b90a496235053bfd27f39f71973aa1b1"
@@ -6143,6 +6479,26 @@
     "https://developer.apple.com/documentation/createmlcomponents/updatablesupervisedtemporalestimator/appending(_:)": {
       "file_path": "documentation/CreateMLComponents/updatablesupervisedtemporalestimator/appending(_).md",
       "hash": "5359978f71556dc14a4dd792979732435cfdfa3fe5e6a27b9ae814e68e4e7db2"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatablesupervisedtemporalestimator/appending(_:)-30xpc": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedtemporalestimator/appending(_)-30xpc.md",
+      "hash": "693e3acebc3e45802af24ee936f827b7ace9849a87f2a8e9acc4553309d83f3f"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatablesupervisedtemporalestimator/appending(_:)-3k3xn": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedtemporalestimator/appending(_)-3k3xn.md",
+      "hash": "a3c68efcca48c5260a8004cef34a84d2ab8d991f22b25f3abe1d078d13cd1879"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatablesupervisedtemporalestimator/appending(_:)-4xdv5": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedtemporalestimator/appending(_)-4xdv5.md",
+      "hash": "4643f43bb202a656ea1df1f7de4ce108ea1924a4ec7444e7c619590e433059a1"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatablesupervisedtemporalestimator/appending(_:)-7orql": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedtemporalestimator/appending(_)-7orql.md",
+      "hash": "8e5f851b8e5701d24fc8348b59db22ca4d9cf7d7450b60924dd7a3cdd5ad22a5"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatablesupervisedtemporalestimator/appending(_:)-8wg63": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedtemporalestimator/appending(_)-8wg63.md",
+      "hash": "c722b164c313d824f53ff00ddbf40232c02ed018cde7bb9587c62fe93c78eb1f"
     },
     "https://developer.apple.com/documentation/createmlcomponents/updatablesupervisedtemporalestimator/decodewithoptimizer(from:)": {
       "file_path": "documentation/CreateMLComponents/updatablesupervisedtemporalestimator/decodewithoptimizer(from).md",
@@ -6183,6 +6539,14 @@
     "https://developer.apple.com/documentation/createmlcomponents/updatabletabularestimator/appending(_:)": {
       "file_path": "documentation/CreateMLComponents/updatabletabularestimator/appending(_).md",
       "hash": "b5461d980b084e5c26c25964a8d8ab2b1d76bec00fbd43ab4862e5815cc654c4"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatabletabularestimator/appending(_:)-3sl33": {
+      "file_path": "documentation/CreateMLComponents/updatabletabularestimator/appending(_)-3sl33.md",
+      "hash": "f95b60deb7f2b0e3b4b1ded7b3cf0781757175fc664bb7b6844c17e4febf7e13"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatabletabularestimator/appending(_:)-700m8": {
+      "file_path": "documentation/CreateMLComponents/updatabletabularestimator/appending(_)-700m8.md",
+      "hash": "30286482b30fae7c42c8e93c8d7595b6a74ae3c39389a2abfd3d329da3773ba3"
     },
     "https://developer.apple.com/documentation/createmlcomponents/updatabletabularestimator/decodewithoptimizer(from:)": {
       "file_path": "documentation/CreateMLComponents/updatabletabularestimator/decodewithoptimizer(from).md",
@@ -6259,6 +6623,26 @@
     "https://developer.apple.com/documentation/createmlcomponents/updatabletemporalestimator/appending(_:)": {
       "file_path": "documentation/CreateMLComponents/updatabletemporalestimator/appending(_).md",
       "hash": "24784bff93f28c4fb62a0e5ca0c90e082b16f02654121316f4b9c8e27fb34409"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatabletemporalestimator/appending(_:)-1qj6y": {
+      "file_path": "documentation/CreateMLComponents/updatabletemporalestimator/appending(_)-1qj6y.md",
+      "hash": "095ce7f689c2173ed32b47e8048c56380a6cf10621c1cbf173c4b63a52dc5cdc"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatabletemporalestimator/appending(_:)-3xqcq": {
+      "file_path": "documentation/CreateMLComponents/updatabletemporalestimator/appending(_)-3xqcq.md",
+      "hash": "c8cb9292e89d182be3ad880ec6372216046cac479e1f029ace2b73bb1ec8deb1"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatabletemporalestimator/appending(_:)-6ekr1": {
+      "file_path": "documentation/CreateMLComponents/updatabletemporalestimator/appending(_)-6ekr1.md",
+      "hash": "c525fe37455501a38c55a479793f26cfed372fbbcb72d2fb632b39becbc0de51"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatabletemporalestimator/appending(_:)-8xn6o": {
+      "file_path": "documentation/CreateMLComponents/updatabletemporalestimator/appending(_)-8xn6o.md",
+      "hash": "0640e457af2a6565b555a93d7269f4c6a1436173549178f59b6fb3f19fa3b95f"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/updatabletemporalestimator/appending(_:)-92r9q": {
+      "file_path": "documentation/CreateMLComponents/updatabletemporalestimator/appending(_)-92r9q.md",
+      "hash": "9572dff88458d14f6bfff7840723de66a85a52fc40463b1f918409063f00967b"
     },
     "https://developer.apple.com/documentation/createmlcomponents/updatabletemporalestimator/decodewithoptimizer(from:)": {
       "file_path": "documentation/CreateMLComponents/updatabletemporalestimator/decodewithoptimizer(from).md",
@@ -6503,6 +6887,10 @@
     "https://developer.apple.com/documentation/createmlcomponents/videoreader/read(_:)": {
       "file_path": "documentation/CreateMLComponents/videoreader/read(_).md",
       "hash": "adc3b1ba6ad5907828b50f421efa249c0e4fd10e17dcd49933c563572aabb46b"
+    },
+    "https://developer.apple.com/documentation/createmlcomponents/videoreader/read(_:)-4oyjh": {
+      "file_path": "documentation/CreateMLComponents/videoreader/read(_)-4oyjh.md",
+      "hash": "fc6ed5f26306d03feabb69c22bcc0076e0f00227d98d0eb998771813918bfc4d"
     },
     "https://developer.apple.com/documentation/createmlcomponents/videoreader/read(contentsof:)": {
       "file_path": "documentation/CreateMLComponents/videoreader/read(contentsof).md",
@@ -6868,6 +7256,10 @@
       "file_path": "documentation/CreateMLComponents/audioreader/microphoneasyncbuffers/makeasynciterator().md",
       "hash": "dadd8c4b81a78ab694a8ace2d8e704ec7d7987bc304352154712f7eb0b0d691c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/audioreader/read(_:configuration:)-3nyda.json": {
+      "file_path": "documentation/CreateMLComponents/audioreader/read(_,configuration)-3nyda.md",
+      "hash": "a8a950100d5dd6e260c76b98365e3a1459b5ef97891e592b9d8a9f84320be287"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/audioreader/read(_:configuration:).json": {
       "file_path": "documentation/CreateMLComponents/audioreader/read(_,configuration).md",
       "hash": "5e26d5d87fec50d1f25643d6e9e65bbad5a0c016567f981e251d9cfdd73306a1"
@@ -6908,9 +7300,17 @@
       "file_path": "documentation/CreateMLComponents/augmentationbuilder.md",
       "hash": "4886ba93591434edd9694c5699ce24ce44fed9a827e7a45b08eabe00de0e7959"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/augmentationbuilder/buildpartialblock(accumulated:next:)-4a0qn.json": {
+      "file_path": "documentation/CreateMLComponents/augmentationbuilder/buildpartialblock(accumulated,next)-4a0qn.md",
+      "hash": "fedbc419d64c23ffb1e57d22b54a159180ebe9f84add071f974c30e965db8820"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/augmentationbuilder/buildpartialblock(accumulated:next:).json": {
       "file_path": "documentation/CreateMLComponents/augmentationbuilder/buildpartialblock(accumulated,next).md",
       "hash": "93168b815ffcefac8c217bad4fbefb571bbbda9b8e1d7522fd343a6a699e6a44"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/augmentationbuilder/buildpartialblock(first:)-8uoqq.json": {
+      "file_path": "documentation/CreateMLComponents/augmentationbuilder/buildpartialblock(first)-8uoqq.md",
+      "hash": "c17c86d44e59d31262e5d8284145bd6957f8480ba27abe6afa67b02f2d2cc478"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/augmentationbuilder/buildpartialblock(first:).json": {
       "file_path": "documentation/CreateMLComponents/augmentationbuilder/buildpartialblock(first).md",
@@ -7244,6 +7644,14 @@
       "file_path": "documentation/CreateMLComponents/classificationdistribution/startindex.md",
       "hash": "3b1ef7aaa4a37be62e8979f0dda1d5121168a4f41c2331e7c62ef3528491fe4b"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/classificationdistribution/subscript(_:)-856r7.json": {
+      "file_path": "documentation/CreateMLComponents/classificationdistribution/subscript(_)-856r7.md",
+      "hash": "8f8c97abcb0412aeaa351607961d2f9d611ea57ca229b20d2685f757746295bc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/classificationdistribution/subscript(_:)-s5as.json": {
+      "file_path": "documentation/CreateMLComponents/classificationdistribution/subscript(_)-s5as.md",
+      "hash": "17af61165d8dfd879546928063bbc82cc32cd38e626163ec6c91c5072007d624"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/classificationdistribution/subscript(_:).json": {
       "file_path": "documentation/CreateMLComponents/classificationdistribution/subscript(_).md",
       "hash": "f5b6b4cdc12055057839def701d785f99a1ccf068677084bab5561df45f6fce4"
@@ -7299,6 +7707,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/classificationmetrics/init().json": {
       "file_path": "documentation/CreateMLComponents/classificationmetrics/init().md",
       "hash": "1c53a99bb66836b828949ce6747e12af710bb30d6cdd2f77723a131c15941d84"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/classificationmetrics/init(_:)-7nms4.json": {
+      "file_path": "documentation/CreateMLComponents/classificationmetrics/init(_)-7nms4.md",
+      "hash": "43315f0b4637d1b96bd6bf2adaab09686063619fd7d2c4a03da3e351389900a1"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/classificationmetrics/init(_:).json": {
       "file_path": "documentation/CreateMLComponents/classificationmetrics/init(_).md",
@@ -7816,6 +8228,26 @@
       "file_path": "documentation/CreateMLComponents/estimator/adaptedastemporal().md",
       "hash": "3c30179e6157f21642d1da676e8d29b7770ae6420966325d0a9a26c8ac2ef68d"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/estimator/appending(_:)-10qfn.json": {
+      "file_path": "documentation/CreateMLComponents/estimator/appending(_)-10qfn.md",
+      "hash": "fdc40a793f171a0df2f583189f79f934723e20f3524827e9c236aaeb9a6dfe89"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/estimator/appending(_:)-2xkyp.json": {
+      "file_path": "documentation/CreateMLComponents/estimator/appending(_)-2xkyp.md",
+      "hash": "5fb760ea8def1acbbabae8a3c05f5202586bef62a69b4d281a690018e0cca966"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/estimator/appending(_:)-atvs.json": {
+      "file_path": "documentation/CreateMLComponents/estimator/appending(_)-atvs.md",
+      "hash": "3c84278c2f90c96d0cdec9a9ac3f09f9029869ffef20887e5a68b49892086979"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/estimator/appending(_:)-u0ef.json": {
+      "file_path": "documentation/CreateMLComponents/estimator/appending(_)-u0ef.md",
+      "hash": "f354f43ba1495673378d5c600dd61bb30d61b6781e346b31444a8673339b553b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/estimator/appending(_:)-w1ek.json": {
+      "file_path": "documentation/CreateMLComponents/estimator/appending(_)-w1ek.md",
+      "hash": "6ac5563fdc31ad4a052cd01ee394d7ddb01d5d851794b2c7ff7ebb33042da8d7"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/estimator/appending(_:).json": {
       "file_path": "documentation/CreateMLComponents/estimator/appending(_).md",
       "hash": "61e3a404a2beb3588829141df749e362e66ad526c826a877e5a81624061100f6"
@@ -8167,6 +8599,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/fullyconnectednetworkmultilabelclassifiermodel/evaluation(on:confidencethresholds:).json": {
       "file_path": "documentation/CreateMLComponents/fullyconnectednetworkmultilabelclassifiermodel/evaluation(on,confidencethresholds).md",
       "hash": "42ca88de8c8d82d79fce5552f226ca78b9460b3777db2c3aab8f8912da24f1be"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/fullyconnectednetworkmultilabelclassifiermodel/prediction(from:confidencethresholds:)-3kiaw.json": {
+      "file_path": "documentation/CreateMLComponents/fullyconnectednetworkmultilabelclassifiermodel/prediction(from,confidencethresholds)-3kiaw.md",
+      "hash": "84ce6782c4ac7954b90f72f19527c6cd5ccd7a691065b38c1bd27c774a0d5066"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/fullyconnectednetworkmultilabelclassifiermodel/prediction(from:confidencethresholds:).json": {
       "file_path": "documentation/CreateMLComponents/fullyconnectednetworkmultilabelclassifiermodel/prediction(from,confidencethresholds).md",
@@ -8916,6 +9352,10 @@
       "file_path": "documentation/CreateMLComponents/lineartimeseriesforecaster/model/applied(to,eventhandler)-3h2wx.md",
       "hash": "3bb21a0ca4144bdf98097166b5b01eee79b36e6093219f66c204e261493ebd05"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/lineartimeseriesforecaster/model/applied(to:eventhandler:)-5kkin.json": {
+      "file_path": "documentation/CreateMLComponents/lineartimeseriesforecaster/model/applied(to,eventhandler)-5kkin.md",
+      "hash": "b6e6b07f966ba478938c378fe780aa419594fe803b8c713ee968275cb0a8076e"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/lineartimeseriesforecaster/model/applied(to:eventhandler:).json": {
       "file_path": "documentation/CreateMLComponents/lineartimeseriesforecaster/model/applied(to,eventhandler).md",
       "hash": "e0a686bb157a112d88dcec223d9be8dee238498e2f60faa5b28b295cee3f341e"
@@ -9023,6 +9463,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/lineartransformer.json": {
       "file_path": "documentation/CreateMLComponents/lineartransformer.md",
       "hash": "59d53194e0e5559222b4b59dc2e5dde2ec644e6f492476de6a4d967072ae75b7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/lineartransformer/applied(to:eventhandler:)-3p0ia.json": {
+      "file_path": "documentation/CreateMLComponents/lineartransformer/applied(to,eventhandler)-3p0ia.md",
+      "hash": "96da74b82f90e818c323af499819b2f88a0c54719ffbd88b31a680229e4854e1"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/lineartransformer/applied(to:eventhandler:).json": {
       "file_path": "documentation/CreateMLComponents/lineartransformer/applied(to,eventhandler).md",
@@ -9691,6 +10135,14 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/multivariatelinearregressor/fitted(to:eventhandler:).json": {
       "file_path": "documentation/CreateMLComponents/multivariatelinearregressor/fitted(to,eventhandler).md",
       "hash": "f27808d65914b4dd31eda46fccc9383075e989e72f9fe4d388d84115d5bc792a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/multivariatelinearregressor/fitted(to:validateon:eventhandler:)-82szq.json": {
+      "file_path": "documentation/CreateMLComponents/multivariatelinearregressor/fitted(to,validateon,eventhandler)-82szq.md",
+      "hash": "cabb528a33739c25e3a0c8fd81c2812209ef8ab7d86a43ffc19debea7a4313b7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/multivariatelinearregressor/fitted(to:validateon:eventhandler:)-9bluu.json": {
+      "file_path": "documentation/CreateMLComponents/multivariatelinearregressor/fitted(to,validateon,eventhandler)-9bluu.md",
+      "hash": "77a6dd6159843702dd8b6407b443ccd0fb06199d9be49ffd3c8138a0e7ac68fa"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/multivariatelinearregressor/fitted(to:validateon:eventhandler:).json": {
       "file_path": "documentation/CreateMLComponents/multivariatelinearregressor/fitted(to,validateon,eventhandler).md",
@@ -11060,6 +11512,10 @@
       "file_path": "documentation/CreateMLComponents/regressor.md",
       "hash": "41e093d9fcaeed6658d1517d2d7511e015702ab4fda45182c5b9bef90324c6d8"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/regressor/prediction(from:)-7iqkm.json": {
+      "file_path": "documentation/CreateMLComponents/regressor/prediction(from)-7iqkm.md",
+      "hash": "d3cd740fee01c4dad6ea60ab800bcea962631ee4e06c41d187007bd3963adf24"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/regressor/prediction(from:).json": {
       "file_path": "documentation/CreateMLComponents/regressor/prediction(from).md",
       "hash": "e312d82b2526ad086b9f690e77f369425ab82c2745db9b83bd37adc94ab1ea15"
@@ -11208,6 +11664,10 @@
       "file_path": "documentation/CreateMLComponents/slidingwindows/stride.md",
       "hash": "ad74e0a180a3a295db3f820c71116e1b208fa7e2e4a01f7896ddec2ef8385ef9"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/slidingwindows/subscript(_:)-1x8i9.json": {
+      "file_path": "documentation/CreateMLComponents/slidingwindows/subscript(_)-1x8i9.md",
+      "hash": "4ad0f5d7d29d71ef2cb6f094289122bec67262af597b323d643f916033aafe71"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/slidingwindows/subscript(_:).json": {
       "file_path": "documentation/CreateMLComponents/slidingwindows/subscript(_).md",
       "hash": "5a5a7bc267f936e498cbc8ba267ced089f5246b23b2f2b706672b4e15368f68e"
@@ -11311,6 +11771,26 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedestimator/annotation.json": {
       "file_path": "documentation/CreateMLComponents/supervisedestimator/annotation.md",
       "hash": "b339c2ac55b4f17046e6c8b0452f7c0982f52046a7d441510136917c0d41ff22"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedestimator/appending(_:)-2436m.json": {
+      "file_path": "documentation/CreateMLComponents/supervisedestimator/appending(_)-2436m.md",
+      "hash": "a0bb8d59174bf32ec7cc64a2625658bdab56e1d7fd200a88ea0db4780cf29b2f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedestimator/appending(_:)-36sou.json": {
+      "file_path": "documentation/CreateMLComponents/supervisedestimator/appending(_)-36sou.md",
+      "hash": "f9e023a1179f3800e9a6db8e2fea38e0e0b6e7b8e8daf8c8a63753a49a8ab29d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedestimator/appending(_:)-629ia.json": {
+      "file_path": "documentation/CreateMLComponents/supervisedestimator/appending(_)-629ia.md",
+      "hash": "a67ff81c89a1121e60cc6ab116cfcf870b62457d6ffdf4bd9553430a2c07e7f8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedestimator/appending(_:)-8mm57.json": {
+      "file_path": "documentation/CreateMLComponents/supervisedestimator/appending(_)-8mm57.md",
+      "hash": "87cd99034f990136ed9bd86c7be7100101477adfded4decaaa6658a4f51cafa0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedestimator/appending(_:)-m18k.json": {
+      "file_path": "documentation/CreateMLComponents/supervisedestimator/appending(_)-m18k.md",
+      "hash": "59cbba2e12ca5488c6077eaf1ee689074ecef892641c8ac35e8d687d12eff89a"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedestimator/appending(_:).json": {
       "file_path": "documentation/CreateMLComponents/supervisedestimator/appending(_).md",
@@ -11420,6 +11900,14 @@
       "file_path": "documentation/CreateMLComponents/supervisedtabularestimator/annotationcolumnid.md",
       "hash": "1d2392290fdceca362f18f595d81a144780741bc58fd07a3509d395dd6855784"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedtabularestimator/appending(_:)-1x6qv.json": {
+      "file_path": "documentation/CreateMLComponents/supervisedtabularestimator/appending(_)-1x6qv.md",
+      "hash": "3137986ac6b7dd831e6bae1247792b39c56252eac025ecbe370ede63248fb600"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedtabularestimator/appending(_:)-54zun.json": {
+      "file_path": "documentation/CreateMLComponents/supervisedtabularestimator/appending(_)-54zun.md",
+      "hash": "08057cc410df03022f66c0f3b4509f287dec3e31124c202246d0814e859c41f1"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedtabularestimator/appending(_:).json": {
       "file_path": "documentation/CreateMLComponents/supervisedtabularestimator/appending(_).md",
       "hash": "5485dc2164c9e9bf3bf006ffbd72e367ce88789c1a30f8d31c83f5f6121a786d"
@@ -11467,6 +11955,26 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedtemporalestimator/annotation.json": {
       "file_path": "documentation/CreateMLComponents/supervisedtemporalestimator/annotation.md",
       "hash": "659e76e9e4e75705ba2e45072164f18924f03bb1e87290829d4342e82017fb2a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedtemporalestimator/appending(_:)-1vtjj.json": {
+      "file_path": "documentation/CreateMLComponents/supervisedtemporalestimator/appending(_)-1vtjj.md",
+      "hash": "6011cc9db172516aa1383f39988bc59834a081343c959ca0330962c0c0b126e4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedtemporalestimator/appending(_:)-3xipm.json": {
+      "file_path": "documentation/CreateMLComponents/supervisedtemporalestimator/appending(_)-3xipm.md",
+      "hash": "04017c9ce735a32e9dbce8f34458370f6935e338dc5f84b672386da304587515"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedtemporalestimator/appending(_:)-4km9v.json": {
+      "file_path": "documentation/CreateMLComponents/supervisedtemporalestimator/appending(_)-4km9v.md",
+      "hash": "f5ef33e29df1efc6a9e7cd171a039e8bf561ef51a0d25abe1537e15a035a9b53"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedtemporalestimator/appending(_:)-4vdf2.json": {
+      "file_path": "documentation/CreateMLComponents/supervisedtemporalestimator/appending(_)-4vdf2.md",
+      "hash": "1ae2960c6068c67c30f50c2a0b54405e6d2be474ade7e50c0d130e4f322a0ac1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedtemporalestimator/appending(_:)-9g19r.json": {
+      "file_path": "documentation/CreateMLComponents/supervisedtemporalestimator/appending(_)-9g19r.md",
+      "hash": "90537235b6c641e26e262d6b5d123c98c16f4dd0221433623155fe76e7cae750"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/supervisedtemporalestimator/appending(_:).json": {
       "file_path": "documentation/CreateMLComponents/supervisedtemporalestimator/appending(_).md",
@@ -11516,6 +12024,14 @@
       "file_path": "documentation/CreateMLComponents/tabularestimator/adaptedassupervised(annotationcolumnid).md",
       "hash": "0097fba62a6a2535cc0cec8f18ec0c097b081a4b375b8302afc913fab6a316b4"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/tabularestimator/appending(_:)-2i7ef.json": {
+      "file_path": "documentation/CreateMLComponents/tabularestimator/appending(_)-2i7ef.md",
+      "hash": "8cce5553cf11b11ef331427ce076cc979cce661aa7186a82ffb8353adfe7f777"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/tabularestimator/appending(_:)-4d7fj.json": {
+      "file_path": "documentation/CreateMLComponents/tabularestimator/appending(_)-4d7fj.md",
+      "hash": "b642d8d5da5551bfb73312edff4e4455ea5b8bcd9d976b6be91dd5f06df83a2d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/tabularestimator/appending(_:).json": {
       "file_path": "documentation/CreateMLComponents/tabularestimator/appending(_).md",
       "hash": "8e895cecd001e4a4b7a4b48d93add30469d55fde847985f9b7e25c40770cf399"
@@ -11535,6 +12051,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/tabularestimator/encode(_:to:).json": {
       "file_path": "documentation/CreateMLComponents/tabularestimator/encode(_,to).md",
       "hash": "00fdd9459b39c16d435a41d52a6ede6262602b0f22b2572ad53d6e1927f46281"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/tabularestimator/fitted(to:)-62p88.json": {
+      "file_path": "documentation/CreateMLComponents/tabularestimator/fitted(to)-62p88.md",
+      "hash": "5ce29f31c811eb2694ea69e653297be3301ccf049fb14ec3481358c5fd314b6f"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/tabularestimator/fitted(to:).json": {
       "file_path": "documentation/CreateMLComponents/tabularestimator/fitted(to).md",
@@ -11619,6 +12139,30 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/tabulartransformer/adaptedasupdatableestimator().json": {
       "file_path": "documentation/CreateMLComponents/tabulartransformer/adaptedasupdatableestimator().md",
       "hash": "ee7a8b38559803361e6000d0ed98eed72a0c3515b154424a4309f5297e61b386"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/tabulartransformer/appending(_:)-3ah47.json": {
+      "file_path": "documentation/CreateMLComponents/tabulartransformer/appending(_)-3ah47.md",
+      "hash": "642491e40b641a4d4af6f88cf43c470e443847c1b8826317258971a4af58f3c7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/tabulartransformer/appending(_:)-3cljt.json": {
+      "file_path": "documentation/CreateMLComponents/tabulartransformer/appending(_)-3cljt.md",
+      "hash": "287b692cd725a397f9a85541c150467b92996682dbb8f292ef3d858ccf165548"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/tabulartransformer/appending(_:)-5xcrt.json": {
+      "file_path": "documentation/CreateMLComponents/tabulartransformer/appending(_)-5xcrt.md",
+      "hash": "6bbf0ef7c8cdd9ebc407f789b0ebb83a27ab39796afaad939d89748b6519004f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/tabulartransformer/appending(_:)-6klpi.json": {
+      "file_path": "documentation/CreateMLComponents/tabulartransformer/appending(_)-6klpi.md",
+      "hash": "e2381f463449f87116c074422e03485f3d03fc56b9e0bec0a133ef001b2db626"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/tabulartransformer/appending(_:)-7sy5c.json": {
+      "file_path": "documentation/CreateMLComponents/tabulartransformer/appending(_)-7sy5c.md",
+      "hash": "71edb8838d326a80072e53b44687b86eb2c391502bb345814350435709a87c51"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/tabulartransformer/appending(_:)-8jrnz.json": {
+      "file_path": "documentation/CreateMLComponents/tabulartransformer/appending(_)-8jrnz.md",
+      "hash": "dd49dc409d46d9f0bb1960e9d5397fb6d1bebccc84fdd2372a1d31afa546cf73"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/tabulartransformer/appending(_:).json": {
       "file_path": "documentation/CreateMLComponents/tabulartransformer/appending(_).md",
@@ -11731,6 +12275,26 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporalestimator/adaptedassupervised(annotationtype:).json": {
       "file_path": "documentation/CreateMLComponents/temporalestimator/adaptedassupervised(annotationtype).md",
       "hash": "73a6065696b9031defa8c1704e176e1903f4c6d1e8738b0f81d66c7387a3638c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporalestimator/appending(_:)-3ywtc.json": {
+      "file_path": "documentation/CreateMLComponents/temporalestimator/appending(_)-3ywtc.md",
+      "hash": "95af653ba01e6a7da2fda2d7fe0a3974efcce75fd94bd007e96bbb6a1fbf61bd"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporalestimator/appending(_:)-40b0.json": {
+      "file_path": "documentation/CreateMLComponents/temporalestimator/appending(_)-40b0.md",
+      "hash": "dbff00de66abe7aa1768760c3d8c6d4b58ed5e3dff3d07044b5b82fb3ecf8ba6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporalestimator/appending(_:)-43khh.json": {
+      "file_path": "documentation/CreateMLComponents/temporalestimator/appending(_)-43khh.md",
+      "hash": "6dc186ac0ccc168f8ab38638976f14624a0a85d822eae04ec10c8f58810cbf4c"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporalestimator/appending(_:)-5bepa.json": {
+      "file_path": "documentation/CreateMLComponents/temporalestimator/appending(_)-5bepa.md",
+      "hash": "51dabe1143a011efab191633abc9c96bb39ebf6543c037403e13c04311730ccf"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporalestimator/appending(_:)-933dy.json": {
+      "file_path": "documentation/CreateMLComponents/temporalestimator/appending(_)-933dy.md",
+      "hash": "b741f89ac185dfe700c288783c3613d46747a0f68899507832070a9f5850e882"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporalestimator/appending(_:).json": {
       "file_path": "documentation/CreateMLComponents/temporalestimator/appending(_).md",
@@ -11875,6 +12439,46 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporaltransformer/adaptedasupdatableestimator().json": {
       "file_path": "documentation/CreateMLComponents/temporaltransformer/adaptedasupdatableestimator().md",
       "hash": "b96088922752aa9768d652f1ff3353599361ae3fff0a4a029494fe4b266209a8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporaltransformer/appending(_:)-152om.json": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-152om.md",
+      "hash": "531bd7c6e1faaf3b9d0a87d1ad8664fa105b75fcaa3c6c707beb9323b2b97cdb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporaltransformer/appending(_:)-1ljim.json": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-1ljim.md",
+      "hash": "d2f30996bff65c09baadf503ae73004708d277dfaa9521783905d163b7ec1809"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporaltransformer/appending(_:)-1pxxi.json": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-1pxxi.md",
+      "hash": "27ba9bb0c4757900f9d50935e6d7fc036ea08b733c65e3edff2debbd9a117b76"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporaltransformer/appending(_:)-2w0z6.json": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-2w0z6.md",
+      "hash": "30a312e67ce7b0932c98f0889401383c3a22fcd881a159f36b366e73fbfa31a2"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporaltransformer/appending(_:)-3vdcn.json": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-3vdcn.md",
+      "hash": "d7ae92d2ff2d753a8548dc59cd39ce143d279e65d1cc2cd5c2071b2e3326ea12"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporaltransformer/appending(_:)-68mym.json": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-68mym.md",
+      "hash": "4fb533c2274f40618e7cf6215b05de761c254dc965fd06f4d9c3638109f3eba9"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporaltransformer/appending(_:)-6pxsk.json": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-6pxsk.md",
+      "hash": "0742c541fde28ace1d3458c9407f8edbbce8ec644af5f074d027e39b95ec3cbc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporaltransformer/appending(_:)-703rv.json": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-703rv.md",
+      "hash": "4f86a28897164a1e5f8d262ed7113bf903eab162d3fd3f21190bee9b189734e8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporaltransformer/appending(_:)-70exs.json": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-70exs.md",
+      "hash": "ff13925fe357564a1cf1294cc04e6a911ca75dbd2d0d35195993c6bfc1029b22"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporaltransformer/appending(_:)-9jeg2.json": {
+      "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_)-9jeg2.md",
+      "hash": "d914db435359e19f15f75dc4a00333fc6bca9823204ee1703ccdbe6b1fd64dd9"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/temporaltransformer/appending(_:).json": {
       "file_path": "documentation/CreateMLComponents/temporaltransformer/appending(_).md",
@@ -12204,6 +12808,10 @@
       "file_path": "documentation/CreateMLComponents/transformer/adaptedasrandomtransformer().md",
       "hash": "f2c5994945af4cb5497efec8908165fc0d94d14d2d09adfa67fe447acc97ecd2"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/adaptedastemporal()-4irar.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/adaptedastemporal()-4irar.md",
+      "hash": "6f653ee1295632641b1b6cd3cdd099bd668f2b1c22998ba1aa83ebbfdc3c075d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/adaptedastemporal().json": {
       "file_path": "documentation/CreateMLComponents/transformer/adaptedastemporal().md",
       "hash": "8f7d1e4a8ee357fed141d60b20c329895ce43f98c8d4d930d8e3f4e0905a7e10"
@@ -12211,6 +12819,62 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/adaptedasupdatableestimator().json": {
       "file_path": "documentation/CreateMLComponents/transformer/adaptedasupdatableestimator().md",
       "hash": "a163207e2ca38a5bb7244f03b8d64d3bc4fb3edf0721ba26f32a3db1ccdb8862"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/appending(_:)-13v67.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-13v67.md",
+      "hash": "36eeb43558d6570fda42d05abde050847e807a1ca566ffbc53dde6e6bdaba737"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/appending(_:)-2bp6m.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-2bp6m.md",
+      "hash": "0816299a7f4765f01b692cde5db0dc1c7d6adbca5922cb38dc7a8ef03db0e4d8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/appending(_:)-2i7p8.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-2i7p8.md",
+      "hash": "fb03711eafdecb33788d6b8ebc305a7a99c4b6fc78589992b5e4f2fc61c7e51b"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/appending(_:)-4xmcp.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-4xmcp.md",
+      "hash": "d282bc7b99a2801934fd43ef3d44b00be02bafb6809275c8fb2dba95abcd6821"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/appending(_:)-6btna.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-6btna.md",
+      "hash": "21da946176ca731ec546570ba1e6e59bb86974487ea06cae572bf5b83dd73fa8"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/appending(_:)-6fg5q.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-6fg5q.md",
+      "hash": "567f3e67c80ea6ba316b196c569f415a07e0273f9e34a6086b0fae0e342ee2e7"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/appending(_:)-70fmy.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-70fmy.md",
+      "hash": "fe53660e0f80ad1fa71ff47afe48aef44d039785e6e796526a1f5134dccf98dc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/appending(_:)-86js4.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-86js4.md",
+      "hash": "e26a208a31f146108e8476da9c73b57ac0bdd3f7b808eedd5a840e5938cd9946"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/appending(_:)-8y0df.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-8y0df.md",
+      "hash": "05fcb7a2547e84c20c3df1c9034129ddafc58cab46c1617a11803b5f5c7605a0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/appending(_:)-91f58.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-91f58.md",
+      "hash": "638aec6ca2c2869b144d40be834e687756b684ca097296ab3e88ab9dab8e214f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/appending(_:)-9myn0.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-9myn0.md",
+      "hash": "b91e1ccea95f7753783a849bdb0026bf6600718614421923e3df11fbd10130ec"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/appending(_:)-lta.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-lta.md",
+      "hash": "2737d1572fc248d3588c25ea448594da73a18a32a2113ad89ac6aba31e8ed6c6"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/appending(_:)-qqh2.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-qqh2.md",
+      "hash": "acea7b00a3cf6c3674dc8cb073dc376849555d0a4667f3ab5069f708e32487ca"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/appending(_:)-wd3u.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/appending(_)-wd3u.md",
+      "hash": "890bdbd66fa3e41f39932e2b8f990e4ebc93e3b297efd5cb0b077ed7fc8d937a"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/appending(_:).json": {
       "file_path": "documentation/CreateMLComponents/transformer/appending(_).md",
@@ -12227,6 +12891,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/applied(to:eventhandler:).json": {
       "file_path": "documentation/CreateMLComponents/transformer/applied(to,eventhandler).md",
       "hash": "b9e63ce321f90a6d417767f2c34e198b07ab21f2291f27fcbd350f154edfc441"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/callasfunction(_:eventhandler:)-477jv.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/callasfunction(_,eventhandler)-477jv.md",
+      "hash": "c32d37bcbb92f115fc0ded94995d431e34b412449a3d52331fcbab6840324f7d"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/callasfunction(_:eventhandler:).json": {
       "file_path": "documentation/CreateMLComponents/transformer/callasfunction(_,eventhandler).md",
@@ -12247,6 +12915,10 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/output.json": {
       "file_path": "documentation/CreateMLComponents/transformer/output.md",
       "hash": "27655b9b42302544227e342bb65bce5f80fb63335d04cd82c0ef20e83447dafb"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/prediction(from:)-107lm.json": {
+      "file_path": "documentation/CreateMLComponents/transformer/prediction(from)-107lm.md",
+      "hash": "00bb9366f32df48c7cac64a041dabd4719333c2aeacad19b1262ec6f90b67033"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/transformer/prediction(from:).json": {
       "file_path": "documentation/CreateMLComponents/transformer/prediction(from).md",
@@ -12408,6 +13080,10 @@
       "file_path": "documentation/CreateMLComponents/uniformrandomintegerparameter/applied(to,generator,eventhandler).md",
       "hash": "6bb007c110139adc3d76820795111afeebfea06243f1a2e3b4a30755bd192541"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/uniformrandomintegerparameter/init(range:_:)-6lm90.json": {
+      "file_path": "documentation/CreateMLComponents/uniformrandomintegerparameter/init(range,_)-6lm90.md",
+      "hash": "bce8fa327bf403711e61de7c329226a62e2e3cfa18f3e3d50524a21eade7cbbb"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/uniformrandomintegerparameter/init(range:_:).json": {
       "file_path": "documentation/CreateMLComponents/uniformrandomintegerparameter/init(range,_).md",
       "hash": "4c6c0a05d8af96a032a56a76b8e8afe13280fcec43ffa8c6f2c122719133e1af"
@@ -12427,6 +13103,26 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatableestimator/adaptedastemporal().json": {
       "file_path": "documentation/CreateMLComponents/updatableestimator/adaptedastemporal().md",
       "hash": "dd0a90cec83da646c7fbdabcef85bfdf8cfd5dc4c578872b99e5f12a83e5fc2a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatableestimator/appending(_:)-2a8g6.json": {
+      "file_path": "documentation/CreateMLComponents/updatableestimator/appending(_)-2a8g6.md",
+      "hash": "9f3a0fed60ce0b8028f624823de2317788bea66d2e34aec980bb8345d7d22d26"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatableestimator/appending(_:)-2zfb9.json": {
+      "file_path": "documentation/CreateMLComponents/updatableestimator/appending(_)-2zfb9.md",
+      "hash": "93259cf688ccbc9a7262323c1e4bf7fc2678bd5ac6d61eefa40c71bfd347578d"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatableestimator/appending(_:)-376x7.json": {
+      "file_path": "documentation/CreateMLComponents/updatableestimator/appending(_)-376x7.md",
+      "hash": "6ae571ab02cf58be99477455b542c7b0c6450b7a484c7bcab9f69cd15f0e88d1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatableestimator/appending(_:)-4wr8e.json": {
+      "file_path": "documentation/CreateMLComponents/updatableestimator/appending(_)-4wr8e.md",
+      "hash": "3ad0cfc7cdae8a1f702098ad862a691eceb3d9f1248b45b27f00bcc302e0a3b4"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatableestimator/appending(_:)-9m5rg.json": {
+      "file_path": "documentation/CreateMLComponents/updatableestimator/appending(_)-9m5rg.md",
+      "hash": "644708e0fff76abb207880a41e28ac7d4ede20aee07dfb2589a63c708debd665"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatableestimator/appending(_:).json": {
       "file_path": "documentation/CreateMLComponents/updatableestimator/appending(_).md",
@@ -12556,6 +13252,26 @@
       "file_path": "documentation/CreateMLComponents/updatablesupervisedestimator/adaptedastemporal().md",
       "hash": "af3670141cb1ea7a0aecda813a1de2b74760f9a489d55bc13971cbe2f6d1705c"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatablesupervisedestimator/appending(_:)-2vrlg.json": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedestimator/appending(_)-2vrlg.md",
+      "hash": "7ea2f68499895c6c696809d9372d591c3c5380a336a5c2c6657b95e888407287"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatablesupervisedestimator/appending(_:)-34bdm.json": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedestimator/appending(_)-34bdm.md",
+      "hash": "2f3164ff73d38f28110cd84162a2bbb133d0107d3e2c4ef3e13f10029e2d0d8e"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatablesupervisedestimator/appending(_:)-8dx6.json": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedestimator/appending(_)-8dx6.md",
+      "hash": "a123c6a770baf9ef0502feecac3591e291abed684072e1bd2aad54de2151dd77"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatablesupervisedestimator/appending(_:)-950l5.json": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedestimator/appending(_)-950l5.md",
+      "hash": "1ca3e45203673c8625266d354ebe52a9eaa5cc226c5d7de4d63c8ff71771257f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatablesupervisedestimator/appending(_:)-95vxi.json": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedestimator/appending(_)-95vxi.md",
+      "hash": "def6868514b9a9ac07807a6cab5faa073cbf772a9de559ee3c833f2ef891c68d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatablesupervisedestimator/appending(_:).json": {
       "file_path": "documentation/CreateMLComponents/updatablesupervisedestimator/appending(_).md",
       "hash": "9fcc11bc79c16050ee367dc31d7069c794f2b658e9ce3368a84f747fabd7a93e"
@@ -12652,6 +13368,14 @@
       "file_path": "documentation/CreateMLComponents/updatablesupervisedtabularestimator.md",
       "hash": "8ef5e9df7437da8f72b58bf77bb696135c966096d6824ac7ee7c1490a096ea11"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatablesupervisedtabularestimator/appending(_:)-5wg05.json": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedtabularestimator/appending(_)-5wg05.md",
+      "hash": "8b5987add3cf7a5eca8f995e1b4a09d8d61885595b6c702e4f6f657065bc027a"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatablesupervisedtabularestimator/appending(_:)-66swx.json": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedtabularestimator/appending(_)-66swx.md",
+      "hash": "d44ca372653d9fb262fd8d4d69546d44130a869b7a286039ceba395fc714ddff"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatablesupervisedtabularestimator/appending(_:).json": {
       "file_path": "documentation/CreateMLComponents/updatablesupervisedtabularestimator/appending(_).md",
       "hash": "449476e884a3176441dd3403687914a0d73b2ee289884e731184b03f42029d30"
@@ -12687,6 +13411,26 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatablesupervisedtemporalestimator.json": {
       "file_path": "documentation/CreateMLComponents/updatablesupervisedtemporalestimator.md",
       "hash": "3adefa8ad7f35ae340650278d44cbacfb44b2bdd1db1f1775f20442d846b4f21"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatablesupervisedtemporalestimator/appending(_:)-30xpc.json": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedtemporalestimator/appending(_)-30xpc.md",
+      "hash": "693e3acebc3e45802af24ee936f827b7ace9849a87f2a8e9acc4553309d83f3f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatablesupervisedtemporalestimator/appending(_:)-3k3xn.json": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedtemporalestimator/appending(_)-3k3xn.md",
+      "hash": "a3c68efcca48c5260a8004cef34a84d2ab8d991f22b25f3abe1d078d13cd1879"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatablesupervisedtemporalestimator/appending(_:)-4xdv5.json": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedtemporalestimator/appending(_)-4xdv5.md",
+      "hash": "4643f43bb202a656ea1df1f7de4ce108ea1924a4ec7444e7c619590e433059a1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatablesupervisedtemporalestimator/appending(_:)-7orql.json": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedtemporalestimator/appending(_)-7orql.md",
+      "hash": "8e5f851b8e5701d24fc8348b59db22ca4d9cf7d7450b60924dd7a3cdd5ad22a5"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatablesupervisedtemporalestimator/appending(_:)-8wg63.json": {
+      "file_path": "documentation/CreateMLComponents/updatablesupervisedtemporalestimator/appending(_)-8wg63.md",
+      "hash": "c722b164c313d824f53ff00ddbf40232c02ed018cde7bb9587c62fe93c78eb1f"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatablesupervisedtemporalestimator/appending(_:).json": {
       "file_path": "documentation/CreateMLComponents/updatablesupervisedtemporalestimator/appending(_).md",
@@ -12727,6 +13471,14 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatabletabularestimator/adaptedassupervised(annotationcolumnid:).json": {
       "file_path": "documentation/CreateMLComponents/updatabletabularestimator/adaptedassupervised(annotationcolumnid).md",
       "hash": "c915ad4a3dd6ea8eb7f85c4a1de928881a8f5a7d9c0b526f6a9b6e91f1074fb0"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatabletabularestimator/appending(_:)-3sl33.json": {
+      "file_path": "documentation/CreateMLComponents/updatabletabularestimator/appending(_)-3sl33.md",
+      "hash": "f95b60deb7f2b0e3b4b1ded7b3cf0781757175fc664bb7b6844c17e4febf7e13"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatabletabularestimator/appending(_:)-700m8.json": {
+      "file_path": "documentation/CreateMLComponents/updatabletabularestimator/appending(_)-700m8.md",
+      "hash": "30286482b30fae7c42c8e93c8d7595b6a74ae3c39389a2abfd3d329da3773ba3"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatabletabularestimator/appending(_:).json": {
       "file_path": "documentation/CreateMLComponents/updatabletabularestimator/appending(_).md",
@@ -12803,6 +13555,26 @@
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatabletemporalestimator/adaptedassupervised(annotationtype:).json": {
       "file_path": "documentation/CreateMLComponents/updatabletemporalestimator/adaptedassupervised(annotationtype).md",
       "hash": "c43c17b5f22f10645198c2bdfa8d223480641c9f1dc445e7c7bdda7b2c66d490"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatabletemporalestimator/appending(_:)-1qj6y.json": {
+      "file_path": "documentation/CreateMLComponents/updatabletemporalestimator/appending(_)-1qj6y.md",
+      "hash": "095ce7f689c2173ed32b47e8048c56380a6cf10621c1cbf173c4b63a52dc5cdc"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatabletemporalestimator/appending(_:)-3xqcq.json": {
+      "file_path": "documentation/CreateMLComponents/updatabletemporalestimator/appending(_)-3xqcq.md",
+      "hash": "c8cb9292e89d182be3ad880ec6372216046cac479e1f029ace2b73bb1ec8deb1"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatabletemporalestimator/appending(_:)-6ekr1.json": {
+      "file_path": "documentation/CreateMLComponents/updatabletemporalestimator/appending(_)-6ekr1.md",
+      "hash": "c525fe37455501a38c55a479793f26cfed372fbbcb72d2fb632b39becbc0de51"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatabletemporalestimator/appending(_:)-8xn6o.json": {
+      "file_path": "documentation/CreateMLComponents/updatabletemporalestimator/appending(_)-8xn6o.md",
+      "hash": "0640e457af2a6565b555a93d7269f4c6a1436173549178f59b6fb3f19fa3b95f"
+    },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatabletemporalestimator/appending(_:)-92r9q.json": {
+      "file_path": "documentation/CreateMLComponents/updatabletemporalestimator/appending(_)-92r9q.md",
+      "hash": "9572dff88458d14f6bfff7840723de66a85a52fc40463b1f918409063f00967b"
     },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/updatabletemporalestimator/appending(_:).json": {
       "file_path": "documentation/CreateMLComponents/updatabletemporalestimator/appending(_).md",
@@ -13048,6 +13820,10 @@
       "file_path": "documentation/CreateMLComponents/videoreader/init().md",
       "hash": "cf98a9a65716d589f3101c81626d2f45b3dfd852c1e17b293b2943a894a892e0"
     },
+    "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/videoreader/read(_:)-4oyjh.json": {
+      "file_path": "documentation/CreateMLComponents/videoreader/read(_)-4oyjh.md",
+      "hash": "fc6ed5f26306d03feabb69c22bcc0076e0f00227d98d0eb998771813918bfc4d"
+    },
     "https://developer.apple.com/tutorials/data/documentation/createmlcomponents/videoreader/read(_:).json": {
       "file_path": "documentation/CreateMLComponents/videoreader/read(_).md",
       "hash": "adc3b1ba6ad5907828b50f421efa249c0e4fd10e17dcd49933c563572aabb46b"
@@ -13099,8 +13875,8 @@
   },
   "metadata": {
     "render": {
-      "version": 3
+      "version": 4
     },
-    "total_pages": 3274
+    "total_pages": 3468
   }
 }

@@ -28,7 +28,7 @@ extern OSStatus AudioUnitRender(AudioUnit inUnit, AudioUnitRenderActionFlags *io
 
 - [Migrating Your Audio Unit Host to the AUv3 API](./migrating-your-audio-unit-host-to-the-auv3-api.md)
 
-#### Return Value
+## Return Value
 
 A result code.
 

@@ -23,7 +23,7 @@ struct NSFileProviderItemFields
 enum NSFileProviderItemFields : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 Most of the fields correspond to properties in the [`NSFileProviderItemProtocol`](./nsfileprovideritemprotocol.md) protocol.
 

@@ -25,7 +25,7 @@ let MPLanguageOptionCharacteristicTranscribesSpokenDialog: String
 extern NSString * const MPLanguageOptionCharacteristicTranscribesSpokenDialog;
 ```
 
-#### Discussion
+## Discussion
 
 It’s possible for a legible option to include both transcriptions of spoken dialog and descriptions of music and sound effects.
 

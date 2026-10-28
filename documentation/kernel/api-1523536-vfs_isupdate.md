@@ -15,7 +15,7 @@ Determine if a mount update is in progress.
 int vfs_isupdate(mount_t mp);
 ```
 
-#### Return Value
+## Return Value
 
 Nonzero if a mount update is in progress, 0 otherwise.
 

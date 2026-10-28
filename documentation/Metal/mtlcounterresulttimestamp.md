@@ -28,7 +28,7 @@ typedef struct { ... } MTLCounterResultTimestamp;
 
 - [Converting a GPU’s counter data into a readable format](./converting-a-gpus-counter-data-into-a-readable-format.md)
 
-#### Overview
+## Overview
 
 For steps that explain how to resolve data from a counter set, such as [`timestamp`](./mtlcounterresulttimestamp/timestamp.md), see [Converting a GPU’s counter data into a readable format](./converting-a-gpus-counter-data-into-a-readable-format.md).
 

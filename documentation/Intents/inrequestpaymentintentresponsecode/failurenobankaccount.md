@@ -23,7 +23,7 @@ case failureNoBankAccount
 INRequestPaymentIntentResponseCodeFailureNoBankAccount
 ```
 
-#### Discussion
+## Discussion
 
 Use this response code when the sender or recipient of the request does not have an account capable of handling the payment.
 

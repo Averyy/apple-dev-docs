@@ -26,13 +26,13 @@ class NINearbyPeerConfiguration
 
 - [Initiating and maintaining a session](./initiating-and-maintaining-a-session.md)
 
-#### Overview
+## Overview
 
 A peer interaction session enables two Apple devices to share their respective distance and direction through the device’s Ultra Wideband (UWB) chip. To start a peer interaction session, create a [`NINearbyPeerConfiguration`](./ninearbypeerconfiguration.md) instance and pass it to an [`NISession`](./nisession.md) instance with the [`run(_:)`](./nisession/run%28_%29.md) function.
 
 For an example app that demonstrates this configuration, see [Implementing interactions between users in close proximity](./implementing-interactions-between-users-in-close-proximity.md).
 
-##### Enable Precision Finding for stationary objects
+### Enable Precision Finding for stationary objects
 
 In iOS 16, you can combine the visual spatial power of ARKit with the radio sensitivity of the UWB chip to locate stationary nearby objects with considerable precision. To do that, set [`isCameraAssistanceEnabled`](./ninearbypeerconfiguration/iscameraassistanceenabled.md) to `true` and optionally provide the interaction session with an [`ARSession`](../ARKit/arsession.md) instance through [`setARSession(_:)`](./nisession/setarsession%28_%29.md) before running the session. Together, the UWB chip and ARKit’s assistance enable Nearby Interaction to provide the same Precision Finding capabilities present in AirTag.
 

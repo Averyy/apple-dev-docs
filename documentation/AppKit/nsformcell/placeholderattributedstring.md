@@ -20,7 +20,7 @@ var placeholderAttributedString: NSAttributedString? { get set }
 @property (copy, nullable) NSAttributedString * placeholderAttributedString;
 ```
 
-#### Discussion
+## Discussion
 
 If this property returns `nil`, you can also call `placeholderString` to see if the cell has a plain text placeholder string.
 

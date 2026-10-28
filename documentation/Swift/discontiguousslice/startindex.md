@@ -23,7 +23,7 @@ var startIndex: DiscontiguousSlice<Base>.Index { get }
 
 Available when `Base` conforms to `Collection`.
 
-#### Discussion
+## Discussion
 
 If the collection is empty, `startIndex` is equal to `endIndex`.
 

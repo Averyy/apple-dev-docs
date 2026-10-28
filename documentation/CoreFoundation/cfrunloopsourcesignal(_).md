@@ -25,7 +25,7 @@ func CFRunLoopSourceSignal(_ source: CFRunLoopSource!)
 extern void CFRunLoopSourceSignal(CFRunLoopSourceRef source);
 ```
 
-#### Discussion
+## Discussion
 
 This function has no effect on version 1 sources, which are automatically handled when Mach messages arrive for them. After signaling a version 0 source, you need to call [`CFRunLoopWakeUp(_:)`](./cfrunloopwakeup%28_%29.md) on one of the run loops in which the source is registered to get the source handled immediately.
 

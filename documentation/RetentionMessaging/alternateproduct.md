@@ -20,7 +20,7 @@ object alternateProduct
 - [Retention Messaging API changelog](./retention-messaging-changelog.md)
 - [Setting up retention messages](./setting-up-retention-messages.md)
 
-#### Discussion
+## Discussion
 
 In your [`RealtimeResponseBody`](./realtimeresponsebody.md) real-time response, you can choose from mutually exclusive options. Include `alternateProduct` in your response to provide a switch-plan retention message.
 

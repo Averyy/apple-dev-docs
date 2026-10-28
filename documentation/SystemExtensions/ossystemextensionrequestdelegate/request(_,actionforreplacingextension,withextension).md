@@ -24,11 +24,11 @@ func request(_ request: OSSystemExtensionRequest, actionForReplacingExtension ex
 
 - [Installing System Extensions and Drivers](../installing-system-extensions-and-drivers.md)
 
-#### Return Value
+## Return Value
 
 A replacement action the manager should take to resolve the conflict.
 
-#### Discussion
+## Discussion
 
 The manager calls this method when it encounters an existing extension with the same team and bundle identifiers, but with different version identifiers. It uses the [`CFBundleVersion`](../../BundleResources/information-property-list/cfbundleversion.md) and [`CFBundleShortVersionString`](../../BundleResources/information-property-list/cfbundleshortversionstring.md) identifiers to determine if the existing and new versions differ. The delegate must make a decision on whether to replace the existing extension.
 

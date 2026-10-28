@@ -23,11 +23,11 @@ func withMemoryRebound<T, E, Result>(to type: T.Type, _ body: (UnsafeBufferPoint
 
 Available when `Base` is `UnsafeRawBufferPointer`.
 
-#### Return Value
+## Return Value
 
 The return value, if any, of the `body` closure parameter.
 
-#### Discussion
+## Discussion
 
 Use this method when you have a buffer slice to raw memory and you need to access that memory as instances of a given type `T`. Accessing memory as a type `T` requires that the memory be bound to that type. A memory location may only be bound to one type at a time, so accessing the same memory as an unrelated type without first rebinding the memory is undefined.
 

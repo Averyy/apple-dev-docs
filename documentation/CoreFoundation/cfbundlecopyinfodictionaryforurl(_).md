@@ -25,11 +25,11 @@ func CFBundleCopyInfoDictionaryForURL(_ url: CFURL!) -> CFDictionary!
 extern CFDictionaryRefCFBundleCopyInfoDictionaryForURL(CFURLRef url);
 ```
 
-#### Return Value
+## Return Value
 
 A CFDictionary object containing `url`’s information dictionary. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 For a directory URL, this is equivalent to [`CFBundleCopyInfoDictionaryInDirectory(_:)`](./cfbundlecopyinfodictionaryindirectory%28_%29.md). For a plain file URL representing an unbundled application, this function will attempt to read an information dictionary either from the `(__TEXT, __info_plist)` section of the file (for a Mach-O file) or from a `plst` resource.
 

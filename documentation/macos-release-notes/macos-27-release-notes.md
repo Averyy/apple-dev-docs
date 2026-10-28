@@ -5,55 +5,55 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The macOS 27 SDK provides support to develop apps for Mac computers running macOS 27 Golden Gate. The SDK comes bundled with Xcode 27. For information on the compatibility requirements for Xcode 27, see [Xcode 27 Release Notes](../Xcode-Release-Notes/xcode-27-release-notes.md).
 
-##### General
+### General
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: If you installed Xcode 27 beta on macOS Tahoe 26.5.1 and earlier, macOS virtual machine installation will fail due to a known bug. To restore virtual machine installation functionality, follow the [How to reinstall macOS guide](https://support.apple.com/en-us/102655). (179068335)
 
-##### Accessory Access
+### Accessory Access
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Accessory Access does not work inside App Sandbox. (176815987)
 - Fixed: The Accessory Access framework is not supported within a macOS virtual machine. (177390971)
 
-##### AirPods Max 2
+### AirPods Max 2
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: You cannot update AirPods Max 2 firmware beta in iOS 27 Beta 1 and macOS 27 Beta 1. AirPods Max 2 firmware beta updates are supported in iOS 27 Beta 2 and macOS 27 Beta 2. (178280323)
 
-##### AirPort Utility
+### AirPort Utility
 
-###### Deprecations
+#### Deprecations
 
 - AirPort Utility is no longer included with new clean installations of macOS. However, if you update macOS when AirPort Utility is already installed, it remains on your system but functionality is not guaranteed starting in macOS 27. (158248382)
 
-##### APFS
+### APFS
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: High-RAM Macs running macOS 27 Golden Gate Beta might erroneously report filesystem metadata corruption that doesn’t actually exist when running First Aid in Disk Utility or an equivalent operation. (182156751)
 
-##### App Intents
+### App Intents
 
-###### New Features
+#### New Features
 
 - You can now pass a name parameter of type `AttributedString` to the `notes.createNote` and `notes.updateNote` schemas. (173431080)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Default values from schemas might not be applied for parameters that are of “Set” type. (175534195)
 - Fixed: Requests that should result in an app’s `reminders.updateReminder`-conforming intent to be called might fail with “ cannot be used for this action right now.” (181212609) (FB23526663)
 - Fixed: AppEntity instances have a cumulative size limit of 10MB, including all child properties and their values. Your app might crash if an entity exceeds this limit, and the exception is logged. (181763422)
 - Fixed: The notes.appendText schema erroneously disappeared from the SDK. (182532125)
 
-###### Known Issues
+#### Known Issues
 
 - If you adopt the Audio App Schema domain, you might have trouble playing your content using Siri. (177198033)
 
@@ -62,13 +62,13 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
   **Workaround:** To continue conforming to the schema, adopt the additional properties and move the code behind an availability check.
 
-###### Deprecations
+#### Deprecations
 
 - The `calendar.deleteEvents` schema has been renamed to `calendar.deleteEvent`. (176751155)
 
-##### AppKit
+### AppKit
 
-###### New Features
+#### New Features
 
 - The Recents list in the open and save panels can be accessed with the keyboard shortcut cmd-shift-f. (120442314)
 - Window > Move & Resize and Window > Full Screen Tile menus can be used to move, resize, open and save panels that are not displayed as a sheet. (150791154)
@@ -79,7 +79,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - NSTextView’s `menuForEvent:` now returns a context menu in which the Layout Orientation menu item, and its submenu, are located inside the Font submenu. Because this change can cause compatibility issues with some shipping applications, it applies only to applications linked on the macOS 27 SDK. For applications linked on earlier SDKs, the Layout Orientation menu item remains at the top level of the context menu. (177605020)
 - When an app is linked on macOS 27.0 or later, `NSTitlebarAccessoryViewController` is now allowed to draw outside its bounds by default, supporting effects such as shadows and interactive glass effects. During reveal animations, accessories might be clipped for the duration of the animation or when the accessory is `hidden`. (180962967) (FB23481212)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In apps built with the macOS 27.0 SDK, setting `allowedContentTypes` and `treatsFilePackagesAsDirectories` on `NSOpenPane` updates `canChooseFiles` and `canChooseDirectories` based on whether the requested types are file or directory types. (6938919)
 - Fixed: Keyboard focus and tab order in expanded and collapsed open/save panels might not traverse all fields and controls — including the accessory view — in the expected order. (43112307)
@@ -100,50 +100,50 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: For applications linked on the macOS 27 SDK, both symbol and non-symbol menu item images are now automatically hidden. For applications linked on earlier SDKs, non-symbol images remain automatically visible, preserving compatibility with existing application behavior. This change allows applications to rely on system behavior for determining menu item image visibility, regardless of whether an image is a symbol image or a non-symbol image. If necessary, applications should use the `preferredImageVisibility` API to ensure that menu item images remain visible. (179374305) (FB23070183)
 - Fixed: For applications linked on SDKs prior to macOS 27, NSMenu now automatically shows menu item images if the menu item title and attributed title are both empty. This preserves existing application behavior when the image is the only representation of the menu item content. When linking against the macOS 27 SDK, these images will automatically be hidden; a menu with this design should use the `preferredImageVisibility` API to ensure that the menu item images remain visible. (179936632)
 
-##### Apple Intelligence Report
+### Apple Intelligence Report
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When you view Apple Intelligence Report entries for Home Intelligence, some data that was sent to Private Cloud Compute won’t appear in the report. (176056930)
 
-##### Apple Unified Logging System
+### Apple Unified Logging System
 
-###### New Features
+#### New Features
 
 - Unified Logging System archives generated on 27.0 releases cannot be read on macOS 26.1 or earlier due to an updated archive format. macOS 26.2 or later is required to read these archives. (160567675)
 
-##### Automatic Assessment Configuration
+### Automatic Assessment Configuration
 
-###### New Features
+#### New Features
 
 - You can now use a more flexible and granular Automatic Assessment Configuration in macOS 27, giving you greater control over your testing environment with controls for the Dock, Menu Bar, and accessibility settings, plus built-in system pre-checks and app launch restrictions. (158132137)
 
-##### AVFAudio
+### AVFAudio
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: AudioDSP might crash when audio device properties change. (163978549)
 
-##### Background Assets
+### Background Assets
 
-###### New Features
+#### New Features
 
 - You can reduce your app’s storage usage with localized asset packs. The system delivers the appropriately localized asset packs based on the user’s preferred languages. (163944365)
 
-##### Communication Safety
+### Communication Safety
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Sensitive QRCode detected as non-sensitive, preventing 3rd party developers from testing API functionality. (183962032)
 
-##### Core AI
+### Core AI
 
-###### New Features
+#### New Features
 
 - iOS 27 includes Neural Engine improvements for Apple Intelligence capable devices. The system now restricts background access to the Neural Engine, similar to GPU usage restrictions. Large model loading (over 1 GB) performance is improved on the Neural Engine. Neural Engine memory usage is now attributed to your app process instead of the system, and appears in the Allocations instrument. (174796039)
 - Access to the Neural engine when your app is in the background requires the new entitlement: “com.apple.developer.background-tasks.continued-processing.inference”. (179282606)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `AIModelCache` entries might not honor the cache policy you provide, causing re-specialization to occur more often than expected. (169746264)
 - Fixed: When inference runs on the GPU, `InferenceFunction.encode` blocks until all compute is complete instead of returning as soon as encoding is done, unless the model is specialized with a preferred compute device of GPU. (175789258)
@@ -157,9 +157,9 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: App-group support might not work as expected on certain model types. (179732320)
 - Fixed: On-device specialization might fail when loading an `.aimodelc` compiled ahead of time using Xcode 27 Beta 2 or earlier. (181264112)
 
-##### Core Spotlight
+### Core Spotlight
 
-###### Known Issues
+#### Known Issues
 
 - Creating a SpotlightSearchTool without a configuration and using it with a LanguageModelSession backed by the on-device system language model fails with an error reporting that the number of tokens provided exceeds the maximum allowed. The tool’s default configuration is sized for models with large context windows, so the tool’s description and parameter schema alone exceed the on-device model’s context window before any prompt is added. (183770678)
 
@@ -175,75 +175,75 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
   To search a specific kind of content, pass a domain: `.focused(.communications)`, `.focused(.calendar)`, `.focused(.documents)`, `.focused(.visualMedia)`, or `.focused(.audio)`. A focused guide exposes a smaller set of search capabilities than the default configuration. Sessions backed by a model with a larger context window can continue to use the default configuration.
 
-##### CoreStorage
+### CoreStorage
 
-###### Deprecations
+#### Deprecations
 
 - Encrypted HFS+ (CoreStorage) is deprecated and will not be supported in a future version of macOS. If you use Encrypted HFS+ backups on external drives, begin backing up to encrypted APFS-formatted external drives instead. (175892420)
 
-##### Deprecation Information
+### Deprecation Information
 
-###### New Features
+#### New Features
 
 - Intel-based applications that will no longer run in macOS 28.0 now display a treatment in Get Info. (169548657)
 
-##### Disk Images
+### Disk Images
 
-###### New Features
+#### New Features
 
 - The new DiskImageKit framework provides Swift APIs for creating and managing standalone and stacked disk images in the Apple Sparse Image Format (ASIF) and raw disk image formats, for use with the Virtualization framework via `VZDiskImageStorageDeviceAttachment`. See `DiskImageKit` for more information. (177868758)
 
-##### Dock
+### Dock
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: While using an app in full screen, the Dock might persist when entering and exiting Mission Control. (174992242)
 - Fixed: The Dock might incorrectly indicate that some applications (such as Device Hub) are running in the background when they are not. (179502922)
 
-##### Drag and Drop
+### Drag and Drop
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When you call `enumerateDraggingItemsWithOptions:...` during `draggingSession:willBeginAtPoint:`, the returned `NSDraggingItem` might have an incorrect `draggingFrame` value. (177839494)
 
-##### DVDPlayback
+### DVDPlayback
 
-###### Deprecations
+#### Deprecations
 
 - The `DVDPlayback ` framework has been removed from the macOS 27 Golden Gate SDK and apps cannot build against it. The framework will be removed in a future macOS release. (179136240)
 
-##### EcosystemUI
+### EcosystemUI
 
-###### New Features
+#### New Features
 
 - Settings > General now lists Intel-based apps that will be incompatible with macOS 28.0. The list also identifies unused Intel-based software discovered on the system. The system might suggest a website where an Apple silicon native version can be found for a listed app. (175697313)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The Intel-based apps view might unexpectedly display “Additional components” when the primary app is not native. (175781938)
 - Fixed: Intel-based apps might appear erroneously in the unsupported apps list with the entry “Steam Game”. Games should not appear in this list, and the “Steam Game” entry can be safely ignored. (177192993)
 
-##### Finder
+### Finder
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Suggested names for a file or folder might be more generic than its contents. For example, a folder containing only bird photos might receive suggestions like “Wildlife” or “Animal Photos” rather than bird-specific names. (178093786)
 
-##### First-Party App Search
+### First-Party App Search
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Search assets might download slowly for languages and regions other than English and the United States, causing degraded search experiences for first-party apps up to a few hours after you install or upgrade to the latest OS, change your device language, or region. (178186226)
 
-##### Foundation
+### Foundation
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `+[NSURL URLWithString:]` no longer double-encodes the `%` of valid percent-escape sequences when encoding other invalid characters. (161588649) (FB20439045)
 
-##### Foundation Models
+### Foundation Models
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When using the on-device Apple Foundation Model for both tool calling and guided generation, some prompts might cause the model to call tools excessively. (177748926)
 - Fixed: `@Generable` on an `enum` produces a deprecation warning about `GenerationError` that cannot be silenced. (177899620)
@@ -251,228 +251,228 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: `onPrompt` might not be called when applied to a `Profile` without instructions. (177902488)
 - Fixed: `PrivateCloudComputeLanguageModel` always uses greedy decoding. (178181782)
 
-##### Game Center
+### Game Center
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When you trigger the Access Point, its completion handler is never invoked. (172683368)
 
-##### Game Controller
+### Game Controller
 
-###### New Features
+#### New Features
 
 - The PlayStation® Access™ controller is now supported on macOS, iPadOS, and iOS. You can create custom input profiles in game controller settings and save them to your Apple device. (168071382)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Modifications to the game controller lightbar (`GCController.light`) may persist after your application no longer has focus. (163514369) (FB20846101)
 - Fixed: `+[GCController supportsHIDDevice:]` might return an incorrect result when queried with a recently connected HID device. (176985783) (FB22770585)
 
-##### Gaming
+### Gaming
 
-###### New Features
+#### New Features
 
 - A new command line tool lets you enable support for legacy Intel-based games during beta releases. To enable it, run the following command in Terminal: `sudo game-test-tool enable`. Restart your Mac computer for the change to take effect. Once enabled, games run transparently through the new underlying system behavior. Note that enabling legacy game support disables Rosetta, non-game processes might crash or behave unexpectedly, and this feature is intended only for playing legacy Intel-based games and is not available outside of macOS beta releases. (166398727)
 
-##### Gatekeeper
+### Gatekeeper
 
-###### New Features
+#### New Features
 
 - The spctl command line tool now supports a –purge command which will clean up Gatekeeper database entries for apps and executables which are no longer mounted. (123097648) (FB13625586)
 
-##### Gaussian Splats
+### Gaussian Splats
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When 3DGS content rendered by a GaussianSplatComponent is moved offscreen and then returns to the visible area, some splats might be missing or truncated. Camera or asset movement can restore rendering. (183538823)
 
-##### Hardware Security
+### Hardware Security
 
-###### New Features
+#### New Features
 
 - arm64e.x1 introduces additional hardware security and performance instructions, including CPA2 for stronger MIE protection. Devices with support for arm64e.x1 include iPhone models with A20 Pro or later chips, Mac computers with M6 or later chips, and Apple Watch models with S11 or later chips. You can access arm64e.x1 and CPA2 in Xcode through the enhanced security pane and a build setting. Learn more in the [Enhanced Security article](../Xcode/enabling-enhanced-security-for-your-app.md). (152103975)
 
-##### HomeKit
+### HomeKit
 
-###### New Features
+#### New Features
 
 - When Apple Intelligence in the Home app is enabled, your HomeKit Secure Video recordings are processed on-device and through Private Cloud Compute for video descriptions and search. (178858470)
 - Apple Intelligence for Home requires an iCloud+ subscription starting at 2TB. (181282161)
 
-##### Image Playground
+### Image Playground
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When you try to generate an image using ChatGPT in the Messages extension on macOS, the image fails to generate. (174413381)
 - Fixed: In the Image Playground photo picker, the All and Suggested tabs are missing, which might limit the number of photos available for you to choose from. (178256174)
 
-##### Install macOS Golden Gate
+### Install macOS Golden Gate
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: macOS cannot be installed to an external storage device connected to the DFU port. (79372256)
 
-##### Launch Daemons and Agents
+### Launch Daemons and Agents
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: `launchd` no longer supports loading `launchd` property list files with the quarantine extended attribute. (166415497)
 
-##### Mac Catalyst
+### Mac Catalyst
 
-###### New Features
+#### New Features
 
 - Catalyst apps now behave like AppKit apps when you switch to them with no open windows - they won’t automatically create new windows unless activated through Dock or Spotlight. (69906818)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Mac-Idiom Catalyst apps could not use `UIStepper`. (57819435)
 - Fixed: For some apps, the show/hide sidebar toolbar buttons are missing. (176879915)
 
-##### Mail
+### Mail
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Smart Mailboxes might not update while you’re using Mail. (177768221)
 
-##### Mail Banners
+### Mail Banners
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Mail banners for early flights will show the flight status as delayed. (173869986)
 
-##### Media Playback
+### Media Playback
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: In apps like TV, Podcasts, and Music, the window controls may become unresponsive after dragging the playhead to adjust the playback position. (177984877)
 
-##### Messages
+### Messages
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: GIFs and pasted images might render as the incorrect size. (177657977)
 - Fixed: HDR screenshots might appear garbled when sent in Messages. (180859837)
 
-##### Metal
+### Metal
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When you use a sampler to read from a texture with clamp-to-edge addressing mode, the result might be clamped to zero. (172520325)
 - Fixed: On devices in the Apple 10 GPU family, using a sampler to read from a texture with clamp-to-edge addressing mode might produce results that are clamped to zero. (177318505)
 
-##### Music
+### Music
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Music Visualizer shows a black screen in both full screen and window mode. (177480780)
 
-##### Network Security
+### Network Security
 
-###### New Features
+#### New Features
 
 - Starting in 27.0 operating systems, select system processes now enforce stricter network security (TLS) requirements. These new requirements might cause connections to fail if the server does not meet them. The affected processes are those involved in MDM, DDM, Automated Device Enrollment, configuration profile installation, app installation, and software updates. Servers must support TLS 1.2 at minimum, using cipher suites and certificates that meet App Transport Security (ATS) requirements.
 
   For additional details on affected processes, requirements, and how to audit and diagnose failures in managed environments, please reference [Prepare your network environment for stricter security requirements](https://support.apple.com/en-us/126655). For additional details on ATS and the new requirements, please reference [Preventing Insecure Network Connections](../Security/preventing-insecure-network-connections.md) and [NSRequiresNIAPTLSPackageVersion](../BundleResources/information-property-list/nsrequiresniaptlspackageversion.md). (176055825)
 
-##### News
+### News
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The News app crashes on launch when configuration profiles are installed. (177972625)
 
-##### Notification Center
+### Notification Center
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: You might be unable to dismiss certain notifications. (181736751)
 
-##### NSApplication
+### NSApplication
 
-###### New Features
+#### New Features
 
 - `NSApplication.presentationOptions` now includes the `.disableScreenCornerInteractions` option, which you can use to disable Hot Corners. (168692527)
 
-##### NSGestureRecognizer
+### NSGestureRecognizer
 
-###### New Features
+#### New Features
 
 - A new `cancellableByScrollGesture` property on `NSGestureRecognizer` allows gesture recognizers to be automatically cancelled when the enclosing scroll view is panned. (165650612)
 - Only the initial hit-tested view hierarchy will activate gesture recognizers until all gestures terminate. A new `exclusiveGestureBehavior` property on `NSView` allows you to opt-out of this exclusive behavior on a per-view-hierarchy basis. Further, the `Info.plist` key `NSViewGestureRecognizerIsExclusive` allows you to opt-out for the entire app. Additionally, a new `Info.plist` key `NSGestureRecognizerSuppressesMainMenuActions` allows main menu actions to be invoked while gesture recognizers are active. (173551081)
 - To prevent exclusive gestures from making apps unresponsive, stuck gestures are automatically cancelled after user input has ended for a few seconds. A new user default, `NSCrashOnStuckGestureTimeout`, allows you to crash your app when this condition occurs, to aid in debugging. (175705302)
 - A new diagnostic user default `NSGestureRecognizerCrashOnMissingOverrides` is provided to help developers find `NSGestureRecognizer` subclasses that are missing required overrides to ensure that they always reach a terminal state. Even without this gesture set, AppKit will produce error messages in the console to alert developers when such cases are found. (176396492)
 
-##### NSScrollView
+### NSScrollView
 
-###### New Features
+#### New Features
 
 - New properties on `NSScrollView` allow you to constrain the number of touches needed to scroll. The new `scrollGestureForFailureRelationship` property allows you to set up gesture relationships against scrolling gestures. (164924201)
 
-##### PhotoKit
+### PhotoKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The `addedDate` property on `PHAsset` might return `nil` even though it’s marked as non-nullable. (175050631)
 
-###### Deprecations
+#### Deprecations
 
 - The `originalFilename` property on `PHAssetResource` is incorrectly marked as non-nullable, which misrepresents the property value; a new, nullable `filename` property is available as a replacement. (175412725) (FB22589474)
 
-##### Photos Edit
+### Photos Edit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: A thin white line might be visible in photos that have had Spatial Reframing applied. (178183850)
 
-##### Previews
+### Previews
 
-###### New Features
+#### New Features
 
 - Preview and Quick Look have added support for RealityKit as the scene renderer for USD and other 3D scenes that were previously rendered by Storm. (176839273)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: After you load certain 3D models, materials for most other 3D models might not appear properly and display an error pattern instead. (177483209)
 - Fixed: When you drag an annotation in a 3D document, such as a USD file, and release the mouse button, the cursor might remain in the open-hand state instead of returning to the arrow cursor. (177754200)
 
-##### Privacy & Security Settings
+### Privacy & Security Settings
 
-###### Known Issues
+#### Known Issues
 
 - In the Files & Folders pane, a process without a bundle ID cannot be granted access to specific app data containers or app group containers owned by other developer teams. (184660124)
 
   **Workaround:** Consider if the access is necessary. If required, grant Full Disk Access to the process for the duration of the requirement.
 
-##### RealityKit
+### RealityKit
 
-###### New Features
+#### New Features
 
 - The Gaussian Splat Component API in RealityKit will be available in an upcoming release. (178061856)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Some MaterialX 1.39 nodes are not supported. (172875414)
 - Fixed: `ComputeGraphComponents` stored in a Reality file do not render when loaded. (177674901)
 - Fixed: When `OpacityComponent` is applied to an entity with opaque materials, `RealityRenderer` renders the opaque materials with transparency, revealing interior surfaces. Only the frontmost surface should appear with partial transparency. (177976245)
 - Fixed: An App might crash if the `SurroundingsLight` component is added to more than 8 light entities. (178092354)
 
-##### Reminders
+### Reminders
 
-###### Known Issues
+#### Known Issues
 
 - After you tap “Add to Reminders” in Messages, the “New Reminder” interface presents the reminder with an empty title field. (180040003)
 
   **Workaround:** Tap “Add to Reminders” in the “New Reminder” interface to create the reminder, then edit the title in the Reminders app.
 
-##### Rosetta
+### Rosetta
 
-###### New Features
+#### New Features
 
 - On launch, Applications previously set to “Open using Rosetta” by a user will have the application launch natively.
 
   Any compatibility issues requiring Rosetta from the past should be re-assessed on macOS 27. (168097174)
 
-###### Deprecations
+#### Deprecations
 
 - If Rosetta was previously installed, it is not automatically restored after upgrading to macOS 27.0. (163213094)
 - Installer packages which specify no `hostArchitecture` will now default to arm64. Ensure any pre and post install scripts behave as intended under arm64. Additionally, audit any remaining installer plugins to ensure compatibility on Apple silicon. (171187112)
@@ -480,51 +480,51 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
   Check common plugin locations for VSTs, HAL, ARA, PDEs, Color Pickers, Quicklook & Spotlight plugins/extensions/components, such as: ~/Library/Audio/Plug-Ins/* ~/Library/Printers/ ~/Library/ColorPickers/ (176042635)
 
-##### Safari
+### Safari
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Selecting “Rename” or “Edit Address…” from the context menu in the sidebar has no effect. (177470803)
 - Fixed: Safari Intelligence features might appear as available before assets are fully downloaded. If you use the feature before assets are available, it won’t function correctly. (178099724)
 
-###### Known Issues
+#### Known Issues
 
 - When developing Safari Extensions, unsigned extensions might not appear until rebuilt when using the “Allow Unsigned Extensions” checkbox. (183044008)
 
   **Workaround:** Ensure “Allow Unsigned Extensions” is checked and rebuild the extension project.
 
-##### Safari Extensions
+### Safari Extensions
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Turning on or off Safari extensions created via the “Describe an Extension” feature might not take effect until Safari is relaunched. (179293939)
 
-##### Security
+### Security
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Obtaining new certificates via ACME fails. New MDM enrollments using Managed Device Attestation fail. (183456836)
 
-##### Setup Assistant
+### Setup Assistant
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Setup Assistant might remain on screen after you configure a new user account. (175787760)
 
-##### ShaderGraph
+### ShaderGraph
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The `realitykit_hair_surfaceshader` node does not support `DiffuseLightProbeGroupComponent`. Materials built with this node might not respond to diffuse light probe group lighting. (177976666)
 
-##### Shortcuts
+### Shortcuts
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Battery Level and Charger automations might not work on macOS. (180337087)
 - Fixed: The Use Model action might fail to run when using the On-Device option for some output types. (181071784)
 
-###### Known Issues
+#### Known Issues
 
 - If an app intent uses Duration or `LPLinkMetadata`, creating a shortcut with that intent and then attempting to edit it with “Describe a change” might fail. (166068090)
 
@@ -533,9 +533,9 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 
   **Workaround:** Define only one number-related type in the `UnionValue` parameter (for example, use only Int or only Double, not both).
 
-##### Siri
+### Siri
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Siri cannot find albums in Photos on macOS. (172713904)
 - Fixed: When you ask Siri to start navigation using AMap, Tencent Maps, or Baidu Maps on Mac, navigation might not start. (174911042)
@@ -564,7 +564,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: In the Siri app, conversations might be deleted a few minutes after receiving streaming responses. (178560562)
 - As of beta 5, Siri AI conversation history no longer syncs to devices running a prior beta. iCloud sync works between devices updated to beta 5. No existing conversations will be lost. (182145010)
 
-###### Known Issues
+#### Known Issues
 
 - After Siri returns photo search results and you select photos, Siri might not detect which photos are selected on screen. Commands like “Send these” might apply to all photos returned from the search rather than only the selected ones. (171728298)
 
@@ -581,48 +581,48 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
   **Workaround:** Add photos to the album manually in the Photos app: tap Select, tap the photos you want to add, tap the Share button, tap Add to Album, then tap the album.
 - Non-SF Symbol custom images for entities might not appear in Siri results for third-party apps. (177984074)
 
-##### Software Update
+### Software Update
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Background Security Improvements cannot be installed when your startup disk is an external storage device. (174428921)
 - Fixed: Devices configured with Reduced Security mode might fail to install macOS 27 beta 1. Devices in this mode might also be prevented from allowing kernel extensions or disabling System Integrity Protection. (178942816)
 
-##### Spatial Preview
+### Spatial Preview
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When Device Discovery UI is invoked via the Spatial Preview API, it might show nearby Apple Vision Pro devices running an older release. Selecting a device running an older release causes Spatial Preview to fail. (156180612)
 - Fixed: Some large 3D models with poor mesh connectivity of approximately 750,000 to 3.75 million triangles might not appear when previewing on Apple Vision Pro. (174366004)
 - Fixed: When spatial previewing USDZ assets larger than 75MB in Preview or using the Spatial Preview API, edits made on Mac or Apple Vision Pro might not sync to other devices. (178168374)
 
-##### Startup Disk
+### Startup Disk
 
-###### Known Issues
+#### Known Issues
 
 - When a Mac is running macOS 11.0, you might not be able to select the boot volume of macOS 27.0 or later as the startup disk in System Settings. (166640903)
 
   **Workaround:** Shut down your Mac, press and hold the power button until “Loading startup options” appears, then select the boot volume of macOS 27.0 or later.
 
-##### StoreKit
+### StoreKit
 
-###### New Features
+#### New Features
 
 - Offer code redemption APIs now return a `VerificationResult` when redemption completes. If a redemption succeeds, your app receives a `VerificationResult` that contains a `Transaction` object. If a redemption fails, your app receives an error that describes what caused the redemption to fail. (141012819)
 - StoreKit now includes the `Transaction.OwnershipType.assigned` and `Transaction.RevocationType.assignmentRevoked` enum values to support volume purchases. `Transaction` query methods now additionally return transactions assigned to the Managed Apple Account. (156749517)
 - New `Product.ProductType` APIs represent subscription Bundles and subscription Suites. New APIs in `Product.SubscriptionInfo.BundledSubscription` let you fetch merchandising data about subscriptions contained in a Bundle. Transaction and RenewalInfo contain new fields that provide information about purchases and customer status regarding Bundles and Suites. (160501742)
 - `partnerName` and `partnerId` properties for Advanced Commerce API are available in [Transaction.AdvancedCommerceInfo](../StoreKit/transaction/advancedcommerceinfo-swift.struct.md) and [RenewalInfo.AdvancedCommerceInfo](../StoreKit/product/subscriptioninfo/renewalinfo/advancedcommerceinfo-swift.struct.md). (167808780)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The transaction refund request sheet fails to display on macOS. (180072209)
 - Fixed: `Storefront` API might return incorrect metadata when running in the TestFlight environment. (181766819) (FB23646993)
 - Fixed: Purchases of non-subscription In-App Purchases made using the SKTestSession.buyProduct() method might fail with an invalid product error. The billingPlanType(_:) PurchaseOption isn’t respected for subscription purchases. (181842500)
 - Fixed: Transactions fail to finish. (183165269)
 
-##### StoreKit Testing in Xcode
+### StoreKit Testing in Xcode
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The unified app receipt is not updated after forcing a subscription expiration with `SKTestSession`. (102093015) (FB11767567)
 - Fixed: The `SKTestSession` `disableDialogs` setting is not always respected for all system dialogs. (154390284) (FB18403150)
@@ -635,26 +635,26 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - Fixed: Purchases and fetching the unified app receipt sometimes fails with an unknown error when using StoreKit Testing in Xcode. (178555835)
 - Fixed: Intro offer eligibility does not reset immediately after calling `SKTestSession.clearTransactions()`. (183933307) (FB24137836)
 
-###### Known Issues
+#### Known Issues
 
 - Changing the storefront or locale using `SKTestSession` doesn’t propagate through `Storefront.updates`. (184155259)
 - Failed purchases using `SKTestSession` might display error dialogs even when `dialogsDisabled` is set to true. (184255116)
 
-##### Swift Charts
+### Swift Charts
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When your project has a minimum deployment target lower than 27.0, using conditionals inside a `Chart` closure produces the warning “Conformance of `_ConditionalContent<TrueContent, FalseContent>` to `ChartContent` is only available in ‘’ 27.0 or newer,” and the app might crash at runtime when that content is loaded. (174168981)
 
-##### SwiftData
+### SwiftData
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: You might experience a deadlock for @Query when saving a ModelContext on a background actor while scheduling new async tasks for a ModelActor. (178113288)
 
-##### SwiftUI
+### SwiftUI
 
-###### New Features
+#### New Features
 
 - Bordered `Menu` and `Picker` buttons now support better label customization and no longer use `NSPopUpButton` in their implementation. (68559433) (FB8657381)
 - `AsyncImage` now automatically caches downloaded images using HTTP caching protocols, allowing servers to control caching behavior via standard headers. You can customize caching for specific images using the new `AsyncImage` initializers that accept `URLRequest` with custom `cachePolicy` settings. Additionally, you can set a custom `URLSession` using the new `View.asyncImageURLSession(_:)` API to control how all child `AsyncImage` views perform data tasks. (78212597)
@@ -739,7 +739,7 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - The `makeFileWrapper` closure of `FileWrapperDocumentWriter` now receives a second argument, `previous: FileWrapper?`, holding the `FileWrapper` from the document’s most recent read or write when one is available. Package documents can mutate `previous` in place and return it so that `FileWrapper` only writes children whose contents changed, avoiding rewriting an entire package on every save. Documents stored as a single file can ignore the second argument and return a fresh `FileWrapper` as before. Existing call sites must update their closures to accept the new parameter. (180301399)
 - `DocumentReader.Source` and `DocumentWriter.Destination` now default to `URL`. Conforming types that read from or write to a file URL no longer need to declare `typealias Source = URL` or `typealias Destination = URL`. (180301692)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - In apps built with the macOS 27.0 SDK, `TextField` respects custom font and color styling applied to its prompt. Apply styling to the `Text` provided to `TextField`’s `prompt` parameter at initialization. (86580365)
 - Fixed: A custom `TextRenderer` applied via `.textRenderer(_:)` now takes effect on a `Text` view that also has `.textSelection(.enabled)` applied. Previously, the custom renderer was dropped on selectable text, falling back to default rendering. (151015350)
@@ -761,131 +761,131 @@ The macOS 27 SDK provides support to develop apps for Mac computers running macO
 - The `makeDocument:` and `makeReadableDocument:` closures passed to `DocumentGroup` initializers are now `@MainActor`-isolated. SwiftUI invokes these factories on the main actor when constructing a document instance, allowing the closure body to access main-actor state — including the supplied `URLDocumentConfiguration` — without hopping isolation domains. (180302065)
 - `URLDocumentConfiguration` is a `@MainActor`-isolated `@Observable` reference type and no longer conforms to `Sendable`. Code that captured a configuration in a `Sendable` closure or stored it in a `Sendable` value should drop the constraint and access the configuration on the main actor. (180302075)
 
-###### Known Issues
+#### Known Issues
 
 - Progress reported in `DocumentReader.read(from:progress:)` and `DocumentWriter.write(snapshot:to:previous:progress:)` might not be presented. (158441261)
 
-###### Deprecations
+#### Deprecations
 
 - The `FileDocument` protocol is deprecated. Use `ReadableDocument` for read-only documents or `Document` for documents that support reading and writing. (178776840)
 
-##### System
+### System
 
-###### New Features
+#### New Features
 
 - System now provides Swift APIs for the C `stat`, `lstat`, `fstat`, and `fstatat` system calls. This includes a new `Stat` type with initializers from `FilePath`, `FileDescriptor`, or a C string; `FilePath.stat()` and `FileDescriptor.stat()` instance methods; and supporting types (`FileType`, `FileMode`, `FileFlags`, `UserID`, `GroupID`, `DeviceID`, and `Inode`). See [SYS-0006](https://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md) for more details. (160612181)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Custom `FilePath` or `FileDescriptor` extensions that make unqualified calls to `stat()` or `stat(_)` (without the `Darwin.` qualification) might conflict with the new Swift `stat()` instance methods introduced in [SYS-0006](https://github.com/apple/swift-system/blob/main/Proposals/0006-system-stat.md), causing build errors. See [SYS-0008](https://github.com/apple/swift-system/blob/main/Proposals/0008-backdeploy-cinterop-stat.md) for more details. (177911316)
 
-##### System Integrity Protection
+### System Integrity Protection
 
-###### New Features
+#### New Features
 
 - Accessing files in other developer teams’ app data containers and app group containers no longer prompts the user for authorization; such accesses are denied by default and can be managed by the user in Privacy & Security settings. (161835690)
 - XProtect may now restrict access to app data that is commonly targeted by malicious software.  Accessing files created by other developer teams’ apps may be denied by default but may be managed by the user in Privacy & Security settings. (178668601)
 
-##### TCC
+### TCC
 
-###### Deprecations
+#### Deprecations
 
 - Apps can no longer access the local TCC database directly. (90775556)
 
-##### Terminal
+### Terminal
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Terminal might hang when you click Terminate in the “Do you want to terminate running process…” dialog, but recovers after a delay. (179656565)
 
-##### Thunderbolt
+### Thunderbolt
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When connecting to two identical displays (same model and serial number), the first display will work as expected whereas the second display might not light up. (176292156)
 
-##### UIKit
+### UIKit
 
-###### New Features
+#### New Features
 
 - When linked on iOS 27, tvOS 27, macCatalyst 27, or visionOS 27 SDKs, you can use `UIScene.extendStateRestoration` and `UIScene.completeStateRestoration` to extend state restoration for `UIScene.ActivationState.background` to `UIScene.ActivationState.foreground` lifecycle transitions. (161843040)
 - On iOS 27.0 and iPadOS 27.0, Siri can load resources from drag interactions installed in your app’s interface. For example, when Apple Intelligence is invoked from a context menu, the system calls `UIDragInteractionDelegate` methods to load the content. Because drag sessions might begin without a user-initiated drag gesture, avoid performing animations or presenting modal UI for the drag in `dragInteraction(_:sessionWillBegin:)`. Instead, perform those actions in `dragInteraction(_:sessionDidMove:)`. (168884200)
 - On iPadOS 27.0 and macOS 27.0, the menu bar and context menus present a reduced set of menu item images and do not display images set on menu elements by default. You can use the new `preferredImageVisibility` property on `UIMenuElement` — including updated initializers on `UIMenu`, `UIAction`, `UICommand`, and `UIKeyCommand` — to customize the visibility of each element’s image in these menus. Review the updated Human Interface Guidelines to determine which menu elements in your app should display images. UIKit automatically provides default visible menu element images for certain common system-wide menu items, such as Settings, Share, and Print. (170479084)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: The `UISceneClosureConfirmation` API does not present a confirmation dialog. (170008344)
 - Fixed: The `UIMenuLeaf` protocol is missing the subtitle property introduced in iOS 16.0. (173271862)
 - Fixed: Catalyst views that have both `UIDragInteraction` and `UIContextMenuInteraction` do not allow you to activate both interactions with touch. (175048540)
 
-###### Deprecations
+#### Deprecations
 
 - Apps built with the latest SDK must adopt the scene-based life cycle or they fail to launch. For migration guidance, see [Transitioning to the UIKit scene-based life cycle](../UIKit/transitioning-to-the-uikit-scene-based-life-cycle.md). (141837548)
 
-##### USDKit
+### USDKit
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Some types of USD attributes cannot be read or modified. (170653056)
 - Fixed: Array, vector, matrix, and quaternion types cannot be authored using USDKit. (178071414)
 
-###### Deprecations
+#### Deprecations
 
 - Meshes compressed using the USDKit export API or `usdcrush tool` in Beta 1 cannot be decoded by Beta 2, and  meshes from Beta 2 cannot be decoded by Beta 1. (177417812)
 
-##### VideoToolbox
+### VideoToolbox
 
-###### New Features
+#### New Features
 
 - `VTLowLatencySuperResolutionScalerConfiguration` now supports a 1.5x scale factor. Call `+supportedScaleFactorsForFrameWidth:frameHeight:` to discover the scale factors available for your source dimensions. (177635243)
 - `VTLowLatencyFrameInterpolationConfiguration` now supports arbitrary source dimensions up to 1080p. (179040806)
 
-##### Virtualization
+### Virtualization
 
-###### New Features
+#### New Features
 
 - The vmnet port forwarding APIs now support port forwarding when communicating over loopback. (64203273) (FB7731708)
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Saving a virtual machine state with one or more USB devices passed through to a virtual machine may fail. (174267926)
 - Fixed: If an App uses `AccessoryAccess` framework within a Virtualization framework to launch a virtual machine, and if you assign both the Apple Keyboard (A1242 or A1243) and Apple Mouse (A1152) to that app and subsequently un-assign the mouse, then the virtual machine might crash. (174794802)
 - Fixed: A virtual machine might crash during restore if a USB mass storage device was hot-plugged before the virtual machine was saved but is not attached during the restore. (177528319)
 - Fixed: `AAUSBAccessoryManager registerListener:withMatchingCriteria:completionHandler:` does not work with a non-empty matching criteria array. (177662539)
 
-##### Weather Highlights
+### Weather Highlights
 
-###### Deprecations
+#### Deprecations
 
 - Weather Highlights is currently only available in US English. (164408676)
 
-##### Wi-Fi Settings
+### Wi-Fi Settings
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Apple menu > System Settings… > Wi-Fi > Details… button does nothing. (183437912)
 
-##### Window Management
+### Window Management
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: When you exit a window from fullscreen mode using Mission Control, the window might be lost. (177660206)
 
-##### Writing Tools
+### Writing Tools
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Writing Tools on macOS might stop working after you use Describe Your Change. (174926739)
 
-##### xnu
+### xnu
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Launch binaries larger than 2GiB might fail. (134346968)
 
-##### XQuartz
+### XQuartz
 
-###### Resolved Issues
+#### Resolved Issues
 
 - Fixed: Clicking on X11 windows while XQuartz is in the background does not activate the XQuartz application. (180761569)
 

@@ -24,7 +24,7 @@ let kVTCompressionPropertyKey_VideoEncoderPixelBufferAttributes: CFString
 extern CFStringRef const kVTCompressionPropertyKey_VideoEncoderPixelBufferAttributes;
 ```
 
-#### Discussion
+## Discussion
 
 You can use these attributes to create a pixel buffer pool for source pixel buffers.
 

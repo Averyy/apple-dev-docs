@@ -24,7 +24,7 @@ case objectSpaceNormal
 MDLMaterialSemanticObjectSpaceNormal
 ```
 
-#### Discussion
+## Discussion
 
 Model I/O uses this semantic for the `objectSpaceNormal` and `map_objectSpaceNormal` attributes when importing from the MTL file format (for assets in the OBJ file format).
 

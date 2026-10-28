@@ -19,7 +19,7 @@ A struct that represents the split view controller layout environment trait.
 struct UITraitSplitViewControllerLayoutEnvironment
 ```
 
-#### Overview
+## Overview
 
 The trait specifies whether an ancestor split view controller, if any, is expanded or collapsed.
 

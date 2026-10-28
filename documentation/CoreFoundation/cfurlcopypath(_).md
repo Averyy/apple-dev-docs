@@ -25,11 +25,11 @@ func CFURLCopyPath(_ anURL: CFURL!) -> CFString!
 extern CFStringRefCFURLCopyPath(CFURLRef anURL);
 ```
 
-#### Return Value
+## Return Value
 
 The path of `anURL`, or `NULL` if the URL cannot be decomposed (doesn’t conform to RFC 1808). Ownership follows the create rule. See [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 
-#### Discussion
+## Discussion
 
 This function does not resolve the URL against its base, nor does it replace percent escape sequences. This function’s return value includes any leading slash (giving the path the normal POSIX appearance), if present. If this behavior is not appropriate, use [`CFURLCopyStrictPath(_:_:)`](./cfurlcopystrictpath%28_,_%29.md) whose return value omits any leading slash. You may also want to use the function [`CFURLCopyFileSystemPath(_:_:)`](./cfurlcopyfilesystempath%28_,_%29.md), which returns the URL’s path as a file system path for the given path style. If the path is to be passed to file system calls, you may also want to use the function [`CFURLGetFileSystemRepresentation(_:_:_:_:)`](./cfurlgetfilesystemrepresentation%28_,_,_,_%29.md), which returns a C string.
 

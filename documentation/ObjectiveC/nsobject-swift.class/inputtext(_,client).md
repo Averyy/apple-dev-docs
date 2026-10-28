@@ -19,11 +19,11 @@ func inputText(_ string: String!, client sender: Any!) -> Bool
 - (BOOL) inputText:(NSString *) string client:(id) sender;
 ```
 
-#### Return Value
+## Return Value
 
 [`YES`](../yes.md) if the input is accepted; otherwise [`NO`](../no.md).
 
-#### Discussion
+## Discussion
 
 An input method should implement this method when using key binding (that is, it implements [`didCommand(by:client:)`](./didcommand%28by,client%29.md)).
 

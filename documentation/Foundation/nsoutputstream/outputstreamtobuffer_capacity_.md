@@ -21,11 +21,11 @@ Creates and returns an initialized output stream that can write to a provided bu
 + (instancetype) outputStreamToBuffer:(uint8_t *) buffer capacity:(NSUInteger) capacity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized output stream that can write to `buffer`.
 
-#### Discussion
+## Discussion
 
 The stream must be opened before it can be used.
 

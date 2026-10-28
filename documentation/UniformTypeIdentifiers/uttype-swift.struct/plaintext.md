@@ -21,7 +21,7 @@ A type that represents text with no markup and an unspecified encoding.
 static var plainText: UTType { get }
 ```
 
-#### Discussion
+## Discussion
 
 The identifier for this type is `public.plain-text`.
 

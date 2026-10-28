@@ -25,7 +25,7 @@ var currencyCode: String! { get set }
 @property (copy, null_resettable) NSString * currencyCode;
 ```
 
-#### Discussion
+## Discussion
 
 A currency code is a three-letter code that is, in most cases, composed of a region’s two-character Internet region code plus an extra character to denote the currency unit. For example, the currency code for the Australian dollar is “AUD”. Currency codes are based on the ISO 4217 standard.
 

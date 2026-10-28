@@ -46,7 +46,7 @@ nonisolated
 init<S>(_ title: S) where Label == Text, S : StringProtocol
 ```
 
-#### Discussion
+## Discussion
 
 The progress view synthesizes a default label using the `localizedDescription` of the given progress instance.
 

@@ -19,7 +19,7 @@ var toolbar: NSToolbar? { get set }
 @property (strong, nullable) NSToolbar * toolbar;
 ```
 
-#### Discussion
+## Discussion
 
 For more information about toolbars, see [`NSToolbar`](../nstoolbar.md).
 

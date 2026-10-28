@@ -25,11 +25,11 @@ class func move(by delta: SCNVector3, duration: TimeInterval) -> SCNAction
 + (SCNAction *) moveBy:(SCNVector3) delta duration:(NSTimeInterval) duration;
 ```
 
-#### Return Value
+## Return Value
 
 A new action object.
 
-#### Discussion
+## Discussion
 
 When the action executes, the node’s [`position`](../scnnode/position.md) property animates from its current position to its new position.
 

@@ -20,7 +20,7 @@ var keyClassDescription: NSScriptClassDescription? { get }
 @property (retain, readonly, nullable) NSScriptClassDescription * keyClassDescription;
 ```
 
-#### Return Value
+## Return Value
 
 The class description of the objects specified by the receiver.
 

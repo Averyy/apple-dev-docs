@@ -19,7 +19,7 @@ var isLoaded: Bool { get set }
 @property (getter=isLoaded) BOOL loaded;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the browser cell’s state has been set and the cell is ready to display.
 

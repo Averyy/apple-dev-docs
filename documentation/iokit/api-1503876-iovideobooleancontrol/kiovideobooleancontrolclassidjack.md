@@ -14,7 +14,7 @@
 kIOVideoBooleanControlClassIDJack = 'jack'
 ```
 
-#### Discussion
+## Discussion
 
 A IOVideoBooleanControl where a true value means something is plugged into that element.
 

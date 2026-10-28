@@ -24,7 +24,7 @@ optional func playableContentManager(_ contentManager: MPPlayableContentManager,
 - (void) playableContentManager:(MPPlayableContentManager *) contentManager didUpdateContext:(MPPlayableContentManagerContext *) context;
 ```
 
-#### Discussion
+## Discussion
 
 A playable content manager’s context provides information about the current playback environment of an external media player, such as whether that media player limits the amount of content to display. Use the content manager’s `context` property to examine attributes of the new context after the change.
 

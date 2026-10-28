@@ -23,11 +23,11 @@ func nw_parameters_get_allow_ultra_constrained(_ parameters: nw_parameters_t) ->
 bool nw_parameters_get_allow_ultra_constrained(nw_parameters_t parameters);
 ```
 
-#### Return Value
+## Return Value
 
 Returns whether or not ultra-constrained interfaces are allowed.
 
-#### Discussion
+## Discussion
 
 Check if the parameters explicitly allow connectivity over ultra-constrained interfaces.
 

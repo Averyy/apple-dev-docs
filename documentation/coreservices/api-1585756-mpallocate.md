@@ -17,7 +17,7 @@ Allocates a nonrelocatable memory block.
 LogicalAddress MPAllocate(ByteCount size);
 ```
 
-#### Return Value
+## Return Value
 
 A pointer to the allocated memory. If the function cannot allocate the requested memory or the requested alignment, the returned address is `NULL`.
 

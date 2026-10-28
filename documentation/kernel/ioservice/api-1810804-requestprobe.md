@@ -12,11 +12,11 @@ virtual IOReturn requestProbe(
  IOOptionBitsoptions );
 ```
 
-#### Return Value
+## Return Value
 
 An IOReturn code.
 
-#### Overview
+## Overview
 
 For bus families that do not usually detect device addition or removal, this method represents an external request (eg. from a utility application) to rescan and publish or remove found devices.
 

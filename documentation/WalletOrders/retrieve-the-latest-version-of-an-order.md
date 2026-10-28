@@ -11,7 +11,7 @@ Retrieves the latest signed and compressed version of an order.
 - iPadOS 16.0+
 - macOS 13.0+
 
-#### Discussion
+## Discussion
 
 The device uses this endpoint for both initial and subsequent attempts to retrieve an order. Make sure you support standard HTTP caching on this endpoint.
 

@@ -25,11 +25,11 @@ func CMSampleBufferGetOutputSampleTimingInfoArray(_ sbuf: CMSampleBuffer, entryC
 extern OSStatus CMSampleBufferGetOutputSampleTimingInfoArray(CMSampleBufferRef sbuf, CMItemCount timingArrayEntries, CMSampleTimingInfo *timingArrayOut, CMItemCount *timingArrayEntriesNeededOut);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Sample Buffer Error Codes](./sample-buffer-errors.md).
 
-#### Discussion
+## Discussion
 
 If only one [`CMSampleTimingInfo`](./cmsampletiminginfo.md) struct is returned, it applies to all samples in the buffer.See documentation of [`CMSampleTimingInfo`](./cmsampletiminginfo.md) for details of how a single `CMSampleTimingInfo` struct can apply to multiple samples. The `timingArrayOut` must be allocated by the caller, and the number of entries allocated must be passed in `timingArrayEntries`. If `timingArrayOut` is `NULL`, `timingArrayEntriesNeededOut` will return the required number of entries. Similarly, if `*timingArrayEntriesNeededOut` is too small, [`CMSampleBuffer`](./cmsamplebuffer.md) will be returned, and `timingArrayEntriesNeededOut` will return the required number of entries. In either case, the caller can then make an appropriately-sized `timingArrayOut` and call again. For example, the caller might pass the address of a `CMSampleTimingInfo` struct on the stack (as timingArrayOut), and 1 as `timingArrayEntries`. If all samples are describable with a single `CMSampleTimingInfo` struct (or there’s only one sample in the `CMSampleBuffer`), this call will succeed. If not, it will fail, and will return the number of entries required in `timingArrayEntriesNeededOut`. Only in this case will the caller actually need to allocate an array. If there’s no timingInfo in this `CMSampleBuffer`, [`CMSampleBuffer`](./cmsamplebuffer.md) will be returned, and `*timingArrayEntriesNeededOut` will be set to 0.
 

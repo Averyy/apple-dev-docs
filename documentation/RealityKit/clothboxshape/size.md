@@ -17,7 +17,7 @@ The size of the box along each axis.
 var size: SIMD3<Float> { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Each component must be positive.
 

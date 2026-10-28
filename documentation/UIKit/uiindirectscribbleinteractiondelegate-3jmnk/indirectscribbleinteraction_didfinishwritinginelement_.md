@@ -17,7 +17,7 @@ Informs the delegate when the user finishes writing.
 - (void) indirectScribbleInteraction:(UIIndirectScribbleInteraction *) interaction didFinishWritingInElement:(UIScribbleElementIdentifier) elementIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this to reset placeholders or other UI elements, if appropriate, to their state from before the user started writing.
 

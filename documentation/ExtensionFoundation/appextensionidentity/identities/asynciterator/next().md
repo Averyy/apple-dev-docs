@@ -17,7 +17,7 @@ Asynchronously advances to the next element and returns it.
 mutating func next() async -> [AppExtensionIdentity]?
 ```
 
-#### Return Value
+## Return Value
 
 The next element, if it exists, or `nil` to signal the end of the sequence.
 

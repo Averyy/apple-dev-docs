@@ -31,7 +31,7 @@ class MKMapItemDetailViewController
 @interface MKMapItemDetailViewController : NSViewController
 ```
 
-#### Overview
+## Overview
 
 The view controller presents modally and displays place information such as addresses and phone numbers.
 

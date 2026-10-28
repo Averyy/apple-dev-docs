@@ -5,13 +5,13 @@
 
 Implement an endpoint to receive and handle merchant token life-cycle updates from Apple Pay.
 
-#### Overview
+## Overview
 
 A *merchant token* associates a payment card, merchant, and user. Apple Pay issues a merchant token when a customer initiates a purchase using Apple Pay in your app or on your website. When your app or website creates a payment request for a recurring payment or an automatic-reload payment, you pass your server’s notification URL in the `tokenNotificationURL` parameter. When a life-cycle event affects the token — for example, the card’s expiration date changes, or the user or issuer deletes the token — Apple Pay sends you a notification with a unique event identifier to that `tokenNotificationURL`.
 
 Implement the [`Send Merchant Token Event`](../MerchantTokenNotificationServices/send-merchant-token-event.md) endpoint at the `tokenNotificationURL` you provide to receive and handle merchant token updates from Apple Pay.
 
-##### Configure your server for Apple Pay’s requirements
+### Configure your server for Apple Pay’s requirements
 
 To incorporate Apple Pay, your server needs to adhere to the following requirements.
 
@@ -23,7 +23,7 @@ To incorporate Apple Pay, your server needs to adhere to the following requireme
 
 For more information about meeting these requirements for your server, see [Setting Up Your Server](../ApplePayontheWeb/setting-up-your-server.md).
 
-##### Create allow lists
+### Create allow lists
 
 For inbound merchant token notifications from Apple, allow the following IP addresses:
 
@@ -41,7 +41,7 @@ For merchant token event endpoints, allow the following URLs and IP addresses:
 
 > **Note**:  Set up these allow lists for receiving and handling merchant token events in addition to the lists in [Setting Up Your Server](../ApplePayontheWeb/setting-up-your-server.md) that you set up generally for Apple Pay.
 
-##### Enable your token notification endpoint
+### Enable your token notification endpoint
 
 Add an endpoint that accepts a `GET` request in the following format:
 
@@ -61,7 +61,7 @@ For more information about the endpoint, see [`Send Merchant Token Event`](../Me
 
 For more information about payment requests that accept `tokenNotificationURL` as a parameter, see [`PKAutomaticReloadPaymentRequest`](../PassKit/pkautomaticreloadpaymentrequest.md), [`PKRecurringPaymentRequest`](../PassKit/pkrecurringpaymentrequest.md), [`ApplePayAutomaticReloadPaymentRequest`](../ApplePayontheWeb/applepayautomaticreloadpaymentrequest.md), and [`ApplePayRecurringPaymentRequest`](../ApplePayontheWeb/applepayrecurringpaymentrequest.md).
 
-##### Receive and handle notifications
+### Receive and handle notifications
 
 When a life-cycle event occurs to a card associated with a merchant token, Apple Pay sends a `GET` request to your [`Send Merchant Token Event`](../MerchantTokenNotificationServices/send-merchant-token-event.md) endpoint. Use the unique event identifier that Apple Pay sends and your merchant identifier to fetch information about this notification’s event. For more information, see [`Get Details of a Merchant Token Event`](../MerchantTokenNotificationServices/merchant-token-event-retrieval.md).
 

@@ -15,11 +15,11 @@ Convert a path into a vnode.
 errno_t vnode_lookup(const char *path, int flags, vnode_t *vpp, vfs_context_t ctx);
 ```
 
-#### Return Value
+## Return Value
 
 Results 0 for success or an error code.
 
-#### Discussion
+## Discussion
 
 This routine is a thin wrapper around xnu-internal lookup routines; if successful, it returns with an iocount held on the resulting vnode which must be dropped with vnode_put().
 

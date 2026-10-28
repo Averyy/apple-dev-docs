@@ -21,7 +21,7 @@ string PricingModel
 - `CPM`: Cost-per-thousand-impressions. Pairs with `billingEvent: IMPRESSIONS`.
 - `CPT`: Cost-per-tap. Pairs with `billingEvent: TAPS`.
 
-#### Discussion
+## Discussion
 
 The `PricingModel` controls which event triggers billing for an ad group’s delivery: a tap, an impression, or an install action. You set it on `AdGroup` or `AdGroupCreate`, and it must match the parent campaign’s `billingEvent`.
 

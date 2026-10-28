@@ -20,7 +20,7 @@ An option that indicates an animation doesn’t display frame data outside of it
 static let none: AnimationFillMode
 ```
 
-#### Discussion
+## Discussion
 
 For example, if you rewind an animation of a hand waving for one second by setting [`trimStart`](../sampledanimation/trimstart.md) to `-1.0`, a [`fillMode`](../sampledanimation/fillmode.md) of `none` determines that the hand is invisible for one second before appearing and waving.
 

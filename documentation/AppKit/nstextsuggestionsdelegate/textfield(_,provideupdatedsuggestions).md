@@ -17,7 +17,7 @@ Called when the text field’s text (or tokens) have changed and when the text f
 func textField(_ textField: NSTextField, provideUpdatedSuggestions responseHandler: @escaping (Self.ItemResponse) -> Void)
 ```
 
-#### Discussion
+## Discussion
 
 Read the contents of `textField` to determine what suggestions to provide. For example:
 

@@ -3,11 +3,11 @@
 **Framework**: IOKit  
 **Role**: API Collection
 
-#### Overview
+## Overview
 
 IOUPSPlugIn.h is the header that defines the software used by ioupsd in user-space to communicate with UPS devices.
 
-** NOTE:** Kernel extensions should have the following key/value pair in their personality in order to be recognized by ioupsd:
+ **NOTE:** Kernel extensions should have the following key/value pair in their personality in order to be recognized by ioupsd:
 
 ```occ
  
@@ -26,7 +26,7 @@ To obtain an IOUPSPlugInInterface for a UPS device, use the function IOCreatePlu
 
 The interface returned by IOCreatePlugInInterfaceForService() should be deallocated using IODestroyPlugInInterface(). Do not call Release() on it.
 
-##### Included Headers
+### Included Headers
 
 - <CoreFoundation/CoreFoundation.h>
 - <IOKit/IOCFPlugIn.h>

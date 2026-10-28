@@ -19,7 +19,7 @@ class let multipleDocumentsName: String
 extern NSImageName const NSImageNameMultipleDocuments;
 ```
 
-#### Discussion
+## Discussion
 
 You can use this icon as the drag image when dragging multiple items. You should not use this image for any other intended purpose.
 

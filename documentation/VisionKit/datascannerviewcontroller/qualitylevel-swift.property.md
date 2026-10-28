@@ -18,7 +18,7 @@ The resolution that the scanner uses to find data.
 final let qualityLevel: DataScannerViewController.QualityLevel
 ```
 
-#### Discussion
+## Discussion
 
 The default value is [`DataScannerViewController.QualityLevel.balanced`](./qualitylevel-swift.enum/balanced.md). To increase recognition speed for larger items, you can set this property to [`DataScannerViewController.QualityLevel.fast`](./qualitylevel-swift.enum/fast.md). For smaller items, you can set this property to [`DataScannerViewController.QualityLevel.accurate`](./qualitylevel-swift.enum/accurate.md) but it may impact the recognition speed.
 

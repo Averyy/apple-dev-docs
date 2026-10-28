@@ -17,11 +17,11 @@ Resolves an alias contained in an alias file.
 OSErr FSResolveAliasFileWithMountFlags(FSRef *theRef, Boolean resolveAliasChains, Boolean *targetIsFolder, Boolean *wasAliased, unsigned long mountFlags);
 ```
 
-#### Return Value
+## Return Value
 
 A result code.
 
-#### Discussion
+## Discussion
 
 The function `FSResolveAliasFileWithMountFlags` is identical to [`FSResolveAliasFile`](./api-1444372-fsresolvealiasfile.md) with the exception that it provides the `mountFlags` parameter, allowing callers additional control over how the alias file is resolved.
 

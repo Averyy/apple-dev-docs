@@ -15,7 +15,7 @@ A mapping of locale to pricing information.
 object Album.Prices
 ```
 
-#### Data example
+## Data example
 
 The feed export is in Parquet format. This data example is in JSON format for illustrative purposes.
 

@@ -25,7 +25,7 @@ class func doorsOpenVertical(withDuration sec: TimeInterval) -> SKTransition
 + (SKTransition *) doorsOpenVerticalWithDuration:(NSTimeInterval) sec;
 ```
 
-#### Return Value
+## Return Value
 
 A new transition.
 

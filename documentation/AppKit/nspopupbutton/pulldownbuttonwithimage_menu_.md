@@ -15,11 +15,11 @@ Creates a standard pull-down button with an image and menu.
 + (instancetype) pullDownButtonWithImage:(NSImage *) image menu:(NSMenu *) menu;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized pull-down button object.
 
-#### Discussion
+## Discussion
 
 Pull-down buttons created using this method have the `usesItemFromMenu` property set to `NO`.
 

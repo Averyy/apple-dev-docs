@@ -19,7 +19,7 @@ optional func webView(_ webView: WebView!, decidePolicyForMIMEType type: String!
 - (void) webView:(WebView *) webView decidePolicyForMIMEType:(NSString *) type request:(NSURLRequest *) request frame:(WebFrame *) frame decisionListener:(id<WebPolicyDecisionListener>) listener;
 ```
 
-#### Discussion
+## Discussion
 
 This method is invoked during the process of loading content for `request` after the `webView:didStartProvisionalLoadForFrame:` method in the `WebFrameLoadDelegate` protocol is called by the `WebView` object. The web view implements a policy decision by sending one of the [`WebPolicyDecisionListener`](../webpolicydecisionlistener.md) protocol messages to `listener`.
 

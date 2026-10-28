@@ -21,11 +21,11 @@ Creates an authorization mechanism.
 int (*)(void *, struct __OpaqueAuthorizationEngine *, const char *, void **) MechanismCreate;
 ```
 
-#### Return Value
+## Return Value
 
 A result code. Return [`errAuthorizationSuccess`](../errauthorizationsuccess.md) (no error) if the function completes successfully and [`errAuthorizationInternal`](../errauthorizationinternal.md) (Security Server internal error) if any error occurs.
 
-#### Discussion
+## Discussion
 
 A given authorization plug-in can implement any number of authorization mechanisms, distinguished by their mechanism names in the authorization policy database.
 

@@ -24,11 +24,11 @@ var completionCurve: UIView.AnimationCurve { get }
 @property (nonatomic, readonly) UIViewAnimationCurve completionCurve;
 ```
 
-#### Return Value
+## Return Value
 
 The completion curve for the view controller transition. For a list of possible values, see the [`UIView.AnimationCurve`](../uiview/animationcurve.md) type.
 
-#### Discussion
+## Discussion
 
 The completion curve defines the timing of the animations. For interactive transitions, this value is usually obtained from the [`completionCurve`](../uiviewcontrollerinteractivetransitioning/completioncurve.md) property of the interactive animator object. Use this value when configuring your own animations if you want the same timing as the main transition.
 

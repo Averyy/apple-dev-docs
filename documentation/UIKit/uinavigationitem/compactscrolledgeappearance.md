@@ -24,7 +24,7 @@ var compactScrollEdgeAppearance: UINavigationBarAppearance? { get set }
 @property (nonatomic, copy, readwrite, nullable) UINavigationBarAppearance * compactScrollEdgeAppearance;
 ```
 
-#### Discussion
+## Discussion
 
 When a compact-height navigation bar displays the top navigation item, the appearance setting in this property overrides the settings in the [`compactScrollEdgeAppearance`](../uinavigationbar/compactscrolledgeappearance.md) property of [`UINavigationBar`](../uinavigationbar.md).
 

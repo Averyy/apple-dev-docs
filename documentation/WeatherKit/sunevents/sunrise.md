@@ -21,7 +21,7 @@ The sunrise time immediately before the solar transit closest to calendar noon.
 var sunrise: Date?
 ```
 
-#### Discussion
+## Discussion
 
 This property is optional because it’s possible for the sun to not rise on a given day, at extreme latitudes. That calendar noon is used as a reference point due to variations in frequency of solar events at extreme latitudes.
 

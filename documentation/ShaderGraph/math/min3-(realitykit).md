@@ -14,7 +14,7 @@ Outputs the minimum of three incoming values.
 - tvOS 26.0+
 - visionOS 1.0+
 
-#### Parameter Types
+## Parameter Types
 
 **Min3 (integer)**:
 

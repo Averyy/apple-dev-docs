@@ -24,7 +24,7 @@ var hasChanges: Bool { get }
 @property (nonatomic, readonly) BOOL hasChanges;
 ```
 
-#### Return Value
+## Return Value
 
 Returns [`true`](../../Swift/true.md) if there are uncommitted changes; otherwise, [`false`](../../Swift/false.md).
 

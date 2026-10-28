@@ -25,7 +25,7 @@ var locale: Locale! { get set }
 @property (copy, null_resettable) NSLocale * locale;
 ```
 
-#### Discussion
+## Discussion
 
 Defaults to `autoupdatingCurrentLocale`. Also resets to `autoupdatingCurrentLocale` on assignment of `nil`.
 

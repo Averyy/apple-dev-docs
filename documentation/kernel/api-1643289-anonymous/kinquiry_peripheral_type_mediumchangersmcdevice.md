@@ -13,7 +13,7 @@
 kINQUIRY_PERIPHERAL_TYPE_MediumChangerSMCDevice = 0x08
 ```
 
-#### Discussion
+## Discussion
 
 SMC Device.
 

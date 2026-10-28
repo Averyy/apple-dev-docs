@@ -24,7 +24,7 @@ let HKWorkoutTypeIdentifier: String
 extern NSString * const HKWorkoutTypeIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 Use this type identifier when requesting permission to read or share workout data.
 

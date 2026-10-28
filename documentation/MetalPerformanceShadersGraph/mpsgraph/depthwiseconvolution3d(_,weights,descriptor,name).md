@@ -24,11 +24,11 @@ func depthwiseConvolution3D(_ source: MPSGraphTensor, weights: MPSGraphTensor, d
 - (MPSGraphTensor *) depthwiseConvolution3DWithSourceTensor:(MPSGraphTensor *) source weightsTensor:(MPSGraphTensor *) weights descriptor:(MPSGraphDepthwiseConvolution3DOpDescriptor *) descriptor name:(NSString *) name;
 ```
 
-#### Return Value
+## Return Value
 
 A valid MPSGraphTensor object
 
-#### Discussion
+## Discussion
 
 Works exactly like depthwise convolution2D, but in three dimensions. Supports different layouts with the [`channelDimensionIndex`](../mpsgraphdepthwiseconvolution3dopdescriptor/channeldimensionindex.md) property. If your weights need a different layout add a permute operation on them before this operation.
 

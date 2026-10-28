@@ -15,7 +15,7 @@ The payload that configures FileVault recovery key redirection.
 object FDERecoveryKeyRedirection
 ```
 
-#### Discussion
+## Discussion
 
 Specify `com.apple.security.FDERecoveryRedirect` as the payload type.
 
@@ -26,7 +26,7 @@ Note these cautions:
 - The payload must exist in a system-scoped profile.
 - Installing more than one payload of this type per machine results in an error.
 
-##### Profile availability
+### Profile availability
 
 |  |  |
 | --- | --- |

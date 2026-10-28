@@ -24,7 +24,7 @@ var zeroHistogram: Bool { get set }
 @property (nonatomic, readwrite) BOOL zeroHistogram;
 ```
 
-#### Discussion
+## Discussion
 
 Determines whether the memory region in which the histogram results are to be written in the histogram buffer are to be zero-initialized or not.
 

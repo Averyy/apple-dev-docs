@@ -15,7 +15,7 @@ Constants for the link state timeout values on USB 3.0 devices.
 enum tIOUSB30LinkStateTimeout : unsigned int;
 ```
 
-#### Discussion
+## Discussion
 
 For information about these constants, see Table 7-12 of the USB 3.0 specification, and sections 7.5.4, 7.5.9, and 7.5.10 of the USB 3.0 specification at [http://www.usb.org](http://www.usb.org).
 

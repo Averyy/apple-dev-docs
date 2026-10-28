@@ -17,7 +17,7 @@ A measurement of the electricity consumed by an HVAC system.
 struct ElectricHVACLoadEvent
 ```
 
-#### Overview
+## Overview
 
 Submit events representing electricity consumption to provide insights about electricity usage and your managed devices’ adherence to [`ElectricityGuidance`](./electricityguidance.md). These events are data points recorded at specific points in time for a given [`EnergyVenue`](./energyvenue.md) that allow the venue to determine when the device used electricity and the electricity’s cleanliness based on historical guidance. The framework can also determine relative cost using the rate plan at the energy venue, if available.
 
@@ -25,7 +25,7 @@ After you submit load events to report the electricity consumption of HVAC devic
 
 > ❗ **Important**: The system stores and syncs the energy data that you provide through load events with end-to-end encryption through the entire process, ensuring the data isn’t accessible to anyone, even Apple. For more information, see [EnergyKit data security](https://support.apple.com/guide/security/secd0a47c14c).
 
-##### Submit electrical HVAC load events
+### Submit electrical HVAC load events
 
 Save data to the load event when the heating or cooling stage changes. An electric HVAC load event provides information about the state transitions of the HVAC unit when it’s actively consuming energy.
 

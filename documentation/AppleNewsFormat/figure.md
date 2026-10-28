@@ -20,13 +20,13 @@ object Figure
 - [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md)
 - [Using HTML with Apple News Format](../AppleNews/using-html-with-apple-news-format.md)
 
-#### Discussion
+## Discussion
 
 Use the `figure` component to display illustrations such as graphs, diagrams, and drawings. Other components are available for other types of images, such as [`Photo`](./photo.md), [`Portrait`](./portrait.md), and [`Logo`](./logo.md).
 
 See [Preparing Image, Video, Audio, Music, and ARKit Assets](../AppleNews/preparing-image-video-audio-music-and-arkit-assets.md).
 
-##### Example
+### Example
 
 ```json
 {

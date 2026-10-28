@@ -25,11 +25,11 @@ init(code: INGetVisualCodeIntentResponseCode, userActivity: NSUserActivity?)
 - (instancetype) initWithCode:(INGetVisualCodeIntentResponseCode) code userActivity:(NSUserActivity *) userActivity;
 ```
 
-#### Return Value
+## Return Value
 
 An initialized response object or `nil` if the object could not be created.
 
-#### Discussion
+## Discussion
 
 After initializing the response object, put the image for the visual code in the [`visualCodeImage`](./visualcodeimage.md) property.
 

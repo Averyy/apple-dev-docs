@@ -23,7 +23,7 @@ case banner
 UNAlertStyleBanner
 ```
 
-#### Discussion
+## Discussion
 
 Alerts are displayed as a slide-down banner. Banners appear for a short time and then disappear automatically if the user does nothing.
 

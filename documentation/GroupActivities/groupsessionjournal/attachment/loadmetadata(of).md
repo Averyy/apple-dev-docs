@@ -20,11 +20,11 @@ Downloads the metadata for the attachment asynchronously and delivers it as the 
 func loadMetadata<MetadataType>(of: MetadataType.Type) async throws -> MetadataType where MetadataType : Decodable, MetadataType : Encodable
 ```
 
-#### Return Value
+## Return Value
 
 The custom metadata object for the attachment.
 
-#### Discussion
+## Discussion
 
 Use this function to retrieve any metadata you included with the attachment. You might use this metadata to retrieve app-specific details that aren’t part of the item’s intrinsic data format.
 

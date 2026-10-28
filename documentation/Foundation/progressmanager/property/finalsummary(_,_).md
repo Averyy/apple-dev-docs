@@ -22,11 +22,11 @@ Determines how to handle summary data when a progress manager is deinitialized.
 static func finalSummary(_ parentSummary: Self.Summary, _ selfSummary: Self.Summary) -> Self.Summary
 ```
 
-#### Return Value
+## Return Value
 
 The updated summary that replaces the parent’s current summary.
 
-#### Discussion
+## Discussion
 
 This method is used when a progress manager in the hierarchy is being deinitialized and its accumulated summary needs to be processed in relation to its parent’s summary. The behavior can vary depending on the property type:
 

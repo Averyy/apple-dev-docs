@@ -21,7 +21,7 @@ Removes the specified database changes from the state.
 final func remove(pendingDatabaseChanges: [CKSyncEngine.PendingDatabaseChange])
 ```
 
-#### Discussion
+## Discussion
 
 Use this method when you no longer want the sync engine to send certain pending changes.
 

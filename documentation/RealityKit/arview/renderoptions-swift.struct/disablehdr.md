@@ -17,7 +17,7 @@ Disable the high dynamic range post-processing effect.
 static let disableHDR: ARView.RenderOptions
 ```
 
-#### Discussion
+## Discussion
 
 RealityKit applies a high dynamic range effect, along with tone mapping, as a post-processing step in the GPU during the render. This effect is computationally inexpensive, but you can add the [`disableHDR`](./disablehdr.md) option to the view’s [`renderOptions`](../renderoptions-swift.property.md) set to turn the effect off, if needed. Disabling the effect is most useful on older devices, like those with an A9 processor or earlier.
 

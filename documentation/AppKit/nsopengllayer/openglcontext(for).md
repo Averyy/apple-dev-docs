@@ -21,7 +21,7 @@ func openGLContext(for pixelFormat: NSOpenGLPixelFormat) -> NSOpenGLContext
 - (NSOpenGLContext *) openGLContextForPixelFormat:(NSOpenGLPixelFormat *) pixelFormat;
 ```
 
-#### Return Value
+## Return Value
 
 An autoreleased [`NSOpenGLContext`](../nsopenglcontext.md).
 

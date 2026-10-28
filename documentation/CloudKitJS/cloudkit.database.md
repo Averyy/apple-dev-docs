@@ -15,7 +15,7 @@ A [`CloudKit.Database`](./cloudkit.database.md) object represents a public or pr
 interface CloudKit.Database
 ```
 
-#### Overview
+## Overview
 
 Each container has a public database whose data is accessible to all users and, if the current user is signed in, a private database whose data is accessible only by the current user. A database object applies operations to records, subscriptions, and zones within a database.
 
@@ -33,7 +33,7 @@ The asynchronous methods in this class return a `Promise` object that resolves w
 
 This class is similar to the [`CKDatabase`](../CloudKit/ckdatabase.md) class in the CloudKit framework.
 
-##### Creating Your Schema
+### Creating Your Schema
 
 Before you can access records, you must create a schema from your native app using just-in-time schema (see [Creating a Database Schema by Saving Records](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/CreatingaSchemabySavingRecords/CreatingaSchemabySavingRecords.html#//apple_ref/doc/uid/TP40014987-CH3)) or using CloudKit Dashboard (see [Using CloudKit Dashboard to Manage Databases](https://developer.apple.com/library/archive/documentation/DataManagement/Conceptual/CloudKitQuickStart/EditingSchemesUsingCloudKitDashboard/EditingSchemesUsingCloudKitDashboard.html#//apple_ref/doc/uid/TP40014987-CH5)). Use CloudKit Dashboard to verify that the record types and fields appear in your app’s containers before you test your JavaScript code.
 

@@ -20,7 +20,7 @@ func startAnimatingWithImages(in imageRange: NSRange, duration: TimeInterval, re
 - (void) startAnimatingWithImagesInRange:(NSRange) imageRange duration:(NSTimeInterval) duration repeatCount:(NSInteger) repeatCount;
 ```
 
-#### Discussion
+## Discussion
 
 This method animates a subset of the images associated with the current image interface object. This method starts the animation from the first image in the specified range.
 

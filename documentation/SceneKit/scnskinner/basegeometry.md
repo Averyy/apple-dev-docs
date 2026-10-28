@@ -25,7 +25,7 @@ var baseGeometry: SCNGeometry? { get set }
 @property (nonatomic, retain, nullable) SCNGeometry * baseGeometry;
 ```
 
-#### Discussion
+## Discussion
 
 Use this property to:
 

@@ -22,7 +22,7 @@ let kVTCompressionPropertyKey_VBVBufferDuration: CFString
 extern CFStringRef const kVTCompressionPropertyKey_VBVBufferDuration;
 ```
 
-#### Discussion
+## Discussion
 
 Capacity of the video buffering verifier (VBV) model in seconds.
 

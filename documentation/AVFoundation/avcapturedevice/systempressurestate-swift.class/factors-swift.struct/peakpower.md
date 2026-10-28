@@ -23,7 +23,7 @@ static var peakPower: AVCaptureDevice.SystemPressureState.Factors { get }
 AVCaptureSystemPressureFactorPeakPower
 ```
 
-#### Discussion
+## Discussion
 
 Devices with chemically aged batteries are less able to respond to rapid increases in total power usage (CPU and GPU usage, I/O, camera systems, radios, etc). When a device detects such conditions, the system may limit capture sperformance to prevent an unexpected device shutdown.
 

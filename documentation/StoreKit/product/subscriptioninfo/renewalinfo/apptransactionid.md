@@ -22,7 +22,7 @@ The unique identifier of the app download transaction.
 var appTransactionID: String { get }
 ```
 
-#### Discussion
+## Discussion
 
 The App Store server APIs and StoreKit provide this value in several APIs. For more information, see [`appTransactionID`](../../../apptransaction/apptransactionid.md) in [`AppTransaction`](../../../apptransaction.md).
 

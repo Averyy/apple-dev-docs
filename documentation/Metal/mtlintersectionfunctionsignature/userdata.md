@@ -22,7 +22,7 @@ static var userData: MTLIntersectionFunctionSignature { get }
 MTLIntersectionFunctionSignatureUserData
 ```
 
-#### Discussion
+## Discussion
 
 The intersection function uses the intersection function buffer user_data pointer
 

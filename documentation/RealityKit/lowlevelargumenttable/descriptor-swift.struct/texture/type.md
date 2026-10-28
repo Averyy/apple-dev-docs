@@ -18,7 +18,7 @@ The texture type expected at this slot.
 var type: MTLTextureType { get set }
 ```
 
-#### Discussion
+## Discussion
 
 Corresponds to `MTLTextureType`.
 

@@ -24,7 +24,7 @@ var kAudioFileStreamProperty_PacketTableInfo: AudioFileStreamPropertyID { get }
 kAudioFileStreamProperty_PacketTableInfo
 ```
 
-#### Discussion
+## Discussion
 
 An `AudioFilePacketTableInfo` structure. For more information on the audio file packet table info structure, see [Audio File Services](./audio-file-services.md).
 

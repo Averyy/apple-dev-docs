@@ -24,7 +24,7 @@ weak var view: SKView? { get }
 @property (nonatomic, weak, readonly, nullable) SKView * view;
 ```
 
-#### Discussion
+## Discussion
 
 To present a scene, you call the [`presentScene(_:)`](../skview/presentscene%28_%29.md) method or [`presentScene(_:transition:)`](../skview/presentscene%28_,transition%29.md) method on the [`SKView`](../skview.md) class. If the scene is not currently presented, this property holds `nil`.
 

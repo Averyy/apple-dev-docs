@@ -23,7 +23,7 @@ optional func scrollViewDidScroll(_ scrollView: UIScrollView)
 - (void) scrollViewDidScroll:(UIScrollView *) scrollView;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate typically implements this method to obtain the change in content offset from `scrollView` and draw the affected portion of the content view.
 

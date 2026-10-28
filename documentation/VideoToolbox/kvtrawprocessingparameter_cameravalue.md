@@ -15,7 +15,7 @@ The value corresponding to this key is the “As Shot” value for this paramete
 extern CFStringRef const kVTRAWProcessingParameter_CameraValue;
 ```
 
-#### Discussion
+## Discussion
 
 For List types, this is the ListElementID for the List element.
 

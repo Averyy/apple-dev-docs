@@ -19,7 +19,7 @@ var highlightedItem: NSMenuItem? { get }
 @property (strong, readonly, nullable) NSMenuItem * highlightedItem;
 ```
 
-#### Discussion
+## Discussion
 
 This property indicates the currently highlighted item in the menu. If no menu is highlighted, this property has a value of `nil`.
 

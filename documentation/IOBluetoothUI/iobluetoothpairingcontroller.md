@@ -19,7 +19,7 @@ class IOBluetoothPairingController
 @interface IOBluetoothPairingController : NSWindowController
 ```
 
-#### Overview
+## Overview
 
 Implementation of a window controller to handle pairing with a bluetooth device. This class will handle connecting to the Bluetooth Daemon for the purposes of searches, and displaying the results. When necessary this class will display a sheet asking the user for a PIN code. This window will not return anything to the caller if it is canceled or if pairing occurs.
 

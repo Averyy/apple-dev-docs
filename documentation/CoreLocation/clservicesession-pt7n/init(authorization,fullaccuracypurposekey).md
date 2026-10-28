@@ -20,7 +20,7 @@ Creates a services session by using the authorization mode and purpose key you s
 init(authorization: CLServiceSession.AuthorizationRequirement, fullAccuracyPurposeKey: String)
 ```
 
-#### Discussion
+## Discussion
 
 Passing `.none` for authorization requirement and omitting any accuracy requirement creates a session object that doesn’t request a person’s authorization to access Location Services, but the object meets a requested Explicit Service Session requirement if the framework has already has authorization.
 

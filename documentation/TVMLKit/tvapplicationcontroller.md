@@ -25,7 +25,7 @@ class TVApplicationController
 
 - [Creating TVML Elements](./creating-tvml-elements.md)
 
-#### Overview
+## Overview
 
 The `TVApplicationController` class establishes the JavaScript environment and provides a centralized point of control and coordination between the JavaScript environment and tvOS.
 

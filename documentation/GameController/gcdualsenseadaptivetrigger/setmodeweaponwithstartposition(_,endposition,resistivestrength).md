@@ -24,7 +24,7 @@ func setModeWeaponWithStartPosition(_ startPosition: Float, endPosition: Float, 
 - (void) setModeWeaponWithStartPosition:(float) startPosition endPosition:(float) endPosition resistiveStrength:(float) resistiveStrength;
 ```
 
-#### Discussion
+## Discussion
 
 When the user depresses the trigger beyond the value of the end position, it stops providing feedback, giving the user a sense of release, similar to pulling a weapon trigger.
 

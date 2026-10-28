@@ -13,7 +13,7 @@
 kSCSIDataTransfer_FromInitiatorToTarget = 0x01
 ```
 
-#### Discussion
+## Discussion
 
 Use this for tasks that transfer data from the initiator to the target.
 

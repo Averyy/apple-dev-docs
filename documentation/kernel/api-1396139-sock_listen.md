@@ -13,11 +13,11 @@
 errno_t sock_listen(socket_t so, int backlog);
 ```
 
-#### Return Value
+## Return Value
 
 0 on success otherwise the errno error.
 
-#### Discussion
+## Discussion
 
 Indicate that the socket should start accepting incoming connections. See 'man 2 listen'.
 

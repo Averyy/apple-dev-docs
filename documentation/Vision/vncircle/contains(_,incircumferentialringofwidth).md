@@ -24,7 +24,7 @@ func contains(_ point: VNPoint, inCircumferentialRingOfWidth ringWidth: Double) 
 - (BOOL) containsPoint:(VNPoint *) point inCircumferentialRingOfWidth:(double) ringWidth;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the ring contains the specified point, otherwise [`false`](../../Swift/false.md).
 

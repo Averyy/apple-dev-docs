@@ -19,7 +19,7 @@ class func success(withLocalizedDescription localizedDescription: String) -> MEA
 + (MEAddressAnnotation *) successWithLocalizedDescription:(NSString *) localizedDescription;
 ```
 
-#### Return Value
+## Return Value
 
 An annotation that indicates an email address is valid.
 

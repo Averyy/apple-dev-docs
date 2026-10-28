@@ -17,7 +17,7 @@ Call the embedding layer as a linear layer.
 override func asLinear(_ x: MLXArray) -> MLXArray
 ```
 
-#### Discussion
+## Discussion
 
 Use this for example when input embedding and output projection weights are tied.
 

@@ -13,7 +13,7 @@
 #define kIOPropertyPhysicalInterconnectTypeATA
 ```
 
-#### Discussion
+## Discussion
 
 This key defines the value of ATA for the key kIOPropertyPhysicalInterconnectTypeKey. If the device is connected to an ATA bus, this key should be set.
 

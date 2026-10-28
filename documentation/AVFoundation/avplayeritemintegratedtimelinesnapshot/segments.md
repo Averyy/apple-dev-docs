@@ -25,7 +25,7 @@ var segments: [AVPlayerItemSegment] { get }
 @property (readonly) NSArray<AVPlayerItemSegment *> * segments;
 ```
 
-#### Discussion
+## Discussion
 
 The system presents segments in chronological order, contiguous from the previous element, and non-overlapping.
 

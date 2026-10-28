@@ -4,7 +4,7 @@
 
 Displays information for a group of related media items.
 
-#### Overview
+## Overview
 
 Use the `productBundleTemplate` element to display detailed information about a product bundle, such as a page that describes a television series, including information about the actors, ratings, and series episodes. The top two-thirds of the screen displays general information about the product. The shelf at the bottom provides a row of related items, such as episodes of the show. A user can scroll down and access detailed information about the product, such as critical reviews, actor biographies, and information about any included extras.
 
@@ -14,7 +14,7 @@ The following figure shows the basic layout for a `productBundleTemplate` page.
 
 ![Layout diagram showing a stack area on the left side of the screen and a banner area on the right. A shelf area is at the bottom of the screen. A second shelf area is shown as being off the bottom of the screen.](https://developer.apple.com/tutorials/images/com.apple.TVML/productbundletemplate-1@2x.png)
 
-##### Main Elements
+### Main Elements
 
 The following listing shows the main elements of the `productBundleTemplate` element in TVML format.
 
@@ -49,7 +49,7 @@ The following listing shows the main elements of the `productBundleTemplate` ele
 </document>
 ```
 
-###### Element Descriptions
+#### Element Descriptions
 
 - **[background](./background.md)**: Images or audio to be presented in the background.
 - **[banner](./banner.md)**: Element containing various elements that provide primary information about the product, such as a TV show title and episode title, description, and buttons for purchasing or previewing.
@@ -64,7 +64,7 @@ The following listing shows the main elements of the `productBundleTemplate` ele
 - **[text](./text.md)**: The text used to describe the surrounding elements.
 - **[title](./title.md)**: The title describing its containing element.
 
-##### Example
+### Example
 
 The following listing shows the TVML for a `productBundleTemplate` example.
 

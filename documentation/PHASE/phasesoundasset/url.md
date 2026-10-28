@@ -24,7 +24,7 @@ var url: URL? { get }
 @property (readonly, nullable) NSURL * url;
 ```
 
-#### Discussion
+## Discussion
 
 This property has a value when an app creates the asset with [`registerSoundAsset(url:identifier:assetType:channelLayout:normalizationMode:)`](../phaseassetregistry/registersoundasset%28url,identifier,assettype,channellayout,normalizationmode%29.md); otherwise the value is `nil`.
 

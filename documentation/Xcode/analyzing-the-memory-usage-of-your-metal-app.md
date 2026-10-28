@@ -5,11 +5,11 @@
 
 Keep your app alive in the background by managing its memory footprint.
 
-#### Overview
+## Overview
 
 Instruments provides the Game Memory template to help you understand the memory growth in your Metal app. Keeping a small memory footprint allows the system to keep the app alive in the background longer, especially on devices with more constrained memory capacity. For more information, see [Profile and optimize your game’s memory](https://developer.apple.com/videos/play/wwdc2022/10106/).
 
-##### Open the Game Memory template
+### Open the Game Memory template
 
 Start the memory analysis from your Xcode project by choosing Product > Profile, or by pressing Command-I. Alternatively, you can launch Instruments and then select the process from the drop-down list.
 
@@ -17,7 +17,7 @@ In the Template Selection window, select Game Memory.
 
 ![A screenshot of the Template Selection window with the Game Memory template selected.](https://developer.apple.com/tutorials/images/com.apple.Xcode/gputools-instruments-game-memory-choose-template@2x.png)
 
-##### Get to know the instruments
+### Get to know the instruments
 
 - **Allocations**: Analyzes the memory life cycle of a process’s allocated blocks, and can record reference-counting events.
 - **Metal Resource Events**: Records Metal GPU resource allocations, such as textures and buffers.
@@ -26,7 +26,7 @@ In the Template Selection window, select Game Memory.
 - **Metal Application**: Records Metal app events.
 - **GPU**: Records GPU events.
 
-##### Record an Instruments capture
+### Record an Instruments capture
 
 Begin collecting the data by clicking the Record button.
 
@@ -34,7 +34,7 @@ Begin collecting the data by clicking the Record button.
 
 Within your app, perform the actions that reproduce the memory problem, and then click the Record button to stop recording.
 
-##### Analyze your app’s memory allocations
+### Analyze your app’s memory allocations
 
 The Game Memory template shows both memory allocations and memory footprint.
 
@@ -64,7 +64,7 @@ After selecting a category, you can sort the table by the Size column to find th
 
 You can also select an allocation in the list to view its description and stack trace in the inspector on the right.
 
-##### Analyze Metal resource allocations
+### Analyze Metal resource allocations
 
 The Metal Resource Events track displays a history of all Metal-specific resource allocations and deallocations, along with their labels (see [Naming resources and commands](./naming-resources-and-commands.md)).
 
@@ -72,7 +72,7 @@ The Metal Resource Events track displays a history of all Metal-specific resourc
 
 The Resource Events view in the bottom detail area lists the resource allocation and deallocation events. It includes events from created or destroyed resources in the selected time range. Not all resources in the list persisted until the end of the time range.
 
-##### Analyze your app’s total virtual memory footprint
+### Analyze your app’s total virtual memory footprint
 
 The Allocations track and the Metal Resource Events track both highlight memory allocations. However, allocations don’t always translate to memory footprint. The VM Tracker track shows the noncompressed and compressed/swapped dirty memory that together make up your app’s memory footprint.
 

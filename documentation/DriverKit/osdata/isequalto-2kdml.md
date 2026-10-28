@@ -18,11 +18,11 @@ Compares the data with an OSData
 bool isEqualTo(const OSData *aDataObj) const;
 ```
 
-#### Return Value
+## Return Value
 
 True iff the object is of class OSArray and isEqualTo(const OSArray * anArray) returns true.
 
-#### Discussion
+## Discussion
 
 If the passed OSData object has the same length and all bytes are identical, true is returned. Otherwise false is returned.
 

@@ -22,7 +22,7 @@ static let print: UIActivity.ActivityType
 extern UIActivityType const UIActivityTypePrint;
 ```
 
-#### Discussion
+## Discussion
 
 When using this service, you can provide [`UIImage`](../../uiimage.md) and [`NSData`](../../../Foundation/nsdata.md) objects and [`NSURL`](../../../Foundation/nsurl.md) objects pointing to local files as data for the activity items. You can also provide [`UIPrintPageRenderer`](../../uiprintpagerenderer.md), [`UIPrintFormatter`](../../uiprintformatter.md), and [`UIPrintInfo`](../../uiprintinfo.md) objects.
 

@@ -12,19 +12,19 @@ Computation in `MLX` is lazy.  Understand when the graph is evaluated.
 
 See also [mlx python docs](https://ml-explore.github.io/mlx/build/html/usage/lazy_evaluation.html).
 
-#### Why Lazy Evaluation
+## Why Lazy Evaluation
 
 When you perform operations in MLX, no computation actually happens. Instead a compute graph is recorded. The actual computation only happens if an [`eval(_:)`](./eval%28_%29-45gpq.md) is performed or an implicit eval is triggered.
 
 MLX uses lazy evaluation because it has some nice features, some of which we describe below.
 
-##### Transforming Compute Graphs
+### Transforming Compute Graphs
 
 Lazy evaluation lets us record a compute graph without actually doing any computations. This is useful for function transformations like `grad` and `vmap` and graph optimizations like `simplify`.
 
 Currently, MLX does not compile and rerun compute graphs. They are all generated dynamically. However, lazy evaluation makes it much easier to integrate compilation for future performance enhancements.
 
-##### Only Compute What You Use
+### Only Compute What You Use
 
 In MLX you do not need to worry as much about computing outputs that are never used. For example:
 
@@ -53,7 +53,7 @@ let weights = loadArrays(url: url)
 model.update(parameters: weights)
 ```
 
-#### When to Evaluate
+## When to Evaluate
 
 A common question is when to use [`eval(_:)`](./eval%28_%29-45gpq.md). The trade-off is between letting graphs get too large and not batching enough useful work.
 

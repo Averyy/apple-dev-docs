@@ -5,13 +5,13 @@
 
 Create and evaluate digital signatures to establish the validity of code or data.
 
-#### Overview
+## Overview
 
 You create a cryptographic signature on a block of data by first creating a hash of the data and then encrypting this digest with your private key. A recipient uses your public key to decrypt the signature, while independently re-creating the hash of the original data. If the decrypted hash and the computed one match, the recipient can be sure the data is from the owner of the private key that corresponds to the public key.
 
 Often, you sign a block of data as a side effect of performing some other operation. For example, as a final step in distributing your app, Xcode signs the code on your behalf using one of your cryptographic identities (see [Code Signing Guide](https://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40005929)). When you want to sign or verify a block of data in your app, you use functions provided by the certificate, key, and trust services API.
 
-##### Get Your Private Key
+### Get Your Private Key
 
 Begin by getting your private key, as described in [Getting an Existing Key](./getting-an-existing-key.md), either from the keychain or from an identity (which itself probably resides in the keychain). Then, select one of the signing algorithms. For example:
 
@@ -90,7 +90,7 @@ if (canSign) {
 
 If something goes wrong, the function returns a `nil` signature and populates the error reference with a [`CFError`](../CoreFoundation/cferror.md) object that explains the failure. In Objective-C, you transfer management of the error object, if it exists, to Automatic Reference Counting (ARC). In Swift, you transfer control of this unmanaged object’s memory to the system with a call to [`takeRetainedValue()`](../Swift/unmanaged/takeretainedvalue%28%29.md) and recast as an [`Error`](../Swift/error.md).
 
-##### Transmit the Data
+### Transmit the Data
 
 After you successfully generate a signature, you transmit the data and signature to any interested party. Using your public key, the recipient then verifies the signature by performing a set of operations that resemble the signing process. As the receiver, you first retrieve the public key, possibly from a certificate, as described in [Getting an Existing Key](./getting-an-existing-key.md). Then, using the same algorithm as was used for signing, you test that the key and algorithm are mutually compatible with the verification operation:
 

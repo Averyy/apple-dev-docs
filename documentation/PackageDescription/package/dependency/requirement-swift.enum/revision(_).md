@@ -15,7 +15,7 @@ Returns a requirement for a source control revision such as the hash of a commit
 static func revision(_ ref: String) -> Package.Dependency.Requirement
 ```
 
-#### Discussion
+## Discussion
 
 Note that packages that use commit-based dependency requirements can’t be depended upon by packages that use version-based dependency requirements; you should remove commit-based dependency requirements before publishing a version of your package.
 

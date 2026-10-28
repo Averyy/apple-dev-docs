@@ -17,7 +17,7 @@ typedef struct SCSICmd_INQUIRY_StandardDataAll {
 } SCSICmd_INQUIRY_StandardDataAll;
 ```
 
-#### Overview
+## Overview
 
 This structure defines the all of the fields that can be returned in repsonse to the INQUIRy request for the standard data. There is no requirement as to how much of the additional data must be returned by a device.
 

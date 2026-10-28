@@ -16,7 +16,7 @@ An action that presents the settings scene for an app.
 @preconcurrency struct OpenSettingsAction
 ```
 
-#### Overview
+## Overview
 
 Use the [`openSettings`](./environmentvalues/opensettings.md) environment value to get the instance of this structure for a given [`Environment`](./environment.md). Then call the instance to open a window. You call the instance directly because it defines a [`callAsFunction()`](./opensettingsaction/callasfunction%28%29.md) method that Swift calls when you call the instance.
 

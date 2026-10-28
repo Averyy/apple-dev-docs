@@ -23,7 +23,7 @@ func MIDIDeviceGetEntity(_ device: MIDIDeviceRef, _ entityIndex0: Int) -> MIDIEn
 extern MIDIEntityRef MIDIDeviceGetEntity(MIDIDeviceRef device, ItemCount entityIndex0);
 ```
 
-#### Return Value
+## Return Value
 
 An entity reference, or `NULL` if an error occurred.
 

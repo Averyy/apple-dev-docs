@@ -23,7 +23,7 @@ var acceptor_address: gss_buffer_desc
 gss_buffer_desc acceptor_address;
 ```
 
-#### Discussion
+## Discussion
 
 If the specified address family has more than one format, the address itself should contain enough information to distinguish among them.
 

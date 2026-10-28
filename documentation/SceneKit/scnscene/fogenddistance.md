@@ -25,7 +25,7 @@ var fogEndDistance: CGFloat { get set }
 @property (nonatomic) CGFloat fogEndDistance;
 ```
 
-#### Discussion
+## Discussion
 
 A fog effect causes scene contents to become less visible the farther they are from the [`pointOfView`](../scnscenerenderer/pointofview.md) node currently used for rendering. At distances less than the value of the [`fogStartDistance`](./fogstartdistance.md) property, scene contents are fully visible. At greater distances, SceneKit blends the rendered scene contents with a constant color (specified by the [`fogColor`](./fogcolor.md) property). At distances greater than the [`fogEndDistance`](./fogenddistance.md) property, the scene contents fade away completely and only the fog color is visible. Use fog to add atmospheric effects to your app or game, or to improve rendering performance by hiding parts of the scene that are far away from the current point of view.
 

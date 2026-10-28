@@ -20,7 +20,7 @@ An image-analysis request that finds regions of visible text in an image.
 struct DetectTextRectanglesRequest
 ```
 
-#### Overview
+## Overview
 
 This request generates a collection of [`TextObservation`](./textobservation.md) objects that describe each text region the request detects.
 

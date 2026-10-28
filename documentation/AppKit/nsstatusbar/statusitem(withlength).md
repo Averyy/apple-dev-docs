@@ -19,11 +19,11 @@ func statusItem(withLength length: CGFloat) -> NSStatusItem
 - (NSStatusItem *) statusItemWithLength:(CGFloat) length;
 ```
 
-#### Return Value
+## Return Value
 
 An [`NSStatusItem`](../nsstatusitem.md) object.
 
-#### Discussion
+## Discussion
 
 The receiver does not retain a reference to the status item, so you need to retain it. Otherwise, the object is removed from the status bar when it is deallocated.
 

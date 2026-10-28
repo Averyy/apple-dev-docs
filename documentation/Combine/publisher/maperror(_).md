@@ -21,11 +21,11 @@ Converts any failure from the upstream publisher into a new error.
 func mapError<E>(_ transform: @escaping (Self.Failure) -> E) -> Publishers.MapError<Self, E> where E : Error
 ```
 
-#### Return Value
+## Return Value
 
 A publisher that replaces any upstream failure with a new error produced by the `transform` closure.
 
-#### Discussion
+## Discussion
 
 Use the [`mapError(_:)`](./maperror%28_%29.md) operator when you need to replace one error type with another, or where a downstream operator needs the error types of its inputs to match.
 

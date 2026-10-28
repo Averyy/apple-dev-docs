@@ -15,7 +15,7 @@ A property of IOMedia objects.
 #define kIOMediaRemovableKey
 ```
 
-#### Discussion
+## Discussion
 
 The kIOMediaRemovableKey property has an OSBoolean value and describes whether the media is removable from the drive mechanism.
 

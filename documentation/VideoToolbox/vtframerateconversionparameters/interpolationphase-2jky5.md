@@ -18,7 +18,7 @@ An array of floating-point values that indicate which intervals to insert a fram
 var interpolationPhase: [Float] { get }
 ```
 
-#### Discussion
+## Discussion
 
 Array size indicates how many frames are needed to interpolate and needs to match destinationFrames array size, where there is one interval for each destination frame. Float number values should be between 0 and 1, e.g. to insert one frame in the middle, a value of 0.5 can be used.
 

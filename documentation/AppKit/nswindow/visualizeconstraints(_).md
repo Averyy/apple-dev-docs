@@ -19,7 +19,7 @@ func visualizeConstraints(_ constraints: [NSLayoutConstraint]?)
 - (void) visualizeConstraints:(NSArray<NSLayoutConstraint *> *) constraints;
 ```
 
-#### Discussion
+## Discussion
 
 The constraints to visualize are typically discovered by identifying a view whose layout is unexpected and then calling [`constraintsAffectingLayout(for:)`](../nsview/constraintsaffectinglayout%28for%29.md) on that view.
 

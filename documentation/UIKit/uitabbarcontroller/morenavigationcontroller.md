@@ -21,7 +21,7 @@ var moreNavigationController: UINavigationController { get }
 @property (nonatomic, readonly) UINavigationController * moreNavigationController;
 ```
 
-#### Discussion
+## Discussion
 
 This property always contains a valid More navigation controller, even if a More button is not displayed on the screen. You can use the value of this property to select the More navigation controller in the tab bar interface or to compare it against the currently selected view controller.
 

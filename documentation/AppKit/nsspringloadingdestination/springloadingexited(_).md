@@ -20,7 +20,7 @@ optional func springLoadingExited(_ draggingInfo: any NSDraggingInfo)
 - (void) springLoadingExited:(id<NSDraggingInfo>) draggingInfo;
 ```
 
-#### Discussion
+## Discussion
 
 This method is called when a drag exits the bounds of a spring-loaded destination.
 

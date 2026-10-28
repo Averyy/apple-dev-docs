@@ -20,7 +20,7 @@ struct es_thread_state_t
 typedef struct { ... } es_thread_state_t;
 ```
 
-#### Overview
+## Overview
 
 To work with thread state, see the definitions in the include file `mach/thread_status.h` and corresponding machine-dependent headers.
 

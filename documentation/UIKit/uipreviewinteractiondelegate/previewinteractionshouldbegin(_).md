@@ -22,11 +22,11 @@ optional func previewInteractionShouldBegin(_ previewInteraction: UIPreviewInter
 - (BOOL) previewInteractionShouldBegin:(UIPreviewInteraction *) previewInteraction;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if the preview interaction should continue into the preview and commit phases; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 If you don’t implement this optional method, the default return value of [`true`](../../Swift/true.md) is assumed.
 

@@ -25,7 +25,7 @@ func CVBufferRemoveAttachment(_ buffer: CVBuffer, _ key: CFString)
 extern void CVBufferRemoveAttachment(CVBufferRef buffer, CFStringRef key);
 ```
 
-#### Discussion
+## Discussion
 
 If the attachment exists in the buffer, the system removes it and decrements the retain count.
 

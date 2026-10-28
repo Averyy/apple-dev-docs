@@ -16,7 +16,7 @@ The session’s presentment intent assertion timed out.
 case presentmentIntentAssertionTimeout
 ```
 
-#### Discussion
+## Discussion
 
 A [`CredentialSession.PresentmentIntentAssertion`](../presentmentintentassertion.md) granted by a credential session lasts for 60 seconds. If it expires, your app needs to request a new one with [`acquirePresentmentAssertion()`](../acquirepresentmentassertion%28%29.md).
 

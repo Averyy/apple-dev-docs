@@ -27,7 +27,7 @@ var includeAllNetworks: Bool { get set }
 
 - [Routing your VPN network traffic](../routing-your-vpn-network-traffic.md)
 
-#### Discussion
+## Discussion
 
 If this property is [`true`](../../Swift/true.md), the system routes network traffic through the tunnel except traffic for designated system services necessary for maintaining expected device functionality.
 

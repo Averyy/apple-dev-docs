@@ -20,7 +20,7 @@ var placeholderAttributedString: NSAttributedString? { get set }
 @property (copy, nullable) NSAttributedString * placeholderAttributedString;
 ```
 
-#### Discussion
+## Discussion
 
 If the `NSPathCell` object contains no `NSPathComponentCell` objects, the placeholder attributed string is drawn in their place, if it is not `nil`. If the placeholder attributed string is `nil`, the (non-attributed) placeholder string is drawn with default attributes, if it is not `nil`.
 

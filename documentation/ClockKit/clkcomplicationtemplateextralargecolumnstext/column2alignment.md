@@ -21,7 +21,7 @@ var column2Alignment: CLKComplicationColumnAlignment { get set }
 @property (nonatomic) CLKComplicationColumnAlignment column2Alignment;
 ```
 
-#### Discussion
+## Discussion
 
 This alignment value applies to the text in column two of all rows.
 

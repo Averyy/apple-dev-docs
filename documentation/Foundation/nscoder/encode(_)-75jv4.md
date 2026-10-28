@@ -20,7 +20,7 @@ func encode(_ point: NSPoint)
 - (void) encodePoint:(NSPoint) point;
 ```
 
-#### Discussion
+## Discussion
 
 `NSCoder`’s implementation invokes [`encodeValue(ofObjCType:at:)`](./encodevalue%28ofobjctype,at%29.md) to encode `point`.
 

@@ -5,7 +5,7 @@
 
 Group your widget’s background views and mark them as removable to ensure your widget appears correctly for each context and platform.
 
-#### Overview
+## Overview
 
 Widgets appear differently based on their context, including their background view, for example:
 
@@ -51,13 +51,13 @@ On Apple Watch, rectangular widgets in the Smart Stack use a default dark materi
 
 To detect whether a widget appears with or without a background, use the [`showsWidgetContainerBackground`](../SwiftUI/environmentvalues/showswidgetcontainerbackground.md) environment variable.
 
-##### Explicitly opt out of background removal
+### Explicitly opt out of background removal
 
 Some widgets don’t have distinct foreground content, and background removal can negatively impact their functionality. For example, a widget might display a photo or map that takes up the entirety of the widget’s bounds. Removing the photo or map removes the functionality of the widget. If this case applies to your widget, set the [`containerBackgroundRemovable(_:)`](../SwiftUI/widgetconfiguration/containerbackgroundremovable%28_%29.md) modifier to `false` for your widget configuration.
 
 > ❗ **Important**: Marking a background as nonremovable excludes your widget from the widget gallery in contexts that require a removable background; for example, on the iPad Lock Screen and in StandBy.
 
-##### Set the background color of accessory widgets
+### Set the background color of accessory widgets
 
 Depending on your accessory widget or complication, you may need to set a consistent background for your accessory widget. Use [`AccessoryWidgetBackground`](./accessorywidgetbackground.md) to draw a consistent background for your widget, as shown in the following example. It creates a view that’s similar to the circular Lock Screen widget that the Calendar app offers:
 

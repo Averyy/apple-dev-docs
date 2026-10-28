@@ -33,7 +33,7 @@ func sendExchange(to participants: [GKTurnBasedParticipant], data: Data, localiz
 
 - [Exchanging data between players in turn-based games](../exchanging-data-between-players-in-turn-based-games.md)
 
-#### Discussion
+## Discussion
 
 If your game isn’t running or is in the background on recipient devices, a notification containing the localized message you pass to this method appears. When the participant taps or clicks the notification, GameKit launches or brings the game to the foreground and then invokes the [`player(_:receivedExchangeRequest:for:)`](../gkturnbasedeventlistener/player%28_,receivedexchangerequest,for%29.md) method.
 

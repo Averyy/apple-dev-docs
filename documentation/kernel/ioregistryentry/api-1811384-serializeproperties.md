@@ -12,11 +12,11 @@ virtual bool serializeProperties(
  OSSerialize *serialize ) const;
 ```
 
-#### Return Value
+## Return Value
 
 True on success, false otherwise.
 
-#### Overview
+## Overview
 
 This method will serialize a registry entry's property table, using the OSDictionary::serialize semantics. This method is synchronized with other IORegistryEntry accesses to the property table. Many non-kernel clients of IOKit read information from the registry via properties, and will invoke this method in a registry entry to create a serialization of all the entry's properties, which is then reconstructed in the client's task as a CFDictionary. This method may be intercepted by subclasses to update their properties or implement a different serialization method, though it is usually better to implement such functionality by creating objects in the property table and implementing their serialize methods, avoiding any need to implement serializeProperties.
 

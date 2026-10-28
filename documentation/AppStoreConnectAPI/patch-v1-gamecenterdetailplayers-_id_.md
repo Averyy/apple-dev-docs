@@ -13,7 +13,7 @@ Block or unblock a player for a game.
 
 - [App Store Connect API 4.5 release notes](./app-store-connect-api-4-5-release-notes.md)
 
-#### Overview
+## Overview
 
 > 💡 **Tip**:  These endpoints require information from GameKit, specifically [`gamePlayerID`](../GameKit/gkplayer/gameplayerid.md).
 

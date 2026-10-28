@@ -25,7 +25,7 @@ func makeComputeCommandEncoder() -> (any MTLComputeCommandEncoder)?
 - (id<MTLComputeCommandEncoder>) computeCommandEncoder;
 ```
 
-#### Discussion
+## Discussion
 
 Use an [`MTLComputeCommandEncoder`](../mtlcomputecommandencoder.md) instance’s methods to set up a single compute pass. The encoder this method returns dispatches its compute commands serially (see [`MTLDispatchType.serial`](../mtldispatchtype/serial.md)). To create a compute command encoder that dispatches commands concurrently (see [`MTLDispatchType.concurrent`](../mtldispatchtype/concurrent.md)), use the [`makeComputeCommandEncoder(dispatchType:)`](./makecomputecommandencoder%28dispatchtype%29.md) or [`makeComputeCommandEncoder(descriptor:)`](./makecomputecommandencoder%28descriptor%29.md) method.
 

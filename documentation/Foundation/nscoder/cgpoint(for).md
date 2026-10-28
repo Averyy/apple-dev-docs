@@ -20,11 +20,11 @@ Returns a Core Graphics point structure corresponding to the data in a given str
 class func cgPoint(for string: String) -> CGPoint
 ```
 
-#### Return Value
+## Return Value
 
 A Core Graphics structure that represents a point. If the string is not well-formed, the function returns [`CGPointZero`](../../CoreGraphics/cgpointzero.md).
 
-#### Discussion
+## Discussion
 
 In general, you should use this function only to convert strings that were previously created using the [`string(for:)`](./string%28for%29-6ix86.md) function.
 

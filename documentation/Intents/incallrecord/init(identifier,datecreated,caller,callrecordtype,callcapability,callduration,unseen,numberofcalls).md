@@ -19,7 +19,7 @@ Creates a call record with the details about the call.
 convenience init(identifier: String, dateCreated: Date? = nil, caller: INPerson? = nil, callRecordType: INCallRecordType = .unknown, callCapability: INCallCapability = .unknown, callDuration: Double? = nil, unseen: Bool? = nil, numberOfCalls: Int? = nil)
 ```
 
-#### Return Value
+## Return Value
 
 An initialized [`INCallRecord`](../incallrecord.md) object or `nil` if the object could not be initialized.
 

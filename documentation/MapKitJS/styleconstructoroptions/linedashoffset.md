@@ -15,7 +15,7 @@ The number of CSS pixels to use as the offset when drawing a line’s dash patte
 lineDashOffset?: number;
 ```
 
-#### Discussion
+## Discussion
 
 This has no effect if you set `lineDash` to draw solid lines by setting this property to an empty array. The default line dash offset is `0`.
 

@@ -17,7 +17,7 @@ case cwReferenceNotBoundErr
 kCWReferenceNotBoundErr
 ```
 
-#### Discussion
+## Discussion
 
 No interface is bound to the CWInterface.
 

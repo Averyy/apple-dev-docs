@@ -23,7 +23,7 @@ init(device: AVCaptureDevice)
 - (instancetype) initWithDevice:(AVCaptureDevice *) device;
 ```
 
-#### Discussion
+## Discussion
 
 You can only create an exposure bias slider with a device that support’s setting its [`exposureTargetBias`](../avcapturedevice/exposuretargetbias.md) property value.
 

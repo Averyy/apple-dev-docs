@@ -22,7 +22,7 @@ func setIndex(_ index: Int, forSubKeyPath subKeyPath: String)
 - (void) setIndex:(NSUInteger) index forSubKeyPath:(NSString *) subKeyPath;
 ```
 
-#### Discussion
+## Discussion
 
 When the key path for a parameter contains an array or ordered set, use this method to specify which object in that array or ordered set to use.
 

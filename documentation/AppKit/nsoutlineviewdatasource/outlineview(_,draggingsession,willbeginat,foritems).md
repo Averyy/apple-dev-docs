@@ -20,7 +20,7 @@ optional func outlineView(_ outlineView: NSOutlineView, draggingSession session:
 - (void) outlineView:(NSOutlineView *) outlineView draggingSession:(NSDraggingSession *) session willBeginAtPoint:(NSPoint) screenPoint forItems:(NSArray *) draggedItems;
 ```
 
-#### Discussion
+## Discussion
 
 The `draggedItems` array directly matches the pasteboard writer array used to begin the dragging session with the `NSView` method [`beginDraggingSession(with:event:source:)`](../nsview/begindraggingsession%28with,event,source%29.md). Hence, the order is deterministic, and can be used in [`outlineView(_:acceptDrop:item:childIndex:)`](./outlineview%28_,acceptdrop,item,childindex%29.md) when enumerating the `NSDraggingInfo` protocol’s pasteboard classes.
 

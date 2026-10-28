@@ -17,7 +17,7 @@ An observer that provides access to the endpoint for a device connected via Mac 
 final class ConnectedSpatialEndpointObserver
 ```
 
-#### Overview
+## Overview
 
 You can choose to discover another device using [`SpatialPreviewDevicePicker`](./spatialpreviewdevicepicker.md).
 

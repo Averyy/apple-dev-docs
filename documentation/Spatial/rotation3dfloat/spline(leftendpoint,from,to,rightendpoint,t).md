@@ -21,11 +21,11 @@ Returns an interpolated value between two rotations along a spherical cubic spli
 static func spline(leftEndpoint r0: Rotation3DFloat, from r1: Rotation3DFloat, to r2: Rotation3DFloat, rightEndpoint r3: Rotation3DFloat, t: Float) -> Rotation3DFloat
 ```
 
-#### Return Value
+## Return Value
 
 A new rotation that’s the interpolated value between the two rotations along a spherical cubic spline.
 
-#### Discussion
+## Discussion
 
 Use this function to smoothly interpolate between a sequence of rotations.
 

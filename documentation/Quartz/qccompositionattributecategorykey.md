@@ -21,7 +21,7 @@ let QCCompositionAttributeCategoryKey: String
 extern NSString * const QCCompositionAttributeCategoryKey;
 ```
 
-#### Discussion
+## Discussion
 
 The associated value is a category constant. See [Composition Categories](./composition-categories.md).
 

@@ -11,7 +11,7 @@ Provides an array containing the properties of a given object.
 propertiesOf(object)
 ```
 
-#### Return Value
+## Return Value
 
 An array with the properties of `object`.
 

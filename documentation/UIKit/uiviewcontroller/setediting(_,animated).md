@@ -23,7 +23,7 @@ func setEditing(_ editing: Bool, animated: Bool)
 - (void) setEditing:(BOOL) editing animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 Subclasses that use an edit-done button must override this method to change their view to an editable state if [`isEditing`](./isediting.md) is [`true`](../../Swift/true.md) and a non-editable state if it is [`false`](../../Swift/false.md). This method should invoke super’s implementation before updating its view.
 

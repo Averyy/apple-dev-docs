@@ -29,7 +29,7 @@ protocol OpenIntent : SystemIntent
 - [Getting started with the App Intents framework](./getting-started-with-the-app-intents-framework.md)
 - [Making app entities available in Spotlight](./making-app-entities-available-in-spotlight.md)
 
-#### Overview
+## Overview
 
 Use this protocol to create an app intent that opens the app and displays a specific item. The [`target`](./openintent/target.md) property contains the item to display and is typically an [`AppEntity`](./appentity.md) or [`AppEnum`](./appenum.md) type you define. For example, Spotlight can populate this property with an entity someone found during a search of your app’s content.
 

@@ -20,7 +20,7 @@ optional func outlineView(_ outlineView: NSOutlineView, sortDescriptorsDidChange
 - (void) outlineView:(NSOutlineView *) outlineView sortDescriptorsDidChange:(NSArray<NSSortDescriptor *> *) oldDescriptors;
 ```
 
-#### Discussion
+## Discussion
 
 The data source typically sorts and reloads the data, and adjusts the selections accordingly. If you need to know the current sort descriptors and the data source does not itself manage them, you can get `outlineView`’s current sort descriptors by sending it a [`sortDescriptors`](../nstableview/sortdescriptors.md) message.
 

@@ -15,13 +15,13 @@ The object for defining the stroke to use for an outline on text.
 object TextStrokeStyle
 ```
 
-#### Discussion
+## Discussion
 
 Use the `TextStrokeStyle` object to define a text outline.
 
 You can use this object in [`TextStyle`](./textstyle.md) and [`ComponentTextStyle`](./componenttextstyle.md).
 
-##### Example
+### Example
 
 ```json
 {

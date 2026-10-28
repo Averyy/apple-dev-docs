@@ -5,7 +5,7 @@
 
 Configure your app to receive location updates when it isn’t running in the foreground.
 
-#### Overview
+## Overview
 
 On some Apple devices, the operating system preserves battery life by suspending the execution of background apps. For example, on iOS, iPadOS, and watchOS, the system suspends the execution of most apps shortly after they move to the background. In this suspended state, apps don’t run and don’t receive location updates from the system. Instead, the system enqueues location updates and delivers them when the app runs again, either in the foreground or background. If your app needs updates in a more timely manner, you can ask the system to not suspend your app while location services are active.
 
@@ -18,13 +18,13 @@ Consider carefully whether your app really needs background location updates. Mo
 
 If you need background location updates for an iOS, iPadOS, or watchOS app, update your project to support those updates. On macOS, you don’t need to add support for background updates because the system doesn’t suspend apps when they move to the background. Apps running in visionOS don’t receive background updates.
 
-##### Add the background mode capability
+### Add the background mode capability
 
 The background mode capability lets the system know whether your app uses background updates. To add this capability, navigate to the Signing & Capabilities tab of your app target and enable the Location updates option. When you enable this capability, Xcode updates your app’s `Info.plist` file with the keys needed to indicate your app supports background updates.
 
 ![The capabilities pane in Xcode shows the Background Modes capability with the Location updates option selected.](https://developer.apple.com/tutorials/images/com.apple.corelocation/media-4061646@2x.png)
 
-##### Receive location updates in the background
+### Receive location updates in the background
 
 Create an instance of [`CLBackgroundActivitySession`](./clbackgroundactivitysession-3mzv3.md) to start a background activity session so that you can receive location updates. It’s your responsibility to communicate that location updates will arrive before going to the background, and handle updates as they arrive.
 
@@ -34,7 +34,7 @@ Core Location sets When in Use authorization implicitly when you process events 
 
 > ❗ **Important**:  For Always authorization, inform the user that location updates arrive in the background. This provides transparency and lets the user know what’s happening.
 
-##### Process location updates after an app launch
+### Process location updates after an app launch
 
 The system can terminate apps at any time to free up memory or other system resources. If your app actively receives and processes location updates and terminates, it should restart those APIs upon launch in order to continue receiving updates. When you start those services, the system resumes the delivery of queued location updates. Don’t start these services at launch time if your app’s authorization status is undetermined.
 

@@ -23,7 +23,7 @@ func setEditing(_ editing: Bool, animated: Bool)
 - (void) setEditing:(BOOL) editing animated:(BOOL) animated;
 ```
 
-#### Discussion
+## Discussion
 
 When you call this method with the value of `editing` set to [`true`](../../Swift/true.md), and the `UITableViewCell` object is configured to have controls, the cell shows an insertion (green plus) or deletion control (red minus) on the left side of each cell and a reordering control on the right side. This method is called on each visible cell when the [`setEditing(_:animated:)`](../uitableview/setediting%28_,animated%29.md) method of `UITableView` is invoked. Calling this method with `editing` set to [`false`](../../Swift/false.md) removes the controls from the cell.
 

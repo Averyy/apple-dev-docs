@@ -24,7 +24,7 @@ static let appleWalkingSteadinessEvent: HKCategoryTypeIdentifier
 extern HKCategoryTypeIdentifier const HKCategoryTypeIdentifierAppleWalkingSteadinessEvent;
 ```
 
-#### Discussion
+## Discussion
 
 Samples of this type use values from the [`HKCategoryValueAppleWalkingSteadinessEvent`](../hkcategoryvalueapplewalkingsteadinessevent.md) enumeration.
 

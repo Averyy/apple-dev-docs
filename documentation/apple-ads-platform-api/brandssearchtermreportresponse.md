@@ -15,13 +15,13 @@ The top-level response envelope for brands search term reports.
 object BrandsSearchTermReportResponse
 ```
 
-#### Discussion
+## Discussion
 
 The `result` field contains a `BrandsSearchTermResultContainer` with the array of search term rows, each capturing the actual user query text and associated `brands` performance metrics.
 
 Like all search term reports, `brands` search term reports require the ORTZ timezone. UTC isn’t supported. Search term entity reports also exclude the `supplyPlacement` and `locationId` dimensions from `groupBy`. The `pagination` field provides the pagination state.
 
-##### Example
+### Example
 
 ```json
 {

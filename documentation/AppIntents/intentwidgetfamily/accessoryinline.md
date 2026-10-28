@@ -20,7 +20,7 @@ A flat widget that contains a single row of text and an optional image.
 case accessoryInline
 ```
 
-#### Discussion
+## Discussion
 
 The accessory inline widget can appear as a complication in watchOS, or on the Lock Screen in iOS. On some watch faces, the system renders the complication along a curve.
 

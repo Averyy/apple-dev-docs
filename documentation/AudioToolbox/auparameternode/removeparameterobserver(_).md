@@ -24,7 +24,7 @@ func removeParameterObserver(_ token: AUParameterObserverToken)
 - (void) removeParameterObserver:(AUParameterObserverToken) token;
 ```
 
-#### Discussion
+## Discussion
 
 This call will remove the callback corresponding to the given token. This operation blocks until any callbacks currently in progress have completed.
 

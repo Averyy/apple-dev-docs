@@ -19,7 +19,7 @@ var servicesMenu: NSMenu? { get set }
 @property (strong, nullable) NSMenu * servicesMenu;
 ```
 
-#### Discussion
+## Discussion
 
 This property contains the app’s Services menu or `nil` if that menu has not been created. You can assign a new value to the property to set the Services menu for your app.
 

@@ -26,11 +26,11 @@ func startWriting() -> Bool
 - (BOOL) startWriting;
 ```
 
-#### Return Value
+## Return Value
 
 [`true`](../../Swift/true.md) if writing starts successfully; otherwise [`false`](../../Swift/false.md).
 
-#### Discussion
+## Discussion
 
 You must call this method after you configure the writer and add its inputs to prepare the object to write data. After you call this method, your app can start writing sessions by calling [`startSession(atSourceTime:)`](./startsession%28atsourcetime%29.md) and can write media samples using the methods that the asset writer’s inputs provide.
 

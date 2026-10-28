@@ -25,7 +25,7 @@ class func sleep(forTimeInterval ti: TimeInterval)
 + (void) sleepForTimeInterval:(NSTimeInterval) ti;
 ```
 
-#### Discussion
+## Discussion
 
 No run loop processing occurs while the thread is blocked.
 

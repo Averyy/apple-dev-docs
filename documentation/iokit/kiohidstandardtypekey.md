@@ -16,7 +16,7 @@ Keys that represent properties of a paticular device.
 #define kIOHIDStandardTypeKey
 ```
 
-#### Discussion
+## Discussion
 
 Keys that represent properties of a paticular device. Can be added to your matching dictionary when refining searches for HID devices.
 

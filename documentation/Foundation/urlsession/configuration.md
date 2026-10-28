@@ -30,7 +30,7 @@ var configuration: URLSessionConfiguration { get }
 
 - [Accessing cached data](../accessing-cached-data.md)
 
-#### Discussion
+## Discussion
 
 Beginning in iOS 9 and OS X 10.11, [`URLSession`](../urlsession.md) objects store a copy of the [`URLSessionConfiguration`](../urlsessionconfiguration.md) object passed to their initializers, such that a session’s configuration is immutable after initialization. Any further changes to mutable properties on the configuration object passed to a session’s initializer or the value returned from a session’s configuration property do not affect the behavior of that session. However, you can create a new session with the modified configuration object.
 

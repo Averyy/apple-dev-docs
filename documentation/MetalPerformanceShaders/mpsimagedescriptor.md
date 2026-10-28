@@ -24,7 +24,7 @@ class MPSImageDescriptor
 @interface MPSImageDescriptor : NSObject
 ```
 
-#### Overview
+## Overview
 
 You use an [`MPSImageDescriptor`](./mpsimagedescriptor.md) to describe and create the properties of an [`MPSImage`](./mpsimage.md) such as its size, pixel format and CPU cache mode.
 

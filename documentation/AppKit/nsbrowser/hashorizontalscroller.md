@@ -19,7 +19,7 @@ var hasHorizontalScroller: Bool { get set }
 @property BOOL hasHorizontalScroller;
 ```
 
-#### Discussion
+## Discussion
 
 When the value of this property is [`true`](../../Swift/true.md), the browser uses an `NSScroller` object to scroll horizontally.
 

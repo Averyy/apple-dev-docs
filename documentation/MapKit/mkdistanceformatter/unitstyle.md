@@ -33,7 +33,7 @@ var unitStyle: MKDistanceFormatter.DistanceUnitStyle { get set }
 @property (atomic, assign) MKDistanceFormatterUnitStyle unitStyle;
 ```
 
-#### Discussion
+## Discussion
 
 You can abbreviate or fully spell out units. The default value of this property is [`MKDistanceFormatter.DistanceUnitStyle.default`](./distanceunitstyle/default.md), which bases the style on the user’s locale and language settings.
 

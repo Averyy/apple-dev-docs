@@ -24,7 +24,7 @@ class var trackingAuthorizationStatus: ATTrackingManager.AuthorizationStatus { g
 @property (class, nonatomic, assign, readonly) ATTrackingManagerAuthorizationStatus trackingAuthorizationStatus;
 ```
 
-#### Discussion
+## Discussion
 
 Check this property to determine whether your app has permission to access app-related data it can use to track a person or device.
 

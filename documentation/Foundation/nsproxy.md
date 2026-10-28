@@ -25,7 +25,7 @@ class NSProxy
 @interface NSProxy
 ```
 
-#### Overview
+## Overview
 
 Typically, a message to a proxy is forwarded to the real object or causes the proxy to load (or transform itself into) the real object. Subclasses of [`NSProxy`](./nsproxy.md) can be used to implement transparent distributed messaging (for example, [`NSDistantObject`](./nsdistantobject.md)) or for lazy instantiation of objects that are expensive to create.
 

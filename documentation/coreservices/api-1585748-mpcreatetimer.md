@@ -15,11 +15,11 @@ Creates a timer.
 OSStatus MPCreateTimer(MPTimerID *timerID);
 ```
 
-#### Return Value
+## Return Value
 
 A result code. See [Result Codes](./carbon_core/multiprocessing_services.md#1663965).
 
-#### Discussion
+## Discussion
 
 You can use a timer to notify an event, queue, or semaphore after a specified amount of time has elapsed. 
 

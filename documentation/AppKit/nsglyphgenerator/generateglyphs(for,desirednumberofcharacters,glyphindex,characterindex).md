@@ -19,7 +19,7 @@ func generateGlyphs(for glyphStorage: any NSGlyphStorage, desiredNumberOfCharact
 - (void) generateGlyphsForGlyphStorage:(id<NSGlyphStorage>) glyphStorage desiredNumberOfCharacters:(NSUInteger) nChars glyphIndex:(NSUInteger *) glyphIndex characterIndex:(NSUInteger *) charIndex;
 ```
 
-#### Discussion
+## Discussion
 
 Generates glyphs for the glyph storage object specified by `glyphStorage`, beginning with the character at `charIndex` and continuing for `nChars` characters. The `glyphIndex` specifies the index of the first glyph generated.
 

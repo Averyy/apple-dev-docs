@@ -25,7 +25,7 @@ static let transcribesSpokenDialogForAccessibility: AVMediaCharacteristic
 extern AVMediaCharacteristic const AVMediaCharacteristicTranscribesSpokenDialogForAccessibility;
 ```
 
-#### Discussion
+## Discussion
 
 Legible media options may include transcriptions of spoken dialog and descriptions of music and sound effects.
 

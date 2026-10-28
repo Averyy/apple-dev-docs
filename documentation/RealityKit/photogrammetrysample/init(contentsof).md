@@ -24,7 +24,7 @@ init(contentsOf url: URL) async throws
 init(contentsOf url: URL) throws
 ```
 
-#### Discussion
+## Discussion
 
 This function is useful for making a capture image inspector or other system that needs to operate in an asynchronous context, such as operating within the main actor.
 

@@ -21,7 +21,7 @@ func accessibilityAttributeValue(_ attribute: NSAccessibility.ParameterizedAttri
 - (id) accessibilityAttributeValue:(NSAccessibilityParameterizedAttributeName) attribute forParameter:(id) parameter;
 ```
 
-#### Discussion
+## Discussion
 
 If you implement this method, also implement [`accessibilityParameterizedAttributeNames()`](./accessibilityparameterizedattributenames%28%29.md).
 

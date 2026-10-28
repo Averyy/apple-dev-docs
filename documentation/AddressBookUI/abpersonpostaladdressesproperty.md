@@ -21,7 +21,7 @@ let ABPersonPostalAddressesProperty: String
 extern NSString * const ABPersonPostalAddressesProperty;
 ```
 
-#### Discussion
+## Discussion
 
 The value is an array of labeled values with postal address values. A postal address has the following properties: `street`, `subLocality`, `city`, `subAdministrativeArea`, `state`, `postalCode`, `country`, and `ISOCountryCode`.
 

@@ -10,7 +10,7 @@ Update the adjustable parameters of a 3D model in visionOS.
 - visionOS 2.0+
 - Xcode 16.0+
 
-#### Overview
+## Overview
 
 This sample app creates and displays a 3D dragon model within visionOS, using Reality Composer Pro. While the sample focuses on modifying the dragon’s adjustable glass material (such as its roughness and refraction), you can also modify the adjustables for other material instances to allow dynamic customization for your visionOS app.
 
@@ -21,7 +21,7 @@ The app splits into two parts in its main view:
 
 ![A screenshot of a visionOS app in Simulator with a translucent window displaying a 3D shape with a glass material, and two sliders on the side to adjust modifiables of the 3D shape.](https://developer.apple.com/tutorials/images/com.apple.visionOS/sample-glass-1-main-view.png)
 
-##### Set up the shader graph
+### Set up the shader graph
 
 The shader graph for the dragon model includes two modifiable parameters: `roughness` and `eta`. These control the model’s surface roughness and refraction, respectively, as the following image shows:
 
@@ -31,7 +31,7 @@ These parameters connect through various nodes, ultimately feeding into a `Reali
 
 > **Note**: The parameter `eta` represents `η`, which symbolizes the index of refraction. For more information, see [`Refract (RealityKit)`](../ShaderGraph/geometric/refract-%28realitykit%29.md).
 
-##### Update the component material
+### Update the component material
 
 To handle updates to the dragon model, the app creates the `updateMaterials(_:)` method, which employs a recursive approach to update all child entities that the parent entity manages. Then the app applies the `update` closure to each material within the component, to update those materials:
 
@@ -58,7 +58,7 @@ extension Entity {
 }
 ```
 
-##### Set up the main view
+### Set up the main view
 
 To control the material properties of the 3D glass model, the app initializes variables for the default roughness value, eta parameter for refraction, and entity instance of the dragon model in the `GlassView` structure:
 

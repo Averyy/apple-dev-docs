@@ -21,7 +21,7 @@ func setNeedsDisplay()
 - (void) setNeedsDisplay;
 ```
 
-#### Discussion
+## Discussion
 
 This method also recalculates the dimensions of the control as needed.
 

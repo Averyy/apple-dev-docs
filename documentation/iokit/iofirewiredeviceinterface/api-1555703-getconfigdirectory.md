@@ -16,7 +16,7 @@ Creates a config directory object and returns an interface to it. The created co
 IOFireWireLibConfigDirectoryRef (*GetConfigDirectory)(IOFireWireLibDeviceRef self, REFIID iid);
 ```
 
-#### Return Value
+## Return Value
 
 An IOFireWireLibConfigDirectoryRef which should be released using Release(). Returns 0 upon failure.
 

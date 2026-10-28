@@ -23,7 +23,7 @@ var issuerIdentifier: String? { get set }
 @property (nonatomic, copy, nullable) NSString * issuerIdentifier;
 ```
 
-#### Discussion
+## Discussion
 
 > ❗ **Important**:  This property’s value is unique for each issuer. This property is available only to developers who work with Apple to enable this functionality.
 

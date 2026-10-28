@@ -17,7 +17,7 @@ framework: "mlx-swift-lm/MLXLMCommon"
 class RotateSwitchGLU
 ```
 
-#### Overview
+## Overview
 
 All experts share a single set of rotation parameters per projection input: `gate_up_rot` rotates the token activations ahead of the expert gather (bitwise-equivalent to rotating the gathered rows, at 1/topK the cost) for `gate_proj`/`up_proj` (which share their input), and `down_rot` rotates the activated hidden state before `down_proj`. The projections themselves stay stock `SwitchLinear`/`QuantizedSwitchLinear` — rotating the shared activations *once* per token is what makes PARO MoE cheap: the rotation cost is independent of the number of experts.
 

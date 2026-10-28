@@ -20,7 +20,7 @@ Common debug information for any node that was active during the most recent gra
 protocol ActiveNode : Identifiable, Sendable
 ```
 
-#### Overview
+## Overview
 
 `AnimationGraphComponent` reports active nodes through this protocol so that tools can iterate every node uniformly. To inspect node-kind-specific state, downcast to [`AnimationGraphComponent.ActiveStateMachineNode`](./activestatemachinenode.md) or [`AnimationGraphComponent.ActiveClipNode`](./activeclipnode.md), or iterate the typed accessors [`activeStateMachineNodes`](./activestatemachinenodes.md) and [`activeClipNodes`](./activeclipnodes.md) directly.
 

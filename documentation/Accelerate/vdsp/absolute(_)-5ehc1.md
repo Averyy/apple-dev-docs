@@ -21,7 +21,7 @@ Returns the absolute value of each element in the supplied single-precision vect
 static func absolute<U>(_ vector: U) -> [Float] where U : AccelerateBuffer, U.Element == Float
 ```
 
-#### Discussion
+## Discussion
 
 For example, the following code calculates the absolute values of the elements of an array:
 

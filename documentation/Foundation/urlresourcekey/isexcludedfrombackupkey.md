@@ -29,7 +29,7 @@ extern NSURLResourceKey const NSURLIsExcludedFromBackupKey;
 
 - [Using the file system effectively](../using-the-file-system-effectively.md)
 
-#### Discussion
+## Discussion
 
 The value of this key is a read-write Boolean [`NSNumber`](../nsnumber.md) object.
 

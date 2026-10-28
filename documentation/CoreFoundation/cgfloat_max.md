@@ -23,7 +23,7 @@ var CGFLOAT_MAX: Double { get }
 #define CGFLOAT_MAX
 ```
 
-#### Discussion
+## Discussion
 
 The maximum non-infinite value for a [`CGFloat`](./cgfloat-swift.struct.md) type. For 32-bit code, this value is `3.40282347e+38F`. For 64-bit code, it is `1.7976931348623157e+308`.
 

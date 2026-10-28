@@ -19,7 +19,7 @@ func overlay(forType layerType: String!) -> CALayer!
 - (CALayer *) overlayForType:(NSString *) layerType;
 ```
 
-#### Return Value
+## Return Value
 
 The Core Animation layer.
 

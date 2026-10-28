@@ -20,7 +20,7 @@ optional func tableView(_ tableView: NSTableView, willDisplayCell cell: Any, for
 - (void) tableView:(NSTableView *) tableView willDisplayCell:(id) cell forTableColumn:(NSTableColumn *) tableColumn row:(NSInteger) row;
 ```
 
-#### Discussion
+## Discussion
 
 The delegate can modify the display attributes of `aCell` to alter the appearance of the cell.
 

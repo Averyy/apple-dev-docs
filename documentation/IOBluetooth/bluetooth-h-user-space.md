@@ -4,7 +4,7 @@
 
 Bluetooth wireless technology
 
-##### Included Headers
+### Included Headers
 
 - <IOKit/bluetooth/BluetoothAssignedNumbers.h>
 - <CoreFoundation/CFBase.h>

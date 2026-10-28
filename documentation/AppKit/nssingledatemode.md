@@ -13,7 +13,7 @@
 static const NSDatePickerMode NSSingleDateMode;
 ```
 
-#### Discussion
+## Discussion
 
 Allow selection of a single date.
 

@@ -23,7 +23,7 @@ struct UIRectEdge
 enum UIRectEdge : NSUInteger;
 ```
 
-#### Overview
+## Overview
 
 You can add these constants together to specify multiple edges at the same time.
 

@@ -23,7 +23,7 @@ case cancelled
 CSSearchQueryErrorCodeCancelled
 ```
 
-#### Discussion
+## Discussion
 
 The system reports this error if your code called the [`cancel()`](../../csuserquery/cancel%28%29.md) method.
 

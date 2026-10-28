@@ -25,7 +25,7 @@ func setTessellationFactorBuffer(_ buffer: (any MTLBuffer)?, offset: Int, instan
 - (void) setTessellationFactorBuffer:(id<MTLBuffer>) buffer offset:(NSUInteger) offset instanceStride:(NSUInteger) instanceStride;
 ```
 
-#### Discussion
+## Discussion
 
 Call this method before encoding patch-drawing commands.
 

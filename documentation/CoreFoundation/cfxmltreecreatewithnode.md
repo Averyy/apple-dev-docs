@@ -15,7 +15,7 @@ Creates a childless, parentless CFXMLTree object node for a CFXMLNode object.
 extern CFXMLTreeRefCFXMLTreeCreateWithNode(CFAllocatorRef allocator, CFXMLNodeRef node);
 ```
 
-#### Return Value
+## Return Value
 
 A CFXMLTree object. Ownership follows the [The Create Rule](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/Ownership.html#//apple_ref/doc/uid/20001148-103029).
 

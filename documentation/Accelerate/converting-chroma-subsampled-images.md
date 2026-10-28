@@ -5,7 +5,7 @@
 
 Create vImage buffers with the correct dimensions to convert to and from images with subsampled chroma information.
 
-#### Overview
+## Overview
 
 When you work with video data, you often work with images represented by separate luminance (Y) and chrominance (CbCr) information at different resolutions. The vImage library provides functionality to convert images in this format to an interleaved RGB format, which simplifies applying some image-processing operations.
 
@@ -21,7 +21,7 @@ The images below show the 4:2:0 subsampling scheme applied to a photograph. The 
 
 ![A diagram that shows the sizes and content of the two chrominance channels and single luminance channel of a YpCbCr image compared to an RGB image of the same subject. On the left are the three YpCbCr channels and on the right in the single, interleaved RGB image.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-3866875@2x.png)
 
-##### Define the Core Video and Core Graphics image formats
+### Define the Core Video and Core Graphics image formats
 
 If you’re working with [CVPixelBuffer](../CoreVideo/cvpixelbuffer-q2e.md) objects, the vImage library provides the [`vImageCVImageFormat_CreateWithCVPixelBuffer(_:)`](./vimagecvimageformat_createwithcvpixelbuffer%28_%29.md) and [`make(buffer:)`](./vimagecvimageformat/make%28buffer%29.md) functions that generate a [`vImageCVImageFormat`](./vimagecvimageformat.md) structure from a Core Video pixel buffer. However, the code in this article defines a [`vImageCVImageFormat.Format.format420YpCbCr8PlanarFullRange`](./vimagecvimageformat/format/format420ypcbcr8planarfullrange.md) Core Video image format that describes the YpCbCr image. The code below also defines an 8-bit-per-channel RGB Core Graphics image format:
 
@@ -40,7 +40,7 @@ let cvImageFormat = vImageCVImageFormat.make(
     alphaIsOpaqueHint: true)!
 ```
 
-##### Perform the Core Graphics to Core Video conversion
+### Perform the Core Graphics to Core Video conversion
 
 Use the Core Video and Core Graphics image format descriptions to create an any-to-any [`vImageConverter`](./vimageconverter.md) instance that converts from Core Graphics to Core Video image format.
 
@@ -70,7 +70,7 @@ On return, the three pixel buffers in the `ypCbCr8PlanarBuffers` array contain t
 
 ![Three grayscale images of the different planes of the YpCrCb representation of a photograph of a flower. The first image contains the luminance information. The second and third images contain the chrominance information and are scaled that the only fill the top-left quarter of the image.](https://developer.apple.com/tutorials/images/com.apple.accelerate/media-4264989@2x.png)
 
-##### Apply an operation to the subsampled chrominance channels
+### Apply an operation to the subsampled chrominance channels
 
 Although the two chrominance channels are the same size as the full-sized luminance channel, they only contain a quarter of the data. If you’re applying an image-processing operation to the Cb and Cr channels, use the [`withUnsafeRegionOfInterest(_:_:)`](./vimage/pixelbuffer/withunsaferegionofinterest%28_,_%29.md) method. This ensures that you’re not processing unused pixels. The code below reduces the saturation of the image using the technique discussed in [Adjusting saturation and applying tone mapping](./adjusting-saturation-and-applying-tone-mapping.md):
 
@@ -101,7 +101,7 @@ for index in [1, 2] {
 
 For more information about limiting the effect of vImage operations to rectangular regions of interest, see [Applying vImage operations to regions of interest](./applying-vimage-operations-to-regions-of-interest.md).
 
-##### Perform the Core Video to Core Graphics conversion
+### Perform the Core Video to Core Graphics conversion
 
 To convert the YpCbCr buffers to an RGB buffer, create a converter with the Core Video image format as the source and the Core Graphics image format as the destination. Call the [`convert(from:to:)`](./vimageconverter/convert%28from,to%29-587gc.md) method as above, but specify the `ypCbCr8PlanarBuffers` array as the source and an 8-bit-per-channel interleaved buffer as the destination.
 

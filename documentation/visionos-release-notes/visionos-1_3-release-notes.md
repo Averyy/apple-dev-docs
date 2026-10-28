@@ -5,11 +5,11 @@
 
 Update your apps to use new features, and test your apps against API changes.
 
-#### Overview
+## Overview
 
 The visionOS 1.3 RC SDK provides support for developing apps for Apple Vision Pro devices running visionOS 1.3. The SDK comes bundled with Xcode 15.4. For information on the compatibility requirements for Xcode 15.4, see [Xcode 15.4 Release Notes](../Xcode-Release-Notes/xcode-15_4-release-notes.md).
 
-##### General
+### General
 
 There are no new release notes for this software update.
 

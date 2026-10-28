@@ -17,7 +17,7 @@ The SF Symbol name representing the remote device or route.
 @property (copy, readonly) NSString * routeSymbolName;
 ```
 
-#### Discussion
+## Discussion
 
 This property returns a system symbol name as an `NSString` that identifies the type of device (such as a TV, speaker, or other compatible endpoint). Use this value with `UIImage(systemName:)` to create an icon for display in your app’s user interface.
 

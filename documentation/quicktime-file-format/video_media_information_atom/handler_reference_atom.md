@@ -6,7 +6,7 @@
 
 An atom that specifies the media handler component that is to be used to interpret the media’s data.
 
-#### Overview
+## Overview
 
 See [`Handler reference atom`](../handler_reference_atom.md).
 

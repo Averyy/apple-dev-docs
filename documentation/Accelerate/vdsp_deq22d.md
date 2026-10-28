@@ -21,7 +21,7 @@ Performs two-pole two-zero recursive filtering on a double-precision vector.
 extern void vDSP_deq22D(const double *__A, vDSP_Stride __IA, const double *__B, double *__C, vDSP_Stride __IC, vDSP_Length __N);
 ```
 
-#### Discussion
+## Discussion
 
 This function is the same as [`vDSP_deq22`](../kernel/api-1532225-vdsp_deq22.md), except for the types of vectors `A`, `B`, and `C`..
 

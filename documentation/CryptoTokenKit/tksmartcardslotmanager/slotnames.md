@@ -25,7 +25,7 @@ var slotNames: [String] { get }
 @property (readonly) NSArray<NSString *> * slotNames;
 ```
 
-#### Discussion
+## Discussion
 
 Use Key-Value Observing on this property to be notified for changes to available Smart Card reader slots. For more information, see [Key-Value Observing Programming Guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/KeyValueObserving/KeyValueObserving.html#//apple_ref/doc/uid/10000177i).
 
